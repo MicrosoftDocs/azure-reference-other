@@ -84,10 +84,10 @@ This section describes implementation details and common questions.
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more of input datasets is null or empty.|  
-|[Error 0010](error-0010.md)|An exception occurs if input datasets have column names that should match but do not.|  
-|[Error 0016](error-0016.md)|An exception occurs if input datasets passed to the module should have compatible column types but do not.|  
-|[Error 0008](error-0008.md)|An exception occurs if the parameter is not in range.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more of input datasets is null or empty.|  
+|[Error 0010](errors/error-0010.md)|An exception occurs if input datasets have column names that should match but do not.|  
+|[Error 0016](errors/error-0016.md)|An exception occurs if input datasets passed to the module should have compatible column types but do not.|  
+|[Error 0008](errors/error-0008.md)|An exception occurs if the parameter is not in range.|  
   
 ## See Also  
  [Manipulation](data-transformation-manipulation.md)   

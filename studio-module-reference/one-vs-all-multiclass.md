@@ -92,7 +92,7 @@ For a list of all error messages, see [Module Error Codes](machine-learning-modu
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0013](error-0013.md)|An exception occurs if the learner that was passed to the module is the wrong type.|  
+|[Error 0013](errors/error-0013.md)|An exception occurs if the learner that was passed to the module is the wrong type.|  
   
 ## See Also  
  [Classification](machine-learning-initialize-model-classification.md)   

@@ -144,9 +144,9 @@ This algorithm uses PCA to approximate the subspace containing the normal class.
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
-|[Error 0062](error-0062.md)|Exception occurs when attempting to compare two models with different learner types.|  
-|[Error 0047](error-0047.md)|Exception occurs if number of feature columns in some of the datasets passed to the module is too small.|  
+|[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
+|[Error 0062](errors/error-0062.md)|Exception occurs when attempting to compare two models with different learner types.|  
+|[Error 0047](errors/error-0047.md)|Exception occurs if number of feature columns in some of the datasets passed to the module is too small.|  
   
 ## See Also  
  [One-Class Support Vector Machine](one-class-support-vector-machine.md)

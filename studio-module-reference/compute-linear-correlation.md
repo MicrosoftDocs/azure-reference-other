@@ -149,9 +149,9 @@ To see how this module is used in machine learning experiments, see these sample
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0020](error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
-|[Error 0021](error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0020](errors/error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
+|[Error 0021](errors/error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
   
 ## See Also  
  [Statistical Functions](statistical-functions.md)   

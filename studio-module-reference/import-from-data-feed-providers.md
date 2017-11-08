@@ -139,10 +139,10 @@ When [Import Data](import-data.md) loads the feed data into Studio, it infers th
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
-|[Error 0029](error-0029.md)|An exception occurs when an invalid URI is passed.|  
-|[Error 0030](error-0030.md)|an exception occurs in when it is not possible to download a file.|  
-|[Error 0002](error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type to the type required by the target method.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
+|[Error 0029](errors/error-0029.md)|An exception occurs when an invalid URI is passed.|  
+|[Error 0030](errors/error-0030.md)|an exception occurs in when it is not possible to download a file.|  
+|[Error 0002](errors/error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type to the type required by the target method.|  
   
 ## See Also  
  [Import Data](import-data.md)   

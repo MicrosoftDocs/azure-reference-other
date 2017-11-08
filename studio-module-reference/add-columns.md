@@ -68,8 +68,8 @@ manager: "jhubbard"
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more input datasets is null or empty.|  
-|[Error 0017](error-0017.md)|An exception occurs if one or more specified columns has a type that is unsupported by the current module.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more input datasets is null or empty.|  
+|[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns has a type that is unsupported by the current module.|  
   
 ## See Also  
  [Manipulation](data-transformation-manipulation.md)   

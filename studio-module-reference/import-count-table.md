@@ -103,8 +103,8 @@ manager: "jhubbard"
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0018](error-0018.md)|Exception occurs if input dataset is not valid.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0018](errors/error-0018.md)|Exception occurs if input dataset is not valid.|  
   
 ## See Also  
  [Learning with Counts](data-transformation-learning-with-counts.md)   

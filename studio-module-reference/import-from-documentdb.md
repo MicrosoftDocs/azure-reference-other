@@ -165,11 +165,11 @@ The following table includes only those parameters for the **Import Data** modul
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
-|[Error 0029](error-0029.md)|An exception occurs when an invalid URI is passed.|  
-|[Error 0002](error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type to the type required by the target method.|  
-|[Error 0048](error-0048.md)|An exception occurs when it is not possible to open a file.|  
-|[Error 0049](error-0049.md)|An exception occurs when it is not possible to parse a file.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
+|[Error 0029](errors/error-0029.md)|An exception occurs when an invalid URI is passed.|  
+|[Error 0002](errors/error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type to the type required by the target method.|  
+|[Error 0048](errors/error-0048.md)|An exception occurs when it is not possible to open a file.|  
+|[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
   
 ## See Also  
  [DocumentDB documentation](https://azure.microsoft.com/en-us/documentation/services/documentdb/)   

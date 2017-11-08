@@ -127,7 +127,7 @@ The format in which the model is stored is incompatible with the [Train Model](t
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0005](error-0005.md)|Exception occurs if parameter is less than a specific value.|  
+|[Error 0005](errors/error-0005.md)|Exception occurs if parameter is less than a specific value.|  
   
 ## See Also  
  [Import Images](import-images.md)   

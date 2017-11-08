@@ -68,8 +68,8 @@ manager: "jhubbard"
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0086](error-0086.md)|Exception occurs when a counting transform is invalid.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0086](errors/error-0086.md)|Exception occurs when a counting transform is invalid.|  
   
 ## See Also  
  [Learning with Counts](data-transformation-learning-with-counts.md)   

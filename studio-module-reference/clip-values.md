@@ -180,8 +180,8 @@ To understand how clipping by percentiles works, consider a dataset with 10 rows
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0011](error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
-|[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
+|[Error 0011](errors/error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
+|[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
   
 ## See Also  
  [Scale and Reduce](data-transformation-scale-and-reduce.md)   

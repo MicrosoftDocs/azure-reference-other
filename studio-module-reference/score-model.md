@@ -75,10 +75,10 @@ manager: "jhubbard"
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0032](error-0032.md)|Exception occurs if argument is not a number.|  
-|[Error 0033](error-0033.md)|Exception occurs if argument is Infinity.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0013](error-0013.md)|Exception occurs if the learner that is passed to the module is an invalid type.|  
+|[Error 0032](errors/error-0032.md)|Exception occurs if argument is not a number.|  
+|[Error 0033](errors/error-0033.md)|Exception occurs if argument is Infinity.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0013](errors/error-0013.md)|Exception occurs if the learner that is passed to the module is an invalid type.|  
   
 ## See Also  
  [Evaluate](machine-learning-evaluate.md)   

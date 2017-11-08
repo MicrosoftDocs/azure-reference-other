@@ -100,10 +100,10 @@ manager: "jhubbard"
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0062](error-0062.md)|Exception occurs when attempting to compare two models with different learner types.|  
-|[Error 0024](error-0024.md)|Exception occurs if dataset does not contain a label column.|  
-|[Error 0105](error-0105.md)|Thrown when a module definition file defines an unsuppported parameter type|  
-|[Error 0021](error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
+|[Error 0062](errors/error-0062.md)|Exception occurs when attempting to compare two models with different learner types.|  
+|[Error 0024](errors/error-0024.md)|Exception occurs if dataset does not contain a label column.|  
+|[Error 0105](errors/error-0105.md)|Thrown when a module definition file defines an unsuppported parameter type|  
+|[Error 0021](errors/error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
   
 ## See Also  
  [Feature Selection](feature-selection-modules.md)   

@@ -300,10 +300,10 @@ The accuracy of models based on LDA can often be improved by using natural langu
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0002](error-0002.md)|Exception occurs if one or more specified columns of data set couldn't be found.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0004](error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
-|[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
+|[Error 0002](errors/error-0002.md)|Exception occurs if one or more specified columns of data set couldn't be found.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
+|[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
   
 ## See Also  
  [Text Analytics](text-analytics.md)   

@@ -117,15 +117,15 @@ To perform a join on two datasets, they must be related by a single key column. 
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0001](error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more inputs are null or empty.|  
-|[Error 0006](error-0006.md)|An exception occurs if the parameter is greater than or equal to the specified value.|  
-|[Error 0016](error-0016.md)|An exception occurs if the input datasets that are passed to the module should have compatible column types, but they do not.|  
-|[Error 0017](error-0017.md)|An exception occurs if one or more specified columns have types that are unsupported by the current module.|  
-|[Error 0020](error-0020.md)|An exception occurs if the number of columns in some of the datasets that are passed to the module is too small.|  
-|[Error 0028](error-0028.md)|An exception occurs when the column set contains duplicate column names and it is not allowed.|  
-|[Error 0011](error-0011.md)|An exception occurs if the argument for the passed column set does not apply to any dataset columns.|  
-|[Error 0027](error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
+|[Error 0001](errors/error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more inputs are null or empty.|  
+|[Error 0006](errors/error-0006.md)|An exception occurs if the parameter is greater than or equal to the specified value.|  
+|[Error 0016](errors/error-0016.md)|An exception occurs if the input datasets that are passed to the module should have compatible column types, but they do not.|  
+|[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns have types that are unsupported by the current module.|  
+|[Error 0020](errors/error-0020.md)|An exception occurs if the number of columns in some of the datasets that are passed to the module is too small.|  
+|[Error 0028](errors/error-0028.md)|An exception occurs when the column set contains duplicate column names and it is not allowed.|  
+|[Error 0011](errors/error-0011.md)|An exception occurs if the argument for the passed column set does not apply to any dataset columns.|  
+|[Error 0027](errors/error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
   
 ## See Also  
  [Manipulation](data-transformation-manipulation.md)   

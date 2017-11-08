@@ -515,7 +515,7 @@ You can also chart a simple cumulative distribution and probability density of a
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
+|[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
   
 ## See Also  
  [Statistical Functions](statistical-functions.md)   

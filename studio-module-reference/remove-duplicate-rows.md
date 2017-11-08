@@ -115,9 +115,9 @@ The algorithm used for comparing data values is hash-forced.
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more of the input datasets are null or empty.|  
-|[Error 0020](error-0020.md)|An exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
-|[Error 0017](error-0017.md)|An exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more of the input datasets are null or empty.|  
+|[Error 0020](errors/error-0020.md)|An exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
+|[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
   
 ## See Also  
  [Manipulation](data-transformation-manipulation.md)   

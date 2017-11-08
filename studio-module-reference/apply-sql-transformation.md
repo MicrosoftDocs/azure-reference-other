@@ -260,9 +260,9 @@ FROM t1;
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0001](error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more of the input datasets is null or empty.|  
-|[Error 0069](error-0069.md)| SQL logic error or missing database|
+|[Error 0001](errors/error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more of the input datasets is null or empty.|  
+|[Error 0069](errors/error-0069.md)| SQL logic error or missing database|
   
 ## See Also  
  [Manipulation](data-transformation-manipulation.md)   

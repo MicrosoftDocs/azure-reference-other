@@ -110,14 +110,14 @@ You can also save the trained model to use in other experiments, or connect it t
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0032](error-0032.md)|Exception occurs if argument is not a number.|  
-|[Error 0033](error-0033.md)|Exception occurs if argument is Infinity.|  
-|[Error 0083](error-0083.md)|Exception occurs if dataset used for training cannot be used for concrete type of learner.|  
-|[Error 0035](error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0020](error-0020.md)|Exception occurs if number of columns in some of the datasets passed to the module is too small.|  
-|[Error 0021](error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
-|[Error 0013](error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
+|[Error 0032](errors/error-0032.md)|Exception occurs if argument is not a number.|  
+|[Error 0033](errors/error-0033.md)|Exception occurs if argument is Infinity.|  
+|[Error 0083](errors/error-0083.md)|Exception occurs if dataset used for training cannot be used for concrete type of learner.|  
+|[Error 0035](errors/error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0020](errors/error-0020.md)|Exception occurs if number of columns in some of the datasets passed to the module is too small.|  
+|[Error 0021](errors/error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
+|[Error 0013](errors/error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
   
 ## See Also  
  

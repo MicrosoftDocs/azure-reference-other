@@ -125,13 +125,13 @@ This section contains details about how images are processed, as well as require
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more inputs are null or empty.|  
-|[Error 0029](error-0029.md)|Exception occurs when invalid URI is passed.|  
-|[Error 0009](error-0009.md)|Exception occurs if the Azure storage account name or container name is specified incorrectly.|  
-|[Error 0015](error-0015.md)|Exception occurs if the database connection has failed.|  
-|[Error 0030](error-0030.md)|Exception occurs when it is not possible to download a file.|  
-|[Error 0049](error-0049.md)|Exception occurs when it is not possible to parse a file.|  
-|[Error 0048](error-0048.md)|Exception occurs when it is not possible to open a file.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more inputs are null or empty.|  
+|[Error 0029](errors/error-0029.md)|Exception occurs when invalid URI is passed.|  
+|[Error 0009](errors/error-0009.md)|Exception occurs if the Azure storage account name or container name is specified incorrectly.|  
+|[Error 0015](errors/error-0015.md)|Exception occurs if the database connection has failed.|  
+|[Error 0030](errors/error-0030.md)|Exception occurs when it is not possible to download a file.|  
+|[Error 0049](errors/error-0049.md)|Exception occurs when it is not possible to parse a file.|  
+|[Error 0048](errors/error-0048.md)|Exception occurs when it is not possible to open a file.|  
   
 ## See Also  
  [Pretrained Cascade Image Classification](pretrained-cascade-image-classification.md)   

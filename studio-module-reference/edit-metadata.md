@@ -230,13 +230,13 @@ If you have many columns to rename, you can use the **Execute R Script** module,
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more of input datasets are null or empty.|  
-|[Error 0017](error-0017.md)|An exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
-|[Error 0020](error-0020.md)|An exception occurs if the number of columns in some of the datasets that are passed to the module is too small.|  
-|[Error 0031](error-0031.md)|An exception occurs if the number of columns in the column set is less than needed.|  
-|[Error 0027](error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
-|[Error 0028](error-0028.md)|An exception occurs when the column set contains duplicate column names and it is not allowed.|  
-|[Error 0037](error-0037.md)|An exception occurs if multiple label columns are specified and only one is allowed.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more of input datasets are null or empty.|  
+|[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
+|[Error 0020](errors/error-0020.md)|An exception occurs if the number of columns in some of the datasets that are passed to the module is too small.|  
+|[Error 0031](errors/error-0031.md)|An exception occurs if the number of columns in the column set is less than needed.|  
+|[Error 0027](errors/error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
+|[Error 0028](errors/error-0028.md)|An exception occurs when the column set contains duplicate column names and it is not allowed.|  
+|[Error 0037](errors/error-0037.md)|An exception occurs if multiple label columns are specified and only one is allowed.|  
   
 ## See Also  
  [Manipulation](data-transformation-manipulation.md)   

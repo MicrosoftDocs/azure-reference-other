@@ -197,12 +197,12 @@ Because clustering models differ significantly from classification and regressio
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0013](error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
-|[Error 0020](error-0020.md)|Exception occurs if number of columns in some of the datasets passed to the module is too small.|  
-|[Error 0021](error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
-|[Error 0024](error-0024.md)|Exception occurs if dataset does not contain a label column.|  
-|[Error 0025](error-0025.md)|Exception occurs if dataset does not contain a score column.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0013](errors/error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
+|[Error 0020](errors/error-0020.md)|Exception occurs if number of columns in some of the datasets passed to the module is too small.|  
+|[Error 0021](errors/error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
+|[Error 0024](errors/error-0024.md)|Exception occurs if dataset does not contain a label column.|  
+|[Error 0025](errors/error-0025.md)|Exception occurs if dataset does not contain a score column.|  
   
 ## See Also  
  [Cross-Validate Model](cross-validate-model.md)   

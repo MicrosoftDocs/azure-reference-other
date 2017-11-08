@@ -182,13 +182,13 @@ The module also outputs a transformed dataset in which the columns you selected 
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0001](error-0001.md)|Exception occurs if one or more specified columns of the data set couldn't be found.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0020](error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
-|[Error 0021](error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
-|[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
-|[Error 0026](error-0026.md)|Exception occurs when columns with the same name are not allowed.|  
-|[Error 0022](error-0022.md)|Exception occurs if the number of selected columns in the input dataset does not equal the expected number.|  
+|[Error 0001](errors/error-0001.md)|Exception occurs if one or more specified columns of the data set couldn't be found.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0020](errors/error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
+|[Error 0021](errors/error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
+|[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
+|[Error 0026](errors/error-0026.md)|Exception occurs when columns with the same name are not allowed.|  
+|[Error 0022](errors/error-0022.md)|Exception occurs if the number of selected columns in the input dataset does not equal the expected number.|  
   
 ## See Also  
  [Statistical Functions](statistical-functions.md)   

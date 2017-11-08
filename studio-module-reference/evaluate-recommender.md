@@ -193,12 +193,12 @@ When evaluating the prediction of related items, the scored dataset (second inpu
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0022](error-0022.md)|Exception occurs if number of selected columns in input dataset does not equal to the expected number.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
-|[Error 0034](error-0034.md)|Exception occurs if more than one rating exists for a given user-item pair.|  
-|[Error 0018](error-0018.md)|Exception occurs if input dataset is not valid.|  
-|[Error 0002](error-0002.md)|Exception occurs if one or more parameters could not be parsed or converted from specified type into required by target method type.|  
+|[Error 0022](errors/error-0022.md)|Exception occurs if number of selected columns in input dataset does not equal to the expected number.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
+|[Error 0034](errors/error-0034.md)|Exception occurs if more than one rating exists for a given user-item pair.|  
+|[Error 0018](errors/error-0018.md)|Exception occurs if input dataset is not valid.|  
+|[Error 0002](errors/error-0002.md)|Exception occurs if one or more parameters could not be parsed or converted from specified type into required by target method type.|  
   
 ## See Also  
  [Train Matchbox Recommender](train-matchbox-recommender.md)   

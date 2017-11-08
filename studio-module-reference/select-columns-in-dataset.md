@@ -236,8 +236,8 @@ In relational algebra, a projection is a unary operation, which is written as a 
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0001](error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more input datasets are null or empty.|  
+|[Error 0001](errors/error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more input datasets are null or empty.|  
   
 ## See Also  
  [Manipulation](data-transformation-manipulation.md)   

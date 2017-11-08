@@ -75,7 +75,7 @@ For an example of how anomaly detection can be implemented in Azure Machine Lear
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
   
 ## See Also  
  [Train](machine-learning-train.md)   

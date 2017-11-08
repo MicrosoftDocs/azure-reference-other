@@ -276,12 +276,12 @@ However, if you change the threshold back to the default values of 0 for **Minim
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0002](error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type into the type required by the target method.|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more input datasets are null or empty.|  
-|[Error 0008](error-0008.md)|An exception occurs if a parameter is not in range.|  
-|[Error 0013](error-0013.md)|An exception occurs if the leaner passed to the module has an invalid type.|  
-|[Error 0018](error-0018.md)|An exception occurs if the input dataset is not valid.|  
-|[Error 0039](error-0039.md)|An exception occurs if the operation fails.|  
+|[Error 0002](errors/error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type into the type required by the target method.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more input datasets are null or empty.|  
+|[Error 0008](errors/error-0008.md)|An exception occurs if a parameter is not in range.|  
+|[Error 0013](errors/error-0013.md)|An exception occurs if the leaner passed to the module has an invalid type.|  
+|[Error 0018](errors/error-0018.md)|An exception occurs if the input dataset is not valid.|  
+|[Error 0039](errors/error-0039.md)|An exception occurs if the operation fails.|  
   
 ## See Also  
  [Manipulation](data-transformation-manipulation.md)   

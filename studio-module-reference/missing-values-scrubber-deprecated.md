@@ -106,16 +106,16 @@ manager: "jhubbard"
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0002](error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type into the required by target method type.|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
-|[Error 0008](error-0008.md)|An exception occurs if the parameter is not in range.|  
-|[Error 0013](error-0013.md)|An exception occurs if passed to module learner has invalid type.|  
-|[Error 0018](error-0018.md)|An exception occurs if the input dataset is not valid.|  
-|[Error 0039](error-0039.md)|An exception occurs if the operation failed.|  
-|[Error 0010](error-0010.md)|An exception occurs if input datasets have column names that should match, but they do not.|  
-|[Error 0016](error-0016.md)|An exception occurs if input datasets that are passed to the module should have compatible column types, but they do not.|  
-|[Error 0067](error-0067.md)|An exception occurs if a dataset has a different number of columns than expected.|  
-|[Error 0017](error-0017.md)|An exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
+|[Error 0002](errors/error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type into the required by target method type.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
+|[Error 0008](errors/error-0008.md)|An exception occurs if the parameter is not in range.|  
+|[Error 0013](errors/error-0013.md)|An exception occurs if passed to module learner has invalid type.|  
+|[Error 0018](errors/error-0018.md)|An exception occurs if the input dataset is not valid.|  
+|[Error 0039](errors/error-0039.md)|An exception occurs if the operation failed.|  
+|[Error 0010](errors/error-0010.md)|An exception occurs if input datasets have column names that should match, but they do not.|  
+|[Error 0016](errors/error-0016.md)|An exception occurs if input datasets that are passed to the module should have compatible column types, but they do not.|  
+|[Error 0067](errors/error-0067.md)|An exception occurs if a dataset has a different number of columns than expected.|  
+|[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
   
 ## See Also  
  [Deprecated Modules and Features](deprecated-modules-and-features.md)   

@@ -400,12 +400,12 @@ Additional columns are generated containing the identifiers of related items. Th
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0022](error-0022.md)|Exception occurs if number of selected columns in input dataset does not equal to the expected number.|  
-|[Error 0036](error-0036.md)|Exception occurs if multiple feature vectors were provided for a given user or item.|  
-|[Error 0013](error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
-|[Error 0035](error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
-|[Error 0053](error-0053.md)|Exception occurs in the case when there are no user features or items for Matchbox recommendations.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0022](errors/error-0022.md)|Exception occurs if number of selected columns in input dataset does not equal to the expected number.|  
+|[Error 0036](errors/error-0036.md)|Exception occurs if multiple feature vectors were provided for a given user or item.|  
+|[Error 0013](errors/error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
+|[Error 0035](errors/error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
+|[Error 0053](errors/error-0053.md)|Exception occurs in the case when there are no user features or items for Matchbox recommendations.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
   
 ## See Also  
  [Train Matchbox Recommender](train-matchbox-recommender.md)   

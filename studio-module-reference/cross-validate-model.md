@@ -201,14 +201,14 @@ Additionally, the following metrics are included for each fold, depending on the
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0035](error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
-|[Error 0032](error-0032.md)|Exception occurs if argument is not a number.|  
-|[Error 0033](error-0033.md)|Exception occurs if argument is Infinity.|  
-|[Error 0001](error-0001.md)|Exception occurs if one or more specified columns of data set couldn't be found.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0006](error-0006.md)|Exception occurs if parameter is greater than or equal to the specified value.|  
-|[Error 0008](error-0008.md)|Exception occurs if parameter is not in range.|  
-|[Error 0013](error-0013.md)|Exception occurs if the learner that is passed to the module has an invalid type.|  
+|[Error 0035](errors/error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
+|[Error 0032](errors/error-0032.md)|Exception occurs if argument is not a number.|  
+|[Error 0033](errors/error-0033.md)|Exception occurs if argument is Infinity.|  
+|[Error 0001](errors/error-0001.md)|Exception occurs if one or more specified columns of data set couldn't be found.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0006](errors/error-0006.md)|Exception occurs if parameter is greater than or equal to the specified value.|  
+|[Error 0008](errors/error-0008.md)|Exception occurs if parameter is not in range.|  
+|[Error 0013](errors/error-0013.md)|Exception occurs if the learner that is passed to the module has an invalid type.|  
   
 ## See Also
   

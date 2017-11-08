@@ -242,14 +242,14 @@ The goal is to determine if we can reject the null hypothesis. Therefore, a scor
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0008](error-0008.md)|Exception occurs if parameter is not in range.|  
-|[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
-|[Error 0020](error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
-|[Error 0021](error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
-|[Error 0031](error-0031.md)|Exception occurs if the number of columns in column set is less than needed.|  
-|[Error 0032](error-0032.md)|Exception occurs if the argument is not a number.|  
-|[Error 0033](error-0033.md)|Exception occurs if the argument is infinity.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0008](errors/error-0008.md)|Exception occurs if parameter is not in range.|  
+|[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
+|[Error 0020](errors/error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
+|[Error 0021](errors/error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
+|[Error 0031](errors/error-0031.md)|Exception occurs if the number of columns in column set is less than needed.|  
+|[Error 0032](errors/error-0032.md)|Exception occurs if the argument is not a number.|  
+|[Error 0033](errors/error-0033.md)|Exception occurs if the argument is infinity.|  
   
 ## See Also  
  [Statistical Functions](statistical-functions.md)   

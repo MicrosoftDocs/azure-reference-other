@@ -233,18 +233,18 @@ The following parameters define the format of the count table:
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0004](error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
-|[Error 0005](error-0005.md)|Exception occurs if parameter is less than a specific value.|  
-|[Error 0007](error-0007.md)|Exception occurs if parameter is greater than a specific value.|  
-|[Error 0009](error-0009.md)|Exception occurs if Azure storage account name or container name specified incorrectly.|  
-|[Error 0065](error-0065.md)|Exception occurs if Azure blob name is specified incorrectly.|  
-|[Error 0011](error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
-|[Error 0049](error-0049.md)|Exception occurs in the case when it is not possible to parse a file.|  
-|[Error 1000](error-1000.md)|Internal library exception.|  
-|[Error 0059](error-0059.md)|Exception occurs if a column index specified in a column picker cannot be parsed.|  
-|[Error 0060](error-0060.md)|Exception occurs when an out of range column range is specified in a column picker.|  
-|[Error 0089](error-0089.md)|Exception occurs when the specified number of classes is less than the actual number of classes in a dataset used for counting.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
+|[Error 0005](errors/error-0005.md)|Exception occurs if parameter is less than a specific value.|  
+|[Error 0007](errors/error-0007.md)|Exception occurs if parameter is greater than a specific value.|  
+|[Error 0009](errors/error-0009.md)|Exception occurs if Azure storage account name or container name specified incorrectly.|  
+|[Error 0065](errors/error-0065.md)|Exception occurs if Azure blob name is specified incorrectly.|  
+|[Error 0011](errors/error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
+|[Error 0049](errors/error-0049.md)|Exception occurs in the case when it is not possible to parse a file.|  
+|[Error 1000](errors/error-1000.md)|Internal library exception.|  
+|[Error 0059](errors/error-0059.md)|Exception occurs if a column index specified in a column picker cannot be parsed.|  
+|[Error 0060](errors/error-0060.md)|Exception occurs when an out of range column range is specified in a column picker.|  
+|[Error 0089](errors/error-0089.md)|Exception occurs when the specified number of classes is less than the actual number of classes in a dataset used for counting.|  
   
 ## See Also  
  [Learning with Counts](data-transformation-learning-with-counts.md)

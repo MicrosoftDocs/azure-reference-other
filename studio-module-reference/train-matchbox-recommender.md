@@ -156,13 +156,13 @@ This article describes how to use the **Train Matchbox Recommender** module in A
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0022](error-0022.md)|Exception occurs if number of selected columns in input dataset does not equal to the expected number.|  
-|[Error 0036](error-0036.md)|Exception occurs if multiple feature vectors were provided for a given user or item.|  
-|[Error 0018](error-0018.md)|Exception occurs if input dataset is not valid.|  
-|[Error 0035](error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
-|[Error 0034](error-0034.md)|Exception occurs if more than one rating exists for a given user-item pair.|  
-|[Error 0053](error-0053.md)|Exception occurs in the case when there are no user features or items for Matchbox recommendations.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0022](errors/error-0022.md)|Exception occurs if number of selected columns in input dataset does not equal to the expected number.|  
+|[Error 0036](errors/error-0036.md)|Exception occurs if multiple feature vectors were provided for a given user or item.|  
+|[Error 0018](errors/error-0018.md)|Exception occurs if input dataset is not valid.|  
+|[Error 0035](errors/error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
+|[Error 0034](errors/error-0034.md)|Exception occurs if more than one rating exists for a given user-item pair.|  
+|[Error 0053](errors/error-0053.md)|Exception occurs in the case when there are no user features or items for Matchbox recommendations.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
   
 ## See Also  
  [Cross-Validate Model](cross-validate-model.md)   

@@ -128,16 +128,16 @@ manager: "cgronlun"
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0057](error-0057.md)|An exception occurs when attempting to create a file or blob that already exists.|  
-|[Error 0001](error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
-|[Error 0027](error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
-|[Error 0079](error-0079.md)|An exception occurs if the container name in Azure Storage is specified incorrectly.|  
-|[Error 0052](error-0052.md)|An exception occurs if the storage access key for the Azure account is specified incorrectly.|  
-|[Error 0064](error-0064.md)|An exception occurs if account name or storage access key for the Azure account is specified incorrectly.|  
-|[Error 0071](error-0071.md)|An exception occurs if the provided credentials are incorrect.|  
-|[Error 0018](error-0018.md)|An exception occurs if the input dataset is not valid.|  
-|[Error 0029](error-0029.md)|An exception occurs when an invalid URI is passed.|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more inputs are null or empty.|  
+|[Error 0057](errors/error-0057.md)|An exception occurs when attempting to create a file or blob that already exists.|  
+|[Error 0001](errors/error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
+|[Error 0027](errors/error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
+|[Error 0079](errors/error-0079.md)|An exception occurs if the container name in Azure Storage is specified incorrectly.|  
+|[Error 0052](errors/error-0052.md)|An exception occurs if the storage access key for the Azure account is specified incorrectly.|  
+|[Error 0064](errors/error-0064.md)|An exception occurs if account name or storage access key for the Azure account is specified incorrectly.|  
+|[Error 0071](errors/error-0071.md)|An exception occurs if the provided credentials are incorrect.|  
+|[Error 0018](errors/error-0018.md)|An exception occurs if the input dataset is not valid.|  
+|[Error 0029](errors/error-0029.md)|An exception occurs when an invalid URI is passed.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more inputs are null or empty.|  
   
 ## See Also  
  [Import Data](import-data.md)   

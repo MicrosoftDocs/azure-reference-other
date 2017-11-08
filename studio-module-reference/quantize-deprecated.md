@@ -73,17 +73,17 @@ manager: "jhubbard"
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0004](error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
-|[Error 0011](error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
-|[Error 0021](error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
-|[Error 0024](error-0024.md)|Exception occurs if dataset does not contain a label column.|  
-|[Error 0020](error-0020.md)|Exception occurs if number of columns in some of the datasets passed to the module is too small.|  
-|[Error 0038](error-0038.md)|Exception occurs if number of elements expected should be an exact value, but is not.|  
-|[Error 0005](error-0005.md)|Exception occurs if parameter is less than a specific value.|  
-|[Error 0002](error-0002.md)|Exception occurs if one or more parameters could not be parsed or converted from specified type into required by target method type.|  
-|[Error 0019](error-0019.md)|Exception occurs if column is expected to contain sorted values, but it does not.|  
-|[Error 0039](error-0039.md)|Exception occurs if operation has failed.|  
+|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
+|[Error 0011](errors/error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
+|[Error 0021](errors/error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
+|[Error 0024](errors/error-0024.md)|Exception occurs if dataset does not contain a label column.|  
+|[Error 0020](errors/error-0020.md)|Exception occurs if number of columns in some of the datasets passed to the module is too small.|  
+|[Error 0038](errors/error-0038.md)|Exception occurs if number of elements expected should be an exact value, but is not.|  
+|[Error 0005](errors/error-0005.md)|Exception occurs if parameter is less than a specific value.|  
+|[Error 0002](errors/error-0002.md)|Exception occurs if one or more parameters could not be parsed or converted from specified type into required by target method type.|  
+|[Error 0019](errors/error-0019.md)|Exception occurs if column is expected to contain sorted values, but it does not.|  
+|[Error 0039](errors/error-0039.md)|Exception occurs if operation has failed.|  
   
 ## See Also  
  [Deprecated Modules and Features](deprecated-modules-and-features.md)   

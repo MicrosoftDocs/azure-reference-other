@@ -299,10 +299,10 @@ If you have a column that contains the language identifier, or if you have gener
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
-|[Error 0030](error-0030.md)|an exception occurs in when it is not possible to download a file.|  
-|[Error 0048](error-0048.md)|An exception occurs when it is not possible to open a file.|  
-|[Error 0049](error-0049.md)|An exception occurs when it is not possible to parse a file.|  
+|[Error 0003](errors/error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
+|[Error 0030](errors/error-0030.md)|an exception occurs in when it is not possible to download a file.|  
+|[Error 0048](errors/error-0048.md)|An exception occurs when it is not possible to open a file.|  
+|[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
   
 ## See Also  
 
