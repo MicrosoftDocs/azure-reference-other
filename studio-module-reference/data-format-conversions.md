@@ -49,7 +49,7 @@ If you need to import data into Azure Machine Learning. or transform data in ind
 
 |Task| Use this|
 |----|----|   
-|Import data from my computer into Azure Machine Learning|Upload datasets in CSV format as described in [Import your training data into Azure Machine Learning Studio](../import-data.md). |
+|Import data from my computer into Azure Machine Learning|Upload datasets in CSV format as described in [Import your training data into Azure Machine Learning Studio](import-data.md). |
 |Import data from a cloud data source, including Hadoop or Azure|Use the [Import Data](import-data.md) module. |
 |Save machine learning datasets out to Azure blob storage, a Hadoop cluster, or other cloud-based storage|Use the [Export Data](export-data.md) module.|
 |Change the data type of columns; cast columns to a different format or type|In Azure Machine Learning, use these modules: [Edit Metadata](edit-metadata.md), [Apply SQL Transformation](apply-sql-transformation.md). If you are proficient with R or Python, try these modules: [Execute Python Script](execute-python-script.md),  [Execute R Script](execute-r-script.md). |

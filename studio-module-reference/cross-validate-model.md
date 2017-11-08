@@ -174,7 +174,7 @@ Additionally, the following metrics are included for each fold, depending on the
 
   However, if a validation dataset is provided upstream, the module will use the specified training and testing datasets instead of splitting into *n* folds. That is, the first dataset will be used to train the model for each parameter combination, and the models will be evaluated on the validation dataset. See the section on [using a parameter sweep with cross-validation](#bkmk_sweep).
 
-+ Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](../algorithm-parameters-optimize.md)
++ Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](/azure/machine-learning/studio/algorithm-parameters-optimize.md)
 
 ##  <a name="ExpectedInputs"></a> Expected Inputs  
   
