@@ -92,7 +92,7 @@ For an example of how to use data from Azure databases in machine learning, see 
   
 -   This article walks you through using a SQL Server database hosted in an Azure VM as a source for storing training data and predictions. It also illustrates how a relational database can be used for feature engineering and feature selection.  
   
-     [Build and deploy a machine learning model using SQL Server on an Azure VM](/azure/machine-learning/team-data-science-process/sql-walkthrough.md)  
+     [Build and deploy a machine learning model using SQL Server on an Azure VM](/azure/machine-learning/team-data-science-process/sql-walkthrough)  
   
 + This article demonstrates how to create a regression model to predict prices using Azure SQL Data Warehouse:  
   
