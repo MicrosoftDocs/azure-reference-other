@@ -24,4 +24,4 @@ caps.latest.revision: 7
 |The certificate {0} cannot be loaded. Its thumbprint is {1}.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

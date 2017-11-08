@@ -36,4 +36,4 @@ manager: "jhubbard"
 |The SQL domain {0} is not currently supported in Azure ML|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

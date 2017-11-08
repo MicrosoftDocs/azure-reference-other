@@ -25,7 +25,7 @@ This error in Azure Machine Learning occurs when you are trying to bin data usin
 
 Error handling for this event was introduced in an earlier version of Azure Machine Learning that allowed more customization of binning methods. Currently all binning methods are based on a selection from a dropdown list, so technically it should no longer be possible to get this error.
 
-If you get this error when using the [Group Data into Bins](group-data-into-bins.md) module, consider reporting the issue in the [Azure Machine Learning forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=MachineLearning), providing the data types, parameter settings, and the exact error message.  
+If you get this error when using the [Group Data into Bins](../group-data-into-bins.md) module, consider reporting the issue in the [Azure Machine Learning forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=MachineLearning), providing the data types, parameter settings, and the exact error message.  
   
 |Exception Messages|  
 |------------------------|  
@@ -38,4 +38,4 @@ If you get this error when using the [Group Data into Bins](group-data-into-bins
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

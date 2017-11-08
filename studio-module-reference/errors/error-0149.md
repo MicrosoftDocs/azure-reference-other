@@ -26,4 +26,4 @@ caps.latest.revision: 6
 |GitHub file is not found.: {0}|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

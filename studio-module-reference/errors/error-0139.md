@@ -25,14 +25,14 @@ manager: "jhubbard"
   
 ## Resolution  
 
-1. Review your input data and determine the exact data type of the column that you want to use, and the data type of the column that is producing the error. Sometimes you might think the data type is correct, but find that an upstream operation has modified the data type or usage of a column. Use the [Edit Metadata](edit-metadata.md) module to reset column metadata to its original state. 
+1. Review your input data and determine the exact data type of the column that you want to use, and the data type of the column that is producing the error. Sometimes you might think the data type is correct, but find that an upstream operation has modified the data type or usage of a column. Use the [Edit Metadata](../edit-metadata.md) module to reset column metadata to its original state. 
 2. Look at the module help page to verify the requirements for the specified operation. Determine which data types are supported by the current module, and what range of values is supported. 
-3. If values need to be truncated, rounded, or outliers removed, use the [Apply Math Operation](apply-math-operation.md) or [Clip Values](clip-values.md) modules to make corrections.
+3. If values need to be truncated, rounded, or outliers removed, use the [Apply Math Operation](../apply-math-operation.md) or [Clip Values](../clip-values.md) modules to make corrections.
 4. Consider whether it is possible to convert or cast the column to a different data type. The following modules all provide considerable flexibility and power for modifying data: 
   
-   + [Apply SQL Transformation](apply-sql-transformation.md)
-   + [Execute R Script](execute-r-script.md)
-   + [Execute Python Script](execute-python-script.md).  
+   + [Apply SQL Transformation](../apply-sql-transformation.md)
+   + [Execute R Script](../execute-r-script.md)
+   + [Execute Python Script](../execute-python-script.md).  
 
 > [!NOTE]
 > Still not working? Consider providing additional feedback on the problem, to help us develop better troubleshooting guidance. Just submit feedback on this page and provide the name of the module that generated the error, and the data type conversion that failed.
@@ -47,4 +47,4 @@ manager: "jhubbard"
 |Could not convert column "{2}" of type {0} to column "{3}" of type {1} on row {4}.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

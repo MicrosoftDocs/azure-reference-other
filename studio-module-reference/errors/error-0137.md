@@ -27,4 +27,4 @@ manager: "jhubbard"
 |Conversion error between Azure table storage property and dataset column. Additional information: {0}|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

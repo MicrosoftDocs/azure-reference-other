@@ -28,4 +28,4 @@ manager: "jhubbard"
 |Untrained model ({0}), use trained model.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

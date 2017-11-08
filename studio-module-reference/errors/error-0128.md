@@ -27,4 +27,4 @@ manager: "jhubbard"
 |Number of conditional probabilities for categorical columns exceeds limit. Columns '{0}' and '{1}' are the problematic pair.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

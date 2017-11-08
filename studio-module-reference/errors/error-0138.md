@@ -24,15 +24,15 @@ manager: "jhubbard"
 ## Resolution  
  If you are trying to read a very large dataset and the operation cannot be completed, downsampling the dataset might help.  
   
- If you use the visualizations on datasets to check the cardinality of columns, only some rows are sampled. To get a full report, use [Summarize Data](summarize-data.md). You can also use the [Apply SQL Transformation](apply-sql-transformation.md) to check for the number of unique values in each column.  
+ If you use the visualizations on datasets to check the cardinality of columns, only some rows are sampled. To get a full report, use [Summarize Data](../summarize-data.md). You can also use the [Apply SQL Transformation](../apply-sql-transformation.md) to check for the number of unique values in each column.  
   
  Sometimes transient loads can lead to this error. Machine support also changes over time. See the [Azure Machine Learning FAQ](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/) for  a description of supported data size.  
   
- Try using [Principal Component Analysis](principal-component-analysis.md) or one of the provided feature selection methods to reduce your dataset to a smaller set of more feature-rich columns: [Feature Selection](feature-selection-modules.md)  
+ Try using [Principal Component Analysis](../principal-component-analysis.md) or one of the provided feature selection methods to reduce your dataset to a smaller set of more feature-rich columns: [Feature Selection](../feature-selection-modules.md)  
   
 |Exception Messages|  
 |------------------------|  
 |Memory has been exhausted, unable to complete running of module.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

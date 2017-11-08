@@ -30,4 +30,4 @@ manager: "jhubbard"
 |Unsupported blob write mode: {0}.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

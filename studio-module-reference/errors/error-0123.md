@@ -29,4 +29,4 @@ manager: "jhubbard"
 |Column of vectors is specified as Label column.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

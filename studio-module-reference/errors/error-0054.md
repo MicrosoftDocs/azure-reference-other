@@ -29,4 +29,4 @@ manager: "jhubbard"
 |Data has too few distinct values in the column "{1}" to complete operation. The required minimum is {0} elements.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

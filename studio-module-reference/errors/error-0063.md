@@ -19,7 +19,7 @@ manager: "jhubbard"
   
  This exception is raised when R script evaluation fails with an error.  
   
- This error occurs when you have provided an R script in one of the [R language modules](r-language-modules.md) in Azure Machine Learning, and the R code contains internal syntax errors. The exception can also occur if you provide the wrong inputs to the R script. 
+ This error occurs when you have provided an R script in one of the [R language modules](../r-language-modules.md) in Azure Machine Learning, and the R code contains internal syntax errors. The exception can also occur if you provide the wrong inputs to the R script. 
  
  The error can also occur if the script is too big to execute in the workspace. The maximum script size for the **Execute R Script** module is 1,000 lines or 32KB of work space, whichever is lesser.
   
@@ -41,8 +41,8 @@ manager: "jhubbard"
 
 > [!NOTE]
 > These topics contains examples of R code that you can use, as well as links to experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com) that use R script.
-> + [Execute R Script](execute-r-script.md)
-> + [Create R Model](create-r-model.md)
+> + [Execute R Script](../execute-r-script.md)
+> + [Create R Model](../create-r-model.md)
   
 |Exception Messages|  
 |------------------------|  
@@ -57,4 +57,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

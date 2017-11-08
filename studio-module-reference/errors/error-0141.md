@@ -34,4 +34,4 @@ manager: "jhubbard"
 |The total number of the selected numerical columns and unique values in the categorical and string columns (currently {0}) should be at least {1}|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

@@ -25,10 +25,10 @@ manager: "jhubbard"
  1. Identify the column that is the problem.
  2. Review the requirements of the module.
  3. Modify the column to make it conform to requirements. You might need to use several of the following modules to make changes, depending on the column and the conversion you are attempting:
-    + Use [Edit Metadata](edit-metadata.md) to change the data type of columns, or to change the column usage from feature to numeric, categorical to non-categorical and so forth.
-    + Use [Convert to Dataset](convert-to-dataset.md) to ensure that all included columns use data types that are supported by Azure Machine Learning.  If you cannot convert the columns, consider removing them from the input dataset.
-    + Use the [Apply SQL Transformation](apply-sql-transformation.md) or [Execute R Script](execute-r-script.md) modules to cast or convert any columns that cannot be modified using [Edit Metadata](edit-metadata.md). These modules provide more flexibility for working with datetime data types.
-    + For numeric data types, you can use the [Apply Math Operation](apply-math-operation.md) module to round or truncate values, or use the [Clip Values](clip-values.md) module to remove out of range values.  
+    + Use [Edit Metadata](../edit-metadata.md) to change the data type of columns, or to change the column usage from feature to numeric, categorical to non-categorical and so forth.
+    + Use [Convert to Dataset](../convert-to-dataset.md) to ensure that all included columns use data types that are supported by Azure Machine Learning.  If you cannot convert the columns, consider removing them from the input dataset.
+    + Use the [Apply SQL Transformation](../apply-sql-transformation.md) or [Execute R Script](../execute-r-script.md) modules to cast or convert any columns that cannot be modified using [Edit Metadata](../edit-metadata.md). These modules provide more flexibility for working with datetime data types.
+    + For numeric data types, you can use the [Apply Math Operation](../apply-math-operation.md) module to round or truncate values, or use the [Clip Values](../clip-values.md) module to remove out of range values.  
  4. As a last resort, you might need to modify the original input dataset.
 
 > [!TIP]
@@ -48,4 +48,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

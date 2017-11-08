@@ -24,13 +24,13 @@ manager: "jhubbard"
 ## Resolution  
  In general, counting methods are chosen from a dropdown list, so you should not see this error.  
   
- For general information, see [Learning with Counts](data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
+ For general information, see [Learning with Counts](../data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
   
--   [Merge Count Transform](merge-count-transform.md)  
+-   [Merge Count Transform](../merge-count-transform.md)  
   
--   [Import Count Table](import-count-table.md)  
+-   [Import Count Table](../import-count-table.md)  
   
--   [Modify Count Table Parameters](modify-count-table-parameters.md)  
+-   [Modify Count Table Parameters](../modify-count-table-parameters.md)  
   
 |Exception Messages|  
 |------------------------|  
@@ -44,4 +44,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

@@ -22,7 +22,7 @@ manager: "jhubbard"
  This error in Azure Machine Learning occurs if multiple columns have the same name. One way you may receive this error is if the dataset does not have a header row and column names are automatically assigned: Col0, Col1, etc.  
   
 ## Resolution  
- If columns have same name, insert a [Edit Metadata](edit-metadata.md) module between the input dataset and the module. Use the column selector in [Edit Metadata](edit-metadata.md) to select columns to rename, typing the new names into the **New column names** textbox.  
+ If columns have same name, insert a [Edit Metadata](../edit-metadata.md) module between the input dataset and the module. Use the column selector in [Edit Metadata](../edit-metadata.md) to select columns to rename, typing the new names into the **New column names** textbox.  
   
 |Exception Messages|  
 |------------------------|  
@@ -36,4 +36,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

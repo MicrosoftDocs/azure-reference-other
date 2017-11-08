@@ -22,7 +22,7 @@ manager: "jhubbard"
  This error in Azure Machine Learning is produced if the following conditions are met: (a) the input dataset has at least one sparse column and (b) the final number of dimensions requested is the same as the number of input dimensions.  
   
 ## Resolution  
- Consider reducing the number of dimensions in the output to be fewer than the number of dimensions in the input. This is typical in applications of PCA.  For more information, see [Principal Component Analysis](principal-component-analysis.md).  
+ Consider reducing the number of dimensions in the output to be fewer than the number of dimensions in the input. This is typical in applications of PCA.  For more information, see [Principal Component Analysis](../principal-component-analysis.md).  
   
 |Exception Messages|  
 |------------------------|  
@@ -35,4 +35,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

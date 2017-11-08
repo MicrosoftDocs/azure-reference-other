@@ -19,7 +19,7 @@ manager: "jhubbard"
   
  Exception occurs in the case when it is not possible to parse a file.  
   
- This error in Azure Machine Learning occurs when it is not possible to parse a file. You will receive this error if the file format selected in the [Import Data](import-data.md) module does not match the actual format of the file, or if the file contains an unrecognizable character.  
+ This error in Azure Machine Learning occurs when it is not possible to parse a file. You will receive this error if the file format selected in the [Import Data](../import-data.md) module does not match the actual format of the file, or if the file contains an unrecognizable character.  
   
 ## Resolution  
  Revisit the module and correct the file format selection if it does not match the format of the file. If possible, inspect the file to confirm that it does not contain any illegal characters.  
@@ -36,4 +36,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

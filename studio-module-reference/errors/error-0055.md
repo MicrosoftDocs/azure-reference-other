@@ -19,7 +19,7 @@ manager: "jhubbard"
   
  Exception occurs when calling a deprecated module.  
   
- This error in Azure Machine Learning appears if you try to call a module that has been deprecated. For a list of all deprecated modules and newer modules that you can use instead, see [Deprecated Modules and Features](deprecated-modules-and-features.md).  
+ This error in Azure Machine Learning appears if you try to call a module that has been deprecated. For a list of all deprecated modules and newer modules that you can use instead, see [Deprecated Modules and Features](../deprecated-modules-and-features.md).  
   
 ## Resolution  
   
@@ -29,4 +29,4 @@ manager: "jhubbard"
 |Module "{0}" is deprecated.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

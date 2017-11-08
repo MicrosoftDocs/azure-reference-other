@@ -21,7 +21,7 @@ manager: "jhubbard"
   
 This error occurs in Azure Machine Learning Studio when you specify parameters for an Azure storage account, but the name or password cannot be resolved. Errors on passwords or account names can happen for many reasons:
  
- + The account is the wrong type. Some new account types are not supported for use with Machine Learning Studio. See [Import Data](import-data.md) for details.
+ + The account is the wrong type. Some new account types are not supported for use with Machine Learning Studio. See [Import Data](../import-data.md) for details.
  + You misstyped the account name
  + The account no longer exists
  + The password for the storage account is wrong or has changed
@@ -30,7 +30,7 @@ This error occurs in Azure Machine Learning Studio when you specify parameters f
    
 ## Resolution  
 
-Such problems often occur when you try to manually enter the account name, password, or container path. We recommend that you use the new wizard for the [Import Data](import-data.md) module, which helps you look up and check names.
+Such problems often occur when you try to manually enter the account name, password, or container path. We recommend that you use the new wizard for the [Import Data](../import-data.md) module, which helps you look up and check names.
 
 You should also check whether the account, container, or blob has been deleted. Use another Azure storage utility to verify that the account name and password have been entered correctly, and that the container exists. 
 
@@ -70,4 +70,4 @@ See these experiments in the [Cortana Intelligence Gallery](https://gallery.cort
   
 ## See Also  
 
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

@@ -26,13 +26,13 @@ manager: "jhubbard"
   
  Also, note that in general, a count-based transform can only be applied to datasets that have the same schema as the dataset on which the transform was originally created.  
   
- For general information, see [Learning with Counts](data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
+ For general information, see [Learning with Counts](../data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
   
--   [Merge Count Transform](merge-count-transform.md)  
+-   [Merge Count Transform](../merge-count-transform.md)  
   
--   [Import Count Table](import-count-table.md)  
+-   [Import Count Table](../import-count-table.md)  
   
--   [Modify Count Table Parameters](modify-count-table-parameters.md)  
+-   [Modify Count Table Parameters](../modify-count-table-parameters.md)  
   
 |Exception Messages|  
 |------------------------|  
@@ -47,4 +47,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

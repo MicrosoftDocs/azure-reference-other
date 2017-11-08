@@ -35,12 +35,12 @@ Another reason you might get this error if you try to use a column containing fl
     + Look for text strings or NA values in a number column. 
     + Boolean values can be converted to an appropriate representation depending on the required data type.
     + Examine text columns for non Unicode characters, tab characters, or control characters
-    + Datetime data should be consistent to avoid modeling errors, but cleanup can be complex owing to the many formats. Consider using the [Execute R Script](execute-r-script.md) or [Execute Python Script](execute-python-script.md) modules to perform cleanup.  
+    + Datetime data should be consistent to avoid modeling errors, but cleanup can be complex owing to the many formats. Consider using the [Execute R Script](../execute-r-script.md) or [Execute Python Script](../execute-python-script.md) modules to perform cleanup.  
 + If necessary, modify the values in the input dataset so that the column can be converted successfully. Modification might include binning, truncation or rounding operations, elimination of outliers, or imputation of missing values. See the following articles for some common data transformation scenarios in machine learning:
-    + [Clip Values](clip-values.md) 
-    + [Clean Missing Data](clean-missing-data.md)
-    + [Normalize Data](normalize-data.md)
-    + [Group Data Into Bins](group-data-into-bins.md)
+    + [Clip Values](../clip-values.md) 
+    + [Clean Missing Data](../clean-missing-data.md)
+    + [Normalize Data](../normalize-data.md)
+    + [Group Data Into Bins](../group-data-into-bins.md)
   
  
 > [!TIP]
@@ -60,4 +60,4 @@ Another reason you might get this error if you try to use a column containing fl
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

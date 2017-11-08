@@ -27,4 +27,4 @@ caps.latest.revision: 6
 |Cannot parse GitHub URL (expecting '\blob\\' or '\tree\\' after the repository name): {0}|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

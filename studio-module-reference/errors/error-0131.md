@@ -31,4 +31,4 @@ manager: "jhubbard"
 |Zipped dataset {0} failed with a {1} exception with message: {2}|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

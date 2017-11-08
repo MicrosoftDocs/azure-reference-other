@@ -30,4 +30,4 @@ manager: "jhubbard"
 |Cannot compare values for column \\"{0}\\" of type {1}. No accessible explicit method Equals found.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

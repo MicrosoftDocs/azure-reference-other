@@ -22,9 +22,9 @@ manager: "jhubbard"
  This error occurs when the module requires a label column, but you did not include one in the column selection, or the label column has too many missing values.  
   
 ## Resolution  
- If you included a label column in the column selection but it isn’t being recognized, use the [Edit Metadata](edit-metadata.md) module to mark it as a label column.  
+ If you included a label column in the column selection but it isn’t being recognized, use the [Edit Metadata](../edit-metadata.md) module to mark it as a label column.  
   
- Use the [Clean Missing Data](clean-missing-data.md) module to remove rows that don’t have a value in the label column. You can also use the [Summarize Data](summarize-data.md) module to find out how many values are missing in each column.  
+ Use the [Clean Missing Data](../clean-missing-data.md) module to remove rows that don’t have a value in the label column. You can also use the [Summarize Data](../summarize-data.md) module to find out how many values are missing in each column.  
   
 |Exception Messages|  
 |------------------------|  
@@ -32,4 +32,4 @@ manager: "jhubbard"
 |Exception occurs when label column is missing or has less than {0} labeled rows|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

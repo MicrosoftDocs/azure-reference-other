@@ -19,7 +19,7 @@ manager: "jhubbard"
   
  Exception occurs if the learner passed to the module is an invalid type.  
   
- This error occurs whenever a trained model is incompatible with the connected scoring module. For example, connecting the output of [Train Matchbox Recommender](train-matchbox-recommender.md) to [Score Model](score-model.md) (instead of [Score Matchbox Recommender](score-matchbox-recommender.md)) will generate this error when the experiment is run.  
+ This error occurs whenever a trained model is incompatible with the connected scoring module. For example, connecting the output of [Train Matchbox Recommender](../train-matchbox-recommender.md) to [Score Model](../score-model.md) (instead of [Score Matchbox Recommender](../score-matchbox-recommender.md)) will generate this error when the experiment is run.  
   
 ## Resolution  
 
@@ -30,17 +30,17 @@ If the model was trained using any of the specialized training modules, connect 
 
 |Model type|Training module| Scoring module|
 |----|----|----|
-|any classifier|[Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md)|[Score Model](score-model.md)|
-|any regression model|[Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md)|[Score Model](score-model.md)|
-| clustering models| [Train Clustering Model](train-clustering-model.md) or [Sweep Clustering](sweep-clustering.md)| [Assign Data to Clusters](assign-data-to-clusters.md)|
-| anomaly detection - One-Class SVM | [Train Anomaly Detection Model](train-anomaly-detection-model.md) |[Score Model](score-model.md)|
-| anomaly detection - PCA |[Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md)|[Score Model](score-model.md) </br> Some additional steps are required to evaluate the model. |
-| anomaly detection - time series|  [Time Series Anomaly Detection](time-series-anomaly-detection.md) |Model trains from data and generates scores. The module does not create a trained learner and no additional scoring is required. |
-| recommendation model| [Train Matchbox Recommender](train-matchbox-recommender.md) | [Score Matchbox Recommender](score-matchbox-recommender.md) |
-| image classification | [Pretrained Cascade Image Classification](pretrained-cascade-image-classification.md) | [Score Model](score-model.md) |
-|Vowpal Wabbit models| [Train Vowpal Wabbit Version 7-4 Model](train-vowpal-wabbit-version-7-4-model.md) | [Score Vowpal Wabbit Version 7-4 Model](score-vowpal-wabbit-version-7-4-model.md) |   
-|Vowpal Wabbit models| [Train Vowpal Wabbit Version 7-10 Model](train-vowpal-wabbit-version-7-10-model.md) | [Score Vowpal Wabbit Version 7-10 Model](score-vowpal-wabbit-version-7-10-model.md) |
-|Vowpal Wabbit models| [Train Vowpal Wabbit Version 8 Model](score-vowpal-wabbit-version-8-model.md) | [Score Vowpal Wabbit Version 8 Model](score-vowpal-wabbit-version-8-model.md) |
+|any classifier|[Train Model](../train-model.md) or [Tune Model Hyperparameters](../tune-model-hyperparameters.md)|[Score Model](../score-model.md)|
+|any regression model|[Train Model](../train-model.md) or [Tune Model Hyperparameters](../tune-model-hyperparameters.md)|[Score Model](../score-model.md)|
+| clustering models| [Train Clustering Model](../train-clustering-model.md) or [Sweep Clustering](../sweep-clustering.md)| [Assign Data to Clusters](../assign-data-to-clusters.md)|
+| anomaly detection - One-Class SVM | [Train Anomaly Detection Model](../train-anomaly-detection-model.md) |[Score Model](../score-model.md)|
+| anomaly detection - PCA |[Train Model](../train-model.md) or [Tune Model Hyperparameters](../tune-model-hyperparameters.md)|[Score Model](../score-model.md) </br> Some additional steps are required to evaluate the model. |
+| anomaly detection - time series|  [Time Series Anomaly Detection](../time-series-anomaly-detection.md) |Model trains from data and generates scores. The module does not create a trained learner and no additional scoring is required. |
+| recommendation model| [Train Matchbox Recommender](../train-matchbox-recommender.md) | [Score Matchbox Recommender](../score-matchbox-recommender.md) |
+| image classification | [Pretrained Cascade Image Classification](../pretrained-cascade-image-classification.md) | [Score Model](../score-model.md) |
+|Vowpal Wabbit models| [Train Vowpal Wabbit Version 7-4 Model](../train-vowpal-wabbit-version-7-4-model.md) | [Score Vowpal Wabbit Version 7-4 Model](../score-vowpal-wabbit-version-7-4-model.md) |   
+|Vowpal Wabbit models| [Train Vowpal Wabbit Version 7-10 Model](../train-vowpal-wabbit-version-7-10-model.md) | [Score Vowpal Wabbit Version 7-10 Model](../score-vowpal-wabbit-version-7-10-model.md) |
+|Vowpal Wabbit models| [Train Vowpal Wabbit Version 8 Model](../score-vowpal-wabbit-version-8-model.md) | [Score Vowpal Wabbit Version 8 Model](../score-vowpal-wabbit-version-8-model.md) |
   
 |Exception Messages|  
 |------------------------|  
@@ -48,4 +48,4 @@ If the model was trained using any of the specialized training modules, connect 
 |Learner "{0}" has invalid type.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

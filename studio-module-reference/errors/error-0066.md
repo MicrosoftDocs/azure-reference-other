@@ -19,7 +19,7 @@ manager: "jhubbard"
   
  Exception occurs if a resource could not be uploaded to an Azure Blob.  
   
- This error in Azure Machine Learning occurs if a resource could not be uploaded to an Azure Blob. You will receive this message if [Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md) encounters an error attempting to save either the model or the hash created when training the model. Both are saved to the same Azure storage account as the account containing the input file.  
+ This error in Azure Machine Learning occurs if a resource could not be uploaded to an Azure Blob. You will receive this message if [Train Vowpal Wabbit 7-4 Model](../train-vowpal-wabbit-version-7-4-model.md) encounters an error attempting to save either the model or the hash created when training the model. Both are saved to the same Azure storage account as the account containing the input file.  
   
 ## Resolution  
  Revisit the module. Verify that the Azure account name, storage key, and container are correct and that the account has permission to write to the container.  
@@ -36,4 +36,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

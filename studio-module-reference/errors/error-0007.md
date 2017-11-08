@@ -28,7 +28,7 @@ manager: "jhubbard"
  + Open the module in question and review any numeric property settings.
  + Ensure that any parameter values fall within the supported range of values for that property.
  + If the module takes multiple inputs, ensure that inputs are of the same size.
- + If the modules has multiple properties that can be set, ensure that related properties have appropriate values. For example, when using [Group Data into Bins](group-data-into-bins.md), if you use the option to specify custom bin edges, the number of bins must match the number of values you provide as bin boundaries.
+ + If the modules has multiple properties that can be set, ensure that related properties have appropriate values. For example, when using [Group Data into Bins](../group-data-into-bins.md), if you use the option to specify custom bin edges, the number of bins must match the number of values you provide as bin boundaries.
  + Check whether the dataset or data source has changed. Sometimes a value that worked with a previous version of the data will fail after the number of columns, the column data types, or the size of the data has changed.  
   
 |Exception Messages|  

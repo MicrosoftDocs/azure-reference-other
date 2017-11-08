@@ -27,8 +27,8 @@ Open the module that generated the error, and identify the columns used as input
 
 For columns that you intend to use for grouping or categorization, take steps to reduce the number of unique values in columns. You can do this in different ways, depending on the data type of the column. 
 
-+ For text data, you might be able to use [Preprocess Text](preprocess-text.md) to collapse similar entries. 
-+ For numeric data, you can create a smaller number of bins using [Group Data into Bins](group-data-into-bins.md), remove or truncate values using [Clip Values](clip-values.md), or use machine learning methods such as [Principal Component Analysis](principal-component-analysis.md) or [Learning with Counts](data-transformation-learning-with-counts.md) to reduce the dimensionality of the data.  
++ For text data, you might be able to use [Preprocess Text](../preprocess-text.md) to collapse similar entries. 
++ For numeric data, you can create a smaller number of bins using [Group Data into Bins](../group-data-into-bins.md), remove or truncate values using [Clip Values](../clip-values.md), or use machine learning methods such as [Principal Component Analysis](../principal-component-analysis.md) or [Learning with Counts](../data-transformation-learning-with-counts.md) to reduce the dimensionality of the data.  
 
 > [!TIP]
 > Unable to find a resolution that matches your scenario? You can provide feedback on this topic that includes the name of the module that generated the error, and the data type and cardinality of the column. We will use the information to provide more targeted troubleshooting steps for common scenarios.   
@@ -39,4 +39,4 @@ For columns that you intend to use for grouping or categorization, take steps to
 |Number of unique values in column: "{0}" exceeds tuple count of {1}.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

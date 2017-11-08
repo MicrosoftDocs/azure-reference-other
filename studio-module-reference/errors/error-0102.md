@@ -24,7 +24,7 @@ manager: "jhubbard"
 ## Resolution  
  Make sure the selected file is a valid .zip file, and that it was compressed by using one of the supported compression algorithms.  
   
- If you get this error when importing datasets in compressed format, verify that all contained files use one of the supported file formats, and are in Unicode format. For more information, see [Unpack Zipped Datasets](unpack-zipped-datasets.md).  
+ If you get this error when importing datasets in compressed format, verify that all contained files use one of the supported file formats, and are in Unicode format. For more information, see [Unpack Zipped Datasets](../unpack-zipped-datasets.md).  
   
  Try re-adding the desired files to a new compressed zipped folder and try to add the custom module again.  
   
@@ -39,4 +39,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

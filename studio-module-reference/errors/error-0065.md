@@ -23,9 +23,9 @@ manager: "jhubbard"
   
 -   The blob cannot be found in the specified container.  
   
--   The fully qualified name of the blob specified for output in one of the [Learning with Counts](data-transformation-learning-with-counts.md) modules is greater than 512 characters.  
+-   The fully qualified name of the blob specified for output in one of the [Learning with Counts](../data-transformation-learning-with-counts.md) modules is greater than 512 characters.  
   
--   Only the container was specified as the source in a [Import Data](import-data.md) request when the format was Excel or CSV with encoding; concatenation of the contents of all blobs within a container is not allowed with these formats.  
+-   Only the container was specified as the source in a [Import Data](../import-data.md) request when the format was Excel or CSV with encoding; concatenation of the contents of all blobs within a container is not allowed with these formats.  
   
 -   A SAS URI does not contain the name of a valid blob.  
   
@@ -44,4 +44,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

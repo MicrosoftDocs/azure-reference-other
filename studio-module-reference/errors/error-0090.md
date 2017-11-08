@@ -19,7 +19,7 @@ manager: "jhubbard"
   
  Exception occurs when Hive table creation fails.  
   
- This error in Azure Machine Learning occurs when you are using [Export Data](export-data.md) or another option to save data to an HDInsight cluster and the specified Hive table cannot be created.  
+ This error in Azure Machine Learning occurs when you are using [Export Data](../export-data.md) or another option to save data to an HDInsight cluster and the specified Hive table cannot be created.  
   
 ## Resolution  
  Check the Azure storage account name associated with the cluster and verify that you are using the same account in the module properties.  
@@ -37,4 +37,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

@@ -29,9 +29,9 @@ The Matchbox recommender has certain requirements that must be met when using ei
  
  If you do not have any features for these users, consider feature engineering to generate appropriate features.  For example, if you do not have individual user age or income values, you might generate approximate values to use for a group of users. 
  
-When you are scoring from a recommendation mode, you can use item or user features only if you previously used item or user features during training. For more information, see [Score Matchbox Recommender](score-matchbox-recommender.md).
+When you are scoring from a recommendation mode, you can use item or user features only if you previously used item or user features during training. For more information, see [Score Matchbox Recommender](../score-matchbox-recommender.md).
  
-For general information about how the Matchbox recommendation algorithm works, and how to prepare a dataset of item features or user features, see [Train Matchbox Recommender](train-matchbox-recommender.md).  
+For general information about how the Matchbox recommendation algorithm works, and how to prepare a dataset of item features or user features, see [Train Matchbox Recommender](../train-matchbox-recommender.md).  
   
  > [!TIP]
  > Resolution not applicable to your case? You are welcome to send feedback on this article and provide information about the scenario, including the module and the number of rows in the column. We will use this information to provide more detailed troubleshooting steps in future.
@@ -48,4 +48,4 @@ For general information about how the Matchbox recommendation algorithm works, a
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

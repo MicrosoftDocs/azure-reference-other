@@ -26,7 +26,7 @@ manager: "jhubbard"
   
 -   The module requires that data be categorical but your data is numeric.  
   
--   The module requires a specific data type. For example, ratings provided to [Train Matchbox Recommender](train-matchbox-recommender.md) can be either numeric or categorical, but cannot be floating point numbers.  
+-   The module requires a specific data type. For example, ratings provided to [Train Matchbox Recommender](../train-matchbox-recommender.md) can be either numeric or categorical, but cannot be floating point numbers.  
   
 -   The data is in the wrong format.  
   
@@ -36,7 +36,7 @@ manager: "jhubbard"
   
  To determine the requirements and how your data might, review the help topic for the module that will be consuming the dataset as input.  
   
- We also recommend that you use [Summarize Data](summarize-data.md) or [Compute Elementary Statistics](compute-elementary-statistics.md) to profile your data, and use these modules to fix metadata and clean values: [Edit Metadata](edit-metadata.md), [Clean Missing Data](clean-missing-data.md), [Clip Values](clip-values.md).  
+ We also recommend that you use [Summarize Data](../summarize-data.md) or [Compute Elementary Statistics](../compute-elementary-statistics.md) to profile your data, and use these modules to fix metadata and clean values: [Edit Metadata](../edit-metadata.md), [Clean Missing Data](../clean-missing-data.md), [Clip Values](../clip-values.md).  
   
 |Exception Messages|  
 |------------------------|  
@@ -51,4 +51,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

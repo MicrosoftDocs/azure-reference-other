@@ -26,4 +26,4 @@ manager: "jhubbard"
 |Non-numeric column is specified as the weight column.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

@@ -29,4 +29,4 @@ manager: "jhubbard"
 |Specified column set does not contain other columns except label column.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

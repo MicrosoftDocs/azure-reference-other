@@ -30,4 +30,4 @@ manager: "jhubbard"
 |The specified file was not found. Found the following file(s): {0}|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

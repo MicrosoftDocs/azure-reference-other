@@ -34,11 +34,11 @@ manager: "jhubbard"
   
  If you used one of the column selection options that can select multiple columns (column indices, all features, all numeric, etc.), validate the exact number of columns returned by the selection.  
   
- If you are trying to specify a comma-separated list of datasets as inputs to [Unpack Zipped Datasets](unpack-zipped-datasets.md), unpack only one datset at a time. Multiple inputs are not supported.  
+ If you are trying to specify a comma-separated list of datasets as inputs to [Unpack Zipped Datasets](../unpack-zipped-datasets.md), unpack only one datset at a time. Multiple inputs are not supported.  
   
  Verify that the number or type of upstream columns has not changed.  
   
- If you are using a recommendation dataset to train a model, be aware that the recommender expects a limited number of columns, corresponding to user-item pairs or user-item-rankings. You must remove additional columns before training the model or splitting recommendation datasets. For more information, see [Split Data](split-data.md).  
+ If you are using a recommendation dataset to train a model, be aware that the recommender expects a limited number of columns, corresponding to user-item pairs or user-item-rankings. You must remove additional columns before training the model or splitting recommendation datasets. For more information, see [Split Data](../split-data.md).  
   
 |Exception Messages|  
 |------------------------|  
@@ -54,4 +54,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

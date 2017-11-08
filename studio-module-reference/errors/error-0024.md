@@ -27,7 +27,7 @@ It can also happen that a label column is present in the dataset, but not detect
 
 + Open the module that generated the error, and determine if a label column is present. The name or data type of the column doesn't matter, as long as the column contains a single outcome (or dependent variable) that you are trying to predict. If you are not sure which column has the label, look for a generic name such as  *Class* or *Target*. 
 +  If the dataset does not include a label column, it is possible that the label column was explicitly or accidentally removed upstream. It could also be that the dataset is not the output of an upstream scoring module.
-+ To explicitly mark the column as the label column, add the [Edit Metadata](edit-metadata.md) module and connect the dataset. Select only the label column, and select **Label** from the **Fields** dropdown list. 
++ To explicitly mark the column as the label column, add the [Edit Metadata](../edit-metadata.md) module and connect the dataset. Select only the label column, and select **Label** from the **Fields** dropdown list. 
 + If the wrong column is chosen as the label, you can select **Clear label** from the **Fields** to fix the metadata on the column. 
   
 |Exception Messages|  
@@ -42,4 +42,4 @@ It can also happen that a label column is present in the dataset, but not detect
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

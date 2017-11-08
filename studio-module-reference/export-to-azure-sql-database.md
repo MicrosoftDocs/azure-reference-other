@@ -79,7 +79,7 @@ Use this option in the [Export Data](export-data.md) module to export data from 
   
 -   This article walks you through using a SQL Server database hosted in an Azure VM as a source for storing training data and predictions. It also illustrates how relational database can be used for feature engineering and feature selection.  
   
-     [Build and deploy a machine learning model using SQL Server on an Azure VM](../../team-data-science-process/sql-walkthrough.md)  
+     [Build and deploy a machine learning model using SQL Server on an Azure VM](/azure/machine-learning/team-data-science-process/sql-walkthrough.md)  
   
 -   This article demonstrates how you can use data in Azure SQL Data Warehouse to build a clustering model:  
   

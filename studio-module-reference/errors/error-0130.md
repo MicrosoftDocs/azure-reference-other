@@ -22,11 +22,11 @@ manager: "jhubbard"
  This occurs when some column in the training dataset is empty.  
   
 ## Resolution  
- Use the [Clean Missing Data](clean-missing-data.md) module to remove columns with all missing values.  
+ Use the [Clean Missing Data](../clean-missing-data.md) module to remove columns with all missing values.  
   
 |Exception Messages|  
 |------------------------|  
 |All rows in training dataset contain missing values.  Consider using the Clean Missing Data module to remove missing values.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

@@ -27,4 +27,4 @@ caps.latest.revision: 6
 |URL is not from github.com: {0}|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

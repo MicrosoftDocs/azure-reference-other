@@ -26,4 +26,4 @@ caps.latest.revision: 6
 |Replication path is longer than 248 characters, shorten the script name or path.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

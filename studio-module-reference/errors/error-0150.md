@@ -25,4 +25,4 @@ caps.latest.revision: 6
 |Unable to unzip the bundle; possible name collision with GitHub files.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

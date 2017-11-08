@@ -28,7 +28,7 @@ manager: "jhubbard"
   
  Check inputs for missing values and eliminate or replace them if necessary.  
   
- If necessary, add the[Edit Metadata](edit-metadata.md) module and ensure that the label column is marked as a label.  
+ If necessary, add the[Edit Metadata](../edit-metadata.md) module and ensure that the label column is marked as a label.  
   
 |Exception Messages|  
 |------------------------|  
@@ -43,4 +43,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

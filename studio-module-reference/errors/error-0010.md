@@ -22,7 +22,7 @@ manager: "jhubbard"
  You will receive this error in Azure Machine Learning if the column index in the message has different column names in the two input datasets.  
   
 ## Resolution  
- Use [Edit Metadata](edit-metadata.md) or modify the original dataset to have the same column name for the specified column index.  
+ Use [Edit Metadata](../edit-metadata.md) or modify the original dataset to have the same column name for the specified column index.  
   
 |Exception Messages|  
 |------------------------|  
@@ -36,4 +36,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

@@ -23,7 +23,7 @@ manager: "jhubbard"
  
  This error can also happen if the column is the correct data type, but the module you are using requires that the column also be specifically marked as a feature, label, or categorical column.  
   
- For example, the [Convert to Indicator Values](convert-to-indicator-values.md) module requires that columns be categorical, and will raise this error if you select a feature column or label column.  
+ For example, the [Convert to Indicator Values](../convert-to-indicator-values.md) module requires that columns be categorical, and will raise this error if you select a feature column or label column.  
   
 ## Resolution  
   
@@ -33,7 +33,7 @@ manager: "jhubbard"
   
 3.  Review the help topic for the module in which you made the column selection, to determine if there are specific requirements for data type or column usage.  
   
-3.  Use [Edit Metadata](edit-metadata.md) to change the column type for the duration of this operation. Be sure to change the column type back to its original value, using another instance of [Edit Metadata](edit-metadata.md), if you need it for downstream operations.  
+3.  Use [Edit Metadata](../edit-metadata.md) to change the column type for the duration of this operation. Be sure to change the column type back to its original value, using another instance of [Edit Metadata](../edit-metadata.md), if you need it for downstream operations.  
   
 |Exception Messages|  
 |------------------------|  
@@ -47,4 +47,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

@@ -34,7 +34,7 @@ manager: "jhubbard"
   
  Use the Azure management portal or an Azure storage tool to verify that you have permission to access the file.  
   
- If you are trying to read an image file, make sure that it meets the requirements for image files in terms of size, number of pixels, and so forth. For more information, see [Import Images](import-images.md).  
+ If you are trying to read an image file, make sure that it meets the requirements for image files in terms of size, number of pixels, and so forth. For more information, see [Import Images](../import-images.md).  
   
 |Exception Messages|  
 |------------------------|  
@@ -48,4 +48,4 @@ manager: "jhubbard"
 > -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

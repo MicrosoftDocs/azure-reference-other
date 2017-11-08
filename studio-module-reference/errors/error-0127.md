@@ -24,9 +24,9 @@ manager: "jhubbard"
 ## Resolution  
  For more information about the image size and other requirements, see these topics:  
   
--   [Import Images](import-images.md)  
+-   [Import Images](../import-images.md)  
   
--   [Pretrained Cascade Image Classification](pretrained-cascade-image-classification.md)  
+-   [Pretrained Cascade Image Classification](../pretrained-cascade-image-classification.md)  
   
 |Exception Messages|  
 |------------------------|  
@@ -34,4 +34,4 @@ manager: "jhubbard"
 |Image pixel size in the file '{0}' exceeds allowed limit: '{1}'|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

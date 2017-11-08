@@ -19,7 +19,7 @@ manager: "jhubbard"
   
  Exception occurs when attempting to create a file or blob that already exists.  
   
- This exception occurs when you are using the [Export Data](export-data.md) module or other module to save  results of an experiment in Azure Machine Learning to Azure blob storage, but you attempt to create a file or blob that already exists.   
+ This exception occurs when you are using the [Export Data](../export-data.md) module or other module to save  results of an experiment in Azure Machine Learning to Azure blob storage, but you attempt to create a file or blob that already exists.   
   
 ## Resolution  
  
@@ -34,4 +34,4 @@ manager: "jhubbard"
 |File or Blob "{0}" already exists.|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

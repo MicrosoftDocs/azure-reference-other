@@ -29,4 +29,4 @@ manager: "jhubbard"
 |Number of columns in the dataset in '{0}' exceeds allowed '{1}' limit of '{2}'.'|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)

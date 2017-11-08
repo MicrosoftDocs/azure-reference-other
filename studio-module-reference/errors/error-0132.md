@@ -30,4 +30,4 @@ manager: "jhubbard"
 |The file contains more than one file. Please specify the file to expand. The following files were found: {0}|  
   
 ## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+ [Module Error Codes](../machine-learning-module-error-codes.md)
