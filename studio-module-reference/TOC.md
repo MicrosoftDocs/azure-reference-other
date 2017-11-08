@@ -1,4 +1,4 @@
-# [Machine Learning Studio Algorithm & Module Help](machine-learning-studio-algorithm-and-module-help.md)
+# [Machine Learning Studio Module Reference](machine-learning-studio-algorithm-and-module-help.md)
 ## [A-Z Module List](a-z-module-list.md)
 ## [Module Categories and Descriptions](machine-learning-module-descriptions.md)
 ### [Data Format Conversions](data-format-conversions.md)
