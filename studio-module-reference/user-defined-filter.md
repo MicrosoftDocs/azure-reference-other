@@ -70,7 +70,7 @@ manager: "jhubbard"
   
  Where:  
   
- ![custom notch filter](media/aml-usernotchfilter4.gif)  
+ ![custom notch filter](media/aml-usernotchfilter4.png)  
   
  From this form, we can get the feed-forward coefficient:  
   
