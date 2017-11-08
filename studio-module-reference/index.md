@@ -16,7 +16,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Machine Learning Studio: Algorithm and Module Help
+# Azure Machine Learning Studio Algorithm and Module Reference
 Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The Machine Learning service is cloud-based, and eliminates setup and installation concerns because you can work through your web browser on any Internet-connected PC.
 
 + Log into your [Studio workspace](https://studio.azureml.net/Home) and get started
