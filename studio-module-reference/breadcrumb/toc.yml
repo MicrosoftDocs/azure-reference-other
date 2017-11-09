@@ -6,9 +6,9 @@
     tocHref: /azure/machine-learning/
     topicHref: /azure/machine-learning/
     items:
-      - name: Studio (updated)
+      - name: Studio (update2)
         tocHref: /azure/machine-learning/studio
-        topicHref: /azure/machine-learning/studio/index
+        topicHref: /azure/machine-learning/studio/
         items:
         - name: Module Reference
           tocHref: /azure-reference-other/studio-module-reference
