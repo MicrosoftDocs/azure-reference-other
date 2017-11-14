@@ -34,6 +34,6 @@ manager: "jhubbard"
   
 ### See Also 
 * [New-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.3.0/new-azurermdatalakeanalyticscatalogcredential)  
-* [DROP CREDENTIAL (U-SQL)](../USQL/drop-credential-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   
+* [DROP CREDENTIAL (U-SQL)](drop-credential-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
 --> 

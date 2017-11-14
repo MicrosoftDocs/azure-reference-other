@@ -15,13 +15,13 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # U-SQL Assemblies
-One of the major value propositions and design goals of U-SQL is to provide an easy to use and powerful way to [extend U-SQL with custom user code](../USQL/extending-u-sql-expressions-with-user-code.md). The main aspects that are enabling these goals are the [C#-based U-SQL type system](../USQL/data-types-and-literals-u-sql.md) and [U-SQL’s expression language](../USQL/expressions-u-sql.md).  
+One of the major value propositions and design goals of U-SQL is to provide an easy to use and powerful way to [extend U-SQL with custom user code](extending-u-sql-expressions-with-user-code.md). The main aspects that are enabling these goals are the [C#-based U-SQL type system](data-types-and-literals-u-sql.md) and [U-SQL’s expression language](expressions-u-sql.md).  
   
-U-SQL provides the ability to use .NET assemblies in U-SQL’s metadata catalog in order to encapsulate more complex expressions into [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf), and to extend the processing capabilities of U-SQL with [user-defined aggregators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) (UDOs). If a .NET assembly is required during script compilation (for example because it specifies a function or type that needs to be resolved during compile time), then it needs to be registered with [CREATE ASSEMBLY](../USQL/create-assembly-u-sql.md) and the referenced with [REFERENCE ASSEMBLY](../USQL/reference-assembly-u-sql.md).  
+U-SQL provides the ability to use .NET assemblies in U-SQL’s metadata catalog in order to encapsulate more complex expressions into [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf), and to extend the processing capabilities of U-SQL with [user-defined aggregators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) (UDOs). If a .NET assembly is required during script compilation (for example because it specifies a function or type that needs to be resolved during compile time), then it needs to be registered with [CREATE ASSEMBLY](create-assembly-u-sql.md) and the referenced with [REFERENCE ASSEMBLY](reference-assembly-u-sql.md).  
 
-U-SQL provides the [CREATE ASSEMBLY](../USQL/create-assembly-u-sql.md) and [DROP ASSEMBLY](../USQL/drop-assembly-u-sql.md) statements to manage the assembly DLL registration. Assemblies are scoped to a U-SQL database.  
+U-SQL provides the [CREATE ASSEMBLY](create-assembly-u-sql.md) and [DROP ASSEMBLY](drop-assembly-u-sql.md) statements to manage the assembly DLL registration. Assemblies are scoped to a U-SQL database.  
   
-It also provides the ability to reference assemblies, both user-defined and system defined assemblies with the [REFERENCE ASSEMBLY](../USQL/reference-assembly-u-sql.md) statement.   
+It also provides the ability to reference assemblies, both user-defined and system defined assemblies with the [REFERENCE ASSEMBLY](reference-assembly-u-sql.md) statement.   
   
 <table><th>Syntax</th><tr><td><pre>
 Assembly_DDL_Statement :=                                                                                
@@ -33,11 +33,11 @@ Reference_Assembly_Statement :=
 </pre></td></tr></table>
 
 ### See Also    
-* [CREATE ASSEMBLY (U-SQL)](../USQL/create-assembly-u-sql.md)  
-* [REFERENCE ASSEMBLY (U-SQL)](../USQL/reference-assembly-u-sql.md)  
-* [REFERENCE SYSTEM ASSEMBLY (U-SQL)](../USQL/reference-system-assembly-u-sql.md)  
-* [DROP ASSEMBLY (U-SQL)](../USQL/drop-assembly-u-sql.md)  
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)  
+* [CREATE ASSEMBLY (U-SQL)](create-assembly-u-sql.md)  
+* [REFERENCE ASSEMBLY (U-SQL)](reference-assembly-u-sql.md)  
+* [REFERENCE SYSTEM ASSEMBLY (U-SQL)](reference-system-assembly-u-sql.md)  
+* [DROP ASSEMBLY (U-SQL)](drop-assembly-u-sql.md)  
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)  
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 * [Develop U-SQL assemblies for Azure Data Lake Analytics jobs](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-develop-assemblies)

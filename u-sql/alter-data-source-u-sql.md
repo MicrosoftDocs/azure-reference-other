@@ -34,7 +34,7 @@ Alter_Datasource_Statement :=
 Specifies the name of the data source to be altered in the current static database context. If a data source of the given name does not exist in the database context or the user has no permissions to alter the data source, an error is raised.  
   
 -   <a name="dsrc_opt"></a>**`Datasource_Options`**   
-Specifies the options that are being changed. The options provide the information on how to connect and interact with the external data source. These options are source specific (although at the moment they all apply to the three supported sources). See [CREATE DATA SOURCE (U-SQL)](../USQL/create-data-source-u-sql.md) for a list of supported data source options and their semantics.  
+Specifies the options that are being changed. The options provide the information on how to connect and interact with the external data source. These options are source specific (although at the moment they all apply to the three supported sources). See [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md) for a list of supported data source options and their semantics.  
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -48,9 +48,9 @@ SET
 ```
   
 ### See Also
-* [U-SQL Data Sources](../USQL/u-sql-data-sources.md)  
-* [CREATE DATA SOURCE (U-SQL)](../USQL/create-data-source-u-sql.md)  
-* [DROP DATA SOURCE (U-SQL)](../USQL/drop-data-source-u-sql.md)  
+* [U-SQL Data Sources](u-sql-data-sources.md)  
+* [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md)  
+* [DROP DATA SOURCE (U-SQL)](drop-data-source-u-sql.md)  
 
 
 

@@ -22,19 +22,19 @@ An aggregator will compute a single result value over a group of values and will
 In U-SQL, aggregators can only be used in the following syntactic contexts: 
 
 * Inside a SELECT’s SELECT clause:
-  * It will calculate the aggregated value for each group specified by a [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) clause. If the rowset is empty and thus all groups are empty, the [SELECT](../USQL/select-expression-u-sql.md) expression will return an empty rowset. 
+  * It will calculate the aggregated value for each group specified by a [GROUP BY](group-by-and-having-clauses-u-sql.md) clause. If the rowset is empty and thus all groups are empty, the [SELECT](select-expression-u-sql.md) expression will return an empty rowset. 
 
-  * If no [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) has been specified, then every column in the SELECT clause has to be an expression that needs to contain at least one aggregator. The aggregations will be computed across the whole rowset of the SELECT expression. If the rowset is empty, then the aggregators return their identity value, which is the value that is would not change the aggregation result if it was added. I.e., 0 for [COUNT()](../USQL/count-u-sql.md) and null for all others.
+  * If no [GROUP BY](group-by-and-having-clauses-u-sql.md) has been specified, then every column in the SELECT clause has to be an expression that needs to contain at least one aggregator. The aggregations will be computed across the whole rowset of the SELECT expression. If the rowset is empty, then the aggregators return their identity value, which is the value that is would not change the aggregation result if it was added. I.e., 0 for [COUNT()](count-u-sql.md) and null for all others.
 
-  * As part of a [U-SQL windowing expression](../USQL/over-expression-u-sql.md) where it will calculate the aggregated value inside each window partition. Some built-in aggregators are not supported in windowing expressions (see each aggregator section for more details). 
+  * As part of a [U-SQL windowing expression](over-expression-u-sql.md) where it will calculate the aggregated value inside each window partition. Some built-in aggregators are not supported in windowing expressions (see each aggregator section for more details). 
 
   * Aggregations can appear in expressions 
 
-  * Aggregations always need to be aliased in the [SELECT](../USQL/select-expression-u-sql.md) clause. 
+  * Aggregations always need to be aliased in the [SELECT](select-expression-u-sql.md) clause. 
   
-* Inside a [GROUP BY’s HAVING](../USQL/group-by-and-having-clauses-u-sql.md) clause to provide a filter condition on the group based on the aggregation’s value. 
+* Inside a [GROUP BY’s HAVING](group-by-and-having-clauses-u-sql.md) clause to provide a filter condition on the group based on the aggregation’s value. 
  
-Some of the aggregators are type-polymorphic, meaning that they can operate on many different input types and return potentially different types based on their input type. For example, [COUNT](../USQL/count-u-sql.md)() will take any input type, and always return a value of type [long](../USQL/numeric-types-and-literals.md), while [SUM](../USQL/sum-u-sql.md)() will return a value of a type that is dependent on the input type: [SUM](../USQL/sum-u-sql.md)(v) where v is of type [double](../USQL/numeric-types-and-literals.md) will return a result of type [double](../USQL/numeric-types-and-literals.md); if v is an integral numeric type such as [int](../USQL/numeric-types-and-literals.md), the result will be of type [long](../USQL/numeric-types-and-literals.md). 
+Some of the aggregators are type-polymorphic, meaning that they can operate on many different input types and return potentially different types based on their input type. For example, [COUNT](count-u-sql.md)() will take any input type, and always return a value of type [long](numeric-types-and-literals.md), while [SUM](sum-u-sql.md)() will return a value of a type that is dependent on the input type: [SUM](sum-u-sql.md)(v) where v is of type [double](numeric-types-and-literals.md) will return a result of type [double](numeric-types-and-literals.md); if v is an integral numeric type such as [int](numeric-types-and-literals.md), the result will be of type [long](numeric-types-and-literals.md). 
 
 Several aggregators can be used in the same SELECT clause and will be applied on the groups. 
 
@@ -47,7 +47,7 @@ Aggregate_Expression :=
 
 ### Semantics of Syntax Elements 
 * <a name="dist"></a>**`DISTINCT`**  
-Every aggregator can take an optional DISTINCT qualifier that will de-duplicate the values in the group before performing the aggregation. The data type of the values will have to be comparable if DISTINCT is being used. DISTINCT is not allowed when the aggregator is being used in an [OVER](../USQL/over-expression-u-sql.md) expression.
+Every aggregator can take an optional DISTINCT qualifier that will de-duplicate the values in the group before performing the aggregation. The data type of the values will have to be comparable if DISTINCT is being used. DISTINCT is not allowed when the aggregator is being used in an [OVER](over-expression-u-sql.md) expression.
 
 * <a name="aggr"></a>**`Aggregator`**  
 Can be either the invocation of a [user-defined aggregator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or a built-in aggregator: 
@@ -79,8 +79,8 @@ Built_In_Aggregator :=
 The C# expression (including column references) that gets aggregated. The expression cannot contain other aggregators. Some aggregators may support additional options besides 
 
 ### See also 
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
-* [GROUP BY and HAVING Clauses (U-SQL)](../USQL/group-by-and-having-clauses-u-sql.md)
-* [SELECT Expression (U-SQL)](../USQL/select-expression-u-sql.md)
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 
+* [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
+* [SELECT Expression (U-SQL)](select-expression-u-sql.md)
 * [U-SQL Programmability Guide: User-Defined Aggregators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg)
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)  
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)  

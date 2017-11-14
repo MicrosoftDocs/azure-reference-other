@@ -19,10 +19,10 @@ The following scalar function(s) return information about the database and datab
 
 |Function	|Description|
 |----|--|
-|[FILE](../USQL/file-functions-u-sql.md)|Returns certain file properties.|
-|[PARTITION](../USQL/partition-u-sql.md)|Tests for the presence of a specified table partition.|
+|[FILE](file-functions-u-sql.md)|Returns certain file properties.|
+|[PARTITION](partition-u-sql.md)|Tests for the presence of a specified table partition.|
 
 These intrinsic function(s) are currently always evaluated at compile time (and thus considered constant-foldable).
 
 ### See Also
-* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)

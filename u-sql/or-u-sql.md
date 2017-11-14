@@ -17,7 +17,7 @@ manager: "jhubbard"
 # OR (U-SQL)
 U-SQL’s logical OR operator performs a disjunction of two Boolean expressions and returns true if at least one of the two expression is true and returns false if both expressions are false. Unlike the equivalent C# [||](https://msdn.microsoft.com/library/f355wky8.aspx) expression, OR will not preserve the execution order and will not short-cut the expression evaluation. 
 
-When more than one logical operator is used in an expression, OR operators bind weaker than both [AND](../USQL/and-u-sql.md) and [NOT](../USQL/not-u-sql.md). Parentheses can be used to change the binding precedence. 
+When more than one logical operator is used in an expression, OR operators bind weaker than both [AND](and-u-sql.md) and [NOT](not-u-sql.md). Parentheses can be used to change the binding precedence. 
 
 <table><th>Syntax</th><tr><td><pre>
 OR_Expression :=                                                                                         
@@ -29,7 +29,7 @@ OR_Expression :=
 The two Boolean expressions to be combined that return a not-null value of type bool.  
 
 ### Return Type 
-[bool](../USQL/other-simple-built-in-types-and-literals.md)
+[bool](other-simple-built-in-types-and-literals.md)
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -80,9 +80,9 @@ OUTPUT @result TO "/ReferenceGuide/Operators/Logical/Or4.txt" USING Outputters.C
 
 
 ### See Also 
-* [Logical Operators (U-SQL)](../USQL/logical-operators-u-sql.md) 
-* [AND (U-SQL)](../USQL/and-u-sql.md)   
-* [NOT (U-SQL)](../USQL/not-u-sql.md)   
+* [Logical Operators (U-SQL)](logical-operators-u-sql.md) 
+* [AND (U-SQL)](and-u-sql.md)   
+* [NOT (U-SQL)](not-u-sql.md)   
 
 
 

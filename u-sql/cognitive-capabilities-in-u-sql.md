@@ -22,12 +22,12 @@ U-SQL provides built-in support for the following cognitive models, allowing you
 
 Cognitive Model        |Description  
 ---------------|---------
-[Image Tagging (U-SQL)](../USQL/image-tagging-u-sql.md)     |Image tagging returns information about visual content found in an image. It can be used along with descriptions and domain-specific models to identify content in an image.
-[Emotion Extraction (U-SQL)](../USQL/emotion-extraction-u-sql.md)     |Emotion analyzes facial expressions in an image to detect a range of emotions, currently including anger, contempt, disgust, fear, happiness, neutrality, sadness, and surprise.    
-[Face Detection (U-SQL)](../USQL/face-detection-u-sql.md)     |Face detects one or more human faces in an image, along with face attributes that contain machine learning-based predictions based on features such as age, emotion, and gender.          
-[Optical Character Recognition (U-SQL)](../USQL/optical-character-recognition-u-sql.md)     |Optical character recognition (OCR) detects and extracts handwritten text from images of notes, letters, whiteboards and so forth, and returns a machine-readable character stream.         
-[Key Phrases Extraction (U-SQL)](../USQL/key-phrases-extraction-u-sql.md)     |Key phrases extraction identifies key phrases, topics, and language from the input text.         
-[Sentiment Analysis (U-SQL)](../USQL/sentiment-analysis-u-sql.md)     |Sentiment analysis detects sentiment using classification techniques based on the input text.  
+[Image Tagging (U-SQL)](image-tagging-u-sql.md)     |Image tagging returns information about visual content found in an image. It can be used along with descriptions and domain-specific models to identify content in an image.
+[Emotion Extraction (U-SQL)](emotion-extraction-u-sql.md)     |Emotion analyzes facial expressions in an image to detect a range of emotions, currently including anger, contempt, disgust, fear, happiness, neutrality, sadness, and surprise.    
+[Face Detection (U-SQL)](face-detection-u-sql.md)     |Face detects one or more human faces in an image, along with face attributes that contain machine learning-based predictions based on features such as age, emotion, and gender.          
+[Optical Character Recognition (U-SQL)](optical-character-recognition-u-sql.md)     |Optical character recognition (OCR) detects and extracts handwritten text from images of notes, letters, whiteboards and so forth, and returns a machine-readable character stream.         
+[Key Phrases Extraction (U-SQL)](key-phrases-extraction-u-sql.md)     |Key phrases extraction identifies key phrases, topics, and language from the input text.         
+[Sentiment Analysis (U-SQL)](sentiment-analysis-u-sql.md)     |Sentiment analysis detects sentiment using classification techniques based on the input text.  
 
 ## <a name="registeringExtensions"></a>Registering Cognitive Extensions in U-SQL
 To get started with the Cognitive extensions, complete the following steps:
@@ -49,7 +49,7 @@ Seeing these assemblies in the master database is evidence that your ADLA accoun
 
 
 ### See Also
-* [Built-in U-SQL System Objects and Extensions](../USQL/built-in-u-sql-system-objects-and-extensions.md)
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)
+* [Built-in U-SQL System Objects and Extensions](built-in-u-sql-system-objects-and-extensions.md)
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
 * [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/)
 * [Microsoft Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)

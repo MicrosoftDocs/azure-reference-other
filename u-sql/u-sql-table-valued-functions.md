@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # U-SQL Table-valued Functions
-U-SQL provides the ability to wrap a sequence of [query statements](../USQL/query-statements-and-expressions-u-sql.md) into a function that returns the resulting rowset and parameterize it. U-SQL table-valued functions are stored in the metadata catalog and can be shared with other users.  
+U-SQL provides the ability to wrap a sequence of [query statements](query-statements-and-expressions-u-sql.md) into a function that returns the resulting rowset and parameterize it. U-SQL table-valued functions are stored in the metadata catalog and can be shared with other users.  
 
 ### Table-Valued Function DDL Statements    
 The following statements manage the functions:
@@ -28,15 +28,15 @@ TV_Function_DDL_Statement :=
 
 Please follow the links for more details on using table-valued functions.   
 
-A U-SQL table-valued function can be invoked and used like any other [primary query expression](../USQL/query-statements-and-expressions-u-sql.md), including being assigned to a [rowset variable](../USQL/query-statements-and-expressions-u-sql.md) or used in a SELECT [FROM clause](../USQL/from-clause-u-sql.md).  
+A U-SQL table-valued function can be invoked and used like any other [primary query expression](query-statements-and-expressions-u-sql.md), including being assigned to a [rowset variable](query-statements-and-expressions-u-sql.md) or used in a SELECT [FROM clause](from-clause-u-sql.md).  
 
 They always will be inlined in the invoking expression context but encapsulate their own lexical and runtime context such as their own local default schema and database context, their own local variables etc.  
   
-A function with a single resulting rowset, defined by a single query expression and no parameters is equivalent to a [view](../USQL/u-sql-views.md).  
+A function with a single resulting rowset, defined by a single query expression and no parameters is equivalent to a [view](u-sql-views.md).  
   
 ### See Also
-* [U-SQL Functions](../USQL/u-sql-functions.md)  
-* [CREATE FUNCTION (U-SQL): Table-valued Function](../USQL/create-function-u-sql-table-valued-function.md)  
-* [DROP FUNCTION (U-SQL)](../USQL/drop-function-u-sql.md)  
-* [Table-Valued Function Expression (U-SQL)](../USQL/table-valued-function-expression-u-sql.md)   
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   
+* [U-SQL Functions](u-sql-functions.md)  
+* [CREATE FUNCTION (U-SQL): Table-valued Function](create-function-u-sql-table-valued-function.md)  
+* [DROP FUNCTION (U-SQL)](drop-function-u-sql.md)  
+* [Table-Valued Function Expression (U-SQL)](table-valued-function-expression-u-sql.md)   
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   

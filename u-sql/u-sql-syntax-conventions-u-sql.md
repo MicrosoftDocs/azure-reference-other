@@ -37,6 +37,6 @@ Each `rule` body is either a reference to a `name` or a composition of the follo
 Upper-case rule names inside a rule definition are defined in the language reference documentation. Lower-case rule names are considered self-evident and not further specified.  
   
 ### See Also
-* [Securing Meta Data Objects](../USQL/securing-meta-data-objects.md)
-* [Language Elements (U-SQL)](../USQL/language-elements-u-sql.md)
+* [Securing Meta Data Objects](securing-meta-data-objects.md)
+* [Language Elements (U-SQL)](language-elements-u-sql.md)
 

@@ -59,8 +59,8 @@ OUTPUT @result TO "/ReferenceGuide/Operators/Comparison/lessThan2.txt" USING Out
 ```
 
 ### See Also   
-* [Operators (U-SQL)](../USQL/operators-u-sql.md)
-* [Simple Built-In U-SQL Types](../USQL/simple-built-in-u-sql-types.md)
+* [Operators (U-SQL)](operators-u-sql.md)
+* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
 
 
 

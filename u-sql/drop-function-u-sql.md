@@ -45,9 +45,9 @@ DROP FUNCTION IF EXISTS TestReferenceDB.dbo.SearchLogPerRegion;
 ```
   
 ### See Also    
-* [U-SQL Functions](../USQL/u-sql-functions.md)  
-* [U-SQL Table-valued Functions](../USQL/u-sql-table-valued-functions.md)  
-* [CREATE FUNCTION (U-SQL): Table-valued Function](../USQL/create-function-u-sql-table-valued-function.md)  
-* [Table-Valued Function Expression (U-SQL)](../USQL/table-valued-function-expression-u-sql.md) 
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   
+* [U-SQL Functions](u-sql-functions.md)  
+* [U-SQL Table-valued Functions](u-sql-table-valued-functions.md)  
+* [CREATE FUNCTION (U-SQL): Table-valued Function](create-function-u-sql-table-valued-function.md)  
+* [Table-Valued Function Expression (U-SQL)](table-valued-function-expression-u-sql.md) 
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
 

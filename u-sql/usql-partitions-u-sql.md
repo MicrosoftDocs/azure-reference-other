@@ -58,11 +58,11 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 ### See Also
-* [Catalog Views (U-SQL)](../USQL/catalog-views-u-sql.md)
-* [U-SQL Table Partitions and Distributions](../USQL/create-table-u-sql-creating-a-table-with-schema.md#partitioning)
-* [usql.partition_parameters (U-SQL)](../USQL/usql-partition-parameters-u-sql.md)
-* [usql.partition_range_values (U-SQL)](../USQL/usql-partition-range-values-u-sql.md)
-* [usql.objects (U-SQL)](../USQL/usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)
+* [Catalog Views (U-SQL)](catalog-views-u-sql.md)
+* [U-SQL Table Partitions and Distributions](create-table-u-sql-creating-a-table-with-schema.md#partitioning)
+* [usql.partition_parameters (U-SQL)](usql-partition-parameters-u-sql.md)
+* [usql.partition_range_values (U-SQL)](usql-partition-range-values-u-sql.md)
+* [usql.objects (U-SQL)](usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
 
 

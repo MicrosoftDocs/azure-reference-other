@@ -15,11 +15,11 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # usql.views (U-SQL)
-Returns a row for each view belonging to the schemas in the current database context. The schema inherits the columns from the [usql.objects](../USQL/usql-objects-u-sql.md) view and adds the view specific properties to it.
+Returns a row for each view belonging to the schemas in the current database context. The schema inherits the columns from the [usql.objects](usql-objects-u-sql.md) view and adds the view specific properties to it.
 
 Column name  |Data type  |Description  
 ---------|---------|---------
-\<inherited columns>      |        |For a list of columns that this view inherits, see [usql.objects](../USQL/usql-objects-u-sql.md).          
+\<inherited columns>      |        |For a list of columns that this view inherits, see [usql.objects](usql-objects-u-sql.md).          
 is_schema_inferred     |bool         |Indicates if the schema is inferred from the schema's query expression or has been explicitly provided         
 definition     |string         |View's definition (if available)         
 
@@ -51,9 +51,9 @@ USING Outputters.Tsv(outputHeader:true);
 
 
 ### See Also
-* [Catalog Views (U-SQL)](../USQL/catalog-views-u-sql.md)
-* [usql.objects (U-SQL)](../USQL/usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)
+* [Catalog Views (U-SQL)](catalog-views-u-sql.md)
+* [usql.objects (U-SQL)](usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
 
 
 

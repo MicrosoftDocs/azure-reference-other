@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Expressions (U-SQL)
-In U-SQL, expressions operate on its typed values. These expressions appear in the context of [U-SQL statements](../USQL/query-statements-and-expressions-u-sql.md) and consist of a few limited U-SQL operators and the full power of C# expressions.  
+In U-SQL, expressions operate on its typed values. These expressions appear in the context of [U-SQL statements](query-statements-and-expressions-u-sql.md) and consist of a few limited U-SQL operators and the full power of C# expressions.  
 
 While some U-SQL statements allow arbitrary expressions, others may restrict expressions based on the types the expressions are allowed to return, on whether they can be computed at compile time (so called constant-foldable expressions), or even the operators that are allowed in an expression.  
    
@@ -31,4 +31,4 @@ Static_String_Expression :=
  
 
 ### See Also
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md) 
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 

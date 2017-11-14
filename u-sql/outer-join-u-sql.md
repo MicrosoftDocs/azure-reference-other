@@ -141,12 +141,12 @@ produces this rowset
 In this case both rows that are missing a match are added with null values.  
 
 ### See Also 
-* [U-SQL SELECT Selecting from Joins](../USQL/u-sql-select-selecting-from-joins.md)  
-* [SELECT Expression (U-SQL)](../USQL/select-expression-u-sql.md) 
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md) 
-* [Data Modification Language (DML) Statements (U-SQL)](../USQL/data-modification-language-dml-statements-u-sql.md)    
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)
-* [U-SQL Primary Rowset Expressions](../USQL/query-statements-and-expressions-u-sql.md#pri_row_exp) 
+* [U-SQL SELECT Selecting from Joins](u-sql-select-selecting-from-joins.md)  
+* [SELECT Expression (U-SQL)](select-expression-u-sql.md) 
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
+* [Data Modification Language (DML) Statements (U-SQL)](data-modification-language-dml-statements-u-sql.md)    
+* [Output Statement (U-SQL)](output-statement-u-sql.md)
+* [U-SQL Primary Rowset Expressions](query-statements-and-expressions-u-sql.md#pri_row_exp) 
 
 
 

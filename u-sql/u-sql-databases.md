@@ -19,7 +19,7 @@ Similar to other database systems and SQL-inspired Big Data processing systems s
   
 U-SQL provides a built-in database called `master` that will be used as the default database context and it provides the ability to create and delete additional databases with the following DDL statements.  
   
-The default database context can be changed with the [`USE DATABASE`](../USQL/use-database-u-sql.md) statement.  
+The default database context can be changed with the [`USE DATABASE`](use-database-u-sql.md) statement.  
   
 ### Database DDL Statements
 <table><th>Syntax</th><tr><td><pre>
@@ -29,6 +29,6 @@ DB_DDL_Statement :=
 </pre></td></tr></table>
   
 ### See Also  
-* [CREATE DATABASE (U-SQL)](../USQL/create-database-u-sql.md)  
-* [USE DATABASE (U-SQL)](../USQL/use-database-u-sql.md)  
-* [DROP DATABASE (U-SQL)](../USQL/drop-database-u-sql.md)  
+* [CREATE DATABASE (U-SQL)](create-database-u-sql.md)  
+* [USE DATABASE (U-SQL)](use-database-u-sql.md)  
+* [DROP DATABASE (U-SQL)](drop-database-u-sql.md)  

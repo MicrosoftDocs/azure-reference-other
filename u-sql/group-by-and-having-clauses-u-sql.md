@@ -29,7 +29,7 @@ Group_By_Clause :=
 -   <a name="exp_lst"></a>**`Expression_List`**   
     Provides the list of expressions and column references that define the hierarchical grouping. The groups are built from left to right: the left most expression defines the outer group, every subsequent expression defines a group inside the previous group. In the end all groups are flattened into a set of groups on which the aggregations will occur.  
   
-    Note that the [SELECT clause](../USQL/select-clause-u-sql.md) in a [SELECT expression](../USQL/select-expression-u-sql.md) with a GROUP BY has to contain only the columns or expressions that appear in the `GROUP BY`’s expression list and the aggregation expressions. Otherwise an error is raised.  Expressions or column references in the GROUP BY do not have to be in the [SELECT clause](../USQL/select-clause-u-sql.md), even though they are being used to define the groups.  
+    Note that the [SELECT clause](select-clause-u-sql.md) in a [SELECT expression](select-expression-u-sql.md) with a GROUP BY has to contain only the columns or expressions that appear in the `GROUP BY`’s expression list and the aggregation expressions. Otherwise an error is raised.  Expressions or column references in the GROUP BY do not have to be in the [SELECT clause](select-clause-u-sql.md), even though they are being used to define the groups.  
   
 -   <a name="hav_cla"></a>**`Having_Clause`**   
     The `HAVING` clause offers an optional filter clause that will filter the rowset at the group level.  In other words, the predicate in the `HAVING` clause will be applied to the group and will only include the groups for which it evaluates to true.  
@@ -100,7 +100,7 @@ USING Outputters.Csv();
 ```
    
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md) 
-* [SELECT Expression (U-SQL)](../USQL/select-expression-u-sql.md) 
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
+* [SELECT Expression (U-SQL)](select-expression-u-sql.md) 
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
 

@@ -28,11 +28,11 @@ In U-SQL Views will be inlined into the expression where they are being referenc
   
 Unlike tables that can be created with a query expressions, views are not copying the data but are always executed against the data over which the view is defined. This avoids copying the data and thus will always pick up the latest data while costing the execution of the query expression in every query.  
   
-U-SQL also provides parameterized views through [table-valued functions](../USQL/u-sql-functions.md).  
+U-SQL also provides parameterized views through [table-valued functions](u-sql-functions.md).  
   
 ### See Also    
-- [CREATE VIEW (U-SQL)](../USQL/create-view-u-sql.md)
-- [DROP VIEW (U-SQL)](../USQL/drop-view-u-sql.md)
-- [U-SQL Functions](../USQL/u-sql-functions.md)
+- [CREATE VIEW (U-SQL)](create-view-u-sql.md)
+- [DROP VIEW (U-SQL)](drop-view-u-sql.md)
+- [U-SQL Functions](u-sql-functions.md)
   
 

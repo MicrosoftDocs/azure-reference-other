@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # C# Functions and Operators (U-SQL)
-U-SQL’s core reliance on C#-for its [U-SQL type](../USQL/data-types-and-literals-u-sql.md) system and [U-SQL’s expression](../USQL/expressions-u-sql.md) language provides the query writer access to the wealth of the C# and CLR libraries of classes, methods, functions, operators and types. It would go beyond the scope of this documentation to repeat all C# functions and operators, so it will limit itself to a few examples of frequently used operators and functions and shows which system assemblies are already included. The section [REFERENCE SYSTEM ASSEMBLY](../USQL/reference-system-assembly-u-sql.md)   provides a list of all preloaded system assemblies and explains how to add additional system assemblies.  
+U-SQL’s core reliance on C#-for its [U-SQL type](data-types-and-literals-u-sql.md) system and [U-SQL’s expression](expressions-u-sql.md) language provides the query writer access to the wealth of the C# and CLR libraries of classes, methods, functions, operators and types. It would go beyond the scope of this documentation to repeat all C# functions and operators, so it will limit itself to a few examples of frequently used operators and functions and shows which system assemblies are already included. The section [REFERENCE SYSTEM ASSEMBLY](reference-system-assembly-u-sql.md)   provides a list of all preloaded system assemblies and explains how to add additional system assemblies.  
 
 All [C# operators](https://msdn.microsoft.com/library/6a71f45d.aspx) except for the assignment operators (=, += etc) are valid in U-SQL. In particular all comparison operators such as `==`, `!=`, `<`, `>` the ternary comparison `cond ? true-expression : false-expression`, the null coalesce operator `??` are supported. Even lambda expressions using `=>` can be used inside U-SQL expressions.  
 
@@ -26,7 +26,7 @@ All [C# operators](https://msdn.microsoft.com/library/6a71f45d.aspx) except for 
 |[String Properties](#stringProperties)<br />&emsp;&#9679;&emsp;[Length](#Length)|
 |[Object Methods](#ObjectMethods)<br />&emsp;&#9679;&emsp;[GetType](#GetType)|
 |[Date & Time](#DateTime)<br />&emsp;&#9679;&emsp;[DateTime to String](#stringFormats)<br />&emsp;&#9679;&emsp;[String to DateTime](#stringConversion)<br />&emsp;&#9679;&emsp;[Properties](#properties)<br />&emsp;&#9679;&emsp;[Some Methods](#someMethods)<br />&emsp;&#9679;&emsp;[Comparing DateTimes](#comparingDateTimes)<br />&emsp;&#9679;&emsp;[Some Operators](#someOperators)<br />&emsp;&#9679;&emsp;[Date Diff](#dateDiff)<br />&emsp;&#9679;&emsp;[Add TimeSpan](#addTimeSpan)<br />&emsp;&#9679;&emsp;[TimeSpan Plus TimeSpan](#TimeSpan)|
-|[Math Methods](#Math)<br />&emsp;&#9679;&emsp;[Abs](#abs)<br />&emsp;&#9679;&emsp;[BigMul](#bigMul)<br />&emsp;&#9679;&emsp;[Ceiling](#ceiling)<br />&emsp;&#9679;&emsp;[Floor](#floor)<br />&emsp;&#9679;&emsp;[Max](#max)<br />&emsp;&#9679;&emsp;[Min](#min)<br />&emsp;&#9679;&emsp;[Pow](#pow)<br />&emsp;&#9679;&emsp;[Round](../USQL/extending-u-sql-expressions-with-user-code.md#usingRound)<br />&emsp;&#9679;&emsp;[Sign](#sign)<br />&emsp;&#9679;&emsp;[Sqrt](#sqrt)<br />&emsp;&#9679;&emsp;[Truncate](#truncate)|
+|[Math Methods](#Math)<br />&emsp;&#9679;&emsp;[Abs](#abs)<br />&emsp;&#9679;&emsp;[BigMul](#bigMul)<br />&emsp;&#9679;&emsp;[Ceiling](#ceiling)<br />&emsp;&#9679;&emsp;[Floor](#floor)<br />&emsp;&#9679;&emsp;[Max](#max)<br />&emsp;&#9679;&emsp;[Min](#min)<br />&emsp;&#9679;&emsp;[Pow](#pow)<br />&emsp;&#9679;&emsp;[Round](extending-u-sql-expressions-with-user-code.md#usingRound)<br />&emsp;&#9679;&emsp;[Sign](#sign)<br />&emsp;&#9679;&emsp;[Sqrt](#sqrt)<br />&emsp;&#9679;&emsp;[Truncate](#truncate)|
 |[Random Methods](#Random)<br />&emsp;&#9679;&emsp;[Next](#randomNext)<p>                                                                                                                                                                                                                  </p>|
 
 ### <a name="examples">Examples</a>
@@ -1397,10 +1397,10 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [REFERENCE SYSTEM ASSEMBLY](../USQL/reference-system-assembly-u-sql.md)
+* [REFERENCE SYSTEM ASSEMBLY](reference-system-assembly-u-sql.md)
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx)   
-* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)  
-* [Built-in U-SQL UDOs](../USQL/built-in-u-sql-udos.md)  
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
+* [Built-in U-SQL UDOs](built-in-u-sql-udos.md)  
 
 
 

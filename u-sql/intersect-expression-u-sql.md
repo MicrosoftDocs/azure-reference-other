@@ -148,7 +148,7 @@ USING Outputters.Csv();
 ```
 
 **INTERSECT with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](../USQL/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 ```
 // Data sets
 @Product = 
@@ -210,9 +210,9 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)
-* [Set Rowset Expressions (U-SQL)](../USQL/set-rowset-expressions-u-sql.md)
-* [EXCEPT Expression (U-SQL)](../USQL/except-expression-u-sql.md)
-* [UNION and OUTER UNION Expression (U-SQL)](../USQL/union-and-outer-union-expression-u-sql.md)
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
+* [Set Rowset Expressions (U-SQL)](set-rowset-expressions-u-sql.md)
+* [EXCEPT Expression (U-SQL)](except-expression-u-sql.md)
+* [UNION and OUTER UNION Expression (U-SQL)](union-and-outer-union-expression-u-sql.md)
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
 

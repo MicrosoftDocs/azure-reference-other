@@ -25,7 +25,7 @@ Multiply_Operator :=
   
 ### Semantics of Syntax Elements    
 -   <a name="expr"></a>**`expression`**  
-One of the [Numeric Types](../USQL/numeric-types-and-literals.md).
+One of the [Numeric Types](numeric-types-and-literals.md).
 
 ### Return Type
 Returns the data type of the argument with the higher precedence.
@@ -60,9 +60,9 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Operators (U-SQL)](../USQL/operators-u-sql.md)
-* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)
-* [Numeric Types and Literals](../USQL/numeric-types-and-literals.md)
+* [Operators (U-SQL)](operators-u-sql.md)
+* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)
+* [Numeric Types and Literals](numeric-types-and-literals.md)
 
 
 

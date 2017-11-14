@@ -43,7 +43,7 @@ Aliased_Rowset :=
         </pre></td></tr></table>
   
       - **`Alias`**  
-The rowset alias gives a name to the rowset that can be used in the remainder of the SELECT expression to refer to that specific rowset. It can be a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md):
+The rowset alias gives a name to the rowset that can be used in the remainder of the SELECT expression to refer to that specific rowset. It can be a [quoted or unquoted identifier](u-sql-identifiers.md):
         <table><th>Syntax</th><tr><td><pre>
 Alias :=
 <a></a>     'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.                                                  <a></a> 
@@ -62,7 +62,7 @@ Rowset :=
         Providing a rowset alias is optional.  
   
       - **`Rowset_Expression`**  
-U-SQL also provides the ability to query over nested [query expressions](../USQL/query-statements-and-expressions-u-sql.md), [table-valued function calls](../USQL/u-sql-select-selecting-from-a-function-call.md) or querying [external rowsets](../USQL/u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
+U-SQL also provides the ability to query over nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](u-sql-select-selecting-from-a-function-call.md) or querying [external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
         
         In these cases, a rowset alias has to be provided and cannot be left out.
         <table><th>Syntax</th><tr><td><pre> 
@@ -75,13 +75,13 @@ Rowset_Expression :=
         </pre></td></tr></table>          
 
   - <a name="tbl_vl_con"></a>**`Table_Value_Constructor`**  
-    U-SQL’s SELECT can also select from the [VALUES table value constructor](../USQL/u-sql-select-selecting-from-the-values-table-value-constructor.md) that creates an inline table.  
+    U-SQL’s SELECT can also select from the [VALUES table value constructor](u-sql-select-selecting-from-the-values-table-value-constructor.md) that creates an inline table.  
   
   - <a name="join_exp"></a>**`Join_Expression`**  
-    U-SQL’s SELECT can also select from many different types of [join expressions](../USQL/u-sql-select-selecting-from-joins.md) that combine several rowsets.  
+    U-SQL’s SELECT can also select from many different types of [join expressions](u-sql-select-selecting-from-joins.md) that combine several rowsets.  
 
   - <a name="apl_exp"></a>**`Apply_Expression`**  
-    U-SQL’s SELECT can also select from [CROSS and OUTER APPLY expressions](../USQL/u-sql-select-selecting-from-cross-apply-and-outer-apply.md) that turn scalar values in the left-hand rowset’s rows into rowsets. Follow the above link for more details.
+    U-SQL’s SELECT can also select from [CROSS and OUTER APPLY expressions](u-sql-select-selecting-from-cross-apply-and-outer-apply.md) that turn scalar values in the left-hand rowset’s rows into rowsets. Follow the above link for more details.
 
 > [!NOTE]
 > Unlike most SQL versions, U-SQL does not support the ability to join rowsets with the comma notation. Instead one needs to use the explicit ANSI SQL join syntax.
@@ -98,7 +98,7 @@ SELECT * FROM T1 INNER JOIN T2 ON T1.val == T2.val;
  
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)  
-* [Data Modification Language (DML) Statements (U-SQL)](../USQL/data-modification-language-dml-statements-u-sql.md)    
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)  
+* [Data Modification Language (DML) Statements (U-SQL)](data-modification-language-dml-statements-u-sql.md)    
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
 

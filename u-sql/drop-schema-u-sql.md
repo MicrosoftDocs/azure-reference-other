@@ -30,7 +30,7 @@ Drop_Schema_Statement :=
   
 ### Semantics of Syntax Elements    
 -   <a name="s_name"></a>**`Schema_Name`**   
-    Specifies the name of the schema in form of a [quoted or unquoted U-SQL identifier](../USQL/u-sql-identifiers.md). If a schema of the given name does not exist in the current database context, or the user has no permissions to drop a schema, an error is raised.  
+    Specifies the name of the schema in form of a [quoted or unquoted U-SQL identifier](u-sql-identifiers.md). If a schema of the given name does not exist in the current database context, or the user has no permissions to drop a schema, an error is raised.  
     
 -   <a name="if_E"></a>**`IF EXISTS`**  
     If the optional `IF EXISTS` is specified, then the statement drops the schema if it already exists, or succeeds without changes if the schema does not exist or the user has no permission to at least enumerate all existing schemas.  
@@ -46,7 +46,7 @@ CREATE SCHEMA [My Schema];
 ```  
 
 ### See Also    
-* [U-SQL Database Schemas](../USQL/u-sql-database-schemas.md)
-* [CREATE SCHEMA (U-SQL)](../USQL/create-schema-u-sql.md)
-* [USE SCHEMA (U-SQL)](../USQL/use-schema-u-sql.md) 
+* [U-SQL Database Schemas](u-sql-database-schemas.md)
+* [CREATE SCHEMA (U-SQL)](create-schema-u-sql.md)
+* [USE SCHEMA (U-SQL)](use-schema-u-sql.md) 
 
