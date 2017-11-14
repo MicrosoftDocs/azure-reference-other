@@ -19,9 +19,9 @@ Set expressions allow to intersect two rowsets, to union them or to subtract one
   
 <table><th>Syntax</th><tr><td><pre>
 Set_Rowset_Expression :=                                                                                  
-        <a href="EXCEPT%20Expression%20(U-SQL).md">Except_Expression</a> 
-|       <a href="INTERSECT%20Expression%20(U-SQL).md">Intersect_Expression</a> 
-|       <a href="UNION%20and%20OUTER%20UNION%20Expression%20(U-SQL).md">Union_Expression</a>. 
+        <a href="except-experession-u-sql.md">Except_Expression</a> 
+|       <a href="intersect-expression-u-sql.md">Intersect_Expression</a> 
+|       <a href="union-and-outer-union-expression-u-sql.md">Union_Expression</a>. 
 </pre></td></tr></table>
 
 ### See Also  
