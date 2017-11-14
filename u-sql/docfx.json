@@ -32,7 +32,8 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/u-sql/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "brand": "azure"
     },
     "fileMetadata": {},
     "template": [],
