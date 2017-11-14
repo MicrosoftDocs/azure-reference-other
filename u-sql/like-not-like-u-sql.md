@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # LIKE, NOT LIKE (U-SQL)
-U-SQL provides the `LIKE` and `NOT LIKE` comparison operators that are [familiar from T-SQL](https://msdn.microsoft.com/library/ms179859.aspx) that checks if a [string](../USQL/textual-types-and-literals.md) value matches or does not match a simple pattern. The pattern can include regular characters and wildcard characters. During pattern matching, regular characters must exactly match the characters specified in the character [string](../USQL/textual-types-and-literals.md). However, wildcard characters can be matched with arbitrary fragments of the character [string](../USQL/textual-types-and-literals.md). Note that the comparison is done with culture invariant [string](../USQL/textual-types-and-literals.md) comparison using UTF-8 byte-level comparison. 
+U-SQL provides the `LIKE` and `NOT LIKE` comparison operators that are [familiar from T-SQL](https://msdn.microsoft.com/library/ms179859.aspx) that checks if a [string](textual-types-and-literals.md) value matches or does not match a simple pattern. The pattern can include regular characters and wildcard characters. During pattern matching, regular characters must exactly match the characters specified in the character [string](textual-types-and-literals.md). However, wildcard characters can be matched with arbitrary fragments of the character [string](textual-types-and-literals.md). Note that the comparison is done with culture invariant [string](textual-types-and-literals.md) comparison using UTF-8 byte-level comparison. 
 
 <table><th>Syntax</th><tr><td><pre>
 LIKE_Expression :=                                                                                       
@@ -43,7 +43,7 @@ is a string expression that provides the pattern to test against. The pattern in
 specifies optionally a non-null value of type char that can be used to escape any of the wildcard characters. It is put in front of a wildcard character to indicate that the wildcard should be interpreted as a regular character and not as a wildcard.   
   
 ### Return Type    
-[bool](../USQL/other-simple-built-in-types-and-literals.md) 
+[bool](other-simple-built-in-types-and-literals.md) 
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -127,7 +127,7 @@ OUTPUT @result TO "/ReferenceGuide/Operators/Logical/Like9.txt" USING Outputters
 ```
 
 ### See Also 
-* [Comparison Operators (U-SQL)](../USQL/comparison-operators-u-sql.md)  
-* [BETWEEN (U-SQL)](../USQL/between-u-sql.md)  
-* [IN, NOT IN (U-SQL)](../USQL/in-not-in-u-sql.md)  
+* [Comparison Operators (U-SQL)](comparison-operators-u-sql.md)  
+* [BETWEEN (U-SQL)](between-u-sql.md)  
+* [IN, NOT IN (U-SQL)](in-not-in-u-sql.md)  
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx)  

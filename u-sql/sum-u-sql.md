@@ -42,7 +42,7 @@ The return type is determined by the type of the evaluated result of the express
 |float, float?, double, double?|double?|| 
 
 ### Usage in Windowing Expression 
-This aggregator can be used in a [windowing expression](../USQL/over-expression-u-sql.md) without any additional restrictions. 
+This aggregator can be used in a [windowing expression](over-expression-u-sql.md) without any additional restrictions. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -77,7 +77,7 @@ USING Outputters.Csv();
 ```
 
 **B.    Sum of values per group**  
-The following query calculates the total salary for each department with the [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) clause.
+The following query calculates the total salary for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
 ```
 @result =
     SELECT DeptName,
@@ -91,7 +91,7 @@ USING Outputters.Csv();
 ```
 
 **C.    Sum of values with OVER()**  
-The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query calculates the total salary over the window - all employees.
+The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query calculates the total salary over the window - all employees.
 ```
 @result =
     SELECT EmpName,
@@ -104,7 +104,7 @@ USING Outputters.Csv();
 ```
 
 **D.    Sum of values over a defined window using OVER()**  
-The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, and the total salary over the window - `DeptName`.
+The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, and the total salary over the window - `DeptName`.
 ```
 @result =
     SELECT EmpName,
@@ -118,7 +118,7 @@ USING Outputters.Csv();
 ```
 
 **E.    Sum of values over a defined window using OVER(), additional example.**  
-The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the total salary for each `DeptName` and each employee's salary share of his/her total department's share.
+The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the total salary for each `DeptName` and each employee's salary share of his/her total department's share.
 ```
 @result =
     SELECT *,
@@ -132,6 +132,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)  
-* [GROUP BY and HAVING Clauses (U-SQL)](../USQL/group-by-and-having-clauses-u-sql.md)
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
+* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)  
+* [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 

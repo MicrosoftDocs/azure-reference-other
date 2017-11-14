@@ -25,9 +25,9 @@ Type_DDL_Statement :=
 </pre></td></tr></table>
 
 ### See Also 
-* [CREATE TYPE (U-SQL)](../USQL/create-type-u-sql.md)  
-* [DROP TYPE (U-SQL)](../USQL/drop-type-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   
+* [CREATE TYPE (U-SQL)](create-type-u-sql.md)  
+* [DROP TYPE (U-SQL)](drop-type-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
 
   
 

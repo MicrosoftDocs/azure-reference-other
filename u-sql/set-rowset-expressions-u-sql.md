@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Set Rowset Expressions (U-SQL)
-Set expressions allow to intersect two rowsets, to union them or to subtract one from the other. A set expression can be a top-level [U-SQL Query expression](../USQL/query-statements-and-expressions-u-sql.md).  
+Set expressions allow to intersect two rowsets, to union them or to subtract one from the other. A set expression can be a top-level [U-SQL Query expression](query-statements-and-expressions-u-sql.md).  
   
 <table><th>Syntax</th><tr><td><pre>
 Set_Rowset_Expression :=                                                                                  
@@ -25,8 +25,8 @@ Set_Rowset_Expression :=
 </pre></td></tr></table>
 
 ### See Also  
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)
-* [EXCEPT Expression (U-SQL)](../USQL/except-expression-u-sql.md)
-* [INTERSECT Expression (U-SQL)](../USQL/intersect-expression-u-sql.md)
-* [UNION and OUTER UNION Expression (U-SQL)](../USQL/union-and-outer-union-expression-u-sql.md)
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
+* [EXCEPT Expression (U-SQL)](except-expression-u-sql.md)
+* [INTERSECT Expression (U-SQL)](intersect-expression-u-sql.md)
+* [UNION and OUTER UNION Expression (U-SQL)](union-and-outer-union-expression-u-sql.md)
 

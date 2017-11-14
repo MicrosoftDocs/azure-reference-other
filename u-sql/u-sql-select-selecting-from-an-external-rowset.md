@@ -17,13 +17,13 @@ manager: "jhubbard"
 # U-SQL SELECT Selecting from an External Rowset
 U-SQL allows selecting from an external data source in three ways:  
   
-1.  By using the [external table’s](../USQL/u-sql-tables.md) identifier like any other table’s identifier.  
+1.  By using the [external table’s](u-sql-tables.md) identifier like any other table’s identifier.  
   
 2.  By using the external rowset expression to identify a rowset such as a table or view in the specified data source.  
   
 3.  By using the external rowset expression to send a query string to the external data source for remote execution. The query string is in the form of the query language that is supported by that data source. E.g., if the data source is an Azure SQL Database, then the query string would be T-SQL.  
   
-In all cases, the query will be executed based on the chosen query remoting option [REMOTEABLE_TYPES](../USQL/create-data-source-u-sql.md#rmv_typ) in the data source definition. If the definition allows an expression on a specific type to be remoted, and U-SQL knows how to translate it into a remote query expression, then parts of the U-SQL SELECT statement will be sent to the external data source’s query engine for execution.  
+In all cases, the query will be executed based on the chosen query remoting option [REMOTEABLE_TYPES](create-data-source-u-sql.md#rmv_typ) in the data source definition. If the definition allows an expression on a specific type to be remoted, and U-SQL knows how to translate it into a remote query expression, then parts of the U-SQL SELECT statement will be sent to the external data source’s query engine for execution.  
   
 <table><th>Syntax</th><tr><td><pre>
 External_Rowset_Expression :=                                                                            
@@ -46,13 +46,13 @@ External_Rowset_Expression :=
 -   <a name="E_csl"></a>**`EXECUTE csharp_string_literal`**  
     The string literal contains a query expression in the language supported by the remote data source. E.g., if the data source is an Azure SQL Database, then the query string would be T-SQL. If the query is malformed, or accesses objects that do not exist or the user does not have access to it, an error is raised. The same holds if the query returns values of types that are not supported by U-SQL’s remote query capabilities.  
     
-    Note that some properties, such as the remote system’s error language, can be set in the data source definition’s [PROVIDER_STRING](../USQL/create-data-source-u-sql.md#p_strng) option.
+    Note that some properties, such as the remote system’s error language, can be set in the data source definition’s [PROVIDER_STRING](create-data-source-u-sql.md#p_strng) option.
 
 > [!NOTE]
->  A rowset alias has to be specified when using an external rowset expression in the SQL [FROM](../USQL/from-clause-u-sql.md) clause.
+>  A rowset alias has to be specified when using an external rowset expression in the SQL [FROM](from-clause-u-sql.md) clause.
 
 ### Examples
-Examples utilize the data source created in the examples from [CREATE DATA SOURCE (U-SQL)](../USQL/create-data-source-u-sql.md).
+Examples utilize the data source created in the examples from [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md).
 
 **Using LOCATION**   
 ```
@@ -80,8 +80,8 @@ USING Outputters.Csv(outputHeader: true);
 ```
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)  
-* [Data Modification Language (DML) Statements (U-SQL)](../USQL/data-modification-language-dml-statements-u-sql.md)    
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
-* [U-SQL Data Sources](../USQL/u-sql-data-sources.md) 
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)  
+* [Data Modification Language (DML) Statements (U-SQL)](data-modification-language-dml-statements-u-sql.md)    
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
+* [U-SQL Data Sources](u-sql-data-sources.md) 
 

@@ -17,14 +17,14 @@ manager: "jhubbard"
 # Input Files (U-SQL)
 U-SQL provides access to files that are stored either in Azure Data Lake Storage accounts or in Windows Azure Blob Storage accounts. Azure Data Lake Storage accounts have to be in the same Azure region as the Azure Data Lake Analytics account where you run your U-SQL script. Windows Azure Blob Storage accounts need to be registered with the Azure Data Lake Analytics account where you will run your U-SQL script but can be in any region. Note that if the data is in a different region than the Azure Data Lake Analytics account, you will get billed for data egress and data transfer rates will be based on the internet connection between the two regions and considerably lower than accessing data inside the same region.  Any input files referenced in a script have to exist at the time the script is compiled.  
   
-In order to process files with U-SQL, they have to be schematized with an [`EXTRACT`](../USQL/extract-expression-u-sql.md) expression that will read from either a single file, a list of files, or a set of files, a so-called *unstructured file set*.  
+In order to process files with U-SQL, they have to be schematized with an [`EXTRACT`](extract-expression-u-sql.md) expression that will read from either a single file, a list of files, or a set of files, a so-called *unstructured file set*.  
   
 ### Input File Path URIs  
 The input file path URIs (Universal Resource Identifier) can be specified as a single file path URI, a list of file path URIs, or a path pattern expression that identifies an unstructured file set.   
   
 * Since file paths are URIs, characters such as spaces need to be _URI-encoded_. For example the file name `a has 3 spaces` has to be written as `a%20has%203%20spaces`.  
   
-* A file path URI or a path pattern expression has to be provided as a [static string expression](../USQL/expressions-u-sql.md) (an expression that can be constant folded) in the [`FROM`](../USQL/from-clause-u-sql.md) clause of an [`EXTRACT`](../USQL/extract-expression-u-sql.md) expression.  
+* A file path URI or a path pattern expression has to be provided as a [static string expression](expressions-u-sql.md) (an expression that can be constant folded) in the [`FROM`](from-clause-u-sql.md) clause of an [`EXTRACT`](extract-expression-u-sql.md) expression.  
  
 * A file path can also be specified as a local file path.
 
@@ -150,14 +150,14 @@ The semantics of file sets is the following:
 -   Each pattern is either associated with a virtual column name that has an optional date pattern, or is just a \* wild card.    
 -   If the pattern is just a wild card, then file paths that are matching the pattern will be included in the file set, but you cannot refer to the identified pattern in the query.    
 -   If the pattern is associated with a virtual column name then file paths matching the pattern will be included, and in addition, the matched values for the pattern will be available through the virtual column name. 
-- The virtual column names can be used in subsequent [SELECT](../USQL/select-clause-u-sql.md) expressions to eliminate files from the matched files. If the expression can be evaluated at compile time, the files will not be included in the query at all.   
--   The data type of the column is determined by the [EXTRACT](../USQL/extract-expression-u-sql.md) schema.    
+- The virtual column names can be used in subsequent [SELECT](select-clause-u-sql.md) expressions to eliminate files from the matched files. If the expression can be evaluated at compile time, the files will not be included in the query at all.   
+-   The data type of the column is determined by the [EXTRACT](extract-expression-u-sql.md) schema.    
 -   If a date pattern is provided, then the virtual column has to be of type DateTime and the column can be compared against constant DateTime values in a predicate in the script to eliminate files from the processing.
 
 Not all of the date patterns have to be specified for a given virtual column. If a pattern is conflicting with another pattern then no path will be found. Currently the year (`yyyy`), month (`MM` or `M`), day (`dd` or `d`), hours (`HH` or `H`), minutes (`mm` or `m`) and second (`ss` or `s`) patterns are supported.  
 
   
-For more details and examples on extracting from file sets, please see [EXTRACT Expression (U-SQL)](../USQL/extract-expression-u-sql.md).  
+For more details and examples on extracting from file sets, please see [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md).  
    
 ### Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -263,7 +263,7 @@ USING Outputters.Csv();
 
  
 ### See Also
-- [Files and File Sets as Inputs and Outputs (U-SQL)](../USQL/files-and-file-sets-as-inputs-and-outputs-u-sql.md) 
-- [Output to Files (U-SQL)](../USQL/output-to-files-u-sql.md)  
-- [EXTRACT Expression (U-SQL)](../USQL/extract-expression-u-sql.md) 
-- [U-SQL Built-in Extractors](../USQL/u-sql-built-in-extractors.md)
+- [Files and File Sets as Inputs and Outputs (U-SQL)](files-and-file-sets-as-inputs-and-outputs-u-sql.md) 
+- [Output to Files (U-SQL)](output-to-files-u-sql.md)  
+- [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md) 
+- [U-SQL Built-in Extractors](u-sql-built-in-extractors.md)

@@ -16,11 +16,11 @@ manager: "jhubbard"
 ---
 # Output to Files (U-SQL)
 [//]: # 'Output to Files (U-SQL)'  
-Currently U-SQL scripts are executed in batch mode and thus always need to persist their results either in a table or in a file. U-SQL’s [`OUTPUT`](../USQL/output-statement-u-sql.md) statement writes the specified rowset to the provided file path URI. The file path URI is specified either as a relative or absolute Azure Data Lake Storage file path URI, a Windows Azure Blob Storage file path URI or a simplified path pattern expression.   
+Currently U-SQL scripts are executed in batch mode and thus always need to persist their results either in a table or in a file. U-SQL’s [`OUTPUT`](output-statement-u-sql.md) statement writes the specified rowset to the provided file path URI. The file path URI is specified either as a relative or absolute Azure Data Lake Storage file path URI, a Windows Azure Blob Storage file path URI or a simplified path pattern expression.   
   
 * Since file paths are URIs, characters such as spaces need to be _URI-encoded_. For example the file name `a has 3 spaces` has to be written as `a%20has%203%20spaces`.  
   
-* A file path URI has to be provided as a [static string expression](../USQL/expressions-u-sql.md) (an expression that can be constant folded) in the `TO` clause of an [`OUTPUT`](../USQL/output-statement-u-sql.md) expression.  
+* A file path URI has to be provided as a [static string expression](expressions-u-sql.md) (an expression that can be constant folded) in the `TO` clause of an [`OUTPUT`](output-statement-u-sql.md) expression.  
   
 * A file path can also be specified as a local file path.  
   
@@ -35,7 +35,7 @@ Output_File_Path :=
 |     Simple_File_Set_Path.  
 </pre></td></table> 
   
-The grammar rules `Default_Account_Path_URI`, `ADL_Path_URI` and `WASB_Path_URI` are specified in [Input Files (U-SQL)](../USQL/input-files-u-sql.md).   
+The grammar rules `Default_Account_Path_URI`, `ADL_Path_URI` and `WASB_Path_URI` are specified in [Input Files (U-SQL)](input-files-u-sql.md).   
   
 ### Output File Sets  
 Unlike the input file paths, the output file path only supports a simplified file set path that can contain a single unnamed wildcard. The grammar rule `Simple_File_Set_Path` is defined as:  
@@ -50,7 +50,7 @@ Wildcard_Pattern :=
      '{*}'.                                                                     
 </pre></td></table>
 
-If a `Simple_File_Set_Path` is specified in an [OUTPUT](../USQL/output-statement-u-sql.md)    statement, the statement will create as many files as there were processing nodes that were processing the output rowset. Each file name will contain the node’s id in place of the `Wildcard_Pattern`.  
+If a `Simple_File_Set_Path` is specified in an [OUTPUT](output-statement-u-sql.md)    statement, the statement will create as many files as there were processing nodes that were processing the output rowset. Each file name will contain the node’s id in place of the `Wildcard_Pattern`.  
  
 ### Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -122,7 +122,7 @@ USING Outputters.Csv();
 
  
 ### See Also
-- [U-SQL Built-in Outputters](../USQL/u-sql-built-in-outputters.md)
-- [OUTPUT Statement (U-SQL)](../USQL/output-statement-u-sql.md)
-- [Files and File Sets as Inputs and Outputs (U-SQL)](../USQL/files-and-file-sets-as-inputs-and-outputs-u-sql.md)
-- [Input Files (U-SQL)](../USQL/input-files-u-sql.md)  
+- [U-SQL Built-in Outputters](u-sql-built-in-outputters.md)
+- [OUTPUT Statement (U-SQL)](output-statement-u-sql.md)
+- [Files and File Sets as Inputs and Outputs (U-SQL)](files-and-file-sets-as-inputs-and-outputs-u-sql.md)
+- [Input Files (U-SQL)](input-files-u-sql.md)  

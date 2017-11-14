@@ -15,11 +15,11 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Table-Valued Function Expression (U-SQL)
-U-SQL allows table-valued functions (TVF) to be called as primary rowset expressions even outside of a SELECT’s [FROM](../USQL/from-clause-u-sql.md) clause. Note that the statements that make up the definition of a U-SQL Table-valued function are always inlined where they are called, while preserving the visibility rules of the context.  For more information, see [U-SQL Table-valued Functions](../USQL/u-sql-table-valued-functions.md).  
+U-SQL allows table-valued functions (TVF) to be called as primary rowset expressions even outside of a SELECT’s [FROM](from-clause-u-sql.md) clause. Note that the statements that make up the definition of a U-SQL Table-valued function are always inlined where they are called, while preserving the visibility rules of the context.  For more information, see [U-SQL Table-valued Functions](u-sql-table-valued-functions.md).  
   
 [//]: # 'add missing reference'  
   
-A U-SQL TVF can either return a single rowset or multiple rowsets. If it returns multiple rowsets it can only be assigned to rowset variables and cannot be called in a [FROM](../USQL/from-clause-u-sql.md) clause, set expressions, or [OUTPUT](../USQL/output-statement-u-sql.md) .  
+A U-SQL TVF can either return a single rowset or multiple rowsets. If it returns multiple rowsets it can only be assigned to rowset variables and cannot be called in a [FROM](from-clause-u-sql.md) clause, set expressions, or [OUTPUT](output-statement-u-sql.md) .  
   
 <table><th>Syntax</th><tr><td><pre>
 Function_Call :=                                                                                         
@@ -47,7 +47,7 @@ A function may take optional arguments for which values need to be provided. Unl
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The examples below use the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
 
-The calls below are for the functions created at [CREATE FUNCTION (U-SQL): Table-valued Function](../USQL/create-function-u-sql-table-valued-function.md).
+The calls below are for the functions created at [CREATE FUNCTION (U-SQL): Table-valued Function](create-function-u-sql-table-valued-function.md).
 ```
 USE TestReferenceDB;
 
@@ -93,8 +93,8 @@ USING Outputters.Csv();
 ```
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)   
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md) 
-* [U-SQL Functions](../USQL/u-sql-functions.md) 
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)   
+* [Output Statement (U-SQL)](output-statement-u-sql.md) 
+* [U-SQL Functions](u-sql-functions.md) 
 
 

@@ -20,12 +20,12 @@ While U-SQL is using C# as its expression language and thus has a large set of t
 ### Types of Functions   
 |Function|Description|
 |----|--|
-|[Aggregate Functions](../USQL/aggregate-functions-u-sql.md)|An aggregator will compute a single result value over a group of values and will have an identity value for the case that the group is empty.|  
-|[Analytic Functions](../USQL/analytic-functions-u-sql.md)|Analytic functions compute an aggregate value based on a group of rows. However, unlike aggregate functions, they can return multiple rows for each group.|
-|[Metadata Functions](../USQL/metadata-functions-u-sql.md)|Returns information about the database and database objects.|
-|[Ranking Functions](../USQL/ranking-functions-u-sql.md)|Returns a ranking value for each row in a partition.|
-|[Built-in U-SQL UDOs](../USQL/built-in-u-sql-udos.md)|Provides extraction from and outputting to some common data formats. |
+|[Aggregate Functions](aggregate-functions-u-sql.md)|An aggregator will compute a single result value over a group of values and will have an identity value for the case that the group is empty.|  
+|[Analytic Functions](analytic-functions-u-sql.md)|Analytic functions compute an aggregate value based on a group of rows. However, unlike aggregate functions, they can return multiple rows for each group.|
+|[Metadata Functions](metadata-functions-u-sql.md)|Returns information about the database and database objects.|
+|[Ranking Functions](ranking-functions-u-sql.md)|Returns a ranking value for each row in a partition.|
+|[Built-in U-SQL UDOs](built-in-u-sql-udos.md)|Provides extraction from and outputting to some common data formats. |
   
 ### See Also    
-* [U-SQL Language Reference](../USQL/u-sql-language-reference.md) 
-* [Built-in U-SQL UDOs](../USQL/built-in-u-sql-udos.md)
+* [U-SQL Language Reference](u-sql-language-reference.md) 
+* [Built-in U-SQL UDOs](built-in-u-sql-udos.md)

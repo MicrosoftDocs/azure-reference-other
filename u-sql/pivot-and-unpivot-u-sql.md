@@ -47,7 +47,7 @@ Aliased_Rowset :=
 </pre></td></tr></table>
   
   - **`Alias`**  
-The rowset alias gives a name to the rowset that can be used in the remainder of the PIVOT expression to refer to that specific rowset. It can be a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md):
+The rowset alias gives a name to the rowset that can be used in the remainder of the PIVOT expression to refer to that specific rowset. It can be a [quoted or unquoted identifier](u-sql-identifiers.md):
         <table><th>Syntax</th><tr><td><pre>
 Alias :=
 <a></a>     'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.                                                  <a></a> 
@@ -66,7 +66,7 @@ Rowset :=
     Providing a rowset alias is optional.  
   
   - **`Rowset_Expression Alias`**  
-U-SQL also provides the ability to query over nested [query expressions](../USQL/query-statements-and-expressions-u-sql.md), [table-valued function calls](../USQL/u-sql-select-selecting-from-a-function-call.md) or querying [external rowsets](../USQL/u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
+U-SQL also provides the ability to query over nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](u-sql-select-selecting-from-a-function-call.md) or querying [external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
         
     In these cases, a rowset alias has to be provided and cannot be left out.
     <table><th>Syntax</th><tr><td><pre> 
@@ -88,7 +88,7 @@ Column_Identifier :=
     </pre></td></tr></table>
 
 -   <a name="col_alias"></a>**`Column_Alias`**  
-The column alias gives a name to the column that can be used in the remainder of the PIVOT expression to refer to that specific column. It can be a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md):
+The column alias gives a name to the column that can be used in the remainder of the PIVOT expression to refer to that specific column. It can be a [quoted or unquoted identifier](u-sql-identifiers.md):
         <table><th>Syntax</th><tr><td><pre>
 Column_Alias :=
 <a></a>     'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.                                                  <a></a> 
@@ -99,7 +99,7 @@ Column_Alias :=
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 **Basic PIVOT Example**<a name="pivot_basic"></a>   
-The example below repros "Basic PIVOT Example" from [Using PIVOT and UNPIVOT](https://docs.microsoft.com/sql/t-sql/queries/from-using-pivot-and-unpivot) in SQL Server.  To execute the example with the same data set, simply bcp or copy and paste `DaysToManufacture` and `StandardCost` from AdventureWorks2014.Production.Product to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).  An alternative solution using MAP_GG can be viewed at [PIVOT and MAP_AGG](../USQL/map-agg-u-sql.md#pivot_basic)
+The example below repros "Basic PIVOT Example" from [Using PIVOT and UNPIVOT](https://docs.microsoft.com/sql/t-sql/queries/from-using-pivot-and-unpivot) in SQL Server.  To execute the example with the same data set, simply bcp or copy and paste `DaysToManufacture` and `StandardCost` from AdventureWorks2014.Production.Product to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).  An alternative solution using MAP_GG can be viewed at [PIVOT and MAP_AGG](map-agg-u-sql.md#pivot_basic)
 ```
 // Using a data file created from a bcp export
 @products =
@@ -155,7 +155,7 @@ USING Outputters.Tsv(outputHeader:true, quoting: false);
 ```
 
 **Complex PIVOT Example**<a name="pivot_complex"></a>   
-The example below repros "Complex PIVOT Example" from [Using PIVOT and UNPIVOT](https://docs.microsoft.com/sql/t-sql/queries/from-using-pivot-and-unpivot) in SQL Server.  To execute the example with the same data set, simply bcp or copy and paste `PurchaseOrderID`, `EmployeeID` and `VendorID ` from AdventureWorks2014.Purchasing.PurchaseOrderHeader to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).   An alternative solution using MAP_GG can be viewed at [PIVOT and MAP_AGG - Additional Example](../USQL/map-agg-u-sql.md#pivot_complex).
+The example below repros "Complex PIVOT Example" from [Using PIVOT and UNPIVOT](https://docs.microsoft.com/sql/t-sql/queries/from-using-pivot-and-unpivot) in SQL Server.  To execute the example with the same data set, simply bcp or copy and paste `PurchaseOrderID`, `EmployeeID` and `VendorID ` from AdventureWorks2014.Purchasing.PurchaseOrderHeader to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).   An alternative solution using MAP_GG can be viewed at [PIVOT and MAP_AGG - Additional Example](map-agg-u-sql.md#pivot_complex).
 ```
 // Using a data file created from a bcp export
 @PurchaseOrderHeader =
@@ -419,8 +419,8 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 ### See Also
-* [FROM Clause (U-SQL)](../USQL/from-clause-u-sql.md) 
-* [MAP_AGG (U-SQL)](../USQL/map-agg-u-sql.md) (alternative method to pivot results)
+* [FROM Clause (U-SQL)](from-clause-u-sql.md) 
+* [MAP_AGG (U-SQL)](map-agg-u-sql.md) (alternative method to pivot results)
     
     
     

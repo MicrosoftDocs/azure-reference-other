@@ -45,7 +45,7 @@ BETWEEN_Expression :=
     is the expression that returns the value of the upper bound. The type of the expression has to be compatible with the expression type, otherwise an error is raised.   
   
 ### Return Type    
-[bool](../USQL/other-simple-built-in-types-and-literals.md)  
+[bool](other-simple-built-in-types-and-literals.md)  
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -89,7 +89,7 @@ OUTPUT @result TO "/ReferenceGuide/Operators/Logical/Between3.txt" USING Outputt
 ```
   
 ### See Also 
-* [Comparison Operators (U-SQL)](../USQL/comparison-operators-u-sql.md)  
-* [IN, NOT IN (U-SQL)](../USQL/in-not-in-u-sql.md)  
-* [LIKE, NOT LIKE (U-SQL)](../USQL/like-not-like-u-sql.md)  
+* [Comparison Operators (U-SQL)](comparison-operators-u-sql.md)  
+* [IN, NOT IN (U-SQL)](in-not-in-u-sql.md)  
+* [LIKE, NOT LIKE (U-SQL)](like-not-like-u-sql.md)  
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx) 

@@ -210,7 +210,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 <a name="top">**TOP (Transact-SQL) and FETCH**</a>    
-[TOP (Transact-SQL)](https://msdn.microsoft.com/library/ms189463.aspx) returns the first N number of rows in an undefined order or a defined order when combined with ORDER BY. In U-SQL, [FETCH](../USQL/output-statement-u-sql.md#OBOFC) can be used to return the first N number of rows only in a defined order; the ORDER BY clause must be used.  Consider the use of [SAMPLE](../USQL/sample-u-sql.md) if a defined order is not desired or required.  See also, [ROW_NUMBER](../USQL/row-number-u-sql.md).
+[TOP (Transact-SQL)](https://msdn.microsoft.com/library/ms189463.aspx) returns the first N number of rows in an undefined order or a defined order when combined with ORDER BY. In U-SQL, [FETCH](output-statement-u-sql.md#OBOFC) can be used to return the first N number of rows only in a defined order; the ORDER BY clause must be used.  Consider the use of [SAMPLE](sample-u-sql.md) if a defined order is not desired or required.  See also, [ROW_NUMBER](row-number-u-sql.md).
 ```
 @employees = 
     SELECT * FROM 
@@ -269,8 +269,8 @@ USING Outputters.Tsv(outputHeader: true);
 
 
 <a name="subQuery">**Subqueries with IN/NOT IN and SEMIJOIN/ANTISEMIJOIN**</a>   
-Consider using [SEMIJOIN (U-SQL)](../USQL/semijoin-u-sql.md) for situations where you would use a subquery with IN in SQL.
-Consider using [ANTISEMIJOIN (U-SQL)](../USQL/antisemijoin-u-sql.md) for situations where you would use a subquery with NOT IN in SQL.
+Consider using [SEMIJOIN (U-SQL)](semijoin-u-sql.md) for situations where you would use a subquery with IN in SQL.
+Consider using [ANTISEMIJOIN (U-SQL)](antisemijoin-u-sql.md) for situations where you would use a subquery with NOT IN in SQL.
 ```
 @employees = 
     SELECT * FROM 
@@ -339,9 +339,9 @@ USING Outputters.Tsv(outputHeader: true);
 ``` 
   
 ### See also   
-* [PIVOT and UNPIVOT (U-SQL)](../USQL/pivot-and-unpivot-u-sql.md)  
-* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)    
-* [ORDER BY and OFFSET/FETCH Clause (U-SQL)](../USQL/order-by-and-offset-fetch-clause-u-sql.md)     
-* [C# Functions and Operators (U-SQL)](../USQL/csharp-functions-and-operators-u-sql.md)   
+* [PIVOT and UNPIVOT (U-SQL)](pivot-and-unpivot-u-sql.md)  
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)    
+* [ORDER BY and OFFSET/FETCH Clause (U-SQL)](order-by-and-offset-fetch-clause-u-sql.md)     
+* [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md)   
 
 

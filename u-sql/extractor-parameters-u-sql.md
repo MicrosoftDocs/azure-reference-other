@@ -25,7 +25,7 @@ The supported parameters and their defaults are:
 |----------------|----------------|---------------|  
 | <a name="delimiter"></a>`delimiter`      | `char`           | `','` (comma)   |  
   
-This parameter specifies the column separator character that separates columns in the file. The default column separator for is a comma (','). It can be any valid Unicode character including those that are represented with multi-byte encodings in any of the Unicode-Transfer-Formats (i.e. UTF-*).  The delimiter parameter is not available for [Extractors.Csv()](../USQL/extractors-csv.md) and [Extractors.Tsv()](../USQL/extractors-tsv.md).
+This parameter specifies the column separator character that separates columns in the file. The default column separator for is a comma (','). It can be any valid Unicode character including those that are represented with multi-byte encodings in any of the Unicode-Transfer-Formats (i.e. UTF-*).  The delimiter parameter is not available for [Extractors.Csv()](extractors-csv.md) and [Extractors.Tsv()](extractors-tsv.md).
   
 > [!IMPORTANT]
 > If the `quoting` parameter is set to `false`, the delimiter character inside a quoted string is being used as a column separator and may lead to incorrect or failing extractions.
@@ -171,6 +171,6 @@ The supported values are:
 |string|Serializes the `char` value in its Unicode string representation (taking all other serialization options including encoding into account) and parses the input as the character codepoint using the specified encoding.|
 
 ### See Also 
-* [Built-in U-SQL UDOs](../USQL/built-in-u-sql-udos.md)
-* [EXTRACT Expression (U-SQL)](../USQL/extract-expression-u-sql.md)
-* [Input Files (U-SQL)](../USQL/input-files-u-sql.md)
+* [Built-in U-SQL UDOs](built-in-u-sql-udos.md)
+* [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md)
+* [Input Files (U-SQL)](input-files-u-sql.md)

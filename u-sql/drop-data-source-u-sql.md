@@ -48,7 +48,7 @@ DROP DATA SOURCE IF EXISTS MySQLServerDataSource;
 ```
 
 ### See Also
-* [U-SQL Data Sources](../USQL/u-sql-data-sources.md)  
-* [CREATE DATA SOURCE (U-SQL)](../USQL/create-data-source-u-sql.md)  
-* [ALTER DATA SOURCE (U-SQL)](../USQL/alter-data-source-u-sql.md)  
+* [U-SQL Data Sources](u-sql-data-sources.md)  
+* [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md)  
+* [ALTER DATA SOURCE (U-SQL)](alter-data-source-u-sql.md)  
 

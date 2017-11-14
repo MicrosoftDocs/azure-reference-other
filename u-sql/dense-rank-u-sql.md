@@ -17,7 +17,7 @@ manager: "jhubbard"
 # DENSE_RANK (U-SQL)
 The DENSE_RANK ranking function returns the rank of rows within the partition of a window, without any gaps in the ranking. The rank of a row is one plus the number of distinct ranks that come before the row in question. 
 
-DENSE_RANK can only be used in the context of a [windowing expression](../USQL/over-expression-u-sql.md). 
+DENSE_RANK can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
   
 <table><th>Syntax</th><tr><td><pre>
 DENSE_RANK_Expression :=                                                                                 
@@ -25,12 +25,12 @@ DENSE_RANK_Expression :=
 </pre></td></tr></table>
 
 ### Return Type 
-The return type is [long?](../USQL/numeric-types-and-literals.md). 
+The return type is [long?](numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression 
-This ranking function can be used in a [windowing expression](../USQL/over-expression-u-sql.md) with the following restrictions: 
-* The [ORDER BY](../USQL/over-expression-u-sql.md#OBC) clause in the [OVER](../USQL/over-expression-u-sql.md) operator is required. 
-* The [ROWS](../USQL/over-expression-u-sql.md#row_cla) clause in the [OVER](../USQL/over-expression-u-sql.md) operator is not allowed. 
+This ranking function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
+* The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) operator is required. 
+* The [ROWS](over-expression-u-sql.md#row_cla) clause in the [OVER](over-expression-u-sql.md) operator is not allowed. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -55,7 +55,7 @@ This ranking function can be used in a [windowing expression](../USQL/over-expre
 ```
 
 **A.    Ranking all rows in a result set**   
-The following example returns all records ranked by salary.  Because a [PARTITION BY](../USQL/over-expression-u-sql.md#OPBC) clause was not specified, the `DENSE_RANK` function was applied to all rows in the result set.
+The following example returns all records ranked by salary.  Because a [PARTITION BY](over-expression-u-sql.md#OPBC) clause was not specified, the `DENSE_RANK` function was applied to all rows in the result set.
 ```
 @result =
     SELECT *,
@@ -84,5 +84,5 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Ranking Functions (U-SQL)](../USQL/ranking-functions-u-sql.md)  
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md)  
+* [Ranking Functions (U-SQL)](ranking-functions-u-sql.md)  
+* [OVER Expression (U-SQL)](over-expression-u-sql.md)  

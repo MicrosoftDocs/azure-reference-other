@@ -57,6 +57,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)
-* [Operators (U-SQL)](../USQL/operators-u-sql.md)
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)
+* [Operators (U-SQL)](operators-u-sql.md)
 

@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # U-SQL Data Sources
-One of the major value propositions of U-SQL is that it allows to query data where it lives. For external systems, such as Microsoft Azure SQL Database, this is achieved with [federated queries against data sources](../USQL/u-sql-select-selecting-from-an-external-rowset.md).  
+One of the major value propositions of U-SQL is that it allows to query data where it lives. For external systems, such as Microsoft Azure SQL Database, this is achieved with [federated queries against data sources](u-sql-select-selecting-from-an-external-rowset.md).  
   
 In order to query these external data sources, a data source object has to be created and referenced that abstracts the connection information as well as information about its capabilities to execute query expressions passed and translated from U-SQL to the its local query engine.  
 
@@ -31,6 +31,6 @@ Datasource_DDL_Statement :=
 
 
 ### See Also
-* [CREATE DATA SOURCE (U-SQL)](../USQL/create-data-source-u-sql.md)  
-* [ALTER DATA SOURCE (U-SQL)](../USQL/alter-data-source-u-sql.md)  
-* [DROP DATA SOURCE (U-SQL)](../USQL/drop-data-source-u-sql.md)  
+* [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md)  
+* [ALTER DATA SOURCE (U-SQL)](alter-data-source-u-sql.md)  
+* [DROP DATA SOURCE (U-SQL)](drop-data-source-u-sql.md)  

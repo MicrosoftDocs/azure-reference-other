@@ -35,7 +35,7 @@ The C# expression (including column references) that gets aggregated. Its result
 The nullable type of the input. 
 
 ### Usage in Windowing Expression 
-This aggregator can be used in a [windowing expression](../USQL/over-expression-u-sql.md) without any additional restrictions. 
+This aggregator can be used in a [windowing expression](over-expression-u-sql.md) without any additional restrictions. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -70,7 +70,7 @@ USING Outputters.Csv();
 ```
 
 **B.    Highest values per group**  
-The following query determines the highest salary for each department with the [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) clause.
+The following query determines the highest salary for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
 ```
 @result =
     SELECT DeptName,
@@ -84,7 +84,7 @@ USING Outputters.Csv();
 ```
 
 **C.    Highest values with OVER()**   
-The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query determines the highest salary over the window - all employees.
+The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query determines the highest salary over the window - all employees.
 ```
 @result =
     SELECT EmpName,
@@ -97,7 +97,7 @@ USING Outputters.Csv();
 ```
 
 **D.    Highest values over a defined window using OVER()**   
-The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is `DeptName`. The query returns `EmpName`, `DeptName`, and the highest salary over the window - `DeptName`.
+The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`. The query returns `EmpName`, `DeptName`, and the highest salary over the window - `DeptName`.
 ```
 @result =
     SELECT EmpName,
@@ -111,7 +111,7 @@ USING Outputters.Csv();
 ```
 
 **E.    Highest values over a defined window using OVER(), additional example.**   
-The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the highest salary for each department and each employee's salary share of his/her department's highest share.
+The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the highest salary for each department and each employee's salary share of his/her department's highest share.
 ```
 @result =
     SELECT *,
@@ -125,6 +125,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)  
-* [GROUP BY and HAVING Clauses (U-SQL)](../USQL/group-by-and-having-clauses-u-sql.md)
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
+* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)  
+* [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 

@@ -17,9 +17,9 @@ manager: "jhubbard"
 # IN, NOT IN (U-SQL)
 U-SQL provides the `IN` and `NOT IN` comparison operators to test for membership in a set of values. It returns true if the value is equal to at least one value in the list, false otherwise for `IN` and true if the value is not in the list and false otherwise for `NOT IN`.  
   
-The types of the values to be tested and the members of the test set have to be a [string](../USQL/textual-types-and-literals.md) or [numeric](../USQL/numeric-types-and-literals.md) type or null, and have to be compatible with each other, otherwise an error is raised. The comparison operation is using C# equality semantics and string comparisons are culture invariant.  
+The types of the values to be tested and the members of the test set have to be a [string](textual-types-and-literals.md) or [numeric](numeric-types-and-literals.md) type or null, and have to be compatible with each other, otherwise an error is raised. The comparison operation is using C# equality semantics and string comparisons are culture invariant.  
   
-U-SQL does not support the subquery form of the SQL `IN` operator. Most subquery `IN` operations can be transformed to use [SEMIJOIN](../USQL/semijoin-u-sql.md).  
+U-SQL does not support the subquery form of the SQL `IN` operator. Most subquery `IN` operations can be transformed to use [SEMIJOIN](semijoin-u-sql.md).  
   
 <table><th>Syntax</th><tr><td><pre>
 IN_Expression :=                                                                                         
@@ -28,7 +28,7 @@ IN_Expression :=
 
 ### Semantics of Syntax Elements  
 - <a name="exp"></a>**`expression`**  
-is the expression that creates the value to be tested. It needs to be null or of a [string](../USQL/textual-types-and-literals.md) or [numeric](../USQL/numeric-types-and-literals.md) type, otherwise an error is raised.  
+is the expression that creates the value to be tested. It needs to be null or of a [string](textual-types-and-literals.md) or [numeric](numeric-types-and-literals.md) type, otherwise an error is raised.  
   
 - <a name="exp_lst"></a>**`Expression_List`**    
 is list of expressions that identify the values of the test set.  The maximal supported number of items in the list is 20000.
@@ -38,10 +38,10 @@ Expression_List :=
        expression {',' expression}.  
 </pre></td></tr></table>
 
-    The types of the values to be tested and the members of the test set have to be to be null or of a [string](../USQL/textual-types-and-literals.md) or [numeric](../USQL/numeric-types-and-literals.md) type and compatible with the value to be tested, otherwise an error is raised. 
+    The types of the values to be tested and the members of the test set have to be to be null or of a [string](textual-types-and-literals.md) or [numeric](numeric-types-and-literals.md) type and compatible with the value to be tested, otherwise an error is raised. 
 
 ### Return Type    
-[bool](../USQL/other-simple-built-in-types-and-literals.md)  
+[bool](other-simple-built-in-types-and-literals.md)  
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -84,7 +84,7 @@ OUTPUT @result TO "/ReferenceGuide/Operators/Logical/In2.txt" USING Outputters.C
 ```
 
 ### See Also
-* [Comparison Operators (U-SQL)](../USQL/comparison-operators-u-sql.md)  
-* [BETWEEN (U-SQL)](../USQL/between-u-sql.md)  
-* [LIKE, NOT LIKE (U-SQL)](../USQL/like-not-like-u-sql.md)  
+* [Comparison Operators (U-SQL)](comparison-operators-u-sql.md)  
+* [BETWEEN (U-SQL)](between-u-sql.md)  
+* [LIKE, NOT LIKE (U-SQL)](like-not-like-u-sql.md)  
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx)  

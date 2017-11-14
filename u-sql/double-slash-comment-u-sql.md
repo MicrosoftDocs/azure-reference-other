@@ -56,4 +56,4 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Slash Star Comment (U-SQL)](../USQL/slash-star-comment-u-sql.md)
+* [Slash Star Comment (U-SQL)](slash-star-comment-u-sql.md)

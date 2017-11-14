@@ -16,13 +16,13 @@ manager: "jhubbard"
 ---
 # U-SQL SELECT Selecting from Joins
 U-SQL provides the following ways of joining two rowsets:  
-* [Cross join](../USQL/cross-join-u-sql.md)
-* [full, left, or right outer join](../USQL/outer-join-u-sql.md)
-* [inner join](../USQL/inner-join-u-sql.md)
-* [left or right semijoin](../USQL/semijoin-u-sql.md)
-* [left or right antisemijoin](../USQL/antisemijoin-u-sql.md)
+* [Cross join](cross-join-u-sql.md)
+* [full, left, or right outer join](outer-join-u-sql.md)
+* [inner join](inner-join-u-sql.md)
+* [left or right semijoin](semijoin-u-sql.md)
+* [left or right antisemijoin](antisemijoin-u-sql.md)
 
-The syntax follows the ANSI SQL join syntax. The comma separated implicit cross join syntax with a join predicate in a [WHERE (U-SQL)](../USQL/where-clause-u-sql.md) clause is not supported in U-SQL. Either use an explicit [CROSS JOIN](../USQL/cross-join-u-sql.md) or preferably use an [INNER](../USQL/inner-join-u-sql.md) or [OUTER JOIN](../USQL/outer-join-u-sql.md) instead.  
+The syntax follows the ANSI SQL join syntax. The comma separated implicit cross join syntax with a join predicate in a [WHERE (U-SQL)](where-clause-u-sql.md) clause is not supported in U-SQL. Either use an explicit [CROSS JOIN](cross-join-u-sql.md) or preferably use an [INNER](inner-join-u-sql.md) or [OUTER JOIN](outer-join-u-sql.md) instead.  
   
 <table><th>Syntax</th><tr><td><pre>
 Join_Expression :=                                                                                       
@@ -32,7 +32,7 @@ Join_Expression :=
   
 ### Semantics of Syntax Elements
 -   <a name="row_src"></a>**`Rowset_Source`**   
-    Specifies the rowsets that are being joined. For more details on the rowset source see U-SQL SELECT [FROM Clause](../USQL/from-clause-u-sql.md).  
+    Specifies the rowsets that are being joined. For more details on the rowset source see U-SQL SELECT [FROM Clause](from-clause-u-sql.md).  
   
 - <a name="row_src"></a>**`Cross_Join_Operator`**  
 The cross join operator joins the two rowsets by combining each row on the left side with each row on the right side.  
@@ -42,7 +42,7 @@ Cross_Join_Operator :=
        'CROSS' [<a href="join-hints.md">Parallel_Join_Hint</a>] 'JOIN'.   
 </pre></td></tr></table>
       
-    It allows the optional specification of a join hint. See [Join Hints](../USQL/join-hints.md) for more details.  
+    It allows the optional specification of a join hint. See [Join Hints](join-hints.md) for more details.  
   
 - <a name="join_op"></a>**`Join_Operator`**  
 Specifies the join operation.
@@ -69,7 +69,7 @@ Join_Operator :=
 Specifies the type of semijoin. `SEMIJOIN` and `ANTISEMIJOIN` both default to `LEFT SEMIJOIN` and `LEFT ANTISEMIJOIN` respectively. See the sections on semijoins for more details on each of the semijoin expressions.  
   
     -   <a name="join_hnt"></a>**`Join_Hints`**  
-        The optional specification of join hints. See [Join Hints](../USQL/join-hints.md) for more details.  
+        The optional specification of join hints. See [Join Hints](join-hints.md) for more details.  
         
   It is highly recommended to always fully specify the join operator.  
   
@@ -210,11 +210,11 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Data Modification Language (DML) Statements (U-SQL)](../USQL/data-modification-language-dml-statements-u-sql.md)    
-* [INNER JOIN (U-SQL)](../USQL/inner-join-u-sql.md)
-* [OUTER JOIN (U-SQL)](../USQL/outer-join-u-sql.md)
-* [CROSS JOIN (U-SQL)](../USQL/cross-join-u-sql.md)
-* [SEMIJOIN (U-SQL)](../USQL/semijoin-u-sql.md)
-* [ANTISEMIJOIN (U-SQL)](../USQL/antisemijoin-u-sql.md)
-* [Join Hints](../USQL/join-hints.md)
+* [Data Modification Language (DML) Statements (U-SQL)](data-modification-language-dml-statements-u-sql.md)    
+* [INNER JOIN (U-SQL)](inner-join-u-sql.md)
+* [OUTER JOIN (U-SQL)](outer-join-u-sql.md)
+* [CROSS JOIN (U-SQL)](cross-join-u-sql.md)
+* [SEMIJOIN (U-SQL)](semijoin-u-sql.md)
+* [ANTISEMIJOIN (U-SQL)](antisemijoin-u-sql.md)
+* [Join Hints](join-hints.md)
 

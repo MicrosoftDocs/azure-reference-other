@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # CREATE TABLE (U-SQL): Creating a Table from a Query
-Often a script converts unstructured data in a file into a table, by first extracting the data using an [`EXTRACT`](../USQL/extract-expression-u-sql.md) expression and then inserting it into a table after some optional transformations. In order to simplify the process, U-SQL provides the ability to create a table from a U-SQL query expression. The `CREATE TABLE AS` statement will infer the schema from the query expression and will create a clustered table, thus the clustered index needs to be provided as part of the `CREATE TABLE AS` statement.  
+Often a script converts unstructured data in a file into a table, by first extracting the data using an [`EXTRACT`](extract-expression-u-sql.md) expression and then inserting it into a table after some optional transformations. In order to simplify the process, U-SQL provides the ability to create a table from a U-SQL query expression. The `CREATE TABLE AS` statement will infer the schema from the query expression and will create a clustered table, thus the clustered index needs to be provided as part of the `CREATE TABLE AS` statement.  
   
 <table><th>Syntax</th><tr><td><pre>
 Create_Managed_Table_As_Query_Statement :=                                                               
@@ -38,13 +38,13 @@ Table_As_Query :=
     If a table or other object of the given name already exists in the specified database and schema context or the user has no permissions to create a table, an error is raised.   
   
 - <a name="table_index"></a>**`Table_Index`**  
-  Specifies the clustered index for the table. For more details on defining a table index, see [CREATE TABLE (U-SQL): Creating a Table with Schema](../USQL/create-table-u-sql-creating-a-table-with-schema.md).  
+  Specifies the clustered index for the table. For more details on defining a table index, see [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md).  
   
 -  <a name="h_partition_spec"></a>**`Horizontal_Partition_Specification`**   
-    Only horizontal partitioning is currently supported with the CREATE TABLE AS statement. For more detail on the partitioning schemes and options see [CREATE TABLE (U-SQL): Creating a Table with Schema](../USQL/create-table-u-sql-creating-a-table-with-schema.md).  
+    Only horizontal partitioning is currently supported with the CREATE TABLE AS statement. For more detail on the partitioning schemes and options see [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md).  
       
 -  <a name="qry_exp"></a>**`Query_Expression`**    
-   Provides the query expression that defines the schema of the data and provides the initial data values. Any [U-SQL query expression](../USQL/query-statements-and-expressions-u-sql.md) can be used to create a table, including [SELECT](../USQL/select-expression-u-sql.md), [EXTRACT](../USQL/extract-expression-u-sql.md), `PRODUCE`, invocation of a TVF etc..  
+   Provides the query expression that defines the schema of the data and provides the initial data values. Any [U-SQL query expression](query-statements-and-expressions-u-sql.md) can be used to create a table, including [SELECT](select-expression-u-sql.md), [EXTRACT](extract-expression-u-sql.md), `PRODUCE`, invocation of a TVF etc..  
   
 ### Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -105,7 +105,7 @@ CREATE TABLE dbo.searchLogTableCopy (
 ```
 
 **Creating a table from a query - invocation of a TVF**  
-The following example creates a table called `searchLogFromFunction` by invoking the fuction `tvf_SearchLog` which was created from [Basic Syntax - tvf_SearchLog](../USQL/create-function-u-sql-table-valued-function.md#tvf_SearchLog).
+The following example creates a table called `searchLogFromFunction` by invoking the fuction `tvf_SearchLog` which was created from [Basic Syntax - tvf_SearchLog](create-function-u-sql-table-valued-function.md#tvf_SearchLog).
 ```
 DROP TABLE IF EXISTS dbo.searchLogFromFunction;
 CREATE TABLE dbo.searchLogFromFunction (
@@ -116,7 +116,7 @@ CREATE TABLE dbo.searchLogFromFunction (
 
   
 ### See Also  
-* [CREATE TABLE (U-SQL): Overview](../USQL/create-table-u-sql-overview.md)  
-* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../USQL/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
-* [TRUNCATE TABLE (U-SQL)](../USQL/truncate-table-u-sql.md)
-* [DROP TABLE (U-SQL)](../USQL/drop-table-u-sql.md)   
+* [CREATE TABLE (U-SQL): Overview](create-table-u-sql-overview.md)  
+* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
+* [TRUNCATE TABLE (U-SQL)](truncate-table-u-sql.md)
+* [DROP TABLE (U-SQL)](drop-table-u-sql.md)   

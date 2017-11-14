@@ -17,9 +17,9 @@ manager: "jhubbard"
 # Logical Operators (U-SQL)
 U-SQL supports the C# logical operators [&&](https://msdn.microsoft.com/library/2a723cdk.aspx), [||](https://msdn.microsoft.com/library/6373h346.aspx) and [!](https://msdn.microsoft.com/library/f2kd6eb2.aspx) (not). Since C# guarantees order of execution and provides short-cutting on logical operators, these operators can incur a slight performance penalty. The C# semantics does not allow the optimizer to rewrite and reorder the query predicates. For example, the second predicate in a logical expression cannot be moved up in the execution tree to apply the filter early, because it would now be executed before the first predicate. 
 
-Since such query rewrites are often useful to improve query performance, U-SQL also supports the SQL-inspired [AND](../USQL/and-u-sql.md), [OR](../USQL/or-u-sql.md) and [NOT](../USQL/not-u-sql.md) operators. In order to give the optimizer better choices, these operators should be used instead of the C# operators if the execution order among the two predicates does not need to be preserved.  
+Since such query rewrites are often useful to improve query performance, U-SQL also supports the SQL-inspired [AND](and-u-sql.md), [OR](or-u-sql.md) and [NOT](not-u-sql.md) operators. In order to give the optimizer better choices, these operators should be used instead of the C# operators if the execution order among the two predicates does not need to be preserved.  
 
-When more than one logical operator is used in an expression, [NOT](../USQL/not-u-sql.md) operators bind stronger than [AND](../USQL/and-u-sql.md) which in turn bind stronger than [OR](../USQL/or-u-sql.md). Parentheses can be used to change the binding precedence. 
+When more than one logical operator is used in an expression, [NOT](not-u-sql.md) operators bind stronger than [AND](and-u-sql.md) which in turn bind stronger than [OR](or-u-sql.md). Parentheses can be used to change the binding precedence. 
 
 Note that unlike the ANSI SQL operators, these operators are still operating according to C#’s two-valued Boolean Logic, meaning that they do not support null values as a third logical value. 
 
@@ -44,10 +44,10 @@ C# logical operators that provide shortcutting and preserve order of expressions
 U-SQL logical operators that provide faster execution with predicate reordering. 
 
 ### See Also 
-* [AND (U-SQL)](../USQL/and-u-sql.md)  
-* [NOT (U-SQL)](../USQL/not-u-sql.md)  
-* [OR (U-SQL)](../USQL/or-u-sql.md)  
-* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md) 
-* [Comparison Operators (U-SQL)](../USQL/comparison-operators-u-sql.md)  
+* [AND (U-SQL)](and-u-sql.md)  
+* [NOT (U-SQL)](not-u-sql.md)  
+* [OR (U-SQL)](or-u-sql.md)  
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md) 
+* [Comparison Operators (U-SQL)](comparison-operators-u-sql.md)  
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx)  
 
