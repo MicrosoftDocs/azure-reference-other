@@ -17,9 +17,9 @@ manager: "jhubbard"
 # CUME_DIST (U-SQL)
 The CUME_DIST analytic function calculates the cumulative distribution of a value in a group of values. That is, CUME_DIST computes the relative position of a specified value in a group of values. For a row r, assuming ascending ordering, the CUME_DIST of r is the number of rows with values lower than or equal to the value of r, divided by the number of rows evaluated in the group. Thus, the range of values returned by CUME_DIST is greater than 0 and less than or equal to 1. Tie values always evaluate to the same cumulative distribution value. NULL values are included by default and are treated as the highest possible values. 
 
-CUME_DIST is similar to the [PERCENT_RANK](../USQL/percent-rank-u-sql.md) function. 
+CUME_DIST is similar to the [PERCENT_RANK](../u-sql/percent-rank-u-sql.md) function. 
 
-CUME_DIST can only be used in the context of a [windowing expression](../USQL/over-expression-u-sql.md). 
+CUME_DIST can only be used in the context of a [windowing expression](../u-sql/over-expression-u-sql.md). 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 CUME_DIST_Expression :=                                                                                  
@@ -27,12 +27,12 @@ CUME_DIST_Expression :=
 </pre></td></tr></table>
 
 ### Return Type 
-The return type is [double?](../USQL/numeric-types-and-literals.md). 
+The return type is [double?](../u-sql/numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression 
-This analytic function can be used in a [windowing expression](../USQL/over-expression-u-sql.md) with the following restrictions: 
+This analytic function can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) with the following restrictions: 
 
-* The [ROWS](../USQL/over-expression-u-sql.md#row_cla) clause in the [OVER](../USQL/over-expression-u-sql.md) operator is not allowed. 
+* The [ROWS](../u-sql/over-expression-u-sql.md#row_cla) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is not allowed. 
 
 ### Example
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -81,7 +81,7 @@ VALUES
 ```
 
 **Using CUME_DIST**    
-The following example uses the CUME_DIST function to compute the salary percentile for each employee within a given department. The value returned by the CUME_DIST function represents the percent of employees that have a salary less than or equal to the current employee in the same department. The [PARTITION BY](../USQL/over-expression-u-sql.md#OPBC) clause is specified to partition the rows in the result set by department. The [ORDER BY](../USQL/over-expression-u-sql.md#OBC) clause in the OVER clause logically orders the rows in each partition. 
+The following example uses the CUME_DIST function to compute the salary percentile for each employee within a given department. The value returned by the CUME_DIST function represents the percent of employees that have a salary less than or equal to the current employee in the same department. The [PARTITION BY](../u-sql/over-expression-u-sql.md#OPBC) clause is specified to partition the rows in the result set by department. The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the OVER clause logically orders the rows in each partition. 
 ```
 @result =
     SELECT *,
@@ -94,6 +94,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Analytic Functions (U-SQL)](../USQL/analytic-functions-u-sql.md)  
-* [PERCENT_RANK (U-SQL)](../USQL/percent-rank-u-sql.md) 
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
+* [Analytic Functions (U-SQL)](../u-sql/analytic-functions-u-sql.md)  
+* [PERCENT_RANK (U-SQL)](../u-sql/percent-rank-u-sql.md) 
+* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 

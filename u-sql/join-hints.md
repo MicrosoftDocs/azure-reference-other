@@ -31,4 +31,4 @@ These hints impact the plan generation of the query optimizer. If the optimizer 
 These hints are best used with care, since specifying a certain hint will make it impossible for the optimizer to find a better plan. They should only be used if the default plan is not optimal.  
 
 ### See Also 
-* [U-SQL SELECT Selecting from Joins](../USQL/u-sql-select-selecting-from-joins.md)  
+* [U-SQL SELECT Selecting from Joins](../u-sql/u-sql-select-selecting-from-joins.md)  

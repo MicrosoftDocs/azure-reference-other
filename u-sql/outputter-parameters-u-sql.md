@@ -26,7 +26,7 @@ The supported parameters and their defaults are:
 |----------------|----------------|---------------|  
 | <a name="delimiter"></a>`delimiter`     | `char`           | `','`           |  
   
-This parameter specifies the column separator character that separates columns in the file. The default column separator is ',' (comma).  The delimiter parameter is not available for [Outputters.Csv()](../USQL/outputters-csv.md) and [Outputters.Tsv()](../USQL/outputters-tsv.md).
+This parameter specifies the column separator character that separates columns in the file. The default column separator is ',' (comma).  The delimiter parameter is not available for [Outputters.Csv()](../u-sql/outputters-csv.md) and [Outputters.Tsv()](../u-sql/outputters-tsv.md).
   
 Note that per default, the built-in outputters are quoting string values. Thus any delimiter inside a value will be protected. If quoting is turned off, then the escaping needs to be turned on to protect the delimiter character inside a value.  
   
@@ -147,6 +147,6 @@ The supported values are:
 The parameter specifies whether to output the column names of the rowset as the first header row.
 
 ### See Also
-* [U-SQL Built-in Outputters](../USQL/u-sql-built-in-outputters.md)
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)
-* [Output to Files (U-SQL)](../USQL/output-to-files-u-sql.md)
+* [U-SQL Built-in Outputters](../u-sql/u-sql-built-in-outputters.md)
+* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)
+* [Output to Files (U-SQL)](../u-sql/output-to-files-u-sql.md)

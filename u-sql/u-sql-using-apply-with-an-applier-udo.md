@@ -25,7 +25,7 @@ Applier_Expression :=
   
 ### Semantics of Syntax Elements  
 - <a name="ATE"></a>**`applier_type_expression`**  
-  The applier typed expression creates an Applier UDO and in addition to the input row data, takes the derived table schema definition as its input as well as the provided clauses. Unlike [EXPLODE](../USQL/explode-u-sql.md) (or in general rowset expressions) an Applier uses the UDO programming model to get access to the incoming row and to return zero to many rows as a result. If the expression is not resulting in an instance of an IApplier, an error is raised. The result will be typed as specified in the derived table schema. 
+  The applier typed expression creates an Applier UDO and in addition to the input row data, takes the derived table schema definition as its input as well as the provided clauses. Unlike [EXPLODE](../u-sql/explode-u-sql.md) (or in general rowset expressions) an Applier uses the UDO programming model to get access to the incoming row and to return zero to many rows as a result. If the expression is not resulting in an instance of an IApplier, an error is raised. The result will be typed as specified in the derived table schema. 
      
   For more information on the UDO programming model see [U-SQL Programmability Guide: User-Defined Applier](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-applier).  
   
@@ -72,7 +72,7 @@ Applier_Expression :=
 ### Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../USQL/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 <a name="ParserApplier">**ParserApplier**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.
@@ -211,12 +211,12 @@ USING Outputters.Csv();
 ```
  
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)
-* [FROM Clause (U-SQL)](../USQL/from-clause-u-sql.md) 
-* [SELECT Expression (U-SQL)](../USQL/select-expression-u-sql.md) 
-* [U-SQL SELECT Selecting from CROSS APPLY and OUTER APPLY](../USQL/u-sql-select-selecting-from-cross-apply-and-outer-apply.md)  
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)
+* [FROM Clause (U-SQL)](../u-sql/from-clause-u-sql.md) 
+* [SELECT Expression (U-SQL)](../u-sql/select-expression-u-sql.md) 
+* [U-SQL SELECT Selecting from CROSS APPLY and OUTER APPLY](../u-sql/u-sql-select-selecting-from-cross-apply-and-outer-apply.md)  
+* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
 * [U-SQL Programmability Guide: User-Defined Applier](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-applier)
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)  
+* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 

@@ -39,7 +39,7 @@ Import_Package_Statement :=
 </pre></td></tr></table>
 
 ### See Also    
-* [U-SQL Assemblies](../USQL/u-sql-assemblies.md)  
+* [U-SQL Assemblies](../u-sql/u-sql-assemblies.md)  
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)  
 
 

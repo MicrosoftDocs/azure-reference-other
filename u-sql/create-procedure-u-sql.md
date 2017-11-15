@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # CREATE PROCEDURE (U-SQL)
-U-SQL creates a procedure with the `CREATE PROCEDURE` statement.  For information on calling a procedure, see [Calling a Procedure (U-SQL)](../USQL/calling-a-procedure-u-sql.md)
+U-SQL creates a procedure with the `CREATE PROCEDURE` statement.  For information on calling a procedure, see [Calling a Procedure (U-SQL)](../u-sql/calling-a-procedure-u-sql.md)
 
 <table><th align="left">Syntax</th><tr><td><pre>
 Create_Proc_Statement :=                                                                                 
@@ -39,7 +39,7 @@ This statement creates the procedure with the specified identifier and parameter
     If the optional `IF NOT EXISTS` is specified, then the statement creates the procedure if it does not already exist, or succeeds without changes if the procedure already exists and the user has permission to at least enumerate all existing procedures.  
   
 - <a name="param_lst"></a>**`Parameter_List`**    
-  The parameter list provides the arguments and their types and optional default values. The [U-SQL function section](../USQL/u-sql-functions.md) provides more details about the syntax and semantics of the parameter list.  
+  The parameter list provides the arguments and their types and optional default values. The [U-SQL function section](../u-sql/u-sql-functions.md) provides more details about the syntax and semantics of the parameter list.  
   
 - <a name="proc_lst"></a>**`Proc_Statement_List`**     
   The statements inside a stored procedure can be any statements except for `CREATE FUNCTION`, `CREATE PROCEDURE`, `DROP FUNCTION`, `DROP PROCEDURE`.  
@@ -78,7 +78,7 @@ This statement creates the procedure with the specified identifier and parameter
   
 Note that setting the context inside the procedure body with a USE statement, declaring variables or referencing assembly statements are only affecting the static context of the procedure’s body and will not be visible in the calling context or the static context of the definition of an object called within (e.g., the script or another procedure).  
   
-The procedure’s own static context is not affected by the calling environment’s static context. E.g., a [USE DATABASE](../USQL/use-database-u-sql.md)  statement or a variable declaration in the script that is calling the procedure is not affecting the procedure’s default static database context and is not visible inside the procedure body**.**  
+The procedure’s own static context is not affected by the calling environment’s static context. E.g., a [USE DATABASE](../u-sql/use-database-u-sql.md)  statement or a variable declaration in the script that is calling the procedure is not affecting the procedure’s default static database context and is not visible inside the procedure body**.**  
   
 Assemblies referenced in a procedure body will however be visible in the calling environment’s dynamic context at runtime and will be visible in any of the called contexts and the procedure’s own dynamic context. In addition, the procedure’s dynamic context will inherit the loaded assemblies from the calling environment.  
   
@@ -189,11 +189,11 @@ END;
 ```
 
 **Additional Examples**   
-* See [Procedure addPeople](../USQL/create-type-u-sql.md#sproc_pass), a procedure that accepts a table type as a parameter.   
-* See [Calling a Procedure (U-SQL)](../USQL/calling-a-procedure-u-sql.md) for examples on how to call the above procedures.  
+* See [Procedure addPeople](../u-sql/create-type-u-sql.md#sproc_pass), a procedure that accepts a table type as a parameter.   
+* See [Calling a Procedure (U-SQL)](../u-sql/calling-a-procedure-u-sql.md) for examples on how to call the above procedures.  
   
 ### See Also
-* [U-SQL Procedures](../USQL/u-sql-procedures.md)  
-* [DROP PROCEDURE (U-SQL)](../USQL/drop-procedure-u-sql.md)  
-* [Calling a Procedure (U-SQL)](../USQL/calling-a-procedure-u-sql.md)
-* [U-SQL Packages](../USQL/u-sql-packages.md) 
+* [U-SQL Procedures](../u-sql/u-sql-procedures.md)  
+* [DROP PROCEDURE (U-SQL)](../u-sql/drop-procedure-u-sql.md)  
+* [Calling a Procedure (U-SQL)](../u-sql/calling-a-procedure-u-sql.md)
+* [U-SQL Packages](../u-sql/u-sql-packages.md) 

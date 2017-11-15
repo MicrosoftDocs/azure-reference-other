@@ -26,7 +26,7 @@ Create_Schema_Statement :=
 
 ### Semantics of Syntax Elements  
 -   <a name="s_name"></a>**`Schema_Name`**   
-    Specifies the name of the schema in form of a [quoted or unquoted U-SQL identifier](../USQL/u-sql-identifiers.md). If a schema of the given name already exists inside the current database context or the user has no permissions to create a schema, an error is raised. 
+    Specifies the name of the schema in form of a [quoted or unquoted U-SQL identifier](../u-sql/u-sql-identifiers.md). If a schema of the given name already exists inside the current database context or the user has no permissions to create a schema, an error is raised. 
      
 -   <a name="INE"></a>**`IF NOT EXISTS`**  
     If the optional `IF NOT EXISTS` is specified, then the statement creates the schema if it does not already exist, or succeeds without changes if the schema already exists and the user has permission to at least enumerate all existing schemas.  
@@ -47,6 +47,6 @@ CREATE SCHEMA NewSchema;
 ```
 
 ### See Also    
-* [U-SQL Database Schemas](../USQL/u-sql-database-schemas.md)
-* [USE SCHEMA (U-SQL)](../USQL/use-schema-u-sql.md) 
-* [DROP SCHEMA (U-SQL)](../USQL/drop-schema-u-sql.md)
+* [U-SQL Database Schemas](../u-sql/u-sql-database-schemas.md)
+* [USE SCHEMA (U-SQL)](../u-sql/use-schema-u-sql.md) 
+* [DROP SCHEMA (U-SQL)](../u-sql/drop-schema-u-sql.md)

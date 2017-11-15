@@ -36,15 +36,15 @@ Create_Managed_Table_Statement :=
     If the optional `IF NOT EXISTS` is specified, then the statement creates the table if it does not already exist, or succeeds without changes if the table already exists and the user has permission to at least enumerate all existing tables.  
   
 -   <a name="tbl_w_sch"></a>**`Table_With_Schema`**  
-    A table can be specified by means of declaring a schema. See [CREATE TABLE (U-SQL): Creating a Table with Schema](../USQL/create-table-u-sql-creating-a-table-with-schema.md) for more details.  
+    A table can be specified by means of declaring a schema. See [CREATE TABLE (U-SQL): Creating a Table with Schema](../u-sql/create-table-u-sql-creating-a-table-with-schema.md) for more details.  
   
 -   <a name="tbl_as_qry"></a>**`Table_As_Query`**   
-    A table can be specified by means of declaring a schema. See [CREATE TABLE (U-SQL): Creating a Table from a Query](../USQL/create-table-u-sql-creating-a-table-from-a-query.md) for more details.   
+    A table can be specified by means of declaring a schema. See [CREATE TABLE (U-SQL): Creating a Table from a Query](../u-sql/create-table-u-sql-creating-a-table-from-a-query.md) for more details.   
   
 ### See Also    
-* [CREATE EXTERNAL TABLE (U-SQL)](../USQL/create-external-table-u-sql.md)
-* [CREATE TABLE (U-SQL): Creating a Table with Schema](../USQL/create-table-u-sql-creating-a-table-with-schema.md)
-* [CREATE TABLE (U-SQL): Creating a Table from a Query](../USQL/create-table-u-sql-creating-a-table-from-a-query.md)
+* [CREATE EXTERNAL TABLE (U-SQL)](../u-sql/create-external-table-u-sql.md)
+* [CREATE TABLE (U-SQL): Creating a Table with Schema](../u-sql/create-table-u-sql-creating-a-table-with-schema.md)
+* [CREATE TABLE (U-SQL): Creating a Table from a Query](../u-sql/create-table-u-sql-creating-a-table-from-a-query.md)
 
 
 

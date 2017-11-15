@@ -44,7 +44,7 @@ DROP TYPE TestReferenceDB.dbo.PhoneType;
 ```
   
 ### See Also
-* [User-defined U-SQL Types](../USQL/user-defined-u-sql-types.md)  
-* [CREATE TYPE (U-SQL)](../USQL/create-type-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   
+* [User-defined U-SQL Types](../u-sql/user-defined-u-sql-types.md)  
+* [CREATE TYPE (U-SQL)](../u-sql/create-type-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)   
 

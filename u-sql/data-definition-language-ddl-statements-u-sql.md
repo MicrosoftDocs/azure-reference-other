@@ -19,9 +19,9 @@ While one of U-SQL’s strength is to operate on unstructured data stored in fil
   
 Each meta data object is given a name and the objects are arranged in the following object hierarchy:  
   
-![U-SQL Metadata Object Model](../USQL/media/u-sql-metadata-object-model.png)  
+![U-SQL Metadata Object Model](../u-sql/media/u-sql-metadata-object-model.png)  
   
-U-SQL metadata objects are name-scoped to their containers (e.g., views and tables are scoped to database schemas) which provide a single namespace for all object types within a container. Thus names cannot be shared across different object types in the same container (e.g., a view and table in the same schema cannot have the same name). The metadata objects are addressed with their [U-SQL object identifier](../USQL/identifiers-u-sql.md) (follow the link for more information on the form of [U-SQL object identifiers](../USQL/identifiers-u-sql.md) and how they are being resolved).  
+U-SQL metadata objects are name-scoped to their containers (e.g., views and tables are scoped to database schemas) which provide a single namespace for all object types within a container. Thus names cannot be shared across different object types in the same container (e.g., a view and table in the same schema cannot have the same name). The metadata objects are addressed with their [U-SQL object identifier](../u-sql/identifiers-u-sql.md) (follow the link for more information on the form of [U-SQL object identifiers](../u-sql/identifiers-u-sql.md) and how they are being resolved).  
  
 Objects that are included from the C# context, such as the names of functions, classes, methods provided by the assemblies, do not require metadata object names but instead are being references using their C# names after the assemblies are being referenced by their metadata object names in the scripts.  
   

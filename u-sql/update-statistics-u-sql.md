@@ -30,7 +30,7 @@ Table_Name :=
  
 ### Semantics of Syntax Elements    
 -   <a name="stat_name_tbl"></a>**`Statistic_Name ON Table_Name`**  
-    Specifies the name (either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md)) of the statistic of the given table to be updated. If the statistic does not exist or the user does not have permissions, then an error is raised, unless `IF EXISTS` is specified. In that case, if the user has at least enumeration permission on the table, the operation will silently complete without action. If the user has no enumeration permission, an error is raised.  
+    Specifies the name (either a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md)) of the statistic of the given table to be updated. If the statistic does not exist or the user does not have permissions, then an error is raised, unless `IF EXISTS` is specified. In that case, if the user has at least enumeration permission on the table, the operation will silently complete without action. If the user has no enumeration permission, an error is raised.  
   
 -   <a name="incrm"></a>**`WITH INCREMENTAL = 'ON' | 'OFF'`**  
     When the `INCREMENTAL` option is set to `ON`, the statistics are updated with the newly inserted data and newly added partitions since the last time the statistic got calculated. If it is set to **`OFF`**, the statistics tree is dropped and the full statistic is recomputed.  
@@ -49,8 +49,8 @@ ON dbo.Orders
 WITH INCREMENTAL = OFF;
 ```
 ### See Also
--  [CREATE INDEX (U-SQL)](../USQL/create-index-u-sql.md)
--  [DROP TABLE (U-SQL)](../USQL/drop-table-u-sql.md) 
--  [CREATE STATISTICS (U-SQL)](../USQL/create-statistics-u-sql.md)
--  [DROP STATISTICS (U-SQL)](../USQL/drop-statistics-u-sql.md)
-- [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)  
+-  [CREATE INDEX (U-SQL)](../u-sql/create-index-u-sql.md)
+-  [DROP TABLE (U-SQL)](../u-sql/drop-table-u-sql.md) 
+-  [CREATE STATISTICS (U-SQL)](../u-sql/create-statistics-u-sql.md)
+-  [DROP STATISTICS (U-SQL)](../u-sql/drop-statistics-u-sql.md)
+- [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)  

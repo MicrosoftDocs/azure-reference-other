@@ -43,6 +43,6 @@ DROP VIEW IF EXISTS TestReferenceDB.dbo.SampleView;
 ```
   
 ### See Also  
-- [U-SQL Views](../USQL/u-sql-views.md)  
-- [CREATE VIEW (U-SQL)](../USQL/create-view-u-sql.md)
-- [U-SQL Functions](../USQL/u-sql-functions.md)
+- [U-SQL Views](../u-sql/u-sql-views.md)  
+- [CREATE VIEW (U-SQL)](../u-sql/create-view-u-sql.md)
+- [U-SQL Functions](../u-sql/u-sql-functions.md)

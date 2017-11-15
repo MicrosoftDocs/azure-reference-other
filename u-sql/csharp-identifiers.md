@@ -19,6 +19,6 @@ C#-based identifiers are used for all built-in, referenced and user-defined C# o
   
   
 ### See Also
-* [U-SQL Concepts](../USQL/u-sql-concepts.md)
-* [U-SQL Language Reference](../USQL/u-sql-language-reference.md)  
-* [U-SQL Identifiers](../USQL/u-sql-identifiers.md)
+* [U-SQL Concepts](../u-sql/u-sql-concepts.md)
+* [U-SQL Language Reference](../u-sql/u-sql-language-reference.md)  
+* [U-SQL Identifiers](../u-sql/u-sql-identifiers.md)

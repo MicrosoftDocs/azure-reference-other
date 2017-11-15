@@ -33,7 +33,7 @@ Create_Statistics_Statement :=
 
 ### Semantics of Syntax Elements    
 -   <a name="stat_name"></a>**`Statistic_Name`**    
-    Specifies the name of the statistic as either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md). The statistic name is unique in the context of the table, i.e., several tables could have statistics with the same name.  
+    Specifies the name of the statistic as either a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md). The statistic name is unique in the context of the table, i.e., several tables could have statistics with the same name.  
   
 -   <a name="INE"></a>**`IF NOT EXISTS`**     
     If the statistics of the given name already exists on the specified table and the user has access to it, an error is raised unless the `IF NOT EXISTS` clause has been specified. If the `IF NOT EXISTS` clause has been specified and the statistics already exists and the user has at least enumeration permissions, the `CREATE STATISTICS` statement will silently complete without action. If the user has no enumeration permission, an error is raised.  
@@ -61,7 +61,7 @@ CREATE STATISTICS IF NOT EXISTS ordersStats ON dbo.Orders(OrderID) WITH FULLSCAN
 ```
   
 ### See Also
--  [UPDATE STATISTICS (U-SQL)](../USQL/update-statistics-u-sql.md)
--  [DROP STATISTICS (U-SQL)](../USQL/drop-statistics-u-sql.md)
-- [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)  
+-  [UPDATE STATISTICS (U-SQL)](../u-sql/update-statistics-u-sql.md)
+-  [DROP STATISTICS (U-SQL)](../u-sql/drop-statistics-u-sql.md)
+- [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)  
  

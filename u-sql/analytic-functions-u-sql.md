@@ -15,11 +15,11 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Analytic Functions (U-SQL)
-U-SQL supports a set of SQL-based analytic functions that compute an aggregate value based on a group of rows. However, unlike [aggregate functions](../USQL/aggregate-functions-u-sql.md), they can return multiple rows for each group. You can use analytic functions to compute moving averages, running totals, percentages or top-N results within a group.  
+U-SQL supports a set of SQL-based analytic functions that compute an aggregate value based on a group of rows. However, unlike [aggregate functions](../u-sql/aggregate-functions-u-sql.md), they can return multiple rows for each group. You can use analytic functions to compute moving averages, running totals, percentages or top-N results within a group.  
 
 In U-SQL, analytics functions can only be used in the following syntactic contexts: 
 
-* As a window function in a [windowing expression](../USQL/over-expression-u-sql.md) with the [OVER](../USQL/over-expression-u-sql.md) operator where it will calculate the value for each window partition. 
+* As a window function in a [windowing expression](../u-sql/over-expression-u-sql.md) with the [OVER](../u-sql/over-expression-u-sql.md) operator where it will calculate the value for each window partition. 
 
 Some of the analytics functions are type-polymorphic, meaning that they can operate on many different input types and return potentially different types based on their input type.  
 
@@ -39,7 +39,7 @@ Built_In_Analytic :=
 </pre></td></tr></table>
 
 ### See Also 
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
+* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 
 
 
 

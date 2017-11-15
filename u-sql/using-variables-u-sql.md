@@ -44,4 +44,4 @@ OUTPUT @searchlog
 ```
 
 ### See Also
-* [DECLARE Variables (U-SQL)](../USQL/declare-variables-u-sql.md)  
+* [DECLARE Variables (U-SQL)](../u-sql/declare-variables-u-sql.md)  

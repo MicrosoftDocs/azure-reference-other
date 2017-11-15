@@ -18,5 +18,5 @@ manager: "jhubbard"
 Variables allow you to name scalar and rowset expressions. 
 
 For more information see:
-* [DECLARE Variables (U-SQL)](../USQL/declare-variables-u-sql.md) 
-* [Using Variables (U-SQL)](../USQL/using-variables-u-sql.md)
+* [DECLARE Variables (U-SQL)](../u-sql/declare-variables-u-sql.md) 
+* [Using Variables (U-SQL)](../u-sql/using-variables-u-sql.md)

@@ -59,9 +59,9 @@ DROP CREDENTIAL IF EXISTS ExampleSecret;
 ```
   
 ### See Also
-* [U-SQL Credential Objects](../USQL/u-sql-credential-objects.md)  
-* [CREATE CREDENTIAL (U-SQL)](../USQL/create-credential-u-sql.md)  
-* [ALTER CREDENTIAL (U-SQL)](../USQL/alter-credential-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md) 
+* [U-SQL Credential Objects](../u-sql/u-sql-credential-objects.md)  
+* [CREATE CREDENTIAL (U-SQL)](../u-sql/create-credential-u-sql.md)  
+* [ALTER CREDENTIAL (U-SQL)](../u-sql/alter-credential-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md) 
 -->  
 

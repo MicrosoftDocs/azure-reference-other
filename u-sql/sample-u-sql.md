@@ -96,6 +96,6 @@ ZipCode  |Age      |Salary   |LastName
 
 
 ### See Also
-* [SAMPLE Expression (U-SQL)](../USQL/sample-expression-u-sql.md) 
-* [U-SQL Sampling Methods](../USQL/u-sql-sampling-methods.md) 
-* [Operators (U-SQL)](../USQL/operators-u-sql.md)
+* [SAMPLE Expression (U-SQL)](../u-sql/sample-expression-u-sql.md) 
+* [U-SQL Sampling Methods](../u-sql/u-sql-sampling-methods.md) 
+* [Operators (U-SQL)](../u-sql/operators-u-sql.md)

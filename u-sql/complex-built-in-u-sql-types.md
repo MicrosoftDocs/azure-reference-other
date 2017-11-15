@@ -31,10 +31,10 @@ The `SQL.MAP`'s value type V and the `SQL.ARRAY`'s item type T can be any built-
 > SQL.ARRAY is not comparable.
   
 ### Examples   
-See [EXPLODE (U-SQL)](../USQL/explode-u-sql.md) for examples involving the usage of `SQL.MAP` and `SQL.ARRAY` and `EXPLODE`.
+See [EXPLODE (U-SQL)](../u-sql/explode-u-sql.md) for examples involving the usage of `SQL.MAP` and `SQL.ARRAY` and `EXPLODE`.
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../USQL/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 
 <a name="sqlMAP">**SQL.MAP**</a>  
@@ -820,8 +820,8 @@ USING Outputters.Csv(outputHeader: true);
 
   
 ### See Also
-* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md)  
-* [EXPLODE (U-SQL)](../USQL/explode-u-sql.md) 
-* [MAP_AGG (U-SQL)](../USQL/map-agg-u-sql.md)   
-* [ARRAY_AGG (U-SQL)](../USQL/array-agg-u-sql.md)
+* [Data Types and Literals (U-SQL)](../u-sql/data-types-and-literals-u-sql.md)  
+* [EXPLODE (U-SQL)](../u-sql/explode-u-sql.md) 
+* [MAP_AGG (U-SQL)](../u-sql/map-agg-u-sql.md)   
+* [ARRAY_AGG (U-SQL)](../u-sql/array-agg-u-sql.md)
 

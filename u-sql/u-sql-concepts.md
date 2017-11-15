@@ -20,7 +20,7 @@ U-SQL combines some familiar concepts from a variety of languages: It is a *decl
 ## How does a U-SQL Script process your Data
 Currently, Azure Data Lake Analytics provides U-SQL for batch processing.  Therefore U-SQL is written and executed in form of a batch script. It follows the following general processing pattern:    
 1.  Retrieve data from stored locations in rowset format    
-    1.  Stored locations can be files that will be schematized on read with [EXTRACT](../USQL/extract-expression-u-sql.md) expressions    
+    1.  Stored locations can be files that will be schematized on read with [EXTRACT](../u-sql/extract-expression-u-sql.md) expressions    
     2.  Stored locations can be U-SQL tables that are stored in a schematized format    
     3.  Or can be tables provided by other data sources such as an Azure SQL database.     
     
@@ -30,21 +30,21 @@ Currently, Azure Data Lake Analytics provides U-SQL for batch processing.  There
     
     
 3.  Store the transformed rowset data    
-    1.  Store it in a file with an [OUTPUT](../USQL/output-statement-u-sql.md) statement, or    
-    2.  Store it in a U-SQL table with an [INSERT](../USQL/insert-u-sql.md) statement    
+    1.  Store it in a file with an [OUTPUT](../u-sql/output-statement-u-sql.md) statement, or    
+    2.  Store it in a U-SQL table with an [INSERT](../u-sql/insert-u-sql.md) statement    
 
-In addition, U-SQL also supports data definition statements such as [CREATE TABLE](../USQL/create-table-u-sql-creating-a-table-with-schema.md) to create metadata artifacts either in separate scripts or sometimes even in combination with the transformation scripts.  
+In addition, U-SQL also supports data definition statements such as [CREATE TABLE](../u-sql/create-table-u-sql-creating-a-table-with-schema.md) to create metadata artifacts either in separate scripts or sometimes even in combination with the transformation scripts.  
   
 U-SQL Scripts can be submitted in a variety of ways. In particular you can submit them directly from within the [Azure Data Lake Tools for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-data-lake-tools-get-started/), from the [Azure Portal](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-get-started-portal) or programmatically via the [Azure Data Lake SDK](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-get-started-net-sdk/) job submission API or the [Azure Powershell](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-get-started-powershell) extension's job submission command.  
   
 Please explore the following concepts introduced in this section:  
-* [U-SQL Script Structure](../USQL/u-sql-scripts.md)  
-* [Expressions](../USQL/expressions-u-sql.md)
-* [Files and File Sets as Inputs and Outputs](../USQL/files-and-file-sets-as-inputs-and-outputs-u-sql.md) 
-* [Identifiers](../USQL/identifiers-u-sql.md)  
-* [Metadata system and objects](../USQL/data-definition-language-ddl-statements-u-sql.md) 
-* [Rowset: The Processing Data Structure](../USQL/rowset-the-processing-data-structure-u-sql.md)  
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)
+* [U-SQL Script Structure](../u-sql/u-sql-scripts.md)  
+* [Expressions](../u-sql/expressions-u-sql.md)
+* [Files and File Sets as Inputs and Outputs](../u-sql/files-and-file-sets-as-inputs-and-outputs-u-sql.md) 
+* [Identifiers](../u-sql/identifiers-u-sql.md)  
+* [Metadata system and objects](../u-sql/data-definition-language-ddl-statements-u-sql.md) 
+* [Rowset: The Processing Data Structure](../u-sql/rowset-the-processing-data-structure-u-sql.md)  
+* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)
 
 
 

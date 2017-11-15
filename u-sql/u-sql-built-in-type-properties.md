@@ -17,7 +17,7 @@ manager: "jhubbard"
 # U-SQL Built-in Type Properties
 Each of the U-SQL built-in types have certain properties that will govern its usability in certain context.  
   
-For example, the [numeric types](../USQL/numeric-types-and-literals.md) are orderable, while [complex types](../USQL/complex-built-in-u-sql-types.md) are not orderable. As one would expect, this means that an expression that results in a complex type cannot be used in an [ORDER BY](../USQL/order-by-and-offset-fetch-clause-u-sql.md) clause, while any expression that results in an orderable type can.  
+For example, the [numeric types](../u-sql/numeric-types-and-literals.md) are orderable, while [complex types](../u-sql/complex-built-in-u-sql-types.md) are not orderable. As one would expect, this means that an expression that results in a complex type cannot be used in an [ORDER BY](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) clause, while any expression that results in an orderable type can.  
   
 ### See Also
-* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md) 
+* [Data Types and Literals (U-SQL)](../u-sql/data-types-and-literals-u-sql.md) 

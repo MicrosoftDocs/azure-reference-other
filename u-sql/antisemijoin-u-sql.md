@@ -120,16 +120,16 @@ Both queries return the same rowset:
 | Marketing                                         | 35        |  
   
 **Additional Example**  
-An example of comparing ANTISEMIJOIN against a subquery with NOT IN is available at [Subqueries with IN/NOT IN and SEMIJOIN/ANTISEMIJOIN](../USQL/common-sql-expressions-in-u-sql.md#subQuery).
+An example of comparing ANTISEMIJOIN against a subquery with NOT IN is available at [Subqueries with IN/NOT IN and SEMIJOIN/ANTISEMIJOIN](../u-sql/common-sql-expressions-in-u-sql.md#subQuery).
 
   
 ### See Also 
-* [U-SQL SELECT Selecting from Joins](../USQL/u-sql-select-selecting-from-joins.md)  
-* [SELECT Expression (U-SQL)](../USQL/select-expression-u-sql.md) 
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)  
-* [Data Modification Language (DML) Statements (U-SQL)](../USQL/data-modification-language-dml-statements-u-sql.md)  
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)
-* [U-SQL Primary Rowset Expressions](../USQL/query-statements-and-expressions-u-sql.md#pri_row_exp)  
+* [U-SQL SELECT Selecting from Joins](../u-sql/u-sql-select-selecting-from-joins.md)  
+* [SELECT Expression (U-SQL)](../u-sql/select-expression-u-sql.md) 
+* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)  
+* [Data Modification Language (DML) Statements (U-SQL)](../u-sql/data-modification-language-dml-statements-u-sql.md)  
+* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)
+* [U-SQL Primary Rowset Expressions](../u-sql/query-statements-and-expressions-u-sql.md#pri_row_exp)  
 
 
 

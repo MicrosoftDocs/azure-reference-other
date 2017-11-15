@@ -34,7 +34,7 @@ Reference_User_Assembly_Statement :=
   
 ### Semantics of Syntax Elements
 - <a name="ass_name"></a>**`Global_Assembly_Identifier`**  
-Specifies the [quoted or unquoted identifier](../USQL/u-sql-identifiers.md) of the assembly to be loaded. The assembly name is resolved against the current static database context.   
+Specifies the [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md) of the assembly to be loaded. The assembly name is resolved against the current static database context.   
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -64,13 +64,13 @@ USING Outputters.Csv();
 ```
 
 ### See Also   
-* [U-SQL Assemblies](../USQL/u-sql-assemblies.md) 
-* [CREATE ASSEMBLY (U-SQL)](../USQL/create-assembly-u-sql.md)   
-* [REFERENCE SYSTEM ASSEMBLY (U-SQL)](../USQL/reference-system-assembly-u-sql.md)  
-* [DROP ASSEMBLY (U-SQL)](../USQL/drop-assembly-u-sql.md)  
-* [USING Keyword](../USQL/using-keyword.md)  
+* [U-SQL Assemblies](../u-sql/u-sql-assemblies.md) 
+* [CREATE ASSEMBLY (U-SQL)](../u-sql/create-assembly-u-sql.md)   
+* [REFERENCE SYSTEM ASSEMBLY (U-SQL)](../u-sql/reference-system-assembly-u-sql.md)  
+* [DROP ASSEMBLY (U-SQL)](../u-sql/drop-assembly-u-sql.md)  
+* [USING Keyword](../u-sql/using-keyword.md)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md) 
+* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md) 
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)
 
   

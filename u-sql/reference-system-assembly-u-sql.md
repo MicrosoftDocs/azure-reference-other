@@ -28,7 +28,7 @@ Reference_System_Assembly_Statement :=
  
 ### Semantics of Syntax Elements  
 -   <a name="ass_name"></a>**`Assembly_Name`**  
-    Specifies the C# name of the system assembly as a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md) of the assembly to be loaded. Note: This name is not resolved against the U-SQL meta data catalog.   
+    Specifies the C# name of the system assembly as a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md) of the assembly to be loaded. Note: This name is not resolved against the U-SQL meta data catalog.   
   
 ### Preloaded System Assemblies  
 The following system assemblies and namespaces are preloaded and thus their public objects can be used directly in any U-SQL expression:   
@@ -66,10 +66,10 @@ REFERENCE SYSTEM ASSEMBLY [System.XML];
 ```
   
 ### See Also
-* [U-SQL Assemblies](../USQL/u-sql-assemblies.md)
-* [CREATE ASSEMBLY (U-SQL)](../USQL/create-assembly-u-sql.md)  
-* [REFERENCE ASSEMBLY (U-SQL)](../USQL/reference-assembly-u-sql.md)  
-* [DROP ASSEMBLY (U-SQL)](../USQL/drop-assembly-u-sql.md)  
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)  
+* [U-SQL Assemblies](../u-sql/u-sql-assemblies.md)
+* [CREATE ASSEMBLY (U-SQL)](../u-sql/create-assembly-u-sql.md)  
+* [REFERENCE ASSEMBLY (U-SQL)](../u-sql/reference-assembly-u-sql.md)  
+* [DROP ASSEMBLY (U-SQL)](../u-sql/drop-assembly-u-sql.md)  
+* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)  
   
   

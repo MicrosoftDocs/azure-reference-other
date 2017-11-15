@@ -47,7 +47,7 @@ This statement creates the function with the specified identifier and function s
   </pre></td></table>
   
   - **`Parameter`**  
-    A parameter defines the name of the parameter in form of a variable local to the function body. Its type is either a [built-in U-SQL type](../USQL/built-in-u-sql-types.md), which optionally can be initialized with a default value, or a named or anonymous table type:
+    A parameter defines the name of the parameter in form of a variable local to the function body. Its type is either a [built-in U-SQL type](../u-sql/built-in-u-sql-types.md), which optionally can be initialized with a default value, or a named or anonymous table type:
     
     <table><th>Syntax</th><tr><td><pre>
     Parameter :=                                                                                   
@@ -62,7 +62,7 @@ This statement creates the function with the specified identifier and function s
         'TABLE' '(' Column_Definition_List ')'.</pre></td></table>
         
   - **`TVF_Returns`**  
-    The return of a TVF is specified by either a single return rowset or a list of return rowsets. Each returned rowset is specified by a rowset variable name and its return type that is either specified as a reference to a registered [U-SQL table type](../USQL/u-sql-table-types.md) or an anonymous table type.
+    The return of a TVF is specified by either a single return rowset or a list of return rowsets. Each returned rowset is specified by a rowset variable name and its return type that is either specified as a reference to a registered [U-SQL table type](../u-sql/u-sql-table-types.md) or an anonymous table type.
 
     <table><th>Syntax</th><tr><td><pre>
     TVF_Returns :=
@@ -94,11 +94,11 @@ This statement creates the function with the specified identifier and function s
   |   Deploy_Resource_Statement  
   |   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>.</pre></td></table> 
 
-  Please follow the links for more on the general nature of the statements. Note that in order to avoid side-effects that cannot inlined into a query expression, you cannot call [INSERT](../USQL/insert-u-sql.md) or [OUTPUT](../USQL/output-statement-u-sql.md) statements or call procedures that may have side-effects.  
+  Please follow the links for more on the general nature of the statements. Note that in order to avoid side-effects that cannot inlined into a query expression, you cannot call [INSERT](../u-sql/insert-u-sql.md) or [OUTPUT](../u-sql/output-statement-u-sql.md) statements or call procedures that may have side-effects.  
   
   Setting the context with a USE statement, declaring variables or referencing assembly statements inside a function body will only affect the static context of the table-valued function’s body and will not be visible in the calling context or the static context of the definition of an object called within (e.g., another TVF).  
  
-  The function body’s own static context is not affected by the calling environment’s static context. E.g., a [USE DATABASE](../USQL/use-database-u-sql.md)  statement in the script that is calling the function is not affecting the function’s default static database context and variables defined outside a function body will not be visible.  
+  The function body’s own static context is not affected by the calling environment’s static context. E.g., a [USE DATABASE](../u-sql/use-database-u-sql.md)  statement in the script that is calling the function is not affecting the function’s default static database context and variables defined outside a function body will not be visible.  
   
   Assemblies referenced in the function body will however be visible in the calling environment’s dynamic context and will be visible in any of the called contexts and the function’s own dynamic context. In addition, the function will inherit the loaded assemblies from the calling environment.  
   
@@ -238,14 +238,14 @@ USING Outputters.Tsv();
 ```
 
 **Additional Examples**   
-* [Table type in a table-valued function as a returned value](../USQL/create-type-u-sql.md#function_return)  
-* [Table-Valued Function Expression (U-SQL)](../USQL/table-valued-function-expression-u-sql.md) for examples on how to call the above functions.
+* [Table type in a table-valued function as a returned value](../u-sql/create-type-u-sql.md#function_return)  
+* [Table-Valued Function Expression (U-SQL)](../u-sql/table-valued-function-expression-u-sql.md) for examples on how to call the above functions.
   
   
 ### See Also    
-* [U-SQL Functions](../USQL/u-sql-functions.md)  
-* [U-SQL Table-valued Functions](../USQL/u-sql-table-valued-functions.md)  
-* [DROP FUNCTION (U-SQL)](../USQL/drop-function-u-sql.md)  
-* [Table-Valued Function Expression (U-SQL)](../USQL/table-valued-function-expression-u-sql.md)  
-* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md) 
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   
+* [U-SQL Functions](../u-sql/u-sql-functions.md)  
+* [U-SQL Table-valued Functions](../u-sql/u-sql-table-valued-functions.md)  
+* [DROP FUNCTION (U-SQL)](../u-sql/drop-function-u-sql.md)  
+* [Table-Valued Function Expression (U-SQL)](../u-sql/table-valued-function-expression-u-sql.md)  
+* [Built-in Functions (U-SQL)](../u-sql/built-in-functions-u-sql.md) 
+* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)   

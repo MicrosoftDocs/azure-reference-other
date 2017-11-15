@@ -61,5 +61,5 @@ TO "/Output/ReferenceGuide/Operators/Other/csharp1.txt"
 USING Outputters.Csv();
 ```
 ### See Also 
-* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)  
-* [C# Functions and Operators (U-SQL)](../USQL/csharp-functions-and-operators-u-sql.md) 
+* [Built-in Functions (U-SQL)](../u-sql/built-in-functions-u-sql.md)  
+* [C# Functions and Operators (U-SQL)](../u-sql/csharp-functions-and-operators-u-sql.md) 

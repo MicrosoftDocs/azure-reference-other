@@ -23,8 +23,8 @@ Column name  |Data type  |Description
 name     | string         |Column's name (unique within the object to which the column belongs)        
 object_id_guid     |Guid         |Identifier of the object to which the columns belongs         
 column_id     |int         |Column's positional id within the object to which the column belongs (unique within the object)         
-type_id_guid     |Guid         |Column type's identifier.<br><br>  To return the name of the type, join to the [usql.types](../USQL/usql-types-u-sql.md) catalog view on this column.       
-max_length     |int?         |Column's maximum length in bytes.<br><br>  -1 = Variable sized column such as columns of type string or byte[] or of a [complex type](../USQL/complex-built-in-u-sql-types.md). The value `null` is reserved for future use.         
+type_id_guid     |Guid         |Column type's identifier.<br><br>  To return the name of the type, join to the [usql.types](../u-sql/usql-types-u-sql.md) catalog view on this column.       
+max_length     |int?         |Column's maximum length in bytes.<br><br>  -1 = Variable sized column such as columns of type string or byte[] or of a [complex type](../u-sql/complex-built-in-u-sql-types.md). The value `null` is reserved for future use.         
 
 
 ### Examples
@@ -65,6 +65,6 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 ### See Also
-* [Catalog Views (U-SQL)](../USQL/catalog-views-u-sql.md)
-* [usql.objects (U-SQL)](../USQL/usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)
+* [Catalog Views (U-SQL)](../u-sql/catalog-views-u-sql.md)
+* [usql.objects (U-SQL)](../u-sql/usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)

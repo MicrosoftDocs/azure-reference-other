@@ -23,7 +23,7 @@ There are several ways how C# code can be used to extend U-SQL expressions:
 Inline C# expressions often makes sense if a small set of C# methods need to be applied to process one of the scalar values. E.g., a string type method or a math function.  
 
 -   **User-Defined Aggregators**  
-Write user-defined aggregators in a C# assembly and reference them in the U-SQL script.  By providing user-defined aggregators, custom aggregation logic can be plugged into U-SQL’s processing of aggregation with a [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) clause. 
+Write user-defined aggregators in a C# assembly and reference them in the U-SQL script.  By providing user-defined aggregators, custom aggregation logic can be plugged into U-SQL’s processing of aggregation with a [GROUP BY](../u-sql/group-by-and-having-clauses-u-sql.md) clause. 
 
 -    **User-Defined Functions**  
 Writing user-defined functions in a C# assembly and referencing them in the U-SQL script is preferred for more complex functions if the logic of the function requires the full power of C# beyond its expression language, such as procedural logic or recursion.   
@@ -38,10 +38,10 @@ Write user-defined operators in a C# assembly and reference them in the U-SQL sc
 |The following provides examples of implementing user-defined code:|
 |---|
 |[Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](#usingAssemblies)|
-|Inline C# Expressions<br />&emsp;&#9679;&emsp;[Using Round](#usingRound)<br />&emsp;&#9679;&emsp;[Contains](../USQL/csharp-functions-and-operators-u-sql.md#Contains)|
+|Inline C# Expressions<br />&emsp;&#9679;&emsp;[Using Round](#usingRound)<br />&emsp;&#9679;&emsp;[Contains](../u-sql/csharp-functions-and-operators-u-sql.md#Contains)|
 |User-Defined Aggregators<br />&emsp;&#9679;&emsp;[SampleAggregate](#smpAgg)<br />&emsp;&#9679;&emsp;[genericAggregator](#genericAgg)|
-|User-Defined Functions<br />&emsp;&#9679;&emsp;[dt_TryParse_USQL](../USQL/u-sql-functions.md#dt_TryParse_USQL)<br />&emsp;&#9679;&emsp;[GetFiscalPeriod](../USQL/u-sql-functions.md#getFiscalPeriod)<br />&emsp;&#9679;&emsp;[ReadStringMap/WriteQuotedStringMap](../USQL/complex-built-in-u-sql-types.md#ReadStringMap)<br />&emsp;&#9679;&emsp;[HasOfficePhone](#hop)|
-|User-Defined Operators<br />&emsp;&#9679;&emsp;Extractors<br />&emsp;&emsp;&emsp;&#9675;&emsp;[SampleExtractor](../USQL/extract-expression-u-sql.md#SampleExtractor)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[DriverExtractor](../USQL/extract-expression-u-sql.md#DriverExtractor)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[FlexExtractor](../USQL/extract-expression-u-sql.md#FlexExtractor)<br />&emsp;&#9679;&emsp;Outputters<br />&emsp;&emsp;&emsp;&#9675;&emsp;[HTMLOutputter](../USQL/output-statement-u-sql.md#HTMLOutputter)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[DriverOutputter](../USQL/output-statement-u-sql.md#DriverOutputter)<br />&emsp;&#9679;&emsp;Appliers<br />&emsp;&emsp;&emsp;&#9675;&emsp;[ParserApplier](../USQL/u-sql-using-apply-with-an-applier-udo.md#ParserApplier)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[IntegerRangeApplier](https://github.com/Azure-Samples/usql-tutorial-samples/tree/master/IntegerRangeApplier)<br />&emsp;&#9679;&emsp;Processors<br />&emsp;&emsp;&emsp;&#9675;&emsp;[FullAddressProcessor](../USQL/process-expression-u-sql.md#FullAddressProcessor)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[CountryName](../USQL/process-expression-u-sql.md#CountryName)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[NameProcessor](#NameProcessor)<br />&emsp;&#9679;&emsp;Reducers<br />&emsp;&emsp;&emsp;&#9675;&emsp;[RangeReducer](../USQL/reduce-expression-u-sql.md#RangeReducer)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[SalesReducer](../USQL/reduce-expression-u-sql.md#SalesReducer)<br />&emsp;&#9679;&emsp;Combiners<br />&emsp;&emsp;&emsp;&#9675;&emsp;[CombinerEX](../USQL/combine-expression-u-sql.md#combinerEX)<p>                                                                                                                                                                                                       </p>|
+|User-Defined Functions<br />&emsp;&#9679;&emsp;[dt_TryParse_USQL](../u-sql/u-sql-functions.md#dt_TryParse_USQL)<br />&emsp;&#9679;&emsp;[GetFiscalPeriod](../u-sql/u-sql-functions.md#getFiscalPeriod)<br />&emsp;&#9679;&emsp;[ReadStringMap/WriteQuotedStringMap](../u-sql/complex-built-in-u-sql-types.md#ReadStringMap)<br />&emsp;&#9679;&emsp;[HasOfficePhone](#hop)|
+|User-Defined Operators<br />&emsp;&#9679;&emsp;Extractors<br />&emsp;&emsp;&emsp;&#9675;&emsp;[SampleExtractor](../u-sql/extract-expression-u-sql.md#SampleExtractor)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[DriverExtractor](../u-sql/extract-expression-u-sql.md#DriverExtractor)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[FlexExtractor](../u-sql/extract-expression-u-sql.md#FlexExtractor)<br />&emsp;&#9679;&emsp;Outputters<br />&emsp;&emsp;&emsp;&#9675;&emsp;[HTMLOutputter](../u-sql/output-statement-u-sql.md#HTMLOutputter)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[DriverOutputter](../u-sql/output-statement-u-sql.md#DriverOutputter)<br />&emsp;&#9679;&emsp;Appliers<br />&emsp;&emsp;&emsp;&#9675;&emsp;[ParserApplier](../u-sql/u-sql-using-apply-with-an-applier-udo.md#ParserApplier)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[IntegerRangeApplier](https://github.com/Azure-Samples/usql-tutorial-samples/tree/master/IntegerRangeApplier)<br />&emsp;&#9679;&emsp;Processors<br />&emsp;&emsp;&emsp;&#9675;&emsp;[FullAddressProcessor](../u-sql/process-expression-u-sql.md#FullAddressProcessor)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[CountryName](../u-sql/process-expression-u-sql.md#CountryName)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[NameProcessor](#NameProcessor)<br />&emsp;&#9679;&emsp;Reducers<br />&emsp;&emsp;&emsp;&#9675;&emsp;[RangeReducer](../u-sql/reduce-expression-u-sql.md#RangeReducer)<br />&emsp;&emsp;&emsp;&#9675;&emsp;[SalesReducer](../u-sql/reduce-expression-u-sql.md#SalesReducer)<br />&emsp;&#9679;&emsp;Combiners<br />&emsp;&emsp;&emsp;&#9675;&emsp;[CombinerEX](../u-sql/combine-expression-u-sql.md#combinerEX)<p>                                                                                                                                                                                                       </p>|
 
 ## Using Assemblies <a name="usingAssemblies"></a>  
 ### Code-Behind vs. Assembly Registration Walkthrough 
@@ -175,7 +175,7 @@ USING Outputters.Tsv();
    
 
 <a name="usingRound">**Inline C# Expression - Using Round**</a>  
-Example using [Round](https://msdn.microsoft.com/library/system.math.round(v=vs.110).aspx).  See also, [C# Functions and Operators (U-SQL)](../USQL/csharp-functions-and-operators-u-sql.md).
+Example using [Round](https://msdn.microsoft.com/library/system.math.round(v=vs.110).aspx).  See also, [C# Functions and Operators (U-SQL)](../u-sql/csharp-functions-and-operators-u-sql.md).
 ```
 @departments = 
     SELECT * FROM 
@@ -297,7 +297,7 @@ namespace ReferenceGuide_Examples
 ```
 
 <a name="genericAggA">**Using User Defined Aggregator - genericAggregator A**</a>  
-`PhoneType` and `PhoneNumber` are aggregated for each `EmpName`.  This example provides an alternative solution to an example from [MAP_AGG (U-SQL)](../USQL/map-agg-u-sql.md).  Using the Code-Behind **above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
+`PhoneType` and `PhoneNumber` are aggregated for each `EmpName`.  This example provides an alternative solution to an example from [MAP_AGG (U-SQL)](../u-sql/map-agg-u-sql.md).  Using the Code-Behind **above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
 ```U-SQL
 @employees = 
     SELECT * FROM 
@@ -344,7 +344,7 @@ USING Outputters.Text();
 ```
 
 <a name="genericAggB">**Using User Defined Aggregator - genericAggregator B**</a>  
-`Producer` is aggregated for each `Title`.  This example provides an alternative solution to an example from [ARRAY_AGG (U-SQL)](../USQL/array-agg-u-sql.md).  Using the Code-Behind **further above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
+`Producer` is aggregated for each `Title`.  This example provides an alternative solution to an example from [ARRAY_AGG (U-SQL)](../u-sql/array-agg-u-sql.md).  Using the Code-Behind **further above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
 
 ```U-SQL
 @films = 
@@ -402,7 +402,7 @@ USING Outputters.Csv();
 ---
 
 <a name="hop">**User Defined Function - HasOfficePhone**</a>   
-c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file. See also, [U-SQL Functions](../USQL/u-sql-functions.md).  See usage in next section, **below**.
+c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file. See also, [U-SQL Functions](../u-sql/u-sql-functions.md).  See usage in next section, **below**.
 ```csharp
 namespace ReferenceGuide_Examples
 {
@@ -510,12 +510,12 @@ USING Outputters.Tsv(quoting:false);
 ```
 
 ### See Also  
-* [U-SQL Assemblies ](../USQL/u-sql-assemblies.md)   
+* [U-SQL Assemblies ](../u-sql/u-sql-assemblies.md)   
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)  
 * [Tutorial: Get started with extending U-SQL with Python](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-python-extensions)  
 * [Tutorial: Get started with extending U-SQL with R](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-r-extensions)   
-* [Cognitive Capabilities in U-SQL](../USQL/cognitive-capabilities-in-u-sql.md)
+* [Cognitive Capabilities in U-SQL](../u-sql/cognitive-capabilities-in-u-sql.md)
 * U-SQL C# Developer’s Guide (Coming soon)  
 
 

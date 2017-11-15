@@ -29,12 +29,12 @@ The U-SQL metadata system provides a default database and default schema context
   
 U-SQL uses the concepts of a *static database context* and *static schema context* which designate the default database and schema names that are used to resolve names that are not fully qualified during both compilation and execution:  
   
-All unqualified, single-part metadata object names (such as functions and table names) will be resolved against the current static schema context within the current static database context. Individual names can overwrite the resolution by using multi-part names (so called qualified names). One can use either two-parts identifiers of the form `schema.object` to refer to a schema object in a different schema than the context schema, or use a three-part identifier of the form `database.schema.object` to refer to an object in a different database than the current context database. E.g., `T` will be resolved against the current static context, `S.T` will resolve the object name `T` in the schema `S` in the current static database context, and `D.S.T` will resolve the object name `T` in the schema `S` in the database `D`. See the section on [U-SQL Identifiers](../USQL/u-sql-identifiers.md) for more information.   
+All unqualified, single-part metadata object names (such as functions and table names) will be resolved against the current static schema context within the current static database context. Individual names can overwrite the resolution by using multi-part names (so called qualified names). One can use either two-parts identifiers of the form `schema.object` to refer to a schema object in a different schema than the context schema, or use a three-part identifier of the form `database.schema.object` to refer to an object in a different database than the current context database. E.g., `T` will be resolved against the current static context, `S.T` will resolve the object name `T` in the schema `S` in the current static database context, and `D.S.T` will resolve the object name `T` in the schema `S` in the database `D`. See the section on [U-SQL Identifiers](../u-sql/u-sql-identifiers.md) for more information.   
   
 Note that names inside U-SQL functions are resolved based on the context during compilation of the function, and not the dynamic context during use.  
   
 The default static database and static schema contexts within a script can be changed with a USE statement.  
   
 ### See Also
-* [Identifiers (U-SQL)](../USQL/identifiers-u-sql.md) 
-* [Securing Meta Data Objects](../USQL/securing-meta-data-objects.md) 
+* [Identifiers (U-SQL)](../u-sql/identifiers-u-sql.md) 
+* [Securing Meta Data Objects](../u-sql/securing-meta-data-objects.md) 

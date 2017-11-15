@@ -147,6 +147,6 @@ ZipCode  |Age      |Salary   |LastName |Weight
 
 
 ### See Also
-* [SAMPLE (U-SQL)](../USQL/sample-u-sql.md)
-* [U-SQL Sampling Methods](../USQL/u-sql-sampling-methods.md)  
-* [FROM Clause (U-SQL)](../USQL/from-clause-u-sql.md) 
+* [SAMPLE (U-SQL)](../u-sql/sample-u-sql.md)
+* [U-SQL Sampling Methods](../u-sql/u-sql-sampling-methods.md)  
+* [FROM Clause (U-SQL)](../u-sql/from-clause-u-sql.md) 

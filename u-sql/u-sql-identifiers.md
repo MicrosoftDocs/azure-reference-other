@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # U-SQL Identifiers
-U-SQL identifiers are used to identify the objects in the [U-SQL metadata context](../USQL/securing-meta-data-objects.md). They can be composed of up to three parts parts: 
+U-SQL identifiers are used to identify the objects in the [U-SQL metadata context](../u-sql/securing-meta-data-objects.md). They can be composed of up to three parts parts: 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 Identifier :=                                                                                            
@@ -117,9 +117,9 @@ B.  The following script reads from the generated table and outputs the result:
 ```
 
 ### See Also
-* [U-SQL Concepts](../USQL/u-sql-concepts.md)
-* [U-SQL Language Reference](../USQL/u-sql-language-reference.md)
-* [C# Identifiers](../USQL/csharp-identifiers.md)
+* [U-SQL Concepts](../u-sql/u-sql-concepts.md)
+* [U-SQL Language Reference](../u-sql/u-sql-language-reference.md)
+* [C# Identifiers](../u-sql/csharp-identifiers.md)
 
 
 

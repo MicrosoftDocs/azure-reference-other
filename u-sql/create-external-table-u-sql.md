@@ -48,7 +48,7 @@ If the optional `IF NOT EXISTS` is specified, then the statement creates the tab
         <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
     </pre></td></tr></table>
  
-    Each column has an identifier that can be either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](../USQL/built-in-u-sql-types.md). Each column identifier has to match to one of the column identifiers in the external table and the external columns data type (e.g., the SQL type in the Azure SQL database) will be mapped to the specified U-SQL type. If the mapping is not supported, an error is raised.  
+    Each column has an identifier that can be either a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](../u-sql/built-in-u-sql-types.md). Each column identifier has to match to one of the column identifiers in the external table and the external columns data type (e.g., the SQL type in the Azure SQL database) will be mapped to the specified U-SQL type. If the mapping is not supported, an error is raised.  
 
 - <a name="table_external_spec"></a>**`Table_External_Specification`**  
   The external location where the data is managed is referenced with the following specification:
@@ -60,7 +60,7 @@ If the optional `IF NOT EXISTS` is specified, then the statement creates the tab
       <a href="u-sql-identifiers.md">DB_Object_Identifier</a>.
   </pre></td></tr></table>
  
-  The data source identifier is the name of the data source that has been created with the [CREATE DATA SOURCE](../USQL/create-data-source-u-sql.md) statement. The static string expression provided as the location determines the actual rowset resource in the external data source that is being mapped to the U-SQL external table.  
+  The data source identifier is the name of the data source that has been created with the [CREATE DATA SOURCE](../u-sql/create-data-source-u-sql.md) statement. The static string expression provided as the location determines the actual rowset resource in the external data source that is being mapped to the U-SQL external table.  
   
   If the data source is a SQL database, then the location is the schema-qualified name of a table or view in the SQL database. Its schema is mapped to the external table’s schema in the following way:   
   - Any name in the column definition is mapped to the same name in the external table. If the external table’s naming is case-sensitive then the names have to exactly match, if the naming is case-insensitive, then the names are matched case-insensitively.   
@@ -71,7 +71,7 @@ If the optional `IF NOT EXISTS` is specified, then the statement creates the tab
   An error is raised if the remote data source cannot be accessed, e.g., because the data source has disappeared, closed the firewall, or the credentials to access the remote data source have changed.  
   
 ### Example
-This example continues with the Data Source created from the example at [CREATE DATA SOURCE (U-SQL)](../USQL/create-data-source-u-sql.md).
+This example continues with the Data Source created from the example at [CREATE DATA SOURCE (U-SQL)](../u-sql/create-data-source-u-sql.md).
 ```
 // External Table - Create
 USE DATABASE TestReferenceDB;
@@ -96,10 +96,10 @@ USING Outputters.Csv();
 ```
   
 ### See Also
-* [U-SQL Tables](../USQL/u-sql-tables.md)  
-* [CREATE TABLE (U-SQL): Creating Managed Tables](../USQL/create-table-u-sql-creating-managed-tables.md) 
-* [CREATE TABLE (U-SQL): Creating a Table with Schema](../USQL/create-table-u-sql-creating-a-table-with-schema.md) 
-* [CREATE TABLE (U-SQL): Creating a Table from a Query](../USQL/create-table-u-sql-creating-a-table-from-a-query.md)  
-* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../USQL/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)  
-* [TRUNCATE TABLE (U-SQL)](../USQL/truncate-table-u-sql.md)  
-* [DROP TABLE (U-SQL)](../USQL/drop-table-u-sql.md)    
+* [U-SQL Tables](../u-sql/u-sql-tables.md)  
+* [CREATE TABLE (U-SQL): Creating Managed Tables](../u-sql/create-table-u-sql-creating-managed-tables.md) 
+* [CREATE TABLE (U-SQL): Creating a Table with Schema](../u-sql/create-table-u-sql-creating-a-table-with-schema.md) 
+* [CREATE TABLE (U-SQL): Creating a Table from a Query](../u-sql/create-table-u-sql-creating-a-table-from-a-query.md)  
+* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../u-sql/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)  
+* [TRUNCATE TABLE (U-SQL)](../u-sql/truncate-table-u-sql.md)  
+* [DROP TABLE (U-SQL)](../u-sql/drop-table-u-sql.md)    

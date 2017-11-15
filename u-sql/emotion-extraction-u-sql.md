@@ -49,7 +49,7 @@ For each JPEG file it gets applied to, this U-SQL extractor returns one row per 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- Ensure you have installed the cognitive assemblies, see [Registering Cognitive Extensions in U-SQL](../USQL/cognitive-capabilities-in-u-sql.md#registeringExtensions) for more information.
+- Ensure you have installed the cognitive assemblies, see [Registering Cognitive Extensions in U-SQL](../u-sql/cognitive-capabilities-in-u-sql.md#registeringExtensions) for more information.
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally) if you first download the assemblies locally, see [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/) for more information.
 An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - You will need images accessible to you ADLA or Local account.
@@ -113,9 +113,9 @@ USING Outputters.Tsv(outputHeader: true);
 
 
 ### See Also
-* [Built-in U-SQL System Objects and Extensions](../USQL/built-in-u-sql-system-objects-and-extensions.md)
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)
-* [Cognitive Capabilities in U-SQL](../USQL/cognitive-capabilities-in-u-sql.md)
-* [ImageExtractor (U-SQL)](../USQL/imageextractor-u-sql.md)
+* [Built-in U-SQL System Objects and Extensions](../u-sql/built-in-u-sql-system-objects-and-extensions.md)
+* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)
+* [Cognitive Capabilities in U-SQL](../u-sql/cognitive-capabilities-in-u-sql.md)
+* [ImageExtractor (U-SQL)](../u-sql/imageextractor-u-sql.md)
 
 

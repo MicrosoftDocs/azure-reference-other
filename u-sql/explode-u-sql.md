@@ -15,11 +15,11 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # EXPLODE (U-SQL)
-The EXPLODE rowset expression accepts an expression or value of either type [SQL.ARRAY](../USQL/complex-built-in-u-sql-types.md), [SQL.MAP](../USQL/complex-built-in-u-sql-types.md)  or IEnumerable and unpacks (explodes) the values into a rowset.  
+The EXPLODE rowset expression accepts an expression or value of either type [SQL.ARRAY](../u-sql/complex-built-in-u-sql-types.md), [SQL.MAP](../u-sql/complex-built-in-u-sql-types.md)  or IEnumerable and unpacks (explodes) the values into a rowset.  
   
-If EXPLODE is applied on an instance of [SQL.ARRAY](../USQL/complex-built-in-u-sql-types.md) \<T>, the resulting rowset contains a single column of type T where each item in the array is placed into its own row. If the array value was empty or null, then the resulting rowset is empty.  
+If EXPLODE is applied on an instance of [SQL.ARRAY](../u-sql/complex-built-in-u-sql-types.md) \<T>, the resulting rowset contains a single column of type T where each item in the array is placed into its own row. If the array value was empty or null, then the resulting rowset is empty.  
   
-If EXPLODE is applied on an instance of [SQL.MAP](../USQL/complex-built-in-u-sql-types.md) \<K,V>, the resulting rowset contains two columns of type K and V respectively where each key-value pair in the map is placed into its own row. If the map value was empty or null, then the resulting rowset is empty.
+If EXPLODE is applied on an instance of [SQL.MAP](../u-sql/complex-built-in-u-sql-types.md) \<K,V>, the resulting rowset contains two columns of type K and V respectively where each key-value pair in the map is placed into its own row. If the map value was empty or null, then the resulting rowset is empty.
   
 <table><th align="left">Syntax</th><tr><td><pre>
 Explode_Expression :=                                                                                    
@@ -94,7 +94,7 @@ The resulting rowset looks like:
 ### Additional Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../USQL/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 - Some of the examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
 
 **Dataset**  
@@ -141,7 +141,7 @@ USING Outputters.Csv();
 ```
 
 **ARRAY_AGG - Bonus Example**   
-This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [ARRAY_AGG](../USQL/array-agg-u-sql.md).
+This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [ARRAY_AGG](../u-sql/array-agg-u-sql.md).
 ```
 @result =
     SELECT EmpName,
@@ -176,7 +176,7 @@ USING Outputters.Csv();
 ```
 
 **MAP_AGG - Bonus Example**   
-This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [MAP_AGG](../USQL/map-agg-u-sql.md).
+This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [MAP_AGG](../u-sql/map-agg-u-sql.md).
 ```
 @result =
     SELECT EmpName,
@@ -606,11 +606,11 @@ USING Outputters.Csv();
 ```
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)
-* [FROM Clause (U-SQL)](../USQL/from-clause-u-sql.md)
-* [SELECT Expression (U-SQL)](../USQL/select-expression-u-sql.md) 
-* [U-SQL SELECT Selecting from CROSS APPLY and OUTER APPLY](../USQL/u-sql-select-selecting-from-cross-apply-and-outer-apply.md)  
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
-* [ARRAY_AGG (U-SQL)](../USQL/array-agg-u-sql.md)
-* [MAP_AGG (U-SQL)](../USQL/map-agg-u-sql.md)  
-* [Complex Built-In U-SQL Types](../USQL/complex-built-in-u-sql-types.md)
+* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)
+* [FROM Clause (U-SQL)](../u-sql/from-clause-u-sql.md)
+* [SELECT Expression (U-SQL)](../u-sql/select-expression-u-sql.md) 
+* [U-SQL SELECT Selecting from CROSS APPLY and OUTER APPLY](../u-sql/u-sql-select-selecting-from-cross-apply-and-outer-apply.md)  
+* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
+* [ARRAY_AGG (U-SQL)](../u-sql/array-agg-u-sql.md)
+* [MAP_AGG (U-SQL)](../u-sql/map-agg-u-sql.md)  
+* [Complex Built-In U-SQL Types](../u-sql/complex-built-in-u-sql-types.md)

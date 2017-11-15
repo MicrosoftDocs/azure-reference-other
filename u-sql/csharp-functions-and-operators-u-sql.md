@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # C# Functions and Operators (U-SQL)
-U-SQL’s core reliance on C#-for its [U-SQL type](../USQL/data-types-and-literals-u-sql.md) system and [U-SQL’s expression](../USQL/expressions-u-sql.md) language provides the query writer access to the wealth of the C# and CLR libraries of classes, methods, functions, operators and types. It would go beyond the scope of this documentation to repeat all C# functions and operators, so it will limit itself to a few examples of frequently used operators and functions and shows which system assemblies are already included. The section [REFERENCE SYSTEM ASSEMBLY](../USQL/reference-system-assembly-u-sql.md)   provides a list of all preloaded system assemblies and explains how to add additional system assemblies.  
+U-SQL’s core reliance on C#-for its [U-SQL type](../u-sql/data-types-and-literals-u-sql.md) system and [U-SQL’s expression](../u-sql/expressions-u-sql.md) language provides the query writer access to the wealth of the C# and CLR libraries of classes, methods, functions, operators and types. It would go beyond the scope of this documentation to repeat all C# functions and operators, so it will limit itself to a few examples of frequently used operators and functions and shows which system assemblies are already included. The section [REFERENCE SYSTEM ASSEMBLY](../u-sql/reference-system-assembly-u-sql.md)   provides a list of all preloaded system assemblies and explains how to add additional system assemblies.  
 
 All [C# operators](https://msdn.microsoft.com/library/6a71f45d.aspx) except for the assignment operators (=, += etc) are valid in U-SQL. In particular all comparison operators such as `==`, `!=`, `<`, `>` the ternary comparison `cond ? true-expression : false-expression`, the null coalesce operator `??` are supported. Even lambda expressions using `=>` can be used inside U-SQL expressions.  
 
@@ -1467,10 +1467,10 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [REFERENCE SYSTEM ASSEMBLY](../USQL/reference-system-assembly-u-sql.md)
+* [REFERENCE SYSTEM ASSEMBLY](../u-sql/reference-system-assembly-u-sql.md)
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx)   
-* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)  
-* [Built-in U-SQL UDOs](../USQL/built-in-u-sql-udos.md)  
+* [Built-in Functions (U-SQL)](../u-sql/built-in-functions-u-sql.md)  
+* [Built-in U-SQL UDOs](../u-sql/built-in-u-sql-udos.md)  
 
 
 

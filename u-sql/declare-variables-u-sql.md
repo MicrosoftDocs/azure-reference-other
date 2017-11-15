@@ -83,4 +83,4 @@ SET @var = "a value"
 ```
 
 ## See Also
-* [Using Variables (U-SQL)](../USQL/using-variables-u-sql.md)
+* [Using Variables (U-SQL)](../u-sql/using-variables-u-sql.md)

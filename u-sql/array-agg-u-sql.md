@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # ARRAY_AGG (U-SQL)
-The ARRAY_AGG aggregator creates a new [SQL.ARRAY](../USQL/complex-built-in-u-sql-types.md) value per group that will contain the values of group as its items.  ARRAY_AGG is not preserving order of values inside a group. If an array needs to be ordered, a LINQ OrderBy can be used.  ARRAY_AGG and [EXPLODE](../USQL/explode-u-sql.md) are conceptually inverse operations. 
+The ARRAY_AGG aggregator creates a new [SQL.ARRAY](../u-sql/complex-built-in-u-sql-types.md) value per group that will contain the values of group as its items.  ARRAY_AGG is not preserving order of values inside a group. If an array needs to be ordered, a LINQ OrderBy can be used.  ARRAY_AGG and [EXPLODE](../u-sql/explode-u-sql.md) are conceptually inverse operations. 
 
 The identity value is null. 
 
@@ -29,13 +29,13 @@ ARRAY_AGG_Expression :=
 Optionally allows to de-duplicate the values returned by the expression inside the group before aggregation.  
 
 * <a name="exp"></a>**`expression`**  
-The C# expression (including column references) that gets aggregated. The type of the expression has to be a [built-in U-SQL type](../USQL/built-in-u-sql-types.md), including [SQL.MAP](../USQL/complex-built-in-u-sql-types.md) or [SQL.ARRAY](../USQL/complex-built-in-u-sql-types.md). 
+The C# expression (including column references) that gets aggregated. The type of the expression has to be a [built-in U-SQL type](../u-sql/built-in-u-sql-types.md), including [SQL.MAP](../u-sql/complex-built-in-u-sql-types.md) or [SQL.ARRAY](../u-sql/complex-built-in-u-sql-types.md). 
 
 ### Return Type 
-[SQL.ARRAY](../USQL/complex-built-in-u-sql-types.md)\<T\> where T is the type of the input expression. 
+[SQL.ARRAY](../u-sql/complex-built-in-u-sql-types.md)\<T\> where T is the type of the input expression. 
 
 ### Usage in Windowing Expression
-This aggregator cannot be used in a [windowing expression](../USQL/over-expression-u-sql.md). 
+This aggregator cannot be used in a [windowing expression](../u-sql/over-expression-u-sql.md). 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -89,7 +89,7 @@ USING Outputters.Csv();
 ```
 
 **B. EXPLODE - bonus example**  
-This example does not use `ARRAY_AGG`; however, it illustrates how to reverse the outcome from the above example using [EXPLODE](../USQL/explode-u-sql.md).
+This example does not use `ARRAY_AGG`; however, it illustrates how to reverse the outcome from the above example using [EXPLODE](../u-sql/explode-u-sql.md).
 ```
 @result =
     SELECT EmpName,
@@ -110,7 +110,7 @@ USING Outputters.Csv();
 
 **C. ARRAY_AGG - additional example**   
 This example deals with a common many-to-many relationship. Here, a film can have more than one producer and you would like to have all producers listed in one record. The following query will aggregate all producers.   
-This example provides an alternative solution to [Using User Defined Aggregator - genericAggregator B](../USQL/extending-u-sql-expressions-with-user-code.md#genericAggB).
+This example provides an alternative solution to [Using User Defined Aggregator - genericAggregator B](../u-sql/extending-u-sql-expressions-with-user-code.md#genericAggB).
 ```
 @films = 
     SELECT * FROM 
@@ -166,7 +166,7 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)   
-* [GROUP BY and HAVING Clauses (U-SQL)](../USQL/group-by-and-having-clauses-u-sql.md) 
-* [EXPLODE (U-SQL)](../USQL/explode-u-sql.md) 
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
+* [Aggregate Functions (U-SQL)](../u-sql/aggregate-functions-u-sql.md)   
+* [GROUP BY and HAVING Clauses (U-SQL)](../u-sql/group-by-and-having-clauses-u-sql.md) 
+* [EXPLODE (U-SQL)](../u-sql/explode-u-sql.md) 
+* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 

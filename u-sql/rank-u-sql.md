@@ -21,7 +21,7 @@ If two or more rows tie for a rank, each tied rows receives the same rank and th
 
 The sort order that is used for the whole query determines the order in which the rows appear in a result set. 
 
-RANK can only be used in the context of a [windowing expression](../USQL/over-expression-u-sql.md). 
+RANK can only be used in the context of a [windowing expression](../u-sql/over-expression-u-sql.md). 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 RANK_Expression :=                                                                                       
@@ -29,13 +29,13 @@ RANK_Expression :=
 </pre></td></tr></table>
 
 ### Return Type 
-The return type is [long?](../USQL/numeric-types-and-literals.md). 
+The return type is [long?](../u-sql/numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression 
-This ranking function can be used in a [windowing expression](../USQL/over-expression-u-sql.md) with the following restrictions: 
+This ranking function can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) with the following restrictions: 
 
-* The [ORDER BY](../USQL/over-expression-u-sql.md#OBC) clause in the [OVER](../USQL/over-expression-u-sql.md) operator is required. 
-* The [ROWS](../USQL/over-expression-u-sql.md#row_cla) clause in the [OVER](../USQL/over-expression-u-sql.md) operator is not allowed. 
+* The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is required. 
+* The [ROWS](../u-sql/over-expression-u-sql.md#row_cla) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is not allowed. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -60,7 +60,7 @@ This ranking function can be used in a [windowing expression](../USQL/over-expre
 ```
 
 **A.  Ranking all rows in a result set**   
-The following example returns all employees ranked by his/her salary. Because a [PARTITION BY](../USQL/over-expression-u-sql.md#OPBC) clause was not specified, the `RANK` function was applied to all rows in the result set.
+The following example returns all employees ranked by his/her salary. Because a [PARTITION BY](../u-sql/over-expression-u-sql.md#OPBC) clause was not specified, the `RANK` function was applied to all rows in the result set.
 ```
 @result =
     SELECT *,
@@ -86,6 +86,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [DENSE_RANK (U-SQL)](../USQL/dense-rank-u-sql.md)
-* [Ranking Functions (U-SQL)](../USQL/ranking-functions-u-sql.md)  
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
+* [DENSE_RANK (U-SQL)](../u-sql/dense-rank-u-sql.md)
+* [Ranking Functions (U-SQL)](../u-sql/ranking-functions-u-sql.md)  
+* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 

@@ -34,7 +34,7 @@ Table_Name :=
 
 ### Semantics of Syntax Elements    
 -   <a name="stat_name_tbl"></a>**`Statistic_Name ON Table_Name`**  
-    Specifies the name (either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md)) of the statistic of the given table to be dropped.  
+    Specifies the name (either a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md)) of the statistic of the given table to be dropped.  
   
 -   <a name="IE"></a>**`IF EXISTS`**  
     If the statistic does not exist or the user does not have permissions, then an error is raised, unless `IF EXISTS` is specified. In that case, if the user has at least enumeration permission on the table, the operation will silently complete without action. If the user has no enumeration permission, an error is raised.  
@@ -49,6 +49,6 @@ DROP STATISTICS IF EXISTS ordersStats ON TestReferenceDB.dbo.Orders;
 ```
   
 ### See Also
--  [CREATE STATISTICS (U-SQL)](../USQL/create-statistics-u-sql.md)
--  [UPDATE STATISTICS (U-SQL)](../USQL/update-statistics-u-sql.md)
-- [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)  
+-  [CREATE STATISTICS (U-SQL)](../u-sql/create-statistics-u-sql.md)
+-  [UPDATE STATISTICS (U-SQL)](../u-sql/update-statistics-u-sql.md)
+- [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)  

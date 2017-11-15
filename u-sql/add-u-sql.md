@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # + (Add) (U-SQL)
-Adds two [numbers](../USQL/numeric-types-and-literals.md), [temporal types](../USQL/temporal-types-and-literals.md), or concatenates two [strings](../USQL/textual-types-and-literals.md).
+Adds two [numbers](../u-sql/numeric-types-and-literals.md), [temporal types](../u-sql/temporal-types-and-literals.md), or concatenates two [strings](../u-sql/textual-types-and-literals.md).
 
 <table><th>Syntax</th><tr><td><pre>
 Add_Operator :=                                                                                          
@@ -85,7 +85,7 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Operators (U-SQL)](../USQL/operators-u-sql.md)
-* [Date & Time](../USQL/csharp-functions-and-operators-u-sql.md#DateTime)
-* [Simple Built-In U-SQL Types](../USQL/simple-built-in-u-sql-types.md)
+* [Operators (U-SQL)](../u-sql/operators-u-sql.md)
+* [Date & Time](../u-sql/csharp-functions-and-operators-u-sql.md#DateTime)
+* [Simple Built-In U-SQL Types](../u-sql/simple-built-in-u-sql-types.md)
 

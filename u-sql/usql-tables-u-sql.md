@@ -16,11 +16,11 @@ manager: "jhubbard"
 ---
 # usql.tables (U-SQL)
 
-Returns a row for each table belonging to the schemas in the current database context. The schema inherits the columns from the [usql.objects](../USQL/usql-objects-u-sql.md) and adds the table specific properties to it.
+Returns a row for each table belonging to the schemas in the current database context. The schema inherits the columns from the [usql.objects](../u-sql/usql-objects-u-sql.md) and adds the table specific properties to it.
 
 Column name  |Data type  |Description  
 ---------|---------|---------
-\<inherited columns>     |         |For a list of columns that this view inherits, see [usql.objects](../USQL/usql-objects-u-sql.md).         
+\<inherited columns>     |         |For a list of columns that this view inherits, see [usql.objects](../u-sql/usql-objects-u-sql.md).         
 is_external     |bool         |Indicates if this is an external table         
 data_source_id_guid     |Guid?         |Data Source ID if the table is external, otherwise null         
 
@@ -52,9 +52,9 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 ### See Also
-* [Catalog Views (U-SQL)](../USQL/catalog-views-u-sql.md)
-* [usql.objects (U-SQL)](../USQL/usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)
+* [Catalog Views (U-SQL)](../u-sql/catalog-views-u-sql.md)
+* [usql.objects (U-SQL)](../u-sql/usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)
 
 
 

@@ -45,8 +45,8 @@ DROP TABLE IF EXISTS TestReferenceDB..SampleTable;
 CREATE TABLE TestReferenceDB..SampleTable AS (id int);  
 ```  
 ### See Also  
-* [U-SQL Tables](../USQL/u-sql-tables.md) 
-* [CREATE TABLE (U-SQL): Overview](../USQL/create-table-u-sql-overview.md)  
-* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../USQL/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
-* [TRUNCATE TABLE (U-SQL)](../USQL/truncate-table-u-sql.md) 
+* [U-SQL Tables](../u-sql/u-sql-tables.md) 
+* [CREATE TABLE (U-SQL): Overview](../u-sql/create-table-u-sql-overview.md)  
+* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../u-sql/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
+* [TRUNCATE TABLE (U-SQL)](../u-sql/truncate-table-u-sql.md) 
   

@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # EXTRACT Expression (U-SQL)
-One of U-SQL’s core capabilities is to be able to schematize unstructured data on the fly without having to create a metadata object for it. This capability is provided by the EXTRACT expression that will invoke either a [user-defined extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) or [built-in extractor](../USQL/built-in-u-sql-udos.md) to process the input file or set of files specified in the FROM clause and produces a rowset whose schema is specified in the EXTRACT clause.  
+One of U-SQL’s core capabilities is to be able to schematize unstructured data on the fly without having to create a metadata object for it. This capability is provided by the EXTRACT expression that will invoke either a [user-defined extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) or [built-in extractor](../u-sql/built-in-u-sql-udos.md) to process the input file or set of files specified in the FROM clause and produces a rowset whose schema is specified in the EXTRACT clause.  
   
 The processing of the extraction is done in parallel unless otherwise specified by the extractor. Even a single file will be split into parts which then are processed in parallel. The degree of parallelism depends on how big the files are, how many files there are, what the job’s specified degree of parallelism is etc. For more information about the processing model of extractors, please refer to the the [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide).  
 
@@ -43,19 +43,19 @@ This list defines the schema of the extraction. The extracted columns are define
         <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
     </pre></td></tr></table>
     
-    Each column has an identifier that can be either an unquoted or quoted identifier which is typed with one of the [built-in U-SQL types](../USQL/built-in-u-sql-types.md) and has to be supported by the extractor.  
+    Each column has an identifier that can be either an unquoted or quoted identifier which is typed with one of the [built-in U-SQL types](../u-sql/built-in-u-sql-types.md) and has to be supported by the extractor.  
   
     If the files are being specified with a file set, then the column definition list also needs to include the so-called virtual columns that are being used in the file set pattern in the EXTRACT’s FROM clause and the specification of their types.  
   
 - <a name="efc"></a>**`Extract_From_Clause`**   
-  The EXTRACT’s FROM clause designates the source of the data that needs to be extracted in form of an [Input_File_Path](../USQL/input-files-u-sql.md) that is either a file path, a comma-separated list of file paths, or a pattern over a set of files (follow the link for more details on the different supported file paths and patterns):
+  The EXTRACT’s FROM clause designates the source of the data that needs to be extracted in form of an [Input_File_Path](../u-sql/input-files-u-sql.md) that is either a file path, a comma-separated list of file paths, or a pattern over a set of files (follow the link for more details on the different supported file paths and patterns):
 
   <table><th>Syntax</th><tr><td><pre>
   Extract_From_Clause :=                                                                              
       'FROM' <a href="input-files-u-sql.md">Input_File_Path</a>.
   </pre></td></tr></table>
   
-  The [Input_File_Path](../USQL/input-files-u-sql.md) is specified as a string literal, a reference to a string typed variable or a constant foldable expression.  
+  The [Input_File_Path](../u-sql/input-files-u-sql.md) is specified as a string literal, a reference to a string typed variable or a constant foldable expression.  
   
 - <a name="us_cl"></a>**`USING_Clause`**  
   The USING clause specifies which extractor should be used to turn the file(s) into a rowset.
@@ -65,7 +65,7 @@ This list defines the schema of the extraction. The extracted columns are define
       'USING' udo_expression.
   </pre></td></tr></table>
 
-  It takes a C# expression that returns an instance of `IExtractor`. U-SQL provides a small set of predefined extractors for common text formats and users can write their own by implementing an `IExtractor`, see [U-SQL Programmability Guide: User-Defined Extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) for more detail on how to write your own extractor. The built-in extractors are part of the built-in `Extractors` namespace. See [U-SQL Built-in Extractors](../USQL/u-sql-built-in-extractors.md) for more information on the built-in extractors and their arguments.  
+  It takes a C# expression that returns an instance of `IExtractor`. U-SQL provides a small set of predefined extractors for common text formats and users can write their own by implementing an `IExtractor`, see [U-SQL Programmability Guide: User-Defined Extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) for more detail on how to write your own extractor. The built-in extractors are part of the built-in `Extractors` namespace. See [U-SQL Built-in Extractors](../u-sql/u-sql-built-in-extractors.md) for more information on the built-in extractors and their arguments.  
   
 ### Extraction from compressed data    
 In general, the files are passed as is to the UDO. One exception is that `EXTRACT` will recognize GZip compressed files with the file extension `.gz` and automatically decompress them as part of the extraction process. The actual UDO will see the uncompressed data. For any other compression scheme, users will have to write their own custom extractor.  Note that U-SQL has an upper limit of 4GB on a GZip compressed file. If you apply your `EXTRACT` expression to a file larger than this limit, the error `E_RUNTIME_USER_MAXCOMPRESSEDFILESIZE` is being raised during the **compilation** of the job.
@@ -73,7 +73,7 @@ In general, the files are passed as is to the UDO. One exception is that `EXTRAC
 ### Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The first example below use the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../USQL/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 
 **Using Built-In Extractor**     
@@ -92,7 +92,7 @@ The following EXTRACT expression schematizes the file SearchLog.txt in the /Samp
 ```
 
 **Extractor with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](../USQL/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 ```
 // Only extracts top 10 records by Start date
 @searchlog =  
@@ -715,11 +715,11 @@ USING Outputters.Csv();
 ```  
   
 ### See Also 
-* [U-SQL Built-in Extractors](../USQL/u-sql-built-in-extractors.md) 
-* [Input Files (U-SQL)](../USQL/input-files-u-sql.md) 
-* [Data Modification Language (DML) Statements (U-SQL)](../USQL/data-modification-language-dml-statements-u-sql.md)    
-* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
+* [U-SQL Built-in Extractors](../u-sql/u-sql-built-in-extractors.md) 
+* [Input Files (U-SQL)](../u-sql/input-files-u-sql.md) 
+* [Data Modification Language (DML) Statements (U-SQL)](../u-sql/data-modification-language-dml-statements-u-sql.md)    
+* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)  
-* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)  
+* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 

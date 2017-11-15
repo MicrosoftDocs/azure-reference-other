@@ -32,10 +32,10 @@ Optionally allows to de-duplicate the values returned by the expression inside t
 The C# expression (including column references) that gets aggregated. The type of the expression has to be a numeric type or an error is raised. 
 
 ### Return Type 
-The return type is [double?](../USQL/numeric-types-and-literals.md). 
+The return type is [double?](../u-sql/numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression 
-This aggregator can be used in a [windowing expression](../USQL/over-expression-u-sql.md) without any additional restrictions. 
+This aggregator can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) without any additional restrictions. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -71,7 +71,7 @@ USING Outputters.Csv();
 ```
 
 **B.    STDEV per group**   
-The following query determines the salary standard deviation for each department with the [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) clause.
+The following query determines the salary standard deviation for each department with the [GROUP BY](../u-sql/group-by-and-having-clauses-u-sql.md) clause.
 ```
 @result =
     SELECT DeptName,
@@ -85,7 +85,7 @@ USING Outputters.Csv();
 ```
 
 **C.    STDEV with OVER()**   
-The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows.  The query determines the salary standard deviation over the window - all employees.
+The [OVER](../u-sql/over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows.  The query determines the salary standard deviation over the window - all employees.
 ```
 @result =
     SELECT EmpName,
@@ -98,7 +98,7 @@ USING Outputters.Csv();
 ```
 
 **D.    STDEV over a defined window using OVER()**   
-The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, `Salary`, and the salary standard deviation over the window - `DeptName`.
+The [OVER](../u-sql/over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, `Salary`, and the salary standard deviation over the window - `DeptName`.
 ```
 @result =
     SELECT EmpName,
@@ -113,7 +113,7 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)   
-* [STDEVP (U-SQL)](../USQL/stdevp-u-sql.md)  
-* [GROUP BY and HAVING Clauses (U-SQL)](../USQL/group-by-and-having-clauses-u-sql.md)
-* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
+* [Aggregate Functions (U-SQL)](../u-sql/aggregate-functions-u-sql.md)   
+* [STDEVP (U-SQL)](../u-sql/stdevp-u-sql.md)  
+* [GROUP BY and HAVING Clauses (U-SQL)](../u-sql/group-by-and-having-clauses-u-sql.md)
+* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 

@@ -34,7 +34,7 @@ Create_View_Statement :=
 -   <a name="qry_exp"></a>**`Query_Expression`**  
     The query expression defines the view’s schema and defines the query that will be executed every time the view gets referenced in a query.  
   
-    The query expression is not allowed to refer to variables or user-defined objects like [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf), [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) or [user-defined types](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-user-defined-types---udt). Currently, the creation of the view will succeed, but subsequent invocations of the view will raise errors if they refer to variables or user-defined objects. Please use [table-valued functions](../USQL/u-sql-table-valued-functions.md) instead, if you need to use user-defined functions, operators or types.
+    The query expression is not allowed to refer to variables or user-defined objects like [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf), [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) or [user-defined types](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-user-defined-types---udt). Currently, the creation of the view will succeed, but subsequent invocations of the view will raise errors if they refer to variables or user-defined objects. Please use [table-valued functions](../u-sql/u-sql-table-valued-functions.md) instead, if you need to use user-defined functions, operators or types.
       
 ### Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -71,6 +71,6 @@ CREATE VIEW SearchlogView AS
 ```
 
 ### See Also    
-- [U-SQL Views](../USQL/u-sql-views.md) 
-- [DROP VIEW (U-SQL)](../USQL/drop-view-u-sql.md)
-- [U-SQL Functions](../USQL/u-sql-functions.md)  
+- [U-SQL Views](../u-sql/u-sql-views.md) 
+- [DROP VIEW (U-SQL)](../u-sql/drop-view-u-sql.md)
+- [U-SQL Functions](../u-sql/u-sql-functions.md)  
