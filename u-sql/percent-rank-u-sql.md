@@ -15,15 +15,15 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # PERCENT_RANK (U-SQL)
-The PERCENT_RANK analytic function calculates the relative rank of a row within a group of rows specified by the [windowing expression](../u-sql/over-expression-u-sql.md).  
+The PERCENT_RANK analytic function calculates the relative rank of a row within a group of rows specified by the [windowing expression](over-expression-u-sql.md).  
 
 The range of values returned by PERCENT_RANK is greater than or equal to 0 and less than or equal to 1. The first row in any set has a PERCENT_RANK of 0. NULL values are included by default and are treated as the highest possible values. 
 
 Use PERCENT_RANK to evaluate the relative standing of a value within the window.  
 
-PERCENT_RANK is similar to the [CUME_DIST](../u-sql/cume-dist-u-sql.md) function. 
+PERCENT_RANK is similar to the [CUME_DIST](cume-dist-u-sql.md) function. 
 
-PERCENT_RANK can only be used in the context of the [OVER](../u-sql/over-expression-u-sql.md) expression. 
+PERCENT_RANK can only be used in the context of the [OVER](over-expression-u-sql.md) expression. 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 PERCENT_RANK_Expression :=                                                                               
@@ -31,11 +31,11 @@ PERCENT_RANK_Expression :=
 </pre></td></tr></table>
 
 ### Return Type 
-The return type is [double?](../u-sql/numeric-types-and-literals.md). 
+The return type is [double?](numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression  
-This analytic function can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) with the following restrictions: 
-* The [ROWS](../u-sql/over-expression-u-sql.md#row_cla) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is not allowed. 
+This analytic function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
+* The [ROWS](over-expression-u-sql.md#row_cla) clause in the [OVER](over-expression-u-sql.md) operator is not allowed. 
 
 ### Example
 - The example can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -59,7 +59,7 @@ This analytic function can be used in a [windowing expression](../u-sql/over-exp
 ```
 
 **Using PERCENT_RANK**   
-The `PERCENT_RANK` function computes the rank of the employee's salary within a department as a percentage.  The [PARTITION BY](../u-sql/over-expression-u-sql.md#OPBC) clause is specified to partition the rows in the result set by department.  The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the [OVER](../u-sql/over-expression-u-sql.md) clause orders the rows in each partition. 
+The `PERCENT_RANK` function computes the rank of the employee's salary within a department as a percentage.  The [PARTITION BY](over-expression-u-sql.md#OPBC) clause is specified to partition the rows in the result set by department.  The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) clause orders the rows in each partition. 
 ```
 @result =
     SELECT *,
@@ -72,9 +72,9 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Analytic Functions (U-SQL)](../u-sql/analytic-functions-u-sql.md)   
-* [CUME_DIST (U-SQL)](../u-sql/cume-dist-u-sql.md)  
-* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 
+* [Analytic Functions (U-SQL)](analytic-functions-u-sql.md)   
+* [CUME_DIST (U-SQL)](cume-dist-u-sql.md)  
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 
 
 
 

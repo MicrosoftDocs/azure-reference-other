@@ -15,16 +15,16 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Arithmetic Operators (U-SQL)
-Arithmetic operators perform mathematical operations on two expressions of one or more of the data types of the numeric data type category. For more information about data type categories, see [Numeric Types and Literals](../u-sql/numeric-types-and-literals.md).
+Arithmetic operators perform mathematical operations on two expressions of one or more of the data types of the numeric data type category. For more information about data type categories, see [Numeric Types and Literals](numeric-types-and-literals.md).
 
 |Operator|Meaning|
 |--|--|
-|[+ (Add)](../u-sql/add-u-sql.md)|Addition|
-|[- (Subtract)](../u-sql/subtract-u-sql.md)|Subtraction|
-|[* (Multiply)](../u-sql/multiply-u-sql.md)|Multiplication|
-|[/ (Divide)](../u-sql/divide-u-sql.md)|Division|
-|[% (Modulo)](../u-sql/modulo-u-sql.md)|Returns the integer remainder of a division.| 
+|[+ (Add)](add-u-sql.md)|Addition|
+|[- (Subtract)](subtract-u-sql.md)|Subtraction|
+|[* (Multiply)](multiply-u-sql.md)|Multiplication|
+|[/ (Divide)](divide-u-sql.md)|Division|
+|[% (Modulo)](modulo-u-sql.md)|Returns the integer remainder of a division.| 
 
 ### See Also    
-* [Numeric Types and Literals](../u-sql/numeric-types-and-literals.md)
+* [Numeric Types and Literals](numeric-types-and-literals.md)
 

@@ -42,7 +42,7 @@ Get-AzureRmDataLakeAnalyticsCatalogItem -Account $DataLakeAnalyticsAccount -Path
 ```
   
 ### See Also
-* [CREATE PROCEDURE (U-SQL)](../u-sql/create-procedure-u-sql.md)  
-* [DROP PROCEDURE (U-SQL)](../u-sql/drop-procedure-u-sql.md)  
-* [Calling a Procedure (U-SQL)](../u-sql/calling-a-procedure-u-sql.md)  
+* [CREATE PROCEDURE (U-SQL)](create-procedure-u-sql.md)  
+* [DROP PROCEDURE (U-SQL)](drop-procedure-u-sql.md)  
+* [Calling a Procedure (U-SQL)](calling-a-procedure-u-sql.md)  
  

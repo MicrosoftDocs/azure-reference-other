@@ -47,5 +47,5 @@ c"
 The maximal size of a column of type string is 128kB in U-SQL (based on the byte count of the string value represented in UTF-8 encoding). 
 
 ### See Also
-* [Simple Built-In U-SQL Types](../u-sql/simple-built-in-u-sql-types.md)
-* [Data Types and Literals (U-SQL)](../u-sql/data-types-and-literals-u-sql.md)  
+* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
+* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md)  

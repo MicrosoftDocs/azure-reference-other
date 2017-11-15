@@ -15,9 +15,9 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # LAST_VALUE (U-SQL)
-The LAST_VALUE analytic function returns the last value in an ordered set of values provided by the [windowing expression](../u-sql/over-expression-u-sql.md). 
+The LAST_VALUE analytic function returns the last value in an ordered set of values provided by the [windowing expression](over-expression-u-sql.md). 
 
-LAST_VALUE can only be used in the context of a [windowing expression](../u-sql/over-expression-u-sql.md). 
+LAST_VALUE can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 LAST_VALUE_Expression :=                                                                                 
@@ -33,9 +33,9 @@ The expression for which the last value gets calculated for the window.
 The nullable type of the input. 
 
 ### Usage in Windowing Expression 
-This analytic function can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) with the following restrictions: 
+This analytic function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
 
-* The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is required. 
+* The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) operator is required. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -74,7 +74,7 @@ USING Outputters.Csv();
 ```
 
 **B.    Using LAST_VALUE over partitions**   
-The following example uses `LAST_VALUE` to return the lowest paid employee compared to other employees within the same department.  The [PARTITION BY](../u-sql/over-expression-u-sql.md#OPBC) clause partitions the employees by department and the `LAST_VALUE` function is applied to each partition independently.  The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause specified in the [OVER](../u-sql/over-expression-u-sql.md) clause determines the logical order in which the `LAST_VALUE` function is applied to the rows in each partition.
+The following example uses `LAST_VALUE` to return the lowest paid employee compared to other employees within the same department.  The [PARTITION BY](over-expression-u-sql.md#OPBC) clause partitions the employees by department and the `LAST_VALUE` function is applied to each partition independently.  The [ORDER BY](over-expression-u-sql.md#OBC) clause specified in the [OVER](over-expression-u-sql.md) clause determines the logical order in which the `LAST_VALUE` function is applied to the rows in each partition.
 ```
 @result =
     SELECT DeptName,
@@ -107,5 +107,5 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Analytic Functions (U-SQL)](../u-sql/analytic-functions-u-sql.md)  
-* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 
+* [Analytic Functions (U-SQL)](analytic-functions-u-sql.md)  
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 

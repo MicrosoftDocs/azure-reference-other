@@ -87,12 +87,12 @@ USING json = [Microsoft.Analytics.Samples.Formats.Json.JsonExtractor];
 
 **Additional Examples**   
 See the examples under:
-* [Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies)
-* [REFERENCE ASSEMBLY (U-SQL)](../u-sql/reference-assembly-u-sql.md)
+* [Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies)
+* [REFERENCE ASSEMBLY (U-SQL)](reference-assembly-u-sql.md)
 
 
 ### See Also
-* [U-SQL Assemblies](../u-sql/u-sql-assemblies.md)  
-* [Built-in Functions (U-SQL)](../u-sql/built-in-functions-u-sql.md)  
+* [U-SQL Assemblies](u-sql-assemblies.md)  
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)
-* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)

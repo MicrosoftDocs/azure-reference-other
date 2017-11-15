@@ -17,7 +17,7 @@ manager: "jhubbard"
 # Data Modification Language (DML) Statements (U-SQL)
 U-SQL currently only provides a limited set of statements that persist data and no statement that directly changes persisted data.  
   
-U-SQL offers the ability to persist data either as unstructured files with the [OUTPUT](../u-sql/output-statement-u-sql.md) statement or as rows inside structured managed tables with either the [INSERT](../u-sql/insert-u-sql.md) statement or while creating a table from a query result with [CREATE TABLE … AS](../u-sql/create-table-u-sql-creating-a-table-from-a-query.md).  
+U-SQL offers the ability to persist data either as unstructured files with the [OUTPUT](output-statement-u-sql.md) statement or as rows inside structured managed tables with either the [INSERT](insert-u-sql.md) statement or while creating a table from a query result with [CREATE TABLE … AS](create-table-u-sql-creating-a-table-from-a-query.md).  
   
 If data that already is in a table needs to be updated, the table needs to be recomputed.
   
@@ -28,8 +28,8 @@ DML_Statement :=
 </pre></td></tr></table>
   
 ### See Also
-* [INSERT (U-SQL)](../u-sql/insert-u-sql.md) 
-* [OUTPUT Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
-* [CREATE TABLE (U-SQL): Creating a Table from a Query](../u-sql/create-table-u-sql-creating-a-table-from-a-query.md)   
-* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)
+* [INSERT (U-SQL)](insert-u-sql.md) 
+* [OUTPUT Statement (U-SQL)](output-statement-u-sql.md)  
+* [CREATE TABLE (U-SQL): Creating a Table from a Query](create-table-u-sql-creating-a-table-from-a-query.md)   
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
 

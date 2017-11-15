@@ -17,11 +17,11 @@ manager: "jhubbard"
 # SELECT Expression (U-SQL)
 The SELECT expression is the transformation and query workhorse. It basically follows the standard SQL SELECT expression.  
   
-The logical processing flow of a SELECT expression is as follows: First the rowsets specified in the SELECT’s FROM clause will be combined into the SELECT expression’s rowset. Then the optional WHERE clause’s filter conditions are applied onto the rowset. The [GROUP BY](../u-sql/group-by-and-having-clauses-u-sql.md) clause is then producing groups of rows, optionally filtered with the HAVING clause. The [SELECT clause](../u-sql/select-clause-u-sql.md) then projects the specified columns and allows aggregating the grouped data as well as transforming the selected data. 
+The logical processing flow of a SELECT expression is as follows: First the rowsets specified in the SELECT’s FROM clause will be combined into the SELECT expression’s rowset. Then the optional WHERE clause’s filter conditions are applied onto the rowset. The [GROUP BY](group-by-and-having-clauses-u-sql.md) clause is then producing groups of rows, optionally filtered with the HAVING clause. The [SELECT clause](select-clause-u-sql.md) then projects the specified columns and allows aggregating the grouped data as well as transforming the selected data. 
   
 Note that unlike in other systems, where a SELECT clause can output results to the user at any time, U-SQL’s current batch-mode centric execution model never outputs a SELECT result directly. Instead, a SELECT expression is always assigned to a rowset expression variable and in the end the script results needs to either be output into files or inserted into tables.  
 
-For ordered output, use the [ORDER BY](../u-sql/output-statement-u-sql.md#OBOFC) clause on the [OUTPUT](../u-sql/output-statement-u-sql.md) statement.
+For ordered output, use the [ORDER BY](output-statement-u-sql.md#OBOFC) clause on the [OUTPUT](output-statement-u-sql.md) statement.
 
 <table><th align="left">Syntax</th><tr><td><pre>
 Select_Expression :=                                                                                     
@@ -33,22 +33,22 @@ Select_Expression :=
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    
--   [**`Select_Clause`**](../u-sql/select-clause-u-sql.md)  
+-   [**`Select_Clause`**](select-clause-u-sql.md)  
     The `SELECT` clause specifies the resulting structure and values of the rowset of the `SELECT` expression.  
   
--   [**`Select_From_Clause`**](../u-sql/from-clause-u-sql.md)  
+-   [**`Select_From_Clause`**](from-clause-u-sql.md)  
     The `FROM` clause specifies the input rowsets to the `SELECT` expression and how the rowsets are being combined into the `SELECT` expression’s rowset.  
   
--   [**`Where_Clause`**](../u-sql/where-clause-u-sql.md)   
+-   [**`Where_Clause`**](where-clause-u-sql.md)   
     The optional `WHERE` clause specifies the filter conditions of the `SELECT` expression which will reduces the rows that are being produced as a result.  
   
--   [**`Group_By_Clause`**](../u-sql/group-by-and-having-clauses-u-sql.md)    
+-   [**`Group_By_Clause`**](group-by-and-having-clauses-u-sql.md)    
     The optional `GROUP BY` clause groups the rows based on the provided expression list into groups that then can be aggregated over with the built-in and user-defined aggregator functions.  
   
  
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md) 
-* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)   
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md) 
-* [ORDER BY and OFFSET/FETCH Clause (U-SQL)](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) 
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
+* [Output Statement (U-SQL)](output-statement-u-sql.md) 
+* [ORDER BY and OFFSET/FETCH Clause (U-SQL)](order-by-and-offset-fetch-clause-u-sql.md) 
  

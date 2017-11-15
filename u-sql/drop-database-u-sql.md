@@ -29,7 +29,7 @@ Drop_Database_Statement :=
   
 ### Semantics of Syntax Elements  
 -   <a name="DB_Name"></a>**`DB_Name`**   
-    Specifies the name of the database to be dropped in form of a [quoted or unquoted U-SQL identifier](../u-sql/u-sql-identifiers.md). If a database of the given name does not exist or the user has no permissions to drop a database, an error is raised.   
+    Specifies the name of the database to be dropped in form of a [quoted or unquoted U-SQL identifier](u-sql-identifiers.md). If a database of the given name does not exist or the user has no permissions to drop a database, an error is raised.   
   
 -   <a name="iff_e"></a>**`IF EXISTS`**   
     If the optional `IF EXISTS` is specified, then the statement drops the database if it already exists, or succeeds without changes if the database does not exist or the user has no permission to at least enumerate all existing databases.  
@@ -47,6 +47,6 @@ DROP DATABASE IF EXISTS TestReferenceDB;
 ```
   
 ### See Also    
-* [U-SQL Databases](../u-sql/u-sql-databases.md)  
-* [CREATE DATABASE (U-SQL)](../u-sql/create-database-u-sql.md)
-* [USE DATABASE (U-SQL)](../u-sql/use-database-u-sql.md)
+* [U-SQL Databases](u-sql-databases.md)  
+* [CREATE DATABASE (U-SQL)](create-database-u-sql.md)
+* [USE DATABASE (U-SQL)](use-database-u-sql.md)

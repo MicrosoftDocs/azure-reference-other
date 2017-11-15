@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # IMPORT PACKAGE (U-SQL)
-The `IMPORT PACKAGE` statement will import all the [assembly references](../u-sql/u-sql-assemblies.md), variable declarations and resource deployments exported by the specified package. The package identifier will be resolved in the static context of its invocation and can refer to a package in the current account or a different Azure Data Lake Analytics account. The optional arguments can be used inside the package.
+The `IMPORT PACKAGE` statement will import all the [assembly references](u-sql-assemblies.md), variable declarations and resource deployments exported by the specified package. The package identifier will be resolved in the static context of its invocation and can refer to a package in the current account or a different Azure Data Lake Analytics account. The optional arguments can be used inside the package.
 
 If conflicting assemblies or references are being referenced, imported or deployed, errors are raised once a package gets imported in the main U-SQL script.
 
@@ -33,7 +33,7 @@ The optional package alias must be used when referring to variables imported fro
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples utilize the packages created from [CREATE PACKAGE (U-SQL)](../u-sql/create-package-u-sql.md).
+- The examples utilize the packages created from [CREATE PACKAGE (U-SQL)](create-package-u-sql.md).
 
 The following script uses the now the previously defined package `XMLorJSON` from database `TestReferenceDB` with the parameter `xml` and parses the XML file that was provided in the package's `@xmlfile` variable. Please note that the file deployment will occur as well, but is not really required for this script to work.
 ```
@@ -67,5 +67,5 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [CREATE PACKAGE (U-SQL)](../u-sql/create-package-u-sql.md)
-* [DROP PACKAGE (U-SQL)](../u-sql/drop-package-u-sql.md)  
+* [CREATE PACKAGE (U-SQL)](create-package-u-sql.md)
+* [DROP PACKAGE (U-SQL)](drop-package-u-sql.md)  

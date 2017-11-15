@@ -18,7 +18,7 @@ manager: "jhubbard"
 U-SQL provides the `CREATE DATA SOURCE` statement to create a data source.  Data Sources give U-SQL the ability to query data from other data sources such as other databases. It contains the connection information as well as information about its capabilities to execute query expressions passed and translated from U-SQL to the its local query engine. For example, U-SQL allows to create a data source on an Azure SQL Database which then allows U-SQL queries to select from tables in that database. 
 
 > [!NOTE]
-> In order for the data source to be accessible in [federated queries](../u-sql/u-sql-select-selecting-from-an-external-rowset.md), the firewall rules of the external data source has to provide access to the Azure Data Lake Analytics machines. See the descriptions under [External_Source](#ex_src) for more details. 
+> In order for the data source to be accessible in [federated queries](u-sql-select-selecting-from-an-external-rowset.md), the firewall rules of the external data source has to provide access to the Azure Data Lake Analytics machines. See the descriptions under [External_Source](#ex_src) for more details. 
   
 <table><th align="left">Syntax</th><tr><td><pre>
 Create_Datasource_Statement :=                                                                           
@@ -54,7 +54,7 @@ Create_Datasource_Statement :=
   - **AZURESQLDB and AZURESQLDW**  
     Configure the SQL Server (not the database) firewall to allow access to Azure Services. The following screenshot shows the option:  
 
-    ![Azure SQL DB Firewall Settings](../u-sql/media/u-sql-azuresqldbfirewallsetting.png)
+    ![Azure SQL DB Firewall Settings](media/u-sql-azuresqldbfirewallsetting.png)
 
   - **SQLSERVER**  
     Configure the Azure VM firewall to open the SQL Server endpoint to the IP range specific to your data region where you are running your U-SQL scripts for SQL Server traffic.   To identify your region, see the [Review Region](#region) example further below.
@@ -70,7 +70,7 @@ Create_Datasource_Statement :=
   
     For example, the following screenshot show an example configuration when configuring an Azure VM with SQL Server for the US East 2 region:
 
-    ![SQL Server Azure VM Firewall Setting](../u-sql/media/u-sql-sqlserverazurevmfirewallsetting.png) 
+    ![SQL Server Azure VM Firewall Setting](media/u-sql-sqlserverazurevmfirewallsetting.png) 
 
     If, after this configuration, the following error is raised when querying a SQLSERVER data source:
   
@@ -137,10 +137,10 @@ Create_Datasource_Statement :=
     Any option that is not listed in the tables above or provided by means of the CREDENTIAL object will be set to its default value according to the [SqlConnection.ConnectionString Property](https://msdn.microsoft.com/library/system.data.sqlclient.sqlconnection.connectionstring%28v=vs.110%29.aspx) documentation.  
   
   - <a name="rmv_typ"></a>**`REMOTABLE_TYPES`**   
-    The `REMOTABLE_TYPES` option specifies the list of [simple built-in U-SQL types](../u-sql/simple-built-in-u-sql-types.md)  for which the U-SQL query evaluation will push supported expressions to the external data source. For example, if the option specifies `int` and `string` as a remotable type but not `double` then comparisons, some known string expressions and other supported expressions on columns mapped to `int` and `string` will be executed remotely, preserving the C# semantics as closely as possible, while the expressions on columns mapped to double will be executed in U-SQL. It can be specified at most once. If it is not specified, then no expressions will be sent to the external data source for remote execution. If it is specified more than once, an error is raised.  
+    The `REMOTABLE_TYPES` option specifies the list of [simple built-in U-SQL types](simple-built-in-u-sql-types.md)  for which the U-SQL query evaluation will push supported expressions to the external data source. For example, if the option specifies `int` and `string` as a remotable type but not `double` then comparisons, some known string expressions and other supported expressions on columns mapped to `int` and `string` will be executed remotely, preserving the C# semantics as closely as possible, while the expressions on columns mapped to double will be executed in U-SQL. It can be specified at most once. If it is not specified, then no expressions will be sent to the external data source for remote execution. If it is specified more than once, an error is raised.  
    
 > [!IMPORTANT]
-> `CREATE DATA SOURCE` itself does not check if the remote source is accessible with the provided credentials and provider settings. Currently the connection is checked with [CREATE EXTERNAL TABLE](../u-sql/create-external-table-u-sql.md) and when [selecting from an external data source](../u-sql/u-sql-select-selecting-from-an-external-rowset.md).
+> `CREATE DATA SOURCE` itself does not check if the remote source is accessible with the provided credentials and provider settings. Currently the connection is checked with [CREATE EXTERNAL TABLE](create-external-table-u-sql.md) and when [selecting from an external data source](u-sql-select-selecting-from-an-external-rowset.md).
 
 ### Examples 
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -280,13 +280,13 @@ USING Outputters.Csv(outputHeader: true);
 ```
   
 ### See Also
-* [U-SQL Data Sources](../u-sql/u-sql-data-sources.md)  
-* [ALTER DATA SOURCE (U-SQL)](../u-sql/alter-data-source-u-sql.md)  
-* [DROP DATA SOURCE (U-SQL)](../u-sql/drop-data-source-u-sql.md)  
-* [CREATE EXTERNAL TABLE (U-SQL)](../u-sql/create-external-table-u-sql.md)  
-* [U-SQL SELECT Selecting from an External Rowset](../u-sql/u-sql-select-selecting-from-an-external-rowset.md)  
+* [U-SQL Data Sources](u-sql-data-sources.md)  
+* [ALTER DATA SOURCE (U-SQL)](alter-data-source-u-sql.md)  
+* [DROP DATA SOURCE (U-SQL)](drop-data-source-u-sql.md)  
+* [CREATE EXTERNAL TABLE (U-SQL)](create-external-table-u-sql.md)  
+* [U-SQL SELECT Selecting from an External Rowset](u-sql-select-selecting-from-an-external-rowset.md)  
 * [SqlConnection.ConnectionString Property](https://msdn.microsoft.com/library/system.data.sqlclient.sqlconnection.connectionstring%28v=vs.110%29.aspx)  
-* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)  
 * [New-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.3.0/new-azurermdatalakeanalyticscatalogcredential)
 
   

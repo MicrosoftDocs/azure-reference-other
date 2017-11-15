@@ -24,7 +24,7 @@ A combiner provides a way to implement custom join operators that are more compl
   
 A combiner is being invoked with the COMBINE expression that provide the necessary information about both the input rowsets, the join clause, the expected result schema as well as additional information.  
   
-A combiner provides limited optimization support, because an optimizer cannot reason about the procedural C# code defining the combiner For example, it cannot not push predicates through to earlier statements unless the column used in the predicate is marked as read only. Therefore, it is recommended to instead use the standard [joins](../u-sql/u-sql-select-selecting-from-joins.md) if possible or use the [READONLY](#RO_cla) and [REQURED](#REQ_cla) clauses.  
+A combiner provides limited optimization support, because an optimizer cannot reason about the procedural C# code defining the combiner For example, it cannot not push predicates through to earlier statements unless the column used in the predicate is marked as read only. Therefore, it is recommended to instead use the standard [joins](u-sql-select-selecting-from-joins.md) if possible or use the [READONLY](#RO_cla) and [REQURED](#REQ_cla) clauses.  
  
 <table><th align="left">Syntax</th><tr><td><pre>
 Combine_Expression :=                                                                                    
@@ -59,7 +59,7 @@ Specifies the input rowsets that the combiner will join.
     where 
     
     - **`Alias`**
-      is the rowset alias given to the rowset that can be used in the remainder of the `COMBINE` expression to refer to that specific rowset. It can be a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md):
+      is the rowset alias given to the rowset that can be used in the remainder of the `COMBINE` expression to refer to that specific rowset. It can be a [quoted or unquoted identifier](u-sql-identifiers.md):
       <table><th>Syntax</th><tr><td><pre>
       Alias :=                                                                                  
           'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
@@ -77,7 +77,7 @@ Specifies the input rowsets that the combiner will join.
       Providing a rowset alias is optional.  
         
     - **`Rowset_Expression`**  
-      U-SQL also provides the ability to combine nested [query expressions](../u-sql/query-statements-and-expressions-u-sql.md), [table-valued function calls](../u-sql/table-valued-function-expression-u-sql.md) or [querying external rowsets](../u-sql/u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
+      U-SQL also provides the ability to combine nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](table-valued-function-expression-u-sql.md) or [querying external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
 
       <table><th>Syntax</th><tr><td><pre>
       Rowset_Expression :=                                                                      
@@ -100,7 +100,7 @@ Specifies the join comparison that is being used to identify which of the rows f
   Join_On_Clause :=                                                                                   
       'ON' <a href="u-sql-select-selecting-from-joins.md#joinComps">Join_Comparison_Expression</a>.</pre></td></tr></table> 
   
-  where [`Join_Comparison_Expression`](../u-sql/u-sql-select-selecting-from-joins.md#joinComps) provides the join comparison expression for the combiner.   
+  where [`Join_Comparison_Expression`](u-sql-select-selecting-from-joins.md#joinComps) provides the join comparison expression for the combiner.   
   
 - <a name="pro_cla"></a>**`Produce_Clause`**    
 Specifies the rowset schema returned by the COMBINE expression.
@@ -119,7 +119,7 @@ Specifies the rowset schema returned by the COMBINE expression.
     Column_Definition :=
          <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.</pre></td></tr></table>
 
-    Each column has an identifier that can be either a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md). A column is typed with one of the [U-SQL types](../u-sql/data-types-and-literals-u-sql.md) that the combiner supports.  
+    Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md). A column is typed with one of the [U-SQL types](data-types-and-literals-u-sql.md) that the combiner supports.  
     
     The UDO programming model makes the specified rowset schema available to the implementation of the combiner. An error is raised if the combiner is producing a schema that is incompatible with the specified return schema.  
     
@@ -178,7 +178,7 @@ Specifies the rowset schema returned by the COMBINE expression.
 ### Example
 - The example can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The script can be executed [locally](https://channel9.msdn.com/Series/AzureDataLake/USQL-LocalRun).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 **<a name="combinerEX">User-Defined Combiner - CombinerEX**</a>       
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
@@ -275,7 +275,7 @@ USING Outputters.Tsv(outputHeader: true);
 ```
 
 **Combiner with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 This examples continues to use `CombinerEX` defined above.
 ```
 // Same as previous example but only returns top 3 records ordered by introYear
@@ -296,10 +296,10 @@ USING Outputters.Tsv(outputHeader: true);
 ```
 
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)  
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)  
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
 * [U-SQL Programmability Guide: User-Defined Combiner](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-combiner)
-* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md) 
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md) 
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 
 

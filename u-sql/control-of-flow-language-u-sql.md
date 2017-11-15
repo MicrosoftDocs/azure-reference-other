@@ -16,9 +16,9 @@ manager: "jhubbard"
 ---
 # Control-of-Flow Language (U-SQL)
 The U-SQL control-of-flow language keywords are:
-* [IF...ELSE](../u-sql/if-else-u-sql.md)
+* [IF...ELSE](if-else-u-sql.md)
 
 
 ### See Also
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)
-* [Data Modification Language (DML) Statements (U-SQL)](../u-sql/data-modification-language-dml-statements-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
+* [Data Modification Language (DML) Statements (U-SQL)](data-modification-language-dml-statements-u-sql.md)  

@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # - (Subtract) (U-SQL)
-Subtracts two [numbers](../u-sql/numeric-types-and-literals.md) (an arithmetic subtraction operator).  Can also calculate [date and time](../u-sql/temporal-types-and-literals.md) differences.
+Subtracts two [numbers](numeric-types-and-literals.md) (an arithmetic subtraction operator).  Can also calculate [date and time](temporal-types-and-literals.md) differences.
 
 <table><th align="left">Syntax</th><tr><td><pre>
 Subtract_Operator :=                                                                                     
@@ -76,8 +76,8 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Operators (U-SQL)](../u-sql/operators-u-sql.md)
-* [Date & Time](../u-sql/csharp-functions-and-operators-u-sql.md#DateTime)
-* [Simple Built-In U-SQL Types](../u-sql/simple-built-in-u-sql-types.md)
+* [Operators (U-SQL)](operators-u-sql.md)
+* [Date & Time](csharp-functions-and-operators-u-sql.md#DateTime)
+* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
 
 

@@ -21,11 +21,11 @@ There is no guarantee that the rows returned by a query using ROW_NUMBER will be
 
 1. Values of the partitioned column are unique. 
 
-2. Values of the [ORDER BY](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) columns are unique. 
+2. Values of the [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) columns are unique. 
 
-3. Combinations of values of the partition column and [ORDER BY](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) columns are unique. 
+3. Combinations of values of the partition column and [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) columns are unique. 
 
-ROW_NUMBER can only be used in the context of a [windowing expression](../u-sql/over-expression-u-sql.md). 
+ROW_NUMBER can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
     
 <table><th align="left">Syntax</th><tr><td><pre>
 ROW_NUMBER_Expression :=                                                                                 
@@ -33,12 +33,12 @@ ROW_NUMBER_Expression :=
 </pre></td></tr></table>
 
 ### Return Type 
-The return type is [long?](../u-sql/numeric-types-and-literals.md). 
+The return type is [long?](numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression 
-This ranking function can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) with the following restrictions: 
-* The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is required. 
-* The [ROWS](../u-sql/over-expression-u-sql.md#row_cla) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is not allowed. 
+This ranking function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
+* The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) operator is required. 
+* The [ROWS](over-expression-u-sql.md#row_cla) clause in the [OVER](over-expression-u-sql.md) operator is not allowed. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -77,7 +77,7 @@ USING Outputters.Csv();
 ```
 
 **B.    Dividing the result set using PARTITION BY**   
-The rows are first partitioned by `DeptID`. The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause specified in the [OVER](../u-sql/over-expression-u-sql.md) clause orders the rows in each partition by the column `Salary`.
+The rows are first partitioned by `DeptID`. The [ORDER BY](over-expression-u-sql.md#OBC) clause specified in the [OVER](over-expression-u-sql.md) clause orders the rows in each partition by the column `Salary`.
 ```
 @result =
     SELECT ROW_NUMBER() OVER(PARTITION BY DeptID ORDER BY Salary DESC) AS RowNumberByDept,
@@ -90,8 +90,8 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Ranking Functions (U-SQL)](../u-sql/ranking-functions-u-sql.md)  
-* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 
+* [Ranking Functions (U-SQL)](ranking-functions-u-sql.md)  
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 
 
 
 

@@ -28,13 +28,13 @@ The keyword `DATABASE` is optional to provide familiarity to T-SQL users.
   
 ### Semantics of Syntax Elements    
 -   <a name="DB_Name"></a>**`DB_Name`**    
-    Specifies the name of the database in form of a [quoted or unquoted U-SQL identifier](../u-sql/u-sql-identifiers.md). If the database does not exist or the user has no permissions to at least enumerate the database, an error is raised.  
+    Specifies the name of the database in form of a [quoted or unquoted U-SQL identifier](u-sql-identifiers.md). If the database does not exist or the user has no permissions to at least enumerate the database, an error is raised.  
   
 ### Example  
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
   
-The following script shows how using a database, `TestReferenceDB`, will allow the subsequent [`SELECT`](select-clause-u-sql.md) and [`DROP TABLE`](../u-sql/drop-table-u-sql.md) statements to operate on a table, `SampleTable`, within the `TestReferenceDB's` default schema context.  
+The following script shows how using a database, `TestReferenceDB`, will allow the subsequent [`SELECT`](select-clause-u-sql.md) and [`DROP TABLE`](drop-table-u-sql.md) statements to operate on a table, `SampleTable`, within the `TestReferenceDB's` default schema context.  
 ```
 USE DATABASE TestReferenceDB;  
 @r = 
@@ -50,7 +50,7 @@ This script is equivalent to the following script that uses fully qualified name
     OUTPUT @r TO "output.txt" USING Outputters.Csv();
 ```
 ### See Also    
-* [U-SQL Databases](../u-sql/u-sql-databases.md)  
-* [CREATE DATABASE (U-SQL)](../u-sql/create-database-u-sql.md) 
-* [DROP DATABASE (U-SQL)](../u-sql/drop-database-u-sql.md)
-* [USE (U-SQL)](../u-sql/u-sql-metadata-object-naming-and-name-contexts.md)
+* [U-SQL Databases](u-sql-databases.md)  
+* [CREATE DATABASE (U-SQL)](create-database-u-sql.md) 
+* [DROP DATABASE (U-SQL)](drop-database-u-sql.md)
+* [USE (U-SQL)](u-sql-metadata-object-naming-and-name-contexts.md)

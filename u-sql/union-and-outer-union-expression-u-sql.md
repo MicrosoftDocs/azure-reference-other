@@ -73,9 +73,9 @@ Preserves duplicate rows in the result.
        'WITH' 'DISJOINT' '(' Identifier_List ')'.
   </pre></td></tr></table>
       
-    This optimization hint allows that any later [GROUP BY](../u-sql/group-by-and-having-clauses-u-sql.md) clause on those columns can be pushed through the `UNION ALL` expression to the rowset expressions.  
+    This optimization hint allows that any later [GROUP BY](group-by-and-having-clauses-u-sql.md) clause on those columns can be pushed through the `UNION ALL` expression to the rowset expressions.  
   
-    For example, rows containing the same values in the market column only appear in one of the input rowsets. E.g., only one of the rowsets contain the “en-us” values. If the disjoint hint WITH DISJOINT (market) has been specified, then a later [GROUP BY](../u-sql/group-by-and-having-clauses-u-sql.md) market is pushed into the rowset expressions, thus improving the query performance.  
+    For example, rows containing the same values in the market column only appear in one of the input rowsets. E.g., only one of the rowsets contain the “en-us” values. If the disjoint hint WITH DISJOINT (market) has been specified, then a later [GROUP BY](group-by-and-having-clauses-u-sql.md) market is pushed into the rowset expressions, thus improving the query performance.  
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -185,7 +185,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **UNION with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 ```
 // Data sets
 @JuneSales = 
@@ -247,11 +247,11 @@ USING Outputters.Tsv();
 ```
 
 **Additional examples using OUTER UNION**   
-See the examples under [SQL.MAP](../u-sql/complex-built-in-u-sql-types.md#sqlMAP) which make use of `OUTER UNION`.
+See the examples under [SQL.MAP](complex-built-in-u-sql-types.md#sqlMAP) which make use of `OUTER UNION`.
 
 ### See Also
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)
-* [Set Rowset Expressions (U-SQL)](../u-sql/set-rowset-expressions-u-sql.md)
-* [EXCEPT Expression (U-SQL)](../u-sql/except-expression-u-sql.md)
-* [INTERSECT Expression (U-SQL)](../u-sql/intersect-expression-u-sql.md)
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
+* [Set Rowset Expressions (U-SQL)](set-rowset-expressions-u-sql.md)
+* [EXCEPT Expression (U-SQL)](except-expression-u-sql.md)
+* [INTERSECT Expression (U-SQL)](intersect-expression-u-sql.md)
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  

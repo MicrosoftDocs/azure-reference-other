@@ -26,4 +26,4 @@ Simple_Type :=
 </pre></td></tr></table>
 
 ### See Also  
-* [Data Types and Literals (U-SQL)](../u-sql/data-types-and-literals-u-sql.md)
+* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md)

@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # WHERE Clause (U-SQL)
-The optional `WHERE` clause in a [SELECT](../u-sql/select-expression-u-sql.md) expression will filter the rowset that the [FROM](../u-sql/from-clause-u-sql.md) clause calculated.  
+The optional `WHERE` clause in a [SELECT](select-expression-u-sql.md) expression will filter the rowset that the [FROM](from-clause-u-sql.md) clause calculated.  
   
 <table><th align="left">Syntax</th><tr><td><pre>
 Where_Clause :=                                                                                          
@@ -38,7 +38,7 @@ Where_Clause :=
   
   The expressions can of course refer to any of the columns in the rowset, can invoke any C# expression and function and method call as long as the functions and methods are included in the scope either implicitly or explicitly.  
   
-  The [AND](../u-sql/and-u-sql.md) and [OR](../u-sql/or-u-sql.md) operators do not guarantee execution order of their operands to allow the query processor to reorder them for better performance. If the order is important, for example to guard a subsequent expression from a runtime error like a null exception, one should use C#’s [&&](https://msdn.microsoft.com/library/2a723cdk.aspx) and [||](https://msdn.microsoft.com/library/6373h346.aspx) which will preserve the expression’s execution order from left to right and will shortcut the expression if the left side of the logical expression determines the outcome.  
+  The [AND](and-u-sql.md) and [OR](or-u-sql.md) operators do not guarantee execution order of their operands to allow the query processor to reorder them for better performance. If the order is important, for example to guard a subsequent expression from a runtime error like a null exception, one should use C#’s [&&](https://msdn.microsoft.com/library/2a723cdk.aspx) and [||](https://msdn.microsoft.com/library/6373h346.aspx) which will preserve the expression’s execution order from left to right and will shortcut the expression if the left side of the logical expression determines the outcome.  
   
 ### Examples    
 The following query finds all the search session in the @searchlog rowset that are in the `en-gb` region.  
@@ -52,7 +52,7 @@ The following query finds all the search session in the @searchlog rowset that a
   
 Note the use of `==` in the example above instead of `=`. This is because expressions in the `SELECT` statement are true C# expressions where `==` is the comparison operator for equality.  
   
-The following example shows a more complex combination of [AND](../u-sql/and-u-sql.md) and [OR](../u-sql/or-u-sql.md). It finds all the search sessions from the @searchlog rowset that lasted between 2 and 5 minutes or are in the en-gb region.  
+The following example shows a more complex combination of [AND](and-u-sql.md) and [OR](or-u-sql.md). It finds all the search sessions from the @searchlog rowset that lasted between 2 and 5 minutes or are in the en-gb region.  
   
 ```  
 @rs2 =  
@@ -61,7 +61,7 @@ The following example shows a more complex combination of [AND](../u-sql/and-u-s
     WHERE (Duration >= 2*60 AND Duration <= 5*60) OR (Region == "en-gb");
 ```
   
-While U-SQL supports the [BETWEEN](../u-sql/between-u-sql.md) comparison operation, the following example shows how to use [AND](../u-sql/and-u-sql.md) and the DateTime.Parse() method to filter between two dates:  
+While U-SQL supports the [BETWEEN](between-u-sql.md) comparison operation, the following example shows how to use [AND](and-u-sql.md) and the DateTime.Parse() method to filter between two dates:  
   
 ```  
 @rs3 =  
@@ -81,7 +81,7 @@ Assuming the Region can contain null values and one wants to check if the first 
 ```
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md) 
-* [SELECT Expression (U-SQL)](../u-sql/select-expression-u-sql.md) 
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
-* [Logical Operators (U-SQL)](../u-sql/logical-operators-u-sql.md) 
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
+* [SELECT Expression (U-SQL)](select-expression-u-sql.md) 
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
+* [Logical Operators (U-SQL)](logical-operators-u-sql.md) 

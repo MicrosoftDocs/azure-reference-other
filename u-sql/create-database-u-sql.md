@@ -26,7 +26,7 @@ Create_Database_Statement :=
   
 ### Semantics of Syntax Elements    
 -   <a name="DB_Name"></a>**`DB_Name`**  
-    Specifies the name of the database in form of a [quoted or unquoted U-SQL identifier](../u-sql/u-sql-identifiers.md). If a database of the given name already exists or the user has no permissions to create a database, an error is raised.    
+    Specifies the name of the database in form of a [quoted or unquoted U-SQL identifier](u-sql-identifiers.md). If a database of the given name already exists or the user has no permissions to create a database, an error is raised.    
    
 -   <a name="INE"></a>**`IF NOT EXISTS`**  
     If the optional `IF NOT EXISTS` is specified, then the statement creates the database if it does not already exist, or succeeds without changes if the database already exists and the user has permission to at least enumerate all existing databases.  
@@ -43,6 +43,6 @@ CREATE DATABASE TestReferenceDB;
 CREATE DATABASE IF NOT EXISTS TestReferenceDB; 
 ```
 ### See Also    
-* [U-SQL Databases](../u-sql/u-sql-databases.md)  
-* [USE DATABASE (U-SQL)](../u-sql/use-database-u-sql.md)  
-* [DROP DATABASE (U-SQL)](../u-sql/drop-database-u-sql.md)
+* [U-SQL Databases](u-sql-databases.md)  
+* [USE DATABASE (U-SQL)](use-database-u-sql.md)  
+* [DROP DATABASE (U-SQL)](drop-database-u-sql.md)

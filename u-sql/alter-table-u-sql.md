@@ -108,6 +108,6 @@ ALTER TABLE Logs DROP COLUMN clientId, result;
 ```
 
 ### See Also  
-* [CREATE TABLE (U-SQL): Creating a Table with Schema](../u-sql/create-table-u-sql-creating-a-table-with-schema.md)   
-* [TRUNCATE TABLE (U-SQL)](../u-sql/truncate-table-u-sql.md)
-* [DROP TABLE (U-SQL)](../u-sql/drop-table-u-sql.md)  
+* [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md)   
+* [TRUNCATE TABLE (U-SQL)](truncate-table-u-sql.md)
+* [DROP TABLE (U-SQL)](drop-table-u-sql.md)  

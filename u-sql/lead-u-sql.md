@@ -17,7 +17,7 @@ manager: "jhubbard"
 # LEAD (U-SQL)
 The LEAD analytic function provides access to a row at a given physical offset that follows the current row. Use this analytic function in a SELECT expression to compare values in the current row with values in a following row.
 
-LEAD can only be used in the context of a [windowing expression](../u-sql/over-expression-u-sql.md). 
+LEAD can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 LEAD_Expression :=                                                                                
@@ -38,8 +38,8 @@ The value to return when `expression` at `offset` is NULL. If a default value is
 The nullable type of the input. 
 
 ### Usage in Windowing Expression 
-This analytic function can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) with the following restrictions: 
-* The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is required. 
+This analytic function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
+* The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) operator is required. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -82,7 +82,7 @@ USING Outputters.Csv();
 ```
 
 **B.    Dividing the result set using PARTITION BY**   
-The following example uses the `LEAD` function to compare year-to-date sales between stores.  Each record shows a store's sales and the sales of the store with the nearest higher sales.  The [PARTITION BY](../u-sql/over-expression-u-sql.md#OPBC) clause is specified to divide the rows in the result set by region.  The `LEAD` function is applied to each partition separately and computation restarts for each partition.  The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the [OVER](../u-sql/over-expression-u-sql.md) clause orders the rows in each partition.  The [ORDER BY](../u-sql/output-statement-u-sql.md#OBOFC) clause in the [OUTPUT](../u-sql/output-statement-u-sql.md) statement sorts the rows in the whole result set.  Notice that because there is no lead value available for the first row of each partition, the default of zero (0) is returned.
+The following example uses the `LEAD` function to compare year-to-date sales between stores.  Each record shows a store's sales and the sales of the store with the nearest higher sales.  The [PARTITION BY](over-expression-u-sql.md#OPBC) clause is specified to divide the rows in the result set by region.  The `LEAD` function is applied to each partition separately and computation restarts for each partition.  The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) clause orders the rows in each partition.  The [ORDER BY](output-statement-u-sql.md#OBOFC) clause in the [OUTPUT](output-statement-u-sql.md) statement sorts the rows in the whole result set.  Notice that because there is no lead value available for the first row of each partition, the default of zero (0) is returned.
 ```
 @result =
     SELECT Region,
@@ -99,9 +99,9 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [LAG (U-SQL)](../u-sql/lag-u-sql.md)
-* [FIRST_VALUE (U-SQL)](../u-sql/first-value-u-sql.md)
-* [LAST_VALUE (U-SQL)](../u-sql/last-value-u-sql.md)
-* [Analytic Functions (U-SQL)](../u-sql/analytic-functions-u-sql.md)  
-* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 
+* [LAG (U-SQL)](lag-u-sql.md)
+* [FIRST_VALUE (U-SQL)](first-value-u-sql.md)
+* [LAST_VALUE (U-SQL)](last-value-u-sql.md)
+* [Analytic Functions (U-SQL)](analytic-functions-u-sql.md)  
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 
 

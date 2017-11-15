@@ -19,13 +19,13 @@ U-SQL provides the ability to write custom rowset processors in C# using the [us
    
 A processor is being invoked with the `PROCESS` expression that provides the necessary information about the input rowset, the expected result schema as well as additional information that is useful for optimization.  
   
-A processor operates on a row at a time and produces zero or one row. If the processing should produce multiple rows per input, an [Applier](../u-sql/u-sql-using-apply-with-an-applier-udo.md) should be used instead.  
+A processor operates on a row at a time and produces zero or one row. If the processing should produce multiple rows per input, an [Applier](u-sql-using-apply-with-an-applier-udo.md) should be used instead.  
   
 Some common applications of processors are to normalize nested data into relational form, modify values, or generate new columns using existing columns.   
   
-Processors' strengths are in the context of performing complex C# processing where the processing depends on either the input or output schema, or when additional resources need to be accessed. Basically any tasks that are not easily accomplished with [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf) in the [SELECT](../u-sql/select-clause-u-sql.md) clause.  
+Processors' strengths are in the context of performing complex C# processing where the processing depends on either the input or output schema, or when additional resources need to be accessed. Basically any tasks that are not easily accomplished with [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf) in the [SELECT](select-clause-u-sql.md) clause.  
   
-A processor provides limited optimization support, because an optimizer cannot reason about the procedural C# code defining the processor. For example, it cannot push predicates through to earlier statements unless the column used in the predicate is marked as read only. Therefore, it is recommended to instead use [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf) and put the logic into the [SELECT](../u-sql/select-clause-u-sql.md) clause and [WHERE](../u-sql/where-clause-u-sql.md) clause of a [SELECT](../u-sql/select-expression-u-sql.md) expression if possible.   
+A processor provides limited optimization support, because an optimizer cannot reason about the procedural C# code defining the processor. For example, it cannot push predicates through to earlier statements unless the column used in the predicate is marked as read only. Therefore, it is recommended to instead use [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf) and put the logic into the [SELECT](select-clause-u-sql.md) clause and [WHERE](where-clause-u-sql.md) clause of a [SELECT](select-expression-u-sql.md) expression if possible.   
   
 <table><th align="left">Syntax</th><tr><td><pre>
 Process_Expression :=                                                                                    
@@ -55,7 +55,7 @@ Process_Expression :=
     A table can be referenced either with its fully qualified 3-part name, within the current database context with a 2-part name, or within the current database and schema context with a single-part name.   
   
   - <a name="rowset_exp"></a>**`Rowset_Expression`**  
-    U-SQL also provides the ability to process nested [query expressions](../u-sql/query-statements-and-expressions-u-sql.md), [table-valued function calls](../u-sql/u-sql-select-selecting-from-a-function-call.md) or [querying external rowsets](../u-sql/u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
+    U-SQL also provides the ability to process nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](u-sql-select-selecting-from-a-function-call.md) or [querying external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
 
     <table><th>Syntax</th><tr><td><pre>
     Rowset_Expression :=                                                                           
@@ -81,7 +81,7 @@ Process_Expression :=
     Column_Definition :=
         <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.</pre></td></tr></table>
       
-    Each column has an identifier that can be either a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md). A column is typed with one of the U-SQL types that the processor supports.  
+    Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md). A column is typed with one of the U-SQL types that the processor supports.  
     
     The UDO programming model makes the specified rowset schema available to the implementation of the processor. An error is raised if the processor is producing a schema that is incompatible with the specified return schema.  
     
@@ -137,7 +137,7 @@ Process_Expression :=
 ### Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://channel9.msdn.com/Series/AzureDataLake/USQL-LocalRun).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 <a name="FullAddressProcessor">**User-Defined Processor - FullAddressProcessor**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
@@ -293,7 +293,7 @@ USING Outputters.Text(Encoding.Unicode);
 ```
 
 **Processor with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 This examples continues to use `CountryName` defined earlier.
 ```
 // Same as previous example but only returns top 3 records ordered by Country
@@ -316,9 +316,9 @@ USING Outputters.Text(Encoding.Unicode);
 ```
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md) 
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
 * [U-SQL Programmability Guide: User-Defined Processor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-processor)
-* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)  
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 

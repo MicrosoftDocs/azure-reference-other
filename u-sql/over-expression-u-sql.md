@@ -22,11 +22,11 @@ A windowing expression is an expression whose value is computed by applying for 
 
 The OVER operator allows to specify a partition or window of column data that the window functions operate on. The windows provide the ability to access data from previous rows without having to use a self-join and provide both cumulative and sliding windows. It thus provides the ability to compute aggregated values such as moving averages, cumulative aggregates, running totals, or a top N per group results. 
 
-It is similar to aggregation over grouping but instead of grouping the whole rowset with [GROUP BY](../u-sql/group-by-and-having-clauses-u-sql.md) and then returning a single aggregated value for each group, the window defines a set of rows for a particular column in the [SELECT](../u-sql/select-clause-u-sql.md) clause that will be aggregated for each row. In the [GROUP BY](../u-sql/group-by-and-having-clauses-u-sql.md) case, the result will be a row per group, with windowing expressions, the number of rows returned by the [SELECT](../u-sql/select-clause-u-sql.md) will not be affected by the windows. 
+It is similar to aggregation over grouping but instead of grouping the whole rowset with [GROUP BY](group-by-and-having-clauses-u-sql.md) and then returning a single aggregated value for each group, the window defines a set of rows for a particular column in the [SELECT](select-clause-u-sql.md) clause that will be aggregated for each row. In the [GROUP BY](group-by-and-having-clauses-u-sql.md) case, the result will be a row per group, with windowing expressions, the number of rows returned by the [SELECT](select-clause-u-sql.md) will not be affected by the windows. 
 
-Windowing expressions are only supported inside expressions in a SELECT FROM clause. More than one windowing expression can be used in a single query with a single [FROM](../u-sql/from-clause-u-sql.md) clause. The OVER operator for each function can differ in partitioning and ordering. 
+Windowing expressions are only supported inside expressions in a SELECT FROM clause. More than one windowing expression can be used in a single query with a single [FROM](from-clause-u-sql.md) clause. The OVER operator for each function can differ in partitioning and ordering. 
 
-A windowing expression can never be used if a [GROUP BY](../u-sql/group-by-and-having-clauses-u-sql.md) clause is present. 
+A windowing expression can never be used if a [GROUP BY](group-by-and-having-clauses-u-sql.md) clause is present. 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 Windowing_Expression :=                                                                                  
@@ -49,11 +49,11 @@ Windowing_Expression :=
   </pre></td></tr></table>
  
   Window functions can be one of the following:
-  * [Aggregate Functions](../u-sql/aggregate-functions-u-sql.md) such as [SUM](../u-sql/sum-u-sql.md) or [MAX](../u-sql/max-u-sql.md). 
-  * [Analytic Functions](../u-sql/analytic-functions-u-sql.md) such as [FIRST_VALUE](../u-sql/first-value-u-sql.md) or [LAST_VALUE](../u-sql/last-value-u-sql.md). 
-  * [Ranking Functions](../u-sql/ranking-functions-u-sql.md) such as [RANK](../u-sql/rank-u-sql.md) or [ROW_NUMBER](../u-sql/row-number-u-sql.md).  
+  * [Aggregate Functions](aggregate-functions-u-sql.md) such as [SUM](sum-u-sql.md) or [MAX](max-u-sql.md). 
+  * [Analytic Functions](analytic-functions-u-sql.md) such as [FIRST_VALUE](first-value-u-sql.md) or [LAST_VALUE](last-value-u-sql.md). 
+  * [Ranking Functions](ranking-functions-u-sql.md) such as [RANK](rank-u-sql.md) or [ROW_NUMBER](row-number-u-sql.md).  
    
-  Aggregation functions applied to a window cannot be used with [DISTINCT](../u-sql/select-clause-u-sql.md#dist).  
+  Aggregation functions applied to a window cannot be used with [DISTINCT](select-clause-u-sql.md#dist).  
 
 * <a name="OVR"></a>**`OVER ( … )`**  
 The OVER operator that specifies the window with the following components. Note that certain windowing functions have certain requirements with respect to the presence or absence of some if these components. These requirements are explained in the relevant section describing that function. 
@@ -66,7 +66,7 @@ The OVER operator’s optional partition clause defines the window by partitioni
        'PARTITION' 'BY' Expression_List.
   </pre></td></tr></table>
 
-  The data can be partitioned according to a list of scalar expressions. The result type of each of the expression has to return an equality comparable type or an error is raised. Most commonly, the partition expressions refer to the rowset’s columns (as specified by the [FROM](../u-sql/from-clause-u-sql.md) clause and not the columns from the [SELECT](../u-sql/select-clause-u-sql.md) clause). 
+  The data can be partitioned according to a list of scalar expressions. The result type of each of the expression has to return an equality comparable type or an error is raised. Most commonly, the partition expressions refer to the rowset’s columns (as specified by the [FROM](from-clause-u-sql.md) clause and not the columns from the [SELECT](select-clause-u-sql.md) clause). 
 
   If PARTITION BY is not specified, the function treats all rows of the query result set as a single group. 
 
@@ -82,7 +82,7 @@ The OVER operator’s optional partition clause defines the window by partitioni
        expression [Sort_Direction].
   </pre></td></tr></table>
  
-  The syntax and semantics follows the normal ORDER BY clause. For window functions that depend on the order such as the [ranking functions](../u-sql/ranking-functions-u-sql.md), this order by clause specifies the logical order in which the window function calculation is performed.  
+  The syntax and semantics follows the normal ORDER BY clause. For window functions that depend on the order such as the [ranking functions](ranking-functions-u-sql.md), this order by clause specifies the logical order in which the window function calculation is performed.  
 
   If the ORDER BY clause is not specified, then the window is not ordered.  
 
@@ -289,9 +289,9 @@ c =
 |Marketing|25000|165000|0.151515151515152|
 
 ### See also 
-* [Aggregate Functions (U-SQL)](../u-sql/aggregate-functions-u-sql.md)   
-* [Analytic Functions (U-SQL)](../u-sql/analytic-functions-u-sql.md)  
-* [Ranking Functions (U-SQL)](../u-sql/ranking-functions-u-sql.md)  
+* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)   
+* [Analytic Functions (U-SQL)](analytic-functions-u-sql.md)  
+* [Ranking Functions (U-SQL)](ranking-functions-u-sql.md)  
 * [Using U-SQL window functions for Azure Data Lake Analytics jobs](https://azure.microsoft.com/documentation/articles/data-lake-analytics-use-window-functions/) 
 
 

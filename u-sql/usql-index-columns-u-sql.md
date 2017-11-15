@@ -66,8 +66,8 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 ### See Also
-* [Catalog Views (U-SQL)](../u-sql/catalog-views-u-sql.md)
-* [usql.indexes (U-SQL)](../u-sql/usql-indexes-u-sql.md) 
-* [usql.objects (U-SQL)](../u-sql/usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)
+* [Catalog Views (U-SQL)](catalog-views-u-sql.md)
+* [usql.indexes (U-SQL)](usql-indexes-u-sql.md) 
+* [usql.objects (U-SQL)](usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
 

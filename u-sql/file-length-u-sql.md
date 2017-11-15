@@ -28,7 +28,7 @@ Returns the logical size in bytes of the file at the specified location at compi
 A constant-foldable string expression.  `path` can be any supported file path Universal Resource Identifier (URI).  If `path` is not constant-foldable, the error `E_CSC_USER_EXPRESSIONNOTCONSTANTFOLDABLE` is raised.  If `path` is empty (null or the zero-length string), the error `E_CSC_USER_EMPTYFILEPATH` is raised. If `path` contains invalid characters, the error `E_CSC_USER_INVALIDFILENAME` is raised.
 
 ### Return Value
-[long?](../u-sql/numeric-types-and-literals.md)   
+[long?](numeric-types-and-literals.md)   
 The logical size in bytes of `path` at compile time.  `Null` if `path` does not exists, refers to a folder or the user has no access to it. 
 
 ### Example
@@ -50,8 +50,8 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [FILE Functions (U-SQL)](../u-sql/file-functions-u-sql.md)
-* [Built-in Functions (U-SQL)](../u-sql/built-in-functions-u-sql.md) 
-* [C# Functions and Operators (U-SQL)](../u-sql/csharp-functions-and-operators-u-sql.md)
+* [FILE Functions (U-SQL)](file-functions-u-sql.md)
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md) 
+* [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md)
 
 

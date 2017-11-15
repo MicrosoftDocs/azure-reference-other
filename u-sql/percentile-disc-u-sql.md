@@ -17,11 +17,11 @@ manager: "jhubbard"
 # PERCENTILE_DISC (U-SQL)
 The PERCENTILE_DISC analytic function computes a specific percentile for sorted values in the specified window based on a discrete distribution of the column values. The result is equal to a specific value in the column. 
 
-For a given percentile value P, PERCENTILE_DISC returns the value with the smallest [CUME_DIST](../u-sql/cume-dist-u-sql.md) value for the same sorted list of values that is greater than or equal to P.  
+For a given percentile value P, PERCENTILE_DISC returns the value with the smallest [CUME_DIST](cume-dist-u-sql.md) value for the same sorted list of values that is greater than or equal to P.  
 
 For example, PERCENTILE_DISC(0.5) will compute the 50th percentile (that is, the median) of an expression.  
 
-PERCENTILE_DISC can only be used in the context of a [windowing expression](../u-sql/over-expression-u-sql.md). 
+PERCENTILE_DISC can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 PERCENTILE_DISC_Expression :=                                                                            
@@ -31,7 +31,7 @@ PERCENTILE_DISC_Expression :=
 
 ### Semantics of Syntax Elements 
 * <a name="dbl_lit"></a>**`double_literal`**   
-The percentile to compute. The value must range between 0.0 and 1.0 and be of type [double](../u-sql/numeric-types-and-literals.md). 
+The percentile to compute. The value must range between 0.0 and 1.0 and be of type [double](numeric-types-and-literals.md). 
 
 * <a name="wg_soc"></a>**`WITHIN GROUP ( Simple_Order_By_Clause )`**   
   Specifies a list of numeric values to sort and compute the percentile over.  
@@ -45,16 +45,16 @@ The percentile to compute. The value must range between 0.0 and 1.0 and be of ty
        'ASC' | 'DESC'.
   </pre></td></tr></table>
 
-  Only one [ORDER BY](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) expression is allowed. The type of the expression has to be comparable. The default sort order is ascending. 
+  Only one [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) expression is allowed. The type of the expression has to be comparable. The default sort order is ascending. 
 
 ### Return Type 
-The return type is the type of the [ORDER BY](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) expression. 
+The return type is the type of the [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) expression. 
 
 ### Usage in Windowing Expression  
-This analytic function can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) with the following restrictions: 
-* Only the [PARTITION BY](../u-sql/over-expression-u-sql.md#OPBC) clause can be specified with the [OVER](../u-sql/over-expression-u-sql.md) operator. 
-* The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is not allowed. 
-* The [ROWS](../u-sql/over-expression-u-sql.md#row_cla) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is not allowed. 
+This analytic function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
+* Only the [PARTITION BY](over-expression-u-sql.md#OPBC) clause can be specified with the [OVER](over-expression-u-sql.md) operator. 
+* The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) operator is not allowed. 
+* The [ROWS](over-expression-u-sql.md#row_cla) clause in the [OVER](over-expression-u-sql.md) operator is not allowed. 
 
 ### Example
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -91,6 +91,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [PERCENTILE_CONT()](../u-sql/percentile-cont-u-sql.md)
-* [Analytic Functions (U-SQL)](../u-sql/analytic-functions-u-sql.md)  
-* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 
+* [PERCENTILE_CONT()](percentile-cont-u-sql.md)
+* [Analytic Functions (U-SQL)](analytic-functions-u-sql.md)  
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 

@@ -21,7 +21,7 @@ U-SQL offers a set of built-in system objects and allows customers to install so
 
 U-SQL provides a set of built-in catalog views that describe the content of the U-SQL Catalog for a specific Account and database. The catalog views are modelled after the SQL Server catalog views, but contain U-SQL specific information and live in the system-owned `usql` schema. 
 
-See [Catalog Views (U-SQL)](../u-sql/catalog-views-u-sql.md) for a list of catalog views.
+See [Catalog Views (U-SQL)](catalog-views-u-sql.md) for a list of catalog views.
 
 ## U-SQL Extensions
 
@@ -31,15 +31,15 @@ The extensions are installed from the [Azure Data Lake Analytics Portal](http://
 
 -	[Scaling out Python scripts with U-SQL](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-python-extensions)
 -	[Scaling out R scripts with U-SQL](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-r-extensions) 
--	[Cognitive Capabilities in U-SQL](../u-sql/cognitive-capabilities-in-u-sql.md) 
+-	[Cognitive Capabilities in U-SQL](cognitive-capabilities-in-u-sql.md) 
 
 
 
 ### See Also
-* [Catalog Views (U-SQL)](../u-sql/catalog-views-u-sql.md)
-* [usql.objects (U-SQL)](../u-sql/usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)
-* [Registering Cognitive Extensions in U-SQL](../u-sql/cognitive-capabilities-in-u-sql.md#registeringExtensions)
-* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)
+* [Catalog Views (U-SQL)](catalog-views-u-sql.md)
+* [usql.objects (U-SQL)](usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
+* [Registering Cognitive Extensions in U-SQL](cognitive-capabilities-in-u-sql.md#registeringExtensions)
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
 * [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/)
 

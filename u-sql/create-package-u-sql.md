@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # CREATE PACKAGE (U-SQL)
-The `CREATE PACKAGE` statement creates a package to allow bundling of commonly used together U-SQL [assemblies](../u-sql/u-sql-assemblies.md), [variables](../u-sql/variables-u-sql.md) and resources.
+The `CREATE PACKAGE` statement creates a package to allow bundling of commonly used together U-SQL [assemblies](u-sql-assemblies.md), [variables](variables-u-sql.md) and resources.
 
 A package declaration can consist of the using statement, and declare statements to set its own internal static name context, import from other packages, declare what gets exported by the package, and what resources the package will deploy to the runtime vertices. It also provides an IF statement that has the same semantics as the general U-SQL IF statement but only allows the statements supported inside a package definition.
 
@@ -148,5 +148,5 @@ END;
 ```
 
 ### See Also
-* [DROP PACKAGE (U-SQL)](../u-sql/drop-package-u-sql.md)  
-* [IMPORT PACKAGE (U-SQL)](../u-sql/import-package-u-sql.md)
+* [DROP PACKAGE (U-SQL)](drop-package-u-sql.md)  
+* [IMPORT PACKAGE (U-SQL)](import-package-u-sql.md)

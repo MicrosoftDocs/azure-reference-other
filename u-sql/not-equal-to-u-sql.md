@@ -30,7 +30,7 @@ Not_Equal_To:=
 Is any valid expression. If the expressions are not of the same data type, the data type for one expression must be implicitly convertible to the data type of the other. 
 
 ### Result Types
-[Boolean](../u-sql/other-simple-built-in-types-and-literals.md) 
+[Boolean](other-simple-built-in-types-and-literals.md) 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -66,8 +66,8 @@ OUTPUT @result3 TO "/Output/ReferenceGuide/Operators/Comparison/Inequality3.txt"
 ```
 
 ### See Also
-* [Data Types and Literals (U-SQL)](../u-sql/data-types-and-literals-u-sql.md) 
-* [Operators (U-SQL)](../u-sql/operators-u-sql.md)
+* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md) 
+* [Operators (U-SQL)](operators-u-sql.md)
     
     
     

@@ -39,7 +39,7 @@ Select_Item_List :=
        'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
   </pre></td></tr></table>
   
-  The select clause can refer to column identifiers either by providing the [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md) of the column, or by prepending the rowset/table alias or rowset variable name to identify the rowset to which the column belongs.  
+  The select clause can refer to column identifiers either by providing the [quoted or unquoted identifier](u-sql-identifiers.md) of the column, or by prepending the rowset/table alias or rowset variable name to identify the rowset to which the column belongs.  
     
 - <a name="col_alias"></a>**`Column_Alias`**      
   The column alias is not  required for SELECT clause expressions that end with a property or field access where the inferred name does not conflict with any other column name. The column name will be derived from the name of the property/field.
@@ -95,9 +95,9 @@ en-mx |
 en_us |   
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)
-* [Data Modification Language (DML) Statements (U-SQL)](../u-sql/data-modification-language-dml-statements-u-sql.md)    
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
+* [Data Modification Language (DML) Statements (U-SQL)](data-modification-language-dml-statements-u-sql.md)    
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
 
 
 

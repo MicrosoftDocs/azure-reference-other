@@ -16,7 +16,7 @@ manager: "jhubbard"
 ---
 # U-SQL Sampling Methods
 
-U-SQL supports data sampling natively in a few forms ("Samplers"). The `SAMPLE` [clause](../u-sql/sample-u-sql.md) syntax supports a few Samplers while requiring small edits to the script and the `SAMPLE` [expression](../u-sql/sample-expression-u-sql.md) syntax offers access to additional types of Samplers.
+U-SQL supports data sampling natively in a few forms ("Samplers"). The `SAMPLE` [clause](sample-u-sql.md) syntax supports a few Samplers while requiring small edits to the script and the `SAMPLE` [expression](sample-expression-u-sql.md) syntax offers access to additional types of Samplers.
 
 A particular use case for data sampling is that queries having aggregates can be executed more quickly (and possibly with fewer resources) over a sample of the input.  In such cases, the aggregates have to be scaled to compensate for sampling. For a sampled input rowset with weight column `w`, the table below shows how to modify aggregates. In each row, evaluating the expression on the right on the sampled input outputs in expectation the same value that would have been obtained by evaluating the aggregate on the left over the unsampled input.
 
@@ -70,5 +70,5 @@ USING Outputters.Tsv();
 
 
 ### See Also  
-* [SAMPLE (U-SQL)](../u-sql/sample-u-sql.md)
-* [SAMPLE Expression (U-SQL)](../u-sql/sample-expression-u-sql.md)
+* [SAMPLE (U-SQL)](sample-u-sql.md)
+* [SAMPLE Expression (U-SQL)](sample-expression-u-sql.md)

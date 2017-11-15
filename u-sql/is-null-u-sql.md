@@ -31,7 +31,7 @@ Is_Null_Predicate :=
   specifies that the Boolean result be negated. The predicate reverses its return values, returning TRUE if the value is not NULL, and FALSE if the value is NULL.
 
 ### Return Type
-[bool](../u-sql/other-simple-built-in-types-and-literals.md)
+[bool](other-simple-built-in-types-and-literals.md)
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -77,11 +77,11 @@ USING Outputters.Tsv();
 ```
 
 ### See Also
-* [LIKE, NOT LIKE (U-SQL)](../u-sql/like-not-like-u-sql.md)
-* [NOT (U-SQL)](../u-sql/not-u-sql.md)
-* [Operators (U-SQL)](../u-sql/operators-u-sql.md)
-* [Logical Operators (U-SQL)](../u-sql/logical-operators-u-sql.md)
-* [Comparison Operators (U-SQL)](../u-sql/comparison-operators-u-sql.md)
+* [LIKE, NOT LIKE (U-SQL)](like-not-like-u-sql.md)
+* [NOT (U-SQL)](not-u-sql.md)
+* [Operators (U-SQL)](operators-u-sql.md)
+* [Logical Operators (U-SQL)](logical-operators-u-sql.md)
+* [Comparison Operators (U-SQL)](comparison-operators-u-sql.md)
 
 
 

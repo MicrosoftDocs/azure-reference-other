@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Output Statement (U-SQL)
-U-SQL does not only support processing unstructured data with the [EXTRACT](../u-sql/extract-expression-u-sql.md) expression but also provides the OUTPUT Statement that writes a rowset back into an unstructured file.    
+U-SQL does not only support processing unstructured data with the [EXTRACT](extract-expression-u-sql.md) expression but also provides the OUTPUT Statement that writes a rowset back into an unstructured file.    
 
 The output processing is done in parallel unless otherwise specified. The rowset will be split into parts which then are written into several file parts in parallel which at the end will be stitched together. The degree of parallelism depends on how much data the rowset contains, what the job’s specified degree of parallelism is etc.. Note that the stitching performance depends on the efficiency of the underlying storage system. For example, the stitching of files in the Azure Data Lake is just a meta-data operation and thus very efficient. For more information about the processing model of outputters, please refer to [U-SQL Programmability Guide: User-Defined Outputter](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-outputter).  
   
@@ -57,7 +57,7 @@ TO_Clause :=
   Other rowsets that can be output are any query expression inside parenthesis, a table-valued function call or an external rowset expression. Please follow the links to the detailed description of each of the rowset expressions.  
   
 - <a name="out_fp"></a>**`Output_File_Path`**     
-Specifies the target file or files. The rowset will be written at the specified [output file path](../u-sql/output-to-files-u-sql.md) location atomically. If the file at the output file path already exists, it will be overwritten.  
+Specifies the target file or files. The rowset will be written at the specified [output file path](output-to-files-u-sql.md) location atomically. If the file at the output file path already exists, it will be overwritten.  
   
 - <a name="OBOFC"></a>**`Order_By_Opt_Fetch_Clause`**     
   The output can be sorted with the optional ORDER BY/FETCH clause.  
@@ -68,7 +68,7 @@ Specifies the target file or files. The rowset will be written at the specified 
   
   Because the order by list expressions can only refer to columns of the rowset that needs to be outputted, one can only order on data contained in the result or use an order expression that does not refer to a column at all.  
   
-  Unlike the [ORDER BY](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) clause on the [SELECT](../u-sql/select-expression-u-sql.md) expression, the `OUTPUT ORDER BY` clause does not require the `OFFSET/FETCH` clause. However, if it is specified it can be used to output only a subset of the data. For further details on the [ORDER BY](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) and `OFFSET/FETCH` syntax and semantics see [ORDER BY and OFFSET/FETCH Clauses (U-SQL)](../u-sql/order-by-and-offset-fetch-clause-u-sql.md).
+  Unlike the [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) clause on the [SELECT](select-expression-u-sql.md) expression, the `OUTPUT ORDER BY` clause does not require the `OFFSET/FETCH` clause. However, if it is specified it can be used to output only a subset of the data. For further details on the [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) and `OFFSET/FETCH` syntax and semantics see [ORDER BY and OFFSET/FETCH Clauses (U-SQL)](order-by-and-offset-fetch-clause-u-sql.md).
   
 - <a name="us_cla"></a>**`USING_Clause`**   
   The USING clause specifies which outputter should be used to turn the rowset into a file.
@@ -82,7 +82,7 @@ Specifies the target file or files. The rowset will be written at the specified 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 
 **Using Built-In Outputter**    
@@ -450,10 +450,10 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [ORDER BY and OFFSET/FETCH Clause (U-SQL)](../u-sql/order-by-and-offset-fetch-clause-u-sql.md)   
-* [U-SQL Built-in Outputters](../u-sql/u-sql-built-in-outputters.md)   
-* [Output to Files (U-SQL)](../u-sql/output-to-files-u-sql.md)   
+* [ORDER BY and OFFSET/FETCH Clause (U-SQL)](order-by-and-offset-fetch-clause-u-sql.md)   
+* [U-SQL Built-in Outputters](u-sql-built-in-outputters.md)   
+* [Output to Files (U-SQL)](output-to-files-u-sql.md)   
 * [U-SQL Programmability Guide: User-Defined Outputter](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-outputter)
-* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)  
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 

@@ -32,7 +32,7 @@ Truncate_Table_Statement :=
   If the specified table does not exist, is an external table, or the user has no permissions to delete the data from the table, an error is raised.   
   
 - <a name="ptl"></a>**`Partition_Label_List`**  
-  The optional partition label list specifies the list of partition buckets to be truncated by specifying the literal values for the partition columns. The values have to be provided as constants or as scalar static variables. For more details on the exact syntax see [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../u-sql/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
+  The optional partition label list specifies the list of partition buckets to be truncated by specifying the literal values for the partition columns. The values have to be provided as constants or as scalar static variables. For more details on the exact syntax see [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
   
   
 ### Examples  
@@ -50,8 +50,8 @@ DECLARE @p int = 5;
 TRUNCATE TABLE SampleTable PARTITION (@p);  
 ```  
 ### See Also  
-* [CREATE TABLE (U-SQL): Overview](../u-sql/create-table-u-sql-overview.md)  
-* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../u-sql/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
-* [DROP TABLE (U-SQL)](../u-sql/drop-table-u-sql.md)  
+* [CREATE TABLE (U-SQL): Overview](create-table-u-sql-overview.md)  
+* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
+* [DROP TABLE (U-SQL)](drop-table-u-sql.md)  
   
   

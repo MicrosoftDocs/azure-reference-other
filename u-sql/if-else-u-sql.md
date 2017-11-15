@@ -130,6 +130,6 @@ USING Outputters.Csv();
 ```
 
 ## See Also
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)
-* [Common SQL Expressions in U-SQL](../u-sql/common-sql-expressions-in-u-sql.md)
-* [Built-in Functions (U-SQL)](../u-sql/built-in-functions-u-sql.md) 
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
+* [Common SQL Expressions in U-SQL](common-sql-expressions-in-u-sql.md)
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md) 

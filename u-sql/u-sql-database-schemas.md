@@ -36,6 +36,6 @@ Get-AzureRmDataLakeAnalyticsCatalogItem -Account $DataLakeAnalyticsAccount -Path
 ```
   
 ### See Also    
-* [CREATE SCHEMA (U-SQL)](../u-sql/create-schema-u-sql.md)
-* [USE SCHEMA (U-SQL)](../u-sql/use-schema-u-sql.md) 
-* [DROP SCHEMA (U-SQL)](../u-sql/drop-schema-u-sql.md)
+* [CREATE SCHEMA (U-SQL)](create-schema-u-sql.md)
+* [USE SCHEMA (U-SQL)](use-schema-u-sql.md) 
+* [DROP SCHEMA (U-SQL)](drop-schema-u-sql.md)

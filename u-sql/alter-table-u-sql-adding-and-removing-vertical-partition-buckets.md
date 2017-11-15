@@ -106,9 +106,9 @@ DROP IF EXISTS PARTITION(@partition1);
 ```
   
 ### See Also  
-* [PARTITION (U-SQL)](../u-sql/partition-u-sql.md)  
-* [CREATE TABLE (U-SQL): Overview](../u-sql/create-table-u-sql-overview.md)  
-* [TRUNCATE TABLE (U-SQL)](../u-sql/truncate-table-u-sql.md)
-* [DROP TABLE (U-SQL)](../u-sql/drop-table-u-sql.md) 
-* [CREATE TABLE (U-SQL): Creating a Table with Schema](../u-sql/create-table-u-sql-creating-a-table-with-schema.md)  
-* [INSERT (U-SQL)](../u-sql/insert-u-sql.md) 
+* [PARTITION (U-SQL)](partition-u-sql.md)  
+* [CREATE TABLE (U-SQL): Overview](create-table-u-sql-overview.md)  
+* [TRUNCATE TABLE (U-SQL)](truncate-table-u-sql.md)
+* [DROP TABLE (U-SQL)](drop-table-u-sql.md) 
+* [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md)  
+* [INSERT (U-SQL)](insert-u-sql.md) 

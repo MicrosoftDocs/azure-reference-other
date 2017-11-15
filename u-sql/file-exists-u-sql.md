@@ -28,7 +28,7 @@ Checks if a file in the specified location exists at compile time.
 A constant-foldable string expression.  `path` can be any supported file path Universal Resource Identifier (URI).  If `path` is not constant-foldable, the error `E_CSC_USER_EXPRESSIONNOTCONSTANTFOLDABLE` is raised.  If `path` is empty (null or the zero-length string), the error `E_CSC_USER_EMPTYFILEPATH` is raised. If `path` contains invalid characters, the error `E_CSC_USER_INVALIDFILENAME` is raised.
 
 ### Return Value
-[bool](../u-sql/other-simple-built-in-types-and-literals.md)  
+[bool](other-simple-built-in-types-and-literals.md)  
 `True` if `path` exists and the user has access to it.  `False` if `path` does not exists, refers to a folder or the user has no access to it. 
 
 ### Example
@@ -50,7 +50,7 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [FILE Functions (U-SQL)](../u-sql/file-functions-u-sql.md)
-* [Built-in Functions (U-SQL)](../u-sql/built-in-functions-u-sql.md)  
-* [C# Functions and Operators (U-SQL)](../u-sql/csharp-functions-and-operators-u-sql.md)
+* [FILE Functions (U-SQL)](file-functions-u-sql.md)
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
+* [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md)
 

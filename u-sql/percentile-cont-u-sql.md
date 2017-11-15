@@ -17,7 +17,7 @@ manager: "jhubbard"
 # PERCENTILE_CONT (U-SQL)
 The PERCENTILE_CONT analytic function calculates a percentile based on a continuous distribution of the values in the window. The result is interpolated and might not be equal to any of the specific values in the column.  
 
-PERCENTILE_CONT can only be used in the context of a [windowing expression](../u-sql/over-expression-u-sql.md). 
+PERCENTILE_CONT can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
 <table><th align="left">Syntax</th><tr><td><pre>
 PERCENTILE_CONT_Expression :=                                                                            
@@ -27,7 +27,7 @@ PERCENTILE_CONT_Expression :=
    
 ### Semantics of Syntax Elements 
 * <a name="dbl_lit"></a>**`double_literal`**     
-The percentile to compute. The value must range between 0.0 and 1.0 and be of type [double](../u-sql/numeric-types-and-literals.md). 
+The percentile to compute. The value must range between 0.0 and 1.0 and be of type [double](numeric-types-and-literals.md). 
 
 * <a name="wg_soc"></a>**`WITHIN GROUP ( Simple_Order_By_Clause )`**  
   Specifies a list of numeric values to sort and compute the percentile over.  
@@ -41,16 +41,16 @@ The percentile to compute. The value must range between 0.0 and 1.0 and be of ty
        'ASC' | 'DESC'.
   </pre></td></tr></table>
 
-  Only one `ORDER BY` expression is allowed. The type of the expression has to be a nullable or nonnullable [numeric type](../u-sql/numeric-types-and-literals.md). The default sort order is ascending. 
+  Only one `ORDER BY` expression is allowed. The type of the expression has to be a nullable or nonnullable [numeric type](numeric-types-and-literals.md). The default sort order is ascending. 
 
 ### Return Type 
-The return type is [double?](../u-sql/numeric-types-and-literals.md). 
+The return type is [double?](numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression 
-This analytic function can be used in a [windowing expression](../u-sql/over-expression-u-sql.md) with the following restrictions: 
-* Only the [PARTITION BY](../u-sql/over-expression-u-sql.md#OPBC) clause can be specified with the [OVER](../u-sql/over-expression-u-sql.md) operator. 
-* The [ORDER BY](../u-sql/over-expression-u-sql.md#OBC) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is not allowed. 
-* The [ROWS](../u-sql/over-expression-u-sql.md#row_cla) clause in the [OVER](../u-sql/over-expression-u-sql.md) operator is not allowed. 
+This analytic function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
+* Only the [PARTITION BY](over-expression-u-sql.md#OPBC) clause can be specified with the [OVER](over-expression-u-sql.md) operator. 
+* The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) operator is not allowed. 
+* The [ROWS](over-expression-u-sql.md#row_cla) clause in the [OVER](over-expression-u-sql.md) operator is not allowed. 
 
 ### Example
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -87,6 +87,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [PERCENTILE_DISC (U-SQL)](../u-sql/percentile-disc-u-sql.md)
-* [Analytic Functions (U-SQL)](../u-sql/analytic-functions-u-sql.md)  
-* [OVER Expression (U-SQL)](../u-sql/over-expression-u-sql.md) 
+* [PERCENTILE_DISC (U-SQL)](percentile-disc-u-sql.md)
+* [Analytic Functions (U-SQL)](analytic-functions-u-sql.md)  
+* [OVER Expression (U-SQL)](over-expression-u-sql.md) 

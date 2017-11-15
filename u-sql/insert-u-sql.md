@@ -26,11 +26,11 @@ Insert_Statement :=
   
 ### Semantics of Syntax Elements    
 -   <a name="Ident"></a>**`Identifier`**  
-    The identifier specifies the [managed table](../u-sql/u-sql-tables.md#man_ext_tabls) into which the data gets inserted. If the `Identifier` is a three-part identifier, the data will be inserted into the table in the specified database and schema. If it is a two-part identifier, then the data will be inserted into the table in the specified schema of the current database context. If the identifier is a simple identifier, then the data will be inserted into the table in the current database and schema context.  
+    The identifier specifies the [managed table](u-sql-tables.md#man_ext_tabls) into which the data gets inserted. If the `Identifier` is a three-part identifier, the data will be inserted into the table in the specified database and schema. If it is a two-part identifier, then the data will be inserted into the table in the specified schema of the current database context. If the identifier is a simple identifier, then the data will be inserted into the table in the current database and schema context.  
     
     If the table of the given name does not exist, is an external table, or the user has no permissions to insert data into the table, an error is raised.  
   
-    If the target table is a [vertically partitioned table](../u-sql/create-table-u-sql-creating-a-table-with-schema.md), then either the `Insert_Partition_Label` or <a href="#int_cla">`Integrity_Clause`</a> has to be specified. The data will be automatically added to the specified/appropriate partitions, but no new partitions are being created. Partitions have to be explicitly created with [ALTER TABLE ADD PARTITION](../u-sql/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md).  
+    If the target table is a [vertically partitioned table](create-table-u-sql-creating-a-table-with-schema.md), then either the `Insert_Partition_Label` or <a href="#int_cla">`Integrity_Clause`</a> has to be specified. The data will be automatically added to the specified/appropriate partitions, but no new partitions are being created. Partitions have to be explicitly created with [ALTER TABLE ADD PARTITION](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md).  
       
 -   <a name="Ident_l"></a>**`Identifier_List`**    
     The optional list of identifier provides the list of columns in the target table into which data is being inserted. An error is raised if the list contains a column that does not exists in the target table.  
@@ -81,7 +81,7 @@ Insert_Statement :=
     If the target table is not a partitioned table and the `Integrity_Clause` is specified an error will be raised.  
   
 - <a name="ins_src"></a>**`Insert_Source`**    
-  INSERT currently takes input from two sources: a [SELECT](../u-sql/select-expression-u-sql.md) expression and the [VALUES](../u-sql/values-expression-u-sql.md) row constructor:
+  INSERT currently takes input from two sources: a [SELECT](select-expression-u-sql.md) expression and the [VALUES](values-expression-u-sql.md) row constructor:
   <table><th>Syntax</th><tr><td><pre>
   Insert_Source :=                                                                                    
        <a href="select-expression-u-sql.md">Select_Expression</a> 
@@ -176,8 +176,8 @@ VALUES
 ```
   
 ### See Also
-* [PARTITION (U-SQL)](../u-sql/partition-u-sql.md)   
-* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../u-sql/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
-* [OUTPUT Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
-* [CREATE TABLE (U-SQL): Creating a Table with Schema](../u-sql/create-table-u-sql-creating-a-table-with-schema.md)
-* [CREATE TABLE (U-SQL): Creating a Table from a Query](../u-sql/create-table-u-sql-creating-a-table-from-a-query.md)  
+* [PARTITION (U-SQL)](partition-u-sql.md)   
+* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
+* [OUTPUT Statement (U-SQL)](output-statement-u-sql.md)  
+* [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md)
+* [CREATE TABLE (U-SQL): Creating a Table from a Query](create-table-u-sql-creating-a-table-from-a-query.md)  

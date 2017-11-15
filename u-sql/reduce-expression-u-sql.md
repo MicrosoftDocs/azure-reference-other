@@ -55,7 +55,7 @@ Specifies the input rowset that the reducer will operate on as either the refere
     A table can be referenced either with its fully qualified 3-part name, within the current database context with a 2-part name, or within the current database and schema context with a single-part name.   
   
   - **`Rowset_Expression`**   
-    U-SQL also provides the ability to reduce nested [query expressions](../u-sql/query-statements-and-expressions-u-sql.md), [table-valued function calls](../u-sql/table-valued-function-expression-u-sql.md) or [querying external rowsets](../u-sql/u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.  
+    U-SQL also provides the ability to reduce nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](table-valued-function-expression-u-sql.md) or [querying external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.  
 
     <table><th>Syntax</th><tr><td><pre>
     Rowset_Expression :=                                                                      
@@ -95,7 +95,7 @@ The optional `PRESORT` clause guarantees the rows are ordered by the given ident
     Column_Definition :=
         <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.</pre></td></tr></table>
      
-    Each column has an identifier that can be either a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md). A column is typed with one of the U-SQL types that the reducer supports.  
+    Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md). A column is typed with one of the U-SQL types that the reducer supports.  
     
     The UDO programming model makes the specified rowset schema available to the implementation of the reducer. An error is raised if the reducer is producing a schema that is incompatible with the specified return schema.  
   
@@ -154,7 +154,7 @@ The `USING` clause specifies which reducer should be used to transform the input
 ### Examples  
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../u-sql/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 <a name="RangeReducer">**User-Defined Reducer - RangeReducer**</a>   
 Example is a slightly modified version of the example given at [How do I combine overlapping ranges using U-SQL? Introducing U-SQL Reducer UDOs](https://blogs.msdn.microsoft.com/azuredatalake/2016/06/27/how-do-i-combine-overlapping-ranges-using-u-sql-introducing-u-sql-reducer-udos/) and [usql/Examples/RangeReducer/RangeReducer/](https://github.com/Azure/usql/tree/master/Examples/RangeReducer/RangeReducer). Please review the reducer article for details.   
@@ -365,7 +365,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **Reducer with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 This examples continues to use `SalesReducer` defined earlier.
 ```
 // Same as previous example but only returns top 3 records ordered by SalesAmount
@@ -389,10 +389,10 @@ USING Outputters.Tsv(outputHeader: true);
 ```
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md) 
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
 * [U-SQL Programmability Guide: User-Defined Reducer](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-reducer)   
-* [Extending U-SQL Expressions with User-Code](../u-sql/extending-u-sql-expressions-with-user-code.md)
+* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 
 

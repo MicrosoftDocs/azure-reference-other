@@ -58,4 +58,4 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Double Slash Comment (U-SQL)](../u-sql/double-slash-comment-u-sql.md)
+* [Double Slash Comment (U-SQL)](double-slash-comment-u-sql.md)

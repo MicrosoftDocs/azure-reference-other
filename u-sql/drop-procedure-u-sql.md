@@ -35,7 +35,7 @@ Drop_Proc_Statement :=
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://channel9.msdn.com/Series/AzureDataLake/USQL-LocalRun).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples utilize the procedures created from [CREATE PROCEDURE (U-SQL)](../u-sql/create-procedure-u-sql.md).
+- The examples utilize the procedures created from [CREATE PROCEDURE (U-SQL)](create-procedure-u-sql.md).
 ```
 // Will error if not exists
 DROP PROCEDURE TestReferenceDB.dbo.myStoredProcWithParameters;
@@ -45,6 +45,6 @@ DROP PROCEDURE IF EXISTS TestReferenceDB.dbo.myFirstStoredProc;
 
   
 ### See Also    
-* [U-SQL Procedures](../u-sql/u-sql-procedures.md)  
-* [CREATE PROCEDURE (U-SQL)](../u-sql/create-procedure-u-sql.md)  
-* [Calling a Procedure (U-SQL)](../u-sql/calling-a-procedure-u-sql.md)   
+* [U-SQL Procedures](u-sql-procedures.md)  
+* [CREATE PROCEDURE (U-SQL)](create-procedure-u-sql.md)  
+* [Calling a Procedure (U-SQL)](calling-a-procedure-u-sql.md)   

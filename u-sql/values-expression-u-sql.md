@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # VALUES Expression (U-SQL)
-U-SQL offers the ability to create a table using constant values using the Table Value Constructor `VALUES` expression that can be used by a [SELECT](../u-sql/select-expression-u-sql.md) expression’s [FROM](../u-sql/from-clause-u-sql.md) clause or by [INSERT](../u-sql/insert-u-sql.md) statement as an input rowset. The names for the columns are provided by the SELECT’s mandatory derived table alias or the target table’s columns in the [INSERT](../u-sql/insert-u-sql.md) case.   
+U-SQL offers the ability to create a table using constant values using the Table Value Constructor `VALUES` expression that can be used by a [SELECT](select-expression-u-sql.md) expression’s [FROM](from-clause-u-sql.md) clause or by [INSERT](insert-u-sql.md) statement as an input rowset. The names for the columns are provided by the SELECT’s mandatory derived table alias or the target table’s columns in the [INSERT](insert-u-sql.md) case.   
   
 <table><th align="left">Syntax</th><tr><td><pre>
 Table_Value_Constructor_Expression :=                                                                    
@@ -34,16 +34,16 @@ The `VALUES` constructor takes a list of row constructors that create a value fo
        expression {',' expression}.
   </pre></td></tr></table>
   
-    The types for the columns are inferred from the type of the expression in the first row constructor and has to be one of the U-SQL [built-in types](../u-sql/built-in-u-sql-types.md). All subsequent row constructors then have to produce the same types for the same columns and if now, they have to be cast or an error is raised. If any of the column values is null, then the type of all expressions for that column in all row constructor has to be nullable.   
+    The types for the columns are inferred from the type of the expression in the first row constructor and has to be one of the U-SQL [built-in types](built-in-u-sql-types.md). All subsequent row constructors then have to produce the same types for the same columns and if now, they have to be cast or an error is raised. If any of the column values is null, then the type of all expressions for that column in all row constructor has to be nullable.   
  
 ### Examples    
 See:
-* [U-SQL SELECT Selecting from the VALUES Table Value Constructor](../u-sql/u-sql-select-selecting-from-the-values-table-value-constructor.md), and 
-* [INSERT (U-SQL)](../u-sql/insert-u-sql.md).  
+* [U-SQL SELECT Selecting from the VALUES Table Value Constructor](u-sql-select-selecting-from-the-values-table-value-constructor.md), and 
+* [INSERT (U-SQL)](insert-u-sql.md).  
 
 ### See Also 
-* [U-SQL SELECT Selecting from the VALUES Table Value Constructor](../u-sql/u-sql-select-selecting-from-the-values-table-value-constructor.md)  
-* [Query Statements and Expressions (U-SQL)](../u-sql/query-statements-and-expressions-u-sql.md)  
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
-* [INSERT (U-SQL)](../u-sql/insert-u-sql.md)
+* [U-SQL SELECT Selecting from the VALUES Table Value Constructor](u-sql-select-selecting-from-the-values-table-value-constructor.md)  
+* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)  
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
+* [INSERT (U-SQL)](insert-u-sql.md)
 

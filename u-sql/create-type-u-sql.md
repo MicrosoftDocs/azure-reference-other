@@ -51,7 +51,7 @@ If the optional `IF NOT EXISTS` is specified, then the statement creates the typ
         <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
     </pre></td></tr></table>
   
-    Each column has an identifier that can be either a [quoted or unquoted identifier](../u-sql/u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](../u-sql/built-in-u-sql-types.md).   
+    Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](built-in-u-sql-types.md).   
   
   
 ### Examples    
@@ -182,6 +182,6 @@ USING Outputters.Tsv();
 
   
 ### See Also
-* [User-defined U-SQL Types](../u-sql/user-defined-u-sql-types.md)  
-* [DROP TYPE (U-SQL)](../u-sql/drop-type-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)   
+* [User-defined U-SQL Types](user-defined-u-sql-types.md)  
+* [DROP TYPE (U-SQL)](drop-type-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   

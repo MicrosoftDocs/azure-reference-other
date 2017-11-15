@@ -15,9 +15,9 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Query Statements and Expressions (U-SQL)
-The core processing capability of U-SQL is to transform between rowsets using query expressions. This is done by combining query statements in a [U-SQL script](../u-sql/u-sql-scripts.md).  
+The core processing capability of U-SQL is to transform between rowsets using query expressions. This is done by combining query statements in a [U-SQL script](u-sql-scripts.md).  
   
-Since the current version of the Azure Data Lake Analytics service is only executing batch scripts, a query expression cannot be returned directly. It always has to be either output into a table with an [INSERT](../u-sql/insert-u-sql.md) statement or a file using an [`OUTPUT`](../u-sql/output-statement-u-sql.md) statement, or assigned to a rowset variable.  
+Since the current version of the Azure Data Lake Analytics service is only executing batch scripts, a query expression cannot be returned directly. It always has to be either output into a table with an [INSERT](insert-u-sql.md) statement or a file using an [`OUTPUT`](output-statement-u-sql.md) statement, or assigned to a rowset variable.  
   
 <table><th align="left">Syntax U-SQL Query Statements</th><tr><td><pre>
 Query_Statement :=                                                                                       
@@ -33,7 +33,7 @@ Query_Statement :=
   The name can be used in subsequent query expressions to refer to the named expression that then will be inlined.  
    
 - <a name="qry_exp_fetch"></a>**`Query_Expression_With_Fetch`**   
-  Is the query expression followed by an optional [`ORDER BY/OFFSET FETCH`](../u-sql/order-by-and-offset-fetch-clause-u-sql.md) clause.   
+  Is the query expression followed by an optional [`ORDER BY/OFFSET FETCH`](order-by-and-offset-fetch-clause-u-sql.md) clause.   
   
   <table><th>Syntax U-SQL Query Expressions</th><tr><td><pre>
   Query_Expression_With_Fetch :=
@@ -45,10 +45,10 @@ Query_Statement :=
   </pre></td></tr></table>
     
   - <a name="qry_exp"></a>**`Query_Expression`**   
-    Is the actual transformation expression.  A query expression can either be a primary rowset query, a query expression enclosed in parenthesis or a [set expression over two rowsets](../u-sql/set-rowset-expressions-u-sql.md).   
+    Is the actual transformation expression.  A query expression can either be a primary rowset query, a query expression enclosed in parenthesis or a [set expression over two rowsets](set-rowset-expressions-u-sql.md).   
 
   - <a name="pri_row_exp"></a>**`Primary_Rowset_Expression`**  
-    U-SQL’s primary rowset expressions are the main rowset generating and transforming expressions of the language: The [EXTRACT](../u-sql/extract-expression-u-sql.md) expression to generate a rowset from unstructured data, the [SELECT](../u-sql/select-expression-u-sql.md) expression, and the [PROCESS](../u-sql/process-expression-u-sql.md), [REDUCE](../u-sql/reduce-expression-u-sql.md), [COMBINE](../u-sql/combine-expression-u-sql.md) expressions that apply the custom-defined [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) (UDO) to the input rowset(s) and generate a new rowset. In addition it also includes the invocation of [table-valued functions](../u-sql/u-sql-table-valued-functions.md).  
+    U-SQL’s primary rowset expressions are the main rowset generating and transforming expressions of the language: The [EXTRACT](extract-expression-u-sql.md) expression to generate a rowset from unstructured data, the [SELECT](select-expression-u-sql.md) expression, and the [PROCESS](process-expression-u-sql.md), [REDUCE](reduce-expression-u-sql.md), [COMBINE](combine-expression-u-sql.md) expressions that apply the custom-defined [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) (UDO) to the input rowset(s) and generate a new rowset. In addition it also includes the invocation of [table-valued functions](u-sql-table-valued-functions.md).  
 
     <table><th>Syntax Primary Rowset Expression</th><tr><td><pre>
     Primary_Rowset_Expression :=                                                                   
@@ -86,6 +86,6 @@ USING Outputters.Tsv();
 
   
 ### See Also 
-* [Data Modification Language (DML) Statements (U-SQL)](../u-sql/data-modification-language-dml-statements-u-sql.md) 
-* [Output Statement (U-SQL)](../u-sql/output-statement-u-sql.md)  
+* [Data Modification Language (DML) Statements (U-SQL)](data-modification-language-dml-statements-u-sql.md) 
+* [Output Statement (U-SQL)](output-statement-u-sql.md)  
 

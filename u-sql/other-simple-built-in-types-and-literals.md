@@ -32,7 +32,7 @@ The built-in type `Guid` does not have a built-in literal form, but requires the
 The built-in type `byte[]` does not have a built-in literal form, but accepts the standard C# construction `new byte[] {}` as a constant-foldable constructor.  
 
 ### See Also
-* [Simple Built-In U-SQL Types](../u-sql/simple-built-in-u-sql-types.md)
-* [Data Types and Literals (U-SQL)](../u-sql/data-types-and-literals-u-sql.md)  
+* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
+* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md)  
 
   

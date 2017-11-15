@@ -28,7 +28,7 @@ Returns the last modified timestamp of the file at the specified location at com
 A constant-foldable string expression.  `path` can be any supported file path Universal Resource Identifier (URI).  If `path` is not constant-foldable, the error `E_CSC_USER_EXPRESSIONNOTCONSTANTFOLDABLE` is raised.  If `path` is empty (null or the zero-length string), the error `E_CSC_USER_EMPTYFILEPATH` is raised. If `path` contains invalid characters, the error `E_CSC_USER_INVALIDFILENAME` is raised.
 
 ### Return Value
-[DateTime?](../u-sql/temporal-types-and-literals.md)   
+[DateTime?](temporal-types-and-literals.md)   
 The last modified timestamp of `path` at compile time as a DateTime value (Kind is Unspecified).  `Null` if `path` does not exists, refers to a folder or the user has no access to it. 
 
 ### Example
@@ -50,7 +50,7 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [FILE Functions (U-SQL)](../u-sql/file-functions-u-sql.md)
-* [Built-in Functions (U-SQL)](../u-sql/built-in-functions-u-sql.md)  
-* [C# Functions and Operators (U-SQL)](../u-sql/csharp-functions-and-operators-u-sql.md)
+* [FILE Functions (U-SQL)](file-functions-u-sql.md)
+* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
+* [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md)
 

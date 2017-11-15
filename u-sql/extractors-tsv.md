@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Extractors.Tsv()
-The Tsv() extractor disallows the `delimiter` parameter and defaults the field delimiter to '\t' (tab). All other parameters are the same.   See [Extractor Parameters (U-SQL)](../u-sql/extractor-parameters-u-sql.md) for supported parameters and their defaults values.   
+The Tsv() extractor disallows the `delimiter` parameter and defaults the field delimiter to '\t' (tab). All other parameters are the same.   See [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md) for supported parameters and their defaults values.   
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -56,10 +56,10 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Extractor Parameters (U-SQL)](../u-sql/extractor-parameters-u-sql.md)
-* [Extractors.Text()](../u-sql/extractors-text.md) 
-* [Extractors.Csv()](../u-sql/extractors-csv.md)  
-* [Built-in U-SQL UDOs](../u-sql/built-in-u-sql-udos.md)
-* [EXTRACT Expression (U-SQL)](../u-sql/extract-expression-u-sql.md) 
-* [Input Files (U-SQL)](../u-sql/input-files-u-sql.md)
+* [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md)
+* [Extractors.Text()](extractors-text.md) 
+* [Extractors.Csv()](extractors-csv.md)  
+* [Built-in U-SQL UDOs](built-in-u-sql-udos.md)
+* [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md) 
+* [Input Files (U-SQL)](input-files-u-sql.md)
 

@@ -16,7 +16,7 @@ manager: "jhubbard"
 ---
 # usql.stats_columns (U-SQL)
 
-Contains a row for each column that is part of [usql.stats](../u-sql/usql-stats-u-sql.md) statistics. 
+Contains a row for each column that is part of [usql.stats](usql-stats-u-sql.md) statistics. 
 
 Column name  |Data type  |Description  
 ---------|---------|---------
@@ -61,10 +61,10 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 ### See Also
-* [Catalog Views (U-SQL)](../u-sql/catalog-views-u-sql.md)
-* [usql.stats (U-SQL)](../u-sql/usql-stats-u-sql.md)
-* [usql.objects (U-SQL)](../u-sql/usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](../u-sql/data-definition-language-ddl-statements-u-sql.md)
+* [Catalog Views (U-SQL)](catalog-views-u-sql.md)
+* [usql.stats (U-SQL)](usql-stats-u-sql.md)
+* [usql.objects (U-SQL)](usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
 
 
 
