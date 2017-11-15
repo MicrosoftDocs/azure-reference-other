@@ -19,8 +19,8 @@ The COUNT aggregator returns the number of items in a group. If COUNT(*) is spec
 
 The identity value is 0. 
 
-<table><th align="left">Syntax</th><tr><td><pre>
-COUNT_Expression :=                                                                                      
+<table border="1" width="100%"><th align="left">Syntax</th><tr><td><pre>
+COUNT_Expression := 
     'COUNT' '(' ['<a href="#dist">DISTINCT</a>'] (<a href="#exp">expression | '*'</a>) ')'.  
 </pre></td></tr></table>
 
@@ -41,6 +41,7 @@ This aggregator can be used in a [windowing expression](over-expression-u-sql.md
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure you create and populate the table in a separate window before executing the examples.
+
 ```
 DROP TABLE IF EXISTS master.dbo.Employees;
 
