@@ -37,11 +37,11 @@ Query_Statement :=
   
   <table><th>Syntax U-SQL Query Expressions</th><tr><td><pre>
   Query_Expression_With_Fetch :=
-       Query_Expression <a href="ORDER%20BY%20and%20OFFSET_FETCH%20Clause%20(U-SQL).md">[Order_By_Fetch_Clause]</a>.<br />     
+       Query_Expression <a href="order-by-and-offset-fetch-clause-u-sql.md">[Order_By_Fetch_Clause]</a>.<br />     
   Query_Expression :=
        <a href="#pri_row_exp">Primary_Rowset_Expression</a>
   |    '(' Query_Expression_With_Fetch ')'
-  |    <a href="Set%20Rowset%20Expressions%20(U-SQL).md">Set_Rowset_Expression</a>.
+  |    <a href="set-rowset-expressions-u-sql.md">Set_Rowset_Expression</a>.
   </pre></td></tr></table>
     
   - <a name="qry_exp"></a>**`Query_Expression`**   

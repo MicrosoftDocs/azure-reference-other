@@ -63,7 +63,7 @@ Specifies the target file or files. The rowset will be written at the specified 
   The output can be sorted with the optional ORDER BY/FETCH clause.  
   <table><th>Syntax</th><tr><td><pre>
   Order_By_Opt_Fetch_Clause :=                                                                        
-       Order_By_Clause [ <a href="order-by-and-offset-fetch-clauses-u-sql.md#off_F">Offset_Fetch</a> ].
+       Order_By_Clause [ <a href="order-by-and-offset-fetch-clause-u-sql.md#off_F">Offset_Fetch</a> ].
   </pre></td></tr></table>
   
   Because the order by list expressions can only refer to columns of the rowset that needs to be outputted, one can only order on data contained in the result or use an order expression that does not refer to a column at all.  

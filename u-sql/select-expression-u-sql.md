@@ -29,7 +29,7 @@ Select_Expression :=
      <a href="from-clause-u-sql.md">Select_From_Clause</a> 
      <a href="where-clause-u-sql.md">[Where_Clause]</a> 
      <a href="group-by-and-having-clauses-u-sql.md">[Group_By_Clause]</a> 
-     <a href="order-by-and-offset-fetch-clauses-u-sql.md">[Order_By_Fetch_Clause]</a>.
+     <a href="order-by-and-offset-fetch-clause-u-sql.md">[Order_By_Fetch_Clause]</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    

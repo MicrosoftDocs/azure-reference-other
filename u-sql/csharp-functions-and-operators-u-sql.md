@@ -87,7 +87,7 @@ All [C# operators](https://msdn.microsoft.com/library/6a71f45d.aspx) except for 
 &emsp;&#9679;&emsp;<a href="#max">Max</a><br />
 &emsp;&#9679;&emsp;<a href="#min">Min</a><br />
 &emsp;&#9679;&emsp;<a href="#pow">Pow</a><br />
-&emsp;&#9679;&emsp;<a href="../USQL/extending-u-sql-expressions-with-user-code.md#usingRound">Round</a><br />
+&emsp;&#9679;&emsp;<a href="extending-u-sql-expressions-with-user-code.md#usingRound">Round</a><br />
 &emsp;&#9679;&emsp;<a href="#sign">Sign</a><br />
 &emsp;&#9679;&emsp;<a href="#sqrt">Sqrt</a><br />
 &emsp;&#9679;&emsp;<a href="#truncate">Truncate</a>
