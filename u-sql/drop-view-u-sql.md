@@ -20,9 +20,9 @@ A view can be dropped with the `DROP VIEW` statement. The statement drops the sp
 > [!WARNING]
 > **This operation cannot be undone!**
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_View_Statement :=                                                                                   
-      'DROP' 'VIEW' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.  
+    'DROP' 'VIEW' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.
 </pre></td></table>
 
 ### Semantics of Syntax Elements    
@@ -43,6 +43,6 @@ DROP VIEW IF EXISTS TestReferenceDB.dbo.SampleView;
 ```
   
 ### See Also  
-- [U-SQL Views](u-sql-views.md)  
-- [CREATE VIEW (U-SQL)](create-view-u-sql.md)
-- [U-SQL Functions](u-sql-functions.md)
+- [U-SQL Views](../USQL/u-sql-views.md)  
+- [CREATE VIEW (U-SQL)](../USQL/create-view-u-sql.md)
+- [U-SQL Functions](../USQL/u-sql-functions.md)

@@ -17,9 +17,9 @@ manager: "jhubbard"
 # Double Slash Comment (U-SQL)
 Indicates user-provided text. Comments can be inserted on a separate line, nested at the end of a U-SQL command line, or within a U-SQL statement. The query processor does not evaluate the comment.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Double_Slash_Comment :=                                                                             
-    '//' <a href="#comment1">text_of_comment</a>.  
+    '//' <a href="#comment1">text_of_comment</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    
@@ -56,4 +56,4 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Slash Star Comment (U-SQL)](slash-star-comment-u-sql.md)
+* [Slash Star Comment (U-SQL)](../USQL/slash-star-comment-u-sql.md)

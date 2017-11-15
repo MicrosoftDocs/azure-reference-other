@@ -32,23 +32,23 @@ It is however not ANSI SQL. For starters, its keywords such as SELECT have to be
 The language reference is organized as follows:    
 1. This introduction provides a quick introduction and overview of the reference documentation.  
 2. Introduction of the U-SQL concepts   
-    a. [U-SQL Processing Model](u-sql-concepts.md)  
-    b. [U-SQL Script Structure](u-sql-scripts.md)  
-    c. [Files and File Sets as Inputs and Outputs](files-and-file-sets-as-inputs-and-outputs-u-sql.md)  
-    d. [Rowset: The Processing Data Structure](rowset-the-processing-data-structure-u-sql.md)  
-    e. [U-SQL Identifiers](identifiers-u-sql.md)  
-    f. [U-SQL Expressions](expressions-u-sql.md)  
-    g. [Metadata system and objects](data-definition-language-ddl-statements-u-sql.md)  
-    h. [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
+    a. [U-SQL Processing Model](../USQL/u-sql-concepts.md)  
+    b. [U-SQL Script Structure](../USQL/u-sql-scripts.md)  
+    c. [Files and File Sets as Inputs and Outputs](../USQL/files-and-file-sets-as-inputs-and-outputs-u-sql.md)  
+    d. [Rowset: The Processing Data Structure](../USQL/rowset-the-processing-data-structure-u-sql.md)  
+    e. [U-SQL Identifiers](../USQL/identifiers-u-sql.md)  
+    f. [U-SQL Expressions](../USQL/expressions-u-sql.md)  
+    g. [Metadata system and objects](../USQL/data-definition-language-ddl-statements-u-sql.md)  
+    h. [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)
     
 3.  Syntax and Semantics of the U-SQL Language  
-    a. [Data Types and Literals](data-types-and-literals-u-sql.md)   
-    b.  [Data Definition Language (DDL) Statements](data-definition-language-ddl-statements-u-sql.md)  
-    c.  [U-SQL Query Language](query-statements-and-expressions-u-sql.md)  
-    d.  [Data Modification Language (DML) Statements](data-modification-language-dml-statements-u-sql.md)   
-    e.  [Outputting to files with U-SQL](output-statement-u-sql.md)  
-    f.  [Built-in Functions](built-in-functions-u-sql.md)
-4. [How to express common SQL expressions in U-SQL](common-sql-expressions-in-u-sql.md)  
+    a. [Data Types and Literals](../USQL/data-types-and-literals-u-sql.md)   
+    b.  [Data Definition Language (DDL) Statements](../USQL/data-definition-language-ddl-statements-u-sql.md)  
+    c.  [U-SQL Query Language](../USQL/query-statements-and-expressions-u-sql.md)  
+    d.  [Data Modification Language (DML) Statements](../USQL/data-modification-language-dml-statements-u-sql.md)   
+    e.  [Outputting to files with U-SQL](../USQL/output-statement-u-sql.md)  
+    f.  [Built-in Functions](../USQL/built-in-functions-u-sql.md)
+4. [How to express common SQL expressions in U-SQL](../USQL/common-sql-expressions-in-u-sql.md)  
 
 If you are interested in seeing how you use the above concepts to solve certain scenarios please refer to the Language User Guide, [tutorials](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-u-sql-get-started/) as well as the [U-SQL Programmability Guide](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide).  
   

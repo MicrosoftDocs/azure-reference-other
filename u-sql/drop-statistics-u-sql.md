@@ -22,19 +22,19 @@ Note that dropping statistics may have negative impact on the performance on que
 > [!WARNING]
 > **This operation cannot be undone!**
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Statistics_Statement :=                                                                             
-      'DROP' 'STATISTICS' [<a href="#IE">'IF' 'EXISTS'</a>]  
-       <a href="#stat_name_tbl">Statistic_Name 'ON' Table_Name</a>.<br /><br /> 
+    'DROP' 'STATISTICS' [<a href="#IE">'IF' 'EXISTS'</a>]  
+    <a href="#stat_name_tbl">Statistic_Name 'ON' Table_Name</a>.<br />
 <a href="#stat_name_tbl">Statistic_Name</a> := 
-      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />   
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />   
 Table_Name := 
-      <a href="u-sql-identifiers.md">Identifier</a>. 
+    <a href="u-sql-identifiers.md">Identifier</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
 -   <a name="stat_name_tbl"></a>**`Statistic_Name ON Table_Name`**  
-    Specifies the name (either a [quoted or unquoted identifier](u-sql-identifiers.md)) of the statistic of the given table to be dropped.  
+    Specifies the name (either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md)) of the statistic of the given table to be dropped.  
   
 -   <a name="IE"></a>**`IF EXISTS`**  
     If the statistic does not exist or the user does not have permissions, then an error is raised, unless `IF EXISTS` is specified. In that case, if the user has at least enumeration permission on the table, the operation will silently complete without action. If the user has no enumeration permission, an error is raised.  
@@ -49,6 +49,6 @@ DROP STATISTICS IF EXISTS ordersStats ON TestReferenceDB.dbo.Orders;
 ```
   
 ### See Also
--  [CREATE STATISTICS (U-SQL)](create-statistics-u-sql.md)
--  [UPDATE STATISTICS (U-SQL)](update-statistics-u-sql.md)
-- [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)  
+-  [CREATE STATISTICS (U-SQL)](../USQL/create-statistics-u-sql.md)
+-  [UPDATE STATISTICS (U-SQL)](../USQL/update-statistics-u-sql.md)
+- [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)  

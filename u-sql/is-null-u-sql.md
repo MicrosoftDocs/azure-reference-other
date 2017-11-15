@@ -18,21 +18,20 @@ manager: "jhubbard"
 Determines whether a specified expression is NULL.  If the value of expression is NULL, IS NULL returns TRUE; otherwise, it returns FALSE.
 If the value of expression is NULL, IS NOT NULL returns FALSE; otherwise, it returns TRUE.
 
-<table><th>Syntax</th><tr><td><pre>
-Is_Null_Predicate :=                                                                             
-    <a href="#str_exp">string_expression</a> 'IS' ['<a href="#not">NOT</a>'] 'NULL'.
+<table><th align="left">Syntax</th><tr><td><pre>
+Is_Null_Predicate :=                                                                                     
+     <a href="#str_exp">string_expression</a> 'IS' ['<a href="#not">NOT</a>'] 'NULL'.
 </pre></td></tr></table>
-
   
 ### Semantics of Syntax Elements    
--   <a name="str_exp"></a>**`string_expression`**  
-    is the expression that creates the string value to be tested.
+- <a name="str_exp"></a>**`string_expression`**  
+  is the expression that creates the string value to be tested.
 
--   <a name="not"></a>**`NOT`**  
-specifies that the Boolean result be negated. The predicate reverses its return values, returning TRUE if the value is not NULL, and FALSE if the value is NULL.
+- <a name="not"></a>**`NOT`**  
+  specifies that the Boolean result be negated. The predicate reverses its return values, returning TRUE if the value is not NULL, and FALSE if the value is NULL.
 
 ### Return Type
-[bool](other-simple-built-in-types-and-literals.md)
+[bool](../USQL/other-simple-built-in-types-and-literals.md)
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -78,11 +77,11 @@ USING Outputters.Tsv();
 ```
 
 ### See Also
-* [LIKE, NOT LIKE (U-SQL)](like-not-like-u-sql.md)
-* [NOT (U-SQL)](not-u-sql.md)
-* [Operators (U-SQL)](operators-u-sql.md)
-* [Logical Operators (U-SQL)](logical-operators-u-sql.md)
-* [Comparison Operators (U-SQL)](comparison-operators-u-sql.md)
+* [LIKE, NOT LIKE (U-SQL)](../USQL/like-not-like-u-sql.md)
+* [NOT (U-SQL)](../USQL/not-u-sql.md)
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)
+* [Logical Operators (U-SQL)](../USQL/logical-operators-u-sql.md)
+* [Comparison Operators (U-SQL)](../USQL/comparison-operators-u-sql.md)
 
 
 

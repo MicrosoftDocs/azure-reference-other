@@ -17,14 +17,14 @@ manager: "jhubbard"
 # &gt;= (Greater Than or Equal To) (U-SQL)
 Compares two expressions for greater than or equal (a comparison operator).  When you compare nonnull expressions, the result is TRUE if the left operand has a greater or equal value than the right operand; otherwise, the result is FALSE. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Greater_Than_Or_Equal_To_Operator :=                                                                     
     <a href="#expr">expression</a> '>=' <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
 -   <a name="expr"></a>**`expression`**  
-Is any valid expression. Both expressions must have implicitly convertible data types. 
+Is any valid expression. Both expressions must have implicitly convertible data types.
 
 ### Return Type
 Boolean.
@@ -60,5 +60,5 @@ OUTPUT @result TO "/ReferenceGuide/Operators/Comparison/greaterThanOrEqualTo2.tx
 ```
 
 ### See Also   
-* [Operators (U-SQL)](operators-u-sql.md)
-* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)
+* [Simple Built-In U-SQL Types](../USQL/simple-built-in-u-sql-types.md)

@@ -15,22 +15,22 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # U-SQL Built-in Extractors
-U-SQL provides a built-in extractor class called `Extractors` that provides the following three built-in extractors to generate a rowset from the [input file or files](input-files-u-sql.md):    
--   [Extractors.Text()](extractors-text.md) : Provides extraction from delimited text files of different encodings.    
--   [Extractors.Csv()](extractors-csv.md) : Provides extraction from comma-separated value (CSV) files of different encodings.    
--   [Extractors.Tsv()](extractors-tsv.md) : Provides extraction from tab-separated value (TSV) files of different encodings.  
+U-SQL provides a built-in extractor class called `Extractors` that provides the following three built-in extractors to generate a rowset from the [input file or files](../USQL/input-files-u-sql.md):    
+-   [Extractors.Text()](../USQL/extractors-text.md) : Provides extraction from delimited text files of different encodings.    
+-   [Extractors.Csv()](../USQL/extractors-csv.md) : Provides extraction from comma-separated value (CSV) files of different encodings.    
+-   [Extractors.Tsv()](../USQL/extractors-tsv.md) : Provides extraction from tab-separated value (TSV) files of different encodings.  
   
-Technically speaking these are factory methods that generate an instance of the `IExtractor` class and they can be used in the [USING](extract-expression-u-sql.md#us_cl) clause of the [`EXTRACT`](extract-expression-u-sql.md) expression. Since they create the extractor object, one does not need to call them with new.  
+Technically speaking these are factory methods that generate an instance of the `IExtractor` class and they can be used in the [USING](../USQL/extract-expression-u-sql.md#us_cl) clause of the [`EXTRACT`](../USQL/extract-expression-u-sql.md) expression. Since they create the extractor object, one does not need to call them with new.  
   
 The `Csv()` and `Tsv()` extractors are special versions of the generic `Text()` extractor where the delimiter has been fixed to comma and tab respectively.  
 
-If the [EXTRACT](extract-expression-u-sql.md) expression specifies a file set pattern, then the extractor [parameters](extractor-parameters-u-sql.md) will be applied to all the selected files equally. If different files require different parameter values, then different [EXTRACT](extract-expression-u-sql.md) expressions need to be used.  
+If the [EXTRACT](../USQL/extract-expression-u-sql.md) expression specifies a file set pattern, then the extractor [parameters](../USQL/extractor-parameters-u-sql.md) will be applied to all the selected files equally. If different files require different parameter values, then different [EXTRACT](../USQL/extract-expression-u-sql.md) expressions need to be used.  
   
 ### Built-in Extractor Processing Model    
 The built-in extractors transforms a byte stream in parallel into a rowset that can be further processed with U-SQL statements. The following figure provides a logical view of the processing model (that in turn is based on the general [UDO Extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor)
  processing model).  
  
-![ExtractorProcessingModel](media/extractorprocessingmodel.png)  
+![ExtractorProcessingModel](../USQL/media/extractorprocessingmodel.png)  
   
 If the maximal input row length or the maximal output row length are being exceeded, errors are raised.  
   
@@ -42,7 +42,7 @@ Per default, an empty field is mapped to a zero-length string if target type is 
 > [!TIP]
 > Since the built-in extractors are implemented natively, the conversions may differ in small details from the U-SQL/C# conversion semantics. Some differences cannot be avoided, primarily around floating point values where minute differences may be present.  
   
-The following data types (and their nullable variant) are supported by the built-in extractors. Any data type that is not listed and is not supported by the extractor (such as [SQL.MAP](complex-built-in-u-sql-types.md)  and [SQL.ARRAY](complex-built-in-u-sql-types.md)) either needs to be converted in a subsequent SELECT statement or a [user-defined extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) has to be written.  
+The following data types (and their nullable variant) are supported by the built-in extractors. Any data type that is not listed and is not supported by the extractor (such as [SQL.MAP](../USQL/complex-built-in-u-sql-types.md)  and [SQL.ARRAY](../USQL/complex-built-in-u-sql-types.md)) either needs to be converted in a subsequent SELECT statement or a [user-defined extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) has to be written.  
 
 |Type|Conversion|  
 |---|---|  
@@ -65,12 +65,12 @@ The following data types (and their nullable variant) are supported by the built
 |`Guid`|The following lexical representations can be converted into a GUID:<hr />`'{' byte4 '-' byte2 '-' byte2 '-' byte2 '-' byte4 '}'` &#124;<br />&emsp;&emsp;`byte4 '-' byte2 '-' byte2 '-' byte2 '-' byte4` &#124;<br />&emsp;&emsp;`byte4 byte2 byte2 byte2 byte4.`<br />`byte4 = byte2 byte2.`<br />`byte2 = byte byte.`<br />`byte = hexcode hexcode.`<br />`hexcode = '0…9'` &#124; `'A…F'` &#124; `'a…f'`.<hr />This means the following three guids are all valid lexical representations:<br />`F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4`<br />`{F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4}`<br />`F9168C5ECEB24faaB6BF329BF39FA1E4`<br /><br />But the following are not:<br />`{F9168C5ECEB24faaB6BF329BF39FA1E4}`<br />`F9168C5E-CEB24faaB6BF329BF39FA1E4` | 
  
  ### See Also 
-* [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md)
-* [Extractors.Text()](extractors-text.md)  
-* [Extractors.Csv()](extractors-csv.md)  
-* [Extractors.Tsv()](extractors-tsv.md)  
-* [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md)
-* [Input Files (U-SQL)](input-files-u-sql.md)  
+* [Extractor Parameters (U-SQL)](../USQL/extractor-parameters-u-sql.md)
+* [Extractors.Text()](../USQL/extractors-text.md)  
+* [Extractors.Csv()](../USQL/extractors-csv.md)  
+* [Extractors.Tsv()](../USQL/extractors-tsv.md)  
+* [EXTRACT Expression (U-SQL)](../USQL/extract-expression-u-sql.md)
+* [Input Files (U-SQL)](../USQL/input-files-u-sql.md)  
 * [U-SQL Programmability Guide: User-Defined Extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor)  
-* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)   
+* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)   
 

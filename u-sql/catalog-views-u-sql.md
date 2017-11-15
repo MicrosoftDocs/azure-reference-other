@@ -23,18 +23,19 @@ The U-SQL catalog views are currently not available in the local run environment
 
 Future releases will add additional catalog views.
 
-The following catalog views are currently available:
-|||  
-|-|-| 
-[usql.columns](usql-columns-u-sql.md)     |[usql.partition_parameters](usql-partition-parameters-u-sql.md)         
-[usql.databases](usql-databases-u-sql.md)     |[usql.partition_range_values](usql-partition-range-values-u-sql.md)         
-[usql.distributions](usql-distributions-u-sql.md)     |[usql.schemas](usql-schemas-u-sql.md)         
-[usql.distribution_columns](usql-distribution-columns-u-sql.md)     |[usql.stats](usql-stats-u-sql.md)         
-[usql.functions](usql-functions-u-sql.md)     |[usql.stats_columns](usql-stats-columns-u-sql.md)         
-[usql.indexes](usql-indexes-u-sql.md)     |[usql.tables](usql-tables-u-sql.md)         
-[usql.index_columns](usql-index-columns-u-sql.md)     |[usql.types](usql-types-u-sql.md)         
-[usql.objects](usql-objects-u-sql.md)     | [usql.views](usql-views-u-sql.md)        
-[usql.partitions](usql-partitions-u-sql.md)||
+The following catalog views are currently available:  
+
+|<a></a>|<a></a>|  
+|--|--| 
+[usql.columns](../USQL/usql-columns-u-sql.md)     |[usql.partition_parameters](../USQL/usql-partition-parameters-u-sql.md)         
+[usql.databases](../USQL/usql-databases-u-sql.md)     |[usql.partition_range_values](../USQL/usql-partition-range-values-u-sql.md)         
+[usql.distributions](../USQL/usql-distributions-u-sql.md)     |[usql.schemas](../USQL/usql-schemas-u-sql.md)         
+[usql.distribution_columns](../USQL/usql-distribution-columns-u-sql.md)     |[usql.stats](../USQL/usql-stats-u-sql.md)         
+[usql.functions](../USQL/usql-functions-u-sql.md)     |[usql.stats_columns](../USQL/usql-stats-columns-u-sql.md)         
+[usql.indexes](../USQL/usql-indexes-u-sql.md)     |[usql.tables](../USQL/usql-tables-u-sql.md)         
+[usql.index_columns](../USQL/usql-index-columns-u-sql.md)     |[usql.types](../USQL/usql-types-u-sql.md)         
+[usql.objects](../USQL/usql-objects-u-sql.md)     | [usql.views](../USQL/usql-views-u-sql.md)        
+[usql.partitions](../USQL/usql-partitions-u-sql.md)||
 
 
 ### Examples
@@ -79,7 +80,7 @@ The following script returns the tables with their fully qualified, quoted names
 
 
 ### See Also
-* [U-SQL Concepts ](u-sql-concepts.md)   
-* [usql.objects (U-SQL)](usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
+* [U-SQL Concepts ](../USQL/u-sql-concepts.md)   
+* [usql.objects (U-SQL)](../USQL/usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)
 

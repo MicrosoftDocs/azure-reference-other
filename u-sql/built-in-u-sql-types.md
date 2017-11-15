@@ -17,15 +17,15 @@ manager: "jhubbard"
 # Built-In U-SQL Types
 Any C# type can be used in U-SQL (and C#) expressions, but only a limited subset of them can be used as column types in a rowset. These types are called *built-in U-SQL types*.  
   
-Only these built-in U-SQL types can be specified in a schema definition of an [EXTRACT](extract-expression-u-sql.md) or [OUTPUT](output-statement-u-sql.md) statement, in a [CREATE TABLE](create-table-u-sql-creating-a-table-with-schema.md) schema, as a parameter in a [table-valued function](u-sql-table-valued-functions.md), in a [table type](u-sql-table-types.md), in a PRODUCES clause of a [UDO](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) invocation, or can be passed between query statement boundaries.  
+Only these built-in U-SQL types can be specified in a schema definition of an [EXTRACT](../USQL/extract-expression-u-sql.md) or [OUTPUT](../USQL/output-statement-u-sql.md) statement, in a [CREATE TABLE](../USQL/create-table-u-sql-creating-a-table-with-schema.md) schema, as a parameter in a [table-valued function](../USQL/u-sql-table-valued-functions.md), in a [table type](../USQL/u-sql-table-types.md), in a PRODUCES clause of a [UDO](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) invocation, or can be passed between query statement boundaries.  
  
 Built-in U-SQL types can be composed into table types that can be used to define table parameters.  
   
 The built-in U-SQL types can be classified into the following types: *simple built-in types* and *complex built-in types*. We use the following grammar to refer to these types.  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Built_in_Type :=                                                                                         
-    <a href="simple-built-in-u-sql-types.md">Simple_Type</a> | <a href="complex-built-in-u-sql-types.md">Complex_Type</a>.  
+    <a href="simple-built-in-u-sql-types.md">Simple_Type</a> | <a href="complex-built-in-u-sql-types.md">Complex_Type</a>.
 </pre></td></tr></table>
   
 Their semantics in general follows their C# semantics with a few notable exceptions called out below.  
@@ -35,8 +35,8 @@ Note that unlike SQL data types, where a type is nullable unless specified other
   
 
 ### See Also
-* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md) 
-* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)  
-* [Complex Built-In U-SQL Types](complex-built-in-u-sql-types.md) 
-* [IS NULL (U-SQL)](is-null-u-sql.md) 
+* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md) 
+* [Simple Built-In U-SQL Types](../USQL/simple-built-in-u-sql-types.md)  
+* [Complex Built-In U-SQL Types](../USQL/complex-built-in-u-sql-types.md) 
+* [IS NULL (U-SQL)](../USQL/is-null-u-sql.md) 
   

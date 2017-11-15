@@ -20,19 +20,19 @@ U-SQL supports the following operators:
 
 |Operator|Meaning|
 |------------------|----------------|
-|[IS NULL](is-null-u-sql.md)|Determines whether a specified expression is NULL.|
-|[== (Equals)](equals-u-sql.md)|Equal to| 
-|[> (Greater Than)](greater-than-u-sql.md)|Greater than|
-|[\< (Less Than)](less-than-u-sql.md)|Less than|
-|[>= (Greater Than or Equal To)](greater-than-or-equal-to-u-sql.md)|Greater than or equal to|
-|[<= (Less Than or Equal To)](less-than-or-equal-to-u-sql.md)|Less than or equal to|
-|[!= (Not Equal To)](not-equal-to-u-sql.md)|Not equal to|
+|[IS NULL](../USQL/is-null-u-sql.md)|Determines whether a specified expression is NULL.|
+|[== (Equals)](../USQL/equals-u-sql.md)|Equal to| 
+|[> (Greater Than)](../USQL/greater-than-u-sql.md)|Greater than|
+|[\< (Less Than)](../USQL/less-than-u-sql.md)|Less than|
+|[>= (Greater Than or Equal To)](../USQL/greater-than-or-equal-to-u-sql.md)|Greater than or equal to|
+|[<= (Less Than or Equal To)](../USQL/less-than-or-equal-to-u-sql.md)|Less than or equal to|
+|[!= (Not Equal To)](../USQL/not-equal-to-u-sql.md)|Not equal to|
 
 
   
 ### See Also 
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx)  
-* [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md)
+* [C# Functions and Operators (U-SQL)](../USQL/csharp-functions-and-operators-u-sql.md)
 
 
 

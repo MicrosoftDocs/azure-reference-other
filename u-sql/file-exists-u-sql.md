@@ -17,10 +17,10 @@ manager: "jhubbard"
 # FILE.EXISTS (U-SQL)
 Checks if a file in the specified location exists at compile time.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 <a href="other-simple-built-in-types-and-literals.md">bool</a> EXISTS(
     <a href="textual-types-and-literals.md">string</a> <a href="#path">path</a>
-).                                                                                 
+).                                                                                                       
 </pre></td></tr></table>
 
 ### Parameters
@@ -28,7 +28,7 @@ Checks if a file in the specified location exists at compile time.
 A constant-foldable string expression.  `path` can be any supported file path Universal Resource Identifier (URI).  If `path` is not constant-foldable, the error `E_CSC_USER_EXPRESSIONNOTCONSTANTFOLDABLE` is raised.  If `path` is empty (null or the zero-length string), the error `E_CSC_USER_EMPTYFILEPATH` is raised. If `path` contains invalid characters, the error `E_CSC_USER_INVALIDFILENAME` is raised.
 
 ### Return Value
-[bool](other-simple-built-in-types-and-literals.md)  
+[bool](../USQL/other-simple-built-in-types-and-literals.md)  
 `True` if `path` exists and the user has access to it.  `False` if `path` does not exists, refers to a folder or the user has no access to it. 
 
 ### Example
@@ -50,7 +50,7 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [FILE Functions (U-SQL)](file-functions-u-sql.md)
-* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
-* [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md)
+* [FILE Functions (U-SQL)](../USQL/file-functions-u-sql.md)
+* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)  
+* [C# Functions and Operators (U-SQL)](../USQL/csharp-functions-and-operators-u-sql.md)
 

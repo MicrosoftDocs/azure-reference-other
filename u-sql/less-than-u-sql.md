@@ -17,14 +17,14 @@ manager: "jhubbard"
 # &lt; (Less Than) (U-SQL)
 Compares two expressions (a comparison operator). When you compare nonnull expressions, the result is TRUE if the left operand has a value lower than the right operand; otherwise, the result is FALSE.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Less_Than_Operator :=                                                                                    
-    <a href="#expr">expression</a> '&#60;' <a href="#expr">expression</a>.
+     <a href="#expr">expression</a> '&#60;' <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
--   <a name="expr"></a>**`expression`**  
-Is any valid expression. Both expressions must have implicitly convertible data types. 
+- <a name="expr"></a>**`expression`**  
+  Is any valid expression. Both expressions must have implicitly convertible data types. 
 
 ### Return Type
 Boolean.
@@ -59,8 +59,8 @@ OUTPUT @result TO "/ReferenceGuide/Operators/Comparison/lessThan2.txt" USING Out
 ```
 
 ### See Also   
-* [Operators (U-SQL)](operators-u-sql.md)
-* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)
+* [Simple Built-In U-SQL Types](../USQL/simple-built-in-u-sql-types.md)
 
 
 

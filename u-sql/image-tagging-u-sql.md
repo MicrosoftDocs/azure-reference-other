@@ -22,10 +22,10 @@ Cognitive image tagging functions return information about visual content found 
 > [!IMPORTANT]
 > Use an Extractor rather than a Processor when you have images larger than 4 MB.
 
-<table><th>Arguments</th><tr><td><pre>
+<table><th align="left">Arguments</th><tr><td><pre>
 ImageTagger | ImageTagsExtractor(                                                                        
-      string numCol = "NumObjects", 
-      string tagCol = "Tags")  
+    string numCol = "NumObjects", 
+    string tagCol = "Tags")
 </pre></td></tr></table>
 
 `ImageTagger` and `ImageTagsExtractor` will operate on a JPEG file and return a rowset with two columns called `NumObjects` of type int that provides the number of detected objects in the image and `Tags` that returns a SQL.MAP\<string, float?> instance which contains the set of object tags as keys with a floating point value indicating the confidence of each of the tags as values.
@@ -33,11 +33,11 @@ ImageTagger | ImageTagsExtractor(
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- Ensure you have installed the cognitive assemblies, see [Registering Cognitive Extensions in U-SQL](cognitive-capabilities-in-u-sql.md#registeringExtensions) for more information.
+- Ensure you have installed the cognitive assemblies, see [Registering Cognitive Extensions in U-SQL](../USQL/cognitive-capabilities-in-u-sql.md#registeringExtensions) for more information.
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally) if you first download the assemblies locally, see [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/) for more information.
 An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - You will need images accessible to you ADLA or Local account.
-- The examples utillize the table `myImages` from the example [Load images to a table](imageextractor-u-sql.md#loadImages).
+- The examples utillize the table `myImages` from the example [Load images to a table](../USQL/imageextractor-u-sql.md#loadImages).
 
 ### A.	ImageTagger
 **Extract tags from the image using Image tagging Processor**
@@ -169,9 +169,9 @@ USING Outputters.Tsv();
 ```
 
 ### See Also
-* [Built-in U-SQL System Objects and Extensions](built-in-u-sql-system-objects-and-extensions.md)
-* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
-* [Cognitive Capabilities in U-SQL](cognitive-capabilities-in-u-sql.md)
-* [ImageExtractor (U-SQL)](imageextractor-u-sql.md)
+* [Built-in U-SQL System Objects and Extensions](../USQL/built-in-u-sql-system-objects-and-extensions.md)
+* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)
+* [Cognitive Capabilities in U-SQL](../USQL/cognitive-capabilities-in-u-sql.md)
+* [ImageExtractor (U-SQL)](../USQL/imageextractor-u-sql.md)
 
 

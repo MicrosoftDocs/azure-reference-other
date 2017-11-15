@@ -20,11 +20,11 @@ Similar to other database systems and ANSI SQL, U-SQL uses the concept of a sche
 U-SQL provides a built-in schema within each database called dbo that is used as the default schema context. Additionally, U-SQL provides the ability to create and delete additional schemas with schema DDL statements.  
   
 ### Schema DDL Statements
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Schema_DDL_Statement :=                                                                                  
-    <a href="create-schema-u-sql.md">Create_Schema_Statement</a>  
-|   <a href="drop-schema-u-sql.md">Drop_Schema_Statement</a>.  
-</pre></td></tr></table> 
+     <a href="create-schema-u-sql.md">Create_Schema_Statement</a>
+|    <a href="drop-schema-u-sql.md">Drop_Schema_Statement</a>.
+</pre></td></tr></table>
 
 A list of schema can be retrieved using the Windows PowerShell cmdlet [Get-AzureRmDataLakeAnalyticsCatalogItem](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.7.0/get-azurermdatalakeanalyticscatalogitem).  Example command for retrieving schema from the `TestReferenceDB` database.
 ```powershell
@@ -36,6 +36,6 @@ Get-AzureRmDataLakeAnalyticsCatalogItem -Account $DataLakeAnalyticsAccount -Path
 ```
   
 ### See Also    
-* [CREATE SCHEMA (U-SQL)](create-schema-u-sql.md)
-* [USE SCHEMA (U-SQL)](use-schema-u-sql.md) 
-* [DROP SCHEMA (U-SQL)](drop-schema-u-sql.md)
+* [CREATE SCHEMA (U-SQL)](../USQL/create-schema-u-sql.md)
+* [USE SCHEMA (U-SQL)](../USQL/use-schema-u-sql.md) 
+* [DROP SCHEMA (U-SQL)](../USQL/drop-schema-u-sql.md)

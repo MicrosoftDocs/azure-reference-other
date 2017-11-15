@@ -15,16 +15,16 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # EXPLODE (U-SQL)
-The EXPLODE rowset expression accepts an expression or value of either type [SQL.ARRAY](complex-built-in-u-sql-types.md), [SQL.MAP](complex-built-in-u-sql-types.md)  or IEnumerable and unpacks (explodes) the values into a rowset.  
+The EXPLODE rowset expression accepts an expression or value of either type [SQL.ARRAY](../USQL/complex-built-in-u-sql-types.md), [SQL.MAP](../USQL/complex-built-in-u-sql-types.md)  or IEnumerable and unpacks (explodes) the values into a rowset.  
   
-If EXPLODE is applied on an instance of [SQL.ARRAY](complex-built-in-u-sql-types.md) \<T>, the resulting rowset contains a single column of type T where each item in the array is placed into its own row. If the array value was empty or null, then the resulting rowset is empty.  
+If EXPLODE is applied on an instance of [SQL.ARRAY](../USQL/complex-built-in-u-sql-types.md) \<T>, the resulting rowset contains a single column of type T where each item in the array is placed into its own row. If the array value was empty or null, then the resulting rowset is empty.  
   
-If EXPLODE is applied on an instance of [SQL.MAP](complex-built-in-u-sql-types.md) \<K,V>, the resulting rowset contains two columns of type K and V respectively where each key-value pair in the map is placed into its own row. If the map value was empty or null, then the resulting rowset is empty.
+If EXPLODE is applied on an instance of [SQL.MAP](../USQL/complex-built-in-u-sql-types.md) \<K,V>, the resulting rowset contains two columns of type K and V respectively where each key-value pair in the map is placed into its own row. If the map value was empty or null, then the resulting rowset is empty.
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Explode_Expression :=                                                                                    
-       'EXPLODE' '(' (<a href="#SE">sqlmap_expression | sqlarray_expression</a> | <a href="#expression">ienumerable_expression</a> ) ')'  
-        <a href="#DTAWOT">Derived_Table_Alias_With_Opt_Types</a>.  
+    'EXPLODE' '(' (<a href="#SE">sqlmap_expression | sqlarray_expression</a> | <a href="#expression">ienumerable_expression</a> ) ')'  
+    <a href="#DTAWOT">Derived_Table_Alias_With_Opt_Types</a>.  
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    
@@ -35,16 +35,16 @@ Explode_Expression :=
 A C# expression returning a value of either type `IEnumerable<T>`, `IEnumerable<KeyValuePair<K,V>>`, or `IEnumerable<Tuple>`. The expression normally refers to at least one of the columns from the `Rowset_Source`.
   
 - <a name="DTAWOT"></a>**`Derived_Table_Alias_With_Opt_Types`**  
-Defines the rowset schema for the result of the EXPLODE.
+  Defines the rowset schema for the result of the EXPLODE.
 
   <table><th>Syntax</th><tr><td><pre>
-Derived_Table_Alias_With_Opt_Types :=                                                               
+  Derived_Table_Alias_With_Opt_Types :=                                                               
       'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> ['(' Column_Alias_Opt_Type_List ')'].<br />
-Column_Alias_Opt_Type_List :=  
+  Column_Alias_Opt_Type_List :=  
       Column_Alias_Opt_Type {',' Column_Alias_Opt_Type }.<br />
-Column_Alias_Opt_Type := 
-      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> [<a href="built-in-u-sql-types.md">Built_in_Type</a>].  
-</pre></td></tr></table>
+  Column_Alias_Opt_Type := 
+      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> [<a href="built-in-u-sql-types.md">Built_in_Type</a>].
+  </pre></td></tr></table>
 
   The derived table alias requires the correct number of columns to be specified (one in the case of an `EXPLODE` on `SQL.ARRAY` and two in the case of `SQL.MAP`). Optionally a type can be specified, but if it is specified it has to be the exact type of the item type in the case of an array (`T` for `SQL.ARRAY<T>`) or the key and value types in the case of a map (`K` and `V` for `SQL.MAP<K,V>`).  
   
@@ -94,7 +94,7 @@ The resulting rowset looks like:
 ### Additional Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../USQL/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 - Some of the examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
 
 **Dataset**  
@@ -141,7 +141,7 @@ USING Outputters.Csv();
 ```
 
 **ARRAY_AGG - Bonus Example**   
-This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [ARRAY_AGG](array-agg-u-sql.md).
+This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [ARRAY_AGG](../USQL/array-agg-u-sql.md).
 ```
 @result =
     SELECT EmpName,
@@ -176,7 +176,7 @@ USING Outputters.Csv();
 ```
 
 **MAP_AGG - Bonus Example**   
-This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [MAP_AGG](map-agg-u-sql.md).
+This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [MAP_AGG](../USQL/map-agg-u-sql.md).
 ```
 @result =
     SELECT EmpName,
@@ -606,11 +606,11 @@ USING Outputters.Csv();
 ```
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
-* [FROM Clause (U-SQL)](from-clause-u-sql.md)
-* [SELECT Expression (U-SQL)](select-expression-u-sql.md) 
-* [U-SQL SELECT Selecting from CROSS APPLY and OUTER APPLY](u-sql-select-selecting-from-cross-apply-and-outer-apply.md)  
-* [Output Statement (U-SQL)](output-statement-u-sql.md)  
-* [ARRAY_AGG (U-SQL)](array-agg-u-sql.md)
-* [MAP_AGG (U-SQL)](map-agg-u-sql.md)  
-* [Complex Built-In U-SQL Types](complex-built-in-u-sql-types.md)
+* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)
+* [FROM Clause (U-SQL)](../USQL/from-clause-u-sql.md)
+* [SELECT Expression (U-SQL)](../USQL/select-expression-u-sql.md) 
+* [U-SQL SELECT Selecting from CROSS APPLY and OUTER APPLY](../USQL/u-sql-select-selecting-from-cross-apply-and-outer-apply.md)  
+* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
+* [ARRAY_AGG (U-SQL)](../USQL/array-agg-u-sql.md)
+* [MAP_AGG (U-SQL)](../USQL/map-agg-u-sql.md)  
+* [Complex Built-In U-SQL Types](../USQL/complex-built-in-u-sql-types.md)

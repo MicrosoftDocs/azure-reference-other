@@ -15,11 +15,11 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # - (Subtract) (U-SQL)
-Subtracts two [numbers](numeric-types-and-literals.md) (an arithmetic subtraction operator).  Can also calculate [date and time](temporal-types-and-literals.md) differences.
+Subtracts two [numbers](../USQL/numeric-types-and-literals.md) (an arithmetic subtraction operator).  Can also calculate [date and time](../USQL/temporal-types-and-literals.md) differences.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Subtract_Operator :=                                                                                     
-    <a href="#expr">expression</a> '-' <a href="#expr">expression</a>.
+     <a href="#expr">expression</a> '-' <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
   
@@ -29,7 +29,6 @@ Is the expression to subtract.
 
 ### Return Type
 Returns the data type of the argument with the higher precedence.
-
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -77,8 +76,8 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Operators (U-SQL)](operators-u-sql.md)
-* [Date & Time](csharp-functions-and-operators-u-sql.md#DateTime)
-* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)
+* [Date & Time](../USQL/csharp-functions-and-operators-u-sql.md#DateTime)
+* [Simple Built-In U-SQL Types](../USQL/simple-built-in-u-sql-types.md)
 
 

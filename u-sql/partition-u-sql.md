@@ -17,11 +17,11 @@ manager: "jhubbard"
 # PARTITION (U-SQL)
 The `PARTITION` intrinsic object returns `true` if the specified partition for the given table exists and the user has access to said table. Otherwise, `false` is returned.  The function will be evaluated at compile-time (and is thus constant-foldable).
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 <a href="other-simple-built-in-types-and-literals.md">bool</a> PARTITION.EXISTS(                                                                                   
-    <a href="#ident">Identifier</a>, 
-    <a href="#partition_value">partition_value {, partition_value}</a>
-).  
+     <a href="#ident">Identifier</a>, 
+     <a href="#partition_value">partition_value {, partition_value}</a>
+).
 </pre></td></tr></table>
 
 
@@ -35,7 +35,7 @@ Identifies the table to be checked. If the Identifier is a three-part identifier
 The typed values that define the particular partition of the table. The partition_value expression must be constant-foldable; otherwise, the error `E_CSC_USER_EXPRESSIONNOTCONSTANTFOLDABLE` is raised.
    
 ### Return Type
-[bool](other-simple-built-in-types-and-literals.md)
+[bool](../USQL/other-simple-built-in-types-and-literals.md)
 
 ### Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -97,6 +97,6 @@ VALUES
 ```
 
 ### See Also
-* [INSERT (U-SQL)](insert-u-sql.md)
-* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
-* [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md)
+* [INSERT (U-SQL)](../USQL/insert-u-sql.md)
+* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../USQL/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
+* [CREATE TABLE (U-SQL): Creating a Table with Schema](../USQL/create-table-u-sql-creating-a-table-with-schema.md)

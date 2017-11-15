@@ -25,7 +25,7 @@ A reducer is invoked once per group and produces zero or one or multiple rows pe
   
 A reducer provides limited optimization support, because an optimizer cannot reason about the procedural C# code defining the reducer. For example, it cannot push predicates through to earlier statements unless the column used in the predicate is marked as read only. Therefore, it is recommended to instead use a [user-defined aggregator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or use the optional [READONLY](#ro_cla) or [REQUIRED](#req_cla) clauses.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Reduce_Expression :=                                                                                      
     'REDUCE' <a href="#inp_row">Input_Rowset</a>   
     [<a href="#presort">'PRESORT'</a> <a href="#ON">Identifier_List</a>] 
@@ -33,39 +33,35 @@ Reduce_Expression :=
     <a href="#pro_cla">Produce_Clause</a>  
     [<a href="#ro_cla">Readonly_Clause</a>]  
     [<a href="#req_cla">Required_Clause</a>]
-    <a href="#us_cla">USING_Clause</a>.
-</pre></td></tr></table>
+    <a href="#us_cla">USING_Clause</a>.</pre></td></tr></table>
 
 ### Semantics of Syntax Elements  
 - <a name="inp_row"></a>**`Input_Rowset`**   
 Specifies the input rowset that the reducer will operate on as either the reference to a rowset name or by a nested rowset expression:
   
   <table><th>Syntax</th><tr><td><pre>
-Input_Rowset :=                                                                                     
-    Rowset | Rowset_Expression.                                                 
-</pre></td></tr></table>
+  Input_Rowset :=                                                                                     
+      Rowset | Rowset_Expression.</pre></td></tr></table>
 
   with the following semantics:
       
   - **`Rowset`**   
-The two simplest rowset sources are a rowset variable such as `@rowset` that has been defined in a previous statement of the script or a table that has been created in the account’s catalog:
+    The two simplest rowset sources are a rowset variable such as `@rowset` that has been defined in a previous statement of the script or a table that has been created in the account’s catalog:
 
     <table><th>Syntax</th><tr><td><pre>
-Rowset :=
-<a></a>   Rowset_Variable | Identifier.                                                               <a></a>
-    </pre></td></tr></table>
+    Rowset :=                                                                                      
+        Rowset_Variable | Identifier.</pre></td></tr></table>
 
     A table can be referenced either with its fully qualified 3-part name, within the current database context with a 2-part name, or within the current database and schema context with a single-part name.   
   
   - **`Rowset_Expression`**   
-U-SQL also provides the ability to reduce nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](table-valued-function-expression-u-sql.md) or [querying external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.  
+    U-SQL also provides the ability to reduce nested [query expressions](../USQL/query-statements-and-expressions-u-sql.md), [table-valued function calls](../USQL/table-valued-function-expression-u-sql.md) or [querying external rowsets](../USQL/u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.  
 
     <table><th>Syntax</th><tr><td><pre>
-Rowset_Expression := 
-<a></a>   '(' <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> ')'
-|   <a href="table-valued-function-expression-u-sql.md">Function_Call</a>                                                                              <a></a>
-|   <a href="u-sql-select-selecting-from-an-external-rowset.md">External_Rowset_Expression</a>.
-    </pre></td></tr></table>
+    Rowset_Expression :=                                                                      
+        '(' <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> ')'
+    |   <a href="table-valued-function-expression-u-sql.md">Function_Call</a>
+    |   <a href="u-sql-select-selecting-from-an-external-rowset.md">External_Rowset_Expression</a>.</pre></td></tr></table>
   
     The UDO programming model makes both the values and the schema of the input rowset available in the context of the reducer's implementation.   
 
@@ -79,31 +75,27 @@ The optional `PRESORT` clause guarantees the rows are ordered by the given ident
   This option specifies the list of columns that define the groups.  
   
   <table><th>Syntax</th><tr><td><pre>
-Identifier_List :=                                                                                  
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>                                               
-    {',' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>}.  
-</pre></td></tr></table>  
+  Identifier_List :=                                                                                  
+      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>                                               
+      {',' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>}.</pre></td></tr></table>  
     
   If the columns are not part of the input rowset’s columns or are not comparable, an error is raised.  
     
 - <a name="pro_cla"></a>**`Produce_Clause`**   
   Specifies the rowset schema returned by the `REDUCE` expression. 
   <table><th>Syntax</th><tr><td><pre>
-Produce_Clause :=                                                                                   
-    'PRODUCE' Column_Definition_List.
-</pre></td></tr></table>
+  Produce_Clause :=                                                                                   
+      'PRODUCE' Column_Definition_List.</pre></td></tr></table>
 
   - **`Column_Definition_List`**  
-This list defines the schema of the reducer.  The returned columns are defined as a pair of column names and column types:
+    This list defines the schema of the reducer.  The returned columns are defined as a pair of column names and column types:
     <table><th>Syntax</th><tr><td><pre>
-Column_Definition_List :=
-<a></a>     Column_Definition { ',' Column_Definition}.
-<a></a>                                                                                               <a></a>
-Column_Definition :=
-<a></a>     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
-    </pre></td></tr></table>
+    Column_Definition_List :=                                                                      
+        Column_Definition { ',' Column_Definition}.<br />
+    Column_Definition :=
+        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.</pre></td></tr></table>
      
-    Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md). A column is typed with one of the U-SQL types that the reducer supports.  
+    Each column has an identifier that can be either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md). A column is typed with one of the U-SQL types that the reducer supports.  
     
     The UDO programming model makes the specified rowset schema available to the implementation of the reducer. An error is raised if the reducer is producing a schema that is incompatible with the specified return schema.  
   
@@ -113,43 +105,40 @@ The optional `READONLY` clause can help the UDO programmer to write more efficie
   The optional `READONLY` clause specifies the columns are read only for the reducer and will be passed through to the output using either the same name or the specified column name in parenthesis. Only columns in the reduce expression’s ON clause can be marked `READONLY`, otherwise the error `“E_CSC_USER_UDOREADONLYNOTKEYCOLUMN: Column '…' cannot be marked as READONLY”` is raised. 
   
   <table><th>Syntax</th><tr><td><pre>
-Readonly_Clause :=                                                                                  
-    'READONLY' Star_Or_Readonly_Column_List.<br />
-Star_Or_Readonly_Column_List :=
-    '*' | Readonly_Column_List.<br />
-Readonly_Column_List :=
-    Readonly_Column { ',' Readonly_Column }.<br />
-Readonly_Column :=
-    Column_Identifier [Output_Column_Dependency_Alias].<br />
-Output_Column_Dependency_Alias :=
-    '(' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> ')'.
-</pre></td></tr></table>
+  Readonly_Clause :=                                                                                  
+      'READONLY' Star_Or_Readonly_Column_List.<br />
+  Star_Or_Readonly_Column_List :=
+      '*' | Readonly_Column_List.<br />
+  Readonly_Column_List :=
+      Readonly_Column { ',' Readonly_Column }.<br />
+  Readonly_Column :=
+      Column_Identifier [Output_Column_Dependency_Alias].<br />
+  Output_Column_Dependency_Alias :=
+      '(' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> ')'.</pre></td></tr></table>
   
 - <a name="req_cla"></a>**`Required_Clause`**      
-The optional `REQUIRED` clause can help the UDO programmer to write more efficient code. For more information on how the UDO programmer can take advantage of this hint, see the U-SQL C# Developer’s Guide.  
+  The optional `REQUIRED` clause can help the UDO programmer to write more efficient code. For more information on how the UDO programmer can take advantage of this hint, see the U-SQL C# Developer’s Guide.  
   
   The optional `REQUIRED` clause specifies that either all columns are required on input for the reducer (if specified with `*`) or the specified columns are required. If a specified column is followed by a list of columns in parenthesis, then the input column is only required if the columns in that list are referenced from the output.  
   
   <table><th>Syntax</th><tr><td><pre>
-Required_Clause :=                                                                                  
-    'REQUIRED' Star_Or_Required_Column_List.<br />
-Star_Or_Required_Column_List :=  
-    '*' | Required_Column_List.<br />
-Required_Column_List :=  
-    Required_Column { ',' Required_Column}.<br />
-Required_Column :=  
-    Column_Identifier [Required_Output_Column_Dependency_List].<br />
-Required_Output_Column_Dependency_List :=  
-    '(' Identifier_List ')'.  
-</pre></td></tr></table>
+  Required_Clause :=                                                                                  
+      'REQUIRED' Star_Or_Required_Column_List.<br />
+  Star_Or_Required_Column_List :=  
+      '*' | Required_Column_List.<br />
+  Required_Column_List :=  
+      Required_Column { ',' Required_Column}.<br />
+  Required_Column :=  
+      Column_Identifier [Required_Output_Column_Dependency_List].<br />
+  Required_Output_Column_Dependency_List :=  
+      '(' Identifier_List ')'.</pre></td></tr></table>
     
 - <a name="us_cla"></a>**`Using_Clause`**  
 The `USING` clause specifies which reducer should be used to transform the input rowset.  
   
   <table><th>Syntax</th><tr><td><pre>
-USING_Clause :=                                                                                     
-    'USING' udo_expression.
-</pre></td></tr></table>
+  USING_Clause :=                                                                                     
+      'USING' udo_expression.</pre></td></tr></table>
   
   The `USING` clause takes a C# expression that returns an instance of `IReducer`. Users can write their own by implementing an `IReducer` (see [U-SQL Programmability Guide: User-Defined Reducer](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-reducer) for more detail on how to write your own reducer). Most commonly, the UDO expression is either the instantiation of a reducer class of the form  
   ```
@@ -165,7 +154,7 @@ USING_Clause :=
 ### Examples  
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies).
+- For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](../USQL/extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 <a name="RangeReducer">**User-Defined Reducer - RangeReducer**</a>   
 Example is a slightly modified version of the example given at [How do I combine overlapping ranges using U-SQL? Introducing U-SQL Reducer UDOs](https://blogs.msdn.microsoft.com/azuredatalake/2016/06/27/how-do-i-combine-overlapping-ranges-using-u-sql-introducing-u-sql-reducer-udos/) and [usql/Examples/RangeReducer/RangeReducer/](https://github.com/Azure/usql/tree/master/Examples/RangeReducer/RangeReducer). Please review the reducer article for details.   
@@ -376,7 +365,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **Reducer with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](../USQL/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 This examples continues to use `SalesReducer` defined earlier.
 ```
 // Same as previous example but only returns top 3 records ordered by SalesAmount
@@ -400,10 +389,10 @@ USING Outputters.Tsv(outputHeader: true);
 ```
   
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
-* [Output Statement (U-SQL)](output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md) 
+* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  
 * [U-SQL Programmability Guide: User-Defined Reducer](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-reducer)   
-* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
+* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 
 

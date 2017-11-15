@@ -15,9 +15,9 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # DROP PACKAGE (U-SQL)
-The `DROP PACKAGE` statement drops packages. As in the case with other meta data objects, a package gets dropped even if another [package](u-sql-packages.md), [table-valued function](u-sql-table-valued-functions.md) or [procedure](u-sql-procedures.md) depends on it.
+The `DROP PACKAGE` statement drops packages. As in the case with other meta data objects, a package gets dropped even if another [package](../USQL/u-sql-packages.md), [table-valued function](../USQL/u-sql-table-valued-functions.md) or [procedure](../USQL/u-sql-procedures.md) depends on it.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Package_Statement :=                                                                                
     'DROP' 'PACKAGE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.
 </pre></td></tr></table>
@@ -32,7 +32,7 @@ Drop_Package_Statement :=
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples utilize the packages created from [CREATE PACKAGE (U-SQL)](create-package-u-sql.md).
+- The examples utilize the packages created from [CREATE PACKAGE (U-SQL)](../USQL/create-package-u-sql.md).
 ```
 // Will error if not exists
 USE DATABASE TestReferenceDB;
@@ -42,5 +42,5 @@ DROP PACKAGE XMLFiles;
 DROP PACKAGE IF EXISTS TestReferenceDB.dbo.XMLorJSON;
 ```
 ### See Also
-* [CREATE PACKAGE (U-SQL)](create-package-u-sql.md)
-* [IMPORT PACKAGE (U-SQL)](import-package-u-sql.md)
+* [CREATE PACKAGE (U-SQL)](../USQL/create-package-u-sql.md)
+* [IMPORT PACKAGE (U-SQL)](../USQL/import-package-u-sql.md)

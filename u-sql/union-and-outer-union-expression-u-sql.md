@@ -17,17 +17,15 @@ manager: "jhubbard"
 # UNION and OUTER UNION Expression (U-SQL)
 UNION returns all the rows from both the left and right input query expressions.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Union_Expression :=                                                                                      
-    <a href="#qry_exp">Query_Expression</a> ['<a href="#outer">OUTER</a>'] 'UNION' [<a href="#SOO">Set_Operator_Option</a>] [<a href="#ByName">By_Name</a>] [<a href="#dj_hnt">Disjoint_Hint</a>]  
-    <a href="#qry_exp">Query_Expression</a>.
-<br />
+     <a href="#qry_exp">Query_Expression</a> ['<a href="#outer">OUTER</a>'] 'UNION' [<a href="#SOO">Set_Operator_Option</a>] [<a href="#ByName">By_Name</a>] [<a href="#dj_hnt">Disjoint_Hint</a>]  
+     <a href="#qry_exp">Query_Expression</a>.<br />
 <a href="#SOO">Set_Operator_Option</a> :=
-    '<a href="#dist">DISTINCT</a>'  
-|   '<a href="#ALL">ALL</a>'.  
-<br />  
+     '<a href="#dist">DISTINCT</a>'  
+|    '<a href="#ALL">ALL</a>'.<br />  
 <a href="#ByName">By_Name</a> :=
-    'BY' 'NAME' ['ON' '(' (Identifier_List [',' '*'] | '*') ')'.
+     'BY' 'NAME' ['ON' '(' (Identifier_List [',' '*'] | '*') ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements  
@@ -38,8 +36,8 @@ Specifies the two rowsets that are being unioned. The basic rules for combining 
   
   If the number of columns do not match, an error is raised. If the columns are out of order, an error may be raised if the column data types are incompatible. Otherwise an unexpected result may be returned. If the column data types of the two query expressions are incompatible, an error is raised.
          
-    > [!NOTE]
-    > The column names do not have to be the same between the two rowsets. The column names of the first rowset is chosen for the result.
+  > [!NOTE]
+  > The column names do not have to be the same between the two rowsets. The column names of the first rowset is chosen for the result.
     
 -   <a name="outer"></a>**`OUTER`**     
     `OUTER` requires the `BY NAME` clause and the `ON` list. As opposed to the other set expressions, the output schema of the `OUTER UNION` includes both the matching columns and the non-matching columns from both sides. This creates a situation where each row coming from one of the sides has "missing columns" that are present only on the other side. For such columns, default values are supplied for the "missing cells". The default values are null for nullable types and the .Net default value for the non-nullable types (e.g., 0 for int).
@@ -55,8 +53,8 @@ Removes duplicate rows from the result (default if the option is left away) .
 - <a name="ALL"></a>**`ALL`**  
 Preserves duplicate rows in the result.  
 
-    > [!TIP]
-    > Unless duplicate elimination is required, specifying `ALL` leads to more efficient execution.
+  > [!TIP]
+  > Unless duplicate elimination is required, specifying `ALL` leads to more efficient execution.
 
 - <a name="ByName"></a>**`By_Name`**  
 `BY NAME` is required when used with `OUTER`.  The clause indicates that the union is matching up values not based on position but by name of the columns. If the `BY NAME` clause is not specified, the matching is done positionally.
@@ -68,16 +66,16 @@ Preserves duplicate rows in the result.
   If the `ON` clause includes the “*” symbol (it may be specified as the last or the only member of the list), then extra name matches beyond those in the `ON` clause are allowed, and the result’s columns include all matching columns in the order they are present in the left argument.
   
 - <a name="dj_hnt"></a>**`Disjoint_Hint`**    
-Provides the hint that any tuple of the list of specified columns appear in at most one of the input rowsets.  
+  Provides the hint that any tuple of the list of specified columns appear in at most one of the input rowsets.  
   
-   <table><th>Syntax</th><tr><td><pre>
-Disjoint_Hint :=                                                                                    
-    'WITH' 'DISJOINT' '(' Identifier_List ')'.
-</pre></td></tr></table>
+  <table><th>Syntax</th><tr><td><pre>
+  Disjoint_Hint :=                                                                                    
+       'WITH' 'DISJOINT' '(' Identifier_List ')'.
+  </pre></td></tr></table>
       
-    This optimization hint allows that any later [GROUP BY](group-by-and-having-clauses-u-sql.md) clause on those columns can be pushed through the `UNION ALL` expression to the rowset expressions.  
+    This optimization hint allows that any later [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) clause on those columns can be pushed through the `UNION ALL` expression to the rowset expressions.  
   
-    For example, rows containing the same values in the market column only appear in one of the input rowsets. E.g., only one of the rowsets contain the “en-us” values. If the disjoint hint WITH DISJOINT (market) has been specified, then a later [GROUP BY](group-by-and-having-clauses-u-sql.md) market is pushed into the rowset expressions, thus improving the query performance.  
+    For example, rows containing the same values in the market column only appear in one of the input rowsets. E.g., only one of the rowsets contain the “en-us” values. If the disjoint hint WITH DISJOINT (market) has been specified, then a later [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) market is pushed into the rowset expressions, thus improving the query performance.  
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -187,7 +185,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **UNION with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](../USQL/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 ```
 // Data sets
 @JuneSales = 
@@ -249,11 +247,11 @@ USING Outputters.Tsv();
 ```
 
 **Additional examples using OUTER UNION**   
-See the examples under [SQL.MAP](complex-built-in-u-sql-types.md#sqlMAP) which make use of `OUTER UNION`.
+See the examples under [SQL.MAP](../USQL/complex-built-in-u-sql-types.md#sqlMAP) which make use of `OUTER UNION`.
 
 ### See Also
-* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
-* [Set Rowset Expressions (U-SQL)](set-rowset-expressions-u-sql.md)
-* [EXCEPT Expression (U-SQL)](except-expression-u-sql.md)
-* [INTERSECT Expression (U-SQL)](intersect-expression-u-sql.md)
-* [Output Statement (U-SQL)](output-statement-u-sql.md)  
+* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md)
+* [Set Rowset Expressions (U-SQL)](../USQL/set-rowset-expressions-u-sql.md)
+* [EXCEPT Expression (U-SQL)](../USQL/except-expression-u-sql.md)
+* [INTERSECT Expression (U-SQL)](../USQL/intersect-expression-u-sql.md)
+* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)  

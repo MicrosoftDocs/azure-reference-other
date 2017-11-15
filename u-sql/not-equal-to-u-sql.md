@@ -17,9 +17,9 @@ manager: "jhubbard"
 # != (Not Equal To) (U-SQL)
 Tests whether one expression is not equal to another expression (a comparison operator). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Not_Equal_To:=                                                                                           
-    <a href="#expr">expression</a> != <a href="#expr">expression</a>.
+     <a href="#expr">expression</a> != <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
 > [!NOTE]
@@ -30,7 +30,7 @@ Not_Equal_To:=
 Is any valid expression. If the expressions are not of the same data type, the data type for one expression must be implicitly convertible to the data type of the other. 
 
 ### Result Types
-[Boolean](other-simple-built-in-types-and-literals.md) 
+[Boolean](../USQL/other-simple-built-in-types-and-literals.md) 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -66,8 +66,8 @@ OUTPUT @result3 TO "/Output/ReferenceGuide/Operators/Comparison/Inequality3.txt"
 ```
 
 ### See Also
-* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md) 
-* [Operators (U-SQL)](operators-u-sql.md)
+* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md) 
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)
     
     
     

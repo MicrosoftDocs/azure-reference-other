@@ -19,9 +19,9 @@ The VARP aggregator returns the statistical variance for the population for all 
 
 The identity value is null. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 VARP_Expression :=                                                                                       
-      'VARP' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.  
+     'VARP' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 
@@ -32,10 +32,10 @@ Optionally allows to de-duplicate the values returned by the expression inside t
 The C# expression (including column references) that gets aggregated. The type of the expression has to be a numeric type or an error is raised. 
 
 ### Return Type 
-The return type is [double?](numeric-types-and-literals.md). 
+The return type is [double?](../USQL/numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression 
-This aggregator can be used in a [windowing expression](over-expression-u-sql.md) without any additional restrictions. 
+This aggregator can be used in a [windowing expression](../USQL/over-expression-u-sql.md) without any additional restrictions. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -71,7 +71,7 @@ USING Outputters.Csv();
 ```
 
 **B.    VARP per group**   
-The following query determines the statistical variance for the salary population for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
+The following query determines the statistical variance for the salary population for each department with the [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) clause.
 ```
 @result =
     SELECT DeptName,
@@ -85,7 +85,7 @@ USING Outputters.Csv();
 ```
 
 **C.    VARP with OVER()**   
-The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows.  The query determines the statistical variance for the salary population over the window - all employees.
+The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows.  The query determines the statistical variance for the salary population over the window - all employees.
 ```
 @result =
     SELECT EmpName,
@@ -98,7 +98,7 @@ USING Outputters.Csv();
 ```
 
 **D.    VARP over a defined window using OVER()**   
-The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, `Salary`, and the statistical variance for the salary population over the window - `DeptName`.
+The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, `Salary`, and the statistical variance for the salary population over the window - `DeptName`.
 ```
 @result =
     SELECT EmpName,
@@ -113,8 +113,8 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)   
-* [VAR (U-SQL)](var-u-sql.md)  
-* [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
-* [OVER Expression (U-SQL)](over-expression-u-sql.md)  
+* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)   
+* [VAR (U-SQL)](../USQL/var-u-sql.md)  
+* [GROUP BY and HAVING Clauses (U-SQL)](../USQL/group-by-and-having-clauses-u-sql.md)
+* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md)  
 

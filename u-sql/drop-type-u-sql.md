@@ -20,12 +20,11 @@ U-SQL named types can be deleted with the `DROP TYPE` statement.
 > [!WARNING]
 > **This operation cannot be undone!**
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Type_Statement :=                                                                                   
-    'DROP' 'TYPE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#t_ident">Type_Identifier</a>.
-<br />
+    'DROP' 'TYPE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#t_ident">Type_Identifier</a>.<br />
 <a href="#t_ident">Type_Identifier</a> := 
-    <a href="u-sql-identifiers.md">DB_Object_Identifier</a>.  
+    <a href="u-sql-identifiers.md">DB_Object_Identifier</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
@@ -45,7 +44,7 @@ DROP TYPE TestReferenceDB.dbo.PhoneType;
 ```
   
 ### See Also
-* [User-defined U-SQL Types](user-defined-u-sql-types.md)  
-* [CREATE TYPE (U-SQL)](create-type-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
+* [User-defined U-SQL Types](../USQL/user-defined-u-sql-types.md)  
+* [CREATE TYPE (U-SQL)](../USQL/create-type-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   
 

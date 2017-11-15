@@ -24,6 +24,6 @@ The grammar rules use `Temporal_Type` to refer to one of these types.
 U-SQL’s temporal types do not have a built-in literal form, but require the standard C# construction mechanisms such as [DateTime.Parse()](https://msdn.microsoft.com/library/system.datetime.parse(v=vs.110).aspx) or [new DateTime()](https://msdn.microsoft.com/library/system.datetime.datetime(v=vs.110).aspx). Note that these constructions with simple string and number parameters are constant folded (executed at compile time) and thus are similar to a built-in literal.  
   
 ### See Also
-* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
-* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md)  
-* [Date & Time](csharp-functions-and-operators-u-sql.md#DateTime)
+* [Simple Built-In U-SQL Types](../USQL/simple-built-in-u-sql-types.md)
+* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md)  
+* [Date & Time](../USQL/csharp-functions-and-operators-u-sql.md#DateTime)

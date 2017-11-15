@@ -33,7 +33,7 @@ The C# expression (including column references) that gets aggregated.
 The type of the input. 
 
 ### Usage in Windowing Expression 
-This aggregator cannot be used in a [windowing expression](over-expression-u-sql.md). 
+This aggregator cannot be used in a [windowing expression](../USQL/over-expression-u-sql.md). 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -81,6 +81,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)  
-* [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
-* [OVER Expression (U-SQL)](over-expression-u-sql.md)
+* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)  
+* [GROUP BY and HAVING Clauses (U-SQL)](../USQL/group-by-and-having-clauses-u-sql.md)
+* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md)

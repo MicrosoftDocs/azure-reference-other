@@ -17,11 +17,11 @@ manager: "jhubbard"
 # NOT (U-SQL)
 U-SQL’s logical NOT operator performs a negation of the Boolean expression and returns false if the expression evaluates to true and true if it evaluates to false. It is equivalent to the C# ! operator. 
 
-When more than one logical operator is used in an expression, NOT operators bind stronger than [AND](and-u-sql.md) and [OR](or-u-sql.md). Parentheses can be used to change the binding precedence. 
+When more than one logical operator is used in an expression, NOT operators bind stronger than [AND](../USQL/and-u-sql.md) and [OR](../USQL/or-u-sql.md). Parentheses can be used to change the binding precedence. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 NOT_Expression :=                                                                                        
-    'NOT' <a href="#bn_exp">Boolean_Expression</a>.  
+     'NOT' <a href="#bn_exp">Boolean_Expression</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 
@@ -29,7 +29,7 @@ NOT_Expression :=
 The Boolean expression to be negated that returns a not-null value of type bool.  
 
 ### Return Type 
-[bool](other-simple-built-in-types-and-literals.md)
+[bool](../USQL/other-simple-built-in-types-and-literals.md)
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -73,9 +73,9 @@ OUTPUT @result TO "ReferenceGuide/Operators/Logical/Not3.txt" USING Outputters.C
 ```
 
 ### See Also 
-* [Logical Operators (U-SQL)](logical-operators-u-sql.md)  
-* [AND (U-SQL)](and-u-sql.md)  
-* [OR (U-SQL)](or-u-sql.md)  
+* [Logical Operators (U-SQL)](../USQL/logical-operators-u-sql.md)  
+* [AND (U-SQL)](../USQL/and-u-sql.md)  
+* [OR (U-SQL)](../USQL/or-u-sql.md)  
 
 
 

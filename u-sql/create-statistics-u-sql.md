@@ -19,21 +19,21 @@ U-SQL provides the `CREATE STATISTICS` statement to create query optimization st
   
 <table><th>Syntax</th><tr><td><pre>
 Create_Statistics_Statement :=                                                                           
-      'CREATE' 'STATISTICS' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>]  
-      <a href="#stat_name">Statistic_Name</a>  
-      'ON' <a href="#tabl_name">Table_Name</a> '(' <a href="#col_name">Column_Name</a> ')'  
-      <a href="#w_flscn">'WITH' 'FULLSCAN</a>'.<br /><br />
+    'CREATE' 'STATISTICS' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>]  
+    <a href="#stat_name">Statistic_Name</a>  
+    'ON' <a href="#tabl_name">Table_Name</a> '(' <a href="#col_name">Column_Name</a> ')'  
+    <a href="#w_flscn">'WITH' 'FULLSCAN</a>'.<br />
 <a href="#stat_name">Statistic_Name</a> := 
-      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br /><br /> 
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br /> 
 <a href="#tabl_name">Table_Name</a> := 
-      Identifier.<br /><br />  
+    Identifier.<br />  
 <a href="#col_name">Column_Name</a> := 
-      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
 -   <a name="stat_name"></a>**`Statistic_Name`**    
-    Specifies the name of the statistic as either a [quoted or unquoted identifier](u-sql-identifiers.md). The statistic name is unique in the context of the table, i.e., several tables could have statistics with the same name.  
+    Specifies the name of the statistic as either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md). The statistic name is unique in the context of the table, i.e., several tables could have statistics with the same name.  
   
 -   <a name="INE"></a>**`IF NOT EXISTS`**     
     If the statistics of the given name already exists on the specified table and the user has access to it, an error is raised unless the `IF NOT EXISTS` clause has been specified. If the `IF NOT EXISTS` clause has been specified and the statistics already exists and the user has at least enumeration permissions, the `CREATE STATISTICS` statement will silently complete without action. If the user has no enumeration permission, an error is raised.  
@@ -61,7 +61,7 @@ CREATE STATISTICS IF NOT EXISTS ordersStats ON dbo.Orders(OrderID) WITH FULLSCAN
 ```
   
 ### See Also
--  [UPDATE STATISTICS (U-SQL)](update-statistics-u-sql.md)
--  [DROP STATISTICS (U-SQL)](drop-statistics-u-sql.md)
-- [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)  
+-  [UPDATE STATISTICS (U-SQL)](../USQL/update-statistics-u-sql.md)
+-  [DROP STATISTICS (U-SQL)](../USQL/drop-statistics-u-sql.md)
+- [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)  
  

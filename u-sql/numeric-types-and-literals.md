@@ -34,7 +34,7 @@ The grammar rules use Numeric_Type to refer to one of these types.
 They follow the C# rules regarding ranges and how they treat literals. For more information see [Types (C# Reference)](https://msdn.microsoft.com/library/3ewxz6et.aspx).  
   
 ### See Also
-* [Simple Built-In U-SQL Types](simple-built-in-u-sql-types.md)
-* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md)  
+* [Simple Built-In U-SQL Types](../USQL/simple-built-in-u-sql-types.md)
+* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md)  
 
 

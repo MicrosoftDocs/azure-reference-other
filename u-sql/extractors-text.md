@@ -15,9 +15,9 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Extractors.Text()
-The Text() extractor supports a variety of text file formats that all follow a row/column format. It provides a set of delimiters to identify the row and column boundaries and several other parameters to parse the text file and produces a rowset based on the [EXTRACT](extract-expression-u-sql.md) expression’s schema.  
+The Text() extractor supports a variety of text file formats that all follow a row/column format. It provides a set of delimiters to identify the row and column boundaries and several other parameters to parse the text file and produces a rowset based on the [EXTRACT](../USQL/extract-expression-u-sql.md) expression’s schema.  
   
-See [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md) for supported parameters and their defaults values.
+See [Extractor Parameters (U-SQL)](../USQL/extractor-parameters-u-sql.md) for supported parameters and their defaults values.
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -70,11 +70,11 @@ USING Outputters.Csv();
 ```
  
 ### See Also 
-* [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md)
-* [Extractors.Csv()](extractors-csv.md)
-* [Extractors.Tsv()](extractors-tsv.md)
-* [Built-in U-SQL UDOs](built-in-u-sql-udos.md)
-* [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md)
-* [Input Files (U-SQL)](input-files-u-sql.md)
+* [Extractor Parameters (U-SQL)](../USQL/extractor-parameters-u-sql.md)
+* [Extractors.Csv()](../USQL/extractors-csv.md)
+* [Extractors.Tsv()](../USQL/extractors-tsv.md)
+* [Built-in U-SQL UDOs](../USQL/built-in-u-sql-udos.md)
+* [EXTRACT Expression (U-SQL)](../USQL/extract-expression-u-sql.md)
+* [Input Files (U-SQL)](../USQL/input-files-u-sql.md)
 
 

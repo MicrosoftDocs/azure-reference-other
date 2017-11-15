@@ -18,16 +18,16 @@ manager: "jhubbard"
 U-SQL provides the ability to name table types that then can be used when defining U-SQL table-valued function parameters and return types and U-SQL procedure table-valued parameters.  
   
 ### Type DDL Statements
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Type_DDL_Statement :=                                                                                    
-    <a href="create-type-u-sql.md">Create_Type_Statement</a>  
-|   <a href="drop-type-u-sql.md">Drop_Type_Statement</a>.  
+     <a href="create-type-u-sql.md">Create_Type_Statement</a>
+|    <a href="drop-type-u-sql.md">Drop_Type_Statement</a>.
 </pre></td></tr></table>
 
 ### See Also 
-* [CREATE TYPE (U-SQL)](create-type-u-sql.md)  
-* [DROP TYPE (U-SQL)](drop-type-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
+* [CREATE TYPE (U-SQL)](../USQL/create-type-u-sql.md)  
+* [DROP TYPE (U-SQL)](../USQL/drop-type-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   
 
   
 

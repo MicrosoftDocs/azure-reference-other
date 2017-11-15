@@ -18,21 +18,21 @@ manager: "jhubbard"
 U-SQL supports creating and dropping views over rowsets.  
   
 ### View DDL Statements
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 View_DDL_Statement :=                                                                                    
-       <a href="create-view-u-sql.md">Create_View_Statement</a> 
-|      <a href="drop-view-u-sql.md">Drop_View_Statement.</a>  
+     <a href="create-view-u-sql.md">Create_View_Statement</a>
+|    <a href="drop-view-u-sql.md">Drop_View_Statement.</a>
 </pre></td></tr></table>
  
 In U-SQL Views will be inlined into the expression where they are being referenced and thus are similar to the rowset expression variables, which the difference that the variables only exist for the duration of a script while a view will be made available through the metadata catalog to other scripts.  
   
 Unlike tables that can be created with a query expressions, views are not copying the data but are always executed against the data over which the view is defined. This avoids copying the data and thus will always pick up the latest data while costing the execution of the query expression in every query.  
   
-U-SQL also provides parameterized views through [table-valued functions](u-sql-functions.md).  
+U-SQL also provides parameterized views through [table-valued functions](../USQL/u-sql-functions.md).  
   
 ### See Also    
-- [CREATE VIEW (U-SQL)](create-view-u-sql.md)
-- [DROP VIEW (U-SQL)](drop-view-u-sql.md)
-- [U-SQL Functions](u-sql-functions.md)
+- [CREATE VIEW (U-SQL)](../USQL/create-view-u-sql.md)
+- [DROP VIEW (U-SQL)](../USQL/drop-view-u-sql.md)
+- [U-SQL Functions](../USQL/u-sql-functions.md)
   
 

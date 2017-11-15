@@ -17,16 +17,16 @@ manager: "jhubbard"
 # Sentiment Analysis (U-SQL)
 The `SentimentAnalyzer` cognitive function evaluates sentiment from the text. It returns a numeric score between 0 and 1 long with the sentiment string from the text. Scores close to 1 indicate positive sentiment and scores close to 0 indicate negative sentiment. Sentiment score is generated using classification techniques. The input features of the classifier include n-grams, features generated from part-of-speech tags, and word embeddings. English text is supported.
 
-<table><th>Arguments TBD</th><tr><td><pre>
+<table><th align="left">Arguments TBD</th><tr><td><pre>
 SentimentAnalyzer(                                                                                       
-    string TBD  = "TBD", 
-    string TBD  = "Sentiment",
-    string TBD  = "Conf") 
+     string TBD  = "TBD", 
+     string TBD  = "Sentiment",
+     string TBD  = "Conf")
 </pre></td></tr></table>
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- Ensure you have installed the cognitive assemblies, see [Registering Cognitive Extensions in U-SQL](cognitive-capabilities-in-u-sql.md#registeringExtensions) for more information.
+- Ensure you have installed the cognitive assemblies, see [Registering Cognitive Extensions in U-SQL](../USQL/cognitive-capabilities-in-u-sql.md#registeringExtensions) for more information.
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally) if you first download the assemblies locally, see [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/) for more information.
 An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
@@ -172,8 +172,8 @@ USING Outputters.Tsv();
 
 
 ### See Also
-* [Built-in U-SQL System Objects and Extensions](built-in-u-sql-system-objects-and-extensions.md)
-* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
-* [Cognitive Capabilities in U-SQL](cognitive-capabilities-in-u-sql.md)
-* [Key Phrases Extraction (U-SQL)](key-phrases-extraction-u-sql.md)
+* [Built-in U-SQL System Objects and Extensions](../USQL/built-in-u-sql-system-objects-and-extensions.md)
+* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)
+* [Cognitive Capabilities in U-SQL](../USQL/cognitive-capabilities-in-u-sql.md)
+* [Key Phrases Extraction (U-SQL)](../USQL/key-phrases-extraction-u-sql.md)
 

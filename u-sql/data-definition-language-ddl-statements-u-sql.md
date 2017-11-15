@@ -19,9 +19,9 @@ While one of U-SQL’s strength is to operate on unstructured data stored in fil
   
 Each meta data object is given a name and the objects are arranged in the following object hierarchy:  
   
-![U-SQL Metadata Object Model](media/u-sql-metadata-object-model.png)  
+![U-SQL Metadata Object Model](../USQL/media/u-sql-metadata-object-model.png)  
   
-U-SQL metadata objects are name-scoped to their containers (e.g., views and tables are scoped to database schemas) which provide a single namespace for all object types within a container. Thus names cannot be shared across different object types in the same container (e.g., a view and table in the same schema cannot have the same name). The metadata objects are addressed with their [U-SQL object identifier](identifiers-u-sql.md) (follow the link for more information on the form of [U-SQL object identifiers](identifiers-u-sql.md) and how they are being resolved).  
+U-SQL metadata objects are name-scoped to their containers (e.g., views and tables are scoped to database schemas) which provide a single namespace for all object types within a container. Thus names cannot be shared across different object types in the same container (e.g., a view and table in the same schema cannot have the same name). The metadata objects are addressed with their [U-SQL object identifier](../USQL/identifiers-u-sql.md) (follow the link for more information on the form of [U-SQL object identifiers](../USQL/identifiers-u-sql.md) and how they are being resolved).  
  
 Objects that are included from the C# context, such as the names of functions, classes, methods provided by the assemblies, do not require metadata object names but instead are being references using their C# names after the assemblies are being referenced by their metadata object names in the scripts.  
   
@@ -35,20 +35,20 @@ All metadata objects except credentials are being created and managed with the f
   
 ### DDL Statements (U-SQL)  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 DDL_Statement :=                                                                                         
-      <a href="u-sql-databases.md">DB_DDL_Statement</a>  
-|     <a href="u-sql-database-schemas.md">Schema_DDL_Statement</a>  
-|     <a href="u-sql-tables.md">Table_DDL_Statement</a>  
-|     <a href="u-sql-indexes.md">Index_DDL_Statement</a>  
-|     <a href="u-sql-statistics.md">Statistics_DDL_Statement</a>  
-|     <a href="u-sql-views.md">View_DDL_Statement</a>  
-|     <a href="u-sql-functions.md">Function_DDL_Statement</a> 
-|     <a href="u-sql-packages.md">Package_DDL_Statement</a>   
-|     <a href="u-sql-procedures.md">Procedure_DDL_Statement</a>  
-|     <a href="u-sql-assemblies.md">Assembly_DDL_Statement</a>  
-|     <a href="u-sql-data-sources.md">Datasource_DDL_Statement</a>  
-|     <a href="user-defined-u-sql-types.md">Type_DDL_Statement</a>.  
+    <a href="u-sql-databases.md">DB_DDL_Statement</a>  
+|   <a href="u-sql-database-schemas.md">Schema_DDL_Statement</a>  
+|   <a href="u-sql-tables.md">Table_DDL_Statement</a>  
+|   <a href="u-sql-indexes.md">Index_DDL_Statement</a>  
+|   <a href="u-sql-statistics.md">Statistics_DDL_Statement</a>  
+|   <a href="u-sql-views.md">View_DDL_Statement</a>  
+|   <a href="u-sql-functions.md">Function_DDL_Statement</a> 
+|   <a href="u-sql-packages.md">Package_DDL_Statement</a>   
+|   <a href="u-sql-procedures.md">Procedure_DDL_Statement</a>  
+|   <a href="u-sql-assemblies.md">Assembly_DDL_Statement</a>  
+|   <a href="u-sql-data-sources.md">Datasource_DDL_Statement</a>  
+|   <a href="user-defined-u-sql-types.md">Type_DDL_Statement</a>.
 </pre></td></tr></table>
  
  Credentials have to be created and managed with the credential management commandlets in the latest Azure Powershell.

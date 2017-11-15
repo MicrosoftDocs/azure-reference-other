@@ -15,21 +15,21 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Built-in U-SQL UDOs
-U-SQL provides some common UDOs already built-in. Currently the built-in UDOs are providing [extraction from](u-sql-built-in-extractors.md) and [outputting to](u-sql-built-in-outputters.md) some common data formats. More UDOs may be added over time.  
+U-SQL provides some common UDOs already built-in. Currently the built-in UDOs are providing [extraction from](../USQL/u-sql-built-in-extractors.md) and [outputting to](../USQL/u-sql-built-in-outputters.md) some common data formats. More UDOs may be added over time.  
 
 |UDO  |Description|
 |----|--|
-|[Extractors](u-sql-built-in-extractors.md)|Used to generate a rowset from the input file or files.|
-|[Outputters](u-sql-built-in-outputters.md) |Used to transform a rowset into a file or set of files.|
+|[Extractors](../USQL/u-sql-built-in-extractors.md)|Used to generate a rowset from the input file or files.|
+|[Outputters](../USQL/u-sql-built-in-outputters.md) |Used to transform a rowset into a file or set of files.|
   
 ### See Also 
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx)   
-* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
-* [U-SQL Built-in Extractors](u-sql-built-in-extractors.md)  
-* [U-SQL Built-in Outputters](u-sql-built-in-outputters.md)  
-* [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md)
-* [Output Statement (U-SQL)](output-statement-u-sql.md)
-* [Files and File Sets as Inputs and Outputs (U-SQL)](files-and-file-sets-as-inputs-and-outputs-u-sql.md)
+* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)  
+* [U-SQL Built-in Extractors](../USQL/u-sql-built-in-extractors.md)  
+* [U-SQL Built-in Outputters](../USQL/u-sql-built-in-outputters.md)  
+* [EXTRACT Expression (U-SQL)](../USQL/extract-expression-u-sql.md)
+* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)
+* [Files and File Sets as Inputs and Outputs (U-SQL)](../USQL/files-and-file-sets-as-inputs-and-outputs-u-sql.md)
 
 
 

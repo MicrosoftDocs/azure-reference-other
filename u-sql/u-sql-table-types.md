@@ -15,7 +15,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # U-SQL Table Types
-U-SQL also supports specifying types that represent composite rowset - or table - types. These types are often anonymous, for example when defining a table, but can also be named with the [CREATE TYPE](create-type-u-sql.md) statement and then referenced in U-SQL [table-valued function](u-sql-table-valued-functions.md) and [procedure](u-sql-procedures.md) definitions.  
+U-SQL also supports specifying types that represent composite rowset - or table - types. These types are often anonymous, for example when defining a table, but can also be named with the [CREATE TYPE](../USQL/create-type-u-sql.md) statement and then referenced in U-SQL [table-valued function](../USQL/u-sql-table-valued-functions.md) and [procedure](../USQL/u-sql-procedures.md) definitions.  
 
 ### See Also
-* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md)    
+* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md)    

@@ -17,13 +17,13 @@ manager: "jhubbard"
 # Simple Built-In U-SQL Types
 The following shows the list of supported simple column types.  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Simple_Type :=                                                                                           
-    <a href="numeric-types-and-literals.md">Numeric_Type</a> 
-|   <a href="textual-types-and-literals.md">Textual_Type</a> 
-|   <a href="temporal-types-and-literals.md">Temporal_Type</a> 
-|   <a href="other-simple-built-in-types-and-literals.md">Other_Type</a>.  
+     <a href="numeric-types-and-literals.md">Numeric_Type</a>
+|    <a href="textual-types-and-literals.md">Textual_Type</a>
+|    <a href="temporal-types-and-literals.md">Temporal_Type</a>
+|    <a href="other-simple-built-in-types-and-literals.md">Other_Type</a>.
 </pre></td></tr></table>
 
 ### See Also  
-* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md)
+* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md)

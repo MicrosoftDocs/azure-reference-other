@@ -20,9 +20,9 @@ The `DROP PROCEDURE` statement drops the specified procedure.
 > [!WARNING]
 > **This operation cannot be undone!**
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Proc_Statement :=                                                                                   
-    'DROP' 'PROCEDURE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.  
+    'DROP' 'PROCEDURE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.
 </pre></td></tr></table>
  
 ### Semantics of Syntax Elements    
@@ -35,7 +35,7 @@ Drop_Proc_Statement :=
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://channel9.msdn.com/Series/AzureDataLake/USQL-LocalRun).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples utilize the procedures created from [CREATE PROCEDURE (U-SQL)](create-procedure-u-sql.md).
+- The examples utilize the procedures created from [CREATE PROCEDURE (U-SQL)](../USQL/create-procedure-u-sql.md).
 ```
 // Will error if not exists
 DROP PROCEDURE TestReferenceDB.dbo.myStoredProcWithParameters;
@@ -45,6 +45,6 @@ DROP PROCEDURE IF EXISTS TestReferenceDB.dbo.myFirstStoredProc;
 
   
 ### See Also    
-* [U-SQL Procedures](u-sql-procedures.md)  
-* [CREATE PROCEDURE (U-SQL)](create-procedure-u-sql.md)  
-* [Calling a Procedure (U-SQL)](calling-a-procedure-u-sql.md)   
+* [U-SQL Procedures](../USQL/u-sql-procedures.md)  
+* [CREATE PROCEDURE (U-SQL)](../USQL/create-procedure-u-sql.md)  
+* [Calling a Procedure (U-SQL)](../USQL/calling-a-procedure-u-sql.md)   

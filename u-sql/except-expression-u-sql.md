@@ -17,17 +17,15 @@ manager: "jhubbard"
 # EXCEPT Expression (U-SQL)
 EXCEPT returns the rows from the left query expression that are not in the right query expression, thus subtracting the right rowset from the left.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Except_Expression :=                                                                                     
     <a href="#qry_exp">Query_Expression</a> 'EXCEPT' [<a href="#SOO">Set_Operator_Option</a>] [<a href="#ByName">By_Name</a>] 
-    <a href="#qry_exp">Query_Expression</a>.
-<br />
+    <a href="#qry_exp">Query_Expression</a>.<br />
 <a href="#SOO">Set_Operator_Option</a> :=  
     '<a href="#dist">DISTINCT</a>'  
-|   '<a href="#ALL">ALL</a>'.
-<br />  
+|   '<a href="#ALL">ALL</a>'.<br />
 <a href="#ByName">By_Name</a> :=
-    'BY' 'NAME' ['ON' '(' (Identifier_List [',' '*'] | '*') ')'.  
+    'BY' 'NAME' ['ON' '(' (Identifier_List [',' '*'] | '*') ')'.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements  
@@ -146,7 +144,7 @@ USING Outputters.Csv();
 ```
 
 **EXCEPT with ORDER BY and FETCH**   
-The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
+The [ORDER BY clause with FETCH](../USQL/order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 ```
 // Data sets
 @Product = 
@@ -208,9 +206,9 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
-* [Set Rowset Expressions (U-SQL)](set-rowset-expressions-u-sql.md)
-* [INTERSECT Expression (U-SQL)](intersect-expression-u-sql.md)
-* [UNION and OUTER UNION Expression (U-SQL)](union-and-outer-union-expression-u-sql.md) 
+* [Query Statements and Expressions (U-SQL)](../USQL/query-statements-and-expressions-u-sql.md) 
+* [Set Rowset Expressions (U-SQL)](../USQL/set-rowset-expressions-u-sql.md)
+* [INTERSECT Expression (U-SQL)](../USQL/intersect-expression-u-sql.md)
+* [UNION and OUTER UNION Expression (U-SQL)](../USQL/union-and-outer-union-expression-u-sql.md) 
 
 

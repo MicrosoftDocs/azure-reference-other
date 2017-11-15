@@ -19,9 +19,9 @@ The COUNT aggregator returns the number of items in a group. If COUNT(*) is spec
 
 The identity value is 0. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 COUNT_Expression :=                                                                                      
-      'COUNT' '(' ['<a href="#dist">DISTINCT</a>'] (<a href="#exp">expression | '*'</a>) ')'.  
+    'COUNT' '(' ['<a href="#dist">DISTINCT</a>'] (<a href="#exp">expression | '*'</a>) ')'.  
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 
@@ -32,10 +32,10 @@ Optionally allows to de-duplicate the values returned by the expression inside t
 The C# expression (including column references) for which the nonnull values in a group get counted or * to indicate to count the rows and include null values in the count. 
 
 ### Return Type 
-The return type is [long?](numeric-types-and-literals.md). 
+The return type is [long?](../USQL/numeric-types-and-literals.md). 
 
 ### Usage in Windowing Expression 
-This aggregator can be used in a [windowing expression](over-expression-u-sql.md) without any additional restrictions. 
+This aggregator can be used in a [windowing expression](../USQL/over-expression-u-sql.md) without any additional restrictions. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -88,7 +88,7 @@ USING Outputters.Csv();
 ```
 
 **B.    Count values per group**  
-The following query calculates the count of employees within each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
+The following query calculates the count of employees within each department with the [GROUP BY](../USQL/group-by-and-having-clauses-u-sql.md) clause.
 ```
 @result =
     SELECT DeptName,
@@ -102,7 +102,7 @@ USING Outputters.Csv();
 ```
 
 **C.    Count values with OVER()**  
-The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query calculates the employee count over the window - all employees.
+The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query calculates the employee count over the window - all employees.
 ```
 @result =
     SELECT EmpName,
@@ -115,7 +115,7 @@ USING Outputters.Csv();
 ```
 
 **D.    Count values over a defined window using OVER()**  
-The [OVER](over-expression-u-sql.md) clause in the following query is DeptName.  The query returns all records and the number of employees over the window - DeptName.
+The [OVER](../USQL/over-expression-u-sql.md) clause in the following query is DeptName.  The query returns all records and the number of employees over the window - DeptName.
 ```
 @result =
     SELECT *,
@@ -128,6 +128,6 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)  
-* [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
-* [OVER Expression (U-SQL)](over-expression-u-sql.md) 
+* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)  
+* [GROUP BY and HAVING Clauses (U-SQL)](../USQL/group-by-and-having-clauses-u-sql.md)
+* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 

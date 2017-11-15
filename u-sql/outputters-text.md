@@ -16,7 +16,7 @@ manager: "jhubbard"
 ---
 # Outputters.Text()
 ### Outputting textual row-oriented files    
-The Text() outputter supports a variety of text file formats that all follow a row/column format. It provides a set of delimiters to identify the row and column boundaries and several other parameters to transform the rowset values into the text file.  See [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md) for supported parameters and their defaults values.
+The Text() outputter supports a variety of text file formats that all follow a row/column format. It provides a set of delimiters to identify the row and column boundaries and several other parameters to transform the rowset values into the text file.  See [Outputter Parameters (U-SQL)](../USQL/outputter-parameters-u-sql.md) for supported parameters and their defaults values.
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -52,9 +52,9 @@ OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_charFormat_encod
 ```
 
 ### See Also
-* [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md)
-* [Outputters.Csv()](outputters-csv.md)
-* [Outputters.Tsv()](outputters-tsv.md)
-* [U-SQL Built-in Outputters](u-sql-built-in-outputters.md)
-* [Output Statement (U-SQL)](output-statement-u-sql.md)
-* [Output to Files (U-SQL)](output-to-files-u-sql.md)
+* [Outputter Parameters (U-SQL)](../USQL/outputter-parameters-u-sql.md)
+* [Outputters.Csv()](../USQL/outputters-csv.md)
+* [Outputters.Tsv()](../USQL/outputters-tsv.md)
+* [U-SQL Built-in Outputters](../USQL/u-sql-built-in-outputters.md)
+* [Output Statement (U-SQL)](../USQL/output-statement-u-sql.md)
+* [Output to Files (U-SQL)](../USQL/output-to-files-u-sql.md)

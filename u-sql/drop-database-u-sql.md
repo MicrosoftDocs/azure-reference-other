@@ -20,17 +20,16 @@ The statement drops the database and deletes all the data contained within from 
 > [!WARNING]
 > **This operation cannot be undone!**
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Database_Statement :=                                                                               
-    'DROP' 'DATABASE' [<a href="#iff_e">'IF' 'EXISTS'</a>] <a href="#DB_Name">DB_Name</a>.
-<br />
+    'DROP' 'DATABASE' [<a href="#iff_e">'IF' 'EXISTS'</a>] <a href="#DB_Name">DB_Name</a>.<br />
 <a href="#DB_Name">DB_Name</a> :=  
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements  
 -   <a name="DB_Name"></a>**`DB_Name`**   
-    Specifies the name of the database to be dropped in form of a [quoted or unquoted U-SQL identifier](u-sql-identifiers.md). If a database of the given name does not exist or the user has no permissions to drop a database, an error is raised.   
+    Specifies the name of the database to be dropped in form of a [quoted or unquoted U-SQL identifier](../USQL/u-sql-identifiers.md). If a database of the given name does not exist or the user has no permissions to drop a database, an error is raised.   
   
 -   <a name="iff_e"></a>**`IF EXISTS`**   
     If the optional `IF EXISTS` is specified, then the statement drops the database if it already exists, or succeeds without changes if the database does not exist or the user has no permission to at least enumerate all existing databases.  
@@ -48,6 +47,6 @@ DROP DATABASE IF EXISTS TestReferenceDB;
 ```
   
 ### See Also    
-* [U-SQL Databases](u-sql-databases.md)  
-* [CREATE DATABASE (U-SQL)](create-database-u-sql.md)
-* [USE DATABASE (U-SQL)](use-database-u-sql.md)
+* [U-SQL Databases](../USQL/u-sql-databases.md)  
+* [CREATE DATABASE (U-SQL)](../USQL/create-database-u-sql.md)
+* [USE DATABASE (U-SQL)](../USQL/use-database-u-sql.md)

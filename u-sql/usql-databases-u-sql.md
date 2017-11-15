@@ -36,6 +36,6 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 ### See Also
-* [Catalog Views (U-SQL)](catalog-views-u-sql.md)
-* [usql.objects (U-SQL)](usql-objects-u-sql.md)
-* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
+* [Catalog Views (U-SQL)](../USQL/catalog-views-u-sql.md)
+* [usql.objects (U-SQL)](../USQL/usql-objects-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)

@@ -20,7 +20,7 @@ U-SQL allows a table to be created by specifying a schema, or by specifying a qu
 > [!NOTE]
 > All managed U-SQL tables are currently clustered tables where the cluster information is specified with a clustered index. In particular, other types of tables such as heaps and column store tables are not supported.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_Managed_Table_Statement :=                                                                        
     'CREATE' 'TABLE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#ident">Identifier</a>   
     (<a href="#tbl_w_sch">Table_With_Schema</a> | <a href="#tbl_as_qry">Table_As_Query</a>).
@@ -36,15 +36,15 @@ Create_Managed_Table_Statement :=
     If the optional `IF NOT EXISTS` is specified, then the statement creates the table if it does not already exist, or succeeds without changes if the table already exists and the user has permission to at least enumerate all existing tables.  
   
 -   <a name="tbl_w_sch"></a>**`Table_With_Schema`**  
-    A table can be specified by means of declaring a schema. See [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md) for more details.  
+    A table can be specified by means of declaring a schema. See [CREATE TABLE (U-SQL): Creating a Table with Schema](../USQL/create-table-u-sql-creating-a-table-with-schema.md) for more details.  
   
 -   <a name="tbl_as_qry"></a>**`Table_As_Query`**   
-    A table can be specified by means of declaring a schema. See [CREATE TABLE (U-SQL): Creating a Table from a Query](create-table-u-sql-creating-a-table-from-a-query.md) for more details.   
+    A table can be specified by means of declaring a schema. See [CREATE TABLE (U-SQL): Creating a Table from a Query](../USQL/create-table-u-sql-creating-a-table-from-a-query.md) for more details.   
   
 ### See Also    
-* [CREATE EXTERNAL TABLE (U-SQL)](create-external-table-u-sql.md)
-* [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md)
-* [CREATE TABLE (U-SQL): Creating a Table from a Query](create-table-u-sql-creating-a-table-from-a-query.md)
+* [CREATE EXTERNAL TABLE (U-SQL)](../USQL/create-external-table-u-sql.md)
+* [CREATE TABLE (U-SQL): Creating a Table with Schema](../USQL/create-table-u-sql-creating-a-table-with-schema.md)
+* [CREATE TABLE (U-SQL): Creating a Table from a Query](../USQL/create-table-u-sql-creating-a-table-from-a-query.md)
 
 
 

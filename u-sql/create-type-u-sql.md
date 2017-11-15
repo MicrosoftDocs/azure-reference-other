@@ -20,11 +20,11 @@ U-SQL can name and register table types with the `CREATE TYPE` statement.
 <table><th>Syntax</th><tr><td><pre>
 Create_Type_Statement :=                                                                                 
     'CREATE' 'TYPE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#t_ident">Type_Identifier</a>   
-    'AS' Anonymous_Table_Type.<br /><br />
+    'AS' Anonymous_Table_Type.<br />
 <a href="#t_ident">Type_Identifier</a> := 
     <a href="u-sql-identifiers.md">DB_Object_Identifier</a>.<br />
 Anonymous_Table_Type :=  
-    'TABLE' '(' <a href="#cdl">Column_Definition_List</a> ')'.  
+    'TABLE' '(' <a href="#cdl">Column_Definition_List</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements  
@@ -37,21 +37,21 @@ Specifies the name of the type. If the identifier is a two-part identifier, then
 If the optional `IF NOT EXISTS` is specified, then the statement creates the type if it does not already exist, or succeeds without changes if the type already exists and the user has permission to at least enumerate all existing types.  
   
 - <a name="cdl"></a>**`Column_Definition_List`**  
-Defines the table schema as follows :
+  Defines the table schema as follows :
  
-   <table><th>Syntax</th><tr><td><pre>
-Column_Definition_List :=                                                                           
-       Column_Definition { ',' Column_Definition }.  
-</pre></td></tr></table>  
+  <table><th>Syntax</th><tr><td><pre>
+  Column_Definition_List :=                                                                           
+       Column_Definition { ',' Column_Definition }.
+  </pre></td></tr></table>  
  
-    - **`Column_Definition`**   
-A column definition is of the form
+  - **`Column_Definition`**   
+    A column definition is of the form
     <table><th>Syntax</th><tr><td><pre>
-Column_Definition :=    
-<a></a>     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.                                               <a></a>
+    Column_Definition :=    
+        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
     </pre></td></tr></table>
   
-         Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](built-in-u-sql-types.md).   
+    Each column has an identifier that can be either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](../USQL/built-in-u-sql-types.md).   
   
   
 ### Examples    
@@ -182,6 +182,6 @@ USING Outputters.Tsv();
 
   
 ### See Also
-* [User-defined U-SQL Types](user-defined-u-sql-types.md)  
-* [DROP TYPE (U-SQL)](drop-type-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
+* [User-defined U-SQL Types](../USQL/user-defined-u-sql-types.md)  
+* [DROP TYPE (U-SQL)](../USQL/drop-type-u-sql.md)  
+* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)   

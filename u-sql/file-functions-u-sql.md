@@ -20,12 +20,12 @@ These intrinsic functions are currently always evaluated at compile time (and th
 ### Functions
 |Name   |Description|
 |--|--|
-|[CREATED(string)](file-created-u-sql.md)|Returns the creation timestamp of the file at the specified location at compile time as a DateTime value (Kind is `Unspecified`).|
-|[EXISTS(string)](file-exists-u-sql.md)|Checks if a file in the specified location exists at compile time.|
-|[LENGTH(string)](file-length-u-sql.md)|Returns the logical size in bytes of the file at the specified location at compile time.|
-|[MODIFIED(string)](file-modified-u-sql.md)|Returns the last modified timestamp of the file at the specified location at compile time as a DateTime value (Kind is `Unspecified`). |
+|[CREATED(string)](../USQL/file-created-u-sql.md)|Returns the creation timestamp of the file at the specified location at compile time as a DateTime value (Kind is `Unspecified`).|
+|[EXISTS(string)](../USQL/file-exists-u-sql.md)|Checks if a file in the specified location exists at compile time.|
+|[LENGTH(string)](../USQL/file-length-u-sql.md)|Returns the logical size in bytes of the file at the specified location at compile time.|
+|[MODIFIED(string)](../USQL/file-modified-u-sql.md)|Returns the last modified timestamp of the file at the specified location at compile time as a DateTime value (Kind is `Unspecified`). |
 
 ### See Also
-* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
-* [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md)
+* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)  
+* [C# Functions and Operators (U-SQL)](../USQL/csharp-functions-and-operators-u-sql.md)
 

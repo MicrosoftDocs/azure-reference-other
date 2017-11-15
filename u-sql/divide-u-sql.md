@@ -15,20 +15,19 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # / (Divide) (U-SQL)
-Divides one [number](numeric-types-and-literals.md) by another (an arithmetic division operator). 
+Divides one [number](../USQL/numeric-types-and-literals.md) by another (an arithmetic division operator). 
 
-<table><th>Syntax</th><tr><td><pre>
-Divide_Operator :=                                                                                     
+<table><th align="left">Syntax</th><tr><td><pre>
+Divide_Operator :=                                                                                       
     <a href="#expr">dividend</a> '/' <a href="#divisor">divisor</a>.
 </pre></td></tr></table>
 
-  
 ### Semantics of Syntax Elements    
 -   <a name="expr"></a>**`dividend`**  
-One of the [Numeric Types](numeric-types-and-literals.md) to divide.
+One of the [Numeric Types](../USQL/numeric-types-and-literals.md) to divide.
 
 -   <a name="divisor"></a>**`divisor`**  
-One of the [Numeric Types](numeric-types-and-literals.md) by which to divide the dividend.
+One of the [Numeric Types](../USQL/numeric-types-and-literals.md) by which to divide the dividend.
 
 ### Return Type
 Returns the data type of the argument with the higher precedence.  If an integer dividend is divided by an integer divisor, the result is an integer that has any fractional part of the result truncated. 
@@ -64,8 +63,8 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Operators (U-SQL)](operators-u-sql.md)
-* [Numeric Types and Literals](numeric-types-and-literals.md)
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)
+* [Numeric Types and Literals](../USQL/numeric-types-and-literals.md)
 
 
 

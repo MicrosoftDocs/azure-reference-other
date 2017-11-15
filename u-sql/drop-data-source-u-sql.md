@@ -20,10 +20,9 @@ A data source can be dropped with the `DROP DATA SOURCE` statement.
 > [!WARNING]
 > **This operation cannot be undone!**
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Datasource_Statement :=                                                                             
-    'DROP' 'DATA' 'SOURCE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#dsrc_name">Datasource_Name</a>.
-<br />
+    'DROP' 'DATA' 'SOURCE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#dsrc_name">Datasource_Name</a>.<br />
 <a href="#dsrc_name">Datasource_Name</a> := 
     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table> 
@@ -48,7 +47,7 @@ DROP DATA SOURCE IF EXISTS MySQLServerDataSource;
 ```
 
 ### See Also
-* [U-SQL Data Sources](u-sql-data-sources.md)  
-* [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md)  
-* [ALTER DATA SOURCE (U-SQL)](alter-data-source-u-sql.md)  
+* [U-SQL Data Sources](../USQL/u-sql-data-sources.md)  
+* [CREATE DATA SOURCE (U-SQL)](../USQL/create-data-source-u-sql.md)  
+* [ALTER DATA SOURCE (U-SQL)](../USQL/alter-data-source-u-sql.md)  
 

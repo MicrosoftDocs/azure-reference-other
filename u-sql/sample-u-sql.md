@@ -17,22 +17,22 @@ manager: "jhubbard"
 # SAMPLE (U-SQL)
 U-SQL supports samplers natively. The `SAMPLE` clause enables convenient access from within a `SELECT` expression.  All samplers execute in one pass on data and in parallel on portions of the input; they do not require partitioning, shuffle etc. 	Samplers have been implemented in a single pass over data and have very small memory footprint; log( SIZE(input), SIZE(output) ).
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Sample_Expression_Simple :=                                                                              
-    <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> 'SAMPLE' ( '<a href="#any">ANY</a>' '(' <a href="#row_count">row_count</a> ')' | '<a href="#uniform">UNIFORM</a>' '(' <a href="#row_fraction">row_fraction</a> ')' ).
+     <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> 'SAMPLE' ( '<a href="#any">ANY</a>' '(' <a href="#row_count">row_count</a> ')' | '<a href="#uniform">UNIFORM</a>' '(' <a href="#row_fraction">row_fraction</a> ')' ).
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
--   <a name="any"></a>**`ANY`**  
+-  <a name="any"></a>**`ANY`**  
 *Any* `row_count` rows from the input rowset.  `ANY` does not return a randomly chosen subset of rows; do not use where randomness is needed.
 
--   <a name="row_count"></a>**`row_count`**  
+- <a name="row_count"></a>**`row_count`**  
 A positive integer.
 
--   <a name="uniform"></a>**`UNIFORM`**  
+- <a name="uniform"></a>**`UNIFORM`**  
 Rows are picked uniformly at random with probability equal to `row_fraction`.  The size of the output is governed by a binomial distribution. In expectation, the size of output is `row_fraction` * SIZE(input rowset).
 
--   <a name="row_fraction"></a>**`row_fraction`**  
+- <a name="row_fraction"></a>**`row_fraction`**  
 A double between 0 and 1 that indicates the probability with which a row in the input rowset will be passed.
 
 > [!TIP] 
@@ -96,6 +96,6 @@ ZipCode  |Age      |Salary   |LastName
 
 
 ### See Also
-* [SAMPLE Expression (U-SQL)](sample-expression-u-sql.md) 
-* [U-SQL Sampling Methods](u-sql-sampling-methods.md) 
-* [Operators (U-SQL)](operators-u-sql.md)
+* [SAMPLE Expression (U-SQL)](../USQL/sample-expression-u-sql.md) 
+* [U-SQL Sampling Methods](../USQL/u-sql-sampling-methods.md) 
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)

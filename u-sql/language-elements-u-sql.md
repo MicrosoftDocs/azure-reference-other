@@ -19,11 +19,11 @@ U-SQL supports the following language elements:
 
 |Language Element|Description|
 |------|--|
-|[Double Slash Comment (U-SQL)](double-slash-comment-u-sql.md)|Line comment.|
-|[Slash Star Comment (U-SQL)](slash-star-comment-u-sql.md)|Block comment.|
-|[USE (U-SQL)](u-sql-metadata-object-naming-and-name-contexts.md)|Changes the database or schema context|
-|[USING Keyword](using-keyword.md)|Used to create an alias for a namespace or to import types defined in other namespaces.|
+|[Double Slash Comment (U-SQL)](../USQL/double-slash-comment-u-sql.md)|Line comment.|
+|[Slash Star Comment (U-SQL)](../USQL/slash-star-comment-u-sql.md)|Block comment.|
+|[USE (U-SQL)](../USQL/u-sql-metadata-object-naming-and-name-contexts.md)|Changes the database or schema context|
+|[USING Keyword](../USQL/using-keyword.md)|Used to create an alias for a namespace or to import types defined in other namespaces.|
 
 
 ### See Also
-* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
+* [Data Definition Language (DDL) Statements (U-SQL)](../USQL/data-definition-language-ddl-statements-u-sql.md)

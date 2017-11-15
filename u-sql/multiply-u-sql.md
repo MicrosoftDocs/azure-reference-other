@@ -17,15 +17,15 @@ manager: "jhubbard"
 # * (Multiply) (U-SQL)
 Multiplies two expressions (an arithmetic multiplication operator). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Multiply_Operator :=                                                                                     
-    <a href="#expr">expression</a> '*' <a href="#expr">expression</a>.
+     <a href="#expr">expression</a> '*' <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
   
 ### Semantics of Syntax Elements    
 -   <a name="expr"></a>**`expression`**  
-One of the [Numeric Types](numeric-types-and-literals.md).
+One of the [Numeric Types](../USQL/numeric-types-and-literals.md).
 
 ### Return Type
 Returns the data type of the argument with the higher precedence.
@@ -60,9 +60,9 @@ USING Outputters.Csv();
 ```
 
 ### See Also
-* [Operators (U-SQL)](operators-u-sql.md)
-* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)
-* [Numeric Types and Literals](numeric-types-and-literals.md)
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)
+* [Aggregate Functions (U-SQL)](../USQL/aggregate-functions-u-sql.md)
+* [Numeric Types and Literals](../USQL/numeric-types-and-literals.md)
 
 
 

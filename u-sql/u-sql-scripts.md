@@ -17,38 +17,36 @@ manager: "jhubbard"
 # U-SQL Scripts
 The main unit of a U-SQL “program” is a U-SQL script. A script consists of a sequence of U-SQL statements.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Script :=                                                                                                
-    <a href="#stmt">Statement_List</a>.  
+     <a href="#stmt">Statement_List</a>.
 </pre></td></tr></table>
-  
-\<!--See Appendix A for an explanation of the language syntax.-->  
-  
+ 
 ### Semantics of Syntax Elements    
 - <a name="stmt"></a>**`Statement_List`**  
   The main body of a script is a sequence of statements:  
   
   <table><th>Syntax</th><tr><td><pre>
-  Statement_List :=                                                                                 
-      { [Statement] ';' }.
-</pre></td></table>
+  Statement_List :=                                                                                   
+       { [Statement] ';' }.
+  </pre></td></table>
   
   Each statement is terminated by a semi-colon (;). Statements can be empty or one of  
 
   <table><th>Syntax</th><tr><td><pre>
-Statement :=                                                                                        
-    <a href="u-sql-metadata-object-naming-and-name-contexts.md">Use_Statement</a>  
-|   <a href="if-else-u-sql.md">If_Else_Statement</a> 
-|   <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
-|   <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
-|   Deploy_Resource_Statement 
-|   <a href="data-definition-language-ddl-statements-u-sql.md">DDL_Statement</a>  
-|   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
-|   <a href="u-sql-procedures.md">Procedure_Call</a>  
-|   <a href="import-package-u-sql.md">Import_Package_Statement</a>  
-|   <a href="data-modification-language-dml-statements-u-sql.md">DML_Statement</a>  
-|   <a href="output-statement-u-sql.md">Output_Statement</a>.  
-</pre></td></table>
+  Statement :=                                                                                        
+       <a href="u-sql-metadata-object-naming-and-name-contexts.md">Use_Statement</a>  
+  |    <a href="if-else-u-sql.md">If_Else_Statement</a> 
+  |    <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
+  |    <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
+  |    Deploy_Resource_Statement 
+  |    <a href="data-definition-language-ddl-statements-u-sql.md">DDL_Statement</a>  
+  |    <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
+  |    <a href="u-sql-procedures.md">Procedure_Call</a>  
+  |    <a href="import-package-u-sql.md">Import_Package_Statement</a>  
+  |    <a href="data-modification-language-dml-statements-u-sql.md">DML_Statement</a>  
+  |    <a href="output-statement-u-sql.md">Output_Statement</a>.
+  </pre></td></table>
   
   For more details on the individual statements follow the links to their definitions.  
   
@@ -88,7 +86,7 @@ OUTPUT @rs1
 TO @out  
 USING Outputters.Tsv();
 ```
-The script starts with two DECLARE variable statements that declare the variables @in and @out that contain the input and output path names respectively. Then it assigns the variable @searchlog to the [EXTRACT](extract-expression-u-sql.md) expression which then will be used in the next [SELECT](select-expression-u-sql.md) expression, which does a filter on the Region column. This [SELECT](select-expression-u-sql.md)  expression will be assigned to the variable @rs1. The @rs1 variable will be further refined with the next [SELECT](select-expression-u-sql.md)  expression that adds a range filter on the Start property before it is written to the output file using an [OUTPUT](output-statement-u-sql.md) statement.  
+The script starts with two DECLARE variable statements that declare the variables @in and @out that contain the input and output path names respectively. Then it assigns the variable @searchlog to the [EXTRACT](../USQL/extract-expression-u-sql.md) expression which then will be used in the next [SELECT](../USQL/select-expression-u-sql.md) expression, which does a filter on the Region column. This [SELECT](../USQL/select-expression-u-sql.md)  expression will be assigned to the variable @rs1. The @rs1 variable will be further refined with the next [SELECT](../USQL/select-expression-u-sql.md)  expression that adds a range filter on the Start property before it is written to the output file using an [OUTPUT](../USQL/output-statement-u-sql.md) statement.  
  
 Hopefully, you have stumbled over the wording “assigned the variable to the statement” in the paragraph above. This wording is calling out an important aspect of U-SQL scripts and the processing of a U-SQL script. While it seems that we assign the resulting rowset of each expression to a variable that we then process in the next step, in fact U-SQL is NOT calculating the result at this point in the script.  
   
@@ -102,12 +100,12 @@ The following images show the logical expression tree and the physical job graph
   
 ### Logical Expression Tree  
   
-![U-SQL Logical Job Execution Tree](media/u-sql-logical-job-execution-tree.JPG)  
+![U-SQL Logical Job Execution Tree](../USQL/media/u-sql-logical-job-execution-tree.JPG)  
   
 ### Physical Job Graph  
   
-![U-SQL Physical Job Execution Tree](media/u-sql-physical-job-execution-tree.JPG)  
+![U-SQL Physical Job Execution Tree](../USQL/media/u-sql-physical-job-execution-tree.JPG)  
   
 ### See Also
-* [U-SQL Language Reference](u-sql-language-reference.md)
+* [U-SQL Language Reference](../USQL/u-sql-language-reference.md)
 

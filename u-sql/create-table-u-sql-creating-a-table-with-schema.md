@@ -18,62 +18,62 @@ manager: "jhubbard"
 U-SQL allows a managed table to be created by specifying a schema. The table will have to have a clustered index specified in order to be able to contain data and the table will be partitioned.  
   
 > [!NOTE]
-> All [managed](u-sql-tables.md#man_ext_tabls) U-SQL tables are currently clustered tables where the cluster information is specified with a clustered index. In particular, other types of tables such as heaps and column store tables are not supported.
+> All [managed](../USQL/u-sql-tables.md#man_ext_tabls) U-SQL tables are currently clustered tables where the cluster information is specified with a clustered index. In particular, other types of tables such as heaps and column store tables are not supported.
   
 When creating a managed U-SQL table with a schema, a table schema has to be provided that contains at least one table column definition.  
 
 <table><th>Syntax</th><tr><td><pre>
 Create_Managed_Table_With_Schema_Statement :=                                                            
-     'CREATE' 'TABLE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#ident">Identifier</a><br />  
-<a href="#tbl_sch">     Table_With_Schema</a>.
-<br />
+    'CREATE' 'TABLE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#ident">Identifier</a> 
+    <a href="#tbl_sch">Table_With_Schema</a>.<br />
 <a href="#tbl_sch">Table_With_Schema</a> :=  
-     '(' { <a href="#col_def">Column_Definition</a> ',' }   
-         [ <a href="#table_index">Table_Index</a> <a href="#partition_spec">Partition_Specification</a> ]     
-         { ',' <a href="#col_def">Column_Definition</a> } ')'  
-|    '(' { <a href="#col_def">Column_Definition</a> ',' }   
-         [ <a href="#table_index">Table_Index</a> ]
-         { ',' <a href="#col_def">Column_Definition</a> } ')' <a href="#partition_spec">Partition_Specification</a>.  
+    '(' { <a href="#col_def">Column_Definition</a> ',' }   
+        [ <a href="#table_index">Table_Index</a> <a href="#partition_spec">Partition_Specification</a> ]     
+        { ',' <a href="#col_def">Column_Definition</a> } ')'  
+|   '(' { <a href="#col_def">Column_Definition</a> ',' }   
+        [ <a href="#table_index">Table_Index</a> ]
+        { ',' <a href="#col_def">Column_Definition</a> } ')' <a href="#partition_spec">Partition_Specification</a>.
 </pre></td></tr></table>
  
 ### Semantics of Syntax Elements    
--   <a name="ident"></a>**`Identifier`**   
-    Specifies the name of the schema. If the `Identifier` is a three-part identifier, the table will be created in the specified database and schema. If it is a two-part identifier, then the table will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the table will be created in the current database and schema context.  
+- <a name="ident"></a>**`Identifier`**   
+  Specifies the name of the schema. If the `Identifier` is a three-part identifier, the table will be created in the specified database and schema. If it is a two-part identifier, then the table will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the table will be created in the current database and schema context.  
     
-    If a table or other object of the given name already exists in the specified database and schema context or the user has no permissions to create a table, an error is raised.  
+  If a table or other object of the given name already exists in the specified database and schema context or the user has no permissions to create a table, an error is raised.  
   
--   <a name="INE"></a>**`IF NOT EXISTS`**   
-    If the optional `IF NOT EXISTS` is specified, then the statement creates the table if it does not already exist, or succeeds without changes if the table already exists and the user has permission to at least enumerate all existing tables.  
+- <a name="INE"></a>**`IF NOT EXISTS`**   
+  If the optional `IF NOT EXISTS` is specified, then the statement creates the table if it does not already exist, or succeeds without changes if the table already exists and the user has permission to at least enumerate all existing tables.  
   
--   <a name="tbl_sch"></a>**`Table_With_Schema`**   
-    A table schema contains at least one column definition (note the above syntax is slightly simplified for readability) and can optionally contain a table index and a partition specification. The table index is optional in the definition of the table and the partition specification can either follow the index specification or can follow the table schema. If the partition specification follows the schema, then the schema needs to contain the index specification.  
-    > [!NOTE]
-    > While the index definition is optional as part of the table definition, no data can be inserted into the table until an index has been defined. If the index definition is not part of the table definition, then a [CREATE CLUSTERED INDEX](u-sql-indexes.md) statement has to be executed before data can be inserted into the table.
+- <a name="tbl_sch"></a>**`Table_With_Schema`**   
+  A table schema contains at least one column definition (note the above syntax is slightly simplified for readability) and can optionally contain a table index and a partition specification. The table index is optional in the definition of the table and the partition specification can either follow the index specification or can follow the table schema. If the partition specification follows the schema, then the schema needs to contain the index specification. 
+  
+  > [!NOTE]
+  > While the index definition is optional as part of the table definition, no data can be inserted into the table until an index has been defined. If the index definition is not part of the table definition, then a [CREATE CLUSTERED INDEX](../USQL/u-sql-indexes.md) statement has to be executed before data can be inserted into the table.
   
 - <a name="col_def"></a>**`Column_Definition`**  
-A column definition is of the form
+  A column definition is of the form
   <table><th>Syntax</th><tr><td><pre>
-Column_Definition :=                                                                                
-        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
-</pre></td></table>
+  Column_Definition :=                                                                                
+      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
+  </pre></td></table>
   
-    Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](built-in-u-sql-types.md). Note that there are currently no constraints such as primary key, foreign key, unique etc. supported. Unlike in the case of traditional SQL tables, nullability is part of the type and not a column property.  
+    Each column has an identifier that can be either a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](../USQL/built-in-u-sql-types.md). Note that there are currently no constraints such as primary key, foreign key, unique etc. supported. Unlike in the case of traditional SQL tables, nullability is part of the type and not a column property.  
   
 - <a name="table_index"></a>**`Table_Index`**  
-  The table index defines the clustered index of the table. It specifies the name of the index that is local to the table as a [quoted or unquoted identifier](u-sql-identifiers.md) and by providing a list of columns that determine how and in which order the rows will be ordered. It basically determines how the data will be physically stored in the clustered table.  
+  The table index defines the clustered index of the table. It specifies the name of the index that is local to the table as a [quoted or unquoted identifier](../USQL/u-sql-identifiers.md) and by providing a list of columns that determine how and in which order the rows will be ordered. It basically determines how the data will be physically stored in the clustered table.  
   
   The table index syntax looks like  
   <table><th>Syntax</th><tr><td><pre>
-Table_Index :=                                                                                      
-        'INDEX' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>   
-        'CLUSTERED' '(' Sort_Item_List ')'.<br />
-Sort_Item_List :=  
-        Sort_Item {',' Sort_Item}.<br />   
-Sort_Item :=                                                                    
-        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> [Sort_Direction].<br />
-Sort_Direction :=
-        'ASC' | 'DESC'. 
-</pre></td></table>  
+  Table_Index :=                                                                                      
+      'INDEX' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>   
+      'CLUSTERED' '(' Sort_Item_List ')'.<br />
+  Sort_Item_List :=  
+      Sort_Item {',' Sort_Item}.<br />   
+  Sort_Item :=                                                                    
+      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> [Sort_Direction].<br />
+  Sort_Direction :=
+      'ASC' | 'DESC'.
+  </pre></td></table>  
   
 - <a name="partition_spec"></a>**`Partition_Specification`**  
   The partition specification provides information how the data inside the table is being partitioned and distributed.  
@@ -81,19 +81,19 @@ Sort_Direction :=
   If the table index is being provided, the partition specification has to be provided as well. The syntax looks like:  
    
   <table><th>Syntax</th><tr><td><pre>
-Partition_Specification :=                                                                          
-        [ 'PARTITIONED' ['BY'] '(' Identifier_List ')' ]   
-        Distribution_Specification.<br />
-Identifier_List :=  
-        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> {',' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>}.<br />
-Distribution_Specification :=  
-        'DISTRIBUTED' ['BY'] Distribution_Scheme ['INTO' integer_or_long_literal].<br /><br />
-<a href="#dis_sch">Distribution_Scheme</a> :=  
-        '<a href="#rng">RANGE</a>' '(' Sort_Item_List ')'  
-|       '<a href="#hsh">HASH</a>' '(' Identifier_List ')'   
-|       '<a href="#dhsh">DIRECT' 'HASH</a>' '(' Identifier ')'   
-|       '<a href="#rnd_rob">ROUND' 'ROBIN</a>'.
-</pre></td></table>  
+  Partition_Specification :=                                                                          
+      [ 'PARTITIONED' ['BY'] '(' Identifier_List ')' ]   
+      Distribution_Specification.<br />
+  Identifier_List :=  
+      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> {',' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>}.<br />
+  Distribution_Specification :=  
+      'DISTRIBUTED' ['BY'] Distribution_Scheme ['INTO' integer_or_long_literal].<br />
+  <a href="#dis_sch">Distribution_Scheme</a> :=  
+      '<a href="#rng">RANGE</a>' '(' Sort_Item_List ')'  
+  |   '<a href="#hsh">HASH</a>' '(' Identifier_List ')'   
+  |   '<a href="#dhsh">DIRECT' 'HASH</a>' '(' Identifier ')'   
+  |   '<a href="#rnd_rob">ROUND' 'ROBIN</a>'.
+  </pre></td></table>
 
   For detailed semantics about partitioning see the section on <a href="#partitioning">partitioning</a>.  
   
@@ -101,7 +101,7 @@ Distribution_Specification :=
 U-SQL Tables can be partitioned in two-levels: the higher-level coarse-grained _partitioning_ into addressable partitions and the lower-level fine grained _distribution_ within a table or a partition.   
   
 ### U-SQL Table Partition   
-Many use cases around data life cycle management, such as loading of daily or hourly data, require that one can add individual partitions and manage them separately. This is best done with  _partitioning_ a table into individually addressable partitions. Each of these partitions have to then explicitly be added with [`ALTER TABLE ADD PARTITION`](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md) and can be removed with [`ALTER TABLE DROP PARTITION`](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md). In addition, the query processor will perform partition elimination on supported predicates.  
+Many use cases around data life cycle management, such as loading of daily or hourly data, require that one can add individual partitions and manage them separately. This is best done with  _partitioning_ a table into individually addressable partitions. Each of these partitions have to then explicitly be added with [`ALTER TABLE ADD PARTITION`](../USQL/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md) and can be removed with [`ALTER TABLE DROP PARTITION`](../USQL/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md). In addition, the query processor will perform partition elimination on supported predicates.  
   
 Currently U-SQL only allows partitioning in conjunction with <a href="#hsh">`HASH`</a> and <a href="#rnd_rob">`ROUND ROBIN`</a> distributions.  
   
@@ -190,12 +190,12 @@ INTO 10;
 
   
 ### See Also  
-* [PARTITION (U-SQL)](partition-u-sql.md)  
-* [U-SQL Tables](u-sql-tables.md)  
-* [CREATE TABLE (U-SQL): Overview](create-table-u-sql-overview.md)  
-* [CREATE TABLE (U-SQL): Creating Managed Tables](create-table-u-sql-creating-managed-tables.md)   
-* [CREATE TABLE (U-SQL): Creating a Table from a Query](create-table-u-sql-creating-a-table-from-a-query.md)  
-* [CREATE EXTERNAL TABLE (U-SQL)](create-external-table-u-sql.md)  
-* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)  
-* [TRUNCATE TABLE (U-SQL)](truncate-table-u-sql.md)  
-* [DROP TABLE (U-SQL)](drop-table-u-sql.md) 
+* [PARTITION (U-SQL)](../USQL/partition-u-sql.md)  
+* [U-SQL Tables](../USQL/u-sql-tables.md)  
+* [CREATE TABLE (U-SQL): Overview](../USQL/create-table-u-sql-overview.md)  
+* [CREATE TABLE (U-SQL): Creating Managed Tables](../USQL/create-table-u-sql-creating-managed-tables.md)   
+* [CREATE TABLE (U-SQL): Creating a Table from a Query](../USQL/create-table-u-sql-creating-a-table-from-a-query.md)  
+* [CREATE EXTERNAL TABLE (U-SQL)](../USQL/create-external-table-u-sql.md)  
+* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../USQL/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)  
+* [TRUNCATE TABLE (U-SQL)](../USQL/truncate-table-u-sql.md)  
+* [DROP TABLE (U-SQL)](../USQL/drop-table-u-sql.md) 

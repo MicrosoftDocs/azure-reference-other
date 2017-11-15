@@ -17,11 +17,11 @@ manager: "jhubbard"
 # LAG (U-SQL)
 The LAG analytic function provides access to a row at a given physical offset that comes before the current row. Use this analytic function in a SELECT expression to compare values in the current row with values in a previous row.
 
-LAG can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
+LAG can only be used in the context of a [windowing expression](../USQL/over-expression-u-sql.md). 
 
-<table><th>Syntax</th><tr><td><pre>
-LAG_Expression :=                                                                                
-      'LAG' '(' <a href="#exp">expression</a> [ ',' <a href="#off">offset</a> ] [ ',' <a href="#def">default</a> ] ')'.
+<table><th align="left">Syntax</th><tr><td><pre>
+LAG_Expression :=                                                                                        
+     'LAG' '(' <a href="#exp">expression</a> [ ',' <a href="#off">offset</a> ] [ ',' <a href="#def">default</a> ] ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 
@@ -38,8 +38,8 @@ The value to return when `expression` at `offset` is NULL. If a default value is
 The nullable type of the input. 
 
 ### Usage in Windowing Expression 
-This analytic function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
-* The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) operator is required. 
+This analytic function can be used in a [windowing expression](../USQL/over-expression-u-sql.md) with the following restrictions: 
+* The [ORDER BY](../USQL/over-expression-u-sql.md#OBC) clause in the [OVER](../USQL/over-expression-u-sql.md) operator is required. 
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -82,7 +82,7 @@ USING Outputters.Csv();
 ```
 
 **B.    Dividing the result set using PARTITION BY**   
-The following example uses the `LAG` function to compare year-to-date sales between stores.  Each record shows a store's sales and the sales of the store with the nearest lower sales.  The [PARTITION BY](over-expression-u-sql.md#OPBC) clause is specified to divide the rows in the result set by region.  The `LAG` function is applied to each partition separately and computation restarts for each partition.  The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) clause orders the rows in each partition.  The [ORDER BY](output-statement-u-sql.md#OBOFC) clause in the `OUTPUT` statement sorts the rows in the whole result set.  Notice that because there is no lag value available for the last row of each partition, the default of zero (0) is returned.
+The following example uses the `LAG` function to compare year-to-date sales between stores.  Each record shows a store's sales and the sales of the store with the nearest lower sales.  The [PARTITION BY](../USQL/over-expression-u-sql.md#OPBC) clause is specified to divide the rows in the result set by region.  The `LAG` function is applied to each partition separately and computation restarts for each partition.  The [ORDER BY](../USQL/over-expression-u-sql.md#OBC) clause in the [OVER](../USQL/over-expression-u-sql.md) clause orders the rows in each partition.  The [ORDER BY](../USQL/output-statement-u-sql.md#OBOFC) clause in the `OUTPUT` statement sorts the rows in the whole result set.  Notice that because there is no lag value available for the last row of each partition, the default of zero (0) is returned.
 ```
 @result =
     SELECT Region,
@@ -99,9 +99,9 @@ USING Outputters.Csv();
 ```
 
 ### See Also 
-* [LEAD (U-SQL)](lead-u-sql.md)
-* [FIRST_VALUE (U-SQL)](first-value-u-sql.md)
-* [LAST_VALUE (U-SQL)](last-value-u-sql.md)
-* [Analytic Functions (U-SQL)](analytic-functions-u-sql.md)   
-* [OVER Expression (U-SQL)](over-expression-u-sql.md) 
+* [LEAD (U-SQL)](../USQL/lead-u-sql.md)
+* [FIRST_VALUE (U-SQL)](../USQL/first-value-u-sql.md)
+* [LAST_VALUE (U-SQL)](../USQL/last-value-u-sql.md)
+* [Analytic Functions (U-SQL)](../USQL/analytic-functions-u-sql.md)   
+* [OVER Expression (U-SQL)](../USQL/over-expression-u-sql.md) 
 

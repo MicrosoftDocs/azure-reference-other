@@ -18,9 +18,9 @@ manager: "jhubbard"
 Compares the equality of two expressions (a comparison operator).
 U-SQL uses C# null semantics which is 2-valued and not 3-valued as in ANSI SQL.
 
-<table><th>Syntax</th><tr><td><pre>
-Equals_Operator :=
-    <a href="#expr">expression</a> == <a href="#expr">expression</a>.                                                                             
+<table><th align="left">Syntax</th><tr><td><pre>
+Equals_Operator :=                                                                                       
+    <a href="#expr">expression</a> == <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
@@ -28,7 +28,7 @@ Equals_Operator :=
 Is any valid expression. If the expressions are not of the same data type, the data type for one expression must be implicitly convertible to the data type of the other. 
 
 ### Result Types
-[Boolean](other-simple-built-in-types-and-literals.md)
+[Boolean](../USQL/other-simple-built-in-types-and-literals.md)
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
@@ -86,5 +86,5 @@ OUTPUT @result8 TO "/Output/ReferenceGuide/Operators/Comparison/example8.txt" US
 ```
 
 ### See Also
-* [Data Types and Literals (U-SQL)](data-types-and-literals-u-sql.md)   
-* [Operators (U-SQL)](operators-u-sql.md)
+* [Data Types and Literals (U-SQL)](../USQL/data-types-and-literals-u-sql.md)   
+* [Operators (U-SQL)](../USQL/operators-u-sql.md)

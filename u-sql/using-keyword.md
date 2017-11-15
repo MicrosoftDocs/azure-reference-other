@@ -17,10 +17,10 @@ manager: "jhubbard"
 # USING Keyword
 The `USING` directive is similar to the [C# using Directive](https://msdn.microsoft.com/library/sf0df423.aspx) in that it allows to shorten function, type, extention methods, and UDO path names.
 
-<table><th>Syntax</th><tr><td><pre>
-Using_Directive :=                                                                                
-      'USING' 
-      ( csharp_namespace | Alias '=' csharp_namespace_or_type ['.' class]).
+<table><th align="left">Syntax</th><tr><td><pre>
+Using_Directive :=                                                                                       
+     'USING' 
+     (csharp_namespace | Alias '=' csharp_namespace_or_type ['.' class]).
 </pre></td></tr></table>
 
 The scope of a using directive is limited to the file in which it appears.
@@ -87,12 +87,12 @@ USING json = [Microsoft.Analytics.Samples.Formats.Json.JsonExtractor];
 
 **Additional Examples**   
 See the examples under:
-* [Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies)
-* [REFERENCE ASSEMBLY (U-SQL)](reference-assembly-u-sql.md)
+* [Code-Behind vs. Assembly Registration Walkthrough](../USQL/extending-u-sql-expressions-with-user-code.md#usingAssemblies)
+* [REFERENCE ASSEMBLY (U-SQL)](../USQL/reference-assembly-u-sql.md)
 
 
 ### See Also
-* [U-SQL Assemblies](u-sql-assemblies.md)  
-* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
+* [U-SQL Assemblies](../USQL/u-sql-assemblies.md)  
+* [Built-in Functions (U-SQL)](../USQL/built-in-functions-u-sql.md)  
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)
-* [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
+* [Extending U-SQL Expressions with User-Code](../USQL/extending-u-sql-expressions-with-user-code.md)

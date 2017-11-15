@@ -20,9 +20,9 @@ The statement drops the specified table and deletes all the data contained withi
 > [!WARNING]
 > **This operation cannot be undone!**
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Table_Statement :=                                                                                  
-    'DROP' 'TABLE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#ident">Identifier</a>.  
+    'DROP' 'TABLE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#ident">Identifier</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements  
@@ -45,8 +45,8 @@ DROP TABLE IF EXISTS TestReferenceDB..SampleTable;
 CREATE TABLE TestReferenceDB..SampleTable AS (id int);  
 ```  
 ### See Also  
-* [U-SQL Tables](u-sql-tables.md) 
-* [CREATE TABLE (U-SQL): Overview](create-table-u-sql-overview.md)  
-* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
-* [TRUNCATE TABLE (U-SQL)](truncate-table-u-sql.md) 
+* [U-SQL Tables](../USQL/u-sql-tables.md) 
+* [CREATE TABLE (U-SQL): Overview](../USQL/create-table-u-sql-overview.md)  
+* [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](../USQL/alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
+* [TRUNCATE TABLE (U-SQL)](../USQL/truncate-table-u-sql.md) 
   

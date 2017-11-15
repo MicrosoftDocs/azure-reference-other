@@ -18,10 +18,10 @@ manager: "jhubbard"
 U-SQL’s type system is based on the [C# type system](https://msdn.microsoft.com/library/3ewxz6et.aspx). This is one of the cornerstones of providing tight integration with C# as its expression and extensibility language.   
 
 See:
-* [Built-In U-SQL Types](built-in-u-sql-types.md)  
-* [U-SQL Table Types](u-sql-table-types.md)
-* [U-SQL Built-in Type Properties](u-sql-built-in-type-properties.md)
+* [Built-In U-SQL Types](../USQL/built-in-u-sql-types.md)  
+* [U-SQL Table Types](../USQL/u-sql-table-types.md)
+* [U-SQL Built-in Type Properties](../USQL/u-sql-built-in-type-properties.md)
 
 ### See Also
-* [U-SQL Concepts](u-sql-concepts.md) 
-* [U-SQL Language Reference](u-sql-language-reference.md)
+* [U-SQL Concepts](../USQL/u-sql-concepts.md) 
+* [U-SQL Language Reference](../USQL/u-sql-language-reference.md)
