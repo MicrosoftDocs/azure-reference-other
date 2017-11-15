@@ -21,12 +21,11 @@ If the number of rows in a partition is not divisible by the provided integer, i
 
 NTILE can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 NTILE_Expression :=                                                                                      
-      'NTILE' '(' <a href="#grp_cnt">Group_Count</a> ')'.
-<br />
+     'NTILE' '(' <a href="#grp_cnt">Group_Count</a> ')'.<br />
 <a href="#grp_cnt">Group_Count</a> := 
-      <a href="numeric-types-and-literals.md">long_literal</a>.
+     <a href="numeric-types-and-literals.md">long_literal</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

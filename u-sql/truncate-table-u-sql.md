@@ -20,19 +20,19 @@ U-SQL does not support fine-grained deletion of data with a DELETE statement. Da
 > [!WARNING]
 > **This operation cannot be undone!**
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Truncate_Table_Statement :=                                                                              
-    'TRUNCATE' 'TABLE' <a href="#ident">Identifier</a> [<a href="#ptl">Partition_Label_List</a>].  
+     'TRUNCATE' 'TABLE' <a href="#ident">Identifier</a> [<a href="#ptl">Partition_Label_List</a>].
 </pre></td></tr></table>
    
 ### Semantics of Syntax Elements  
--    <a name="ident"></a>**`Identifier`**  
-    Identifies the table to be truncated or truncated from. If the Identifier is a three-part identifier, the table from the specified database and schema will be truncated. If the Identifier is a two-part identifier, then the table of the given schema and of the given name of the current static database context will be truncated. If the identifier is a simple identifier, then the table of the given name in the current static database and schema context will be truncated.  
+- <a name="ident"></a>**`Identifier`**  
+  Identifies the table to be truncated or truncated from. If the Identifier is a three-part identifier, the table from the specified database and schema will be truncated. If the Identifier is a two-part identifier, then the table of the given schema and of the given name of the current static database context will be truncated. If the identifier is a simple identifier, then the table of the given name in the current static database and schema context will be truncated.  
 
-      If the specified table does not exist, is an external table, or the user has no permissions to delete the data from the table, an error is raised.   
+  If the specified table does not exist, is an external table, or the user has no permissions to delete the data from the table, an error is raised.   
   
--    <a name="ptl"></a>**`Partition_Label_List`**  
-    The optional partition label list specifies the list of partition buckets to be truncated by specifying the literal values for the partition columns. The values have to be provided as constants or as scalar static variables. For more details on the exact syntax see [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
+- <a name="ptl"></a>**`Partition_Label_List`**  
+  The optional partition label list specifies the list of partition buckets to be truncated by specifying the literal values for the partition columns. The values have to be provided as constants or as scalar static variables. For more details on the exact syntax see [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
   
   
 ### Examples  

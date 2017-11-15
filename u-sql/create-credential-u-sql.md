@@ -24,16 +24,3 @@ manager: "jhubbard"
 * [Set-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/module/azurerm.datalakeanalytics/set-azurermdatalakeanalyticscatalogcredential?view=azurermps-4.3.1)
 * [Remove-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/module/azurerm.datalakeanalytics/remove-azurermdatalakeanalyticscatalogcredential?view=azurermps-4.3.1)
 
-
-\<!--
-
-> [!WARNING] 
-> CREATE/ALTER/DROP CREDENTIAL statements are deprecated and will be removed in the next deployment. Use credential management commandlets in the latest Azure Powershell.  
-> See [New-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.3.0/new-azurermdatalakeanalyticscatalogcredential) for information on creating a new Azure Data Lake Analytics catalog credential.
-
-  
-### See Also 
-* [New-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.3.0/new-azurermdatalakeanalyticscatalogcredential)  
-* [DROP CREDENTIAL (U-SQL)](drop-credential-u-sql.md)  
-* [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
---> 

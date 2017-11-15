@@ -19,9 +19,9 @@ The MAX aggregator choses the largest value in the group or null if the expressi
 
 The identity value is null. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 MAX_Expression :=                                                                                        
-      'MAX' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.  
+     'MAX' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

@@ -17,18 +17,18 @@ manager: "jhubbard"
 # CREATE TABLE (U-SQL): Creating a Table from a Query
 Often a script converts unstructured data in a file into a table, by first extracting the data using an [`EXTRACT`](extract-expression-u-sql.md) expression and then inserting it into a table after some optional transformations. In order to simplify the process, U-SQL provides the ability to create a table from a U-SQL query expression. The `CREATE TABLE AS` statement will infer the schema from the query expression and will create a clustered table, thus the clustered index needs to be provided as part of the `CREATE TABLE AS` statement.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_Managed_Table_As_Query_Statement :=                                                               
-     'CREATE' 'TABLE' ['IF' 'NOT' 'EXISTS'] <a href="#ident">Identifier</a>  
-      Table_As_Query.<br />
+    'CREATE' 'TABLE' ['IF' 'NOT' 'EXISTS'] <a href="#ident">Identifier</a>  
+    Table_As_Query.<br />
 Table_As_Query :=  
-     ( '(' <a href="#table_index">Table_Index</a> <a href="#h_partition_spec">Horizontal_Partition_Specification</a> ')'  
-     | '(' <a href="#table_index">Table_Index</a> ')' <a href="#h_partition_spec">Horizontal_Partition_Specification</a> )  
-    'AS' <a href="#qry_exp">Query_Expression</a><br /><br />
+    ( '(' <a href="#table_index">Table_Index</a> <a href="#h_partition_spec">Horizontal_Partition_Specification</a> ')'  
+    | '(' <a href="#table_index">Table_Index</a> ')' <a href="#h_partition_spec">Horizontal_Partition_Specification</a> )  
+    'AS' <a href="#qry_exp">Query_Expression</a><br />
 <a href="#h_partition_spec">Horizontal_Partition_Specification</a> :=   
-     'PARTITIONED' 'BY' Partition_Type  
-     ['INTO' positive_integer_literal].   
-</pre></td></tr></table> 
+    'PARTITIONED' 'BY' Partition_Type  
+    ['INTO' positive_integer_literal].
+</pre></td></tr></table>
 
   
 ### Semantics of Syntax Elements  

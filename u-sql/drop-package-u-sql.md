@@ -17,7 +17,7 @@ manager: "jhubbard"
 # DROP PACKAGE (U-SQL)
 The `DROP PACKAGE` statement drops packages. As in the case with other meta data objects, a package gets dropped even if another [package](u-sql-packages.md), [table-valued function](u-sql-table-valued-functions.md) or [procedure](u-sql-procedures.md) depends on it.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Package_Statement :=                                                                                
     'DROP' 'PACKAGE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.
 </pre></td></tr></table>

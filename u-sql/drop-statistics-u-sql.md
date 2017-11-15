@@ -22,14 +22,14 @@ Note that dropping statistics may have negative impact on the performance on que
 > [!WARNING]
 > **This operation cannot be undone!**
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Statistics_Statement :=                                                                             
-      'DROP' 'STATISTICS' [<a href="#IE">'IF' 'EXISTS'</a>]  
-       <a href="#stat_name_tbl">Statistic_Name 'ON' Table_Name</a>.<br /><br /> 
+    'DROP' 'STATISTICS' [<a href="#IE">'IF' 'EXISTS'</a>]  
+    <a href="#stat_name_tbl">Statistic_Name 'ON' Table_Name</a>.<br />
 <a href="#stat_name_tbl">Statistic_Name</a> := 
-      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />   
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />   
 Table_Name := 
-      <a href="u-sql-identifiers.md">Identifier</a>. 
+    <a href="u-sql-identifiers.md">Identifier</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    

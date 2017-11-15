@@ -19,16 +19,16 @@ U-SQL provides the `CREATE STATISTICS` statement to create query optimization st
   
 <table><th>Syntax</th><tr><td><pre>
 Create_Statistics_Statement :=                                                                           
-      'CREATE' 'STATISTICS' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>]  
-      <a href="#stat_name">Statistic_Name</a>  
-      'ON' <a href="#tabl_name">Table_Name</a> '(' <a href="#col_name">Column_Name</a> ')'  
-      <a href="#w_flscn">'WITH' 'FULLSCAN</a>'.<br /><br />
+    'CREATE' 'STATISTICS' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>]  
+    <a href="#stat_name">Statistic_Name</a>  
+    'ON' <a href="#tabl_name">Table_Name</a> '(' <a href="#col_name">Column_Name</a> ')'  
+    <a href="#w_flscn">'WITH' 'FULLSCAN</a>'.<br />
 <a href="#stat_name">Statistic_Name</a> := 
-      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br /><br /> 
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br /> 
 <a href="#tabl_name">Table_Name</a> := 
-      Identifier.<br /><br />  
+    Identifier.<br />  
 <a href="#col_name">Column_Name</a> := 
-      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    

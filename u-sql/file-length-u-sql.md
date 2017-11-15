@@ -17,10 +17,10 @@ manager: "jhubbard"
 # FILE.LENGTH (U-SQL)
 Returns the logical size in bytes of the file at the specified location at compile time.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 <a href="numeric-types-and-literals.md">long?</a> LENGTH(
     <a href="textual-types-and-literals.md">string</a> <a href="#path">path</a>
-).                                                                                 
+).                                                                                                       
 </pre></td></tr></table>
 
 ### Parameters

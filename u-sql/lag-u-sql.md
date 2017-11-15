@@ -19,9 +19,9 @@ The LAG analytic function provides access to a row at a given physical offset th
 
 LAG can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
-<table><th>Syntax</th><tr><td><pre>
-LAG_Expression :=                                                                                
-      'LAG' '(' <a href="#exp">expression</a> [ ',' <a href="#off">offset</a> ] [ ',' <a href="#def">default</a> ] ')'.
+<table><th align="left">Syntax</th><tr><td><pre>
+LAG_Expression :=                                                                                        
+     'LAG' '(' <a href="#exp">expression</a> [ ',' <a href="#off">offset</a> ] [ ',' <a href="#def">default</a> ] ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

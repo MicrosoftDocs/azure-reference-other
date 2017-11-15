@@ -17,43 +17,43 @@ manager: "jhubbard"
 # SELECT Clause (U-SQL)
 The SELECT clause defines the projection of the SELECT expression, i.e., it specifies the resulting structure and values of the rowset it produces. The result has at least one column.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Select_Clause :=                                                                                         
-    'SELECT' ['<a href="#dist">DISTINCT</a>'] Select_Item_List.<br />
+     'SELECT' ['<a href="#dist">DISTINCT</a>'] Select_Item_List.<br />
 Select_Item_List :=  
-    <a href="#s_item">Select_Item</a> { ',' <a href="#s_item">Select_Item</a> }.
+     <a href="#s_item">Select_Item</a> { ',' <a href="#s_item">Select_Item</a> }.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
 - <a name="s_item"></a>**`Select_Item`**  
-Each column is either specified by a reference to a column identifier in the SELECT’s rowset that the other clauses of the SELECT expression produces, or by an expression:
+  Each column is either specified by a reference to a column identifier in the SELECT’s rowset that the other clauses of the SELECT expression produces, or by an expression:
 
-   <table><th>Syntax</th><tr><td><pre>
-Select_Item:                                                                                        
-    Column_Identifier [<a href="#col_alias">Column_Alias</a>]  
-|   expression <a href="#col_alias">Column_Alias</a>.<br />
-Column_Identifier :=  
-    [(Rowset_Variable | <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>) '.']  
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br /><br />     
-<a href="#col_alias">Column_Alias</a> :=  
-    'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
-</pre></td></tr></table>
+  <table><th>Syntax</th><tr><td><pre>
+  Select_Item:                                                                                        
+       Column_Identifier [<a href="#col_alias">Column_Alias</a>]
+  |    expression <a href="#col_alias">Column_Alias</a>.<br />
+  Column_Identifier :=
+       [(Rowset_Variable | <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>) '.']  
+       <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />
+  <a href="#col_alias">Column_Alias</a> :=
+       'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
+  </pre></td></tr></table>
   
-    The select clause can refer to column identifiers either by providing the [quoted or unquoted identifier](u-sql-identifiers.md) of the column, or by prepending the rowset/table alias or rowset variable name to identify the rowset to which the column belongs.  
+  The select clause can refer to column identifiers either by providing the [quoted or unquoted identifier](u-sql-identifiers.md) of the column, or by prepending the rowset/table alias or rowset variable name to identify the rowset to which the column belongs.  
     
--   <a name="col_alias"></a>**`Column_Alias`**      
-    The column alias is not  required for SELECT clause expressions that end with a property or field access where the inferred name does not conflict with any other column name. The column name will be derived from the name of the property/field.
+- <a name="col_alias"></a>**`Column_Alias`**      
+  The column alias is not  required for SELECT clause expressions that end with a property or field access where the inferred name does not conflict with any other column name. The column name will be derived from the name of the property/field.
   
-    The identifier can be renamed by specifying a different column alias. The expression can – but does not need to – refer to columns in the SELECT’s rowset. The expression can be any U-SQL expression that produces an instance of one of the built-in U-SQL types and will have to be named with a column alias, otherwise an error will be raised.  
+  The identifier can be renamed by specifying a different column alias. The expression can – but does not need to – refer to columns in the SELECT’s rowset. The expression can be any U-SQL expression that produces an instance of one of the built-in U-SQL types and will have to be named with a column alias, otherwise an error will be raised.  
   
-    Please note that `AS` is case-sensitive and that C# also provides the type cast operator `as`. The following SELECT clause would be interpreted as an attempt to cast the column `c` to a non-existing type `newcol` and fail:  
+  Please note that `AS` is case-sensitive and that C# also provides the type cast operator `as`. The following SELECT clause would be interpreted as an attempt to cast the column `c` to a non-existing type `newcol` and fail:  
  
     ```
     SELECT c as newcol FROM …
     ```
 
--   <a name="dist"></a>**`DISTINCT`**  
-If the optional `DISTINCT` keyword is specified, then the SELECT expression will eliminate duplicate rows. It requires that every selected column is of a comparable type, otherwise an error is raised.  
+- <a name="dist"></a>**`DISTINCT`**  
+  If the optional `DISTINCT` keyword is specified, then the SELECT expression will eliminate duplicate rows. It requires that every selected column is of a comparable type, otherwise an error is raised.  
   
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  

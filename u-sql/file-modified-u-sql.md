@@ -17,10 +17,10 @@ manager: "jhubbard"
 # FILE.MODIFIED (U-SQL)
 Returns the last modified timestamp of the file at the specified location at compile time as a DateTime value (Kind is `Unspecified`). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 <a href="temporal-types-and-literals.md">DateTime?</a> MODIFIED(
     <a href="textual-types-and-literals.md">string</a> <a href="#path">path</a>
-).                                                                                 
+).                                                                                                       
 </pre></td></tr></table>
 
 ### Parameters

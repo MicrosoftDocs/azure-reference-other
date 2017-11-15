@@ -17,15 +17,15 @@ manager: "jhubbard"
 # UPDATE STATISTICS (U-SQL)
 U-SQL provides the `UPDATE STATISTICS` statement to update a previously created statistic on a table.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Update_Statistics_Statement :=                                                                           
-      'UPDATE' 'STATISTICS' ['IF' 'EXISTS']  
-      <a href="#stat_name_tbl">Statistic_Name 'ON' Table_Name</a><br />
-<a href="#incrm">      'WITH' 'INCREMENTAL' '=' ('ON' | 'OFF')</a>.<br /><br />
+     'UPDATE' 'STATISTICS' ['IF' 'EXISTS']
+     <a href="#stat_name_tbl">Statistic_Name 'ON' Table_Name</a>
+     <a href="#incrm">'WITH' 'INCREMENTAL' '=' ('ON' | 'OFF')</a>.<br />
 <a href="#stat_name_tbl">Statistic_Name</a> :=
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />  
+     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />
 Table_Name := 
-      <a href="u-sql-identifiers.md">Identifier</a>.  
+     <a href="u-sql-identifiers.md">Identifier</a>.
 </pre></td></tr></table>
  
 ### Semantics of Syntax Elements    

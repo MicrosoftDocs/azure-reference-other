@@ -17,14 +17,14 @@ manager: "jhubbard"
 # Calling a Procedure (U-SQL)
 A procedure can be called inside a script or procedure and will be inlined into the execution graph before executing it. The invocation is similar to a table-valued function invocation with the difference that no rowset variable is being assigned.  The compiler does not allow more than 50 nested procedure calls to prevent stack overflow; please make sure that procedures are called with less nesting.
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Procedure_Call :=                                                                                        
-    <a href="#Ident">Identifier</a> '(' [<a href="#arg_lst">Argument_List</a>] ')'.<br /><br /> 
+    <a href="#Ident">Identifier</a> '(' [<a href="#arg_lst">Argument_List</a>] ')'.<br />
 <a href="#arg_lst">Argument_List</a> :=  
     Argument {',' Argument}.<br />  
 Argument :=  
     argument_expression  
-|   'DEFAULT'.  
+|   'DEFAULT'.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    

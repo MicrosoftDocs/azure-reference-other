@@ -18,10 +18,10 @@ manager: "jhubbard"
 U-SQL supports creating and dropping views over rowsets.  
   
 ### View DDL Statements
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 View_DDL_Statement :=                                                                                    
-       <a href="create-view-u-sql.md">Create_View_Statement</a> 
-|      <a href="drop-view-u-sql.md">Drop_View_Statement.</a>  
+     <a href="create-view-u-sql.md">Create_View_Statement</a>
+|    <a href="drop-view-u-sql.md">Drop_View_Statement.</a>
 </pre></td></tr></table>
  
 In U-SQL Views will be inlined into the expression where they are being referenced and thus are similar to the rowset expression variables, which the difference that the variables only exist for the duration of a script while a view will be made available through the metadata catalog to other scripts.  

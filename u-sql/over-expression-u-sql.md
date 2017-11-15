@@ -28,25 +28,25 @@ Windowing expressions are only supported inside expressions in a SELECT FROM cla
 
 A windowing expression can never be used if a [GROUP BY](group-by-and-having-clauses-u-sql.md) clause is present. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Windowing_Expression :=                                                                                  
-      <a href="#WFC">Window_Function_Call</a> '<a href="#OVR">OVER</a>' '('    
-            [ <a href="#OPBC">Over_Partition_By_Clause</a> ]         
-            [ <a href="#OBC">Order_By_Clause</a> ]         
-            [ <a href="#row_cla">Row_Clause</a> ]       
-      ')'. 
+     <a href="#WFC">Window_Function_Call</a> '<a href="#OVR">OVER</a>' '('
+          [ <a href="#OPBC">Over_Partition_By_Clause</a> ]
+          [ <a href="#OBC">Order_By_Clause</a> ]
+          [ <a href="#row_cla">Row_Clause</a> ]
+     ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 
 * <a name="WFC"></a>**`Window_Function_Call`**  
-The window function that is being applied to the window. 
+  The window function that is being applied to the window. 
 
   <table><th>Syntax</th><tr><td><pre>
-Window_Function_Call :=                                                                             
-      <a href="aggregate-functions-u-sql.md">Aggregate_Function_Call</a>
-|     <a href="analytic-functions-u-sql.md">Analytic_Function_Call</a> 
-|     <a href="ranking-functions-u-sql.md">Ranking_Function_Call</a>.    
-</pre></td></tr></table>
+  Window_Function_Call :=                                                                             
+        <a href="aggregate-functions-u-sql.md">Aggregate_Function_Call</a>
+  |     <a href="analytic-functions-u-sql.md">Analytic_Function_Call</a>
+  |     <a href="ranking-functions-u-sql.md">Ranking_Function_Call</a>.
+  </pre></td></tr></table>
  
   Window functions can be one of the following:
   * [Aggregate Functions](aggregate-functions-u-sql.md) such as [SUM](sum-u-sql.md) or [MAX](max-u-sql.md). 
@@ -62,101 +62,101 @@ The OVER operator that specifies the window with the following components. Note 
 The OVER operator’s optional partition clause defines the window by partitioning the rowset. The window function is applied to each partition separately and computation restarts for each partition. 
 
   <table><th>Syntax</th><tr><td><pre>
-Over_Partition_By_Clause :=                                                                         
-    'PARTITION' 'BY' Expression_List.
-</pre></td></tr></table> 
+  Over_Partition_By_Clause :=                                                                         
+       'PARTITION' 'BY' Expression_List.
+  </pre></td></tr></table>
 
   The data can be partitioned according to a list of scalar expressions. The result type of each of the expression has to return an equality comparable type or an error is raised. Most commonly, the partition expressions refer to the rowset’s columns (as specified by the [FROM](from-clause-u-sql.md) clause and not the columns from the [SELECT](select-clause-u-sql.md) clause). 
 
   If PARTITION BY is not specified, the function treats all rows of the query result set as a single group. 
 
 * <a name="OBC"></a>**`Order_By_Clause`**  
-The OVER operator’s optional ORDER BY clause defines the order of the rows withing each of the windows.   
+  The OVER operator’s optional ORDER BY clause defines the order of the rows withing each of the windows.   
 
   <table><th>Syntax</th><tr><td><pre>
-Order_By_Clause :=                                                                                  
-      'ORDER' 'BY' Sort_Item_Expression_List.<br />
-Sort_Item_Expression_List :=
-      Sort_Item_Expression { ',' Sort_Item_Expression }.<br />
-Sort_Item_Expression :=
-      expression [Sort_Direction].
-</pre></td></tr></table>
+  Order_By_Clause :=                                                                                  
+       'ORDER' 'BY' Sort_Item_Expression_List.<br />
+  Sort_Item_Expression_List :=
+       Sort_Item_Expression { ',' Sort_Item_Expression }.<br />
+  Sort_Item_Expression :=
+       expression [Sort_Direction].
+  </pre></td></tr></table>
  
   The syntax and semantics follows the normal ORDER BY clause. For window functions that depend on the order such as the [ranking functions](ranking-functions-u-sql.md), this order by clause specifies the logical order in which the window function calculation is performed.  
 
   If the ORDER BY clause is not specified, then the window is not ordered.  
 
 * <a name="row_cla"></a>**`Row_Clause`**   
-The OVER operator’s optional ROWS clause further limits the rows within a partition by specifying fixed number of rows preceding or following the current row. Preceding and following rows are defined based on the ordering in the ORDER BY clause. Therefore, the ROWS clause requires that the ORDER BY clause be specified.  
+  The OVER operator’s optional ROWS clause further limits the rows within a partition by specifying fixed number of rows preceding or following the current row. Preceding and following rows are defined based on the ordering in the ORDER BY clause. Therefore, the ROWS clause requires that the ORDER BY clause be specified.  
 
   <table><th>Syntax</th><tr><td><pre>
-Row_Clause :=                                                                                       
-      'ROWS' Window_Frame_Extent.
-</pre></td></tr></table>
+  Row_Clause :=                                                                                       
+       'ROWS' Window_Frame_Extent.
+  </pre></td></tr></table>
 
    If the ROWS clause is not specified but ORDER BY is specified, ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW is used as the default for the window frame.  
 
   The ROWS clause is incompatible with the DISTINCT aggregate option and an error is raised. 
 
   * **Window_Frame_Extent**  
-The window frame extent specifies the rows specifying a lower bound and an upper bound by either just specifying the preceding rows from the current row or providing a frame between two explicitly specified end points.
-      <table><th>Syntax</th><tr><td><pre>
-Window_Frame_Extent :=
-      <p>       Window_Frame_Preceding | Window_Frame_Between.                                           </p>
+    The window frame extent specifies the rows specifying a lower bound and an upper bound by either just specifying the preceding rows from the current row or providing a frame between two explicitly specified end points.
+    <table><th>Syntax</th><tr><td><pre>
+    Window_Frame_Extent :=                                                                         
+         Window_Frame_Preceding | Window_Frame_Between.
     </pre></td></tr></table>
     
     For example, ROWS BETWEEN 2 PRECEDING AND CURRENT ROW means that the window of rows that the function operates on is three rows in size, starting with 2 rows preceding until and including the current row. 
 
     * **Window_Frame_Preceding**   
-Defines the window frame relative from the current row. Currently supported are:
+      Defines the window frame relative from the current row. Currently supported are:
       <table><th>Syntax</th><tr><td><pre>
-Window_Frame_Preceding :=
-    <p>     'UNBOUNDED' 'PRECEDING'
-|     unsigned_integer_literal 'PRECEDING' 
-|     'CURRENT' 'ROW'.                                                                     </p>
-    </pre></td></tr></table>
+      Window_Frame_Preceding :=                                                                 
+           'UNBOUNDED' 'PRECEDING'
+      |    unsigned_integer_literal 'PRECEDING' 
+      |    'CURRENT' 'ROW'.
+      </pre></td></tr></table>
 
       With the following semantics: 
 
       * **UNBOUNDED PRECEDING**  
-Specifies that the window starts at the first row of the partition. It can only be specified as the window starting point. 
+        Specifies that the window starts at the first row of the partition. It can only be specified as the window starting point. 
 
       * **unsigned_integer_literal PRECEDING**   
-The nonnegative integer literal specifies the number of rows to precede the current row in the partition. If the value is larger than the available number of preceding rows in the partition, then the window starts at the first row of the partition. 
+        The nonnegative integer literal specifies the number of rows to precede the current row in the partition. If the value is larger than the available number of preceding rows in the partition, then the window starts at the first row of the partition. 
 
       * **CURRENT ROW**   
-Specifies that the window starts or ends at the current row. It can be specified as both a starting and ending point. 
+        Specifies that the window starts or ends at the current row. It can be specified as both a starting and ending point. 
 
     * **Window_Frame_Between**   
-Specifies the lower (starting) and upper (ending) boundary points of the window. 
+      Specifies the lower (starting) and upper (ending) boundary points of the window. 
       <table><th>Syntax</th><tr><td><pre>
-Window_Frame_Between :=
-<a></a>     'BETWEEN' Window_Frame_Bound
-<a></a>     'AND' Window_Frame_Bound.<p>
-Window_Frame_Bound :=
-<a></a>     Window_Frame_Preceding
-      |    Window_Frame_Following.                                                               </p>
+      Window_Frame_Between :=                                                                   
+           'BETWEEN' Window_Frame_Bound
+           'AND' Window_Frame_Bound.<br />
+      Window_Frame_Bound :=
+           Window_Frame_Preceding
+      |    Window_Frame_Following.
       </pre></td></tr></table>
 
       The first frame bound specifies the lower, the second frame bound the upper boundary (inclusive). If the upper boundary is smaller than the lower boundary, an error is raised. Note that a frame can be all preceding or all following the current row. The frame bounds are specified as follows: 
 
       * **Window_Frame_Preceding**  
-Specifies that the frame starts or ends before the current row as above 
+        Specifies that the frame starts or ends before the current row as above 
 
       * **Window_Frame_Following**  
-Specifies that the frame starts or ends following the current row:
+        Specifies that the frame starts or ends following the current row:
         <table><th>Syntax</th><tr><td><pre>
-Window_Frame_Following :=
-      <p>      unsigned_integer_literal 'FOLLOWING' 
-    |    'CURRENT' 'ROW'.                                                                 </p>
+        Window_Frame_Following :=                                                            
+             unsigned_integer_literal 'FOLLOWING' 
+        |    'CURRENT' 'ROW'.
         </pre></td></tr></table>
 
         With the following semantics: 
         * **unsigned_integer_literal FOLLOWING**   
-The nonnegative integer literal specifies the number of rows to follow the current row in the partition. If the value is larger than the available number of following rows in the partition, then last row of the partition is chosen as the boundary. 
+          The nonnegative integer literal specifies the number of rows to follow the current row in the partition. If the value is larger than the available number of following rows in the partition, then last row of the partition is chosen as the boundary. 
 
         * **CURRENT ROW**   
-Specifies that the window boundary is at the current row.  
+          Specifies that the window boundary is at the current row.  
 
           > [!TIP]
           > U-SQL does currently not support UNBOUNDED FOLLOWING. One can achieve the same result by inverting the ordering and use UNBOUNDED PRECEDING instead. 
@@ -168,14 +168,16 @@ It contains two views that we will use for the sample data.
 
 - QueryLog     
 To access this data use the code below.             
-  ```
-  querylog = Demo.QueryLog();
-  ```
-data:     
-|Fruit|Quantity|Source|
-|------|---|-----|
-|Banana|300|Image|
-|Cherry|300|Image|
+```
+querylog = Demo.QueryLog();
+```
+
+data:
+
+|Fruit|Quantity|Source| 
+|------|---|---------| 
+|Banana|300|Image| 
+|Cherry|300|Image| 
 |Durian|500|Image|
 |Apple|100|Web|
 |Fig|200|Web|
@@ -186,11 +188,12 @@ data:
 
  - Employees     
  To access this data use the code below.            
-    ```
-    employees = Demo.Employees();
-   ```
+```
+employees = Demo.Employees();
+```
 
 data:     
+
 |EmpID|EmpName|DeptName|DeptID|Salary|
 |-----|-------|--------|------|------|
 |1|Noah|Engineering|100|10000|
@@ -238,6 +241,7 @@ data4 =
     FROM employees; 
 ```
 result: 
+
 |EmpName|DeptName|SalaryByDept:double|
 |-------|--------|-------------------|
 |Noah|Engineering|60000|
@@ -276,6 +280,7 @@ c =
     FROM a CROSS JOIN b;
 ```
  result: 
+ 
 |DeptName|SalaryByDept|SalaryAllDepts|Percentage|
 |--------|-------------------|---------------------|-----------------|
 |Engineering|60000|165000|0.363636363636364|

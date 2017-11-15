@@ -19,11 +19,11 @@ One of U-SQL’s core capabilities is to be able to schematize unstructured data
   
 The processing of the extraction is done in parallel unless otherwise specified by the extractor. Even a single file will be split into parts which then are processed in parallel. The degree of parallelism depends on how big the files are, how many files there are, what the job’s specified degree of parallelism is etc. For more information about the processing model of extractors, please refer to the the [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide).  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Extract_Expression :=                                                                                    
-      'EXTRACT' <a href="#cdl">Column_Definition_List</a><br />
-<a href="#efc">      Extract_From_Clause</a><br />  
-<a href="#us_cl">      USING_Clause</a>.     
+    'EXTRACT' <a href="#cdl">Column_Definition_List</a>
+    <a href="#efc">Extract_From_Clause</a>
+    <a href="#us_cl">USING_Clause</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    
@@ -31,15 +31,16 @@ Extract_Expression :=
 This list defines the schema of the extraction. The extracted columns are defined in the EXTRACT clause as a pair of column names and column types:  
   
   <table><th>Syntax</th><tr><td><pre>
-Column_Definition_List :=                                                                           
-      Column_Definition { ',' Column_Definition}.  
-</pre></td></tr></table>
+  Column_Definition_List :=                                                                           
+      Column_Definition { ',' Column_Definition}.
+  </pre></td></tr></table>
 
   - **`Column_Definition`**  
-  A column definition is of the form
+    A column definition is of the form
+    
     <table><th>Syntax</th><tr><td><pre>
-Column_Definition := 
-<a><a/>     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.                                              <a><a/>
+    Column_Definition :=                                                                           
+        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
     </pre></td></tr></table>
     
     Each column has an identifier that can be either an unquoted or quoted identifier which is typed with one of the [built-in U-SQL types](built-in-u-sql-types.md) and has to be supported by the extractor.  
@@ -47,22 +48,22 @@ Column_Definition :=
     If the files are being specified with a file set, then the column definition list also needs to include the so-called virtual columns that are being used in the file set pattern in the EXTRACT’s FROM clause and the specification of their types.  
   
 - <a name="efc"></a>**`Extract_From_Clause`**   
-The EXTRACT’s FROM clause designates the source of the data that needs to be extracted in form of an [Input_File_Path](input-files-u-sql.md) that is either a file path, a comma-separated list of file paths, or a pattern over a set of files (follow the link for more details on the different supported file paths and patterns):
+  The EXTRACT’s FROM clause designates the source of the data that needs to be extracted in form of an [Input_File_Path](input-files-u-sql.md) that is either a file path, a comma-separated list of file paths, or a pattern over a set of files (follow the link for more details on the different supported file paths and patterns):
 
   <table><th>Syntax</th><tr><td><pre>
-Extract_From_Clause :=                                                                              
-      'FROM' <a href="input-files-u-sql.md">Input_File_Path</a>.  
-</pre></td></tr></table>
+  Extract_From_Clause :=                                                                              
+      'FROM' <a href="input-files-u-sql.md">Input_File_Path</a>.
+  </pre></td></tr></table>
   
-    The [Input_File_Path](input-files-u-sql.md) is specified as a string literal, a reference to a string typed variable or a constant foldable expression.  
+  The [Input_File_Path](input-files-u-sql.md) is specified as a string literal, a reference to a string typed variable or a constant foldable expression.  
   
 - <a name="us_cl"></a>**`USING_Clause`**  
-The USING clause specifies which extractor should be used to turn the file(s) into a rowset.
+  The USING clause specifies which extractor should be used to turn the file(s) into a rowset.
 
   <table><th>Syntax</th><tr><td><pre>
-USING_Clause :=                                                                                     
-      'USING' udo_expression.   
-</pre></td></tr></table>
+  USING_Clause :=                                                                                     
+      'USING' udo_expression.
+  </pre></td></tr></table>
 
   It takes a C# expression that returns an instance of `IExtractor`. U-SQL provides a small set of predefined extractors for common text formats and users can write their own by implementing an `IExtractor`, see [U-SQL Programmability Guide: User-Defined Extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) for more detail on how to write your own extractor. The built-in extractors are part of the built-in `Extractors` namespace. See [U-SQL Built-in Extractors](u-sql-built-in-extractors.md) for more information on the built-in extractors and their arguments.  
   

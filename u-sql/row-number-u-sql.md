@@ -27,7 +27,7 @@ There is no guarantee that the rows returned by a query using ROW_NUMBER will be
 
 ROW_NUMBER can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
     
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 ROW_NUMBER_Expression :=                                                                                 
       'ROW_NUMBER' '(' ')'.  
 </pre></td></tr></table>

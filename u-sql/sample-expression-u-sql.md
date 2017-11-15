@@ -21,48 +21,48 @@ Given an input rowset and arguments that are specific to the types of sampler be
 
 All samplers execute in one pass on data and in parallel on portions of the input; they do not require partitioning, shuffle etc.  Samplers have been implemented in a single pass over data and have very small memory footprint; log( SIZE(input), SIZE(output) ).
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Sample_Expression_Complex :=                                                                             
-    'SAMPLE' <a href="from-clause-u-sql.md#row_src">Rowset_Source</a> Sampler_Details [Weight_Col]<br />
+     'SAMPLE' <a href="from-clause-u-sql.md#row_src">Rowset_Source</a> Sampler_Details [Weight_Col]<br />
 Sampler_Details := 
-<a></a>    '<a href="#uniform">UNIFORM</a>' '(' <a href="#row_fraction">row_fraction</a> ')'
-|   'ON' <a href="#ON">Identifier_List</a> '<a href="#universe">UNIVERSE</a>' '(' <a href="#row_fraction">row_fraction</a> ')'
-|   'ON' <a href="#ON">Identifier_List</a> '<a href="#distinct">DISTINCT</a>' '(' <a href="#row_fraction">row_fraction</a> ',' <a href="#min_row_count">min_row_count</a> ')'<br />
+     '<a href="#uniform">UNIFORM</a>' '(' <a href="#row_fraction">row_fraction</a> ')'
+|    'ON' <a href="#ON">Identifier_List</a> '<a href="#universe">UNIVERSE</a>' '(' <a href="#row_fraction">row_fraction</a> ')'
+|    'ON' <a href="#ON">Identifier_List</a> '<a href="#distinct">DISTINCT</a>' '(' <a href="#row_fraction">row_fraction</a> ',' <a href="#min_row_count">min_row_count</a> ')'<br />
 Weight_Col :=
-<a></a>    'WITH' 'WEIGHT' 'AS' Identifier.
+     'WITH' 'WEIGHT' 'AS' Identifier.
 </pre></td></tr></table>
 
 
 ### Semantics of Syntax Elements   
--   <a name="uniform"></a>**`UNIFORM`**  
-Rows are picked uniformly at random with probability equal to `row_fraction`.  The weight column, if requested, is set to 1/(`row_fraction`) for all rows.  The size of the output is governed by a binomial distribution. In expectation, the size of output is `row_fraction` * SIZE(input rowset).
+- <a name="uniform"></a>**`UNIFORM`**  
+  Rows are picked uniformly at random with probability equal to `row_fraction`.  The weight column, if requested, is set to 1/(`row_fraction`) for all rows.  The size of the output is governed by a binomial distribution. In expectation, the size of output is `row_fraction` * SIZE(input rowset).
  
--   <a name="row_fraction"></a>**`row_fraction`**  
-A double between 0 and 1 that indicates the probability with which a row in the input rowset will be passed.
+- <a name="row_fraction"></a>**`row_fraction`**  
+  A double between 0 and 1 that indicates the probability with which a row in the input rowset will be passed.
 
 - <a name="ON"></a>**`Identifier_List`**   
   This option specifies the list of columns that define the groups.  
   
   <table><th>Syntax</th><tr><td><pre>
-Identifier_List :=                                                                                  
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>                                               
-    {',' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> }.  
-</pre></td></tr></table> 
+  Identifier_List :=                                                                                  
+       <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>                                               
+       {',' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> }.
+  </pre></td></tr></table>
 
--   <a name="universe"></a>**`UNIVERSE`**  
-All rows are passed where the group value (i.e., the value of the columns in `Identifier_List`) is in some randomly chosen `row_fraction` of the space of group values. `UNIVERSE` uses a cryptographically strong hash function to pick a random portion of the values. The weight column, if requested, is set to 1/(`row_fraction`) for all rows.  
+- <a name="universe"></a>**`UNIVERSE`**  
+  All rows are passed where the group value (i.e., the value of the columns in `Identifier_List`) is in some randomly chosen `row_fraction` of the space of group values. `UNIVERSE` uses a cryptographically strong hash function to pick a random portion of the values. The weight column, if requested, is set to 1/(`row_fraction`) for all rows.  
 
-    `UNIVERSE` ensures sample-then-join is equivalent to join-then-sample: Using `UNIVERSE` before an equijoin with `Identifier_List`, on both inputs of the equijoin, containing exactly the equijoin columns is identical to sampling after the join.
+  `UNIVERSE` ensures sample-then-join is equivalent to join-then-sample: Using `UNIVERSE` before an equijoin with `Identifier_List`, on both inputs of the equijoin, containing exactly the equijoin columns is identical to sampling after the join.
     
-    The size of the output is also in expectation `row_fraction`*SIZE(input rowset). However, especially if there are too few groups, the output size has more variance than with `UNIFORM` since all rows from a group are passed by the sampler or not.  
+  The size of the output is also in expectation `row_fraction`*SIZE(input rowset). However, especially if there are too few groups, the output size has more variance than with `UNIFORM` since all rows from a group are passed by the sampler or not.  
 
--   <a name="distinct"></a>**`DISTINCT`**  
-Per group (a distinct value of the columns in `Identifier_List`), this sampler passes `min_row_count` rows and the rest of the rows are passed with probability `row_fraction`.  The weight column, if requested, is set to 1/(`row_fraction`) if the row is passed in the probabilistic mode and 1 otherwise.  `DISTINCT` facilitates sample-before-groupby: Using `DISTINCT` before a groupby, with `Identifier_List` containing at least the group in the group-by, guarantees that the sample will not miss any groups.
+- <a name="distinct"></a>**`DISTINCT`**  
+  Per group (a distinct value of the columns in `Identifier_List`), this sampler passes `min_row_count` rows and the rest of the rows are passed with probability `row_fraction`.  The weight column, if requested, is set to 1/(`row_fraction`) if the row is passed in the probabilistic mode and 1 otherwise.  `DISTINCT` facilitates sample-before-groupby: Using `DISTINCT` before a groupby, with `Identifier_List` containing at least the group in the group-by, guarantees that the sample will not miss any groups.
+  
+  `DISTINCT` may return fewer than `min_row_count` rows (but never less than 1) for some groups. A simple case is when a group has fewer than `min_row_count` rows in the input. A more complex case occurs depending on the degree of parallelism of the stage that runs the sampler and how the rows corresponding to the group are distributed among the input partitions. 
 
-    `DISTINCT` may return fewer than `min_row_count` rows (but never less than 1) for some groups. A simple case is when a group has fewer than `min_row_count` rows in the input. A more complex case occurs depending on the degree of parallelism of the stage that runs the sampler and how the rows corresponding to the group are distributed among the input partitions. 
-
--   <a name="min_row_count"></a>**`min_row_count`**  
-A positive integer for  `DISTINCT`.
+- <a name="min_row_count"></a>**`min_row_count`**  
+  A positive integer for  `DISTINCT`.
 
 > [!TIP] 
 > Ensure your sample probability, `row_fraction`, is adequate for the size of your dataset to minimize the possibility of an empty result set being returned.

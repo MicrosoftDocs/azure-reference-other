@@ -19,9 +19,9 @@ The VARP aggregator returns the statistical variance for the population for all 
 
 The identity value is null. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 VARP_Expression :=                                                                                       
-      'VARP' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.  
+     'VARP' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

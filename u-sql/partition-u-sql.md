@@ -17,11 +17,11 @@ manager: "jhubbard"
 # PARTITION (U-SQL)
 The `PARTITION` intrinsic object returns `true` if the specified partition for the given table exists and the user has access to said table. Otherwise, `false` is returned.  The function will be evaluated at compile-time (and is thus constant-foldable).
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 <a href="other-simple-built-in-types-and-literals.md">bool</a> PARTITION.EXISTS(                                                                                   
-    <a href="#ident">Identifier</a>, 
-    <a href="#partition_value">partition_value {, partition_value}</a>
-).  
+     <a href="#ident">Identifier</a>, 
+     <a href="#partition_value">partition_value {, partition_value}</a>
+).
 </pre></td></tr></table>
 
 

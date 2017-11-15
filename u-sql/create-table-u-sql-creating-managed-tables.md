@@ -20,7 +20,7 @@ U-SQL allows a table to be created by specifying a schema, or by specifying a qu
 > [!NOTE]
 > All managed U-SQL tables are currently clustered tables where the cluster information is specified with a clustered index. In particular, other types of tables such as heaps and column store tables are not supported.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_Managed_Table_Statement :=                                                                        
     'CREATE' 'TABLE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#ident">Identifier</a>   
     (<a href="#tbl_w_sch">Table_With_Schema</a> | <a href="#tbl_as_qry">Table_As_Query</a>).

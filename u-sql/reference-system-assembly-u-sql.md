@@ -19,12 +19,11 @@ U-SQL provides a small set of preloaded system assemblies for the C# core and th
   
 In order to load additional system assemblies, U-SQL provides the REFERENCE SYSTEM ASSEMBLY statement that allows to load additional system assemblies for the script.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Reference_System_Assembly_Statement :=                                                                   
-    'REFERENCE' 'SYSTEM' 'ASSEMBLY' Assembly_Name.
-<br />
+     'REFERENCE' 'SYSTEM' 'ASSEMBLY' Assembly_Name.<br />
 <a href="#ass_name">Assembly_Name</a> := 
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
+     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
  
 ### Semantics of Syntax Elements  

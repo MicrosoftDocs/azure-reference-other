@@ -19,15 +19,15 @@ Imposes conditions on the execution of a U-SQL statement which is evaluated at c
 
 The Boolean expression has to be compile-time constant foldable, such as the value passed as a parameter.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 If_Else_Statement :=                                                                                      
-  'IF' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
-     <a href="query-statements-and-expressions-u-sql.md">U-SQL_Statement</a> 
-  [ 'ELSEIF' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
-     <a href="query-statements-and-expressions-u-sql.md">U-SQL_Statement</a> ]
-  [ 'ELSE' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
-     <a href="query-statements-and-expressions-u-sql.md">U-SQL_Statement</a> ]
-'END'.     
+    'IF' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
+         <a href="query-statements-and-expressions-u-sql.md">U-SQL_Statement</a> 
+    [ 'ELSEIF' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
+         <a href="query-statements-and-expressions-u-sql.md">U-SQL_Statement</a> ]
+    [ 'ELSE' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
+         <a href="query-statements-and-expressions-u-sql.md">U-SQL_Statement</a> ]
+'END'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    

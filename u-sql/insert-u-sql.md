@@ -17,11 +17,11 @@ manager: "jhubbard"
 # INSERT (U-SQL)
 U-SQL provides the ability to insert rows an existing U-SQL table using the INSERT statement.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Insert_Statement :=                                                                                      
-      'INSERT' ['INTO'] <a href="#Ident">Identifier</a> ['(' <a href="#Ident_l">Identifier_List</a> ')']  
-      [<a href="#part_l">Partition_Label</a> | <a href="#int_cla">Integrity_Clause</a>]  
-      <a href="#ins_src">Insert_Source</a>.                                     
+     'INSERT' ['INTO'] <a href="#Ident">Identifier</a> ['(' <a href="#Ident_l">Identifier_List</a> ')']  
+     [<a href="#part_l">Partition_Label</a> | <a href="#int_cla">Integrity_Clause</a>]  
+     <a href="#ins_src">Insert_Source</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    
@@ -41,57 +41,54 @@ Insert_Statement :=
   
     A null value is inserted into a column that is not specified in the list. If that column has a not-nullable type (e.g., `int` instead of `int`?), an error is raised.  
   
--  <a name="part_l"></a>**`Partition_Label`**   
-The optional partition label allows to specify an explicit partition into which the data will be inserted with the following syntax:
-   <table><th>Syntax</th><tr><td><pre>
-Partition_Label :=                                                                                  
+- <a name="part_l"></a>**`Partition_Label`**   
+  The optional partition label allows to specify an explicit partition into which the data will be inserted with the following syntax:
+  <table><th>Syntax</th><tr><td><pre>
+  Partition_Label :=                                                                                  
        'PARTITION' Static_Expression_Row_Constructor.<br />
-Static_Expression_Row_Constructor :=  
-        '(' Static_Expression_List ')'.<br />
-Static_Expression_List :=  
-        Static_Expression {',' Static_Expression}.<br />                        
-Static_Expression :=  
-        <a href="textual-types-and-literals.md">string_literal</a> | <a href="numeric-types-and-literals.md">number_literal</a> | <a href="textual-types-and-literals.md">char_literal</a>   
-        | Static_Variable | binary_literal.  
-</pre></td></tr></table>
-\<!--  
-**[TODO: Check which foldable expressions of the given type and variables are accepted and move into Expression section above]**  
--->
+  Static_Expression_Row_Constructor :=  
+       '(' Static_Expression_List ')'.<br />
+  Static_Expression_List :=  
+       Static_Expression {',' Static_Expression}.<br />                        
+  Static_Expression :=  
+       <a href="textual-types-and-literals.md">string_literal</a> | <a href="numeric-types-and-literals.md">number_literal</a> | <a href="textual-types-and-literals.md">char_literal</a>
+       | Static_Variable | binary_literal.</pre></td></tr></table>
+
   The label specifies the values for the partition column into which the data will be inserted. If this label is specified, then the partition columns cannot be specified in the target table’s identifier list. Instead, the values provided in the label will be inserted into the partition columns directly.   
   
-    > [!NOTE]
-    > If the partition column is of type DateTime, then the value that is provided in the partition label has to be using `DateTimeKind.UTC`.
+  > [!NOTE]
+  > If the partition column is of type DateTime, then the value that is provided in the partition label has to be using `DateTimeKind.UTC`.
   
-    If the target table is not a partitioned table and the `Partition_Label` is specified an error will be raised.  
+  If the target table is not a partitioned table and the `Partition_Label` is specified an error will be raised.  
   
 - <a name="int_cla"></a>**`Integrity_Clause`**    
-    The optional integrity clause specifies what happens with data that does not fit into any of the available partitions with the following syntax: 
-   <table><th>Syntax</th><tr><td><pre>
-Integrity_Clause :=                                                                                 
+  The optional integrity clause specifies what happens with data that does not fit into any of the available partitions with the following syntax: 
+  <table><th>Syntax</th><tr><td><pre>
+  Integrity_Clause :=                                                                                 
        'ON' 'INTEGRITY' 'VIOLATION' Integrity_Violation_Action.<br />
-Integrity_Violation_Action :=  
+  Integrity_Violation_Action :=  
        '<a href="#ignr">IGNORE</a>'  
-      | <a href="#m_t_p">'MOVE' 'TO' Partition_Label</a>.                     
-</pre></td></tr></table>
+  |    <a href="#m_t_p">'MOVE' 'TO' Partition_Label</a>.
+  </pre></td></tr></table>
   
   It provides the following options:    
   - <a name="ignr"></a>**`IGNORE`**    
-If the source contains a row for which no partition can be found, the row is ignored and not inserted.  
+    If the source contains a row for which no partition can be found, the row is ignored and not inserted.  
   
   - <a name="m_t_p"></a>**`MOVE TO Partition_Label`**      
-If the source contains a row for which no partition can be found, the row’s values (except for the partition column values) is moved into the specified partition and the partition column values are set to the specified partition label.  
+    If the source contains a row for which no partition can be found, the row’s values (except for the partition column values) is moved into the specified partition and the partition column values are set to the specified partition label.  
   
     If the target table is not a partitioned table and the `Integrity_Clause` is specified an error will be raised.  
   
 - <a name="ins_src"></a>**`Insert_Source`**    
-INSERT currently takes input from two sources: a [SELECT](select-expression-u-sql.md) expression and the [VALUES](values-expression-u-sql.md) row constructor:
+  INSERT currently takes input from two sources: a [SELECT](select-expression-u-sql.md) expression and the [VALUES](values-expression-u-sql.md) row constructor:
   <table><th>Syntax</th><tr><td><pre>
-Insert_Source :=                                                                                    
-      <a href="select-expression-u-sql.md">Select_Expression</a> 
-|     <a href="u-sql-select-selecting-from-the-values-table-value-constructor.md">Table_Value_Constructor_Expression</a>.
-</pre></td></tr></table>
+  Insert_Source :=                                                                                    
+       <a href="select-expression-u-sql.md">Select_Expression</a> 
+  |    <a href="u-sql-select-selecting-from-the-values-table-value-constructor.md">Table_Value_Constructor_Expression</a>.
+  </pre></td></tr></table>
     
-    Note that the expressions need to provide values that fit into the target schema and are type compatible. Otherwise an error is raised. For more information about each of the expression please follow the links.  
+  Note that the expressions need to provide values that fit into the target schema and are type compatible. Otherwise an error is raised. For more information about each of the expression please follow the links.  
   
 > [!TIP]
 > While INSERT allows incremental insertion into a table or table partition, it does currently does it by adding so called delta files (an artefact of the way the physical partition files for tables are “sealed” and cannot be append to incrementally). Thus doing a lot of incremental inserts can degrade query performance and it is recommended to only insert large batches of data instead of doing many small insertions.

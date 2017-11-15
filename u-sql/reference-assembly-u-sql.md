@@ -25,19 +25,17 @@ These requirements however mean, that an assembly that is used by a function tha
 
 When referencing multiple assemblies that contain additional files, their names across the entire collection of referenced assemblies in the script need to be unique. In case file names conflict, the error `E_CSC_USER_CONFLICTINGASSEMBLYFILE` is raised. The file name paths of additional assembly files also cannot conflict with file name paths of deployed resources. In case they conflict, the error `E_CSC_USER_SAMERESOURCEWITHDIFFERENTPATH` is raised.
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Reference_User_Assembly_Statement :=                                                                     
-    'REFERENCE' 'ASSEMBLY' Global_Assembly_Identifier.
-<br />
+     'REFERENCE' 'ASSEMBLY' Global_Assembly_Identifier.<br />
 <a href="#ass_name">Global_Assembly_Identifier</a> := 
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
+     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements
 - <a name="ass_name"></a>**`Global_Assembly_Identifier`**  
 Specifies the [quoted or unquoted identifier](u-sql-identifiers.md) of the assembly to be loaded. The assembly name is resolved against the current static database context.   
   
-
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.

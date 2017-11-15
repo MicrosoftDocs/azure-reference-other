@@ -19,15 +19,85 @@ U-SQL’s core reliance on C#-for its [U-SQL type](data-types-and-literals-u-sql
 
 All [C# operators](https://msdn.microsoft.com/library/6a71f45d.aspx) except for the assignment operators (=, += etc) are valid in U-SQL. In particular all comparison operators such as `==`, `!=`, `<`, `>` the ternary comparison `cond ? true-expression : false-expression`, the null coalesce operator `??` are supported. Even lambda expressions using `=>` can be used inside U-SQL expressions.  
 
-|[Examples in this Topic](#examples)|
-|---|
-|[C# Operators](#sharpOps)<br />&emsp;&#9679;&emsp;[?: (Conditional)](#condl)<br />&emsp;&#9679;&emsp;[?? (Null-Coalescing)](#nullCoal)<br />&emsp;&#9679;&emsp;[=> (Lamda)](#lamda)|
-|[String Methods](#stringMethods)<br />&emsp;&#9679;&emsp;[Compare](#Compare)<br />&emsp;&#9679;&emsp;[CompareOrdinal](#CompareOrdinal)<br />&emsp;&#9679;&emsp;[CompareTo](#CompareTo)<br />&emsp;&#9679;&emsp;[Concat](#Concat)<br />&emsp;&#9679;&emsp;[Contains](#Contains)<br />&emsp;&#9679;&emsp;[EndsWith](#EndsWith)<br />&emsp;&#9679;&emsp;[Equals](#Equals)<br />&emsp;&#9679;&emsp;[Format](#Format)<br />&emsp;&#9679;&emsp;[GetHashCode](#GetHashCode)<br />&emsp;&#9679;&emsp;[GetTypeCode](#GetTypeCode)<br />&emsp;&#9679;&emsp;[IndexOf](#IndexOf)<br />&emsp;&#9679;&emsp;[Insert](#Insert)<br />&emsp;&#9679;&emsp;[IsNullOrEmpty](#IsNullOrEmpty)<br />&emsp;&#9679;&emsp;[IsNullOrWhiteSpace](#IsNullOrWhiteSpace)<br />&emsp;&#9679;&emsp;[Join](#Join)<br />&emsp;&#9679;&emsp;[LastIndexOf](#LastIndexOf)<br />&emsp;&#9679;&emsp;[PadLeft](#PadLeft)<br />&emsp;&#9679;&emsp;[PadRight](#PadRight)<br />&emsp;&#9679;&emsp;[Remove](#Remove)<br />&emsp;&#9679;&emsp;[Replace](#Replace)<br />&emsp;&#9679;&emsp;[Split](#Split)<br />&emsp;&#9679;&emsp;[StartsWith](#StartsWith)<br />&emsp;&#9679;&emsp;[Substring](#Substring)<br />&emsp;&#9679;&emsp;[ToCharArray](#ToCharArray)<br />&emsp;&#9679;&emsp;[ToLower](#ToLower)<br />&emsp;&#9679;&emsp;[ToUpper](#ToUpper)<br />&emsp;&#9679;&emsp;[Trim](#Trim)<br />|
-|[String Properties](#stringProperties)<br />&emsp;&#9679;&emsp;[Length](#Length)|
-|[Object Methods](#ObjectMethods)<br />&emsp;&#9679;&emsp;[GetType](#GetType)|
-|[Date & Time](#DateTime)<br />&emsp;&#9679;&emsp;[DateTime to String](#stringFormats)<br />&emsp;&#9679;&emsp;[String to DateTime](#stringConversion)<br />&emsp;&#9679;&emsp;[Properties](#properties)<br />&emsp;&#9679;&emsp;[Some Methods](#someMethods)<br />&emsp;&#9679;&emsp;[Comparing DateTimes](#comparingDateTimes)<br />&emsp;&#9679;&emsp;[Some Operators](#someOperators)<br />&emsp;&#9679;&emsp;[Date Diff](#dateDiff)<br />&emsp;&#9679;&emsp;[Add TimeSpan](#addTimeSpan)<br />&emsp;&#9679;&emsp;[TimeSpan Plus TimeSpan](#TimeSpan)|
-|[Math Methods](#Math)<br />&emsp;&#9679;&emsp;[Abs](#abs)<br />&emsp;&#9679;&emsp;[BigMul](#bigMul)<br />&emsp;&#9679;&emsp;[Ceiling](#ceiling)<br />&emsp;&#9679;&emsp;[Floor](#floor)<br />&emsp;&#9679;&emsp;[Max](#max)<br />&emsp;&#9679;&emsp;[Min](#min)<br />&emsp;&#9679;&emsp;[Pow](#pow)<br />&emsp;&#9679;&emsp;[Round](extending-u-sql-expressions-with-user-code.md#usingRound)<br />&emsp;&#9679;&emsp;[Sign](#sign)<br />&emsp;&#9679;&emsp;[Sqrt](#sqrt)<br />&emsp;&#9679;&emsp;[Truncate](#truncate)|
-|[Random Methods](#Random)<br />&emsp;&#9679;&emsp;[Next](#randomNext)<p>                                                                                                                                                                                                                  </p>|
+
+<table><th align="left"><a href="#examples">Examples in this Topic</a></th>
+<tr><td>
+<a href="#sharpOps">C# Operators</a>  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <br />                                                                                                           
+&emsp;&#9679;&emsp;<a href="#condl">?: (Conditional)</a><br />
+&emsp;&#9679;&emsp;<a href="#nullCoal">?? (Null-Coalescing)</a><br />
+&emsp;&#9679;&emsp;<a href="#lamda">=> (Lamda)</a>
+</td></tr> 
+<tr><td>
+<a href="#stringMethods">String Methods</a><br />
+&emsp;&#9679;&emsp;<a href="#Compare">Compare</a><br />
+&emsp;&#9679;&emsp;<a href="#CompareOrdinal">CompareOrdinal</a><br />
+&emsp;&#9679;&emsp;<a href="#CompareTo">CompareTo</a><br />
+&emsp;&#9679;&emsp;<a href="#Concat">Concat</a><br />
+&emsp;&#9679;&emsp;<a href="#Contains">Contains</a><br />
+&emsp;&#9679;&emsp;<a href="#EndsWith">EndsWith</a><br />
+&emsp;&#9679;&emsp;<a href="#Equals">Equals</a><br />
+&emsp;&#9679;&emsp;<a href="#Format">Format</a><br />
+&emsp;&#9679;&emsp;<a href="#GetHashCode">GetHashCode</a><br />
+&emsp;&#9679;&emsp;<a href="#GetTypeCode">GetTypeCode</a><br />
+&emsp;&#9679;&emsp;<a href="#IndexOf">IndexOf</a><br />
+&emsp;&#9679;&emsp;<a href="#Insert">Insert</a><br />
+&emsp;&#9679;&emsp;<a href="#IsNullOrEmpty">IsNullOrEmpty</a><br />
+&emsp;&#9679;&emsp;<a href="#IsNullOrWhiteSpace">IsNullOrWhiteSpace</a><br />
+&emsp;&#9679;&emsp;<a href="#Join">Join</a><br />
+&emsp;&#9679;&emsp;<a href="#LastIndexOf">LastIndexOf</a><br />
+&emsp;&#9679;&emsp;<a href="#PadLeft">PadLeft</a><br />
+&emsp;&#9679;&emsp;<a href="#PadRight">PadRight</a><br />
+&emsp;&#9679;&emsp;<a href="#Remove">Remove</a><br />
+&emsp;&#9679;&emsp;<a href="#Replace">Replace</a><br />
+&emsp;&#9679;&emsp;<a href="#Split">Split</a><br />
+&emsp;&#9679;&emsp;<a href="#StartsWith">StartsWith</a><br />
+&emsp;&#9679;&emsp;<a href="#Substring">Substring</a><br />
+&emsp;&#9679;&emsp;<a href="#ToCharArray">ToCharArray</a><br />
+&emsp;&#9679;&emsp;<a href="#ToLower">ToLower</a><br />
+&emsp;&#9679;&emsp;<a href="#ToUpper">ToUpper</a><br />
+&emsp;&#9679;&emsp;<a href="#Trim">Trim</a>
+</td></tr> 
+<tr><td>
+<a href="#stringProperties">String Properties</a><br />
+&emsp;&#9679;&emsp;<a href="#Length">Length</a>
+</td></tr> 
+<tr><td>
+<a href="#ObjectMethods">Object Methods</a><br />
+&emsp;&#9679;&emsp;<a href="#GetType">GetType</a><br />
+</td></tr> 
+<tr><td>
+<a href="#DateTime">Date &amp; Time</a><br />
+&emsp;&#9679;&emsp;<a href="#stringFormats">DateTime to String</a><br />
+&emsp;&#9679;&emsp;<a href="#stringConversion">String to DateTime</a><br />
+&emsp;&#9679;&emsp;<a href="#properties">Properties</a><br />
+&emsp;&#9679;&emsp;<a href="#someMethods">Some Methods</a><br />
+&emsp;&#9679;&emsp;<a href="#comparingDateTimes">Comparing DateTimes</a><br />
+&emsp;&#9679;&emsp;<a href="#someOperators">Some Operators</a><br />
+&emsp;&#9679;&emsp;<a href="#dateDiff">Date Diff</a><br />
+&emsp;&#9679;&emsp;<a href="#addTimeSpan">Add TimeSpan</a><br />
+&emsp;&#9679;&emsp;<a href="#TimeSpan">TimeSpan Plus TimeSpan</a>
+</td></tr> 
+<tr><td>
+<a href="#Math">Math Methods</a><br />
+&emsp;&#9679;&emsp;<a href="#abs">Abs</a><br />
+&emsp;&#9679;&emsp;<a href="#bigMul">BigMul</a><br />
+&emsp;&#9679;&emsp;<a href="#ceiling">Ceiling</a><br />
+&emsp;&#9679;&emsp;<a href="#floor">Floor</a><br />
+&emsp;&#9679;&emsp;<a href="#max">Max</a><br />
+&emsp;&#9679;&emsp;<a href="#min">Min</a><br />
+&emsp;&#9679;&emsp;<a href="#pow">Pow</a><br />
+&emsp;&#9679;&emsp;<a href="extending-u-sql-expressions-with-user-code.md#usingRound">Round</a><br />
+&emsp;&#9679;&emsp;<a href="#sign">Sign</a><br />
+&emsp;&#9679;&emsp;<a href="#sqrt">Sqrt</a><br />
+&emsp;&#9679;&emsp;<a href="#truncate">Truncate</a>
+</td></tr> 
+<tr><td>
+<a href="#Random">Random Methods</a><br />
+&emsp;&#9679;&emsp;<a href="#randomNext">Next</a>
+</td></tr> 
+</table>
+
 
 ### <a name="examples">Examples</a>
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  

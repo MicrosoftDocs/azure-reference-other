@@ -24,10 +24,10 @@ U-SQL provides the ability to name scripts as procedures and parameterize them. 
 ### Procedure DDL Statements    
 U-SQL provides the ability to create or drop procedures:  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Procedure_DDL_Statement :=                                                                               
-    <a href="create-procedure-u-sql.md">Create_Proc_Statement</a>  
-|   <a href="drop-procedure-u-sql.md">Drop_Proc_Statement</a>.  
+     <a href="create-procedure-u-sql.md">Create_Proc_Statement</a>
+|    <a href="drop-procedure-u-sql.md">Drop_Proc_Statement</a>.
 </pre></td></tr></table>
 
 Procedures can be used inside other procedures and U-SQL scripts.  

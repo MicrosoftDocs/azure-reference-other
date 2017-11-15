@@ -23,15 +23,14 @@ Since the rewrite of BETWEEN will execute the expression a twice, it should be a
 ```  
 Note that the comparison is using C# comparison semantics, especially regarding `null` values.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 BETWEEN_Expression :=                                                                                    
-        <a href="#exp">expression</a> BETWEEN <a href="#LB">Lowerbound</a> AND <a href="#UB">Upperbound</a>.
-<br />
+     <a href="#exp">expression</a> 'BETWEEN' <a href="#LB">Lowerbound</a> 'AND' <a href="#UB">Upperbound</a>.<br />
+
 <a href="#LB">Lowerbound</a> :=
-    <a href="#exp">expression</a>.
-<br />
+<a href="#exp">     expression</a>.<br />
 <a href="#UB">Upperbound</a> :=
-    <a href="#exp">expression</a>.
+<a href="#exp">     expression</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    

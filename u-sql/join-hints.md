@@ -17,13 +17,13 @@ manager: "jhubbard"
 # Join Hints
 In addition to the JOIN operators, U-SQL optionally allows the query author to provide hints on the type of join to choose and what parallel join execution to use.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Join_Hints :=                                                                                            
-    [Parallel_Join_Hint] [Join_Algorithm_Hint].<br />   
+     [Parallel_Join_Hint] [Join_Algorithm_Hint].<br />
 Parallel_Join_Hint :=  
-    'SERIAL' | 'PAIR' | 'BROADCASTLEFT' | 'BROADCASTRIGHT' | 'FULLCROSS'.<br />  
+     'SERIAL' | 'PAIR' | 'BROADCASTLEFT' | 'BROADCASTRIGHT' | 'FULLCROSS'.<br />
 Join_Algorithm_Hint :=  
-    'MERGE' | 'HASH' | 'LOOP' | 'INDEXLOOKUP'.  
+     'MERGE' | 'HASH' | 'LOOP' | 'INDEXLOOKUP'.
 </pre></td></tr></table>
   
 These hints impact the plan generation of the query optimizer. If the optimizer cannot find a succession of optimizer rules to satisfy the requested hints, for example because the hints are not applicable to a specific JOIN, a NO PLAN error will be raised.  

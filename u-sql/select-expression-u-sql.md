@@ -23,14 +23,13 @@ Note that unlike in other systems, where a SELECT clause can output results to t
 
 For ordered output, use the [ORDER BY](output-statement-u-sql.md#OBOFC) clause on the [OUTPUT](output-statement-u-sql.md) statement.
 
-
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Select_Expression :=                                                                                     
-    <a href="select-clause-u-sql.md">Select_Clause</a><br /> 
-<a href="from-clause-u-sql.md">    Select_From_Clause</a><br />  
-<a href="where-clause-u-sql.md">    [Where_Clause]</a><br />  
-<a href="group-by-and-having-clauses-u-sql.md">    [Group_By_Clause]</a><br />  
-<a href="order-by-and-offset-fetch-clause-u-sql.md">    [Order_By_Fetch_Clause]</a>.
+     <a href="select-clause-u-sql.md">Select_Clause</a>
+     <a href="from-clause-u-sql.md">Select_From_Clause</a> 
+     <a href="where-clause-u-sql.md">[Where_Clause]</a> 
+     <a href="group-by-and-having-clauses-u-sql.md">[Group_By_Clause]</a> 
+     <a href="order-by-and-offset-fetch-clause-u-sql.md">[Order_By_Fetch_Clause]</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    

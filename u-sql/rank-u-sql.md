@@ -23,9 +23,9 @@ The sort order that is used for the whole query determines the order in which th
 
 RANK can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 RANK_Expression :=                                                                                       
-      'RANK' '(' ')'.  
+     'RANK' '(' ')'.
 </pre></td></tr></table>
 
 ### Return Type 

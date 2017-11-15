@@ -25,9 +25,9 @@ PERCENT_RANK is similar to the [CUME_DIST](cume-dist-u-sql.md) function.
 
 PERCENT_RANK can only be used in the context of the [OVER](over-expression-u-sql.md) expression. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 PERCENT_RANK_Expression :=                                                                               
-      'PERCENT_RANK' '(' ')'.  
+     'PERCENT_RANK' '(' ')'.
 </pre></td></tr></table>
 
 ### Return Type 

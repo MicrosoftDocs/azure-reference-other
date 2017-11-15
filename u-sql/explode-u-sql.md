@@ -21,10 +21,10 @@ If EXPLODE is applied on an instance of [SQL.ARRAY](complex-built-in-u-sql-types
   
 If EXPLODE is applied on an instance of [SQL.MAP](complex-built-in-u-sql-types.md) \<K,V>, the resulting rowset contains two columns of type K and V respectively where each key-value pair in the map is placed into its own row. If the map value was empty or null, then the resulting rowset is empty.
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Explode_Expression :=                                                                                    
-       'EXPLODE' '(' (<a href="#SE">sqlmap_expression | sqlarray_expression</a> | <a href="#expression">ienumerable_expression</a> ) ')'  
-        <a href="#DTAWOT">Derived_Table_Alias_With_Opt_Types</a>.  
+    'EXPLODE' '(' (<a href="#SE">sqlmap_expression | sqlarray_expression</a> | <a href="#expression">ienumerable_expression</a> ) ')'  
+    <a href="#DTAWOT">Derived_Table_Alias_With_Opt_Types</a>.  
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    
@@ -35,16 +35,16 @@ Explode_Expression :=
 A C# expression returning a value of either type `IEnumerable<T>`, `IEnumerable<KeyValuePair<K,V>>`, or `IEnumerable<Tuple>`. The expression normally refers to at least one of the columns from the `Rowset_Source`.
   
 - <a name="DTAWOT"></a>**`Derived_Table_Alias_With_Opt_Types`**  
-Defines the rowset schema for the result of the EXPLODE.
+  Defines the rowset schema for the result of the EXPLODE.
 
   <table><th>Syntax</th><tr><td><pre>
-Derived_Table_Alias_With_Opt_Types :=                                                               
+  Derived_Table_Alias_With_Opt_Types :=                                                               
       'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> ['(' Column_Alias_Opt_Type_List ')'].<br />
-Column_Alias_Opt_Type_List :=  
+  Column_Alias_Opt_Type_List :=  
       Column_Alias_Opt_Type {',' Column_Alias_Opt_Type }.<br />
-Column_Alias_Opt_Type := 
-      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> [<a href="built-in-u-sql-types.md">Built_in_Type</a>].  
-</pre></td></tr></table>
+  Column_Alias_Opt_Type := 
+      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> [<a href="built-in-u-sql-types.md">Built_in_Type</a>].
+  </pre></td></tr></table>
 
   The derived table alias requires the correct number of columns to be specified (one in the case of an `EXPLODE` on `SQL.ARRAY` and two in the case of `SQL.MAP`). Optionally a type can be specified, but if it is specified it has to be the exact type of the item type in the case of an array (`T` for `SQL.ARRAY<T>`) or the key and value types in the case of a map (`K` and `V` for `SQL.MAP<K,V>`).  
   

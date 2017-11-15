@@ -25,12 +25,12 @@ Note that unlike the ANSI SQL operators, these operators are still operating acc
 
 Logical Operators build up the Boolean_Expression as follows: 
 
-<table><th>Syntax</th><tr><td><pre>
-Boolean_Expression :=  																					 
-	  <a href="#b_exp">bool_expression</a> 
-| 	  ('<a href="#NOR">NOT</a>' | '<a href="#lops">!</a>') Boolean_Expression 
-| 	  Boolean_Expression ('<a href="#NOR">AND</a>' | '<a href="#lops">&&</a>') Boolean_Expression 
-| 	  Boolean_Expression ('<a href="#NOR">OR</a>' | '<a href="#lops">||</a>') Boolean_Expression.
+<table><th align="left">Syntax</th><tr><td><pre>
+Boolean_Expression :=                                                                                       
+     <a href="#b_exp">bool_expression</a> 
+|    ('<a href="#NOR">NOT</a>' | '<a href="#lops">!</a>') Boolean_Expression 
+|    Boolean_Expression ('<a href="#NOR">AND</a>' | '<a href="#lops">&&</a>') Boolean_Expression 
+|    Boolean_Expression ('<a href="#NOR">OR</a>' | '<a href="#lops">||</a>') Boolean_Expression.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

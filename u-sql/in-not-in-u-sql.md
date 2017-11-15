@@ -21,9 +21,9 @@ The types of the values to be tested and the members of the test set have to be 
   
 U-SQL does not support the subquery form of the SQL `IN` operator. Most subquery `IN` operations can be transformed to use [SEMIJOIN](semijoin-u-sql.md).  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 IN_Expression :=                                                                                         
-    <a href="#exp">expression</a> ['NOT'] 'IN' '(' <a href="#exp_lst">Expression_List</a> ')'.  
+    <a href="#exp">expression</a> ['NOT'] 'IN' '(' <a href="#exp_lst">Expression_List</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements  
@@ -33,12 +33,12 @@ is the expression that creates the value to be tested. It needs to be null or of
 - <a name="exp_lst"></a>**`Expression_List`**    
 is list of expressions that identify the values of the test set.  The maximal supported number of items in the list is 20000.
   
-   <table><th>Syntax</th><tr><td><pre>
-Expression_List :=                                                                                  
-       expression {',' expression}.  
-</pre></td></tr></table>
+  <table><th>Syntax</th><tr><td><pre>
+  Expression_List :=                                                                                  
+      expression {',' expression}.
+  </pre></td></tr></table>
 
-    The types of the values to be tested and the members of the test set have to be to be null or of a [string](textual-types-and-literals.md) or [numeric](numeric-types-and-literals.md) type and compatible with the value to be tested, otherwise an error is raised. 
+  The types of the values to be tested and the members of the test set have to be to be null or of a [string](textual-types-and-literals.md) or [numeric](numeric-types-and-literals.md) type and compatible with the value to be tested, otherwise an error is raised. 
 
 ### Return Type    
 [bool](other-simple-built-in-types-and-literals.md)  

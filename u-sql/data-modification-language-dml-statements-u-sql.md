@@ -22,9 +22,9 @@ U-SQL offers the ability to persist data either as unstructured files with the [
 If data that already is in a table needs to be updated, the table needs to be recomputed.
   
 ## U-SQL DML Statements
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 DML_Statement :=                                                                                         
-      <a href="insert-u-sql.md">INSERT</a>. 
+    <a href="insert-u-sql.md">INSERT</a>.
 </pre></td></tr></table>
   
 ### See Also

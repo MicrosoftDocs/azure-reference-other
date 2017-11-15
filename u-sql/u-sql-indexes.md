@@ -20,9 +20,9 @@ One of the benefits of storing data in a structured container such as a table is
 ### Index DDL Statements    
 The following are the supported operations on indexes:  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Index_DDL_Statement :=                                                                                   
-      <a href="create-index-u-sql.md">Create_Index_Statement</a>.  
+     <a href="create-index-u-sql.md">Create_Index_Statement</a>.
 </pre></td></tr></table>
   
 U-SQL at the moment supports only clustered indexes that are used to cluster the associated U-SQL tables according to the index keys. Since the table then is physically stored as that index, there can only be one clustered index per table and one cannot delete a clustered index. Instead one [drops the table](drop-table-u-sql.md).  

@@ -17,14 +17,14 @@ manager: "jhubbard"
 # CREATE PROCEDURE (U-SQL)
 U-SQL creates a procedure with the `CREATE PROCEDURE` statement.  For information on calling a procedure, see [Calling a Procedure (U-SQL)](calling-a-procedure-u-sql.md)
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_Proc_Statement :=                                                                                 
     'CREATE' 'PROCEDURE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#Ident">Identifier</a>   
     '(' [<a href="#param_lst">Parameter_List</a>] ')'  
     ['AS']  
     'BEGIN'  
     <a href="#proc_lst">Proc_Statement_List</a>  
-    'END'.  
+    'END'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
@@ -38,51 +38,51 @@ This statement creates the procedure with the specified identifier and parameter
 -   <a name="INE"></a>**`IF NOT EXISTS`**  
     If the optional `IF NOT EXISTS` is specified, then the statement creates the procedure if it does not already exist, or succeeds without changes if the procedure already exists and the user has permission to at least enumerate all existing procedures.  
   
--   <a name="param_lst"></a>**`Parameter_List`**    
-    The parameter list provides the arguments and their types and optional default values. The [U-SQL function section](u-sql-functions.md) provides more details about the syntax and semantics of the parameter list.  
+- <a name="param_lst"></a>**`Parameter_List`**    
+  The parameter list provides the arguments and their types and optional default values. The [U-SQL function section](u-sql-functions.md) provides more details about the syntax and semantics of the parameter list.  
   
 - <a name="proc_lst"></a>**`Proc_Statement_List`**     
-    The statements inside a stored procedure can be any statements except for `CREATE FUNCTION`, `CREATE PROCEDURE`, `DROP FUNCTION`, `DROP PROCEDURE`.  
+  The statements inside a stored procedure can be any statements except for `CREATE FUNCTION`, `CREATE PROCEDURE`, `DROP FUNCTION`, `DROP PROCEDURE`.  
  
-   <table><th>Syntax</th><tr><td><pre>
-Proc_Statement_List :=                                                                              
-    { [Proc_Statement] ';' }.<br /> 
-Proc_Statement :=  
-    Proc_Statement_Body  
-    [Optimizer_Hint_Clause].<br />   
-Proc_Statement_Body :=   
-    <a href="u-sql-metadata-object-naming-and-name-contexts.md">Use_Statement</a>  
-|   <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
-|   <a href="import-package-u-sql.md">Import_Package_Statement</a> 
-|   <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>   
-|   Deploy_Resource_Statement  
-|   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
-|   <a href="calling-a-procedure-u-sql.md">Procedure_Call</a> 
-|   <a href="#pbs">ProcBody_DDL_Statement</a> 
-|   <a href="data-modification-language-dml-statements-u-sql.md">DML_Statement</a> 
-|   <a href="output-statement-u-sql.md">Output_Statement</a>.<br /><br />    
-<a name="pbs"></a>ProcBody_DDL_Statement :=   
-    <a href="u-sql-databases.md">DB_DDL_Statement</a>  
-|   <a href="u-sql-database-schemas.md">Schema_DDL_Statement</a>  
-|   <a href="u-sql-tables.md">Table_DDL_Statement</a>  
-|   <a href="u-sql-indexes.md">Index_DDL_Statement</a>  
-|   <a href="u-sql-statistics.md">Statistics_DDL_Statement</a>  
-|   <a href="u-sql-views.md">View_DDL_Statement</a>  
-|   <a href="u-sql-packages.md">Package_DDL_Statement</a>  
-|   <a href="u-sql-assemblies.md">Assembly_DDL_Statement</a>  
-|   <a href="u-sql-data-sources.md">Datasource_DDL_Statement</a>  
-|   <a href="user-defined-u-sql-types.md">Type_DDL_Statement</a>.  
-</pre></td></table>
+  <table><th>Syntax</th><tr><td><pre>
+  Proc_Statement_List :=                                                                              
+      { [Proc_Statement] ';' }.<br /> 
+  Proc_Statement :=  
+      Proc_Statement_Body  
+      [Optimizer_Hint_Clause].<br />   
+  Proc_Statement_Body :=   
+      <a href="u-sql-metadata-object-naming-and-name-contexts.md">Use_Statement</a>  
+  |   <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
+  |   <a href="import-package-u-sql.md">Import_Package_Statement</a> 
+  |   <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>   
+  |   Deploy_Resource_Statement  
+  |   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
+  |   <a href="calling-a-procedure-u-sql.md">Procedure_Call</a> 
+  |   <a href="#pbs">ProcBody_DDL_Statement</a> 
+  |   <a href="data-modification-language-dml-statements-u-sql.md">DML_Statement</a> 
+  |   <a href="output-statement-u-sql.md">Output_Statement</a>.<br /><br />    
+  <a name="pbs"></a>ProcBody_DDL_Statement :=   
+      <a href="u-sql-databases.md">DB_DDL_Statement</a>  
+  |   <a href="u-sql-database-schemas.md">Schema_DDL_Statement</a>  
+  |   <a href="u-sql-tables.md">Table_DDL_Statement</a>  
+  |   <a href="u-sql-indexes.md">Index_DDL_Statement</a>  
+  |   <a href="u-sql-statistics.md">Statistics_DDL_Statement</a>  
+  |   <a href="u-sql-views.md">View_DDL_Statement</a>  
+  |   <a href="u-sql-packages.md">Package_DDL_Statement</a>  
+  |   <a href="u-sql-assemblies.md">Assembly_DDL_Statement</a>  
+  |   <a href="u-sql-data-sources.md">Datasource_DDL_Statement</a>  
+  |   <a href="user-defined-u-sql-types.md">Type_DDL_Statement</a>.
+  </pre></td></table>
 
   Please follow the links for more on the general nature of the statements.  
   
 Note that setting the context inside the procedure body with a USE statement, declaring variables or referencing assembly statements are only affecting the static context of the procedure’s body and will not be visible in the calling context or the static context of the definition of an object called within (e.g., the script or another procedure).  
   
-  The procedure’s own static context is not affected by the calling environment’s static context. E.g., a [USE DATABASE](use-database-u-sql.md)  statement or a variable declaration in the script that is calling the procedure is not affecting the procedure’s default static database context and is not visible inside the procedure body**.**  
+The procedure’s own static context is not affected by the calling environment’s static context. E.g., a [USE DATABASE](use-database-u-sql.md)  statement or a variable declaration in the script that is calling the procedure is not affecting the procedure’s default static database context and is not visible inside the procedure body**.**  
   
-  Assemblies referenced in a procedure body will however be visible in the calling environment’s dynamic context at runtime and will be visible in any of the called contexts and the procedure’s own dynamic context. In addition, the procedure’s dynamic context will inherit the loaded assemblies from the calling environment.  
+Assemblies referenced in a procedure body will however be visible in the calling environment’s dynamic context at runtime and will be visible in any of the called contexts and the procedure’s own dynamic context. In addition, the procedure’s dynamic context will inherit the loaded assemblies from the calling environment.  
   
-  Deploying a resource inside a procedure will become visible to the whole script at runtime, similar to referencing an assembly and any resources deployed by the calling environment will be visible in the procedure’s dynamic context.  
+Deploying a resource inside a procedure will become visible to the whole script at runtime, similar to referencing an assembly and any resources deployed by the calling environment will be visible in the procedure’s dynamic context.  
  
   
 ### Examples

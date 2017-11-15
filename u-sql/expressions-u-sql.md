@@ -21,11 +21,11 @@ While some U-SQL statements allow arbitrary expressions, others may restrict exp
    
 The following sections provide the grammar and discussion of some of the more frequently encountered types of expressions. For more details about their use and restrictions in specific statements, please refer to the section on that statement.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Static_String_Expression :=                                                                              
     csharp_string_literal   
 |   constant_foldable_string_expression   
-|   String_Variable.  
+|   String_Variable.
 </pre></td></tr></table>
   
  

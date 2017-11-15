@@ -19,9 +19,9 @@ The FIRST_VALUE analytic function returns the first value in an ordered set of v
 
 FIRST_VALUE can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 FIRST_VALUE_Expression :=                                                                                
-      'FIRST_VALUE' '(' <a href="#exp">expression</a> ')'.  
+    'FIRST_VALUE' '(' <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

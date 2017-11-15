@@ -17,38 +17,36 @@ manager: "jhubbard"
 # U-SQL Scripts
 The main unit of a U-SQL “program” is a U-SQL script. A script consists of a sequence of U-SQL statements.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Script :=                                                                                                
-    <a href="#stmt">Statement_List</a>.  
+     <a href="#stmt">Statement_List</a>.
 </pre></td></tr></table>
-  
-\<!--See Appendix A for an explanation of the language syntax.-->  
-  
+ 
 ### Semantics of Syntax Elements    
 - <a name="stmt"></a>**`Statement_List`**  
   The main body of a script is a sequence of statements:  
   
   <table><th>Syntax</th><tr><td><pre>
-  Statement_List :=                                                                                 
-      { [Statement] ';' }.
-</pre></td></table>
+  Statement_List :=                                                                                   
+       { [Statement] ';' }.
+  </pre></td></table>
   
   Each statement is terminated by a semi-colon (;). Statements can be empty or one of  
 
   <table><th>Syntax</th><tr><td><pre>
-Statement :=                                                                                        
-    <a href="u-sql-metadata-object-naming-and-name-contexts.md">Use_Statement</a>  
-|   <a href="if-else-u-sql.md">If_Else_Statement</a> 
-|   <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
-|   <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
-|   Deploy_Resource_Statement 
-|   <a href="data-definition-language-ddl-statements-u-sql.md">DDL_Statement</a>  
-|   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
-|   <a href="u-sql-procedures.md">Procedure_Call</a>  
-|   <a href="import-package-u-sql.md">Import_Package_Statement</a>  
-|   <a href="data-modification-language-dml-statements-u-sql.md">DML_Statement</a>  
-|   <a href="output-statement-u-sql.md">Output_Statement</a>.  
-</pre></td></table>
+  Statement :=                                                                                        
+       <a href="u-sql-metadata-object-naming-and-name-contexts.md">Use_Statement</a>  
+  |    <a href="if-else-u-sql.md">If_Else_Statement</a> 
+  |    <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
+  |    <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
+  |    Deploy_Resource_Statement 
+  |    <a href="data-definition-language-ddl-statements-u-sql.md">DDL_Statement</a>  
+  |    <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
+  |    <a href="u-sql-procedures.md">Procedure_Call</a>  
+  |    <a href="import-package-u-sql.md">Import_Package_Statement</a>  
+  |    <a href="data-modification-language-dml-statements-u-sql.md">DML_Statement</a>  
+  |    <a href="output-statement-u-sql.md">Output_Statement</a>.
+  </pre></td></table>
   
   For more details on the individual statements follow the links to their definitions.  
   

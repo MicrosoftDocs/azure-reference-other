@@ -17,9 +17,9 @@ manager: "jhubbard"
 # Slash Star Comment (U-SQL)
 Indicates user-provided text. The text between `/*` and `*/` is not evaluated by the query processor.
 
-<table><th>Syntax</th><tr><td><pre>
-Slash_Star_Comment :=                                                                             
-    '/*' <a href="#comment1">text_of_comment</a> '*/'.  
+<table><th align="left">Syntax</th><tr><td><pre>
+Slash_Star_Comment :=                                                                                    
+     '/*' <a href="#comment1">text_of_comment</a> '*/'.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    

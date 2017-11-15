@@ -23,13 +23,13 @@ U-SQL provides the [CREATE ASSEMBLY](create-assembly-u-sql.md) and [DROP ASSEMBL
   
 It also provides the ability to reference assemblies, both user-defined and system defined assemblies with the [REFERENCE ASSEMBLY](reference-assembly-u-sql.md) statement.   
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Assembly_DDL_Statement :=                                                                                
-    <a href="create-assembly-u-sql.md">Create_Assembly_Statement</a>  
-|   <a href="drop-assembly-u-sql.md">Drop_Assembly_Statement</a>.<br />  
+     <a href="create-assembly-u-sql.md">Create_Assembly_Statement</a>  
+|    <a href="drop-assembly-u-sql.md">Drop_Assembly_Statement</a>.<br />
 Reference_Assembly_Statement :=  
-    <a href="reference-assembly-u-sql.md">Reference_User_Assembly_Statement</a>   
-|   <a href="reference-system-assembly-u-sql.md">Reference_System_Assembly_Statement</a>.  
+     <a href="reference-assembly-u-sql.md">Reference_User_Assembly_Statement</a>   
+|    <a href="reference-system-assembly-u-sql.md">Reference_System_Assembly_Statement</a>.
 </pre></td></tr></table>
 
 ### See Also    

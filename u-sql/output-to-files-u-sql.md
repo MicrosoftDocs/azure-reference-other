@@ -15,7 +15,6 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # Output to Files (U-SQL)
-[//]: # 'Output to Files (U-SQL)'  
 Currently U-SQL scripts are executed in batch mode and thus always need to persist their results either in a table or in a file. U-SQL’s [`OUTPUT`](output-statement-u-sql.md) statement writes the specified rowset to the provided file path URI. The file path URI is specified either as a relative or absolute Azure Data Lake Storage file path URI, a Windows Azure Blob Storage file path URI or a simplified path pattern expression.   
   
 * Since file paths are URIs, characters such as spaces need to be _URI-encoded_. For example the file name `a has 3 spaces` has to be written as `a%20has%203%20spaces`.  
@@ -27,27 +26,27 @@ Currently U-SQL scripts are executed in batch mode and thus always need to persi
 A local Azure Data Lake Storage file path (without the URI header) refers to a path in the Azure Data Lake Analytics account’s associated default Data Lake account.  
   
 The following grammar rules shows the syntax for each of the supported paths:  
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Output_File_Path :=                                                                                      
-      <a href="input-files-u-sql.md#defaultaccountpath">Default_Account_Path_URI</a> 
-|     <a href="input-files-u-sql.md#adlpath">ADL_Path_URI</a> 
-|     <a href="input-files-u-sql.md#wasbpath">WASB_Path_URI</a> 
-|     Simple_File_Set_Path.  
-</pre></td></table> 
+     <a href="input-files-u-sql.md#defaultaccountpath">Default_Account_Path_URI</a> 
+|    <a href="input-files-u-sql.md#adlpath">ADL_Path_URI</a> 
+|    <a href="input-files-u-sql.md#wasbpath">WASB_Path_URI</a> 
+|    Simple_File_Set_Path.
+</pre></td></table>
   
 The grammar rules `Default_Account_Path_URI`, `ADL_Path_URI` and `WASB_Path_URI` are specified in [Input Files (U-SQL)](input-files-u-sql.md).   
   
 ### Output File Sets  
 Unlike the input file paths, the output file path only supports a simplified file set path that can contain a single unnamed wildcard. The grammar rule `Simple_File_Set_Path` is defined as:  
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Simple_File_Set_Path :=                                                                                  
-     [ADL_Header | WebHDFS_Header | WASB_Header]+Simple_FileSet_Pattern.<br />  
+     [ADL_Header | WebHDFS_Header | WASB_Header]+Simple_FileSet_Pattern.<br />
 Simple_FileSet_Pattern := 
-     '/'+{directory_name +'/'}+ file_name | Simple_File_Name_Pattern.<br />  
+     '/'+{directory_name +'/'}+ file_name | Simple_File_Name_Pattern.<br />
 Simple_File_Name_Pattern := 
-     [{character}] Wildcard_Pattern [{character}].<br />  
+     [{character}] Wildcard_Pattern [{character}].<br />
 Wildcard_Pattern := 
-     '{*}'.                                                                     
+     '{*}'.
 </pre></td></table>
 
 If a `Simple_File_Set_Path` is specified in an [OUTPUT](output-statement-u-sql.md)    statement, the statement will create as many files as there were processing nodes that were processing the output rowset. Each file name will contain the node’s id in place of the `Wildcard_Pattern`.  

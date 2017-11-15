@@ -21,9 +21,9 @@ CUME_DIST is similar to the [PERCENT_RANK](percent-rank-u-sql.md) function.
 
 CUME_DIST can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 CUME_DIST_Expression :=                                                                                  
-      'CUME_DIST' '(' ')'.  
+    'CUME_DIST' '(' ')'.
 </pre></td></tr></table>
 
 ### Return Type 

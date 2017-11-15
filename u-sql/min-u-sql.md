@@ -19,9 +19,9 @@ The MIN aggregator choses the smallest value in the group or null if the express
 
 The identity value is null. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 MIN_Expression :=                                                                                        
-      'MIN' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.  
+     'MIN' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

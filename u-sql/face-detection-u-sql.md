@@ -24,25 +24,25 @@ Cognitive face detection functions detect one or more human faces in an image an
 > Use an Extractor rather than an Applier when you have images larger than 4 MB.
 
 ## FaceDetectionApplier
-<table><th>Arguments</th><tr><td><pre>
+<table><th align="left">Arguments</th><tr><td><pre>
 FaceDetectionApplier(                                                                                    
     string imgCol     = "ImgData", 
     string numCol     = "NumFaces", 
     string indexCol   = "FaceIndex", 
     string ageCol     = "FaceAge", 
-    string genderCol  = "FaceGender") 
+    string genderCol  = "FaceGender")
 </pre></td></tr></table>
 
 `FaceDetectionApplier` is applied to each image in the byte array column with the default name `ImgData` and it generates one row per face detected in the file. It returns the number of detected faces in the image (column `NumFaces` of type int), the current index of the face from all the faces recognized in the image for the returned row (column `FaceIndex` of type int) and its face rectangle (columns `RectX`, `RectY`, `Width`, `Height` of type float) along with the estimated age (column `FaceAge` of type int) and gender (column `FaceGender` of type string) for the current face.
  
 
 ## FaceDetectionExtractor
-<table><th>Arguments</th><tr><td><pre>
+<table><th align="left">Arguments</th><tr><td><pre>
 FaceDetectionExtractor(                                                                                  
     string numCol     = "NumFaces", 
     string indexCol   = "FaceIndex", 
     string ageCol     = "FaceAge", 
-    string genderCol  = "FaceGender") 
+    string genderCol  = "FaceGender")
 </pre></td></tr></table>
 
 `FaceDetectionExtractor` is applied to each image and it generates one row per face detected in the file. It returns the number of detected faces in the image (column `NumFaces` of type int), the current index of the face from all the faces recognized in the image for the returned row (column `FaceIndex` of type int) and its face rectangle (columns `RectX`, `RectY`, `Width`, `Height` of type float) along with the estimated age (column `FaceAge` of type int) and gender (column `FaceGender` of type string) for the current face.

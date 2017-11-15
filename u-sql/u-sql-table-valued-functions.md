@@ -20,10 +20,10 @@ U-SQL provides the ability to wrap a sequence of [query statements](query-statem
 ### Table-Valued Function DDL Statements    
 The following statements manage the functions:
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 TV_Function_DDL_Statement :=                                                                             
-        <a href="create-function-u-sql-table-valued-function.md">Create_TV_Function_Statement</a>   
-|       <a href="drop-function-u-sql.md">Drop_TV_Function_Statement</a>  
+     <a href="create-function-u-sql-table-valued-function.md">Create_TV_Function_Statement</a>
+|    <a href="drop-function-u-sql.md">Drop_TV_Function_Statement</a>
 </pre></td></tr></table>
 
 Please follow the links for more details on using table-valued functions.   

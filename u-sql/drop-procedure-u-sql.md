@@ -20,9 +20,9 @@ The `DROP PROCEDURE` statement drops the specified procedure.
 > [!WARNING]
 > **This operation cannot be undone!**
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Proc_Statement :=                                                                                   
-    'DROP' 'PROCEDURE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.  
+    'DROP' 'PROCEDURE' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.
 </pre></td></tr></table>
  
 ### Semantics of Syntax Elements    

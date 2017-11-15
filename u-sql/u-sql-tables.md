@@ -44,13 +44,13 @@ Currently U-SQL offers external tables over data stored in Azure SQL Databases, 
 ### Table DDL Statements    
 Besides creating and dropping tables, U-SQL also provides the ability to add or drop partition buckets and to truncate the table content on managed tables without affecting the table schema:  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Table_DDL_Statement :=                                                                                   
-      <a href="create-table-u-sql-overview.md">Create_Table_Statement</a>  
-|     <a href="alter-table-u-sql.md">Alter_Table</a>    
-|     <a href="alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md">Alter_Table_AddDrop_Partition_Statement</a>  
-|     <a href="truncate-table-u-sql.md">Truncate_Table_Statement</a>  
-|     <a href="drop-table-u-sql.md">Drop_Table_Statement</a>.  
+     <a href="create-table-u-sql-overview.md">Create_Table_Statement</a>  
+|    <a href="alter-table-u-sql.md">Alter_Table</a>    
+|    <a href="alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md">Alter_Table_AddDrop_Partition_Statement</a>  
+|    <a href="truncate-table-u-sql.md">Truncate_Table_Statement</a>
+|    <a href="drop-table-u-sql.md">Drop_Table_Statement</a>.
 </pre></td></tr></table>
   
 ### See Also  

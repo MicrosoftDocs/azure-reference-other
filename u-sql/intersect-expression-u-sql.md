@@ -17,17 +17,15 @@ manager: "jhubbard"
 # INTERSECT Expression (U-SQL)
 INTERSECT returns rows that are in common by both the left and right input query expressions either by matching positionally or – if specified – by column names.
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Intersect_Expression :=                                                                                  
-    <a href="#qry_exp">Query_Expression</a> 'INTERSECT' [<a href="#SOO">Set_Operator_Option</a>] [<a href="#ByName">By_Name</a>]
-    <a href="#qry_exp">Query_Expression</a>.
-<br />  
+     <a href="#qry_exp">Query_Expression</a> 'INTERSECT' [<a href="#SOO">Set_Operator_Option</a>] [<a href="#ByName">By_Name</a>]
+     <a href="#qry_exp">Query_Expression</a>.<br />  
 <a href="#SOO">Set_Operator_Option</a> :=
-    '<a href="#dist">DISTINCT</a>'  
-|   '<a href="#ALL">ALL</a>'.  
-<br />  
+     '<a href="#dist">DISTINCT</a>'  
+|    '<a href="#ALL">ALL</a>'.<br />  
 <a href="#ByName">By_Name</a> :=
-    'BY' 'NAME' ['ON' '(' (Identifier_List [',' '*'] | '*') ')'.
+     'BY' 'NAME' ['ON' '(' (Identifier_List [',' '*'] | '*') ')'.
 </pre></td></tr></table>
 
   
@@ -39,23 +37,23 @@ Intersect_Expression :=
   
     If the number of columns do not match, an error is raised. If the columns are out of order, an error may be raised if the column data types are incompatible. Otherwise an unexpected result may be returned. If the column data types of the two query expressions are incompatible, an error is raised. 
          
-    > [!NOTE]
-    > The column names do not have to be the same between the two rowsets. The column names of the first rowset is chosen for the result.
+  > [!NOTE]
+  > The column names do not have to be the same between the two rowsets. The column names of the first rowset is chosen for the result.
   
--   <a name="SOO"></a>**`Set_Operator_Option`**    
-    The optional set operator option indicates the handling of duplicate result rows:  
+- <a name="SOO"></a>**`Set_Operator_Option`**    
+  The optional set operator option indicates the handling of duplicate result rows:  
   
 - <a name="dist"></a>**`DISTINCT`**   
   Removes duplicate rows from the result (default if the option is left away).  
   
 - <a name="ALL"></a>**`ALL`**  
-Preserves duplicate rows in the result.  
+  Preserves duplicate rows in the result.  
   
-    > [!TIP]
-    > Unless duplicate elimination is required, specifying ALL leads to more efficient execution.
+  > [!TIP]
+  > Unless duplicate elimination is required, specifying ALL leads to more efficient execution.
     
 - <a name="ByName"></a>**`By_Name`**  
-The optional `BY NAME` clause indicates that the intersection is matching up values not based on position but by name of the columns. If the `BY NAME` clause is not specified, the matching is done positionally.
+  The optional `BY NAME` clause indicates that the intersection is matching up values not based on position but by name of the columns. If the `BY NAME` clause is not specified, the matching is done positionally.
 
   If there is no `ON` clause, the counts of columns on the two sides must be the same and all columns on the left side must have matching columns with the same name on the right side. The schema of the result is the same as the schema of the left argument, i.e., the left argument determines the name and order of the output columns.
 

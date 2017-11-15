@@ -18,9 +18,9 @@ manager: "jhubbard"
 U-SQL’s tight integration with C#’s expression language normally makes calls to C# expression seamless. On rare occasions it may be useful to be able to guard a C# expression from getting interpreted by U-SQL, such as when a new version of C# may introduce a syntax that conflicts with an established U-SQL syntax or when the C# expression needs to turn off U-SQL name binding or U-SQL reserved keywords in the expression. 
 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 CSHARP_Expression :=                                                                                     
-    'CSHARP' '(' <a href="#exp">expression</a> ')'.  
+    'CSHARP' '(' <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

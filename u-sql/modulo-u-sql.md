@@ -17,9 +17,9 @@ manager: "jhubbard"
 # % (Modulo) (U-SQL)
 Returns the remainder of one number divided by another.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Modulo_Operator :=                                                                                       
-    <a href="#dividend">dividend </a> '%' <a href="#divisor">divisor</a>.
+     <a href="#dividend">dividend </a> '%' <a href="#divisor">divisor</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    

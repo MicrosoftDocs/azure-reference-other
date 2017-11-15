@@ -19,13 +19,13 @@ The `IMPORT PACKAGE` statement will import all the [assembly references](u-sql-a
 
 If conflicting assemblies or references are being referenced, imported or deployed, errors are raised once a package gets imported in the main U-SQL script.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Import_Package_Statement :=                                                                              
-	'IMPORT' 'PACKAGE' Global_Identifier ['(' [Argument_List] ')'] [Package_Alias].<br />
+    'IMPORT' 'PACKAGE' Global_Identifier ['(' [Argument_List] ')'] [Package_Alias].<br />
 Package_Alias :=
-	'AS' Package_Name_Alias.<br />
+    'AS' Package_Name_Alias.<br />
 Package_Name_Alias := 
-	<a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
 
 The optional package alias must be used when referring to variables imported from the given package.

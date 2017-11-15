@@ -25,13 +25,12 @@ U-SQL allows selecting from an external data source in three ways:
   
 In all cases, the query will be executed based on the chosen query remoting option [REMOTEABLE_TYPES](create-data-source-u-sql.md#rmv_typ) in the data source definition. If the definition allows an expression on a specific type to be remoted, and U-SQL knows how to translate it into a remote query expression, then parts of the U-SQL SELECT statement will be sent to the external data source’s query engine for execution.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 External_Rowset_Expression :=                                                                            
-    'EXTERNAL' <a href="#dsi">Datasource_Identifier</a> <a href="#l_csl">'LOCATION' csharp_string_literal</a>   
-|   'EXTERNAL' <a href="#dsi">Datasource_Identifier</a> <a href="#E_csl">'EXECUTE' csharp_string_literal</a>.
-<br />
+     'EXTERNAL' <a href="#dsi">Datasource_Identifier</a> <a href="#l_csl">'LOCATION' csharp_string_literal</a>   
+|    'EXTERNAL' <a href="#dsi">Datasource_Identifier</a> <a href="#E_csl">'EXECUTE' csharp_string_literal</a>.<br />
 <a href="#dsi">Datasource_Identifier</a> := 
-      <a href="u-sql-identifiers.md">DB_Object_Identifier</a>.  
+     <a href="u-sql-identifiers.md">DB_Object_Identifier</a>.
 </pre></td></tr></table>
 
 ### Semantics of the Syntax Elements    

@@ -20,12 +20,11 @@ The statement drops the database and deletes all the data contained within from 
 > [!WARNING]
 > **This operation cannot be undone!**
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Database_Statement :=                                                                               
-    'DROP' 'DATABASE' [<a href="#iff_e">'IF' 'EXISTS'</a>] <a href="#DB_Name">DB_Name</a>.
-<br />
+    'DROP' 'DATABASE' [<a href="#iff_e">'IF' 'EXISTS'</a>] <a href="#DB_Name">DB_Name</a>.<br />
 <a href="#DB_Name">DB_Name</a> :=  
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements  

@@ -23,10 +23,10 @@ For example, PERCENTILE_DISC(0.5) will compute the 50th percentile (that is, the
 
 PERCENTILE_DISC can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 PERCENTILE_DISC_Expression :=                                                                            
-      'PERCENTILE_DISC' '(' <a href="#dbl_lit">double_literal</a> ')'  
-      '<a href="#wg_soc">WITHIN' 'GROUP' '(' Simple_Order_By_Clause ')</a>'. 
+     'PERCENTILE_DISC' '(' <a href="#dbl_lit">double_literal</a> ')'  
+     '<a href="#wg_soc">WITHIN' 'GROUP' '(' Simple_Order_By_Clause ')</a>'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 
@@ -34,16 +34,16 @@ PERCENTILE_DISC_Expression :=
 The percentile to compute. The value must range between 0.0 and 1.0 and be of type [double](numeric-types-and-literals.md). 
 
 * <a name="wg_soc"></a>**`WITHIN GROUP ( Simple_Order_By_Clause )`**   
-Specifies a list of numeric values to sort and compute the percentile over.  
+  Specifies a list of numeric values to sort and compute the percentile over.  
 
   <table><th>Syntax</th><tr><td><pre>
-Simple_Order_By_Clause :=                                                                           
-      'ORDER' 'BY' Sort_Item_Expression.<br />
-Sort_Item_Expression :=     
-      expression [Sort_Direction].<br /> 
-Sort_Direction :=                                                               
-      'ASC' | 'DESC'. 
-</pre></td></tr></table>
+  Simple_Order_By_Clause :=                                                                           
+       'ORDER' 'BY' Sort_Item_Expression.<br />
+  Sort_Item_Expression :=     
+       expression [Sort_Direction].<br />
+  Sort_Direction :=
+       'ASC' | 'DESC'.
+  </pre></td></tr></table>
 
   Only one [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) expression is allowed. The type of the expression has to be comparable. The default sort order is ascending. 
 

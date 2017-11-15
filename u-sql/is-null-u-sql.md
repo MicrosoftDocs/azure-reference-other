@@ -18,18 +18,17 @@ manager: "jhubbard"
 Determines whether a specified expression is NULL.  If the value of expression is NULL, IS NULL returns TRUE; otherwise, it returns FALSE.
 If the value of expression is NULL, IS NOT NULL returns FALSE; otherwise, it returns TRUE.
 
-<table><th>Syntax</th><tr><td><pre>
-Is_Null_Predicate :=                                                                             
-    <a href="#str_exp">string_expression</a> 'IS' ['<a href="#not">NOT</a>'] 'NULL'.
+<table><th align="left">Syntax</th><tr><td><pre>
+Is_Null_Predicate :=                                                                                     
+     <a href="#str_exp">string_expression</a> 'IS' ['<a href="#not">NOT</a>'] 'NULL'.
 </pre></td></tr></table>
-
   
 ### Semantics of Syntax Elements    
--   <a name="str_exp"></a>**`string_expression`**  
-    is the expression that creates the string value to be tested.
+- <a name="str_exp"></a>**`string_expression`**  
+  is the expression that creates the string value to be tested.
 
--   <a name="not"></a>**`NOT`**  
-specifies that the Boolean result be negated. The predicate reverses its return values, returning TRUE if the value is not NULL, and FALSE if the value is NULL.
+- <a name="not"></a>**`NOT`**  
+  specifies that the Boolean result be negated. The predicate reverses its return values, returning TRUE if the value is not NULL, and FALSE if the value is NULL.
 
 ### Return Type
 [bool](other-simple-built-in-types-and-literals.md)

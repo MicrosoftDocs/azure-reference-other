@@ -21,13 +21,13 @@ MAP_AGG and [EXPLODE](explode-u-sql.md) are conceptually inverse operations.
 
 The identity value is null. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 MAP_AGG_Expression :=                                                                                    
-      'MAP_AGG' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#k_exp">Key_Expression</a>, <a href="#v_exp">Value_Expression</a> ')'.<br /><br />  
+     'MAP_AGG' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#k_exp">Key_Expression</a>, <a href="#v_exp">Value_Expression</a> ')'.<br /> 
 <a href="#k_exp">Key_Expression</a> := 
-      expression.<br /><br />
+     expression.<br />
 <a href="#v_exp">Value_Expression</a> := 
-      expression. 
+     expression.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

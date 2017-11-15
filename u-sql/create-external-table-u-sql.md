@@ -17,10 +17,10 @@ manager: "jhubbard"
 # CREATE EXTERNAL TABLE (U-SQL)
 U-SQL provides the ability to create external tables over data that is not owned by the U-SQL metadata object itself. Currently external tables are offered over data stored in Azure SQL Databases and are created with the CREATE EXTERNAL TABLE statement.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_External_Table_Statement :=                                                                       
     'CREATE' 'EXTERNAL' 'TABLE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#ident">Identifier</a>   
-    '(' <a href="#col_def">Column_Definition_List</a> ')' <a href="#table_external_spec">Table_External_Specification</a>.  
+    '(' <a href="#col_def">Column_Definition_List</a> ')' <a href="#table_external_spec">Table_External_Specification</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements  
@@ -35,40 +35,40 @@ This statement creates a new external table with the specified name given by [Id
 If the optional `IF NOT EXISTS` is specified, then the statement creates the table if it does not already exist, or succeeds without changes if the table already exists and the user has permission to at least enumerate all existing tables.  
       
 - <a name="col_def"></a>**`Column_Definition_List`**   
-Defines the table schema as follows:  
+  Defines the table schema as follows:  
   <table><th>Syntax</th><tr><td><pre>
-Column_Definition_List :=                                                                           
-    Column_Definition { ',' Column_Definition }. 
-</pre></td></tr></table>
+  Column_Definition_List :=                                                                           
+      Column_Definition { ',' Column_Definition }.
+  </pre></td></tr></table>
     
   - **`Column_Definition`**  
-A column definition is of the form  
+    A column definition is of the form  
     <table><th>Syntax</th><tr><td><pre>
-Column_Definition :=                                                            
-<a></a>     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.                                              <a></a>
-     </pre></td></tr></table>
+    Column_Definition :=                                                                           
+        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
+    </pre></td></tr></table>
  
     Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](built-in-u-sql-types.md). Each column identifier has to match to one of the column identifiers in the external table and the external columns data type (e.g., the SQL type in the Azure SQL database) will be mapped to the specified U-SQL type. If the mapping is not supported, an error is raised.  
 
 - <a name="table_external_spec"></a>**`Table_External_Specification`**  
-   The external location where the data is managed is referenced with the following specification:
+  The external location where the data is managed is referenced with the following specification:
 
   <table><th>Syntax</th><tr><td><pre>
-Table_External_Specification :=                                                                     
-    'FROM' Datasource_Identifier 'LOCATION' <a href="expressions-u-sql.md">Static_String_Expression</a>.<br /> 
-Datasource_Identifier :=                                                        
-    <a href="u-sql-identifiers.md">DB_Object_Identifier</a>.  
-</pre></td></tr></table>
+  Table_External_Specification :=                                                                     
+      'FROM' Datasource_Identifier 'LOCATION' <a href="expressions-u-sql.md">Static_String_Expression</a>.<br /> 
+  Datasource_Identifier :=                                                        
+      <a href="u-sql-identifiers.md">DB_Object_Identifier</a>.
+  </pre></td></tr></table>
  
-   The data source identifier is the name of the data source that has been created with the [CREATE DATA SOURCE](create-data-source-u-sql.md) statement. The static string expression provided as the location determines the actual rowset resource in the external data source that is being mapped to the U-SQL external table.  
+  The data source identifier is the name of the data source that has been created with the [CREATE DATA SOURCE](create-data-source-u-sql.md) statement. The static string expression provided as the location determines the actual rowset resource in the external data source that is being mapped to the U-SQL external table.  
   
-   If the data source is a SQL database, then the location is the schema-qualified name of a table or view in the SQL database. Its schema is mapped to the external table’s schema in the following way:   
-   - Any name in the column definition is mapped to the same name in the external table. If the external table’s naming is case-sensitive then the names have to exactly match, if the naming is case-insensitive, then the names are matched case-insensitively.   
-   - Any matched column has to have a U-SQL type in the column definition that is compatible with the external table’s column’s type, or an error is raised.  
-   - If a column is specified in the column definition that does not exist in the external table an error is raised.  
-   - If the external table has a column that is not specified in the column definition, then that column is not accessible via the external table.  
+  If the data source is a SQL database, then the location is the schema-qualified name of a table or view in the SQL database. Its schema is mapped to the external table’s schema in the following way:   
+  - Any name in the column definition is mapped to the same name in the external table. If the external table’s naming is case-sensitive then the names have to exactly match, if the naming is case-insensitive, then the names are matched case-insensitively.   
+  - Any matched column has to have a U-SQL type in the column definition that is compatible with the external table’s column’s type, or an error is raised.  
+  - If a column is specified in the column definition that does not exist in the external table an error is raised.  
+  - If the external table has a column that is not specified in the column definition, then that column is not accessible via the external table.  
   
-   An error is raised if the remote data source cannot be accessed, e.g., because the data source has disappeared, closed the firewall, or the credentials to access the remote data source have changed.  
+  An error is raised if the remote data source cannot be accessed, e.g., because the data source has disappeared, closed the firewall, or the credentials to access the remote data source have changed.  
   
 ### Example
 This example continues with the Data Source created from the example at [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md).

@@ -17,10 +17,10 @@ manager: "jhubbard"
 # FILE.EXISTS (U-SQL)
 Checks if a file in the specified location exists at compile time.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 <a href="other-simple-built-in-types-and-literals.md">bool</a> EXISTS(
     <a href="textual-types-and-literals.md">string</a> <a href="#path">path</a>
-).                                                                                 
+).                                                                                                       
 </pre></td></tr></table>
 
 ### Parameters

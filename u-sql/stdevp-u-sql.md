@@ -19,9 +19,9 @@ The STDEVP aggregator returns the statistical standard deviation for the populat
 
 The identity value is null. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 STDEVP_Expression :=                                                                                     
-      'STDEVP' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.  
+     'STDEVP' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

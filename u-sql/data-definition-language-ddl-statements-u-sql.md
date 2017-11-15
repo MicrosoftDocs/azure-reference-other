@@ -35,20 +35,20 @@ All metadata objects except credentials are being created and managed with the f
   
 ### DDL Statements (U-SQL)  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 DDL_Statement :=                                                                                         
-      <a href="u-sql-databases.md">DB_DDL_Statement</a>  
-|     <a href="u-sql-database-schemas.md">Schema_DDL_Statement</a>  
-|     <a href="u-sql-tables.md">Table_DDL_Statement</a>  
-|     <a href="u-sql-indexes.md">Index_DDL_Statement</a>  
-|     <a href="u-sql-statistics.md">Statistics_DDL_Statement</a>  
-|     <a href="u-sql-views.md">View_DDL_Statement</a>  
-|     <a href="u-sql-functions.md">Function_DDL_Statement</a> 
-|     <a href="u-sql-packages.md">Package_DDL_Statement</a>   
-|     <a href="u-sql-procedures.md">Procedure_DDL_Statement</a>  
-|     <a href="u-sql-assemblies.md">Assembly_DDL_Statement</a>  
-|     <a href="u-sql-data-sources.md">Datasource_DDL_Statement</a>  
-|     <a href="user-defined-u-sql-types.md">Type_DDL_Statement</a>.  
+    <a href="u-sql-databases.md">DB_DDL_Statement</a>  
+|   <a href="u-sql-database-schemas.md">Schema_DDL_Statement</a>  
+|   <a href="u-sql-tables.md">Table_DDL_Statement</a>  
+|   <a href="u-sql-indexes.md">Index_DDL_Statement</a>  
+|   <a href="u-sql-statistics.md">Statistics_DDL_Statement</a>  
+|   <a href="u-sql-views.md">View_DDL_Statement</a>  
+|   <a href="u-sql-functions.md">Function_DDL_Statement</a> 
+|   <a href="u-sql-packages.md">Package_DDL_Statement</a>   
+|   <a href="u-sql-procedures.md">Procedure_DDL_Statement</a>  
+|   <a href="u-sql-assemblies.md">Assembly_DDL_Statement</a>  
+|   <a href="u-sql-data-sources.md">Datasource_DDL_Statement</a>  
+|   <a href="user-defined-u-sql-types.md">Type_DDL_Statement</a>.
 </pre></td></tr></table>
  
  Credentials have to be created and managed with the credential management commandlets in the latest Azure Powershell.

@@ -19,9 +19,9 @@ The LAST_VALUE analytic function returns the last value in an ordered set of val
 
 LAST_VALUE can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 LAST_VALUE_Expression :=                                                                                 
-      'LAST_VALUE' '(' <a href="#exp">expression</a> ')'.  
+     'LAST_VALUE' '(' <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 

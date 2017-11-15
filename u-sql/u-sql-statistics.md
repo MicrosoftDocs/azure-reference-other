@@ -20,11 +20,11 @@ In order to provide more information to the query optimizer about the data chara
 ### Statistics DDL Statements
 The following statements are supported:  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Statistics_DDL_Statement :=                                                                              
-        <a href="create-statistics-u-sql.md">Create_Statistics_Statement</a>  
-|       <a href="update-statistics-u-sql.md">Update_Statistics_Statement</a>  
-|       <a href="drop-statistics-u-sql.md">Drop_Statistics_Statement</a>.  
+     <a href="create-statistics-u-sql.md">Create_Statistics_Statement</a>  
+|    <a href="update-statistics-u-sql.md">Update_Statistics_Statement</a>  
+|    <a href="drop-statistics-u-sql.md">Drop_Statistics_Statement</a>.  
 </pre></td></tr></table>
   
 ### See Also

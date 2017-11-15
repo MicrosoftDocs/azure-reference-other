@@ -19,9 +19,9 @@ U-SQL’s logical NOT operator performs a negation of the Boolean expression and
 
 When more than one logical operator is used in an expression, NOT operators bind stronger than [AND](and-u-sql.md) and [OR](or-u-sql.md). Parentheses can be used to change the binding precedence. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 NOT_Expression :=                                                                                        
-    'NOT' <a href="#bn_exp">Boolean_Expression</a>.  
+     'NOT' <a href="#bn_exp">Boolean_Expression</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

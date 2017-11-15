@@ -22,10 +22,10 @@ Cognitive image tagging functions return information about visual content found 
 > [!IMPORTANT]
 > Use an Extractor rather than a Processor when you have images larger than 4 MB.
 
-<table><th>Arguments</th><tr><td><pre>
+<table><th align="left">Arguments</th><tr><td><pre>
 ImageTagger | ImageTagsExtractor(                                                                        
-      string numCol = "NumObjects", 
-      string tagCol = "Tags")  
+    string numCol = "NumObjects", 
+    string tagCol = "Tags")
 </pre></td></tr></table>
 
 `ImageTagger` and `ImageTagsExtractor` will operate on a JPEG file and return a rowset with two columns called `NumObjects` of type int that provides the number of detected objects in the image and `Tags` that returns a SQL.MAP\<string, float?> instance which contains the set of object tags as keys with a floating point value indicating the confidence of each of the tags as values.

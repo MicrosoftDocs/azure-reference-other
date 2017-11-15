@@ -22,13 +22,12 @@ In order to query these external data sources, a data source object has to be cr
 ### Data Source DDL Statements    
 The following are the DDL statements that allow to manage data sources:
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Datasource_DDL_Statement :=                                                                              
-       <a href="create-data-source-u-sql.md">Create_Datasource_Statement</a> 
-|      <a href="alter-data-source-u-sql.md">Alter_Datasource_Statement</a>  
-|      <a href="drop-data-source-u-sql.md">Drop_Datasource_Statement</a>.  
+     <a href="create-data-source-u-sql.md">Create_Datasource_Statement</a>
+|    <a href="alter-data-source-u-sql.md">Alter_Datasource_Statement</a>
+|    <a href="drop-data-source-u-sql.md">Drop_Datasource_Statement</a>.
 </pre></td></tr></table>
-
 
 ### See Also
 * [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md)  

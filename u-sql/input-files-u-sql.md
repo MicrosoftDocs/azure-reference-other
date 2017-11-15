@@ -28,115 +28,115 @@ The input file path URIs (Universal Resource Identifier) can be specified as a s
  
 * A file path can also be specified as a local file path.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Input_File_Path :=                                                                                       
-        <a href="#singlefilepath">Single_File_Path</a> 
-|       <a href="#listfilepath">List_File_Path</a> 
-|       <a href="#inputfilesetpath">File_Set_Path</a>.  
-</pre></td></table>  
+     <a href="#singlefilepath">Single_File_Path</a> 
+|    <a href="#listfilepath">List_File_Path</a> 
+|    <a href="#inputfilesetpath">File_Set_Path</a>.
+</pre></td></table>
  
 ### <a name="singlefilepath"></a>`Single_File_Path`  
 A single file path URI can be a relative or absolute Azure Data Lake Storage URI, or a Windows Azure Blob Storage URI:
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Single_File_Path :=                                                                                      
-        <a href="#defaultaccountpath">Default_Account_Path_URI</a> 
-|       <a href="#adlpath">ADL_Path_URI</a> 
-|       <a href="#wasbpath">WASB_Path_URI</a>.  
-</pre></td></table>  
+     <a href="#defaultaccountpath">Default_Account_Path_URI</a> 
+|    <a href="#adlpath">ADL_Path_URI</a> 
+|    <a href="#wasbpath">WASB_Path_URI</a>.
+</pre></td></table>
  
 The following sections show the syntax and semantics for each of the supported paths.  
   
 * <a name="defaultaccountpath"></a>**`Default_Account_Path_URI`**    
-The  Default Account Path URI is a relative Azure Data Lake Storage URI (a path without the URI header). It refers to a path in the Data Lake Analytics account’s associated default Data Lake Storage account.  
+  The  Default Account Path URI is a relative Azure Data Lake Storage URI (a path without the URI header). It refers to a path in the Data Lake Analytics account’s associated default Data Lake Storage account.  
   
-   <table><th>Syntax</th><tr><td><pre>
-Default_Account_Path_URI :=                                                                         
-        ['/']+Relative_Path.<br />
-Relative_Path :=
-        {pathstep+'/'}+file_name.
-</pre></td></table>
+  <table><th>Syntax</th><tr><td><pre>
+  Default_Account_Path_URI :=                                                                         
+       ['/']+Relative_Path.<br />
+  Relative_Path :=
+       {pathstep+'/'}+file_name.
+  </pre></td></table>
  
-    > [!NOTE]
-    > The `+` in the grammar indicates that spaces are not allowed between the parts.
+  > [!NOTE]
+  > The `+` in the grammar indicates that spaces are not allowed between the parts.
   
-    ### Example  
-    The URI `"/Samples/Data/searchlog.tsv"` refers to the `searchlog.tsv` file in the directory path `/Samples/Data` inside the default Azure Data Lake Storage account.   
+  ### Example  
+  The URI `"/Samples/Data/searchlog.tsv"` refers to the `searchlog.tsv` file in the directory path `/Samples/Data` inside the default Azure Data Lake Storage account.   
   
 * <a name="adlpath"></a>**`ADL_Path_URI`**  (Azure Data Lake Path URI)  
-You can specify a full URI using either the `webhdfs` or `adl` URI schemes. They both look the same, except for the scheme name. `webhdfs` is supported for compatibility reasons with WebHDFS. It is recommended to use the `adl` URI scheme with U-SQL, since it provides some performance benefits.   
+  You can specify a full URI using either the `webhdfs` or `adl` URI schemes. They both look the same, except for the scheme name. `webhdfs` is supported for compatibility reasons with WebHDFS. It is recommended to use the `adl` URI scheme with U-SQL, since it provides some performance benefits.   
   
-    Both URI schemes use encryption during data retrieval.  
+  Both URI schemes use encryption during data retrieval.  
   
-   <table><th>Syntax</th><tr><td><pre>
-ADL_Path_URI :=                                                                                     
-        ADL_URI | WebHDFS_URI.<br />  
-ADL_URI :=                                                                      
-        ADL_Header +'/'+Relative_Path.<br />   
-ADL_Header := 
-        'adl://'+ADL_Domain.<br />   
-ADL_Domain := 
-        adl_accountname+'.azuredatalake.net'.<br />   
-WebHDFS_URI := 
-        WebHDFS_Header+'/'+Local_Path.<br />   
-WebHDFS_Header := 
-        'swebhdfs://'+ADL_Domain.
-</pre></td></table>
+  <table><th>Syntax</th><tr><td><pre>
+  ADL_Path_URI :=                                                                                     
+       ADL_URI | WebHDFS_URI.<br />  
+  ADL_URI :=                                                                      
+       ADL_Header +'/'+Relative_Path.<br />   
+  ADL_Header := 
+       'adl://'+ADL_Domain.<br />   
+  ADL_Domain := 
+       adl_accountname+'.azuredatalake.net'.<br />   
+  WebHDFS_URI := 
+       WebHDFS_Header+'/'+Local_Path.<br />   
+  WebHDFS_Header := 
+       'swebhdfs://'+ADL_Domain.
+  </pre></td></table>
   
-    > [!NOTE]
-    > The `+` in the grammar indicates that spaces are not allowed between the parts.
+  > [!NOTE]
+  > The `+` in the grammar indicates that spaces are not allowed between the parts.
   
-    ### Example  
-    Both URIs `"webhdfs://myadl.azuredatalake.net/Samples/Data/searchlog.tsv"` and `"adl://myadl.azuredatalake.net/Samples/Data/searchlog.tsv"` refer to the `searchlog.tsv` file in the directory path `/Samples/Data` inside the Azure Data Lake Storage account `myadl`.   
+  ### Example  
+  Both URIs `"webhdfs://myadl.azuredatalake.net/Samples/Data/searchlog.tsv"` and `"adl://myadl.azuredatalake.net/Samples/Data/searchlog.tsv"` refer to the `searchlog.tsv` file in the directory path `/Samples/Data` inside the Azure Data Lake Storage account `myadl`.   
   
   
 * <a name="wasbpath"></a>**`WASB_Path_URI`**  (Windows Azure Blob Storage Path URI)  
-U-SQL can refer to block blobs and append blobs stored in Windows Azure Blob Storage with the `wasb` URI scheme.If a short-form account name is provided, it will default to the `blob.core.windows.net` domain.  
+  U-SQL can refer to block blobs and append blobs stored in Windows Azure Blob Storage with the `wasb` URI scheme.If a short-form account name is provided, it will default to the `blob.core.windows.net` domain.  
   
-    The `wasb` URI scheme uses encryption during data retrieval.  
+  The `wasb` URI scheme uses encryption during data retrieval.  
   
   <table><th>Syntax</th><tr><td><pre>
-WASB_Path :=                                                                                        
-        WASB_Header+Relative_Path.<br />  
-WASB_Header := 
-        'wasb://'+wasb_container+'@'+wasb_accountname+  
-               ['.blob.core.windows.net']+'/'.  
-</pre></td></table>
+  WASB_Path :=                                                                                        
+       WASB_Header+Relative_Path.<br />  
+  WASB_Header := 
+       'wasb://'+wasb_container+'@'+wasb_accountname+  
+           ['.blob.core.windows.net']+'/'.
+  </pre></td></table>
  
-    > [!NOTE]
-    > The `+` in the grammar indicates that spaces are not allowed between the parts.
+  > [!NOTE]
+  > The `+` in the grammar indicates that spaces are not allowed between the parts.
   
-    ### Example  
-    The URI `"wasb://samples@mywasb/Samples/Data/searchlog.tsv"` refers to the `searchlog.tsv` file in the directory path `/Samples/Data` inside the Windows Azure Blob Store account `mywasb`'s `samples` container.   
+  ### Example  
+  The URI `"wasb://samples@mywasb/Samples/Data/searchlog.tsv"` refers to the `searchlog.tsv` file in the directory path `/Samples/Data` inside the Windows Azure Blob Store account `mywasb`'s `samples` container.   
   
 ### <a name="listfilepath"></a>`List_File_Path`  
 Files can be specified in a list that enumerates all the files that are being processed.  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 List_File_Path :=                                                                                        
-        Single_File_Path {',' Single_File_Path}.  
-</pre></td></table> 
+     Single_File_Path {',' Single_File_Path}.
+</pre></td></table>
   
 ### <a name="inputfilesetpath"></a>`File_Set_Path`  
 If the list of files cannot be enumerated or it would be too cumbersome to enumerate them, a file set path can be specified. A file set path is a relative or absolute URI where parts of the folder or file names (but **not** the domain or container names) can be replaced with a file set pattern that is embedded inside curly braces `{}`.  
   
 <table><th>Syntax</th><tr><td><pre>
 File_Set_Path :=                                                                                         
-        [ADL_Header | WebHDFS_Header | WASB_Header]+  
-                 FileSet_Pattern.<br />  
+     [ADL_Header | WebHDFS_Header | WASB_Header]+  
+         FileSet_Pattern.<br />  
 FileSet_Pattern := 
-        '/'+{directory_name | Directory_Name_Pattern +'/'}+  
-                      file_name | File_Name_Pattern.<br />  
+     '/'+{directory_name | Directory_Name_Pattern +'/'}+  
+         file_name | File_Name_Pattern.<br />  
 Directory_Name_Pattern := 
-        (character | Pattern) {character | Pattern}.<br />  
+     (character | Pattern) {character | Pattern}.<br />  
 Pattern := 
-        '{'+((Virtual_Col_Name+[':'+ Date_Pattern ]) | '*')+'}'.<br />  
+     '{'+((Virtual_Col_Name+[':'+ Date_Pattern ]) | '*')+'}'.<br />  
 Date_Pattern := 
-        'yyyy' | 'MM' | 'M' | 'dd' | 'd' | 'HH' | 'H' | 'mm' | 'm' | 'ss' | 's'.<br />  
+     'yyyy' | 'MM' | 'M' | 'dd' | 'd' | 'HH' | 'H' | 'mm' | 'm' | 'ss' | 's'.<br />  
 Virtual_Col_Name := 
-        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />   
+     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />   
 File_Name_Pattern := 
-        (character | Pattern) {character | Pattern}.  
+     (character | Pattern) {character | Pattern}.
 </pre></td></table>
 
 > [!NOTE]

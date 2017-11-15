@@ -30,12 +30,12 @@ Since packages are a meta data object they are subject to the database-level acc
 > [!NOTE]
 > No DDL is allowed inside a package (e.g. CREATE/ALTER/DROP .. etc).
   
-<table><th>Syntax</th><tr><td><pre>
-Package_DDL_Statement :=                                                                                
-    <a href="create-package-u-sql.md">Create_Package_Statement</a>  
-|   <a href="drop-package-u-sql.md">Drop_Package_Statement</a>.<br />  
-Import_Package_Statement :=  
-    <a href="import-package-u-sql.md">Import_Package_Statement</a>.  
+<table><th align="left">Syntax</th><tr><td><pre>
+Package_DDL_Statement :=                                                                                 
+     <a href="create-package-u-sql.md">Create_Package_Statement</a>
+|    <a href="drop-package-u-sql.md">Drop_Package_Statement</a>.<br />
+Import_Package_Statement :=
+     <a href="import-package-u-sql.md">Import_Package_Statement</a>.
 </pre></td></tr></table>
 
 ### See Also    

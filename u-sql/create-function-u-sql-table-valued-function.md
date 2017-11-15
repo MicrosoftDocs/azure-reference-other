@@ -17,12 +17,12 @@ manager: "jhubbard"
 # CREATE FUNCTION (U-SQL): Table-valued Function
 The CREATE FUNCTION statement allows to create a table-valued function (often referred to as TVF).  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_TV_Function_Statement :=                                                                          
-       'CREATE' 'FUNCTION' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#Ident">Identifier</a> <a href="#tvf_sig">TVF_Signature</a>  
-      ['AS'] 'BEGIN'  
-      <a href="#tvf_s_lst">TVF_Statement_List</a>   
-      'END'.  
+    'CREATE' 'FUNCTION' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#Ident">Identifier</a> <a href="#tvf_sig">TVF_Signature</a>  
+    ['AS'] 'BEGIN'  
+    <a href="#tvf_s_lst">TVF_Statement_List</a>   
+    'END'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
@@ -37,69 +37,62 @@ This statement creates the function with the specified identifier and function s
     If the optional `IF NOT EXISTS` is specified, then the statement creates the function if it does not already exist, or succeeds without changes if the function already exists and the user has permission to at least enumerate all existing functions.  
   
 - <a name="tvf_sig"></a>**`TVF_Signature`**     
-The function signature provides the arguments and their types and optional default values and the return type of the function:  
+  The function signature provides the arguments and their types and optional default values and the return type of the function:  
   
   <table><th>Syntax</th><tr><td><pre>
- TVF_Signature :=                                                                                   
-       '(' [Parameter_List] ')' TVF_Returns.<br />
- Parameter_List :=  
-       Parameter {',' Parameter}.  
-</pre></td></table>
+  TVF_Signature :=                                                                                    
+      '(' [Parameter_List] ')' TVF_Returns.<br />
+  Parameter_List :=  
+      Parameter {',' Parameter}.
+  </pre></td></table>
   
   - **`Parameter`**  
-A parameter defines the name of the parameter in form of a variable local to the function body. Its type is either a [built-in U-SQL type](built-in-u-sql-types.md), which optionally can be initialized with a default value, or a named or anonymous table type:
-    <table><th>Syntax</th><tr><td><pre>
-Parameter :=
-<a><a/>     User_Variable ( Type_Name [Default_Parameter_Value]
-<a><a/>                   | Table_Type
-<a><a/>                   | Anonymous_Table_Type).
-<a><a/>
-Default_Parameter_Value :=
-<a><a/>     '=' function_argument_expression.
-<a><a/>
-Table_Type :=
-<a><a/>     Identifier.
-<a><a/>
-Anonymous_Table_Type :=
-<a><a/>     'TABLE' '(' Column_Definition_List ')'.                                                   <a><a/>
-    </pre></td></table>  
-   - **`TVF_Returns`**  
-The return of a TVF is specified by either a single return rowset or a list of return rowsets. Each returned rowset is specified by a rowset variable name and its return type that is either specified as a reference to a registered [U-SQL table type](u-sql-table-types.md) or an anonymous table type.
-
-        <table><th>Syntax</th><tr><td><pre>
-TVF_Returns :=
-<a><a/>     'RETURNS' (Return_Rowset | '(' Return_Rowset_List ')').
-<a><a/>
-Return_Rowset :=
-<a><a/>     Rowset_Variable Return_Table_Type.
-<a><a/>
-Return_Table_Type :=
-<a><a/>     Anonymous_Table_Type | Table_Type.
-<a><a/>
-Return_Rowset_List :=
-<a><a/>     Return_Rowset {',' Return_Rowset}.                                                        <a><a/>
-    </pre></td></table>
+    A parameter defines the name of the parameter in form of a variable local to the function body. Its type is either a [built-in U-SQL type](built-in-u-sql-types.md), which optionally can be initialized with a default value, or a named or anonymous table type:
     
-    > [!TIP]
-    > In a future refresh, table-valued functions will disallow a result variable from having the same name as any of the function's parameters.
+    <table><th>Syntax</th><tr><td><pre>
+    Parameter :=                                                                                   
+        User_Variable ( Type_Name [Default_Parameter_Value]
+                      | Table_Type
+                      | Anonymous_Table_Type).<br />
+    Default_Parameter_Value :=
+        '=' function_argument_expression.<br />
+    Table_Type :=
+        Identifier.<br />
+    Anonymous_Table_Type :=
+        'TABLE' '(' Column_Definition_List ')'.</pre></td></table>
+        
+  - **`TVF_Returns`**  
+    The return of a TVF is specified by either a single return rowset or a list of return rowsets. Each returned rowset is specified by a rowset variable name and its return type that is either specified as a reference to a registered [U-SQL table type](u-sql-table-types.md) or an anonymous table type.
+
+    <table><th>Syntax</th><tr><td><pre>
+    TVF_Returns :=
+        'RETURNS' (Return_Rowset | '(' Return_Rowset_List ')').<br />
+    Return_Rowset :=
+        Rowset_Variable Return_Table_Type.<br />
+    Return_Table_Type :=
+        Anonymous_Table_Type | Table_Type.<br />
+    Return_Rowset_List :=
+        Return_Rowset {',' Return_Rowset}.</pre></td></table>
+    
+  > [!TIP]
+  > In a future refresh, table-valued functions will disallow a result variable from having the same name as any of the function's parameters.
 
 - <a name="tvf_s_lst"></a>**`TVF_Statement_List`**  
-    The resulting values of a TVF are being calculated inside the table-valued function’s body. The function body consists of a sequence of U-SQL query statements. The last statement for a given return rowset variable will be returned as the resulting rowset. If the statement’s inferred type is not the same as the specified return type, a compilation error will be reported.  
+  The resulting values of a TVF are being calculated inside the table-valued function’s body. The function body consists of a sequence of U-SQL query statements. The last statement for a given return rowset variable will be returned as the resulting rowset. If the statement’s inferred type is not the same as the specified return type, a compilation error will be reported.  
 
   <table><th>Syntax</th><tr><td><pre>
-TVF_Statement_List :=                                                                               
+  TVF_Statement_List :=                                                                               
       { [TVF_Statement] ';' }.<br />  
-TVF_Statement :=  
+  TVF_Statement :=  
       TVF_Statement_Body  
       [Optimizer_Hint_Clause].<br />   
-TVF_Statement_Body :=  
+  TVF_Statement_Body :=  
       <a href="use-database-u-sql.md">Use_Statement</a>  
-|     <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
-|     <a href="import-package-u-sql.md">Import_Package_Statement</a> 
-|     <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
-|     Deploy_Resource_Statement  
-|     <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>.   
-</pre></td></table> 
+  |   <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
+  |   <a href="import-package-u-sql.md">Import_Package_Statement</a> 
+  |   <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
+  |   Deploy_Resource_Statement  
+  |   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>.</pre></td></table> 
 
   Please follow the links for more on the general nature of the statements. Note that in order to avoid side-effects that cannot inlined into a query expression, you cannot call [INSERT](insert-u-sql.md) or [OUTPUT](output-statement-u-sql.md) statements or call procedures that may have side-effects.  
   

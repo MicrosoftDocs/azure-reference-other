@@ -17,9 +17,9 @@ manager: "jhubbard"
 # * (Multiply) (U-SQL)
 Multiplies two expressions (an arithmetic multiplication operator). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Multiply_Operator :=                                                                                     
-    <a href="#expr">expression</a> '*' <a href="#expr">expression</a>.
+     <a href="#expr">expression</a> '*' <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
   

@@ -17,7 +17,7 @@ manager: "jhubbard"
 # DECLARE Variables (U-SQL)
 The DECLARE statement initializes a U-SQL variable.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Variable :=                                                                                              
     System_Variable | User_Variable.<br />
 System_Variable := '@@'+Name.<br />

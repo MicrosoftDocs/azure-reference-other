@@ -20,12 +20,11 @@ The statement drops the schema in the current database context and deletes all t
 > [!WARNING]
 > **This operation cannot be undone!**
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_Schema_Statement :=                                                                                 
-    'DROP' 'SCHEMA' [<a href="#if_E">'IF' 'EXISTS'</a>] <a href="#s_name">Schema_Name</a>.
-<br />
+    'DROP' 'SCHEMA' [<a href="#if_E">'IF' 'EXISTS'</a>] <a href="#s_name">Schema_Name</a>.<br />
 <a href="#s_name">Schema_Name</a> :=  
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    

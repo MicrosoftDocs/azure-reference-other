@@ -17,10 +17,10 @@ manager: "jhubbard"
 # USING Keyword
 The `USING` directive is similar to the [C# using Directive](https://msdn.microsoft.com/library/sf0df423.aspx) in that it allows to shorten function, type, extention methods, and UDO path names.
 
-<table><th>Syntax</th><tr><td><pre>
-Using_Directive :=                                                                                
-      'USING' 
-      ( csharp_namespace | Alias '=' csharp_namespace_or_type ['.' class]).
+<table><th align="left">Syntax</th><tr><td><pre>
+Using_Directive :=                                                                                       
+     'USING' 
+     (csharp_namespace | Alias '=' csharp_namespace_or_type ['.' class]).
 </pre></td></tr></table>
 
 The scope of a using directive is limited to the file in which it appears.

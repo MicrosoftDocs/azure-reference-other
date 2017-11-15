@@ -17,20 +17,20 @@ manager: "jhubbard"
 # LIKE, NOT LIKE (U-SQL)
 U-SQL provides the `LIKE` and `NOT LIKE` comparison operators that are [familiar from T-SQL](https://msdn.microsoft.com/library/ms179859.aspx) that checks if a [string](textual-types-and-literals.md) value matches or does not match a simple pattern. The pattern can include regular characters and wildcard characters. During pattern matching, regular characters must exactly match the characters specified in the character [string](textual-types-and-literals.md). However, wildcard characters can be matched with arbitrary fragments of the character [string](textual-types-and-literals.md). Note that the comparison is done with culture invariant [string](textual-types-and-literals.md) comparison using UTF-8 byte-level comparison. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 LIKE_Expression :=                                                                                       
      <a href="#str_exp">string_expression</a> ['<a href="not-u-sql.md">NOT</a>'] 'LIKE' <a href="#patrn">Pattern</a>   
-    [<a href="#esc_c_exp">'ESCAPE' char_expression</a>].<br />
+     [<a href="#esc_c_exp">'ESCAPE' char_expression</a>].<br />
 Pattern := 
-    <a href="#str_exp">string_expression</a>.
+     <a href="#str_exp">string_expression</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    
--   <a name="str_exp"></a>**`string_expression`**  
-    is the expression that creates the string value to be tested.
+- <a name="str_exp"></a>**`string_expression`**  
+  is the expression that creates the string value to be tested.
     
--   <a name="patrn"></a>**`Pattern`**    
-is a string expression that provides the pattern to test against. The pattern in a LIKE can include the following valid wildcard characters.   
+- <a name="patrn"></a>**`Pattern`**    
+  is a string expression that provides the pattern to test against. The pattern in a LIKE can include the following valid wildcard characters.   
    
     | **Wildcard character** | **Description** | **Example** |  
     |---|---|---|  

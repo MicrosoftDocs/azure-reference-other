@@ -19,46 +19,46 @@ You can use the PIVOT and UNPIVOT relational operators to change a rowset  expre
 
 The syntax for PIVOT provides is simpler and more readable than the syntax that may otherwise be specified in a complex series of SELECT statements.
 
-<table><th>Syntax</th><tr><td><pre>
-Pivot_Expression :=                                                                             
-       <a href="#als_row">Aliased_Rowset</a> 'PIVOT' '(' 
-         <a href="#agg_func_call">Aggregate_Function_Call</a> 'FOR' <a href="#col_ident">Column_Identifier</a> 'IN' '(' 
-           expression <a href="#col_alias">Column_Alias</a> {','  expression <a href="#col_alias">Column_Alias</a> }
-         ')'
-       ')'.<br />       
+<table><th align="left">Syntax</th><tr><td><pre>
+Pivot_Expression :=                                                                                      
+     <a href="#als_row">Aliased_Rowset</a> 'PIVOT' '(' 
+       <a href="#agg_func_call">Aggregate_Function_Call</a> 'FOR' <a href="#col_ident">Column_Identifier</a> 'IN' '(' 
+         expression <a href="#col_alias">Column_Alias</a> {','  expression <a href="#col_alias">Column_Alias</a> }
+       ')'
+     ')'.<br />       
 Unpivot_Expression :=
-       <a href="#als_row">Aliased_Rowset</a> 'UNPIVOT' [Null_Handling] '('
-         <a href="#col_ident">Column_Identifier</a> 'FOR' <a href="#col_ident">Column_Identifier</a> 'IN' '(' 
-            <a href="#col_ident">Column_Identifier</a> {',' <a href="#col_ident">Column_Identifier</a> }
-         ')'
-       ')'.<br />
+     <a href="#als_row">Aliased_Rowset</a> 'UNPIVOT' [Null_Handling] '('
+       <a href="#col_ident">Column_Identifier</a> 'FOR' <a href="#col_ident">Column_Identifier</a> 'IN' '(' 
+          <a href="#col_ident">Column_Identifier</a> {',' <a href="#col_ident">Column_Identifier</a> }
+       ')'
+     ')'.<br />
 Null_Handling :=
-<a></a>      ('INCLUDE' | 'EXCLUDE') 'NULLS'.
+     ('INCLUDE' | 'EXCLUDE') 'NULLS'.
 </pre></td></tr></table>
 
 
 ### Semantics of Syntax Elements    
 - <a name="als_row"></a>**`Aliased_Rowset`**    
-Aliased rowsets are rowsets that may or may not need a table alias.
+  Aliased rowsets are rowsets that may or may not need a table alias.
   <table><th>Syntax</th><tr><td><pre>
-Aliased_Rowset :=
-<a></a>         Rowset [Alias]
-|        Rowset_Expression Alias.                                                              <a></a>
-</pre></td></tr></table>
+  Aliased_Rowset :=                                                                                   
+       Rowset [Alias]
+  |    Rowset_Expression Alias.
+  </pre></td></tr></table>
   
   - **`Alias`**  
-The rowset alias gives a name to the rowset that can be used in the remainder of the PIVOT expression to refer to that specific rowset. It can be a [quoted or unquoted identifier](u-sql-identifiers.md):
-        <table><th>Syntax</th><tr><td><pre>
-Alias :=
-<a></a>     'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.                                                  <a></a> 
-        </pre></td></tr></table>
+    The rowset alias gives a name to the rowset that can be used in the remainder of the PIVOT expression to refer to that specific rowset. It can be a [quoted or unquoted identifier](u-sql-identifiers.md):
+    <table><th>Syntax</th><tr><td><pre>
+    Alias :=                                                                                       
+         'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>. 
+    </pre></td></tr></table>
           
   - **`Rowset`**  
-The simplest rowset sources are a rowset variable such as `@rowset` that has been defined in a previous statement of the script and a table that has been created in the account’s catalog:
-    <table><th>Syntax</th><tr><td><pre> 
-Rowset :=
-<a></a>     Rowset_Variable
-|    Identifier.                                                                          <a></a>
+    The simplest rowset sources are a rowset variable such as `@rowset` that has been defined in a previous statement of the script and a table that has been created in the account’s catalog:
+    <table><th>Syntax</th><tr><td><pre>
+    Rowset :=                                                                                      
+         Rowset_Variable
+    |    Identifier.
     </pre></td></tr></table>
  
     A table can be referenced either with its fully 3-part qualified name, within the current database context with a 2-part name, or within the current database and schema context with a single-part name. Optionally, a table alias can be provided for an input rowset variable or table which then can be used in the remainder of the PIVOT expression.  
@@ -66,33 +66,33 @@ Rowset :=
     Providing a rowset alias is optional.  
   
   - **`Rowset_Expression Alias`**  
-U-SQL also provides the ability to query over nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](u-sql-select-selecting-from-a-function-call.md) or querying [external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
+    U-SQL also provides the ability to query over nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](u-sql-select-selecting-from-a-function-call.md) or querying [external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
         
     In these cases, a rowset alias has to be provided and cannot be left out.
-    <table><th>Syntax</th><tr><td><pre> 
-Rowset_Expression :=
-<a></a>     '(' <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> ')'
-|      <a href="u-sql-select-selecting-from-a-function-call.md">Function_Call</a>
-|      <a href="u-sql-select-selecting-from-an-external-rowset.md">External_Rowset_Expression</a>.                                                        <a></a>
+    <table><th>Syntax</th><tr><td><pre>
+    Rowset_Expression :=                                                                           
+         '(' <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> ')'
+    |    <a href="u-sql-select-selecting-from-a-function-call.md">Function_Call</a>
+    |    <a href="u-sql-select-selecting-from-an-external-rowset.md">External_Rowset_Expression</a>.
     </pre></td></tr></table>  
 
--   <a name="agg_func_call"></a>**`Aggregate_Function_Call`**  
+- <a name="agg_func_call"></a>**`Aggregate_Function_Call`**  
 Is a system or user-defined aggregate function that accepts one or more inputs. The aggregate function should be invariant to null values. An aggregate function invariant to null values does not consider null values in the group while it is evaluating the aggregate value.  Note that the Aggregate_Function_Call cannot contain `DISTINCT` aggregations. 
 
--   <a name="col_ident"></a>**`Column_Identifier`**  
-The PIVOT expression can refer to column identifiers either by providing the quoted or unquoted identifier of the column, or by prepending the rowset/table alias or rowset variable name to identify the rowset to which the column belongs.   
-    <table><th>Syntax</th><tr><td><pre>
-Column_Identifier :=
-<a></a>     [(Rowset_Variable | <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>) '.']
-<a></a>     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.                                                  <a></a> 
-    </pre></td></tr></table>
+- <a name="col_ident"></a>**`Column_Identifier`**  
+  The PIVOT expression can refer to column identifiers either by providing the quoted or unquoted identifier of the column, or by prepending the rowset/table alias or rowset variable name to identify the rowset to which the column belongs.   
+  <table><th>Syntax</th><tr><td><pre>
+  Column_Identifier :=                                                                                
+       [(Rowset_Variable | <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>) '.']
+       <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
+  </pre></td></tr></table>
 
--   <a name="col_alias"></a>**`Column_Alias`**  
-The column alias gives a name to the column that can be used in the remainder of the PIVOT expression to refer to that specific column. It can be a [quoted or unquoted identifier](u-sql-identifiers.md):
-        <table><th>Syntax</th><tr><td><pre>
-Column_Alias :=
-<a></a>     'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.                                                  <a></a> 
-        </pre></td></tr></table>
+- <a name="col_alias"></a>**`Column_Alias`**  
+  The column alias gives a name to the column that can be used in the remainder of the PIVOT expression to refer to that specific column. It can be a [quoted or unquoted identifier](u-sql-identifiers.md):
+  <table><th>Syntax</th><tr><td><pre>
+  Column_Alias :=                                                                                     
+       'AS' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
+  </pre></td></tr></table>
     
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  

@@ -18,9 +18,9 @@ manager: "jhubbard"
 Compares the equality of two expressions (a comparison operator).
 U-SQL uses C# null semantics which is 2-valued and not 3-valued as in ANSI SQL.
 
-<table><th>Syntax</th><tr><td><pre>
-Equals_Operator :=
-    <a href="#expr">expression</a> == <a href="#expr">expression</a>.                                                                             
+<table><th align="left">Syntax</th><tr><td><pre>
+Equals_Operator :=                                                                                       
+    <a href="#expr">expression</a> == <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    

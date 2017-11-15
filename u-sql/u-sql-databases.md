@@ -22,10 +22,10 @@ U-SQL provides a built-in database called `master` that will be used as the defa
 The default database context can be changed with the [`USE DATABASE`](use-database-u-sql.md) statement.  
   
 ### Database DDL Statements
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 DB_DDL_Statement :=                                                                                      
-    <a href="create-database-u-sql.md">Create_Database_Statement</a>  
-|   <a href="drop-database-u-sql.md">Drop_Database_Statement</a>.  
+     <a href="create-database-u-sql.md">Create_Database_Statement</a>
+|    <a href="drop-database-u-sql.md">Drop_Database_Statement</a>.
 </pre></td></tr></table>
   
 ### See Also  

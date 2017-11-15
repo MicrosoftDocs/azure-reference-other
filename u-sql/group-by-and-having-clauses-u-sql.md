@@ -17,10 +17,9 @@ manager: "jhubbard"
 # GROUP BY and HAVING Clauses (U-SQL)
 The optional GROUP BY clause groups the rows based on the provided expression list into groups that then can be aggregated over with the built-in and [user-defined aggregators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg). It offers an optional filter clause with HAVING that will filter the rowset at the group level. In other words, the predicate in the HAVING clause will be applied to the group and will only include the groups for which it evaluates to true.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Group_By_Clause :=                                                                                       
-    'GROUP' 'BY' <a href="#exp_lst">Expression_List</a> [<a href="#hav_cla">Having_Clause</a>]
-<br />
+    'GROUP' 'BY' <a href="#exp_lst">Expression_List</a> [<a href="#hav_cla">Having_Clause</a>]<br />
 <a href="#hav_cla">Having_Clause</a> :=  
     'HAVING' Boolean_Expression
 </pre></td></tr></table>

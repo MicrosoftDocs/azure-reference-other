@@ -19,9 +19,9 @@ The DENSE_RANK ranking function returns the rank of rows within the partition of
 
 DENSE_RANK can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 DENSE_RANK_Expression :=                                                                                 
-      'DENSE_RANK' '(' ')'.  
+    'DENSE_RANK' '(' ')'.
 </pre></td></tr></table>
 
 ### Return Type 

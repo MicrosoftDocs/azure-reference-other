@@ -17,7 +17,7 @@ manager: "jhubbard"
 # &gt; (Greater Than) (U-SQL)
 Compares two expressions (a comparison operator). When you compare nonnull expressions, the result is TRUE if the left operand has a value higher than the right operand; otherwise, the result is FALSE.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Greater_Than_Operator :=                                                                                 
     <a href="#expr">expression</a> '>' <a href="#expr">expression</a>.
 </pre></td></tr></table>

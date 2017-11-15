@@ -17,28 +17,28 @@ manager: "jhubbard"
 # WHERE Clause (U-SQL)
 The optional `WHERE` clause in a [SELECT](select-expression-u-sql.md) expression will filter the rowset that the [FROM](from-clause-u-sql.md) clause calculated.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Where_Clause :=                                                                                          
-    'WHERE' <a href="#BE">Boolean_Expression</a>.                            
+     'WHERE' <a href="#BE">Boolean_Expression</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    
 - <a name="BE"></a>**`Boolean_Expression`**   
-Specifies the Boolean predicate that acts as the filter.  
+  Specifies the Boolean predicate that acts as the filter.  
   
-  <table><th>Syntax</th><tr><td><pre>
-Boolean_Expression :=                                                                               
-      bool_expression
-|     ('<a href="not-u-sql.md">NOT</a>' | '!') Boolean_Expression
-|     Boolean_Expression ('<a href="and-u-sql.md">AND</a>' | '&&') Boolean_Expression
-|     Boolean_Expression ('<a href="or-u-sql.md">OR</a>' | '||') Boolean_Expression.
-</pre></td></tr></table>
+  <table><th align="left">Syntax</th><tr><td><pre>
+  Boolean_Expression :=                                                                               
+       bool_expression
+  |    ('<a href="not-u-sql.md">NOT</a>' | '!') Boolean_Expression
+  |    Boolean_Expression ('<a href="and-u-sql.md">AND</a>' | '&&') Boolean_Expression
+  |    Boolean_Expression ('<a href="or-u-sql.md">OR</a>' | '||') Boolean_Expression.
+  </pre></td></tr></table>
       
-    The predicate can either be any C# expression that evaluates to a bool, or a negation of a Boolean expression, a conjunction or a disjunction. U-SQL’s Boolean logic is based on C# and thus is like in C# 2-valued logic where null == null evaluates to `true` and null == 1 will evaluate to `false`.  
+  The predicate can either be any C# expression that evaluates to a bool, or a negation of a Boolean expression, a conjunction or a disjunction. U-SQL’s Boolean logic is based on C# and thus is like in C# 2-valued logic where null == null evaluates to `true` and null == 1 will evaluate to `false`.  
   
-    The expressions can of course refer to any of the columns in the rowset, can invoke any C# expression and function and method call as long as the functions and methods are included in the scope either implicitly or explicitly.  
+  The expressions can of course refer to any of the columns in the rowset, can invoke any C# expression and function and method call as long as the functions and methods are included in the scope either implicitly or explicitly.  
   
-    The [AND](and-u-sql.md) and [OR](or-u-sql.md) operators do not guarantee execution order of their operands to allow the query processor to reorder them for better performance. If the order is important, for example to guard a subsequent expression from a runtime error like a null exception, one should use C#’s [&&](https://msdn.microsoft.com/library/2a723cdk.aspx) and [||](https://msdn.microsoft.com/library/6373h346.aspx) which will preserve the expression’s execution order from left to right and will shortcut the expression if the left side of the logical expression determines the outcome.  
+  The [AND](and-u-sql.md) and [OR](or-u-sql.md) operators do not guarantee execution order of their operands to allow the query processor to reorder them for better performance. If the order is important, for example to guard a subsequent expression from a runtime error like a null exception, one should use C#’s [&&](https://msdn.microsoft.com/library/2a723cdk.aspx) and [||](https://msdn.microsoft.com/library/6373h346.aspx) which will preserve the expression’s execution order from left to right and will shortcut the expression if the left side of the logical expression determines the outcome.  
   
 ### Examples    
 The following query finds all the search session in the @searchlog rowset that are in the `en-gb` region.  

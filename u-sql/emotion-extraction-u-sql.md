@@ -24,24 +24,24 @@ Cognitive emotion functions detect one or more human faces in an image and get b
 > Use an Extractor rather than an Applier when you have images larger than 4 MB.
 
 ## EmotionApplier
-<table><th>Arguments</th><tr><td><pre>
+<table><th align="left">Arguments</th><tr><td><pre>
 EmotionApplier(                                                                                          
     string imgCol = "ImgData",
     string numCol   = "NumFaces", 
     string indexCol = "FaceIndex", 
     string emtCol   = "Emotion", 
-    string confCol  = "Confidence") 
+    string confCol  = "Confidence")
 </pre></td></tr></table>
 
 For each JPEG image provided as a byte array in the column with the default name `ImgData`, it returns one row per face detected in the file (column `FaceIndex` of type int) with additional information about the detected face's bounding box (columns `RectX`, `RectY`, `Width`, `Height` all of type float), its recognized emotion (column `Emotion` of type string), the confidence value (column `Confidence` of type float) and the overall number of faces detected in the image (column `NumFaces` of type int). 
 
 ## EmotionExtractor
-<table><th>Arguments</th><tr><td><pre>
+<table><th align="left">Arguments</th><tr><td><pre>
 EmotionExtractor(                                                                                        
     string numCol   = "NumFaces", 
     string indexCol = "FaceIndex", 
     string emtCol   = "Emotion", 
-    string confCol  = "Confidence") 
+    string confCol  = "Confidence")
 </pre></td></tr></table>
 
 For each JPEG file it gets applied to, this U-SQL extractor returns one row per face detected in the file (column `FaceIndex` of type int) with additional information about the detected face's bounding box (columns `RectX`, `RectY`, `Width`, `Height` all of type float), its recognized emotion (column `Emotion` of type string), the confidence value (column `Confidence` of type float) and the overall number of faces detected in the image (column `NumFaces` of type int). 

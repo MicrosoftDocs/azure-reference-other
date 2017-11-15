@@ -26,31 +26,31 @@ OUTPUT will provide snapshot isolation of its writes if the underlying file syst
 > [!IMPORTANT]
 > Of the currently supported file systems, writing to Windows Azure Blob Storage does not provide (MVCC) while writing to Azure Data Lake Storage should (but is currently not working, a fix is under investigation).
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Output_Statement :=                                                                                      
-       'OUTPUT' <a href="#out_row">Output_Rowset</a>   
-       TO_Clause   
-       [ <a href="#OBOFC">Order_By_Opt_Fetch_Clause</a> ]  
-       <a href="#us_cla">USING_Clause</a>.<br />                   
-TO_Clause :=                                                                    
-       'TO' <a href="#out_fp">Output_File_Path</a>.     
+     'OUTPUT' <a href="#out_row">Output_Rowset</a>   
+     TO_Clause   
+     [ <a href="#OBOFC">Order_By_Opt_Fetch_Clause</a> ]  
+     <a href="#us_cla">USING_Clause</a>.<br />                   
+TO_Clause :=
+     'TO' <a href="#out_fp">Output_File_Path</a>.
 </pre></td></tr></table>
    
 ### Semantics of Syntax Elements    
 - <a name="out_row"></a>**`Output_Rowset`**  
-Specifies the expression that is being written into the target file or files. The supported rowset expressions are any of the following:
-   <table><th>Syntax</th><tr><td><pre>
-Output_Rowset :=                                                                                    
-    Rowset  
-|   Rowset_Expression.<br />
-Rowset :=                                                                       
-    Rowset_Variable  
-|   Identifier.  <br />
-Rowset_Expression :=  
-    '(' <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> ')'  
-|   <a href="table-valued-function-expression-u-sql.md">Function_Call</a>  
-|   <a href="u-sql-select-selecting-from-an-external-rowset.md">External_Rowset_Expression</a>.   
-</pre></td></tr></table>
+  Specifies the expression that is being written into the target file or files. The supported rowset expressions are any of the following:
+  <table><th>Syntax</th><tr><td><pre>
+  Output_Rowset :=                                                                                    
+       Rowset  
+  |    Rowset_Expression.<br />
+  Rowset :=                                                                       
+       Rowset_Variable
+  |    Identifier.<br />
+  Rowset_Expression :=
+       '(' <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> ')'
+  |    <a href="table-valued-function-expression-u-sql.md">Function_Call</a>
+  |    <a href="u-sql-select-selecting-from-an-external-rowset.md">External_Rowset_Expression</a>.
+  </pre></td></tr></table>
   
    The simplest rowset sources are a rowset variable that has been defined in a previous statement of the script or a table that has been created in the account’s catalog. A table can be referenced either with its fully 3-part qualified name, within the current database context with a 2-part name or within the current database and schema context with a single-part name.  
   
@@ -60,22 +60,22 @@ Rowset_Expression :=
 Specifies the target file or files. The rowset will be written at the specified [output file path](output-to-files-u-sql.md) location atomically. If the file at the output file path already exists, it will be overwritten.  
   
 - <a name="OBOFC"></a>**`Order_By_Opt_Fetch_Clause`**     
-The output can be sorted with the optional ORDER BY/FETCH clause.  
+  The output can be sorted with the optional ORDER BY/FETCH clause.  
   <table><th>Syntax</th><tr><td><pre>
-Order_By_Opt_Fetch_Clause :=                                                                        
-      Order_By_Clause [ <a href="order-by-and-offset-fetch-clause-u-sql.md#off_F">Offset_Fetch</a> ].  
-</pre></td></tr></table>
+  Order_By_Opt_Fetch_Clause :=                                                                        
+       Order_By_Clause [ <a href="order-by-and-offset-fetch-clause-u-sql.md#off_F">Offset_Fetch</a> ].
+  </pre></td></tr></table>
   
   Because the order by list expressions can only refer to columns of the rowset that needs to be outputted, one can only order on data contained in the result or use an order expression that does not refer to a column at all.  
   
   Unlike the [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) clause on the [SELECT](select-expression-u-sql.md) expression, the `OUTPUT ORDER BY` clause does not require the `OFFSET/FETCH` clause. However, if it is specified it can be used to output only a subset of the data. For further details on the [ORDER BY](order-by-and-offset-fetch-clause-u-sql.md) and `OFFSET/FETCH` syntax and semantics see [ORDER BY and OFFSET/FETCH Clauses (U-SQL)](order-by-and-offset-fetch-clause-u-sql.md).
   
 - <a name="us_cla"></a>**`USING_Clause`**   
-The USING clause specifies which outputter should be used to turn the rowset into a file.
-   <table><th>Syntax</th><tr><td><pre>
-USING_Clause :=                                                                                     
-    'USING' udo_expression.   
-</pre></td></tr></table>
+  The USING clause specifies which outputter should be used to turn the rowset into a file.
+  <table><th>Syntax</th><tr><td><pre>
+  USING_Clause :=                                                                                     
+       'USING' udo_expression.
+  </pre></td></tr></table>
   
   It takes a C# expression that returns an instance of IOutputter. U-SQL provides a small set of predefined outputters for common text formats and users can write their own by implementing an IOutputter (see [U-SQL Programmability Guide: User-Defined Outputter](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-outputter) for more detail on how to write your own outputter). The built-in outputters are part of the built-in Outputters namespace. For more information on the built-in `outputters` and their arguments please follow the link.  
   

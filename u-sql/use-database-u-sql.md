@@ -17,11 +17,11 @@ manager: "jhubbard"
 # USE DATABASE (U-SQL)
 In order to simplify using names of objects in other databases than the default context database, U-SQL provides the ability to set a different database as the context database with the USE DATABASE statement. This sets the specified database as the new context database for all metadata object names in the remainder of the script until it gets changed with another `USE` statement. It also automatically sets the schema context to the database’s dbo schema. Therefore all names that are not fully qualified will be resolved with respect to the new context.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Use_Database_Statement :=                                                                                
-    'USE' ['DATABASE'] <a href="#DB_Name">DB_Name</a>.<br /><br />
+     'USE' ['DATABASE'] <a href="#DB_Name">DB_Name</a>.<br />
 <a href="#DB_Name">DB_Name</a> :=                                               
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
+     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
   
 The keyword `DATABASE` is optional to provide familiarity to T-SQL users.  

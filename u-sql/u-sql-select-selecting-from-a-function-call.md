@@ -19,11 +19,11 @@ U-SQL allows selecting from a table-valued function (TVF). Note that U-SQL Table
   
 The following syntax shows the FROM clause for just the selection from a TVF.   
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Select_From_TVF_Clause :=                                                                                
-    'FROM' <a href="#fun_cal">Function_Call</a> 'AS' <a href="#QUI">Quoted_or_Unquoted_Identifier</a>.  
+     'FROM' <a href="#fun_cal">Function_Call</a> 'AS' <a href="#QUI">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
-  
+
 ### Semantics of Syntax Elements    
 -   <a name="fun_cal"></a>**`Function_Call`**   
     The table-valued function is called as outlined [here](table-valued-function-expression-u-sql.md) in the [FROM](from-clause-u-sql.md) clause of a SELECT expression. The function call will provide values to its parameters positionally, or the keyword DEFAULT to indicate that the default value of the argument (if defined) should be chosen.  

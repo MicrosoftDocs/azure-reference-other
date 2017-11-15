@@ -23,14 +23,15 @@ The optional parameters can be used inside the package definition to help define
 
 The package object will be created inside the current database and schema context.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_Package_Statement :=                                                                              
     'CREATE' 'PACKAGE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#Ident">Identifier</a> '(' [<a href="#param_lst">Parameter_List</a>] ')'
     ['AS']
     'BEGIN'
         Package_Statement_List
     'END'.<br />
-Package_Statement_List := { Package_Statement }.<br />
+Package_Statement_List := 
+    { Package_Statement }.<br />
 Package_Statement :=
     Using_Statement
 |   Declare_Variable_Statement
@@ -52,11 +53,11 @@ If_Package_Statement :=
 
 
 ### Semantics of Syntax Elements  
--   <a name="INE"></a>**`IF NOT EXISTS`**    
-    If the optional `IF NOT EXISTS` is specified, then the statement creates the package if it does not already exist, or succeeds without changes if the package already exists and the user has permission to at least enumerate all existing packages. 
+- <a name="INE"></a>**`IF NOT EXISTS`**    
+  If the optional `IF NOT EXISTS` is specified, then the statement creates the package if it does not already exist, or succeeds without changes if the package already exists and the user has permission to at least enumerate all existing packages. 
     
--   <a name="Ident"></a>**`Identifier`**   
-    Specifies the name of the package. If the `Identifier` is a three-part identifier, the package will be created in the specified database and schema. If it is a two-part identifier, then the package will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the package will be created in the current database and schema context.  
+- <a name="Ident"></a>**`Identifier`**   
+  Specifies the name of the package. If the `Identifier` is a three-part identifier, the package will be created in the specified database and schema. If it is a two-part identifier, then the package will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the package will be created in the current database and schema context.  
   
     If an object of the given name already exists in the specified database and schema context or the user has no permissions to create a package, an error is raised.  
     
@@ -67,32 +68,32 @@ If_Package_Statement :=
 Is a constant-foldable expression that returns TRUE or FALSE.   
 
 - <a name="exp_ass"></a>**`Export_User_Assembly_Statement | Export_System_Assembly_Statement`**  
-The `EXPORT ASSEMBLY` and `EXPORT SYSTEM ASSEMBLY` statements specify inside a package definition which user or system assemblies respectively are being exported by the package. They also implicitly reference the assembly for the package context.    
+  The `EXPORT ASSEMBLY` and `EXPORT SYSTEM ASSEMBLY` statements specify inside a package definition which user or system assemblies respectively are being exported by the package. They also implicitly reference the assembly for the package context.    
 
   The identifier will be resolved in the static context of the package definition, similarly to table-valued functions and procedures and can refer optionally to a user assembly in a different Azure Data Lake Analytics account.   
   
   <table><th>Syntax</th><tr><td><pre>
-Export_User_Assembly_Statement :=                                                                   
-<a></a>    'EXPORT' 'ASSEMBLY' <a href="reference-assembly-u-sql.md#ass_name">Global_Assembly_Identifier</a>.<br />
-Export_System_Assembly_Statement :=
-<a></a>    'EXPORT' 'SYSTEM' 'ASSEMBLY' <a href="create-assembly-u-sql.md#ass_name">Assembly_Name</a>.<br />
-Assembly_Name := 
-<a></a>    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
-</pre></td></tr></table>       
+  Export_User_Assembly_Statement :=                                                                   
+      'EXPORT' 'ASSEMBLY' <a href="reference-assembly-u-sql.md#ass_name">Global_Assembly_Identifier</a>.<br />
+  Export_System_Assembly_Statement :=
+      'EXPORT' 'SYSTEM' 'ASSEMBLY' <a href="create-assembly-u-sql.md#ass_name">Assembly_Name</a>.<br />
+  Assembly_Name := 
+      <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
+  </pre></td></tr></table>       
 
 - <a name="exp_var"></a>**`Export_Variable_Statement`**  
-The `EXPORT` statement specifies inside a package definition which variable is being exported by the package. It also implicitly declares the variable inside the package context.
+  The `EXPORT` statement specifies inside a package definition which variable is being exported by the package. It also implicitly declares the variable inside the package context.
 
   <table><th>Syntax</th><tr><td><pre>
-Export_Variable_Statement :=                                                                        
-<a></a>    'EXPORT' ['CONST'] User_Variable_Name [Scalar_Type] '=' csharp_expression.<br />
-User_Variable_Name :=
-<a></a>    "@"+<a href="u-sql-identifiers.md">Unquoted_Identifier</a>.<br />   
-Scalar_Type := 
-<a></a>    <a href="built-in-u-sql-types.md">Built_in_Type</a> | <a href="https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-user-defined-types---udt">User_defined_Type</a>.
-</pre></td></tr></table>
+  Export_Variable_Statement :=                                                                        
+      'EXPORT' ['CONST'] User_Variable_Name [Scalar_Type] '=' csharp_expression.<br />
+  User_Variable_Name :=
+      "@"+<a href="u-sql-identifiers.md">Unquoted_Identifier</a>.<br />   
+  Scalar_Type := 
+      <a href="built-in-u-sql-types.md">Built_in_Type</a> | <a href="https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-user-defined-types---udt">User_defined_Type</a>.
+  </pre></td></tr></table>
 
-    If a variable of a user-defined type gets exported, then the assembly defining the type should also be exported.
+  If a variable of a user-defined type gets exported, then the assembly defining the type should also be exported.
 
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  

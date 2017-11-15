@@ -20,9 +20,9 @@ A view can be dropped with the `DROP VIEW` statement. The statement drops the sp
 > [!WARNING]
 > **This operation cannot be undone!**
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Drop_View_Statement :=                                                                                   
-      'DROP' 'VIEW' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.  
+    'DROP' 'VIEW' [<a href="#IE">'IF' 'EXISTS'</a>] <a href="#Ident">Identifier</a>.
 </pre></td></table>
 
 ### Semantics of Syntax Elements    

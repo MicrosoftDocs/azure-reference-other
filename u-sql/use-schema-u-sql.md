@@ -19,12 +19,11 @@ In order to simplify using names of objects in other schemas than the default co
   
 The statement sets the specified schema as the new context schema (within the existing context database) for all metadata object names in the remainder of the script until it gets changed with another [`USE`](u-sql-metadata-object-naming-and-name-contexts.md) statement. All names that are not fully qualified will be resolved with respect to the new context.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Use_Schema_Statement :=                                                                                  
-    'USE' 'SCHEMA' <a href="#s_name">Schema_Name</a>.
-<br />
+     'USE' 'SCHEMA' <a href="#s_name">Schema_Name</a>.<br />
 <a href="#s_name">Schema_Name</a> :=  
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
+     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    

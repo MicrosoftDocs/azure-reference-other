@@ -17,10 +17,10 @@ manager: "jhubbard"
 # Key Phrases Extraction (U-SQL)
 The `KeyPhraseExtractor` cognitive function returns a list of “;” separated strings denoting the key talking points in the input text. This cognitive function employ techniques from Microsoft Office's sophisticated Natural Language Processing toolkit and supports English text.
 
-<table><th>Arguments TBD</th><tr><td><pre>
+<table><th align="left">Arguments TBD</th><tr><td><pre>
 KeyPhraseExtractor(                                                                                      
-    string TBD  = "TBD", 
-    string outCol  = "KeyPhrase") 
+     string TBD = "TBD", 
+     string outCol = "KeyPhrase")
 </pre></td></tr></table>
 
 ### Examples

@@ -17,11 +17,11 @@ manager: "jhubbard"
 # Sentiment Analysis (U-SQL)
 The `SentimentAnalyzer` cognitive function evaluates sentiment from the text. It returns a numeric score between 0 and 1 long with the sentiment string from the text. Scores close to 1 indicate positive sentiment and scores close to 0 indicate negative sentiment. Sentiment score is generated using classification techniques. The input features of the classifier include n-grams, features generated from part-of-speech tags, and word embeddings. English text is supported.
 
-<table><th>Arguments TBD</th><tr><td><pre>
+<table><th align="left">Arguments TBD</th><tr><td><pre>
 SentimentAnalyzer(                                                                                       
-    string TBD  = "TBD", 
-    string TBD  = "Sentiment",
-    string TBD  = "Conf") 
+     string TBD  = "TBD", 
+     string TBD  = "Sentiment",
+     string TBD  = "Conf")
 </pre></td></tr></table>
 
 ### Examples

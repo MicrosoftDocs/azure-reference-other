@@ -17,17 +17,15 @@ manager: "jhubbard"
 # EXCEPT Expression (U-SQL)
 EXCEPT returns the rows from the left query expression that are not in the right query expression, thus subtracting the right rowset from the left.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Except_Expression :=                                                                                     
     <a href="#qry_exp">Query_Expression</a> 'EXCEPT' [<a href="#SOO">Set_Operator_Option</a>] [<a href="#ByName">By_Name</a>] 
-    <a href="#qry_exp">Query_Expression</a>.
-<br />
+    <a href="#qry_exp">Query_Expression</a>.<br />
 <a href="#SOO">Set_Operator_Option</a> :=  
     '<a href="#dist">DISTINCT</a>'  
-|   '<a href="#ALL">ALL</a>'.
-<br />  
+|   '<a href="#ALL">ALL</a>'.<br />
 <a href="#ByName">By_Name</a> :=
-    'BY' 'NAME' ['ON' '(' (Identifier_List [',' '*'] | '*') ')'.  
+    'BY' 'NAME' ['ON' '(' (Identifier_List [',' '*'] | '*') ')'.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements  

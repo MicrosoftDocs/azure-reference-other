@@ -23,9 +23,9 @@ Built-in U-SQL types can be composed into table types that can be used to define
   
 The built-in U-SQL types can be classified into the following types: *simple built-in types* and *complex built-in types*. We use the following grammar to refer to these types.  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Built_in_Type :=                                                                                         
-    <a href="simple-built-in-u-sql-types.md">Simple_Type</a> | <a href="complex-built-in-u-sql-types.md">Complex_Type</a>.  
+    <a href="simple-built-in-u-sql-types.md">Simple_Type</a> | <a href="complex-built-in-u-sql-types.md">Complex_Type</a>.
 </pre></td></tr></table>
   
 Their semantics in general follows their C# semantics with a few notable exceptions called out below.  

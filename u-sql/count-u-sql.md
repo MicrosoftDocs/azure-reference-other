@@ -19,9 +19,9 @@ The COUNT aggregator returns the number of items in a group. If COUNT(*) is spec
 
 The identity value is 0. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 COUNT_Expression :=                                                                                      
-      'COUNT' '(' ['<a href="#dist">DISTINCT</a>'] (<a href="#exp">expression | '*'</a>) ')'.  
+    'COUNT' '(' ['<a href="#dist">DISTINCT</a>'] (<a href="#exp">expression | '*'</a>) ')'.  
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

@@ -24,6 +24,7 @@ In U-SQL, ranking functions can only be used in the following syntactic contexts
 Ranking functions cannot be nested. 
 
 U-SQL provides the following built-in ranking functions (follow the links for more information): 
+
 |Ranking Function|Description|
 |------|----|
 |[DENSE_RANK](dense-rank-u-sql.md)|Returns the rank of rows within the partition of a window, without any gaps in the ranking. |

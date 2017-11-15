@@ -17,12 +17,11 @@ manager: "jhubbard"
 # CREATE DATABASE (U-SQL)
 This statement creates a new U-SQL database with the specified name.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_Database_Statement :=                                                                             
-    'CREATE' 'DATABASE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#DB_Name">DB_Name</a>.
-<br />
+    'CREATE' 'DATABASE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#DB_Name">DB_Name</a>.<br />
 <a href="#DB_Name">DB_Name</a> :=  
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.  
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
 </pre></td></tr></table>
   
 ### Semantics of Syntax Elements    

@@ -17,9 +17,9 @@ manager: "jhubbard"
 # != (Not Equal To) (U-SQL)
 Tests whether one expression is not equal to another expression (a comparison operator). 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Not_Equal_To:=                                                                                           
-    <a href="#expr">expression</a> != <a href="#expr">expression</a>.
+     <a href="#expr">expression</a> != <a href="#expr">expression</a>.
 </pre></td></tr></table>
 
 > [!NOTE]

@@ -23,9 +23,10 @@ The U-SQL catalog views are currently not available in the local run environment
 
 Future releases will add additional catalog views.
 
-The following catalog views are currently available:
-|||  
-|-|-| 
+The following catalog views are currently available:  
+
+|<a></a>|<a></a>|  
+|--|--| 
 [usql.columns](usql-columns-u-sql.md)     |[usql.partition_parameters](usql-partition-parameters-u-sql.md)         
 [usql.databases](usql-databases-u-sql.md)     |[usql.partition_range_values](usql-partition-range-values-u-sql.md)         
 [usql.distributions](usql-distributions-u-sql.md)     |[usql.schemas](usql-schemas-u-sql.md)         

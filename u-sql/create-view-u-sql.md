@@ -17,9 +17,9 @@ manager: "jhubbard"
 # CREATE VIEW (U-SQL)
 The `CREATE VIEW` statement creates the view with the specified identifier based on the provided query expression. The view’s schema is inferred from the query’s result type.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_View_Statement :=                                                                                 
-      'CREATE' 'VIEW' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#Ident">Identifier</a> 'AS' <a href="#qry_exp">Query_Expression</a>.  
+    'CREATE' 'VIEW' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#Ident">Identifier</a> 'AS' <a href="#qry_exp">Query_Expression</a>.
 </pre></td></table>
  
 ### Semantics of Syntax Elements    

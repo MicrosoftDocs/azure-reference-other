@@ -17,10 +17,10 @@ manager: "jhubbard"
 # CREATE INDEX (U-SQL)
 This statement creates a clustered index with the given name on the specified table.
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Create_Index_Statement :=                                                                                
-      'CREATE' 'CLUSTERED' 'INDEX' <a href="#QUI">Quoted_or_Unquoted_Identifier</a>
-      'ON' <a href="#Ident">Identifier</a> '(' <a href="#sil">Sort_Item_List</a> ')' [<a href="#PS">Partition_Specification</a>].
+     'CREATE' 'CLUSTERED' 'INDEX' <a href="#QUI">Quoted_or_Unquoted_Identifier</a>
+     'ON' <a href="#Ident">Identifier</a> '(' <a href="#sil">Sort_Item_List</a> ')' [<a href="#PS">Partition_Specification</a>].
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements    

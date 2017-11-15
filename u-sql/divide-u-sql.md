@@ -17,12 +17,11 @@ manager: "jhubbard"
 # / (Divide) (U-SQL)
 Divides one [number](numeric-types-and-literals.md) by another (an arithmetic division operator). 
 
-<table><th>Syntax</th><tr><td><pre>
-Divide_Operator :=                                                                                     
+<table><th align="left">Syntax</th><tr><td><pre>
+Divide_Operator :=                                                                                       
     <a href="#expr">dividend</a> '/' <a href="#divisor">divisor</a>.
 </pre></td></tr></table>
 
-  
 ### Semantics of Syntax Elements    
 -   <a name="expr"></a>**`dividend`**  
 One of the [Numeric Types](numeric-types-and-literals.md) to divide.
