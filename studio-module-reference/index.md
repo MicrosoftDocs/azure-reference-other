@@ -2,7 +2,6 @@
 title: "Azure Machine Learning Studio Algorithm and Module Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: 09/21/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

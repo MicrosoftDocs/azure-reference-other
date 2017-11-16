@@ -2,7 +2,6 @@
 title: "Machine Learning Modules | Microsoft Docs"
 ms.custom: ""
 ms.date: 10/13/2015
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

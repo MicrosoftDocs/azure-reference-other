@@ -2,7 +2,6 @@
 title: "Export to Azure SQL Database | Microsoft Docs"
 ms.custom: ""
 ms.date: 03/02/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

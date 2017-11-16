@@ -2,7 +2,6 @@
 title: "Select Columns in Dataset | Microsoft Docs"
 ms.custom: ""
 ms.date: 09/05/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

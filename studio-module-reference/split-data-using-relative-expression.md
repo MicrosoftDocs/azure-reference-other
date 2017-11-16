@@ -2,7 +2,6 @@
 title: "Split Data using Relative Expression | Microsoft Docs"
 ms.custom: ""
 ms.date: 06/02/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

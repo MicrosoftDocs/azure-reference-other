@@ -2,7 +2,6 @@
 title: "Time Series Anomaly Detection | Microsoft Docs"
 ms.custom: ""
 ms.date: 09/20/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

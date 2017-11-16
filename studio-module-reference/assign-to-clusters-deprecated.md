@@ -2,7 +2,6 @@
 title: "Assign to Clusters (deprecated) | Microsoft Docs"
 ms.custom: ""
 ms.date: 09/17/2015
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

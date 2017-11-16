@@ -2,7 +2,6 @@
 title: "Pretrained Cascade Image Classification | Microsoft Docs"
 ms.custom: ""
 ms.date: 02/16/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

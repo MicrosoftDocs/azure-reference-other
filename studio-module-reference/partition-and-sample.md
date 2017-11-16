@@ -2,7 +2,6 @@
 title: "Partition and Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: 06/21/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

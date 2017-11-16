@@ -2,7 +2,6 @@
 title: "Error 0156 | Microsoft Docs"
 ms.custom: ""
 ms.date: 08/15/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

@@ -2,7 +2,6 @@
 title: "Error 0022 | Microsoft Docs"
 ms.custom: ""
 ms.date: 09/16/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

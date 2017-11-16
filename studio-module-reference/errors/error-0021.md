@@ -2,7 +2,6 @@
 title: "Error 0021 | Microsoft Docs"
 ms.custom: ""
 ms.date: 09/21/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

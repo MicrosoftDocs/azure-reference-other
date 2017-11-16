@@ -2,7 +2,6 @@
 title: "Error 0071 | Microsoft Docs"
 ms.custom: ""
 ms.date: 08/25/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
