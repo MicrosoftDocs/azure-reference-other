@@ -2,7 +2,6 @@
 title: "U-SQL SELECT Selecting from CROSS APPLY and OUTER APPLY | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-04-10"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

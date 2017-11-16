@@ -2,7 +2,6 @@
 title: "ALTER DATA SOURCE (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-10-13"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

@@ -2,7 +2,6 @@
 title: "Built-in U-SQL UDOs | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-04-11"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

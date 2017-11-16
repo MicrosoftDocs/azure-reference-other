@@ -2,7 +2,6 @@
 title: "CREATE TABLE (U-SQL): Creating a Table from a Query | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-09-05"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

@@ -2,7 +2,6 @@
 title: "USING Keyword | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-04-19"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

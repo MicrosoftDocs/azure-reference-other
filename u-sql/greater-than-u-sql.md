@@ -2,7 +2,6 @@
 title: "&gt; (Greater Than) (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-03-27"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""
