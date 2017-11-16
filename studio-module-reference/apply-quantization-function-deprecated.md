@@ -2,7 +2,6 @@
 title: "Apply Quantization Function (deprecated) | Microsoft Docs"
 ms.custom: ""
 ms.date: 07/01/2015
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

@@ -2,7 +2,6 @@
 title: "Feature Selection Modules | Microsoft Docs"
 ms.custom: ""
 ms.date: 05/31/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

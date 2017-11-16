@@ -2,7 +2,6 @@
 title: "Add Columns | Microsoft Docs"
 ms.custom: ""
 ms.date: 07/06/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

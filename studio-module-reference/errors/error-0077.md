@@ -2,7 +2,6 @@
 title: "Error 0077 | Microsoft Docs"
 ms.custom: ""
 ms.date: 07/19/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

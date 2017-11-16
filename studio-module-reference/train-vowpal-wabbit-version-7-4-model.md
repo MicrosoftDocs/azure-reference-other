@@ -2,7 +2,6 @@
 title: "Train Vowpal Wabbit Version 7-4 Model | Microsoft Docs"
 ms.custom: ""
 ms.date: 10/13/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

@@ -2,7 +2,6 @@
 title: "PCA-Based Anomaly Detection | Microsoft Docs"
 ms.custom: ""
 ms.date: 08/14/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

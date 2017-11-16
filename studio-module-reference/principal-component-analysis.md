@@ -2,7 +2,6 @@
 title: "Principal Component Analysis | Microsoft Docs"
 ms.custom: ""
 ms.date: 04/11/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

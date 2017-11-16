@@ -2,7 +2,6 @@
 title: "Evaluate Recommender | Microsoft Docs"
 ms.custom: ""
 ms.date: 06/27/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

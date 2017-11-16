@@ -2,7 +2,6 @@
 title: "Modify Count Table Parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: 10/11/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

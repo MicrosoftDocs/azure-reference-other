@@ -2,7 +2,6 @@
 title: "Error 0039 | Microsoft Docs"
 ms.custom: ""
 ms.date: 10/12/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

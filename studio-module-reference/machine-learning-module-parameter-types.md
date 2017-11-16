@@ -2,7 +2,6 @@
 title: "Machine Learning Module Parameter Types | Microsoft Docs"
 ms.custom: ""
 ms.date: 10/13/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

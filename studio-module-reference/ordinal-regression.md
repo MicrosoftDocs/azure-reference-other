@@ -2,7 +2,6 @@
 title: "Ordinal Regression | Microsoft Docs"
 ms.custom: ""
 ms.date: 11/09/2016
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

@@ -2,7 +2,6 @@
 title: "Convert to CSV | Microsoft Docs"
 ms.custom: ""
 ms.date: 08/22/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

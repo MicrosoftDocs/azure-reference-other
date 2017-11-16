@@ -2,7 +2,6 @@
 title: "Split Data | Microsoft Docs"
 ms.custom: ""
 ms.date: 07/18/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

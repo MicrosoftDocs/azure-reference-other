@@ -2,7 +2,6 @@
 title: "Latent Dirichlet Allocation | Microsoft Docs"
 ms.custom: ""
 ms.date: 07/19/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

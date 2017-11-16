@@ -2,7 +2,6 @@
 title: "Import from Web URL via HTTP | Microsoft Docs"
 ms.custom: ""
 ms.date: 10/05/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

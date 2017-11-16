@@ -2,7 +2,6 @@
 title: "Deprecated Modules and Features | Microsoft Docs"
 ms.custom: ""
 ms.date: 09/22/2015
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

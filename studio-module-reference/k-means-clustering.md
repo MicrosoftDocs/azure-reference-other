@@ -2,7 +2,6 @@
 title: "K-Means Clustering | Microsoft Docs"
 ms.custom: ""
 ms.date: 08/20/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

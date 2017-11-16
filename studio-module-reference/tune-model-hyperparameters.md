@@ -2,7 +2,6 @@
 title: "Tune Model Hyperparameters | Microsoft Docs"
 ms.custom: ""
 ms.date: 07/21/2017
-ms.prod: ""
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
