@@ -2,7 +2,6 @@
 title: "Files and File Sets as Inputs and Outputs (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-03-10"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

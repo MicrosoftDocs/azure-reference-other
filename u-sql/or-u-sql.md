@@ -2,7 +2,6 @@
 title: "OR (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-03-30"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

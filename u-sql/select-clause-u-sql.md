@@ -2,7 +2,6 @@
 title: "SELECT Clause (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-04-27"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

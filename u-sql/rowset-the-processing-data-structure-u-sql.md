@@ -2,7 +2,6 @@
 title: "Rowset The Processing Data Structure (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-04-10"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

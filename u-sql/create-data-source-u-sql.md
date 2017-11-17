@@ -2,7 +2,6 @@
 title: "CREATE DATA SOURCE (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-04-04"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

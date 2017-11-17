@@ -2,7 +2,6 @@
 title: "EXCEPT Expression (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-10-17"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

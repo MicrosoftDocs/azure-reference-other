@@ -2,7 +2,6 @@
 title: "U-SQL Built-in Outputters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-03-28"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

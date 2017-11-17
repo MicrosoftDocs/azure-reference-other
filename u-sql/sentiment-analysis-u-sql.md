@@ -2,7 +2,6 @@
 title: "Sentiment Analysis (U-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-10-05"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

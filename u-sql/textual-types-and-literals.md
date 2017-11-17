@@ -2,7 +2,6 @@
 title: "Textual Types and Literals | Microsoft Docs"
 ms.custom: ""
 ms.date: "2017-07-28"
-ms.prod: "azure"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""
