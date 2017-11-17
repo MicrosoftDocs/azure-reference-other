@@ -14,6 +14,6 @@
         tocHref: /azure-reference-other/studio-module-reference
         topicHref: /azure-reference-other/studio-module-reference/
         items:
-        - name: Module Errors
+        - name: Errors
           tocHref: /azure-reference-other/studio-module-reference/errors
           topicHref: /azure-reference-other/studio-module-reference/errors/machine-learning-module-error-codes
