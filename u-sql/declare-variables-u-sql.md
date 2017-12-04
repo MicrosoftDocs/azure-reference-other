@@ -1,7 +1,7 @@
 ---
 title: "DECLARE Variables (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-09-28"
+ms.date: "09/28/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

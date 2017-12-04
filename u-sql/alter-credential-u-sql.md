@@ -1,7 +1,7 @@
 ---
 title: "ALTER CREDENTIAL (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-08-22"
+ms.date: "08/22/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

@@ -1,7 +1,7 @@
 ---
 title: "C# Functions and Operators (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-03-31"
+ms.date: "03/31/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

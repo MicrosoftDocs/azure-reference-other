@@ -1,7 +1,7 @@
 ---
 title: "CREATE PACKAGE (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-05-05"
+ms.date: "05/05/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

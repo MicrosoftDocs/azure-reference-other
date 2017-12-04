@@ -1,7 +1,7 @@
 ---
 title: "U-SQL Procedures | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-08-21"
+ms.date: "08/21/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

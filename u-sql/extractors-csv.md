@@ -1,7 +1,7 @@
 ---
 title: "Extractors.Csv() | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-03-28"
+ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

@@ -1,7 +1,7 @@
 ---
 title: "U-SQL Database Schemas | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-04-04"
+ms.date: "04/04/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

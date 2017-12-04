@@ -1,7 +1,7 @@
 ---
 title: "ALTER TABLE (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-06-07"
+ms.date: "06/07/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

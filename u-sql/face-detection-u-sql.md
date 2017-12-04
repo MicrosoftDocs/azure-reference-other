@@ -1,7 +1,7 @@
 ---
 title: "Face Detection (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-10-05"
+ms.date: "10/05/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

@@ -1,7 +1,7 @@
 ---
 title: "ORDER BY and OFFSET_FETCH Clause (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-10-16"
+ms.date: "10/16/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""
