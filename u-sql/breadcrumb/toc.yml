@@ -4,7 +4,7 @@
   items:
   - name: Data Lake Analytics
     tocHref: /azure/data-lake-analytics/
-    topicHref: /azure/data-lake-analytics/index
+    topicHref: /azure/data-lake-analytics/
     items:
     - name: U-SQL Documentation
       tocHref: /azure/data-lake-analytics/u-sql/
