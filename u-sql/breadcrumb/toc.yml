@@ -1,3 +1,7 @@
 - name: Azure
-  tocHref: /
-  topicHref: /
+  tocHref: /azure/
+  topicHref: /azure/index
+  items:
+  - name: Data Lake Analytics
+    tocHref: /azure/data-lake-analytics
+    topicHref: tocHref: /azure/data-lake-analytics/index
