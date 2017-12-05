@@ -1,7 +1,7 @@
 ---
 title: "Built-In U-SQL Types | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-04-12"
+ms.date: "04/12/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

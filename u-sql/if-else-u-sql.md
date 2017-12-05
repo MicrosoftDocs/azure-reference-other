@@ -1,7 +1,7 @@
 ---
 title: "IF...ELSE (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-04-26"
+ms.date: "04/26/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

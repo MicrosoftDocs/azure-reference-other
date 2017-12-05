@@ -1,7 +1,7 @@
 ---
 title: "Extending U-SQL Expressions with User-Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-10-03"
+ms.date: "10/03/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

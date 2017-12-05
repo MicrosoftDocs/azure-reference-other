@@ -1,7 +1,7 @@
 ---
 title: "U-SQL Scripts | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-05-02"
+ms.date: "05/02/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

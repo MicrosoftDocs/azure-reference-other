@@ -1,7 +1,7 @@
 ---
 title: "IN, NOT IN (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-05-04"
+ms.date: "05/04/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

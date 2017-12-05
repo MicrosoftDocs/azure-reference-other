@@ -1,7 +1,7 @@
 ---
 title: "Calling a Procedure (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-06-29"
+ms.date: "06/29/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

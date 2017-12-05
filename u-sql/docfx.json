@@ -20,7 +20,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -31,7 +32,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/breadcrumb/toc.yml",
+      "breadcrumb_path": "./breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "brand": "azure"
     },

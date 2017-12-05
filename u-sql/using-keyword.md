@@ -1,7 +1,7 @@
 ---
 title: "USING Keyword | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-04-19"
+ms.date: "04/19/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

@@ -1,7 +1,7 @@
 ---
 title: "usql.partition_parameters (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-09-26"
+ms.date: "09/26/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

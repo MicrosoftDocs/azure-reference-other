@@ -1,7 +1,7 @@
 ---
 title: "CREATE ASSEMBLY (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-04-13"
+ms.date: "04/13/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

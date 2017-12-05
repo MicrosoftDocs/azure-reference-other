@@ -1,7 +1,7 @@
 ---
 title: "SAMPLE Expression (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-09-14"
+ms.date: "09/14/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

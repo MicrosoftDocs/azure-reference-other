@@ -1,7 +1,7 @@
 ---
 title: "Built-in U-SQL System Objects and Extensions | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-09-27"
+ms.date: "09/27/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""

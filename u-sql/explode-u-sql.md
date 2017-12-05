@@ -1,7 +1,7 @@
 ---
 title: "EXPLODE (U-SQL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2017-07-18"
+ms.date: "07/18/2017"
 ms.reviewer: ""
 ms.service: "data-lake-analytics"
 ms.suite: ""
