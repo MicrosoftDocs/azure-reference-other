@@ -1,7 +1,7 @@
 ---
 title: "Join Data | Microsoft Docs"
 ms.custom: ""
-ms.date: 10/05/2017
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: 124865f7-e901-4656-adac-f4cb08248099
 caps.latest.revision: 17
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Join Data
 *Joins two datasets*  
@@ -22,23 +22,27 @@ manager: "jhubbard"
 
 This article describes how to use the [Join Data](join-data.md) module in Azure Machine Learning Studio to merge two datasets using a database-style *join operation*.  
 
-To perform a join on two datasets, they must be related by a single key column. Composite keys are not supported. 
+To perform a join on two datasets, they must be related by a **single** key column. Composite keys are not supported. 
 
 ## How to Use Join Data
 
-1. in Azure Machine Learning Studio, add the datasets you want to combine, and then drag the **Join Data** module into your experiment. You can find the module in the **Data Transformation** category, under **Manipulation**.
+1. In Azure Machine Learning Studio, add the datasets you want to combine, and then drag the **Join Data** module into your experiment. 
 
-    Connect the datasets to the **Join Data** module. 
+    You can find the module in the **Data Transformation** category, under **Manipulation**.
+
+2. Connect the datasets to the **Join Data** module. 
     
     The **Join Data** module does not support a right outer join, so if you want to ensure that rows from a particular dataset are included in the output, that dataset must be on the lefthand input.
   
-2. Click **Launch column selector** to choose a single key column for the dataset on the left input.
+3. Click **Launch column selector** to choose a single key column for the dataset on the left input.
 
-3. Click **Launch column selector** to choose a single key column for the dataset on the right input.
+4. Click **Launch column selector** to choose a single key column for the dataset on the right input.
 
-4. Select the **Match case** option if you are joining on a text column and want to ensure that the join preserves case sensitivity. For example, if you deselect this option, `A1000` would be considered a different key value than `a1000`.
+5. Select the **Match case** option if you are joining on a text column and want to ensure that the join preserves case sensitivity. 
 
-    If you deselect this option, `A1000` would be considered the same as `a1000`.
+    For example, if you select this option, `A1000` would be considered a different key value than `a1000`.
+
+    If you deselect this option, case sensitivity is **not** enforced, and `A1000` would be considered the same as `a1000`.
    
 5. Use the **Join type** dropdown list to specify how the datasets should be combined. types:  
   
@@ -61,14 +65,11 @@ To perform a join on two datasets, they must be related by a single key column. 
 
 7. Run the experiment, or select the Join Data module and selected **Run Selected**, to perform the join.
 
-7. To view the results, right-click the **Join Data** module, select **Results dataset**, and click **Visualize**.
+8. To view the results, right-click the **Join Data** module, select **Results dataset**, and click **Visualize**.
 
-  
-> [!TIP]
-> If your dataset has no key column, you can still combine it with another dataset, by using the [Add Columns](add-columns.md) module. This module functions more like R, and can combine two datasets on a row-by-row basis.
-  
 ## Examples  
- You can see examples of how this module is used by exploring these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+
+You can see examples of how this module is used by exploring these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):  
   
 -   In the [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726) sample, [Join Data](join-data.md) is used to combine the positive training cases with the negative training cases after the proportion of cases has been adjusted.  
   
@@ -79,14 +80,39 @@ To perform a join on two datasets, they must be related by a single key column. 
 -   In the [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727) sample, [Join Data](join-data.md) is used to bring in new features.  
   
 ##  <a name="Notes"></a> Technical Notes  
+
+This section describes implementation details, and answers to some frequently asked questions.
+
+### Restrictions
+
++ The combined dataset cannot have two columns with the same name. If the left and right datasets have any duplicate column names, a numeric suffix is appended to the column names of the right dataset to make them unique. 
+
+    For example, if both datasets had a column named Month, the column from the left dataset would remain as is, and the column from the right dataset would be renamed Month (1).  
   
--   The combined dataset cannot have two columns with the same name. Therefore, if the left and right datasets have any duplicate column names, a numeric suffix is appended to the column names of the right dataset to make them unique. For example, if both datasets had a column named Month, the column from the left dataset would remain as is, and the column from the right dataset would be renamed Month (1).  
++ The algorithm that is used for comparison of key values is hash-forced.  
   
--   The algorithm that is used for comparison of key values is hash-forced.  
++ Each column of the joined dataset preserves a categorical type, if the corresponding column of the input dataset is categorical.  
   
--   Each column of the joined dataset preserves a categorical type, if the corresponding column of the input dataset is categorical.  
-  
--   In left outer joins, if there are any missing values, a categorical level is created in the left dataset for missing values. This is true even if there are no missing values in the joined (right) dataset.  
++ In left outer joins, if there are any missing values, a categorical level is created in the left dataset for missing values. This is true even if there are no missing values in the joined (right) dataset.  
+
+### How can I join a table on a composite key?
+
+If you need to join a table that uses composite keys (that is, the primary key relies on two independent columns), use a module such as the following to concatenate the contents of the two key columns:
+
++ [Execute R Script](execute-r-script.md)
+
+    For example, use code like the follwing inside the R script to concatenate the first and second columns of the input dataframe using a hyphen as separator. 
+    `paste(inputdf$Col1,inputdf$Col2,sep="-")`
+
++ [Apply SQL Transformation](apply-sql-transformation.md)
+
+    The concatenation operator in SQLite is `||`.
+
+### How can I join tables that don't have a key?
+
+If your dataset has no key column, you can still combine it with another dataset, either by generating a key, or by using the [Add Columns](add-columns.md) module. 
+
+The **Add Columns** module behaves like R, and can merge two datasets on a row-by-row basis, if the datasets have the same number of rows. An error is raised if the datasets are of a different size.
   
 ##  <a name="ExpectedInputs"></a> Expected Inputs  
   

@@ -1,7 +1,7 @@
 ---
 title: "Import Data | Microsoft Docs"
 ms.custom: ""
-ms.date: 08/22/2017
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: 4e1b0fe6-aded-4b3f-a36f-39b8862b9004
 caps.latest.revision: 59
 author: "jeannt"
 ms.author: "jeannt"
-manager: "cgronlun"
+manager: "cgronlund"
 ---
 # Import Data
 *Loads data from external sources on the web; from various forms of cloud-based storage in Azure such as tables, blobs, and SQL  databases; and from on-premises SQL Server databases*  
@@ -20,18 +20,21 @@ manager: "cgronlun"
   
 ##  <a name="Remarks"></a> Module Overview  
  
- This article describes how to use the [Import Data](import-data.md) module to load data into an experiment from existing cloud data services that are outside of Azure Machine Learning Studio.  
+ This article describes how to use the [Import Data](import-data.md) module in  Azure Machine Learning Studio to load data into a machine learning experiment from existing cloud data services.  
  
-> [!TIP]
-> The module now features a wizard to help you choose a storage option and select from among existing subscriptions and accounts to quickly configure all options.
-> 
-> Need to edit an existing data connection? No problem; the wizard loads all previous configuration details so that you don't have to start again from scratch. 
+The module now features a wizard to help you choose a storage option and select from among existing subscriptions and accounts to quickly configure all options.
+
+Need to edit an existing data connection? No problem; the wizard loads all previous configuration details so that you don't have to start again from scratch. 
   
- After you define the data you want and connect to the source, [Import Data](import-data.md) infers the data type of each column based on the values it contains, either numerical or categorical, and loads the data into your Azure Machine Learning Studio workspace. The output of [Import Data](import-data.md) is a dataset that can be used with any experiment.  
+ After you define the data you want and connect to the source, [Import Data](import-data.md) infers the data type of each column based on the values it contains, and loads the data into your Azure Machine Learning Studio workspace. The output of [Import Data](import-data.md) is a dataset that can be used with any experiment.
+
+> [!IMPORTANT]
+> Currently, there are limitations on the types of storage accounts that are supported. For more information, see [Technical Notes](#bkmk_Notes).
   
- If your source data changes, you can refresh the dataset and add new data by re-running [Import Data](import-data.md). However, if you don't want to re-read from the source each time you run the experiment, select the **Use cached results** option to TRUE. When this option is set to TRUE, the module will check whether the experiment has run previously using the same source and same input options. If a previous run is found, the data in the cache is used, instead of re-loading the data from the source.  
+ If your source data changes, you can refresh the dataset and add new data by re-running [Import Data](import-data.md). However, if you don't want to rread from the source each time you run the experiment, select the **Use cached results** option to TRUE. When this option is selected, the module checks whether the experiment has run previously using the same source and same input options. If a previous run is found, the data in the cache is used, instead of re-loading the data from the source.  
  
-This module was previously named **Reader**. If you previously used the **Reader** module in an experiment, it will be renamed to [Import Data](import-data.md) when you refresh the experiment.  
+> [!NOTE]
+> This module was previously named **Reader**. If you previously used the **Reader** module in an experiment, it is renamed to [Import Data](import-data.md) when you refresh the experiment.  
 
 ### <a name="DataSources"></a> Data sources
 
@@ -49,25 +52,23 @@ If you are not sure how or where you should store your data, see this guide to c
 |[Import from Azure Blob Storage](import-from-azure-blob-storage.md) |Get data that is stored in the Azure blob service|  
 |[Data Feed Providers](import-from-data-feed-providers.md) |Get data exposed as a feed in OData format|  
 |[Import from On-Premises SQL Server Database](import-from-on-premises-sql-server-database.md)|Get data from an on-premises SQL Server database using the Microsoft Data Management Gateway|
-|[Azure DocumentDB](import-from-documentdb.md) (new!)| Get data stored in JSON format in Azure DocumentDB |
+|[Azure Cosmos DB (DocumentDB)](import-from-documentdb.md)| Get data stored in JSON format in Azure CosmosDB, formerly named DocumentDB |
 
 > [!TIP]
 > 
 > Need to import data in the JSON format? Both R and Python support REST APIs, so use the [Execute Python Script](execute-python-script.md) or [Execute R Script](execute-r-script.md) modules to parse your data and save it as an Azure ML dataset.  
 > 
-> Or, use the DocumentDB API, which supports multiple JSON  providers, including MongoDB, to read your data using the **Import from DocumentDB** option. For more information, see [DocumentDB introduction](https://docs.microsoft.com/azure/cosmos-db/documentdb-introduction) and [Import from DocumentDB](import-from-documentdb.md). 
+> Or, use the SQL DB API for CosmosDB, which supports multiple JSON stores, including MongoDB, to read your data using the **Import from DocumentDB** option. For more information, see [Import from DocumentDB](import-from-documentdb.md). 
   
   
 ## How to Configure [Import Data](import-data.md)  
  
-> [!IMPORTANT]
-> Currently, there are limitations on the types of storage accounts that are supported. For more information, see [Technical Notes](#bkmk_Notes).
   
-1.  Add the **Import Data** module to your experiment. YOu can find this module in the **Data Input and Output** group in Studio.
+1.  Add the **Import Data** module to your experiment. You can find this module in the **Data Input and Output** group in Studio.
 
 2. Click **Launch Data Import Wizard** to configure the data source. The wizard will get the account name and credentials, and help you configure other options. If you are editing an existing configuration, it will load the current values first.
 
-    If you do not want to use the wizard, click **Data source**, and choose the type of cloud-based storage you are reading from. Additional settings depend on the type of storage you choose, and whether the storage is secured or not. You might need to provide the account name, file type, or credentials. Some sources do not require authentication; for others, you might need to know the account name, a key, or container name.  
+    If you do not want to use the wizard, click **Data source**, and choose the type of cloud-based storage you are reading from. Additional settings depend on the type of storage you choose, and whether the storage is secured or not. You might need to provide the account name, file type, or credentials. Some sources do not require authentication; for others, you might need to know the account name, a key, or container name.
  
      For details, see the list of [Data sources](#DataSources). 
   
@@ -75,7 +76,7 @@ If you are not sure how or where you should store your data, see this guide to c
   
      Deselect this option if you need to reload the data each time you run the experiment.  
   
-6.  Run the experiment.  
+4.  Run the experiment.  
   
      When [Import Data](import-data.md) loads the data into Studio, it infers the data type of each column based on the values it contains, either numerical or categorical.  
   
