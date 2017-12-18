@@ -1,7 +1,7 @@
 ---
 title: "Count Featurizer (deprecated) | Microsoft Docs"
 ms.custom: ""
-ms.date: 07/01/2015
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: 217741b5-730a-4c4b-839c-93c9cbb80ae7
 caps.latest.revision: 11
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Count Featurizer (deprecated)
 *Creates a set of features based on a counts table*  
@@ -19,37 +19,29 @@ manager: "jhubbard"
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
 ## Module Overview  
- You can use the **Count Featurizer** module to create features from a previously generated count table. Creating features from counts is an efficient way of summarizing useful information about the distribution of data and labels in a set of training data.  
-  
- This method of creating features from raw data is particularly useful in large data sets with high-cardinality features.  For example, in fraud detection, count tables can be used to collect information about the user ID, product and transaction and all the possible combinations over terabytes of data.  Count tables can also be useful in improving accuracy on small data sets.  
-  
- You generate the count tables using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module together with a training dataset, and then use **Count Featurizer** to create a ranked set of features that can be used with any of the [machine learning modules](machine-learning-initialize-model.md) as an input for training.  
-  
- You can also enhance your count-based features by:  
-  
--   Generating a count table, saving it, and then updating it with new data.  
-  
--   Creating a master count table over time, which can be applied to multiple models.  
-  
--   Saving  featurization steps for reuse with other data sets.  
-  
+
+This article describes how to use the **Count Featurizer** module in Azure Machine Learning Studio to create features from a previously generated count table. Creating features from counts is an efficient way of summarizing useful information about the distribution of data and labels in a set of training data. 
+
+This method of creating features from raw data is particularly useful in large data sets with high-cardinality features.  For example, in fraud detection, count tables can be used to collect information about the user ID, product and transaction and all the possible combinations over terabytes of data.  Count tables can also be useful in improving accuracy on small data sets.
+
 > [!WARNING]
->  This module has been deprecated.  
+>  This module has been deprecated. For new experiments, we recommend that you use the following modules:
 >   
->  For new experiments, we recommend that you use the following modules:  
->   
->  -   [Build Count Transform](count-featurizer-deprecated.md)  
-> -   [Modify Count Table Parameters](modify-count-table-parameters.md)  
-> -   [Merge Count Transform](merge-count-transform.md)  
->   
->  For backward compatibility with existing experiments, the following modules can help you update an existing count table, or change the count table to a new count transformation.  
->   
->  -   [Import Count Table](import-count-table.md)  
-> -   [Export Count Table](export-count-table.md)  
-  
-## How to Configure Count Featurizer  
-  
-1.  Create a table of counts using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.  
+> + [Build Counting Transform](build-counting-transform.md)  
+> + [Modify Count Table Parameters](modify-count-table-parameters.md)  
+> + [Merge Count Transform](merge-count-transform.md)  
+>
+> If you have existing count-based features or data that you want to use in a new experiment, use the following modules to migrate an existing count table, or change the count table to a new count transformation:
+> 
+> + [Import Count Table](import-count-table.md)  
+> + [Export Count Table](export-count-table.md)  
+
+## How to Configure Count Featurizer
+
+> [!IMPORTANT]
+> This module has been replaced with the [Build Counting Transform](build-counting-transform.md). These instructions are provided only for customers who have existing experiments that use the older, deprecated modules.
+
+1.  In Azure Machine Learning Studio, create a table of counts using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.  
   
 2.  Connect the output of the [Build Count Table (deprecated)](build-count-table-deprecated.md) module to the leftmost input port of **Count Featurizer**.  
   
@@ -57,54 +49,48 @@ manager: "jhubbard"
   
      It need not be the same training dataset that was used for [Build Count Table (deprecated)](build-count-table-deprecated.md), but you must select the same number of columns and they must have the same data type and values.  
   
-4.  Set additional options using the parameters in the following table.  
+4.  For **Select counted columns**, use the column selector to choose columns from the count table. The table must have been created using [Build Count Table (deprecated)](build-count-table-deprecated.md).  You can select a subset of the columns.  
   
-### Options  
- *Select counted columns*  
- Select the columns in the count table that you created using [Build Count Table (deprecated)](build-count-table-deprecated.md).  You can select any subset of the columns used in the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.  
+5. For **Select columns to featurize**, select the columns in the input dataset that you want to featurize. Be sure to select the same number of columns that you selected in the previous step.
   
- *Select columns to featurize*  
- Select the columns in the input dataset that you want to featurize by using the data from the count table.  You must select the same number of columns that you selected in the previous option, *Select counted columns*.  
+    The columns must also have the same type and structure as the columns you used to build the count table.  
+
+6. For **Garbage bin threshold** type a whole number that represents the minimum number of occurrences that must be found for each value, in order for counts to be used.
   
+    If the frequency of the value is less than the garbage bin threshold, the value-label pair is not counted.
+  
+    If you are using a small dataset and you are counting and training on the same data, a good starting value is 1.  
+  
+7. For **Additional prior pseudo examples**, type the number of additional examples to include. The examples are called *pseudo examples* because they are generated based on the prior distribution.
+  
+8. For **Laplacian noise scale**, type a positive floating-point value. This number denotes the scale used when  noise is introduced based on sampling from a Laplacian distribution.  
+  
+    The Laplacian noise scale parameter is provided to make it statistically safe to count and train on the same data set. In other words, by incorporating some acceptable level of noise into the model, the model becomes less susceptible to new values in data.
+  
+9. For **Output features include**, select the type of count-based features to generate: 
+  
+    + **CountsOnly**.   Creates features using counts.
+    + **LogOddsOnly**.   Creates features using the log of the odds ratio.  
+    + **BothCountsAndLogOdds**.   Creates features using both counts and log odds.  
+  
+10. Select the option, **Ignore back off column**, if you want to ignore the `IsBackOff` column in the output when creating features.
+  
+## Examples
+
+Explore examples of count-based featurization using these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
+  
+-   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.
+- The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample uses count-based features in a binary classification task.
+
 > [!NOTE]
->  The columns you select must have the same type and structure as the columns you used to build the count table.  
-  
- *Garbage bin threshold*  
- Type a value to use as the garbage bin threshold. This value specifies the minimum number of occurrences that must be found for each value, in order for counts to be used.  
-  
- If the frequency of the value is less than the garbage bin threshold, the value-label pair is not counted.  
-  
-> [!TIP]
->  If you are using a small dataset and you are counting and training on the same data, a good starting value is 1.  
-  
- *Additional prior pseudo examples*  
- Specify some n number of additional pseudo examples to include. The pseudo examples are generated based on the prior distribution.  
-  
- *Laplacian noise scale*  
- Type a positive floating-point value that represents the scale used for introducing noise sampled from a Laplacian distribution.  
-  
- It is statistically safe to count and train on the same data set if you set the Laplacian noise scale parameter. In other words, by setting a scale value, some acceptable level of noise is incorporated into the model, so the model is less likely to be affected by unseen values in data.  
-  
- *Output features include*  
- Choose the count-based features that you want to include in the module output.  
-  
--   **CountsOnly**.   Creates features using counts.  
-  
--   **LogOddsOnly**.   Creates features using the log of the odds ratio.  
-  
--   **BothCountsAndLogOdds**.   Creates features using both counts and log odds.  
-  
- *Ignore back off column*  
- Select this option if you want to ignore the `IsBackOff` column in the output when creating features  
-  
-## Examples  
- You can see examples of how this module is used by exploring these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
-  
--   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample demonstrates the use of count-based featurization over a very large dataset.  
-  
+> 
+> These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
+
 ## Technical Notes  
- It is statistically safe to count and train on the same data set if you set the Laplacian noise scale parameter.  
-  
+
+It is statistically safe to count and train on the same data set if you set the Laplacian noise scale parameter.
+
 ##  <a name="ExpectedInputs"></a> Expected Inputs  
   
 |Name|Type|Description|  

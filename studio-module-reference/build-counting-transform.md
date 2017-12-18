@@ -1,7 +1,7 @@
 ---
 title: "Build Counting Transform | Microsoft Docs"
 ms.custom: ""
-ms.date: 10/11/2016
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: 00e34943-4996-42e5-8bd4-6fb3e3f0906e
 caps.latest.revision: 18
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Build Counting Transform
 *Creates a transformation that turns count tables into features, so that you can apply the transformation to multiple datasets*  
@@ -19,7 +19,8 @@ manager: "jhubbard"
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
 ## Module Overview  
- You can use the **Build Counting Transform** module to analyze training data and build a *count table* as well as a set of *count-based features* that can be used in a predictive model.  
+
+This article describes how to use the **Build Counting Transform** module in Azure Machine Learning Studio to analyze training data. From this data, the module builds a *count table* as well as a set of *count-based features* that can be used in a predictive model.
   
  A count table contains the joint distribution of all feature columns given a specified label column. Such statistics are is useful in determining which columns have the most information value. *Count-based featurization* is useful because such features are more compact than the original training data, but capture all the most useful information. You can use the module parameters to customize how the counts are transformed into the new set of count-based features.  
   
@@ -34,7 +35,8 @@ manager: "jhubbard"
 -   You want to ensure that the same set of count-based features is applied to all datasets that you are using in your experiment.  
   
 ## How to Configure Build Counting Transform  
- You can create a count-based feature transformation directly from a dataset, and re-run it each time you run an experiment, or you can generate a set of counts,  and then merge it with new data to create an updated count table.  
+
+You can create a count-based feature transformation directly from a dataset, and re-run it each time you run an experiment, or you can generate a set of counts,  and then merge it with new data to create an updated count table.
   
 -   [Create count-based features from a dataset](#bkmk_CreateCounts)  
   
@@ -50,102 +52,106 @@ manager: "jhubbard"
   
 ###  <a name="bkmk_CreateCounts"></a> Create count-based features from a dataset  
   
-1.  Add the **Build Counting Transform** module to your experiment, and connect the dataset you want to use as the basis for our count-based features.  
+1.  In Azure Machine Learning Studio, add the **Build Counting Transform** module to your experiment.
+
+2. Connect the dataset you want to use as the basis for our count-based features.  
   
-2.  Use the **Number of classes** option to specify the number of values in your label column.  
+3.  Use the **Number of classes** option to specify the number of values in your label column.  
   
     -   For any binary classification problem, type `2`.  
   
     -   For a classification problem with more than two possible outputs, you must specify in advance the exact number of classes to count. If you enter a number that is less than the actual number of classes, the module will return an error.  
   
-    -   If your dataset contains multiple class values and the class label values are non-sequential, use [Edit Metadata](edit-metadata.md) to specify that the column contains categorical values.  
+    -   If your dataset contains multiple class values and the class label values are non-sequential, you must use [Edit Metadata](edit-metadata.md) to specify that the column contains categorical values.  
   
-3.  For the option, **The bits of hash function**, indicate how many bits to use when hashing the values. It is generally safe to accept the defaults, unless you know that there are many values to count and a higher bit count might be needed.  
+4.  For the option, **The bits of hash function**, indicate how many bits to use when hashing the values. 
+
+    It is generally safe to accept the defaults, unless you know that there are many values to count and a higher bit count might be needed.  
   
-4.  In **The seed of hash function**, you can optionally specify a value to seed the hashing function. This is typically used when you want to ensure that hashing results are deterministic across runs of the same experiment.  
+5.  In **The seed of hash function**, you can optionally specify a value to seed the hashing function. Setting a seed manually is typically done when you want to ensure that hashing results are deterministic across runs of the same experiment. 
+
+6.  Use the **Module type** option to indicate the type of data that you will be counting, based on the storage mode:  
   
-5.  Use the **Module type** option to indicate the type of data that you will be counting, based on the storage mode:  
+    + **Dataset** Choose this option if you will be counting data that is saved as a dataset in Azure Machine Learning Studio.  
   
-    -   **Dataset** Choose this option if you will be counting data that is saved as a dataset in Azure Machine Learning Studio.  
+    + **Blob** Choose this option if your source data used to build counts is stored as a block blob in Windows Azure storage.  
   
-    -   **Blob** Choose this option if your source data used to build counts is stored as a block blob in Windows Azure storage.  
+    + **MapReduce** Choose this option if you want to call Map/Reduce functions to process the data. 
+    
+        To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job will be launched in the cluster to perform the counting.  
   
-    -   **MapReduce** Choose this option if you want to call Map/Reduce functions to process the data. To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job will be launched in the cluster to perform the counting.  
-  
+        For very large datasets, we recommend that you use this option whenever possible. Although you might incur additional costs for using the HDInsight service, computation over large datasets might be faster in HDInsight.
+
          For more information, see [http://azure.microsoft.com/services/hdinsight/](http://azure.microsoft.com/services/hdinsight/).  
   
-        > [!TIP]
-        >  For very large datasets, we recommend that you use this option whenever possible. Although you might incur additional costs for using the HDInsight service, computation over large datasets might be faster in HDInsight.  
-  
-6.  After specifying the data storage mode, provide any additional connection information for the data that is required:  
+7.  After specifying the data storage mode, provide any additional connection information for the data that is required:  
   
     -   If you are using data from Hadoop or blob storage, provide the cluster location and credentials.  
   
     -   If you  previously used a [Import Data](import-data.md) module in the experiment to access data, you must re-enter the account name and your credentials. The reason is that **Build Counting Transform** module accesses the data storage separately in order to read the data and build the required tables.  
   
-7.  For **Label column or index**, select  one column as the label column.  
+8.  For **Label column or index**, select  one column as the label column.  
   
-     A label column is required. Moreover, the column must already be marked as a label or an error will be raised.  
+     A label column is required. The column must already be marked as a label or an error us raised.  
   
-8.  Use the option, **Select columns to count**, and select the columns for which to generate counts.  
+9.  Use the option, **Select columns to count**, and select the columns for which to generate counts.  
   
      In general, the best candidates are high-dimensional columns and any other columns that are correlated with those columns.  
   
-9. Use the **Count table type** option to specify the format used for storing the count table.  
+10. Use the **Count table type** option to specify the format used for storing the count table.  
   
-    -   **Dictionary**    Creates a dictionary count table. All column values in the selected columns are treated as strings, and are hashed using a bit array of up to 31 bits in size. Therefore, all column values are represented by a non-negative 32-bit integer.  
+    + **Dictionary:** Creates a dictionary count table. All column values in the selected columns are treated as strings, and are hashed using a bit array of up to 31 bits in size. Therefore, all column values are represented by a non-negative 32-bit integer.  
   
+         In general, you should use the **Dictionary** option for smaller data sets (less than 1 GB), and use the **CMSketch** option for larger datasets.  
+         
          After selecting this option, configure the number of bits used by the hashing function, and set a seed for initializing the hash function.  
   
-    -   **CMSketch**     Creates a *count minimum sketch table*. With this option, multiple independent hash functions with a smaller range are used to improve memory efficiency and reduce the chance of hash collisions.  
+    -   **CMSketch:**  Creates a *count minimum sketch table*. With this option, multiple independent hash functions with a smaller range are used to improve memory efficiency and reduce the chance of hash collisions.  
   
          The parameters for hashing bit size and hashing seed have no effect on this option.  
+
+11. Run the experiment.  
   
-    > [!TIP]
-    >  In general, you should use the **Dictionary** option for smaller data sets (less than 1 GB), and use the **CMSketch** option for larger datasets.  
+    The module creates a *featurization transform* that you can use as input to the [Apply Transformation](apply-transformation.md) module. The output of the [Apply Transformation](apply-transformation.md) module is a transformed dataset that can be used to train a model.  
   
-10. Run the experiment.  
-  
-     The module creates a *featurization transform* that you can use as input to the [Apply Transformation](apply-transformation.md) module. The output of the [Apply Transformation](apply-transformation.md) module is a transformed dataset that can be used to train a model.  
-  
-     Optionally, you can save the transform if you want to merge the set of count-based features with another set of count-based features. For more information, see [Merge Count Transform](merge-count-transform.md).  
+    Optionally, you can save the transform if you want to merge the set of count-based features with another set of count-based features. For more information, see [Merge Count Transform](merge-count-transform.md).  
   
 ###  <a name="bkmk_MergeCounts"></a> Merge counts and features from multiple datasets  
   
-1.  Add the **Build Counting Transform** module to your experiment, and connect the dataset that contains the new data you want to add.  
+1.  In Azure Machine Learning Studio, add the **Build Counting Transform** module to your experiment, and connect the dataset that contains the new data you want to add.  
   
 2.  Use the **Module type** option to indicate the source of the new data. You can merge data from different sources.  
   
-    -   **Dataset** Choose this option if the new data is provided as a dataset in Azure Machine Learning Studio.  
+    + **Dataset** Choose this option if the new data is provided as a dataset in Azure Machine Learning Studio.  
   
-    -   **Blob** Choose this option if the new data is provided as a block blob in Windows Azure storage.  
+    + **Blob** Choose this option if the new data is provided as a block blob in Windows Azure storage.  
   
-    -   **MapReduce** Choose this option if you want to call Map/Reduce functions to process the data. To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job will be launched in the cluster to perform the counting.  
+    + **MapReduce** Choose this option if you want to call Map/Reduce functions to process the data. 
+    
+        To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job will be launched in the cluster to perform the counting.  
   
          For more information, see [http://azure.microsoft.com/services/hdinsight/](http://azure.microsoft.com/services/hdinsight/).  
   
 3.  After specifying the data storage mode, provide any additional connection information for the new data :  
   
-    -   If you are using data from Hadoop or blob storage, provide the cluster location and credentials.  
+    + If you are using data from Hadoop or blob storage, provide the cluster location and credentials.  
   
-    -   If you previously used a [Import Data](import-data.md) module in the experiment to access data, you must re-enter the account name and your credentials. The reason is that the **Build Counting Transform** module accesses the data storage separately in order to read the data and build the required tables.  
+    + If you previously used a [Import Data](import-data.md) module in the experiment to access data, you must re-enter the account name and your credentials. The reason is that the **Build Counting Transform** module accesses the data storage separately in order to read the data and build the required tables.  
   
 4.  When merging counts, the following options must be exactly the same in both counts tables:  
   
-    -   **Number of classes**  
-  
-    -   **The bits of hash function**  
-  
-    -   **The seed of hash function**  
-  
-    -   **Select columns to count**  
+    + **Number of classes**
+    + **The bits of hash function**
+    + **The seed of hash function**
+    + **Select columns to count**
   
      The label column can be different, as long as it contains the same number of classes.  
   
 5.  Use the **Count table type** option to specify the format and destination for the  updated count table.  
   
     > [!TIP]
-    >  The format of the two count tables that you intend to merge must be the same. In other words, if you saved an earlier count table using the **Dictionary** format you won't be able to merge it with counts saved using the **CMSketch** format.  
+    >  The format of the two count tables that you intend to merge must be the same. 
+    > In other words, if you saved an earlier count table using the **Dictionary** format you cannot merge it with counts saved using the **CMSketch** format.
   
 6.  Run the experiment.  
   
@@ -154,24 +160,20 @@ manager: "jhubbard"
 7.  To merge this set of counts with an existing set of count-based features, see [Merge Count Transform](merge-count-transform.md).  
   
 ## Examples  
- See these articles for more information about the counts algorithm and the efficacy of count-based modeling compared to other methods.  
+
+See these articles for more information about the counts algorithm and the efficacy of count-based modeling compared to other methods.
+
++ [Using Azure ML to Build Click-through Prediction Models](http://go.microsoft.com/fwlink/?LinkId=699305)  
++ [Big Learning Made Easy with Counts!](https://blogs.technet.microsoft.com/machinelearning/2015/02/17/big-learning-made-easy-with-counts/)  
   
--   [Using Azure ML to Build Click-through Prediction Models](http://go.microsoft.com/fwlink/?LinkId=699305)  
+The following experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) demonstrate how to use count-based learning to build various predictive models:  
   
--   [Big Learning Made Easy with Counts!](https://blogs.technet.microsoft.com/machinelearning/2015/02/17/big-learning-made-easy-with-counts/)  
-  
- The following experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) demonstrate how to use count-based learning to build various predictive models:  
-  
--   [Learning With Counts - Binary Classification](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-Classification-2)  
-  
--   [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2)  
-  
--   [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2)  
++ [Learning With Counts - Binary Classification](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-Classification-2)  
++ [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2)
++ [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2)  
   
 ##  <a name="parameters"></a> Module Parameters  
   
-###  
-
 The following parameters are used with all options:
   
 |Name|Type|Range|Optional|Default|Description|  
@@ -181,7 +183,6 @@ The following parameters are used with all options:
 |The seed of hash function|Integer|any|Required|1|The seed for the hash function.|  
 |Module type| | |Required|Dataset|The type of module to use when generating the count table.|  
 |Count table type|CountTableType|select from list|Required|Dictionary|Specify the format of the count table.|  
-
 
 
 The following options apply when selecting the blob option.

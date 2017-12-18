@@ -1,7 +1,7 @@
 ---
 title: "Build Count Table (deprecated) | Microsoft Docs"
 ms.custom: ""
-ms.date: 07/01/2015
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: 166586ff-5bba-46a9-b469-20179f179b6c
 caps.latest.revision: 12
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Build Count Table (deprecated)
 *Builds a count table that can be used to create count-based features.*  
@@ -19,37 +19,48 @@ manager: "jhubbard"
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
 ## Module Overview  
- You can use the **Build Count Table** module to analyze training data and create a *count table*, which contains the joint distribution of all feature columns given a specified label column.  
-  
- You provide this table of counts as an input to the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module, which uses the count-based information to create a set of features that is more compact than the original training data, but which captures all the most useful information.  
-  
- You can generate a new count table from a dataset each time you run your experiment, or you can write the table to blob storage or a Hive table, and then update or reuse the table in other experiments or with other data. Updating or reusing the data is useful in scenarios such as these:  
-  
--   When new data becomes available to further enhance the model, you can create a new count table and merge it with previously created counts table to improve the joint distributions.  
-  
--   If you generate a set of counts that reflects the expected distribution of data in the real world domain, you can reuse that table when scoring new models, to ensure that features reflect the real world, rather than risk overfitting your model on a small and possibly skewed subset of data.  
-  
-> [!WARNING]
->  This module has been deprecated.  
->   
->  For new experiments, we recommend that you use the following modules:  
+
+This article describes how to use the **Build Count Table** module in Azure Machine Learning Studio to analyze training data and create a *count table*, which contains the joint distribution of all feature columns given a specified label column.
+
+The table of counts is used as an input to the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module. From the count-based information, the **Count Featurizer** module creates a set of features that is more compact than the original training data, but which captures all the most useful information.
+
+> [!IMPORTANT]
+> This module and related modules have been deprecated. The older versions are provided solely to support s who have existing experiments that use the older modules for count-based featurization. We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. 
+>
+>  For all new experiments, we recommend that you use the following modules:  
 >   
 >  -   [Build Counting Transform](build-counting-transform.md)  
 > -   [Modify Count Table Parameters](modify-count-table-parameters.md)  
 > -   [Merge Count Transform](merge-count-transform.md)  
->   
->  For backward compatibility with existing experiments, the following modules can help you update an existing count table, or change the count table to a new count transformation.  
->   
->  -   [Import Count Table](import-count-table.md)  
-> -   [Export Count Table](export-count-table.md)  
+
+## How to use Build Count Table
+
+This module has been deprecated.
+
+You can find updated instructions for how to build a count table here:
+
++ [Build Counting Transform](build-counting-transform.md)
+
+We recommend that you use the following modules to upgrade an existing count table to a count transformation, which is more easily applied and updated.
+
++ [Import Count Table](import-count-table.md)  
++ [Export Count Table](export-count-table.md)  
+
+## Examples
+
+Explore examples of count-based featurization using these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
   
-## Examples  
- You can see how this module is used by exploring these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
-  
--   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample demonstrates the use of count-based featurization over a very large dataset.  
-  
+-   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.
+- The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample uses count-based features in a binary classification task.
+
+> [!NOTE]
+> 
+> These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
+
 ## Technical Notes  
- In statistical learning theory, a classification problem can be formulated as the problem of finding an estimate of a target function from labelled data drawn from an unknown fixed distribution. In fact, if there is a way to know the exact joint distribution of the features of the data and the label, you can readily estimate the target function, given a metric for evaluating the estimates. Therefore, if all combinations of all columns of the dataset are used to build the count table, the generated count table must completely describe the distribution of the label values over the training data.  
+
+In statistical learning theory, a classification problem can be formulated as the problem of finding an estimate of a target function from labelled data drawn from an unknown fixed distribution. In fact, if there is a way to know the exact joint distribution of the features of the data and the label, you can readily estimate the target function, given a metric for evaluating the estimates. Therefore, if all combinations of all columns of the dataset are used to build the count table, the generated count table must completely describe the distribution of the label values over the training data.  
   
  However, if there are *N* columns in the training data, then there are *2^N* choices of joint columns to count, which becomes an enormous number when *N* is large.  
   

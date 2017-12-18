@@ -1,7 +1,7 @@
 ---
 title: "Import Count Table | Microsoft Docs"
 ms.custom: ""
-ms.date: 10/11/2016
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: db546854-7d3f-40da-9960-8b56ba03ada0
 caps.latest.revision: 9
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Import Count Table
 *Imports a previously created table of counts*  
@@ -19,29 +19,41 @@ manager: "jhubbard"
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
 ## Module Overview  
- The **Import Count Table** module is provided for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.  
+
+This article describes how to use the **Import Count Table** module in Azure Machine Learning Studio.
+
+The purpose of the **Import Count Table** is to allow customers who created a table of count-based statistics using an earlier version of Azure Machine Learning to upgrade their experiment. This module merges the existing count tables with new data.
+
+For general information about count tables and how they are used to create features, see [Learning with Counts](data-transformation-learning-with-counts.md).
+
+> [!IMPORTANT]
+> This module is provided for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.  
+> 
+> We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. 
+>
+>  For all new experiments, we recommend that you use the following modules:  
+>   
+>  -   [Build Counting Transform](build-counting-transform.md)  
+> -   [Modify Count Table Parameters](modify-count-table-parameters.md)  
+> -   [Merge Count Transform](merge-count-transform.md)  
+
+## How to Configure Import Count Table
   
- By using **Import Count Table**, you can re-use a count table that was created in an older experiment, and merge the count tables with new data, or change the way that features are created.  
+1.  In Azure Machine Learning Studio, open an experiment that contains a count table created using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.
   
- For general information about count tables and how they are used to create features, see [Learning with Counts](data-transformation-learning-with-counts.md).  
-  
-## How to Configure Import Count Table  
-  
-1.  Open an experiment in which you created a count table using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.  
-  
-2.  Add the **Import Count Table** module to the experiment.  
+2.  Add the **Import Count Table** module to the experiment.
   
 3.  Connect the two outputs of the [Build Count Table (deprecated)](build-count-table-deprecated.md) module to the matching input ports of the **Import Count Table**.  
   
-     If you have another dataset of counts that you want to merge with the imported count table, connect it to the rightmost input port of the **Import Count Table** module.  
+     If you have another dataset of counts that you want to merge with the imported count table, connect it to the rightmost input for the **Import Count Table** module.
   
-4.  Use the **Counting type** option to specify where and how the count table is stored:  
+4.  Use the **Counting type** option to specify where and how the count table is stored:
   
-    -   **Dataset** The data used to build counts is saved as a dataset in Azure Machine Learning Studio.  
+    + **Dataset** The data used to build counts is saved as a dataset in Azure Machine Learning Studio.  
   
-    -   **Blob** The data used to build counts is stored as a block blob in Windows Azure storage.  
+    + **Blob** The data used to build counts is stored as a block blob in Windows Azure storage.  
   
-    -   **MapReduce** The data used to build counts is stored as a blob in Windows Azure storage.  
+    + **MapReduce** The data used to build counts is stored as a blob in Windows Azure storage.  
   
          This option is typically preferred for very large datasets. To access the counts, you must activate the HDInsight cluster. A MapReduce job is launched to perform the counting. Note that both of these activities can incur storage and compute costs.  
   
@@ -51,7 +63,7 @@ manager: "jhubbard"
   
 5.  Use the **Count table type** option to specify the format and storage mode of the table used to store counts.  
   
-    -   **Dictionary**.    Uses a dictionary count table.  
+    + **Dictionary**.    Uses a dictionary count table.  
   
          All column values in the selected columns are treated as strings, and are hashed using a bit array of up to 31 bits in size. Therefore, all column values are represented by a non-negative 32-bit integer.  
   
@@ -67,14 +79,17 @@ manager: "jhubbard"
   
  For more information about how to apply a counting transformation to dataset to use in building a model, see these topics:  
   
-## Examples  
- You can see how this module is used by exploring these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):  
+## Examples
+
+Explore examples of count-based featurization using these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
   
--   The [Learning with Counts: Binary Classification](https://gallery.azureml.net/Experiment/Learning-with-Counts-Binary-Classification-2) sample demonstrates how to use the **Learning with Counts** modules to generate features from columns of categorical values for a binary classification model.  
-  
--   The [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.azureml.net/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) sample demonstrates how to use the learning with counts modules for performing multiclass classification on the publicly available NYC taxi dataset.  
-  
--   The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.azureml.net/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample demonstrates how to use the learning with counts modules for performing binary classification on the publicly available NYC taxi dataset.  
+-   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.
+- The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample uses count-based features in a binary classification task.
+
+> [!NOTE]
+> 
+> These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
   
 ##  <a name="ExpectedInputs"></a> Expected Inputs  
   
