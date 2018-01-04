@@ -20,13 +20,12 @@ If the partition buckets are dropped, then the data contained in the partitions 
   
 If the partition buckets are added, then the data has to be inserted into the buckets with either implicit or explicit inserts into the buckets.  
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Alter_Table_AddDrop_Partition_Statement :=                                                               
     'ALTER' 'TABLE' <a href="#ident">Identifier</a>   
     ( '<a href="#add_drop">ADD</a>' ['IF' 'NOT' 'EXISTS']   
     | '<a href="#add_drop">DROP</a>' ['IF' 'EXISTS'] )  
-    <a href="#partition_label_list">Partition_Label_List</a>.  
-</pre></td></tr></table>
+    <a href="#partition_label_list">Partition_Label_List</a>.</pre></td></tr></table>
 
 ### Semantics of Syntax Elements  
 -    <a name="ident"></a>**`Identifier`**   
@@ -39,7 +38,7 @@ Identifies the table to be changed. If the Identifier is a three-part identifier
   
 - <a name="partition_label_list"></a>**`Partition_Label_List`**  
 The partition label list specifies the list of partition buckets to be added or deleted by specifying the literal values for the partition columns using the appropriate types. The values have to be provided as constants or as scalar static variables.
-   <table><th>Syntax</th><tr><td><pre>
+<table><th>Syntax</th><tr><td><pre>
 Partition_Label_List :=                                                                             
     Partition_Label {',' Partition_Label}.<br />  
 Partition_Label :=                                                              
@@ -56,6 +55,7 @@ Static_Expression :=
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the table defined below.  
+
 ```
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
 USE DATABASE TestReferenceDB; 

@@ -16,17 +16,13 @@ manager: "jhubbard"
 # ALTER DATA SOURCE (U-SQL)
 The `ALTER DATA SOURCE` statement allows to change an existing data source.  
   
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Alter_Datasource_Statement :=                                                                            
     'ALTER' 'DATA' 'SOURCE' <a href="#dsrc_name">Datasource_Name</a>   
-    'SET' <a href="#dsrc_opt">Datasource_Options</a>.
-<br />
+    'SET' <a href="#dsrc_opt">Datasource_Options</a>.<br />
 <a href="#dsrc_name">Datasource_Name</a> := 
-    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
-<br />
-<a href="#dsrc_opt">Datasource_Options</a> :=  
-    Datasource_Option {',' Datasource_Option}.
-</pre></td></tr></table>
+<a href="u-sql-identifiers.md">     Quoted_or_Unquoted_Identifier</a>.<br /> 
+<a href="#dsrc_opt">Datasource_Options</a> :=<br />     Datasource_Option {',' Datasource_Option}.</pre></td></tr></table>
   
 ### Semantics of Syntax Elements    
 -   <a name="dsrc_name"></a>**`Datasource_Name`**   

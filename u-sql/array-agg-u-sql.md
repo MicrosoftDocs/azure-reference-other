@@ -18,9 +18,9 @@ The ARRAY_AGG aggregator creates a new [SQL.ARRAY](complex-built-in-u-sql-types.
 
 The identity value is null. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 ARRAY_AGG_Expression :=                                                                                  
-      'ARRAY_AGG' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.  
+      'ARRAY_AGG' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
 </pre></td></tr></table>
 
 ### Semantics of Syntax Elements 

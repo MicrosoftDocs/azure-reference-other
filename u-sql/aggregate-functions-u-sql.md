@@ -39,7 +39,7 @@ Several aggregators can be used in the same SELECT clause and will be applied on
 
 Aggregators cannot be nested. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Aggregate_Expression :=                                                                                  
       <a href="#aggr">Aggregator</a> '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'. 
 </pre></td></tr></table>
@@ -51,28 +51,25 @@ Every aggregator can take an optional DISTINCT qualifier that will de-duplicate 
 * <a name="aggr"></a>**`Aggregator`**  
 Can be either the invocation of a [user-defined aggregator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or a built-in aggregator: 
 
-  <table><th>Syntax</th><tr><td><pre>
-Aggregator :=                                                                                       
-      <a href="https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg">User_Defined_Aggregator</a> | Built_In_Aggregator. 
-</pre></td></tr></table>
+  <table><th>Syntax</th><tr><td><pre>Aggregator :=                                                                                       <br />     <a href="https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg">User_Defined_Aggregator</a> | Built_In_Aggregator.</pre></td></tr></table>
+
 
   U-SQL provides the following built-in aggregation functions (follow the links for more information): 
 
-  <table><th>Syntax</th><tr><td><pre>
-Built_In_Aggregator :=                                                                              
-      <a href="any-value-u-sql.md">'ANY_VALUE'</a>
-|     <a href="array-agg-u-sql.md">'ARRAY_AGG'</a> 
-|     <a href="avg-u-sql.md">'AVG'</a> 
-|     <a href="count-u-sql.md">'COUNT'</a> 
-|     <a href="map-agg-u-sql.md">'MAP_AGG'</a> 
-|     <a href="max-u-sql.md">'MAX'</a> 
-|     <a href="min-u-sql.md">'MIN'</a> 
-|     <a href="sum-u-sql.md">'SUM'</a> 
-|     <a href="stdev-u-sql.md">'STDEV'</a> 
-|     <a href="stdevp-u-sql.md">'STDEVP'</a> 
-|     <a href="var-u-sql.md">'VAR'</a> 
-|     <a href="varp-u-sql.md">'VARP'</a>.
-</pre></td></tr></table>
+  <table><th>Syntax</th><tr><td><pre>Built_In_Aggregator :=                                                                              <br />      <a href="any-value-u-sql.md">'ANY_VALUE'</a>
+  |     <a href="array-agg-u-sql.md">'ARRAY_AGG'</a>
+  |     <a href="avg-u-sql.md">'AVG'</a>
+  |     <a href="count-u-sql.md">'COUNT'</a>
+  |     <a href="map-agg-u-sql.md">'MAP_AGG'</a>
+  |     <a href="max-u-sql.md">'MAX'</a>
+  |     <a href="min-u-sql.md">'MIN'</a>
+  |     <a href="sum-u-sql.md">'SUM'</a>
+  |     <a href="stdev-u-sql.md">'STDEV'</a>
+  |     <a href="stdevp-u-sql.md">'STDEVP'</a>
+  |     <a href="var-u-sql.md">'VAR'</a>
+  |     <a href="varp-u-sql.md">'VARP'</a>.</pre></td></tr></table>
+
+
 
 * <a name="exp"></a>**`expression`**  
 The C# expression (including column references) that gets aggregated. The expression cannot contain other aggregators. Some aggregators may support additional options besides 

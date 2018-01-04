@@ -18,10 +18,9 @@ U-SQL’s logical AND operator performs a conjunction of two Boolean expressions
 
 When more than one logical operator is used in an expression, AND operators bind stronger than [OR](or-u-sql.md) and weaker than [NOT](not-u-sql.md). Parentheses can be used to change the binding precedence. 
 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 AND_Expression :=                                                                                        
-      <a href="#bn_exp">Boolean_Expression</a> 'AND' <a href="#bn_exp">Boolean_Expression</a>.
-</pre></td></tr></table>
+      <a href="#bn_exp">Boolean_Expression</a> 'AND' <a href="#bn_exp">Boolean_Expression</a>.</pre></td></tr></table>
 
 ### Semantics of Syntax Elements 
 * <a name="bn_exp"></a>**`Boolean_Expression`**    

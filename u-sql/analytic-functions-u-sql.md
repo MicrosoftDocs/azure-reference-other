@@ -25,7 +25,7 @@ Some of the analytics functions are type-polymorphic, meaning that they can oper
 Analytics functions cannot be nested. 
 
 U-SQL provides the following built-in analytic functions: 
-<table><th>Syntax</th><tr><td><pre>
+<table><th align="left">Syntax</th><tr><td><pre>
 Built_In_Analytic :=                                                                                   
       <a href="cume-dist-u-sql.md">'CUME_DIST'</a>
 |     <a href="first-value-u-sql.md">'FIRST_VALUE'</a> 
@@ -34,8 +34,7 @@ Built_In_Analytic :=
 |     <a href="lead-u-sql.md">'LEAD'</a> 
 |     <a href="percentile-cont-u-sql.md">'PERCENTILE_CONT'</a> 
 |     <a href="percentile-disc-u-sql.md">'PERCENTILE_DISC'</a> 
-|     <a href="percent-rank-u-sql.md">'PERCENT_RANK'</a>.
-</pre></td></tr></table>
+|     <a href="percent-rank-u-sql.md">'PERCENT_RANK'</a>.</pre></td></tr></table>
 
 ### See Also 
 * [OVER Expression (U-SQL)](over-expression-u-sql.md) 
