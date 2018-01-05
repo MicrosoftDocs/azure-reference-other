@@ -1,7 +1,7 @@
 ---
 title: "Edit Metadata | Microsoft Docs"
 ms.custom: ""
-ms.date: 06/14/2017
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: 370b6676-c11c-486f-bf73-35349f842a66
 caps.latest.revision: 32
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Edit Metadata
 *Edits metadata associated with columns in a dataset*  
@@ -19,25 +19,28 @@ manager: "jhubbard"
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
   
 ## Module Overview  
- You can use the [Edit Metadata](edit-metadata.md) module to change metadata that is associated with columns in a dataset. The data itself (including the values and the data types) are not actually altered—only the metadata inside Azure Machine Learning that tells downstream components how to use the column. Typical metadata changes might include:  
+
+This article describes how to use the [Edit Metadata](edit-metadata.md) module in Azure Machine Learning Studio to change metadata that is associated with columns in a dataset. The values and the data types in the dataset are not actually altered; what changes is the metadata inside Azure Machine Learning that tells downstream components how to use the column.
+
+Typical metadata changes might include:
   
--   Treating Boolean or numeric columns as categorical values  
++ Treating Boolean or numeric columns as categorical values  
   
--   Indicating which column contains the *class* label, or the values you want to categorize or predict  
++ Indicating which column contains the *class* label, or the values you want to categorize or predict  
   
--   Marking columns as features  
++ Marking columns as features
   
--   Changing date/time values to a numeric value, or vice versa  
++ Changing date/time values to a numeric value, or vice versa  
   
--   Adding or changing column names  
++ Renaming columns
   
  Use [Edit Metadata](edit-metadata.md) any time you need to modify the definition of a column, typically to meet requirements for a downstream module. For example, some modules can work only with specific data types, or require flags on the columns, such as `IsFeature` or `IsCategorical`.  
   
- After performing the required operation, you can reset the metadata to its original state.  
+ After performing the required operation, you can reset the metadata to its original state. 
   
 ##  <a name="Remarks"></a> How to Use [Edit Metadata](edit-metadata.md)  
   
-1.  Add [Edit Metadata](edit-metadata.md) module to your experiment and connect the dataset you want to update.  
+1.  In Azure Machine Learning Studio, add [Edit Metadata](edit-metadata.md) module to your experiment and connect the dataset you want to update.
   
 2.  Click **Launch the column selector** and choose the column or set of columns to work with. You can choose columns individually, by name or index, or you can choose a group of columns, by type.  
 
@@ -64,14 +67,13 @@ manager: "jhubbard"
     For example, you might have a column that contains the numbers 0,1 and 2, but know that the numbers actually mean "Smoker", "Non smoker" and "Unknown". In that case, by flagging the column as categorical you can ensure that the values will not be used in numeric calculations, but rather to group data. 
   
 5.  Use the **Fields** option if you want to change the way that Azure Machine Learning uses the data in a model.  
+    + **Feature**. Use this option to flag a column as a feature, for use with modules that operate only on feature columns. By default, all columns are initially treated as features.  
   
-    -   **Feature**. Use this option to flag a column as a feature, for use with modules that operate only on feature columns. By default, all columns are initially treated as features.  
-  
-    -   **Label**. Use this option to mark the label (also known as the predictable attribute, or target variable). Many modules requires that at least one (and only one) label column be present in the dataset. 
+    + **Label**. Use this option to mark the label (also known as the predictable attribute, or target variable). Many modules requires that at least one (and only one) label column be present in the dataset. 
     
         In many cases, Azure Machine Learning can infer that a column contains a class label, but by setting this metadata you can ensure that the column is identified correctly. Setting this option does not change data values, only the way that some machine learning algorithms  handle the data.  
   
-    -   **Weight**. Use this option with numeric data to indicate that column values represents weights for use in machine learning scoring or training operations. Only one weight column can be present in a dataset, and the column must be numeric.  
+    + **Weight**. Use this option with numeric data to indicate that column values represents weights for use in machine learning scoring or training operations. Only one weight column can be present in a dataset, and the column must be numeric.  
   
     > [!TIP]
     >  Have data that doesn't fit into these categories?  For example, your dataset might contain values such as unique identifiers that are not useful as variables. Sometimes IDs can cause problems when used in a model. 
@@ -80,25 +82,25 @@ manager: "jhubbard"
   
 6. Use the following options to clear previous selections and restore metadata to the default values.  
   
-    -   **Clear feature**. Use this option to remove the feature flag.  
+    + **Clear feature**. Use this option to remove the feature flag.  
   
          Because all columns are initially treated as features, for modules that perform mathematical operations, you might need to use this option to prevent numeric columns from being treated as variables.  
   
-    -   **Clear label**. Use this option to remove the **label** metadata from the specified column.  
+    + **Clear label**. Use this option to remove the **label** metadata from the specified column.  
   
-    -   **Clear score**. Use this option to remove the **score** metadata from the specified column.  
+    + **Clear score**. Use this option to remove the **score** metadata from the specified column.  
   
          Currently the ability to explicitly mark a column as a score is not available in Azure Machine Learning, but it will be added in a future release. Internally, some operations might result in a column being marked as a score, and a custom R module might output score columns.  
   
-    -   **Clear weight**. Use this option to remove the **weight** metadata from the specified column.  
+    + **Clear weight**. Use this option to remove the **weight** metadata from the specified column.  
   
 7.  For **New column names**, type the new name of the selected column or columns.  
   
-    -   Column names can use only characters that are supported by the UTF-8 encoding. Empty strings, nulls, or names consisting entirely of spaces are not allowed.  
+    + Column names can use only characters that are supported by the UTF-8 encoding. Empty strings, nulls, or names consisting entirely of spaces are not allowed.  
   
-    -   To rename multiple columns, type the names as a comma-separated list in order of the column indices.  
+    + To rename multiple columns, type the names as a comma-separated list in order of the column indices.  
   
-    -   All selected columns must be renamed. You cannot omit or skip columns.  
+    + All selected columns must be renamed. You cannot omit or skip columns.  
   
     > [!TIP] 
     > If you need to rename multiple columns, you can paste in a comma-delimited string prepared in advance. Or, use the [Execute R Script](execute-r-script.md) or [Apply SQL Transformation](apply-sql-transformation.md) modules.  See the [Technical Notes](#bkmk_TechnicalNotes) section for code and examples.
@@ -120,6 +122,7 @@ manager: "jhubbard"
 This section contains known issues, frequently asked questions, and some examples of common workarounds.
 
 ### Known Issues
+
 -   **Custom metadata is not supported.** It is not possible to use custom metadata in Azure Machine Learning or to edit column metadata outside  [Edit Metadata](edit-metadata.md). For example, you cannot add metadata indicating that a column is a unique identifier, or add other descriptive attributes . Azure Machine Learning supports only the metadata attributes that are used within R for working with factors, features, weights, and labels.  
   
 -   **Unsupported data types.** The following numeric data types are not supported: Double (decimal) and TimeStamp.  

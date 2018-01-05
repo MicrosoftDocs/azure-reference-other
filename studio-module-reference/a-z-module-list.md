@@ -1,7 +1,7 @@
 ---
 title: "A-Z List of Machine Learning Studio Modules | Microsoft Docs"
 ms.custom: ""
-ms.date: 06/02/2017
+ms.date: 01/05/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: dfdcb393-0285-4a60-a2bd-7c79f80e4d20
 caps.latest.revision: 41
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # A-Z List of Machine Learning Studio Modules
 This topic provides an alphabetized list of the modules provided in Azure Machine Learning Studio Machine Learning Studio.  
@@ -76,7 +76,7 @@ The modules in Azure Machine Learning modules cover a wide range of features and
 |[Group Data into Bins](group-data-into-bins.md)|Puts numerical data into bins|  
 |[IIR Filter](iir-filter.md)|Creates an infinite impulse response filter for signal processing|  
 |[Import Count Table](import-count-table.md)|Imports counts from an existing count table|  
-|[Import Data](import-data.md)|Loads data from external sources on the web; from various forms of cloud-based storage in Azure such as tables, blobs, and SQL  databases; and from on-premises SQL Server databases<br /><br /> This module was formerly named **Reader**.|  
+|[Import Data](import-data.md)|Loads data from external sources on the web; from various forms of cloud-based storage in Azure such as tables, blobs, SQL databases, and CosmosDB. Can load data from an on-premises SQL Server database if a gateway has been configured.<br /><br /> This module was formerly named **Reader**.|  
 |[Import Images](import-images.md)|Loads images from Azure BLOB storage into a dataset|  
 |[Join Data](join-data.md)|Joins two datasets|  
 |[K-Means Clustering](k-means-clustering.md)|Configures and initializes a K-means clustering model|  

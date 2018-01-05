@@ -1,7 +1,7 @@
 ---
 title: "Export Count Table | Microsoft Docs"
 ms.custom: ""
-ms.date: 04/11/2016
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,23 +11,30 @@ ms.assetid: dfe32418-04e8-407d-88fc-eadbc78e3148
 caps.latest.revision: 8
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Export Count Table
 *Exports the count table from a saved transformation for use with new data*  
   
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
-## Module Overview  
- The **Export Count Table** module is provided for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.  
+## Module Overview
+
+This article describes how to use the **Export Count Table** module in Azure Machine Learning Studio. The **Export Count Table** module is provided for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.
   
- When you use [Build Counting Transform](build-counting-transform.md) to create count-based features, the module outputs both a featurized dataset and a *transform* that creates features from counts. You can use **Export Count Table** to separate the count-based features into the two inputs used in previous experiments: **count metadata** and a **count table**.  
+When you use the new [Build Counting Transform](build-counting-transform.md) module to create count-based features, the module outputs both a featurized dataset and a *transform* that creates features from counts. By using the **Export Count Table** module, you can separate the count-based features output by this newer module into **count metadata** and a **count table**. These output formats were used by earlier, now deprecated modules:
   
- For general information about count tables and how they are used to create features, see [Learning with Counts](data-transformation-learning-with-counts.md).  
-  
+For general information about count tables and how they are used to create features, see [Learning with Counts](data-transformation-learning-with-counts.md).  
+
+ >  For all new experiments, we recommend that you use the following modules:  
+>   
+>  -   [Build Counting Transform](build-counting-transform.md)  
+> -   [Modify Count Table Parameters](modify-count-table-parameters.md)  
+> -   [Merge Count Transform](merge-count-transform.md)  
+
 ## How to Configure Export Count Table  
   
-1.  Open the experiment where you want to use the imported count table.  
+1.  In Azure Machine Learning Studio, open the experiment where you want to use the imported count table.  
   
 2.  Locate the saved count transformation, and add it to the experiment.  
   
@@ -41,14 +48,17 @@ manager: "jhubbard"
   
      Note that you must select a subset of the columns that were originally selected for the counting transformation. However, the **Export Count Table** module does not provide the list of these columns, so you should review the original experiment and make a note of which columns were used. If you select a column that was not used when creating the transformation, you will get an error.  
   
-## Examples  
- You can see how this module is used by exploring these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+## Examples
+
+Explore examples of count-based featurization using these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
   
--   The [Learning with Counts: Binary Classification](https://gallery.azureml.net/Experiment/Learning-with-Counts-Binary-Classification-2) sample demonstrates how to use the learning with counts modules to generate features from columns of categorical values for a binary classification model.  
-  
--   The [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.azureml.net/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) sample demonstrates how to use the learning with counts modules for performing multiclass classification on the publicly available NYC taxi dataset. The sample uses a Multiclass logistic regression learner to model this problem.  
-  
--   The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.azureml.net/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample demonstrates how to use the learning with counts modules for performing binary classification on the publicly available NYC taxi dataset. The sample uses a two-class logistic regression learner to model this problem.  
+-   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.
+- The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample uses count-based features in a binary classification task.
+
+> [!NOTE]
+> 
+> If you open a Gallery experiment created using the deprecated versions of the [Learning with Counts](data-transformation-learning-with-counts.md) modules, the experiment is automatically upgraded to use the newer modules.
   
 ##  <a name="ExpectedInputs"></a> Expected Inputs  
   
