@@ -44,7 +44,7 @@ The language detection algorithm can identify many different languages. Just spe
   
 ### Results
 
-The **Detect Languages** module outputs a language identifier and score for each row. I
+The **Detect Languages** module outputs a language identifier and score for each row.
 
 For example, the following table contains a sample analysis on test data.
   
@@ -65,7 +65,7 @@ For example, the following table contains a sample analysis on test data.
 
 ## Examples
 
- For examples of how the **Detect Languages** module is used in an experiment, see the [Cortana Intelligence Gallery](http://gallery.cortanaintelligence.com):
+ For examples of how the **Detect Languages** module is used in an experiment, see the [Azure AI Gallery](http://gallery.cortanaintelligence.com):
   
 -   The sample, [Filter Movie Titles by Language](https://gallery.cortanaintelligence.com/Experiment/Filter-Movie-Titles-by-Language-1) detects the language used in movie names, and then uses the language identifier to split the dataset into English vs non-English movies.
 

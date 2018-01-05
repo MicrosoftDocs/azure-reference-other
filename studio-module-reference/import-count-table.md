@@ -49,11 +49,11 @@ For general information about count tables and how they are used to create featu
   
 4.  Use the **Counting type** option to specify where and how the count table is stored:
   
-    + **Dataset** The data used to build counts is saved as a dataset in Azure Machine Learning Studio.  
+    + **Dataset**: The data used to build counts is saved as a dataset in Azure Machine Learning Studio.  
   
-    + **Blob** The data used to build counts is stored as a block blob in Windows Azure storage.  
+    + **Blob**: The data used to build counts is stored as a block blob in Windows Azure storage.  
   
-    + **MapReduce** The data used to build counts is stored as a blob in Windows Azure storage.  
+    + **MapReduce**: The data used to build counts is stored as a blob in Windows Azure storage.  
   
          This option is typically preferred for very large datasets. To access the counts, you must activate the HDInsight cluster. A MapReduce job is launched to perform the counting. Note that both of these activities can incur storage and compute costs.  
   
@@ -63,11 +63,11 @@ For general information about count tables and how they are used to create featu
   
 5.  Use the **Count table type** option to specify the format and storage mode of the table used to store counts.  
   
-    + **Dictionary**.    Uses a dictionary count table.  
+    + **Dictionary**: Uses a dictionary count table.  
   
          All column values in the selected columns are treated as strings, and are hashed using a bit array of up to 31 bits in size. Therefore, all column values are represented by a non-negative 32-bit integer.  
   
-    -   **CMSketch**.     Uses a table saved in the *count minimum sketch table*.  
+    -   **CMSketch**: Uses a table saved in the *count minimum sketch table*.  
   
          With this format, multiple independent hash functions with a smaller range are used to improve memory efficiency and reduce the chance of hash collisions.  
   
@@ -75,13 +75,13 @@ For general information about count tables and how they are used to create featu
   
 6.  Run the experiment.  
   
-     When complete, right-click the output of the  **Import Count Table** module, select **Save as Transform**, and type a name for the transformation. When you do this, the merged count tables and any featurization parameters you might have applied are saved in a format that can be applied to a new dataset.  
+7. When complete, right-click the output of the  **Import Count Table** module, select **Save as Transform**, and type a name for the transformation. When you do this, the merged count tables and any featurization parameters you might have applied are saved in a format that can be applied to a new dataset.  
   
- For more information about how to apply a counting transformation to dataset to use in building a model, see these topics:  
+    For more information about how to apply a counting transformation to dataset to use in building a model, see these topics:  
   
 ## Examples
 
-Explore examples of count-based featurization using these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
+Explore examples of count-based featurization using these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
 -   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
 - [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.

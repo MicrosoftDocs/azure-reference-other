@@ -24,7 +24,7 @@ This article explains how to use the **Extract N-Gram Features from Text** modul
   
  The module works by creating a dictionary of n-grams from a column of free text that you specify as input. The module applies various information metrics to the n-gram list to reduce data dimensionality and identify the n-grams that have the most information value.
    
- If you have already created a vocabulary of N-grams, you can update its statistics, or merge in new terms, using a weighting algorithm of your choice. 
+ If you have already created a vocabulary of n-grams, you can update its statistics, or merge in new terms, using a weighting algorithm of your choice. 
  
  Because this module supports featurization from n-grams, it can also be used when scoring.
   
@@ -56,7 +56,7 @@ Those module supports the following scenarios for creating, updating, or applyin
   
 5. For **K-Skip size**, type the maximum number of characters that can be different when identifying variants of n-grams. If the value of _k_ is set to 0, n-grams can be created only from a unique, contiguous sequence of characters. 
   
-    For example, assume that your dictionary contains  the unigram "computer". A k value of 0 would mean that "computer" is the only valid unigram. If you increase the value of _k_ to 1, you can skip over one intervening character, which lets you find more similar sequences. A skip-gram with a _k_ value of 1 would differ by one character from the 0-_k_ unigram. Thus, the skip-grams "conputer" and "compuuter" would both be considered part of the same dictionary entry as "computer". Setting the _k_ value to 2 would match even more dissimilar words.
+    For example, assume that your dictionary contains  the unigram "computer". A _k_ value of 0 would mean that "computer" is the only valid unigram. If you increase the value of _k_ to 1, you can skip over one intervening character, which lets you find more similar sequences. A skip-gram with a _k_ value of 1 would differ by one character from the 0-_k_ unigram. Thus, the skip-grams "conputer" and "compuuter" would both be considered part of the same dictionary entry as "computer". Setting the _k_ value to 2 would match even more dissimilar words.
   
     For more information about how skip-grams are used in text analytics, see this paper: [Candidate Generation and Feature Engineering for Supervised Lexical Normalization](http://www.aclweb.org/anthology/W15-4313)  
   
@@ -81,7 +81,7 @@ Those module supports the following scenarios for creating, updating, or applyin
     > [!IMPORTANT]
     > The rate of occurrence of particular words is not uniform, but varies from document to document. For example, if you are analyzing customer comments about a specific product, the product name might be very high frequency and close to a noise word, but be a significant term in other contexts.  
   
-6.  Select the option, **Detect out-of-vocabulary rows**, if you want to generate an indicator for any rows that contain words not in the n-gram vocabulary, which are called out-of-vocabulary (OOV) words.
+6.  Select the option, **Detect out-of-vocabulary rows**, if you want to generate an indicator for any rows that contain words not in the n-gram vocabulary, which are called "out of vocabulary" (OOV) words.
   
     All lexicons are finite; therefore, your text corpus is almost guaranteed to include words that are not in the lexicon or n-gram dictionary. However, such words can have various effects on language models, including higher error rates compared to in-vocabulary (IV) words. Depending on your domain, these OOV words might represent important content words. 
     
@@ -104,13 +104,13 @@ Those module supports the following scenarios for creating, updating, or applyin
   
     If you are using feature selection, you must select a method from the **Feature scoring method** drop-down list:
   
-    + **PearsonCorrelation**. Computes Pearson's correlation based on the label column value and the text vector.
-    + **MutualInformation**. Computes a mutual information score, based on the label column value and the text vector.
-    + **KendallCorrelation**. Computes Kendall's correlation, based on the label column value and the text vector.
-    + **SpearmanCorrelation**. Computes the Spearman correlation, based on the label column value and the text vector.
-    + **ChiSquared**. Uses the chi-squared method to calculate the correlation between the label column value and the text vector.
-    + **FisherScore**. Computes the Fisher score for the label column value and the text vector.
-    + **Count-based feature selection**.  Creates new features based on the counts of values. A label column is not required with this method.
+    + **PearsonCorrelation**: Computes Pearson's correlation based on the label column value and the text vector.
+    + **MutualInformation**: Computes a mutual information score, based on the label column value and the text vector.
+    + **KendallCorrelation**: Computes Kendall's correlation, based on the label column value and the text vector.
+    + **SpearmanCorrelation**: Computes the Spearman correlation, based on the label column value and the text vector.
+    + **ChiSquared**: Uses the chi-squared method to calculate the correlation between the label column value and the text vector.
+    + **FisherScore**: Computes the Fisher score for the label column value and the text vector.
+    + **Count-based feature selection**:  Creates new features based on the counts of values. A label column is not required with this method.
   
     Depending on the method you choose, set one of the following options:
     
@@ -138,19 +138,19 @@ Those module supports the following scenarios for creating, updating, or applyin
 
 8.  For **Vocabulary mode**, select one of the following update options from the drop-down list:
     
-   + **ReadOnly**. Represents the input corpus in terms of the input vocabulary.  That is to say, rather than computing term frequencies from the new text dataset (on the left input), the n-gram weights from the input vocabulary are applied as is.
+   + **ReadOnly**: Represents the input corpus in terms of the input vocabulary.  That is to say, rather than computing term frequencies from the new text dataset (on the left input), the n-gram weights from the input vocabulary are applied as is.
   
         > [!TIP]
         > Use this option when scoring a text classifier.
   
-    + **Update**. Creates a new n-gram vocabulary from the input corpus, and merges it with the input vocabulary.
+    + **Update**: Creates a new n-gram vocabulary from the input corpus, and merges it with the input vocabulary.
     
         In other words, you can add new entries to the created vocabulary from the input vocabulary, or you can update existing entries.
   
         > [!TIP]
         > Use this option for incremental updates of vocabulary with incoming data batches.
   
-    + **Merge**. Generates a new n-gram vocabulary from the input corpus.
+    + **Merge**: Generates a new n-gram vocabulary from the input corpus.
   
          This option is useful if you are passing a background vocabulary as input to the module and want to reduce the weight of stop words. In other words, each entry that has a high document frequency score in the background vocabulary will be assigned a lower inverse document frequency score in the created vocabulary.
   
@@ -159,11 +159,13 @@ Those module supports the following scenarios for creating, updating, or applyin
 
 9. The option, **Choose the weighting function**, is required if you merge or update vocabularies. The weighting function specifies how the DF and IDF scores in the two vocabularies should be weighted against each other:
   
-    + **Binary Weight**. Assigns a binary presence value to the extracted n-grams.  In other words, the value for each n-gram is 1 when it exists in the given document, and 0 otherwise.  
-    + **TF Weight**. Assigns a term-frequency score (**TF**) to the extracted n-grams.  The value for each n-gram is its occurrence frequency in the given document.  
-    + **IDF Weight**. Assigns an inverse document frequency score (**IDF**) to the extracted n-grams.  The value for each n-gram is the log of corpus size divided by its occurrence frequency in the whole corpus. That is, IDF = log of corpus_size / document_frequency).  
-    +  **TF-IDF Weight**. Assigns an term frequency/inverse document frequency score (**TF/IDF**) to the extracted n-grams.  The value for each n-gram is its TF score multiplied by its IDF score.  
-    + **Graph Weight**. Assigns score to the extracted n-grams based on the TextRank graph ranking. TextRank  is a graph-based ranking model for text processing. Graph-based ranking algorithms are essentially a way of deciding importance  based on global information. For more information, see [TextRank- Bringing Order Into Texts](http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf) by Rada Mihalcea and Paul Tarau.
+    + **Binary Weight**: Assigns a binary presence value to the extracted n-grams.  In other words, the value for each n-gram is 1 when it exists in the given document, and 0 otherwise.  
+    + **TF Weight**: Assigns a term-frequency score (**TF**) to the extracted n-grams.  The value for each n-gram is its occurrence frequency in the given document.  
+    + **IDF Weight**: Assigns an inverse document frequency score (**IDF**) to the extracted n-grams.  The value for each n-gram is the log of corpus size divided by its occurrence frequency in the whole corpus. That is:
+    
+        `IDF = log of corpus_size / document_frequency` 
+    +  **TF-IDF Weight**: Assigns an term frequency/inverse document frequency score (**TF/IDF**) to the extracted n-grams. The value for each n-gram is its TF score multiplied by its IDF score.  
+    + **Graph Weight**: Assigns score to the extracted n-grams based on the TextRank graph ranking. TextRank is a graph-based ranking model for text processing. Graph-based ranking algorithms are essentially a way of deciding importance  based on global information. For more information, see [TextRank- Bringing Order Into Texts](http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf) by Rada Mihalcea and Paul Tarau.
 
 10. For all other options, see the property descriptions in the [preceding section](#bkmk_create).
 
@@ -179,11 +181,11 @@ Those module supports the following scenarios for creating, updating, or applyin
   
 3.  In the scoring workflow, modify the **Extract N-Gram Features from Text** module and make these changes, leaving all else the same:  
   
-    -   Set the **Vocabulary mode** parameter to **ReadOnly**  
+    -   Set the **Vocabulary mode** parameter to **ReadOnly**.
   
-    -   Change the option **Use filter based feature selection** to `False`.  
+    -   Change the option **Use filter based feature selection** to `False`.
   
-4.  To publish the  experiment, save the **Result Vocabulary** as dataset.  
+4.  To publish the  experiment, save the **Result Vocabulary** as dataset.
   
      Then, connect the saved dataset to the **Extract N-Gram Features from Text** module in your scoring graph.  
 
@@ -191,54 +193,62 @@ Those module supports the following scenarios for creating, updating, or applyin
 
 The **Extract N-Gram Features from Text** module creates two types of output: 
 
-+ The **Results dataset**, which is a summary of the analyzed text together with the n-grams that were extracted
-+ The **Result vocabulary**, which contains the actual n-gram dictionary. The dictionary is a dataset with scores, so it can be updated, or reused for modeling and scoring.
++ **Results dataset**: A summary of the analyzed text together with the n-grams that were extracted. Columns that you did _not_ select in the **Text column** option are passed through to the output. For each column of text that you analyze, the module generates these columns:
 
-To illustrate the results, these examples use the Amazon Book Review dataset, filtered to show only reviews with a score of 4 or 5, and reviews with a string length of under 300 characters. The short used in the examples contains 92 words, where `Xxx` represents the author's name, and `Yyy` the book title: 
+    - **NgramsString**: A string containing all unique n-grams. 
+    - **NumUniqueNgrams**:  The count of n-grams extracted using the specified properties.
+    - **Sparse matrix of n-gram occurrences**: The module generates a column for each n-gram found in the total corpus and adds a score in each column to indicate the weight of the n-gram for that row. 
+
++ **Result vocabulary**: The vocabulary contains the actual n-gram dictionary, together with the term frequency scores that are generated as part of the analysis.  You can save the dataset for re-use with a different set of inputs, or for later update. You can also update the scores, or reuse the vocabulary for modeling and scoring.
+
+### Sample results
+
+To illustrate how you can use the results, the following short example uses the Amazon Book Review dataset available in Studio. The dataaset was filtered to show only reviews with a score of 4 or 5, and reviews with a string length of under 300 characters. 
+
+From this dataset, a short review was selected, containing only 92 words. Here the author's name has been replaced with `Xxx` and the book title replaced with `Yyy`: 
 
 `"Xxx at his best ! Yyy is one of Xxx's best yet! I highly recommend this novel."`
   
-**Results dataset**. The first dataset contained the results of n-gram extraction. Columns that you did _not_ select in the **Text column** option are passed through to the output.
+#### Results dataset for sample review text
 
-For each column of text that you analyzed, the module generates these columns:
+For this sample, the module generated these columns:
 
-+ **NumUniqueNgrams**:  The count of n-grams extracted using the specified properties.
++ **NumUniqueNgrams**:  For this 92 word review, using the default settings, 11 n-grams were extracted from the sample review. 
+    
+    When the n-gram length was increased to 3 and the skip-gram value set to 1, 15 n-grams were found. 
+    
+    When feature selection was applied to the default, no n-grams were extracted. 
 
-   With default settings, 11 n-grams were extracted from the sample review.
-   When the n-gram length was increased to 3 and the skip-gram value set to 1, 15 n-grams were found.
-   When feature selection was applied to the default, no n-grams were extracted. 
++ **NgramsString**:With the default settings, these n-grams were returned:  ["his","best","one","highly","recommend","this","novel","his_best","highly_recommend","recommend_this","this_novel"]
 
-+ **NgramsString**: A string containing all unique n-grams. 
+    With an n-gram length of 3 and skip-gram value of 1, these n-grams were returned: ["his","best","one","highly","recommend","this","novel","his_best","highly_recommend","recommend_this","this_novel","best_one","one_best","highly_this","highly_recommend_this"]
 
-   With the default settings, these n-grams were returned: ["his","best","one","highly","recommend","this","novel","his_best","highly_recommend","recommend_this","this_novel"]
++ **Sparse matrix of n-gram occurrences**
 
-   With an n-gram length of 3 and skip-gram value of 1, these n-grams were returned: ["his","best","one","highly","recommend","this","novel","his_best","highly_recommend","recommend_this","this_novel","best_one","one_best","highly_this","highly_recommend_this"]
-
-+ Sparse matrix of n-gram occurrences
-
-    The module generates a column for each n-gram found in the total corpus and adds a score in each column to indicate the weight of the n-gram for that row. Therefore, for this particular review, the results might include these columns:
+    For this particular review, the results included these columns:
 
     | ReviewText.[manages]| ReviewText.[and\_highly]| ReviewText.[highly] |ReviewText.[highly\_recommend] |
     |----|----|----|----|
     |0|0|0.301511|0.301511|
 
     > [!TIP]
-    > To find or view a subset of columns by name, use the search function [Select Columns in Dataset](select-columns-in-dataset.md) module.
+    > If you have trouble viewing a particular column, attach the [Select Columns in Dataset](select-columns-in-dataset.md) module to the output, and then use the search function to filter columns by name.
 
-**Result vocabulary**. The vocabulary contains the actual n-gram dictionary, together with the term frequency scores that are generated as part of the analysis. You can save the dataset for re-use with a different set of inputs, or for later update.
+#### Result vocabulary for sample review text
+
+The vocabulary contains the actual n-gram dictionary, together with the term frequency scores that are generated as part of the analysis. You can save the dataset for re-use with a different set of inputs, or for later update. The scores **DF** and **IDF** are generated regardless of other options. When you combine vocabularies, these stored values are used as input to the weighting function you choose.
 
 + **Id**: An identifier generated for each unique n-gram.
 + **Ngram**: The n-gram. Spaces or other word separators are replaced by the underscore character.
 + **DF**: The term frequency score for the n-gram in the original corpus.
 + **IDF**: The inverse document frequency score for the n-gram in the original corpus.
 
-> [!NOTE] 
-> The scores **DF** and **IDF** are generated regardless of other options. When you combine vocabularies, these stored values are used as input to the weighting function you choose.
-
 It is possible to manually update this dataset; however, be careful, as you can introduce errors. For example:
 
 + An error is raised if the module finds duplicate rows with the same key in the input vocabulary. Be sure that no two rows in the vocabulary have the same word.
-+ The input schema of the vocabulary datasets must match exactly, including column names and column types. The **ID** column and **DF** score column must be of the integer type. The **IDF** column must be of type FLOAT (floating point).
++ The input schema of the vocabulary datasets must match exactly, including column names and column types. 
++ The **ID** column and **DF** score column must be of the integer type. 
++ The **IDF** column must be of type FLOAT (floating point).
 
 ##  <a name="bkmk_TechnicalNotes"></a> Technical Notes
 

@@ -1,5 +1,5 @@
 ---
-title: "Import from CosmosDB (DocumentDB) | Microsoft Docs"
+title: "Import from DocumentDB (CosmosDB) | Microsoft Docs"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -13,7 +13,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "cgronlund"
 ---
-# Import from CosmosDB (DocumentDB)
+# Import from DocumentDB (CosmosDB)
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning to import data from Azure CosmosDB for use in a machine learning experiment.
   
@@ -25,12 +25,15 @@ Learn how it works: [Learn about CosmosDB](https://azure.microsoft.com/services/
 
 **What's changed?**
 
-The service is the same, but has been renamed the "Azure Cosmos DB SQL API". See this article for information about the new name and other  changes: [Azure Cosmos DB FAQ](https://docs.microsoft.com/azure/cosmos-db/faq)
+The service provides the same functionality as before, but has been renamed the "Azure Cosmos DB SQL API". See this article for information about the new name and other changes: [Azure Cosmos DB FAQ](https://docs.microsoft.com/azure/cosmos-db/faq)
 
-Because the underlying API fully supports DocumentDB, you don't need to change anything to continue running machine learning experiments that rely on DocumentDB. 
+Because the underlying API fully supports DocumentDB, you don't need to change anything to continue running machine learning experiments that rely on DocumentDB.  
 
 + To get started with machine learning using data from Microsoft Azure CosmosDB, you must have access to an existing CosmosDB account containing a collection of related documents. 
 + If you had a DocumentDB API account before, you now have a CosmosDB SQL API account, with no change to your billing.
+
+> [!NOTE]
+> The user interface in Azure Machine Learning Studio still uses the name DocumentDB in many places. Therefore, you may continue to see references to DocumentDB, even though the API has been incorporated into CosmosDB. 
 
 ## How to Import Data from CosmosDB
 
@@ -109,7 +112,7 @@ However doing so will capture only the data available at the time of import. If 
   
 ##  <a name="Examples"></a> Examples
  
-For a detailed walkthrough of how to use DocumentDB as a data source for machine learning, see this experiment in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/).  
+For a detailed walkthrough of how to use DocumentDB as a data source for machine learning, see this experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).  
  
 + [Reading data from Azure DocumentDB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1) 
 

@@ -1,7 +1,7 @@
 ---
 title: "Import Data | Microsoft Docs"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/05/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -52,7 +52,7 @@ If you are not sure how or where you should store your data, see this guide to c
 |[Import from Azure Blob Storage](import-from-azure-blob-storage.md) |Get data that is stored in the Azure blob service|  
 |[Data Feed Providers](import-from-data-feed-providers.md) |Get data exposed as a feed in OData format|  
 |[Import from On-Premises SQL Server Database](import-from-on-premises-sql-server-database.md)|Get data from an on-premises SQL Server database using the Microsoft Data Management Gateway|
-|[Azure Cosmos DB (DocumentDB)](import-from-documentdb.md)| Get data stored in JSON format in Azure CosmosDB, formerly named DocumentDB |
+|[Azure DocumentDB (CosmosDB)](import-from-documentdb.md)| Get data stored in JSON format in Azure CosmosDB, formerly named DocumentDB |
 
 > [!TIP]
 > 

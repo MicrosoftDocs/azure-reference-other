@@ -22,10 +22,10 @@ manager: "cgronlund"
 
 This article describes how to use the **Build Count Table** module in Azure Machine Learning Studio to analyze training data and create a *count table*, which contains the joint distribution of all feature columns given a specified label column.
 
-The table of counts is used as an input to the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module. From the count-based information, the **Count Featurizer** module creates a set of features that is more compact than the original training data, but which captures all the most useful information.
+The table of counts is used as an input to the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module. From the count-based information, the **Count Featurizer** module creates a new set of features, which is more compact than the original training data, but which captures all the most useful information.
 
 > [!IMPORTANT]
-> This module and related modules have been deprecated. The older versions are provided solely to support s who have existing experiments that use the older modules for count-based featurization. We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. 
+> This module and related modules have been deprecated. The older versions are provided solely to support existing experiments that use previous modules for count-based featurization. We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. 
 >
 >  For all new experiments, we recommend that you use the following modules:  
 >   

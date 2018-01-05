@@ -22,7 +22,7 @@ manager: "cgronlund"
 
 This article describes how to use the **Build Counting Transform** module in Azure Machine Learning Studio to analyze training data. From this data, the module builds a *count table* as well as a set of *count-based features* that can be used in a predictive model.
   
- A count table contains the joint distribution of all feature columns given a specified label column. Such statistics are is useful in determining which columns have the most information value. *Count-based featurization* is useful because such features are more compact than the original training data, but capture all the most useful information. You can use the module parameters to customize how the counts are transformed into the new set of count-based features.  
+ A count table contains the joint distribution of all feature columns, given a specified label column. Such statistics are useful in determining which columns have the most information value. *Count-based featurization* is useful because such features are more compact than the original training data, but capture all the most useful information. You can use the module parameters to customize how the counts are transformed into the new set of count-based features.  
   
  After generating counts and transforming them into features, you can save the process as a transformation for re-use on related data. You can also modify the set of features without having to generate a new set of counts, or merge the counts and features with another set of counts and features.  
   
@@ -72,11 +72,11 @@ You can create a count-based feature transformation directly from a dataset, and
 
 6.  Use the **Module type** option to indicate the type of data that you will be counting, based on the storage mode:  
   
-    + **Dataset** Choose this option if you will be counting data that is saved as a dataset in Azure Machine Learning Studio.  
+    + **Dataset**: Choose this option if you will be counting data that is saved as a dataset in Azure Machine Learning Studio.  
   
-    + **Blob** Choose this option if your source data used to build counts is stored as a block blob in Windows Azure storage.  
+    + **Blob**: Choose this option if your source data used to build counts is stored as a block blob in Windows Azure storage.  
   
-    + **MapReduce** Choose this option if you want to call Map/Reduce functions to process the data. 
+    + **MapReduce**: Choose this option if you want to call Map/Reduce functions to process the data. 
     
         To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job will be launched in the cluster to perform the counting.  
   
@@ -100,13 +100,13 @@ You can create a count-based feature transformation directly from a dataset, and
   
 10. Use the **Count table type** option to specify the format used for storing the count table.  
   
-    + **Dictionary:** Creates a dictionary count table. All column values in the selected columns are treated as strings, and are hashed using a bit array of up to 31 bits in size. Therefore, all column values are represented by a non-negative 32-bit integer.  
+    + **Dictionary**: Creates a dictionary count table. All column values in the selected columns are treated as strings, and are hashed using a bit array of up to 31 bits in size. Therefore, all column values are represented by a non-negative 32-bit integer.  
   
          In general, you should use the **Dictionary** option for smaller data sets (less than 1 GB), and use the **CMSketch** option for larger datasets.  
          
          After selecting this option, configure the number of bits used by the hashing function, and set a seed for initializing the hash function.  
   
-    -   **CMSketch:**  Creates a *count minimum sketch table*. With this option, multiple independent hash functions with a smaller range are used to improve memory efficiency and reduce the chance of hash collisions.  
+    -   **CMSketch**:  Creates a *count minimum sketch table*. With this option, multiple independent hash functions with a smaller range are used to improve memory efficiency and reduce the chance of hash collisions.  
   
          The parameters for hashing bit size and hashing seed have no effect on this option.  
 
@@ -122,17 +122,17 @@ You can create a count-based feature transformation directly from a dataset, and
   
 2.  Use the **Module type** option to indicate the source of the new data. You can merge data from different sources.  
   
-    + **Dataset** Choose this option if the new data is provided as a dataset in Azure Machine Learning Studio.  
+    + **Dataset**: Choose this option if the new data is provided as a dataset in Azure Machine Learning Studio.  
   
-    + **Blob** Choose this option if the new data is provided as a block blob in Windows Azure storage.  
+    + **Blob**: Choose this option if the new data is provided as a block blob in Windows Azure storage.  
   
-    + **MapReduce** Choose this option if you want to call Map/Reduce functions to process the data. 
+    + **MapReduce**: Choose this option if you want to call Map/Reduce functions to process the data. 
     
         To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job will be launched in the cluster to perform the counting.  
   
          For more information, see [http://azure.microsoft.com/services/hdinsight/](http://azure.microsoft.com/services/hdinsight/).  
   
-3.  After specifying the data storage mode, provide any additional connection information for the new data :  
+3.  After specifying the data storage mode, provide any additional connection information for the new data:  
   
     + If you are using data from Hadoop or blob storage, provide the cluster location and credentials.  
   
@@ -166,7 +166,7 @@ See these articles for more information about the counts algorithm and the effic
 + [Using Azure ML to Build Click-through Prediction Models](http://go.microsoft.com/fwlink/?LinkId=699305)  
 + [Big Learning Made Easy with Counts!](https://blogs.technet.microsoft.com/machinelearning/2015/02/17/big-learning-made-easy-with-counts/)  
   
-The following experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) demonstrate how to use count-based learning to build various predictive models:  
+The following experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) demonstrate how to use count-based learning to build various predictive models:  
   
 + [Learning With Counts - Binary Classification](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-Classification-2)  
 + [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2)

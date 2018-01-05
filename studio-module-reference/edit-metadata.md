@@ -1,7 +1,7 @@
 ---
 title: "Edit Metadata | Microsoft Docs"
 ms.custom: ""
-ms.date: 12/1814/2017
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -20,7 +20,7 @@ manager: "cgronlund"
   
 ## Module Overview  
 
-This article describes how to use the [Edit Metadata](edit-metadata.md) module in Azure Machine Learning Studio to change metadata that is associated with columns in a dataset. The data itself, including the values and the data types) are not actually altered; what changes is the metadata inside Azure Machine Learning that tells downstream components how to use the column.
+This article describes how to use the [Edit Metadata](edit-metadata.md) module in Azure Machine Learning Studio to change metadata that is associated with columns in a dataset. The values and the data types in the dataset are not actually altered; what changes is the metadata inside Azure Machine Learning that tells downstream components how to use the column.
 
 Typical metadata changes might include:
   

@@ -1,7 +1,7 @@
 ---
 title: "Two-Class Boosted Decision Tree | Microsoft Docs"
 ms.custom: ""
-ms.date: 08/10/2016
+ms.date: 12/18/2017
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: e3c522f8-53d9-4829-8ea4-5c6a6b75330c
 caps.latest.revision: 24
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Two-Class Boosted Decision Tree
 *Creates a binary classifier using a boosted decision tree algorithm*  
@@ -19,122 +19,140 @@ manager: "jhubbard"
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
   
 ##  <a name="Remarks"></a> Module Overview  
- You can use the **Two-Class Boosted Decision Tree** module to create a machine learning model that is based on the boosted decision trees algorithm. A boosted decision tree is an ensemble learning method in which the second tree corrects for the errors of the first tree, the third tree corrects for the errors of the first and second trees, and so forth.  Predictions are based on the entire ensemble of trees together that makes the prediction.  
+
+This article describes how to use the **Two-Class Boosted Decision Tree** module in Azure Machine Learning Studio to create a machine learning model that is based on the boosted decision trees algorithm. 
+
+A boosted decision tree is an ensemble learning method in which the second tree corrects for the errors of the first tree, the third tree corrects for the errors of the first and second trees, and so forth.  Predictions are based on the entire ensemble of trees together that makes the prediction.
   
- Generally, when properly configured, boosted decision trees are the easiest methods with which to get top performance on a wide variety of machine learning tasks. However, they are also one of the more memory-intensive learners, and the current implementation holds everything in memory; therefore, a boosted decision tree model might not be able to process the very large datasets that some linear learners can handle.  
+Generally, when properly configured, boosted decision trees are the easiest methods with which to get top performance on a wide variety of machine learning tasks. However, they are also one of the more memory-intensive learners, and the current implementation holds everything in memory. Therefore, a boosted decision tree model might not be able to process the very large datasets that some linear learners can handle.
   
- For more information about how to choose an algorithm, see these resources:  
+For more information about how to choose an algorithm, see these resources:  
   
--   [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-cheat-sheet/)  
+-   [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
--   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/)  
+-   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/,machine-learning/machine-learning-algorithm-choice/)  
   
- Classification is a supervised learning method, and therefore requires a *tagged dataset*, which includes a label column.  
+This module creates a classification model, which is a supervised learning method. Therefore, your training data must be a *tagged dataset* that includes a label column with a value for all rows.
   
- You can train the model by providing the boosted decision tree model and the tagged dataset as an input to [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for the new input examples.  
+After preparing the training data, you can train the model by connecting the boosted decision tree model to the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. Both of these training modules create a trained model that can be used for prediction.  
   
 ## How to Configure a Boosted Tree Model  
   
-1.  Add the **Boosted  Decision Tree** module to the experiment.  
+1.  In Azure Machine Learning Studio, add the **Boosted  Decision Tree** module to your experiment.
   
-2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
+2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.
   
-    -   **Single Parameter**.                   If you know how you want to configure the model, you can provide a specific set of values as arguments.  
+    + **Single Parameter**. If you know how you want to configure the model, you can provide a specific set of values as arguments.
   
-    -   **Parameter Range**. If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to find the optimal configuration.  The trainer will iterate over multiple combinations of the settings you provided and determine the combination of values that produces the best model.  
+    + **Parameter Range**. If you are not sure of the best parameters, you can find the optimal parameters by using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module. You provide some range of values, and the trainer iterates over multiple combinations of the settings to determine the combination of values that produces the best result.
   
-3.  For **Maximum number of leaves per tree**, indicate the maximum number of terminal nodes (leaves) that can be created in any tree.  
+3.  For **Maximum number of leaves per tree**, indicate the maximum number of terminal nodes (leaves) that can be created in any tree.
   
-     By increasing this value, you potentially increase the size of the tree and get better precision, at the risk of overfitting and longer training time.  
+     By increasing this value, you potentially increase the size of the tree and get better precision, at the risk of overfitting and longer training time.
   
 4.  For **Minimum number of samples per leaf node**, indicate the number of cases required to create any terminal node (leaf) in a tree.  
   
-     By increasing this value, you increase the threshold for creating new rules. For example, with the default value of 1, even a single case can cause a new rule to be created. If you increase the value to 5, the training data would have to contain at least 5 cases that meet the same conditions.  
+     By increasing this value, you increase the threshold for creating new rules. For example, with the default value of 1, even a single case can cause a new rule to be created. If you increase the value to 5, the training data would have to contain at least 5 cases that meet the same conditions.
   
 5.  For **Learning rate**, type a number between 0 and 1 that defines the step size while learning.  
   
-     The learning rate determines how fast or slow the learner converges on the optimal solution. If the step size is too big, you might overshoot the optimal solution. If the step size is too small, training takes longer to converge on the best solution.  
+     The learning rate determines how fast or slow the learner converges on the optimal solution. If the step size is too big, you might overshoot the optimal solution. If the step size is too small, training takes longer to converge on the best solution.
   
-6.  For **Number of trees constructed**, indicate the total number of decision trees to create in the ensemble. By creating more decision trees, you can potentially get better coverage, but training time will increase.  
+6.  For **Number of trees constructed**, indicate the total number of decision trees to create in the ensemble. By creating more decision trees, you can potentially get better coverage, but training time will increase.
   
-     This value also controls the number of trees displayed when visualizing the trained model. if you want to see or print a ingle tree, you can set the value to 1; however, this means that only one tree will be produced (the tree with the initial set of parameters) and n further iterations will be performed.  
+     This value also controls the number of trees displayed when visualizing the trained model. if you want to see or print a single tree, set the value to 1. However, when you do so, only one tree is produced (the tree with the initial set of parameters) and no further iterations are performed.
   
-7.  For **Random number seed**, you can type a non-negative integer to use as the random seed value. Specifying a seed ensures reproducibility across runs that have the same data and parameters.  
+7.  For **Random number seed**, optionally type a non-negative integer to use as the random seed value. Specifying a seed ensures reproducibility across runs that have the same data and parameters.  
   
-     The random seed is set by default to 0, which means the initial seed value is obtained from the system clock.  
+     The random seed is set by default to 0, which means the initial seed value is obtained from the system clock.  Successive runs using a random seed can have different results.
   
 8.  Select **Allow unknown categorical levels** option to create a group for unknown values in the training and validation sets.  
   
-     If you deselect this option, the model can accept only the values that are contained in the training data. In the former case, the model might be less precise for known values, but it can provide better predictions for new (unknown) values.  
+     If you deselect this option, the model can accept only the values that are contained in the training data.
+     
+     If you allow unknown values, the model might be less precise for known values, but likely can provide better predictions for new (unknown) values.
   
-9. Train the model.  
+9. Train the model.
   
-    -   If you set **Create trainer mode** to **Single Parameter**, connect a tagged dataset and the [Train Model](train-model.md) module.  
+    + If you set **Create trainer mode** to **Single Parameter**, connect a tagged dataset and the [Train Model](train-model.md) module.  
   
-    -   If you set **Create trainer mode** to **Parameter Range**, connect a tagged dataset and train the model by using [Tune Model Hyperparameters](tune-model-hyperparameters.md).  
+    + If you set **Create trainer mode** to **Parameter Range**, connect a tagged dataset and train the model by using [Tune Model Hyperparameters](tune-model-hyperparameters.md).  
   
     > [!NOTE]
-    >  -   If you pass a parameter range to [Train Model](train-model.md), it will use only the first value in the parameter range list.  
-    > -   If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and using the default values for the learner.  
-    > -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.  
+    >  + If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.  
+    > + If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values, and uses the default values for the learner.  
+    > + If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.
   
-10. When the model is trained, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize** to see the tree that was created on each iteration.  
+### Results
+
+After model training is complete, right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) to view the results:
+
++  To see the tree that was created on each iteration, select **Visualize**. 
++ To drill down into the splits and see the rules for each node, click each tree.
   
-     You can click on each tree to drill down into the splits and see the rules for each node.  
+## Examples
+
+Explore the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) to see examples of how boosted decision trees are used in machine learning:
   
-## Examples  
- For examples of how boosted decision trees are used in machine learning, see these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
-  
--   The [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168) sample uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.  
+-   The [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168) sample uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
   
 -   The [Flight delay prediction](https://gallery.azureml.net/Experiment/837e2095ce784f1ba5ac623a60232027) sample uses the **Two-Class Boosted Decision Tree** algorithm to determine whether a flight is likely to be delayed.  
   
 -   The [Credit card risk](http://go.microsoft.com/fwlink/?LinkId=525270) sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.  
   
 ## Technical Notes  
- To train a boosted decision tree model, you must provide multiple data instances—that is, more than one row.  
+
+This section contains implementation details and frequently asked questions.
+
+### Guidance
+
++ To train a boosted decision tree model, you must provide multiple data instances. An error is generated during the training process if the dataset contains too few rows.  
+
++ If your data has missing values, you must add indicators for the features.
   
- In general, boosted decision trees yield better results when features are somewhat related. If features have a large degree of entropy (that is, they are not related), they share little or no mutual information, and ordering them in a tree will not yield a lot of predictive significance.  
++ In general, boosted decision trees yield better results when features are somewhat related. If features have a large degree of entropy (that is, they are not related), they share little or no mutual information, and ordering them in a tree will not yield a lot of predictive significance. If this is not the case, you might try a random forests model.
   
- Generally, boosting works well when you have many more examples than features because the model is prone to overfitting.  
+    Boosting also works well when you have many more examples than features because the model is prone to overfitting.
+
++ Do not normalize the dataset. Because the treatment of features is a simple, non-parametric, less-than or greater-than comparison, normalization or any form of non-monotonic transformation function will have little effect. 
+
++ Features are discretized and binned prior to training, so only a relatively small set of threshold candidates are considered, even for continuous features.
+
+### Technical details
+
+For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](http://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
   
- If you have missing values in your data, add indicators for appropriate features.  
+The boosted decision tree algorithm in Azure Machine Learning uses the following boosting method:
   
- Because the treatment of features is a simple, non-parametric, less-than/greater-than comparison, normalization or any form of non-monotonic transformation function will have little effect. (It can possibly lead to the choice of different bins, which is effectively random.)  
+1.  Start with an empty ensemble of weak learners.
   
-### Implementation  
- For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](http://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
+2.  For each training example, get the current output of the ensemble. This is the sum of the outputs of all weak learners in the ensemble.
   
- The boosted decision tree algorithm in Azure Machine Learning uses the following boosting method:  
+3.  Calculate the gradient of the loss function for each example.
+
+    This depends on whether the task is a binary classification problem or a regression problem.  
   
-1.  Start with an empty ensemble of weak learners.  
+    + In a binary classification model, the log-loss is used, much like in logistic regression.  
   
-2.  For each training example, get the current output of the ensemble. (This is the sum of the outputs of all weak learners in the ensemble.)  
+    + In a [regression](boosted-decision-tree-regression.md) model, the squared loss is used, and the gradient is the current output, minus the target).
   
-3.  Calculate the gradient of the loss function (problem dependent) for each example.  
-  
-4.  Use the example to fit a weak learner by using that gradient as the target function.  
+4.  Use the example to fit a weak learner by using that gradient as the target function.
   
 5.  Add that weak learner to the ensemble with a strength indicated by the learning rate, and if desired, go to Step 2.  
   
- The implementations are identical up to the gradient of the loss, which depends on whether the task is a binary classification problem or a regression problem.  
+    The weak learners in this implementation are the least-squares regression trees, which use the gradients calculated in Step 3 as the target. The trees are subject to the following restrictions:  
   
--   In a binary classification model, the log-loss is used, much like in logistic regression.  
+    + They are trained up to a maximum number of leaves.  
   
--   In a [regression](boosted-decision-tree-regression.md) model, the squared loss is used, and the gradient is the current output, minus the target).  
+    + Each leaf has a minimum number of examples to guard against overfitting.  
   
- The weak learners in this implementation are the least-squares regression trees, which use the gradients calculated in Step 3 as the target. The trees are subject to the following restrictions:  
+    + Each decision node is a single feature that is compared against some threshold. If that feature is less than or equal to the threshold, it goes down one path, and if it is greater than the threshold, it goes down the other path.  
+    + Each leaf node is a constant value.  
   
--   They are trained up to a maximum number of leaves.  
-  
--   Each leaf has a minimum number of examples to guard against overfitting.  
-  
--   Each decision node is a single feature that is compared against some threshold. If that feature is less than or equal to the threshold, it goes down one path, and if it is greater than the threshold, it goes down the other path.  
-  
--   Each leaf node is a constant value.  
-  
- The tree-building algorithm greedily selects the feature and threshold for which a split will most decrease the squared loss with regard to the gradient calculated in Step 3. It is subject to a minimum number of training examples per leaf. It repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. Features are discretized and binned prior to training, so only a relatively small set of threshold candidates are considered, even for continuous features.  
-  
+6. The tree-building algorithm greedily selects the feature and threshold for which a split will most decrease the squared loss with regard to the gradient calculated in Step 3. It is subject to a minimum number of training examples per leaf. 
+
+    It repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. 
+
 ##  <a name="parameters"></a> Module Parameters  
   
 |Name|Range|Type|Default|Description|  
