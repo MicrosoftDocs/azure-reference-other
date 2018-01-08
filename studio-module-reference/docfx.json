@@ -31,11 +31,13 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/azure/machine-learning/studio-module-reference/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "breadcrumb_path": "/azure/machine-learning/studio-module-reference/bread/toc.json",
+      "extendBreadcrumb": true,
+      "brand": "azure"
     },
     "fileMetadata": {},
     "template": [],
     "dest": "studio-module-reference"
   }
 }
+
