@@ -43,7 +43,7 @@ CreatePolygon (points)
   
 ## Example  
   
-```  
+```SQL  
  SELECT  
      CreatePolygon(CreatePoint(input.latitude, input.longitude), CreatePoint(10.0, 10.0), CreatePoint(10.5, 10.5), CreatePoint(input.latitude, input.longitude))  
 FROM input  

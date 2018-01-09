@@ -35,7 +35,7 @@ MONTH ( date )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT MONTH (EntryTime)  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

@@ -36,7 +36,7 @@ LEN ( string_expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT TollId, EntryTime, LicensePlate, LEN (LicensePlate) AS Len_License  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

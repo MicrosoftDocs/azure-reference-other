@@ -58,7 +58,7 @@ DATEADD ( datepart , number, date )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT DATEDIFF (minute, EntryTime, DATEADD(hour,2,EntryTime)) AS DiffTime  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

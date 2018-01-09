@@ -35,7 +35,7 @@ SQUARE (float_expression)
   
 ## Example  
   
-```  
+```SQL  
 SELECT SQUARE(input.x) AS "The SQUARE of the variable x"  
 FROM input  
 ```  

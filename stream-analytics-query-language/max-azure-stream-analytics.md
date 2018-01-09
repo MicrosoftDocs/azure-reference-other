@@ -38,7 +38,7 @@ MAX ( expression )
   
 ## Examples  
   
-```  
+```SQL  
   
 SELECT System.TimeStamp AS OutTime, TollId, MAX (Toll)   
 FROM Input TIMESTAMP BY EntryTime  

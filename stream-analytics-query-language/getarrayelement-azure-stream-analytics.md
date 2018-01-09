@@ -35,11 +35,11 @@ GetArrayElement ( array_expression, bigint_expression )
  Is the bigint expression to be evaluated as array index  
   
 ### Return Types  
- Return type is determined by the array element type and can be any of the [supported types.](https://msdn.microsoft.com/en-us/library/azure/dn835065.aspx)  
+ Return type is determined by the array element type and can be any of the [supported types.](#data-types-azure-stream-analytics.md)  
   
 ### Examples  
   
-```  
+```SQL  
 SELECT   
     GetArrayElement(arrayField, 0) AS firstElement  
 FROM input  

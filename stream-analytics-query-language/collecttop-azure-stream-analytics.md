@@ -42,7 +42,7 @@ CollectTop(<number of events as integer literal>) OVER (ORDER BY (<column name> 
   
 ## Examples  
   
-```  
+```SQL  
 SELECT   
     value1,  
     CollectTop(2) OVER (ORDER BY value2 ASC, value3 DESC) as top1  

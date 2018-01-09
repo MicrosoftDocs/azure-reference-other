@@ -39,7 +39,7 @@ ST_INTERSECTS (lineStringA, lineStringB)
   
 ## Example  
   
-```  
+```SQL  
 SELECT  
      ST_INTERSECTS(input.pavedRoad, input.dirtRoad)  
 FROM input  

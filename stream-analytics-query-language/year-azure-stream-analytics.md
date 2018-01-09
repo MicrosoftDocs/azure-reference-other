@@ -35,7 +35,7 @@ YEAR ( date )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT YEAR (EntryTime)  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

@@ -21,7 +21,7 @@ Calculates a percentile based on a continuous distribution of the entire data se
   
  **Syntax**  
   
-```  
+``` 
 PERCENTILE_CONT ( numeric_literal )
       OVER ( ORDER BY order_by_expression [ ASC | DESC ] )
 ```  
@@ -43,7 +43,7 @@ Float
 
 The following example uses PERCENTILE_CONT to find the 95th percentile of service availability across regions. Note that the function may not return a percentile that is within the input data set. This is because PERCENTILE_CONT interpolates the appropriate value, whether or not it exists in the data set.
   
-```  
+```SQL  
 SELECT PERCENTILE_CONT(0.95) OVER (ORDER BY serviceAvailability)
 FROM testInput
 GROUP BY SlidingWindow(hours, 1)

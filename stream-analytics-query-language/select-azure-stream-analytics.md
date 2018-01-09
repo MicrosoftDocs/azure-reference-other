@@ -70,7 +70,7 @@ SELECT <select_list>
   
 ## Example  
   
-```  
+```SQL  
 SELECT TollId, EntryTime AS VehicleEntryTime, LicensePlate, State, Make, Model, VehicleType, VehicleWeight, Toll, Tag   
 FROM TollTagEntry TIMESTAMP BY EntryTime  
   

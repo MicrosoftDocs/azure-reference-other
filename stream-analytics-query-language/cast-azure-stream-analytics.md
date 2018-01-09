@@ -24,7 +24,7 @@ manager: "jhubbard"
   
  **Syntax**  
   
-```  
+``` 
 CAST ( expression AS data_type)  
   
 ```  
@@ -43,7 +43,7 @@ CAST ( expression AS data_type)
   
 ## Examples  
   
-```  
+```SQL  
   
 SELECT TollId, EntryTime, LicensePlate, State, Make   
 FROM Input TIMESTAMP BY EntryTime  

@@ -35,7 +35,7 @@ EXP (float_expression)
   
 ## Example  
   
-```  
+```SQL  
 SELECT EXP(input.x) AS "The EXP of the variable x"  
 FROM input  
 ```  

@@ -21,7 +21,7 @@ Returns 1 if the event is the first event within a given duration, or 0 otherwis
   
  **Syntax**  
   
-```  
+```SQL  
 ISFIRST ( timeunit  , duration )   
     [ OVER ( [PARTITION BY partition_by_expression] [WHEN when_expression]) ]  
   
@@ -71,7 +71,7 @@ The WHEN clause is optional.
 ## Examples  
  Indicate whether a sensor reading event is the first within 10 minutes:  
   
-```  
+```SQL  
 SELECT  
        reading,  
        ISFIRST(mi, 10) as first  
@@ -80,7 +80,7 @@ FROM Input
   
  Indicate whether an event is the first within 10 minute intervals per deviceid:  
   
-```  
+```SQL  
 SELECT  
        deviceid,  
        reading,  
@@ -91,7 +91,7 @@ FROM Input
  Indicate whether an event is the first event with value greater than 50 within 10 minute intervals  
 per deviceid:  
   
-```  
+```SQL  
 SELECT
        deviceid,
        reading,

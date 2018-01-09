@@ -35,7 +35,7 @@ VAR (expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT System.TimeStamp AS OutTime, TollId, VAR (Toll)   
 FROM Input  
 GROUP BY TollId, TumblingWindow(minute,3)  

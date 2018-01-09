@@ -25,7 +25,7 @@ manager: "jhubbard"
   
  **Syntax**  
   
-```  
+```SQL
   
 <input> {CROSS | OUTER} APPLY <elements_selector>  
   
@@ -67,8 +67,7 @@ manager: "jhubbard"
 ## Examples  
  In this example, extending the tollbooth scenario, we assume that cars can have more than one license plate (e.g. a car towing a trailer would have two). Cross/outer apply can be used to flatten this array, i.e. get one row per license plate.  
   
-```  
-  
+```SQL
 CREATE TABLE input(TollId nvarchar(max), EntryTime datetime, Licenses array)  
   
 SELECT e.TollId, e.EntryTime, flat.ArrayValue AS licensePlate   
@@ -79,8 +78,7 @@ SELECT e.TollId, e.EntryTime, flat.ArrayValue AS licensePlate
   
  The query can be modified to use outer apply in order to also keep track of cars without any license plate.  
   
-```  
-  
+```SQL
 SELECT e.TollId, e.EntryTime,   
 flat.ArrayValue AS licensePlate, flat.ArrayIndex AS licensePlateIndex  
    FROM input AS e   
@@ -90,8 +88,7 @@ flat.ArrayValue AS licensePlate, flat.ArrayIndex AS licensePlateIndex
   
  Another example using nested arrays (array of arrays).  
   
-```  
-  
+```SQL
 WITH firstQuery AS (  
    SELECT input.TollId, input.EntryTime,   
    flat.ArrayIndex AS i1, flat.ArrayValue AS licenses   

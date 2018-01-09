@@ -23,7 +23,7 @@ manager: "jhubbard"
   
  **Syntax**  
   
-```  
+```SQL 
 CREATE TABLE   
     table_name   
     ( column_name <data_type> [ ,...n ] );  
@@ -46,7 +46,7 @@ CREATE TABLE
   
 ## Examples  
   
-```  
+```SQL  
   
 CREATE TABLE TollTagEntry (  
    TollId nvarchar(max),  

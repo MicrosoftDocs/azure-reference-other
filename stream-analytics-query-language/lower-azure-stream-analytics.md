@@ -35,7 +35,7 @@ LOWER ( string_expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT TollId, EntryTime, LOWER(LicensePlate) AS LicensePlate_Lower  
 FROM Input  
 ```  

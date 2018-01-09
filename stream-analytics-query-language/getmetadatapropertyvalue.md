@@ -75,5 +75,7 @@ Creates a unique id (Guid) for an input event, which can be useful for primary k
 
 ### Example
 
-`select GetMetadataPropertyValue(ehInput, 'EventId') as eventPrimaryKey from ehInput` 
+```SQL
+SELECT GetMetadataPropertyValue(ehInput, 'EventId') as eventPrimaryKey from ehInput
+``` 
 

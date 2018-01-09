@@ -33,17 +33,17 @@ manager: "jhubbard"
   
  Simple CASE expression:  
   
-```  
+```SQL
 CASE input_expression   
      WHEN when_expression THEN result_expression [ ...n ]   
      ELSE else_result_expression   
 END  
   
-```  
+``` 
   
  Searched CASE expression:  
   
-```  
+```SQL  
 CASE  
      WHEN Boolean_expression THEN result_expression [ ...n ]   
      ELSE else_result_expression  

@@ -22,7 +22,7 @@ manager: "jhubbard"
 ## Example  
  If a commercial vehicle is registered with the Toll Company, they can pass through the toll booth without being stopped for inspection. We will use a commercial vehicle registration lookup table to identify all commercial vehicles with expired registration.  
   
-```  
+```SQL  
 SELECT I1.EntryTime, I1.LicensePlate, I1.TollId, R.RegistrationId  
 FROM Input1 I1 TIMESTAMP BY EntryTime  
 JOIN Registration R  

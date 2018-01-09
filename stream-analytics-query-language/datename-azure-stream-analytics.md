@@ -58,7 +58,7 @@ DATENAME ( datepart , date )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT DATENAME (month, EntryTime)  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

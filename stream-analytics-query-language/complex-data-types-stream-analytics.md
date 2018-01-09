@@ -26,7 +26,7 @@ Both JSON and Avro may contain complex types such as nested objects (records) or
 ## Examples  
  Select array element at a specified index (selecting the first array element):  
   
-```  
+```SQL 
 SELECT   
     GetArrayElement(arrayField, 0) AS firstElement  
 FROM input  
@@ -34,7 +34,7 @@ FROM input
   
  Select array length:  
   
-```  
+```SQL  
 SELECT   
     GetArrayLength(arrayField) AS arrayLength  
 FROM input  
@@ -42,7 +42,7 @@ FROM input
   
  Select all array element as individual events ( the [APPLY &#40;Azure Stream Analytics&#41;](apply-azure-stream-analytics.md) operator together with the [GetArrayElements &#40;Azure Stream Analytics&#41;](getarrayelements-azure-stream-analytics.md) built-in function extract all array elements as individual events):  
   
-```  
+```SQL  
 SELECT   
     arrayElement.ArrayIndex,  
     arrayElement.ArrayValue  
@@ -53,7 +53,7 @@ CROSS APPLY GetArrayElements(event.arrayField) AS arrayElement
 ## Record data types  
  Record data types are used to represent JSON and Avro arrays when corresponding formats are used in the input data streams. . All examples assume a sample sensor which is reading input events in JSON format. Here is example of a single event:  
   
-```  
+```json  
 {  
     "DeviceId" : "12345",  
     "Location" : {"Lat": 47, "Long": 122 }  
@@ -71,7 +71,7 @@ CROSS APPLY GetArrayElements(event.arrayField) AS arrayElement
 ## Examples  
  Utilize dot notation to access nested fields. For example, this query selects the reported lat/long coordinates of the device:  
   
-```  
+```SQL  
 SELECT  
     DeviceID,  
     Location.Latitude,  
@@ -81,7 +81,7 @@ FROM input
   
  Use the [GetRecordPropertyValue &#40;Azure Stream Analytics&#41;](getrecordpropertyvalue-azure-stream-analytics.md) function if the property name is unknown. For example, imagine a  sample data stream needs to be joined with reference data containing thresholds for each device sensor:  
   
-```  
+```SQL  
 SELECT  
     input.DeviceID,  
     thresholds.SensorName  
@@ -95,7 +95,7 @@ WHERE
   
  To convert record fields into separate events use the [APPLY &#40;Azure Stream Analytics&#41;](apply-azure-stream-analytics.md) operator together with the [GetRecordProperties &#40;Azure Stream Analytics&#41;](getrecordproperties-azure-stream-analytics.md) function. For example, to convert a sample stream into a stream of events with individual sensor readings, this query could be used:  
   
-```  
+```SQL  
 SELECT   
     event.DeviceID,  
     sensorReading.PropertyName,  
@@ -106,14 +106,14 @@ CROSS APPLY GetRecordProperties(event.SensorReadings) AS sensorReading
   
  SELECT may also utilize '*' to access all the properties of a nested record. Consider the following query:  
   
-```  
+```SQL  
 SELECT input.SensorReadings.*  
 FROM input  
 ```  
   
  This would result in the following output:  
   
-```  
+```json  
 {  
     "Temperature" : 80,  
     "Humidity" : 70,  

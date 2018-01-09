@@ -44,7 +44,7 @@ REGEXMATCH( <expression>, <pattern> )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT TollId, EntryTime, LicensePlate, REGEXMATCH( LicensePlate, '[0-9][0-9][0-9]' ),  
 FROM Input TIMESTAMP BY EntryTime  
 ```  

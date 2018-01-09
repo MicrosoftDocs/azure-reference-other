@@ -38,7 +38,7 @@ MIN ( expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT System.TimeStamp AS OutTime, TollId, MIN (Toll)   
 FROM Input TIMESTAMP BY EntryTime  
 GROUP BY TollId, TumblingWindow(minute,3)  

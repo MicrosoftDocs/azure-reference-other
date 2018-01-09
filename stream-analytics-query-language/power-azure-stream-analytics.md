@@ -39,7 +39,7 @@ POWER (float_expression, y)
   
 ## Example  
   
-```  
+```SQL  
 SELECT POWER(input.x, 3) AS "The 3rd POWER of the variable x"  
 FROM input  
 ```  

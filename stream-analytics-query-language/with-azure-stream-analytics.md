@@ -48,7 +48,7 @@ This is the name of the temporary result-set which can be referenced by a FROM c
   
 ## Example  
   
-```  
+```SQL  
 WITH   
 NormalReadings AS  
 (  

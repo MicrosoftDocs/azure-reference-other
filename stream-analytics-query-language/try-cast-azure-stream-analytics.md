@@ -40,7 +40,7 @@ TRY_CAST ( expression AS data_type)
   
 ## Examples  
   
-```  
+```SQL  
 SELECT TollId, EntryTime   
 FROM Input  
 WHERE TRY_CAST( EntryTime AS datetime) IS NOT NULL  

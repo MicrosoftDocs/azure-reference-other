@@ -35,7 +35,7 @@ SIGN (expression)
   
 ## Example  
   
-```  
+```SQL  
 SELECT SIGN(input.x) AS "The SIGN of the variable x"  
 FROM input  
 ```  

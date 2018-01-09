@@ -32,7 +32,7 @@ manager: "jhubbard"
   
 ## Example  
   
-```  
+```SQL  
 SELECT TollId, System.Timestamp AS WinEndTime, COUNT(*)   
 FROM TollTagEntry TIMESTAMP BY EntryTime  
 GROUP BY TumblingWindow( minute , 3 ) , TollId  

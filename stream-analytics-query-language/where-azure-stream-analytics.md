@@ -115,7 +115,7 @@ manager: "jhubbard"
   
 ## Example  
   
-```  
+```SQL  
 SELECT TollId, EntryTime, VehicleType, LicensePlate, Toll, Tag  
 FROM TollTagEntry TIMESTAMP BY EntryTime  
 WHERE ( CAST(TollId AS bigint) BETWEEN 1 AND 2 )  

@@ -39,7 +39,7 @@ CreateLineString (points)
   
 ## Example  
   
-```  
+```SQL  
 SELECT  
      CreateLineString(CreatePoint(input.latitude, input.longitude), CreatePoint(10.0, 10.0), CreatePoint(10.5, 10.5))  
 FROM input  

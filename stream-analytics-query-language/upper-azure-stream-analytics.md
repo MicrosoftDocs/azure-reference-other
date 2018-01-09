@@ -35,7 +35,7 @@ UPPER ( string_expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT TollId, EntryTime, UPPER(LicensePlate) AS LicensePlate_Upper  
 FROM Input  
 ```  

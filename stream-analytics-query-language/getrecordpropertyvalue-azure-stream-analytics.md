@@ -35,12 +35,12 @@ GetRecordPropertyValue ( record_expression, string_expression )
  Is the string expression to be evaluated as a record property name.  
   
 ## Return Types  
- Return type is determined by the record property type and can be any of the [supported types](https://msdn.microsoft.com/en-us/library/azure/dn835065.aspx).  
+ Return type is determined by the record property type and can be any of the [supported types](#data-types-azure-stream-analytics.md).  
   
 ## Examples  
  In this code example, “thresholds” is a reference data name defined on the inputs tab.  
   
-```  
+```SQL  
 SELECT   
     input.DeviceID,  
     thresholds.SensorName  
@@ -54,7 +54,7 @@ WHERE
   
  Note that you can use dot notation to access record property fields.  
   
-```  
+```SQL  
 SELECT   
     recordColumn.NestedFieldName1.NestedFieldName2  
 FROM input  

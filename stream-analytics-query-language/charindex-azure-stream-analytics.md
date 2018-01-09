@@ -46,7 +46,7 @@ CHARINDEX ( expressionToFind ,expressionToSearch [ , start_location ] )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT TollId, EntryTime, CHARINDEX ( 'us', Model), Model  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

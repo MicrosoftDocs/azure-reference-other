@@ -35,7 +35,7 @@ SQRT (float_expression)
   
 ## Example  
   
-```  
+```SQL  
 SELECT SQRT(input.x) AS "The SQRT of the variable x"  
 FROM input  
 ```  

@@ -39,7 +39,7 @@ ST_DISTANCE ( pointA, pointB )
   
 ## Example  
   
-```  
+```SQL  
 SELECT  
      ST_DISTANCE(input.car1Position, input.car2Position)  
 FROM input  
