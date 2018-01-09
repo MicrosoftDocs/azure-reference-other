@@ -17,7 +17,7 @@ ms.author: "sngun"
 manager: "jhubbard"
 ---
 # GetArrayElements (Azure Stream Analytics)
-  Returns a dataset with array values and indexes. The result of the GetArrayElements function must be used with [CROSS APPLY](https://msdn.microsoft.com/en-us/library/azure/dn706229.aspx) operator only.  
+  Returns a dataset with array values and indexes. The result of the GetArrayElements function must be used with [CROSS APPLY](#apply-azure-stream-analytics.md) operator only.  
   
  **Syntax**  
   
