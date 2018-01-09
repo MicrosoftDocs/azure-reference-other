@@ -35,7 +35,7 @@ Ordering of the values within returned array is **not** guaranteed
 
 ## Examples  
   
-```  
+```SQL  
 SELECT Collect() AS allEvents 
 FROM Input 
 GROUP BY TumblingWindow(second,10) 

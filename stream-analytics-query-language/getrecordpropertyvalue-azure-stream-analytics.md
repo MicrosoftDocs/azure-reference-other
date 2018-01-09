@@ -40,7 +40,7 @@ GetRecordPropertyValue ( record_expression, string_expression )
 ## Examples  
  In this code example, “thresholds” is a reference data name defined on the inputs tab.  
   
-```  
+```SQL  
 SELECT   
     input.DeviceID,  
     thresholds.SensorName  
@@ -54,7 +54,7 @@ WHERE
   
  Note that you can use dot notation to access record property fields.  
   
-```  
+```SQL  
 SELECT   
     recordColumn.NestedFieldName1.NestedFieldName2  
 FROM input  

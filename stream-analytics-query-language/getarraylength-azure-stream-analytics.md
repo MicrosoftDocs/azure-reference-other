@@ -35,7 +35,7 @@ GetArrayLength ( array_expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT   
     GetArrayLength(arrayField) AS arrayLength  
 FROM input  

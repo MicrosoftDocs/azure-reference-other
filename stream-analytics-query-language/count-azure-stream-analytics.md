@@ -58,7 +58,7 @@ Specifies that all events should be counted to return the total number of events
   
 ## Examples  
 
-```  
+```SQL  
 SELECT System.TimeStamp AS OutTime, TollId, COUNT(*)   
 FROM Input TIMESTAMP BY EntryTime  
 GROUP BY TollId, TumblingWindow(minute,3)  

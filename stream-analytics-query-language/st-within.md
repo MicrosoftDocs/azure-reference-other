@@ -39,7 +39,7 @@ ST_WITHIN (geography, polygon)
   
 ## Example  
   
-```  
+```SQL  
 SELECT  
      ST_WITHIN(input.deliveryDestination, input.warehouse)  
 FROM input  

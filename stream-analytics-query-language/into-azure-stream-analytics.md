@@ -37,7 +37,7 @@ manager: "jhubbard"
   
 ## Example  
   
-```  
+```SQL  
 WITH WAVehicle AS (  
     SELECT TollId, EntryTime AS VehicleEntryTime, LicensePlate, State, Make, Model, VehicleType,    VehicleWeight, Toll, Tag  
     FROM TollTagEntry TIMESTAMP BY EntryTime  

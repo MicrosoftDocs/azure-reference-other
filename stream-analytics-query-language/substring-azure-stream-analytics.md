@@ -46,7 +46,7 @@ SUBSTRING ( expression ,start ,length )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT TollId, EntryTime,LicensePlate, SUBSTRING ( LicensePlate,1,3 ),  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

@@ -47,7 +47,7 @@ manager: "jhubbard"
   
 ## Example  
   
-```  
+```SQL  
 SELECT TollId, EntryTime AS Time, LicensePlate   
 FROM Input1 TIMESTAMP BY EntryTime   
 UNION  

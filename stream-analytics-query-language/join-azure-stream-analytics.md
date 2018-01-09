@@ -74,7 +74,7 @@ manager: "jhubbard"
 ## Examples  
  In Azure Stream Analytics, all events have a well-defined timestamp.  Thus, the user must use row aliases directly in the DATEDIFF function, as follows:  
   
-```  
+```SQL  
 SELECT I1.TollId, I1.EntryTime,I2.ExitTime, I1.LicensePlate, DATEDIFF(minute,I1.EntryTime,I2.ExitTime) AS DurationInMinutes   
 FROM Input1 I1 TIMESTAMP BY EntryTime   
 JOIN Input2 I2 TIMESTAMP BY ExitTime  
@@ -89,7 +89,7 @@ ON DATEDIFF(minute,I1,I2) BETWEEN 0 AND 15
   
 Time bound conditions can be combined with each other and with other conditions inside the ON clause, e.g.:  
   
-```  
+```SQL  
 SELECT I1.TollId, I1.EntryTime, I2.ExitTime, I1.LicensePlate, DATEDIFF(minute,I1.EntryTime,I2.ExitTime) AS DurationinMinutes   
 FROM Input1 I1 TIMESTAMP BY EntryTime   
 JOIN Input2 I2 TIMESTAMP BY ExitTime  
@@ -101,7 +101,7 @@ AND DATEDIFF(minute,I1,I2) BETWEEN 0 AND 15
   
  When joining 3 or more tables, the same rules apply --- time bounds must ensure that all matched events occur within a finite amount of time from each other.  For instance, to find all errors that occurred between transaction start and transaction end event, one can say:  
   
-```  
+```SQL  
 SELECT TS.Id, TS.Name, TS.Amount, E.ErrorCode, E.Description   
 FROM TStart TS TIMESTAMP BY TStartTime   
 JOIN TEnd TE TIMESTAMP BY TEndTime  
@@ -116,7 +116,7 @@ AND E.TId = TS.Id
  When joining sources that are partitioned, the JOIN predicate must include a condition matching the partition keys of both sources.  
 
 
-```  
+```SQL  
 SELECT I1.TollId, I1.EntryTime,I2.ExitTime, I1.LicensePlate, DATEDIFF(minute,I1.EntryTime,I2.ExitTime) AS DurationInMinutes   
 FROM Input1 I1 TIMESTAMP BY EntryTime PARTITION BY PartitionId  
 JOIN Input2 I2 TIMESTAMP BY ExitTime PARTITION BY PartitionId  
@@ -125,7 +125,7 @@ ON I1.PartitionId = I2.PartitionId AND DATEDIFF(minute,I1,I2) BETWEEN 0 AND 15
   
  Finally, Azure Stream Analytics supports both inner join (the default) and LEFT outer join.  For an inner join, a result is only returned when a match is found.  But for a LEFT OUTER join, if an event from the left side of the join is unmatched, a row with NULL for all the columns of the right row is returned.  For instance here is an example to find the absence of events. The following query will return those rows where a Vehicle has entered a Toll Booth but have not exited the Booth within 15 minutes.  
   
-```  
+```SQL  
 SELECT I1.TollId, I1.EntryTime, I2.ExitTime, I1.LicensePlate, DATEDIFF(minute,I1.EntryTime,I2.ExitTime) AS DurationinMinutes   
 FROM Input1 I1 TIMESTAMP BY EntryTime   
 LEFT OUTER JOIN Input2 I2 TIMESTAMP BY ExitTime  

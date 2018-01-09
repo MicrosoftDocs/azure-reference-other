@@ -35,7 +35,7 @@ DAY ( date )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT DAY (EntryTime)  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

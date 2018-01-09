@@ -41,7 +41,7 @@ The return type is determined by the order_by_expression type.
 
 The following example uses PERCENTILE_DISC to find the 95th percentile of service availability across regions. Note that the function will always return a percentile that is within the input data set.
   
-```  
+```SQL  
 SELECT PERCENTILE_DISC(0.95) OVER (ORDER BY serviceAvailability)
 FROM testInput
 GROUP BY SlidingWindow(hours, 1)

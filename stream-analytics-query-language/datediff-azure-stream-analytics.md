@@ -58,14 +58,14 @@ DATEDIFF ( datepart , startdate, enddate )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT DATEDIFF (minute, EntryTime, CAST(’2014-09-10 12:00:00’ AS datetime)) AS DiffTime  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  
   
 ```  
   
-```  
+```SQL  
 SELECT DATEDIFF (minute, EntryTime, DATEADD(hour,2,EntryTime)) AS DiffTime  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

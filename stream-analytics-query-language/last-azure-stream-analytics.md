@@ -25,7 +25,7 @@ In Stream Analytics, the scope of LAST (that is, how far back in history from th
   
  **Syntax**  
   
-```  
+```SQL  
 LAST(<scalar_expression >, [<default>])    
        OVER ( [PARTITION BY <partition key>] LIMIT DURATION(<unit>, <length>) [WHEN boolean_expression])  
   
@@ -56,7 +56,7 @@ Specifies how much of the history from the current event must be considered.  Se
 ## Examples  
  Find most recent non-null sensor reading:  
   
-```  
+```SQL  
 SELECT  
        sensorId,   
        LAST(reading) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1) WHEN reading IS NOT NULL)  
@@ -65,7 +65,7 @@ FROM input
   
  Find last time when reading was greater than 50:  
   
-```  
+```SQL  
 SELECT
        sensorId,
        LAST(System.Timestamp) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1) WHEN reading > 50 )

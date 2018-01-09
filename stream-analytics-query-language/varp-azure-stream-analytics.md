@@ -35,7 +35,7 @@ VARP (expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT System.TimeStamp AS OutTime, TollId, VARP (Toll)   
 FROM Input  
 GROUP BY TollId, TumblingWindow(minute,3)  

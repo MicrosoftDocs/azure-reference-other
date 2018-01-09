@@ -36,7 +36,7 @@ DATETIMEFROMPARTS (year, month, day, hour, minute, seconds, milliseconds)
   
 ## Examples  
   
-```  
+```SQL 
 SELECT EntryTime, DATETIMEFROMPARTS(2014,9,10,12,DATEPART(minute,EntryTime)+10,00,00)   
 AS ExitTime  
 FROM Input TIMESTAMP BY EntryTime  

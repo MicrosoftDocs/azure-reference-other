@@ -35,7 +35,7 @@ STDEV (expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT System.TimeStamp AS OutTime, TollId, STDEV (Toll)   
 FROM Input  
 GROUP BY TollId, TumblingWindow(minute,3)  

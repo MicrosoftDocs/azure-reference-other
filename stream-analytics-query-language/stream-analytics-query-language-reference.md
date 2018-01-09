@@ -35,7 +35,7 @@ manager: "jhubbard"
   
  The following is a TIMESTAMP BY example which uses the EntryTime column as the application time for events:  
   
-```  
+```SQL  
   
 SELECT TollId, EntryTime AS VehicleEntryTime, LicensePlate, State, Make, Model, VehicleType, VehicleWeight, Toll, Tag   
 FROM TollTagEntry TIMESTAMP BY EntryTime  

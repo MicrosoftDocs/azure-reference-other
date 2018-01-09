@@ -39,7 +39,7 @@ GetArrayElement ( array_expression, bigint_expression )
   
 ### Examples  
   
-```  
+```SQL  
 SELECT   
     GetArrayElement(arrayField, 0) AS firstElement  
 FROM input  

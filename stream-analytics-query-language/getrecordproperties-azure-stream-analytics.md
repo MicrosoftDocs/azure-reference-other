@@ -35,7 +35,7 @@ GetRecordProperties ( column_reference )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT   
     recordProperty.PropertyName,  
     recordProperty.PropertyValue  

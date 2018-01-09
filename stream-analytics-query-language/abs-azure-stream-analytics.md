@@ -35,7 +35,7 @@ ABS (expression )
   
 ## Example  
   
-```  
+```SQL
 SELECT ABS(input.x) AS "The ABS of the variable x"  
 FROM input  
 ```  

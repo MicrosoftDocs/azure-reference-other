@@ -24,7 +24,7 @@ manager: "jhubbard"
 ### **Input events timestamp**  
  Timestamp of the input event can be defined by column value (or an expression) specified in the [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md) clause:  
   
-```  
+```SQL  
 SELECT System.Timestamp t   
 FROM input   
 TIMESTAMP BY MyTimeField  
@@ -40,7 +40,7 @@ TIMESTAMP BY MyTimeField
   
 ### **Projection**  
   
-```  
+```SQL  
 SELECT  
       Prop1,  
       Prop2,  
@@ -54,7 +54,7 @@ FROM input
   
 ### **Filter**  
   
-```  
+```SQL  
 SELECT *  
 FROM input  
 WHERE prop1 > prop2  
@@ -65,7 +65,7 @@ WHERE prop1 > prop2
   
 ### **GROUP BY over time window**  
   
-```  
+```SQL  
 SELECT  
       userId,  
       AVG(prop1),  
@@ -80,7 +80,7 @@ GROUP BY TumblingWindow(minute, 1), userId
   
 ### **INNER JOIN**  
   
-```  
+```SQL  
 SELECT  
       System.Timestamp  
 FROM input1  
@@ -95,7 +95,7 @@ ON DATEDIFF(minute, input1, input2) BETWEEN 0 AND 10
   
 ### **LEFT OUTER JOIN**  
   
-```  
+```SQL  
 SELECT  
       System.Timestamp  
 FROM input1  

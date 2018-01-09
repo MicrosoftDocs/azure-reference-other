@@ -21,7 +21,7 @@ manager: "jhubbard"
   
  **Syntax**  
   
-```  
+```SQL  
 CONCAT ( string_value1, string_value2 [, string_valueN ] )  
 ```  
   
@@ -35,7 +35,7 @@ CONCAT ( string_value1, string_value2 [, string_valueN ] )
   
 ## Examples  
   
-```  
+```SQL 
 SELECT TollId, EntryTime, CONCAT ( 'Make:', Make, ' And Model:', Model) AS MakeModel, LicensePlate  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

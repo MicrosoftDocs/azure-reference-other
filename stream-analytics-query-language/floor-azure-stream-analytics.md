@@ -35,7 +35,7 @@ FLOOR (expression)
   
 ## Example  
   
-```  
+```SQL  
 SELECT FLOOR(input.x) AS "The FLOOR of the variable x"  
 FROM input  
 ```  

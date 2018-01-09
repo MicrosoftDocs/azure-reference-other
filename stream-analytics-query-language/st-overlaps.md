@@ -39,7 +39,7 @@ ST_OVERLAPS (polygonA, polygonB)
   
 ## Example  
   
-```  
+```SQL  
 SELECT  
      ST_OVERLAPS(input.datacenterArea, input.stormArea)  
 FROM input  

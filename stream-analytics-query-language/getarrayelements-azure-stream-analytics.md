@@ -35,7 +35,7 @@ GetArrayElements ( column_reference )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT   
     arrayElement.ArrayIndex,  
     arrayElement.ArrayValue  

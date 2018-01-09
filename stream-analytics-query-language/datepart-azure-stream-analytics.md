@@ -54,7 +54,7 @@ DATEPART ( datepart , date )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT DATEPART (weekday, EntryTime)  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

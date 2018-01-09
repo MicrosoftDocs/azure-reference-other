@@ -36,7 +36,7 @@ CreatePoint (latitude, longitude)
   
 ## Example  
   
-```  
+```SQL  
  SELECT  
      CreatePoint(input.latitude, input.longitude)  
 FROM input  

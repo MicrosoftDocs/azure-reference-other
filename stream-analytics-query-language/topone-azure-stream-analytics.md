@@ -35,7 +35,7 @@ TopOne() OVER (ORDER BY (<column name> [ASC |DESC])+)
   
 ## Examples  
   
-```  
+```SQL  
 SELECT   
     TopOne() OVER (ORDER BY value DESC) as topEvent  
 FROM input  

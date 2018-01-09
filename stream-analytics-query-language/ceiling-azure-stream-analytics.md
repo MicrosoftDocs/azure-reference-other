@@ -35,7 +35,7 @@ CEILING (expression)
   
 ### Example  
   
-```  
+```SQL 
 SELECT CEILING(input.x) AS "The CEILING of the variable x"  
 FROM input  
 ```  
