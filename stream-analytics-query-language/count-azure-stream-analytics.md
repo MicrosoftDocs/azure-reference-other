@@ -39,9 +39,9 @@ Specifies that COUNT returns the number of unique non-null values.
   
  Is an expression of any type or a column name. Aggregate functions and sub queries are not permitted.  
   
- **\***  
+ \* (wildcard expression) 
   
-Specifies that all events should be counted to return the total number of events in a group. COUNT(**\***) takes no parameters. COUNT(**\***) does not require an expression parameter because, by definition, it does not use information about any particular column. COUNT(**\***) returns the number of events without getting rid of duplicates. It counts each event separately. This includes events that contain null values.
+Specifies that all events should be counted to return the total number of events in a group. COUNT(\*) takes no parameters. COUNT(\*) does not require an expression parameter because, by definition, it does not use information about any particular column. COUNT(\*) returns the number of events without getting rid of duplicates. It counts each event separately. This includes events that contain null values.
 
 ## Remarks
 
