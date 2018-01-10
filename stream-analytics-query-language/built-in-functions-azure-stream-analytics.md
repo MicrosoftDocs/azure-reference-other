@@ -37,7 +37,7 @@ manager: "jhubbard"
 |Function Category|Description|  
 |-----------------------|-----------------|  
 | [Conversion Functions](conversion-functions-azure-stream-analytics.md)| These functions allow you to cast data into different formats. |
-| [Date and Time Functions](date-and-time-functions-azure-stream-analytics.md)| 
+| [Date and Time Functions](date-and-time-functions-azure-stream-analytics.md)| These functions allow you to perform operations on DateTime formats. |
 | [Mathematical Functions](mathematical-functions-azure-stream-analytics.md)| Represent the scalar functions that perform a calculation, usually based on input values that are provided as arguments, and return a numeric value. |
 | [String Functions](string-functions-azure-stream-analytics.md)| These functions allow you to convert strings to upper or lower case. |
   
