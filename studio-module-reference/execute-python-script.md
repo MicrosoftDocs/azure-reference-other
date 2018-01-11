@@ -1,7 +1,7 @@
 ---
 title: "Execute Python Script | Microsoft Docs"
 ms.custom: ""
-ms.date: 05/23/2017
+ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: cdb56f95-7f4c-404d-bde7-5bb972e6f232
 caps.latest.revision: 12
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Execute Python Script
 *Executes a Python script from an Azure Machine Learning experiment*  
@@ -19,97 +19,96 @@ manager: "jhubbard"
  Category: [Python Language Modules](python-language-modules.md)  
   
 ## Module Overview  
- You can use the **Execute Python Script** module to run Python code from experiments in Azure Machine Learning.  
+
+This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio to run Python code as part of your Studio experiments.
   
- By integrating your IPython notebooks with Azure Machine Learning, you can perform custom tasks, create visualizations, and share your models with the world. For example, you could:  
+By using Python, you can perform custom tasks, create visualizations, and share your models with the world. For example:
+
++ Visualize data using matplotlib
++ Use Python client libraries to enumerate datasets and models in your workspace
++ Read, load, and manipulate data from sources not supported by the [Import Data](import-data.md) module
   
--   Visualize data using matplotlib  
+The **Execute Python Script** module contains sample Python code that you can use as a starting point when developing new code.
+
+## Examples
+
+For examples of how to integrate Python script with Azure Machine Learning experiments, see these resources:  
   
--   Use Python client libraries to enumerate datasets and models in your workspace  
+- [Execute Python scripts in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)  
   
--   Read, load, and manipulate data  
+- [Creating an Azure VM, installing Jupyter, and running a Jupyter Notebook on Azure](https://docs.microsoft.com/azure/virtual-machines/linux/jupyter-notebook)  
   
- The **Execute Python Script** module contains sample Python code that you can use as a starting point when developing new code.  
+- [Access datasets with Python using the Azure Machine Learning Python client library](https://docs.microsoft.com/azure/machine-learning/machine-learning-python-data-access)  
   
-## Examples  
- For examples of how to integrate Python script with Azure Machine Learning experiments, see these resources:  
-  
--   [Execute Python scripts in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)  
-  
--   [Creating an Azure VM, installing Jupyter, and running a Jupyter Notebook on Azure](https://docs.microsoft.com/azure/virtual-machines/linux/jupyter-notebook)  
-  
--   [Access datasets with Python using the Azure Machine Learning Python client library](https://docs.microsoft.com/azure/machine-learning/machine-learning-python-data-access)  
-  
- The following experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/) also use Python:  
-  
--   The [Execute Python Script](http://go.microsoft.com/fwlink/p/?LinkId=525942) sample demonstrates how you can perform complex processing – in this case, text tokenization, stemming, and other processing – inside the **Execute Python Script** module.  
-  
+
+The following experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) use Python:
+
+- [Execute Python Script](http://go.microsoft.com/fwlink/p/?LinkId=525942): This sample demonstrates text tokenization, stemming, and other processing using the **Execute Python Script** module.
++ [Custom R and Python scripts in Azure ML](https://gallery.cortanaintelligence.com/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
++ [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.cortanaintelligence.com/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): This fun sample uses Python code and Python data to estimate the point when demand for Python 3 outtrips that for Python 2.7.
+
 ## How to Use Execute Python Script  
- To configure the **Execute Python Script** module, you provide a set of inputs, and type the Python code to execute in the **Python script** text box.  
+
+To configure the **Execute Python Script** module, you provide a set of inputs, and type the Python code to execute in the **Python script** text box.
   
-1.  Add the **Execute Python Script** module to your experiment.  
+1.  Add the **Execute Python Script** module to your experiment.
+
+2. Scroll to the bottom of the **Properties** pane, and for **Python Version**, select the version of the Python libraries and runtime to use in the script.
+    
+    - Anaconda 2.0 distribution for Python 2.7.7  
+    - Anaconda 4.0 distribution for Python 2.7.11
+    - Anaconda 4.0 distribution for Python 3.5 (default)
   
-2.  Connect any datasets that you want to use for input. You can also provide a zipped file containing custom resources.  
+    We recommend that you set the version before typing any new code. If you change the version later, you are promoted to acknowledge the change.
+    
+    > [!IMPORTANT]
+    > If you use multiple instances of the **Execute Python Script** module in your experiment, you must choose a single version of Python for all modules in the experiment.
+
+3. Add and connect on **Dataset1** any datasets from Studio that you want to use for input. Reference this dataset in your Python script as **DataFrame1**. 
+
+    Use of a dataset is optional, if you want to generate data using Python, or use Python code to import the data directly into the module.
+
+    This module supports addition of a second Studio dataset on on **Dataset2**. Reference this in your Python script as DataFrame2. 
+
+    Datasets stored in Studio are automatically converted to **pandas** data.frames.
+
+4. To include new Python packages or code, add the zipped file containing these custom resources  on **Script bundle**. The input to **Script bundle** must be a zipped file already uploaded to your workspace. For more information about how to prepare and upload these resources, see [Unpack Zipped Data](unpack-zipped-datasets.md).
   
-    -   **Dataset1**.   An optional dataset from your Machine Learning Studio workspace, containing input data or values. You can reference this in your Python script as DataFrame1. 
+    Any file contained in the uploaded zipped archive can be used during experiment execution. If your cusotm resources include a directory structure, the structure is preserved, but you must prepend a directory called **src** to the path.
   
-    -   **Dataset2**.   A second dataset, also optional. You can reference this in your Python script as DataFrame2. 
+5. In the **Python script** text box, type or paste valid Python script. 
+
+    The **Python script** text box is pre-populated with some instructions in comments, and sample code for data access and output. **You must edit or replace this code.** Be sure to follow Python conventions about indentation and casing.
   
-    -   **Script bundle**.   A zipped file containing custom resources. The file must have already been uploaded to your workspace. For more information about how to prepare and upload these resources, see the Technical Notes section.  
+    + The script must contain a function named `azureml_main` as the entry point for this module.
+    + The entry point function can contain up to two input arguments: `Param<dataframe1>` and `Param<dataframe2>``
+    + Zipped files connected to the third input port are unzipped and stored in the directory, `.\Script Bundle`. , which is also added to the Python `sys.path`. 
+    
+        Therefore, if your zip file contains `mymodule.py` you can import it using `import mymodule`.
   
-         Any file contained in the uploaded resource file will be available for use during execution time. If there is a directory structure present it will be preserved, with the only change being that you must prepend a directory called **src** to the path.  
+    + A single dataset can be returned to Studio, which must be a sequence of type `pandas.DataFrame`. You can create other outputs in your Python code and write them directly to Azure storage, or create visualizations using the **Pythondevice**.
   
-3.  In the **Python script** text box, type or paste valid Python script. The **Python script** text box is pre-populated with the following sample code, which you can edit or replace. Note that Python conventions about indentation and casing must be observed. 
+6.  Run the experiment, or select the module and click **Run selected** to run just the Python script.
+
+   All of the data and code is loaded into a virtual machine, and run using the specified Python environment.
   
-    ```  
-    # The script must contain a function named azureml_main as the entry point for this module.  
-    # The entry point function can contain up to two input arguments:  
-    #   Param<dataframe1>: a pandas.DataFrame  
-    #   Param<dataframe2>: a pandas.DataFrame  
-    def azureml_main(dataframe1 = None, dataframe2 = None):  
+7.  The module returns these outputs:  
   
-        # Execution logic goes here  
-        print('Input pandas.DataFrame #1:\r\n\r\n{0}'.format(dataframe1))  
+-   **Results Dataset**. The results of computations performed by the embedded Python code is converted to the Azure Machine Learning dataset format. For more information, see [Data Table](data-table.md).  
   
-        # If a zip file is connected to the third input port is connected,  
-        # it is unzipped under ".\Script Bundle". This directory is added  
-        # to sys.path. Therefore, if your zip file contains a Python file  
-        # mymodule.py you can import it using:  
-        # import mymodule  
-  
-        # Return value must be of a sequence of pandas.DataFrame  
-        return dataframe1,  
-  
-    ```  
-  
-4.  For **Python Version**, select the version of the Python libraries and runtime to use in the script.  
-  
-    -   Anaconda 2.0 distribution for Python 2.7.7  
-  
-    -   Anaconda 4.0 distribution for Python 2.7.11 
-  
-    -   Anaconda 4.0 distribution for Python 3.5  
-  
-    > [!NOTE]
-    >  If you use multiple instances of the **Execute Python Script** module in your experiment, you must choose a single version of Python for all modules in the experiment.  
-  
-5.  Run the experiment, or select the module and click **Run selected** to run just the Python script.  
-  
-6.  The module returns these outputs:  
-  
--   **Results Dataset**.   A dataset with the results of any computations performed by the embedded Python code.  
-  
-     The output data is provided in  the Azure Machine Learning dataset format. For more information, see [Data Table](data-table.md).  
-  
--   **Python Device**.    This output supports both console output and display of PNG graphics using the Python interpreter.  
+-   **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
   
 ##  <a name="bkmk_TechnicalNotes"></a> Technical Notes  
- Before you can connect the Script Bundle to the **Execute Python Script** module, the ZIP file must be already present in the Studio workspace. To upload a ZIP file to your workspace, click **New**, click **Dataset**, and then select **From local file** and the **Zip file** option.  
+
+This section contains additional technical details and frequently asked questions.
+
+For more information about the architecture, inception, and common uses of Python script in Azure M achine Learning, see [Azure Machine Learning and Python](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/04/22/azure-machine-learning-and-python/)
+
+### How to attach script resources
+
+The **Execute Python Script** module supports the use of arbitrary Python script files as inputs, provided they are prepared in advance and uploaded to your workspace as part of a .ZIP file. The module is generally limited to a single dataset as output. 
   
-### Adding Python Script as a Custom Resource  
- The **Execute Python Script** module supports the use of arbitrary Python script files as inputs, provided they are prepared in advance and uploaded to your workspace as part of a ZIP file.  
-  
-##### To upload a ZIP file containing Python code to your workspace  
+#### Upload a ZIP file containing Python code to your workspace  
   
 1.  In the experiment area of Azure Machine Learning Studio, click **Datasets**, and then click **New**.  
   
@@ -119,14 +118,57 @@ manager: "jhubbard"
   
 4.  Click **Browse** to locate the zipped file.  
   
-5.  Type a new name for use in the workspace. The name you assign to the dataset will become the name of the folder in your workspace to which the contained files will be extracted.  
-  
-     All files that are contained in the ZIP file will be available for use during run time. If there was a directory structure present, it will be preserved. However, you must alter your code to prepend the directory **src** to the path.  
-  
+5.  Type a new name for use in the workspace. The name you assign to the dataset becomes the name of the folder in your workspace where the contained files are extracted.  
+
 6.  After you have uploaded the zipped package to Studio, verify that the zipped file is available in the **Saved Datasets** list, and then connect the dataset to the **Script Bundle** input port.  
-  
-7.  If your zipped file contains any libraries that are not already installed in Azure Machine Learning Studio, you must install the Python library package as part of your custom script.  
-  
+
+    All files that are contained in the ZIP file are available for use during run time: for example, sample data, scripts, or new Python packages. 
+    
+    If your zipped file contains any libraries that are not already installed in Azure Machine Learning Studio, you must install the Python library package as part of your custom script.
+
+    If there was a directory structure present, it is preserved. However, you must alter your code to prepend the directory **src** to the path.
+
+> [!NOTE]
+> Because the zip file mechanism is the only way to add custom Python modules, it might be difficult to work with large modules or many modules. In such cases, we recommend the new [Azure ML Workbench](https://docs.microsoft.com/azure/machine-learning/preview/how-to-configure-your-ide), a preview feature that has improved support for Python environments.
+
+### My run failed.  How do I debug Python code and fix it?
+
+The **Execute Python Script** module works best when the code has been factored as a function with clearly defined inputs and outputs, rather than a sequence of loosely related executable statements.
+
+This Python module does not support features such as Intellisense and debugging. If the module fails at runtime, you can view some error details in the output log for the module. However, the full Python stack trace is not available. Thus we recommend that users develop and debug their Python scripts in a different environment and then import the code into the module. 
+
+Some common problems that you can look for:
+
++ Check the data types in the data frame you are returning back from azureml_main. Expect errors on types other than numeric types and strings. 
+
++ Remove NA values from your dataset, using `dataframe.dropna()` on export from Python script, or use the [Clean Missing Data](clean-missing-data.md) module on import.
+
++ Check your embedded code for indentation and whitespace errors. If you get the error, "IndentationError: expected an indented block: see these resources for guidance: 
+
+   - [Python Reference - Indentation](https://docs.python.org/2/reference/lexical_analysis.html#indentation)
+
+   - [Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+
+### Known limitations
+
++ The Python runtime is sandboxed and does not allow access to the network or to the local file system in a persistent manner. 
+
++ All files saved locally are isolated and deleted once the module finishes. The Python code cannot access most directories on the machine it runs on, the exception being the current directory and its sub-directories. 
+
++ The module can output a single data frame. It is not possible to return arbitrary Python objects such as trained models directly back to the Azure Machine Learning runtime; however, you can write objets to storage or to the workspace. Another option is to use `pickle` to serialize objects into a byte array and then return that inside of a data frame.
+
+### How can I determine which Python packages are installed in Azure ML?
+
+The most important libraries used for machien learning in Python are grouped in a distribution called Anaconda. This is the distribution that's also used inside Azure Machine Learning.
+
+### How does this relate to Jupyter notebooks?
+
+Jupyter Notebooks support multiple Python environments, and can be run from Azure Machine Learning Studio, under the name **Azure Notebooks**. The datasets that you use in experiments can easily be accessed from a notebook, and the notebooks can interact with Azure ML experiments. 
+
++ [Use Jupyter notebooks with Azure ML Workbench](https://docs.microsoft.com/en-us/azure/machine-learning/preview/how-to-use-jupyter-notebooks)
+
++ [Channel 9 video - Using Jupyter notebooks in Azure ML](https://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Using-JupyterIPython-Notebooks-in-Azure-ML)
+
 ## See Also  
  [Python Language Modules](python-language-modules.md)   
  [R Language Modules](r-language-modules.md)

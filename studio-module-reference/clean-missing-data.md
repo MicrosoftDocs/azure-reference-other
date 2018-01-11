@@ -1,7 +1,7 @@
 ---
 title: "Clean Missing Data | Microsoft Docs"
 ms.custom: ""
-ms.date: 09/21/2017
+ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: d2c5ca2f-7323-41a3-9b7e-da917c99f0c4
 caps.latest.revision: 25
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Clean Missing Data
 *Specifies how to handle the values missing from a dataset*  
@@ -24,20 +24,20 @@ This article describes how to use the  [Clean Missing Data](clean-missing-data.m
 
 Data scientists often check data for missing values and then perform various operations to fix the data or insert new values. The goal of such cleaning operations is to prevent problems caused by missing data that can arise when training a model. 
 
-This module supports multiple type of operations for "cleaning" missing vaues, including:
-+ replace missing values with a placeholder, mean, or other value
-+ completely remove rows and columns that have missing values
-+ infer values based on statistical methods  
+This module supports multiple type of operations for "cleaning" missing values, including:
++ Replacing missing values with a placeholder, mean, or other value
++ Completely removing rows and columns that have missing values
++ Inferring values based on statistical methods
   
 > [!TIP]
->  New to machine learning? This article provides a good explanation of why you would use each of the different methods for replacing missing values: [Methods for handling missing values](https://gallery.cortanaintelligence.com/Experiment/Methods-for-handling-missing-values-1?share=1)  
+>  New to machine learning? This article provides a good explanation of why you would use each of the different methods for replacing missing values: [Methods for handling missing values](https://gallery.cortanaintelligence.com/Experiment/Methods-for-handling-missing-values-1)  
   
- Using this module does not change your source dataset. Instead, it creates a new dataset in your workspace that you can use in the subsequent workflow. You can also save the new, cleaned dataset for reuse.  
+ Using this module does not change your source dataset. Instead, it creates a new dataset in your workspace that you can use in the subsequent workflow. You can also save the new, cleaned dataset for reuse.
   
  This module also outputs a definition of the transformation used to clean the missing values. You can re-use this transformation on other datasets that have the same schema, by using the [Apply Transformation](apply-transformation.md) module.  
  
   
-##  <a name="Remarks"></a> How to Use Clean Missing Data  
+##  <a name="Remarks"></a> How to Use Clean Missing Data
 
 This module lets you define a cleaning operation. You can also save the cleaning operation so that you can apply it later to new data. See the following links for a description of how to create and save a cleaning process: 
  
@@ -46,38 +46,44 @@ This module lets you define a cleaning operation. You can also save the cleaning
 + [To apply a cleaning transformation to new data](#bkmk_Apply)  
  
 > [!IMPORTANT]
-> The cleaning method that you use for handling missing values can dramatically affect your  results. We recommend that you experiment with different methods. Consider both the justification for use of a particular method, and the quality of the results.   
+> The cleaning method that you use for handling missing values can dramatically affect your results. We recommend that you experiment with different methods. Consider both the justification for use of a particular method, and the quality of the results.
 
 ###  <a name="bkmk_ReplaceMissing"></a> To replace missing values  
 
-Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module to a set of data, the same cleaning operation is applied to all columns that you select. Therefore, if you need to clean different columns using different methods, use separate instances of the module.  
+Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module to a set of data, the same cleaning operation is applied to all columns that you select. Therefore, if you need to clean different columns using different methods, use separate instances of the module.
 
 1.  Add the [Clean Missing Data](clean-missing-data.md) module to your experiment, and connect the dataset that has missing values.  
   
-2.  For **Columns to be cleaned**, choose the columns that contain the missing values you want to change. You can choose multiple columns, but you must use the same replacement method in all selected columns. Therefore, typically you will need to clean string columns and numeric columns separately.  
+2.  For **Columns to be cleaned**, choose the columns that contain the missing values you want to change. You can choose multiple columns, but you must use the same replacement method in all selected columns. Therefore, typically you will need to clean string columns and numeric columns separately.
+
+    For example, to check for missing values in all numeric columns:
+    1. Open the Column Selector,  and select **WITH RULES**.
+    2. For **BEGIN WITH**, select **NO COLUMNS**.
+
+        You can also start with ALL COLUMNS and then exclude columns. Initially, rules are not shown if you first click **ALL COLUMNS**, but you can click **NO COLUMNS** and then click **ALL COLUMNS** again to start with all columns and then filter out (exclude) columns based on the name, data type, or columns index.
+    3. For **Include**, select **Column type** from the dropdown list, and then select **Numeric**, or a more specific numeric type. 
   
-    > [!NOTE]
-    >  Any cleaning or replacement method that you choose must be applicable to **all** columns in the selection. If the data in any column is incompatible with the specified operation, the module will return an error and stop the experiment.  
+    Any cleaning or replacement method that you choose must be applicable to **all** columns in the selection. If the data in any column is incompatible with the specified operation, the module returns an error and stops the experiment.
   
 3.  For **Minimum missing value ratio**, specify the minimum number of missing values required for the operation to be performed.  
   
-     You use this option in combination with **Maximum missing value ratio** to define the conditions under which a cleaning operation will be performed on the dataset. If there are too many or too few rows that are missing values, the operation will not be performed.  
+     You use this option in combination with **Maximum missing value ratio** to define the conditions under which a cleaning operation is performed on the dataset. If there are too many or too few rows that are missing values, the operation cannot be performed. 
   
-     The number you enter represents the **ratio** of missing values to all values in the column. By default, the **Minimum missing value ratio** property is set to 0. This means that missing values will be cleaned even if there is only one missing value. For an example of how to use this option, see [Setting a Threshold for Cleaning Operations](#bkmk_SettingThreshold).  
+     The number you enter represents the **ratio** of missing values to all values in the column. By default, the **Minimum missing value ratio** property is set to 0. This means that missing values are cleaned even if there is only one missing value. For an example of how to use this option, see [Setting a Threshold for Cleaning Operations](#bkmk_SettingThreshold).  
   
     > [!WARNING]
     >  This condition must be met by each and every column in order for the specified operation to apply. For example, assume you selected three columns and then set the minimum ratio of missing values to .2 (20%), but only one column actually has 20% missing values. In this case, the cleanup operation would apply only to the column with over 20% missing values. Therefore, the other columns would be unchanged.  
     >   
-    >  If you have any doubt about whether missing values were changed, select the option, **Generate missing value indicator column**. A column will be appended to the dataset to indicate whether or not each column met the specified criteria for the minimum and maximum ranges.  
+    >  If you have any doubt about whether missing values were changed, select the option, **Generate missing value indicator column**. A column is appended to the dataset to indicate whether or not each column met the specified criteria for the minimum and maximum ranges.  
   
 4.  For **Maximum missing value ratio**, specify the maximum number of missing values that can be present for the operation to be performed.   
   
-     For example, you might want to perform missing value substitution only if 30% or fewer of the rows contain missing values, but leave the values as is if more than 30% of rows have missing values.  
+     For example, you might want to perform missing value substitution only if 30% or fewer of the rows contain missing values, but leave the values as-is if more than 30% of rows have missing values.  
   
-     You define the number as the ratio of missing values to all values in the column. By default, the **Maximum missing value ratio** is set to 1. This means that missing values will be cleaned even if 100% of the values in the column are missing.  
+     You define the number as the ratio of missing values to all values in the column. By default, the **Maximum missing value ratio** is set to 1. This means that missing values are cleaned even if 100% of the values in the column are missing.  
   
     > [!NOTE]
-    >  When you set a threshold using the options  **Minimum missing value ratio** or **Maximum missing value ratio**, the cleaning operation will not be performed if even one of the selected columns does not meet the criteria.  
+    >  When you set a threshold using the options  **Minimum missing value ratio** or **Maximum missing value ratio**, the cleaning operation cannot be performed if even one of the selected columns does not meet the criteria.  
   
 5.  For **Cleaning Mode**, select one of the following options for replacing or removing missing values:  
   
@@ -104,12 +110,12 @@ Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module
          Applies only to columns that have Integer, Double, or Boolean data types. See the [Technical Notes](#bkmk_TechNotes) section for more information.  
   
      + **Replace with median**  
-         Calculates the column median value and assigns that as the replacement for any missing value in the column.  
+         Calculates the column median value, and uses the median value as the replacement for any missing value in the column.  
   
          Applies only to columns that have Integer or Double data types. See the [Technical Notes](#bkmk_TechNotes) section for more information.  
   
      + **Replace with mode**  
-         Calculates the mode for the column and uses that as the replacement value for every missing value in the column.  
+         Calculates the mode for the column, and uses the mode as the replacement value for every missing value in the column.  
   
          Applies to columns that have Integer, Double, Boolean, or Categorical data types. See the [Technical Notes](#bkmk_TechNotes) section for more information.  
   

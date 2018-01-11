@@ -1,7 +1,7 @@
 ---
 title: "Assign Data to Clusters | Microsoft Docs"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -25,7 +25,7 @@ This article describes how to use the [Assign Data to Clusters](assign-data-to-c
 The module returns a dataset that contains the probable assignments for each new data point. It also creates a PCA (Principal Component Analysis) graph to help you visualize the dimensionality of the clusters.
 
 > [!WARNING]
-> This module replaces the [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md) module, which is still available for support of older experiments.
+> This module replaces the [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md) module, which is available only for support of older experiments.
 
 ## How to Use [Assign Data to Clusters](assign-data-to-clusters.md)  
   
@@ -62,12 +62,12 @@ The [Assign Data to Clusters](assign-data-to-clusters.md) module returns two typ
 
     This command displays a Principal Component Analysis (PCA) graph that maps the collection of values in each cluster to two component axes.
     
-    + The first component axis is the combined set of features that captures the most variance in the model, and is plotted on the x-axis (**Principal Component 1**). 
-    + The next component axis represents some combined set of features  that is orthogonal to the first component and that adds the next most information to the chart, plotted on the y-axis (**Principal Component 2**). 
+    + The first component axis is the combined set of features that captures the most variance in the model. It  is plotted on the x-axis (**Principal Component 1**). 
+    + The next component axis represents some combined set of features  that is orthogonal to the first component and that adds the next most information to the chart. It is plotted on the y-axis (**Principal Component 2**). 
     
-    From this graph, you can see the maximum separation that can be attained between the clusters, and how all clusters are distributed along the axes that represent the principal distinguishing components.
+    From this graph, you can see the maximum separation that can be attained between the clusters, and how the clusters in your data are distributed along the axes that represent the principal components.
   
-+ To view the table of results for each case in the input data, you can attach the [Convert to Dataset](convert-to-dataset.md) module to view the results in Machine Learning Studio.  
++ To view the table of results for each case in the input data, attach the [Convert to Dataset](convert-to-dataset.md) module, and visualize the results in Machine Learning Studio.  
   
     This results dataset contains the *cluster assignments* for each case, and a distance metric that gives you some indication of how close this particular case is to the center of the cluster.  
   
@@ -107,4 +107,3 @@ The [Assign Data to Clusters](assign-data-to-clusters.md) module returns two typ
 ## See Also  
  [K-Means Clustering](k-means-clustering.md)   
  [Score](machine-learning-score.md)   
- [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md)

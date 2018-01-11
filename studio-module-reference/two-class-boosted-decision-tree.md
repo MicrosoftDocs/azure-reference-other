@@ -1,7 +1,7 @@
 ---
 title: "Two-Class Boosted Decision Tree | Microsoft Docs"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -22,7 +22,7 @@ manager: "cgronlund"
 
 This article describes how to use the **Two-Class Boosted Decision Tree** module in Azure Machine Learning Studio to create a machine learning model that is based on the boosted decision trees algorithm. 
 
-A boosted decision tree is an ensemble learning method in which the second tree corrects for the errors of the first tree, the third tree corrects for the errors of the first and second trees, and so forth.  Predictions are based on the entire ensemble of trees together that makes the prediction.
+A boosted decision tree is an ensemble learning method in which the second tree corrects for the errors of the first tree, the third tree corrects for the errors of the first and second trees, and so forth.  Predictions are based on the entire ensemble of trees together that makes the prediction. For further technical details, see the [Research](#bkmk_research) section of this article.
   
 Generally, when properly configured, boosted decision trees are the easiest methods with which to get top performance on a wide variety of machine learning tasks. However, they are also one of the more memory-intensive learners, and the current implementation holds everything in memory. Therefore, a boosted decision tree model might not be able to process the very large datasets that some linear learners can handle.
   
@@ -31,14 +31,14 @@ For more information about how to choose an algorithm, see these resources:
 -   [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
 -   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/,machine-learning/machine-learning-algorithm-choice/)  
-  
+
+## How to Configure a Boosted Tree Model
+
 This module creates a classification model, which is a supervised learning method. Therefore, your training data must be a *tagged dataset* that includes a label column with a value for all rows.
-  
-After preparing the training data, you can train the model by connecting the boosted decision tree model to the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. Both of these training modules create a trained model that can be used for prediction.  
-  
-## How to Configure a Boosted Tree Model  
-  
-1.  In Azure Machine Learning Studio, add the **Boosted  Decision Tree** module to your experiment.
+
+You can train this type of using either the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. 
+
+1.  In Azure Machine Learning Studio, add the **Boosted Decision Tree** module to your experiment.
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.
   
@@ -87,26 +87,26 @@ After preparing the training data, you can train the model by connecting the boo
 
 After model training is complete, right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) to view the results:
 
-+  To see the tree that was created on each iteration, select **Visualize**. 
++ To see the tree that was created on each iteration, select **Visualize**. 
 + To drill down into the splits and see the rules for each node, click each tree.
   
 ## Examples
 
 Explore the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) to see examples of how boosted decision trees are used in machine learning:
   
--   The [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168) sample uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
+-   [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
   
--   The [Flight delay prediction](https://gallery.azureml.net/Experiment/837e2095ce784f1ba5ac623a60232027) sample uses the **Two-Class Boosted Decision Tree** algorithm to determine whether a flight is likely to be delayed.  
+-   [Flight delay prediction](https://gallery.azureml.net/Experiment/837e2095ce784f1ba5ac623a60232027): This sample uses the **Two-Class Boosted Decision Tree** algorithm to determine whether a flight is likely to be delayed.  
   
--   The [Credit card risk](http://go.microsoft.com/fwlink/?LinkId=525270) sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.  
+-   [Credit card risk](http://go.microsoft.com/fwlink/?LinkId=525270): This sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.
   
 ## Technical Notes  
 
 This section contains implementation details and frequently asked questions.
 
-### Guidance
+### Tips
 
-+ To train a boosted decision tree model, you must provide multiple data instances. An error is generated during the training process if the dataset contains too few rows.  
++ To train a boosted decision tree model, you must provide multiple data instances. An error is generated during the training process if the dataset contains too few rows.
 
 + If your data has missing values, you must add indicators for the features.
   
@@ -118,7 +118,7 @@ This section contains implementation details and frequently asked questions.
 
 + Features are discretized and binned prior to training, so only a relatively small set of threshold candidates are considered, even for continuous features.
 
-### Technical details
+### <a name="bkmk_research"></a> Research and implementation details
 
 For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](http://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
   
@@ -136,11 +136,11 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
   
     + In a [regression](boosted-decision-tree-regression.md) model, the squared loss is used, and the gradient is the current output, minus the target).
   
-4.  Use the example to fit a weak learner by using that gradient as the target function.
+4.  Use the examples to fit a **weak learner**, using the gradient just defined as the target function.
   
 5.  Add that weak learner to the ensemble with a strength indicated by the learning rate, and if desired, go to Step 2.  
   
-    The weak learners in this implementation are the least-squares regression trees, which use the gradients calculated in Step 3 as the target. The trees are subject to the following restrictions:  
+    In this implementation, the weak learners are the least-squares regression trees, based on the gradients calculated in Step 3. The trees are subject to the following restrictions:  
   
     + They are trained up to a maximum number of leaves.  
   
@@ -149,9 +149,9 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
     + Each decision node is a single feature that is compared against some threshold. If that feature is less than or equal to the threshold, it goes down one path, and if it is greater than the threshold, it goes down the other path.  
     + Each leaf node is a constant value.  
   
-6. The tree-building algorithm greedily selects the feature and threshold for which a split will most decrease the squared loss with regard to the gradient calculated in Step 3. It is subject to a minimum number of training examples per leaf. 
+6. The tree-building algorithm greedily selects the feature and threshold for which a split will most decrease the squared loss with regard to the gradient calculated in Step 3. The selection of the split is subject to a minimum number of training examples per leaf. 
 
-    It repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. 
+    The algorithm repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. 
 
 ##  <a name="parameters"></a> Module Parameters  
   

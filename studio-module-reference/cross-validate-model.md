@@ -1,7 +1,7 @@
 ---
 title: "Cross-Validate Model | Microsoft Docs"
 ms.custom: ""
-ms.date: 07/21/2017
+ms.date: 01/09/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +11,7 @@ ms.assetid: 75fb875d-6b86-4d46-8bcc-74261ade5826
 caps.latest.revision: 21
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Cross-Validate Model
 *Cross-validates parameter estimates for classification or regression models by partitioning the data*  
@@ -20,7 +20,7 @@ manager: "jhubbard"
   
 ##  <a name="Remarks"></a> Module Overview  
 
-This article describes how to use the **Cross-Validate Model** module in Azure Machine Learning. *Cross-validation* is an important technique often used in machine learning to assess both the variability of a dataset and the reliability of any model trained using that data.  
+This article describes how to use the **Cross-Validate Model** module in Azure Machine Learning Studio. *Cross-validation* is an important technique often used in machine learning to assess both the variability of a dataset and the reliability of any model trained using that data.  
   
 The **Cross-Validate Model** module takes as input a labeled dataset, together with an untrained classification or regression model. It divides the dataset into some number of subsets (*folds*), builds a model on each fold, and then returns a set of accuracy statistics for each fold. By comparing the accuracy statistics for all the folds, you can interpret the quality of the data set and understand whether the model is susceptible to variations in the data.  
   
@@ -173,7 +173,7 @@ Additionally, the following metrics are included for each fold, depending on the
 
   However, if a validation dataset is provided upstream, the module will use the specified training and testing datasets instead of splitting into *n* folds. That is, the first dataset will be used to train the model for each parameter combination, and the models will be evaluated on the validation dataset. See the section on [using a parameter sweep with cross-validation](#bkmk_sweep).
 
-+ Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](/azure/machine-learning/studio/algorithm-parameters-optimize)
++ Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-parameters-optimize)
 
 ##  <a name="ExpectedInputs"></a> Expected Inputs  
   
