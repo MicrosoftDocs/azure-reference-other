@@ -1,1 +1,5 @@
-# Welcome to stream-analytics-query-language!
+---
+redirect_url: stream-analytics-query-language-reference
+---
+
+# Stream Analytics Index File
