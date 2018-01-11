@@ -1,7 +1,7 @@
 ---
-title: "Two-Class Bayes Point Machine | Microsoft Docs"
+title: "Two-Class Bayes Point Machine | Microsoft Azure Docs"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/11/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -18,11 +18,11 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
   
-## Module Overview  
+## Module overview  
 
 This article describes how to use the **Two-Class Bayes Point Machine** module in Azure Machine Learning Studio to create an untrained binary classification model.
 
-This module uses a Bayesian approach to linear classification called the "Bayes Point Machine". This algorithm efficiently approximates the theoretically optimal Bayesian average of linear classifiers (in terms of generalization performance) by choosing one "average" classifier, the Bayes Point. Because the Bayes Point Machine is a Bayesian classification model, it is not prone to overfitting to the training data.
+The algorithm in this module uses a Bayesian approach to linear classification called the "Bayes Point Machine". This algorithm efficiently approximates the theoretically optimal Bayesian average of linear classifiers (in terms of generalization performance) by choosing one "average" classifier, the Bayes Point. Because the Bayes Point Machine is a Bayesian classification model, it is not prone to overfitting to the training data.
 
 For more information, see Chris Bishop's post on the Microsoft Machine Learning blog: [Embracing Uncertainty - Probabilistic Inference](http://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx).
   
@@ -64,11 +64,11 @@ After training is complete, right-click the output of the [Train Model](train-mo
   
 ##  <a name="Notes"></a> Examples 
 
-To see how the Two-Class Bayes Point Machine is used in machine learning, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):  
+To see how the Two-Class Bayes Point Machine is used in machine learning, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   The [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729) sample demonstrates the use of various two-class classifiers.  
+-  [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
 
-## Technical Notes
+## Technical notes
 
 This section contains implementation details and frequently asked questions about this algorithm.
 
@@ -77,12 +77,14 @@ Details from the original research and underlying theory are available in this p
 However, this implementation improves on the original algorithm in several ways:
 
 + It uses the expectation propagation message-passing algorithm. For more information, see [A family of algorithms for approximate Bayesian inference](http://go.microsoft.com/fwlink/?LinkId=511015).  
+
 + A parameter sweep is not required.
+
 + This method does not require data to be normalized.  
   
 These improvements make the Bayes Point Machine classification model more robust and easier-to-use, and you can bypass the time-consuming step of parameter tuning.
 
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -96,6 +98,6 @@ These improvements make the Bayes Point Machine classification model more robust
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained binary classification model|  
   
-## See Also  
+## See also  
  [Classification](machine-learning-initialize-model-classification.md)   
  [A-Z Module List](a-z-module-list.md)

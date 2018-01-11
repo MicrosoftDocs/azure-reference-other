@@ -1,7 +1,7 @@
 ---
-title: "Permutation Feature Importance | Microsoft Docs"
+title: "Permutation Feature Importance | Microsoft Azure Docs"
 ms.custom: ""
-ms.date: 10/11/2016
+ms.date: 01/11/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,39 +11,36 @@ ms.assetid: 2e010ee4-714e-44e9-933e-62d8c41818a9
 caps.latest.revision: 13
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Permutation Feature Importance
 *Computes the permutation feature importance scores of feature variables given a trained model and a test dataset*  
   
  Category: [Feature Selection Modules](feature-selection-modules.md)  
   
-##  <a name="Remarks"></a> Module Overview  
- You can use the [Permutation Feature Importance](permutation-feature-importance.md) module to compute a set of feature importance scores for your dataset, based on how much the performance of a model based on the dataset changes when the feature values are randomly shuffled.  
+##  <a name="Remarks"></a> Module overview
+
+This article describes how to use the [Permutation Feature Importance](permutation-feature-importance.md) module in Azure Machine Learning Studio, to compute a set of feature importance scores for your dataset. You use these scores to help you determine the best features to use in a model.
+
+In this module, feature values are randomly shuffled, one column at a time, and the performance of the model is measured before and after. You can choose one of the standard metrics provided to measure performance.
+
+The scores that the module returns represent the **change** in the performance of a trained model, after permutation. Important features are usually more sensitive to the shuffling process, and will thus result in higher importance scores. 
+
+This article provides a good general overview of permutation feature importance, its theoretical basis, and its applications in machine learning: [Permutation feature importance](http://blogs.technet.com/b/machinelearning/archive/2015/04/14/permutation-feature-importance.aspx)  
+
+## How to use Permutation Feature Importance
+
+To generate a set of feature scores requires that you have an already trained model, as well as a test dataset.  
   
- The scores that the module returns represent the change in the performance of a trained model, after permutation. You can configure the module to use any one of several standard performance metrics used for evaluation.  
+1.  Add the **Permutation Feature Importance** module to your experiment. You can find this module in the **Feature Selection** category. 
   
- The module requires that you provide a test dataset, as well as an existing trained classification or regression model.  
+2.  Connect a trained model to the left input. The model must be a regression model or classification model.  
   
-## Understanding Permutation Feature Importance  
- Permutation feature importance works by randomly changing the values of each feature column, one column at a time, and then evaluating the input model. Important features are usually more sensitive to the shuffling process, and will thus result in higher importance scores.  
+3.  On the right input, connect a dataset, preferably one that is different from the dataset used for training the model. This dataset is used for scoring based on the trained model, and for evaluating the model after feature values have been changed.  
   
- This article provides a good general overview of permutation feature importance, its theoretical basis, and its applications in machine learning: [Permutation feature importance](http://blogs.technet.com/b/machinelearning/archive/2015/04/14/permutation-feature-importance.aspx)  
+4.  For **Random seed**, type a value to use as seed for randomization. If you specify 0 (the default), a number is generated based on the system clock.
   
-## How to Use Permutation Feature Importance  
- To generate a set of feature scores requires that you have an already trained model, as well as a test dataset.  
-  
-1.  Add the **Permutation Feature Importance** module to your experiment.  
-  
-2.  To the left input, connect a trained model.  
-  
-     The model must be a regression model or classification model.  
-  
-3.  To the right input, connect a dataset, preferably one that is different from the dataset used for training the model. This dataset is used for scoring based on the trained model, and for evaluating the model after feature values have been changed.  
-  
-4.  For **Random seed**, type a value to use as seed for randomization. If you specify 0 (the default), a number is generated based on the system clock.  
-  
-     A value is optional but you should provide a value if you want reproducibility across runs of the same experiment.  
+     A seed value is optional, but you should provide a value if you want reproducibility across runs of the same experiment.  
   
 5.  For **Metric for measuring performance**, select a single metric to use when computing model quality after permutation.  
   
@@ -64,23 +61,33 @@ manager: "jhubbard"
 7.  The module outputs a list of feature columns and the scores associated with them, ranked in order of the scores, descending.  
   
 ## Examples  
- To see examples of how feature selection is used in machine learning, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):  
+
+See these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   The [Permutation Feature Importance](https://gallery.cortanaintelligence.com/Experiment/e2ccb5a5d9dc480489ba8ff0b7eb98ac) sample demonstrates how to use this module to rank feature variables of a dataset in order of permutation importance scores.  
+-   [Permutation Feature Importance](https://gallery.cortanaintelligence.com/Experiment/e2ccb5a5d9dc480489ba8ff0b7eb98ac): Demonstrates how to use this module to rank feature variables of a dataset in order of permutation importance scores.  
   
--   The [Using the Permutation Feature Importance module](https://gallery.cortanaintelligence.com/Experiment/4802f138edcb4582a877018460edd943) sample illustrates the usage of this module in a web service.  
+-  [Using the Permutation Feature Importance module](https://gallery.cortanaintelligence.com/Experiment/4802f138edcb4582a877018460edd943): Illustrates the usage of this module in a web service.
   
-##  <a name="Notes"></a> Technical Notes  
- the rankings provided by permutation feature importance are often different from the ones you get from [Filter Based Feature Selection](filter-based-feature-selection.md), which calculates scores **before** a model is created. This is because permutation feature importance doesn’t measure the association between a feature and a target value, but instead captures how much influence each feature has on predictions from the model.  
-  
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="Notes"></a> Technical notes
+
+This section provides implementation details, tips, and answers to frequently asked questions.
+
+### How does this compare to other feature selection methods?
+
+Permutation feature importance works by randomly changing the values of each feature column, one column at a time, and then evaluating the model. 
+
+The rankings provided by permutation feature importance are often different from the ones you get from [Filter Based Feature Selection](filter-based-feature-selection.md), which calculates scores **before** a model is created. 
+
+This is because permutation feature importance doesn’t measure the association between a feature and a target value, but instead captures how much influence each feature has on predictions from the model.
+
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ILearner interface](ilearner-interface.md)|A trained classification or regression model|  
 |Test data|[Data Table](data-table.md)|Test dataset for scoring and evaluating a model after permutation of feature values|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 ###  
   
@@ -104,7 +111,7 @@ manager: "jhubbard"
 |[Error 0105](errors/error-0105.md)|Thrown when a module definition file defines an unsuppported parameter type|  
 |[Error 0021](errors/error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
   
-## See Also  
+## See also  
  [Feature Selection](feature-selection-modules.md)   
  [Filter Based Feature Selection](filter-based-feature-selection.md)   
  [Principal Component Analysis](principal-component-analysis.md)
