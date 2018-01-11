@@ -65,11 +65,11 @@ The [Assign Data to Clusters](assign-data-to-clusters.md) module returns two typ
     + The first component axis is the combined set of features that captures the most variance in the model. It  is plotted on the x-axis (**Principal Component 1**). 
     + The next component axis represents some combined set of features  that is orthogonal to the first component and that adds the next most information to the chart. It is plotted on the y-axis (**Principal Component 2**). 
 
-    For example, the following image shows some PCA graphs: one with good cluster separation, and one with poor separation.
+    For example, the following image shows a PCA graph with 5000 centroids.
 
-    ![PCA graphs compared](../media/aml-pca-clusters-compared.png)
-    
-    From this graph, you can see the maximum separation that can be attained between the clusters, and how the clusters in your data are distributed along the axes that represent the principal components.
+    ![PCA graph example](../media/5k-centroid-clusters-pca.png)
+
+    From this graph, you can see the separation between the clusters, and how the clusters are distributed along the axes that represent the principal components.
   
 + To view the table of results for each case in the input data, attach the [Convert to Dataset](convert-to-dataset.md) module, and visualize the results in Machine Learning Studio.  
   
