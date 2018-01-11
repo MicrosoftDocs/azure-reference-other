@@ -1,5 +1,5 @@
 ---
-title: "Two-Class Boosted Decision Tree | Microsoft Docs"
+title: "Two-Class Boosted Decision Tree | Microsoft Azure Docs"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -18,7 +18,7 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+##  <a name="Remarks"></a> Module overview  
 
 This article describes how to use the **Two-Class Boosted Decision Tree** module in Azure Machine Learning Studio to create a machine learning model that is based on the boosted decision trees algorithm. 
 
@@ -32,11 +32,11 @@ For more information about how to choose an algorithm, see these resources:
   
 -   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/,machine-learning/machine-learning-algorithm-choice/)  
 
-## How to Configure a Boosted Tree Model
+## How to configure **Two-Class Boosted Decision Tree**
 
-This module creates a classification model, which is a supervised learning method. Therefore, your training data must be a *tagged dataset* that includes a label column with a value for all rows.
+This module creates an untrained classification model. Because classification is a supervised learning method, to train the model, you need a *tagged dataset* that includes a label column with a value for all rows.
 
-You can train this type of using either the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. 
+You can train this type of model by using either the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. 
 
 1.  In Azure Machine Learning Studio, add the **Boosted Decision Tree** module to your experiment.
   
@@ -92,7 +92,7 @@ After model training is complete, right-click the output of [Train Model](train-
   
 ## Examples
 
-Explore the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) to see examples of how boosted decision trees are used in machine learning:
+Explore the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) to see examples of how boosted decision trees are used in machine learning:
   
 -   [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
   
@@ -100,7 +100,7 @@ Explore the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.c
   
 -   [Credit card risk](http://go.microsoft.com/fwlink/?LinkId=525270): This sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.
   
-## Technical Notes  
+## Technical notes  
 
 This section contains implementation details and frequently asked questions.
 
@@ -153,7 +153,7 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
 
     The algorithm repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. 
 
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -170,7 +170,7 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained binary classification model|  
   
-## See Also  
+## See also  
  [Classification](machine-learning-initialize-model-classification.md)   
  [Boosted Decision Tree Regression](boosted-decision-tree-regression.md)   
  [A-Z Module List](a-z-module-list.md)

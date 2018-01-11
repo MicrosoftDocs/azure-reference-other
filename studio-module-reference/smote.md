@@ -1,5 +1,5 @@
 ---
-title: "SMOTE | Microsoft Docs"
+title: "SMOTE | Microsoft Azure Docs"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -18,7 +18,7 @@ manager: "cgronlund"
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
   
-## Module Overview  
+## Module overview  
 
 This article describes how to use the **SMOTE** module in Azure Machine Learning Studio to increase the number of underepresented cases in a dataset used for machine learning. SMOTE is a better way of increasing the number of rare cases than simply duplicating existing cases.  
 
@@ -52,7 +52,7 @@ To increase the number of cases, you can set the value of **SMOTE percentage**, 
 > [!WARNING]
 >  Increasing the number of cases using SMOTE is not guaranteed to produce more accurate models. You should try experimenting with different percentages, different feature sets, and different numbers of nearest neighbors to see how adding cases influences your model.  
   
-## How to Configure SMOTE
+## How to configure SMOTE
   
 1.  Add the SMOTE module to your experiment. You can find the module under Data Transformation modules, in the manipulation category.
 
@@ -91,7 +91,7 @@ To increase the number of cases, you can set the value of **SMOTE percentage**, 
 > [!TIP]
 > Want to figure out which new rows were added? 
 
-## Technical Notes
+## Technical notes
 
 + When publishing a model that uses the **SMOTE** module, remove **SMOTE** from the predictive experiment before it is published as a web service.  The reason is that SMOTE is intended for improving a model during training, and is not intended for scoring.  You might get an error if a published predictive experiment contains the SMOTE module.
 
@@ -101,13 +101,13 @@ To increase the number of cases, you can set the value of **SMOTE percentage**, 
 
     If SMOTE is not effective in your dataset, other approaches that you might consider include various methods for oversampling the minority cases or undersampling the majority cases, as well as ensemble techniques that help the learner directly, by using clustering, bagging, or adaptive boosting.
 
-##  <a name="ExpectedInputs"></a> Expected Input  
+##  <a name="ExpectedInputs"></a> Expected input  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Samples|[Data Table](data-table.md)|A dataset of samples|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -121,6 +121,6 @@ To increase the number of cases, you can set the value of **SMOTE percentage**, 
 |----------|----------|-----------------|  
 |Table|[Data Table](data-table.md)|A [Data Table](data-table.md) containing the original samples plus an additional number of synthetic minority class samples. The number of new samples is (smotePercent/100)*T, where T is the number of minority class samples.|  
   
-## See Also  
+## See also  
  [Sample and Split](data-transformation-sample-and-split.md)   
  [A-Z Module List](a-z-module-list.md)

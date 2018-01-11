@@ -1,5 +1,5 @@
 ---
-title: "Cross-Validate Model | Microsoft Docs"
+title: "Cross-Validate Model | Microsoft Azure Docs"
 ms.custom: ""
 ms.date: 01/09/2018
 ms.reviewer: ""
@@ -18,7 +18,7 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+##  <a name="Remarks"></a> Module overview  
 
 This article describes how to use the **Cross-Validate Model** module in Azure Machine Learning Studio. *Cross-validation* is an important technique often used in machine learning to assess both the variability of a dataset and the reliability of any model trained using that data.  
   
@@ -26,7 +26,7 @@ The **Cross-Validate Model** module takes as input a labeled dataset, together w
   
 Cross-validate also returns predicted results and probabilities for the dataset, so that you can assess the reliability of the predictions.  
   
-### How Cross-Validation Works  
+### How cross-validation works  
   
 1. Cross validation randomly divides the training data into a number of partitions, also called *folds*. 
 
@@ -55,7 +55,7 @@ A different, and very common way of evaluating a model is to divide the data int
   
      Cross-validation does not simply measure the accuracy of a model, but also gives you some idea of how representative the dataset is and how sensitive the model might be to variations in the data.  
   
-## How to Use Cross-Validate Model  
+## How to use Cross-Validate Model  
 
 There are two main ways to use cross-validation. 
 
@@ -131,7 +131,6 @@ To view these results, in the experiment, right-click the **Cross-Validate Model
 |Scored Labels |This column is added at the end of the dataset, and contains the predicted value for each row|
 |Scored Probabilities| This column is added at the end of the dataset, and indicates the estimated probability of the value in **Scored Labels**.|  
 
-
  ### Evaluation results
 
 The second report is grouped by folds. Remember that, during execution, **Cross-Validate Model** randomly splits the training data into *n* folds (by default, 10). In each iteration over the dataset, **Cross-Validate Model** uses one fold as a validation dataset, and uses the remaining *n-1* folds to train a model. Each of the *n* models is tested against the data in all the other folds.  
@@ -161,7 +160,7 @@ Additionally, the following metrics are included for each fold, depending on the
   
 -   The [Cross Validation Regression: Auto Imports Dataset](http://go.microsoft.com/fwlink/?LinkId=525735) sample demonstrates how to use cross validation with regression models and how to interpret the results.  
   
-## Technical Notes  
+## Technical notes  
 
 + It is a best practice to normalize datasets before using them for cross-validation. 
 
@@ -175,14 +174,14 @@ Additionally, the following metrics are included for each fold, depending on the
 
 + Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-parameters-optimize)
 
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|Untrained model for cross validation on dataset|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -209,7 +208,7 @@ Additionally, the following metrics are included for each fold, depending on the
 |[Error 0008](errors/error-0008.md)|Exception occurs if parameter is not in range.|  
 |[Error 0013](errors/error-0013.md)|Exception occurs if the learner that is passed to the module has an invalid type.|  
   
-## See Also
+## See also
   
  [Evaluate](machine-learning-evaluate.md)   
  [Evaluate Recommender](evaluate-recommender.md)   

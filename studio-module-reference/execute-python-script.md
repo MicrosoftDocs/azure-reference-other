@@ -1,5 +1,5 @@
 ---
-title: "Execute Python Script | Microsoft Docs"
+title: "Execute Python Script | Microsoft Azure Docs"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -18,7 +18,7 @@ manager: "cgronlund"
   
  Category: [Python Language Modules](python-language-modules.md)  
   
-## Module Overview  
+## Module overview  
 
 This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio to run Python code as part of your Studio experiments.
   
@@ -47,7 +47,7 @@ The following experiments in the [Azure AI Gallery](https://gallery.cortanaintel
 + [Custom R and Python scripts in Azure ML](https://gallery.cortanaintelligence.com/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
 + [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.cortanaintelligence.com/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): This fun sample uses Python code and Python data to estimate the point when demand for Python 3 outtrips that for Python 2.7.
 
-## How to Use Execute Python Script  
+## How to use Execute Python Script  
 
 To configure the **Execute Python Script** module, you provide a set of inputs, and type the Python code to execute in the **Python script** text box.
   
@@ -98,7 +98,7 @@ To configure the **Execute Python Script** module, you provide a set of inputs, 
   
 -   **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
   
-##  <a name="bkmk_TechnicalNotes"></a> Technical Notes  
+##  <a name="bkmk_TechnicalNotes"></a> Technical notes  
 
 This section contains additional technical details and frequently asked questions.
 
@@ -139,9 +139,9 @@ This Python module does not support features such as Intellisense and debugging.
 
 Some common problems that you can look for:
 
-+ Check the data types in the data frame you are returning back from azureml_main. Expect errors on types other than numeric types and strings. 
++ Check the data types in the data frame you are returning back from `azureml_main`. Errors are likely on types other than numeric types and strings. 
 
-+ Remove NA values from your dataset, using `dataframe.dropna()` on export from Python script, or use the [Clean Missing Data](clean-missing-data.md) module on import.
++ Remove NA values from your dataset, using `dataframe.dropna()` on export from Python script, or use the [Clean Missing Data](clean-missing-data.md) module when preparing your data.
 
 + Check your embedded code for indentation and whitespace errors. If you get the error, "IndentationError: expected an indented block: see these resources for guidance: 
 
@@ -153,13 +153,17 @@ Some common problems that you can look for:
 
 + The Python runtime is sandboxed and does not allow access to the network or to the local file system in a persistent manner. 
 
-+ All files saved locally are isolated and deleted once the module finishes. The Python code cannot access most directories on the machine it runs on, the exception being the current directory and its sub-directories. 
++ All files saved locally are isolated and deleted once the module finishes. The Python code cannot access most directories on the machine it runs on, the exception being the current directory and its sub-directories.
 
-+ The module can output a single data frame. It is not possible to return arbitrary Python objects such as trained models directly back to the Azure Machine Learning runtime; however, you can write objets to storage or to the workspace. Another option is to use `pickle` to serialize objects into a byte array and then return that inside of a data frame.
+    When you provide a zipped file as resource, the files are copied from your workspace to the experiment execution space, unpacked, and then used. Copying and unpacking resources can consume memory. 
+
++ The module can output a single data frame. It is not possible to return arbitrary Python objects such as trained models directly back to the Azure Machine Learning runtime. 
+
+    However, you can write objects to storage or to the workspace. Another option is to use `pickle` to serialize multiple objects into a byte array and then return the array inside a data frame.
 
 ### How can I determine which Python packages are installed in Azure ML?
 
-The most important libraries used for machien learning in Python are grouped in a distribution called Anaconda. This is the distribution that's also used inside Azure Machine Learning.
+Azure Machine Learning Studio uses the Anaconda distribution, which includes the most important Python libraries for machine learning. 
 
 ### How does this relate to Jupyter notebooks?
 
@@ -169,6 +173,6 @@ Jupyter Notebooks support multiple Python environments, and can be run from Azur
 
 + [Channel 9 video - Using Jupyter notebooks in Azure ML](https://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Using-JupyterIPython-Notebooks-in-Azure-ML)
 
-## See Also  
+## See also  
  [Python Language Modules](python-language-modules.md)   
  [R Language Modules](r-language-modules.md)

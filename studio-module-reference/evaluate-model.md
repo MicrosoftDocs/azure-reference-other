@@ -1,5 +1,5 @@
 ---
-title: "Evaluate Model | Microsoft Docs"
+title: "Evaluate Model | Microsoft Azure Docs"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -18,7 +18,7 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
 
 This article describes how to use the **Evaluate Model** module in Azure Machine Learning Studio to measure the accuracy of a trained model. You provide a dataset containing scores generated from a model, and the **Evaluate Model** module computes a set of industry-standard evaluation metrics.
   
@@ -39,7 +39,7 @@ For recommendation models, use the [Evaluate Recommender](evaluate-recommender.m
 > 
 > We also recommend the video series by Dr. Stephen Elston, as part of the [machine learning course](https://blogs.technet.microsoft.com/machinelearning/2015/09/08/new-edx-course-data-science-machine-learning-essentials/) from EdX. 
 
-## How to Use Evaluate Model
+## How to use **Evaluate Model**
 
 There are three ways to use the **Evaluate Model** module:
 
@@ -185,7 +185,7 @@ For examples of how to generate, visualize, and interpret evaluation metrics, se
   
 -  [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): Demonstrates how to evaluate multiple related models.
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -209,7 +209,7 @@ For examples of how to generate, visualize, and interpret evaluation metrics, se
 |[Error 0024](errors/error-0024.md)|Exception occurs if dataset does not contain a label column.|  
 |[Error 0025](errors/error-0025.md)|Exception occurs if dataset does not contain a score column.|  
   
-## See Also  
+## See also  
  [Cross-Validate Model](cross-validate-model.md)   
  [Evaluate Recommender](evaluate-recommender.md)   
  [Evaluate](machine-learning-evaluate.md)   

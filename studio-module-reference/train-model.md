@@ -1,5 +1,5 @@
 ---
-title: "Train Model | Microsoft Docs"
+title: "Train Model | Microsoft Azure Docs"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -18,9 +18,9 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
  
-This article describes how to use the **Train Model** module in Azure Machine Learning Studio to train a classification or regression model.  
+This article describes how to use the **Train Model** module in Azure Machine Learning Studio to train a classification or regression model. Training takes place after you have defined a model and set its parameters, and requires tagged data. You can also use **Train Model** to retrain an existing model with new data. 
 
 ### How the training process works
 
@@ -53,7 +53,7 @@ _Unsupervised learning_ indicates either that the outcome is unknown, or you cho
 > [!TIP]
 >  New to machine learning? This tutorial walks you through the process of getting data, configuring an algorithm, training and then using a model: [Create your first machine learning experiment](https://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
 
-## How to Train a Model  
+## How to use **Train Model**  
   
 1.  In Azure Machine Learning Studio, configure a [classification model](machine-learning-initialize-model-classification.md) or [regression model](machine-learning-initialize-model-regression.md) models.  
 
@@ -107,14 +107,14 @@ For examples of how the **Train Model** module is used in machine learning exper
 + [Retail Forecasting](http://go.microsoft.com/fwlink/?LinkId=525950): Demonstrates how to build, train, and compare multiple models.
 + [Flight Delay Prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates how to train multiple related classification models.
 
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|Untrained learner|  
 |Dataset|[Data Table](data-table.md)|Training data|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -141,7 +141,7 @@ For examples of how the **Train Model** module is used in machine learning exper
 |[Error 0021](errors/error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
 |[Error 0013](errors/error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
   
-## See Also  
+## See also  
  
  [Evaluate Model](evaluate-model.md)   
  [A-Z Module List](a-z-module-list.md)
