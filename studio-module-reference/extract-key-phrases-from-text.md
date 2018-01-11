@@ -1,5 +1,5 @@
 ---
-title: "Extract Key Phrases from Text | Microsoft Docs"
+title: "Extract Key Phrases from Text | Microsoft Azure Docs"
 ms.custom: ""
 ms.date: 01/09/2018
 ms.reviewer: ""
@@ -18,8 +18,7 @@ manager: "cgronlund"
   
  Category: [Text Analytics](text-analytics.md)
 
-  
-## Module Overview  
+## Module overview
 
 This article explains how to use the **Extract Key Phrases from Text** module in Azure Machine Learning Studio to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.
  
@@ -36,7 +35,7 @@ The **Extract Key Phrases from Text** module might return these key phrases:
 - friendly staff
 - unique decor
 
-## How to Configure Key-Phrase Extraction  
+## How to configure the **Extract Key Phrases from Text** module
 
 To extract key phrases, you must connect a dataset that has a column of text.  
   
@@ -77,7 +76,7 @@ The following example demonstrates how to use this module to extract key phrases
 
 See the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) for more examples of text processing using Azure Machine Learning.
   
-## Technical Notes  
+## Technical notes
 
 This module currently supports the following languages:
 
@@ -90,13 +89,13 @@ This module currently supports the following languages:
 
 For additional languages, consider using the [Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/) in Azure Cognitive Services. For more information, see [How to extract key phrases in Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction)
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset |[Data Table](data-table.md) |The table containing the text to be processed.|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-----------------|-------------|  
@@ -119,7 +118,7 @@ For additional languages, consider using the [Text Analytics API](https://docs.m
 |[Error 0016](errors/error-0016.md)|Exception occurs if input datasets passed to the module should have compatible column types but do not.|  
 |[Error 0008](errors/error-0008.md)|Exception occurs if parameter is not in range.|
 
-## See Also  
+## See also  
 
  [Text Analytics](text-analytics.md)   
  [A-Z Module List](a-z-module-list.md)   
