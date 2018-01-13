@@ -1,5 +1,5 @@
 ---
-title: "Apply Transformation | Microsoft Docs"]
+title: "Apply Transformation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018

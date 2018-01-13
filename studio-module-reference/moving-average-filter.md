@@ -1,6 +1,6 @@
 ---
 title: "Moving Average Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Stu
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018
 ms.reviewer: ""
