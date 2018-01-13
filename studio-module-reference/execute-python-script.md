@@ -1,5 +1,6 @@
 ---
-title: "Execute Python Script | Microsoft Azure Docs"
+title: "Execute Python Script | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -81,22 +82,22 @@ To configure the **Execute Python Script** module, you provide a set of inputs, 
     The **Python script** text box is pre-populated with some instructions in comments, and sample code for data access and output. **You must edit or replace this code.** Be sure to follow Python conventions about indentation and casing.
   
     + The script must contain a function named `azureml_main` as the entry point for this module.
-    + The entry point function can contain up to two input arguments: `Param<dataframe1>` and `Param<dataframe2>``
-    + Zipped files connected to the third input port are unzipped and stored in the directory, `.\Script Bundle`. , which is also added to the Python `sys.path`. 
+    + The entry point function can contain up to two input arguments: `Param<dataframe1>` and `Param<dataframe2>`
+    + Zipped files connected to the third input port are unzipped and stored in the directory, `.\Script Bundle`, which is also added to the Python `sys.path`. 
     
-        Therefore, if your zip file contains `mymodule.py` you can import it using `import mymodule`.
+    Therefore, if your zip file contains `mymodule.py`, import it using `import mymodule`.
   
-    + A single dataset can be returned to Studio, which must be a sequence of type `pandas.DataFrame`. You can create other outputs in your Python code and write them directly to Azure storage, or create visualizations using the **Pythondevice**.
+    + A single dataset can be returned to Studio, which must be a sequence of type `pandas.DataFrame`. You can create other outputs in your Python code and write them directly to Azure storage, or create visualizations using the **Python device**.
   
 6.  Run the experiment, or select the module and click **Run selected** to run just the Python script.
 
-   All of the data and code is loaded into a virtual machine, and run using the specified Python environment.
+    All of the data and code is loaded into a virtual machine, and run using the specified Python environment.
   
 7.  The module returns these outputs:  
   
--   **Results Dataset**. The results of computations performed by the embedded Python code is converted to the Azure Machine Learning dataset format. For more information, see [Data Table](data-table.md).  
+    **Results Dataset**. The results of computations performed by the embedded Python code is converted to the Azure Machine Learning dataset format. For more information, see [Data Table](data-table.md).  
   
--   **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
+    **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
   
 ##  <a name="bkmk_TechnicalNotes"></a> Technical notes  
 
@@ -129,7 +130,7 @@ The **Execute Python Script** module supports the use of arbitrary Python script
     If there was a directory structure present, it is preserved. However, you must alter your code to prepend the directory **src** to the path.
 
 > [!NOTE]
-> Because the zip file mechanism is the only way to add custom Python modules, it might be difficult to work with large modules or many modules. In such cases, we recommend the new [Azure ML Workbench](https://docs.microsoft.com/azure/machine-learning/preview/how-to-configure-your-ide), a preview feature that has improved support for Python environments.
+> Because the zip file mechanism is the only way to add custom Python modules, it might be difficult to work with large modules or many modules. In such cases, we recommend the new [Azure ML Workbench](https://docs.microsoft.com/azure/machine-learning/preview/how-to-configure-your-ide), a preview feature that greatly expands support for Python environments.
 
 ### My run failed.  How do I debug Python code and fix it?
 
@@ -139,11 +140,11 @@ This Python module does not support features such as Intellisense and debugging.
 
 Some common problems that you can look for:
 
-+ Check the data types in the data frame you are returning back from `azureml_main`. Errors are likely on types other than numeric types and strings. 
++ Check the data types in the data frame you are returning back from `azureml_main`. Errors are likely if columns contains data types other than numeric types and strings. 
 
-+ Remove NA values from your dataset, using `dataframe.dropna()` on export from Python script, or use the [Clean Missing Data](clean-missing-data.md) module when preparing your data.
++ Remove NA values from your dataset, using `dataframe.dropna()` on export from Python script. When preparing your data, use the [Clean Missing Data](clean-missing-data.md) module.
 
-+ Check your embedded code for indentation and whitespace errors. If you get the error, "IndentationError: expected an indented block: see these resources for guidance: 
++ Check your embedded code for indentation and whitespace errors. If you get the error, "IndentationError: expected an indented block", see these resources for guidance: 
 
    - [Python Reference - Indentation](https://docs.python.org/2/reference/lexical_analysis.html#indentation)
 

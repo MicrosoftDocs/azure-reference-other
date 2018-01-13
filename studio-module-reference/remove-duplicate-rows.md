@@ -1,5 +1,6 @@
 ---
-title: "Remove Duplicate Rows | Microsoft Azure Docs"
+title: "Remove Duplicate Rows | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018
 ms.reviewer: ""
@@ -18,16 +19,13 @@ manager: "cgronlund"
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
 
-This article describes how to use the **Remove Duplicate Rows** module in Azure Machine Learning Studio to remove potential duplicates from a dataset.
-
-To set the criteria for whether a row is duplicate or not, you specify a single column or set of columns to use as **keys**. Two rows are considered duplicates only when the values of all specified features are equal. 
+This article describes how to use the **Remove Duplicate Rows** module in Azure Machine Learning Studio, to remove potential duplicates from a dataset.
 
 For example, assume your data looks like the following, and represents multiple records for patients. 
 
-
-| PatID | Initials| Gender|Age|Admitted|
+| PatientID | Initials| Gender|Age|Admitted|
 |----|----|----|----|----|
 |1|F.M.| M| 53| Jan|
 |2| F.A.M.| M| 53| Jan|
@@ -37,11 +35,15 @@ For example, assume your data looks like the following, and represents multiple 
 | | F.M.| M| 23| |
 |5| F.A.M.| M| 53| |
 
-Clearly, there are multiple columns that have duplicate data,. Which columns you use as _keys_ to find  duplicates depends on your knowledge of the data. For example, you might know that many patients have the same name. You wouldn't use the name columns as key columns, only the **ID** column. That way, only the rows with duplicate ID values are filtered out, regardless of whether the values in other columns match or not.
+Clearly, this example has multiple columns with potentially duplicate data. Whether they are actually duplicates depends on your knowledge of the data. 
 
-Alternatively, you might decide to ignore the ID field, and specify that the combination of first name plus last name plus age plus gender must be unique. 
++ For example, you might know that many patients have the same name. You wouldn't eliminate duplicates using any name columns, only the **ID** column. That way, only the rows with duplicate ID values are filtered out, regardless of whether the patients have the same name or not.
 
-When you run the module, it creates a candidate dataset, and returns a set of rows that have no duplicates across the set of columns you specified, called _key_ columns.
++ Alternatively, you might decide to allow duplicates in the ID field, and use some other combination of fileds to find unique records, such as first name, last name, age, and gender.  
+
+To set the criteria for whether a row is duplicate or not, you specify a single column or a set of columns to use as **keys**. Two rows are considered duplicates only when the values in **all** key columns are equal. 
+
+When you run the module, it creates a candidate dataset, and returns a set of rows that have no duplicates across the set of columns you specified.
 
 > [!IMPORTANT]
 > The source dataset is not altered; this module creates a new dataset that is filtered to exclude duplicates, based on the criteria you specify.
@@ -61,17 +63,12 @@ When you run the module, it creates a candidate dataset, and returns a set of ro
     + "I want to ensure that IDs are unique": Choose only the ID column.
     + "I want to ensure that the combination of first name, last name, and ID is unique": Select all three columns.
 
-    If there are any missing values in the columns, these rules apply:
-    
-    + A missing value is considered a valid value in key columns. Missing values can be present in both key and non-key columns but they matter only in key columns. 
-    + In key columns, a missing value is considered equal to other missing values, but not equal to non-missing values. 
-    + In a sparse dataset, the missing value is considered equal only if it equals the default representation of a sparse value.
-
-  
 4. Use the **Retain first duplicate row** checkbox to indicate which row to return when duplicates are found:
 
     + If selected, the first row is returned and others discarded. 
     + If you uncheck this option, the last duplicate row is kept in the results, and others are discarded. 
+
+    See the [Technical notes](#bkmk_Notes) section for information on how missinng values are handled.
 
 5. Run the experiment, or click the module and select **Run Selected**.  
 
@@ -82,31 +79,43 @@ When you run the module, it creates a candidate dataset, and returns a set of ro
 
 ## Examples  
 
-You can see examples of how this module is used by exploring these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--  [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): In this sample, **Remove Duplicate Rows** is used to consolidate the training and test datasets after adding feature columns. 
+-  [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): **Remove Duplicate Rows** is used to consolidate the training and test datasets after adding feature columns. 
   
-- [Movie recommendation](http://go.microsoft.com/fwlink/?LinkId=525276): Uses **Remove Duplicate Rows** to sanitize the data and ensure that there is only one user rating per movie.  
+- [Movie recommendation](http://go.microsoft.com/fwlink/?LinkId=525276): Uses **Remove Duplicate Rows** to ensure that there is only one user _rating_ per movie.  
   
-- [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): **Remove Duplicate Rows** is applied to only the ID and popularity columns, to ensure that there is only one _ranking_ value per movie. In other words, a movie cannot be both 1st and 3rd, so a singel value is used even if users ranked the movie differently.
+- [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): **Remove Duplicate Rows** is applied to only the ID and popularity columns, to ensure that there is only one _ordinal ranking_ value per movie. In other words, a movie cannot be both 1st and 3rd, so a single value is used even if users ranked the movie differently.
 
-##  <a name="Notes"></a> Technical notes  
-  
-The module works by looping through all rows of the input dataset. It collects into a candidate output dataset all rows where the unique combination of key column values appears for the first time.  
-  
-The input dataset is allowed to have missing values in non-key columns and key columns. In key columns, a missing value is considered equal to other missing values, but not equal to non-missing values.  
-  
+##  <a name="bkmk_Notes"></a> Technical notes  
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Implementation details
+
+The module works by looping through all rows of the input dataset. It collects into a candidate output dataset all rows where the unique combination of key column values appears for the first time.
+
 The column array type is preserved independently of the results of row filtering. You cannot force the array to a particular data type by filtering out invalid values; the column array type is based on all values in the column. This restriction also applies when filtering missing values.  
-  
+
 The algorithm used for comparing data values is hash-forced.
-  
+
+## Missing values
+
+The input dataset might have missing values in non-key columns and key columns. These rules apply to missing values:
+    
++ A missing value is considered a valid value in key columns. Missing values can be present in both key     + In a sparse dataset, the missing value is considered equal only if it equals the default representation of a sparse value. 
+
++ In key columns, a missing value is considered equal to other missing values, but not equal to non-missing values. 
+
++ In a sparse dataset, the missing value is considered equal only if it equals the default representation of a sparse value.
+
 ##  <a name="ExpectedInputs"></a> Expected input  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -120,14 +129,17 @@ The algorithm used for comparing data values is hash-forced.
 |Results dataset|[Data Table](data-table.md)|Filtered dataset|  
   
 ##  <a name="exceptions"></a> Exceptions  
- For a list of all exceptions, see [Module Error Codes](machine-learning-module-error-codes.md).  
   
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|An exception occurs if one or more of the input datasets are null or empty.|  
 |[Error 0020](errors/error-0020.md)|An exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
 |[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
-  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+
 ## See also  
  [Manipulation](data-transformation-manipulation.md)   
  [A-Z Module List](a-z-module-list.md)

@@ -1,5 +1,6 @@
 ---
 title: "Extract Key Phrases from Text | Microsoft Azure Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/09/2018
 ms.reviewer: ""
@@ -20,7 +21,7 @@ manager: "cgronlund"
 
 ## Module overview
 
-This article explains how to use the **Extract Key Phrases from Text** module in Azure Machine Learning Studio to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.
+This article explains how to use the **Extract Key Phrases from Text** module in Azure Machine Learning Studio, to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.
  
 This module is a wrapper for natural language processing APIs for key-phrase extraction. The phrases are analyzed as potentially meaningful in the context of the sentence for various reasons:
 
@@ -35,7 +36,7 @@ The **Extract Key Phrases from Text** module might return these key phrases:
 - friendly staff
 - unique decor
 
-## How to configure the **Extract Key Phrases from Text** module
+## How to configure Extract Key Phrases from Text
 
 To extract key phrases, you must connect a dataset that has a column of text.  
   
@@ -68,7 +69,7 @@ For example, the following example results are for an input dataset containing r
 
 + If a language is included that is not supported by the **Extract Key Phrases** module, an error is raised (0039). To avoid errors, be sure to filter out input text that has an incompatible language identifier. 
 
-    If there are very few rows of other languages, you can also avoid the error by omitting the language identifier, and analyzing all text using a single language selection. However, when you do so, results are very poor, because entire sentences in the other languages might be output as a single key phrase.  
+    If there are very few rows of other languages, you can also avoid the error by omitting the language identifier, and analyzing all text using a single language selection. However, when you do so, results are very poor, because entire sentences in the other languages might be output as a single key phrase.
 
 ## Examples
 
@@ -117,6 +118,10 @@ For additional languages, consider using the [Text Analytics API](https://docs.m
 |[Error 0010](errors/error-0010.md)|Exception occurs if input datasets have column names that should match but do not.|  
 |[Error 0016](errors/error-0016.md)|Exception occurs if input datasets passed to the module should have compatible column types but do not.|  
 |[Error 0008](errors/error-0008.md)|Exception occurs if parameter is not in range.|
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 
 ## See also  
 

@@ -1,5 +1,6 @@
 ---
-title: "Two-Class Bayes Point Machine | Microsoft Azure Docs"
+title: "Two-Class Bayes Point Machine | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018
 ms.reviewer: ""
@@ -62,13 +63,13 @@ After training is complete, right-click the output of the [Train Model](train-mo
     
     The untrained model can also be passed to [Cross-Validate Model](cross-validate-model.md) for cross-validation against a labeled data set.  
   
-##  <a name="Notes"></a> Examples 
+## Examples 
 
 To see how the Two-Class Bayes Point Machine is used in machine learning, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
 -  [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
 
-## Technical notes
+##  <a name="Notes"></a>  Technical notes
 
 This section contains implementation details and frequently asked questions about this algorithm.
 

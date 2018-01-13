@@ -1,5 +1,6 @@
 ---
-title: "K-Means Clustering | Microsoft Azure Docs"
+title: "K-Means Clustering | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018
 ms.reviewer: ""
@@ -18,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Initialize Model / Clustering](machine-learning-initialize-model-clustering.md)  
   
-##  <a name="Remarks"></a> Module overview  
+## Module overview  
  
  This article describes how to use the **K-Means Clustering** module in Azure Machine Learning Studio to create an untrained K-means clustering model. 
  
@@ -32,7 +33,7 @@ manager: "cgronlund"
 > [!TIP]
 > If your training data has labels, consider using one of the supervised [classification](machine-learning-initialize-model-classification.md) methods provided in Azure Machine Learning. For example, you might compare the results of clustering to the results when using one of the multiclass decision tree algorithms. 
   
-##  <a name="k-means"></a> Understanding K-Means Clustering  
+##  <a name="k-means"></a> Understanding k-means clustering
  
 In general, clustering uses iterative techniques to group cases in a dataset into clusters that contain similar characteristics. These groupings are useful for exploring data, identifying anomalies in the data, and eventually for making predictions. Clustering models can also help you identify relationships in a dataset that you might not logically derive by browsing or simple observation. For these reasons, clustering is often used in the early phases of machine learning tasks, to explore the data and discover unexpected correlations.  
   
@@ -46,7 +47,7 @@ When processing the training data, the K-means algorithm begins with an initial 
   
  After completing the training phase, you use the [Assign Data to Clusters](assign-data-to-clusters.md) module to assign new cases to one of the clusters that was found by the k-means algorithm. Cluster assignment is performed by computing the distance between the new case and the centroid of each cluster. Each new case is assigned to the cluster with the nearest centroid.  
 
-## How to Configure K-Means Clustering
+## How to configure K-Means Clustering
   
 1.  Add the **K-Means Clustering** module to your experiment.  
   
@@ -219,7 +220,7 @@ For examples of how K-means clustering is used in Azure Machine Learning, see th
   
 - [Color Quantization sample](http://go.microsoft.com/fwlink/?LinkId=525272): Builds multiple K-means models with different parameters to find the optimum image compression.  
   
--  [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): :Uses K-means with different numbers of centroids to find groups of similar companies in the S&P500.  
+-  [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Varies the numbers of centroids to find groups of similar companies in the S&P500.
   
 ##  <a name="TechnicalNotes"></a> Technical notes  
 
@@ -241,7 +242,7 @@ Given a specific number of clusters (*K*) to find for a set of *D*-dimensional d
 > -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.
  
       
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -264,7 +265,7 @@ For a list of all exceptions, see [Machine Learning Module Error Codes](machine-
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
   
-## See Also
+## See also
   
  [Clustering](machine-learning-initialize-model-clustering.md)   
  [Assign Data to Clusters](assign-data-to-clusters.md)   

@@ -1,5 +1,6 @@
 ---
-title: "Median Filter | Microsoft Azure Docs"
+title: "Median Filter | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018
 ms.reviewer: ""
@@ -20,9 +21,12 @@ manager: "cgronlund"
   
 ## Module overview  
 
-This article describes how to use the **Median Filter** module in Azure Machine Learning Studio, to define a *median filter*. This type of filter is used in digital signal processing, to modify a series of values that represent a digital input signal or image.
+This article describes how to use the **Median Filter** module in Azure Machine Learning Studio, to define a *median filter*. 
   
 Filters are an important tool in digital signal processing, and are used to improve the results of image or voice recognition. Median filters can be applied in image recognition, to reduce noise across pixels so that features can more easily be detected.
+
+> [!TIP]
+> Are you looking for a different type of filter? Studio provides these modules for sampling data, getting a subset of data, or creating test and training sets: [Split Data](split-data.md), [Partition and Sample](partition-and-sample.md), [Apply SQL Transformation](apply-sql-transformation.md), [Execute R Script](execute-r-script.md).  If you need to filter data as you read it from a source, see [Import Data](import-data.md). Filtering is not supported for all source types. 
 
 ## How to use Median Filter  
 
@@ -32,7 +36,7 @@ First, you define a filter specification that meets your needs by using the **Me
   
 2.  For **Length**, type an integer value that defines the total size of the window across which the filter is applied. This is also called the filter *mask*.  
   
-     The value should be an odd, positive-valued integer. If you specify an even number, the mask size is reduced by one.  Any number of 3 or less results in no change to the values.
+     The value should be an odd, positive-valued integer. If you specify an even number, the mask size is reduced by one. 
   
      By default the mask begins at the current value and creates a window centered on the current value.  
   
@@ -50,9 +54,9 @@ When the filter is applied,the following operations are applied to the selected 
   
 + For each set of values included in the window or mask, the filter algorithm computes the median.
 
-+ The current (or index) value is replaced with the median value.  
++ The current (or index) value is replaced with the median value. If there are not enough values to fill the mask (typically at the beginning of the series), no substitution is made 
 
-The actual values in the source dataset are unchanged. The **Median Filter** module creates new values that you can use in subsequent machine learning tasks. Depending on how you configure the [Apply Filter](apply-filter.md) module, you can either append the filter results to the dataset in a new column, or output just the changed values.
+The actual values in the source dataset are unchanged. The **Median Filter** module just creates new values that you can use in subsequent machine learning tasks. Depending on how you configure the [Apply Filter](apply-filter.md) module, you can either append the filter results to the dataset in a new column, or output just the changed values.
 
 For example, the following table shows the results of a filter applied to a series of numbers. Two different mask lengths (3 and 5) were used. The outputs were combined with the source values by using the [Add Columns](add-columns.md) module. 
 

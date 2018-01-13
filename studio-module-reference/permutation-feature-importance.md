@@ -1,5 +1,6 @@
 ---
-title: "Permutation Feature Importance | Microsoft Azure Docs"
+title: "Permutation Feature Importance | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018
 ms.reviewer: ""
@@ -18,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Feature Selection Modules](feature-selection-modules.md)  
   
-##  <a name="Remarks"></a> Module overview
+## Module overview
 
 This article describes how to use the [Permutation Feature Importance](permutation-feature-importance.md) module in Azure Machine Learning Studio, to compute a set of feature importance scores for your dataset. You use these scores to help you determine the best features to use in a model.
 

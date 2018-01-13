@@ -1,5 +1,6 @@
 ---
-title: "Machine Learning Studio: Algorithm and Module Help | Microsoft Azure Docs"
+title: "Machine Learning Studio: Algorithm and Module Help | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -48,14 +49,15 @@ In Studio, modules are organized by functionality:
  + [Machine learning algorithms](machine-learning-modules.md), such as clustering, SVM, or neural networks, are available within individual modules that let you customize the machine learning task with appropriate parameters. For classification tasks, you can choose from binary or multiclass algorithms. 
  
      After you've configured the model, you use a [training module](machine-learning-train.md) to run data through the algorithm, and measure the accuracy of the trained model using one of the [evaluation modules](machine-learning-evaluate.md). To get predictions from the model youve just trained, use one of the [scoring modules](machine-learning-score.md).  
- + For [anomaly detection](anomaly-detection.md), Studio includes multiple algorithms specialized for these tasks.
- + [Text analytics modules](text-analytics.md) support various natural language proessing (NLP) tasks. You can also run [Vowpal Wabbit](train-vowpal-wabbit-version-8-model.md)!
- + Support for external languages is provided by [Python](python-language-modules.md) and [R language](r-language-modules.md) modules. You write the code, and embed it in a module, to integrate Python and R with an experiment service.
- + The [OpenCV library](opencv-library-modules.md) provides modules to use in specific image recognition tasks.
+ + [Anomaly detection](anomaly-detection.md): Studio includes multiple algorithms specialized for these tasks.
+ + [Text analytics modules](text-analytics.md) support various natural language proessing (NLP) tasks. 
+ + [Vowpal Wabbit](train-vowpal-wabbit-version-8-model.md) support makes it easy to use this scalable platform.
+ + [Python](python-language-modules.md) and [R language](r-language-modules.md) modules makes it easy to run a custom function. You write the code, and embed it in a module, to integrate Python and R with an experiment service.
+ + [OpenCV library](opencv-library-modules.md) provides modules to use in specific image recognition tasks.
  + [Time series analysis](time-series.md) supports anomaly detection in time series.
 + [Statistical modules](statistical-functions.md) provide a wide variety of numerical methods related to data science. Look in this group for correlation methods, data summaries, statistical and math operations. 
   
-In this reference section, you'll find technical background on the machine learning algorithms,  implementation details if available, and links to sample experiments that demonstrate how the module is used. All examples are available for public use, in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com).  
+In this reference section, you'll find technical background on the machine learning algorithms,  implementation details if available, and links to sample experiments that demonstrate how the module is used. Examples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com) can be downloaded to your workspace and are for public use.  
 
  > [!TIP]
  > If you are logged into Studio and have created an experiment, you can get information about a specific module by selecting the module and then clicking the **more help** link in the **Quick Help** pane.  

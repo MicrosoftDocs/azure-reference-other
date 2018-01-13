@@ -1,5 +1,6 @@
 ---
-title: "Evaluate Model | Microsoft Azure Docs"
+title: "Evaluate Model | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -39,13 +40,13 @@ For recommendation models, use the [Evaluate Recommender](evaluate-recommender.m
 > 
 > We also recommend the video series by Dr. Stephen Elston, as part of the [machine learning course](https://blogs.technet.microsoft.com/machinelearning/2015/09/08/new-edx-course-data-science-machine-learning-essentials/) from EdX. 
 
-## How to use **Evaluate Model**
+## How to use Evaluate Model
 
 There are three ways to use the **Evaluate Model** module:
 
-+ Generate scores over your training set, and use them for evaluation
-+ Generate scores on the model, and compare those scores to scores on a reserved testing set
-+ Compare scores for two related models on the same set of data
++ Generate scores over your training data, and evaluate the model based on these scores
++ Generate scores on the model, but compare those scores to scores on a reserved testing set
++ Compare scores for two different but related models, using the same set of data
 
 ### Use the training data
 

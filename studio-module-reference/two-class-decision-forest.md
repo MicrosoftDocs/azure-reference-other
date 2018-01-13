@@ -1,5 +1,6 @@
 ---
-title: "Two-Class Decision Forest | Microsoft Azure Docs"
+title: "Two-Class Decision Forest | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018
 ms.reviewer: ""
@@ -24,7 +25,7 @@ This article describes how to use the **Two-Class Decision Forest** module in Az
 
 Decision forests are fast, supervised ensemble models. This module is a good choice if you want to predict a target with a mximum of two outcomes. If you are not sure how to configure a decision tree model for the best results, we recommend that you use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to train and test multiple models. tuning iterates over multiple possibilities and finds the optimal solution for you.
 
-##  <a name="Remarks"></a> Understanding decision forests
+## Understanding decision forests
 
 This decision forest algorithm is an ensemble learning method intended for classification tasks. Ensemble methods are based on the general principle that rather than relying on a single model, you can get better results and a more generalized model by creating multiple related models and combining them in some way. Generally, ensemble models provide better coverage and accuracy than single decision trees. 
 
@@ -103,7 +104,7 @@ For more information, see [Decision Forests](http://go.microsoft.com/fwlink/?Lin
 
 After training is complete:
 
-+ To see the tree that was created on each iteration, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize**.
++ To see the tree that was created on each iteration, right-click the output of the [Train Model](train-model.md) module or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, and select **Visualize**.
   
     Click each tree to drill down into the splits and see the rules for each node.
 

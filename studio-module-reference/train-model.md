@@ -1,5 +1,6 @@
 ---
-title: "Train Model | Microsoft Azure Docs"
+title: "Train Model | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -18,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
   
-## Module overview  
+## Module overview
  
 This article describes how to use the **Train Model** module in Azure Machine Learning Studio to train a classification or regression model. Training takes place after you have defined a model and set its parameters, and requires tagged data. You can also use **Train Model** to retrain an existing model with new data. 
 
@@ -39,8 +40,8 @@ In Azure Machine Learning, creating and using a machine learning model is typica
 
 3. After training is completed, use the trained model with one of the [scoring modules](machine-learning-score.md), to make predictions on new data.
 
-> [NOTE]
-> Other specialized machine learning tasks require different training methods and Studio provides separate training modules for them. For example, image detection, clustering, and anomaly detction all use custom training methods. **Train Model** is intended for use with regression and classification models only.
+> [!NOTE]
+> Other specialized machine learning tasks require different training methods, and Studio provides separate training modules for them. For example, image detection, clustering, and anomaly detction all use custom training methods. **Train Model** is intended for use with regression and classification models only.
 
 ### Supervised and unsupervised training
 
@@ -80,11 +81,11 @@ _Unsupervised learning_ indicates either that the outcome is unknown, or you cho
   
 5.  Run the experiment. If you have a lot of data, this can take a while.  
   
-### <a name= bkmk_results></a> Results
+### <a name= "bkmk_results"></a> Results
 
 After the model is trained:
 
-+ To view the model parameters and feature weights, right-click the output and select **Visualize**.  
++ To view the model parameters and feature weights, right-click the output and select **Visualize**.
 + To use the model in other experiments, right-click the model and select **Save Model**. Type a name for the model. 
 
     This saves the model as a snapshot that is not updated by repeated runs of the experiment.

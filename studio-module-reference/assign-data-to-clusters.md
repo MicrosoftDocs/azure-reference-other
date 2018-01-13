@@ -1,5 +1,6 @@
 ---
-title: "Assign Data to Clusters | Microsoft Azure Docs"
+title: "Assign Data to Clusters | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -18,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Score](machine-learning-score.md)  
   
-##  <a name="Remarks"></a> Module overview  
+## Module overview  
 
 This article describes how to use the [Assign Data to Clusters](assign-data-to-clusters.md) module in Azure Machine Learning Studio to generate predictions using a clustering model that was trained using the K-Means clustering algorithm.
 
@@ -27,7 +28,7 @@ The module returns a dataset that contains the probable assignments for each new
 > [!WARNING]
 > This module replaces the [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md) module, which is available only for support of older experiments.
 
-## How to use [Assign Data to Clusters](assign-data-to-clusters.md)
+## How to use Assign Data to Clusters
   
 1.  In Azure Machine Learning Studio, locate a previously trained clustering model. You can create and train a clustering model by using either of these methods:  
   
@@ -39,14 +40,12 @@ The module returns a dataset that contains the probable assignments for each new
   
 2.  Attach the trained model to the left input port of [Assign Data to Clusters](assign-data-to-clusters.md).  
   
-3.  Attach a new dataset as input.
-  
-     In this dataset, labels are optional. Generally, clustering is an unsupervised learning method so it is not expected that you will know categories in advance.
+3.  Attach a new dataset as input. In this dataset, labels are optional. Generally, clustering is an unsupervised learning method so it is not expected that you will know categories in advance.
 
     However, the input columns must be the same as the columns that were used in training the clustering model, or an error occurs.
 
      > [!TIP]
-     > If you want to reduce the number of columns output when creating cluster predictions, use [Select Columns in Dataset](select-columns-in-dataset.md) to select a subset of the columns. 
+     > To reduce the number of columns output from cluster predictions, use [Select Columns in Dataset](select-columns-in-dataset.md), and select a subset of the columns. 
     
 4.  Leave the option **Check for Append or Uncheck for Result Only** selected if you want the results to contain the full input dataset, together with a column indicating the results (cluster assignments).
   
@@ -67,9 +66,9 @@ The [Assign Data to Clusters](assign-data-to-clusters.md) module returns two typ
 
     From the graph, you can see the separation between the clusters, and how the clusters are distributed along the axes that represent the principal components.
   
-+ To view the table of results for each case in the input data, attach the [Convert to Dataset](convert-to-dataset.md) module, and visualize the results in Machine Learning Studio.  
++ To view the table of results for each case in the input data, attach the [Convert to Dataset](convert-to-dataset.md) module, and visualize the results in  Studio.  
   
-    This results dataset contains the *cluster assignments* for each case, and a distance metric that gives you some indication of how close this particular case is to the center of the cluster.  
+    This dataset contains the *cluster assignments* for each case, and a distance metric that gives you some indication of how close this particular case is to the center of the cluster.  
   
     |Output column name|Description|  
     |------------------------|-----------------|  

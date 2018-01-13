@@ -1,5 +1,6 @@
 ---
-title: "SMOTE | Microsoft Azure Docs"
+title: "SMOTE | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -82,14 +83,14 @@ To increase the number of cases, you can set the value of **SMOTE percentage**, 
      + By increasing the number of nearest neighbors, you get features from more cases.
      + By keeping the number of nearest neighbors low, you use features that are more like those in the original sample.  
   
-7. Type a value in the **Random seed** textbox if you want to ensure the same results over runs of the same experiment, with the same data. Otherwise the module generates a random seed based on processor clcock values when the experiment is deployed, which can cause slightly different results over runs.
+7. Type a value in the **Random seed** textbox if you want to ensure the same results over runs of the same experiment, with the same data. Otherwise the module generates a random seed based on processor clock values when the experiment is deployed, which can cause slightly different results over runs.
 
 8. Run the experiment.  
   
      The output of the module is a dataset containing the original rows plus some number of added rows with minority cases.  
 
 > [!TIP]
-> Want to figure out which new rows were added? 
+> If you want to figure out which new rows were added, you can use the [Apply SQL Transformation](apply-sql-transformation.md) or [Join Data](join-data.md) modules.
 
 ## Technical notes
 

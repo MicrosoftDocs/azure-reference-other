@@ -1,5 +1,6 @@
 ---
-title: "Clean Missing Data | Microsoft Azure Docs"
+title: "Clean Missing Data | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/10/2018
 ms.reviewer: ""
@@ -36,9 +37,8 @@ This module supports multiple type of operations for "cleaning" missing values, 
  Using this module does not change your source dataset. Instead, it creates a new dataset in your workspace that you can use in the subsequent workflow. You can also save the new, cleaned dataset for reuse.
   
  This module also outputs a definition of the transformation used to clean the missing values. You can re-use this transformation on other datasets that have the same schema, by using the [Apply Transformation](apply-transformation.md) module.  
- 
-  
-##  <a name="Remarks"></a> How to use **Clean Missing Data**
+
+##  <a name="Remarks"></a> How to use Clean Missing Data
 
 This module lets you define a cleaning operation. You can also save the cleaning operation so that you can apply it later to new data. See the following links for a description of how to create and save a cleaning process: 
  
@@ -55,10 +55,10 @@ Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module
 
 1.  Add the [Clean Missing Data](clean-missing-data.md) module to your experiment, and connect the dataset that has missing values.  
   
-2.  For **Columns to be cleaned**, choose the columns that contain the missing values you want to change. You can choose multiple columns, but you must use the same replacement method in all selected columns. Therefore, typically you will need to clean string columns and numeric columns separately.
+2.  For **Columns to be cleaned**, choose the columns that contain the missing values you want to change. You can choose multiple columns, but you must use the same replacement method in all selected columns. Therefore, typically you need to clean string columns and numeric columns separately.
 
     For example, to check for missing values in all numeric columns:
-    1. Open the Column Selector,  and select **WITH RULES**.
+    1. Open the Column Selector, and select **WITH RULES**.
     2. For **BEGIN WITH**, select **NO COLUMNS**.
 
         You can also start with ALL COLUMNS and then exclude columns. Initially, rules are not shown if you first click **ALL COLUMNS**, but you can click **NO COLUMNS** and then click **ALL COLUMNS** again to start with all columns and then filter out (exclude) columns based on the name, data type, or columns index.
@@ -73,7 +73,7 @@ Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module
      The number you enter represents the **ratio** of missing values to all values in the column. By default, the **Minimum missing value ratio** property is set to 0. This means that missing values are cleaned even if there is only one missing value. For an example of how to use this option, see [Setting a Threshold for Cleaning Operations](#bkmk_SettingThreshold).  
   
     > [!WARNING]
-    >  This condition must be met by each and every column in order for the specified operation to apply. For example, assume you selected three columns and then set the minimum ratio of missing values to .2 (20%), but only one column actually has 20% missing values. In this case, the cleanup operation would apply only to the column with over 20% missing values. Therefore, the other columns would be unchanged.  
+    >  This condition must be met by each and every column in order for the specified operation to apply. For example, assume you selected three columns and then set the minimum ratio of missing values to .2 (20%), but only one column actually has 20% missing values. In this case, the cleanup operation would apply only to the column with over 20% missing values. Therefore, the other columns would be unchanged.
     >   
     >  If you have any doubt about whether missing values were changed, select the option, **Generate missing value indicator column**. A column is appended to the dataset to indicate whether or not each column met the specified criteria for the minimum and maximum ranges.  
   
@@ -84,7 +84,7 @@ Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module
      You define the number as the ratio of missing values to all values in the column. By default, the **Maximum missing value ratio** is set to 1. This means that missing values are cleaned even if 100% of the values in the column are missing.  
   
     > [!NOTE]
-    >  When you set a threshold using the options  **Minimum missing value ratio** or **Maximum missing value ratio**, the cleaning operation cannot be performed if even one of the selected columns does not meet the criteria.  
+    >  When you set a threshold using the options  **Minimum missing value ratio** or **Maximum missing value ratio**, the cleaning operation cannot be performed if even one of the selected columns does not meet the criteria.
   
 5.  For **Cleaning Mode**, select one of the following options for replacing or removing missing values:  
   
@@ -101,9 +101,7 @@ Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module
         >  The **Replace using MICE** option cannot be applied to completely empty columns. Such columns must be removed or passed to the output as is.  
   
      + **Custom substitution value**  
-         Use this option to specify a placeholder value (such as a 0 or NA) that applies to all missing values.  
-  
-         The value that you specify as a replacement must be compatible with the data type of the column.  
+         Use this option to specify a placeholder value (such as a 0 or NA) that applies to all missing values. The value that you specify as a replacement must be compatible with the data type of the column.  
   
      + **Replace with mean**  
          Calculates the column mean and uses the mean as the replacement value for each  missing value in the column.  
@@ -129,14 +127,14 @@ Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module
      + **Replace using Probabilistic PCA**  
          Replaces the missing values by using a linear model that analyzes the correlations between the columns and estimates a low-dimensional approximation of the data, from which the full data is reconstructed. The underlying dimensionality reduction is a probabilistic form of Principal Component Analysis (PCA), and it implements a variant of the model proposed in the Journal of the Royal Statistical Society, Series B 21(3), 611–622 by Tipping and Bishop.  
   
-         Compared to other options, such as Multiple Imputation using Chained Equations (MICE), this option has the advantage of not requiring the application of predictors for each column. Instead, it approximates the covariance for the full dataset. It may therefore offer better performance for datasets that have missing values in many columns.  
+         Compared to other options, such as Multiple Imputation using Chained Equations (MICE), this option has the advantage of not requiring the application of predictors for each column. Instead, it approximates the covariance for the full dataset. Therefore, it might offer better performance for datasets that have missing values in many columns.
   
          The key limitations of this method are that it expands categorical columns into numerical indicators and computes a dense covariance matrix of the resulting data. It also is not optimized for sparse representations. For these reasons, datasets with large numbers of columns and/or large categorical domains (tens of thousands) are not supported due to prohibitive space consumption.  
   
         > [!TIP]
-        >  Remember that the method you choose will be applied to **all** columns in the selection. Thus, if you want to replace some missing values with zeroes in some columns but insert a placeholder in other columns, you should use [Select Columns in Dataset](select-columns-in-dataset.md) to separate the data and use different instances of the [Clean Missing Data](clean-missing-data.md) module.  
+        > Remember that the method you choose is applied to all columns in the selection. Thus, if you want to replace some missing values with zeroes in some columns but insert a placeholder in other columns, you should use [Select Columns in Dataset](select-columns-in-dataset.md) to separate the data and use different instances of the [Clean Missing Data](clean-missing-data.md) module.  
   
-6.  The option **Replacement value** will become available only if you have selected the option, **Custom substitution value**. Type a new value, and it will be used as the replacement value for all missing values in the column.  
+6.  The option **Replacement value** is available if you have selected the option, **Custom substitution value**. Type a new value to use as the replacement value for all missing values in the column.  
   
      Note that you can use this option only in columns that have the Integer, Double, Boolean, or Date data types. For date columns, the replacement value can also be entered as the number of 100-nanosecond ticks since 1/1/0001 12:00 A.M.  
   
@@ -162,17 +160,17 @@ If you need to repeat cleaning operations often, we recommend that you save your
   
 3.  Expand the **Transforms** group in the left-hand pane of Studio. Locate the saved transformation and drag it into the experiment.  
   
-4.  Connect the saved transformation to the left input port of [Apply Transformation](apply-transformation.md).  
-  
-5.  Note that when you apply a saved transformation, you cannot select the columns to which the transformation will be applied. That is because the transformation has been already defined and applies automatically to the data types specified in the original operation.  
-  
-     One benefit is that, if you created a transformation on a subset of numeric columns, you can later apply this transformation to a dataset of mixed column types without raising an error, and the missing values are changed only in the matching numeric columns.  
+4.  Connect the saved transformation to the left input port of [Apply Transformation](apply-transformation.md). 
+
+5.  Note that when you apply a saved transformation, you cannot select the columns to which the transformation are applied. That is because the transformation has been already defined and applies automatically to the data types specified in the original operation.
+
+     However, suppose you created a transformation on a subset of numeric columns. You can apply this transformation to a dataset of mixed column types without raising an error, because the missing values are changed only in the matching numeric columns.
   
 6.  Run the experiment.  
-  
-## Examples  
 
- You can see examples of how this module is used by exploring these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+## Examples
+
+See examples of how this module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
 -   [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): In this sample, zeros are inserted for missing values.  
   
@@ -192,11 +190,11 @@ This section contains implementation details, as well as known issues and common
   
 -   When you type a replacement value, the value must be compatible with the data type in the selected column.  
   
--   Values of NaN, Inf, and –Inf are allowed for columns where the data type is Double.  
+-   Values of `NaN`, `Inf`, and `–Inf` are allowed for columns where the data type is Double.
   
 -   When using the MICE method, the replacement value is predicted by using the trained MICE model.  
   
--   Using **Clean Missing Data** can reset column types to feature. If your data contains other types of columns, such as labels, use [Edit Metadata](edit-metadata.md) to correct the column types.  
+-   Using **Clean Missing Data** can reset other column types to **feature**. If your data contains other types of columns, such as labels, use [Edit Metadata](edit-metadata.md) to correct the column types.
   
 ### Restrictions on use of cleaning transformations
 
@@ -210,18 +208,18 @@ The following restrictions apply when you use a saved transformation  (based on 
   
     For example, suppose you create a mean for an integer data column [Col1], and save the transformation. Now you want to apply the cleanup transformation to a copy of [Col1] that has been adjusted using a formula, such as ([Col1] /1.5). To ensure that the result is an integer, you round up the result, but still get an error when you apply the transformation. However, if you adjust the value using a formula such as ([Col 1] * 10), no error is raised!
     
-    To avoid such issues, use [Edit Metadata](edit-metadata.md) to explicitly reset the data type to integer. Note that, in general, operations in [Apply Math Operation](apply-math-operation.md) module implicitly change numeric columns to `double`.)
+    To avoid such issues, use [Edit Metadata](edit-metadata.md) to explicitly reset the data type to integer. In general, operations in [Apply Math Operation](apply-math-operation.md) module implicitly change numeric columns to `double`.
   
-###  <a name="bkmk_SettingThreshold"></a> Setting a Threshold for Cleaning Operations  
+###  <a name="bkmk_SettingThreshold"></a> Setting and interpreting threshold values
 
- When you specify a threshold for cleaning operations using the options **Minimum missing value ratio** or **Maximum missing value ratio**, the results can be unexpected or confusing.  
-  
- To demonstrate how the options for maximum and minimum missing values work, we have provided some examples from the Automobile Prices sample dataset, which has many columns with missing values. The following table shows the count of missing values for several columns in that dataset, together with the ratio of missing values computed on the dataset. The ratio of missing values (in the rightmost column) is the value that would be used in evaluating the dataset against the specified threshold values.
-  
-Assume that you set **Minimum missing value ratio** to 0.019 and set  **Maximum missing value ratio** to 0.020. Given the following taable of values, some columns meet the threshold criteria, and some do not:
+When you specify a threshold for cleaning operations using the options **Minimum missing value ratio** or **Maximum missing value ratio**, the results can be unexpected or confusing. To illustrate how the options for maximum and minimum missing values work, we have provided some examples from the **Automobile Prices** sample dataset, which has many columns with missing values. 
 
--   The *bore* and *stroke* columns meet the threshold criteria.
--   The *normalized-losses* and *compression-ratio* columns do not meet the threshold criteria.
+The following table shows the count of missing values for several columns in that dataset, together with the ratio of missing values computed on the dataset. The ratio of missing values (in the rightmost column) is the value that would be used in evaluating the dataset against the specified threshold values.
+  
+Assume that you set **Minimum missing value ratio** to 0.019 and set  **Maximum missing value ratio** to 0.020. Given the following table of values, some columns meet the threshold criteria, and some do not:
+
+-   The columns `bore` and `stroke` meet the threshold criteria.
+-   The columns `normalized-losses` and `compression-ratio` do not meet the threshold criteria.
 
 |Column name|Count of missing values|Ratio of missing values|  
 |-----------------|-----------------------------|-----------------------------|  
@@ -230,22 +228,22 @@ Assume that you set **Minimum missing value ratio** to 0.019 and set  **Maximum 
 |Stroke|4|0.019512195|  
 |Compression ratio|0|0|  
 
-Because **some** columns in the selection did not meet the specified criteria, no cleaning operation was performed on any column. To help you figure out what happened, the module returns the value **FALSE** in the two indicator columns, *bore_IsMissing* and *stroke_IsMissing*.
+Because **some** columns in the selection did not meet the specified criteria, no cleaning operation was performed on any column. To help you figure out what happened, the module returns the value **FALSE** in the two indicator columns, `bore_IsMissing` and `stroke_IsMissing`.
   
-However, if you change the threshold back to the default values of 0 for **Minimum missing value ratio** and 1 for **Maximum missing value ratio**, an indicator column is returned for all selected columns, and the specified operation is performed.  
+However, if you change the threshold back to the default values of 0 for **Minimum missing value ratio** and 1 for **Maximum missing value ratio**, an indicator column is returned for all selected columns, and the specified operation is performed.
   
 > [!TIP]
 >  If you are uncertain about whether missing value clean-up is working as expected, select the **Generate missing value indicator column** option.  
-  
-### Known issues  
+
+### Known issues
   
 -   **Error when MICE is applied on training data set and test set contains missing values**  
   
      If you use the MICE method to clean data and then process a dataset that contains missing values, you might get the following error:  
   
-     AFx Library library exception: Model is not trained. . ( Error 1000 )  
+     AFx Library library exception: Model is not trained. ( Error 1000 )
   
-     This error occurs only when the MICE method is selected, and if the training dataset does not contain missing values but the test dataset does.  This issue will be fixed in an upcoming refresh.  
+     This error occurs only when the MICE method is selected, and if the training dataset does not contain missing values but the test dataset does.  
   
 ##  <a name="ExpectedInputs"></a> Expected input  
   
@@ -274,9 +272,8 @@ However, if you change the threshold back to the default values of 0 for **Minim
 |Cleaned dataset|[Data Table](data-table.md)|Cleaned dataset|  
 |Cleaning transformation|[ITransform interface](itransform-interface.md)|Transformation that is to be passed to the **Apply Transformation** module to clean new data.|  
   
-##  <a name="exceptions"></a> Exceptions  
- For a list of all exceptions, see [Module Error Codes](machine-learning-module-error-codes.md).  
-  
+##  <a name="exceptions"></a> Exceptions
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0002](errors/error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type into the type required by the target method.|  
@@ -285,7 +282,11 @@ However, if you change the threshold back to the default values of 0 for **Minim
 |[Error 0013](errors/error-0013.md)|An exception occurs if the leaner passed to the module has an invalid type.|  
 |[Error 0018](errors/error-0018.md)|An exception occurs if the input dataset is not valid.|  
 |[Error 0039](errors/error-0039.md)|An exception occurs if the operation fails.|  
-  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+
 ## See also  
  [Manipulation](data-transformation-manipulation.md)   
  [Data Transformation](data-transformation.md)   
