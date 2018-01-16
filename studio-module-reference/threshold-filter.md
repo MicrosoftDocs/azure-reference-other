@@ -26,12 +26,12 @@ This article describes how to use the **Threshold Filter** module in Azure Machi
 Filters are an important tool in digital signal processing, and are often used in machine learning to improve the results of image or voice recognition. In general, a filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).
 
 **Threshold filters** are filters that lets you control the values for a specified range. A threshold filter examines each value of the input dataset and changes all values that do not meet the boundary conditions. You typically would use this type of filter for the following applications:
-  
--   Replace all negatively signed measurements with a value of zero.  
-  
--   Convert a gray-scale image to black and white areas by defining a numerical boundary value for all pixels. 
-After you have defined a filter that meets your needs, you apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module. The output of the [Apply Filter](apply-filter.md) module is a dataset containing the selected columns, transformed as specified by the **Threshold Filter** settings.  
 
+- Replace all negatively signed measurements with a value of zero.
+
+- Convert a gray-scale image to black and white areas by defining a numerical boundary value for all pixels.
+
+After you have defined a filter that meets your needs, you apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module. The output of the [Apply Filter](apply-filter.md) module is a dataset containing the selected columns, transformed as specified by the **Threshold Filter** settings.  
 
 > [!TIP]
 > Are you looking for a different type of filter? Studio provides these modules for sampling data, getting a subset of data, removing bad values, or creating test and training sets: [Split Data](split-data.md), [Clean Missing Data](clean-missing-data.md), [Partition and Sample](partition-and-sample.md), [Apply SQL Transformation](apply-sql-transformation.md), [Clip Values](clip-values.md).  If you need to filter data as you read it from a source, see [Import Data](import-data.md). The options depend on the source type. 
@@ -98,8 +98,8 @@ After you have defined a filter that meets your needs, you apply the filter to d
   
      Use the column selector to specify which columns the filter should be applied to. 
      
-     > [!IMPORTNAT]
-     > By default, the [Apply Filter](apply-filter.md) module uses the filter on all selected numeric columns. Be sure to exclude columns that you don't want to be changed.   
+     > [!IMPORTANT]
+     > By default, the [Apply Filter](apply-filter.md) module uses the filter on all selected numeric columns. Be sure to exclude columns that you don't want to change.   
   
 6.  To perform the actual computations, run the experiment.
   
@@ -142,7 +142,7 @@ For example, the following table shows the results when using a **MagnitudeLessT
 |5.75|5|5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
 |-5.75|*-5*|-5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
   
-##  <a name="Notes"></a> Technical Notes  
+##  <a name="Notes"></a> Technical notes
 
 The **Threshold Filter** module uses the following methods to define threshold values, depending on the filter type:  
   

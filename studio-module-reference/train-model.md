@@ -79,9 +79,9 @@ _Unsupervised learning_ indicates either that the outcome is unknown, or you cho
     > [!TIP] 
     > If you have trouble using the Column Selector, see the article [Select Columns in Dataset](select-columns-in-dataset.md) for tips. It describes some common scenarios and tips for using the **WITH RULES** and **BY NAME** options.
   
-5.  Run the experiment. If you have a lot of data, this can take a while.  
-  
-### <a name= "bkmk_results"></a> Results
+5.  Run the experiment. If you have a lot of data, this can take a while.
+
+### <a name="bkmk_results"></a> Results
 
 After the model is trained:
 
@@ -95,11 +95,30 @@ After the model is trained:
 
 If you need to train a type of model not supported by **Train Model**, there are several options:
 
- + Do scoring or testing using R script: [Create R Model](create-r-model.md), [Execute R Script](execute-r-script.md) 
-+ Write your own Python script to train a model:  [Execute Python Script](execute-python-script.md)
-+ Anomaly detection models require [Train Anomaly Detection Model](train-anomaly-detection-model.md)   
-+ Recommendation models require [Train Matchbox Recommender](train-matchbox-recommender.md)   
-+ For clustering models based on the included K-means algorithm, use [Train Clustering Model](train-clustering-model.md). For other clustering models, we recommend use of the [Execute R Script](execute-r-script.md) or [Execute Python Script](execute-python-script.md) modules to run custom training code.
+ + Create a custom scoring method using R script, or use one of the many R scoring packages available.
+
+    - [Create R Model](create-r-model.md) 
+    - [Execute R Script](execute-r-script.md) 
+
++ Write your own Python script to train and score a model, or use an existing Python library:
+
+    - [Execute Python Script](execute-python-script.md)
+
++ Anomaly detection models 
+
+    - [Train Anomaly Detection Model](train-anomaly-detection-model.md) supports the anomaly detection modules in Studio.
+
++ Recommendation models
+
+    - If your model uses the Matchbox recommend provided in Azure Machine Learning, use the [Train Matchbox Recommender](train-matchbox-recommender.md) module. 
+
+    - If you are using a different algorithm for market basket analysis or recommendation, use its training methods, in [R script](execute-r-script.md) or [Python script](execute-python-script.md).
+
++ Clustering models
+
+     - Use [Train Clustering Model](train-clustering-model.md) for the included K-means algorithm. 
+     
+     - For other clustering models, use [R script](execute-r-script.md) or [Python script](execute-python-script.md) modules to both configure and train the models.
 
 ## Examples
 

@@ -76,7 +76,7 @@ In an *exponential moving average*, the averages consist of a *head* and a *tail
   
      + **Exponential**  
      
-         A modified exponential moving average calculates a running moving average, where calculating the moving average at any one point considers the previously computed moving average at all preceding points. This method yields a smoother trend line.  
+         A modified exponential moving average calculates a running moving average, in which calculating the moving average at any one point considers the previously computed moving average at all preceding points. This method yields a smoother trend line.  
   
      + **Cumulative**  
      
@@ -88,7 +88,7 @@ In an *exponential moving average*, the averages consist of a *head* and a *tail
   
 5.  In the [Apply Filter](apply-filter.md) module, use the column selector to specify which columns the filter should modify. 
 
-    By default, the filter is applied to all numeric columns. Be sure to exclude any columns that don’t have appropriate data.  
+    By default, the filter is applied to all numeric columns. Be sure to exclude any columns that don’t have appropriate data.
   
 6.  Run the experiment.  
   

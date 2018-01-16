@@ -102,12 +102,12 @@ The algorithm used for comparing data values is hash-forced.
 ## Missing values
 
 The input dataset might have missing values in non-key columns and key columns. These rules apply to missing values:
-    
-+ A missing value is considered a valid value in key columns. Missing values can be present in both key     + In a sparse dataset, the missing value is considered equal only if it equals the default representation of a sparse value. 
+
++ A missing value is considered a valid value in key columns. Missing values can be present in both key.
+
++ In a sparse dataset, the missing value is considered equal only if it equals the default representation of a sparse value. 
 
 + In key columns, a missing value is considered equal to other missing values, but not equal to non-missing values. 
-
-+ In a sparse dataset, the missing value is considered equal only if it equals the default representation of a sparse value.
 
 ##  <a name="ExpectedInputs"></a> Expected input  
   
