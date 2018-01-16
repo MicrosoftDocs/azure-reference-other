@@ -1,7 +1,8 @@
 ---
 title: "Apply Math Operation | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/12/2017
+ms.date: 01/11/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,32 +12,35 @@ ms.assetid: 6bd12c13-d9c3-4522-94d3-4aa44513af57
 caps.latest.revision: 33
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Apply Math Operation
 *Applies a mathematical operation to column values*  
   
  Category: [Statistical Functions](statistical-functions.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
 
-You can use the **Apply Math Operation** module to create calculations that are applied to numeric columns in the input dataset. Supported math operations include common arithmetic functions such as multiplication and division, trigonometric functions, a variety of rounding functions, and special functions used in data science such as gamma and error functions.  
+This article describes how to use the **Apply Math Operation** module in Azure Machine Learning Studio, to create calculations that are applied to numeric columns in the input dataset. 
 
-After you define an operation and run the experiment, the values are added to your dataset. There are multiple *output modes*:
+Supported math operations include common arithmetic functions such as multiplication and division, trigonometric functions, a variety of rounding functions, and special functions used in data science such as gamma and error functions.  
 
-+ **Append** means that a new column containing the results will be appended to your dataset. This is particularly useful when you are verifying the result of the oepration.
-+ **Inplace** means that the column you used for the calculation will have its contents replaced with the new, computed values.
-+ **ResultOnly** means a new column will be created, but the source data used for the operation will not be output.
+After you define an operation and run the experiment, the values are added to your dataset. Depending on how you configure the module, you can:
 
-For complex math operations, we suggest using these modules:
++ Append the results to your dataset. This is particularly useful when you are verifying the result of the operation.
++ Replace columns values with the new, computed values.
++ Generate a new column for results, and not show the orginal data. 
 
-+ [Execute R Script](execute-r-script.md)
-+ [Execute Python Script](execute-python-script.md)
-+ [Apply SQL Transformation](apply-sql-transformation.md)  
-   
-### <a name ="bkmk_TypeOperations"></a> Supported Math Operations
+> [!TIP]
+> This module performs a single math operation at a time. For complex math operations, we recommend using these modules instead:
+> 
+> + [Execute R Script](execute-r-script.md)
+> + [Execute Python Script](execute-python-script.md)
+> + [Apply SQL Transformation](apply-sql-transformation.md)  
 
-Because there are some many different types of mathematical operations, in this module, the supported functions are grouped into categories as follows:  
+### <a name ="bkmk_TypeOperations"></a> Supported math operations
+
+Look for the operaiton you need in these categories:  
 
 -   [Basic](#bkmk_Basic)  
   
@@ -66,17 +70,17 @@ Because there are some many different types of mathematical operations, in this 
 
 ## Examples  
 
-For examples of how to use **Apply Math Operation**, see these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how to use **Apply Math Operation**, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   In the [Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272) sample, one set of column values is subtracted from another, and then the results are squared.  
+-   [Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272): One set of column values is subtracted from another, and then the results are squared.  
   
--   In the [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941) sample, the constant 1 is added to all values in a column to distinguish between zeros and missing values.  
+-   [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): The constant 1 is added to all values in a column to distinguish between zeros and missing values.  
   
--   The [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725) sample demonstrates various operations, including rounding and division.  
+-   [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates various operations, including rounding and division.  
   
--   The [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168) sample uses comparison operations to determine whether probability scores meet a required value.  
+-   [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses comparison operations to determine whether probability scores meet a required value.  
   
-## How to Use Apply Math Operation  
+## How to use Apply Math Operation  
 
 The **Apply Math Operation** module requires a dataset that contains at least one column containing only numbers. The numbers can be discrete or continuous but must be of a numeric data type, not a string.
 
@@ -84,7 +88,7 @@ You can apply the same operation to multiple numeric columns, but all columns mu
 
 Each instance of this module can perform only one type of operation at a time. To perform complex math operations, you might need to chain together several instances of the **Apply Math Operation** module.  
   
-1.  Add the **Apply Math Operation** module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) group in the **experiment items** list in Azure Machine Learning Studio.
+1.  Add the **Apply Math Operation** module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category.
 
 2. Connect a dataset that contains at least one numeric column.  
   
@@ -93,14 +97,14 @@ Each instance of this module can perform only one type of operation at a time. T
     For example, to do basic arithmetic on columns, choose **Operations**. To get a logarithm or a ceiling, choose **Basic**. To compare columns of values, use **Comparison**. 
     
     > [!TIP]
-    > All other options will change depending on what type of mathematical operation you choose. Also, any change to the category will reset all other options. Therefore, be sure to select from **Category**  firsts. 
+    > All other options change depending on what type of mathematical operation you choose. Also, any change to the category resets all other options. Therefore, be sure to select from **Category**  first!
     
 4. Choose a specific operation from the list in that category.
   
 4.  Select one or more source columns on which to perform the calculation.   
   
     + Any column that you choose must be a numeric data type. 
-    + The range of data must be valid for the selected mathematical operation. Otherwise an error or NaN (not a number) result may occur. For example, Ln(-1.0) is an invalid operation and results in a value of NaN.  
+    + The range of data must be valid for the selected mathematical operation. Otherwise an error or NaN (not a number) result may occur. For example, Ln(-1.0) is an invalid operation and results in a value of `NaN`.
   
 4.  Set additional parameters required by each type of operation.  
   
@@ -109,7 +113,6 @@ Each instance of this module can perform only one type of operation at a time. T
     - **Append**. All the columns used as inputs are included in the output dataset, plus one additional column is appended that contains the results of the math operation.
     - **Inplace**. The values in the columns used as inputs are replaced with the new calculated values. 
     - **ResultOnly**. A single column is returned containing the results of the math operation.
-  
   
 6.  Run the experiment, or right-click just the **Apply Math Operation** module and select **Run selected**.  
   
@@ -225,7 +228,7 @@ The functions in the **Basic** category usually take a single value from a colum
   
 ##  <a name="bkmk_Compare"></a> Compare  
 
-You can use the comparison functions in Azure Machine Learning any time that you need to test two sets of values against each other. For example, in an experiment you might need to do these comparison operations:  
+Use the comparison functions in Azure Machine Learning any time that you need to test two sets of values against each other. For example, in an experiment you might need to do these comparison operations:  
   
 -   Evaluate a column of probability scores model against a threshold value.  
   
@@ -284,39 +287,17 @@ Operation|Num1|Num2|Result column|Result value|
   
  **Subtract**  
  Specify the number to subtract (the *subtrahend*) by using the **Operation argument** dropdown list. You can choose either a constant or column of values. Then, specify the column of values to operate on (the *minuend*), by choosing a different column, using the second **Column set** option.  
-  
-You can subtract a constant from each value in a column of values, but not the reverse operation. To do this, use addition  
-  
-### Tips for complex operations
 
-Be careful when you select more than one column as the second operator. The results are easy to understand if he operation is simple, such as adding a constant to all columns. 
-However, let's say that your dataset has multiple columns, and you add the dataset to itself. In the results, each column is added to itself, as follows:  
-  
-|Num1|Num2|Num3|Add(Num1_Num1)|Add(Num2_Num2)|Add(Num3_Num3)|
-|----|----|----|----|----|----|
-|1|5|2|2|10|4|
-|2|3|-1|4|6|-2|
-|0|1|-1|0|2|-2|
+You can subtract a constant from each value in a column of values, but not the reverse operation. To do this, use addition instead. 
 
-If you need to perform more complex calculations, you can chain multiple instances of **Apply Math Operation**. For example, you might add two columns by using one instance of **Apply Math Operation**, and then use another instance of **Apply Math Operation** to divide the sum by a constant to obtain the mean.  
-  
-Alternatively, use one of the following modules to do all the calculations at once, using SQL, R, or Python script :
- 
-+ [Execute R Script](execute-r-script.md)
-+ [Execute Python Script](execute-python-script.md)
-+ [Apply SQL Transformation](apply-sql-transformation.md)   
-  
 ##  <a name="bkmk_Rounding"></a> Rounding  
 
-Supports a variety of rounding operations. 
+Supports a variety of rounding operations. For many operations, you must specify the amount of  precision to use when rounding. You can use either a static precision level, specified as a constant, or you can apply a dynamic precision value obtained from a column of values.  
 
-For many operations, you must specify the amount of  precision to use when rounding. You can use either a static precision level, specified as a constant, or you can apply a dynamic precision value obtained from a column of values.  
-
-+ If you use a constant, set **Precision Type** to **Constant** and then type the number of digits as an integer in the **Constant Precision** text box. If you type a non-integer, the module will not raise an error, but results can be unexpected.  
++ If you use a constant, set **Precision Type** to **Constant** and then type the number of digits as an integer in the **Constant Precision** text box. If you type a non-integer, the module does not raise an error, but results can be unexpected.  
 
 + To use a different precision value for each row in your dataset, set **Precision Type** to **ColumnSet**, and then choose the column that contains appropriate precision values.  
-  
-  
+
  **Ceiling**  
  Returns the ceiling for the values in **Column set**.  
   
@@ -355,9 +336,7 @@ For many operations, you must specify the amount of  precision to use when round
   
 ##  <a name="bkmk_Special"></a> Special  
 
-Includes specialized mathematical functions often used in data science.  
-  
- Unless otherwise noted, the function is unary and returns the specified calculation for each value in the selected column or columns.  
+Includes specialized mathematical functions often used in data science. Unless otherwise noted, the function is unary and returns the specified calculation for each value in the selected column or columns.  
   
  **Beta**  
  Returns the value of Euler’s beta function.  
@@ -542,30 +521,52 @@ Includes most of the important trigonometric and inverse trigonometric functions
  Calculates the hyperbolic tangent of the column values.  
   
 ## Technical Notes  
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Tips for operations on multiple columns
+
+Be careful when you select more than one column as the second operator. The results are easy to understand if the operation is simple, such as adding a constant to all columns. 
+
+Assume your dataset has multiple columns, and you add the dataset to itself. In the results, each column is added to itself, as follows:  
   
--   **What do you mean by unary and binary functions?**  
+|Num1|Num2|Num3|Add(Num1_Num1)|Add(Num2_Num2)|Add(Num3_Num3)|
+|----|----|----|----|----|----|
+|1|5|2|2|10|4|
+|2|3|-1|4|6|-2|
+|0|1|-1|0|2|-2|
+
+If you need to perform more complex calculations, you can chain multiple instances of **Apply Math Operation**. For example, you might add two columns by using one instance of **Apply Math Operation**, and then use another instance of **Apply Math Operation** to divide the sum by a constant to obtain the mean.  
   
-     In a *unary operation*, you create calculations based on column values without referring to other columns or constants.  
+Alternatively, use one of the following modules to do all the calculations at once, using SQL, R, or Python script :
+ 
++ [Execute R Script](execute-r-script.md)
++ [Execute Python Script](execute-python-script.md)
++ [Apply SQL Transformation](apply-sql-transformation.md)   
+
+### What is a unary or binary functions?  
   
-     For example, you might truncate the column’s values to a certain degree of precision, round values up or down, or find ceiling or floor values.  
+In a *unary operation*, you create calculations based on column values without referring to other columns or constants.  
   
-     An example of a unary operation is `Abs(X)`, where X is the column that is provided as input.  
+For example, you might truncate the column’s values to a certain degree of precision, round values up or down, or find ceiling or floor values.  
   
-     In a *binary operation*, you specify two sets of values. The first argument must always be a column or set of columns, while the second argument can be a number you specify as a constant, or another column.  
+An example of a unary operation is `Abs(X)`, where X is the column that is provided as input.  
   
-     An example of a binary operation that uses two columns is `Subtract(X,Y)`, in which X is the first column you select, and Y is the second column.  
+In a *binary operation*, you specify two sets of values. The first argument must always be a column or set of columns, while the second argument can be a number you specify as a constant, or another column.  
   
-     An example of using a binary operation that combines a column and a constant might be `Subtract(X,mean)`, where you type the column mean as a constant and subtract it from each value in column X.  
+An example of a binary operation that uses two columns is `Subtract(X,Y)`, in which X is the first column you select, and Y is the second column.  
   
--   **Suppose the numbers are actually categorical columns? How are the numbers handled?**  
+An example of using a binary operation that combines a column and a constant might be `Subtract(X,mean)`, where you type the column mean as a constant and subtract it from each value in column X.  
   
-     Support for categorical values presented as numbers depends on the function, and on how many arguments the function takes.  
+### How are numbers handled in categorical columns?  
   
-     If your operation includes numbers designated as categorical columns, a unary operation can be applied to categorical data values.  
+Support for categorical values presented as numbers depends on the function, and on how many arguments the function takes. 
+
++ If your operation includes numbers designated as categorical columns, a unary operation can be applied to categorical data values.  
   
-     Moreover, if a unary operation is applied to a categorical column, the categorical data values of the input column can be transformed to equal associated categorical data values of the output column. In this case, the values are merged, such that the number of categorical data values in the output is always less than the number of values in the input.  
++ If a unary operation is applied to a categorical column, the categorical data values of the input column can be transformed to equal associated categorical data values of the output column. In this case, the values are merged, such that the number of categorical data values in the output is always less than the number of values in the input.  
   
-     If a binary operation is applied to a categorical column and some other column, the expected behavior is as follows:  
++ If a binary operation is applied to a categorical column and some other column, the expected behavior is as follows:  
   
     -   If the other column is dense, the output column is categorical.  
   
@@ -577,13 +578,13 @@ Includes most of the important trigonometric and inverse trigonometric functions
   
     -   If both arguments of a binary operation are sparse columns, the resulting column contains background zeros in all positions where both input columns contained background zeros.  
   
--   **How are sparse columns handled?**  
+### How are sparse columns handled?  
   
-     In unary operations, all elements of sparse columns that correspond to background zeros are left unprocessed.  
+In unary operations, all elements of sparse columns that correspond to background zeros are left unprocessed.  
   
-     In binary operations, if one argument is a sparse column and the other argument is a dense column, the resulting column is sparse with all background zeros propagated from input from the sparse column.  
+In binary operations, if one argument is a sparse column and the other argument is a dense column, the resulting column is sparse with all background zeros propagated from input from the sparse column.  
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -595,7 +596,7 @@ Includes most of the important trigonometric and inverse trigonometric functions
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Results dataset|  
   
-## See Also  
+## See also  
 
  [Statistical Functions](statistical-functions.md)   
  [A-Z Module List](a-z-module-list.md)
