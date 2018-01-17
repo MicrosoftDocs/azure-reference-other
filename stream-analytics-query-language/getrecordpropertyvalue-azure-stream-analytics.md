@@ -35,7 +35,7 @@ GetRecordPropertyValue ( record_expression, string_expression )
  Is the string expression to be evaluated as a record property name.  
   
 ## Return Types  
- Return type is determined by the record property type and can be any of the [supported types](#data-types-azure-stream-analytics.md).  
+ Return type is determined by the record property type and can be any of the [supported types](data-types-azure-stream-analytics.md).  
   
 ## Examples  
  In this code example, “thresholds” is a reference data name defined on the inputs tab.  

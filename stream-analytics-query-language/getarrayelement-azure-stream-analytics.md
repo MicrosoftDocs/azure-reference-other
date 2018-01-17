@@ -35,7 +35,7 @@ GetArrayElement ( array_expression, bigint_expression )
  Is the bigint expression to be evaluated as array index  
   
 ### Return Types  
- Return type is determined by the array element type and can be any of the [supported types.](#data-types-azure-stream-analytics.md)  
+ Return type is determined by the array element type and can be any of the [supported types.](data-types-azure-stream-analytics.md)  
   
 ### Examples  
   
