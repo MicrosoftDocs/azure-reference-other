@@ -1,7 +1,8 @@
 ---
 title: "Convert to Indicator Values | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/30/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,18 +12,38 @@ ms.assetid: 6ea59c36-f283-410e-b34c-edfabfac39b0
 caps.latest.revision: 18
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Convert to Indicator Values
 *Converts categorical values in columns to indicator values*  
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
   
-## Module Overview  
+## Module overview  
  
 This article describes how to use the [Convert to Indicator Values](convert-to-indicator-values.md) module in Azure Machine Learning Studio. The purpose of this module is to convert columns that contain categorical values into a series of binary indicator columns that can more easily be used as features in a machine learning model.  
+
+## How to configure Convert to Indicator Values
   
- For example, suppose you have a column with scores that indicate whether a server has a high, medium or low probability of failure.  
+1.  Add the [Convert to Indicator Values](convert-to-indicator-values.md) module to your Azure Machine Learning experiment, and connect it to the dataset containing the columns you want to convert. You can find this module under **Data Transformations**, in the **Manipulation** category.
+
+2. Use the **Column Selector** to choose one or more categorical columns.  
+  
+     To ensure that the columns you select are categorical, use [Edit Metadata](edit-metadata.md) before [Convert to Indicator Values](convert-to-indicator-values.md) in your experiment, to mark the target column as categorical.  
+  
+3.  Select the **Overwrite categorical columns** option if you want to output **only** the new Boolean columns.  
+  
+     By default, this option is off, which lets you see the categorical column that is the source, together with the related indicator columns.  
+  
+    > [!TIP]
+    >  If you choose the option to overwrite, the source column is not actually deleted or modified. Instead, the new columns are generated and presented in the output dataset, and the source column remains available in the workspace. 
+    > If you need to see the original data, you can use the [Add Columns](add-columns.md) module at any time to add the source column back in.
+
+4. Run the experiment.
+
+### Results
+
+For example, suppose you have a column with scores that indicate whether a server has a high, medium or low probability of failure.  
   
 |Server ID|Failure score|  
 |---------------|-------------------|  
@@ -30,7 +51,7 @@ This article describes how to use the [Convert to Indicator Values](convert-to-i
 |10302|Medium|  
 |10303|High|  
   
- You can use [Convert to Indicator Values](convert-to-indicator-values.md) to convert the single column of labels into multiple columns of this pattern:  
+When you apply [Convert to Indicator Values](convert-to-indicator-values.md), the single column of labels is converted into multiple columns containing Boolean values:  
   
 |Server ID|Failure score - Low|Failure score - Medium|Failure score - High|  
 |---------------|--------------------------|-----------------------------|---------------------------|  
@@ -38,7 +59,7 @@ This article describes how to use the [Convert to Indicator Values](convert-to-i
 |10302|0|1|0|  
 |10303|0|0|1|  
   
- Here is how the conversion works:  
+Here is how the conversion works:  
   
 -   In the **Failure score** column that describes risk, there are only three possible values (High, Medium, and Low), and no missing values. Therefore exactly three new columns are created.  
   
@@ -46,45 +67,30 @@ This article describes how to use the [Convert to Indicator Values](convert-to-i
   
 -   There should be a 1 in exactly one indicator column, and 0 in all other indicator columns. That is because each server can have only one risk rating.  
   
- You can now use the three indicator columns as features and analyze their correlation with other properties that are associated with different risk level.  
-  
-## How to Configure [Convert to Indicator Values](convert-to-indicator-values.md)  
-  
-1.  Add the [Convert to Indicator Values](convert-to-indicator-values.md) module to your Azure Machine Learning experiment, and connect it to the datset containing the columns you want to convert.
+You can now use the three indicator columns as features and analyze their correlation with other properties that are associated with different risk level.
 
-    You can find this module in the **Data Transformations** category, under **Manipulation**.
-
-2. Use the **Column Selector** to choose one or more categorical columns.  
-  
-     To ensure that the columns you select are categorical, use [Edit Metadata](edit-metadata.md) before [Convert to Indicator Values](convert-to-indicator-values.md) in your experiment, to mark the target column as categorical.  
-  
-2.  Select the **Overwrite categorical columns** option if you want to output **only** the new Boolean columns.  
-  
-     By default, this option is off, which lets you see the categorical column that is the source, together with the related indicator columns.  
-  
-    > [!TIP]
-    >  If you choose the option to overwrite, the source column is not actually deleted or modified. Instead, the new columns are generated and presented in the output dataset, and the source column remains available in the workspace. 
-    > If you need to see the original data, you can use the [Add Columns](add-columns.md) module at any time to add the source column back in.  
-  
 ## Examples  
- 
- You can see examples of how this module is used by exploring these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   In the [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726) sample, patients are binned into groups based on patient ID numbers, and then **Indicator Values** is used to flag which group the patient belongs to. Later, the group indicators are used when scoring models.  
+- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Patients are binned into groups based on patient ID numbers, and then **Indicator Values** is used to flag which group the patient belongs to. Later, the group indicators are used when scoring models.  
   
--   In the [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168) sample, probabilities are compared to a constant by using [Apply Math Operation](apply-math-operation.md), and the Yes/No values that indicate whether the score was above or below the constant are turned into new indicator columns.  
+- [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Probabilities are compared to a constant by using [Apply Math Operation](apply-math-operation.md), and the Yes/No values that indicate whether the score was above or below the constant are turned into new indicator columns.  
   
--   In the [Network intrusion detection](http://go.microsoft.com/fwlink/?LinkId=525724) sample, log data is loaded from Azure storage. The class variable (which describes, for example, if an attack is a rootkit or buffer overflow) is converted to a categorical column and then expanded to multiple indicator values.  
-  
-## Technical Notes  
-  
+-  [Network intrusion detection](http://go.microsoft.com/fwlink/?LinkId=525724): Log data is loaded from Azure storage. The class variable (which describes, for example, if an attack is a rootkit or buffer overflow) is converted to a categorical column and then expanded to multiple indicator values.  
+## Technical notes  
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Tips
+
 -   Only columns that are marked as categorical can be converted to indicator columns. If you see this error, it is likely that one of the columns you selected is not categorical:  
   
      Error 0056: Column with name  \<column name> is not in an allowed category.  
   
      By default most string columns are handled as string features, so you must explicitly mark them as categorical using [Edit Metadata](edit-metadata.md).  
   
--   An error will be displayed if you do not select at least one categorical column.  
+-   An error is displayed if you do not select at least one categorical column.  
   
 -   There is no limit on the number of columns that you can convert to indicator columns. However, because each column of values can yield multiple indicator columns, you might want to convert and review just a few columns at a time.  
   
@@ -98,13 +104,13 @@ This article describes how to use the [Convert to Indicator Values](convert-to-i
   
      To avoid getting a huge number of indicator columns, we recommend that you first check the number of values in the column, and bin or quantize the data appropriately.  
   
-##  <a name="ExpectedInputs"></a> Expected Input  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Dataset with categorical columns|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -117,7 +123,7 @@ This article describes how to use the [Convert to Indicator Values](convert-to-i
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset with categorical columns converted to indicator matrices.|  
   
-## See Also  
+## See also  
  [Manipulation](data-transformation-manipulation.md)   
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)

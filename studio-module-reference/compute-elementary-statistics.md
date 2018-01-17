@@ -1,7 +1,8 @@
 ---
 title: "Compute Elementary Statistics | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 03/02/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,21 +12,22 @@ ms.assetid: 3086b8d4-c895-45ba-8aa9-34f0c944d4d3
 caps.latest.revision: 20
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Compute Elementary Statistics
 *Calculates specified summary statistics for selected dataset columns*  
   
  Category: [Statistical Functions](statistical-functions.md)  
   
-##  <a name="Remarks"></a> Module Overview  
- You can use the [Compute Elementary Statistics](compute-elementary-statistics.md) module to generate a summary report for your dataset that lists key statistics such as mean, standard deviation, and the range of values for each of the selected columns.  
+## Module overview  
+
+This article describes how to use the [Compute Elementary Statistics](compute-elementary-statistics.md) module in Azure Machine Learning Studio, to generate a summary report for your dataset that lists key statistics such as mean, standard deviation, and the range of values for each of the selected columns.  
   
  This report is useful for analyzing the central tendency, dispersion, and shape of data.  
   
-## How to Use the [Compute Elementary Statistics](compute-elementary-statistics.md) module  
+## How to configure Compute Elementary Statistics
   
-1.  Add the [Compute Elementary Statistics](compute-elementary-statistics.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) group in the **experiment items** list in Azure Machine Learning Studio.
+1.  Add the [Compute Elementary Statistics](compute-elementary-statistics.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Azure Machine Learning Studio.
 
 2. Connect a dataset that contains the columns you want to analyze.
  
@@ -50,9 +52,9 @@ The generated report includes the name of each column and the statistic that was
 > [!TIP]
 > Each time you run [Compute Elementary Statistics](compute-elementary-statistics.md), it can generate only a single summary statistic for each of the selected columns. However, you can use the [Add Columns](add-columns.md) or [Add Rows](add-rows.md) modules to merge the results into a single table, as in the preceding example.
   
-##  <a name="bkmk_SupportedStats"></a> Supported Statistics  
+##  <a name="bkmk_SupportedStats"></a> Supported statistics  
 
- This module supports the following standard descriptive statistics.  
+This module supports the following standard descriptive statistics.  
   
  **Deviation squared**  
  Calculates the *squared deviation* of the column values. Also known as the sum of squares.  
@@ -192,46 +194,51 @@ The generated report includes the name of each column and the statistic that was
  Calculates the *sum* of the column values.  
   
 ## Examples  
- There are currently no examples that use this module. However, the following experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/) demonstrate how you can create a summary report that contains descriptive statistics for an entire dataset.  
+
+The following experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) demonstrate how you can create a summary report that contains descriptive statistics for an entire dataset. The summary report contains only general statistics; however, you can save it as a dataset and then add more detailed statistics, using the options in [Compute Elementary Statistics](compute-elementary-statistics.md).
+
+- [Download dataset from UCI](https://gallery.cortanaintelligence.com/Experiment/24c4e869c5c448958ce923c2e2bfbb27): The [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
   
- After reviewing the summary report, you might save it as a dataset and then add more detailed statistics, using the options in  [Compute Elementary Statistics](compute-elementary-statistics.md).  
+- [Dataset Processing and Analysis](https://gallery.cortanaintelligence.com/Experiment/943c3d4becb7470e8acac6af699d6ea9): The [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
+
+
+##  <a name="Notes"></a> Technical notes  
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Tips
+
+The following conditions must be satisfied when using the [Compute Elementary Statistics](compute-elementary-statistics.md) module:  
   
--   In the [Download dataset from UCI](https://gallery.cortanaintelligence.com/Experiment/24c4e869c5c448958ce923c2e2bfbb27) sample, the [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
+- There must be a sufficient number of data points (rows) to compute the selected statistic. For example, to compute **Sample standard deviation** requires at least two data points; otherwise, the result is NaN.  
   
--   In the [Dataset Processing and Analysis](https://gallery.cortanaintelligence.com/Experiment/943c3d4becb7470e8acac6af699d6ea9) sample, the [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
+-  Input columns must be numeric or Boolean.  
+
+By default, all numeric columns are selected. However, if any numeric columns are marked as categorical, you might get the following error: " Error 0056: Column with name \<column name> is not in an allowed category."
   
-##  <a name="Notes"></a> Technical Notes  
- The following conditions must be satisfied when using the [Compute Elementary Statistics](compute-elementary-statistics.md) module:  
+To correct the error, add an instance of the [Edit Metadata](edit-metadata.md) module, select the column with the problem, and use the option **Remove categorical**.  
+
+### Implementation details
   
--   There must be a   sufficient number of data points (rows) to compute the selected statistic. For example, to compute **Sample standard deviation** requires at least two data points; otherwise, the result is NaN.  
+Boolean columns are processed as follows:  
   
--   Input columns must be numeric or Boolean.  
++ MIN is computed as logical AND.  
   
--   Boolean columns are processed as follows:  
++ MAX is computed as logical OR.  
   
-    -   MIN is computed as logical AND.  
++ RANGE checks whether the number of unique values in the column equals 2.  
   
-    -   MAX is computed as logical OR.  
++ Missing values are ignored.  
   
-    -   RANGE checks whether the number of unique values in the column equals 2.  
-  
--   Missing values are ignored.  
-  
--   For statistics that require floating-point calculations, True = 1.0 and False = 0.0  
-  
--   By default, all numeric columns are selected. However, if any numeric columns are marked as categorical, you might get the following error.  
-  
-     Error 0056: Column with name \<column name> is not in an allowed category.  
-  
-     To correct the error, add an instance of the [Edit Metadata](edit-metadata.md) module, select the column with the problem, and use the option **Remove categorical**.  
-  
-##  <a name="ExpectedInputs"></a> Expected Input  
++ For statistics that require floating-point calculations, True = 1.0 and False = 0.0
+
+##  <a name="ExpectedInputs"></a> Expected inputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -245,14 +252,17 @@ The generated report includes the name of each column and the statistic that was
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
   
-##  <a name="exceptions"></a> Exception  
- For a complete list of error messages, see [Module Error Codes](machine-learning-module-error-codes.md).  
-  
+##  <a name="exceptions"></a> Exceptions
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+
+## See also  
  [Statistical Functions](statistical-functions.md)   
  [elementary](compute-elementary-statistics.md)   
  [Summarize Data](summarize-data.md)   

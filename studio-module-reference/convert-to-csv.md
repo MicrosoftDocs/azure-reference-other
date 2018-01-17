@@ -1,7 +1,8 @@
 ---
 title: "Convert to CSV | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 08/22/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +12,7 @@ ms.assetid: faa6ba63-383c-4086-ba58-7abf26b85814
 caps.latest.revision: 30
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Convert to CSV
 *Converts data input to a comma-separated values format*  
@@ -22,7 +23,7 @@ manager: "jhubbard"
  
 This article describes how to use the [Convert to CSV](convert-to-csv.md) module in Azure Machine Learning to convert a dataset from Azure ML into a CSV format that can be downloaded, exported, or shared with R or Python script modules.
 
-### Why Convert to CSV 
+### More about the CSV format 
 
 The CSV format, which stands for "comma-separated values", is a file format used by many external machine learning tools. Although the native dataset format used by Azure Machine Learning is based on the .NET datatable and thus can be read by .NET libraries, CSV is a common interchange format when working with open-source languages such as R or Python.
 
@@ -36,59 +37,73 @@ Even if you do must of your work in Azure Machine Learning Studio, there are tim
   
  When you convert a dataset to CSV, the file is saved in your Azure ML workspace. You can use an Azure storage utility to open and use the file directly, or you can right-click the module output and download the CSV file to your computer, or use it in R or Python code.  
   
-## How to Use [Convert to CSV](convert-to-csv.md)  
+## How to configure Convert to CSV  
  
-  
-1.  Add the [Convert to CSV](convert-to-csv.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) group in the **experiment items** list in Azure Machine Learning Studio. 
+1.  Add the [Convert to CSV](convert-to-csv.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) group in Studio. 
 
 2. Connect it to any module that outputs a dataset.   
   
-3.  Run the experiment, or click the [Convert to CSV](convert-to-csv.md) module, and click **Run selected**.  
-  
-4.  Double-click the output of [Convert to CSV](convert-to-csv.md), and select one of these options.  
+3.  Run the experiment, or click the [Convert to CSV](convert-to-csv.md) module, and click **Run selected**.
 
-    + **Download**: Immediately opens a copy of the data in CSV format that you can save to a local folder. If you do not specify a folder, a default file name is applied and the CSV file is saved in the local **Downloads** library.
-    + **Save as Dataset**: Saves the CSV file back to the Azure ML workspace as a separate dataset.
-    + **Generate Data Access Code**: Azure ML generates two sets of code for you to access the data, either by using Python or by using R. To access the data, copy the code snippet into your application.
-    + **Open in a new Notebook**: A new Jupyter notebook is created for you and code inserted for reading the data from your workspace, using the language of your choice: Python 2, Python 3, or R with Microsoft R Open. For example, the R code loads the CSV file into a data frame and displays the first few rows using the `head` function.
-    
-5.  If you select **Download dataset**, you must indicate whether you want to open the dataset, or save it to a local file.  
+### Results
   
-    -   If you select **Open**, the dataset is loaded using the application that is associated by default with .CSV files: for example, Microsoft Excel.  
-  
-    -   If you  select **Download dataset**, by default, the file is saved with the name of the module plus a GUID representing the workspace ID. However, you can select the **Save As** option during download and change the file name or location.  
-  
+Double-click the output of [Convert to CSV](convert-to-csv.md), and select one of these options.  
+
+ + **Download**: Immediately opens a copy of the data in CSV format that you can save to a local folder. If you do not specify a folder, a default file name is applied and the CSV file is saved in the local **Downloads** library.
+
+    If you select **Download dataset**, you must indicate whether you want to open the dataset, or save it to a local file.  
+
+    If you select **Open**, the dataset is loaded using the application that is associated by default with .CSV files: for example, Microsoft Excel.  
+
+     If you select **Download dataset**, by default, the file is saved with the name of the module plus a GUID representing the workspace ID. However, you can select the **Save As** option during download and change the file name or location.
+
+ + **Save as Dataset**: Saves the CSV file back to the Azure ML workspace as a separate dataset.
+
+ + **Generate Data Access Code**: Azure ML generates two sets of code for you to access the data, either by using Python or by using R. To access the data, copy the code snippet into your application.
+
+ + **Open in a new Notebook**: A new Jupyter notebook is created for you and code inserted for reading the data from your workspace, using the language of your choice: Python 2, Python 3, or R with Microsoft R Open. 
+ 
+     For example, if you choose the R option, sample R code is provided that loads the CSV file into a data frame and displays the first few rows using the `head` function.
+
 ## Examples  
 
-You can see examples of how this module is used by exploring these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   The sample [Accessing Azure ML datasets using R](https://gallery.cortanaintelligence.com/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5) demonstates how you can convert datasets to CSV format for use with external applications. 
+- [Accessing Azure ML datasets using R](https://gallery.cortanaintelligence.com/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5): Demonstates how you can convert datasets to CSV format for use with external applications. 
   
-## Technical Notes  
+## Technical notes  
 
- The CSV file format is is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
- 
- A CSV file stores tabular data (numbers and text) in plain text form. A CSV file consists of any number of records, separated by line breaks of some kind. Each record consists of fields, separated by a literal comma. In some regions, the separator might be a semi-colon. 
+This section contains implementation details, tips, and answers to frequently asked questions.
 
- Typically, all records have an identical number of fields, and missing values are represented as nulls or empty strings.  
+### Requirements of the CSV format
+
+The CSV file format is is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
  
-You can easily export data from Excel, Access, or a relational database into CSV files, to use in Azure Machine Learning. Although file names typically have the .CSV extension, Azure Machine Learning does not require that this filename extension be present if you want to import the data as CSV. You can import XLSX, TXT, and other files as CSV. However, the fields in the file must be formatted as described above, and the file must use the UTF-8 encoding.
+A CSV file stores tabular data (numbers and text) in plain text form. A CSV file consists of any number of records, separated by line breaks of some kind. Each record consists of fields, separated by a literal comma. In some regions, the separator might be a semi-colon. 
+
+Typically, all records have an identical number of fields, and missing values are represented as nulls or empty strings.  
+
+### Tips
+
+You can easily export data from Excel, Access, or a relational database into CSV files, to use in Azure Machine Learning. Although file names typically have the .CSV extension, Azure Machine Learning does not require that this filename extension be present if you want to import the data as CSV. You can import XLSX, TXT, and other files as CSV. 
+
+However, the fields in the file must be formatted as described in the preceding section, and the file must use the UTF-8 encoding.
 
 ### Common questions and issues 
 
 This section describes some known issues, common questions, and workarounds specific to the **Convert to CSV** module. 
 
-**Headers must be single rows**
+#### Headers must be single rows
   
 The CSV file format used in Azure Machine Learning supports a single header row.  You cannot insert multi-line headers.
 
-**Custom separators supported on import but not export**
-  
+#### Custom separators supported on import but not export
+
 The [Convert to CSV](convert-to-csv.md) module does not support generating alternative column separators, such as the semicolon (;), which is often used in Europe. 
 
 However, when you import data from CSV files in external storage, you can specify alternative separators. In the [Import Data](import-data.md) module, select the **CSV with encodings** option, and pick a supported encoding.  
 
-**Inaccurate column separation on string data containing commas**
+#### Inaccurate column separation on string data containing commas
   
 It is a common problem in text processing that just about every character that can be specified as a column separator (tabs, spaces, commas, etc.) can also be found randomly in text fields. Importing text from CSV always requires caution to avoid separating text across unnecessary new columns. 
 
@@ -110,11 +125,11 @@ The [Convert to CSV](convert-to-csv.md) module supports only UTF-8 character enc
 
 + [Python standard encodings](https://docs.python.org/2.4/lib/standard-encodings.html)
 
-**Dataset does not have column names**  
+#### Dataset does not have column names
 
 If the dataset you are exporting to a CSV file does not have column names, we recommend that you use [Edit Metadata](edit-metadata.md) to add column names before converting it. You cannot add column names as part of the conversion or export process.  
 
-**SYLK: File format is not valid**  
+#### SYLK: File format is not valid
 
 If the first column of the dataset that you convert to CSV has the name **ID**, you might get the following error when you try to open the file in Excel:  
   
@@ -122,17 +137,16 @@ If the first column of the dataset that you convert to CSV has the name **ID**, 
   
 To avoid this error, you must rename the column. For more information, see [http://support.microsoft.com/kb/215591](http://support.microsoft.com/kb/215591)  
 
-**I need help with importing from CSV**
+#### I need help with importing from CSV
 
-Then you don't need the **Export to CSV** module. Instead, use the [Import Data](import-data.md) module.
+For importing, don't use the **Export to CSV** module. Instead, use the [Import Data](import-data.md) module.
 
 For general information about importing from CSV, see these resources:
 
 + [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-import-data)
 + Tutorial in Cortana Intelligencec Gallery demonstrating various data sources and how to work with them in Studio: [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1)
 
-  
-##  <a name="ExpectedInputs"></a> Expected Input  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -144,6 +158,6 @@ For general information about importing from CSV, see these resources:
 |----------|----------|-----------------|  
 |Results dataset|GenericCsv|Output dataset|  
   
-## See Also  
+## See also  
  [Data Format Conversions](data-format-conversions.md)   
  [A-Z Module List](a-z-module-list.md)
