@@ -40,18 +40,18 @@ In regression problems, boosting builds a series of trees in a step-wise fashion
   
 For additional information, see these articles:  
   
--   The Wikipedia article on gradient boosting provides background on boosted trees.  
++ [https://wikipedia.org/wiki/Gradient_boosting#Gradient_tree_boosting](https://wikipedia.org/wiki/Gradient_boosting)
+
+    This Wikipedia article on gradient boosting provides some background on boosted trees. 
   
-     [https://wikipedia.org/wiki/Gradient_boosting#Gradient_tree_boosting](https://wikipedia.org/wiki/Gradient_boosting)  
-  
--   Microsoft Research: From RankNet to LambdaRank to LambdaMART: An OverviewC.J.C. Burges.  
-  
-     [http://research.microsoft.com/apps/pubs/default.aspx?id=132652](http://research.microsoft.com/apps/pubs/default.aspx?id=132652)  
-  
- The gradient boosting method can also be used for classification problems by reducing them to regression with a suitable loss function. For more information about the boosted trees implementation for classification tasks, see [Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md).  
-  
+-  [http://research.microsoft.com/apps/pubs/default.aspx?id=132652](http://research.microsoft.com/apps/pubs/default.aspx?id=132652)  
+
+    Microsoft Research: From RankNet to LambdaRank to LambdaMART: An Overview. By J.C. Burges.
+
+The gradient boosting method can also be used for classification problems by reducing them to regression with a suitable loss function. For more information about the boosted trees implementation for classification tasks, see [Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md).  
+
 ## How to configure Boosted Decision Tree Regression Model
-  
+
 1.  Add the **Boosted  Decision Tree** module to your experiment. You can find this module under **Machine Learning**, **Initialize**, under the **Regression** category. 
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  

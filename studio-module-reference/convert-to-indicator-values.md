@@ -78,6 +78,7 @@ To see examples of how this module is used, see the [Azure AI Gallery](https://g
 - [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Probabilities are compared to a constant by using [Apply Math Operation](apply-math-operation.md), and the Yes/No values that indicate whether the score was above or below the constant are turned into new indicator columns.  
   
 -  [Network intrusion detection](http://go.microsoft.com/fwlink/?LinkId=525724): Log data is loaded from Azure storage. The class variable (which describes, for example, if an attack is a rootkit or buffer overflow) is converted to a categorical column and then expanded to multiple indicator values.  
+
 ## Technical notes  
 
 This section contains implementation details, tips, and answers to frequently asked questions.

@@ -19,21 +19,19 @@ manager: "cgronlund"
   
  Category: [Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)  
   
-## Module overview  
- 
+## Module overview
+
 This article describes how to use the **Clip Values** module in Azure Machine Learning Studio, to identify and optionally replace data values that are above or below a specified threshold. This is useful when you want to remove outliers or replace them with a mean, a constant, or other substitute value.  
 
 You connect the module to a dataset that has the numbers you want to clip, choose the columns to work with, and then set a threshold or range of values, and a replacement method. The module can output either just the results, or the changed values appended to the original dataset.
 
-## How to configure Clip Values  
+## How to configure Clip Values
 
-Before you begin, identify the columns you want to clip, and the method to use. 
+Before you begin, identify the columns you want to clip, and the method to use. We recommend that you test any clipping method on a small subset of data first.
 
-+ The module applies the same criteria and replacement method to **all** columns that you include in the selection. Therefore, be sure to exclude columns that you don't want to change.
+The module applies the same criteria and replacement method to **all** columns that you include in the selection. Therefore, be sure to exclude columns that you don't want to change.
 
- + If you need to apply clipping methods or differnt criteria to some columns, you must use a new instance of **Clip Values** for each set of similar columns.
-
-We recommend that you test the clipping method on a small subset of data first.
+If you need to apply clipping methods or different criteria to some columns, you must use a new instance of **Clip Values** for each set of similar columns.
 
 1.  Add the **Clip Values** module to your experiment and connect it to the dataset you want to modify. You can find this module under **Data Transformation**, in the **Scale and Reduce** category. 
   

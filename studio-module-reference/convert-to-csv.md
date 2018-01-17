@@ -19,26 +19,24 @@ manager: "cgronlund"
   
  Category: [Data Format Conversions](data-format-conversions.md)  
   
-## Module Overview  
+## Module overview
  
-This article describes how to use the [Convert to CSV](convert-to-csv.md) module in Azure Machine Learning to convert a dataset from Azure ML into a CSV format that can be downloaded, exported, or shared with R or Python script modules.
+This article describes how to use the [Convert to CSV](convert-to-csv.md) module in Azure Machine Learning Studio, to convert a dataset from Azure ML into a CSV format that can be downloaded, exported, or shared with R or Python script modules.
 
 ### More about the CSV format 
 
 The CSV format, which stands for "comma-separated values", is a file format used by many external machine learning tools. Although the native dataset format used by Azure Machine Learning is based on the .NET datatable and thus can be read by .NET libraries, CSV is a common interchange format when working with open-source languages such as R or Python.
 
-Even if you do must of your work in Azure Machine Learning Studio, there are times when you might find it handy to convert your dataset to CSV to use in external tools. For example:  
-  
--  Download the CSV file to open it with Excel, or import it into a relational database.  
-  
--  Save the CSV file to cloud storage and connect to it from Power BI to create visualizations.  
+Even if you do must of your work in Azure Machine Learning Studio, there are times when you might find it handy to convert your dataset to CSV to use in external tools. For example:
 
--   Use the CSV format to prepare data for use in R and Python. Just right-click the output of the module to generate the code needed to access the data directly from Python or a Jupyter notebook. 
-  
- When you convert a dataset to CSV, the file is saved in your Azure ML workspace. You can use an Azure storage utility to open and use the file directly, or you can right-click the module output and download the CSV file to your computer, or use it in R or Python code.  
-  
-## How to configure Convert to CSV  
- 
++ Download the CSV file to open it with Excel, or import it into a relational database.  
++ Save the CSV file to cloud storage and connect to it from Power BI to create visualizations.  
++ Use the CSV format to prepare data for use in R and Python. Just right-click the output of the module to generate the code needed to access the data directly from Python or a Jupyter notebook. 
+
+When you convert a dataset to CSV, the file is saved in your Azure ML workspace. You can use an Azure storage utility to open and use the file directly, or you can right-click the module output and download the CSV file to your computer, or use it in R or Python code.  
+
+## How to configure Convert to CSV
+
 1.  Add the [Convert to CSV](convert-to-csv.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) group in Studio. 
 
 2. Connect it to any module that outputs a dataset.   
@@ -109,9 +107,7 @@ It is a common problem in text processing that just about every character that c
 
 When you try to export a column of string data that contains commas, you might run into problems as well. Azure Machine Learning does not support any special handling or special translation of such data, such as enclosing strings in quotation marks. Also, you cannot use escape characters before a comma to ensure that commas are handled as a literal character. 
 
-Therefore, new fields will be created in the output file for each comma that is encountered in the string field.  
-
-To avoid this problem, there are several workarounds:
+Therefore, new fields are created in the output file for each comma that is encountered in the string field. To avoid this problem, there are several workarounds:
 
 - Use the [Preprocess Text](preprocess-text.md) module to remove punctuation characters from string fields.
 
@@ -144,9 +140,9 @@ For importing, don't use the **Export to CSV** module. Instead, use the [Import 
 For general information about importing from CSV, see these resources:
 
 + [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-import-data)
-+ Tutorial in Cortana Intelligencec Gallery demonstrating various data sources and how to work with them in Studio: [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1)
++ [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

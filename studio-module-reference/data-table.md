@@ -1,5 +1,6 @@
 ---
 title: "Data Table | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/16/2018
 ms.reviewer: ""

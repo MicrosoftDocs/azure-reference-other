@@ -56,25 +56,17 @@ The question of which probability distribution function to use depends on the da
   
 4.  Set any parameters that are required by the distribution.  
   
-5.  Choose one of three statistics to create:
+5.  Choose one of three statistics to create: the cumulative distribution function (**cdf**), inverse cumulative distribution function (**InverseCdf)**, or Probability density function (**pdf**).
 
-    -   **cdf**: Cumulative distribution function
-    
-        Returns the probability for a compound event, defined as the sum of ocurrences when the random variable takes a value smaller than some specific value x. In other words, it answers the question: "How common are samples that are less than or equal to this value?"  This function can be used with both continuous and discrete numeric variables. 
+    See the [Technical notes](#bkmk_Notes) section for [definitions](#bkmk_Definitions).
   
-    -   **InverseCdf**: Inverse cumulative distribution function
+6. Use the column selector to choose the columns over which to compute the selected probability distribution.
+
+    - All the columns you select must have a numerical data type. 
     
-        Returns the value associated with a specific cumulative probability (cdf). In other words, it answers the question: "What is the value of x at which the cdf function returns the cumulative probability y?" 
-  
-    -   **pdf**: Probability density function
+    - The range of data in the column must also be valid, given the selected probability function. Otherwise, an error or NaN result may occur. 
     
-        Describes the relative likelihood for a random variable to be a specific value. In other words, it answers the question: "How common are samples at exactly this value?"
-  
- 6. Use the column selector to choose the columns over which to compute the selected probability distribution.
- 
-    + All the columns you select must have a numerical data type. 
-    + The range of data in the column must also be valid, given the selected probability function. Otherwise, an error or NaN result may occur. 
-    + For sparse columns, any values that correspond to background zeros will not be processed.  
+    - For sparse columns, any values that correspond to background zeros will not be processed.  
  
 7. Use the **Result mode** option to specify how to output the results. You can replace column values with the probability distribution values, append the new values to the dataset, or return only the probability distribution values.  
   
@@ -183,7 +175,7 @@ This option provides a right-tailed chi-squared distribution.
 
 To calculate, select **ChiSquareRightTailed**, and set the following options:  
   
- - **Number of degrees of freedom** *  
+ - **Number of degrees of freedom**  
      Type a number (`double`) to specify the degrees of freedom. The default is 1.0.  
   
 ###  <a name="bkmk_Exponential"></a> Exponential  
@@ -508,10 +500,38 @@ To calculate, select **Weibull**, and set the following options:
   
 ##  <a name="Notes"></a> Technical notes  
 
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Implementation details
+
 This module supports all distributions that are provided in the open source MATH.NET Numerics library. For more information, see the documentation for the [Math.Net.Numerics.Distribution](http://numerics.mathdotnet.com/api/MathNet.Numerics.Distributions/index.htm) library.  
   
  Right-tailed and two-tailed distributions appear as separate distributions, not as parameterized versions of base distributions. The current behavior is to preserve compatibility with Excel.  
+
+### <a name ="bkmk_Definitions"></a> Definitions
+
+This module supports calculating any of these values for the specified distribution:
+
++ **cdf**, or the _cumulative distribution function_  
+
+    Returns the probability for a compound event, defined as the sum of ocurrences when the random variable takes a value smaller than some specific value x. 
+    
+    In other words, it answers the question: "How common are samples that are less than or equal to this value?" 
+    
+    This function can be used with both continuous and discrete numeric variables. 
   
++ **InverseCdf**, or the _inverse cumulative distribution function_  
+
+    Returns the value associated with a specific cumulative probability value (cdf). 
+    
+    In other words, it answers the question: "What is the value of x at which the cdf function returns the cumulative probability y?" 
+  
++ **pdf**, or the _probability density function_ 
+
+    Describes the relative likelihood for a random variable to be a specific value. 
+    
+    In other words, it answers the question: "How common are samples at exactly this value?"
+
 ##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  

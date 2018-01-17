@@ -41,9 +41,9 @@ Let's compare them by seeing which tasks each module is commonly used for:
 
 ### Examples of operations with the Split Data module
 
-Suppose you imported a very large dataset from a CSV file that contains customer demographics. You want to create different models for customers in different countries, so you decide to split the data by using the value of the column **Country/Region**, . 
+Suppose you imported a very large dataset from a CSV file that contains customer demographics. You want to create different models for customers in different countries, so you decide to split the data by using the value of the column `Country-Region`. 
 
-1. Add the  [Split Data](split-data.md) module, and specify an expression on the **Country/Region**.  
+1. Add the  [Split Data](split-data.md) module, and specify an expression on the `Country-Region` field. 
 2. The remainder of the data is available on the secondary output.  Add another instance of [Split Data](split-data.md) module.
 3. Repeat, specifying a different country in the expression each time.  
 
@@ -70,32 +70,30 @@ For example, suppose you need to get just 10 percent of your data, while ensurin
 1. Add the [Partition and Sample](partition-and-sample.md) module.
 2. Choose the **Sampling** mode, and specify 10%.
 3. Select the stratified sampling option, and pick the column that contains the target attribute. 
-  
+
 Whenever you don't need to keep all the data, use [Partition and Sample](partition-and-sample.md).  The remaining data is still present in the workspace but doesn't need to be processed further as part of the experiment. 
 
 ## Related tasks and modules
 
--   [SMOTE](smote.md): Increases the number of rare cases in a sample, or rebalances the cases for some target value.  
-  
--   [Principal Component Analysis](principal-component-analysis.md). Performs dimensionality reduction by finding the combination of features that best represents the data space.
-  
--   [Learning with Counts](data-transformation-learning-with-counts.md). Creates compact features based on an analysis of features and counts.    
++ [SMOTE](smote.md): Increase the number of rare cases in a sample, or rebalances the cases for some target value.  
 
-+ Removing or hiding columns in a dataset. Use [Select Columns in a dataset](select-columns-in-dataset.md) or [Apply SQL Transformation](apply-sql-transformation.md) to create a view or projection using only specified columns.
++ [Principal Component Analysis](principal-component-analysis.md):  Perform dimensionality reduction by finding the combination of features that best represents the data space.
 
-+ Use [Execute R Script](execute-r-script.md) or [Apply SQL Transformation](apply-sql-transformation.md) to design and apply more complex data filters, groupings, or transformations. 
++ [Learning with Counts](data-transformation-learning-with-counts.md): Create compact features based on an analysis of features and counts.
 
-##  <a name="modules"></a> List of modules  
++ [Select Columns in a dataset](select-columns-in-dataset.md) and [Apply SQL Transformation](apply-sql-transformation.md): Create a view or projection using only specified columns. Remove or hide columns in a dataset.
+
++ [Execute R Script](execute-r-script.md) and [Apply SQL Transformation](apply-sql-transformation.md): Apply more complex data filters, groupings, or transformations. 
+
+##  <a name="modules"></a> List of modules
 
 This category includes the following modules:  
-  
+
 |Module|Description|  
 |------------|-----------------|  
 |[Partition and Sample](partition-and-sample.md)|Creates multiple partitions of a dataset based on sampling|  
-|[Split Data](split-data.md)|Partitions the rows of a dataset into two distinct sets|  
-  
+|[Split Data](split-data.md)|Partitions the rows of a dataset into two distinct sets|
 
-  
 ## See also  
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)

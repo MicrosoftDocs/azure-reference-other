@@ -19,11 +19,11 @@ manager: "cgronlund"
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
   
-## Module Overview  
+## Module overview  
 
-This article describes how to use the [Enter Data Manually](enter-data-manually.md) module  in Azure Machine Learning Studio, to create a small dataset by typing values. The dataset can have multiple columns.
+This article describes how to use the [Enter Data Manually](enter-data-manually.md) module in Azure Machine Learning Studio, to create a small dataset by typing values. The dataset can have multiple columns.
   
-This module can be helpful in scenarios such as:  
+This module can be helpful in scenarios such as these:  
   
 - Generating a small set of values for testing  
   
@@ -110,7 +110,7 @@ This module can be helpful in scenarios such as:
 
 For examples of how this module is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Download Data sample](http://go.microsoft.com/fwlink/?LinkId=525938): Gets data from the UCI Machine Learning repository and then uses [Enter Data Manually](enter-data-manually.md) to create column names.  Sample R code is also provided, which you can use to merge the entered rows with the dataset.  
+- [Download Data sample](http://go.microsoft.com/fwlink/?LinkId=525938): Gets data from the UCI Machine Learning repository and then uses [Enter Data Manually](enter-data-manually.md) to create column names. Sample R code is also provided, which you can use to merge the entered rows with the dataset.  
   
 ##  <a name="Notes"></a> Technical notes  
 
@@ -118,12 +118,12 @@ This section contains implementation details, tips, and answers to frequently as
 
 -   Regardless of the saved format, data that you enter is implicitly converted to the dataset ([Data Table](data-table.md)) format for use in experiments. However, data is not persisted as a saved dataset unless you explicitly choose the **Save as Dataset** option.  
   
-     If you do not save the data in [Enter Data Manually](enter-data-manually.md) as a dataset, it will be removed from the workspace cache when you end the session. However, you can run the experiment again to make the data available.  
+     If you do not save the data in [Enter Data Manually](enter-data-manually.md) as a dataset, it is removed from the workspace cache when you end the session. However, you can run the experiment again to make the data available.  
   
 -   If you combine the data from [Enter Data Manually](enter-data-manually.md) with another dataset, the combined dataset cannot have two columns with the same name. If there are duplicate column names, a numeric suffix is appended to the column from the right dataset to make the column names unique.  
   
      For example, assume that you have two instances of [Enter Data Manually](enter-data-manually.md) that contain the column **TestData**, and use the [Add Columns](add-columns.md) module to merge them. The column from the left instance of [Enter Data Manually](enter-data-manually.md) would remain as **TestData**, and the column from the right instance of [Enter Data Manually](enter-data-manually.md) would be renamed **TestData (2)**.  
   
-## See Also  
+## See also  
  [Data Input and Output](data-input-and-output.md)   
  [A-Z Module List](a-z-module-list.md)

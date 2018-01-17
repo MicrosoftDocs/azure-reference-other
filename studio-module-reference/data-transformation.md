@@ -37,15 +37,13 @@ Modules for data transformation are grouped into the following task-based catego
   
 ##  <a name="categories"></a> List of modules  
 
-The following table lists the categories under **Data Transformation**. Click the link to see more about tasks supported in each category.
+The following table lists the categories under **Data Transformation**.
   
-|Category|  
-|--------------|  
-|[Data Transformation / Filter](data-transformation-filter.md)|  
-|[Learning with Counts](data-transformation-learning-with-counts.md)|  
-|[Data Transformation / Manipulation](data-transformation-manipulation.md)|  
-|[Data Transformation / Sample and Split](data-transformation-sample-and-split.md)|  
-|[Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)|  
++ [Data Transformation / Filter](data-transformation-filter.md)
++ [Learning with Counts](data-transformation-learning-with-counts.md)
++ [Data Transformation / Manipulation](data-transformation-manipulation.md)
++ [Data Transformation / Sample and Split](data-transformation-sample-and-split.md)  
++ [Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)
   
 ## See also  
  [Data Format Conversions](data-format-conversions.md)   
