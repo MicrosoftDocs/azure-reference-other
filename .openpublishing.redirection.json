@@ -4,6 +4,11 @@
        "source_path": "stream-analytics-query-language/index.md",
        "redirect_url": "stream-analytics-query-language-reference",
        "redirect_document_id": true
-    }
+    },
+    {
+        "source_path": "u-sql/index.md",
+        "redirect_url": "u-sql-language-reference",
+        "redirect_document_id": true
+     }
   ] 
 } 
