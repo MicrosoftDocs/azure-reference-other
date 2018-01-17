@@ -1,5 +1,6 @@
 ---
 title: "Build Counting Transform | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -18,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
-## Module Overview  
+## Module overview  
 
 This article describes how to use the **Build Counting Transform** module in Azure Machine Learning Studio to analyze training data. From this data, the module builds a *count table* as well as a set of *count-based features* that can be used in a predictive model.
   
@@ -34,9 +35,9 @@ This article describes how to use the **Build Counting Transform** module in Azu
   
 -   You want to ensure that the same set of count-based features is applied to all datasets that you are using in your experiment.  
   
-## How to Configure Build Counting Transform  
+## How to configure Build Counting Transform  
 
-You can create a count-based feature transformation directly from a dataset, and re-run it each time you run an experiment, or you can generate a set of counts,  and then merge it with new data to create an updated count table.
+You can create a count-based feature transformation directly from a dataset, and re-run it each time you run an experiment. Or, you can generate a set of counts, and then merge it with new data to create an updated count table.
   
 -   [Create count-based features from a dataset](#bkmk_CreateCounts)  
   
@@ -52,7 +53,7 @@ You can create a count-based feature transformation directly from a dataset, and
   
 ###  <a name="bkmk_CreateCounts"></a> Create count-based features from a dataset  
   
-1.  In Azure Machine Learning Studio, add the **Build Counting Transform** module to your experiment.
+1.  In Azure Machine Learning Studio, add the **Build Counting Transform** module to your experiment. You can find the module under **Data Transformation**, in the category **Learning with Counts**.
 
 2. Connect the dataset you want to use as the basis for our count-based features.  
   
@@ -72,13 +73,13 @@ You can create a count-based feature transformation directly from a dataset, and
 
 6.  Use the **Module type** option to indicate the type of data that you will be counting, based on the storage mode:  
   
-    + **Dataset**: Choose this option if you will be counting data that is saved as a dataset in Azure Machine Learning Studio.  
+    + **Dataset**: Choose this option if you are counting data that is saved as a dataset in Azure Machine Learning Studio.  
   
     + **Blob**: Choose this option if your source data used to build counts is stored as a block blob in Windows Azure storage.  
   
     + **MapReduce**: Choose this option if you want to call Map/Reduce functions to process the data. 
     
-        To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job will be launched in the cluster to perform the counting.  
+        To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job is launched in the cluster to perform the counting.  
   
         For very large datasets, we recommend that you use this option whenever possible. Although you might incur additional costs for using the HDInsight service, computation over large datasets might be faster in HDInsight.
 
@@ -86,36 +87,34 @@ You can create a count-based feature transformation directly from a dataset, and
   
 7.  After specifying the data storage mode, provide any additional connection information for the data that is required:  
   
-    -   If you are using data from Hadoop or blob storage, provide the cluster location and credentials.  
+    + If you are using data from Hadoop or blob storage, provide the cluster location and credentials.  
   
-    -   If you  previously used a [Import Data](import-data.md) module in the experiment to access data, you must re-enter the account name and your credentials. The reason is that **Build Counting Transform** module accesses the data storage separately in order to read the data and build the required tables.  
+    + If you previously used a [Import Data](import-data.md) module in the experiment to access data, you must re-enter the account name and your credentials. The **Build Counting Transform** module accesses the data storage separately in order to read the data and build the required tables.  
   
 8.  For **Label column or index**, select  one column as the label column.  
   
-     A label column is required. The column must already be marked as a label or an error us raised.  
+     A label column is required. The column must already be marked as a label or an error is raised.  
   
 9.  Use the option, **Select columns to count**, and select the columns for which to generate counts.  
   
-     In general, the best candidates are high-dimensional columns and any other columns that are correlated with those columns.  
+     In general, the best candidates are high-dimensional columns, together with any other columns that are correlated with those columns.  
   
 10. Use the **Count table type** option to specify the format used for storing the count table.  
   
     + **Dictionary**: Creates a dictionary count table. All column values in the selected columns are treated as strings, and are hashed using a bit array of up to 31 bits in size. Therefore, all column values are represented by a non-negative 32-bit integer.  
+
+        In general, you should use this option for smaller data sets (less than 1 GB), and use the **CMSketch** option for larger datasets. 
+        
+        After selecting this option, configure the number of bits used by the hashing function, and set a seed for initializing the hash function.  
   
-         In general, you should use the **Dictionary** option for smaller data sets (less than 1 GB), and use the **CMSketch** option for larger datasets.  
-         
-         After selecting this option, configure the number of bits used by the hashing function, and set a seed for initializing the hash function.  
-  
-    -   **CMSketch**:  Creates a *count minimum sketch table*. With this option, multiple independent hash functions with a smaller range are used to improve memory efficiency and reduce the chance of hash collisions.  
-  
-         The parameters for hashing bit size and hashing seed have no effect on this option.  
+    + **CMSketch**:  Creates a *count minimum sketch table*. With this option, multiple independent hash functions with a smaller range are used to improve memory efficiency and reduce the chance of hash collisions.  The parameters for hashing bit size and hashing seed have no effect on this option.  
 
 11. Run the experiment.  
-  
+
     The module creates a *featurization transform* that you can use as input to the [Apply Transformation](apply-transformation.md) module. The output of the [Apply Transformation](apply-transformation.md) module is a transformed dataset that can be used to train a model.  
-  
+
     Optionally, you can save the transform if you want to merge the set of count-based features with another set of count-based features. For more information, see [Merge Count Transform](merge-count-transform.md).  
-  
+
 ###  <a name="bkmk_MergeCounts"></a> Merge counts and features from multiple datasets  
   
 1.  In Azure Machine Learning Studio, add the **Build Counting Transform** module to your experiment, and connect the dataset that contains the new data you want to add.  
@@ -172,7 +171,7 @@ The following experiments in the [Azure AI Gallery](https://gallery.cortanaintel
 + [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2)
 + [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2)  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 The following parameters are used with all options:
   
@@ -185,7 +184,7 @@ The following parameters are used with all options:
 |Count table type|CountTableType|select from list|Required|Dictionary|Specify the format of the count table.|  
 
 
-The following options apply when selecting the blob option.
+The following options apply when selecting the **blob** option.
 
 |Name|Type|Range|Optional|Default|Description|  
 |----------|------------|----------|-----------|--------------|-----------------| 
@@ -198,7 +197,7 @@ The following options apply when selecting the blob option.
 |Blob format| |any| Required|CSV|The blob text file format.|  
 
   
-The following parameters apply when using MapReduce to generate counts:
+The following parameters apply when using **MapReduce** to generate counts:
 
 |Name|Type|Range|Optional|Default|Description|  
 |----------|------------|----------|-----------|--------------|-----------------|
@@ -245,6 +244,10 @@ The following parameters define the format of the count table:
 |[Error 0059](errors/error-0059.md)|Exception occurs if a column index specified in a column picker cannot be parsed.|  
 |[Error 0060](errors/error-0060.md)|Exception occurs when an out of range column range is specified in a column picker.|  
 |[Error 0089](errors/error-0089.md)|Exception occurs when the specified number of classes is less than the actual number of classes in a dataset used for counting.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+
+## See also  
  [Learning with Counts](data-transformation-learning-with-counts.md)

@@ -1,5 +1,6 @@
 ---
 title: "Detect Languages | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -24,7 +25,7 @@ This article describes how to use the **Detect Languages** module in Azure Machi
 
 The language detection algorithm can identify many different languages. Just specify the string column to analyze, and the total number of languages to detect. The algorithm will analyze each row of text, and assign a probability score for each language. The language in the first result column is the language that got the highest score.
 
-## How to Configure Detect Languages
+## How to configure Detect Languages
 
 1. Add the dataset containing the text you want to analyze to an experiment in Azure Machine Learning Studio. The column with the text to analyze must be the string data type.
 
@@ -67,9 +68,9 @@ For example, the following table contains a sample analysis on test data.
 
  For examples of how the **Detect Languages** module is used in an experiment, see the [Azure AI Gallery](http://gallery.cortanaintelligence.com):
   
--   The sample, [Filter Movie Titles by Language](https://gallery.cortanaintelligence.com/Experiment/Filter-Movie-Titles-by-Language-1) detects the language used in movie names, and then uses the language identifier to split the dataset into English vs non-English movies.
+-  [Filter Movie Titles by Language](https://gallery.cortanaintelligence.com/Experiment/Filter-Movie-Titles-by-Language-1): Detects the language used in movie names, and then uses the language identifier to split the dataset into English vs non-English movies.
 
-## Technical Notes
+## Technical notes
 
 For a general idea of the languages that potentially can be detected, refer to [Bing Translator](https://www.bing.com/translator/).  
 
@@ -77,13 +78,13 @@ Many more languages can be detected than Azure Machine Learning currently suppor
 
 The underlying linguistic services are also used by the [Text Analytics ](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) service in [Azure Cognitive Services](https://docs.microsoft.com/azure/#pivot=products&panel=cognitive).
 
-##  <a name="ExpectedInputs"></a> Expected Inputs  
-  
+##  <a name="ExpectedInputs"></a> Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|The input|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
@@ -104,7 +105,11 @@ The underlying linguistic services are also used by the [Text Analytics ](https:
 |[Error 0010](errors/error-0010.md)|Exception occurs if input datasets have column names that should match but do not.|  
 |[Error 0016](errors/error-0016.md)|Exception occurs if input datasets passed to the module should have compatible column types but do not.|  
 |[Error 0008](errors/error-0008.md)|Exception occurs if parameter is not in range.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+
+## See also  
  [Text Analytics](text-analytics.md)   
  [A-Z Module List](a-z-module-list.md)

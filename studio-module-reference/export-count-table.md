@@ -1,5 +1,6 @@
 ---
 title: "Export Count Table | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -18,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
-## Module Overview
+## Module overview
 
 This article describes how to use the **Export Count Table** module in Azure Machine Learning Studio. The **Export Count Table** module is provided for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.
   
@@ -32,7 +33,7 @@ For general information about count tables and how they are used to create featu
 > -   [Modify Count Table Parameters](modify-count-table-parameters.md)  
 > -   [Merge Count Transform](merge-count-transform.md)  
 
-## How to Configure Export Count Table  
+## How to configure Export Count Table
   
 1.  In Azure Machine Learning Studio, open the experiment where you want to use the imported count table.  
   
@@ -47,20 +48,19 @@ For general information about count tables and how they are used to create featu
 6.  Set any necessary parameters for [Count Featurizer (deprecated)](count-featurizer-deprecated.md), including the label column, the count columns, the columns to featurize, and the features to output.  
   
      Note that you must select a subset of the columns that were originally selected for the counting transformation. However, the **Export Count Table** module does not provide the list of these columns, so you should review the original experiment and make a note of which columns were used. If you select a column that was not used when creating the transformation, you will get an error.  
-  
+
 ## Examples
 
-Explore examples of count-based featurization using these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
+Explore examples of count-based featurization using these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
--   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
-- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.
-- The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample uses count-based features in a binary classification task.
+-  [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): Demonstrates the use of count-based features in a multiclass prediction task.
+- [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
-> 
 > If you open a Gallery experiment created using the deprecated versions of the [Learning with Counts](data-transformation-learning-with-counts.md) modules, the experiment is automatically upgraded to use the newer modules.
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -79,7 +79,11 @@ Explore examples of count-based featurization using these sample experiments in 
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0086](errors/error-0086.md)|Exception occurs when a counting transform is invalid.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+
+## See also  
  [Learning with Counts](data-transformation-learning-with-counts.md)   
  [Count Featurizer (deprecated)](count-featurizer-deprecated.md)

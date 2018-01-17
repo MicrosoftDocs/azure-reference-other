@@ -24,6 +24,7 @@ Learning with counts is an efficient way to create a compact set of features for
 
 The basic idea underlying *count-based featurization* is simple: by calculating counts, you can quickly and easily get a summary of what columns contain the most important information. The module counts the number of times a value appears, and then provides that information as a feature for input to a model.  
 
+
 Imagine you’re trying to validate a credit card transaction. One crucial piece of information is where this transaction came from, and one of the most common encodings of that location is the postal code. However, there might be as many as 40,000 postal codes, zip codes, and geographical codes to account for. Does your model have the capacity to learn 40,000 more parameters? If you give it that capacity, do you now have enough training data to prevent it from overfitting?  
 
 If you had really good data with lots of samples, such fine-grained local granularity could be quite powerful. However, if you have only one sample of a fraudulent transaction from a small locality, does it mean that all of the transactions from that place are bad, or that you don’t have enough data?
@@ -34,6 +35,7 @@ Count-based learning is very attractive for many reasons: you have fewer feature
 ### How count-based features are created
 
 A very simple example might help to demonstrate how count-based features are created and applied. Suppose you have a table like this, with labels and inputs:  
+
   
 |Label column|Input value|  
 |------------------|-----------------|  
@@ -47,13 +49,16 @@ A very simple example might help to demonstrate how count-based features are cre
 
 Each case (or row, or sample) has a set of values in columns. In this example, the values are A, B, and so forth.  
   
+
 1. For a particular set of values, you find all the other cases in that dataset that have the same value. In this case, there are three instances of A and four of B.  
   
 2. Next, you count their class memberships as features in themselves. In this case, you get a small matrix, in which there are 2 cases where A=0, 1 case where A = 1, 1 case where B= 0, and 3 cases where B = 1.
+
   
 3. Based on this matrix, you get a variety of count-based features, including a calculation of the log-odds ratio as well as the counts for each target class:  
 
 ### Sample table of count-based features
+
 
 |Label|0_0_Class000_Count|0_0_Class001_Count|0_0_Class000_LogOdds|0_0_IsBackoff|  
 |-----------|---------------------------|---------------------------|-----------------------------|---------------------|  
@@ -70,8 +75,10 @@ Each case (or row, or sample) has a set of values in columns. In this example, t
 The following article from the Microsoft Machine Learning team provides a detailed walkthrough of how to use counts in machine learning, and compares the efficacy of count-based modeling with other methods.  
   
  [Using Azure ML to Build Clickthrough Prediction Models](http://go.microsoft.com/fwlink/?LinkId=699305)  
+
   
 ## Technical notes  
+
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -79,11 +86,13 @@ This section contains implementation details, tips, and answers to frequently as
   
 The log-loss value is not the plain log-odds; the prior distribution is used to smooth the log-odds computation.  
   
+
 Suppose you have a data set used for binary classification.  In this dataset, the prior frequency for class 0 is `p_0`, and the prior frequency for class 1 is `p_1 = 1 – p_0`. For a certain training example feature, the count for class 0 is `x_0`, and the count for class 1 is `x_1`.  
 
-Under these assumptions,  the log-odds is computed as `LogOdds = Log(x_0 + c * p_0) – Log (x_1 + c \* p_1)` where `c` is the prior coefficient, which can be set by the user, and the log function uses the natural base.
+
+Under these assumptions,  the log-odds is computed as `LogOdds = Log(x0 + c * p0) – Log (x1 + c\p1)` where `c` is the prior coefficient, which can be set by the user, and the log function uses the natural base.
   
-In other words, for each class `i`:  
+In other words, for each class `i`:
   
 `Log_odds[i] = Log( (count[i] + prior_coefficient * prior_frequency[i]) / (sum_of_counts - count[i]) + prior_coefficient \* (1 - prior_frequency[i]))`
   

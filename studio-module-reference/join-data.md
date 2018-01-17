@@ -1,5 +1,6 @@
 ---
 title: "Join Data | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -18,13 +19,13 @@ manager: "cgronlund"
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
 
 This article describes how to use the [Join Data](join-data.md) module in Azure Machine Learning Studio to merge two datasets using a database-style *join operation*.  
 
 To perform a join on two datasets, they must be related by a **single** key column. Composite keys are not supported. 
 
-## How to Use Join Data
+## How to configure Join Data
 
 1. In Azure Machine Learning Studio, add the datasets you want to combine, and then drag the **Join Data** module into your experiment. 
 
@@ -46,17 +47,17 @@ To perform a join on two datasets, they must be related by a **single** key colu
    
 5. Use the **Join type** dropdown list to specify how the datasets should be combined. types:  
   
-    - **Inner Join**. An *inner join* is the typical join operation. It returns the combined rows only when the values of the key columns match.  
+    - **Inner Join**: An *inner join* is the typical join operation. It returns the combined rows only when the values of the key columns match.  
   
-    - **Left Outer Join**. A *left outer join* returns joined rows for all rows from the left table. When a row in the left table has no matching rows in the right table, the returned row contains missing values for all columns that come from the right table unless you specify a replacement value for missing values.  
+    - **Left Outer Join**: A *left outer join* returns joined rows for all rows from the left table. When a row in the left table has no matching rows in the right table, the returned row contains missing values for all columns that come from the right table unless you specify a replacement value for missing values.  
   
-    - **Full Outer Join**. A *full outer join* returns all rows from the left table (**table1**) and from the right table (**table2**).  
+    - **Full Outer Join**: A *full outer join* returns all rows from the left table (**table1**) and from the right table (**table2**).  
   
          For each of the rows in the left table that have no matching rows in the right table, the join results include a row containing missing values from the right table.  
   
          For each of the rows in the right table that have no matching rows in the left table, the join results include a row containing missing values for all columns from the left table.  
   
-    - **Left Semi-Join**. A *left semi-join* returns only the values from the left table when the values of the key columns match.  
+    - **Left Semi-Join**: A *left semi-join* returns only the values from the left table when the values of the key columns match.  
 
 6. For the option, **Keep right key colums in joined table**:
 
@@ -69,17 +70,17 @@ To perform a join on two datasets, they must be related by a **single** key colu
 
 ## Examples  
 
-You can see examples of how this module is used by exploring these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):  
+You can see examples of how this module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   In the [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726) sample, [Join Data](join-data.md) is used to combine the positive training cases with the negative training cases after the proportion of cases has been adjusted.  
+- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): [Join Data](join-data.md) is used to combine the positive training cases with the negative training cases after the proportion of cases has been adjusted.  
   
--   In the [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725) sample, [Join Data](join-data.md) is used to bring together useful features from external datasets.  
+- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725): In this sample, [Join Data](join-data.md) is used to bring together useful features from external datasets.  
   
--   In the [Movie recommendation](http://go.microsoft.com/fwlink/?LinkId=525276) sample, the datasets are joined so that we can present the recommended movie titles rather than a movie ID.  
+- [Movie recommendation](http://go.microsoft.com/fwlink/?LinkId=525276): Two datasets are joined so that we can present the recommended movie titles rather than a movie ID.  
   
--   In the [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727) sample, [Join Data](join-data.md) is used to bring in new features.  
-  
-##  <a name="Notes"></a> Technical Notes  
+- [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): In this sample, [Join Data](join-data.md) is used to bring in new features.  
+
+##  <a name="Notes"></a> Technical notes  
 
 This section describes implementation details, and answers to some frequently asked questions.
 
@@ -114,14 +115,14 @@ If your dataset has no key column, you can still combine it with another dataset
 
 The **Add Columns** module behaves like R, and can merge two datasets on a row-by-row basis, if the datasets have the same number of rows. An error is raised if the datasets are of a different size.
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset1|[Data Table](data-table.md)|First dataset to join|  
 |Dataset2|[Data Table](data-table.md)|Second dataset to join|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -138,8 +139,7 @@ The **Add Columns** module behaves like R, and can merge two datasets on a row-b
 |Results dataset|[Data Table](data-table.md)|Result of join operation|  
   
 ##  <a name="exceptions"></a> Exceptions  
- For a list of all exceptions, see [Module Error Codes](machine-learning-module-error-codes.md).  
-  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0001](errors/error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
@@ -151,8 +151,12 @@ The **Add Columns** module behaves like R, and can merge two datasets on a row-b
 |[Error 0028](errors/error-0028.md)|An exception occurs when the column set contains duplicate column names and it is not allowed.|  
 |[Error 0011](errors/error-0011.md)|An exception occurs if the argument for the passed column set does not apply to any dataset columns.|  
 |[Error 0027](errors/error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+
+## See also  
  [Manipulation](data-transformation-manipulation.md)   
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)
