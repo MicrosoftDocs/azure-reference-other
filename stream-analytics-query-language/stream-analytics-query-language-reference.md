@@ -1,20 +1,21 @@
 ---
 title: "Stream Analytics Query Language Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: ""
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 0e0c5249-5d88-49b6-a4ec-89a9d57a3885
 caps.latest.revision: 14
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 22/04/2016
+ms.author: sngun
 ---
 # Stream Analytics Query Language Reference
   Azure Stream Analytics offers a SQL-like query language for performing transformations and computations over streams of events.  

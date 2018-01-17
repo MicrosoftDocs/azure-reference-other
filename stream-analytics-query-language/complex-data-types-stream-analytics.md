@@ -1,20 +1,21 @@
 ---
 title: "Complex Data Types (Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-05-24"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: ""
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 8f092502-b698-4576-b271-d43c1f88accc
 caps.latest.revision: 10
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 24/05/2016
+ms.author: sngun
 ---
 # Complex Data Types (Stream Analytics)
   Azure Stream Analytics supports processing events in CSV, JSON and Avro data formats.  

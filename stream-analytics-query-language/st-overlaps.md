@@ -1,20 +1,21 @@
 ---
 title: "ST_OVERLAPS | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-02-01"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: ""
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: d34676f9-ab12-4d2d-9a2e-5ba411ca1ec9
 caps.latest.revision: 2
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 01/02/2017
+ms.author: sngun
 ---
 # ST_OVERLAPS
   Returns 1 if a geography overlaps with another. If geographies do not overlap or one is within another, it will return 0.  

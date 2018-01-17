@@ -1,18 +1,23 @@
 ---
 title: "CreatePoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-02-01"
-ms.reviewer: ""
-ms.service: "stream-analytics"
+description: ""
+applies_to: 
+  - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
 ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: b49facae-be27-4e6b-a2e8-299d6f9c41e4
 caps.latest.revision: 4
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 01/02/2017
+ms.author: sngun
 ---
+
 # CreatePoint
   Returns a GeoJSON Point record. The result of a CreatePoint can be used as input to other Geospatial functions.  
   

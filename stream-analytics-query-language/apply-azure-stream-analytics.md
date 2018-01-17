@@ -1,21 +1,23 @@
 ---
 title: "APPLY (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 426c01d9-269a-49b9-949f-39b0a8c40850
 caps.latest.revision: 10
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 22/04/2016
+ms.author: sngun
 ---
+
 # APPLY (Azure Stream Analytics)
   The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query. The table-valued function acts as the right input and the outer table expression acts as the left input. The right input is evaluated for each row from the left input and the rows produced are combined for the final output. The list of columns produced by the APPLY operator is the set of columns in the left input followed by the list of columns returned by the right input.  
   

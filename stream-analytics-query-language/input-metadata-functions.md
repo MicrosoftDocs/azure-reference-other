@@ -1,18 +1,21 @@
 ---
 title: "Input Metadata Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-02-10"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
+description: ""
+applies_to: 
+  - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
 ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: f6b1278d-7034-4520-be0b-bcba5e892415
 caps.latest.revision: 3
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 10/02/2017
+ms.author: sngun
 ---
 # Input Metadata Functions
 Sometimes in real-time data analytics, there is a requirement to query on the metadata of a property in the data input. Stream Analytics has a function to do this, the [GetMetadataPropertyValue](getmetadatapropertyvalue.md) function.

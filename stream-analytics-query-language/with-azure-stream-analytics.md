@@ -1,20 +1,21 @@
 ---
 title: "WITH (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-05-02"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: ""
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: cb18a578-2ea6-4b03-8ea9-8e0fba4932df
 caps.latest.revision: 10
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 02/05/2016
+ms.author: sngun
 ---
 # WITH (Azure Stream Analytics)
   Specifies a temporary named result set which can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.  
