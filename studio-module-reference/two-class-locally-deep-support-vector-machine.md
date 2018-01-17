@@ -1,7 +1,8 @@
 ---
 title: "Two-Class Locally Deep Support Vector Machine | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/09/2016
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,57 +12,58 @@ ms.assetid: 44960281-6126-457a-9411-b0bc9ffd128f
 caps.latest.revision: 25
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Two-Class Locally Deep Support Vector Machine
 *Creates a binary classification model using the locally deep Support Vector Machine algorithm*  
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
   
-##  <a name="Remarks"></a> Module Overview  
- You can use the **Two-Class Locally Deep Support Vector Machine** module to create a two-class, non-linear support vector machines (SVM) classifier that is optimized for efficient prediction.  
+##  <a name="Remarks"></a> Module overview  
+
+This article describes how to use the **Two-Class Locally Deep Support Vector Machine** module in Azure Machine Learning Studio, to create a two-class, non-linear support vector machines (SVM) classifier that is optimized for efficient prediction.  
+
+Support vector machines (SVMs) are an extremely popular and well-researched class of supervised learning models, which can be used in linear and non-linear classification tasks. Recent research has focused on ways to optimize these models to efficiently scale to larger training sets. In this implementation from Microsoft Research, the kernel function that is used for mapping data points to feature space is specifically designed to reduce the time needed for training while maintaining most of the classification accuracy.  
+
+This model is a supervised learning method, and therefore requires a *tagged dataset*, which includes a label column.  
+
+After you define the model parameters, train it by providing the model and a tagged dataset as input to [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for new inputs.
+
+## How to configure Two-Class Locally Deep Support Vector Machine
   
- SVMs are an extremely popular and well-researched class of supervised learning models, which can be used in linear and non-linear classification tasks. Recent research has focused on ways to optimize these models to efficiently scale to larger training sets. In this implementation from Microsoft Research, the kernel function that is used for mapping data points to feature space is specifically designed to reduce the time needed for training while maintaining most of the classification accuracy.  
-  
- This model is a supervised learning method, and therefore requires a *tagged dataset*, which includes a label column.  
-  
- You can train the model by providing the model and a tagged dataset as an input to [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for the new input examples.  
-  
-## How to Configure an LD-SVM Model  
-  
-1.  Add the **Two-Class Locally-Deep Support Vector Machine** module to the experiment.  
+1.  Add the **Two-Class Locally-Deep Support Vector Machine** module to your experiment in Studio.  
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   
-    -   **Single Parameter**.                   If you know how you want to configure the model, you can provide a specific set of values as arguments.  
+    -   **Single Parameter**: If you know how you want to configure the model, provide a specific set of values as arguments.  
   
-    -   **Parameter Range**. If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to find the optimal configuration.  The trainer will iterate over multiple combinations of the settings you provided and determine the combination of values that produces the best model.  
+    -   **Parameter Range**: If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to find the optimal configuration.  The trainer iterates over multiple combinations of the settings you provided and determines the combination of values that produces the best model.
   
 3.  For **Depth of the tree**, specify the maximum depth of the tree that can be created by the local deep kernel learning SVM (LD-SVM) model.  
   
      The cost of training increases linearly with tree depth; therefore, choose an appropriate depth, depending on how much time you can afford to spend when building the model.  
   
-    -   Training time should roughly double as the depth is increased by one.  
+    Training time should roughly double as the depth is increased by one.
   
-    -   Prediction accuracy should increase, reach a peak, and then decrease with increasing depth.  
+    Prediction accuracy should increase, reach a peak, and then decrease with increasing depth.  
   
 4.  For **Lambda W**, specify the weight that should be given to the regularization term.  
   
-     Regularization restricts large value components in the trained classifier. When the number of samples is insufficient given the number of features, you can use L2 regularization to avoid overfitting. Larger values for **Lambda W** mean that more emphasis will be placed on regularizing the classifier weights and less on the training-set classification error.  
+     Regularization restricts large value components in the trained classifier. When the number of samples is insufficient given the number of features, you can use L2 regularization to avoid overfitting. Larger values for **Lambda W** mean that more emphasis is placed on regularizing the classifier weights and less on the training-set classification error.  
   
      If the default value (0.1) doesn’t work well, you should also try {0.0001, 0.001 and 0.01}.  
   
 5.  For **Lambda Theta**, specify how much space should be left between a region boundary and the closest data point.  
   
-     This model works by partitioning the data space and feature space into regions. When **Lambda Theta** is minimized in such a way  that region boundaries in the trained model are too close to the training data points, the model might yield a low training error, but a high test error, due to overfitting.  
+     This model works by partitioning the data space and feature space into regions. When **Lambda Theta** is minimized in such a way that region boundaries in the trained model are too close to the training data points, the model might yield a low training error, but a high test error, due to overfitting.
   
-     To reduce the number of parameters that need to be validated, a good rule of thumb is to set **Lambda Theta** to one-tenth of the value that is used for **Lambda W**. Larger values mean that more emphasis will be put on preventing overfitting than on minimizing classification errors in the training set.  
+     To reduce the number of parameters that need to be validated, a good rule of thumb is to set **Lambda Theta** to one-tenth of the value that is used for **Lambda W**. Larger values mean that more emphasis is put on preventing overfitting than on minimizing classification errors in the training set.  
   
      If the default value (0.01) doesn’t work well, you should also try {0.0001, 0.001 and 0.1}.  
   
 6.  For **Lambda Theta Prime**, type a value to control the amount of curvature that is allowed in decision boundaries in the model.  
   
-     Larger values will give the model the flexibility to learn curved decision boundaries, while smaller values might constrain the decision boundaries to more of a stepwise linear pattern.  
+     Larger values give the model the flexibility to learn curved decision boundaries, while smaller values might constrain the decision boundaries to more of a stepwise linear pattern.  
   
      This parameter works in conjunction with the **Sigma** parameter. To reduce the number of parameters that need to be validated, a good rule of thumb is to set **Lambda Theta Prime** to one-tenth the value of **Lambda W**.  
   
@@ -69,45 +71,63 @@ manager: "jhubbard"
   
 7.  For **Sigmoid sharpness**, type a value to use for the scaling parameter σ.  
   
-     Larger values mean that the tanh in local kernel Θ (theta) is saturated, whereas a smaller value implies a more linear operating range for theta. You can find the full optimization formula in the [Technical Notes](#Notes) section.  
+     Larger values mean that the **tanh** in local kernel Θ (theta) is saturated, whereas a smaller value implies a more linear operating range for theta. You can find the full optimization formula in the [Technical Notes](#Notes) section.  
   
      If the default value (1) does not work well, you can also try {0.1, 0.01, 0.001}.  
   
-8.  In **Number of iterations**, indicate how many times the algorithm should update the classifier parameters by using a random subset of examples.  
+8.  In **Number of iterations**, indicate how many times the algorithm should update the classifier parameters with a random subset of examples.  
   
 9. For **Feature normalizer**, choose a method to use in normalizing feature values. The following  methods are supported:  
   
-    -   **Binning normalizer**. The binning normalizer creates bins of equal size, and then normalizes every value in each bin to be divided by the total number of bins.  
+    -   **Binning normalizer**: The binning normalizer creates bins of equal size, and then normalizes every value in each bin to be divided by the total number of bins.  
   
-    -   **Gaussian normalizer**. The Gaussian normalizer rescales the values of each feature to have a mean of 0 and a variance of 1. This is done by computing the mean and the variance of each feature, and then, for each instance, subtracting the mean value and dividing by the square root of the variance (the standard deviation).  
+    -   **Gaussian normalizer**: The Gaussian normalizer rescales the values of each feature to have a mean of 0 and a variance of 1. This is done by computing the mean and the variance of each feature. Then, for each instance, the mean value is subtracted, and the result divided by the square root of the variance (the standard deviation).
   
-    -   **Min-Max normalizer**.  The min-max normalizer linearly rescales every feature to the [0,1] interval.  
+    -   **Min-Max normalizer**: The min-max normalizer linearly rescales every feature to the [0,1] interval.  
   
          Rescaling to the [0,1] interval is done by shifting the values of each feature so that the minimal value is 0, and then dividing by the new maximal value (which is the difference between the original maximal and minimal values).  
   
-    -   **Do not normalize**. No normalization is performed.  
+    -   **Do not normalize**: No normalization is performed.  
   
 10. In **Random number seed**, type a value to use as a seed if you want to ensure reproducibility across runs.  
   
 11. Select the **Allow unknown categorical levels** option to create a group for unknown values in the testing or validation sets.  
   
-     If you deselect it, the model can accept only the values that are contained in the training data. In the former case, the model might be less precise for known values, but it can provide better predictions for new (unknown) values.  
+     If you deselect it, the model can accept only the values that are contained in the training data. In the former case, the model might be less precise for known values, but it can provide better predictions for new (unknown) values.
   
-12. Train the model.  
+12. Connect a tagged dataset and one of the [training modules](machine-learning-train.md):   
   
-    -   If you set **Create trainer mode** to **Single Parameter**, connect a tagged dataset and the [Train Model](train-model.md) module.  
+    -   If you set **Create trainer mode** to **Single Parameter**, use the [Train Model](train-model.md) module.  
   
-    -   If you set **Create trainer mode** to **Parameter Range**, connect a tagged dataset and train the model by using [Tune Model Hyperparameters](tune-model-hyperparameters.md).  
+    -   If you set **Create trainer mode** to **Parameter Range**, use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module.  
   
     > [!NOTE]
-    >  -   If you pass a parameter range to [Train Model](train-model.md), it will use only the first value in the parameter range list.  
-    > -   If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and using the default values for the learner.  
-    > -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.  
-  
-13. When the model is trained, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize** to see a summary of the model's parameters.  
-  
-##  <a name="Notes"></a> Technical Notes  
- This LD-SVM classifier is most useful under the following conditions:  
+    >  
+    > If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.  
+    > 
+    > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and uses the default values for the learner.  
+    > 
+    > If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.  
+
+13. Run the experiment.
+
+### Results
+
+After training is complete:
+
++ To see a summary of the model's parameters, right-click the output of the [Train Model](train-model.md) module or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, and select **Visualize**. 
+
++ To save a snapshpt of the trained model, right-click the **Trained model** output and select **Save As Trained Model**. This model is not updated on successive runs of the same experiment.
+
++  To perform cross-validation against a labeled data set, connect the untrained model to [Cross-Validate Model](cross-validate-model.md).
+
+##  <a name="Notes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Tips
+
+This LD-SVM classifier is most useful under the following conditions:  
   
 -   You have a binary classification issue, or you can reduce your issue to a binary classification task.  
   
@@ -117,14 +137,15 @@ manager: "jhubbard"
   
 -   You can afford to sacrifice prediction accuracy to reduce training time.  
   
- LD-SVM models are a good choice when your data is complicated enough that linear models (such as logistic regression) perform poorly. LD-SVM models are also small enough to be used in mobile devices or other scenarios where complex models (such as neural networks) are too big to be consumed efficiently.  
+LD-SVM models are a good choice when your data is complicated enough that linear models (such as logistic regression) perform poorly. LD-SVM models are also small enough to be used in mobile devices or other scenarios where complex models (such as neural networks) are too big to be consumed efficiently.  
   
- Conversely, this model should not be used if you don’t care about model size or if a linear model is required for simplicity or prediction speed. There is also no point to changing to LD-SVM if linear classifiers are already giving good results or if you can get high classification accuracy by adding small amounts of non-linearity.  
+Conversely, this model should not be used if you don’t care about model size or if a linear model is required for simplicity or prediction speed. There is also no point to changing to LD-SVM if linear classifiers are already giving good results, or if you can get high classification accuracy by adding small amounts of non-linearity.  
   
-### Implementation  
- The LD-SVM model was developed by Microsoft Research as part of ongoing efforts to speed up non-linear SVM prediction. The work of Gonen and Alpaydin (2008) on the localized multiple kernel learning method was particularly valuable. Use of a local kernel function enables the model to learn arbitrary local feature embeddings, including high-dimensional, sparse, and computationally deep features that introduce non-linearities into the model.  
+### Implementation details
+
+The LD-SVM model was developed by Microsoft Research as part of ongoing efforts to speed up non-linear SVM prediction. The work of Gonen and Alpaydin (2008) on the localized multiple kernel learning method was particularly valuable. Use of a local kernel function enables the model to learn arbitrary local feature embeddings, including high-dimensional, sparse, and computationally deep features that introduce non-linearities into the model.  
   
- LD-SVM is faster than most other classifiers for several reasons:  
+LD-SVM is faster than most other classifiers for several reasons:  
   
 -   The model learns decision boundaries that are locally linear. Therefore, a test point can be efficiently classified by testing it against its local decision boundary, rather than testing against the entire set of decision boundaries all over feature space.  
   
@@ -132,17 +153,17 @@ manager: "jhubbard"
   
 -   The cost of testing a point against its local decision boundary is logarithmic in the number of training points.  
   
- As a consequence of these optimizations, training the LD-SVM model is exponentially faster than training traditional SVM models.  
+As a consequence of these optimizations, training the LD-SVM model is exponentially faster than training traditional SVM models.  
   
- **Optimization formula**  
+**Optimization formula**  
   
  ![optimization formula](media/aml-ldsvm-optimization.png "AML_LDSVM_optimization")  
   
- **Research**  
-  
- For more details, see [Local Deep Kernel Learning for Efficient Non-linear SVM Prediction](http://go.microsoft.com/fwlink/?LinkId=511662).  
-  
-##  <a name="parameters"></a> Module Parameters  
+### Research
+
+For more information about the algorithm and underlying research, see [Local Deep Kernel Learning for Efficient Non-linear SVM Prediction](http://go.microsoft.com/fwlink/?LinkId=511662).  
+
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -169,6 +190,6 @@ manager: "jhubbard"
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained binary classification model.|  
   
-## See Also  
+## See also  
  [Classification](machine-learning-initialize-model-classification.md)   
  [A-Z Module List](a-z-module-list.md)
