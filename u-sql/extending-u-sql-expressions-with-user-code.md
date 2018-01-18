@@ -169,8 +169,7 @@ OUTPUT @result
 TO "/Output/ReferenceGuide/DDL/Assemblies/myFirstFunction_AR3.txt"
 USING Outputters.Tsv();
 ```
---------------------------------------------------   
---------------------------------------------------   
+---  
    
 
 <a name="usingRound">**Inline C# Expression - Using Round**</a>  
