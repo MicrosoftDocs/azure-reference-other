@@ -166,7 +166,7 @@ The chi-square distribution is a sum of the squares of k independent, standard, 
   
 To calculate, select **ChiSquare**, and set the following options:  
   
- - **Number of degrees of freedom** *  
+ - **Number of degrees of freedom** 
      Type a number (`double`) to specify the degrees of freedom. The default is 1.0.  
   
 ###  <a name="bkmk_ChiSquareRightTailed"></a> ChiSquareRightTailed  
@@ -197,7 +197,7 @@ To calculate, select **FFisher**, and set the following options:
  Type a number (`double`) to specify the degrees of freedom that is used in the numerator. The default is 3.0.  
   
 - **Denominator degrees of freedom**  
- Type a number (`double`) to specify the degrees of freedom that is used in the denominator. The default is 6.0.  
+ Type a number (`double`) to specify the degrees of freedom that is used in the denominator. The default is 6.0.
   
 ###  <a name="bkmk_FFisherRightTailed"></a> FFisherRightTailed  
  

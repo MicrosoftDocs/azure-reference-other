@@ -37,7 +37,7 @@ Modules for data transformation are grouped into the following task-based catego
   
 ##  <a name="categories"></a> List of modules  
 
-The following table lists the categories under **Data Transformation**.
+The following module categories are included under **Data Transformation**. 
   
 + [Data Transformation / Filter](data-transformation-filter.md)
 + [Learning with Counts](data-transformation-learning-with-counts.md)
