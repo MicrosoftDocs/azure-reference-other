@@ -1,6 +1,6 @@
 ---
 title: "SUM (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns the sum of all the values in the expression. SUM can be used with numeric columns only."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

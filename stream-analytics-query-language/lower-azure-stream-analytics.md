@@ -1,6 +1,6 @@
 ---
 title: "LOWER (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns a character expression after converting uppercase character data to lowercase."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

@@ -1,6 +1,6 @@
 ---
 title: "Time Management (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Stream Analytics provides language constructs to deal with the temporal aspects of the data."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

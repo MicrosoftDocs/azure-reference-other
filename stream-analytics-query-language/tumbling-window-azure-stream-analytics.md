@@ -1,6 +1,6 @@
 ---
 title: "Tumbling Window (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Tumbling windows are a series of fixed-sized, non-overlapping and contiguous time intervals."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

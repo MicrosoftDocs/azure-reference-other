@@ -1,6 +1,6 @@
 ---
 title: "UNION (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Combines the results of two or more queries into a single result set that includes all the rows that belong to all queries in the union."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

@@ -1,6 +1,6 @@
 ---
 title: "Time Skew Policies (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Describes how to handle temporal nature and timing of arrival of events in Azure Stream Analytics."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

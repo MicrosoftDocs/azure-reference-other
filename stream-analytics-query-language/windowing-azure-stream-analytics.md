@@ -1,6 +1,6 @@
 ---
 title: "Windowing (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "This topic describes windows and how they are defined, identifies the types of windows that are supported, and explains how you can use windows with various operators."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

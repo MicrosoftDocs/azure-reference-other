@@ -1,6 +1,6 @@
 ---
 title: "Record Functions (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Record functions get record properties or values."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

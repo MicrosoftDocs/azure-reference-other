@@ -1,6 +1,6 @@
 ---
 title: "CONCAT (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns a string that is the result of concatenating two or more string values. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

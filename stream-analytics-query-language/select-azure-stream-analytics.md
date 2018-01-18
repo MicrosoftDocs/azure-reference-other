@@ -1,6 +1,6 @@
 ---
 title: "SELECT (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Retrieves rows from input streams and enables the selection of one or many columns from one or many input streams in Azure Stream Analytics."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

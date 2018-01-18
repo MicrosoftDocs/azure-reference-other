@@ -1,6 +1,6 @@
 ---
 title: "ST_WITHIN | Microsoft Docs"
-description: ""
+description: "Returns 1 if a geography is within another, if not it will return 0. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

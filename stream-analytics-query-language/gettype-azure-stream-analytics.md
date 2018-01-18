@@ -1,6 +1,6 @@
 ---
 title: "GetType (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns a data type name of the value.  "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

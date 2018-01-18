@@ -1,6 +1,6 @@
 ---
 title: "WHERE (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Specifies the search condition for the rows returned by the query. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

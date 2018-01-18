@@ -1,6 +1,6 @@
 ---
 title: "Percentile_Disc (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Calculates a percentile based on entire data set."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

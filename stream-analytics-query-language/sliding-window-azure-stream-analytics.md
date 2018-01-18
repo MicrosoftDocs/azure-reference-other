@@ -1,6 +1,6 @@
 ---
 title: "Sliding Window (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "When using a sliding window, the system is asked to logically consider all possible windows of a given length."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

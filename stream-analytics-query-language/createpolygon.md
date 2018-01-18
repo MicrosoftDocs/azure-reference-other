@@ -1,6 +1,6 @@
 ---
 title: "CreatePolygon | Microsoft Docs"
-description: ""
+description: "Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

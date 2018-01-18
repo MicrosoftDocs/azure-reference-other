@@ -1,6 +1,6 @@
 ---
 title: "Complex Data Types (Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Describes how to operate on complex data types like arrays, JSON, CSV formatted data."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

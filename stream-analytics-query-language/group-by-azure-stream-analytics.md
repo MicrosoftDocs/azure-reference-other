@@ -1,6 +1,6 @@
 ---
 title: "GROUP BY (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Groups a selected set of rows into a set of summary rows by the values of one or more columns or expressions."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

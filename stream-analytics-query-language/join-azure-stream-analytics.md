@@ -1,6 +1,6 @@
 ---
 title: "JOIN (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

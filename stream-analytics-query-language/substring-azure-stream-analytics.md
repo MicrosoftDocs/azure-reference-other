@@ -1,6 +1,6 @@
 ---
 title: "SUBSTRING (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns part of a character or a text."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

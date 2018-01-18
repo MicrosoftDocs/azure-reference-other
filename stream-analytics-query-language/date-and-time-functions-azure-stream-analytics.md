@@ -1,6 +1,6 @@
 ---
 title: "Date and Time Functions (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Lists the date and time functions supported by Azure Stream Analytics."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

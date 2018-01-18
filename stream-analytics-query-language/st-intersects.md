@@ -1,6 +1,6 @@
 ---
 title: "ST_INTERSECTS | Microsoft Docs"
-description: ""
+description: "Returns 1 if a geography intersects with another. If geographies do not intersect it will return 0. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

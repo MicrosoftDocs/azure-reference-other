@@ -1,6 +1,6 @@
 ---
 title: "GeoSpatial Functions | Microsoft Docs"
-description: ""
+description: "Lists the GeoSpatial functions available in Azure Stream Analytics."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

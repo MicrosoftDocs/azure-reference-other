@@ -1,6 +1,6 @@
 ---
 title: "TopOne (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns the top-rank record, where rank defines the ranking position of the event in the window according to the specified ordering."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

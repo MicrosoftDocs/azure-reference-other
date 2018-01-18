@@ -1,6 +1,6 @@
 ---
 title: "Input Metadata Functions | Microsoft Docs"
-description: ""
+description: "Lists the input metadata functions supported by Stream Analytics"
 applies_to: 
   - "Azure"
 services: "stream-analytics"

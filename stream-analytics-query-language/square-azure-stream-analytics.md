@@ -1,6 +1,6 @@
 ---
 title: "SQUARE (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "A mathematical function that returns the square of the specified float value. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

@@ -1,6 +1,6 @@
 ---
 title: "ST_DISTANCE | Microsoft Docs"
-description: ""
+description: "Returns the distance between two points in meters. If used with Polygons will return 0."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

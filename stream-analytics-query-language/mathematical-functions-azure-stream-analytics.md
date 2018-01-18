@@ -1,6 +1,6 @@
 ---
 title: "Mathematical Functions (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Lists the mathematical functions supported by Azure Stream Analytics."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

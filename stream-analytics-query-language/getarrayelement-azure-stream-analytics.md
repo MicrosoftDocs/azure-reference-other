@@ -1,6 +1,6 @@
 ---
 title: "GetArrayElement (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns the array element at the specified index. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

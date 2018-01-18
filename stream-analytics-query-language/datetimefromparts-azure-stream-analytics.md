@@ -1,6 +1,6 @@
 ---
 title: "DATETIMEFROMPARTS (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: " Returns a datetime value for the specified date and time. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

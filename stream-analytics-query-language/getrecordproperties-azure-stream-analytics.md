@@ -1,6 +1,6 @@
 ---
 title: "GetRecordProperties (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns a dataset with record property names and values."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

@@ -1,6 +1,6 @@
 ---
 title: "TRY_CAST (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns a value cast to the specified data type if the cast succeeds; otherwise, returns null. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

@@ -1,6 +1,6 @@
 ---
 title: "FROM (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

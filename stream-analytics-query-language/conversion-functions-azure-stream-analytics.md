@@ -1,6 +1,6 @@
 ---
 title: "Conversion Functions (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Lists the conversion functions supported by Stream Analytics Query Language."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

@@ -1,6 +1,6 @@
 ---
 title: "Reference Data JOIN (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Used to correlate persisted historical data or a slow changing dataset (aka. reference data) with the real-time event stream to make smarter decisions about the system."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

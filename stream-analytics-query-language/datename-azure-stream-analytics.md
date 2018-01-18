@@ -1,6 +1,6 @@
 ---
 title: "DATENAME (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns a character string that represents the specified datepart of the specified date."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

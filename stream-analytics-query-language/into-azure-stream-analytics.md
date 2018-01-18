@@ -1,6 +1,6 @@
 ---
 title: "INTO (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "INTO explicitly specifies an output stream, and is always associated with an SELECT expression."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

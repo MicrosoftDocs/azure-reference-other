@@ -1,6 +1,6 @@
 ---
 title: "TIMESTAMP BY (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "The TIMESTAMP BY clause allows specifying custom timestamp values."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

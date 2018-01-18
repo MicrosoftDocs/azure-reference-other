@@ -1,6 +1,6 @@
 ---
 title: "GetArrayElements (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns a dataset with array values and indexes."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

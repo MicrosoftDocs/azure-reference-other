@@ -1,6 +1,6 @@
 ---
 title: "Hopping Window (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Describes the Hopping window concept in Azure Stream Analytics."
 applies_to: 
   - "Azure"
 services: "stream-analytics"

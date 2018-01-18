@@ -1,6 +1,6 @@
 ---
 title: "GetMetadataPropertyValue | Microsoft Docs"
-description: ""
+description: "Queries input data for specific properties. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

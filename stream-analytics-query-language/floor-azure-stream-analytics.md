@@ -1,6 +1,6 @@
 ---
 title: "FLOOR (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "A mathematical function that returns the largest integer less than or equal to the specified numeric expression. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

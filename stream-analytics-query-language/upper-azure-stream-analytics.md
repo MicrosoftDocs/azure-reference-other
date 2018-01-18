@@ -1,6 +1,6 @@
 ---
 title: "UPPER (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns a character expression with lowercase character data converted to uppercase. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

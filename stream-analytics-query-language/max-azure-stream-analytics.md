@@ -1,6 +1,6 @@
 ---
 title: "MAX (Azure Stream Analytics) | Microsoft Docs"
-description: ""
+description: "Returns the maximum value in the expression.  "
 applies_to: 
   - "Azure"
 services: "stream-analytics"

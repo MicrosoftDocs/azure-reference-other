@@ -1,6 +1,6 @@
 ---
 title: "System.Timestamp  (Stream Analytics) | Microsoft Docs"
-description: ""
+description: "System.Timestamp is a system property that can be used to retrieve the event’s timestamp. "
 applies_to: 
   - "Azure"
 services: "stream-analytics"
