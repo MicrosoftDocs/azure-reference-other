@@ -1,7 +1,8 @@
 ---
 title: "Data Format Conversions | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/14/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,9 +12,10 @@ ms.assetid: d1293c4f-5629-4eef-90a4-097af6945ed6
 caps.latest.revision: 17
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Data Format Conversions
+
 This article lists the modules provided in Azure Machine Learning Studio for converting data among various file formats used in machine learning. 
 
 The supported formats include:
@@ -28,7 +30,7 @@ By converting data to these formats, you can more easily move results and data b
 > [!NOTE]
 > These data conversion modules only convert the complete dataset to a specified format. If you need to do any casting, truncation, conversion of date-time formats, or other  manipulation of the values, use the modules in this section: [Data Transformation](data-transformation.md), or see the list of [related tasks](#bkmk_Related). 
 
-## Some Common Data Conversion Scenarios
+## Common data conversion scenarios
 
 You would typically use the modules for data conversion if you need to move data from an Azure Machine Learning experiment to another machine learning tool or platform, or if you need to export data from Azure Machine Learning in a format that can be used by a database or other tools. For example:
 
@@ -42,7 +44,7 @@ You would typically use the modules for data conversion if you need to move data
 |Data is not in a tabular format|Coerce it to a dataset format by using the [Convert to Dataset](convert-to-dataset.md) module.|
  
 
-## <a name="bkmk_Related"></a>Related Data Manipulation Tasks
+## <a name="bkmk_Related"></a>Related tasks
 
 If you need to import data into Azure Machine Learning. or transform data in individual columns, use these modules before performing data conversion:
 
@@ -55,8 +57,9 @@ If you need to import data into Azure Machine Learning. or transform data in ind
 |Round, group, or normalize numerical data|Use [Apply Math Operation](apply-math-operation.md), [Group Data into Bins](group-data-into-bins.md), or [Normalize Data](normalize-data.md)|
     
   
-##  <a name="modules"></a> List of Modules  
- The Data Format Conversions category includes these modules:  
+##  <a name="modules"></a> List of modules  
+
+The **Data Format Conversions** category includes these modules:  
   
 |Module|Description|  
 |------------|-----------------|  
@@ -66,6 +69,6 @@ If you need to import data into Azure Machine Learning. or transform data in ind
 |[Convert to SVMLight](convert-to-svmlight.md)|Converts data input to the format used by the SVM-Light framework|  
 |[Convert to TSV](convert-to-tsv.md)|Converts data input to the tab-delimited format|  
   
-## See Also  
+## See also  
  [Data Transformation](data-transformation.md)   
  [Module Categories and Descriptions](machine-learning-module-descriptions.md)

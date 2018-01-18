@@ -1,19 +1,21 @@
 ---
 title: "JOIN (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-02-28"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 6cb2e1d5-899f-490b-b2fd-4878f53cefea
 caps.latest.revision: 15
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 02/28/2017
+ms.author: sngun
 ---
 # JOIN (Azure Stream Analytics)
   Like standard T-SQL, JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources.  JOIN in Azure Stream Analytics are temporal in nature, meaning that each JOIN must provide some limits on how far the matching rows can be separated in time.  For instance, saying “join TollBoothEntry events with TollBoothExit events when they occur on the same LicensePlate and TollId and within 5 minutes of each other” is legitimate; but “join TollBoothEntry events with TollBoothExit events when they occur on the LicensePlate and TollId” is not – it would match each TollBoothEntry with an unbounded and potentially infinite collection of all TollBoothExit to the same LicensePlate and TollId.  

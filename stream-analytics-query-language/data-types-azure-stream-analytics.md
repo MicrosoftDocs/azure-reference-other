@@ -1,20 +1,21 @@
 ---
 title: "Data Types (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-07-07"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Lists the data types supported by Azure Stream Analytics."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: f9685302-81db-4f5e-8cea-69ab1af47b2a
 caps.latest.revision: 18
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 07/07/2016
+ms.author: sngun
 ---
 # Data Types (Azure Stream Analytics)
   In Azure Stream Analytics, each column or scalar expression has a related data type. A data type describes (and constrains) the set of values that a column of that type can hold or an expression of that type can produce.  

@@ -1,7 +1,8 @@
 ---
-title: "Deprecated Modules and Features | Microsoft Docs"
+title: "Deprecated modules and features | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 09/22/2015
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,17 +12,18 @@ ms.assetid: d88e45c9-9c3c-4e5c-8bc9-7a80af8113c2
 caps.latest.revision: 9
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
-# Deprecated Modules and Features
-To maintain backward compatibility with earlier versions of Azure Machine Learning, some features, including machine learning algorithms and data processing modules, remain available to support existing experiments, but are not available when you create new experiments.  
+# Deprecated modules and features
+
+To maintain backward compatibility with earlier versions of Azure Machine Learning Studio, some features, including machine learning algorithms and data processing modules, remain available to support existing experiments, but are not available when you create new experiments.  
   
- We recommend that you modify your experiments to use the newer modules as soon as possible. The newer modules provide all the functionality of the deprecated module, as well as some improvements.  
+We recommend that you modify your experiments to use the newer modules as soon as possible. The newer modules provide all the functionality of the deprecated module, as well as some improvements.  
   
- The following table lists the deprecated modules and the new modules that replace them.  
+The following table lists the deprecated modules and the new modules that replace them.  
   
-## Deprecated Modules  
-  
+## Deprecated modules  
+
 |Deprecated module|Replaced with|  
 |-----------------------|-------------------|  
 |[Apply Quantization Function (deprecated)](apply-quantization-function-deprecated.md)|[Group Data into Bins](group-data-into-bins.md)|  
@@ -32,5 +34,5 @@ To maintain backward compatibility with earlier versions of Azure Machine Learni
 |[Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md)|[Clean Missing Data](clean-missing-data.md)|  
 |[Quantize (deprecated)](quantize-deprecated.md)|[Group Data into Bins](group-data-into-bins.md)|  
   
-## See Also  
+## See also  
  [A-Z Module List](a-z-module-list.md)

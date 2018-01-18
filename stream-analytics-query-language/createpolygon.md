@@ -1,18 +1,21 @@
 ---
 title: "CreatePolygon | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-03-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
+description: "Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions."
+applies_to: 
+  - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
 ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: dea81560-3db1-49d9-bf56-736d81948944
 caps.latest.revision: 4
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 03/22/2017
+ms.author: sngun
 ---
 # CreatePolygon
   Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions. The order of points must follow right-hand ring orientation, an easy way to check if the polygon orientation is correct is to imagine yourself walking from one point to the other in order of declaration, the inside of the polygon needs to be on your left side all the time.  
