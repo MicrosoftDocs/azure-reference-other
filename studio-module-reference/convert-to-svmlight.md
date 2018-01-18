@@ -1,7 +1,8 @@
 ---
 title: "Convert to SVMLight | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 03/02/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,23 +12,26 @@ ms.assetid: 8d44b923-97df-4dd5-a6d4-173bb89c7441
 caps.latest.revision: 18
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Convert to SVMLight
 *Converts data input to the format used by the SVM-Light framework*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  
   
-## Module Overview  
- You can use the [Convert to SVMLight](convert-to-svmlight.md) module to convert your datasets to the format that is used by SVMLight. The SVM-Light framework was developed by researchers at Cornell University. The SVM-Light library implements Vapnik's Support Vector Machine. It can be used for many machine learning tasks, including classification and regression.  
-  
- For more information about the format used by SVMLight, see [SVMLight Support Vector Machine](http://svmlight.joachims.org/).  
-  
-## How to Configure Convert to SVMLight  
+## Module overview  
+ 
+This article describes how to use the [Convert to SVMLight](convert-to-svmlight.md) module in Azure Machine Learning Studio, to convert your datasets to the format that is used by SVMLight. 
 
-The conversion to SVMLight format entails converting each case into a row of data that begins with the label, followed by feature-value pairs expressed as colon-separated numbers. The conversion process will not automatically identify the correct columns, so it is important that you prepare the columns in your dataset before attempting conversion. For more information, see [Preparing Data for Conversion](#bkmk_PreparingData). 
+The SVM-Light framework was developed by researchers at Cornell University. The SVM-Light library implements Vapnik's Support Vector Machine, but the format has been adopted elsewhere and can be used for many machine learning tasks, including classification and regression.  
+  
+For more information, see [SVMLight Support Vector Machine](http://svmlight.joachims.org/).  
+  
+## How to configure Convert to SVMLight  
+
+The conversion to SVMLight format entails converting each case into a row of data that begins with the label, followed by feature-value pairs expressed as colon-separated numbers. The conversion process **does not** automatically identify the correct columns, so it is important that you prepare the columns in your dataset before attempting conversion. For more information, see [Preparing Data for Conversion](#bkmk_PreparingData). 
     
-1. Add the [Convert to SVMLight](convert-to-svmlight.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) group in the **experiment items** list in Azure Machine Learning Studio. 
+1. Add the [Convert to SVMLight](convert-to-svmlight.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Azure Machine Learning Studio. 
 
 2. Connect the dataset or output that you want to convert to SVMLight format.
 
@@ -35,9 +39,11 @@ The conversion to SVMLight format entails converting each case into a row of dat
 
 4. Right-click the output of the module, select **Download**, and save the data to a local file for modification or for reuse with a program that supports SVMLight.
 
-### <a name="bkmk_PreparingData"></a>Preparing Data for Conversion
-  
-To understand the conversion process, consider the Blood Donor dataset. This sample dataset has the following format, in tabular form.  
+### <a name="bkmk_PreparingData"></a>Preparing data for conversion
+
+To illustrate the conversion process, this example uses the **Blood Donor** dataset in Studio. 
+
+This sample dataset has the following format, in tabular form.  
   
 |Recency|Frequency|Monetary|Time|Class|  
 |-|-|-|-|-|  
@@ -47,7 +53,7 @@ To understand the conversion process, consider the Blood Donor dataset. This sam
 |2|20|5000|45|1|  
  |1|24|6000|77|0|  
   
-Note that the [Class] column is the last column in the table. If you convert the dataset to SVMLight without first indicating that the column is a label, it is handled as a feature and the first column, [Recency], is used as the label, like this:  
+Note that the label column, named [Class] in this dataset, is the last column in the table. However, if you convert the dataset to SVMLight without first indicating that which column contains the label, the first column, [Recency], is used as the label, and the [Class] column is treated as a feature:  
   
 <code>2 1:50 2:12500 3:98 4:1</code>  
 <code>0 1:13 2:3250 3:28 4:1</code>   
@@ -55,9 +61,9 @@ Note that the [Class] column is the last column in the table. If you convert the
   
 To make sure the labels are generated correctly at the beginning of the row for each case, you must add two instances of the [Edit Metadata](edit-metadata.md) module.  
   
--   In the first, select the label column ([Class]) and for **Fields**, select **Label**.  
+1. In the first instance of **Edit Metadata**, select the label column ([Class]) and for **Fields**, select **Label**.  
   
--   In the second, select all feature columns that you need in the converted file ([Recency], [Frequency], [Monetary], [Time]) and for **Fields**, select **Features**.  
+2. In the second instance of **Edit Metadata**, select all feature columns that you need in the converted file ([Recency], [Frequency], [Monetary], [Time]) and for **Fields**, select **Features**.  
   
 After the columns have been identified correctly, you can run the **Convert to SVMLight** module. After conversion, the first few rows of the Blood Donor dataset now have this format: 
 
@@ -71,21 +77,25 @@ After the columns have been identified correctly, you can run the **Convert to S
 <code>1 1:2 2:20 3:5000 4:45</code>   
 <code>-1 1:1 2:24 3:6000 4:77</code>   
 
+You can't directly use this text data for models in Azure ML, or visualize it. However, you can download it to a local share. 
 
-You can't directly use this text data for models in Azure ML, or visualize it, but you can download it to a local share. While you have the file open, we recommend that you add a comment line, prefaced by <code>#</code>, so that you can add notes about the source or the original feature column names. 
+While you have the file open, we recommend that you add a comment line, prefaced by <code>#</code>, so that you can add notes about the source or the original feature column names. 
 
-> [!TIP]
-> To use an SVMLight file in Vowpal Wabbit, and make additional modifications as described here: [Conversion to Vowpal Wabbit Format](#bkmk_VWConvert). When the file is ready, upload it to Azure blob storage, and call it directly from one of the Vowpal Wabbit modules.
+To use an SVMLight file in Vowpal Wabbit, and make additional modifications as described here: [Conversion to Vowpal Wabbit Format](#bkmk_VWConvert). When the file is ready, upload it to Azure blob storage, and call it directly from one of the Vowpal Wabbit modules.
 
- 
-  
 ## Examples  
- There are no examples in the Cortana Intelligence Gallery that are specific to this format.  
+
+There are no examples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/): that are specific to this format.
   
-## Technical Notes  
- The executables provided in the SVM-Light framework require both an *example file* and a *model file*. However, this module creates only the example file. You must create the model file separately by using the SVMLight libraries.  
+## Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Tips
+
+The executables provided in the SVM-Light framework require both an *example file* and a *model file*. However, this module creates only the example file. You must create the model file separately by using the SVMLight libraries.  
   
- The example file is the file that contains the training examples.  
+The example file is the file that contains the training examples.  
   
 -   **Optional header**  
   
@@ -101,7 +111,7 @@ You can't directly use this text data for models in Azure ML, or visualize it, b
   
      The target value and each of the index-value pairs are separated by a space.  
   
-### Training Data Example
+### Training data example
 
 The following table shows how the values in the columns of the Two-Class Iris dataset are converted to a representation in which each column is represented by an index, followed by a colon, and then the value in that column:  
   
@@ -113,7 +123,7 @@ The following table shows how the values in the columns of the Two-Class Iris da
   
  Note that the names of the feature columns are lost in the conversion.  
   
-### <a name ="bkmk_VWConvert"></a>Conversion to Vowpal Wabbit Format
+### <a name ="bkmk_VWConvert"></a>Using SVMLight to prepare a Vowpal Wabbit file
   
 The SVMLight format is similar to the format used by Vowpal Wabbit. To change the SVMLight output file to a format usable for training a Vowpal Wabbit model, just add a pipe symbol between the label and the list of features.  
   
@@ -131,7 +141,7 @@ For example, compare these lines of input:
 <code>1 1:2 2:50 3:12500 4:98</code>   
 <code>1 1:0 2:13 3:3250 4:28</code>  
   
-##  <a name="ExpectedInputs"></a> Expected Input  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -143,6 +153,6 @@ For example, compare these lines of input:
 |----------|----------|-----------------|  
 |Results dataset|SvmLight|Output dataset|  
   
-## See Also  
+## See also  
  [Data Format Conversions](data-format-conversions.md)   
  [A-Z Module List](a-z-module-list.md)

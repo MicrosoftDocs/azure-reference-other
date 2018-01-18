@@ -2,7 +2,7 @@
 title: "Data Transformation - Learning with Counts | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -16,25 +16,26 @@ manager: "cgronlund"
 ---
 # Data Transformation - Learning with Counts
 
-Learning with counts is an efficient way to create a compact set of features for a dataset, based on counts of the values. You can use the modules in this section to build a set of counts and features, and later update the counts and the features to take advantage of new data, or merge two sets of count data.  
-  
+This article describes the modules provided in Azure Machine Learning Stuio in support of count-based featurization.
+
+Learning with counts is an efficient way to create a compact set of features for a dataset, based on counts of the values. You can use the modules in this section to build a set of counts and features, and later update the counts and the features to take advantage of new data, or merge two sets of count data. 
+
+## What is count-based featurization?
+
 The basic idea underlying *count-based featurization* is simple: by calculating counts, you can quickly and easily get a summary of what columns contain the most important information. The module counts the number of times a value appears, and then provides that information as a feature for input to a model.  
-  
-## How count-based learning works  
+
 
 Imagine you’re trying to validate a credit card transaction. One crucial piece of information is where this transaction came from, and one of the most common encodings of that location is the postal code. However, there might be as many as 40,000 postal codes, zip codes, and geographical codes to account for. Does your model have the capacity to learn 40,000 more parameters? If you give it that capacity, do you now have enough training data to prevent it from overfitting?  
-  
-If you had really good data with lots of samples, such fine-grained local granularity could be quite powerful. However, if you have only one sample of a fraudulent transaction from a small locality, does it mean that all of the transactions from that place are bad, or that you don’t have enough data?  
-  
-One solution to this conundrum is to learn with counts. That is, rather than introduce 40,000 more features, you can observe the counts and proportions of fraud for each postal code. By using these counts as features, you gain a notion of the strength of the evidence for each value. Moreover, by encoding the relevant statistics of the counts, the learner can use the statistics to decide when to back off and use other features.  
-  
-Count-based learning is very attractive for many reasons: you have fewer features, requiring fewer parameters, which makes for faster learning, faster prediction, smaller predictors, and less potential to overfit.  
 
-### How counts are created
+If you had really good data with lots of samples, such fine-grained local granularity could be quite powerful. However, if you have only one sample of a fraudulent transaction from a small locality, does it mean that all of the transactions from that place are bad, or that you don’t have enough data?
+One solution is to learn with counts. That is, rather than introduce 40,000 more features, you can observe the counts and proportions of fraud for each postal code. By using these counts as features, you gain a notion of the strength of the evidence for each value. Moreover, by encoding the relevant statistics of the counts, the learner can use the statistics to decide when to back off and use other features.  
+  
+Count-based learning is very attractive for many reasons: you have fewer features, requiring fewer parameters, which makes for faster learning, faster prediction, smaller predictors, and less potential to overfit. 
 
-An example might help to demonstrate how count-based features are created and applied. This example is highly simplified, to give you an idea of the overall process. It also shows how to use and interpret count-based features. 
+### How count-based features are created
 
-Assume you have a table like this, with labels and inputs:  
+A very simple example might help to demonstrate how count-based features are created and applied. Suppose you have a table like this, with labels and inputs:  
+
   
 |Label column|Input value|  
 |------------------|-----------------|  
@@ -45,18 +46,19 @@ Assume you have a table like this, with labels and inputs:
 |1|B|  
 |1|B|  
 |1|B|  
-  
-Count-based features are created as follows:
 
-1.  Each case (or row, or sample) has a set of values in columns. In this example, the values are A, B, and so forth.  
+Each case (or row, or sample) has a set of values in columns. In this example, the values are A, B, and so forth.  
   
-2.  For a particular set of values, you find all the other cases in that dataset that have the same value. In this case, there are three instances of A and four of B.  
-  
-3.  Next, you count their class memberships as features in themselves. In this case, you get a small matrix, in which there are two cases where A=0, one case where A = 1, one case where B= 0, and three cases where B = 1.  
-  
-4. Based on this matrix, you get a variety of count-based features, including a calculation of the log-odds ratio as well as the counts for each target class:  
 
-**Sample count-based features**
+1. For a particular set of values, you find all the other cases in that dataset that have the same value. In this case, there are three instances of A and four of B.  
+  
+2. Next, you count their class memberships as features in themselves. In this case, you get a small matrix, in which there are 2 cases where A=0, 1 case where A = 1, 1 case where B= 0, and 3 cases where B = 1.
+
+  
+3. Based on this matrix, you get a variety of count-based features, including a calculation of the log-odds ratio as well as the counts for each target class:  
+
+### Sample table of count-based features
+
 
 |Label|0_0_Class000_Count|0_0_Class001_Count|0_0_Class000_LogOdds|0_0_IsBackoff|  
 |-----------|---------------------------|---------------------------|-----------------------------|---------------------|  
@@ -74,15 +76,19 @@ The following article from the Microsoft Machine Learning team provides a detail
   
  [Using Azure ML to Build Clickthrough Prediction Models](http://go.microsoft.com/fwlink/?LinkId=699305)  
 
-## Technical notes
+  
+## Technical notes  
 
-This section contains implementation ntoes and answers to some frequently asked questions.
+
+This section contains implementation details, tips, and answers to frequently asked questions.
 
 ### How is the log-loss value calculated? 
   
 The log-loss value is not the plain log-odds; the prior distribution is used to smooth the log-odds computation.  
   
-Suppose you have a data set used for binary classification.  In this dataset, the prior frequency for class 0 is `p0`, and the prior frequency for class 1 is `p1 = 1 – p0`. For a certain training example feature, the count for class 0 is `x0`, and the count for class 1 is `x1`.  
+
+Suppose you have a data set used for binary classification.  In this dataset, the prior frequency for class 0 is `p_0`, and the prior frequency for class 1 is `p_1 = 1 – p_0`. For a certain training example feature, the count for class 0 is `x_0`, and the count for class 1 is `x_1`.  
+
 
 Under these assumptions,  the log-odds is computed as `LogOdds = Log(x0 + c * p0) – Log (x1 + c\p1)` where `c` is the prior coefficient, which can be set by the user, and the log function uses the natural base.
   
@@ -108,6 +114,6 @@ The **Learning with Counts** category includes the following modules:
 |[Merge Count Transform](merge-count-transform.md)|Merges two sets of count-based features|  
 |[Modify Count Table Parameters](modify-count-table-parameters.md)|Modifies count-based features derived from an existing count table|  
   
-## See Also  
+## See also  
  [Data Transformation](data-transformation.md)   
  [Feature Selection](feature-selection-modules.md)

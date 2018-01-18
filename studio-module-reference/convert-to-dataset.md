@@ -1,7 +1,8 @@
 ---
 title: "Convert to Dataset | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 03/02/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,26 +12,29 @@ ms.assetid: 72bf58e0-fc87-4bb1-9704-f1805003b975
 caps.latest.revision: 19
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Convert to Dataset
 *Converts data input to the internal Dataset format used by Microsoft Azure Machine Learning*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  
   
-## Module Overview  
- You can use the  [Convert to Dataset](convert-to-dataset.md)module to convert any data that you might need for an experiment to the internal format used by Studio.  
+## Module overview  
+
+This article describes how to use the [Convert to Dataset](convert-to-dataset.md) module in Azure Machine Learning Studio, to convert any data that you might need for an experiment to the internal format used by Studio.
   
- Conversion is not strictly required, because Azure Machine Learning implicitly converts data to its native dataset format when any operation is performed on the data. However, saving data to the dataset format is recommended if you have performed some kind of normalization or cleaning on a set of data, and you want to ensure that the changes are used in further experiments.  
+Conversion is not required in most cases, because Azure Machine Learning implicitly converts data to its native dataset format when any operation is performed on the data. 
+
+However, saving data to the dataset format is recommended if you have performed some kind of normalization or cleaning on a set of data, and you want to ensure that the changes are used in further experiments.  
   
 > [!NOTE]
 >  [Convert to Dataset](convert-to-dataset.md) changes only the format of the data, and it does not save a new copy of the data in the workspace. To save the dataset, double-click the output port, select **Save as dataset**, and type a new name.  
   
-## How to Use Convert to Dataset  
+## How to use Convert to Dataset  
 
 We recommend that you use the [Edit Metadata](edit-metadata.md) module to prepare the dataset before using [Convert to Dataset](convert-to-dataset.md).  You can add or change column names, adjust data types, and so forth.
 
-1.  Add the [Convert to Dataset](convert-to-dataset.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) group in the **experiment items** list in Azure Machine Learning Studio. 
+1.  Add the [Convert to Dataset](convert-to-dataset.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Azure Machine Learning Studio. 
 
 2. Connect it to any module that outputs a dataset.   
 
@@ -38,49 +42,43 @@ We recommend that you use the [Edit Metadata](edit-metadata.md) module to prepar
   
 3.  In the **Action** dropdown list, indicate if you want to do any cleanup on the data before saving the dataset:  
   
-    -   **None**  
+    - **None**:  Use the data as is.  
   
-         Use the data as is.  
+    - **SetMissingValue**:  Specify a placeholder that is inserted in the dataset wherever there is a missing value. The default placeholder is the question mark character (?), but you can use the  **Custom missing value** option to type a different value.  
   
-    -   **SetMissingValue**  
+    - **ReplaceValues**: Use this option to specify a single exact value to be replaced with any other exact value. For example, assuming your data contains the string `obs` used as a placeholder for missing values, you could specify a custom replacement operation using these options:
+    
+        1. Set **Replace** to **Custom**  
   
-         Specify a placeholder that will be inserted in the dataset wherever there is a missing value. The default placeholder is the question mark character (?), but you can use the  **Custom missing value** option to type a different value.  
+        2. For **Custom value**, type the value you want to find. In this case, you would type `obs`. 
+        3. For **New value**, type the new value to replace the original string with. In this case, you might type `?`  
   
-    -   **ReplaceValues**  
+    Note that the **ReplaceValues** operation applies only to exact matches. For example, these strings would not be affected: `obs.`, `obsolete`.  
   
-         Use this option to specify a single exact value to be replaced with any other exact value.  
+    - **SparseOutput**: Indicates that the dataset is sparse. By creating a sparse data vector, you can ensure  that missing values do not affect a sparse data distribution. After choosing this option, you must indicate how missing values and zero values should be handled. 
+    
+    To remove any value other than zero, click the **Remove** option and type a single value to remove. You can remove missing values, or set a custom value to delete from the vector.  Only exact matches will be removed. For example, if you type `x` in the **Remove value** text box, the row `xx` would not be affected.  
   
-         For example, assuming your data contains the string `obs` used as a placeholder for missing values, you could specify a custom replacement operation using these options:  
-  
-        -   Set **Replace** to **Custom**  
-  
-        -   For **Custom value**, type the value you want to find. In this case, you would type `obs`.  
-  
-        -   For **New value**, type the new value to replace the original string with. In this case, you might type `?`  
-  
-         Note that the **ReplaceValues** operation applies only to exact matches. For example, these strings would not be affected: `obs.`, `obsolete`.  
-  
-    -   **SparseOutput**  
-  
-         Indicates that the dataset is sparse. By creating a sparse data vector, you can ensure  that missing values do not affect a sparse data distribution.  
-  
-         After choosing this option, you must indicate how missing values and zero values should be handled. To remove any value other than zero, click the **Remove** option and type a single value to remove. You can remove missing values, or set a custom value to delete from the vector.  Only exact matches will be removed. For example, if you type `x` in the **Remove value** text box, the row `xx` would not be affected.  
-  
-         By  default, the option **Remove zeroes** is set to `True`, meaning that all zero values are removed when the sparse column is created.  
+    By  default, the option **Remove zeroes** is set to `True`, meaning that all zero values are removed when the sparse column is created.  
   
 5.  Run the experiment, or right-click the [Convert to Dataset](convert-to-dataset.md) module and select **Run selected**.  
-  
-     You can save the resulting dataset with a new name by right-clicking the output of [Convert to Dataset](convert-to-dataset.md) and selecting **Save as Dataset**.  
+
+## Results
+
++  To save the resulting dataset with a new name, right-click the output of [Convert to Dataset](convert-to-dataset.md) and select **Save as Dataset**.  
   
 ## Examples  
- You can see examples of how the [Convert to Dataset](convert-to-dataset.md) module is used by exploring these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+
+You can see examples of how the [Convert to Dataset](convert-to-dataset.md) module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   The [CRM sample](http://go.microsoft.com/fwlink/?LinkId=525941) reads from a shared dataset and saves a copy of the dataset in the local workspace.  
+- [CRM sample](http://go.microsoft.com/fwlink/?LinkId=525941): Reads from a shared dataset and saves a copy of the dataset in the local workspace.  
   
--   The [Flight Delay example](http://go.microsoft.com/fwlink/?LinkId=525725) saves a dataset that has been cleaned by replacing missing values so that you can use it for future experiments.  
+- [Flight Delay example](http://go.microsoft.com/fwlink/?LinkId=525725): Saves a dataset that has been cleaned by replacing missing values so that you can use it for future experiments.  
   
-## Technical Notes  
-  
+## Technical notes  
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
 -   Any module that takes a dataset as input can also take data in the CSV, TSV, or ARFF formats. Before any module code is executed, preprocessing of the inputs is performed, which is equivalent to running the [Convert to Dataset](convert-to-dataset.md) module on the input.  
   
 -   You cannot convert from the SVMLight format to dataset.  
@@ -91,13 +89,13 @@ We recommend that you use the [Edit Metadata](edit-metadata.md) module to prepar
   
 -   If you need to save data that uses numerical data that is sparse and has missing values, internally, Studio supports sparse arrays by using a SparseVector, which is a class in the Math.NET numeric library. Prepare your data that uses zeros and has missing values, and then use [Convert to Dataset](convert-to-dataset.md) with the arguments **SparseOutput** and **Remove Zeros** = TRUE.  
   
-##  <a name="ExpectedInputs"></a> Expected Input  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module Parameter  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -109,6 +107,6 @@ We recommend that you use the [Edit Metadata](edit-metadata.md) module to prepar
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
   
-## See Also  
+## See also  
  [Data Format Conversions](data-format-conversions.md)   
  [A-Z Module List](a-z-module-list.md)
