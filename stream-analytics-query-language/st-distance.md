@@ -1,21 +1,23 @@
 ---
 title: "ST_DISTANCE | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-02-01"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns the distance between two points in meters. If used with Polygons will return 0."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 80550bf3-96a8-47a2-8287-181e1992008c
 caps.latest.revision: 2
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 02/01/2017
+ms.author: sngun
 ---
+
 # ST_DISTANCE
   Returns the distance between two points in meters. If used with Polygons will return 0.  
   
