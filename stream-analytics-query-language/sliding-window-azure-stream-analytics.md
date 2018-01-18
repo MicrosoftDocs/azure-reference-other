@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: cd42711f-1064-41d9-8165-58d5da25008f
 caps.latest.revision: 13
 ms.workload: data-services
-ms.date: 23/02/2016
+ms.date: 02/23/2016
 ms.author: sngun
 ---
 # Sliding Window (Azure Stream Analytics)

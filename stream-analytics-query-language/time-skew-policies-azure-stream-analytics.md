@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 3821da4a-53e6-4f15-97f9-b6e3bde759b9
 caps.latest.revision: 10
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # Time Skew Policies (Azure Stream Analytics)

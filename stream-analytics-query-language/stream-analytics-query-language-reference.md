@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 0e0c5249-5d88-49b6-a4ec-89a9d57a3885
 caps.latest.revision: 14
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # Stream Analytics Query Language Reference

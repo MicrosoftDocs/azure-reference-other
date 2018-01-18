@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 6e69e0ea-6774-4ad2-981b-a4624a56c52b
 caps.latest.revision: 5
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # DATETIMEFROMPARTS (Azure Stream Analytics)

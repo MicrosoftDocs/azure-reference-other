@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 92f18405-2036-4922-a74d-2c9dab926245
 caps.latest.revision: 8
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # EXP (Azure Stream Analytics)

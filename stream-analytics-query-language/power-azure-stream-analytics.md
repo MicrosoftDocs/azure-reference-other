@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 89a126bc-f801-4697-b1dd-93235d1f54a0
 caps.latest.revision: 8
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # POWER (Azure Stream Analytics)

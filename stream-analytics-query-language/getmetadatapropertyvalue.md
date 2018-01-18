@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 7fca3d2c-2475-49e8-8c16-e268b65def22
 caps.latest.revision: 10
 ms.workload: data-services
-ms.date: 01/03/2017
+ms.date: 03/01/2017
 ms.author: sngun
 ---
 # GetMetadataPropertyValue

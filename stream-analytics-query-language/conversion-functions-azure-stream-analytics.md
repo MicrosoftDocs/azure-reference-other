@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 2b309c62-83d8-4a18-bdbc-fec67aaa0b3d
 caps.latest.revision: 9
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # Conversion Functions (Azure Stream Analytics)

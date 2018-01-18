@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: fd746c09-025e-465c-b985-49bfc9fb4f5e
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # CREATE TABLE (Stream Analytics)

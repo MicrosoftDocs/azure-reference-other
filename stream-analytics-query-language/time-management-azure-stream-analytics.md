@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 1cc875d1-0f20-46b6-8001-dad1eaa075e5
 caps.latest.revision: 16
 ms.workload: data-services
-ms.date: 01/02/2017
+ms.date: 02/01/2017
 ms.author: sngun
 ---
 # Time Management (Azure Stream Analytics)

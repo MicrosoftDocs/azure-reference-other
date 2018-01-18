@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 5636701f-8977-42bf-a864-227652bdf2e4
 caps.latest.revision: 15
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # System.Timestamp  (Stream Analytics)

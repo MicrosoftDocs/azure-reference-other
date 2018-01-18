@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 1bd52a25-c32e-47ac-84d7-21255ae8d572
 caps.latest.revision: 5
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # VAR (Azure Stream Analytics)

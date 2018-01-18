@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: e9b9bc6f-84b3-4eea-b193-d50951382a7a
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # String Functions (Azure Stream Analytics)

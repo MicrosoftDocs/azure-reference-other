@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 6ae879ff-435d-44e3-bbc7-09cbd399a502
 caps.latest.revision: 11
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # GROUP BY (Azure Stream Analytics)

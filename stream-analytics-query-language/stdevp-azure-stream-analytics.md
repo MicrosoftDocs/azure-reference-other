@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 6d8c33cc-5087-43e9-b4de-e7e120dbb1a7
 caps.latest.revision: 5
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # STDEVP (Azure Stream Analytics)

@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: dea81560-3db1-49d9-bf56-736d81948944
 caps.latest.revision: 4
 ms.workload: data-services
-ms.date: 22/03/2017
+ms.date: 03/22/2017
 ms.author: sngun
 ---
 # CreatePolygon

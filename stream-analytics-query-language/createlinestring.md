@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: c99c9464-d052-4aef-a176-6ee53c6dcab9
 caps.latest.revision: 3
 ms.workload: data-services
-ms.date: 22/03/2017
+ms.date: 03/22/2017
 ms.author: sngun
 ---
 # CreateLineString

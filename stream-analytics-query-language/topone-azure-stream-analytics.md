@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 9728630c-1c59-4349-a562-fdd98433da9d
 caps.latest.revision: 6
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # TopOne (Azure Stream Analytics)

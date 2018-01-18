@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 94c6d620-c00f-4246-86b3-cd4e2c040a61
 caps.latest.revision: 4
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # GetType (Azure Stream Analytics)

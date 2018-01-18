@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 21dd9ec1-6722-4175-98db-c4e5e2f7cd6d
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # GetArrayElement (Azure Stream Analytics)

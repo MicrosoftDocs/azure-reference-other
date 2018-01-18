@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 4e5d157c-f886-4f04-8894-8c0acdcaf847
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 03/05/2016
+ms.date: 05/03/2016
 ms.author: sngun
 ---
 # INTO (Azure Stream Analytics)

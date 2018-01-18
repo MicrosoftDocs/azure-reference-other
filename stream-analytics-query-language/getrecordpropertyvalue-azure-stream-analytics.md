@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 0d49d7a6-680d-4e78-af4e-26301e5deb8b
 caps.latest.revision: 8
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # GetRecordPropertyValue (Azure Stream Analytics)

@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 10f7e6fb-4483-485a-b9bc-670ec6b37691
 caps.latest.revision: 5
 ms.workload: data-services
-ms.date: 01/02/2017
+ms.date: 02/01/2017
 ms.author: sngun
 ---
 # GeoSpatial Functions

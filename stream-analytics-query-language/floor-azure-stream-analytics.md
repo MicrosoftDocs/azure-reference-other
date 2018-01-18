@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: ddee262a-4266-4649-92f5-cb5c4bbad388
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # FLOOR (Azure Stream Analytics)

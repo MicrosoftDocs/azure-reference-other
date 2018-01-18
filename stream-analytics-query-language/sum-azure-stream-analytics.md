@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 74d404e3-4a67-4303-b95e-d7063af3c513
 caps.latest.revision: 5
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # SUM (Azure Stream Analytics)

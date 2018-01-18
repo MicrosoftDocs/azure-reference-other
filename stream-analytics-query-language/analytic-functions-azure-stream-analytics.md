@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 953c32f0-985e-46b1-b050-1a6911acb83c
 caps.latest.revision: 12
 ms.workload: data-services
-ms.date: 20/10/2017
+ms.date: 10/20/2017
 ms.author: sngun
 ---
 

@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 31b44dd4-f843-4cd3-96ed-36e0fe7df840
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # Mathematical Functions (Azure Stream Analytics)

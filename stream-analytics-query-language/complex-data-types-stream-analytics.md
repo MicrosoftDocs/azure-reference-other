@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 8f092502-b698-4576-b271-d43c1f88accc
 caps.latest.revision: 10
 ms.workload: data-services
-ms.date: 24/05/2016
+ms.date: 05/24/2016
 ms.author: sngun
 ---
 # Complex Data Types (Stream Analytics)

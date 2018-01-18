@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 41249d71-7b92-462e-b2fa-665ab2b65ed4
 caps.latest.revision: 3
 ms.workload: data-services
-ms.date: 08/09/2016
+ms.date: 09/08/2016
 ms.author: sngun
 ---
 # Percentile_Disc (Azure Stream Analytics)

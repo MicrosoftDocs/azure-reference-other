@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: d34676f9-ab12-4d2d-9a2e-5ba411ca1ec9
 caps.latest.revision: 2
 ms.workload: data-services
-ms.date: 01/02/2017
+ms.date: 02/01/2017
 ms.author: sngun
 ---
 # ST_OVERLAPS

@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 494f899f-2ea7-4990-9a65-3881d9995b33
 caps.latest.revision: 11
 ms.workload: data-services
-ms.date: 02/10/2017
+ms.date: 10/02/2017
 ms.author: sngun
 ---
 # COUNT (Azure Stream Analytics)

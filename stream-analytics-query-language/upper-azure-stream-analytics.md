@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 36eeda67-4fe9-46ff-b5cb-5a53244f3ed3
 caps.latest.revision: 6
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # UPPER (Azure Stream Analytics)

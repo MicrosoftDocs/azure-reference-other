@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: e905fd1b-94df-44ad-822f-7c92dc6acfcc
 caps.latest.revision: 11
 ms.workload: data-services
-ms.date: 20/10/2017
+ms.date: 10/20/2017
 ms.author: sngun
 ---
 # ISFIRST (Azure Stream Analytics)

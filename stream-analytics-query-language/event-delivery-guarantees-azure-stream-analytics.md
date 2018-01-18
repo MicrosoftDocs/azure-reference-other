@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 3c503b2e-44b6-43bc-9cfa-43bd9430dea1
 caps.latest.revision: 6
 ms.workload: data-services
-ms.date: 18/05/2016
+ms.date: 05/18/2016
 ms.author: sngun
 ---
 # Event Delivery Guarantees (Azure Stream Analytics)

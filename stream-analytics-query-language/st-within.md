@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 05edb3f8-64a6-44cb-8e43-f0a47222f2aa
 caps.latest.revision: 2
 ms.workload: data-services
-ms.date: 01/02/2017
+ms.date: 02/01/2017
 ms.author: sngun
 ---
 # ST_WITHIN

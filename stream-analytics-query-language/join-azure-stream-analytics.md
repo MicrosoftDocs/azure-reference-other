@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 6cb2e1d5-899f-490b-b2fd-4878f53cefea
 caps.latest.revision: 15
 ms.workload: data-services
-ms.date: 28/02/2017
+ms.date: 02/28/2017
 ms.author: sngun
 ---
 # JOIN (Azure Stream Analytics)

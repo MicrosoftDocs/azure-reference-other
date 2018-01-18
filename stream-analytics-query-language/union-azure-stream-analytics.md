@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 4642814a-14d1-4331-bb87-e5865cd9ae1f
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # UNION (Azure Stream Analytics)

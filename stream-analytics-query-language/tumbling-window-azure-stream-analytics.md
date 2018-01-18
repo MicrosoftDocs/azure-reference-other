@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: cfc2fb3b-0e8e-4b5e-b3ba-8ca6fea61c17
 caps.latest.revision: 12
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # Tumbling Window (Azure Stream Analytics)

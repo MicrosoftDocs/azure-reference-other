@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: a1971269-c7a9-4b62-a3de-b771cc2669e0
 caps.latest.revision: 12
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # Query Language Elements (Azure Stream Analytics)

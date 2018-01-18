@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 1b3a8da3-812a-451d-b052-cd02f1962035
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 15/06/2016
+ms.date: 06/15/2016
 ms.author: sngun
 ---
 # REGEXMATCH (Azure Stream Analytics)

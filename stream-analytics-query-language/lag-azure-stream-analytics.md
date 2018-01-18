@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: 37ff8d85-b679-430a-bab6-6f8f313e7282
 caps.latest.revision: 13
 ms.workload: data-services
-ms.date: 03/12/2017
+ms.date: 12/03/2017
 ms.author: sngun
 ---
 # LAG (Azure Stream Analytics)

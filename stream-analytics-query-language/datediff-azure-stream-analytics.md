@@ -14,7 +14,7 @@ ms.tgt_pltfrm: ""
 ms.assetid: e8f6ec67-f286-4fa5-8acf-ae7c179d8b19
 caps.latest.revision: 9
 ms.workload: data-services
-ms.date: 22/04/2016
+ms.date: 04/22/2016
 ms.author: sngun
 ---
 # DATEDIFF (Azure Stream Analytics)
