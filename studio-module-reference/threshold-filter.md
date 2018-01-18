@@ -1,7 +1,8 @@
 ---
 title: "Threshold Filter | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/21/2016
+ms.date: 01/11/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,44 +12,33 @@ ms.assetid: 11fbc6ba-3a9f-4492-b789-8ef8a9320306
 caps.latest.revision: 19
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Threshold Filter
 *Creates a threshold filter that constrains values*  
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
   
-##  <a name="Remarks"></a> Module Overview  
- You can use the **Threshold Filter** module to define a filter that restricts numeric values to a specified range.  
+## Module overview  
+
+This article describes how to use the **Threshold Filter** module in Azure Machine Learning Studio, to  define a filter that restricts numeric values to a specified range.  
   
- Threshold filters are commonly used in digital signal processing. A threshold filter examines each value of the input dataset and changes all values that do not meet the boundary conditions. You typically would use this type of filter for the following applications:  
-  
--   Replace all negatively signed measurements with a value of zero.  
-  
--   Convert a gray-scale image to black and white areas by defining a numerical boundary value for all pixels.  
-  
- After you have defined a filter that meets your needs, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module.  
-  
- The output of the [Apply Filter](apply-filter.md) module is a dataset containing the selected columns, transformed as specified by the **Threshold Filter** settings.  
-  
- Alternatively, if you select the **Indicator** option, instead of returning the filter values, a column is returned containing Boolean values that indicates whether the value in each row met the specified filter condition or not. This can be useful when you are testing a new filter.  
-  
+Filters are an important tool in digital signal processing, and are often used in machine learning to improve the results of image or voice recognition. In general, a filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).
+
+**Threshold filters** are filters that lets you control the values for a specified range. A threshold filter examines each value of the input dataset and changes all values that do not meet the boundary conditions. You typically would use this type of filter for the following applications:
+
+- Replace all negatively signed measurements with a value of zero.
+
+- Convert a gray-scale image to black and white areas by defining a numerical boundary value for all pixels.
+
+After you have defined a filter that meets your needs, you apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module. The output of the [Apply Filter](apply-filter.md) module is a dataset containing the selected columns, transformed as specified by the **Threshold Filter** settings.  
+
 > [!TIP]
->  Need to filter data from a dataset or remove missing values? Use these modules instead:  
->   
->  -   [Clean Missing Data](clean-missing-data.md)  
->   
->      Use this module to remove missing values or replace missing values with placeholders.  
-> -   [Partition and Sample](partition-and-sample.md)  
->   
->      Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-> -   [Clip Values](clip-values.md)  
->   
->      Use this module to set a range and keep only the values within that range.  
+> Are you looking for a different type of filter? Studio provides these modules for sampling data, getting a subset of data, removing bad values, or creating test and training sets: [Split Data](split-data.md), [Clean Missing Data](clean-missing-data.md), [Partition and Sample](partition-and-sample.md), [Apply SQL Transformation](apply-sql-transformation.md), [Clip Values](clip-values.md).  If you need to filter data as you read it from a source, see [Import Data](import-data.md). The options depend on the source type. 
+
+## How to configure Threshold Filter
   
-## How to Configure a Threshold Filter  
-  
-1.  Add the **Threshold Filter** module to your experiment.  
+1.  Add the **Threshold Filter** module to your experiment. You can find it under **Data Transformation**, in the **Filters** category.  
   
 2.  For **Type**, specify the type of filter to apply:  
   
@@ -90,9 +80,9 @@ manager: "jhubbard"
   
     -   If you select the **GreaterThan** filter, the number you specify defines the greatest value that can be passed through without replacement.  
   
-    -   If you select the **MagnitudeLessThan** filter, type a single positive or negative number for **Level**.  Any value that is less than that value will be replaced with the level value.  
+    -   If you select the **MagnitudeLessThan** filter, type a single positive or negative number for **Level**.  Any value that is less than that value is replaced with the level value.  
   
-    -   If you select the **MagnitudeGreaterThan** filter, type a single positive or negative number for **Level**.  Any value that is greater than that value will be replaced with the level value.  
+    -   If you select the **MagnitudeGreaterThan** filter, type a single positive or negative number for **Level**.  Any value that is greater than that value is replaced with the level value.  
   
     -   If you select the filters, **InRange** or**OutOfRange**, specify the upper or lower bounds by using these options:  
   
@@ -106,18 +96,29 @@ manager: "jhubbard"
   
 5.  Connect the filter to [Apply Filter](apply-filter.md), and connect a dataset.  
   
-     Use the column selector to specify which columns the filter should be applied to. By default, the [Apply Filter](apply-filter.md) module will use the filter for all selected numeric columns.  
+     Use the column selector to specify which columns the filter should be applied to. 
+     
+     > [!IMPORTANT]
+     > By default, the [Apply Filter](apply-filter.md) module uses the filter on all selected numeric columns. Be sure to exclude columns that you don't want to change.   
   
-6.  No computations are performed until you connect a dataset to the [Apply Filter](apply-filter.md) module and run the experiment. At that point, the filter operations are applied to the selected columns.  
+6.  To perform the actual computations, run the experiment.
   
 ## Examples  
- For examples of how filters are used in machine learning, see this experiment in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+
+For examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   The [Filters](http://go.microsoft.com/fwlink/?LinkId=525732) experiment demonstrates all filter types. The example uses an engineered waveform dataset to more easily illustrate the effects of the different filters.  
+-   [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types, using an engineered waveform dataset.  
   
-### Using Indicator Values  
- The following example assumes that you apply a threshold filter that specifies a range with a lower boundary of 2 and an upper boundary of 4:  
+### Using indicator values to test your filters  
+
+If you are uncertain which values to use, or how the filter will act, we recommend that you generate the indicator values column, and review the results.
+
+For example, suppose you apply a threshold filter that specifies a range with a lower boundary of 2 and an upper boundary of 4. The following table shows the results:
+
++ Values within the specified range are left as is.  
   
++ Values beyond the specified range are replaced with the respective threshold values.  
+
 |Value|Indicator|Replace with|  
 |-----------|---------------|------------------|  
 |1|FALSE|2|  
@@ -126,18 +127,14 @@ manager: "jhubbard"
 |4|TRUE|4|  
 |5|FALSE|4|  
   
--   Values within the specified range are left as is.  
+### Examples of magnitude in a filter  
+
+The filter types **MagnitudeLessThan** and **MagnitudeGreaterthan** first evaluate the value against the specified level, and then provide a replacement value that varies depending on the sign of the original values.  
   
--   Values beyond the specified range are replaced with the respective threshold values.  
+For example, the following table shows the results when using a **MagnitudeLessThan** filter with values of 5 and -5.  
   
-### Examples of Magnitude Filters  
- The filter types **MagnitudeLessThan** and **MagnitudeGreaterthan** first evaluate the value against the specified level, and then provide a replacement value that varies depending on the sign of the original values.  
-  
- For example, the following table shows the results when using a **MagnitudeLessThan** filter with values of 5 and -5.  
-  
-||||  
-|-|-|-|  
 |Source value|Level|New value|  
+|-|-|-|  
 |3.07|5|5<br /><br /> Value is less than 5; therefore value is replaced with **Level**|  
 |3.07|*-5*|3.07<br /><br /> Value is not less than -5; therefore value is not replaced|  
 |-3.93|5|-5<br /><br /> Value is less than 5; therefore value is replaced with **Level** but sign of original value is preserved|  
@@ -145,8 +142,9 @@ manager: "jhubbard"
 |5.75|5|5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
 |-5.75|*-5*|-5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
   
-##  <a name="Notes"></a> Technical Notes  
- The **Threshold Filter** module uses the following methods to define threshold values, depending on the filter type:  
+##  <a name="Notes"></a> Technical notes
+
+The **Threshold Filter** module uses the following methods to define threshold values, depending on the filter type:  
   
 -   **LessThan**  
   
@@ -174,7 +172,7 @@ manager: "jhubbard"
   
      ![calculating threshold for less than filter complex](media/aml-threshold-greaterthancomplex.png "AML_threshold-greaterthancomplex")  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -191,7 +189,7 @@ manager: "jhubbard"
 |----------|----------|-----------------|  
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
   
-## See Also  
+## See also  
  [Filter](data-transformation-filter.md)   
  [Apply Filter](apply-filter.md)   
  [A-Z Module List](a-z-module-list.md)

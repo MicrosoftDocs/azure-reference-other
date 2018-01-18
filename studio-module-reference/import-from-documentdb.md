@@ -1,5 +1,6 @@
 ---
 title: "Import from DocumentDB (CosmosDB) | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -15,7 +16,7 @@ manager: "cgronlund"
 ---
 # Import from DocumentDB (CosmosDB)
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning to import data from Azure CosmosDB for use in a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data from Azure CosmosDB for use in a machine learning experiment.
   
 [Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction) includes the service formerly known as DocumentDB. CosmosDB supports NoSQL database storage, using a flexible data model. The advantages of using the SQL APIs in this data store for machine learning include fast and predictable performance, automatic scaling, global distribution, and rich query capabilities. 
 
@@ -23,7 +24,7 @@ Together with Azure SQL Database, this option lets you dynamically filter incomi
 
 Learn how it works: [Learn about CosmosDB](https://azure.microsoft.com/services/cosmos-db/)  
 
-**What's changed?**
+**What is new?**
 
 The service provides the same functionality as before, but has been renamed the "Azure Cosmos DB SQL API". See this article for information about the new name and other changes: [Azure Cosmos DB FAQ](https://docs.microsoft.com/azure/cosmos-db/faq)
 
@@ -35,11 +36,11 @@ Because the underlying API fully supports DocumentDB, you don't need to change a
 > [!NOTE]
 > The user interface in Azure Machine Learning Studio still uses the name DocumentDB in many places. Therefore, you may continue to see references to DocumentDB, even though the API has been incorporated into CosmosDB. 
 
-## How to Import Data from CosmosDB
+## How to use Import Data with CosmosDB
 
-We strongly recommend that you profile your data before importing, to make sure that the schema is as expected. The import process will scan some number of head rows to determine the schema, but later rows might contain extra columns, or data that cause errors.
+We strongly recommend that you profile your data before importing, to make sure that the schema is as expected. The import process scans some number of head rows to determine the schema, but later rows might contain extra columns, or data that cause errors.
 
-### Use the Data Import Wizard
+### Import data using the wizard
 
 The module features a new wizard to help you choose a storage option,  select from among existing subscriptions and accounts, and quickly configure all options.
 
@@ -56,7 +57,7 @@ The module features a new wizard to help you choose a storage option,  select fr
 
 The following steps describe how to manually configure the import source.
   
-1.  Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) group in the **experiment items** list in Azure Machine Learning Studio. 
+1.  Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category. 
   
 2.  For **Data source**, select **Azure DocumentDB**.
   
@@ -93,7 +94,7 @@ The following steps describe how to manually configure the import source.
 
 8. Select the **Use cached results** option if you want to reuse existing results.  
   
-     If you deselect this option, the data will be read from the source each time the experiment is run, regardless of whether the data is the same or not. 
+     If you deselect this option, the data is read from the source each time the experiment is run, regardless of whether the data is the same or not. 
        
      > [!NOTE]
      > Azure Machine Learning **cannot** compare the cached data against the data in your CosmosDB account. Hence, there is no way to perform incremental updates from Azure Machine Learning. 
@@ -106,19 +107,17 @@ The following steps describe how to manually configure the import source.
 
 After you have run the module or experiment, you can right-click the output of the module to visualize the results in tabular format.
 
-To capture a snapshot of this data in your Azure Machine Learning workspace as a dataset, you can right-click the module's output and select **Save As Dataset**. 
-
-However doing so will capture only the data available at the time of import. If the data is expected to change frequently, rerun **Import Data** as needed. 
+To capture a snapshot of this data in your Azure Machine Learning workspace as a dataset, you can right-click the module's output and select **Save As Dataset**. However, doing so captures only the data available at the time of import. If the data is expected to change frequently, rerun **Import Data** as needed. 
   
 ##  <a name="Examples"></a> Examples
  
-For a detailed walkthrough of how to use DocumentDB as a data source for machine learning, see this experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).  
+For a detailed walkthrough of how to use DocumentDB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).  
  
 + [Reading data from Azure DocumentDB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1) 
 
 This blog provides additional examples of parameterized queries on a DocumentDb store. [SQL Parameterization in DocumentDB](https://azure.microsoft.com/en-us/blog/announcing-sql-parameterization-in-documentdb/)
 
-##  <a name="TechnicalNotes"></a> Technical Notes  
+##  <a name="TechnicalNotes"></a> Technical notes
 
 This section contains advanced configuration options and answers to commonly asked questions.
 
@@ -157,13 +156,13 @@ If you don't have an existing document store, see these articles to get started.
 
 For samples of queries on a JSON data store, download the [DocumentDB SQL query cheat sheet](http://docs.microsoft.com/azure/documentdb/documentdb-sql-query-cheat-sheet).
 
-If you need to upload content into DocumentDB, we recommend the [DocumentDB migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data). It will validate, upload, and index your data. The tool supports multiple sources, including MongoDB, Amazon DynamoDB, HBase, SQL Server databases, and CSV files.
+If you need to upload content into DocumentDB, we recommend the [DocumentDB migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data). It validates, uploads, and indexes your data. The tool supports multiple sources, including MongoDB, Amazon DynamoDB, HBase, SQL Server databases, and CSV files.
   
 ### Using schema-less queries
   
 If the data is consistent and predictable, you can use straightforward SQL-like syntax, such as `SELECT * FROM <document collection>`.  This is called a *schema-less query* because you have not named the exact attributes to return. Such a query would return all the fields and all the rows from the specified collection. 
 
-However, not specifying a schema can lead to unexpected results or a run-time error if the documents have inconsistent schemas. This is because the [Import Data](import-data.md) module will attempt to infer the schema based on a predetermined number of rows as follows:
+However, not specifying a schema can lead to unexpected results or a run-time error if the documents have inconsistent schemas. This is because the [Import Data](import-data.md) module attempts to infer the schema based on a predetermined number of rows as follows:
 
 1. When no attributes are specified, the module scans the first row in the CosmosDB database.
 2. The module creates column names based on attributes, and guesses what the column data types should be based on the example row.
@@ -173,7 +172,7 @@ Therefore, we recommend that you always specify the attributes and values to ret
 
 `SELECT MyTable.Gender, MyTable.Age, MyTable.Name FROM <document collection>`  
 
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
 
 The following table includes only those parameters for the **Import Data** module that are applicable to the DocumentDB option.
   
@@ -202,8 +201,12 @@ The following table includes only those parameters for the **Import Data** modul
 |[Error 0002](errors/error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type to the type required by the target method.|  
 |[Error 0048](errors/error-0048.md)|An exception occurs when it is not possible to open a file.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+
+## See also  
 
  [Import Data](import-data.md)   
  [Export Data](export-data.md)   
