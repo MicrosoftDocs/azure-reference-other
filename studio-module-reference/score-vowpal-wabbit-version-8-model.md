@@ -1,7 +1,8 @@
 ---
 title: "Score Vowpal Wabbit Version 8 Model | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/21/2016
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,23 +12,25 @@ ms.assetid: 43d255dc-c03d-4dce-acc4-884e660210d9
 caps.latest.revision: 10
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Score Vowpal Wabbit Version 8 Model
 *Scores data using the Vowpal Wabbit machine learning system from the command line interface*  
   
  Category: [Text Analytics](text-analytics.md)  
   
-## Module Overview  
- You can use the **Score Vowpal Wabbit Version 8 Model** module to generate scores for a set of input data, using an existing trained Vowpal Wabbit model.  
-  
-> [!NOTE]
->  This module provides the latest version of the Vowpal Wabbit framework, version 8. Use this module to score data using a trained model saved in the VW version 8 format.  
->   
->  If you have existing models created using an earlier version, use these modules: [Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md), [Score Vowpal Wabbit 7-4 Model](score-vowpal-wabbit-version-7-4-model.md).  
-  
-## How to Use Score Vowpal Wabbit Model 8  
-  
+## Module overview  
+
+This article describes how to use the **Score Vowpal Wabbit Version 8 Model** module in Azure Machine Learning Studio, to generate scores for a set of input data, using an existing trained Vowpal Wabbit model.  
+
+This module provides the latest version of the Vowpal Wabbit framework, version 8. Use this module to score data using a trained model saved in the VW version 8 format.  
+
+If you have existing models created using an earlier version, use these modules: 
++ [Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md)
++ [Score Vowpal Wabbit 7-4 Model](score-vowpal-wabbit-version-7-4-model.md)
+
+## How to configure Score Vowpal Wabbit Model 8  
+
 1.  Add the **Score Vowpal Wabbit Version 8 Model** module to your experiment.  
   
 2.  Add a trained Vowpal Wabbit model and connect it to the left-hand input port. You can use a trained model created in the same experiment, or locate a saved model in the **Trained Models** group of Studio’s left navigation pane. However, the model must be available in Azure Machine Learning Studio; you cannot directly load a model from Azure storage.  
@@ -62,28 +65,44 @@ manager: "jhubbard"
   
 8.  Select the option, **Use cached results**, if you want to re-use results from a previous run, assuming the following conditions are met:  
   
-    -   A valid cache exists from a previous  run.  
+    - A valid cache exists from a previous run.
   
-    -   The input data and parameters settings of the module have not changed since the previous run.  
+    - The input data and parameters settings of the module have not changed since the previous run.  
   
-     Otherwise, this module will be executed each time the experiment runs.  
+    Otherwise, the import process is repeated each time the experiment runs.  
   
-9. Run the experiment, and right-click the output of the [Score Vowpal Wabbit Version 8 Model](score-vowpal-wabbit-version-8-model.md) module to visualize the results.  
-  
-     The output represents a prediction score, normalized from 0 to 1.  
-  
-## Examples  
- The following video provides a walkthrough of the training and scoring process for Vowpal Wabbit:  
+9. Run the experiment.
+
+### Results
+
+After training is complete:
+
++ To visualize the results, right-click the output of the [Score Vowpal Wabbit Version 8 Model](score-vowpal-wabbit-version-8-model.md) module. 
+
+The output indicates a prediction score normalized from 0 to 1.
+
+## Examples
+
+For examples of how Vowpal Wabbit can be used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+
++ [Vowpal Wabbit sample](https://gallery.cortanaintelligence.com/Collection/Vowpal-Wabbit-Samples-2)
+
+    This experiment demonstrates data preparation, training, and operationalization of a VW model.  
+
+The following video provides a walkthrough of the training and scoring process for Vowpal Wabbit:  
   
  [https://azure.microsoft.com/en-us/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/](https://azure.microsoft.com/en-us/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
   
-##  <a name="bkmk_TechnicalNotes"></a> Technical Notes  
- Vowpal Wabbit has many command-line options for choosing and tuning algorithms. A full discussion of these options is not possible here; we recommend that you view the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments).  
+##  <a name="bkmk_TechnicalNotes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Parameters
+
+Vowpal Wabbit has many command-line options for choosing and tuning algorithms. A full discussion of these options is not possible here; we recommend that you view the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments).  
   
- Note that some options are not supported in Azure Machine Learning Studio.  
-  
- **Not supported**  
-  
+The following parameters are not supported in Azure Machine Learning Studio.  
+
 -   The input/output options specified in [https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments)  
   
      These properties are already configured automatically by the module.  
@@ -91,10 +110,8 @@ manager: "jhubbard"
 -   Additionally, any option that generates multiple outputs or takes multiple inputs is disallowed. These include *`--cbt`*, *`--lda`*, and *`--wap`*.  
   
 -   Only supervised learning algorithms are supported. This disallows these options: *`–active`*, `--rank`, *`--search`* etc.  
-  
- **Supported**  
-  
- All arguments other than those described above are allowed.  
+
+All arguments other than those described above are allowed.
   
 ##  <a name="ExpectedInputs"></a> Expected Inputs  
   
@@ -118,16 +135,20 @@ manager: "jhubbard"
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset with the prediction results|  
   
-##  <a name="exceptions"></a> Exceptions  
-  
+##  <a name="exceptions"></a> Exceptions
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0001](errors/error-0001.md)|Exception occurs if one or more specified columns of data set couldn't be found.|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+
+## See also  
  [Text Analytics](text-analytics.md)   
  [Feature Hashing](feature-hashing.md)   
  [Named Entity Recognition](named-entity-recognition.md)   

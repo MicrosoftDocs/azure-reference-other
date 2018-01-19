@@ -1,7 +1,8 @@
 ---
 title: "Train Matchbox Recommender | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 09/21/2017
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,66 +12,69 @@ ms.assetid: fa4aa69d-2f1c-4ba4-ad5f-90ea3a515b4c
 caps.latest.revision: 22
 author: "jeannt"
 ms.author: "jeannt"
-manager: "cgronlun"
+manager: "cgronlund"
 ---
 # Train Matchbox Recommender
 *Trains a Bayesian recommender using the Matchbox algorithm*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
  
-This article describes how to use the **Train Matchbox Recommender** module in Azure Machine Learning Studio to train a recommendation model. The recommendation algorithm is based on the Matchbox model developed by [Microsoft Research](http://research.microsoft.com/projects/).   To download a paper that describes the algorithm in detail, click this link on the [Microsoft Research site](http://research.microsoft.com/pubs/79460/www09.pdf).  
+This article describes how to use the **Train Matchbox Recommender** module in Azure Machine Learning Studio, to train a recommendation model. 
 
- The **Train Matchbox Recommender** module reads a dataset of user-item-rating triples and, optionally, some user and item features. It returns a trained Matchbox recommender.  You can then use the trained model to generate recommendations, find related users, or find related items, by using the [Score Matchbox Recommender](score-matchbox-recommender.md) module.  
-  
+The recommendation algorithm in Azure Machine Learning is based on the **Matchbox** model, developed by [Microsoft Research](http://research.microsoft.com/projects/).   To download a paper that describes the algorithm in detail, click this link on the [Microsoft Research site](http://research.microsoft.com/pubs/79460/www09.pdf).  
 
+The **Train Matchbox Recommender** module reads a dataset of user-item-rating triples and, optionally, some user and item features. It returns a trained Matchbox recommender.  You can then use the trained model to generate recommendations, find related users, or find related items, by using the [Score Matchbox Recommender](score-matchbox-recommender.md) module.  
 
 > [!TIP]
 > Learn everything you need to know about the end-to-end experience of building a recommendation system in this tutorial from the .NET development team. Includes sample code and discussion of how to call Azure Machine Learning from an application.
 > 
 > [Building recommendation engine for .NET applications using Azure Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/)
   
-## About the Matchbox Recommender  
+## More about recommendation models and the Matchbox recommender  
  
- The main aim of a recommendation system is to recommend one or more *items* to *users* of the system. Examples of an item could be a movie, restaurant, book, or song. A user could be a person, group of persons, or other entity with item preferences.  
+The main aim of a recommendation system is to recommend one or more *items* to *users* of the system. Examples of an item could be a movie, restaurant, book, or song. A user could be a person, group of persons, or other entity with item preferences.  
   
- There are two principal approaches to recommender systems. The first is the **content-based** approach, which makes use of features for both users and items. Users may be described by properties such as age and gender, and items may be described by properties such as author and manufacturer. Typical examples of content-based recommendation systems can be found on social matchmaking sites. The second approach is **collaborative filtering**, which uses only identifiers of the users and the items and obtains implicit information about these entities from a (sparse) matrix of ratings given by the users to the items. We can learn about a user from the items they have rated and from other users who have rated the same items.  
+There are two principal approaches to recommender systems. 
+
++ The first is the **content-based** approach, which makes use of features for both users and items. Users may be described by properties such as age and gender, and items may be described by properties such as author and manufacturer. Typical examples of content-based recommendation systems can be found on social matchmaking sites. 
++ The second approach is **collaborative filtering**, which uses only identifiers of the users and the items and obtains implicit information about these entities from a (sparse) matrix of ratings given by the users to the items. We can learn about a user from the items they have rated and from other users who have rated the same items.  
   
- The Matchbox recommender combines collaborative filtering with a content-based approach. It is therefore considered a **hybrid recommender**. When a user is relatively new to the system, predictions are improved by making use of the feature information about the user, thus addressing the well-known "cold-start" problem. However, once you have collected a sufficient number of ratings from a particular user, it is possible to make fully personalized predictions for them based on their specific ratings rather than on their features alone. Hence, there is a smooth transition from content-based recommendations to recommendations based on collaborative filtering. Even if user or item features are not available, Matchbox will still work in its collaborative filtering mode.  
+The Matchbox recommender combines these approaches, using collaborative filtering with a content-based approach. It is therefore considered a **hybrid recommender**. 
+
+How this works: When a user is relatively new to the system, predictions are improved by making use of the feature information about the user, thus addressing the well-known "cold-start" problem. However, once you have collected a sufficient number of ratings from a particular user, it is possible to make fully personalized predictions for them based on their specific ratings rather than on their features alone. Hence, there is a smooth transition from content-based recommendations to recommendations based on collaborative filtering. Even if user or item features are not available, Matchbox will still work in its collaborative filtering mode.  
   
- More details on the Matchbox recommender and its underlying probabilistic algorithm can be found in the relevant research paper: [Matchbox: Large Scale Bayesian Recommendations Recommendations](http://research.microsoft.com/pubs/79460/www09.pdf).  In addition, the [Machine Learning Blog](http://blogs.technet.com/b/machinelearning/) has an article titled [Recommendations Everywhere](http://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx) that provides a high-level introduction to recommendation algorithms.  
+More details on the Matchbox recommender and its underlying probabilistic algorithm can be found in the relevant research paper: [Matchbox: Large Scale Bayesian Recommendations Recommendations](http://research.microsoft.com/pubs/79460/www09.pdf).  In addition, the [Machine Learning Blog](http://blogs.technet.com/b/machinelearning/) has an article titled [Recommendations Everywhere](http://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx) that provides a high-level introduction to recommendation algorithms.  
   
-## How to Configure Train Matchbox Recommender  
+## How to configure Train Matchbox Recommender  
+
+It is very important that the input data used for training have the correct format: **user-item-rating triples**.   
++ The first column must contain user identifiers.  
   
-1.  Prepare the data used for training, which should contain **user-item-rating triples**.  
++ The second column must contain item identifiers.  
   
-     If you are splitting your data to create training and testing datasets, be sure to use the **Recommender Split** option in the [Split Data](split-data.md) module.  
++ The third column contains the rating for the user-item pair.  
   
-     If you are adding new data, be sure that it contains the required columns.  
+    Rating values must be either numeric or categorical.  
   
-    -   The first column must contain user identifiers.  
+    During training, the rating values cannot all be the same. Moreover, if numeric, the difference between the minimum and the maximum rating values must be less than 100, and ideally not greater than 20.  
   
-    -   The second column must contain item identifiers.  
+The Restaurant ratings dataset provided in Azure Machine Learning Studio (click **Saved Datasets** and then **Samples**) demonstrates the expected format:  
   
-    -   The third column contains the rating for the user-item pair.  
+|userID|placeID|rating|  
+|------------|-------------|------------|  
+|U1077|135085|2|  
+|U1077|135038|2|  
   
-         Rating values must be either numeric or categorical.  
-  
-         During training, the rating values cannot all be the same. Moreover, if numeric, the difference between the minimum and the maximum rating values must be less than 100, and ideally not greater than 20.  
-  
-     The Restaurant ratings dataset provided in Azure Machine Learning Studio (click **Saved Datasets** and then **Samples**) demonstrates the expected format:  
-  
-    |userID|placeID|rating|  
-    |------------|-------------|------------|  
-    |U1077|135085|2|  
-    |U1077|135038|2|  
-  
-     From this sample, you can see that a single user has rated two separate restaurants. To get more information about the user, you can join this dataset with the Restaurant customer data dataset, using the userID column as key. To get more information about the restaurants, join the Restaurant feature data dataset on the placeID column.  
-  
+From this sample, you can see that a single user has rated two separate restaurants. To get more information about the user, you can join this dataset with the Restaurant customer data dataset, using the userID column as key. To get more information about the restaurants, join the Restaurant feature data dataset on the placeID column.  
+
+To divide your data into training and testing datasets, use the **Recommender Split** option in the [Split Data](split-data.md) module.
+
+
 2.  Add the [Train Matchbox Recommender](train-matchbox-recommender.md) module to your experiment and connect it to the training data.  
   
-3.  Additionally, the **Train Matchbox Recommender** module can use *user features* and/or  *item features* as inputs, if available.  
+3.  Additionally, the **Train Matchbox Recommender** module can use *user features* and/or *item features* as inputs, if available.  
   
     -   **User features dataset**:   You can connect a dataset to the second input that describes users, if available.  
   
