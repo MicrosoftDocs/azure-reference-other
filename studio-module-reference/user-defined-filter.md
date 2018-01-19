@@ -23,24 +23,42 @@ manager: "cgronlund"
 
 This article describes how to use the **User-Defined Filter** module in Azure Machine Learning Studio, to define a custom filter by using a finite impulse response (FIR) filter or an infinite impulse response (IIR) filter with coefficients that you specify.
 
-This module is particularly useful for applying a set of previously derived filter coefficients to your data.
-
-> [!TIP]
->  A filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).
+A filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md). This module is particularly useful for applying a set of previously derived filter coefficients to your data.
 
 After you have defined a filter that meets your needs, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module.
-  
+
+> [!TIP]
+>  Need to filter data from a dataset or remove missing values? Use these modules instead:  
+>   
+>  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
+
 ## How to configure User-Defined Filter
-  
-1. Add the **User-Defined Filter* module to your experiment in Studio.
+
+1. Add the **User-Defined Filter** module to your experiment in Studio. You can find this module under **Data Transformation**, in the **Filter** category.
 
 2. In the **Properties** pane, choose a type of filter: FIR filter, or IIR filter.
   
-3.  Provide the coefficients to apply in the filter. The requirements for the coefficients  differ depending on whether you choose a FIR filter or an IIR filter.
-  
+3.  Provide the coefficients to apply in the filter. The requirements for the coefficients differ depending on whether you choose a FIR filter or an IIR filter.
+
     - For a FIR filter, you specify a vector of feed-forward coefficients. The length of the vector determines the filter's order. A FIR filter is effectively a moving average, so the configuration values apply a moving average to filter a data sequence.
-  
-    - For an IIR filter, you apply custom feed-forward and feed-backward coefficients. 
+
+    - For an IIR filter, you apply custom feed-forward and feed-backward coefficients. See the [Examples](#bkmk_Examples) section for some tips.
+
+3.  Connect the filter to [Apply Filter](apply-filter.md), and connect a dataset.
+
+     Use the column selector to specify which columns of the dataset to which the filter should be applied. By default, the [Apply Filter](apply-filter.md) module will use the filter for all selected numeric columns.
+
+4.  Run the experiment.
+
+     The specified transformations are applied to the selected numeric columns only when you run the experiment using [Apply Filter](apply-filter.md).
+
+##  <a name="bkmk_Examples"></a> Examples
+
+For more examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+
+- [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types. The example uses an engineered waveform dataset to more easily illustrate the effects of the different filters.  
 
 ###  <a name="SubSection1a"></a> FIR filter example: Exponential weighted moving average
 
@@ -70,7 +88,7 @@ In this case, the digital notch filter can be represented by the following formu
 
  ![custom notch filter example 1](media/aml-digitalnotchfilter.PNG "aml_digitalnotchfilter")  
   
- This formula ssumes:  
+ This formula assumes:  
   
  ![custom notch filter](media/aml-usernotchfilter4.png)  
   
@@ -97,12 +115,6 @@ From this, you can get the following feed-forward (b) and feed-backward (a) coef
  b= `1.9390624, -2.7422484, 1.9390624`  
   
  a= `1, -1.3711242, 0.9390624`  
-  
-##  <a name="bkmk_Examples"></a> Examples  
-
-For more examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
-
-- [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types. The example uses an engineered waveform dataset to more easily illustrate the effects of the different filters.  
 
 ##  <a name="parameters"></a> Module parameters
 
@@ -113,12 +125,12 @@ For more examples of how filters are used in machine learning, see the [Azure AI
 |Backward|any|String|"1.0"|Type a series of feed-backward filter coefficients|  
   
 ##  <a name="Outputs"></a> Output
-  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
-  
-##  <a name="exceptions"></a> Exception
+
+##  <a name="exceptions"></a> Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

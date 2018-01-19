@@ -66,7 +66,7 @@ However, as a shortcut, you can use the [Convert to SVMLight](convert-to-svmligh
 
 The Vowpal Wabbit data format has the advantage that it does not require a columnar format, which saves space when dealing with sparse data. For more information about this format, see the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Input-format).  
 
-### <a name=bkmk_NewModel"></a> Create and train a Vowpal Wabbit model
+### <a name="bkmk_NewModel"></a> Create and train a Vowpal Wabbit model
 
 1.  Add the **Train Vowpal Wabbit Version 7-4** module to your experiment.  
 
@@ -80,7 +80,7 @@ The Vowpal Wabbit data format has the advantage that it does not require a colum
 
 3. For **Azure container name**, type the name of a single container in the specified Azure storage account where the model training data is stored. Do not type the account name or any protocol prefix.   
    
-    For example, if the full container path and name is `https://myaccount.blob.core.windows.net/vwmodels`, you should type just `vwmodels`.  For more information about container names, see [Naming and Referencing Containers, Blobs, and Metadata](https://docs.microsoft.com/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).    
+    For example, if the full container path and name is `https://myaccount.blob.core.windows.net/vwmodels`, you should type just `vwmodels`.  For more information about container names, see [Naming and Referencing Containers, Blobs, and Metadata](https://docs.microsoft.com/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
 
 4.  In the **VW arguments** text box, type the command-line arguments for the Vowpal Wabbit executable.  
   

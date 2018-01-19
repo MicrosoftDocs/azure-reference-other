@@ -90,13 +90,13 @@ For examples of how Vowpal Wabbit can be used in machine learning, see the [Azur
 
 The following video provides a walkthrough of the training and scoring process for Vowpal Wabbit:  
 
-+ [https://azure.microsoft.com/en-us/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/](https://azure.microsoft.com/en-us/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
++ [Text analytics and Vowpal Wabbit in Azure ML Studio/](https://azure.microsoft.com/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
 
 ##  <a name="bkmk_TechnicalNotes"></a> Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Parameters
+### Supported and unsupported parameters
 
 Vowpal Wabbit has many command-line options for choosing and tuning algorithms. A full discussion of these options is not possible here; we recommend that you view the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments).
 
