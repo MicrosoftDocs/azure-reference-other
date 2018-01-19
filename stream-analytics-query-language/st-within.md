@@ -1,20 +1,21 @@
 ---
 title: "ST_WITHIN | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-02-01"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns 1 if a geography is within another, if not it will return 0. "
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 05edb3f8-64a6-44cb-8e43-f0a47222f2aa
 caps.latest.revision: 2
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 02/01/2017
+ms.author: sngun
 ---
 # ST_WITHIN
   Returns 1 if a geography is within another, if not it will return 0.  

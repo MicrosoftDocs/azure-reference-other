@@ -1,7 +1,8 @@
 ---
 title: "Assign Data to Clusters | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -18,16 +19,16 @@ manager: "cgronlund"
   
  Category: [Score](machine-learning-score.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
 
 This article describes how to use the [Assign Data to Clusters](assign-data-to-clusters.md) module in Azure Machine Learning Studio to generate predictions using a clustering model that was trained using the K-Means clustering algorithm.
 
 The module returns a dataset that contains the probable assignments for each new data point. It also creates a PCA (Principal Component Analysis) graph to help you visualize the dimensionality of the clusters.
 
 > [!WARNING]
-> This module replaces the [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md) module, which is still available for support of older experiments.
+> This module replaces the [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md) module, which is available only for support of older experiments.
 
-## How to Use [Assign Data to Clusters](assign-data-to-clusters.md)  
+## How to use Assign Data to Clusters
   
 1.  In Azure Machine Learning Studio, locate a previously trained clustering model. You can create and train a clustering model by using either of these methods:  
   
@@ -39,14 +40,12 @@ The module returns a dataset that contains the probable assignments for each new
   
 2.  Attach the trained model to the left input port of [Assign Data to Clusters](assign-data-to-clusters.md).  
   
-3.  Attach a new dataset as input.
-  
-     In this dataset, labels are optional. Generally, clustering is an unsupervised learning method so it is not expected that you will know categories in advance.
+3.  Attach a new dataset as input. In this dataset, labels are optional. Generally, clustering is an unsupervised learning method so it is not expected that you will know categories in advance.
 
     However, the input columns must be the same as the columns that were used in training the clustering model, or an error occurs.
 
      > [!TIP]
-     > If you want to reduce the number of columns output when creating cluster predictions, use [Select Columns in Dataset](select-columns-in-dataset.md) to select a subset of the columns. 
+     > To reduce the number of columns output from cluster predictions, use [Select Columns in Dataset](select-columns-in-dataset.md), and select a subset of the columns. 
     
 4.  Leave the option **Check for Append or Uncheck for Result Only** selected if you want the results to contain the full input dataset, together with a column indicating the results (cluster assignments).
   
@@ -62,28 +61,28 @@ The [Assign Data to Clusters](assign-data-to-clusters.md) module returns two typ
 
     This command displays a Principal Component Analysis (PCA) graph that maps the collection of values in each cluster to two component axes.
     
-    + The first component axis is the combined set of features that captures the most variance in the model, and is plotted on the x-axis (**Principal Component 1**). 
-    + The next component axis represents some combined set of features  that is orthogonal to the first component and that adds the next most information to the chart, plotted on the y-axis (**Principal Component 2**). 
-    
-    From this graph, you can see the maximum separation that can be attained between the clusters, and how all clusters are distributed along the axes that represent the principal distinguishing components.
+    + The first component axis is the combined set of features that captures the most variance in the model. It  is plotted on the x-axis (**Principal Component 1**). 
+    + The next component axis represents some combined set of features  that is orthogonal to the first component and that adds the next most information to the chart. It is plotted on the y-axis (**Principal Component 2**). 
+
+    From the graph, you can see the separation between the clusters, and how the clusters are distributed along the axes that represent the principal components.
   
-+ To view the table of results for each case in the input data, you can attach the [Convert to Dataset](convert-to-dataset.md) module to view the results in Machine Learning Studio.  
++ To view the table of results for each case in the input data, attach the [Convert to Dataset](convert-to-dataset.md) module, and visualize the results in  Studio.  
   
-    This results dataset contains the *cluster assignments* for each case, and a distance metric that gives you some indication of how close this particular case is to the center of the cluster.  
+    This dataset contains the *cluster assignments* for each case, and a distance metric that gives you some indication of how close this particular case is to the center of the cluster.  
   
     |Output column name|Description|  
     |------------------------|-----------------|  
     |Assignments|A 0-based index that indicates which cluster the data point was assigned to.|  
     |DistancesToClusterCenter no. *n*|For each data point, this value indicates the distance from the data point to the center of the assigned cluster, and the distance to other clusters.<br /><br /> The metric used to calculate distance is determined when you configure the K-means clustering model.|  
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ICluster interface](icluster-interface.md)|Trained clustering model|  
 |Dataset|[Data Table](data-table.md)|Input data source|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 ###  
   
@@ -104,7 +103,6 @@ The [Assign Data to Clusters](assign-data-to-clusters.md) module returns two typ
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
   
-## See Also  
+## See also  
  [K-Means Clustering](k-means-clustering.md)   
  [Score](machine-learning-score.md)   
- [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md)

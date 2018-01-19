@@ -1,19 +1,21 @@
 ---
 title: "TIMESTAMP BY (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-11-16"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "The TIMESTAMP BY clause allows specifying custom timestamp values."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 89418f9a-c874-4f25-aa2d-ae066c460ce2
 caps.latest.revision: 20
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 11/16/2017
+ms.author: sngun
 ---
 # TIMESTAMP BY (Azure Stream Analytics)
 All data stream events have a timestamp associated with them. By default, events from Event Hub and IoT Hub are timestamped based on when the event was received by the Event Hub or IoT Hub; events from Blob storage are timestamped by the blob’s last modified time. The timestamp of an event doesn’t change if you re-start or re-run your job. 

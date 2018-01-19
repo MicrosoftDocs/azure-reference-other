@@ -1,7 +1,8 @@
 ---
-title: "Extract Key Phrases from Text | Microsoft Docs"
+title: "Extract Key Phrases from Text | Microsoft Azure Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 02/23/2017
+ms.date: 01/09/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,21 +12,23 @@ ms.assetid: c08afa36-58ac-4a2b-bc59-f2a16bb4c2f3
 caps.latest.revision: 10
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Extract Key Phrases from Text
 *Extracts key phrases from given text*  
   
  Category: [Text Analytics](text-analytics.md)
 
-  
-## Module Overview  
+## Module overview
 
- Use the **Extract Key Phrases from Text** module to pre-process a text column and extract meaningful phrases. A phrase can be either a single meaningful word, or a compound.  The extracted phrase or phrases are potentially meaningful in the context of the sentence for various reasons:
- + The phrase captures the topic of the sentence
- + The phrase contains a combination of modifier and noun that indicates sentiment
+This article explains how to use the **Extract Key Phrases from Text** module in Azure Machine Learning Studio, to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.
  
- For example, assume the sentence analyzed is: "It was a wonderful hotel to stay at, with unique decor and friendly staff." 
+This module is a wrapper for natural language processing APIs for key-phrase extraction. The phrases are analyzed as potentially meaningful in the context of the sentence for various reasons:
+
++ The phrase captures the topic of the sentence.
++ The phrase contains a combination of modifier and noun that indicates sentiment.
+ 
+For example, assume the sentence analyzed is: "It was a wonderful hotel to stay at, with unique decor and friendly staff." 
  
 The **Extract Key Phrases from Text** module might return these key phrases:
   
@@ -33,47 +36,67 @@ The **Extract Key Phrases from Text** module might return these key phrases:
 - friendly staff
 - unique decor
 
-## How to Configure Key-Phrase Extraction  
+## How to configure Extract Key Phrases from Text
 
 To extract key phrases, you must connect a dataset that has a column of text.  
   
-1. Add the **Extract Key Phrases from Text** module to your experiment, and connect a dataset that has at least one full-text column.  
+1. Add the **Extract Key Phrases from Text** module to your experiment in Azure Machine Learning Studio. Then, connect a dataset that has at least one full-text column.  
   
-2. Use the Column Selector to select the column from which to extract key phrases.
+2. Use the Column Selector to select a column of type string, from which to extract key phrases.
 
-3. For **Language**, select a language to use when analyzing phrases. If you specify the language, only phrases in the target language will be output.
+3. For **Language**, select a language to use when analyzing phrases. If you specify a language, only phrases in the target language will be output.
 
 4. If the text column contains phrases in multiple languages, choose the option, **Language identified in columns**. A new column selector is displayed that lets you select a column in your data set that contains a language identifier. The language identifier can either be the language name or the Iso6391 culture identifier. For example, either "English" or "en" are acceptable.
 
     > [!TIP] 
     > Before running **Extract Key Phrases from Text**, use the [Detect Languages](detect-languages.md) module to identify the language in each row and generate the identifier for you.
+    > An error is raised if the language identifier column contains any languages not supported by **Extract Key Phrases from Text**. 
 
+### Results
+
+The output of the module is a dataset containing a column of comma-separated key phrases. 
+
+For example, the following example results are for an input dataset containing reviews in multiple languages: 
+
+|Key Phrases|
+|-----|
+|novel,nuclear submarine,good book,adventure story,avalanche of events,good characters|
+|primer misterio,personajes,fan,aventura,isla|
+
++ All output phrases are contained in a single column; no other columns are passed through, and an identifier is not added. However, if you want to align the output phrases with the source text, you can recombine the output phrases with the input by using the [Add Columns](add-columns.md) module.
+
++ The output of key-phrase extraction does not flag the language of individual phrases.
+
++ If a language is included that is not supported by the **Extract Key Phrases** module, an error is raised (0039). To avoid errors, be sure to filter out input text that has an incompatible language identifier. 
+
+    If there are very few rows of other languages, you can also avoid the error by omitting the language identifier, and analyzing all text using a single language selection. However, when you do so, results are very poor, because entire sentences in the other languages might be output as a single key phrase.
+
+## Examples
+
+The following example demonstrates how to use this module to extract key phrases and then build a word cloud from the phrases: [Extract Key Phrases and Show Word Cloud](https://gallery.cortanaintelligence.com/Experiment/Extract-Key-Phrases-and-Show-Word-Cloud-1)
+
+See the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) for more examples of text processing using Azure Machine Learning.
   
-## Examples  
-
-The following example demonstrates how to use this module to extract key phrases and then build a word cloud from them: [Extract Key Phrases and Show Word Cloud](https://gallery.cortanaintelligence.com/Experiment/Extract-Key-Phrases-and-Show-Word-Cloud-1)
-
-Please see the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) for more examples of text processing using Azure Machine Learning.   
-  
-## Technical Notes  
+## Technical notes
 
 This module currently supports the following languages:
+
 + Dutch
 + English 
 + French 
 + German
 + Italian
 + Spanish   
+
+For additional languages, consider using the [Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/) in Azure Cognitive Services. For more information, see [How to extract key phrases in Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction)
   
-Support for additional languages will be added in future.  
-  
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset |[Data Table](data-table.md) |The table containing the text to be processed.|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-----------------|-------------|  
@@ -96,7 +119,11 @@ Support for additional languages will be added in future.
 |[Error 0016](errors/error-0016.md)|Exception occurs if input datasets passed to the module should have compatible column types but do not.|  
 |[Error 0008](errors/error-0008.md)|Exception occurs if parameter is not in range.|
 
-## See Also  
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+
+## See also  
 
  [Text Analytics](text-analytics.md)   
  [A-Z Module List](a-z-module-list.md)   

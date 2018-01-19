@@ -1,7 +1,8 @@
 ---
 title: "Data Transformation - Manipulation | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 10/05/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,17 +12,18 @@ ms.assetid: 92b32033-f75f-4854-ac8f-9110b3fe7e09
 caps.latest.revision: 17
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Data Transformation - Manipulation
+
 This article describes the modules in Azure Machine Learning Studio that are provided for basic data manipulation.  While Studio supports other tasks that are very specific to machine learning, such as normalization or feature selection, the modules in this group are intended for more general tasks. 
 
 > [!TIP]
 > You can now use Azure Machine Learning Workbench to perform more sophisticated data cleanup and preparations tasks, using "learn by example" functions. See [this blog](https://blogs.technet.microsoft.com/machinelearning/2017/09/25/by-example-transformations-in-the-azure-machine-learning-workbench/) from the Machine Learning team for examples.
    
-## Data Manipulation Tasks  
+## Data manipulation tasks
  
- The modules in this group are intended to support core data management tasks that might need to be performed in Studio, such as:  
+The modules in this group are intended to support core data management tasks that might need to be performed in Studio, such as:  
   
 -   Combining two datasets, either by using joins, or by merging columns or rows
   
@@ -31,7 +33,7 @@ This article describes the modules in Azure Machine Learning Studio that are pro
   
 -   Checking for missing values and replacing them with appropriate values   
   
-### Related Tasks
+### Related tasks
 
 + To perform sampling or divide a dataset into trainign and testing sets, see [Sample and Split](data-transformation-sample-and-split.md).
 
@@ -41,17 +43,15 @@ This article describes the modules in Azure Machine Learning Studio that are pro
   
 ## Examples  
 
-For examples of how to work with complex data in machine learning experiments, see these samples in the [Model Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/):  
-  
--   The [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733) sample demonstrates key tools and processes.  
-  
--   The [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726) sample illustrates how to partition datasets and apply special processing to each partition.  
-  
- For additional information about the process of preparing data for predictive analytics, see these resources:  
-  
-  
-##  <a name="modules"></a> List of Modules  
- The Data Transformation/Manipulation category includes the following modules:  
+For examples of how to work with complex data in machine learning experiments, see these samples in the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/):  
+
+- [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): Demonstrates key tools and processes.
+
+- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Illustrates how to partition datasets and apply special processing to each partition.  
+ 
+##  <a name="modules"></a> Modules in this category
+
+The **Data Transformation/Manipulation** category includes the following modules:  
   
 |Module|Description|  
 |------------|-----------------|  
@@ -68,7 +68,7 @@ For examples of how to work with complex data in machine learning experiments, s
 |[Select Columns Transform](select-columns-transform.md)|Creates a transformation that selects the same subset of column as in the given dataset|  
 |[SMOTE](smote.md)|Increases the number of low incidence examples in a dataset using synthetic minority oversampling|  
   
-## See Also  
+## See also  
  [Data Transformation](data-transformation.md)   
  [Module Categories and Descriptions](machine-learning-module-descriptions.md)   
  [A-Z Module List](a-z-module-list.md)

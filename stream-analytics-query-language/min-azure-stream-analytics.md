@@ -1,20 +1,21 @@
 ---
 title: "MIN (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns the minimum value in the expression."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 0480d0eb-babe-4356-a5c0-93001b51744c
 caps.latest.revision: 6
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # MIN (Azure Stream Analytics)
   Returns the minimum value in the expression.  

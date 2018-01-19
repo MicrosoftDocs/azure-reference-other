@@ -1080,7 +1080,7 @@ USING Outputters.Csv();
 ```
         
 <a name="comparingDateTimes">**Comparing DateTimes**</a>   
-See also, [DateTime.Compare Method (DateTime, DateTime)](https://msdn.microsoft.com/ibrary/system.datetime.compare(v=vs.110).aspx) and [DateTime.CompareTo Method](https://msdn.microsoft.com/library/system.datetime.compareto(v=vs.110).aspx).
+See also, [DateTime.Compare Method (DateTime, DateTime)](https://msdn.microsoft.com/library/system.datetime.compare(v=vs.110).aspx) and [DateTime.CompareTo Method](https://msdn.microsoft.com/library/system.datetime.compareto(v=vs.110).aspx).
 ```
 @someDates = 
     SELECT * FROM 

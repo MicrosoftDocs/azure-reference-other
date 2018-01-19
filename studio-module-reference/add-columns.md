@@ -1,7 +1,8 @@
 ---
 title: "Add Columns | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 07/06/2016
+ms.date: 01/11/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +12,7 @@ ms.assetid: 5714a225-befd-438a-9bb5-f6fdc50a4efb
 caps.latest.revision: 19
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Add Columns
 *Adds a set of columns from one dataset to another*  
@@ -19,12 +20,14 @@ manager: "jhubbard"
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
   
 ##  <a name="Remarks"></a> Module Overview  
- You can use the [Add Columns](add-columns.md) module to concatenate two datasets. You combine all columns from the two datasets that you specify as inputs to create a single dataset. If you need to concatenate more than two datasets, use several instances of **Add Columns**.  
+
+This article describes how to use the [Add Columns](add-columns.md) module in Azure Machine Learning Studio, to concatenate two datasets. 
+
+You combine all columns from the two datasets that you specify as inputs to create a single dataset. If you need to concatenate more than two datasets, use several instances of **Add Columns**.  
   
-> [!TIP]
->  When combining two datasets that contain a different number of rows, use the [Join Data](join-data.md) module, which supports outer joins on a common key column.  
+When combining two datasets that contain a different number of rows, we recommend using the [Join Data](join-data.md) module, which supports outer joins on a common key column.
   
-## How to Configure Add Columns  
+## How to configure Add Columns  
   
 1.  Add the **Add Columns** module to your experiment.  
   
@@ -36,21 +39,28 @@ manager: "jhubbard"
   
 3.  Run the experiment.  
   
-     You can right-click the output of **Add Columns** and select **View Results** to see the first rows of the new dataset, or you can select **Save as Dataset** to save and name the concatenated dataset.  
+
+### Results
+
+After the experiment has run:
+
++ To see the first rows of the new dataset, right-click the output of **Add Columns** and select **Visualize**.
++ To save and name the concatenated dataset, right-click the output and select **Save as Dataset** .  
   
-    -   The number of columns in the new dataset equals the sum of the columns of both input datasets.  
+The number of columns in the new dataset equals the sum of the columns of both input datasets.  
   
-    -   If there are two columns with the same name in the input datasets, a numeric suffix is added to the name of the column from the dataset used in the right input column. For example, if there are two instances of a column named **TargetOutcome**, the right column would be renamed **TargetOutcome (1)**.  
-  
+If there are two columns with the same name in the input datasets, a numeric suffix is added to the name of the column from the dataset used in the right input column. For example, if there are two instances of a column named **TargetOutcome**, the right column would be renamed **TargetOutcome (1)**.  
+
 ## Examples  
- For examples of how **Add Columns** is used in an experiment, see these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
-  
--   In the [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941) sample, a column that contains labels is combined with a feature dataset.  
-  
--   In the [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726) sample, datasets that contain features are cleaned and then combined by using [Add Rows](add-rows.md),  **Add Columns**, and [Join Data](join-data.md).  
-  
-##  <a name="ExpectedInputs"></a> Expected Inputs  
-  
+
+For examples of how **Add Columns** is used in an experiment, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+
+- [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): A column that contains labels is combined with a feature dataset.  
+
+- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Datasets that contain features are cleaned and then combined by using [Add Rows](add-rows.md),  **Add Columns**, and [Join Data](join-data.md).  
+
+##  <a name="ExpectedInputs"></a> Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Left dataset|[Data Table](data-table.md)|Left dataset|  
@@ -63,14 +73,17 @@ manager: "jhubbard"
 |Combined dataset|[Data Table](data-table.md)|Combined dataset|  
   
 ##  <a name="exceptions"></a> Exceptions  
- For a list of all exceptions, see [Module Error Codes](machine-learning-module-error-codes.md).  
-  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|An exception occurs if one or more input datasets is null or empty.|  
 |[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns has a type that is unsupported by the current module.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+
+## See also  
  [Manipulation](data-transformation-manipulation.md)   
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)

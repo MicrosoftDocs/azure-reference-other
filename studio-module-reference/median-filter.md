@@ -12,7 +12,7 @@ ms.assetid: a7974d98-616d-4a78-8966-cad384b41886
 caps.latest.revision: 19
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Median Filter
 *Creates a median filter used to smooth data for trend analysis*  
@@ -21,7 +21,7 @@ manager: "jhubbard"
   
 ## Module overview  
  
-This artile describes how to use the **Median Filter** module in Azure Machine Learning Studio, to define a *median filter* for applying to a series of values that represent a digital input signal or image.  
+This article describes how to use the **Median Filter** module in Azure Machine Learning Studio, to define a *median filter* for applying to a series of values that represent a digital input signal or image.  
 
 Median filters are widely used in image recognition to reduce noise so that features can more easily be detected.  
 
@@ -43,12 +43,12 @@ After you have defined a filter transformation that meets your needs by using th
   
 2.  For **Length**, type an integer value that defines the total size of the window across which the filter is applied. This is also called the filter *mask*.  
   
-     The value must be an odd, positive-valued integer. If you specify an even number, the mask size is reduced by one.  
+     The value should be an odd, positive-valued integer. If you specify an even number, the mask size is reduced by one. 
   
-     By default the mask begins at the current value and extends **forward** for the specified number of units. In other words, it creates a *one-sided average*.  
+     By default the mask begins at the current value and creates a window centered on the current value.  
   
-     For example, if you type 20, the median value is computed across a sliding window consisting of 20 values beginning with the current value.  
-  
+     For example, if you type 5 as the **Length** or window size, the median value is computed across a sliding window consisting of 5 values centered on the current value. If you type 4, the mask is reduced to 3 values, centered on the index value.
+
 3.  Connect the filter to [Apply Filter](apply-filter.md), and connect a dataset.  
   
      Use the column selector to specify which columns of the dataset to which the filter should be applied. By default, the [Apply Filter](apply-filter.md) module will use the filter for all selected numeric columns.  
@@ -75,15 +75,13 @@ Each entry in the output signal is equal to the median of the entries in a subse
   
 If you provide this method with an even-valued mask size, it is reduced by one. For example, given m=2q+1, the filter is defined as:  
   
- yi =median[{xi-q,…, xi+q}]  
+If you provide this method with an even-valued mask size, it is reduced by one. For example, given `m=2q+1`, the filter is defined as:  `yi =median[{xi-q,…, xi+q}]`
   
- Values beyond the borders of the input signal are assumed to equal the value at the border:  
-  
+Values beyond the borders of the input signal are assumed to equal the value at the border. That is, if _n_ is the length of the input signal: 
+
  ![values beyond borders of median filter](media/aml-medianfilterborder.png "AML_MedianFilterBorder")  
-  
- where n is the length of the input signal.  
-  
- For more information about median filters, this Wikipedia article provides a good explanation of the theory and application:  
+
+For more information about median filters, this Wikipedia article provides a good explanation of the theory and application:  
   
  [Wikipedia: Median Filters](http://en.wikipedia.org/wiki/Median_filter)  
   

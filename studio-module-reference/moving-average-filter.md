@@ -12,7 +12,7 @@ ms.assetid: 1889e4ca-7bf7-494d-b2cc-da9940468b9e
 caps.latest.revision: 21
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Moving Average Filter
 *Creates a moving average filter used to smooth data for trend analysis*  
@@ -58,7 +58,7 @@ In an *exponential moving average*, the averages consist of a *head* and a *tail
   
 3.  For **Type**, choose the type of moving average to apply.  
   
-     Azure Machine Learning Studio supports the following types of moving average calculations:  
+    Azure Machine Learning Studio supports the following types of moving average calculations:  
   
      **Simple**: A simple moving average (SMA) is calculated as an unweighted rolling mean.  
   

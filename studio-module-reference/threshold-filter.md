@@ -12,7 +12,7 @@ ms.assetid: 11fbc6ba-3a9f-4492-b789-8ef8a9320306
 caps.latest.revision: 19
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Threshold Filter
 *Creates a threshold filter that constrains values*  
@@ -69,9 +69,9 @@ Alternatively, if you select the **Indicator** option, instead of returning the 
   
     -   If you select the **GreaterThan** filter, the number you specify defines the greatest value that can be passed through without replacement.  
   
-    -   If you select the **MagnitudeLessThan** filter, type a single positive or negative number for **Level**.  Any value that is less than that value will be replaced with the level value.  
+    -   If you select the **MagnitudeLessThan** filter, type a single positive or negative number for **Level**.  Any value that is less than that value is replaced with the level value.  
   
-    -   If you select the **MagnitudeGreaterThan** filter, type a single positive or negative number for **Level**.  Any value that is greater than that value will be replaced with the level value.  
+    -   If you select the **MagnitudeGreaterThan** filter, type a single positive or negative number for **Level**.  Any value that is greater than that value is replaced with the level value.  
   
     -   If you select the filters, **InRange** or**OutOfRange**, specify the upper or lower bounds. For **Lower boundary**, type the lowest number to include in the range. For **Upper boundary**, type the highest number to include in the range.
   
@@ -105,9 +105,9 @@ The following example assumes that you apply a threshold filter that specifies a
 |4|TRUE|4|  
 |5|FALSE|4|  
   
--   Values within the specified range are left as is.  
-  
--   Values beyond the specified range are replaced with the respective threshold values.  
+### Examples of magnitude in a filter  
+
+The filter types **MagnitudeLessThan** and **MagnitudeGreaterthan** first evaluate the value against the specified level, and then provide a replacement value that varies depending on the sign of the original values.  
   
 ### Examples of magnitude filters
 

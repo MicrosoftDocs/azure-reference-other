@@ -1,7 +1,8 @@
 ---
 title: "Compute Linear Correlation | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 08/14/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,30 +12,30 @@ ms.assetid: 72a2eeb2-73fe-4384-8a8b-5478aba2ffb3
 caps.latest.revision: 20
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Compute Linear Correlation
 *Calculates the linear correlation between column values in a dataset*  
   
  Category: [Statistical Functions](statistical-functions.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview
 
- You can use the [Compute Linear Correlation](compute-linear-correlation.md) module to compute a set of Pearson correlation coefficients for each possible pair of variables in the input dataset.  
+This article describes how to use the [Compute Linear Correlation](compute-linear-correlation.md) module in Azure Machine Learning Studio, to compute a set of Pearson correlation coefficients for each possible pair of variables in the input dataset.  
   
- The Pearson correlation coefficient, sometimes called Pearson’s R test, is a statistical value that measures the linear relationship between two variables. By   examining the coefficient values, you can infer something about the strength of the relationship between the two variables, and whether they are positively correlated or negatively correlated.  
+The Pearson correlation coefficient, sometimes called Pearson’s R test, is a statistical value that measures the linear relationship between two variables. By examining the coefficient values, you can infer something about the strength of the relationship between the two variables, and whether they are positively correlated or negatively correlated.
+
+## How to configure Linear Correlation
+
+Before calculating the correlation coefficient, there are some prerequisites, such as cleaning your data and verifying that the relationship between the variables is appropriate for this module. You must also remove or impute missing values. 
 
 The following restrictions apply when using this module:  
   
 -   The [Compute Linear Correlation](compute-linear-correlation.md) module can process only numeric values. All other types of values, including missing values, non-numeric values, and categorical values, are treated as NaNs.      
 
--   Pearson’s correlation is calculated for all numeric columns in the dataset that are passed as input.    
+-   Pearson’s correlation is calculated for all numeric columns in the dataset that are passed as input. Be sure to exclude any columns that are in appropriate for this analysis.
 
--   [Compute Linear Correlation](compute-linear-correlation.md) cannot be used with data that has missing values.  
-  
-## How to Use Linear Correlation  
-
-Before calculating the correlation coefficient, there are some prerequisites, such as cleaning your data and verifying that the relationship between the variables is appropriate for this module. You must also remove or impute missing values. 
+- [Compute Linear Correlation](compute-linear-correlation.md) cannot be used with data that has missing values.  
 
 ### Step 1: Determine linearity
 
@@ -45,9 +46,9 @@ There are various ways that you can determine whether the relationship between t
 + Create a scatter plot of the variables in Studio, by using the **Visualize** option on the dataset. Click one of the numeric variable columns, expand **Visualizations**, and click **compare to**.  Select a different variable, and a scatter plot is automatically generated. If a different type of plot is generated, it means at least one column has a different (non-numeric) data type. 
 
 + Calculate a regression equation for the two variables.  There are many R packages that support this, which you can load and use in the [Execute R Script](execute-r-script.md) module. 
- 
+
 ### Step 2: Clean data
- 
+
 You must remove or fill in missing values, remove or clip outliers, and ensure that the columns have the proper data type.
 
 Be sure to check for placeholders and replace such value with other appropriate values before using this module. If NaNs were inserted for missing values when the dataset was loaded from the source, it could cause an error. Placeholder values such as <code>999</code> or <code>-1</code> can also cause bad results.  
@@ -62,7 +63,7 @@ You can adjust the data type of the columns by using [Edit Metadata](edit-metada
 
 ### Step 3: Generate the coefficient
 
-1. Add the [Compute Linear Correlation](compute-linear-correlation.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) group in the **experiment items** list in Azure Machine Learning Studio.
+1. Add the [Compute Linear Correlation](compute-linear-correlation.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Azure Machine Learning Studio.
 
 2. Add the dataset that you want to analyze.
 
@@ -114,25 +115,30 @@ We recommend that you remove non-numeric columns, to avoid complex tables with m
 
 ## Examples  
 
-To see how this module is used in machine learning experiments, see these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+To see how this module is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
--   In the [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733) sample experiment, [Compute Linear Correlation](compute-linear-correlation.md) is used to identify potential feature columns.  
+-   [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): This sample demonstrates multiple techniques for modifying your data. [Compute Linear Correlation](compute-linear-correlation.md) is used to identify potential feature columns.  
   
-##  <a name="Notes"></a> Technical Notes  
- If the column that is passed as input contains scalars, the input arrays (*x* and *y*) are treated as vectors and the Pearson product moment correlation is computed as follows:  
+##  <a name="Notes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Implementation details
+
+If the column that is passed as input contains scalars, the input arrays (*x* and *y*) are treated as vectors and the Pearson product moment correlation is computed as follows:  
   
  ![linear correlation formula](media/aml-linearcorrelation1.png "AML_LinearCorrelation1")  
   
  In this formula, each array contains *n* elements and the means of the *x* and *y* samples are µx and µy respectively.  
   
- For a matrix, a matrix of data (*X*) is input, in which each column represents a vector of values. The data matrix should be *n*-by-*m*. The output is the *m*-by-*m* matrix, *R* as defined by  
+For a matrix, a matrix of data (*X*) is input, in which each column represents a vector of values. The data matrix should be *n*-by-*m*. The output is the *m*-by-*m* matrix, *R* as defined by  
   
  ![formula for linear correlation](media/aml-linearcorrelation2.png "AML_LinearCorrelation2")  
   
- In this formula, μx represents the mean value of the column *x*i. The elements at I,j always equal 1, as they represent the correlation of a vector with itself.  
+In this formula, μx represents the mean value of the column *x*i. The elements at I,j always equal 1, as they represent the correlation of a vector with itself.  
   
-##  <a name="ExpectedInputs"></a> Expected Input  
-  
+##  <a name="ExpectedInputs"></a> Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
@@ -144,14 +150,17 @@ To see how this module is used in machine learning experiments, see these sample
 |Results dataset|[Data Table](data-table.md)|Correlations matrix|  
   
 ##  <a name="exceptions"></a> Exceptions  
- For a complete list of error messages, see [Module Error Codes](machine-learning-module-error-codes.md).  
   
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0020](errors/error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
 |[Error 0021](errors/error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+
+## See also  
  [Statistical Functions](statistical-functions.md)   
  [A-Z Module List](a-z-module-list.md)

@@ -1,7 +1,8 @@
 ---
 title: "Data Table | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/08/2015
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,35 +12,41 @@ ms.assetid: 285668ca-bd74-42b2-9c2c-3111b4819e56
 caps.latest.revision: 8
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Data Table
+
 **Data Table Class**  
+
+A dataset is data that has been uploaded to Azure Machine Learning Studio so that it can be used in the modeling process.  Even if you upload data in another format, or specify a storage format such as CSV, ARFF, or TSV, the data is implicitly converted to a `DataTable` object whenever used by a module in an experiment.
+
+The dataset is based on the .NET [Data Table](https://msdn.microsoft.com/library/system.data.datatable\(v=vs.110\).aspx)  
   
- [Data Table](https://msdn.microsoft.com/library/system.data.datatable\(v=vs.110\).aspx)  
+## Column types
+
+A `DataTable` consists of a collection of columns with associated metadata.  These columns implement the `IArray` interface. Columns of data in Machine Learning Studio are understood to be one-dimensional arrays – that is, *vectors*.  
   
- A dataset is data that has been uploaded to Azure Machine Learning Studio so that it can be used in the modeling process.  Even if you upload data in another format, or specify a storage format such as CSV, ARFF, or TSV, the data is implicitly converted to a `DataTable` object whenever used by a module in an experiment.  
+
+The .NET [Array](https://msdn.microsoft.com/library/system.array.aspx) class implements these generic interfaces:  `System.Collections.Generic.IList<T>`, `System.Collections.Generic.ICollection<T>`, and `System.Collections.Generic.IEnumerable<T>`.  
   
-## Column Types  
- A `DataTable` consists of a collection of columns with associated metadata.  These columns implement the `IArray` interface. Columns of data in Machine Learning Studio are understood to be one-dimensional arrays – that is, *vectors*.  
+
+Columns of types `int`, `double`, and `Boolean` are typically represented as numeric dense arrays.  If a dense column contains missing values, it will handled either as a missing values array or as a nullable object dense array.  
+
+Columns containing strings are handled as object dense arrays. If there are missing values, the missing values are represented either as nulls or as the type `MissingValuesObjectArray<string>`.  
   
- The .NET [Array](https://msdn.microsoft.com/library/system.array.aspx) class implements these generic interfaces:  `System.Collections.Generic.IList<T>`, `System.Collections.Generic.ICollection<T>`, and `System.Collections.Generic.IEnumerable<T>`.  
+For more information, see [Array Class (MSDN Library)](https://msdn.microsoft.com/library/system.array.aspx).  
   
- Columns of types `int`, `double`, and `Boolean` are typically represented as numeric dense arrays.  If a dense column contains missing values, it will handled either as a missing values array or as a nullable object dense array.  
-  
- Columns containing strings are handled as object dense arrays. If there are missing values, the missing values are represented either as nulls or as the type `MissingValuesObjectArray<string>`.  
-  
- For more information, see [Array Class (MSDN Library)](https://msdn.microsoft.com/library/system.array.aspx).  
-  
-## Getting Columns in a DataTable  
- You can get a column by calling the `GetColumn` method on the DataTable.  The `GetColumn` method has two overloads:  
+## Getting columns in a DataTable  
+
+You can get a column by calling the `GetColumn` method on the DataTable.  The `GetColumn` method has two overloads:  
   
 -   `GetColumn(<Int64>)` gets a column by its index.  
   
 -   `GetColumn(<string>)` gets a column by its name.  
   
-## See Also  
- This section also describes the following interfaces for Azure Machine Learning:  
+## Other interfaces in Studio  
+
+This section also describes the following interfaces for Azure Machine Learning:  
   
 |Type|Description|  
 |----------|-----------------|  
@@ -48,7 +55,6 @@ manager: "jhubbard"
 |[ILearner interface](ilearner-interface.md)|The ILearner interface provides a generic structure for defining and saving analytical models, excluding some special types such as clustering models.|  
 |[ITransform interface](itransform-interface.md)|The ITransform interface provides a generic structure for defining and saving transformations. You can create an iTransform using Machine Learning Studio and then apply the transformation to new datasets.|  
   
-## See Also  
- [A-Z Module List](a-z-module-list.md)   
+## See also  
  [Module Parameter Types](machine-learning-module-parameter-types.md)   
  [Module Data Types](machine-learning-module-data-types.md)

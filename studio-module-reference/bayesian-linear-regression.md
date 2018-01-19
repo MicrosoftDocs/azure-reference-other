@@ -1,7 +1,8 @@
 ---
 title: "Bayesian Linear Regression | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 03/15/2017
+ms.date: 01/11/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,30 +12,32 @@ ms.assetid: ee12de50-2b34-4145-aec0-23e0485da308
 caps.latest.revision: 14
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Bayesian Linear Regression
 *Creates a Bayesian linear regression model*  
   
  Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
   
-## Module Overview  
- You can use the **Bayesian Linear Regression** module to create a regression model based on Bayesian statistics.  
-  
- After you have configured the model, you must train the model using a tagged dataset and the [Train Model](train-model.md) module.  The trained model can then be used to make predictions. Alternatively, the untrained model can be passed to [Cross-Validate Model](cross-validate-model.md) for cross-validation against a labeled data set.  
-  
-## Understanding Bayesian Regression  
- In statistics, the *Bayesian* approach to regression is often contrasted with the *frequentist* approach.  
-  
- The Bayesian approach uses linear regression supplemented by additional information in the form of a prior probability distribution. Prior information about the parameters is combined with a likelihood function to generate estimates for the parameters.  
-  
- In contrast, the frequentist approach, represented by standard least-square linear regression, assumes that the data contains sufficient measurements to create a meaningful model.  
+## Module overview  
  
- For more information about the research behind this algorithm, see the links in the [Technical Notes](#bkmk_Notes) section.
+This article describes how to use the **Bayesian Linear Regression** module in Azure Machine Learning Studio, to define a regression model based on Bayesian statistics.  
   
-## How to Configure a Bayesian Regression Model  
+After you have defined the model parameters, you must train the model using a tagged dataset and the [Train Model](train-model.md) module.  The trained model can then be used to make predictions. Alternatively, the untrained model can be passed to [Cross-Validate Model](cross-validate-model.md) for cross-validation against a labeled data set.
   
-1.  Add the **Bayesian Linear Regression** module to your experiment.  
+## More about Bayesian regression  
+
+In statistics, the *Bayesian* approach to regression is often contrasted with the *frequentist* approach.  
+  
+The Bayesian approach uses linear regression supplemented by additional information in the form of a prior probability distribution. Prior information about the parameters is combined with a likelihood function to generate estimates for the parameters.  
+  
+In contrast, the frequentist approach, represented by standard least-square linear regression, assumes that the data contains sufficient measurements to create a meaningful model.  
+ 
+For more information about the research behind this algorithm, see the links in the [Technical Notes](#bkmk_Notes) section.
+  
+## How to configure Bayesian Regression Model  
+  
+1.  Add the **Bayesian Linear Regression** module to your experiment.  You can find the **this** module  under **Machine Learning**, Initialize, in the **Regression** category. 
   
 2.  For **Regularization weight**, type a value to use for regularization. Regularization is used to prevent overfitting.  
   
@@ -54,31 +57,31 @@ manager: "jhubbard"
   
      You can also use the trained model as an input to [Score Model](score-model.md) to create predictions.  
   
-## Examples  
- For examples of regression models, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com):  
+## Examples
+
+For examples of regression models, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
   
--   The [Compare Regression Models sample](http://go.microsoft.com/fwlink/?LinkId=525731) contrasts several different kinds of regression models.  
+- [Compare Regression Models sample](http://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.  
   
-## <a name="bkmk_Notes"></a>Technical Notes
+## <a name="bkmk_Notes"></a>Technical notes
 
 + The use of the lambda coefficient is described in detail in this textbook on machine learning: [Pattern Recognition and Machine Learning](http://www.springer.com/gb/book/9780387310732), Christopher Bishop, Springer-Verlag, 2007. 
 
 + This article is available as a PDF download from the [Microsoft Research site](http://research.microsoft.com/en-us/um/people/cmbishop/PRML/):  [Bayesian Regression and Classification](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-nato-bayes.pdf)
 
+##  <a name="parameters"></a> Module parameters
 
-##  <a name="parameters"></a> Module Parameters  
-  
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Regularization weight|>=double.Epsilon|Float|1.0|Type a constant to use in regularization. The constant represents the ratio of the precision of weight prior to the precision of noise.|  
 |Allow unknown categorical levels|Any|Boolean|true|If true creates an additional level for each categorical column. Any levels in the test dataset not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Outputs  
-  
+##  <a name="Outputs"></a> Outputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained Bayesian linear regression model|  
-  
-## See Also  
+
+## See also  
  [A-Z Module List](a-z-module-list.md)   
  [Regression](machine-learning-initialize-model-regression.md)

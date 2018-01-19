@@ -1,20 +1,21 @@
 ---
 title: "Time Skew Policies (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Describes how to handle temporal nature and timing of arrival of events in Azure Stream Analytics."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 3821da4a-53e6-4f15-97f9-b6e3bde759b9
 caps.latest.revision: 10
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # Time Skew Policies (Azure Stream Analytics)
   In Stream Analytics, all data stream events have a timestamp associated with them. As all events are temporal in nature and timing of arrival of the event is how the timestamp is assigned, considerations exists for both the tolerance of out of order events and the late arrival of events to the Stream Analytics job. Contributors to Late Arrival and Out of Order event vary but generally are one or more of the following:  
