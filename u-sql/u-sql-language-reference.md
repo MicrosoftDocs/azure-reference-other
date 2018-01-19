@@ -60,4 +60,7 @@ If you are interested in seeing how you use the above concepts to solve certain 
     * U-SQL C# Developer’s Guide (under development)  
     * U-SQL Best Practices and Optimizations (under development)  
     * [U-SQL Git Repo](https://github.com/Azure/USQL)  
-    * [Azure Data Lake](http://azure.github.io/AzureDataLake/) 
+    * [Azure Data Lake](http://azure.github.io/AzureDataLake/)
+    * [Get Started with Azure Data Lake Analytics using Azure portal](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal)
+* Tools
+    * [Microsoft Azure Data Lake and Stream Analytics Tools for Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=49504)
