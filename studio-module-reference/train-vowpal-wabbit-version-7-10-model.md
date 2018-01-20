@@ -21,31 +21,31 @@ manager: "cgronlund"
   
 ## Module overview  
 
-This article describes how to use the **Train Vowpal Wabbit Version 7-10** module in Azure Machine Learning Studio, to create a machine learning model using an instance of Vowpal Wabbit (version 7-10).  
-  
-To use Vowpal Wabbit for machine learning, format your input according to Vowpal Wabbit requirements, and save the data in an Azure blob. Use this module to specify Vowpal Wabbit command-line arguments. 
+This article describes how to use the **Train Vowpal Wabbit Version 7-10** module in Azure Machine Learning Studio, to create a machine learning model using an instance of Vowpal Wabbit (version 7-10).
+
+To use Vowpal Wabbit for machine learning, format your input according to Vowpal Wabbit requirements, and save the data in an Azure blob. Use this module to specify Vowpal Wabbit command-line arguments.
 
 When the experiment is run, an instance of Vowpal Wabbit is loaded into the experiment run-time, together with the specified data. When training is complete, the model is serialized back to the workspace. You can use the model immediately to score data. The trained model is also persisted in Azure storage so that you can use it later without having to reprocess the training data.
 
 To incrementally train an existing model on new data, connect a saved model to the **Pre-trained model** input, and add the new data to the other input.
 
 > [!NOTE]
-> Azure Machine Learning Studio hosts multiple versions of the Vowpal Wabbit framework. This module uses the version 7-10 of the Vowpal Wabbit framework.  
->   
->  If you need to build or score a model based on a previous version (7-4 or 7-6), use these modules: [Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md) and [Score Vowpal Wabbit 7-4 Model](score-vowpal-wabbit-version-7-4-model.md).  
->   
+> Azure Machine Learning Studio hosts multiple versions of the Vowpal Wabbit framework. This module uses the version 7-10 of the Vowpal Wabbit framework. 
+> 
+>  If you need to build or score a model based on a previous version (7-4 or 7-6), use these modules: [Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md) and [Score Vowpal Wabbit 7-4 Model](score-vowpal-wabbit-version-7-4-model.md). 
+> 
 >  For the latest version, use [Train Vowpal Wabbit Version 8 Model](train-vowpal-wabbit-version-8-model.md), together with its scoring module, [Score Vowpal Wabbit 8 Model](score-vowpal-wabbit-version-8-model.md).  
   
-## What is Vowpal Wabbit?  
+## What is Vowpal Wabbit?
 
-Vowpal Wabbit (VW) is a fast, parallel machine learning framework that was developed for distributed computing by Yahoo! Research. Later it was ported to Windows and adapted by John Langford (Microsoft Research) for scientific computing in parallel architectures.  
-  
-Features of Vowpal Wabbit that are important for machine learning include continuous learning (online learning), dimensionality reduction, and interactive learning. Vowpal Wabbit is also a solution for problems when you cannot fit the model data into memory.  
-  
-The primary users of Vowpal Wabbit in Azure Machine Learning  are data scientists who have previously used the framework for machine learning tasks such as classification, regression, topic modeling or matrix factorization. The Azure wrapper for Vowpal Wabbit has very similar performance characteristics to the on-premise version, which means that users can continue to build models, retrain, and score using the powerful features and native performance of Vowpal Wabbit, while gaining the ability to easily publish the trained model as an operationalized service.  
-  
-The [Feature Hashing](feature-hashing.md) module also includes functionality provided by Vowpal Wabbit, that lets you transform text datasets into binary features using a hashing algorithm.  
-  
+Vowpal Wabbit (VW) is a fast, parallel machine learning framework that was developed for distributed computing by Yahoo! Research. Later it was ported to Windows and adapted by John Langford (Microsoft Research) for scientific computing in parallel architectures.
+
+Features of Vowpal Wabbit that are important for machine learning include continuous learning (online learning), dimensionality reduction, and interactive learning. Vowpal Wabbit is also a solution for problems when you cannot fit the model data into memory.
+
+The primary users of Vowpal Wabbit in Azure Machine Learning  are data scientists who have previously used the framework for machine learning tasks such as classification, regression, topic modeling or matrix factorization. The Azure wrapper for Vowpal Wabbit has very similar performance characteristics to the on-premise version, which means that users can continue to build models, retrain, and score using the powerful features and native performance of Vowpal Wabbit, while gaining the ability to easily publish the trained model as an operationalized service.
+
+The [Feature Hashing](feature-hashing.md) module also includes functionality provided by Vowpal Wabbit, that lets you transform text datasets into binary features using a hashing algorithm.
+
 ## How to configure Vowpal Wabbit Version 7-10 Model
 
 This section describes how to train a new model, and how to add new data to an existing model.
@@ -56,13 +56,13 @@ Unlike other modules in Studio, this module both specifies the module parameters
 + [Train a new model](#bkmk_NewModel)
 + [Incrementally train an existing model](#bkmk_Retrain)
 
-Use of this module requires authentication to an Azure storage account.  
+Use of this module requires authentication to an Azure storage account.
 
 ### <a name="bkmk_prepData"></a> Prepare the input data
 
-To train a model using this module, the input dataset must consist of a single text column in one of the two supported formats: **LibSVM** or **VW**. 
+To train a model using this module, the input dataset must consist of a single text column in one of the two supported formats: **LibSVM** or **VW**.
 
-This doesn't mean that Vowpal Wabbit analyzes only text data, only that the features and values must be prepared in the required text file format.
+This doesn't mean that Vowpal Wabbit analyzes only text data, just that the features and values must be prepared in the required text file format.
 
 The data must be read from Azure storage. It is not possible to use [Export Data](export-data.md) to directly save the input file to Azure for use with Vowpal Wabbit, because the format requires some additional modification. You must ensure the data is in the correct format and then upload the data to Azure blob storage.  
 
@@ -70,7 +70,7 @@ However, as a shortcut, you can use the [Convert to SVMLight](convert-to-svmligh
 
 The Vowpal Wabbit data format has the advantage that it does not require a columnar format, which saves space when dealing with sparse data. For more information about this format, see the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Input-format).  
 
-### <a name=bkmk_NewModel"></a> Create and train a Vowpal Wabbit model
+### <a name="bkmk_NewModel"></a> Create and train a Vowpal Wabbit model
 
 1.  Add the **Train Vowpal Wabbit Version 7-10** module to your experiment.  
   
@@ -88,11 +88,11 @@ The Vowpal Wabbit data format has the advantage that it does not require a colum
 
 5. In the **VW arguments** text box, type the command-line arguments for the Vowpal Wabbit executable.
   
-     For example, you might add *`–l`* to specify the learning rate, or *`-b`* to indicate the number of hashing bits.  
+     For example, you might add *`–l`* to specify the learning rate, or *`-b`* to indicate the number of hashing bits.
   
-     For more information, see the [parameters](#bkmk_Options) section.  
+     For more information, see the [parameters](#bkmk_Options) section.
   
-6.   **Name of the input VW file**: Type the name of the file that contains the input data. The file must be an existing file in Azure blob storage, located in the previously specified storage account and container. The file must have been prepared using one of the supported formats.  
+6.   **Name of the input VW file**: Type the name of the file that contains the input data. The file must be an existing file in Azure blob storage, located in the previously specified storage account and container. The file must have been prepared using one of the supported formats.
   
 7. **Name of the output readable model (--readable_model) file**: Type the name of a file where the trained model should be saved. The file must be saved within the same storage account and container as the input file.  
   
@@ -167,7 +167,7 @@ Vowpal Wabbit provides extremely fast learning over non-linear features like n-g
 
 Vowpal Wabbit uses *online learning* techniques such as stochastic gradient descent (SGD) to fit a model one record at a time. Thus it iterates very quickly over raw data and can develop a good predictor faster than most other models. This approach also avoids having to read all training data into memory.  
 
-Vowpal Wabbit converts all data to hashes, not just text data but other categorical variables. Using hashes makes lookup of regression weights more efficient, which is critical for effective stochastic gradient descent.  
+Vowpal Wabbit converts all data to hashes, not just text data but other categorical variables. Using hashes makes lookup of regression weights more efficient, which is critical for effective stochastic gradient descent.
 
 During training, the module makes calls into a Vowpal Wabbit wrapper developed for Azure. The training data is downloaded in blocks from Azure, utilizing the high bandwidth between the worker roles executing the computations and the store, and is streamed to the VW learners. The resulting model is generally very compact due to the internal compression done by VW. The model is copied back to the experiment workspace where it can be utilized like other models in Azure Machine Learning. 
 
@@ -193,9 +193,9 @@ All arguments other than those described above are allowed.
 
 Because the goal of the service is to support experienced users of Vowpal Wabbit, input data must be prepared ahead of time using the Vowpal Wabbit native text format, rather than the dataset format used by other modules.
 
-Rather than using data in the Azure ML workspace, the training data is directly streamed from Azure, for maximal performance and minimal parsing overhead. For this reason, there is only limited interoperability between the VW modules and other modules in Azure ML.  
+Rather than using data in the Azure ML workspace, the training data is directly streamed from Azure, for maximal performance and minimal parsing overhead. For this reason, there is only limited interoperability between the VW modules and other modules in Azure ML.
 
-##  <a name="parameters"></a> Module parameters  
+##  <a name="parameters"></a> Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -208,13 +208,13 @@ Rather than using data in the Azure ML workspace, the training data is directly 
 |Name of the output inverted hash (--invert_hash) file|any|String||If specified, outputs a file containing the inverted hash function back to the Azure container.<br /><br /> This argument is optional.|  
 |Please specify file type|VW<br /><br /> SVMLight|DataType|VW|Indicate whether the file type uses the SVMLight format or the Vowpal Wabbit format.|  
   
-##  <a name="Outputs"></a> Outputs  
+##  <a name="Outputs"></a> Outputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ILearner interface](ilearner-interface.md)|Trained learner|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  <a name="exceptions"></a> Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  
