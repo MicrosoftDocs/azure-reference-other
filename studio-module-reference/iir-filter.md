@@ -19,11 +19,16 @@ manager: "jhubbard"
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
   
-##  <a name="Remarks"></a> Module Overview  
- You can use the **IIR Filter** module to create an *infinite impulse response* (IIR) filter. An IIR filter is a type of filter commonly used in digital signal processing. You might apply an IIR filter to simplify cyclical data that includes random noise over a steadily increasing or decreasing trend.  
+## Module overview  
+
+This article describes how to use the **IIR Filter** module in Azure Machine Learning Studio, to create an *infinite impulse response* (IIR) filter. 
+
+Filters are an important tool in digital signal processing, and are used to improve the results of image or voice recognition. In general, a filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).
+
+An **IIR filter** is a particular type of filter; typical uses of an IIR filter would be to simplify cyclical data that includes random noise over a steadily increasing or decreasing trend.  The IIR filter you cretae with this module defines a set of constants (or coefficients) that alter the signal that is passed through. The word *infinite* in the name refers to the feedback between the outputs and the series values.
   
- The filter defines a set of constants (or coefficients) that alter the signal that is passed through. The word *infinite* in the name refers to the feedback between the outputs and the series values.  
-  
+After you have defined a filter that meets your needs, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module.  
+
 > [!TIP]
 >  A filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).  
   
@@ -66,7 +71,7 @@ manager: "jhubbard"
   
 6.  For **Ripple**, specify the amount of *ripple* to tolerate when you define your filter. Ripple refers to a small variation that occurs periodically. Ripple is usually considered an unwanted effect, but you can compensate for ripple by adjusting other filter parameters, such as the filter length. Not all filters produce ripple.
   
-7.  Connect the filter to [Apply Filter](apply-filter.md), and connect a dataset.  
+7.  Add the [Apply Filter](apply-filter.md) module to your experiment, and connect the filter you designed, and the dataset containg the values you want to modify.
   
      Use the column selector to specify which columns of the dataset to which the filter should be applied. By default, the [Apply Filter](apply-filter.md) module will use the filter for all selected numeric columns.
   
@@ -94,17 +99,17 @@ An IIR filter returns feed forward and feed backward coefficients, which are rep
   
  Where:  
   
--   N: filter order  
+-   `N`: filter order  
   
--   bi: feed forward filter coefficients  
+-   `bi`: feed forward filter coefficients  
   
--   ai: feed backward filter coefficients  
+-   `ai`: feed backward filter coefficients  
   
--   x[n]: the input signal  
+-   `x[n]`: the input signal  
   
--   y[n]: the output signal  
+-   `y[n]`: the output signal  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  

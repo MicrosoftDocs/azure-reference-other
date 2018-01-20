@@ -1,7 +1,8 @@
 ---
 title: "Boosted Decision Tree Regression | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/09/2016
+ms.date: 01/11/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,45 +12,47 @@ ms.assetid: 0207d252-6c41-4c77-84c3-73bdf1ac5960
 caps.latest.revision: 24
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Boosted Decision Tree Regression
 *Creates a regression model using the Boosted Decision Tree algorithm*  
   
  Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
   
-## Module Overview  
- You can use the **Boosted Decision Tree Regression** module to create an ensemble of regression trees using boosting. *Boosting* means that each tree is dependent on prior trees, and learns by fitting the residual of the trees that preceded it. Thus, boosting in a decision tree ensemble tends to improve accuracy with some small risk of less coverage.  
+## Module overview  
+
+This article describes how to use the **Boosted Decision Tree Regression** module in Azure Machine Learning Studio, to create an ensemble of regression trees using boosting. *Boosting* means that each tree is dependent on prior trees. The algorithm learns by fitting the residual of the trees that preceded it. Thus, boosting in a decision tree ensemble tends to improve accuracy with some small risk of less coverage.  
   
- This regression method is a supervised learning method, and therefore requires a *labeled dataset*. The label column must contain numerical values.  
+This regression method is a supervised learning method, and therefore requires a *labeled dataset*. The label column must contain numerical values.  
+
+> [!NOTE]
+> Use this module only with datasets that use numerical variables.  
   
- You can train the model by providing the model and the labeled dataset as an input to [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for the new input examples.  
-  
- Use this module only with datasets that use numerical variables.  
-  
+After you have defined the model, train it by using the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. 
 > [!TIP]
 >  Want to know more about the trees that were created? After the model has been trained, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize** to see the tree that was created on each iteration. You can drill down into the splits for each tree and see the rules for each node.  
   
-## Understanding Boosted Regression Trees  
- Boosting is one of several classic methods for creating ensemble models, along with bagging, random forests, and so forth.  In Azure Machine Learning Studio, boosted decision trees use an efficient implementation of the MART gradient boosting algorithm. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion, using a predefined loss function to measure the error in each step and correct for it in the next. Thus the prediction model is actually an ensemble of weaker prediction models.  
+## More about boosted regression trees  
+
+Boosting is one of several classic methods for creating ensemble models, along with bagging, random forests, and so forth.  In Azure Machine Learning Studio, boosted decision trees use an efficient implementation of the MART gradient boosting algorithm. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion, using a predefined loss function to measure the error in each step and correct for it in the next. Thus the prediction model is actually an ensemble of weaker prediction models.  
   
- In regression problems, boosting builds a series of trees in a step-wise fashion, and then selects the optimal tree using an arbitrary differentiable loss function.  
+In regression problems, boosting builds a series of trees in a step-wise fashion, and then selects the optimal tree using an arbitrary differentiable loss function.  
   
- For additional information, see these articles:  
+For additional information, see these articles:  
   
--   The Wikipedia article on gradient boosting provides background on boosted trees.  
++ [https://wikipedia.org/wiki/Gradient_boosting#Gradient_tree_boosting](https://wikipedia.org/wiki/Gradient_boosting)
+
+    This Wikipedia article on gradient boosting provides some background on boosted trees. 
   
-     [https://wikipedia.org/wiki/Gradient_boosting#Gradient_tree_boosting](https://wikipedia.org/wiki/Gradient_boosting)  
-  
--   Microsoft Research: From RankNet to LambdaRank to LambdaMART: An OverviewC.J.C. Burges.  
-  
-     [http://research.microsoft.com/apps/pubs/default.aspx?id=132652](http://research.microsoft.com/apps/pubs/default.aspx?id=132652)  
-  
- The gradient boosting method can also be used for classification problems by reducing them to regression with a suitable loss function. For more information about the boosted trees implementation for classification tasks, see [Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md).  
-  
-## How to Configure a Boosted Decision Tree Regression Model  
-  
-1.  Add the **Boosted  Decision Tree** module to the experiment.  
+-  [http://research.microsoft.com/apps/pubs/default.aspx?id=132652](http://research.microsoft.com/apps/pubs/default.aspx?id=132652)  
+
+    Microsoft Research: From RankNet to LambdaRank to LambdaMART: An Overview. By J.C. Burges.
+
+The gradient boosting method can also be used for classification problems by reducing them to regression with a suitable loss function. For more information about the boosted trees implementation for classification tasks, see [Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md).  
+
+## How to configure Boosted Decision Tree Regression Model
+
+1.  Add the **Boosted  Decision Tree** module to your experiment. You can find this module under **Machine Learning**, **Initialize**, under the **Regression** category. 
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   
@@ -95,41 +98,51 @@ manager: "jhubbard"
   
 10. Run the experiment.  
   
-11. When the model is trained, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize** to see the tree that was created on each iteration.  
+### Results
+
+After training is complete:
+
++ To see the tree that was created on each iteration, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize**.
   
-     You can click on each tree to drill down into the splits and see the rules for each node.  
-  
+     Click each tree to drill down into the splits and see the rules for each node.  
+
++ To use the model for scoring, connect it to [Score Model](score-model.md), to predict values for new input examples.
+
++ To save a snapshot of the trained model, right-click the **Trained model** output of the training module and select **Save As**. The copy of the trained model that you save is not updated on successive runs of the experiment.
+
 ## Examples  
- For examples of how boosted trees are used in machine learning, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com):  
+ 
+For examples of how boosted trees are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):  
+
+- [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271): Uses **Boosted Decision Tree Regression** to predict the number of rentals for a particular time.  
   
--   The [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271) sample uses **Boosted Decision Tree Regression** to predict the number of rentals for a particular time.  
+- [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Uses regression to generate a predicted rating.  
   
--   The [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274) sample uses regression to generate a predicted rating.  
-  
-##  <a name="Notes"></a> Technical Notes  
- In general, decision trees yield better results when features are somewhat related. If features have a large degree of entropy (that is, they are not related), they share little or no mutual information, and ordering them in a tree will not yield a lot of predictive significance.  
-  
- **Implementation**  
-  
--   The ensemble of trees is produced by computing, at each step, a regression tree that approximates the gradient of the loss function, and adding it to the previous tree with coefficients that minimize the loss of the new tree.  
-  
--   The output of the ensemble produced by MART on a given instance is the sum of the tree outputs.  
-  
--   For binary classification problem, the output is converted to probability by using some form of calibration.  
-  
--   For regression problems, the output is the predicted value of the function.  
-  
--   For ranking problem, the instances are ordered by the output value of the ensemble.  
-  
- **Configuration**  
-  
+##  <a name="Notes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Tips
+
+In general, decision trees yield better results when features are somewhat related. If features have a large degree of entropy (that is, they are not related), they share little or no mutual information, and ordering them in a tree will not yield a lot of predictive significance.  
+
 -   If you pass a parameter range to [Train Model](train-model.md), it will use only the first value in the parameter range list.  
   
 -   If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and using the default values for the learner.  
   
 -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.  
+
+### Implementation details
   
-##  <a name="parameters"></a> Module Parameters  
+The ensemble of trees is produced by computing, at each step, a regression tree that approximates the gradient of the loss function, and adding it to the previous tree with coefficients that minimize the loss of the new tree. The output of the ensemble produced by MART on a given instance is the sum of the tree outputs.  
+  
++ For binary classification problem, the output is converted to probability by using some form of calibration.  
+  
++ For regression problems, the output is the predicted value of the function.  
+  
++ For ranking problems, the instances are ordered by the output value of the ensemble.  
+  
+##  <a name="parameters"></a> Module parameters
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -146,6 +159,6 @@ manager: "jhubbard"
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained regression model|  
   
-## See Also  
+## See also  
  [A-Z Module List](a-z-module-list.md)   
  [Regression](machine-learning-initialize-model-regression.md)

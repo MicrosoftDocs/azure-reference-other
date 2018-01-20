@@ -1,5 +1,6 @@
 ---
 title: "Import Count Table | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -18,26 +19,22 @@ manager: "cgronlund"
   
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
-## Module Overview  
+## Module overview  
 
 This article describes how to use the **Import Count Table** module in Azure Machine Learning Studio.
 
-The purpose of the **Import Count Table** is to allow customers who created a table of count-based statistics using an earlier version of Azure Machine Learning to upgrade their experiment. This module merges the existing count tables with new data.
+The purpose of the **Import Count Table** module is to allow customers who created a table of count-based statistics using an earlier version of Azure Machine Learning to upgrade their experiment. This module merges the existing count tables with new data.
 
 For general information about count tables and how they are used to create features, see [Learning with Counts](data-transformation-learning-with-counts.md).
 
 > [!IMPORTANT]
-> This module is provided for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.  
-> 
-> We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. 
->
->  For all new experiments, we recommend that you use the following modules:  
+> This module is provided solely for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. For all new experiments, we recommend that you use the following modules:  
 >   
 >  -   [Build Counting Transform](build-counting-transform.md)  
 > -   [Modify Count Table Parameters](modify-count-table-parameters.md)  
 > -   [Merge Count Transform](merge-count-transform.md)  
 
-## How to Configure Import Count Table
+## How to configure Import Count Table
   
 1.  In Azure Machine Learning Studio, open an experiment that contains a count table created using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.
   
@@ -83,43 +80,43 @@ For general information about count tables and how they are used to create featu
 
 Explore examples of count-based featurization using these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
--   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
-- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.
-- The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample uses count-based features in a binary classification task.
+- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): demonstrates the use of count-based features in a multiclass prediction task.
+- [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
-> 
 > These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
-  
+##  <a name="ExpectedInputs"></a> Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Count metadata|[Data Table](data-table.md)|The metadata of the counts|  
 |Count table|[Data Table](data-table.md)|The count table|  
 |Counted data set|[Data Table](data-table.md)|The data set used for counting|  
   
-##  <a name="parameters"></a> Module Parameters  
-  
-###  
-  
+##  <a name="parameters"></a> Module parameters
+
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-----------------|-------------|  
 |Counting type|CountingType||Required||The counting type|  
   
 ##  <a name="Outputs"></a> Outputs  
-  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Counting transform|[ITransform interface](itransform-interface.md)|The counting transform|  
   
 ##  <a name="exceptions"></a> Exceptions  
-  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0018](errors/error-0018.md)|Exception occurs if input dataset is not valid.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+## See also  
  [Learning with Counts](data-transformation-learning-with-counts.md)   
  [Count Featurizer (deprecated)](count-featurizer-deprecated.md)

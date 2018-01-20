@@ -1,7 +1,8 @@
 ---
 title: "Data Transformation - Filter | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 10/06/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,42 +12,41 @@ ms.assetid: 529b4991-8a7f-4e12-8f36-51f9faca4383
 caps.latest.revision: 20
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Data Transformation - Filter
-This article describes how you can use the filter modules in Azure Machine Learning Studio to transform digital data. 
 
-## What is filtering?
+This article describes how you can use the filter modules in Azure Machine Learning Studio to transform digital data.  The modules in this group of tools for Azure Machine Learning Studio are based on filters developed for digital signal processing technology.  
 
-Typically, filters are applied to digital data during the data processing or preprocessing stages, to enhance the clarity of the signal used for machine learning. For example, the filter modules in Azure Machine Learning Studio can be used for these processing tasks:  
-  
--   Analyze interference or artifacts in telemetry signals.  
-  
--   Cleanup of waveforms used for speech recognition.  
-  
+Typically, filters are applied to data during the data processing or preprocessing stages, to enhance the clarity of the signal used for machine learning. For example, the filter modules in Azure Machine Learning Studio can be used for these processing tasks:  
+
+-   Cleanup of waveforms used for speech recognition.    
 -   Detect trends or remove seasonal effects in noisy sales or economic data.  
+-   Analyze patterns or artifacts in telemetry signals.  
 
-The modules in this group of tools for Azure Machine Learning Studio are based on filters developed for signal processing technology.  These modules provide easy configuration of filters, using well researched algorithms, to mathematically transform waveform data. You can also create a custom filter if you have already determined the correct coefficients to apply to your data.  
- 
-### Related tasks  
+These modules provide easy configuration of filters, using well researched algorithms, to mathematically transform waveform data. You can also create a custom filter if you have already determined the correct coefficients to apply to your data.
 
-The word "filter" can be used to mean many different things. If you need to do tasks such as excluding data from a dataset on a row by row basis, removing missing values, or reducing the size of a dataset, use these modules instead:  
+## Related tasks
+
+If you need to do tasks such as excluding data from a dataset on a row by row basis, removing missing values, or reducing the size of a dataset, use these modules instead:  
 
 + [Clean Missing Data](clean-missing-data.md) - Remove missing values or replace missing values with placeholders.  
 + [Partition and Sample](partition-and-sample.md) - Divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
 + [Clip Values](clip-values.md) - Set a range of values and keep only the values within that range.  
-  
-### The role of filters in digital signal processing
+
+## Primer on filters in digital signal processing
 
 Just as a filter can be attached to a camera to compensate for lighting or create special effects, you can apply a filter to the data used for machine learning, to improve the clarity of a signal, to capture interesting characteristics, or to reduce noise.  
-  
- The ideal filter would eliminate all noise and have uniform sensitivity for the desired signal, but designing even a pretty good filter might take many iterations or combinations of techniques. If you succeed in designing an effective filter, consider saving the filter so that you can reuse it when transforming new data.  
- 
- In general, filtering is based on the principles of *waveform analysis*. When you design a filter, you look for ways to suppress or amplify parts of the signal, to expose underlying trends, reduce noise and interference, or to identify data values that otherwise might not be perceived.  
-  
- Various techniques are applied to decompose the individual trends or waveform components that create the actual data values. The series of values (whether that is an econometric series or the composite frequencies of audio signals) can be analyzed by using trigonometric functions to identify and isolate individual wave forms. Filters can then be applied to these wave forms to eliminate noise, amplify some waves, or remove targeted components.  
-  
- When filtering is applied to a noisy series to isolate different components, you can specify which frequencies to remove or strengthen by specifying the band of frequencies to work with. 
+
+The ideal filter would eliminate all noise and have uniform sensitivity for the desired signal, but designing even a pretty good filter might take many iterations or combinations of techniques. If you succeed in designing an effective filter, consider saving the filter so that you can reuse it when transforming new data.  
+
+In general, filtering is based on the principles of *waveform analysis*. When you design a filter, you look for ways to suppress or amplify parts of the signal, to expose underlying trends, reduce noise and interference, or to identify data values that otherwise might not be perceived.  
+
+Various techniques are applied to decompose the individual trends or waveform components that create the actual data values. The series of values (whether that is an econometric series or the composite frequencies of audio signals) can be analyzed by using trigonometric functions to identify and isolate individual wave forms. Filters can then be applied to these wave forms to eliminate noise, amplify some waves, or remove targeted components.  
+
+When filtering is applied to a noisy series to isolate different components, you can specify which frequencies to remove or strengthen by specifying the band of frequencies to work with. 
+
+### Digital filters in Studio
 
 The following type of filters are supported in Azure Machine Learning Studio:
   
@@ -79,8 +79,9 @@ The following type of filters are supported in Azure Machine Learning Studio:
 > 
 > [An Introduction to Digital Signal Processing](http://www.hamradioschool.com/an-introduction-to-digital-signal-processing-dsp/)   
   
-##  <a name="modules"></a> List of Modules  
- The modules in the Filter category include:  
+##  <a name="modules"></a> List of modules  
+
+The following tables lists the modules in the **Filter** category:  
   
 |Module|Description|  
 |------------|-----------------|  
@@ -91,7 +92,7 @@ The following type of filters are supported in Azure Machine Learning Studio:
 |[Moving Average Filter](moving-average-filter.md)|Creates a moving average filter that smooths data for trend analysis|  
 |[Threshold Filter](threshold-filter.md)|Creates a threshold filter that constrains values|  
 |[User-Defined Filter](user-defined-filter.md)|Creates a custom finite or infinite impulse response filter|  
-  
-## See Also  
+
+## See also  
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)

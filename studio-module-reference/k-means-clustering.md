@@ -1,7 +1,8 @@
 ---
 title: "K-Means Clustering | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 08/20/2017
+ms.date: 01/11/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,29 +12,30 @@ ms.assetid: 5049a09b-bd90-4c4e-9b46-7c87e3a36810
 caps.latest.revision: 27
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # K-Means Clustering
 *Configures and initializes a K-means clustering model*  
   
  Category: [Machine Learning / Initialize Model / Clustering](machine-learning-initialize-model-clustering.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
  
  This article describes how to use the **K-Means Clustering** module in Azure Machine Learning Studio to create an untrained K-means clustering model. 
  
  K-means is one of the simplest and the best known *unsupervised* learning algorithms, and can be  used for a variety of machine learning tasks, such as [detecting abnormal data](https://msdn.microsoft.com/magazine/jj891054.aspx), clustering of text documents, and analysis of a dataset prior to using other classification or regression methods. To create a clustering model, you add this module to your experiment, connect a dataset, and set parameters such as the number of clusters you expect, the distance metric to use in creating the clusters, and so forth. 
   
  After you have configured the module hyperparameters, connect the untrained model to the [Train Clustering Model](train-clustering-model.md) or the [Sweep Clustering](sweep-clustering.md) modules to train the model on the input data that you provide.  Because the K-means algorithm is an unsupervised learning method, a label column is optional. 
+
  + If your data includes a label, you can use the label values to guide selection of the clusters and optimize the model. 
- + If your data has no label, the algorithm will create clusters representing possible categories based solely on the data.  
+ + If your data has no label, the algorithm creates clusters representing possible categories, based solely on the data.  
   
 > [!TIP]
 > If your training data has labels, consider using one of the supervised [classification](machine-learning-initialize-model-classification.md) methods provided in Azure Machine Learning. For example, you might compare the results of clustering to the results when using one of the multiclass decision tree algorithms. 
   
-##  <a name="k-means"></a> Understanding K-Means Clustering  
+##  <a name="k-means"></a> Understanding k-means clustering
  
-In general, clustering uses iterative techniques to group cases in a dataset into clusters that contain similar characteristics. These groupings are useful for exploring data, identifying anomalies in the data, and eventually for making predictions. Clustering models can also help you identify relationships in a dataset that you might not logically derive by browsing or simple observation. For these reasons, clustering is often used in the early phases of machine learning tasks, to explore the data and discover  unexpected correlations.  
+In general, clustering uses iterative techniques to group cases in a dataset into clusters that contain similar characteristics. These groupings are useful for exploring data, identifying anomalies in the data, and eventually for making predictions. Clustering models can also help you identify relationships in a dataset that you might not logically derive by browsing or simple observation. For these reasons, clustering is often used in the early phases of machine learning tasks, to explore the data and discover unexpected correlations.  
   
  When you configure a clustering model using the k-means method, you must specify a target number *k* indicating the number of *centroids* you want in the model. The centroid is a point that is representative of each cluster. The K-means algorithm assigns each incoming data point to one of the clusters by minimizing the within-cluster sum of squares. 
  
@@ -44,18 +46,16 @@ When processing the training data, the K-means algorithm begins with an initial 
 -   The algorithm completed running the specified number of iterations.  
   
  After completing the training phase, you use the [Assign Data to Clusters](assign-data-to-clusters.md) module to assign new cases to one of the clusters that was found by the k-means algorithm. Cluster assignment is performed by computing the distance between the new case and the centroid of each cluster. Each new case is assigned to the cluster with the nearest centroid.  
-  
- 
-  
-## How to Configure K-Means Clustering
+
+## How to configure K-Means Clustering
   
 1.  Add the **K-Means Clustering** module to your experiment.  
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   
-    -   **Single Parameter**. If you know the exact parameters you want to use in the clustering model, you can provide a specific set of values as arguments.  
+    -   **Single Parameter**: If you know the exact parameters you want to use in the clustering model, you can provide a specific set of values as arguments.  
   
-    -   **Parameter Range**. If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Sweep Clustering](sweep-clustering.md) module to find the optimal configuration.  
+    -   **Parameter Range**: If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Sweep Clustering](sweep-clustering.md) module to find the optimal configuration.  
   
          The trainer iterates over multiple combinations of the settings you provided and determine the combination of values that produces the optimal clustering results.  
   
@@ -67,23 +67,23 @@ When processing the training data, the K-means algorithm begins with an initial 
   
 4.  The properties **Initialization** or **Initialization for sweep** are used to specify the algorithm that is used to define the initial cluster configuration.  
   
-    -   **First N**.    Some initial number of data points are chosen from the data set and used as the initial means.  
+    -   **First N**: Some initial number of data points are chosen from the data set and used as the initial means.  
   
          Also called the *Forgy method*.  
   
-    -   **Random**.    The algorithm randomly places a data point in a cluster and then computes the initial mean to be the centroid of the cluster's randomly assigned points.  
+    -   **Random**: The algorithm randomly places a data point in a cluster and then computes the initial mean to be the centroid of the cluster's randomly assigned points.  
   
          Also called the *random partition* method.  
   
-    -   **K-Means++**.   This is the default method for initializing clusters.  
+    -   **K-Means++**: This is the default method for initializing clusters.  
   
          The **K-means ++** algorithm was proposed in 2007 by David Arthur and Sergei Vassilvitskii to avoid poor clustering by the standard k-means algorithm. **K-means ++** improves upon standard K-means by using a different method for choosing the initial cluster centers.  
   
-    -   **K-Means++Fast**.   A variant of the **K-means ++** algorithm that was optimized for faster clustering.  
+    -   **K-Means++Fast**: A variant of the **K-means ++** algorithm that was optimized for faster clustering.  
   
-    -   **Evenly**.   Centroids are located equidistant from each other in the d-Dimensional space of n data points.  
+    -   **Evenly**: Centroids are located equidistant from each other in the d-Dimensional space of n data points.  
   
-    -   **Use label column**.   The values in the label column are used to guide the selection of centroids.  
+    -   **Use label column**: The values in the label column are used to guide the selection of centroids.  
   
 5.  For **Random number seed**, optionally type a value to use as the seed for the cluster initialization. This value can have a significant effect on cluster selection.  
   
@@ -91,9 +91,9 @@ When processing the training data, the K-means algorithm begins with an initial 
   
 6.  For **Metric**, choose the function to use for measuring the distance between cluster vectors, or between new data points and the randomly chosen centroid. Azure Machine Learning supports the following cluster distance metrics:  
   
-    -   **Euclidean**.   The Euclidean distance is commonly used as a measure of cluster scatter for K-means clustering. This metric is preferred because it minimizes the mean distance between points and the centroids.  
+    -   **Euclidean**: The Euclidean distance is commonly used as a measure of cluster scatter for K-means clustering. This metric is preferred because it minimizes the mean distance between points and the centroids.
   
-    -   **Cosine**.                     The cosine function is used to measure cluster similarity. Cosine similarity is useful in cases where you do not care about the length of a vector, only its angle.  
+    -   **Cosine**: The cosine function is used to measure cluster similarity. Cosine similarity is useful in cases where you do not care about the length of a vector, only its angle.  
   
 7.  For **Iterations**, type the number of times the algorithm should iterate over the training data before finalizing the selection of centroids.  
   
@@ -103,11 +103,11 @@ When processing the training data, the K-means algorithm begins with an initial 
   
      Because K-means clustering is an unsupervised machine learning method, labels are optional. However, if your dataset already has a label column, you can use those values to guide selection of the clusters, or you can specify that the values be ignored.  
   
-    -   **Ignore label column**. The values in the label column are ignored and are not used in building the model.  
+    -   **Ignore label column**: The values in the label column are ignored and are not used in building the model.  
   
-    -   **Fill missing values**. The label column values are used as features to help build the clusters. If any rows are missing a label, the value is imputed by using other features.  
+    -   **Fill missing values**: The label column values are used as features to help build the clusters. If any rows are missing a label, the value is imputed by using other features.  
   
-    -   **Overwrite from closest to center**. The label column values are replaced with predicted label values, using the label of the point that is closest to the current centroid.  
+    -   **Overwrite from closest to center**: The label column values are replaced with predicted label values, using the label of the point that is closest to the current centroid.  
   
 9. Train the model.  
   
@@ -119,7 +119,7 @@ When processing the training data, the K-means algorithm begins with an initial 
 
 After you have finished configuring and training the model, you have a model that you can use to generate scores. However, there are multiple ways to train the model, and multiple ways to view and use the results: 
 
-#### To capture a snapshot of the model in your workspace
+#### Capture a snapshot of the model in your workspace
 
 + If you used the [Train Clustering Model](train-clustering-model.md) module
     1. Right-click the [Train Clustering Model](train-clustering-model.md) module.
@@ -131,7 +131,7 @@ After you have finished configuring and training the model, you have a model tha
 
 The saved model will represent the training data at the time you saved the model. If you later update the training data used in the experiment, it will not update the saved model. 
 
-#### To see a visual representation of the clusters in the model
+#### See a visual representation of the clusters in the model
 
 + If you used the [Train Clustering Model](train-clustering-model.md) module
     1. Right-click the module, and select **Results dataset**. 
@@ -146,15 +146,13 @@ The chart is generated by using [Principal Component Analysis](principal-compone
 
    For example, the following PCA charts represent the results from two models trained using the same data: the first was configured to output two clusters, and the second was configured to output three clusters. From these charts, you can see that increasing the number of clusters did not necessarily improve separation of the classes. 
 
-![aml-pca-clusters-compared](media/aml-pca-clusters-compared.JPG)
+![aml-pca-clusters-compared](media/aml-pca-clusters-compared.PNG)
 
-
-   
 > [!TIP]
 > Use the [Sweep Clustering](sweep-clustering.md) module to choose the optimal set of hyperparameters, including the random seed and number of starting centroids. 
 
 
-#### To see the list of data points and the clusters they belong to
+#### See the list of data points and the clusters they belong to
 
 There are two options for viewing the dataset with results, depending on how you trained the model:
     
@@ -180,7 +178,7 @@ The output contains the input data columns first, if you included them, and the 
 
     The values for cluster distance are based on the distance metric you selected in the option, **Metric for measuring cluster result**. Even if you perform a parameter sweep on the clustering model, only one metric can be applied during the sweep. If you change the metric, you might get different distance values. 
 
-#### To visualize intra-cluster distances
+#### Visualize intra-cluster distances
 
 In the dataset of results from the previous section, click the column of distances for each cluster. Studio displays a histogram that visualizes the distribution of distances for points within the cluster.  
     
@@ -195,7 +193,7 @@ In general, you should choose a metric that maximizes the distance between data 
 > 
 > Or use the [Execute R Script](execute-r-script.md) module to compute a custom distance matrix.   
 
-### Tips for Generating the Best Clustering Model  
+### Tips for generating the best clustering model  
 
 It is known that the **seeding** process used during clustering can significantly affect the model. Seeding means the initial placement of points into potental centroids.
  
@@ -214,17 +212,17 @@ In general, with clustering models, it is possible that any given configuration 
 > [!IMPORTANT]
 > We recommend that you always experiment with the parameters, create multiple models, and compare the resulting models. 
   
-##  <a name="Examples"></a> Examples  
+##  <a name="Examples"></a> Examples
 
- For examples of how K-means clustering is used in Azure Machine Learning, see these experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how K-means clustering is used in Azure Machine Learning, see these experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   The [Group iris data](https://gallery.cortanaintelligence.com/Experiment/a7299de725a141388f373e9d74ef2f86) sample compares the results of **K-Means Clustering** and [Multiclass Logistic Regression](multiclass-logistic-regression.md) for classification,  
+- [Group iris data](https://gallery.cortanaintelligence.com/Experiment/a7299de725a141388f373e9d74ef2f86): Compares the results of **K-Means Clustering** and [Multiclass Logistic Regression](multiclass-logistic-regression.md) for a classification task.
   
--   The [Color Quantization sample](http://go.microsoft.com/fwlink/?LinkId=525272) builds multiple K-means models with different parameters to find the optimum image compression.  
+- [Color Quantization sample](http://go.microsoft.com/fwlink/?LinkId=525272): Builds multiple K-means models with different parameters to find the optimum image compression.  
   
--   The [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164) sample uses K-means with different numbers of centroids to find groups of similar companies in the S&P500.  
+-  [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Varies the numbers of centroids to find groups of similar companies in the S&P500.
   
-##  <a name="TechnicalNotes"></a> Technical Notes  
+##  <a name="TechnicalNotes"></a> Technical notes  
 
 Given a specific number of clusters (*K*) to find for a set of *D*-dimensional data points with *N* data points, the K-means algorithm builds the clusters as follows:  
   
@@ -235,17 +233,16 @@ Given a specific number of clusters (*K*) to find for a set of *D*-dimensional d
 3.  Starting with an initial set of *K* centroids, the method uses Lloyd's algorithm to iteratively refine the locations of the centroids.  
   
 4.  The algorithm terminates when the centroids stabilize or when a specified number of iterations are completed.  
-  
 5.  A similarity metric (by default, Euclidean distance) is used to assign each data point to the cluster that has the closest centroid.  
 
   
 > [!WARNING]
->  -   If you pass a parameter range to [Train Clustering Model](train-clustering-model.md), it will use only the first value in the parameter range list.  
-> -   If you pass a single set of parameter values to the [Sweep Clustering](sweep-clustering.md) module, when it expects a range of settings for each parameter, it ignores the values and using the default values for the learner.  
-> -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.
+>  -   If you pass a parameter range to [Train Clustering Model](train-clustering-model.md), it uses only the first value in the parameter range list.  
+> -   If you pass a single set of parameter values to the [Sweep Clustering](sweep-clustering.md) module, when it expects a range of settings for each parameter, it ignores the values and uses the default values for the learner.  
+> -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.
  
       
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -268,7 +265,7 @@ For a list of all exceptions, see [Machine Learning Module Error Codes](machine-
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
   
-## See Also
+## See also
   
  [Clustering](machine-learning-initialize-model-clustering.md)   
  [Assign Data to Clusters](assign-data-to-clusters.md)   

@@ -1,7 +1,8 @@
 ---
 title: "Evaluate Model | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 04/27/2017
+ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,16 +12,16 @@ ms.assetid: 927d65ac-3b50-4694-9903-20f6c1672089
 caps.latest.revision: 20
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Evaluate Model
 *Evaluates the results of a classification or regression model with standard metrics*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
 
-You can use **Evaluate Model** to measure the accuracy of a trained model. You provide a dataset containing scores generated from a model, and the **Evaluate Model** module computes a set of industry-standard evaluation metrics.  
+This article describes how to use the **Evaluate Model** module in Azure Machine Learning Studio to measure the accuracy of a trained model. You provide a dataset containing scores generated from a model, and the **Evaluate Model** module computes a set of industry-standard evaluation metrics.
   
  The metrics returned by **Evaluate Model** depend on the type of model that you are evaluating:  
   
@@ -30,18 +31,26 @@ You can use **Evaluate Model** to measure the accuracy of a trained model. You p
 
 For recommendation models, use the [Evaluate Recommender](evaluate-recommender.md) module.  
 
-## How to Use Evaluate Model  
+> [!TIP]
+> If you are new to model evaluation, we recommend these samples in the Azure AI Gallery, which build a model and then explain how to use the related metrics:
+> 
+> + [Compare regression models](https://gallery.cortanaintelligence.com/Experiment/Compare-Regressors-5)
+> + [Compare binary classifiers](https://gallery.cortanaintelligence.com/Experiment/Compare-Binary-Classifiers-2)
+> + [Compare multiclass classifiers](https://gallery.cortanaintelligence.com/Experiment/Compare-Multi-class-Classifiers-Letter-recognition-2)
+> 
+> We also recommend the video series by Dr. Stephen Elston, as part of the [machine learning course](https://blogs.technet.microsoft.com/machinelearning/2015/09/08/new-edx-course-data-science-machine-learning-essentials/) from EdX. 
+
+## How to use Evaluate Model
 
 There are three ways to use the **Evaluate Model** module:
 
-+ Generate scores over your training set
-+ Generate scores on the model and compare to a reserved testing set
-+ Compare scores for two related models on the same set of data
++ Generate scores over your training data, and evaluate the model based on these scores
++ Generate scores on the model, but compare those scores to scores on a reserved testing set
++ Compare scores for two different but related models, using the same set of data
 
 ### Use the training data
 
 To evaluate a model, you must connect a dataset that contains a set of input columns and scores.  If no other data is available, you can use your original dataset.
-  
 
 1. Connect the **Scored datset** output of the [Score Model](score-model.md) to the input of **Evaluate Model**. 
 2. Click **Evaluate Model** module, and select **Run selected** to generate the evaluation scores.
@@ -57,8 +66,8 @@ A common scenario in machine learning is to separate your original data set into
 ### Compare scores from two models
 
 You can also connect a second set of scores to **Evaluate Model**.  The scores might be a shared evaluation set that has known results, or a set of results from a different model for the same data.
-  
-This feature is useful because you can easily compare results from two different models on the same data. Or, you might compare scores from two different runs over the same data with different parameters.  
+
+This feature is useful because you can easily compare results from two different models on the same data. Or, you might compare scores from two different runs over the same data with different parameters.
 
 1. Connect the **Scored datset** output of the [Score Model](score-model.md) to the input of **Evaluate Model**. 
 2. Connect the output of the Score Model module for the second model to the right-hand input of **Evaluate Model**.
@@ -75,9 +84,8 @@ If you connect datasets to both inputs of **Evaluate Model**, the results will c
 The model or data attached to the left port is presented first in the report, followed by the metrics for the dataset or model attached on the right port.  
 
 For example, the following image represents a comparison of results from two clustering models that were built on the same data, but with different parameters.  
-  
-![AML&#95;Comparing2Models](media/aml-comparing2models.png "AML_Comparing2Models")  
 
+![AML&#95;Comparing2Models](media/aml-comparing2models.png "AML_Comparing2Models")  
 
 Because this is a clustering model, the evaluation results are different than if you compared scores from two regression models, or compared two classification models. However, the overall presentation is the same. 
 
@@ -88,8 +96,8 @@ This section describes the metrics returned for the specific types of models sup
 + [classification models](#bkmk_classification)
 + [regression models](#bkmk_regression)
 + [clustering models](#bkmk_clustering)
-      
-####  <a name="bkmk_classification"></a> Classification Models   
+
+####  <a name="bkmk_classification"></a> Metrics for classification models
 
 The following metrics are reported when evaluating classification models. If you compare models, they are ranked by the metric you select for evaluation.  
   
@@ -103,29 +111,29 @@ The following metrics are reported when evaluating classification models. If you
   
 -   **AUC** measures the area under the curve plotted with true positives on the y axis and false positives on the x axis. This metric is useful because it provides a single number that lets you compare models of different types.  
   
--   **Average log loss** is a single score used to express the penalty for wrong results. It is calculated as the difference between two probability distributions – the true one, and the one in the model.  
+- **Average log loss** is a single score used to express the penalty for wrong results. It is calculated as the difference between two probability distributions – the true one, and the one in the model.  
   
--   **Training log loss** is a single score that represents the advantage of the classifier over a random prediction.  
-  
-###  <a name="bkmk_regression"></a> Regression Models  
+- **Training log loss** is a single score that represents the advantage of the classifier over a random prediction. The log loss measures the uncertainty of your model by comparing the probabilities it outputs to the known values (ground truth) in the labels. You want to minimize log loss for the model as a whole.
+
+###  <a name="bkmk_regression"></a> Metrics for regression models
  
 The metrics returned for regression models are generally designed to estimate the amount of error.  A model is considered to fit the data well if the difference between observed and predicted values is small. However, looking at the pattern of the residuals (the difference between any one predicted point and its corresponding actual value) can tell you a lot about potential bias in the model.  
   
  The following metrics are reported for evaluating regression models. When you compare models, they are ranked by the metric you select for evaluation.  
   
--   **Mean absolute error (MAE)** measures how close the predictions are to the actual outcomes; thus, a lower score is better.  
+- **Mean absolute error (MAE)** measures how close the predictions are to the actual outcomes; thus, a lower score is better.  
   
--   **Root mean squared error (RMSE)** creates a single value that summarizes the error in the model. By squaring the difference, the metric disregards the difference between over-prediction and under-prediction.  
+- **Root mean squared error (RMSE)** creates a single value that summarizes the error in the model. By squaring the difference, the metric disregards the difference between over-prediction and under-prediction.  
   
--   **Relative absolute error (RAE)** is the relative absolute difference between expected and actual values; relative because the mean difference is divided by the arithmetic mean.  
+- **Relative absolute error (RAE)** is the relative absolute difference between expected and actual values; relative because the mean difference is divided by the arithmetic mean.  
   
--   **Relative squared error (RSE)** similarly normalizes the total squared error of the predicted values by dividing by the total squared error of the actual values.  
+- **Relative squared error (RSE)** similarly normalizes the total squared error of the predicted values by dividing by the total squared error of the actual values.  
   
--   **Mean Zero One Error (MZOE)** indicates whether the prediction was correct or not.  In other words: ZeroOneLoss(x,y) = 1 when x!=y; otherwise 0  
+- **Mean Zero One Error (MZOE)** indicates whether the prediction was correct or not.  In other words: `ZeroOneLoss(x,y) = 1` when `x!=y`; otherwise `0`.
   
--   **Coefficient of determination**, often referred to as R<sup>2</sup>, represents the predictive power of the model as a value between 0 and 1. Zero means the model is random (explains nothing); 1 means there is a perfect fit. However, caution should be used in interpreting  R<sup>2</sup> values, as low values can be entirely normal and high values can be suspect.  
+- **Coefficient of determination**, often referred to as R<sup>2</sup>, represents the predictive power of the model as a value between 0 and 1. Zero means the model is random (explains nothing); 1 means there is a perfect fit. However, caution should be used in interpreting  R<sup>2</sup> values, as low values can be entirely normal and high values can be suspect.
   
-###  <a name="bkmk_clustering"></a> Clustering Models  
+###  <a name="bkmk_clustering"></a> Metrics for clustering models
 
 Because clustering models differ significantly from classification and regression models in many respects, [Evaluate Model](evaluate-model.md) also returns a different set of statistics for clustering models.  
   
@@ -142,7 +150,7 @@ Because clustering models differ significantly from classification and regressio
 |Evaluation For Cluster No.1|0|1|178|0|  
 |Evaluation For Cluster No.2|0|1|178|0|  
   
- From these results, you can gain the following information:  
+ From these results, you get the following information:  
   
 -   The **Sweep Clustering** module creates multiple clustering models, listed in order of accuracy. For simplicity, we've shown only the best-ranked model here. Models are measured using all possible metrics, but the models are ranked by using the metric that you specified. If you changed the metric, a different model might be ranked higher.  
   
@@ -164,22 +172,21 @@ Because clustering models differ significantly from classification and regressio
   
      If this number is high, it can mean that the cluster is widely dispersed. You should review this statistic together with the **Average Distance to Cluster Center** to determine the cluster’s spread.  
   
-## Examples  
- For examples of how to generate, visualize, and interpret evaluation metrics, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com). These experiments demonstrate how to build multiple models and use **Evaluate Model** to determine which model is the best.  
+## Examples
+
+For examples of how to generate, visualize, and interpret evaluation metrics, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com). These experiments demonstrate how to build multiple models and use **Evaluate Model** to determine which model is the best.  
   
--   The [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729) sample explains how to compare the performance of different classifiers that were built using the same data,  
+- [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): Explains how to compare the performance of different classifiers that were built using the same data.
   
--   The [Compare Multi-class Classifiers](http://go.microsoft.com/fwlink/?LinkId=525730) sample demonstrates how to compare the accuracy of different classification models that were built on the letter recognition dataset.  
+- [Compare Multi-class Classifiers](http://go.microsoft.com/fwlink/?LinkId=525730): Demonstrates how to compare the accuracy of different classification models that were built on the letter recognition dataset.
   
--   The [Compare Regressors](http://go.microsoft.com/fwlink/?LinkId=525731) sample walks you through the process of evaluating different regression models.  
+- [Compare Regressors](http://go.microsoft.com/fwlink/?LinkId=525731): Walks you through the process of evaluating different regression models.
+
+- [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271): Learn how to combine evaluation metrics from multiple models.  
   
- Additionally, see these sample experiments:  
+-  [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): Demonstrates how to evaluate multiple related models.
   
--   In the [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271) sample, learn how to combine evaluation metrics from multiple models.  
-  
--   The [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941) sample demonstrates how to evaluate multiple related models.  
-  
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -203,9 +210,8 @@ Because clustering models differ significantly from classification and regressio
 |[Error 0024](errors/error-0024.md)|Exception occurs if dataset does not contain a label column.|  
 |[Error 0025](errors/error-0025.md)|Exception occurs if dataset does not contain a score column.|  
   
-## See Also  
+## See also  
  [Cross-Validate Model](cross-validate-model.md)   
  [Evaluate Recommender](evaluate-recommender.md)   
  [Evaluate](machine-learning-evaluate.md)   
  [Score Model](score-model.md)   
- [A-Z Module List](a-z-module-list.md)

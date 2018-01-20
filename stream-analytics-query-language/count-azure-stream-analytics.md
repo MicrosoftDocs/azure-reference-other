@@ -1,20 +1,21 @@
 ---
 title: "COUNT (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-10-02"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns the number of items in a group. COUNT always returns a bigint data type value."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 494f899f-2ea7-4990-9a65-3881d9995b33
 caps.latest.revision: 11
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 10/02/2017
+ms.author: sngun
 ---
 # COUNT (Azure Stream Analytics)
   Returns the number of items in a group. COUNT always returns a bigint data type value.  
