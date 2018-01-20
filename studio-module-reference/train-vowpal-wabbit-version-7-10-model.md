@@ -76,9 +76,9 @@ The Vowpal Wabbit data format has the advantage that it does not require a colum
   
 2.  Specify the account where the training data is stored. The trained model and hashing file are stored in the same location.
 
-    - For  **Azure storage account name**, type the name of the Azure storage account.  
+    - For **Azure storage account name**, type the name of the Azure storage account.  
   
-    - For  **Azure storage key**, copy and paste the key that is provided for accessing the storage account,  
+    - For **Azure storage key**, copy and paste the key that is provided for accessing the storage account,  
   
     If you don’t have a key, see [How to regenerate storage access keys](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)  
 
