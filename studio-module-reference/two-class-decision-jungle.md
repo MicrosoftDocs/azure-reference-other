@@ -1,7 +1,8 @@
 ---
 title: "Two-Class Decision Jungle | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/14/2016
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,22 +12,24 @@ ms.assetid: 563cdba2-de6c-4082-b8f8-18f56ffa147c
 caps.latest.revision: 26
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Two-Class Decision Jungle
 *Creates a two-class classification model using the decision jungle algorithm*  
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
   
-## Module Overview  
- You can use the **Two-Class Decision Jungle** module to create a machine learning model that is based on a supervised ensemble learning algorithm called decision jungles.  
+## Module overview  
+
+This article describes how to use the **Two-Class Decision Jungle** module in Azure Machine Learning Studio, to create a machine learning model that is based on a supervised ensemble learning algorithm called decision jungles.  
   
- The **Two-Class Decision Jungle** module returns an untrained classifier that can be passed to another module, such as [Train Model](train-model.md) to [Tune Model Hyperparameters](tune-model-hyperparameters.md), for training on a labeled training data set. The trained model can then be used to make predictions. Alternatively, the untrained model can be passed to [Cross-Validate Model](cross-validate-model.md) for cross-validation against a labeled data set.  
+The **Two-Class Decision Jungle** module returns an untrained classifier. You then train this model on a labeled training data set, by using [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to make predictions. 
   
-##  <a name="Remarks"></a> Understanding Decision Jungles  
- [Decision jungles](http://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](http://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).  
+###  <a name="Remarks"></a> More about decision jungles
+
+[Decision jungles](http://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](http://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).  
   
- Decision jungles have the following advantages:  
+Decision jungles have the following advantages:  
   
 -   By allowing tree branches to merge, a decision DAG typically has a lower memory footprint and better generalization performance than a decision tree, albeit at the cost of somewhat longer training time.  
   
@@ -37,25 +40,25 @@ manager: "jhubbard"
 > [!TIP]
 >  For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](http://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).  
   
-## How to Configure a Decision Jungle Model  
-  
-1.  Add the **Two-Class Decision Forest** module to the experiment.  
+## How to configure Two-Class Decision Jungle
+
+1.  Add the **Two-Class Decision Forest** module to your experiment in Studio.  
   
 2.  For **Resampling method**, choose the method used to create the individual trees.  You can choose from **Bagging** or **Replicate**.  
   
-    -   **Bagging**. Select this option to use bagging, also called bootstrap aggregating.  
+    -   **Bagging**: Select this option to use bagging, also called bootstrap aggregating.  
   
-         Each tree in a decision forest outputs a Gaussian distribution by way of prediction. The aggregation is to find a Gaussian whose first two moments match the moments of the mixture of Gaussians given by combining all Gaussians returned by individual trees.  
+         Each tree in a decision forest outputs a Gaussian distribution as prediction. The aggregation is to find a Gaussian whose first two moments match the moments of the mixture of Gaussians given by combining all Gaussians returned by individual trees.  
   
-    -   ***Replicate*** .   In replication, each tree is trained on exactly the same input data. The determination of which split predicate is used for each tree node remains random and the trees will be diverse.  
+    -   **Replicate**: In replication, each tree is trained on exactly the same input data. The determination of which split predicate is used for each tree node remains random and the trees will be diverse.  
   
-         For more information about the training process with the **Replicate** option, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](http://research.microsoft.com/en-us/projects/decisionforests/)  
+        For more information, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](http://research.microsoft.com/en-us/projects/decisionforests/)  
   
 3.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   
-    -   **Single Parameter**.                   If you know how you want to configure the model, you can provide a specific set of values as arguments.  
+    -   **Single Parameter**: If you know how you want to configure the model, you can provide a specific set of values as arguments.  
   
-    -   **Parameter Range**. If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to find the optimal configuration.  The trainer will iterate over multiple combinations of the settings you provided and determine the combination of values that produces the best model.  
+    -   **Parameter Range**: If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to find the optimal configuration.  The trainer will iterate over multiple combinations of the settings you provided and determine the combination of values that produces the best model.  
   
 4.  For **Number of decision DAGs**, indicate the maximum number of graphs that can be created in the ensemble.  
   
@@ -69,46 +72,63 @@ manager: "jhubbard"
   
      If you deselect it, the model can accept only the values that are contained in the training data. In the former case, the model might be less precise for known values, but it can provide better predictions for new (unknown) values.  
   
-9. Train the model.  
+9. Add a tagged dataset to the experiment, and connect one of the [training modules](machine-learning-train.md).  
   
-    -   If you set **Create trainer mode** to **Single Parameter**, connect a tagged dataset and the [Train Model](train-model.md) module.  
+    -   If you set **Create trainer mode** to **Single Parameter**, use the [Train Model](train-model.md) module.  
   
-    -   If you set **Create trainer mode** to **Parameter Range**, connect a tagged dataset and train the model by using [Tune Model Hyperparameters](tune-model-hyperparameters.md).  
+    -   If you set **Create trainer mode** to **Parameter Range**, use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module.  
   
     > [!NOTE]
-    >  -   If you pass a parameter range to [Train Model](train-model.md), it will use only the first value in the parameter range list.  
-    > -   If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and using the default values for the learner.  
-    > -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.  
+    > 
+    > If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.  
+    > 
+    > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and uses the default values for the learner.  
+    > 
+    > If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.  
+
+### Results
+
+After training is complete:
+
++ To see the tree that was created on each iteration, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize**.
+
++ To see the rules for each node, click each tree and drill down into the splits.  
+
++ To save a snapshot of the trained model, right-click the **Trained model** output and select **Save As Trained Model**. This model is not updated on successive runs of the same experiment.
+
++  To perform cross-validation against a labeled data set, connect the untrained model to [Cross-Validate Model](cross-validate-model.md).
+ 
+## Examples
+
+For examples of how decision jungles are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-10. When the model is trained, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize** to see the tree that was created on each iteration.  
+- [Compare Binary Classifiers](https://gallery.azureml.net/Experiment/b2bfde196e604c0aa2f7cba916fc45c8): Uses several algorithms and discusses their pros and cons.  
   
-     You can click on each tree to drill down into the splits and see the rules for each node.  
+##  <a name="Notes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Tips
+
+If you have limited data, or want to minimize the time spent training the model, try these settings.
+
+**Limited training set**
+
+If your training set is small:
+
++ Create the decision jungle by using a large number of decision DAGs (for example, more than 20).  
++ Use the **Bagging** option for resampling.  
++ Specify a large number of optimization steps per DAG layer (for example, more than 10,000).  
+
+**Limited training time**
+
+If the training set is large but training time is limited:  
   
-## Example  
- For examples of how decision jungles are used in machine learning, see this sample experiment in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
-  
--   The [Compare Binary Classifiers](https://gallery.azureml.net/Experiment/b2bfde196e604c0aa2f7cba916fc45c8) sample uses several algorithms and discusses their pros and cons.  
-  
-##  <a name="Notes"></a> Technical Notes  
- If you have limited data or want to minimize the time spent training the model, try these settings:  
-  
--   **Limited training set**: If the training set contains a limited number of instances:  
-  
-     Create the decision jungle by using a large number of decision DAGs (for example, more than 20).  
-  
-     Use the **Bagging** option for resampling.  
-  
-     Specify a large number of optimization steps per DAG layer (for example, more than 10,000).  
-  
--   **Limited training time**: If the training set contains a large number of instances and training time is limited:  
-  
-     Create the decision jungle using a fewer number of decision DAGs (for example, 5-10).  
-  
-     Use the **Replicate** option for resampling.  
-  
-     Specify a smaller number of optimization steps per DAG layer (for example, less than 2000).  
-  
-##  <a name="parameters"></a> Module Parameters  
++ Create the decision jungle using a fewer number of decision DAGs (for example, 5-10).  
++ Use the **Replicate** option for resampling.  
++ Specify a smaller number of optimization steps per DAG layer (for example, less than 2000).  
+
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -125,7 +145,7 @@ manager: "jhubbard"
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained binary classification model|  
   
-## See Also  
+## See also  
  [Classification](machine-learning-initialize-model-classification.md)   
  [Multiclass Decision Jungle](multiclass-decision-jungle.md)   
  [A-Z Module List](a-z-module-list.md)

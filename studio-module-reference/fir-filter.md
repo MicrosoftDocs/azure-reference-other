@@ -2,7 +2,7 @@
 title: "FIR Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 01/11/2018
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -18,23 +18,26 @@ manager: "cgronlund"
 *Creates a finite impulse response filter for signal processing*  
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
-  
+
 ## Module overview  
 
-This article describes how to use the  **FIR Filter** module in Azure Machine Learning Studio, to define a kind of filter called a *finite impulse response* (FIR) filter. 
+This article describes how to use the **FIR Filter** module in Azure Machine Learning Studio, to define a kind of filter called a *finite impulse response* (FIR) filter. FIR filters have many applications in signal processing, and are most commonly used in applications that require a linear-phase response. For example, a filter might be applied to  images used in healthcare to sharpen the overall image, eliminate noise, or focus on an imaged object.
 
-Filters are an important tool in digital signal processing, and are often used in machine learning to improve the results of image or voice recognition. In general, a filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).
+> [!NOTE]
+>  A filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).  
 
-**FIR filters** are most commonly used in applications that require a linear-phase response. For example, a filter might be applied to  images used in healthcare to sharpen the overall image, eliminate noise, or focus on an imaged object.  
-
- After you have defined the filter, apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module. You can also save the filter for re-use with similar datasets.  
+After you have defined a digital signal processing filter, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module. You can also save the filter for re-use with similar datasets.
 
 > [!TIP]
-> Are you looking for a different type of filter? Studio provides these modules for sampling data, getting a subset of data, or creating test and training sets: [Split Data](split-data.md), [Partition and Sample](partition-and-sample.md), [Apply SQL Transformation](apply-sql-transformation.md), [Execute R Script](execute-r-script.md).  If you need to filter data as you read it from a source, see [Import Data](import-data.md). The options depend on the source type.
+>  Need to filter data from a dataset or remove missing values? Use these modules instead:  
+>   
+>  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
-## How to configure FIR Filter  
-  
-1.  Add the **FIR Filter** module to your experiment. You can find the **FIR Filter** module under **Data Transformation**, in the **Filters** category.  
+## How to configure FIR Filter
+
+1.  Add the **FIR Filter** module to your experiment.  You can find this module under **Data Transformation**, in the **Filter** category.
   
 2.  For **Order**, type an integer value that defines the number of active elements used to affect the filter's response. The *order* of the filter represents the length of the filter window.  
   
@@ -42,113 +45,95 @@ Filters are an important tool in digital signal processing, and are often used i
   
 3.  For **Window**, select the shape of the data to which the filter will be applied. Azure Machine Learning supports the following types of windowing functions for use in finite impulse response filters:  
   
-     **Hamming**  
-
-     The *generalized Hamming window* provides a type of weighted averaging, which is commonly used in image processing and computer vision.  
+     **Hamming**: The *generalized Hamming window* provides a type of weighted averaging, which is commonly used in image processing and computer vision.  
   
-     **Blackman**  
-
-     A *Blackman window* applies a smoothly tapered curve function to the signal. The Blackman window has better stopband attenuation than other window types.  
+     **Blackman**: A *Blackman window* applies a smoothly tapered curve function to the signal. The Blackman window has better stopband attenuation than other window types.  
   
-     **Rectangular**  
-
-     A *rectangular window* applies a consistent value inside the specified interval and applies no value elsewhere. The simplest rectangular window might replace *n* values in a data sequence with zeros, which makes it appear as though the signal suddenly turns on and off.  
+     **Rectangular**: A *rectangular window* applies a consistent value inside the specified interval and applies no value elsewhere. The simplest rectangular window might replace *n* values in a data sequence with zeros, which makes it appear as though the signal suddenly turns on and off.  
   
      A rectangular window is also known as a *boxcar* or *Dirichlet window*.  
   
-     **Triangular**  
+     **Triangular**: A triangular window applies filter coefficients in a step-wise fashion. The current value appears at the peak of the triangle, and then it declines with preceding or following values.  
+  
+     **None**:  In some applications it is preferable not to use any windowing functions. For example, if the signal you are analyzing already represents a window or burst, applying a window function could deteriorate the signal-to-noise ratio.  
+  
+4.  For **Filter type**, select an option that defines how the filter is applied. You can specify that the filter exclude the target values, alter the values, reject the values, or pass them through.
+  
+     **Lowpass**: "Low pass" means that the filter passes through lower values, and removes the higher values. For example, you might use this to remove high-frequency noise and data peaks from a signal. 
      
-     A triangular window applies filter coefficients in a step-wise fashion. The current value appears at the peak of the triangle, and then it declines with preceding or following values.  
+     This filter type has a smoothing effect on the data.  
   
-     **None**  
-
-     In some applications it is preferable not to use any windowing functions. For example, if the signal you are analyzing already represents a window or burst, applying a window function could deteriorate the signal-to-noise ratio.  
-  
-4.  For **Filter type**, select an option that defines how the filter will affect values. You can specify that the filter exclude the target values, alter the values, reject the values, or pass them through.  
-  
-     **Lowpass**  
+     **Highpass**: "High pass" means that the filter passes through higher values, and removes lower values. You might use this to remove low frequency data, such as a bias or offset, from a signal. 
      
-     Removes high-frequency data from a signal, such as high-frequency noise and data peaks. This filter type has a smoothing effect on the data.  
+     This filter type preserves sudden changes and peaks in a signal.
   
-     **Highpass**  
+     **Bandpass**: "Band pass" means that it passes thorugh the specified band of values, and remove others. You might use this filter to preserve the data from a signal with frequency characteristics at the intersection between the highpass and lowpass filters. 
      
-     Removes low frequency data from a signal, such as a bias or offset. This filter type preserves sudden changes and peaks in a signal.  
-  
-     **Bandpass**  
-     
-     Preserves the data from a signal with frequency characteristics at the intersection between the highpass and lowpass filters. This filter type is good at removing a bias and smoothing a signal.  
-  
      Bandpass filters are created by combining a highpass and a lowpass filter. The highpass filter cutoff frequency represents the lower cutoff, and the lowpass filter frequency represents the higher cutoff.  
   
-     **Bandstop**  
+    This filter type is good at removing a bias and smoothing a signal.  
+
+     **Bandstop**: "Band stop" means that it blocks specified sigals. In other words, it removes data from a signal with frequency characteristics that are rejected by the low pass and the highpass filters. 
      
-     Removes data from a signal with frequency characteristics that are rejected by the low pass and the highpass filters. This filter type is good at preserving the signal bias and sudden changes.  
+     This filter type is good at preserving the signal bias and sudden changes.  
   
-5.  Depending on the type of filter you chose, set one or more cutoff values.  
+5.  Depending on the type of filter you chose, you must set one or more cutoff values.  
   
-     Use the **High cutoff**  and **Low cutoff**  options to define an upper and/or a lower threshold for values. One or both of these options are required to specify which values are rejected or passed through.  
+     Use the **High cutoff**  and **Low cutoff**  options to define an upper and/or a lower threshold for values. One or both of these options are required to specify which values are rejected or passed through. A **bandstop** or **bandpass** filter requires that you set both high and low cutoff values. Other filter types, such as the **lowpass** filter, require that you set only the low cutoff value.
   
-    -   A **bandstop** or **bandpass** filter requires that you set both high and low cutoff values.  
-  
-    -   Other filter types, such as the **lowpass** filter, require that you set only the low cutoff value.  
-  
-6.  Select the **Scale** option if scaling should be applied to coefficients; otherwise leave blank.  
+6.  Select the **Scale** option if scaling should be applied to coefficients; otherwise leave blank.
   
 7.  Connect the filter to [Apply Filter](apply-filter.md), and connect a dataset.  
   
      Use the column selector to specify which columns the filter should be applied to. By default, the [Apply Filter](apply-filter.md) module will use the filter for all selected numeric columns.  
   
-8.  Run the experiment.  
-  
-     > [!NOTE]
-     > The **FIR Filter** module does not provide the option to create an indicator column. Column values are always transformed in place.  
-  
-## Examples  
+8.  Run the experiment.
 
-For examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+    No computations are performed until you connect a dataset to the [Apply Filter](apply-filter.md) module and run the experiment. At that point, the specified transformation is applied to the selected numeric columns.
   
--   [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.  
+> [!NOTE]
+> The **FIR Filter** module does not provide the option to create an indicator column. Column values are always transformed in place.
+
+## Examples
+
+For examples of how filters are used in machine learning, see this experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-##  <a name="bkmk_Notes"></a> Technical notes  
+-  [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
+
+##  <a name="bkmk_Notes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Implementation details
 
 FIR filters have these characteristics:  
   
--   FIR filters do not have feedback; that is, they use the previous filter outputs.  
-  
--   FIR filters are more stable, because the impulse response will always return to 0.  
-  
--   FIR filters require a higher order to achieve the same selectivity as infinite impulse response (IIR) filters.  
-  
--   Like other filters, the FIR filter can be designed with a specific cutoff frequency that preserves or rejects frequencies that compose the signal.  
-  
-### Calculating coefficients over the filter window  
++ FIR filters do not have feedback; that is, they use the previous filter outputs.  
++ FIR filters are more stable, because the impulse response will always return to 0.  
++ FIR filters require a higher order to achieve the same selectivity as infinite impulse response (IIR) filters.  
++ Like other filters, the FIR filter can be designed with a specific cutoff frequency that preserves or rejects frequencies that compose the signal.  
 
-The window type determines the trade-off between selectivity (width of the transition band in which frequencies are neither fully accepted nor rejected) and suppression (the total attenuation of frequencies to be rejected).  
-  
+### Calculating coefficients over the filter window
+
+The window type determines the trade-off between selectivity (width of the transition band in which frequencies are neither fully accepted nor rejected) and suppression (the total attenuation of frequencies to be rejected). 
 The windowing function is applied to the ideal filter response to force the frequency response to zero outside of the window. Coefficients are selected by sampling the frequency response within the window.  
-  
-The number of coefficients returned by the **FIR Filter** module is equal to the filter order plus one. The coefficient values are determined by filter parameters and by the windowing method, and are symmetric to guarantee a linear phase response  
- 
+
+The number of coefficients returned by the **FIR Filter** module is equal to the filter order plus one. The coefficient values are determined by filter parameters and by the windowing method, and are symmetric to guarantee a linear phase response    
+
 ###  <a name="CoefficientsScaling"></a> Scaling of coefficients  
 
 The **FIR Filter** module returns filter coefficients, or tap weights, for the created filter.  
   
 The coefficients are determined by the filter, based on the parameters you enter (such as the order). If you want to specify custom coefficients, use the [User-Defined Filter](user-defined-filter.md) module.  
   
-When **Scale** is set to **True**, filter coefficients are normalized, such that the magnitude response of the filter at the center frequency of the passband is 0. The implementation of normalization in Azure Machine Learning Studio is the same as in the **fir1** function in MATLAB.  
-  
-Typically, in the window design method, you design an ideal infinite impulse response (IIR) filter. The window function is applied to the waveform in the time domain, and multiplies the infinite impulse response by the window function. This results in the frequency response of the IIR filter being convolved with the frequency response of the window function. However, in the case of FIR filters, the input and filter coefficients (or tap weights) are convolved as follows when applying the filter:  
-  
- `y=b*x`  
-  
- Let _n_ be the length of the input signal and _m_ be the number of taps.  
-  
- Then `yj=∑mi=1bixj−(i−1)j=1..n` where the values `xj-(i-1)=0` if `j-(i-1) < 1`.  
+When **Scale** is set to **True**, filter coefficients will be normalized, such that the magnitude response of the filter at the center frequency of the passband is 0. The implementation of normalization in Azure Machine Learning Studio is the same as in the **fir1** function in MATLAB.  
 
-###  <a name="Example"></a> Selectivity and stop band attenuation  
+Typically, in the window design method, you design an ideal infinite impulse response (IIR) filter. The window function is applied to the waveform in the time domain, and multiplies the infinite impulse response by the window function. This results in the frequency response of the IIR filter being convolved with the frequency response of the window function. However, in the case of FIR filters, the input and filter coefficients (or tap weights) are convolved when applying the filter.
+
+### Selectivity and stop band attenuation  
 
 The following table compares selectivity with stop band attenuation for a FIR filter with length *n* by using different windowing methods:  
-  
+
 |Window Type|Transition Region|Minimum Stopband Attenuation|  
 |-----------------|-----------------------|----------------------------------|  
 |Rectangular|0.041n|21 dB|  
@@ -156,9 +141,9 @@ The following table compares selectivity with stop band attenuation for a FIR fi
 |Hann|0.12n|44 dB|  
 |Hamming|0.23n|53 dB|  
 |Blackman|0.2n|75 dB|  
-  
-##  <a name="parameters"></a> Module parameters  
-  
+
+##  <a name="parameters"></a> Module parameters
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Order|>=4|Integer|5|Specify the filter order|  
@@ -174,7 +159,7 @@ The following table compares selectivity with stop band attenuation for a FIR fi
 |----------|----------|-----------------|  
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
   
-##  <a name="exceptions"></a> Exception
+##  <a name="exceptions"></a> Exceptions
   
 |Exception|Description|  
 |---------------|-----------------|  
