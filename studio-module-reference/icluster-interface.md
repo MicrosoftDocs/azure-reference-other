@@ -1,7 +1,8 @@
 ---
 title: "ICluster interface | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 06/08/2015
+ms.date: 01/22/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,29 +12,24 @@ ms.assetid: d54db6b4-fcba-4501-bc60-baa7dadf56e9
 caps.latest.revision: 5
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # ICluster interface
-**ICluster interface**  
-  
- The `ICluster` interface provides methods and properties for working with clustering models.  
-  
- This interface encapsulates the following functionality:  
-  
--   Gets or sets the feature attributes  
-  
--   Trains a clustering model from data  
-  
--   Applies a clustering model to new data  
-  
-##  <a name="also"></a> See Also  
- Reference Machine Learning Studio types  
-  
-|Type|Description|  
-|----------|-----------------|  
-|[ILearner interface](ilearner-interface.md)|`ILearner` interface<br /><br /> The `ILearner` interface is the generalized interface for configuring and interacting with machine learning algorithms.|  
-  
-## See Also  
- [A-Z Module List](a-z-module-list.md)   
- [Module Parameter Types](machine-learning-module-parameter-types.md)   
- [Module Data Types](machine-learning-module-data-types.md)
+
+This article describes `ICluster`, which is the interface for trained clustering models that is used in Azure Machine Learning Studio.
+
+The `ICluster` interface provides methods and properties that are used to configure and interact with clustering models. A learner is defined as a set of instructions that perform standardized machine learning tasks. 
+
+The `ICluster` interface provides the following methods and properties for working with clustering models:
+
++ Gets or sets the feature attributes
++ Trains a clustering model from data
++ Applies a clustering model to new data
+
+You can interact with `ICluster` only in Studio, or in one of the supported APIs.  
+
+For classification or regression models, use the [iLearner](ilearner-interface.md) interface.
+
+## See also
+ [Module parameter types](machine-learning-module-parameter-types.md)   
+ [Module data types](machine-learning-module-data-types.md)
