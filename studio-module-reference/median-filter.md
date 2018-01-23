@@ -2,7 +2,7 @@
 title: "Median Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 01/11/2018
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -20,19 +20,26 @@ manager: "cgronlund"
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
   
 ## Module overview  
+ 
+This article describes how to use the **Median Filter** module in Azure Machine Learning Studio, to define a *median filter* for applying to a series of values that represent a digital input signal or image.  
 
-This article describes how to use the **Median Filter** module in Azure Machine Learning Studio, to define a *median filter*. 
-  
-Filters are an important tool in digital signal processing, and are used to improve the results of image or voice recognition. Median filters can be applied in image recognition, to reduce noise across pixels so that features can more easily be detected.
+Median filters are widely used in image recognition to reduce noise so that features can more easily be detected.  
+
+> [!NOTE]
+> A filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics.  In digital signal processing, the use of filters can improve the results of image or voice recognition. For more information, see [Filter](data-transformation-filter.md).  
+
+After you have defined a filter transformation that meets your needs by using the **Median Filter** module, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module.
 
 > [!TIP]
-> Are you looking for a different type of filter? Studio provides these modules for sampling data, getting a subset of data, or creating test and training sets: [Split Data](split-data.md), [Partition and Sample](partition-and-sample.md), [Apply SQL Transformation](apply-sql-transformation.md), [Execute R Script](execute-r-script.md).  If you need to filter data as you read it from a source, see [Import Data](import-data.md). Filtering is not supported for all source types. 
+>  Need to filter data from a dataset or remove missing values? Use these modules instead:  
+>   
+>  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
-## How to use Median Filter  
-
-First, you define a filter specification that meets your needs by using the **Median Filter** module. Then, you apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module.
-
-1.  Add the **Median Filter** to your experiment in Azure Machine Learning Studio. You can find this module under **Data Transformation**, **Filter**. 
+## How to configure Median Filter  
+  
+1.  Add the **Median Filter** to your experiment.  You can find this module under **Data Transformation**, in the **Filter** category.
   
 2.  For **Length**, type an integer value that defines the total size of the window across which the filter is applied. This is also called the filter *mask*.  
   
@@ -46,44 +53,27 @@ First, you define a filter specification that meets your needs by using the **Me
   
      Use the column selector to specify which columns of the dataset to which the filter should be applied. By default, the [Apply Filter](apply-filter.md) module will use the filter for all selected numeric columns.  
   
-4.  Run the experiment, or click just the **Median Filter** module and select **Run Selected**.  
-
-### Results
-
-When the filter is applied,the following operations are applied to the selected columns:  
+4.  Run the experiment. The following operations are applied to the selected columns:  
   
-+ For each set of values included in the window or mask, the filter algorithm computes the median.
+    + For each set of values included in the window or mask, the filter algorithm computes the median.
+    + The current (or index) value is replaced with the median value.  
 
-+ The current (or index) value is replaced with the median value. If there are not enough values to fill the mask (typically at the beginning of the series), no substitution is made 
+## Examples
 
-The actual values in the source dataset are unchanged. The **Median Filter** module just creates new values that you can use in subsequent machine learning tasks. Depending on how you configure the [Apply Filter](apply-filter.md) module, you can either append the filter results to the dataset in a new column, or output just the changed values.
-
-For example, the following table shows the results of a filter applied to a series of numbers. Two different mask lengths (3 and 5) were used. The outputs were combined with the source values by using the [Add Columns](add-columns.md) module. 
-
-|index|	Source value|	Mask = 3|	Mask = 5|
-|----|----|----|----|
-|1	|37.4|	37.4|	37.4|
-|2	|28.8|	28.8|	28.8|
-|3|	26.2|	28.6|	28.6|
-|4|	28.6|	26.4|	27.4|
-|5|	26.4|	27.4|	27.4|
-|6|	27.4	|27.4|	28.6|
-|7|	29.4|	29.4|	29.4|
-|8|	40.4|	38	|36.4|
-|9|	38	|38|	38|
-|10|	36.4|	38|	40.4|
-|11|	48	|41.4|	38|
-
-
-## Examples  
-
-For examples of how filters are used in machine learning, see the [Azure AI Gallery](http://gallery.cortanaintelligence.com):  
+For examples of how filters are used in machine learning, see this experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types, using an engineered waveform dataset for illustration.
+-  [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
 
-## Technical notes
- 
-Each entry in the output signal is equal to the median of the entries in a subset (mask) of the input signal, and **centered** at the corresponding index. The mask size should be an odd, positive-valued integer.
+
+## Technical notes  
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Implementation details
+
+Each entry in the output signal is equal to the median of the entries in a subset (mask) of the input signal, and centered at the corresponding index. The mask size should be an odd, positive-valued integer.  
+  
+If you provide this method with an even-valued mask size, it is reduced by one. For example, given m=2q+1, the filter is defined as:  
   
 If you provide this method with an even-valued mask size, it is reduced by one. For example, given `m=2q+1`, the filter is defined as:  `yi =median[{xi-q,…, xi+q}]`
   

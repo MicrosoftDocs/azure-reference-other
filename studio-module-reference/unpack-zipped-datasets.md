@@ -1,7 +1,8 @@
 ---
 title: "Unpack Zipped Datasets | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 10/05/2017
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,22 +12,22 @@ ms.assetid: 60036051-8954-4cdf-972f-2d9196ce1328
 caps.latest.revision: 15
 author: "jeannt"
 ms.author: "jeannt"
-manager: "mblythe"
+manager: "cgronlund"
 ---
 # Unpack Zipped Datasets
 *Unpacks datasets from a zip package in user storage*  
   
  Category: [Data Input and Output](data-input-and-output.md)  
   
-## Module Overview  
- 
- This article describes how to use the **Unpack Zipped Datasets** module in Azure Machine Learning Studio to get upload your data files in compressed format, and then unzip them for use in an experiment. 
- 
- The module takes as input a dataset in your workspace. The dataset must have been uploaded in a compressed format. The module then decompresses the dataset and adds the data to your workspace.  
- 
- The purpose of this module is to reduce data transfer times when working with very large datasets by saving and uploading your data files in a compressed format. Generally, zipping files is a good option when your dataset is so large that you want to use compression for the upload, to minimize upload time and associated costs.  
-  
-## How to Use Unpack Zipped Datasets  
+## Module overview
+
+This article describes how to use the the **Unpack Zipped Datasets** module in Azure Machine Learning Studio, to upload data and script files in compressed format, and then unzip them for use in an experiment.
+
+The purpose of this module is to reduce data transfer times when working with very large datasets by saving and uploading your data files in a compressed format. Generally, zipping files is a good option when your dataset is so large that you want to use compression for the upload, to minimize upload time and associated costs.
+
+The module takes as input a dataset in your workspace. The dataset must have been uploaded in a compressed format. The module then decompresses the dataset and adds the data to your workspace.
+
+## How to use Unpack Zipped Datasets
 
 This section describes how to prepare your data and then unzip it in Azure Machine Learning Studio. 
 
@@ -45,8 +46,8 @@ Before uploading your file, make sure that the data in the file can be used in A
 + Remove password protection. If any of the files or the compressed folder itself has been encrypted or password-protected, you must unlock or decrypt the file before you upload it. The module cannot detect encrypted data types and does not support dialog boxes for password entry from arbitrary clients.  
 
 ### Step 2. Upload dataset to your workspace
-      
-Next, you upload the zipped dataset to your experiment workspace.  
+
+Next, upload the zipped dataset to your experiment workspace.  
   
 1.  Click **NEW**, select **DATASET**, and select **FROM LOCAL FILE**.
 
@@ -54,13 +55,13 @@ Next, you upload the zipped dataset to your experiment workspace.
   
 ### Step 3. Add zipped dataset to experiment
 
-After the dataset has uploaded completely, you add it to your experiment in zipped format.
+After the dataset has uploaded completely, add it to your experiment in zipped format.
 
 1. In the left-hand navigation pane of Azure Machine Learning Studio, select **Saved Datasets**, and then expand **My Datasets**. 
 
-2. Locate the zipped dataset that you just uploaded, and drag it to the experiment canvas.  
+2. Locate the zipped dataset that you just uploaded, and drag it to the experiment canvas.
 
-### Step 4. Unpack dataset  
+### Step 4. Unpack dataset
 
 The final step is to unpack the dataset.
 
@@ -75,20 +76,20 @@ The final step is to unpack the dataset.
     -   If you put multiple files into one compressed folder, you must unpack one dataset at a time.  
   
     > [!TIP]
-    >  If you leave the property blank, the module will get the file name from the zipped file, assuming the compressed archive file contains only one source file. If the compressed archive contains multiple files, you will get a run-time error.  
+    >  If you leave the property blank, the module gets the file name from the zipped file, assuming the compressed archive file contains only one source file. If the compressed archive contains multiple files, a run-time error is raised.
   
-3.  For **Dataset file format**, specify the original format of the dataset -- that is, the format before it was zipped.  
+3.  For **Dataset file format**, specify the original format of the dataset: that is, the format before it was zipped.  
   
      You can upload and unzip datasets that were created using any of these formats: CSV, ARFF, TSV, SvmLight.  
   
-     If this property is left empty, the module will identify the dataset using the source file name.  
+     If this property is left empty, the module identifies the dataset using the source file name.
   
-4.  Select the option, **File has header row**, if the original dataset had a header row.  Otherwise the 
+4.  Select the option, **File has header row**, if the original dataset had a header row.  Otherwise the first row of data is used as the header. If this is not what you want, add a header prior to input. 
   
      This option applies only to .CSV and .TSV files.  
   
     > [!NOTE]
-    >  If you change the format of the file, this option will be reset.  
+    >  If you change the format of the file, this option is reset.  
   
 5. If the file is compressed, use the **Compression file format** option to specify the algorithm that was used to compress or expand the file.  
   
@@ -104,9 +105,9 @@ The final step is to unpack the dataset.
 
     This option is handy if you are unpacking multiple datasets from a single ZIP file.  
   
-## Examples  
- 
- To demonstrate how this module works, we created a sample .ZIP file containing four different CSV files. All files were saved from Excel. 
+## Examples
+
+To demonstrate how this module works, we created a sample .ZIP file containing four different CSV files. All files were saved from Excel. 
  
  |File name |Description|
  |----|----|
@@ -134,26 +135,25 @@ The results were as expected:
 > [!NOTE]
 > If you use the option, **File has header row** = TRUE, and the source file actually does not have a column heading, the first row of data is used as the column heading.
  
-## Technical Notes  
+## Technical notes
 
- You cannot use this module to unpack zipped R packages into your workspace. R packages must be uploaded and consumed as zipped files.
- 
- For more information about how to work with zipped R packages, see [Execute R Script](execute-r-script.md).  
+You cannot use this module to unpack zipped R packages into your workspace. R packages must be uploaded and consumed as zipped files.
+
+For more information about how to work with zipped R packages, see [Execute R Script](execute-r-script.md).  
 
 > [!NOTE]  
 > Confused about the difference between UTF-8 and Unicode? See this Wikipedia article: [What is UTF-8](https://wikipedia.org/wiki/UTF-8)
  
-##  <a name="parameters"></a> Module Parameters  
-  
+##  <a name="parameters"></a> Module parameters
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Compression file format|Zip<br /><br /> Gzip|compression rule|Zip|Compression algorithm used to compress or expand the file.|  
 |Dataset to Unpack|Any|String|none|Name of  dataset to register with Azure ML Studio. If the name of a dataset is not specified, the name is obtained from the file name in the zipped file.|  
 |Dataset file format|CSV<br /><br /> TSV<br /><br /> ARFF<br /><br /> SVMLIGHT|File format|CSV|File format of the dataset in the zipped file|  
-|File has header row|TRUE/FALSE|Boolean|False|Set to **True** only if the CSV/TSV file has a header row|  
-  
-##  <a name="ExpectedInputs"></a> Expected Input  
-  
+|File has header row|TRUE/FALSE|Boolean|False|Set to **True** only if the CSV/TSV file has a header row| 
+##  <a name="ExpectedInputs"></a> Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|Zip|Zipped file containing datasets|  
@@ -164,6 +164,6 @@ The results were as expected:
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
   
-## See Also  
+## See also  
 
 [Data Input and Output](data-input-and-output.md)

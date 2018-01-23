@@ -1,7 +1,8 @@
 ---
 title: "Filter Based Feature Selection | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 09/21/2017
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,50 +12,50 @@ ms.assetid: 818b356b-045c-412b-aa12-94a1d2dad90f
 caps.latest.revision: 23
 author: "jeannt"
 ms.author: "jeannt"
-manager: "cgronlun"
+manager: "cgronlund"
 ---
 # Filter Based Feature Selection
 *Identifies the features in a dataset with the greatest predictive power*  
   
  Category: [Feature Selection Modules](feature-selection-modules.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+##  <a name="Remarks"></a> Module overview  
 
-This article describes how to use the [Filter Based Feature Selection](filter-based-feature-selection.md) module in Azure Machine Learning, to identify the columns in your input dataset that have the greatest predictive power. 
+This article describes how to use the [Filter Based Feature Selection](filter-based-feature-selection.md) module in Azure Machine Learning Studio, to identify the columns in your input dataset that have the greatest predictive power. 
 
 In general, *feature selection* refers to the process of applying statistical tests to inputs, given a specified output, to determine which columns are more predictive of the output. The [Filter Based Feature Selection](filter-based-feature-selection.md) module provides multiple feature selection algorithms to choose from, including correlation methods such as Pearsons's or Kendall's correlation, mutual information scores, and chi-squared values. Azure Machine Learning also supports feature value counts as an indicator of information value.
  
-When you use the [Filter Based Feature Selection](filter-based-feature-selection.md) module, you provide a dataset, identify the column that contains the label or dependent variable ,and then specify a single method to use in measuring feature importance. 
+When you use the [Filter Based Feature Selection](filter-based-feature-selection.md) module, you provide a dataset, identify the column that contains the label or dependent variable, and then specify a single method to use in measuring feature importance.
 
 The module outputs a dataset that contains the best feature columns, as ranked by predictive power. It also outputs the names of the features and their scores from the selected metric.  
 
-### Why Use Filter-Based Feature Selection?  
+### What is filter-based feature selection and why use it?  
 
 This module for feature selection is called "filter-based" because you use the selected metric to identify irrelevant attributes, and filter out redundant columns from your model.  You choose a single statistical measure that suits your data, and the module calculates a score for each feature column. The columns are returned ranked by their feature scores. 
 
 By choosing the right features, you can potentially improve the accuracy and efficiency of classification. 
 
-You can then use only the columns with the best scores to build your predictive model. Columns with poor feature selection scores can be left in the dataset and ignored when you build a model.  
+You typically use only the columns with the best scores to build your predictive model. Columns with poor feature selection scores can be left in the dataset and ignored when you build a model.  
   
-### How to Choose a Feature Selection Metric
+### How to choose a feature selection metric
 
-The **Filter-Based Feature Selection** provides a variety of metrics for assessing the information value in each column.  This section provides a general description of each metric, and how it is applied. Additional requirements for using each metric are stated in the [Technical Notes](#bkmk_Notes) section and in the [instructions](#Configuration) for configuring the module.
+The **Filter-Based Feature Selection** provides a variety of metrics for assessing the information value in each column.  This section provides a general description of each metric, and how it is applied. Additional requirements for using each metric are stated in the [Technical Notes](#bkmk_Notes) section and in the [instructions](#Configuration) for configuring each module.
   
 -   **Pearson Correlation**  
   
-     Pearson’s correlation statistics, or Pearson’s correlation coefficient, is also known in statistical models as the `r` value. For any two variables, it returns a value that indicates the strength of the correlation.  
+     Pearson’s correlation statistic, or Pearson’s correlation coefficient, is also known in statistical models as the `r` value. For any two variables, it returns a value that indicates the strength of the correlation
   
      Pearson's correlation coefficient is computed by taking the covariance of two variables and dividing by the product of their standard deviations. The coefficient is not affected by changes of scale in the two variables.  
   
 -   **Mutual Information**  
   
-     The Mutual Information Score method measures the contribution of a variable towards reducing uncertainty about the value of another variable: namely, the label. Many variations of the mutual information score have been devised to suit different distributions.  
+     The mutual information score measures the contribution of a variable towards reducing uncertainty about the value of another variable: namely, the label. Many variations of the mutual information score have been devised to suit different distributions.  
   
      The mutual information score is particularly useful in feature selection because it maximizes the mutual information between the joint distribution and target variables in datasets with many dimensions.  
   
 -   **Kendall Correlation**  
   
-     Kendall's rank correlation is one of several statistics that measure the relationship between rankings of different ordinal variables or different rankings of the same variable. In other words, it measures the similarity of orderings when ranked by the quantities. Both this coefficient and Spearman’s correlation coefficient are designed for use with non-parametric and non-normally distributed data.  
+     Kendall's rank correlation is one of several statistics that measure the relationship between rankings of different ordinal variables or different rankings of the same variable. In other words, it measures the similarity of orderings when ranked by the quantities. Both this coefficient and Spearman’s correlation coefficient are designed for use with non-parametric and non-normally distributed data.
   
 -   **Spearman Correlation**  
   
@@ -68,7 +69,7 @@ The **Filter-Based Feature Selection** provides a variety of metrics for assessi
   
      The Fisher score (also called the Fisher method, or Fisher combined probability score) is sometimes termed the information score, because it represents the amount of information that one variable provides about some unknown parameter on which it depends.  
   
-     The score is computed by measuring the variance between the expected value of the information and the observed value. When variance is minimized, information is maximized. Since the expectation of the score is zero, the Fisher information is also the variance of the score.  
+     The score is computed by measuring the variance between the expected value of the information and the observed value. When variance is minimized, information is maximized. Since the expectation of the score is zero, the Fisher information is also the variance of the score.
   
 -   **Count Based**  
   
@@ -81,7 +82,7 @@ The **Filter-Based Feature Selection** provides a variety of metrics for assessi
 > [!TIP]
 > If you need a different option for custom feature selection method, use the [Execute R Script](execute-r-script.md) module. 
 
-##  <a name="Configuration"></a> How to Use Filter-Based Feature Selection    
+##  <a name="Configuration"></a> How to configure Filter-Based Feature Selection
 
 This module provides two methods for determining feature scores: 
 
@@ -93,9 +94,9 @@ This module provides two methods for determining feature scores:
 
     With the count-based method, the module calculates a score based purely on the values in the column.
     
-### <a name="bkmk_correlationMethods"></a>Generate feature scores using a traditional statistical metric
+### <a name="bkmk_correlationMethods"></a> Generate feature scores using a traditional statistical metric
  
-1.  Add the **Filter-Based Feature Selection** module to your experiment. You can find it in the list of modules in Studio, in the **Feature Selection** group.
+1.  Add the **Filter-Based Feature Selection** module to your experiment. You can find it in the **Feature Selection** category in Studio.
 
 2. Connect an input dataset that contains at least two columns that are potential features.  
 
@@ -138,17 +139,18 @@ This module provides two methods for determining feature scores:
      
     - If you specify fewer result columns than there are feature columns, the features are ranked by descending score, and only the top features are returned. 
   
-7.  Run the experiment, or select the [Filter Based Feature Selection](filter-based-feature-selection.md) module and then click **Run selected**.  
+7.  Run the experiment, or select the [Filter Based Feature Selection](filter-based-feature-selection.md) module and then click **Run selected**.
   
-8. View and interpret the results:
+### Results of feature selection
 
-    + To see a complete list of the feature columns that were analyzed, and their scores, right-click the module, select **Features**, and click **Visualize**.  
+After processing is complete:
+
++ To see a complete list of the feature columns that were analyzed, and their scores, right-click the module, select **Features**, and click **Visualize**.  
   
-    + To view the dataset that is generated based on your feature selection criteria, right-click the module, select **Dataset**, and click **Visualize**. 
-    
-      If the dataset contains fewer columns than you expected, check the module settings, and the data types of the columns provided as input. For example, if you set **Number of desired features** to 1, the output dataset contains just two columns: the label column, and the most highly ranked feature column. 
-  
-  
++ To view the dataset that is generated based on your feature selection criteria, right-click the module, select **Dataset**, and click **Visualize**. 
+
+If the dataset contains fewer columns than you expected, check the module settings, and the data types of the columns provided as input. For example, if you set **Number of desired features** to 1, the output dataset contains just two columns: the label column, and the most highly ranked feature column.
+
 ###  <a name="bkmk_countMethod"></a> Use count-based feature selection  
   
 1.  Add the **Filter-Based Feature Selection** module to your experiment. You can find it in the list of modules in Studio, in the **Feature Selection** group.
@@ -156,34 +158,36 @@ This module provides two methods for determining feature scores:
 2. Connect an input dataset that contains at least two columns that are possible features.  
   
 3.  Select **Count Based** from the list of statistical methods in the **Feature scoring method** dropdown list.  
-  
 4.  For **Minimum number of non-zero elements**, indicate the minimum number of feature columns to include in the output. 
 
-    By default, the module will output all columns that meet the requirements. The module cannot output any column that gets a score of zero.
+    By default, the module outputs all columns that meet the requirements. The module cannot output any column that gets a score of zero.
   
 5.  Run the experiment, or select just the module, and click **Run Selected**.
 
-6. View the results:
+### Results of count-based feature selection
 
-    + To see the list of feature columns with their scores, right-click the module, select **Features**, and click **Visualize** . 
-    + To see the dataset containing the analyzed columns, right-click the module, select **Dataset**, and click **Visualize**.    
++ To see the list of feature columns with their scores, right-click the module, select **Features**, and click **Visualize** . 
++ To see the dataset containing the analyzed columns, right-click the module, select **Dataset**, and click **Visualize**.    
     
-    Unlike other methods, the **Count Based** feature selection method does not rank the variables by highest scores, but returns all variables with a non-zero score, in their original order.  
+Unlike other methods, the **Count Based** feature selection method does not rank the variables by highest scores, but returns all variables with a non-zero score, in their original order.  
     
-    String features always get a zero (0) score and are thus are not output.
+String features always get a zero (0) score and are thus are not output.
 
 ## Examples  
 
-You can see examples of how this module is used by exploring these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+You can see examples of how feature selection is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   In the third step of the [Text Classification](https://gallery.cortanaintelligence.com/Experiment/cf65bf129fee4190b6f48a53e599a755) sample, **Filter-Based Feature Selection** is used to identify the 15 best features. Feature hashing is used to convert the text documents to numeric vectors. Pearson’s correlation is then used on the vector features.  
+-   [Text Classification](https://gallery.cortanaintelligence.com/Experiment/cf65bf129fee4190b6f48a53e599a755); In the third step of this sample, **Filter-Based Feature Selection** is used to identify the 15 best features. Feature hashing is used to convert the text documents to numeric vectors. Pearson’s correlation is then used on the vector features.
   
--   This article provides an introduction to feature selection and feature engineering in machine learning: [Machine learning feature selection and feature engineering](https://azure.microsoft.com/documentation/articles/machine-learning-feature-selection-and-engineering/)  
+-  [Machine learning feature selection and feature engineering](https://azure.microsoft.com/documentation/articles/machine-learning-feature-selection-and-engineering/): This article provides an introduction to feature selection and feature engineering in machine learning.
 
-To see some examples of feature scores, see [Table of scores compared](#bkmk_ScoreExamples).
+To see examples of feature scores, see [Table of scores compared](#bkmk_ScoreExamples).
 
+##  <a name="bkmk_Notes"></a> Technical notes  
 
-##  <a name="bkmk_Notes"></a> Technical Notes  
+You can find this module under **Data Transformation**, in the **Filters** category. 
+
+### Implementation details
 
 If you use Pearson Correlation, Kendall Correlation, or Spearman Correlation on a numeric feature and a categorical label, the feature score is calculated as follows:  
   
@@ -201,7 +205,7 @@ If you use Pearson Correlation, Kendall Correlation, or Spearman Correlation on 
   
 -   A column cannot be a feature if it has been designated as a **Label** or a **Score**.  
   
-### Missing values  
+### How missing values are handled  
   
 -   You cannot specify as a target (label) column any column that has all missing values.  
   
@@ -209,7 +213,7 @@ If you use Pearson Correlation, Kendall Correlation, or Spearman Correlation on 
   
 -   If a column designated as a feature column has all missing values, a zero score is assigned.  
 
-### <a name="bkmk_ScoreExamples"></a>Table of scores compared
+### <a name="bkmk_ScoreExamples"></a> Table of scores compared
 
 To give you an idea of how the scores compare when using different metrics, the following table presents some feature selection scores from multiple features in the automobile price dataset, given the dependent variable **highway-mpg**.
 
@@ -248,13 +252,13 @@ To give you an idea of how the scores compare when using different metrics, the 
 
 + The count-based method does not treat a label column any differently from feature columns.    
 
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -279,8 +283,12 @@ To give you an idea of how the scores compare when using different metrics, the 
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+
+## See also  
  [Feature Selection](feature-selection-modules.md)   
  [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md)   
  [A-Z Module List](a-z-module-list.md)
