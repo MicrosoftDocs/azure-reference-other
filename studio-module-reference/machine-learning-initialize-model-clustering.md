@@ -1,7 +1,8 @@
 ---
 title: "Machine Learning - Initialize Model - Clustering | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 10/05/2016
+ms.date: 01/22/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,7 +12,7 @@ ms.assetid: 2b08f216-51b2-4b1c-b4f2-6f9dd1986936
 caps.latest.revision: 11
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Machine Learning - Initialize Model - Clustering
 
@@ -25,7 +26,7 @@ Clustering, in machine learning, is a method of grouping data points into simila
 
 Over the years, many clustering algorithms have been developed. Almost clustering algorithms use the features of individual items to find similar items. For example, you might apply clustering to find similar people by demographics; or use clustering with text analysis to group sentences with similar topics or sentiment.  
 
-Clustering is called a non-supervised learnign technique because it can be used in unlabeled data. Indeed, clustering is a useful first step for discovering new patterns, and requires little prior knowledge about how the data might be structured or how items are related. Clustering is often used for exploration of data prior to analysis with other more predictive algorithms. 
+Clustering is called a non-supervised learning technique because it can be used in unlabeled data. Indeed, clustering is a useful first step for discovering new patterns, and requires little prior knowledge about how the data might be structured or how items are related. Clustering is often used for exploration of data prior to analysis with other more predictive algorithms. 
 
 ### How to create a clustering model
 
@@ -59,11 +60,11 @@ For examples of clustering in action, see the [Azure AI Gallery](https://gallery
 
 See these articles for help choosing an algorithm:  
 
--   [Machine learning algorithm cheat sheet for Azure ML](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-cheat-sheet/)  
+-   [Machine learning algorithm cheat sheet for Azure ML](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
      Provides a graphical decision chart to guide you through the selection process  
   
--   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/)  
+-   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice)  
   
      Explains in greater detail the different types of machine learning algorithms and how they're used  
 

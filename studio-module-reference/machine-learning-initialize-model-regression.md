@@ -26,17 +26,17 @@ Regression is a task that you can do with many tools: you can fit a regression l
 
 The modules for regression in Azure Machine Learning Studio each incorporate a different method, or algorithm, for regression. In general, a regression algorithm tries to learn the value of a function for a particular instance of data. You might predict someones eight using a height function, or predict the probability of hospital admission based on medical test values.
 
-Regression algorithms can incorporate input from multiple features, by determining the contribution of each feature of the data to the regression function.  
+Regression algorithms can incorporate input from multiple features, by determining the contribution of each feature of the data to the regression function.
 
 ### How to create a regression model
 
 First, select the regression algorithm that meets your needs and suits your data. For help, see these topics:  
   
--   [Machine learning algorithm cheat sheet for Azure ML](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-cheat-sheet/)  
+-   [Machine learning algorithm cheat sheet for Azure ML](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
 
     Provides a graphical decision chart to guide you through the selection process  
   
--   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/)  
+-   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice)  
   
      Explains in greater detail the different types of machine learning algorithms and how they're used  
 

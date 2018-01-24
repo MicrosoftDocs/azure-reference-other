@@ -12,7 +12,7 @@ ms.assetid: 038d91b6-c2f2-42a1-9215-1f2c20ed1b40
 caps.latest.revision: 22
 author: "jeannt"
 ms.author: "jeannt"
-manager: "cgronlun"
+manager: "cgronlund"
 ---
 # Tune Model Hyperparameters
 *Performs a parameter sweep on a model to determine the optimum parameter settings*  
@@ -210,12 +210,16 @@ We recommend that you experiment with the settings to determine the most efficie
 
 ### Choosing an evaluation metric
 
-A report containing the accuracy for each model is presented at the end so that you can review the metric results. A uniform set of metrics is used for all classification models, and a different set of metrics is used for regression models. 
-
-During training, you must choose a **single** metric to use in ranking the models that are generated during the tuning process. You might find that the best metric varies, depending on your business problem, and the cost of false positives and false negatives.
+A report containing the accuracy for each model is presented at the end so that you can review the metric results. A uniform set of metrics is used for all classification models, and a different set of metrics is used for regression models. However, during training, you must choose a **single** metric to use in ranking the models that are generated during the tuning process. You might find that the best metric varies, depending on your business problem, and the cost of false positives and false negatives.
 
 For more information, see [How to evaluate model performance in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-evaluate-model-performance)
-  
+
+These blogs also provide a good description of how to interpret performance metrics when assessing a model's fit:
+
++ [Part 1: Performance measures in Azure ML: Accuracy, Precision, Recall and F1 Score](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/09/performance-measures-in-azure-ml-accuracy-precision-recall-and-f1-score/)  
++ [Part 2: Using ROC plots and the AUC measure in Azure ML](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/09/using-roc-plots-and-the-auc-measure-in-azure-ml/)  
++ [Part 3: Setting the threshold of a binary learning model in Azure ML](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/10/setting-the-threshold-of-a-binary-learning-model-in-azure-ml/)
+
 #### Metrics used for classification
 
 -   **Accuracy** The proportion of true results to total cases.  
@@ -243,13 +247,6 @@ For more information, see [How to evaluate model performance in Azure Machine Le
 -   **Relative squared error** Normalizes the total squared error it by dividing by the total squared error of the predicted values.  
   
 -   **Coefficient of determination** A single number that indicates how well data fits a model. A value of 1 means that the model exactly matches the data; a value of 0 means that the data is random or otherwise cannot be fit to the model. Often referred to as **r<sup>2</sup>**, **R<sup>2</sup>**, or **r-squared**.  
-
-> [!TIP]
->  Need more help understanding how the accuracy metrics are applied? These blogs provide a good description of how to interpret performance metrics when assessing a model's fit:  
->   
->  -   [Part 1: Performance measures in Azure ML: Accuracy, Precision, Recall and F1 Score](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/09/performance-measures-in-azure-ml-accuracy-precision-recall-and-f1-score/)  
-> -   [Part 2: Using ROC plots and the AUC measure in Azure ML](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/09/using-roc-plots-and-the-auc-measure-in-azure-ml/)  
-> -   [Part 3: Setting the threshold of a binary learning model in Azure ML](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/10/setting-the-threshold-of-a-binary-learning-model-in-azure-ml/)  
 
 ### Modules that do not support a parameter sweep
 
