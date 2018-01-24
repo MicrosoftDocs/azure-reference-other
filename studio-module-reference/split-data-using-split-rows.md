@@ -33,8 +33,7 @@ Other options in the **Split Data** module support different ways to divide the 
 + [Split recommender datasets](split-data-using-recommender-split.md): Divide datasets that are used in recommendation models. The dataset should have three columns: items, users, and ratings 
 
 
-##  <a name="HowSplitRows"></a> How to use Split Rows
-
+##  <a name="HowSplitRows"></a> Divide a dataset into two groups 
 
 1.  Add the [Split Data](split-data.md) module to your experiment in Studio, and connect the dataset you want to split.
   
@@ -56,18 +55,23 @@ Other options in the **Split Data** module support different ways to divide the 
 
     With stratified sampling, the data is divided such that each output dataset gets roughly the same percentage of each target value. For example, you might want to ensure that your training and testing sets are roughly balanced with regard to the outcome, or with regard ot some other column such as gender.
 
+7. Run the experiment, or right-click the module and select **Run selected**.
 
-4. Run the experiment, or right-click the module and select **Run selected**.
+##  <a name="bkmk_SplitRowsExamples"></a> Examples
 
+The following examples demonstrate how to perform simple splits using **Split Rows** mode.
 
-##  <a name="bkmk_SplitRowsExamples"></a> Examples  
- The following examples demonstrate how to perform simple splits using **Split Rows** mode:  
-  
--   To split a dataset into two equal parts, just add the [Split Data](split-data.md) module after the dataset without no other changes. By default, the module splits the dataset in two equal parts. For data with an odd number of rows, the second output gets the remainder.  
+### Split into two equal parts
 
--   Assume that you want to split a dataset into two parts, with a third of the data used for training and the remainder for testing or additional splits.  
-  
-     To do this, add a [Split Data](split-data.md) module, and set the **Fraction of rows in the first output** to 0.33. The second output contains the remaining two-thirds.  
+Add the [Split Data](split-data.md) module after the dataset without no other changes. By default, the module splits the dataset in two equal parts. For data with an odd number of rows, the second output gets the remainder. 
+
+### Split into thirds
+
+Assume that you want to split a dataset into two parts, with a third of the data used for training and the remainder for testing or additional splits.
+
+To do this, add a [Split Data](split-data.md) module, and set the **Fraction of rows in the first output** to 0.33. The second output contains the remaining two-thirds.
+
+To divide the second output into equal parts, add another instance of the **Split Data** module, and this time use the default for a 50-50 split.
 
 ##  <a name="Notes"></a> Technical notes
 
@@ -76,7 +80,7 @@ This section contains implementation details, tips, and answers to frequently as
 ### Implementation details
 
 - This module requires that the dataset contain at least two rows; otherwise, an error is raised.
-  
+
 - If you use the option to specify the desired number of rows, the specified number must be a positive integer, and the number must be less than the total number of rows in the dataset.
 
 - All percentage values must be within the range 0 and 1.
@@ -91,7 +95,5 @@ This section contains implementation details, tips, and answers to frequently as
 
 ## See also
 
- [Split Data using Regular Expression](split-data-using-regular-expression.md)  
- [Split Data using Relative Expression](split-data-using-relative-expression.md)  
- [Split Data using Recommender Split](split-data-using-recommender-split.md)  
- [A-Z Module List](a-z-module-list.md)  
+ [Sample and Split](data-transformation-sample-and-split.md)
+ [Partition and Sample](partition-and-sample.md)

@@ -16,7 +16,7 @@ manager: "cgronlund"
 ---
 # Split a dataset using a relative expression
 
-This topic describes how to use the **Relative Expression Split** option in the [Split Data](split-data.md) module of Azure Machine Learning Studio. This option is helpful when you need to divide a dataset into training and testing datasets using a numerical expression. For example:
+This article describes how to use the **Relative Expression Split** option in the [Split Data](split-data.md) module of Azure Machine Learning Studio. This option is helpful when you need to divide a dataset into training and testing datasets using a numerical expression. For example:
 
 + Age greater than 40 vs. 40 or younger
 + Test score of 60 or higher vs. less than 60
@@ -30,21 +30,23 @@ For general information about data partitioning for machine learning experiments
 
 ## Related tasks
 
-Other options in the **Split Data** module support different ways to divide the data:
+Other options in the **Split Data** module:
 
 + [Split data using regular expressions](split-data-using-regular-expression.md): Apply a regular expression to  a single text column, and divide the dataset based on the results 
 
 + [Split recommender datasets](split-data-using-recommender-split.md): Divide datasets that are used in recommendation models. The dataset should have three columns: items, users, and ratings 
 
++ [Split by percentage of dataset](split-data-using-split-rows.md)
+
 ##  <a name="HowRelativeSplit"></a> Use a relative expression to divide a dataset
 
 1.  Add the [Split Data](split-data.md) module to your experiment in Stuio, and connect it as input to the dataset you want to split.
   
-2.  For **Splitting mode**, select **relative expression split** .  
+2.  For **Splitting mode**, select **relative expression split**.
   
-3. In the **Relational expression** text box, type an expression that performs a numeric comparison operation. The expression can be applied to only one column.
+3. In the **Relational expression** text box, type an expression that performs a numeric comparison operation, on a single column:
 
-    - The column must contain numbers of any numeric data type. Date/time data types are also supported.
+    - The column contains numbers of any numeric data type, including date/time data types.
 
     - The expression can reference a maximum of one column name.
 
@@ -52,7 +54,7 @@ Other options in the **Split Data** module support different ways to divide the 
 
     - The following operators are supported: `<`, `>`, `<=`, `>=`, `==`, `!=`
 
-    - You cannot group operations by using `(` and `)`.  
+    - You cannot group operations by using `(` and `)`.
 
     For ideas, see the [Examples](#bkmk_RelativeExpressionExamples) section.
 
@@ -116,7 +118,7 @@ Rows with a date greater than 10-08-2015 are added to the first (left) output da
 
 Rows with a date of 10-08-2015 or earlier are added to the second (right) output dataset.  
 
-## < a="bkmk_Notes"></a> Technical notes
+## <a="bkmk_Notes"></a> Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -131,10 +133,6 @@ The following restrictions apply to relative expressions on a dataset:
 + Grouping operations with parentheses is not supported.
 
  ## See also  
-   
- [Split Data using Regular Expression](split-data-using-regular-expression.md)   
- [Split Data using Split Rows](split-data-using-split-rows.md)   
- [Split Data using Recommender Split](split-data-using-recommender-split.md)
  
  [Sample and Split](data-transformation-sample-and-split.md)   
  [Partition and Sample](partition-and-sample.md)   

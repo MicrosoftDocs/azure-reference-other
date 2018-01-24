@@ -20,16 +20,14 @@ This article describes the modules in Azure Machine Learning Studio that support
 
 For general information about modules in Azure Machine Learning Studio, and how they can be combined to create complete machine learning experiments, see [Machine learning modules](machine-learning-modules.md).
 
-## More about classification  
+## More about classification
 
 Classification is a method in machine learning of using data to determine the category, type, or class of an item or row of data. For example, classification can be used to:
- 
+
 + Classify email filters as spam, junk, or good. 
 + Determine whether a patient's lab sample is cancerous or not
 + Categorize customers by their propensity to respond to a sales campaign
 + Identify sentiment as positive or negative
-
-
 
 Classification tasks are frequently organized as to whether classification is binary (either A or B) or multiclass (multiple categories can be predicted using a single model). 
 
@@ -72,13 +70,13 @@ For examples of classification in action, see the [Azure AI Gallery](https://gal
 
 See these articles for help choosing an algorithm:  
 
--   [Machine learning algorithm cheat sheet for Azure ML](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-cheat-sheet/)  
+-   [Machine learning algorithm cheat sheet for Azure ML](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
   
-     Provides a graphical decision chart to guide you through the selection process  
+     Provides a graphical decision chart to guide you through the selection process
   
--   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/)  
+-   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice)
   
-     Explains in greater detail the different types of machine learning algorithms and how they're used  
+     Explains in greater detail the different types of machine learning algorithms and how they're used
 
 ## See also
  [Regression](machine-learning-initialize-model-regression.md)   
