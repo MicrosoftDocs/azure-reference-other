@@ -48,7 +48,7 @@ However, simple decision trees can overfit on data, and are less generalizable t
 
 For more information, see [Decision Forests](http://go.microsoft.com/fwlink/?LinkId=403677), or the other papers listed in the [Technical notes](#bkmk_Notes) section.  
 
-## How to configure Two-Class Decision Forest  
+## How to configure Two-Class Decision Forest
   
 1.  Add the **Two-Class Decision Forest** module to your experiment in Azure Machine Learning Studio, and open the **Properties** pane of the module. 
 
@@ -70,35 +70,38 @@ For more information, see [Decision Forests](http://go.microsoft.com/fwlink/?Lin
   
     -   **Single Parameter**: If you know how you want to configure the model, you can provide a specific set of values as arguments.
   
-    -   **Parameter Range**: If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to find the optimal configuration.  The trainer will iterate over multiple combinations of the settings you provided and determine the combination of values that produces the best model.  
+    -   **Parameter Range**: If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to find the optimal configuration.  The trainer iterates over multiple combinations of the settings you provided and determines the combination of values that produces the best model.
   
-4.  For **Number of decision trees**, type the maximum number of decision trees that can be created in the ensemble. By creating more decision trees, you can potentially get better coverage, but training time will increase.  
+4.  For **Number of decision trees**, type the maximum number of decision trees that can be created in the ensemble. By creating more decision trees, you can potentially get better coverage, but training time increases.  
   
     > [!NOTE]
-    >  This value also controls the number of trees displayed when visualizing the trained model. if you want to see or print a single tree, you can set the value to 1; however, this means that only one tree will be produced (the tree with the initial set of parameters) and no further iterations will be performed.  
+    >  This value also controls the number of trees displayed when visualizing the trained model. If you want to see or print a single tree, you can set the value to 1. However, only one tree can be produced (the tree with the initial set of parameters) and no further iterations are performed.
   
-5.  For **Maximum depth of the decision trees**, type a number to limit the maximum depth of any decision tree. Increasing the depth of the tree might increase precision, at the risk of some overfitting and increased training time.  
+5.  For **Maximum depth of the decision trees**, type a number to limit the maximum depth of any decision tree. Increasing the depth of the tree might increase precision, at the risk of some overfitting and increased training time.
   
-6.  For **Number of random splits per node**, type the number of splits to use when building each node of the tree. A *split* means that features in each level of the tree (node) are randomly divided.  
+6.  For **Number of random splits per node**, type the number of splits to use when building each node of the tree. A *split* means that features in each level of the tree (node) are randomly divided.
   
-7.  For **Minimum number of samples per leaf node**, indicate the minimum number of cases that are required to create any terminal node (leaf) in a tree.  
+7.  For **Minimum number of samples per leaf node**, indicate the minimum number of cases that are required to create any terminal node (leaf) in a tree.
   
      By increasing this value, you increase the threshold for creating new rules. For example, with the default value of 1, even a single case can cause a new rule to be created. If you increase the value to 5, the training data would have to contain at least 5 cases that meet the same conditions.  
   
-8.  Select the **Allow unknown values for categorical features** option to create a group for unknown values in the training or validation sets.
+8.  Select the **Allow unknown values for categorical features** option to create a group for unknown values in the training or validation sets. The model might be less precise for known values, but it can provide better predictions for new (unknown) values. 
+
+     If you deselect this option, the model can accept only the values that are contained in the training data.
   
-     If you deselect it, the model can accept only the values that are contained in the training data. In the former case, the model might be less precise for known values, but it can provide better predictions for new (unknown) values.  
-  
-9. Attach a labeled dataset, and train the model using one of these modules:  
+9. Attach a labeled dataset, and one of the [training modules](machine-learning-train.md):  
   
     -   If you set **Create trainer mode** to **Single Parameter**, use the [Train Model](train-model.md) module.  
   
     -   If you set **Create trainer mode** to **Parameter Range**, use [Tune Model Hyperparameters](tune-model-hyperparameters.md).  
   
     > [!NOTE]
-    >  - If you pass a parameter range to [Train Model](train-model.md), it will use only the first value in the parameter range list.  
-    > -   If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and using the default values for the learner.  
-    > -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.
+    > 
+    > If you pass a parameter range to [Train Model](train-model.md), only the first value in the parameter range list is used.  
+    > 
+    > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values, and uses the default values for the learner.  
+    > 
+    > If you select the **Parameter Range** option and enter a single value for any parameter, that single value is used throughout the sweep, even if other parameters change across a range of values.
 
 ### Results
 
@@ -124,6 +127,7 @@ For examples of how decision forests are used in machine learning, see the sampl
 
 This section contains additional implementation details, research, and frequently asked questions.
 ### Tips
+
 If you have limited data, or if you want to minimize the time spent training the model, try these settings:  
   
 **Limited training set**

@@ -26,7 +26,7 @@ The modules cover a wide range of features and functions necessary for machine l
   
 + If you don't know which module you might need, see this article: [How to choose algorithms for Microsoft Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-algorithm-choice/).  
   
-##  <a name="modules"></a> Modules table
+##  <a name="modules"></a> Alphabetical table of modules
 
 |Module name|Description|  
 |------------|-----------------|  

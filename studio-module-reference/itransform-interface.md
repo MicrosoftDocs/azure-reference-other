@@ -1,7 +1,7 @@
 ---
 title: "ITransform interface | Microsoft Docs"
 ms.custom: ""
-ms.date: 06/08/2015
+ms.date: 01/22/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,28 +11,22 @@ ms.assetid: 444302ce-a1b6-4003-9a64-8a56120be6ce
 caps.latest.revision: 5
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # ITransform interface
-**ITransform interface**  
-  
- The `ITransform` interface applies a predefined transformation to data.  
-  
- This interface encapsulates the following functionality:  
-  
--   Accepts a predefined transformations  
-  
--   Accepts an input dataset  
-  
--   Returns a `DataTable` containing the transformed data  
-  
-##  <a name="also"></a> See Also  
-  
-|Type|Description|  
-|----------|-----------------|  
-|[ICluster interface](icluster-interface.md)|ICluster interface|  
-  
-## See Also  
- [A-Z Module List](a-z-module-list.md)   
- [Module Parameter Types](machine-learning-module-parameter-types.md)   
- [Module Data Types](machine-learning-module-data-types.md)
+
+This article describes `ITransform`, which is an interface in Azure Machine Learning Studio that stores a predefined transformation, or applies a predefined transformation to data.
+
+The `ITransform` interface provides the following functionality:
+
++ Lets you save a transformation resulting from the operation of another module
++ Accepts a predefined transformation
++ Accepts an input dataset
++ Returns a `DataTable` containing the transformed data
+
+
+You can interact with `ITransform` only in Studio, or in one of the supported APIs.
+
+## See also
+ [Module parameter types](machine-learning-module-parameter-types.md)   
+ [Module data types](machine-learning-module-data-types.md)
