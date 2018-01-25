@@ -28,14 +28,16 @@ The purpose of the **Import Count Table** module is to allow customers who creat
 For general information about count tables and how they are used to create features, see [Learning with Counts](data-transformation-learning-with-counts.md).
 
 > [!IMPORTANT]
-> This module is provided solely for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. For all new experiments, we recommend that you use the following modules:  
->   
->  -   [Build Counting Transform](build-counting-transform.md)  
-> -   [Modify Count Table Parameters](modify-count-table-parameters.md)  
-> -   [Merge Count Transform](merge-count-transform.md)  
+> This module is provided solely for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. 
+
+For all new experiments, we recommend that you use the following modules:
+
+-   [Build Counting Transform](build-counting-transform.md)  
+-   [Modify Count Table Parameters](modify-count-table-parameters.md)  
+-   [Merge Count Transform](merge-count-transform.md)  
 
 ## How to configure Import Count Table
-  
+
 1.  In Azure Machine Learning Studio, open an experiment that contains a count table created using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.
   
 2.  Add the **Import Count Table** module to the experiment.
@@ -75,19 +77,19 @@ For general information about count tables and how they are used to create featu
 7. When complete, right-click the output of the  **Import Count Table** module, select **Save as Transform**, and type a name for the transformation. When you do this, the merged count tables and any featurization parameters you might have applied are saved in a format that can be applied to a new dataset.  
   
     For more information about how to apply a counting transformation to dataset to use in building a model, see these topics:  
-  
+
 ## Examples
 
 Explore examples of count-based featurization using these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
-  
+
 - [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
 - [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): demonstrates the use of count-based features in a multiclass prediction task.
 - [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
 > These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
-  
-##  <a name="ExpectedInputs"></a> Expected inputs  
+
+##  <a name="ExpectedInputs"></a> Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  

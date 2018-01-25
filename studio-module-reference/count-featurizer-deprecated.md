@@ -21,7 +21,7 @@ manager: "cgronlund"
   
 ## Module overview  
 
-This article describes how to use the **Count Featurizer** module in Azure Machine Learning Studio to create features from a previously generated count table. 
+This article describes how to use the **Count Featurizer** module in Azure Machine Learning Studio, to create features from a previously generated count table. 
 
 Creating features from counts is an efficient way of summarizing useful information about the distribution of data and labels in a set of training data. This method of creating features from raw data is particularly useful in large data sets with high-cardinality features.  For example, in fraud detection, count tables can be used to collect information about the user ID, product and transaction and all the possible combinations over terabytes of data.  Count tables can also be useful in improving accuracy on small data sets.
 
@@ -64,15 +64,15 @@ Creating features from counts is an efficient way of summarizing useful informat
   
 7. For **Additional prior pseudo examples**, type the number of additional examples to include. The examples are called *pseudo examples* because they are generated based on the prior distribution.
   
-8. For **Laplacian noise scale**, type a positive floating-point value. This number denotes the scale used when  noise is introduced based on sampling from a Laplacian distribution.  
+8. For **Laplacian noise scale**, type a positive floating-point value. This number denotes the scale used when  noise is introduced based on sampling from a Laplacian distribution.
   
     The Laplacian noise scale parameter is provided to make it statistically safe to count and train on the same data set. In other words, by incorporating some acceptable level of noise into the model, the model becomes less susceptible to new values in data.
   
 9. For **Output features include**, select the type of count-based features to generate: 
   
-    + **CountsOnly**:   Creates features using counts.
-    + **LogOddsOnly**:   Creates features using the log of the odds ratio.  
-    + **BothCountsAndLogOdds**:   Creates features using both counts and log odds.  
+    + **CountsOnly**: Creates features using counts.
+    + **LogOddsOnly**: Creates features using the log of the odds ratio.  
+    + **BothCountsAndLogOdds**: Creates features using both counts and log odds.  
   
 10. Select the option, **Ignore back off column**, if you want to ignore the `IsBackOff` column in the output when creating features.
   
@@ -92,7 +92,7 @@ Explore examples of count-based featurization in the [Azure AI Gallery](https://
 It is statistically safe to count and train on the same data set if you set the Laplacian noise scale parameter.
 
 ##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Count metadata|[Data Table](data-table.md)|The metadata of the counts.|  

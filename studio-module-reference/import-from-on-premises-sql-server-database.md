@@ -14,33 +14,39 @@ ms.author: "jeannt"
 manager: "cgronlun"
 ---
 # Import from On-Premises SQL Server Database
+
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data from an on-premises SQL Server database into a machine learning experiment.  
-    
- Azure Machine Learning can access an on-premises SQL Server database if the data is provided using a Microsoft Data Management Gateway. Therefore, before you use [Import Data](import-data.md),  you must meet these requirements:
+
+Azure Machine Learning can access an on-premises SQL Server database if the data is provided using a Microsoft Data Management Gateway. Therefore, before you use [Import Data](import-data.md),  you must meet these requirements:
  
- + Install a Microsoft Data Management Gateway that can access the data source
- + Register the gateway in your Machine Learning workspace
- + Configure the [Import Data](import-data.md) to identify the gateway
++ Install a [Microsoft Data Management Gateway](https://docs.microsoft.com/azure/data-factory/v1/data-factory-data-management-gateway) that can access the data source
++ Register the gateway in your Azure Machine Learning workspace
++ Configure the [Import Data](import-data.md) to identify the gateway
  
 After the gateway connection is established, you can then specify additional properties, such as the server and database names, authentication method, and a database query.  
   
-## How to Install a Microsoft Data Management Gateway  
+## How to install a Microsoft Data Management Gateway  
 
- To access an on-premises SQL Server database in Azure Machine Learning, you need to download and install the **Microsoft Data Management Gateway**, and then register the gateway in Machine Learning Studio.  
-  
- For details about installing and registering the gateway, see [Install the Microsoft Data Management Gateway](https://azure.microsoft.com/documentation/articles/machine-learning-use-data-from-an-on-premises-sql-server/#install-the-microsoft-data-management-gateway), and **Step 1: Create a gateway**, in the article [Perform advanced analytics with Azure Machine Learning using data from an on-premises SQL server](https://azure.microsoft.com/documentation/articles/machine-learning-use-data-from-an-on-premises-sql-server/).  
-  
-## How to Import Data from an On-premises SQL Server Database  
+To access an on-premises SQL Server database in Azure Machine Learning, you need to download and install the **Microsoft Data Management Gateway**, and then register the gateway in Machine Learning Studio.  
+
+For details about installing and registering the gateway, see these articles:
+
++  [Perform advanced analytics with Azure Machine Learning using data from an on-premises SQL Server database](https://docs.microsoft.com/azure/machine-learning/studio/use-data-from-an-on-premises-sql-server)  
++ [Troubleshoot issues with using Data Management Gateway](https://docs.microsoft.com/azure/data-factory/v1/data-factory-troubleshoot-gateway-issues)]
+
+## How to import data from an on-premises SQL Server database
 
 After a Data Management Gateway has been installed on a computer where it can access your SQL Server database, and you have registered the gateway in Machine Learning Studio, you must configure the [Import Data](import-data.md) module.  
- > [!TIP] 
- > Before you start, disable your browser's pop-up blocker for the site, `studio.azureml.net`. If you are using the Google Chrome browser, you must download and install one of the plug-ins that are available at the Google Chrome WebStore: [Click Once App Extension](https://chrome.google.com/webstore/search/clickonce?_category=extensions).
- 
+
+Before you start, disable your browser's pop-up blocker for the site, `studio.azureml.net`. 
+
+If you are using the Google Chrome browser, you must download and install one of the plug-ins that are available at the Google Chrome WebStore: [Click Once App Extension](https://chrome.google.com/webstore/search/clickonce?_category=extensions).
+
  ### Use the Data Import Wizard
 
-The module features a new wizard to help you choose a storage option,  select from among existing subscriptions and accounts, and quickly configure all options.
+The module features a new wizard to help you choose a storage option, select from among existing subscriptions and accounts, and quickly configure all options.
 
-1. Add the **Import Data** module to your experiment. You can find the module under **Data Input and Output**.
+1. Add the **Import Data** module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
 
 2. Click **Launch Import Data Wizard** and follow the prompts.
 
@@ -50,15 +56,15 @@ If you need to edit an existing data connection, the wizard loads all previous c
 
 ### Manually set properties in the Import Data module
   
-1.  Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) group in the **experiment items** list in Azure Machine Learning Studio.   
+1.  Add the [Import Data](import-data.md) module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
   
 2.  For **Data source**, select **On-Premises SQL Database**.  
   
 3.  Set the following options specific to the SQL Server database.  
   
-    -   For **Data gateway**, select the gateway you created.  
-  
-    -   Enter the **Database server name** and **Database name** for the database.  
+    - **Data gateway**: Select the gateway you created. The gateway must be registered or it does not show in the list.
+    - **Database server name**: Type the name of the SQL Server instance.
+    - **Database name**: Type the database name.
   
     -   Click **Enter values** under **User name and password** and enter your database credentials. You can use Windows Integrated Authentication or SQL Server Authentication depending upon how your on-premises SQL Server is configured. 
     
@@ -85,47 +91,54 @@ Optionally, you can change the dataset and its metadata using the tools in Studi
   
 -   Use [Partition and Sample](partition-and-sample.md) to separate the dataset by criteria, or get the top *n* rows.  
   
-##  <a name="TechnicalNotes"></a> Technical Notes  
- This section contains some advanced configuration options and answers to commonly asked questions.  
-  
--   **How can I filter data as it is being read from the source?**  
-  
-     The [Import Data](import-data.md) module does not support filtering as data is being read. We recommend that you create a view or define a query that generates only the rows you need.  
-  
-    > [!NOTE]
-    >  If you find that you have loaded more data than you need, you can overwrite the cached dataset by reading a new dataset, and saving it with the same name as the older, larger data.  
-  
--   **Why do I get an error message similar to “Type Decimal is not supported”?**  
-  
-     When reading data from a SQL database, you might encounter an error message reporting an unsupported data type.  
-  
-     If the data you get from the SQL database includes data types that are not supported in Azure Machine Learning, you should cast or convert the decimals to a supported data type before reading the data. The reason is that [Import Data](import-data.md) cannot automatically perform any conversions that would result in a loss of precision.  
-  
-     For more information about supported data types, see [Module Data Types](machine-learning-module-data-types.md).  
-  
--   **Why are some characters not displayed correctly?**  
-  
-     Azure Machine Learning supports the UTF-8 encoding. If string columns in your database use a different encoding, the characters might not be imported correctly.  
-  
-     One option is to export the data to a CSV  file in Azure storage, and use the option **CSV with encoding** to specify parameters for custom delimiters, the code page, and so forth.  
-  
--   **I have set up a Data Management Gateway on my on-premises server. Can I share the same gateway between workspaces?**  
-  
-     While you can set up multiple Data Management Gateways in a single workspace (for example, one each for development, testing, production, *etc.*), a gateway can’t be shared across workspaces. You will need a separate gateway for each workspace.  
-  
--   **I have set up a Data Management Gateway on my on-premises server that I use for Power BI / Azure Data Factory. Can I use the same gateway for Machine Learning?**  
-  
-     Machine Learning requires a separate Data Management Gateway. If you already have a gateway that's being used for Power BI or Azure Data Factory, then you need a separate server where a gateway for Machine Learning is installed. You can't install multiple gateways on a single server.  
-  
--   **I want to be able to export data to my on-premises SQL server. Can I use the gateway with the [Export Data](export-data.md) module to write data to my on-premises SQL server?**?  
-  
-     Currently, Azure Machine Learning only supports importing data. We're evaluating whether you'll be able to write to your on-premises database in the future. In the meantime, you can use Azure Data Factory to copy data from the cloud to your on-premises database.  
-  
--   **I have a data source that is not Microsoft SQL Server (Oracle, Teradata, *etc.*). Can I read the data in Azure Machine Learning using the on-premises option in the [Import Data](import-data.md) module?**  
-  
-     Currently the Azure Machine Learning [Import Data](import-data.md) module supports only Microsoft SQL Server. You can use Azure Data Factory to copy your on-premises data into cloud storage such as Azure Blob Storage or Azure Database, and then use your cloud data source in the [Import Data](import-data.md) module.  
-  
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="TechnicalNotes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Common questions
+
+#### Can I filter data as it is being read from the source?
+
+The [Import Data](import-data.md) module itself does not support filtering as data is being read. We recommend that you create a view or define a query that generates only the rows you need.
+
+> [!NOTE]
+>  If you find that you have loaded more data than you need, you can overwrite the cached dataset by reading a new dataset, and saving it with the same name as the older, larger data.  
+
+#### Why do I get the error, “Type Decimal is not supported”?
+
+When reading data from a SQL database, you might encounter an error message reporting an unsupported data type. 
+
+If the data you get from the SQL database includes data types that are not supported in Azure Machine Learning, you should cast or convert the decimals to a supported data type before reading the data. The reason is that [Import Data](import-data.md) cannot automatically perform any conversions that would result in a loss of precision.  
+
+#### Why are some characters not displayed correctly?
+
+Azure Machine Learning supports the UTF-8 encoding. If string columns in your database use a different encoding, the characters might not be imported correctly.
+
+One option for preserving these characters is to export the data to a CSV  file in Azure storage, and use the option **CSV with encoding** to specify parameters for custom delimiters, the code page, and so forth.  
+
+#### I set up a Data Management Gateway on my on-premises server. Can I share the same gateway between workspaces?
+
+No. You must create a separate gateway for each workspace.  
+
+While you can set up multiple Data Management Gateways in a single workspace (for example, one each for development, testing, production, etc.), a gateway can’t be shared across workspaces. 
+
+#### I have set up a Data Management Gateway on my on-premises server that I use for Power BI or Azure Data Factory. Can I use the same gateway for Azure Machine Learning?
+
+Each service requires a separate Data Management Gateway. If you already have a gateway that's being used for Power BI or Azure Data Factory, you must set up a separate server and install a gateway for machine learning. 
+
+You can't install multiple gateways on a single server.  
+
+#### I want to be able to export data to my on-premises SQL server. Can I use the gateway with the [Export Data](export-data.md) module to write data to my on-premises SQL server?
+
+Currently, Azure Machine Learning only supports importing data. We're evaluating whether you'll be able to write to your on-premises database in the future. In the meantime, you can use Azure Data Factory to copy data from the cloud to your on-premises database.  
+
+#### I have a data source that is not Microsoft SQL Server (Oracle, Teradata, etc.). Can I read the data in Azure Machine Learning using the on-premises option in the [Import Data](import-data.md) module?
+
+Currently the Azure Machine Learning [Import Data](import-data.md) module supports only Microsoft SQL Server. 
+
+As a workaround, you can use Azure Data Factory to copy your on-premises data into cloud storage such as Azure Blob Storage or Azure Database, and then use your cloud data source in the [Import Data](import-data.md) module.  
+
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -155,8 +168,11 @@ Optionally, you can change the dataset and its metadata using the tools in Studi
 |[Error 0015](errors/error-0015.md)|An exception occurs if the database connection has failed.|  
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+## See also
  [Import Data](import-data.md)   
  [Export Data](export-data.md)   
  [Import from Web URL via HTTP](import-from-web-url-via-http.md)   

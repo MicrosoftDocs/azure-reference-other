@@ -18,15 +18,15 @@ manager: "jhubbard"
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
   
-## Module Overview  
+## Module overview
 
-This article describes how to use the **Group Categorical Values** module in Azure Machine Learning, to create an in-place lookup table. 
+This article describes how to use the **Group Categorical Values** module in Azure Machine Learning, to create an in-place lookup table.
 
-The typical use for grouping categorical values is to merge multiple string values into a single new level. For example, you might assign individual postal codes in a region to a single regional code, or group multiple products under one category.  
-  
- To use this module, you type the lookup values you want to use, and map existing values to the replacement values. You can create groupings only for categorical columns, notto  columns of numeric type or columns designated as labels or features. 
-  
-Any column values that are not explicitly mapped to a new level are assigned to a default level. For example, if you did not map all the individual postal codes, they would be grouped in a level for unmapped values, which you might name **Unknown**.  
+The typical use for grouping categorical values is to merge multiple string values into a single new level. For example, you might assign individual postal codes in a region to a single regional code, or group multiple products under one category.
+
+To use this module, you type the lookup values you want to use, and map existing values to the replacement values. You can create groupings only for categorical columns, notto  columns of numeric type or columns designated as labels or features. 
+
+Any column values that are not explicitly mapped to a new level are assigned to a default level. For example, if you did not map all the individual postal codes, they would be grouped in a level for unmapped values, which you might name **Unknown**.
 
 > [!NOTE] 
 > A maximum of 20 new levels can be created, including the default level. 
@@ -35,11 +35,10 @@ Any column values that are not explicitly mapped to a new level are assigned to 
 > 
 > Or, use SQL statements in the [Apply SQL Transformation](apply-sql-transformation.md) module.  
   
-## How to Use Group Categorical Values  
+## How to use Group Categorical Values
 
 We recommend that you prepare the list of existing values, and the new categories, beforehand. For each category, you should prepare a new category name, and a comma-separated list of values to includ ein the category.
 
-    
 1.  Add the **Group Categorical Values** module to your experiment. You can find the module under **Data Transformation**, **Manipulation**.
 
 2. Connect a dataset that has the values you want to transform.
@@ -67,17 +66,19 @@ We recommend that you prepare the list of existing values, and the new categorie
 9.  Continue to type new level names and type or paste values that should be mapped to the new level.
 
     > [NOTE]
-    > Be careful and save your list of values in a separate file! If you change the number of levels, any strings you previously typed will be removed, and you must start over. However you can revert to the original settings. 
-  
+    > Be careful and save your list of values in a separate file! If you change the number of levels, any strings that you previously typed are removed, and you must start over. However you can revert to the original settings. 
+
 10.  Run the experiment.  
 
-11. To view the results, right-click the **Group Categorical Values** module, select **Results dataset**, and click **Visualize**. 
-  
-## Examples  
+### Results
 
-There are no examples of this module in the [Model Gallery](https://gallery.cortanaintelligence.com/). 
+To view the results, right-click the **Group Categorical Values** module, select **Results dataset**, and click **Visualize**.
 
-However, you can try it for yourself by using a small dataset with some string variables that can be easily grouped, such as the Automobile price dataset that is provided in Azure Machine Learning Studio.  
+## Examples
+
+For examples of macine learning in action, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). 
+
+You can also try this module for yourself, by using a small dataset with some string variables that can be easily grouped, such as the **Automobile price** dataset that is provided in Azure Machine Learning Studio.
 
 Let's assume that you want to group cars in the Automobile price dataset by engine size, using the number of cylinders. Rather than lots of different engine sizes, you will create the new levels, "big", "small", and "other" as follows:
 
@@ -89,28 +90,26 @@ Let's assume that you want to group cars in the Automobile price dataset by engi
 2. Add the **Edit Metadata** module, and change the "num-of-cylinders" column to **Categorical**.
 3. Add the **Group Categorical Values** module and connect the modified dataset.
 2. For **Default level name**, type `other`. You don't need to provide values for this level.
-3. For **Name of new level 1**, type `big`.
-
-    In the list of old levels to map to level 1, paste in `six, eight, twelve`. 
-5. For **Name of new level 2**, type `small`.
-
-   For the mapped values, paste in `two, four`.
+3. For **Name of new level 1**, type `big`. In the list of old levels to map to level 1, paste in `six, eight, twelve`. 
+5. For **Name of new level 2**, type `small`. For the mapped values, paste in `two, four`.
 6. Run the experiment.
 7. When you **Visualize** the results, you realize that the original dataset had some odd engine sizes that you didn't account for, such as `five` and `three`. All such items are mapped to the `other` level.
-  
-## Technical Notes  
 
- You might encounter the error message, “Column with name "\<columnname>" is not in an allowed category.”  
+## Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
++ You might encounter the error message, “Column with name "\<columnname>" is not in an allowed category.”  
+
+    This message indicates that the column you selected is not a categorical column. You can mark the column as `Categorical` by using [Edit Metadata](edit-metadata.md), or select a different column that contains appropriate category values.  
   
- This message indicates that the column you selected is not a categorical column. You can mark the column as `Categorical` by using [Edit Metadata](edit-metadata.md), or select a different column that contains appropriate category values.  
-  
-##  <a name="ExpectedInputs"></a> Expected Input  
+##  <a name="ExpectedInputs"></a> Expected inputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Data to group|  
   
-##  <a name="parameters"></a> Module Parameters  
+##  <a name="parameters"></a> Module parameters
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -118,14 +117,14 @@ Let's assume that you want to group cars in the Automobile price dataset by engi
 |Output mode|any|OutputTo|ResultOnly|Specify how the category labels should be output.|  
 |Default level name|any|String||Indicate the default level to use if no mappings match.|  
 |New number of levels|List|Number of groups||Specify the number of levels after values have been grouped, including the default level.|  
-  
-##  <a name="Outputs"></a> Output  
-  
+
+##  <a name="Outputs"></a> Output
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Grouped data|  
-  
-## See Also  
+
+## See also
  [Manipulation](data-transformation-manipulation.md)   
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)

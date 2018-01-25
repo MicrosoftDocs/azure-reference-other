@@ -21,14 +21,14 @@ manager: "cgronlund"
   
 ## Module overview  
 
-This article describes how to use the **Build Counting Transform** module in Azure Machine Learning Studio to analyze training data. From this data, the module builds a *count table* as well as a set of *count-based features* that can be used in a predictive model.
-  
- A count table contains the joint distribution of all feature columns, given a specified label column. Such statistics are useful in determining which columns have the most information value. *Count-based featurization* is useful because such features are more compact than the original training data, but capture all the most useful information. You can use the module parameters to customize how the counts are transformed into the new set of count-based features.  
-  
- After generating counts and transforming them into features, you can save the process as a transformation for re-use on related data. You can also modify the set of features without having to generate a new set of counts, or merge the counts and features with another set of counts and features.  
-  
- The ability to re-use and re-apply count-based features is useful in scenarios such as these:  
-  
+This article describes how to use the **Build Counting Transform** module in Azure Machine Learning Studio, to analyze training data. From this data, the module builds a *count table* as well as a set of *count-based features* that can be used in a predictive model.
+
+A count table contains the joint distribution of all feature columns, given a specified label column. Such statistics are useful in determining which columns have the most information value. *Count-based featurization* is useful because such features are more compact than the original training data, but capture all the most useful information. You can use the module parameters to customize how the counts are transformed into the new set of count-based features.  
+
+After generating counts and transforming them into features, you can save the process as a transformation for re-use on related data. You can also modify the set of features without having to generate a new set of counts, or merge the counts and features with another set of counts and features.  
+
+The ability to re-use and re-apply count-based features is useful in scenarios such as these:  
+
 -   New data becomes available to improve the coverage or balance of your dataset.  
   
 -   Your original counts and features were based on a very large dataset that you don’t want to re-process. By merging the counts you can update with new data.  
@@ -59,9 +59,9 @@ You can create a count-based feature transformation directly from a dataset, and
   
 3.  Use the **Number of classes** option to specify the number of values in your label column.  
   
-    -   For any binary classification problem, type `2`.  
+    -   For any binary classification problem, type `2`.
   
-    -   For a classification problem with more than two possible outputs, you must specify in advance the exact number of classes to count. If you enter a number that is less than the actual number of classes, the module will return an error.  
+    -   For a classification problem with more than two possible outputs, you must specify in advance the exact number of classes to count. If you enter a number that is less than the actual number of classes, the module will return an error.
   
     -   If your dataset contains multiple class values and the class label values are non-sequential, you must use [Edit Metadata](edit-metadata.md) to specify that the column contains categorical values.  
   
@@ -73,7 +73,7 @@ You can create a count-based feature transformation directly from a dataset, and
 
 6.  Use the **Module type** option to indicate the type of data that you will be counting, based on the storage mode:  
   
-    + **Dataset**: Choose this option if you are counting data that is saved as a dataset in Azure Machine Learning Studio.  
+    + **Dataset**: Choose this option if you are counting data that is saved as a dataset in Azure Machine Learning Studio.
   
     + **Blob**: Choose this option if your source data used to build counts is stored as a block blob in Windows Azure storage.  
   
@@ -115,8 +115,8 @@ You can create a count-based feature transformation directly from a dataset, and
 
     Optionally, you can save the transform if you want to merge the set of count-based features with another set of count-based features. For more information, see [Merge Count Transform](merge-count-transform.md).  
 
-###  <a name="bkmk_MergeCounts"></a> Merge counts and features from multiple datasets  
-  
+###  <a name="bkmk_MergeCounts"></a> Merge counts and features from multiple datasets
+
 1.  In Azure Machine Learning Studio, add the **Build Counting Transform** module to your experiment, and connect the dataset that contains the new data you want to add.  
   
 2.  Use the **Module type** option to indicate the source of the new data. You can merge data from different sources.  
@@ -183,7 +183,6 @@ The following parameters are used with all options:
 |Module type| | |Required|Dataset|The type of module to use when generating the count table.|  
 |Count table type|CountTableType|select from list|Required|Dictionary|Specify the format of the count table.|  
 
-
 The following options apply when selecting the **blob** option.
 
 |Name|Type|Range|Optional|Default|Description|  
@@ -196,7 +195,6 @@ The following options apply when selecting the **blob** option.
 |Label column|Integer|>=1|Required|1|The one-based index of the label column.|  
 |Blob format| |any| Required|CSV|The blob text file format.|  
 
-  
 The following parameters apply when using **MapReduce** to generate counts:
 
 |Name|Type|Range|Optional|Default|Description|  
@@ -222,14 +220,14 @@ The following parameters define the format of the count table:
 |Depth of CM sketch table|Integer|>=1|Required if count table saved as CMSketch|4|The CM sketch table depth, which equals the number of hash functions.|  
 |Width of CM sketch table|Integer|[1;31]|Required if count table saved as CMSketch|20|The CM sketch table width, which is the number of bits of the range of hash function.|  
   
-##  <a name="Outputs"></a> Outputs  
-  
+##  <a name="Outputs"></a> Outputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Counting transform|[ITransform interface](itransform-interface.md)|The counting transform.|  
   
-##  <a name="exceptions"></a> Exceptions  
-  
+##  <a name="exceptions"></a> Exceptions
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
@@ -249,5 +247,5 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
-## See also  
+## See also
  [Learning with Counts](data-transformation-learning-with-counts.md)

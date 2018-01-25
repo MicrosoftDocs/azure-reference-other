@@ -1,7 +1,8 @@
 ---
 title: "Export to Hive Query | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 03/02/2017
+ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,60 +12,47 @@ ms.assetid: 1d64cce7-de98-437f-99cc-a3c30aba5c19
 caps.latest.revision: 12
 author: "jeannt"
 ms.author: "jeannt"
-manager: "cgronlun"
+manager: "cgronlund"
 ---
 # Export to Hive Query
-Use this option in the [Export Data](export-data.md) module to save your machine learning experiment data to a Hadoop cluster or HDInsight distributed storage. This option is particularly useful when working with very large datasets, or for exporting data to Hadoop so that you can process it using a MapReduce job.  
+
+This article describes how to use the **Export data to Hive** option in the [Export Data](export-data.md) module in Azure Machine Learning Studio. This option is useful when you are working with very large datasets, and want to save your machine learning experiment data to a Hadoop cluster or HDInsight distributed storage. You might also want to export intermediate results or other data to Hadoop so that you can process it using a MapReduce job.
+
+## How to export data to Hive  
   
-## How to Export Data to Hive  
-  
-1.  Add the [Export Data](export-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) group in the **experiment items** list in Azure Machine Learning Studio.  
+1.  Add the [Export Data](export-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category in Azure Machine Learning Studio.  
 
     Connect the module to the dataset you want to export.
-      
-2.  For **Data source**, select **Hive Query**.  
+
+2.  For **Data source**, select **Hive Query**.
+
+3.  For **Hive table name** type the name of the Hive table in which to store the dataset.
   
-3.  For **Hive table name** type the name of the Hive table that will store the dataset.  
+4.  In the **HCatalog server URI** text box, type the fully qualified name of your cluster.
   
-4.  In the **HCatalog server URI** text box, type the fully qualified name of your cluster.  
-  
-     For example, if you created a cluster with the name  mycluster001, use this format:  
+     For example, if you created a cluster with the name `mycluster001`, use this format:  
   
      `https://mycluster001.azurehdinsight.net`  
   
-5.  In the **Hadoop user account name** text box, paste in the Hadoop user account that you used when you provisioned the cluster.  
-  
-6.  In the **Hadoop user account password** text box, type the credentials that you used when you provisioned the cluster.  
-  
-     For more information about cluster naming and authentication for Hadoop, see [Provision Hadoop clusters in HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-provision-clusters/).  
-  
+5.  In the **Hadoop user account name** text box, paste in the Hadoop user account that you used when you provisioned the cluster.
+
+6.  In the **Hadoop user account password** text box, type the credentials that you used when you provisioned the cluster.
+
 7.  For **Location of output data**, select the option that indicates where the data should be stored.  
+
+     If the data is in the Hadoop distributed file system (HDFS), it must be accessible via the same account and password that you just entered. If the data is in Azure, you need to provide the location and credentials of the storage account.
   
-     If the data is in the Hadoop distributed file system (HDFS), it must be accessible via the same account and password that you just entered. If the data is in Azure, you need to provide the location and credentials of the storage account.  
+    - **HDFS**: For **HDFS server URI**, specify the HDInsight cluster name without the `https://` prefix  
   
-    -   **HDFS**  
+    - **Azure**: If you save your data in Azure, you must provide the storage account name, and the credentials the module can use to connect to storage.
+
+        **Azure storage account name**: Type the name of the Azure account. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.  
   
-         For  **HDFS server URI**, specify the HDInsight cluster name **without** the HTTPS:// prefix.  
+        **Azure storage key**: Copy and paste the key that is provided for accessing the storage account.
+
+        **Azure container name**: Specify the **default container** for the cluster. For tip son how to figure out the default container, see the Technical notes section. 
   
-    -   **Azure**  
   
-         If you save your data in Azure, you must specify the following:  
-  
-        1.  For **Azure storage account name**, type the name of the Azure account. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.  
-  
-        2.  For **Azure storage key**, copy and paste the key that is provided for accessing the storage account.  
-  
-             If you don’t know the access key, see the section, “View, copy and regenerate storage access keys” in this article: [About Azure Storage Accounts](http://azure.microsoft.com/documentation/articles/storage-manage-storage-account/).  
-  
-        3.  For **Azure container name**, specify the **default container** for the cluster.  
-  
-             If you created your cluster by using the default settings, a container with the same name as the cluster was created at the same time the cluster was created. That container  is then the default container for the cluster.  
-  
-             However, if you created your cluster by using the **CUSTOM CREATE** option, you were given two options for selecting the default container.  
-  
-             If you selected an existing container, that container is the default storage container for the cluster, and you should specify that container name.  
-  
-             If you used the **Create default container** option, a container with the same name as the cluster was created, and you should specify that container name as the default container for the cluster.  
   
 8.  Select the **Use cached results** option if you want to avoid rewriting the Hive table each time you run the experiment.  
   
@@ -72,24 +60,40 @@ Use this option in the [Export Data](export-data.md) module to save your machine
   
      If  you want to write the Hive table each time the experiment is run, deselect the **Use cached results** option.  
   
-##  <a name="Examples"></a> Examples  
- For examples of how to use the [Export Data](export-data.md) module, see these experiments and templates in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com):  
-  
--   This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio using Hive: [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-data-science-process-hive-criteo-walkthrough/).  
-  
-##  <a name="TechnicalNotes"></a> Technical Notes  
- This section contains some advanced configuration options and answers to commonly asked questions.  
-  
--   **How can I avoid out of memory problems when writing large daatsets?**  
-  
-     Sometimes the default configuration of the Hadoop cluster is too limited to support running the MapReduce job. For example, in these [Release Notes](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes) for HDInsight, the default settings are defined as a four-node cluster.  
-  
-     If the requirements of the MapReduce job exceed available capacity, the Hive queries might return an **Out of Memory** error message, which causes the [Export Data](export-data.md) operation to fail. If this happens, you can change the default memory allocation for Hive queries.  
-  
--   **How can I avoid re-loading the same data unnecessarily?**  
-  
-     If you don't want to recreate the Hive table each time you run the experiment, select the **Use cached results** option to TRUE. When this option is set to TRUE, the module will check whether the experiment has run previously, and if a previous run is found, the write operation is not performed.  
-  
+##  <a name="Examples"></a> Examples
+
+For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+
+This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio using Hive: 
+
++ [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/hive-criteo-walkthrough): 
+
+##  <a name="TechnicalNotes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Common questions
+
+#### How can I avoid out of memory problems when writing large daatsets?
+
+Sometimes the default configuration of the Hadoop cluster is too limited to support running the MapReduce job. For example, in these [Release Notes](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes) for HDInsight, the default settings are defined as a four-node cluster.
+
+If the requirements of the MapReduce job exceed available capacity, the Hive queries might return an **Out of Memory** error message, which causes the [Export Data](export-data.md) operation to fail. If this happens, you can change the default memory allocation for Hive queries.
+
+#### How can I avoid re-loading the same data unnecessarily?
+
+If you don't want to recreate the Hive table each time you run the experiment, select the **Use cached results** option to TRUE. When this option is set to TRUE, the module will check whether the experiment has run previously, and if a previous run is found, the write operation is not performed.
+
+### Tips
+
+If you created your cluster by using the default settings, a container with the same name as the cluster was created at the same time the cluster was created. That container  is then the default container for the cluster.
+
+However, if you created your cluster by using the **CUSTOM CREATE** option, you were given two options for selecting the default container.
+
+If you selected an existing container, that container is the default storage container for the cluster, and you should specify that container name.
+
+If you used the **Create default container** option, a container with the same name as the cluster was created, and you should specify that container name as the default container for the cluster.  
+
 ##  <a name="parameters"></a> Module Parameters  
   
 |Name|Range|Type|Default|Description|  

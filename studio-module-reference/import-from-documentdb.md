@@ -2,7 +2,7 @@
 title: "Import from DocumentDB (CosmosDB) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""

@@ -1,7 +1,8 @@
 ---
 title: "Import from Azure Table | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 09/20/2017
+ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,21 +12,21 @@ ms.assetid: 20124707-e893-478a-889c-81d64bd0262b
 caps.latest.revision: 24
 author: "jeannt"
 ms.author: "jeannt"
-manager: "cgronlun"
+manager: "cgronlund"
 ---
 # Import from Azure Table
+
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import structured or semi-structured data from Azure tables into a machine learning experiment.  
   
  The Azure **table** service is a data management service in Azure that can store large amounts of structured, non-relational data. It is a NoSQL data store that accepts authenticated calls from inside and outside Azure.  
   
  Importing from Azure table storage requires that you choose one of two account types: a storage account that can be accessed by using a SAS URL, or a private storage account that requires login credentials.  
 
-
-## How to Import Data from Azure Tables  
+## How to import data from Azure tables
 
 ### Use the Data Import Wizard
 
-The module features a new wizard to help you choose a storage option,  select from among existing subscriptions and accounts, and quickly configure all options.
+The module features a new wizard to help you choose a storage option, select from among existing subscriptions and accounts, and quickly configure all options.
 
 1. Add the **Import Data** module to your experiment. You can find the module under **Data Input and Output**.
 
@@ -82,42 +83,46 @@ The following steps describe how to manually configure the import source.
   
      If you deselect this option, the data will be read from the source each time the experiment is run, regardless of whether the data is the same or not.  
   
-##  <a name="Examples"></a> Examples  
- For examples of how to use the [Export Data](export-data.md) module, see these experiments and templates in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com):  
-  
+##  <a name="Examples"></a> Examples
+
+For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+
 ##  <a name="TechnicalNotes"></a> Technical Notes  
- This section contains answers to commonly asked questions and information about advanced configuration options.  
+
+This section contains implementation details, tips, and answers to frequently asked questions.  
+
+### Common questions
+
+#### How can I avoid re-loading the same data unnecessarily?
+
+If your source data changes, you can refresh the dataset and add new data by re-running [Import Data](import-data.md). However, if you don't want to re-read from the source each time you run the experiment, select the **Use cached results** option to TRUE. When this option is set to TRUE, the module checks whether the experiment has run previously using the same source and same input options, and if a previous run is found, the data in the cache is used, instead of re-loading the data from the source.
+
+#### Can I filter data as it is being read from the source?
+
+The [Import Data](import-data.md) module does not support filtering as data is being read. The exception is reading from data feeds, which sometimes allow you to specify a filter condition as part of the feed URL.  
+
+However, you can change or filter data after reading it into Azure Machine Learning Studio:  
+
++ Use a custom R script to change or filter data.  
++ Use the [Split Data](split-data.md) module with a relative expression or a regular expression to isolate the data you want, and then save it as a dataset.  
+
+> [!NOTE]
+>  If you find that you have loaded more data than you need, you can overwrite the cached dataset by reading a new dataset, and saving it with the same name as the older, larger data.  
   
--   **How can I avoid re-loading the same data unnecessarily?**  
-  
-     If your source data changes, you can refresh the dataset and add new data by re-running [Import Data](import-data.md). However, if you don't want to re-read from the source each time you run the experiment, select the **Use cached results** option to TRUE. When this option is set to TRUE, the module will check whether the experiment has run previously  using the same source and same input options, and if a previous run is found, the data in the cache is used, instead of re-loading the data from the source.  
-  
--   **How can I filter data as it is being read from the source?**  
-  
-     The [Import Data](import-data.md) module does not support filtering as data is being read. The exception is reading from data feeds, which sometimes allow you to specify a filter condition as part of the feed URL.  
-  
-     However, you can change or filter data after reading it into Azure Machine Learning Studio:  
-  
-    -   Use a custom R script to change or filter data.  
-  
-    -   Use the [Split Data](split-data.md) module with a relative expression or a regular expression to isolate the data you want, and then save it as a dataset.  
-  
-    > [!NOTE]
-    >  If you find that you have loaded more data than you need, you can overwrite the cached dataset by reading a new dataset, and saving it with the same name as the older, larger data.  
-  
--   **How does [Import Data](import-data.md) handle data loaded from different geographical regions?**  
-  
-     If the blob or table storage account is in a different region from the compute node used for the machine learning experiment, data access will be slower. Further, there will be charges for data ingress and egress on the subscription.  
-  
--   **Why are some characters in my table not displayed correctly?**  
-  
-     Azure Machine Learning supports UTF-8 encoding. If your table uses another encoding, the characters might not be imported correctly.  
-  
--   **Are there any prohibited characters or characters that are changed during import?**  
-  
-     If attribute data contains quotation marks or escaped character sequences, they are handled by using the rules for such characters in Microsoft Excel. All other characters are handled by using the following specifications as a guideline: [RFC 4180](http://tools.ietf.org/html/rfc4180).  
-  
-##  <a name="parameters"></a> Module Parameters  
+
+#### How does [Import Data](import-data.md) handle data loaded from different geographical regions?
+
+If the blob or table storage account is in a different region from the compute node used for the machine learning experiment, data access might be slower. Further, you are charged for data ingress and egress on the subscription.
+
+#### Why are some characters in my table not displayed correctly?
+
+Azure Machine Learning supports UTF-8 encoding. If your table uses another encoding, the characters might not be imported correctly.
+
+#### Are there any prohibited characters or characters that are changed during import?
+
+If attribute data contains quotation marks or escaped character sequences, they are handled by using the rules for such characters in Microsoft Excel. All other characters are handled by using the following specifications as a guideline: [RFC 4180](http://tools.ietf.org/html/rfc4180).  
+
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Default|  
 |----------|-----------|----------|-------------|-------------|  
@@ -149,7 +154,7 @@ The following steps describe how to manually configure the import source.
 |Results dataset|[Data Table](data-table.md)|Dataset with downloaded data|  
   
 ##  <a name="exceptions"></a> Exceptions  
-  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0027](errors/error-0027.md)|An exception occurs when two objects have to be the same size, but they are not.|  
@@ -161,8 +166,12 @@ The following steps describe how to manually configure the import source.
 |[Error 0048](errors/error-0048.md)|An exception occurs when it is not possible to open a file.|  
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+
+## See also  
  [Import Data](import-data.md)   
  [Export Data](export-data.md)   
  [Import from Web URL via HTTP](import-from-web-url-via-http.md)   
