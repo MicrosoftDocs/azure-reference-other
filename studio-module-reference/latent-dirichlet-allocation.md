@@ -1,7 +1,8 @@
 ---
 title: "Latent Dirichlet Allocation | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 07/19/2017
+ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,16 +12,28 @@ ms.assetid: e35a5905-bd57-41f4-9576-82bfcb92f837
 caps.latest.revision: 16
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Latent Dirichlet Allocation
 *Use the Vowpal Wabbit library to perform VW LDA*  
   
  Category: [Text Analytics](text-analytics.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview
+
+This article describes how to use the **Latent Dirichlet Allocation** module in Azure Machine Learning Studio, to group otherwise unclassified text into a number of categories. Latent Dirichlet Allocation (LDA) is often used in natural language processing (NLP) to find texts that are similar. Another common term is *topic modeling*. 
  
-You can use the **Latent Dirichlet Allocation** module to group otherwise unclassified text into a number of categories.  Latent Dirichlet Allocation (LDA) is often used in natural language processing (NLP) to find texts that are similar. Another common term is *topic modeling*. 
+This module takes a column of text, and generates these outputs:  
+  
+-   The source text, together with a score for each category  
+  
+-   A feature matrix, containing extracted terms and coefficients for each category  
+  
+-   A transformation, which you can save and reapply to new text used as input  
+
+Because this module uses the Vowpal Wabbit library, it is very fast. For more information about Vowpal Wabbit, see the [GitHub repository](https://github.com/JohnLangford/vowpal_wabbit) which includes tutorials and an explanation of the algorithm.  
+
+### More about Latent Dirichlet Allocation (LDA)
 
 Generally speaking, LDA is not a method for classification per se, but uses a generative approach. What this means is that you don’t need to provide known class labels and then infer the patterns.  Instead, the algorithm generates a probabilistic model that is used to identify groups of topics. You can use the probabilistic model to classify either  existing training cases, or new cases that you provide to the model as input.
 
@@ -28,32 +41,14 @@ A generative model can be preferable because it avoids making any strong assumpt
 
 + The theory is discussed in this paper, available as a PDF download: [Online Learning for Latent Dirichlet Allocatio: Hoffman, Blei, and Bach](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2010_1291.pdf)
 
-+ The implementation in this module is based on the [Vowpal Wabbit library](https://github.com/JohnLangford/vowpal_wabbit/wiki/Latent-Dirichlet-Allocation) (version 8) for LDA. For more information, see the [Technical Notes](#bkmk_AboutLDA) section. 
-  
-### How to use LDA in an experiment
- 
- To use this module, you pass in a dataset that contains a column of text, either raw or preprocessed, and indicate how many categories you want to extract from the text. You can also set options for how you want punctuation handled, how large the terms are that you are extracting, and so forth. For details on how to prepare the text and configure the module, see [How to Configure Latent Dirichlet Allocation](#bkmk_HowTo). 
-  
-When you run the experiment, the LDA module uses Bayes theorem to determine what topics might be associated with individual words. Words are not exclusively associated with any topics or groups; instead, each n-gram has a learned probability of being associated with any of the discovered classes.  
++ The implementation in this module is based on the [Vowpal Wabbit library](https://github.com/JohnLangford/vowpal_wabbit/wiki/Latent-Dirichlet-Allocation) (version 8) for LDA. 
 
-**Results**
+For more information, see the [Technical Notes](#bkmk_AboutLDA) section. 
 
-The module creates these outputs:  
-  
--   The source text, together with a score for each category  
-  
--   A feature matrix, containing extracted terms and coefficients for each category  
-  
--   A transformation, which you can save and reapply to new text used as input  
-  
-Because this module uses the Vowpal Wabbit library, it is very fast. For more information about Vowpal Wabbit, see the [GitHub repository](https://github.com/JohnLangford/vowpal_wabbit) which includes tutorials and an explanation of the algorithm..  
-
-### Related Tasks
-
- See the [Cortana Analytics Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/) for examples of experiments that use natural language processing in Python, feature hashing, and other text processing techniques.  
-   
 ## <a name="bkmk_HowTo"></a>How to Configure Latent Dirichlet Allocation  
-  
+
+This module requires a dataset that contains a column of text, either raw or preprocessed.
+ 
 1.  Add the **Latent Dirichlet Allocation** module to your experiment.  
   
 2.  As input for the module, provide a dataset containing one or more text columns.  
@@ -116,9 +111,9 @@ Because this module uses the Vowpal Wabbit library, it is very fast. For more in
   
      This option is useful for controlling the size of the dictionary. However, if the number of ngrams in the input exceeds this size, collisions may occur.  
   
-10. Run the experiment.  
+10. Run the experiment. The LDA module uses Bayes theorem to determine what topics might be associated with individual words. Words are not exclusively associated with any topics or groups; instead, each n-gram has a learned probability of being associated with any of the discovered classes.
 
-### Results  
+### Results
 
 The module has two outputs:  
   
@@ -126,46 +121,56 @@ The module has two outputs:
   
 - **Feature topic matrix**. The leftmost column contains the extracted text feature, and there is a column for each category containing the score for that feature in that category.  
   
-For details and an example based on customer review text, see [Understanding LDA Results](#bkmk_Understanding).  
-  
-## Examples  
- For examples of how text analytics, see these experiments in the [Model Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models):  
-  
--   The [Execute Python Script](http://go.microsoft.com/fwlink/?LinkId=525942) sample uses natural language processing in Python to clean and transform text.  
-  
-## Technical Notes  
+For details, see [Example of LDA results](#bkmk_Understanding).  
 
-By default, the distributions of outputs for transformed dataset and feature-topic matrix are normalized as probabilities.  
+### LDA Transformation  
+
+This module also outputs the *transformation* that applies LDA to the dataset, as an [ITransform interface](itransform-interface.md).  
+
+You can save this transformation and re-use it for other datasets. This might be useful if you have trained on a large corpus and want to reuse the coefficients or categories.  
+
+### Refining an LDA model or results
+
+Typically you cannot create a single LDA model that will meet all needs, and even a model designed for one task might require many iterations to improve accuracy. We recommend that you try all these methods to improve your model:
+
++ Changing the model parameters
++ Using visualization to understand the results
++ Getting the feedback of subject matter experts to ascertain whether the generated topics are useful.
+
+Qualitative measures can also be useful for assessing the results. To evaluate topic modeling results, consider:
   
--   The transformed dataset is normalized as the conditional probability of topics given a document.   In this case, the sum of each row equals 1.  
+-   Accuracy - Are similar items really similar?
+-   Diversity - Can the model discriminate between similar items when required for the business problem?
+-  Scalability - Does it work on a wide range of text categories or only on a narrow target domain?
+
+The accuracy of models based on LDA can often be improved by using natural language processing to clean, summarize and simplify, or categorize text. For example, the following techniques, all supported in Azure Machine Learning, can improve classification accuracy:
   
--   The feature-topic matrix is normalized as the conditional probability of words given a topic. In this case, the sum of each column equals 1.  
-  
- Occasionally the module might return an empty topic, which is most often caused by the pseudo-random initialization of the algorithm.  
-  
- If this happens, you can try changing related  parameters, such as the maximum size of the N-gram dictionary or the number of bits to use for feature hashing.  
-  
-## <a name="bkmk_AboutLDA"></a>More About Latent Dirichlet Allocation  
+-   Stop word removal  
+-   Case normalization  
+-   Lemmatization or stemming  
+-   Named entity recognition  
+
+For more information, see [Preprocess Text](preprocess-text.md) and [Named Entity Recognition](named-entity-recognition.md).
  
-Latent Dirichlet Allocation (LDA) is often used for *content-based topic modeling*, which basically means learning categories from unclassified text. In content-based topic modeling, a topic is a distribution over words. 
-  
-For example, assume that you have provided a corpus of customer reviews that includes many, many products. The text of reviews that have been submitted by many customers over time would contain many terms, some of which are used in multiple topics.   
+In Studio, you can also use R or Python libraries for text processing: [Execute R Script](execute-r-script.md),  [Execute Python Script](execute-python-script.md) 
 
-A **topic** that is identified by the LDA process might represent reviews for an individual Product A, or it might represent a group of product reviews. To LDA, the topic itself is just a probability distribution over time for a set of words.
-  
-Terms are rarely exclusive to any one product, but can refer to other products, or be general terms that apply to everything (“great”, “awful”). Other terms might be noise words.  However, it is important to understand that the LDA method does not purport to capture all words in the universe, or to understand how words are related, aside from proabilities of co-occurrence. It can only group words that were used in the target domain.  
-  
-After the term indexes have been computed, individual rows of text are compared using a distance-based similarity measure, to determine whether two pieces of text are like each other.  For example, you might find that the product has multiple names that are strongly correlated. Or, you might find that strongly negative terms are usually associated with a particular product. You can use the similarity measure both to identify related terms and to create recommendations.  
-  
-##  <a name="bkmk_Understanding"></a> Interpreting LDA Results  
+ ## Examples
 
-To illustrate how the **Latent Dirichlet Allocation** module works, the following example applies LDA with the default settings to the Book Review dataset provided in Azure Machine Learning Studio.  The dataset contains a rating column, as well as the full comment text provided by users.  
+For examples of text analytics, see these experiments in the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models):  
+  
+- [Execute Python Script](http://go.microsoft.com/fwlink/?LinkId=525942): Uses natural language processing in Python to clean and transform text.  
 
-### Sample Source Text
+For details and an example based on customer review text, see [Understanding LDA Results](#bkmk_Understanding).  
+
+###  <a name="bkmk_Understanding"></a>Example of LDA results  
+
+To illustrate how the **Latent Dirichlet Allocation** module works, the following example applies LDA with the default settings to the Book Review dataset provided in Azure Machine Learning Studio.  
+
+#### Source datasest
+
+The dataset contains a rating column, as well as the full comment text provided by users.  
 
 This table shows only a few representative examples. 
-
-During processing, the **Latent Dirichlet Allocation** module both cleans and analyzes the text, based on parameters you specify. For example, it can automatically tokenize the text and remove punctuation, and at the same time find the text features for each topic. 
   
 |text|  
 |----------|  
@@ -174,15 +179,12 @@ During processing, the **Latent Dirichlet Allocation** module both cleans and an
 |Poorly written  I tried reading this book but found it so turgid and poorly written that I put it down in frustration.  ...|  
 |Since borrowing a dog-eared copy from friends who were passing it around a number of years ago, I have not been able to get my hands on this book which became a short-lived cult favorite|  
 |The plot of this book was interesting, and it could have been a good book. Unfortunately, it wasn't. The main problem for me was that ...|  
-  
-  
-### Transformed Sample Data  
 
-The following table contains the transformed dataset, based on the Book Review sample. The output contains the input text, and a specified number of discovered categories, together with the scores for each category.  
-  
-In this example, we used the default value of 5 for **Number of topics to model**. Therefore, the LDA module creates five categories, which we can assume will correspond roughly with the original five-scale rating system. 
+During processing, the **Latent Dirichlet Allocation** module both cleans and analyzes the text, based on parameters you specify. For example, it can automatically tokenize the text and remove punctuation, and at the same time find the text features for each topic. 
 
-The module also assigns a score to each entry for each of the five categories that represent topics. A score indicates the probability that the row should be assigned to a particular category.  
+#### LDA transformed dataset
+
+The following table contains the **transformed** dataset, based on the Book Review sample. The output contains the input text, and a specified number of discovered categories, together with the scores for each category.  
   
 |Movie name|Topic 1|Topic 2|Topic 3|Topic 4|Topic 5|  
 |----------------|-------------|-------------|-------------|-------------|-------------|  
@@ -191,10 +193,14 @@ The module also assigns a score to each entry for each of the five categories th
 |tried reading this book|0.002469135|0.002469135|0.9901233|0.002469135|0.002469135|  
 |borrowed it from friend|0.9901232|0.002469135|0.002469135|0.002469135|0.002469135|  
 |plot of this book was interesting|0.001652892|0.001652892|0.9933884|0.001652892|0.001652892|  
-  
-### Feature Topic Matrix  
-  
-The other output of the module is the **feature topic matrix**. This is a tabular dataset that contains the *featurized text*, , in column **Feature**, along with a score for each of the categories, in the remaining columns _Topic 1_, _Topic 2_, ..._Topic N_. The score represents the coefficient.  
+
+In this example, we used the default value of 5 for **Number of topics to model**. Therefore, the LDA module creates five categories, which we can assume will correspond roughly with the original five-scale rating system. 
+
+The module also assigns a score to each entry for each of the five categories that represent topics. A score indicates the probability that the row should be assigned to a particular category.  
+
+#### Feature topic matrix
+
+The second output of the module is the **feature topic matrix**. This is a tabular dataset that contains the *featurized text*, , in column **Feature**, along with a score for each of the categories, in the remaining columns _Topic 1_, _Topic 2_, ..._Topic N_. The score represents the coefficient.  
   
 |Feature|Topic 1|Topic 2|Topic 3|Topic 4|Topic  5|  
 |-------------|-------------|-------------|-------------|-------------|--------------|  
@@ -217,55 +223,43 @@ The other output of the module is the **feature topic matrix**. This is a tabula
 |book|0.0143157047920681|0.069145948535052|0.184036340170983|0.0548757337823903|0.0156837976985903|  
 |recommended|0.0161486848419689|0.0399143326399534|0.00550113530229642|0.028637149142764|0.0147675139039372|  
 |this|0.0161486848419689|0.0399143326399534|0.00550113530229642|0.028637149142764|0.0147675139039372|  
+
+## Technical notes  
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+### Implementation details
+
+By default, the distributions of outputs for transformed dataset and feature-topic matrix are normalized as probabilities.  
   
-### LDA Transformation  
+-   The transformed dataset is normalized as the conditional probability of topics given a document.   In this case, the sum of each row equals 1.  
   
-The module also outputs the *transformation* that applies LDA to the dataset, as an [ITransform interface](itransform-interface.md).  
+-   The feature-topic matrix is normalized as the conditional probability of words given a topic. In this case, the sum of each column equals 1.  
 
-You can save this transformation and re-use it for other datasets. This might be useful if you have trained on a large corpus and want to reuse the coefficients or categories.  
+### Tips
 
-## Refining an LDA Model  
+Occasionally the module might return an empty topic, which is most often caused by the pseudo-random initialization of the algorithm.  If this happens, you can try changing related  parameters, such as the maximum size of the N-gram dictionary or the number of bits to use for feature hashing.  
 
- Because each task has unique requirements and each corpus has different characteristics in terms of the distribution of terms, typically you cannot create a single LDA model that will meet all needs. 
+### <a name="bkmk_AboutLDA"></a> LDA and topic modeling
  
- Instead, we recommend that you try changing the model parameters, use visualization to understand the results, and get the feedback of subject matter experts to ascertain whether the topics are useful.  
+Latent Dirichlet Allocation (LDA) is often used for *content-based topic modeling*, which basically means learning categories from unclassified text. In content-based topic modeling, a topic is a distribution over words. 
 
-### Measure Accuracy and Coverage
-  
- Qualitative measures can also be useful for assessing the results. Measures often used to evaluate topic modeling include:
-  
--   **Accuracy**.   Are similar items really similar?  
-  
--   **Diversity**.   Can the model discriminate between similar items when required for the business problem?  
-  
--   **Scalability**.   Does it work on a wide range of text categories or only on a narrow target domain?  
+For example, assume that you have provided a corpus of customer reviews that includes many, many products. The text of reviews that have been submitted by many customers over time would contain many terms, some of which are used in multiple topics.   
 
-### Refine Input Text
-  
-The accuracy of models based on LDA can often be improved by using natural language processing to clean, summarize and simplify, or categorize text. For example, the following techniques, all supported in Azure Machine Learning, might improve classification accuracy:  
-  
--   Stop word removal  
-  
--   Case normalization  
-  
--   Lemmatization or stemming  
-  
--   Named entity recognition  
-  
- For more information, see [Preprocess Text](preprocess-text.md) and [Named Entity Recognition](named-entity-recognition.md).  
-  
- You might also use R or Python libraries for pre-processing of text,  by using the [Execute R Script](execute-r-script.md) or [Execute Python Script](execute-python-script.md) modules.  
-  
+A **topic** that is identified by the LDA process might represent reviews for an individual Product A, or it might represent a group of product reviews. To LDA, the topic itself is just a probability distribution over time for a set of words.
 
-  
-##  <a name="ExpectedInputs"></a> Expected Inputs  
-  
+Terms are rarely exclusive to any one product, but can refer to other products, or be general terms that apply to everything (“great”, “awful”). Other terms might be noise words.  However, it is important to understand that the LDA method does not purport to capture all words in the universe, or to understand how words are related, aside from proabilities of co-occurrence. It can only group words that were used in the target domain.  
+
+After the term indexes have been computed, individual rows of text are compared using a distance-based similarity measure, to determine whether two pieces of text are like each other.  For example, you might find that the product has multiple names that are strongly correlated. Or, you might find that strongly negative terms are usually associated with a particular product. You can use the similarity measure both to identify related terms and to create recommendations.  
+
+##  <a name="ExpectedInputs"></a> Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
-  
-##  <a name="parameters"></a> Module Parameters  
-  
+
+##  <a name="parameters"></a> Module parameters  
+
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
 |Number of hash bits|Integer|[1;31]|Applies when the **Show all options** checkbox  is *not* selected|12|Number of bits to use for feature hashing|  
@@ -294,17 +288,21 @@ The accuracy of models based on LDA can often be improved by using natural langu
 |Transformed dataset|[Data Table](data-table.md)|Output dataset|  
 |Feature topic matrix|[Data Table](data-table.md)|Feature topic matrix produced by LDA|  
 |LDA transformation|[ITransform interface](itransform-interface.md)|Transformation that applies LDA to the dataset|  
-  
+
 ##  <a name="exceptions"></a> Exceptions  
-  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0002](errors/error-0002.md)|Exception occurs if one or more specified columns of data set couldn't be found.|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+
+## See also
  [Text Analytics](text-analytics.md)   
  [Feature Hashing](feature-hashing.md)   
  [Named Entity Recognition](named-entity-recognition.md)   
