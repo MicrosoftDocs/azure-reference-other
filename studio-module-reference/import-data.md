@@ -15,11 +15,12 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Import Data
-*Loads data from external sources on the web; from various forms of cloud-based storage in Azure such as tables, blobs, and SQL  databases; and from on-premises SQL Server databases*  
-  
- Category: [Data Input and Output](data-input-and-output.md)  
-  
-## Module overview  
+
+*Loads data from external sources on the web; from various forms of cloud-based storage in Azure such as tables, blobs, and SQL  databases; and from on-premises SQL Server databases*
+
+Category: [Data Input and Output](data-input-and-output.md)
+
+## Module overview
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to load data into a machine learning experiment from existing cloud data services.  
 
@@ -60,58 +61,58 @@ If you are not sure how or where you should store your data, see this guide to c
 
 ## How to use Import Data
  
-1.  Add the **Import Data** module to your experiment. You can find this module in the **Data Input and Output** category in Studio.
+1. Add the **Import Data** module to your experiment. You can find this module in the **Data Input and Output** category in Studio.
 
-2. Click **Launch Data Import Wizard** to configure the data source using a wizard. 
+2. Click **Launch Data Import Wizard** to configure the data source using a wizard.
 
     The wizard gets the account name and credentials, and help you configure other options. If you are editing an existing configuration, it loads the current values first.
 
 3. If you do not want to use the wizard, click **Data source**, and choose the type of cloud-based storage you are reading from. 
 
     Additional settings depend on the type of storage you choose, and whether the storage is secured or not. You might need to provide the account name, file type, or credentials. Some sources do not require authentication; for others, you might need to know the account name, a key, or container name.
- 
-     For details, see the list of [Data sources](#DataSources). 
-  
-4.  Select the **Use cached results** option if you want to cache the dataset for re-use on successive runs.
+
+    For details, see the list of [Data sources](#DataSources). 
+
+4. Select the **Use cached results** option if you want to cache the dataset for re-use on successive runs.
 
     Assuming there have been no other changes to module parameters, the experiment loads the data only the first time the module is run, and thereafter uses a cached version of the dataset.
-  
-     Deselect this option if you need to reload the data each time you run the experiment.  
-  
-5.  Run the experiment.  
-  
-     When [Import Data](import-data.md) loads the data into Studio, it infers the data type of each column based on the values it contains, either numerical or categorical.  
-  
-    -   If a header is present, the header is used to name the columns of the output dataset.  
-  
-    -   If there are no existing column headers in the data, new column names are generated using the format col1, col2,… ,col*n*.  
-  
+
+    Deselect this option if you need to reload the data each time you run the experiment.
+
+5. Run the experiment.
+
+    When [Import Data](import-data.md) loads the data into Studio, it infers the data type of each column based on the values it contains, either numerical or categorical.
+
+    - If a header is present, the header is used to name the columns of the output dataset.
+
+    - If there are no existing column headers in the data, new column names are generated using the format col1, col2,… ,col*n*.
+
 ### Results
- 
+
 When import completes, click the output dataset and select **Visualize** to see if the data was imported successfully.
 
 If you want to save the data for re-use, rather than importing a new set of data each time the experiment is run, right-click the output and select **Save as Dataset**. Choose a name for the dataset. The saved dataset preserves the data at the time of saving, and data is not updated when the experiment is re-run, even if the dataset in the experiment changes. This can be handy for taking snapshots of data.
-  
-After importing the data, it might need some additional preparations for modeling and analysis: 
+
+After importing the data, it might need some additional preparations for modeling and analysis:
 
 - Generate statistical summaries of the data, using [Summarize Data](summarize-data.md) or [Compute Elementary Statistics](compute-elementary-statistics.md).
-  
- - Use [Edit Metadata](edit-metadata.md) to change column names, to handle a column as a different data type, or to indicate that some columns are labels or features.  
-  
- - Use [Select Columns in Dataset](select-columns-in-dataset.md) to select a subset of columns to transform or use in modeling. The transformed or removed columns can easily be rejoined to the original dataset by using the [Add Columns](add-columns.md) module or the [Join Data](join-data.md) module.  
-  
- - Use [Partition and Sample](partition-and-sample.md) to divide the dataset, perform sampling, or get the top n rows.  
-  
- - Use [Apply SQL Transformation](apply-sql-transformation.md) to aggregate data, filter, or transform using SQL statements.  
 
-- Use these modules to clean up text columns and generate new text features:  
+- Use [Edit Metadata](edit-metadata.md) to change column names, to handle a column as a different data type, or to indicate that some columns are labels or features.
 
-    - [Preprocess Text](preprocess-text.md)
-    - [Extract N-Gram Features from Text](extract-n-gram-features-from-text.md)
-    - [Named Entity Recognition](named-entity-recognition.md)
-    - [Execute Python Script](execute-python-script.md), to implement custom NLP based on **nltk**. 
+- Use [Select Columns in Dataset](select-columns-in-dataset.md) to select a subset of columns to transform or use in modeling. The transformed or removed columns can easily be rejoined to the original dataset by using the [Add Columns](add-columns.md) module or the [Join Data](join-data.md) module.  
 
-##  <a name="bkmk_Notes"></a> Technical notes
+- Use [Partition and Sample](partition-and-sample.md) to divide the dataset, perform sampling, or get the top n rows.
+
+- Use [Apply SQL Transformation](apply-sql-transformation.md) to aggregate data, filter, or transform using SQL statements.
+
+- Use these modules to clean up text columns and generate new text features:
+
+  - [Preprocess Text](preprocess-text.md)
+  - [Extract N-Gram Features from Text](extract-n-gram-features-from-text.md)
+  - [Named Entity Recognition](named-entity-recognition.md)
+  - [Execute Python Script](execute-python-script.md), to implement custom NLP based on **nltk**. 
+
+## <a name="bkmk_Notes"></a> Technical notes
 
 This section provides a list of known issues with the **Import Data** module, as well as some general troubleshooting information not specific to a source type.
 
@@ -119,11 +120,11 @@ This section provides a list of known issues with the **Import Data** module, as
 
 Frequently Azure releases new services or new storage types; however, there is typically a delay while support for new account types is implemented in Azure Machine Learning Studio.
 
-+ Currently, Azure Machine Learning supports all general purpose storage accounts, except for those using zone-redundant storage (ZRS). 
+- Currently, Azure Machine Learning supports all general purpose storage accounts, except for those using zone-redundant storage (ZRS). 
 
-+ Locally redundant storage (LRS) and geo-redundant storage options are supported.
+- Locally redundant storage (LRS) and geo-redundant storage options are supported.
 
-+ Block blobs are supported but Append blobs are not.
+- Block blobs are supported but Append blobs are not.
 
 ### Common questions and issues
 
@@ -135,19 +136,19 @@ If you are importing from CSV files, be aware that Azure Machine Learning allows
 
 #### Custom separators supported on import but not export
 
-The **Import Data** module supports importing data that uses alternative column separators, such as the semicolon (;), which is often used in Europe. When you import data from CSV files in external storage, select the **CSV with encodings** option, and pick a supported encoding.  
+The **Import Data** module supports importing data that uses alternative column separators, such as the semicolon (;), which is often used in Europe. When you import data from CSV files in external storage, select the **CSV with encodings** option, and pick a supported encoding.
 
-However, you cannot generate alternative separators when you prepare data for export using the [Convert to CSV](convert-to-csv.md) module.  
+However, you cannot generate alternative separators when you prepare data for export using the [Convert to CSV](convert-to-csv.md) module.
 
 #### Poor column separation on string data containing commas
 
-Just about every character that can be specified as a column separator (tabs, spaces, commas, etc.) can also be found randomly in text fields. Importing text from CSV always requires caution to avoid separating text across unnecessary new columns. It is a common problem in text processing that you ahve probably encountered and handled in different ways.
+Just about every character that can be specified as a column separator (tabs, spaces, commas, etc.) can also be found randomly in text fields. Importing text from CSV always requires caution to avoid separating text across unnecessary new columns. It is a common problem in text processing that you have probably encountered and handled in different ways.
 
 Problems can also occur when you try to export a column of string data that contains commas. Azure Machine Learning does not support any special handling or special translation of such data, such as enclosing strings in quotation marks. Also, you cannot use escape characters before a comma to ensure that commas are handled as a literal character. AS a consequence, new fields are created in the output file for each comma that is encountered in the string field.
 
 To avoid problems on export, use the [Preprocess Text](preprocess-text.md) module to remove punctuation characters from string fields.
 
-You can also use custom [R script](execute-r-script.md) or [Python script](execute-python-script.md) to process complex text and ensure that data can be imported or exported correctly.   
+You can also use custom [R script](execute-r-script.md) or [Python script](execute-python-script.md) to process complex text and ensure that data can be imported or exported correctly.
 
 #### UTF-8 encoding required
 
@@ -159,7 +160,7 @@ For example, the following image contains the same multilanguage dataset exporte
 
 The third example represents data that was lost during while saving from Excel in CSV format, because the correct encoding was not specified at that time. Therefore, if you run into problems, be sure to check not just the file you are importing from, but whether the file was correctly exported from the source.
 
-#### Dataset does not have column names 
+#### Dataset does not have column names
 
 If the dataset you are importing does not have column names, be sure to specify one of the "no header" options. When yo do so, **Import Data** adds default column names using the format Col1, Col2, etc. Later, use [Edit Metadata](edit-metadata.md) to fix the column names.
 
@@ -169,36 +170,38 @@ If you are exporting a dataset to a CSV file, use [Edit Metadata](edit-metadata.
 
 If you need to get data from a source that is not in the list, there are various workarounds you can try: 
 
-+ To upload data from a file on your computer, click **New** in Studio, select **Dataset**, and then select **From Local File**. Locate the file and specify the format (TSV, CSV, etc.). See [this article](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-2-upload-data/) for a walkthrough.  
+- To upload data from a file on your computer, click **New** in Studio, select **Dataset**, and then select **From Local File**. Locate the file and specify the format (TSV, CSV, etc.). See [this article](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-2-upload-data/) for a walkthrough.
 
-+ Use R or Python.  You can use the [Execute R Script](execute-r-script.md) module with an appropriate R package to get data from other cloud databases.  
-    
+- Use R or Python.  You can use the [Execute R Script](execute-r-script.md) module with an appropriate R package to get data from other cloud databases.
+
     The [Execute Python Script](execute-python-script.md) module also lets you read  and convert data from a variety of sources. See these examples from Microsoft data scientists in the Cortana Intelligence Gallery:
-    - [Convert PDF to Text](https://gallery.cortanaintelligence.com/Experiment/Convert-PDF-to-TEXT-1)
-    - [Load non-text file from Azure blob storage](https://gallery.cortanaintelligence.com/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1)
 
-+ Get data from AWS clusters. You can run a query against a generic Hive cluster with WebHCat or HCatalog endpoint enabled. Or publish as a page and read from the Web URL.
+    [Convert PDF to Text](https://gallery.cortanaintelligence.com/Experiment/Convert-PDF-to-TEXT-1)
 
-+ Get data from MongoDB. The data migration utility for DocumentDB (CosmosDB) supports a wide variety of sources and formats. For more information and examples, see [How to import data into Azure Cosmos DB for the DocumentDB API](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+    [Load non-text file from Azure blob storage](https://gallery.cortanaintelligence.com/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1)
+
+- Get data from AWS clusters. You can run a query against a generic Hive cluster with WebHCat or HCatalog endpoint enabled. Or publish as a page and read from the Web URL.
+
+- Get data from MongoDB. The data migration utility for DocumentDB (CosmosDB) supports a wide variety of sources and formats. For more information and examples, see [How to import data into Azure Cosmos DB for the DocumentDB API](https://docs.microsoft.com/azure/cosmos-db/import-data)
 
 For more ideas and workarounds, see the [Azure Machine Learning forum](https://social.msdn.microsoft.com/forums/azure/home?forum=MachineLearning) or [Azure AI Gallery](https://gallery.cortanaintelligence.com).  
-  
-##  <a name="parameters"></a> Module parameters
 
-Each data source must be configured using different options. This table lists only the options that are common to all data sources.  
-  
+## Module parameters
+
+Each data source must be configured using different options. This table lists only the options that are common to all data sources.
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Data source|List|DataSource Or Sink|Blob service in Azure Storage|Data source can be HTTP, anonymous HTTPS, a file in the Blob service or Table service, a SQL database in Azure, an Azure SQL Data Warehouse, a Hive table, or an OData endpoint.|  
 |Use cached results|TRUE/FALSE|Boolean|FALSE|If TRUE, the module will check whether the experiment has run previously  using the same source and same input options, and if a previous run is found, the data in the cache is used. If FALSE, or if changes are found, data will be reloaded from the source.|  
-  
-##  <a name="Outputs"></a> Outputs  
-  
+
+## Outputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset with downloaded data|  
-  
-##  <a name="exceptions"></a> Exceptions  
+
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  
@@ -217,7 +220,8 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
-## See also  
+## See also
+
  [Data Input and Output](data-input-and-output.md)   
  [Data Format Conversions](data-format-conversions.md)   
  [Export Data](export-data.md)   

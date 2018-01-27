@@ -15,11 +15,12 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Load Trained Model
-*Load a web-hosted trained model*  
-  
- Category: [Data Input and Output](data-input-and-output.md)  
-  
-## Module overview  
+
+*Load a web-hosted trained model*
+
+Category: [Data Input and Output](data-input-and-output.md)
+
+## Module overview
 
 This article describes how to use the **Load Trained Model** module in Azure Machine Learning Studio, to load an already trained model for use in an experiment. 
 
@@ -57,7 +58,7 @@ For step-by step information about how to create a training web service, see the
 2. When training is complete, right-click the module that was used for training, select **Trained model**, and then click **Save as trained model.**
 3. By default, models are saved to your Studio workspace. You can view them using the Studio UI.
 
-The following modules can create a saved model that uses the required [iLearner](ilearner-interface.md) interface:  
+The following modules can create a saved model that uses the required [iLearner](ilearner-interface.md) interface:
 
 + [Train Model](train-model.md)  
 + [Train Clustering Model](train-clustering-model.md)  
@@ -66,29 +67,29 @@ The following modules can create a saved model that uses the required [iLearner]
 + [Sweep Clustering](sweep-clustering.md)  
 
 > [!NOTE]
->  Arbitrary models are not supported; the model must have been saved in the default binary format used for persisting Azure Machine Learning models.
+> Arbitrary models are not supported; the model must have been saved in the default binary format used for persisting Azure Machine Learning models.
 
 ### Load the model into a new experiment
 
-1.  Add the **Load Trained Model** module to your experiment in Studio.  
-  
-2.  For **Data source**, indicate the location of the trained model, using one of the following options:  
-  
-    -   **Web URL via HTTP**: Provide a URL that points to the experiment and the file representing the trained model. In Azure Machine Learning, trained models are by default saved in the [ILearner](ilearner-interface.md) format.
-  
-    - **Azure Blob Storage**: Select this option only if you exported the trained model to Azure storage. You must then provide the account name and account key, and the path to the container, directory, or blob.
+1. Add the **Load Trained Model** module to your experiment in Studio.
 
-3.  If you intend to create a Request-Response web-service that is based on the current experiment, select the option, **Allow to use in RRS**. Otherwise, scoring is performed using the Batch Execution Service (BES) option, which is recommended. See the [Technical notes](#bkmk_Notes) section for details.  
-  
-4.  Select the **Use cached results** option if you want to load the trained model from cache, when the cache is available and populated. This option is ignored after the experiment is deployed as a Web service API.  
+2. For **Data source**, indicate the location of the trained model, using one of the following options:
 
-## Examples  
+    + **Web URL via HTTP**: Provide a URL that points to the experiment and the file representing the trained model. In Azure Machine Learning, trained models are by default saved in the [ILearner](ilearner-interface.md) format.
+
+    + **Azure Blob Storage**: Select this option only if you exported the trained model to Azure storage. You must then provide the account name and account key, and the path to the container, directory, or blob.
+
+3. If you intend to create a Request-Response web-service that is based on the current experiment, select the option, **Allow to use in RRS**. Otherwise, scoring is performed using the Batch Execution Service (BES) option, which is recommended. See the [Technical notes](#bkmk_Notes) section for details.
+
+4. Select the **Use cached results** option if you want to load the trained model from cache, when the cache is available and populated. This option is ignored after the experiment is deployed as a Web service API.
+
+## Examples
 
 For examples of how to use this module, see the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/).
 
-- [Load a Trained Deep Learning Model](https://gallery.cortanaintelligence.com/Collection/Load-a-Trained-Deep-Learning-Model-3): The example creates a custom neural network for image detection. By using the **Load Trained Model** module, you can easily re-use this model without having to train it, which can be time-consuming.
++ [Load a Trained Deep Learning Model](https://gallery.cortanaintelligence.com/Collection/Load-a-Trained-Deep-Learning-Model-3): The example creates a custom neural network for image detection. By using the **Load Trained Model** module, you can easily re-use this model without having to train it, which can be time-consuming.
 
-    This collection includes a training experiment, to create the model, and a predictive experiment, in which the model is loaded as a web service and used for predictions.  
+    This collection includes a training experiment, to create the model, and a predictive experiment, in which the model is loaded as a web service and used for predictions.
 
 ## <a name="bkmk_Notes"></a> Technical notes
 
@@ -96,21 +97,21 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Common questions
 
-#### Why is RRS use not enabled by default?
+#### Why is RRS use not enabled by default
 
 It is generally expected that RRS calls return results within a short period of time. However, because the module must load the trained model in the form of a blob from an Azure storage account or a file hosted on a public HTTP endpoint, file operations might introduce unpredictable delays.
 
-Therefore, we generally advise that the Web service be run in batch execution mode (BES). If you select the option for .execution using RRS, be aware of the potential for delay. For general information about execution times, see the [Azure Machine Learning SLA](https://azure.microsoft.com/support/legal/sla/machine-learning-studio/v1_0/).  
-  
-### Does the trained model load faster if I use the cached results option?  
+Therefore, we generally advise that the Web service be run in batch execution mode (BES). If you select the option for .execution using RRS, be aware of the potential for delay. For general information about execution times, see the [Azure Machine Learning SLA](https://azure.microsoft.com/support/legal/sla/machine-learning-studio/v1_0/).
+
+### Does the trained model load faster if I use the cached results option
 
 Yes, but only when the experiment is run in Azure Machine Learning Studio, and only after the cache has been filled by the first run. After the experiment is deployed as web service, this flag is ignored by  web service execution.
 
-#### Is there a way to automate the process?
+#### Is there a way to automate the process
 
-You can use PowerShell to simplify or automate many tasks in Azure Machine Learning. For example, you can download the contents of an entire experiment or a particular module, export the definition of web service, or invoke the web service execution API. For more information, see [PowerShell Module for Microsoft Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-powershell-module).  
+You can use PowerShell to simplify or automate many tasks in Azure Machine Learning. For example, you can download the contents of an entire experiment or a particular module, export the definition of web service, or invoke the web service execution API. For more information, see [PowerShell Module for Microsoft Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-powershell-module).
 
-## Module parameters  
+## Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -123,13 +124,13 @@ You can use PowerShell to simplify or automate many tasks in Azure Machine Learn
 |Account key|any|SecureString||Key associated with the Windows Azure Storage account|  
 |Path to container or directory or blob|any|String||Path to blob or name of table|  
 
-## Outputs  
+## Outputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained Model|[ILearner interface](ilearner-interface.md)|Trained model|  
-  
-## Exceptions  
+
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  
@@ -138,5 +139,7 @@ You can use PowerShell to simplify or automate many tasks in Azure Machine Learn
 For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+
 ## See also
+
  [Data Input and Output](data-input-and-output.md)
