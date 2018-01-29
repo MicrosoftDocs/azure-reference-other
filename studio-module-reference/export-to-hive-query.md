@@ -48,11 +48,11 @@ This article describes how to use the **Export data to Hive** option in the [Exp
 
 9. If you selected the **Azure** option, provide the storage account name, and the credentials the module can use to connect to storage.
 
-    **Azure storage account name**: Type the name of the Azure account. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.
+    - **Azure storage account name**: Type the name of the Azure account. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.
 
-    **Azure storage key**: Copy and paste the key that is provided for accessing the storage account.
+    - **Azure storage key**: Copy and paste the key that is provided for accessing the storage account.
 
-    **Azure container name**: Specify the **default container** for the cluster. For tips son how to figure out the default container, see the [Technical notes](#TechnicalNotes) section.
+    - **Azure container name**: Specify the **default container** for the cluster. For tips son how to figure out the default container, see the [Technical notes](#TechnicalNotes) section.
 
 10. **Use cached results**:  Select this option if you want to avoid rewriting the Hive table each time you run the experiment. If there are no other changes to module parameters, the experiment writes the Hive table only the first time the module is run, or when there are changes to the data.
 

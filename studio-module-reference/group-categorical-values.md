@@ -58,7 +58,7 @@ We recommend that you prepare the list of existing values, and the new categorie
 
     > [!NOTE]
     > 
-    > This default level value is applied to all values that cannot be mapped. If you accidentally included columns that you did not intend to map, the value coudl be applied to all values in the columns. Therefore, check that column selection i accurate before processing.
+    > This default level value is applied to all values that cannot be mapped. If you accidentally included columns that you did not intend to map, the value would be applied to all values in the columns. Therefore, check that column selection is accurate before processing.
 
 6. For **New number of levels**, type a number that indicates the total number of new categories (levels), including the default level for unmapped values.
 
@@ -70,7 +70,7 @@ We recommend that you prepare the list of existing values, and the new categorie
 
     We recommend that you save your list of values in a separate file as you are working. If you change the number of levels, any strings that you previously typed are removed, and you must start over.
 
-    However, if you are editing a module that was previoulsy saved, you can revert to the original settings.
+    However, if you are editing a module that was previously saved, you can revert to the original settings.
 
 10. Run the experiment.
 

@@ -24,7 +24,9 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 This article describes how to use the **Modify Count Table Parameters** module in Azure Machine Learning Studio, to change the way that features are generated from a count table.
 
-In general, to create count-based features, you use [Build Counting Transform](build-counting-transform.md) to process a dataset and create a count table, and from that count table generate a new set of features. However, if you have already created the count table, you can use the **Modify Count Table Parameters** module to edit the definition of how the count data is processed, to create a new set of count-based statistics based on already processed data, without having to re-analyze the dataset.
+In general, to create count-based features, you use [Build Counting Transform](build-counting-transform.md) to process a dataset and create a count table, and from that count table generate a new set of features. 
+
+However, if you have already created a count table, you can use the **Modify Count Table Parameters** module to edit the definition of how the count data is processed. This lets you create a different set of count-based statistics based on the existing data, without having to re-analyze the dataset.
 
 ## How to configure Modify Count Parameters
 
@@ -46,15 +48,15 @@ In general, to create count-based features, you use [Build Counting Transform](b
 
 4. For **Additional prior pseudo examples**, type a number that indicates the number of additional pseudo examples to include. You do not need to provide these examples; the pseudo examples are generated based on the prior distribution.  
 
-5. For **Laplacian noise scale**, type a positive floating-point value that represents the scale used for introducing noise sampled from a Laplacian distribution. When you set a scale value, some acceptable level of noise is incorporated into the model, so the model is less likely to be affected by unseen values in data.  
+5. For **Laplacian noise scale**, type a positive floating-point value that represents the scale used for introducing noise sampled from a Laplacian distribution. When you set a scale value, some acceptable level of noise is incorporated into the model, so the model is less likely to be affected by unseen values in data.
 
 6. In **Output features include**, choose the method to use when creating count-based features for inclusion in the transformation.
 
-    + **CountsOnly**: Create features using counts.  
+    + **CountsOnly**: Create features using counts.
   
-    + **LogOddsOnly**: Create features using the log of the odds ratio.  
+    + **LogOddsOnly**: Create features using the log of the odds ratio.
   
-    + **BothCountsAndLogOdds**: Create features using both counts and log odds.  
+    + **BothCountsAndLogOdds**: Create features using both counts and log odds.
   
 7. Select the **Ignore back off column** option if you want to override the `IsBackOff` flag in the output when creating features. When you select this option, count-based features are created even if the column doesn’t have significant count values.
 

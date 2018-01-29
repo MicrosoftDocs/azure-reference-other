@@ -33,13 +33,13 @@ To export data to Azure blob for use by other applications, you use the [Export 
 
 ## How to export data to Azure blob storage
 
-The Azure **blob** service is for storing large amounts of data, including binary data. There are two types of blob storage: public blobs, and blobs that require login credentials.
+The Azure blob service is for storing large amounts of data, including binary data. There are two types of blob storage: public blobs, and blobs that require login credentials.
 
 1. Add the [Export Data](export-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category in Studio.
 
 2. Connect **Export Data** to the module that produces the data that you want to export to Azure blob storage.
 
-3. Open the **Properties**pane of **ExportData**. For the data destination, select **Azure Blob Storage**.
+3. Open the **Properties** pane of **Export Data**. For the data destination, select **Azure Blob Storage**.
 
 4. For **Authentication type**, choose **Public (SAS URL)** if you know that the storage supports access via a SAS URL.
 

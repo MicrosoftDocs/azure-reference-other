@@ -48,17 +48,17 @@ For more information about the research behind this machine learning algorithm, 
 
 3. **Resampling method**, choose the method for creating multiple trees, either bagging or replication.
 
-    **Bagging**: Select this option to use bagging, also called bootstrap aggregating.
+    - **Bagging**: Select this option to use bagging, also called bootstrap aggregating.
 
-    Each tree in a decision forest outputs a Gaussian distribution by way of prediction. The aggregation is to find a Gaussian whose first two moments match the moments of the mixture of Gaussians given by combining all Gaussians returned by individual trees.
+      Each tree in a decision forest outputs a Gaussian distribution by way of prediction. The aggregation is to find a Gaussian whose first two moments match the moments of the mixture of Gaussians given by combining all Gaussians returned by individual trees.
 
-    **Replicate**: Select this option to use replication. In this method, each tree is trained on exactly the same input data. The determination of which split predicate is used for each tree node remains random, so diverse trees are created.
+    - **Replicate**: Select this option to use replication. In this method, each tree is trained on exactly the same input data. The determination of which split predicate is used for each tree node remains random, so diverse trees are created.
 
 4. Specify how you want the model to be trained, by setting the **Create trainer mode** option.
 
-    **Single Parameter**: Use this option when you know how you want to configure the model.
+    - **Single Parameter**: Use this option when you know how you want to configure the model.
 
-    **Parameter Range**: Use this option if you are not sure of the best parameters, and want to use a parameter sweep.
+    - **Parameter Range**: Use this option if you are not sure of the best parameters, and want to use a parameter sweep.
 
 5. **Number of decision DAGs**: Indicate the maximum number of graphs that can be created in the ensemble.
 
