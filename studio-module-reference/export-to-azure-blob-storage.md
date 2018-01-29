@@ -101,24 +101,24 @@ Yes, you can write data to accounts in different regions. However, if the storag
 
 ## Module parameters
 
-**General options**
-  
+### General options
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Data source|List|Data Source Or Sink|Azure Blob Storage|The destination can be a file in Azure BLOB storage, an Azure table, a table or view in an Azure SQL Database, or a Hive table.|  
 |Use cached results|TRUE/FALSE|Boolean|FALSE|Module only executes if valid cache does not exist; otherwise use cached data from prior execution.|  
 |Please specify authentication type|SAS/Account|AuthenticationType|Account|Indicates whether SAS or account credentials should be used for access authorization|  
 
-**Public or SAS - Public storage options**
+### Public or SAS - Public storage options
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |SAS URI for blob|any|String|none|The SAS URI of the blob to be written to (required)|  
 |File format for SAS file|ARFF<br /><br /> CSV<br /><br /> TSV|LoaderUtils.FileTypes|CSV|Indicates whether file is CSV, TSV, or ARFF. (required)|  
 |Write SAS  header row|TRUE/FALSE|Boolean|FALSE|Indicates whether column headings should be written to the file|  
-  
- **Account - Private storage options**  
-  
+
+### Account - Private storage options
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Azure account name|any|String|none|Azure user account name|  

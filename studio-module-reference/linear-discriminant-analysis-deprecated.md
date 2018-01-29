@@ -27,7 +27,7 @@ This article describes how to use the **Fisher Linear Discriminant Analysis** mo
 You provide a set of possible feature columns as inputs, and the algorithm determines the optimal combination of the input columns that linearly separates each group of data while minimizing the distances within each group.  
 
 > [!WARNING]
->  This module is provided solely for backward compatibility with experiments created using the pre-release version of Azure Machine Learning. We recommend that you modify your experiments to use [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md) instead.  
+> This module is provided solely for backward compatibility with experiments created using the pre-release version of Azure Machine Learning. We recommend that you modify your experiments to use [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md) instead.
 
 ### More about linear discriminant analysis
 
@@ -45,7 +45,7 @@ Linear Discriminant Analysis is sometimes abbreviated to LDA, but this is easily
 
 ## How to use Linear Discriminant Analysis
 
-1. Add the **Linear Discriminant Analysis*8 module to your experiment in Studio, and connect the dataset ou want to evaluate.
+1. Add the **Linear Discriminant Analysis** module to your experiment in Studio, and connect the dataset you want to evaluate.
 
 2. Select a set of numeric feature columns as inputs. The columns provided as inputs must meet these requirements:
 
@@ -73,7 +73,7 @@ To see examples of how feature selection is used in machine learning experiments
 
 + [Fisher Linear Discriminant Analysis](https://gallery.cortanaintelligence.com/Details/35da9465c13f4050babff2f297284dc1): Demonstrates how to use this module for dimensionality reduction.
 
-##  <a name="Notes"></a> Technical notes
+## <a name="Notes"></a> Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

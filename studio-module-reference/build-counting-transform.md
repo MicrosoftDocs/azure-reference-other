@@ -38,7 +38,7 @@ The ability to re-use and re-apply count-based features is useful in scenarios s
 
 You can create a count-based feature transformation directly from a dataset, and re-run it each time you run an experiment. Or, you can generate a set of counts, and then merge it with new data to create an updated count table.
 
-- [Create count-based features from a dataset](#bkmk_CreateCounts)  
++ [Create count-based features from a dataset](#bkmk_CreateCounts)  
 
     Start here if you have not created counts before. You use the **Build Counting Transform** module to create count tables and automatically generate a set of features.
 
@@ -111,7 +111,7 @@ You can create a count-based feature transformation directly from a dataset, and
 
     Optionally, you can save the transform if you want to merge the set of count-based features with another set of count-based features. For more information, see [Merge Count Transform](merge-count-transform.md).
 
-###  <a name="bkmk_MergeCounts"></a> Merge counts and features from multiple datasets
+### <a name="bkmk_MergeCounts"></a> Merge counts and features from multiple datasets
 
 1. In Azure Machine Learning Studio, add the **Build Counting Transform** module to your experiment, and connect the dataset that contains the new data you want to add.
 

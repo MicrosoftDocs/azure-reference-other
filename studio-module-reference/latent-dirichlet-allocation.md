@@ -94,11 +94,11 @@ This module requires a dataset that contains a column of text, either raw or pre
 
     + **Number of passes over the data**. Specify the number of times the algorithm will cycle over the data. Corresponds to the `epoch_size` parameter in Vowpal Wabbit.
 
-8. Select the option, **Build dictionary of ngrams** or **Build dictionary of ngrams prior to LDA**, if you want to create the ngram list in an initial pass, before classifying text.
+8. Select the option, **Build dictionary of ngrams** or **Build dictionary of ngrams prior to LDA**, if you want to create the n-gram list in an initial pass, before classifying text.
 
     If you create the initial dictionary beforehand, you can later use the dictionary when reviewing the model. Being able to map results to text rather than numerical indices is generally easier for interpretation. However, saving the dictionary will take longer and use additional storage.
 
-9. For **Maximum size of ngram dictionary**, type the total number of rows that can be created in the ngram dictionary.
+9. For **Maximum size of ngram dictionary**, type the total number of rows that can be created in the n-gram dictionary.
 
     This option is useful for controlling the size of the dictionary. However, if the number of ngrams in the input exceeds this size, collisions may occur.
 
@@ -112,7 +112,7 @@ The module has two outputs:
 
 + **Feature topic matrix**: The leftmost column contains the extracted text feature, and there is a column for each category containing the score for that feature in that category.
 
-For details, see [Example of LDA results](#bkmk_Understanding).  
+For details, see [Example of LDA results](#bkmk_Understanding).
 
 ### LDA transformation
 

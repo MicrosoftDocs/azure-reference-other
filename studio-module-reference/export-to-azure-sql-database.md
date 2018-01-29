@@ -101,7 +101,7 @@ Azure Machine Learning supports the UTF-8 encoding. If string columns in your da
 
 Also, Azure Machine Learning cannot output data types such as `money`.
 
-##  <a name="parameters"></a> Module parameters
+## Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -116,7 +116,7 @@ Also, Azure Machine Learning cannot output data types such as `money`.
 |Number of rows written per SQL Azure operation|String|Integer|50|String|  
 |Use cached results|TRUE/FALSE|Boolean|FALSE|Module only executes if valid cache does not exist; otherwise use cached data from prior execution.|  
 
-## <a name="exceptions"></a> Exceptions
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

@@ -62,7 +62,7 @@ The following steps describe how to manually configure the import source.
 
 7. For **Location of output data**, select the option that indicates where the data is stored. If the data is in the Hadoop distributed file system (HDFS), it must be accessible via the same account and password that you just entered. If the data is in Azure, provide the location and credentials of the storage account.
 
-    - **HDFS**: Type or paste the HDFS server URI. Be sure to use the HDInsight cluster name **without** the HTTPS:// prefix.
+    - **HDFS**: Type or paste the HDFS server URI. Be sure to use the HDInsight cluster name **without** the `HTTPS://` prefix.
 
     - **Azure**: For **Azure storage account name**, type the name of the Azure account. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.
 

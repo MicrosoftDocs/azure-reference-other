@@ -107,14 +107,14 @@ This section contains implementation details, tips, and answers to frequently as
 
     This message indicates that the column you selected is not a categorical column. You can mark the column as `Categorical` by using [Edit Metadata](edit-metadata.md), or select a different column that contains appropriate category values.
 
-##  <a name="ExpectedInputs"></a> Expected inputs
-  
+## Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Data to group|  
   
-##  <a name="parameters"></a> Module parameters
-  
+## Module parameters
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Selected columns|any|ColumnSelection|CategoricalAll|Select the columns that will be grouped.|  
@@ -122,7 +122,7 @@ This section contains implementation details, tips, and answers to frequently as
 |Default level name|any|String||Indicate the default level to use if no mappings match.|  
 |New number of levels|List|Number of groups||Specify the number of levels after values have been grouped, including the default level.|  
 
-##  <a name="Outputs"></a> Output
+## Output
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  

@@ -66,7 +66,7 @@ For examples of how to use the [Export Data](export-data.md) module, see the [Az
 
 + [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/hive-criteo-walkthrough): This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio using Hive.
 
-##  <a name="TechnicalNotes"></a> Technical notes
+## <a name="TechnicalNotes"></a> Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -94,7 +94,7 @@ It can be hard to figure out the default container for the cluster. Here are som
 
     **Create default container**: If you selected this option, a container with the same name as the cluster was created, and you should specify that container name as the default container for the cluster.
 
-##  <a name="parameters"></a> Module parameters
+## Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -110,7 +110,7 @@ It can be hard to figure out the default container for the cluster. Here are som
 |Azure container name|any|String|none|Azure container name|  
 |Use cached results|TRUE/FALSE|Boolean|FALSE|Module only executes if valid cache does not exist; otherwise use cached data from prior execution.|  
 
-## <a name="exceptions"></a> Exceptions
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

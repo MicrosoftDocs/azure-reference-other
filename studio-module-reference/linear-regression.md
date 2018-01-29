@@ -20,7 +20,7 @@ manager: "cgronlund"
 
 Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)
 
-## <a name="Remarks"></a> Module overview
+## Module overview
 
 This article describes how to use the **Linear Regression** module in Azure Machine Learning Studio, to create a linear regression model for use in an experiment.  Linear regression attempts to establish a linear relationship between one or more independent variables and a numeric outcome, or dependent variable. 
 
@@ -64,7 +64,7 @@ This module supports two methods for fitting a regression model, with very diffe
 
     For small datasets, it is best to select ordinary least squares. This should give very similar results to Excel.
 
-###  <a name="bkmk_OrdinaryLeastSquares"></a> Create a regression model using ordinary least squares
+### <a name="bkmk_OrdinaryLeastSquares"></a> Create a regression model using ordinary least squares
 
 1. Add the **Linear Regression Model** module to your experiment in Studio.
 
@@ -102,7 +102,7 @@ After training is complete:
 
 + To perform cross-validation against a labeled data set, connect the untrained model to [Cross-Validate Model](cross-validate-model.md).
 
-###  <a name="bkmk_GradientDescent"></a> Create a regression model using online gradient descent
+### <a name="bkmk_GradientDescent"></a> Create a regression model using online gradient descent
 
 1. Add the **Linear Regression Model** module to your experiment in Studio.
 
@@ -186,7 +186,7 @@ However, because linear regression is a well-established technique that is suppo
 
 + Regression methods are often categorized by the number of response variables.  For example, multiple linear regression means a model that has multiple variables to predict.
 
-- In Matlab, multivariate regression refers to a model that has multiple response variables.
++ In Matlab, multivariate regression refers to a model that has multiple response variables.
 
 + In Azure Machine Learning, regression models support a single response variable.
 
@@ -198,8 +198,8 @@ In contrast, if you are using multiple variables to predict a class value, we re
 
 If you want to use other linear regression packages that are available for the R language, we recommend that you use the [Execute R Script](execute-r-script.md) module and call the **lm** or **glm** packages, which are included in the runtime environment of Azure Machine Learning Studio.
 
-##  <a name="parameters"></a> Module parameters
-  
+## Module parameters
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Normalize features|any|Boolean|true|Indicate whether instances should be normalized|  
@@ -211,9 +211,9 @@ If you want to use other linear regression packages that are available for the R
 |Random number seed|any|Integer||Specify a value to seed the random number generator used by the model. Leave blank for default.|  
 |Allow unknown categorical levels|any|Boolean|true|Indicate whether an additional level should be created for each categorical column. Any levels in the test dataset not available in the training dataset are mapped to this additional level.|  
 |Include intercept term|Any|Boolean|True|Indicate whether an additional term should be added for the intercept|  
-  
-##  <a name="Outputs"></a> Outputs
-  
+
+## Outputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained regression model|  

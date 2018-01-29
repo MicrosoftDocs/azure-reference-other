@@ -116,20 +116,20 @@ For examples of how to use these machine learning modules, see the [Azure AI Gal
 
 ## Module parameters
 
-**Public or SAS - Public options**
+### Public or SAS - Public options
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Table SAS URI|any|String|||  
 
-**Account - Private account options**
+### Account - Private account options
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Table account name|||||  
 |Table account key|any|SecureString|||  
 
-**Storage options**
+### Storage options
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  

@@ -27,7 +27,7 @@ This article describes how to use the **Count Featurizer** module in Azure Machi
 Creating features from counts is an efficient way of summarizing useful information about the distribution of data and labels in a set of training data. This method of creating features from raw data is particularly useful in large data sets with high-cardinality features.  For example, in fraud detection, count tables can be used to collect information about the user ID, product and transaction and all the possible combinations over terabytes of data.  Count tables can also be useful in improving accuracy on small data sets.
 
 > [!WARNING]
->  This module has been deprecated.
+> This module has been deprecated.
 
 For new experiments, we recommend that you use the following modules:
 

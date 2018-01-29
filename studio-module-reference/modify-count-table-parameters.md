@@ -76,13 +76,13 @@ This section contains implementation details, tips, and answers to frequently as
 
 It is statistically safe to count and train on the same data set if you set the Laplacian noise scale parameter.
 
-## <a name="ExpectedInputs"></a> Expected inputs
+## Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Counting transform|[ITransform interface](itransform-interface.md)|The counting transform to apply|  
 
-## <a name="parameters"></a> Module parameters
+## Module parameters
 
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-----------------|-------------|  
@@ -92,13 +92,13 @@ It is statistically safe to count and train on the same data set if you set the 
 |Output features include|OutputFeatureType||Required|BothCountsAndLogOdds|The features to output|  
 |Ignore back off column|Boolean||Required|false|Whether to ignore the IsBackOff column in the output|  
 
-## <a name="Outputs"></a> Outputs
+## Outputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Modified transform|[ITransform interface](itransform-interface.md)|The modified transform|  
 
-## <a name="exceptions"></a> Exceptions
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

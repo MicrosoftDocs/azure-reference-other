@@ -24,7 +24,7 @@ Category: [Machine Learning / Initialize Model / Classification](machine-learnin
 
 This article describes how to use the **Multiclass Decision Forest** module in Azure Machine Learning Studio, to create a machine learning model based on the *decision forest* algorithm. A decision forest is an ensemble model that very rapidly builds a series of decision trees, while learning from tagged data.
 
-## <a name="Remarks"></a> More about decision forests
+## More about decision forests
 
 The decision forest algorithm is an ensemble learning method for classification. The algorithm works by building multiple decision trees and then *voting* on the most popular output class. Voting is a form of aggregation, in which each tree in a classification decision forest outputs a non-normalized frequency histogram of labels. The aggregation process sums these histograms and normalizes the result to get the “probabilities” for each label. The trees that have high prediction confidence have a greater weight in the final decision of the ensemble.
 
@@ -39,7 +39,7 @@ Decision trees have many advantages:
 
 The decision forest classifier in Azure Machine Learning Studio consists of an ensemble of decision trees. Generally, ensemble models provide better coverage and accuracy than single decision trees. For more information, see [Decision trees](http://go.microsoft.com/fwlink/?LinkId=403677).
 
-## <a name="tips"></a> How to configure Multiclass Decision Forest
+## How to configure Multiclass Decision Forest
 
 > [!TIP]
 > If you are not sure of the best parameters, we recommend that you use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to train and test multiple models and find the optimal parameters.

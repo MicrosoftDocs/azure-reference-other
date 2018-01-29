@@ -188,7 +188,6 @@ If you find that you have loaded more data than you need, you can overwrite the 
 
 #### Why does the import process add an extra row at the end of my dataset when it finds a trailing new line?
 
-
 If the **Import Data** module encounters a row of data that is followed by an empty line or a trailing new line character, an extra row containing missing values is added at the end of the table.
 
 The reason for interpreting a trailing new line as a new row is that **Import Data** cannot determine the difference between an actual empty line and an empty line that is created by the user pressing ENTER at the end of a file.
