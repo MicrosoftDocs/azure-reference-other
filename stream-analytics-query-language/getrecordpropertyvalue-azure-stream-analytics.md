@@ -1,20 +1,21 @@
 ---
 title: "GetRecordPropertyValue (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns the record value associated with the specified property. "
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 0d49d7a6-680d-4e78-af4e-26301e5deb8b
 caps.latest.revision: 8
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # GetRecordPropertyValue (Azure Stream Analytics)
   Returns the record value associated with the specified property.  
@@ -35,12 +36,12 @@ GetRecordPropertyValue ( record_expression, string_expression )
  Is the string expression to be evaluated as a record property name.  
   
 ## Return Types  
- Return type is determined by the record property type and can be any of the [supported types](https://msdn.microsoft.com/en-us/library/azure/dn835065.aspx).  
+ Return type is determined by the record property type and can be any of the [supported types](data-types-azure-stream-analytics.md).  
   
 ## Examples  
  In this code example, “thresholds” is a reference data name defined on the inputs tab.  
   
-```  
+```SQL  
 SELECT   
     input.DeviceID,  
     thresholds.SensorName  
@@ -54,7 +55,7 @@ WHERE
   
  Note that you can use dot notation to access record property fields.  
   
-```  
+```SQL  
 SELECT   
     recordColumn.NestedFieldName1.NestedFieldName2  
 FROM input  

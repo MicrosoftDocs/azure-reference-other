@@ -1,20 +1,21 @@
 ---
 title: "FROM (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 4b6f2a98-fceb-4066-ba43-1957a47f1859
 caps.latest.revision: 6
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # FROM (Azure Stream Analytics)
   Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement.  
@@ -61,7 +62,7 @@ manager: "jhubbard"
   
 ## Example  
   
-```  
+```SQL  
 SELECT TollId, EntryTime AS VehicleEntryTime, LicensePlate, State, Make, Model, VehicleType, VehicleWeight, Toll, Tag   
 FROM TollTagEntry TIMESTAMP BY EntryTime  
   

@@ -1,20 +1,21 @@
 ---
 title: "SUM (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns the sum of all the values in the expression. SUM can be used with numeric columns only."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 74d404e3-4a67-4303-b95e-d7063af3c513
 caps.latest.revision: 5
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # SUM (Azure Stream Analytics)
   Returns the sum of all the values in the expression. SUM can be used with numeric columns only. Null values are ignored.  
@@ -35,7 +36,7 @@ SUM ( expression )
   
 ## Example  
   
-```  
+```SQL  
 SELECT System.TimeStamp AS OutTime, TollId, SUM (Toll)   
 FROM Input TIMESTAMP BY EntryTime  
 GROUP BY TollId, TumblingWindow(minute,3)  

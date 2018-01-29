@@ -1,27 +1,28 @@
 ---
 title: "ISFIRST (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-10-20"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns 1 if the event is the first event within a given duration, or 0 otherwise."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: e905fd1b-94df-44ad-822f-7c92dc6acfcc
 caps.latest.revision: 11
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 10/20/2017
+ms.author: sngun
 ---
 # ISFIRST (Azure Stream Analytics)
 Returns 1 if the event is the first event within a given duration, or 0 otherwise. ISFIRST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
   
  **Syntax**  
   
-```  
+```SQL  
 ISFIRST ( timeunit  , duration )   
     [ OVER ( [PARTITION BY partition_by_expression] [WHEN when_expression]) ]  
   
@@ -71,7 +72,7 @@ The WHEN clause is optional.
 ## Examples  
  Indicate whether a sensor reading event is the first within 10 minutes:  
   
-```  
+```SQL  
 SELECT  
        reading,  
        ISFIRST(mi, 10) as first  
@@ -80,7 +81,7 @@ FROM Input
   
  Indicate whether an event is the first within 10 minute intervals per deviceid:  
   
-```  
+```SQL  
 SELECT  
        deviceid,  
        reading,  
@@ -91,7 +92,7 @@ FROM Input
  Indicate whether an event is the first event with value greater than 50 within 10 minute intervals  
 per deviceid:  
   
-```  
+```SQL  
 SELECT
        deviceid,
        reading,

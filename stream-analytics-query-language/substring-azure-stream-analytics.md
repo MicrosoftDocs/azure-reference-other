@@ -1,20 +1,21 @@
 ---
 title: "SUBSTRING (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns part of a character or a text."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: bd7921ac-61f4-4d56-a634-47233c14e31a
 caps.latest.revision: 7
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # SUBSTRING (Azure Stream Analytics)
   Returns part of a character or a text.  
@@ -46,7 +47,7 @@ SUBSTRING ( expression ,start ,length )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT TollId, EntryTime,LicensePlate, SUBSTRING ( LicensePlate,1,3 ),  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  

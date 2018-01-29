@@ -1,20 +1,21 @@
 ---
 title: "CREATE TABLE (Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "The Create table statement is used to define the schema of the payload of the events coming into Azure Stream Analytics."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: fd746c09-025e-465c-b985-49bfc9fb4f5e
 caps.latest.revision: 7
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # CREATE TABLE (Stream Analytics)
   The Create table statement is used to define the schema of the payload of the events coming into Azure Stream Analytics. This allows the user to explicitly define the data types of each named column for the payload of incoming events.  
@@ -23,7 +24,7 @@ manager: "jhubbard"
   
  **Syntax**  
   
-```  
+```SQL 
 CREATE TABLE   
     table_name   
     ( column_name <data_type> [ ,...n ] );  
@@ -46,7 +47,7 @@ CREATE TABLE
   
 ## Examples  
   
-```  
+```SQL  
   
 CREATE TABLE TollTagEntry (  
    TollId nvarchar(max),  

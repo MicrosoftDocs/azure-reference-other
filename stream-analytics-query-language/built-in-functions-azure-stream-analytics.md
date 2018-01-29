@@ -1,21 +1,23 @@
 ---
 title: "Built-in Functions (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-02-10"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Lists the built-in functions supported by Stream Analytics Query Language"
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 975c1684-866c-4e9d-adc3-5f5d97227c8b
 caps.latest.revision: 15
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 02/10/2017
+ms.author: sngun
 ---
+
 # Built-in Functions (Azure Stream Analytics)
   Azure Stream Analytics provides some built-in functions. The categories of built-in functions are:  
   
@@ -34,9 +36,12 @@ manager: "jhubbard"
   
  The categories of scalar functions are:  
   
-|||||  
-|-|-|-|-|  
-|[Conversion Functions](conversion-functions-azure-stream-analytics.md)|[Date and Time Functions](date-and-time-functions-azure-stream-analytics.md)|[Mathematical Functions](mathematical-functions-azure-stream-analytics.md)|[String Functions](string-functions-azure-stream-analytics.md)|  
+|Function Category|Description|  
+|-----------------------|-----------------|  
+| [Conversion Functions](conversion-functions-azure-stream-analytics.md)| These functions allow you to cast data into different formats. |
+| [Date and Time Functions](date-and-time-functions-azure-stream-analytics.md)| These functions allow you to perform operations on DateTime formats. |
+| [Mathematical Functions](mathematical-functions-azure-stream-analytics.md)| Represent the scalar functions that perform a calculation, usually based on input values that are provided as arguments, and return a numeric value. |
+| [String Functions](string-functions-azure-stream-analytics.md)| These functions allow you to convert strings to upper or lower case. |
   
 ## See Also  
  [Data Types](data-types-azure-stream-analytics.md)   

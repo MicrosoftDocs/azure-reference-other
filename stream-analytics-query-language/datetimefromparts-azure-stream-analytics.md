@@ -1,20 +1,21 @@
 ---
 title: "DATETIMEFROMPARTS (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: " Returns a datetime value for the specified date and time. "
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 6e69e0ea-6774-4ad2-981b-a4624a56c52b
 caps.latest.revision: 5
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # DATETIMEFROMPARTS (Azure Stream Analytics)
   Returns a datetime value for the specified date and time.  
@@ -36,7 +37,7 @@ DATETIMEFROMPARTS (year, month, day, hour, minute, seconds, milliseconds)
   
 ## Examples  
   
-```  
+```SQL 
 SELECT EntryTime, DATETIMEFROMPARTS(2014,9,10,12,DATEPART(minute,EntryTime)+10,00,00)   
 AS ExitTime  
 FROM Input TIMESTAMP BY EntryTime  

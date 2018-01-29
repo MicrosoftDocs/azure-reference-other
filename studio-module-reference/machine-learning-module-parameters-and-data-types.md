@@ -1,7 +1,8 @@
 ---
 title: "Machine Learning Module Parameters and Data Types | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 10/13/2017
+ms.date: 01/22/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,11 +12,18 @@ ms.assetid: 16e1806f-cac7-4be2-925e-83500a46cf89
 caps.latest.revision: 4
 author: "garyericson"
 ms.author: "garye"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
-# Machine Learning Module Parameters and Data Types
-This section provides some of the common technical information about modules in Machine Learning Studio.  
+# Machine Learning Studio Parameters and Data Types
+
+This section describes some of the common interfaces on modules in Azure Machine Learning Studio.  
+
++ [Module parameter types](machine-learning-module-parameter-types.md)
+
+    The parameters are used to customize module behavior. This topic lists some of the parameters used in various modules.  
   
- [Module Parameter Types](machine-learning-module-parameter-types.md) - You can use parameters to customize module behavior. This topic lists the different parameters used in various modules and the range and type of values they will accept.  
-  
- [Module Data Types](machine-learning-module-data-types.md) - Modules that input or output external data support various .NET data types. In addition, modules use custom data classes to pass information through an experiment. This topic lists all of these data types.
++ [Module data types](machine-learning-module-data-types.md)
+
+    Modules that generate data or take data as input support .NET data types. 
+    
+    Studio modules also use custom data classes to pass information to other modules in an experiment.

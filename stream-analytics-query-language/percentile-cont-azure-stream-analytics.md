@@ -1,27 +1,28 @@
 ---
 title: "Percentile_Cont (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-09-08"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Calculates a percentile based on a continuous distribution of the entire data set."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 7f4d2984-d4bc-4560-abd9-2d20cfe9104c
 caps.latest.revision: 2
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 09/08/2016
+ms.author: sngun
 ---
 # Percentile_Cont (Azure Stream Analytics)
 Calculates a percentile based on a continuous distribution of the entire data set. The result is interpolated and might not be equal to any of the specific values from the input set. 
   
  **Syntax**  
   
-```  
+``` 
 PERCENTILE_CONT ( numeric_literal )
       OVER ( ORDER BY order_by_expression [ ASC | DESC ] )
 ```  
@@ -43,7 +44,7 @@ Float
 
 The following example uses PERCENTILE_CONT to find the 95th percentile of service availability across regions. Note that the function may not return a percentile that is within the input data set. This is because PERCENTILE_CONT interpolates the appropriate value, whether or not it exists in the data set.
   
-```  
+```SQL  
 SELECT PERCENTILE_CONT(0.95) OVER (ORDER BY serviceAvailability)
 FROM testInput
 GROUP BY SlidingWindow(hours, 1)

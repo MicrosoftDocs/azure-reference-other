@@ -1,5 +1,6 @@
 ---
 title: "Build Count Table (deprecated) | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -18,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
-## Module Overview  
+## Module overview
 
 This article describes how to use the **Build Count Table** module in Azure Machine Learning Studio to analyze training data and create a *count table*, which contains the joint distribution of all feature columns given a specified label column.
 
@@ -48,25 +49,25 @@ We recommend that you use the following modules to upgrade an existing count tab
 
 ## Examples
 
-Explore examples of count-based featurization using these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
+Explore examples of count-based featurization using these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
--   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
-- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.
-- The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample uses count-based features in a binary classification task.
+- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): Demonstrates the use of count-based features in a multiclass prediction task.
+- [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
 > 
-> These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
+> These experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
 
-## Technical Notes  
+## Technical notes
 
-In statistical learning theory, a classification problem can be formulated as the problem of finding an estimate of a target function from labelled data drawn from an unknown fixed distribution. In fact, if there is a way to know the exact joint distribution of the features of the data and the label, you can readily estimate the target function, given a metric for evaluating the estimates. Therefore, if all combinations of all columns of the dataset are used to build the count table, the generated count table must completely describe the distribution of the label values over the training data.  
+In statistical learning theory, a classification problem can be formulated as the problem of finding an estimate of a target function from labelled data drawn from an unknown fixed distribution. In fact, if there is a way to know the exact joint distribution of the features of the data and the label, you can readily estimate the target function, given a metric for evaluating the estimates. Therefore, if all combinations of all columns of the dataset are used to build the count table, the generated count table must completely describe the distribution of the label values over the training data.
+
+However, if there are *N* columns in the training data, then there are *2^N* choices of joint columns to count, which becomes an enormous number when *N* is large.  
   
- However, if there are *N* columns in the training data, then there are *2^N* choices of joint columns to count, which becomes an enormous number when *N* is large.  
-  
- Therefore, in practice, you will typically choose a small subset of joint columns to build the count table, and use the count table to compute additional features, which can be used to train classifiers such as a decision tree or a neural network.  
-  
- For any subset of selected columns in the training data, and for each row of the data, you can look up values in the count table to generate any combination of the following features:  
+Therefore, in practice, you typically choose a small subset of joint columns to build the count table, and use the count table to compute additional features, which can be used to train classifiers such as a decision tree or a neural network.
+
+For any subset of selected columns in the training data, and for each row of the data, you can look up values in the count table to generate any combination of the following features:  
   
 -   Total counts per label class  
   
@@ -76,16 +77,14 @@ In statistical learning theory, a classification problem can be formulated as th
   
  These additional features can be used in combination with the other original columns of the training data, or you can replace some of the original data columns with the count featurized columns.  
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
-  
+##  <a name="ExpectedInputs"></a> Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |*Input data*|[Data Table](data-table.md)|The data to count.|  
   
-##  <a name="parameters"></a> Module Parameters  
-  
-###  
-  
+##  <a name="parameters"></a> Module parameters
+
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
 |Account key|SecureString||countingType:Blob||The key of the storage account used for the count table.|  
@@ -128,13 +127,17 @@ In statistical learning theory, a classification problem can be formulated as th
 |Count metadata|[Data Table](data-table.md)|The metadata of counts.|  
 |Count table|[Data Table](data-table.md)|The count table.|  
   
-##  <a name="exceptions"></a> Exceptions  
- For a list of all exceptions, see [Machine Learning REST API Error Codes](http://msdn.microsoft.com/library/0eccb2eb-27a1-407e-88a9-2092dba847e0).  
-  
+##  <a name="exceptions"></a> Exceptions
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+
+## See also  
  [Learning with Counts](data-transformation-learning-with-counts.md)   
  [Count Featurizer (deprecated)](count-featurizer-deprecated.md)
+ 

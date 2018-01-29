@@ -1,20 +1,21 @@
 ---
 title: "LAST (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-10-20"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 6f8fabcb-4af9-4c8f-b30d-a6b676717353
 caps.latest.revision: 19
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 10/20/2017
+ms.author: sngun
 ---
 # LAST (Azure Stream Analytics)
   The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints.  It is useful in the scenarios like computing last known good value (e.g. not null), finding last time when event matched certain criteria, etc.  
@@ -25,7 +26,7 @@ In Stream Analytics, the scope of LAST (that is, how far back in history from th
   
  **Syntax**  
   
-```  
+```SQL  
 LAST(<scalar_expression >, [<default>])    
        OVER ( [PARTITION BY <partition key>] LIMIT DURATION(<unit>, <length>) [WHEN boolean_expression])  
   
@@ -56,7 +57,7 @@ Specifies how much of the history from the current event must be considered.  Se
 ## Examples  
  Find most recent non-null sensor reading:  
   
-```  
+```SQL  
 SELECT  
        sensorId,   
        LAST(reading) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1) WHEN reading IS NOT NULL)  
@@ -65,7 +66,7 @@ FROM input
   
  Find last time when reading was greater than 50:  
   
-```  
+```SQL  
 SELECT
        sensorId,
        LAST(System.Timestamp) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1) WHEN reading > 50 )

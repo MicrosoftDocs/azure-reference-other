@@ -1,20 +1,21 @@
 ---
 title: "VARP (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns the statistical variance for the population for all values in a group. Null values are ignored.  "
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 23d50b5d-4bfc-485f-afda-adae9019ab22
 caps.latest.revision: 5
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # VARP (Azure Stream Analytics)
   Returns the statistical variance for the population for all values in a group. Null values are ignored.  
@@ -35,7 +36,7 @@ VARP (expression )
   
 ## Examples  
   
-```  
+```SQL  
 SELECT System.TimeStamp AS OutTime, TollId, VARP (Toll)   
 FROM Input  
 GROUP BY TollId, TumblingWindow(minute,3)  

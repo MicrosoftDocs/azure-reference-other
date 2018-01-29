@@ -1,21 +1,23 @@
 ---
 title: "Analytic Functions (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2017-10-20"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Lists the analytic functions supported by Stream Analytics Query Language"
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 953c32f0-985e-46b1-b050-1a6911acb83c
 caps.latest.revision: 12
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 10/20/2017
+ms.author: sngun
 ---
+
 # Analytic Functions (Azure Stream Analytics)
   Stream Analytics Query Language provides the following analytic functions:  
   

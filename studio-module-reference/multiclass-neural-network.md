@@ -1,7 +1,8 @@
 ---
 title: "Multiclass Neural Network | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 10/11/2016
+ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,62 +12,62 @@ ms.assetid: e8b401fb-230a-4b21-bd11-d1fda0d57c1f
 caps.latest.revision: 27
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Multiclass Neural Network
 *Creates a multiclass classification model using a neural network algorithm*  
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
   
-##  <a name="Remarks"></a> Module Overview  
- You can use the **Multiclass Neural Network** module to create a neural network model that can be used to predict a target that has multiple values. For example, neural networks are frequently used in complex computer vision tasks, such as digit or letter recognition, document classification, and pattern recognition.  
-  
- Classification using neural networks is a supervised learning method, and therefore requires a *tagged dataset* that  includes a label column.  
-  
- You can train the model by providing the model and the tagged dataset as an input to [Train Model](train-model.md) or to [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for the new input examples.  
-  
-## Understanding Neural Networks  
- A neural network is a set of interconnected layers, in which the inputs lead to outputs by a series of weighted edges and nodes. The weights on the edges are learned when training the neural network on the input data. The direction of the graph proceeds from the inputs through the hidden layer, with all nodes of the graph connected by the weighted edges to nodes in the next layer.  
-  
- Most predictive tasks can be accomplished easily with only one or a few hidden layers, although recent research has shown that deep neural networks (DNN) can be very effective for complex tasks (such as image or speech recognition), in which a successive layers model increases the levels of semantic depth.  
-  
- To compute the output of the network for any given input, a value is calculated for each node in the hidden layers and in the output layer. For each node, the value is set by calculating the weighted sum of the values of the nodes in the previous layer and applying an activation function to that weighted sum.  
-  
-## How to Configure a Neural Network Model  
-  
-1.  Add the **Two-Class Neural Network** module to the experiment.  
-  
+## Module overview  
+
+This article describes how to use the **Multiclass Neural Network** module in Azure Machine Learning Studio, to create a neural network model that can be used to predict a target that has multiple values. For example, neural networks of this kind might be used in complex computer vision tasks, such as digit or letter recognition, document classification, and pattern recognition.
+
+Classification using neural networks is a supervised learning method, and therefore requires a *tagged dataset* that includes a label column.
+
+You can train the model by providing the model and the tagged dataset as an input to [Train Model](train-model.md) or to [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for the new input examples.  
+
+### More about neural networks
+
+A neural network is a set of interconnected layers. The inputs are the first layer, and are connected to an output layer by an acyclic graph comprised of weighted edges and nodes.
+
+Between the input and putput layers you can insert multiple hidden layers. Most predictive tasks can be accomplished easily with only one or a few hidden layers. However, recent research has shown that deep neural networks (DNN) with many layers can be very effective in complex tasks such as image or speech recognition. The successive layers are used to model increasing levels of semantic depth.
+
+The relationship between inputs and outputs is learned from training the neural network on the input data. The direction of the graph proceeds from the inputs through the hidden layer and to the output layer. All nodes in a layer are connected by the weighted edges to nodes in the next layer.
+
+To compute the output of the network for a particular input, a value is calculated at each node in the hidden layers and in the output layer. The value is set by calculating the weighted sum of the values of the nodes from the previous layer. An activation function is then applied to that weighted sum.
+
+## How to configure Multiclass Neural Network
+
+1.  Add the **MultiClass Neural Network** module to your experiment in Studio. You can find this module under **Machine Learning**, **Initialize**, in the **Classification** category.
+
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   
-    -   **Single Parameter**.                   If you know how you want to configure the model, you can provide a specific set of values as arguments.  
+    -   **Single Parameter**: Choose this option if you already know how you want to configure the model.  
   
-    -   **Parameter Range**. If you are not sure of the best parameters, you can find the optimal parameters by specifying multiple values and using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to find the optimal configuration.  The trainer will iterate over multiple combinations of the settings you provided and determine the combination of values that produces the best model.  
+    -   **Parameter Range**: Choose this option if you are not sure of the best parameters. Then, specify a range of values and use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to iterate over the combinations and find the optimal configuration.
   
 3.  For **Hidden layer specification**, select the type of network architecture to create.  
   
-    -   **Fully-connected case**. Choose this option to use the default neural network architecture. The default multi-class neural network model is defined as follows:  
+    -   **Fully-connected case**. Uses the default neural network architecture, defined for multiclass neural network models as follows:  
   
-        -   The neural network model has one hidden layer.  
+        -   Has one hidden layer.  
   
-        -   The output layer is fully connected to the hidden layer, and the hidden layer is fully connected to the input layer.  
+        -   The output layer is fully connected to the hidden layer, and the hidden layer is fully connected to the input layer.
   
-        -   The number of nodes in the input layer is determined by the number of features in the training data.  
+        -   The number of nodes in the input layer is determined by the number of features in the training data.
   
         -   The number of nodes in the hidden layer is determined by the user (with a default value of 100).  
   
-        -   The number of nodes in the output layer depends on the number of classes.  
+        -   The number of nodes in the output layer depends on the number of classes.
   
-    -   **Custom definition script**. Choose this option to create a custom neural network architecture, using the Net# language.  
+    -   **Custom definition script**. Choose this option to create a custom neural network architecture, using the Net# language. You can define the number of hidden layers, their connections, and advanced options such as specifying the mappings between layers. For an introduction to Net#, see [More About Net#](#bkmk_Customizing) later in this topic.
   
-         You can define the number of hidden layers, their connections, and advanced options such as specifying the mappings between layers.  For an introduction to Net#, see   [More About Net#](#bkmk_Customizing) later in this topic.  
+    After selecting the custom script  option, use the **Neural network definition** text box to type  or paste in statements written in the Net# language. For additional script examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).  
+
+4.  If you are not using the script option, use **Number of hidden nodes**, and type the number of hidden nodes. The default is one hidden layer with 100 nodes.
   
-         After selecting the custom script  option, use the **Neural network definition** text box to type  or paste in statements written in the Net# language. For additional script examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).  
-  
-4.  For **Number of hidden nodes**, type the number of hidden nodes.  
-  
-     By default, there is one hidden layer with 100 nodes.  
-  
-5.  For **The learning rate**, define the size of the step taken at each iteration, before correction.  
+5.  For **The learning rate**, define the size of the step taken at each iteration, before correction.
   
      A larger value for learning rate can cause the model to converge faster, but it can overshoot local minima.  
   
@@ -78,93 +79,108 @@ manager: "jhubbard"
   
 9. In **The type of normalizer**, select the method to use for feature normalization. The following normalization methods are supported:  
   
-    -   **Binning normalizer**. The binning normalizer creates bins of equal size, and then normalizes every value in each bin to be divided by the total number of bins.  
+    -   **Binning normalizer**: The binning normalizer creates bins of equal size, and then normalizes every value in each bin, by dividing by the total number of bins.
   
-    -   **Gaussian normalizer**. The Gaussian normalizer rescales the values of each feature to have mean 0 and variance 1. This is done by computing the mean and the variance of each feature, and then, for each instance, subtracting the mean value and dividing by the square root of the variance (the standard deviation).  
-  
-    -   **Min-max normalizer**.  The min-max normalizer linearly rescales every feature to the [0,1] interval.  
+    -   **Gaussian normalizer**: The Gaussian normalizer rescales the values of each feature to have mean 0 and variance 1. This is done by computing the mean and the variance of each feature. For each instance, the mean value is subtracted, and the result divided by the square root of the variance (the standard deviation).
+
+    -   **Min-max normalizer**:  The min-max normalizer linearly rescales every feature to the [0,1] interval.  
   
          Rescaling to the [0,1] interval is done by shifting the values of each feature so that the minimal value is 0, and then dividing by the new maximal value (which is the difference between the original maximal and minimal values).  
   
-    -   **Do not normalize**. No normalization is performed.  
+    -   **Do not normalize**: No normalization is performed.
   
-10. Select the **Shuffle examples** option to shuffle cases between iterations.  
+10. Select the **Shuffle examples** option to shuffle cases between iterations. If you deselect this option, cases are processed in exactly the same order each time you run the experiment.
   
-     If you deselect this option, cases are processed in exactly the same order each time you run the experiment.  
+11. For **Random number seed**, type a value to use as the seed. Specifying a seed value is useful when you want to ensure repeatability across runs of the same experiment.
   
-11. For **Random number seed**, type a value to use as the seed.  
+12. Select the **Allow unknown categorical levels** option to create a grouping for unknown values in the training and validation sets. The model might be less precise on known values but provide better predictions for new (unknown) values.
+
+    If you deselect this option, the model can accept only the values contained in the training data.  
+
+13. Connect a training datset and one of the [training modules](machine-learning-train.md): 
   
-     Specifying a seed value is useful when you want to ensure repeatability across runs of the same experiment.  
+    -   If you set **Create trainer mode** to **Single Parameter**, use [Train Model](train-model.md).  
   
-12. Select the **Allow unknown categorical levels** option to create a grouping for Unknown values in the training and validation sets.  
-  
-     If you deselect it, the model can accept only the values contained in the training data. In the former case, the model might be less precise on known values but provide better predictions for new (unknown) values.  
-  
-13. Train the model.  
-  
-    -   If you set **Create trainer mode** to **Single Parameter**, connect a tagged dataset and the [Train Model](train-model.md) module.  
-  
-    -   If you set **Create trainer mode** to **Parameter Range**, connect a tagged dataset and train the model by using [Tune Model Hyperparameters](tune-model-hyperparameters.md).  
+    -   If you set **Create trainer mode** to **Parameter Range**, use [Tune Model Hyperparameters](tune-model-hyperparameters.md).
   
     > [!NOTE]
-    >  -   If you pass a parameter range to [Train Model](train-model.md), it will use only the first value in the parameter range list.  
-    > -   If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and using the default values for the learner.  
-    > -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.  
-  
-14. When the model is trained, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize** to see a summary of the model's parameters, together with the feature weights learned from training, and other parameters of the neural network.  
-  
-##  <a name="bkmk_Customizing"></a> More About Net#  
- A neural network model is defined by the structure of its graph, which includes these attributes:  
-  
--   Number of hidden layers  
-  
--   Number of nodes in each hidden layer  
-  
--   Connections between the layers  
-  
--   Choice of activation functions  
-  
--   Weights on the graph edges  
-  
- The structure of the graph and the activation function are determined by the user. The weights on the edges are learned when training the neural network on the input data.  
-  
--   The first layer is always the input layer.  
-  
--   The last layer is always the output layer. The number of nodes in the output layer should be equal to the number of classes.  
-  
--   You can define any number of intermediate layers (sometimes called hidden layers, because they are contained within the model and are not directly exposed as endpoints).  
-  
- You can change the architecture of neural network models that you create by using the Net# language:  
-  
--   Creating hidden layers and controlling the number of nodes in each layer.  
-  
--   Specifying how layers are to be connected to each other.  
-  
--   Defining special connectivity structures, such as convolutions and weight sharing bundles.  
-  
--   Specifying different activation functions.  
-  
- The Net# reference guide explains the syntax and provides sample network definitions. It explains how you can use Net# to add hidden layers and define the way that the layers interact with each other. For more information, see:  
-  
- [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867)  
+    > 
+    > If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.  
+    > 
+    > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and uses the default values for the learner.  
+    > 
+    > If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values
+
+### Results
+
+After training is complete:
+
++ To see a summary of the model's parameters, together with the feature weights learned from training, and other parameters of the neural network, right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md), and select **Visualize**.  
+
++ To save a snapshot of the trained model, right-click the **Trained model** output and select **Save As Trained Model**. This model is not updated on successive runs of the same experiment.
+
++  To perform cross-validation against a labeled data set, connect the untrained model to [Cross-Validate Model](cross-validate-model.md).
+
   
 ## Examples  
- For examples of how this learning algorithm is used, see these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/). The experiments are related and described in a single document that progresses from basic to advanced configurations:  
-  
--   [Deep Neural networks example (part A)](http://go.microsoft.com/fwlink/?LinkId=525278)  
-  
--   [Deep Neural networks example (part B)](http://go.microsoft.com/fwlink/?LinkId=525279)  
-  
--   [Deep Neural networks example (part C)](http://go.microsoft.com/fwlink/?LinkId=525280)  
-  
--   [Deep Neural networks example (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
-  
-##  <a name="Notes"></a> Technical Notes  
- A neural network can be thought of as a weighted directed acyclic graph. The nodes of the graph are arranged in layers, and they are connected by weighted edges to nodes in the next layer. To compute the output of the network on a given input example, a value is calculated for each node in the hidden layers and in the output layer. For each node, the value is set by calculating the weighted sum of the values of the nodes in the previous layer and applying an activation function to that weighted sum.  
-  
- Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve fair amount of sweeping (iterations) over hyperparameters.  
-  
-##  <a name="parameters"></a> Module Parameters  
+
+For examples of how this learning algorithm is used, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). The experiments are related and described in a single document that progresses from basic to advanced configurations:
+
++ [Deep Neural networks example (part A)](http://go.microsoft.com/fwlink/?LinkId=525278)  
++ [Deep Neural networks example (part B)](http://go.microsoft.com/fwlink/?LinkId=525279)  
++ [Deep Neural networks example (part C)](http://go.microsoft.com/fwlink/?LinkId=525280)  
++ [Deep Neural networks example (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
+
+##  <a name="Notes"></a> Technical Notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
+
+###  <a name="bkmk_Customizing"></a> More about Net#  
+
+In Azure Machine Learning Studio, you can customize the architecture of a neural network model by using the Net# language.  Customizations supported by the Net# language include:  
+
++ Specifying the number of hidden layers and the number of nodes in each layer  
++ Specifying mappings between layers
++ Defining convolutions and weight-sharing bundles  
++ Choosing the activation function  
+
+A neural network model is defined by the structure of its graph, which includes these attributes:  
+
++ The number of hidden layers
++ The number of nodes in each hidden layer
++ How the layers are connected
++ Which activation function is used
++ Weights on the graph edges
+
+> [!IMPORTANT]
+> 
+> The overall structure of the graph, as well as the activation function, can be specified by the user. However, the weights on the edges cannot be specified, and must be learned when training the neural network on the input data.
+
+In general, the network has these defaults:
+
++ The first layer is always the input layer.
++ The last layer is always the output layer.
++ The number of nodes in the output layer should be equal to the number of classes.  
+
+You can define any number of intermediate layers (sometimes called hidden layers, because they are contained within the model, and they are not directly exposed as endpoints).  
+
+The Net# reference guide explains the syntax and provides sample network definitions. It explains how you can use Net# to add hidden layers and define the way that the different layers interact with each other. 
+
+For example, the following script uses the `auto` keyword, which sets the number of features automatically for input and output layers, and uses the default values for the hidden layer.  
+
+```text
+input Data auto;  
+hidden Hidden auto from Data all;  
+output Result auto from Hidden all;   
+```
+
+For additional script examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).
+
+### Tips
+
+Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve fair amount of sweeping (iterations) over hyperparameters.  
+
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -185,7 +201,7 @@ manager: "jhubbard"
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained multiclass classification model|  
   
-## See Also  
+## See also  
  [Classification](machine-learning-initialize-model-classification.md)   
  [Two-Class Neural Network](two-class-neural-network.md)   
  [Neural Network Regression](neural-network-regression.md)   

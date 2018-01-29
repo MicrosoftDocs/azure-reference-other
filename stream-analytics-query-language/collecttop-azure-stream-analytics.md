@@ -1,21 +1,23 @@
 ---
 title: "CollectTOP (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-07-06"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Returns an array of ranked records, where rank defines the ranking position of the event in the window according to the specified ordering."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 88431761-5ccc-4225-b9d0-d54811c6393e
 caps.latest.revision: 10
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 05/24/2016
+ms.author: sngun
 ---
+
 # CollectTOP (Azure Stream Analytics)
   Returns an array of ranked records, where rank defines the ranking position of the event in the window according to the specified ordering. Ordering/ranking is based on event columns and can be specified in ORDER BY clause.  
   
@@ -42,7 +44,7 @@ CollectTop(<number of events as integer literal>) OVER (ORDER BY (<column name> 
   
 ## Examples  
   
-```  
+```SQL  
 SELECT   
     value1,  
     CollectTop(2) OVER (ORDER BY value2 ASC, value3 DESC) as top1  

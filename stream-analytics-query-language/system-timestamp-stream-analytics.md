@@ -1,20 +1,21 @@
 ---
 title: "System.Timestamp  (Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "System.Timestamp is a system property that can be used to retrieve the event’s timestamp. "
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 5636701f-8977-42bf-a864-227652bdf2e4
 caps.latest.revision: 15
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
 # System.Timestamp  (Stream Analytics)
   Every event at every stage of the query in Azure Stream Analytics has a timestamp associated with it. System.Timestamp is a system property that can be used to retrieve the event’s timestamp.  
@@ -24,7 +25,7 @@ manager: "jhubbard"
 ### **Input events timestamp**  
  Timestamp of the input event can be defined by column value (or an expression) specified in the [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md) clause:  
   
-```  
+```SQL  
 SELECT System.Timestamp t   
 FROM input   
 TIMESTAMP BY MyTimeField  
@@ -40,7 +41,7 @@ TIMESTAMP BY MyTimeField
   
 ### **Projection**  
   
-```  
+```SQL  
 SELECT  
       Prop1,  
       Prop2,  
@@ -54,7 +55,7 @@ FROM input
   
 ### **Filter**  
   
-```  
+```SQL  
 SELECT *  
 FROM input  
 WHERE prop1 > prop2  
@@ -65,7 +66,7 @@ WHERE prop1 > prop2
   
 ### **GROUP BY over time window**  
   
-```  
+```SQL  
 SELECT  
       userId,  
       AVG(prop1),  
@@ -80,7 +81,7 @@ GROUP BY TumblingWindow(minute, 1), userId
   
 ### **INNER JOIN**  
   
-```  
+```SQL  
 SELECT  
       System.Timestamp  
 FROM input1  
@@ -95,7 +96,7 @@ ON DATEDIFF(minute, input1, input2) BETWEEN 0 AND 10
   
 ### **LEFT OUTER JOIN**  
   
-```  
+```SQL  
 SELECT  
       System.Timestamp  
 FROM input1  

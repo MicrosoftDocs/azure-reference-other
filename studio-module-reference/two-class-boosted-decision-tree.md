@@ -1,7 +1,8 @@
 ---
 title: "Two-Class Boosted Decision Tree | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -18,11 +19,11 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
   
-##  <a name="Remarks"></a> Module Overview  
+## Module overview  
 
-This article describes how to use the **Two-Class Boosted Decision Tree** module in Azure Machine Learning Studio to create a machine learning model that is based on the boosted decision trees algorithm. 
+This article describes how to use the **Two-Class Boosted Decision Tree** module in Azure Machine Learning Studio, to create a machine learning model that is based on the boosted decision trees algorithm. 
 
-A boosted decision tree is an ensemble learning method in which the second tree corrects for the errors of the first tree, the third tree corrects for the errors of the first and second trees, and so forth.  Predictions are based on the entire ensemble of trees together that makes the prediction.
+A boosted decision tree is an ensemble learning method in which the second tree corrects for the errors of the first tree, the third tree corrects for the errors of the first and second trees, and so forth.  Predictions are based on the entire ensemble of trees together that makes the prediction. For further technical details, see the [Research](#bkmk_research) section of this article.
   
 Generally, when properly configured, boosted decision trees are the easiest methods with which to get top performance on a wide variety of machine learning tasks. However, they are also one of the more memory-intensive learners, and the current implementation holds everything in memory. Therefore, a boosted decision tree model might not be able to process the very large datasets that some linear learners can handle.
   
@@ -31,20 +32,20 @@ For more information about how to choose an algorithm, see these resources:
 -   [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
 -   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/,machine-learning/machine-learning-algorithm-choice/)  
-  
-This module creates a classification model, which is a supervised learning method. Therefore, your training data must be a *tagged dataset* that includes a label column with a value for all rows.
-  
-After preparing the training data, you can train the model by connecting the boosted decision tree model to the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. Both of these training modules create a trained model that can be used for prediction.  
-  
-## How to Configure a Boosted Tree Model  
-  
-1.  In Azure Machine Learning Studio, add the **Boosted  Decision Tree** module to your experiment.
+
+## How to configure Two-Class Boosted Decision Tree
+
+This module creates an untrained classification model. Because classification is a supervised learning method, to train the model, you need a *tagged dataset* that includes a label column with a value for all rows.
+
+You can train this type of model by using either the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. 
+
+1.  In Azure Machine Learning Studio, add the **Boosted Decision Tree** module to your experiment.
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.
   
-    + **Single Parameter**. If you know how you want to configure the model, you can provide a specific set of values as arguments.
+    + **Single Parameter**: If you know how you want to configure the model, you can provide a specific set of values as arguments.
   
-    + **Parameter Range**. If you are not sure of the best parameters, you can find the optimal parameters by using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module. You provide some range of values, and the trainer iterates over multiple combinations of the settings to determine the combination of values that produces the best result.
+    + **Parameter Range**: If you are not sure of the best parameters, you can find the optimal parameters by using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module. You provide some range of values, and the trainer iterates over multiple combinations of the settings to determine the combination of values that produces the best result.
   
 3.  For **Maximum number of leaves per tree**, indicate the maximum number of terminal nodes (leaves) that can be created in any tree.
   
@@ -79,46 +80,49 @@ After preparing the training data, you can train the model by connecting the boo
     + If you set **Create trainer mode** to **Parameter Range**, connect a tagged dataset and train the model by using [Tune Model Hyperparameters](tune-model-hyperparameters.md).  
   
     > [!NOTE]
-    >  + If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.  
-    > + If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values, and uses the default values for the learner.  
-    > + If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.
+    > 
+    > If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.  
+    > 
+    > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values, and uses the default values for the learner.  
+    > 
+    > If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.
   
 ### Results
 
 After model training is complete, right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) to view the results:
 
-+  To see the tree that was created on each iteration, select **Visualize**. 
++ To see the tree that was created on each iteration, select **Visualize**. 
 + To drill down into the splits and see the rules for each node, click each tree.
   
 ## Examples
 
-Explore the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) to see examples of how boosted decision trees are used in machine learning:
+For examples of how boosted decision trees are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
--   The [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168) sample uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
+-   [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
   
--   The [Flight delay prediction](https://gallery.azureml.net/Experiment/837e2095ce784f1ba5ac623a60232027) sample uses the **Two-Class Boosted Decision Tree** algorithm to determine whether a flight is likely to be delayed.  
+-   [Flight delay prediction](https://gallery.azureml.net/Experiment/837e2095ce784f1ba5ac623a60232027): This sample uses the **Two-Class Boosted Decision Tree** algorithm to determine whether a flight is likely to be delayed.  
   
--   The [Credit card risk](http://go.microsoft.com/fwlink/?LinkId=525270) sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.  
+-   [Credit card risk](http://go.microsoft.com/fwlink/?LinkId=525270): This sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.
   
-## Technical Notes  
+## Technical notes  
 
 This section contains implementation details and frequently asked questions.
 
-### Guidance
+### Tips
 
-+ To train a boosted decision tree model, you must provide multiple data instances. An error is generated during the training process if the dataset contains too few rows.  
++ To train a boosted decision tree model, you must provide multiple data instances. An error is generated during the training process if the dataset contains too few rows.
 
 + If your data has missing values, you must add indicators for the features.
   
-+ In general, boosted decision trees yield better results when features are somewhat related. If features have a large degree of entropy (that is, they are not related), they share little or no mutual information, and ordering them in a tree will not yield a lot of predictive significance. If this is not the case, you might try a random forests model.
++ In general, boosted decision trees yield better results when features are somewhat related. If features have a large degree of entropy (that is, they are not related), they share little or no mutual information, and ordering them in a tree does not yield a lot of predictive significance. If this is not the case, you might try a random forests model.
   
     Boosting also works well when you have many more examples than features because the model is prone to overfitting.
 
-+ Do not normalize the dataset. Because the treatment of features is a simple, non-parametric, less-than or greater-than comparison, normalization or any form of non-monotonic transformation function will have little effect. 
++ Do not normalize the dataset. Because the treatment of features is a simple, non-parametric, less-than or greater-than comparison, normalization or any form of non-monotonic transformation function might have little effect. 
 
 + Features are discretized and binned prior to training, so only a relatively small set of threshold candidates are considered, even for continuous features.
 
-### Technical details
+### <a name="bkmk_research"></a> Implementation details
 
 For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](http://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
   
@@ -136,11 +140,11 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
   
     + In a [regression](boosted-decision-tree-regression.md) model, the squared loss is used, and the gradient is the current output, minus the target).
   
-4.  Use the example to fit a weak learner by using that gradient as the target function.
+4.  Use the examples to fit a **weak learner**, using the gradient just defined as the target function.
   
 5.  Add that weak learner to the ensemble with a strength indicated by the learning rate, and if desired, go to Step 2.  
   
-    The weak learners in this implementation are the least-squares regression trees, which use the gradients calculated in Step 3 as the target. The trees are subject to the following restrictions:  
+    In this implementation, the weak learners are the least-squares regression trees, based on the gradients calculated in Step 3. The trees are subject to the following restrictions:  
   
     + They are trained up to a maximum number of leaves.  
   
@@ -149,12 +153,12 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
     + Each decision node is a single feature that is compared against some threshold. If that feature is less than or equal to the threshold, it goes down one path, and if it is greater than the threshold, it goes down the other path.  
     + Each leaf node is a constant value.  
   
-6. The tree-building algorithm greedily selects the feature and threshold for which a split will most decrease the squared loss with regard to the gradient calculated in Step 3. It is subject to a minimum number of training examples per leaf. 
+6. The tree-building algorithm greedily selects the feature and threshold for which a split minimizes the squared loss with regard to the gradient calculated in Step 3. The selection of the split is subject to a minimum number of training examples per leaf. 
 
-    It repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. 
+    The algorithm repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. 
 
-##  <a name="parameters"></a> Module Parameters  
-  
+##  <a name="parameters"></a> Module parameters  
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Maximum number of leaves per tree|>=1|Integer|20|Specify the maximum number of leaves allowed per tree|  
@@ -165,12 +169,12 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
 |Allow unknown categorical levels|Any|Boolean|True|If True, an additional level is created for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
 ##  <a name="Outputs"></a> Output  
-  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained binary classification model|  
   
-## See Also  
+## See also  
  [Classification](machine-learning-initialize-model-classification.md)   
  [Boosted Decision Tree Regression](boosted-decision-tree-regression.md)   
  [A-Z Module List](a-z-module-list.md)

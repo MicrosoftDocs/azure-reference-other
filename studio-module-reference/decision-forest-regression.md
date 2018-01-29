@@ -1,7 +1,8 @@
 ---
 title: "Decision Forest Regression | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 09/21/2017
+ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,20 +12,20 @@ ms.assetid: 562988b2-e740-4e3a-8131-358391bad755
 caps.latest.revision: 18
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Decision Forest Regression
 *Creates a regression model using the decision forest algorithm*
 
 Category: [Initialize Model - Regression](machine-learning-initialize-model-regression.md)
 
-## Module Overview
+## Module overview
 
-This article describes how to use the **Decision Forest Regression** module in Azure Machine Learning to create a regression model based on an ensemble of decision trees.
+This article describes how to use the **Decision Forest Regression** module in Azure Machine Learning Studio, to create a regression model based on an ensemble of decision trees.
 
 After you have configured the model, you must train the model using a labeled dataset and the [Train Model](train-model.md) module.  The trained model can then be used to make predictions. Alternatively, the untrained model can be passed to [Cross-Validate Model](cross-validate-model.md) for cross-validation against a labeled data set.
 
-## Understanding Decision Forests for Regression
+## How decision forests work in regression tasks
 
 Decision trees are non-parametric models that perform a sequence of simple tests for each instance, traversing a binary tree data structure until a leaf node (decision) is reached.
 
@@ -36,11 +37,11 @@ Decision trees have these advantages:
 
 - They perform integrated feature selection and classification and are resilient in the presence of noisy features.
 
-This regression model consists of an ensemble of decision trees. Each tree in a regression decision forest outputs a Gaussian distribution by way of prediction. An aggregation is performed over the ensemble of trees to find a Gaussian distribution closest to the combined distribution for all trees in the model.
+This regression model consists of an ensemble of decision trees. Each tree in a regression decision forest outputs a Gaussian distribution as a prediction. An aggregation is performed over the ensemble of trees to find a Gaussian distribution closest to the combined distribution for all trees in the model.
 
 For more information about the theoretical framework for this algorithm and its implementation, see this article: [Decision Forests: A Unified Framework for Classification, Regression, Density Estimation, Manifold Learning and Semi-Supervised Learning ](https://www.microsoft.com/en-us/research/publication/decision-forests-a-unified-framework-for-classification-regression-density-estimation-manifold-learning-and-semi-supervised-learning/?from=http%3A%2F%2Fresearch.microsoft.com%2Fapps%2Fpubs%2Fdefault.aspx%3Fid%3D158806#)
 
-## How to Configure a Decision Forest Regression Model
+## How to configure Decision Forest Regression Model
 
 1. Add the **Decision Forest Regression** module to the experiment. You can find the module in Studio under **Machine Learning**, **Initialize Model**, and **Regression**.
 
@@ -93,19 +94,25 @@ For more information about the theoretical framework for this algorithm and its 
 
 ### Results
 
-When the model is trained, right-click the output of the training module, and select **Visualize** to see the tree that was created on each iteration.  
+After training is complete:
 
-You can click on each tree to drill down into the splits and see the rules for each node.
++ To see the tree that was created on each iteration, right-click the output of the training module, and select **Visualize**.
+
++ To see the rules for each node, click each tree and drill down into the splits.
+
++ To save a snapshot of the traind model, right-click the output of the training module, and select **Save As Trained Model**. This copy of the model is not updated on successive runs of the experiment. 
 
 ## Examples
 
 For examples of regression models, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
 
-- The [Compare Regression Models sample](http://go.microsoft.com/fwlink/?LinkId=525731) contrasts several different kinds of regression models.
+- [Compare Regression Models sample](http://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
 
-- The [sentiment analysis sample](http://go.microsoft.com/fwlink/?LinkId=525274) uses several different regression models to generate predicted ratings.
+- [Sentiment analysis sample](http://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
 
-##  <a name="Notes"></a> Technical Notes
+##  <a name="Notes"></a> Technical notes
+
+This section contains implementation details, tips, and answers to frequently asked questions.
 
 - If you pass a parameter range to [Train Model](train-model.md), it will use only the first value in the parameter range list.
 
@@ -113,7 +120,7 @@ For examples of regression models, see these sample experiments in the [Cortana 
 
 - If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.
 
-### Recommendations
+### Tips
 
 If you have limited data or want to minimize the time spent training the model, try these settings:
 
@@ -133,7 +140,7 @@ If you have limited data or want to minimize the time spent training the model, 
 
 - Specify a small number of random splits per node (for example, less than 100)
 
-##  <a name="parameters"></a> Module Parameters
+##  <a name="parameters"></a> Module parameters
 
 |Name|Range|Type|Default|Description|
 |----------|-----------|----------|-------------|-----------------|
@@ -150,7 +157,7 @@ If you have limited data or want to minimize the time spent training the model, 
 |----------|----------|-----------------|
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained regression model|
 
-## See Also
+## See also
 
 [Regression](machine-learning-initialize-model-regression.md)
 

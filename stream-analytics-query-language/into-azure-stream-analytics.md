@@ -1,20 +1,21 @@
 ---
 title: "INTO (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-05-03"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "INTO explicitly specifies an output stream, and is always associated with an SELECT expression."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 4e5d157c-f886-4f04-8894-8c0acdcaf847
 caps.latest.revision: 7
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 05/03/2016
+ms.author: sngun
 ---
 # INTO (Azure Stream Analytics)
   INTO explicitly specifies an output stream, and is always associated with an SELECT expression.  If not specified, the default output stream is “output”.  
@@ -37,7 +38,7 @@ manager: "jhubbard"
   
 ## Example  
   
-```  
+```SQL  
 WITH WAVehicle AS (  
     SELECT TollId, EntryTime AS VehicleEntryTime, LicensePlate, State, Make, Model, VehicleType,    VehicleWeight, Toll, Tag  
     FROM TollTagEntry TIMESTAMP BY EntryTime  

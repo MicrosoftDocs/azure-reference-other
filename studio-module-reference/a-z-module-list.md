@@ -1,5 +1,6 @@
 ---
 title: "A-Z List of Machine Learning Studio Modules | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/05/2018
 ms.reviewer: ""
@@ -14,9 +15,10 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # A-Z List of Machine Learning Studio Modules
-This topic provides an alphabetized list of the modules provided in Azure Machine Learning Studio Machine Learning Studio.  
 
-The modules in Azure Machine Learning modules cover a wide range of features and functions necessary for machine learning tasks, including data conversion and transformation functions, modules for executing R or Python script, and a variety of algorithms such as decision trees and decision forests, clustering, time series, recommendation models, and anomaly detection. 
+This topic provides an alphabetized list of the modules provided in Azure Machine Learning Studio.  
+
+The modules cover a wide range of features and functions necessary for machine learning tasks, including data conversion and transformation functions, modules for executing R or Python script, and a variety of algorithms such as decision trees and decision forests, clustering, time series, recommendation models, and anomaly detection.
 
 + Use this [table](#modules) as an index to quickly find a specific module or algorithm, if you know the name.  
 
@@ -24,9 +26,9 @@ The modules in Azure Machine Learning modules cover a wide range of features and
   
 + If you don't know which module you might need, see this article: [How to choose algorithms for Microsoft Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-algorithm-choice/).  
   
-##  <a name="modules"></a> Modules Reference  
-  
-|Module|Description|  
+##  <a name="modules"></a> Alphabetical table of modules
+
+|Module name|Description|  
 |------------|-----------------|  
 |[Add Columns](add-columns.md)|Adds a set of columns from one dataset to another|  
 |[Add Rows](add-rows.md)|Appends a set of rows from an input dataset to the end of another dataset|  
@@ -140,6 +142,6 @@ The modules in Azure Machine Learning modules cover a wide range of features and
 |[Unpack Zipped Datasets](unpack-zipped-datasets.md)|Unpacks datasets from a zip package in user storage|  
 |[User-Defined Filter](user-defined-filter.md)|Creates a custom finite or infinite impulse response filter|  
   
-## See Also  
+## See also  
  [Module Categories and Descriptions](machine-learning-module-descriptions.md)   
  [Module Data Types](machine-learning-module-data-types.md)

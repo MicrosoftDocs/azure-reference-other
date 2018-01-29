@@ -1,5 +1,6 @@
 ---
 title: "Count Featurizer (deprecated) | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 12/18/2017
 ms.reviewer: ""
@@ -18,11 +19,11 @@ manager: "cgronlund"
   
  Category: [Learning with Counts](data-transformation-learning-with-counts.md)  
   
-## Module Overview  
+## Module overview  
 
-This article describes how to use the **Count Featurizer** module in Azure Machine Learning Studio to create features from a previously generated count table. Creating features from counts is an efficient way of summarizing useful information about the distribution of data and labels in a set of training data. 
+This article describes how to use the **Count Featurizer** module in Azure Machine Learning Studio to create features from a previously generated count table. 
 
-This method of creating features from raw data is particularly useful in large data sets with high-cardinality features.  For example, in fraud detection, count tables can be used to collect information about the user ID, product and transaction and all the possible combinations over terabytes of data.  Count tables can also be useful in improving accuracy on small data sets.
+Creating features from counts is an efficient way of summarizing useful information about the distribution of data and labels in a set of training data. This method of creating features from raw data is particularly useful in large data sets with high-cardinality features.  For example, in fraud detection, count tables can be used to collect information about the user ID, product and transaction and all the possible combinations over terabytes of data.  Count tables can also be useful in improving accuracy on small data sets.
 
 > [!WARNING]
 >  This module has been deprecated. For new experiments, we recommend that you use the following modules:
@@ -36,7 +37,7 @@ This method of creating features from raw data is particularly useful in large d
 > + [Import Count Table](import-count-table.md)  
 > + [Export Count Table](export-count-table.md)  
 
-## How to Configure Count Featurizer
+## How to configure Count Featurizer
 
 > [!IMPORTANT]
 > This module has been replaced with the [Build Counting Transform](build-counting-transform.md). These instructions are provided only for customers who have existing experiments that use the older, deprecated modules.
@@ -69,29 +70,28 @@ This method of creating features from raw data is particularly useful in large d
   
 9. For **Output features include**, select the type of count-based features to generate: 
   
-    + **CountsOnly**.   Creates features using counts.
-    + **LogOddsOnly**.   Creates features using the log of the odds ratio.  
-    + **BothCountsAndLogOdds**.   Creates features using both counts and log odds.  
+    + **CountsOnly**:   Creates features using counts.
+    + **LogOddsOnly**:   Creates features using the log of the odds ratio.  
+    + **BothCountsAndLogOdds**:   Creates features using both counts and log odds.  
   
 10. Select the option, **Ignore back off column**, if you want to ignore the `IsBackOff` column in the output when creating features.
   
 ## Examples
 
-Explore examples of count-based featurization using these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
+Explore examples of count-based featurization in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
--   The [flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277) sample shows how count-based featurization can be useful in a very large dataset.
-- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2) demonstrates the use of count-based features in a multiclass prediction task.
-- The [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2) sample uses count-based features in a binary classification task.
+- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): Demonstrates the use of count-based features in a multiclass prediction task.
+- [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
-> 
-> These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
+> These experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
 
-## Technical Notes  
+## Technical notes
 
 It is statistically safe to count and train on the same data set if you set the Laplacian noise scale parameter.
 
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  <a name="ExpectedInputs"></a> Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -99,9 +99,7 @@ It is statistically safe to count and train on the same data set if you set the 
 |Count table|[Data Table](data-table.md)|The count table.|  
 |Input dataset|[Data Table](data-table.md)|The data set to be featurized.|  
   
-##  <a name="parameters"></a> Module Parameters  
-  
-###  
+##  <a name="parameters"></a> Module parameters  
   
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
@@ -111,21 +109,24 @@ It is statistically safe to count and train on the same data set if you set the 
 |Laplacian noise scale|Float|>=0.0f|Required|0.0f|Specify a scale to apply when introducing noise sampled from Laplacian distribution.|  
 |Output features include|OutputFeatureType||Required|BothCountsAndLogOdds|Select the features to include in the output.|  
 |Select columns to featurize|ColumnSelection||Required||Select the columns to featurize. This must be a subset of the counted columns.|  
-|Select counted columns|ColumnSelection||Required||Select the columns that have been used to build count table.|  
-  
+|Select counted columns|ColumnSelection||Required||Select the columns that have been used to build count table.|
+
 ##  <a name="Outputs"></a> Outputs  
-  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Featured data|[Data Table](data-table.md)|The featured data.|  
-  
+
 ##  <a name="exceptions"></a> Exceptions  
- For a list of all exceptions, see [Machine Learning REST API Error Codes](http://msdn.microsoft.com/library/0eccb2eb-27a1-407e-88a9-2092dba847e0).  
-  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+
+## See also  
  [Learning with Counts](data-transformation-learning-with-counts.md)   
  [Build Count Table (deprecated)](build-count-table-deprecated.md)

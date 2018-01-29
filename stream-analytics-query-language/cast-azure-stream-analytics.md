@@ -1,21 +1,23 @@
 ---
 title: "CAST (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-07-19"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "Converts an expression of one data type to another within the supported types in Stream Analytics Query Language."
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: 1cddcf7a-cdc7-4efc-91c3-9f8058b0e8c7
 caps.latest.revision: 8
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 07/19/2017
+ms.author: sngun
 ---
+
 # CAST (Azure Stream Analytics)
   Converts an expression of one data type to another within the supported types in Stream Analytics Query Language. This will fail and cause the job to stop if the conversion cannot be performed.
   
@@ -24,7 +26,7 @@ manager: "jhubbard"
   
  **Syntax**  
   
-```  
+``` 
 CAST ( expression AS data_type)  
   
 ```  
@@ -43,7 +45,7 @@ CAST ( expression AS data_type)
   
 ## Examples  
   
-```  
+```SQL  
   
 SELECT TollId, EntryTime, LicensePlate, State, Make   
 FROM Input TIMESTAMP BY EntryTime  

@@ -1,21 +1,23 @@
 ---
 title: "SQUARE (Azure Stream Analytics) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2016-04-22"
-ms.prod: "azure"
-ms.reviewer: ""
-ms.service: "stream-analytics"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+description: "A mathematical function that returns the square of the specified float value. "
 applies_to: 
   - "Azure"
+services: "stream-analytics"
+author: SnehaGunda
+manager: kfile
+
+ms.service: stream-analytics
+ms.suite: ""
+ms.topic: reference
+ms.tgt_pltfrm: ""   
 ms.assetid: be6fb339-a9bd-4d7d-b7e3-3c0a0890d5c5
 caps.latest.revision: 8
-author: "SnehaGunda"
-ms.author: "sngun"
-manager: "jhubbard"
+ms.workload: data-services
+ms.date: 04/22/2016
+ms.author: sngun
 ---
+
 # SQUARE (Azure Stream Analytics)
   A mathematical function that returns the square of the specified float value.  
   
@@ -35,7 +37,7 @@ SQUARE (float_expression)
   
 ## Example  
   
-```  
+```SQL  
 SELECT SQUARE(input.x) AS "The SQUARE of the variable x"  
 FROM input  
 ```  
