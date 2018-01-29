@@ -2,7 +2,7 @@
 title: "Import from DocumentDB (CosmosDB) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 12/18/2017
+ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -56,31 +56,31 @@ The module features a new wizard to help you choose a storage option,  select fr
 ### Manually set properties in the Import Data module
 
 The following steps describe how to manually configure the import source.
-  
-1.  Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category. 
-  
-2.  For **Data source**, select **Azure DocumentDB**.
-  
+
+1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category. 
+
+2. For **Data source**, select **Azure DocumentDB**.
+
     The document store must have been created using Microsoft Azure CosmosDB. Accounts that were created using Microsoft Azure DocumentDB are seamlessly upgraded.
 
     You might need to provide connection information for the document database. 
 
     > [!TIP]
     > Look for the name of the option in Machine Learning Studio to change at a later date. The import functionality was not affected by the name change.
-    
+
 3. For **Endpoint URL**, in the Azure Portal, click **Keys**, and copy the contents of the **URI** field at the top of the page.
-  
+
 4. For **Database ID**, paste the name of the database to use. 
 
     To get the database name from the Azure Portal, click **Document Explorer**. You can view the list of databases and collections in this pane.
-  
+
 5. For **DocumentDB Key**, paste in an access key for the account. 
 
     To locate the keys, click **Keys**, and then copy the content of either the **PRIMARY KEY** or **SECONDARY KEY** fields.  
-  
+
 6. For **Collection ID**, type the name of the collection as shown in the specified CosmosDB database.  
 
-7.  Define a SQL query and filter condition on the data, by using the **SQL query** and **SQL query parameters** options.
+7. Define a SQL query and filter condition on the data, by using the **SQL query** and **SQL query parameters** options.
 
     For **SQL query**, type a query that defines the data to retrieve from the collection. We recommend that you use the [Query Explorer](https://docs.microsoft.com/azure/cosmos-db/tutorial-query-sql-api) to create and test your CosmosDB queries beforehand.
 
@@ -92,32 +92,31 @@ The following steps describe how to manually configure the import source.
 
     See the [Technical Notes](#TechnicalNotes) section for examples, known issues, and additional advice about SQL queries on CosmosDB.
 
-8. Select the **Use cached results** option if you want to reuse existing results.  
-  
-     If you deselect this option, the data is read from the source each time the experiment is run, regardless of whether the data is the same or not. 
-       
-     > [!NOTE]
-     > Azure Machine Learning **cannot** compare the cached data against the data in your CosmosDB account. Hence, there is no way to perform incremental updates from Azure Machine Learning. 
-     > 
-     > If you want to re-import only when the data changes, you must define that logic in another application, such as Azure Data Factory. For more information, see [Move data to and from DocumentDB using Azure Data Factory](https://azure.microsoft.com/documentation/articles/data-factory-azure-documentdb-connector/). 
-  
-7.  Run the experiment, or select just the [Import Data](import-data.md) module and click **Run selected**.
+8. Select the **Use cached results** option if you want to reuse existing results.
+
+    If you deselect this option, the data is read from the source each time the experiment is run, regardless of whether the data is the same or not.
+
+    Azure Machine Learning **cannot** compare the cached data against the data in your CosmosDB account. Hence, there is no way to perform incremental updates from Azure Machine Learning.
+
+    If you want to re-import only when the data changes, you must define that logic in another application, such as Azure Data Factory. For more information, see [Move data to and from DocumentDB using Azure Data Factory](https://azure.microsoft.com/documentation/articles/data-factory-azure-documentdb-connector/).
+
+9. Run the experiment, or select just the [Import Data](import-data.md) module and click **Run selected**.
 
 ### Results
 
 After you have run the module or experiment, you can right-click the output of the module to visualize the results in tabular format.
 
 To capture a snapshot of this data in your Azure Machine Learning workspace as a dataset, you can right-click the module's output and select **Save As Dataset**. However, doing so captures only the data available at the time of import. If the data is expected to change frequently, rerun **Import Data** as needed. 
-  
-##  <a name="Examples"></a> Examples
- 
-For a detailed walkthrough of how to use DocumentDB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).  
- 
-+ [Reading data from Azure DocumentDB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1) 
 
-This blog provides additional examples of parameterized queries on a DocumentDb store. [SQL Parameterization in DocumentDB](https://azure.microsoft.com/en-us/blog/announcing-sql-parameterization-in-documentdb/)
+## <a name="Examples"></a> Examples
 
-##  <a name="TechnicalNotes"></a> Technical notes
+For a detailed walkthrough of how to use DocumentDB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
+
++ [Reading data from Azure DocumentDB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1)
+
++ [SQL Parameterization in DocumentDB](https://azure.microsoft.com/blog/announcing-sql-parameterization-in-documentdb/): This blog provides additional examples of parameterized queries on a DocumentDb store.
+
+## <a name="TechnicalNotes"></a> Technical notes
 
 This section contains advanced configuration options and answers to commonly asked questions.
 
@@ -125,31 +124,34 @@ This section contains advanced configuration options and answers to commonly ask
 
 Suppose you want to use only the data on volcanoes with elevations under 10000 feet.
 
-**Simple query** 
+#### Simple query
 
-Paste the following query in the **SQL query** text box: `<code>`Select * from volcanodb where volcanodb.Elevation < 10000</code>
+Paste the following query in the **SQL query** text box: `Select * from volcanodb where volcanodb.Elevation < 10000`
 
-In this case, the value of the filter expression is set to "{}", and all records are returned. 
+In this case, the value of the filter expression is set to "{}", and all records are returned.
 
-**Parameterized query** 
+#### Parameterized query 
 
 To get only the volcano data related to a specific country, you can specify the country value as a parameter passed to the query at run time. This requires these changes:
- 
-1. In the **SQL query** text box,  define a variable to apply to the "Country" field as part of the SQL query:
 
-    <code>Select * from volcanodb where volcanodb.Country = @param1</code>
+1. In the **SQL query** text box,  define a variable to apply to the `Country` field as part of the SQL query:
 
-2. In the **SQL query parameters** text box, specify the parameter name and its value in JSON format: 
+    `Select * from volcanodb where volcanodb.Country = @param1`
 
-    <code>{"@param1":"Turkey"}</code>
+2. In the **SQL query parameters** text box, specify the parameter name and its value in JSON format, like this: 
+
+    `{"@param1":"Turkey"}`
 
 ### Resources
 
-If you don't have an existing document store, see these articles to get started.  
+If you don't have an existing document store, see these articles to get started.
 
-+ [Azure Cosmos DB: Build a SQL API web app with .NET and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)  
-+ [Create a database](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet#create-collection)  
-+ [Add a collection](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet#create-collection)  
++ [Azure Cosmos DB: Build a SQL API web app with .NET and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)
+
++ [Create a database](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet#create-collection)
+
++ [Add a collection](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet#create-collection)
+
 + [Azure DocumentDB Migration Tool](https://www.microsoft.com/download/details.aspx?id=46436)
 
 ### Data migration and query syntax help
@@ -157,25 +159,25 @@ If you don't have an existing document store, see these articles to get started.
 For samples of queries on a JSON data store, download the [DocumentDB SQL query cheat sheet](http://docs.microsoft.com/azure/documentdb/documentdb-sql-query-cheat-sheet).
 
 If you need to upload content into DocumentDB, we recommend the [DocumentDB migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data). It validates, uploads, and indexes your data. The tool supports multiple sources, including MongoDB, Amazon DynamoDB, HBase, SQL Server databases, and CSV files.
-  
+
 ### Using schema-less queries
-  
-If the data is consistent and predictable, you can use straightforward SQL-like syntax, such as `SELECT * FROM <document collection>`.  This is called a *schema-less query* because you have not named the exact attributes to return. Such a query would return all the fields and all the rows from the specified collection. 
+
+If the data is consistent and predictable, you can use straightforward SQL-like syntax, such as `SELECT * FROM <document collection>`.  This is called a *schema-less query* because you have not named the exact attributes to return. Such a query would return all the fields and all the rows from the specified collection.
 
 However, not specifying a schema can lead to unexpected results or a run-time error if the documents have inconsistent schemas. This is because the [Import Data](import-data.md) module attempts to infer the schema based on a predetermined number of rows as follows:
 
 1. When no attributes are specified, the module scans the first row in the CosmosDB database.
 2. The module creates column names based on attributes, and guesses what the column data types should be based on the example row.
-3. If later rows contain any new or different attributes, a run-time error is generated. 
+3. If later rows contain any new or different attributes, a run-time error is generated.
 
 Therefore, we recommend that you always specify the attributes and values to return from the CosmosDB data store.  For example, rather than use the `SELECT *` syntax, we recommend that you name all attributes retrieved by the query, like this:
 
 `SELECT MyTable.Gender, MyTable.Age, MyTable.Name FROM <document collection>`  
 
-##  <a name="parameters"></a> Module parameters  
+## Module parameters
 
 The following table includes only those parameters for the **Import Data** module that are applicable to the DocumentDB option.
-  
+
 |Name|Range|Type|Required|Default|Description|  
 |----------|-----------|-- |--------|-------------|-----------------|  
 |Data source |list|HTTP| required|none | Data source can be HTTP, FTP, anonymous HTTPS or FTPS, a file in Azure BLOB storage, an Azure table, an Azure SQL Database, a Hive table, an OData endpoint, or DocumentDB.|  
@@ -185,15 +187,14 @@ The following table includes only those parameters for the **Import Data** modul
 |Collection ID|any|string|required|none|Provide the name of a collection in the DocumentDB database|  
 |SQL Query|any|string|required|none|A SQL query specifying records to return from the DocumentDB data store| 
 
-  
-##  <a name="Outputs"></a> Outputs  
-  
+## Outputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset with downloaded data|  
-  
-##  <a name="exceptions"></a> Exceptions  
-  
+
+## Exceptions
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|An exception occurs if one or more of inputs are null or empty.|  
@@ -206,7 +207,7 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 
-## See also  
+## See also
 
  [Import Data](import-data.md)   
  [Export Data](export-data.md)   
