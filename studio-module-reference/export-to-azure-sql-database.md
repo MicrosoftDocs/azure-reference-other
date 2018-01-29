@@ -24,8 +24,6 @@ On the other hand, there might be limits on the amount of data that you can stor
 
 To export data, you provide the instance name and database name where the data is stored, and run the module using an account that has write permissions. You must also specify the table name, and map the columns from your experiment to columns in the table.
 
-> [!NOTE]
-> 
 
 ## How to export data to an Azure SQL Database
 
