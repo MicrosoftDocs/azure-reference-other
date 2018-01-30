@@ -58,7 +58,7 @@ maml.mapOutputPort("data.set")
 
 The following topic lists the packages as of April 2017, and the supported versions.
 
-+ [R Packages in Azure machine Learning](r-packages-supported-by-azure-machine-learning.md)
++ [R Packages in Azure Machine Learning](r-packages-supported-by-azure-machine-learning.md)
 
 ### Installing new R packages
 
@@ -299,7 +299,7 @@ This example shows how to call an R library that is not included in Studio.
     feature.names <- get.feature.column.names(dataset)  
     names(train.data) <- c(feature.names, "Class")  
     model <- naiveBayes(Class ~ ., train.data)    
-    ``  
+    ```  
 
 ### Call a custom Naïve Bayes scorer
 
@@ -399,7 +399,7 @@ The following procedure adds a new package together with its dependencies.
 
 6. Drag it into your experiment, right-click the dataset, and select **Visualize** to view the files included in the zipped folder. The file names that you see in the **Contents** list are the names that you must reference when you install the package.  
 
-    For example, suppose you had uploaded a file named `NewRPackage.zip`, which contains three R packages named `001.zip`, `002.zip`, and `003.zip`. In the **Datasets** list, the name of the dataset would be `NewRPackage.zip`, with  contents  `001.zip`, `002.zip`, and `003.zip
+    For example, suppose you had uploaded a file named `NewRPackage.zip`, which contains three R packages named `001.zip`, `002.zip`, and `003.zip`. In the **Datasets** list, the name of the dataset would be `NewRPackage.zip`, with  contents  `001.zip`, `002.zip`, and `003.zip`.
 
 7. Connect the dataset (`NewRPackage.zip`) to the **Script Bundle** input port.
 
