@@ -50,7 +50,7 @@ To compute the output of the network for a particular input, a value is calculat
 
     - **Parameter Range**: Choose this option if you are not sure of the best parameters, and want to use a parameter sweep. You then specify a range of values and use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to iterate over the combinations and find the optimal configuration.
 
-3. **Hidden layer specification**, select the type of network architecture to create.
+3. **Hidden layer specification**: Select the type of network architecture to create.
 
     - **Fully-connected case**: Select this option to create a model using the default neural network architecture. For multiclass neural network models, the defaults are as follows:
 
@@ -91,7 +91,7 @@ To compute the output of the network for a particular input, a value is calculat
 
     If you deselect this option, cases are processed in exactly the same order each time you run the experiment.
 
-12.**Random number seed**: Type a value to use as the seed, if you want to ensure repeatability across runs of the same experiment.
+12. **Random number seed**: Type a value to use as the seed, if you want to ensure repeatability across runs of the same experiment.
 
 13. **Allow unknown categorical levels**: Select this option to create a grouping for unknown values in the training and validation sets. The model might be less precise on known values but provide better predictions for new (unknown) values.
 

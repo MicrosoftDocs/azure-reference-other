@@ -1,7 +1,8 @@
 ---
 title: "Select Columns in Dataset | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 09/05/2017
+ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,24 +12,25 @@ ms.assetid: 1ec722fa-b623-4e26-a44e-a50c6d726223
 caps.latest.revision: 22
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Select Columns in Dataset
-*Selects columns to include or exclude from a dataset in an operation*  
-  
- Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
-  
-##  <a name="Remarks"></a> Module Overview  
 
-This article describes how to use the [Select Columns in Dataset](select-columns-in-dataset.md) module in Azure Machine Learning Studio, to choose a subset of columns to use in downstream operations. The module does not physically remove the columns from the source dataset; instead, it creates a subset of columns, much like a database *view* or *projection*.  
+*Selects columns to include or exclude from a dataset in an operation*
 
-This module is particularly useful when you need to limit the columns available for a downstream operation, or if you want to reduce the size of the dataset by removing unneeded columns. 
-  
-The columns in the dataset are output in the same order as in the original data, even if you specify them in a different order.  
-    
-## How to use [Select Columns in Dataset](select-columns-in-dataset.md)  
+Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)
 
-This module has no parameters. You use the column selector to choose the columns to include or exclude.  
+## Module overview
+
+This article describes how to use the [Select Columns in Dataset](select-columns-in-dataset.md) module in Azure Machine Learning Studio, to choose a subset of columns to use in downstream operations. The module does not physically remove the columns from the source dataset; instead, it creates a subset of columns, much like a database *view* or *projection*.
+
+This module is particularly useful when you need to limit the columns available for a downstream operation, or if you want to reduce the size of the dataset by removing unneeded columns.
+
+The columns in the dataset are output in the same order as in the original data, even if you specify them in a different order.
+
+## How to use Select Columns in Dataset
+
+This module has no parameters. You use the column selector to choose the columns to include or exclude.
 
 ### Choose columns by name
 
@@ -39,10 +41,13 @@ There are multiple options in the module for choosing columns by name:
     Click the **BY NAME** option.
 
     If you have connected a dataset that is already populated, a list of available columns should appear. If no columns appear, you might need to run upstream modules to view the column list.
-    
-     To filter the list, type in the search box. For example, if you type the letter "w" in the search box, the list is filtered to show the column names that contain the letter w. 
 
-    Select columns and click the right arrow button to move the selected columns to the list in the right-hand pane. Press Shift + Click to select a continuous range of column names. Press Ctrl + Click to add individual columns to the selection. 
+    To filter the list, type in the search box. For example, if you type the letter `w` in the search box, the list is filtered to show the column names that contain the letter `w`.
+
+    Select columns and click the right arrow button to move the selected columns to the list in the right-hand pane.
+
+    + To select a continuous range of column names, press **Shift + Click**.
+    + to add individual columns to the selection, press **Ctrl + Click**.
 
     Click the checkmark button to save and close.
 
@@ -50,34 +55,37 @@ There are multiple options in the module for choosing columns by name:
 
     Click the **WITH RULES** option.
     
-    Apply a rule, such as showing columns of a specific data type.
+    Choose a rule, such as showing columns of a specific data type.
+
     Then, click individual columns of that type by name, to add them to the selection list.
 
 + Type or paste a comma-separated list of column names
 
-   If your dataset is very wide, it might be easier to use indexes or generated lists of names, rather than selecting columns individually. Assuming you have prepared the list in advance:
+    If your dataset is very wide, it might be easier to use indexes or generated lists of names, rather than selecting columns individually. Assuming you have prepared the list in advance:
 
     1. Click the **WITH RULES** option. 
     2. Select **No columns**, select  **Include**, and then click inside the text box with the red exclamation mark. 
-    3. Paste in or type a comma-separated list of previously validated column names. You will not be able to save the module if any column has an invalid names, so be sure to check the names beforehand.
+    3. Paste in or type a comma-separated list of previously validated column names. You cannot save the module if any column has an invalid name, so be sure to check the names beforehand.
     
     You can also use this method to specify a list of columns using their index values. See the [Examples](#bkmk_scenarios) section for tips on how to work with column indices.
 
 ### Choose by type
 
-If you use the **WITH RULES** option, you can apply multiple conditions on the column selections. For example, you might need to get only feature columns of a numeric data type. 
+If you use the **WITH RULES** option, you can apply multiple conditions on the column selections. For example, you might need to get only feature columns of a numeric data type.
 
-The **Begin With** option determines your starting point and is very important for understanding the results. 
+The **BEGIN WITH** option determines your starting point and is very important for understanding the results. 
 
-+ If you select the **ALL COLUMNS** option, all columns are added to the list, and then you must use the **Exclude** option to *remove* columns that meet certain conditions. For example, you might start with all columns and then remove columns by name, or by type.
++ If you select the **ALL COLUMNS** option, all columns are added to the list. Then, you must use the **Exclude** option to *remove* columns that meet certain conditions. 
 
-+ If you select the **NO COLUMNS** option, the list of columns starts out empty, and you specify conditions that define the columns you want to *add* to the list. If you apply multiple rules, each condition is **additive**. 
+    For example, you might start with all columns and then remove columns by name, or by type.
 
-    For example, say you start with no columns, and then add a rule to get all numeric columns. In the Automobile price dataset, that results in 16 columns. Then, you click the **+** sign to add a new condition, and select **Include all features**. The resulting dataset includes all the numeric columns, plus all the feature columns, including some string feature columns. 
++ If you select the **NO COLUMNS** option, the list of columns starts out empty. You then specify conditions to *add* columns to the list. 
+
+    If you apply multiple rules, each condition is **additive**. For example, say you start with no columns, and then add a rule to get all numeric columns. In the Automobile price dataset, that results in 16 columns. Then, you click the **+** sign to add a new condition, and select **Include all features**. The resulting dataset includes all the numeric columns, plus all the feature columns, including some string feature columns.
 
 ### Choose by column index
 
-The column index refers to the order of the column within the original dataset.  
+The column index refers to the order of the column within the original dataset.
 
 + Columns are numbered sequentially starting at 1.  
 + To get a range of columns, use a hyphen. 
@@ -88,7 +96,9 @@ For example, assuming your dataset has at least eight columns, you could paste i
 
 + `8,1-4,6`
 + `1,3-8`
-+ `1,3-6,4` -- No error, but returns the duplicated column only once
++ `1,3-6,4` 
+
+the final example does not result in an error; however, it returns a single instance of column `4`.
 
 For additional tips on working with column indices, see the [Examples](#bkmk_scenarios) section.
 
@@ -206,38 +216,42 @@ The following examples describe some typical ways that users apply  [Select Colu
     |3 |make |
 
   
-## Technical Notes  
+## Technical notes  
 
-If you are familiar with relational databases, this module creates a *projection* of the data;  hence the original name, **Project Columns**. In database terms, a projection is a function, such as a Transact-SQL or LINQ statement, that takes a data in tabular format as input and produces a related output.   
-  
-In relational algebra, a projection is a unary operation, which is written as a set of attribute names. The result of a projection is the set of those attributes, with other attributes discarded.  
+If you are familiar with relational databases, this module creates a *projection* of the data;  hence the original name, **Project Columns**. In database terms, a projection is a function, such as a Transact-SQL or LINQ statement, that takes a data in tabular format as input and produces a related output.
 
-##  <a name="ExpectedInputs"></a> Expected Input  
-  
+In relational algebra, a projection is a unary operation, which is written as a set of attribute names. The result of a projection is the set of those attributes, with other attributes discarded.
+
+## Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
-  
-##  <a name="parameters"></a> Module Parameter  
-  
+
+## Module parameters
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Select columns|any|ColumnSelection||Select columns to keep in the projected dataset.|  
-  
-##  <a name="Outputs"></a> Output  
-  
+
+## Outputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
-  
-##  <a name="exceptions"></a> Exceptions  
- For a list of all exceptions, see [Module Error Codes](machine-learning-module-error-codes.md).  
-  
+
+## Exceptions
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0001](errors/error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
 |[Error 0003](errors/error-0003.md)|An exception occurs if one or more input datasets are null or empty.|  
-  
-## See Also  
+
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+
+For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+
+## See also
+
  [Manipulation](data-transformation-manipulation.md)   
- [A-Z Module List](a-z-module-list.md)
+ 
