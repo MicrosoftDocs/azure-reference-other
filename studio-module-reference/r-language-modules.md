@@ -67,7 +67,7 @@ data.set <- data.frame(installed.packages())
 maml.mapOutputPort("data.set")
 ```
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > The packages that are supported in Studio change frequently. If you have any doubts about whether an R package is supported, use the R code sample provided to get the complete list of packages in the current environment.
 
 ## Extending experiments using the R language
