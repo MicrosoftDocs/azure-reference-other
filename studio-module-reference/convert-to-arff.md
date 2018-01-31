@@ -15,9 +15,10 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Convert to ARFF
+
 *Converts data input to the attribute relation file format used by the Weka toolset*  
   
- Category: [Data Format Conversions](data-format-conversions.md)  
+Category: [Data Format Conversions](data-format-conversions.md)  
   
 ## Module overview  
 
@@ -30,7 +31,7 @@ In general, conversion to the Weka file format is required only if you want to u
 For more information about the Weka toolset, see this Wikipedia article: [Weka (machine learning)](https://wikipedia.org/wiki/Weka_(machine_learning))
 
 > [!WARNING]
->  You cannot overwrite an existing ARFF file in Azure Storage.  
+> You cannot overwrite an existing ARFF file in Azure Storage.  
 
 ## How to use Convert to ARFF
 
@@ -63,11 +64,11 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Example of ARFF format
 
-This section provides an example of how a typical dataset would look when converted to to ARFF.
+This section provides an example of how a typical dataset would look when converted to ARFF.
 
 Typically an ARFF data file is comprised of two sections: a **header** that defines the data source and schema, and the **data** section, which contains the actual entities and their attributes.  
   
-#### ARFF Header
+#### ARFF header
 
 The header for an ARFF file defines the list of the attributes (in columns) and their data types. The header can also contain multiple comment lines that describe the data source or any other notes.  
   
@@ -88,18 +89,19 @@ For additional information about this file format, see the Weka Wiki page: [ARFF
 
 Azure Machine Learning Studio saves ARFF files by using the ARFF 3.0 format.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+## Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="Outputs"></a> Output  
-  
+## Outputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|Arff|Output dataset|  
   
-## See also  
+## See also
+  
  [Data Format Conversions](data-format-conversions.md)   
  [A-Z Module List](a-z-module-list.md)

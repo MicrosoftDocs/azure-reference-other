@@ -15,10 +15,11 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Add Rows
+
 *Appends a set of rows from an input dataset to the end of another dataset*  
-  
- Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
-  
+
+Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
 ## Module overview  
 
 This article describes how to use the **Add Rows** module in Azure Machine Learning, to concatenate two datasets. In concatenation, the rows of the second dataset are added to the end of the first dataset.  
@@ -61,20 +62,20 @@ To see examples of how this module is used, see the [Azure AI Gallery](https://g
   
 - [Time Series Forecasting](http://go.microsoft.com/fwlink/?LinkId=525273): Uses R scripts to generate custom metrics and then combines them in a single table by using **Add Rows**.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+## Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset1|[Data Table](data-table.md)|Dataset rows to be added to the output dataset first|  
 |Dataset2|[Data Table](data-table.md)|Dataset rows to be appended to the first dataset|  
   
-##  <a name="Outputs"></a> Outputs  
-  
+## Outputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset that contains all rows of input datasets|  
   
-##  <a name="exceptions"></a> Exceptions  
+## Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  
@@ -86,7 +87,8 @@ To see examples of how this module is used, see the [Azure AI Gallery](https://g
 For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).   
-## See also  
+## See also
+  
  [Manipulation](data-transformation-manipulation.md)   
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)

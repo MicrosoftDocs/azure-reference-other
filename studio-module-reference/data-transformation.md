@@ -16,7 +16,7 @@ manager: "cgronlund"
 ---
 # Data Transformation
 
-This article lists the modules provided in  Azure Machine Learning Studio for data transformation. For machine learning, "data transformation" entails some very general tasks, such as joining datasets or changing column names, but it also includes many tasks that are specific to machine learning, such as normalization, binning and grouping, inference of missing values, and so forth. 
+This article lists the modules provided in Azure Machine Learning Studio for data transformation. For machine learning, "data transformation" entails some very general tasks, such as joining datasets or changing column names, but it also includes many tasks that are specific to machine learning, such as normalization, binning and grouping, inference of missing values, and so forth. 
 
 > [!IMPORTANT]
 > Data you use in Azure Machine Learning Studio is generally expected to be "tidy" before you import it to Studio. Such data preparation can include ensuring that the data uses the correct encoding, checking that the data has a consistent schema, and so forth. 
@@ -45,7 +45,8 @@ The following module categories are included under **Data Transformation**.
 + [Data Transformation / Sample and Split](data-transformation-sample-and-split.md)  
 + [Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)
   
-## See also  
+## See also
+
  [Data Format Conversions](data-format-conversions.md)   
  [Data Input and Output](data-input-and-output.md)   
  [Feature Selection](feature-selection-modules.md)   

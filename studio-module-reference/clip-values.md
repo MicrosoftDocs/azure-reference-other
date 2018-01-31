@@ -15,10 +15,11 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Clip Values
+
 *Detects outliers and clips or replaces their values*  
-  
- Category: [Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)  
-  
+
+Category: [Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)  
+
 ## Module overview
 
 This article describes how to use the **Clip Values** module in Azure Machine Learning Studio, to identify and optionally replace data values that are above or below a specified threshold. This is useful when you want to remove outliers or replace them with a mean, a constant, or other substitute value.  
@@ -39,17 +40,11 @@ If you need to apply clipping methods or different criteria to some columns, you
   
 3.  For **Set of thresholds**, choose one of the following options from the dropdown list. These options determine how you set the upper and lower boundaries for acceptable values vs. values that must be clipped.  
   
-    -   **ClipPeaks**  
+    - **ClipPeaks**: When you clip values by peaks, you specify only an upper boundary. Values greater than that boundary value are replaced or removed.
   
-         When you clip values by peaks, you specify only an upper boundary. Values greater than that boundary value are replaced or removed.  
+    -  **ClipSubpeaks**: When you clip values by sub-peaks, you specify only a lower boundary. Values that are less than that boundary value are replaced or removed.  
   
-    -   **ClipSubpeaks**  
-  
-         When you clip values by sub-peaks, you specify only a lower boundary. Values that are less than that boundary value are replaced or removed.  
-  
-    -   **ClipPeaksAndSubpeaks**  
-  
-         When you clip values by peaks and sub-peaks, you can specify both the upper and lower boundaries. Values that are outside that range are replaced or removed. Values that match the boundary values are not changed.  
+    - **ClipPeaksAndSubpeaks**: When you clip values by peaks and sub-peaks, you can specify both the upper and lower boundaries. Values that are outside that range are replaced or removed. Values that match the boundary values are not changed.
   
 4.  Depending on your selection in the preceding step, you can set the following threshold values: 
 
@@ -59,9 +54,7 @@ If you need to apply clipping methods or different criteria to some columns, you
 
     For each threshold type, choose either **Constant** or **Percentile**.
 
-5. If you select **Constant**, type the maximum or minimum value in the text box.  
-  
-    For example, assume that you know the value 999 was used as a placeholder value. You could choose **Constant** for the upper threshold, and type 999 in **Constant value of upper threshold**.
+5. If you select **Constant**, type the maximum or minimum value in the text box. For example, assume that you know the value 999 was used as a placeholder value. You could choose **Constant** for the upper threshold, and type 999 in **Constant value of upper threshold**.
   
 6. If you choose **Percentile**, you constrain the column values to a percentile range. 
 
@@ -73,8 +66,8 @@ If you need to apply clipping methods or different criteria to some columns, you
 
     Numbers that exactly match the boundaries you just specified are considered to be inside the allowed range of values, and thus are not replaced or removed. All numbers that fall outside the specified range are replaced with the substitute value. 
   
-    + **Substitute value for peaks** defines the value to substitute for all column values that are greater than the specified threshold.  
-    + **Substitute value for subpeaks** defines the value to use as a substitute for all column values that are less than the specified threshold.  
+    + **Substitute value for peaks**: Defines the value to substitute for all column values that are greater than the specified threshold.  
+    + **Substitute value for subpeaks**: Defines the value to use as a substitute for all column values that are less than the specified threshold.  
     + If you use the **ClipPeaksAndSubpeaks** option, you can specify separate replacement values for the upper and lower clipped values.  
 
     The following replacement values are supported:  
@@ -87,16 +80,16 @@ If you need to apply clipping methods or different criteria to some columns, you
   
     -   **Missing**. Replaces clipped values with the missing (empty) value.  
   
-6.  Select the option,  **Add indicator columns**, if you want to generate a new column that tells you whether or not the specified clipping operation applied to the data in that row. This option is particularly handy when you are testing a new set of clipping and substitution values.  
+6.  **Add indicator columns**: Select this option if you want to generate a new column that tells you whether or not the specified clipping operation applied to the data in that row. This option is particularly handy when you are testing a new set of clipping and substitution values.  
   
-7.  For **Overwrite flag**, indicate how you want the new values to be generated. By default, **Clip Values** constructs a new column with the peak values clipped to the desired threshold. New values overwrite the original column.  
+7. **Overwrite flag**: Indicate how you want the new values to be generated. By default, **Clip Values** constructs a new column with the peak values clipped to the desired threshold. New values overwrite the original column.  
   
-     To keep the original column and add a new column with the clipped values, deselect this option.  
+    To keep the original column and add a new column with the clipped values, deselect this option.  
   
 8.  Run the experiment.  
   
-     Right-click the output of the **Clip Values** module and select **Visualize** to review the values and make sure the clipping operation met your expectations.  
-  
+    Right-click the output of the **Clip Values** module and select **Visualize** to review the values and make sure the clipping operation met your expectations.  
+
 ## Examples  
 
 To see how this module is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
@@ -145,14 +138,14 @@ Now try the same experiment using 60 as the upper percentile threshold and 30 as
   
 -   Missing values are not altered when they are propagated to the output dataset.  The column indicating clipped values always contains FALSE for missing values.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+## Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters  
-  
+## Module parameters  
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Add indicator columns|TRUE/FALSE|Boolean|FALSE|Whether to add indicator for clipping of a value is done|  
@@ -175,13 +168,13 @@ Now try the same experiment using 60 as the upper percentile threshold and 30 as
 |Upper substitute value|Threshold<br /><br /> Mean<br /><br /> Median<br /><br /> Missing|Threshold|Threshold|The value used for clipping peaks|  
 |Upper threshold|Constant<br /><br /> Percentile|Threshold Mode|Constant|Value above which the peaks will be clipped mode|  
   
-##  <a name="Outputs"></a> Outputs  
-  
+## Outputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset with clipped columns|  
-  
-##  <a name="exceptions"></a> Exceptions  
+
+## Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  
@@ -192,6 +185,7 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
-## See also  
+## See also
+
  [Scale and Reduce](data-transformation-scale-and-reduce.md)   
  [A-Z Module List](a-z-module-list.md)

@@ -15,9 +15,10 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Apply Filter
+
 *Applies a filter to specified columns of a dataset*  
   
- Category: [Data Transformation / Filter](data-transformation-filter.md)  
+Category: [Data Transformation / Filter](data-transformation-filter.md)  
   
 ##  Module overview  
 
@@ -87,7 +88,7 @@ This section describes the behavior when missing values are encountered, by filt
   
 -   For median filters, NaNs and missing values encountered in the input dataset do not produce new NaNs in output, regardless of the filter period.  
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
+## Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -98,7 +99,7 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 
-##  <a name="parameters"></a> Module parameters  
+## Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -110,6 +111,7 @@ For a list of API exceptions, see [Machine Learning REST API Error Codes](https:
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
   
-## See also  
+## See also
+
  [Filter](data-transformation-filter.md)   
  [A-Z Module List](a-z-module-list.md)
