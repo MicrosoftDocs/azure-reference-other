@@ -70,7 +70,8 @@ After training is complete:
 
 + To make predictions, connect the trained model, along with new data, to the [Score Model](score-model.md) module.
 
-+ To perform cross-validation against a labeled data set, connect the **untrained model** to [Cross-Validate Model](cross-validate-model.md)...
++ To perform cross-validation against a labeled data set, connect the **untrained model** to [Cross-Validate Model](cross-validate-model.md).
+
 ## Examples
 
 For examples of how ordinal regression is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
