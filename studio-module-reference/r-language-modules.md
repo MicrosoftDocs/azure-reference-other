@@ -1,7 +1,8 @@
 ---
 title: "R Language Modules | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 04/26/2017
+ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,36 +12,51 @@ ms.assetid: d42f7c08-039b-4f91-809d-aa138fccf254
 caps.latest.revision: 21
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # R Language Modules
-Support for the R language in Azure Machine Learning makes it easier than ever to publish R models in production, and to use the experience of the R language community to solve real-world problems.  
-  
-##  <a name="Notes"></a> Requirements when Using R  
- Before using R script in Azure Machine Learning Studio, be sure to understand the following requirements:  
-  
--   If you imported data that uses CSV or other formats, you cannot read the data directly in CSV format. Instead, use [Convert to Dataset](convert-to-dataset.md) to prepare the data before using it as input to an R module.  
-  
--   When you attach any Azure ML dataset as input to an R module, the dataset is automatically loaded into the R workspace as a data frame, with the variable name, **dataset**.  However, you  can define additional data frames, or change the name of the default dataset variable within your R script.  
-  
--   The R modules run in a protected and isolated environment within your private workspace. Within your workspace, you can create data frames and variables for use by multiple modules.  
-  
-     However, you cannot load R data frames from a different workspace or read variables created in a different workspace, even if that workspace is open in an Azure session. Also, you cannot use modules that have a Java dependency, or that require direct network access.  
 
-+ The implementation of R in the Azure Machine Learning Studio and workspace environment includes two principal components: one that coordinates script execution, and one that provides high-speed data access and scoring.  The scoring component has been optimized to enhance scalability and performance. 
+This article lists the modules in Azure Machine Learning Studio that support running R code. These modules make it easier than ever to publish R models in production, and to use the experience of the R language community to solve real-world problems.
 
-  Therefore, R workspaces in Azure Machine Learning Studio also support two kinds of scoring tasks, each optimized for different requirements: scoring on a file-by-file basis is typically used when building an experiment, and the request response service (RRS) for very fast scoring is typically used when scoring as part of a web service.      
-  
-## R Package and Version Support 
+This article also describes some general requirements for using R in Studio, and lists known issues and tips.
 
- Azure Machine Learning Studio includes over 500 of the most popular R packages. The R packages that you can select from depend on which R version you select for your experiment: 
- 
- + CRAN R
- + Microsoft R Open (MRO 3.2.2)
- 
- Whenever you create an experiment, you must choose a single R version to run on, for all modules in your experiment.
- 
- ## List of Packages per Version
+## List of modules
+
+The **R Language Modules** category includes the following modules:
+
++ [Execute R Script](execute-r-script.md): Executes an R script from an Azure Machine Learning experiment  
++ [Create R Model](create-r-model.md): Creates an R model using custom resources
+
+## Requirements when using R
+
+Before using R script in Azure Machine Learning Studio, observe the following requirements:
+
+- If you imported data that uses CSV or other formats, you cannot read the data directly in CSV format from your R code. Instead, use [Convert to Dataset](convert-to-dataset.md) to prepare the data before using it as input to an R module.
+
+- When you attach any Azure ML dataset as input to an R module, the dataset is automatically loaded into the R workspace as a data frame, with the variable name, **dataset**.  
+
+    However, you can define additional data frames, or change the name of the default dataset variable within your R script.
+
+- The R modules run in a protected and isolated environment within your private workspace. Within your workspace, you can create data frames and variables for use by multiple modules.
+
+    However, you cannot load R data frames from a different workspace or read variables created in a different workspace, even if that workspace is open in an Azure session. Also, you cannot use modules that have a Java dependency, or that require direct network access.  
+
+## Optimization for R scoring tasks
+
+The implementation of R in the Azure Machine Learning Studio and workspace environment includes two principal components: one that coordinates script execution, and one that provides high-speed data access and scoring.  The scoring component has been optimized to enhance scalability and performance. 
+
+Therefore, R workspaces in Azure Machine Learning Studio also support two kinds of scoring tasks, each optimized for different requirements: scoring on a file-by-file basis is typically used when building an experiment, and the request response service (RRS) for very fast scoring is typically used when scoring as part of a web service.
+
+## R package and version support 
+
+Azure Machine Learning Studio includes over 500 of the most popular R packages. The R packages that you can select from depend on which R version you select for your experiment:
+
++ CRAN R
++ Microsoft R Open (MRO 3.2.2)
+
+Whenever you create an experiment, you must choose a single R version to run on, for all modules in your experiment.
+
+## List of packages per version
 
 For a list of the packages that are currently supported in Azure Machine Learning, see [R Packages Supported by Azure Machine Learning](r-packages-supported-by-azure-machine-learning.md). 
 
@@ -50,33 +66,33 @@ You can also add the following code to an [Execute R Script](execute-r-script.md
 data.set <- data.frame(installed.packages())
 maml.mapOutputPort("data.set")
 ```
-  
-The packages that are supported in Studio change frequently. If you have any doubts about whether an R package is supported, use the R code sample provided to get the complete list of packages in the current environment.  
 
-  
-## Extending Experiments Using the R Language  
+> [!IMPORTANT]
+> The packages that are supported in Studio change frequently. If you have any doubts about whether an R package is supported, use the R code sample provided to get the complete list of packages in the current environment.
 
-There are many ways that you can extend your experiment by using custom R script or by adding R packages. Here are some ideas to get you started.  
-  
-- Use R code to perform custom math operations. For example, there are R packages to solve differential equations, generate random numbers, or run Monte Carlo simulations.  
-  
-- Apply custom transformations for data. For example, you might use an R package to perform interpolation on time series data, or perform linguistic analysis. 
+## Extending experiments using the R language
 
-- Work with different data sources. The Execute R Script module support an additional set of inputs, which can include data files, in zipped format. You might use zipped data files along with R packages designed for such data sources, to flatten hierarchical data into a flat data table, read data from Excel and other file formats.  
-  
+There are many ways that you can extend your experiment by using custom R script or by adding R packages. Here are some ideas to get you started.
+
+- Use R code to perform custom math operations. For example, there are R packages to solve differential equations, generate random numbers, or run Monte Carlo simulations.
+
+- Apply custom transformations for data. For example, you might use an R package to perform interpolation on time series data, or perform linguistic analysis.
+
+- Work with different data sources. The R script modules support an additional set of inputs, which can include data files, in zipped format. You might use zipped data files along with R packages designed for such data sources, to flatten hierarchical data into a flat data table, read data from Excel and other file formats.
+
 - Use custom metrics for evaluation. For example, rather than use the functions provided in [Evaluate](evaluate-model.md), you could import an R package and then apply its metrics.  
 
-The following example demonstrates the overall process for how you can install new packages and use custom R code in your experiment. 
-  
-### Splitting Columns by using R  
+The following example demonstrates the overall process for how you can install new packages and use custom R code in your experiment.
 
- Sometimes the data requires extensive manipulation to extract features. Suppose you have a text file that contains an ID followed by values and notes, all separated by spaces. Or that your text file contains characters that are not supported by Studio.  
-  
- There are several R packages that provide specialized functions for such tasks. The [splitstackshape library](http://cran.r-project.org/web/packages/splitstackshape/index.html) package contains several useful functions for splitting multiple columns, even if each column has a different delimiter.  
-  
-The following sample illustrates how to install the needed packages and split apart columns.  
-  
-```  
+### Splitting columns by using R
+
+Sometimes the data requires extensive manipulation to extract features. Suppose you have a text file that contains an ID followed by values and notes, all separated by spaces. Or that your text file contains characters that are not supported by Studio.
+
+There are several R packages that provide specialized functions for such tasks. The [splitstackshape library](http://cran.r-project.org/web/packages/splitstackshape/index.html) package contains several useful functions for splitting multiple columns, even if each column has a different delimiter.
+
+The following sample illustrates how to install the needed packages and split apart columns. You would add this code to the **Execute R Script** module.
+
+```R
 #install dependent packages  
 install.packages("src/concat.split.multiple/data.table_1.9.2.zip", lib=".", repos = NULL, verbose = TRUE)  
 (success.data.table <- library("data.table", lib.loc = ".", logical.return = TRUE, verbose = TRUE))  
@@ -105,14 +121,13 @@ colnames(data)
   
 #Redirect data to output port  
 maml.mapOutputPort("data")  
-```  
+```
 
-## Additional Resources  
+## Additional resources
 
 Begin with this tutorial that describes how to build a custom R module.
 
 + [Extend Your Experiment with R](https://docs.microsoft.com/azure/machine-learning/machine-learning-custom-r-modules) 
-
 
 This article discusses the differences between the two scoring engines in detail, and explains how you can choose a scoring method when you deploy your experiment as a web service.
 
@@ -122,44 +137,35 @@ This Gallery experiment demonstrates how you can create a custom R module that d
 
  + [Create R Model with Evaluation](https://gallery.cortanaintelligence.com/Experiment/Create-R-Model-with-Evaluation-1)
 
-
 This article, published on R-Bloggers, demonstrates how you can create your own evaluation method in Azure Machine Learning.
 
 + [How to evaluate R models in Azure Machine Learning Studio](https://www.r-bloggers.com/how-to-evaluate-r-models-in-azure-machine-learning-studio/)
 
-   
-### More Help with R
-   
-This R documentation site provides a categorized list of packages that you can search by keywords: 
+### More help with R
+
+This R documentation site provides a categorized list of packages that you can search by keywords:
 
 + [http://www.rdocumentation.org/](http://www.rdocumentation.org/)  
 
-For additional R code samples and help with R and its applications, see these resources:  
-  
--   [R Project](http://www.r-project.org/): The official site for the R language  
-  
--   [Rseek](http://www.rseek.org/): A search engine for R resources  
-  
--   [R-bloggers](http://www.r-bloggers.com/): An aggregation of blogs in the R community  
-  
--   [CRAN](http://cran.r-project.org/web/views/): The largest repository of R packages  
-  
--   [Quick-R](http://www.statmethods.net/): A good R tutorial  
-  
--   [Webinar: Learn How to Get Faster End Results from Your R Models](http://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Learn-How-to-Get-Faster-End-Results-from-Your-R-Models)  
-  
--   [Bioconductor](http://bioconductor.org/): Large repository of R packages in bioinformatics  
-  
--   [Quick Start Guide for R](http://go.microsoft.com/fwlink/?LinkId=524954): Provides a detailed walkthrough of a time series forecasting example and tips about working with R in Azure Machine Learning Studio.  
-      
-##  <a name="modules"></a> List of Modules  
- The Modules References.R Language Modules category includes the following modules:  
-  
-|Module|Description|  
-|------------|-----------------|  
-|[Execute R Script](execute-r-script.md)|Executes an R script from an Azure Machine Learning experiment|  
-|[Create R Model](create-r-model.md)|Creates an R model using custom resources|  
-  
-## See Also  
- [Python Language Modules](python-language-modules.md)   
+For additional R code samples and help with R and its applications, see these resources:
+
+- [R Project](http://www.r-project.org/): The official site for the R language
+
+- [Rseek](http://www.rseek.org/): A search engine for R resources
+
+- [R-bloggers](http://www.r-bloggers.com/): An aggregation of blogs in the R community
+
+- [CRAN](http://cran.r-project.org/web/views/): The largest repository of R packages
+
+- [Quick-R](http://www.statmethods.net/): A good R tutorial
+
+- [Webinar: Learn How to Get Faster End Results from Your R Models](http://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Learn-How-to-Get-Faster-End-Results-from-Your-R-Models)
+
+- [Bioconductor](http://bioconductor.org/): Large repository of R packages in bioinformatics
+
+- [Quick Start Guide for R](http://go.microsoft.com/fwlink/?LinkId=524954): Provides a detailed walkthrough of a time series forecasting example and tips about working with R in Azure Machine Learning Studio.
+
+## See also
+
+ [Python Language Modules](python-language-modules.md)
  [Module Categories and Descriptions](machine-learning-module-descriptions.md)

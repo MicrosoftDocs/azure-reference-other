@@ -15,13 +15,14 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Assign Data to Clusters
+
 *Assigns data to clusters using an existing trained clustering model*  
-  
- Category: [Score](machine-learning-score.md)  
-  
+
+Category: [Score](machine-learning-score.md)  
+
 ## Module overview  
 
-This article describes how to use the [Assign Data to Clusters](assign-data-to-clusters.md) module in Azure Machine Learning Studio to generate predictions using a clustering model that was trained using the K-Means clustering algorithm.
+This article describes how to use the [Assign Data to Clusters](assign-data-to-clusters.md) module in Azure Machine Learning Studio, to generate predictions using a clustering model that was trained using the K-Means clustering algorithm.
 
 The module returns a dataset that contains the probable assignments for each new data point. It also creates a PCA (Principal Component Analysis) graph to help you visualize the dimensionality of the clusters.
 
@@ -32,24 +33,24 @@ The module returns a dataset that contains the probable assignments for each new
   
 1.  In Azure Machine Learning Studio, locate a previously trained clustering model. You can create and train a clustering model by using either of these methods:  
   
-    -   Configure the K-means algorithm using the [K-Means Clustering](k-means-clustering.md) module, and then train the model using a dataset and the [Train Clustering Model](train-clustering-model.md) module.  
+    - Configure the K-means algorithm using the [K-Means Clustering](k-means-clustering.md) module, and then train the model using a dataset and the [Train Clustering Model](train-clustering-model.md) module.  
   
-    -   Configure a range of options for the K-means algorithm using [K-Means Clustering](k-means-clustering.md) and then train the model using the [Sweep Clustering](sweep-clustering.md) module.
+    - Configure a range of options for the K-means algorithm using [K-Means Clustering](k-means-clustering.md) and then train the model using the [Sweep Clustering](sweep-clustering.md) module.
   
     You can also add an existing trained clustering model from the **Saved Models** group in your workspace.
-  
-2.  Attach the trained model to the left input port of [Assign Data to Clusters](assign-data-to-clusters.md).  
-  
-3.  Attach a new dataset as input. In this dataset, labels are optional. Generally, clustering is an unsupervised learning method so it is not expected that you will know categories in advance.
+
+2. Attach the trained model to the left input port of [Assign Data to Clusters](assign-data-to-clusters.md).  
+
+3. Attach a new dataset as input. In this dataset, labels are optional. Generally, clustering is an unsupervised learning method so it is not expected that you will know categories in advance.
 
     However, the input columns must be the same as the columns that were used in training the clustering model, or an error occurs.
 
-     > [!TIP]
-     > To reduce the number of columns output from cluster predictions, use [Select Columns in Dataset](select-columns-in-dataset.md), and select a subset of the columns. 
+    > [!TIP]
+    > To reduce the number of columns output from cluster predictions, use [Select Columns in Dataset](select-columns-in-dataset.md), and select a subset of the columns. 
     
-4.  Leave the option **Check for Append or Uncheck for Result Only** selected if you want the results to contain the full input dataset, together with a column indicating the results (cluster assignments).
+4. Leave the option **Check for Append or Uncheck for Result Only** selected if you want the results to contain the full input dataset, together with a column indicating the results (cluster assignments).
   
-     If you deselect this option, you get back just the results. This might be useful when creating predictions as part of a web service.
+    If you deselect this option, you get back just the results. This might be useful when creating predictions as part of a web service.
   
 5.  Run the experiment.  
   
@@ -75,34 +76,33 @@ The [Assign Data to Clusters](assign-data-to-clusters.md) module returns two typ
     |Assignments|A 0-based index that indicates which cluster the data point was assigned to.|  
     |DistancesToClusterCenter no. *n*|For each data point, this value indicates the distance from the data point to the center of the assigned cluster, and the distance to other clusters.<br /><br /> The metric used to calculate distance is determined when you configure the K-means clustering model.|  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+## Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ICluster interface](icluster-interface.md)|Trained clustering model|  
 |Dataset|[Data Table](data-table.md)|Input data source|  
   
-##  <a name="parameters"></a> Module parameters  
-  
-###  
-  
+## Module parameters  
+
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
 |Append or Result Only|||Required|TRUE|Indicate whether the output dataset should contain the input dataset as well as the results, or the results only|  
 |Specify parameter sweeping mode|Sweep Methods|List:Entire grid&#124;Random sweep|Required|Random sweep|Sweep entire grid on parameter space, or sweep with using a limited number of sample runs|  
   
-##  <a name="Outputs"></a> Outputs  
-  
+## Outputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Input dataset appended by data column of assignments or assignments column only|  
-  
-##  <a name="exceptions"></a> Exceptions  
-  
+
+## Exceptions  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
   
-## See also  
+## See also
+
  [K-Means Clustering](k-means-clustering.md)   
  [Score](machine-learning-score.md)   

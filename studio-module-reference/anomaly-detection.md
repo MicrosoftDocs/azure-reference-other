@@ -49,16 +49,14 @@ Azure also provides an anomaly detection service API that you can call as a web 
 > 
 > + [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/machine-learning-algorithm-choice/)
 
-##  <a name="modules"></a> List of modules
+## List of modules
 
 The anomaly detection category includes the following modules:  
-  
-|Module|Description|  
-|------------|-----------------|  
-|[One-Class Support Vector Machine](one-class-support-vector-machine.md)|Creates a one-class Support Vector Machine model for anomaly detection|  
-|[PCA-Based Anomaly Detection](pca-based-anomaly-detection.md)|Creates an anomaly detection model using Principal Component Analysis|  
 
-## See also  
++ [One-Class Support Vector Machine](one-class-support-vector-machine.md): Creates a one-class Support Vector Machine model for anomaly detection + [PCA-Based Anomaly Detection](pca-based-anomaly-detection.md): Creates an anomaly detection model using Principal Component Analysis
+
+## See also
+
  [Regression](machine-learning-initialize-model-regression.md)   
  [Classification](machine-learning-initialize-model-classification.md)   
  [Clustering](machine-learning-initialize-model-clustering.md)   

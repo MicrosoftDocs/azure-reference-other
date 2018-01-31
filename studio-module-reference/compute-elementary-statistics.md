@@ -15,10 +15,11 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Compute Elementary Statistics
+
 *Calculates specified summary statistics for selected dataset columns*  
-  
- Category: [Statistical Functions](statistical-functions.md)  
-  
+
+Category: [Statistical Functions](statistical-functions.md)  
+
 ## Module overview  
 
 This article describes how to use the [Compute Elementary Statistics](compute-elementary-statistics.md) module in Azure Machine Learning Studio, to generate a summary report for your dataset that lists key statistics such as mean, standard deviation, and the range of values for each of the selected columns.  
@@ -37,10 +38,10 @@ This article describes how to use the [Compute Elementary Statistics](compute-el
   
 2.  By default, the value you selected in **Method** dropdown list will be calculated for all columns in the dataset that have a numeric data type. If any column has values that prevent the value from being calculated, an error will be raised and the report will not be created. 
 
-    To avoid this error, use the column selector to pick the numeric columns for which you want a report. All columns that you choose must be numeric.   
-  
+    To avoid this error, use the column selector to pick the numeric columns for which you want a report. All columns that you choose must be numeric.
+
 3.  Run the experiment.  
-  
+
 ### Results
 
 The generated report includes the name of each column and the statistic that was calculated.  For example, the following table shows statistics generated for the **mpg** column.    
@@ -255,27 +256,27 @@ Boolean columns are processed as follows:
   
 + For statistics that require floating-point calculations, True = 1.0 and False = 0.0
 
-##  <a name="ExpectedInputs"></a> Expected inputs
-  
+## Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters
-  
+## Module parameters
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Method|List|Elementary statistics method||Selects a statistical method to use in calculations. See How to use section for list of values.|  
 |Column set|any|ColumnSelection|NumericAll|Selects the columns for which to calculate the statistic|  
 |Order|>=1|Integer|3|Specifies a value for central moment order (used for the kth central moment only)|  
   
-##  <a name="Outputs"></a> Output  
-  
+## Output  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
-  
-##  <a name="exceptions"></a> Exceptions
+
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  
@@ -285,7 +286,8 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
-## See also  
+## See also
+
  [Statistical Functions](statistical-functions.md)   
  [elementary](compute-elementary-statistics.md)   
  [Summarize Data](summarize-data.md)   
