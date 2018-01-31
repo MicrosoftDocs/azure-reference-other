@@ -89,6 +89,7 @@ The following requirements apply to all uses of [Split Data](split-data.md):
 - If you specify a number as a percentage, or if you use a string that contains the "%" character, the value is interpreted as a percentage. All percentage values must be within the range (0, 100), not including the values 0 and 100. 
 - If you specify a number or percentage that is a floating point number less than one, and you do not use the percent symbol (%), the number is interpreted as a proportional value.
 - If you use the option for a stratified split, the output datasets can be further divided by subgroups, by selecting a strata column.
+
 ## Expected inputs
 
 |Name|Type|Description|  
