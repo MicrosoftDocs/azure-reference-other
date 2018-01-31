@@ -47,7 +47,7 @@ There are multiple options in the module for choosing columns by name:
     Select columns and click the right arrow button to move the selected columns to the list in the right-hand pane.
 
     + To select a continuous range of column names, press **Shift + Click**.
-    + to add individual columns to the selection, press **Ctrl + Click**.
+    + To add individual columns to the selection, press **Ctrl + Click**.
 
     Click the checkmark button to save and close.
 
