@@ -195,7 +195,7 @@ The option to find related users is useful if you are recommending "people like 
 
 1. Add a trained recommendation model to your experiment, and connect it to **Trained Matchbox recommender**.  You must create the model by using [Train Matchbox Recommender](train-matchbox-recommender.md).
 
-2.**Recommender prediction kind**: Select **Related Users**.
+2. **Recommender prediction kind**: Select **Related Users**.
 
 3. **Related user selection**: Indicate how you will be using the model for scoring, and specify the pool of users on which to base the scores as follows:
 
