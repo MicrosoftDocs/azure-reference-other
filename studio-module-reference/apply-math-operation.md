@@ -38,11 +38,9 @@ After you define an operation and run the experiment, the values are added to yo
 > + [Execute Python Script](execute-python-script.md)
 > + [Apply SQL Transformation](apply-sql-transformation.md)  
 
-### <a name ="bkmk_TypeOperations"></a> Supported math operations
+Look for the operation you need in these categories:  
 
-Look for the operaiton you need in these categories:  
-
--   [Basic](#bkmk_Basic)  
+- [Basic](#bkmk_Basic)  
   
      The functions in the **Basic** category can be used to manipulate a single value or column of values. For example, you might get the absolute value of all numbers in a column, or calculate the square root of each value in a column.  
   
@@ -66,20 +64,20 @@ Look for the operaiton you need in these categories:
   
      This category includes all standard trigonometric functions. For example, you can convert radians to degrees, or compute functions such as tangent in either radians or degrees.
      These functions are unary, meaning that they take a single column of values as input, apply the trigonometric function, and return a column of values as the result.  Therefore you need to make sure that the input column is the appropriate type and contains the right kind of values for the specified operation.   
-  
 
-## Examples  
+
+## Examples
 
 For examples of how to use **Apply Math Operation**, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   [Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272): One set of column values is subtracted from another, and then the results are squared.  
+- [Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272): One set of column values is subtracted from another, and then the results are squared.  
   
--   [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): The constant 1 is added to all values in a column to distinguish between zeros and missing values.  
-  
--   [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates various operations, including rounding and division.  
-  
--   [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses comparison operations to determine whether probability scores meet a required value.  
-  
+- [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): The constant 1 is added to all values in a column to distinguish between zeros and missing values.  
+
+- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates various operations, including rounding and division.  
+
+- [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses comparison operations to determine whether probability scores meet a required value.  
+
 ## How to use Apply Math Operation  
 
 The **Apply Math Operation** module requires a dataset that contains at least one column containing only numbers. The numbers can be discrete or continuous but must be of a numeric data type, not a string.
@@ -125,140 +123,165 @@ If you generate the results using the **Append** or **ResultOnly** options, the 
 
 Even if you use the **Inplace** option, the source data is not deleted or changed; the column in the original dataset is still available in Studio. To view the original data, you can connect the [Add Columns](add-columns.md) module and join it to the output of **Apply Math Operation**.  
     
-##  <a name="bkmk_Basic"></a> Basic  
+## <a name="bkmk_Basic"></a> Basic math operations 
 
 The functions in the **Basic** category usually take a single value from a column, perform the predefined operation, and return a single value. For some functions you can specify a constant as a second argument.  
   
  Azure Machine Learning supports the following functions in the **Basic** category:  
-  
- **Abs**  
- Returns the absolute value of the selected columns.  
-  
- **Atan2**  
- Returns a four-quadrant inverse tangent.  
-  
- Select the columns that contain the point coordinates. For the second argument, which corresponds to the x-coordinate, you can also specify a constant.  
-  
- Corresponds to the ATAN2 function in Matlab.  
-  
- **Conj**  
- Returns the conjugate for the values in the selected column.  
-  
- **CubeRoot**  
- Calculates the cube root for the values in the selected column.  
-  
- **DoubleFactorial**  
- Calculates the double factorial for values in the selected column. The double factorial is an extension of the normal factorial function, and it is denoted as x!!.  
-  
- **Eps**  
- Returns the size of the gap between the current value and the next-highest, double-precision number. Corresponds to the EPS function in Matlab.  
-  
- **Exp**  
- Returns e raised to the power of the value in the selected column. This is the same as the Excel EXP function.  
-  
- **Exp2**  
- Returns the base-2 exponential of the arguments, solving for y = x * 2<sup>t</sup> where t is a column of values containing exponents.  
-  
- For **Exp2** you can specify a second argument x, which can be either a constant or another column of values  
-  
- In **Second argument type**, indicate whether you will provide the multiplier t as a constant, or a value in a column.  
-  
- You can select a single column with the exponent values, or type the exponent value in the **Constant second argument** text box. Then, in  **Column set**, select the column that contains the exponent values.  
-  
- For example, if you select a column with the values {0,1,2,3,4,5} for both the multiplier and the exponent, the function returns {0, 2, 8, 24, 64 160).  
-  
- **ExpMinus1**  
- Returns the negative exponent for values in the selected column.  
-  
- **Factorial**  
- Returns the factorial for values in the selected column.  
-  
- **Hypotenuse**  
- Calculates the hypotenuse for a triangle in which the length of one side is specified as a column of values, and the length of the second side is specified either as a constant or as two columns.  
-  
- **ImaginaryPart**  
- Returns the imaginary part of the values in the selected column.  
-  
- **Ln**  
- Returns the natural logarithm for the values in the selected column.  
-  
- **LnPlus1**  
- Returns the natural logarithm plus one for the values in the selected column.  
-  
- **Log**  
- Returns the log of the values in the selected column, given the specified base.  
-  
- You can specify the base (the second argument) either as a constant or by selecting another column of values.  
-  
- **Log10**  
- Returns the base 10 logarithm the values in the selected column.  
-  
- **Log2**  
- Returns the base 2 logarithm for the values in the selected column.  
-  
- **NthRoot**  
- Returns the nth root of the value, using an n that you specify.  
-  
- Select the columns for which you want to calculate the root, by using the **ColumnSet** option.  
-  
- In **Second argument type**, select another column that contains the root, or specify a constant to use as the root.  
-  
- If the second argument is a column, each value in the column is used as the value of n for the corresponding row. If the second argument is a constant, type the value for n in the **Constant second argument** text box.  
-  
- **Pow**  
- Calculates X raised to the power of Y for each of the values in the selected column.  
-  
- First, select the columns that contains the **base**, which should be a float, by using the **ColumnSet** option.  
-  
- in **Second argument type**, select the column that contains the exponent, or specify a constant to use as the exponent.  
-  
- If the second argument is a column, each value in the column is used as the exponent for the corresponding row. If the second argument is a constant, type the value for the exponent in the **Constant second argument** text box.  
-  
- **RealPart**  
- Returns the real part of the values in the selected column.  
-  
- **Sqrt**  
- Returns the square root of the values in the selected column.  
-  
- **SqrtPi**  
- For each value in the selected column, multiplies the value by pi and then returns the square root of the result.  
-  
- **Square**  
- Squares the values in the selected column.  
-  
-##  <a name="bkmk_Compare"></a> Compare  
 
-Use the comparison functions in Azure Machine Learning any time that you need to test two sets of values against each other. For example, in an experiment you might need to do these comparison operations:  
+### Abs
+
+Returns the absolute value of the selected columns.  
   
--   Evaluate a column of probability scores model against a threshold value.  
+### Atan2
+
+Returns a four-quadrant inverse tangent.  
+
+Select the columns that contain the point coordinates. For the second argument, which corresponds to the x-coordinate, you can also specify a constant.  
+
+Corresponds to the ATAN2 function in Matlab.  
+
+### Conj
+
+Returns the conjugate for the values in the selected column.  
+
+### CubeRoot
+
+Calculates the cube root for the values in the selected column.  
+
+### DoubleFactorial**  
+ Calculates the double factorial for values in the selected column. The double factorial is an extension of the normal factorial function, and it is denoted as x!!.  
+
+### Eps
+
+Returns the size of the gap between the current value and the next-highest, double-precision number. Corresponds to the EPS function in Matlab.  
   
--   Determine if two sets of results are the same, and for each row that is different, add a FALSE flag that can be used for further processing or filtering.  
+### Exp
+
+Returns e raised to the power of the value in the selected column. This is the same as the Excel EXP function.  
+
+### Exp2
+
+Returns the base-2 exponential of the arguments, solving for y = x * 2<sup>t</sup> where t is a column of values containing exponents.  
+
+For **Exp2** you can specify a second argument x, which can be either a constant or another column of values  
+
+In **Second argument type**, indicate whether you will provide the multiplier t as a constant, or a value in a column.  
+
+You can select a single column with the exponent values, or type the exponent value in the **Constant second argument** text box. Then, in  **Column set**, select the column that contains the exponent values.  
+
+For example, if you select a column with the values {0,1,2,3,4,5} for both the multiplier and the exponent, the function returns {0, 2, 8, 24, 64 160).  
+
+### ExpMinus1 
+
+Returns the negative exponent for values in the selected column.  
+
+### Factorial
+Returns the factorial for values in the selected column.  
+
+### Hypotenuse
+Calculates the hypotenuse for a triangle in which the length of one side is specified as a column of values, and the length of the second side is specified either as a constant or as two columns.  
+
+### ImaginaryPart
+
+Returns the imaginary part of the values in the selected column.  
+
+### Ln
+
+Returns the natural logarithm for the values in the selected column.  
+
+### LnPlus1
+
+Returns the natural logarithm plus one for the values in the selected column.  
+
+### Log
+
+Returns the log of the values in the selected column, given the specified base.  
+
+You can specify the base (the second argument) either as a constant or by selecting another column of values.  
+
+### Log10
+
+Returns the base 10 logarithm the values in the selected column.  
+
+### Log2
+
+Returns the base 2 logarithm for the values in the selected column.  
+
+### NthRoot
+Returns the nth root of the value, using an n that you specify.  
+
+Select the columns for which you want to calculate the root, by using the **ColumnSet** option.  
+
+In **Second argument type**, select another column that contains the root, or specify a constant to use as the root.  
+
+If the second argument is a column, each value in the column is used as the value of n for the corresponding row. If the second argument is a constant, type the value for n in the **Constant second argument** text box.
+### Pow
+
+Calculates X raised to the power of Y for each of the values in the selected column.  
+
+First, select the columns that contains the **base**, which should be a float, by using the **ColumnSet** option.  
+
+In **Second argument type**, select the column that contains the exponent, or specify a constant to use as the exponent.  
+
+If the second argument is a column, each value in the column is used as the exponent for the corresponding row. If the second argument is a constant, type the value for the exponent in the **Constant second argument** text box.  
+
+### RealPart
+
+Returns the real part of the values in the selected column.  
+
+### Sqrt
+
+Returns the square root of the values in the selected column.  
+
+### SqrtPi
+
+For each value in the selected column, multiplies the value by pi and then returns the square root of the result.  
+
+### Square
+
+Squares the values in the selected column.  
+
+## <a name="bkmk_Compare"></a> Comparison operations  
+
+Use the comparison functions in Azure Machine Learning Studio any time that you need to test two sets of values against each other. For example, in an experiment you might need to do these comparison operations:  
+
+- Evaluate a column of probability scores model against a threshold value.
+- Determine if two sets of results are the same, and for each row that is different, add a FALSE flag that can be used for further processing or filtering.  
+
+### EqualTo
+
+Returns True if the values are the same.  
+
+### GreaterThan
+
+Returns True if the values in **Column set** are greater than the specified constant, or greater than the corresponding values in the comparison column.  
+
+### GreaterThanOrEqualTo
+
+Returns True if the values in **Column set** are greater than or equal to the specified constant, or greater than or equal to the corresponding values in the comparison column.  
+
+### LessThan
+
+Returns True if the values in **Column set** are less than the specified constant, or less than the corresponding values in the comparison column.  
   
- **EqualTo**  
- Returns True if the values are the same.  
+### LessThanOrEqualTo
+
+Returns True if the values in **Column set** are less than or equal to the specified constant, or less than or equal to the corresponding values in the comparison column.  
+
+### NotEqualTo
+
+Returns True if the values in **Column set** are not equal to the constant or comparison column, and returns False if they are equal.  
+
+### PairMax
+
+Returns the value that is greater—the value in **Column set** or the value in the constant or comparison column.  
+
+### PairMin
+
+Returns the value that is lesser—the value in **Column set** or the value in the constant or comparison column  
   
- **GreaterThan**  
- Returns True if the values in **Column set** are greater than the specified constant, or greater than the corresponding values in the comparison column.  
-  
- **GreaterThanOrEqualTo**  
- Returns True if the values in **Column set** are greater than or equal to the specified constant, or greater than or equal to the corresponding values in the comparison column.  
-  
- **LessThan**  
- Returns True if the values in **Column set** are less than the specified constant, or less than the corresponding values in the comparison column.  
-  
- **LessThanOrEqualTo**  
- Returns True if the values in **Column set** are less than or equal to the specified constant, or less than or equal to the corresponding values in the comparison column.  
-  
- **NotEqualTo**  
- Returns True if the values in **Column set** are not equal to the constant or comparison column, and returns False if they are equal.  
-  
- **PairMax**  
- Returns the value that is greater—the value in **Column set** or the value in the constant or comparison column.  
-  
- **PairMin**  
- Returns the value that is lesser—the value in **Column set** or the value in the constant or comparison column  
-  
-##  <a name="bkmk_Arithmetic"></a> Operations  
+##  <a name="bkmk_Arithmetic"></a> Arithmetic operations   
 
 Includes the basic arithmetic operations: addition and subtraction, division and multiplication.  Because most operations are binary, requiring two numbers, you first choose the operation, and then choose the column or numbers to use in the first and second arguments.
 
@@ -273,258 +296,325 @@ Operation|Num1|Num2|Result column|Result value|
 |Division|1|5|Divide(Num2_Num1)|5|
 |Division|0|1|Divide(Num2_Num1)|Infinity|
 
-   
- **Add**  
- Specify the source columns by using **Column set**, and then add to those values a number specified in **Constant operation argument**.  
-  
- To add the values in two columns, choose a column or columns using **Column set**, and then choose a second column using **Operation argument**.  
-  
- **Divide**  
- Divides the values in **Column set** by a constant or by the column values defined in **Operation argument**.  In other words, you pick the divisor first, and then the dividend. The output value is the quotient.
-  
- **Multiply**  
- Multiplies the values in **Column set** by the specified constant or column values.  
-  
- **Subtract**  
- Specify the number to subtract (the *subtrahend*) by using the **Operation argument** dropdown list. You can choose either a constant or column of values. Then, specify the column of values to operate on (the *minuend*), by choosing a different column, using the second **Column set** option.  
+### Add
+
+Specify the source columns by using **Column set**, and then add to those values a number specified in **Constant operation argument**.  
+
+To add the values in two columns, choose a column or columns using **Column set**, and then choose a second column using **Operation argument**.  
+
+### Divide
+
+Divides the values in **Column set** by a constant or by the column values defined in **Operation argument**.  In other words, you pick the divisor first, and then the dividend. The output value is the quotient.
+
+### Multiply
+
+Multiplies the values in **Column set** by the specified constant or column values.  
+
+### Subtract
+
+Specify the number to subtract (the *subtrahend*) by using the **Operation argument** dropdown list. You can choose either a constant or column of values. Then, specify the column of values to operate on (the *minuend*), by choosing a different column, using the second **Column set** option.  
 
 You can subtract a constant from each value in a column of values, but not the reverse operation. To do this, use addition instead. 
 
-##  <a name="bkmk_Rounding"></a> Rounding  
+##  <a name="bkmk_Rounding"></a> Rounding operations 
 
-Supports a variety of rounding operations. For many operations, you must specify the amount of  precision to use when rounding. You can use either a static precision level, specified as a constant, or you can apply a dynamic precision value obtained from a column of values.  
+Studio supports a variety of rounding operations. For many operations, you must specify the amount of  precision to use when rounding. You can use either a static precision level, specified as a constant, or you can apply a dynamic precision value obtained from a column of values.  
 
 + If you use a constant, set **Precision Type** to **Constant** and then type the number of digits as an integer in the **Constant Precision** text box. If you type a non-integer, the module does not raise an error, but results can be unexpected.  
 
 + To use a different precision value for each row in your dataset, set **Precision Type** to **ColumnSet**, and then choose the column that contains appropriate precision values.  
 
- **Ceiling**  
- Returns the ceiling for the values in **Column set**.  
-  
- **CeilingPower2**  
- Returns the squared ceiling for the values in **Column set**.  
-  
- **Floor**  
- Returns the floor for the values in **Column set**, to the specified precision.  
-  
- **Mod**  
- Returns the fractional part of the values in **Column set**, to the specified precision.  
-  
- **Quotient**  
- Returns the fractional part of the values in **Column set**, to the specified precision.  
-  
- **Remainder**  
- Returns the remainder for the values in **Column set**.  
-  
- **RoundDigits**  
- Returns the values in **Column set**, rounded by the 4/5 rule to the specified number of digits.  
-  
- **RoundDown**  
- Returns the values in **Column set**, rounded down to the specified number of digits.  
-  
- **RoundUp**  
- Returns the values in **Column set**, rounded up to the specified number of digits.  
-  
- **ToEven**  
- Returns the values in **Column set**, rounded to the nearest whole, even number.  
-  
- **ToOdd**  
- Returns the values in **Column set**, rounded to the nearest whole, odd number.  
-  
- **Truncate**  
- Truncates the values in **Column set** by removing all digits not allowed by the specified precision.  
-  
-##  <a name="bkmk_Special"></a> Special  
+### Ceiling
 
-Includes specialized mathematical functions often used in data science. Unless otherwise noted, the function is unary and returns the specified calculation for each value in the selected column or columns.  
-  
- **Beta**  
- Returns the value of Euler’s beta function.  
-  
- **EllipticIntegralE**  
- Returns the value of the incomplete elliptic integral.  
-  
- **EllipticIntegralK**  
- Returns the value of the complete elliptic integral (K).  
-  
- **Erf**  
- Returns the value of the error function.  
-  
- The error function (also called the Gauss error function) is a special function of the sigmoid shape that is used in probability to describe diffusion.  
-  
- **Erfc**  
- Returns the value of the complementary error function.  
-  
- Erfc is defined as 1 – erf(x).  
-  
- **ErfScaled**  
- Returns the value of the scaled error function.  
-  
- The scaled version of the error function can be used to avoid arithmetic underflow.  
-  
- **ErfInverse**  
- Returns the value of the inverse erf function.  
-  
- **ExponentialIntegralEin**  
- Returns the value of the exponential integral Ei.  
-  
- **Gamma**  
- Returns the value of the gamma function.  
-  
- **GammaLn**  
- Returns the natural logarithm of the gamma function.  
-  
- **GammaRegularizedP**  
- Returns the value of the regularized incomplete gamma function.  
-  
- This function takes a second argument, which can be provided either as a constant or a column of values.  
-  
- **GammaRegularizedPInverse**  
- Returns the value of the inverse regularized incomplete gamma function.  
-  
- This function takes a second argument, which can be provided either as a constant or a column of values.  
-  
- **GammaRegularizedQ**  
- Returns the value of the regularized incomplete gamma function.  
-  
- This function takes a second argument, which can be provided either as a constant or a column of values.  
-  
- **GammaRegularizedQInverse**  
- Returns the value of the inverse generalized regularized incomplete gamma function.  
-  
- This function takes a second argument, which can be provided either as a constant or a column of values.  
-  
- **PolyGamma**  
- Returns the value of the polygamma function.  
-  
- This function takes a second argument, which can be provided either as a constant or a column of values.  
-  
-##  <a name="bkmk_Trig"></a> Trigonometric  
+Returns the ceiling for the values in **Column set**.  
 
-Includes most of the important trigonometric and inverse trigonometric functions. All trigonometric functions are unary and require no additional arguments.  
+### CeilingPower2
+
+Returns the squared ceiling for the values in **Column set**.  
+
+### Floor
+
+Returns the floor for the values in **Column set**, to the specified precision.  
+
+### Mod
+
+Returns the fractional part of the values in **Column set**, to the specified precision.  
+
+### Quotient
+
+Returns the fractional part of the values in **Column set**, to the specified precision.  
+
+### Remainder
+
+Returns the remainder for the values in **Column set**.  
+
+### RoundDigits
+
+Returns the values in **Column set**, rounded by the 4/5 rule to the specified number of digits.  
+
+### RoundDown
+
+Returns the values in **Column set**, rounded down to the specified number of digits.  
+
+### RoundUp
+
+Returns the values in **Column set**, rounded up to the specified number of digits.  
+
+### ToEven
+
+Returns the values in **Column set**, rounded to the nearest whole, even number.  
+
+### ToOdd
+
+Returns the values in **Column set**, rounded to the nearest whole, odd number.  
+
+### Truncate
+
+Truncates the values in **Column set** by removing all digits not allowed by the specified precision.  
   
- **Acos**  
- Calculates the arccosine for the column values.  
+##  <a name="bkmk_Special"></a> Special math functions
+
+This category includes specialized mathematical functions often used in data science. Unless otherwise noted, the function is unary and returns the specified calculation for each value in the selected column or columns.  
+
+### Beta
+
+Returns the value of Euler’s beta function.  
+
+### EllipticIntegralE
+Returns the value of the incomplete elliptic integral.  
   
- **AcosDegree**  
- Calculates the arccosine of the column values, in degrees.  
+
+### EllipticIntegralK
+
+Returns the value of the complete elliptic integral (K).  
+
+### Erf
+
+Returns the value of the error function.  
+
+The error function (also called the Gauss error function) is a special function of the sigmoid shape that is used in probability to describe diffusion.  
+
+### Erfc
+
+Returns the value of the complementary error function.  
+
+Erfc is defined as 1 – erf(x).  
+
+### ErfScaled
+
+Returns the value of the scaled error function.  
+
+The scaled version of the error function can be used to avoid arithmetic underflow.  
+
+### ErfInverse
+
+Returns the value of the inverse erf function.  
+
+### ExponentialIntegralEin
+
+Returns the value of the exponential integral Ei.  
+
+### Gamma
+
+Returns the value of the gamma function.  
+
+### GammaLn
+
+Returns the natural logarithm of the gamma function.  
+
+### GammaRegularizedP
+
+Returns the value of the regularized incomplete gamma function.  
+
+This function takes a second argument, which can be provided either as a constant or a column of values.  
+
+### GammaRegularizedPInverse
+
+Returns the value of the inverse regularized incomplete gamma function.  
+
+This function takes a second argument, which can be provided either as a constant or a column of values.  
+
+### GammaRegularizedQ  
+
+Returns the value of the regularized incomplete gamma function.  
+
+This function takes a second argument, which can be provided either as a constant or a column of values.  
+
+### GammaRegularizedQInverse
+
+Returns the value of the inverse generalized regularized incomplete gamma function.
+
+This function takes a second argument, which can be provided either as a constant or a column of values.  
+
+### PolyGamma
+
+Returns the value of the polygamma function.  
+
+This function takes a second argument, which can be provided either as a constant or a column of values.
+
+##  <a name="bkmk_Trig"></a> Trigonometric functions 
+
+This category iIncludes most of the important trigonometric and inverse trigonometric functions. All trigonometric functions are unary and require no additional arguments.  
+
+### Acos
+
+Calculates the arccosine for the column values.  
+
+### AcosDegree
+
+Calculates the arccosine of the column values, in degrees.  
+
+### Acosh
+
+Calculates the hyperbolic arccosine of the column values.  
+
+### Acot
+
+Calculates the arccotangent of the column values.  
+
+### AcotDegrees
+
+Calculates the arccotangent of the column values, in degrees.  
+
+### Acoth
+
+Calculates the hyperbolic arccotangent of the column values.  
+
+### Acsc
+
+Calculates the arccosecant of the column values.  
+
+### AcscDegrees
+
+Calculates the arccosecant of the column values, in degrees.  
+### Asec
+
+Calculates the arcsecant of the column values.  
+
+### AsecDegrees
+
+Calculates the arcsecant of the column values, in degrees.  
+
+### Asech
+
+Calculates the hyperbolic arcsecant of the column values.  
+
+### Asin
+
+Calculates the arcsine of the column values.  
+
+### AsinDegrees
+
+Calculates the arcsine of the column values, in degrees.  
+
+### Asinh
+
+Calculates the hyperbolic arcsine for the column values.  
+
+### Atan
+
+Calculates the arctangent of the column values.  
+
+### AtanDegrees
+
+Calculates the arctangent of the column values, in degrees.  
+
+### Atanh
+
+Calculates the hyperbolic arctangent of the column values.  
+
+### Cis
+
+Returns a complex-valued function made from sine and cosine with the definition cis θ = cos θ + isin θ.  
+
+### Cos
+
+Calculates the cosine of the column values.  
+
+### CosDegrees
+
+Calculates the cosine for the column values, in degrees.  
+
+### Cosh
+
+Calculates the hyperbolic cosine for the column values.  
+
+### Cot
+
+Calculates the cotangent for the column values.  
+
+### CotDegrees
+
+Calculates the cotangent for the column values, in degrees.  
+
+### Coth
+Calculates the hyperbolic cotangent for the column values.  
+
+### Csc
+
+Calculates the cosecant for the column values.  
+
+### CscDegrees
+
+Calculates the cosecant for the column values, in degrees.  
+
+### Csch
+
+Calculates the hyperbolic cosecant for the column values.  
+
+### DegreesToRadians
+
+Converts degrees to radians.  
+
+### Sec
+
+Calculates the secant of the column values.  
+
+### aSecDegrees
+
+Calculates the secant for the column values, in degrees.  
+
+### aSech
+
+Calculates the hyperbolic secant of the column values.  
+
+### Sign
+
+Returns the sign of the column values.  
+
+### Sin
+
+Calculates the sine of the column values.  
+
+### Sinc
+
+Calculates the sine-cosine value of the column values.  
+
+### SinDegrees
+
+Calculates the sine for the column values, in degrees.  
+
+### Sinh
+
+Calculates the hyperbolic sine of the column values.  
+
+### Tan
+
+Calculates the tangent of the column values.  
+
+### TanDegrees
+
+Calculates the tangent for the argument, in degrees.  
+
+### Tanh
+
+Calculates the hyperbolic tangent of the column values.  
   
- **Acosh**  
- Calculates the hyperbolic arccosine of the column values.  
-  
- **Acot**  
- Calculates the arccotangent of the column values.  
-  
- **AcotDegrees**  
- Calculates the arccotangent of the column values, in degrees.  
-  
- **Acoth**  
- Calculates the hyperbolic arccotangent of the column values.  
-  
- **Acsc**  
- Calculates the arccosecant of the column values.  
-  
- **AcscDegrees**  
- Calculates the  arccosecant of the column values, in degrees.  
-  
- **Asec**  
- Calculates the arcsecant of the column values.  
-  
- **AsecDegrees**  
- Calculates the arcsecant of the column values, in degrees.  
-  
- **Asech**  
- Calculates the hyperbolic arcsecant of the column values.  
-  
- **Asin**  
- Calculates the arcsine of the column values.  
-  
- **AsinDegrees**  
- Calculates the arcsine of the column values, in degrees.  
-  
- **Asinh**  
- Calculates the hyperbolic arcsine for the column values.  
-  
- **Atan**  
- Calculates the arctangent of the column values.  
-  
- **AtanDegrees**  
- Calculates the arctangent of the column values, in degrees.  
-  
- **Atanh**  
- Calculates the hyperbolic arctangent of the column values.  
-  
- **Cis**  
- Returns a complex-valued function made from sine and cosine with the definition cis θ = cos θ + isin θ.  
-  
- **Cos**  
- Calculates the cosine of the column values.  
-  
- **CosDegrees**  
- Calculates the cosine for the column values, in degrees.  
-  
- **Cosh**  
- Calculates the hyperbolic cosine for the column values.  
-  
- **Cot**  
- Calculates the cotangent for the column values.  
-  
- **CotDegrees**  
- Calculates the cotangent for the column values, in degrees.  
-  
- **Coth**  
- Calculates the hyperbolic cotangent for the column values.  
-  
- **Csc**  
- Calculates the cosecant for the column values.  
-  
- **CscDegrees**  
- Calculates the cosecant for the column values, in degrees.  
-  
- **Csch**  
- Calculates the hyperbolic cosecant for the column values.  
-  
- **DegreesToRadians**  
- Converts degrees to radians.  
-  
- **Sec**  
- Calculates the secant of the column values.  
-  
- **SecDegrees**  
- Calculates the secant for the column values, in degrees.  
-  
- **Sech**  
- Calculates the hyperbolic secant of the column values.  
-  
- **Sign**  
- Returns the sign of the column values.  
-  
- **Sin**  
- Calculates the sine of the column values.  
-  
- **Sinc**  
- Calculates the sine-cosine value of the column values.  
-  
- **SinDegrees**  
- Calculates the sine for the column values, in degrees.  
-  
- **Sinh**  
- Calculates the hyperbolic sine of the column values.  
-  
- **Tan**  
- Calculates the tangent of the column values.  
-  
- **TanDegrees**  
- Calculates the tangent for the argument, in degrees.  
-  
- **Tanh**  
- Calculates the hyperbolic tangent of the column values.  
-  
-## Technical Notes  
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips for operations on multiple columns
+### Operations on multiple columns
 
 Be careful when you select more than one column as the second operator. The results are easy to understand if the operation is simple, such as adding a constant to all columns. 
 
@@ -544,7 +634,7 @@ Alternatively, use one of the following modules to do all the calculations at on
 + [Execute Python Script](execute-python-script.md)
 + [Apply SQL Transformation](apply-sql-transformation.md)   
 
-### What is a unary or binary functions?  
+### Unary and binary functions  
   
 In a *unary operation*, you create calculations based on column values without referring to other columns or constants.  
   
@@ -558,7 +648,7 @@ An example of a binary operation that uses two columns is `Subtract(X,Y)`, in wh
   
 An example of using a binary operation that combines a column and a constant might be `Subtract(X,mean)`, where you type the column mean as a constant and subtract it from each value in column X.  
   
-### How are numbers handled in categorical columns?  
+### Handling of numbers in categorical columns  
   
 Support for categorical values presented as numbers depends on the function, and on how many arguments the function takes. 
 
@@ -578,19 +668,19 @@ Support for categorical values presented as numbers depends on the function, and
   
     -   If both arguments of a binary operation are sparse columns, the resulting column contains background zeros in all positions where both input columns contained background zeros.  
   
-### How are sparse columns handled?  
-  
+### Processing of sparse columns
+
 In unary operations, all elements of sparse columns that correspond to background zeros are left unprocessed.  
   
 In binary operations, if one argument is a sparse column and the other argument is a dense column, the resulting column is sparse with all background zeros propagated from input from the sparse column.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+## Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="Outputs"></a> Outputs  
+## Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

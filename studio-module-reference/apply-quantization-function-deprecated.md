@@ -35,19 +35,20 @@ For more information about how to define a quantization function, see these arti
 + [Quantize (deprecated)](quantize-deprecated.md)
 + [Group Data into Bins](group-data-into-bins.md)
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+## Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
 |Binning function|Function|Select a predefined quantization function to apply|  
   
-##  <a name="Outputs"></a> Outputs  
+## Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Quantized dataset|[Data Table](data-table.md)|Dataset after quantization is applied|  
   
-## See also  
+## See also
+
  [Deprecated Modules and Features](deprecated-modules-and-features.md)   
  [A-Z Module List](a-z-module-list.md)

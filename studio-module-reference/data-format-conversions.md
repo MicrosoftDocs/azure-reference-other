@@ -63,12 +63,14 @@ The **Data Format Conversions** category includes these modules:
   
 |Module|Description|  
 |------------|-----------------|  
-|[Convert to ARFF](convert-to-arff.md)|Converts data input to the attribute relation file format used by the Weka toolset|  
-|[Convert to CSV](convert-to-csv.md)|Converts a dataset to a comma-separated values format|  
-|[Convert to Dataset](convert-to-dataset.md)|Converts a data input to the internal Dataset format used by Microsoft Azure Machine Learning|  
-|[Convert to SVMLight](convert-to-svmlight.md)|Converts data input to the format used by the SVM-Light framework|  
-|[Convert to TSV](convert-to-tsv.md)|Converts data input to the tab-delimited format|  
-  
-## See also  
+
++ [Convert to ARFF](convert-to-arff.md): Converts data input to the attribute relation file format used by the Weka toolset
++ [Convert to CSV](convert-to-csv.md): Converts a dataset to a comma-separated values format
++ [Convert to Dataset](convert-to-dataset.md): Converts a data input to the internal Dataset format used by Microsoft Azure Machine Learning
++ [Convert to SVMLight](convert-to-svmlight.md): Converts data input to the format used by the SVM-Light framework
++ [Convert to TSV](convert-to-tsv.md): Converts data input to the tab-delimited format
+
+## See also
+
  [Data Transformation](data-transformation.md)   
  [Module Categories and Descriptions](machine-learning-module-descriptions.md)

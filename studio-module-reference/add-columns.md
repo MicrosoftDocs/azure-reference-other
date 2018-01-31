@@ -15,30 +15,30 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Add Columns
+
 *Adds a set of columns from one dataset to another*  
-  
- Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
-  
-##  <a name="Remarks"></a> Module Overview  
+
+Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+## Module overview
 
 This article describes how to use the [Add Columns](add-columns.md) module in Azure Machine Learning Studio, to concatenate two datasets. 
 
 You combine all columns from the two datasets that you specify as inputs to create a single dataset. If you need to concatenate more than two datasets, use several instances of **Add Columns**.  
   
 When combining two datasets that contain a different number of rows, we recommend using the [Join Data](join-data.md) module, which supports outer joins on a common key column.
-  
-## How to configure Add Columns  
-  
-1.  Add the **Add Columns** module to your experiment.  
-  
-2.  Connect the two datasets that you want to concatenate. If you want to combine more than two datasets, you can chain together several combinations of **Add Columns**.  
+
+## How to configure Add Columns
+
+1. Add the **Add Columns** module to your experiment.  
+
+2. Connect the two datasets that you want to concatenate. If you want to combine more than two datasets, you can chain together several combinations of **Add Columns**.  
   
     -   It is possible to combine two columns that have a different number of rows. The output dataset is padded with missing values for each row in the smaller source column.  
   
     -   You cannot choose individual columns to add. All the columns from each dataset are concatenated when you use **Add Columns**. Therefore, if you want to add only a subset of the columns, use [Select Columns in Dataset](select-columns-in-dataset.md) to create a dataset with the columns you want.  
   
 3.  Run the experiment.  
-  
 
 ### Results
 
@@ -59,20 +59,20 @@ For examples of how **Add Columns** is used in an experiment, see the [Azure AI 
 
 - [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Datasets that contain features are cleaned and then combined by using [Add Rows](add-rows.md),  **Add Columns**, and [Join Data](join-data.md).  
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
+## Expected inputs  
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Left dataset|[Data Table](data-table.md)|Left dataset|  
 |Right dataset|[Data Table](data-table.md)|Right dataset|  
   
-##  <a name="Outputs"></a> Output  
-  
+## Output  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Combined dataset|[Data Table](data-table.md)|Combined dataset|  
   
-##  <a name="exceptions"></a> Exceptions  
+## Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  
@@ -83,7 +83,8 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
-## See also  
+## See also
+
  [Manipulation](data-transformation-manipulation.md)   
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)
