@@ -107,7 +107,7 @@ If you need to compare columns from different datasets, you can isolate each col
     - **Assume equal variance**: Deselect this option when the samples are from different populations.
     - **Null hypothesized µ1**: Type the mean for the first column.
     - **Null hypothesized µ2**: Type the mean for the second column.
-    **Target columns**: Use the Column Selector to choose two numeric columns to test.
+    - **Target columns**: Use the Column Selector to choose two numeric columns to test.
     - **Hypothesis type**: Indicate whether the test is one-tail or two-tail. The default is a two-tailed test.
     - **α**: Specify the confidence factor. This value is used to evaluate the value of P (the first output of the module)> If p is lower than the confidence factor, the null hypothesis is rejected.
 
