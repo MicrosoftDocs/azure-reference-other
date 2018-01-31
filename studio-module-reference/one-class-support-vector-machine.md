@@ -96,7 +96,7 @@ Predictions from the [One-Class SVM](one-class-support-vector-machine.md) are un
 
 This implementation wraps the library for support vector machines named [libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm/).  The general theory on which `libsvm` is based, and the approach towards one-class support vector machines, is described in these papers by B. Schӧlkopf et al.
 
-- [Estimating the Support of a High-Dimensional Distribution](http://research.microsoft.com/pubs/69731/tr-99-87.pdf
+- [Estimating the Support of a High-Dimensional Distribution](http://research.microsoft.com/pubs/69731/tr-99-87.pdf)
 
 - [New Support Vector Algorithms](http://www.stat.purdue.edu/~yuzhu/stat598m3/Papers/NewSVM.pdf)
 
