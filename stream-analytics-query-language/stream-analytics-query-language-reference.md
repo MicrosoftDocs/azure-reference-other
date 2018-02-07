@@ -44,7 +44,12 @@ FROM TollTagEntry TIMESTAMP BY EntryTime
 ```  
   
 ### Field Name Case Sensitivity  
- All field names referenced in the query are case insensitive. For input formats that support case sensitive schema, for example JSON, you may construct events that has duplicate fields when field names are compared in a case insensitivity manner. Such events are considered invalid events, and are dropped during processing.  
+ Field names for a job that is created by using compatibility level 1.0 are changed to lower case(case insensitive) when processed by the Azure Stream Analytics engine. For input formats that support case sensitive schema, for example JSON, you may construct events that has duplicate fields when field names are compared in a case insensitivity manner. Such events are considered invalid events, and are dropped during processing.  
+
+  Case-sensitivity is persisted for field names when the Stream Analytics job is created by using compatibility level 1.1. For more information, refer to the [configure compatibility level](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-compatibility-level) topic 
+
+  > [!NOTE] 
+  > Persisting case-sensitivity isn't yet available for Stream Analytic jobs hosted by using Edge environment. As a result, all field names are converted to lowercase if your job is hosted on Edge. 
   
 ## In this section  
  Refer to the following topics for guidance on using the Stream Analytics query language.  
