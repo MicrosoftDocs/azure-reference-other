@@ -42,7 +42,7 @@ Where_Clause :=
 ### Examples    
 The following query finds all the search session in the @searchlog rowset that are in the `en-gb` region.  
   
-```  
+```sql  
 @rs1 =  
     SELECT Start, Region, Duration  
     FROM @searchlog  
@@ -53,7 +53,7 @@ Note the use of `==` in the example above instead of `=`. This is because expres
   
 The following example shows a more complex combination of [AND](and-u-sql.md) and [OR](or-u-sql.md). It finds all the search sessions from the @searchlog rowset that lasted between 2 and 5 minutes or are in the en-gb region.  
   
-```  
+```sql  
 @rs2 =  
     SELECT Start, Region, Duration  
     FROM @searchlog  
@@ -62,7 +62,7 @@ The following example shows a more complex combination of [AND](and-u-sql.md) an
   
 While U-SQL supports the [BETWEEN](between-u-sql.md) comparison operation, the following example shows how to use [AND](and-u-sql.md) and the DateTime.Parse() method to filter between two dates:  
   
-```  
+```sql  
 @rs3 =  
     SELECT Start, Region, Duration  
     FROM @searchlog  
@@ -71,7 +71,7 @@ While U-SQL supports the [BETWEEN](between-u-sql.md) comparison operation, the f
   
 Assuming the Region can contain null values and one wants to check if the first three characters correspond to the regions that start with "de-", one should use the C# [&&](https://msdn.microsoft.com/library/2a723cdk.aspx) operator to guarantee that the null check occurs before applying the string operations and to short-circuit the expression if the check fails:  
   
-```  
+```sql 
 @rs4 =  
     SELECT Start, Region, Duration  
     FROM @searchlog  

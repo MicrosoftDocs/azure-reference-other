@@ -29,7 +29,7 @@ The examples can be executed in Visual Studio with the [Azure Data Lake Tools pl
 
 
 **Query the usql.partitions view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.partition_parameters
@@ -38,7 +38,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query the usql.partition_parameters view with other views**
-```
+```sql
 @partition_parameters =
     SELECT o.name AS tableName,
             c.name AS columnName,
