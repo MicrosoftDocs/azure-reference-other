@@ -34,7 +34,7 @@ Specifies the options that are being changed. The options provide the informatio
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
-```
+```sql
 USE DATABASE TestReferenceDB;
 
 ALTER DATA SOURCE MySQLServerDataSource
