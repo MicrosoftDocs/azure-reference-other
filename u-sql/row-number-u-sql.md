@@ -43,27 +43,27 @@ This ranking function can be used in a [windowing expression](over-expression-u-
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 15000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Amy",    "Engineering", 100, 35000),
-        (5, "Justin", "Engineering", 100, 15000),
-        (6, "Emma",   "HR",          200, 8000),
-        (7, "Jacob",  "HR",          200, 8000),
-        (8, "Olivia", "HR",          200, 8000),
-        (9, "Mason",  "Executive",   300, 50000),
-        (10, "Ava",   "Marketing",   400, 15000),
-        (11, "Ethan", "Marketing",   400, 9000) 
-        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+    ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 15000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Amy",    "Engineering", 100, 35000),
+            (5, "Justin", "Engineering", 100, 15000),
+            (6, "Emma",   "HR",          200, 8000),
+            (7, "Jacob",  "HR",          200, 8000),
+            (8, "Olivia", "HR",          200, 8000),
+            (9, "Mason",  "Executive",   300, 50000),
+            (10, "Ava",   "Marketing",   400, 15000),
+            (11, "Ethan", "Marketing",   400, 9000) 
+            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+    ```
 
 **A.    Basic Syntax**   
 The following example calculates a row number for each employee based on his\her `Salary`.
-```
+```sql
 @result =
     SELECT ROW_NUMBER() OVER (ORDER BY Salary DESC) AS RowNumber,
     EmpName, DeptName, Salary
@@ -77,7 +77,7 @@ USING Outputters.Csv();
 
 **B.    Dividing the result set using PARTITION BY**   
 The rows are first partitioned by `DeptID`. The [ORDER BY](over-expression-u-sql.md#OBC) clause specified in the [OVER](over-expression-u-sql.md) clause orders the rows in each partition by the column `Salary`.
-```
+```sql
 @result =
     SELECT ROW_NUMBER() OVER(PARTITION BY DeptID ORDER BY Salary DESC) AS RowNumberByDept,
            EmpName, DeptName, Salary

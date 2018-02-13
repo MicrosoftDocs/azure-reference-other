@@ -35,7 +35,7 @@ is_included_column|bool|True = Column is a non-key column added to the index as 
 The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
 
 **Query the usql.index_columns view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.index_columns
@@ -44,7 +44,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query the usql.index_columns view with other catalog views**
-```
+```sql
 @index_columns =
     SELECT i.name AS indexName,
             o.name AS objectName,

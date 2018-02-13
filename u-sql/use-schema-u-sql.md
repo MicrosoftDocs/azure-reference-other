@@ -34,7 +34,7 @@ Use_Schema_Statement :=
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following script shows how using a schema `My Schema` within the current database context will allow the subsequent [SELECT](select-expression-u-sql.md) and [DROP](drop-table-u-sql.md) statements to operate on a table `SampleTable` within the `My Schema` schema.  
-```  
+```sql  
 USE SCHEMA [My Schema];  
 @r = 
     SELECT * FROM SampleTable;  
@@ -42,7 +42,7 @@ USE SCHEMA [My Schema];
     OUTPUT @r TO "output.txt" USING Outputters.Csv();  
 ```  
 This script is equivalent to the following script that uses two-parts names to refer to the table in the current database context without setting the schema context:  
-```  
+```sql 
 @r = 
     SELECT * FROM [My Schema].SampleTable;  
     DROP TABLE [My Schema].SampleTable;  
