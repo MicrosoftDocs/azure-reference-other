@@ -1,5 +1,5 @@
 ---
-title: "AnomalyDetection (Azure Stream Analytics) | Microsoft Docs"
+title: "ANOMALYDETECTION (Azure Stream Analytics) | Microsoft Docs"
 description: ""
 applies_to: 
   - "Azure"
@@ -17,9 +17,11 @@ ms.date: 02/12/2018
 ms.author: sngun
 ---
 
-The **AnomalyDetection** operator is used to detect different types of anomalies in event streams. For example, a slow decrease in free memory over a long time can be indicative of a memory leak, or the number of web service requests that are stable in a range might dramatically increase or decrease.  
+# ANOMALYDETECTION (Azure Stream Analytics)
 
-The AnomalyDetection operator detects three types of anomalies: 
+The ANOMALYDETECTION operator is used to detect different types of anomalies in event streams. For example, a slow decrease in free memory over a long time can be indicative of a memory leak, or the number of web service requests that are stable in a range might dramatically increase or decrease.  
+
+The ANOMALYDETECTION operator detects three types of anomalies: 
 
 * **Bi-directional Level Change**: A sustained increase or decrease in the level of values, both upward and downward. This value is different from spikes and dips, which are instantaneous or short-lived changes.  
 
@@ -27,9 +29,9 @@ The AnomalyDetection operator detects three types of anomalies:
 
 * **Slow Negative Trend**: A slow decrease in the trend over time.  
 
-When using the AnomalyDetection operator, you must specify the **Limit Duration** clause. This clause specifies the time interval (how far back in history from the current event) should be considered when detecting anomalies. This operator can optionally be limited to only events that match a certain property or condition by using the **When** clause. This operator can also optionally process groups of events separately based on the key specified in the **Partition by** clause. Training and prediction occur independently for each partition. 
+When using the ANOMALYDETECTION operator, you must specify the **Limit Duration** clause. This clause specifies the time interval (how far back in history from the current event) should be considered when detecting anomalies. This operator can optionally be limited to only events that match a certain property or condition by using the **When** clause. This operator can also optionally process groups of events separately based on the key specified in the **Partition by** clause. Training and prediction occur independently for each partition. 
 
-## Syntax for AnomalyDetection operator
+## Syntax for ANOMALYDETECTION operator
 
 `ANOMALYDETECTION(<scalar_expression>) OVER ([PARTITION BY <partition key>] LIMIT DURATION(<unit>, <length>) [WHEN boolean_expression])` 
 
@@ -49,9 +51,9 @@ value would be used for learning and training in that model. For example, the fo
 * **when_clause** - Specifies a boolean condition for the events considered in the
 anomaly detection computation.
 
-### Return Types
+### Return types
 
-The AnomalyDetection operator returns a record containing all three scores as its output. The
+The ANOMALYDETECTION operator returns a record containing all three scores as its output. The
 properties associated with the different types of anomaly detectors are:
 
 - BiLevelChangeScore
@@ -68,6 +70,6 @@ Anomaly of a type is detected when one of the anomaly scores crosses a threshold
 
 `SELECT id, val, ANOMALYDETECTION(val) OVER(PARTITION BY id LIMIT DURATION(hour, 1) WHEN id > 100) FROM input`
 
-## See Also  
+## Next Steps  
  [ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)   
  [LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)  
