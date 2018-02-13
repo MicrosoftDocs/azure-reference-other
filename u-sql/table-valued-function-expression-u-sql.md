@@ -44,7 +44,7 @@ The identifier invokes the table-valued function (TVF) of the given name. If the
 - The examples below use the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
 
 The calls below are for the functions created at [CREATE FUNCTION (U-SQL): Table-valued Function](create-function-u-sql-table-valued-function.md).
-```
+```sql
 USE TestReferenceDB;
 
 // Calling SearchLog

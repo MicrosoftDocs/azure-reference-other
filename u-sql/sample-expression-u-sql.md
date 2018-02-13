@@ -73,7 +73,7 @@ Weight_Col :=
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable, `@data`.  
 
 **Dataset**   
-```
+```sql
 @data = 
     SELECT * FROM 
         ( VALUES
@@ -86,7 +86,7 @@ Weight_Col :=
 ```
 
 **UNIFORM**  
-```
+```sql
 @result = 
     SAMPLE @data UNIFORM (0.4) WITH WEIGHT AS _Weight;
 
@@ -104,7 +104,7 @@ ZipCode  |Age      |Salary   |LastName |Weight
 
 **UNIVERSE**  
 Samples the `@data` rowset by picking some randomly chosen fraction of the overall value-space of the ON columns and returning all rows whose value of the ON columns belongs in the chosen space. The query implicitly picks 10% of all the values of the `Age` columns and returns all rows whose value of `Age` was randomly chosen. 
-```
+```sql
 @result = 
     SAMPLE @data ON Age UNIVERSE (0.1);
 
@@ -125,7 +125,7 @@ ZipCode  |Age      |Salary   |LastName
 
 **DISTINCT**  
 Samples the `@data` rowset such that at least 3 rows per distinct value of the `ZipCode` column are included, and additional rows are added with the indicated probability (10%). The weight of each passing row is added to the resulting rowset in the weight column `_Weight`. 
-```
+```sql
 @result = 
     SAMPLE @data ON ZipCode DISTINCT (0.1, 3) WITH WEIGHT AS _Weight;
 

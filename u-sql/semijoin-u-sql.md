@@ -25,9 +25,8 @@ The join expression in the ON clause specifies how to determine the match.
 ### Examples 
 Given the following rowsets:  
   
-| @employees |           |  
+| **EmpName** |   **DepID**        |  
 |------------|-----------|  
-| **EmpName** string | **DepID** int? |  
 | Rafferty   | 31        |  
 | Jones      | 33        |  
 | Heisenberg | 33        |  
@@ -35,9 +34,8 @@ Given the following rowsets:
 | Smith      | 34        |  
 | Williams   | *null*    |  
   
-| @departments |             |  
+| **DeptID** |    **DepName**         |  
 |--------------|-------------|  
-| **DeptID** int  | **DepName** string |  
 | 31           | Sales       |  
 | 33           | Engineering |  
 | 34           | Clerical    |  
@@ -45,7 +43,7 @@ Given the following rowsets:
   
 The following query finds all employees that are in valid departments by finding all the employees in the left @employees rowset that have a depID that is listed in the right @departments rowset):  
   
-```
+```sql
 @employees = SELECT *  
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  
@@ -75,9 +73,8 @@ USING Outputters.Csv();
   
 The resulting rowset looks like:  
   
-| @emps_in_valid_dept |           |  
+| **EmpName** |   **DepID**        |  
 |------------------------|-----------|  
-| **EmpName** string     | **DepID** int? |  
 | Rafferty               | 31        |  
 | Jones                  | 33        |  
 | Heisenberg             | 33        |  
@@ -86,7 +83,7 @@ The resulting rowset looks like:
   
 The following query finds all departments with at least one employee:  
   
-```
+```sql
 @employees = SELECT *  
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  
@@ -117,9 +114,8 @@ USING Outputters.Csv();
   
 The query return the rowset:  
   
-| @depts_with_emps_0/@depts_with_emps_1 |           |  
+| **DepName**  |    **DepID**       |  
 |---------------------------------------------|-----------|  
-| **DepName** string                          | **DepID** int?|  
 | Sales                                       | 31        |  
 | Engineering                                 | 33        |  
 | Clerical                                    | 34        |  

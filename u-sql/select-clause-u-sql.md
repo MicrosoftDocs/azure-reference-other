@@ -47,7 +47,7 @@ Select_Item_List :=
   
   Please note that `AS` is case-sensitive and that C# also provides the type cast operator `as`. The following SELECT clause would be interpreted as an attempt to cast the column `c` to a non-existing type `newcol` and fail:  
  
-    ```
+    ```sql
     SELECT c as newcol FROM …
     ```
 
@@ -59,7 +59,7 @@ Select_Item_List :=
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 **Using a column alias**  
-```
+```sql
 @t =
   SELECT *
   FROM (VALUES("1965")) AS T(c1);
@@ -76,7 +76,7 @@ USING Outputters.Tsv(outputHeader : true);
 
 **Using DISTINCT**   
 The following query selects the distinct regions from the `@searchlog` rowset.  
-```
+```sql
 @rs1 =     
     SELECT DISTINCT Region  
     FROM @searchlog;

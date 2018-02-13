@@ -40,25 +40,25 @@ This aggregator can be used in a [windowing expression](over-expression-u-sql.md
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 20000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Emma",   "HR",          200, 8000),
-        (5, "Jacob",  "HR",          200, 8000),
-        (6, "Olivia", "HR",          200, 8000),
-        (7, "Mason",  "Executive",   300, 50000),
-        (8, "Ava",    "Marketing",   400, 15000),
-        (9, "Ethan",  "Marketing",   400, 9000) 
-        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+    ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 20000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Emma",   "HR",          200, 8000),
+            (5, "Jacob",  "HR",          200, 8000),
+            (6, "Olivia", "HR",          200, 8000),
+            (7, "Mason",  "Executive",   300, 50000),
+            (8, "Ava",    "Marketing",   400, 15000),
+            (9, "Ethan",  "Marketing",   400, 9000) 
+            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+    ```
 
 **A.    Using STDEV**   
 The following query returns the standard deviation for all salary values and the standard deviation from all distinct salary values.
-```
+```sql
 @result =
     SELECT STDEV(Salary) AS STDEV_AllSalaries,
            STDEV(DISTINCT Salary) AS STDEV_DistinctSalaries
@@ -71,7 +71,7 @@ USING Outputters.Csv();
 
 **B.    STDEV per group**   
 The following query determines the salary standard deviation for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
-```
+```sql
 @result =
     SELECT DeptName,
            STDEV(Salary) AS STDEVSalaryByDept
@@ -85,7 +85,7 @@ USING Outputters.Csv();
 
 **C.    STDEV with OVER()**   
 The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows.  The query determines the salary standard deviation over the window - all employees.
-```
+```sql
 @result =
     SELECT EmpName,
            STDEV(Salary) OVER() AS STDEV_AllSalaries
@@ -98,7 +98,7 @@ USING Outputters.Csv();
 
 **D.    STDEV over a defined window using OVER()**   
 The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, `Salary`, and the salary standard deviation over the window - `DeptName`.
-```
+```sql
 @result =
     SELECT EmpName,
            DeptName,
