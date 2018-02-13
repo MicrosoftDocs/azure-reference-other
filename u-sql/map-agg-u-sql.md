@@ -52,7 +52,7 @@ This aggregator cannot be used in a [windowing expression](over-expression-u-sql
 **MAP_AGG**   
 This example takes a key, value pair (`PhoneType` and `PhoneNumber`) and creates a [SQL.MAP](complex-built-in-u-sql-types.md) for all the key/value pairs in the group, `EmpName`.   
 This example provides an alternative solution to [Using User Defined Aggregator - genericAggregator A](extending-u-sql-expressions-with-user-code.md#genericAggA).
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -98,7 +98,7 @@ USING Outputters.Csv();
 
 **EXPLODE - Bonus Example**   
 This example does not use `MAP_AGG`; however, it illustrates how to reverse the outcome from the above example using [EXPLODE](explode-u-sql.md).
-```
+```sql
 @map =
     SELECT EmpName,
            PhoneNumbers == ""? null : new SQL.MAP<string, string>(from p in PhoneNumbers.Split(',') select new KeyValuePair<string, string>(p.Split(':') [0], p.Split(':') [1])) AS PhoneNumberMap
@@ -120,7 +120,7 @@ USING Outputters.Csv();
 
 **MAP_AGG - Additional Example**  
 The query uses `MAP_AGG` to pivot the sales figures from the `@storeSales` rowset variable.
-```
+```sql
 @storeSales =
     SELECT * FROM 
         ( VALUES
@@ -158,7 +158,7 @@ USING Outputters.Csv();
 
 **PIVOT and MAP_AGG**<a name="pivot_basic"></a>     
 The examples below repro the first two examples from [Using PIVOT and UNPIVOT](https://msdn.microsoft.com/library/ms177410.aspx) in SQL Server.  To execute the example with the same data set, simply bcp or copy and paste `DaysToManufacture` and `StandardCost` from AdventureWorks2014.Production.Product to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).  An alternative solution using PIVOT can be viewed at [Basic PIVOT Example](pivot-and-unpivot-u-sql.md#pivot_basic).
-```
+```sql
 @products =
      EXTRACT DaysToManufacture  int,
              StandardCost       double
@@ -199,7 +199,7 @@ USING Outputters.Csv(outputHeader: true);
 
 **PIVOT and MAP_AGG - Additional Example**<a name="pivot_complex"></a>    
 The example below repros the third example, "Complex PIVOT Example", from [Using PIVOT and UNPIVOT](https://msdn.microsoft.com/library/ms177410.aspx).  To execute the example with the same data set, simply bcp or copy and paste `PurchaseOrderID`, `EmployeeID`, and `VendorID` from AdventureWorks2014.Purchasing.PurchaseOrderHeader to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).  An alternative solution using PIVOT can be viewed at [Complex PIVOT Example](pivot-and-unpivot-u-sql.md#pivot_complex).
-```
+```sql
 @purchaseOrder =
      EXTRACT PurchaseOrderID int, 
                 EmployeeID int, 

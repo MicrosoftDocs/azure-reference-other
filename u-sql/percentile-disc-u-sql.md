@@ -59,26 +59,26 @@ This analytic function can be used in a [windowing expression](over-expression-u
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The example below is based on the dataset defined below.  Ensure your execution includes the rowset variable.
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 20000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Amy",    "Engineering", 100, 35000),
-        (5, "Emma",   "HR",          200, 8000),
-        (6, "Jacob",  "HR",          200, 8000),
-        (7, "Olivia", "HR",          200, 8000),
-        (8, "Mason",  "Executive",   300, 50000),
-        (9, "Ava",    "Marketing",   400, 15000),
-        (10, "Ethan", "Marketing",   400, 9000) 
-        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+    ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 20000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Amy",    "Engineering", 100, 35000),
+            (5, "Emma",   "HR",          200, 8000),
+            (6, "Jacob",  "HR",          200, 8000),
+            (7, "Olivia", "HR",          200, 8000),
+            (8, "Mason",  "Executive",   300, 50000),
+            (9, "Ava",    "Marketing",   400, 15000),
+            (10, "Ethan", "Marketing",   400, 9000) 
+            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+    ```
 
 **Using PERCENTILE_DISC**   
 The following example uses `PERCENTILE_DISC` to find the median employee salary in each department.
-```
+```sql
 @result =
     SELECT DISTINCT DeptName,
                     PERCENTILE_DISC(0.5) WITHIN GROUP(ORDER BY Salary) OVER(PARTITION BY DeptName) AS MedianDisc
