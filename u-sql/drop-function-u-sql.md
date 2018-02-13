@@ -39,7 +39,7 @@ Drop_Function_Statement :=
 
 The following statement drops the TVF with the name `SearchLogPerRegion` in the `TestReferenceDB’s` dbo schema if it exists and the user has permission to drop it:  
   
-```
+```sql
 DROP FUNCTION IF EXISTS TestReferenceDB.dbo.SearchLogPerRegion;
 ```
   

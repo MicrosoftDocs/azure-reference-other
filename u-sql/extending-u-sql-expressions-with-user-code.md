@@ -52,7 +52,7 @@ The following provides a walkthrough of using a simple function with both Code-B
 Both methods share the dataset and function defined below.
 #### DataSet   
 
-```U-SQL
+```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
 USE DATABASE TestReferenceDB;
 
@@ -95,7 +95,7 @@ namespace myFirstNamespace
 
 ### Method 1. Using Code-Behind 
 In Visual Studio, add a new U-SQL script to your existing U-SQL Project.  From Solution Explorer, open the new usql.cs file associated with your new U-SQL script.  Replace the entire contents with the function defined above. Close the usql.cs file.  Add the code below to your new U-SQL script to call the function.
-```U-SQL
+```sql
 @result =
     SELECT EmpName,
            myFirstNamespace.myFirstClass.myFirstFunction(EmpName) AS myFirstFunction_CB
@@ -112,7 +112,7 @@ In Visual Studio, add a new `Class Library (For U-SQL Application)` to your exis
 
 #### B. Register Assembly 
 In Visual Studio, add a new U-SQL script to your existing U-SQL Project and execute the code below to register the assembly, `myFirstAssembly.dll`.
-```U-SQL
+```sql
 USE DATABASE TestReferenceDB;
 DROP ASSEMBLY IF EXISTS myFirstAssembly;
 
@@ -123,7 +123,7 @@ FROM @"<your path>\myFirstAssembly\bin\Debug\myFirstAssembly.dll";
 
 #### C. Reference Assembly 
 Use `REFERENCE ASSEMBLY` to reference the new assembly.  The code below provides three different methods for calling the function, `myFirstFunction`.  
-```U-SQL
+```sql
 USE DATABASE TestReferenceDB;
 
 /************* Method 1 *************/
@@ -174,7 +174,8 @@ USING Outputters.Tsv();
 
 <a name="usingRound">**Inline C# Expression - Using Round**</a>  
 Example using [Round](https://msdn.microsoft.com/library/system.math.round(v=vs.110).aspx).  See also, [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md).
-```
+
+```sql
 @departments = 
     SELECT * FROM 
         ( VALUES
@@ -198,6 +199,7 @@ USING Outputters.Tsv();
 <a name="smpAgg">**User Defined Aggregator - SampleAggregate**</a>   
 Slightly modified example taken from [Azure/usql/Examples/Extensibility-Simple-Examples](https://github.com/Azure/usql/tree/master/Examples/Extensibility-Simple-Examples/Extensibility-Simple-Examples). c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1)
  .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -241,7 +243,8 @@ namespace ReferenceGuide_Examples
 
 **Using User Defined Aggregator - SampleAggregate**  
 The user defined aggregator calculates a balance.  If the transaction type is "Debit", subtract from the balance, if the transaction type is "Credit", add to the balance.  Using the Code-Behind **above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
-```U-SQL
+
+```sql
 @transactions =
     SELECT * FROM 
         ( VALUES
@@ -266,6 +269,7 @@ USING Outputters.Csv();
 <a name="genericAgg">**User Defined Aggregator - genericAggregator**</a>   
 A basic aggregator that uses generic names to illustrate that the names of the parameters need not match the names of the passed values.
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 
@@ -296,7 +300,8 @@ namespace ReferenceGuide_Examples
 
 <a name="genericAggA">**Using User Defined Aggregator - genericAggregator A**</a>  
 `PhoneType` and `PhoneNumber` are aggregated for each `EmpName`.  This example provides an alternative solution to an example from [MAP_AGG (U-SQL)](map-agg-u-sql.md).  Using the Code-Behind **above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
-```U-SQL
+
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -344,7 +349,7 @@ USING Outputters.Text();
 <a name="genericAggB">**Using User Defined Aggregator - genericAggregator B**</a>  
 `Producer` is aggregated for each `Title`.  This example provides an alternative solution to an example from [ARRAY_AGG (U-SQL)](array-agg-u-sql.md).  Using the Code-Behind **further above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
 
-```U-SQL
+```sql
 @films = 
     SELECT * FROM 
         ( VALUES
@@ -401,6 +406,7 @@ USING Outputters.Csv();
 
 <a name="hop">**User Defined Function - HasOfficePhone**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file. See also, [U-SQL Functions](u-sql-functions.md).  See usage in next section, **below**.
+
 ```csharp
 namespace ReferenceGuide_Examples
 {
@@ -424,7 +430,7 @@ namespace ReferenceGuide_Examples
 **Using User Defined Function - HasOfficePhone**   
 User defined function to see if employee has an office phone.  Using the Code-Behind **above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
 
-```U-SQL
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -449,6 +455,7 @@ USING Outputters.Csv();
 
 <a name="NameProcessor">**User Defined Operator - NameProcessor**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -481,7 +488,7 @@ namespace ReferenceGuide_Examples
 
 **User Defined Operator - Using NameProcessor**  
 Processor tranforms first_name and last_name to take the form first_name_Initial.last_name.  Using the Code-Behind **above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
-```U-SQL
+```sql
 @drivers = 
     SELECT * FROM 
         ( VALUES

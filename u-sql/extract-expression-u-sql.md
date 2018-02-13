@@ -77,7 +77,7 @@ In general, the files are passed as is to the UDO. One exception is that `EXTRAC
 
 **Using Built-In Extractor**     
 The following EXTRACT expression schematizes the file SearchLog.txt in the /Samples/Data directory of the default Azure Data Lake Storage by using the built-in TSV format extractor:  
-```
+```sql
 @searchlog =  
     EXTRACT UserId          int  
           , Start           DateTime  
@@ -92,7 +92,7 @@ The following EXTRACT expression schematizes the file SearchLog.txt in the /Samp
 
 **Extractor with ORDER BY and FETCH**   
 The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
-```
+```sql
 // Only extracts top 10 records by Start date
 @searchlog =  
     EXTRACT UserId          int  
@@ -113,7 +113,7 @@ USING Outputters.Tsv();
 
 **One directory with multiple files**     
 The following EXTRACT expression schematizes the files specified by the file set in the FROM clause. The schema contains the additional virtual columns date and filename that are part of the file set pattern and will be used in later query expressions to identify the actual selected files.  
-```
+```sql
 // Sample file naming convention: vehicle1_09142014.csv, vehicle2_09142014.csv
 DECLARE @dir string = "/Samples/Data/AmbulanceData/";
 DECLARE @file_set_path string = @dir + "vehicle{vid}_{date:MM}{date:dd}{date:yyyy}.csv";
@@ -146,7 +146,7 @@ USING Outputters.Csv();
 ```
 
 **Multiple directories with multiple files**   
-```
+```sql
 // Sample file naming convention: vehicle1_09142014.csv, vehicle2_09142014.csv
 // Sample directory naming convention: /Samples/Data/AmbulanceData/2014/09/15/, /Samples/Data/AmbulanceData/2014/09/14/
 DECLARE @file_set_path2 string = @dir + "{date:yyyy}/{date:MM}/{date:dd}/vehicle{vid}_{date:MM}{date:dd}{date:yyyy}.csv";
@@ -179,6 +179,7 @@ USING Outputters.Csv();
 
 <a name="SampleExtractor">**User-Defined Extractor - SampleExtractor**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -270,7 +271,8 @@ namespace ReferenceGuide_Examples
 
 **Using User-Defined Extractor - SampleExtractor**  
 Extracts first and last names as separate columns using the custom extractor defined **above**.
-```U-SQL
+
+```sql
 @drivers =
     EXTRACT id string,
             first_name string,
@@ -291,6 +293,7 @@ USING Outputters.Tsv(encoding:Encoding.UTF8, quoting:false);
 
 <a name="DriverExtractor">**User-Defined Extractor - DriverExtractor**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -475,8 +478,9 @@ namespace ReferenceGuide_Examples
 ```
 
 **Using User-Defined Extractor - DriverExtractor**  
-Defines a user-defined extractor that supports reading CSV-like data into SQL.MAP\<string,string> columns and SQL.ARRAY\<int> columns.  Extractor assume homogeneous row formats and can be parallelized.  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+Defines a user-defined extractor that supports reading CSV-like data into SQL.MAP\<string,string> columns and SQL.ARRAY\<int> columns.  Extractor assume homogeneous row formats and can be parallelized.  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**. 
+ 
+```sql
 @Drivers =
  EXTRACT driver_id int
        , name string
@@ -504,6 +508,7 @@ USING Outputters.Tsv(encoding:Encoding.UTF8, quoting:false);
 
 <a name="FlexExtractor">**User-Defined Extractor - FlexExtractor**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -601,7 +606,7 @@ namespace FlexibleSchemaExtractor
 
 **Using User-Defined Extractor - FlexExtractor**  
 A flexible schema extractor that is able to read a row-oriented file that has different column counts.  The first 4 columns are fixed as order ID, product type, ordered amount and per item price. Remaining columns, both in their number and semantics, depend upon the product type.  This example is taken from [How to deal with files containing rows with different column counts in U-SQL: Introducing a Flexible Schema Extractor](https://blogs.msdn.microsoft.com/mrys/2016/08/15/how-to-deal-with-files-containing-rows-with-different-column-counts-in-u-sql-introducing-a-flexible-schema-extractor/).  Please refer to the referenced article for full details.  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 /*
 Copy the data below into a file called OrderData.csv.
 

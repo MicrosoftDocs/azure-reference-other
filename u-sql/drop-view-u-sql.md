@@ -37,7 +37,7 @@ Drop_View_Statement :=
 
 The following statement deletes the view `SampleView` in the current database context and schema context if it exists and completes without changes if the view does not exist:  
   
-```
+```sql
 DROP VIEW IF EXISTS TestReferenceDB.dbo.SampleView;  
 ```
   

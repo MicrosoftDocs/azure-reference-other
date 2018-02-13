@@ -35,27 +35,28 @@ This ranking function can be used in a [windowing expression](over-expression-u-
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 15000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Amy",    "Engineering", 100, 35000),
-        (5, "Justin", "Engineering", 100, 15000),
-        (6, "Emma",   "HR",          200, 8000),
-        (7, "Jacob",  "HR",          200, 8000),
-        (8, "Olivia", "HR",          200, 8000),
-        (9, "Mason",  "Executive",   300, 50000),
-        (10, "Ava",   "Marketing",   400, 15000),
-        (11, "Ethan", "Marketing",   400, 9000) 
-        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+
+    ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 15000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Amy",    "Engineering", 100, 35000),
+            (5, "Justin", "Engineering", 100, 15000),
+            (6, "Emma",   "HR",          200, 8000),
+            (7, "Jacob",  "HR",          200, 8000),
+            (8, "Olivia", "HR",          200, 8000),
+            (9, "Mason",  "Executive",   300, 50000),
+            (10, "Ava",   "Marketing",   400, 15000),
+            (11, "Ethan", "Marketing",   400, 9000) 
+            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+    ```
 
 **A.    Ranking all rows in a result set**   
 The following example returns all records ranked by salary.  Because a [PARTITION BY](over-expression-u-sql.md#OPBC) clause was not specified, the `DENSE_RANK` function was applied to all rows in the result set.
-```
+```sql
 @result =
     SELECT *,
            DENSE_RANK() OVER(ORDER BY Salary DESC) AS DenseRankAll
@@ -69,7 +70,7 @@ USING Outputters.Csv();
 
 **B.    Ranking rows within a partition**   
 The following example ranks the salary per department.  The result set is partitioned by `DeptID` and logically ordered by `Salary`.
-```
+```sql
 @result =
     SELECT *,
            DENSE_RANK() OVER(PARTITION BY DeptID ORDER BY Salary DESC) AS DenseRankByDept
