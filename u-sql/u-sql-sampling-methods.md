@@ -33,7 +33,7 @@ COUNT(DISTINCT X)     |  w * COUNT(DISTINCT X) if UNIVERSE sample on X
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable, `@data`.  
 
 **Dataset**   
-```
+```sql
 @data = 
     SELECT * FROM 
         ( VALUES
@@ -46,7 +46,7 @@ COUNT(DISTINCT X)     |  w * COUNT(DISTINCT X) if UNIVERSE sample on X
 ```
 
 **Using SUM with and without a Data Sample**   
-```
+```sql
 @trueAnswer = 
     SELECT ZipCode, SUM(Salary) AS SalarySum 
     FROM @data 

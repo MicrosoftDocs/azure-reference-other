@@ -27,7 +27,7 @@ value     |string         |Lexical representation of the value
 The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
 
 **Query the usql.partition_range_values view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.partition_range_values
@@ -36,7 +36,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query the usql.partition_range_values view with other views**
-```
+```sql
 @partition_range_values =
     SELECT o.name AS tableName,
             c.name AS columnName,
