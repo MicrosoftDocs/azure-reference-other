@@ -38,26 +38,26 @@ This analytic function can be used in a [windowing expression](over-expression-u
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 20000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Amy",    "Engineering", 100, 35000),
-        (5, "Emma",   "HR",          200, 8000),
-        (6, "Jacob",  "HR",          200, 8000),
-        (7, "Olivia", "HR",          200, 8000),
-        (8, "Mason",  "Executive",   300, 50000),
-        (9, "Ava",    "Marketing",   400, 15000),
-        (10, "Ethan", "Marketing",   400, 9000) 
-        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+    ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 20000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Amy",    "Engineering", 100, 35000),
+            (5, "Emma",   "HR",          200, 8000),
+            (6, "Jacob",  "HR",          200, 8000),
+            (7, "Olivia", "HR",          200, 8000),
+            (8, "Mason",  "Executive",   300, 50000),
+            (9, "Ava",    "Marketing",   400, 15000),
+            (10, "Ethan", "Marketing",   400, 9000) 
+            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+    ```
 
 **A.    Using FIRST_VALUE**   
 The following example uses FIRST_VALUE to return the name of the employee that is the highest paid for a given department.
-```
+```sql
 @result =
     SELECT EmpName,
            Salary,
@@ -72,7 +72,7 @@ USING Outputters.Csv();
 
 **B.    Using FIRST_VALUE over partitions**   
 The following example uses FIRST_VALUE to return the highest paid employee compared to other employees within the same department.  The [PARTITION BY](over-expression-u-sql.md#OPBC) clause partitions the employees by department and the FIRST_VALUE function is applied to each partition independently.  The [ORDER BY](over-expression-u-sql.md#OBC) clause specified in the [OVER](over-expression-u-sql.md) clause determines the logical order in which the FIRST_VALUE function is applied to the rows in each partition.
-```
+```sql
 @result =
     SELECT DeptName,
            EmpName,

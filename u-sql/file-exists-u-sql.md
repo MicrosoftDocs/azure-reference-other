@@ -34,7 +34,7 @@ A constant-foldable string expression.  `path` can be any supported file path Un
 - The example can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The example below uses the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
 
-```
+```sql
 DECLARE @filepath_good = "/Samples/Data/SearchLog.tsv";
 DECLARE @filepath_bad = "/Samples/Data/zzz.tsv";
  
