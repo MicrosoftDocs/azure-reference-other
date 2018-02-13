@@ -34,7 +34,7 @@ The examples utilize two books: War and Peace, and Peter Pan.
 - `PeterPan.txt` was obtained from `https://www.gutenberg.org/files/16/16-0.txt`.
 
 **Extract Text**
-```
+```sql
 // War and Peace
 @book =
     EXTRACT No int,
@@ -53,7 +53,7 @@ The examples utilize two books: War and Peace, and Peter Pan.
 ```
 
 **Extract Key Phrases**
-```
+```sql
 REFERENCE ASSEMBLY [TextKeyPhrase];
 
 // War and Peace
@@ -90,7 +90,7 @@ USING Outputters.Tsv(outputHeader: true);
 ```
 
 **Tokenize the key phrases**
-```
+```sql
 // War and Peace
 @KPsplits =
     SELECT No,
@@ -119,7 +119,7 @@ USING Outputters.Tsv(outputHeader: true);
 ```
 
 **Some queries against `@KPsplits ` from above example**
-```
+```sql
 // Top 5 key phrases overall
 @wordCount = 
     SELECT KeyPhrase, COUNT(KeyPhrase) AS wordCount

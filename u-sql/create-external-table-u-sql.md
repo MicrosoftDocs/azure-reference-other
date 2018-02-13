@@ -71,7 +71,7 @@ If the optional `IF NOT EXISTS` is specified, then the statement creates the tab
   
 ### Example
 This example continues with the Data Source created from the example at [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md).
-```
+```sql
 // External Table - Create
 USE DATABASE TestReferenceDB;
 CREATE EXTERNAL TABLE IF NOT EXISTS dbo.BuildVersion_Local

@@ -32,7 +32,7 @@ A "comment" is a sequence of characters beginning with a forward slash/asterisk 
 - The script can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following example uses the `/* */` commenting characters.
-```
+```sql
 /*
 This is a comment.
 Another comment on a separate line.

@@ -38,7 +38,7 @@ Drop_Schema_Statement :=
 - The script can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following script shows how the `My Schema` schema is deleted from the current database context if it already exists before it is recreated:  
-```  
+```sql  
 DROP SCHEMA IF EXISTS [My Schema];  
 CREATE SCHEMA [My Schema];  
 ```  

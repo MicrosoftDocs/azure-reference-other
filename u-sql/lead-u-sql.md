@@ -44,28 +44,28 @@ This analytic function can be used in a [windowing expression](over-expression-u
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.
-```
-@storeSales =
-    SELECT * FROM 
-        ( VALUES
-        (1, "NW", 2013, 100),
-        (1, "NW", 2014, 150),
-        (1, "NW", 2015, 300),
-        (1, "NW", 2016, 640),
-        (2, "SW", 2013, 200),
-        (2, "SW", 2014, 350),
-        (2, "SW", 2015, 500),
-        (2, "SW", 2016, 650),
-        (3, "NW", 2015, 75),
-        (3, "NW", 2016, 100),
-        (4, "NW", 2016, 375),
-        (5, "SW", 2016, 700)
-        ) AS T(StoreID, Region, Year, Sales);
-```
+    ```sql
+    @storeSales =
+        SELECT * FROM 
+            ( VALUES
+            (1, "NW", 2013, 100),
+            (1, "NW", 2014, 150),
+            (1, "NW", 2015, 300),
+            (1, "NW", 2016, 640),
+            (2, "SW", 2013, 200),
+            (2, "SW", 2014, 350),
+            (2, "SW", 2015, 500),
+            (2, "SW", 2016, 650),
+            (3, "NW", 2015, 75),
+            (3, "NW", 2016, 100),
+            (4, "NW", 2016, 375),
+            (5, "SW", 2016, 700)
+            ) AS T(StoreID, Region, Year, Sales);
+    ```
 
 **A.    Compare values between years**   
 The following example uses the `LEAD` function to return the difference in sales for a specific store over previous years.  Notice that because there is no lead value available for the first row, the default of zero (0) is returned.
-```
+```sql
 @result =
     SELECT StoreID,
            Year AS SalesYear,
@@ -82,7 +82,7 @@ USING Outputters.Csv();
 
 **B.    Dividing the result set using PARTITION BY**   
 The following example uses the `LEAD` function to compare year-to-date sales between stores.  Each record shows a store's sales and the sales of the store with the nearest higher sales.  The [PARTITION BY](over-expression-u-sql.md#OPBC) clause is specified to divide the rows in the result set by region.  The `LEAD` function is applied to each partition separately and computation restarts for each partition.  The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) clause orders the rows in each partition.  The [ORDER BY](output-statement-u-sql.md#OBOFC) clause in the [OUTPUT](output-statement-u-sql.md) statement sorts the rows in the whole result set.  Notice that because there is no lead value available for the first row of each partition, the default of zero (0) is returned.
-```
+```sql
 @result =
     SELECT Region,
            StoreID,

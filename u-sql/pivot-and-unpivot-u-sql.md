@@ -99,7 +99,7 @@ Is a system or user-defined aggregate function that accepts one or more inputs. 
 
 **Basic PIVOT Example**<a name="pivot_basic"></a>   
 The example below repros "Basic PIVOT Example" from [Using PIVOT and UNPIVOT](https://docs.microsoft.com/sql/t-sql/queries/from-using-pivot-and-unpivot) in SQL Server.  To execute the example with the same data set, simply bcp or copy and paste `DaysToManufacture` and `StandardCost` from AdventureWorks2014.Production.Product to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).  An alternative solution using MAP_GG can be viewed at [PIVOT and MAP_AGG](map-agg-u-sql.md#pivot_basic)
-```
+```sql
 // Using a data file created from a bcp export
 @products =
      EXTRACT DaysToManufacture  int,
@@ -155,7 +155,7 @@ USING Outputters.Tsv(outputHeader:true, quoting: false);
 
 **Complex PIVOT Example**<a name="pivot_complex"></a>   
 The example below repros "Complex PIVOT Example" from [Using PIVOT and UNPIVOT](https://docs.microsoft.com/sql/t-sql/queries/from-using-pivot-and-unpivot) in SQL Server.  To execute the example with the same data set, simply bcp or copy and paste `PurchaseOrderID`, `EmployeeID` and `VendorID ` from AdventureWorks2014.Purchasing.PurchaseOrderHeader to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).   An alternative solution using MAP_GG can be viewed at [PIVOT and MAP_AGG - Additional Example](map-agg-u-sql.md#pivot_complex).
-```
+```sql
 // Using a data file created from a bcp export
 @PurchaseOrderHeader =
      EXTRACT PurchaseOrderID  int,
@@ -198,7 +198,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Additional PIVOT Example**<a name="addl_exmple"></a>    
-```
+```sql
 @data = SELECT * FROM (VALUES
    ("Beatles", "George Harrison", 1943, "acoustic guitar", 1),
    ("Beatles", "John Lennon",     1940, "acoustic guitar", 2),
@@ -270,7 +270,7 @@ USING Outputters.Tsv(outputHeader:true, nullEscape:"#null#");
 
 **Basic UNPIVOT Example**<a name="unpivot_basic"></a>   
 This example uses UNPIVOT against the pivoted results created from [Basic PIVOT Example](#pivot_basic) above.
-```
+```sql
 @pivotedProducts =
      EXTRACT Cost_Sorted_By_Production_Days string,
              [0] double?,
@@ -300,7 +300,7 @@ USING Outputters.Tsv(outputHeader:true, quoting: false);
 
 **Complex UNPIVOT Example**<a name="unpivot_complex"></a>      
 This example uses UNPIVOT against the pivoted results created from [Complex PIVOT Example](#pivot_complex) above.
-```
+```sql
 @pivotedResults =
      EXTRACT VendorID int,
             Emp1 int,
@@ -336,7 +336,7 @@ USING Outputters.Tsv(outputHeader:true, quoting: false);
 
 **Additional UNPIVOT Example**  
 This example uses UNPIVOT against the pivoted results created from [Additional PIVOT Example](#addl_exmple) above.
-```
+```sql
 @data =
   EXTRACT
     Musician string,
@@ -387,7 +387,7 @@ USING Outputters.Tsv(outputHeader:true, nullEscape:"#null#");
 
 **UNPIVOT and NULL handling**  
 Compare the output from the two queries below:
-```
+```sql
 @data = 
   SELECT * FROM (VALUES
                  ("Band1", "Musician1", "Instrument1", (int?)1,    (int?)null  ),

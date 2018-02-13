@@ -39,12 +39,12 @@ Truncate_Table_Statement :=
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following statement truncates the data in the table `SampleTable` in the database `TestReferenceDB`’s default schema `dbo`:  
-```  
+```sql  
 TRUNCATE TABLE TestReferenceDB..SampleTable;  
 ```  
   
 The following statement truncates the data in the partition bucket with the value `5` in the vertically partitioned table `SampleTable` in the current database and schema context:  
-```  
+```sql  
 DECLARE @p int = 5;  
 TRUNCATE TABLE SampleTable PARTITION (@p);  
 ```  

@@ -171,7 +171,7 @@ New-AzureRmDataLakeAnalyticsCatalogCredential -AccountName "<adla_account>" -Dat
 ```
 
 **Create Data Source - AZURESQLDB**   
-```U-SQL
+```sql
 USE DATABASE TestReferenceDB;
 
 CREATE DATA SOURCE MyAzureSQLDBDataSource
@@ -185,7 +185,7 @@ WITH
 ``` 
 
 **Create Data Source - AZURESQLDW**   
-```U-SQL
+```sql
 USE DATABASE TestReferenceDB;
 
 CREATE DATA SOURCE IF NOT EXISTS MyAzureSQLDWDataSource
@@ -199,7 +199,7 @@ WITH
 ```
 
 **Create Data Source - SQLSERVER**   
-```U-SQL
+```sql
 USE DATABASE TestReferenceDB;
 DROP DATA SOURCE IF EXISTS MySQLServerDataSource;
 
@@ -214,7 +214,7 @@ WITH
 ```
 
 **Query Data Source - Method 1**   
-```
+```sql
 USE DATABASE TestReferenceDB;
 
 @results =
@@ -248,7 +248,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **Query Data Source - Method 2**   
-```
+```sql
 USE DATABASE TestReferenceDB;
 
 @results =

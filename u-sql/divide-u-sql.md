@@ -37,7 +37,7 @@ Returns the data type of the argument with the higher precedence.  If an integer
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 **Divide with Numeric Types**  
-```
+```sql
 @data = 
     SELECT * FROM 
         ( VALUES
