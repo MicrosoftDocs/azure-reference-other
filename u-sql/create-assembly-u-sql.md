@@ -72,7 +72,8 @@ from [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-u
     * `C:\Windows\System32\SqlServerSpatial130.dll`
 
 3. Register assembly
-```
+
+```sql
 DECLARE @ASSEMBLY_PATH string = "/upload/asm/spatial/";
 DECLARE @SPATIAL_ASM string = @ASSEMBLY_PATH+"Microsoft.SqlServer.Types.dll";
 DECLARE @SPATIAL_NATIVEDLL string = @ASSEMBLY_PATH+"SqlServerSpatial130.dll";

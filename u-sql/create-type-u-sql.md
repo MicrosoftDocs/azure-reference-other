@@ -59,7 +59,7 @@ If the optional `IF NOT EXISTS` is specified, then the statement creates the typ
 - Some of the examples below utilize the table `dbo.somePeople` as defined below.  
 
 **Dataset**  
-```
+```sql
 // Create database
 CREATE DATABASE IF NOT EXISTS TestReferenceDB; 
 USE DATABASE TestReferenceDB; 
@@ -100,7 +100,7 @@ USING Outputters.Tsv();
 ```
 
 **Create Type**  
-```
+```sql
 CREATE TYPE IF NOT EXISTS TestReferenceDB.dbo.PhoneType AS TABLE (
     EmpName string, 
     DeptID int,
@@ -110,7 +110,8 @@ CREATE TYPE IF NOT EXISTS TestReferenceDB.dbo.PhoneType AS TABLE (
 
 <a name="function_return">**Table type in a table-valued function as a returned value**</a>   
 This example utilizes the above table type in a table-valued function as a returned value.
-```
+
+```sql
 USE DATABASE TestReferenceDB; 
 
 // Create function utilizing the new type
@@ -138,7 +139,8 @@ USING Outputters.Tsv();
 
 <a name="sproc_pass">**Table type in a stored procedure as a passed value**</a>   
 This example utilizes the above table type in a stored procedure as a passed value.
-```
+
+```sql
 USE DATABASE TestReferenceDB; 
 
 // Create stored procedure utilizing the new type

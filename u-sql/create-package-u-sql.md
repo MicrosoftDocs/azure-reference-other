@@ -100,7 +100,7 @@ Is a constant-foldable expression that returns TRUE or FALSE.
 
 **Basic Syntax**  
 The following example creates a package XMLFiles in an already existing database `TestReferenceDB`. The package exports a variable named `@xmlfile` with the value `/configfiles/config.xml` and deploys that file. The file does not need to exist during creation of the package, but it will have to exist at the time the import of the package occurs into the main script.
-```
+```sql
 USE DATABASE TestReferenceDB;
 DROP PACKAGE IF EXISTS XMLFiles;
 
@@ -113,7 +113,7 @@ END;
 
 **Parameterized package**   
 A parameterized package, `XMLorJSON`, is created in the same database that - based on the passed parameter - bundles the previously created custom assembly `Microsoft.Analytics.Samples.Formats` from the database `JSONBlog` with a different assembly (`NewtonSoft.Json` from the database `JSONBlog` if the parameter is `json` or the system assembly `System.Xml` if the parameter is `xml`) and a `@format` variable, that is set to different values depending on the parameter. It also imports the previously defined package `XMLFiles` with the alias `xmlpack` and re-exports its `@xmlfile` variable if the parameter is set to `xml`.
-```
+```sql
 DROP PACKAGE IF EXISTS TestReferenceDB.dbo.XMLorJSON;
 
 CREATE PACKAGE TestReferenceDB.dbo.XMLorJSON(@requestedFormat string = "json")

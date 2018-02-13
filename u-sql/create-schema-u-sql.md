@@ -35,11 +35,11 @@ Create_Schema_Statement :=
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following script shows how a user creates a schema called `My Schema`. Note that because of the space in the name, the identifier has to be quoted:  
-```
+```sql
 CREATE SCHEMA [My Schema];
 ```
 If the user wants to create a schema in another database than the current database context, then the database context has to be changed explicitly. In the following example, a new database `TestReferenceDB` gets created that contains a new schema called `NewSchema` in addition to the automatically created `dbo` schema:  
-```
+```sql
 CREATE DATABASE TestReferenceDB;  
 USE DATABASE TestReferenceDB;  
 CREATE SCHEMA NewSchema;
