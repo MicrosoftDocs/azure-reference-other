@@ -68,7 +68,7 @@ Order_By_Clause :=
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
 
 **Dataset**   
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -91,7 +91,7 @@ Order_By_Clause :=
 
 **SELECT & ORDER BY using FETCH only**   
 Returns first five records. 
-```
+```sql
 @result =
     SELECT *
     FROM @employees
@@ -105,7 +105,7 @@ USING Outputters.Csv();
 
 **SELECT & ORDER BY using OFFSET and FETCH**   
 Skip first two records, then return next five records.
-```
+```sql
 @result =
     SELECT *
     FROM @employees
@@ -120,7 +120,7 @@ USING Outputters.Csv();
 
 **SELECT & ORDER BY using OFFSET only**   
 Skip first two records, then return remainder.
-```
+```sql
 @result =
     SELECT *
     FROM @employees
@@ -133,7 +133,7 @@ USING Outputters.Csv();
 ```
 
 **OUTPUT & ORDER BY**   
-```
+```sql
 OUTPUT @employees
 TO "/Output/ReferenceGuide/PrimaryRowsetExpressions/Select/OrderBy/exampleD.txt"
 ORDER BY EmpID ASC
@@ -143,7 +143,7 @@ USING Outputters.Csv();
 ```
 
 **SELECT and OUTPUT using ORDER BY**   
-```
+```sql
 // Order by EmpID ASC and select all but first two records
 @result =
     SELECT *

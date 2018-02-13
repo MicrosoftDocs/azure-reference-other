@@ -23,7 +23,7 @@ The Tsv() outputter disallows the `delimiter` parameter and defaults the field d
 
 **Basic Syntax**   
 The examples below show the basic syntax for each parameter using the Tsv() outputter.  Compare the output against the dataset as well as against the other created data files.
-```
+```sql
 @sampleData = 
     SELECT * FROM 
         ( VALUES

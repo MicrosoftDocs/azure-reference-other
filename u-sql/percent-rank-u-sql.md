@@ -40,26 +40,26 @@ This analytic function can be used in a [windowing expression](over-expression-u
 - The example can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The script can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The example below is based on the dataset defined below.  Ensure your execution includes the rowset variable.
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 20000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Amy",    "Engineering", 100, 35000),
-        (5, "Emma",   "HR",          200, 8000),
-        (6, "Jacob",  "HR",          200, 8000),
-        (7, "Olivia", "HR",          200, 8000),
-        (8, "Mason",  "Executive",   300, 50000),
-        (9, "Ava",    "Marketing",   400, 15000),
-        (10, "Ethan", "Marketing",   400, 9000) 
-        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+    ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 20000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Amy",    "Engineering", 100, 35000),
+            (5, "Emma",   "HR",          200, 8000),
+            (6, "Jacob",  "HR",          200, 8000),
+            (7, "Olivia", "HR",          200, 8000),
+            (8, "Mason",  "Executive",   300, 50000),
+            (9, "Ava",    "Marketing",   400, 15000),
+            (10, "Ethan", "Marketing",   400, 9000) 
+            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+    ```
 
 **Using PERCENT_RANK**   
 The `PERCENT_RANK` function computes the rank of the employee's salary within a department as a percentage.  The [PARTITION BY](over-expression-u-sql.md#OPBC) clause is specified to partition the rows in the result set by department.  The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) clause orders the rows in each partition. 
-```
+```sql
 @result =
     SELECT *,
            PERCENT_RANK() OVER(PARTITION BY DeptID ORDER BY Salary) AS PercentRank
