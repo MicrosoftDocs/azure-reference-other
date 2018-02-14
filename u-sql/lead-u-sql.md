@@ -43,8 +43,9 @@ This analytic function can be used in a [windowing expression](over-expression-u
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.
-    ```sql
+- The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
+
+   ```sql
     @storeSales =
         SELECT * FROM 
             ( VALUES
@@ -61,7 +62,7 @@ This analytic function can be used in a [windowing expression](over-expression-u
             (4, "NW", 2016, 375),
             (5, "SW", 2016, 700)
             ) AS T(StoreID, Region, Year, Sales);
-    ```
+   ```
 
 **A.    Compare values between years**   
 The following example uses the `LEAD` function to return the difference in sales for a specific store over previous years.  Notice that because there is no lead value available for the first row, the default of zero (0) is returned.
