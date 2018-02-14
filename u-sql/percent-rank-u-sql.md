@@ -39,8 +39,9 @@ This analytic function can be used in a [windowing expression](over-expression-u
 ### Example
 - The example can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The script can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The example below is based on the dataset defined below.  Ensure your execution includes the rowset variable.
-    ```sql
+- The example below is based on the dataset defined below.  Ensure your execution includes the rowset variable.  
+
+   ```sql
     @employees = 
         SELECT * FROM 
             ( VALUES
@@ -55,7 +56,7 @@ This analytic function can be used in a [windowing expression](over-expression-u
             (9, "Ava",    "Marketing",   400, 15000),
             (10, "Ethan", "Marketing",   400, 9000) 
             ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-    ```
+   ```
 
 **Using PERCENT_RANK**   
 The `PERCENT_RANK` function computes the rank of the employee's salary within a department as a percentage.  The [PARTITION BY](over-expression-u-sql.md#OPBC) clause is specified to partition the rows in the result set by department.  The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) clause orders the rows in each partition. 

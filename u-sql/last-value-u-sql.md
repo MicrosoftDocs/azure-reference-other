@@ -39,8 +39,9 @@ This analytic function can be used in a [windowing expression](over-expression-u
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.
-    ```sql
+- The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
+
+   ```sql
     @employees = 
         SELECT * FROM 
             ( VALUES
@@ -55,7 +56,7 @@ This analytic function can be used in a [windowing expression](over-expression-u
             (9, "Ava",    "Marketing",   400, 15000),
             (10, "Ethan", "Marketing",   400, 9000) 
             ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-    ```
+   ```
 
 **A.    Using LAST_VALUE**   
 The following example uses `LAST_VALUE` to return the name of the employee that is the lowest paid for a given department.

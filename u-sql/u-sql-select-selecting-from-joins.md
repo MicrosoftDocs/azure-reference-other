@@ -103,7 +103,8 @@ There are however ways to still apply other join predicates. If one has a non-eq
 - The examples are designed for execution in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-    ```sql
+
+   ```sql
     @employees = 
         SELECT * FROM 
             ( VALUES
@@ -122,7 +123,7 @@ There are however ways to still apply other join predicates. If one has a non-eq
             (13, "Andrew", 100, (int?)null, new DateTime(1995,07,16)),
             (14, "Jennie", 100, (int?)34000, new DateTime(2000,02,12))
             ) AS T(EmpID, EmpName, DeptID, Salary, StartDate);
-    ```
+   ```
 
 **A.    How to write U-SQL joins with equality and in-equality comparisons**  
 The query first identifies a subset of data, `DeptID` and `DeptMaxSalary`, and stores it in a new rowset variable.  Then both rowset variables are joined on `DeptID` to identify all employees that have a salary that is lower than the highest salary in his/her dept.

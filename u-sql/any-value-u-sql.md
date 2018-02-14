@@ -37,7 +37,8 @@ This aggregator cannot be used in a [windowing expression](over-expression-u-sql
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-       ```sql
+
+   ```sql
        @employees = 
         SELECT * FROM ( VALUES
             (1, "Noah",   "Engineering", 100, 10000),
@@ -50,7 +51,7 @@ This aggregator cannot be used in a [windowing expression](over-expression-u-sql
             (8, "Ava",    "Marketing",   400, 15000),
             (9, "Ethan",  "Marketing",   400, 10000) )
         AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-       ```
+   ```
 
 **A.  Single arbitrary value**  
 The following query selects a single arbitrary `EmpName`. 
