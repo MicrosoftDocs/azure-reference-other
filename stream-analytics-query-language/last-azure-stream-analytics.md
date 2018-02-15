@@ -22,7 +22,7 @@ ms.author: sngun
   
 In Stream Analytics, the scope of LAST (that is, how far back in history from the current event it needs to look) is always limited to a finite time interval, using the LIMIT DURATION clause. LAST can optionally be limited to only consider events that match the current event on a certain property or condition using the PARTITION BY and WHEN clauses. LAST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
   
- **Remark:** LAST(\<expression>, \<default>) is equivalent of LAG(\<expression>, 0, \<default>) and is introduced for convenience and better readability.  
+ **Remark:** LAST(\<expression>, \<default>) is  equivalent of LAG(\<expression>, 0, \<default>) (that is offset value set to ‘0’). Note that LAG(\<expression>, 0, \<default>) is actually not a valid construct since LAG takes an offset greater or equal to 1. So, you must use LAST operator instead, which was introduced for convenience and better readability.
   
  **Syntax**  
   
