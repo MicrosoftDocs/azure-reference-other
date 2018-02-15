@@ -29,7 +29,7 @@ The ANOMALYDETECTION operator detects three types of anomalies:
 
 * **Slow Negative Trend**: A slow decrease in the trend over time.  
 
-When using the ANOMALYDETECTION operator, you must specify the **Limit Duration** clause. This clause specifies the time interval (how far back in history from the current event) should be considered when detecting anomalies. This operator can optionally be limited to only events that match a certain property or condition by using the **When** clause. This operator can also optionally process groups of events separately based on the key specified in the **Partition by** clause. Training and prediction occur independently for each partition. 
+When using the ANOMALYDETECTION operator, you must specify the **Limit Duration** clause. This clause specifies the time interval (how far back in history from the current event) should be considered when detecting anomalies. This operator can optionally be limited to only events that match a certain property or condition by using the **When** clause. This operator can also optionally process groups of events separately based on the key specified in the **Partition by** clause. Training and prediction occur independently for each partition. To learn about training models and scoring events by using ANOMALYDETECTION operator, refer to the [anomaly detection algorithm](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection) article. 
 
 ## Syntax for ANOMALYDETECTION operator
 
