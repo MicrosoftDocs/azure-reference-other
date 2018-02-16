@@ -81,7 +81,7 @@ To see examples of updated clustering models, see these experiments:
   
 - [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses clustering with text extracted from Wikipedia description to find companies in predefined categories.  
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 -   If any column names are duplicated when the new column is appended to the dataset, a numeric suffix is added to the name of the new column.  
 

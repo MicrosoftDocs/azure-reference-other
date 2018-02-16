@@ -130,7 +130,7 @@ For examples of how this learning algorithm is used, see these sample experiment
 - [Deep Neural networks example (part C)](http://go.microsoft.com/fwlink/?LinkId=525280)  
 - [Deep Neural networks example (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

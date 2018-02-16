@@ -78,7 +78,7 @@ For examples of how ordinal regression is used in machine learning, see the [Azu
 
 - [Predictive Maintenance - Step C](https://gallery.cortanaintelligence.com/Experiment/68b4a27dc53d426e902025e77a393702?r=legacy): In this sample, **Ordinal Regression** is used to rank values output by a classification model, on the assumption that the value reflects the severity of the failure classification.
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 The ordinal regression algorithm used in this learner is implemented by extended binary classification, as described by the paper titled *Ordinal Regression by Extended Binary Classification*, by Ling Li and Hsuan-Tien Lin, in NIPS 2006.
 

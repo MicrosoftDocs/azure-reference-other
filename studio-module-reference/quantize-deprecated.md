@@ -43,7 +43,7 @@ This module is deprecated. For up-to-date information about quantization, see [G
 
 - Input columns must be numeric, and for quantile binning there must be a sufficient range of data points to determine the quantiles. Otherwise an error or NaN result may occur.
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 The bin indices are 1-based. This is the natural convention for quantiles (1st quantile, 2nd quantile, and so on). The only exception is the case when the column to bin is sparse.
 

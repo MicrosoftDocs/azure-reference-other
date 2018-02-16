@@ -124,7 +124,7 @@ For example, the following table shows the results when using a **MagnitudeLessT
 |5.75|5|5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
 |-5.75|*-5*|-5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

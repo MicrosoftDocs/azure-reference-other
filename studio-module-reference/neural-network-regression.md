@@ -190,7 +190,7 @@ The experiments provide more help on Net#. The experiments are related and progr
 + [Deep Neural networks example (part C)](http://go.microsoft.com/fwlink/?LinkId=525280)  
 + [Deep Neural networks example (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
 
-##  <a name="bkmk_Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

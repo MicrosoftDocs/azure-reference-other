@@ -498,7 +498,7 @@ To calculate, select **Weibull**, and set the following options:
     
      The value must be a number (`double`). The default is 1.0.  
   
-##  <a name="Notes"></a> Technical notes  
+##  <a name="bkmk_Notes"></a> Technical notes  
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

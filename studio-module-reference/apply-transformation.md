@@ -63,7 +63,7 @@ To see how this module is used in machine learning, see the [Azure AI Gallery](h
   
 - [Learning with Counts](https://gallery.cortanaintelligence.com/Experiment/47deb75fc7bb428194e9d0d5713350c8): Uses **Apply Transformation** to reuse a count table.  
 
-##  <a name="Notes"></a> Technical notes  
+##  Technical notes  
 
 The **Apply Transformation** module can take as input the output of any module that creates an [ITransform interface](itransform-interface.md). These modules include:  
   

@@ -69,7 +69,7 @@ See these sample experiments in the [Azure AI Gallery](https://gallery.cortanain
   
 -  [Using the Permutation Feature Importance module](https://gallery.cortanaintelligence.com/Experiment/4802f138edcb4582a877018460edd943): Illustrates the usage of this module in a web service.
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section provides implementation details, tips, and answers to frequently asked questions.
 

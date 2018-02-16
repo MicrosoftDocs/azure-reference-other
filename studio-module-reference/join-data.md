@@ -80,7 +80,7 @@ You can see examples of how this module is used in the [Azure AI Gallery](https:
   
 - [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): In this sample, [Join Data](join-data.md) is used to bring in new features.  
 
-##  <a name="Notes"></a> Technical notes  
+##  Technical notes  
 
 This section describes implementation details, and answers to some frequently asked questions.
 
