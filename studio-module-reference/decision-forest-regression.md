@@ -110,7 +110,7 @@ For examples of regression models, see these sample experiments in the [Cortana 
 
 - [Sentiment analysis sample](http://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

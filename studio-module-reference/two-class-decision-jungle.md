@@ -104,7 +104,7 @@ For examples of how decision jungles are used in machine learning, see the [Azur
   
 - [Compare Binary Classifiers](https://gallery.azureml.net/Experiment/b2bfde196e604c0aa2f7cba916fc45c8): Uses several algorithms and discusses their pros and cons.  
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

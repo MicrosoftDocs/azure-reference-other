@@ -73,7 +73,7 @@ To do this, add a [Split Data](split-data.md) module, and set the **Fraction of 
 
 To divide the second output into equal parts, add another instance of the **Split Data** module, and this time use the default for a 50-50 split.
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

@@ -121,7 +121,7 @@ For more information about the training process with the **Replicate** option, s
 
 +  [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013.](http://research.microsoft.com/projects/decisionforests/)
 
-### Tips
+### <a name="tips"></a> How to Configure a Multiclass Decision Forest Model
 
 You can change the way the module is configured to accommodate scenarios such as too little data, or limited time for training.
 

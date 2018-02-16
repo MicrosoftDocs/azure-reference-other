@@ -70,7 +70,7 @@ For examples of how the [Split Data](split-data.md) module is used, see the [Azu
 
 - [Cross Validation for Binary Classification: Adult Dataset](http://go.microsoft.com/fwlink/?LinkId=525734): A 20% sampling rate is applied to create a smaller randomly sampled dataset. (The original census dataset had over 30,000 rows; the training dataset has around 6500). The dataset is cleaned for missing values and then passed to five different models for training and cross-validation.
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 The following requirements apply to all uses of [Split Data](split-data.md):  
 
