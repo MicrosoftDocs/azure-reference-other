@@ -48,14 +48,11 @@ In addition to these modules, you might find the following related tools useful 
   
 ##  <a name="modules"></a> List of modules  
 
-The following table lists the modules in this category:  
-  
-|Module|Description|  
-|------------|-----------------|  
-|[Clip Values](clip-values.md)|Detects outliers and clips or replaces their values|  
-|[Group Data into Bins](group-data-into-bins.md)|Puts numerical data into bins|  
-|[Normalize Data](normalize-data.md)|Rescales numeric data to constrain dataset values to a standard range|  
-|[Principal Component Analysis](principal-component-analysis.md)|Computes a set of features with reduced dimensionality for more efficient learning|  
+This category includes the following modules:  
+- [Clip Values](clip-values.md): Detects outliers and clips or replaces their values  
+- [Group Data into Bins](group-data-into-bins.md): Puts numerical data into bins  
+- [Normalize Data](normalize-data.md): Rescales numeric data to constrain dataset values to a standard range  
+- [Principal Component Analysis](principal-component-analysis.md): Computes a set of features with reduced dimensionality for more efficient learning  
 
 ## See also  
  [Module Categories and Descriptions](machine-learning-module-descriptions.md)   
