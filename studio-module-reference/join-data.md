@@ -80,7 +80,7 @@ You can see examples of how this module is used in the [Azure AI Gallery](https:
   
 - [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): In this sample, [Join Data](join-data.md) is used to bring in new features.  
 
-##  <a name="Notes"></a> Technical notes  
+##  Technical notes  
 
 This section describes implementation details, and answers to some frequently asked questions.
 
@@ -115,14 +115,14 @@ If your dataset has no key column, you can still combine it with another dataset
 
 The **Add Columns** module behaves like R, and can merge two datasets on a row-by-row basis, if the datasets have the same number of rows. An error is raised if the datasets are of a different size.
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset1|[Data Table](data-table.md)|First dataset to join|  
 |Dataset2|[Data Table](data-table.md)|Second dataset to join|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -132,13 +132,13 @@ The **Add Columns** module behaves like R, and can merge two datasets on a row-b
 |Join type|List|Type|Inner join|Choose a join type.|  
 |Keep right key columns in joined table|Any|Boolean|True|Indicate whether to keep key columns from the second dataset in the joined dataset.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Result of join operation|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  
