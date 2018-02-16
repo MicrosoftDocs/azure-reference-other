@@ -143,7 +143,7 @@ For examples of how quantization is applied in machine learning scenarios, see t
 + [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Uses quantile normalization to sort cases into 10 bins.
 + [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Scores are grouped into five bins representing the ranking scores.
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

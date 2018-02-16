@@ -69,7 +69,7 @@ To see how the Two-Class Bayes Point Machine is used in machine learning, see th
   
 -  [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
 
-##  <a name="Notes"></a>  Technical notes
+##   Technical notes
 
 This section contains implementation details and frequently asked questions about this algorithm.
 

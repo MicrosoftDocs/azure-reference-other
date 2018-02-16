@@ -56,7 +56,7 @@ For examples of how filters are used in machine learning, see the [Azure AI Gall
   
 - [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types, using an engineered waveform dataset.
 
-##  <a name="Notes"></a> Technical notes  
+##  Technical notes  
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

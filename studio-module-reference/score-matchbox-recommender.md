@@ -317,7 +317,7 @@ The scored dataset returned by **Score Matchbox Recommender** lists the related 
 
     The related items are ordered by the strength of the relation to the target item, with the most strongly related item in the column, **Related Item 1**.  
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains answers to some common questions about using the recommender to create predictions.  
 

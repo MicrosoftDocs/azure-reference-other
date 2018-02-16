@@ -72,11 +72,11 @@ The modules in this category are organized by the type of machine learning algor
 
 ### Related tasks
 
-In addition to the traditional machine learnign algorithm categoris described above, the following modules provide specialized types of learning from data or preprocessing:
+In addition to the traditional machine learning algorithm categories described above, the following modules provide specialized types of learning from data or preprocessing:
 
-[Text analysis](text-analytics.md)
-[Image classification](pretrained-cascade-image-classification.md)
-[Time series analysis](time-series.md)
+- [Text analysis](text-analytics.md)
+- [Image classification](pretrained-cascade-image-classification.md)
+- [Time series analysis](time-series.md)
 
 ## See also
  [Module Categories and Descriptions](machine-learning-module-descriptions.md)   
