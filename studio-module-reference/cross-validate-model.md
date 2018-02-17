@@ -115,7 +115,7 @@ You might get different results if you use the input on the [Tune Model Hyperpar
 > 
 > That is because when you use this option, you are in effect specifying a static training dataset and testing dataset. Hence, the cross-validation process also uses the specified training and testing datasets, rather than splitting the data into *n* groups for training and testing. However, metrics are generated on an *n*-fold basis.
 
-## Results
+## <a name="Results"></a> Results
 
 After all iterations are complete, **Cross-Validate Model** creates scores for the entire dataset, as well as performance metrics you can use to assess the quality of the model.
  
@@ -152,7 +152,7 @@ Additionally, the following metrics are included for each fold, depending on the
 
 + **Regression models**: Negative log likelihood, mean absolute error, root mean squared error, relative absolute error, and coefficient of determination
  
-##  <a name="bkmk_Examples"></a> Examples  
+##  Examples  
 
 For examples of how cross-validation is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   

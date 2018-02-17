@@ -90,7 +90,7 @@ Each instance of this module can perform only one type of operation at a time. T
 
 2. Connect a dataset that contains at least one numeric column.  
   
-3.  Click **Category** to select the [**type**](#bkmk_TypeOperations) of math operation to perform.
+3.  Click **Category** to select the **type** of math operation to perform.
 
     For example, to do basic arithmetic on columns, choose **Operations**. To get a logarithm or a ceiling, choose **Basic**. To compare columns of values, use **Comparison**. 
     

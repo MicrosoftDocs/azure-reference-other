@@ -86,7 +86,7 @@ The Vowpal Wabbit data format has the advantage that it does not require a colum
   
      For example, you might add *`–l`* to specify the learning rate, or *`-b`* to indicate the number of hashing bits.  
   
-     For more information, see the [parameters](#bkmk_Options) section.  
+     For more information, see the [parameters](#parameters) section.  
   
 6.   **Name of the input VW file**: Type the name of the file that contains the input data. The file must be an existing file in Azure blob storage, located in the previously specified storage account and container. The file must have been prepared using one of the supported formats.  
   
@@ -189,7 +189,7 @@ Because the goal of the service is to support experienced users of Vowpal Wabbit
 
 Rather than using data in the Azure ML workspace, the training data is directly streamed from Azure, for maximal performance and minimal parsing overhead. For this reason, there is only limited interoperability between the VW modules and other modules in Azure ML.  
   
-##  Module parameters  
+##  <a name="parameters"></a>Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
