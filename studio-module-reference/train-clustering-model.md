@@ -70,28 +70,28 @@ For an example of how clustering is used in machine learning, see the [Azure AI 
   
 - [Clustering: Group iris data](http://go.microsoft.com/fwlink/?LinkId=526317): Provides a simple example of clustering based on the iris dataset.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ICluster interface](icluster-interface.md)|Untrained clustering model|  
 |Dataset|[Data Table](data-table.md)|Input data source|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Column Set|any|ColumnSelection||Column selection pattern|  
 |Check for Append or Uncheck for Result Only|any|Boolean|true|Whether output dataset must contain input dataset appended by assignments column (Checked) or assignments column only (Unchecked)|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ICluster interface](icluster-interface.md)|Trained clustering model|  
 |Results dataset|[Data Table](data-table.md)|Input dataset appended by data column of assignments or assignments column only|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  

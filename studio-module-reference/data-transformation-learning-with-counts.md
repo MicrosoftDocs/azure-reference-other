@@ -102,7 +102,7 @@ If the prior coefficient is positive, the log odds can be different from `Log(co
 
 By default, all items with a count less than 10 are collected in a single bucket called the "garbage bin". You can change this behavior value  by using the **Garbage bin threshold** option in the [Modify Count Table Parameters](modify-count-table-parameters.md) module.
 
-##  <a name="modules"></a> List of modules
+##  List of modules
 
 The **Learning with Counts** category includes the following modules:
 

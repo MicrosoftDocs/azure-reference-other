@@ -46,7 +46,7 @@ In addition to these modules, you might find the following related tools useful 
   
 - Filtering and transforming digital signals and waveforms: [Filter](data-transformation-filter.md)  
   
-##  <a name="modules"></a> List of modules  
+##  List of modules  
 
 The following table lists the modules in this category:  
   

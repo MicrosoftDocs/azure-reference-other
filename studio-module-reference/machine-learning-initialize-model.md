@@ -61,7 +61,7 @@ Azure Machine Learning provides many different state-of-the art machine learning
   
     You can use the modules for [model evaluation](machine-learning-evaluate.md) section to measure the accuracy of the model, based on the scores you’ve generated.
   
-##  <a name="bkmk_categories"></a>  List of modules
+##   List of modules
 
 The modules in this category are organized by the type of machine learning algorithm encapsulated by the modules. For each type of algorithm, you typically requires a different type of data.
 

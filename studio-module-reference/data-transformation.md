@@ -35,7 +35,7 @@ Modules for data transformation are grouped into the following task-based catego
   
 -   [Scaling and reducing data](data-transformation-scale-and-reduce.md): Prepare numerical data for analysis by applying normalization or by scaling. Bin data into groups, remove or replace outliers. perform principal component analysis (PCA).  
   
-##  <a name="categories"></a> List of modules  
+##  List of modules  
 
 The following module categories are included under **Data Transformation**. 
   
