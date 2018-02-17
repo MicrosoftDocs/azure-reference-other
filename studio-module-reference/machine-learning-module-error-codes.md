@@ -28,7 +28,7 @@ To resolve the issue, click the error name in the following table and read about
   
  If the error message text is not helpful, please send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the Azure Machine Learning forum and post a question.  
   
-##  Exceptions list  
+##  <a name="errors"></a> Exceptions list  
   
 |Exception|Description|  
 |---------------|-----------------|  
