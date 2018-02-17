@@ -84,7 +84,7 @@ When complete, click the output dataset and select **Visualize** to see if the d
 
 If you get errors, check your data for missing values, additional empty columns, or incompatible data types.
 
-## <a name="Examples"></a> Examples  
+## Examples  
 
 For examples of how to configure an HDInsight cluster and use Hive queries in machine learning experiments, see these resources:
 
@@ -100,7 +100,7 @@ Although Hive offers superior features for many kinds of data clean-up and pre-p
 
 - Combine multiple tables from different sources into a single table of training data. For examples, see [Predictive maintenance](https://gallery.azureml.net/Experiment/df7c518dcba7407fb855377339d6589f).
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

@@ -19,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Feature Selection Modules](feature-selection-modules.md)  
   
-##  <a name="Remarks"></a> Module overview  
+##  Module overview  
 
 This article describes how to use the [Filter Based Feature Selection](filter-based-feature-selection.md) module in Azure Machine Learning Studio, to identify the columns in your input dataset that have the greatest predictive power. 
 
@@ -252,13 +252,13 @@ To give you an idea of how the scores compare when using different metrics, the 
 
 + The count-based method does not treat a label column any differently from feature columns.    
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -268,14 +268,14 @@ To give you an idea of how the scores compare when using different metrics, the 
 |Number of desired features|>=1|Integer|1|Specify the number of features to output in results|  
 |Minimum number of non-zero elements|>=1|Integer|1|Specify the number of features to output (for CountBased method)|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Filtered dataset|[Data Table](data-table.md)|Filtered dataset|  
 |Features|[Data Table](data-table.md)|Names of output columns and feature selection scores|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
   
 |Exception|Description|  
 |---------------|-----------------|  

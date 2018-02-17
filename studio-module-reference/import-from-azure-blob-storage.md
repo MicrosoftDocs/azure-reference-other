@@ -124,7 +124,7 @@ The following steps describe how to manually configure the import source.
 
 10. Run the experiment.
 
-## <a name="Examples"></a> Examples
+## Examples
 
 To learn how to use data from Azure blob storage in machine learning experiments, see the [Azure Gallery](https://gallery.cortanaintelligence.com):
 
@@ -253,7 +253,7 @@ Processing and cleaning unstructured text to fit neatly in columns is always a c
 
 We recommend that you review the [Text Classification template](https://gallery.cortanaintelligence.com/Collection/Text-Classification-Template-1), in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/), to see an example of text ingestion and processing in Azure Machine Learning Studio.
 
-###  <a name="CustomEncoding"></a> Custom encoding for CSV files  
+###  Custom encoding for CSV files  
 
 Early versions of the **Import Data** module did not support some kinds of valid CSV files. For example, data exported from Excel sometimes contained characters that prevented the file from parsing correctly.
 
@@ -270,7 +270,7 @@ You can use the following character encodings:
 > [!TIP]
 > After the CSV import is complete, we recommend that you save imported files as a dataset to ensure that the imported data uses the UTF-8 encoding in your experiment.
 
-### <a name="DataTypeInference"></a> Data type inference in CSV and TSV formats
+### Data type inference in CSV and TSV formats
 
 When the **Import Data** module loads data from a CSV or TSV file in Azure blob storage, a type guesser looks for categorical or numerical data in the source file, and represents the discovered type in the metadata for the new dataset.  
 

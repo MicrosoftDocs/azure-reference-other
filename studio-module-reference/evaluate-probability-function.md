@@ -98,7 +98,7 @@ If you are not sure which probability distribution is likely to suit your data, 
 
 The [Evaluate Probability Function](evaluate-probability-function.md) module supports the following distributions:  
   
-###  <a name="bkmk_Bernoulli"></a> Bernoulli  
+###  Bernoulli  
 
 The Bernoulli distribution is a distribution over binary values: in other words, it models the expected distribution when only two values are possible. 
   
@@ -107,7 +107,7 @@ To calculate, select **Bernoulli**, and set the following options:
 - **Probability of success**  
      The parameter _p_ specifies the probability that a 1 is generated.  Type a number (`float`) between 0.0 and 1.0 that specifies the probability of success. The default is .5.
   
-###  <a name="bkmk_Beta"></a> Beta  
+###  Beta  
 
 The Beta distribution is a continuous univariate distribution.  
   
@@ -133,7 +133,7 @@ To calculate, select **Beta**, and set the following options:
 - **Lower bound**  
      Type a number (`double`) that represents the lower bound of the distribution. The default is 0.0.  
   
-###  <a name="bkmk_Binomial"></a> Binomial  
+###  Binomial  
 
 The binomial distribution is a discrete univariate distribution. The binomial distribution is used to model the number of successes in a sample. Replacement is used when sampling. For sampling without replacement, use the [Hypergeometric distribution](#bkmk_Hypergeometric). 
 
@@ -147,7 +147,7 @@ To calculate, select **Binomial**, and set the following options:
   
      Use an `integer`, with a minimum value of 1. The default is 3.  
   
-###  <a name="bkmk_Cauchy"></a> Cauchy  
+###  Cauchy  
 
 The Cauchy distribution is a symmetric continuous probability distribution.  
   
@@ -160,7 +160,7 @@ To calculate, select **Cauchy**, and set the following options:
   
      The default is 0.0.  
   
-###  <a name="bkmk_ChiSquare"></a> ChiSquare  
+###  ChiSquare  
 
 The chi-square distribution is a sum of the squares of k independent, standard, normal, random variables.
   
@@ -169,7 +169,7 @@ To calculate, select **ChiSquare**, and set the following options:
  - **Number of degrees of freedom** 
      Type a number (`double`) to specify the degrees of freedom. The default is 1.0.  
   
-###  <a name="bkmk_ChiSquareRightTailed"></a> ChiSquareRightTailed  
+###  ChiSquareRightTailed  
 
 This option provides a right-tailed chi-squared distribution.
 
@@ -178,7 +178,7 @@ To calculate, select **ChiSquareRightTailed**, and set the following options:
  - **Number of degrees of freedom**  
      Type a number (`double`) to specify the degrees of freedom. The default is 1.0.  
   
-###  <a name="bkmk_Exponential"></a> Exponential  
+###  Exponential  
 
 The exponential distribution is a distribution over the real numbers parameterized by one non-negative parameter.  
   
@@ -187,7 +187,7 @@ To calculate, select **Exponential**, and set the following options:
  - **Lambda**  
      Type a number (`double`) to use as the lambda parameter. The default is 1.0.  
   
-###  <a name="bkmk_FFisher"></a> FFisher  
+###  FFisher  
 
 Generates the probability of the Fisher statistic for a sample, also known as the Fisher F-distribution. This distribution is two-tailed.  
   
@@ -199,7 +199,7 @@ To calculate, select **FFisher**, and set the following options:
 - **Denominator degrees of freedom**  
  Type a number (`double`) to specify the degrees of freedom that is used in the denominator. The default is 6.0.
   
-###  <a name="bkmk_FFisherRightTailed"></a> FFisherRightTailed  
+###  FFisherRightTailed  
  
 Creates a right-tailed Fisher distribution. The Fisher distribution is also known as the Fisher F-distribution, Snedecor distribution, or Fisher-Snedecor distribution. This particular form of the distribution is right-tailed.  
   
@@ -211,7 +211,7 @@ To calculate, select **FFisherRightTailed**, and set the following options:
 - **Denominator degrees of freedom**  
      Type a number (`double`) to specify the degrees of freedom that is used in the denominator. The default is 6.0.  
   
-###  <a name="bkmk_Gamma"></a> Gamma  
+###  Gamma  
 
 The gamma distribution is a family of continuous probability distributions with two parameters. For example, chi-squared is a special case of the gamma distribution.  
   
@@ -231,7 +231,7 @@ To calculate, select **Gamma**, and set the following options:
   
      The default is 0.0.  
   
-###  <a name="bkmk_GeneralizedExtremeValues"></a> GeneralizedExtremeValues  
+###  GeneralizedExtremeValues  
 
 Creates a distribution developed to handle extreme values. The generalized extreme value (GEV) distribution is actually a group of continuous probability distributions that combines the Gumbel, Fréchet, and Weibull distributions (also known as type I, II, and III extreme value distributions).  
   
@@ -260,7 +260,7 @@ To calculate, select **GeneralizedExtremeValues**, and set the following options
   
     The default is 0.0.  
   
-###  <a name="bkmk_Geometric"></a> Geometric  
+###  Geometric  
 
 The geometric distribution is a distribution over positive integers parameterized by one positive real number.   
   
@@ -272,7 +272,7 @@ To calculate, select **Geometric**, and set the following options:
 > [!NOTE]
 > This implementation of the geometric distribution does not generate zeros.
 
-###  <a name="bkmk_GumbelMax"></a> GumbelMax  
+###  GumbelMax  
 
 The Gumbel distribution is one of several extreme value distributions. The **GumbelMax** option implements the Maximum Extreme Value Type 1 distribution.  
   
@@ -292,7 +292,7 @@ To calculate, select **GumbelMax**, and set the following options:
   
     The default is 0.0.  
   
-###  <a name="bkmk_GumbelMin"></a> GumbelMin  
+###  GumbelMin  
 
 The Gumbel distribution is one of several extreme value distributions. The Gumbel distribution is also referred to as the Smallest Extreme Value (SEV) distribution or the Smallest Extreme Value (Type I) distribution. The **GumbelMin** option implements the Minimum Extreme Value Type 1 distribution.  
   
@@ -327,7 +327,7 @@ To calculate, select **Hypergeometric**, and set the following options:
 - **Population size**  
     Specify the population size to use when estimating the hypergeometric distribution.  
   
-###  <a name="bkmk_Laplace"></a> Laplace  
+###  Laplace  
 
 The Laplace distribution is a distribution over the real numbers, parameterized by a mean and by a scale parameter.  
   
@@ -347,7 +347,7 @@ To calculate, select **Laplace** distribution, and set the following options:
   
     The default is 0.0.  
  
-###  <a name="bkmk_Logistic"></a> Logistic  
+###  Logistic  
 
 The logistic distribution is similar to the normal distribution, but it has no limit on the left side of the distribution. The logistic distribution is used in logistic regression and neural network models and for modeling life sciences data.  
   
@@ -363,7 +363,7 @@ To calculate, select **Logistic**, and set the following options:
 - **Mean**  
     Type a number (`double`)that indicates the estimated mean value of the distribution. The default is 0.0.  
   
-###  <a name="bkmk_Lognormal"></a> Lognormal  
+###  Lognormal  
 
 The lognormal distribution is a continuous univariate distribution.  
   
@@ -375,7 +375,7 @@ To calculate, select **Lognormal**, and set the following options:
 - **Standard deviation**  
     Type a positive number (`double`) that indicates the estimated standard deviation of the distribution. The default is 1.0.  
   
-###  <a name="bkmkNegativeBinomial"></a> NegativeBinomial  
+###  NegativeBinomial  
 
 The negative binomial distribution is a distribution over the natural numbers with two parameters (`r`, `p`). In the special case that `r` is an integer, you can interpret the distribution as the number of tails before the r<sup>th</sup> head when the probability of the head is p.  
   
@@ -387,7 +387,7 @@ To calculate, select **NegativeBinomial**, and set the following options:
 - **Number of success**  
     Type an integer that specifies the value for success. The default is 24.  
   
-###  <a name="bkmk_Normal"></a> Normal
+###  Normal
 
 The normal distribution is also known as the Gaussian distribution.  
   
@@ -399,7 +399,7 @@ To calculate, select **Normal**, and set the following options:
 - **Standard deviation**  
     Type a positive number (`double`) that indicates the estimated standard deviation of the distribution. The default is 1.0.  
   
-###  <a name="bkmk_Pareto"></a> Pareto  
+###  Pareto  
 
 The Pareto distribution is a power-law probability distribution that coincides with social, scientific, geophysical, actuarial, and many other types of observable phenomena.  
   
@@ -417,7 +417,7 @@ To calculate, select **Pareto**, and set the following options:
     
     The value must be a number (`double`). The default is 1.0.  
   
-###  <a name="bkmk_Poisson"></a> Poisson  
+###  Poisson  
 
 In this implementation, Knuth's method is used to generate Poisson distributed random variables. For more information about the Poisson distribution, see [Poisson Regression](poisson-regression.md).  
   
@@ -426,7 +426,7 @@ To calculate, select **Poisson**, and set the following options:
 - **Mean**  
     Type a number (`double`) that indicates the estimated mean value of the distribution. The default is 0.0.  
   
-###  <a name="bkmk_Rayleigh"></a> Rayleigh  
+###  Rayleigh  
 
 The Rayleigh distribution is a continuous probability distribution. As an example of how it arises, the wind speed will have a Rayleigh distribution if the components of the two-dimensional wind velocity vector are uncorrelated and normally distributed with equal variance.
 
@@ -435,13 +435,13 @@ To calculate, select **Rayleigh**, and set the following options:
 - **Lower bound**  
     Type a number (`double`) that represents the lower bound of the distribution. The default is 0.0.  
   
-###  <a name="bkmk_StandardNormal"></a> StandardNormal  
+###  StandardNormal  
 
 This option provides the standard normal distribution, with no other parameters.
 
 To calculate, select **StandardNormal**, and select the columns.  
   
-###  <a name="bkmk_TStudent"></a> TStudent  
+###  TStudent  
 
 This option implements the univariate Student’s t-distribution.  
   
@@ -450,7 +450,7 @@ To calculate, select **TStudent**, and set the following options:
 - **Number of degrees of freedom**  
     Type a number (`double`) to specify the degrees of freedom. The default is 1.0.  
   
-###  <a name="bkmk_TStudentRightTailed"></a> TStudentRightTailed  
+###  TStudentRightTailed  
 
 Implements the univariate Student’s t-distribution by using one right tail.  
   
@@ -459,7 +459,7 @@ To calculate, select **TStudentRightTailed**, and set the following options:
 - **Number of degrees of freedom**  
     Type a number (`double`) to specify the degrees of freedom. The default is 1.0.  
   
-###  <a name="bkmk_TStudentTwoTailed"></a> TStudentTwoTailed  
+###  TStudentTwoTailed  
 
 Implements a two-tailed Student’s t-distribution.  
   
@@ -468,7 +468,7 @@ To calculate, select **TStudentTwoTailed**, and set the following options:
 - **Number of degrees of freedom**  
     Type a number (`double`) to specify the degrees of freedom. The default is 1.0.  
   
-###  <a name="bkmk_Uniform"></a> Uniform  
+###  Uniform  
 
 The uniform distribution is also known as the rectangular distribution.  
   
@@ -480,7 +480,7 @@ To calculate, select **Uniform**, and set the following options:
 - **Upper bound**  
     Type a number (`double`) that represents the upper limit of the distribution. The default is 1.0.  
   
-###  <a name="bkmk_Weibull"></a> Weibull  
+###  Weibull  
 
 The Weibull distribution is widely used in reliability engineering. You can use its **Shape** parameter to model many other distributions.  
   
@@ -532,13 +532,13 @@ This module supports calculating any of these values for the specified distribut
     
     In other words, it answers the question: "How common are samples at exactly this value?"
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -564,13 +564,13 @@ This module supports calculating any of these values for the specified distribut
 |Column set|Any|ColumnSelection||Choose the columns over which to calculate the probability distribution.|  
 |Result mode|Any|OutputTo|ResultOnly|Specify how the results are to be saved in the output dataset. The options are to append new columns, replace existing columns, or output only the results.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
   
-##  <a name="exceptions"></a> Exception  
+##  Exception  
  For a complete list of error messages, see [Module Error Codes](machine-learning-module-error-codes.md).  
   
 |Exception|Description|  

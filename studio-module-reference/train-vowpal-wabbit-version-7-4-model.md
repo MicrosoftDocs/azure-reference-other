@@ -189,7 +189,7 @@ Because the goal of the service is to support experienced users of Vowpal Wabbit
 
 Rather than using data in the Azure ML workspace, the training data is directly streamed from Azure, for maximal performance and minimal parsing overhead. For this reason, there is only limited interoperability between the VW modules and other modules in Azure ML.  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -202,13 +202,13 @@ Rather than using data in the Azure ML workspace, the training data is directly 
 |Name of the output inverted hash (--invert_hash) file|any|String||If specified, outputs a file containing the inverted hash function back to the Azure container.<br /><br /> This argument is optional.|  
 |Please specify file type|VW<br /><br /> SVMLight|DataType|VW|Indicate whether the file type uses the SVMLight format or the Vowpal Wabbit format.|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ILearner interface](ilearner-interface.md)|Trained learner|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  

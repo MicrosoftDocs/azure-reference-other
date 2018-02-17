@@ -193,7 +193,7 @@ For more information about quantile regression, see these books and articles:
   
      [http://rd.springer.com/article/10.1023%2FA%3A1010933404324](http://rd.springer.com/article/10.1023%2FA%3A1010933404324)  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
 
 |Name|Type|Range|Optional|Description|Default|  
 |----------|----------|-----------|--------------|-----------------|-------------|  
@@ -217,7 +217,7 @@ For more information about quantile regression, see these books and articles:
 |Sample count used to estimate the quantiles|Integer||mode:Parameter Range|100|Sample count used to estimate the quantiles|  
 |Required quantile values|String||mode:Parameter Range|"0.25;0.5;0.75"|Required quantile value used during parameter sweep|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

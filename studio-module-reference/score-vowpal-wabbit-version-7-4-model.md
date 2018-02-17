@@ -112,14 +112,14 @@ The following parameters are not supported in Azure Machine Learning Studio.
 
 All arguments other than those described above are allowed.
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ILearner interface](ilearner-interface.md)|Trained learner|  
 |Dataset|[Data Table](data-table.md)|Dataset to be scored|  
   
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -127,13 +127,13 @@ All arguments other than those described above are allowed.
 |Include an extra column containing labels|Any|Boolean|false|Specify whether the zipped file should include labels with the predictions|  
 |Specify data type|VW<br /><br /> SVMLight|DataType|VW|Indicate whether the file format is SVMLight or Vowpal Wabbit|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset with the prediction results|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  

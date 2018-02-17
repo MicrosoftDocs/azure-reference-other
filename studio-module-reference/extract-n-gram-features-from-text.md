@@ -247,7 +247,7 @@ It is possible to manually update this dataset; however, be careful, as you can 
 + The **ID** column and **DF** score column must be of the integer type. 
 + The **IDF** column must be of type FLOAT (floating point).
 
-##  <a name="bkmk_TechnicalNotes"></a> Technical notes
+##  Technical notes
 
 We recommend that you experiment with different ranges of values for n-gram length, the number of skip-grams, and use of feature selection to determine the dimensionality of your text corpus and the optimum feature ratio.
 
@@ -255,14 +255,14 @@ For more information about n-grams and skip-grams, see these resources:
   
  + [Automatic Evaluation of Summaries Using N-gram Co-Occurrence Statistics](http://research.microsoft.com/en-us/um/people/cyl/download/papers/NAACL2003.pdf)  
   
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input data|  
 |Input vocabulary|[Data Table](data-table.md)|Input vocabulary|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
 
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
@@ -284,7 +284,7 @@ For more information about n-grams and skip-grams, see these resources:
 |Target column|Column Selection||Applies when using one of the following methods:<br /><br /> Pearson Correlation<br /><br /> Mutual Information<br /><br /> Kendall Correlation<br /><br /> Spearman Correlation<br /><br /> Chi Squared<br /><br /> Fisher Score||Specify the target column|  
 |Number of desired features|Integer|>=1|Applies when using one of the following methods:<br /><br /> Pearson Correlation<br /><br /> Mutual Information<br /><br /> Kendall Correlation<br /><br /> Spearman Correlation<br /><br /> Chi Squared<br /><br /> Fisher Score|1|Specify the number of features to output in results|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
