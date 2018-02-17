@@ -120,7 +120,7 @@ The windowing function is applied to the ideal filter response to force the freq
 
 The number of coefficients returned by the **FIR Filter** module is equal to the filter order plus one. The coefficient values are determined by filter parameters and by the windowing method, and are symmetric to guarantee a linear phase response    
 
-###  <a name="CoefficientsScaling"></a> Scaling of coefficients  
+###  Scaling of coefficients  
 
 The **FIR Filter** module returns filter coefficients, or tap weights, for the created filter.  
   
@@ -142,7 +142,7 @@ The following table compares selectivity with stop band attenuation for a FIR fi
 |Hamming|0.23n|53 dB|  
 |Blackman|0.2n|75 dB|  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -153,13 +153,13 @@ The following table compares selectivity with stop band attenuation for a FIR fi
 |High cutoff|[double.Epsilon;.9999999]|Float|0.7|Set the high cutoff frequency|  
 |Scale|Any|Boolean|True|If true, filter coefficients will be normalized|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
   
-##  <a name="exceptions"></a> Exceptions
+##  Exceptions
   
 |Exception|Description|  
 |---------------|-----------------|  

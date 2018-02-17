@@ -80,7 +80,7 @@ Optionally, you can change the dataset and its metadata using the tools in Studi
 
 - Use [Partition and Sample](partition-and-sample.md) to separate the dataset by criteria, or get the top n rows.
 
-## <a name="Examples"></a> Examples
+## Examples
 
 For an example of how to use data from Azure databases in machine learning, see these articles and experiments:
 
@@ -92,7 +92,7 @@ For an example of how to use data from Azure databases in machine learning, see 
 
 - [How to use Azure ML with Azure SQL Data Warehouse](https://blogs.technet.microsoft.com/machinelearning/2016/03/08/how-to-use-azure-ml-with-azure-sql-data-warehouse/): This article builds a clustering model on AdventureWorks, using [Import Data](import-data.md) and [Export Data](export-data.md) with Azure SQL Data Warehouse.
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

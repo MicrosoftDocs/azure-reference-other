@@ -64,7 +64,7 @@ This section contains implementation details, tips, and answers to frequently as
   
 -   The filters do not pass through data columns that are not affected by the filter. That is, the output of **Apply Filter** contains only the transformed numeric values. However, you can use the [Add Columns](add-columns.md) module to join transformed values with the source dataset.  
   
-###  <a name="filterperiod"></a> Filter periods  
+###  Filter periods  
 
 The filter period is determined in part by the filter type, as follows:  
   
@@ -76,7 +76,7 @@ The filter period is determined in part by the filter type, as follows:
   
 -   For median filters, regardless of the filter period, NaNs and missing values in the input signal do not produce new NaNs in output.  
   
-###  <a name="missingvalues"></a> Missing values  
+###  Missing values  
 
 This section describes the behavior when missing values are encountered, by filter type. In general, when a filter encounters a NaN or a missing value in the input dataset, the output dataset becomes spoiled with NaNs for some next number of samples, depending on the filter period. This has the following consequences:  
   
@@ -105,7 +105,7 @@ For a list of API exceptions, see [Machine Learning REST API Error Codes](https:
 |----------|-----------|----------|-------------|-----------------|  
 |Column set|Any|ColumnSelection|NumericAll|Select the columns to filter|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

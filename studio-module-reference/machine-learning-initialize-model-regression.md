@@ -44,7 +44,7 @@ Add training data. Be sure to consult the module reference for each algorithm in
 
 To train the model, run the experiment. After the regression algorithm has learned from the labeled data, you can use the function it learned to make predictions on new data.
 
-##  <a name="modules"></a> List of modules
+##  List of modules
 
 + [Bayesian Linear Regression](bayesian-linear-regression.md): Creates a Bayesian linear regression model
 + [Boosted Decision Tree Regression](boosted-decision-tree-regression.md): Creates a regression model using the Boosted Decision Tree algorithm

@@ -46,7 +46,7 @@ In addition to these modules, you might find the following related tools useful 
   
 - Filtering and transforming digital signals and waveforms: [Filter](data-transformation-filter.md)  
   
-##  <a name="modules"></a> List of modules  
+##  List of modules  
 
 This category includes the following modules:  
 - [Clip Values](clip-values.md): Detects outliers and clips or replaces their values  
