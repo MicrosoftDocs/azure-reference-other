@@ -31,7 +31,7 @@ An Azure subscription and Azure Data Lake Analytics account is not needed when e
 - The examples utillize the table `myImages` from the example [Load images to a table](imageextractor-u-sql.md#loadImages).
 
 **Extract text from the image using OCR Extractor**
-```
+```sql
 REFERENCE ASSEMBLY ImageCommon; 
 REFERENCE ASSEMBLY ImageOcr;
 

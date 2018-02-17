@@ -34,8 +34,9 @@ Returns the data type of the argument with the higher precedence.
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
-**Add with Numeric and Textual Types**   
-```
+**Add with Numeric and Textual Types**
+   
+```sql
 @data = 
     SELECT * FROM 
         ( VALUES
@@ -65,8 +66,9 @@ TO "/ReferenceGuide/Operators/Arithmetic/Add1.txt"
 USING Outputters.Csv();
 ```
 
-**Add with Temporal Types**   
-```
+**Add with Temporal Types** 
+  
+```sql
 @data = 
     SELECT * FROM 
         ( VALUES

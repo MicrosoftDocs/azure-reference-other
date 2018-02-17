@@ -56,7 +56,7 @@ Static_Expression :=
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the table defined below.  
 
-```
+```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
 USE DATABASE TestReferenceDB; 
 
@@ -78,7 +78,8 @@ INTO 10;
 
 **A.    ADD PARTITION**   
 This example adds two partitions to the partitioned table, `Orders`.  The values used to partition on columns of DateTime types have to have their DateTimeKind set to DateTimeKind.Utc.
-```
+
+```sql
 // Declare partition values and set DateTimeKind to DateTimeKind.Utc.
 DECLARE @partition1 DateTime = new DateTime(2016, 01, 01, 00,00,00,00, DateTimeKind.Utc);
 DECLARE @partition2 DateTime = @partition1.AddDays(1);
@@ -94,7 +95,8 @@ ADD IF NOT EXISTS PARTITION (@partition2);
 
 **B.    DROP PARTITION**   
 This example drops a partition from the partitioned table, `Orders`.
-```
+
+```sql
 DECLARE @partition1 DateTime = new DateTime(2016, 01, 01, 00,00,00,00, DateTimeKind.Utc);
 ALTER TABLE TestReferenceDB.dbo.Orders
 DROP PARTITION(@partition1);

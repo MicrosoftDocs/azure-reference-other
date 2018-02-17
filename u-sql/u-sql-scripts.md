@@ -56,7 +56,7 @@ Script :=
 - The examples below use the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
 
 The following shows an extended sample script that operates on one of the U-SQL sample data sets:  
-```  
+```sql  
 DECLARE @in  string = "/Samples/Data/SearchLog.tsv";  
 DECLARE @out string = "/output/result.tsv";  
   

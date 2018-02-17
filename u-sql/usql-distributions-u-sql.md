@@ -28,7 +28,7 @@ distribution_count     |int         |The specified count of distribution buckets
 The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
 
 **Query the usql.distributions view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.distributions
@@ -37,7 +37,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query the usql.distributions view with usql.objects view**
-```
+```sql
 @distributions =
     SELECT o.name AS objectName,
             d.*

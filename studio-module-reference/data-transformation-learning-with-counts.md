@@ -106,13 +106,11 @@ By default, all items with a count less than 10 are collected in a single bucket
 
 The **Learning with Counts** category includes the following modules:
 
-|Module|Description|  
-|------------|-----------------|  
-|[Build Counting Transform](build-counting-transform.md)|Creates a count table and count-based features from a dataset, and saves it as a transformation|  
-|[Export Count Table](export-count-table.md)|Exports count table from a counting transform<br /><br /> This module supports backward compatibility with experiments that create count-based features using [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md).|  
-|[Import Count Table](import-count-table.md)|Imports an existing count table<br /><br /> This module supports backward compatibility with experiments that create count-based features using [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md). It supports conversion of count tables to count transformations.|  
-|[Merge Count Transform](merge-count-transform.md)|Merges two sets of count-based features|  
-|[Modify Count Table Parameters](modify-count-table-parameters.md)|Modifies count-based features derived from an existing count table|  
+- [Build Counting Transform](build-counting-transform.md): Creates a count table and count-based features from a dataset, and saves it as a transformation.  
+- [Export Count Table](export-count-table.md): Exports count table from a counting transform. This module supports backward compatibility with experiments that create count-based features using [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md).  
+- [Import Count Table](import-count-table.md): Imports an existing count table. This module supports backward compatibility with experiments that create count-based features using [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md). It supports conversion of count tables to count transformations.  
+- [Merge Count Transform](merge-count-transform.md): Merges two sets of count-based features.  
+- [Modify Count Table Parameters](modify-count-table-parameters.md): Modifies count-based features derived from an existing count table.  
   
 ## See also  
  [Data Transformation](data-transformation.md)   

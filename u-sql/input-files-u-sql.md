@@ -163,7 +163,7 @@ For more details and examples on extracting from file sets, please see [EXTRACT 
 - The examples below uses the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
 
 **Single_File_Path: Default_Account_Path_URI**   
-```
+```sql
 @searchLog =  
     EXTRACT UserId          int  
           , Start           DateTime  
@@ -182,7 +182,7 @@ USING Outputters.Csv();
 ```
 
 **Single_File_Path: ADL_Path_URI**    
-```
+```sql
 @searchLog =  
     EXTRACT UserId          int  
           , Start           DateTime  
@@ -201,7 +201,7 @@ USING Outputters.Csv();
 ```
 
 **Single_File_Path: WASB_Path_URI**   
-```
+```sql
 @searchLog =  
     EXTRACT UserId          int  
           , Start           DateTime  
@@ -221,7 +221,7 @@ USING Outputters.Csv();
 
 **List_File_Path**   
 This example extracts data from the two files created in earlier examples by enumerating each file.
-```
+```sql
 @searchLog =  
     EXTRACT UserId          int  
           , Start           DateTime  
@@ -242,7 +242,7 @@ USING Outputters.Csv();
 
 **File_Set_Path**   
 This example extracts data from the three files created in earlier examples by using a file set pattern.
-```
+```sql
 @searchLog =  
     EXTRACT UserId          int  
           , Start           DateTime  

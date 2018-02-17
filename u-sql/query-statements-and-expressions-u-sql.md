@@ -64,24 +64,24 @@ Query_Statement :=
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-```
-@someBooks = 
-    SELECT * FROM 
-        ( VALUES
-        ("The Book Thief", "Markus Zusak", "2005"),
-        ("The Girl with the Dragon Tattoo", "Stieg Larsson", "2005"),
-        ("The Silver Linings Playbook", "Matthew Quick", "2008"),
-        ("Sarah's Key", "Tatiana de Rosnay", "2006")
-        ) AS T(Book, Author, [Publication Year]);
-        
-@rowsetVariable =
-    SELECT Book, Author
-    FROM @someBooks;
-
-OUTPUT @rowsetVariable
-TO "/ReferenceGuide/DML/QSE/exampleA.txt"
-USING Outputters.Tsv();
-```
+    ```sql
+    @someBooks = 
+        SELECT * FROM 
+            ( VALUES
+            ("The Book Thief", "Markus Zusak", "2005"),
+            ("The Girl with the Dragon Tattoo", "Stieg Larsson", "2005"),
+            ("The Silver Linings Playbook", "Matthew Quick", "2008"),
+            ("Sarah's Key", "Tatiana de Rosnay", "2006")
+            ) AS T(Book, Author, [Publication Year]);
+            
+    @rowsetVariable =
+        SELECT Book, Author
+        FROM @someBooks;
+    
+    OUTPUT @rowsetVariable
+    TO "/ReferenceGuide/DML/QSE/exampleA.txt"
+    USING Outputters.Tsv();
+    ```
 
   
 ### See Also 

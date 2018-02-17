@@ -97,7 +97,7 @@ Furthermore, any U-SQL identifier, whether quoted or unquoted has to following t
   
 ### Examples    
 A.  The following script uses quoted identifiers to create some objects with uncommon names:
-```  
+```sql  
 DROP DATABASE IF EXISTS [^];  
 CREATE DATABASE [^];  
 USE DATABASE [^];  

@@ -47,8 +47,9 @@ This aggregator can be used in a [windowing expression](over-expression-u-sql.md
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
+
+   ```sql
+   @employees = 
     SELECT * FROM 
         ( VALUES
         (1, "Noah",   "Engineering", 100, 10000),
@@ -61,11 +62,11 @@ This aggregator can be used in a [windowing expression](over-expression-u-sql.md
         (8, "Ava",    "Marketing",   400, 15000),
         (9, "Ethan",  "Marketing",   400, 10000) 
         ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+   ```
 
 **A.    Average of all values(`Salary`)**  
 The following query determines the average salary 1) for all employees, and 2) from all DISTINCT salary values.
-```
+```sql
 @result =
     SELECT AVG(Salary) AS AverageSalary,
            AVG(DISTINCT Salary) AS AverageDistinctSalary
@@ -78,7 +79,7 @@ USING Outputters.Csv();
 
 **B.    Average values per group**  
 The following query determines the average salary for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
-```
+```sql
 @result =
     SELECT DeptName,
            AVG(Salary) AS AverageSalaryByDept
@@ -92,7 +93,7 @@ USING Outputters.Csv();
 
 **C.    Average values with OVER()**  
 The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query determines the average salary over the window - all employees.
-```
+```sql
 @result =
     SELECT EmpName,
            AVG(Salary) OVER() AS AverageSalaryAllDepts
@@ -105,7 +106,7 @@ USING Outputters.Csv();
 
 **D.    Average values over a defined window using OVER()**  
 The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, and the average salary over the window - `DeptName`.
-```
+```sql
 @result =
     SELECT EmpName,
            DeptName,
@@ -119,7 +120,7 @@ USING Outputters.Csv();
 
 **E.    Average values over a defined window using OVER(), additional example**  
 The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the average salary for each `DeptName` and each employee's salary share of his/her department's average share.
-```
+```sql
 @result =
     SELECT *,
            AVG(Salary) OVER(PARTITION BY DeptName) AS AverageSalaryByDept,

@@ -86,12 +86,12 @@ There are many rowset sources from which can be selected:
 > Unlike most SQL versions, U-SQL does not support the ability to join rowsets with the comma notation. Instead one needs to use the explicit ANSI SQL join syntax.
   
 For example, this implicit join expression is not supported
-```
+```sql
 SELECT * FROM T1, T2 WHERE T1.val == T2.val;
 ```
   
 Instead the query expression has be written as
-```
+```sql
 SELECT * FROM T1 INNER JOIN T2 ON T1.val == T2.val;
 ```
  

@@ -25,9 +25,8 @@ The join expression in the ON clause specifies how to determine the match.
 ### Example  
 Given the following rowsets:  
   
-| @employees |           |  
+| **EmpName** |   **DepID**        |  
 |------------|-----------|  
-| **EmpName** string    | **DepID** int? |  
 | Rafferty   | 31        |  
 | Jones      | 33        |  
 | Heisenberg | 33        |  
@@ -35,9 +34,8 @@ Given the following rowsets:
 | Smith      | 34        |  
 | Williams   | *null*    |  
   
-| @departments |             |  
+| **DeptID** |     **DepName**        |  
 |--------------|-------------|  
-| **DeptID** int | **DepName** string |  
 | 31           | Sales       |  
 | 33           | Engineering |  
 | 34           | Clerical    |  
@@ -45,7 +43,7 @@ Given the following rowsets:
   
 The following query finds all employees that are not in a valid department by finding all the employees in the left @employees rowset that do not have a depID that is listed in the right @departments rowset):  
   
-```  
+```sql  
 @employees = SELECT *  
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  
@@ -76,14 +74,13 @@ USING Outputters.Csv();
   
 The resulting rowset looks like:  
   
-| @emps_notin_valid_dept |           |  
+| **EmpName** |    **DepID**       |  
 |---------------------------|-----------|  
-| **EmpName** string        | **DepID** int? |  
 | Williams                  | *null*    |  
   
 The following query finds all departments without an employee:  
   
-```  
+```sql  
 @employees = SELECT *  
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  
@@ -113,9 +110,8 @@ USING Outputters.Csv();
   
 Both queries return the same rowset:  
   
-| @depts_without_emps_0/@depts_without_emps_1 |           |  
+| **DepName** |    **DepID**       |  
 |---------------------------------------------------|-----------|  
-| **DepName** string                                | **DepID** int? |  
 | Marketing                                         | 35        |  
   
 **Additional Example**  

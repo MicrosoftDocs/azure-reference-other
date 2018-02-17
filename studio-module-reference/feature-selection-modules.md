@@ -138,11 +138,9 @@ All feature selection modules and analytical methods that support numeric and lo
  
 The Feature Selection category includes these modules:  
   
-|Module|Description|  
-|------------|-----------------|  
-|[Filter Based Feature Selection](filter-based-feature-selection.md)|Identifies the features in a dataset with the greatest predictive power|  
-|[Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md)|Identifies the linear combination of feature variables that can best group data into separate classes|  
-|[Permutation Feature Importance](permutation-feature-importance.md)|Computes the permutation feature importance scores of feature variables given a trained model and a test dataset|  
+- [Filter Based Feature Selection](filter-based-feature-selection.md): Identifies the features in a dataset with the greatest predictive power  
+- [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md): Identifies the linear combination of feature variables that can best group data into separate classes 
+- [Permutation Feature Importance](permutation-feature-importance.md): Computes the permutation feature importance scores of feature variables given a trained model and a test dataset 
 
 ## See also  
    

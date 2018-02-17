@@ -25,7 +25,7 @@ An Azure subscription and Azure Data Lake Analytics account is not needed when e
 - You will need images accessible to you ADLA or Local account.
 
 **Load images to a rowset variable**  
-```
+```sql
 REFERENCE ASSEMBLY ImageCommon;   
 
 @images =
@@ -44,7 +44,7 @@ USING Outputters.Tsv();
 
 **Load images to a table**<a name="loadImages"></a>  
 This table will be referenced in various cognitive examples
-```
+```sql
 REFERENCE ASSEMBLY ImageCommon;   
 
 DROP TABLE IF EXISTS dbo.myImages;

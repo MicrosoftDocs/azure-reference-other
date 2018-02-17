@@ -89,10 +89,8 @@ Whenever you don't need to keep all the data, use [Partition and Sample](partiti
 
 This category includes the following modules:  
 
-|Module|Description|  
-|------------|-----------------|  
-|[Partition and Sample](partition-and-sample.md)|Creates multiple partitions of a dataset based on sampling|  
-|[Split Data](split-data.md)|Partitions the rows of a dataset into two distinct sets|
+- [Partition and Sample](partition-and-sample.md): Creates multiple partitions of a dataset based on sampling  
+- [Split Data](split-data.md): Partitions the rows of a dataset into two distinct sets
 
 ## See also  
  [Data Transformation](data-transformation.md)   

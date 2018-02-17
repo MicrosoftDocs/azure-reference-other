@@ -27,7 +27,7 @@ definition     |string         | Function's definition (if available)
 The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
 
 **Query the usql.functions view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.functions

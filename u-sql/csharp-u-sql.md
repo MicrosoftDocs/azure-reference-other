@@ -35,7 +35,7 @@ Polymorphic based on the expression’s type.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
 
 **Dataset**   
-```
+```sql
 @aCircle = 
     SELECT * FROM 
         ( VALUES
@@ -43,14 +43,14 @@ Polymorphic based on the expression’s type.
         ) AS T(radius);
 ```
 The following query fails because PI is an uppercase name and thus a reserved keyword: 
-```
+```sql
 @result =
     SELECT Math.PI * radius * radius AS Area
     FROM @aCircle; 
 ```
 
 The CSHARP function turns off the keyword reservation and allows to use PI: 
-```
+```sql
 @result =
     SELECT CSHARP(Math.PI) * radius * radius AS Area
     FROM @aCircle;

@@ -56,7 +56,7 @@ An Azure subscription and Azure Data Lake Analytics account is not needed when e
 
 ### A.	EmotionApplier
 **Extract tags from the image using Image tagging Applier**
-```
+```sql
 REFERENCE ASSEMBLY ImageCommon;       
 REFERENCE ASSEMBLY ImageEmotion;
 
@@ -91,7 +91,8 @@ USING Outputters.Tsv(outputHeader: true);
 
 ### B.	EmotionExtractor
 **Extract face and recognize facial expression using Emotion Extractor**
-```
+
+```sql
 REFERENCE ASSEMBLY ImageCommon;      
 REFERENCE ASSEMBLY ImageEmotion;
 

@@ -43,7 +43,7 @@ This aggregator cannot be used in a [windowing expression](over-expression-u-sql
  
 **A. ARRAY_AGG**   
 This example aggregates the phone numbers as one group per employee.
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -89,7 +89,7 @@ USING Outputters.Csv();
 
 **B. EXPLODE - bonus example**  
 This example does not use `ARRAY_AGG`; however, it illustrates how to reverse the outcome from the above example using [EXPLODE](explode-u-sql.md).
-```
+```sql
 @result =
     SELECT EmpName,
            new SQL.ARRAY<string>(PhoneNumbers.Split(',')) AS PhoneNumbersArray
@@ -102,15 +102,15 @@ This example does not use `ARRAY_AGG`; however, it illustrates how to reverse th
     CROSS APPLY 
     EXPLODE(PhoneNumbersArray) AS r(PhoneNumber);
 
-OUTPUT @exploded
-TO "/Output/ReferenceGuide/Aggregate/array_agg/exampleB.csv"
-USING Outputters.Csv();
+    OUTPUT @exploded
+    TO "/Output/ReferenceGuide/Aggregate/array_agg/exampleB.csv"
+    USING Outputters.Csv();
 ```
 
 **C. ARRAY_AGG - additional example**   
 This example deals with a common many-to-many relationship. Here, a film can have more than one producer and you would like to have all producers listed in one record. The following query will aggregate all producers.   
 This example provides an alternative solution to [Using User Defined Aggregator - genericAggregator B](extending-u-sql-expressions-with-user-code.md#genericAggB).
-```
+```sql
 @films = 
     SELECT * FROM 
         ( VALUES

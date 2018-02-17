@@ -260,7 +260,7 @@ To calculate, select **GeneralizedExtremeValues**, and set the following options
   
     The default is 0.0.  
   
-###  Geometric  
+### Geometric  
 
 The geometric distribution is a distribution over positive integers parameterized by one positive real number.   
   

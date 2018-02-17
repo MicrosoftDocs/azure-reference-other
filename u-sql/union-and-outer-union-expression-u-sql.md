@@ -82,7 +82,7 @@ Preserves duplicate rows in the result.
 - The examples below are based on the datasets defined below.  Ensure your execution includes the rowset variables.  
 
 **Dataset**    
-```
+```sql
 @left = 
     SELECT * FROM 
         ( VALUES
@@ -110,7 +110,7 @@ Preserves duplicate rows in the result.
 
 **Return distinct values by position**   
 All distinct `id`, `name` values from `@left` and `@right`.
-```
+```sql
 @result =    
     SELECT id, name FROM @left
     UNION DISTINCT      // Using DISTINCT is optional as it is the default value
@@ -123,7 +123,7 @@ USING Outputters.Csv();
 
 **Return distinct values by name**    
 All distinct `id`, `name` values from `@left` and `@right`.
-```
+```sql
 @result = 
     SELECT * FROM @left
     UNION DISTINCT BY NAME ON (*)
@@ -136,7 +136,7 @@ USING Outputters.Csv();
 
 **Return values with duplicates by position**     
 All `id`, `name` values, including duplicates, from `@left` and `@right`.
-```
+```sql
 @result =    
     SELECT id, name FROM @left
     UNION ALL   // ALL preserves duplicates
@@ -149,7 +149,7 @@ USING Outputters.Csv();
 
 **Return values with duplicates by name**     
 All `id`, `name` values, including duplicates, from `@left` and `@right`.
-```
+```sql
 @result =    
     SELECT * FROM @left
     UNION ALL BY NAME ON (id, *)   
@@ -162,7 +162,7 @@ USING Outputters.Csv();
 
 **Return all records with OUTER UNION**   
 Returns matching columns and non-matching columns from both `@left` and `@right`.
-```
+```sql
 @result =    
     SELECT * FROM @left
     OUTER UNION ALL BY NAME ON (id, name)   // DISTINCT is not supported
@@ -185,7 +185,7 @@ USING Outputters.Csv(outputHeader: true);
 
 **UNION with ORDER BY and FETCH**   
 The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
-```
+```sql
 // Data sets
 @JuneSales = 
     SELECT * FROM 

@@ -36,7 +36,7 @@ The examples utilize two books: War and Peace, and Peter Pan.
 
 
 **Extract Text** 
-```
+```sql
 // War and Peace
 @book =
     EXTRACT No int,
@@ -55,7 +55,7 @@ The examples utilize two books: War and Peace, and Peter Pan.
 ```
 
 **Extract Sentiment**
-```
+```sql
 REFERENCE ASSEMBLY [TextSentiment];
 
 // War and Peace
@@ -94,7 +94,7 @@ USING Outputters.Tsv();
 ```
 
 **Calculate average sentiment**
-```
+```sql
 // War and Peace
 @grouped =
     SELECT Year,
@@ -121,7 +121,7 @@ USING Outputters.Tsv();
 ```
 
 **Combine the key phrases and chapter sentiment analysis**
-```
+```sql
 REFERENCE ASSEMBLY [TextKeyPhrase];
 
 // First capture key phrases

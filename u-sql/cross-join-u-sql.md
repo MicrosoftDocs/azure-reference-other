@@ -26,9 +26,8 @@ Note that this is potentially an expensive and dangerous operation since it can 
 **Basic Example**  
 Using the input rowsets  
   
-| @employees |           |  
+| **EmpName**|    **DepID**       |  
 |------------|-----------|  
-| **EmpName** string | **DepID** int? |  
 | Rafferty   | 31        |  
 | Jones      | 33        |  
 | Heisenberg | 33        |  
@@ -36,9 +35,8 @@ Using the input rowsets
 | Smith      | 34        |  
 | Williams   | *null*    |  
   
-| @departments |             |  
+| **DeptID** |      **DepName**       |  
 |--------------|-------------|  
-| **DeptID** int  | **DepName** string |  
 | 31           | Sales       |  
 | 33           | Engineering |  
 | 34           | Clerical    |  
@@ -46,7 +44,7 @@ Using the input rowsets
   
 the following cross join  
   
-```  
+```sql  
 @employees = SELECT *  
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  
@@ -76,9 +74,8 @@ USING Outputters.Csv();
   
 produces this rowset  
   
-| @rs_cross |             |  
+| **EmpName** |     **DepName**        |  
 |------------|-------------|  
-| **EmpName** string    | **DepName** string |  
 | Rafferty   | Engineering |  
 | Jones      | Engineering |  
 | Heisenberg | Engineering |  
@@ -89,7 +86,7 @@ produces this rowset
 Note that without the filter on the DepName, the resulting rowset would have produced 6x4=24 rows.  
 
 **Additional Examples**  
-```
+```sql
 @right = 
     SELECT * FROM 
         ( VALUES

@@ -40,7 +40,7 @@ An Azure subscription and Azure Data Lake Analytics account is not needed when e
 
 ### A.	ImageTagger
 **Extract tags from the image using Image tagging Processor**
-```
+```sql
 REFERENCE ASSEMBLY ImageCommon; 
 REFERENCE ASSEMBLY ImageTagging;
 
@@ -54,7 +54,7 @@ REFERENCE ASSEMBLY ImageTagging;
 ```
 
 **Perform various queries against `@TaggedObjects` created above**
-```
+```sql
 // A record will not be returned for FileName if Tags is empty for that record
 @result1A = 
     SELECT  FileName,
@@ -117,7 +117,7 @@ USING Outputters.Tsv(outputHeader: true);
 
 ### B.	ImageTagsExtractor
 **Extract the tags from each image using image tagging Extractor**
-```
+```sql
 REFERENCE ASSEMBLY ImageCommon;   
 REFERENCE ASSEMBLY ImageTagging;
 
@@ -130,7 +130,7 @@ REFERENCE ASSEMBLY ImageTagging;
 ```
 
 **Perform various queries against `@tags` created above**
-```
+```sql
 // Merge the Map into a string for outputting
 @tags_serialized =
     SELECT FileName,

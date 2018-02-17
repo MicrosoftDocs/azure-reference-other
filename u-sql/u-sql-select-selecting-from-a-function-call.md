@@ -31,27 +31,27 @@ Select_From_TVF_Clause :=
   
     If the table-valued function TVF is defined as:  
   
-    ```
+   ```sql
     CREATE FUNCTION TVF() RETURNS @r TABLE(I int) AS  
     BEGIN  
       @v = SELECT * FROM (VALUES(1),(2),(3)) AS V(I);  
       @r = SELECT I+1 AS I FROM @v;  
     END;
-    ```
+   ```
   
     It will be inlined in the following query:  
   
-    ```
+   ```sql
     @x = SELECT * FROM TVF() AS T;
-    ```
+   ```
       
     And the query is then conceptually rewritten to  
   
-    ```
+   ```sql
     @v = SELECT * FROM (VALUES(1),(2),(3)) AS V(I);  
     @r = SELECT I+1 AS I FROM @v;  
     @x = SELECT * FROM @r AS T;
-    ```
+   ```
       
     It does preserve the function scoping rules though.  
   
@@ -62,53 +62,54 @@ Select_From_TVF_Clause :=
 - The example is designed for execution in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed locally.  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The example below is based on the data and objects below defined below.
-```
-CREATE DATABASE IF NOT EXISTS TestReferenceDB;
-USE DATABASE TestReferenceDB; 
-
-DROP TABLE IF EXISTS dbo.Employees;
-CREATE TABLE dbo.Employees
-(
-    EmpID int,
-    EmpName string,
-    DeptID int,
-    Salary int?,
-    StartDate DateTime,
-    INDEX clx_EmpID CLUSTERED(EmpID ASC) PARTITIONED BY HASH(EmpID)
-);
-
-INSERT INTO dbo.Employees
-VALUES
-(1, "Noah",   100, (int?)10000, new DateTime(2012,05,31)),
-(2, "Sophia", 100, (int?)15000, new DateTime(2012,03,19)),
-(3, "Liam",   100, (int?)30000, new DateTime(2014,09,14)),
-(4, "Amy",    100, (int?)35000, new DateTime(1999,02,27)),
-(5, "Justin", 100, (int?)15000, new DateTime(2015,01,12)),
-(6, "Emma",   200, (int?)8000,  new DateTime(2014,03,08)),
-(7, "Jacob",  200, (int?)8000,  new DateTime(2014,09,02)),
-(8, "Olivia", 200, (int?)8000,  new DateTime(2013,12,11)),
-(9, "Mason",  300, (int?)50000, new DateTime(2016,01,01)),
-(10, "Ava",   400, (int?)15000, new DateTime(2014,09,14)),
-(11, "Ethan", 400, (int?)9000,  new DateTime(2015,08,22)),
-(12, "David", 800, (int?)100,   new DateTime(2016,11,01)),
-(13, "Andrew", 100, (int?)null, new DateTime(1995,07,16)); // Create a NULL Salary
-
-// Create function
-DROP FUNCTION IF EXISTS TestReferenceDB.dbo.DeptEmployees;
-CREATE FUNCTION TestReferenceDB.dbo.DeptEmployees(@deptID int)
-RETURNS @tvf_result
-AS
-BEGIN
-    @tvf_result =
-        SELECT *
-        FROM TestReferenceDB.dbo.Employees
-        WHERE DeptID == @deptID;
-END;
-```
+    ```sql
+    CREATE DATABASE IF NOT EXISTS TestReferenceDB;
+    USE DATABASE TestReferenceDB; 
+    
+    DROP TABLE IF EXISTS dbo.Employees;
+    CREATE TABLE dbo.Employees
+    (
+        EmpID int,
+        EmpName string,
+        DeptID int,
+        Salary int?,
+        StartDate DateTime,
+        INDEX clx_EmpID CLUSTERED(EmpID ASC) PARTITIONED BY HASH(EmpID)
+    );
+    
+    INSERT INTO dbo.Employees
+    VALUES
+    (1, "Noah",   100, (int?)10000, new DateTime(2012,05,31)),
+    (2, "Sophia", 100, (int?)15000, new DateTime(2012,03,19)),
+    (3, "Liam",   100, (int?)30000, new DateTime(2014,09,14)),
+    (4, "Amy",    100, (int?)35000, new DateTime(1999,02,27)),
+    (5, "Justin", 100, (int?)15000, new DateTime(2015,01,12)),
+    (6, "Emma",   200, (int?)8000,  new DateTime(2014,03,08)),
+    (7, "Jacob",  200, (int?)8000,  new DateTime(2014,09,02)),
+    (8, "Olivia", 200, (int?)8000,  new DateTime(2013,12,11)),
+    (9, "Mason",  300, (int?)50000, new DateTime(2016,01,01)),
+    (10, "Ava",   400, (int?)15000, new DateTime(2014,09,14)),
+    (11, "Ethan", 400, (int?)9000,  new DateTime(2015,08,22)),
+    (12, "David", 800, (int?)100,   new DateTime(2016,11,01)),
+    (13, "Andrew", 100, (int?)null, new DateTime(1995,07,16)); // Create a NULL Salary
+    
+    // Create function
+    DROP FUNCTION IF EXISTS TestReferenceDB.dbo.DeptEmployees;
+    CREATE FUNCTION TestReferenceDB.dbo.DeptEmployees(@deptID int)
+    RETURNS @tvf_result
+    AS
+    BEGIN
+        @tvf_result =
+            SELECT *
+            FROM TestReferenceDB.dbo.Employees
+            WHERE DeptID == @deptID;
+    END;
+    ```
 
 **Basic Call**   
 The query below calls the function `DeptEmployees` and passes `100` for `DeptID`.  The function returns all employees for the given `DeptID`.
-```
+
+```sql
 // Execute function
 @result =
     SELECT *

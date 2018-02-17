@@ -53,7 +53,8 @@ Azure also provides an anomaly detection service API that you can call as a web 
 
 The anomaly detection category includes the following modules:  
 
-+ [One-Class Support Vector Machine](one-class-support-vector-machine.md): Creates a one-class Support Vector Machine model for anomaly detection + [PCA-Based Anomaly Detection](pca-based-anomaly-detection.md): Creates an anomaly detection model using Principal Component Analysis
++ [One-Class Support Vector Machine](one-class-support-vector-machine.md): Creates a one-class Support Vector Machine model for anomaly detection 
++ [PCA-Based Anomaly Detection](pca-based-anomaly-detection.md): Creates an anomaly detection model using Principal Component Analysis
 
 ## See also
 
