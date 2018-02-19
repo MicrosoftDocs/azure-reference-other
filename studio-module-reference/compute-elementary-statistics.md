@@ -226,7 +226,7 @@ The following experiments in the [Azure AI Gallery](https://gallery.cortanaintel
 - [Dataset Processing and Analysis](https://gallery.cortanaintelligence.com/Experiment/943c3d4becb7470e8acac6af699d6ea9): The [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
 
 
-##  <a name="Notes"></a> Technical notes  
+##  Technical notes  
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

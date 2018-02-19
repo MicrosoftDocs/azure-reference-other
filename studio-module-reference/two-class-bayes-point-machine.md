@@ -69,7 +69,7 @@ To see how the Two-Class Bayes Point Machine is used in machine learning, see th
   
 -  [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
 
-##  <a name="Notes"></a>  Technical notes
+##   Technical notes
 
 This section contains implementation details and frequently asked questions about this algorithm.
 
@@ -85,7 +85,7 @@ However, this implementation improves on the original algorithm in several ways:
   
 These improvements make the Bayes Point Machine classification model more robust and easier-to-use, and you can bypass the time-consuming step of parameter tuning.
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -93,7 +93,7 @@ These improvements make the Bayes Point Machine classification model more robust
 |Include bias|Any|Boolean|True|Indicate whether a constant feature or bias should be added to each instance|  
 |Allow unknown values in categorical features|Any|Boolean|True|If True, creates an additional level for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

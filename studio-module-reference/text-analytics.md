@@ -35,7 +35,7 @@ For examples of text analytics using Azure Machine Learning, see the [Azure AI G
   
 - [Text Classification](http://go.microsoft.com/fwlink/?LinkId=525957): This five-part sample demonstrates the end-to-end process of using text from Twitter messages in sentiment analysis.
 
-##  <a name="modules"></a> List of modules
+##  List of modules
 
 The **Text Analytics** category in Azure machine Learning Studio includes these modules:
 

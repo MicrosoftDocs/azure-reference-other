@@ -39,7 +39,8 @@ Argument :=
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://channel9.msdn.com/Series/AzureDataLake/USQL-LocalRun).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples utilize the procedures created from [CREATE PROCEDURE (U-SQL)](create-procedure-u-sql.md).
-```
+
+```sql
 // This example will call the procedure myFirstStoredProc:
 TestReferenceDB.dbo.myFirstStoredProc();
 

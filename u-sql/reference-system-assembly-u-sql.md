@@ -60,7 +60,7 @@ Even though one can use short-form references to the preloaded objects, it is re
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following statement references the system assembly System.XML, so its objects can be used in the script:  
-```
+```sql
 REFERENCE SYSTEM ASSEMBLY [System.XML];  
 ```
   

@@ -51,7 +51,7 @@ A C# expression returning a value of either type `IEnumerable<T>`, `IEnumerable<
 > EXPLODE is syntactically only supported in the context of an APPLY and is not a general rowset expression.
   
 ### Example   
-```
+```sql
 @dep_employees = SELECT *  
                    FROM (VALUES  
                             ("Sales", "Rafferty")  
@@ -78,9 +78,8 @@ USING Outputters.Csv();
 ```  
 The resulting rowset looks like:  
   
-| @rsExplode |           |  
+| **DepName** |   **EmpName**        |  
 |------------|-----------|  
-| **DepName** string | **EmpName** string |  
 | "Sales"   | "Rafferty"       |  
 | "Engineering"      | "Jones"        |  
 | "Engineering"| "Heisenbert"        |  
@@ -97,7 +96,7 @@ The resulting rowset looks like:
 - Some of the examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
 
 **Dataset**  
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -120,7 +119,7 @@ The resulting rowset looks like:
 
 **SQL.ARRAY**   
 This example first converts the `PhoneNumbers` values into the `SQL.ARRAY` type `AS PhoneNumbersArray`.  `PhoneNumbersArray` is then unpacked resulting in a single column where each item in the array is placed into its own row.
-```
+```sql
 @array =
     SELECT EmpName,
            PhoneNumbers == "" ? null : new SQL.ARRAY<string>(PhoneNumbers.Split(',')) AS PhoneNumbersArray
@@ -141,7 +140,7 @@ USING Outputters.Csv();
 
 **ARRAY_AGG - Bonus Example**   
 This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [ARRAY_AGG](array-agg-u-sql.md).
-```
+```sql
 @result =
     SELECT EmpName,
            string.Join(", ", ARRAY_AGG(PhoneNumber)) AS PhoneNumbers
@@ -155,7 +154,7 @@ USING Outputters.Csv();
 
 **SQL.MAP**    
 This example first converts the `PhoneNumbers` values into the `SQL.MAP` type `AS PhoneNumberMap`.  `PhoneNumberMap` is then unpacked resulting in two columns where each key-value pair in the map is placed into its own row.
-```
+```sql
 @map =
     SELECT EmpName,
            PhoneNumbers == ""? null : new SQL.MAP<string, string>(from p in PhoneNumbers.Split(',') select new KeyValuePair<string, string>(p.Split(':') [0], p.Split(':') [1])) AS PhoneNumberMap
@@ -176,7 +175,7 @@ USING Outputters.Csv();
 
 **MAP_AGG - Bonus Example**   
 This example does not use `CROSS APPLY` or `EXPLODE`; however, it illustrates how to reverse the outcome from the above example using [MAP_AGG](map-agg-u-sql.md).
-```
+```sql
 @result =
     SELECT EmpName,
            String.Join(",", MAP_AGG(PhoneType, PhoneNumber).Select(p => String.Format("{0}:{1}", p.Key, p.Value))).Trim() AS PhoneNumbers
@@ -190,7 +189,7 @@ USING Outputters.Csv();
 
 
 **MAP\<string, MAP\<int, string>>**
-```
+```sql
 // MAP<string, MAP<int, string>>
 DECLARE @aMap SQL.MAP<int, string> = new SQL.MAP<int, string>{{1, "Seattle"}};
 
@@ -218,7 +217,7 @@ USING Outputters.Text();
 ``` 
 
 **MAP\<string, ARRAY\<string>>**
-```
+```sql
 DECLARE @anArray SQL.ARRAY<string> = new SQL.ARRAY<string>{"Seattle", "Spokane", "Tacoma"};
 
 // Illustrating two methods to pass Value
@@ -244,7 +243,7 @@ USING Outputters.Text();
 ```
 
 **ARRAY\<MAP\<int, string>>**
-```
+```sql
 DECLARE @aMap1 SQL.MAP<int, string> = new SQL.MAP<int, string>{{503, "Portland"}};
 DECLARE @aMap2 SQL.MAP<int, string> = new SQL.MAP<int, string>{{541, "Eugene"}};
 DECLARE @aMap3 SQL.MAP<int, string> = new SQL.MAP<int, string>{{602, "Phoenix"}, {520, "Tucson"}, {480, "Mesa"}};
@@ -323,7 +322,7 @@ USING Outputters.Text();
 ```
 
 **ARRAY\<ARRAY\<string>>**
-```
+```sql
 DECLARE @anArrayB1 SqlArray<string> = SqlArray.Create(new [] {"The Girl with the Dragon Tattoo", "Stieg Larsson", "2005"});
 DECLARE @anArrayB2 SQL.ARRAY<string> = new SQL.ARRAY<string>{"The Book Thief", "Markus Zusak", "2005"};
 DECLARE @anArrayB3 SQL.ARRAY<string> = new SQL.ARRAY<string>{"The Silver Linings Playbook", "Matthew Quick", "2008"};
@@ -396,7 +395,7 @@ USING Outputters.Text();
 ```
 
 **IEnumerable\<T>**  
-```
+```sql
 @bands = 
   SELECT * 
   FROM (VALUES ("Beatles", "George Harrison, John Lennon, Paul McCartney, Ringo Starr"), 
@@ -452,7 +451,7 @@ namespace FileOps
 
 **IEnumerable\<T> - Additional Example, Part 2**  
 Example is meant to be executed *locally*.  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 // The Directory.EnumerateFiles method returns an enumerable collection of file names.
 
 @directories = 
@@ -510,7 +509,7 @@ USING Outputters.Tsv();
 ```
 
 **IEnumerable<KeyValuePair\<K,V>>**   
-```
+```sql
 @bands = 
   SELECT * 
   FROM (VALUES ("Beatles", "George Harrison, John Lennon, Paul McCartney, Ringo Starr"), 
@@ -557,7 +556,7 @@ namespace RegOps
 
 **IEnumerable<KeyValuePair\<K,V>> - Additional Example, Part 2**  
 Example is meant to be executed *locally*.  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 // Returns names and values for a given registry key
 
 @registry = 
@@ -583,7 +582,7 @@ USING Outputters.Tsv(outputHeader: true);
 ```
 
 **IEnumerable\<Tuple>**   
-```
+```sql
 @bands = 
   SELECT * 
   FROM (VALUES ("Beatles", "George Harrison, John Lennon, Paul McCartney, Ringo Starr"), 

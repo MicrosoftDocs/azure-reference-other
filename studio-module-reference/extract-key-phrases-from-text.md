@@ -90,13 +90,13 @@ This module currently supports the following languages:
 
 For additional languages, consider using the [Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/) in Azure Cognitive Services. For more information, see [How to extract key phrases in Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction)
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset |[Data Table](data-table.md) |The table containing the text to be processed.|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-----------------|-------------|  
@@ -104,13 +104,13 @@ For additional languages, consider using the [Text Analytics API](https://docs.m
 |Text column|ColumnSelection||Required||Name or one-based index of the text column.|  
 |Language|T_Language|English, Spanish, French, Dutch, German, Italian, Column contains language|Required|English|Select the language of the text to be processed.|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|The extracted key phrases|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
   
 |Exception|Description|  
 |---------------|-----------------|  

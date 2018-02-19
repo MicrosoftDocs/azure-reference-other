@@ -83,11 +83,11 @@ The following steps describe how to manually configure the import source.
 
     If you deselect this option, the data will be read from the source each time the experiment is run, regardless of whether the data is the same or not.
 
-## <a name="Examples"></a> Examples
+## Examples
 
 For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

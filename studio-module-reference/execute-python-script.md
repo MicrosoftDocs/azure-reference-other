@@ -101,7 +101,7 @@ The module returns these outputs:
 
 - **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
 
-##  <a name="bkmk_TechnicalNotes"></a> Technical notes
+##  Technical notes
 
 This section contains additional technical details and frequently asked questions.
 

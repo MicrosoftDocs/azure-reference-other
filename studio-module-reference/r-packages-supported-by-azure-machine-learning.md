@@ -49,7 +49,7 @@ This section lists the packages from CRAN and Microsoft R Open that are supporte
 The **Compatibility** column indicates whether the package is included with CRAN R 3.1 or  Microsoft R Open (MRO; currently 3.2.2). If not otherwise marked, the package is included with both.
 
 > [!NOTE]
-> Many new packages are now available from Microsoft R Open, including RevoScaleR. This means that you can easily use the same R code in Azure ML Studio, Microsoft R Server, and in SQL Server Machine Learning Services. 
+> Many new packages are now available from Microsoft R Open. This means that you can easily use the same R code in Azure ML Studio, Microsoft R Server, and in SQL Server Machine Learning Services. 
 
 ###  <a name="bkmk_A"></a> A  
 
@@ -575,7 +575,6 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |RevoPemaR|MRO only| 
 |RevoRpeConnector|MRO only| 
 |RevoRsrConnector|MRO only| 
-|RevoScaleR|MRO only| 
 |RevoTreeView|MRO only| 
 |RevoUtils|MRO only|   
 |RevoUtilsMath|MRO only|

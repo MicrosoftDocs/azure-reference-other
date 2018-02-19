@@ -54,7 +54,7 @@ Create_Statistics_Statement :=
 
 The following example creates a statistics on the `OrderID` column within the table `Orders` in `TestReferenceDB`.  
   
-```
+```sql
 USE TestReferenceDB; 
 CREATE STATISTICS IF NOT EXISTS ordersStats ON dbo.Orders(OrderID) WITH FULLSCAN;  
 ```

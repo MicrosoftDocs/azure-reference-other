@@ -41,7 +41,7 @@ This aggregator can be used in a [windowing expression](over-expression-u-sql.md
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure you create and populate the table in a separate window before executing the examples.
 
-```
+```sql
 DROP TABLE IF EXISTS master.dbo.Employees;
 
 CREATE TABLE master.dbo.Employees
@@ -75,7 +75,7 @@ VALUES
 
 **A.    Count of all values**  
 The following query calculates the: 1) total record count, 2) total department count, and 3) distinct number of departments.
-```
+```sql
 @result =
     SELECT COUNT( * ) AS TotalRecordCount,
            COUNT(DeptName) AS DeptNameCount,
@@ -89,7 +89,7 @@ USING Outputters.Csv();
 
 **B.    Count values per group**  
 The following query calculates the count of employees within each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
-```
+```sql
 @result =
     SELECT DeptName,
            COUNT( * ) AS EmpNameByDeptCount
@@ -103,7 +103,7 @@ USING Outputters.Csv();
 
 **C.    Count values with OVER()**  
 The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query calculates the employee count over the window - all employees.
-```
+```sql
 @result =
     SELECT EmpName,
            COUNT( * ) OVER() AS EmpNameCount
@@ -116,7 +116,7 @@ USING Outputters.Csv();
 
 **D.    Count values over a defined window using OVER()**  
 The [OVER](over-expression-u-sql.md) clause in the following query is DeptName.  The query returns all records and the number of employees over the window - DeptName.
-```
+```sql
 @result =
     SELECT *,
            COUNT( * ) OVER(PARTITION BY DeptName) AS EmpNameByDeptCount

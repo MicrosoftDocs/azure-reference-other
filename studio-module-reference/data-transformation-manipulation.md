@@ -49,7 +49,7 @@ For examples of how to work with complex data in machine learning experiments, s
 
 - [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Illustrates how to partition datasets and apply special processing to each partition.  
  
-##  <a name="modules"></a> Modules in this category
+##  Modules in this category
 
 The **Data Transformation/Manipulation** category includes the following modules:  
   

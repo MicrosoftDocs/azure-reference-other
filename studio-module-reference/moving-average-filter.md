@@ -86,14 +86,14 @@ For examples of how filters are used in machine learning, see this experiment in
   
 -  [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Length|>=1|Integer|5|Set the length of the moving average window|  
 |Type|Any|MovingAverageType||Specify the type of moving average to create|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

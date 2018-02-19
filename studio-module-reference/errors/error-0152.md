@@ -14,10 +14,10 @@ caps.latest.revision: 3
 # Error 0152  
  The Azure cloud type was specified incorrectly in the module context.  
   
-|Exception Messages|  
+|Exception messages|  
 |------------------------|  
 |Bad Azure Cloud Type|  
 |Bad Azure Cloud Type: {0}|  
   
-## See also  
+### See also  
  [Module error codes](../machine-learning-module-error-codes.md)

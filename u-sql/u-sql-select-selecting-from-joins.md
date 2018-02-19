@@ -103,30 +103,31 @@ There are however ways to still apply other join predicates. If one has a non-eq
 - The examples are designed for execution in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   100, (int?)10000, new DateTime(2012,05,31)),
-        (2, "Sophia", 100, (int?)15000, new DateTime(2012,03,19)),
-        (3, "Liam",   100, (int?)30000, new DateTime(2014,09,14)),
-        (4, "Amy",    100, (int?)35000, new DateTime(1999,02,27)),
-        (5, "Justin", 100, (int?)15000, new DateTime(2015,01,12)),
-        (6, "Emma",   200, (int?)8000,  new DateTime(2014,03,08)),
-        (7, "Jacob",  200, (int?)8000,  new DateTime(2014,09,02)),
-        (8, "Olivia", 200, (int?)8000,  new DateTime(2013,12,11)),
-        (9, "Mason",  300, (int?)50000, new DateTime(2016,01,01)),
-        (10, "Ava",   400, (int?)15000, new DateTime(2014,09,14)),
-        (11, "Ethan", 400, (int?)9000,  new DateTime(2015,08,22)),
-        (12, "David", 800, (int?)100,   new DateTime(2016,11,01)),
-        (13, "Andrew", 100, (int?)null, new DateTime(1995,07,16)),
-        (14, "Jennie", 100, (int?)34000, new DateTime(2000,02,12))
-        ) AS T(EmpID, EmpName, DeptID, Salary, StartDate);
-```
+
+   ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   100, (int?)10000, new DateTime(2012,05,31)),
+            (2, "Sophia", 100, (int?)15000, new DateTime(2012,03,19)),
+            (3, "Liam",   100, (int?)30000, new DateTime(2014,09,14)),
+            (4, "Amy",    100, (int?)35000, new DateTime(1999,02,27)),
+            (5, "Justin", 100, (int?)15000, new DateTime(2015,01,12)),
+            (6, "Emma",   200, (int?)8000,  new DateTime(2014,03,08)),
+            (7, "Jacob",  200, (int?)8000,  new DateTime(2014,09,02)),
+            (8, "Olivia", 200, (int?)8000,  new DateTime(2013,12,11)),
+            (9, "Mason",  300, (int?)50000, new DateTime(2016,01,01)),
+            (10, "Ava",   400, (int?)15000, new DateTime(2014,09,14)),
+            (11, "Ethan", 400, (int?)9000,  new DateTime(2015,08,22)),
+            (12, "David", 800, (int?)100,   new DateTime(2016,11,01)),
+            (13, "Andrew", 100, (int?)null, new DateTime(1995,07,16)),
+            (14, "Jennie", 100, (int?)34000, new DateTime(2000,02,12))
+            ) AS T(EmpID, EmpName, DeptID, Salary, StartDate);
+   ```
 
 **A.    How to write U-SQL joins with equality and in-equality comparisons**  
 The query first identifies a subset of data, `DeptID` and `DeptMaxSalary`, and stores it in a new rowset variable.  Then both rowset variables are joined on `DeptID` to identify all employees that have a salary that is lower than the highest salary in his/her dept.
-```
+```sql
 @employees2 =
     SELECT DeptID,
            MAX(Salary) AS DeptMaxSalary
@@ -148,7 +149,7 @@ USING Outputters.Csv();
 
 **B.    How to write U-SQL joins with non-equijoins.**    
 Returns each employee, his/her salary, and the number of employees with a higher salary
-```
+```sql
 @result =
     SELECT a.EmpName,
            a.Salary,
@@ -166,7 +167,7 @@ USING Outputters.Csv();
 
 **C.	How to write U-SQL joins where join comparison includes more complex expressions**   
 All employees that have a salary that is equal to the adjusted highest salary in his/her dept.
-```
+```sql
 @employees2 =
     SELECT DeptID,
            MAX(Salary)-1000 AS DeptAdjustedMaxSalary
@@ -187,7 +188,7 @@ USING Outputters.Csv();
 
 **D.	How to write U-SQL joins where join comparison includes more complex expressions, additional example.**    
 This query identifies departments that have more than three employees.  The expression is then joined back to the rowset variable to identify the employees from departments which have more than three employees.
-```
+```sql
 @result =
     SELECT a.DeptID,
            a.EmpName

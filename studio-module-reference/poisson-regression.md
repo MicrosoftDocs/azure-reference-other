@@ -111,7 +111,7 @@ For examples of how Poisson regression is used in machine learning, see the [Azu
 
 - [Preventive Maintenance](https://gallery.cortanaintelligence.com/Experiment/a677f8eececf40eaa158699a2b27e3c8?r=legacy): An extended walkthrough that uses **Poisson Regression** to assess the severity of failures predicted by a decision forest model.
 
-##  <a name="bkmk_Notes"></a> Technical notes
+##  Technical notes
 
 Poisson regression is used to model count data, assuming that the label has a Poisson distribution. For example, you might use it to predict the number of calls to a customer support center on a particular day.
 

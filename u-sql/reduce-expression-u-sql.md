@@ -140,11 +140,11 @@ The `USING` clause specifies which reducer should be used to transform the input
       'USING' udo_expression.</pre></td></tr></table>
   
   The `USING` clause takes a C# expression that returns an instance of `IReducer`. Users can write their own by implementing an `IReducer` (see [U-SQL Programmability Guide: User-Defined Reducer](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-reducer) for more detail on how to write your own reducer). Most commonly, the UDO expression is either the instantiation of a reducer class of the form  
-  ```
+  ```sql
   USING new MyNameSpace.MyReducer(parameter:"value")
   ```
   or the invocation of a factory method  
-  ```
+  ```sql
   USING MyNameSpace.MyReducerFactory(parameter:"value")
   ```
   
@@ -158,6 +158,7 @@ The `USING` clause specifies which reducer should be used to transform the input
 <a name="RangeReducer">**User-Defined Reducer - RangeReducer**</a>   
 Example is a slightly modified version of the example given at [How do I combine overlapping ranges using U-SQL? Introducing U-SQL Reducer UDOs](https://blogs.msdn.microsoft.com/azuredatalake/2016/06/27/how-do-i-combine-overlapping-ranges-using-u-sql-introducing-u-sql-reducer-udos/) and [usql/Examples/RangeReducer/RangeReducer/](https://github.com/Azure/usql/tree/master/Examples/RangeReducer/RangeReducer). Please review the reducer article for details.   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -226,7 +227,7 @@ namespace ReduceSample
 
 **Using User-Defined Reducer - RangeReducer**   
 Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 // Dataset
 @aLog = 
     SELECT * FROM 
@@ -283,6 +284,7 @@ USING Outputters.Csv();
 
 <a name="SalesReducer">**User-Defined Reducer - SalesReducer**</a>    
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -318,7 +320,7 @@ namespace ReferenceGuide_Examples
 
 **Using User-Defined Reducer - SalesReducer**   
 Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 // Dataset
 @sales = 
     SELECT * FROM 
@@ -366,7 +368,7 @@ USING Outputters.Csv(outputHeader: true);
 **Reducer with ORDER BY and FETCH**   
 The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 This examples continues to use `SalesReducer` defined earlier.
-```
+```sql
 // Same as previous example but only returns top 3 records ordered by SalesAmount
 @reducer =
     REDUCE @sales

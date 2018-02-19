@@ -42,7 +42,7 @@ Table_Value_Constructor :=
    
 The following example creates a table containing three rows with three columns. The first column is of type long, the second of type string and the third is of type DateTime. The rowset will be output into a comma-separated file.
   
-```
+```sql
 @res = SELECT *   
        FROM (VALUES  
               (1L, "val1", new DateTime(2000,1,1))  
@@ -56,7 +56,7 @@ USING Outputters.Csv();
   
 The following example creates a table where the second integer column contains a null value. Since C# does not allow the promotion of a non-nullable type instance to its nullable type, each row constructor has to cast the values in the column that contains the null to its type’s nullable type:  
   
-```
+```sql
 @employees = SELECT * FROM (VALUES  
                              ("Rafferty",   (int?) 31)  
                            , ("Jones",      (int?) 33)  

@@ -69,7 +69,7 @@ The following articles introduce common data scenarios in machine learning:
   
 -   [Download Data](http://go.microsoft.com/fwlink/?LinkId=525938)  
   
-##  <a name="modules"></a> List of modules  
+##  List of modules  
 
 The **Data Input and Output** category includes the following modules:  
 

@@ -78,26 +78,26 @@ Many more languages can be detected than Azure Machine Learning currently suppor
 
 The underlying linguistic services are also used by the [Text Analytics ](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) service in [Azure Cognitive Services](https://docs.microsoft.com/azure/#pivot=products&panel=cognitive).
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|The input|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
 |Upper bound on number of languages to detect|Integer|[1;184]|Required|1|Upper bound on number of languages to detect.|  
 |Text column|ColumnSelection||Required||Name or one-based index of text column.|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|The result|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
   
 |Exception|Description|  
 |---------------|-----------------|  

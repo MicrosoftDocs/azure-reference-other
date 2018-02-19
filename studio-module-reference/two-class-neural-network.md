@@ -136,7 +136,7 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
   
 -   [Deep Neural networks sample (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

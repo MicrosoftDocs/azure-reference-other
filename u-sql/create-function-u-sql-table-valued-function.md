@@ -113,7 +113,8 @@ This statement creates the function with the specified identifier and function s
 - The examples below use the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
 
 <a name="tvf_SearchLog">**Basic Syntax - tvf_SearchLog**</a>    
-```
+
+```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB; 
 USE DATABASE TestReferenceDB; 
 
@@ -138,7 +139,7 @@ END;
 
 **TVF with a parameter**   
 The function declaration defines the function with one argument that allows to parameterize the contained query statements. The parameter `@Region` is of type string and initialized with the default `en-gb`. The function declaration also declares the resulting table type which will be checked against the resulting query expression’s type. The query body is an extraction statement followed by a selection that applies the filter.
-```
+```sql
 DROP FUNCTION IF EXISTS TestReferenceDB.dbo.SearchLogPerRegion;
 CREATE FUNCTION TestReferenceDB.dbo.SearchLogPerRegion(@Region string = "en-gb")
 RETURNS @res TABLE(UserId int, Start DateTime, Region string, Query string, Duration int, Urls string, ClickedUrls string)
@@ -164,7 +165,7 @@ END;
 
 **TVF that returns multiple-rowsets**  
 Similar to above function except this TVF will 1) return a rowset that contains all values for the defined region, and then 2) return a second rowset that contains value for the remaining regions.
-```
+```sql
 DROP FUNCTION IF EXISTS TestReferenceDB.dbo.SearchLogPerRegionWithRemainder;
 CREATE FUNCTION TestReferenceDB.dbo.SearchLogPerRegionWithRemainder(@Region string = "en-gb")
 RETURNS (@definedRegion, @remainderRegions)
@@ -203,7 +204,8 @@ END;
 
 <a name="tvf_recursive">**Recursive TVF**</a>  
 The TVF below calls itself and increments a value by one.  The recursive calls continue based on the value passed to the parameter `@MaxIterations`.  A value greater than 50 to `@MaxIterations` will cause the function to error.  Consider the options to avoid such an error.  Here, you could add code to the call to prevent a value greater than 50 to be passed to `@MaxIterations`.  The function definition could also be modified to alter the behavior when `@CurrentIteration` exceeds 50 and/or when `@MaxIterations` is passed a value greater than 50.
-```
+
+```sql
 USE TestReferenceDB;
 
 // Function definition

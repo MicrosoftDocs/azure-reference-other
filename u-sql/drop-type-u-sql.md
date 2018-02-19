@@ -38,7 +38,7 @@ If the optional `IF EXISTS` is specified, then the statement drops the type if i
 ### Example    
 - The example can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The script can be executed locally.  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-```
+```sql
 DROP TYPE TestReferenceDB.dbo.PhoneType;
 ```
   

@@ -54,7 +54,8 @@ If a `Simple_File_Set_Path` is specified in an [OUTPUT](output-statement-u-sql.m
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The examples below uses the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
 - The sample data is used to create and populate the table defined below:
-```
+
+```SQL
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
 USE DATABASE TestReferenceDB; 
 
@@ -75,7 +76,8 @@ CREATE TABLE dbo.SearchLog (
 ```
 
 **Default_Account_Path_URI**   
-```
+
+```sql
 @result = 
     SELECT *
     FROM TestReferenceDB.dbo.SearchLog;
@@ -86,7 +88,8 @@ USING Outputters.Csv();
 ```
 
 **ADL_Path_URI**   
-```
+
+```sql
 @result =
     SELECT *
     FROM TestReferenceDB.dbo.SearchLog;
@@ -97,7 +100,8 @@ USING Outputters.Csv();
 ```
 
 **WASB_Path_URI**  
-```
+
+```sql
 @result =
     SELECT *
     FROM TestReferenceDB.dbo.SearchLog;
@@ -108,7 +112,8 @@ USING Outputters.Csv();
 ```
  
  **Simple_File_Set_Path**  
- ```
+
+ ```sql
 @result =
     SELECT *
     FROM TestReferenceDB.dbo.SearchLog;

@@ -134,7 +134,7 @@ To see examples a parameter sweep with K-means clustering, see the [Azure AI Gal
 
 - [Clustering sweep using the Diabetes dataset](http://gallery.cortanaanalytics.com/Experiment/Clustering-sweep-diabetes-dataset-1)
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 This section contains tips and implementation details.
 ### Optimizing clustering models
