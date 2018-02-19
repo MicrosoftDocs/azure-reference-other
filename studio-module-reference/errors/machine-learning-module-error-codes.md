@@ -25,7 +25,7 @@ This topic lists the errors that might be reported in individual modules in Azur
   
  If the error message text is not helpful, please send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the Azure Machine Learning forum and post a question.  
   
-##  <a name="errors"></a> Exceptions list  
+###  <a name="errors"></a> Exceptions list  
   
 |Exception|Description|  
 |---------------|-----------------|  
