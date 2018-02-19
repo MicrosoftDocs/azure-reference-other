@@ -102,13 +102,13 @@ To increase the number of cases, you can set the value of **SMOTE percentage**, 
 
     If SMOTE is not effective in your dataset, other approaches that you might consider include various methods for oversampling the minority cases or undersampling the majority cases, as well as ensemble techniques that help the learner directly, by using clustering, bagging, or adaptive boosting.
 
-##  <a name="ExpectedInputs"></a> Expected input  
+##  Expected input  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Samples|[Data Table](data-table.md)|A dataset of samples|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -116,7 +116,7 @@ To increase the number of cases, you can set the value of **SMOTE percentage**, 
 |Number of nearest neighbors|>=1|Integer|1|The number of nearest neighbors from which to draw features for new cases|  
 |Random seed|Any|Integer|0|Seed for the random number generator|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

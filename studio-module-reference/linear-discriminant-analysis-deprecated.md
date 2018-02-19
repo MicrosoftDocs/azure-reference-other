@@ -73,7 +73,7 @@ To see examples of how feature selection is used in machine learning experiments
 
 + [Fisher Linear Discriminant Analysis](https://gallery.cortanaintelligence.com/Details/35da9465c13f4050babff2f297284dc1): Demonstrates how to use this module for dimensionality reduction.
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

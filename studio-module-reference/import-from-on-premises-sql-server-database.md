@@ -93,7 +93,7 @@ Optionally, you can change the dataset and its metadata using the tools in Studi
 
 - Use [Partition and Sample](partition-and-sample.md) to separate the dataset by criteria, or get the top *n* rows.
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

@@ -27,7 +27,7 @@ The examples can be executed in Visual Studio with the [Azure Data Lake Tools pl
 
 
  **Query the usql.schemas view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.schemas
@@ -36,7 +36,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query the usql.schemas view with usql.databases view**
-```
+```sql
 @schemas =
     SELECT d.name AS dbName,
             s.*

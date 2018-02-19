@@ -40,7 +40,7 @@ After you have configured the clustering algorithm, you train it on data by usin
 
 When the model is trained, use it to predict cluster membership for new data points. For example, if you have used clustering to group customers by purchasing behavior, you can use the model to predict the purchasing behavior of new customers.
   
-##  <a name="modules"></a> List of modules  
+##  List of modules  
 
 The clustering category includes these modules:
 

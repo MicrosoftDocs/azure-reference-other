@@ -177,7 +177,7 @@ For updated instructions on how to create a web service from a Studio experiment
 
 By default, the web service expects all input columns from the training data to be provided, including the label column. You can add an instance of [Select Columns in Dataset](select-columns-in-dataset.md) between the input data source and the [Score Model](score-model.md) module to exclude the label you’re trying to predict.
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 - The **Create R Model** module supports use of CRAN R only. You cannot select another version of R, or use Microsoft R Open.
 

@@ -19,21 +19,22 @@ The Csv() extractor disallows the `delimiter` parameter and defaults the field d
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The example below uses the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
-```
-// Excel CSV (ANSI with ASCII only)
-// You need to quote ASCII with [] to make sure it is not read as a reserved U-SQL keyword
-@Trips =
-    EXTRACT date    DateTime,
-        driver_id   int,
-        vehicle_id  int,
-        trips       string // Array
-     FROM "/Samples/Data/AmbulanceData/DriverShiftTrips.csv"
-     USING Extractors.Csv(encoding: Encoding.[ASCII]);
 
-OUTPUT @Trips 
-TO "/Output/ReferenceGuide/BuiltIn/UDOs/extractorCsv_DriverShiftTrips.csv" 
-USING Outputters.Csv();
-```
+   ```sql
+    // Excel CSV (ANSI with ASCII only)
+    // You need to quote ASCII with [] to make sure it is not read as a reserved U-SQL keyword
+    @Trips =
+        EXTRACT date    DateTime,
+            driver_id   int,
+            vehicle_id  int,
+            trips       string // Array
+         FROM "/Samples/Data/AmbulanceData/DriverShiftTrips.csv"
+         USING Extractors.Csv(encoding: Encoding.[ASCII]);
+    
+    OUTPUT @Trips 
+    TO "/Output/ReferenceGuide/BuiltIn/UDOs/extractorCsv_DriverShiftTrips.csv" 
+    USING Outputters.Csv();
+   ```
 
 ### See Also 
 * [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md)

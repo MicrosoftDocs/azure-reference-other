@@ -107,7 +107,7 @@ All [C# operators](https://msdn.microsoft.com/library/6a71f45d.aspx) except for 
 
 <a name="condl"></a>**?: (Conditional)**  
 The conditional operator (`?:`) returns one of two values depending on the value of a Boolean expression.  The condition must evaluate to true or false. If condition is true, first_expression is evaluated and becomes the result. If condition is false, second_expression is evaluated and becomes the result. Only one of the two expressions is evaluated.  Either the type of first_expression and second_expression must be the same, or an implicit conversion must exist from one type to the other.  The following example returns the string "Overpaid" if `Salary` exceeds 10000.
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -129,7 +129,7 @@ USING Outputters.Csv();
 
 <a name="nullCoal"></a>**?? (Null-Coalescing)**  
 The `??` operator is called the null-coalescing operator. It returns the left-hand operand if the operand is not null; otherwise it returns the right hand operand.  The following example returns 0 where `Salary` is null.
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -151,7 +151,7 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="lamda"></a>**=> (Lamda)**   
 The `=>` token is called the lambda operator. It is used in lambda expressions to separate the input variables on the left side from the lambda body on the right side.  The following example shows two ways to find and display the length of the shortest string in an array of strings.
-```
+```sql
 @someBooks =
     SELECT * FROM
         ( VALUES
@@ -177,7 +177,8 @@ USING Outputters.Csv(outputHeader: true);
 ### <a name="stringMethods">**String Methods**</a>   
 <a name="Compare">**Compare**</a>   
 Compares two specified String objects and returns an integer that indicates their relative position in the sort order.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -200,7 +201,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="CompareOrdinal">**CompareOrdinal**</a>   
 Compares two String objects by evaluating the numeric values of the corresponding Char objects in each string.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -224,7 +226,8 @@ USING Outputters.Csv(outputHeader: true);
 <a name="CompareTo">**CompareTo - Basic Syntax**</a>   
 CompareTo compares this instance with a specified String object and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified string. 
 CompareTo was designed primarily for use in sorting or alphabetizing operations.
-```
+
+```sql
 @someData = 
     SELECT * FROM 
     ( VALUES
@@ -249,7 +252,7 @@ USING Outputters.Csv(outputHeader: true);
 
 **CompareTo - Additional Example**   
 This query uses CompareTo inthe WHERE clause to identify all employees with names that start with "J" through "N."
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -282,7 +285,8 @@ USING Outputters.Csv();
 
 <a name="Concat">**Concat**</a>   
 Concatenates one or more instances of String, or the String representations of the values of one or more instances of Object.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -304,7 +308,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="Contains">**Contains**</a>   
 Returns a value indicating whether a specified substring occurs within this string.  This query returns Films where Amy Adams is included as one of the MainActors.
-```
+
+```sql
 @someFilms =
     SELECT * FROM
         ( VALUES
@@ -327,7 +332,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="EndsWith">**EndsWith**</a>    
 Determines whether the end of this string instance matches the specified string. This example returns records where `PhoneNumber` ends with 2738.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -350,7 +356,8 @@ USING Outputters.Csv();
 
 <a name="Equals">**Equals**</a>    
 Determines whether this instance and another specified String object have the same value. The following example demonstrates the Equals method. It compares the word `Sophia` with an equivalent word, its lowercase equivalent, and its uppercase equivalent.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -371,7 +378,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="Format">**Format**</a>   
 Converts the value of objects to strings based on the formats specified and inserts them into another string. 
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -418,7 +426,8 @@ USING Outputters.Text();
 <a name="GetHashCode">**GetHashCode**</a>  
 Returns the hash code for this string.
 The following example demonstrates the `GetHashCode` method using various input strings.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -440,7 +449,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="GetTypeCode">**GetTypeCode**</a>   
 Returns the [TypeCode](https://msdn.microsoft.com/library/system.typecode(v=vs.110).aspx) for class String.  Call the GetTypeCode method on classes that implement the [IConvertible](https://msdn.microsoft.com/library/system.iconvertible(v=vs.110).aspx) interface to obtain the type code for an instance of that class.  Otherwise, call an object's GetType method to obtain its Type object, then call the Type object's GetTypeCode method to obtain the object's type code.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -465,7 +475,8 @@ USING Outputters.Csv(outputHeader : true);
 
 <a name="IndexOf">**IndexOf**</a>   
 Reports the zero-based index of the first occurrence of the specified string in this instance.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -492,7 +503,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="Insert">**Insert**</a>   
 Returns a new string in which a specified string is inserted at a specified index position in this instance.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -511,7 +523,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="IsNullOrEmpty">**IsNullOrEmpty**</a>   
 Indicates whether the specified string is null or an Empty string.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -533,7 +546,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="IsNullOrWhiteSpace">**IsNullOrWhiteSpace**</a>   
 Indicates whether a specified string is null, empty, or consists only of white-space characters.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -555,7 +569,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="Join">**Join**</a>   
 Concatenates the elements of a specified array or the members of a collection, using the specified separator between each element or member.
-```
+
+```sql
 @someFruit = 
     SELECT * FROM 
         ( VALUES
@@ -579,7 +594,8 @@ USING Outputters.Text();
 
 <a name="LastIndexOf">**LastIndexOf**</a>   
 Reports the zero-based index position of the last occurrence of a specified Unicode character within this instance.  The zero-based starting index position of value if that string is found, or -1 if it is not. If value is String.Empty, the return value is the last index position in this instance.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -644,7 +660,8 @@ USING Outputters.Text(outputHeader: false, quoting: false);
 
 <a name="PadLeft">**PadLeft**</a>   
 Returns a new string of a specified length in which the beginning of the current string is padded with spaces or with a specified Unicode character. 
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -665,7 +682,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="PadRight">**PadRight**</a>   
 Returns a new string of a specified length in which the end of the current string is padded with spaces or with a specified Unicode character. 
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -686,7 +704,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="Remove">**Remove**</a>   
 Returns a new string in which a specified number of characters from the current string are deleted.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -714,7 +733,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="Replace">**Replace**</a>   
 Returns a new string in which all occurrences of a specified Unicode character or String in the current string are replaced with another specified Unicode character or String.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -734,7 +754,7 @@ USING Outputters.Csv(outputHeader: true);
 <a name="Split">**Split**</a>   
 Returns a string array that contains the substrings in this instance that are delimited by elements of a specified string or Unicode character array.
   
-```  
+```sql  
 @someBooks = 
     SELECT * FROM 
         ( VALUES
@@ -752,7 +772,8 @@ Returns a string array that contains the substrings in this instance that are de
 
 <a name="StartsWith">**StartsWith**</a>    
 StartsWith determines whether the beginning of this string instance matches a specified string. This example returns records where `PhoneNumber` starts with 425.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -775,7 +796,8 @@ USING Outputters.Csv();
 
 <a name="Substring">**Substring**</a>    
 Substring retrieves a substring from an instance.  In this example, `withoutArea` starts at a specified character position and continues to the end of the string.  The remaining numbers start at a specified character position and has a specified length.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -800,7 +822,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="ToCharArray">**ToCharArray**</a>  
 Copies the characters in this instance to a Unicode character array. 
-```
+
+```sql
 @someData = 
     SELECT * FROM 
         ( VALUES
@@ -842,7 +865,8 @@ USING Outputters.Csv();
 
 <a name="ToLower">**ToLower**</a>   
 Returns a copy of this string converted to lowercase.
-```
+
+```sql
 @someData = 
     SELECT * FROM 
         ( VALUES
@@ -860,7 +884,8 @@ USING Outputters.Text();
 
 <a name="ToUpper">**ToUpper**</a>   
 Returns a copy of this string converted to uppercase.
-```
+
+```sql
 @someData = 
     SELECT * FROM 
         ( VALUES
@@ -878,7 +903,8 @@ USING Outputters.Text();
 
 <a name="Trim">**Trim**</a>   
 Returns a new string in which all leading and trailing occurrences of a set of specified characters from the current String object are removed.
-```
+
+```sql
 @someData = 
     SELECT * FROM 
         ( VALUES
@@ -903,7 +929,8 @@ USING Outputters.Text();
 ### <a name="stringProperties">**String Properties**</a>
 <a name="Length">**Length**</a>  
 Gets the number of characters in the current String object.  The Length property returns the number of Char objects in this instance, not the number of Unicode characters. 
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -924,7 +951,8 @@ USING Outputters.Csv(outputHeader: true);
 ### <a name="ObjectMethods">**Object Methods**</a>
 <a name="GetType">**GetType**</a>  
 Gets the Type of the current instance.  For two objects x and y that have identical runtime types, Object.ReferenceEquals(x.GetType(),y.GetType()) returns true. The following example uses the GetType method with the [ReferenceEquals](https://msdn.microsoft.com/library/system.object.referenceequals(v=vs.110).aspx) method to determine whether one numeric value is the same type as two other numeric values.  The GetType method is also used determine the type of a particular object.
-```
+
+```sql
 @someData =
     SELECT * FROM
         ( VALUES
@@ -953,7 +981,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="stringFormats">**DateTime to String**</a>   
 Converting DateTime to string. See also, [Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [Custom Date and Time Format Strings](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).  
-```
+
+```sql
 DECLARE @now DateTime = DateTime.Now;
 
 @stringFormats = 
@@ -1018,7 +1047,8 @@ USING Outputters.Tsv();
 
 <a name="stringConversion">**String to DateTime**</a>  
 Converting string to DateTime.  See also, [DateTime.Parse Method](https://msdn.microsoft.com/library/system.datetime.parse(v=vs.110).aspx) and [Convert.ToDateTime Method](https://msdn.microsoft.com/library/system.convert.todatetime(v=vs.110).aspx).
-```
+
+```sql
 @convertString = 
     SELECT * FROM 
         ( VALUES
@@ -1041,7 +1071,8 @@ USING Outputters.Tsv();
 
 <a name="properties">**Properties**</a>  
 See also, [DateTime Properties](https://msdn.microsoft.com/library/system.datetime_properties(v=vs.110).aspx).  It is important to avoid misinterpreting a date returned by the Date property as a date and time. 
-```
+
+```sql
 DECLARE @now DateTime = DateTime.Now;
 
 @properties = 
@@ -1064,7 +1095,8 @@ USING Outputters.Csv();
 
 <a name="someMethods">**Some Methods**</a>   
 See also, [DateTime Methods](https://msdn.microsoft.com/library/system.datetime_methods(v=vs.110).aspx).
-```
+
+```sql
 DECLARE @now DateTime = DateTime.Now;
 
 @someMethods = 
@@ -1081,7 +1113,8 @@ USING Outputters.Csv();
         
 <a name="comparingDateTimes">**Comparing DateTimes**</a>   
 See also, [DateTime.Compare Method (DateTime, DateTime)](https://msdn.microsoft.com/library/system.datetime.compare(v=vs.110).aspx) and [DateTime.CompareTo Method](https://msdn.microsoft.com/library/system.datetime.compareto(v=vs.110).aspx).
-```
+
+```sql
 @someDates = 
     SELECT * FROM 
         ( VALUES
@@ -1116,7 +1149,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="someOperators">**Some Operators**</a>   
 See also, [DateTime Operators](https://msdn.microsoft.com/library/system.datetime_operators(v=vs.110).aspx).
-```
+
+```sql
 @someDates = 
     SELECT * FROM 
         ( VALUES
@@ -1143,7 +1177,8 @@ USING Outputters.Csv();
 
 <a name="dateDiff">**Date Diff**</a>   
 DateTime +- DateTime = TimeSpan.  See also, [TimeSpan Structure](https://msdn.microsoft.com/library/system.timespan(v=vs.110).aspx) and [TimeSpan Properties](https://msdn.microsoft.com/library/system.timespan_properties(v=vs.110).aspx).
-```
+
+```sql
 @someDates = 
     SELECT * FROM 
         ( VALUES
@@ -1172,7 +1207,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="addTimeSpan">**Add TimeSpan**</a>   
 DateTime +- TimeSpan = DateTime.
-```
+
+```sql
 DECLARE @now DateTime = DateTime.Now;
 
 @add_subtract = 
@@ -1191,7 +1227,8 @@ USING Outputters.Tsv();
 
 <a name="TimeSpan">**TimeSpan Plus TimeSpan**</a>   
 TimeSpan +- TimeSpan = TimeSpan.  See also, [TimeSpan Methods](https://msdn.microsoft.com/library/system.timespan_methods(v=vs.110).aspx).
-```
+
+```sql
 @TimeSpan =
     SELECT 
         new TimeSpan(1, 0, 0, 0).ToString() AS baseTimeSpan,
@@ -1212,7 +1249,7 @@ USING Outputters.Csv(outputHeader: true);
 ### <a name="Math"></a>**Math Methods**
 <a name="abs"></a>**Abs**   
 Returns the absolute value of a specified number.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1232,7 +1269,7 @@ USING Outputters.Csv();
 
 <a name="bigMul"></a>**BigMul**   
 Returns the square root of a specified number.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1251,7 +1288,7 @@ USING Outputters.Tsv();
 
 <a name="ceiling"></a>**Ceiling**   
 Returns the smallest integer greater than or equal to the specified number.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1276,7 +1313,7 @@ USING Outputters.Tsv(outputHeader: true);
 
 <a name="floor"></a>**Floor**   
 Returns the largest integer less than or equal to the specified number.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1301,7 +1338,7 @@ USING Outputters.Tsv(outputHeader: true);
 
 <a name="max"></a>**Max**   
 Returns the larger of two specified numbers.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1321,7 +1358,7 @@ USING Outputters.Csv();
 
 <a name="min"></a>**Min**   
 Returns the smaller of two numbers.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1341,7 +1378,7 @@ USING Outputters.Csv();
 
 <a name="pow"></a>**Pow**  
 Returns a specified number raised to the specified power.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1360,7 +1397,7 @@ USING Outputters.Csv();
 
 <a name="sign"></a>**Sign**   
 Returns an integer that indicates the sign of a double-precision floating-point number.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1391,7 +1428,7 @@ USING Outputters.Tsv();
 
 <a name="sqrt"></a>**Sqrt**   
 Returns the square root of a specified number.
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1412,7 +1449,7 @@ USING Outputters.Tsv();
 
 <a name="truncate"></a>**Truncate**   
 Calculates the integral part of a number. 
-```
+```sql
 @data  = 
     SELECT * FROM   
         (VALUES  
@@ -1434,7 +1471,7 @@ USING Outputters.Csv();
 ### <a name="Random"></a>**Random Methods**   
 <a name="randomNext"></a>**Next**   
 Returns random number.  Using the array for pet names in the example is a variant of the example taken from [Random.Next Method (Int32, Int32)](https://msdn.microsoft.com/library/2dx6wyd4(v=vs.110).aspx)
-```
+```sql
 @data  = 
     SELECT * 
     FROM

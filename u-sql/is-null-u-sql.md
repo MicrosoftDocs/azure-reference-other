@@ -38,7 +38,7 @@ Is_Null_Predicate :=
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
 
 **Dataset**   
-```
+```sql
 @somePeople = 
     SELECT * FROM 
         ( VALUES
@@ -54,7 +54,7 @@ Is_Null_Predicate :=
  ```
 
 **IS NULL**   
-``` 
+```sql 
 @result = 
     SELECT * FROM @somePeople 
     WHERE Salary IS NULL;
@@ -65,7 +65,7 @@ USING Outputters.Tsv();
 ```
 
 **IS NOT NULL**  
-```
+```sql
 @result = 
     SELECT * FROM @somePeople
     WHERE Salary IS NOT NULL;

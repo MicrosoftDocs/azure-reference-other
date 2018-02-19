@@ -33,7 +33,7 @@ Other options in the **Split Data** module support different ways to divide the 
 + [Split recommender datasets](split-data-using-recommender-split.md): Divide datasets that are used in recommendation models. The dataset should have three columns: items, users, and ratings 
 
 
-##  <a name="HowSplitRows"></a> Divide a dataset into two groups 
+##  Divide a dataset into two groups 
 
 1.  Add the [Split Data](split-data.md) module to your experiment in Studio, and connect the dataset you want to split.
   
@@ -57,7 +57,7 @@ Other options in the **Split Data** module support different ways to divide the 
 
 7. Run the experiment, or right-click the module and select **Run selected**.
 
-##  <a name="bkmk_SplitRowsExamples"></a> Examples
+##  Examples
 
 The following examples demonstrate how to perform simple splits using **Split Rows** mode.
 
@@ -73,7 +73,7 @@ To do this, add a [Split Data](split-data.md) module, and set the **Fraction of 
 
 To divide the second output into equal parts, add another instance of the **Split Data** module, and this time use the default for a 50-50 split.
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

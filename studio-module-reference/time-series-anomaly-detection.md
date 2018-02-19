@@ -80,7 +80,7 @@ For more information about the research underlying this approach, see these arti
   
     [Sources and citations (Microsoft Academic)](https://academic.microsoft.com/#/detail/135042828)  
 
-## <a name="HowTo"></a> How to configure Time Series Anomaly Detection  
+## How to configure Time Series Anomaly Detection  
   
 1.  Add the **Time Series Anomaly Detection** module to your experiment and connect the dataset that contains the time series.  
   
@@ -168,7 +168,7 @@ When training is complete, the module outputs a time series that is the same len
   
 + **Alert**: This column contain a flag with a value of 0 or 1, where 1 means that an anomaly was detected. You can set the threshold for generating the alert based on the score column, but setting the **Alert Threshold** parameter.
 
-## <a name="Examples"></a> Examples  
+## Examples  
 
 The following examples demonstrate how to set the martingale function to detect anomalies and how to interpret the results. 
 ### Detect level changes  
@@ -225,13 +225,13 @@ In these graphs, the blue lines represent data values and the red lines represen
   
 We recommend that you experiment with different alert threshold values to find the appropriate level of sensitivity for your anomaly detection scenario.  
 
-## <a name="ExpectedInputs"></a> Expected inputs
+## Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Input data containing time stamps and values|[Data Table](data-table.md)|Input data containing date-time stamps and values.|  
 
-## <a name="parameters"></a> Module parameters
+## Module parameters
 
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
@@ -239,7 +239,7 @@ We recommend that you experiment with different alert threshold values to find t
 |Window Size|Integer||Required||Specify a value that controls the size of the analysis window|  
 |Threshold|Float||Optional||Specify a value that determines the threshold on the score to identify an anomaly|  
 
-## <a name="Outputs"></a> Outputs
+## Outputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

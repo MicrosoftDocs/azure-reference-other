@@ -20,7 +20,7 @@ This article describes how to use the **Export to Azure** option in the [Export 
 
 This option is useful when you want to export results or intermediate data from a machine learning experiment to an Azure table. The Azure table service is a data management service in Azure that can store large amounts of structured, non-relational data. It is a NoSQL data store that accepts authenticated calls from inside and outside Azure.
 
-## <a name="bkmk_AzureTable"></a> How to export data to an Azure table
+## How to export data to an Azure table
 
 1. Add the [Export Data](export-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category in Studio.
 
@@ -84,7 +84,7 @@ This option is useful when you want to export results or intermediate data from 
 
 9. Run the experiment.
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -110,7 +110,7 @@ However, if you are running the experiment with other change that do not affect 
 
 Yes. However, if the storage account is in a different region from the compute node used for the machine learning experiment, data access might be slower. Further, you are charged for data ingress and egress on the subscription.
 
-## <a name="Examples"></a> Examples
+## Examples
 
 For examples of how to use these machine learning modules, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
 

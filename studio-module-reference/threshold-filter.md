@@ -124,7 +124,7 @@ For example, the following table shows the results when using a **MagnitudeLessT
 |5.75|5|5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
 |-5.75|*-5*|-5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -152,7 +152,7 @@ The **Threshold Filter** module uses the following methods to define threshold v
   
      ![calculating threshold for less than filter complex](media/aml-threshold-greaterthancomplex.png "AML_threshold-greaterthancomplex")  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -163,7 +163,7 @@ The **Threshold Filter** module uses the following methods to define threshold v
 |Upper boundary|Any|Float|1.0|Specify the upper boundary of the range|  
 |Alpha|Any|Float|3.0|Use this value, multiplied by the calculated standard deviation, as the threshold|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

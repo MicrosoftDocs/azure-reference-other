@@ -97,7 +97,7 @@ The averaged perceptron model is an early and simplified version of neural netwo
   
 -   [Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md)  
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -106,7 +106,7 @@ The averaged perceptron model is an early and simplified version of neural netwo
 |Random number seed|Any|Integer||The seed for the random number generator used by the model. Leave it blank for the default.|  
 |Allow unknown categorical levels|Any|Boolean|True|If True, creates an additional level for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

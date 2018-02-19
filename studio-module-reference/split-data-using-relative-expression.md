@@ -118,7 +118,7 @@ Rows with a date greater than 10-08-2015 are added to the first (left) output da
 
 Rows with a date of 10-08-2015 or earlier are added to the second (right) output dataset.  
 
-## <a name="bkmk_Notes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

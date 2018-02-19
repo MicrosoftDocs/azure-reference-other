@@ -30,7 +30,7 @@ The examples can be executed in Visual Studio with the [Azure Data Lake Tools pl
 
 
 **Query the usql.stats_columns view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.stats_columns 
@@ -39,7 +39,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query the usql.stats_columns view with other catalog views**
-```
+```sql
 @stats_columns =
     SELECT o.name AS objectName,
             s.name AS statName,

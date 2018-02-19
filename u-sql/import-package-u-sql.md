@@ -35,7 +35,7 @@ The optional package alias must be used when referring to variables imported fro
 - The examples utilize the packages created from [CREATE PACKAGE (U-SQL)](create-package-u-sql.md).
 
 The following script uses the now the previously defined package `XMLorJSON` from database `TestReferenceDB` with the parameter `xml` and parses the XML file that was provided in the package's `@xmlfile` variable. Please note that the file deployment will occur as well, but is not really required for this script to work.
-```
+```sql
 IMPORT PACKAGE TestReferenceDB.dbo.XMLorJSON("xml") AS xmlpackage;
 
 USING xml = Microsoft.Analytics.Samples.Formats.Xml;

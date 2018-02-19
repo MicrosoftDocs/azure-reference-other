@@ -167,7 +167,7 @@ It contains two views that we will use for the sample data.
 
 - QueryLog     
 To access this data use the code below.             
-```
+```sql
 querylog = Demo.QueryLog();
 ```
 
@@ -187,7 +187,7 @@ data:
 
  - Employees     
  To access this data use the code below.            
-```
+```sql
 employees = Demo.Employees();
 ```
 
@@ -206,7 +206,7 @@ data:
 |9|Ethan|Marketing|400|10000|
 
 Now, let’s walk through windowing functions and aggregations. As we do this the answer to this question will be clear and we’ll also understand the conceptual difference of Windowing Functions from Grouping.     
-```
+```sql
 data3 =         
     SELECT EmpName, SUM(Salary) OVER( ) As SalaryAllDepts        
     FROM employees; 
@@ -234,7 +234,7 @@ Note these things:
 When we did the first SUM without any GROUP BY we received the correct total salary 165000. But grouping collapsed that into a single row. Here we see there are as many output rows as input rows.  More interestingly the 165000 value is clearly calculated in each row but to calculate it data from EVERY row was used.  
 
 Another way of thinking about this is that each output row has knowledge of multiple input rows - in this all of the input rows. The “window” is all the rows. Now let’s try an OVER clause that contains something. In this case by using PARTITION BY DeptName our window is based on DeptName.     
-```
+```sql
 data4 =         
     SELECT EmpName, DeptName, SUM(Salary) OVER( PARTITION BY DeptName ) AS SalaryByDept  
     FROM employees; 
@@ -264,7 +264,7 @@ Key points
 
 Now let’s calculate the percentage of salary devoted to each department form the total salary across all departments. We can’t mix Windowing Functions and GROUP BY in the same statement so we’ll build it up like this:     
 
-```
+```sql
 a =         
     SELECT TOP 1 SUM(Salary) OVER( ) AS SalaryAllDepts        
     FROM employees;     

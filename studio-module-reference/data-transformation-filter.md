@@ -56,7 +56,7 @@ The following type of filters are supported in Azure Machine Learning Studio:
   
 -   **User-defined or custom filters**. If you already know the transformations that should be applied to a data series, you can create a user-defined filter and provide the numeric coefficients that are applied to transform the data series. A custom filter can emulate a FIR or IIR filter but you have more control over the values to apply at each point in the series.  
   
-###  <a name="subsection3"></a> Filter terminology  
+###  Filter terminology  
 
  The following are some simple definitions of terms that are used in the parameters and properties of filters.  
   

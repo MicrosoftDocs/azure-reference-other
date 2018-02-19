@@ -140,7 +140,7 @@ If the `INTO` clause is specified, then the data will be distributed into the sp
 
 
 **Basic Syntax**   
-```
+```sql
 CREATE TABLE dbo.Employees
 (
     EmpID int,
@@ -154,7 +154,7 @@ DISTRIBUTED BY HASH(EmpID);
 ```
 
 **Basic Syntax - Alternative Method**   
-```
+```sql
 CREATE TABLE dbo.Employees
 (
     EmpID int,
@@ -168,7 +168,7 @@ CREATE TABLE dbo.Employees
 
 **Partitioned Table**   
 This examples creates a partitioned table. Data will be distributed over OrderID, CustomerID and partitioned by OrderDate.
-```
+```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
 USE DATABASE TestReferenceDB; 
 

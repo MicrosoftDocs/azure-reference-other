@@ -23,7 +23,7 @@ The Text() outputter supports a variety of text file formats that all follow a r
 
 **Basic Syntax**   
 The examples below show the basic syntax for each parameter using the Text() outputter.  Compare the output against the dataset as well as against the other created data files.
-```
+```sql
 @sampleData = 
     SELECT * FROM 
         ( VALUES

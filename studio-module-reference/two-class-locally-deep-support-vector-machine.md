@@ -71,7 +71,7 @@ After you define the model parameters, train it by providing the model and a tag
   
 7.  For **Sigmoid sharpness**, type a value to use for the scaling parameter σ.  
   
-     Larger values mean that the **tanh** in local kernel Θ (theta) is saturated, whereas a smaller value implies a more linear operating range for theta. You can find the full optimization formula in the [Technical Notes](#Notes) section.  
+     Larger values mean that the **tanh** in local kernel Θ (theta) is saturated, whereas a smaller value implies a more linear operating range for theta. You can find the full optimization formula in the [Technical Notes](#bkmk_Notes) section.  
   
      If the default value (1) does not work well, you can also try {0.1, 0.01, 0.001}.  
   
@@ -121,7 +121,7 @@ After training is complete:
 
 +  To perform cross-validation against a labeled data set, connect the untrained model to [Cross-Validate Model](cross-validate-model.md).
 
-##  <a name="Notes"></a> Technical notes
+##  <a name="bkmk_Notes"></a> Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

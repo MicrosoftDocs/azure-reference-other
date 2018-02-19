@@ -69,7 +69,7 @@ To export data, you provide the instance name and database name where the data i
 
 8. Run the experiment.
 
-## <a name="Examples"></a> Examples
+## Examples
 
 For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):
 
@@ -81,7 +81,7 @@ For examples of how to use the [Export Data](export-data.md) module, see the [Az
 
 + [Use Azure Machine Learning with SQL Data Warehouse](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-integrate-azure-machine-learning/): Demonstrates how to create a regression model to predict pricing, using data in Azure SQL Data Warehouse.
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

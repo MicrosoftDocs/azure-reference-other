@@ -28,7 +28,7 @@ The examples can be executed in Visual Studio with the [Azure Data Lake Tools pl
 
 
 **Query the usql.databases view**   
-```
+```sql
 OUTPUT usql.databases
 TO "/ReferenceGuide/CatalogViews/databases.txt"
 USING Outputters.Tsv(outputHeader:true);

@@ -29,7 +29,7 @@ An Azure subscription and Azure Data Lake Analytics account is not needed when e
 
 
 **Output a previously stored image to a file**
-```
+```sql
 REFERENCE ASSEMBLY ImageCommon;
 
 @image_out =
@@ -46,6 +46,7 @@ USING new Cognition.Vision.ImageOutputter();
 
 <a name="imageOps">**User Defined Function - scaleImageBy and others**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file. Code is taken from [https://github.com/Azure/usql/blob/master/Examples/ImageApp/Image/ImageOps.cs](https://github.com/Azure/usql/blob/master/Examples/ImageApp/Image/ImageOps.cs).  See usage in next section, **below**.
+
 ```csharp
 using System;
 using System.IO;
@@ -308,7 +309,7 @@ namespace Images
 **Using User Defined Functions  - scaleImageBy and others**   
 Various user defined functions are used to perform various manipulations to a stored file.  Using the Code-Behind **above**.  The advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically. 
 
-```U-SQL
+```sql
 REFERENCE ASSEMBLY ImageCommon;
 USING Images;
 
