@@ -1,5 +1,6 @@
 ---
 title: "Error 0045 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0045
-**Error 0045**  
-  
+# Error 0045  
  Exception occurs when it is not possible to create a column because of mixed element types in the source.  
   
  This error in Azure Machine Learning is produced when the element types of two datasets being combined are different.  
@@ -29,10 +28,10 @@ manager: "jhubbard"
 |Cannot create column with id "{0}" of mixed element types:\n\tType of data[{1}, {0}] is {2}\n\tType of data[{3}, {0}] is {4}.|  
   
  > [!TIP]
->  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
->   
->  -   [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
-> -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
+ >  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
+ >  
+ >  -  [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
+ >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

@@ -1,5 +1,6 @@
 ---
 title: "Error 0007 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 06/14/2017
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0007
-**Error 0007**  
-  
+# Error 0007  
  Exception occurs if parameter is greater than a specific value.  
   
  You will receive this error in Azure Machine Learning if, in the properties for the module, you specified a value that is greater than is allowed. For example, you might specify a data that is outside the range of supported dates, or you might indicate that 5 columns be used when only 3 columns are available. 
@@ -37,10 +36,10 @@ manager: "jhubbard"
 |Parameter "{0}" has value "{1}" which should be less than or equal to {2}.|  
   
  > [!TIP]
->  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
->   
->  -   [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
-> -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
+ >  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
+ >  
+ >  -  [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
+ >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
-## See Also  
- [Module Error Codes](machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](machine-learning-module-error-codes.md)

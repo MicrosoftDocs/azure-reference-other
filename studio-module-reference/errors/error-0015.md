@@ -1,5 +1,6 @@
 ---
 title: "Error 0015 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0015
-**Error 0015**  
-  
+# Error 0015  
  Exception occurs if database connection has failed.  
   
  You will receive this error if you enter an incorrect SQL account name, password, database server, or database name, or if a connection with the database cannot be established due to problems with the database or server.  
@@ -28,5 +27,5 @@ manager: "jhubbard"
 |Error making database connection.|  
 |Error making database connection: {0}.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

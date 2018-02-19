@@ -1,5 +1,6 @@
 ---
 title: "Error 0042 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 06/14/2017
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0042
-**Error 0042**  
-  
+# Error 0042  
  Exception occurs when it is not possible to convert column to another type.  
   
  This error in Azure Machine Learning occurs when it is not possible to convert column to the specified type.  You will receive this error if a module requires a particular data type, such as datetime, text, a floating point number, or integer, but it is not possible to convert an existing column to the required type.  
@@ -53,10 +52,10 @@ Another reason you might get this error if you try to use a column containing fl
 |Could not convert column "{2}" of type {0} to column "{3}" of type {1}.|  
   
  > [!TIP]
->  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
->   
->  -   [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
-> -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
+ >  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
+ >  
+ >  -  [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
+ >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

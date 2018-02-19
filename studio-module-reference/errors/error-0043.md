@@ -1,5 +1,6 @@
 ---
 title: "Error 0043 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0043
-**Error 0043**  
-  
+# Error 0043  
  Exception occurs when element type does not explicitly implement Equals.  
   
  This error in Azure Machine Learning is unused and will be deprecated.  
@@ -28,5 +27,5 @@ manager: "jhubbard"
 |No accessible explicit method Equals found.|  
 |Cannot compare values for column \\"{0}\\" of type {1}. No accessible explicit method Equals found.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)
