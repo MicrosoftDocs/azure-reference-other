@@ -1,5 +1,6 @@
 ---
 title: "Error 0058 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0058
-**Error 0058**  
-  
+# Error 0058  
  This error in Azure Machine Learning occurs if the dataset does not contain the expected label column.  
   
  This exception can also occur when the label column provided does not match the data or datatype expected by the learner, or has the wrong values. For example, this exception is produced when using a real-valued label column when training a binary classifier.  
@@ -36,10 +35,10 @@ manager: "jhubbard"
 |The label column "{0}" is not expected in "{1}".|  
   
  > [!TIP]
->  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
->   
->  -   [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
-> -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
+ >  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
+ >  
+ >  -  [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
+ >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)
