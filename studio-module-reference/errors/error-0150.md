@@ -1,5 +1,6 @@
 ---
 title: "Error 0150 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -10,9 +11,7 @@ ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0150-d185d1509344
 caps.latest.revision: 6
 ---
-# Error 0150
-**Error 0150**  
-  
+# Error 0150  
  The scripts that come from the user package could not be unzipped, most likely because of a collision with Github files.  
   
  This error in Azure Machine Learning occurs when a script cannot be extracted, typically when there is an existing file of the same name.  
@@ -23,5 +22,5 @@ caps.latest.revision: 6
 |------------------------|  
 |Unable to unzip the bundle; possible name collision with GitHub files.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

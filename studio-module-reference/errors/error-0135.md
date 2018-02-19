@@ -1,5 +1,6 @@
 ---
 title: "Error 0135 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0135
-**Error 0135**  
-  
+# Error 0135  
  Only centroid-based cluster is supported.  
   
 ## Resolution  
@@ -27,5 +26,5 @@ manager: "jhubbard"
 |------------------------|  
 |Only centroid-based cluster is supported.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

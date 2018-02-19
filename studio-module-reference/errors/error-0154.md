@@ -1,5 +1,6 @@
 ---
 title: "Error 0154 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 08/15/2016
 ms.reviewer: ""
@@ -10,9 +11,7 @@ ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0154-d185d1509344
 caps.latest.revision: 3
 ---
-# Error 0154
-**Error 0154**  
-  
+# Error 0154  
  The specified server name could not be resolved  
   
 |Exception Messages|  
