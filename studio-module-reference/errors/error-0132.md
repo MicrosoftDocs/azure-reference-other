@@ -1,5 +1,6 @@
 ---
 title: "Error 0132 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0132
-**Error 0132**  
-  
+# Error 0132  
  No file name was specified for unpacking; multiple files were found in zip file.  
   
  This error is produced when no file name was specified for unpacking; multiple files were found in zip file. You will receive this error if the .zip file contains more than one compressed file, but you did not specify a file for extraction in the **Dataset to Unpack** text box, in the **Property** pane of the module. Currently, only one file can be extracted each time the module is run.  
@@ -28,5 +27,5 @@ manager: "jhubbard"
 |Zip file contains multiple files; you must specify the file to expand.|  
 |The file contains more than one file. Please specify the file to expand. The following files were found: {0}|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

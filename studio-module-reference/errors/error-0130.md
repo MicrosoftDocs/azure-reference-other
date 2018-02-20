@@ -1,5 +1,6 @@
 ---
 title: "Error 0130 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0130
-**Error 0130**  
-  
+# Error 0130  
  Exception occurs when all rows in the training dataset contain missing values.  
   
  This occurs when some column in the training dataset is empty.  
@@ -27,5 +26,5 @@ manager: "jhubbard"
 |------------------------|  
 |All rows in training dataset contain missing values.  Consider using the Clean Missing Data module to remove missing values.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

@@ -1,5 +1,6 @@
 ---
 title: "Error 0144 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -10,9 +11,7 @@ ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0144-d185d1509344
 caps.latest.revision: 6
 ---
-# Error 0144
-**Error 0144**  
-  
+# Error 0144  
  User-provided GitHub url is missing the expected part.  
   
  This error in Azure Machine Learning occurs when you specify a GitHub file source using an invalid URL format.  
@@ -25,5 +24,5 @@ caps.latest.revision: 6
 |Cannot parse GitHub URL.|  
 |Cannot parse GitHub URL (expecting '\blob\\' or '\tree\\' after the repository name): {0}|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

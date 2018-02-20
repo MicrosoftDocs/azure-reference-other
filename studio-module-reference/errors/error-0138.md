@@ -1,5 +1,6 @@
 ---
 title: "Error 0138 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0138
-**Error 0138**  
-  
+# Error 0138  
  Memory has been exhausted, unable to complete running of module. Downsampling the dataset may help to alleviate the problem.  
   
  This error occurs when the module that is running requires more memory than is available in the Azure container. This can happen if you are working with a very large dataset and the current operation cannot fit into memory.  
@@ -33,5 +32,5 @@ manager: "jhubbard"
 |------------------------|  
 |Memory has been exhausted, unable to complete running of module.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

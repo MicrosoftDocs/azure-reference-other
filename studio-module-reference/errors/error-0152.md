@@ -11,9 +11,7 @@ ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0152-d185d1509344
 caps.latest.revision: 3
 ---
-# Error 0152
-**Error 0152**  
-  
+# Error 0152  
  The Azure cloud type was specified incorrectly in the module context.  
   
 |Exception messages|  

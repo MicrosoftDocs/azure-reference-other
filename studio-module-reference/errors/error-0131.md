@@ -1,5 +1,6 @@
 ---
 title: "Error 0131 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0131
-**Error 0131**  
-  
+# Error 0131  
  Exception occurs if one or more datasets in a zip file fails to be unzipped and registered correctly  
   
  This error is produced when one or more datasets in a zip file fails to be unzipped and read correctly. You will receive this error if the unpacking fails because the zip file itself or one of the files in it is corrupt, or there is a system error while trying to unpack and expand a file.  
@@ -29,5 +28,5 @@ manager: "jhubbard"
 |Zipped dataset {0} failed with the following message: {1}|  
 |Zipped dataset {0} failed with a {1} exception with message: {2}|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)
