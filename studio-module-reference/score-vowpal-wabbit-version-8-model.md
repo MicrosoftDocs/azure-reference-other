@@ -113,7 +113,7 @@ The following parameters are not supported in Azure Machine Learning Studio.
 
 All arguments other than those described above are allowed.
   
-##  Expected Inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
