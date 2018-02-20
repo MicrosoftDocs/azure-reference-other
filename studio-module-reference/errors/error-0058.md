@@ -26,7 +26,7 @@ manager: "jhubbard"
   
  Check inputs for missing values and eliminate or replace them if necessary.  
   
- If necessary, add the[Edit Metadata](../edit-metadata.md) module and ensure that the label column is marked as a label.  
+ If necessary, add the [Edit Metadata](../edit-metadata.md) module and ensure that the label column is marked as a label.  
   
 |Exception Messages|  
 |------------------------|  
