@@ -180,7 +180,7 @@ For examples of how this module is used, see the [Azure AI Gallery](https://gall
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### <a name="bkmk_options"></a> How a parameter sweep works
+### How a parameter sweep works
 
 This section describes how  parameter sweep works in general, and how the options in this module interact.
 
@@ -257,7 +257,7 @@ The following learners do not support setting a range of values to use in a para
 + [Two-Class Bayes Point Machine](two-class-bayes-point-machine.md)
 + [Bayesian Linear Regression](bayesian-linear-regression.md)
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -265,7 +265,7 @@ The following learners do not support setting a range of values to use in a para
 |Training dataset|[Data Table](data-table.md)|Input dataset for training|  
 |Validation dataset|[Data Table](data-table.md)|Input dataset for validation (for Train/Test validation mode). This input is optional.|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -276,7 +276,7 @@ The following learners do not support setting a range of values to use in a para
 |Metric for measuring performance for classification|List|Binary Classification Metric Type|Accuracy|Select the metric used for evaluating classification models|  
 |Metric for measuring performance for regression|List|RegressionMetric Type|Mean absolute error|Select the metric used for evaluating regression models|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

@@ -68,7 +68,7 @@ The following steps describe how to manually configure the import source.
 
     - **Azure storage key**: Copy and paste the key that is provided for accessing the storage account.
 
-    - For **Azure container name**, specify the **default container** for the cluster. See the [Tips](#bkmk_tips) section for help figuring out which container to use.
+    - For **Azure container name**, specify the **default container** for the cluster. See the [Tips](#bkmk_Notes) section for help figuring out which container to use.
 
 8. Select the **Use cached results** options if you don't expect the data to change much, or if you want to avoid reloading the data each time you run the experiment.
 
@@ -84,7 +84,7 @@ When complete, click the output dataset and select **Visualize** to see if the d
 
 If you get errors, check your data for missing values, additional empty columns, or incompatible data types.
 
-## <a name="Examples"></a> Examples  
+## Examples  
 
 For examples of how to configure an HDInsight cluster and use Hive queries in machine learning experiments, see these resources:
 
@@ -100,7 +100,7 @@ Although Hive offers superior features for many kinds of data clean-up and pre-p
 
 - Combine multiple tables from different sources into a single table of training data. For examples, see [Predictive maintenance](https://gallery.azureml.net/Experiment/df7c518dcba7407fb855377339d6589f).
 
-## <a name="TechnicalNotes"></a> Technical notes
+## <a name="bkmk_Notes"></a> Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

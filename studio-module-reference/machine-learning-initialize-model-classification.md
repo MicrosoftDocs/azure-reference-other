@@ -45,7 +45,7 @@ After you have chosen an algorithm and set the parameters using the modules in t
 
 After training is complete, you can [evaluate](machine-learning-evaluate.md) and tune the model. After you are satisfied with the model, use the trained model for [scoring](machine-learning-score.md) on new data.
 
-##  <a name="modules"></a> List of modules  
+##  List of modules  
 
 This classification category includes the following modules:  
 

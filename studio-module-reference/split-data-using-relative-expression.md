@@ -38,7 +38,7 @@ Other options in the **Split Data** module:
 
 + [Split by percentage of dataset](split-data-using-split-rows.md)
 
-##  <a name="HowRelativeSplit"></a> Use a relative expression to divide a dataset
+##  Use a relative expression to divide a dataset
 
 1.  Add the [Split Data](split-data.md) module to your experiment in Stuio, and connect it as input to the dataset you want to split.
   

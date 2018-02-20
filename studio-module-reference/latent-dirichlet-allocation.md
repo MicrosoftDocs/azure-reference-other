@@ -46,7 +46,7 @@ A generative model can be preferable because it avoids making any strong assumpt
 
 For more information, see the [Technical notes](#bkmk_AboutLDA) section.
 
-## <a name="bkmk_HowTo"></a>How to configure Latent Dirichlet Allocation
+## How to configure Latent Dirichlet Allocation
 
 This module requires a dataset that contains a column of text, either raw or preprocessed.
 
@@ -252,7 +252,7 @@ After the term indexes have been computed, individual rows of text are compared 
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
