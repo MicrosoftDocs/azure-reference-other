@@ -1,5 +1,6 @@
 ---
 title: "Error 0014 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 06/14/2017
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0014
-**Error 0014**  
-  
+# Error 0014  
  Exception occurs if the count of column unique values is greater than allowed.  
   
  This error occurs when a column contains too many unique values.  For example, you might see this error if you specify that a column be handled as categorical data, but there are too many unique values in the column to allow processing to complete. You might also see this error if there is a mismatch between the number of unique values in two inputs.   
@@ -37,5 +36,5 @@ For columns that you intend to use for grouping or categorization, take steps to
 |Amount of column unique values is greater than allowed.|  
 |Number of unique values in column: "{0}" exceeds tuple count of {1}.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

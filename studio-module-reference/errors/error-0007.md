@@ -14,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0007
-**Error 0007**  
-  
+# Error 0007  
  Exception occurs if parameter is greater than a specific value.  
   
  You will receive this error in Azure Machine Learning if, in the properties for the module, you specified a value that is greater than is allowed. For example, you might specify a data that is outside the range of supported dates, or you might indicate that 5 columns be used when only 3 columns are available. 
