@@ -115,7 +115,7 @@ You might get different results if you use the input on the [Tune Model Hyperpar
 > 
 > That is because when you use this option, you are in effect specifying a static training dataset and testing dataset. Hence, the cross-validation process also uses the specified training and testing datasets, rather than splitting the data into *n* groups for training and testing. However, metrics are generated on an *n*-fold basis.
 
-## Results
+## <a name="Results"></a> Results
 
 After all iterations are complete, **Cross-Validate Model** creates scores for the entire dataset, as well as performance metrics you can use to assess the quality of the model.
  
@@ -152,7 +152,7 @@ Additionally, the following metrics are included for each fold, depending on the
 
 + **Regression models**: Negative log likelihood, mean absolute error, root mean squared error, relative absolute error, and coefficient of determination
  
-##  <a name="bkmk_Examples"></a> Examples  
+##  Examples  
 
 For examples of how cross-validation is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
@@ -174,28 +174,28 @@ For examples of how cross-validation is used in machine learning, see the [Azure
 
 + Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-parameters-optimize)
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|Untrained model for cross validation on dataset|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Label column|any|ColumnSelection||Select the column that contains the label to use for validation|  
 |Random seed|any|Integer|0|Seed value for random number generator<br /><br /> This value is optional. If not specified|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Scored results|[Data Table](data-table.md)|Results of scoring|  
 |Evaluation results by fold|[Data Table](data-table.md)|Results of evaluation (by fold and entire)|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  

@@ -85,7 +85,7 @@ Whenever you don't need to keep all the data, use [Partition and Sample](partiti
 
 + [Execute R Script](execute-r-script.md) and [Apply SQL Transformation](apply-sql-transformation.md): Apply more complex data filters, groupings, or transformations. 
 
-##  <a name="modules"></a> List of modules
+##  List of modules
 
 This category includes the following modules:  
 

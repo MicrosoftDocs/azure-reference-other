@@ -37,7 +37,7 @@ You use the modules in this category to select an initial algorithm, and then co
 
 Azure Machine Learning provides many different state-of-the art machine learning algorithms to help you build analytical models. Each algorithm is packaged in its own module. To create a customized model: 
   
-1. Choose a model by [category](#bkmk_categories).
+1. Choose a model by category.
 
     Algorithms are grouped by specific types of predictive tasks, such as regression, classification, or image recognition. Your first job is to identify the general category of machine learning task to perform, and then select an algorithm from those provided. If you need help selecting an algorithm, see these resources:  
   
@@ -61,7 +61,7 @@ Azure Machine Learning provides many different state-of-the art machine learning
   
     You can use the modules for [model evaluation](machine-learning-evaluate.md) section to measure the accuracy of the model, based on the scores you’ve generated.
   
-##  <a name="bkmk_categories"></a>  List of modules
+##   List of modules
 
 The modules in this category are organized by the type of machine learning algorithm encapsulated by the modules. For each type of algorithm, you typically requires a different type of data.
 

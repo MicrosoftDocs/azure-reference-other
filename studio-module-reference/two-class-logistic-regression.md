@@ -31,7 +31,7 @@ Logistic regression is a well-known method in statistics that is used to predict
   
 In this module, the classification algorithm is optimized for dichotomous or binary variables. if you need to classify multiple outcomes, use the [Multiclass Logistic Regression](multiclass-logistic-regression.md) module.
 
-##  <a name="Tips"></a> How to configure Two-Class Logistic Regression  
+##  How to configure Two-Class Logistic Regression  
 
 To train this model, you must provide a dataset that contains a label or class column. Because this module is intended for two-class problems, the label or class column must contain exactly two values. 
 
@@ -138,7 +138,7 @@ The algorithm tries to find the optimal values for <code>β{0},..., β {D-1}</co
 
 For more information on the implementation of this algorithm, see [Scalable Training of L-1 Regularized Log-Linear Models](http://research.microsoft.com/apps/pubs/default.aspx?id=78900), by Andrew and Gao.  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -149,7 +149,7 @@ For more information on the implementation of this algorithm, see [Scalable Trai
 |Random number seed|Any|Integer||Type a value to seed the random number generator used by the model. Leave it blank for the default.|  
 |Allow unknown categorical levels|Any|Boolean|True|Indicate whether an additional level should be created for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

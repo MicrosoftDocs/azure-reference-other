@@ -501,7 +501,7 @@ For security reasons, all networking from or to R code in **Execute R Script** m
 
 Currently parallel execution with multiple threads is not supported.
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -509,7 +509,7 @@ Currently parallel execution with multiple threads is not supported.
 |*Dataset2*|[Data Table](data-table.md)|Input dataset 2|  
 |*Script Bundle*|Zip|Set of R sources|  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  

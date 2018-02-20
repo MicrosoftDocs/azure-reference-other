@@ -1,5 +1,6 @@
 ---
 title: "Error 0156 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 08/15/2016
 ms.reviewer: ""
@@ -10,9 +11,7 @@ ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0156-d185d1509344
 caps.latest.revision: 3
 ---
-# Error 0156
-**Error 0156**  
-  
+# Error 0156  
  Bad response for HCatalog Server.  
   
 |Exception Messages|  

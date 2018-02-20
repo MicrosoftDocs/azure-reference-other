@@ -113,14 +113,14 @@ The following parameters are not supported in Azure Machine Learning Studio.
 
 All arguments other than those described above are allowed.
   
-##  <a name="ExpectedInputs"></a> Expected Inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ILearner interface](ilearner-interface.md)|Trained learner|  
 |Dataset|[Data Table](data-table.md)|Dataset to be scored|  
   
-##  <a name="parameters-old"></a> Module Parameters  
+##  Module Parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -129,13 +129,13 @@ All arguments other than those described above are allowed.
 |Include an extra column containing labels|True/False|Boolean|false|Specify whether the zipped file should include labels with the predictions|  
 |Include an extra column containing raw scores|True/False|Boolean|false|Specify whether the result should include an additional columns containing the raw scores (corresponding to --raw_predictions)|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset with the prediction results|  
   
-##  <a name="exceptions"></a> Exceptions
+##  Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

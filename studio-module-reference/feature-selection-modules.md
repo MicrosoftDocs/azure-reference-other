@@ -134,7 +134,7 @@ This section lists these algorithms and the feature selection method that is use
 
 All feature selection modules and analytical methods that support numeric and logical columns support date-time and time span columns as well. These columns are treated as simple numeric columns where each value equals to the number of ticks.  
   
-##  <a name="modules"></a> List of modules  
+##  List of modules  
  
 The Feature Selection category includes these modules:  
   

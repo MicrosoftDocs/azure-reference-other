@@ -64,7 +64,7 @@ This module is particularly useful when you need to separate data into training 
 
     As a workaround, you can use [Select Columns in Dataset](select-columns-in-dataset.md) to remove some columns, and then add the columns later using [Add Columns](add-columns.md). Alternatively, if your dataset has many features that you want to use in the model, divide the dataset using a different option, and train the model using [Train Model](train-model.md) rather than [Train Matchbox Recommender](train-matchbox-recommender.md). 
 
-## <a name="bkmk_Examples"></a> Examples  
+## Examples  
 
 For examples of how the [Split Data](split-data.md) module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
 

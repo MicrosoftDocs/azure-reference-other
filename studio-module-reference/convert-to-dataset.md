@@ -89,19 +89,19 @@ This section contains implementation details, tips, and answers to frequently as
   
 -   If you need to save data that uses numerical data that is sparse and has missing values, internally, Studio supports sparse arrays by using a SparseVector, which is a class in the Math.NET numeric library. Prepare your data that uses zeros and has missing values, and then use [Convert to Dataset](convert-to-dataset.md) with the arguments **SparseOutput** and **Remove Zeros** = TRUE.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Action|List|Action Method|None|Action to apply to input dataset|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

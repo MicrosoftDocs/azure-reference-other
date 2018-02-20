@@ -144,7 +144,7 @@ For more information about how to work with zipped R packages, see [Execute R Sc
 > [!NOTE]  
 > Confused about the difference between UTF-8 and Unicode? See this Wikipedia article: [What is UTF-8](https://wikipedia.org/wiki/UTF-8)
  
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -152,13 +152,13 @@ For more information about how to work with zipped R packages, see [Execute R Sc
 |Dataset to Unpack|Any|String|none|Name of  dataset to register with Azure ML Studio. If the name of a dataset is not specified, the name is obtained from the file name in the zipped file.|  
 |Dataset file format|CSV<br /><br /> TSV<br /><br /> ARFF<br /><br /> SVMLIGHT|File format|CSV|File format of the dataset in the zipped file|  
 |File has header row|TRUE/FALSE|Boolean|False|Set to **True** only if the CSV/TSV file has a header row| 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|Zip|Zipped file containing datasets|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

@@ -109,26 +109,26 @@ The input dataset might have missing values in non-key columns and key columns. 
 
 + In key columns, a missing value is considered equal to other missing values, but not equal to non-missing values. 
 
-##  <a name="ExpectedInputs"></a> Expected input  
+##  Expected input  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Key column selection filter expression|any|ColumnSelection||Choose the key columns to use when searching for duplicates.|  
 |Retain first duplicate row|any|Boolean|true|Indicate whether to keep the first row of a set of duplicates and discard others. If False, the last duplicate row encountered is kept.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Filtered dataset|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
   
 |Exception|Description|  
 |---------------|-----------------|  

@@ -44,7 +44,7 @@ Additionally, Studio provides a variety of visualizations, depending on the type
 
 Interpreting these statistics often requires a greater understanding of the particular algorithm on which the model was trained. For a good explanation of how to evaluate a model, and how to interpret the values that are returned for each measure, we recommend this article: [How to evaluate model performance in Azure Machine Learning](https://azure.microsoft.com/documentation/articles/machine-learning-evaluate-model-performance).
 
-##  <a name="modules"></a> List of modules
+##  List of modules
 
 The Evaluate category includes the following modules:
 

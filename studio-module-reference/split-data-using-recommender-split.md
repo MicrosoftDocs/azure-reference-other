@@ -33,7 +33,7 @@ Other options in the **Split Data** module support different ways to divide the 
 
 + [Split by percentage of dataset](split-data-using-split-rows.md)
 
-##  <a name="HowRecommenderSplit"></a> Divide a dataset used by a recommendation model
+##  Divide a dataset used by a recommendation model
 
 The **Recommender Split** option is provided specifically for data used to train recommendation systems. 
 
@@ -66,7 +66,7 @@ Before you use this option, make sure that your data is in a compatible format. 
 
 11. Run the experiment.
 
-##  <a name="bkmk_RecommenderSplitExamples"></a> Examples
+##  Examples
 
 For examples of how to divide a set of ratings and features used for training or testing a recommendation model, we recommend that you review the walkthrough provided with this sample experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/): [Movie Recommendation](https://gallery.cortanaintelligence.com/Experiment/3a02931f94114f47b4512dd9179b515e?share=1)  
 

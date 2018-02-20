@@ -73,7 +73,7 @@ When [Import Data](import-data.md) loads the feed data into Studio, it infers th
 
 - If there are no existing column headers in the data, new column names are generated using the format `col1, col2,… ,coln`.
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.  
 

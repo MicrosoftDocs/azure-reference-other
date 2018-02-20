@@ -1,5 +1,6 @@
 ---
 title: "Error 0141 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 08/16/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0141
-**Error 0141**  
-  
+# Error 0141  
  Exception occurs if the number of the selected numerical columns and unique values in the categorical and string columns is too small.  
   
  This error in Azure Machine Learning occurs when there are not enough unique values in the selected column to perform the operation.  
@@ -32,5 +31,5 @@ manager: "jhubbard"
 |The number of the selected numerical columns and unique values in the categorical and string columns is too small.|  
 |The total number of the selected numerical columns and unique values in the categorical and string columns (currently {0}) should be at least {1}|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

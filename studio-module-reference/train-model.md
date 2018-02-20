@@ -127,26 +127,26 @@ For examples of how the **Train Model** module is used in machine learning exper
 + [Retail Forecasting](http://go.microsoft.com/fwlink/?LinkId=525950): Demonstrates how to build, train, and compare multiple models.
 + [Flight Delay Prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates how to train multiple related classification models.
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|Untrained learner|  
 |Dataset|[Data Table](data-table.md)|Training data|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Label column|any|ColumnSelection||Select the column that contains the label or outcome column|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ILearner interface](ilearner-interface.md)|Trained learner|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
  For a list of all module errors, see [Module Error Codes](machine-learning-module-error-codes.md).  
   

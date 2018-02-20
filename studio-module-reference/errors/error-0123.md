@@ -1,5 +1,6 @@
 ---
 title: "Error 0123 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0123
-**Error 0123**  
-  
+# Error 0123  
  Exception occurs if column of vectors is specified to Label column.  
   
  This error in Azure Machine Learning occurs if you use a vector as the label column.  
@@ -27,5 +26,5 @@ manager: "jhubbard"
 |------------------------|  
 |Column of vectors is specified as Label column.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

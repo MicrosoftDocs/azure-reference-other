@@ -186,7 +186,7 @@ For additional script examples, see [Guide to the Net# Neural Networks Specifica
 
 Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve a fair amount of sweeping (iterations) over hyperparameters.
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -201,7 +201,7 @@ Neural networks can be computationally expensive, due to a number of hyperparame
 |Random number seed|Any|Integer||Specify a numeric seed to use for random number generation. Leave it blank to use the default seed.|  
 |Allow unknown categorical levels|Any|Boolean|True|Indicated whether an additional level should be created for unknown categories. If the test dataset contains categories that are not present in the training dataset, they are mapped to this unknown level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

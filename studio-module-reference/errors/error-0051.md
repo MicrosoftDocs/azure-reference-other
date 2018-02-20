@@ -1,5 +1,6 @@
 ---
 title: "Error 0051 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,12 +14,10 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0051
-**Error 0051**  
-  
+# Error 0051  
  Exception occurs in the case when several output files are the same.  
   
-## Resolution  
+### Resolution  
  This error in Azure Machine Learning is unused and will be deprecated.  
   
 |Exception Messages|  

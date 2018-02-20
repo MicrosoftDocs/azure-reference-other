@@ -73,7 +73,7 @@ If you want to save or export the model, right-click the training module and sel
 
 You can also use the [Load Trained Model](load-trained-model.md) module in an experiment to retrieve a stored model.
 
-## <a name = "bkmk_ModList"> </a>List of modules
+## <a name = "bkmk_ModList"></a> List of modules
 
 The **Train** category includes these modules:
 

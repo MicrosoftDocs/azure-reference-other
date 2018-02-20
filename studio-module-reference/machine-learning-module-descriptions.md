@@ -44,7 +44,7 @@ For an example of how to build a complete machine learning experiment, see these
   
 -   [Create a simple experiment in Azure Machine Learning Studio](http://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
  
-##  <a name="categories"></a> Module categories
+##  Module categories
 
 To make it easier to find related modules, the machine learning tools in Azure Machine Learning Studio are grouped by these categories.
 
