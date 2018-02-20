@@ -1,5 +1,6 @@
 ---
 title: "Error 0087 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0087
-**Error 0087**  
-  
+# Error 0087  
  Exception occurs when an invalid count table type is specified for learning with counts modules.  
   
  This error in Azure Machine Learning occurs when you try to import an existing count table, but the table is incompatible with the current data, or with the new count table.  
@@ -39,10 +38,10 @@ manager: "jhubbard"
 |The specified count table type '{0}' is not a valid count table type.|  
   
  > [!TIP]
->  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
->   
->  -   [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
-> -   [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
+ >  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
+ >  
+ >  -  [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
+ >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)
