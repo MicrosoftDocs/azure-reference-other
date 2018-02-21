@@ -51,7 +51,7 @@ Table_As_Query :=
 
 **Creating a table from a query - an extract**   
 The following example creates a table called `searchLogTable` from `SearchLog.tsv`.
-```
+```sql
 DROP TABLE IF EXISTS dbo.searchLogTable;
 CREATE TABLE dbo.searchLogTable (
        INDEX clx_UserId CLUSTERED(UserId ASC) 
@@ -69,7 +69,7 @@ CREATE TABLE dbo.searchLogTable (
 
 **Creating a table from a query - a rowset variable**   
 The following example creates a table called `searchLogTable` from `SearchLog.tsv`.
-```
+```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB; 
 USE DATABASE TestReferenceDB;
 
@@ -105,7 +105,7 @@ CREATE TABLE dbo.searchLogTableCopy (
 
 **Creating a table from a query - invocation of a TVF**  
 The following example creates a table called `searchLogFromFunction` by invoking the fuction `tvf_SearchLog` which was created from [Basic Syntax - tvf_SearchLog](create-function-u-sql-table-valued-function.md#tvf_SearchLog).
-```
+```sql
 DROP TABLE IF EXISTS dbo.searchLogFromFunction;
 CREATE TABLE dbo.searchLogFromFunction (
     INDEX clx_UserId CLUSTERED(UserId ASC)

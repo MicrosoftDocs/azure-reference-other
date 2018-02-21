@@ -16,10 +16,10 @@ manager: "jhubbard"
 # BETWEEN (U-SQL)
 The `BETWEEN` operator allows to compare a value against a data type specific range and returns true if the value is within the range given by the lower and upper bounds inclusive both boundaries, false otherwise. The types of the expressions have to be compatible or an error is raised.  
 
-```  
+```sql  
 a BETWEEN b AND c is equivalent to b <= a AND a <= c. 
 Since the rewrite of BETWEEN will execute the expression a twice, it should be a deterministic expression.  
-```  
+```
 Note that the comparison is using C# comparison semantics, especially regarding `null` values.  
   
 <table><th align="left">Syntax</th><tr><td><pre>
@@ -49,7 +49,7 @@ BETWEEN_Expression :=
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
-```
+```sql
 @data  = 
     SELECT * FROM 
         (VALUES  

@@ -227,7 +227,7 @@ namespace ReferenceGuide_Examples
 
 **Using User-Defined Combiner - CombinerEX**  
 Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 @right = 
     SELECT * FROM 
         ( VALUES
@@ -276,7 +276,8 @@ USING Outputters.Tsv(outputHeader: true);
 **Combiner with ORDER BY and FETCH**   
 The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 This examples continues to use `CombinerEX` defined above.
-```
+
+```sql
 // Same as previous example but only returns top 3 records ordered by introYear
 @result =
     COMBINE @left AS l
@@ -289,9 +290,9 @@ This examples continues to use `CombinerEX` defined above.
     USING new ReferenceGuide_Examples.CombinerEX()
     ORDER BY introYear DESC FETCH 3 ROWS;
 
-OUTPUT @result
-TO "/ReferenceGuide/QSE/PrimaryRowsetExpressions/Combine/ExampleB.txt"
-USING Outputters.Tsv(outputHeader: true);
+    OUTPUT @result
+    TO "/ReferenceGuide/QSE/PrimaryRowsetExpressions/Combine/ExampleB.txt"
+    USING Outputters.Tsv(outputHeader: true);
 ```
 
 ### See Also 

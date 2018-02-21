@@ -34,7 +34,7 @@ By adding R code to this module, you can perform a variety of customized tasks t
 
 ### R versions supported in Studio
 
-Azure Machine Learning supports both the typical distribution of R that is available from CRAN, and Microsoft R Open (MRO), which includes all the base R packages, plus the [RevoScaleR package](https://docs.microsoft.com/machine-learning-server/r-reference/revoscaler/revoscaler).
+Azure Machine Learning supports both the typical distribution of R that is available from CRAN, and Microsoft R Open (MRO), which includes all the base R packages, plus the [Revo packages](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/introducing-r-server-r-package-reference).
 
 You can specify which version of R to use in an experiment. However, you cannot install any other version of R into your workspace.
 
@@ -501,7 +501,7 @@ For security reasons, all networking from or to R code in **Execute R Script** m
 
 Currently parallel execution with multiple threads is not supported.
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -509,7 +509,7 @@ Currently parallel execution with multiple threads is not supported.
 |*Dataset2*|[Data Table](data-table.md)|Input dataset 2|  
 |*Script Bundle*|Zip|Set of R sources|  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  

@@ -19,6 +19,7 @@
 #### [ISFIRST](isfirst-azure-stream-analytics.md)
 #### [LAG](lag-azure-stream-analytics.md)
 #### [LAST](last-azure-stream-analytics.md)
+#### [AnomalyDetection](anomaly-detection-azure-stream-analytics.md)
 ### [Array Functions](array-functions-stream-analytics.md)
 #### [GetArrayLength](getarraylength-azure-stream-analytics.md)
 #### [GetArrayElement](getarrayelement-azure-stream-analytics.md)

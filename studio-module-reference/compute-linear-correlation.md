@@ -120,7 +120,7 @@ To see how this module is used in machine learning experiments, see the [Azure A
   
 -   [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): This sample demonstrates multiple techniques for modifying your data. [Compute Linear Correlation](compute-linear-correlation.md) is used to identify potential feature columns.  
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

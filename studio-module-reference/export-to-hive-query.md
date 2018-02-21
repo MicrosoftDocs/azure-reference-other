@@ -60,7 +60,7 @@ This article describes how to use the **Export data to Hive** option in the [Exp
 
 11. Run the experiment.
 
-## <a name="Examples"></a> Examples
+## Examples
 
 For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
 

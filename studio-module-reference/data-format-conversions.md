@@ -57,13 +57,10 @@ If you need to import data into Azure Machine Learning. or transform data in ind
 |Round, group, or normalize numerical data|Use [Apply Math Operation](apply-math-operation.md), [Group Data into Bins](group-data-into-bins.md), or [Normalize Data](normalize-data.md)|
     
   
-##  <a name="modules"></a> List of modules  
+##  List of modules  
 
 The **Data Format Conversions** category includes these modules:  
   
-|Module|Description|  
-|------------|-----------------|  
-
 + [Convert to ARFF](convert-to-arff.md): Converts data input to the attribute relation file format used by the Weka toolset
 + [Convert to CSV](convert-to-csv.md): Converts a dataset to a comma-separated values format
 + [Convert to Dataset](convert-to-dataset.md): Converts a data input to the internal Dataset format used by Microsoft Azure Machine Learning

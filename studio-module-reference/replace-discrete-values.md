@@ -147,7 +147,7 @@ This example demonstrates how missing values (nulls) propagate to the results wh
 |2|False|<code>P(Y=false&#124;X=2) = 1/3</code>|  
 |2|Null|<code>P(Y=null&#124;X=2) = null</code>|  
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 - You must ensure that any discrete columns you want to replace are categorical, or the module will return an error. To do this, use the [Edit Metadata](edit-metadata.md) module.
 

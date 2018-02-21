@@ -47,24 +47,25 @@ This aggregator can be used in a [windowing expression](over-expression-u-sql.md
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
-    SELECT * FROM ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 20000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Emma",   "HR",          200, 10000),
-        (5, "Jacob",  "HR",          200, 10000),
-        (6, "Olivia", "HR",          200, 10000),
-        (7, "Mason",  "Executive",   300, 50000),
-        (8, "Ava",    "Marketing",   400, 15000),
-        (9, "Ethan",  "Marketing",   400, 10000) )
-    AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+
+   ```sql
+    @employees = 
+        SELECT * FROM ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 20000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Emma",   "HR",          200, 10000),
+            (5, "Jacob",  "HR",          200, 10000),
+            (6, "Olivia", "HR",          200, 10000),
+            (7, "Mason",  "Executive",   300, 50000),
+            (8, "Ava",    "Marketing",   400, 15000),
+            (9, "Ethan",  "Marketing",   400, 10000) )
+        AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+   ```
 
 **A.  Sum of all values(`Salary`)**  
 The following query: 1) calculates the total salary for all employees, and 2) calculates the total salary from all DISTINCT salary values.
-```
+```sql
 @result =
     SELECT SUM(Salary) AS TotalSalary,
            SUM(DISTINCT Salary) AS TotalDistinctSalary
@@ -77,7 +78,7 @@ USING Outputters.Csv();
 
 **B.    Sum of values per group**  
 The following query calculates the total salary for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
-```
+```sql
 @result =
     SELECT DeptName,
            SUM(Salary) AS SalaryByDept
@@ -91,7 +92,7 @@ USING Outputters.Csv();
 
 **C.    Sum of values with OVER()**  
 The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query calculates the total salary over the window - all employees.
-```
+```sql
 @result =
     SELECT EmpName,
            SUM(Salary) OVER() AS SalaryAllDepts
@@ -104,7 +105,7 @@ USING Outputters.Csv();
 
 **D.    Sum of values over a defined window using OVER()**  
 The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, and the total salary over the window - `DeptName`.
-```
+```sql
 @result =
     SELECT EmpName,
            DeptName,
@@ -118,7 +119,7 @@ USING Outputters.Csv();
 
 **E.    Sum of values over a defined window using OVER(), additional example.**  
 The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the total salary for each `DeptName` and each employee's salary share of his/her total department's share.
-```
+```sql
 @result =
     SELECT *,
            SUM(Salary) OVER(PARTITION BY DeptName) AS TotalSalaryByDept,

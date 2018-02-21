@@ -26,13 +26,13 @@ This article describes how to use the  [Export Data](export-data.md) module in A
 
 This module supports exporting or saving your data to the following cloud data services:
 
-- **Hive Query**. Write data to a Hive table in an HDInsight Hadoop cluster.
+- [Export to Hive Query](export-to-hive-query.md): Write data to a Hive table in an HDInsight Hadoop cluster.
 
-- **Azure SQL Database**. Save data to Azure SQL Database or to Azure SQL Data Warehouse.
+- [Export to Azure SQL Database](export-to-azure-sql-database.md): Save data to Azure SQL Database or to Azure SQL Data Warehouse.
 
-- **Azure Table**. Save data to the table storage service in Azure. Table storage is good for storing large amounts of data. It provides a tabular format that is scalable, inexpensive, and highly available.
+- [Export to Azure Table](export-to-azure-table.md): Save data to the table storage service in Azure. Table storage is good for storing large amounts of data. It provides a tabular format that is scalable, inexpensive, and highly available.
 
-- **Azure Blob Storage**. Saves data to the Blob service in Azure. This option is useful for images, unstructured text, or binary data. Data in the Blob service can be shared publicly or saved in secured application data stores.
+- [Export to Azure Blob Storage](export-to-azure-blob-storage.md): Saves data to the Blob service in Azure. This option is useful for images, unstructured text, or binary data. Data in the Blob service can be shared publicly or saved in secured application data stores.
 
 ### Related tasks
 

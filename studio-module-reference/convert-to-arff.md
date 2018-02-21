@@ -24,7 +24,7 @@ Category: [Data Format Conversions](data-format-conversions.md)
 
 This article describes how to use the [Convert to ARFF](convert-to-arff.md) module in Azure Machine Learning Studio, to convert datasets and results in Azure Machine Learning to the attribute-relation file format used by the Weka toolset. This format is known as ARFF.
 
-The ARFF data specification for Weka supports multiple machine learning tasks, including data preprocessing, classification, and feature selection. In this format, data is organized by entites and their attributes, and is contained in a single text file. You can find details of the Weka file format in the [Technical Notes](#technical-notes) section.
+The ARFF data specification for Weka supports multiple machine learning tasks, including data preprocessing, classification, and feature selection. In this format, data is organized by entites and their attributes, and is contained in a single text file. You can find details of the Weka file format in the [Technical Notes](#bkmk_Notes) section.
 
 In general, conversion to the Weka file format is required only if you want to use both Azure Machine Learning and Weka, and intend to move your training data back and forth between them. 
 
@@ -58,7 +58,7 @@ There are no examples specific to this format in the [Azure AI Gallery](https://
   
 - [Cross Validation for Binary Classification sample](http://go.microsoft.com/fwlink/?LinkId=525734): Exports the results of cross validation to files so that the results for multiple models can be compared by using a tool such as Excel.  
   
-## Technical notes  
+## <a name="bkmk_Notes"></a> Technical notes  
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

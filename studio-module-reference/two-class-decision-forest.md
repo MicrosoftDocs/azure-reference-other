@@ -154,7 +154,7 @@ This article by Microsoft Research provides useful information about ensemble me
 For more information about the training process with the **Replicate** option, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](http://research.microsoft.com/en-us/projects/decisionforests/)
 
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -165,7 +165,7 @@ For more information about the training process with the **Replicate** option, s
 |Minimum number of samples per leaf node|>=1|Integer|1|Specify the minimum number of training samples that are required to produce a leaf node|  
 |Allow unknown values for categorical features|Any|Boolean|True|Indicate whether unknown values of existing categorical features can be mapped to a new, additional feature|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

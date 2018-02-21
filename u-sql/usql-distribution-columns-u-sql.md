@@ -29,7 +29,7 @@ is_descending_key     |bool         |True = The distribution column has a descen
 The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
 
 **Query the usql.distribution_columns view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.distribution_columns
@@ -38,7 +38,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query the usql.distribution_columns view with usql.objects view**
-```
+```sql
 @distribution_columns =
     SELECT o.name AS tableName,
             c.name AS columntName,

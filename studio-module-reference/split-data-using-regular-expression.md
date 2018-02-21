@@ -32,7 +32,7 @@ Other options in the **Split Data** module:
 
 + [Split by percentage of dataset](split-data-using-split-rows.md)
 
-##  <a name="HowRegularSplit"></a> Use a regular expression to divide a dataset
+##  Use a regular expression to divide a dataset
   
 1.  Add the [Split Data](split-data.md) module to your experiment, and connect it as input to the dataset you want to split.  
   

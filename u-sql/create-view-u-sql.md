@@ -41,7 +41,7 @@ Create_View_Statement :=
 
 **View based on a table**     
 The following example creates a view called `SampleView` based on the table `SampleTable` in `SampleDB`.  
-```
+```sql
 CREATE VIEW SampleDB.dbo.SampleView  
     AS  
 SELECT id,  
@@ -52,7 +52,7 @@ SELECT id,
 
 **View based on an extraction**   
 Subsequent queries against `SearchLog.tsv` can now be performed against the view without the need to constantly execute `EXTRACT`.
-```
+```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
 USE DATABASE TestReferenceDB; 
 

@@ -40,25 +40,26 @@ This aggregator can be used in a [windowing expression](over-expression-u-sql.md
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 20000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Emma",   "HR",          200, 10000),
-        (5, "Jacob",  "HR",          200, 10000),
-        (6, "Olivia", "HR",          200, 10000),
-        (7, "Mason",  "Executive",   300, 50000),
-        (8, "Ava",    "Marketing",   400, 15000),
-        (9, "Ethan",  "Marketing",   400, 10000) 
-        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+
+   ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 20000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Emma",   "HR",          200, 10000),
+            (5, "Jacob",  "HR",          200, 10000),
+            (6, "Olivia", "HR",          200, 10000),
+            (7, "Mason",  "Executive",   300, 50000),
+            (8, "Ava",    "Marketing",   400, 15000),
+            (9, "Ethan",  "Marketing",   400, 10000) 
+            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+   ```
 
 **A.    Highest value(`Salary`)**  
 The following query determines the single highest salary.
-```
+```sql
 @result =
     SELECT MAX(Salary) AS HighestSalary
     FROM @employees;
@@ -70,7 +71,7 @@ USING Outputters.Csv();
 
 **B.    Highest values per group**  
 The following query determines the highest salary for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
-```
+```sql
 @result =
     SELECT DeptName,
            MAX(Salary) AS HighestSalaryByDept
@@ -84,7 +85,7 @@ USING Outputters.Csv();
 
 **C.    Highest values with OVER()**   
 The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query determines the highest salary over the window - all employees.
-```
+```sql
 @result =
     SELECT EmpName,
            MAX(Salary) OVER() AS HighestSalaryAllDepts
@@ -97,7 +98,7 @@ USING Outputters.Csv();
 
 **D.    Highest values over a defined window using OVER()**   
 The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`. The query returns `EmpName`, `DeptName`, and the highest salary over the window - `DeptName`.
-```
+```sql
 @result =
     SELECT EmpName,
            DeptName,
@@ -111,7 +112,7 @@ USING Outputters.Csv();
 
 **E.    Highest values over a defined window using OVER(), additional example.**   
 The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the highest salary for each department and each employee's salary share of his/her department's highest share.
-```
+```sql
 @result =
     SELECT *,
            MAX(Salary) OVER(PARTITION BY DeptName) AS HighestSalaryByDept,

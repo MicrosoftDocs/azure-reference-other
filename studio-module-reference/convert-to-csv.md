@@ -140,13 +140,13 @@ For general information about importing from CSV, see these resources:
 + [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-import-data)
 + [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

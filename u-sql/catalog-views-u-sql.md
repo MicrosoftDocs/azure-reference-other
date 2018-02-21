@@ -24,17 +24,25 @@ Future releases will add additional catalog views.
 
 The following catalog views are currently available:  
 
-|<a></a>|<a></a>|  
-|--|--| 
-[usql.columns](usql-columns-u-sql.md)     |[usql.partition_parameters](usql-partition-parameters-u-sql.md)         
-[usql.databases](usql-databases-u-sql.md)     |[usql.partition_range_values](usql-partition-range-values-u-sql.md)         
-[usql.distributions](usql-distributions-u-sql.md)     |[usql.schemas](usql-schemas-u-sql.md)         
-[usql.distribution_columns](usql-distribution-columns-u-sql.md)     |[usql.stats](usql-stats-u-sql.md)         
-[usql.functions](usql-functions-u-sql.md)     |[usql.stats_columns](usql-stats-columns-u-sql.md)         
-[usql.indexes](usql-indexes-u-sql.md)     |[usql.tables](usql-tables-u-sql.md)         
-[usql.index_columns](usql-index-columns-u-sql.md)     |[usql.types](usql-types-u-sql.md)         
-[usql.objects](usql-objects-u-sql.md)     | [usql.views](usql-views-u-sql.md)        
-[usql.partitions](usql-partitions-u-sql.md)||
+|<a>Built-in catalog views</a>|  
+|--|
+| [usql.columns](usql-columns-u-sql.md)     |
+| [usql.partition_parameters](usql-partition-parameters-u-sql.md)     |    
+| [usql.databases](usql-databases-u-sql.md)     |
+| [usql.partition_range_values](usql-partition-range-values-u-sql.md)  |       
+| [usql.distributions](usql-distributions-u-sql.md)     |
+| [usql.schemas](usql-schemas-u-sql.md)         |
+| [usql.distribution_columns](usql-distribution-columns-u-sql.md)     |
+| [usql.stats](usql-stats-u-sql.md)         |
+| [usql.functions](usql-functions-u-sql.md)     |
+| [usql.stats_columns](usql-stats-columns-u-sql.md)     |    
+| [usql.indexes](usql-indexes-u-sql.md)     |
+| [usql.tables](usql-tables-u-sql.md)       |  
+| [usql.index_columns](usql-index-columns-u-sql.md)     |
+| [usql.types](usql-types-u-sql.md)         |
+| [usql.objects](usql-objects-u-sql.md)     | 
+| [usql.views](usql-views-u-sql.md)        |
+| [usql.partitions](usql-partitions-u-sql.md)|
 
 
 ### Examples
@@ -42,7 +50,7 @@ The examples can be executed in Visual Studio with the [Azure Data Lake Tools pl
 
 
 **Query the usql.databases view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.databases
@@ -52,7 +60,7 @@ USING Outputters.Tsv(outputHeader:true);
 
 **Querying multiple catalog views**  
 The following script returns the tables with their fully qualified, quoted names as well as their column information (name and type and maximal possible field size) ordered alphabetically by table and in order of their column positions:
-```
+```sql
 @result =
    SELECT "[" + db.name + "].[" + s.name + "].[" + t.name + "]" AS table_name,
           c.name AS col_name,

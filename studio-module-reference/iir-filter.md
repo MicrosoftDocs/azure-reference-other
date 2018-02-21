@@ -109,7 +109,7 @@ An IIR filter returns feed forward and feed backward coefficients, which are rep
   
 -   `y[n]`: the output signal  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -120,13 +120,13 @@ An IIR filter returns feed forward and feed backward coefficients, which are rep
 |High cutoff|[double.Epsilon;.9999999]|Float|0.7|Set the high cutoff value|  
 |Ripple|>=0.0|Float|0.5|Specify the amount of ripple in the filter|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
   
-##  <a name="exceptions"></a> Exceptions
+##  Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

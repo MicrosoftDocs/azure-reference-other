@@ -27,7 +27,7 @@ Support vector machines (SVMs) are a well-researched class of supervised learnin
 
 After defining the model parameters, train the model by using one of the [training modules](machine-learning-train.md), and providing a *tagged dataset* that includes a label or outcome column.
 
-###  <a name="Remarks"></a> More about support vector machines
+###  More about support vector machines
 
 Support vector machines are among the earliest of machine learning algorithms, and SVM models have been used in many applications, from information retrieval to text and image classification. SVMs can be used for both classification and regression tasks.
 
@@ -119,7 +119,7 @@ Although recent research has developed algorithms that have higher accuracy, thi
   
 -   [Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md)  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -130,7 +130,7 @@ Although recent research has developed algorithms that have higher accuracy, thi
 |Random number seed|Any|Integer||The seed for the random number generator used by the model. Leave it blank for the default.|  
 |Allow unknown categorical levels|Any|Boolean|True|If True, creates an additional level for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

@@ -108,7 +108,7 @@ After you have run the module or experiment, you can right-click the output of t
 
 To capture a snapshot of this data in your Azure Machine Learning workspace as a dataset, you can right-click the module's output and select **Save As Dataset**. However, doing so captures only the data available at the time of import. If the data is expected to change frequently, rerun **Import Data** as needed. 
 
-## <a name="Examples"></a> Examples
+## Examples
 
 For a detailed walkthrough of how to use DocumentDB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
 

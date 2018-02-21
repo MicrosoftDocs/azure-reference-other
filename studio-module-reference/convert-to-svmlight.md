@@ -141,13 +141,13 @@ For example, compare these lines of input:
 <code>1 1:2 2:50 3:12500 4:98</code>   
 <code>1 1:0 2:13 3:3250 4:28</code>  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

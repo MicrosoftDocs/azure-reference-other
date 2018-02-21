@@ -44,7 +44,7 @@ Note that it is normally recommended to define the clustered index with the [CRE
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following example creates a Clustered Index on the columns `OrderID` and `CustomerID` on an existing table called `Orders` in `TestReferenceDB`.  `Orders` will also be partitioned on column `OrderDate`.  The example provides an alternative for the same table created in  the example for [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md).
-```  
+```sql  
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
 USE TestReferenceDB;
 

@@ -118,7 +118,7 @@ For examples of how boosted trees are used in machine learning, see the [Azure A
   
 - [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Uses regression to generate a predicted rating.  
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

@@ -85,7 +85,7 @@ Specifies the target file or files. The rowset will be written at the specified 
 
 
 **Using Built-In Outputter**    
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -130,6 +130,7 @@ USING Outputters.Csv();
 
 <a name="HTMLOutputter">**User-Defined Outputter - HTMLOutputter**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -248,8 +249,9 @@ namespace ReferenceGuide_Examples
 ```
 
 **Using User-Defined Outputter - HTMLOutputter**  
-Output creates an HTML file with table data.  Example is a slightly modified version from [U-SQL Programmability Guide: User-Defined Outputter](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-outputter).  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+Output creates an HTML file with table data.  Example is a slightly modified version from [U-SQL Programmability Guide: User-Defined Outputter](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-outputter).  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**. 
+ 
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -267,6 +269,7 @@ USING new ReferenceGuide_Examples.HTMLOutputter(isHeader: true);
 
 <a name="DriverOutputter">**User-Defined Outputter - DriverOutputter**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using System.IO;
 using System.Linq;
@@ -402,7 +405,7 @@ namespace ReferenceGuide_Examples
 **Using User-Defined Outputter - DriverOutputter**  
 Defines a user-defined outputter that can supports writing CSV-like data from SQL.MAP\<string,string> columns and SQL.ARRAY\<int> columns.  Outputter will write homogeneous row formats and can be parallelized.
 Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 @drivers = 
     SELECT * FROM 
         ( VALUES

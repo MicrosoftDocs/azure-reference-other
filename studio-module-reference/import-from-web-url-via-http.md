@@ -23,7 +23,7 @@ The following restrictions apply to data published on a web page:
 - Data must be in one of the supported formats: CSV, TSV, ARFF, or SvmLight. Other data will cause errors.
 - No authentication is required or supported. Data must be publicly available. 
 
-## <a name="HTTP"></a> How to import data via HTTP
+## How to import data via HTTP
 
 There are two ways to get data: use the wizard to set up the data source, or configure it manually.
 
@@ -73,7 +73,7 @@ The following steps describe how to manually configure the import source.
 
 When complete, click the output dataset and select **Visualize** to see if the data was imported successfully.
 
-## <a name="Examples"></a> Examples
+## Examples
 
 See these examples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com) of machine learning experiments that get data from public web sites:
 
@@ -81,7 +81,7 @@ See these examples in the [Azure AI Gallery](https://gallery.cortanaintelligence
 
 - [Download UCI Dataset](http://go.microsoft.com/fwlink/?LinkId=525938): Reads a dataset in the CSV format.
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

@@ -75,6 +75,7 @@ Applier_Expression :=
 
 <a name="ParserApplier">**ParserApplier**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -142,7 +143,7 @@ namespace ReferenceGuide_Examples
  
 **Using ParserApplier**   
 The user-defined Applier acts as a comma-delimited value parser for the country properties.  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 @countries = 
     SELECT * FROM 
         ( VALUES
@@ -183,7 +184,7 @@ USING Outputters.Text();
 
 **U-SQL's CROSS/OUTER APPLY with VALUES**   
 The VALUES clause allows to apply each row of the constructed rowset to be correlated to each row in the rowset source.
-```
+```sql
 @bands = 
   SELECT * 
   FROM (VALUES ("Beatles", "George Harrison, John Lennon, Paul McCartney, Ringo Starr"), 

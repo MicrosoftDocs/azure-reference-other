@@ -1,5 +1,6 @@
 ---
 title: "Error 0125 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0125
-**Error 0125**  
-  
+# Error 0125  
  Thrown when schema for multiple datasets do not match.  
   
 ## Resolution  
@@ -24,5 +23,5 @@ manager: "jhubbard"
 |------------------------|  
 |Dataset schema does not match.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

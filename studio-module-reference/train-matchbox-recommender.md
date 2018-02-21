@@ -153,7 +153,7 @@ Currently, the lower bound of Matchbox's memory footprint is `16 * N\(4\T + 2\R)
   
 The size of a serialized Matchbox recommender model is approximately `16 * T\(U\R + I + X + Y)` bytes, where _U_ refers to the number of users, _I_ to the number of items, _X_ to the number of user features, and _Y_ to the number of item features.
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -161,7 +161,7 @@ The size of a serialized Matchbox recommender model is approximately `16 * T\(U\
 |Training dataset of user features|[Data Table](data-table.md)|Dataset containing features that describe users (optional)|  
 |Training dataset of item features|[Data Table](data-table.md)|Dataset containing features that describe items (optional)|  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -169,13 +169,13 @@ The size of a serialized Matchbox recommender model is approximately `16 * T\(U\
 |Number of recommendation algorithm iterations|>=1|Integer|5|Specify the maximum number of iterations to perform while training the recommendation model (optional)|  
 |Number of training batches|>=1|Integer|4|Specify the number of training batches to use with the recommender (optional)|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained Matchbox recommender|[ILearner interface](ilearner-interface.md)|Trained Matchbox recommender|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  

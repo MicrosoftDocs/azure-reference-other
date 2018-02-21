@@ -29,7 +29,7 @@ The examples can be executed in Visual Studio with the [Azure Data Lake Tools pl
 
 
 **Query the usql.tables view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.tables
@@ -38,7 +38,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query usql.tables for multiple databases**
-```
+```sql
 @tables =
     SELECT "TestReferenceDB" AS db, * FROM TestReferenceDB.usql.tables
     UNION ALL

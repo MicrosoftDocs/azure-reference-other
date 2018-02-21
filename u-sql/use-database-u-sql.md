@@ -34,7 +34,7 @@ The keyword `DATABASE` is optional to provide familiarity to T-SQL users.
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
   
 The following script shows how using a database, `TestReferenceDB`, will allow the subsequent [`SELECT`](select-clause-u-sql.md) and [`DROP TABLE`](drop-table-u-sql.md) statements to operate on a table, `SampleTable`, within the `TestReferenceDB's` default schema context.  
-```
+```sql
 USE DATABASE TestReferenceDB;  
 @r = 
     SELECT * FROM SampleTable;  
@@ -42,7 +42,7 @@ USE DATABASE TestReferenceDB;
     OUTPUT @r TO "output.txt" USING Outputters.Csv();
 ```
 This script is equivalent to the following script that uses fully qualified names without setting the database context:  
-```
+```sql
 @r = 
     SELECT * FROM TestReferenceDB.dbo.SampleTable;  
     DROP TABLE TestReferenceDB.dbo.SampleTable;  

@@ -38,7 +38,7 @@ Other options in the **Split Data** module:
 
 + [Split by percentage of dataset](split-data-using-split-rows.md)
 
-##  <a name="HowRelativeSplit"></a> Use a relative expression to divide a dataset
+##  Use a relative expression to divide a dataset
 
 1.  Add the [Split Data](split-data.md) module to your experiment in Stuio, and connect it as input to the dataset you want to split.
   
@@ -118,7 +118,7 @@ Rows with a date greater than 10-08-2015 are added to the first (left) output da
 
 Rows with a date of 10-08-2015 or earlier are added to the second (right) output dataset.  
 
-## <a name="bkmk_Notes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

@@ -176,13 +176,13 @@ Each hashing feature represents one or more n-gram text features (unigrams or in
 
 For many problems, the default hash table (bitsize = 10) is more than adequate; however, depending on the size of the n-grams vocabulary in the training text, more space might be needed to avoid collisions. We recommend that you try using a different number of bits for the **Hashing bitsize** parameter, and evaluate the performance of the machine learning solution.
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|
 |----------|----------|-----------------|
 |Dataset|[Data Table](data-table.md)|Input dataset|
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|
 |----------|-----------|----------|-------------|-----------------|
@@ -190,13 +190,13 @@ For many problems, the default hash table (bitsize = 10) is more than adequate; 
 |Hashing bitsize|[1;31]|Integer|10|Type the number of bits to use when hashing the selected columns|
 |N-grams|[0;10]|Integer|2|Specify the number of N-grams generated during hashing. By default, both unigrams and bigrams are extracted|
 
-##  <a name="Outputs"></a> Outputs
+##  Outputs
 
 |Name|Type|Description|
 |----------|----------|-----------------|
 |Transformed dataset|[Data Table](data-table.md)|Output dataset with hashed columns|
 
-##  <a name="exceptions"></a> Exceptions
+##  Exceptions
 
 |Exception|Description|
 |---------------|-----------------|

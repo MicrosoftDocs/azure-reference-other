@@ -25,7 +25,7 @@ This article describes how to use the **Two-Class Decision Jungle** module in Az
   
 The **Two-Class Decision Jungle** module returns an untrained classifier. You then train this model on a labeled training data set, by using [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to make predictions. 
   
-###  <a name="Remarks"></a> More about decision jungles
+###  More about decision jungles
 
 [Decision jungles](http://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](http://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).  
   
@@ -104,7 +104,7 @@ For examples of how decision jungles are used in machine learning, see the [Azur
   
 - [Compare Binary Classifiers](https://gallery.azureml.net/Experiment/b2bfde196e604c0aa2f7cba916fc45c8): Uses several algorithms and discusses their pros and cons.  
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -128,7 +128,7 @@ If the training set is large but training time is limited:
 + Use the **Replicate** option for resampling.  
 + Specify a smaller number of optimization steps per DAG layer (for example, less than 2000).  
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -139,7 +139,7 @@ If the training set is large but training time is limited:
 |Number of optimization steps per decision DAG layer|>=1000|Integer|2048|Specify the number of steps to use to optimize each level of the decision graphs|  
 |Allow unknown values for categorical features|Any|Boolean|True|Indicate whether unknown values of existing categorical features can be mapped to a new, additional feature|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

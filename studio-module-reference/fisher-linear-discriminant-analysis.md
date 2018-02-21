@@ -77,7 +77,7 @@ For examples of feature selection in machine learning, see the [Azure AI Gallery
 
 - [Fisher Linear Discriminant Analysis](https://gallery.cortanaintelligence.com/Experiment/Fis-her-Linear-Discriminant-Analysis-and-Apply-Transformation-2): Demonstrates how to use this module for dimensionality reduction.
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

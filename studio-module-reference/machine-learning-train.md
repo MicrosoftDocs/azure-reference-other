@@ -73,15 +73,15 @@ If you want to save or export the model, right-click the training module and sel
 
 You can also use the [Load Trained Model](load-trained-model.md) module in an experiment to retrieve a stored model.
 
-## <a name = "bkmk_ModList"> </a>List of modules
+## <a name = "bkmk_ModList"></a> List of modules
 
 The **Train** category includes these modules:
 
 + [Sweep Clustering](sweep-clustering.md): Performs a parameter sweep on a clustering model to determine the optimum parameter settings, and trains the best model
 + [Train Anomaly Detection Model](train-anomaly-detection-model.md): Trains an anomaly detector model and labels data from a training set
 + [Train Clustering Model](train-clustering-model.md): Trains a clustering model and assigns data from the training set to clusters
-+ [Train Matchbox Recommender](train-matchbox-recommender.md): Trains a Bayesian recommender using the Matchbox algorithm|
-+ [Train Model](train-model.md)|Trains a classification or regression model from a training set
++ [Train Matchbox Recommender](train-matchbox-recommender.md): Trains a Bayesian recommender using the Matchbox algorithm
++ [Train Model](train-model.md): Trains a classification or regression model from a training set
 + [Tune Model Hyperparameters](tune-model-hyperparameters.md): Performs a parameter sweep on a regression or classification model to determine the optimum parameter settings, and trains the best model
 
 ## Related tasks

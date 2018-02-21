@@ -105,20 +105,20 @@ This section contains implementation details, tips, and answers to frequently as
   
      To avoid getting a huge number of indicator columns, we recommend that you first check the number of values in the column, and bin or quantize the data appropriately.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Dataset with categorical columns|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Categorical columns to convert|Any|ColumnSelection||Select categorical columns to convert to indicator matrices.|  
 |Overwrite categorical columns|Any|Boolean|false|If True, overwrite the selected categorical columns; otherwise, append the resulting indicator matrices to the dataset.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

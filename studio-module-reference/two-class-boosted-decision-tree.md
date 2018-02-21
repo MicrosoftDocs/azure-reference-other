@@ -157,7 +157,7 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
 
     The algorithm repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. 
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -168,7 +168,7 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
 |Random number seed|Any|Integer||Type a value to seed the random number generator that is used by the model. Leave it blank for the default.|  
 |Allow unknown categorical levels|Any|Boolean|True|If True, an additional level is created for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  

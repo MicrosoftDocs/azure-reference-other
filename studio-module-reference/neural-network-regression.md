@@ -43,11 +43,11 @@ Neural networks can be extensively customized. This section describes how to cre
 
     Use this option if you want to add extra hidden layers, or fully customize the network architecture, its connections, and activation functions.
     
-    This option is best if you are already somewhat familiar with neural networks. You use the [Net# language](#bkmk_NetSharp) to define the network architecture.  
+    This option is best if you are already somewhat familiar with neural networks. You use the [Net# language](#bkmk_Customizing) to define the network architecture.  
 
 ###  <a name="bkmk_DefaultArchitecture"></a> Create a neural network model using the default architecture
   
-1.  Add the **Neural Network Regression** module to your experimentin Studio. You can find this module under **Machine Learning**, **Initialize**, in the **Regression** category. 
+1.  Add the **Neural Network Regression** module to your experiment in Studio. You can find this module under **Machine Learning**, **Initialize**, in the **Regression** category. 
   
 2. Indicate how you want the model to be trained, by setting the **Create trainer mode** option.  
   
@@ -177,7 +177,7 @@ After training is complete:
 
 +  To perform cross-validation against a labeled data set, connect the untrained model to [Cross-Validate Model](cross-validate-model.md).
 
-##  <a name="bkmk_Examples"></a> Examples  
+##  Examples  
 
 For examples of how this algorithm is used in experiments, see these samples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
@@ -190,7 +190,7 @@ The experiments provide more help on Net#. The experiments are related and progr
 + [Deep Neural networks example (part C)](http://go.microsoft.com/fwlink/?LinkId=525280)  
 + [Deep Neural networks example (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
 
-##  <a name="bkmk_Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -238,7 +238,7 @@ For additional script examples, see [Guide to the Net# Neural Networks Specifica
 > [!TIP]
 > Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve fair amount of sweeping (iterations) over hyperparameters.  
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -254,7 +254,7 @@ For additional script examples, see [Guide to the Net# Neural Networks Specifica
 |Random number seed|Any|Integer||Specify a numeric seed to use for random number generation. Leave blank to use the default seed.<br /><br /> This parameter is optional|  
 |Allow unknown categorical levels|Any|Boolean|true|Indicate whether an additional level should be created for unknown categories. If the test dataset contains categories not present in the training dataset they are mapped to this unknown level.|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

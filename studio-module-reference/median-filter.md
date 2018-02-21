@@ -83,13 +83,13 @@ For more information about median filters, this Wikipedia article provides a goo
   
  [Wikipedia: Median Filters](http://en.wikipedia.org/wiki/Median_filter)  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Length|>=1|Integer|5|Length of the filter window|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

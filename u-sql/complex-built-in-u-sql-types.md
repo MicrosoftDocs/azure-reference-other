@@ -37,7 +37,8 @@ See [EXPLODE (U-SQL)](explode-u-sql.md) for examples involving the usage of `SQL
 
 
 <a name="sqlMAP">**SQL.MAP**</a>  
-```
+
+```sql
 // Data sets
 @ProjectMembers1 = 
     SELECT * FROM 
@@ -237,7 +238,7 @@ USING Outputters.Text();
 ```
 
 **SQL.MAP - Additional Examples 1**  
-```
+```sql
 // Data set where phone values initially appear as a string.
 @employees = 
     SELECT * FROM 
@@ -329,7 +330,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **SQL.MAP - Additional Examples 2**  
-```
+```sql
 // Data set where phone values initially appear as SQL.MAP.
 DECLARE @ma2p = new SQL.MAP<string, string>{{"office", "030-0076545"}, {"cell", "030-0074321"}, {"a key", "a value"}};
 
@@ -406,6 +407,7 @@ USING Outputters.Csv();
 
 <a name="ReadStringMap">**User-Defined Function - ReadStringMap/WriteQuotedStringMap**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using System;
 using System.Linq;
@@ -451,7 +453,8 @@ namespace ReferenceGuide_Examples
 **Using User-Defined Function - ReadStringMap/WriteQuotedStringMap**  
 Function `ReadStringMap` transforms the input string val into a SQL.MAP instance using the provided delimiters to separate key-value pairs and the key and value in each pair. Function `WriteQuotedStringMap` transforms a SQL.MAP\<string, string> into a quoted string, using the provided delimiters to delimit keys and values and key-value pairs.
 Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -490,7 +493,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **SQL.ARRAY**   
-```
+```sql
 // Data sets
 @popularCities1 = 
     SELECT * FROM 
@@ -686,7 +689,7 @@ USING Outputters.Text();
 
 **SQL.ARRAY - Additional Examples**   
 This example converts the `Books` values into the `SQL.ARRAY` type AS `BooksArray`.  Then each value in the array is returned separately by passing the index position.
-```
+```sql
 @someBooks = 
     SELECT * FROM 
         ( VALUES
@@ -713,7 +716,7 @@ USING Outputters.Csv();
 
 **SQL.ARRAY - Alternate example**   
 Similiar as above; however, values are inputted directly as `SQL.ARRAY`.
-```
+```sql
 @someBooks2 = 
     SELECT * FROM 
         ( VALUES
@@ -736,6 +739,7 @@ USING Outputters.Csv();
 
 <a name="ReadIntArray">**User-Defined Function - ReadIntArray/WriteQuotedIntArray**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using System;
 using System.Linq;
@@ -771,8 +775,9 @@ namespace ReferenceGuide_Examples
 **Using User-Defined Function - ReadIntArray/WriteQuotedIntArray**  
 Function `ReadIntArray` returns a SQL.ARRAY\<int> from the input string val using the provided array item delimiter.
 Function `WriteQuotedIntArray` transforms a SQL.ARRAY\<int> into a quoted string using the provided array item delimiter.
-Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**. 
+ 
+```sql
 @someStrings = 
     SELECT * FROM 
         ( VALUES

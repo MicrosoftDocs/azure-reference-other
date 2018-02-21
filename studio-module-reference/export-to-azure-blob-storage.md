@@ -71,7 +71,7 @@ The Azure blob service is for storing large amounts of data, including binary da
 
 9. **Use cached results**: Select this option if you want to avoid rewriting the results to the blob file each time you run the experiment. If there are no other changes to module parameters, the experiment writes the results only the first time the module is run, or when there are changes to the data.
 
-## <a name="Examples"></a> Examples
+## Examples
 
 For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):
 
@@ -83,7 +83,7 @@ For examples of how to use the [Export Data](export-data.md) module, see the [Az
 
 - [Operationalize Azure ML solution with On-premise SQL Server using Azure data factory](https://gallery.cortanaintelligence.com/Tutorial/Operationalize-Azure-ML-solution-with-On-premise-SQL-Server-using-Azure-data-factory-2): This article describes a more complex data pipeline that sends data back to an on-premises SQL Server database, using blob storage as an interim stage. Use of an on-premises database requires configuration of a data gateway, but you can skip that part of the example, and just use blob storage.
 
-## <a name="TechnicalNotes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

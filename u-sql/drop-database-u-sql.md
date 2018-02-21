@@ -38,7 +38,7 @@ Drop_Database_Statement :=
 - The script can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following script shows how the `TestReferenceDB` database is deleted if it already exists before it is recreated:  
-```
+```sql
 DROP DATABASE TestReferenceDB; 
 
 // with IF  EXISTS

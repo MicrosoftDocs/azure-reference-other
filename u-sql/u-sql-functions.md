@@ -27,6 +27,7 @@ Scalar functions – as their names imply – return values that are instances o
 
 <a name="dt_TryParse_USQL">**Function dt_TryParse_USQL**</a>  
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file. See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -55,7 +56,7 @@ namespace ReferenceGuide_Examples
  
 **Using Function dt_TryParse_USQL**  
 Using above code-behind and calling function.  Function consumes a string and attempts to convert the string to a DateTime value using DateTime.TryParse.  Using the Code-Behind **above**. 
-```U-SQL
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -80,7 +81,7 @@ USING Outputters.Csv(outputHeader: true);
  
 **Using inline function expression**   
 Similar as above except here the function is defined inline.
-```
+```sql
 @result = 
     SELECT
         EmpID,
@@ -103,6 +104,7 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="getFiscalPeriod">**Function GetFiscalPeriod**</a>    
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using System;
 
@@ -148,7 +150,7 @@ namespace ReferenceGuide_Examples
 
 **Using Function GetFiscalPeriod**  
 Using above code-behind and calling function.  Function calculates the fiscal month and quarter and returns a string value based on the passed DateTime value.  For additional information, see [U-SQL Programmability Guide: User-Defined Function](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#in-line-c-function-expressions).
-```U-SQL
+```sql
 @result = 
     SELECT 
         ReferenceGuide_Examples.MyClass.GetFiscalPeriod(DateTime.Now) AS dd

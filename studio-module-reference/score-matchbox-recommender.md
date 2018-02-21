@@ -69,7 +69,7 @@ More details on the Matchbox recommender and its underlying probabilistic algori
 
 + [Recommendations Everywhere](http://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx): This blog post provides a high-level introduction to recommender systems with lots of visual aids. 
 
-## <a name="AllOptions"></a>How to configure Score Matchbox Recommender
+## How to configure Score Matchbox Recommender
 
 This module supports different types of recommendations, each with different requirements. Click the link for the type of data you have and the type of recommendation you want to create.
 
@@ -317,7 +317,7 @@ The scored dataset returned by **Score Matchbox Recommender** lists the related 
 
     The related items are ordered by the strength of the relation to the target item, with the most strongly related item in the column, **Related Item 1**.  
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains answers to some common questions about using the recommender to create predictions.  
 
@@ -333,7 +333,7 @@ For purposes of prediction, a cold-start user is defined as a user with an ID th
 
 However, if you do not have any collaborative filtering data, such as a vector of user features, you are better of using a classification or regression learner.
 
-###  <a name="bkmk_Production"></a> Production use of the Matchbox recommender
+###  Production use of the Matchbox recommender
 
 If you have experimented with the Matchbox recommender and then move the model to production, be aware of these key differences when using the recommender in evaluation mode and in production mode:
 
@@ -355,7 +355,7 @@ If you have experimented with the Matchbox recommender and then move the model t
 
 Online updating (or continuous training) of a recommendation model is not currently supported in Azure Machine Learning. If you want to capture user responses to recommendations and use those for improving the model, we suggest retraining the complete model periodically. Incremental training is not possible, but you can apply a sliding window to the training data to ensure that data volume is minimized while using the most recent data.
 
-## <a name="ExpectedInputs"></a> Expected inputs
+## Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
@@ -364,7 +364,7 @@ Online updating (or continuous training) of a recommendation model is not curren
 |User features|[Data Table](data-table.md)|Dataset containing features that describe users<br /><br /> This data is optional|  
 |Item features|[Data Table](data-table.md)|Dataset containing features that describe items<br /><br /> This data is optional|  
 
-## <a name="parameters"></a> Module parameters
+## Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -373,13 +373,13 @@ Online updating (or continuous training) of a recommendation model is not curren
 |Related user selection|List|[User selection](http://msdn.microsoft.com/library/51c80b01-17c9-44e4-841d-fc90fb837327)|From Users That Rated Items (for model evaluation)|Select the set of users to use when finding related items|  
 |Related item selection|List|[Item selection](http://msdn.microsoft.com/library/58609e2d-f162-4a48-a2b8-1ffcc8336c81)|From Rated Items (for model evaluation)|Select the set of items to use when finding related items|  
 
-## <a name="Outputs"></a> Outputs
+## Outputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Scored dataset|[Data Table](data-table.md)|Scored dataset|  
 
-## <a name="exceptions"></a> Exceptions
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

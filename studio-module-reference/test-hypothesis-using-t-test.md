@@ -126,7 +126,7 @@ The dataset of scores contains these values, regardless of the type of t-test yo
 > 
 > Remember, the goal is to determine whether you can reject the null hypothesis. A score of 0 doesn’t mean you should accept the null hypothesis: it means that you don’t have enough data, and need further investigation.
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 The module automatically names the output columns according to the following conventions, depending on which type of t-test was selected, and whether the result was to reject or accept the null hypothesis.
 

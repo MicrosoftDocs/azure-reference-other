@@ -34,29 +34,19 @@ This module is particularly useful when you need to separate data into training 
 
 1. Add the **Split Data** module to your experiment in studio. You can find this module under **Data Transformation**, in the **Sample and Split** category.
 
-2. **Splitting mode**: Choose one of the following options, depending on the type of data you have, and how you want to divide it. 
+2. **Splitting mode**: Choose one of the following modes, depending on the type of data you have, and how you want to divide it. Each splitting mode has different options. Click the following topics for detailed instructions and examples. 
 
-    - **Split Rows**: Use this option if you just want to divide the data into two parts. You can specify the percentage of data to put in each split, but by default, the data is divided 50-50.
+    - [Split Rows](split-data-using-split-rows.md): Use this option if you just want to divide the data into two parts. You can specify the percentage of data to put in each split, but by default, the data is divided 50-50.
 
         You can also randomize the selection of rows in each group, and use stratified sampling. In stratified sampling, you must select a single column of data for which you want values to be apportioned equally among the two result datasets.  
 
-    - **Recommender Split**:  Always choose this option if you are preparing data for use in a recommender system. It helps you divide data sets into training and testing groups while ensuring that important values such as user-item pairs or ratings are evenly divided among the groups.
+    - [Recommender Split](split-data-using-recommender-split.md):  Always choose this option if you are preparing data for use in a recommender system. It helps you divide data sets into training and testing groups while ensuring that important values such as user-item pairs or ratings are evenly divided among the groups.
 
-    - **Regular Expression Split**:  Choose this option when you want to divide your dataset by testing a single column for a value.
+    - [Regular Expression Split](split-data-using-regular-expression.md):  Choose this option when you want to divide your dataset by testing a single column for a value.
 
         For example, if you are analyzing sentiment, you could check for the presence of a particular product name in a text field, and then divide the dataset into rows with the target product name, and those without.
 
-    - **Relative Expression Split**:  Use this option whenever you want to apply a condition to a number column. The number could be a date/time field, a column containing age or dollar amounts, or even a percentage. For example, you might want to divide your data set depending on the cost of the items, group people by age ranges, or separate data by a calendar date.
-
-2. Each splitting mode has different options. Click the following topics for detailed instructions and examples specific to each split type: 
-
-   - [Split Data using Split Rows](split-data-using-split-rows.md)
-
-   - [Split Data using Recommender Split](split-data-using-recommender-split.md)  
-
-   - [Split Data using Regular Expression](split-data-using-regular-expression.md)
-
-   - [Split Data using Relative Expression](split-data-using-relative-expression.md)
+    - [Relative Expression Split](split-data-using-relative-expression.md):  Use this option whenever you want to apply a condition to a number column. The number could be a date/time field, a column containing age or dollar amounts, or even a percentage. For example, you might want to divide your data set depending on the cost of the items, group people by age ranges, or separate data by a calendar date.
 
 ## Requirements
 
@@ -74,13 +64,13 @@ This module is particularly useful when you need to separate data into training 
 
     As a workaround, you can use [Select Columns in Dataset](select-columns-in-dataset.md) to remove some columns, and then add the columns later using [Add Columns](add-columns.md). Alternatively, if your dataset has many features that you want to use in the model, divide the dataset using a different option, and train the model using [Train Model](train-model.md) rather than [Train Matchbox Recommender](train-matchbox-recommender.md). 
 
-## <a name="bkmk_Examples"></a> Examples  
+## Examples  
 
 For examples of how the [Split Data](split-data.md) module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
 
 - [Cross Validation for Binary Classification: Adult Dataset](http://go.microsoft.com/fwlink/?LinkId=525734): A 20% sampling rate is applied to create a smaller randomly sampled dataset. (The original census dataset had over 30,000 rows; the training dataset has around 6500). The dataset is cleaned for missing values and then passed to five different models for training and cross-validation.
 
-## <a name="Notes"></a> Technical notes
+## Technical notes
 
 The following requirements apply to all uses of [Split Data](split-data.md):  
 

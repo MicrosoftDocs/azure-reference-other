@@ -112,7 +112,7 @@ For examples of how this module is used in machine learning, see the [Azure AI G
   
 - [Download Data sample](http://go.microsoft.com/fwlink/?LinkId=525938): Gets data from the UCI Machine Learning repository and then uses [Enter Data Manually](enter-data-manually.md) to create column names. Sample R code is also provided, which you can use to merge the entered rows with the dataset.  
   
-##  <a name="Notes"></a> Technical notes  
+##  Technical notes  
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 

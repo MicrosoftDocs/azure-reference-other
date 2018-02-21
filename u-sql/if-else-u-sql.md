@@ -39,7 +39,7 @@ Is a constant-foldable expression that returns TRUE or FALSE.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
 
 **Dataset**   
-```
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -61,7 +61,7 @@ Is a constant-foldable expression that returns TRUE or FALSE.
 ```
 
 **One condition**   
-```
+```sql
 DECLARE @DeptID int = 100;
 
 IF @DeptID == 100 THEN
@@ -74,7 +74,7 @@ USING Outputters.Csv();
 ```
 
 **One condition and ELSE**   
-```
+```sql
 DECLARE @DeptID int = 100;
 
 IF @DeptID == 200 THEN
@@ -89,7 +89,7 @@ USING Outputters.Csv();
 ```
 
 **Two conditions and ELSE**   
-```
+```sql
 DECLARE @DeptID int = 100;
 
 IF @DeptID == 200 THEN
@@ -106,7 +106,7 @@ USING Outputters.Csv();
 ```
 
 **Nested conditions**   
-```
+```sql
 DECLARE @DeptID int = 100;
 DECLARE @flag bool = true;
 

@@ -185,27 +185,27 @@ For examples of how recommendation models are used in Azure Machine Learning, se
 
 - [Building recommendation engine for .NET applications using Azure Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/): This blog provides a detailed description of how to build a movie recommendation model. 
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Test dataset|[Data Table](data-table.md)|Test dataset|  
 |Scored dataset|[Data Table](data-table.md)|Scored dataset|  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Minimum number of items that the query user and the related user must have rated in common|>=1|Integer|2|Specify the minimum number of items that must have been rated by both the query user and the related user<br /><br /> This parameter is optional|  
 |Minimum number of users that the query item and the related item must have been rated by in common|>=1|Integer|2|Specify the minimum number of users that must have rated both the query item and the related item<br /><br /> This parameter is optional|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Metric|[Data Table](data-table.md)|A table of evaluation metrics|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  

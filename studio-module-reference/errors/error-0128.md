@@ -1,5 +1,6 @@
 ---
 title: "Error 0128 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0128
-**Error 0128**  
-  
+# Error 0128  
  Number of conditional probabilities for categorical columns exceeds limit.  
   
 ## Resolution  
@@ -25,5 +24,5 @@ manager: "jhubbard"
 |Number of conditional probabilities for categorical columns exceeds limit.|  
 |Number of conditional probabilities for categorical columns exceeds limit. Columns '{0}' and '{1}' are the problematic pair.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

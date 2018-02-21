@@ -19,9 +19,8 @@ An inner join will combine the selected columns from the two joined rowsets for 
 ### Example  
 Let’s assume the following rowsets are referenced by the respective rowset variables:  
   
-| @employees |           |  
+| **EmpName** |   **DepID**        |  
 |------------|-----------|  
-| **EmpName** string | **DepID** int? |  
 | Rafferty   | 31        |  
 | Jones      | 33        |  
 | Heisenberg | 33        |  
@@ -29,9 +28,8 @@ Let’s assume the following rowsets are referenced by the respective rowset var
 | Smith      | 34        |  
 | Williams   | *null*    |  
   
-| @departments |             |  
+| **DeptID** |    **DepName**         |  
 |--------------|-------------|  
-| **DeptID** int | **DepName** string |  
 | 31           | Sales       |  
 | 33           | Engineering |  
 | 34           | Clerical    |  
@@ -39,7 +37,7 @@ Let’s assume the following rowsets are referenced by the respective rowset var
   
 Then the following inner join (the @departments.DepID has to be cast to (int?) since C# does not allow comparison of int with int?).  
   
-```  
+```sql  
 @employees = SELECT *  
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  
@@ -69,9 +67,8 @@ USING Outputters.Csv();
   
 produces the following result. Note that it does not include employees that have no department nor does it include departments that have no employees.  
   
-| @rs_inner |           |             |             |  
+| **EmpDepID** |  **DepID**         |     **EmpName**        |     **DepName**        |  
 |------------|-----------|-------------|-------------|  
-| **EmpDepID** int?  | **DepID** int? | **EmpName** string | **DepName** string |  
 | 31         | 31        | Rafferty    | Sales       |  
 | 33         | 33        | Jones       | Engineering |  
 | 33         | 33        | Heisenberg  | Engineering |  

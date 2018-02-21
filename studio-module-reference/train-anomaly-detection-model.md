@@ -63,20 +63,20 @@ For an example of how anomaly detection is implemented in Azure Machine Learning
   
 - [Anomaly Detection: Credit Risk](https://gallery.azureml.net/Experiment/1219e87f8fb84e88a2e1b54256808bb3): Illustrates how to use the [One-Class Support Vector Machine](one-class-support-vector-machine.md) and [PCA-Based Anomaly Detection](pca-based-anomaly-detection.md) modules for fraud detection.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|Untrained anomaly detection model|  
 |Dataset|[Data Table](data-table.md)|Input data source|  
 
-##  <a name="Outputs"></a> Outputs
+##  Outputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ILearner interface](ilearner-interface.md)|Trained anomaly detection model|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  

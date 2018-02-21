@@ -37,7 +37,7 @@ Determined by data types of the two arguments.
 
 **Simple Example**  
 The following example divides the number 38 by 5. This results in 7 as the integer portion of the result and demonstrates how modulo returns the remainder of 3. 
-```
+```sql
 @aValue = 
     SELECT * FROM 
         ( VALUES

@@ -31,7 +31,7 @@ If you need some more advanced statistics, such as sample skewness or interquart
 
 Because the modules generate the results each time you run the experiment, the results are updated if your data changes.
 
-##  <a name="modules"></a> List of modules
+##  List of modules
 
 The **Statistical Functions** category includes the following modules:  
 

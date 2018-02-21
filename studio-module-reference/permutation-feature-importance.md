@@ -69,7 +69,7 @@ See these sample experiments in the [Azure AI Gallery](https://gallery.cortanain
   
 -  [Using the Permutation Feature Importance module](https://gallery.cortanaintelligence.com/Experiment/4802f138edcb4582a877018460edd943): Illustrates the usage of this module in a web service.
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section provides implementation details, tips, and answers to frequently asked questions.
 
@@ -81,14 +81,14 @@ The rankings provided by permutation feature importance are often different from
 
 This is because permutation feature importance doesn’t measure the association between a feature and a target value, but instead captures how much influence each feature has on predictions from the model.
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ILearner interface](ilearner-interface.md)|A trained classification or regression model|  
 |Test data|[Data Table](data-table.md)|Test dataset for scoring and evaluating a model after permutation of feature values|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 ###  
   
@@ -97,13 +97,13 @@ This is because permutation feature importance doesn’t measure the association
 |Random seed|Integer|>=0|Required|0|Random number generator seed value|  
 |Metric for measuring performance|EvaluationMetricType|select from list|Required|Classification - Accuracy|Select the metric to use when evaluating the variability of the model after permutations|
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Feature importance|[Data Table](data-table.md)|A dataset containing the feature importance results, based on the selected metric|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
   
 |Exception|Description|  
 |---------------|-----------------|  

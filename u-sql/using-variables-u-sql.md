@@ -22,7 +22,7 @@ manager: "jhubbard"
 
 **Use scalar variables**  
 You can use scalar variables as well to make your script maintenance easier. 
-```
+```sql
 DECLARE @in  string = "/Samples/Data/SearchLog.tsv";
 DECLARE @out string = "/output/SearchLog-scalar-variables.csv";
 
