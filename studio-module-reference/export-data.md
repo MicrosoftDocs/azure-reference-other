@@ -96,9 +96,8 @@ For examples of how to use the [Export Data](export-data.md) module, see the [Az
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
-
-Not sure how or where you should store your data? See this guide to common data scenarios in the data science process:  [Scenarios for advanced analytics in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-sample-scenarios)
+> [!TIP]
+> Not sure how or where you should store your data? See this guide to common data scenarios in the data science process:  [Scenarios for advanced analytics in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-sample-scenarios)
 
 ### Implementation details
 

@@ -29,11 +29,11 @@ This article describes how to use the **FIR Filter** module in Azure Machine Lea
 After you have defined a digital signal processing filter, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module. You can also save the filter for re-use with similar datasets.
 
 > [!TIP]
->  Need to filter data from a dataset or remove missing values? Use these modules instead:  
->   
->  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
-> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
+> Need to filter data from a dataset or remove missing values? Use these modules instead:  
+> 
+> - [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> - [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> - [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
 ## How to configure FIR Filter
 

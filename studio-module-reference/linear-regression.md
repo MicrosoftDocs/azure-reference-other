@@ -178,7 +178,7 @@ For examples of regression models, see these sample experiments in the [Azure AI
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 Many tools support creation of linear regression, ranging from the simple to complex. For example, you can easily perform linear regression in Excel, using the Solver Toolpak, or you can code your own regression algorithm, using R, Python, or C#.
 

@@ -157,15 +157,14 @@ For examples of how feature hashing is used for text analytics, see the [Azure A
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
-
-In addition to using feature hashing, you might want to use other methods to extract features from text. For example:
-
-- Use the **Preprocess Text** module to remove artifacts such as spelling errors, or to simplify text preparatory to hashing.
-- Use **Extract Key Phrases** to use natural language processing to extract phrases.
-- Use **Named Entity Recognition** to identify important entities.
-
-Azure Machine Learning Studio provides a [Text Classification template](http://go.microsoft.com/fwlink/?LinkId=525957) that guides you through using the **Feature Hashing** module for feature extraction.
+> [!TIP]
+> In addition to using feature hashing, you might want to use other methods to extract features from text. For example:
+> 
+> - Use the **Preprocess Text** module to remove artifacts such as spelling errors, or to simplify text preparatory to hashing.
+> - Use **Extract Key Phrases** to use natural language processing to extract phrases.
+> - Use **Named Entity Recognition** to identify important entities.
+> 
+> Azure Machine Learning Studio provides a [Text Classification template](http://go.microsoft.com/fwlink/?LinkId=525957) that guides you through using the **Feature Hashing** module for feature extraction.
 
 ### Implementation details
 

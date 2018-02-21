@@ -1,7 +1,7 @@
 ---
 title: "Threshold Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -35,11 +35,11 @@ The output of the [Apply Filter](apply-filter.md) module is a dataset containing
 Alternatively, if you select the **Indicator** option, instead of returning the filter values, a column is returned containing Boolean values that indicates whether the value in each row met the specified filter condition or not. This can be useful when you are testing a new filter.  
 
 > [!TIP]
->  Need to filter data from a dataset or remove missing values? Use these modules instead:  
->   
->  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
-> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
+> Need to filter data from a dataset or remove missing values? Use these modules instead:  
+> 
+> - [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> - [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> - [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
 ## How to configure Threshold Filter
   

@@ -91,7 +91,7 @@ There are no examples in the [Azure AI Gallery](https://gallery.cortanaintellige
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 The executables provided in the SVM-Light framework require both an *example file* and a *model file*. However, this module creates only the example file. You must create the model file separately by using the SVMLight libraries.  
   

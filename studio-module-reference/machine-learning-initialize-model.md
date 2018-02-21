@@ -63,7 +63,7 @@ Azure Machine Learning provides many different state-of-the art machine learning
   
 ##   List of modules
 
-The modules in this category are organized by the type of machine learning algorithm encapsulated by the modules. For each type of algorithm, you typically requires a different type of data.
+The modules in this category are organized by the type of machine learning algorithm encapsulated by the modules. For each type of algorithm, you typically require a different type of data.
 
 + [Anomaly Detection](anomaly-detection.md)
 + [Classification](machine-learning-initialize-model-classification.md)

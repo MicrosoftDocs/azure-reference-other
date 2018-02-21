@@ -1,7 +1,7 @@
 ---
 title: "Replace Discrete Values | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/28/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -97,7 +97,7 @@ The following table contains a categorical column X, and a column Y with True/Fa
 | X | Y | P(Y&#124;X) |  
 |-------|-------|-------------------|  
 |Blue|0|<code>P(Y=0&#124;X=Blue) = 0.5</code>|  
-|Blue|1|<code>P(Y=1&#124;X =Blue) = 0.5</code>|  
+|Blue|1|<code>P(Y=1&#124;X=Blue) = 0.5</code>|  
 |Green|0|<code>P(Y=0&#124;X=Green) = 2/3</code>|  
 |Green|0|<code>P(Y=0&#124;X=Green) = 2/3</code>|  
 |Green|1|<code>P(Y=1&#124;X=Green) = 1/3</code>|  
@@ -159,7 +159,7 @@ This example demonstrates how missing values (nulls) propagate to the results wh
 
     That is, for each row in the dataset indexed by `i`:
 
-     `Mean(Y│X)i= Mean(Y│X = Xi)`  
+     `Mean(Y│X)i = Mean(Y│X = Xi)`  
 
      `StdDev(Y│X)i = StdDev(Y│X = Xi)`  
 

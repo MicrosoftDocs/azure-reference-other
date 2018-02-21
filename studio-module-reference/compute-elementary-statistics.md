@@ -230,17 +230,14 @@ The following experiments in the [Azure AI Gallery](https://gallery.cortanaintel
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
-
-The following conditions must be satisfied when using the [Compute Elementary Statistics](compute-elementary-statistics.md) module:  
-  
-- There must be a sufficient number of data points (rows) to compute the selected statistic. For example, to compute **Sample standard deviation** requires at least two data points; otherwise, the result is NaN.  
-  
--  Input columns must be numeric or Boolean.  
-
-By default, all numeric columns are selected. However, if any numeric columns are marked as categorical, you might get the following error: " Error 0056: Column with name \<column name> is not in an allowed category."
-  
-To correct the error, add an instance of the [Edit Metadata](edit-metadata.md) module, select the column with the problem, and use the option **Remove categorical**.  
+> [!TIP]
+> The following conditions must be satisfied when using the [Compute Elementary Statistics](compute-elementary-statistics.md) module:  
+> 
+> - There must be a sufficient number of data points (rows) to compute the selected statistic. For example, to compute **Sample standard deviation** requires at least two data points; otherwise, the result is NaN.  
+> - Input columns must be numeric or Boolean.  
+> 
+> By default, all numeric columns are selected. However, if any numeric columns are marked as categorical, you might get the following error: " Error 0056: Column with name \<column name> is not in an allowed category."
+> To correct the error, add an instance of the [Edit Metadata](edit-metadata.md) module, select the column with the problem, and use the option **Remove categorical**.  
 
 ### Implementation details
   

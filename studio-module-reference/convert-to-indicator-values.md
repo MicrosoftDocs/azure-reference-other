@@ -83,7 +83,7 @@ To see examples of how this module is used, see the [Azure AI Gallery](https://g
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 -   Only columns that are marked as categorical can be converted to indicator columns. If you see this error, it is likely that one of the columns you selected is not categorical:  
   
