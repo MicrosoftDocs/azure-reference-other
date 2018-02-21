@@ -85,7 +85,7 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 For this model type, it is a best practice to normalize datasets before using them to train the classifier. For normalization options, see  [Normalize Data](normalize-data.md).  
 

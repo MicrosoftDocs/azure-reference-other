@@ -1,7 +1,7 @@
 ---
 title: "Two-Class Logistic Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -112,7 +112,7 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 Logistic regression requires numeric variables. Therefore, when you use categorical columns as variable, Azure Machine Learning converts the values to an indicator array internally.
 

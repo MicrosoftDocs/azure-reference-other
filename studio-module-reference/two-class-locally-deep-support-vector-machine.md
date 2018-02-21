@@ -1,7 +1,7 @@
 ---
 title: "Two-Class Locally Deep Support Vector Machine | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -125,7 +125,7 @@ After training is complete:
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 This LD-SVM classifier is most useful under the following conditions:  
   

@@ -143,7 +143,7 @@ The quality and accuracy of clustering models can be strongly affected by the ch
 
 To create a parameter sweep, you must also configure the [K-Means Clustering](k-means-clustering.md) module to use a parameter sweep. You can specify that the sweep iterate over all possible combinations of parameters, or use a random combination of parameters.  You can also choose one of several standard metrics for measuring the accuracy of the centroids during the iterative model building and testing process. After the specified number of iterations has completed, the module selects the best number of clusters, based on the selected metric, and outputs reports that you can use to assess the results.
 
-### Tips
+### Usage tips
 
 - In some cases, you might already know how many clusters you expect to find. For example, your data might have class labels that could be used in guiding the selection of the centroids. In that case, you can configure the [K-Means Clustering](k-means-clustering.md) module to use the label column to guide selection of the initial centroids.  
 

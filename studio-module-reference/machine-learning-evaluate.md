@@ -128,7 +128,7 @@ The following regression models generate a table of default metrics, along with 
 + [Fast Forest Quantile Regression](fast-forest-quantile-regression.md)
 + [Ordinal Regression](ordinal-regression.md)  
 
-### Tips
+### Usage tips
 
 To pull the numbers out without using copy-paste from the Studio UI, you can use the new [PowerShell library for Azure ML](https://github.com/hning86/azuremlps). You can toget metadata and other information for an entire experiment, or from individual modules.
 

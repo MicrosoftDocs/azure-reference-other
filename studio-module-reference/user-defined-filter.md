@@ -1,7 +1,7 @@
 ---
 title: "User-Defined Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -28,11 +28,11 @@ A filter is a transfer function that takes an input signal and creates an output
 After you have defined a filter that meets your needs, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module.
 
 > [!TIP]
->  Need to filter data from a dataset or remove missing values? Use these modules instead:  
->   
->  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
-> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
+> Need to filter data from a dataset or remove missing values? Use these modules instead:  
+> 
+> - [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> - [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> - [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
 ## How to configure User-Defined Filter
 

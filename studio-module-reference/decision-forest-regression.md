@@ -120,7 +120,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 - If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.
 
-### Tips
+### Usage tips
 
 If you have limited data or want to minimize the time spent training the model, try these settings:
 

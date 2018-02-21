@@ -109,7 +109,7 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 For this model type, it is recommended that you normalize the dataset before using it to train the classifier.
 

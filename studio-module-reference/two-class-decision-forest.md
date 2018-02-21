@@ -126,7 +126,7 @@ For examples of how decision forests are used in machine learning, see the sampl
 ##  <a name="bkmk_Notes"></a> Technical notes
 
 This section contains additional implementation details, research, and frequently asked questions.
-### Tips
+### Usage tips
 
 If you have limited data, or if you want to minimize the time spent training the model, try these settings:  
   

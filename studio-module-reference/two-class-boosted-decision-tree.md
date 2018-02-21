@@ -108,7 +108,7 @@ For examples of how boosted decision trees are used in machine learning, see the
 
 This section contains implementation details and frequently asked questions.
 
-### Tips
+### Usage tips
 
 + To train a boosted decision tree model, you must provide multiple data instances. An error is generated during the training process if the dataset contains too few rows.
 

@@ -112,7 +112,7 @@ For more information about the training process with the **Replicate** option, s
 
 + [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013](http://research.microsoft.com/projects/decisionforests/)
 
-### Tips
+### Usage tips
 
 If you have limited data or want to minimize the time spent training the model, try these recommendations:
 

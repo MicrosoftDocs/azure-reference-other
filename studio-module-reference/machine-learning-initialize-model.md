@@ -63,7 +63,7 @@ Azure Machine Learning provides many different state-of-the art machine learning
   
 ##  <a name="bkmk_categories"></a>  List of modules
 
-The modules in this category are organized by the type of machine learning algorithm encapsulated by the modules. For each type of algorithm, you typically requires a different type of data.
+The modules in this category are organized by the type of machine learning algorithm encapsulated by the modules. For each type of algorithm, you typically require a different type of data.
 
 + [Anomaly Detection](anomaly-detection.md)
 + [Classification](machine-learning-initialize-model-classification.md)
@@ -72,11 +72,11 @@ The modules in this category are organized by the type of machine learning algor
 
 ### Related tasks
 
-In addition to the traditional machine learnign algorithm categoris described above, the following modules provide specialized types of learning from data or preprocessing:
+In addition to the traditional machine learning algorithm categories described above, the following modules provide specialized types of learning from data or preprocessing:
 
-[Text analysis](text-analytics.md)
-[Image classification](pretrained-cascade-image-classification.md)
-[Time series analysis](time-series.md)
+- [Text analysis](text-analytics.md)
+- [Image classification](pretrained-cascade-image-classification.md)
+- [Time series analysis](time-series.md)
 
 ## See also
  [Module Categories and Descriptions](machine-learning-module-descriptions.md)   

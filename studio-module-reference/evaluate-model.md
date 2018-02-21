@@ -1,7 +1,7 @@
 ---
 title: "Evaluate Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"

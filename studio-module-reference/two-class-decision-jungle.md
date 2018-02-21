@@ -108,7 +108,7 @@ For examples of how decision jungles are used in machine learning, see the [Azur
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 If you have limited data, or want to minimize the time spent training the model, try these settings.
 

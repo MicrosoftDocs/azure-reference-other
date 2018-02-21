@@ -137,7 +137,7 @@ For examples of how recommendation models are used in Azure Machine Learning, se
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 -   If a feature column has missing values, the mode of the non-missing values will be used as replacement for the missing values.  
   

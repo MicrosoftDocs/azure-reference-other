@@ -1,7 +1,7 @@
 ---
 title: "Replace Discrete Values | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/28/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -159,7 +159,7 @@ This example demonstrates how missing values (nulls) propagate to the results wh
 
     That is, for each row in the dataset indexed by `i`:
 
-     `Mean(Y│X)i= Mean(Y│X = Xi)`  
+     `Mean(Y│X)i = Mean(Y│X = Xi)`  
 
      `StdDev(Y│X)i = StdDev(Y│X = Xi)`  
 
