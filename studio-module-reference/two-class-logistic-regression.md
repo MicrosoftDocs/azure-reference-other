@@ -70,7 +70,7 @@ For example, the label column might be [Voted] with possible values of "Yes" or 
   
      This optimization parameter limits the amount of memory that is used to compute the next step and direction. When you specify less memory, training is faster but less accurate.  
   
-6.  For **Random number seed**, type an integer value. Defining a seed value is important if you want the results to be reproducble over multiple runs of the same experiment.  
+6.  For **Random number seed**, type an integer value. Defining a seed value is important if you want the results to be reproducible over multiple runs of the same experiment.  
   
 7.  Select the **Allow unknown categorical levels** option to create an additional “unknown” level in each categorical column. If you do so, any values (levels) in the test dataset that are not available in the training dataset are mapped to this "unknown" level.
   
@@ -94,9 +94,9 @@ For example, the label column might be [Voted] with possible values of "Yes" or 
 
 After training is complete:
 
-+ To see a summary of the model's parameters, together with the feature weights learned from training,right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md), and select **Visualize**   
++ To see a summary of the model's parameters, together with the feature weights learned from training, right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md), and select **Visualize**.   
   
-+ To make predictions on new data, use the trained model and new data as input to the [Score Model](score-model.md) module . 
++ To make predictions on new data, use the trained model and new data as input to the [Score Model](score-model.md) module. 
 
 + To perform cross-validation against a labeled data set, connect the data and the untrained model to [Cross-Validate Model](cross-validate-model.md).  
   
