@@ -97,7 +97,7 @@ The following table contains a categorical column X, and a column Y with True/Fa
 | X | Y | P(Y&#124;X) |  
 |-------|-------|-------------------|  
 |Blue|0|<code>P(Y=0&#124;X=Blue) = 0.5</code>|  
-|Blue|1|<code>P(Y=1&#124;X =Blue) = 0.5</code>|  
+|Blue|1|<code>P(Y=1&#124;X=Blue) = 0.5</code>|  
 |Green|0|<code>P(Y=0&#124;X=Green) = 2/3</code>|  
 |Green|0|<code>P(Y=0&#124;X=Green) = 2/3</code>|  
 |Green|1|<code>P(Y=1&#124;X=Green) = 1/3</code>|  
