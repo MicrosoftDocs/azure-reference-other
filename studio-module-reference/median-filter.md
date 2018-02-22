@@ -1,7 +1,7 @@
 ---
 title: "Median Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -31,11 +31,11 @@ Median filters are widely used in image recognition to reduce noise so that feat
 After you have defined a filter transformation that meets your needs by using the **Median Filter** module, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module.
 
 > [!TIP]
->  Need to filter data from a dataset or remove missing values? Use these modules instead:  
->   
->  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
-> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
+> Need to filter data from a dataset or remove missing values? Use these modules instead:  
+> 
+> - [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> - [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> - [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
 ## How to configure Median Filter  
   
@@ -73,9 +73,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 Each entry in the output signal is equal to the median of the entries in a subset (mask) of the input signal, and centered at the corresponding index. The mask size should be an odd, positive-valued integer.  
   
-If you provide this method with an even-valued mask size, it is reduced by one. For example, given m=2q+1, the filter is defined as:  
-  
-If you provide this method with an even-valued mask size, it is reduced by one. For example, given `m=2q+1`, the filter is defined as:  `yi =median[{xi-q,…, xi+q}]`
+If you provide this method with an even-valued mask size, it is reduced by one. For example, given `m=2q+1`, the filter is defined as: `yi = median[{xi-q,…, xi+q}]`
   
 Values beyond the borders of the input signal are assumed to equal the value at the border. That is, if _n_ is the length of the input signal: 
 

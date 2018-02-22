@@ -81,7 +81,7 @@ For examples of feature selection in machine learning, see the [Azure AI Gallery
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 - This method works only on continuous variables, not categorical or ordinal variables.
 

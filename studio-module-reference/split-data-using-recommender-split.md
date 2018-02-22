@@ -88,7 +88,7 @@ Alternatively, if your dataset has many features that you want to use in the mod
 
 For detailed information about the supported data formats, see [Train Matchbox Recommender](train-matchbox-recommender.md). 
 
-### Tips
+### Usage tips
 
 -   An error is raised if the dataset does not contain at least two rows.    
   

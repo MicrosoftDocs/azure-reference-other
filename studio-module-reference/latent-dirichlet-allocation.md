@@ -230,9 +230,8 @@ By default, the distributions of outputs for transformed dataset and feature-top
 
 + The feature-topic matrix is normalized as the conditional probability of words given a topic. In this case, the sum of each column equals 1.
 
-### Tips
-
-Occasionally the module might return an empty topic, which is most often caused by the pseudo-random initialization of the algorithm.  If this happens, you can try changing related  parameters, such as the maximum size of the N-gram dictionary or the number of bits to use for feature hashing.
+> [!TIP]
+> Occasionally the module might return an empty topic, which is most often caused by the pseudo-random initialization of the algorithm.  If this happens, you can try changing related  parameters, such as the maximum size of the N-gram dictionary or the number of bits to use for feature hashing.
 
 ### <a name="bkmk_AboutLDA"></a> LDA and topic modeling
 

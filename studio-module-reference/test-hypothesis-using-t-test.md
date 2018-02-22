@@ -1,7 +1,7 @@
 ---
 title: "Test Hypothesis Using t-Test | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/28/2018
 ms.reviewer: ""
 ms.service: "machine-learning"

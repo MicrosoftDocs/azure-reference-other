@@ -73,7 +73,7 @@ If you are using one of the following special types of model, you might need to 
 
 - Create recommendations or generate data for evaluating a recommender: Use [Score Matchbox Recommender](score-matchbox-recommender.md)
 
-### Tips
+### Usage tips
 
 If the data that you are scoring contains missing values, in many cases no score will be generated for the entire row.
 

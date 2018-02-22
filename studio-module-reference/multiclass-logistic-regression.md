@@ -1,7 +1,7 @@
 ---
 title: "Multiclass Logistic Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"

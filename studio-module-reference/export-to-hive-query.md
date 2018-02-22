@@ -82,7 +82,7 @@ If the requirements of the MapReduce job exceed available capacity, the Hive que
 
 If you don't want to recreate the Hive table each time you run the experiment, select the **Use cached results** option to TRUE. When this option is set to TRUE, the module will check whether the experiment has run previously, and if a previous run is found, the write operation is not performed.
 
-### Tips
+### Usage tips
 
 It can be hard to figure out the default container for the cluster. Here are some tips:
 

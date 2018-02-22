@@ -122,9 +122,8 @@ For examples of how boosted trees are used in machine learning, see the [Azure A
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
-
-In general, decision trees yield better results when features are somewhat related. If features have a large degree of entropy (that is, they are not related), they share little or no mutual information, and ordering them in a tree will not yield a lot of predictive significance.  
+> [!TIP]
+> In general, decision trees yield better results when features are somewhat related. If features have a large degree of entropy (that is, they are not related), they share little or no mutual information, and ordering them in a tree will not yield a lot of predictive significance.  
 
 
 ### Implementation details
