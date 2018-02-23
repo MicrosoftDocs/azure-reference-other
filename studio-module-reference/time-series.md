@@ -14,7 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "cgronlund"
 ---
-# Time Series
+# Time Series category
 
 This article describes the modules in Azure Machine Learning Studio that are specifically designed for working with time series data.
 
@@ -26,18 +26,18 @@ If you need help determining whether you need an algorithm specially for time se
 
 ## Time series modules
 
-Azure Machine Learning Studio provides the following modules for analyzing time series:
+Azure Machine Learning Studio provides the following module for analyzing time series:
 
 - [Time Series Anomaly Detection](time-series-anomaly-detection.md)
 
-Additionally, you can use these modules to perform custom time series analyses, using the R or Python languages.
+Additionally, you can use the following modules to perform custom time series analyses, by using the R or Python languages.
 
 - [Execute R Script](execute-r-script.md)
 
 - [Execute Python Script](execute-python-script.md) 
 
-## See also
+## Next steps
 
-[Classification models](machine-learning-initialize-model-classification.md)
+Use [classification models](machine-learning-initialize-model-classification.md).
 
-[Regression models](machine-learning-initialize-model-regression.md)
+Use [regression models](machine-learning-initialize-model-regression.md).
