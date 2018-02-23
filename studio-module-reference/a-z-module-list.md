@@ -1,5 +1,6 @@
 ---
 title: A-Z list of Machine Learning Studio modules | Microsoft Docs
+description: Review an A-Z list of modules that are available in Machine Learning Studio.
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/05/2018
@@ -154,5 +155,5 @@ To find a module:
   
 ## Next steps
 
-- Learn more about [module categories and descriptions](machine-learning-module-descriptions.md).
-- Explore [module data types](machine-learning-module-data-types.md).
+- [Module categories and descriptions](machine-learning-module-descriptions.md)
+- [Module data types](machine-learning-module-data-types.md)

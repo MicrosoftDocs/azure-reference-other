@@ -1,7 +1,7 @@
 ---
 title: Data Format Conversions | Microsoft Docs
-titleSuffix: "Azure Machine Learning Studio"
 description: Learn about the modules you can use for data format conversion in Azure Machine Learning.
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/16/2018
 ms.reviewer: ""
@@ -15,7 +15,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "cgronlund"
 ---
-# Data Format Conversions category
+# Data Format Conversions
 
 This article lists the modules provided in Azure Machine Learning Studio for converting data among various file formats used in machine learning. 
 
@@ -69,5 +69,5 @@ The Data Format Conversions category includes these modules:
 
 ## Next steps
 
-- Explore the [Data Transformation](data-transformation.md) category.
-- Learn more about [module categories and descriptions](machine-learning-module-descriptions.md).
+- [Data Transformation](data-transformation.md)
+- [Module categories and descriptions](machine-learning-module-descriptions.md)
