@@ -49,7 +49,7 @@ To find a module:
 |[Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md)|Assigns data to clusters by using an existing trained clustering model.<br /><br />This module has been deprecated, but is available for use with existing experiments. For new experiments, use [Assign Data to Clusters](assign-data-to-clusters.md).|
 |[Assign Data to Clusters](assign-data-to-clusters.md)|Assigns data to clusters by using an existing trained clustering model.|
 |[Bayesian Linear Regression](bayesian-linear-regression.md)|Creates a Bayesian linear regression model.|
-|[Boosted Decision Tree Regression](boosted-decision-tree-regression.md)|Creates a regression model by using the Boosted Decision Tree algorithm.|
+|[Boosted Decision Tree Regression](boosted-decision-tree-regression.md)|Creates a regression model by using the boosted decision tree algorithm.|
 |[Build Count Table (deprecated)](build-count-table-deprecated.md)|Creates counts to use to build features.|
 |[Build Counting Transform](build-counting-transform.md)|Creates counts to use to build features.|
 |[Clean Missing Data](clean-missing-data.md)|Specifies how to handle values that are missing from a dataset.|
@@ -107,7 +107,7 @@ To find a module:
 |[Named Entity Recognition](named-entity-recognition.md)|Recognizes named entities in a text column.|
 |[Neural Network Regression](neural-network-regression.md)|Creates a regression model by using a neural network algorithm.| 
 |[Normalize Data](normalize-data.md)|Rescales numeric data to constrain dataset values to a standard range.|
-|[One-Class Support Vector Machine](one-class-support-vector-machine.md)|Creates a one-class Support Vector Machine model for anomaly detection.|
+|[One-Class Support Vector Machine](one-class-support-vector-machine.md)|Creates a one-class support vector machine model for anomaly detection.|
 |[One-vs-All Multiclass](one-vs-all-multiclass.md)|Creates a multiclass classification model from an ensemble of binary classification models.|
 |[Ordinal Regression](ordinal-regression.md)|Creates an ordinal regression model.|
 |[Partition and Sample](partition-and-sample.md)|Creates multiple partitions of a dataset based on sampling.|
@@ -123,7 +123,7 @@ To find a module:
 |[Score Model](score-model.md)|Scores predictions for a trained classification or regression model.|
 |[Score Vowpal Wabbit 7-4 Model](score-vowpal-wabbit-version-7-4-model.md)|Scores data by using the Vowpal Wabbit machine learning system.<br /><br />Requires a trained model built by using Vowpal Wabbit versions 7-4 and 7-6.|
 |[Score Vowpal Wabbit 7-10 Model](score-vowpal-wabbit-version-7-10-model.md)|Scores data by using the Vowpal Wabbit machine learning system.<br /><br />Requires a trained model built by using Vowpal Wabbit version 7-10.|
-|[Score Vowpal Wabbit 8 Model](score-vowpal-wabbit-version-8-model.md)|Scores data by using the Vowpal Wabbit machine learning system from the command-line interface<br /><br />Requires a trained model built by using Vowpal Wabbit version 8.|
+|[Score Vowpal Wabbit 8 Model](score-vowpal-wabbit-version-8-model.md)|Scores data by using the Vowpal Wabbit machine learning system from the command-line interface.<br /><br />Requires a trained model built by using Vowpal Wabbit version 8.|
 |[Select Columns in Dataset](select-columns-in-dataset.md)|Selects columns to include in or exclude from a dataset in an operation.|
 |[SMOTE](smote.md)|Increases the number of low-incidence examples in a dataset by using synthetic minority oversampling.| 
 |[Split Data](split-data.md)|Partitions the rows of a dataset into two distinct sets.|
@@ -137,18 +137,18 @@ To find a module:
 |[Train Matchbox Recommender](train-matchbox-recommender.md)|Trains a Bayesian recommender by using the Matchbox algorithm.|
 |[Train Model](train-model.md)|Trains a classification or regression model in a supervised manner.|
 |[Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md)|Trains a model from the Vowpal Wabbit machine learning system.<br /><br />This module is for compatibility with Vowpal Wabbit versions 7-4 and 7-6.|
-|[Train Vowpal Wabbit 7-10 Model](train-vowpal-wabbit-version-7-10-model.md)|Trains a model from the Vowpal Wabbit machine learning system.<br /><br />This module is for the current Vowpal Wabbit version 7-10.|
-|[Train Vowpal Wabbit 8 Model](train-vowpal-wabbit-version-8-model.md)|Trains a model by using version 8 of the Vowpal Wabbit machine learning system.<br /><br />This module is for the Vowpal Wabbit version 8.|
+|[Train Vowpal Wabbit 7-10 Model](train-vowpal-wabbit-version-7-10-model.md)|Trains a model from the Vowpal Wabbit machine learning system.<br /><br />This module is for Vowpal Wabbit version 7-10.|
+|[Train Vowpal Wabbit 8 Model](train-vowpal-wabbit-version-8-model.md)|Trains a model by using version 8 of the Vowpal Wabbit machine learning system.<br /><br />This module is for Vowpal Wabbit version 8.|
 |[Tune Model Hyperparameters](tune-model-hyperparameters.md)|Performs a parameter sweep on a regression or classification model to determine the optimum parameter settings.|
 |[Two-Class Averaged Perceptron](two-class-averaged-perceptron.md)|Creates an averaged perceptron binary classification model.|
 |[Two-Class Bayes Point Machine](two-class-bayes-point-machine.md)|Creates a Bayes point machine binary classification model.|
 |[Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md)|Creates a binary classifier by using a boosted decision tree algorithm.|
 |[Two-Class Decision Forest](two-class-decision-forest.md)|Creates a two-class classification model by using the decision forest algorithm.|
 |[Two-Class Decision Jungle](two-class-decision-jungle.md)|Creates a two-class classification model by using the decision jungle algorithm.|
-|[Two-Class Locally Deep Support Vector Machine](two-class-locally-deep-support-vector-machine.md)|Creates a binary classification model by using the locally deep Support Vector Machine algorithm.|
+|[Two-Class Locally Deep Support Vector Machine](two-class-locally-deep-support-vector-machine.md)|Creates a binary classification model by using the locally deep support vector machine algorithm.|
 |[Two-Class Logistic Regression](two-class-logistic-regression.md)|Creates a two-class logistic regression model.|
 |[Two-Class Neural Network](two-class-neural-network.md)|Creates a binary classifier by using a neural network algorithm.|
-|[Two-Class Support Vector Machine](two-class-support-vector-machine.md)|Creates a binary classification model by using the Support Vector Machine algorithm.|
+|[Two-Class Support Vector Machine](two-class-support-vector-machine.md)|Creates a binary classification model by using the support vector machine algorithm.|
 |[Unpack Zipped Datasets](unpack-zipped-datasets.md)|Unpacks datasets from a .zip package in user storage.|
 |[User-Defined Filter](user-defined-filter.md)|Creates a custom finite or infinite impulse response filter.|
   
