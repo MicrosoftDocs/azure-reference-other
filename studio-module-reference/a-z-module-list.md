@@ -57,7 +57,7 @@ To find a module:
 |[Compute Elementary Statistics](compute-elementary-statistics.md)|Calculates specified summary statistics for selected dataset columns.|
 |[Detect Languages](detect-languages.md)|Detects the language of each line in the input file.|
 |[Compute Linear Correlation](compute-linear-correlation.md)|Calculates the linear correlation between column values in a dataset.|
-|[Convert To Arff](convert-to-arff.md)|Converts data input to the attribute relation file format that's used by the Weka toolset.|
+|[Convert to ARFF](convert-to-arff.md)|Converts data input to the attribute relation file format that's used by the Weka toolset.|
 |[Convert to CSV](convert-to-csv.md)|Converts data input to a comma-separated values format.|
 |[Convert to Dataset](convert-to-dataset.md)|Converts data input to the internal dataset format that's used by Azure Machine Learning.|
 |[Convert to Indicator Values](convert-to-indicator-values.md)|Converts categorical values in columns to indicator values.|

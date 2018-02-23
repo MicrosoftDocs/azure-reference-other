@@ -23,7 +23,7 @@ The supported formats include:
 
 - The **dataset** format used throughout Azure Machine Learning.
 - The **ARFF** format used by [Weka](http://www.cs.waikato.ac.nz/ml/weka/). Weka is an open-source Java-based set of machine learning algorithms.
-- The **SVM Light** format. The SVM Light format was developed for the [SVMlight](http://svmlight.joachims.org/) framework for machine learning. It can also be used by Vowpal Wabbit.
+- The **SVMLight** format. The SVMLight format was developed for the [SVMlight](http://svmlight.joachims.org/) framework for machine learning. It can also be used by Vowpal Wabbit.
 - The **tab-separated (TSV)** and **comma-separated (CSV)** flat file formats that are supported by most relational databases. These formats are also widely supported by R and Python.  
 
 When you convert data to these formats, you can more easily move results and data between different machine learning frameworks or storage mechanisms.
@@ -56,7 +56,7 @@ If you need to import data into Azure Machine Learning or transform data in indi
 |Save machine learning datasets to Azure Blob storage, a Hadoop cluster, or other cloud-based storage.|Use the [Export Data](export-data.md) module.|
 |Change the data type of columns or cast columns to a different format or type.|In Azure Machine Learning, use the [Edit Metadata](edit-metadata.md) or [Apply SQL Transformation](apply-sql-transformation.md) modules. If you are proficient with R or Python, try the [Execute Python Script](execute-python-script.md) or [Execute R Script](execute-r-script.md) modules.|
 |Round, group, or normalize numerical data.|Use the [Apply Math Operation](apply-math-operation.md), [Group Data into Bins](group-data-into-bins.md), or [Normalize Data](normalize-data.md) modules.|
-    
+   
   
 ##  List of modules  
 
@@ -69,5 +69,5 @@ The Data Format Conversions category includes these modules:
 
 ## Next steps
 
-- Explore the [Data Transformationy](data-transformation.md) category.
+- Explore the [Data Transformation](data-transformation.md) category.
 - Learn more about [module categories and descriptions](machine-learning-module-descriptions.md).
