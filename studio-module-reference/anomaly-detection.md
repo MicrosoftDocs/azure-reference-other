@@ -55,7 +55,7 @@ The anomaly detection category includes the following modules:
 - [One-Class Support Vector Machine](one-class-support-vector-machine.md): Creates a one-class support vector machine model for anomaly detection.
 - [PCA-Based Anomaly Detection](pca-based-anomaly-detection.md): Creates an anomaly detection model by using Principal Component Analysis.
 
-## Next steps
+## See also
 
 - [Regression](machine-learning-initialize-model-regression.md)
 - [Classification](machine-learning-initialize-model-classification.md)
