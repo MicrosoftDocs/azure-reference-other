@@ -1,6 +1,6 @@
 ---
-title: Anomaly Detection | Microsoft Docs
-description: Learn about the modules you can use for anomaly detection in Azure Machine Learning.
+title: "Anomaly Detection | Microsoft Docs"
+description: "Learn about the modules you can use for anomaly detection in Azure Machine Learning."
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/11/2018
@@ -24,7 +24,7 @@ This article introduces the modules provided in Azure Machine Learning Studio fo
 -   Finding abnormal clusters of patients.
 -   Checking values entered into a system.
   
-Because anomalies are rare events by definition, it can be difficult to collect a representative sample of data to use for modeling. The algorithms included in this article have been especially designed to address the core challenges of building and training models by using imbalanced data sets.
+Because anomalies are rare events by definition, it can be difficult to collect a representative sample of data to use for modeling. The algorithms included in this category have been especially designed to address the core challenges of building and training models by using imbalanced data sets.
   
 ## Anomaly detection modules
 
@@ -39,7 +39,7 @@ For an example of how these modules work together, see the [Anomaly Detection: C
 
 ### Related tasks
  
-The [Time Series Anomaly Detection](time-series-anomaly-detection.md) is a new module that's a bit different from the other anomaly detection models. The Time Series Anomaly Detection module is designed for time series data. It's intended to use to analyze trends over time. The algorithm identifies potentially anomalous trends in the time series data. It flags deviations from the trend's direction or magnitude.
+[Time Series Anomaly Detection](time-series-anomaly-detection.md) is a new module that's a bit different from the other anomaly detection models. The Time Series Anomaly Detection module is designed for time series data. It's intended to use to analyze trends over time. The algorithm identifies potentially anomalous trends in the time series data. It flags deviations from the trend's direction or magnitude.
 
 Azure also provides the [Machine Learning Anomaly Detection API](https://docs.microsoft.com/azure/machine-learning/machine-learning-apps-anomaly-detection-api), which you can call as a web service.
 
@@ -50,7 +50,7 @@ Azure also provides the [Machine Learning Anomaly Detection API](https://docs.mi
 
 ## List of modules
 
-The anomaly detection category includes the following modules:
+The **Anomaly Detection** category includes the following modules:
 
 - [One-Class Support Vector Machine](one-class-support-vector-machine.md): Creates a one-class support vector machine model for anomaly detection.
 - [PCA-Based Anomaly Detection](pca-based-anomaly-detection.md): Creates an anomaly detection model by using Principal Component Analysis.
