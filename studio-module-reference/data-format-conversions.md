@@ -1,6 +1,6 @@
 ---
-title: Data Format Conversions | Microsoft Docs
-description: Learn about the modules you can use for data format conversion in Azure Machine Learning.
+title: "Data Format Conversions | Microsoft Docs"
+description: "Learn about the modules you can use for data format conversion in Azure Machine Learning."
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/16/2018
@@ -21,8 +21,8 @@ This article lists the modules provided in Azure Machine Learning Studio for con
 
 The supported formats include:
 
-- The **dataset** format used throughout Azure Machine Learning.
-- The **ARFF** format used by [Weka](http://www.cs.waikato.ac.nz/ml/weka/). Weka is an open-source Java-based set of machine learning algorithms.
+- The **dataset** format that's used throughout Azure Machine Learning.
+- The **ARFF** format that's used by [Weka](http://www.cs.waikato.ac.nz/ml/weka/). Weka is an open-source Java-based set of machine learning algorithms.
 - The **SVMLight** format. The SVMLight format was developed for the [SVMlight](http://svmlight.joachims.org/) framework for machine learning. It can also be used by Vowpal Wabbit.
 - The **tab-separated (TSV)** and **comma-separated (CSV)** flat file formats that are supported by most relational databases. These formats are also widely supported by R and Python.  
 
@@ -60,7 +60,7 @@ If you need to import data into Azure Machine Learning or transform data in indi
   
 ##  List of modules  
 
-The Data Format Conversions category includes these modules:    
+The **Data Format Conversions** category includes these modules:    
 - [Convert to ARFF](convert-to-arff.md): Converts data input to the attribute relation file format that's used by the Weka toolset.
 - [Convert to CSV](convert-to-csv.md): Converts a dataset to a comma-separated values format.
 - [Convert to Dataset](convert-to-dataset.md): Converts data input to the internal dataset format that's used by Azure Machine Learning.
