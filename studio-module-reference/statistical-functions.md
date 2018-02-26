@@ -1,5 +1,6 @@
 ---
 title: "Statistical Functions | Microsoft Docs"
+description: This article describes the modules in Azure Machine Learning Studio that support mathematical and statistical operations critical for machine learning.
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/22/2018
@@ -14,7 +15,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "cgronlund"
 ---
-# Statistical Functions category
+# Statistical Functions
 
 This article describes the modules in Azure Machine Learning Studio that support mathematical and statistical operations critical for machine learning. If you need to perform tasks such as the following in your experiment, look in the **Statistical Functions** category:
 
@@ -43,9 +44,9 @@ The **Statistical Functions** category includes the following modules:
 + [Summarize Data](summarize-data.md): Generates a basic descriptive statistics report for the columns in a dataset.
 + [Test Hypothesis Using t-Test](test-hypothesis-using-t-test.md): Compares means from two datasets by using a t-test.
 
-## Next steps  
- Use the [Scale and Reduce module](data-transformation-scale-and-reduce.md).   
- Explore the [Feature Selection category](feature-selection-modules.md).   
- Use the [Learning with Counts module](data-transformation-learning-with-counts.md).   
- Learn more about [module categories and descriptions](machine-learning-module-descriptions.md).   
- Review the [A-Z module list](a-z-module-list.md).
+## See also  
+- [Scale and Reduce module](data-transformation-scale-and-reduce.md)   
+- [Feature Selection category](feature-selection-modules.md)   
+- [Learning with Counts module](data-transformation-learning-with-counts.md)   
+- [Module categories and descriptions](machine-learning-module-descriptions.md)   
+- [A-Z module list](a-z-module-list.md)

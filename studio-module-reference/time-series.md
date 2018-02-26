@@ -1,5 +1,6 @@
 ---
 title: "Time Series | Microsoft Docs"
+description: This article describes the modules in Azure Machine Learning Studio that are specifically designed for working with time series data.
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/17/2018
@@ -14,7 +15,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "cgronlund"
 ---
-# Time Series category
+# Time Series
 
 This article describes the modules in Azure Machine Learning Studio that are specifically designed for working with time series data.
 
@@ -36,8 +37,8 @@ Additionally, you can use the following modules to perform custom time series an
 
 - [Execute Python Script](execute-python-script.md) 
 
-## Next steps
+## See also
 
-Use [classification models](machine-learning-initialize-model-classification.md).
+- [Classification models](machine-learning-initialize-model-classification.md)
 
-Use [regression models](machine-learning-initialize-model-regression.md).
+- [Regression models](machine-learning-initialize-model-regression.md)

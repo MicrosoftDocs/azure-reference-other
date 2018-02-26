@@ -1,5 +1,6 @@
 ---
 title: "Text Analytics | Microsoft Docs"
+description: This article describes the text analytics modules included in Azure Machine Learning Studio. 
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/22/2018
@@ -14,7 +15,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "cgronlund"
 ---
-# Text Analytics category
+# Text Analytics
 
 This article describes the text analytics modules included in Azure Machine Learning Studio. These modules provide specialized computational tools for working with both structured and unstructured text, including:  
 
@@ -37,7 +38,7 @@ For examples of text analytics using Azure Machine Learning, see the [Azure AI G
 
 ##  List of modules
 
-The **Text Analytics** category in Azure machine Learning Studio includes these modules:
+The **Text Analytics** category in Azure Machine Learning Studio includes these modules:
 
 + [Detect Languages](detect-languages.md): Detects the language of each line in the input file.  
 + [Extract Key Phrases from Text](extract-key-phrases-from-text.md): Extracts key phrases from given text.  
@@ -53,9 +54,9 @@ The **Text Analytics** category in Azure machine Learning Studio includes these 
 + [Train Vowpal Wabbit 7-10 Model](train-vowpal-wabbit-version-7-10-model.md): Trains a model by using version 7-10 of the Vowpal Wabbit machine learning system.  
 + [Train Vowpal Wabbit 8 Model](train-vowpal-wabbit-version-8-model.md): Trains a model by using version 8 of the Vowpal Wabbit machine learning system.  
 
-## Next steps
- Use the [Regression module](machine-learning-initialize-model-regression.md).   
- Use the [Classification module](machine-learning-initialize-model-classification.md).  
- Use the [Clustering module](machine-learning-initialize-model-clustering.md).   
- Explore the [OpenCV Library Modules category](opencv-library-modules.md).   
- Review [all module categories](machine-learning-module-descriptions.md).
+## See also
+- [Regression module](machine-learning-initialize-model-regression.md)   
+- [Classification module](machine-learning-initialize-model-classification.md)  
+- [Clustering module](machine-learning-initialize-model-clustering.md)   
+- [OpenCV Library Modules category](opencv-library-modules.md)   
+- [All module categories](machine-learning-module-descriptions.md)
