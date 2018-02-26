@@ -1,6 +1,6 @@
 ---
-title: A-Z list of Machine Learning Studio modules | Microsoft Docs
-description: Review an A-Z list of modules that are available in Machine Learning Studio.
+title: "A-Z list of Machine Learning Studio modules | Microsoft Docs"
+description: "Review an A-Z list of modules that are available in Machine Learning Studio."
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/05/2018
