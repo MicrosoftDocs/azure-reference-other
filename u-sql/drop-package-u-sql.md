@@ -32,14 +32,15 @@ Drop_Package_Statement :=
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples utilize the packages created from [CREATE PACKAGE (U-SQL)](create-package-u-sql.md).
-```
-// Will error if not exists
-USE DATABASE TestReferenceDB;
-DROP PACKAGE XMLFiles;
 
-// Will not error if not exists
-DROP PACKAGE IF EXISTS TestReferenceDB.dbo.XMLorJSON;
-```
+    ```sql
+    // Will error if not exists
+    USE DATABASE TestReferenceDB;
+    DROP PACKAGE XMLFiles;
+    
+    // Will not error if not exists
+    DROP PACKAGE IF EXISTS TestReferenceDB.dbo.XMLorJSON;
+    ```
 ### See Also
 * [CREATE PACKAGE (U-SQL)](create-package-u-sql.md)
 * [IMPORT PACKAGE (U-SQL)](import-package-u-sql.md)

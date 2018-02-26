@@ -40,7 +40,7 @@ Table_Name :=
 
 The following example does a full update of the statistics, `ordersStats`,  within the table `Orders` in `TestReferenceDB`.  
   
-```
+```sql
 USE TestReferenceDB;
 
 UPDATE STATISTICS IF EXISTS ordersStats 

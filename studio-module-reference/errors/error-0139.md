@@ -1,5 +1,6 @@
 ---
 title: "Error 0139 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 06/14/2017
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0139
-**Error 0139**  
-  
+# Error 0139  
  Exception occurs when it is not possible to convert a column to another type.  
   
  This error in Azure Machine Learning occurs when you try to convert a column to a different data type, but that type is not supported by the current operation or by the module.  
@@ -45,5 +44,5 @@ manager: "jhubbard"
 |Could not convert column "{2}" of type {0} to column of type {1} on row {3}.|  
 |Could not convert column "{2}" of type {0} to column "{3}" of type {1} on row {4}.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

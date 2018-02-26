@@ -39,14 +39,14 @@ Typical metadata changes might include:
   
  After performing the required operation, you can reset the metadata to its original state. 
   
-##  <a name="Remarks"></a> How to configure Edit Metadata
+##  How to configure Edit Metadata
   
 1.  In Azure Machine Learning Studio, add [Edit Metadata](edit-metadata.md) module to your experiment and connect the dataset you want to update. You can find it under **Data Transformation**, in the **Manipulate** category.
   
 2.  Click **Launch the column selector** and choose the column or set of columns to work with. You can choose columns individually, by name or index, or you can choose a group of columns, by type.  
 
      > [!TIP] 
-     > Need help using column indices? See the [Technical  otes](#bkmk_TechnicalNotes) section.
+     > Need help using column indices? See the [Technical Notes](#bkmk_TechnicalNotes) section.
   
 3.  Select the **Data type** option if you need to assign a different data type to the selected columns. Changing the data type might be needed for certain operations: for example, if your source dataset has numbers handled as text, you must change them to a numeric data type before using math operations. 
 
@@ -208,13 +208,13 @@ SELECT col1 as [C1],
 FROM t1;
 ```
 
-##  <a name="ExpectedInputs"></a> Expected input  
+##  Expected input  
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -224,13 +224,13 @@ FROM t1;
 |Fields|List|Metadata editor flag|Unchanged|Specify if the column should be considered a feature or label by learning algorithms.|  
 |*New column names*|any|String||Type the new names for the columns.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Dataset with changed metadata|  
   
-##  <a name="exceptions"></a> Exceptions
+##  Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

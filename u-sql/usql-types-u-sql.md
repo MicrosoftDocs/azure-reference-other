@@ -46,7 +46,7 @@ The examples can be executed in Visual Studio with the [Azure Data Lake Tools pl
 
 
  **Query the usql.types view**
- ```
+ ```sql
 USE TestReferenceDB;
 
 OUTPUT usql.types

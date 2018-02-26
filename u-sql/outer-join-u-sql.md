@@ -22,9 +22,8 @@ If `LEFT` is specified (or just `OUTER JOIN`) then all rows from the left side r
 **A.  LEFT OUTER JOIN**    
 Using the input rowsets  
   
-| @employees |           |  
+|**EmpName** |    **DepID**       |  
 |------------|-----------|  
-| **EmpName** string  | **DepID** int? |  
 | Rafferty   | 31        |  
 | Jones      | 33        |  
 | Heisenberg | 33        |  
@@ -32,9 +31,8 @@ Using the input rowsets
 | Smith      | 34        |  
 | Williams   | *null*    |  
   
-| @departments |             |  
+| **DeptID** |    **DepName**         |  
 |--------------|-------------|  
-| **DeptID** int  | **DepName** string |  
 | 31           | Sales       |  
 | 33           | Engineering |  
 | 34           | Clerical    |  
@@ -42,7 +40,7 @@ Using the input rowsets
   
 the following left outer join  
   
-```  
+```sql
 @employees = SELECT *  
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  
@@ -72,9 +70,8 @@ USING Outputters.Csv();
   
 produces this rowset  
   
-| @rs_leftouter |             |  
+| **EmpName** |    **DepName**         |  
 |----------------|-------------|  
-| **EmpName** string | **DepName** string |  
 | Rafferty       | Sales       |  
 | Jones          | Engineering |  
 | Heisenberg     | Engineering |  
@@ -89,7 +86,7 @@ If `RIGHT` is specified then all rows from the right side rowset will be selecte
 **B.  RIGHT OUTER JOIN**    
 Using the same input rowsets as above, the following right outer join  
   
-```  
+```sql
 @rs_rightouter =   
     SELECT e.EmpName, d.DepName  
     FROM @employees AS e   
@@ -99,9 +96,8 @@ Using the same input rowsets as above, the following right outer join
   
 produces this rowset  
   
-| @rs_rightouter |             |  
+|**EmpName** |     **DepName**        |  
 |-----------------|-------------|  
-| **EmpName** string | **DepName** string |  
 | Rafferty        | Sales       |  
 | Heisenberg      | Engineering |  
 | Jones           | Engineering |  
@@ -116,7 +112,7 @@ If `FULL` is specified then all rows from both the left and right side rowsets w
 **C.  FULL OUTER JOIN**    
 Using the same input rowsets as above, the following full outer join  
   
-```  
+```sql  
 @rs_fullouter =   
     SELECT e.EmpName, d.DepName  
     FROM @employees AS e   
@@ -126,9 +122,8 @@ Using the same input rowsets as above, the following full outer join
   
 produces this rowset  
   
-| @rs_fullouter |             |  
+| **EmpName** |    **DepName**         |  
 |----------------|-------------|  
-| **EmpName** string | **DepName** string |  
 | Rafferty       | Sales       |  
 | Jones          | Engineering |  
 | Heisenberg     | Engineering |  

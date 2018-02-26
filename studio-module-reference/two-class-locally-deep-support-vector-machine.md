@@ -1,7 +1,7 @@
 ---
 title: "Two-Class Locally Deep Support Vector Machine | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -19,7 +19,7 @@ manager: "cgronlund"
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
   
-##  <a name="Remarks"></a> Module overview  
+##  Module overview  
 
 This article describes how to use the **Two-Class Locally Deep Support Vector Machine** module in Azure Machine Learning Studio, to create a two-class, non-linear support vector machines (SVM) classifier that is optimized for efficient prediction.  
 
@@ -71,7 +71,7 @@ After you define the model parameters, train it by providing the model and a tag
   
 7.  For **Sigmoid sharpness**, type a value to use for the scaling parameter σ.  
   
-     Larger values mean that the **tanh** in local kernel Θ (theta) is saturated, whereas a smaller value implies a more linear operating range for theta. You can find the full optimization formula in the [Technical Notes](#Notes) section.  
+     Larger values mean that the **tanh** in local kernel Θ (theta) is saturated, whereas a smaller value implies a more linear operating range for theta. You can find the full optimization formula in the [Technical Notes](#bkmk_Notes) section.  
   
      If the default value (1) does not work well, you can also try {0.1, 0.01, 0.001}.  
   
@@ -121,11 +121,11 @@ After training is complete:
 
 +  To perform cross-validation against a labeled data set, connect the untrained model to [Cross-Validate Model](cross-validate-model.md).
 
-##  <a name="Notes"></a> Technical notes
+##  <a name="bkmk_Notes"></a> Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 This LD-SVM classifier is most useful under the following conditions:  
   
@@ -163,7 +163,7 @@ As a consequence of these optimizations, training the LD-SVM model is exponentia
 
 For more information about the algorithm and underlying research, see [Local Deep Kernel Learning for Efficient Non-linear SVM Prediction](http://go.microsoft.com/fwlink/?LinkId=511662).  
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -184,7 +184,7 @@ For more information about the algorithm and underlying research, see [Local Dee
 |*Random number seed*|Any|Integer||The seed for the random number generator that is used by the model. Leave it blank for the default.|  
 |Allow unknown categorical levels|Any|Boolean|True|If True, creates an additional level for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

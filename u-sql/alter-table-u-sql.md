@@ -50,7 +50,7 @@ The name(s) of the column(s) to be dropped.  A column cannot be dropped when it 
 - The examples below are based on the table defintion below.   
 
 **Test Table**   
-```
+```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB; 
 USE DATABASE TestReferenceDB;
 
@@ -64,7 +64,7 @@ CREATE TABLE Logs (
 ```
 
 **Table Rebuild**   
-```
+```sql
 //Introduce multiple incremental inserts
 USE DATABASE TestReferenceDB;
 
@@ -85,7 +85,7 @@ REBUILD;
 ```
 
 **Various Column Scenarios**    
-```
+```sql
 USE DATABASE TestReferenceDB;
 
 // Add a column

@@ -37,7 +37,7 @@ Group_By_Clause :=
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following query uses the GROUP BY clause to provide us with the total number of employees in each department.  
-```
+```sql
 @employees = SELECT *
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  
@@ -67,7 +67,7 @@ USING Outputters.Csv();
 ```
 The following query uses the GROUP BY and HAVING clauses to provide us with the number of employees in each department that has at least one employee.  
   
-```
+```sql
 @employees = SELECT *  
                FROM (VALUES   
                       ("Rafferty", (int?) 31)  

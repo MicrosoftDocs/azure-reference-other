@@ -1,7 +1,7 @@
 ---
 title: "Evaluate Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/10/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -186,20 +186,20 @@ For examples of how to generate, visualize, and interpret evaluation metrics, se
   
 -  [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): Demonstrates how to evaluate multiple related models.
   
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Scored dataset|[Data Table](data-table.md)|Scored dataset|  
 |*Scored dataset to compare*|[Data Table](data-table.md)|Scored dataset to compare (optional)|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Evaluation results|[Data Table](data-table.md)|Data evaluation result|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
   
 |Exception|Description|  
 |---------------|-----------------|  

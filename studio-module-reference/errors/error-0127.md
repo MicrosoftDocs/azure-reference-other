@@ -1,5 +1,6 @@
 ---
 title: "Error 0127 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0127
-**Error 0127**  
-  
+# Error 0127  
  Image pixel size exceeds allowed limit  
   
  This error occurs if you are reading images from an image dataset for classification and the images are larger than the model can handle.  
@@ -32,5 +31,5 @@ manager: "jhubbard"
 |Image pixel size exceeds allowed limit.|  
 |Image pixel size in the file '{0}' exceeds allowed limit: '{1}'|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

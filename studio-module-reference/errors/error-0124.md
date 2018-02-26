@@ -1,5 +1,6 @@
 ---
 title: "Error 0124 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0124
-**Error 0124**  
-  
+# Error 0124  
  Exception occurs if non-numeric columns is specified to be the weight column.  
   
 ## Resolution  
@@ -24,5 +23,5 @@ manager: "jhubbard"
 |------------------------|  
 |Non-numeric column is specified as the weight column.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

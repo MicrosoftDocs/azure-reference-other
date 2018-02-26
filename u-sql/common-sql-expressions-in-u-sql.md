@@ -44,7 +44,8 @@ For starters, its keywords such as SELECT have to be in UPPERCASE. And its expre
  
 <a name="case">**CASE (Transact-SQL) and ?:**</a>    
 Consider using the conditional operator [`?:`](https://msdn.microsoft.com/library/ty67wk28.aspx) for situations where you would use [CASE (Transact-SQL)](https://msdn.microsoft.com/library/ms181765.aspx) in SQL.  See also, [Using `?:`](https://msdn.microsoft.com/library/azure/mt621341.aspx#condl).
-```
+
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -96,7 +97,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="nullif">**NULLIF (Transact-SQL) and ?:**</a>    
 Consider using the conditional operator [`?:`](https://msdn.microsoft.com/library/ty67wk28.aspx) for situations where you would use [NULLIF (Transact-SQL)](https://msdn.microsoft.com/library/ms177562.aspx) in SQL. See also, [Using `?:`](https://msdn.microsoft.com/library/azure/mt621341.aspx#condl).
-```
+
+```sql
 @dailySales = 
     SELECT * FROM 
         ( VALUES
@@ -133,7 +135,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="coalesce">**COALESCE (Transact-SQL) and ??**</a>     
 Consider using the null-coalescing operator [`??`](https://msdn.microsoft.com/library/ms173224.aspx) for situations where you would use [COALESCE (Transact-SQL)](https://msdn.microsoft.com/library/ms190349.aspx) in SQL.  See also, [Using `??`](https://msdn.microsoft.com/library/azure/mt621341.aspx#nullCoal)
-```
+
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -170,7 +173,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="isnull">**ISNULL (Transact-SQL) and ??**</a>    
 Consider using the null-coalescing operator [`??`](https://msdn.microsoft.com/library/ms173224.aspx) for situations where you would use [ISNULL (Transact-SQL)](https://msdn.microsoft.com/library/ms184325.aspx) in SQL.  Depending on your objective, for strings, also consider [IsNullOrEmpty](https://msdn.microsoft.com/library/system.string.isnullorempty(v=vs.110).aspx) and [IsNullOrWhiteSpace](https://msdn.microsoft.com/library/system.string.isnullorwhitespace(v=vs.110).aspx).
-```
+
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -210,7 +214,8 @@ USING Outputters.Csv(outputHeader: true);
 
 <a name="top">**TOP (Transact-SQL) and FETCH**</a>    
 [TOP (Transact-SQL)](https://msdn.microsoft.com/library/ms189463.aspx) returns the first N number of rows in an undefined order or a defined order when combined with ORDER BY. In U-SQL, [FETCH](output-statement-u-sql.md#OBOFC) can be used to return the first N number of rows only in a defined order; the ORDER BY clause must be used.  Consider the use of [SAMPLE](sample-u-sql.md) if a defined order is not desired or required.  See also, [ROW_NUMBER](row-number-u-sql.md).
-```
+
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES
@@ -270,7 +275,8 @@ USING Outputters.Tsv(outputHeader: true);
 <a name="subQuery">**Subqueries with IN/NOT IN and SEMIJOIN/ANTISEMIJOIN**</a>   
 Consider using [SEMIJOIN (U-SQL)](semijoin-u-sql.md) for situations where you would use a subquery with IN in SQL.
 Consider using [ANTISEMIJOIN (U-SQL)](antisemijoin-u-sql.md) for situations where you would use a subquery with NOT IN in SQL.
-```
+
+```sql
 @employees = 
     SELECT * FROM 
         ( VALUES

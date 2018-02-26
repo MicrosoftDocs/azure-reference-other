@@ -15,10 +15,12 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Bayesian Linear Regression
+
 *Creates a Bayesian linear regression model*  
-  
- Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
-  
+
+
+Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
+
 ## Module overview  
  
 This article describes how to use the **Bayesian Linear Regression** module in Azure Machine Learning Studio, to define a regression model based on Bayesian statistics.  
@@ -35,28 +37,27 @@ In contrast, the frequentist approach, represented by standard least-square line
  
 For more information about the research behind this algorithm, see the links in the [Technical Notes](#bkmk_Notes) section.
   
-## How to configure Bayesian Regression Model  
+## How to configure Bayesian Regression 
   
-1.  Add the **Bayesian Linear Regression** module to your experiment.  You can find the **this** module  under **Machine Learning**, Initialize, in the **Regression** category. 
+1.  Add the **Bayesian Linear Regression** module to your experiment.  You can find the this module  under **Machine Learning**, **Initialize**, in the **Regression** category. 
+
+2. **Regularization weight**: Type a value to use for regularization. Regularization is used to prevent overfitting. This weight corresponds to L2. For more information, see the [Technical Notes](#bkmk_Notes) section.  
   
-2.  For **Regularization weight**, type a value to use for regularization. Regularization is used to prevent overfitting.  
-  
-     This weight corresponds to L2. For more information, see the [Technical Notes](#bkmk_Notes) section.  
-  
-3.  Select the **Allow unknown categorical levels** option to create a grouping for unknown values.  
-  
-     If you deselect it, the model can accept only the values contained in the training data. In the former case, the model might be less precise on known values but provide better predictions for new (unknown) values.  
-  
-4.  Connect a tagged dataset. Connect the [Train Model](train-model.md) module and select the single numeric column that you want to model or predict.  
-  
-     You can train a model using [Tune Model Hyperparameters](tune-model-hyperparameters.md) but it will have no effect since no model parameters can be varied.  
-  
-5.  Run the experiment.  
-  
-6.  When the model is trained, right-click the output of the [Train Model](train-model.md) module and select **Visualize** to see a summary of the model's parameters.  
-  
-     You can also use the trained model as an input to [Score Model](score-model.md) to create predictions.  
-  
+3. **Allow unknown categorical levels**: Select this option to create a grouping for unknown values.  The model can accept only the values contained in the training data. The model might be less precise on known values but provide better predictions for new (unknown) values.
+
+4. Connect a training dataset, and one of the training modules. This model type has no parameters that can be changed in a parameter sweep, so although you can train the model using [Tune Model Hyperparameters](tune-model-hyperparameters.md), it cannot automatically optimize the model.
+
+5. Select the single numeric column that you want to model or predict.  
+
+6.  Run the experiment.  
+
+### Results
+
+After training is complete:
+
++ To see a summary of the model's parameters, right-click the output of the [Train Model](train-model.md) module and select **Visualize**.
++ To create predictions, use the trained model as an input to [Score Model](score-model.md).
+
 ## Examples
 
 For examples of regression models, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
@@ -69,19 +70,20 @@ For examples of regression models, see the [Azure AI Gallery](https://gallery.co
 
 + This article is available as a PDF download from the [Microsoft Research site](http://research.microsoft.com/en-us/um/people/cmbishop/PRML/):  [Bayesian Regression and Classification](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-nato-bayes.pdf)
 
-##  <a name="parameters"></a> Module parameters
+## Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Regularization weight|>=double.Epsilon|Float|1.0|Type a constant to use in regularization. The constant represents the ratio of the precision of weight prior to the precision of noise.|  
 |Allow unknown categorical levels|Any|Boolean|true|If true creates an additional level for each categorical column. Any levels in the test dataset not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Outputs
+## Outputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ILearner interface](ilearner-interface.md)|An untrained Bayesian linear regression model|  
 
-## See also  
+## See also
+
  [A-Z Module List](a-z-module-list.md)   
  [Regression](machine-learning-initialize-model-regression.md)

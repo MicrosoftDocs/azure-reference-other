@@ -69,18 +69,16 @@ The following articles introduce common data scenarios in machine learning:
   
 -   [Download Data](http://go.microsoft.com/fwlink/?LinkId=525938)  
   
-##  <a name="modules"></a> List of modules  
+##  List of modules  
 
 The **Data Input and Output** category includes the following modules:  
-  
-|Module|Description|  
-|------------|-----------------|  
-|[Enter Data Manually](enter-data-manually.md)|Lets you create small datasets by typing values|  
-|[Export Data](export-data.md)|Writes a dataset to web URLs or to various forms of cloud-based storage in Azure, such as tables, blobs, and Azure SQL Database|  
-|[Import Data](import-data.md)|Loads data from external sources on the web and from various forms of cloud-based storage in Azure such as Azure table or blob storage, Azure SQL Database and Azure SQL Data Warehouse, Hive query, and Azure DocumentDB. You can also import data from an on-premises SQL Server database.|   
-|[Load Trained Model](load-trained-model.md)|Gets a trained model from a URL or blob storage for use in a scoring experiment|  
-|[Unpack Zipped Datasets](unpack-zipped-datasets.md)|Decompresses a dataset that has been stored in zipped format and adds the dataset to your workspace|  
-  
+
++ [Enter Data Manually](enter-data-manually.md): Lets you create small datasets by typing values  
++ [Export Data](export-data.md): Writes a dataset to web URLs or to various forms of cloud-based storage in Azure, such as tables, blobs, and Azure SQL Database
++ [Import Data](import-data.md): Loads data from external sources on the web and from various forms of cloud-based storage in Azure such as Azure table or blob storage, Azure SQL Database and Azure SQL Data Warehouse, Hive query, and Azure DocumentDB. You can also import data from an on-premises SQL Server database.   
++ [Load Trained Model](load-trained-model.md): Gets a trained model from a URL or blob storage for use in a scoring experiment
++ [Unpack Zipped Datasets](unpack-zipped-datasets.md): Decompresses a dataset that has been stored in zipped format and adds the dataset to your workspace
+
 ## See also
   
 [Data Format Conversions](data-format-conversions.md)   

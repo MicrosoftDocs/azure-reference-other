@@ -1,7 +1,7 @@
 ---
 title: "Threshold Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -35,11 +35,11 @@ The output of the [Apply Filter](apply-filter.md) module is a dataset containing
 Alternatively, if you select the **Indicator** option, instead of returning the filter values, a column is returned containing Boolean values that indicates whether the value in each row met the specified filter condition or not. This can be useful when you are testing a new filter.  
 
 > [!TIP]
->  Need to filter data from a dataset or remove missing values? Use these modules instead:  
->   
->  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
-> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
+> Need to filter data from a dataset or remove missing values? Use these modules instead:  
+> 
+> - [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> - [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> - [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
 ## How to configure Threshold Filter
   
@@ -124,7 +124,7 @@ For example, the following table shows the results when using a **MagnitudeLessT
 |5.75|5|5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
 |-5.75|*-5*|-5.75<br /><br /> Value is not less than -5; therefore value is not replaced|  
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -152,7 +152,7 @@ The **Threshold Filter** module uses the following methods to define threshold v
   
      ![calculating threshold for less than filter complex](media/aml-threshold-greaterthancomplex.png "AML_threshold-greaterthancomplex")  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -163,7 +163,7 @@ The **Threshold Filter** module uses the following methods to define threshold v
 |Upper boundary|Any|Float|1.0|Specify the upper boundary of the range|  
 |Alpha|Any|Float|3.0|Use this value, multiplied by the calculated standard deviation, as the threshold|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

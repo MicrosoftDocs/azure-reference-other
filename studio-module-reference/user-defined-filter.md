@@ -1,7 +1,7 @@
 ---
 title: "User-Defined Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -28,11 +28,11 @@ A filter is a transfer function that takes an input signal and creates an output
 After you have defined a filter that meets your needs, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module.
 
 > [!TIP]
->  Need to filter data from a dataset or remove missing values? Use these modules instead:  
->   
->  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
-> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
+> Need to filter data from a dataset or remove missing values? Use these modules instead:  
+> 
+> - [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> - [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> - [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
 ## How to configure User-Defined Filter
 
@@ -60,7 +60,7 @@ For more examples of how filters are used in machine learning, see the [Azure AI
 
 - [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types. The example uses an engineered waveform dataset to more easily illustrate the effects of the different filters.  
 
-###  <a name="SubSection1a"></a> FIR filter example: Exponential weighted moving average
+###  FIR filter example: Exponential weighted moving average
 
 For an exponentially weighted moving average, all coefficients are less than one and the sum of all coefficients equals one. Therefore, the variance of the weighted average will always be less than the input values.
 
@@ -70,7 +70,7 @@ For example, for a FIR filter to approximate an exponentially weighted moving av
 0.01818182, 0.03636364, 0.05454545, 0.07272727, 0.09090909, 0.10909091, 0.12727273, 0.14545455, 0.16363636, 0.18181818
 ```
 
-###  <a name="SubSection1b"></a> FIR filter example: Exponential weighted moving average (Deslauriers-Dubuc interpolation)  
+###  FIR filter example: Exponential weighted moving average (Deslauriers-Dubuc interpolation)  
 
 This FIR filter approximates a triangularly weighted moving average (WMA). You define the coefficients by supplying a comma-separated series of values for the feed-forward parameters, such as these:  
 
@@ -78,9 +78,9 @@ This FIR filter approximates a triangularly weighted moving average (WMA). You d
 0.0625, 0.0625, 0.2500, 0.3750, 0.2500, 0.0625
 ```
 
-The values used in this custom FIR filter represent a vector of feed-forward coefficients obtained by using the Deslauriers-Dubuc method of finite sequencing. For more information, see [Dubuc-Deslauriers Subdivision for Finite Sequences and Interpolation Wavelets on an Interval-](http://dip.sun.ac.za/~herbst/research/publications/subdiv.pdf).
+The values used in this custom FIR filter represent a vector of feed-forward coefficients obtained by using the Deslauriers-Dubuc method of finite sequencing. For more information, see [Dubuc-Deslauriers Subdivision for Finite Sequences and Interpolation Wavelets on an Interval](http://dip.sun.ac.za/~herbst/research/publications/subdiv.pdf).
 
-###  <a name="SubSection2"></a> IIR filter example: Notch filter
+###  IIR filter example: Notch filter
 
 A good example of an application for a user-defined IIR filter is to define a *notch filter*, also called a *bandstop filter*. The desired notch filter attenuates a -3dB rejection band, *fb*, centered at a notch frequency, `fn`, with a sampling frequency, `fs`. 
 
@@ -116,7 +116,7 @@ From this, you can get the following feed-forward (b) and feed-backward (a) coef
   
  a= `1, -1.3711242, 0.9390624`  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -124,13 +124,13 @@ From this, you can get the following feed-forward (b) and feed-backward (a) coef
 |Forward|any|String|"1.0"|Type a series of feed-forward coefficients|  
 |Backward|any|String|"1.0"|Type a series of feed-backward filter coefficients|  
   
-##  <a name="Outputs"></a> Output
+##  Output
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
 
-##  <a name="exceptions"></a> Exceptions
+##  Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  

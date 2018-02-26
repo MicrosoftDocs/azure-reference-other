@@ -85,14 +85,12 @@ Whenever you don't need to keep all the data, use [Partition and Sample](partiti
 
 + [Execute R Script](execute-r-script.md) and [Apply SQL Transformation](apply-sql-transformation.md): Apply more complex data filters, groupings, or transformations. 
 
-##  <a name="modules"></a> List of modules
+##  List of modules
 
 This category includes the following modules:  
 
-|Module|Description|  
-|------------|-----------------|  
-|[Partition and Sample](partition-and-sample.md)|Creates multiple partitions of a dataset based on sampling|  
-|[Split Data](split-data.md)|Partitions the rows of a dataset into two distinct sets|
+- [Partition and Sample](partition-and-sample.md): Creates multiple partitions of a dataset based on sampling  
+- [Split Data](split-data.md): Partitions the rows of a dataset into two distinct sets
 
 ## See also  
  [Data Transformation](data-transformation.md)   

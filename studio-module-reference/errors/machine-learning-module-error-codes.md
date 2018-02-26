@@ -1,5 +1,6 @@
 ---
-title: "Machine Learning Module Error Codes | Microsoft Docs"
+title: "Machine learning module error codes | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 08/15/2016
 ms.reviewer: ""
@@ -13,7 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Machine Learning Module Error Codes
+# Machine learning module error codes
 This topic lists the errors that might be reported in individual modules in Azure Machine Learning Studio, either when an experiment fails, or when you are editing the properties of the module. To resolve the issue, click the error name in the following table and read about common causes.  
   
  There are two ways to get the full text of an error message in Studio:  
@@ -24,7 +25,7 @@ This topic lists the errors that might be reported in individual modules in Azur
   
  If the error message text is not helpful, please send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the Azure Machine Learning forum and post a question.  
   
-##  <a name="errors"></a> Exceptions List  
+###  <a name="errors"></a> Exceptions list  
   
 |Exception|Description|  
 |---------------|-----------------|  
@@ -131,9 +132,9 @@ This topic lists the errors that might be reported in individual modules in Azur
 |[Error 0110](error-0110.md)|Thrown when a module definition file defines a column picker that references a non-existent input port ID|  
 |[Error 0111](error-0111.md)|Thrown when a module definition file defines an invalid property|  
 |[Error 0112](error-0112.md)|Thrown when a module definition file cannot be parsed|  
-|[Error 0113](error-0113.md)|Thrown when a module definition file contains errors.|  
-|[Error 0114](error-0114.md)|Thrown when building a custom module fails.|  
-|[Error 0115](error-0115.md)|Thrown when a custom module default script has an unsupported extention.|  
+|[Error 0113](error-0113.md)|Thrown when a module definition file contains errors|  
+|[Error 0114](error-0114.md)|Thrown when building a custom module fails|  
+|[Error 0115](error-0115.md)|Thrown when a custom module default script has an unsupported extension|  
 |[Error 0121](error-0121.md)|Thrown when SQL write fails because the table is not writeable|  
 |[Error 0122](error-0122.md)|Exception occurs if multiple weight columns are specified and just one is allowed.|  
 |[Error 0123](error-0123.md)|Exception occurs if column of vectors is specified to be Label column.|  
@@ -155,20 +156,20 @@ This topic lists the errors that might be reported in individual modules in Azur
 |[Error 0139](error-0139.md)|Exception occurs when it is not possible to convert column to another type.|  
 |[Error 0140](error-0140.md)|Exception occurs if passed column set argument does not contain other columns except label column.|  
 |[Error 0141](error-0141.md)|Exception occurs if the number of the selected numerical columns and unique values in the categorical and string columns is too small.|  
-|[Error 0142](error-0142.md)|Exception occurs when the system cannot load certificate to authenticate|  
-|[Error 0143](error-0143.md)|Can't parse user-provided URL that is supposed to be from GitHub.|  
+|[Error 0142](error-0142.md)|Exception occurs when the system cannot load certificate to authenticate.|  
+|[Error 0143](error-0143.md)|Can't parse user-provided URL that is supposed to be from GitHub|  
 |[Error 0144](error-0144.md)|User-provided GitHub url is missing the expected part.|  
-|[Error 0145](error-0145.md)|Cannot create the replication directory for some reason.|  
+|[Error 0145](error-0145.md)|Cannot create the replication directory for some reason|  
 |[Error 0146](error-0146.md)|When the user files are unzipped into the local directory, the combined path might be too long.|  
 |[Error 0147](error-0147.md)|Could not download stuff from GitHub for some reason|  
-|[Error 0148](error-0148.md)|Unauthorized access issues while extracting data or creating directory.|  
+|[Error 0148](error-0148.md)|Unauthorized access issues while extracting data or creating directory|  
 |[Error 0149](error-0149.md)|The user file does not exist inside GitHub bundle.|  
 |[Error 0150](error-0150.md)|The scripts that come from the user package could not be unzipped, most likely because of the collision with Github files.|  
 |[Error 0151](error-0151.md)|There was an error writing to cloud storage. Please check the url.|  
 |[Error 0152](error-0152.md)|The Azure cloud type was specified incorrectly in the module context.|  
 |[Error 0153](error-0153.md)|The storage end point specified is invalid.|  
-|[Error 0154](error-0154.md)|The specified server name could not be resolved|  
-|[Error 0155](error-0155.md)|The DocDb Client threw an exception|  
+|[Error 0154](error-0154.md)|The specified server name could not be resolved.|  
+|[Error 0155](error-0155.md)|The DocDb Client threw an exception.|  
 |[Error 0156](error-0156.md)|Bad response for HCatalog Server|  
-|[Error 0157](error-0157.md)|There was an error reading from DocumentDB due to inconsistent or different document schemas|  
-|[Error 1000](error-1000.md)|Internal library exception.|
+|[Error 0157](error-0157.md)|There was an error reading from DocumentDB due to inconsistent or different document schemas.|  
+|[Error 1000](error-1000.md)|Internal library exception|

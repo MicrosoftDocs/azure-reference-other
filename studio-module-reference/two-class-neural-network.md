@@ -31,7 +31,7 @@ After you define the model, train it by providing a tagged dataset and the model
 
 A neural network is a set of interconnected layers. The inputs are the first layer, and are connected to an output layer by an acyclic graph comprised of weighted edges and nodes.
 
-Between the input and putput layers you can insert multiple hidden layers. Most predictive tasks can be accomplished easily with only one or a few hidden layers. However, recent research has shown that deep neural networks (DNN) with many layers can be very effective in complex tasks such as image or speech recognition. The successive layers are used to model increasing levels of semantic depth.
+Between the input and output layers you can insert multiple hidden layers. Most predictive tasks can be accomplished easily with only one or a few hidden layers. However, recent research has shown that deep neural networks (DNN) with many layers can be very effective in complex tasks such as image or speech recognition. The successive layers are used to model increasing levels of semantic depth.
 
 The relationship between inputs and outputs is learned from training the neural network on the input data. The direction of the graph proceeds from the inputs through the hidden layer and to the output layer. All nodes in a layer are connected by the weighted edges to nodes in the next layer.
 
@@ -61,9 +61,9 @@ To compute the output of the network for a particular input, a value is calculat
   
         -   The number of nodes equals the number of classes. For a two-class neural network, this means that all inputs must map to one of two nodes in the output layer.
   
-    -   **Custom definition script**: Choose this option to create a custom neural network architecture, using the [**Net#** language](#bkmk_Customizing) . With this option, you can define the number of hidden layers, their connections, and the mappings between layers. 
+    -   **Custom definition script**: Choose this option to create a custom neural network architecture, using the [**Net#** language](#bkmk_Customizing). With this option, you can define the number of hidden layers, their connections, and the mappings between layers. 
     
-    After selecting the custom script option, in the **Neural network definition** text box, type or paste Net# statments that define the network. For examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).  
+    After selecting the custom script option, in the **Neural network definition** text box, type or paste Net# statements that define the network. For examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).  
 
 4.  If you are not using the script option, use **Number of hidden nodes**, and type the number of hidden nodes. The default is one hidden layer with 100 nodes.
 
@@ -136,7 +136,7 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
   
 -   [Deep Neural networks sample (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -182,11 +182,10 @@ output Result auto from Hidden all;
 For additional script examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).
 
 
-### Tips
+> [!TIP]
+> Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve a fair amount of sweeping (iterations) over hyperparameters.
 
-Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve a fair amount of sweeping (iterations) over hyperparameters.
-
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -201,7 +200,7 @@ Neural networks can be computationally expensive, due to a number of hyperparame
 |Random number seed|Any|Integer||Specify a numeric seed to use for random number generation. Leave it blank to use the default seed.|  
 |Allow unknown categorical levels|Any|Boolean|True|Indicated whether an additional level should be created for unknown categories. If the test dataset contains categories that are not present in the training dataset, they are mapped to this unknown level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

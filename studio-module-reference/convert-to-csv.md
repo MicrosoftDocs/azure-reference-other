@@ -81,11 +81,9 @@ A CSV file stores tabular data (numbers and text) in plain text form. A CSV file
 
 Typically, all records have an identical number of fields, and missing values are represented as nulls or empty strings.  
 
-### Tips
-
-You can easily export data from Excel, Access, or a relational database into CSV files, to use in Azure Machine Learning. Although file names typically have the .CSV extension, Azure Machine Learning does not require that this filename extension be present if you want to import the data as CSV. You can import XLSX, TXT, and other files as CSV. 
-
-However, the fields in the file must be formatted as described in the preceding section, and the file must use the UTF-8 encoding.
+> [!TIP]
+> You can easily export data from Excel, Access, or a relational database into CSV files, to use in Azure Machine Learning. Although file names typically have the .CSV extension, Azure Machine Learning does not require that this filename extension be present if you want to import the data as CSV. You can import XLSX, TXT, and other files as CSV. 
+> However, the fields in the file must be formatted as described in the preceding section, and the file must use the UTF-8 encoding.
 
 ### Common questions and issues 
 
@@ -142,13 +140,13 @@ For general information about importing from CSV, see these resources:
 + [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-import-data)
 + [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

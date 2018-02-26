@@ -36,7 +36,7 @@ If the optional `IF EXISTS` is specified, then the statement drops the data sour
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
-```
+```sql
 USE TestReferenceDB;
 DROP DATA SOURCE IF EXISTS MyAzureSQLDBDataSource;
 

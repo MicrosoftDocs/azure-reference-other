@@ -1,7 +1,8 @@
 ---
 title: "R Packages Supported by Azure Machine Learning | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 04/25/2017
+ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,42 +12,47 @@ ms.assetid: 309a7f30-0da4-43b3-8a41-6203dcd78710
 caps.latest.revision: 10
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
-# R Packages Supported by Azure Machine Learning
-Approximately 400 R packages are preloaded in the Azure Machine Learning environment. To use them  in your R code, you simply import the package using standard R syntax.  
-  
-To get a complete list of the R packages that are in the Azure Machine Learning environment, add the [Execute R Script](execute-r-script.md) to an experiment, and use the following code
+# R Packages supported by Azure Machine Learning Studio
 
+This article lists the packages included by default in Azure Machine Learning Studio. Approximately 400 R packages are preloaded in the Azure Machine Learning environment. To use one of the preloaded packages in your R code, you simply import the package using standard R syntax.
+
+> [!IMPORTANT]
+> Packages available in Studio can be updated, or the version refreshed, without warning. To get the latest and most complete list of the R packages that are in the Azure Machine Learning Studio environment, we recommend that you use [this script](#bkmk_code).
+
+## Unsupported packages  
+
+A number of packages (not listed here) are included in the Azure Machine Learning environment but cannot be called from R code because of the following issues:
+
+- The package has a Java dependency.
+- The package binaries are not compatible with the sandboxed Azure environment.
+- The package requires direct Internet access, or network access.
+
+## <a name="bkmk_code"></a> Use R code to return package list as dataset
+
+To get a list of the R packages in the current environment, add the following code to an instance of the [Execute R Script](execute-r-script.md):
+
+```R
+data.set <- data.frame(installed.packages())
+maml.mapOutputPort("data.set")
 ```
-data.set <- data.frame(installed.packages())  
-maml.mapOutputPort("data.set")   
-```
-  
-## Unsupported Packages  
- A number of packages (not listed here) are included in the Azure Machine Learning environment but cannot be called from R code because of the following issues:  
-  
--   The package has a Java dependency.  
-  
--   The package binaries are not compatible with the sandboxed Azure environment.  
-  
--   The package requires direct Internet access, or network access.  
-  
-##  <a name="bkmk_List"></a> List of Supported Packages  
- This section lists the packages from CRAN and Microsoft R Open that are supported as of the date of this article.  
-  
- **Index**  
-  
+
+## <a name="bkmk_List"></a> List of supported packages
+
+This section lists the packages from CRAN and Microsoft R Open that are supported as of the date of this update (4/2017).
+
+**Index**
+
  [A](#bkmk_A) –      [B](#bkmk_B) – [C](#bkmk_C) – [D](#bkmk_D) – [E](#bkmk_E) – [F](#bkmk_F) – [G](#bkmk_G) – [H](#bkmk_H) – [I](#bkmk_I) – [J](#bkmk_J) – [K](#bkmk_K) – [L](#bkmk_L) – [M](#bkmk_M) – [N](#bkmk_N) – [O](#bkmk_O) – [P](#bkmk_P) – [Q](#bkmk_Q) – [R](#bkmk_R) – [S](#bkmk_S) – [T](#bkmk_T) – [U](#bkmk_U) – [V](#bkmk_V) – [W](#bkmk_W) – [X](#bkmk_X) – [Y](#bkmk_Y) – [Z](#bkmk_Z)  
-  
- The **Compatibility** column indicates whether the package is included with CRAN R 3.1 or  Microsoft R Open (MRO; currently 3.2.2). If not otherwise marked, the package is included with both. 
- 
- > [!NOTE]
- > 
- > Many new packages are now available from Microsoft R Open, including RevoScaleR. This means that you can easily use the same R code in Azure ML Studio, Microsoft R Server, and in SQL Server Machine earning Services. 
-  
+
+The **Compatibility** column indicates whether the package is included with CRAN R 3.1 or  Microsoft R Open (MRO; currently 3.2.2). If not otherwise marked, the package is included with both.
+
+> [!NOTE]
+> Many new packages are now available from Microsoft R Open. This means that you can easily use the same R code in Azure ML Studio, Microsoft R Server, and in SQL Server Machine Learning Services. 
+
 ###  <a name="bkmk_A"></a> A  
-   
+
 |**Package name**|**Compatibility**|  
 |-|-|  
 |abc||  
@@ -68,7 +74,7 @@ maml.mapOutputPort("data.set")
 |AtelieR ||
 |AzureML|MRO only|
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_B"></a> B  
 
@@ -120,7 +126,7 @@ maml.mapOutputPort("data.set")
 |bspec||  
 |bspmma||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_C"></a> C  
   
@@ -157,7 +163,7 @@ maml.mapOutputPort("data.set")
 |curl|MRO only| 
 |cvTools|MRO only|  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_D"></a> D  
   
@@ -192,7 +198,7 @@ maml.mapOutputPort("data.set")
 |dse||  
 |dtw|MRO only|  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_E"></a> E  
   
@@ -214,7 +220,7 @@ maml.mapOutputPort("data.set")
 |expm||  
 |extremevalues||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_F"></a> F  
   
@@ -238,7 +244,7 @@ maml.mapOutputPort("data.set")
 |fracdiff||  
 |fTrading||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_G"></a> G  
   
@@ -287,7 +293,7 @@ maml.mapOutputPort("data.set")
 |gWidgetsRGtk2||    
 |gWidgetstcltk|MRO only|  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_H"></a> H  
   
@@ -310,7 +316,7 @@ maml.mapOutputPort("data.set")
 |httpuv||  
 |httr||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_I"></a> I  
   
@@ -326,7 +332,7 @@ maml.mapOutputPort("data.set")
 |irr||  
 |iterators||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_J"></a> J  
   
@@ -337,7 +343,7 @@ maml.mapOutputPort("data.set")
 |jpeg||  
 |jsonlite||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_K"></a> K  
   
@@ -352,7 +358,7 @@ maml.mapOutputPort("data.set")
 |knitr||  
 |ks||
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_L"></a> L  
   
@@ -383,7 +389,7 @@ maml.mapOutputPort("data.set")
 |LSAfun||
 |lubridate||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_M"></a> M  
   
@@ -442,7 +448,7 @@ maml.mapOutputPort("data.set")
 |mvoutlier|CRAN R only|  
 |mvtnorm||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_N"></a> N  
 
@@ -458,7 +464,7 @@ maml.mapOutputPort("data.set")
 |numbers||  
 |numDeriv||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_O"></a> O  
   
@@ -471,7 +477,7 @@ maml.mapOutputPort("data.set")
 |OutlierDM||  
 |outliers||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_P"></a> P  
   
@@ -511,7 +517,7 @@ maml.mapOutputPort("data.set")
 |pscl||  
 |psych||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_Q"></a> Q  
   
@@ -526,7 +532,7 @@ maml.mapOutputPort("data.set")
 |quantreg||  
 |qvcalc||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_R"></a> R  
   
@@ -569,7 +575,6 @@ maml.mapOutputPort("data.set")
 |RevoPemaR|MRO only| 
 |RevoRpeConnector|MRO only| 
 |RevoRsrConnector|MRO only| 
-|RevoScaleR|MRO only| 
 |RevoTreeView|MRO only| 
 |RevoUtils|MRO only|   
 |RevoUtilsMath|MRO only|
@@ -611,7 +616,7 @@ maml.mapOutputPort("data.set")
 |rworldmap||  
 |rworldxtra||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_S"></a> S  
   
@@ -674,7 +679,7 @@ maml.mapOutputPort("data.set")
 |svmpath||  
 |svUnit||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_T"></a> T  
   
@@ -707,7 +712,7 @@ maml.mapOutputPort("data.set")
 |TTR||  
 |twitteR||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_U"></a> U  
   
@@ -717,7 +722,7 @@ maml.mapOutputPort("data.set")
 |utils||  
 |uuid|MRO only|  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_V"></a> V  
   
@@ -732,7 +737,7 @@ maml.mapOutputPort("data.set")
 |VIM|MRO only|
 |visNetwork|MRO only|
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_W"></a> W  
   
@@ -743,7 +748,7 @@ maml.mapOutputPort("data.set")
 |wmtsa|MRO only|  
 |wordcloud||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_X"></a> X  
   
@@ -758,7 +763,7 @@ maml.mapOutputPort("data.set")
 |xtable||  
 |xts||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_Y"></a> Y  
   
@@ -766,7 +771,7 @@ maml.mapOutputPort("data.set")
 |-|-|  
 |yaml||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
 ###  <a name="bkmk_Z"></a> Z  
   
@@ -776,7 +781,8 @@ maml.mapOutputPort("data.set")
 |zipfR||  
 |zoo||  
   
- [List of Supported Packages](#bkmk_List)  
+ [List of supported packages](#bkmk_List)  
   
-## See Also  
+## See also
+
  [R Language Modules](r-language-modules.md)

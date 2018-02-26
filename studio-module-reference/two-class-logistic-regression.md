@@ -1,7 +1,7 @@
 ---
 title: "Two-Class Logistic Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/17/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -31,7 +31,7 @@ Logistic regression is a well-known method in statistics that is used to predict
   
 In this module, the classification algorithm is optimized for dichotomous or binary variables. if you need to classify multiple outcomes, use the [Multiclass Logistic Regression](multiclass-logistic-regression.md) module.
 
-##  <a name="Tips"></a> How to configure Two-Class Logistic Regression  
+##  How to configure Two-Class Logistic Regression  
 
 To train this model, you must provide a dataset that contains a label or class column. Because this module is intended for two-class problems, the label or class column must contain exactly two values. 
 
@@ -70,7 +70,7 @@ For example, the label column might be [Voted] with possible values of "Yes" or 
   
      This optimization parameter limits the amount of memory that is used to compute the next step and direction. When you specify less memory, training is faster but less accurate.  
   
-6.  For **Random number seed**, type an integer value. Defining a seed value is important if you want the results to be reproducble over multiple runs of the same experiment.  
+6.  For **Random number seed**, type an integer value. Defining a seed value is important if you want the results to be reproducible over multiple runs of the same experiment.  
   
 7.  Select the **Allow unknown categorical levels** option to create an additional “unknown” level in each categorical column. If you do so, any values (levels) in the test dataset that are not available in the training dataset are mapped to this "unknown" level.
   
@@ -94,9 +94,9 @@ For example, the label column might be [Voted] with possible values of "Yes" or 
 
 After training is complete:
 
-+ To see a summary of the model's parameters, together with the feature weights learned from training,right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md), and select **Visualize**   
++ To see a summary of the model's parameters, together with the feature weights learned from training, right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md), and select **Visualize**.   
   
-+ To make predictions on new data, use the trained model and new data as input to the [Score Model](score-model.md) module . 
++ To make predictions on new data, use the trained model and new data as input to the [Score Model](score-model.md) module. 
 
 + To perform cross-validation against a labeled data set, connect the data and the untrained model to [Cross-Validate Model](cross-validate-model.md).  
   
@@ -112,7 +112,7 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 Logistic regression requires numeric variables. Therefore, when you use categorical columns as variable, Azure Machine Learning converts the values to an indicator array internally.
 
@@ -138,7 +138,7 @@ The algorithm tries to find the optimal values for <code>β{0},..., β {D-1}</co
 
 For more information on the implementation of this algorithm, see [Scalable Training of L-1 Regularized Log-Linear Models](http://research.microsoft.com/apps/pubs/default.aspx?id=78900), by Andrew and Gao.  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -149,7 +149,7 @@ For more information on the implementation of this algorithm, see [Scalable Trai
 |Random number seed|Any|Integer||Type a value to seed the random number generator used by the model. Leave it blank for the default.|  
 |Allow unknown categorical levels|Any|Boolean|True|Indicate whether an additional level should be created for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

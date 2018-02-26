@@ -1,5 +1,6 @@
 ---
 title: "Error 0012 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0012
-**Error 0012**  
-  
+# Error 0012  
  Exception occurs if instance of class could not be created with passed set of arguments.  
   
 ## Resolution  
@@ -26,5 +25,5 @@ manager: "jhubbard"
 |Untrained model, please train model first.|  
 |Untrained model ({0}), use trained model.|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

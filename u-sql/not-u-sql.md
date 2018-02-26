@@ -35,7 +35,7 @@ The Boolean expression to be negated that returns a not-null value of type bool.
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 Return all records where `EmpName` does not start with E.
-```
+```sql
 @data  = 
     SELECT * FROM 
         (VALUES  

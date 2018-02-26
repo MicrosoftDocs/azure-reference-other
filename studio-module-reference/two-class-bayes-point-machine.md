@@ -21,13 +21,13 @@ manager: "cgronlund"
   
 ## Module overview  
 
-This article describes how to use the **Two-Class Bayes Point Machine** module in Azure Machine Learning Studio to create an untrained binary classification model.
+This article describes how to use the **Two-Class Bayes Point Machine** module in Azure Machine Learning Studio, to create an untrained binary classification model.
 
 The algorithm in this module uses a Bayesian approach to linear classification called the "Bayes Point Machine". This algorithm efficiently approximates the theoretically optimal Bayesian average of linear classifiers (in terms of generalization performance) by choosing one "average" classifier, the Bayes Point. Because the Bayes Point Machine is a Bayesian classification model, it is not prone to overfitting to the training data.
 
 For more information, see Chris Bishop's post on the Microsoft Machine Learning blog: [Embracing Uncertainty - Probabilistic Inference](http://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx).
   
-## How to Use the Two-Class Bayes Point Machine  
+## How to configure Two-Class Bayes Point Machine
   
 1.  In Azure Machine Learning Studio, add the **Two-Class Bayes Point Machine** module to your experiment. You can find the module under **Machine Learning**, **Initialize Model**, **Classification**.
   
@@ -69,7 +69,7 @@ To see how the Two-Class Bayes Point Machine is used in machine learning, see th
   
 -  [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
 
-##  <a name="Notes"></a>  Technical notes
+##   Technical notes
 
 This section contains implementation details and frequently asked questions about this algorithm.
 
@@ -85,7 +85,7 @@ However, this implementation improves on the original algorithm in several ways:
   
 These improvements make the Bayes Point Machine classification model more robust and easier-to-use, and you can bypass the time-consuming step of parameter tuning.
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -93,7 +93,7 @@ These improvements make the Bayes Point Machine classification model more robust
 |Include bias|Any|Boolean|True|Indicate whether a constant feature or bias should be added to each instance|  
 |Allow unknown values in categorical features|Any|Boolean|True|If True, creates an additional level for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

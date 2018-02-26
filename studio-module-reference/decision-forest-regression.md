@@ -110,7 +110,7 @@ For examples of regression models, see these sample experiments in the [Cortana 
 
 - [Sentiment analysis sample](http://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
 
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -120,7 +120,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 - If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified will be used throughout the sweep, even if other parameters change across a range of values.
 
-### Tips
+### Usage tips
 
 If you have limited data or want to minimize the time spent training the model, try these settings:
 
@@ -140,7 +140,7 @@ If you have limited data or want to minimize the time spent training the model, 
 
 - Specify a small number of random splits per node (for example, less than 100)
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|
 |----------|-----------|----------|-------------|-----------------|
@@ -151,7 +151,7 @@ If you have limited data or want to minimize the time spent training the model, 
 |Minimum number of samples per leaf node|>=1|Integer|1|Specify the minimum number of training samples required to generate a leaf node|
 |Allow unknown values for categorical features|any|Boolean|true|Indicate whether unknown values of existing categorical features can be mapped to a new, additional feature|
 
-##  <a name="Outputs"></a> Outputs
+##  Outputs
 
 |Name|Type|Description|
 |----------|----------|-----------------|

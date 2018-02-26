@@ -1,5 +1,6 @@
 ---
 title: "Error 0133 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0133
-**Error 0133**  
-  
+# Error 0133  
  The specified file was not found in the zip file  
   
  This error is produced when the filename entered in the **Dataset to Unpack** field of the **Property** pane does not match the name of any file found in the .zip file. The most common causes of this error are a typing error or searching the wrong archive file for the file to expand.  
@@ -28,5 +27,5 @@ manager: "jhubbard"
 |The specified file was not found int the zip file.|  
 |The specified file was not found. Found the following file(s): {0}|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

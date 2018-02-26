@@ -37,24 +37,25 @@ This aggregator cannot be used in a [windowing expression](over-expression-u-sql
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
-    SELECT * FROM ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 20000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Emma",   "HR",          200, 10000),
-        (5, "Jacob",  "HR",          200, 10000),
-        (6, "Olivia", "HR",          200, 10000),
-        (7, "Mason",  "Executive",   300, 50000),
-        (8, "Ava",    "Marketing",   400, 15000),
-        (9, "Ethan",  "Marketing",   400, 10000) )
-    AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+
+   ```sql
+       @employees = 
+        SELECT * FROM ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 20000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Emma",   "HR",          200, 10000),
+            (5, "Jacob",  "HR",          200, 10000),
+            (6, "Olivia", "HR",          200, 10000),
+            (7, "Mason",  "Executive",   300, 50000),
+            (8, "Ava",    "Marketing",   400, 15000),
+            (9, "Ethan",  "Marketing",   400, 10000) )
+        AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+   ```
 
 **A.  Single arbitrary value**  
 The following query selects a single arbitrary `EmpName`. 
-```
+```sql
 @result =
     SELECT ANY_VALUE(EmpName) AS ArbitraryEmployee
     FROM @employees;
@@ -66,7 +67,7 @@ USING Outputters.Csv();
 
 **B.  Arbitrary value per group**  
 The following query selects an arbitrary `EmpName` for each `DeptName`.
-```
+```sql
 @result =
     SELECT DeptName,
            ANY_VALUE(EmpName) AS ArbitraryEmployee

@@ -15,10 +15,11 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Compute Elementary Statistics
+
 *Calculates specified summary statistics for selected dataset columns*  
-  
- Category: [Statistical Functions](statistical-functions.md)  
-  
+
+Category: [Statistical Functions](statistical-functions.md)  
+
 ## Module overview  
 
 This article describes how to use the [Compute Elementary Statistics](compute-elementary-statistics.md) module in Azure Machine Learning Studio, to generate a summary report for your dataset that lists key statistics such as mean, standard deviation, and the range of values for each of the selected columns.  
@@ -37,10 +38,10 @@ This article describes how to use the [Compute Elementary Statistics](compute-el
   
 2.  By default, the value you selected in **Method** dropdown list will be calculated for all columns in the dataset that have a numeric data type. If any column has values that prevent the value from being calculated, an error will be raised and the report will not be created. 
 
-    To avoid this error, use the column selector to pick the numeric columns for which you want a report. All columns that you choose must be numeric.   
-  
+    To avoid this error, use the column selector to pick the numeric columns for which you want a report. All columns that you choose must be numeric.
+
 3.  Run the experiment.  
-  
+
 ### Results
 
 The generated report includes the name of each column and the statistic that was calculated.  For example, the following table shows statistics generated for the **mpg** column.    
@@ -225,21 +226,18 @@ The following experiments in the [Azure AI Gallery](https://gallery.cortanaintel
 - [Dataset Processing and Analysis](https://gallery.cortanaintelligence.com/Experiment/943c3d4becb7470e8acac6af699d6ea9): The [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
 
 
-##  <a name="Notes"></a> Technical notes  
+##  Technical notes  
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
-
-The following conditions must be satisfied when using the [Compute Elementary Statistics](compute-elementary-statistics.md) module:  
-  
-- There must be a sufficient number of data points (rows) to compute the selected statistic. For example, to compute **Sample standard deviation** requires at least two data points; otherwise, the result is NaN.  
-  
--  Input columns must be numeric or Boolean.  
-
-By default, all numeric columns are selected. However, if any numeric columns are marked as categorical, you might get the following error: " Error 0056: Column with name \<column name> is not in an allowed category."
-  
-To correct the error, add an instance of the [Edit Metadata](edit-metadata.md) module, select the column with the problem, and use the option **Remove categorical**.  
+> [!TIP]
+> The following conditions must be satisfied when using the [Compute Elementary Statistics](compute-elementary-statistics.md) module:  
+> 
+> - There must be a sufficient number of data points (rows) to compute the selected statistic. For example, to compute **Sample standard deviation** requires at least two data points; otherwise, the result is NaN.  
+> - Input columns must be numeric or Boolean.  
+> 
+> By default, all numeric columns are selected. However, if any numeric columns are marked as categorical, you might get the following error: " Error 0056: Column with name \<column name> is not in an allowed category."
+> To correct the error, add an instance of the [Edit Metadata](edit-metadata.md) module, select the column with the problem, and use the option **Remove categorical**.  
 
 ### Implementation details
   
@@ -255,27 +253,27 @@ Boolean columns are processed as follows:
   
 + For statistics that require floating-point calculations, True = 1.0 and False = 0.0
 
-##  <a name="ExpectedInputs"></a> Expected inputs
-  
+## Expected inputs
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="parameters"></a> Module parameters
-  
+## Module parameters
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Method|List|Elementary statistics method||Selects a statistical method to use in calculations. See How to use section for list of values.|  
 |Column set|any|ColumnSelection|NumericAll|Selects the columns for which to calculate the statistic|  
 |Order|>=1|Integer|3|Specifies a value for central moment order (used for the kth central moment only)|  
   
-##  <a name="Outputs"></a> Output  
-  
+## Output  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
-  
-##  <a name="exceptions"></a> Exceptions
+
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  
@@ -285,7 +283,8 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
-## See also  
+## See also
+
  [Statistical Functions](statistical-functions.md)   
  [elementary](compute-elementary-statistics.md)   
  [Summarize Data](summarize-data.md)   

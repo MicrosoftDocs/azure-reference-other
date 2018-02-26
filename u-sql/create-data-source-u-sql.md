@@ -17,7 +17,7 @@ manager: "jhubbard"
 U-SQL provides the `CREATE DATA SOURCE` statement to create a data source.  Data Sources give U-SQL the ability to query data from other data sources such as other databases. It contains the connection information as well as information about its capabilities to execute query expressions passed and translated from U-SQL to the its local query engine. For example, U-SQL allows to create a data source on an Azure SQL Database which then allows U-SQL queries to select from tables in that database. 
 
 > [!NOTE]
-> In order for the data source to be accessible in [federated queries](u-sql-select-selecting-from-an-external-rowset.md), the firewall rules of the external data source has to provide access to the Azure Data Lake Analytics machines. See the descriptions under [External_Source](#ex_src) for more details. 
+> In order for the data source to be accessible in [federated queries](u-sql-select-selecting-from-an-external-rowset.md), the firewall rules of the external data source has to provide access to Azure Data Lake Analytics. See the descriptions under [External_Source](#ex_src) for more details. 
   
 <table><th align="left">Syntax</th><tr><td><pre>
 Create_Datasource_Statement :=                                                                           
@@ -171,7 +171,7 @@ New-AzureRmDataLakeAnalyticsCatalogCredential -AccountName "<adla_account>" -Dat
 ```
 
 **Create Data Source - AZURESQLDB**   
-```U-SQL
+```sql
 USE DATABASE TestReferenceDB;
 
 CREATE DATA SOURCE MyAzureSQLDBDataSource
@@ -185,7 +185,7 @@ WITH
 ``` 
 
 **Create Data Source - AZURESQLDW**   
-```U-SQL
+```sql
 USE DATABASE TestReferenceDB;
 
 CREATE DATA SOURCE IF NOT EXISTS MyAzureSQLDWDataSource
@@ -199,7 +199,7 @@ WITH
 ```
 
 **Create Data Source - SQLSERVER**   
-```U-SQL
+```sql
 USE DATABASE TestReferenceDB;
 DROP DATA SOURCE IF EXISTS MySQLServerDataSource;
 
@@ -214,7 +214,7 @@ WITH
 ```
 
 **Query Data Source - Method 1**   
-```
+```sql
 USE DATABASE TestReferenceDB;
 
 @results =
@@ -248,7 +248,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **Query Data Source - Method 2**   
-```
+```sql
 USE DATABASE TestReferenceDB;
 
 @results =

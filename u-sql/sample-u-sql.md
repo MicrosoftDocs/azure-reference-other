@@ -43,7 +43,7 @@ A double between 0 and 1 that indicates the probability with which a row in the 
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable, `@data`.  
 
 **Dataset**   
-```
+```sql
 @data = 
     SELECT * FROM 
         ( VALUES
@@ -58,7 +58,7 @@ A double between 0 and 1 that indicates the probability with which a row in the 
 
 **ANY**  
 Samples the `@data` rowset by selecting the specified number of rows (2) in a completely arbitrary way.
-```
+```sql
 @result = 
     SELECT * FROM @data SAMPLE ANY (2);
 
@@ -76,7 +76,7 @@ ZipCode  |Age      |Salary   |LastName
  
 **UNIFORM**   
 Samples the `@data` rowset using a random uniform sampling with the provided probability (10%).
-```
+```sql
 @result =
     SELECT * FROM @data SAMPLE UNIFORM (0.1);
 

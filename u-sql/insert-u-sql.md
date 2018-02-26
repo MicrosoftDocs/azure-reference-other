@@ -95,8 +95,9 @@ Insert_Statement :=
 ### Examples
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples below are based on the table defined below.  
-```
+- The examples below are based on the table defined below. 
+ 
+```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
 USE DATABASE TestReferenceDB; 
 
@@ -117,7 +118,8 @@ INTO 10;
 
 **Partitioned Table - Basic Insert**   
 This example adds two partitions to `Orders` if they do not already exist.  Then data is added into each partition.
-```
+
+```sql
 // Add partitions if not exists
 DECLARE @partition1 DateTime = new DateTime(2016, 01, 01, 00,00,00,00, DateTimeKind.Utc);
 DECLARE @partition2 DateTime = @partition1.AddDays(1);
@@ -148,7 +150,8 @@ VALUES
 
 **Partitioned Table - INTEGRITY VIOLATION IGNORE**   
 This example attempts to insert a record that does not fit into any of the available partitions.  With IGNORE, the record is ignored and not inserted.
-```
+
+```sql
 INSERT INTO TestReferenceDB.dbo.Orders
 (OrderID, CustomerID, OrderDetailID, OrderTotal, OrderDate)
 ON INTEGRITY VIOLATION IGNORE
@@ -159,7 +162,8 @@ VALUES
 
 **Partitioned Table - INTEGRITY VIOLATION MOVE**     
 This example attempts to insert a record that does not fit into any of the available partitions.  With MOVE, the record is moved into a designated partition.  Here, the designated partition is for the year 2100.  This partition can be considered as the dumping partition for all records that do not fit into any of the available partitions.
-```
+
+```sql
 // Create "dumping" partition
 DECLARE @badPartition DateTime = new DateTime(2100, 01, 01, 00,00,00,00, DateTimeKind.Utc);
 ALTER TABLE TestReferenceDB.dbo.Orders

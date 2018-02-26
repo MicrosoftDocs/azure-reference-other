@@ -1,5 +1,6 @@
 ---
 title: "Error 0129 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -13,9 +14,7 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "jhubbard"
 ---
-# Error 0129
-**Error 0129**  
-  
+# Error 0129  
  Number of columns in the dataset exceeds allowed limit.  
   
 ## Resolution  
@@ -27,5 +26,5 @@ manager: "jhubbard"
 |Number of columns in the dataset in '{0}' exceeds allowed limit of '{1}'.'|  
 |Number of columns in the dataset in '{0}' exceeds allowed '{1}' limit of '{2}'.'|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+## See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

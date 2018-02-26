@@ -1,7 +1,7 @@
 ---
 title: "Compute Linear Correlation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+ms.custom: "formulas"
 ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -15,10 +15,11 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Compute Linear Correlation
+
 *Calculates the linear correlation between column values in a dataset*  
-  
- Category: [Statistical Functions](statistical-functions.md)  
-  
+
+Category: [Statistical Functions](statistical-functions.md)  
+
 ## Module overview
 
 This article describes how to use the [Compute Linear Correlation](compute-linear-correlation.md) module in Azure Machine Learning Studio, to compute a set of Pearson correlation coefficients for each possible pair of variables in the input dataset.  
@@ -92,10 +93,10 @@ The interpretation of the coefficients depends very much on the problem you are 
 - If you use linear correlation on two variables that you know to be perfectly correlated, and the coefficient values are not what you expect, it might indicate a problem in the data.   
 
 ### Results for more than two columns
-  
- Given a matrix (that is, more than two feature columns), the [Compute Linear Correlation](compute-linear-correlation.md) module returns a set of Pearson product moment correlations between each pair of feature columns.  
+
+Given a matrix (that is, more than two feature columns), the [Compute Linear Correlation](compute-linear-correlation.md) module returns a set of Pearson product moment correlations between each pair of feature columns.  
  
-Therefore, you will get back an *n x n* table containing the coefficients for each combination of the *n* columns. If any columns do not meet the criteria, a NaN ("not a number" value) is returned. 
+Therefore, the result is an *n x n* table containing the coefficients for each combination of the *n* columns. If any columns do not meet the criteria, a NaN ("not a number" value) is returned. 
 
 For example, assume you passed in the two numeric columns `wheel-base` and `curb-weight` plus one categorical column, `make` (from the Automobile price dataset). The result is a 3x3 table of coefficients for all possible combinations of the input columns:
 
@@ -119,7 +120,7 @@ To see how this module is used in machine learning experiments, see the [Azure A
   
 -   [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): This sample demonstrates multiple techniques for modifying your data. [Compute Linear Correlation](compute-linear-correlation.md) is used to identify potential feature columns.  
   
-##  <a name="Notes"></a> Technical notes
+##  Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -137,20 +138,20 @@ For a matrix, a matrix of data (*X*) is input, in which each column represents a
   
 In this formula, μx represents the mean value of the column *x*i. The elements at I,j always equal 1, as they represent the correlation of a vector with itself.  
   
-##  <a name="ExpectedInputs"></a> Expected inputs
+## Expected inputs
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="Outputs"></a> Output  
+## Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Correlations matrix|  
   
-##  <a name="exceptions"></a> Exceptions  
-  
+## Exceptions  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
@@ -161,6 +162,7 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 
-## See also  
+## See also
+
  [Statistical Functions](statistical-functions.md)   
  [A-Z Module List](a-z-module-list.md)

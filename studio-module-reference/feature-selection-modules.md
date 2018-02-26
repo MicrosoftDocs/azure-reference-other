@@ -134,15 +134,13 @@ This section lists these algorithms and the feature selection method that is use
 
 All feature selection modules and analytical methods that support numeric and logical columns support date-time and time span columns as well. These columns are treated as simple numeric columns where each value equals to the number of ticks.  
   
-##  <a name="modules"></a> List of modules  
+##  List of modules  
  
 The Feature Selection category includes these modules:  
   
-|Module|Description|  
-|------------|-----------------|  
-|[Filter Based Feature Selection](filter-based-feature-selection.md)|Identifies the features in a dataset with the greatest predictive power|  
-|[Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md)|Identifies the linear combination of feature variables that can best group data into separate classes|  
-|[Permutation Feature Importance](permutation-feature-importance.md)|Computes the permutation feature importance scores of feature variables given a trained model and a test dataset|  
+- [Filter Based Feature Selection](filter-based-feature-selection.md): Identifies the features in a dataset with the greatest predictive power  
+- [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md): Identifies the linear combination of feature variables that can best group data into separate classes 
+- [Permutation Feature Importance](permutation-feature-importance.md): Computes the permutation feature importance scores of feature variables given a trained model and a test dataset 
 
 ## See also  
    

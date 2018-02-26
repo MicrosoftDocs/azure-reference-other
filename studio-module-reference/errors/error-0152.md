@@ -1,5 +1,6 @@
 ---
 title: "Error 0152 | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 07/19/2016
 ms.reviewer: ""
@@ -10,15 +11,13 @@ ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0152-d185d1509344
 caps.latest.revision: 3
 ---
-# Error 0152
-**Error 0152**  
-  
+# Error 0152  
  The Azure cloud type was specified incorrectly in the module context.  
   
-|Exception Messages|  
+|Exception messages|  
 |------------------------|  
 |Bad Azure Cloud Type|  
-|Bad Azure Cloude Type: {0}|  
+|Bad Azure Cloud Type: {0}|  
   
-## See Also  
- [Module Error Codes](../machine-learning-module-error-codes.md)
+### See also  
+ [Module error codes](../machine-learning-module-error-codes.md)

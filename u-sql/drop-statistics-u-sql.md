@@ -43,7 +43,7 @@ Table_Name :=
 - The script can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 The following example drops the statistics, `ordersStats`, within the table `Orders` in `TestReferenceDB`.  
-```
+```sql
 DROP STATISTICS IF EXISTS ordersStats ON TestReferenceDB.dbo.Orders;   
 ```
   

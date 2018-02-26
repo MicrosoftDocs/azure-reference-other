@@ -34,7 +34,7 @@ Returns the data type of the argument with the higher precedence.
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 **Subtract with Numeric Types**   
-```
+```sql
 @data = 
     SELECT * FROM 
         ( VALUES
@@ -56,7 +56,7 @@ USING Outputters.Csv();
 ```
 
 **Subtract with Temporal Types**   
-```
+```sql
 @data = 
     SELECT * FROM 
         ( VALUES

@@ -1,7 +1,8 @@
 ---
 title: "Machine Learning Module Error Codes | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 08/15/2016
+ms.date: 01/22/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.suite: ""
@@ -11,12 +12,15 @@ ms.assetid: 60822377-da7a-40b8-aec7-d185d1509344
 caps.latest.revision: 17
 author: "jeannt"
 ms.author: "jeannt"
-manager: "jhubbard"
+manager: "cgronlund"
 ---
 # Machine Learning Module Error Codes
-This topic lists the errors that might be reported in individual modules in Azure Machine Learning Studio, either when an experiment fails, or when you are editing the properties of the module. To resolve the issue, click the error name in the following table and read about common causes.  
-  
- There are two ways to get the full text of an error message in Studio:  
+
+This topic lists some of the errors that are reported from modules in Azure Machine Learning Studio, either when an experiment fails, or when you are editing the properties of the module. 
+
+## Error resolution
+
+To resolve the issue, click the error name in the following table and read about common causes. There are two ways to get the full text of an error message in Studio:  
   
 -   Click the link, **View Output Log**, in the right pane and scroll to the bottom of the. The detailed error message is generally displayed in the last two lines of the window.  
   
@@ -24,7 +28,7 @@ This topic lists the errors that might be reported in individual modules in Azur
   
  If the error message text is not helpful, please send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the Azure Machine Learning forum and post a question.  
   
-##  <a name="errors"></a> Exceptions List  
+##  <a name="errors"></a> Exceptions list  
   
 |Exception|Description|  
 |---------------|-----------------|  

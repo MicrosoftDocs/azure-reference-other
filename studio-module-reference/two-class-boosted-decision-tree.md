@@ -80,9 +80,12 @@ You can train this type of model by using either the [Train Model](train-model.m
     + If you set **Create trainer mode** to **Parameter Range**, connect a tagged dataset and train the model by using [Tune Model Hyperparameters](tune-model-hyperparameters.md).  
   
     > [!NOTE]
-    >  + If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.  
-    > + If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values, and uses the default values for the learner.  
-    > + If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.
+    > 
+    > If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.  
+    > 
+    > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values, and uses the default values for the learner.  
+    > 
+    > If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.
   
 ### Results
 
@@ -93,7 +96,7 @@ After model training is complete, right-click the output of [Train Model](train-
   
 ## Examples
 
-Explore the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) to see examples of how boosted decision trees are used in machine learning:
+For examples of how boosted decision trees are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
 -   [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
   
@@ -105,7 +108,7 @@ Explore the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) to see 
 
 This section contains implementation details and frequently asked questions.
 
-### Tips
+### Usage tips
 
 + To train a boosted decision tree model, you must provide multiple data instances. An error is generated during the training process if the dataset contains too few rows.
 
@@ -119,7 +122,7 @@ This section contains implementation details and frequently asked questions.
 
 + Features are discretized and binned prior to training, so only a relatively small set of threshold candidates are considered, even for continuous features.
 
-### <a name="bkmk_research"></a> Research and implementation details
+### <a name="bkmk_research"></a> Implementation details
 
 For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](http://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
   
@@ -154,7 +157,7 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
 
     The algorithm repeatedly splits until it reaches the maximum number of leaves, or until no valid split is available. 
 
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -165,7 +168,7 @@ The boosted decision tree algorithm in Azure Machine Learning uses the following
 |Random number seed|Any|Integer||Type a value to seed the random number generator that is used by the model. Leave it blank for the default.|  
 |Allow unknown categorical levels|Any|Boolean|True|If True, an additional level is created for each categorical column. Any levels in the test dataset that are not available in the training dataset are mapped to this additional level.|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
 
 |Name|Type|Description|  
 |----------|----------|-----------------|  

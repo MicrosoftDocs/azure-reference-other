@@ -44,27 +44,28 @@ This ranking function can be used in a [windowing expression](over-expression-u-
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
-```
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   "Engineering", 100, 10000),
-        (2, "Sophia", "Engineering", 100, 15000),
-        (3, "Liam",   "Engineering", 100, 30000),
-        (4, "Amy",    "Engineering", 100, 35000),
-        (5, "Justin", "Engineering", 100, 15000),
-        (6, "Emma",   "HR",          200, 8000),
-        (7, "Jacob",  "HR",          200, 8000),
-        (8, "Olivia", "HR",          200, 8000),
-        (9, "Mason",  "Executive",   300, 50000),
-        (10, "Ava",   "Marketing",   400, 15000),
-        (11, "Ethan", "Marketing",   400, 9000) 
-        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-```
+
+   ```sql
+    @employees = 
+        SELECT * FROM 
+            ( VALUES
+            (1, "Noah",   "Engineering", 100, 10000),
+            (2, "Sophia", "Engineering", 100, 15000),
+            (3, "Liam",   "Engineering", 100, 30000),
+            (4, "Amy",    "Engineering", 100, 35000),
+            (5, "Justin", "Engineering", 100, 15000),
+            (6, "Emma",   "HR",          200, 8000),
+            (7, "Jacob",  "HR",          200, 8000),
+            (8, "Olivia", "HR",          200, 8000),
+            (9, "Mason",  "Executive",   300, 50000),
+            (10, "Ava",   "Marketing",   400, 15000),
+            (11, "Ethan", "Marketing",   400, 9000) 
+            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+   ```
 
 **A.  Dividing rows into groups**   
 The following example divides rows into four groups of employees.
-```
+```sql
 @result =
     SELECT *,
            NTILE(4) OVER() AS Quartile2
@@ -77,7 +78,7 @@ USING Outputters.Csv();
 
 **B.  Dividing rows into groups and using ORDER BY**   
 The following example divides rows into four groups of employees based on his\her `Salary`.
-```
+```sql
 @result =
     SELECT *,
            NTILE(4) OVER(ORDER BY Salary DESC) AS QuartileBySalary
@@ -91,7 +92,7 @@ USING Outputters.Csv();
 
 **C.  Dividing the result set by using PARTITION BY**   
 The rows are first partitioned by `DeptID` and then divided into two groups within each `DeptID`.
-```
+```sql
 @result =
     SELECT *,
            NTILE(2) OVER(PARTITION BY DeptID) AS Median
@@ -104,7 +105,7 @@ USING Outputters.Csv();
 
 **D.  Dividing the result set by using PARTITION BY and ORDER BY**   
 The rows are first partitioned by `DeptID` and then divided into two groups within each `DeptID` based on his\her `Salary`.
-```
+```sql
 @result =
     SELECT *,
            NTILE(2) OVER(PARTITION BY DeptID ORDER BY Salary DESC) AS MedianBySalary

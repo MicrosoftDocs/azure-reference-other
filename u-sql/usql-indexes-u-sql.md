@@ -31,7 +31,7 @@ type_desc     |string         |Description of index type:<br><br> CLUSTERED<br><
 The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
 
 **Query the usql.indexes view**
-```
+```sql
 USE TestReferenceDB;
 
 OUTPUT usql.indexes
@@ -40,7 +40,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 **Query the usql.indexes view with usql.objects view**
-```
+```sql
 @indexes =
     SELECT o.name AS objectName,
             i.*

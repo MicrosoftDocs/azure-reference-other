@@ -123,11 +123,11 @@ Process_Expression :=
       'USING' udo_expression.</pre></td></tr></table>
   
   The `USING` clause takes a C# expression that returns an instance of `IProcessor`. Users can write their own by implementing an `IProcessor` (see [U-SQL Programmability Guide: User-Defined Processor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-processor) for more details on how to write your own processor). Most commonly, the UDO expression is either the instantiation of a processor class of the form    
-  ```
+  ```sql
   USING new MyNameSpace.MyProcessor(parameter:"value")                          
   ```
   or the invocation of a factory method  
-  ```
+  ```sql
   USING MyNameSpace.MyProcessorFactory(parameter:"value")                       
   ```
   
@@ -140,6 +140,7 @@ Process_Expression :=
 
 <a name="FullAddressProcessor">**User-Defined Processor - FullAddressProcessor**</a>   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -171,7 +172,7 @@ namespace ReferenceGuide_Examples
 
 **Using User-Defined Processor - FullAddressProcessor**  
 The processor generates a new column "full_address" by combining streetAddress, city, zipCode, and country. It also generates a new guid.  Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 // Dataset
 @employees = 
     SELECT * FROM 
@@ -208,6 +209,7 @@ USING Outputters.Csv();
 <a name="CountryName">**User-Defined Processor - CountryName**</a>   
 This is a modified example from [Develop U-SQL user-defined operators for Azure Data Lake Analytics jobs](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-develop-user-defined-operators). Please review the article for details.   
 c# code is placed in the associated [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) .cs file.  See usage in next section, **below**.
+
 ```csharp
 using Microsoft.Analytics.Interfaces;
 using Microsoft.Analytics.Types.Sql;
@@ -258,7 +260,7 @@ namespace ReferenceGuide_Examples
 
 **Using User-Defined Processor - CountryName**  
 Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 @drivers = 
     SELECT * FROM 
         ( VALUES
@@ -294,7 +296,7 @@ USING Outputters.Text(Encoding.Unicode);
 **Processor with ORDER BY and FETCH**   
 The [ORDER BY clause with FETCH](order-by-and-offset-fetch-clause-u-sql.md) allows the selection of a limited number of rows based on the specified order.
 This examples continues to use `CountryName` defined earlier.
-```
+```sql
 // Same as previous example but only returns top 3 records ordered by Country
  @drivers_CountryName =
      PROCESS @drivers

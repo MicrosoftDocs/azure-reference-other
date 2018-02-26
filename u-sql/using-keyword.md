@@ -32,7 +32,7 @@ Create a using directive to use the types in a namespace without having to speci
 
 **Specify namespace**    
 In this example we default C# namespace resolution to the specified namespace:
-```
+```sql
 DECLARE @ input string = "somejsonfile.json";
 
 REFERENCE ASSEMBLY [Newtonsoft.Json];
@@ -50,7 +50,7 @@ USING Microsoft.Analytics.Samples.Formats.Json;
 
 **Alias namespace**   
 In this example we use an alias to shorten the namespace path with an alias:
-```
+```sql
 DECLARE @ input string = "somejsonfile.json";
 
 REFERENCE ASSEMBLY [Newtonsoft.Json];
@@ -68,7 +68,7 @@ USING json = Microsoft.Analytics.Samples.Formats.Json;
 
 **Alias Type**    
 In the following example, we alias the full type name. Note that we support quoting the name to allow all uppercase namespaces.
-```
+```sql
 DECLARE @ input string = "somejsonfile.json";
 
 REFERENCE ASSEMBLY [Newtonsoft.Json];

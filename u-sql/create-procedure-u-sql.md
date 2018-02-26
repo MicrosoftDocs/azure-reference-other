@@ -90,7 +90,7 @@ Deploying a resource inside a procedure will become visible to the whole script 
 - The examples below utilize the table dbo.somePeople as defined below.
   
 **Dataset**   
-```
+```sql
 // Create database
 CREATE DATABASE IF NOT EXISTS TestReferenceDB; 
 USE DATABASE TestReferenceDB; 
@@ -132,7 +132,7 @@ USING Outputters.Tsv();
 
 **myFirstStoredProc**    
 The following example creates a stored procedure called `myFirstStoredProc` that outputs the content of `somePeople` to a CSV file.
-```
+```sql
 DROP PROCEDURE IF EXISTS TestReferenceDB.dbo.myFirstStoredProc;
 CREATE PROCEDURE TestReferenceDB.dbo.myFirstStoredProc()  
 AS  
@@ -149,7 +149,7 @@ END;
 
 **myStoredProcWithParameters**   
 The following example creates a stored procedure called `myStoredProcWithParameters` that outputs the content of `somePeople` that matches the `city` and `date` passed to the procedure.
-```
+```sql
 DROP PROCEDURE IF EXISTS TestReferenceDB.dbo.myStoredProcWithParameters;
 CREATE PROCEDURE TestReferenceDB.dbo.myStoredProcWithParameters(@deptID int, @startDate DateTime)  
 AS  
@@ -169,7 +169,7 @@ END;
 **getPeople**   
 The following example creates a stored procedure called `getPeople` that outputs the content of `somePeople` that matches the array of `DeptID` values passed to the procedure.
 In addition, you can pass the location of the output to the `@filePath` parameter.  A default value for `@filePath` is assigned.
-```
+```sql
 DROP PROCEDURE IF EXISTS TestReferenceDB.dbo.getPeople;
 CREATE PROCEDURE TestReferenceDB.dbo.getPeople(
     @deptIDarray SQL.ARRAY<int>, 

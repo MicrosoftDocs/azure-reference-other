@@ -81,13 +81,13 @@ Note the following requirements for TSV files in Azure Machine Learning Studio:
   
 -   When reading from or writing to TSV files, performance can be slower than with other formats (such as CSV).  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

@@ -53,7 +53,7 @@ External_Rowset_Expression :=
 Examples utilize the data source created in the examples from [CREATE DATA SOURCE (U-SQL)](create-data-source-u-sql.md).
 
 **Using LOCATION**   
-```
+```sql
 USE DATABASE TestReferenceDB;
 @results =
     SELECT DateTime.Now AS dayTime, *
@@ -65,7 +65,7 @@ USING Outputters.Csv(outputHeader: true);
 ```
 
 **Using EXECUTE**   
-```
+```sql
 USE DATABASE TestReferenceDB;
 @results =
     SELECT *

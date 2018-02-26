@@ -15,19 +15,20 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Assign to Clusters (deprecated)
+
 *Assigns data to clusters using an existing trained clustering model*  
   
  Category: [Deprecated Modules and Features](deprecated-modules-and-features.md)  
-  
-##  <a name="Remarks"></a> Module overview  
+
+## Module overview  
 
 This article describes how to use the **Assign to Clusters** module in Azure Machine Learning Studio, to generate predictions using a trained clustering model, based on the K-Means clustering algorithm included in Studio.
-  
- The module returns the probable assignment for each new data point, based on the trained model.  
-  
+
+The module returns the probable assignment for each new data point, based on the trained model.  
+
 > [!NOTE]
->  This module has been deprecated, but has been made available for compatibility with existing experiments. For new and updated experiments, we recommend that you use [Assign Data to Clusters](assign-data-to-clusters.md).
-  
+>  This module has been deprecated, and is available solely for compatibility with existing experiments. For new and updated experiments, we recommend that you use [Assign Data to Clusters](assign-data-to-clusters.md).
+
 ## How to use Assign to Clusters  
 
 Use of this module requires that you have already configured a clustering model in Studio using the [K-Means Clustering](k-means-clustering.md) module.
@@ -52,7 +53,7 @@ Use of this module requires that you have already configured a clustering model 
 
 ### Results
 
-The **Assign to Clusters** module returns the *cluster assignments* for each case, in the **Assignments** column appended at the right-hand side of the dataset.  
+The **Assign to Clusters** module returns the *cluster assignments* for each case, in the **Assignments** column appended at the right-hand side of the dataset.
 
 If you do not want all the columns in the results, change the output option to get only the results. For example, when making predictions as part of a web service you might want to return only the predicted assignment.
 
@@ -80,33 +81,33 @@ To see examples of updated clustering models, see these experiments:
   
 - [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses clustering with text extracted from Wikipedia description to find companies in predefined categories.  
   
-##  <a name="Notes"></a> Technical Notes  
-  
+##  Technical notes
+
 -   If any column names are duplicated when the new column is appended to the dataset, a numeric suffix is added to the name of the new column.  
 
 - The clusters created by the model are 0-based numeric labels. These labels cannot be edited in Azure Machine Learning Studio.
 
-##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+## Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Trained model|[ICluster interface](icluster-interface.md)|Trained clustering model|  
 |Dataset|[Data Table](data-table.md)|Input data source|  
   
-##  <a name="parameters"></a> Module parameters  
-  
+## Module parameters  
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Column Set|Any|ColumnSelection||Select the columns from the input dataset to map to the clustering model.|  
 |Check for Append or Uncheck for Result Only|Any|Boolean|true|Deselect this option if you want to output only the results (cluster assignments).<br /><br /> By default, the column containing the clustering results is appended to the columns of the input dataset .|  
   
-##  <a name="Outputs"></a> Outputs  
-  
+## Outputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|A dataset containing either the results of clustering only, or the input dataset with the assignments column appended|  
   
-##  <a name="exceptions"></a> Exceptions
+## Exceptions
 
 |Exception|Description|  
 |---------------|-----------------|  
@@ -116,7 +117,8 @@ For a list of errors specific to Studio modules, see [Machine Learning Error cod
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 
-## See also  
+## See also
+ 
  [K-Means Clustering](k-means-clustering.md)   
  [Score Model](score-model.md)   
  [Score](machine-learning-score.md)   

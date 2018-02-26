@@ -157,15 +157,14 @@ For examples of how feature hashing is used for text analytics, see the [Azure A
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
-
-In addition to using feature hashing, you might want to use other methods to extract features from text. For example:
-
-- Use the **Preprocess Text** module to remove artifacts such as spelling errors, or to simplify text preparatory to hashing.
-- Use **Extract Key Phrases** to use natural language processing to extract phrases.
-- Use **Named Entity Recognition** to identify important entities.
-
-Azure Machine Learning Studio provides a [Text Classification template](http://go.microsoft.com/fwlink/?LinkId=525957) that guides you through using the **Feature Hashing** module for feature extraction.
+> [!TIP]
+> In addition to using feature hashing, you might want to use other methods to extract features from text. For example:
+> 
+> - Use the **Preprocess Text** module to remove artifacts such as spelling errors, or to simplify text preparatory to hashing.
+> - Use **Extract Key Phrases** to use natural language processing to extract phrases.
+> - Use **Named Entity Recognition** to identify important entities.
+> 
+> Azure Machine Learning Studio provides a [Text Classification template](http://go.microsoft.com/fwlink/?LinkId=525957) that guides you through using the **Feature Hashing** module for feature extraction.
 
 ### Implementation details
 
@@ -177,13 +176,13 @@ Each hashing feature represents one or more n-gram text features (unigrams or in
 
 For many problems, the default hash table (bitsize = 10) is more than adequate; however, depending on the size of the n-grams vocabulary in the training text, more space might be needed to avoid collisions. We recommend that you try using a different number of bits for the **Hashing bitsize** parameter, and evaluate the performance of the machine learning solution.
 
-##  <a name="ExpectedInputs"></a> Expected inputs
+##  Expected inputs
 
 |Name|Type|Description|
 |----------|----------|-----------------|
 |Dataset|[Data Table](data-table.md)|Input dataset|
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|
 |----------|-----------|----------|-------------|-----------------|
@@ -191,13 +190,13 @@ For many problems, the default hash table (bitsize = 10) is more than adequate; 
 |Hashing bitsize|[1;31]|Integer|10|Type the number of bits to use when hashing the selected columns|
 |N-grams|[0;10]|Integer|2|Specify the number of N-grams generated during hashing. By default, both unigrams and bigrams are extracted|
 
-##  <a name="Outputs"></a> Outputs
+##  Outputs
 
 |Name|Type|Description|
 |----------|----------|-----------------|
 |Transformed dataset|[Data Table](data-table.md)|Output dataset with hashed columns|
 
-##  <a name="exceptions"></a> Exceptions
+##  Exceptions
 
 |Exception|Description|
 |---------------|-----------------|

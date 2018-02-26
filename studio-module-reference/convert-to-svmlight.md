@@ -91,7 +91,7 @@ There are no examples in the [Azure AI Gallery](https://gallery.cortanaintellige
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-### Tips
+### Usage tips
 
 The executables provided in the SVM-Light framework require both an *example file* and a *model file*. However, this module creates only the example file. You must create the model file separately by using the SVMLight libraries.  
   
@@ -141,13 +141,13 @@ For example, compare these lines of input:
 <code>1 1:2 2:50 3:12500 4:98</code>   
 <code>1 1:0 2:13 3:3250 4:28</code>  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
+##  Expected inputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  

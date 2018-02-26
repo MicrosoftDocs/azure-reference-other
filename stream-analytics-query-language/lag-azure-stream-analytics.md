@@ -18,7 +18,7 @@ ms.date: 12/03/2017
 ms.author: sngun
 ---
 # LAG (Azure Stream Analytics)
-The LAG analytic operator allows one to look up the “previous” event in an event stream, within certain constraints. It is very useful for computing the rate of growth of a variable, detecting when a variable crosses a threshold, or when a condition starts or stops being true. 
+The LAG analytic operator allows one to look up a “previous” event in an event stream, within certain constraints. It is very useful for computing the rate of growth of a variable, detecting when a variable crosses a threshold, or when a condition starts or stops being true. 
   
 In Stream Analytics, the scope of LAG (that is, how far back in history from the current event it needs to look) is always limited to a finite time interval, using the LIMIT DURATION clause. LAG can optionally be limited to only consider events that match the current event on a certain property or condition using the PARTITION BY and WHEN clauses. LAG is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
   
@@ -45,7 +45,7 @@ scalar_expression cannot contain other analytic functions or external functions.
   
  **offset**  
   
- The number of events back from the current event from which to obtain a value. If not specified, the default is 1. offset must be an integer greater than or equal to zero. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.  
+ The number of events back from the current event from which to obtain a value. If not specified, the default is 1, which means it returns the previous event. Offset must be an integer greater than or equal to 1. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.  
   
  **default**  
   

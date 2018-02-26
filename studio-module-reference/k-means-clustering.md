@@ -33,7 +33,7 @@ manager: "cgronlund"
 > [!TIP]
 > If your training data has labels, consider using one of the supervised [classification](machine-learning-initialize-model-classification.md) methods provided in Azure Machine Learning. For example, you might compare the results of clustering to the results when using one of the multiclass decision tree algorithms. 
   
-##  <a name="k-means"></a> Understanding k-means clustering
+##  Understanding k-means clustering
  
 In general, clustering uses iterative techniques to group cases in a dataset into clusters that contain similar characteristics. These groupings are useful for exploring data, identifying anomalies in the data, and eventually for making predictions. Clustering models can also help you identify relationships in a dataset that you might not logically derive by browsing or simple observation. For these reasons, clustering is often used in the early phases of machine learning tasks, to explore the data and discover unexpected correlations.  
   
@@ -212,7 +212,7 @@ In general, with clustering models, it is possible that any given configuration 
 > [!IMPORTANT]
 > We recommend that you always experiment with the parameters, create multiple models, and compare the resulting models. 
   
-##  <a name="Examples"></a> Examples
+##  Examples
 
 For examples of how K-means clustering is used in Azure Machine Learning, see these experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
@@ -242,7 +242,7 @@ Given a specific number of clusters (*K*) to find for a set of *D*-dimensional d
 > -   If you select the **Parameter Range** option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values.
  
       
-##  <a name="parameters"></a> Module parameters  
+##  Module parameters  
   
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -251,13 +251,13 @@ Given a specific number of clusters (*K*) to find for a set of *D*-dimensional d
 |Initialization|List|Centroid initialization method|K-Means++|Initialization algorithm|  
 |Iterations|>=1|Integer|100|Number of iterations|  
   
-##  <a name="Outputs"></a> Outputs  
+##  Outputs  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Untrained model|[ICluster interface](icluster-interface.md)|Untrained K-Means clustering model|  
   
-##  <a name="exceptions"></a> Exceptions  
+##  Exceptions  
 
 For a list of all exceptions, see [Machine Learning Module Error Codes](machine-learning-module-error-codes.md).  
   

@@ -15,10 +15,11 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Apply SQL Transformation
+
 *Runs a SQLite query on input datasets to transform the data*  
-  
- Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
-  
+
+Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
 ## Module overview  
 
 This article describes how to use the **Apply SQL Transformation** module in Azure Machine Learning Studio, to specify a SQL query on an input dataset or datasets. 
@@ -152,7 +153,7 @@ GROUP BY t2.placeid;
 
 ### Aggregate functions
 
-This section provides basic examples of some common SQL aggregate funcitons, using SQLite.
+This section provides basic examples of some common SQL aggregate functions, using SQLite.
 
 Aggregate functions currently supported are: `AVG`, `COUNT`, `MAX`, `MIN`, `SUM`, `TOTAL`.  
 
@@ -245,28 +246,28 @@ Although SQLite supports much of the ANSI SQL standard, it does not include many
 
 In addition to the list of non-supported functions provided on the official SQLite site, the following wiki provides a list of other unsupported features: [SQLite - Unsupported SQL](http://www2.sqlite.org/cvstrac/wiki?p=UnsupportedSql)  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+## Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Table1|[Data Table](data-table.md)|Input dataset1|  
 |*Table2*|[Data Table](data-table.md)|Input dataset2|  
 |*Table3*|[Data Table](data-table.md)|Input dataset3|  
   
-##  <a name="parameters"></a> Module parameter  
-  
+## Module parameters  
+
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |SQL Query Script|any|StreamReader||SQL query statement|  
   
-##  <a name="Outputs"></a> Output  
+## Outputs
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
   
-##  <a name="exceptions"></a> Exceptions  
-   
+## Exceptions  
+
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0001](errors/error-0001.md)|An exception occurs if one or more specified columns of the dataset couldn't be found.|  
@@ -276,7 +277,8 @@ In addition to the list of non-supported functions provided on the official SQLi
 For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
-## See also  
+## See also
+
  [Manipulation](data-transformation-manipulation.md)   
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)

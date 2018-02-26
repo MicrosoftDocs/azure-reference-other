@@ -15,17 +15,18 @@ ms.author: "jeannt"
 manager: "cgronlund"
 ---
 # Apply Transformation
+
 *Applies a well-specified data transformation to a dataset*  
-  
- Category: [Machine Learning / Score](machine-learning-score.md)  
-  
+
+Category: [Machine Learning / Score](machine-learning-score.md)  
+
 ## Module overview  
 
-This article describes how to use the [Apply Transformation](apply-transformation.md) module in Azure Machine Learning, to modify an input dataset based on a previously computed transformation.  
+This article describes how to use the [Apply Transformation](apply-transformation.md) module in Azure Machine Learning Studio, to modify an input dataset based on a previously computed transformation.  
   
 For example, if you used z-scores to normalize your training data by using the [Normalize Data](normalize-data.md) module, you would want to use the z-score value that was computed for training during the scoring phase as well. In Azure Machine Learning Studio, you can do this easily by saving the normalization method as a transform, and then using [Apply Transformation](apply-transformation.md) to apply the z-score to the input data before scoring.
   
- Azure Machine Learning Studio provides support for creating and then applying many different kinds of custom transformations. For example, you might want to save and then re-use transformations that do the following:  
+Azure Machine Learning Studio provides support for creating and then applying many different kinds of custom transformations. For example, you might want to save and then re-use transformations that do the following:  
   
 - Remove or replace missing values, using [Clean Missing Data](clean-missing-data.md)  
   
@@ -44,7 +45,7 @@ For example, if you used z-scores to normalize your training data by using the [
      Previously saved transformations can be found in the **Transforms** group in the left navigation pane.  
   
     > [!TIP]
-    >  If you design a transformation for an experiment but do not explicitly save it, the transformation is available in the workspace as long as your session is open. If you close the session but do not save the transformation, you can re-run the experiment to generate the [ITransform interface](itransform-interface.md) object.  
+    > If you design a transformation for an experiment but do not explicitly save it, the transformation is available in the workspace as long as your session is open. If you close the session but do not save the transformation, you can re-run the experiment to generate the [ITransform interface](itransform-interface.md) object.  
   
 3. Connect the dataset that you want to transform. The dataset should have exactly the same schema (number of columns, column names, data types) as the dataset for which the transformation was first designed.  
   
@@ -56,13 +57,13 @@ For example, if you used z-scores to normalize your training data by using the [
 
 To see how this module is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Online Fraud Detection](https://gallery.cortanaintelligence.com/Experiment/8e9fe4e03b8b4c65b9ca947c72b8e463) sample demonstrates how to use **Apply Transformation** with [Clean Missing Data](clean-missing-data.md), to ensure that missing values are handled the same in all datasets.  
+- [Online Fraud Detection](https://gallery.cortanaintelligence.com/Experiment/8e9fe4e03b8b4c65b9ca947c72b8e463): This sample demonstrates how to use **Apply Transformation** with [Clean Missing Data](clean-missing-data.md), to ensure that missing values are handled the same in all datasets.  
+
+- [Predictive Maintenance](https://gallery.cortanaintelligence.com/Experiment/df7c518dcba7407fb855377339d6589f): Demonstrates how to use **Apply Transformation** with [Normalize Data](normalize-data.md).  
   
-- The [Predictive Maintenance](https://gallery.cortanaintelligence.com/Experiment/df7c518dcba7407fb855377339d6589f) sample demonstrates how to use **Apply Transformation** with [Normalize Data](normalize-data.md).  
-  
-- The [Learning with Counts](https://gallery.cortanaintelligence.com/Experiment/47deb75fc7bb428194e9d0d5713350c8) sample demonstrates how to use **Apply Transformation** to reuse a count table.  
-  
-##  <a name="Notes"></a> Technical notes  
+- [Learning with Counts](https://gallery.cortanaintelligence.com/Experiment/47deb75fc7bb428194e9d0d5713350c8): Uses **Apply Transformation** to reuse a count table.  
+
+##  Technical notes  
 
 The **Apply Transformation** module can take as input the output of any module that creates an [ITransform interface](itransform-interface.md). These modules include:  
   
@@ -73,24 +74,24 @@ The **Apply Transformation** module can take as input the output of any module t
 - [Group Data into Bins](group-data-into-bins.md)  
   
 - [Learning with Counts](data-transformation-learning-with-counts.md)  
-  
+
 > [!TIP]
 > You can also save and re-use filters designed for digital signal processing. However, filters use the [IFilter interface](ifilter-interface.md) interface, rather than [ITransform interface](itransform-interface.md).  
   
-##  <a name="ExpectedInputs"></a> Expected inputs  
-  
+## Expected inputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Transformation|[ITransform interface](itransform-interface.md)|A unary data transformation|  
 |Dataset|[Data Table](data-table.md)|Dataset to be transformed|  
   
-##  <a name="Outputs"></a> Outputs  
-  
+## Outputs  
+
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Transformed dataset|[Data Table](data-table.md)|Transformed dataset|  
   
-##  <a name="exceptions"></a> Exceptions  
+## Exceptions  
 
 |Exception|Description|  
 |---------------|-----------------|  

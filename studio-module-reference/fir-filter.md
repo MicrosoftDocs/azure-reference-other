@@ -29,11 +29,11 @@ This article describes how to use the **FIR Filter** module in Azure Machine Lea
 After you have defined a digital signal processing filter, you can apply the filter to data by connecting a dataset and the filter to the [Apply Filter](apply-filter.md) module. You can also save the filter for re-use with similar datasets.
 
 > [!TIP]
->  Need to filter data from a dataset or remove missing values? Use these modules instead:  
->   
->  -   [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
-> -   [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-> -   [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
+> Need to filter data from a dataset or remove missing values? Use these modules instead:  
+> 
+> - [Clean Missing Data](clean-missing-data.md): Use this module to remove missing values or replace missing values with placeholders.  
+> - [Partition and Sample](partition-and-sample.md): Use this module to divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
+> - [Clip Values](clip-values.md): Use this module to set a range and keep only the values within that range.
 
 ## How to configure FIR Filter
 
@@ -100,7 +100,7 @@ For examples of how filters are used in machine learning, see this experiment in
   
 -  [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
 
-##  <a name="bkmk_Notes"></a> Technical notes
+## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
@@ -120,7 +120,7 @@ The windowing function is applied to the ideal filter response to force the freq
 
 The number of coefficients returned by the **FIR Filter** module is equal to the filter order plus one. The coefficient values are determined by filter parameters and by the windowing method, and are symmetric to guarantee a linear phase response    
 
-###  <a name="CoefficientsScaling"></a> Scaling of coefficients  
+###  Scaling of coefficients  
 
 The **FIR Filter** module returns filter coefficients, or tap weights, for the created filter.  
   
@@ -142,7 +142,7 @@ The following table compares selectivity with stop band attenuation for a FIR fi
 |Hamming|0.23n|53 dB|  
 |Blackman|0.2n|75 dB|  
 
-##  <a name="parameters"></a> Module parameters
+##  Module parameters
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
@@ -153,13 +153,13 @@ The following table compares selectivity with stop band attenuation for a FIR fi
 |High cutoff|[double.Epsilon;.9999999]|Float|0.7|Set the high cutoff frequency|  
 |Scale|Any|Boolean|True|If true, filter coefficients will be normalized|  
   
-##  <a name="Outputs"></a> Output  
+##  Output  
   
 |Name|Type|Description|  
 |----------|----------|-----------------|  
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
   
-##  <a name="exceptions"></a> Exceptions
+##  Exceptions
   
 |Exception|Description|  
 |---------------|-----------------|  

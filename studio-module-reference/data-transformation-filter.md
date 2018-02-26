@@ -56,7 +56,7 @@ The following type of filters are supported in Azure Machine Learning Studio:
   
 -   **User-defined or custom filters**. If you already know the transformations that should be applied to a data series, you can create a user-defined filter and provide the numeric coefficients that are applied to transform the data series. A custom filter can emulate a FIR or IIR filter but you have more control over the values to apply at each point in the series.  
   
-###  <a name="subsection3"></a> Filter terminology  
+###  Filter terminology  
 
  The following are some simple definitions of terms that are used in the parameters and properties of filters.  
   
@@ -79,20 +79,19 @@ The following type of filters are supported in Azure Machine Learning Studio:
 > 
 > [An Introduction to Digital Signal Processing](http://www.hamradioschool.com/an-introduction-to-digital-signal-processing-dsp/)   
   
-##  <a name="modules"></a> List of modules  
+## List of modules  
 
-The following tables lists the modules in the **Filter** category:  
-  
-|Module|Description|  
-|------------|-----------------|  
-|[Apply Filter](apply-filter.md)|Applies a filter to specified columns of a dataset|  
-|[FIR Filter](fir-filter.md)|Creates a finite impulse response filter for signal processing|  
-|[IIR Filter](iir-filter.md)|Creates an infinite impulse response filter for signal processing|  
-|[Median Filter](median-filter.md)|Creates a median filter used to smooth data for trend analysis|  
-|[Moving Average Filter](moving-average-filter.md)|Creates a moving average filter that smooths data for trend analysis|  
-|[Threshold Filter](threshold-filter.md)|Creates a threshold filter that constrains values|  
-|[User-Defined Filter](user-defined-filter.md)|Creates a custom finite or infinite impulse response filter|  
+The following modules are included in the **Filter** category:  
 
-## See also  
++ [Apply Filter](apply-filter.md): Applies a filter to specified columns of a dataset
++ [FIR Filter](fir-filter.md): Creates a finite impulse response filter for signal processing  
++ [IIR Filter](iir-filter.md): Creates an infinite impulse response filter for signal processing  
++ [Median Filter](median-filter.md): Creates a median filter used to smooth data for trend analysis
++ [Moving Average Filter](moving-average-filter.md): Creates a moving average filter that smooths data for trend analysis  
++ [Threshold Filter](threshold-filter.md): Creates a threshold filter that constrains values
++ [User-Defined Filter](user-defined-filter.md): Creates a custom finite or infinite impulse response filter
+
+## See also
+
  [Data Transformation](data-transformation.md)   
  [A-Z Module List](a-z-module-list.md)
