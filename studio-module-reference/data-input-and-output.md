@@ -19,16 +19,16 @@ manager: "cgronlund"
 ---
 # Data Input and Output
 
-This article lists the modules that are available in Azure Machine Learning Studio for importing and exporting data and models.
+This article lists the modules that you can use for importing and exporting data and models in Azure Machine Learning Studio.
 
-In Machine Learning Studio, you can also directly upload and download datasets from and to local files on your computer or network. For more information, see [Upload existing data into an Azure Machine Learning experiment](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-2-upload-data).
+In addition to using modules, you can directly upload and download datasets from local files on your computer or network. For more information, see [Upload existing data into an Azure Machine Learning experiment](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-2-upload-data).
 
-Modules you can use to import and export data and models:
+Modules that you can use to import and export data and models:
  
 - [Import Data](import-data.md): Get data from sources in the cloud, such as Azure SQL Database, Azure SQL Data Warehouse, Azure Storage, and Azure Cosmos DB. You can also import data that's provided as a public web URL, get data from Hadoop by using a Hive query, or query an on-premises SQL server.
  - [Import Images](import-images.md): Load a collection of images from Azure Blob storage to use in image classification tasks.
 - [Unpack Zipped Datasets](unpack-zipped-datasets.md): Extract the data from zipped files that you uploaded to Machine Learning. You can use the datasets in experiments.
-- [Enter Data](enter-data-manually.md): Create small datasets by typing in the Studio UI. This can be handy for creating small test datasets.
+- [Enter Data](enter-data-manually.md): Create small datasets by typing in the Machine Learning Studio UI. This can be handy for creating small test datasets.
  - [Export Data](export-data.md): Save your results or intermediate data to Azure Table storage, Blob storage, a SQL database, or a Hive query.
 - [Load Trained Model](load-trained-model.md): Get a trained model from a URL or Blob storage, and then use it in an experiment.
     
@@ -47,11 +47,11 @@ The following articles introduce common data scenarios in machine learning:
   
   Learn how to manage data for machine learning in the cloud. The information in this article is based on CRISP-DM, an industry standard. The article provides end-to-end walkthroughs that demonstrate the integration of machine learning with cloud data solutions such as Azure HDInsight and SQL Database.
   
--   [Import your training data into Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
+-   [Import your training data into Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
   
   This article describes how to get your data into Azure, and then create an experiment.
   
--   [Data preparation for machine learning by using SSIS](http://blogs.msdn.com/b/ssis/archive/2015/06/25/data-preparation-for-azure-machine-learning-using-ssis.aspx)
+-   [Data preparation for machine learning by using SQL Server Integration Services](http://blogs.msdn.com/b/ssis/archive/2015/06/25/data-preparation-for-azure-machine-learning-using-ssis.aspx)
   
   Learn how to use ETL tools to integrate your data warehouse with Machine Learning.
   

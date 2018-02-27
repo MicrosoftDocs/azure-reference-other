@@ -19,13 +19,13 @@ manager: "cgronlund"
 
 This article describes how you can use the filter modules in Azure Machine Learning Studio to transform digital data.  The modules in this group of tools for Machine Learning Studio are based on filters that were developed for digital signal processing technology.
 
-Filters typically are applied to data during the data processing or preprocessing stages. Filters enhance the clarity of the signal used for machine learning. For example, you can use the filter modules in Machine Learning Studio for these processing tasks:
+Filters typically are applied to data in the data processing stage or the preprocessing stage. Filters enhance the clarity of the signal that's used for machine learning. For example, you can use the filter modules in Machine Learning Studio for these processing tasks:
 
 -   Clean up waveforms that are used for speech recognition.
 -   Detect trends or remove seasonal effects in noisy sales or economic data.
 -   Analyze patterns or artifacts in telemetry signals.
 
-These modules provide easy configuration of filters by using well researched algorithms to mathematically transform waveform data. You can also create a custom filter if you have already determined the correct coefficients to apply to your data.
+These modules provide easy configuration of filters by using well-researched algorithms to mathematically transform waveform data. You can also create a custom filter if you have already determined the correct coefficients to apply to your data.
 
 ## Related tasks
 
@@ -43,7 +43,7 @@ The ideal filter would eliminate all noise and have uniform sensitivity for the 
 
 In general, filtering is based on the principles of *waveform analysis*. When you design a filter, you look for ways to suppress or amplify parts of the signal, to expose underlying trends, to reduce noise and interference, or to identify data values that otherwise might not be perceived.
 
-Various techniques are applied to decompose individual trends or waveform components that create actual data values. The series of values (whether it's an econometric series or the composite frequencies of audio signals) can be analyzed by using trigonometric functions to identify and isolate individual waveforms. Filters can then be applied to these waveforms to eliminate noise, amplify some waves, or remove targeted components.
+Various techniques are applied to decompose individual trends or waveform components that create actual data values. The series of values can be analyzed by using trigonometric functions to identify and isolate individual waveforms. (This is true whether it's an econometric series or the composite frequencies of audio signals.) Filters can then be applied to these waveforms to eliminate noise, amplify some waves, or remove targeted components.
 
 When filtering is applied to a noisy series to isolate different components, you can specify which frequencies to remove or strengthen by specifying the band of frequencies to work with.
 

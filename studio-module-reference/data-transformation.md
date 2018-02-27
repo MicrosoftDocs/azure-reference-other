@@ -27,13 +27,9 @@ This article lists the modules that are provided in Azure Machine Learning Studi
 Modules for data transformation are grouped into the following task-based categories:
    
 -   [Creating filters for digital signal processing](data-transformation-filter.md): Digital signal filters can be applied to numeric data to support machine learning tasks such as image recognition, voice recognition, and waveform analysis.
-  
 -   [Generating and using count-based features](data-transformation-learning-with-counts.md): Count-based featurization modules help you develop compact features to use in machine learning.
-  
 -   [General data manipulation and preparation](data-transformation-manipulation.md): Merging datasets, cleaning missing values, grouping and summarizing data, changing column names and data types, or indicating which column is a label or a feature.
-  
 -   [Sampling and splitting datasets](data-transformation-sample-and-split.md): Divide your data into training and test sets, split datasets by percentage or by a filter condition, or perform sampling.
-  
 -   [Scaling and reducing data](data-transformation-scale-and-reduce.md): Prepare numerical data for analysis by applying normalization or by scaling. Bin data into groups, remove or replace outliers, or perform principal component analysis (PCA).
   
 ##  List of modules
