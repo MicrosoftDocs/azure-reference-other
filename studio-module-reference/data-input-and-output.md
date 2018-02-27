@@ -23,14 +23,14 @@ This article lists the modules that you can use for importing and exporting data
 
 In addition to using modules, you can directly upload and download datasets from local files on your computer or network. For more information, see [Upload existing data into an Azure Machine Learning experiment](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-2-upload-data).
 
-Here are some of the sources you can use to import and export data and models:
+Here are some of the sources you can use to import and export data and models in Machine Learning Studio:
  
-- [Import Data](import-data.md): Get data from sources in the cloud, such as Azure SQL Database, Azure SQL Data Warehouse, Azure Storage, and Azure Cosmos DB. You can also import data that's provided as a public web URL, get data from Hadoop by using a Hive query, or query an on-premises SQL server.
-- [Import Images](import-images.md): Load a collection of images from Azure Blob storage to use in image classification tasks.
-- [Unpack Zipped Datasets](unpack-zipped-datasets.md): Extract the data from zipped files that you uploaded to Machine Learning. You can use the datasets in experiments.
-- [Enter Data](enter-data-manually.md): Create small datasets by typing in the Machine Learning Studio UI. This can be handy for creating small test datasets.
-- [Export Data](export-data.md): Save your results or intermediate data to Azure Table storage, Blob storage, a SQL database, or a Hive query.
-- [Load Trained Model](load-trained-model.md): Get a trained model from a URL or Blob storage, and then use it in an experiment.
+- Get data from sources in the cloud, such as Azure SQL Database, Azure SQL Data Warehouse, Azure Storage, and Azure Cosmos DB. You can also import data that's provided as a public web URL, get data from Hadoop by using a Hive query, or query an on-premises SQL server.
+- Load a collection of images from Azure Blob storage to use in image classification tasks.
+- Extract the data from zipped files that you uploaded to Machine Learning. You can use the datasets in experiments.
+- Create small datasets by typing in the Machine Learning Studio UI. This can be handy for creating small test datasets.
+- Save your results or intermediate data to Azure Table storage, Blob storage, a SQL database, or a Hive query.
+- Get a trained model from a URL or Blob storage, and then use it in an experiment.
     
 > [!NOTE]
 > The modules in this group only move data to or from Machine Learning Studio. You can't use the modules to filter, cast, or transform the data during the import or export process.
