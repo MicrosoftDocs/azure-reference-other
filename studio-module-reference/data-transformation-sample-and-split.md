@@ -49,7 +49,7 @@ Suppose you imported a very large dataset from a CSV file. The dataset contains 
 
 The **Split Data** module supports both *regular expressions*, for text data, and *relative expressions*, for numeric data.
 
-The **Split Data** module also provides sophisticated features that you can use to divide specialized datasets. Use the features to create recommendation models, and to generate predictions.
+The **Split Data** module also provides sophisticated functionality that you can use to divide specialized datasets. Use the functionality to create recommendation models, and to generate predictions.
 
 ### Uses of the Partition and Sample module
  

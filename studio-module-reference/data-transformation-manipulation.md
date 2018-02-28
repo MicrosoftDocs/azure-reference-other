@@ -48,20 +48,18 @@ For examples of how to work with complex data in machine learning experiments, s
 
 The **Data Transformation - Manipulation** category includes the following modules:
   
-|Module|Description|
-|------------|-----------------|
-|[Add Columns](add-columns.md)|Adds a set of columns from one dataset to another.|
-|[Add Rows](add-rows.md)|Appends a set of rows from an input dataset to the end of another dataset.|
-|[Apply SQL Transformation](apply-sql-transformation.md)|Runs a SQLite query on input datasets to transform the data.|
-|[Clean Missing Data](clean-missing-data.md)|Specifies how to handle values that are missing from a dataset.<br /><br /> This module replaces [Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md), which has been deprecated.|
-|[Convert to Indicator Values](convert-to-indicator-values.md)|Converts categorical values in columns to indicator values.|
-|[Edit Metadata](edit-metadata.md)|Edits metadata that's associated with columns in a dataset.|
-|[Group Categorical Values](group-categorical-values.md)|Groups data from multiple categories into a new category.|
-|[Join Data](join-data.md)|Joins two datasets.|
-|[Remove Duplicate Rows](remove-duplicate-rows.md)|Removes duplicate rows from a dataset.|
-|[Select Columns in Dataset](select-columns-in-dataset.md)|Selects columns to include in a dataset or exclude from a dataset in an operation.|
-|[Select Columns Transform](select-columns-transform.md)|Creates a transformation that selects the same subset of columns as in a specified dataset.|
-|[SMOTE](smote.md)|Increases the number of low-incidence examples in a dataset by using synthetic minority oversampling.|
+- [Add Columns](add-columns.md): Adds a set of columns from one dataset to another.
+- [Add Rows](add-rows.md): Appends a set of rows from an input dataset to the end of another dataset.
+- [Apply SQL Transformation](apply-sql-transformation.md): Runs a SQLite query on input datasets to transform the data.
+- [Clean Missing Data](clean-missing-data.md): Specifies how to handle values that are missing from a dataset. This module replaces [Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md), which has been deprecated.
+- [Convert to Indicator Values](convert-to-indicator-values.md): Converts categorical values in columns to indicator values.
+- [Edit Metadata](edit-metadata.md): Edits metadata that's associated with columns in a dataset.
+- [Group Categorical Values](group-categorical-values.md): Groups data from multiple categories into a new category.
+- [Join Data](join-data.md): Joins two datasets.
+- [Remove Duplicate Rows](remove-duplicate-rows.md): Removes duplicate rows from a dataset.
+- [Select Columns in Dataset](select-columns-in-dataset.md): Selects columns to include in a dataset or exclude from a dataset in an operation.
+- [Select Columns Transform](select-columns-transform.md): Creates a transformation that selects the same subset of columns as in a specified dataset.
+- [SMOTE](smote.md): Increases the number of low-incidence examples in a dataset by using synthetic minority oversampling.
   
 ## See also
 
