@@ -32,11 +32,11 @@ The modules in this category are intended to support core data management tasks 
 -   Modify column headings, change column data types, or flag columns as features or labels.
 -   Check for missing values, and then replace them with appropriate values.
   
-### Related tasks
+## Related tasks
 
-- Perform sampling or divide a dataset into training and testing sets. Use the [Data Transformation - Sample and Split](data-transformation-sample-and-split.md) modules.
-- Scale numbers, normalize data, or put numerical values into bins. Use the [Data Transformation - Scale and Reduce](data-transformation-scale-and-reduce.md) modules.
-- Perform calculations on numeric data fields or to generate commonly used statistics. Use the tools in [Statistical Functions](statistical-functions.md).
+- Perform sampling or divide a dataset into training and testing sets: Use the [Data Transformation - Sample and Split](data-transformation-sample-and-split.md) modules.
+- Scale numbers, normalize data, or put numerical values into bins: Use the [Data Transformation - Scale and Reduce](data-transformation-scale-and-reduce.md) modules.
+- Perform calculations on numeric data fields or to generate commonly used statistics: Use the tools in [Statistical Functions](statistical-functions.md).
   
 ## Examples
 

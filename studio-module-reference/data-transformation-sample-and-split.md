@@ -72,11 +72,11 @@ If you don't need to keep all the data, use the [Partition and Sample](partition
 
 ## Related tasks
 
-- Increase the number of rare cases in a sample, or rebalance the cases for a target value. Use the [SMOTE](smote.md) module.
-- Perform dimensionality reduction by finding the combination of features that best represents the data space. Use the [Principal Component Analysis](principal-component-analysis.md) module.
-- Create compact features based on an analysis of features and counts. Use the [Learning with Counts](data-transformation-learning-with-counts.md) module.
-- Create a view or projection by using only the specified columns; remove or hide columns in a dataset. Use the [Select Columns in Dataset](select-columns-in-dataset.md) and [Apply SQL Transformation](apply-sql-transformation.md) modules.
-- Apply more complex data filters, groupings, or transformations. Use the [Execute R Script](execute-r-script.md) and [Apply SQL Transformation](apply-sql-transformation.md) modules.
+- Increase the number of rare cases in a sample, or rebalance the cases for a target value: Use the [SMOTE](smote.md) module.
+- Perform dimensionality reduction by finding the combination of features that best represents the data space: Use the [Principal Component Analysis](principal-component-analysis.md) module.
+- Create compact features based on an analysis of features and counts: Use the [Learning with Counts](data-transformation-learning-with-counts.md) module.
+- Create a view or projection by using only the specified columns; remove or hide columns in a dataset: Use the [Select Columns in Dataset](select-columns-in-dataset.md) and [Apply SQL Transformation](apply-sql-transformation.md) modules.
+- Apply more complex data filters, groupings, or transformations: Use the [Execute R Script](execute-r-script.md) and [Apply SQL Transformation](apply-sql-transformation.md) modules.
 
 ## List of modules
 

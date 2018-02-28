@@ -30,12 +30,12 @@ Tasks such as normalizing, binning, or redistributing numerical variables are an
 
 ## Related tasks
 
-- Select relevant and useful features to use in building the model. Use the [Feature Selection](feature-selection-modules.md) or [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md) modules.
-- Select features based on counts of the values. Use the [Learning with Counts](data-transformation-learning-with-counts.md) module.
-- Remove or replace missing values. Use the [Clean Missing Data](clean-missing-data.md) module.
-- Replace categorical values with numerical values that are derived from calculations. Use the [Replace Discrete Values](replace-discrete-values.md) module.
-- Compute a probability distribution for discrete or numerical columns. Use the [Evaluate Probability Function](evaluate-probability-function.md) module.
-- Filter and transform digital signals and waveforms. Use the [Filter](data-transformation-filter.md) module.
+- Select relevant and useful features to use in building the model: Use the [Feature Selection](feature-selection-modules.md) or [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md) modules.
+- Select features based on counts of the values: Use the [Learning with Counts](data-transformation-learning-with-counts.md) module.
+- Remove or replace missing values: Use the [Clean Missing Data](clean-missing-data.md) module.
+- Replace categorical values with numerical values that are derived from calculations: Use the [Replace Discrete Values](replace-discrete-values.md) module.
+- Compute a probability distribution for discrete or numerical columns: Use the [Evaluate Probability Function](evaluate-probability-function.md) module.
+- Filter and transform digital signals and waveforms: Use the [Filter](data-transformation-filter.md) module.
 
 ## List of modules
 
