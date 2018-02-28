@@ -1,6 +1,6 @@
 ---
 title: "Data Transformation - Learning with Counts | Microsoft Docs"
-description: "Learn about the modules in Azure Machine Learning Stuio that support count-based featurization."
+description: "Learn about the Azure Machine Learning Studio modules that support count-based featurization."
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
 ms.date: 01/16/2018

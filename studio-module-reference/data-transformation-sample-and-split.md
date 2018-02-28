@@ -70,13 +70,13 @@ For example, suppose you need to get just 10 percent of your data, while ensurin
 
 If you don't need to keep all the data, use the [Partition and Sample](partition-and-sample.md) module. The remaining data is still present in the workspace, but it doesn't need to be processed further as part of the experiment.
 
-## Related tasks and modules
+## Related tasks
 
-- [SMOTE](smote.md): Increase the number of rare cases in a sample, or rebalance the cases for a target value.
-- [Principal Component Analysis](principal-component-analysis.md): Perform dimensionality reduction by finding the combination of features that best represents the data space.
-- [Learning with Counts](data-transformation-learning-with-counts.md): Create compact features based on an analysis of features and counts.
-- [Select Columns in Dataset](select-columns-in-dataset.md) and [Apply SQL Transformation](apply-sql-transformation.md): Create a view or projection by using only the specified columns. Remove or hide columns in a dataset.
-- [Execute R Script](execute-r-script.md) and [Apply SQL Transformation](apply-sql-transformation.md): Apply more complex data filters, groupings, or transformations.
+- Increase the number of rare cases in a sample, or rebalance the cases for a target value. Use the [SMOTE](smote.md) module.
+- Perform dimensionality reduction by finding the combination of features that best represents the data space. Use the [Principal Component Analysis](principal-component-analysis.md) module.
+- Create compact features based on an analysis of features and counts. Use the [Learning with Counts](data-transformation-learning-with-counts.md) module.
+- Create a view or projection by using only the specified columns; remove or hide columns in a dataset. Use the [Select Columns in Dataset](select-columns-in-dataset.md) and [Apply SQL Transformation](apply-sql-transformation.md) modules.
+- Apply more complex data filters, groupings, or transformations. Use the [Execute R Script](execute-r-script.md) and [Apply SQL Transformation](apply-sql-transformation.md) modules.
 
 ## List of modules
 

@@ -1,6 +1,6 @@
 ---
 title: "Data Transformation - Scale and Reduce | Microsoft Docs"
-description: "Learn about the modules in Azure Machine Learning Studio that can help you work with numerical data."
+description: "Learn about the Azure Machine Learning Studio modules that can help you work with numerical data."
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/16/2018
@@ -30,14 +30,12 @@ Tasks such as normalizing, binning, or redistributing numerical variables are an
 
 ## Related tasks
 
-In addition to these modules, you might find the following tools useful for transforming numeric data:
-
-- To select relevant and useful features to use in building the model, see [Feature Selection](feature-selection-modules.md) or [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md).
-- To select features based on counts of the values, see [Learning with Counts](data-transformation-learning-with-counts.md).
-- To remove or replace missing values, see [Clean Missing Data](clean-missing-data.md).
-- To replace categorical values with numerical values that are derived from calculations, see [Replace Discrete Values](replace-discrete-values.md).
-- To compute a probability distribution for discrete or numerical columns, see [Evaluate Probability Function](evaluate-probability-function.md).
-- To filter and transform digital signals and waveforms, see [Filter](data-transformation-filter.md).
+- Select relevant and useful features to use in building the model. Use the [Feature Selection](feature-selection-modules.md) or [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md) modules.
+- Select features based on counts of the values. Use the [Learning with Counts](data-transformation-learning-with-counts.md) module.
+- Remove or replace missing values. Use the [Clean Missing Data](clean-missing-data.md) module.
+- Replace categorical values with numerical values that are derived from calculations. Use the [Replace Discrete Values](replace-discrete-values.md) module.
+- Compute a probability distribution for discrete or numerical columns. Use the [Evaluate Probability Function](evaluate-probability-function.md) module.
+- Filter and transform digital signals and waveforms. Use the [Filter](data-transformation-filter.md) module.
 
 ## List of modules
 

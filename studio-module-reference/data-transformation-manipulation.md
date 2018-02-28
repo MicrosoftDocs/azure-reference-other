@@ -34,9 +34,9 @@ The modules in this category are intended to support core data management tasks 
   
 ### Related tasks
 
-- To perform sampling or divide a dataset into training and testing sets, see [Data Transformation - Sample and Split](data-transformation-sample-and-split.md).
-- To scale numbers, normalize data, or put numerical values into bins, use the modules in [Data Transformation - Scale and Reduce](data-transformation-scale-and-reduce.md).
-- To perform calculations on numeric data fields or to generate commonly used statistics, use the tools in [Statistical Functions](statistical-functions.md).
+- Perform sampling or divide a dataset into training and testing sets. Use the [Data Transformation - Sample and Split](data-transformation-sample-and-split.md) modules.
+- Scale numbers, normalize data, or put numerical values into bins. Use the [Data Transformation - Scale and Reduce](data-transformation-scale-and-reduce.md) modules.
+- Perform calculations on numeric data fields or to generate commonly used statistics. Use the tools in [Statistical Functions](statistical-functions.md).
   
 ## Examples
 
