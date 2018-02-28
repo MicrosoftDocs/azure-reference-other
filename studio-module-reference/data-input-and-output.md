@@ -1,8 +1,8 @@
 ---
 title: "Data Input and Output | Microsoft Docs"
-description: "Learn about the modules you can use for importing and exporting data and models in Azure Machine Learning Studio."
+description: "Learn about the modules you can use to import and export data and models in Azure Machine Learning Studio."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: "Learn about the modules that you can use in Azure Machine Learning Studio to import and export data and models."
+ms.custom: ""
 ms.date: 01/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
@@ -66,7 +66,7 @@ The following articles introduce common data scenarios in machine learning:
 -   [Data processing](http://go.microsoft.com/fwlink/?LinkId=525733)
 -   [Download data](http://go.microsoft.com/fwlink/?LinkId=525938)
   
-##  List of modules
+## List of modules
 
 The **Data Input and Output** category includes the following modules:
 
