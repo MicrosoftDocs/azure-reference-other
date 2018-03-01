@@ -19,40 +19,42 @@ manager: "cgronlund"
 
 This article describes the modules in Azure Machine Learning Studio that you can use for feature selection.
 
-Feature selection is an important tool in machine learning. Machine Learning Studio provides multiple methods for performing feature selection. Choose a feature selection method based on the type of data that you have, and the requirements of the statistical technique that is applied.
+Feature selection is an important tool in machine learning. Machine Learning Studio provides multiple methods for performing feature selection. Choose a feature selection method based on the type of data that you have, and the requirements of the statistical technique that's applied.
+
+This article covers:
 
 - [What is feature selection](#bkmk_Introduction)
 - [Feature selection modules in Azure Machine Learning](#bkmk_ModulesDescribed)
 - [How to use feature selection](#bkmk_howto)
 - [Algorithms that include feature selection](#LearnersWithFeatureSelection)
 
-Each feature selection module in Machine Learning Studio uses a dataset as input. Then, it applies well-known statistical methods to the data columns that are provided as input. The output is a set of metrics that can help you identify the columns that have the best information value.
+Each feature selection module in Machine Learning Studio uses a dataset as input. Then, the module applies well-known statistical methods to the data columns that are provided as input. The output is a set of metrics that can help you identify the columns that have the best information value.
 
-## <a name="bkmk_Introduction"></a>Introduction to feature selection
+## <a name="bkmk_Introduction"></a>About feature selection
  
 In machine learning and statistics, *feature selection* is the process of selecting a subset of relevant, useful features to use in building an analytical model. Feature selection helps narrow the field of data to the most valuable inputs. Narrowing the field of data helps reduce noise and improve training performance.
  
-Often, features are created from raw data through a process of feature engineering. For example, a time stamp in itself might not be useful for modeling until the information is transformed into units of days, months, or categories that are relevant to the problem, such as a holiday versus a working day.
+Often, features are created from raw data through a process of feature engineering. For example, a time stamp in itself might not be useful for modeling until the information is transformed into units of days, months, or categories that are relevant to the problem, such as holiday versus working day.
  
-New users of machine learning might be tempted to add in all data that is available. New users might expect that the algorithm will find something interesting by using more data. However, feature selection can usually improve your model, and prevent common problems:
+New users of machine learning might be tempted to include all data that's available. They might expect that the algorithm will find something interesting by using more data. However, feature selection can usually improve your model, and prevent common problems:
 
 - The data contains redundant or irrelevant features, which provide no more information than the currently selected features.
-- The data contains irrelevant features that provide no useful information in any context. Including irrelevant fields not only increases the time for training the data, but also can lead to poor results.
+- The data contains irrelevant features that provide no useful information in any context. Including irrelevant fields not only increases the time required to train the data, but also can lead to poor results.
 - With some algorithms, having duplicate information in the training data can lead to a phenomenon called *multicollinearity*. In multicollinearity, the presence of two highly correlated variables can cause the calculations for other variables to become much less accurate.
  
 > [!TIP]
 > 
 > Some machine learning algorithms in Machine Learning Studio also use feature selection or dimensionality reduction as part of the training process. When you use these learners, you can skip the feature selection process and let the algorithm decide the best inputs.
 
-### <a name="bkmk_howto"></a>How to use feature selection in an experiment
+### <a name="bkmk_howto"></a>Use feature selection in an experiment
 
-Feature selection typically is performed when you are exploring data and developing a new model:
+Feature selection typically is performed when you are exploring data and developing a new model. Keep these tips in mind when you use feature selection:
 
 - When testing, add feature selection to your experiment to generate scores that inform your decision of which columns to use.
 - Remove feature selection from the experiment when you operationalize a model.
 - Run feature selection periodically to ensure that the data and best features haven't changed.
 
-Feature selection is different from *feature engineering*. Feature engineering focuses on creating new features out of existing data.
+Feature selection is different from feature engineering, which focuses on creating new features out of existing data.
 
 ### Resources
 
@@ -65,25 +67,25 @@ The following feature selection modules are provided in Machine Learning Studio.
 
 ### Filter-Based Feature Selection
 
-When you use the [Filter-Based Feature Selection](filter-based-feature-selection.md) module, you can choose from among well-known feature selection methods. It outputs both the feature selection statistics, and the filtered dataset.
+When you use the [Filter-Based Feature Selection](filter-based-feature-selection.md) module, you can choose from among well-known feature selection methods. The module outputs both the feature selection statistics and the filtered dataset.
  
 Your choice of a filter selection method depends in part on what sort of input data you have.
  
 |Method|Supported feature inputs|Supported labels|
 |------------|------------------------------|----------------------|
-|Pearson's correlation|Numeric and logical columns only|A single numeric or logical column.|
-|Mutual information score|All data types|A single column of any data type.|
-|Kendall's correlation coefficient|Numeric and logical columns only|A single numeric or logical column. Columns should have values that can be ranked.|
-|Spearman's correlation coefficient|Numeric and logical columns only|A single numeric or logical column.|
-|Chi-squared statistic|All data types|A single column of any data type.|
-|Fisher score|Numeric and logical columns only|A single numeric or logical column. String columns are assigned a score of 0.|
-|Count based feature selection|All data types|A label column is not required.|
+|Pearson's correlation|Numeric and logical columns only|A single numeric or logical column|
+|Mutual information score|All data types|A single column of any data type|
+|Kendall's correlation coefficient|Numeric and logical columns only|A single numeric or logical column<br /><br />Columns should have values that can be ranked|
+|Spearman's correlation coefficient|Numeric and logical columns only|A single numeric or logical column|
+|Chi-squared statistic|All data types|A single column of any data type|
+|Fisher score|Numeric and logical columns only|A single numeric or logical column<br /><br />String columns are assigned a score of 0|
+|Count based feature selection|All data types|A label column is not required|
 
 ### Fisher Linear Discriminant Analysis
  
 Linear Discriminant Analysis is a supervised learning technique that you can use to classify numerical variables in conjunction with a single categorical target. The method is useful for feature selection because it identifies the combination of features or parameters that best separates the groups.
  
-You can use the [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md) module just to generate a set of scores for review, or you can use the replacement dataset that's generated by the module for training.
+You can use the [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md) module to generate a set of scores for review, or you can use the replacement dataset that's generated by the module for training.
  
 ### Permutation Feature Importance
 
@@ -93,23 +95,21 @@ The scores that the module returns represent the potential change in the accurac
 
 ### <a name="LearnersWithFeatureSelection"></a>Machine learning algorithms that incorporate feature selection
 
-Some machine learning algorithms in Machine Learning Studio optimize feature selection when training, or they provide parameters that help with feature selection. If you're using a method that has its own heuristic for choosing features, it's often better to rely on that heuristic instead of preselecting features.
+Some machine learning algorithms in Machine Learning Studio optimize feature selection during training. They might also provide parameters that help with feature selection. If you're using a method that has its own heuristic for choosing features, it's often better to rely on that heuristic instead of preselecting features.
 
-This section lists these algorithms and the feature selection method that's used internally:
+These algorithms and feature selection methods are used internally:
 
-- Boosted decision tree models for classification and regression
+- **Boosted decision tree models for classification and regression**
 
-  In these modules, a feature summary is created internally. Features that have a weight of 0 aren't used by any tree splits. When you visualize the best trained model, you can look at each of the trees. If a feature is never used in any tree, it's likely a candidate for removal. To optimize selection, parameter sweeping also is recommended.
+  In these modules, a feature summary is created internally. Features that have a weight of 0 aren't used by any tree splits. When you visualize the best trained model, you can look at each of the trees. If a feature is never used in any tree, the feature is likely a candidate for removal. To optimize selection, it's also a good idea to use parameter sweeping.
  
-- Logistic regression models and linear models
+- **Logistic regression models and linear models**
 
-  The modules for multiclass and binary logistic regression support L1 and L2 regularization. Regularization is a way of adding constraints when training to manually specify some aspect of the learned model. Regularization is generally used to avoid overfitting. Machine Learning Studio supports regularization for the L1 or L2 norms of the weight vector in linear classification algorithms.
+  The modules for multiclass and binary logistic regression support L1 and L2 regularization. Regularization is a way of adding constraints during training to manually specify an aspect of the learned model. Regularization typically is used to avoid overfitting. Machine Learning Studio supports regularization for the L1 or L2 norms of the weight vector in linear classification algorithms:
  
     - L1 regularization is useful if the goal is to have a model that's as sparse as possible.
- 
-    - L2 regularization prevents any single coordinate in the weight vector from growing too much in magnitude. It's useful if the goal is to have a model with small overall weights.
- 
-    - L1-regularized logistic regression is more aggressive about assigning a weight of 0 to features. It's useful in identifying features that can be removed.
+     - L2 regularization prevents any single coordinate in the weight vector from growing too much in magnitude. It's useful if the goal is to have a model with small overall weights.
+     - L1-regularized logistic regression is more aggressive about assigning a weight of 0 to features. It's useful in identifying features that can be removed.
 
 ## Technical notes
 
@@ -117,7 +117,7 @@ All feature selection modules and analytical methods that support numeric and lo
 
 ## Related tasks
 
-The following modules aren't in the **Feature Selection** category, but you can use them for related tasks. The modules can help you reduce the dimensionality of your data, or find correlations:
+The following modules aren't in the **Feature Selection** category, but you can use them for related tasks. The modules can help you reduce the dimensionality of your data or find correlations:
  
 - [Principal Component Analysis](principal-component-analysis.md)
 
@@ -127,7 +127,7 @@ The following modules aren't in the **Feature Selection** category, but you can 
 
 - [Learning with Counts](data-transformation-learning-with-counts.md)
 
- Count-based featurization is a more recent technique that you can use to determine useful features from large datasets. By using these modules, you can analyze datasets to find the best features, save a set of features to use with new data, or update an existing feature set.
+ Count-based featurization is a new technique that you can use to determine useful features by using large datasets. Use these modules to analyze datasets to find the best features, save a set of features to use with new data, or update an existing feature set.
  
 - [Compute Linear Correlation](compute-linear-correlation.md)
 

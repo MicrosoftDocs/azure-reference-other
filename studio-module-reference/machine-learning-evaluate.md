@@ -25,7 +25,7 @@ This article also describes the overall process in Machine Learning Studio for m
 
 The typical workflow for machine learning includes these phases:
 
-1. Choose a suitable algorithm, and set initial options.
+1. Choose a suitable algorithm and set initial options.
 2. Train the model by using compatible data.
 3. Create predictions by using new data that's based on the patterns in the model.
 4. Evaluate the model to determine whether the predictions are accurate, the amount of error, and whether overfitting occurs.
@@ -41,13 +41,13 @@ In general, when evaluating a model, your options depend on the type of model yo
 - [Evaluate Model](evaluate-model.md)
 - [Cross-Validate Model ](cross-validate-model.md)
 
-Additionally, Machine Learning Studio provides a variety of visualizations, depending on the type of model you are using, and how many classes your model is predicting. For help finding these visualizations, see [View evaluation metrics](#bkmk_ViewMetrics).
+Machine Learning Studio also provides a variety of visualizations, depending on the type of model you're using, and how many classes your model is predicting. For help finding these visualizations, see [View evaluation metrics](#bkmk_ViewMetrics).
 
 Interpreting these statistics often requires a greater understanding of the particular algorithm on which the model was trained. For a good explanation of how to evaluate a model, and how to interpret the values that are returned for each measure, see [How to evaluate model performance in Azure Machine Learning](https://azure.microsoft.com/documentation/articles/machine-learning-evaluate-model-performance).
 
 ## List of modules
 
-The **Evaluate** category includes the following modules:
+The **Machine Learning - Evaluate** category includes the following modules:
 
 - [Cross-Validate Model](cross-validate-model.md): Cross-validates parameter estimates for classification or regression models by partitioning the data.
 
@@ -80,41 +80,42 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### <a name="bkmk_ViewMetrics"></a>View evaluation metrics
 
-This section describes where to look in Machine Learning Studio to find the metric charts for each model type.
+Learn where to look in Machine Learning Studio to find the metric charts for each model type.
 
-### Two-class classification models
+#### Two-class classification models
 
-The default view for binary classification models includes an interactive ROC chart, together with a table of values for the principal metrics.
+The default view for binary classification models includes an interactive ROC chart and a table of values for the principal metrics.
 
 ![evaluate_binaryclassification_defaultview](media/evaluate-binaryclassification-defaultview.JPG)
 
 You have two options for viewing binary classification models:
 
-- Right-click the module output, and select **Visualize**.
+- Right-click the module output, and then select **Visualize**.
 - Right-click the module, select **Evaluation results**, and then select **Visualize**.
 
 You can also use the slider to change the probability **Threshold** value. The threshold determines whether a result should be accepted as true or not. Then, you can see how these values change.
 
-### Multiclass classification models
+#### Multiclass classification models
 
-The default metrics view for multi-class classification models includes a confusion matrix for all classes, and a set of metrics for the model as a whole.
+The default metrics view for multi-class classification models includes a confusion matrix for all classes and a set of metrics for the model as a whole.
 
 You have two options for viewing multi-class classification models:
 
 - Right-click the module output, and then select **Visualize**.
 - Right-click the module, select **Evaluation results**, and then select **Visualize**.
 
-For simplicity, here the two results are shown side by side:
+For simplicity, here are the two results, shown side by side:
 
 ![evaluate_multiclass_view](media/evaluate-multiclass-view.JPG)
 
-### Regression models
+#### Regression models
 
 The metrics view for regression models varies depending on the type of model that you created. The metrics view is based on the underlying algorithm interfaces, and on the best fit for the model metrics.
 
-To view the accuracy metrics in a table, right-click the **Evaluate Model** module's output, and then select **Visualize**.
+You have two options for viewing regression models:
 
-To view an error histogram with the values, right-click the **module itself**, select **Evaluation results**, and then select **Visualize**.
+- To view the accuracy metrics in a table, right-click the **Evaluate Model** module's output, and then select **Visualize**.
+- To view an error histogram with the values, right-click the module, select **Evaluation results**, and then select **Visualize**.
 
 ![error-histogram-linear-regression](media/error-histogram-linear-regression.JPG)
 
@@ -133,11 +134,11 @@ The following regression models generate a table of default metrics, along with 
 
 ### Tips for working with the data
 
-To extract the numbers without copying and pasting from the Machine Learning Studio UI, you can use the new [PowerShell library for Azure ML](https://github.com/hning86/azuremlps). You can get metadata and other information for an entire experiment, or from individual modules.
+To extract the numbers without copying and pasting from the Machine Learning Studio UI, you can use the new [PowerShell library for Azure Machine Learning](https://github.com/hning86/azuremlps). You can get metadata and other information for an entire experiment, or from individual modules.
 
 To extract values from an **Evaluate Model** module, you must add a unique comment to the module, for easier identification. Then, use the **Download-AmlExperimentNodeOutput** cmdlet to get the metrics and their values from the visualization in JSON format.
 
-For more information, see [Create Machine Learnign Models by using PowerShell](https://docs.microsoft.com/azure/machine-learning/machine-learning-create-models-and-endpoints-with-powershell).
+For more information, see [Create machine learning models by using PowerShell](https://docs.microsoft.com/azure/machine-learning/machine-learning-create-models-and-endpoints-with-powershell).
 
 ## See also
 
