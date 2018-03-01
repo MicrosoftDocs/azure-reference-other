@@ -65,7 +65,7 @@ Missing values can affect your results in many ways. For example, almost all sta
 
 + If data used to train a model has missing values, any rows with missing values are skipped.
 
-+ If data used as input when scoring against a model has missing values, the missing values are used as inputs, but nulls are propagated. This usually means that the result is also a missing value.
++ If data used as input when scoring against a model has missing values, the missing values are used as inputs, but nulls are propagated. This usually means that a null is inserted in the results instead of a valid prediction.
 
 Be sure to check your data before training your model. To impute the missing values or correct your data, use this module:
 
