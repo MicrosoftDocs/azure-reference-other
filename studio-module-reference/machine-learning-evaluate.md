@@ -86,7 +86,7 @@ Learn where to look in Machine Learning Studio to find the metric charts for eac
 
 The default view for binary classification models includes an interactive ROC chart and a table of values for the principal metrics.
 
-![evaluate_binaryclassification_defaultview](media/evaluate-binaryclassification-defaultview.JPG)
+![An interactive ROC chart and a table of values for the principal metrics in binary classification models](media/evaluate-binaryclassification-defaultview.JPG)
 
 You have two options for viewing binary classification models:
 
@@ -106,7 +106,7 @@ You have two options for viewing multi-class classification models:
 
 For simplicity, here are the two results, shown side by side:
 
-![evaluate_multiclass_view](media/evaluate-multiclass-view.JPG)
+![Metrics table and Confusion Matrix for multiclass classification models](media/evaluate-multiclass-view.JPG)
 
 #### Regression models
 
@@ -117,7 +117,7 @@ You have two options for viewing regression models:
 - To view the accuracy metrics in a table, right-click the **Evaluate Model** module's output, and then select **Visualize**.
 - To view an error histogram with the values, right-click the module, select **Evaluation results**, and then select **Visualize**.
 
-![error-histogram-linear-regression](media/error-histogram-linear-regression.JPG)
+![Error Histogram and Metrics table for linear regression models](media/error-histogram-linear-regression.JPG)
 
 The **Error Histogram** view can help you understand how error is distributed. It's provided for the following model types, and includes a table of default metrics, such as root mean squared error (RMSE).
 
