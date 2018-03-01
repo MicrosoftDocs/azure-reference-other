@@ -65,9 +65,9 @@ Feature selection is different from feature engineering, which focuses on creati
 
 The following feature selection modules are provided in Machine Learning Studio.
 
-### Filter-Based Feature Selection
+### Filter Based Feature Selection
 
-When you use the [Filter-Based Feature Selection](filter-based-feature-selection.md) module, you can choose from among well-known feature selection methods. The module outputs both the feature selection statistics and the filtered dataset.
+When you use the [Filter Based Feature Selection](filter-based-feature-selection.md) module, you can choose from among well-known feature selection methods. The module outputs both the feature selection statistics and the filtered dataset.
  
 Your choice of a filter selection method depends in part on what sort of input data you have.
  
