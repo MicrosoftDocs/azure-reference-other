@@ -48,10 +48,10 @@ This **Data Transformation - Scale and Reduce** category includes the following 
 
 ## See also
 
-- [Data Transformation - Manipulation](data-transformation-manipulation.md)
-- [Data Transformation - Sample and Split](data-transformation-sample-and-split.md)
-- [Data Transformation - Filter](data-transformation-filter.md)
-- [Data Transformation - Learning with Counts](data-transformation-learning-with-counts.md)
+- [Manipulation](data-transformation-manipulation.md)
+- [Sample and Split](data-transformation-sample-and-split.md)
+- [Filter](data-transformation-filter.md)
+- [Learning with Counts](data-transformation-learning-with-counts.md)
 - [Feature Selection](feature-selection-modules.md)
 - [Module categories and descriptions](machine-learning-module-descriptions.md)
 - [A-Z module list](a-z-module-list.md)
