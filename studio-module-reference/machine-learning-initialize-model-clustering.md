@@ -61,7 +61,7 @@ For examples of clustering in action, see the [Azure AI Gallery](https://gallery
 
 See these articles for help choosing an algorithm:  
 
--   [Machine learning algorithm cheat sheet for Azure Machine Language](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
+-   [Machine learning algorithm cheat sheet for Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
      Provides a graphical decision chart to guide you through the selection process.  
   

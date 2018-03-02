@@ -23,9 +23,9 @@ For general information about modules in Machine Learning Studio, and how they c
 
 ## More about regression
 
-You can perform many different types of regression analyses. For example, you might use them in finance, engineering, or education. A housing price predictor might use a regression algorithm to predict the value of a particular house, based on historical data about regional house prices.
+Regression is a methodology used widely in fields ranging from engineering to education. For example, you might use regression to predict the value of a house based on regional data, or to create projections about future enrollment.
 
-Regression is a task that you can do with many tools: you can fit a regression line in Excel, or on graph paper!
+Regression tasks are supported in many tools: for example, Excel provides "What If" analysis, forecasting over time, and the Analysis ToolPak for traditional regression.
 
 The modules for regression in Machine Learning Studio each incorporate a different method, or algorithm, for regression. In general, a regression algorithm tries to learn the value of a function for a particular instance of data. You might predict someone's height by using a height function, or predict the probability of hospital admission based on medical test values.
 
