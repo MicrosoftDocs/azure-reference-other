@@ -27,15 +27,29 @@ The following table lists the deprecated modules and the new modules that replac
  
 ## Deprecated modules
 
-|Deprecated module|Replaced with|
-|-----------------------|-------------------|
-|[Apply Quantization Function (deprecated)](apply-quantization-function-deprecated.md)|[Group Data into Bins](group-data-into-bins.md)|
-|[Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md)|[Assign Data to Clusters](assign-data-to-clusters.md)|
-|[Build Count Table (deprecated)](build-count-table-deprecated.md)|[Build Counting Transform](build-counting-transform.md)|
-|[Count Featurizer (deprecated)](count-featurizer-deprecated.md)|[Modify Count Table Parameters](modify-count-table-parameters.md)<br /><br /> Also see:<br />[Merge Count Transform](merge-count-transform.md)<br />[Export Count Table](export-count-table.md)<br />[Import Count Table](import-count-table.md)|
-|[Linear Discriminant Analysis (deprecated)](linear-discriminant-analysis-deprecated.md)|[Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md)|
-|[Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md)|[Clean Missing Data](clean-missing-data.md)|
-|[Quantize (deprecated)](quantize-deprecated.md)|[Group Data into Bins](group-data-into-bins.md)|
+- [Apply Quantization Function (deprecated)](apply-quantization-function-deprecated.md)
+
+  **Use instead**: [Group Data into Bins](group-data-into-bins.md)
+- [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md)
+
+  **Use instead**: [Assign Data to Clusters](assign-data-to-clusters.md)
+- [Build Count Table (deprecated)](build-count-table-deprecated.md)
+
+  **Use instead**: [Build Counting Transform](build-counting-transform.md)
+- [Count Featurizer (deprecated)](count-featurizer-deprecated.md)
+
+  **Use instead**: [Modify Count Table Parameters](modify-count-table-parameters.md)  
+  
+  Related modules: [Merge Count Transform](merge-count-transform.md), [Export Count Table](export-count-table.md), [Import Count Table](import-count-table.md)
+- [Linear Discriminant Analysis (deprecated)](linear-discriminant-analysis-deprecated.md)
+
+  **Use instead**: [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md)
+- [Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md)
+
+  **Use instead**: [Clean Missing Data](clean-missing-data.md)
+- [Quantize (deprecated)](quantize-deprecated.md)
+
+  **Use instead**: [Group Data into Bins](group-data-into-bins.md)
  
 ## See also
 
