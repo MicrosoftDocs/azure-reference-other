@@ -30,7 +30,7 @@ Classification is a machine learning method that uses data to determine the cate
 - Categorize customers by their propensity to respond to a sales campaign.
 - Identify sentiment as positive or negative.
 
-Classification tasks are frequently organized by whether a classification is binary (either A or B) or multiclass (multiple categories are predicted by using a single model).
+Classification tasks are frequently organized by whether a classification is binary (either A or B) or multiclass (multiple categories that can be predicted by using a single model).
 
 ### Create a classification model
 
