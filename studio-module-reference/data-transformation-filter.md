@@ -1,5 +1,6 @@
 ---
 title: "Data Transformation - Filter | Microsoft Docs"
+description: "Learn how to use the filter modules in Azure Machine Learning Studio to transform digital data."
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/16/2018
@@ -16,82 +17,73 @@ manager: "cgronlund"
 ---
 # Data Transformation - Filter
 
-This article describes how you can use the filter modules in Azure Machine Learning Studio to transform digital data.  The modules in this group of tools for Azure Machine Learning Studio are based on filters developed for digital signal processing technology.  
+This article describes how you can use the filter modules in Azure Machine Learning Studio to transform digital data.  The modules in this group of tools for Machine Learning Studio are based on filters that were developed for digital signal processing technology.
 
-Typically, filters are applied to data during the data processing or preprocessing stages, to enhance the clarity of the signal used for machine learning. For example, the filter modules in Azure Machine Learning Studio can be used for these processing tasks:  
+Filters typically are applied to data in the data processing stage or the preprocessing stage. Filters enhance the clarity of the signal that's used for machine learning. For example, you can use the filter modules in Machine Learning Studio for these processing tasks:
 
--   Cleanup of waveforms used for speech recognition.    
--   Detect trends or remove seasonal effects in noisy sales or economic data.  
--   Analyze patterns or artifacts in telemetry signals.  
+-   Clean up waveforms that are used for speech recognition.
+-   Detect trends or remove seasonal effects in noisy sales or economic data.
+-   Analyze patterns or artifacts in telemetry signals.
 
-These modules provide easy configuration of filters, using well researched algorithms, to mathematically transform waveform data. You can also create a custom filter if you have already determined the correct coefficients to apply to your data.
+These modules provide easy configuration of filters by using well-researched algorithms to mathematically transform waveform data. You can also create a custom filter if you have already determined the correct coefficients to apply to your data.
 
 ## Related tasks
 
-If you need to do tasks such as excluding data from a dataset on a row by row basis, removing missing values, or reducing the size of a dataset, use these modules instead:  
+If you need to do tasks such as excluding data from a dataset on a row-by-row basis, removing missing values, or reducing the size of a dataset, use these modules instead:
 
-+ [Clean Missing Data](clean-missing-data.md) - Remove missing values or replace missing values with placeholders.  
-+ [Partition and Sample](partition-and-sample.md) - Divide or filter your dataset by criteria such as a range of dates, a specific value, or regular expressions.  
-+ [Clip Values](clip-values.md) - Set a range of values and keep only the values within that range.  
+- [Clean Missing Data](clean-missing-data.md): Remove missing values, or replace missing values with placeholders.
+- [Partition and Sample](partition-and-sample.md): Divide or filter your dataset by using criteria such as a range of dates, a specific value, or regular expressions.
+- [Clip Values](clip-values.md): Set a range of values, and keep only the values within that range.
 
-## Primer on filters in digital signal processing
+## Filters in digital signal processing
 
-Just as a filter can be attached to a camera to compensate for lighting or create special effects, you can apply a filter to the data used for machine learning, to improve the clarity of a signal, to capture interesting characteristics, or to reduce noise.  
+Just like you can attach a filter to a camera to compensate for lighting or to create special effects, you can apply a filter to the data that you use for machine learning. Filters can help improve the clarity of a signal, capture interesting characteristics, or reduce noise.
 
-The ideal filter would eliminate all noise and have uniform sensitivity for the desired signal, but designing even a pretty good filter might take many iterations or combinations of techniques. If you succeed in designing an effective filter, consider saving the filter so that you can reuse it when transforming new data.  
+The ideal filter would eliminate all noise and have uniform sensitivity for the desired signal. But, designing even a pretty good filter might take many iterations or combinations of techniques. If you succeed in designing an effective filter, consider saving the filter so that you can reuse it when you transform new data.
 
-In general, filtering is based on the principles of *waveform analysis*. When you design a filter, you look for ways to suppress or amplify parts of the signal, to expose underlying trends, reduce noise and interference, or to identify data values that otherwise might not be perceived.  
+In general, filtering is based on the principles of *waveform analysis*. When you design a filter, you look for ways to suppress or amplify parts of the signal, to expose underlying trends, to reduce noise and interference, or to identify data values that otherwise might not be perceived.
 
-Various techniques are applied to decompose the individual trends or waveform components that create the actual data values. The series of values (whether that is an econometric series or the composite frequencies of audio signals) can be analyzed by using trigonometric functions to identify and isolate individual wave forms. Filters can then be applied to these wave forms to eliminate noise, amplify some waves, or remove targeted components.  
+Various techniques are applied to decompose individual trends or waveform components that create actual data values. The series of values can be analyzed by using trigonometric functions to identify and isolate individual waveforms. (This is true whether it's an econometric series or the composite frequencies of audio signals.) Filters can then be applied to these waveforms to eliminate noise, amplify some waves, or remove targeted components.
 
-When filtering is applied to a noisy series to isolate different components, you can specify which frequencies to remove or strengthen by specifying the band of frequencies to work with. 
+When filtering is applied to a noisy series to isolate different components, you can specify which frequencies to remove or strengthen by specifying the band of frequencies to work with.
 
-### Digital filters in Studio
+### Digital filters in Machine Learning Studio
 
-The following type of filters are supported in Azure Machine Learning Studio:
+The following types of filters are supported in Machine Learning Studio:
   
--   **Filters based on waveform decomposition**, such as finite impulse response (FIR) and infinite impulse response (IIR) filters. These filters work by removing specific components from an overall series, which lets you view and investigate the simplified waveform.  
+-   **Filters based on waveform decomposition**. Examples include finite impulse response (FIR) and infinite impulse response (IIR) filters. These filters work by removing specific components from an overall series. You can then view and investigate the simplified waveform.  
+-   **Filters based on moving averages or median values**. These filters smooth out variations in a data series by averaging across windows of time. The windows can be fixed or sliding, and can have different shapes. For example, a triangular window peaks at the current data point (weights the current value stronger) and tails off before and after the data point (weights preceding and following values less strongly).  
+-   **User-defined or custom filters**. If you already know the transformations that should be applied to a data series, you can create a user-defined filter. You provide the numeric coefficients that are applied to transform the data series. A custom filter can emulate an FIR or IIR filter. However, with a custom filter, you have more control over the values to apply at each point in the series.
   
--   **Filters based on moving averages or median values**. These filters smooth out variations in a data series by averaging across windows of time. The windows can be fixed or sliding, and they can have different shapes. For example, a triangular window peaks at the current data point (weights the current value stronger) and tails off before and after the data point (weights preceding and following values less strongly).  
-  
--   **User-defined or custom filters**. If you already know the transformations that should be applied to a data series, you can create a user-defined filter and provide the numeric coefficients that are applied to transform the data series. A custom filter can emulate a FIR or IIR filter but you have more control over the values to apply at each point in the series.  
-  
-###  Filter terminology  
+###  Filter terminology
 
- The following are some simple definitions of terms that are used in the parameters and properties of filters.  
+The following list includes simple definitions of terms that are used in the parameters and properties of filters:
   
 -   **Passband**: The range of frequencies that can pass through a filter without being attenuated or weakened.  
-  
--   **Stopband**: A range of frequencies between specified limits, through which signals are not passed. You define the stopband by setting cut-off frequencies.  
-  
+-   **Stopband**: A range of frequencies between specified limits through which signals are not passed. You define the stopband by setting cut-off frequencies.  
 -   **High pass**: Let only high frequencies through.  
-  
 -   **Low pass**: Accept only frequencies below a specified cut-off value.  
-  
--   **Corner**: The corner frequency defines the boundary between the stopband and passband frequencies. Typically, you have the option to decide whether the corner is included in or excluded from the band. A first-order filter causes gradual attenuation until the corner frequency and exponential attenuation after that. Higher-order filters (such as Butterworth and Chebyshev filters) have steeper slopes after the corner frequency and attenuate the values in the stopband much more rapidly and fully.  
-  
--   **Bandstop filter** (also called a **band reject** filter and a **notch** filter): Has only one stopband, which you define by specifying two frequencies: the high cut-off and low cut-off. A **bandpass** filter typically has two stopbands, one on either side of the desired component.  
-  
--   **Ripple**: A small unwanted variation that occurs periodically. In Azure Machine Learning, you can specify the amount of ripple to tolerate as part of the parameters in the IIR filter design.  
-  
+-   **Corner**: Defines the boundary between the stopband and passband frequencies. Typically, you have the option to decide whether the corner is included in or excluded from the band. A first-order filter causes gradual attenuation until the corner frequency. After that, the filter causes exponential attenuation. Higher-order filters (such as Butterworth and Chebyshev filters) have steeper slopes after the corner frequency. Higher-order filters attenuate the values in the stopband much more rapidly and fully.  
+-   **Bandstop filter** (also called a *band reject* filter or a *notch* filter): Has only one stopband. You define the stopband by specifying two frequencies: the high cut-off frequency and the low cut-off frequency. A *bandpass* filter typically has two stopbands: one on either side of the desired component.  
+-   **Ripple**: A small, unwanted variation that occurs periodically. In Machine Learning, you can specify the amount of ripple to tolerate as part of the parameters in the IIR filter design.
+
 > [!TIP]
-> Need more information? If you are new to digital signal processing, this ham radio education site provides definitions and helpful visual aids that explain basic terminology and concepts: 
+> Need more information? If you are new to digital signal processing, see [An Introduction to Digital Signal Processing](http://www.hamradioschool.com/an-introduction-to-digital-signal-processing-dsp/). The website provides definitions and helpful visual aids that explain basic terminology and concepts. 
 > 
-> [An Introduction to Digital Signal Processing](http://www.hamradioschool.com/an-introduction-to-digital-signal-processing-dsp/)   
   
-## List of modules  
+## List of modules
 
-The following modules are included in the **Filter** category:  
+The following modules are included in the **Data Transformation - Filter** category:
 
-+ [Apply Filter](apply-filter.md): Applies a filter to specified columns of a dataset
-+ [FIR Filter](fir-filter.md): Creates a finite impulse response filter for signal processing  
-+ [IIR Filter](iir-filter.md): Creates an infinite impulse response filter for signal processing  
-+ [Median Filter](median-filter.md): Creates a median filter used to smooth data for trend analysis
-+ [Moving Average Filter](moving-average-filter.md): Creates a moving average filter that smooths data for trend analysis  
-+ [Threshold Filter](threshold-filter.md): Creates a threshold filter that constrains values
-+ [User-Defined Filter](user-defined-filter.md): Creates a custom finite or infinite impulse response filter
+- [Apply Filter](apply-filter.md): Applies a filter to specified columns of a dataset.
+- [FIR Filter](fir-filter.md): Creates an FIR filter for signal processing.
+- [IIR Filter](iir-filter.md): Creates an IIR filter for signal processing.
+- [Median Filter](median-filter.md): Creates a median filter that's used to smooth data for trend analysis.
+- [Moving Average Filter](moving-average-filter.md): Creates a moving average filter that smooths data for trend analysis.
+- [Threshold Filter](threshold-filter.md): Creates a threshold filter that constrains values.
+- [User-Defined Filter](user-defined-filter.md): Creates a custom FIR or IIR filter.
 
 ## See also
 
- [Data Transformation](data-transformation.md)   
- [A-Z Module List](a-z-module-list.md)
+- [Data Transformation](data-transformation.md)
+- [A-Z module list](a-z-module-list.md)
