@@ -142,8 +142,8 @@ For more information, see [Create machine learning models by using PowerShell](h
 
 ## See also
 
-- [Machine Learning - Train](machine-learning-train.md)
-- [Machine Learning - Score](machine-learning-score.md)
-- [Machine Learning - Evaluate](machine-learning-evaluate.md)
+- [Train](machine-learning-train.md)
+- [Score](machine-learning-score.md)
+- [Evaluate](machine-learning-evaluate.md)
 - [Module categories and descriptions](machine-learning-module-descriptions.md)
 - [A-Z module list](a-z-module-list.md)
