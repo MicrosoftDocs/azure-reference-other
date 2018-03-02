@@ -45,7 +45,7 @@ Each module represents a set of code that can run independently and perform a ma
  
 In Machine Learning Studio, modules are organized by functionality:
 
-+ [Data input and output modules](data-input-and-output.md) do the work of moving data from cloud sources into your experiment. You can write your results or intermediate data to Azure storage, SQL database, or Hive, while running an experiment, or use cloud storage to exchange data between experiments.  
++ [Data input and output modules](data-input-and-output.md) do the work of moving data from cloud sources into your experiment. You can write your results or intermediate data to Azure Storage, a SQL database, or Hive, while running an experiment, or use cloud storage to exchange data between experiments.  
  + [Data transformation modules](data-transformation.md) support operations on data that are unique to machine learning, such as normalizing or binning data, feature selection, and dimensionality reduction.
  + [Machine learning algorithms](machine-learning-modules.md), such as clustering, support vector machine, or neural networks, are available within individual modules that let you customize the machine learning task with appropriate parameters. For classification tasks, you can choose from binary or multiclass algorithms. 
  
