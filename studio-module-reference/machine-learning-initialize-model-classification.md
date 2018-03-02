@@ -19,7 +19,7 @@ manager: "cgronlund"
 
 This article describes the modules in Azure Machine Learning Studio that support the creation of classification models. You can use these modules to build binary or multiclass classification models.
 
-For more information about Machine Learning Studio modules, and how to combine modules to create complete machine learning experiments, see [Machine learning modules](machine-learning-modules.md).
+For more information about Machine Learning Studio modules, and to learn how to combine modules to create complete machine learning experiments, see [Machine learning modules](machine-learning-modules.md).
 
 ## About classification
 
@@ -30,7 +30,7 @@ Classification is a machine learning method that uses data to determine the cate
 - Categorize customers by their propensity to respond to a sales campaign.
 - Identify sentiment as positive or negative.
 
-Classification tasks are frequently organized by whether classification is binary (either A or B) or multiclass (multiple categories can be predicted by using a single model).
+Classification tasks are frequently organized by whether a classification is binary (either A or B) or multiclass (multiple categories are predicted by using a single model).
 
 ### Create a classification model
 
@@ -40,13 +40,13 @@ To create a classification model, or *classifier*, first, select an appropriate 
 - What is the distribution of the data?
 - How much time can you allow for training?
 
-Machine Learning Studio provides multiple classification algorithms. When you use the [One-Vs-All](one-vs-all-multiclass.md) algorithm, you can even apply a binary classifier to a multi-class problem.
+Machine Learning Studio provides multiple classification algorithms. When you use the [One-Vs-All](one-vs-all-multiclass.md) algorithm, you can even apply a binary classifier to a multiclass problem.
 
 After you choose an algorithm and set the parameters by using the modules in this section, train the model on labeled data. Classification is a supervised machine learning method. It always requires labeled training data.
 
-When training is finished, you can [evaluate](machine-learning-evaluate.md) and tune the model. When you're satisfied with the model, use the trained model for [scoring](machine-learning-score.md) on new data.
+When training is finished, you can [evaluate](machine-learning-evaluate.md) and tune the model. When you're satisfied with the model, use the trained model for [scoring](machine-learning-score.md) with new data.
 
-##  List of modules
+## List of modules
 
 The **Classification** category includes the following modules:
 
@@ -71,12 +71,12 @@ For examples of classification in action, see the [Azure AI Gallery](https://gal
 
 For help choosing an algorithm, see these articles:
 
-- [Machine learning algorithm cheat sheet for Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
-  
+- [Machine learning algorithm cheat sheet for Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
+ 
     Provides a graphical decision chart to guide you through the selection process.
-  
-- [Choose Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice)
-  
+ 
+- [Choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice)
+ 
     Explains in greater detail the different types of machine learning algorithms and how they're used.
 
 ## See also

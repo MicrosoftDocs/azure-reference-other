@@ -21,7 +21,7 @@ This article describes the modules in Azure Machine Learning Studio that you can
 
 You can think of the *untrained model* as a specification that you can apply to different input datasets. You might apply the same model specification to different data and get different results. Or, you can use the specification to retrain a model. You can then add new data.
 
-This article also describes the overall process for creating, training, evaluating, and scoring a model in Machine Learning Studio.
+This article also describes the overall process of creating, training, evaluating, and scoring a model in Machine Learning Studio.
 
 ## Create and use machine learning models in Machine Learning Studio
 
@@ -36,7 +36,7 @@ Machine Learning Studio supports a flexible, customizable framework for machine 
 
 Use the modules in this category to select an initial algorithm. Then, configure detailed parameters based on the specific model type. You can then apply this model specification to a set of data.
 
-## More about creating models
+## About creating models
 
 Azure Machine Learning provides many state-of-the art machine learning algorithms to help you build analytical models. Each algorithm is packaged in its own module. To create a customized model:
 
@@ -46,11 +46,11 @@ Azure Machine Learning provides many state-of-the art machine learning algorithm
  
     - [Machine learning algorithm cheat sheet for Machine Learning Studio](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-cheat-sheet/)
  
-    - [Choose Machine Learning algorithms for clustering, classification, or regression](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/)
+    - [Choose Azure Machine Learning algorithms for clustering, classification, or regression](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/)
  
 2. Configure algorithm parameters.
 
-    Use the **Properties** pane in each module to set parameters that control how the model learns from data.
+    Use the **Properties** pane in each module to set parameters. Parameters control how the model learns from data.
  
 3. Train the model on data.
  
