@@ -55,7 +55,7 @@ Use these modules to convert data to one of the formats used by other machine le
 
 + [Data Input and Output](data-input-and-output.md)
 
-  Use these modules to read data and models from cloud data sources, including Hadoop clusters, Azure table storage, and web URLs. You can also use these modules to write results to storage or to a database.  
+  Use these modules to read data and models from cloud data sources, including Hadoop clusters, Azure Table storage, and web URLs. You can also use these modules to write results to storage or to a database.  
 
 + [Data Transformation](data-transformation.md)
 
