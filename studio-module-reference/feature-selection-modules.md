@@ -108,8 +108,8 @@ These algorithms and feature selection methods are used internally:
   The modules for multiclass and binary logistic regression support L1 and L2 regularization. Regularization is a way of adding constraints during training to manually specify an aspect of the learned model. Regularization typically is used to avoid overfitting. Machine Learning Studio supports regularization for the L1 or L2 norms of the weight vector in linear classification algorithms:
  
     - L1 regularization is useful if the goal is to have a model that's as sparse as possible.
-     - L2 regularization prevents any single coordinate in the weight vector from growing too much in magnitude. It's useful if the goal is to have a model with small overall weights.
-     - L1-regularized logistic regression is more aggressive about assigning a weight of 0 to features. It's useful in identifying features that can be removed.
+    - L2 regularization prevents any single coordinate in the weight vector from growing too much in magnitude. It's useful if the goal is to have a model with small overall weights.
+    - L1-regularized logistic regression is more aggressive about assigning a weight of 0 to features. It's useful in identifying features that can be removed.
 
 ## Technical notes
 
