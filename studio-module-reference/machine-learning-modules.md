@@ -29,7 +29,7 @@ The typical workflow for machine learning includes many phases:
   
 -   Using models to generate predictions, recommendations, and other results.  
   
- The modules in this section provide tools for the final phases of machine learning, in which you apply an algorithm to data to train a model. In these final phases, you also generate scores, and then evaluate the accuracy and usefulness of the model.  
+The modules in this section provide tools for the final phases of machine learning, in which you apply an algorithm to data to train a model. In these final phases, you also generate scores, and then evaluate the accuracy and usefulness of the model.  
 
 ## List of machine learning tasks by category
 
