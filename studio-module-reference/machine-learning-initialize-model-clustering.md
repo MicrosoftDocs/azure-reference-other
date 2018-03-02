@@ -19,21 +19,21 @@ manager: "cgronlund"
 
 This article describes the modules in Azure Machine Learning Studio that support creation of clustering models. 
 
-For general information about modules in Azure Machine Learning Studio, and how they can be combined to create complete machine learning experiments, see [Machine learning modules](machine-learning-modules.md).
+For general information about modules in Machine Learning Studio, and how they can be combined to create complete machine learning experiments, see [Machine learning modules](machine-learning-modules.md).
 
 ## What is clustering?
 
 Clustering, in machine learning, is a method of grouping data points into similar clusters. It is also called _segmentation_. 
 
-Over the years, many clustering algorithms have been developed. Almost clustering algorithms use the features of individual items to find similar items. For example, you might apply clustering to find similar people by demographics; or use clustering with text analysis to group sentences with similar topics or sentiment.  
+Over the years, many clustering algorithms have been developed. Almost all clustering algorithms use the features of individual items to find similar items. For example, you might apply clustering to find similar people by demographics. You might use clustering with text analysis to group sentences with similar topics or sentiment.  
 
 Clustering is called a non-supervised learning technique because it can be used in unlabeled data. Indeed, clustering is a useful first step for discovering new patterns, and requires little prior knowledge about how the data might be structured or how items are related. Clustering is often used for exploration of data prior to analysis with other more predictive algorithms. 
 
 ### How to create a clustering model
 
-In Azure Machine Learning Studio, clustering can be used with either labeled or unlabeled data. 
+In Machine Learning Studio, you can use clustering with either labeled or unlabeled data. 
 
-+ In unlabeled data, the clustering algorithm determines which data points are closest together, and creates clusters around a central point, or centroid. You can then use the cluster ID as a sort of temporary label for the group of data.
++ In unlabeled data, the clustering algorithm determines which data points are closest together, and creates clusters around a central point, or centroid. You can then use the cluster ID as a temporary label for the group of data.
 
 + If the data has labels, you can use the label to drive the number of clusters, or use the label as just another feature.
 
@@ -43,13 +43,13 @@ When the model is trained, use it to predict cluster membership for new data poi
   
 ##  List of modules  
 
-The clustering category includes these modules:
+The clustering category includes this module:
 
-+ [K-Means Clustering](k-means-clustering.md): Configures and initializes a K-means clustering model  
++ [K-Means Clustering](k-means-clustering.md): Configures and initializes a K-means clustering model.  
 
 ### Related tasks
 
-To use a different clustering algorithm, or create  custom clustering model using R, see these topics:  
+To use a different clustering algorithm, or create a custom clustering model by using R, see these topics:  
   
 -   [Execute R Script](execute-r-script.md)  
   
@@ -57,20 +57,20 @@ To use a different clustering algorithm, or create  custom clustering model usin
 
 ## Examples
 
-For examples of clustering in action, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/)
+For examples of clustering in action, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
 
 See these articles for help choosing an algorithm:  
 
--   [Machine learning algorithm cheat sheet for Azure ML](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
+-   [Machine learning algorithm cheat sheet for Azure Machine Language](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
-     Provides a graphical decision chart to guide you through the selection process  
+     Provides a graphical decision chart to guide you through the selection process.  
   
 -   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice)  
   
-     Explains in greater detail the different types of machine learning algorithms and how they're used  
+     Explains in greater detail the different types of machine learning algorithms, and how they're used.  
 
 ## See also  
- [Regression](machine-learning-initialize-model-regression.md)   
- [Classification](machine-learning-initialize-model-classification.md)    
- [Text Analytics](text-analytics.md)   
- [Image classification using OpenCV](opencv-library-modules.md)
+- [Regression](machine-learning-initialize-model-regression.md)   
+- [Classification](machine-learning-initialize-model-classification.md)    
+- [Text Analytics](text-analytics.md)   
+- [Image classification using OpenCV](opencv-library-modules.md)
