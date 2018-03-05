@@ -25,7 +25,7 @@ This article also describes the overall process in Machine Learning Studio for m
 
 The typical workflow for machine learning includes these phases:
 
-- Choosing a suitable alorithm, and setting initial options.
+- Choosing a suitable algorithm, and setting initial options.
 - Training the model on compatible data.
 - Creating predictions by using new data, based on the patterns in the model.
 - Evaluating the model to determine if the predictions are accurate, how much error there is, and if there is any overfitting.
@@ -60,7 +60,7 @@ If you are not sure of the best parameters to use when training a model, use one
 
 If you need to retrain a production model, you can re-run the experiment at any time.
 
-You can also automate the retraining process by using web services. For a walkthrough, see [Retraining and updating Azure Machine Learning models with Azure Data Factory](https://azure.microsoft.com/blog/retraining-and-updating-azure-machine-learning-models-with-azure-data-factory/)
+You can also automate the retraining process by using web services. For a walkthrough, see [Retraining and updating Azure Machine Learning models with Azure Data Factory](https://azure.microsoft.com/blog/retraining-and-updating-azure-machine-learning-models-with-azure-data-factory/).
 
 ### Use pretrained models
 
