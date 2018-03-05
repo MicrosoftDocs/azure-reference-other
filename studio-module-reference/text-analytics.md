@@ -34,7 +34,7 @@ For examples of text analytics using Azure Machine Learning, see the [Azure AI G
 
 - [Find similar companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.  
   
-- [Text classification](http://go.microsoft.com/fwlink/?LinkId=525957): Demonstrates the end-to-end process of using text from Twitter messages in sentiment analysis. (Five-part sample.)
+- [Text classification](http://go.microsoft.com/fwlink/?LinkId=525957): Demonstrates the end-to-end process of using text from Twitter messages in sentiment analysis (five-part sample).
 
 ##  List of modules
 
