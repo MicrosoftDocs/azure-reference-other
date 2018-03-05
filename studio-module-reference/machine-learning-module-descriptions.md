@@ -1,5 +1,6 @@
 ---
-title: "Machine Learning Module Descriptions | Microsoft Docs"
+title: "Machine Learning module descriptions | Microsoft Docs"
+description: An overview of all the modules included in Azure Machine Learning Studio, which is an interactive, visual workspace to easily build and test predictive models.
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/22/2018
@@ -14,27 +15,27 @@ author: "jeannt"
 ms.author: "jeannt"
 manager: "cgronlund"
 ---
-# Machine Learning Module Descriptions
+# Machine Learning module descriptions
 
 This topic provides an overview of all the *modules* included in Azure Machine Learning Studio, which is an interactive, visual workspace to easily build and test predictive models. 
 
 > [!TIP]
-> Click here to learn about new features for the professional data scientist in Azure Machine Learning, such as Machine Learning Workbench: [Azure Machine Learning Concepts](https://docs.microsoft.com/azure/machine-learning/preview/overview-general-concepts). 
+> To learn about new features for the professional data scientist in Machine Learning, such as Machine Learning Workbench, see [Azure Machine Learning concepts](https://docs.microsoft.com/azure/machine-learning/preview/overview-general-concepts). 
 
 ## What is a module?  
 
-In Azure Machine Learning Studio, a *module* is a building block for creating experiments. Each module encapsulates a specific machine learning algorithm, function, or code library that can act on data in your workspace. The modules are designed to accept connections from other modules, to share and modify data. 
+In Machine Learning Studio, a module is a building block for creating experiments. Each module encapsulates a specific machine learning algorithm, function, or code library that can act on data in your workspace. The modules are designed to accept connections from other modules, to share and modify data. 
 
-The code that runs in each module comes from many sources, including open source libraries and languages, algorithms developed by Microsoft Research, and tools for working with Azure and other cloud services. 
+The code that runs in each module comes from many sources. These include open source libraries and languages, algorithms developed by Microsoft Research, and tools for working with Azure and other cloud services. 
  
  > [!TIP]
-> Looking for machine learning algorithms? See the [Machine Learning](machine-learning-initialize-model.md) category, which contains modules for decision trees, clustering, neural networks, and more. The [Train](machine-learning-train.md) and [Evaluate](machine-learning-evaluate.md) categories include modules to help train andd test your models. 
+> Looking for machine learning algorithms? See the [Machine Learning](machine-learning-initialize-model.md) category, which contains modules for decision trees, clustering, neural networks, among others. The [Train](machine-learning-train.md) and [Evaluate](machine-learning-evaluate.md) categories include modules to help train and test your models. 
 
 By connecting and configuring modules, you can create a workflow that reads data from external sources, prepares it for analysis, applies machine learning algorithms, and generates results. 
 
-When an experiment is open in Studio, you can see the complete list of current modules in the navigation pane at left.  You drag these building blocks into your experiment, and then connect them to create a complete machine learning workflow, called an experiment. 
+When an *experiment* is open in Machine Language Studio, you can see the complete list of current modules in the navigation pane at left. You drag these building blocks into your experiment, and then connect them to create a complete machine learning workflow, called an experiment. 
 
-Sometimes modules are updated to add new functionality, or to remove older code. When this happens, any experiments that you created using the module continue to run, but the next time you open the experiment, you will be prompted to upgrade the module, or to use a different module.
+Sometimes modules are updated to add new functionality, or to remove older code. When this happens, any experiments that you created that use the module continue to run. But the next time you open the experiment, you are prompted to upgrade the module, or to use a different module.
 
 ### Examples
 
@@ -46,7 +47,7 @@ For an example of how to build a complete machine learning experiment, see these
  
 ##  Module categories
 
-To make it easier to find related modules, the machine learning tools in Azure Machine Learning Studio are grouped by these categories.
+To make it easier to find related modules, the machine learning tools in Machine Learning Studio are grouped by these categories.
 
 ### [Data Format conversions](data-format-conversions.md)
 
@@ -54,11 +55,11 @@ Use these modules to convert data to one of the formats used by other machine le
 
 + [Data Input and Output](data-input-and-output.md)
 
-  Use these modules to read data and models from cloud data sources, including Hadoop clusters, Azure table storage, and Web URLs, or to write results to storage or to a database.  
+  Use these modules to read data and models from cloud data sources, including Hadoop clusters, Azure Table storage, and web URLs. You can also use these modules to write results to storage or to a database.  
 
 + [Data Transformation](data-transformation.md)
 
-  Use these modules to prepare data for analysis. You can change data types, flag columns as features or labels, generate features, and scale or normalize data, and much more.
+  Use these modules to prepare data for analysis. You can change data types, flag columns as features or labels, generate features, and scale or normalize data.
 
 + [Filter](data-transformation-filter.md)
 
@@ -70,7 +71,7 @@ Use these modules to convert data to one of the formats used by other machine le
 
 + [Manipulation](data-transformation-manipulation.md)
 
-  This group provides a variety of tools for data science: remove or replace missing values, choose a subset of columns, add column or concatenate two datasets, and so forth.  
+  This group provides a variety of tools for data science. For example, you can remove or replace missing values, choose a subset of columns, add a column, or concatenate two datasets.  
 
 + [Sample and Split](data-transformation-sample-and-split.md)
 
@@ -86,7 +87,7 @@ Use these modules to identify the best features in your data, using widely resea
   
 ### [Machine Learning](machine-learning-modules.md)
 
-This group contains most of the machine learning algorithms supported by Azure Machine Learning.
+This group contains most of the machine learning algorithms supported by Machine Learning.
 
 It also contains modules intended to support the algorithms by training models, generating scores, and evaluating model performance.
 
@@ -105,7 +106,7 @@ It also contains modules intended to support the algorithms by training models, 
 
 + [Score](machine-learning-score.md)
 
-  Use these modules to pass new data through the algorithm and generate a set of results for evaluation. You can also use the results of scoring as part of a predictive service.
+  Use these modules to pass new data through the algorithm, and generate a set of results for evaluation. You can also use the results of scoring as part of a predictive service.
 
 + [Train](machine-learning-train.md)
 
@@ -121,7 +122,7 @@ Use these modules to add custom R code to your experiment, or implement a machin
 
 ### [Python Language Modules](python-language-modules.md)
 
-Use these modules to add custom Python code to your experiment.|  
+Use these modules to add custom Python code to your experiment.  
 
 ### [Statistical Functions](statistical-functions.md)
 
@@ -129,33 +130,33 @@ Use these modules to calculate probability distributions, create custom calculat
 
 ### [Text Analytics](text-analytics.md)
 
-Use these modules to perform feature hashing and named entity recognition, or to preprocess text using NLP tools.
+Use these modules to perform feature hashing and named entity recognition, or to preprocess text using natural language processing tools.
 
 ### [Time Series](time-series.md)
 
-Use these modules to assess anomalies in trends, using algorithms specifically designed for time series data. 
+Use these modules to assess anomalies in trends, by using algorithms specifically designed for time series data. 
 
 ### Related tasks
 
-Studio modules don't attempt to duplicate data integration tools supported in other tools, such as Azure Data Factory. Instead, the modules in Azure Machine Learning provide functionality that is specific to machine learning:
+Machine Learning Studio modules don't attempt to duplicate data integration tools supported in other tools, such as Azure Data Factory. Instead, the modules provide functionality that is specific to machine learning:
  
  - Normalization, grouping, and scaling of data
  - Computing statistical distribution of data
  - Conversion to other machine learning formats
  - Import of data used for machine learning experiments and export of results
- - Text analytics, feature selection, dimensionality reduction, and more 
+ - Text analytics, feature selection, and dimensionality reduction 
 
-If you need more sophisticated facilities for data manipulation and storage, see these cloud services:
+If you need more sophisticated facilities for data manipulation and storage, see the following:
 
-+ [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/): Enterprise-ready cloud data processing pipelines
-+ [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): Scalable storage with integrated access to machine learning
-+ [CosmosDB](https://docs.microsoft.com/azure/cosmos-db/): NoSQL data store; import data to Studio 
-+ [Azure Data Lake Analytics](https://docs.microsoft.com/azure/data-lake-analytics/): Distributed analytics on big data
-+ [Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/): Event processing for the Internet of Things 
-+ [Azure Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related cognitive services for speech, image, and facial recognition
-+ [Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/): Spark-based analytics platform
++ [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/): Enterprise-ready, cloud data processing pipelines.
++ [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): Scalable storage, with integrated access to machine learning.
++ [CosmosDB](https://docs.microsoft.com/azure/cosmos-db/): NoSQL data store; import data to Machine Learning Studio. 
++ [Azure Data Lake Analytics](https://docs.microsoft.com/azure/data-lake-analytics/): Distributed analytics on big data.
++ [Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/): Event processing for the Internet of Things. 
++ [Azure Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related cognitive services for speech, image, and facial recognition.
++ [Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/): Spark-based analytics platform.
 
 
 ## See also
 
-[A-Z Module List](a-z-module-list.md)
+- [A-Z module list](a-z-module-list.md)
