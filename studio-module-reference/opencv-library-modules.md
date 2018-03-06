@@ -35,7 +35,7 @@ For additional image recognition features, see the image APIs published as part 
 
 The OpenCV Library category includes these modules:
 
-+ [Import Images](import-images.md): Loads images from Azure blob storage into a dataset.
++ [Import Images](import-images.md): Loads images from Azure Blob storage into a dataset.
 
 + [Pretrained Cascade Image Classification](pretrained-cascade-image-classification.md): Creates a pretrained image classification model for frontal faces by using the OpenCV Library.
 
