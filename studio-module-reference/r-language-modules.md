@@ -34,7 +34,7 @@ Before using R script in Machine Learning Studio, observe the following requirem
 
 - If you imported data that uses CSV or other formats, you cannot read the data directly in CSV format from your R code. Instead, use [Convert to Dataset](convert-to-dataset.md) to prepare the data, before using it as input to an R module.
 
-- When you attach any Machine Learning dataset as input to an R module, the dataset is automatically loaded into the R workspace as a data frame, with the variable name, **dataset**.  
+- When you attach any Machine Learning dataset as input to an R module, the dataset is automatically loaded into the R workspace as a data frame, with the variable name **dataset**.  
 
     However, you can define additional data frames, or change the name of the default dataset variable within your R script.
 
@@ -87,7 +87,7 @@ The following example demonstrates the overall process for how you can install n
 
 ### Split columns by using R
 
-Sometimes the data requires extensive manipulation to extract features. Suppose you have a text file that contains an ID followed by values and notes, all separated by spaces. Or that your text file contains characters that are not supported by Machine Language Studio.
+Sometimes the data requires extensive manipulation to extract features. Suppose you have a text file that contains an ID followed by values and notes, all separated by spaces. Or suppose that your text file contains characters that are not supported by Machine Language Studio.
 
 There are several R packages that provide specialized functions for such tasks. The [splitstackshape library](http://cran.r-project.org/web/packages/splitstackshape/index.html) package contains several useful functions for splitting multiple columns, even if each column has a different delimiter.
 
@@ -164,7 +164,7 @@ For additional R code samples and help with R and its applications, see these re
 
 - [Bioconductor](http://bioconductor.org/): A large repository of R packages in bioinformatics.
 
-- [Quick Start Guide for R](http://go.microsoft.com/fwlink/?LinkId=524954): Provides a detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio.
+- [Quick Start Guide for R](http://go.microsoft.com/fwlink/?LinkId=524954): A detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio.
 
 ## See also
 
