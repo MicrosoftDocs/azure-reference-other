@@ -19,7 +19,7 @@ The `RESOURCE` statement identifies the data to be used as a resource.
 
 <table><th>Syntax</th><tr><td><pre>
 Deploy_Resource_Statement :=                                                                             
-      'DEPLOY' 'RESOURCE' <a href="input-files-u-sql#input-file-path-uris">file_path_URI</a> { ',' <a href="input-files-u-sql#input-file-path-uris">file_path_URI</a>}.  
+      'DEPLOY' 'RESOURCE' <a href="input-files-u-sql.md#input-file-path-uris">file_path_URI</a> { ',' <a href="input-files-u-sql.md#input-file-path-uris">file_path_URI</a>}.  
 </pre></td></tr></table>
 
 ## Using a Resource   
