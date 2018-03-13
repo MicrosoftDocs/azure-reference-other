@@ -18,11 +18,14 @@ ms.date: 04/22/2016
 ms.author: sngun
 ---
 # Time Skew Policies (Azure Stream Analytics)
-  In Stream Analytics, all data stream events have a [timestamp](https://msdn.microsoft.com/azure/stream-analytics/reference/system-timestamp-stream-analytics) associated with them. Users can choose between application time or arrival time using the [TIMESTAMP BY](https://msdn.microsoft.com/en-us/library/azure/mt573293.aspx) keyword.
+  In Stream Analytics, all data stream events have a [timestamp](https://msdn.microsoft.com/azure/stream-analytics/reference/system-timestamp-stream-analytics) associated with them. Users can use the [TIMESTAMP BY](https://msdn.microsoft.com/en-us/library/azure/mt573293.aspx) keyword to choose between one of these two different times:
+  - **Application time**, that is to say the time the events are produced (as marked by the application/device generating the events);
+  - **Arrival time**, the time the event reached the cloud (e.g. arrival time in IoT Hub or Event Hub).
+  
   In addition to the choice of timestamp, users may need to define Late Arrival and Out of Order policy due to the following issues:
-- Producers of the events have clock skews. This is common when producers are from different machines, so they have different clocks.
-- Due to network latency, events originate from the same clock may arrive at Event Hub or IoT Hub in a different order from when they were originated
-- Clock skews between partitions.  When using non-partitioned queries, events from all partitions are merged by the timestamp of user’s choice. Clock skews between the partitions can result in delay of processing, because the merger needs to wait for the slowest partition.
+- **Producers of the events have clock skews**. This is common when producers are from different machines, so they have different clocks.
+- **Due to network latency**, events originate from the same clock may arrive at Event Hub or IoT Hub in a different order from when they were originated
+- **Clock skews between partitions**.  When using non-partitioned queries, events from all partitions are merged by the timestamp of user’s choice. Clock skews between the partitions can result in delay of processing, because the merger needs to wait for the slowest partition.
 
 Input streams that are not in order can be either: 
 - Sorted (and therefore **delayed**).
@@ -33,13 +36,13 @@ Stream Analytics tolerates late and out of order events when processing by appli
 
   
 ## **Out of Order Policy**  
-Having events ordered by time is very important in streaming analytics. However due to the 3 issues mentioned below it is often the case that they are received out-of-order, which may affect the results of our queries.
-The Out of Order Policy allows allow to **reorder events** by timestamp when they arrive within the defined tolerance window. 
+Having events ordered by time is very important in streaming analytics. However due to the 3 issues mentioned above, it is often the case that they are received out-of-order, which may affect the results of our queries.
+The Out of Order Policy allows to **reorder events** by timestamp when they arrive within the defined tolerance window. 
 Events that arrive later than tolerance are **either dropped or adjusted**, depending of the setting you choose.
 - Adjusted: Adjusted to appear to have arrived at the latest acceptable time. 
 - Dropped: Discarded.
 
-This setting can be adjusted in the Azure portal (in the “Event Ordering” tab of a job). For more information, please refer to [this page](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-out-of-order-and-late-events).
+This setting can be adjusted in the Azure portal (in the “Event Ordering” tab of a job). For more information, please refer to [the event order considerations page](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-out-of-order-and-late-events).
 
 When setting an out of order policy greater than 0, Stream Analytics will buffer events up to that window and reorder them using the user defined timestamp before applying the temporal transformation. Generally starting with a 3 second window first is a good best practice and then tune the value to reduce the number of events getting time adjusted. Note that because of the buffering, the side effect is the output is delayed by the same amount of time.
 As a result, you will need to tune the value to reduce the number of out of order events and keep the latency low.
@@ -50,7 +53,7 @@ As a result, you will need to tune the value to reduce the number of out of orde
 The late arrival tolerance window is used to account for delay in events reaching the input source because of various reasons outlined above.
 Briefly, late arrival window is the maximum delay between event generation and receiving of the event at input source. Adjustment based on Late arrival tolerance is done first and out of order is done next. The **System.Timestamp** column will have the final timestamp assigned to the event.
 
-This setting is applicable only when processing by Application time, otherwise it is ignored. It can also be set in the Azure portal (in the “Event Ordering” tab of a job). For more information, please refer to [this page](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-out-of-order-and-late-events).
+This setting is applicable only when processing by Application time, otherwise it is ignored. It can also be set in the Azure portal (in the “Event Ordering” tab of a job). For more information, please refer to [the event order considerations page](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-out-of-order-and-late-events).
 
 When an event is late, it’s timestamp is adjusted to the current enqueue time at the input source minus the late arrival tolerance window (or dropped, depending on the action chosen).
 When multiple partitions from the same input stream or multiple input streams are combined together, late arrival tolerance is the maximum amount of time every partition waits for new data. 
