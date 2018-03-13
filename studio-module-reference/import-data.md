@@ -31,7 +31,7 @@ After you define the data you want and connect to the source, [Import Data](impo
 > [!IMPORTANT]
 > Currently, there are limitations on the types of storage accounts that are supported. For more information, see [Technical Notes](#bkmk_Notes).
   
-If your source data changes, you can refresh the dataset and add new data by re-running [Import Data](import-data.md). However, if you don't want to rread from the source each time you run the experiment, select the **Use cached results** option to TRUE. When this option is selected, the module checks whether the experiment has run previously using the same source and same input options. If a previous run is found, the data in the cache is used, instead of re-loading the data from the source.
+If your source data changes, you can refresh the dataset and add new data by re-running [Import Data](import-data.md). However, if you don't want to re-read from the source each time you run the experiment, select the **Use cached results** option to TRUE. When this option is selected, the module checks whether the experiment has run previously using the same source and same input options. If a previous run is found, the data in the cache is used, instead of re-loading the data from the source.
  
 > [!NOTE]
 > This module was previously named **Reader**. If you previously used the **Reader** module in an experiment, it is renamed to [Import Data](import-data.md) when you refresh the experiment.  
@@ -162,7 +162,7 @@ The third example represents data that was lost during while saving from Excel i
 
 #### Dataset does not have column names
 
-If the dataset you are importing does not have column names, be sure to specify one of the "no header" options. When yo do so, **Import Data** adds default column names using the format Col1, Col2, etc. Later, use [Edit Metadata](edit-metadata.md) to fix the column names.
+If the dataset you are importing does not have column names, be sure to specify one of the "no header" options. When you do so, **Import Data** adds default column names using the format Col1, Col2, etc. Later, use [Edit Metadata](edit-metadata.md) to fix the column names.
 
 If you are exporting a dataset to a CSV file, use [Edit Metadata](edit-metadata.md) to add column names before converting or exporting it.
 
