@@ -19,10 +19,10 @@ ms.author: sngun
 ---
 # Time Skew Policies (Azure Stream Analytics)
   In Stream Analytics, all data stream events have a [timestamp](https://msdn.microsoft.com/azure/stream-analytics/reference/system-timestamp-stream-analytics) associated with them. Users can use the [TIMESTAMP BY](https://msdn.microsoft.com/en-us/library/azure/mt573293.aspx) keyword to choose between one of these two different times:
-  - **Application time**, that is to say the time the events are produced (as marked by the application/device generating the events);
-  - **Arrival time**, the time the event reached the cloud (e.g. arrival time in IoT Hub or Event Hub).
+- **Application time**, that is to say the time the events are produced (as marked by the application/device generating the events);
+- **Arrival time**, the time the event reached the cloud (e.g. arrival time in IoT Hub or Event Hub).
   
-  In addition to the choice of timestamp, users may need to define Late Arrival and Out of Order policy due to the following issues:
+In addition to the choice of timestamp, users may need to define Late Arrival and Out of Order policy due to the following issues:
 - **Producers of the events have clock skews**. This is common when producers are from different machines, so they have different clocks.
 - **Due to network latency**, events originate from the same clock may arrive at Event Hub or IoT Hub in a different order from when they were originated
 - **Clock skews between partitions**.  When using non-partitioned queries, events from all partitions are merged by the timestamp of user’s choice. Clock skews between the partitions can result in delay of processing, because the merger needs to wait for the slowest partition.
