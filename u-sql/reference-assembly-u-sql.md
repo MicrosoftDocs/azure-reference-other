@@ -14,7 +14,7 @@ ms.author: "edmaca"
 manager: "jhubbard"
 ---
 # REFERENCE ASSEMBLY (U-SQL)
-In order to use a [user-defined c# functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf), [user-defined aggregator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or [user-defined operator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo), the assemblies that contain their code need to be referenced in the U-SQL script.  
+In order to use a [user-defined c# functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf), [user-defined aggregator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or [user-defined operator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo), the assemblies that contain their code need to be referenced in the U-SQL script and the assembly has to be registered in the catalog with [CREATE ASSEMBLY](https://docs.microsoft.com/sql/t-sql/statements/create-assembly-transact-sql) command before you can reference it.
   
 The system then loads these assemblies to resolve names and types during compile time and load the code for execution.  
   
