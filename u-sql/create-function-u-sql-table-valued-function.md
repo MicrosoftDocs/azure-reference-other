@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 95421ea1-0455-4b97-996c-3068e2dc57b7
 caps.latest.revision: 27
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # CREATE FUNCTION (U-SQL): Table-valued Function
 The CREATE FUNCTION statement allows to create a table-valued function (often referred to as TVF).  

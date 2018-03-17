@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: eaa77b64-5264-4d25-81b9-3646e4687800
 caps.latest.revision: 11
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # ARRAY_AGG (U-SQL)
 The ARRAY_AGG aggregator creates a new [SQL.ARRAY](complex-built-in-u-sql-types.md) value per group that will contain the values of group as its items.  ARRAY_AGG is not preserving order of values inside a group. If an array needs to be ordered, a LINQ OrderBy can be used.  ARRAY_AGG and [EXPLODE](explode-u-sql.md) are conceptually inverse operations. 

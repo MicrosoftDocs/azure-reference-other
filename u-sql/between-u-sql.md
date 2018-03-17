@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: bda15970-9efb-4f2e-a6a1-4d0c423dc65c
 caps.latest.revision: 5
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # BETWEEN (U-SQL)
 The `BETWEEN` operator allows to compare a value against a data type specific range and returns true if the value is within the range given by the lower and upper bounds inclusive both boundaries, false otherwise. The types of the expressions have to be compatible or an error is raised.  

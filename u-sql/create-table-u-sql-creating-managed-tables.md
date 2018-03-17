@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 44965a00-d971-4ebc-ac7c-b667261d2f71
 caps.latest.revision: 13
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # CREATE TABLE (U-SQL): Creating Managed Tables
 U-SQL allows a table to be created by specifying a schema, or by specifying a query where the query’s result type implies the table’s schema. In both cases the table will have to have a clustered index specified in order to be able to contain data and both cases allow the table to be partitioned.  

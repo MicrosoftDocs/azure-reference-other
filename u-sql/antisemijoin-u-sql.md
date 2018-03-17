@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 57da496d-7a74-4a23-8c14-9636f4a20b6c
 caps.latest.revision: 15
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # ANTISEMIJOIN (U-SQL)
 Anti-Semijoins are U-SQL’s way filter a rowset based on the absence of its rows in another rowset. Other SQL dialects express this with the `SELECT * FROM A WHERE A.key NOT IN (SELECT B.key FROM B)` pattern. There are two variants: **`LEFT ANTISEMIJOIN`** and **`RIGHT ANTISEMIJOIN`**.  

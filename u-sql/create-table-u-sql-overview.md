@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: f7fdd48d-ecd5-4901-9f04-c460280b00ee
 caps.latest.revision: 16
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # CREATE TABLE (U-SQL): Overview
 U-SQL provides the ability to create both [managed and external tables](u-sql-tables.md#man_ext_tabls) as well as creating partitioned managed tables. Please follow the links in the following grammar rule to the respective sections.  

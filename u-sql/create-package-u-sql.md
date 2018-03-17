@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1c259ca8-5d7b-4b5f-89ef-70125034070f
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # CREATE PACKAGE (U-SQL)
 The `CREATE PACKAGE` statement creates a package to allow bundling of commonly used together U-SQL [assemblies](u-sql-assemblies.md), [variables](variables-u-sql.md) and resources.

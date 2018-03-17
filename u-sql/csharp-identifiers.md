@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b2eca158-8710-46fb-8918-c621e651e4a7
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # C# Identifiers
 C#-based identifiers are used for all built-in, referenced and user-defined C# objects, such as C# functions, methods, parameter names, [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo), [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf) etc. They follow the [C# definition](https://www.microsoft.com/download/details.aspx?id=7029) of what a valid identifier is with the exception that U-SQL does not support the so called verbatim identifiers in C# (@ prefixed names).  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6827d5ef-71ca-4231-a81c-55ec02d0014d
 caps.latest.revision: 7
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # ALTER DATA SOURCE (U-SQL)
 The `ALTER DATA SOURCE` statement allows to change an existing data source.  

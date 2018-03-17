@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: f9cb1046-3a79-4818-bf9a-2e584cc19075
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Cognitive Capabilities in U-SQL
 Building intelligent features into applications requires some form of prediction capability. There are two ways to go: either build your own model or using a pre-trained model for scoring.  Training a good model requires a lot of data and machine-learning expertise, both of which are rare commodities. To help, U-SQL packages many of the machine-learning models that power the [Microsoft Cognitive Services](https://azure.microsoft.com/services/cognitive-services/). Built by some of the leading minds in the industry, these models are trained against massive data sets, and are highly performant and accurate. This integration of the cognitive models in U-SQL lets you easily add intelligent features, such as emotion detection, face and speech recognition; language understanding and sentiment analysis to applications that work on massive amounts of data. 

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 4834edd0-efb3-4667-83ff-f4c6fcc78b44
 caps.latest.revision: 28
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Data Definition Language (DDL) Statements (U-SQL)
 While one of U-SQL’s strength is to operate on unstructured data stored in files, it can also provide structured views over the unstructured data, manage structured data in tables and provides a general metadata catalog system to organize your structured data and custom code, secure it and make it discoverable.  
