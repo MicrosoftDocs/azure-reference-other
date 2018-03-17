@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ab59a2b2-bcc5-4650-a91b-82797d2c67bb
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Image Tagging (U-SQL)
 Cognitive image tagging functions return information about visual content found in an image.  Use tagging, descriptions, and domain-specific models to identify content and label content with confidence. There are two ways in U-SQL to extract contents and its confidence from an image:

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 884fa21f-4a2a-4b77-a204-bd7711dbec52
 caps.latest.revision: 5
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # DROP PROCEDURE (U-SQL)
 The `DROP PROCEDURE` statement drops the specified procedure.  

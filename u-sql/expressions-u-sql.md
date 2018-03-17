@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1d21962f-ee61-4da3-b075-8d1bd5d1e8df
 caps.latest.revision: 13
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Expressions (U-SQL)
 In U-SQL, expressions operate on its typed values. These expressions appear in the context of [U-SQL statements](query-statements-and-expressions-u-sql.md) and consist of a few limited U-SQL operators and the full power of C# expressions.  

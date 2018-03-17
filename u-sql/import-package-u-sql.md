@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d001cc2f-51ca-48cd-b8e9-e2ce437d54b6
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # IMPORT PACKAGE (U-SQL)
 The `IMPORT PACKAGE` statement will import all the [assembly references](u-sql-assemblies.md), variable declarations and resource deployments exported by the specified package. The package identifier will be resolved in the static context of its invocation and can refer to a package in the current account or a different Azure Data Lake Analytics account. The optional arguments can be used inside the package.

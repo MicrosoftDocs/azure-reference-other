@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 21c135a1-328e-4717-882d-95d5bab15932
 caps.latest.revision: 36
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Extending U-SQL Expressions with User-Code
 One of the major values of U-SQL is how easy it is to add user-specific code written in C#. Since U-SQL’s type system is based on C# and the U-SQL scalar expression language on the instances of these types is the C# expression language, it is very easy to use the power of the C# language in U-SQL.  

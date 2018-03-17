@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 719b1e5b-b2ec-4e0b-bafc-6a0581fda7ad
 caps.latest.revision: 9
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # DROP DATA SOURCE (U-SQL)
 A data source can be dropped with the `DROP DATA SOURCE` statement.  

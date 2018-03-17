@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ecf15797-d5db-453a-9361-204db6558ed8
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # IF...ELSE (U-SQL)
 Imposes conditions on the execution of a U-SQL statement which is evaluated at compile time. The U-SQL statement that follows an IF keyword and its condition is executed if the condition is satisfied: the Boolean expression returns TRUE. The optional ELSE keyword introduces another U-SQL statement that is executed when the IF condition is not satisfied: the Boolean expression returns FALSE.

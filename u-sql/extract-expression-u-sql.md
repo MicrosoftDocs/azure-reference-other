@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 578cc7d8-4d7e-4c8e-acfc-d155df94a512
 caps.latest.revision: 32
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # EXTRACT Expression (U-SQL)
 One of U-SQL’s core capabilities is to be able to schematize unstructured data on the fly without having to create a metadata object for it. This capability is provided by the EXTRACT expression that will invoke either a [user-defined extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) or [built-in extractor](built-in-u-sql-udos.md) to process the input file or set of files specified in the FROM clause and produces a rowset whose schema is specified in the EXTRACT clause.  

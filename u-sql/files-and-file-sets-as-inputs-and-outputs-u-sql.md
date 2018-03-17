@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b7bc8893-7083-47af-9bb5-1de91e3fa6c2
 caps.latest.revision: 18
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Files and File Sets as Inputs and Outputs (U-SQL)
 [//]: * "Input and Output of Data"  

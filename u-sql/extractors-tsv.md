@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 50842423-ab2c-4300-9509-5a087be36578
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Extractors.Tsv()
 The Tsv() extractor disallows the `delimiter` parameter and defaults the field delimiter to '\t' (tab). All other parameters are the same.   See [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md) for supported parameters and their defaults values.   

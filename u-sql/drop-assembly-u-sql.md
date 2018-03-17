@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6d34f724-a0e0-4737-99ac-1d1623197863
 caps.latest.revision: 8
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # DROP ASSEMBLY (U-SQL)
 The `DROP ASSEMBLY` statement drops an assembly and any of its associated resources and files.  

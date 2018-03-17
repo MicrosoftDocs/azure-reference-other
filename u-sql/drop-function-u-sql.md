@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6e2c2be2-7ea8-42da-a392-acbaf92703df
 caps.latest.revision: 7
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # DROP FUNCTION (U-SQL)
 The `DROP TABLE` statement drops the specified function.  
