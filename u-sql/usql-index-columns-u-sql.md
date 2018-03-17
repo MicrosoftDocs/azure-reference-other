@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: a32ac219-e2cd-46d2-b378-5c089c6ce139
 caps.latest.revision: 2
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # usql.index_columns (U-SQL)
 Contains one row per column for the indices of the schemas for the current database context.

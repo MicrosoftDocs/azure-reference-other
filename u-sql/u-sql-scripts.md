@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: bd13c0e5-ff16-4256-a015-b55725c699a4
 caps.latest.revision: 22
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # U-SQL Scripts
 The main unit of a U-SQL “program” is a U-SQL script. A script consists of a sequence of U-SQL statements.  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 73fe3c6b-d2e2-49c5-bee2-992b44cae407
 caps.latest.revision: 10
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # U-SQL Table-valued Functions
 U-SQL provides the ability to wrap a sequence of [query statements](query-statements-and-expressions-u-sql.md) into a function that returns the resulting rowset and parameterize it. U-SQL table-valued functions are stored in the metadata catalog and can be shared with other users.  

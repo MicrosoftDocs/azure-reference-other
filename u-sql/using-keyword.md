@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 7e40faaa-c1b9-4903-b153-fe42f78d27a2
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # USING Keyword
 The `USING` directive is similar to the [C# using Directive](https://msdn.microsoft.com/library/sf0df423.aspx) in that it allows to shorten function, type, extention methods, and UDO path names.

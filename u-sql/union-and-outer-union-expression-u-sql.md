@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 9779ed25-b552-444c-9659-8d255222278d
 caps.latest.revision: 22
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # UNION and OUTER UNION Expression (U-SQL)
 UNION returns all the rows from both the left and right input query expressions.  

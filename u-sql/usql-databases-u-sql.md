@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1669a36f-277e-4dd6-836f-7cab58821d81
 caps.latest.revision: 2
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # usql.databases  (U-SQL)
 Contains one row per database belonging to the account's catalog.

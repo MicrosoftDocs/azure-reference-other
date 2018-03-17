@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b1496ee6-defd-478f-939f-06c2604533a3
 caps.latest.revision: 2
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # usql.partition_parameters (U-SQL)
 Provides details about the partition parameters for the partition schemes in the schemas of the current database context. The partitioned table must contain at least one record.

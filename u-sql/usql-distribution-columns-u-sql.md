@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e3967e8d-a1b8-4e00-ac59-ac2d19b835a2
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # usql.distribution_columns (U-SQL)
 Returns the columns used by the distribution schemes for the tables in the schemas of the current database context.

@@ -8,10 +8,9 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8aae226c-d132-4f0a-88f6-54267bccd58d
-caps.latest.revision: 7
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # U-SQL Sampling Methods
 

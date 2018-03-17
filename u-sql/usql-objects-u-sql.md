@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 469ae246-c58b-4ae6-bf7c-fea178803471
 caps.latest.revision: 2
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # usql.objects (U-SQL)
 Contains a row for certain schema-scoped objects that are created within a database.  Currently `usql.objects` only includes tables, views, table-valued functions and table types. Other objects such as procedures and packages will be added in the future.
