@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ddcdc4e7-75c3-4678-a662-20a3ab433e55
 caps.latest.revision: 16
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # U-SQL Database Schemas
 Similar to other database systems and ANSI SQL, U-SQL uses the concept of a schema to group related objects together in the context of a database.   

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 15eecf2d-2801-4857-bc9f-936b9df7c8eb
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Textual Types and Literals
 U-SQL’s built-in textual types are:

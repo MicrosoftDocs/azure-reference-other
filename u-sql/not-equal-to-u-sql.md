@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 7fa982b9-2a55-428b-a3ba-6ded68d85905
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # != (Not Equal To) (U-SQL)
 Tests whether one expression is not equal to another expression (a comparison operator). 

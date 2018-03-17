@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b2478c92-2c3f-4b25-bef7-460f81d245f1
 caps.latest.revision: 10
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Other Operators (U-SQL)
 U-SQL provides other additional operators that are not part of the C# family of operators and do not fit into the other categories of [C# Functions and Operators](csharp-functions-and-operators-u-sql.md). 

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 0e51f64f-814a-428d-84d1-5001451e5b16
 caps.latest.revision: 18
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # SELECT Expression (U-SQL)
 The SELECT expression is the transformation and query workhorse. It basically follows the standard SQL SELECT expression.  

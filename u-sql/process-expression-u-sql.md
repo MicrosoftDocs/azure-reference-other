@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 39277bfa-0984-471f-b628-9d4eeb6f9a21
 caps.latest.revision: 29
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # PROCESS Expression (U-SQL)
 U-SQL provides the ability to write custom rowset processors in C# using the [user-defined operator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) extensibility framework by implementing an `IProcessor`.  For more information, see [U-SQL Programmability Guide: User-Defined Processor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-processor).

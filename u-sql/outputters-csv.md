@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e439d202-1b1d-4cd9-b2b9-71c275cc2ae3
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Outputters.Csv()
 ### Outputting CSV Files    

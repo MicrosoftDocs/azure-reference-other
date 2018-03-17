@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: eb0ea384-2068-4b56-985e-3bbc1b1f8b23
 caps.latest.revision: 13
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # U-SQL Built-in Outputters
 U-SQL provides a built-in outputter class called `Outputters` that provides the following three built-in outputters to transform a rowset into a [file or set of files](output-to-files-u-sql.md):    

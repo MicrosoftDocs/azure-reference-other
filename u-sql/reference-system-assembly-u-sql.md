@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ae98386b-9a32-4341-97e0-057a96ce4289
 caps.latest.revision: 10
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # REFERENCE SYSTEM ASSEMBLY (U-SQL)
 U-SQL provides a small set of preloaded system assemblies for the C# core and the most commonly used C# functions. The set is being kept small to reduce the amount of assemblies that the query processor will have to load and process at runtime.  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e9f1b5f6-4d97-49c1-954e-481d0b719a56
 caps.latest.revision: 2
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # * (Multiply) (U-SQL)
 Multiplies two expressions (an arithmetic multiplication operator). 

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5a3f808c-8638-4710-98d3-3160a8e4d5ed
 caps.latest.revision: 17
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # U-SQL Credential Objects
 > [!WARNING] 

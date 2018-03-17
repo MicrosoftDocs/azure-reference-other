@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: cd5ba00f-6771-4c16-b753-7091a7172710
 caps.latest.revision: 17
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # SAMPLE Expression (U-SQL)
 USQL supports samplers natively. The sample expression is needed to access some types of samplers. 

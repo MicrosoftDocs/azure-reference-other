@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: a4efb3a8-b3ac-4334-a01b-f63461f3fa67
 caps.latest.revision: 7
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Outputters.Text()
 ### Outputting textual row-oriented files    

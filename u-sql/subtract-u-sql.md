@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: bd2b059b-96ea-4180-953b-620a20d22978
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # - (Subtract) (U-SQL)
 Subtracts two [numbers](numeric-types-and-literals.md) (an arithmetic subtraction operator).  Can also calculate [date and time](temporal-types-and-literals.md) differences.

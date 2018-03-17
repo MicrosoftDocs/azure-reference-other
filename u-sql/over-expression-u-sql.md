@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 04a87949-3ff3-491e-af75-4927a000ac63
 caps.latest.revision: 26
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # OVER Expression (U-SQL)
 A windowing expression is an expression whose value is computed by applying for every row a window function to multiple row values of a column (the window defined by the OVER operator) instead of just the column’s value of the row.  

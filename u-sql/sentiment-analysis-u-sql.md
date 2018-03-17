@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 470c25ae-e61b-4857-9b96-ceeb8f3229c2
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "Ryan.Waite"
 ---
 # Sentiment Analysis (U-SQL)
 The `SentimentAnalyzer` cognitive function evaluates sentiment from the text. It returns a numeric score between 0 and 1 long with the sentiment string from the text. Scores close to 1 indicate positive sentiment and scores close to 0 indicate negative sentiment. Sentiment score is generated using classification techniques. The input features of the classifier include n-grams, features generated from part-of-speech tags, and word embeddings. English text is supported.
