@@ -11,7 +11,7 @@ ms.assetid: b09c9ab9-afcb-4831-b1f0-3ad4894a28d9
 caps.latest.revision: 5
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # DROP VIEW (U-SQL)
 A view can be dropped with the `DROP VIEW` statement. The statement drops the specified view but leaves the underlying data sources untouched.  

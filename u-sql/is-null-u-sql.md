@@ -11,7 +11,7 @@ ms.assetid: bd5f06b8-4a89-4821-946a-4cb6cb357a35
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # IS NULL (U-SQL)
 Determines whether a specified expression is NULL.  If the value of expression is NULL, IS NULL returns TRUE; otherwise, it returns FALSE.

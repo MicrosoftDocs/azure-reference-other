@@ -11,7 +11,7 @@ ms.assetid: c595b7fd-46d3-4d52-8fb4-c12212a623e7
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # &gt; (Greater Than) (U-SQL)
 Compares two expressions (a comparison operator). When you compare nonnull expressions, the result is TRUE if the left operand has a value higher than the right operand; otherwise, the result is FALSE.

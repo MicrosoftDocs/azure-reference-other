@@ -11,7 +11,7 @@ ms.assetid: c08dfe02-06cd-4c98-8cb2-4f05ff782056
 caps.latest.revision: 8
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # LAG (U-SQL)
 The LAG analytic function provides access to a row at a given physical offset that comes before the current row. Use this analytic function in a SELECT expression to compare values in the current row with values in a previous row.

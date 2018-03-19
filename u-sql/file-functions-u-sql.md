@@ -11,7 +11,7 @@ ms.assetid: 06838057-588a-44eb-963f-acdd3ec1629c
 caps.latest.revision: 5
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # FILE Functions (U-SQL)
 These intrinsic functions are currently always evaluated at compile time (and thus considered constant-foldable). They can be called as part of any scalar expression.

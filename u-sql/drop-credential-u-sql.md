@@ -11,7 +11,7 @@ ms.assetid: 06a4742e-d625-450d-9977-ebd317c1fd4c
 caps.latest.revision: 8
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # DROP CREDENTIAL (U-SQL)
 > [!WARNING] 

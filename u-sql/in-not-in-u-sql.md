@@ -11,7 +11,7 @@ ms.assetid: ac5ad2d0-7882-46a9-bcf8-8ea0c9510aba
 caps.latest.revision: 8
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # IN, NOT IN (U-SQL)
 U-SQL provides the `IN` and `NOT IN` comparison operators to test for membership in a set of values. It returns true if the value is equal to at least one value in the list, false otherwise for `IN` and true if the value is not in the list and false otherwise for `NOT IN`.  

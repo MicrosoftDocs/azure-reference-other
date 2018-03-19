@@ -11,7 +11,7 @@ ms.assetid: 5fe7d149-2f9b-40ac-9245-74b98a99ff04
 caps.latest.revision: 8
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # DROP TYPE (U-SQL)
 U-SQL named types can be deleted with the `DROP TYPE` statement.  

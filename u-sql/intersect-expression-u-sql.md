@@ -11,7 +11,7 @@ ms.assetid: 171a3c6a-ebce-48b1-bf23-d08f116c5c52
 caps.latest.revision: 20
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # INTERSECT Expression (U-SQL)
 INTERSECT returns rows that are in common by both the left and right input query expressions either by matching positionally or – if specified – by column names.

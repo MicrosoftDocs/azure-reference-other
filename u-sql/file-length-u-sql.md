@@ -11,7 +11,7 @@ ms.assetid: 4b639131-561e-41eb-b0e5-e9d24db6c860
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # FILE.LENGTH (U-SQL)
 Returns the logical size in bytes of the file at the specified location at compile time.

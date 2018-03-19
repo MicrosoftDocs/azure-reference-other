@@ -11,7 +11,7 @@ ms.assetid: bc7db2cd-b571-4253-a4e0-4bbd68904414
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Face Detection (U-SQL)
 Cognitive face detection functions detect one or more human faces in an image and return face rectangles for where in the image the faces are, along with face attributes like age and gender. There are two ways in U-SQL to extract age and gender from the face in an image:

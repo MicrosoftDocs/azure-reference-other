@@ -11,7 +11,7 @@ ms.assetid: f356ebc7-24ea-449e-8d16-7f8867d89d79
 caps.latest.revision: 8
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # LAST_VALUE (U-SQL)
 The LAST_VALUE analytic function returns the last value in an ordered set of values provided by the [windowing expression](over-expression-u-sql.md). 

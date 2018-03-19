@@ -11,7 +11,7 @@ ms.assetid: d0e36e0d-8b2c-404b-84db-828c2cd2f17e
 caps.latest.revision: 22
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # FROM Clause (U-SQL)
 The FROM clause specifies the input rowsets to the SELECT expression and how the rowsets are being combined into the SELECT expression’s rowset.  

@@ -11,7 +11,7 @@ ms.assetid: bd05f3f4-5c23-4372-9414-aabd747b7952
 caps.latest.revision: 7
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # LIKE, NOT LIKE (U-SQL)
 U-SQL provides the `LIKE` and `NOT LIKE` comparison operators that are [familiar from T-SQL](https://msdn.microsoft.com/library/ms179859.aspx) that checks if a [string](textual-types-and-literals.md) value matches or does not match a simple pattern. The pattern can include regular characters and wildcard characters. During pattern matching, regular characters must exactly match the characters specified in the character [string](textual-types-and-literals.md). However, wildcard characters can be matched with arbitrary fragments of the character [string](textual-types-and-literals.md). Note that the comparison is done with culture invariant [string](textual-types-and-literals.md) comparison using UTF-8 byte-level comparison. 

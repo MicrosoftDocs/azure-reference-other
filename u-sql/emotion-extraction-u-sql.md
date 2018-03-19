@@ -11,7 +11,7 @@ ms.assetid: c426dba2-3b23-498d-ba07-c04e82feffbb
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Emotion Extraction (U-SQL)
 Cognitive emotion functions detect one or more human faces in an image and get back face rectangles for where in the image the faces are, along with face attributes like emotion. There are two ways in U-SQL to extract emotions from the image:

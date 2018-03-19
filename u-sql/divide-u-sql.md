@@ -11,7 +11,7 @@ ms.assetid: b73eec71-0ba9-4fd7-91c5-a73a60467131
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # / (Divide) (U-SQL)
 Divides one [number](numeric-types-and-literals.md) by another (an arithmetic division operator). 

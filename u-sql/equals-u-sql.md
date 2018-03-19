@@ -11,7 +11,7 @@ ms.assetid: c46f3414-ff87-4688-8c7e-391cf0e8480e
 caps.latest.revision: 5
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # == (Equals) (U-SQL)
 Compares the equality of two expressions (a comparison operator).

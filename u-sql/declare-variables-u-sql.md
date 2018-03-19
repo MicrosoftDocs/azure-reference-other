@@ -11,7 +11,7 @@ ms.assetid: f11c4bbb-51ac-4f9c-a429-d96018118681
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # DECLARE Variables (U-SQL)
 The DECLARE statement initializes a U-SQL variable.

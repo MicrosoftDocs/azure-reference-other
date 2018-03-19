@@ -11,7 +11,7 @@ ms.assetid: b170d0e6-2f0a-455a-98d9-47ed8665d7f5
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # ImageExtractor (U-SQL)
 The `ImageExtractor` function from the `ImageCommon` assembly is used to extract data from images that will be consumed by other cognitive functions.  The current maximum size of a row is 4 MB so you will need to use images less than 4 MB in size when using `ImageExtractor`.

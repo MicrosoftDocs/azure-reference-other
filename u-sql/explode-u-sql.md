@@ -11,7 +11,7 @@ ms.assetid: fbf34283-3a54-43de-b040-602801bed463
 caps.latest.revision: 27
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # EXPLODE (U-SQL)
 The EXPLODE rowset expression accepts an expression or value of either type [SQL.ARRAY](complex-built-in-u-sql-types.md), [SQL.MAP](complex-built-in-u-sql-types.md)  or IEnumerable and unpacks (explodes) the values into a rowset.  

@@ -11,7 +11,7 @@ ms.assetid: 057567b4-8651-438f-bbca-c62cd1e5d010
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # FILE.MODIFIED (U-SQL)
 Returns the last modified timestamp of the file at the specified location at compile time as a DateTime value (Kind is `Unspecified`). 

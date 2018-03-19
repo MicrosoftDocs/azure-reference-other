@@ -11,7 +11,7 @@ ms.assetid: 884fa21f-4a2a-4b77-a204-bd7711dbec52
 caps.latest.revision: 5
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # DROP PROCEDURE (U-SQL)
 The `DROP PROCEDURE` statement drops the specified procedure.  

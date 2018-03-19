@@ -11,7 +11,7 @@ ms.assetid: 756b74bc-d005-4499-9656-f1071db579b7
 caps.latest.revision: 8
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # DENSE_RANK (U-SQL)
 The DENSE_RANK ranking function returns the rank of rows within the partition of a window, without any gaps in the ranking. The rank of a row is one plus the number of distinct ranks that come before the row in question. 

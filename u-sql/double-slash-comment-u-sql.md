@@ -11,7 +11,7 @@ ms.assetid: 7f3babf4-4ef1-4b6a-aead-40d99fb7b2de
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Double Slash Comment (U-SQL)
 Indicates user-provided text. Comments can be inserted on a separate line, nested at the end of a U-SQL command line, or within a U-SQL statement. The query processor does not evaluate the comment.

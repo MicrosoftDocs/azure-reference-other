@@ -11,7 +11,7 @@ ms.assetid: cef0638d-5639-4c2f-a117-370ec76546b2
 caps.latest.revision: 5
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Metadata Functions (U-SQL)
 The following scalar function(s) return information about the database and database objects:

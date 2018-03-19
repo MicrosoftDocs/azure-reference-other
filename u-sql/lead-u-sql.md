@@ -11,7 +11,7 @@ ms.assetid: 9c78e14c-65ed-416b-83c0-69b6436a350c
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # LEAD (U-SQL)
 The LEAD analytic function provides access to a row at a given physical offset that follows the current row. Use this analytic function in a SELECT expression to compare values in the current row with values in a following row.

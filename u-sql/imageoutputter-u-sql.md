@@ -11,7 +11,7 @@ ms.assetid: 1a266a35-c38a-41e7-ab0c-7a182a139080
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # ImageOutputter (U-SQL)
 The `ImageOutputter` function from the `ImageCommon` assembly is used to output an image. `ImageOutputter` takes a row and output stream as inputs, and its job is to stuff the row into the output stream. The row has one column, which is the representation of the image as a byte[].  Currently, U-SQL outputs to only one stream (which is ultimately a single file) in a U-SQL statement, which means only a single row can be practically processed, and so a single image is written to a single image file. The AtomicFileProcessing flag set to true. 

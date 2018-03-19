@@ -11,7 +11,7 @@ ms.assetid: 630ca300-e422-4b5e-99bd-d23197234535
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Extractor Parameters (U-SQL)
 |Parameters|

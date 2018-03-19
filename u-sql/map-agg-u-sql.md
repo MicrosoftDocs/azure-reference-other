@@ -11,7 +11,7 @@ ms.assetid: edb9ee42-42cc-4b53-bac2-8f6467f03861
 caps.latest.revision: 12
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # MAP_AGG (U-SQL)
 The MAP_AGG aggregator takes a key, value pair and creates a [SQL.MAP](complex-built-in-u-sql-types.md) for all the key/value pairs in the group. 

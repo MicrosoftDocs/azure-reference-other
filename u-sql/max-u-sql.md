@@ -11,7 +11,7 @@ ms.assetid: 3e0f1b7d-66e5-4e5f-bbd8-6e4de221eda5
 caps.latest.revision: 7
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # MAX (U-SQL)
 The MAX aggregator choses the largest value in the group or null if the expression returns only nulls in the group. The values have to be comparable. For string types, it uses a culture-invariant UTF-8 byte ordering. 

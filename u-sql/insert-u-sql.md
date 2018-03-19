@@ -11,7 +11,7 @@ ms.assetid: f272f4fb-6ba0-451d-b3c6-12f564c971bb
 caps.latest.revision: 12
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # INSERT (U-SQL)
 U-SQL provides the ability to insert rows an existing U-SQL table using the INSERT statement.  

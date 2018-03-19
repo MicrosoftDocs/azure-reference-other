@@ -11,7 +11,7 @@ ms.assetid: 6e2c2be2-7ea8-42da-a392-acbaf92703df
 caps.latest.revision: 7
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # DROP FUNCTION (U-SQL)
 The `DROP TABLE` statement drops the specified function.  

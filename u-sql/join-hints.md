@@ -11,7 +11,7 @@ ms.assetid: 30e67e1c-20b5-4ac0-947b-70e4da0da83f
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Join Hints
 In addition to the JOIN operators, U-SQL optionally allows the query author to provide hints on the type of join to choose and what parallel join execution to use.  
