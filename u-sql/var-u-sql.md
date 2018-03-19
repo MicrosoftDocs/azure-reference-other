@@ -11,7 +11,7 @@ ms.assetid: e4bb69b4-6e16-49d8-93a1-b85d14a3f4b1
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # VAR (U-SQL)
 The VAR aggregator returns the statistical variance of all nonnull values in the group or returns null if all the input values are null. The values have to be numeric or an error is raised. 

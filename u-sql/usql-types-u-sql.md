@@ -11,7 +11,7 @@ ms.assetid: 6d3488b9-5380-4b48-bd4b-97b59afca76d
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.types (U-SQL)
 

@@ -11,7 +11,7 @@ ms.assetid: 1669a36f-277e-4dd6-836f-7cab58821d81
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.databases  (U-SQL)
 Contains one row per database belonging to the account's catalog.

@@ -11,7 +11,7 @@ ms.assetid: c58d8b96-c29f-40cf-9e58-b94ecf69cf70
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.partition_range_values (U-SQL)
 Provides details about the range partition schemes for the partitioned tables in the schemas of the current database context. The partitioned table must contain at least one record.

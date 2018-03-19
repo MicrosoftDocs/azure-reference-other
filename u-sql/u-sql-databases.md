@@ -11,7 +11,7 @@ ms.assetid: f92f6bcf-d800-4eea-b9a3-513bf63bd139
 caps.latest.revision: 15
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Databases
 Similar to other database systems and SQL-inspired Big Data processing systems such as Hive, U-SQL uses the concept of a database to group related objects together.   

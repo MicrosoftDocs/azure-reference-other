@@ -11,7 +11,7 @@ ms.assetid: 103632cf-a0dc-43fb-9c25-6d3b7650ab78
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.functions (U-SQL)
 Contains one row per function belonging to the schemas in the current database context.

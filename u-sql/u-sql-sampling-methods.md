@@ -10,7 +10,7 @@ ms.topic: "reference"
 ms.assetid: 8aae226c-d132-4f0a-88f6-54267bccd58d
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Sampling Methods
 

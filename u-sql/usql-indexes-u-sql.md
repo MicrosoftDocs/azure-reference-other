@@ -11,7 +11,7 @@ ms.assetid: 4dcab57b-2e4e-4bdc-8766-8d31200f7367
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.indexes (U-SQL)
 Contains one row per index for the schemas of the current database context.

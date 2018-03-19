@@ -11,7 +11,7 @@ ms.assetid: e3967e8d-a1b8-4e00-ac59-ac2d19b835a2
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.distribution_columns (U-SQL)
 Returns the columns used by the distribution schemes for the tables in the schemas of the current database context.

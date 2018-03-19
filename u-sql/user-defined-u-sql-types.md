@@ -11,7 +11,7 @@ ms.assetid: 0268ad70-b45f-41cd-9756-f512bbc49205
 caps.latest.revision: 12
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # User-defined U-SQL Types
 U-SQL provides the ability to name table types that then can be used when defining U-SQL table-valued function parameters and return types and U-SQL procedure table-valued parameters.  

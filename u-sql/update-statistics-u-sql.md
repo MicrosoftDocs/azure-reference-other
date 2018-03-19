@@ -11,7 +11,7 @@ ms.assetid: 2b497c88-fce4-4e12-910b-8051306f434e
 caps.latest.revision: 14
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # UPDATE STATISTICS (U-SQL)
 U-SQL provides the `UPDATE STATISTICS` statement to update a previously created statistic on a table.  

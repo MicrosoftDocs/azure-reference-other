@@ -11,7 +11,7 @@ ms.assetid: 3bf4aae8-c521-434d-9f86-e097ec833e03
 caps.latest.revision: 21
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Functions
 U-SQL supports scalar functions and table-valued functions. Functions generally take 0 to n arguments and will return a value as a result. While they should be deterministic and side-effect free to not negatively affect U-SQL’s declarative semantics, there is no guarantee that all functions will satisfy this requirement. For more details refer to the function categories below.  

@@ -11,7 +11,7 @@ ms.assetid: 398fe8e3-a16c-4dea-b437-a7074fc4cbde
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # VARP (U-SQL)
 The VARP aggregator returns the statistical variance for the population for all nonnull values in the group or returns null if all the input values are null. The values have to be numeric or an error is raised. 

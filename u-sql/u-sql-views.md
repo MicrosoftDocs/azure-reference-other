@@ -11,7 +11,7 @@ ms.assetid: 3a5df149-b79b-474b-bfee-ae9fe98e3218
 caps.latest.revision: 14
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Views
 U-SQL supports creating and dropping views over rowsets.  

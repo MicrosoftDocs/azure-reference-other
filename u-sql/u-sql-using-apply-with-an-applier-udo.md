@@ -11,7 +11,7 @@ ms.assetid: 3e647aa1-46bd-4fd3-a586-3ef06d1e5667
 caps.latest.revision: 18
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Using APPLY with an Applier UDO
 U-SQL’s [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo)

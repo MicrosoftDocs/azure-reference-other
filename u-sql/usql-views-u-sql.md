@@ -11,7 +11,7 @@ ms.assetid: b601faa1-0741-410a-b51f-f36c1506fc2b
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.views (U-SQL)
 Returns a row for each view belonging to the schemas in the current database context. The schema inherits the columns from the [usql.objects](usql-objects-u-sql.md) view and adds the view specific properties to it.

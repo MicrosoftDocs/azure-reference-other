@@ -11,7 +11,7 @@ ms.assetid: 6b54834f-fa91-4463-ac6d-2f0783de1aa0
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.schemas (U-SQL)
 Contains a row for each database schema in the current database context.

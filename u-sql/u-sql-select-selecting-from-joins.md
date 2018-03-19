@@ -11,7 +11,7 @@ ms.assetid: a3eec714-314c-43f6-9e11-1bf5586eabd5
 caps.latest.revision: 21
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL SELECT Selecting from Joins
 U-SQL provides the following ways of joining two rowsets:  

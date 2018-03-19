@@ -11,7 +11,7 @@ ms.assetid: 81475683-f866-4042-89fc-bbb5e800a947
 caps.latest.revision: 13
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Variables (U-SQL)
 Variables allow you to name scalar and rowset expressions. 

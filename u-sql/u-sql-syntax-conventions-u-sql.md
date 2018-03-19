@@ -11,7 +11,7 @@ ms.assetid: c9ac5833-5029-477c-a844-8bb9fdd88532
 caps.latest.revision: 5
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Syntax Conventions (U-SQL)
 This document uses an [Extended Backus-Naur syntax](http://matt.might.net/articles/grammars-bnf-ebnf/) notation of the following structure:  

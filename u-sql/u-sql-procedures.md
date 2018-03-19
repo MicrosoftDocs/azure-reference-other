@@ -11,7 +11,7 @@ ms.assetid: 70d3cbcb-ea15-42f0-910c-de3929fa863c
 caps.latest.revision: 16
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Procedures
 U-SQL provides the ability to name scripts as procedures and parameterize them. Unlike procedures in other query languages, such as T-SQL or PL/SQL, U-SQL’s procedures do **not** provide any imperative code-flow constructs such as a `for` or `while` loops. Its main differences to U-SQL functions are:    

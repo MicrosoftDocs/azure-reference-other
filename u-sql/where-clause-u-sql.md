@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d46f3b30-2754-4ea5-b7eb-5af1df8d8def
 caps.latest.revision: 13
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # WHERE Clause (U-SQL)
 The optional `WHERE` clause in a [SELECT](select-expression-u-sql.md) expression will filter the rowset that the [FROM](from-clause-u-sql.md) clause calculated.  

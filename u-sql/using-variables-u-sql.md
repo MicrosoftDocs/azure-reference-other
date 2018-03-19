@@ -11,7 +11,7 @@ ms.assetid: 91666d8a-fbcc-494a-9f31-4770d1c880f3
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Using Variables (U-SQL)
 

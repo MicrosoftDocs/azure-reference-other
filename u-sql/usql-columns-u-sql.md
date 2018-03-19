@@ -11,7 +11,7 @@ ms.assetid: 432cff25-ab72-40bb-af22-94e0ee3a8176
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.columns (U-SQL)
 Returns a row for each column in tables and table types in the schemas of the current database context.

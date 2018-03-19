@@ -11,7 +11,7 @@ ms.assetid: 3e454008-66bf-441a-b78c-49ed6abb1216
 caps.latest.revision: 2
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # usql.stats_columns (U-SQL)
 

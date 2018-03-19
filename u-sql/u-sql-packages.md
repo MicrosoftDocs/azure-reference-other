@@ -11,7 +11,7 @@ ms.assetid: 01ee7364-1a44-4892-9808-973c663e26f0
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Packages
 A U-SQL package allows the bundling of commonly used constant declarations, assembly references and resource deployments in a single meta data object to make sharing and referencing easier.

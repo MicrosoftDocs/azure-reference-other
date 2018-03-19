@@ -11,7 +11,7 @@ ms.assetid: f4a11b31-0aa3-4d9a-b3f2-942f31a0b4d8
 caps.latest.revision: 17
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # VALUES Expression (U-SQL)
 U-SQL offers the ability to create a table using constant values using the Table Value Constructor `VALUES` expression that can be used by a [SELECT](select-expression-u-sql.md) expression’s [FROM](from-clause-u-sql.md) clause or by [INSERT](insert-u-sql.md) statement as an input rowset. The names for the columns are provided by the SELECT’s mandatory derived table alias or the target table’s columns in the [INSERT](insert-u-sql.md) case.   

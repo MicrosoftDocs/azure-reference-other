@@ -11,7 +11,7 @@ ms.assetid: c72a4568-4d10-4cc5-bf8f-18685f5dbd1b
 caps.latest.revision: 17
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # USE DATABASE (U-SQL)
 In order to simplify using names of objects in other databases than the default context database, U-SQL provides the ability to set a different database as the context database with the USE DATABASE statement. This sets the specified database as the new context database for all metadata object names in the remainder of the script until it gets changed with another `USE` statement. It also automatically sets the schema context to the database’s dbo schema. Therefore all names that are not fully qualified will be resolved with respect to the new context.  

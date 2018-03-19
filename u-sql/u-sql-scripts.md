@@ -11,7 +11,7 @@ ms.assetid: bd13c0e5-ff16-4256-a015-b55725c699a4
 caps.latest.revision: 22
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Scripts
 The main unit of a U-SQL “program” is a U-SQL script. A script consists of a sequence of U-SQL statements.  
