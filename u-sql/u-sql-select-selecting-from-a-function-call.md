@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: efb9774b-37b6-4156-92d6-3586c0da8410
 caps.latest.revision: 15
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL SELECT Selecting from a Function Call
 U-SQL allows selecting from a table-valued function (TVF). Note that U-SQL Table-valued functions – unlike their T-SQL cousins – are always inlined where they are called.  

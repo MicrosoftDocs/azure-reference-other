@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: fd604915-bbe9-4f21-adfb-6a84b1b08f5d
 caps.latest.revision: 22
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL SELECT Selecting from an External Rowset
 U-SQL allows selecting from an external data source in three ways:  

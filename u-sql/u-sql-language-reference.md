@@ -11,9 +11,9 @@ helpviewer_keywords:
   - "U-SQL"
 ms.assetid: e99e2a4c-2d78-4a7e-92d0-81ca0b57c25e
 caps.latest.revision: 32
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL Language Reference
 [//]: # "U-SQL Language Reference"  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8a7b3cc8-df8b-4c6a-b981-7d8c657ef47e
 caps.latest.revision: 30
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL Tables
 Similar to other database systems and SQL-inspired Big Data processing systems such as Hive, U-SQL uses the concept of a table to provide a data container that contains schematized structured data. Tables provide additional optimizations beyond a schematized view over unstructured files. Some of these optimizations consists of having the data arranged according to a key, the option to partition the table into several individually addressable partition buckets, the ability to internally partition the table or one of its partition buckets according to a partition key, and finally store the data in their native type serialization formats.   

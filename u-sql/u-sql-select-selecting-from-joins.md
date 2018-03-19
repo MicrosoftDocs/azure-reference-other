@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: a3eec714-314c-43f6-9e11-1bf5586eabd5
 caps.latest.revision: 21
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL SELECT Selecting from Joins
 U-SQL provides the following ways of joining two rowsets:  

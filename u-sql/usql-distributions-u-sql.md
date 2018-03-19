@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 9487d7ec-7a89-433c-9f52-b3d5e7707095
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # usql.distributions (U-SQL)
 Contains one row per distribution scheme for the tables in the schemas of the current database context.
