@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 506a52f9-8e11-480f-8e71-5f594d74d601
 caps.latest.revision: 9
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # NTILE (U-SQL)
 The NTILE ranking function returns the number of the group to which the row belongs from among the groups that the windowing function has distributed the rows using an ordered partition. The groups are numbered, starting at one.  

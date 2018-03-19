@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5a492d5b-08a8-4e59-8355-a386be47c26f
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # STDEVP (U-SQL)
 The STDEVP aggregator returns the statistical standard deviation for the population for all nonnull values in the group or returns null if all the input values are null. The values have to be numeric or an error is raised. 

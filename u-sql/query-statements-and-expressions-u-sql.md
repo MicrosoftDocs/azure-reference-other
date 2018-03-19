@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 47fe30cc-dd08-4ab5-bac8-37de08588b4a
 caps.latest.revision: 32
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Query Statements and Expressions (U-SQL)
 The core processing capability of U-SQL is to transform between rowsets using query expressions. This is done by combining query statements in a [U-SQL script](u-sql-scripts.md).  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e425e9f0-b531-48d3-8a3f-2e0068ad12bd
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # OR (U-SQL)
 U-SQL’s logical OR operator performs a disjunction of two Boolean expressions and returns true if at least one of the two expression is true and returns false if both expressions are false. Unlike the equivalent C# [||](https://msdn.microsoft.com/library/f355wky8.aspx) expression, OR will not preserve the execution order and will not short-cut the expression evaluation. 

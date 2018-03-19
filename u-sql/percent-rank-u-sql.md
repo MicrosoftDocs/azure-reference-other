@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e67015f4-620a-4b3c-979e-77196bb8412b
 caps.latest.revision: 8
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # PERCENT_RANK (U-SQL)
 The PERCENT_RANK analytic function calculates the relative rank of a row within a group of rows specified by the [windowing expression](over-expression-u-sql.md).  
