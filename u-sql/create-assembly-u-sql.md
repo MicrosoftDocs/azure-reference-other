@@ -11,7 +11,7 @@ ms.assetid: da494f4a-ace2-4e74-bb40-188c6ca767de
 caps.latest.revision: 17
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE ASSEMBLY (U-SQL)
 If a .NET assembly is required during script compilation (for example because it specifies a function or type that needs to be resolved during compile time), then it needs to be registered.  

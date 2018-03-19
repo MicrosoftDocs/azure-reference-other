@@ -11,7 +11,7 @@ ms.assetid: b4f684cb-1f61-4056-8bc8-3d490c50789d
 caps.latest.revision: 28
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # COMBINE Expression (U-SQL)
 U-SQL provides the ability to write custom rowset combiners in C# using the [user-defined operator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) extensibility framework by implementing an `ICombiner`.  See [U-SQL Programmability Guide: User-Defined Combiner](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-combiner)

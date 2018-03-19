@@ -11,7 +11,7 @@ ms.assetid: c3bebe09-672b-43b1-9e4f-2a469b9b9e8e
 caps.latest.revision: 19
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets
 In order to add or remove vertical partition buckets from a partitioned table, U-SQL provides the following `ALTER TABLE` statements.  

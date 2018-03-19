@@ -11,7 +11,7 @@ ms.assetid: c351b21d-d84c-417e-bdee-a7ebc0a3413e
 caps.latest.revision: 8
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Built-In U-SQL Types
 Any C# type can be used in U-SQL (and C#) expressions, but only a limited subset of them can be used as column types in a rowset. These types are called *built-in U-SQL types*.  

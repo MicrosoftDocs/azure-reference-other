@@ -11,7 +11,7 @@ ms.assetid: 69a33777-f6a1-4b68-a273-f91d5cd0a1c9
 caps.latest.revision: 9
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # ALTER CREDENTIAL (U-SQL)
 > [!WARNING] 

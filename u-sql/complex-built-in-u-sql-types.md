@@ -11,7 +11,7 @@ ms.assetid: cbe2dd23-e1ba-410d-a2d7-d77a7b21b2c5
 caps.latest.revision: 20
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Complex Built-In U-SQL Types
 U-SQL supports the following two built-in complex types:  

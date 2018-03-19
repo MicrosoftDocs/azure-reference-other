@@ -11,7 +11,7 @@ ms.assetid: 26ad12bb-68af-4dfb-936e-1c6dc11a04e4
 caps.latest.revision: 13
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Built-in U-SQL UDOs
 U-SQL provides some common UDOs already built-in. Currently the built-in UDOs are providing [extraction from](u-sql-built-in-extractors.md) and [outputting to](u-sql-built-in-outputters.md) some common data formats. More UDOs may be added over time.  

@@ -11,7 +11,7 @@ ms.assetid: 527c7c01-3755-4d04-b85c-5844a85c2583
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Built-in U-SQL System Objects and Extensions
 U-SQL offers a set of built-in system objects and allows customers to install some extension libraries that provide additional capabilities to U-SQL.

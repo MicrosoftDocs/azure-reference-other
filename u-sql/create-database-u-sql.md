@@ -11,7 +11,7 @@ ms.assetid: e3ddc453-fd1f-42b8-bc49-981ddc44d10c
 caps.latest.revision: 14
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE DATABASE (U-SQL)
 This statement creates a new U-SQL database with the specified name.  

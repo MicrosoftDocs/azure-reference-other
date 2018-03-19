@@ -11,7 +11,7 @@ ms.assetid: 1c259ca8-5d7b-4b5f-89ef-70125034070f
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE PACKAGE (U-SQL)
 The `CREATE PACKAGE` statement creates a package to allow bundling of commonly used together U-SQL [assemblies](u-sql-assemblies.md), [variables](variables-u-sql.md) and resources.

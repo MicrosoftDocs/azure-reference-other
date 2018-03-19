@@ -11,7 +11,7 @@ ms.assetid: 2430396f-e5c8-4d7f-96aa-910be80d9c31
 caps.latest.revision: 20
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE INDEX (U-SQL)
 This statement creates a clustered index with the given name on the specified table.

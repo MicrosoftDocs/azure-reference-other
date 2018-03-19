@@ -11,7 +11,7 @@ ms.assetid: 574f9b70-684e-49c5-8d9f-5db89f24e070
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Arithmetic Operators (U-SQL)
 Arithmetic operators perform mathematical operations on two expressions of one or more of the data types of the numeric data type category. For more information about data type categories, see [Numeric Types and Literals](numeric-types-and-literals.md).

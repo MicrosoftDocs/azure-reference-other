@@ -11,7 +11,7 @@ ms.assetid: 671f0615-b52e-4192-9f0f-487b8ade8882
 caps.latest.revision: 10
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Analytic Functions (U-SQL)
 U-SQL supports a set of SQL-based analytic functions that compute an aggregate value based on a group of rows. However, unlike [aggregate functions](aggregate-functions-u-sql.md), they can return multiple rows for each group. You can use analytic functions to compute moving averages, running totals, percentages or top-N results within a group.  

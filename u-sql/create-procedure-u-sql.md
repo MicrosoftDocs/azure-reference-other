@@ -11,7 +11,7 @@ ms.assetid: d76e025a-b482-48bf-b157-eb7148bf6401
 caps.latest.revision: 16
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE PROCEDURE (U-SQL)
 U-SQL creates a procedure with the `CREATE PROCEDURE` statement.  For information on calling a procedure, see [Calling a Procedure (U-SQL)](calling-a-procedure-u-sql.md)

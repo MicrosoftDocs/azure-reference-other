@@ -11,7 +11,7 @@ ms.assetid: b24dc8d2-059b-480d-9280-6cde61e239cf
 caps.latest.revision: 31
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE TABLE (U-SQL): Creating a Table with Schema
 U-SQL allows a managed table to be created by specifying a schema. The table will have to have a clustered index specified in order to be able to contain data and the table will be partitioned.  

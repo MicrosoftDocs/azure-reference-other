@@ -11,7 +11,7 @@ ms.assetid: 14716fd9-fcdb-4294-b92e-cbc105924f4e
 caps.latest.revision: 31
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # C# Functions and Operators (U-SQL)
 U-SQL’s core reliance on C#-for its [U-SQL type](data-types-and-literals-u-sql.md) system and [U-SQL’s expression](expressions-u-sql.md) language provides the query writer access to the wealth of the C# and CLR libraries of classes, methods, functions, operators and types. It would go beyond the scope of this documentation to repeat all C# functions and operators, so it will limit itself to a few examples of frequently used operators and functions and shows which system assemblies are already included. The section [REFERENCE SYSTEM ASSEMBLY](reference-system-assembly-u-sql.md)   provides a list of all preloaded system assemblies and explains how to add additional system assemblies.  

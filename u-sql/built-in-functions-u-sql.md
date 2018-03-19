@@ -11,7 +11,7 @@ ms.assetid: f2c5fd54-3307-40ee-a2b6-8e5ccd31339c
 caps.latest.revision: 16
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Built-in Functions (U-SQL)
 While U-SQL is using C# as its expression language and thus has a large set of the Common Language Runtime (CLR) libraries and all of C#’s operators at the user’s disposal, it also adds a couple of common Built-in U-SQL Functions.

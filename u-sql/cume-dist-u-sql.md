@@ -11,7 +11,7 @@ ms.assetid: ab535e58-e844-4cc1-8b04-0a0a5ad2e4d2
 caps.latest.revision: 9
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CUME_DIST (U-SQL)
 The CUME_DIST analytic function calculates the cumulative distribution of a value in a group of values. That is, CUME_DIST computes the relative position of a specified value in a group of values. For a row r, assuming ascending ordering, the CUME_DIST of r is the number of rows with values lower than or equal to the value of r, divided by the number of rows evaluated in the group. Thus, the range of values returned by CUME_DIST is greater than 0 and less than or equal to 1. Tie values always evaluate to the same cumulative distribution value. NULL values are included by default and are treated as the highest possible values. 

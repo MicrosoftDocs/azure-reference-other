@@ -11,7 +11,7 @@ ms.assetid: 51cd2509-5db8-4a5f-8f5b-5461782a928a
 caps.latest.revision: 16
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Aggregate Functions (U-SQL)
 U-SQL provides both built-in aggregation functions and the ability for the user to define [user-defined aggregators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg).  

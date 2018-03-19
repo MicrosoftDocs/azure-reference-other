@@ -11,7 +11,7 @@ ms.assetid: f3ce61c3-505d-42a6-b64d-fc364e513eff
 caps.latest.revision: 21
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE EXTERNAL TABLE (U-SQL)
 U-SQL provides the ability to create external tables over data that is not owned by the U-SQL metadata object itself. Currently external tables are offered over data stored in Azure SQL Databases and are created with the CREATE EXTERNAL TABLE statement.  

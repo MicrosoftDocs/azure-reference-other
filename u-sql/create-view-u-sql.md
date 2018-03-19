@@ -11,7 +11,7 @@ ms.assetid: 1b81aed5-c904-45be-ae5f-3725da8b0df1
 caps.latest.revision: 7
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE VIEW (U-SQL)
 The `CREATE VIEW` statement creates the view with the specified identifier based on the provided query expression. The view’s schema is inferred from the query’s result type.  

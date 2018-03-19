@@ -11,7 +11,7 @@ ms.assetid: 1edce2d1-1e57-4493-ac2b-3e11acb68704
 caps.latest.revision: 18
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Data Modification Language (DML) Statements (U-SQL)
 U-SQL currently only provides a limited set of statements that persist data and no statement that directly changes persisted data.  

@@ -11,7 +11,7 @@ ms.assetid: b7f30c13-afac-4158-a332-941fc10ef59e
 caps.latest.revision: 5
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Control-of-Flow Language (U-SQL)
 The U-SQL control-of-flow language keywords are:

@@ -11,7 +11,7 @@ ms.assetid: 9e52b001-6176-4aab-9623-b29c03095392
 caps.latest.revision: 11
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE STATISTICS (U-SQL)
 U-SQL provides the `CREATE STATISTICS` statement to create query optimization statistics on a column of a table.  

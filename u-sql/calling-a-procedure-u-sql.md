@@ -11,7 +11,7 @@ ms.assetid: 99001354-3702-41da-a540-413266a4486b
 caps.latest.revision: 9
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Calling a Procedure (U-SQL)
 A procedure can be called inside a script or procedure and will be inlined into the execution graph before executing it. The invocation is similar to a table-valued function invocation with the difference that no rowset variable is being assigned.  The compiler does not allow more than 50 nested procedure calls to prevent stack overflow; please make sure that procedures are called with less nesting.

@@ -11,7 +11,7 @@ ms.assetid: bf4a7487-fe80-4bba-bf1a-5c435f49e836
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Catalog Views (U-SQL)
 Catalog views return information that is used by U-SQL. We recommend that you use catalog views because they are the most general interface to the catalog metadata and provide the most efficient way to obtain, transform, and present customized forms of this information.

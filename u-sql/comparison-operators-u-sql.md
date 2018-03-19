@@ -11,7 +11,7 @@ ms.assetid: eee196fa-1b8f-4493-9236-86951e3c11fb
 caps.latest.revision: 13
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Comparison Operators (U-SQL)
 Comparison operators test whether two expressions are the same.

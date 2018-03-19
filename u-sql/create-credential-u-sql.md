@@ -11,7 +11,7 @@ ms.assetid: 3694cd46-58db-4516-a9e3-6174b4071957
 caps.latest.revision: 10
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # CREATE CREDENTIAL (U-SQL)
 > [!WARNING] 

@@ -11,7 +11,7 @@ ms.assetid: e1378464-5d01-45d6-9691-0a5b6d912a67
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # AND (U-SQL)
 U-SQL’s logical AND operator performs a conjunction of two Boolean expressions and returns false if at least one of the two expression is false and returns true if both expressions are true. Unlike the equivalent C# [&&](https://msdn.microsoft.com/library/c6s3h5a7.aspx) expression, AND will not preserve the execution order and will not short-cut the expression evaluation. 
