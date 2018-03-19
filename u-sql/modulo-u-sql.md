@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 0f19aad5-86f0-4af1-995f-d87d4a94f4e1
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # % (Modulo) (U-SQL)
 Returns the remainder of one number divided by another.

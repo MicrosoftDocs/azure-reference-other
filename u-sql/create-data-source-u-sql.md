@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c914ae6a-fe21-4688-8dc7-0ac1178b4964
 caps.latest.revision: 24
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # CREATE DATA SOURCE (U-SQL)
 U-SQL provides the `CREATE DATA SOURCE` statement to create a data source.  Data Sources give U-SQL the ability to query data from other data sources such as other databases. It contains the connection information as well as information about its capabilities to execute query expressions passed and translated from U-SQL to the its local query engine. For example, U-SQL allows to create a data source on an Azure SQL Database which then allows U-SQL queries to select from tables in that database. 

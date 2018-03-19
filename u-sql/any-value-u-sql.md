@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 69303dc9-1581-438f-8b74-8171e6340700
 caps.latest.revision: 10
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # ANY_VALUE (U-SQL)
 The ANY_VALUE aggregator arbitrarily picks one value from the group including potentially a null value. While the operation picks an arbitrary value, it does so based on the efficiency of execution and not based on some random sampling. 

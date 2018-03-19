@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8b817d79-fc2f-44b7-b3c2-315dcf29053c
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # usql.stats (U-SQL)
 Contains a row for each statistics object that exists for the tables in the current database context.

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5b2bd234-3fd5-4392-95d5-18bb3df9dc5a
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # STDEV (U-SQL)
 The STDEV aggregator returns the statistical standard deviation of all nonnull values in the group or returns null if all the input values are null. The values have to be numeric or an error is raised. 

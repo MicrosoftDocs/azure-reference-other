@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8eb9cc92-0533-4039-b769-ef90dc9b63f9
 caps.latest.revision: 8
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Extractors.Text()
 The Text() extractor supports a variety of text file formats that all follow a row/column format. It provides a set of delimiters to identify the row and column boundaries and several other parameters to parse the text file and produces a rowset based on the [EXTRACT](extract-expression-u-sql.md) expression’s schema.  

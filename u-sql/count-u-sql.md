@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 90746132-b0f2-49b4-8926-6162f935427c
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # COUNT (U-SQL)
 The COUNT aggregator returns the number of items in a group. If COUNT(*) is specified the count will include null values, if an expression or column reference is provided, then null values will not be counted. 

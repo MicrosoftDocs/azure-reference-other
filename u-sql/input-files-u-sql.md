@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 08873783-e3e1-4236-a7f0-0bbff16a40f0
 caps.latest.revision: 21
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Input Files (U-SQL)
 U-SQL provides access to files that are stored either in Azure Data Lake Storage accounts or in Windows Azure Blob Storage accounts. Azure Data Lake Storage accounts have to be in the same Azure region as the Azure Data Lake Analytics account where you run your U-SQL script. Windows Azure Blob Storage accounts need to be registered with the Azure Data Lake Analytics account where you will run your U-SQL script but can be in any region. Note that if the data is in a different region than the Azure Data Lake Analytics account, you will get billed for data egress and data transfer rates will be based on the internet connection between the two regions and considerably lower than accessing data inside the same region.  Any input files referenced in a script have to exist at the time the script is compiled.  

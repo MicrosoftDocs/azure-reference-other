@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 293710a5-937d-469f-beb4-c3531c799da0
 caps.latest.revision: 12
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # GROUP BY and HAVING Clauses (U-SQL)
 The optional GROUP BY clause groups the rows based on the provided expression list into groups that then can be aggregated over with the built-in and [user-defined aggregators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg). It offers an optional filter clause with HAVING that will filter the rowset at the group level. In other words, the predicate in the HAVING clause will be applied to the group and will only include the groups for which it evaluates to true.  

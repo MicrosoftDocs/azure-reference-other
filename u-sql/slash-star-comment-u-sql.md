@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e804b965-3b44-4517-85b9-ee5c9de855d1
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Slash Star Comment (U-SQL)
 Indicates user-provided text. The text between `/*` and `*/` is not evaluated by the query processor.

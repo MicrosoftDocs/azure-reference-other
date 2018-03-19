@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b5479228-7c9f-40c7-9bac-f24a582319a0
 caps.latest.revision: 15
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL SELECT Selecting from CROSS APPLY and OUTER APPLY
 Often when processing some more complex value in a column, such as a byte array, a string, a MAP, ARRAY, JSON or XML document, one would like to extract more than just one value, such as a whole rowset of information per column value.  

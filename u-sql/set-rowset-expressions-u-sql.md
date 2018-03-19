@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 008e74a0-3dab-44cc-9d44-f7ec788a61e7
 caps.latest.revision: 17
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Set Rowset Expressions (U-SQL)
 Set expressions allow to intersect two rowsets, to union them or to subtract one from the other. A set expression can be a top-level [U-SQL Query expression](query-statements-and-expressions-u-sql.md).  

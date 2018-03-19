@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8cf9772d-d5e5-4346-902b-ddf7314c91f0
 caps.latest.revision: 2
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # usql.partitions (U-SQL)
 Contains one row per partition scheme for the partitioned tables in the schemas of the current database context.  The partitioned table must contain at least one record.

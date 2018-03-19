@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d5307006-ca21-4450-bbd2-0cb3003e51be
 caps.latest.revision: 16
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Operators (U-SQL)
 In addition to the built in C# functions and operators, U-SQL has added some built in operators that are commonly used in SQL-based languages.  The following is a list of the types of operators that U-SQL has added:  

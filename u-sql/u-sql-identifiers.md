@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c89a833d-1bdd-46d2-becf-bdbc618382c9
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL Identifiers
 U-SQL identifiers are used to identify the objects in the [U-SQL metadata context](securing-meta-data-objects.md). They can be composed of up to three parts parts: 

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8e30a01e-a47e-4eed-ba3d-baddd9d4d99f
 caps.latest.revision: 13
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL Data Sources
 One of the major value propositions of U-SQL is that it allows to query data where it lives. For external systems, such as Microsoft Azure SQL Database, this is achieved with [federated queries against data sources](u-sql-select-selecting-from-an-external-rowset.md).  

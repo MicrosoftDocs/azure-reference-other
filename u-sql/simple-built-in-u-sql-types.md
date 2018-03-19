@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 936559cf-cff7-4d7d-b829-7677c6d96670
 caps.latest.revision: 5
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Simple Built-In U-SQL Types
 The following shows the list of supported simple column types.  

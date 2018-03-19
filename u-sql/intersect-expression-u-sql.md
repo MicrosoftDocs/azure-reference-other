@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 171a3c6a-ebce-48b1-bf23-d08f116c5c52
 caps.latest.revision: 20
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # INTERSECT Expression (U-SQL)
 INTERSECT returns rows that are in common by both the left and right input query expressions either by matching positionally or – if specified – by column names.

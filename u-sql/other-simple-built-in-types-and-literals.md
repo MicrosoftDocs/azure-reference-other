@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 77189ada-7641-44a7-a0aa-f0ee8629abfd
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Other Simple Built-In Types and Literals
 U-SQL’s also supports the following simple built-in types:  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d7318c71-e822-4852-b941-a86c6f533138
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Extractors.Csv()
 The Csv() extractor disallows the `delimiter` parameter and defaults the field delimiter to ',' (comma). All other parameters are the same.  See [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md) for all supported parameters and their defaults values.

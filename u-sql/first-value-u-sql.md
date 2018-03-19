@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 2f5cd094-2634-4430-9e95-e87f43d0a32c
 caps.latest.revision: 7
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # FIRST_VALUE (U-SQL)
 The FIRST_VALUE analytic function returns the first value in an ordered set of values provided by the windowing expression. 

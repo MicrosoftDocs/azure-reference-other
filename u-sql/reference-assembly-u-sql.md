@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6698dd77-510f-4a80-88a1-1bda4b9774ed
 caps.latest.revision: 14
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # REFERENCE ASSEMBLY (U-SQL)
 In order to use a [user-defined c# functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf), [user-defined aggregator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or [user-defined operator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo), the assemblies that contain their code need to be referenced in the U-SQL script and the assembly has to be registered in the catalog with [CREATE ASSEMBLY](https://docs.microsoft.com/sql/t-sql/statements/create-assembly-transact-sql) command before you can reference it.

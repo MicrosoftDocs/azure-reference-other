@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5fe94e0a-4b53-446d-85aa-5619599c51ec
 caps.latest.revision: 8
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Logical Operators (U-SQL)
 U-SQL supports the C# logical operators [&&](https://msdn.microsoft.com/library/2a723cdk.aspx), [||](https://msdn.microsoft.com/library/6373h346.aspx) and [!](https://msdn.microsoft.com/library/f2kd6eb2.aspx) (not). Since C# guarantees order of execution and provides short-cutting on logical operators, these operators can incur a slight performance penalty. The C# semantics does not allow the optimizer to rewrite and reorder the query predicates. For example, the second predicate in a logical expression cannot be moved up in the execution tree to apply the filter early, because it would now be executed before the first predicate. 

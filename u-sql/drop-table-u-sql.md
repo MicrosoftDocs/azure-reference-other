@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 12022cbf-c922-42f4-9845-40e57feb7fff
 caps.latest.revision: 16
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # DROP TABLE (U-SQL)
 The statement drops the specified table and deletes all the data contained within from the system.   

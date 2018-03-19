@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ccef2923-23a6-4e7a-9b46-17c176f1b3ef
 caps.latest.revision: 12
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # USE SCHEMA (U-SQL)
 In order to simplify using names of objects in other schemas than the default context schema in a script, U-SQL provides the ability to set a different schema as the context schema with the `USE SCHEMA` statement.  

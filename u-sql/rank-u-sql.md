@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1a070ccb-2e33-44ea-8b20-f5cabbdb8149
 caps.latest.revision: 7
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # RANK (U-SQL)
 The RANK ranking function returns the rank of each row within the window. The rank of a row is one plus the number of ranks that come before the row in question.  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6bb45dac-f231-461c-9da2-0862ab9d7d2e
 caps.latest.revision: 15
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # U-SQL Indexes
 One of the benefits of storing data in a structured container such as a table is to have index structures to make data lookup faster.  

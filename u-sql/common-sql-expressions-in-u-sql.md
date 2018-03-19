@@ -24,9 +24,9 @@ helpviewer_keywords:
   - "U-SQL"
 ms.assetid: 908fe956-2b83-4f32-a8db-e4595f52c5fc
 caps.latest.revision: 24
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Common SQL Expressions in U-SQL
 While U-SQL is based on SQL and provides many of the common SQL rowset expressions, it does not provide all of them and it is not ANSI SQL.   

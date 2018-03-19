@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: a48c1658-64fa-48c2-8e06-bb70bc81d368
 caps.latest.revision: 13
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # SAMPLE (U-SQL)
 U-SQL supports samplers natively. The `SAMPLE` clause enables convenient access from within a `SELECT` expression.  All samplers execute in one pass on data and in parallel on portions of the input; they do not require partitioning, shuffle etc. 	Samplers have been implemented in a single pass over data and have very small memory footprint; log( SIZE(input), SIZE(output) ).
