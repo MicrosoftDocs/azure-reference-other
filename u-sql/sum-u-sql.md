@@ -11,7 +11,7 @@ ms.assetid: 39f0b7a8-d3cd-4511-a124-e89ca12008ee
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # SUM (U-SQL)
 The SUM aggregator returns the sum of all the values in the group. The input values have to be of a numeric type or an error is raised. Null values are ignored. 

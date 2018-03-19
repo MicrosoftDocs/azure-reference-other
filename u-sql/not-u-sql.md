@@ -11,7 +11,7 @@ ms.assetid: 312e516b-d09e-451d-81d5-b79a7164b155
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # NOT (U-SQL)
 U-SQL’s logical NOT operator performs a negation of the Boolean expression and returns false if the expression evaluates to true and true if it evaluates to false. It is equivalent to the C# ! operator. 

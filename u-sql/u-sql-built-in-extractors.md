@@ -11,7 +11,7 @@ ms.assetid: c28b8199-bd14-4b6d-8d03-691bd4819be1
 caps.latest.revision: 21
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Built-in Extractors
 U-SQL provides a built-in extractor class called `Extractors` that provides the following three built-in extractors to generate a rowset from the [input file or files](input-files-u-sql.md):    

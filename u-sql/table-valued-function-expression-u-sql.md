@@ -11,7 +11,7 @@ ms.assetid: 56e65ade-f69c-4897-9593-50ac1b9099e8
 caps.latest.revision: 17
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Table-Valued Function Expression (U-SQL)
 U-SQL allows table-valued functions (TVF) to be called as primary rowset expressions even outside of a SELECT’s [FROM](from-clause-u-sql.md) clause. Note that the statements that make up the definition of a U-SQL Table-valued function are always inlined where they are called, while preserving the visibility rules of the context.  For more information, see [U-SQL Table-valued Functions](u-sql-table-valued-functions.md).  

@@ -11,7 +11,7 @@ ms.assetid: e439d202-1b1d-4cd9-b2b9-71c275cc2ae3
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Outputters.Csv()
 ### Outputting CSV Files    

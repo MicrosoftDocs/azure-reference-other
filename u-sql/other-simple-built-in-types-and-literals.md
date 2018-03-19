@@ -11,7 +11,7 @@ ms.assetid: 77189ada-7641-44a7-a0aa-f0ee8629abfd
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Other Simple Built-In Types and Literals
 U-SQL’s also supports the following simple built-in types:  

@@ -11,7 +11,7 @@ ms.assetid: 913be2b2-26ff-4932-9468-665a22e59afc
 caps.latest.revision: 17
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # SELECT Clause (U-SQL)
 The SELECT clause defines the projection of the SELECT expression, i.e., it specifies the resulting structure and values of the rowset it produces. The result has at least one column.  

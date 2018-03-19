@@ -11,7 +11,7 @@ ms.assetid: 141c609f-03b2-4135-9e21-a429d1777b1f
 caps.latest.revision: 12
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # OUTER JOIN (U-SQL)
 An outer join will combine the selected columns from the two joined rowsets for every combination of rows that satisfy the join predicate and will add the rows that are not having a match for the specified join side.  

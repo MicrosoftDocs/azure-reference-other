@@ -11,7 +11,7 @@ ms.assetid: e9b0ec62-085f-43fe-b2ea-d97f90c8c390
 caps.latest.revision: 13
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # PERCENTILE_CONT (U-SQL)
 The PERCENTILE_CONT analytic function calculates a percentile based on a continuous distribution of the values in the window. The result is interpolated and might not be equal to any of the specific values in the column.  

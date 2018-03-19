@@ -11,7 +11,7 @@ ms.assetid: 920e3027-3006-4a95-9a4a-909c63128df4
 caps.latest.revision: 14
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # SEMIJOIN (U-SQL)
 Semijoins are U-SQL’s way filter a rowset based on the inclusion of its rows in another rowset. Other SQL dialects express this with the `SELECT * FROM A WHERE A.key IN (SELECT B.key FROM B)` pattern. There are two variants: **`LEFT SEMIJOIN`** and **`RIGHT SEMIJOIN`**.  

@@ -11,7 +11,7 @@ ms.assetid: b6e11d21-984b-4820-ae57-ea22115e8287
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # MIN (U-SQL)
 The MIN aggregator choses the smallest value in the group or null if the expression returns only nulls in the group. The values have to be comparable. For string types, it uses a culture-invariant UTF-8 byte ordering. 

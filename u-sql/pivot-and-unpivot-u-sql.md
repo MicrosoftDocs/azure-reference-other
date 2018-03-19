@@ -11,7 +11,7 @@ ms.assetid: 27632ba6-50ff-4349-8d0c-1145e604d6ab
 caps.latest.revision: 10
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # PIVOT and UNPIVOT (U-SQL)
 You can use the PIVOT and UNPIVOT relational operators to change a rowset  expression into another rowset. PIVOT rotates a rowset expression by turning the unique values from one column in the expression into multiple columns in the output, and performs aggregations where they are required on any remaining column values that are wanted in the final output. UNPIVOT performs the opposite operation to PIVOT by rotating columns of a rowset expression into column values.

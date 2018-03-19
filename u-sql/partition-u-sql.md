@@ -11,7 +11,7 @@ ms.assetid: 889550b3-c98b-4df7-9870-9a742e7f190e
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # PARTITION (U-SQL)
 The `PARTITION` intrinsic object returns `true` if the specified partition for the given table exists and the user has access to said table. Otherwise, `false` is returned.  The function will be evaluated at compile-time (and is thus constant-foldable).

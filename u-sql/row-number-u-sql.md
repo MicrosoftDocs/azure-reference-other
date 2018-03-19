@@ -11,7 +11,7 @@ ms.assetid: a7048e15-190c-4c4e-8693-bf1217b171ae
 caps.latest.revision: 13
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # ROW_NUMBER (U-SQL)
 The ROW_NUMBER ranking function returns the sequential number of a row within a window, starting at 1 for the first row in each window. 

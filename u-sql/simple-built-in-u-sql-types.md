@@ -11,7 +11,7 @@ ms.assetid: 936559cf-cff7-4d7d-b829-7677c6d96670
 caps.latest.revision: 5
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Simple Built-In U-SQL Types
 The following shows the list of supported simple column types.  

@@ -11,7 +11,7 @@ ms.assetid: 0f19aad5-86f0-4af1-995f-d87d4a94f4e1
 caps.latest.revision: 3
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # % (Modulo) (U-SQL)
 Returns the remainder of one number divided by another.

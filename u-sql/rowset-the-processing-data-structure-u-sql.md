@@ -11,7 +11,7 @@ ms.assetid: 46d8e867-95ea-458a-bb14-ccd155adb71a
 caps.latest.revision: 13
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Rowset: The Processing Data Structure (U-SQL)
 Since U-SQL is a SQL based language, its main processing data structure is a rowset. Thus any data that needs to be processed needs to be transformed into a rowset first and then combined with other rowsets and transformed with U-SQL query expressions. Here are some U-SQL specific aspects of its rowsets:    

@@ -11,7 +11,7 @@ ms.assetid: 6e7cc044-5bd2-4145-9b85-652162febc53
 caps.latest.revision: 7
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Outputters.Tsv()
 ### Outputting TSV Files    

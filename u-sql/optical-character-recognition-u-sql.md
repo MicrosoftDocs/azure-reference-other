@@ -11,7 +11,7 @@ ms.assetid: 2eca988e-a262-46e3-9878-0d4afbf714f5
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Optical Character Recognition (U-SQL)
 `OcrExtractor` cognitive function detects and extract text in an image.  It analyze images to detect embedded text and generate character streams.

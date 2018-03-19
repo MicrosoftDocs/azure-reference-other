@@ -11,7 +11,7 @@ ms.assetid: 5a3f808c-8638-4710-98d3-3160a8e4d5ed
 caps.latest.revision: 17
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Credential Objects
 > [!WARNING] 

@@ -11,7 +11,7 @@ ms.assetid: 7fa982b9-2a55-428b-a3ba-6ded68d85905
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # != (Not Equal To) (U-SQL)
 Tests whether one expression is not equal to another expression (a comparison operator). 

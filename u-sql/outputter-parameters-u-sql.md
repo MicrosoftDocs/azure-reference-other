@@ -11,7 +11,7 @@ ms.assetid: be2ae409-5534-4bc0-b428-c8a5f96cbc09
 caps.latest.revision: 4
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Outputter Parameters (U-SQL)
 |Parameters|

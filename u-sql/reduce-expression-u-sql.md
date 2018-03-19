@@ -11,7 +11,7 @@ ms.assetid: 61b62a7e-ce15-435a-a96b-d00c50d91a75
 caps.latest.revision: 29
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # REDUCE Expression (U-SQL)
 U-SQL provides the ability to write custom rowset reducers in C# using the [user-defined operator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) extensibility framework by implementing an `IReducer`.  See [U-SQL Programmability Guide: User-Defined Reducer](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-reducer) for more information.   

@@ -11,7 +11,7 @@ ms.assetid: 12d8bae5-1df7-447a-9a6a-2d6e8f734fd0
 caps.latest.revision: 19
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Assemblies
 One of the major value propositions and design goals of U-SQL is to provide an easy to use and powerful way to [extend U-SQL with custom user code](extending-u-sql-expressions-with-user-code.md). The main aspects that are enabling these goals are the [C#-based U-SQL type system](data-types-and-literals-u-sql.md) and [U-SQL’s expression language](expressions-u-sql.md).  

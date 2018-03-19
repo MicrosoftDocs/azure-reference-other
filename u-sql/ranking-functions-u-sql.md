@@ -11,7 +11,7 @@ ms.assetid: 789e6e92-7959-483c-9a69-eef3a76c83ee
 caps.latest.revision: 11
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Ranking Functions (U-SQL)
 U-SQL provides some built-in SQL-based ranking functions that return a ranking value for each row in a partition. Depending on the function that is used, some rows might receive the same value as other rows. Ranking functions are nondeterministic. 

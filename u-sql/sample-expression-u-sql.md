@@ -11,7 +11,7 @@ ms.assetid: cd5ba00f-6771-4c16-b753-7091a7172710
 caps.latest.revision: 17
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # SAMPLE Expression (U-SQL)
 USQL supports samplers natively. The sample expression is needed to access some types of samplers. 

@@ -11,7 +11,7 @@ ms.assetid: d2c005a9-bc52-48ff-aea5-695775f4f6cb
 caps.latest.revision: 8
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Securing Meta Data Objects
 The U-SQL’s metadata is secured in the context of the Azure subscription’s Active Directory and the Azure Data Lake’s default Azure Data Lake Storage account. The Active Directory provides the Security Principals such as users and security groups.  

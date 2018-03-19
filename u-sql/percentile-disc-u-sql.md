@@ -11,7 +11,7 @@ ms.assetid: 0c589e5b-6643-46b9-8194-63a70f493bb2
 caps.latest.revision: 11
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # PERCENTILE_DISC (U-SQL)
 The PERCENTILE_DISC analytic function computes a specific percentile for sorted values in the specified window based on a discrete distribution of the column values. The result is equal to a specific value in the column. 

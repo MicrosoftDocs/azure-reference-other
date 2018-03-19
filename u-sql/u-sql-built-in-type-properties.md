@@ -11,7 +11,7 @@ ms.assetid: 402d8a7c-2395-4c73-8a14-eea4c05739fb
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Built-in Type Properties
 Each of the U-SQL built-in types have certain properties that will govern its usability in certain context.  

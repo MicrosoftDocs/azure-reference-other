@@ -11,7 +11,7 @@ ms.assetid: 7d6d620e-80c8-450d-b31e-3caae8ca9f1b
 caps.latest.revision: 28
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Output Statement (U-SQL)
 U-SQL does not only support processing unstructured data with the [EXTRACT](extract-expression-u-sql.md) expression but also provides the OUTPUT Statement that writes a rowset back into an unstructured file.    

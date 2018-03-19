@@ -11,7 +11,7 @@ ms.assetid: 783f35bc-edaa-4b96-b388-e87590a1bb90
 caps.latest.revision: 15
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # TRUNCATE TABLE (U-SQL)
 U-SQL does not support fine-grained deletion of data with a DELETE statement. Data in a table can be deleted at the level of a vertical partition bucket, or by truncating the whole table with the `TRUNCATE TABLE` statement. Assuming the user executing the script has the right permissions, the `TRUNCATE TABLE` statement will keep the schema definition of the specified managed table intact and remove all the data contained within the table.   

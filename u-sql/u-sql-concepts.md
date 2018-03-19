@@ -11,7 +11,7 @@ ms.assetid: 2854662d-8d7b-4589-bbc5-a50b505a943a
 caps.latest.revision: 16
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # U-SQL Concepts
 U-SQL combines some familiar concepts from a variety of languages: It is a *declarative* language like SQL, it follows a *dataflow-like composition of statements and expressions* like Pig and Cascading*,* and provides simple ways to *extend the language* with [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo), [user-defined aggregators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) and [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf) using C#, and provides a SQL database-like metadata object model to manage, discover and secure structured data and user-code.  

@@ -11,7 +11,7 @@ ms.assetid: 37a983a3-8584-45ee-83b9-55efb6dc1f62
 caps.latest.revision: 6
 author: "MikeRys"
 ms.author: "mrys"
-manager: "Ryan.Waite"
+manager: "ryanw"
 ---
 # Temporal Types and Literals
 U-SQL’s built-in temporal types are:  
