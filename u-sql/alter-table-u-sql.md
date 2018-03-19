@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 4cb50243-3aaa-4949-99d0-31fc6d351b40
 caps.latest.revision: 8
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # ALTER TABLE (U-SQL)
 Modifies a table definition by adding, or dropping columns.  Adding or dropping a column from a table is a meta data operation only and its performance will not be impacted by the size of the table. 

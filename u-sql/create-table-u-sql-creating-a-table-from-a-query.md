@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6608d5d1-0b2b-47c0-9b86-7b6d7744121b
 caps.latest.revision: 30
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # CREATE TABLE (U-SQL): Creating a Table from a Query
 Often a script converts unstructured data in a file into a table, by first extracting the data using an [`EXTRACT`](extract-expression-u-sql.md) expression and then inserting it into a table after some optional transformations. In order to simplify the process, U-SQL provides the ability to create a table from a U-SQL query expression. The `CREATE TABLE AS` statement will infer the schema from the query expression and will create a clustered table, thus the clustered index needs to be provided as part of the `CREATE TABLE AS` statement.  

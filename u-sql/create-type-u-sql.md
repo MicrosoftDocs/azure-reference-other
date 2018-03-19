@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 287f9451-66a8-46f8-9aa9-11340b77a07b
 caps.latest.revision: 12
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # CREATE TYPE (U-SQL)
 U-SQL can name and register table types with the `CREATE TYPE` statement.  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e3ddc453-fd1f-42b8-bc49-981ddc44d10c
 caps.latest.revision: 14
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # CREATE DATABASE (U-SQL)
 This statement creates a new U-SQL database with the specified name.  

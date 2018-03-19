@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 88db94df-4d72-41d0-b216-164ed7a25437
 caps.latest.revision: 3
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # + (Add) (U-SQL)
 Adds two [numbers](numeric-types-and-literals.md), [temporal types](temporal-types-and-literals.md), or concatenates two [strings](textual-types-and-literals.md).

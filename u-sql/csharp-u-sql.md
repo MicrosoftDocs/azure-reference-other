@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: bb97801f-95f3-4fc4-9820-9e3b025bba39
 caps.latest.revision: 6
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # CSHARP (U-SQL)
 U-SQL’s tight integration with C#’s expression language normally makes calls to C# expression seamless. On rare occasions it may be useful to be able to guard a C# expression from getting interpreted by U-SQL, such as when a new version of C# may introduce a syntax that conflicts with an established U-SQL syntax or when the C# expression needs to turn off U-SQL name binding or U-SQL reserved keywords in the expression. 
