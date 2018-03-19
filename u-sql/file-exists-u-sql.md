@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 65c02bd3-b53c-4f87-bf24-3246e14ab5f5
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # FILE.EXISTS (U-SQL)
 Checks if a file in the specified location exists at compile time.

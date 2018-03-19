@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 577f9869-f215-4687-ac8a-2d0e1246ab45
 caps.latest.revision: 15
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # DROP DATABASE (U-SQL)
 The statement drops the database and deletes all the data contained within from the system. If a database of the given name does not exist, or the user has no permissions to drop a database, an error is raised.  

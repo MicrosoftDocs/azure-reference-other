@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e5961285-13dc-4183-8bd2-96ef0fb37cae
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # FILE.CREATED (U-SQL)
 Returns the creation timestamp of the file at the specified location at compile time as a DateTime value (Kind is `Unspecified`).

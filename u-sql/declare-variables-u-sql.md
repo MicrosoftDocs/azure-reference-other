@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: f11c4bbb-51ac-4f9c-a429-d96018118681
 caps.latest.revision: 2
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # DECLARE Variables (U-SQL)
 The DECLARE statement initializes a U-SQL variable.

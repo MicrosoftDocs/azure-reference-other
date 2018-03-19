@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 497ad7d8-09de-4196-9c61-d060fb7cbeca
 caps.latest.revision: 11
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Identifiers (U-SQL)
 There are two types of identifiers in U-SQL: 

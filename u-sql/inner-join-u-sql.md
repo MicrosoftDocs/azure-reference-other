@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: bb1d54fc-729f-4903-9474-4b9124c28ca6
 caps.latest.revision: 13
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # INNER JOIN (U-SQL)
 An inner join will combine the selected columns from the two joined rowsets for every combination of rows that satisfy the join comparison predicate.  

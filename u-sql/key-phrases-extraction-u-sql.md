@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: bb05c292-8dbe-43df-8c24-c0726420e16f
 caps.latest.revision: 5
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Key Phrases Extraction (U-SQL)
 The `KeyPhraseExtractor` cognitive function returns a list of “;” separated strings denoting the key talking points in the input text. This cognitive function employ techniques from Microsoft Office's sophisticated Natural Language Processing toolkit and supports English text.

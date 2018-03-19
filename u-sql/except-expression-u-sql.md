@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 48626c8d-1c4d-4511-a471-955d99ec71b0
 caps.latest.revision: 18
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # EXCEPT Expression (U-SQL)
 EXCEPT returns the rows from the left query expression that are not in the right query expression, thus subtracting the right rowset from the left.  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 9ea54988-bf17-4032-80f6-9bb87fcb4e0d
 caps.latest.revision: 9
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # DROP SCHEMA (U-SQL)
 The statement drops the schema in the current database context and deletes all the data contained within from the system.  

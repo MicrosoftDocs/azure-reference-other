@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d98902df-b3b3-445b-9265-83571ca28b9e
 caps.latest.revision: 14
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # Data Types and Literals (U-SQL)
 U-SQL’s type system is based on the [C# type system](https://msdn.microsoft.com/library/3ewxz6et.aspx). This is one of the cornerstones of providing tight integration with C# as its expression and extensibility language.   

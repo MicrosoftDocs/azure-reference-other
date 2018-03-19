@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 06a4742e-d625-450d-9977-ebd317c1fd4c
 caps.latest.revision: 8
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # DROP CREDENTIAL (U-SQL)
 > [!WARNING] 

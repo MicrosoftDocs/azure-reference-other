@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: edb9ee42-42cc-4b53-bac2-8f6467f03861
 caps.latest.revision: 12
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # MAP_AGG (U-SQL)
 The MAP_AGG aggregator takes a key, value pair and creates a [SQL.MAP](complex-built-in-u-sql-types.md) for all the key/value pairs in the group. 

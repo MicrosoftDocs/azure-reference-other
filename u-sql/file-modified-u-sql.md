@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 057567b4-8651-438f-bbca-c62cd1e5d010
 caps.latest.revision: 4
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # FILE.MODIFIED (U-SQL)
 Returns the last modified timestamp of the file at the specified location at compile time as a DateTime value (Kind is `Unspecified`). 

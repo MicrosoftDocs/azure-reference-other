@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1d09fb05-cef8-4fae-a203-fed39f02168b
 caps.latest.revision: 2
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # DROP PACKAGE (U-SQL)
 The `DROP PACKAGE` statement drops packages. As in the case with other meta data objects, a package gets dropped even if another [package](u-sql-packages.md), [table-valued function](u-sql-table-valued-functions.md) or [procedure](u-sql-procedures.md) depends on it.

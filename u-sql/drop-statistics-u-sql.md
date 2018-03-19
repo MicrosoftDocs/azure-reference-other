@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 662259df-3b75-4ac2-95d4-ef330c4b1037
 caps.latest.revision: 9
-author: "edmacauley"
-ms.author: "edmaca"
-manager: "jhubbard"
+author: "MikeRys"
+ms.author: "mrys"
+manager: "ryanw"
 ---
 # DROP STATISTICS (U-SQL)
 U-SQL provides the `DROP STATISTICS` statement to drop the specified statistic of a table.  
