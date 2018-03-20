@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 818b356b-045c-412b-aa12-94a1d2dad90f
 caps.latest.revision: 23
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Filter Based Feature Selection
 *Identifies the features in a dataset with the greatest predictive power*  
