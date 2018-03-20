@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5049a09b-bd90-4c4e-9b46-7c87e3a36810
 caps.latest.revision: 27
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # K-Means Clustering
 *Configures and initializes a K-means clustering model*  
