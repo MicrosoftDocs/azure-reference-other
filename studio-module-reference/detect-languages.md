@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 489238da-6806-48a0-a2f3-12ce2cfe0851
 caps.latest.revision: 16
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Detect Languages
 *Detects the language of each line in the input file*  
