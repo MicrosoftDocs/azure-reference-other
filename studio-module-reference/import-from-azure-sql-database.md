@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1aea52c2-e5fa-4127-b2d4-f5737f6ee002
 caps.latest.revision: 27
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Import from Azure SQL Database
 
