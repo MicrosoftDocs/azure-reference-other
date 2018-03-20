@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1c22cafc-1da0-4dc5-9336-831ee3f2860b
 caps.latest.revision: 17
-author: "jeannt"
-ms.author: "jeannt"
-manager: "jhubbard"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # IIR Filter
 *Creates an infinite impulse response filter for signal processing*  
