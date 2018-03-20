@@ -11,8 +11,8 @@ ms.topic: "reference"
 ms.assetid: 90381e80-67c3-4d99-8754-1db785b7ea37
 caps.latest.revision: 20
 author: rastala
-ms.ms.author: roastala
-manager: cgronlund
+ms.author: roastala 
+manager: cgronlun
 ---
 # Apply SQL Transformation
 
