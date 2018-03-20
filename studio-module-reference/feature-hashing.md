@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c9a82660-2d9c-411d-8122-4d9e0b3ce92a
 caps.latest.revision: 18
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Feature Hashing
 *Converts text data to integer encoded features using the Vowpal Wabbit library*

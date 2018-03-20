@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a8a662d0-89bb-48c9-8562-9b9589124c4a
 caps.latest.revision: 14
-author: "jeannt"
-ms.author: "jeannt"
-manager: "jhubbard"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Extract N-Gram Features from Text
 *Creates N-Gram dictionary features and does feature selection on them*  

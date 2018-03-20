@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b9064dc3-2d69-4e06-b307-6cebf324686a
 caps.latest.revision: 20
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Fast Forest Quantile Regression
 *Creates a quantile regression model*  
