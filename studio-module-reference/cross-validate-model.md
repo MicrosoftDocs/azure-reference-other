@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 75fb875d-6b86-4d46-8bcc-74261ade5826
 caps.latest.revision: 21
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Cross-Validate Model
 *Cross-validates parameter estimates for classification or regression models by partitioning the data*  

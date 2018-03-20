@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: faa6ba63-383c-4086-ba58-7abf26b85814
 caps.latest.revision: 30
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Convert to CSV
 *Converts data input to a comma-separated values format*  

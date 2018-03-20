@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ae17795c-6437-47b5-9853-646d77d461b0
 caps.latest.revision: 18
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala 
+manager: cgronlun
 ---
 # Anomaly Detection
 

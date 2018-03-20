@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 805e592d-0f1f-48eb-97c9-688ed0c1dc70
 caps.latest.revision: 16
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala 
+manager: cgronlun
 ---
 # Apply Transformation
 

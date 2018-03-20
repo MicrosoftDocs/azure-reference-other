@@ -13,9 +13,9 @@ applies_to:
   - "Azure"
 ms.assetid: f1050ce4-218a-4304-a4a7-57832be4cde0
 caps.latest.revision: 27
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Data Input and Output
 
