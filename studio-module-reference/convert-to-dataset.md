@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 72bf58e0-fc87-4bb1-9704-f1805003b975
 caps.latest.revision: 19
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Convert to Dataset
 *Converts data input to the internal Dataset format used by Microsoft Azure Machine Learning*  
