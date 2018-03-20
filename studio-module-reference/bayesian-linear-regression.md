@@ -12,7 +12,7 @@ ms.assetid: ee12de50-2b34-4145-aec0-23e0485da308
 caps.latest.revision: 14
 author: rastala
 ms.author: roastala
-manager: cgronlund
+manager: cgronlun
 ---
 # Bayesian Linear Regression
 

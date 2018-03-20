@@ -12,7 +12,7 @@ ms.assetid: 62d2cece-d832-4a7a-a0bd-f01f03af0960
 caps.latest.revision: 22
 author: rastala
 ms.author: roastala
-manager: cgronlund
+manager: cgronlun
 ---
 # Convert to ARFF
 
