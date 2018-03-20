@@ -12,7 +12,7 @@ ms.assetid: 0207d252-6c41-4c77-84c3-73bdf1ac5960
 caps.latest.revision: 24
 author: rastala
 ms.author: roastala
-manager: cgronlund
+manager: cgronlun
 ---
 # Boosted Decision Tree Regression
 
