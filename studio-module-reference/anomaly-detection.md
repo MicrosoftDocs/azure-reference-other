@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: ae17795c-6437-47b5-9853-646d77d461b0
 caps.latest.revision: 18
 author: rastala
-ms.author: roastala
+ms.ms.author: roastala
 manager: cgronlund
 ---
 # Anomaly Detection

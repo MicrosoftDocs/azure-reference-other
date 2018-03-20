@@ -11,7 +11,7 @@ ms.topic: "reference"
 ms.assetid: 6bd12c13-d9c3-4522-94d3-4aa44513af57
 caps.latest.revision: 33
 author: rastala
-ms.author: roastala
+ms.ms.author: roastala
 manager: cgronlund
 ---
 # Apply Math Operation

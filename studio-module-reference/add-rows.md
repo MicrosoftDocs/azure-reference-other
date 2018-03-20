@@ -11,7 +11,7 @@ ms.topic: "reference"
 ms.assetid: b2ebdabd-217d-4915-86cc-5b05972f7270
 caps.latest.revision: 15
 author: rastala
-ms.author: roastala
+ms.ms.author: roastala
 manager: cgronlund
 ---
 # Add Rows

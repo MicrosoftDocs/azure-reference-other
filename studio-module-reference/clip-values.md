@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: cdc62e1d-b64f-424c-ac09-bb050918a668
 caps.latest.revision: 15
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlund
 ---
 # Clip Values
 
