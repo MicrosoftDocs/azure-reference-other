@@ -12,9 +12,9 @@ dev_langs:
   - "R"
 ms.assetid: 30806023-392b-42e0-94d6-6b775a6e0fd5
 caps.latest.revision: 39
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Execute R Script
 

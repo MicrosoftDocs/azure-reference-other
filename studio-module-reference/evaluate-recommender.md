@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e9ad68a7-e91b-4ae6-800e-b5ee7e22cd17
 caps.latest.revision: 13
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Evaluate Recommender
 *Evaluates the accuracy of recommender model predictions*  
