@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8d44b923-97df-4dd5-a6d4-173bb89c7441
 caps.latest.revision: 18
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Convert to SVMLight
 *Converts data input to the format used by the SVM-Light framework*  

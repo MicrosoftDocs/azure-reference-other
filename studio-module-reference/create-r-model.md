@@ -12,9 +12,9 @@ dev_langs:
   - "R"
 ms.assetid: 314e34a8-b24c-4870-afe6-2649b6fc7476
 caps.latest.revision: 17
-author: "jeannt"
-ms.author: "jeannt"
-manager: "gronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Create R Model
 
