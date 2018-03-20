@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: eed3ee76-e8aa-46e6-907c-9ca767f5c114
 caps.latest.revision: 17
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlund
 ---
 # Assign to Clusters (deprecated)
 

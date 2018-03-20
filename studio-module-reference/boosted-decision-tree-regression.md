@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 0207d252-6c41-4c77-84c3-73bdf1ac5960
 caps.latest.revision: 24
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlund
 ---
 # Boosted Decision Tree Regression
 

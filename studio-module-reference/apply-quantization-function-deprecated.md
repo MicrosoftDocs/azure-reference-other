@@ -11,8 +11,8 @@ ms.topic: "reference"
 ms.assetid: 77443f05-e1c3-47fc-9167-963b2703936d
 caps.latest.revision: 9
 author: rastala
-ms.author: roastala
-manager: cgronlund
+ms.author: roastala 
+manager: cgronlun
 ---
 # Apply Quantization Function (deprecated)
 *Puts data into bins using numeric values from a column*  
