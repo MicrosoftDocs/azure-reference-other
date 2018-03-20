@@ -11,9 +11,9 @@ applies_to:
   - "Azure"
 ms.assetid: f5c746fd-dcea-4929-ba50-2a79c4c067d7
 caps.latest.revision: 18
-author: "jeannt"
-ms.author: "jeannt"
-manager: "jhubbard"
+author: j-martens
+ms.author: jmartens
+manager: cgronlun
 ---
 # Azure Machine Learning Studio Algorithm and Module Reference
 Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The Machine Learning service is cloud-based, and eliminates setup and installation concerns because you can work through your web browser on any Internet-connected PC.
