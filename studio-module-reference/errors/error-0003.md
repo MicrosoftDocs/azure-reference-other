@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 60822377-da7a-40b8-0003-d185d1509344
 caps.latest.revision: 8
-author: "jeannt"
-ms.author: "jeannt"
-manager: "markl"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0003  
  Exception occurs if one or more of inputs are null or empty.  
