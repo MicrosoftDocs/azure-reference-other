@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 2b08f216-51b2-4b1c-b4f2-6f9dd1986936
 caps.latest.revision: 11
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Machine Learning - Initialize Model - Clustering
 

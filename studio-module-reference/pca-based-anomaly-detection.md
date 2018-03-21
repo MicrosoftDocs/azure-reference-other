@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c3822fa5-1095-4c72-bd1e-fd43d285153a
 caps.latest.revision: 20
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # PCA-Based Anomaly Detection
 

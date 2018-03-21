@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c790e4eb-2aae-4228-a12f-69809b9e70ae
 caps.latest.revision: 24
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Text Analytics
 

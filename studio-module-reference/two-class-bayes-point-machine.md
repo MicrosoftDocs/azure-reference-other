@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: a1acf84e-a4d0-42ab-99d6-a4f4616b92cf
 caps.latest.revision: 18
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Two-Class Bayes Point Machine
 *Creates a Bayes point machine binary classification model*  

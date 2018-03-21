@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ebc29f52-719d-4d0f-b66a-2ce85f527c7d
 caps.latest.revision: 25
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Two-Class Neural Network
 *Creates a binary classifier using a neural network algorithm*  

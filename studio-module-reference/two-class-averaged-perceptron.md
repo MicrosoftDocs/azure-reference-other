@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5ed44caa-5360-407d-ae6c-7a88c491474a
 caps.latest.revision: 20
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Two-Class Averaged Perceptron
 *Creates an averaged perceptron binary classification model*  

@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 43d255dc-c03d-4dce-acc4-884e660210d9
 caps.latest.revision: 10
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Score Vowpal Wabbit Version 8 Model
 *Scores data using the Vowpal Wabbit machine learning system from the command line interface*  

@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 927d65ac-3b50-4694-9903-20f6c1672089
 caps.latest.revision: 20
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Evaluate Model
 *Evaluates the results of a classification or regression model with standard metrics*  

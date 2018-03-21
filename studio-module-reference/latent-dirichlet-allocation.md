@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e35a5905-bd57-41f4-9576-82bfcb92f837
 caps.latest.revision: 16
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Latent Dirichlet Allocation
 

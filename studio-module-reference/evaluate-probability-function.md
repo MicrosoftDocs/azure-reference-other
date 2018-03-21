@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 0de80e22-f74e-4e51-a080-e73806a6e00c
 caps.latest.revision: 20
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Evaluate Probability Function
 *Fits a specified probability distribution function to a dataset*  

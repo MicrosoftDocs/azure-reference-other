@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8b8f49bd-bd2f-4f80-b2e7-2b5cb4b7d973
 caps.latest.revision: 12
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Export to Azure Table
 

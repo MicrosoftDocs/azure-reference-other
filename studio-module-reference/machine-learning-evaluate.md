@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ea496474-d04c-474f-896f-3f4531cd8be0
 caps.latest.revision: 24
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Machine Learning - Evaluate
 

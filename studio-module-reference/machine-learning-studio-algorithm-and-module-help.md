@@ -13,9 +13,9 @@ applies_to:
   - "Azure"
 ms.assetid: f5c746fd-dcea-4929-ba50-2a79c4c067d7
 caps.latest.revision: 18
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Machine Learning Studio: algorithm and module help
 

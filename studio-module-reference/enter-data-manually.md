@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 4fbef0ab-2c8e-4a25-b5c4-7be76eac33d6
 caps.latest.revision: 21
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Enter Data Manually
 *Enables entering and editing small datasets by typing values*  
