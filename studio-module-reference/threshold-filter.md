@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 11fbc6ba-3a9f-4492-b789-8ef8a9320306
 caps.latest.revision: 19
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Threshold Filter
 *Creates a threshold filter that constrains values*  
