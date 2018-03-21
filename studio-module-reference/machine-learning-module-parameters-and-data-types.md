@@ -10,9 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 16e1806f-cac7-4be2-925e-83500a46cf89
 caps.latest.revision: 4
-author: "garyericson"
-ms.author: "garye"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
+
 ---
 # Machine Learning Studio Parameters and Data Types
 

@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 9cfd19ab-5ddd-4810-82a5-0a299fca1372
 caps.latest.revision: 7
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Machine Learning Module Data Types
 
