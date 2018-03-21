@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 60822377-da7a-40b8-0021-d185d1509344
 caps.latest.revision: 11
-author: "jeannt"
-ms.author: "jeannt"
-manager: "jhubbard"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0021  
  Exception occurs if number of rows in some of the datasets passed to the module is too small.  
