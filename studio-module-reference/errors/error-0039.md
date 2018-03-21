@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 60822377-da7a-40b8-0039-d185d1509344
 caps.latest.revision: 7
-author: "jeannt"
-ms.author: "jeannt"
-manager: "jhubbard"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0039  
  Exception occurs if an operation has failed.  
