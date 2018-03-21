@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e3c522f8-53d9-4829-8ea4-5c6a6b75330c
 caps.latest.revision: 24
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Two-Class Boosted Decision Tree
 *Creates a binary classifier using a boosted decision tree algorithm*  

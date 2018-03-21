@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 44960281-6126-457a-9411-b0bc9ffd128f
 caps.latest.revision: 25
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Two-Class Locally Deep Support Vector Machine
 *Creates a binary classification model using the locally deep Support Vector Machine algorithm*  

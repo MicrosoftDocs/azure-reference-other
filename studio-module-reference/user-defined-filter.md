@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 53f113fe-2e9d-45dd-a421-cdd7ada0567b
 caps.latest.revision: 19
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # User-Defined Filter
 *Creates a custom finite or infinite impulse response filter*  

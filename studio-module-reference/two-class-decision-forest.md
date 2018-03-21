@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5a7d5466-9928-40c8-a19c-d5de4882c77e
 caps.latest.revision: 30
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Two-Class Decision Forest
 *Creates a two-class classification model using the decision forest algorithm*  
