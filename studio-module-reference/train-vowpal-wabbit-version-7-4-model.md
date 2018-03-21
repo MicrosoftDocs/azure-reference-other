@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8383eb49-c0a3-45db-95c8-eb56a1fef5bf
 caps.latest.revision: 23
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Train Vowpal Wabbit Version 7-4 Model
 *Trains a model using version 7-4 of the  Vowpal Wabbit machine learning system*  
