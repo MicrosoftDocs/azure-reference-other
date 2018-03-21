@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: a682181b-fa8e-4f5d-a361-766c619df288
 caps.latest.revision: 15
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # OpenCV Library Modules
 

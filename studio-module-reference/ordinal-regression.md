@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ffb557f8-dc7f-44bd-8fd0-b25666dd23f1
 caps.latest.revision: 13
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Ordinal Regression
 
