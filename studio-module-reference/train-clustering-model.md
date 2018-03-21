@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: bb43c744-f7fa-41d0-ae67-74ae75da3ffd
 caps.latest.revision: 14
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Train Clustering Model
 *Trains a clustering model and assigns data from the training set to clusters*  

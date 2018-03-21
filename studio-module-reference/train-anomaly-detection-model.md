@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d6acbace-a72d-44b9-9878-869115e02458
 caps.latest.revision: 11
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Train Anomaly Detection Model
 *Trains an anomaly detection model on a training set*  

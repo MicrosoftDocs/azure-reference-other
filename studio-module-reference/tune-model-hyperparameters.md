@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 038d91b6-c2f2-42a1-9215-1f2c20ed1b40
 caps.latest.revision: 22
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Tune Model Hyperparameters
 *Performs a parameter sweep on a model to determine the optimum parameter settings*  
