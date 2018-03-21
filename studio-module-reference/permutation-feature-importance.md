@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 2e010ee4-714e-44e9-933e-62d8c41818a9
 caps.latest.revision: 13
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Permutation Feature Importance
 *Computes the permutation feature importance scores of feature variables given a trained model and a test dataset*  
