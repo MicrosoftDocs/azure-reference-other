@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 60822377-da7a-40b8-0004-d185d1509344
 caps.latest.revision: 6
-author: "jeannt"
-ms.author: "jeannt"
-manager: "markl"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0004  
  Exception occurs if parameter is less than or equal to specific value.  

@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 60822377-da7a-40b8-0011-d185d1509344
 caps.latest.revision: 7
-author: "jeannt"
-ms.author: "jeannt"
-manager: "jhubbard"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0011  
  Exception occurs if passed column set argument does not apply to any of dataset columns.  
