@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 9f3fe1c4-520e-49ac-a152-2e104169912a
 caps.latest.revision: 22
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # SMOTE
 *Increases the number of low incidence examples in a dataset using synthetic minority oversampling*  
