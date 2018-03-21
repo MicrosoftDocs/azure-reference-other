@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1d195fe5-98cd-4e1a-a1c8-076aaa3e02c3
 caps.latest.revision: 28
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Multiclass Logistic Regression
 

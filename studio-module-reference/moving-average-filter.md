@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1889e4ca-7bf7-494d-b2cc-da9940468b9e
 caps.latest.revision: 21
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Moving Average Filter
 *Creates a moving average filter used to smooth data for trend analysis*  
