@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 60822377-da7a-40b8-0037-d185d1509344
 caps.latest.revision: 6
-author: "jeannt"
-ms.author: "jeannt"
-manager: "jhubbard"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0037  
  Exception occurs if multiple label columns are specified and just one is allowed.  
