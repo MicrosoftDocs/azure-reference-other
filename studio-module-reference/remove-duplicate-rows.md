@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 02016f47-e4c3-4a06-9ae5-16c747389e34
 caps.latest.revision: 14
-author: "jeannt"
-ms.author: "jeannt"
-manager: "cgronlund"
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Remove Duplicate Rows
 *Removes the duplicate rows from a dataset*  
