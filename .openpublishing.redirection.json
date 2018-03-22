@@ -7,7 +7,7 @@
     },
     {
        "source_path": "studio-module-reference/import-from-documentdb.md",
-       "redirect_url": "studio-module-reference/import-from-cosmos-db",
+       "redirect_url": "import-from-cosmos-db",
        "redirect_document_id": true
     },    
     {
