@@ -174,5 +174,5 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0154](errors/error-0154.md)|The specified server name could not be resolved|  
 |[Error 0155](errors/error-0155.md)|The DocDb Client threw an exception|  
 |[Error 0156](errors/error-0156.md)|Bad response for HCatalog Server|  
-|[Error 0157](errors/error-0157.md)|There was an error reading from DocumentDB due to inconsistent or different document schemas|  
+|[Error 0157](errors/error-0157.md)|There was an error reading from Azure Cosmos DB due to inconsistent or different document schemas|  
 |[Error 1000](errors/error-1000.md)|Internal library exception.|

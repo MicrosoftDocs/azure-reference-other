@@ -48,7 +48,7 @@ See these experiments in the [Cortana Intelligence Gallery](https://gallery.cort
 
 + Input data from various sources:  This lab provides a visual guide to using many of the Azure ML data sources: [AzureML experiments and data interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1)
 
-+ DocumentDB: [Reading data from Azure DocumentDB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1)
++ Azure Cosmos DB: [Reading data from Azure Cosmos DB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1)
 
 + Azure blob storage and Azure SQL Database: [Twitter Stream Analysis with Azure Machine Learning](https://gallery.cortanaintelligence.com/Tutorial/Twitter-Stream-Analysis-with-Azure-Machine-Learning)
 

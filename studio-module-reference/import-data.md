@@ -51,13 +51,13 @@ If you are not sure how or where you should store your data, see this guide to c
 |[Import from Azure Blob Storage](import-from-azure-blob-storage.md) |Get data that is stored in the Azure blob service|  
 |[Data Feed Providers](import-from-data-feed-providers.md) |Get data exposed as a feed in OData format|  
 |[Import from On-Premises SQL Server Database](import-from-on-premises-sql-server-database.md)|Get data from an on-premises SQL Server database using the Microsoft Data Management Gateway|
-|[Azure Cosmos DB](import-from-documentdb.md)| Get data stored in JSON format in Azure Cosmos DB. |
+|[Azure Cosmos DB](import-from-cosmos-db.md)| Get data stored in JSON format in Azure Cosmos DB. |
 
 > [!TIP]
 > 
 > Need to import data in the JSON format? Both R and Python support REST APIs, so use the [Execute Python Script](execute-python-script.md) or [Execute R Script](execute-r-script.md) modules to parse your data and save it as an Azure ML dataset.  
 > 
-> Or, use the SQL DB API for CosmosDB, which supports multiple JSON stores, including MongoDB, to read your data using the **Import from DocumentDB** option. For more information, see [Import from Azure Cosmos DB](import-from-documentdb.md). 
+> Or, use the SQL DB API for CosmosDB, which supports multiple JSON stores, including MongoDB, to read your data using the **Import from Azure Cosmos DB** option. For more information, see [Import from Azure Cosmos DB](import-from-cosmos-db.md). 
 
 ## How to use Import Data
  
