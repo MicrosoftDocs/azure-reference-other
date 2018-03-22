@@ -171,5 +171,5 @@ This topic lists the errors that might be reported in individual modules in Azur
 |[Error 0154](error-0154.md)|The specified server name could not be resolved.|  
 |[Error 0155](error-0155.md)|The DocDb Client threw an exception.|  
 |[Error 0156](error-0156.md)|Bad response for HCatalog Server|  
-|[Error 0157](error-0157.md)|There was an error reading from DocumentDB due to inconsistent or different document schemas.|  
+|[Error 0157](error-0157.md)|There was an error reading from Azure Cosmos DB due to inconsistent or different document schemas.|  
 |[Error 1000](error-1000.md)|Internal library exception|

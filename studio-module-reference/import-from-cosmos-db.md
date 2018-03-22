@@ -165,7 +165,7 @@ Therefore, we recommend that you always specify the attributes and values to ret
 
 ## Module parameters
 
-The following table includes only those parameters for the **Import Data** module that are applicable to the DocumentDB option.
+The following table includes only those parameters for the **Import Data** module that are applicable to the Azure Cosmos DB option.
 
 |Name|Range|Type|Required|Default|Description|  
 |----------|-----------|-- |--------|-------------|-----------------|  

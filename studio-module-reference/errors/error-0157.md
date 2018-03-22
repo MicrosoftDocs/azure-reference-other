@@ -12,7 +12,7 @@ ms.assetid: 60822377-da7a-40b8-0157-d185d1509344
 caps.latest.revision: 3
 ---
 # Error 0157  
- There was an error reading from DocumentDB due to inconsistent or different document schemas. Reader requires all documents to have the same schema.  
+ There was an error reading from Azure Cosmos DB due to inconsistent or different document schemas. Reader requires all documents to have the same schema.  
   
 |Exception Messages|  
 |------------------------|  
