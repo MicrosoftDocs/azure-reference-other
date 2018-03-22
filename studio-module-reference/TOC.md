@@ -22,7 +22,7 @@
 ##### [Import from Azure Blob Storage](import-from-azure-blob-storage.md)
 ##### [Import from Data Feed Providers](import-from-data-feed-providers.md)
 ##### [Import from On-Premises SQL Server Database](import-from-on-premises-sql-server-database.md)
-##### [Import from DocumentDB (CosmosDB)](import-from-documentdb.md)
+##### [Import from Azure Cosmos DB](import-from-documentdb.md)
 #### [Load Trained Model](load-trained-model.md)
 #### [Unpack Zipped Datasets](unpack-zipped-datasets.md)
 ### [Data Transformation](data-transformation.md)
