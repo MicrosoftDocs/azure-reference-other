@@ -1,5 +1,5 @@
 ---
-title: "Import from DocumentDB (CosmosDB) | Microsoft Docs"
+title: "Import from Azure Cosmos DB | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
 ms.date: 01/24/2018
@@ -14,29 +14,22 @@ author: rastala
 ms.author: roastala
 manager: cgronlun
 ---
-# Import from DocumentDB (CosmosDB)
+# Import from Azure Cosmos DB
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data from Azure CosmosDB for use in a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data from Azure Cosmos DB for use in a machine learning experiment.
   
-[Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction) includes the service formerly known as DocumentDB. CosmosDB supports NoSQL database storage, using a flexible data model. The advantages of using the SQL APIs in this data store for machine learning include fast and predictable performance, automatic scaling, global distribution, and rich query capabilities. 
+[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction) supports NoSQL database storage, using a flexible data model. The advantages of using the SQL APIs in this data store for machine learning include fast and predictable performance, automatic scaling, global distribution, and rich query capabilities. 
 
 Together with Azure SQL Database, this option lets you dynamically filter incoming datasets.
 
-Learn how it works: [Learn about CosmosDB](https://azure.microsoft.com/services/cosmos-db/)  
+Learn how it works: [Learn about Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)  
 
-**What is new?**
-
-The service provides the same functionality as before, but has been renamed the "Azure Cosmos DB SQL API". See this article for information about the new name and other changes: [Azure Cosmos DB FAQ](https://docs.microsoft.com/azure/cosmos-db/faq)
-
-Because the underlying API fully supports DocumentDB, you don't need to change anything to continue running machine learning experiments that rely on DocumentDB.  
-
-+ To get started with machine learning using data from Microsoft Azure CosmosDB, you must have access to an existing CosmosDB account containing a collection of related documents. 
-+ If you had a DocumentDB API account before, you now have a CosmosDB SQL API account, with no change to your billing.
++ To get started with machine learning using data from Azure Cosmos DB, you must have access to an existing Azure Cosmos DB account containing a collection of related documents. 
 
 > [!NOTE]
-> The user interface in Azure Machine Learning Studio still uses the name DocumentDB in many places. Therefore, you may continue to see references to DocumentDB, even though the API has been incorporated into CosmosDB. 
+> The user interface in Azure Machine Learning Studio still uses the name DocumentDB in many places. Therefore, you may continue to see references to DocumentDB, even though the API has been incorporated into Azure Cosmos DB. 
 
-## How to use Import Data with CosmosDB
+## How to use Import Data with Azure Cosmos DB
 
 We strongly recommend that you profile your data before importing, to make sure that the schema is as expected. The import process scans some number of head rows to determine the schema, but later rows might contain extra columns, or data that cause errors.
 
@@ -60,8 +53,6 @@ The following steps describe how to manually configure the import source.
 1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category. 
 
 2. For **Data source**, select **Azure DocumentDB**.
-
-    The document store must have been created using Microsoft Azure CosmosDB. Accounts that were created using Microsoft Azure DocumentDB are seamlessly upgraded.
 
     You might need to provide connection information for the document database. 
 
@@ -98,7 +89,7 @@ The following steps describe how to manually configure the import source.
 
     Azure Machine Learning **cannot** compare the cached data against the data in your CosmosDB account. Hence, there is no way to perform incremental updates from Azure Machine Learning.
 
-    If you want to re-import only when the data changes, you must define that logic in another application, such as Azure Data Factory. For more information, see [Move data to and from DocumentDB using Azure Data Factory](https://azure.microsoft.com/documentation/articles/data-factory-azure-documentdb-connector/).
+    If you want to re-import only when the data changes, you must define that logic in another application, such as Azure Data Factory. For more information, see [Move data to and from Azure Cosmos DB using Azure Data Factory](https://docs.microsoft.com/azure/data-factory/v1/data-factory-azure-documentdb-connector).
 
 9. Run the experiment, or select just the [Import Data](import-data.md) module and click **Run selected**.
 
@@ -110,11 +101,9 @@ To capture a snapshot of this data in your Azure Machine Learning workspace as a
 
 ## Examples
 
-For a detailed walkthrough of how to use DocumentDB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
+For a detailed walkthrough of how to use Azure Cosmos DB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
 
-+ [Reading data from Azure DocumentDB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1)
-
-+ [SQL Parameterization in DocumentDB](https://azure.microsoft.com/blog/announcing-sql-parameterization-in-documentdb/): This blog provides additional examples of parameterized queries on a DocumentDb store.
++ [SQL queries for Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-sql-query): This article explains how to perform SQL queries on Azure Cosmos DB data.
 
 ## <a name="TechnicalNotes"></a> Technical notes
 
@@ -152,13 +141,13 @@ If you don't have an existing document store, see these articles to get started.
 
 + [Add a collection](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet#create-collection)
 
-+ [Azure DocumentDB Migration Tool](https://www.microsoft.com/download/details.aspx?id=46436)
++ [Azure Cosmos DB Migration Tool](https://www.microsoft.com/download/details.aspx?id=46436)
 
 ### Data migration and query syntax help
 
-For samples of queries on a JSON data store, download the [DocumentDB SQL query cheat sheet](http://docs.microsoft.com/azure/documentdb/documentdb-sql-query-cheat-sheet).
+For samples of queries on a JSON data store, download the [Azure Cosmos DB query cheat sheet](https://docs.microsoft.com/azure/cosmos-db/query-cheat-sheet).
 
-If you need to upload content into DocumentDB, we recommend the [DocumentDB migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data). It validates, uploads, and indexes your data. The tool supports multiple sources, including MongoDB, Amazon DynamoDB, HBase, SQL Server databases, and CSV files.
+If you need to upload content into Azure Cosmos DB, we recommend the [Azure Cosmos DB migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data). It validates, uploads, and indexes your data. The tool supports multiple sources, including MongoDB, Amazon DynamoDB, HBase, SQL Server databases, and CSV files.
 
 ### Using schema-less queries
 
@@ -176,16 +165,16 @@ Therefore, we recommend that you always specify the attributes and values to ret
 
 ## Module parameters
 
-The following table includes only those parameters for the **Import Data** module that are applicable to the DocumentDB option.
+The following table includes only those parameters for the **Import Data** module that are applicable to the Azure Cosmos DB option.
 
 |Name|Range|Type|Required|Default|Description|  
 |----------|-----------|-- |--------|-------------|-----------------|  
-|Data source |list|HTTP| required|none | Data source can be HTTP, FTP, anonymous HTTPS or FTPS, a file in Azure BLOB storage, an Azure table, an Azure SQL Database, a Hive table, an OData endpoint, or DocumentDB.|  
-|Endpoint URL|any|string|required|none|Provide the URI for the Azure DocumentDB server|  
-|Database ID|any|string|required|none|Provide the name of the DocumentDB database|  
-|DocumentDB Key|any|SecureString|required|none|Provide a valid API key for the DocumentDB account|  
-|Collection ID|any|string|required|none|Provide the name of a collection in the DocumentDB database|  
-|SQL Query|any|string|required|none|A SQL query specifying records to return from the DocumentDB data store| 
+|Data source |list|HTTP| required|none | Data source can be HTTP, FTP, anonymous HTTPS or FTPS, a file in Azure BLOB storage, an Azure table, an Azure SQL Database, a Hive table, an OData endpoint, or Azure Cosmos dB.|  
+|Endpoint URL|any|string|required|none|Provide the URI for the Azure Cosmos DB server|  
+|Database ID|any|string|required|none|Provide the name of the Azure Cosmos DB database|  
+|DocumentDB Key|any|SecureString|required|none|Provide a valid API key for the Azure Cosmos DB account|  
+|Collection ID|any|string|required|none|Provide the name of a collection in the Azure Cosmos DB database|  
+|SQL Query|any|string|required|none|A SQL query specifying records to return from the Azure Cosmos DB data store| 
 
 ## Outputs
 
