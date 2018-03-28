@@ -11,6 +11,7 @@
 #### [U-SQL Identifiers](u-sql-identifiers.md)
 ### [Rowset: The Processing Data Structure (U-SQL)](rowset-the-processing-data-structure-u-sql.md)
 ### [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
+### [Deploy Resource (U-SQL)](deploy-resource-u-sql.md)
 ## [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)
 ### [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)
 #### [ANY_VALUE (U-SQL)](any-value-u-sql.md)
