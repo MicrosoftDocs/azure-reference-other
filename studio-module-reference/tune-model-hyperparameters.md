@@ -19,7 +19,7 @@ manager: cgronlun
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
   
-## Module overview  
+## Module overview
 
 This article describes how to use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module in Azure Machine Learning Studio, to determine the optimum hyperparameters for a given machine learning model. The module builds and tests models multiple models, using different combinations of settings, and compares metrics over all models to get the combination of settings. 
 
