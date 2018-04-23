@@ -62,7 +62,7 @@ TIMESTAMP BY OVER clause has the following limitations of usage:
 
 3.	If TIMESTAMP BY OVER \<over spec> clause is used, column names from the clause must be used as grouping key in GROUP BY statements and in all JOIN predicates when joining between streams.
       
-4.	At this time reference data JOIN cannot be used in the queries using TIMESTAMP BY OVER clause.
+4.	At this time, reference data JOIN cannot be used in the queries using TIMESTAMP BY OVER clause.
 
   
 ## Examples  
