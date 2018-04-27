@@ -3,19 +3,17 @@ title: "DATETIMEFROMPARTS (Azure Stream Analytics) | Microsoft Docs"
 description: " Returns a datetime value for the specified date and time. "
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 6e69e0ea-6774-4ad2-981b-a4624a56c52b
 caps.latest.revision: 5
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # DATETIMEFROMPARTS (Azure Stream Analytics)
   Returns a datetime value for the specified date and time.  

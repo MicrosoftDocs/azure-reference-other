@@ -3,19 +3,17 @@ title: "GetMetadataPropertyValue | Microsoft Docs"
 description: "Queries input data for specific properties. "
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 7fca3d2c-2475-49e8-8c16-e268b65def22
 caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 03/01/2017
-ms.author: sngun
+ms.author: jasonh
 ---
 # GetMetadataPropertyValue
   Queries input data for specific properties. There are three types of properties, Adapter, User, and Unique EventId Properties.

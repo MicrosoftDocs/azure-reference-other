@@ -3,19 +3,17 @@ title: "Percentile_Cont (Azure Stream Analytics) | Microsoft Docs"
 description: "Calculates a percentile based on a continuous distribution of the entire data set."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 7f4d2984-d4bc-4560-abd9-2d20cfe9104c
 caps.latest.revision: 2
 ms.workload: data-services
 ms.date: 09/08/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # Percentile_Cont (Azure Stream Analytics)
 Calculates a percentile based on a continuous distribution of the entire data set. The result is interpolated and might not be equal to any of the specific values from the input set. 

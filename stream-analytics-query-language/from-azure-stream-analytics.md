@@ -3,19 +3,17 @@ title: "FROM (Azure Stream Analytics) | Microsoft Docs"
 description: "Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 4b6f2a98-fceb-4066-ba43-1957a47f1859
 caps.latest.revision: 6
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # FROM (Azure Stream Analytics)
   Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement.  

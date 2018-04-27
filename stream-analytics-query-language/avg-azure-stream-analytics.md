@@ -3,19 +3,17 @@ title: "AVG (Azure Stream Analytics) | Microsoft Docs"
 description: "Returns the average of the values in a group. Null values are ignored."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: c0638288-6ca0-49f7-b119-8c0af842203a
 caps.latest.revision: 5
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 
 # AVG (Azure Stream Analytics)

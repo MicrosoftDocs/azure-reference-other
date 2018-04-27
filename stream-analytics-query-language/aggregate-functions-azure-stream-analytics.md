@@ -3,19 +3,17 @@ title: "Aggregate Functions (Azure Stream Analytics) | Microsoft Docs"
 description: "Aggregate functions perform a calculation on a set of values and return a single value. Except for the COUNT function, aggregate functions ignore null values."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 1fa11c79-3f97-4050-8d2c-b4cf61cdaf59
 caps.latest.revision: 23
 ms.workload: data-services
 ms.date: 12/09/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 
 # Aggregate Functions (Azure Stream Analytics)

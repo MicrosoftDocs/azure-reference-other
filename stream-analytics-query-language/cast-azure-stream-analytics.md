@@ -3,19 +3,17 @@ title: "CAST (Azure Stream Analytics) | Microsoft Docs"
 description: "Converts an expression of one data type to another within the supported types in Stream Analytics Query Language."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 1cddcf7a-cdc7-4efc-91c3-9f8058b0e8c7
 caps.latest.revision: 8
 ms.workload: data-services
 ms.date: 07/19/2017
-ms.author: sngun
+ms.author: jasonh
 ---
 
 # CAST (Azure Stream Analytics)

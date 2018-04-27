@@ -3,19 +3,17 @@ title: "CreateLineString | Microsoft Docs"
 description: "Returns a GeoJSON LineString record. The result of a CreateLineString can be used as input to other Geospatial functions."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: c99c9464-d052-4aef-a176-6ee53c6dcab9
 caps.latest.revision: 3
 ms.workload: data-services
 ms.date: 03/22/2017
-ms.author: sngun
+ms.author: jasonh
 ---
 # CreateLineString
   Returns a GeoJSON LineString record. The result of a CreateLineString can be used as input to other Geospatial functions.  
