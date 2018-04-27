@@ -3,19 +3,17 @@ title: "Windowing (Azure Stream Analytics) | Microsoft Docs"
 description: "This topic describes windows and how they are defined, identifies the types of windows that are supported, and explains how you can use windows with various operators."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 5b46b0df-c441-4729-be82-9c000130fdbb
 caps.latest.revision: 11
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # Windowing (Azure Stream Analytics)
   In applications that process real-time events, a common requirement is to perform some set-based computation (aggregation) or other operations over subsets of events that fall within some period of time. Because the concept of time is a fundamental necessity to complex event-processing systems, it’s important to have a simple way to work with the time component of query logic in the system. In Azure Stream Analytics, these subsets of events are defined through windows to represent groupings by time. This topic describes windows and how they are defined, identifies the types of windows that are supported, and explains how you can use windows with various operators.  

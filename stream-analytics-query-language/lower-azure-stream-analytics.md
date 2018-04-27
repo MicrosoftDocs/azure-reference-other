@@ -3,19 +3,17 @@ title: "LOWER (Azure Stream Analytics) | Microsoft Docs"
 description: "Returns a character expression after converting uppercase character data to lowercase."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 378b640d-7cd8-429a-83f8-7738c008411d
 caps.latest.revision: 6
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # LOWER (Azure Stream Analytics)
   Returns a character expression after converting uppercase character data to lowercase.  

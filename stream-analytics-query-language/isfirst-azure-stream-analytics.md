@@ -3,19 +3,17 @@ title: "ISFIRST (Azure Stream Analytics) | Microsoft Docs"
 description: "Returns 1 if the event is the first event within a given duration, or 0 otherwise."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: e905fd1b-94df-44ad-822f-7c92dc6acfcc
 caps.latest.revision: 11
 ms.workload: data-services
 ms.date: 10/20/2017
-ms.author: sngun
+ms.author: jasonh
 ---
 # ISFIRST (Azure Stream Analytics)
 Returns 1 if the event is the first event within a given duration, or 0 otherwise. ISFIRST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.

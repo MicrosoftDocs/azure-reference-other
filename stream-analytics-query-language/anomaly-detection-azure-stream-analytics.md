@@ -3,18 +3,16 @@ title: "ANOMALYDETECTION (Azure Stream Analytics) | Microsoft Docs"
 description: ""
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 
 ms.workload: data-services
 ms.date: 02/12/2018
-ms.author: sngun
+ms.author: jasonh
 ---
 
 # ANOMALYDETECTION (Azure Stream Analytics)

@@ -3,19 +3,17 @@ title: "CollectTOP (Azure Stream Analytics) | Microsoft Docs"
 description: "Returns an array of ranked records, where rank defines the ranking position of the event in the window according to the specified ordering."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 88431761-5ccc-4225-b9d0-d54811c6393e
 caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 05/24/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 
 # CollectTOP (Azure Stream Analytics)
