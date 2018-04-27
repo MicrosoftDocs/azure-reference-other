@@ -3,19 +3,17 @@ title: "UNION (Azure Stream Analytics) | Microsoft Docs"
 description: "Combines the results of two or more queries into a single result set that includes all the rows that belong to all queries in the union."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 4642814a-14d1-4331-bb87-e5865cd9ae1f
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # UNION (Azure Stream Analytics)
   Combines the results of two or more queries into a single result set that includes all the rows that belong to all queries in the union. The UNION operation is different from using joins that combine columns from two tables.  

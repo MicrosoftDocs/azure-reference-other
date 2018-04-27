@@ -3,19 +3,17 @@ title: "GetArrayElement (Azure Stream Analytics) | Microsoft Docs"
 description: "Returns the array element at the specified index. "
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 21dd9ec1-6722-4175-98db-c4e5e2f7cd6d
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # GetArrayElement (Azure Stream Analytics)
   Returns the array element at the specified index.  

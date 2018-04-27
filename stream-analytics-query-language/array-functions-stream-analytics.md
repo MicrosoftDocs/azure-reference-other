@@ -3,19 +3,17 @@ title: "Array Functions (Stream Analytics) | Microsoft Docs"
 description: "Array functions perform actions against arrays return information in them.  "
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 06db0d4c-9919-4bd4-96a6-e2ffb39d5a56
 caps.latest.revision: 5
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 
 # Array Functions (Stream Analytics)

@@ -3,19 +3,17 @@ title: "CreatePoint | Microsoft Docs"
 description: "Returns a GeoJSON Point record. The result of a CreatePoint can be used as input to other Geospatial functions."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: b49facae-be27-4e6b-a2e8-299d6f9c41e4
 caps.latest.revision: 4
 ms.workload: data-services
 ms.date: 02/01/2017
-ms.author: sngun
+ms.author: jasonh
 ---
 
 # CreatePoint

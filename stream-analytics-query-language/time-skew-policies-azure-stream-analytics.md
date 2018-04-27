@@ -3,19 +3,17 @@ title: "Time Skew Policies (Azure Stream Analytics) | Microsoft Docs"
 description: "Describes how to handle temporal nature and timing of arrival of events in Azure Stream Analytics."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 3821da4a-53e6-4f15-97f9-b6e3bde759b9
 caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # Time Skew Policies (Azure Stream Analytics)
   In Stream Analytics, all data stream events have a [timestamp](https://msdn.microsoft.com/azure/stream-analytics/reference/system-timestamp-stream-analytics) associated with them. Users can use the [TIMESTAMP BY](https://msdn.microsoft.com/library/azure/mt573293.aspx) keyword to choose between one of these two different times:

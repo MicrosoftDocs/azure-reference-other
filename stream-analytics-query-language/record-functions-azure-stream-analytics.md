@@ -3,19 +3,17 @@ title: "Record Functions (Azure Stream Analytics) | Microsoft Docs"
 description: "Record functions get record properties or values."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: d541e199-bd0e-45cd-a51b-6136f95b380f
 caps.latest.revision: 5
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # Record Functions (Azure Stream Analytics)
   Record functions get record properties or values.  

@@ -3,19 +3,17 @@ title: "Percentile_Disc (Azure Stream Analytics) | Microsoft Docs"
 description: "Calculates a percentile based on entire data set."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 41249d71-7b92-462e-b2fa-665ab2b65ed4
 caps.latest.revision: 3
 ms.workload: data-services
 ms.date: 09/08/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # Percentile_Disc (Azure Stream Analytics)
 Calculates a percentile based on entire data set. For a given percentile value P, PERCENTILE_DISC sorts the values of the expression in the ORDER BY clause and returns the value within the smallest cumulative distance that is greater than or equal to P. For example, PERCENTILE_DISC (0.5) will compute the 50th percentile (that is, the median) of an expression. PERCENTILE_DISC calculates the percentile based on a discrete distribution of the data values; the result is equal to a specific value from the input data.

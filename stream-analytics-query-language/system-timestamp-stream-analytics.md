@@ -3,19 +3,17 @@ title: "System.Timestamp  (Stream Analytics) | Microsoft Docs"
 description: "System.Timestamp is a system property that can be used to retrieve the event’s timestamp. "
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 5636701f-8977-42bf-a864-227652bdf2e4
 caps.latest.revision: 15
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 # System.Timestamp  (Stream Analytics)
   Every event at every stage of the query in Azure Stream Analytics has a timestamp associated with it. System.Timestamp is a system property that can be used to retrieve the event’s timestamp.  

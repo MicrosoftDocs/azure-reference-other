@@ -3,19 +3,17 @@ title: "CASE (Azure Stream Analytics) | Microsoft Docs"
 description: "Evaluates a list of conditions and returns one of multiple possible result expressions."
 applies_to: 
   - "Azure"
-services: "stream-analytics"
-author: SnehaGunda
+services: stream-analytics
+author: jasonwhowell
 manager: kfile
 
 ms.service: stream-analytics
-ms.suite: ""
 ms.topic: reference
-ms.tgt_pltfrm: ""   
 ms.assetid: 7c32501d-0e3e-49e8-8c84-61d33830e355
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: sngun
+ms.author: jasonh
 ---
 
 # CASE (Azure Stream Analytics)
