@@ -10,6 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0147-d185d1509344
 caps.latest.revision: 6
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0147  
  Could not download stuff from GitHub for some reason  
