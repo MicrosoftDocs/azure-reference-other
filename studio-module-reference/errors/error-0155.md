@@ -10,6 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0155-d185d1509344
 caps.latest.revision: 3
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0155  
  The DocDb Client threw an exception  
