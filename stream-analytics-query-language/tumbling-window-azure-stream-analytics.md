@@ -18,7 +18,7 @@ ms.author: jasonh
 # Tumbling Window (Azure Stream Analytics)
   Tumbling windows are a series of fixed-sized, non-overlapping and contiguous time intervals. The following diagram illustrates a stream with a series of events and how they are mapped into 5-second tumbling windows.  
   
- ![Stream Analytics tumbling window 5 mins](media/streamanalytics-tumblingwindow5mins.png "Stream Analytics tumbling window 5 mins")  
+ ![Stream Analytics tumbling window 5 mins](media/tumbling-window-azure-stream-analytics/streamanalytics-tumblingwindow5mins.png "Stream Analytics tumbling window 5 mins")  
   
  **Syntax**  
   
