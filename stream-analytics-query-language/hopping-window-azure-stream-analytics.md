@@ -6,7 +6,6 @@ applies_to:
 services: stream-analytics
 author: jasonwhowell
 manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: aff805fa-3490-49a9-81b2-ddcaac4debaf
