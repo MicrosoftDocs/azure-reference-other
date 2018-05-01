@@ -17,7 +17,7 @@ Session windows group events that arrive at similar times, filtering out periods
 
 The following diagram illustrates a stream with a series of events and how they are mapped into session windows of 5 minutes timeout, and maximum duration of 10 minutes.
 
- ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window/streamanalytics-sessionwindow.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
+ ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window-azure-stream-analytics/streamanalytics-sessionwindow.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
 
 A session window begins when the first event occurs. If another event occurs within the specified timeout from the last ingested event, then the window extends to include the new event. Otherwise if no events occur within the timeout, then the window is closed at the timeout.
 
@@ -25,7 +25,7 @@ If events keep occurring within the specified timeout, the session window will k
 
 Thus mathematically, our session window ends if the following condition is satisfied:
 
- ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window/streamanalytics-sessionwindow_endconditions.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
+ ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window-azure-stream-analytics/streamanalytics-sessionwindow_endconditions.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
 
 When a partition key is provided, the events are grouped together by the key and session window is applied to each group independently. This is useful for cases where you need different session windows for different users or devices.
 
