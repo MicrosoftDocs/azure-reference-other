@@ -10,6 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0143-d185d1509344
 caps.latest.revision: 6
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0143  
  Can't parse user-provided URL that is supposed to be from GitHub.  

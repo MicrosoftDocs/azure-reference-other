@@ -10,6 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0148-d185d1509344
 caps.latest.revision: 7
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0148  
  Unauthorized access issues while extracting data or creating directory.  
