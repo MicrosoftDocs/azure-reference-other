@@ -6,11 +6,9 @@ applies_to:
 services: stream-analytics
 author: jasonwhowell
 manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: aff805fa-3490-49a9-81b2-ddcaac4debaf
-caps.latest.revision: 14
 ms.workload: data-services
 ms.date: 04/22/2016
 ms.author: jasonh
@@ -20,7 +18,7 @@ ms.author: jasonh
   
  The following illustration shows a stream with a series of events. Each box represents a hopping window and the events that are counted as part of that window, assuming that the ‘hop’ is 5, and the ‘size’ is 10.  
   
- ![Stream Analytics hopping window diagram](media/streamanalytics-hoppingwindow.png "Stream Analytics hopping window diagram")  
+ ![Stream Analytics hopping window diagram](media/hopping-window-azure-stream-analytics/streamanalytics-hoppingwindow.png "Stream Analytics hopping window diagram")  
   
  **Syntax**  
   
