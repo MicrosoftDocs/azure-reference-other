@@ -10,6 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0142-d185d1509344
 caps.latest.revision: 7
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0142  
  Exception occurs when the system cannot load certificate to authenticate.  

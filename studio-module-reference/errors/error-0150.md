@@ -10,6 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0150-d185d1509344
 caps.latest.revision: 6
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0150  
  The scripts that come from the user package could not be unzipped, most likely because of a collision with Github files.  

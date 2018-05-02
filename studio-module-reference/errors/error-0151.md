@@ -10,6 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0151-d185d1509344
 caps.latest.revision: 7
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0151  
  There was an error writing to cloud storage. Please check the URL.  

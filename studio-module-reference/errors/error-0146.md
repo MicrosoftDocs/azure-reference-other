@@ -10,6 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60822377-da7a-40b8-0146-d185d1509344
 caps.latest.revision: 6
+author: rastala
+ms.author: roastala
+manager: cgronlun
 ---
 # Error 0146  
  When the user files are unzipped into the local directory, the combined path might be too long.  
