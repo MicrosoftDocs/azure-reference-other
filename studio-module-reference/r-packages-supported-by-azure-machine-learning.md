@@ -386,7 +386,6 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |longitudinalData|MRO only|  
 |lpSolve||  
 |lsa||  
-|LSAfun||
 |lubridate||  
   
  [List of supported packages](#bkmk_List)  
