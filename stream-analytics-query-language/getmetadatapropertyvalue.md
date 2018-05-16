@@ -4,7 +4,7 @@ description: "Queries input data for specific properties. "
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -16,68 +16,70 @@ ms.date: 03/01/2017
 ms.author: jasonh
 ---
 # GetMetadataPropertyValue
-  Queries input data for specific properties. There are three types of properties, Adapter, User, and Unique EventId Properties.
+  Queries input data for specific properties. There are three types of properties: Adapter, User, and Unique EventId.
   
-## Adapter metadata Properties
-Certain input specific properties have been made accessible by GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record.
+## Adapter metadata properties
+Certain input-specific properties have been made accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record.
 
 > [!NOTE]  
->  Please be aware when doing passthrough queries with GetMetadataPropertyValue as it produces two columns of metadata properties or records with the same value. Also, avoid column name collision with payload column name and metadata property name. This behavior discrepancies will be addressed in near future.
+>  Please be aware when doing passthrough queries with GetMetadataPropertyValue as it produces two columns of metadata properties or records with the same value. Also, avoid column name collision with payload column name and metadata property name. This behavior discrepancy will be addressed in the near future.
 >
->For example, **`SELECT *, GetMetadataPropertyValue(input, 'User.foo') as foo FROM input`** may produce unintended results.
+>For example, **`SELECT *, GetMetadataPropertyValue(input, 'User.foo') AS foo FROM input`** may produce unintended results.
 
 
 ### Examples
 
-To query from an Event Hub input;  
-`select GetMetadataPropertyValue(ehInput, '[EventHub].[EventEnqueuedUtcTime]') as mytime from ehInput`
+To query from an Event Hub input,  
+`SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[EventEnqueuedUtcTime]') AS mytime FROM ehInput`
 
-To query from an IoT Hub input;  
-`select GetMetadataPropertyValue(iotInput, 'IoTHub.StreamId') as iotStreamId from iotInput`
+To query from an IoT Hub input,  
+`SELECT GetMetadataPropertyValue(iotInput, 'IoTHub.StreamId') AS iotStreamId FROM iotInput`
 
-To query all adapter related properties as a record;
+To query from Event Hub with IoT Routing enabled,  
+`SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
+
+To query all adapter-related properties as a record,
 
 For Event Hub:  
-`select GetMetadataPropertyValue(ehInput, 'EventHub') as myEHPropertiesRecord from ehInput`
+`SELECT GetMetadataPropertyValue(ehInput, 'EventHub') AS myEHPropertiesRecord FROM ehInput`
 
 For IoT Hub:  
-`select GetMetadataPropertyValue(iotInput, 'IoTHub') as iotRecord from iotInput`
+`SELECT GetMetadataPropertyValue(iotInput, 'IoTHub') AS iotRecord FROM iotInput`
 
 For Blob input:  
-`select GetMetadataPropertyValue(blobInput, 'Blob') as blobRecord from blobInput`
+`SELECT GetMetadataPropertyValue(blobInput, 'Blob') AS blobRecord FROM blobInput`
 
-## User Properties
+## User properties
 A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages will be accessible as shown below.
 
 ### Examples
 
-To query from an Event Hub input;  
-`select Name, GetMetadataPropertyValue(ehInput, '[User].[SenderClientId]') from ehInput`
+To query from an Event Hub input,  
+`SELECT Name, GetMetadataPropertyValue(ehInput, '[User].[SenderClientId]') FROM ehInput`
 
-To query from an IoT Hub input;  
-`select Name, GetMetadataPropertyValue(iotInput, '[User].[SenderClientId]') from iotInput`
+To query from an IoT Hub input,  
+`SELECT Name, GetMetadataPropertyValue(iotInput, '[User].[SenderClientId]') FROM iotInput`
 
-To query from a Blob input;  
-`select Name, GetMetadataPropertyValue(blobInput, '[User].[SenderClientId]') from blobInput`
+To query from a Blob input,  
+`SELECT Name, GetMetadataPropertyValue(blobInput, '[User].[SenderClientId]') FROM blobInput`
 
-To get all user properties as a record;
+To get all user properties as a record,
 
 For Event Hub:  
-`select Name, GetMetadataPropertyValue(ehInput, '[User]') as userprops from ehInput`
+`SELECT Name, GetMetadataPropertyValue(ehInput, '[User]') AS userprops FROM ehInput`
 
 For IoT Hub:  
-`select Name, GetMetadataPropertyValue(iotInput, '[User]') as userprops from iotInput`
+`SELECT Name, GetMetadataPropertyValue(iotInput, '[User]') AS userprops FROM iotInput`
 
 For Blob input:  
-`select Name, GetMetadataPropertyValue(blobInput, '[User]') as userprops from blobInput`
+`SELECT Name, GetMetadataPropertyValue(blobInput, '[User]') AS userprops FROM blobInput`
 
 
-## Unique EventId Property
-Creates a unique id (Guid) for an input event, which can be useful for primary key purposes. It is consistent (not random) i.e., Stream Analytics will produce the same id for an event, if you go back in time and re-read the same input event.
+## Unique EventId property
+The EventId property creates a unique ID (Guid) for an input event, which can be useful for primary key purposes. EventId is consistent (not random); if you go back in time and re-read the same input event, Stream Analytics will produce the same ID.
 
 ### Example
 
 ```SQL
-SELECT GetMetadataPropertyValue(ehInput, 'EventId') as eventPrimaryKey from ehInput
-``` 
-
+SELECT GetMetadataPropertyValue(ehInput, 'EventId') AS eventPrimaryKey FROM ehInput
+```
