@@ -43,7 +43,7 @@ CROSS APPLY GetArrayElements(event.arrayField) AS arrayElement
 ```  
 
 ## See also
-[GetArrayElement](getarrayelement-azure-stream-analytics.md)
-[Complex Data Types](complex-data-types-stream-analytics.md)
-[CROSS APPLY](apply-azure-stream-analytics.md)
+- [GetArrayElement](getarrayelement-azure-stream-analytics.md)
+- [Complex Data Types](complex-data-types-stream-analytics.md)
+- [CROSS APPLY](apply-azure-stream-analytics.md)
 
