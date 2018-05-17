@@ -13,19 +13,13 @@ ms.assetid: 7fca3d2c-2475-49e8-8c16-e268b65def22
 caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 03/01/2017
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # GetMetadataPropertyValue
   Queries input data for specific properties. There are three types of properties: Adapter, User, and Unique EventId.
   
 ## Adapter metadata properties
 Certain input-specific properties have been made accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record.
-
-> [!NOTE]  
->  Please be aware when doing passthrough queries with GetMetadataPropertyValue as it produces two columns of metadata properties or records with the same value. Also, avoid column name collision with payload column name and metadata property name. This behavior discrepancy will be addressed in the near future.
->
->For example, **`SELECT *, GetMetadataPropertyValue(input, 'User.foo') AS foo FROM input`** may produce unintended results.
-
 
 ### Examples
 
