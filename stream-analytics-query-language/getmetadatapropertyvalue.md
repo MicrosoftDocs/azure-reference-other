@@ -19,7 +19,7 @@ ms.author: mamccrea
   Queries input data for specific properties. There are three types of properties: Adapter, User, and Unique EventId.
   
 ## Adapter metadata properties
-Certain input-specific properties have been made accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record.
+Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record.
 
 ### Examples
 
@@ -44,7 +44,7 @@ For Blob input:
 `SELECT GetMetadataPropertyValue(blobInput, 'Blob') AS blobRecord FROM blobInput`
 
 ## User properties
-A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages will be accessible as shown below.
+A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages is made accessible using GetMetadataPropertyValue, as shown below.
 
 ### Examples
 
