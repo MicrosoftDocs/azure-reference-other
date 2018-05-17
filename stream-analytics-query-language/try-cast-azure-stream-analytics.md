@@ -1,6 +1,6 @@
 ---
-title: "TRY_CAST (Azure Stream Analytics) | Microsoft Docs"
-description: "Returns a value cast to the specified data type if the cast succeeds; otherwise, returns null. "
+title: TRY_CAST (Azure Stream Analytics) | Microsoft Docs
+description: Returns a value cast to the specified data type if the cast succeeds; otherwise, returns null.
 applies_to: 
   - "Azure"
 services: stream-analytics
@@ -16,8 +16,12 @@ ms.date: 04/22/2016
 ms.author: jasonh
 ---
 # TRY_CAST (Azure Stream Analytics)
-  Returns a value cast to the specified data type if the cast succeeds; otherwise, returns null.  
-  
+Returns a value cast to the specified data type if the cast succeeds; otherwise, returns NULL. Supports the [data types](data-types-azure-stream-analytics.md) in the Stream Analytics Query Language.
+
+For example, the clause `TRY_CAST ('this is a string' AS bigint)` results in a NULL since the input string cannot be converted into the `bigint` data type. If you need the cast to fail when there is an incompatible data type, use [CAST](cast-azure-stream-analytics.md) function instead.
+
+This function is useful to help ensure data purity, by enforcing the data types on an input column. You can filter out dirty data that does not match the expected data type in a given column by using TRY_CAST on each column. 
+
  **Syntax**  
   
 ```  
@@ -31,18 +35,22 @@ TRY_CAST ( expression AS data_type)
  The value to be cast. Any valid expression.  
   
  **data_type**  
-  
- The data type into which to cast expression. Is the target data type supported by Stream Analytics Query Language.  
+ The data type into which to cast expression. Is the target [data types](data-types-azure-stream-analytics.md) supported by the Stream Analytics Query Language.  
   
 ## Return Types  
  Returns a value cast to the specified data type if the cast succeeds; otherwise, returns null.  
   
 ## Examples  
-  
+To filter out potentially bad datetime values in the EntryTime column, use TRY_CAST for the column, and use the IS NOT NULL comparison, since NULL values indicate the cast attempt has failed.
+
 ```SQL  
 SELECT TollId, EntryTime   
 FROM Input  
-WHERE TRY_CAST( EntryTime AS datetime) IS NOT NULL  
+WHERE TRY_CAST(EntryTime AS datetime) IS NOT NULL  
 ```  
   
-  
+## See also
+For more information on Stream Analytics data types, see:
+- [Data types](data-types-azure-stream-analytics.md)
+- [Complex data types](complex-data-types-stream-analytics.md)
+- [CAST](cast-azure-stream-analytics.md)
