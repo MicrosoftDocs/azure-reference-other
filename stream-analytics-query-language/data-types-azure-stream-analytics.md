@@ -5,16 +5,16 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: jasonwhowell
+ms.author: jasonh
 manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: f9685302-81db-4f5e-8cea-69ab1af47b2a
 caps.latest.revision: 18
 ms.workload: data-services
-ms.date: 07/07/2016
-ms.author: jasonh
+ms.date: 05/17/2018
 ---
+
 # Data Types (Azure Stream Analytics)
   In Azure Stream Analytics, each column or scalar expression has a related data type. A data type describes (and constrains) the set of values that a column of that type can hold or an expression of that type can produce.  
  
@@ -36,11 +36,17 @@ ms.author: jasonh
 ## Type conversions
  
 These are the rules governing *data type conversions*:  
-•   Conversion without precision loss during input read and output write operations is implicit and is always successful  
-•   Precision loss and overflow inside output write operations is handled by configured error policy (set to either Drop or Retry)  
-•   Type conversion errors happening during output write operations are handled by the error policy  
-•   Type conversion errors happening during input read operations cause the job to drop the event
+- Conversion without precision loss during input read and output write operations is implicit and is always successful  
+- Precision loss and overflow inside output write operations is handled by configured error policy (set to either Drop or Retry)  
+- Type conversion errors happening during output write operations are handled by the error policy  
+- Type conversion errors happening during input read operations cause the job to drop the event
 
+## Casting data
+There are three functions in the streaming SQL language that are useful for observing and adjusting the data type of your data.
+- [CAST](cast-azure-stream-analytics.md)
+- [TRY_CAST](try-cast-azure-stream-analytics.md)
+- [GetType](gettype-azure-stream-analytics.md)
+  
   
 ## Type mappings and serialization formats:
 | Data type  | CSV in  | CSV out  | JSON in  | JSON out  | Avro in  | Avro out  |
