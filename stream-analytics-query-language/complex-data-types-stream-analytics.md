@@ -1,21 +1,19 @@
 ---
-title: "Complex Data Types (Stream Analytics) | Microsoft Docs"
+title: "Complex Data Types (Azure Stream Analytics) | Microsoft Docs"
 description: "Describes how to operate on complex data types like arrays, JSON, CSV formatted data."
 applies_to: 
   - "Azure"
 services: stream-analytics
 author: jasonwhowell
+ms.author: jasonh
 manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 8f092502-b698-4576-b271-d43c1f88accc
-caps.latest.revision: 10
 ms.workload: data-services
-ms.date: 05/24/2016
-ms.author: jasonh
+ms.date: 05/17/2018
 ---
-# Complex Data Types (Stream Analytics)
+# Complex Data Types (Azure Stream Analytics)
   Azure Stream Analytics supports processing events in CSV, JSON and Avro data formats.  
 Both JSON and Avro may contain complex types such as nested objects (records) or arrays. Scenarios may contain  complex data types that jobs must run against. Generally they are categorized as Array data types and Record data types.  
   
@@ -50,7 +48,7 @@ CROSS APPLY GetArrayElements(event.arrayField) AS arrayElement
 ```  
   
 ## Record data types  
- Record data types are used to represent JSON and Avro arrays when corresponding formats are used in the input data streams. . All examples assume a sample sensor which is reading input events in JSON format. Here is example of a single event:  
+Record data types are used to represent JSON and Avro arrays when corresponding formats are used in the input data streams. All examples assume a sample sensor which is reading input events in JSON format. Here is example of a single event:  
   
 ```json  
 {  
@@ -68,17 +66,17 @@ CROSS APPLY GetArrayElements(event.arrayField) AS arrayElement
 ```  
   
 ## Examples  
- Utilize dot notation to access nested fields. For example, this query selects the reported lat/long coordinates of the device:  
+Utilize dot notation to access nested fields. For example, this query selects the reported lat/long coordinates of the device:  
   
 ```SQL  
 SELECT  
     DeviceID,  
-    Location.Latitude,  
-    Location.Longitude  
+    Location.Lat,  
+    Location.Long  
 FROM input  
 ```  
-  
- Use the [GetRecordPropertyValue &#40;Azure Stream Analytics&#41;](getrecordpropertyvalue-azure-stream-analytics.md) function if the property name is unknown. For example, imagine a  sample data stream needs to be joined with reference data containing thresholds for each device sensor:  
+
+Use the [GetRecordPropertyValue &#40;Azure Stream Analytics&#41;](getrecordpropertyvalue-azure-stream-analytics.md) function if the property name is unknown. For example, imagine a  sample data stream needs to be joined with reference data containing thresholds for each device sensor:  
   
 ```SQL  
 SELECT  
@@ -92,7 +90,7 @@ WHERE
     GetRecordPropertyValue(input.SensorReading, thresholds.SensorName) > thresholds.Value  
 ```  
   
- To convert record fields into separate events use the [APPLY &#40;Azure Stream Analytics&#41;](apply-azure-stream-analytics.md) operator together with the [GetRecordProperties &#40;Azure Stream Analytics&#41;](getrecordproperties-azure-stream-analytics.md) function. For example, to convert a sample stream into a stream of events with individual sensor readings, this query could be used:  
+To convert record fields into separate events use the [APPLY &#40;Azure Stream Analytics&#41;](apply-azure-stream-analytics.md) operator together with the [GetRecordProperties &#40;Azure Stream Analytics&#41;](getrecordproperties-azure-stream-analytics.md) function. For example, to convert a sample stream into a stream of events with individual sensor readings, this query could be used:  
   
 ```SQL  
 SELECT   
@@ -102,15 +100,15 @@ SELECT
 FROM input as event  
 CROSS APPLY GetRecordProperties(event.SensorReadings) AS sensorReading  
 ```  
-  
- SELECT may also utilize '*' to access all the properties of a nested record. Consider the following query:  
+
+SELECT may also utilize '*' to access all the properties of a nested record. Consider the following query:  
   
 ```SQL  
 SELECT input.SensorReadings.*  
 FROM input  
 ```  
-  
- This would result in the following output:  
+
+This would result in the following output:  
   
 ```json  
 {  
@@ -123,5 +121,3 @@ FROM input
   
 ## See Also  
  [Data Types &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md)  
-  
-  
