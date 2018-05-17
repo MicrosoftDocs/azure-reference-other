@@ -1,28 +1,26 @@
 ---
-title: "CAST (Azure Stream Analytics) | Microsoft Docs"
-description: "Converts an expression of one data type to another within the supported types in Stream Analytics Query Language."
+title: CAST (Azure Stream Analytics) | Microsoft Docs
+description: Converts an expression of one data type to another within the supported types in Stream Analytics Query Language.
 applies_to: 
   - "Azure"
 services: stream-analytics
 author: jasonwhowell
+ms.author: jasonh
 manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 1cddcf7a-cdc7-4efc-91c3-9f8058b0e8c7
 caps.latest.revision: 8
 ms.workload: data-services
-ms.date: 07/19/2017
-ms.author: jasonh
+ms.date: 05/17/2018
 ---
 
 # CAST (Azure Stream Analytics)
-  Converts an expression of one data type to another within the supported types in Stream Analytics Query Language. This will fail and cause the job to stop if the conversion cannot be performed.
-  
-  For example, CAST ('this is a string' AS bigint) will result in a job failure. When this is not a desired outcome use [TRY_CAST &#40;Azure Stream Analytics&#41;](try-cast-azure-stream-analytics.md) instead.
+Converts an expression of one data type to another within the supported types in Stream Analytics Query Language. 
+
+If the conversion cannot be performed, the function fails and causes the job to stop. For example, the clause `CAST ('this is a string' AS bigint)` results in a job failure since the input string cannot be converted into a bigint data type. To avoid type cast failures, use [TRY_CAST](try-cast-azure-stream-analytics.md) instead.
     
-  
- **Syntax**  
+**Syntax**  
   
 ``` 
 CAST ( expression AS data_type)  
@@ -51,4 +49,8 @@ WHERE CAST( TollId AS bigint) > 2
   
 ```  
   
-  
+## See also
+For more information on Stream Analytics data types, see:
+- [Data types](data-types-azure-stream-analytics.md)
+- [Complex data types](complex-data-types-stream-analytics.md)
+- [TRY_CAST](try-cast-azure-stream-analytics.md)
