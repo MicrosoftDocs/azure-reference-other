@@ -16,9 +16,9 @@ ms.date: 05/17/2018
 ---
 
 # CAST (Azure Stream Analytics)
-Converts an expression of one data type to another within the supported types in Stream Analytics Query Language. 
+Converts an expression of one data type to another within the supported [data types](data-types-azure-stream-analytics.md) in Stream Analytics Query Language. 
 
-If the conversion cannot be performed, the function fails and causes the job to stop. For example, the clause `CAST ('this is a string' AS bigint)` results in a job failure since the input string cannot be converted into a bigint data type. To avoid type cast failures, use [TRY_CAST](try-cast-azure-stream-analytics.md) instead.
+If the conversion cannot be performed, the function fails and causes the job to stop. For example, the clause `CAST ('this is a string' AS bigint)` results in a job failure since the input string cannot be converted into the `bigint` data type. To avoid type cast failures, use [TRY_CAST](try-cast-azure-stream-analytics.md) function instead.
     
 **Syntax**  
   
@@ -34,7 +34,7 @@ CAST ( expression AS data_type)
   
  **data_type**  
   
- Is the target data type supported by Stream Analytics Query Language.  
+ Is the target [data type](data-types-azure-stream-analytics.md) supported by Stream Analytics Query Language.  
   
 ## Return Types  
  Returns expression translated to data_type.  
