@@ -1,20 +1,19 @@
 ---
-title: "Complex Data Types (Stream Analytics) | Microsoft Docs"
+title: "Complex Data Types (Azure Stream Analytics) | Microsoft Docs"
 description: "Describes how to operate on complex data types like arrays, JSON, CSV formatted data."
 applies_to: 
   - "Azure"
 services: stream-analytics
 author: jasonwhowell
+ms.author: jasonh
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 8f092502-b698-4576-b271-d43c1f88accc
-caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 05/17/2018
-ms.author: jasonh
 ---
-# Complex Data Types (Stream Analytics)
+# Complex Data Types (Azure Stream Analytics)
   Azure Stream Analytics supports processing events in CSV, JSON and Avro data formats.  
 Both JSON and Avro may contain complex types such as nested objects (records) or arrays. Scenarios may contain  complex data types that jobs must run against. Generally they are categorized as Array data types and Record data types.  
   
