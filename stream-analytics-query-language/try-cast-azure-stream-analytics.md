@@ -35,7 +35,7 @@ TRY_CAST ( expression AS data_type)
  The value to be cast. Any valid expression.  
   
  **data_type**  
- The data type into which to cast expression. Is the target [data types](data-types-azure-stream-analytics.md) supported by the Stream Analytics Query Language.  
+ The data type into which to cast expression. Use a [data type](data-types-azure-stream-analytics.md) supported by the Stream Analytics Query Language.  
   
 ## Return Types  
  Returns a value cast to the specified data type if the cast succeeds; otherwise, returns null.  
