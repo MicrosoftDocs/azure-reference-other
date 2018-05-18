@@ -1,21 +1,20 @@
 ---
-title: "CreatePolygon | Microsoft Docs"
-description: "Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions."
+title: CreatePolygon (Azure Stream Analytics) | Microsoft Docs
+description: Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions.
 applies_to: 
   - "Azure"
 services: stream-analytics
 author: jasonwhowell
+ms.author: jasonh
 manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: dea81560-3db1-49d9-bf56-736d81948944
 caps.latest.revision: 4
 ms.workload: data-services
 ms.date: 03/22/2017
-ms.author: jasonh
 ---
-# CreatePolygon
+# CreatePolygon (Azure Stream Analytics)
   Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions. The order of points must follow right-hand ring orientation, an easy way to check if the polygon orientation is correct is to imagine yourself walking from one point to the other in order of declaration, the inside of the polygon needs to be on your left side all the time.  
   
  Be aware that when declaring polygons:  
