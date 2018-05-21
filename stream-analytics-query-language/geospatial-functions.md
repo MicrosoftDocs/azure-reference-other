@@ -1,21 +1,20 @@
 ---
-title: "GeoSpatial Functions | Microsoft Docs"
-description: "Lists the GeoSpatial functions available in Azure Stream Analytics."
+title: GeoSpatial Functions (Azure Stream Analytics) | Microsoft Docs
+description: Lists the GeoSpatial functions available in Azure Stream Analytics.
 applies_to: 
   - "Azure"
 services: stream-analytics
 author: jasonwhowell
+ms.author: jasonh
 manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 10f7e6fb-4483-485a-b9bc-670ec6b37691
 caps.latest.revision: 5
 ms.workload: data-services
 ms.date: 02/01/2017
-ms.author: jasonh
 ---
-# GeoSpatial Functions
+# GeoSpatial Functions (Azure Stream Analytics)
 In Stream Analytics, real-time geospatial analytics can be performed using the following capabilities:
 
 ||||  
