@@ -4,7 +4,7 @@ description: "When using a sliding window, the system is asked to logically cons
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: cd42711f-1064-41d9-8165-58d5da25008f
 caps.latest.revision: 13
 ms.workload: data-services
 ms.date: 02/23/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # Sliding Window (Azure Stream Analytics)
   When using a sliding window, the system is asked to logically consider all possible windows of a given length. As the number of such windows would be infinite, Azure Stream Analytics instead outputs events only for those points in time when the content of the window actually changes, in other words when an event entered or exits the window.  
