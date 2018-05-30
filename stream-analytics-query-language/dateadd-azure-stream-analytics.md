@@ -58,7 +58,7 @@ DATEADD ( datepart , number, date )
 ## Examples  
   
 ```SQL  
-SELECT DATEADD(hour,2,EntryTime) AS TimeAddedHours
+SELECT DATEADD(hour,2,EntryTime) AS AdjustedTime
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  
   
