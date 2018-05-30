@@ -4,7 +4,7 @@ description: "Returns a specified date with the specified number interval (signe
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 1dc4c848-7cf1-4f7a-ae5b-311f9021eea2
 caps.latest.revision: 8
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # DATEADD (Azure Stream Analytics)
   Returns a specified date with the specified number interval (signed integer) added to a specified datepart of that date.  
@@ -58,7 +58,7 @@ DATEADD ( datepart , number, date )
 ## Examples  
   
 ```SQL  
-SELECT DATEDIFF (minute, EntryTime, DATEADD(hour,2,EntryTime)) AS DiffTime  
+SELECT DATEADD(hour,2,EntryTime) AS AdjustedTime
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  
   
