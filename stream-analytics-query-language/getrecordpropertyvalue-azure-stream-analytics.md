@@ -60,4 +60,5 @@ FROM input
   
 ```  
   
-  
+## See also
+- [Complex Data Types](complex-data-types-stream-analytics.md)

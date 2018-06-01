@@ -42,5 +42,4 @@ FROM input as event
 CROSS APPLY GetRecordProperties(event.recordField) AS recordProperty  
 ```  
   
-## See also
-- [Complex Data Types](complex-data-types-stream-analytics.md)
+
