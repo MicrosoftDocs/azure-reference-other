@@ -4,7 +4,7 @@ description: "When using a sliding window, the system is asked to logically cons
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,34 +13,16 @@ ms.assetid: cd42711f-1064-41d9-8165-58d5da25008f
 caps.latest.revision: 13
 ms.workload: data-services
 ms.date: 02/23/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # Sliding Window (Azure Stream Analytics)
   When using a sliding window, the system is asked to logically consider all possible windows of a given length. As the number of such windows would be infinite, Azure Stream Analytics instead outputs events only for those points in time when the content of the window actually changes, in other words when an event entered or exits the window.  
+
+The following diagram illustrates a stream with a series of events and how they are mapped into sliding windows of 10 seconds.
+
+ ![Stream Analytics 10 second sliding window](media/sliding-window-azure-stream-analytics/streamanalytics-slidingwindow.png "Stream Analytics 10 second sliding window")
   
- For instance, consider an event stream consisting of the following events:  
-  
-|Timestamp|Name|  
-|---------------|----------|  
-|34|A|  
-|38|B|  
-|42|C|  
-  
- Using sliding window of length 5 will produce events for windows ending at the following times:  
-  
--   **34** - because A entered the window  
-  
--   **38** - because B entered the window  
-  
--   **39** - because A exited the window  
-  
--   **42** - because C entered the window  
-  
--   **43** - because B exited the window  
-  
- No event is produced at time 47 (when C exits the window), since aggregates cannot be computed over empty windows.  
-  
- **Syntax**  
+**Syntax**  
   
 ```  
 SLIDINGWINDOW ( timeunit  , windowsize )   
