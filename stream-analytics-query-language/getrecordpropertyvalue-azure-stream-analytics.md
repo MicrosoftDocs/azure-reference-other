@@ -48,7 +48,7 @@ JOIN thresholds
 ON  
     input.DeviceId = thresholds.DeviceId  
 WHERE  
-    GetRecordPropertyValue(input.SensorReading, thresholds.SensorName) > thresholds.Value  
+    GetRecordPropertyValue(input.SensorReadings, thresholds.SensorName) > thresholds.Value  
 ```  
   
  Note that you can use dot notation to access record property fields.  

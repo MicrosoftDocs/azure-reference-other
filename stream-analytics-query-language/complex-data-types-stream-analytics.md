@@ -95,7 +95,7 @@ JOIN thresholds
 ON  
     input.DeviceId = thresholds.DeviceId  
 WHERE  
-    GetRecordPropertyValue(input.SensorReading, thresholds.SensorName) > thresholds.Value  
+    GetRecordPropertyValue(input.SensorReadings, thresholds.SensorName) > thresholds.Value  
 ```  
   
 To convert record fields into separate events use the [APPLY &#40;Azure Stream Analytics&#41;](apply-azure-stream-analytics.md) operator together with the [GetRecordProperties &#40;Azure Stream Analytics&#41;](getrecordproperties-azure-stream-analytics.md) function. For example, to convert a sample stream into a stream of events with individual sensor readings, this query could be used:  
