@@ -4,7 +4,7 @@ description: "Returns a dataset with record property names and values."
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 7720ce57-0ef0-406d-84ba-352af8d2dadf
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # GetRecordProperties (Azure Stream Analytics)
   Returns a dataset with record property names and values. The result of the GetRecordProperties function must be used with the [CROSS APPLY](apply-azure-stream-analytics.md) operator.  
@@ -42,4 +42,4 @@ FROM input as event
 CROSS APPLY GetRecordProperties(event.recordField) AS recordProperty  
 ```  
   
-  
+

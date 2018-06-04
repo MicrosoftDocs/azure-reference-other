@@ -53,7 +53,7 @@ Record data types are used to represent JSON and Avro arrays when corresponding 
 ```json  
 {  
     "DeviceId" : "12345",  
-    "Location" : {"Lat": 47, "Long": 122 }  
+    "Location" : {"Lat": 47, "Long": 122 },  
   
     "SensorReadings" :  
     {  
@@ -77,6 +77,14 @@ FROM input
 ```  
 
 Use the [GetRecordPropertyValue &#40;Azure Stream Analytics&#41;](getrecordpropertyvalue-azure-stream-analytics.md) function if the property name is unknown. For example, imagine a  sample data stream needs to be joined with reference data containing thresholds for each device sensor:  
+
+```json  
+{  
+    "DeviceId" : "12345",  
+    "SensorName" :  "Temperature",
+    "Value" : 75
+}  
+```  
   
 ```SQL  
 SELECT  
@@ -87,7 +95,7 @@ JOIN thresholds
 ON  
     input.DeviceId = thresholds.DeviceId  
 WHERE  
-    GetRecordPropertyValue(input.SensorReading, thresholds.SensorName) > thresholds.Value  
+    GetRecordPropertyValue(input.SensorReadings, thresholds.SensorName) > thresholds.Value  
 ```  
   
 To convert record fields into separate events use the [APPLY &#40;Azure Stream Analytics&#41;](apply-azure-stream-analytics.md) operator together with the [GetRecordProperties &#40;Azure Stream Analytics&#41;](getrecordproperties-azure-stream-analytics.md) function. For example, to convert a sample stream into a stream of events with individual sensor readings, this query could be used:  
