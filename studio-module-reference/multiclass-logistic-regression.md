@@ -5,6 +5,7 @@ ms.custom: "formulas"
 ms.date: 01/24/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
+ms.component: "studio"
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
