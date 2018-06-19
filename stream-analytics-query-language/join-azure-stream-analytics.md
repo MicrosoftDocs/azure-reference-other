@@ -4,7 +4,7 @@ description: "JOIN in the Azure Stream Analytics query language are used to comb
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,14 +13,14 @@ ms.assetid: 6cb2e1d5-899f-490b-b2fd-4878f53cefea
 caps.latest.revision: 15
 ms.workload: data-services
 ms.date: 02/28/2017
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # JOIN (Azure Stream Analytics)
   Like standard T-SQL, JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources.  JOIN in Azure Stream Analytics are temporal in nature, meaning that each JOIN must provide some limits on how far the matching rows can be separated in time.  For instance, saying “join TollBoothEntry events with TollBoothExit events when they occur on the same LicensePlate and TollId and within 5 minutes of each other” is legitimate; but “join TollBoothEntry events with TollBoothExit events when they occur on the LicensePlate and TollId” is not – it would match each TollBoothEntry with an unbounded and potentially infinite collection of all TollBoothExit to the same LicensePlate and TollId.  
   
- The time bounds for the relationship are specified inside the ON clause of the JOIN, using the DATEDIFF function.  For more details on its general use, see [DATEDIFF &#40;Azure Stream Analytics&#41;](datediff-azure-stream-analytics.md). When DATEDIFF is used inside the JOIN condition, the second and third parameter gain special treatment.  
+ The time bounds for the relationship are specified inside the ON clause of the JOIN, using the DATEDIFF function.  The maximum DATEDIFF size is seven days. For more information on its general use, see [DATEDIFF &#40;Azure Stream Analytics&#41;](datediff-azure-stream-analytics.md). When DATEDIFF is used inside the JOIN condition, the second and third parameter gain special treatment.  
  
- It is worth mentioning that SELECT * cannot be used in JOIN statements.  
+ Additionally, SELECT * cannot be used in JOIN statements.  
   
  **Syntax**  
   
@@ -85,7 +85,7 @@ ON DATEDIFF(minute,I1,I2) BETWEEN 0 AND 15
  The join condition above will result in a match if and only if the ExitTime occurs after the EntryTime, but no more than 15 minutes later.  
   
 > [!NOTE]  
->  DATEDIFF used in the SELECT statement uses the general syntax where we pass a datetime column or expression as the second and third parameter. But when we use the DATEDIFF function inside the JOIN condition, we pass the input_source name or its alias. Internally the timestamp associated for each event in that source is picked.  
+>  DATEDIFF used in the SELECT statement uses the general syntax where a datetime column or expression is passed in as the second and third parameter. However, when the DATEDIFF function is used inside the JOIN condition, the input_source name or its alias is used. Internally the timestamp associated for each event in that source is picked.  
   
 Time bound conditions can be combined with each other and with other conditions inside the ON clause, e.g.:  
   
@@ -99,7 +99,7 @@ AND DATEDIFF(minute,I1,I2) BETWEEN 0 AND 15
   
 ```  
   
- When joining 3 or more tables, the same rules apply --- time bounds must ensure that all matched events occur within a finite amount of time from each other.  For instance, to find all errors that occurred between transaction start and transaction end event, one can say:  
+ When joining three or more tables, the same rules apply --- time bounds must ensure that all matched events occur within a finite amount of time from each other.  For instance, to find all errors that occurred between transaction start and transaction end event, one can say:  
   
 ```SQL  
 SELECT TS.Id, TS.Name, TS.Amount, E.ErrorCode, E.Description   
@@ -123,7 +123,7 @@ JOIN Input2 I2 TIMESTAMP BY ExitTime PARTITION BY PartitionId
 ON I1.PartitionId = I2.PartitionId AND DATEDIFF(minute,I1,I2) BETWEEN 0 AND 15  
 ```  
   
- Finally, Azure Stream Analytics supports both inner join (the default) and LEFT outer join.  For an inner join, a result is only returned when a match is found.  But for a LEFT OUTER join, if an event from the left side of the join is unmatched, a row with NULL for all the columns of the right row is returned.  For instance here is an example to find the absence of events. The following query will return those rows where a Vehicle has entered a Toll Booth but have not exited the Booth within 15 minutes.  
+ Finally, Azure Stream Analytics supports both inner join (the default) and LEFT outer join.  For an inner join, a result is only returned when a match is found.  But for a LEFT OUTER join, if an event from the left side of the join is unmatched, a row with NULL for all the columns of the right row is returned.  For instance, here is an example to find the absence of events. The following query will return those rows where a Vehicle has entered a Toll Booth but have not exited the Booth within 15 minutes.  
   
 ```SQL  
 SELECT I1.TollId, I1.EntryTime, I2.ExitTime, I1.LicensePlate, DATEDIFF(minute,I1.EntryTime,I2.ExitTime) AS DurationinMinutes   
@@ -146,7 +146,7 @@ DATEDIFF ( datepart , input_source1, input_source2 )
 ### Arguments  
  **dateparts**  
   
- Example. ‘second’, ‘millisecond’, ‘minute’, etc)  
+ Example. ‘second’, ‘millisecond’, ‘minute’, etc.)  
   
  **input_source1**  
   
@@ -157,8 +157,4 @@ DATEDIFF ( datepart , input_source1, input_source2 )
  The second input source in the Join. Internally the timestamp associated with the events from this input_source is passed into the function.  
   
 ### Return Type  
- Returns the number of units in dateparts that elapsed from the timestamp of input_source1 to the timestamp of input_source2. Note that the returned value can be negative if the timestamp of second input_source is greater than the first.  
-  
- The maximum size of the window in all cases is 7 days.  
-  
-  
+ Returns the number of units in dateparts that elapsed from the timestamp of input_source1 to the timestamp of input_source2. The returned value can be negative if the timestamp of second input_source is greater than the first.    
