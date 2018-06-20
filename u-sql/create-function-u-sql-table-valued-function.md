@@ -13,57 +13,63 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# CREATE FUNCTION (U-SQL): Table-valued Function
-The CREATE FUNCTION statement allows to create a table-valued function (often referred to as TVF).  
 
-<table><th align="left">Syntax</th><tr><td><pre>
-Create_TV_Function_Statement :=                                                                          
+# CREATE FUNCTION (U-SQL): Table-valued Function
+The `CREATE FUNCTION` statement allows to create a table-valued function (often referred to as TVF).  
+
+## Syntax  
+<pre>
+Create_TV_Function_Statement :=
     'CREATE' 'FUNCTION' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#Ident">Identifier</a> <a href="#tvf_sig">TVF_Signature</a>  
     ['AS'] 'BEGIN'  
-    <a href="#tvf_s_lst">TVF_Statement_List</a>   
+        <a href="#tvf_s_lst">TVF_Statement_List</a>   
     'END'.
-</pre></td></tr></table>
+</pre>
 
-### Semantics of Syntax Elements    
+## Semantics of Syntax Elements    
 This statement creates the function with the specified identifier and function signature based on the provided statement list.  
   
--   <a name="Ident"></a>**`Identifier`**  
-    Specifies the name of the table-valued function. If the `Identifier` is a three-part identifier, the function will be created in the specified database and schema. If it is a two-part identifier, then the function will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the function will be created in the current database and schema context.  
+- <a name="Ident"></a>**`Identifier`**  
+  Specifies the name of the table-valued function. If the `Identifier` is a three-part identifier, the function will be created in the specified database and schema. If it is a two-part identifier, then the function will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the function will be created in the current database and schema context.  
   
-    If an object of the given name already exists in the specified database and schema context or the user has no permissions to create a function, an error is raised.  
+  If an object of the given name already exists in the specified database and schema context or the user has no permissions to create a function, an error is raised.  
   
--   <a name="INE"></a>**`IF NOT EXISTS`**    
-    If the optional `IF NOT EXISTS` is specified, then the statement creates the function if it does not already exist, or succeeds without changes if the function already exists and the user has permission to at least enumerate all existing functions.  
+- <a name="INE"></a>**`IF NOT EXISTS`**    
+  If the optional `IF NOT EXISTS` is specified, then the statement creates the function if it does not already exist, or succeeds without changes if the function already exists and the user has permission to at least enumerate all existing functions.  
   
 - <a name="tvf_sig"></a>**`TVF_Signature`**     
   The function signature provides the arguments and their types and optional default values and the return type of the function:  
   
-  <table><th>Syntax</th><tr><td><pre>
-  TVF_Signature :=                                                                                    
+  ### Syntax
+  <pre>
+  TVF_Signature := 
       '(' [Parameter_List] ')' TVF_Returns.<br />
   Parameter_List :=  
       Parameter {',' Parameter}.
-  </pre></td></table>
+  </pre>
   
   - **`Parameter`**  
     A parameter defines the name of the parameter in form of a variable local to the function body. Its type is either a [built-in U-SQL type](built-in-u-sql-types.md), which optionally can be initialized with a default value, or a named or anonymous table type:
     
-    <table><th>Syntax</th><tr><td><pre>
-    Parameter :=                                                                                   
+    ### Syntax
+    <pre>
+    Parameter :=
         User_Variable ( Type_Name [Default_Parameter_Value]
                       | Table_Type
-                      | Anonymous_Table_Type).<br />
+                      | Anonymous_Table_Type).</br>
     Default_Parameter_Value :=
-        '=' function_argument_expression.<br />
+        '=' function_argument_expression.</br>
     Table_Type :=
-        Identifier.<br />
+        Identifier.</br>
     Anonymous_Table_Type :=
-        'TABLE' '(' Column_Definition_List ')'.</pre></td></table>
+        'TABLE' '(' Column_Definition_List ')'.
+    </pre>
         
   - **`TVF_Returns`**  
-    The return of a TVF is specified by either a single return rowset or a list of return rowsets. Each returned rowset is specified by a rowset variable name and its return type that is either specified as a reference to a registered [U-SQL table type](u-sql-table-types.md) or an anonymous table type.
+    The return of a TVF is specified by either a single return rowset or a list of return rowsets. Each returned rowset is specified by a rowset variable name and its return type that is either specified as a reference to a registered [U-SQL table type](u-sql-table-types.md) or an anonymous table type.  Table-valued functions disallow a result variable from having the same name as any of the function's parameters. 
 
-    <table><th>Syntax</th><tr><td><pre>
+    ### Syntax
+    <pre>
     TVF_Returns :=
         'RETURNS' (Return_Rowset | '(' Return_Rowset_List ')').<br />
     Return_Rowset :=
@@ -71,16 +77,16 @@ This statement creates the function with the specified identifier and function s
     Return_Table_Type :=
         Anonymous_Table_Type | Table_Type.<br />
     Return_Rowset_List :=
-        Return_Rowset {',' Return_Rowset}.</pre></td></table>
+        Return_Rowset {',' Return_Rowset}.
+    </pre>
     
-  > [!TIP]
-  > In a future refresh, table-valued functions will disallow a result variable from having the same name as any of the function's parameters.
 
 - <a name="tvf_s_lst"></a>**`TVF_Statement_List`**  
   The resulting values of a TVF are being calculated inside the table-valued function’s body. The function body consists of a sequence of U-SQL query statements. The last statement for a given return rowset variable will be returned as the resulting rowset. If the statement’s inferred type is not the same as the specified return type, a compilation error will be reported.  
 
-  <table><th>Syntax</th><tr><td><pre>
-  TVF_Statement_List :=                                                                               
+  ### Syntax
+  <pre>
+  TVF_Statement_List :=
       { [TVF_Statement] ';' }.<br />  
   TVF_Statement :=  
       TVF_Statement_Body  
@@ -90,12 +96,14 @@ This statement creates the function with the specified identifier and function s
   |   <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
   |   <a href="import-package-u-sql.md">Import_Package_Statement</a> 
   |   <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
-  |   Deploy_Resource_Statement  
-  |   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>.</pre></td></table> 
+  |   <a href="deploy-resource-u-sql.md">Deploy_Resource_Statement</a>  
+  |   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>.
+  </pre>
+
 
   Please follow the links for more on the general nature of the statements. Note that in order to avoid side-effects that cannot inlined into a query expression, you cannot call [INSERT](insert-u-sql.md) or [OUTPUT](output-statement-u-sql.md) statements or call procedures that may have side-effects.  
   
-  Setting the context with a USE statement, declaring variables or referencing assembly statements inside a function body will only affect the static context of the table-valued function’s body and will not be visible in the calling context or the static context of the definition of an object called within (e.g., another TVF).  
+  Setting the context with a [USE](u-sql-metadata-object-naming-and-name-contexts.md) statement, declaring variables or referencing assembly statements inside a function body will only affect the static context of the table-valued function’s body and will not be visible in the calling context or the static context of the definition of an object called within (e.g., another TVF).  
  
   The function body’s own static context is not affected by the calling environment’s static context. E.g., a [USE DATABASE](use-database-u-sql.md)  statement in the script that is calling the function is not affecting the function’s default static database context and variables defined outside a function body will not be visible.  
   
@@ -108,9 +116,9 @@ This statement creates the function with the specified identifier and function s
 > [!IMPORTANT]
 > In the Public Preview, only a limited grammar check will be performed during creation of a table-valued function. Instead the grammar will be checked when the TVF gets compiled for usage. This behavior is subject to change in future releases.
   
-### Examples    
+## Examples    
 - The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The examples below use the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
+- SearchLog.tsv is available @ https://github.com/Azure/usql/blob/master/Examples/Samples/Data/SearchLog.tsv.
 
 <a name="tvf_SearchLog">**Basic Syntax - tvf_SearchLog**</a>    
 
@@ -243,10 +251,10 @@ USING Outputters.Tsv();
 * [Table-Valued Function Expression (U-SQL)](table-valued-function-expression-u-sql.md) for examples on how to call the above functions.
   
   
-### See Also    
+## See Also    
 * [U-SQL Functions](u-sql-functions.md)  
 * [U-SQL Table-valued Functions](u-sql-table-valued-functions.md)  
 * [DROP FUNCTION (U-SQL)](drop-function-u-sql.md)  
 * [Table-Valued Function Expression (U-SQL)](table-valued-function-expression-u-sql.md)  
-* [Built-in Functions (U-SQL)](built-in-functions-u-sql.md) 
+* [DEPLOY RESOURCE (U-SQL)](deploy-resource-u-sql.md) 
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)   
