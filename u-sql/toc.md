@@ -190,6 +190,7 @@
 #### [CSHARP (U-SQL)](csharp-u-sql.md)
 ## [Output Statement (U-SQL)](output-statement-u-sql.md)
 ## [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md)
+### [CASE Expression (U-SQL)](case-expression-u-sql.md)
 ### [COMBINE Expression (U-SQL)](combine-expression-u-sql.md)
 ### [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md)
 ### [ORDER BY and OFFSET/FETCH Clause (U-SQL)](order-by-and-offset-fetch-clause-u-sql.md)
