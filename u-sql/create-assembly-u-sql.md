@@ -13,45 +13,48 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # CREATE ASSEMBLY (U-SQL)
 If a .NET assembly is required during script compilation (for example because it specifies a function or type that needs to be resolved during compile time), then it needs to be registered.  
 
 The `CREATE ASSEMBLY` statement registers an assembly and optionally associated resources.  
 
-<table><th align="left">Syntax</th><tr><td><pre>
-Create_Assembly_Statement :=                                                                             
+## Syntax
+<pre>
+Create_Assembly_Statement := 
     'CREATE' 'ASSEMBLY' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#ass_name">Assembly_Name</a>  
     'FROM' <a href="#ass_src">Assembly_Source</a>   
-    [<a href="#w_add_fl">'WITH' 'ADDITIONAL' 'FILES'</a> '='   
-            '(' <a href="#ass_add_fl">Assembly_Additional_File_List</a> ')'].<br /> 
+    [<a href="#w_add_fl">'WITH' 'ADDITIONAL' 'FILES'</a> '=' '(' <a href="#ass_add_fl">Assembly_Additional_File_List</a> ')'].<br /> 
 <a href="#ass_name">Assembly_Name</a> :=
     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.<br />
 <a href="#ass_src">Assembly_Source</a> :=
-    <a href="expressions-u-sql.md">Static_String_Expression</a> | lexical_binary_value.</pre></td></tr></table>
+    <a href="expressions-u-sql.md">Static_String_Expression</a> | lexical_binary_value.
+</pre>
    
-### Semantics of Syntax Elements  
+## Semantics of Syntax Elements  
 - <a name="ass_name"></a>**`Assembly_Name`**  
   Specifies the name of the assembly in the current database context.  
   
   If an object of the given name already exists in the specified database context or the user has no permissions to create an assembly, an error is raised.  
   
--   <a name="INE"></a>**`IF NOT EXISTS`**    
-    If the optional `IF NOT EXISTS` is specified, then the statement creates the assembly registration if it does not already exist, or succeeds without changes if the assembly already exists and the user has permission to at least enumerate all existing assemblies.  
+- <a name="INE"></a>**`IF NOT EXISTS`**    
+  If the optional `IF NOT EXISTS` is specified, then the statement creates the assembly registration if it does not already exist, or succeeds without changes if the assembly already exists and the user has permission to at least enumerate all existing assemblies.  
   
 - <a name="ass_src"></a>**`Assembly_Source`**  
   Specifies the assembly DLL either in form of a binary literal or as a string literal or static string expression/string variable. The binary literal represents the actual .NET assembly DLL, while the string values represent a URI or file path to a .NET assembly DLL file in either an accessible Azure Data Lake Storage or Windows Azure Blob Storage. If the provided source is a valid .NET assembly, the assembly will be copied and registered, otherwise an error is raised.  A database cannot contain more than one version of the same assembly.
     
   Note that the binary literal is mainly useful for tools that want to register the assembly without first creating and then copying a file.  
   
- <a name="w_add_fl"></a> 
 - <a name="ass_add_fl"></a>**`Assembly_Additional_File_List`**  
-  Optionally, additional files can be provided in the <a name="w_add_fl"></a>WITH ADDITIONAL FILES clause:  
+  Optionally, additional files can be provided in the <a name="w_add_fl"></a>`WITH ADDITIONAL FILES` clause:  
   
-  <table><th>Syntax</th><tr><td><pre>
-  <a href="#ass_add_fl">Assembly_Additional_File_List</a> :=                                                                    
-      <a href="#ass_add_f">Assembly_Additional_File</a> {',' <a href="#ass_add_f">Assembly_Additional_File</a>}.<br />                                                                                                    
+  ### Syntax
+  <pre>
+  <a href="#ass_add_fl">Assembly_Additional_File_List</a> :=
+      <a href="#ass_add_f">Assembly_Additional_File</a> {',' <a href="#ass_add_f">Assembly_Additional_File</a>}.<br />
   <a href="#ass_add_f">Assembly_Additional_File</a> :=  
-      <a href="#ass_src">Assembly_Source</a> [<a href="#str_lit">'AS' string_literal</a>].</pre></td></tr></table>
+      <a href="#ass_src">Assembly_Source</a> [<a href="#str_lit">'AS' string_literal</a>].
+  </pre>
  
   An additional file is specified with:   
   
@@ -63,7 +66,11 @@ Create_Assembly_Statement :=
   - <a name="str_lit"></a>**`'AS' string_literal`**   
     This clause optionally specifies the name that is used for the additional file, when it is placed into the runtime working directory. The string literal has to be a valid filename (and not contain a path) or an error is raised. Note that this should the name of the file that the main assembly will be using to refer to the file or the assembly code will fail to find the file at runtime and raise an error.  
   
-### Example  
+## Example  
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+ 
+
+**Setup**  
 1. Download and install `ENU\x64\SQLSysClrTypes.msi` 
 from [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676).
 
@@ -73,6 +80,7 @@ from [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-u
 
 3. Register assembly
 
+**Script**  
 ```sql
 DECLARE @ASSEMBLY_PATH string = "/upload/asm/spatial/";
 DECLARE @SPATIAL_ASM string = @ASSEMBLY_PATH+"Microsoft.SqlServer.Types.dll";
@@ -89,8 +97,11 @@ WITH ADDITIONAL FILES =
          @SPATIAL_NATIVEDLL
     );
 ```
+
+**Extended Example**   
+Please see [Lambda Architecture for Connected Car Fleet Management](https://channel9.msdn.com/Events/Build/2017/P4017) for an extended example of the creation and use of the above assembly.
   
-### See Also    
+## See Also    
 * [U-SQL Assemblies](u-sql-assemblies.md)
 * [REFERENCE ASSEMBLY (U-SQL)](reference-assembly-u-sql.md)  
 * [REFERENCE SYSTEM ASSEMBLY (U-SQL)](reference-system-assembly-u-sql.md)  
