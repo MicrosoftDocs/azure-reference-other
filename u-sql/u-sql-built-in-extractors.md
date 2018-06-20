@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # U-SQL Built-in Extractors
 U-SQL provides a built-in extractor class called `Extractors` that provides the following three built-in extractors to generate a rowset from the [input file or files](input-files-u-sql.md):    
 -   [Extractors.Text()](extractors-text.md) : Provides extraction from delimited text files of different encodings.    
@@ -25,7 +26,7 @@ The `Csv()` and `Tsv()` extractors are special versions of the generic `Text()` 
 
 If the [EXTRACT](extract-expression-u-sql.md) expression specifies a file set pattern, then the extractor [parameters](extractor-parameters-u-sql.md) will be applied to all the selected files equally. If different files require different parameter values, then different [EXTRACT](extract-expression-u-sql.md) expressions need to be used.  
   
-### Built-in Extractor Processing Model    
+## Built-in Extractor Processing Model    
 The built-in extractors transforms a byte stream in parallel into a rowset that can be further processed with U-SQL statements. The following figure provides a logical view of the processing model (that in turn is based on the general [UDO Extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor)
  processing model).  
  
@@ -33,12 +34,17 @@ The built-in extractors transforms a byte stream in parallel into a rowset that 
   
 If the maximal input row length or the maximal output row length are being exceeded, errors are raised.  
   
-### Built-in Type Conversions    
+## Built-in Type Conversions    
 The extractors will convert the string values `val` in the stream to an instance of the specified type in the extractor schema after the processing of encoding and escaped values have occurred.  
   
 Per default, an empty field is mapped to a zero-length string if target type is string and null otherwise. Most types follow the standard C# `<Type>.Parse(val)` behaviour without a specific culture behaviour and being defaulted to the cluster machine’s locale. The table below provides more details for each type.  
+
+> [!WARNING]   
+> In a future release, the default value for empty fields will be changed from a zero-length string to null.
+> The default behavior can be changed prior to the future release by adding the following statement to your script:
+> `SET @@InternalDebug = "EmptyStringAsNullWhenQuoting:on";`
   
-> [!TIP]
+> [!TIP]  
 > Since the built-in extractors are implemented natively, the conversions may differ in small details from the U-SQL/C# conversion semantics. Some differences cannot be avoided, primarily around floating point values where minute differences may be present.  
   
 The following data types (and their nullable variant) are supported by the built-in extractors. Any data type that is not listed and is not supported by the extractor (such as [SQL.MAP](complex-built-in-u-sql-types.md)  and [SQL.ARRAY](complex-built-in-u-sql-types.md)) either needs to be converted in a subsequent SELECT statement or a [user-defined extractor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-extractor) has to be written.  
@@ -63,8 +69,9 @@ The following data types (and their nullable variant) are supported by the built
 |`DateTime`|`DateTime.Parse(val)` with the following:<br /><br />This means a variety of formats are supported, including (note optionality and short forms are not called out):<br />&emsp;&#9679;&emsp;UTC format: YYYY-MM-DDThh:mm:ss.nnnn[TZ]<br />&emsp;&#9679;&emsp;Day, DD MMM YYYY hh:mm:ss [AM/PM] [verbal TZ]<br />&emsp;&#9679;&emsp;MM/DD/YYYY [hh:mm:ss [AM/PM]]<br />&emsp;&#9679;&emsp;MM.DD.YYYY [hh:mm:ss [AM/PM]]<br />The hour information can be given using a 12 or 24 hour clock. If a 12 hour clock is used, PM has to be specified to indicate time points in the second half of the day.<br />If parts of the date or time information is missing in the value, it will be defaulted as follows:<br />&emsp;&#9679;&emsp;If the month or day value is missing, it is defaulted to 1.<br />&emsp;&#9679;&emsp;If the year is missing, it is defaulted to the current year. In the non-UTC format, if the year is given with 2 digits, then the current century is assumed (e.g., 14 is transformed to 2014).<br />&emsp;&#9679;&emsp;If hours, minutes, seconds or subseconds are missing, they are defaulted to 0 (note that 0 hours is often represented as 12AM).<br />U-SQL’s built-in extractors normalize all date time values to UTC -07:00 and then drop timezone information if present.|
 |`Guid`|The following lexical representations can be converted into a GUID:<hr />`'{' byte4 '-' byte2 '-' byte2 '-' byte2 '-' byte4 '}'` &#124;<br />&emsp;&emsp;`byte4 '-' byte2 '-' byte2 '-' byte2 '-' byte4` &#124;<br />&emsp;&emsp;`byte4 byte2 byte2 byte2 byte4.`<br />`byte4 = byte2 byte2.`<br />`byte2 = byte byte.`<br />`byte = hexcode hexcode.`<br />`hexcode = '0…9'` &#124; `'A…F'` &#124; `'a…f'`.<hr />This means the following three guids are all valid lexical representations:<br />`F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4`<br />`{F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4}`<br />`F9168C5ECEB24faaB6BF329BF39FA1E4`<br /><br />But the following are not:<br />`{F9168C5ECEB24faaB6BF329BF39FA1E4}`<br />`F9168C5E-CEB24faaB6BF329BF39FA1E4` | 
  
- ### See Also 
+ ## See Also 
 * [Extractor Parameters (U-SQL)](extractor-parameters-u-sql.md)
+* [Create U-SQL EXTRACT Script Automatically](https://blogs.msdn.microsoft.com/azuredatalake/2017/08/08/create-u-sql-extract-script-automatically/)
 * [Extractors.Text()](extractors-text.md)  
 * [Extractors.Csv()](extractors-csv.md)  
 * [Extractors.Tsv()](extractors-tsv.md)  
