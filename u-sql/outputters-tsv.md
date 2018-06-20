@@ -13,13 +13,16 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Outputters.Tsv()
-### Outputting TSV Files    
-The Tsv() outputter disallows the `delimiter` parameter and defaults the field delimiter to '\t' (tab).  All other parameters are the same.  See [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md) for supported parameters and their defaults values.
+
+## Outputting TSV Files    
+The `Tsv()` outputter disallows the `delimiter` parameter and defaults the field delimiter to '\t' (tab).  All other parameters are the same.  See [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md) for supported parameters and their defaults values.
   
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+
 
 **Basic Syntax**   
 The examples below show the basic syntax for each parameter using the Tsv() outputter.  Compare the output against the dataset as well as against the other created data files.
@@ -48,8 +51,21 @@ OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Tsv_charFormat_nullEs
 OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Tsv_charFormat_encoding.txt" USING Outputters.Tsv(charFormat: "string", encoding:Encoding.Unicode);
 ```
 
+<a name="cpi">**Using a Code Page Identifier**</a>  
+```sql
+DECLARE @encoding = System.Text.Encoding.GetEncoding(1258);
+DECLARE @output = "/ReferenceGuide/BuiltIn/UDOs/Outputters/text_1258.txt";
 
-### See Also  
+OUTPUT
+(
+    SELECT "Some sample text with Α α Β β θ £ ¥ Ä ä æ ç ö" AS c
+    FROM (VALUES(1)) AS T(x)
+)
+TO @output
+USING Outputters.Tsv(encoding: @encoding);
+```
+
+## See Also  
 * [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md)
 * [Outputters.Text()](outputters-text.md)  
 * [Outputters.Csv()](outputters-csv.md)  
