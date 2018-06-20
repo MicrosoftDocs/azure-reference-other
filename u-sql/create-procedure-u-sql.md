@@ -13,29 +13,31 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# CREATE PROCEDURE (U-SQL)
+
+# CREATE PROCEDURE (U-SQL)  
 U-SQL creates a procedure with the `CREATE PROCEDURE` statement.  For information on calling a procedure, see [Calling a Procedure (U-SQL)](calling-a-procedure-u-sql.md)
 
-<table><th align="left">Syntax</th><tr><td><pre>
-Create_Proc_Statement :=                                                                                 
+## Syntax  
+<pre>
+Create_Proc_Statement :=
     'CREATE' 'PROCEDURE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#Ident">Identifier</a>   
     '(' [<a href="#param_lst">Parameter_List</a>] ')'  
     ['AS']  
     'BEGIN'  
-    <a href="#proc_lst">Proc_Statement_List</a>  
+        <a href="#proc_lst">Proc_Statement_List</a>  
     'END'.
-</pre></td></tr></table>
+</pre>
 
-### Semantics of Syntax Elements    
+## Semantics of Syntax Elements    
 This statement creates the procedure with the specified identifier and parameters based on the provided statement list.  
   
--   <a name="Ident"></a>**`Identifier`**   
-    Specifies the name of the procedure. If the `Identifier` is a three-part identifier, the procedure will be created in the specified database and schema. If it is a two-part identifier, then the procedure will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the procedure will be created in the current database and schema context.  
+- <a name="Ident"></a>**`Identifier`**   
+  Specifies the name of the procedure. If the `Identifier` is a three-part identifier, the procedure will be created in the specified database and schema. If it is a two-part identifier, then the procedure will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the procedure will be created in the current database and schema context.  
   
-    If an object of the given name already exists in the specified database and schema context or the user has no permissions to create a procedure, an error is raised.  
+  If an object of the given name already exists in the specified database and schema context or the user has no permissions to create a procedure, an error is raised.  
   
--   <a name="INE"></a>**`IF NOT EXISTS`**  
-    If the optional `IF NOT EXISTS` is specified, then the statement creates the procedure if it does not already exist, or succeeds without changes if the procedure already exists and the user has permission to at least enumerate all existing procedures.  
+- <a name="INE"></a>**`IF NOT EXISTS`**  
+  If the optional `IF NOT EXISTS` is specified, then the statement creates the procedure if it does not already exist, or succeeds without changes if the procedure already exists and the user has permission to at least enumerate all existing procedures.  
   
 - <a name="param_lst"></a>**`Parameter_List`**    
   The parameter list provides the arguments and their types and optional default values. The [U-SQL function section](u-sql-functions.md) provides more details about the syntax and semantics of the parameter list.  
@@ -43,8 +45,9 @@ This statement creates the procedure with the specified identifier and parameter
 - <a name="proc_lst"></a>**`Proc_Statement_List`**     
   The statements inside a stored procedure can be any statements except for `CREATE FUNCTION`, `CREATE PROCEDURE`, `DROP FUNCTION`, `DROP PROCEDURE`.  
  
-  <table><th>Syntax</th><tr><td><pre>
-  Proc_Statement_List :=                                                                              
+  ### Syntax
+  <pre>
+  Proc_Statement_List := 
       { [Proc_Statement] ';' }.<br /> 
   Proc_Statement :=  
       Proc_Statement_Body  
@@ -54,7 +57,7 @@ This statement creates the procedure with the specified identifier and parameter
   |   <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
   |   <a href="import-package-u-sql.md">Import_Package_Statement</a> 
   |   <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>   
-  |   Deploy_Resource_Statement  
+  |   <a href="deploy-resource-u-sql.md">Deploy_Resource_Statement</a>  
   |   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
   |   <a href="calling-a-procedure-u-sql.md">Procedure_Call</a> 
   |   <a href="#pbs">ProcBody_DDL_Statement</a> 
@@ -71,7 +74,7 @@ This statement creates the procedure with the specified identifier and parameter
   |   <a href="u-sql-assemblies.md">Assembly_DDL_Statement</a>  
   |   <a href="u-sql-data-sources.md">Datasource_DDL_Statement</a>  
   |   <a href="user-defined-u-sql-types.md">Type_DDL_Statement</a>.
-  </pre></td></table>
+  </pre>
 
   Please follow the links for more on the general nature of the statements.  
   
@@ -84,10 +87,10 @@ Assemblies referenced in a procedure body will however be visible in the calling
 Deploying a resource inside a procedure will become visible to the whole script at runtime, similar to referencing an assembly and any resources deployed by the calling environment will be visible in the procedure’s dynamic context.  
  
   
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples below utilize the table dbo.somePeople as defined below.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.  
+- The examples below utilize the table `dbo.somePeople` as defined below.
   
 **Dataset**   
 ```sql
@@ -191,7 +194,7 @@ END;
 * See [Procedure addPeople](create-type-u-sql.md#sproc_pass), a procedure that accepts a table type as a parameter.   
 * See [Calling a Procedure (U-SQL)](calling-a-procedure-u-sql.md) for examples on how to call the above procedures.  
   
-### See Also
+## See Also
 * [U-SQL Procedures](u-sql-procedures.md)  
 * [DROP PROCEDURE (U-SQL)](drop-procedure-u-sql.md)  
 * [Calling a Procedure (U-SQL)](calling-a-procedure-u-sql.md)
