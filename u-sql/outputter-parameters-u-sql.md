@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Outputter Parameters (U-SQL)
 |Parameters|
 |---|
@@ -30,7 +31,7 @@ This parameter specifies the column separator character that separates columns i
 Note that per default, the built-in outputters are quoting string values. Thus any delimiter inside a value will be protected. If quoting is turned off, then the escaping needs to be turned on to protect the delimiter character inside a value.  
   
 --------------------------------------------------
-
+<br />
   
 | Parameter name | Parameter type | Default value |  
 |----------------|----------------|---------------|  
@@ -43,7 +44,7 @@ If an invalid argument value has been specified, an error will be raised.
 For more details of the C# datetime formats see [Standard Date and Time Format Strings](http://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx). 
  
 --------------------------------------------------
- 
+ <br />
   
 | Parameter name | Parameter type       | Default Value |  
 |----------------|----------------------|---------------|  
@@ -54,7 +55,7 @@ Per default, files are assumed to be stored in UTF-8 encoding. However, some fil
 > [!NOTE]
 > Some encodings (e.g., UTF-16) often use a Byte-Order Mark (BOM) in the beginning of a file to indicate its encoding. Unfortunately, the outputter cannot generate a BOM for the encoding, since the parallel processing of the outputter does not know which split is going to be the beginning of the output file. Since the outputter should not generate BOMs for every split, the built-in outputters are **not** adding BOMs.
   
-The supported encodings are:  
+The supported Encoding Properties are:  
   
 | Encoding Property         | Description                                                                                                                                                                         |  
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
@@ -68,9 +69,26 @@ The supported encodings are:
 > [!IMPORTANT]
 > `System.Text.Encoding.Default` is not supported, since it would use the operating system’s current ANSI code page which cannot be controlled by the user. For more details see [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).
   
+The supported Code Page Identifiers are:  
+  
+| Identifier | .NET Name | Description |
+|-----------------|---------------|-------------|
+| 1250 | Windows-1250 | Central European (Windows) |
+| 1251 | Windows-1251 | Cyrillic (Windows) |
+| 1252 | Windows-1252 | Western European (Windows) |
+| 1253 | Windows-1253 | Greek (Windows) |
+| 1254 | Windows-1254 | Turkish (Windows) |
+| 1255 | Windows-1255 | Hebrew (Windows) |
+| 1256 | Windows-1256 | Arabic (Windows) |
+| 1257 | Windows-1257 | Baltic (Windows) |
+| 1258 | Windows-1258 | Vietnamese (Windows) |
+
+In order to specify a code page identifier, an encoding object has to be created using the C# [System.Text.Encoding.GetEncoding](https://msdn.microsoft.com/en-us/library/system.text.encoding.getencoding(v=vs.110).aspx) expression. It takes either one of the above encoding [numbers](https://msdn.microsoft.com/en-us/library/wzsz3bk3(v=vs.110).aspx) or the encoding [name](https://msdn.microsoft.com/en-us/library/t9a3kf7c(v=vs.110).aspx) (with upper- or lower-case `W`) as argument. In the case of the outputters, if the rowset contains a value that is not able to be represented by the specified encoding, then the character will be replaced by `?` (hex 3F).
+
 If the output contains a code point that is invalid for the specified encoding, a runtime error during output will occur that will indicate the offending data value.  
   
 --------------------------------------------------
+<br />
 
   
 | Parameter name  | Parameter type | Default value |  
@@ -83,10 +101,10 @@ If it set to *null*, there is no escape character specified and the delimiters w
   
 The `escapeCharacter` parameter will be applied regarding of whether quoting is enabled or not. It however will not be used to escape the quoting character. The quoting character will get escaped with double-quotes in alignment with the Excel CSV behaviour.  
   
-Note that if quoting is turned off, then the escape character needs to be turned on to protect the delimiter characters inside a value.  
-  
---------------------------------------------------
+Note that if quoting is turned off, then the escape character needs to be turned on to protect the delimiter characters inside a value.    
 
+--------------------------------------------------
+<br />
   
 | Parameter name | Parameter type | Default value |  
 |----------------|----------------|---------------|  
@@ -97,7 +115,7 @@ The nullEscape parameter specifies the string in a column that is used to repres
 If nullEscape is set to *null* (the default), no special null value is being used and a null value will be written as an empty field. Note that this loses the distinction between a string value that is a zero-length string and the null value.  
   
 --------------------------------------------------
-
+<br />
   
 | Parameter name | Parameter type | Default value |  
 |----------------|----------------|---------------|  
@@ -109,7 +127,7 @@ The quoting parameter – if set to true (default) – indicates that the output
 > If the data does not requiring quoting, specifying false for the quoting parameter will be resulting in a faster processing. However, if there is a chance that one of the delimiter characters appears inside a value and quoting is turned off, then the escape character should be set.  
   
 --------------------------------------------------
-
+<br />
 
   
 | Parameter name | Parameter type        | Default value                        |  
@@ -123,7 +141,7 @@ If the length of the provided rowDelimiter is more than one UCS-4 character, an 
 Note that unless the escapeCharacter parameter is set, the rowDelimiter character inside a value is being written without escaping and may lead to incorrect or failing extractions.  
 
 --------------------------------------------------
-
+<br />
 
 | Parameter name | Parameter type       | Default Value |  
 |----------------|----------------------|---------------|  
@@ -137,7 +155,7 @@ The supported values are:
 |string|Serializes the `char` value in its Unicode string representation (taking all other serialization options including encoding into account) and parses the input as the character codepoint using the specified encoding.|
 
 --------------------------------------------------
-
+<br />
 
 | Parameter name | Parameter type       | Default Value |  
 |----------------|----------------------|---------------|  
@@ -145,7 +163,8 @@ The supported values are:
 
 The parameter specifies whether to output the column names of the rowset as the first header row.
 
-### See Also
+## See Also
 * [U-SQL Built-in Outputters](u-sql-built-in-outputters.md)
+* [Outputters.Text()](outputters-text.md)
 * [Output Statement (U-SQL)](output-statement-u-sql.md)
 * [Output to Files (U-SQL)](output-to-files-u-sql.md)
