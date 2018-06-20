@@ -15,19 +15,20 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # U-SQL Language Reference
-[//]: # "U-SQL Language Reference"  
-### Introduction    
+
+## Introduction    
 This is the reference documentation for the U-SQL language.  
   
-### What is U-SQL?    
+## What is U-SQL?    
 U-SQL is the new big data query language of the Azure Data Lake Analytics service.  
   
 It evolved out of Microsoft's internal Big Data language called [SCOPE](http://www.vldb.org/pvldb/1/1454166.pdf) and combines a familiar SQL-like declarative language with the extensibility and programmability provided by C# types and the C# expression language and big data processing concepts such as “schema on reads”, custom processors and reducers. It also provides the ability to query and combine data from a variety of data sources, including Azure Data Lake Storage, Azure Blob Storage, and Azure SQL DB, Azure SQL Data Warehouse, and SQL Server instances running in Azure VMs.  
   
 It is however not ANSI SQL. For starters, its keywords such as SELECT have to be in UPPERCASE. And its expression language inside SELECT clauses, WHERE predicates etc is C#. This for example means, that the comparison operations inside a predicate follow C# syntax (e.g., a == "foo"), and that the language uses C# null semantics which is 2-valued and not 3-valued as in ANSI SQL. To help SQL users to get familiar with U-SQL, a section is providing the mapping of some common SQL expressions and how to express them in U-SQL.  
 
-### Overview of the Language Reference    
+## Overview of the Language Reference    
 The language reference is organized as follows:    
 1. This introduction provides a quick introduction and overview of the reference documentation.  
 2. Introduction of the U-SQL concepts   
@@ -51,7 +52,7 @@ The language reference is organized as follows:
 
 If you are interested in seeing how you use the above concepts to solve certain scenarios please refer to the Language User Guide, [tutorials](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-u-sql-get-started/) as well as the [U-SQL Programmability Guide](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide).  
   
-### See Also  
+## See Also  
 * In order to see how the above concepts can be applied to solve certain scenarios, please refer to the following:   
     * [U-SQL Tutorials](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-u-sql-get-started/)   
     * [U-SQL Programmability Guide](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide) 
@@ -62,5 +63,6 @@ If you are interested in seeing how you use the above concepts to solve certain 
     * [U-SQL Git Repo](https://github.com/Azure/USQL)  
     * [Azure Data Lake](http://azure.github.io/AzureDataLake/)
     * [Get Started with Azure Data Lake Analytics using Azure portal](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal)
+    * [Introducing Azure Data Lake by Microsoft Virtual Academy](https://mva.microsoft.com/training-courses/introducing-azure-data-lake-17795?l=fxAzPGt9D_111787171)
 * Tools
     * [Microsoft Azure Data Lake and Stream Analytics Tools for Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=49504)
