@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # REFERENCE ASSEMBLY (U-SQL)
 In order to use a [user-defined c# functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf), [user-defined aggregator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) or [user-defined operator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo), the assemblies that contain their code need to be referenced in the U-SQL script and the assembly has to be registered in the catalog with [CREATE ASSEMBLY](https://docs.microsoft.com/sql/t-sql/statements/create-assembly-transact-sql) command before you can reference it.
   
@@ -22,22 +23,25 @@ Note that all assemblies that are needed at compile time, as well as all assembl
   
 These requirements however mean, that an assembly that is used by a function that is not directly nor indirectly being used in the script, may not need to be referenced, thus reducing the amount of data that a script has to load for execution.  
 
-When referencing multiple assemblies that contain additional files, their names across the entire collection of referenced assemblies in the script need to be unique. In case file names conflict, the error `E_CSC_USER_CONFLICTINGASSEMBLYFILE` is raised. The file name paths of additional assembly files also cannot conflict with file name paths of deployed resources. In case they conflict, the error `E_CSC_USER_SAMERESOURCEWITHDIFFERENTPATH` is raised.
+When referencing multiple assemblies that contain additional files, their names across the entire collection of referenced assemblies in the script need to be unique. In case file names conflict, the error `E_CSC_USER_CONFLICTINGASSEMBLYFILE` is raised. The file name paths of additional assembly files also cannot conflict with file name paths of [deployed resources](deploy-resource-u-sql.md). In case they conflict, the error `E_CSC_USER_SAMERESOURCEWITHDIFFERENTPATH` is raised.
+
   
-<table><th align="left">Syntax</th><tr><td><pre>
-Reference_User_Assembly_Statement :=                                                                     
-     'REFERENCE' 'ASSEMBLY' Global_Assembly_Identifier.<br />
+## Syntax
+<pre>
+Reference_User_Assembly_Statement := 
+    'REFERENCE' 'ASSEMBLY' Global_Assembly_Identifier.<br />
 <a href="#ass_name">Global_Assembly_Identifier</a> := 
-     <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
-</pre></td></tr></table>
+    <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>.
+</pre>
   
-### Semantics of Syntax Elements
+## Semantics of Syntax Elements
 - <a name="ass_name"></a>**`Global_Assembly_Identifier`**  
 Specifies the [quoted or unquoted identifier](u-sql-identifiers.md) of the assembly to be loaded. The assembly name is resolved against the current static database context.   
   
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+
 
 ```sql
 USE DATABASE SQLSpatial;
@@ -62,15 +66,14 @@ TO "/Output/ReferenceGuide/DDL/Assemblies/spatial.csv"
 USING Outputters.Csv();
 ```
 
-### See Also   
+## See Also   
 * [U-SQL Assemblies](u-sql-assemblies.md) 
 * [CREATE ASSEMBLY (U-SQL)](create-assembly-u-sql.md)   
 * [REFERENCE SYSTEM ASSEMBLY (U-SQL)](reference-system-assembly-u-sql.md)  
-* [DROP ASSEMBLY (U-SQL)](drop-assembly-u-sql.md)  
+* [DEPLOY RESOURCE (U-SQL)](deploy-resource-u-sql.md)
 * [USING Keyword](using-keyword.md)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 * [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md) 
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)
 
   
- 
