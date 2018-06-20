@@ -22,15 +22,15 @@ manager: cgronlun
   
 ## Module overview
 
-This article describes how to use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module in Azure Machine Learning Studio, to determine the optimum hyperparameters for a given machine learning model. The module builds and tests models multiple models, using different combinations of settings, and compares metrics over all models to get the combination of settings. 
+This article describes how to use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module in Azure Machine Learning Studio, to determine the optimum hyperparameters for a given machine learning model. The module builds and tests multiple models, using different combinations of settings, and compares metrics over all models to get the combination of settings. 
 
-Ther terms *parameter* and *hyperparameter* can be confusing. The model's *parameters* are what you set in the properties pane. Basically, this module performs a *parameter sweep* over the specified parameter settings, and learns an optimal set of _hyperparameters_, which might be different for each specific decision tree, dataset, or regression method. The process of finding the optimal configuration is sometimes called *tuning*. 
+The terms *parameter* and *hyperparameter* can be confusing. The model's *parameters* are what you set in the properties pane. Basically, this module performs a *parameter sweep* over the specified parameter settings, and learns an optimal set of _hyperparameters_, which might be different for each specific decision tree, dataset, or regression method. The process of finding the optimal configuration is sometimes called *tuning*. 
 
 The module support two methods for finding the optimum settings for a model:  
   
 -   **Integrated train and tune**: You configure a set of parameters to use, and then let the  module iterate over multiple combinations, measuring accuracy until it finds a "best" model. With most learner modules, you can choose which parameters should be changed during the training process, and which should remain fixed.
 
-    Depending on how long you want the tuning proess to run, you might decide to exhaustively test all combinations, or you could shorten the process by establishing a grid of parameter combinations and testing a randomized subset of the parameter grid.
+    Depending on how long you want the tuning process to run, you might decide to exhaustively test all combinations, or you could shorten the process by establishing a grid of parameter combinations and testing a randomized subset of the parameter grid.
   
 -   **Cross validation with tuning**:  With this option, you divide your data into some number of folds and then build and test models on each fold. This method provides the best accuracy and can help find problems with the dataset; however, it takes longer to train.  
   
@@ -70,9 +70,9 @@ This section describes how to perform a basic parameter sweep, which trains a mo
 
 5.  In the **Properties** pane of [Tune Model Hyperparameters](tune-model-hyperparameters.md), choose a value for **Parameter sweeping mode**. This option controls how the parameters are selected.
 
-    - **Entire grid**: When you select this option, the module loops over a grid predefined by the system, to try different combinations and identify the best learner.This option is useful for cases where you don't know what the best parameter settings might be and want to try all possible combination of values.
+    - **Entire grid**: When you select this option, the module loops over a grid predefined by the system, to try different combinations and identify the best learner. This option is useful for cases where you don't know what the best parameter settings might be and want to try all possible combination of values.
 
-    You can also reduce the size of the grid and run a **random grid** sweep. Research has shown that this method yields the same results, but ismore efficient computationally.
+    You can also reduce the size of the grid and run a **random grid** sweep. Research has shown that this method yields the same results, but is more efficient computationally.
   
     - **Random sweep**: When you select this option, the module will randomly select parameter values over a system-defined range. You must specify the maximum number of runs that you want the module to execute. This option is useful for cases where you want to increase model performance using the metrics of your choice but still conserve computing resources.
 
@@ -130,14 +130,14 @@ This section describes how to combine a parameter sweep with cross-validation. T
 
     **Maximum number of runs on random sweep**: If you choose a random sweep, you can specify how many times the model should be trained, using a random combination of parameter values.
   
-    **Maximum number of runs on random grid**: This option also controls the number of iterations over a random sampling of parameter values, but the values are not generated randomly from the specified range; instead, a matrix is created of of all possible combinations of parameter values and a random sampling is taken over the matrix. This method is more efficient and less prone to regional oversampling or undersampling.
+    **Maximum number of runs on random grid**: This option also controls the number of iterations over a random sampling of parameter values, but the values are not generated randomly from the specified range; instead, a matrix is created of all possible combinations of parameter values and a random sampling is taken over the matrix. This method is more efficient and less prone to regional oversampling or undersampling.
 
     > [!TIP]
     > For a more in-depth discussion of these options, see the [Technical notes](#bkmk_Notes) section.
 
 9. Choose a single label column.
 
-10. Choose a **single** metric to use in ranking the model. Many metrics are computed, so select the most important oen to use in ordering the results.
+10. Choose a **single** metric to use in ranking the model. Many metrics are computed, so select the most important one to use in ordering the results.
 
 11. For **Random seed**, type a number to use when initializing the parameter sweep.  
 
@@ -191,7 +191,7 @@ When you set up a parameter sweep, you define the scope of your search, to use e
  
      You specify a range of values to iterate over, and the module uses a randomly chosen subset of those values.  Values are chosen with replacement, meaning that numbers previously chosen at random are not removed from the pool of available numbers. Thus, the chance of any value being selected remains the same across all passes.  
   
-+ **Grid sweep**: This option creates a matri, or grid, that includes every combination of the parameters in the value range you specify. When you start tuning with this module, multiple models are trained using combinations of these parameters.  
++ **Grid sweep**: This option creates a matrix, or grid, that includes every combination of the parameters in the value range you specify. When you start tuning with this module, multiple models are trained using combinations of these parameters.  
   
 + **Entire grid**: The option to use the entire grid means just that: each and every combination is tested. This option can be considered the most thorough, but requires the most time. 
 
