@@ -14,46 +14,52 @@ ms.author: "mrys"
 manager: "ryanw"
 ---
 # U-SQL Scripts
-The main unit of a U-SQL “program” is a U-SQL script. A script consists of a sequence of U-SQL statements.  
+The main unit of a U-SQL "program" is a U-SQL script. A script consists of a sequence of U-SQL statements.  
   
-<table><th align="left">Syntax</th><tr><td><pre>
-Script :=                                                                                                
-     <a href="#stmt">Statement_List</a>.
-</pre></td></tr></table>
+## Syntax
+<pre>
+Script :=                                
+    <a href="#stmt">Statement_List</a>.
+</pre>
  
-### Semantics of Syntax Elements    
+## Semantics of Syntax Elements    
 - <a name="stmt"></a>**`Statement_List`**  
   The main body of a script is a sequence of statements:  
   
-  <table><th>Syntax</th><tr><td><pre>
-  Statement_List :=                                                                                   
-       { [Statement] ';' }.
-  </pre></td></table>
+  ### Syntax
+  <pre>
+  Statement_List :=                    
+      { [Statement] ';' }.
+  </pre>
   
-  Each statement is terminated by a semi-colon (;). Statements can be empty or one of  
+  - **Statement**  
+    Each statement is terminated by a semi-colon (;). Statements can be empty or one of:
 
-  <table><th>Syntax</th><tr><td><pre>
-  Statement :=                                                                                        
-       <a href="u-sql-metadata-object-naming-and-name-contexts.md">Use_Statement</a>  
-  |    <a href="if-else-u-sql.md">If_Else_Statement</a> 
-  |    <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
-  |    <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
-  |    Deploy_Resource_Statement 
-  |    <a href="data-definition-language-ddl-statements-u-sql.md">DDL_Statement</a>  
-  |    <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
-  |    <a href="u-sql-procedures.md">Procedure_Call</a>  
-  |    <a href="import-package-u-sql.md">Import_Package_Statement</a>  
-  |    <a href="data-modification-language-dml-statements-u-sql.md">DML_Statement</a>  
-  |    <a href="output-statement-u-sql.md">Output_Statement</a>.
-  </pre></td></table>
+    ### Syntax
+    <pre>
+    Statement :=
+        <a href="u-sql-metadata-object-naming-and-name-contexts.md">Use_Statement</a>
+    |   <a href="if-else-u-sql.md">If_Else_Statement</a> 
+    |   <a href="raise-u-sql.md">Raise_Statement</a>
+    |   <a href="variables-u-sql.md">Declare_Variable_Statement</a>  
+    |   <a href="reference-assembly-u-sql.md">Reference_Assembly_Statement</a>  
+    |   <a href="deploy-resource-u-sql.md">Deploy_Resource_Statement</a>
+    |   <a href="data-definition-language-ddl-statements-u-sql.md">DDL_Statement</a>  
+    |   <a href="query-statements-and-expressions-u-sql.md">Query_Statement</a>  
+    |   <a href="u-sql-procedures.md">Procedure_Call</a>  
+    |   <a href="import-package-u-sql.md">Import_Package_Statement</a>  
+    |   <a href="data-modification-language-dml-statements-u-sql.md">DML_Statement</a>  
+    |   <a href="output-statement-u-sql.md">Output_Statement</a>.
+    </pre>
   
-  For more details on the individual statements follow the links to their definitions.  
+    For more details on the individual statements follow the links to their definitions.  
   
-  Note that some statements have restrictions on how they can be combined inside a script. For example, you cannot create a table and read from the same table in the same script, since the compiler requires that any input already physically exists at compile time of the query.  
+    Note that some statements have restrictions on how they can be combined inside a script. For example, you cannot create a table and read from the same table in the same script, since the compiler requires that any input already physically exists at compile time of the query.  
   
 ### Examples    
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The examples below use the sample data provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+- SearchLog.tsv is available @ https://github.com/Azure/usql/blob/master/Examples/Samples/Data/SearchLog.tsv.
 
 The following shows an extended sample script that operates on one of the U-SQL sample data sets:  
 ```sql  
@@ -97,14 +103,14 @@ However, it also means that one cannot perform intermediate investigations of st
   
 The following images show the logical expression tree and the physical job graph of the above script as shown in the [Azure DataLake Tool for VisualStudio](https://www.microsoft.com/download/details.aspx?id=49504).  
   
-### Logical Expression Tree  
+## Logical Expression Tree  
   
 ![U-SQL Logical Job Execution Tree](media/u-sql-logical-job-execution-tree.JPG)  
   
-### Physical Job Graph  
+## Physical Job Graph  
   
 ![U-SQL Physical Job Execution Tree](media/u-sql-physical-job-execution-tree.JPG)  
   
-### See Also
+## See Also
 * [U-SQL Language Reference](u-sql-language-reference.md)
 
