@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Extractor Parameters (U-SQL)
 |Parameters|
 |---|
@@ -26,11 +27,11 @@ The supported parameters and their defaults are:
   
 This parameter specifies the column separator character that separates columns in the file. The default column separator for is a comma (','). It can be any valid Unicode character including those that are represented with multi-byte encodings in any of the Unicode-Transfer-Formats (i.e. UTF-*).  The delimiter parameter is not available for [Extractors.Csv()](extractors-csv.md) and [Extractors.Tsv()](extractors-tsv.md).
   
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > If the `quoting` parameter is set to `false`, the delimiter character inside a quoted string is being used as a column separator and may lead to incorrect or failing extractions.
 
 --------------------------------------------------
-  
+<br />
   
 | Parameter name | Parameter type       | Default Value |  
 |----------------|----------------------|---------------|  
@@ -38,7 +39,7 @@ This parameter specifies the column separator character that separates columns i
   
 Per default, files are assumed to be stored in UTF-8 encoding. However, some files may be stored using a different encoding. The `encoding` parameter provides the option to specify the file’s actual encoding and also translate non-UTF-8 encoded files.  
   
-The supported encodings are:  
+The supported Encoding Properties are:  
   
 | Encoding Property         | Description                                                                                                                                                                                |  
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
@@ -49,13 +50,29 @@ The supported encodings are:
 | **`Encoding.UTF8`**         | Assumes that the file is encoded using the UTF-8 format. This is the default.                                                                                                              |  
 | `Encoding.UTF32`            | Assumes that the file is encoded using the UTF-32 format using the little endian byte order.                                                                                               |  
   
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > System.Text.Encoding.Default is not supported, since it would use the processing node’s operating system’s current ANSI code page that cannot be controlled by the user and is not the same as the default of the extractor. For more details see [System.Text.Encoding](http://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).
+
+The supported Code Page Identifiers are:  
+  
+| Identifier | .NET Name | Description |
+|-----------------|---------------|-------------|
+| 1250 | Windows-1250 | Central European (Windows) |
+| 1251 | Windows-1251 | Cyrillic (Windows) |
+| 1252 | Windows-1252 | Western European (Windows) |
+| 1253 | Windows-1253 | Greek (Windows) |
+| 1254 | Windows-1254 | Turkish (Windows) |
+| 1255 | Windows-1255 | Hebrew (Windows) |
+| 1256 | Windows-1256 | Arabic (Windows) |
+| 1257 | Windows-1257 | Baltic (Windows) |
+| 1258 | Windows-1258 | Vietnamese (Windows) |
+
+In order to specify a code page identifier, an encoding object has to be created using the C# [System.Text.Encoding.GetEncoding](https://msdn.microsoft.com/en-us/library/system.text.encoding.getencoding(v=vs.110).aspx) expression. It takes either one of the above encoding [numbers](https://msdn.microsoft.com/en-us/library/wzsz3bk3(v=vs.110).aspx) or the encoding [name](https://msdn.microsoft.com/en-us/library/t9a3kf7c(v=vs.110).aspx) (with upper- or lower-case `W`) as argument. In the case of the outputters, if the rowset contains a value that is not able to be represented by the specified encoding, then the character will be replaced by `?` (hex 3F).
   
 If the file contains a code point that is invalid for the specified encoding, a runtime error during extraction will occur regardless of the `silent` parameter setting that will indicate the offending data value.  
   
 --------------------------------------------------
-
+<br />
   
 | Parameter name  | Parameter type | Default value |  
 |-----------------|----------------|---------------|  
@@ -72,7 +89,7 @@ If it set to *null*, there is no escape character specified.
 The `escapeCharacter` parameter will be applied regarding of whether quoting is enabled or not. It however will not be used to escape the quoting character. The quoting character will get escaped with double-quotes in alignment with the Excel CSV behaviour.  
 
 --------------------------------------------------
-  
+<br />  
   
 | Parameter name | Parameter type | Default value |  
 |----------------|----------------|---------------|  
@@ -105,6 +122,7 @@ The following table gives some examples on how different inputs are being interp
 | "#NULL#"   | "1","","","\N","#NULL#","Some \N fun"   | 1,null,ERR,ERR,null,ERR  |  
   
 ---  
+<br />
   
 | Parameter name | Parameter type | Default value |  
 |----------------|----------------|---------------|  
@@ -112,14 +130,14 @@ The following table gives some examples on how different inputs are being interp
   
 The `quoting` parameter if set to `true` indicates that the extractor should consider " (double-quote) as a column field quotation which inhibits the interpretation of the column delimiters inside the quoted field. A double-quote inside a quoted field needs to be escaped by doubling it as "" in the file.  
   
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Due to the parallel processing and splitting of input files, quoting cannot inhibit the interpretation of the row delimiters. Thus for example an input Excel CSV file that contains an unescaped carriage return or linefeed will cause the extraction to fail even if these delimiters are quoted. They will have to be escaped. Currently no other quoting characters are supported.  
   
-> [!TIP]
+> [!TIP]  
 > If the input data does not use quoting, specifying false for the quoting parameter will be resulting in a faster extraction.  
 
 --------------------------------------------------
-  
+  <br />
   
 | Parameter name | Parameter type        | Default values                       |  
 |----------------|-----------------------|--------------------------------------|  
@@ -135,7 +153,7 @@ The comparison of the `rowDelimiter` will be done using a byte-wise comparison a
 Note that the `rowDelimiter` character inside a quoted string will not be escaped and will be used as a row separator which will lead to incorrect or failing extractions.  
  
 --------------------------------------------------
- 
+<br />
   
 | Parameter name | Parameter type | Default Value |  
 |----------------|----------------|---------------|  
@@ -145,10 +163,11 @@ This parameter tells the extractor to ignore and skip rows that have a different
   
 Rows are checked for the correct number of columns first. For example, if there is corrupt data in a column with the wrong number of rows, the extractor skips the row. There is no conversion. If the row has the correct number of columns, however, the extractor doesn't skip it. The conversion occurs (assuming that the column's type is nullable).  
   
-> [!IMPORTANT] 
+> [!IMPORTANT]   
 > `silent` does **not** ignore encoding errors since such errors often indicate that the file encoding and the specified encoding are not compatible and thus could lead to more severe data corruption.  
 
 --------------------------------------------------
+<br />
 
 | Parameter name | Parameter type       | Default Value |  
 |----------------|----------------------|---------------|  
@@ -157,6 +176,7 @@ Rows are checked for the correct number of columns first. For example, if there 
 The parameter specifies the number of rows to skip.  The rows being skipped do not need to conform to the column schema in either type or count of columns.  Note, you can only skip rows that are in the first segment of a file; otherwise, an error will be raised.
 
 --------------------------------------------------
+<br />
 
 | Parameter name | Parameter type       | Default Value |  
 |----------------|----------------------|---------------|  
@@ -169,7 +189,8 @@ The supported values are:
 |uint16 or null|This is the default value.  Serializes the `char` value as an integral number (taking all other serialization options into account) and parses the input as the integral character code number to the corresponding character or errors if the input is not an integral character code (or mapable `null` if extracting it as `char?`).|
 |string|Serializes the `char` value in its Unicode string representation (taking all other serialization options including encoding into account) and parses the input as the character codepoint using the specified encoding.|
 
-### See Also 
+## See Also 
 * [Built-in U-SQL UDOs](built-in-u-sql-udos.md)
+* [Extractors.Text()](extractors-text.md)
 * [EXTRACT Expression (U-SQL)](extract-expression-u-sql.md)
 * [Input Files (U-SQL)](input-files-u-sql.md)
