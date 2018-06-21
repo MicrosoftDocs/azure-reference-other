@@ -59,6 +59,7 @@
 ##### [Outputters.Csv()](outputters-csv.md)
 ##### [Outputters.Tsv()](outputters-tsv.md)
 ## [Built-in U-SQL System Objects and Extensions](built-in-u-sql-system-objects-and-extensions.md)
+### [@@JOBINFO (U-SQL)](@@jobinfo-u-sql.md)
 ### [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 #### [usql.columns (U-SQL)](usql-columns-u-sql.md)
 #### [usql.databases  (U-SQL)](usql-databases-u-sql.md)
