@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # PROCESS Expression (U-SQL)
 U-SQL provides the ability to write custom rowset processors in C# using the [user-defined operator](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo) extensibility framework by implementing an `IProcessor`.  For more information, see [U-SQL Programmability Guide: User-Defined Processor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-processor).
    
@@ -26,59 +27,71 @@ Processors' strengths are in the context of performing complex C# processing whe
   
 A processor provides limited optimization support, because an optimizer cannot reason about the procedural C# code defining the processor. For example, it cannot push predicates through to earlier statements unless the column used in the predicate is marked as read only. Therefore, it is recommended to instead use [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf) and put the logic into the [SELECT](select-clause-u-sql.md) clause and [WHERE](where-clause-u-sql.md) clause of a [SELECT](select-expression-u-sql.md) expression if possible.   
   
-<table><th align="left">Syntax</th><tr><td><pre>
-Process_Expression :=                                                                                    
+## Syntax
+<pre>
+Process_Expression :=                    
     'PROCESS' <a href="#inp_row">Input_Rowset</a>  
     <a href="#pro_cla">Produce_Clause</a>  
     [<a href="#RO_cla">Readonly_Clause</a>]  
-    [<a href="#REQ_cla">Required_Clause</a>]                                    
+    [<a href="#REQ_cla">Required_Clause</a>]
     <a href="#USE_cla">Using_Clause</a>.  
-</pre></td></tr></table>
+</pre>
   
-### Semantics of Syntax Elements  
+## Semantics of Syntax Elements  
 - <a name="inp_row"></a>**`Input_Rowset`**  
   Specifies the input rowset that the processor will operate on as either the reference to a rowset name or by a nested rowset expression:
-  <table><th>Syntax</th><tr><td><pre>
-  Input_Rowset :=                                                                                     
-      <a href="#rowset">Rowset</a> | <a href="#rowset_exp">Rowset_Expression</a>.</pre></td></tr></table>    
+  
+  ###Syntax
+  <pre>
+  Input_Rowset := 
+      <a href="#rowset">Rowset</a> | <a href="#rowset_exp">Rowset_Expression</a>.
+  </pre>  
 
   with the following semantics:  
   
   - <a name="rowset"></a>**`Rowset`**  
     The two simplest rowset sources are a rowset variable such as `@rowset` that has been defined in a previous statement of the script, or a table that has been created in the account’s catalog:
 
-    <table><th>Syntax</th><tr><td><pre>
-    Rowset :=                                                                                      
-        Rowset_Variable | Identifier.</pre></td></tr></table>
+    ### Syntax
+    <pre>
+    Rowset := 
+        Rowset_Variable | Identifier.
+    </pre>
 
     A table can be referenced either with its fully qualified 3-part name, within the current database context with a 2-part name, or within the current database and schema context with a single-part name.   
   
   - <a name="rowset_exp"></a>**`Rowset_Expression`**  
     U-SQL also provides the ability to process nested [query expressions](query-statements-and-expressions-u-sql.md), [table-valued function calls](u-sql-select-selecting-from-a-function-call.md) or [querying external rowsets](u-sql-select-selecting-from-an-external-rowset.md). Follow the links for more details on each.
 
-    <table><th>Syntax</th><tr><td><pre>
-    Rowset_Expression :=                                                                           
+    ### Syntax
+    <pre>
+    Rowset_Expression := 
         '(' <a href="query-statements-and-expressions-u-sql.md">Query_Expression</a> ')'
     |   <a href="u-sql-select-selecting-from-a-function-call.md">Function_Call</a>
     |   <a href="u-sql-select-selecting-from-an-external-rowset.md">External_Rowset_Expression</a>.
-    </pre></td></tr></table>
+    </pre>
   
      The UDO programming model makes both the values and the schema of the input rowset available in the context of the processor's implementation.   
       
 - <a name="pro_cla"></a>**`Produce_Clause`**   
   Specifies the rowset schema returned by the `PROCESS` expression.   
-  <table><th>Syntax</th><tr><td><pre>
-  Produce_Clause :=                                                                                   
-      'PRODUCE' Column_Definition_List.</pre></td></tr></table>  
+
+  ### Syntax
+  <pre>
+  Produce_Clause := 
+      'PRODUCE' Column_Definition_List.
+  </pre>
   
   - **`Column_Definition_List`**  
     This list defines the schema of the processor.  The returned columns are defined as a pair of column names and column types:
   
-    <table><th>Syntax</th><tr><td><pre>
-    Column_Definition_List :=                                                                      
+    ### Syntax
+    <pre>
+    Column_Definition_List :=  
         Column_Definition { ',' Column_Definition}.<br />
     Column_Definition :=
-        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.</pre></td></tr></table>
+        <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
+    </pre>
       
     Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md). A column is typed with one of the U-SQL types that the processor supports.  
     
@@ -88,8 +101,10 @@ Process_Expression :=
   The optional `READONLY` clause can help the UDO programmer to write more efficient code. For more information on how the UDO programmer can take advantage of this hint, see the U-SQL C# Developer’s Guide.  
   
   The optional `READONLY` clause specifies that either all columns (if specified with `*`) or the specified columns are read only for the processor and will be passed through to the output using either the same name or the specified column name in parenthesis.
-  <table><th>Syntax</th><tr><td><pre>
-  Readonly_Clause :=                                                                                  
+  
+  ### Syntax
+  <pre>
+  Readonly_Clause :=
       'READONLY' Star_Or_Readonly_Column_List.<br /> 
   Star_Or_Readonly_Column_List :=
       '*' | Readonly_Column_List.<br />
@@ -98,29 +113,38 @@ Process_Expression :=
   Readonly_Column :=
       Column_Identifier [Output_Column_Dependency_Alias].<br />
   Output_Column_Dependency_Alias :=
-      '(' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> ')'.</pre></td></tr></table>  
+      '(' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> ')'.
+  </pre>
       
 - <a name="REQ_cla"></a>**`Required_Clause`**   
   The optional `REQUIRED` clause can help the UDO programmer to write more efficient code. For more information on how the UDO programmer can take advantage of this hint, see the U-SQL C# Developer’s Guide.  
   
-  The optional `REQUIRED` clause specifies that either all columns are required on input for the processor (if specified with `*`) or the specified columns are required. If a specified column is followed by a list of columns in parenthesis, then the input column is only required if the columns in that list are referenced from the output.
-  <table><th>Syntax</th><tr><td><pre>
-  Required_Clause :=                                                                                  
-      'REQUIRED' Star_Or_Required_Column_List.<br />                              
-  Star_Or_Required_Column_List :=
-      '*' | Required_Column_List.<br /> 
+  The `REQUIRED` clause specifies which columns are required and cannot be pruned by the optimizer. It specifies that either all columns are required on input for the UDO (if specified with `*`), no columns are required (if specified with `NONE`) or the specified columns are required. If a specified column is followed by a list of columns in parenthesis, then the input column is only required if the columns in that list are referenced from the output. The default is that all columns are required. 
+
+  If you want to allow the optimizer to pass column pruning up through the UDO invocation, we recommend specifying the minimal set of columns that are required. Passing the column pruning up higher in the script will provide faster script execution since less data needs to be passed, or - if the column pruning reaches the extractor - read.
+
+  ### Syntax
+  <pre>
+  Required_Clause := 
+      'REQUIRED' None_Star_Or_Required_Column_List.<br />                              
+  None_Star_Or_Required_Column_List :=
+      '*' | 'NONE' | Required_Column_List.<br /> 
   Required_Column_List :=
       Required_Column { ',' Required_Column}.<br /> 
   Required_Column :=
       Column_Identifier [Required_Output_Column_Dependency_List].<br />  
   Required_Output_Column_Dependency_List :=
-      '(' Identifier_List ')'.</pre></td></tr></table>
+      '(' Identifier_List ')'.
+  </pre>
       
 - <a name="USE_cla"></a>**`Using_Clause`**   
   The `USING` clause specifies which processor should be used to transform the input rowset.
-  <table><th>Syntax</th><tr><td><pre>
-  USING_Clause :=                                                                                     
-      'USING' udo_expression.</pre></td></tr></table>
+  
+  ### Syntax
+  <pre>
+  USING_Clause :=  
+      'USING' udo_expression.
+  </pre>
   
   The `USING` clause takes a C# expression that returns an instance of `IProcessor`. Users can write their own by implementing an `IProcessor` (see [U-SQL Programmability Guide: User-Defined Processor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-processor) for more details on how to write your own processor). Most commonly, the UDO expression is either the instantiation of a processor class of the form    
   ```sql
@@ -133,9 +157,9 @@ Process_Expression :=
   
   where `parameter` is a parameter of the processor.  
   
-### Examples    
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://channel9.msdn.com/Series/AzureDataLake/USQL-LocalRun).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples    
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 <a name="FullAddressProcessor">**User-Defined Processor - FullAddressProcessor**</a>   
@@ -316,7 +340,7 @@ TO "/ReferenceGuide/QSE/PrimaryRowsetExpressions/Process/CountryName_fetch3.txt"
 USING Outputters.Text(Encoding.Unicode);
 ```
   
-### See Also 
+## See Also 
 * [Query Statements and Expressions (U-SQL)](query-statements-and-expressions-u-sql.md) 
 * [Output Statement (U-SQL)](output-statement-u-sql.md)  
 * [U-SQL Programmability Guide: User-Defined Processor](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-processor)
