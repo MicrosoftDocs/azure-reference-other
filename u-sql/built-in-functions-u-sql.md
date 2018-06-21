@@ -13,10 +13,11 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# Built-in Functions (U-SQL)
-While U-SQL is using C# as its expression language and thus has a large set of the Common Language Runtime (CLR) libraries and all of C#’s operators at the user’s disposal, it also adds a couple of common Built-in U-SQL Functions.
 
-### Types of Functions   
+# Built-in Functions (U-SQL)
+While U-SQL is using C# as its expression language and thus has a large set of the Common Language Runtime (CLR) libraries and all of [C#’s operators](csharp-functions-and-operators-u-sql.md) at the user’s disposal, it also adds a couple of common Built-in U-SQL Functions.
+
+## Types of Functions   
 |Function|Description|
 |----|--|
 |[Aggregate Functions](aggregate-functions-u-sql.md)|An aggregator will compute a single result value over a group of values and will have an identity value for the case that the group is empty.|  
@@ -25,6 +26,6 @@ While U-SQL is using C# as its expression language and thus has a large set of t
 |[Ranking Functions](ranking-functions-u-sql.md)|Returns a ranking value for each row in a partition.|
 |[Built-in U-SQL UDOs](built-in-u-sql-udos.md)|Provides extraction from and outputting to some common data formats. |
   
-### See Also    
+## See Also    
 * [U-SQL Language Reference](u-sql-language-reference.md) 
 * [Built-in U-SQL UDOs](built-in-u-sql-udos.md)
