@@ -13,73 +13,101 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # ANY_VALUE (U-SQL)
-The ANY_VALUE aggregator arbitrarily picks one value from the group including potentially a null value. While the operation picks an arbitrary value, it does so based on the efficiency of execution and not based on some random sampling. 
+The `ANY_VALUE` aggregator arbitrarily picks one value from the group including potentially a null value. While the operation picks an arbitrary value, it does so based on the efficiency of execution and not based on some random sampling. 
 
 The identity value is null. 
 
-<table><th align="left">Syntax</th><tr><td><pre>
-ANY_VALUE_Expression :=                                                                                  
-      'ANY_VALUE' '(' <a href="#exp">expression</a> ')'.</pre></td></tr></table>
+## Syntax  
+<pre>
+ANY_VALUE_Expression :=
+    'ANY_VALUE' '(' <a href="#exp">expression</a> ')'.
+</pre>
 
-### Semantics of Syntax Elements 
+## Semantics of Syntax Elements 
 
 * <a name="exp"></a>**`expression`**  
 The C# expression (including column references) that gets aggregated. 
 
-### Return Type 
+## Return Type 
 The type of the input. 
 
-### Usage in Windowing Expression 
+## Usage in Windowing Expression 
 This aggregator cannot be used in a [windowing expression](over-expression-u-sql.md). 
 
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).
+- The script(s) can be executed [locally]s(https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
 
-   ```sql
-       @employees = 
-        SELECT * FROM ( VALUES
-            (1, "Noah",   "Engineering", 100, 10000),
-            (2, "Sophia", "Engineering", 100, 20000),
-            (3, "Liam",   "Engineering", 100, 30000),
-            (4, "Emma",   "HR",          200, 10000),
-            (5, "Jacob",  "HR",          200, 10000),
-            (6, "Olivia", "HR",          200, 10000),
-            (7, "Mason",  "Executive",   300, 50000),
-            (8, "Ava",    "Marketing",   400, 15000),
-            (9, "Ethan",  "Marketing",   400, 10000) )
-        AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-   ```
+**Dataset**  
+```sql
+@sales = 
+    SELECT * FROM 
+        ( VALUES
+        (1, "A", "Noah",    100, "FA1", new DateTime(2017,01,01)),
+        (1, "A", "Noah",    200, "FA1", new DateTime(2017,02,01)),
+        (1, "A", "Noah",    300, "FA2", new DateTime(2017,03,01)),
+        (1, "A", "Noah",    400, "GA1", new DateTime(2017,04,01)),
+        (2, "B", "Sophia",  400, "FA1", new DateTime(2017,01,01)),
+        (2, "B", "Sophia",  300, "FA2", new DateTime(2017,02,01)),
+        (2, "B", "Sophia",  200, "FA2", new DateTime(2017,03,01)),
+        (2, "B", "Sophia",  100, "FA3", new DateTime(2017,04,01)),
+        (3, "B", "Liam",    75,  "FA3", new DateTime(2017,04,01))
+        ) AS T(EmpID, DeptID, EmpName, Sales, ProductID, SaleDate);
+```
 
-**A.  Single arbitrary value**  
+**Using ANY_VALUE to optimize query**  
+Using `ANY_VALUE` for `EmpName` in this query avoids the need to add `EmpName` to the `GROUP BY` statement and thus one less operation.
+```sql
+@result =
+    SELECT EmpID, ANY_VALUE(EmpName) AS EmpName, SUM(Sales) AS totalSales
+    FROM @sales
+    GROUP BY EmpID;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/any_value/example1.txt"
+USING Outputters.Tsv(outputHeader: true);
+
+/*     
+This query would fail with the following error messages:
+Every element in a select item must match an expression in GROUP BY exactly unless it is a constant or aggregate function.
+Either remove the colum from the select list or add it to the GROUP BY clause.
+@result =
+    SELECT EmpID, Name, SUM(Sales) AS totalSales
+    FROM @sales
+    GROUP BY EmpID;
+*/
+```
+
+**Using ANY_VALUE to select a single arbitrary value**    
 The following query selects a single arbitrary `EmpName`. 
 ```sql
 @result =
     SELECT ANY_VALUE(EmpName) AS ArbitraryEmployee
-    FROM @employees;
-    
+    FROM @sales;
+
 OUTPUT @result
-TO "/Output/ReferenceGuide/any_value/exampleA.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/any_value/example2.txt"
+USING Outputters.Tsv();
 ```
 
-**B.  Arbitrary value per group**  
+**Using ANY_VALUE to select a single arbitrary value per group**    
 The following query selects an arbitrary `EmpName` for each `DeptName`.
 ```sql
 @result =
-    SELECT DeptName,
+    SELECT EmpID,
            ANY_VALUE(EmpName) AS ArbitraryEmployee
-    FROM @employees
-    GROUP BY DeptName; 
-    
+    FROM @sales
+    GROUP BY EmpID;    
+
 OUTPUT @result
-TO "/Output/ReferenceGuide/any_value/exampleB.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/any_value/example3.txt"
+USING Outputters.Tsv();
 ```
 
-### See Also 
+## See Also 
 * [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)  
 * [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
 * [OVER Expression (U-SQL)](over-expression-u-sql.md)
