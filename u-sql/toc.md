@@ -90,6 +90,7 @@
 ### [IF...ELSE (U-SQL)](if-else-u-sql.md)
 ## [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
 ### [Securing Meta Data Objects](securing-meta-data-objects.md)
+### [Script Bound Objects (U-SQL)](script-bound-objects-u-sql.md)
 ### [U-SQL Databases](u-sql-databases.md)
 #### [CREATE DATABASE (U-SQL)](create-database-u-sql.md)
 #### [USE DATABASE (U-SQL)](use-database-u-sql.md)
