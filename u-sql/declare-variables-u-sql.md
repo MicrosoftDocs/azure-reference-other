@@ -13,15 +13,17 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # DECLARE Variables (U-SQL)
 The DECLARE statement initializes a U-SQL variable.
 
-<table><th align="left">Syntax</th><tr><td><pre>
-Variable :=                                                                                              
+## Syntax
+<pre>
+Variable :=
     System_Variable | User_Variable.<br />
 System_Variable := '@@'+Name.<br />
 User_Variable := "@"+<a href="u-sql-identifiers.md">Unquoted_Identifier</a>.
-</pre></td></tr></table>
+</pre>
 
 Variables allow you to name scalar and rowset expressions. A simple example should illustrate how this works:  
   
@@ -50,7 +52,7 @@ DECLARE @myvar string = "string "+myns.myclass.mystringfn();
 
 
 
-**DECLARE EXTERNAL**   
+## DECLARE EXTERNAL  
 `DECLARE EXTERNAL` allows the declaration of a script scalar expression variable that can be overwritten by a previous DECLARE statement without failing compilation.
 
 For example, the following script will produce the specified file with content "external declaration":
@@ -70,7 +72,26 @@ DECLARE EXTERNAL @value string = "external declaration";
 OUTPUT @r TO "/output/test.csv" USING Outputters.Csv();
 ```
 
-**Differences from T-SQL**    
+## DECLARE CONST
+`DECLARE CONST` checks that an expression is constant-foldable at compile time.
+
+The following example works since the `String.Join` expression is constant-folded in U-SQL:
+```sql
+DECLARE CONST @f string = String.Join("/", new String[]{"output", "test.csv"});
+
+@r = SELECT * FROM (VALUES(@f)) AS T(i);
+OUTPUT @r TO @f USING Outputters.Csv();
+```
+
+The following example fails because the expression assigned to `@f` is not a constant-foldable expression:
+```sql
+DECLARE CONST @f string = ((Func<string,string>)( s => String.Join(s, new String[]{"output", "test.csv"})))("/");
+
+@r = SELECT * FROM (VALUES(@f)) AS T(i);
+OUTPUT @r TO @f USING Outputters.Csv();
+```
+
+## Differences from T-SQL    
 Unlike [T-SQL](https://msdn.microsoft.com/library/ms188927.aspx), a variable must be declared and initialized in the same statement.  In addition, SET cannot be used to update user variables.  You must DECLARE a new variable instead of using SET to update an existing one.	For example:
 ```sql
 // Will fail
