@@ -13,62 +13,68 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # INSERT (U-SQL)
 U-SQL provides the ability to insert rows an existing U-SQL table using the INSERT statement.  
   
-<table><th align="left">Syntax</th><tr><td><pre>
-Insert_Statement :=                                                                                      
-     'INSERT' ['INTO'] <a href="#Ident">Identifier</a> ['(' <a href="#Ident_l">Identifier_List</a> ')']  
-     [<a href="#part_l">Partition_Label</a> | <a href="#int_cla">Integrity_Clause</a>]  
-     <a href="#ins_src">Insert_Source</a>.
-</pre></td></tr></table>
+## Syntax
+<pre>
+Insert_Statement :=
+    'INSERT' ['INTO'] <a href="#Ident">Identifier</a> ['(' <a href="#Ident_l">Identifier_List</a> ')']  
+    [<a href="#part_l">Partition_Label</a> | <a href="#int_cla">Integrity_Clause</a>]  
+    <a href="#ins_src">Insert_Source</a>.
+</pre>
   
-### Semantics of Syntax Elements    
--   <a name="Ident"></a>**`Identifier`**  
-    The identifier specifies the [managed table](u-sql-tables.md#man_ext_tabls) into which the data gets inserted. If the `Identifier` is a three-part identifier, the data will be inserted into the table in the specified database and schema. If it is a two-part identifier, then the data will be inserted into the table in the specified schema of the current database context. If the identifier is a simple identifier, then the data will be inserted into the table in the current database and schema context.  
+## Semantics of Syntax Elements    
+- <a name="Ident"></a>**`Identifier`**  
+  The identifier specifies the [managed table](u-sql-tables.md#man_ext_tabls) into which the data gets inserted. If the `Identifier` is a three-part identifier, the data will be inserted into the table in the specified database and schema. If it is a two-part identifier, then the data will be inserted into the table in the specified schema of the current database context. If the identifier is a simple identifier, then the data will be inserted into the table in the current database and schema context.  
     
-    If the table of the given name does not exist, is an external table, or the user has no permissions to insert data into the table, an error is raised.  
+  If the table of the given name does not exist, is an external table, or the user has no permissions to insert data into the table, an error is raised.  
   
-    If the target table is a [vertically partitioned table](create-table-u-sql-creating-a-table-with-schema.md), then either the `Insert_Partition_Label` or <a href="#int_cla">`Integrity_Clause`</a> has to be specified. The data will be automatically added to the specified/appropriate partitions, but no new partitions are being created. Partitions have to be explicitly created with [ALTER TABLE ADD PARTITION](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md).  
+  If the target table is a [vertically partitioned table](create-table-u-sql-creating-a-table-with-schema.md), then either the `Insert_Partition_Label` or <a href="#int_cla">`Integrity_Clause`</a> has to be specified. The data will be automatically added to the specified/appropriate partitions, but no new partitions are being created. Partitions have to be explicitly created with [ALTER TABLE ADD PARTITION](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md).  
       
--   <a name="Ident_l"></a>**`Identifier_List`**    
-    The optional list of identifier provides the list of columns in the target table into which data is being inserted. An error is raised if the list contains a column that does not exists in the target table.  
+- <a name="Ident_l"></a>**`Identifier_List`**    
+  The optional list of identifier provides the list of columns in the target table into which data is being inserted. An error is raised if the list contains a column that does not exists in the target table.  
   
-    If the list is not specified, the insertion source needs to provide values for all columns, if it is specified, the source needs to provide only values for the specified columns.  
+  If the list is not specified, the insertion source needs to provide values for all columns, if it is specified, the source needs to provide only values for the specified columns.  
   
-    The values of the source are matched to the columns in order as they are specified in the identifier list. If the data types are not compatible, an error is raised.  
+  The values of the source are matched to the columns in order as they are specified in the identifier list. If the data types are not compatible, an error is raised.  
   
-    A null value is inserted into a column that is not specified in the list. If that column has a not-nullable type (e.g., `int` instead of `int`?), an error is raised.  
+  A null value is inserted into a column that is not specified in the list. If that column has a not-nullable type (e.g., `int` instead of `int`?), an error is raised.  
   
 - <a name="part_l"></a>**`Partition_Label`**   
   The optional partition label allows to specify an explicit partition into which the data will be inserted with the following syntax:
-  <table><th>Syntax</th><tr><td><pre>
-  Partition_Label :=                                                                                  
-       'PARTITION' Static_Expression_Row_Constructor.<br />
+
+  ### Syntax
+  <pre>
+  Partition_Label :=
+      'PARTITION' Static_Expression_Row_Constructor.<br />
   Static_Expression_Row_Constructor :=  
-       '(' Static_Expression_List ')'.<br />
+      '(' Static_Expression_List ')'.<br />
   Static_Expression_List :=  
-       Static_Expression {',' Static_Expression}.<br />                        
+      Static_Expression {',' Static_Expression}.<br />                        
   Static_Expression :=  
-       <a href="textual-types-and-literals.md">string_literal</a> | <a href="numeric-types-and-literals.md">number_literal</a> | <a href="textual-types-and-literals.md">char_literal</a>
-       | Static_Variable | binary_literal.</pre></td></tr></table>
+      <a href="textual-types-and-literals.md">string_literal</a> | <a href="numeric-types-and-literals.md">number_literal</a> | <a href="textual-types-and-literals.md">char_literal</a> | Static_Variable | binary_literal.
+  </pre>
 
   The label specifies the values for the partition column into which the data will be inserted. If this label is specified, then the partition columns cannot be specified in the target table’s identifier list. Instead, the values provided in the label will be inserted into the partition columns directly.   
   
-  > [!NOTE]
+  > [!NOTE]  
   > If the partition column is of type DateTime, then the value that is provided in the partition label has to be using `DateTimeKind.UTC`.
   
   If the target table is not a partitioned table and the `Partition_Label` is specified an error will be raised.  
   
 - <a name="int_cla"></a>**`Integrity_Clause`**    
   The optional integrity clause specifies what happens with data that does not fit into any of the available partitions with the following syntax: 
-  <table><th>Syntax</th><tr><td><pre>
-  Integrity_Clause :=                                                                                 
-       'ON' 'INTEGRITY' 'VIOLATION' Integrity_Violation_Action.<br />
+  
+  ### Syntax
+  <pre>
+  Integrity_Clause := 
+      'ON' 'INTEGRITY' 'VIOLATION' Integrity_Violation_Action.<br />
   Integrity_Violation_Action :=  
-       '<a href="#ignr">IGNORE</a>'  
-  |    <a href="#m_t_p">'MOVE' 'TO' Partition_Label</a>.
-  </pre></td></tr></table>
+      '<a href="#ignr">IGNORE</a>'  
+  |   <a href="#m_t_p">'MOVE' 'TO' Partition_Label</a>.
+  </pre>
   
   It provides the following options:    
   - <a name="ignr"></a>**`IGNORE`**    
@@ -81,20 +87,22 @@ Insert_Statement :=
   
 - <a name="ins_src"></a>**`Insert_Source`**    
   INSERT currently takes input from two sources: a [SELECT](select-expression-u-sql.md) expression and the [VALUES](values-expression-u-sql.md) row constructor:
-  <table><th>Syntax</th><tr><td><pre>
-  Insert_Source :=                                                                                    
-       <a href="select-expression-u-sql.md">Select_Expression</a> 
-  |    <a href="u-sql-select-selecting-from-the-values-table-value-constructor.md">Table_Value_Constructor_Expression</a>.
-  </pre></td></tr></table>
+
+  ### Syntax
+  <pre>
+  Insert_Source :=
+      <a href="select-expression-u-sql.md">Select_Expression</a> 
+  |   <a href="u-sql-select-selecting-from-the-values-table-value-constructor.md">Table_Value_Constructor_Expression</a>.
+  </pre>
     
   Note that the expressions need to provide values that fit into the target schema and are type compatible. Otherwise an error is raised. For more information about each of the expression please follow the links.  
   
-> [!TIP]
+> [!TIP]  
 > While INSERT allows incremental insertion into a table or table partition, it does currently does it by adding so called delta files (an artefact of the way the physical partition files for tables are “sealed” and cannot be append to incrementally). Thus doing a lot of incremental inserts can degrade query performance and it is recommended to only insert large batches of data instead of doing many small insertions.
   
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - The examples below are based on the table defined below. 
  
 ```sql
@@ -126,7 +134,7 @@ DECLARE @partition2 DateTime = @partition1.AddDays(1);
 ALTER TABLE TestReferenceDB.dbo.Orders
 ADD IF NOT EXISTS PARTITION(@partition1), PARTITION(@partition2);
 
-// Alternate method to check for existing partition
+// Alternative method to check for existing partition
 IF (!PARTITION.EXISTS(TestReferenceDB.dbo.Orders, @partition1))
 THEN
     ALTER TABLE TestReferenceDB.dbo.Orders ADD PARTITION (@partition1);
@@ -178,9 +186,10 @@ VALUES
 (8, 7, 1, 54279.00, new DateTime(2016, 01, 03)); // no existing partition
 ```
   
-### See Also
+## See Also
 * [PARTITION (U-SQL)](partition-u-sql.md)   
 * [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
 * [OUTPUT Statement (U-SQL)](output-statement-u-sql.md)  
 * [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md)
 * [CREATE TABLE (U-SQL): Creating a Table from a Query](create-table-u-sql-creating-a-table-from-a-query.md)  
+* [REBUILD (U-SQL)](alter-table-u-sql.md#rebuild)
