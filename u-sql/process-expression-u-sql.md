@@ -41,7 +41,7 @@ Process_Expression :=
 - <a name="inp_row"></a>**`Input_Rowset`**  
   Specifies the input rowset that the processor will operate on as either the reference to a rowset name or by a nested rowset expression:
   
-  ###Syntax
+  ### Syntax
   <pre>
   Input_Rowset := 
       <a href="#rowset">Rowset</a> | <a href="#rowset_exp">Rowset_Expression</a>.
