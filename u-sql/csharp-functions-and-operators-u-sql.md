@@ -13,19 +13,25 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# C# Functions and Operators (U-SQL)
+
+# C&#35; Functions and Operators (U-SQL)
 U-SQL’s core reliance on C#-for its [U-SQL type](data-types-and-literals-u-sql.md) system and [U-SQL’s expression](expressions-u-sql.md) language provides the query writer access to the wealth of the C# and CLR libraries of classes, methods, functions, operators and types. It would go beyond the scope of this documentation to repeat all C# functions and operators, so it will limit itself to a few examples of frequently used operators and functions and shows which system assemblies are already included. The section [REFERENCE SYSTEM ASSEMBLY](reference-system-assembly-u-sql.md)   provides a list of all preloaded system assemblies and explains how to add additional system assemblies.  
 
 All [C# operators](https://msdn.microsoft.com/library/6a71f45d.aspx) except for the assignment operators (=, += etc) are valid in U-SQL. In particular all comparison operators such as `==`, `!=`, `<`, `>` the ternary comparison `cond ? true-expression : false-expression`, the null coalesce operator `??` are supported. Even lambda expressions using `=>` can be used inside U-SQL expressions.  
 
 
-<table><th align="left"><a href="#examples">Examples in this Topic</a></th>
+<table width="100%"><th align="left"><a href="#examples">Examples in this Topic</a></th>
 <tr><td>
-<a href="#sharpOps">C# Operators</a>  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <br />                                                                                                           
+<a href="#sharpOps">C# Operators</a><br />
 &emsp;&#9679;&emsp;<a href="#condl">?: (Conditional)</a><br />
 &emsp;&#9679;&emsp;<a href="#nullCoal">?? (Null-Coalescing)</a><br />
 &emsp;&#9679;&emsp;<a href="#lamda">=> (Lamda)</a>
+</td></tr> 
+<tr><td>
+<a href="#regexMethods">Regx Methods</a><br />
+&emsp;&#9679;&emsp;<a href="#ismatch">IsMatch</a><br />
+&emsp;&#9679;&emsp;<a href="#replace">Replace</a><br />
+&emsp;&#9679;&emsp;<a href="#split">Split</a>
 </td></tr> 
 <tr><td>
 <a href="#stringMethods">String Methods</a><br />
@@ -98,12 +104,13 @@ All [C# operators](https://msdn.microsoft.com/library/6a71f45d.aspx) except for 
 </table>
 
 
-### <a name="examples">Examples</a>
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## <a name="examples"></a>Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 
 
-### <a name="sharpOps">C# Operators</a>
+
+## <a name="sharpOps">C# Operators</a>
 
 <a name="condl"></a>**?: (Conditional)**  
 The conditional operator (`?:`) returns one of two values depending on the value of a Boolean expression.  The condition must evaluate to true or false. If condition is true, first_expression is evaluated and becomes the result. If condition is false, second_expression is evaluated and becomes the result. Only one of the two expressions is evaluated.  Either the type of first_expression and second_expression must be the same, or an implicit conversion must exist from one type to the other.  The following example returns the string "Overpaid" if `Salary` exceeds 10000.
@@ -172,6 +179,97 @@ OUTPUT @result
 TO "/Output/ReferenceGuide/BuiltInFunctions/CSharpFunctions/Lamda.csv"
 USING Outputters.Csv(outputHeader: true);
 ```
+--------------------------------------------------
+
+### <a name="regexMethods">Regex Methods</a>
+
+<a name="ismatch"></a>**IsMatch**  
+Indicates whether the specified regular expression finds a match in the specified input string.
+See also, [C# Regex.IsMatch Method](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.ismatch).
+```sql
+@someData =
+    SELECT * FROM
+        ( VALUES
+        ("1298-673-4192"),
+        ("A08Z-931-468a"),
+        ("_A90-123-129X"),
+        ("12345-KKA-1230"),
+        ("0919-2893-1256")
+        ) AS T(col1);
+
+DECLARE  @pattern string = @"^[A-Z0-9]\d{2}[A-Z0-9](-\d{3}){2}[A-Z0-9]$";
+
+@result =
+    SELECT  col1 + "is " +
+            CASE Regex.IsMatch(col1, @pattern, RegexOptions.IgnoreCase)
+                WHEN true THEN "a valid part number."
+                ELSE "not a valid art number."
+            END AS cc
+    FROM @someData;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/CSharpFunctions/RegExMethods/IsMatch.txt"
+USING Outputters.Text();
+```
+
+<a name="replace">**Replace**</a>  
+In a specified input string, replaces all strings that match a specified regular expression with a specified replacement string. 
+See also [C# Regex.Replace Method](https://docs.microsoft.com/dotnet/api/system.text.regularexpressions.regex.replace)
+and [C# Regex.Escape(String) Method](https://docs.microsoft.com/dotnet/api/system.text.regularexpressions.regex.escape).  
+
+```sql
+@someData =
+    SELECT * FROM
+        ( VALUES
+        ("tic tac-toes")
+        ) AS T(col1);
+
+DECLARE  @pattern string = @"\s|-";
+
+@result =
+    SELECT  col1 AS original,
+            Regex.Replace(col1,  "\\s", "_") AS regex_replaceSpace,
+            Regex.Replace(col1,  "-", "_") AS regex_replaceHypen,
+            Regex.Replace(col1,  "\\055",  "_") AS regex_replaceHypenDecimal,
+            Regex.Replace(col1,  "\\s|-", "_") AS regex_replaceBoth,
+            Regex.Replace(col1,  @"\s|-", "_") AS regex_replaceBoth_verbatim,
+            Regex.Replace(col1,  @pattern, "_") AS regex_replaceBoth_pattern,
+            Regex.Replace(col1,  "s",  "_") AS regex_replaceLetter,
+            Regex.Replace(col1,  "(?i)S", "_") AS regex_replaceLetter_ci,
+            Regex.Replace(col1,  "S", "_", RegexOptions.IgnoreCase) AS regex_replaceLetter_ci2
+    FROM @someData;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/CSharpFunctions/RegExMethods/Replace.csv"
+USING Outputters.Csv(outputHeader: true);
+```
+
+<a name="split">**Split**</a>  
+Splits an input string into an array of substrings at the positions defined by a regular expression pattern.
+See also, [C# Regex.Split Method](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.split).  
+
+```sql
+@someBooks = 
+    SELECT * FROM 
+        ( VALUES
+        ("The Book Thief; Markus Zusak; 2005")
+        ) AS T(Books);
+
+@array =
+    SELECT new SQL.ARRAY<string>(Regex.Split(Books, ";")) AS BooksArray
+    FROM @someBooks;
+
+// Flatten results
+@result =
+    SELECT  r.BookParts.Trim() AS BookParts
+    FROM @array
+    CROSS APPLY EXPLODE(BooksArray) AS r(BookParts);
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/CSharpFunctions/RegExMethods/Split.txt"
+USING Outputters.Text();
+```
+
 --------------------------------------------------
 
 ### <a name="stringMethods">**String Methods**</a>   
@@ -1502,11 +1600,12 @@ TO "ReferenceGuide/Operators/CSharpFunctions/Random1.txt"
 USING Outputters.Csv();
 ```
 
-### See Also 
+## See Also 
 * [REFERENCE SYSTEM ASSEMBLY](reference-system-assembly-u-sql.md)
 * [C# Operators](https://msdn.microsoft.com/library/6a71f45d.aspx)   
 * [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
 * [Built-in U-SQL UDOs](built-in-u-sql-udos.md)  
+* [Common SQL Expressions in U-SQL](Common%20SQL%20Expressions%20in%20U-SQL.md)
 
 
 
