@@ -160,7 +160,7 @@
 ### [U-SQL Built-in Type Properties](u-sql-built-in-type-properties.md)
 ## [Language Elements (U-SQL)](language-elements-u-sql.md)
 ### [Double Slash Comment (U-SQL)](double-slash-comment-u-sql.md)
-### [RAISE (U-SQL)(raise-u-usql.md)
+### [RAISE (U-SQL)](raise-u-usql.md)
 ### [Slash Star Comment (U-SQL)](slash-star-comment-u-sql.md)
 ### [U-SQL Metadata Object Naming and Name Contexts](u-sql-metadata-object-naming-and-name-contexts.md)
 ### [USING Keyword](using-keyword.md)
