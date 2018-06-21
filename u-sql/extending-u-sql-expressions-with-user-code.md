@@ -13,26 +13,28 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Extending U-SQL Expressions with User-Code
 One of the major values of U-SQL is how easy it is to add user-specific code written in C#. Since U-SQL’s type system is based on C# and the U-SQL scalar expression language on the instances of these types is the C# expression language, it is very easy to use the power of the C# language in U-SQL.  
   
 There are several ways how C# code can be used to extend U-SQL expressions:  
 
--   **Inline C# Expressions**  
+- **Inline C# Expressions**  
 Inline C# expressions often makes sense if a small set of C# methods need to be applied to process one of the scalar values. E.g., a string type method or a math function.  
 
--   **User-Defined Aggregators**  
+- **User-Defined Aggregators**  
 Write user-defined aggregators in a C# assembly and reference them in the U-SQL script.  By providing user-defined aggregators, custom aggregation logic can be plugged into U-SQL’s processing of aggregation with a [GROUP BY](group-by-and-having-clauses-u-sql.md) clause. 
 
--    **User-Defined Functions**  
+- **User-Defined Functions**  
 Writing user-defined functions in a C# assembly and referencing them in the U-SQL script is preferred for more complex functions if the logic of the function requires the full power of C# beyond its expression language, such as procedural logic or recursion.   
  
--   **User-Defined Operators**  
+- **User-Defined Operators**  
 Write user-defined operators in a C# assembly and reference them in the U-SQL script.  User-defined Operators (UDO) are U-SQL’s custom-coded rowset operators. They are written in C# and provide the ability to generate, process and consume rowsets.  
 
 ## User-Defined Code Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://channel9.msdn.com/Series/AzureDataLake/USQL-LocalRun).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+
 
 |The following provides examples of implementing user-defined code:|
 |---|
@@ -44,7 +46,7 @@ Write user-defined operators in a C# assembly and reference them in the U-SQL sc
 
 ## Using Assemblies <a name="usingAssemblies"></a>  
 ### Code-Behind vs. Assembly Registration Walkthrough 
-For user-defined functions, aggregators and operators, the C# assembly will have to be loaded into the U-SQL metadata catalog either through the use of Code-Behind or Assembly registration.  The main advantage of Code-Behind is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  Some of the disadvantages is that  the code gets uploaded for every script submission and the functionality cannot be shared with others.  For a deeper discussion of Code-Behind versus Assembly registration, see [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/) and [U-SQL Programmability Guide: Using Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1).
+For user-defined functions, aggregators and operators, the C# assembly will have to be loaded into the U-SQL metadata catalog either through the use of Code-Behind or Assembly registration.  The main advantage of Code-Behind is that the tooling will register the assembly file and add the [REFERENCE ASSEMBLY](reference-assembly-u-sql.md) statement automatically.  Some of the disadvantages is that  the code gets uploaded for every script submission and the functionality cannot be shared with others.  For a deeper discussion of Code-Behind versus Assembly registration, see [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/) and [U-SQL Programmability Guide: Using Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1).
 
 The following provides a walkthrough of using a simple function with both Code-Behind and Assembly registration.  The walkthrough assumes you have an existing U-SQL Project.
 
@@ -183,10 +185,10 @@ Example using [Round](https://msdn.microsoft.com/library/system.math.round(v=vs.
         ("Susan",   25.1234m),
         ("Emma",    25.9999m),
         ("Bradley", 25.9900m)
-        ) AS T(Cutomer, Balance);
+        ) AS T(Customer, Balance);
 
 @result =
-    SELECT Cutomer,
+    SELECT Customer,
             Math.Round(Balance, 2) AS Balance
     FROM @departments;
 
@@ -514,7 +516,7 @@ TO "/Output/ReferenceGuide/StatementsAndExpressions/PrimaryRowsetExpressions/Pro
 USING Outputters.Tsv(quoting:false);
 ```
 
-### See Also  
+## See Also  
 * [U-SQL Assemblies ](u-sql-assemblies.md)   
 * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide)  
 * [How to register U-SQL Assemblies in your U-SQL Catalog](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)  
@@ -522,8 +524,3 @@ USING Outputters.Tsv(quoting:false);
 * [Tutorial: Get started with extending U-SQL with R](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-r-extensions)   
 * [Cognitive Capabilities in U-SQL](cognitive-capabilities-in-u-sql.md)
 * U-SQL C# Developer’s Guide (Coming soon)  
-
-
-
-
-
