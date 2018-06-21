@@ -225,6 +225,7 @@
 ### [Table-Valued Function Expression (U-SQL)](table-valued-function-expression-u-sql.md)
 ### [VALUES Expression (U-SQL)](values-expression-u-sql.md)
 ## [Variables (U-SQL)](variables-u-sql.md)
+### [C# Function Variables (U-SQL)](csharp-function-variables-u-sql.md)
 ### [DECLARE Variables (U-SQL)](declare-variables-u-sql.md)
 ### [Using Variables (U-SQL)](using-variables-u-sql.md)
 ## [Common SQL Expressions in U-SQL](common-sql-expressions-in-u-sql.md)
