@@ -8,7 +8,6 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 keywords: 
-  - "CASE"
   - "NULLIF"
   - "COALESCE"
   - "ISNULL"
@@ -16,7 +15,6 @@ keywords:
   - "U-SQL"
   - "Subquery"
 helpviewer_keywords: 
-  - "CASE"
   - "NULLIF"
   - "COALESCE"
   - "ISNULL"
@@ -28,73 +26,22 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Common SQL Expressions in U-SQL
 While U-SQL is based on SQL and provides many of the common SQL rowset expressions, it does not provide all of them and it is not ANSI SQL.   
   
 For starters, its keywords such as SELECT have to be in UPPERCASE. And its expression language inside SELECT clauses, WHERE predicates etc is C#. This for example means, that the comparison operations inside a predicate follow C# syntax (e.g., a == "foo"), and that the language uses C# null semantics which is 2-valued and not 3-valued as in ANSI SQL. To help SQL users to get familiar with U-SQL, this section provides the mapping of some common SQL expressions and how to express them in U-SQL.  
   
-### Examples    
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://channel9.msdn.com/Series/AzureDataLake/USQL-LocalRun).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples    
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+
 
 |Examples in this topic|
 |---|
-|&emsp;&#9679;&emsp;[CASE (Transact-SQL) and ?:](#case)<br />&emsp;&#9679;&emsp;[NULLIF (Transact-SQL) and ?:](#nullif)<br />&emsp;&#9679;&emsp;[COALESCE (Transact-SQL) and ??](#coalesce)<br />&emsp;&#9679;&emsp;[ISNULL (Transact-SQL) and ??](#isnull)<br />&emsp;&#9679;&emsp;[TOP (Transact-SQL) and FETCH](#top)<br />&emsp;&#9679;&emsp;[Subqueries with IN/NOT IN and SEMIJOIN/ANTISEMIJOIN](#subQuery)<p>                                                                                                                                                                                                      </p>|
+|&emsp;&#9679;&emsp;[NULLIF (Transact-SQL) and ?:](#nullif)<br />&emsp;&#9679;&emsp;[COALESCE (Transact-SQL) and ??](#coalesce)<br />&emsp;&#9679;&emsp;[ISNULL (Transact-SQL) and ??](#isnull)<br />&emsp;&#9679;&emsp;[TOP (Transact-SQL) and FETCH](#top)<br />&emsp;&#9679;&emsp;[Subqueries with IN/NOT IN and SEMIJOIN/ANTISEMIJOIN](#subQuery)<p>                                                                                                                                                                                                      </p>|
   
  
-<a name="case">**CASE (Transact-SQL) and ?:**</a>    
-Consider using the conditional operator [`?:`](https://msdn.microsoft.com/library/ty67wk28.aspx) for situations where you would use [CASE (Transact-SQL)](https://msdn.microsoft.com/library/ms181765.aspx) in SQL.  See also, [Using `?:`](https://msdn.microsoft.com/library/azure/mt621341.aspx#condl).
-
-```sql
-@employees = 
-    SELECT * FROM 
-        ( VALUES
-        (1, "Noah",   100, (int?)10000, new DateTime(2012,05,31)),
-        (2, "Sophia", 100, (int?)15000, new DateTime(2012,03,19)),
-        (3, "Liam",   100, (int?)30000, new DateTime(2014,09,14)),
-        (4, "Amy",    100, (int?)35000, new DateTime(1999,02,27)),
-        (5, "Justin", 600, (int?)15000, new DateTime(2015,01,12)),
-        (6, "Emma",   200, (int?)8000,  new DateTime(2014,03,08)),
-        (7, "Jacob",  200, (int?)8000,  new DateTime(2014,09,02)),
-        (8, "Olivia", 200, (int?)8000,  new DateTime(2013,12,11)),
-        (9, "Mason",  300, (int?)50000, new DateTime(2016,01,01)),
-        (10, "Ava",   400, (int?)15000, new DateTime(2014,09,14))
-        ) AS T(EmpID, EmpName, DeptID, Salary, StartDate);
-
-/* T-SQL; Using CASE
-SELECT  EmpID,
-        EmpName,
-		CASE DeptID
-			WHEN 100 THEN 'Engineering'
-            WHEN 200 THEN 'HR'
-            WHEN 300 THEN 'Executive'
-            WHEN 400 THEN 'Marketing'
-            WHEN 500 THEN 'Sales'
-			ELSE 'I did not anticipate this' 
-		END AS Department,
-        Salary,
-        StartDate
-FROM @employees;
-*/
-
-// U-SQL; Using ?: 
-@result =
-    SELECT  EmpID,
-            EmpName,
-            (DeptID == 100) ? "Engineering" : 
-                (DeptID == 200) ? "HR" :
-                (DeptID == 300) ? "Executive" :
-                (DeptID == 400) ? "Marketing" :
-                (DeptID == 500) ? "Sales" : "I did not anticipate this" AS Department,
-            Salary,
-            StartDate
-    FROM @employees;
-
-OUTPUT @result
-TO "/Output/ReferenceGuide/CommonSQLExpressions/Case.csv"
-USING Outputters.Csv(outputHeader: true);
-```
-
 <a name="nullif">**NULLIF (Transact-SQL) and ?:**</a>    
 Consider using the conditional operator [`?:`](https://msdn.microsoft.com/library/ty67wk28.aspx) for situations where you would use [NULLIF (Transact-SQL)](https://msdn.microsoft.com/library/ms177562.aspx) in SQL. See also, [Using `?:`](https://msdn.microsoft.com/library/azure/mt621341.aspx#condl).
 
@@ -343,10 +290,9 @@ USING Outputters.Tsv(outputHeader: true);
 // BONUS: Switch "LEFT" to "RIGHT" in the above examples and observe the results.
 ``` 
   
-### See also   
+## See also 
+* [CASE Expression (U-SQL)](case-expression-u-sql.md)
 * [PIVOT and UNPIVOT (U-SQL)](pivot-and-unpivot-u-sql.md)  
 * [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)    
 * [ORDER BY and OFFSET/FETCH Clause (U-SQL)](order-by-and-offset-fetch-clause-u-sql.md)     
 * [C# Functions and Operators (U-SQL)](csharp-functions-and-operators-u-sql.md)   
-
-
