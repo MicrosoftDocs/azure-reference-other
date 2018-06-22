@@ -13,53 +13,58 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# RANK (U-SQL)
-The RANK ranking function returns the rank of each row within the window. The rank of a row is one plus the number of ranks that come before the row in question.  
 
-If two or more rows tie for a rank, each tied rows receives the same rank and the next highest row will receive the rank as if the previous rows were not tied. For example, if the three top salespeople have the same SalesYTD value, they are all ranked one. The salesperson with the next highest SalesYTD is ranked number four, because there are three rows that are ranked higher. Therefore, the RANK function does not always return consecutive integers.  
+# RANK (U-SQL)
+The `RANK` ranking function returns the rank of each row within the window. The rank of a row is one plus the number of ranks that come before the row in question.  
+
+If two or more rows tie for a rank, each tied rows receives the same rank and the next highest row will receive the rank as if the previous rows were not tied. For example, if the three top salespeople have the same SalesYTD value, they are all ranked one. The salesperson with the next highest SalesYTD is ranked number four, because there are three rows that are ranked higher. Therefore, the `RANK` function does not always return consecutive integers.  
 
 The sort order that is used for the whole query determines the order in which the rows appear in a result set. 
 
-RANK can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
+`RANK` can only be used in the context of a [windowing expression](over-expression-u-sql.md). 
 
-<table><th align="left">Syntax</th><tr><td><pre>
-RANK_Expression :=                                                                                       
-     'RANK' '(' ')'.
-</pre></td></tr></table>
+## Syntax
+<pre>
+RANK_Expression := 
+    'RANK' '(' ')'.
+</pre>
 
-### Return Type 
+## Return Type 
 The return type is [long?](numeric-types-and-literals.md). 
 
-### Usage in Windowing Expression 
+## Usage in Windowing Expression 
 This ranking function can be used in a [windowing expression](over-expression-u-sql.md) with the following restrictions: 
 
 * The [ORDER BY](over-expression-u-sql.md#OBC) clause in the [OVER](over-expression-u-sql.md) operator is required. 
 * The [ROWS](over-expression-u-sql.md#row_cla) clause in the [OVER](over-expression-u-sql.md) operator is not allowed. 
 
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+- The example(s) below are based on the dataset(s) defined below.  Ensure your execution includes the rowset variable(s).
 
-   ```sql
-    @employees = 
-        SELECT * FROM 
-            ( VALUES
-            (1, "Noah",   "Engineering", 100, 10000),
-            (2, "Sophia", "Engineering", 100, 15000),
-            (3, "Liam",   "Engineering", 100, 30000),
-            (4, "Amy",    "Engineering", 100, 35000),
-            (5, "Justin", "Engineering", 100, 15000),
-            (6, "Emma",   "HR",          200, 8000),
-            (7, "Jacob",  "HR",          200, 8000),
-            (8, "Olivia", "HR",          200, 8000),
-            (9, "Mason",  "Executive",   300, 50000),
-            (10, "Ava",   "Marketing",   400, 15000),
-            (11, "Ethan", "Marketing",   400, 9000) 
-            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-   ```
+**Dataset**   
+```sql
+@employees = 
+    SELECT * FROM 
+        ( VALUES
+        (1, "Noah",   "Engineering", 100, 10000),
+        (2, "Sophia", "Engineering", 100, 15000),
+        (3, "Liam",   "Engineering", 100, 30000),
+        (4, "Amy",    "Engineering", 100, 35000),
+        (5, "Justin", "Engineering", 100, 15000),
+        (6, "Emma",   "HR",          200, 8000),
+        (7, "Jacob",  "HR",          200, 8000),
+        (8, "Olivia", "HR",          200, 8000),
+        (9, "Mason",  "Executive",   300, 50000),
+        (10, "Ava",   "Marketing",   400, 15000),
+        (11, "Ethan", "Marketing",   400, 9000) 
+        ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+```
+<br />
 
-**A.  Ranking all rows in a result set**   
+
+**Ranking all rows in a result set**    
 The following example returns all employees ranked by his/her salary. Because a [PARTITION BY](over-expression-u-sql.md#OPBC) clause was not specified, the `RANK` function was applied to all rows in the result set.
 ```sql
 @result =
@@ -68,11 +73,13 @@ The following example returns all employees ranked by his/her salary. Because a 
     FROM @employees;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Ranking/rank/exampleA.csv"
+TO "/ReferenceGuide/BuiltInFunctions/Ranking/RANK/example1.csv"
 USING Outputters.Csv();
 ```
+<br />
 
-**B.  Ranking rows within a partition**   
+
+**Ranking rows within a partition**    
 The following example ranks the salaries within each department. The result set is partitioned by `DeptID` and logically ordered by `Salary`.
 ```sql
 @result =
@@ -81,11 +88,12 @@ The following example ranks the salaries within each department. The result set 
     FROM @employees;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Ranking/rank/exampleB.csv"
+TO "/ReferenceGuide/BuiltInFunctions/Ranking/RANK/example2.csv"
 USING Outputters.Csv();
 ```
+<br />
 
-### See Also 
+## See Also 
 * [DENSE_RANK (U-SQL)](dense-rank-u-sql.md)
 * [Ranking Functions (U-SQL)](ranking-functions-u-sql.md)  
 * [OVER Expression (U-SQL)](over-expression-u-sql.md) 
