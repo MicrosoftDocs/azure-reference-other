@@ -13,118 +13,212 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # MIN (U-SQL)
-The MIN aggregator choses the smallest value in the group or null if the expression returns only nulls in the group. The values have to be comparable. For string types, it uses a culture-invariant UTF-8 byte ordering. 
+The `MIN` aggregator choses the smallest value in the group or null if the expression returns only nulls in the group. The values have to be comparable. For string types, it uses a culture-invariant UTF-8 byte ordering. 
 
 The identity value is null. 
 
-<table><th align="left">Syntax</th><tr><td><pre>
-MIN_Expression :=                                                                                        
-     'MIN' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
-</pre></td></tr></table>
+## Syntax
+<pre>
+MIN_Expression := 
+    'MIN' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
+</pre>
 
-### Semantics of Syntax Elements 
+## Semantics of Syntax Elements 
 * <a name="dist"></a>**`DISTINCT`**     
-Optionally allows to de-duplicate the values returned by the expression inside the group before aggregation. DISTINCT is not meaningful with MIN and is available for ISO compatibility only. 
+Optionally allows to de-duplicate the values returned by the expression inside the group before aggregation. `DISTINCT` is not meaningful with `MIN` and is available for ISO compatibility only. 
 
 * <a name="exp"></a>**`expression`**      
 The C# expression (including column references) that gets aggregated. Its result type has to be comparable. 
 
-### Return Type 
+## Return Type 
 The nullable type of the input. 
 
-### Usage in Windowing Expression 
+## Usage in Windowing Expression 
 This aggregator can be used in a [windowing expression](over-expression-u-sql.md) without any additional restrictions. 
 
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally
-- The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+- The example(s) below are based on the dataset(s) defined below.  Ensure your execution includes the rowset variable(s).
 
-   ```sql
-    @employees = 
-        SELECT * FROM 
-            ( VALUES
-            (1, "Noah",   "Engineering", 100, 10000),
-            (2, "Sophia", "Engineering", 100, 20000),
-            (3, "Liam",   "Engineering", 100, 30000),
-            (4, "Emma",   "HR",          200, 8000),
-            (5, "Jacob",  "HR",          200, 8000),
-            (6, "Olivia", "HR",          200, 8000),
-            (7, "Mason",  "Executive",   300, 50000),
-            (8, "Ava",    "Marketing",   400, 15000),
-            (9, "Ethan",  "Marketing",   400, 9000) 
-            ) AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-   ```
 
-**A.    Lowest value(`Salary`)**   
-The following query determines the single lowest salary.
+**Dataset**  
 ```sql
-@result =
-    SELECT MIN(Salary) AS LowestSalary
-    FROM @employees;
-
-OUTPUT @result
-TO "/Output/ReferenceGuide/min/exampleA.csv"
-USING Outputters.Csv();
+@sales = 
+    SELECT * FROM 
+        ( VALUES
+        (1, "A", 100, "FA1", new DateTime(2017,01,01)),
+        (1, "A", 200, "FA1", new DateTime(2017,02,01)),
+        (1, "A", 300, "FA2", new DateTime(2017,03,01)),
+        (1, "A", 400, "GA1", new DateTime(2017,04,01)),
+        (2, "B", 400, "FA1", new DateTime(2017,01,01)),
+        (2, "B", 300, "FA2", new DateTime(2017,02,01)),
+        (2, "B", 200, "FA2", new DateTime(2017,03,01)),
+        (2, "B", 100, "FA3", new DateTime(2017,04,01)),
+        (3, "B", 200, (string)null, new DateTime(2017,03,01)),
+        (3, "B", 225,  "FA3", new DateTime(2017,04,01))
+        ) AS T(EmpID, DeptID, Sales, ProductID, SaleDate);
 ```
 
-**B.    Lowest values per group**    
-The following query determines the lowest salary for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
+**Lowest of all values**   
+The following query returns the single lowest Sales figure.
 ```sql
 @result =
-    SELECT DeptName,
-           MIN(Salary) AS LowestSalaryByDept
-    FROM @employees
-    GROUP BY DeptName;
+    SELECT MIN(Sales) AS LowestSales
+    FROM @sales;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/min/exampleB.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example1.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
-  
-**C.    Lowest values with OVER()**   
-The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows.  The query determines the lowest salary over the window - all employees.
+
+**Lowest values per group**   
+The following query returns the lowest sales figure for each SaleDate with the `GROUP BY` clause.
 ```sql
 @result =
-    SELECT EmpName,
-           MIN(Salary) OVER() AS LowestSalaryAllDepts
-    FROM @employees;
+    SELECT SaleDate.ToShortDateString() AS SaleDate,
+           MIN(Sales) AS LowestSalesBySaleDate
+    FROM @sales
+    GROUP BY SaleDate;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/min/exampleC.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example2.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
 
-**D.    Lowest values over a defined window using OVER()**    
-The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, and the lowest salary over the window - `DeptName`.
+**Lowest values with OVER() - undefined window**   
+The `OVER` expression in the following query is empty which defines the "window" to include all rows.   
+The query calculates the lowest sales over the window - all sales.
+The query returns EmpID, SaleDate, Sales, and the lowest overall Sales.
 ```sql
 @result =
-    SELECT EmpName,
-           DeptName,
-           MIN(Salary) OVER(PARTITION BY DeptName) AS LowestSalaryByDept
-    FROM @employees;
+    SELECT  EmpID, 
+            SaleDate.ToShortDateString() AS SaleDate,
+            Sales,
+            MIN(Sales) OVER() AS LowestOverallSales
+    FROM    @sales;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/min/exampleD.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example3.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
 
-**E.    Lowest values over a defined window using OVER(), additional example**   
-The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the lowest salary for each department and each employee's salary share of his/her department's lowest share.
+**Lowest values with OVER() - defined window**   
+The first `OVER` expression in the following query defines the window by partitioning the rowset on SaleDate.   
+The query returns SaleDate, the lowest sales for each SaleDate, and the lowest sales overall.
 ```sql
 @result =
-    SELECT *,
-           MIN(Salary) OVER(PARTITION BY DeptName) AS LowestSalaryByDept,
-           ((decimal) Salary / MIN(Salary) OVER(PARTITION BY DeptName)) * 100 AS ShareOfLowestSalaryByDept
-    FROM @employees;
+    SELECT DISTINCT SaleDate.ToShortDateString() AS SaleDate,
+           MIN(Sales) OVER(PARTITION BY SaleDate) AS LowestSalesBySaleDate,
+           MIN(Sales) OVER() AS LowestOverallSales
+    FROM @sales;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/min/exampleE.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example4.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
 
-### See Also 
+**Filtering Results of Aggregate Values**  
+The `HAVING` clause restricts the result set to those records where an employee's lowest sale is greater than 150; as opposed to, those records where an employee has any sale greater than 150.
+```sql
+@result =
+    SELECT EmpID,
+           MIN(Sales) AS FilteredSalesByEmployee
+    FROM @sales
+    GROUP BY EmpID
+    HAVING MIN(Sales) > 150;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example5A.txt"
+USING Outputters.Tsv(outputHeader: true);
+```
+
+**Alternative, less efficient method using OVER()**   
+Windowed functions (those with an `OVER` clause) are only allowed in a query that has no row grouping of any kind.
+```sql
+@result =
+    SELECT DISTINCT s.EmpID, 
+            sa.FilteredSalesByEmployee
+    FROM @sales AS s
+    JOIN (SELECT EmpID, (int)MIN(Sales) OVER(PARTITION BY EmpID) AS FilteredSalesByEmployee FROM @sales) AS sa
+    ON s.EmpID == sa.EmpID
+    AND s.Sales == sa.FilteredSalesByEmployee
+    WHERE sa.FilteredSalesByEmployee > 150;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example5B.txt"
+USING Outputters.Tsv(outputHeader: true);
+```
+
+**Lowest values using OVER() in a calculated value**   
+The `OVER` expression in the following query defines the window by partitioning the rowset on EmpID.   
+The query returns each EmpID's monthly sales, the lowest sales for each EmpID and the difference between current sales and lowest sales.
+```sql
+@result =
+    SELECT EmpID, 
+           SaleDate.ToShortDateString() AS SaleDate,
+           Sales, 
+           MIN(Sales) OVER(PARTITION BY EmpID) AS MinSaleByEmpID,
+           Sales - MIN(Sales) OVER(PARTITION BY EmpID) AS DifferenceFromMinSaleByEmpID
+    FROM @sales;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example6.csv"
+USING Outputters.Csv(outputHeader: true);
+```
+
+**MIN values using OVER() and the ROWS clause**   
+The `OVER` expression in the following query defines the window by partitioning the rowset on EmpID.   
+The `ROWS` clause further limits the rows in the partition by specifying fixed number of rows preceding or following the current row.
+```sql
+@result =
+    SELECT EmpID,
+           SaleDate.ToShortDateString() AS SaleDate,
+           Sales AS currentSales,
+           MIN(Sales) OVER(PARTITION BY EmpID ORDER BY SaleDate ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS threeMonthMin_2PriorAndCurrent_ByEmpID,
+           MIN(Sales) OVER(PARTITION BY EmpID ORDER BY SaleDate ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS threeMonthMin_1Prior_Current_1Following_ByEmpID,
+           MIN(Sales) OVER(ORDER BY EmpID, SaleDate ROWS UNBOUNDED PRECEDING) AS rollingMin_allSales,
+           MIN(Sales) OVER(PARTITION BY EmpID ORDER BY SaleDate ROWS UNBOUNDED PRECEDING) AS rollingMin_ByEmpID   
+    FROM @sales;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example7.csv"
+//ORDER BY EmpID, SaleDate
+USING Outputters.Csv(outputHeader: true);
+```
+
+**Lowest values using OVER() with a multi-column partition**   
+The `OVER` expression in the following query defines the window by partitioning the rowset on both ProductID and SaleDate.   
+Query returns the lowest sales for each ProductID and SaleDate.
+```sql
+@result =
+    SELECT  DISTINCT ProductID,
+            SaleDate.ToShortDateString() AS SaleDate, 
+            MIN(Sales) OVER(PARTITION BY ProductID, SaleDate) AS LowestSalesByProductIDAndSaleDate
+    FROM @sales;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example8A.txt"
+USING Outputters.Tsv(outputHeader: true);
+```
+
+**Same as above without OVER() and using GROUP BY**   
+```sql
+@result =
+    SELECT  ProductID,
+            SaleDate.ToShortDateString() AS SaleDate, 
+            MIN(Sales) AS LowestSalesByProductIDAndSaleDate
+    FROM @sales
+    GROUP BY ProductID, SaleDate;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/MIN/example8B.txt"
+USING Outputters.Tsv(outputHeader: true);
+```
+
+## See Also 
 * [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)  
 * [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
 * [OVER Expression (U-SQL)](over-expression-u-sql.md) 
