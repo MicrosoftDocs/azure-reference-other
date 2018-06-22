@@ -125,7 +125,7 @@ USING Outputters.Csv(outputHeader: true);
 <br />
 
 
-**Using FIRST_VALUE in a computed expression**
+**Using FIRST_VALUE in a computed expression**  
 The following example uses `FIRST_VALUE` in computed expressions to show the salary difference between the highest and lowest paid employee from each department.
 ```sql
 @result =
