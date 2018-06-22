@@ -13,24 +13,26 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # SUM (U-SQL)
-The SUM aggregator returns the sum of all the values in the group. The input values have to be of a numeric type or an error is raised. Null values are ignored. 
+The `SUM` aggregator returns the sum of all the values in the group. The input values have to be of a numeric type or an error is raised. Null values are ignored. 
 
 The identity value is null. 
 
-<table><th align="left">Syntax</th><tr><td><pre>
-SUM_Expression :=                                                                                        
-     'SUM' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
-</pre></td></tr></table>
+## Syntax
+<pre>
+SUM_Expression :=   
+    'SUM' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
+</pre>
 
-### Semantics of Syntax Elements 
+## Semantics of Syntax Elements 
 * <a name="dist"></a>**`DISTINCT`**    
 Optionally allows to de-duplicate the values returned by the expression inside the group before aggregation.  
 
 * <a name="exp"></a>**`expression`**     
 The C# expression (including column references) that gets aggregated. Its type has to be a numeric type or an error is raised. 
 
-### Return Type 
+## Return Type 
 The return type is determined by the type of the evaluated result of the expression as follows: 
 
 |Expression type|Return type|Comment| 
@@ -40,98 +42,204 @@ The return type is determined by the type of the evaluated result of the express
 |decimal, decimal?|decimal?||
 |float, float?, double, double?|double?|| 
 
-### Usage in Windowing Expression 
+## Usage in Windowing Expression 
 This aggregator can be used in a [windowing expression](over-expression-u-sql.md) without any additional restrictions. 
 
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+- The example(s) below are based on the dataset(s) defined below.  Ensure your execution includes the rowset variable(s).
 
-   ```sql
-    @employees = 
-        SELECT * FROM ( VALUES
-            (1, "Noah",   "Engineering", 100, 10000),
-            (2, "Sophia", "Engineering", 100, 20000),
-            (3, "Liam",   "Engineering", 100, 30000),
-            (4, "Emma",   "HR",          200, 10000),
-            (5, "Jacob",  "HR",          200, 10000),
-            (6, "Olivia", "HR",          200, 10000),
-            (7, "Mason",  "Executive",   300, 50000),
-            (8, "Ava",    "Marketing",   400, 15000),
-            (9, "Ethan",  "Marketing",   400, 10000) )
-        AS T(EmpID, EmpName, DeptName, DeptID, Salary);
-   ```
+**Dataset**   
+```sql
+@sales = 
+    SELECT * FROM 
+        ( VALUES
+        (1, "A", 100, "FA1", new DateTime(2017,01,01)),
+        (1, "A", 200, "FA1", new DateTime(2017,02,01)),
+        (1, "A", 300, "FA2", new DateTime(2017,03,01)),
+        (1, "A", 400, "GA1", new DateTime(2017,04,01)),
+        (2, "B", 400, "FA1", new DateTime(2017,01,01)),
+        (2, "B", 300, "FA2", new DateTime(2017,02,01)),
+        (2, "B", 200, "FA2", new DateTime(2017,03,01)),
+        (2, "B", 100, "FA3", new DateTime(2017,04,01)),
+        (3, "B", 200, (string)null, new DateTime(2017,03,01)),
+        (3, "B", 225,  "FA3", new DateTime(2017,04,01))
+        ) AS T(EmpID, DeptID, Sales, ProductID, SaleDate);
+```
+<br />
 
-**A.  Sum of all values(`Salary`)**  
-The following query: 1) calculates the total salary for all employees, and 2) calculates the total salary from all DISTINCT salary values.
+
+**Total of all values**  
+The following query calculates the 1) total sales, and 2) total sales from all `DISTINCT` sales values.
 ```sql
 @result =
-    SELECT SUM(Salary) AS TotalSalary,
-           SUM(DISTINCT Salary) AS TotalDistinctSalary
-    FROM @employees;
+    SELECT SUM(Sales) AS TotalSales,
+           SUM(DISTINCT Sales) AS TotalDistinctSales
+    FROM @sales;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/sum/exampleA.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example1.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
+<br />
 
-**B.    Sum of values per group**  
-The following query calculates the total salary for each department with the [GROUP BY](group-by-and-having-clauses-u-sql.md) clause.
+
+**Total values per group**  
+The following query calculates the total sales for each employee with the `GROUP BY` clause.
 ```sql
 @result =
-    SELECT DeptName,
-           SUM(Salary) AS SalaryByDept
-    FROM @employees
-    GROUP BY DeptName;
+    SELECT EmpID,
+           SUM(Sales) AS TotalSalesByEmployee
+    FROM @sales
+    GROUP BY EmpID;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/sum/exampleB.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example2.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
+<br />
 
-**C.    Sum of values with OVER()**  
-The [OVER](over-expression-u-sql.md) clause in the following query is empty which defines the "window" to include all rows. The query calculates the total salary over the window - all employees.
+
+**Total values with OVER() - undefined window**  
+The `OVER` expression in the following query is empty which defines the "window" to include all rows.    
+The query calculates the total sales over the window - all sales.
 ```sql
 @result =
-    SELECT EmpName,
-           SUM(Salary) OVER() AS SalaryAllDepts
-    FROM @employees;
+    SELECT DISTINCT SUM(Sales) OVER() AS TotalSalesAllSales
+    FROM @sales;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/sum/exampleC.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example3.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
+<br />
 
-**D.    Sum of values over a defined window using OVER()**  
-The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns `EmpName`, `DeptName`, and the total salary over the window - `DeptName`.
+
+**Total values with OVER() - defined window**  
+The `OVER` expressions in the following query defines the windows by partitioning the rowsets on EmpID, and DeptID respectively.
+The query returns EmpID, DeptID, and the average salary over each window - EmpID, and DeptID respectively.
 ```sql
 @result =
-    SELECT EmpName,
-           DeptName,
-           SUM(Salary) OVER(PARTITION BY DeptName) AS TotalSalaryByDept
-    FROM @employees;
+    SELECT DISTINCT EmpID, DeptID,
+           SUM(Sales) OVER(PARTITION BY EmpID) AS TotalSaleByEmployee,
+           SUM(Sales) OVER(PARTITION BY DeptID) AS TotalSaleByDepartment
+    FROM @sales;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/sum/exampleD.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example4.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
+<br />
 
-**E.    Sum of values over a defined window using OVER(), additional example.**  
-The [OVER](over-expression-u-sql.md) clause in the following query is `DeptName`.  The query returns all records, as well as the total salary for each `DeptName` and each employee's salary share of his/her total department's share.
+
+**Filtering Results of Aggregate Values**   
+The `HAVING` clause restricts the result set to those records with a `TotalSalesByEmployee` value greater than 500.
 ```sql
 @result =
-    SELECT *,
-           SUM(Salary) OVER(PARTITION BY DeptName) AS TotalSalaryByDept,
-           ((decimal) Salary / SUM(Salary) OVER(PARTITION BY DeptName)) * 100 AS ShareOfTotalSalaryByDept
-    FROM @employees;
+    SELECT EmpID,
+           SUM(Sales) AS TotalSalesByEmployee
+    FROM @sales
+    GROUP BY EmpID
+    HAVING SUM(Sales) > 500;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/sum/exampleE.csv"
-USING Outputters.Csv();
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example5A.txt"
+USING Outputters.Tsv(outputHeader: true);
 ```
+<br />
 
-### See Also 
+
+**Alternative, less efficient method using OVER()**   
+Windowed functions (those with an `OVER` clause) are only allowed in a query that has no row grouping of any kind.
+```sql
+@result =
+    SELECT DISTINCT s.EmpID, sa.TotalSalesByEmployee
+    FROM @sales AS s
+    JOIN (SELECT EmpID, SUM(Sales) OVER(PARTITION BY EmpID) AS TotalSalesByEmployee FROM @sales) AS sa
+    ON s.EmpID == sa.EmpID
+    WHERE sa.TotalSalesByEmployee > 500;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example5B.txt"
+USING Outputters.Tsv(outputHeader: true);
+```
+<br />
+
+
+**Total values using OVER() in a calculated value**   
+The `OVER` expression in the following query defines the window by partitioning the rowset on EmpID.    
+The query returns each EmpID's monthly sales, the total sales for each EmpID and the difference between current sales and total sales.
+```sql
+@result =
+    SELECT EmpID, 
+           SaleDate.ToShortDateString() AS SaleDate,
+           Sales, 
+           SUM(Sales) OVER(PARTITION BY EmpID) AS TotalSalesByEmpID,
+           ((decimal)Sales / SUM(Sales) OVER(PARTITION BY EmpID)) * 100 AS PercentOfTotalSalesByEmpID
+    FROM @sales;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example6.csv"
+USING Outputters.Csv(outputHeader: true);
+```
+<br />
+
+
+**Total values using OVER() and the ROWS clause**   
+The `OVER` expression in the following query defines the window by partitioning the rowset on EmpID.   
+The `ROWS` clause further limits the rows in the partition by specifying fixed number of rows preceding or following the current row.
+```sql
+@result =
+    SELECT EmpID,
+           SaleDate.ToShortDateString() AS SaleDate,
+           Sales AS currentSales,
+           SUM(Sales) OVER(PARTITION BY EmpID ORDER BY SaleDate ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS threeMonthTotal_2PriorAndCurrent_ByEmpID,
+           SUM(Sales) OVER(PARTITION BY EmpID ORDER BY SaleDate ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS threeMonthTotal_1Prior_Current_1Following_ByEmpID,
+           SUM(Sales) OVER(ORDER BY EmpID, SaleDate ROWS UNBOUNDED PRECEDING) AS rollingTotal_allSales,
+           SUM(Sales) OVER(PARTITION BY EmpID ORDER BY SaleDate ROWS UNBOUNDED PRECEDING) AS rollingTotal_ByEmpID        
+    FROM @sales;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example7.csv"
+ORDER BY EmpID, SaleDate
+USING Outputters.Csv(outputHeader: true);
+```
+<br />
+
+
+**Total values using OVER() with a multi-column partition**   
+The `OVER` expression in the following query defines the window by partitioning the rowset on both DeptID and ProductID.    
+Query returns the total sales for each DeptID and ProductID.
+```sql
+@result =
+    SELECT  DISTINCT DeptID, ProductID,
+            SUM(Sales) OVER(PARTITION BY DeptID, ProductID) AS TotalSalesByDeptIDAndProductID
+    FROM @sales;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example8A.txt"
+USING Outputters.Tsv(outputHeader: true);
+```
+<br />
+
+
+**Same as above without OVER() and using GROUP BY**  
+```sql
+@result =
+    SELECT DeptID, ProductID,
+           SUM(Sales) AS TotalSalesByDeptIDAndProductID
+    FROM @sales
+    GROUP BY DeptID, ProductID;
+
+OUTPUT @result
+TO "/ReferenceGuide/BuiltInFunctions/AggFunctions/SUM/example8B.txt"
+USING Outputters.Tsv(outputHeader: true);
+```
+<br />
+
+
+## See Also 
 * [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)  
 * [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md)
 * [OVER Expression (U-SQL)](over-expression-u-sql.md) 
