@@ -35,7 +35,8 @@ You can then apply different metrics to identify potential anomalies. For exampl
 
 Support vector machines (SVMs) are supervised learning models that analyze data and recognize patterns, and that can be used for both classification and regression tasks.
 
-Typically, the SVM algorithm is given a set of training examples labeled as belonging to one of two classes. The SVM algorithm represents the examples as points in space, mapped so that the examples of the separate categories are divided by a clear gap that is as wide as possible. New examples are then mapped into that same space and predicted to belong to one category or another, based on which side of the gap they fall on.
+Typically, the SVM algorithm is given a set of training examples labeled as belonging to one of two classes. 
+An SVM model is based on dividing the training sample points into separate categories by as wide a gap as possible, while penalizing training samples that fall on the wrong side of the gap. The SVM model then makes predictions by assigning points to one side of the gap or the other.
 
 Sometimes oversampling is used to replicate the existing samples so that you can create a two-class model, but it is impossible to predict all the new patterns of fraud or system faults from limited examples. Moreover, collection of even limited examples can be expensive.
 
