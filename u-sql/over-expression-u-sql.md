@@ -253,7 +253,7 @@ USING Outputters.Tsv();
 
 
 **Over_Partition_By_Clause and Order_By_Clause**   
-The window is defined by the `SaleDate`, thus the first `Sales` figure from each window is returned - orderd by EmpID DESC.
+The window is defined by the `SaleDate`, thus the first `Sales` figure from each window is returned - orderd by `EmpID DESC`.
 ```sql
 @result = 
     SELECT *, FIRST_VALUE(Sales) OVER (PARTITION BY SaleDate ORDER BY EmpID DESC) AS firstSale_partitionBySaleDate_orderByEmpID
@@ -397,7 +397,7 @@ USING Outputters.Csv(outputHeader: true);
 
 **UNBOUNDED FOLLOWING equivalent**   
 U-SQL does currently not support` UNBOUNDED FOLLOWING`. One can achieve the same result by inverting the ordering and use `UNBOUNDED PRECEDING` instead.
-Here, the SaleDate ordering is inverted in the [OVER](over-expression-u-sql.md#OVR) clause and then reverted in the [OUTPUT](output-statement-u-sql.md) statement.
+Here, the `SaleDate` ordering is inverted in the [OVER](over-expression-u-sql.md#OVR) clause and then reverted in the [OUTPUT](output-statement-u-sql.md) statement.
 ```sql
 @result =
 SELECT EmpID, SaleDate.ToShortDateString() AS SaleDate, Sales, 
