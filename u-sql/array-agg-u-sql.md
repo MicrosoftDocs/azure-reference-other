@@ -13,33 +13,35 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # ARRAY_AGG (U-SQL)
-The ARRAY_AGG aggregator creates a new [SQL.ARRAY](complex-built-in-u-sql-types.md) value per group that will contain the values of group as its items.  ARRAY_AGG is not preserving order of values inside a group. If an array needs to be ordered, a LINQ OrderBy can be used.  ARRAY_AGG and [EXPLODE](explode-u-sql.md) are conceptually inverse operations. 
+The `ARRAY_AGG` aggregator creates a new [SQL.ARRAY](complex-built-in-u-sql-types.md) value per group that will contain the values of group as its items.  `ARRAY_AGG` is not preserving order of values inside a group. If an array needs to be ordered, a [LINQ OrderBy](orderby-method-syntax-in-u-sql.md) can be used.  `ARRAY_AGG` and [EXPLODE](explode-u-sql.md) are conceptually inverse operations. 
 
 The identity value is null. 
 
-<table><th align="left">Syntax</th><tr><td><pre>
-ARRAY_AGG_Expression :=                                                                                  
-      'ARRAY_AGG' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
-</pre></td></tr></table>
+## Syntax
+<pre>
+ARRAY_AGG_Expression :=
+    'ARRAY_AGG' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#exp">expression</a> ')'.
+</pre>
 
-### Semantics of Syntax Elements 
+## Semantics of Syntax Elements 
 * <a name="dist"></a>**`DISTINCT`**   
 Optionally allows to de-duplicate the values returned by the expression inside the group before aggregation.  
 
 * <a name="exp"></a>**`expression`**  
 The C# expression (including column references) that gets aggregated. The type of the expression has to be a [built-in U-SQL type](built-in-u-sql-types.md), including [SQL.MAP](complex-built-in-u-sql-types.md) or [SQL.ARRAY](complex-built-in-u-sql-types.md). 
 
-### Return Type 
-[SQL.ARRAY](complex-built-in-u-sql-types.md)\<T\> where T is the type of the input expression. 
+## Return Type 
+[SQL.ARRAY\<T>](complex-built-in-u-sql-types.md) where `T` is the type of the input expression. 
 
-### Usage in Windowing Expression
+## Usage in Windowing Expression
 This aggregator cannot be used in a [windowing expression](over-expression-u-sql.md). 
 
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+<br />
  
 **A. ARRAY_AGG**   
 This example aggregates the phone numbers as one group per employee.
@@ -83,9 +85,10 @@ This example aggregates the phone numbers as one group per employee.
     GROUP BY EmpName;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Aggregate/array_agg/exampleA.csv"
+TO "/ReferenceGuide/Aggregate/array_agg/exampleA.csv"
 USING Outputters.Csv();
 ```
+<br />
 
 **B. EXPLODE - bonus example**  
 This example does not use `ARRAY_AGG`; however, it illustrates how to reverse the outcome from the above example using [EXPLODE](explode-u-sql.md).
@@ -103,9 +106,10 @@ This example does not use `ARRAY_AGG`; however, it illustrates how to reverse th
     EXPLODE(PhoneNumbersArray) AS r(PhoneNumber);
 
     OUTPUT @exploded
-    TO "/Output/ReferenceGuide/Aggregate/array_agg/exampleB.csv"
+    TO "/ReferenceGuide/Aggregate/array_agg/exampleB.csv"
     USING Outputters.Csv();
 ```
+<br />
 
 **C. ARRAY_AGG - additional example**   
 This example deals with a common many-to-many relationship. Here, a film can have more than one producer and you would like to have all producers listed in one record. The following query will aggregate all producers.   
@@ -160,11 +164,11 @@ This example provides an alternative solution to [Using User Defined Aggregator 
     GROUP BY f.Title;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Aggregate/array_agg/exampleC.csv"
+TO "/ReferenceGuide/Aggregate/array_agg/exampleC.csv"
 USING Outputters.Csv();
 ```
 
-### See Also 
+## See Also 
 * [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)   
 * [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md) 
 * [EXPLODE (U-SQL)](explode-u-sql.md) 
