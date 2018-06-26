@@ -37,6 +37,7 @@ U-SQL provides the following built-in analytic functions:
 |[PERCENTILE_CONT](percentile-cont-u-sql.md)|Calculates a percentile based on a continuous distribution of the values in the window.|
 |[PERCENTILE_DISC](percentile-disc-u-sql.md)|Computes a specific percentile for sorted values in the specified window based on a discrete distribution of the column values.|
 |[PERCENT_RANK](percent-rank-u-sql.md)|Calculates the relative rank of a row within a group of rows specified by the windowing expression.|
+<br />
 
 ## See Also 
 * [OVER Expression (U-SQL)](over-expression-u-sql.md) 
