@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # U-SQL Concepts
 U-SQL combines some familiar concepts from a variety of languages: It is a *declarative* language like SQL, it follows a *dataflow-like composition of statements and expressions* like Pig and Cascading*,* and provides simple ways to *extend the language* with [user-defined operators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-objects--udo), [user-defined aggregators](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-aggregates--udagg) and [user-defined functions](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#user-defined-functions---udf) using C#, and provides a SQL database-like metadata object model to manage, discover and secure structured data and user-code.  
 
@@ -23,21 +24,18 @@ Currently, Azure Data Lake Analytics provides U-SQL for batch processing.  There
     2.  Stored locations can be U-SQL tables that are stored in a schematized format    
     3.  Or can be tables provided by other data sources such as an Azure SQL database.     
     
-
-2.  Transform the rowset(s)    
-    1.  Several transformations over the rowsets can be composed in a data flow format    
-    
-    
+2.  Several transformations over the rowsets can be composed in a data flow format 
+        
 3.  Store the transformed rowset data    
     1.  Store it in a file with an [OUTPUT](output-statement-u-sql.md) statement, or    
     2.  Store it in a U-SQL table with an [INSERT](insert-u-sql.md) statement    
 
-In addition, U-SQL also supports data definition statements such as [CREATE TABLE](create-table-u-sql-creating-a-table-with-schema.md) to create metadata artifacts either in separate scripts or sometimes even in combination with the transformation scripts.  
+In addition, U-SQL also supports [data definition statements](data-definition-language-ddl-statements-u-sql.md) such as [CREATE TABLE](create-table-u-sql-creating-a-table-with-schema.md) to create metadata artifacts either in separate scripts or sometimes even in combination with the transformation scripts.  
   
 U-SQL Scripts can be submitted in a variety of ways. In particular you can submit them directly from within the [Azure Data Lake Tools for Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-data-lake-tools-get-started/), from the [Azure Portal](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-get-started-portal) or programmatically via the [Azure Data Lake SDK](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-get-started-net-sdk/) job submission API or the [Azure Powershell](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-get-started-powershell) extension's job submission command.  
   
 Please explore the following concepts introduced in this section:  
-* [U-SQL Script Structure](u-sql-scripts.md)  
+* [U-SQL Scripts](u-sql-scripts.md)  
 * [Expressions](expressions-u-sql.md)
 * [Files and File Sets as Inputs and Outputs](files-and-file-sets-as-inputs-and-outputs-u-sql.md) 
 * [Identifiers](identifiers-u-sql.md)  
