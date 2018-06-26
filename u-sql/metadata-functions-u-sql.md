@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Metadata Functions (U-SQL)
 The following scalar function(s) return information about the database and database objects:
 
@@ -23,5 +24,6 @@ The following scalar function(s) return information about the database and datab
 
 These intrinsic function(s) are currently always evaluated at compile time (and thus considered constant-foldable).
 
-### See Also
+## See Also
 * [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)
+* [Control-of-Flow Language (U-SQL)](control-of-flow-language-u-sql.md)
