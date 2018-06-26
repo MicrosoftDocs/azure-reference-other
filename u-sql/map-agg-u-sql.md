@@ -13,23 +13,25 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# MAP_AGG (U-SQL)
-The MAP_AGG aggregator takes a key, value pair and creates a [SQL.MAP](complex-built-in-u-sql-types.md) for all the key/value pairs in the group. 
 
-MAP_AGG and [EXPLODE](explode-u-sql.md) are conceptually inverse operations. 
+# MAP_AGG (U-SQL)
+The `MAP_AGG` aggregator takes a key, value pair and creates a [SQL.MAP](complex-built-in-u-sql-types.md) for all the key/value pairs in the group. 
+
+`MAP_AGG` and [EXPLODE](explode-u-sql.md) are conceptually inverse operations. 
 
 The identity value is null. 
 
-<table><th align="left">Syntax</th><tr><td><pre>
-MAP_AGG_Expression :=                                                                                    
-     'MAP_AGG' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#k_exp">Key_Expression</a>, <a href="#v_exp">Value_Expression</a> ')'.<br /> 
+## Syntax
+<pre>
+MAP_AGG_Expression := 
+    'MAP_AGG' '(' ['<a href="#dist">DISTINCT</a>'] <a href="#k_exp">Key_Expression</a>, <a href="#v_exp">Value_Expression</a> ')'.<br /> 
 <a href="#k_exp">Key_Expression</a> := 
-     expression.<br />
+    expression.<br />
 <a href="#v_exp">Value_Expression</a> := 
-     expression.
-</pre></td></tr></table>
+    expression.
+</pre>
 
-### Semantics of Syntax Elements 
+## Semantics of Syntax Elements 
 * <a name="dist"></a>**`DISTINCT`**    
 Optionally allows to de-duplicate the values returned by the expression inside the group before aggregation.  
 
@@ -39,15 +41,16 @@ The C# expression (including column references) that will define the keys. Its t
 * <a name="v_exp"></a>**`Value_Expression`**     
 The C# expression (including column references) that will define the values. Its type has to be a type that is acceptable as a [SQL.MAP](complex-built-in-u-sql-types.md) value or an error is raised. 
 
-### Return Type 
-[SQL.MAP](complex-built-in-u-sql-types.md)\<K,V\> where K is the type of the key expression and V is the type of the value expression. 
+## Return Type 
+[SQL.MAP\<K,V\>](complex-built-in-u-sql-types.md) where `K` is the type of the key expression and `V` is the type of the value expression. 
 
-### Usage in Windowing Expression 
+## Usage in Windowing Expression 
 This aggregator cannot be used in a [windowing expression](over-expression-u-sql.md). 
 
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+
 
 **MAP_AGG**   
 This example takes a key, value pair (`PhoneType` and `PhoneNumber`) and creates a [SQL.MAP](complex-built-in-u-sql-types.md) for all the key/value pairs in the group, `EmpName`.   
@@ -92,9 +95,10 @@ This example provides an alternative solution to [Using User Defined Aggregator 
     GROUP BY EmpName;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Aggregate/map_agg/exampleA.csv"
+TO "/ReferenceGuide/Aggregate/map_agg/exampleA.csv"
 USING Outputters.Csv();      
 ```
+<br />
 
 **EXPLODE - Bonus Example**   
 This example does not use `MAP_AGG`; however, it illustrates how to reverse the outcome from the above example using [EXPLODE](explode-u-sql.md).
@@ -114,9 +118,10 @@ This example does not use `MAP_AGG`; however, it illustrates how to reverse the 
     EXPLODE(PhoneNumberMap) AS r(key, value);
 
 OUTPUT @exploded
-TO "/Output/ReferenceGuide/Aggregate/map_agg/exampleB.csv"
+TO "/ReferenceGuide/Aggregate/map_agg/exampleB.csv"
 USING Outputters.Csv();
 ```
+<br />
 
 **MAP_AGG - Additional Example**  
 The query uses `MAP_AGG` to pivot the sales figures from the `@storeSales` rowset variable.
@@ -152,9 +157,10 @@ The query uses `MAP_AGG` to pivot the sales figures from the `@storeSales` rowse
     FROM @salesPrePivot;
 
 OUTPUT @results
-TO "/Output/ReferenceGuide/Aggregate/map_agg/exampleC.csv"
+TO "/ReferenceGuide/Aggregate/map_agg/exampleC.csv"
 USING Outputters.Csv();
 ```
+<br />
 
 **PIVOT and MAP_AGG**<a name="pivot_basic"></a>     
 The examples below repro the first two examples from [Using PIVOT and UNPIVOT](https://msdn.microsoft.com/library/ms177410.aspx) in SQL Server.  To execute the example with the same data set, simply bcp or copy and paste `DaysToManufacture` and `StandardCost` from AdventureWorks2014.Production.Product to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).  An alternative solution using PIVOT can be viewed at [Basic PIVOT Example](pivot-and-unpivot-u-sql.md#pivot_basic).
@@ -172,7 +178,7 @@ The examples below repro the first two examples from [Using PIVOT and UNPIVOT](h
     GROUP BY DaysToManufacture;
 
 OUTPUT @results
-TO "/Output/ReferenceGuide/Aggregate/map_agg/pivot/exampleA1.csv"
+TO "/ReferenceGuide/Aggregate/map_agg/pivot/exampleA1.csv"
 USING Outputters.Csv();
 
 
@@ -193,9 +199,10 @@ USING Outputters.Csv();
     FROM @prePivot;
 
 OUTPUT @resultsPivot
-TO "/Output/ReferenceGuide/Aggregate/map_agg/pivot/exampleA2.csv"
+TO "/ReferenceGuide/Aggregate/map_agg/pivot/exampleA2.csv"
 USING Outputters.Csv(outputHeader: true);
 ```
+<br />
 
 **PIVOT and MAP_AGG - Additional Example**<a name="pivot_complex"></a>    
 The example below repros the third example, "Complex PIVOT Example", from [Using PIVOT and UNPIVOT](https://msdn.microsoft.com/library/ms177410.aspx).  To execute the example with the same data set, simply bcp or copy and paste `PurchaseOrderID`, `EmployeeID`, and `VendorID` from AdventureWorks2014.Purchasing.PurchaseOrderHeader to a local text file.  The same data set appears in at least [AdventureWorks2016](https://www.microsoft.com/download/details.aspx?id=49502).  An alternative solution using PIVOT can be viewed at [Complex PIVOT Example](pivot-and-unpivot-u-sql.md#pivot_complex).
@@ -232,11 +239,11 @@ The example below repros the third example, "Complex PIVOT Example", from [Using
     FROM @prePivot;
 
 OUTPUT @resultsPivot
-TO "/Output/ReferenceGuide/Aggregate/map_agg/pivot/exampleB1.csv"
+TO "/ReferenceGuide/Aggregate/map_agg/pivot/exampleB1.csv"
 USING Outputters.Csv(outputHeader: true);
 ```
 
-### See Also 
+## See Also 
 * [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)  
 * [GROUP BY and HAVING Clauses (U-SQL)](group-by-and-having-clauses-u-sql.md) 
 * [EXPLODE (U-SQL)](explode-u-sql.md)
