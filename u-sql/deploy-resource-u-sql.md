@@ -13,30 +13,31 @@ author: "edmacauley"
 ms.author: "edmaca"
 manager: "jhubbard"
 ---
+
 # DEPLOY RESOURCE (U-SQL)
 The `RESOURCE` statement identifies the data to be used as a resource. 
 
-<table><th>Syntax</th><tr><td><pre>
-Deploy_Resource_Statement :=                                                                             
-      'DEPLOY' 'RESOURCE' <a href="input-files-u-sql.md#input-file-path-uris">file_path_URI</a> { ',' <a href="input-files-u-sql.md#input-file-path-uris">file_path_URI</a>}.  
-</pre></td></tr></table>
+## Syntax
+<pre>
+Deploy_Resource_Statement :=
+    'DEPLOY' 'RESOURCE' <a href="input-files-u-sql.md#input-file-path-uris">file_path_URI</a> { ',' <a href="input-files-u-sql.md#input-file-path-uris">file_path_URI</a>}.  
+</pre>
 
 ## Using a Resource   
-Files have to be in ADLS or WASB. Files are deployed to vertex and are accessible from any custom code.  The file paths of deployed resources have to be unique among all deployed resources in a script and the additional files included when [referencing assemblies](reference-assembly-u-sql.md) as they are put into a single directory during compilation and execution. Ensure that all resources have unique file names or in case of identical files use only one copy.  Otherwise, you will receive the error message `E_CSC_USER_SAMERESOURCEWITHDIFFERENTPATH: Script contains <N> different resources with identical file name.`
-
+Files have to be in Azure Data Lake Storage or Windows Azure Storage Blob. Files are deployed to vertex and are accessible from any custom code.  The file paths of deployed resources have to be unique among all deployed resources in a script and the additional files included when [referencing assemblies](reference-assembly-u-sql.md) as they are put into a single directory during compilation and execution. Ensure that all resources have unique file names or in case of identical files use only one copy.  Otherwise, you will receive the error message `E_CSC_USER_SAMERESOURCEWITHDIFFERENTPATH: Script contains <N> different resources with identical file name.`
 
 
 ## Size Limits
-Single resource file limit is 400MB.  
-Overall limit for deployes resource files is 3GB.  
+- Single resource file limit is 400MB.  
+- Overall limit for deployes resource files is 3GB.  
 
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - For simplicity, the example(s) with user-defined code make use of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) for assembly management.  The main advantage of [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) is that the tooling will register the assembly file and add the REFERENCE ASSEMBLY statement automatically.  To use Assembly registration instead of Code-Behind, see [Using Assemblies: Code-Behind vs. Assembly Registration Walkthrough](extending-u-sql-expressions-with-user-code.md#usingAssemblies).
 
 **Basic Example**
-```
+```sql
 // a small file containing text
 DEPLOY RESOURCE "/Samples/Data/helloworld.txt";
 
@@ -57,6 +58,7 @@ OUTPUT @departments
 TO "/ReferenceGuide/Concepts/Resource/Test.txt"
 USING Outputters.Tsv();
 ```
+
 
 --------------------------------------------------
 
@@ -91,7 +93,7 @@ namespace ReferenceGuide
 
 **Using RESOURCE with a Processor**  
 Using [Code-Behind](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide#using-code-behind-1) from previous section, **above**.  
-```U-SQL
+```sql
 // a small file containing text
 DEPLOY RESOURCE "/Samples/Data/helloworld.txt";
 
@@ -123,8 +125,7 @@ USING Outputters.Tsv();
 * [Using Custom Python Libraries with U-SQL](https://blogs.msdn.microsoft.com/azuredatalake/2017/03/10/using-custom-python-libraries-with-u-sql/)
 * [PredictLinearModel](https://github.com/Azure/usql/tree/master/Examples/R_Extensions/PredictLinearModel)
 
-### See Also
+## See Also
 * [U-SQL Assemblies](u-sql-assemblies.md)
 * [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
 * [Input Files (U-SQL)](input-files-u-sql.md) 
-
