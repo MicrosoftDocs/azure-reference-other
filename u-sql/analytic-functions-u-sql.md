@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Analytic Functions (U-SQL)
 U-SQL supports a set of SQL-based analytic functions that compute an aggregate value based on a group of rows. However, unlike [aggregate functions](aggregate-functions-u-sql.md), they can return multiple rows for each group. You can use analytic functions to compute moving averages, running totals, percentages or top-N results within a group.  
 
@@ -25,19 +26,18 @@ Some of the analytics functions are type-polymorphic, meaning that they can oper
 Analytics functions cannot be nested. 
 
 U-SQL provides the following built-in analytic functions: 
-<table><th align="left">Syntax</th><tr><td><pre>
-Built_In_Analytic :=                                                                                   
-      <a href="cume-dist-u-sql.md">'CUME_DIST'</a>
-|     <a href="first-value-u-sql.md">'FIRST_VALUE'</a> 
-|     <a href="lag-u-sql.md">'LAG'</a> 
-|     <a href="last-value-u-sql.md">'LAST_VALUE'</a> 
-|     <a href="lead-u-sql.md">'LEAD'</a> 
-|     <a href="percentile-cont-u-sql.md">'PERCENTILE_CONT'</a> 
-|     <a href="percentile-disc-u-sql.md">'PERCENTILE_DISC'</a> 
-|     <a href="percent-rank-u-sql.md">'PERCENT_RANK'</a>.</pre></td></tr></table>
 
-### See Also 
+|Analytic Function|Description|
+|------|----|
+|[CUME_DIST](cume-dist-u-sql.md)|Calculates the cumulative distribution of a value in a group of values.|
+|[FIRST_VALUE](first-value-u-sql.md)|Returns the first value in an ordered set of values provided by the windowing expression. |
+|[LAG](lag-u-sql.md)|Provides access to a row at a given physical offset that comes before the current row.|
+|[LAST_VALUE](last-value-u-sql.md)|Returns the last value in an ordered set of values provided by the windowing expression. |
+|[LEAD](lead-u-sql.md)|Provides access to a row at a given physical offset that follows the current row. |
+|[PERCENTILE_CONT](percentile-cont-u-sql.md)|Calculates a percentile based on a continuous distribution of the values in the window.|
+|[PERCENTILE_DISC](percentile-disc-u-sql.md)|Computes a specific percentile for sorted values in the specified window based on a discrete distribution of the column values.|
+|[PERCENT_RANK](percent-rank-u-sql.md)|Calculates the relative rank of a row within a group of rows specified by the windowing expression.|
+
+## See Also 
 * [OVER Expression (U-SQL)](over-expression-u-sql.md) 
-
-
-
+* [Aggregate Functions (U-SQL)](aggregate-functions-u-sql.md)
