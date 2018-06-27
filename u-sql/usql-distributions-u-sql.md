@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.distributions (U-SQL)
 Contains one row per distribution scheme for the tables in the schemas of the current database context.
 
@@ -24,8 +25,9 @@ distribution_type     |int         |2 = Hash<br><br> 5 = Range<br><br> 6 = Round
 distribution_type_desc     |string         |HASH<br><br> RANGE<br><br> ROUND ROBIN<br><br> DIRECT HASH         
 distribution_count     |int         |The specified count of distribution buckets if specified, null or 0 otherwise  
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+
 
 **Query the usql.distributions view**
 ```sql
@@ -35,8 +37,10 @@ OUTPUT usql.distributions
 TO "/ReferenceGuide/CatalogViews/distributions.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
-**Query the usql.distributions view with usql.objects view**
+
+**Query the usql.distributions view with usql.objects view**  
 ```sql
 @distributions =
     SELECT o.name AS objectName,
@@ -49,8 +53,9 @@ OUTPUT @objects
 TO "/ReferenceGuide/CatalogViews/distributions_objects.txt"
 USING Outputters.Tsv(outputHeader:true);  
 ```
+<br />
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [U-SQL Table Distributions ](create-table-u-sql-creating-a-table-with-schema.md#dis_sch)
 * [usql.distribution_columns (U-SQL)](usql-distribution-columns-u-sql.md)
