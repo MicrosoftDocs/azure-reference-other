@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Ranking Functions (U-SQL)
 U-SQL provides some built-in SQL-based ranking functions that return a ranking value for each row in a partition. Depending on the function that is used, some rows might receive the same value as other rows. Ranking functions are nondeterministic. 
 
@@ -22,7 +23,7 @@ In U-SQL, ranking functions can only be used in the following syntactic contexts
 
 Ranking functions cannot be nested. 
 
-U-SQL provides the following built-in ranking functions (follow the links for more information): 
+U-SQL provides the following built-in ranking functions: 
 
 |Ranking Function|Description|
 |------|----|
@@ -30,13 +31,8 @@ U-SQL provides the following built-in ranking functions (follow the links for mo
 |[NTILE](ntile-u-sql.md)|Returns the number of the group to which the row belongs from among the groups that the windowing function has distributed the rows using an ordered partition.|
 |[RANK](rank-u-sql.md) |Returns the rank of each row within the window. |
 |[ROW_NUMBER ](row-number-u-sql.md) | Returns the sequential number of a row within a window.|
- 
-### See Also 
+<br />
+
+## See Also 
 * [Built-in Functions (U-SQL)](built-in-functions-u-sql.md)  
 * [OVER Expression (U-SQL)](over-expression-u-sql.md)  
-
-
-
-
-
-
