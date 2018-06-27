@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Built-in U-SQL System Objects and Extensions
 U-SQL offers a set of built-in system objects and allows customers to install some extension libraries that provide additional capabilities to U-SQL.
 
@@ -23,22 +24,20 @@ U-SQL provides a set of built-in catalog views that describe the content of the 
 See [Catalog Views (U-SQL)](catalog-views-u-sql.md) for a list of catalog views.
 
 ## U-SQL Extensions
-
 The Azure Data Lake Analytics service offers the ability to install a set of extension libraries that enables customers to perform additional processing beyond the core U-SQL language.
 
 The extensions are installed from the [Azure Data Lake Analytics Portal](http://portal.azure.com), and include the following capabilities:
-
 -	[Scaling out Python scripts with U-SQL](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-python-extensions)
 -	[Scaling out R scripts with U-SQL](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-r-extensions) 
 -	[Cognitive Capabilities in U-SQL](cognitive-capabilities-in-u-sql.md) 
 
-
-
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
 * [Registering Cognitive Extensions in U-SQL](cognitive-capabilities-in-u-sql.md#registeringExtensions)
 * [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
 * [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/)
+* [U-SQL: Python Hello World](https://azure.microsoft.com/resources/samples/usql-python-hello-world/)
+* [Develop U-SQL with Python, R, and C# for Azure Data Lake Analytics in Visual Studio Code](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-develop-with-python-r-csharp-in-vscode)
 
