@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.columns (U-SQL)
 Returns a row for each column in tables and table types in the schemas of the current database context.
 
@@ -26,10 +27,11 @@ type_id_guid     |Guid         |Column type's identifier.<br><br>  To return the
 max_length     |int?         |Column's maximum length in bytes.<br><br>  -1 = Variable sized column such as columns of type string or byte[] or of a [complex type](complex-built-in-u-sql-types.md). The value `null` is reserved for future use.         
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
-**Query the usql.columns view**
+
+**Query the usql.columns view**  
 ```sql
 USE TestReferenceDB;
 
@@ -37,8 +39,9 @@ OUTPUT usql.columns
 TO "/ReferenceGuide/CatalogViews/columns.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
-**Query the usql.columns view with other catalog views**
+**Query the usql.columns view with other catalog views**  
 ```sql
 @columns =
     SELECT "object" AS object_type,
@@ -62,8 +65,9 @@ TO "/ReferenceGuide/CatalogViews/columns_objects_types.txt"
 ORDER BY object_type, objectName, name
 USING Outputters.Tsv(outputHeader:true);  
 ```
+<br />
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
