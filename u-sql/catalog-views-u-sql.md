@@ -13,18 +13,17 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Catalog Views (U-SQL)
 Catalog views return information that is used by U-SQL. We recommend that you use catalog views because they are the most general interface to the catalog metadata and provide the most efficient way to obtain, transform, and present customized forms of this information.
 
 Catalog views will not contain objects that have been created as part of the same script and will only show the objects that the user submitting the query has the rights to see.
 
-The U-SQL catalog views are currently not available in the local run environment.
-
-Future releases will add additional catalog views.
+The U-SQL catalog views are currently not available in the local run environment.  Future releases will add additional catalog views.
 
 The following catalog views are currently available:  
 
-|<a>Built-in catalog views</a>|  
+||  
 |--|
 | [usql.columns](usql-columns-u-sql.md)     |
 | [usql.partition_parameters](usql-partition-parameters-u-sql.md)     |    
@@ -45,8 +44,8 @@ The following catalog views are currently available:
 | [usql.partitions](usql-partitions-u-sql.md)|
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
 
 **Query the usql.databases view**
@@ -57,6 +56,7 @@ OUTPUT usql.databases
 TO "/ReferenceGuide/CatalogViews/databases.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Querying multiple catalog views**  
 The following script returns the tables with their fully qualified, quoted names as well as their column information (name and type and maximal possible field size) ordered alphabetically by table and in order of their column positions:
@@ -84,9 +84,9 @@ The following script returns the tables with their fully qualified, quoted names
  ORDER BY table_name, col_pos
  USING Outputters.Csv(outputHeader : true);
 ```
+<br />
 
-
-### See Also
+## See Also
 * [U-SQL Concepts ](u-sql-concepts.md)   
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
