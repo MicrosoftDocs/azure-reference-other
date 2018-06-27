@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # U-SQL Built-in Outputters
 U-SQL provides a built-in outputter class called `Outputters` that provides the following three built-in outputters to transform a rowset into a [file or set of files](output-to-files-u-sql.md):    
 -   [`Outputters.Text()`](outputters-text.md): Provides outputting a rowset into a variety of delimited text formats.    
@@ -27,7 +28,7 @@ Technically speaking these are factory methods that generate an instance of the 
  
 If the [OUTPUT](output-statement-u-sql.md) statement specifies a file set pattern, then the outputter [parameters](outputter-parameters-u-sql.md) will be applied to all the selected files equally. If different files require different parameter values, then different [OUTPUT](output-statement-u-sql.md)  statements need to be used.   
   
-### See Also 
+## See Also 
 * [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md)
 * [Outputters.Text()](outputters-text.md) 
 * [Outputters.Csv()](outputters-csv.md) 
