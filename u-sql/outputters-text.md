@@ -13,13 +13,16 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Outputters.Text()
-### Outputting textual row-oriented files    
-The Text() outputter supports a variety of text file formats that all follow a row/column format. It provides a set of delimiters to identify the row and column boundaries and several other parameters to transform the rowset values into the text file.  See [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md) for supported parameters and their defaults values.
+
+## Outputting textual row-oriented files    
+The `Text()` outputter supports a variety of text file formats that all follow a row/column format. It provides a set of delimiters to identify the row and column boundaries and several other parameters to transform the rowset values into the text file.  See [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md) for supported parameters and their defaults values.
   
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+
 
 **Basic Syntax**   
 The examples below show the basic syntax for each parameter using the Text() outputter.  Compare the output against the dataset as well as against the other created data files.
@@ -35,22 +38,22 @@ The examples below show the basic syntax for each parameter using the Text() out
         ((char?)null,     14, "Jennie", 100, (int?)null,  new DateTime(2000,02,12),  "cell:(5) 555-3392,office:(5) 555-7293")
         ) AS T(character, EmpID, EmpName, DeptID, Salary, StartDate, PhoneNumbers);
         
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text.txt" USING Outputters.Text();
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_outputHeader.txt" USING Outputters.Text(outputHeader: true);
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_charFormat.txt" USING Outputters.Text(charFormat: "string");
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_delimiter.txt" USING Outputters.Text(delimiter: '|');
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_dateTimeFormat.txt" USING Outputters.Text(dateTimeFormat: "D");
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_encoding.txt" USING Outputters.Text(encoding: Encoding.UTF32);
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_escapeCharacter.txt" USING Outputters.Text(escapeCharacter: ':');
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_nullEscape.txt" USING Outputters.Text(nullEscape: "null");
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_quoting.txt" USING Outputters.Text(quoting: false);
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_rowDelimiter.txt" USING Outputters.Text(rowDelimiter: "\u0003");
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_charFormat_nullEscape_escapeCharacter.txt" USING Outputters.Text(charFormat: "string", nullEscape:"NULL", escapeCharacter:'#');
-OUTPUT @sampleData TO "/Output/ReferenceGuide/BuiltIn/UDOs/Text_charFormat_encoding.txt" USING Outputters.Text(charFormat: "string", encoding:Encoding.Unicode);
-
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text.txt" USING Outputters.Text();
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_outputHeader.txt" USING Outputters.Text(outputHeader: true);
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_charFormat.txt" USING Outputters.Text(charFormat: "string");
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_delimiter.txt" USING Outputters.Text(delimiter: '|');
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_dateTimeFormat.txt" USING Outputters.Text(dateTimeFormat: "D");
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_encoding.txt" USING Outputters.Text(encoding: Encoding.UTF32);
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_escapeCharacter.txt" USING Outputters.Text(escapeCharacter: ':');
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_nullEscape.txt" USING Outputters.Text(nullEscape: "null");
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_quoting.txt" USING Outputters.Text(quoting: false);
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_rowDelimiter.txt" USING Outputters.Text(rowDelimiter: "\u0003");
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_charFormat_nullEscape_escapeCharacter.txt" USING Outputters.Text(charFormat: "string", nullEscape:"NULL", escapeCharacter:'#');
+OUTPUT @sampleData TO "/ReferenceGuide/BuiltIn/UDOs/Text_charFormat_encoding.txt" USING Outputters.Text(charFormat: "string", encoding:Encoding.Unicode);
 ```
+<br />
 
-### See Also
+## See Also
 * [Outputter Parameters (U-SQL)](outputter-parameters-u-sql.md)
 * [Outputters.Csv()](outputters-csv.md)
 * [Outputters.Tsv()](outputters-tsv.md)
