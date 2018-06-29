@@ -13,10 +13,11 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.index_columns (U-SQL)
 Contains one row per column for the indices of the schemas for the current database context.
 
-> [!NOTE]
+> [!NOTE]   
 > Note that some of the values documented below, such as the values for non-clustered indices, column-store indices, or included columns, are there for possible future use and are not currently used.
 
 
@@ -31,8 +32,9 @@ is_descending_key|bool|True = Index key column has a descending sort direction<b
 is_included_column|bool|True = Column is a non-key column added to the index as an included column<br><br> False = Column is not an included column
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+
 
 **Query the usql.index_columns view**
 ```sql
@@ -42,6 +44,7 @@ OUTPUT usql.index_columns
 TO "/ReferenceGuide/CatalogViews/index_columns.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query the usql.index_columns view with other catalog views**
 ```sql
@@ -64,7 +67,7 @@ TO "/ReferenceGuide/CatalogViews/index_columns_others.txt"
 USING Outputters.Tsv(outputHeader:true); 
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.indexes (U-SQL)](usql-indexes-u-sql.md) 
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
