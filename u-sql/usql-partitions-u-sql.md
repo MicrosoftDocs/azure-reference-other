@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.partitions (U-SQL)
 Contains one row per partition scheme for the partitioned tables in the schemas of the current database context.  The partitioned table must contain at least one record.
 
@@ -23,8 +24,8 @@ object_id_guid     |Guid         |Identifier of the object on which the partitio
 index_id     |int         | Identifier of the index for which the partition is specified.         
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
 
 **Query the usql.partitions view**
@@ -35,6 +36,7 @@ OUTPUT usql.partitions
 TO "/ReferenceGuide/CatalogViews/partitions.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query the usql.partitions view with other catalog views**
 ```sql
@@ -56,12 +58,10 @@ TO "/ReferenceGuide/CatalogViews/partitions_others.txt"
 USING Outputters.Tsv(outputHeader:true);   
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [U-SQL Table Partitions and Distributions](create-table-u-sql-creating-a-table-with-schema.md#partitioning)
 * [usql.partition_parameters (U-SQL)](usql-partition-parameters-u-sql.md)
 * [usql.partition_range_values (U-SQL)](usql-partition-range-values-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
