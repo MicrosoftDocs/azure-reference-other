@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.schemas (U-SQL)
 Contains a row for each database schema in the current database context.
 
@@ -22,8 +23,8 @@ schema_id_guid     |Guid         |Schema's unique identifier (unique within a da
 name     |string         |Schema name (unique within a database)         
 database_id_guid     |Guid         |Identifier of the database that contains the schema
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
 
  **Query the usql.schemas view**
@@ -34,6 +35,7 @@ OUTPUT usql.schemas
 TO "/ReferenceGuide/CatalogViews/schemas.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query the usql.schemas view with usql.databases view**
 ```sql
@@ -49,10 +51,7 @@ TO "/ReferenceGuide/CatalogViews/schemas_databases.txt"
 USING Outputters.Tsv(outputHeader:true);  
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
-
