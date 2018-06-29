@@ -13,16 +13,18 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # CREATE TABLE (U-SQL): Overview
 U-SQL provides the ability to create both [managed and external tables](u-sql-tables.md#man_ext_tabls) as well as creating partitioned managed tables. Please follow the links in the following grammar rule to the respective sections.  
 
-<table><th align="left">Syntax</th><tr><td><pre>
-Create_Table_Statement :=                                                                                
+## Syntax
+<pre>
+Create_Table_Statement := 
     <a href="create-table-u-sql-creating-managed-tables.md">Create_Managed_Table_Statement</a>   
 |   <a href="create-external-table-u-sql.md">Create_External_Table_Statement</a>.
-</pre></td></tr></table>
+</pre>
   
-### See Also
+## See Also
 * [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md) 
 * [TRUNCATE TABLE (U-SQL)](truncate-table-u-sql.md)
 * [DROP TABLE (U-SQL](drop-table-u-sql.md) 
