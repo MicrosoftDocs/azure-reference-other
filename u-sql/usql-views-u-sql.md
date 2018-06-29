@@ -13,7 +13,8 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# usql.views (U-SQL)
+
+# usql.views (U-SQL)  
 Returns a row for each view belonging to the schemas in the current database context. The schema inherits the columns from the [usql.objects](usql-objects-u-sql.md) view and adds the view specific properties to it.
 
 Column name  |Data type  |Description  
@@ -22,8 +23,9 @@ Column name  |Data type  |Description
 is_schema_inferred     |bool         |Indicates if the schema is inferred from the schema's query expression or has been explicitly provided         
 definition     |string         |View's definition (if available)         
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+
 
 
 **Query the usql.views view**
@@ -34,6 +36,7 @@ OUTPUT usql.views
 TO "/ReferenceGuide/CatalogViews/views.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query usql.views for multiple databases**
 ```sql
@@ -49,10 +52,8 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
 
