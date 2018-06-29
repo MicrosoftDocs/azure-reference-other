@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Securing Meta Data Objects
 The U-SQL’s metadata is secured in the context of the Azure subscription’s Active Directory and the Azure Data Lake’s default Azure Data Lake Storage account. The Active Directory provides the Security Principals such as users and security groups.  
   
@@ -29,3 +30,7 @@ You can use 4 part-names to access U-SQL catalog objects from a different Azure 
 2. The ADLS and ADLA accounts need to be in the same Azure region.
 3. You cannot create meta data objects in the other ADLA account's meta data object. Thus you cannot invoke any DDL statement with a 4-part name, nor invoking a U-SQL procedure.
 4. You cannot insert into a table of a different account.
+
+
+## See Also
+* [U-SQL Identifiers](u-sql-identifiers.md)
