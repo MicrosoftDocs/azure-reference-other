@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Data Definition Language (DDL) Statements (U-SQL)
 While one of U-SQL’s strength is to operate on unstructured data stored in files, it can also provide structured views over the unstructured data, manage structured data in tables and provides a general metadata catalog system to organize your structured data and custom code, secure it and make it discoverable.  
   
@@ -32,10 +33,10 @@ Note that names inside U-SQL functions are resolved based on the context during 
   
 All metadata objects except credentials are being created and managed with the following Data Definition Language (DDL) statements. 
   
-### DDL Statements (U-SQL)  
-  
-<table><th align="left">Syntax</th><tr><td><pre>
-DDL_Statement :=                                                                                         
+## DDL Statements (U-SQL)    
+### Syntax
+<pre>
+DDL_Statement := 
     <a href="u-sql-databases.md">DB_DDL_Statement</a>  
 |   <a href="u-sql-database-schemas.md">Schema_DDL_Statement</a>  
 |   <a href="u-sql-tables.md">Table_DDL_Statement</a>  
@@ -48,11 +49,11 @@ DDL_Statement :=
 |   <a href="u-sql-assemblies.md">Assembly_DDL_Statement</a>  
 |   <a href="u-sql-data-sources.md">Datasource_DDL_Statement</a>  
 |   <a href="user-defined-u-sql-types.md">Type_DDL_Statement</a>.
-</pre></td></tr></table>
+</pre>
  
- Credentials have to be created and managed with the credential management commandlets in the latest Azure Powershell.
-See [Set-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/module/azurerm.datalakeanalytics/set-azurermdatalakeanalyticscatalogcredential?view=azurermps-4.3.1) for information on creating and managing an Azure Data Lake Analytics catalog credential.
+Credentials have to be created and managed with the credential management commandlets in the latest Azure Powershell.
+See [Set-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/module/azurerm.datalakeanalytics/set-azurermdatalakeanalyticscatalogcredential) for information on creating and managing an Azure Data Lake Analytics catalog credential.
 
  
-### See also  
+## See also  
 * [Get-AzureRmDataLakeAnalyticsCatalogItem](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.7.0/get-azurermdatalakeanalyticscatalogitem) 
