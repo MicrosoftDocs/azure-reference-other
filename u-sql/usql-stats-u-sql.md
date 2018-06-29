@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.stats (U-SQL)
 Contains a row for each statistics object that exists for the tables in the current database context.
 
@@ -27,8 +28,9 @@ create_date     |DateTime?         |Date of creation of the statistics. Some old
 update_date     |DateTime?         |Last update date of the statistics. Some older statistics may have a value of null if they were updated before the date was being recorded.
 stat_data_byte|byte[]|Content of the statistics.  **CAUTION: This column may be subject to change in a future refresh!**  
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+
 
 
 **Query the usql.stats view**
@@ -39,6 +41,7 @@ OUTPUT usql.stats
 TO "/ReferenceGuide/CatalogViews/stats.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query the usql.stats view with usql.objects view**
 ```sql
@@ -54,12 +57,9 @@ TO "/ReferenceGuide/CatalogViews/stats_objects.txt"
 USING Outputters.Tsv(outputHeader:true);  
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.stats_columns (U-SQL)](usql-stats-columns-u-sql.md)
 * [U-SQL Statistics](u-sql-statistics.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
-
