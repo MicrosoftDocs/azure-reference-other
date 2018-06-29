@@ -13,19 +13,21 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # U-SQL Database Schemas
 Similar to other database systems and ANSI SQL, U-SQL uses the concept of a schema to group related objects together in the context of a database.   
   
 U-SQL provides a built-in schema within each database called dbo that is used as the default schema context. Additionally, U-SQL provides the ability to create and delete additional schemas with schema DDL statements.  
   
-### Schema DDL Statements
-<table><th align="left">Syntax</th><tr><td><pre>
-Schema_DDL_Statement :=                                                                                  
-     <a href="create-schema-u-sql.md">Create_Schema_Statement</a>
-|    <a href="drop-schema-u-sql.md">Drop_Schema_Statement</a>.
-</pre></td></tr></table>
+## Schema DDL Statements
+### Syntax
+<pre>
+Schema_DDL_Statement := 
+    <a href="create-schema-u-sql.md">Create_Schema_Statement</a>
+|   <a href="drop-schema-u-sql.md">Drop_Schema_Statement</a>.
+</pre>
 
-A list of schema can be retrieved using the Windows PowerShell cmdlet [Get-AzureRmDataLakeAnalyticsCatalogItem](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.7.0/get-azurermdatalakeanalyticscatalogitem).  Example command for retrieving schema from the `TestReferenceDB` database.
+A list of schema can be retrieved using the Windows PowerShell cmdlet [Get-AzureRmDataLakeAnalyticsCatalogItem](https://docs.microsoft.com/powershell/module/azurerm.datalakeanalytics/get-azurermdatalakeanalyticscatalogitem).  Example command for retrieving schema from the `TestReferenceDB` database.
 ```powershell
 Login-AzureRmAccount;
 $DataLakeAnalyticsAccount = "<adla_account>";
@@ -34,7 +36,7 @@ Get-AzureRmDataLakeAnalyticsCatalogItem -Account $DataLakeAnalyticsAccount -Path
 (Get-AzureRmDataLakeAnalyticsCatalogItem -Account $DataLakeAnalyticsAccount -Path "TestReferenceDB" -ItemType "Schema").Name;
 ```
   
-### See Also    
+## See Also    
 * [CREATE SCHEMA (U-SQL)](create-schema-u-sql.md)
 * [USE SCHEMA (U-SQL)](use-schema-u-sql.md) 
 * [DROP SCHEMA (U-SQL)](drop-schema-u-sql.md)
