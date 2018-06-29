@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.distribution_columns (U-SQL)
 Returns the columns used by the distribution schemes for the tables in the schemas of the current database context.
 
@@ -24,9 +25,8 @@ distribution_column_id     |int         |Ordinal position of the column in the d
 column_id     |int         |Position of the column within the object on which the statistics is specified (unique within object_id_guid)         
 is_descending_key     |bool         |True = The distribution column has a descending sort direction<br><br> False = The distribution column has an ascending sort direction  
 
-
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
 **Query the usql.distribution_columns view**
 ```sql
@@ -36,6 +36,7 @@ OUTPUT usql.distribution_columns
 TO "/ReferenceGuide/CatalogViews/distribution_columns.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query the usql.distribution_columns view with usql.objects view**
 ```sql
@@ -54,12 +55,11 @@ OUTPUT @distribution_columns
 TO "/ReferenceGuide/CatalogViews/distribution_columns_others.txt"
 USING Outputters.Tsv(outputHeader:true);  
 ```
+<br />
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [U-SQL Table Distributions ](create-table-u-sql-creating-a-table-with-schema.md#dis_sch)
 * [usql.distributions (U-SQL)](usql-distributions-u-sql.md) 
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
