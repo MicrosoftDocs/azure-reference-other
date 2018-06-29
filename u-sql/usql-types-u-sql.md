@@ -13,11 +13,11 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# usql.types (U-SQL)
 
+# usql.types (U-SQL)  
 Contains a row for each built-in type as well as user-defined types (both scalar and table types) belonging to the schemas in the current database context. Since user-defined types are not directly registered in the U-SQL catalog (but are part of the assemblies), they are not included in this view.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > This catalog view's content is subject to change in a future refresh!
 
 Column name  |Data type  |Description  
@@ -41,8 +41,8 @@ is_comparable|bool?|False = Values of this type cannot be compared or ordered<br
 is_real_number|bool?|False = Value of this type is not a real number<br><br> True = Value of this type is a real number<br><br> Null = Not a built-in type
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
 
  **Query the usql.types view**
@@ -55,10 +55,7 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
-
