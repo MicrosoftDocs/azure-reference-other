@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Cognitive Capabilities in U-SQL
 Building intelligent features into applications requires some form of prediction capability. There are two ways to go: either build your own model or using a pre-trained model for scoring.  Training a good model requires a lot of data and machine-learning expertise, both of which are rare commodities. To help, U-SQL packages many of the machine-learning models that power the [Microsoft Cognitive Services](https://azure.microsoft.com/services/cognitive-services/). Built by some of the leading minds in the industry, these models are trained against massive data sets, and are highly performant and accurate. This integration of the cognitive models in U-SQL lets you easily add intelligent features, such as emotion detection, face and speech recognition; language understanding and sentiment analysis to applications that work on massive amounts of data. 
 
@@ -44,10 +45,7 @@ At that point, you can discover what the job did by browsing the catalog for the
 Seeing these assemblies in the master database is evidence that your ADLA account is setup correctly and you can now write a U-SQL script that uses cognitive functions to build intelligent applications.  
 
 
-
-
-
-### See Also
+## See Also
 * [Built-in U-SQL System Objects and Extensions](built-in-u-sql-system-objects-and-extensions.md)
 * [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
 * [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/)
