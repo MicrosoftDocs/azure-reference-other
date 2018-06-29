@@ -13,13 +13,15 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # IF...ELSE (U-SQL)
-Imposes conditions on the execution of a U-SQL statement which is evaluated at compile time. The U-SQL statement that follows an IF keyword and its condition is executed if the condition is satisfied: the Boolean expression returns TRUE. The optional ELSE keyword introduces another U-SQL statement that is executed when the IF condition is not satisfied: the Boolean expression returns FALSE.
+Imposes conditions on the execution of a U-SQL statement which is evaluated at compile time. The U-SQL statement that follows an IF keyword and its condition is executed if the condition is satisfied: the Boolean expression returns TRUE. The optional `ELSE` keyword introduces another U-SQL statement that is executed when the `IF` condition is not satisfied: the Boolean expression returns FALSE.
 
 The Boolean expression has to be compile-time constant foldable, such as the value passed as a parameter.
 
-<table><th align="left">Syntax</th><tr><td><pre>
-If_Else_Statement :=                                                                                      
+## Syntax
+<pre>
+If_Else_Statement :=  
     'IF' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
          <a href="query-statements-and-expressions-u-sql.md">U-SQL_Statement</a> 
     [ 'ELSEIF' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
@@ -27,16 +29,17 @@ If_Else_Statement :=
     [ 'ELSE' <a href="#bool_expr">Boolean_Expression</a> 'THEN'
          <a href="query-statements-and-expressions-u-sql.md">U-SQL_Statement</a> ]
 'END'.
-</pre></td></tr></table>
+</pre>
 
-### Semantics of Syntax Elements    
+## Semantics of Syntax Elements    
 - <a name="bool_expr"></a>**`Boolean_Expression`**  
 Is a constant-foldable expression that returns TRUE or FALSE.    
 
-### Examples    
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples below are based on the dataset defined below.  Ensure your execution includes the rowset variable.  
+## Examples    
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+- The example(s) below are based on the dataset(s) defined below.  Ensure your execution includes the rowset variable(s).
+
 
 **Dataset**   
 ```sql
@@ -69,9 +72,10 @@ IF @DeptID == 100 THEN
 END;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Concepts/ControlOfFlow/IF/ExampleA.csv"
+TO "/ReferenceGuide/ControlOfFlow/IF/ExampleA.csv"
 USING Outputters.Csv();
 ```
+<br />
 
 **One condition and ELSE**   
 ```sql
@@ -84,9 +88,10 @@ ELSE
 END;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Concepts/ControlOfFlow/IF/ExampleB.csv"
+TO "/ReferenceGuide/ControlOfFlow/IF/ExampleB.csv"
 USING Outputters.Csv();
 ```
+<br />
 
 **Two conditions and ELSE**   
 ```sql
@@ -101,9 +106,10 @@ ELSE
 END;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Concepts/ControlOfFlow/IF/ExampleC.csv"
+TO "/ReferenceGuide/ControlOfFlow/IF/ExampleC.csv"
 USING Outputters.Csv();
 ```
+<br />
 
 **Nested conditions**   
 ```sql
@@ -124,7 +130,7 @@ ELSE
 END;
 
 OUTPUT @result
-TO "/Output/ReferenceGuide/Concepts/ControlOfFlow/IF/ExampleD.csv"
+TO "/ReferenceGuide/ControlOfFlow/IF/ExampleD.csv"
 USING Outputters.Csv();
 ```
 
