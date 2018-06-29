@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.functions (U-SQL)
 Contains one row per function belonging to the schemas in the current database context.
 
@@ -23,8 +24,9 @@ is_user_defined     |bool         |Indicates if it is a user defined function
 definition     |string         | Function's definition (if available)         
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+
 
 **Query the usql.functions view**
 ```sql
@@ -35,7 +37,7 @@ TO "/ReferenceGuide/CatalogViews/functions.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
