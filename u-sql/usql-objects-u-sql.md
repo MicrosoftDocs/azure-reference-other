@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.objects (U-SQL)
 Contains a row for certain schema-scoped objects that are created within a database.  Currently `usql.objects` only includes tables, views, table-valued functions and table types. Other objects such as procedures and packages will be added in the future.
 
@@ -26,8 +27,9 @@ type_desc     |string         |Description of the object type:<br><br> TABLE_VAL
 create_date|DateTime?|Date and time of the object's creation (in UTC-0 time zone)
 modify_date|DateTime?|Date and time of the object's last modification (in UTC-0 time zone)
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+
 
 **Query the usql.objects view**
 ```sql
@@ -38,11 +40,6 @@ TO "/ReferenceGuide/CatalogViews/objects.txt"
 USING Outputters.Tsv(outputHeader:true); 
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
-
-
-
