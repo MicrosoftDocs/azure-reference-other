@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.partition_range_values (U-SQL)
 Provides details about the range partition schemes for the partitioned tables in the schemas of the current database context. The partitioned table must contain at least one record.
 
@@ -23,8 +24,9 @@ parameter_id     |int         |Ordinal position (starting at 1) of the parameter
 value     |string         |Lexical representation of the value         
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+
 
 **Query the usql.partition_range_values view**
 ```sql
@@ -34,6 +36,7 @@ OUTPUT usql.partition_range_values
 TO "/ReferenceGuide/CatalogViews/partition_range_values.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query the usql.partition_range_values view with other views**
 ```sql
@@ -58,13 +61,10 @@ USING Outputters.Tsv(outputHeader:true);
 ```
 
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [U-SQL Table Partitions and Distributions](create-table-u-sql-creating-a-table-with-schema.md#partitioning)
 * [usql.partitions (U-SQL)](usql-partitions-u-sql.md)
 * [usql.partition_parameters (U-SQL)](usql-partition-parameters-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
-
