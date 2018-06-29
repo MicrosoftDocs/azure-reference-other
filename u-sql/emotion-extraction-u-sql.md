@@ -13,43 +13,46 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # Emotion Extraction (U-SQL)
 Cognitive emotion functions detect one or more human faces in an image and get back face rectangles for where in the image the faces are, along with face attributes like emotion. There are two ways in U-SQL to extract emotions from the image:
  
 * EmotionApplier
 * EmotionExtractor
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Use an Extractor rather than an Applier when you have images larger than 4 MB.
 
 ## EmotionApplier
-<table><th align="left">Arguments</th><tr><td><pre>
-EmotionApplier(                                                                                          
+### Arguments
+<pre>
+EmotionApplier( 
     string imgCol = "ImgData",
     string numCol   = "NumFaces", 
     string indexCol = "FaceIndex", 
     string emtCol   = "Emotion", 
     string confCol  = "Confidence")
-</pre></td></tr></table>
+</pre>
 
 For each JPEG image provided as a byte array in the column with the default name `ImgData`, it returns one row per face detected in the file (column `FaceIndex` of type int) with additional information about the detected face's bounding box (columns `RectX`, `RectY`, `Width`, `Height` all of type float), its recognized emotion (column `Emotion` of type string), the confidence value (column `Confidence` of type float) and the overall number of faces detected in the image (column `NumFaces` of type int). 
 
 ## EmotionExtractor
-<table><th align="left">Arguments</th><tr><td><pre>
-EmotionExtractor(                                                                                        
+### Arguments
+<pre>
+EmotionExtractor(  
     string numCol   = "NumFaces", 
     string indexCol = "FaceIndex", 
     string emtCol   = "Emotion", 
     string confCol  = "Confidence")
-</pre></td></tr></table>
+</pre>
 
 For each JPEG file it gets applied to, this U-SQL extractor returns one row per face detected in the file (column `FaceIndex` of type int) with additional information about the detected face's bounding box (columns `RectX`, `RectY`, `Width`, `Height` all of type float), its recognized emotion (column `Emotion` of type string), the confidence value (column `Confidence` of type float) and the overall number of faces detected in the image (column `NumFaces` of type int). 
 
 
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 - Ensure you have installed the cognitive assemblies, see [Registering Cognitive Extensions in U-SQL](cognitive-capabilities-in-u-sql.md#registeringExtensions) for more information.
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally) if you first download the assemblies locally, see [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/) for more information.
+- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run) if you first download the assemblies locally, see [Enabling U-SQL Advanced Analytics for Local Execution](https://blogs.msdn.microsoft.com/azuredatalake/2017/02/20/enabling-u-sql-advanced-analytics-for-local-execution/) for more information.
 An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
 - You will need images accessible to you ADLA or Local account.
 
@@ -112,7 +115,7 @@ USING Outputters.Tsv(outputHeader: true);
 ```
 
 
-### See Also
+## See Also
 * [Built-in U-SQL System Objects and Extensions](built-in-u-sql-system-objects-and-extensions.md)
 * [Extending U-SQL Expressions with User-Code](extending-u-sql-expressions-with-user-code.md)
 * [Cognitive Capabilities in U-SQL](cognitive-capabilities-in-u-sql.md)
