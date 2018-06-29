@@ -13,10 +13,11 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # usql.indexes (U-SQL)
 Contains one row per index for the schemas of the current database context.
 
-> [!NOTE]
+> [!NOTE]   
 > Some of the values documented below, such as the values for non-clustered indices and column-store indices, are there for possible future use and are not currently used.
 
 Column name  |Data type  |Description  
@@ -27,8 +28,9 @@ index_id     |int         |Ordinal position (starting at 1) of the index within 
 type     |int         |Type of index:<br><br> 1 = Clustered<br><br>2 = Nonclustered<br><br>5 = Clustered Columnstore           
 type_desc     |string         |Description of index type:<br><br> CLUSTERED<br><br>NONCLUSTERED<br><br> CLUSTERED COLUMNSTORE  
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+
 
 **Query the usql.indexes view**
 ```sql
@@ -38,6 +40,7 @@ OUTPUT usql.indexes
 TO "/ReferenceGuide/CatalogViews/indexes.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query the usql.indexes view with usql.objects view**
 ```sql
@@ -53,7 +56,7 @@ TO "/ReferenceGuide/CatalogViews/indexes_objects.txt"
 USING Outputters.Tsv(outputHeader:true);  
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.index_columns (U-SQL)](usql-index-columns-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
