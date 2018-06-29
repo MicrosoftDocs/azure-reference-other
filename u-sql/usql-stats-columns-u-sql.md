@@ -13,8 +13,8 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# usql.stats_columns (U-SQL)
 
+# usql.stats_columns (U-SQL)
 Contains a row for each column that is part of [usql.stats](usql-stats-u-sql.md) statistics. 
 
 Column name  |Data type  |Description  
@@ -25,8 +25,8 @@ stats_column_id     |int         |Ordinal position (starting at 1) of the column
 column_id     |int         |Position of the column within the object on which the statistics is specified (unique within object_id_guid)         
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
 
 **Query the usql.stats_columns view**
@@ -37,6 +37,7 @@ OUTPUT usql.stats_columns
 TO "/ReferenceGuide/CatalogViews/stats_columns.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query the usql.stats_columns view with other catalog views**
 ```sql
@@ -59,11 +60,9 @@ TO "/ReferenceGuide/CatalogViews/stats_columns_others.txt"
 USING Outputters.Tsv(outputHeader:true);  
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.stats (U-SQL)](usql-stats-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
 
