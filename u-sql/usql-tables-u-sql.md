@@ -13,8 +13,8 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
-# usql.tables (U-SQL)
 
+# usql.tables (U-SQL)  
 Returns a row for each table belonging to the schemas in the current database context. The schema inherits the columns from the [usql.objects](usql-objects-u-sql.md) and adds the table specific properties to it.
 
 Column name  |Data type  |Description  
@@ -24,8 +24,8 @@ is_external     |bool         |Indicates if this is an external table
 data_source_id_guid     |Guid?         |Data Source ID if the table is external, otherwise null         
 
 
-### Examples
-The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504). 
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
 
 
 **Query the usql.tables view**
@@ -36,6 +36,7 @@ OUTPUT usql.tables
 TO "/ReferenceGuide/CatalogViews/tables.txt"
 USING Outputters.Tsv(outputHeader:true);
 ```
+<br />
 
 **Query usql.tables for multiple databases**
 ```sql
@@ -50,10 +51,7 @@ ORDER BY db
 USING Outputters.Tsv(outputHeader:true);
 ```
 
-### See Also
+## See Also
 * [Catalog Views (U-SQL)](catalog-views-u-sql.md)
 * [usql.objects (U-SQL)](usql-objects-u-sql.md)
 * [Data Definition Language (DDL) Statements (U-SQL)](data-definition-language-ddl-statements-u-sql.md)
-
-
-
