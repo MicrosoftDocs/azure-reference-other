@@ -13,11 +13,13 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # CREATE TABLE (U-SQL): Creating a Table from a Query
 Often a script converts unstructured data in a file into a table, by first extracting the data using an [`EXTRACT`](extract-expression-u-sql.md) expression and then inserting it into a table after some optional transformations. In order to simplify the process, U-SQL provides the ability to create a table from a U-SQL query expression. The `CREATE TABLE AS` statement will infer the schema from the query expression and will create a clustered table, thus the clustered index needs to be provided as part of the `CREATE TABLE AS` statement.  
   
-<table><th align="left">Syntax</th><tr><td><pre>
-Create_Managed_Table_As_Query_Statement :=                                                               
+## Syntax
+<pre>
+Create_Managed_Table_As_Query_Statement := 
     'CREATE' 'TABLE' ['IF' 'NOT' 'EXISTS'] <a href="#ident">Identifier</a>  
     Table_As_Query.<br />
 Table_As_Query :=  
@@ -27,27 +29,29 @@ Table_As_Query :=
 <a href="#h_partition_spec">Horizontal_Partition_Specification</a> :=   
     'PARTITIONED' 'BY' Partition_Type  
     ['INTO' positive_integer_literal].
-</pre></td></tr></table>
+</pre>
 
   
-### Semantics of Syntax Elements  
--  <a name="ident"></a>**`Identifier`**   
-  Specifies the name of the schema. If the Identifier is a three-part identifier, the table will be created in the specified database and schema. If it is a two-part identifier, then the table will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the table will be created in the current database and schema context.  
+## Semantics of Syntax Elements  
+- <a name="ident"></a>**`Identifier`**   
+  Specifies the name of the schema. If the Identifier is a three-part identifier, the table will be created in the specified database and schema. If it is a two-part identifier, then the table will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the table will be created in the current database and schema context.   
   
-    If a table or other object of the given name already exists in the specified database and schema context or the user has no permissions to create a table, an error is raised.   
+  If a table or other object of the given name already exists in the specified database and schema context or the user has no permissions to create a table, an error is raised.   
   
 - <a name="table_index"></a>**`Table_Index`**  
   Specifies the clustered index for the table. For more details on defining a table index, see [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md).  
   
--  <a name="h_partition_spec"></a>**`Horizontal_Partition_Specification`**   
-    Only horizontal partitioning is currently supported with the CREATE TABLE AS statement. For more detail on the partitioning schemes and options see [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md).  
+- <a name="h_partition_spec"></a>**`Horizontal_Partition_Specification`**   
+  Only horizontal partitioning is currently supported with the CREATE TABLE AS statement. For more detail on the partitioning schemes and options see [CREATE TABLE (U-SQL): Creating a Table with Schema](create-table-u-sql-creating-a-table-with-schema.md).  
       
 -  <a name="qry_exp"></a>**`Query_Expression`**    
-   Provides the query expression that defines the schema of the data and provides the initial data values. Any [U-SQL query expression](query-statements-and-expressions-u-sql.md) can be used to create a table, including [SELECT](select-expression-u-sql.md), [EXTRACT](extract-expression-u-sql.md), `PRODUCE`, invocation of a TVF etc..  
+  Provides the query expression that defines the schema of the data and provides the initial data values. Any [U-SQL query expression](query-statements-and-expressions-u-sql.md) can be used to create a table, including [SELECT](select-expression-u-sql.md), [EXTRACT](extract-expression-u-sql.md), `PRODUCE`, invocation of a TVF etc..  
   
-### Examples    
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The examples below use the sample data, `/Samples/Data/SearchLog.tsv`, provided with your Data Lake Analytics account. See [Prepare source data](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-portal#prepare-source-data) for additional information.
+## Examples    
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+- `SearchLog.tsv` is available @ https://github.com/Azure/usql/blob/master/Examples/Samples/Data/SearchLog.tsv.
+
 
 **Creating a table from a query - an extract**   
 The following example creates a table called `searchLogTable` from `SearchLog.tsv`.
@@ -66,6 +70,7 @@ CREATE TABLE dbo.searchLogTable (
     FROM "/Samples/Data/SearchLog.tsv"
     USING Extractors.Tsv();
 ```
+<br />
 
 **Creating a table from a query - a rowset variable**   
 The following example creates a table called `searchLogTable` from `SearchLog.tsv`.
@@ -92,6 +97,7 @@ CREATE TABLE dbo.searchLogTable (
        DISTRIBUTED BY HASH (UserId)
 ) AS SELECT * FROM @data; 
 ```
+<br />
 
 **Creating a table from a query - another table**  
 The following example creates a table called `searchLogTableCopy` from `searchLogTable`, created from prior example.
@@ -102,6 +108,7 @@ CREATE TABLE dbo.searchLogTableCopy (
        DISTRIBUTED BY HASH (UserId)
 ) AS SELECT * FROM dbo.searchLogTable; // Can also use a View
 ```
+<br />
 
 **Creating a table from a query - invocation of a TVF**  
 The following example creates a table called `searchLogFromFunction` by invoking the fuction `tvf_SearchLog` which was created from [Basic Syntax - tvf_SearchLog](create-function-u-sql-table-valued-function.md#tvf_SearchLog).
@@ -113,8 +120,8 @@ CREATE TABLE dbo.searchLogFromFunction (
     ) AS dbo.tvf_SearchLog();
 ```
 
-  
-### See Also  
+ 
+## See Also  
 * [CREATE TABLE (U-SQL): Overview](create-table-u-sql-overview.md)  
 * [ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md)
 * [TRUNCATE TABLE (U-SQL)](truncate-table-u-sql.md)
