@@ -13,18 +13,19 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # CREATE TABLE (U-SQL): Creating a Table with Schema
 U-SQL allows a managed table to be created by specifying a schema. The table will have to have a clustered index specified in order to be able to contain data and the table will be partitioned.  
   
-> [!NOTE]
+> [!NOTE]   
 > All [managed](u-sql-tables.md#man_ext_tabls) U-SQL tables are currently clustered tables where the cluster information is specified with a clustered index. In particular, other types of tables such as heaps and column store tables are not supported.
   
 When creating a managed U-SQL table with a schema, a table schema has to be provided that contains at least one table column definition.  
 
-<table><th>Syntax</th><tr><td><pre>
-Create_Managed_Table_With_Schema_Statement :=                                                            
-    'CREATE' 'TABLE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#ident">Identifier</a> 
-    <a href="#tbl_sch">Table_With_Schema</a>.<br />
+## Syntax
+<pre>
+Create_Managed_Table_With_Schema_Statement := 
+    'CREATE' 'TABLE' [<a href="#INE">'IF' 'NOT' 'EXISTS'</a>] <a href="#ident">Identifier</a> <a href="#tbl_sch">Table_With_Schema</a>.<br />
 <a href="#tbl_sch">Table_With_Schema</a> :=  
     '(' { <a href="#col_def">Column_Definition</a> ',' }   
         [ <a href="#table_index">Table_Index</a> <a href="#partition_spec">Partition_Specification</a> ]     
@@ -32,9 +33,9 @@ Create_Managed_Table_With_Schema_Statement :=
 |   '(' { <a href="#col_def">Column_Definition</a> ',' }   
         [ <a href="#table_index">Table_Index</a> ]
         { ',' <a href="#col_def">Column_Definition</a> } ')' <a href="#partition_spec">Partition_Specification</a>.
-</pre></td></tr></table>
+</pre>
  
-### Semantics of Syntax Elements    
+## Semantics of Syntax Elements    
 - <a name="ident"></a>**`Identifier`**   
   Specifies the name of the schema. If the `Identifier` is a three-part identifier, the table will be created in the specified database and schema. If it is a two-part identifier, then the table will be created in the specified schema of the current database context. If the identifier is a simple identifier, then the table will be created in the current database and schema context.  
     
@@ -46,41 +47,44 @@ Create_Managed_Table_With_Schema_Statement :=
 - <a name="tbl_sch"></a>**`Table_With_Schema`**   
   A table schema contains at least one column definition (note the above syntax is slightly simplified for readability) and can optionally contain a table index and a partition specification. The table index is optional in the definition of the table and the partition specification can either follow the index specification or can follow the table schema. If the partition specification follows the schema, then the schema needs to contain the index specification. 
   
-  > [!NOTE]
+  > [!NOTE]   
   > While the index definition is optional as part of the table definition, no data can be inserted into the table until an index has been defined. If the index definition is not part of the table definition, then a [CREATE CLUSTERED INDEX](u-sql-indexes.md) statement has to be executed before data can be inserted into the table.
   
 - <a name="col_def"></a>**`Column_Definition`**  
   A column definition is of the form
-  <table><th>Syntax</th><tr><td><pre>
-  Column_Definition :=                                                                                
+  ### Syntax
+  <pre>
+  Column_Definition := 
       <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> <a href="built-in-u-sql-types.md">Built_in_Type</a>.
-  </pre></td></table>
+  </pre>
   
-    Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](built-in-u-sql-types.md). Note that there are currently no constraints such as primary key, foreign key, unique etc. supported. Unlike in the case of traditional SQL tables, nullability is part of the type and not a column property.  
+  Each column has an identifier that can be either a [quoted or unquoted identifier](u-sql-identifiers.md) which is typed with one of the [built-in U-SQL types](built-in-u-sql-types.md). Note that there are currently no constraints such as primary key, foreign key, unique etc. supported. Unlike in the case of traditional SQL tables, nullability is part of the type and not a column property.  
   
 - <a name="table_index"></a>**`Table_Index`**  
   The table index defines the clustered index of the table. It specifies the name of the index that is local to the table as a [quoted or unquoted identifier](u-sql-identifiers.md) and by providing a list of columns that determine how and in which order the rows will be ordered. It basically determines how the data will be physically stored in the clustered table.  
   
   The table index syntax looks like  
-  <table><th>Syntax</th><tr><td><pre>
-  Table_Index :=                                                                                      
+  ### Syntax
+  <pre>
+  Table_Index := 
       'INDEX' <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a>   
       'CLUSTERED' '(' Sort_Item_List ')'.<br />
   Sort_Item_List :=  
       Sort_Item {',' Sort_Item}.<br />   
-  Sort_Item :=                                                                    
+  Sort_Item :=       
       <a href="u-sql-identifiers.md">Quoted_or_Unquoted_Identifier</a> [Sort_Direction].<br />
   Sort_Direction :=
       'ASC' | 'DESC'.
-  </pre></td></table>  
+  </pre>
   
 - <a name="partition_spec"></a>**`Partition_Specification`**  
   The partition specification provides information how the data inside the table is being partitioned and distributed.  
   
   If the table index is being provided, the partition specification has to be provided as well. The syntax looks like:  
    
-  <table><th>Syntax</th><tr><td><pre>
-  Partition_Specification :=                                                                          
+  ### Syntax
+  <pre>
+  Partition_Specification :=     
       [ 'PARTITIONED' ['BY'] '(' Identifier_List ')' ]   
       Distribution_Specification.<br />
   Identifier_List :=  
@@ -92,23 +96,21 @@ Create_Managed_Table_With_Schema_Statement :=
   |   '<a href="#hsh">HASH</a>' '(' Identifier_List ')'   
   |   '<a href="#dhsh">DIRECT' 'HASH</a>' '(' Identifier ')'   
   |   '<a href="#rnd_rob">ROUND' 'ROBIN</a>'.
-  </pre></td></table>
+  </pre>
 
   For detailed semantics about partitioning see the section on <a href="#partitioning">partitioning</a>.  
   
-### <a name="partitioning"></a> U-SQL Table Partitions and Distributions  
+## <a name="partitioning"></a> U-SQL Table Partitions and Distributions  
 U-SQL Tables can be partitioned in two-levels: the higher-level coarse-grained _partitioning_ into addressable partitions and the lower-level fine grained _distribution_ within a table or a partition.   
   
-### U-SQL Table Partition   
+## U-SQL Table Partition   
 Many use cases around data life cycle management, such as loading of daily or hourly data, require that one can add individual partitions and manage them separately. This is best done with  _partitioning_ a table into individually addressable partitions. Each of these partitions have to then explicitly be added with [`ALTER TABLE ADD PARTITION`](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md) and can be removed with [`ALTER TABLE DROP PARTITION`](alter-table-u-sql-adding-and-removing-vertical-partition-buckets.md). In addition, the query processor will perform partition elimination on supported predicates.  
   
 Currently U-SQL only allows partitioning in conjunction with <a href="#hsh">`HASH`</a> and <a href="#rnd_rob">`ROUND ROBIN`</a> distributions.  
   
 Note that the types of the columns used to specify partitioning schemes have to be comparable. In particular that means that the type cannot be a complex type. Additionally, in order to provide precise and deterministic semantics for  partitioning on `DateTime` values, the values used to partition on columns of `DateTime` types have to have their `DateTimeKind` set to `DateTimeKind.Utc`.  
   
-[//]: # "COMMENT: For best practices and guidance on which columns to choose as index key, how to select the most appropriate partitioning schemes, bucket size, and partition keys please refer to ADDLINK."  
-  
-### <a name="dis_sch"></a>U-SQL Table Distributions   
+## <a name="dis_sch"></a>U-SQL Table Distributions   
 Every table has to provide at least a _distribution_ scheme that will partition the data inside the table (or inside each  partition) according to the specified scheme.   
   
 Currently U-SQL supports four distribution schemes:   
@@ -134,9 +136,10 @@ U-SQL has a short list of candidate bucket numbers ({ 2, 10, 20, 60, 120, 240, 4
   
 If the `INTO` clause is specified, then the data will be distributed into the specified number.  
    
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+
 
 
 **Basic Syntax**   
@@ -152,6 +155,7 @@ CREATE TABLE dbo.Employees
 )
 DISTRIBUTED BY HASH(EmpID);
 ```
+<br />
 
 **Basic Syntax - Alternative Method**   
 ```sql
@@ -165,6 +169,7 @@ CREATE TABLE dbo.Employees
     INDEX clx_EmpID CLUSTERED(EmpID ASC) DISTRIBUTED BY HASH(EmpID)
 );
 ```
+<br />
 
 **Partitioned Table**   
 This examples creates a partitioned table. Data will be distributed over OrderID, CustomerID and partitioned by OrderDate.
@@ -188,7 +193,7 @@ INTO 10;
 ```
 
   
-### See Also  
+## See Also  
 * [PARTITION (U-SQL)](partition-u-sql.md)  
 * [U-SQL Tables](u-sql-tables.md)  
 * [CREATE TABLE (U-SQL): Overview](create-table-u-sql-overview.md)  
