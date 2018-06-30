@@ -13,6 +13,7 @@ author: "MikeRys"
 ms.author: "mrys"
 manager: "ryanw"
 ---
+
 # ALTER TABLE (U-SQL): Adding and Removing Vertical Partition Buckets
 In order to add or remove vertical partition buckets from a partitioned table, U-SQL provides the following `ALTER TABLE` statements.  
   
@@ -20,41 +21,46 @@ If the partition buckets are dropped, then the data contained in the partitions 
   
 If the partition buckets are added, then the data has to be inserted into the buckets with either implicit or explicit inserts into the buckets.  
 
-<table><th align="left">Syntax</th><tr><td><pre>
-Alter_Table_AddDrop_Partition_Statement :=                                                               
+## Syntax
+<pre>
+Alter_Table_AddDrop_Partition_Statement :=  
     'ALTER' 'TABLE' <a href="#ident">Identifier</a>   
     ( '<a href="#add_drop">ADD</a>' ['IF' 'NOT' 'EXISTS']   
     | '<a href="#add_drop">DROP</a>' ['IF' 'EXISTS'] )  
-    <a href="#partition_label_list">Partition_Label_List</a>.</pre></td></tr></table>
+    <a href="#partition_label_list">Partition_Label_List</a>.
+</pre>
 
-### Semantics of Syntax Elements  
--    <a name="ident"></a>**`Identifier`**   
-Identifies the table to be changed. If the Identifier is a three-part identifier, the table from the specified database and schema will be chosen. If the Identifier is a two-part identifier, then the table of the given schema and of the given name of the current static database context is chosen. If the identifier is a simple identifier, then the table of the given name in the current static database and schema context is chosen.  
+## Semantics of Syntax Elements  
+- <a name="ident"></a>**`Identifier`**   
+  Identifies the table to be changed. If the Identifier is a three-part identifier, the table from the specified database and schema will be chosen. If the Identifier is a two-part identifier, then the table of the given schema and of the given name of the current static database context is chosen. If the identifier is a simple identifier, then the table of the given name in the current static database and schema context is chosen.  
     
-        If the table does not exist, is an external table, or the user does not have permissions to add or remove partition buckets to the table, an error is raised.  
+  If the table does not exist, is an external table, or the user does not have permissions to add or remove partition buckets to the table, an error is raised.  
   
--    <a name="add_drop"></a>**`ADD [IF NOT EXISTS] | DROP [IF EXISTS]`**  
-    If an already existing partition bucket is added or a non-existent partition bucket is attempted to be dropped, an error is raised unless the `IF NOT EXISTS` or `IF EXISTS` clause is specified respectively.  
+- <a name="add_drop"></a>**`ADD [IF NOT EXISTS] | DROP [IF EXISTS]`**  
+  If an already existing partition bucket is added or a non-existent partition bucket is attempted to be dropped, an error is raised unless the `IF NOT EXISTS` or `IF EXISTS` clause is specified respectively.  
   
 - <a name="partition_label_list"></a>**`Partition_Label_List`**  
 The partition label list specifies the list of partition buckets to be added or deleted by specifying the literal values for the partition columns using the appropriate types. The values have to be provided as constants or as scalar static variables.
-<table><th>Syntax</th><tr><td><pre>
-Partition_Label_List :=                                                                             
-    Partition_Label {',' Partition_Label}.<br />  
-Partition_Label :=                                                              
-    'PARTITION' Static_Expression_Row_Constructor.<br />  
-Static_Expression_Row_Constructor := 
-    '(' Static_Expression_List ')'.<br />      
-Static_Expression_List := 
-    Static_Expression {',' Static_Expression}.<br />  
-Static_Expression := 
-    <a href="textual-types-and-literals.md">string_literal</a> | <a href="numeric-types-and-literals.md">number_literal</a> | <a href="textual-types-and-literals.md">char_literal</a> | Static_Variable | binary_literal.
-</pre></td></tr></table> 
+
+  ### Syntax
+  <pre>
+  Partition_Label_List := 
+      Partition_Label {',' Partition_Label}.<br />  
+  Partition_Label :=  
+      'PARTITION' Static_Expression_Row_Constructor.<br />  
+  Static_Expression_Row_Constructor := 
+      '(' Static_Expression_List ')'.<br />      
+  Static_Expression_List := 
+      Static_Expression {',' Static_Expression}.<br />  
+  Static_Expression := 
+      <a href="textual-types-and-literals.md">string_literal</a> | <a href="numeric-types-and-literals.md">number_literal</a> | <a href="textual-types-and-literals.md">char_literal</a> | Static_Variable | binary_literal.
+  </pre>
   
-### Examples
-- The examples can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
-- The scripts can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started#run-u-sql-locally).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
-- The examples below are based on the table defined below.  
+## Examples
+- The example(s) can be executed in Visual Studio with the [Azure Data Lake Tools plug-in](https://www.microsoft.com/download/details.aspx?id=49504).  
+- The script(s) can be executed [locally](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run).  An Azure subscription and Azure Data Lake Analytics account is not needed when executed locally.
+- The example(s) below are based on the dataset(s) defined below.  Ensure your execution includes the rowset variable(s).
+ 
 
 ```sql
 CREATE DATABASE IF NOT EXISTS TestReferenceDB;
@@ -75,6 +81,7 @@ PARTITIONED BY (OrderDate)
 DISTRIBUTED BY HASH (OrderID, CustomerID) 
 INTO 10;
 ```
+<br />
 
 **A.    ADD PARTITION**   
 This example adds two partitions to the partitioned table, `Orders`.  The values used to partition on columns of DateTime types have to have their DateTimeKind set to DateTimeKind.Utc.
@@ -92,6 +99,7 @@ ADD PARTITION(@partition1), PARTITION(@partition2);
 ALTER TABLE TestReferenceDB.dbo.Orders
 ADD IF NOT EXISTS PARTITION (@partition2);
 ```
+<br />
 
 **B.    DROP PARTITION**   
 This example drops a partition from the partitioned table, `Orders`.
@@ -105,8 +113,9 @@ DROP PARTITION(@partition1);
 ALTER TABLE TestReferenceDB.dbo.Orders
 DROP IF EXISTS PARTITION(@partition1);
 ```
+
   
-### See Also  
+## See Also  
 * [PARTITION (U-SQL)](partition-u-sql.md)  
 * [CREATE TABLE (U-SQL): Overview](create-table-u-sql-overview.md)  
 * [TRUNCATE TABLE (U-SQL)](truncate-table-u-sql.md)
