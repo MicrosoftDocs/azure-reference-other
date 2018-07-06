@@ -57,7 +57,7 @@ Typical metadata changes might include:
   
     + If you do not specify a new data type, the column metadata is unchanged. 
     
-    + Changes of data type affect only the metadata that is associated with the dataset and how the dat ais handled in downstream operations. The actual column values are not altered unless you perform a different operation (such as rounding) on the column. You can recover the original data type at any time by using [Edit Metadata](edit-metadata.md) to reset the column data type.  
+    + Changes of data type affect only the metadata that is associated with the dataset and how the data is handled in downstream operations. The actual column values are not altered unless you perform a different operation (such as rounding) on the column. You can recover the original data type at any time by using [Edit Metadata](edit-metadata.md) to reset the column data type.  
 
     > [!NOTE]
     > If you change any type of number to the **DateTime** type, leave the **DateTime Format** field blank. Currently, it is not possible to specify the target data format.  
