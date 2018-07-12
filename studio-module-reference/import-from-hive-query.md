@@ -21,6 +21,24 @@ This article describes how to use the [Import Data](import-data.md) module in Az
 
 Importing data from Hive is particularly useful for loading large datasets, or if you want to pre-process the data using a MapReduce job before loading the data into a machine learning experiment.
 
+> [!IMPORTANT]
+> As of July 31, 2018, Microsoft Azure HDInsight version 3.3 was the last version of HDInsight on Windows. If you have any HDInsight clusters on Windows 3.3 or earlier, you must migrate to HDInsight on Linux (HDInsight version 3.5 or later). Please see the [HDInsight on Windows retirement notice](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning#hdinsight-windows-retirement) for more information on how to migrate. Azure Machine Learning Studio will support [HDInsight on Linux](#support-for-hdinsight-on-linux) in certain scenarios. 
+
+## Support for HDInsight on Linux
+
+Azure Machine Learning Studio has support for HDInsight on Linux in the following scenarios:
+
+- Hadoop 2.7.3 (HDI 3.6) Blob as default, ADLS secondary
+- Spark 2.1.0 (HDI 3.6) Blob as default, ADLS secondary
+- Spark 2.2.0 (HDI 3.6) Blob as default, ADLS secondary
+- Spark 2.3.0 (HDI 3.6) Blob as default, ADLS secondary
+
+### Known Issues
+There are several known issues with using the Import Data module for Hive Queries with HDInsight on Linux:
+- Enterprise Security Package is not supported
+- [/tmp/hive not writeable](https://www.qumio.com/Blog/Lists/Posts/Post.aspx?ID=38)
+
+
 ## How to import data from Hive queries
 
 ### Use the wizard
@@ -84,6 +102,7 @@ The following steps describe how to manually configure the import source.
 When complete, click the output dataset and select **Visualize** to see if the data was imported successfully.
 
 If you get errors, check your data for missing values, additional empty columns, or incompatible data types.
+
 
 ## Examples  
 
