@@ -2,7 +2,7 @@
 title: "Import from Hive Query | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: ""
-ms.date: 01/24/2018
+ms.date: 07/16/2018
 ms.reviewer: ""
 ms.service: "machine-learning"
 ms.component: "studio"
@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b3779636-b1ea-450d-a58f-d47adf3f548e
 caps.latest.revision: 23
-author: rastala
-ms.author: roastala
+author: hshapiro
+ms.author: hshapiro
 manager: cgronlun
 ---
 # Import from Hive Query
