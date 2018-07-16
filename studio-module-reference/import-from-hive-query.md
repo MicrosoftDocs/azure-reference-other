@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b3779636-b1ea-450d-a58f-d47adf3f548e
 caps.latest.revision: 23
-author: hshapiro
+author: heatherbshapiro
 ms.author: hshapiro
 manager: cgronlun
 ---
