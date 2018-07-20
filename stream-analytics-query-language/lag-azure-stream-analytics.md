@@ -83,7 +83,7 @@ LAG(reading) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1))
   
 ```SQL  
 SELECT sensorId,  
-       growth = reading –  
+       growth = reading -
                         LAG(reading) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1))  
 FROM input  
   

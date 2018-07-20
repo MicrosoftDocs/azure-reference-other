@@ -26,7 +26,7 @@ SELECT I1.EntryTime, I1.LicensePlate, I1.TollId, R.RegistrationId
 FROM Input1 I1 TIMESTAMP BY EntryTime  
 JOIN Registration R  
 ON I1.LicensePlate = R.LicensePlate  
-WHERE R.Expired = ‘1’  
+WHERE R.Expired = '1'
   
 ```  
   

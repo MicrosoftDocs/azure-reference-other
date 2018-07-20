@@ -38,7 +38,7 @@ GetType (expression)
 ```SQL  
 SELECT TollId, EntryTime   
 FROM Input  
-WHERE GetType( EntryTime ) = ‘datetime’  
+WHERE GetType( EntryTime ) = 'datetime'
 ```  
   
   
