@@ -39,7 +39,7 @@ PATINDEX ( '%pattern%' , expression )
 ## Examples  
   
 ```SQL  
-SELECT TollId, EntryTime, LicensePlate, PATINDEX ( ‘%100%’,LicensePlate ),  
+SELECT TollId, EntryTime, LicensePlate, PATINDEX ( '%100%',LicensePlate ),
 FROM Input TIMESTAMP BY EntryTime  
   
 ```  
