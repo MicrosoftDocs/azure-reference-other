@@ -40,7 +40,7 @@ ms.author: jasonh
 WITH WAVehicle AS (  
     SELECT TollId, EntryTime AS VehicleEntryTime, LicensePlate, State, Make, Model, VehicleType,    VehicleWeight, Toll, Tag  
     FROM TollTagEntry TIMESTAMP BY EntryTime  
-    WHERE State = “WA”  
+    WHERE State = "WA"
 )  
   
 SELECT * INTO WAVehicleArchive FROM WAVehicle;  
