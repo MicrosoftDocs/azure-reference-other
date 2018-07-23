@@ -43,7 +43,7 @@ TIMESTAMP BY MyTimeField
 SELECT  
       Prop1,  
       Prop2,  
-      Prop3 – Prop4 / 12,  
+      Prop3 - Prop4 / 12,
       System.Timestamp t  
 FROM input  
   
