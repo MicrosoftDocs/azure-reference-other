@@ -6,7 +6,6 @@ applies_to:
 services: stream-analytics
 author: jasonwhowell
 manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 42e4e849-2fbd-4374-bd8c-d40130ae81a3
@@ -39,9 +38,8 @@ PATINDEX ( '%pattern%' , expression )
 ## Examples  
   
 ```SQL  
-SELECT TollId, EntryTime, LicensePlate, PATINDEX ( '%100%',LicensePlate ),
+SELECT TollId, EntryTime, LicensePlate, PATINDEX ( '%100%',LicensePlate )
 FROM Input TIMESTAMP BY EntryTime  
-  
 ```  
   
   
