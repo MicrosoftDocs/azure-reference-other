@@ -69,7 +69,7 @@
 #### [SUBSTRING](substring-azure-stream-analytics.md)
 #### [UPPER](upper-azure-stream-analytics.md)
 ## [Data Types](data-types-azure-stream-analytics.md)
-### [Complex Data Types](complex-data-types-stream-analytics.md)
+### [Parsing JSON and AVRO data](http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json)
 ## [Query Language Elements](query-language-elements-azure-stream-analytics.md)
 ### [APPLY](apply-azure-stream-analytics.md)
 ### [CASE](case-azure-stream-analytics.md)

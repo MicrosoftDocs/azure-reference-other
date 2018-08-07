@@ -61,4 +61,4 @@ FROM input
 ```  
   
 ## See also
-- [Complex Data Types](complex-data-types-stream-analytics.md)
+- [Parsing JSON and AVRO data](http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json)

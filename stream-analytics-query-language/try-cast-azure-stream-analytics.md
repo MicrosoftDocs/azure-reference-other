@@ -52,5 +52,5 @@ WHERE TRY_CAST(EntryTime AS datetime) IS NOT NULL
 ## See also
 For more information on Stream Analytics data types, see:
 - [Data types](data-types-azure-stream-analytics.md)
-- [Complex data types](complex-data-types-stream-analytics.md)
 - [CAST](cast-azure-stream-analytics.md)
+- [Parsing JSON and AVRO data](http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json)
