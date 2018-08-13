@@ -4,8 +4,8 @@ description: "Returns a GeoJSON LineString record. The result of a CreateLineStr
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: mamccrea
+ms.author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference

@@ -4,7 +4,7 @@ description: "A mathematical function that returns the smallest integer greater 
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 86b82a0b-cb22-40fa-a5b3-3731e2dde085
 caps.latest.revision: 8
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # CEILING (Azure Stream Analytics)

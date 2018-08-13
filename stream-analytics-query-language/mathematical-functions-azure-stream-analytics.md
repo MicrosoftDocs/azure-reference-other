@@ -4,7 +4,7 @@ description: "Lists the mathematical functions supported by Azure Stream Analyti
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 31b44dd4-f843-4cd3-96ed-36e0fe7df840
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # Mathematical Functions (Azure Stream Analytics)
   The following scalar functions perform a calculation, usually based on input values that are provided as arguments, and return a numeric value:  

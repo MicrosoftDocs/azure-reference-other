@@ -4,7 +4,7 @@ description: "Specifies a temporary named result set which can be referenced by 
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: cb18a578-2ea6-4b03-8ea9-8e0fba4932df
 caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 05/02/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # WITH (Azure Stream Analytics)
   Specifies a temporary named result set which can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.  

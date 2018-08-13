@@ -4,7 +4,7 @@ description: "Returns an array with all record values from the window. "
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 4ecadc16-b061-45ff-935f-3d03996a53f5
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 05/24/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # Collect (Azure Stream Analytics)

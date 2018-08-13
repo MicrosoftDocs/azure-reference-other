@@ -4,7 +4,7 @@ description: "Returns the record value associated with the specified property. "
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 0d49d7a6-680d-4e78-af4e-26301e5deb8b
 caps.latest.revision: 8
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # GetRecordPropertyValue (Azure Stream Analytics)
   Returns the record value associated with the specified property.  

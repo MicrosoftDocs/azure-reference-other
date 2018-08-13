@@ -4,7 +4,7 @@ description: "Lists the String functions supported by Azure Stream Analytics."
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: e9b9bc6f-84b3-4eea-b193-d50951382a7a
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # String Functions (Azure Stream Analytics)
   Stream Analytics Query Language provides the following string functions:  

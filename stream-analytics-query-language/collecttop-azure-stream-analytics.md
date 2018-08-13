@@ -4,7 +4,7 @@ description: "Returns an array of ranked records, where rank defines the ranking
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 88431761-5ccc-4225-b9d0-d54811c6393e
 caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 05/24/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # CollectTOP (Azure Stream Analytics)

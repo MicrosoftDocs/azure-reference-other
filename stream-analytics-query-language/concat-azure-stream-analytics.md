@@ -4,7 +4,7 @@ description: "Returns a string that is the result of concatenating two or more s
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 57e62210-6923-4306-918c-6e0e8834afb0
 caps.latest.revision: 6
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # CONCAT (Azure Stream Analytics)
   Returns a string that is the result of concatenating two or more string values.  

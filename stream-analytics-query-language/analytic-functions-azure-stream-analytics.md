@@ -4,7 +4,7 @@ description: "Lists the analytic functions supported by Stream Analytics Query L
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 953c32f0-985e-46b1-b050-1a6911acb83c
 caps.latest.revision: 12
 ms.workload: data-services
 ms.date: 10/20/2017
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # Analytic Functions (Azure Stream Analytics)

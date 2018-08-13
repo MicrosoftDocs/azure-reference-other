@@ -4,7 +4,7 @@ description: "Evaluates a list of conditions and returns one of multiple possibl
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 7c32501d-0e3e-49e8-8c84-61d33830e355
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # CASE (Azure Stream Analytics)

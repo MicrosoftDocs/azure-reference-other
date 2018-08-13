@@ -4,7 +4,7 @@ description: ""
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 
 ms.workload: data-services
 ms.date: 02/12/2018
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # ANOMALYDETECTION (Azure Stream Analytics)

@@ -4,7 +4,7 @@ description: "Returns the sum of all the values in the expression. SUM can be us
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 74d404e3-4a67-4303-b95e-d7063af3c513
 caps.latest.revision: 5
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # SUM (Azure Stream Analytics)
   Returns the sum of all the values in the expression. SUM can be used with numeric columns only. Null values are ignored.  
