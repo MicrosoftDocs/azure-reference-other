@@ -4,8 +4,8 @@ description: Returns the array element at the specified index. Useful for parsin
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: mamccrea
+ms.author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference

@@ -4,7 +4,7 @@ description: "Aggregate functions perform a calculation on a set of values and r
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 1fa11c79-3f97-4050-8d2c-b4cf61cdaf59
 caps.latest.revision: 23
 ms.workload: data-services
 ms.date: 12/09/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # Aggregate Functions (Azure Stream Analytics)

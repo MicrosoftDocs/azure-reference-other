@@ -4,7 +4,7 @@ description: "Returns the starting position of the first occurrence of a pattern
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 1b3a8da3-812a-451d-b052-cd02f1962035
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 06/15/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # REGEXMATCH (Azure Stream Analytics)
   Returns the starting position of the first occurrence of a pattern in a specified expression, or 0 if the pattern is not found, on all valid nvarchar(max) data types. Pattern is interpreted as single-line, case-insensitive, ECMAScript compatible regular expression.  

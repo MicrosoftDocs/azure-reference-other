@@ -4,7 +4,7 @@ description: "The Create table statement is used to define the schema of the pay
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: fd746c09-025e-465c-b985-49bfc9fb4f5e
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # CREATE TABLE (Stream Analytics)
   The Create table statement is used to define the schema of the payload of the events coming into Azure Stream Analytics. This allows the user to explicitly define the data types of each named column for the payload of incoming events.  

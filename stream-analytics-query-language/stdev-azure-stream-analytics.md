@@ -4,7 +4,7 @@ description: "Returns the statistical standard deviation of all values in a grou
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 6a0dadc8-8d6b-422a-a096-7a2176b6ac79
 caps.latest.revision: 5
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # STDEV (Azure Stream Analytics)
   Returns the statistical standard deviation of all values in a group. Null values are ignored.  

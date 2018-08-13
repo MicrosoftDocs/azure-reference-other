@@ -4,7 +4,7 @@ description: "Specifies a search condition for a group or an aggregate. HAVING c
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: a5f2e124-86a0-4163-a125-3a0c9e4cc615
 caps.latest.revision: 6
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # HAVING (Azure Stream Analytics)
   Specifies a search condition for a group or an aggregate. HAVING can be used only with the SELECT expression. HAVING is typically used in a GROUP BY clause. When GROUP BY is not used, HAVING behaves like a WHERE clause.  

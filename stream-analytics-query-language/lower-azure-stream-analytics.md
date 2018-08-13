@@ -4,7 +4,7 @@ description: "Returns a character expression after converting uppercase characte
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 378b640d-7cd8-429a-83f8-7738c008411d
 caps.latest.revision: 6
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # LOWER (Azure Stream Analytics)
   Returns a character expression after converting uppercase character data to lowercase.  

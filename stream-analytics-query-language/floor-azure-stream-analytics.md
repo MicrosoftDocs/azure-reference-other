@@ -4,7 +4,7 @@ description: "A mathematical function that returns the largest integer less than
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: ddee262a-4266-4649-92f5-cb5c4bbad388
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # FLOOR (Azure Stream Analytics)
   A mathematical function that returns the largest integer less than or equal to the specified numeric expression.  

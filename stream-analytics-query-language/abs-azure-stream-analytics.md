@@ -4,7 +4,7 @@ description: "A mathematical function that returns the absolute (positive) value
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 88f0e7d4-dc2e-4c0b-a9b5-6942a85f93a9
 caps.latest.revision: 9
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # ABS (Absolute value- Azure Stream Analytics)

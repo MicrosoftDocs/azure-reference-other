@@ -4,8 +4,8 @@ description: Returns a GeoJSON Polygon record. The result of a CreatePolygon can
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: mamccrea
+ms.author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference

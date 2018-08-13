@@ -4,7 +4,7 @@ description: "The APPLY operator allows you to invoke a table-valued function fo
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 426c01d9-269a-49b9-949f-39b0a8c40850
 caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # APPLY (Azure Stream Analytics)

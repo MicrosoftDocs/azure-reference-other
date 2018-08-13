@@ -4,7 +4,7 @@ description: "The LAST analytic operator allows one to look up the most recent e
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 6f8fabcb-4af9-4c8f-b30d-a6b676717353
 caps.latest.revision: 19
 ms.workload: data-services
 ms.date: 10/20/2017
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # LAST (Azure Stream Analytics)
   The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints.  It is useful in the scenarios like computing last known good value (e.g. not null), finding last time when event matched certain criteria, etc.  

@@ -4,8 +4,8 @@ description: "Tumbling windows are a series of fixed-sized, non-overlapping and 
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: mamccrea
+ms.author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference
