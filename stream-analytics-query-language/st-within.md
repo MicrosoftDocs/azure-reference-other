@@ -4,8 +4,8 @@ description: Returns 1 if a geography is within another, if not it will return 0
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: mamccrea
+ms.author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference

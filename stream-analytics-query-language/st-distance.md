@@ -4,8 +4,8 @@ description: Returns the distance between two points in meters. If used with Pol
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: mamccrea
+ms.author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference

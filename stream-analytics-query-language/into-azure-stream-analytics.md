@@ -4,7 +4,7 @@ description: "INTO explicitly specifies an output stream, and is always associat
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 4e5d157c-f886-4f04-8894-8c0acdcaf847
 caps.latest.revision: 7
 ms.workload: data-services
 ms.date: 05/03/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # INTO (Azure Stream Analytics)
   INTO explicitly specifies an output stream, and is always associated with an SELECT expression.  If not specified, the default output stream is “output”.  

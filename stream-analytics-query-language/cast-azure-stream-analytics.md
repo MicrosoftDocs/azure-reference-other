@@ -4,8 +4,8 @@ description: Converts an expression of one data type to another within the suppo
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: mamccrea
+ms.author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference

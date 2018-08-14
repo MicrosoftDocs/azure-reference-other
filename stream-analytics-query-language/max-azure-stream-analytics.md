@@ -4,7 +4,7 @@ description: "Returns the maximum value in the expression.  "
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: eb36fa10-c917-4817-a3d1-ece443ab663c
 caps.latest.revision: 6
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # MAX (Azure Stream Analytics)
   Returns the maximum value in the expression.  

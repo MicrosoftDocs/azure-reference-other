@@ -4,7 +4,7 @@ description: "A mathematical function that returns the square of the specified f
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: be6fb339-a9bd-4d7d-b7e3-3c0a0890d5c5
 caps.latest.revision: 8
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # SQUARE (Azure Stream Analytics)

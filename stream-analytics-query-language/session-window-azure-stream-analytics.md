@@ -4,7 +4,7 @@ description: When using a sliding window, the system is asked to logically consi
 applies_to:
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference

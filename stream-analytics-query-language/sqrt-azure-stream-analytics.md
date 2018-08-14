@@ -4,7 +4,7 @@ description: "A mathematical function that returns the square root of the specif
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 3a850384-fbee-4377-8423-ce5547e46b46
 caps.latest.revision: 10
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # SQRT (Azure Stream Analytics)

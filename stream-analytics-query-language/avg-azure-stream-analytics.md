@@ -4,7 +4,7 @@ description: "Returns the average of the values in a group. Null values are igno
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: c0638288-6ca0-49f7-b119-8c0af842203a
 caps.latest.revision: 5
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 
 # AVG (Azure Stream Analytics)

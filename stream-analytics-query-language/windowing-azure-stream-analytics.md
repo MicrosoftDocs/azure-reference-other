@@ -4,14 +4,14 @@ description: This topic describes windowing functions. Includes the types of win
 applies_to:
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 5b46b0df-c441-4729-be82-9c000130fdbb
 ms.workload: data-services
 ms.date: 04/30/2018
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # Windowing functions (Azure Stream Analytics)
 In applications that process real-time events, it is common to perform some set-based computation (aggregation) or other operations over subsets of events that fall within some period of time. Because the concept of time is a fundamental necessity to complex event-processing systems, it’s important to have a simple way to work with the time component of query logic in the system. In Azure Stream Analytics, these subsets of events are defined through windows to represent groupings by time. This article describes windows and how they are defined, identifies the types of windows that are supported, and explains how you can use windows with various operators.

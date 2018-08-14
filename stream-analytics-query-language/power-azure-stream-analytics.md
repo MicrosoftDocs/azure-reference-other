@@ -4,7 +4,7 @@ description: "A mathematical function that returns the value of the specified ex
 applies_to: 
   - "Azure"
 services: stream-analytics
-author: jasonwhowell
+author: mamccrea
 manager: kfile
 
 ms.service: stream-analytics
@@ -13,7 +13,7 @@ ms.assetid: 89a126bc-f801-4697-b1dd-93235d1f54a0
 caps.latest.revision: 8
 ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: jasonh
+ms.author: mamccrea
 ---
 # POWER (Azure Stream Analytics)
   A mathematical function that returns the value of the specified expression to the specified power.  
