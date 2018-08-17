@@ -47,13 +47,13 @@ HOPPINGWINDOW ( Duration( timeunit  , windowsize ) , Hop (timeunit  , windowsize
   
  **windowsize**  
   
- A big integer which describes the size of the window.  
+ A big integer which describes the size of the window. The windowsize is static, and cannot be changed dynamically at runtime.  
   
  The maximum size of the window in all cases is 7 days.  
   
  **hopsize**  
   
- A big integer which describes the size of the Hop. The windowsize is static, and cannot be changed dynamically at runtime.
+ A big integer which describes the size of the Hop. 
   
  **offsetsize**  
   
