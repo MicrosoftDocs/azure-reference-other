@@ -45,7 +45,7 @@ TUMBLINGWINDOW ( Duration( timeunit  , windowsize ), [Offset(timeunit  , offsets
   
  **windowsize**  
   
- A big integer which describes the size of the window. The windowsize is static, and cannot be changed dynamically at runtime.  
+ A big integer which describes the size of the window. The windowsize is static and cannot be changed dynamically at runtime.  
   
  The maximum size of the window is 7 days.  
   
