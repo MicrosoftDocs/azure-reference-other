@@ -53,7 +53,7 @@ HOPPINGWINDOW ( Duration( timeunit  , windowsize ) , Hop (timeunit  , windowsize
   
  **hopsize**  
   
- A big integer which describes the size of the Hop  
+ A big integer which describes the size of the Hop. The windowsize is static, and cannot be changed dynamically at runtime.
   
  **offsetsize**  
   
