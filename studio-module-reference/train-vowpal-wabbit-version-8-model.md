@@ -59,7 +59,7 @@ Unlike other modules in Studio, this module both specifies the module parameters
 
 Use of this module requires authentication to an Azure storage account.  
 
-### <a name="bkmk_prepData"></a> Prepare the input data
+### Prepare the input data
 
 To train a model using this module, the input dataset must consist of a single text column in one of the two supported formats: **LibSVM** or **VW**. This doesn't mean that Vowpal Wabbit analyzes only text data, only that the features and values must be prepared in the required text file format.  
 
