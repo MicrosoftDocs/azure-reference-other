@@ -41,7 +41,7 @@ GROUP BY <group by spec>
   
  **\< column_expression >**  
   
- Is the expression or the name of the column on which the grouping operation is performed.  
+ Is the expression or the name of the column on which the grouping operation is performed. The column expression cannot contain a column alias that is defined in the SELECT list.
   
 ## Example  
   
