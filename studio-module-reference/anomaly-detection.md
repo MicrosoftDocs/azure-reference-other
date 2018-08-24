@@ -47,7 +47,7 @@ Azure also provides the [Machine Learning Anomaly Detection API](https://docs.mi
 > [!TIP]
 > If you're not sure whether anomaly detection is the right algorithm to use with your data, see these guides: 
 > -  [Machine learning algorithm cheat sheet for Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet/) provides a graphical decision chart to guide you through the selection process.
-> - [Choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/machine-learning-algorithm-choice/).
+> - [Choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice).
 
 ## List of modules
 
