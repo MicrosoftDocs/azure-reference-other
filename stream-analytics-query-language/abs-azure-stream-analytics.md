@@ -31,7 +31,7 @@ ABS (expression )
  Is an expression of the exact numeric or approximate numeric data type category. ABS can be used with bigint or float columns.  
   
 ## Return Type  
- Returns the same type as expression.  
+ Returns the same type as expression.   
   
 ## Example  
   
