@@ -21,7 +21,7 @@ ms.author: mamccrea
 ```  
 [ WITH <Result_Set_name>]   
 SELECT select_list   
-FROM input_source [TIMESTAMP BY column_name ] [PARTITION BY column_name ]   
+FROM input_source [TIMESTAMP BY column_name ] [PARTITION BY column_name [INTO shard_count] ]   
 [ WHERE search_condition ]   
 [ GROUP BY group_by_expression ]   
 [ HAVING search_condition ]  
