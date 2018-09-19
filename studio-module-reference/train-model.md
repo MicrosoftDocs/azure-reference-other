@@ -50,7 +50,7 @@ You might have heard the terms _supervised_ or _unsupervised_ learning. Training
 
 During the training process, the data are sorted by outcomes and the algorithm extracts statistical patterns to build the model.
 
-_Unsupervised learning_ indicates either that the outcome is unknown, or you choose not to use known labels. For example, clustering algorithms usually employ unsupervised learning methods, but cn use labels if available. Another example is topic modeling using [LDA](latent-dirichlet-allocation.md). You cannot use **Train Model** with these algorithms.
+_Unsupervised learning_ indicates either that the outcome is unknown, or you choose not to use known labels. For example, clustering algorithms usually employ unsupervised learning methods, but can use labels if available. Another example is topic modeling using [LDA](latent-dirichlet-allocation.md). You cannot use **Train Model** with these algorithms.
 
 > [!TIP]
 >  New to machine learning? This tutorial walks you through the process of getting data, configuring an algorithm, training and then using a model: [Create your first machine learning experiment](https://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
