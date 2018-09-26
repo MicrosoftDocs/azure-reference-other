@@ -183,10 +183,10 @@ Example using [Round](https://msdn.microsoft.com/library/system.math.round(v=vs.
         ("Susan",   25.1234m),
         ("Emma",    25.9999m),
         ("Bradley", 25.9900m)
-        ) AS T(Cutomer, Balance);
+        ) AS T(Customer, Balance);
 
 @result =
-    SELECT Cutomer,
+    SELECT Customer,
             Math.Round(Balance, 2) AS Balance
     FROM @departments;
 
