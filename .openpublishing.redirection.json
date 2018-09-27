@@ -20,236 +20,1155 @@
       "redirect_url": "http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json",
       "redirect_document_id": true
      },
-     {"source_path": "u-sql/u-sql-language-reference","redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-reference","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-syntax-conventions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/syntax-conventions","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-concepts","redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-scripts","redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/scripts","redirect_document_id": true},
-{"source_path": "u-sql/expressions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/expressions","redirect_document_id": true},
-{"source_path": "u-sql/files-and-file-sets-as-inputs-and-outputs-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/files-and-file-sets-as-inputs-and-outputs","redirect_document_id": true},
-{"source_path": "u-sql/input-files-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/files/input-files","redirect_document_id": true},
-{"source_path": "u-sql/output-to-files-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/files/output-to-files","redirect_document_id": true},
-{"source_path": "u-sql/identifiers-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/identifiers","redirect_document_id": true},
-{"source_path": "u-sql/csharp-identifiers","redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/identifiers/csharp-identifiers","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-identifiers","redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/identifiers/identifiers","redirect_document_id": true},
-{"source_path": "u-sql/rowset-the-processing-data-structure-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/rowset-the-processing-data-structure","redirect_document_id": true},
-{"source_path": "u-sql/extending-u-sql-expressions-with-user-code","redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/extending-u-sql-expressions-with-user-code","redirect_document_id": true},
-{"source_path": "u-sql/deploy-resource-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/deploy-resource","redirect_document_id": true},
-{"source_path": "u-sql/common-sql-expressions-in-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/common-sql-expressions-in","redirect_document_id": true},
-{"source_path": "u-sql/built-in-functions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/built-in-functions","redirect_document_id": true},
-{"source_path": "u-sql/aggregate-functions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate-functions","redirect_document_id": true},
-{"source_path": "u-sql/any-value-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/any-value","redirect_document_id": true},
-{"source_path": "u-sql/array-agg-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/array-agg","redirect_document_id": true},
-{"source_path": "u-sql/avg-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/avg","redirect_document_id": true},
-{"source_path": "u-sql/count-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/count","redirect_document_id": true},
-{"source_path": "u-sql/map-agg-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/map-agg","redirect_document_id": true},
-{"source_path": "u-sql/max-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/max","redirect_document_id": true},
-{"source_path": "u-sql/min-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/min","redirect_document_id": true},
-{"source_path": "u-sql/sum-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/sum","redirect_document_id": true},
-{"source_path": "u-sql/stdev-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/stdev","redirect_document_id": true},
-{"source_path": "u-sql/stdevp-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/stdevp","redirect_document_id": true},
-{"source_path": "u-sql/var-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/var","redirect_document_id": true},
-{"source_path": "u-sql/varp-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/varp","redirect_document_id": true},
-{"source_path": "u-sql/analytic-functions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic-functions","redirect_document_id": true},
-{"source_path": "u-sql/cume-dist-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/cume-dist","redirect_document_id": true},
-{"source_path": "u-sql/first-value-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/first-value","redirect_document_id": true},
-{"source_path": "u-sql/lag-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/lag","redirect_document_id": true},
-{"source_path": "u-sql/last-value-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/last-value","redirect_document_id": true},
-{"source_path": "u-sql/lead-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/lead","redirect_document_id": true},
-{"source_path": "u-sql/percentile-cont-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/percentile-cont","redirect_document_id": true},
-{"source_path": "u-sql/percentile-disc-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/percentile-disc","redirect_document_id": true},
-{"source_path": "u-sql/percent-rank-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/percent-rank","redirect_document_id": true},
-{"source_path": "u-sql/metadata-functions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata-functions","redirect_document_id": true},
-{"source_path": "u-sql/file-functions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file-functions","redirect_document_id": true},
-{"source_path": "u-sql/file-created-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file/file-created","redirect_document_id": true},
-{"source_path": "u-sql/file-exists-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file/file-exists","redirect_document_id": true},
-{"source_path": "u-sql/file-length-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file/file-length","redirect_document_id": true},
-{"source_path": "u-sql/file-modified-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file/file-modified","redirect_document_id": true},
-{"source_path": "u-sql/partition-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/partition","redirect_document_id": true},
-{"source_path": "u-sql/ranking-functions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking-functions","redirect_document_id": true},
-{"source_path": "u-sql/dense-rank-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking/dense-rank","redirect_document_id": true},
-{"source_path": "u-sql/ntile-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking/ntile","redirect_document_id": true},
-{"source_path": "u-sql/rank-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking/rank","redirect_document_id": true},
-{"source_path": "u-sql/row-number-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking/row-number","redirect_document_id": true},
-{"source_path": "u-sql/built-in-u-sql-udos","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/built-in-u-sql-udos","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-built-in-extractors","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/built-in-extractors","redirect_document_id": true},
-{"source_path": "u-sql/extractor-parameters-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/extractors/extractor-parameters","redirect_document_id": true},
-{"source_path": "u-sql/extractors-text","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/extractors/extractors-text","redirect_document_id": true},
-{"source_path": "u-sql/extractors-csv","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/extractors/extractors-csv","redirect_document_id": true},
-{"source_path": "u-sql/extractors-tsv","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/extractors/extractors-tsv","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-built-in-outputters","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/built-in-outputters","redirect_document_id": true},
-{"source_path": "u-sql/outputter-parameters-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/outputters/outputter-parameters","redirect_document_id": true},
-{"source_path": "u-sql/outputters-text","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/outputters/outputters-text","redirect_document_id": true},
-{"source_path": "u-sql/outputters-csv","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/outputters/outputters-csv","redirect_document_id": true},
-{"source_path": "u-sql/outputters-tsv","redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/outputters/outputters-tsv","redirect_document_id": true},
-{"source_path": "u-sql/built-in-u-sql-system-objects-and-extensions","redirect_url": "https://docs.microsoft.com/en-us/u-sql/built-in-u-sql-system-objects-and-extensions","redirect_document_id": true},
-{"source_path": "u-sql/catalog-views-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views","redirect_document_id": true},
-{"source_path": "u-sql/usql-columns-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/columns","redirect_document_id": true},
-{"source_path": "u-sql/usql-databases-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/databases","redirect_document_id": true},
-{"source_path": "u-sql/usql-distributions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/distributions","redirect_document_id": true},
-{"source_path": "u-sql/usql-distribution-columns-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/distribution-columns","redirect_document_id": true},
-{"source_path": "u-sql/usql-functions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/functions","redirect_document_id": true},
-{"source_path": "u-sql/usql-indexes-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/indexes","redirect_document_id": true},
-{"source_path": "u-sql/usql-index-columns-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/index-columns","redirect_document_id": true},
-{"source_path": "u-sql/usql-objects-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/objects","redirect_document_id": true},
-{"source_path": "u-sql/usql-partitions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/partitions","redirect_document_id": true},
-{"source_path": "u-sql/usql-partition-parameters-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/partition-parameters","redirect_document_id": true},
-{"source_path": "u-sql/usql-partition-range-values-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/partition-range-values","redirect_document_id": true},
-{"source_path": "u-sql/usql-schemas-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/schemas","redirect_document_id": true},
-{"source_path": "u-sql/usql-stats-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/stats","redirect_document_id": true},
-{"source_path": "u-sql/usql-stats-columns-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/stats-columns","redirect_document_id": true},
-{"source_path": "u-sql/usql-tables-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/tables","redirect_document_id": true},
-{"source_path": "u-sql/usql-types-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/types","redirect_document_id": true},
-{"source_path": "u-sql/usql-views-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/views","redirect_document_id": true},
-{"source_path": "u-sql/cognitive-capabilities-in-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities-in","redirect_document_id": true},
-{"source_path": "u-sql/imageextractor-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/imageextractor","redirect_document_id": true},
-{"source_path": "u-sql/imageoutputter-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/imageoutputter","redirect_document_id": true},
-{"source_path": "u-sql/image-tagging-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/image-tagging","redirect_document_id": true},
-{"source_path": "u-sql/emotion-extraction-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/emotion-extraction","redirect_document_id": true},
-{"source_path": "u-sql/face-detection-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/face-detection","redirect_document_id": true},
-{"source_path": "u-sql/optical-character-recognition-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/optical-character-recognition","redirect_document_id": true},
-{"source_path": "u-sql/key-phrases-extraction-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/key-phrases-extraction","redirect_document_id": true},
-{"source_path": "u-sql/sentiment-analysis-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/sentiment-analysis","redirect_document_id": true},
-{"source_path": "u-sql/control-of-flow-language-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/control-of-flow-language","redirect_document_id": true},
-{"source_path": "u-sql/if-else-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/control-of-flow/if-else","redirect_document_id": true},
-{"source_path": "u-sql/data-definition-language-ddl-statements-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-definition-language-ddl-statements","redirect_document_id": true},
-{"source_path": "u-sql/securing-meta-data-objects","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/securing-meta-data-objects","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-databases","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/databases","redirect_document_id": true},
-{"source_path": "u-sql/create-database-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/databases/create-database","redirect_document_id": true},
-{"source_path": "u-sql/use-database-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/databases/use-database","redirect_document_id": true},
-{"source_path": "u-sql/drop-database-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/databases/drop-database","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-database-schemas","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/database-schemas","redirect_document_id": true},
-{"source_path": "u-sql/create-schema-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/schemas/create-schema","redirect_document_id": true},
-{"source_path": "u-sql/use-schema-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/schemas/use-schema","redirect_document_id": true},
-{"source_path": "u-sql/drop-schema-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/schemas/drop-schema","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-tables","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables","redirect_document_id": true},
-{"source_path": "u-sql/create-table-u-sql-overview","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create-table-u-sql-overview","redirect_document_id": true},
-{"source_path": "u-sql/create-table-u-sql-creating-managed-tables","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create/create-table-u-sql-creating-managed-tables","redirect_document_id": true},
-{"source_path": "u-sql/create-table-u-sql-creating-a-table-with-schema","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create/managed/create-table-u-sql-creating-a-table-with-schema","redirect_document_id": true},
-{"source_path": "u-sql/create-table-u-sql-creating-a-table-from-a-query","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create/managed/create-table-u-sql-creating-a-table-from-a-query","redirect_document_id": true},
-{"source_path": "u-sql/create-external-table-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create/create-external-table","redirect_document_id": true},
-{"source_path": "u-sql/alter-table-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/alter-table","redirect_document_id": true},
-{"source_path": "u-sql/alter-table-u-sql-adding-and-removing-vertical-partition-buckets","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/alter-table-u-sql-adding-and-removing-vertical-partition-buckets","redirect_document_id": true},
-{"source_path": "u-sql/truncate-table-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/truncate-table","redirect_document_id": true},
-{"source_path": "u-sql/drop-table-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/drop-table","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-indexes","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/indexes","redirect_document_id": true},
-{"source_path": "u-sql/create-index-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/indexes/create-index","redirect_document_id": true},
-{"source_path": "u-sql/drop-index-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/indexes/drop-index","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-statistics","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/statistics","redirect_document_id": true},
-{"source_path": "u-sql/create-statistics-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/statistics/create-statistics","redirect_document_id": true},
-{"source_path": "u-sql/update-statistics-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/statistics/update-statistics","redirect_document_id": true},
-{"source_path": "u-sql/drop-statistics-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/statistics/drop-statistics","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-views","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/views","redirect_document_id": true},
-{"source_path": "u-sql/create-view-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/views/create-view","redirect_document_id": true},
-{"source_path": "u-sql/drop-view-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/views/drop-view","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-functions","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/functions","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-table-valued-functions","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/functions/table-valued-functions","redirect_document_id": true},
-{"source_path": "u-sql/create-function-u-sql-table-valued-function","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/functions/table/create-function-u-sql-table-valued-function","redirect_document_id": true},
-{"source_path": "u-sql/drop-function-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/functions/table/drop-function","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-packages","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/packages","redirect_document_id": true},
-{"source_path": "u-sql/create-package-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/packages/create-package","redirect_document_id": true},
-{"source_path": "u-sql/drop-package-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/packages/drop-package","redirect_document_id": true},
-{"source_path": "u-sql/import-package-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/packages/import-package","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-procedures","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/procedures","redirect_document_id": true},
-{"source_path": "u-sql/create-procedure-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/procedures/create-procedure","redirect_document_id": true},
-{"source_path": "u-sql/drop-procedure-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/procedures/drop-procedure","redirect_document_id": true},
-{"source_path": "u-sql/calling-a-procedure-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/procedures/calling-a-procedure","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-assemblies","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies","redirect_document_id": true},
-{"source_path": "u-sql/create-assembly-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies/create-assembly","redirect_document_id": true},
-{"source_path": "u-sql/reference-assembly-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies/reference-assembly","redirect_document_id": true},
-{"source_path": "u-sql/reference-system-assembly-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies/reference-system-assembly","redirect_document_id": true},
-{"source_path": "u-sql/drop-assembly-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies/drop-assembly","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-credential-objects","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/credential-objects","redirect_document_id": true},
-{"source_path": "u-sql/create-credential-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/credential/create-credential","redirect_document_id": true},
-{"source_path": "u-sql/alter-credential-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/credential/alter-credential","redirect_document_id": true},
-{"source_path": "u-sql/drop-credential-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/credential/drop-credential","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-data-sources","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/data-sources","redirect_document_id": true},
-{"source_path": "u-sql/create-data-source-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/data-sources/create-data-source","redirect_document_id": true},
-{"source_path": "u-sql/alter-data-source-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/data-sources/alter-data-source","redirect_document_id": true},
-{"source_path": "u-sql/drop-data-source-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/data-sources/drop-data-source","redirect_document_id": true},
-{"source_path": "u-sql/user-defined-u-sql-types","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/user-defined-u-sql-types","redirect_document_id": true},
-{"source_path": "u-sql/create-type-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/user-defined/create-type","redirect_document_id": true},
-{"source_path": "u-sql/drop-type-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/user-defined/drop-type","redirect_document_id": true},
-{"source_path": "u-sql/data-modification-language-dml-statements-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-modification-language-dml-statements","redirect_document_id": true},
-{"source_path": "u-sql/insert-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/dml/insert","redirect_document_id": true},
-{"source_path": "u-sql/data-types-and-literals-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types-and-literals","redirect_document_id": true},
-{"source_path": "u-sql/built-in-u-sql-types","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in-u-sql-types","redirect_document_id": true},
-{"source_path": "u-sql/simple-built-in-u-sql-types","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple-built-in-u-sql-types","redirect_document_id": true},
-{"source_path": "u-sql/numeric-types-and-literals","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple/numeric-types-and-literals","redirect_document_id": true},
-{"source_path": "u-sql/textual-types-and-literals","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple/textual-types-and-literals","redirect_document_id": true},
-{"source_path": "u-sql/temporal-types-and-literals","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple/temporal-types-and-literals","redirect_document_id": true},
-{"source_path": "u-sql/other-simple-built-in-types-and-literals","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple/other-simple-built-in-types-and-literals","redirect_document_id": true},
-{"source_path": "u-sql/complex-built-in-u-sql-types","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/complex-built-in-u-sql-types","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-table-types","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/table-types","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-built-in-type-properties","redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in-type-properties","redirect_document_id": true},
-{"source_path": "u-sql/language-elements-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements","redirect_document_id": true},
-{"source_path": "u-sql/double-slash-comment-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements/double-slash-comment","redirect_document_id": true},
-{"source_path": "u-sql/slash-star-comment-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements/slash-star-comment","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-metadata-object-naming-and-name-contexts","redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements/metadata-object-naming-and-name-contexts","redirect_document_id": true},
-{"source_path": "u-sql/using-keyword","redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements/using-keyword","redirect_document_id": true},
-{"source_path": "u-sql/operators-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators","redirect_document_id": true},
-{"source_path": "u-sql/csharp-functions-and-operators-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/csharp-functions-and-operators","redirect_document_id": true},
-{"source_path": "u-sql/arithmetic-operators-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic-operators","redirect_document_id": true},
-{"source_path": "u-sql/add-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/add","redirect_document_id": true},
-{"source_path": "u-sql/subtract-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/subtract","redirect_document_id": true},
-{"source_path": "u-sql/multiply-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/multiply","redirect_document_id": true},
-{"source_path": "u-sql/divide-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/divide","redirect_document_id": true},
-{"source_path": "u-sql/modulo-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/modulo","redirect_document_id": true},
-{"source_path": "u-sql/comparison-operators-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison-operators","redirect_document_id": true},
-{"source_path": "u-sql/is-null-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/is-null","redirect_document_id": true},
-{"source_path": "u-sql/equals-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/equals","redirect_document_id": true},
-{"source_path": "u-sql/greater-than-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/greater-than","redirect_document_id": true},
-{"source_path": "u-sql/less-than-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/less-than","redirect_document_id": true},
-{"source_path": "u-sql/greater-than-or-equal-to-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/greater-than-or-equal-to","redirect_document_id": true},
-{"source_path": "u-sql/less-than-or-equal-to-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/less-than-or-equal-to","redirect_document_id": true},
-{"source_path": "u-sql/not-equal-to-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/not-equal-to","redirect_document_id": true},
-{"source_path": "u-sql/logical-operators-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical-operators","redirect_document_id": true},
-{"source_path": "u-sql/and-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/and","redirect_document_id": true},
-{"source_path": "u-sql/between-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/between","redirect_document_id": true},
-{"source_path": "u-sql/in-not-in-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/in-not-in","redirect_document_id": true},
-{"source_path": "u-sql/like-not-like-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/like-not-like","redirect_document_id": true},
-{"source_path": "u-sql/not-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/not","redirect_document_id": true},
-{"source_path": "u-sql/or-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/or","redirect_document_id": true},
-{"source_path": "u-sql/other-operators-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/other-operators","redirect_document_id": true},
-{"source_path": "u-sql/csharp-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/other/csharp","redirect_document_id": true},
-{"source_path": "u-sql/output-statement-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/output-statement","redirect_document_id": true},
-{"source_path": "u-sql/query-statements-and-expressions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/query-statements-and-expressions","redirect_document_id": true},
-{"source_path": "u-sql/combine-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/combine-expression","redirect_document_id": true},
-{"source_path": "u-sql/extract-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/extract-expression","redirect_document_id": true},
-{"source_path": "u-sql/order-by-and-offset-fetch-clause-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/order-by-and-offset-fetch-clause","redirect_document_id": true},
-{"source_path": "u-sql/process-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/process-expression","redirect_document_id": true},
-{"source_path": "u-sql/reduce-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/reduce-expression","redirect_document_id": true},
-{"source_path": "u-sql/sample-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/sample-expression","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-sampling-methods","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/sampling/sampling-methods","redirect_document_id": true},
-{"source_path": "u-sql/select-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select-expression","redirect_document_id": true},
-{"source_path": "u-sql/select-clause-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/select-clause","redirect_document_id": true},
-{"source_path": "u-sql/from-clause-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from-clause","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-select-selecting-from-the-values-table-value-constructor","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-the-values-table-value-constructor","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-select-selecting-from-a-function-call","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-a-function-call","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-select-selecting-from-an-external-rowset","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-an-external-rowset","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-select-selecting-from-joins","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-joins","redirect_document_id": true},
-{"source_path": "u-sql/inner-join-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/inner-join","redirect_document_id": true},
-{"source_path": "u-sql/outer-join-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/outer-join","redirect_document_id": true},
-{"source_path": "u-sql/cross-join-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/cross-join","redirect_document_id": true},
-{"source_path": "u-sql/semijoin-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/semijoin","redirect_document_id": true},
-{"source_path": "u-sql/antisemijoin-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/antisemijoin","redirect_document_id": true},
-{"source_path": "u-sql/join-hints","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/join-hints","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-select-selecting-from-cross-apply-and-outer-apply","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-cross-apply-and-outer-apply","redirect_document_id": true},
-{"source_path": "u-sql/explode-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/cross-apply/explode","redirect_document_id": true},
-{"source_path": "u-sql/u-sql-using-apply-with-an-applier-udo","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/cross-apply/using-apply-with-an-applier-udo","redirect_document_id": true},
-{"source_path": "u-sql/sample-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/sample","redirect_document_id": true},
-{"source_path": "u-sql/pivot-and-unpivot-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/pivot-and-unpivot","redirect_document_id": true},
-{"source_path": "u-sql/where-clause-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/where-clause","redirect_document_id": true},
-{"source_path": "u-sql/group-by-and-having-clauses-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/group-by-and-having-clauses","redirect_document_id": true},
-{"source_path": "u-sql/over-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/over-expression","redirect_document_id": true},
-{"source_path": "u-sql/set-rowset-expressions-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/set-rowset-expressions","redirect_document_id": true},
-{"source_path": "u-sql/except-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/set-rowset/except-expression","redirect_document_id": true},
-{"source_path": "u-sql/intersect-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/set-rowset/intersect-expression","redirect_document_id": true},
-{"source_path": "u-sql/union-and-outer-union-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/set-rowset/union-and-outer-union-expression","redirect_document_id": true},
-{"source_path": "u-sql/table-valued-function-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/table-valued-function-expression","redirect_document_id": true},
-{"source_path": "u-sql/values-expression-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/values-expression","redirect_document_id": true},
-{"source_path": "u-sql/variables-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables","redirect_document_id": true},
-{"source_path": "u-sql/declare-variables-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables/declare-variables","redirect_document_id": true},
-{"source_path": "u-sql/using-variables-u-sql","redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables/using-variables","redirect_document_id": true},
+     {
+        "source_path": "u-sql/u-sql-language-reference",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-reference",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-syntax-conventions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/syntax-conventions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-concepts",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-scripts",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/scripts",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/expressions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/expressions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/files-and-file-sets-as-inputs-and-outputs-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/files-and-file-sets-as-inputs-and-outputs",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/input-files-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/files/input-files",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/output-to-files-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/files/output-to-files",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/identifiers-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/identifiers",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/csharp-identifiers",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/identifiers/csharp-identifiers",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-identifiers",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/Concepts/identifiers/identifiers",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/rowset-the-processing-data-structure-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/rowset-the-processing-data-structure",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/extending-u-sql-expressions-with-user-code",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/extending-u-sql-expressions-with-user-code",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/deploy-resource-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/deploy-resource",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/common-sql-expressions-in-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/common-sql-expressions-in",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/built-in-functions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/built-in-functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/aggregate-functions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate-functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/any-value-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/any-value",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/array-agg-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/array-agg",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/avg-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/avg",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/count-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/count",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/map-agg-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/map-agg",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/max-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/max",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/min-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/min",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/sum-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/sum",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/stdev-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/stdev",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/stdevp-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/stdevp",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/var-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/var",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/varp-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/aggregate/varp",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/analytic-functions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic-functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/cume-dist-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/cume-dist",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/first-value-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/first-value",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/lag-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/lag",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/last-value-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/last-value",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/lead-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/lead",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/percentile-cont-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/percentile-cont",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/percentile-disc-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/percentile-disc",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/percent-rank-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/analytic/percent-rank",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/metadata-functions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata-functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/file-functions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file-functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/file-created-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file/file-created",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/file-exists-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file/file-exists",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/file-length-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file/file-length",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/file-modified-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/file/file-modified",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/partition-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/metadata/partition",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/ranking-functions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking-functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/dense-rank-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking/dense-rank",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/ntile-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking/ntile",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/rank-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking/rank",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/row-number-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/ranking/row-number",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/built-in-u-sql-udos",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/built-in-u-sql-udos",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-built-in-extractors",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/built-in-extractors",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/extractor-parameters-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/extractors/extractor-parameters",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/extractors-text",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/extractors/extractors-text",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/extractors-csv",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/extractors/extractors-csv",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/extractors-tsv",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/extractors/extractors-tsv",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-built-in-outputters",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/built-in-outputters",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/outputter-parameters-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/outputters/outputter-parameters",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/outputters-text",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/outputters/outputters-text",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/outputters-csv",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/outputters/outputters-csv",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/outputters-tsv",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/functions/operators/outputters/outputters-tsv",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/built-in-u-sql-system-objects-and-extensions",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/built-in-u-sql-system-objects-and-extensions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/catalog-views-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-columns-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/columns",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-databases-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/databases",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-distributions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/distributions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-distribution-columns-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/distribution-columns",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-functions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-indexes-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/indexes",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-index-columns-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/index-columns",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-objects-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/objects",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-partitions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/partitions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-partition-parameters-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/partition-parameters",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-partition-range-values-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/partition-range-values",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-schemas-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/schemas",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-stats-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/stats",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-stats-columns-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/stats-columns",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-tables-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/tables",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-types-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/types",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/usql-views-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/catalog-views/views",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/cognitive-capabilities-in-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities-in",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/imageextractor-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/imageextractor",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/imageoutputter-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/imageoutputter",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/image-tagging-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/image-tagging",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/emotion-extraction-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/emotion-extraction",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/face-detection-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/face-detection",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/optical-character-recognition-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/optical-character-recognition",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/key-phrases-extraction-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/key-phrases-extraction",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/sentiment-analysis-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/objects-and-extensions/cognitive-capabilities/sentiment-analysis",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/control-of-flow-language-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/control-of-flow-language",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/if-else-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/control-of-flow/if-else",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/data-definition-language-ddl-statements-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-definition-language-ddl-statements",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/securing-meta-data-objects",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/securing-meta-data-objects",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-databases",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/databases",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-database-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/databases/create-database",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/use-database-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/databases/use-database",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-database-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/databases/drop-database",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-database-schemas",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/database-schemas",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-schema-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/schemas/create-schema",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/use-schema-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/schemas/use-schema",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-schema-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/schemas/drop-schema",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-tables",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-table-u-sql-overview",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create-table-u-sql-overview",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-table-u-sql-creating-managed-tables",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create/create-table-u-sql-creating-managed-tables",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-table-u-sql-creating-a-table-with-schema",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create/managed/create-table-u-sql-creating-a-table-with-schema",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-table-u-sql-creating-a-table-from-a-query",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create/managed/create-table-u-sql-creating-a-table-from-a-query",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-external-table-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/create/create-external-table",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/alter-table-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/alter-table",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/alter-table-u-sql-adding-and-removing-vertical-partition-buckets",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/alter-table-u-sql-adding-and-removing-vertical-partition-buckets",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/truncate-table-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/truncate-table",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-table-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/tables/drop-table",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-indexes",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/indexes",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-index-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/indexes/create-index",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-index-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/indexes/drop-index",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-statistics",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/statistics",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-statistics-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/statistics/create-statistics",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/update-statistics-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/statistics/update-statistics",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-statistics-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/statistics/drop-statistics",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-views",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/views",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-view-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/views/create-view",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-view-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/views/drop-view",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-functions",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-table-valued-functions",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/functions/table-valued-functions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-function-u-sql-table-valued-function",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/functions/table/create-function-u-sql-table-valued-function",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-function-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/functions/table/drop-function",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-packages",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/packages",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-package-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/packages/create-package",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-package-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/packages/drop-package",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/import-package-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/packages/import-package",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-procedures",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/procedures",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-procedure-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/procedures/create-procedure",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-procedure-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/procedures/drop-procedure",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/calling-a-procedure-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/procedures/calling-a-procedure",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-assemblies",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-assembly-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies/create-assembly",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/reference-assembly-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies/reference-assembly",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/reference-system-assembly-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies/reference-system-assembly",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-assembly-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/assemblies/drop-assembly",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-credential-objects",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/credential-objects",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-credential-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/credential/create-credential",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/alter-credential-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/credential/alter-credential",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-credential-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/credential/drop-credential",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-data-sources",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/data-sources",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-data-source-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/data-sources/create-data-source",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/alter-data-source-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/data-sources/alter-data-source",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-data-source-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/data-sources/drop-data-source",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/user-defined-u-sql-types",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/user-defined-u-sql-types",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/create-type-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/user-defined/create-type",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/drop-type-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/ddl/user-defined/drop-type",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/data-modification-language-dml-statements-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-modification-language-dml-statements",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/insert-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/dml/insert",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/data-types-and-literals-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types-and-literals",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/built-in-u-sql-types",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in-u-sql-types",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/simple-built-in-u-sql-types",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple-built-in-u-sql-types",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/numeric-types-and-literals",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple/numeric-types-and-literals",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/textual-types-and-literals",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple/textual-types-and-literals",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/temporal-types-and-literals",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple/temporal-types-and-literals",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/other-simple-built-in-types-and-literals",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/simple/other-simple-built-in-types-and-literals",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/complex-built-in-u-sql-types",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in/complex-built-in-u-sql-types",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-table-types",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/table-types",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-built-in-type-properties",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/data-types/built-in-type-properties",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/language-elements-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/double-slash-comment-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements/double-slash-comment",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/slash-star-comment-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements/slash-star-comment",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-metadata-object-naming-and-name-contexts",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements/metadata-object-naming-and-name-contexts",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/using-keyword",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-elements/using-keyword",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/operators-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/csharp-functions-and-operators-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/csharp-functions-and-operators",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/arithmetic-operators-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic-operators",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/add-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/add",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/subtract-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/subtract",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/multiply-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/multiply",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/divide-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/divide",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/modulo-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/arithmetic/modulo",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/comparison-operators-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison-operators",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/is-null-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/is-null",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/equals-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/equals",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/greater-than-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/greater-than",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/less-than-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/less-than",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/greater-than-or-equal-to-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/greater-than-or-equal-to",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/less-than-or-equal-to-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/less-than-or-equal-to",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/not-equal-to-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/comparison/not-equal-to",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/logical-operators-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical-operators",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/and-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/and",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/between-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/between",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/in-not-in-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/in-not-in",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/like-not-like-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/like-not-like",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/not-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/not",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/or-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/logical/or",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/other-operators-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/other-operators",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/csharp-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/operators/other/csharp",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/output-statement-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/output-statement",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/query-statements-and-expressions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/query-statements-and-expressions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/combine-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/combine-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/extract-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/extract-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/order-by-and-offset-fetch-clause-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/order-by-and-offset-fetch-clause",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/process-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/process-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/reduce-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/reduce-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/sample-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/sample-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-sampling-methods",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/sampling/sampling-methods",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/select-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/select-clause-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/select-clause",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/from-clause-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from-clause",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-select-selecting-from-the-values-table-value-constructor",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-the-values-table-value-constructor",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-select-selecting-from-a-function-call",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-a-function-call",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-select-selecting-from-an-external-rowset",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-an-external-rowset",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-select-selecting-from-joins",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-joins",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/inner-join-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/inner-join",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/outer-join-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/outer-join",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/cross-join-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/cross-join",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/semijoin-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/semijoin",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/antisemijoin-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/antisemijoin",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/join-hints",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/joins/join-hints",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-select-selecting-from-cross-apply-and-outer-apply",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/select-selecting-from-cross-apply-and-outer-apply",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/explode-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/cross-apply/explode",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/u-sql-using-apply-with-an-applier-udo",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/cross-apply/using-apply-with-an-applier-udo",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/sample-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/sample",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/pivot-and-unpivot-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/from/pivot-and-unpivot",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/where-clause-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/where-clause",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/group-by-and-having-clauses-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/group-by-and-having-clauses",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/over-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/select/over-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/set-rowset-expressions-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/set-rowset-expressions",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/except-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/set-rowset/except-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/intersect-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/set-rowset/intersect-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/union-and-outer-union-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/set-rowset/union-and-outer-union-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/table-valued-function-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/table-valued-function-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/values-expression-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/statements-and-expressions/values-expression",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/variables-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/declare-variables-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables/declare-variables",
+        "redirect_document_id": true
+     },
+     {
+        "source_path": "u-sql/using-variables-u-sql",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables/using-variables",
+        "redirect_document_id": true}
 
 
      
