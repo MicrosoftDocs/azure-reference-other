@@ -22,7 +22,7 @@
      },
      {
         "source_path": "u-sql/u-sql-language-reference.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/language-reference",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql",
         "redirect_document_id": true
      },
      {
