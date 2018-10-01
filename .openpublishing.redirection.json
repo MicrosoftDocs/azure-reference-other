@@ -19,9 +19,11 @@
       "source_path": "stream-analytics-query-language/complex-data-types-stream-analytics.md",
       "redirect_url": "http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json",
       "redirect_document_id": true
-     }
-
-  
-
-  ] 
+     },
+    {
+        "source_path": "u-sql/using-variables-u-sql.md",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables/using-variables",
+        "redirect_document_id": true
+    }
+ ] 
 } 
