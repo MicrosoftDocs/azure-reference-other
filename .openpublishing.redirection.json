@@ -21,7 +21,7 @@
       "redirect_document_id": true
      },
     {
-        "source_path": "u-sql/using-variables-u-sql",
+        "source_path": "u-sql/using-variables-u-sql.md",
         "redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables/using-variables",
         "redirect_document_id": true
     }
