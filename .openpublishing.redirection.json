@@ -87,7 +87,7 @@
      },
      {
         "source_path": "u-sql/deploy-resource-u-sql.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/concepts/deploy-resource",
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/deploy-resource",
         "redirect_document_id": true
      },
      {
