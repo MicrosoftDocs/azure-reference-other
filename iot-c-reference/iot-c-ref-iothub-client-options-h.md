@@ -1,4 +1,4 @@
-# Header file iothub_client_options.h 
+# iothub_client_options.h 
 
 Stub comment for brief. Please update this comment.
 

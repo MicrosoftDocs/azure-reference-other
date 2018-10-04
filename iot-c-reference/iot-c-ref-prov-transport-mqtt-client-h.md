@@ -1,4 +1,4 @@
-# Header file prov_transport_mqtt_client.h 
+# prov_transport_mqtt_client.h 
 
 Stub comment for brief. Please update this comment.
 

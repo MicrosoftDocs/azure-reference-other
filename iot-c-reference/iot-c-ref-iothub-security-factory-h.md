@@ -1,4 +1,4 @@
-# Header file iothub_security_factory.h 
+# iothub_security_factory.h 
 
 Stub comment for brief. Please update this comment.
 

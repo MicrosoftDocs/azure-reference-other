@@ -1,4 +1,4 @@
-# Header file iothub_service_client_auth.h 
+# iothub_service_client_auth.h 
 
 APIs that allow a user (usually a device) to create and destroy a handle for use in Service client APIs.
 

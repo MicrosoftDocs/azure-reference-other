@@ -1,4 +1,4 @@
-# Header file strings_types.h 
+# strings_types.h 
 
 Stub comment for brief. Please update this comment.
 

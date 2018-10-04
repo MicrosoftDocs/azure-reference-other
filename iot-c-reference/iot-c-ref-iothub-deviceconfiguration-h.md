@@ -1,4 +1,4 @@
-# Header file iothub_deviceconfiguration.h 
+# iothub_deviceconfiguration.h 
 
 Stub comment for brief. Please update this comment.
 

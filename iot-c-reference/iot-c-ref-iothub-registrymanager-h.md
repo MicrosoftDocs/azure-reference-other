@@ -1,4 +1,4 @@
-# Header file iothub_registrymanager.h 
+# iothub_registrymanager.h 
 
 Stub comment for brief. Please update this comment.
 

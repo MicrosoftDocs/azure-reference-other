@@ -1,4 +1,4 @@
-# Header file provisioning_sc_device_capabilities.h 
+# provisioning_sc_device_capabilities.h 
 
 Stub comment for brief. Please update this comment.
 

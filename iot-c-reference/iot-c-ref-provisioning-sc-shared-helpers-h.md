@@ -1,4 +1,4 @@
-# Header file provisioning_sc_shared_helpers.h 
+# provisioning_sc_shared_helpers.h 
 
 Stub comment for brief. Please update this comment.
 

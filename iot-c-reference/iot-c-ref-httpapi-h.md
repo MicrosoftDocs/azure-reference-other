@@ -1,4 +1,4 @@
-# Header file httpapi.h 
+# httpapi.h 
 
 This module implements the standard HTTP API used by the C IoT client library.
 

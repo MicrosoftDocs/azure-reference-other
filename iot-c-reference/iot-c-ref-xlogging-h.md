@@ -1,4 +1,4 @@
-# Header file xlogging.h 
+# xlogging.h 
 
 Stub comment for brief. Please update this comment.
 

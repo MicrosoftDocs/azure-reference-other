@@ -1,4 +1,4 @@
-# Header file iothub_messaging.h 
+# iothub_messaging.h 
 
 Stub comment for brief. Please update this comment.
 

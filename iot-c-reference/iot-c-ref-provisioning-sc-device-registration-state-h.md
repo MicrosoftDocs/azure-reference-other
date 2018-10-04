@@ -1,4 +1,4 @@
-# Header file provisioning_sc_device_registration_state.h 
+# provisioning_sc_device_registration_state.h 
 
 Stub comment for brief. Please update this comment.
 

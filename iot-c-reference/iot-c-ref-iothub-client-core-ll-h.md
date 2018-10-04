@@ -1,4 +1,4 @@
-# Header file iothub_client_core_ll.h 
+# iothub_client_core_ll.h 
 
 APIs that allow a user (usually a device) to communicate with an Azure IoTHub.
 

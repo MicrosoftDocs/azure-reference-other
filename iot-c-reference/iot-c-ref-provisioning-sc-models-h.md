@@ -1,4 +1,4 @@
-# Header file provisioning_sc_models.h 
+# provisioning_sc_models.h 
 
 Stub comment for brief. Please update this comment.
 

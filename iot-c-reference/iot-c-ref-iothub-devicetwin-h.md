@@ -1,4 +1,4 @@
-# Header file iothub_devicetwin.h 
+# iothub_devicetwin.h 
 
 Stub comment for brief. Please update this comment.
 

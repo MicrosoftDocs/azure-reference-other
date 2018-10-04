@@ -1,4 +1,4 @@
-# Header file lock.h 
+# lock.h 
 
 A minimalistic platform agnostic lock abstraction for thread synchronization.
 

@@ -1,4 +1,4 @@
-# Header file iothubtransporthttp.h 
+# iothubtransporthttp.h 
 
 Stub comment for brief. Please update this comment.
 

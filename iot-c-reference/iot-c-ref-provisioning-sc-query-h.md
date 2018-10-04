@@ -1,4 +1,4 @@
-# Header file provisioning_sc_query.h 
+# provisioning_sc_query.h 
 
 Stub comment for brief. Please update this comment.
 

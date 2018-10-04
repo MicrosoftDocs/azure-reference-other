@@ -1,4 +1,4 @@
-# Header file prov_edge_trusted_certificates.h 
+# prov_edge_trusted_certificates.h 
 
 Stub comment for brief. Please update this comment.
 

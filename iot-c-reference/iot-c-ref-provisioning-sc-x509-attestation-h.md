@@ -1,4 +1,4 @@
-# Header file provisioning_sc_x509_attestation.h 
+# provisioning_sc_x509_attestation.h 
 
 Stub comment for brief. Please update this comment.
 

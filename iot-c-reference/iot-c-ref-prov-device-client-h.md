@@ -1,4 +1,4 @@
-# Header file prov_device_client.h 
+# prov_device_client.h 
 
 Extends the Prov_Device_LL module with additional features.
 

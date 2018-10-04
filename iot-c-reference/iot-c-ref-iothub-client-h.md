@@ -1,4 +1,4 @@
-# Header file iothub_client.h 
+# iothub_client.h 
 
 Extends the IoTHubCLient_LL module with additional features.
 

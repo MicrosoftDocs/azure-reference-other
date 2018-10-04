@@ -1,4 +1,4 @@
-# Header file threadapi.h 
+# threadapi.h 
 
 This module implements support for creating new threads, terminating threads and sleeping threads.
 

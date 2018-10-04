@@ -1,4 +1,4 @@
-# Header file platform.h 
+# platform.h 
 
 Stub comment for brief. Please update this comment.
 

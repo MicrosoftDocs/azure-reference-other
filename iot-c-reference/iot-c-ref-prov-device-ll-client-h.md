@@ -1,4 +1,4 @@
-# Header file prov_device_ll_client.h 
+# prov_device_ll_client.h 
 
 Stub comment for brief. Please update this comment.
 

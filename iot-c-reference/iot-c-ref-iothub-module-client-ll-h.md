@@ -1,4 +1,4 @@
-# Header file iothub_module_client_ll.h 
+# iothub_module_client_ll.h 
 
 APIs that allow a user (usually a module) to communicate with an Azure IoTHub.
 

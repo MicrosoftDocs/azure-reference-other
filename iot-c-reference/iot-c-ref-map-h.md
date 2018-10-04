@@ -1,4 +1,4 @@
-# Header file map.h 
+# map.h 
 
 Map is a module that implements a dictionary of `STRING_HANDLE` keys to `STRING_HANDLE` values.
 

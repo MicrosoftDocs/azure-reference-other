@@ -1,4 +1,4 @@
-# Header file singlylinkedlist.h 
+# singlylinkedlist.h 
 
 Stub comment for brief. Please update this comment.
 

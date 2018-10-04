@@ -1,4 +1,4 @@
-# Header file provisioning_sc_json_const.h 
+# provisioning_sc_json_const.h 
 
 Stub comment for brief. Please update this comment.
 

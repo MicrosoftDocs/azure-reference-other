@@ -1,4 +1,4 @@
-# Header file prov_transport_amqp_ws_client.h 
+# prov_transport_amqp_ws_client.h 
 
 Stub comment for brief. Please update this comment.
 

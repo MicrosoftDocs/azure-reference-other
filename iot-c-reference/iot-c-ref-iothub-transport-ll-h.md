@@ -1,4 +1,4 @@
-# Header file iothub_transport_ll.h 
+# iothub_transport_ll.h 
 
 Stub comment for brief. Please update this comment.
 

@@ -1,4 +1,4 @@
-# Header file strings.h 
+# strings.h 
 
 Stub comment for brief. Please update this comment.
 

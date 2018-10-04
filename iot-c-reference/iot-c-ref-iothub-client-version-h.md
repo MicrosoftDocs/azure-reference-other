@@ -1,4 +1,4 @@
-# Header file iothub_client_version.h 
+# iothub_client_version.h 
 
 Functions for managing the client SDK version.
 

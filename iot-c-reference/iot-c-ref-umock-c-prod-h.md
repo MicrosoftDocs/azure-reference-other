@@ -1,4 +1,4 @@
-# Header file umock_c_prod.h 
+# umock_c_prod.h 
 
 Stub comment for brief. Please update this comment.
 

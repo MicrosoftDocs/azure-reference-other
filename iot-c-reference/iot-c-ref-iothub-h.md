@@ -1,4 +1,4 @@
-# Header file iothub.h 
+# iothub.h 
 
 Stub comment for brief. Please update this comment.
 

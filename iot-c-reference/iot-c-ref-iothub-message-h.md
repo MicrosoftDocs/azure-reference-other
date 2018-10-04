@@ -1,4 +1,4 @@
-# Header file iothub_message.h 
+# iothub_message.h 
 
 The `IoTHub_Message` component encapsulates one message that can be transferred by an IoT hub client.
 

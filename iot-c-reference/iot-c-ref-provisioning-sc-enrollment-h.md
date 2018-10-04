@@ -1,4 +1,4 @@
-# Header file provisioning_sc_enrollment.h 
+# provisioning_sc_enrollment.h 
 
 Stub comment for brief. Please update this comment.
 

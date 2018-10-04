@@ -1,4 +1,4 @@
-# Header file iothubtransportmqtt_websockets.h 
+# iothubtransportmqtt_websockets.h 
 
 Stub comment for brief. Please update this comment.
 

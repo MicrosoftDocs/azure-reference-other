@@ -1,4 +1,4 @@
-# Header file iothubtransportamqp.h 
+# iothubtransportamqp.h 
 
 Stub comment for brief. Please update this comment.
 

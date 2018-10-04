@@ -1,4 +1,4 @@
-# Header file iothub_client_core_common.h 
+# iothub_client_core_common.h 
 
 Stub comment for brief. Please update this comment.
 

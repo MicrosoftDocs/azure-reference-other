@@ -1,4 +1,4 @@
-# Header file tickcounter.h 
+# tickcounter.h 
 
 Stub comment for brief. Please update this comment.
 

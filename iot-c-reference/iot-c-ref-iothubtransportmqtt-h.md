@@ -1,4 +1,4 @@
-# Header file iothubtransportmqtt.h 
+# iothubtransportmqtt.h 
 
 Stub comment for brief. Please update this comment.
 

@@ -1,4 +1,4 @@
-# Header file provisioning_sc_bulk_operation.h 
+# provisioning_sc_bulk_operation.h 
 
 Stub comment for brief. Please update this comment.
 
