@@ -6,8 +6,8 @@
 
 ```C
 THREADAPI_RESULT ThreadAPI_Join(
-  THREAD_HANDLE  	threadHandle,
-  int *          	res
+  THREAD_HANDLE  threadHandle,
+  int *          res
 );
 
 ```

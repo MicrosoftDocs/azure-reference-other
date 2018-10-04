@@ -6,11 +6,11 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClientCore_UploadMultipleBlocksToBlobAsync(
-  IOTHUB_CLIENT_CORE_HANDLE                       	iotHubClientHandle,
-  const char *                                    	destinationFileName,
-  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK     	getDataCallback,
-  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX  	getDataCallbackEx,
-  void *                                          	context
+  IOTHUB_CLIENT_CORE_HANDLE                       iotHubClientHandle,
+  const char *                                    destinationFileName,
+  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK     getDataCallback,
+  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX  getDataCallbackEx,
+  void *                                          context
 );
 
 ```

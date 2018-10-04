@@ -6,7 +6,7 @@
 
 ```C
 int prov_dev_security_init(
-  SECURE_DEVICE_TYPE  	hsm_type
+  SECURE_DEVICE_TYPE  hsm_type
 );
 
 ```

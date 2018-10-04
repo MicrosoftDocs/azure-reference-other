@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetOption(
-  IOTHUB_MODULE_CLIENT_HANDLE  	iotHubModuleClientHandle,
-  const char *                 	optionName,
-  const void *                 	value
+  IOTHUB_MODULE_CLIENT_HANDLE  iotHubModuleClientHandle,
+  const char *                 optionName,
+  const void *                 value
 );
 
 ```

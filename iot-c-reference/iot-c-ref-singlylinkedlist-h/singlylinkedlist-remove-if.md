@@ -6,9 +6,9 @@
 
 ```C
 int singlylinkedlist_remove_if(
-  SINGLYLINKEDLIST_HANDLE  	list,
-  LIST_CONDITION_FUNCTION  	condition_function,
-  const void *             	match_context
+  SINGLYLINKEDLIST_HANDLE  list,
+  LIST_CONDITION_FUNCTION  condition_function,
+  const void *             match_context
 );
 
 ```

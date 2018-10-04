@@ -6,7 +6,7 @@
 
 ```C
 const char* IoTHubMessage_GetInputName(
-  IOTHUB_MESSAGE_HANDLE  	iotHubMessageHandle
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
 );
 
 ```

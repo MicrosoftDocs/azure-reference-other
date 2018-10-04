@@ -6,7 +6,7 @@
 
 ```C
 void IoTHubRegistryManager_Destroy(
-  IOTHUB_REGISTRYMANAGER_HANDLE  	registryManagerHandle
+  IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle
 );
 
 ```

@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetDiagnosticPropertyData(
-  IOTHUB_MESSAGE_HANDLE  	iotHubMessageHandle,
-  const                  	diagnosticData
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
+  const                  diagnosticData
 );
 
 ```

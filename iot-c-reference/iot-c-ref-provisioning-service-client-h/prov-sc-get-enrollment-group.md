@@ -6,9 +6,9 @@
 
 ```C
 int prov_sc_get_enrollment_group(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  	prov_client,
-  const char *                        	group_id,
-  ENROLLMENT_GROUP_HANDLE             	enrollment_ptr
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
+  const char *                        group_id,
+  ENROLLMENT_GROUP_HANDLE             enrollment_ptr
 );
 
 ```

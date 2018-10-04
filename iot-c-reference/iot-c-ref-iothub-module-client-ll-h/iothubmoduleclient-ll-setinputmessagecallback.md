@@ -6,10 +6,10 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetInputMessageCallback(
-  IOTHUB_MODULE_CLIENT_LL_HANDLE        	iotHubModuleClientHandle,
-  const char *                          	inputName,
-  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  	eventHandlerCallback,
-  void *                                	userContextCallback
+  IOTHUB_MODULE_CLIENT_LL_HANDLE        iotHubModuleClientHandle,
+  const char *                          inputName,
+  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  eventHandlerCallback,
+  void *                                userContextCallback
 );
 
 ```

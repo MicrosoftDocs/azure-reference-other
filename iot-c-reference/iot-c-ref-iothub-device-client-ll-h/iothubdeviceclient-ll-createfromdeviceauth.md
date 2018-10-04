@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_DEVICE_CLIENT_LL_HANDLE IoTHubDeviceClient_LL_CreateFromDeviceAuth(
-  const char *                      	iothub_uri,
-  const char *                      	device_id,
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER  	protocol
+  const char *                      iothub_uri,
+  const char *                      device_id,
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol
 );
 
 ```

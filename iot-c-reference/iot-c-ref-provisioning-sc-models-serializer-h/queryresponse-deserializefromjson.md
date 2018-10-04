@@ -6,8 +6,8 @@
 
 ```C
 PROVISIONING_QUERY_RESPONSE* queryResponse_deserializeFromJson(
-  const char *             	json_string,
-  PROVISIONING_QUERY_TYPE  	type
+  const char *             json_string,
+  PROVISIONING_QUERY_TYPE  type
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 ENROLLMENT_GROUP_HANDLE enrollmentGroup_deserializeFromJson(
-  const char *  	json_string
+  const char *  json_string
 );
 
 ```

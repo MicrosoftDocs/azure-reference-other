@@ -6,7 +6,7 @@
 
 ```C
 void enrollmentGroup_destroy(
-  ENROLLMENT_GROUP_HANDLE  	enrollment
+  ENROLLMENT_GROUP_HANDLE  enrollment
 );
 
 ```

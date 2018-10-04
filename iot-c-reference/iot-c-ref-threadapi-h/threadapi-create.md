@@ -6,9 +6,9 @@
 
 ```C
 THREADAPI_RESULT ThreadAPI_Create(
-  THREAD_HANDLE      	threadHandle,
-  THREAD_START_FUNC  	func,
-  void *             	arg
+  THREAD_HANDLE      threadHandle,
+  THREAD_START_FUNC  func,
+  void *             arg
 );
 
 ```

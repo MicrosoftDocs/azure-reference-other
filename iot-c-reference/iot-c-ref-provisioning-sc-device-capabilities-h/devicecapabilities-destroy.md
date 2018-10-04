@@ -6,7 +6,7 @@
 
 ```C
 void deviceCapabilities_destroy(
-  DEVICE_CAPABILITIES_HANDLE  	capabilities
+  DEVICE_CAPABILITIES_HANDLE  capabilities
 );
 
 ```

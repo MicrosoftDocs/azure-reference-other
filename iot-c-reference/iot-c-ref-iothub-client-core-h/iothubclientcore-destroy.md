@@ -6,7 +6,7 @@
 
 ```C
 void IoTHubClientCore_Destroy(
-  IOTHUB_CLIENT_CORE_HANDLE  	iotHubClientHandle
+  IOTHUB_CLIENT_CORE_HANDLE  iotHubClientHandle
 );
 
 ```

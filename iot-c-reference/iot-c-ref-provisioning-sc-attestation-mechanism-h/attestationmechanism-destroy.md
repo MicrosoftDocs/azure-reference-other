@@ -6,7 +6,7 @@
 
 ```C
 void attestationMechanism_destroy(
-  ATTESTATION_MECHANISM_HANDLE  	att_mech
+  ATTESTATION_MECHANISM_HANDLE  att_mech
 );
 
 ```

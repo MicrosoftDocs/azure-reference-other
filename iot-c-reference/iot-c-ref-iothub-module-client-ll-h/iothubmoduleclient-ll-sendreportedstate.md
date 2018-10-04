@@ -6,11 +6,11 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SendReportedState(
-  IOTHUB_MODULE_CLIENT_LL_HANDLE         	iotHubModuleClientHandle,
-  const unsigned char *                  	reportedState,
-  size_t                                 	size,
-  IOTHUB_CLIENT_REPORTED_STATE_CALLBACK  	reportedStateCallback,
-  void *                                 	userContextCallback
+  IOTHUB_MODULE_CLIENT_LL_HANDLE         iotHubModuleClientHandle,
+  const unsigned char *                  reportedState,
+  size_t                                 size,
+  IOTHUB_CLIENT_REPORTED_STATE_CALLBACK  reportedStateCallback,
+  void *                                 userContextCallback
 );
 
 ```

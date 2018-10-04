@@ -6,7 +6,7 @@
 
 ```C
 void IoTHubRegistryManager_FreeDeviceExMembers(
-  IOTHUB_DEVICE_EX  	deviceInfo
+  IOTHUB_DEVICE_EX  deviceInfo
 );
 
 ```

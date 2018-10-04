@@ -6,7 +6,7 @@
 
 ```C
 const char* x509Certificate_getNotBeforeUtc(
-  X509_CERTIFICATE_HANDLE  	x509_cert
+  X509_CERTIFICATE_HANDLE  x509_cert
 );
 
 ```

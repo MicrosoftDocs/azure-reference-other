@@ -6,7 +6,7 @@
 
 ```C
 REGISTRATION_STATUS deviceRegistrationState_getRegistrationStatus(
-  DEVICE_REGISTRATION_STATE_HANDLE  	drs
+  DEVICE_REGISTRATION_STATE_HANDLE  drs
 );
 
 ```

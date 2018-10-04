@@ -6,7 +6,7 @@
 
 ```C
 const char* OPTIONHANDLER_RESULTStrings(
-  OPTIONHANDLER_RESULT  	value
+  OPTIONHANDLER_RESULT  value
 );
 
 ```

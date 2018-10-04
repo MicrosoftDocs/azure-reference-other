@@ -6,7 +6,7 @@
 
 ```C
 MAP_HANDLE IoTHubMessage_Properties(
-  IOTHUB_MESSAGE_HANDLE  	iotHubMessageHandle
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
 );
 
 ```

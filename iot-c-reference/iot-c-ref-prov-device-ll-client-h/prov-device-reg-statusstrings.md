@@ -6,7 +6,7 @@
 
 ```C
 const char* PROV_DEVICE_REG_STATUSStrings(
-  PROV_DEVICE_REG_STATUS  	value
+  PROV_DEVICE_REG_STATUS  value
 );
 
 ```

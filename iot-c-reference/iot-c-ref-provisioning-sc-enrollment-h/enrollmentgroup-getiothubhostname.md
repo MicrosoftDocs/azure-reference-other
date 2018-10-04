@@ -6,7 +6,7 @@
 
 ```C
 const char* enrollmentGroup_getIotHubHostName(
-  ENROLLMENT_GROUP_HANDLE  	enrollment
+  ENROLLMENT_GROUP_HANDLE  enrollment
 );
 
 ```

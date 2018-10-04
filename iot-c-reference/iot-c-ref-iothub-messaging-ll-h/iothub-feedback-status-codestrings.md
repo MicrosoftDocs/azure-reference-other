@@ -6,7 +6,7 @@
 
 ```C
 const char* IOTHUB_FEEDBACK_STATUS_CODEStrings(
-  IOTHUB_FEEDBACK_STATUS_CODE  	value
+  IOTHUB_FEEDBACK_STATUS_CODE  value
 );
 
 ```

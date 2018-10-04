@@ -6,7 +6,7 @@
 
 ```C
 DEVICE_REGISTRATION_STATE_HANDLE individualEnrollment_getDeviceRegistrationState(
-  INDIVIDUAL_ENROLLMENT_HANDLE  	enrollment
+  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment
 );
 
 ```

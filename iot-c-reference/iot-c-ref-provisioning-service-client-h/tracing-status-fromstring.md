@@ -6,8 +6,8 @@
 
 ```C
 int TRACING_STATUS_FromString(
-  const char *    	enumAsString,
-  TRACING_STATUS  	destination
+  const char *    enumAsString,
+  TRACING_STATUS  destination
 );
 
 ```

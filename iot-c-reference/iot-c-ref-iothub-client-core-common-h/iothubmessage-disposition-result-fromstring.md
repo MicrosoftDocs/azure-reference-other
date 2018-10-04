@@ -6,8 +6,8 @@
 
 ```C
 int IOTHUBMESSAGE_DISPOSITION_RESULT_FromString(
-  const char *                      	enumAsString,
-  IOTHUBMESSAGE_DISPOSITION_RESULT  	destination
+  const char *                      enumAsString,
+  IOTHUBMESSAGE_DISPOSITION_RESULT  destination
 );
 
 ```

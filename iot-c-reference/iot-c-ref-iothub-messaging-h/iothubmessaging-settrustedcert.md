@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_MESSAGING_RESULT IoTHubMessaging_SetTrustedCert(
-  IOTHUB_MESSAGING_CLIENT_HANDLE  	messagingClientHandle,
-  const char *                    	trusted_cert
+  IOTHUB_MESSAGING_CLIENT_HANDLE  messagingClientHandle,
+  const char *                    trusted_cert
 );
 
 ```

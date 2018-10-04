@@ -6,7 +6,7 @@
 
 ```C
 IOTHUB_MESSAGING_CLIENT_HANDLE IoTHubMessaging_Create(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  	serviceClientHandle
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle
 );
 
 ```

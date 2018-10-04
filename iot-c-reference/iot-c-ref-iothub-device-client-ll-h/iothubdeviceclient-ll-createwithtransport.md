@@ -6,7 +6,7 @@
 
 ```C
 IOTHUB_DEVICE_CLIENT_LL_HANDLE IoTHubDeviceClient_LL_CreateWithTransport(
-  const   	config
+  const   config
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 void OptionHandler_Destroy(
-  OPTIONHANDLER_HANDLE  	handle
+  OPTIONHANDLER_HANDLE  handle
 );
 
 ```

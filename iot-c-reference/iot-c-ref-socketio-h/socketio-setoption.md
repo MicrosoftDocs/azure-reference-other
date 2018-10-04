@@ -6,9 +6,9 @@
 
 ```C
 int socketio_setoption(
-  CONCRETE_IO_HANDLE  	socket_io,
-  const char *        	optionName,
-  const void *        	value
+  CONCRETE_IO_HANDLE  socket_io,
+  const char *        optionName,
+  const void *        value
 );
 
 ```

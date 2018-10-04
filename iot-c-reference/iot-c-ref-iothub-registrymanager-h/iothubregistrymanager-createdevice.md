@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateDevice(
-  IOTHUB_REGISTRYMANAGER_HANDLE  	registryManagerHandle,
-  const                          	deviceCreate,
-  IOTHUB_DEVICE                  	device
+  IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
+  const                          deviceCreate,
+  IOTHUB_DEVICE                  device
 );
 
 ```

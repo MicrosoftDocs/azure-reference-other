@@ -6,9 +6,9 @@
 
 ```C
 void LogBinary(
-  const char *  	comment,
-  const void *  	data,
-  size_t        	size
+  const char *  comment,
+  const void *  data,
+  size_t        size
 );
 
 ```

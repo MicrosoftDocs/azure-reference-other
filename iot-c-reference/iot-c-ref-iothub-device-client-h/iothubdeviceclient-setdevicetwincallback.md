@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetDeviceTwinCallback(
-  IOTHUB_DEVICE_CLIENT_HANDLE         	iotHubClientHandle,
-  IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK  	deviceTwinCallback,
-  void *                              	userContextCallback
+  IOTHUB_DEVICE_CLIENT_HANDLE         iotHubClientHandle,
+  IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK  deviceTwinCallback,
+  void *                              userContextCallback
 );
 
 ```

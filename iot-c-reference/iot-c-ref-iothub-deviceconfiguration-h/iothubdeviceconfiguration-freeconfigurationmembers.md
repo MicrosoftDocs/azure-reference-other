@@ -6,7 +6,7 @@
 
 ```C
 void IoTHubDeviceConfiguration_FreeConfigurationMembers(
-  IOTHUB_DEVICE_CONFIGURATION  	configuration
+  IOTHUB_DEVICE_CONFIGURATION  configuration
 );
 
 ```

@@ -6,11 +6,11 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_DeviceMethodResponse(
-  IOTHUB_DEVICE_CLIENT_HANDLE  	iotHubClientHandle,
-  METHOD_HANDLE                	methodId,
-  const unsigned char *        	response,
-  size_t                       	response_size,
-  int                          	statusCode
+  IOTHUB_DEVICE_CLIENT_HANDLE  iotHubClientHandle,
+  METHOD_HANDLE                methodId,
+  const unsigned char *        response,
+  size_t                       response_size,
+  int                          statusCode
 );
 
 ```

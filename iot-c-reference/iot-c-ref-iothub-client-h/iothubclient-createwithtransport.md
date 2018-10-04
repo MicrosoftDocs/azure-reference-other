@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_CLIENT_HANDLE IoTHubClient_CreateWithTransport(
-  TRANSPORT_HANDLE  	transportHandle,
-  const             	config
+  TRANSPORT_HANDLE  transportHandle,
+  const             config
 );
 
 ```

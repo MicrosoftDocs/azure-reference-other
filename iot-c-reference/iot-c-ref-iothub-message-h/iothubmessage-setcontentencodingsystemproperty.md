@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentEncodingSystemProperty(
-  IOTHUB_MESSAGE_HANDLE  	iotHubMessageHandle,
-  const char *           	contentEncoding
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
+  const char *           contentEncoding
 );
 
 ```

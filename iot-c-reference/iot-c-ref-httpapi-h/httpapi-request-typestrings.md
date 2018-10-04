@@ -6,7 +6,7 @@
 
 ```C
 const char* HTTPAPI_REQUEST_TYPEStrings(
-  HTTPAPI_REQUEST_TYPE  	value
+  HTTPAPI_REQUEST_TYPE  value
 );
 
 ```

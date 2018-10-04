@@ -6,10 +6,10 @@
 
 ```C
 MAP_RESULT Map_GetInternals(
-  MAP_HANDLE            	handle,
-  const char *const **  	keys,
-  const char *const **  	values,
-  size_t *              	count
+  MAP_HANDLE            handle,
+  const char *const **  keys,
+  const char *const **  values,
+  size_t *              count
 );
 
 ```

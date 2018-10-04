@@ -6,9 +6,9 @@
 
 ```C
 int xio_setoption(
-  XIO_HANDLE    	xio,
-  const char *  	optionName,
-  const void *  	value
+  XIO_HANDLE    xio,
+  const char *  optionName,
+  const void *  value
 );
 
 ```

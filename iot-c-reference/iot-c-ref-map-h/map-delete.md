@@ -6,8 +6,8 @@
 
 ```C
 MAP_RESULT Map_Delete(
-  MAP_HANDLE    	handle,
-  const char *  	key
+  MAP_HANDLE    handle,
+  const char *  key
 );
 
 ```

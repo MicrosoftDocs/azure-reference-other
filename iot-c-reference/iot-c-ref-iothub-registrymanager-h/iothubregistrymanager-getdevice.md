@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetDevice(
-  IOTHUB_REGISTRYMANAGER_HANDLE  	registryManagerHandle,
-  const char *                   	deviceId,
-  IOTHUB_DEVICE                  	device
+  IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
+  const char *                   deviceId,
+  IOTHUB_DEVICE                  device
 );
 
 ```

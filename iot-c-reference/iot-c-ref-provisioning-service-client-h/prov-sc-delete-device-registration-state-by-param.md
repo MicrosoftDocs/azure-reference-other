@@ -6,9 +6,9 @@
 
 ```C
 int prov_sc_delete_device_registration_state_by_param(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  	prov_client,
-  const char *                        	reg_id,
-  const char *                        	etag
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
+  const char *                        reg_id,
+  const char *                        etag
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 STRING_HANDLE STRING_construct_sprintf(
-  const char *  	format,
+  const char *  format,
   ...           );
 
 ```

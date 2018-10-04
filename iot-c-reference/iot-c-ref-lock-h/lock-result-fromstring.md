@@ -6,8 +6,8 @@
 
 ```C
 int LOCK_RESULT_FromString(
-  const char *  	enumAsString,
-  LOCK_RESULT   	destination
+  const char *  enumAsString,
+  LOCK_RESULT   destination
 );
 
 ```

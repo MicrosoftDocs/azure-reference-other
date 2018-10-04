@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_GetByteArray(
-  IOTHUB_MESSAGE_HANDLE   	iotHubMessageHandle,
-  const unsigned char **  	buffer,
-  size_t *                	size
+  IOTHUB_MESSAGE_HANDLE   iotHubMessageHandle,
+  const unsigned char **  buffer,
+  size_t *                size
 );
 
 ```

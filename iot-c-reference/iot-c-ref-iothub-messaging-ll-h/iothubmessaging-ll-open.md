@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_Open(
-  IOTHUB_MESSAGING_HANDLE        	messagingHandle,
-  IOTHUB_OPEN_COMPLETE_CALLBACK  	openCompleteCallback,
-  void *                         	userContextCallback
+  IOTHUB_MESSAGING_HANDLE        messagingHandle,
+  IOTHUB_OPEN_COMPLETE_CALLBACK  openCompleteCallback,
+  void *                         userContextCallback
 );
 
 ```

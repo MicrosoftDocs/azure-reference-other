@@ -6,9 +6,9 @@
 
 ```C
 HTTPAPI_RESULT HTTPAPI_SetOption(
-  HTTP_HANDLE   	handle,
-  const char *  	optionName,
-  const void *  	value
+  HTTP_HANDLE   handle,
+  const char *  optionName,
+  const void *  value
 );
 
 ```

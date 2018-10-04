@@ -6,7 +6,7 @@
 
 ```C
 void initialTwin_destroy(
-  INITIAL_TWIN_HANDLE  	twin
+  INITIAL_TWIN_HANDLE  twin
 );
 
 ```

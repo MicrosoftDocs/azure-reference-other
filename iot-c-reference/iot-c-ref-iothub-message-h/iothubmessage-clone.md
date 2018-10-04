@@ -6,7 +6,7 @@
 
 ```C
 IOTHUB_MESSAGE_HANDLE IoTHubMessage_Clone(
-  IOTHUB_MESSAGE_HANDLE  	iotHubMessageHandle
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
 );
 
 ```

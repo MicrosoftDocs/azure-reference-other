@@ -6,8 +6,8 @@
 
 ```C
 int mallocAndStrcpy_overwrite(
-  char **       	dest,
-  const char *  	source
+  char **       dest,
+  const char *  source
 );
 
 ```

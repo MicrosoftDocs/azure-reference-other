@@ -6,7 +6,7 @@
 
 ```C
 void xlogging_set_log_function(
-  LOGGER_LOG  	log_function
+  LOGGER_LOG  log_function
 );
 
 ```

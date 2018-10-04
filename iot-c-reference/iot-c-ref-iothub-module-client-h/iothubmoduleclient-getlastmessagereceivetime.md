@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_GetLastMessageReceiveTime(
-  IOTHUB_MODULE_CLIENT_HANDLE  	iotHubModuleClientHandle,
-  time_t *                     	lastMessageReceiveTime
+  IOTHUB_MODULE_CLIENT_HANDLE  iotHubModuleClientHandle,
+  time_t *                     lastMessageReceiveTime
 );
 
 ```

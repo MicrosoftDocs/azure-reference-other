@@ -6,8 +6,8 @@
 
 ```C
 int IOTHUB_IDENTITY_TYPE_FromString(
-  const char *          	enumAsString,
-  IOTHUB_IDENTITY_TYPE  	destination
+  const char *          enumAsString,
+  IOTHUB_IDENTITY_TYPE  destination
 );
 
 ```

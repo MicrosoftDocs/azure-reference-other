@@ -6,7 +6,7 @@
 
 ```C
 const char* initialTwin_getDesiredProperties(
-  INITIAL_TWIN_HANDLE  	twin
+  INITIAL_TWIN_HANDLE  twin
 );
 
 ```

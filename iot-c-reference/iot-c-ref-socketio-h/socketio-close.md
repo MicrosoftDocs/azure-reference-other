@@ -6,9 +6,9 @@
 
 ```C
 int socketio_close(
-  CONCRETE_IO_HANDLE    	socket_io,
-  ON_IO_CLOSE_COMPLETE  	on_io_close_complete,
-  void *                	callback_context
+  CONCRETE_IO_HANDLE    socket_io,
+  ON_IO_CLOSE_COMPLETE  on_io_close_complete,
+  void *                callback_context
 );
 
 ```

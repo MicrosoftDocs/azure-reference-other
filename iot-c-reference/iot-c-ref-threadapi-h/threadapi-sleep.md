@@ -6,7 +6,7 @@
 
 ```C
 void ThreadAPI_Sleep(
-  unsigned int  	milliseconds
+  unsigned int  milliseconds
 );
 
 ```

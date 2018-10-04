@@ -6,9 +6,9 @@
 
 ```C
 MAP_RESULT Map_AddOrUpdate(
-  MAP_HANDLE    	handle,
-  const char *  	key,
-  const char *  	value
+  MAP_HANDLE    handle,
+  const char *  key,
+  const char *  value
 );
 
 ```

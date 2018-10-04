@@ -6,8 +6,8 @@
 
 ```C
 int PROVISIONING_STATUS_FromString(
-  const char *         	enumAsString,
-  PROVISIONING_STATUS  	destination
+  const char *         enumAsString,
+  PROVISIONING_STATUS  destination
 );
 
 ```

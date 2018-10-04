@@ -6,7 +6,7 @@
 
 ```C
 LOCK_RESULT Unlock(
-  LOCK_HANDLE  	handle
+  LOCK_HANDLE  handle
 );
 
 ```

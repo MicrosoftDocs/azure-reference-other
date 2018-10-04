@@ -6,8 +6,8 @@
 
 ```C
 void prov_sc_set_trace(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  	prov_client,
-  TRACING_STATUS                      	status
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
+  TRACING_STATUS                      status
 );
 
 ```

@@ -6,10 +6,10 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClientCore_LL_UploadToBlob(
-  IOTHUB_CLIENT_CORE_LL_HANDLE  	iotHubClientHandle,
-  const char *                  	destinationFileName,
-  const unsigned char *         	source,
-  size_t                        	size
+  IOTHUB_CLIENT_CORE_LL_HANDLE  iotHubClientHandle,
+  const char *                  destinationFileName,
+  const unsigned char *         source,
+  size_t                        size
 );
 
 ```

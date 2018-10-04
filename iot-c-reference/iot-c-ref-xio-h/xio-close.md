@@ -6,9 +6,9 @@
 
 ```C
 int xio_close(
-  XIO_HANDLE            	xio,
-  ON_IO_CLOSE_COMPLETE  	on_io_close_complete,
-  void *                	callback_context
+  XIO_HANDLE            xio,
+  ON_IO_CLOSE_COMPLETE  on_io_close_complete,
+  void *                callback_context
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 MAP_HANDLE Map_Create(
-  MAP_FILTER_CALLBACK  	mapFilterFunc
+  MAP_FILTER_CALLBACK  mapFilterFunc
 );
 
 ```

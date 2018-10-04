@@ -6,8 +6,8 @@
 
 ```C
 int prov_sc_delete_device_registration_state(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  	prov_client,
-  DEVICE_REGISTRATION_STATE_HANDLE    	reg_state
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
+  DEVICE_REGISTRATION_STATE_HANDLE    reg_state
 );
 
 ```

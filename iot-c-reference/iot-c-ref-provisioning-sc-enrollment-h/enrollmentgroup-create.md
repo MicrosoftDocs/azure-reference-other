@@ -6,8 +6,8 @@
 
 ```C
 ENROLLMENT_GROUP_HANDLE enrollmentGroup_create(
-  const char *                  	group_id,
-  ATTESTATION_MECHANISM_HANDLE  	att_mech
+  const char *                  group_id,
+  ATTESTATION_MECHANISM_HANDLE  att_mech
 );
 
 ```

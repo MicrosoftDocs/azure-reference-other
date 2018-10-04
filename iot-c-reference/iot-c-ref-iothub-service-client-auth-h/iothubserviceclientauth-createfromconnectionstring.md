@@ -6,7 +6,7 @@
 
 ```C
 IOTHUB_SERVICE_CLIENT_AUTH_HANDLE IoTHubServiceClientAuth_CreateFromConnectionString(
-  const char *  	connectionString
+  const char *  connectionString
 );
 
 ```

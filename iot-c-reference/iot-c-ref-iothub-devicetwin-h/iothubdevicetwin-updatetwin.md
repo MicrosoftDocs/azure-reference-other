@@ -6,9 +6,9 @@
 
 ```C
 char* IoTHubDeviceTwin_UpdateTwin(
-  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  	serviceClientDeviceTwinHandle,
-  const char *                              	deviceId,
-  const char *                              	deviceTwinJson
+  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle,
+  const char *                              deviceId,
+  const char *                              deviceTwinJson
 );
 
 ```

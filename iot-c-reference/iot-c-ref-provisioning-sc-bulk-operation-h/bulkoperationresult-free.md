@@ -6,7 +6,7 @@
 
 ```C
 void bulkOperationResult_free(
-  PROVISIONING_BULK_OPERATION_RESULT  	bulk_op_result
+  PROVISIONING_BULK_OPERATION_RESULT  bulk_op_result
 );
 
 ```

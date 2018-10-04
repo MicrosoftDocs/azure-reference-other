@@ -6,8 +6,8 @@
 
 ```C
 STRING_HANDLE STRING_construct_n(
-  const char *  	psz,
-  size_t        	n
+  const char *  psz,
+  size_t        n
 );
 
 ```

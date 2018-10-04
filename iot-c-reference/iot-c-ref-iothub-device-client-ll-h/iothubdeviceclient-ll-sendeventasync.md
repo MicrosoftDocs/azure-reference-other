@@ -6,10 +6,10 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendEventAsync(
-  IOTHUB_DEVICE_CLIENT_LL_HANDLE             	iotHubClientHandle,
-  IOTHUB_MESSAGE_HANDLE                      	eventMessageHandle,
-  IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK  	eventConfirmationCallback,
-  void *                                     	userContextCallback
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE             iotHubClientHandle,
+  IOTHUB_MESSAGE_HANDLE                      eventMessageHandle,
+  IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK  eventConfirmationCallback,
+  void *                                     userContextCallback
 );
 
 ```

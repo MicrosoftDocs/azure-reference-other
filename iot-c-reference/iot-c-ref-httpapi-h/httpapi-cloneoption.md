@@ -6,9 +6,9 @@
 
 ```C
 HTTPAPI_RESULT HTTPAPI_CloneOption(
-  const char *   	optionName,
-  const void *   	value,
-  const void **  	savedValue
+  const char *   optionName,
+  const void *   value,
+  const void **  savedValue
 );
 
 ```

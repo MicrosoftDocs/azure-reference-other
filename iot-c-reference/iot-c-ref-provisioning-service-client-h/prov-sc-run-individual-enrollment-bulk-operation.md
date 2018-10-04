@@ -6,9 +6,9 @@
 
 ```C
 int prov_sc_run_individual_enrollment_bulk_operation(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  	prov_client,
-  PROVISIONING_BULK_OPERATION         	bulk_op,
-  PROVISIONING_BULK_OPERATION_RESULT  	bulk_res_ptr
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
+  PROVISIONING_BULK_OPERATION         bulk_op,
+  PROVISIONING_BULK_OPERATION_RESULT  bulk_res_ptr
 );
 
 ```

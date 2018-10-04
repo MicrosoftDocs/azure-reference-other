@@ -6,8 +6,8 @@
 
 ```C
 LIST_ITEM_HANDLE singlylinkedlist_add(
-  SINGLYLINKEDLIST_HANDLE  	list,
-  const void *             	item
+  SINGLYLINKEDLIST_HANDLE  list,
+  const void *             item
 );
 
 ```

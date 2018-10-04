@@ -6,12 +6,12 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_UploadToBlobAsync(
-  IOTHUB_DEVICE_CLIENT_HANDLE         	iotHubClientHandle,
-  const char *                        	destinationFileName,
-  const unsigned char *               	source,
-  size_t                              	size,
-  IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK  	iotHubClientFileUploadCallback,
-  void *                              	context
+  IOTHUB_DEVICE_CLIENT_HANDLE         iotHubClientHandle,
+  const char *                        destinationFileName,
+  const unsigned char *               source,
+  size_t                              size,
+  IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK  iotHubClientFileUploadCallback,
+  void *                              context
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 void IoTHubMessaging_LL_DoWork(
-  IOTHUB_MESSAGING_HANDLE  	messagingHandle
+  IOTHUB_MESSAGING_HANDLE  messagingHandle
 );
 
 ```
