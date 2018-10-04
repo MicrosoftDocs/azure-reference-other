@@ -2,7 +2,16 @@
 
 \#include ["azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h"](../iot-c-ref-iothub-devicetwin-h.md)  
 
-**char * [IoTHubDeviceTwin_UpdateTwin](#iothub__devicetwin_8h_1adabb401facb6b2c95024beb2d351c87d)([IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId,const char * deviceTwinJson)**
+## Syntax
+
+```C
+char* IoTHubDeviceTwin_UpdateTwin(
+  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE	serviceClientDeviceTwinHandle,
+  const char *	deviceId,
+  const char *	deviceTwinJson
+);
+
+```
 
 Updates (partial update) the given device's twin info.
 

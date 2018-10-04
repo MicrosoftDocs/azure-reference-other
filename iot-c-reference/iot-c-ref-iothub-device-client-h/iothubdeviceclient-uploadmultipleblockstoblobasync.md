@@ -2,7 +2,17 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h"](../iot-c-ref-iothub-device-client-h.md)  
 
-**[IOTHUB_CLIENT_RESULT](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) [IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync](#iothub__device__client_8h_1a973fec89efccbd3bb0af1c703a6adc79)([IOTHUB_DEVICE_CLIENT_HANDLE](#iothub__device__client_8h_1ac0a6393bbcbec2e1b580e8c4c127f4c1) iotHubClientHandle,const char * destinationFileName,[IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX](#iothub__client__core__common_8h_1a0d9944dec4c4dd2bdd75cebb466dcf6c) getDataCallbackEx,void * context)**
+## Syntax
+
+```C
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync(
+  IOTHUB_DEVICE_CLIENT_HANDLE	iotHubClientHandle,
+  const char *	destinationFileName,
+  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX	getDataCallbackEx,
+  void *	context
+);
+
+```
 
 Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
 

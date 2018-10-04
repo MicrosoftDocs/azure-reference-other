@@ -34,23 +34,3 @@ Typedef                        | Value
 --------------------------------|---------------------------------------------
 LOCK_HANDLE            | 
 
-## Function documentation
-
-#### LOCK_RESULTStrings 
-const char * [LOCK_RESULTStrings](#lock_8h_1a10329414e53520e4ce34ffd3e0062a83)([LOCK_RESULT](#lock_8h_1a0c50183ac9ba70b668f85ba07a52269c) value)
-
-#### LOCK_RESULT_FromString 
-int [LOCK_RESULT_FromString](#lock_8h_1aeb20cf6e5a5d068526159dadb6d74e9d)(const char * enumAsString,[LOCK_RESULT](#lock_8h_1a0c50183ac9ba70b668f85ba07a52269c) * destination)
-
-#### Lock_Init 
-[LOCK_HANDLE](#lock_8h_1a83187a1340d2a8c817783e74f55d8281) [Lock_Init](#lock_8h_1a3683432285e999baa8c543f27633829c)(void)
-
-#### Lock 
-[LOCK_RESULT](#lock_8h_1a0c50183ac9ba70b668f85ba07a52269c) [Lock](#lock_8h_1a146c21d68c41777d20ef1f7e30518505)([LOCK_HANDLE](#lock_8h_1a83187a1340d2a8c817783e74f55d8281) handle)
-
-#### Unlock 
-[LOCK_RESULT](#lock_8h_1a0c50183ac9ba70b668f85ba07a52269c) [Unlock](#lock_8h_1aef3dd970e9edfc49b414aa6cb0f3ad84)([LOCK_HANDLE](#lock_8h_1a83187a1340d2a8c817783e74f55d8281) handle)
-
-#### Lock_Deinit 
-[LOCK_RESULT](#lock_8h_1a0c50183ac9ba70b668f85ba07a52269c) [Lock_Deinit](#lock_8h_1ac9743d97f19aac4a0bda808e57ef1249)([LOCK_HANDLE](#lock_8h_1a83187a1340d2a8c817783e74f55d8281) handle)
-

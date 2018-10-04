@@ -2,7 +2,17 @@
 
 \#include ["azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h"](../iot-c-ref-provisioning-service-client-h.md)  
 
-**int [prov_sc_query_individual_enrollment](#provisioning__service__client_8h_1aab1e03ff466abc075a25baf64e2fa819)([PROVISIONING_SERVICE_CLIENT_HANDLE](#provisioning__service__client_8h_1af84a07c4286fd5d90fc2871d08cd0d0d) prov_client,[PROVISIONING_QUERY_SPECIFICATION](#struct_p_r_o_v_i_s_i_o_n_i_n_g___q_u_e_r_y___s_p_e_c_i_f_i_c_a_t_i_o_n) * query_spec,char ** cont_token_ptr,[PROVISIONING_QUERY_RESPONSE](#struct_p_r_o_v_i_s_i_o_n_i_n_g___q_u_e_r_y___r_e_s_p_o_n_s_e) ** query_resp_ptr)**
+## Syntax
+
+```C
+int prov_sc_query_individual_enrollment(
+  PROVISIONING_SERVICE_CLIENT_HANDLE	prov_client,
+  PROVISIONING_QUERY_SPECIFICATION	query_spec,
+  char **	cont_token_ptr,
+  PROVISIONING_QUERY_RESPONSE	query_resp_ptr
+);
+
+```
 
 Queries individual device enrollment records from the Provisioning Service.
 

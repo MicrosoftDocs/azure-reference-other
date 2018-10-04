@@ -2,7 +2,16 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h"](../iot-c-ref-iothub-module-client-ll-h.md)  
 
-**[IOTHUB_CLIENT_RESULT](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) [IoTHubModuleClient_LL_SetModuleMethodCallback](#iothub__module__client__ll_8h_1a9eb4748db53e83c2d28608599ee6f267)([IOTHUB_MODULE_CLIENT_LL_HANDLE](#iothub__module__client__ll_8h_1ae1a6187aacbdb56cde026ad3d228420a) iotHubModuleClientHandle,[IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC](#iothub__client__core__common_8h_1aa758c6c04994938fae9257289760d01a) moduleMethodCallback,void * userContextCallback)**
+## Syntax
+
+```C
+IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetModuleMethodCallback(
+  IOTHUB_MODULE_CLIENT_LL_HANDLE	iotHubModuleClientHandle,
+  IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC	moduleMethodCallback,
+  void *	userContextCallback
+);
+
+```
 
 This API sets callback for async cloud to module method call.
 

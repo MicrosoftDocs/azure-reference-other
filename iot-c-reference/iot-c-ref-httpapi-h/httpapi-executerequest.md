@@ -2,7 +2,22 @@
 
 \#include ["azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h"](../iot-c-ref-httpapi-h.md)  
 
-**[HTTPAPI_RESULT](#httpapi_8h_1ae6d85e45d7bb89c3692f17750762557e) [HTTPAPI_ExecuteRequest](#httpapi_8h_1afa60b8d96e73b2fe592b591208ef66b1)([HTTP_HANDLE](#httpapi_8h_1a3b2d2d7095a41a942705e437133d35dc) handle,[HTTPAPI_REQUEST_TYPE](#httpapi_8h_1a7d55a20aafcc43be8d9a737dcbefd5ad) requestType,const char * relativePath,HTTP_HEADERS_HANDLE httpHeadersHandle,const unsigned char * content,size_t contentLength,unsigned int * statusCode,HTTP_HEADERS_HANDLE responseHeadersHandle,BUFFER_HANDLE responseContent)**
+## Syntax
+
+```C
+HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
+  HTTP_HANDLE	handle,
+  HTTPAPI_REQUEST_TYPE	requestType,
+  const char *	relativePath,
+  HTTP_HEADERS_HANDLE	httpHeadersHandle,
+  const unsigned char *	content,
+  size_t	contentLength,
+  unsigned int *	statusCode,
+  HTTP_HEADERS_HANDLE	responseHeadersHandle,
+  BUFFER_HANDLE	responseContent
+);
+
+```
 
 Sends the HTTP request to the host and handles the response for the HTTP call.
 

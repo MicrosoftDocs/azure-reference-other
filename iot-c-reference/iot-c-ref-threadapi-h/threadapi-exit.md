@@ -2,7 +2,14 @@
 
 \#include ["azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h"](../iot-c-ref-threadapi-h.md)  
 
-**void [ThreadAPI_Exit](#threadapi_8h_1a304fd6867f922d6321f36569d1769d04)(int res)**
+## Syntax
+
+```C
+void ThreadAPI_Exit(
+  int	res
+);
+
+```
 
 This function is called by a thread when the thread exits.
 

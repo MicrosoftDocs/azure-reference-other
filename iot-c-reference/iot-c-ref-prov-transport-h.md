@@ -37,17 +37,3 @@ Typedef                        | Value
 PROV_DEVICE_TRANSPORT_PROVIDER            | 
 PROV_DEVICE_TRANSPORT_HANDLE            | 
 
-## Function documentation
-
-#### TRANSPORT_HSM_TYPEStrings 
-const char * [TRANSPORT_HSM_TYPEStrings](#prov__transport_8h_1adb1e16090feacfd67af633af8caa4114)([TRANSPORT_HSM_TYPE](#prov__transport_8h_1a004b99d72c10223eed5aa9b23ea95905) value)
-
-#### TRANSPORT_HSM_TYPE_FromString 
-int [TRANSPORT_HSM_TYPE_FromString](#prov__transport_8h_1a2ab70c1b56f5261a4edebe022f03ffed)(const char * enumAsString,[TRANSPORT_HSM_TYPE](#prov__transport_8h_1a004b99d72c10223eed5aa9b23ea95905) * destination)
-
-#### PROV_DEVICE_TRANSPORT_RESULTStrings 
-const char * [PROV_DEVICE_TRANSPORT_RESULTStrings](#prov__transport_8h_1ae3c59192ee6bed7fc6e106784dac72e0)([PROV_DEVICE_TRANSPORT_RESULT](#prov__transport_8h_1acf3858785ecb5d22ae41ba72bba78797) value)
-
-#### PROV_DEVICE_TRANSPORT_RESULT_FromString 
-int [PROV_DEVICE_TRANSPORT_RESULT_FromString](#prov__transport_8h_1a624191c46a429a6700173821973ad950)(const char * enumAsString,[PROV_DEVICE_TRANSPORT_RESULT](#prov__transport_8h_1acf3858785ecb5d22ae41ba72bba78797) * destination)
-

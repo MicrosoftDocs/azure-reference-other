@@ -2,7 +2,16 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h"](../iot-c-ref-iothub-device-client-ll-h.md)  
 
-**[IOTHUB_CLIENT_RESULT](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) [IoTHubDeviceClient_LL_SetDeviceTwinCallback](#iothub__device__client__ll_8h_1a347a0fb6822105b8ad0e59f856acd850)([IOTHUB_DEVICE_CLIENT_LL_HANDLE](#iothub__device__client__ll_8h_1ab3ed1ccac784de53579181b349fd6616) iotHubClientHandle,[IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK](#iothub__client__core__common_8h_1a3020471f05025405840d9c43466122dc) deviceTwinCallback,void * userContextCallback)**
+## Syntax
+
+```C
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SetDeviceTwinCallback(
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE	iotHubClientHandle,
+  IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK	deviceTwinCallback,
+  void *	userContextCallback
+);
+
+```
 
 This API specifies a callback to be used when the device receives a desired state update.
 

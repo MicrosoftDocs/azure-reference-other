@@ -2,7 +2,16 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_client.h"](../iot-c-ref-iothub-client-h.md)  
 
-**[IOTHUB_CLIENT_RESULT](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) [IoTHubClient_SetMessageCallback](#iothub__client_8h_1a86d2a2ad2209f6e33bf59ee586abc042)([IOTHUB_CLIENT_HANDLE](#iothub__client_8h_1a228b1409767f2560aa0724caad86fd6d) iotHubClientHandle,[IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC](#iothub__client__core__common_8h_1adf7097e8fc9e34f26dd9347d4eaa5f8d) messageCallback,void * userContextCallback)**
+## Syntax
+
+```C
+IOTHUB_CLIENT_RESULT IoTHubClient_SetMessageCallback(
+  IOTHUB_CLIENT_HANDLE	iotHubClientHandle,
+  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC	messageCallback,
+  void *	userContextCallback
+);
+
+```
 
 Sets up the message callback to be invoked when IoT Hub issues a message to the device. This is a blocking call.
 

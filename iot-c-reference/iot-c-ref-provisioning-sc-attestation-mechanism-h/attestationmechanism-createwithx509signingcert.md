@@ -2,7 +2,15 @@
 
 \#include ["azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h"](../iot-c-ref-provisioning-sc-attestation-mechanism-h.md)  
 
-**[ATTESTATION_MECHANISM_HANDLE](#provisioning__sc__attestation__mechanism_8h_1adba99be7269bb68c4f8d2687bd4992b8) [attestationMechanism_createWithX509SigningCert](#provisioning__sc__attestation__mechanism_8h_1ab26c8ccd3577148f3cf4d029f04eea9f)(const char * primary_cert,const char * secondary_cert)**
+## Syntax
+
+```C
+ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509SigningCert(
+  const char *	primary_cert,
+  const char *	secondary_cert
+);
+
+```
 
 Creates an Attestation Mechanism handle that uses an x509 Attestation with signing certificate(s) for use in consequent APIs. Please note that an x509 Attestation with a signing certificate is NOT VALID when attached to an individual enrollment.
 

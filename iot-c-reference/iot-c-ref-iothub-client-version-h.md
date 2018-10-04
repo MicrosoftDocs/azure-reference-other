@@ -20,8 +20,3 @@ Define Name                    | Value
 --------------------------------|---------------------------------------------
 IOTHUB_SDK_VERSION            | 
 
-## Function documentation
-
-#### IoTHubClient_GetVersionString 
-const char * [IoTHubClient_GetVersionString](#iothub__client__version_8h_1ad8bb41067344bbe6676b2edf7dc65be4)(void)
-

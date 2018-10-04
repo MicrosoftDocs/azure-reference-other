@@ -2,7 +2,16 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h"](../iot-c-ref-iothub-device-client-ll-h.md)  
 
-**[IOTHUB_CLIENT_RESULT](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) [IoTHubDeviceClient_LL_SetRetryPolicy](#iothub__device__client__ll_8h_1abb0e2ca40fc6786208b276e201de0b4c)([IOTHUB_DEVICE_CLIENT_LL_HANDLE](#iothub__device__client__ll_8h_1ab3ed1ccac784de53579181b349fd6616) iotHubClientHandle,[IOTHUB_CLIENT_RETRY_POLICY](#iothub__client__core__common_8h_1a361221e523247855ff0a05c2e2870e4a) retryPolicy,size_t retryTimeoutLimitInSeconds)**
+## Syntax
+
+```C
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SetRetryPolicy(
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE	iotHubClientHandle,
+  IOTHUB_CLIENT_RETRY_POLICY	retryPolicy,
+  size_t	retryTimeoutLimitInSeconds
+);
+
+```
 
 Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
 

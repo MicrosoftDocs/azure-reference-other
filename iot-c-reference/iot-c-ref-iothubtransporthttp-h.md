@@ -16,8 +16,3 @@ Function Name                  | Description
 --------------------------------|---------------------------------------------
 [HTTP_Protocol](./iot-c-ref-iothubtransporthttp-h/http-protocol.md)            | 
 
-## Function documentation
-
-#### HTTP_Protocol 
-const [TRANSPORT_PROVIDER](#iothub__transport__ll_8h_1a42a8931408acfbb7cb2f505ae7b29aa2) * [HTTP_Protocol](#iothubtransporthttp_8h_1a72b2c4f44e85dc168705e2d39c33c540)(void)
-

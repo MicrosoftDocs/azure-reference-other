@@ -2,7 +2,15 @@
 
 \#include ["azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h"](../iot-c-ref-threadapi-h.md)  
 
-**[THREADAPI_RESULT](#threadapi_8h_1a040c14bc535115c79e2f9daa57d268bd) [ThreadAPI_Join](#threadapi_8h_1aa80bce4748cbe10f4b726f2ea3168609)([THREAD_HANDLE](#threadapi_8h_1a51f9e04bbea1ebd9fd7281a2f2a4fbf3) threadHandle,int * res)**
+## Syntax
+
+```C
+THREADAPI_RESULT ThreadAPI_Join(
+  THREAD_HANDLE	threadHandle,
+  int *	res
+);
+
+```
 
 Blocks the calling thread by waiting on the thread identified by the `threadHandle` argument to complete.
 

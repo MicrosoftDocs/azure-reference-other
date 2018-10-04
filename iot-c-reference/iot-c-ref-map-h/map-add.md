@@ -2,7 +2,16 @@
 
 \#include ["azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h"](../iot-c-ref-map-h.md)  
 
-**[MAP_RESULT](#map_8h_1ad7dca46cbca14e08e0561d21ca68324e) [Map_Add](#map_8h_1a0dd145d19021b3e80d53868d61cbc684)([MAP_HANDLE](#map_8h_1aaa6ea96fbf2e858b6b2cfe4c7fe31a46) handle,const char * key,const char * value)**
+## Syntax
+
+```C
+MAP_RESULT Map_Add(
+  MAP_HANDLE	handle,
+  const char *	key,
+  const char *	value
+);
+
+```
 
 Adds a key/value pair to the map.
 

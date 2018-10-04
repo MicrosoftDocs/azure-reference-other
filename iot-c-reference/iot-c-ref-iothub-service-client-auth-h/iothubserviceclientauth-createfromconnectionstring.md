@@ -2,7 +2,14 @@
 
 \#include ["azure-iot-sdk-c/iothub_service_client/inc/iothub_service_client_auth.h"](../iot-c-ref-iothub-service-client-auth-h.md)  
 
-**[IOTHUB_SERVICE_CLIENT_AUTH_HANDLE](#iothub__service__client__auth_8h_1a47d2f6357931c33108eb9fba95d8730b) [IoTHubServiceClientAuth_CreateFromConnectionString](#iothub__service__client__auth_8h_1a4f24671454a250ef6f5adaf2aa01d22e)(const char * connectionString)**
+## Syntax
+
+```C
+IOTHUB_SERVICE_CLIENT_AUTH_HANDLE IoTHubServiceClientAuth_CreateFromConnectionString(
+  const char *	connectionString
+);
+
+```
 
 Creates a IoT Hub service client handle for use it in consequent APIs.
 

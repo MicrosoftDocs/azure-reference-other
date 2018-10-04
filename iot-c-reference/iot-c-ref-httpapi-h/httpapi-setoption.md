@@ -2,7 +2,16 @@
 
 \#include ["azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h"](../iot-c-ref-httpapi-h.md)  
 
-**[HTTPAPI_RESULT](#httpapi_8h_1ae6d85e45d7bb89c3692f17750762557e) [HTTPAPI_SetOption](#httpapi_8h_1a126e89db045f53ecc3438eecea2efc84)([HTTP_HANDLE](#httpapi_8h_1a3b2d2d7095a41a942705e437133d35dc) handle,const char * optionName,const void * value)**
+## Syntax
+
+```C
+HTTPAPI_RESULT HTTPAPI_SetOption(
+  HTTP_HANDLE	handle,
+  const char *	optionName,
+  const void *	value
+);
+
+```
 
 Sets the option named `optionName` bearing the value `value` for the HTTP_HANDLE `handle`.
 

@@ -2,7 +2,17 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_client.h"](../iot-c-ref-iothub-client-h.md)  
 
-**[IOTHUB_CLIENT_RESULT](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) [IoTHubClient_SendEventAsync](#iothub__client_8h_1a3e60e953d03a503c1ae30dd6af7f390f)([IOTHUB_CLIENT_HANDLE](#iothub__client_8h_1a228b1409767f2560aa0724caad86fd6d) iotHubClientHandle,[IOTHUB_MESSAGE_HANDLE](#iothub__message_8h_1a98782b8f57e3f751b4f0196de946432c) eventMessageHandle,[IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK](#iothub__client__core__common_8h_1a41b17fcb2cb70587e3576226561648a0) eventConfirmationCallback,void * userContextCallback)**
+## Syntax
+
+```C
+IOTHUB_CLIENT_RESULT IoTHubClient_SendEventAsync(
+  IOTHUB_CLIENT_HANDLE	iotHubClientHandle,
+  IOTHUB_MESSAGE_HANDLE	eventMessageHandle,
+  IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK	eventConfirmationCallback,
+  void *	userContextCallback
+);
+
+```
 
 Asynchronous call to send the message specified by `eventMessageHandle`.
 

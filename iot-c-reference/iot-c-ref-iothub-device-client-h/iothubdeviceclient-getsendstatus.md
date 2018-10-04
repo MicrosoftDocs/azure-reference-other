@@ -2,7 +2,15 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h"](../iot-c-ref-iothub-device-client-h.md)  
 
-**[IOTHUB_CLIENT_RESULT](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) [IoTHubDeviceClient_GetSendStatus](#iothub__device__client_8h_1a1b0ed9ddf82f4a32afc7df469452e0cc)([IOTHUB_DEVICE_CLIENT_HANDLE](#iothub__device__client_8h_1ac0a6393bbcbec2e1b580e8c4c127f4c1) iotHubClientHandle,[IOTHUB_CLIENT_STATUS](#iothub__client__core__common_8h_1af80b6370369f3c1bb53399deccb4491c) * iotHubClientStatus)**
+## Syntax
+
+```C
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_GetSendStatus(
+  IOTHUB_DEVICE_CLIENT_HANDLE	iotHubClientHandle,
+  IOTHUB_CLIENT_STATUS	iotHubClientStatus
+);
+
+```
 
 This function returns the current sending status for IoTHubClient.
 

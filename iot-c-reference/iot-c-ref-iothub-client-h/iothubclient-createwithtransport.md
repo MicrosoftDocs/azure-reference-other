@@ -2,7 +2,15 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_client.h"](../iot-c-ref-iothub-client-h.md)  
 
-**[IOTHUB_CLIENT_HANDLE](#iothub__client_8h_1a228b1409767f2560aa0724caad86fd6d) [IoTHubClient_CreateWithTransport](#iothub__client_8h_1a2eb95b5592c8c1c5e1fed5cef60ba0ff)([TRANSPORT_HANDLE](#iothub__transport__ll_8h_1a085a6035b065e4f48f3789e428235aa4) transportHandle,const [IOTHUB_CLIENT_CONFIG](#struct_i_o_t_h_u_b___c_l_i_e_n_t___c_o_n_f_i_g) * config)**
+## Syntax
+
+```C
+IOTHUB_CLIENT_HANDLE IoTHubClient_CreateWithTransport(
+  TRANSPORT_HANDLE	transportHandle,
+  const 	config
+);
+
+```
 
 Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
 
