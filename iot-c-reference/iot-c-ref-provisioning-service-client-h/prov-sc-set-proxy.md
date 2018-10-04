@@ -6,8 +6,8 @@
 
 ```C
 int prov_sc_set_proxy(
-  PROVISIONING_SERVICE_CLIENT_HANDLE	prov_client,
-  HTTP_PROXY_OPTIONS	proxy_options
+  PROVISIONING_SERVICE_CLIENT_HANDLE  	prov_client,
+  HTTP_PROXY_OPTIONS                  	proxy_options
 );
 
 ```

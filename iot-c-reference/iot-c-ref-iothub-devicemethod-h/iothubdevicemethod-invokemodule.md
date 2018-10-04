@@ -6,15 +6,15 @@
 
 ```C
 IOTHUB_DEVICE_METHOD_RESULT IoTHubDeviceMethod_InvokeModule(
-  IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE	serviceClientDeviceMethodHandle,
-  const char *	deviceId,
-  const char *	moduleId,
-  const char *	methodName,
-  const char *	methodPayload,
-  unsigned int	timeout,
-  int *	responseStatus,
-  unsigned char **	responsePayload,
-  size_t *	responsePayloadSize
+  IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE  	serviceClientDeviceMethodHandle,
+  const char *                                	deviceId,
+  const char *                                	moduleId,
+  const char *                                	methodName,
+  const char *                                	methodPayload,
+  unsigned int                                	timeout,
+  int *                                       	responseStatus,
+  unsigned char **                            	responsePayload,
+  size_t *                                    	responsePayloadSize
 );
 
 ```

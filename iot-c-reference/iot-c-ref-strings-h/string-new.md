@@ -6,7 +6,7 @@
 
 ```C
 STRING_HANDLE STRING_new(
-  void);
+  void  );
 
 ```
 

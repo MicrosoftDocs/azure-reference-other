@@ -6,7 +6,7 @@
 
 ```C
 void ThreadAPI_Exit(
-  int	res
+  int  	res
 );
 
 ```

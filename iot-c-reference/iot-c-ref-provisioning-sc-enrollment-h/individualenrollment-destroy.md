@@ -6,7 +6,7 @@
 
 ```C
 void individualEnrollment_destroy(
-  INDIVIDUAL_ENROLLMENT_HANDLE	enrollment
+  INDIVIDUAL_ENROLLMENT_HANDLE  	enrollment
 );
 
 ```

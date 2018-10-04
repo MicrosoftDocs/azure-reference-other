@@ -6,7 +6,7 @@
 
 ```C
 void IoTHubRegistryManager_FreeModuleMembers(
-  IOTHUB_MODULE	moduleInfo
+  IOTHUB_MODULE  	moduleInfo
 );
 
 ```

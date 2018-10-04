@@ -6,7 +6,7 @@
 
 ```C
 const char* SECURE_DEVICE_TYPEStrings(
-  SECURE_DEVICE_TYPE	value
+  SECURE_DEVICE_TYPE  	value
 );
 
 ```

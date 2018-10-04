@@ -6,7 +6,7 @@
 
 ```C
 DEVICE_CAPABILITIES_HANDLE deviceCapabilities_create(
-  void);
+  void  );
 
 ```
 

@@ -6,7 +6,7 @@
 
 ```C
 SECURE_DEVICE_TYPE prov_dev_security_get_type(
-  void);
+  void  );
 
 ```
 

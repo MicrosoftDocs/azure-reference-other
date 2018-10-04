@@ -6,8 +6,8 @@
 
 ```C
 int IOTHUB_PROCESS_ITEM_RESULT_FromString(
-  const char *	enumAsString,
-  IOTHUB_PROCESS_ITEM_RESULT	destination
+  const char *                	enumAsString,
+  IOTHUB_PROCESS_ITEM_RESULT  	destination
 );
 
 ```

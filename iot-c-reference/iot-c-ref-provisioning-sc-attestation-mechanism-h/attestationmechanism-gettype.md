@@ -6,7 +6,7 @@
 
 ```C
 ATTESTATION_TYPE attestationMechanism_getType(
-  ATTESTATION_MECHANISM_HANDLE	att_mech
+  ATTESTATION_MECHANISM_HANDLE  	att_mech
 );
 
 ```

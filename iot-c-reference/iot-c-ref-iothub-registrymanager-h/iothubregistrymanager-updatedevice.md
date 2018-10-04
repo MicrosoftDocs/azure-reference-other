@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_UpdateDevice(
-  IOTHUB_REGISTRYMANAGER_HANDLE	registryManagerHandle,
-  IOTHUB_REGISTRY_DEVICE_UPDATE	deviceUpdate
+  IOTHUB_REGISTRYMANAGER_HANDLE  	registryManagerHandle,
+  IOTHUB_REGISTRY_DEVICE_UPDATE  	deviceUpdate
 );
 
 ```

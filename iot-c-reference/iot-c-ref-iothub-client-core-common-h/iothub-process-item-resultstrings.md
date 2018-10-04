@@ -6,7 +6,7 @@
 
 ```C
 const char* IOTHUB_PROCESS_ITEM_RESULTStrings(
-  IOTHUB_PROCESS_ITEM_RESULT	value
+  IOTHUB_PROCESS_ITEM_RESULT  	value
 );
 
 ```

@@ -6,9 +6,9 @@
 
 ```C
 MAP_RESULT Map_ContainsKey(
-  MAP_HANDLE	handle,
-  const char *	key,
-  bool *	keyExists
+  MAP_HANDLE    	handle,
+  const char *  	key,
+  bool *        	keyExists
 );
 
 ```

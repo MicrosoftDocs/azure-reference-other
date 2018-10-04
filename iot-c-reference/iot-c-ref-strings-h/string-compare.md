@@ -6,8 +6,8 @@
 
 ```C
 int STRING_compare(
-  STRING_HANDLE	s1,
-  STRING_HANDLE	s2
+  STRING_HANDLE  	s1,
+  STRING_HANDLE  	s2
 );
 
 ```

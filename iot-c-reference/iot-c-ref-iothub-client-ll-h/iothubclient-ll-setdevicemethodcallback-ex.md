@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClient_LL_SetDeviceMethodCallback_Ex(
-  IOTHUB_CLIENT_LL_HANDLE	iotHubClientHandle,
-  IOTHUB_CLIENT_INBOUND_DEVICE_METHOD_CALLBACK	inboundDeviceMethodCallback,
-  void *	userContextCallback
+  IOTHUB_CLIENT_LL_HANDLE                       	iotHubClientHandle,
+  IOTHUB_CLIENT_INBOUND_DEVICE_METHOD_CALLBACK  	inboundDeviceMethodCallback,
+  void *                                        	userContextCallback
 );
 
 ```

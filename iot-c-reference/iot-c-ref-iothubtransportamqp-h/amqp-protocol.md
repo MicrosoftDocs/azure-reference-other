@@ -6,7 +6,7 @@
 
 ```C
 const TRANSPORT_PROVIDER* AMQP_Protocol(
-  void);
+  void  );
 
 ```
 

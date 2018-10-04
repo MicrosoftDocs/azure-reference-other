@@ -6,8 +6,8 @@
 
 ```C
 int IOTHUB_REGISTRYMANAGER_RESULT_FromString(
-  const char *	enumAsString,
-  IOTHUB_REGISTRYMANAGER_RESULT	destination
+  const char *                   	enumAsString,
+  IOTHUB_REGISTRYMANAGER_RESULT  	destination
 );
 
 ```

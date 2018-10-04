@@ -6,8 +6,8 @@
 
 ```C
 int enrollmentGroup_setProvisioningStatus(
-  ENROLLMENT_GROUP_HANDLE	enrollment,
-  PROVISIONING_STATUS	prov_status
+  ENROLLMENT_GROUP_HANDLE  	enrollment,
+  PROVISIONING_STATUS      	prov_status
 );
 
 ```

@@ -6,8 +6,8 @@
 
 ```C
 ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509ClientCert(
-  const char *	primary_cert,
-  const char *	secondary_cert
+  const char *  	primary_cert,
+  const char *  	secondary_cert
 );
 
 ```

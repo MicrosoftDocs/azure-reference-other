@@ -6,7 +6,7 @@
 
 ```C
 const TRANSPORT_PROVIDER* MQTT_Protocol(
-  void);
+  void  );
 
 ```
 

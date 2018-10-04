@@ -6,7 +6,7 @@
 
 ```C
 int STRING_empty(
-  STRING_HANDLE	handle
+  STRING_HANDLE  	handle
 );
 
 ```

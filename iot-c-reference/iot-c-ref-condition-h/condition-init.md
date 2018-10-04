@@ -6,7 +6,7 @@
 
 ```C
 COND_HANDLE Condition_Init(
-  void);
+  void  );
 
 ```
 

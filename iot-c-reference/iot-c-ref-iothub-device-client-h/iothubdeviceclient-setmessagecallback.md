@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetMessageCallback(
-  IOTHUB_DEVICE_CLIENT_HANDLE	iotHubClientHandle,
-  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC	messageCallback,
-  void *	userContextCallback
+  IOTHUB_DEVICE_CLIENT_HANDLE           	iotHubClientHandle,
+  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  	messageCallback,
+  void *                                	userContextCallback
 );
 
 ```

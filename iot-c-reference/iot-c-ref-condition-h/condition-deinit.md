@@ -6,7 +6,7 @@
 
 ```C
 void Condition_Deinit(
-  COND_HANDLE	handle
+  COND_HANDLE  	handle
 );
 
 ```

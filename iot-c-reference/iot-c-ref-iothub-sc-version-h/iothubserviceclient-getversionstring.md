@@ -6,7 +6,7 @@
 
 ```C
 const char* IoTHubServiceClient_GetVersionString(
-  void);
+  void  );
 
 ```
 

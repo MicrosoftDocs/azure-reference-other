@@ -6,7 +6,7 @@
 
 ```C
 char* bulkOperation_serializeToJson(
-  const 	bulk_op
+  const   	bulk_op
 );
 
 ```

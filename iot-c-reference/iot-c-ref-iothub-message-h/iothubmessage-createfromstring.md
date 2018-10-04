@@ -6,7 +6,7 @@
 
 ```C
 IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromString(
-  const char *	source
+  const char *  	source
 );
 
 ```

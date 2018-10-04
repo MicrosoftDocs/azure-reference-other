@@ -6,7 +6,7 @@
 
 ```C
 const char* STRING_c_str(
-  STRING_HANDLE	handle
+  STRING_HANDLE  	handle
 );
 
 ```

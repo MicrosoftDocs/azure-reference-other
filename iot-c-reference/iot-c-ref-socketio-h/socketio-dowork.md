@@ -6,7 +6,7 @@
 
 ```C
 void socketio_dowork(
-  CONCRETE_IO_HANDLE	socket_io
+  CONCRETE_IO_HANDLE  	socket_io
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 PROVISIONING_STATUS enrollmentGroup_getProvisioningStatus(
-  ENROLLMENT_GROUP_HANDLE	enrollment
+  ENROLLMENT_GROUP_HANDLE  	enrollment
 );
 
 ```

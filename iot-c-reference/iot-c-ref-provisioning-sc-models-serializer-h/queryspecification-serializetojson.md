@@ -6,7 +6,7 @@
 
 ```C
 char* querySpecification_serializeToJson(
-  const 	query_spec
+  const   	query_spec
 );
 
 ```

@@ -6,8 +6,8 @@
 
 ```C
 ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithTpm(
-  const char *	endorsement_key,
-  const char *	storage_root_key
+  const char *  	endorsement_key,
+  const char *  	storage_root_key
 );
 
 ```

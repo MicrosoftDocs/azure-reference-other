@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_ApplyConfigurationContentToDeviceOrModule(
-  IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE	serviceClientDeviceConfigurationHandle,
-  const char *	deviceOrModuleId,
-  const 	configurationContent
+  IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  	serviceClientDeviceConfigurationHandle,
+  const char *                                       	deviceOrModuleId,
+  const                                              	configurationContent
 );
 
 ```

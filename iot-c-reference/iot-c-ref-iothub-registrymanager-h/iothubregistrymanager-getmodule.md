@@ -6,10 +6,10 @@
 
 ```C
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetModule(
-  IOTHUB_REGISTRYMANAGER_HANDLE	registryManagerHandle,
-  const char *	deviceId,
-  const char *	moduleId,
-  IOTHUB_MODULE	module
+  IOTHUB_REGISTRYMANAGER_HANDLE  	registryManagerHandle,
+  const char *                   	deviceId,
+  const char *                   	moduleId,
+  IOTHUB_MODULE                  	module
 );
 
 ```

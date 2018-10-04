@@ -6,7 +6,7 @@
 
 ```C
 bool attestationMechanism_isValidForIndividualEnrollment(
-  ATTESTATION_MECHANISM_HANDLE	att_mech
+  ATTESTATION_MECHANISM_HANDLE  	att_mech
 );
 
 ```

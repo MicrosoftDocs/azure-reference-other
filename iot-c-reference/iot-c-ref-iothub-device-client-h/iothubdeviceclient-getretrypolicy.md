@@ -6,9 +6,9 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_GetRetryPolicy(
-  IOTHUB_DEVICE_CLIENT_HANDLE	iotHubClientHandle,
-  IOTHUB_CLIENT_RETRY_POLICY	retryPolicy,
-  size_t *	retryTimeoutLimitInSeconds
+  IOTHUB_DEVICE_CLIENT_HANDLE  	iotHubClientHandle,
+  IOTHUB_CLIENT_RETRY_POLICY   	retryPolicy,
+  size_t *                     	retryTimeoutLimitInSeconds
 );
 
 ```

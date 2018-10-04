@@ -6,7 +6,7 @@
 
 ```C
 LIST_ITEM_HANDLE singlylinkedlist_get_next_item(
-  LIST_ITEM_HANDLE	item_handle
+  LIST_ITEM_HANDLE  	item_handle
 );
 
 ```

@@ -6,8 +6,8 @@
 
 ```C
 int STRING_copy(
-  STRING_HANDLE	s1,
-  const char *	s2
+  STRING_HANDLE  	s1,
+  const char *   	s2
 );
 
 ```

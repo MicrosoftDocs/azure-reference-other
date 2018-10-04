@@ -6,7 +6,7 @@
 
 ```C
 INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_deserializeFromJson(
-  const char *	json_string
+  const char *  	json_string
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 const char* individualEnrollment_getDeviceId(
-  INDIVIDUAL_ENROLLMENT_HANDLE	enrollment
+  INDIVIDUAL_ENROLLMENT_HANDLE  	enrollment
 );
 
 ```

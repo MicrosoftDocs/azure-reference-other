@@ -6,7 +6,7 @@
 
 ```C
 X509_ATTESTATION_HANDLE attestationMechanism_getX509Attestation(
-  ATTESTATION_MECHANISM_HANDLE	att_mech
+  ATTESTATION_MECHANISM_HANDLE  	att_mech
 );
 
 ```

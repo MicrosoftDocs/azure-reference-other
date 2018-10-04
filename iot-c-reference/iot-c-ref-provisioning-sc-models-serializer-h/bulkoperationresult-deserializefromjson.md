@@ -6,7 +6,7 @@
 
 ```C
 PROVISIONING_BULK_OPERATION_RESULT* bulkOperationResult_deserializeFromJson(
-  const char *	json_string
+  const char *  	json_string
 );
 
 ```

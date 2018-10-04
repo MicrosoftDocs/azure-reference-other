@@ -6,7 +6,7 @@
 
 ```C
 INITIAL_TWIN_HANDLE individualEnrollment_getInitialTwin(
-  INDIVIDUAL_ENROLLMENT_HANDLE	enrollment
+  INDIVIDUAL_ENROLLMENT_HANDLE  	enrollment
 );
 
 ```

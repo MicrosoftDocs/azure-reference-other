@@ -6,7 +6,7 @@
 
 ```C
 void prov_dev_security_deinit(
-  void);
+  void  );
 
 ```
 

@@ -6,7 +6,7 @@
 
 ```C
 const char* IoTHubMessage_GetContentTypeSystemProperty(
-  IOTHUB_MESSAGE_HANDLE	iotHubMessageHandle
+  IOTHUB_MESSAGE_HANDLE  	iotHubMessageHandle
 );
 
 ```

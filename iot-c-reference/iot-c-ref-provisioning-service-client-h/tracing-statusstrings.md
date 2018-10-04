@@ -6,7 +6,7 @@
 
 ```C
 const char* TRACING_STATUSStrings(
-  TRACING_STATUS	value
+  TRACING_STATUS  	value
 );
 
 ```

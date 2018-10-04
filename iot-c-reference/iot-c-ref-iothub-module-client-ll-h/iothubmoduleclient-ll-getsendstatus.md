@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_GetSendStatus(
-  IOTHUB_MODULE_CLIENT_LL_HANDLE	iotHubModuleClientHandle,
-  IOTHUB_CLIENT_STATUS	iotHubClientStatus
+  IOTHUB_MODULE_CLIENT_LL_HANDLE  	iotHubModuleClientHandle,
+  IOTHUB_CLIENT_STATUS            	iotHubClientStatus
 );
 
 ```

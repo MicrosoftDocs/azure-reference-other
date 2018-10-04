@@ -6,7 +6,7 @@
 
 ```C
 STRING_HANDLE Map_ToJSON(
-  MAP_HANDLE	handle
+  MAP_HANDLE  	handle
 );
 
 ```

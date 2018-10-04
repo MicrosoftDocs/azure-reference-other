@@ -6,7 +6,7 @@
 
 ```C
 const IO_INTERFACE_DESCRIPTION* platform_get_default_tlsio(
-  void);
+  void  );
 
 ```
 

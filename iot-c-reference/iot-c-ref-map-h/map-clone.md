@@ -6,7 +6,7 @@
 
 ```C
 MAP_HANDLE Map_Clone(
-  MAP_HANDLE	handle
+  MAP_HANDLE  	handle
 );
 
 ```

@@ -6,8 +6,8 @@
 
 ```C
 const char* Map_GetValueFromKey(
-  MAP_HANDLE	handle,
-  const char *	key
+  MAP_HANDLE    	handle,
+  const char *  	key
 );
 
 ```

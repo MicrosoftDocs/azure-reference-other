@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetInputName(
-  IOTHUB_MESSAGE_HANDLE	iotHubMessageHandle,
-  const char *	inputName
+  IOTHUB_MESSAGE_HANDLE  	iotHubMessageHandle,
+  const char *           	inputName
 );
 
 ```

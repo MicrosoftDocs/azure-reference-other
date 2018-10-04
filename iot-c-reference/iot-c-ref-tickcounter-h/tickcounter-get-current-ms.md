@@ -6,8 +6,8 @@
 
 ```C
 int tickcounter_get_current_ms(
-  TICK_COUNTER_HANDLE	tick_counter,
-  tickcounter_ms_t	current_ms
+  TICK_COUNTER_HANDLE  	tick_counter,
+  tickcounter_ms_t     	current_ms
 );
 
 ```

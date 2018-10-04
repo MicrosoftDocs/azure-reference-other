@@ -6,8 +6,8 @@
 
 ```C
 int PROVISIONING_BULK_OPERATION_MODE_FromString(
-  const char *	enumAsString,
-  PROVISIONING_BULK_OPERATION_MODE	destination
+  const char *                      	enumAsString,
+  PROVISIONING_BULK_OPERATION_MODE  	destination
 );
 
 ```

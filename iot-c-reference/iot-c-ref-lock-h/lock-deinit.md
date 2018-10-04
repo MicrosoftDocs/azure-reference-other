@@ -6,7 +6,7 @@
 
 ```C
 LOCK_RESULT Lock_Deinit(
-  LOCK_HANDLE	handle
+  LOCK_HANDLE  	handle
 );
 
 ```

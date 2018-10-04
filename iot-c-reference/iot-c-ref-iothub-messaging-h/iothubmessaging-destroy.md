@@ -6,7 +6,7 @@
 
 ```C
 void IoTHubMessaging_Destroy(
-  IOTHUB_MESSAGING_CLIENT_HANDLE	messagingClientHandle
+  IOTHUB_MESSAGING_CLIENT_HANDLE  	messagingClientHandle
 );
 
 ```

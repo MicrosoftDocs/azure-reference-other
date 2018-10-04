@@ -6,7 +6,7 @@
 
 ```C
 void queryResponse_free(
-  PROVISIONING_QUERY_RESPONSE	query_resp
+  PROVISIONING_QUERY_RESPONSE  	query_resp
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 char* individualEnrollment_serializeToJson(
-  const 	enrollment
+  const   	enrollment
 );
 
 ```

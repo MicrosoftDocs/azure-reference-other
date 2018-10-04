@@ -6,7 +6,7 @@
 
 ```C
 void Prov_Device_Destroy(
-  PROV_DEVICE_HANDLE	prov_device_handle
+  PROV_DEVICE_HANDLE  	prov_device_handle
 );
 
 ```

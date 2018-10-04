@@ -6,7 +6,7 @@
 
 ```C
 void platform_deinit(
-  void);
+  void  );
 
 ```
 

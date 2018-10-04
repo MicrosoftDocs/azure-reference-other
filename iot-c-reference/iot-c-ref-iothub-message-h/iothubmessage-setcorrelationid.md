@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetCorrelationId(
-  IOTHUB_MESSAGE_HANDLE	iotHubMessageHandle,
-  const char *	correlationId
+  IOTHUB_MESSAGE_HANDLE  	iotHubMessageHandle,
+  const char *           	correlationId
 );
 
 ```

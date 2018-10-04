@@ -6,7 +6,7 @@
 
 ```C
 void HTTPAPI_Deinit(
-  void);
+  void  );
 
 ```
 

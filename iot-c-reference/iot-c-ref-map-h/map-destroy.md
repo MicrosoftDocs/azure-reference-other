@@ -6,7 +6,7 @@
 
 ```C
 void Map_Destroy(
-  MAP_HANDLE	handle
+  MAP_HANDLE  	handle
 );
 
 ```

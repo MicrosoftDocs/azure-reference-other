@@ -6,7 +6,7 @@
 
 ```C
 const char* LOCK_RESULTStrings(
-  LOCK_RESULT	value
+  LOCK_RESULT  	value
 );
 
 ```

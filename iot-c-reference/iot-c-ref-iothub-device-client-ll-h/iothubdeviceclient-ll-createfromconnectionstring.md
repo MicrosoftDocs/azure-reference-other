@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_DEVICE_CLIENT_LL_HANDLE IoTHubDeviceClient_LL_CreateFromConnectionString(
-  const char *	connectionString,
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER	protocol
+  const char *                      	connectionString,
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  	protocol
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 COND_RESULT Condition_Post(
-  COND_HANDLE	handle
+  COND_HANDLE  	handle
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 const PROV_DEVICE_TRANSPORT_PROVIDER* Prov_Device_MQTT_Protocol(
-  void);
+  void  );
 
 ```
 

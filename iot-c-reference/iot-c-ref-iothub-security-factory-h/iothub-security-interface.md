@@ -6,7 +6,7 @@
 
 ```C
 const void* iothub_security_interface(
-  void);
+  void  );
 
 ```
 

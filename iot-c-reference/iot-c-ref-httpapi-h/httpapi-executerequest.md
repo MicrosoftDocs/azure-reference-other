@@ -6,15 +6,15 @@
 
 ```C
 HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
-  HTTP_HANDLE	handle,
-  HTTPAPI_REQUEST_TYPE	requestType,
-  const char *	relativePath,
-  HTTP_HEADERS_HANDLE	httpHeadersHandle,
-  const unsigned char *	content,
-  size_t	contentLength,
-  unsigned int *	statusCode,
-  HTTP_HEADERS_HANDLE	responseHeadersHandle,
-  BUFFER_HANDLE	responseContent
+  HTTP_HANDLE            	handle,
+  HTTPAPI_REQUEST_TYPE   	requestType,
+  const char *           	relativePath,
+  HTTP_HEADERS_HANDLE    	httpHeadersHandle,
+  const unsigned char *  	content,
+  size_t                 	contentLength,
+  unsigned int *         	statusCode,
+  HTTP_HEADERS_HANDLE    	responseHeadersHandle,
+  BUFFER_HANDLE          	responseContent
 );
 
 ```

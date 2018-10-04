@@ -6,7 +6,7 @@
 
 ```C
 void HTTPAPI_CloseConnection(
-  HTTP_HANDLE	handle
+  HTTP_HANDLE  	handle
 );
 
 ```

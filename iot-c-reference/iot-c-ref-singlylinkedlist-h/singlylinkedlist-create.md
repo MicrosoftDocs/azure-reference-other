@@ -6,7 +6,7 @@
 
 ```C
 SINGLYLINKEDLIST_HANDLE singlylinkedlist_create(
-  void);
+  void  );
 
 ```
 

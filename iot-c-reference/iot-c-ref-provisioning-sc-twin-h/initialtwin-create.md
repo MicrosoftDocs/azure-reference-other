@@ -6,8 +6,8 @@
 
 ```C
 INITIAL_TWIN_HANDLE initialTwin_create(
-  const char *	tags,
-  const char *	desired_properties
+  const char *  	tags,
+  const char *  	desired_properties
 );
 
 ```

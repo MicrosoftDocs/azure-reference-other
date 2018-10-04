@@ -6,7 +6,7 @@
 
 ```C
 STRING_HANDLE platform_get_platform_info(
-  void);
+  void  );
 
 ```
 

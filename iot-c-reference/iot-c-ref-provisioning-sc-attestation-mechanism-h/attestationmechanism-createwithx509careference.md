@@ -6,8 +6,8 @@
 
 ```C
 ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509CAReference(
-  const char *	primary_ref,
-  const char *	secondary_ref
+  const char *  	primary_ref,
+  const char *  	secondary_ref
 );
 
 ```

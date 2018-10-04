@@ -6,8 +6,8 @@
 
 ```C
 int IOTHUBMESSAGE_CONTENT_TYPE_FromString(
-  const char *	enumAsString,
-  IOTHUBMESSAGE_CONTENT_TYPE	destination
+  const char *                	enumAsString,
+  IOTHUBMESSAGE_CONTENT_TYPE  	destination
 );
 
 ```

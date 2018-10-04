@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_DeleteConfiguration(
-  IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE	serviceClientDeviceConfigurationHandle,
-  const char *	configurationId
+  IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  	serviceClientDeviceConfigurationHandle,
+  const char *                                       	configurationId
 );
 
 ```

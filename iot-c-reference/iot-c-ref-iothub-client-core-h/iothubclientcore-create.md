@@ -6,7 +6,7 @@
 
 ```C
 IOTHUB_CLIENT_CORE_HANDLE IoTHubClientCore_Create(
-  const 	config
+  const   	config
 );
 
 ```

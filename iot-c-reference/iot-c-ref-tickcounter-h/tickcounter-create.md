@@ -6,7 +6,7 @@
 
 ```C
 TICK_COUNTER_HANDLE tickcounter_create(
-  void);
+  void  );
 
 ```
 

@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromByteArray(
-  const unsigned char *	byteArray,
-  size_t	size
+  const unsigned char *  	byteArray,
+  size_t                 	size
 );
 
 ```

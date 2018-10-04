@@ -6,7 +6,7 @@
 
 ```C
 const char* IOTHUBMESSAGE_CONTENT_TYPEStrings(
-  IOTHUBMESSAGE_CONTENT_TYPE	value
+  IOTHUBMESSAGE_CONTENT_TYPE  	value
 );
 
 ```

@@ -6,7 +6,7 @@
 
 ```C
 LOCK_HANDLE Lock_Init(
-  void);
+  void  );
 
 ```
 

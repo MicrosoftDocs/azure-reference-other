@@ -6,9 +6,9 @@
 
 ```C
 char* IoTHubDeviceTwin_GetModuleTwin(
-  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE	serviceClientDeviceTwinHandle,
-  const char *	deviceId,
-  const char *	moduleId
+  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  	serviceClientDeviceTwinHandle,
+  const char *                              	deviceId,
+  const char *                              	moduleId
 );
 
 ```

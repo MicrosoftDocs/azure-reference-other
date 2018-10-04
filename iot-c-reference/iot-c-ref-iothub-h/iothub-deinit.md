@@ -6,7 +6,7 @@
 
 ```C
 void IoTHub_Deinit(
-  void);
+  void  );
 
 ```
 

@@ -6,9 +6,9 @@
 
 ```C
 PROV_DEVICE_RESULT Prov_Device_LL_SetOption(
-  PROV_DEVICE_LL_HANDLE	handle,
-  const char *	optionName,
-  const void *	value
+  PROV_DEVICE_LL_HANDLE  	handle,
+  const char *           	optionName,
+  const void *           	value
 );
 
 ```

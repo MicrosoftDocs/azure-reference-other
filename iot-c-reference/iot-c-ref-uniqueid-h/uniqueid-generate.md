@@ -6,8 +6,8 @@
 
 ```C
 UNIQUEID_RESULT UniqueId_Generate(
-  char *	uid,
-  size_t	bufferSize
+  char *  	uid,
+  size_t  	bufferSize
 );
 
 ```

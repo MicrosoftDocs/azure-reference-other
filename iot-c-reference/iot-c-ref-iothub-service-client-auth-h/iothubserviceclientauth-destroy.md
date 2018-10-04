@@ -6,7 +6,7 @@
 
 ```C
 void IoTHubServiceClientAuth_Destroy(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE	serviceClientHandle
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  	serviceClientHandle
 );
 
 ```

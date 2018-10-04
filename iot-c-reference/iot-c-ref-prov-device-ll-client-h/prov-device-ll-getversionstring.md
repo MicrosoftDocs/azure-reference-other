@@ -6,7 +6,7 @@
 
 ```C
 const char* Prov_Device_LL_GetVersionString(
-  void);
+  void  );
 
 ```
 

@@ -6,8 +6,8 @@
 
 ```C
 int SECURE_DEVICE_TYPE_FromString(
-  const char *	enumAsString,
-  SECURE_DEVICE_TYPE	destination
+  const char *        	enumAsString,
+  SECURE_DEVICE_TYPE  	destination
 );
 
 ```

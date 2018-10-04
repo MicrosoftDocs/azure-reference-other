@@ -6,8 +6,8 @@
 
 ```C
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_DeleteDevice(
-  IOTHUB_REGISTRYMANAGER_HANDLE	registryManagerHandle,
-  const char *	deviceId
+  IOTHUB_REGISTRYMANAGER_HANDLE  	registryManagerHandle,
+  const char *                   	deviceId
 );
 
 ```

@@ -6,9 +6,9 @@
 
 ```C
 COND_RESULT Condition_Wait(
-  COND_HANDLE	handle,
-  LOCK_HANDLE	lock,
-  int	timeout_milliseconds
+  COND_HANDLE  	handle,
+  LOCK_HANDLE  	lock,
+  int          	timeout_milliseconds
 );
 
 ```

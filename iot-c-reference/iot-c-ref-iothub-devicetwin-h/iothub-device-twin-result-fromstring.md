@@ -6,8 +6,8 @@
 
 ```C
 int IOTHUB_DEVICE_TWIN_RESULT_FromString(
-  const char *	enumAsString,
-  IOTHUB_DEVICE_TWIN_RESULT	destination
+  const char *               	enumAsString,
+  IOTHUB_DEVICE_TWIN_RESULT  	destination
 );
 
 ```

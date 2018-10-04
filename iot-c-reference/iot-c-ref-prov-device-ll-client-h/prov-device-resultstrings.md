@@ -6,7 +6,7 @@
 
 ```C
 const char* PROV_DEVICE_RESULTStrings(
-  PROV_DEVICE_RESULT	value
+  PROV_DEVICE_RESULT  	value
 );
 
 ```

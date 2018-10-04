@@ -6,8 +6,8 @@
 
 ```C
 int prov_sc_delete_individual_enrollment(
-  PROVISIONING_SERVICE_CLIENT_HANDLE	prov_client,
-  INDIVIDUAL_ENROLLMENT_HANDLE	enrollment
+  PROVISIONING_SERVICE_CLIENT_HANDLE  	prov_client,
+  INDIVIDUAL_ENROLLMENT_HANDLE        	enrollment
 );
 
 ```
