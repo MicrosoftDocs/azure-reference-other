@@ -30,14 +30,14 @@ DEVICE_CAPABILITIES_HANDLE            |
 ## Function documentation
 
 #### deviceCapabilities_create 
-[`DEVICE_CAPABILITIES_HANDLE`](#provisioning__sc__device__capabilities_8h_1af33545b05ae4501337bcfeaecce34ae4) `[`deviceCapabilities_create`](#provisioning__sc__device__capabilities_8h_1a6a6ab7129cb10af2505ecbfd11c8d602)(void)`
+[DEVICE_CAPABILITIES_HANDLE](#provisioning__sc__device__capabilities_8h_1af33545b05ae4501337bcfeaecce34ae4) [deviceCapabilities_create](#provisioning__sc__device__capabilities_8h_1a6a6ab7129cb10af2505ecbfd11c8d602)(void)
 
 #### deviceCapabilities_destroy 
-void `[`deviceCapabilities_destroy`](#provisioning__sc__device__capabilities_8h_1ae01cf74fe5498757d4da936901b6ac46)(`[`DEVICE_CAPABILITIES_HANDLE`](#provisioning__sc__device__capabilities_8h_1af33545b05ae4501337bcfeaecce34ae4) capabilities)`
+void [deviceCapabilities_destroy](#provisioning__sc__device__capabilities_8h_1ae01cf74fe5498757d4da936901b6ac46)([DEVICE_CAPABILITIES_HANDLE](#provisioning__sc__device__capabilities_8h_1af33545b05ae4501337bcfeaecce34ae4) capabilities)
 
 #### deviceCapabilities_isIotEdgeCapable 
-bool `[`deviceCapabilities_isIotEdgeCapable`](#provisioning__sc__device__capabilities_8h_1abe93f713071d3fff2355ea083fdd4b27)(`[`DEVICE_CAPABILITIES_HANDLE`](#provisioning__sc__device__capabilities_8h_1af33545b05ae4501337bcfeaecce34ae4) capabilities)`
+bool [deviceCapabilities_isIotEdgeCapable](#provisioning__sc__device__capabilities_8h_1abe93f713071d3fff2355ea083fdd4b27)([DEVICE_CAPABILITIES_HANDLE](#provisioning__sc__device__capabilities_8h_1af33545b05ae4501337bcfeaecce34ae4) capabilities)
 
 #### deviceCapabilities_setIotEdgeCapable 
-void `[`deviceCapabilities_setIotEdgeCapable`](#provisioning__sc__device__capabilities_8h_1a0e07bafb64b64e6f44fc04464594977d)(`[`DEVICE_CAPABILITIES_HANDLE`](#provisioning__sc__device__capabilities_8h_1af33545b05ae4501337bcfeaecce34ae4) capabilities,bool iotEdgeCapable)`
+void [deviceCapabilities_setIotEdgeCapable](#provisioning__sc__device__capabilities_8h_1a0e07bafb64b64e6f44fc04464594977d)([DEVICE_CAPABILITIES_HANDLE](#provisioning__sc__device__capabilities_8h_1af33545b05ae4501337bcfeaecce34ae4) capabilities,bool iotEdgeCapable)
 

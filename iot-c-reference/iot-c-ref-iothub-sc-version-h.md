@@ -25,5 +25,5 @@ IOTHUB_SERVICE_CLIENT_VERSION            |
 ## Function documentation
 
 #### IoTHubServiceClient_GetVersionString 
-const char * `[`IoTHubServiceClient_GetVersionString`](#iothub__sc__version_8h_1ac69343ee4dea0fcad89bbb2f8860b296)(void)`
+const char * [IoTHubServiceClient_GetVersionString](#iothub__sc__version_8h_1ac69343ee4dea0fcad89bbb2f8860b296)(void)
 

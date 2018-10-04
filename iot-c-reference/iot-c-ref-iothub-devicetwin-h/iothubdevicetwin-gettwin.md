@@ -2,7 +2,7 @@
 
 \#include ["azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h"](../iot-c-ref-iothub-devicetwin-h.md)  
 
-char * `[`IoTHubDeviceTwin_GetTwin`](#iothub__devicetwin_8h_1ad582335584a4ddc69f7dbe881dfe723c)(`[`IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE`](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId)`
+**char * [IoTHubDeviceTwin_GetTwin](#iothub__devicetwin_8h_1ad582335584a4ddc69f7dbe881dfe723c)([IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId)**
 
 Retrieves the given device's twin info.
 

@@ -2,7 +2,7 @@
 
 \#include ["azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging.h"](../iot-c-ref-iothub-messaging-h.md)  
 
-[`IOTHUB_MESSAGING_RESULT`](#iothub__messaging__ll_8h_1ac5ac4fdc87db94cc7ddb7773e79290cd) `[`IoTHubMessaging_SetFeedbackMessageCallback`](#iothub__messaging_8h_1a6c2c543c623b2bf45c6de7c2f6b07540)(`[`IOTHUB_MESSAGING_CLIENT_HANDLE`](#iothub__messaging_8h_1a388e756ded834589f37bbd04bf9cc9c0) messagingClientHandle,`[`IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK`](#iothub__messaging__ll_8h_1a323b2eb492755a62424f130c7cb75888) feedbackMessageReceivedCallback,void * userContextCallback)`
+**[IOTHUB_MESSAGING_RESULT](#iothub__messaging__ll_8h_1ac5ac4fdc87db94cc7ddb7773e79290cd) [IoTHubMessaging_SetFeedbackMessageCallback](#iothub__messaging_8h_1a6c2c543c623b2bf45c6de7c2f6b07540)([IOTHUB_MESSAGING_CLIENT_HANDLE](#iothub__messaging_8h_1a388e756ded834589f37bbd04bf9cc9c0) messagingClientHandle,[IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK](#iothub__messaging__ll_8h_1a323b2eb492755a62424f130c7cb75888) feedbackMessageReceivedCallback,void * userContextCallback)**
 
 This API specifies a callback to be used when the device receives the message.
 

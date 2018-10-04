@@ -27,5 +27,5 @@ TPM_ATTESTATION_HANDLE            |
 ## Function documentation
 
 #### tpmAttestation_getEndorsementKey 
-const char * `[`tpmAttestation_getEndorsementKey`](#provisioning__sc__tpm__attestation_8h_1aa08fe9876275814d401505da986e08d2)(`[`TPM_ATTESTATION_HANDLE`](#provisioning__sc__tpm__attestation_8h_1a2160dafed7601d6f7f4ce726b8378a3c) tpm_att)`
+const char * [tpmAttestation_getEndorsementKey](#provisioning__sc__tpm__attestation_8h_1aa08fe9876275814d401505da986e08d2)([TPM_ATTESTATION_HANDLE](#provisioning__sc__tpm__attestation_8h_1a2160dafed7601d6f7f4ce726b8378a3c) tpm_att)
 

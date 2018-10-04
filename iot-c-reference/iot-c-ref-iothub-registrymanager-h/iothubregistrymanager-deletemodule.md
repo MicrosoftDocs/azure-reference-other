@@ -2,7 +2,7 @@
 
 \#include ["azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h"](../iot-c-ref-iothub-registrymanager-h.md)  
 
-[`IOTHUB_REGISTRYMANAGER_RESULT`](#iothub__registrymanager_8h_1a0a3cc25ab12c621a78742593871e18b6) `[`IoTHubRegistryManager_DeleteModule`](#iothub__registrymanager_8h_1a72fd8dfdd409964edd700294ddc768a1)(`[`IOTHUB_REGISTRYMANAGER_HANDLE`](#iothub__registrymanager_8h_1ac3e429abedd42575f91088247225387f) registryManagerHandle,const char * deviceId,const char * moduleId)`
+**[IOTHUB_REGISTRYMANAGER_RESULT](#iothub__registrymanager_8h_1a0a3cc25ab12c621a78742593871e18b6) [IoTHubRegistryManager_DeleteModule](#iothub__registrymanager_8h_1a72fd8dfdd409964edd700294ddc768a1)([IOTHUB_REGISTRYMANAGER_HANDLE](#iothub__registrymanager_8h_1ac3e429abedd42575f91088247225387f) registryManagerHandle,const char * deviceId,const char * moduleId)**
 
 Deletes a given module.
 

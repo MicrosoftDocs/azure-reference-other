@@ -20,8 +20,8 @@ Function Name                  | Description
 ## Function documentation
 
 #### IoTHub_Init 
-int `[`IoTHub_Init`](#iothub_8h_1aa8e81239c77f30d5e23d0eef256bf061)(void)`
+int [IoTHub_Init](#iothub_8h_1aa8e81239c77f30d5e23d0eef256bf061)(void)
 
 #### IoTHub_Deinit 
-void `[`IoTHub_Deinit`](#iothub_8h_1a55b9535d2ddada2b33653120ff15b449)(void)`
+void [IoTHub_Deinit](#iothub_8h_1a55b9535d2ddada2b33653120ff15b449)(void)
 

@@ -2,7 +2,7 @@
 
 \#include ["azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h"](../iot-c-ref-iothub-registrymanager-h.md)  
 
-[`IOTHUB_REGISTRYMANAGER_RESULT`](#iothub__registrymanager_8h_1a0a3cc25ab12c621a78742593871e18b6) `[`IoTHubRegistryManager_CreateDevice`](#iothub__registrymanager_8h_1a806577f9a82dc2d246b03fa4d9eeabf0)(`[`IOTHUB_REGISTRYMANAGER_HANDLE`](#iothub__registrymanager_8h_1ac3e429abedd42575f91088247225387f) registryManagerHandle,const `[`IOTHUB_REGISTRY_DEVICE_CREATE`](#struct_i_o_t_h_u_b___r_e_g_i_s_t_r_y___d_e_v_i_c_e___c_r_e_a_t_e) * deviceCreate,`[`IOTHUB_DEVICE`](#struct_i_o_t_h_u_b___d_e_v_i_c_e) * device)`
+**[IOTHUB_REGISTRYMANAGER_RESULT](#iothub__registrymanager_8h_1a0a3cc25ab12c621a78742593871e18b6) [IoTHubRegistryManager_CreateDevice](#iothub__registrymanager_8h_1a806577f9a82dc2d246b03fa4d9eeabf0)([IOTHUB_REGISTRYMANAGER_HANDLE](#iothub__registrymanager_8h_1ac3e429abedd42575f91088247225387f) registryManagerHandle,const [IOTHUB_REGISTRY_DEVICE_CREATE](#struct_i_o_t_h_u_b___r_e_g_i_s_t_r_y___d_e_v_i_c_e___c_r_e_a_t_e) * deviceCreate,[IOTHUB_DEVICE](#struct_i_o_t_h_u_b___d_e_v_i_c_e) * device)**
 
 Creates a device on IoT Hub.
 

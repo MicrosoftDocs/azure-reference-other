@@ -43,26 +43,26 @@ IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE            | Handle to hide struct and 
 ## Function documentation
 
 #### IOTHUB_DEVICE_TWIN_RESULTStrings 
-const char * `[`IOTHUB_DEVICE_TWIN_RESULTStrings`](#iothub__devicetwin_8h_1afa05a46b6691d3ee77b57157b3b4871f)(`[`IOTHUB_DEVICE_TWIN_RESULT`](#iothub__devicetwin_8h_1a525b37a828b2aca15b247cc5ca1c494b) value)`
+const char * [IOTHUB_DEVICE_TWIN_RESULTStrings](#iothub__devicetwin_8h_1afa05a46b6691d3ee77b57157b3b4871f)([IOTHUB_DEVICE_TWIN_RESULT](#iothub__devicetwin_8h_1a525b37a828b2aca15b247cc5ca1c494b) value)
 
 #### IOTHUB_DEVICE_TWIN_RESULT_FromString 
-int `[`IOTHUB_DEVICE_TWIN_RESULT_FromString`](#iothub__devicetwin_8h_1adef962bed2749a4338f36ee7a7758230)(const char * enumAsString,`[`IOTHUB_DEVICE_TWIN_RESULT`](#iothub__devicetwin_8h_1a525b37a828b2aca15b247cc5ca1c494b) * destination)`
+int [IOTHUB_DEVICE_TWIN_RESULT_FromString](#iothub__devicetwin_8h_1adef962bed2749a4338f36ee7a7758230)(const char * enumAsString,[IOTHUB_DEVICE_TWIN_RESULT](#iothub__devicetwin_8h_1a525b37a828b2aca15b247cc5ca1c494b) * destination)
 
 #### IoTHubDeviceTwin_Create 
-[`IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE`](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) `[`IoTHubDeviceTwin_Create`](#iothub__devicetwin_8h_1acdd0485d9a25bb95fa1d2273e5dbffe9)(`[`IOTHUB_SERVICE_CLIENT_AUTH_HANDLE`](#iothub__service__client__auth_8h_1a47d2f6357931c33108eb9fba95d8730b) serviceClientHandle)`
+[IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) [IoTHubDeviceTwin_Create](#iothub__devicetwin_8h_1acdd0485d9a25bb95fa1d2273e5dbffe9)([IOTHUB_SERVICE_CLIENT_AUTH_HANDLE](#iothub__service__client__auth_8h_1a47d2f6357931c33108eb9fba95d8730b) serviceClientHandle)
 
 #### IoTHubDeviceTwin_Destroy 
-void `[`IoTHubDeviceTwin_Destroy`](#iothub__devicetwin_8h_1a0c3ca65a50ec887151374a52aacd4d7a)(`[`IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE`](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle)`
+void [IoTHubDeviceTwin_Destroy](#iothub__devicetwin_8h_1a0c3ca65a50ec887151374a52aacd4d7a)([IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle)
 
 #### IoTHubDeviceTwin_GetTwin 
-char * `[`IoTHubDeviceTwin_GetTwin`](#iothub__devicetwin_8h_1ad582335584a4ddc69f7dbe881dfe723c)(`[`IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE`](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId)`
+char * [IoTHubDeviceTwin_GetTwin](#iothub__devicetwin_8h_1ad582335584a4ddc69f7dbe881dfe723c)([IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId)
 
 #### IoTHubDeviceTwin_UpdateTwin 
-char * `[`IoTHubDeviceTwin_UpdateTwin`](#iothub__devicetwin_8h_1adabb401facb6b2c95024beb2d351c87d)(`[`IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE`](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId,const char * deviceTwinJson)`
+char * [IoTHubDeviceTwin_UpdateTwin](#iothub__devicetwin_8h_1adabb401facb6b2c95024beb2d351c87d)([IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId,const char * deviceTwinJson)
 
 #### IoTHubDeviceTwin_GetModuleTwin 
-char * `[`IoTHubDeviceTwin_GetModuleTwin`](#iothub__devicetwin_8h_1a262b8e9435f1e3822e8af1d86c4bbd9a)(`[`IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE`](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId,const char * moduleId)`
+char * [IoTHubDeviceTwin_GetModuleTwin](#iothub__devicetwin_8h_1a262b8e9435f1e3822e8af1d86c4bbd9a)([IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId,const char * moduleId)
 
 #### IoTHubDeviceTwin_UpdateModuleTwin 
-char * `[`IoTHubDeviceTwin_UpdateModuleTwin`](#iothub__devicetwin_8h_1ab696d0876e2cbf2698caafbc48b537c9)(`[`IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE`](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId,const char * moduleId,const char * moduleTwinJson)`
+char * [IoTHubDeviceTwin_UpdateModuleTwin](#iothub__devicetwin_8h_1ab696d0876e2cbf2698caafbc48b537c9)([IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE](#iothub__devicetwin_8h_1a3394032bf6208c794f399ddfd45471c3) serviceClientDeviceTwinHandle,const char * deviceId,const char * moduleId,const char * moduleTwinJson)
 

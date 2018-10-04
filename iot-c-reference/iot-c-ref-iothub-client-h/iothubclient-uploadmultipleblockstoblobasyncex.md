@@ -2,7 +2,7 @@
 
 \#include ["azure-iot-sdk-c/iothub_client/inc/iothub_client.h"](../iot-c-ref-iothub-client-h.md)  
 
-[`IOTHUB_CLIENT_RESULT`](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) `[`IoTHubClient_UploadMultipleBlocksToBlobAsyncEx`](#iothub__client_8h_1a2e3c65d775ffa45a05b7e7052b3bc088)(`[`IOTHUB_CLIENT_HANDLE`](#iothub__client_8h_1a228b1409767f2560aa0724caad86fd6d) iotHubClientHandle,const char * destinationFileName,`[`IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX`](#iothub__client__core__common_8h_1a0d9944dec4c4dd2bdd75cebb466dcf6c) getDataCallbackEx,void * context)`
+**[IOTHUB_CLIENT_RESULT](#iothub__client__core__common_8h_1ae8e8840cc715c54bc60465f3f110d40f) [IoTHubClient_UploadMultipleBlocksToBlobAsyncEx](#iothub__client_8h_1a2e3c65d775ffa45a05b7e7052b3bc088)([IOTHUB_CLIENT_HANDLE](#iothub__client_8h_1a228b1409767f2560aa0724caad86fd6d) iotHubClientHandle,const char * destinationFileName,[IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX](#iothub__client__core__common_8h_1a0d9944dec4c4dd2bdd75cebb466dcf6c) getDataCallbackEx,void * context)**
 
 Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
 

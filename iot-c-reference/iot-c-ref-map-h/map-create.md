@@ -2,7 +2,7 @@
 
 \#include ["azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h"](../iot-c-ref-map-h.md)  
 
-[`MAP_HANDLE`](#map_8h_1aaa6ea96fbf2e858b6b2cfe4c7fe31a46) `[`Map_Create`](#map_8h_1a76142fc262744d64715a597eac0ed9ff)(`[`MAP_FILTER_CALLBACK`](#map_8h_1a0283d18ae29a5d4f2a68fe7a7c625462) mapFilterFunc)`
+**[MAP_HANDLE](#map_8h_1aaa6ea96fbf2e858b6b2cfe4c7fe31a46) [Map_Create](#map_8h_1a76142fc262744d64715a597eac0ed9ff)([MAP_FILTER_CALLBACK](#map_8h_1a0283d18ae29a5d4f2a68fe7a7c625462) mapFilterFunc)**
 
 Creates a new, empty map.
 

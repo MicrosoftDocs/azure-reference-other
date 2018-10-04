@@ -2,7 +2,7 @@
 
 \#include ["azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h"](../iot-c-ref-map-h.md)  
 
-const char * `[`Map_GetValueFromKey`](#map_8h_1a80f89a52adc845f206f8fa83951ffab3)(`[`MAP_HANDLE`](#map_8h_1aaa6ea96fbf2e858b6b2cfe4c7fe31a46) handle,const char * key)`
+**const char * [Map_GetValueFromKey](#map_8h_1a80f89a52adc845f206f8fa83951ffab3)([MAP_HANDLE](#map_8h_1aaa6ea96fbf2e858b6b2cfe4c7fe31a46) handle,const char * key)**
 
 Retrieves the value of a stored key.
 

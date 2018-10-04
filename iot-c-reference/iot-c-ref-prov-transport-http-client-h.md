@@ -23,5 +23,5 @@ Function Name                  | Description
 ## Function documentation
 
 #### Prov_Device_HTTP_Protocol 
-const [`PROV_DEVICE_TRANSPORT_PROVIDER`](#prov__transport_8h_1aa76debb63f18e60e1286841c637b3002) * `[`Prov_Device_HTTP_Protocol`](#prov__transport__http__client_8h_1ae3447e52b10817d3bdc252734dd74971)(void)`
+const [PROV_DEVICE_TRANSPORT_PROVIDER](#prov__transport_8h_1aa76debb63f18e60e1286841c637b3002) * [Prov_Device_HTTP_Protocol](#prov__transport__http__client_8h_1ae3447e52b10817d3bdc252734dd74971)(void)
 

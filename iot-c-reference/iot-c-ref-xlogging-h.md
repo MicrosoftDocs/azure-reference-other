@@ -43,11 +43,11 @@ LOGGER_LOG_GETLASTERROR            |
 ## Function documentation
 
 #### LogBinary 
-void `[`LogBinary`](#xlogging_8h_1a54c8f9b1b666bc682451103e4b2abe1a)(const char * comment,const void * data,size_t size)`
+void [LogBinary](#xlogging_8h_1a54c8f9b1b666bc682451103e4b2abe1a)(const char * comment,const void * data,size_t size)
 
 #### xlogging_set_log_function 
-void `[`xlogging_set_log_function`](#xlogging_8h_1aa1fc162dc427fc428eac00f55c5cceb4)(`[`LOGGER_LOG`](#xlogging_8h_1ad2961c3df37a736d48986b4d9b12dd25) log_function)`
+void [xlogging_set_log_function](#xlogging_8h_1aa1fc162dc427fc428eac00f55c5cceb4)([LOGGER_LOG](#xlogging_8h_1ad2961c3df37a736d48986b4d9b12dd25) log_function)
 
 #### xlogging_get_log_function 
-[`LOGGER_LOG`](#xlogging_8h_1ad2961c3df37a736d48986b4d9b12dd25) `[`xlogging_get_log_function`](#xlogging_8h_1adcf7cc5ced05579c5fe9c127c815471c)(void)`
+[LOGGER_LOG](#xlogging_8h_1ad2961c3df37a736d48986b4d9b12dd25) [xlogging_get_log_function](#xlogging_8h_1adcf7cc5ced05579c5fe9c127c815471c)(void)
 

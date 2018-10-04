@@ -2,7 +2,7 @@
 
 \#include ["azure-iot-sdk-c/iothub_service_client/inc/iothub_devicemethod.h"](../iot-c-ref-iothub-devicemethod-h.md)  
 
-[`IOTHUB_DEVICE_METHOD_RESULT`](#iothub__devicemethod_8h_1a8adffbffc2f6e136f8406c5ef396602d) `[`IoTHubDeviceMethod_Invoke`](#iothub__devicemethod_8h_1abdfab207152397a0c843d12a0db4bbf8)(`[`IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE`](#iothub__devicemethod_8h_1a06b6ee10c1627d4f7463c4204490051a) serviceClientDeviceMethodHandle,const char * deviceId,const char * methodName,const char * methodPayload,unsigned int timeout,int * responseStatus,unsigned char ** responsePayload,size_t * responsePayloadSize)`
+**[IOTHUB_DEVICE_METHOD_RESULT](#iothub__devicemethod_8h_1a8adffbffc2f6e136f8406c5ef396602d) [IoTHubDeviceMethod_Invoke](#iothub__devicemethod_8h_1abdfab207152397a0c843d12a0db4bbf8)([IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE](#iothub__devicemethod_8h_1a06b6ee10c1627d4f7463c4204490051a) serviceClientDeviceMethodHandle,const char * deviceId,const char * methodName,const char * methodPayload,unsigned int timeout,int * responseStatus,unsigned char ** responsePayload,size_t * responsePayloadSize)**
 
 Call a method on device with a given payload.
 
