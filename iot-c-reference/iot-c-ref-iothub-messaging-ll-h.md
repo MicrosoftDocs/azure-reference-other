@@ -38,6 +38,7 @@ Function Name                  | Description
 
 #### IOTHUB_SERVICE_FEEDBACK_RECORD
 
+```C
 struct IOTHUB_SERVICE_FEEDBACK_RECORD{
   char *                       description,
   const char *                 deviceId,
@@ -47,13 +48,16 @@ struct IOTHUB_SERVICE_FEEDBACK_RECORD{
   IOTHUB_FEEDBACK_STATUS_CODE  statusCode,
   const char *                 originalMessageId
 };
+```
 #### IOTHUB_SERVICE_FEEDBACK_BATCH
 
+```C
 struct IOTHUB_SERVICE_FEEDBACK_BATCH{
   const char *             userId,
   const char *             lockToken,
   SINGLYLINKEDLIST_HANDLE  feedbackRecordList
 };
+```
 
 ## Defines
 
@@ -66,14 +70,30 @@ IOTHUB_MESSAGING_RESULT_VALUES            |
 ## Typedefs
 
 ####IOTHUB_MESSAGING_HANDLE
+
+```C
 typedef struct IOTHUB_MESSAGING_TAG * IOTHUB_MESSAGING_HANDLE()
 
+```
+
 ####IOTHUB_OPEN_COMPLETE_CALLBACK
+
+```C
 typedef void(* IOTHUB_OPEN_COMPLETE_CALLBACK()
 
+```
+
 ####IOTHUB_SEND_COMPLETE_CALLBACK
+
+```C
 typedef void(* IOTHUB_SEND_COMPLETE_CALLBACK()
 
+```
+
 ####IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK
+
+```C
 typedef void(* IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK()
+
+```
 

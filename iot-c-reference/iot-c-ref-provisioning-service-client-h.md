@@ -51,7 +51,11 @@ TRACING_STATUS_VALUES            |
 ## Typedefs
 
 ####PROVISIONING_SERVICE_CLIENT_HANDLE
+
+```C
 typedef struct PROVISIONING_SERVICE_CLIENT_TAG * PROVISIONING_SERVICE_CLIENT_HANDLE()
+
+```
 
 Handle to hide struct and use it in consequent APIs.
 

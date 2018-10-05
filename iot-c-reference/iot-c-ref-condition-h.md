@@ -32,5 +32,9 @@ COND_RESULT_VALUES            |
 ## Typedefs
 
 ####COND_HANDLE
+
+```C
 typedef void * COND_HANDLE()
+
+```
 

@@ -34,6 +34,7 @@ Function Name                  | Description
 
 #### IO_INTERFACE_DESCRIPTION
 
+```C
 struct IO_INTERFACE_DESCRIPTION{
   IO_RETRIEVEOPTIONS  concrete_io_retrieveoptions,
   IO_CREATE           concrete_io_create,
@@ -44,6 +45,7 @@ struct IO_INTERFACE_DESCRIPTION{
   IO_DOWORK           concrete_io_dowork,
   IO_SETOPTION        concrete_io_setoption
 };
+```
 
 ## Defines
 
@@ -55,47 +57,107 @@ IO_OPEN_RESULT_VALUES            |
 ## Typedefs
 
 ####XIO_HANDLE
+
+```C
 typedef struct XIO_INSTANCE_TAG * XIO_HANDLE()
 
+```
+
 ####CONCRETE_IO_HANDLE
+
+```C
 typedef void * CONCRETE_IO_HANDLE()
 
+```
+
 ####ON_BYTES_RECEIVED
+
+```C
 typedef void(* ON_BYTES_RECEIVED()
 
+```
+
 ####ON_SEND_COMPLETE
+
+```C
 typedef void(* ON_SEND_COMPLETE()
 
+```
+
 ####ON_IO_OPEN_COMPLETE
+
+```C
 typedef void(* ON_IO_OPEN_COMPLETE()
 
+```
+
 ####ON_IO_CLOSE_COMPLETE
+
+```C
 typedef void(* ON_IO_CLOSE_COMPLETE()
 
+```
+
 ####ON_IO_ERROR
+
+```C
 typedef void(* ON_IO_ERROR()
 
+```
+
 ####IO_RETRIEVEOPTIONS
+
+```C
 typedef (* IO_RETRIEVEOPTIONS()
 
+```
+
 ####IO_CREATE
+
+```C
 typedef (* IO_CREATE()
 
+```
+
 ####IO_DESTROY
+
+```C
 typedef void(* IO_DESTROY()
 
+```
+
 ####IO_OPEN
+
+```C
 typedef int(* IO_OPEN()
 
+```
+
 ####IO_CLOSE
+
+```C
 typedef int(* IO_CLOSE()
 
+```
+
 ####IO_SEND
+
+```C
 typedef int(* IO_SEND()
 
+```
+
 ####IO_DOWORK
+
+```C
 typedef void(* IO_DOWORK()
 
+```
+
 ####IO_SETOPTION
+
+```C
 typedef int(* IO_SETOPTION()
+
+```
 

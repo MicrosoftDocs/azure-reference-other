@@ -31,5 +31,9 @@ LOCK_RESULT_VALUES            |
 ## Typedefs
 
 ####LOCK_HANDLE
+
+```C
 typedef void * LOCK_HANDLE()
+
+```
 

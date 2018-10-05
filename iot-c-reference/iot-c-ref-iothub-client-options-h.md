@@ -14,9 +14,11 @@ Stub comment for details. Please update this comment.
 
 #### IOTHUB_PROXY_OPTIONS
 
+```C
 struct IOTHUB_PROXY_OPTIONS{
   const char *  host_address,
   const char *  username,
   const char *  password
 };
+```
 

@@ -21,6 +21,7 @@ Function Name                  | Description
 
 #### HTTP_PROXY_IO_CONFIG
 
+```C
 struct HTTP_PROXY_IO_CONFIG{
   const char *  hostname,
   int           port,
@@ -29,4 +30,5 @@ struct HTTP_PROXY_IO_CONFIG{
   const char *  username,
   const char *  password
 };
+```
 

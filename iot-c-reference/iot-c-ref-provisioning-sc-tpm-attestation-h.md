@@ -21,5 +21,9 @@ Function Name                  | Description
 ## Typedefs
 
 ####TPM_ATTESTATION_HANDLE
+
+```C
 typedef struct TPM_ATTESTATION_TAG * TPM_ATTESTATION_HANDLE()
+
+```
 

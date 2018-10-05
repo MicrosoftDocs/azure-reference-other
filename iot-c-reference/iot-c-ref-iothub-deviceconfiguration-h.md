@@ -36,33 +36,42 @@ Function Name                  | Description
 
 #### IOTHUB_DEVICE_CONFIGURATION_CONTENT
 
+```C
 struct IOTHUB_DEVICE_CONFIGURATION_CONTENT{
   const char *  deviceContent,
   const char *  modulesContent
 };
+```
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT
 
+```C
 struct IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT{
   size_t         numQueries,
   const char **  queryNames,
   double *       results
 };
+```
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION
 
+```C
 struct IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION{
   size_t         numQueries,
   const char **  queryNames,
   const char **  queryStrings
 };
+```
 #### IOTHUB_DEVICE_CONFIGURATION_LABELS
 
+```C
 struct IOTHUB_DEVICE_CONFIGURATION_LABELS{
   size_t         numLabels,
   const char **  labelNames,
   const char **  labelValues
 };
+```
 #### IOTHUB_DEVICE_CONFIGURATION
 
+```C
 struct IOTHUB_DEVICE_CONFIGURATION{
   int                                             version,
   const char *                                    schemaVersion,
@@ -79,8 +88,10 @@ struct IOTHUB_DEVICE_CONFIGURATION{
   IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT      metricResult,
   IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  metricsDefinition
 };
+```
 #### IOTHUB_DEVICE_CONFIGURATION_ADD
 
+```C
 struct IOTHUB_DEVICE_CONFIGURATION_ADD{
   int                                             version,
   const char *                                    configurationId,
@@ -90,6 +101,7 @@ struct IOTHUB_DEVICE_CONFIGURATION_ADD{
   IOTHUB_DEVICE_CONFIGURATION_LABELS              labels,
   IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  metrics
 };
+```
 
 ## Defines
 
@@ -104,7 +116,11 @@ IOTHUB_DEVICE_CONFIGURATION_ADD_VERSION_1            |
 ## Typedefs
 
 ####IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE
+
+```C
 typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_TAG * IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE()
+
+```
 
 Handle to hide struct and use it in consequent APIs.
 

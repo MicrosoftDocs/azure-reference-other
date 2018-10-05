@@ -66,9 +66,17 @@ PROVISIONING_STATUS_VALUES            |
 ## Typedefs
 
 ####INDIVIDUAL_ENROLLMENT_HANDLE
+
+```C
 typedef struct INDIVIDUAL_ENROLLMENT_TAG * INDIVIDUAL_ENROLLMENT_HANDLE()
+
+```
 
 Handles to hide structs and use them in consequent APIs.
 ####ENROLLMENT_GROUP_HANDLE
+
+```C
 typedef struct ENROLLMENT_GROUP_TAG * ENROLLMENT_GROUP_HANDLE()
+
+```
 

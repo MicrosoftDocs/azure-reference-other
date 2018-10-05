@@ -26,5 +26,9 @@ Function Name                  | Description
 ## Typedefs
 
 ####IOTHUB_MESSAGING_CLIENT_HANDLE
+
+```C
 typedef struct IOTHUB_MESSAGING_CLIENT_INSTANCE_TAG * IOTHUB_MESSAGING_CLIENT_HANDLE()
+
+```
 

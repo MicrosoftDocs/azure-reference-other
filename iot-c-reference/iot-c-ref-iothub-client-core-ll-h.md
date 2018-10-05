@@ -47,5 +47,9 @@ Function Name                  | Description
 ## Typedefs
 
 ####IOTHUB_CLIENT_CORE_LL_HANDLE
+
+```C
 typedef struct IOTHUB_CLIENT_CORE_LL_HANDLE_DATA_TAG * IOTHUB_CLIENT_CORE_LL_HANDLE()
+
+```
 

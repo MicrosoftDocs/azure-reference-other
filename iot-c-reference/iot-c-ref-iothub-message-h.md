@@ -52,10 +52,12 @@ Function Name                  | Description
 
 #### IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA
 
+```C
 struct IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA{
   char *  diagnosticId,
   char *  diagnosticCreationTimeUtc
 };
+```
 
 ## Defines
 
@@ -67,5 +69,9 @@ IOTHUBMESSAGE_CONTENT_TYPE_VALUES            |
 ## Typedefs
 
 ####IOTHUB_MESSAGE_HANDLE
+
+```C
 typedef struct IOTHUB_MESSAGE_HANDLE_DATA_TAG * IOTHUB_MESSAGE_HANDLE()
+
+```
 

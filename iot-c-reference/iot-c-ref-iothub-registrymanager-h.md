@@ -46,6 +46,7 @@ Function Name                  | Description
 
 #### IOTHUB_DEVICE_EX
 
+```C
 struct IOTHUB_DEVICE_EX{
   int                                 version,
   const char *                        deviceId,
@@ -67,8 +68,10 @@ struct IOTHUB_DEVICE_EX{
   IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
   bool                                iotEdge_capable
 };
+```
 #### IOTHUB_REGISTRY_DEVICE_CREATE_EX
 
+```C
 struct IOTHUB_REGISTRY_DEVICE_CREATE_EX{
   int                                 version,
   const char *                        deviceId,
@@ -77,8 +80,10 @@ struct IOTHUB_REGISTRY_DEVICE_CREATE_EX{
   IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
   bool                                iotEdge_capable
 };
+```
 #### IOTHUB_REGISTRY_DEVICE_UPDATE_EX
 
+```C
 struct IOTHUB_REGISTRY_DEVICE_UPDATE_EX{
   int                                 version,
   const char *                        deviceId,
@@ -88,15 +93,19 @@ struct IOTHUB_REGISTRY_DEVICE_UPDATE_EX{
   IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
   bool                                iotEdge_capable
 };
+```
 #### IOTHUB_REGISTRY_STATISTICS
 
+```C
 struct IOTHUB_REGISTRY_STATISTICS{
   size_t  totalDeviceCount,
   size_t  enabledDeviceCount,
   size_t  disabledDeviceCount
 };
+```
 #### IOTHUB_MODULE
 
+```C
 struct IOTHUB_MODULE{
   int                                 version,
   const char *                        deviceId,
@@ -119,8 +128,10 @@ struct IOTHUB_MODULE{
   const char *                        moduleId,
   const char *                        managedBy
 };
+```
 #### IOTHUB_REGISTRY_MODULE_CREATE
 
+```C
 struct IOTHUB_REGISTRY_MODULE_CREATE{
   int                                 version,
   const char *                        deviceId,
@@ -130,8 +141,10 @@ struct IOTHUB_REGISTRY_MODULE_CREATE{
   const char *                        moduleId,
   const char *                        managedBy
 };
+```
 #### IOTHUB_REGISTRY_MODULE_UPDATE
 
+```C
 struct IOTHUB_REGISTRY_MODULE_UPDATE{
   int                                 version,
   const char *                        deviceId,
@@ -142,8 +155,10 @@ struct IOTHUB_REGISTRY_MODULE_UPDATE{
   const char *                        moduleId,
   const char *                        managedBy
 };
+```
 #### IOTHUB_REGISTRYMANAGER
 
+```C
 struct IOTHUB_REGISTRYMANAGER{
   char *  hostname,
   char *  iothubName,
@@ -152,8 +167,10 @@ struct IOTHUB_REGISTRYMANAGER{
   char *  keyName,
   char *  deviceId
 };
+```
 #### IOTHUB_DEVICE
 
+```C
 struct IOTHUB_DEVICE{
   const char *                        deviceId,
   const char *                        primaryKey,
@@ -173,16 +190,20 @@ struct IOTHUB_DEVICE{
   const char *                        serviceProperties,
   IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
 };
+```
 #### IOTHUB_REGISTRY_DEVICE_CREATE
 
+```C
 struct IOTHUB_REGISTRY_DEVICE_CREATE{
   const char *                        deviceId,
   const char *                        primaryKey,
   const char *                        secondaryKey,
   IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
 };
+```
 #### IOTHUB_REGISTRY_DEVICE_UPDATE
 
+```C
 struct IOTHUB_REGISTRY_DEVICE_UPDATE{
   const char *                        deviceId,
   const char *                        primaryKey,
@@ -190,6 +211,7 @@ struct IOTHUB_REGISTRY_DEVICE_UPDATE{
   IOTHUB_DEVICE_STATUS                status,
   IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
 };
+```
 
 ## Defines
 
@@ -207,7 +229,11 @@ IOTHUB_REGISTRY_MODULE_UPDATE_VERSION_1            |
 ## Typedefs
 
 ####IOTHUB_REGISTRYMANAGER_HANDLE
+
+```C
 typedef struct IOTHUB_REGISTRYMANAGER_TAG * IOTHUB_REGISTRYMANAGER_HANDLE()
+
+```
 
 Handle to hide struct and use it in consequent APIs.
 

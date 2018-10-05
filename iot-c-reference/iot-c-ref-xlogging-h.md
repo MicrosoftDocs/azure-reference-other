@@ -36,8 +36,16 @@ LogError            |
 ## Typedefs
 
 ####LOGGER_LOG
+
+```C
 typedef void(* LOGGER_LOG()
 
+```
+
 ####LOGGER_LOG_GETLASTERROR
+
+```C
 typedef void(* LOGGER_LOG_GETLASTERROR()
+
+```
 

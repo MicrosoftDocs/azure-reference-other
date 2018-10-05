@@ -24,5 +24,9 @@ Function Name                  | Description
 ## Typedefs
 
 ####DEVICE_CAPABILITIES_HANDLE
+
+```C
 typedef struct DEVICE_CAPABILITIES_TAG * DEVICE_CAPABILITIES_HANDLE()
+
+```
 

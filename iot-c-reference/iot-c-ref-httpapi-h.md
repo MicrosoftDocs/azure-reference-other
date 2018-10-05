@@ -44,5 +44,9 @@ MAX_PASSWORD_LEN            |
 ## Typedefs
 
 ####HTTP_HANDLE
+
+```C
 typedef struct HTTP_HANDLE_DATA_TAG * HTTP_HANDLE()
+
+```
 

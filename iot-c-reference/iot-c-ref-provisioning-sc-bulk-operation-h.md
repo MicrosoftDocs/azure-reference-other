@@ -30,20 +30,25 @@ Function Name                  | Description
 
 #### PROVISIONING_BULK_OPERATION_ERROR
 
+```C
 struct PROVISIONING_BULK_OPERATION_ERROR{
   char *   registration_id,
   int32_t  error_code,
   char *   error_status
 };
+```
 #### PROVISIONING_BULK_OPERATION_RESULT
 
+```C
 struct PROVISIONING_BULK_OPERATION_RESULT{
   bool                               is_successful,
   PROVISIONING_BULK_OPERATION_ERROR  errors,
   size_t                             num_errors
 };
+```
 #### PROVISIONING_BULK_OPERATION
 
+```C
 struct PROVISIONING_BULK_OPERATION{
   int                                    version,
   PROVISIONING_BULK_OPERATION_MODE       mode,
@@ -51,11 +56,14 @@ struct PROVISIONING_BULK_OPERATION{
   size_t                                 num_enrollments,
   PROVISIONING_BULK_OPERATION_TYPE       type
 };
+```
 #### PROVISIONING_BULK_OPERATION.enrollments
 
+```C
 struct PROVISIONING_BULK_OPERATION.enrollments{
   INDIVIDUAL_ENROLLMENT_HANDLE  ie
 };
+```
 
 ## Defines
 

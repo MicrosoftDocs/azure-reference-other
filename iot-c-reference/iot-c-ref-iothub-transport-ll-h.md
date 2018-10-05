@@ -23,20 +23,44 @@ Function Name                  | Description
 ## Typedefs
 
 ####TRANSPORT_LL_HANDLE
+
+```C
 typedef void * TRANSPORT_LL_HANDLE()
 
+```
+
 ####IOTHUB_DEVICE_HANDLE
+
+```C
 typedef void * IOTHUB_DEVICE_HANDLE()
 
+```
+
 ####TRANSPORT_HANDLE
+
+```C
 typedef struct TRANSPORT_HANDLE_DATA_TAG * TRANSPORT_HANDLE()
 
+```
+
 ####METHOD_HANDLE
+
+```C
 typedef void * METHOD_HANDLE()
 
+```
+
 ####TRANSPORT_PROVIDER
+
+```C
 typedef struct TRANSPORT_PROVIDER_TAG TRANSPORT_PROVIDER()
 
+```
+
 ####IOTHUB_CLIENT_TRANSPORT_PROVIDER
+
+```C
 typedef const  *(* IOTHUB_CLIENT_TRANSPORT_PROVIDER()
+
+```
 

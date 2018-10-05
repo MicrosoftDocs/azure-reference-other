@@ -50,6 +50,7 @@ Function Name                  | Description
 
 #### IOTHUB_CLIENT_CONFIG
 
+```C
 struct IOTHUB_CLIENT_CONFIG{
   IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
   const char *                      deviceId,
@@ -59,8 +60,10 @@ struct IOTHUB_CLIENT_CONFIG{
   const char *                      iotHubSuffix,
   const char *                      protocolGatewayHostName
 };
+```
 #### IOTHUB_CLIENT_DEVICE_CONFIG
 
+```C
 struct IOTHUB_CLIENT_DEVICE_CONFIG{
   IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
   void *                            transportHandle,
@@ -68,6 +71,7 @@ struct IOTHUB_CLIENT_DEVICE_CONFIG{
   const char *                      deviceKey,
   const char *                      deviceSasToken
 };
+```
 
 ## Defines
 
@@ -91,39 +95,87 @@ IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT_VALUES            |
 ## Typedefs
 
 ####IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK
+
+```C
 typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK()
 
+```
+
 ####IOTHUB_METHOD_INVOKE_CALLBACK
+
+```C
 typedef void(* IOTHUB_METHOD_INVOKE_CALLBACK()
 
+```
+
 ####IOTHUBTRANSPORT_CONFIG
+
+```C
 typedef struct IOTHUBTRANSPORT_CONFIG_TAG IOTHUBTRANSPORT_CONFIG()
 
+```
+
 ####IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK
+
+```C
 typedef void(* IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK()
 
+```
+
 ####IOTHUB_CLIENT_CONNECTION_STATUS_CALLBACK
+
+```C
 typedef void(* IOTHUB_CLIENT_CONNECTION_STATUS_CALLBACK()
 
+```
+
 ####IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC
+
+```C
 typedef (* IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC()
 
+```
+
 ####IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK
+
+```C
 typedef void(* IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK()
 
+```
+
 ####IOTHUB_CLIENT_REPORTED_STATE_CALLBACK
+
+```C
 typedef void(* IOTHUB_CLIENT_REPORTED_STATE_CALLBACK()
 
+```
+
 ####IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC
+
+```C
 typedef int(* IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC()
 
+```
+
 ####IOTHUB_CLIENT_INBOUND_DEVICE_METHOD_CALLBACK
+
+```C
 typedef int(* IOTHUB_CLIENT_INBOUND_DEVICE_METHOD_CALLBACK()
 
+```
+
 ####IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK
+
+```C
 typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK()
+
+```
 
 Callback invoked by IoTHubClient_UploadMultipleBlocksToBlobAsync requesting the chunks of data to be uploaded.
 ####IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX
+
+```C
 typedef (* IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX()
+
+```
 

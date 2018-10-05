@@ -29,21 +29,41 @@ Function Name                  | Description
 ## Typedefs
 
 ####SINGLYLINKEDLIST_HANDLE
+
+```C
 typedef struct SINGLYLINKEDLIST_INSTANCE_TAG * SINGLYLINKEDLIST_HANDLE()
 
+```
+
 ####LIST_ITEM_HANDLE
+
+```C
 typedef struct LIST_ITEM_INSTANCE_TAG * LIST_ITEM_HANDLE()
 
+```
+
 ####LIST_MATCH_FUNCTION
+
+```C
 typedef bool(* LIST_MATCH_FUNCTION()
+
+```
 
 Function passed to singlylinkedlist_find, which returns whichever first list item that matches it.
 ####LIST_CONDITION_FUNCTION
+
+```C
 typedef bool(* LIST_CONDITION_FUNCTION()
+
+```
 
 Function passed to singlylinkedlist_remove_if, which is used to define if an item of the list should be removed or not.
 ####LIST_ACTION_FUNCTION
+
+```C
 typedef void(* LIST_ACTION_FUNCTION()
+
+```
 
 Function passed to singlylinkedlist_foreach, which is called for the value of each node of the list.
 

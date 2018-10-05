@@ -26,26 +26,32 @@ Function Name                  | Description
 
 #### PROVISIONING_QUERY_SPECIFICATION
 
+```C
 struct PROVISIONING_QUERY_SPECIFICATION{
   int           version,
   const char *  query_string,
   const char *  registration_id,
   size_t        page_size
 };
+```
 #### PROVISIONING_QUERY_RESPONSE
 
+```C
 struct PROVISIONING_QUERY_RESPONSE{
   union PROVISIONING_QUERY_RESPONSE::@1  response_arr,
   size_t                                 response_arr_size,
   PROVISIONING_QUERY_TYPE                response_arr_type
 };
+```
 #### PROVISIONING_QUERY_RESPONSE.response_arr
 
+```C
 struct PROVISIONING_QUERY_RESPONSE.response_arr{
   INDIVIDUAL_ENROLLMENT_HANDLE      ie,
   ENROLLMENT_GROUP_HANDLE           eg,
   DEVICE_REGISTRATION_STATE_HANDLE  drs
 };
+```
 
 ## Defines
 

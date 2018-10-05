@@ -53,5 +53,9 @@ IOTHUB_DEVICE_CLIENT_INSTANCE_TYPE            |
 ## Typedefs
 
 ####IOTHUB_DEVICE_CLIENT_HANDLE
+
+```C
 typedef undefined IOTHUB_DEVICE_CLIENT_HANDLE()
+
+```
 

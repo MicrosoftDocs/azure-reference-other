@@ -28,6 +28,7 @@ Function Name                  | Description
 
 #### IOTHUB_SERVICE_CLIENT_AUTH
 
+```C
 struct IOTHUB_SERVICE_CLIENT_AUTH{
   char *  hostname,
   char *  iothubName,
@@ -36,6 +37,7 @@ struct IOTHUB_SERVICE_CLIENT_AUTH{
   char *  keyName,
   char *  deviceId
 };
+```
 
 ## Defines
 
@@ -47,7 +49,11 @@ IOTHUB_DEVICE_CONNECTION_STATE_VALUES            |
 ## Typedefs
 
 ####IOTHUB_SERVICE_CLIENT_AUTH_HANDLE
+
+```C
 typedef struct IOTHUB_SERVICE_CLIENT_AUTH_TAG * IOTHUB_SERVICE_CLIENT_AUTH_HANDLE()
+
+```
 
 Handle to hide struct and use it in consequent APIs.
 

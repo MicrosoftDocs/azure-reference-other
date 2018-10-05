@@ -36,8 +36,16 @@ NECESSITY_VALUES            |
 ## Typedefs
 
 ####TO_JSON_FUNCTION
+
+```C
 typedef JSON_Value *(* TO_JSON_FUNCTION()
 
+```
+
 ####FROM_JSON_FUNCTION
+
+```C
 typedef void *(* FROM_JSON_FUNCTION()
+
+```
 

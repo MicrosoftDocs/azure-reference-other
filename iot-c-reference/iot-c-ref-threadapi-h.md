@@ -29,8 +29,16 @@ THREADAPI_RESULT_VALUES            |
 ## Typedefs
 
 ####THREAD_START_FUNC
+
+```C
 typedef int(* THREAD_START_FUNC()
 
+```
+
 ####THREAD_HANDLE
+
+```C
 typedef void * THREAD_HANDLE()
+
+```
 

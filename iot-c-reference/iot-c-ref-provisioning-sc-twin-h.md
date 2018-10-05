@@ -26,5 +26,9 @@ Function Name                  | Description
 ## Typedefs
 
 ####INITIAL_TWIN_HANDLE
+
+```C
 typedef struct INITIAL_TWIN_TAG * INITIAL_TWIN_HANDLE()
+
+```
 
