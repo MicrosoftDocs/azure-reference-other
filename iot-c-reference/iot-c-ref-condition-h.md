@@ -5,8 +5,8 @@ Stub comment for brief. Please update this comment.
 ## Includes
 
 \#include "azure_c_shared_utility/macro_utils.h"  
-\#include ["azure_c_shared_utility/lock.h"](iot-c-ref-lock-h.md)  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/lock.h](iot-c-ref-lock-h.md)"  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 
 ## Detailed Description
 

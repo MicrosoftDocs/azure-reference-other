@@ -4,9 +4,9 @@ Stub comment for brief. Please update this comment.
 
 ## Includes
 
-\#include ["azure_c_shared_utility/strings.h"](iot-c-ref-strings-h.md)  
-\#include ["azure_c_shared_utility/xio.h"](iot-c-ref-xio-h.md)  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/strings.h](iot-c-ref-strings-h.md)"  
+\#include "[azure_c_shared_utility/xio.h](iot-c-ref-xio-h.md)"  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 
 ## Detailed Description
 

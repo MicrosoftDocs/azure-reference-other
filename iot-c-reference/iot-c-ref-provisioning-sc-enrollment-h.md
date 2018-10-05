@@ -6,11 +6,11 @@ Stub comment for brief. Please update this comment.
 
 \#include "azure_c_shared_utility/agenttime.h"  
 \#include "azure_c_shared_utility/macro_utils.h"  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
-\#include ["provisioning_sc_attestation_mechanism.h"](iot-c-ref-provisioning-sc-attestation-mechanism-h.md)  
-\#include ["provisioning_sc_device_registration_state.h"](iot-c-ref-provisioning-sc-device-registration-state-h.md)  
-\#include ["provisioning_sc_device_capabilities.h"](iot-c-ref-provisioning-sc-device-capabilities-h.md)  
-\#include ["provisioning_sc_twin.h"](iot-c-ref-provisioning-sc-twin-h.md)  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
+\#include "[provisioning_sc_attestation_mechanism.h](iot-c-ref-provisioning-sc-attestation-mechanism-h.md)"  
+\#include "[provisioning_sc_device_registration_state.h](iot-c-ref-provisioning-sc-device-registration-state-h.md)"  
+\#include "[provisioning_sc_device_capabilities.h](iot-c-ref-provisioning-sc-device-capabilities-h.md)"  
+\#include "[provisioning_sc_twin.h](iot-c-ref-provisioning-sc-twin-h.md)"  
 \#include "parson.h"  
 
 ## Detailed Description

@@ -1,26 +1,27 @@
 # IoTHubClient_SetOption()
 
-\#include ["azure-iot-sdk-c/iothub_client/inc/iothub_client.h"](../iot-c-ref-iothub-client-h.md)  
+\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iot-c-ref-iothub-client-h.md)"  
 
 ## Syntax
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClient_SetOption(
   IOTHUB_CLIENT_HANDLE  iotHubClientHandle,
+
   const char *          optionName,
+
   const void *          value
 );
-
 ```
 
 This API sets a runtime option identified by parameter `optionName` to a value pointed to by `value`. `optionName` and the data type `value` is pointing to are specific for every option.
 
-#### Parameters
-* `iotHubClientHandle` The handle created by a call to the create function. 
+## Parameters
+* **:iotHubClientHandle** The handle created by a call to the create function. 
 
-* `optionName` Name of the option. 
+* **:optionName** Name of the option. 
 
-* `value` The value.
+* **:value** The value.
 
 The options that can be set via this API are:
 
@@ -42,6 +43,6 @@ The options that can be set via this API are:
 
 * **cl2svc_keep_alive_send_ratio** - the AMQP client side keep alive interval in seconds. After the connection established the server requests the client to set the keep alive interval for given time. If it is not set then the default ratio of 1/2 is applied. The ratio has to be greater than 0.0 and equal to or less than 0.9
 
-#### Returns
+## Returns
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

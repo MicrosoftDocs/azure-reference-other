@@ -1,26 +1,27 @@
 # IoTHubModuleClient_LL_SetOption()
 
-\#include ["azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h"](../iot-c-ref-iothub-module-client-ll-h.md)  
+\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h](../iot-c-ref-iothub-module-client-ll-h.md)"  
 
 ## Syntax
 
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetOption(
   IOTHUB_MODULE_CLIENT_LL_HANDLE  iotHubModuleClientHandle,
+
   const char *                    optionName,
+
   const void *                    value
 );
-
 ```
 
 This API sets a runtime option identified by parameter `optionName` to a value pointed to by `value`. `optionName` and the data type `value` is pointing to are specific for every option.
 
-#### Parameters
-* `iotHubModuleClientHandle` The handle created by a call to the create function. 
+## Parameters
+* **:iotHubModuleClientHandle** The handle created by a call to the create function. 
 
-* `optionName` Name of the option. 
+* **:optionName** Name of the option. 
 
-* `value` The value.
+* **:value** The value.
 
 The options that can be set via this API are:
 
@@ -42,6 +43,6 @@ The options that can be set via this API are:
 
 * **sas_token_lifetime** - available for MQTT & AMQP protocol. size_t value that that determines the sas token timeout length.
 
-#### Returns
+## Returns
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

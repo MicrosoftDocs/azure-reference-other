@@ -4,7 +4,7 @@ Functions for managing the client SDK version.
 
 ## Includes
 
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 
 ## Detailed Description
 

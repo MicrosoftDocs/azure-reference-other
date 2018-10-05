@@ -4,7 +4,7 @@ Stub comment for brief. Please update this comment.
 
 ## Includes
 
-\#include ["azure_c_shared_utility/gballoc.h"](iot-c-ref-gballoc-h.md)  
+\#include "[azure_c_shared_utility/gballoc.h](iot-c-ref-gballoc-h.md)"  
 \#include "azure_c_shared_utility/macro_utils.h"  
 \#include <stdlib.h>  
 \#include <stdint.h>  

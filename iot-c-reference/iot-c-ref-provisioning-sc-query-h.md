@@ -5,9 +5,9 @@ Stub comment for brief. Please update this comment.
 ## Includes
 
 \#include <stdlib.h>  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 \#include "azure_c_shared_utility/macro_utils.h"  
-\#include ["provisioning_sc_models.h"](iot-c-ref-provisioning-sc-models-h.md)  
+\#include "[provisioning_sc_models.h](iot-c-ref-provisioning-sc-models-h.md)"  
 \#include "parson.h"  
 
 ## Detailed Description

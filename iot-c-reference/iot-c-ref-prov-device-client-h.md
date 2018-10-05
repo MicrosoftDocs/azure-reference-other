@@ -6,10 +6,10 @@ Extends the Prov_Device_LL module with additional features.
 
 \#include <stddef.h>  
 \#include <stdint.h>  
-\#include ["prov_device_ll_client.h"](iot-c-ref-prov-device-ll-client-h.md)  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[prov_device_ll_client.h](iot-c-ref-prov-device-ll-client-h.md)"  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 \#include "azure_c_shared_utility/macro_utils.h"  
-\#include ["azure_prov_client/prov_transport.h"](iot-c-ref-prov-transport-h.md)  
+\#include "[azure_prov_client/prov_transport.h](iot-c-ref-prov-transport-h.md)"  
 
 ## Detailed Description
 

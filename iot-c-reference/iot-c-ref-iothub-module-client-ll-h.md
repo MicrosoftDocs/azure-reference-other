@@ -6,9 +6,9 @@ APIs that allow a user (usually a module) to communicate with an Azure IoTHub.
 
 \#include <time.h>  
 \#include "azure_c_shared_utility/macro_utils.h"  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
-\#include ["iothub_transport_ll.h"](iot-c-ref-iothub-transport-ll-h.md)  
-\#include ["iothub_client_core_common.h"](iot-c-ref-iothub-client-core-common-h.md)  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
+\#include "[iothub_transport_ll.h](iot-c-ref-iothub-transport-ll-h.md)"  
+\#include "[iothub_client_core_common.h](iot-c-ref-iothub-client-core-common-h.md)"  
 \#include <stddef.h>  
 \#include <stdint.h>  
 

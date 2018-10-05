@@ -5,7 +5,7 @@ This module implements support for creating new threads, terminating threads and
 ## Includes
 
 \#include "azure_c_shared_utility/macro_utils.h"  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 
 ## Detailed Description
 

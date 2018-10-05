@@ -1,6 +1,6 @@
 # IoTHubClient_Destroy()
 
-\#include ["azure-iot-sdk-c/iothub_client/inc/iothub_client.h"](../iot-c-ref-iothub-client-h.md)  
+\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iot-c-ref-iothub-client-h.md)"  
 
 ## Syntax
 
@@ -8,11 +8,10 @@
 void IoTHubClient_Destroy(
   IOTHUB_CLIENT_HANDLE  iotHubClientHandle
 );
-
 ```
 
 Disposes of resources allocated by the IoT Hub client. This is a blocking call.
 
-#### Parameters
-* `iotHubClientHandle` The handle created by a call to the create function.
+## Parameters
+* **:iotHubClientHandle** The handle created by a call to the create function.
 

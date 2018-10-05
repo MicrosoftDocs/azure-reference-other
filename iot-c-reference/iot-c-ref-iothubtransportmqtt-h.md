@@ -4,7 +4,7 @@ Stub comment for brief. Please update this comment.
 
 ## Includes
 
-\#include ["iothub_transport_ll.h"](iot-c-ref-iothub-transport-ll-h.md)  
+\#include "[iothub_transport_ll.h](iot-c-ref-iothub-transport-ll-h.md)"  
 
 ## Detailed Description
 

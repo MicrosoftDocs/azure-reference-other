@@ -5,11 +5,11 @@ Stub comment for brief. Please update this comment.
 ## Includes
 
 \#include "azure_c_shared_utility/crt_abstractions.h"  
-\#include ["azure_c_shared_utility/singlylinkedlist.h"](iot-c-ref-singlylinkedlist-h.md)  
-\#include ["azure_c_shared_utility/map.h"](iot-c-ref-map-h.md)  
-\#include ["iothub_message.h"](iot-c-ref-iothub-message-h.md)  
-\#include ["iothub_service_client_auth.h"](iot-c-ref-iothub-service-client-auth-h.md)  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/singlylinkedlist.h](iot-c-ref-singlylinkedlist-h.md)"  
+\#include "[azure_c_shared_utility/map.h](iot-c-ref-map-h.md)"  
+\#include "[iothub_message.h](iot-c-ref-iothub-message-h.md)"  
+\#include "[iothub_service_client_auth.h](iot-c-ref-iothub-service-client-auth-h.md)"  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 
 ## Detailed Description
 

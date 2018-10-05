@@ -7,7 +7,7 @@ This module implements the standard HTTP API used by the C IoT client library.
 \#include "azure_c_shared_utility/httpheaders.h"  
 \#include "azure_c_shared_utility/macro_utils.h"  
 \#include "azure_c_shared_utility/buffer_.h"  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 \#include <stddef.h>  
 
 ## Detailed Description

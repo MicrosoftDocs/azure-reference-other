@@ -1,6 +1,6 @@
 # IOTHUB_MESSAGE_RESULTStrings()
 
-\#include ["azure-iot-sdk-c/iothub_client/inc/iothub_message.h"](../iot-c-ref-iothub-message-h.md)  
+\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iot-c-ref-iothub-message-h.md)"  
 
 ## Syntax
 
@@ -8,6 +8,5 @@
 const char* IOTHUB_MESSAGE_RESULTStrings(
   IOTHUB_MESSAGE_RESULT  value
 );
-
 ```
 

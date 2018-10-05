@@ -1,24 +1,24 @@
 # Map_Delete()
 
-\#include ["azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h"](../iot-c-ref-map-h.md)  
+\#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../iot-c-ref-map-h.md)"  
 
 ## Syntax
 
 ```C
 MAP_RESULT Map_Delete(
   MAP_HANDLE    handle,
+
   const char *  key
 );
-
 ```
 
 Removes a key and its associated value from the map.
 
-#### Parameters
-* `handle` The handle to an existing map. 
+## Parameters
+* **:handle** The handle to an existing map. 
 
-* `key` The `key` of the item to be deleted.
+* **:key** The `key` of the item to be deleted.
 
-#### Returns
+## Returns
 Returns `MAP_OK` if the key was deleted successfully or an error code otherwise.
 

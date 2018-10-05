@@ -5,9 +5,9 @@ Map is a module that implements a dictionary of `STRING_HANDLE` keys to `STRING_
 ## Includes
 
 \#include "azure_c_shared_utility/macro_utils.h"  
-\#include ["azure_c_shared_utility/strings.h"](iot-c-ref-strings-h.md)  
+\#include "[azure_c_shared_utility/strings.h](iot-c-ref-strings-h.md)"  
 \#include "azure_c_shared_utility/crt_abstractions.h"  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 \#include <stddef.h>  
 
 ## Detailed Description

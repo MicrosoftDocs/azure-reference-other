@@ -4,7 +4,7 @@ Stub comment for brief. Please update this comment.
 
 ## Includes
 
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 \#include <stddef.h>  
 \#include <stdlib.h>  
 

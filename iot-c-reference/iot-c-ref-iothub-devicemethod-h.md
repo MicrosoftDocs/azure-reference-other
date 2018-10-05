@@ -4,8 +4,8 @@ Stub comment for brief. Please update this comment.
 
 ## Includes
 
-\#include ["iothub_service_client_auth.h"](iot-c-ref-iothub-service-client-auth-h.md)  
-\#include ["azure_c_shared_utility/umock_c_prod.h"](iot-c-ref-umock-c-prod-h.md)  
+\#include "[iothub_service_client_auth.h](iot-c-ref-iothub-service-client-auth-h.md)"  
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
 
 ## Detailed Description
 

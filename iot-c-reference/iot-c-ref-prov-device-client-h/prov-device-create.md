@@ -1,15 +1,16 @@
 # Prov_Device_Create()
 
-\#include ["azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_client.h"](../iot-c-ref-prov-device-client-h.md)  
+\#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_client.h](../iot-c-ref-prov-device-client-h.md)"  
 
 ## Syntax
 
 ```C
 PROV_DEVICE_HANDLE Prov_Device_Create(
   const char *                             uri,
+
   const char *                             scope_id,
+
   PROV_DEVICE_TRANSPORT_PROVIDER_FUNCTION  protocol
 );
-
 ```
 
