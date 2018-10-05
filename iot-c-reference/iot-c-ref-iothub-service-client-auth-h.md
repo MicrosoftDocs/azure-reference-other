@@ -29,7 +29,7 @@ Function Name                  | Description
 #### IOTHUB_SERVICE_CLIENT_AUTH
 
 ```C
-struct IOTHUB_SERVICE_CLIENT_AUTH{
+struct IOTHUB_SERVICE_CLIENT_AUTH {
   char *  hostname,
   char *  iothubName,
   char *  iothubSuffix,

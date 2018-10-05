@@ -1,9 +1,8 @@
 # IOTHUB_PROCESS_ITEM_RESULTStrings()
 
-\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_core_common.h](../iot-c-ref-iothub-client-core-common-h.md)"  
-
 ## Syntax
 
+\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_core_common.h](../iot-c-ref-iothub-client-core-common-h.md)"  
 ```C
 const char* IOTHUB_PROCESS_ITEM_RESULTStrings(
   IOTHUB_PROCESS_ITEM_RESULT  value

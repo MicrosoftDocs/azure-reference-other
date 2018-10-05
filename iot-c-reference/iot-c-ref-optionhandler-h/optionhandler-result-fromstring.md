@@ -1,9 +1,8 @@
 # OPTIONHANDLER_RESULT_FromString()
 
-\#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/optionhandler.h](../iot-c-ref-optionhandler-h.md)"  
-
 ## Syntax
 
+\#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/optionhandler.h](../iot-c-ref-optionhandler-h.md)"  
 ```C
 int OPTIONHANDLER_RESULT_FromString(
   const char *          enumAsString,

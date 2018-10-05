@@ -1,9 +1,10 @@
 # IoTHubClient_SendReportedState()
 
-\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iot-c-ref-iothub-client-h.md)"  
+This API sends a report of the device's properties and their current values.
 
 ## Syntax
 
+\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iot-c-ref-iothub-client-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClient_SendReportedState(
   IOTHUB_CLIENT_HANDLE                   iotHubClientHandle,
@@ -14,16 +15,14 @@ IOTHUB_CLIENT_RESULT IoTHubClient_SendReportedState(
 );
 ```
 
-This API sends a report of the device's properties and their current values.
-
 ## Parameters
-* `iotHubClientHandle`The handle created by a call to the create function. 
+* `iotHubClientHandle` The handle created by a call to the create function. 
 
-* `reportedState`The current device property values to be 'reported' to the IoTHub. 
+* `reportedState` The current device property values to be 'reported' to the IoTHub. 
 
-* `reportedStateCallback`The callback specified by the device client to be called with the result of the transaction. 
+* `reportedStateCallback` The callback specified by the device client to be called with the result of the transaction. 
 
-* `userContextCallback`User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubClient_Destroy](#iothub__client_8h_1a47fce212d1c5026e02ccd670242e1d83) function from within any callback.
 

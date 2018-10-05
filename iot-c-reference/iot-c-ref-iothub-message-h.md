@@ -53,7 +53,7 @@ Function Name                  | Description
 #### IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA
 
 ```C
-struct IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA{
+struct IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA {
   char *  diagnosticId,
   char *  diagnosticCreationTimeUtc
 };

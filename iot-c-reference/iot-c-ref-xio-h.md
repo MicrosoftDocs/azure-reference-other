@@ -35,7 +35,7 @@ Function Name                  | Description
 #### IO_INTERFACE_DESCRIPTION
 
 ```C
-struct IO_INTERFACE_DESCRIPTION{
+struct IO_INTERFACE_DESCRIPTION {
   IO_RETRIEVEOPTIONS  concrete_io_retrieveoptions,
   IO_CREATE           concrete_io_create,
   IO_DESTROY          concrete_io_destroy,

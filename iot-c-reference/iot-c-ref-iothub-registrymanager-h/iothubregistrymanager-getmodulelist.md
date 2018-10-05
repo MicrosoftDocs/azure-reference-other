@@ -1,9 +1,10 @@
 # IoTHubRegistryManager_GetModuleList()
 
-\#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h](../iot-c-ref-iothub-registrymanager-h.md)"  
+Gets a list of modules registered on the specified device.
 
 ## Syntax
 
+\#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h](../iot-c-ref-iothub-registrymanager-h.md)"  
 ```C
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetModuleList(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
@@ -13,16 +14,14 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetModuleList(
 );
 ```
 
-Gets a list of modules registered on the specified device.
-
 ## Parameters
-* `registryManagerHandle`The handle created by a call to the create function. 
+* `registryManagerHandle` The handle created by a call to the create function. 
 
-* `deviceId`The device to get a list of modules from 
+* `deviceId` The device to get a list of modules from 
 
-* `moduleList`The linked list structure to hold the returned modules 
+* `moduleList` The linked list structure to hold the returned modules 
 
-* `module_version`The version of the module structure to return
+* `module_version` The version of the module structure to return
 
 ## Returns
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.

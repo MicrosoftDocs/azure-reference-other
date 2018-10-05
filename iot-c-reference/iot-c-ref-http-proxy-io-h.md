@@ -22,7 +22,7 @@ Function Name                  | Description
 #### HTTP_PROXY_IO_CONFIG
 
 ```C
-struct HTTP_PROXY_IO_CONFIG{
+struct HTTP_PROXY_IO_CONFIG {
   const char *  hostname,
   int           port,
   const char *  proxy_hostname,

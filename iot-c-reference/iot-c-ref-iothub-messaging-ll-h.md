@@ -39,7 +39,7 @@ Function Name                  | Description
 #### IOTHUB_SERVICE_FEEDBACK_RECORD
 
 ```C
-struct IOTHUB_SERVICE_FEEDBACK_RECORD{
+struct IOTHUB_SERVICE_FEEDBACK_RECORD {
   char *                       description,
   const char *                 deviceId,
   const char *                 correlationId,
@@ -52,7 +52,7 @@ struct IOTHUB_SERVICE_FEEDBACK_RECORD{
 #### IOTHUB_SERVICE_FEEDBACK_BATCH
 
 ```C
-struct IOTHUB_SERVICE_FEEDBACK_BATCH{
+struct IOTHUB_SERVICE_FEEDBACK_BATCH {
   const char *             userId,
   const char *             lockToken,
   SINGLYLINKEDLIST_HANDLE  feedbackRecordList

@@ -15,7 +15,7 @@ Stub comment for details. Please update this comment.
 #### HTTP_PROXY_OPTIONS
 
 ```C
-struct HTTP_PROXY_OPTIONS{
+struct HTTP_PROXY_OPTIONS {
   const char *  host_address,
   int           port,
   const char *  username,

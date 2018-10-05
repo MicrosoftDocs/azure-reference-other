@@ -37,7 +37,7 @@ Function Name                  | Description
 #### IOTHUB_DEVICE_CONFIGURATION_CONTENT
 
 ```C
-struct IOTHUB_DEVICE_CONFIGURATION_CONTENT{
+struct IOTHUB_DEVICE_CONFIGURATION_CONTENT {
   const char *  deviceContent,
   const char *  modulesContent
 };
@@ -45,7 +45,7 @@ struct IOTHUB_DEVICE_CONFIGURATION_CONTENT{
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT
 
 ```C
-struct IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT{
+struct IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT {
   size_t         numQueries,
   const char **  queryNames,
   double *       results
@@ -54,7 +54,7 @@ struct IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT{
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION
 
 ```C
-struct IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION{
+struct IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION {
   size_t         numQueries,
   const char **  queryNames,
   const char **  queryStrings
@@ -63,7 +63,7 @@ struct IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION{
 #### IOTHUB_DEVICE_CONFIGURATION_LABELS
 
 ```C
-struct IOTHUB_DEVICE_CONFIGURATION_LABELS{
+struct IOTHUB_DEVICE_CONFIGURATION_LABELS {
   size_t         numLabels,
   const char **  labelNames,
   const char **  labelValues
@@ -72,7 +72,7 @@ struct IOTHUB_DEVICE_CONFIGURATION_LABELS{
 #### IOTHUB_DEVICE_CONFIGURATION
 
 ```C
-struct IOTHUB_DEVICE_CONFIGURATION{
+struct IOTHUB_DEVICE_CONFIGURATION {
   int                                             version,
   const char *                                    schemaVersion,
   const char *                                    configurationId,
@@ -92,7 +92,7 @@ struct IOTHUB_DEVICE_CONFIGURATION{
 #### IOTHUB_DEVICE_CONFIGURATION_ADD
 
 ```C
-struct IOTHUB_DEVICE_CONFIGURATION_ADD{
+struct IOTHUB_DEVICE_CONFIGURATION_ADD {
   int                                             version,
   const char *                                    configurationId,
   const char *                                    targetCondition,

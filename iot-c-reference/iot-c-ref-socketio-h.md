@@ -31,7 +31,7 @@ Function Name                  | Description
 #### SOCKETIO_CONFIG
 
 ```C
-struct SOCKETIO_CONFIG{
+struct SOCKETIO_CONFIG {
   const char *  hostname,
   int           port,
   void *        accepted_socket

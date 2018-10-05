@@ -1,9 +1,10 @@
 # prov_sc_query_device_registration_state()
 
-\#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../iot-c-ref-provisioning-service-client-h.md)"  
+Queries device registration state records from the Provisioning Service.
 
 ## Syntax
 
+\#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../iot-c-ref-provisioning-service-client-h.md)"  
 ```C
 int prov_sc_query_device_registration_state(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
@@ -13,16 +14,14 @@ int prov_sc_query_device_registration_state(
 );
 ```
 
-Queries device registration state records from the Provisioning Service.
-
 ## Parameters
-* `prov_client`The handle used for connecting to the Provisioning Service. 
+* `prov_client` The handle used for connecting to the Provisioning Service. 
 
-* `query_spec`The query specification with query details and settings 
+* `query_spec` The query specification with query details and settings 
 
-* `cont_token_ptr`A pointer to a continuation token, which will be updated based on the response 
+* `cont_token_ptr` A pointer to a continuation token, which will be updated based on the response 
 
-* `query_resp_ptr`A pointer to a query response pointer, which will be filled with retrieved data
+* `query_resp_ptr` A pointer to a query response pointer, which will be filled with retrieved data
 
 ## Returns
 0 upon success, a non-zero number upon failure

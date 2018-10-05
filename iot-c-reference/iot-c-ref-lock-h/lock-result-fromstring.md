@@ -1,9 +1,8 @@
 # LOCK_RESULT_FromString()
 
-\#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/lock.h](../iot-c-ref-lock-h.md)"  
-
 ## Syntax
 
+\#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/lock.h](../iot-c-ref-lock-h.md)"  
 ```C
 int LOCK_RESULT_FromString(
   const char *  enumAsString,

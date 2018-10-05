@@ -51,7 +51,7 @@ Function Name                  | Description
 #### IOTHUB_CLIENT_CONFIG
 
 ```C
-struct IOTHUB_CLIENT_CONFIG{
+struct IOTHUB_CLIENT_CONFIG {
   IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
   const char *                      deviceId,
   const char *                      deviceKey,
@@ -64,7 +64,7 @@ struct IOTHUB_CLIENT_CONFIG{
 #### IOTHUB_CLIENT_DEVICE_CONFIG
 
 ```C
-struct IOTHUB_CLIENT_DEVICE_CONFIG{
+struct IOTHUB_CLIENT_DEVICE_CONFIG {
   IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
   void *                            transportHandle,
   const char *                      deviceId,

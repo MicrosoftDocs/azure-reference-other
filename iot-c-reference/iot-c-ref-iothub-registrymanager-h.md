@@ -47,7 +47,7 @@ Function Name                  | Description
 #### IOTHUB_DEVICE_EX
 
 ```C
-struct IOTHUB_DEVICE_EX{
+struct IOTHUB_DEVICE_EX {
   int                                 version,
   const char *                        deviceId,
   const char *                        primaryKey,
@@ -72,7 +72,7 @@ struct IOTHUB_DEVICE_EX{
 #### IOTHUB_REGISTRY_DEVICE_CREATE_EX
 
 ```C
-struct IOTHUB_REGISTRY_DEVICE_CREATE_EX{
+struct IOTHUB_REGISTRY_DEVICE_CREATE_EX {
   int                                 version,
   const char *                        deviceId,
   const char *                        primaryKey,
@@ -84,7 +84,7 @@ struct IOTHUB_REGISTRY_DEVICE_CREATE_EX{
 #### IOTHUB_REGISTRY_DEVICE_UPDATE_EX
 
 ```C
-struct IOTHUB_REGISTRY_DEVICE_UPDATE_EX{
+struct IOTHUB_REGISTRY_DEVICE_UPDATE_EX {
   int                                 version,
   const char *                        deviceId,
   const char *                        primaryKey,
@@ -97,7 +97,7 @@ struct IOTHUB_REGISTRY_DEVICE_UPDATE_EX{
 #### IOTHUB_REGISTRY_STATISTICS
 
 ```C
-struct IOTHUB_REGISTRY_STATISTICS{
+struct IOTHUB_REGISTRY_STATISTICS {
   size_t  totalDeviceCount,
   size_t  enabledDeviceCount,
   size_t  disabledDeviceCount
@@ -106,7 +106,7 @@ struct IOTHUB_REGISTRY_STATISTICS{
 #### IOTHUB_MODULE
 
 ```C
-struct IOTHUB_MODULE{
+struct IOTHUB_MODULE {
   int                                 version,
   const char *                        deviceId,
   const char *                        primaryKey,
@@ -132,7 +132,7 @@ struct IOTHUB_MODULE{
 #### IOTHUB_REGISTRY_MODULE_CREATE
 
 ```C
-struct IOTHUB_REGISTRY_MODULE_CREATE{
+struct IOTHUB_REGISTRY_MODULE_CREATE {
   int                                 version,
   const char *                        deviceId,
   const char *                        primaryKey,
@@ -145,7 +145,7 @@ struct IOTHUB_REGISTRY_MODULE_CREATE{
 #### IOTHUB_REGISTRY_MODULE_UPDATE
 
 ```C
-struct IOTHUB_REGISTRY_MODULE_UPDATE{
+struct IOTHUB_REGISTRY_MODULE_UPDATE {
   int                                 version,
   const char *                        deviceId,
   const char *                        primaryKey,
@@ -159,7 +159,7 @@ struct IOTHUB_REGISTRY_MODULE_UPDATE{
 #### IOTHUB_REGISTRYMANAGER
 
 ```C
-struct IOTHUB_REGISTRYMANAGER{
+struct IOTHUB_REGISTRYMANAGER {
   char *  hostname,
   char *  iothubName,
   char *  iothubSuffix,
@@ -171,7 +171,7 @@ struct IOTHUB_REGISTRYMANAGER{
 #### IOTHUB_DEVICE
 
 ```C
-struct IOTHUB_DEVICE{
+struct IOTHUB_DEVICE {
   const char *                        deviceId,
   const char *                        primaryKey,
   const char *                        secondaryKey,
@@ -194,7 +194,7 @@ struct IOTHUB_DEVICE{
 #### IOTHUB_REGISTRY_DEVICE_CREATE
 
 ```C
-struct IOTHUB_REGISTRY_DEVICE_CREATE{
+struct IOTHUB_REGISTRY_DEVICE_CREATE {
   const char *                        deviceId,
   const char *                        primaryKey,
   const char *                        secondaryKey,
@@ -204,7 +204,7 @@ struct IOTHUB_REGISTRY_DEVICE_CREATE{
 #### IOTHUB_REGISTRY_DEVICE_UPDATE
 
 ```C
-struct IOTHUB_REGISTRY_DEVICE_UPDATE{
+struct IOTHUB_REGISTRY_DEVICE_UPDATE {
   const char *                        deviceId,
   const char *                        primaryKey,
   const char *                        secondaryKey,

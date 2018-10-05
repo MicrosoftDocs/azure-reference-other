@@ -31,7 +31,7 @@ Function Name                  | Description
 #### PROVISIONING_BULK_OPERATION_ERROR
 
 ```C
-struct PROVISIONING_BULK_OPERATION_ERROR{
+struct PROVISIONING_BULK_OPERATION_ERROR {
   char *   registration_id,
   int32_t  error_code,
   char *   error_status
@@ -40,7 +40,7 @@ struct PROVISIONING_BULK_OPERATION_ERROR{
 #### PROVISIONING_BULK_OPERATION_RESULT
 
 ```C
-struct PROVISIONING_BULK_OPERATION_RESULT{
+struct PROVISIONING_BULK_OPERATION_RESULT {
   bool                               is_successful,
   PROVISIONING_BULK_OPERATION_ERROR  errors,
   size_t                             num_errors
@@ -49,7 +49,7 @@ struct PROVISIONING_BULK_OPERATION_RESULT{
 #### PROVISIONING_BULK_OPERATION
 
 ```C
-struct PROVISIONING_BULK_OPERATION{
+struct PROVISIONING_BULK_OPERATION {
   int                                    version,
   PROVISIONING_BULK_OPERATION_MODE       mode,
   union PROVISIONING_BULK_OPERATION::@0  enrollments,

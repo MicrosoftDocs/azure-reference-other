@@ -1,9 +1,10 @@
 # IoTHubDeviceClient_CreateFromConnectionString()
 
-\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iot-c-ref-iothub-device-client-h.md)"  
+Creates a IoT Hub client for communication with an existing IoT Hub using the specified connection string parameter.
 
 ## Syntax
 
+\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iot-c-ref-iothub-device-client-h.md)"  
 ```C
 IOTHUB_DEVICE_CLIENT_HANDLE IoTHubDeviceClient_CreateFromConnectionString(
   const char *                      connectionString,
@@ -11,12 +12,10 @@ IOTHUB_DEVICE_CLIENT_HANDLE IoTHubDeviceClient_CreateFromConnectionString(
 );
 ```
 
-Creates a IoT Hub client for communication with an existing IoT Hub using the specified connection string parameter.
-
 ## Parameters
-* `connectionString`Pointer to a character string 
+* `connectionString` Pointer to a character string 
 
-* `protocol`Function pointer for protocol implementation
+* `protocol` Function pointer for protocol implementation
 
 Sample connection string: 
 ```

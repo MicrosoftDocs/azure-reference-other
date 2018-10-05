@@ -27,7 +27,7 @@ Function Name                  | Description
 #### PROVISIONING_QUERY_SPECIFICATION
 
 ```C
-struct PROVISIONING_QUERY_SPECIFICATION{
+struct PROVISIONING_QUERY_SPECIFICATION {
   int           version,
   const char *  query_string,
   const char *  registration_id,
@@ -37,7 +37,7 @@ struct PROVISIONING_QUERY_SPECIFICATION{
 #### PROVISIONING_QUERY_RESPONSE
 
 ```C
-struct PROVISIONING_QUERY_RESPONSE{
+struct PROVISIONING_QUERY_RESPONSE {
   union PROVISIONING_QUERY_RESPONSE::@1  response_arr,
   size_t                                 response_arr_size,
   PROVISIONING_QUERY_TYPE                response_arr_type

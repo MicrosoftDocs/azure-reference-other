@@ -1,9 +1,10 @@
 # IoTHubModuleClient_LL_SetOption()
 
-\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h](../iot-c-ref-iothub-module-client-ll-h.md)"  
+This API sets a runtime option identified by parameter `optionName` to a value pointed to by `value`. `optionName` and the data type `value` is pointing to are specific for every option.
 
 ## Syntax
 
+\#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h](../iot-c-ref-iothub-module-client-ll-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetOption(
   IOTHUB_MODULE_CLIENT_LL_HANDLE  iotHubModuleClientHandle,
@@ -12,14 +13,12 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetOption(
 );
 ```
 
-This API sets a runtime option identified by parameter `optionName` to a value pointed to by `value`. `optionName` and the data type `value` is pointing to are specific for every option.
-
 ## Parameters
-* `iotHubModuleClientHandle`The handle created by a call to the create function. 
+* `iotHubModuleClientHandle` The handle created by a call to the create function. 
 
-* `optionName`Name of the option. 
+* `optionName` Name of the option. 
 
-* `value`The value.
+* `value` The value.
 
 The options that can be set via this API are:
 

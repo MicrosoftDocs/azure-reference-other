@@ -15,7 +15,7 @@ Stub comment for details. Please update this comment.
 #### TLSIO_CONFIG
 
 ```C
-struct TLSIO_CONFIG{
+struct TLSIO_CONFIG {
   const char *  hostname,
   int           port,
   const         underlying_io_interface,
