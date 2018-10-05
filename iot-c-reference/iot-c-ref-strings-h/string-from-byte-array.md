@@ -7,8 +7,6 @@
 ```C
 STRING_HANDLE STRING_from_byte_array(
   const unsigned char *  source,
-
-  size_t                 size
-);
+  size_t                 size);
 ```
 

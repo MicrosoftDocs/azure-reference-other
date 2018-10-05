@@ -7,21 +7,18 @@
 ```C
 IOTHUB_MESSAGING_RESULT IoTHubMessaging_Open(
   IOTHUB_MESSAGING_CLIENT_HANDLE  messagingClientHandle,
-
   IOTHUB_OPEN_COMPLETE_CALLBACK   openCompleteCallback,
-
-  void *                          userContextCallback
-);
+  void *                          userContextCallback);
 ```
 
 Opens connection to IoTHub.
 
 ## Parameters
-* **:messagingClientHandle** The handle created by a call to the create function. 
+* `messagingClientHandle`The handle created by a call to the create function. 
 
-* **:openCompleteCallback** The callback specified by the user for receiving confirmation of the connection opened. The user can specify a `NULL` value here to indicate that no callback is required. 
+* `openCompleteCallback`The callback specified by the user for receiving confirmation of the connection opened. The user can specify a `NULL` value here to indicate that no callback is required. 
 
-* **:userContextCallback** User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback`User specified context that will be provided to the callback. This can be `NULL`.
 
 ## Returns
 IOTHUB_MESSAGING_OK upon success or an error code upon failure.

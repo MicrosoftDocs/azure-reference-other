@@ -7,8 +7,6 @@
 ```C
 int PROV_DEVICE_RESULT_FromString(
   const char *        enumAsString,
-
-  PROV_DEVICE_RESULT  destination
-);
+  PROV_DEVICE_RESULT  destination);
 ```
 

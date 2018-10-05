@@ -37,7 +37,6 @@ PROV_DEVICE_CLIENT_INSTANCE_TYPE            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-PROV_DEVICE_HANDLE            | 
+####PROV_DEVICE_HANDLE
+typedef struct PROV_DEVICE_INSTANCE_TAG * PROV_DEVICE_HANDLE()
 

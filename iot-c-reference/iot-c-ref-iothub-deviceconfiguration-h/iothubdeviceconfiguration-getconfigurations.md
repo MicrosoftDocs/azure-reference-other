@@ -7,21 +7,18 @@
 ```C
 IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_GetConfigurations(
   IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  serviceClientDeviceConfigurationHandle,
-
   size_t                                             maxConfigurationsCount,
-
-  SINGLYLINKEDLIST_HANDLE                            configurationsList
-);
+  SINGLYLINKEDLIST_HANDLE                            configurationsList);
 ```
 
 Retrieves the Configuration info for multiple configurations from IoT Hub.
 
 ## Parameters
-* **:serviceClientDeviceConfigurationHandle** The handle created by a call to the create function. 
+* `serviceClientDeviceConfigurationHandle`The handle created by a call to the create function. 
 
-* **:maxConfigurationsCount** Maximum number of configurations requested 
+* `maxConfigurationsCount`Maximum number of configurations requested 
 
-* **:configurations** Output parameter, if it is not NULL will contain the requested configurations
+* `configurations`Output parameter, if it is not NULL will contain the requested configurations
 
 ## Returns
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.

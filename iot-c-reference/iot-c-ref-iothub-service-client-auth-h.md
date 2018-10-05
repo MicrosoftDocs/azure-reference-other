@@ -24,6 +24,12 @@ Function Name                  | Description
 [IoTHubServiceClientAuth_CreateFromConnectionString](./iot-c-ref-iothub-service-client-auth-h/iothubserviceclientauth-createfromconnectionstring.md)            | Creates a IoT Hub service client handle for use it in consequent APIs.
 [IoTHubServiceClientAuth_Destroy](./iot-c-ref-iothub-service-client-auth-h/iothubserviceclientauth-destroy.md)            | Disposes of resources allocated by the IoT Hub Service Client.
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[IOTHUB_SERVICE_CLIENT_AUTH](./iot-c-ref-iothub-service-client-auth-h/iothub-service-client-auth.md)            | Structure to store IoTHub authentication information.
+
 ## Defines
 
 Define Name                    | Value                                
@@ -33,7 +39,8 @@ IOTHUB_DEVICE_CONNECTION_STATE_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_SERVICE_CLIENT_AUTH_HANDLE            | Handle to hide struct and use it in consequent APIs.
+####IOTHUB_SERVICE_CLIENT_AUTH_HANDLE
+typedef struct IOTHUB_SERVICE_CLIENT_AUTH_TAG * IOTHUB_SERVICE_CLIENT_AUTH_HANDLE()
+
+Handle to hide struct and use it in consequent APIs.
 

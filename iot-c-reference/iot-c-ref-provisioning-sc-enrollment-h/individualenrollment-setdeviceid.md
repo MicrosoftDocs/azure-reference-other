@@ -7,8 +7,6 @@
 ```C
 int individualEnrollment_setDeviceId(
   INDIVIDUAL_ENROLLMENT_HANDLE  enrollment,
-
-  const char *                  device_id
-);
+  const char *                  device_id);
 ```
 

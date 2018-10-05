@@ -41,7 +41,6 @@ Function Name                  | Description
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_MODULE_CLIENT_LL_HANDLE            | 
+####IOTHUB_MODULE_CLIENT_LL_HANDLE
+typedef struct IOTHUB_MODULE_CLIENT_LL_HANDLE_DATA_TAG * IOTHUB_MODULE_CLIENT_LL_HANDLE()
 

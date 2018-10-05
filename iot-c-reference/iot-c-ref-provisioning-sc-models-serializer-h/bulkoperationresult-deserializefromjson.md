@@ -6,14 +6,13 @@
 
 ```C
 PROVISIONING_BULK_OPERATION_RESULT* bulkOperationResult_deserializeFromJson(
-  const char *  json_string
-);
+  const char *  json_string);
 ```
 
 Deserializes a JSON String representation of a Bulk Operation Result.
 
 ## Parameters
-* **:json_string** A JSON String representing an Bulk Operation Result.
+* `json_string`A JSON String representing an Bulk Operation Result.
 
 ## Returns
 A non-NULL pointer to a Bulk Operation Result and NULL on failure.

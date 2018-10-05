@@ -6,12 +6,11 @@
 
 ```C
 void IoTHubMessage_Destroy(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
-);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
 ```
 
 Frees all resources associated with the given message handle.
 
 ## Parameters
-* **:iotHubMessageHandle** Handle to the message.
+* `iotHubMessageHandle`Handle to the message.
 

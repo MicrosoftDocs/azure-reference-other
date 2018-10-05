@@ -36,7 +36,6 @@ REGISTRATION_STATUS_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-DEVICE_REGISTRATION_STATE_HANDLE            | 
+####DEVICE_REGISTRATION_STATE_HANDLE
+typedef struct DEVICE_REGISTRATION_STATE_TAG * DEVICE_REGISTRATION_STATE_HANDLE()
 

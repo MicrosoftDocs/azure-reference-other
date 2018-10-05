@@ -7,17 +7,15 @@
 ```C
 int prov_sc_set_certificate(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-
-  const char *                        certificate
-);
+  const char *                        certificate);
 ```
 
 Set the trusted certificate for HTTP communication with the Provisioning Service.
 
 ## Parameters
-* **:prov_client** The handle used for connecting to the Provisioning Service. 
+* `prov_client`The handle used for connecting to the Provisioning Service. 
 
-* **:certificate** The trusted certificate to be used for HTTP connections. If given as NULL, will clear a previously set certificate.
+* `certificate`The trusted certificate to be used for HTTP connections. If given as NULL, will clear a previously set certificate.
 
 ## Returns
 0 upon success, a non-zero number upon failure.

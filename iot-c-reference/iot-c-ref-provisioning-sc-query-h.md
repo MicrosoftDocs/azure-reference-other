@@ -22,6 +22,14 @@ Function Name                  | Description
 [PROVISIONING_QUERY_TYPE_FromString](./iot-c-ref-provisioning-sc-query-h/provisioning-query-type-fromstring.md)            | 
 [queryResponse_free](./iot-c-ref-provisioning-sc-query-h/queryresponse-free.md)            | 
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[PROVISIONING_QUERY_SPECIFICATION](./iot-c-ref-provisioning-sc-query-h/provisioning-query-specification.md)            | 
+[PROVISIONING_QUERY_RESPONSE](./iot-c-ref-provisioning-sc-query-h/provisioning-query-response.md)            | 
+[PROVISIONING_QUERY_RESPONSE.response_arr](./iot-c-ref-provisioning-sc-query-h/provisioning-query-response.response-arr.md)            | 
+
 ## Defines
 
 Define Name                    | Value                                

@@ -6,12 +6,11 @@
 
 ```C
 void Map_Destroy(
-  MAP_HANDLE  handle
-);
+  MAP_HANDLE  handle);
 ```
 
 Release all resources associated with the map.
 
 ## Parameters
-* **:handle** The handle to an existing map.
+* `handle`The handle to an existing map.
 

@@ -6,12 +6,11 @@
 
 ```C
 void IoTHubMessaging_LL_Close(
-  IOTHUB_MESSAGING_HANDLE  messagingHandle
-);
+  IOTHUB_MESSAGING_HANDLE  messagingHandle);
 ```
 
 Closes connection to IoTHub.
 
 ## Parameters
-* **:messagingClientHandle** The handle created by a call to the create function.
+* `messagingClientHandle`The handle created by a call to the create function.
 

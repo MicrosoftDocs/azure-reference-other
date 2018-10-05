@@ -7,8 +7,6 @@
 ```C
 int IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_FromString(
   const char *                             enumAsString,
-
-  IOTHUB_DEVICECONFIGURATION_REQUEST_MODE  destination
-);
+  IOTHUB_DEVICECONFIGURATION_REQUEST_MODE  destination);
 ```
 

@@ -6,7 +6,6 @@
 
 ```C
 void xio_dowork(
-  XIO_HANDLE  xio
-);
+  XIO_HANDLE  xio);
 ```
 

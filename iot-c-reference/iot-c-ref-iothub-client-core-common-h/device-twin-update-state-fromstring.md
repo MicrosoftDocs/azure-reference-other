@@ -7,8 +7,6 @@
 ```C
 int DEVICE_TWIN_UPDATE_STATE_FromString(
   const char *              enumAsString,
-
-  DEVICE_TWIN_UPDATE_STATE  destination
-);
+  DEVICE_TWIN_UPDATE_STATE  destination);
 ```
 

@@ -7,8 +7,6 @@
 ```C
 int singlylinkedlist_remove(
   SINGLYLINKEDLIST_HANDLE  list,
-
-  LIST_ITEM_HANDLE         item_handle
-);
+  LIST_ITEM_HANDLE         item_handle);
 ```
 

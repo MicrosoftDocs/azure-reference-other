@@ -7,8 +7,6 @@
 ```C
 int COND_RESULT_FromString(
   const char *  enumAsString,
-
-  COND_RESULT   destination
-);
+  COND_RESULT   destination);
 ```
 

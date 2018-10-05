@@ -6,7 +6,6 @@
 
 ```C
 const char* ATTESTATION_TYPEStrings(
-  ATTESTATION_TYPE  value
-);
+  ATTESTATION_TYPE  value);
 ```
 

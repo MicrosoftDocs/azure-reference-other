@@ -6,7 +6,6 @@
 
 ```C
 STRING_HANDLE STRING_construct(
-  const char *  psz
-);
+  const char *  psz);
 ```
 

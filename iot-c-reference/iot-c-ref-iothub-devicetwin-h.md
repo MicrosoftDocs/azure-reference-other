@@ -36,7 +36,8 @@ IOTHUB_DEVICE_TWIN_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE            | Handle to hide struct and use it in consequent APIs.
+####IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE
+typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_TAG * IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE()
+
+Handle to hide struct and use it in consequent APIs.
 

@@ -7,21 +7,18 @@
 ```C
 IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_AddConfiguration(
   IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  serviceClientDeviceConfigurationHandle,
-
   const                                              configurationAdd,
-
-  IOTHUB_DEVICE_CONFIGURATION                        configuration
-);
+  IOTHUB_DEVICE_CONFIGURATION                        configuration);
 ```
 
 Adds the Configuration info to IoT Hub.
 
 ## Parameters
-* **:serviceClientDeviceConfigurationHandle** The handle created by a call to the create function. 
+* `serviceClientDeviceConfigurationHandle`The handle created by a call to the create function. 
 
-* **:configurationAdd** [IOTHUB_DEVICE_CONFIGURATION_ADD](#struct_i_o_t_h_u_b___d_e_v_i_c_e___c_o_n_f_i_g_u_r_a_t_i_o_n___a_d_d) structure containing the new configuration Id and other optional parameters 
+* `configurationAdd`[IOTHUB_DEVICE_CONFIGURATION_ADD](#struct_i_o_t_h_u_b___d_e_v_i_c_e___c_o_n_f_i_g_u_r_a_t_i_o_n___a_d_d) structure containing the new configuration Id and other optional parameters 
 
-* **:configuration** Output parameter, if it is not NULL will contain the created configuration info structure
+* `configuration`Output parameter, if it is not NULL will contain the created configuration info structure
 
 ## Returns
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.

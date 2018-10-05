@@ -26,6 +26,12 @@ Function Name                  | Description
 [socketio_setoption](./iot-c-ref-socketio-h/socketio-setoption.md)            | 
 [socketio_get_interface_description](./iot-c-ref-socketio-h/socketio-get-interface-description.md)            | 
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[SOCKETIO_CONFIG](./iot-c-ref-socketio-h/socketio-config.md)            | 
+
 ## Defines
 
 Define Name                    | Value                                

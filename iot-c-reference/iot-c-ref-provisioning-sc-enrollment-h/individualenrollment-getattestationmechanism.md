@@ -6,7 +6,6 @@
 
 ```C
 ATTESTATION_MECHANISM_HANDLE individualEnrollment_getAttestationMechanism(
-  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment
-);
+  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment);
 ```
 

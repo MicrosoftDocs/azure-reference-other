@@ -7,21 +7,18 @@
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetOption(
   IOTHUB_DEVICE_CLIENT_HANDLE  iotHubClientHandle,
-
   const char *                 optionName,
-
-  const void *                 value
-);
+  const void *                 value);
 ```
 
 This API sets a runtime option identified by parameter `optionName` to a value pointed to by `value`. `optionName` and the data type `value` is pointing to are specific for every option.
 
 ## Parameters
-* **:iotHubClientHandle** The handle created by a call to the create function. 
+* `iotHubClientHandle`The handle created by a call to the create function. 
 
-* **:optionName** Name of the option. 
+* `optionName`Name of the option. 
 
-* **:value** The value.
+* `value`The value.
 
 The options that can be set via this API are:
 

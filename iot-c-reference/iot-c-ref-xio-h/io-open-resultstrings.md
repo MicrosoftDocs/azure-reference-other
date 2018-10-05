@@ -6,7 +6,6 @@
 
 ```C
 const char* IO_OPEN_RESULTStrings(
-  IO_OPEN_RESULT  value
-);
+  IO_OPEN_RESULT  value);
 ```
 

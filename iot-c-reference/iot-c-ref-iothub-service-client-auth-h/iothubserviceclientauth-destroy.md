@@ -6,12 +6,11 @@
 
 ```C
 void IoTHubServiceClientAuth_Destroy(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle
-);
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle);
 ```
 
 Disposes of resources allocated by the IoT Hub Service Client.
 
 ## Parameters
-* **:serviceClientHandle** The handle created by a call to the create function.
+* `serviceClientHandle`The handle created by a call to the create function.
 

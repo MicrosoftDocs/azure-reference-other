@@ -7,10 +7,7 @@
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClientCore_SetOption(
   IOTHUB_CLIENT_CORE_HANDLE  iotHubClientHandle,
-
   const char *               optionName,
-
-  const void *               value
-);
+  const void *               value);
 ```
 

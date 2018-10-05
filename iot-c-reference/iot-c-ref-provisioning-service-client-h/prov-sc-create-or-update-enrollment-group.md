@@ -7,17 +7,15 @@
 ```C
 int prov_sc_create_or_update_enrollment_group(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-
-  ENROLLMENT_GROUP_HANDLE             enrollment_ptr
-);
+  ENROLLMENT_GROUP_HANDLE             enrollment_ptr);
 ```
 
 Creates or updates a device enrollment group record on the Provisioning Service.
 
 ## Parameters
-* **:prov_client** The handle used for connecting to the Provisioning Service. 
+* `prov_client`The handle used for connecting to the Provisioning Service. 
 
-* **:enrollment_ptr** Pointer to a handle for a new or updated enrollment group.
+* `enrollment_ptr`Pointer to a handle for a new or updated enrollment group.
 
 ## Returns
 0 upon success, a non-zero number upon failure.

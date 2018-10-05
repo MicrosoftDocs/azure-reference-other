@@ -6,7 +6,6 @@
 
 ```C
 const char* individualEnrollment_getEtag(
-  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment
-);
+  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment);
 ```
 

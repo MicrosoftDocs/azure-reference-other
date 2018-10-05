@@ -6,14 +6,13 @@
 
 ```C
 char* bulkOperation_serializeToJson(
-  const   bulk_op
-);
+  const   bulk_op);
 ```
 
 Serializes a Bulk Operation into a JSON String.
 
 ## Parameters
-* **:bulk_op** A pointer to a Bulk Operation structure
+* `bulk_op`A pointer to a Bulk Operation structure
 
 ## Returns
 A non-NULL string containing the serialized JSON String, and NULL on failure.

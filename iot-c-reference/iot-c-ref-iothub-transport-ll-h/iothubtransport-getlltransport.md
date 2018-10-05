@@ -6,7 +6,6 @@
 
 ```C
 TRANSPORT_LL_HANDLE IoTHubTransport_GetLLTransport(
-  TRANSPORT_HANDLE  transportHandle
-);
+  TRANSPORT_HANDLE  transportHandle);
 ```
 

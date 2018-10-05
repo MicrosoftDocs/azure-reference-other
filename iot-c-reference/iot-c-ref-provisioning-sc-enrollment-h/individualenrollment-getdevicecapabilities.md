@@ -6,7 +6,6 @@
 
 ```C
 DEVICE_CAPABILITIES_HANDLE individualEnrollment_getDeviceCapabilities(
-  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment
-);
+  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment);
 ```
 

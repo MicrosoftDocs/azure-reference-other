@@ -32,8 +32,9 @@ PROV_DEVICE_TRANSPORT_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-PROV_DEVICE_TRANSPORT_PROVIDER            | 
-PROV_DEVICE_TRANSPORT_HANDLE            | 
+####PROV_DEVICE_TRANSPORT_PROVIDER
+typedef struct PROV_DEVICE_TRANSPORT_PROVIDER_TAG PROV_DEVICE_TRANSPORT_PROVIDER()
+
+####PROV_DEVICE_TRANSPORT_HANDLE
+typedef void * PROV_DEVICE_TRANSPORT_HANDLE()
 

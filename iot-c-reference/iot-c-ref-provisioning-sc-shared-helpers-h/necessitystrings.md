@@ -6,7 +6,6 @@
 
 ```C
 const char* NECESSITYStrings(
-  NECESSITY  value
-);
+  NECESSITY  value);
 ```
 

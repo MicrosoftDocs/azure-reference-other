@@ -6,7 +6,6 @@
 
 ```C
 int deviceRegistrationState_getErrorCode(
-  DEVICE_REGISTRATION_STATE_HANDLE  drs
-);
+  DEVICE_REGISTRATION_STATE_HANDLE  drs);
 ```
 

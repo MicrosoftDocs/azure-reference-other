@@ -6,7 +6,6 @@
 
 ```C
 STRING_HANDLE STRING_new_with_memory(
-  const char *  memory
-);
+  const char *  memory);
 ```
 

@@ -30,7 +30,6 @@ LOCK_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-LOCK_HANDLE            | 
+####LOCK_HANDLE
+typedef void * LOCK_HANDLE()
 

@@ -6,7 +6,6 @@
 
 ```C
 const char* IOTHUB_CLIENT_RETRY_POLICYStrings(
-  IOTHUB_CLIENT_RETRY_POLICY  value
-);
+  IOTHUB_CLIENT_RETRY_POLICY  value);
 ```
 

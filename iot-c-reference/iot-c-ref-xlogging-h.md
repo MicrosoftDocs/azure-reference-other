@@ -35,8 +35,9 @@ LogError            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-LOGGER_LOG            | 
-LOGGER_LOG_GETLASTERROR            | 
+####LOGGER_LOG
+typedef void(* LOGGER_LOG()
+
+####LOGGER_LOG_GETLASTERROR
+typedef void(* LOGGER_LOG_GETLASTERROR()
 

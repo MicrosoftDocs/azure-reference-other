@@ -7,10 +7,7 @@
 ```C
 int STRING_replace(
   STRING_HANDLE  handle,
-
   char           target,
-
-  char           replace
-);
+  char           replace);
 ```
 

@@ -6,7 +6,6 @@
 
 ```C
 const char* COND_RESULTStrings(
-  COND_RESULT  value
-);
+  COND_RESULT  value);
 ```
 

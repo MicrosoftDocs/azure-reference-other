@@ -7,8 +7,6 @@
 ```C
 int individualEnrollment_setInitialTwin(
   INDIVIDUAL_ENROLLMENT_HANDLE  enrollment,
-
-  INITIAL_TWIN_HANDLE           twin
-);
+  INITIAL_TWIN_HANDLE           twin);
 ```
 

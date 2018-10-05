@@ -30,7 +30,8 @@ IOTHUB_DEVICE_METHOD_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE            | Handle to hide struct and use it in consequent APIs.
+####IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE
+typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_TAG * IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE()
+
+Handle to hide struct and use it in consequent APIs.
 

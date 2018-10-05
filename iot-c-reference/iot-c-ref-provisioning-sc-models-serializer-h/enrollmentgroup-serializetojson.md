@@ -6,14 +6,13 @@
 
 ```C
 char* enrollmentGroup_serializeToJson(
-  const   enrollment
-);
+  const   enrollment);
 ```
 
 Serializes an Enrollment Group into a JSON String.
 
 ## Parameters
-* **:enrollment** A handle for the Enrollment Group to be serialized.
+* `enrollment`A handle for the Enrollment Group to be serialized.
 
 ## Returns
 A non-NULL string containing the serialized JSON String, and NULL on failure.

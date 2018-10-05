@@ -32,6 +32,17 @@ Function Name                  | Description
 [IoTHubDeviceConfiguration_ApplyConfigurationContentToDeviceOrModule](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-applyconfigurationcontenttodeviceormodule.md)            | Deletes the given Configuration from IoT Hub.
 [IoTHubDeviceConfiguration_FreeConfigurationMembers](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md)            | Free members of the [IOTHUB_DEVICE_CONFIGURATION](#struct_i_o_t_h_u_b___d_e_v_i_c_e___c_o_n_f_i_g_u_r_a_t_i_o_n) structure (NOT the structure itself)
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[IOTHUB_DEVICE_CONFIGURATION_CONTENT](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-content.md)            | 
+[IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-metrics-result.md)            | 
+[IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-metrics-definition.md)            | 
+[IOTHUB_DEVICE_CONFIGURATION_LABELS](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-labels.md)            | 
+[IOTHUB_DEVICE_CONFIGURATION](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration.md)            | 
+[IOTHUB_DEVICE_CONFIGURATION_ADD](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-add.md)            | 
+
 ## Defines
 
 Define Name                    | Value                                
@@ -44,7 +55,8 @@ IOTHUB_DEVICE_CONFIGURATION_ADD_VERSION_1            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE            | Handle to hide struct and use it in consequent APIs.
+####IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE
+typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_TAG * IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE()
+
+Handle to hide struct and use it in consequent APIs.
 

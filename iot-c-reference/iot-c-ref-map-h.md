@@ -38,8 +38,9 @@ MAP_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-MAP_HANDLE            | 
-MAP_FILTER_CALLBACK            | 
+####MAP_HANDLE
+typedef struct MAP_HANDLE_DATA_TAG * MAP_HANDLE()
+
+####MAP_FILTER_CALLBACK
+typedef int(* MAP_FILTER_CALLBACK()
 

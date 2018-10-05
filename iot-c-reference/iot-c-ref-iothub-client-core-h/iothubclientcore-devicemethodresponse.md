@@ -7,14 +7,9 @@
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClientCore_DeviceMethodResponse(
   IOTHUB_CLIENT_CORE_HANDLE  iotHubClientHandle,
-
   METHOD_HANDLE              methodId,
-
   const unsigned char *      response,
-
   size_t                     response_size,
-
-  int                        statusCode
-);
+  int                        statusCode);
 ```
 

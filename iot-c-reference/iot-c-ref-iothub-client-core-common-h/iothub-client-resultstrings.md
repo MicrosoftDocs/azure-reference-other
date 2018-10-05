@@ -6,7 +6,6 @@
 
 ```C
 const char* IOTHUB_CLIENT_RESULTStrings(
-  IOTHUB_CLIENT_RESULT  value
-);
+  IOTHUB_CLIENT_RESULT  value);
 ```
 

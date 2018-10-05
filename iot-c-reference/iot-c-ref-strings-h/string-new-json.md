@@ -6,7 +6,6 @@
 
 ```C
 STRING_HANDLE STRING_new_JSON(
-  const char *  source
-);
+  const char *  source);
 ```
 

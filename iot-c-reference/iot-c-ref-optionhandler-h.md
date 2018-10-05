@@ -31,10 +31,15 @@ OPTIONHANDLER_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-OPTIONHANDLER_HANDLE            | 
-pfCloneOption            | 
-pfDestroyOption            | 
-pfSetOption            | 
+####OPTIONHANDLER_HANDLE
+typedef struct OPTIONHANDLER_HANDLE_DATA_TAG * OPTIONHANDLER_HANDLE()
+
+####pfCloneOption
+typedef void *(* pfCloneOption()
+
+####pfDestroyOption
+typedef void(* pfDestroyOption()
+
+####pfSetOption
+typedef int(* pfSetOption()
 

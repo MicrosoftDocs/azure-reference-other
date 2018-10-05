@@ -6,7 +6,6 @@
 
 ```C
 void IoTHubClientCore_LL_DoWork(
-  IOTHUB_CLIENT_CORE_LL_HANDLE  iotHubClientHandle
-);
+  IOTHUB_CLIENT_CORE_LL_HANDLE  iotHubClientHandle);
 ```
 

@@ -7,10 +7,7 @@
 ```C
 int singlylinkedlist_foreach(
   SINGLYLINKEDLIST_HANDLE  list,
-
   LIST_ACTION_FUNCTION     action_function,
-
-  const void *             action_context
-);
+  const void *             action_context);
 ```
 

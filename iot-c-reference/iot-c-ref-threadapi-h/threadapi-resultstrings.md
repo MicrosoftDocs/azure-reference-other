@@ -6,7 +6,6 @@
 
 ```C
 const char* THREADAPI_RESULTStrings(
-  THREADAPI_RESULT  value
-);
+  THREADAPI_RESULT  value);
 ```
 

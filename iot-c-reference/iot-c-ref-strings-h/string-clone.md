@@ -6,7 +6,6 @@
 
 ```C
 STRING_HANDLE STRING_clone(
-  STRING_HANDLE  handle
-);
+  STRING_HANDLE  handle);
 ```
 

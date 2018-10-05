@@ -42,6 +42,22 @@ Function Name                  | Description
 [IoTHubRegistryManager_UpdateDevice](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-updatedevice.md)            | Updates a device on IoT Hub.
 [IoTHubRegistryManager_GetDeviceList](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-getdevicelist.md)            | 
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[IOTHUB_DEVICE_EX](./iot-c-ref-iothub-registrymanager-h/iothub-device-ex.md)            | 
+[IOTHUB_REGISTRY_DEVICE_CREATE_EX](./iot-c-ref-iothub-registrymanager-h/iothub-registry-device-create-ex.md)            | 
+[IOTHUB_REGISTRY_DEVICE_UPDATE_EX](./iot-c-ref-iothub-registrymanager-h/iothub-registry-device-update-ex.md)            | 
+[IOTHUB_REGISTRY_STATISTICS](./iot-c-ref-iothub-registrymanager-h/iothub-registry-statistics.md)            | 
+[IOTHUB_MODULE](./iot-c-ref-iothub-registrymanager-h/iothub-module.md)            | 
+[IOTHUB_REGISTRY_MODULE_CREATE](./iot-c-ref-iothub-registrymanager-h/iothub-registry-module-create.md)            | 
+[IOTHUB_REGISTRY_MODULE_UPDATE](./iot-c-ref-iothub-registrymanager-h/iothub-registry-module-update.md)            | 
+[IOTHUB_REGISTRYMANAGER](./iot-c-ref-iothub-registrymanager-h/iothub-registrymanager.md)            | Structure to store IoTHub authentication information.
+[IOTHUB_DEVICE](./iot-c-ref-iothub-registrymanager-h/iothub-device.md)            | 
+[IOTHUB_REGISTRY_DEVICE_CREATE](./iot-c-ref-iothub-registrymanager-h/iothub-registry-device-create.md)            | 
+[IOTHUB_REGISTRY_DEVICE_UPDATE](./iot-c-ref-iothub-registrymanager-h/iothub-registry-device-update.md)            | 
+
 ## Defines
 
 Define Name                    | Value                                
@@ -57,7 +73,8 @@ IOTHUB_REGISTRY_MODULE_UPDATE_VERSION_1            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_REGISTRYMANAGER_HANDLE            | Handle to hide struct and use it in consequent APIs.
+####IOTHUB_REGISTRYMANAGER_HANDLE
+typedef struct IOTHUB_REGISTRYMANAGER_TAG * IOTHUB_REGISTRYMANAGER_HANDLE()
+
+Handle to hide struct and use it in consequent APIs.
 

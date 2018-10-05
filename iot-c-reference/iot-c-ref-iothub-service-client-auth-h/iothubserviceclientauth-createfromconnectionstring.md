@@ -6,14 +6,13 @@
 
 ```C
 IOTHUB_SERVICE_CLIENT_AUTH_HANDLE IoTHubServiceClientAuth_CreateFromConnectionString(
-  const char *  connectionString
-);
+  const char *  connectionString);
 ```
 
 Creates a IoT Hub service client handle for use it in consequent APIs.
 
 ## Parameters
-* **:connectionString** Pointer to a character string
+* `connectionString`Pointer to a character string
 
 Sample connection string: 
 ```

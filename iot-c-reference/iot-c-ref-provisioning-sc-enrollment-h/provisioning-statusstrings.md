@@ -6,7 +6,6 @@
 
 ```C
 const char* PROVISIONING_STATUSStrings(
-  PROVISIONING_STATUS  value
-);
+  PROVISIONING_STATUS  value);
 ```
 

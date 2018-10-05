@@ -7,10 +7,7 @@
 ```C
 int STRING_copy_n(
   STRING_HANDLE  s1,
-
   const char *   s2,
-
-  size_t         n
-);
+  size_t         n);
 ```
 

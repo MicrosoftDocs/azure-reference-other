@@ -6,7 +6,6 @@
 
 ```C
 const char* MAP_RESULTStrings(
-  MAP_RESULT  value
-);
+  MAP_RESULT  value);
 ```
 

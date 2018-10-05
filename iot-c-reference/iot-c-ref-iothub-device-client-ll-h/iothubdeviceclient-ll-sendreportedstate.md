@@ -7,27 +7,22 @@
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendReportedState(
   IOTHUB_DEVICE_CLIENT_LL_HANDLE         iotHubClientHandle,
-
   const unsigned char *                  reportedState,
-
   size_t                                 size,
-
   IOTHUB_CLIENT_REPORTED_STATE_CALLBACK  reportedStateCallback,
-
-  void *                                 userContextCallback
-);
+  void *                                 userContextCallback);
 ```
 
 This API sends a report of the device's properties and their current values.
 
 ## Parameters
-* **:iotHubClientHandle** The handle created by a call to the create function. 
+* `iotHubClientHandle`The handle created by a call to the create function. 
 
-* **:reportedState** The current device property values to be 'reported' to the IoTHub. 
+* `reportedState`The current device property values to be 'reported' to the IoTHub. 
 
-* **:reportedStateCallback** The callback specified by the device client to be called with the result of the transaction. 
+* `reportedStateCallback`The callback specified by the device client to be called with the result of the transaction. 
 
-* **:userContextCallback** User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback`User specified context that will be provided to the callback. This can be `NULL`.
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](#iothub__device__client__ll_8h_1ad2ac0d9176060dfeee0664668ce87e6f) function from within any callback.
 

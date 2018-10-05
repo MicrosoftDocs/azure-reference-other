@@ -7,8 +7,6 @@
 ```C
 IOTHUB_CLIENT_CORE_LL_HANDLE IoTHubClientCore_LL_CreateFromConnectionString(
   const char *                      connectionString,
-
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol
-);
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol);
 ```
 

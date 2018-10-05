@@ -20,7 +20,6 @@ Function Name                  | Description
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-TPM_ATTESTATION_HANDLE            | 
+####TPM_ATTESTATION_HANDLE
+typedef struct TPM_ATTESTATION_TAG * TPM_ATTESTATION_HANDLE()
 

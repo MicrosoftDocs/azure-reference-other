@@ -6,14 +6,13 @@
 
 ```C
 IOTHUB_MESSAGING_HANDLE IoTHubMessaging_LL_Create(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  iotHubMessagingServiceClientHandle
-);
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  iotHubMessagingServiceClientHandle);
 ```
 
 Creates a IoT Hub Service Client Messaging handle for use it in consequent APIs.
 
 ## Parameters
-* **:iotHubMessagingServiceClientHandle** Service client handle.
+* `iotHubMessagingServiceClientHandle`Service client handle.
 
 ## Returns
 A non-NULL `IOTHUB_MESSAGING_CLIENT_HANDLE` value that is used when invoking other functions for IoT Hub DeviceMethod and `NULL` on failure.

@@ -38,8 +38,9 @@ X509_CERTIFICATE_TYPE_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-X509_ATTESTATION_HANDLE            | 
-X509_CERTIFICATE_HANDLE            | 
+####X509_ATTESTATION_HANDLE
+typedef struct X509_ATTESTATION_TAG * X509_ATTESTATION_HANDLE()
+
+####X509_CERTIFICATE_HANDLE
+typedef struct X509_CERTIFICATE_WITH_INFO_TAG * X509_CERTIFICATE_HANDLE()
 

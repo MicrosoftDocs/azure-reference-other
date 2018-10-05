@@ -6,7 +6,6 @@
 
 ```C
 const char* initialTwin_getTags(
-  INITIAL_TWIN_HANDLE  twin
-);
+  INITIAL_TWIN_HANDLE  twin);
 ```
 

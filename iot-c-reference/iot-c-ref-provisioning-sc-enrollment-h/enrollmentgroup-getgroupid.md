@@ -6,7 +6,6 @@
 
 ```C
 const char* enrollmentGroup_getGroupId(
-  ENROLLMENT_GROUP_HANDLE  enrollment
-);
+  ENROLLMENT_GROUP_HANDLE  enrollment);
 ```
 

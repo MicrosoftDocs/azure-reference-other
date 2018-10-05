@@ -48,6 +48,12 @@ Function Name                  | Description
 [IoTHubMessage_SetConnectionDeviceId](./iot-c-ref-iothub-message-h/iothubmessage-setconnectiondeviceid.md)            | Sets connection device Id. CAUTION: SDK user should not call it directly, it is for internal use only.
 [IoTHubMessage_Destroy](./iot-c-ref-iothub-message-h/iothubmessage-destroy.md)            | Frees all resources associated with the given message handle.
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA](./iot-c-ref-iothub-message-h/iothub-message-diagnostic-property-data.md)            | diagnostic related data
+
 ## Defines
 
 Define Name                    | Value                                
@@ -57,7 +63,6 @@ IOTHUBMESSAGE_CONTENT_TYPE_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_MESSAGE_HANDLE            | 
+####IOTHUB_MESSAGE_HANDLE
+typedef struct IOTHUB_MESSAGE_HANDLE_DATA_TAG * IOTHUB_MESSAGE_HANDLE()
 

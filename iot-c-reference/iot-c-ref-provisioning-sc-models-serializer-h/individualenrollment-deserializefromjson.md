@@ -6,14 +6,13 @@
 
 ```C
 INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_deserializeFromJson(
-  const char *  json_string
-);
+  const char *  json_string);
 ```
 
 Deserializes a JSON String representation of an Individual Enrollment.
 
 ## Parameters
-* **:json_string** A JSON String representing an Individual Enrollment.
+* `json_string`A JSON String representing an Individual Enrollment.
 
 ## Returns
 A non-NULL handle representing an Individual Enrollment, and NULL on failure.

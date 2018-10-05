@@ -7,10 +7,7 @@
 ```C
 int copy_json_string_field(
   char **        dest,
-
   JSON_Object *  root_object,
-
-  const char *   json_key
-);
+  const char *   json_key);
 ```
 

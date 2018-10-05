@@ -7,17 +7,15 @@
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetMessageId(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-
-  const char *           messageId
-);
+  const char *           messageId);
 ```
 
 Sets the MessageId for the IOTHUB_MESSAGE_HANDLE.
 
 ## Parameters
-* **:iotHubMessageHandle** Handle to the message. 
+* `iotHubMessageHandle`Handle to the message. 
 
-* **:messageId** Pointer to the memory location of the messageId
+* `messageId`Pointer to the memory location of the messageId
 
 ## Returns
 Returns IOTHUB_MESSAGE_OK if the messageId was set successfully or an error code otherwise.

@@ -6,14 +6,13 @@
 
 ```C
 LOCK_RESULT Unlock(
-  LOCK_HANDLE  handle
-);
+  LOCK_HANDLE  handle);
 ```
 
 Releases the lock on the given lock handle. Uses platform specific mutex primitives in its implementation.
 
 ## Parameters
-* **:handle** A valid handle to the lock.
+* `handle`A valid handle to the lock.
 
 ## Returns
 Returns `LOCK_OK` when the lock has been released and `LOCK_ERROR` when an error occurs.

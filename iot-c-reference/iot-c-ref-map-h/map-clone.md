@@ -6,14 +6,13 @@
 
 ```C
 MAP_HANDLE Map_Clone(
-  MAP_HANDLE  handle
-);
+  MAP_HANDLE  handle);
 ```
 
 Creates a copy of the map indicated by `handle` and returns a handle to it.
 
 ## Parameters
-* **:handle** The handle to an existing map.
+* `handle`The handle to an existing map.
 
 ## Returns
 A valid `MAP_HANDLE` to the cloned copy of the map or `NULL` in case an error occurs.

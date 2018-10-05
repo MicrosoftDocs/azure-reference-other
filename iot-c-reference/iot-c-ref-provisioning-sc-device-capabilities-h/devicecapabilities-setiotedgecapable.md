@@ -7,8 +7,6 @@
 ```C
 void deviceCapabilities_setIotEdgeCapable(
   DEVICE_CAPABILITIES_HANDLE  capabilities,
-
-  bool                        iotEdgeCapable
-);
+  bool                        iotEdgeCapable);
 ```
 

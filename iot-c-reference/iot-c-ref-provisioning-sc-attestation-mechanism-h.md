@@ -40,7 +40,6 @@ ATTESTATION_TYPE_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-ATTESTATION_MECHANISM_HANDLE            | 
+####ATTESTATION_MECHANISM_HANDLE
+typedef struct ATTESTATION_MECHANISM_TAG * ATTESTATION_MECHANISM_HANDLE()
 

@@ -7,21 +7,18 @@
 ```C
 int prov_sc_run_individual_enrollment_bulk_operation(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-
   PROVISIONING_BULK_OPERATION         bulk_op,
-
-  PROVISIONING_BULK_OPERATION_RESULT  bulk_res_ptr
-);
+  PROVISIONING_BULK_OPERATION_RESULT  bulk_res_ptr);
 ```
 
 Performs a bulk operation on individual device enrollment records from the provisioning service.
 
 ## Parameters
-* **:prov_client** The handle used for connecting to the Provisioning Service. 
+* `prov_client`The handle used for connecting to the Provisioning Service. 
 
-* **:bulk_op** A pointer to a bulk operation structure with details about the bulk operation. 
+* `bulk_op`A pointer to a bulk operation structure with details about the bulk operation. 
 
-* **:bulk_res_ptr** A pointer to a bulk operation result pointer that will be filled with the results upon completion
+* `bulk_res_ptr`A pointer to a bulk operation result pointer that will be filled with the results upon completion
 
 ## Returns
 0 upon success, a non-zero number upon failure.

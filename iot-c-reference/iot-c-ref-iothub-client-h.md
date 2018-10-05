@@ -54,7 +54,6 @@ IOTHUB_CLIENT_INSTANCE_TYPE            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_CLIENT_HANDLE            | 
+####IOTHUB_CLIENT_HANDLE
+typedef undefined IOTHUB_CLIENT_HANDLE()
 

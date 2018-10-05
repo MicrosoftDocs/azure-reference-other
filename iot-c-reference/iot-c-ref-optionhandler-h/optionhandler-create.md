@@ -7,10 +7,7 @@
 ```C
 OPTIONHANDLER_HANDLE OptionHandler_Create(
   pfCloneOption    cloneOption,
-
   pfDestroyOption  destroyOption,
-
-  pfSetOption      setOption
-);
+  pfSetOption      setOption);
 ```
 

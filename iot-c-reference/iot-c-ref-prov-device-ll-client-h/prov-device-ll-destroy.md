@@ -6,12 +6,11 @@
 
 ```C
 void Prov_Device_LL_Destroy(
-  PROV_DEVICE_LL_HANDLE  handle
-);
+  PROV_DEVICE_LL_HANDLE  handle);
 ```
 
 Disposes of resources allocated by the provisioning Client.
 
 ## Parameters
-* **:handle** The handle created by a call to the create function
+* `handle`The handle created by a call to the create function
 

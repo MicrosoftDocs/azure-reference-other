@@ -6,7 +6,6 @@
 
 ```C
 int x509Certificate_getVersion(
-  X509_CERTIFICATE_HANDLE  x509_cert
-);
+  X509_CERTIFICATE_HANDLE  x509_cert);
 ```
 

@@ -6,7 +6,6 @@
 
 ```C
 const char* PROVISIONING_QUERY_TYPEStrings(
-  PROVISIONING_QUERY_TYPE  value
-);
+  PROVISIONING_QUERY_TYPE  value);
 ```
 

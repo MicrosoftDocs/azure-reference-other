@@ -7,14 +7,9 @@
 ```C
 int json_serialize_and_set_struct_array(
   JSON_Object *     root_object,
-
   const char *      json_key,
-
   void **           arr,
-
   size_t            len,
-
-  TO_JSON_FUNCTION  element_toJson
-);
+  TO_JSON_FUNCTION  element_toJson);
 ```
 

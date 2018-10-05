@@ -17,3 +17,9 @@ Function Name                  | Description
 --------------------------------|---------------------------------------------
 [http_proxy_io_get_interface_description](./iot-c-ref-http-proxy-io-h/http-proxy-io-get-interface-description.md)            | 
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[HTTP_PROXY_IO_CONFIG](./iot-c-ref-http-proxy-io-h/http-proxy-io-config.md)            | 
+

@@ -7,12 +7,8 @@
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClientCore_LL_UploadMultipleBlocksToBlobEx(
   IOTHUB_CLIENT_CORE_LL_HANDLE                    iotHubClientHandle,
-
   const char *                                    destinationFileName,
-
   IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX  getDataCallbackEx,
-
-  void *                                          context
-);
+  void *                                          context);
 ```
 

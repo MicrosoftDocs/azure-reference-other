@@ -6,7 +6,6 @@
 
 ```C
 void xio_destroy(
-  XIO_HANDLE  xio
-);
+  XIO_HANDLE  xio);
 ```
 

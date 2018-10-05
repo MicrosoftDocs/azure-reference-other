@@ -6,14 +6,13 @@
 
 ```C
 void Condition_Deinit(
-  COND_HANDLE  handle
-);
+  COND_HANDLE  handle);
 ```
 
 The condition instance is deinitialized.
 
 ## Parameters
-* **:handle** A valid handle to the condition.
+* `handle`A valid handle to the condition.
 
 ## Returns
 Returns `COND_OK` when the condition object has been destroyed and `COND_ERROR` when an error occurs.

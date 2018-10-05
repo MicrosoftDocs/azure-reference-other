@@ -6,7 +6,6 @@
 
 ```C
 int STRING_quote(
-  STRING_HANDLE  handle
-);
+  STRING_HANDLE  handle);
 ```
 

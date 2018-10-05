@@ -7,14 +7,9 @@
 ```C
 int socketio_send(
   CONCRETE_IO_HANDLE  socket_io,
-
   const void *        buffer,
-
   size_t              size,
-
   ON_SEND_COMPLETE    on_send_complete,
-
-  void *              callback_context
-);
+  void *              callback_context);
 ```
 

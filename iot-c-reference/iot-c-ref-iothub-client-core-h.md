@@ -52,7 +52,6 @@ IOTHUB_CLIENT_CORE_INSTANCE_TYPE            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_CLIENT_CORE_HANDLE            | 
+####IOTHUB_CLIENT_CORE_HANDLE
+typedef struct IOTHUB_CLIENT_CORE_INSTANCE_TAG * IOTHUB_CLIENT_CORE_HANDLE()
 

@@ -6,14 +6,13 @@
 
 ```C
 char* individualEnrollment_serializeToJson(
-  const   enrollment
-);
+  const   enrollment);
 ```
 
 Serializes an Individual Enrollment into a JSON String.
 
 ## Parameters
-* **:enrollment** A handle for the Individual Enrollment to be serialized.
+* `enrollment`A handle for the Individual Enrollment to be serialized.
 
 ## Returns
 A non-NULL string containing the serialized JSON String, and NULL on failure.

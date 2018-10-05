@@ -31,7 +31,6 @@ COND_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-COND_HANDLE            | 
+####COND_HANDLE
+typedef void * COND_HANDLE()
 

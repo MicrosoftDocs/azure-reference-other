@@ -6,12 +6,11 @@
 
 ```C
 void individualEnrollment_destroy(
-  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment
-);
+  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment);
 ```
 
 Destroys an Individual Enrollment handle, freeing all associated memory. Please note that this also includes the attestation mechanism that was given in the constructor.
 
 ## Parameters
-* **:enrollment** A handle for the Individual Enrollment to be destroyed.
+* `enrollment`A handle for the Individual Enrollment to be destroyed.
 

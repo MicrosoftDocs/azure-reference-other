@@ -6,7 +6,6 @@
 
 ```C
 TPM_ATTESTATION_HANDLE attestationMechanism_getTpmAttestation(
-  ATTESTATION_MECHANISM_HANDLE  att_mech
-);
+  ATTESTATION_MECHANISM_HANDLE  att_mech);
 ```
 

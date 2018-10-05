@@ -6,12 +6,11 @@
 
 ```C
 void IoTHubModuleClient_LL_Destroy(
-  IOTHUB_MODULE_CLIENT_LL_HANDLE  iotHubModuleClientHandle
-);
+  IOTHUB_MODULE_CLIENT_LL_HANDLE  iotHubModuleClientHandle);
 ```
 
 Disposes of resources allocated by the IoT Hub client. This is a blocking call.
 
 ## Parameters
-* **:iotHubModuleClientHandle** The handle created by a call to the create function.
+* `iotHubModuleClientHandle`The handle created by a call to the create function.
 

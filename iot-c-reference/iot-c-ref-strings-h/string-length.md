@@ -6,7 +6,6 @@
 
 ```C
 size_t STRING_length(
-  STRING_HANDLE  handle
-);
+  STRING_HANDLE  handle);
 ```
 

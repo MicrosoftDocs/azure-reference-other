@@ -6,7 +6,6 @@
 
 ```C
 const char* HTTPAPI_RESULTStrings(
-  HTTPAPI_RESULT  value
-);
+  HTTPAPI_RESULT  value);
 ```
 

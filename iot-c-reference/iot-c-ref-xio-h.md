@@ -30,6 +30,12 @@ Function Name                  | Description
 [xio_setoption](./iot-c-ref-xio-h/xio-setoption.md)            | 
 [xio_retrieveoptions](./iot-c-ref-xio-h/xio-retrieveoptions.md)            | 
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[IO_INTERFACE_DESCRIPTION](./iot-c-ref-xio-h/io-interface-description.md)            | 
+
 ## Defines
 
 Define Name                    | Value                                
@@ -39,21 +45,48 @@ IO_OPEN_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-XIO_HANDLE            | 
-CONCRETE_IO_HANDLE            | 
-ON_BYTES_RECEIVED            | 
-ON_SEND_COMPLETE            | 
-ON_IO_OPEN_COMPLETE            | 
-ON_IO_CLOSE_COMPLETE            | 
-ON_IO_ERROR            | 
-IO_RETRIEVEOPTIONS            | 
-IO_CREATE            | 
-IO_DESTROY            | 
-IO_OPEN            | 
-IO_CLOSE            | 
-IO_SEND            | 
-IO_DOWORK            | 
-IO_SETOPTION            | 
+####XIO_HANDLE
+typedef struct XIO_INSTANCE_TAG * XIO_HANDLE()
+
+####CONCRETE_IO_HANDLE
+typedef void * CONCRETE_IO_HANDLE()
+
+####ON_BYTES_RECEIVED
+typedef void(* ON_BYTES_RECEIVED()
+
+####ON_SEND_COMPLETE
+typedef void(* ON_SEND_COMPLETE()
+
+####ON_IO_OPEN_COMPLETE
+typedef void(* ON_IO_OPEN_COMPLETE()
+
+####ON_IO_CLOSE_COMPLETE
+typedef void(* ON_IO_CLOSE_COMPLETE()
+
+####ON_IO_ERROR
+typedef void(* ON_IO_ERROR()
+
+####IO_RETRIEVEOPTIONS
+typedef (* IO_RETRIEVEOPTIONS()
+
+####IO_CREATE
+typedef (* IO_CREATE()
+
+####IO_DESTROY
+typedef void(* IO_DESTROY()
+
+####IO_OPEN
+typedef int(* IO_OPEN()
+
+####IO_CLOSE
+typedef int(* IO_CLOSE()
+
+####IO_SEND
+typedef int(* IO_SEND()
+
+####IO_DOWORK
+typedef void(* IO_DOWORK()
+
+####IO_SETOPTION
+typedef int(* IO_SETOPTION()
 

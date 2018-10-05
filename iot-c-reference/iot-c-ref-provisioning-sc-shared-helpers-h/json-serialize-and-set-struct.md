@@ -7,14 +7,9 @@
 ```C
 int json_serialize_and_set_struct(
   JSON_Object *     root_object,
-
   const char *      json_key,
-
   void *            structure,
-
   TO_JSON_FUNCTION  toJson,
-
-  NECESSITY         necessity
-);
+  NECESSITY         necessity);
 ```
 

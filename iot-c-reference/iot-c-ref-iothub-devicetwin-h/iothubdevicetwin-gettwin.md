@@ -7,17 +7,15 @@
 ```C
 char* IoTHubDeviceTwin_GetTwin(
   IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle,
-
-  const char *                              deviceId
-);
+  const char *                              deviceId);
 ```
 
 Retrieves the given device's twin info.
 
 ## Parameters
-* **:serviceClientDeviceTwinHandle** The handle created by a call to the create function. 
+* `serviceClientDeviceTwinHandle`The handle created by a call to the create function. 
 
-* **:deviceId** The device name (id) to retrieve twin info for.
+* `deviceId`The device name (id) to retrieve twin info for.
 
 ## Returns
 A non-NULL char* containing device twin info upon success or NULL upon failure.

@@ -10,3 +10,9 @@ Stub comment for brief. Please update this comment.
 
 Stub comment for details. Please update this comment.
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[IOTHUB_PROXY_OPTIONS](./iot-c-ref-iothub-client-options-h/iothub-proxy-options.md)            | 
+

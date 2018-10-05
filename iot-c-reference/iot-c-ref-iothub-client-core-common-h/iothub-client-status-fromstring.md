@@ -7,8 +7,6 @@
 ```C
 int IOTHUB_CLIENT_STATUS_FromString(
   const char *          enumAsString,
-
-  IOTHUB_CLIENT_STATUS  destination
-);
+  IOTHUB_CLIENT_STATUS  destination);
 ```
 

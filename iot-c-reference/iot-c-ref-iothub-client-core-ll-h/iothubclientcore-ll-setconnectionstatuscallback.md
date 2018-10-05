@@ -7,10 +7,7 @@
 ```C
 IOTHUB_CLIENT_RESULT IoTHubClientCore_LL_SetConnectionStatusCallback(
   IOTHUB_CLIENT_CORE_LL_HANDLE              iotHubClientHandle,
-
   IOTHUB_CLIENT_CONNECTION_STATUS_CALLBACK  connectionStatusCallback,
-
-  void *                                    userContextCallback
-);
+  void *                                    userContextCallback);
 ```
 

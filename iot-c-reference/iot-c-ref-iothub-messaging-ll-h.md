@@ -34,6 +34,13 @@ Function Name                  | Description
 [IoTHubMessaging_LL_DoWork](./iot-c-ref-iothub-messaging-ll-h/iothubmessaging-ll-dowork.md)            | This function is meant to be called by the user when work (sending/receiving) can be done by the IoTHubServiceClient.
 [IoTHubMessaging_LL_SetTrustedCert](./iot-c-ref-iothub-messaging-ll-h/iothubmessaging-ll-settrustedcert.md)            | This function is meant to be called by the user when to set the trusted certificate on the tls connection.
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[IOTHUB_SERVICE_FEEDBACK_RECORD](./iot-c-ref-iothub-messaging-ll-h/iothub-service-feedback-record.md)            | 
+[IOTHUB_SERVICE_FEEDBACK_BATCH](./iot-c-ref-iothub-messaging-ll-h/iothub-service-feedback-batch.md)            | 
+
 ## Defines
 
 Define Name                    | Value                                
@@ -44,10 +51,15 @@ IOTHUB_MESSAGING_RESULT_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_MESSAGING_HANDLE            | 
-IOTHUB_OPEN_COMPLETE_CALLBACK            | 
-IOTHUB_SEND_COMPLETE_CALLBACK            | 
-IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK            | 
+####IOTHUB_MESSAGING_HANDLE
+typedef struct IOTHUB_MESSAGING_TAG * IOTHUB_MESSAGING_HANDLE()
+
+####IOTHUB_OPEN_COMPLETE_CALLBACK
+typedef void(* IOTHUB_OPEN_COMPLETE_CALLBACK()
+
+####IOTHUB_SEND_COMPLETE_CALLBACK
+typedef void(* IOTHUB_SEND_COMPLETE_CALLBACK()
+
+####IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK
+typedef void(* IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK()
 

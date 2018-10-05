@@ -50,7 +50,8 @@ TRACING_STATUS_VALUES            |
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-PROVISIONING_SERVICE_CLIENT_HANDLE            | Handle to hide struct and use it in consequent APIs.
+####PROVISIONING_SERVICE_CLIENT_HANDLE
+typedef struct PROVISIONING_SERVICE_CLIENT_TAG * PROVISIONING_SERVICE_CLIENT_HANDLE()
+
+Handle to hide struct and use it in consequent APIs.
 

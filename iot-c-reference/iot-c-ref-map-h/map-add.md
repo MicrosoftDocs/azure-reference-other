@@ -7,21 +7,18 @@
 ```C
 MAP_RESULT Map_Add(
   MAP_HANDLE    handle,
-
   const char *  key,
-
-  const char *  value
-);
+  const char *  value);
 ```
 
 Adds a key/value pair to the map.
 
 ## Parameters
-* **:handle** The handle to an existing map. 
+* `handle`The handle to an existing map. 
 
-* **:key** The `key` to be used for this map entry. 
+* `key`The `key` to be used for this map entry. 
 
-* **:value** The `value` to be associated with `key`.
+* `value`The `value` to be associated with `key`.
 
 If a non-NULL pointer to a callback function was supplied via the `mapFilterFunc` parameter when [Map_Create](#map_8h_1a76142fc262744d64715a597eac0ed9ff) was called then that callback is invoked when a new entry is added and if the callback returns a non-zero value then the function cancels the add operation and returns `MAP_FILTER_REJECT`.
 

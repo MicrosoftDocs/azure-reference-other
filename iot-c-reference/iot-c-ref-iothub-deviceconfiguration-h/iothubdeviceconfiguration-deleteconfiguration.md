@@ -7,17 +7,15 @@
 ```C
 IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_DeleteConfiguration(
   IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  serviceClientDeviceConfigurationHandle,
-
-  const char *                                       configurationId
-);
+  const char *                                       configurationId);
 ```
 
 Deletes the given Configuration from IoT Hub.
 
 ## Parameters
-* **:serviceClientDeviceConfigurationHandle** The handle created by a call to the create function. 
+* `serviceClientDeviceConfigurationHandle`The handle created by a call to the create function. 
 
-* **:configurationId** The configuration name (id) to delete Configuration info for.
+* `configurationId`The configuration name (id) to delete Configuration info for.
 
 ## Returns
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.

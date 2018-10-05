@@ -25,7 +25,6 @@ Function Name                  | Description
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_MESSAGING_CLIENT_HANDLE            | 
+####IOTHUB_MESSAGING_CLIENT_HANDLE
+typedef struct IOTHUB_MESSAGING_CLIENT_INSTANCE_TAG * IOTHUB_MESSAGING_CLIENT_HANDLE()
 

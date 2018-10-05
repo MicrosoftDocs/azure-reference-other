@@ -7,17 +7,15 @@
 ```C
 IOTHUB_MODULE_CLIENT_HANDLE IoTHubModuleClient_CreateFromConnectionString(
   const char *                      connectionString,
-
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol
-);
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol);
 ```
 
 Creates a IoT Hub client for communication with an existing IoT Hub using the specified connection string parameter.
 
 ## Parameters
-* **:connectionString** Pointer to a character string 
+* `connectionString`Pointer to a character string 
 
-* **:protocol** Function pointer for protocol implementation
+* `protocol`Function pointer for protocol implementation
 
 Sample connection string: 
 ```

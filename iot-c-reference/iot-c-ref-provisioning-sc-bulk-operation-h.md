@@ -26,6 +26,15 @@ Function Name                  | Description
 [PROVISIONING_BULK_OPERATION_TYPE_FromString](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation-type-fromstring.md)            | 
 [bulkOperationResult_free](./iot-c-ref-provisioning-sc-bulk-operation-h/bulkoperationresult-free.md)            | 
 
+## Structures
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[PROVISIONING_BULK_OPERATION_ERROR](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation-error.md)            | 
+[PROVISIONING_BULK_OPERATION_RESULT](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation-result.md)            | 
+[PROVISIONING_BULK_OPERATION](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation.md)            | 
+[PROVISIONING_BULK_OPERATION.enrollments](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation.enrollments.md)            | 
+
 ## Defines
 
 Define Name                    | Value                                

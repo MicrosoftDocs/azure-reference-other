@@ -6,7 +6,6 @@
 
 ```C
 void STRING_delete(
-  STRING_HANDLE  handle
-);
+  STRING_HANDLE  handle);
 ```
 

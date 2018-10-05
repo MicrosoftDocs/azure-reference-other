@@ -7,8 +7,6 @@
 ```C
 int HTTPAPI_RESULT_FromString(
   const char *    enumAsString,
-
-  HTTPAPI_RESULT  destination
-);
+  HTTPAPI_RESULT  destination);
 ```
 

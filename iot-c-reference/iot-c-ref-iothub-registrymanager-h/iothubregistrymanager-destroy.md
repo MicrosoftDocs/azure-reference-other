@@ -6,12 +6,11 @@
 
 ```C
 void IoTHubRegistryManager_Destroy(
-  IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle
-);
+  IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle);
 ```
 
 Disposes of resources allocated by the IoT Hub Registry Manager.
 
 ## Parameters
-* **:registryManagerHandle** The handle created by a call to the create function.
+* `registryManagerHandle`The handle created by a call to the create function.
 

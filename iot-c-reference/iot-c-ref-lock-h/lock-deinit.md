@@ -6,14 +6,13 @@
 
 ```C
 LOCK_RESULT Lock_Deinit(
-  LOCK_HANDLE  handle
-);
+  LOCK_HANDLE  handle);
 ```
 
 The lock instance is destroyed.
 
 ## Parameters
-* **:handle** A valid handle to the lock.
+* `handle`A valid handle to the lock.
 
 ## Returns
 Returns `LOCK_OK` when the lock object has been destroyed and `LOCK_ERROR` when an error occurs.

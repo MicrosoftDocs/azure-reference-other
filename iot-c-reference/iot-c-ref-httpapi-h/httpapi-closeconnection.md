@@ -6,14 +6,13 @@
 
 ```C
 void HTTPAPI_CloseConnection(
-  HTTP_HANDLE  handle
-);
+  HTTP_HANDLE  handle);
 ```
 
 Closes a connection created with [HTTPAPI_CreateConnection](#httpapi_8h_1a96629fdbe1b52a5357da60bb1248b174).
 
 ## Parameters
-* **:handle** The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#httpapi_8h_1a96629fdbe1b52a5357da60bb1248b174).
+* `handle`The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#httpapi_8h_1a96629fdbe1b52a5357da60bb1248b174).
 
 All resources allocated by [HTTPAPI_CreateConnection](#httpapi_8h_1a96629fdbe1b52a5357da60bb1248b174) should be freed in [HTTPAPI_CloseConnection](#httpapi_8h_1aed5a7f4253357457399d03dad763d904).
 

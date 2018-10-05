@@ -6,7 +6,6 @@
 
 ```C
 OPTIONHANDLER_HANDLE xio_retrieveoptions(
-  XIO_HANDLE  xio
-);
+  XIO_HANDLE  xio);
 ```
 

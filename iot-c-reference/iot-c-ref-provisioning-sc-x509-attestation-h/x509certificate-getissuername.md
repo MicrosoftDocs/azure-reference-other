@@ -6,7 +6,6 @@
 
 ```C
 const char* x509Certificate_getIssuerName(
-  X509_CERTIFICATE_HANDLE  x509_cert
-);
+  X509_CERTIFICATE_HANDLE  x509_cert);
 ```
 

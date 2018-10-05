@@ -6,7 +6,6 @@
 
 ```C
 STRING_HANDLE STRING_new_quoted(
-  const char *  source
-);
+  const char *  source);
 ```
 

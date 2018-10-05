@@ -7,8 +7,6 @@
 ```C
 XIO_HANDLE xio_create(
   const         io_interface_description,
-
-  const void *  io_create_parameters
-);
+  const void *  io_create_parameters);
 ```
 

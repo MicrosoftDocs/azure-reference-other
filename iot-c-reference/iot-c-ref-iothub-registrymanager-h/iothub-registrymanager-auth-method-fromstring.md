@@ -7,8 +7,6 @@
 ```C
 int IOTHUB_REGISTRYMANAGER_AUTH_METHOD_FromString(
   const char *                        enumAsString,
-
-  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  destination
-);
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  destination);
 ```
 

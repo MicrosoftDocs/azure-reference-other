@@ -7,8 +7,6 @@
 ```C
 int NECESSITY_FromString(
   const char *  enumAsString,
-
-  NECESSITY     destination
-);
+  NECESSITY     destination);
 ```
 

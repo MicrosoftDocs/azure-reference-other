@@ -6,7 +6,6 @@
 
 ```C
 const char* IOTHUB_SECURITY_TYPEStrings(
-  IOTHUB_SECURITY_TYPE  value
-);
+  IOTHUB_SECURITY_TYPE  value);
 ```
 

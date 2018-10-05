@@ -7,8 +7,6 @@
 ```C
 int individualEnrollment_setDeviceCapabilities(
   INDIVIDUAL_ENROLLMENT_HANDLE  enrollment,
-
-  DEVICE_CAPABILITIES_HANDLE    capabilities
-);
+  DEVICE_CAPABILITIES_HANDLE    capabilities);
 ```
 

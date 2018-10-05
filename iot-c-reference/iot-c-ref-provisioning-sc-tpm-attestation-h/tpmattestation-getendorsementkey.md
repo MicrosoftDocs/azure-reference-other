@@ -6,7 +6,6 @@
 
 ```C
 const char* tpmAttestation_getEndorsementKey(
-  TPM_ATTESTATION_HANDLE  tpm_att
-);
+  TPM_ATTESTATION_HANDLE  tpm_att);
 ```
 

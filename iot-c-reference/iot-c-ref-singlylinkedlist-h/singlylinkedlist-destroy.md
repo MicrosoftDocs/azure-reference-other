@@ -6,7 +6,6 @@
 
 ```C
 void singlylinkedlist_destroy(
-  SINGLYLINKEDLIST_HANDLE  list
-);
+  SINGLYLINKEDLIST_HANDLE  list);
 ```
 

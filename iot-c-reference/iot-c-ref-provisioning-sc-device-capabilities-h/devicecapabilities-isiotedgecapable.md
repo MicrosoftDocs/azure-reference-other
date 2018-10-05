@@ -6,7 +6,6 @@
 
 ```C
 bool deviceCapabilities_isIotEdgeCapable(
-  DEVICE_CAPABILITIES_HANDLE  capabilities
-);
+  DEVICE_CAPABILITIES_HANDLE  capabilities);
 ```
 

@@ -21,8 +21,9 @@ Function Name                  | Description
 
 ## Typedefs
 
-Typedef                        | Value                                
---------------------------------|---------------------------------------------
-tickcounter_ms_t            | 
-TICK_COUNTER_HANDLE            | 
+####tickcounter_ms_t
+typedef uint_fast32_t tickcounter_ms_t()
+
+####TICK_COUNTER_HANDLE
+typedef struct TICK_COUNTER_INSTANCE_TAG * TICK_COUNTER_HANDLE()
 
