@@ -7,6 +7,7 @@
 ```C
 int TRANSPORT_TYPE_FromString(
   const char *    enumAsString,
-  TRANSPORT_TYPE  destination);
+  TRANSPORT_TYPE  destination
+);
 ```
 

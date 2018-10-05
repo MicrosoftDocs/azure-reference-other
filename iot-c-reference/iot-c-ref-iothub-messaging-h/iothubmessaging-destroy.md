@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubMessaging_Destroy(
-  IOTHUB_MESSAGING_CLIENT_HANDLE  messagingClientHandle);
+  IOTHUB_MESSAGING_CLIENT_HANDLE  messagingClientHandle
+);
 ```
 
 Disposes of resources allocated by the IoT Hub Service Client Messaging.

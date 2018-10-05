@@ -6,6 +6,7 @@
 
 ```C
 const char* IOTHUB_DEVICE_STATUSStrings(
-  IOTHUB_DEVICE_STATUS  value);
+  IOTHUB_DEVICE_STATUS  value
+);
 ```
 

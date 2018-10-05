@@ -8,7 +8,8 @@
 IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_GetConfiguration(
   IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  serviceClientDeviceConfigurationHandle,
   const char *                                       configurationId,
-  IOTHUB_DEVICE_CONFIGURATION                        configuration);
+  IOTHUB_DEVICE_CONFIGURATION                        configuration
+);
 ```
 
 Retrieves the Configuration info for specified configurationId from IoT Hub.

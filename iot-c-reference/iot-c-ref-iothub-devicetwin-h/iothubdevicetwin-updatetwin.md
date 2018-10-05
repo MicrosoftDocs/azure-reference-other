@@ -8,7 +8,8 @@
 char* IoTHubDeviceTwin_UpdateTwin(
   IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle,
   const char *                              deviceId,
-  const char *                              deviceTwinJson);
+  const char *                              deviceTwinJson
+);
 ```
 
 Updates (partial update) the given device's twin info.

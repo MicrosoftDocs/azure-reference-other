@@ -8,7 +8,8 @@
 int prov_sc_delete_enrollment_group_by_param(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
   const char *                        group_id,
-  const char *                        etag);
+  const char *                        etag
+);
 ```
 
 Deletes a device enrollment group record on the Provisioning Service.

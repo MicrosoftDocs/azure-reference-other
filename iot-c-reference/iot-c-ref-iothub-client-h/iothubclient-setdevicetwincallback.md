@@ -8,7 +8,8 @@
 IOTHUB_CLIENT_RESULT IoTHubClient_SetDeviceTwinCallback(
   IOTHUB_CLIENT_HANDLE                iotHubClientHandle,
   IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK  deviceTwinCallback,
-  void *                              userContextCallback);
+  void *                              userContextCallback
+);
 ```
 
 This API specifies a call back to be used when the device receives a state update.

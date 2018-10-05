@@ -8,7 +8,8 @@
 int prov_sc_get_individual_enrollment(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
   const char *                        reg_id,
-  INDIVIDUAL_ENROLLMENT_HANDLE        enrollment_ptr);
+  INDIVIDUAL_ENROLLMENT_HANDLE        enrollment_ptr
+);
 ```
 
 Retreives an individual device enrollment record from the Provisioning Service.

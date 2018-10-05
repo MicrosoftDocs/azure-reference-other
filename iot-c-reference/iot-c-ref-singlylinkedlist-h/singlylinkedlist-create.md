@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-SINGLYLINKEDLIST_HANDLE singlylinkedlist_create(  void);
+SINGLYLINKEDLIST_HANDLE singlylinkedlist_create(void);
 ```
 

@@ -7,6 +7,7 @@
 ```C
 int IOTHUB_CLIENT_RETRY_POLICY_FromString(
   const char *                enumAsString,
-  IOTHUB_CLIENT_RETRY_POLICY  destination);
+  IOTHUB_CLIENT_RETRY_POLICY  destination
+);
 ```
 

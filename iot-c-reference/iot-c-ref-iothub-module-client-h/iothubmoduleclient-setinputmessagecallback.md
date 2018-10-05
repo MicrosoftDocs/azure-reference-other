@@ -9,7 +9,8 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetInputMessageCallback(
   IOTHUB_MODULE_CLIENT_HANDLE           iotHubModuleClientHandle,
   const char *                          inputName,
   IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  eventHandlerCallback,
-  void *                                userContextCallback);
+  void *                                userContextCallback
+);
 ```
 
 This API sets callback for method call that is directed to specified 'inputName' queue (e.g. messages from IoTHubClient_SendEventToOutputAsync)

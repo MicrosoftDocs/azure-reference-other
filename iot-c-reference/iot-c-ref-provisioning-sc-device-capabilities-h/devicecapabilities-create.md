@@ -5,7 +5,7 @@
 ## Syntax
 
 ```C
-DEVICE_CAPABILITIES_HANDLE deviceCapabilities_create(  void);
+DEVICE_CAPABILITIES_HANDLE deviceCapabilities_create(void);
 ```
 
 Creates a Device Capabilities handle that can be used in consequent APIs, with all fields initialized to "false".

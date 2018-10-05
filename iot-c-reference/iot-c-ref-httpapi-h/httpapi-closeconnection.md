@@ -6,7 +6,8 @@
 
 ```C
 void HTTPAPI_CloseConnection(
-  HTTP_HANDLE  handle);
+  HTTP_HANDLE  handle
+);
 ```
 
 Closes a connection created with [HTTPAPI_CreateConnection](#httpapi_8h_1a96629fdbe1b52a5357da60bb1248b174).

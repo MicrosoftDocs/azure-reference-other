@@ -28,40 +28,42 @@ Function Name                  | Description
 
 ## Typedefs
 
-####SINGLYLINKEDLIST_HANDLE
+#### SINGLYLINKEDLIST_HANDLE
 
 ```C
-typedef struct SINGLYLINKEDLIST_INSTANCE_TAG * SINGLYLINKEDLIST_HANDLE()
+typedef struct SINGLYLINKEDLIST_INSTANCE_TAG * SINGLYLINKEDLIST_HANDLE;
 
 ```
 
-####LIST_ITEM_HANDLE
+#### LIST_ITEM_HANDLE
 
 ```C
-typedef struct LIST_ITEM_INSTANCE_TAG * LIST_ITEM_HANDLE()
+typedef struct LIST_ITEM_INSTANCE_TAG * LIST_ITEM_HANDLE;
 
 ```
 
-####LIST_MATCH_FUNCTION
+#### LIST_MATCH_FUNCTION
 
 ```C
-typedef bool(* LIST_MATCH_FUNCTION()
+typedef bool(* LIST_MATCH_FUNCTION;
 
 ```
 
 Function passed to singlylinkedlist_find, which returns whichever first list item that matches it.
-####LIST_CONDITION_FUNCTION
+
+#### LIST_CONDITION_FUNCTION
 
 ```C
-typedef bool(* LIST_CONDITION_FUNCTION()
+typedef bool(* LIST_CONDITION_FUNCTION;
 
 ```
 
 Function passed to singlylinkedlist_remove_if, which is used to define if an item of the list should be removed or not.
-####LIST_ACTION_FUNCTION
+
+#### LIST_ACTION_FUNCTION
 
 ```C
-typedef void(* LIST_ACTION_FUNCTION()
+typedef void(* LIST_ACTION_FUNCTION;
 
 ```
 

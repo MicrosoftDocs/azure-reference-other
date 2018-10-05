@@ -8,7 +8,8 @@
 HTTPAPI_RESULT HTTPAPI_SetOption(
   HTTP_HANDLE   handle,
   const char *  optionName,
-  const void *  value);
+  const void *  value
+);
 ```
 
 Sets the option named `optionName` bearing the value `value` for the HTTP_HANDLE `handle`.

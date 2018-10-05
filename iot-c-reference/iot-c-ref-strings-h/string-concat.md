@@ -7,6 +7,7 @@
 ```C
 int STRING_concat(
   STRING_HANDLE  handle,
-  const char *   s2);
+  const char *   s2
+);
 ```
 

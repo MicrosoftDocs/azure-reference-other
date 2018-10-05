@@ -7,6 +7,7 @@
 ```C
 int ATTESTATION_TYPE_FromString(
   const char *      enumAsString,
-  ATTESTATION_TYPE  destination);
+  ATTESTATION_TYPE  destination
+);
 ```
 

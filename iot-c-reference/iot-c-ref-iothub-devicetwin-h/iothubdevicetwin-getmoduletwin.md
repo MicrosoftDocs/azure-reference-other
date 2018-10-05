@@ -8,7 +8,8 @@
 char* IoTHubDeviceTwin_GetModuleTwin(
   IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle,
   const char *                              deviceId,
-  const char *                              moduleId);
+  const char *                              moduleId
+);
 ```
 
 Retrieves the given module's twin info.

@@ -7,6 +7,7 @@
 ```C
 int THREADAPI_RESULT_FromString(
   const char *      enumAsString,
-  THREADAPI_RESULT  destination);
+  THREADAPI_RESULT  destination
+);
 ```
 

@@ -8,7 +8,8 @@
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetDevice(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const char *                   deviceId,
-  IOTHUB_DEVICE                  device);
+  IOTHUB_DEVICE                  device
+);
 ```
 
 Gets device info for a given device.

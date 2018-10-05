@@ -6,6 +6,7 @@
 
 ```C
 const char* REGISTRATION_STATUSStrings(
-  REGISTRATION_STATUS  value);
+  REGISTRATION_STATUS  value
+);
 ```
 

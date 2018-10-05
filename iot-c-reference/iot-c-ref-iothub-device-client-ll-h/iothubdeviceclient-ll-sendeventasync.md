@@ -9,7 +9,8 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendEventAsync(
   IOTHUB_DEVICE_CLIENT_LL_HANDLE             iotHubClientHandle,
   IOTHUB_MESSAGE_HANDLE                      eventMessageHandle,
   IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK  eventConfirmationCallback,
-  void *                                     userContextCallback);
+  void *                                     userContextCallback
+);
 ```
 
 Asynchronous call to send the message specified by `eventMessageHandle`.

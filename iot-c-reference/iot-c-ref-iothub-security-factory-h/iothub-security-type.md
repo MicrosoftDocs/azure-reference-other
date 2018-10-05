@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-IOTHUB_SECURITY_TYPE iothub_security_type(  void);
+IOTHUB_SECURITY_TYPE iothub_security_type(void);
 ```
 

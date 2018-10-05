@@ -7,7 +7,8 @@
 ```C
 ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithTpm(
   const char *  endorsement_key,
-  const char *  storage_root_key);
+  const char *  storage_root_key
+);
 ```
 
 Creates an Attestation Mechanism handle that uses a TPM Attestation for use in consequent APIs.

@@ -6,7 +6,8 @@
 
 ```C
 PROVISIONING_SERVICE_CLIENT_HANDLE prov_sc_create_from_connection_string(
-  const char *  conn_string);
+  const char *  conn_string
+);
 ```
 
 Creates a Provisioning Service Client handle for use in consequent APIs.

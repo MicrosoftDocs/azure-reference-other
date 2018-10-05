@@ -8,7 +8,8 @@
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
   const char *           key,
-  const char *           value);
+  const char *           value
+);
 ```
 
 Sets a property on a Iothub Message.

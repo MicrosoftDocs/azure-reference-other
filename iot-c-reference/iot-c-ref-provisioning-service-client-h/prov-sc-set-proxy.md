@@ -7,7 +7,8 @@
 ```C
 int prov_sc_set_proxy(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  HTTP_PROXY_OPTIONS                  proxy_options);
+  HTTP_PROXY_OPTIONS                  proxy_options
+);
 ```
 
 Set the proxy options for HTTP communication with the Provisioning Service.

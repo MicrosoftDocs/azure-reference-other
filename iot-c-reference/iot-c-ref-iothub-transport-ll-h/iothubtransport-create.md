@@ -8,6 +8,7 @@
 TRANSPORT_HANDLE IoTHubTransport_Create(
   IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
   const char *                      iotHubName,
-  const char *                      iotHubSuffix);
+  const char *                      iotHubSuffix
+);
 ```
 

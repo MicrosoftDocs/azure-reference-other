@@ -6,6 +6,7 @@
 
 ```C
 OPTIONHANDLER_HANDLE OptionHandler_Clone(
-  OPTIONHANDLER_HANDLE  handler);
+  OPTIONHANDLER_HANDLE  handler
+);
 ```
 

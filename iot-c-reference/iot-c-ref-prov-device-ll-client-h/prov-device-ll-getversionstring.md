@@ -5,7 +5,7 @@
 ## Syntax
 
 ```C
-const char* Prov_Device_LL_GetVersionString(  void);
+const char* Prov_Device_LL_GetVersionString(void);
 ```
 
 API to get the version of the provisioning client.

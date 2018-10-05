@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubMessaging_LL_DoWork(
-  IOTHUB_MESSAGING_HANDLE  messagingHandle);
+  IOTHUB_MESSAGING_HANDLE  messagingHandle
+);
 ```
 
 This function is meant to be called by the user when work (sending/receiving) can be done by the IoTHubServiceClient.

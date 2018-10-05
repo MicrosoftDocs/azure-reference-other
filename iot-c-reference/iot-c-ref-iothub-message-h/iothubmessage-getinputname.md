@@ -6,7 +6,8 @@
 
 ```C
 const char* IoTHubMessage_GetInputName(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+);
 ```
 
 Gets the input name from the IOTHUB_MESSAGE_HANDLE.

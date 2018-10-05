@@ -6,7 +6,8 @@
 
 ```C
 void prov_sc_destroy(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client);
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client
+);
 ```
 
 Disposes of resources allocated by creating a Provisioning Service Client handle.

@@ -11,7 +11,8 @@ IOTHUB_CLIENT_RESULT IoTHubClient_UploadToBlobAsync(
   const unsigned char *               source,
   size_t                              size,
   IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK  iotHubClientFileUploadCallback,
-  void *                              context);
+  void *                              context
+);
 ```
 
 IoTHubClient_UploadToBlobAsync uploads data from memory to a file in Azure Blob Storage.

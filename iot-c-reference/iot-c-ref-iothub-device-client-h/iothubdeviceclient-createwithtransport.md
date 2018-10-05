@@ -7,7 +7,8 @@
 ```C
 IOTHUB_DEVICE_CLIENT_HANDLE IoTHubDeviceClient_CreateWithTransport(
   TRANSPORT_HANDLE  transportHandle,
-  const             config);
+  const             config
+);
 ```
 
 Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.

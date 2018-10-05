@@ -7,6 +7,7 @@
 ```C
 int PROVISIONING_QUERY_TYPE_FromString(
   const char *             enumAsString,
-  PROVISIONING_QUERY_TYPE  destination);
+  PROVISIONING_QUERY_TYPE  destination
+);
 ```
 

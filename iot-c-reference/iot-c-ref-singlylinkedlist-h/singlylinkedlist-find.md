@@ -8,6 +8,7 @@
 LIST_ITEM_HANDLE singlylinkedlist_find(
   SINGLYLINKEDLIST_HANDLE  list,
   LIST_MATCH_FUNCTION      match_function,
-  const void *             match_context);
+  const void *             match_context
+);
 ```
 

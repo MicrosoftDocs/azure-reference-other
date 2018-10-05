@@ -7,7 +7,8 @@
 ```C
 IOTHUB_CLIENT_LL_HANDLE IoTHubClient_LL_CreateFromConnectionString(
   const char *                      connectionString,
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol);
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol
+);
 ```
 
 Creates a IoT Hub client for communication with an existing IoT Hub using the specified connection string parameter.

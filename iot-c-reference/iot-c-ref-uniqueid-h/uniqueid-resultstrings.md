@@ -6,6 +6,7 @@
 
 ```C
 const char* UNIQUEID_RESULTStrings(
-  UNIQUEID_RESULT  value);
+  UNIQUEID_RESULT  value
+);
 ```
 

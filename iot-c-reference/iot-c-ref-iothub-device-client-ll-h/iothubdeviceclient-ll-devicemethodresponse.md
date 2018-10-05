@@ -10,7 +10,8 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_DeviceMethodResponse(
   METHOD_HANDLE                   methodId,
   const unsigned char *           response,
   size_t                          respSize,
-  int                             statusCode);
+  int                             statusCode
+);
 ```
 
 This API responds to an asnyc method callback identified the methodId.

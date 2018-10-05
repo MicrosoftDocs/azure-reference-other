@@ -10,7 +10,8 @@ PROV_DEVICE_RESULT Prov_Device_LL_Register_Device(
   PROV_DEVICE_CLIENT_REGISTER_DEVICE_CALLBACK  register_callback,
   void *                                       user_context,
   PROV_DEVICE_CLIENT_REGISTER_STATUS_CALLBACK  reg_status_cb,
-  void *                                       status_user_ctext);
+  void *                                       status_user_ctext
+);
 ```
 
 Asynchronous call initiates the registration of a device.

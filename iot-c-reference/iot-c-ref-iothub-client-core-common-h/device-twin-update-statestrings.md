@@ -6,6 +6,7 @@
 
 ```C
 const char* DEVICE_TWIN_UPDATE_STATEStrings(
-  DEVICE_TWIN_UPDATE_STATE  value);
+  DEVICE_TWIN_UPDATE_STATE  value
+);
 ```
 

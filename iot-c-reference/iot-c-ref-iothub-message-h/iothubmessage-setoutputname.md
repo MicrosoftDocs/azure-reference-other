@@ -7,7 +7,8 @@
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetOutputName(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           outputName);
+  const char *           outputName
+);
 ```
 
 Sets output for named queues. CAUTION: SDK user should not call it directly, it is for internal use only.

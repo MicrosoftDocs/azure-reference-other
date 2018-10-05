@@ -7,7 +7,8 @@
 ```C
 const char* IoTHubMessage_GetProperty(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           key);
+  const char *           key
+);
 ```
 
 Gets a IotHub Message's properties item.

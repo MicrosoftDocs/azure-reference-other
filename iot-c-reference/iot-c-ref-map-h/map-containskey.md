@@ -8,7 +8,8 @@
 MAP_RESULT Map_ContainsKey(
   MAP_HANDLE    handle,
   const char *  key,
-  bool *        keyExists);
+  bool *        keyExists
+);
 ```
 
 This function returns a boolean value in `keyExists` if the map contains a key with the same value the parameter `key`.

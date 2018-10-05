@@ -11,6 +11,7 @@ IOTHUB_CLIENT_RESULT IoTHubClientCore_UploadToBlobAsync(
   const unsigned char *               source,
   size_t                              size,
   IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK  iotHubClientFileUploadCallback,
-  void *                              context);
+  void *                              context
+);
 ```
 

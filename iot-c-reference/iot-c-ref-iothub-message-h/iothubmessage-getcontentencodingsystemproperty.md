@@ -6,7 +6,8 @@
 
 ```C
 const char* IoTHubMessage_GetContentEncodingSystemProperty(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+);
 ```
 
 Returns the content-encoding of the message payload, if defined.

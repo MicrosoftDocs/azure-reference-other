@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubDeviceTwin_Destroy(
-  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle);
+  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle
+);
 ```
 
 Disposes of resources allocated by the IoT Hub IoTHubDeviceTwin_Create.

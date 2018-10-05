@@ -7,7 +7,8 @@
 ```C
 int prov_sc_delete_enrollment_group(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  ENROLLMENT_GROUP_HANDLE             enrollment);
+  ENROLLMENT_GROUP_HANDLE             enrollment
+);
 ```
 
 Deletes a device enrollment group record on the Provisioning Service.

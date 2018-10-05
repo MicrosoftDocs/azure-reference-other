@@ -6,7 +6,8 @@
 
 ```C
 IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE IoTHubDeviceConfiguration_Create(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle);
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle
+);
 ```
 
 Creates a IoT Hub Service Client DeviceConfiguration handle for use it in consequent APIs.

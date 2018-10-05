@@ -8,7 +8,8 @@
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetDeviceMethodCallback(
   IOTHUB_DEVICE_CLIENT_HANDLE                 iotHubClientHandle,
   IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC  deviceMethodCallback,
-  void *                                      userContextCallback);
+  void *                                      userContextCallback
+);
 ```
 
 This API sets the callback for async cloud to device method calls.

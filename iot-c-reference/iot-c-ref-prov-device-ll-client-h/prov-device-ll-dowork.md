@@ -6,7 +6,8 @@
 
 ```C
 void Prov_Device_LL_DoWork(
-  PROV_DEVICE_LL_HANDLE  handle);
+  PROV_DEVICE_LL_HANDLE  handle
+);
 ```
 
 Api to be called by user when work (registering device) can be done.

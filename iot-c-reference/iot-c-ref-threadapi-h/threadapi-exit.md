@@ -6,7 +6,8 @@
 
 ```C
 void ThreadAPI_Exit(
-  int  res);
+  int  res
+);
 ```
 
 This function is called by a thread when the thread exits.

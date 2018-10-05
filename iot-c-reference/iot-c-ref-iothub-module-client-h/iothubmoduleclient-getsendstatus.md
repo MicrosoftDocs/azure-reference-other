@@ -7,7 +7,8 @@
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_GetSendStatus(
   IOTHUB_MODULE_CLIENT_HANDLE  iotHubModuleClientHandle,
-  IOTHUB_CLIENT_STATUS         IoTHubClientStatus);
+  IOTHUB_CLIENT_STATUS         IoTHubClientStatus
+);
 ```
 
 This function returns the current sending status for IoTHubClient.

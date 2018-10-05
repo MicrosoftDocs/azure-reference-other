@@ -9,7 +9,8 @@ int prov_sc_query_device_registration_state(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
   PROVISIONING_QUERY_SPECIFICATION    query_spec,
   char **                             cont_token_ptr,
-  PROVISIONING_QUERY_RESPONSE         query_resp_ptr);
+  PROVISIONING_QUERY_RESPONSE         query_resp_ptr
+);
 ```
 
 Queries device registration state records from the Provisioning Service.

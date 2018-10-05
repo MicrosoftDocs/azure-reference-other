@@ -8,7 +8,8 @@
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetModuleMethodCallback(
   IOTHUB_MODULE_CLIENT_LL_HANDLE              iotHubModuleClientHandle,
   IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC  moduleMethodCallback,
-  void *                                      userContextCallback);
+  void *                                      userContextCallback
+);
 ```
 
 This API sets callback for async cloud to module method call.

@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-const PROV_DEVICE_TRANSPORT_PROVIDER* Prov_Device_AMQP_Protocol(  void);
+const PROV_DEVICE_TRANSPORT_PROVIDER* Prov_Device_AMQP_Protocol(void);
 ```
 

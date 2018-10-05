@@ -9,7 +9,8 @@ IOTHUB_CLIENT_RESULT IoTHubClient_UploadMultipleBlocksToBlobAsync(
   IOTHUB_CLIENT_HANDLE                         iotHubClientHandle,
   const char *                                 destinationFileName,
   IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK  getDataCallback,
-  void *                                       context);
+  void *                                       context
+);
 ```
 
 Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.

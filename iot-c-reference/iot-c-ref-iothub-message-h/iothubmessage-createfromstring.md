@@ -6,7 +6,8 @@
 
 ```C
 IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromString(
-  const char *  source);
+  const char *  source
+);
 ```
 
 Creates a new IoT hub message from a null terminated string. The type of the message will be set to `IOTHUBMESSAGE_STRING`.

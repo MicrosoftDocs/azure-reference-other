@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubDeviceClient_LL_DoWork(
-  IOTHUB_DEVICE_CLIENT_LL_HANDLE  iotHubClientHandle);
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE  iotHubClientHandle
+);
 ```
 
 This function is meant to be called by the user when work (sending/receiving) can be done by the IoTHubClient.

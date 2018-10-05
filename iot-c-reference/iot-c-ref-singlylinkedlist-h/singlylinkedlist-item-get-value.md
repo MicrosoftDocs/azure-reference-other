@@ -6,6 +6,7 @@
 
 ```C
 const void* singlylinkedlist_item_get_value(
-  LIST_ITEM_HANDLE  item_handle);
+  LIST_ITEM_HANDLE  item_handle
+);
 ```
 

@@ -6,6 +6,7 @@
 
 ```C
 X509_CERTIFICATE_HANDLE x509Attestation_getPrimaryCertificate(
-  X509_ATTESTATION_HANDLE  x509_att);
+  X509_ATTESTATION_HANDLE  x509_att
+);
 ```
 

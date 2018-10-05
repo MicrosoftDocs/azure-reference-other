@@ -7,6 +7,7 @@
 ```C
 int enrollmentGroup_setInitialTwin(
   ENROLLMENT_GROUP_HANDLE  enrollment,
-  INITIAL_TWIN_HANDLE      twin);
+  INITIAL_TWIN_HANDLE      twin
+);
 ```
 

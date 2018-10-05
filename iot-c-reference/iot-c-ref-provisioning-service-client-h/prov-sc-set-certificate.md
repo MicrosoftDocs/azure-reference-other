@@ -7,7 +7,8 @@
 ```C
 int prov_sc_set_certificate(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  const char *                        certificate);
+  const char *                        certificate
+);
 ```
 
 Set the trusted certificate for HTTP communication with the Provisioning Service.

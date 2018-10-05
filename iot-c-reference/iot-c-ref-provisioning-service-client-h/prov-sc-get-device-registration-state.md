@@ -8,7 +8,8 @@
 int prov_sc_get_device_registration_state(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
   const char *                        reg_id,
-  DEVICE_REGISTRATION_STATE_HANDLE    reg_state_ptr);
+  DEVICE_REGISTRATION_STATE_HANDLE    reg_state_ptr
+);
 ```
 
 Retreives a device registration state from the Provisioning Service.

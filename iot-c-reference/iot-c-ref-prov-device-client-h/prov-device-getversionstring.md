@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-const char* Prov_Device_GetVersionString(  void);
+const char* Prov_Device_GetVersionString(void);
 ```
 

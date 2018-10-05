@@ -5,7 +5,7 @@
 ## Syntax
 
 ```C
-LOCK_HANDLE Lock_Init(  void);
+LOCK_HANDLE Lock_Init(void);
 ```
 
 This API creates and returns a valid lock handle.

@@ -6,7 +6,8 @@
 
 ```C
 HTTP_HANDLE HTTPAPI_CreateConnection(
-  const char *  hostName);
+  const char *  hostName
+);
 ```
 
 Creates an HTTPS connection to the host specified by the `hostName` parameter.

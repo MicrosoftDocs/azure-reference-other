@@ -7,6 +7,7 @@
 ```C
 int individualEnrollment_setAttestationMechanism(
   INDIVIDUAL_ENROLLMENT_HANDLE  enrollment,
-  ATTESTATION_MECHANISM_HANDLE  att_mech);
+  ATTESTATION_MECHANISM_HANDLE  att_mech
+);
 ```
 

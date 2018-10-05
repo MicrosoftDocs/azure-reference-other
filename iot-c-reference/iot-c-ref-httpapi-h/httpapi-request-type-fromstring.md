@@ -7,6 +7,7 @@
 ```C
 int HTTPAPI_REQUEST_TYPE_FromString(
   const char *          enumAsString,
-  HTTPAPI_REQUEST_TYPE  destination);
+  HTTPAPI_REQUEST_TYPE  destination
+);
 ```
 

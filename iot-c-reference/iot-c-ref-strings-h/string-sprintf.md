@@ -7,6 +7,7 @@
 ```C
 int STRING_sprintf(
   STRING_HANDLE  s1,
-  const char *   format,  ...);
+  const char *   format,
+...);
 ```
 

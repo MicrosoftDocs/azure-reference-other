@@ -6,6 +6,7 @@
 
 ```C
 const char* enrollmentGroup_getCreatedDateTime(
-  ENROLLMENT_GROUP_HANDLE  enrollment);
+  ENROLLMENT_GROUP_HANDLE  enrollment
+);
 ```
 

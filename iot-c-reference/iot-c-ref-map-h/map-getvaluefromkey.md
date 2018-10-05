@@ -7,7 +7,8 @@
 ```C
 const char* Map_GetValueFromKey(
   MAP_HANDLE    handle,
-  const char *  key);
+  const char *  key
+);
 ```
 
 Retrieves the value of a stored key.

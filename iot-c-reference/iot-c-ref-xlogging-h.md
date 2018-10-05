@@ -35,17 +35,17 @@ LogError            |
 
 ## Typedefs
 
-####LOGGER_LOG
+#### LOGGER_LOG
 
 ```C
-typedef void(* LOGGER_LOG()
+typedef void(* LOGGER_LOG;
 
 ```
 
-####LOGGER_LOG_GETLASTERROR
+#### LOGGER_LOG_GETLASTERROR
 
 ```C
-typedef void(* LOGGER_LOG_GETLASTERROR()
+typedef void(* LOGGER_LOG_GETLASTERROR;
 
 ```
 

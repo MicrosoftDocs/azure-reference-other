@@ -7,7 +7,8 @@
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentTypeSystemProperty(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           contentType);
+  const char *           contentType
+);
 ```
 
 Sets the content-type of the message payload, as per supported values on RFC 2046.

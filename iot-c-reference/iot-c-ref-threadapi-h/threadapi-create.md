@@ -8,7 +8,8 @@
 THREADAPI_RESULT ThreadAPI_Create(
   THREAD_HANDLE      threadHandle,
   THREAD_START_FUNC  func,
-  void *             arg);
+  void *             arg
+);
 ```
 
 Creates a thread with the entry point specified by the `func` argument.

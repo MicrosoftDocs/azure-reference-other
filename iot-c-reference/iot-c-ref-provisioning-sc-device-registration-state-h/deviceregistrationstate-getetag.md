@@ -6,6 +6,7 @@
 
 ```C
 const char* deviceRegistrationState_getEtag(
-  DEVICE_REGISTRATION_STATE_HANDLE  drs);
+  DEVICE_REGISTRATION_STATE_HANDLE  drs
+);
 ```
 

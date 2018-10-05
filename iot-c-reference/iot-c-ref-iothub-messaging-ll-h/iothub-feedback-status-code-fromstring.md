@@ -7,6 +7,7 @@
 ```C
 int IOTHUB_FEEDBACK_STATUS_CODE_FromString(
   const char *                 enumAsString,
-  IOTHUB_FEEDBACK_STATUS_CODE  destination);
+  IOTHUB_FEEDBACK_STATUS_CODE  destination
+);
 ```
 

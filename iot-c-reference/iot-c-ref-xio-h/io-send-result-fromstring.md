@@ -7,6 +7,7 @@
 ```C
 int IO_SEND_RESULT_FromString(
   const char *    enumAsString,
-  IO_SEND_RESULT  destination);
+  IO_SEND_RESULT  destination
+);
 ```
 

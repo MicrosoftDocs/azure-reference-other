@@ -5,7 +5,7 @@
 ## Syntax
 
 ```C
-const char* IoTHubServiceClient_GetVersionString(  void);
+const char* IoTHubServiceClient_GetVersionString(void);
 ```
 
 Returns a pointer to a null terminated string containing the current IoT Hub Service Client SDK version.

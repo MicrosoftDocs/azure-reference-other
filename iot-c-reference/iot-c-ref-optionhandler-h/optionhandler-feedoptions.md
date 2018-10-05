@@ -7,6 +7,7 @@
 ```C
 OPTIONHANDLER_RESULT OptionHandler_FeedOptions(
   OPTIONHANDLER_HANDLE  handle,
-  void *                destinationHandle);
+  void *                destinationHandle
+);
 ```
 

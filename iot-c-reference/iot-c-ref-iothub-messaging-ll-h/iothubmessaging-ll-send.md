@@ -10,7 +10,8 @@ IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_Send(
   const char *                   deviceId,
   IOTHUB_MESSAGE_HANDLE          message,
   IOTHUB_SEND_COMPLETE_CALLBACK  sendCompleteCallback,
-  void *                         userContextCallback);
+  void *                         userContextCallback
+);
 ```
 
 Synchronous call to send the message to a specified device.

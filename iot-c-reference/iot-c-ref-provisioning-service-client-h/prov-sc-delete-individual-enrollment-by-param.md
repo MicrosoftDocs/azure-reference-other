@@ -8,7 +8,8 @@
 int prov_sc_delete_individual_enrollment_by_param(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
   const char *                        reg_id,
-  const char *                        etag);
+  const char *                        etag
+);
 ```
 
 Deletes an individual device enrollment record on the Provisioning Service.

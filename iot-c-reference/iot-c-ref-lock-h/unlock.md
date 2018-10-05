@@ -6,7 +6,8 @@
 
 ```C
 LOCK_RESULT Unlock(
-  LOCK_HANDLE  handle);
+  LOCK_HANDLE  handle
+);
 ```
 
 Releases the lock on the given lock handle. Uses platform specific mutex primitives in its implementation.

@@ -7,6 +7,7 @@
 ```C
 int UNIQUEID_RESULT_FromString(
   const char *     enumAsString,
-  UNIQUEID_RESULT  destination);
+  UNIQUEID_RESULT  destination
+);
 ```
 

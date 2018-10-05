@@ -6,6 +6,7 @@
 
 ```C
 int iothub_security_init(
-  IOTHUB_SECURITY_TYPE  sec_type);
+  IOTHUB_SECURITY_TYPE  sec_type
+);
 ```
 

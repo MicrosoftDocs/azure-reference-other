@@ -8,6 +8,7 @@
 OPTIONHANDLER_RESULT OptionHandler_AddOption(
   OPTIONHANDLER_HANDLE  handle,
   const char *          name,
-  const void *          value);
+  const void *          value
+);
 ```
 

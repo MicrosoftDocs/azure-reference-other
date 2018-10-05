@@ -8,7 +8,8 @@
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetMessageCallback(
   IOTHUB_MODULE_CLIENT_LL_HANDLE        iotHubModuleClientHandle,
   IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  messageCallback,
-  void *                                userContextCallback);
+  void *                                userContextCallback
+);
 ```
 
 Sets up the message callback to be invoked when Edge issues a message to the module. This is a blocking call.

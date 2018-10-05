@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubModuleClient_Destroy(
-  IOTHUB_MODULE_CLIENT_HANDLE  iotHubModuleClientHandle);
+  IOTHUB_MODULE_CLIENT_HANDLE  iotHubModuleClientHandle
+);
 ```
 
 Disposes of resources allocated by the IoT Hub client. This is a blocking call.

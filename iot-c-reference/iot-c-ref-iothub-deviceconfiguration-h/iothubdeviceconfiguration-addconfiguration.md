@@ -8,7 +8,8 @@
 IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_AddConfiguration(
   IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  serviceClientDeviceConfigurationHandle,
   const                                              configurationAdd,
-  IOTHUB_DEVICE_CONFIGURATION                        configuration);
+  IOTHUB_DEVICE_CONFIGURATION                        configuration
+);
 ```
 
 Adds the Configuration info to IoT Hub.

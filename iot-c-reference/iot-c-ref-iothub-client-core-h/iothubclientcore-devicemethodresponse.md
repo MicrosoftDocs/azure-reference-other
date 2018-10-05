@@ -10,6 +10,7 @@ IOTHUB_CLIENT_RESULT IoTHubClientCore_DeviceMethodResponse(
   METHOD_HANDLE              methodId,
   const unsigned char *      response,
   size_t                     response_size,
-  int                        statusCode);
+  int                        statusCode
+);
 ```
 

@@ -10,6 +10,7 @@ IOTHUB_CLIENT_RESULT IoTHubClientCore_LL_SendEventToOutputAsync(
   IOTHUB_MESSAGE_HANDLE                      eventMessageHandle,
   const char *                               outputName,
   IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK  eventConfirmationCallback,
-  void *                                     userContextCallback);
+  void *                                     userContextCallback
+);
 ```
 

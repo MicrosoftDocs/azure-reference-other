@@ -5,7 +5,7 @@
 ## Syntax
 
 ```C
-HTTPAPI_RESULT HTTPAPI_Init(  void);
+HTTPAPI_RESULT HTTPAPI_Init(void);
 ```
 
 Global initialization for the HTTP API component.

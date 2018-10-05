@@ -8,7 +8,8 @@
 IOTHUB_MESSAGING_RESULT IoTHubMessaging_SetFeedbackMessageCallback(
   IOTHUB_MESSAGING_CLIENT_HANDLE             messagingClientHandle,
   IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK  feedbackMessageReceivedCallback,
-  void *                                     userContextCallback);
+  void *                                     userContextCallback
+);
 ```
 
 This API specifies a callback to be used when the device receives the message.

@@ -10,6 +10,7 @@ IOTHUB_CLIENT_RESULT IoTHubClientCore_SendReportedState(
   const unsigned char *                  reportedState,
   size_t                                 size,
   IOTHUB_CLIENT_REPORTED_STATE_CALLBACK  reportedStateCallback,
-  void *                                 userContextCallback);
+  void *                                 userContextCallback
+);
 ```
 

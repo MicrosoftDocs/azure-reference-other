@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubDeviceMethod_Destroy(
-  IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE  serviceClientDeviceMethodHandle);
+  IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE  serviceClientDeviceMethodHandle
+);
 ```
 
 Disposes of resources allocated by the IoT Hub IoTHubDeviceMethod_Create.

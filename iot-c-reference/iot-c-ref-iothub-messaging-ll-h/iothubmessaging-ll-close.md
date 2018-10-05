@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubMessaging_LL_Close(
-  IOTHUB_MESSAGING_HANDLE  messagingHandle);
+  IOTHUB_MESSAGING_HANDLE  messagingHandle
+);
 ```
 
 Closes connection to IoTHub.

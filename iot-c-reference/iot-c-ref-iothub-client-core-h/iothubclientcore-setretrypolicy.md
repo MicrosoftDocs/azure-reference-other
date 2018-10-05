@@ -8,6 +8,7 @@
 IOTHUB_CLIENT_RESULT IoTHubClientCore_SetRetryPolicy(
   IOTHUB_CLIENT_CORE_HANDLE   iotHubClientHandle,
   IOTHUB_CLIENT_RETRY_POLICY  retryPolicy,
-  size_t                      retryTimeoutLimitInSeconds);
+  size_t                      retryTimeoutLimitInSeconds
+);
 ```
 

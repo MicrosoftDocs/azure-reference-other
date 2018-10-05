@@ -5,7 +5,7 @@
 ## Syntax
 
 ```C
-int IoTHub_Init(  void);
+int IoTHub_Init(void);
 ```
 
 IoTHubClient_Init Initializes the IoTHub Client System.

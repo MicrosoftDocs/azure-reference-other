@@ -5,7 +5,7 @@
 ## Syntax
 
 ```C
-void IoTHub_Deinit(  void);
+void IoTHub_Deinit(void);
 ```
 
 IoTHubClient_Deinit Frees resources initialized in the IoTHubClient_Init function call.

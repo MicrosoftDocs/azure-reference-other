@@ -7,7 +7,8 @@
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetConnectionDeviceId(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           connectionDeviceId);
+  const char *           connectionDeviceId
+);
 ```
 
 Sets connection device Id. CAUTION: SDK user should not call it directly, it is for internal use only.

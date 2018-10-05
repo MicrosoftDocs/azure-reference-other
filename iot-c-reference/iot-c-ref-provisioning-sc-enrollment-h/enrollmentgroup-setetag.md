@@ -7,6 +7,7 @@
 ```C
 int enrollmentGroup_setEtag(
   ENROLLMENT_GROUP_HANDLE  enrollment,
-  const char *             etag);
+  const char *             etag
+);
 ```
 

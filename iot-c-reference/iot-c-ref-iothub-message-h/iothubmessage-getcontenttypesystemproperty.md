@@ -6,7 +6,8 @@
 
 ```C
 const char* IoTHubMessage_GetContentTypeSystemProperty(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+);
 ```
 
 Returns the content-type of the message payload, if defined.

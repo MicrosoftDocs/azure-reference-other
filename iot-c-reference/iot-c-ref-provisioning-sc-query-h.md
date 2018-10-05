@@ -43,15 +43,6 @@ struct PROVISIONING_QUERY_RESPONSE{
   PROVISIONING_QUERY_TYPE                response_arr_type
 };
 ```
-#### PROVISIONING_QUERY_RESPONSE.response_arr
-
-```C
-struct PROVISIONING_QUERY_RESPONSE.response_arr{
-  INDIVIDUAL_ENROLLMENT_HANDLE      ie,
-  ENROLLMENT_GROUP_HANDLE           eg,
-  DEVICE_REGISTRATION_STATE_HANDLE  drs
-};
-```
 
 ## Defines
 

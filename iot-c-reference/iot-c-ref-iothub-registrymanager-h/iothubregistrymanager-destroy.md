@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubRegistryManager_Destroy(
-  IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle);
+  IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle
+);
 ```
 
 Disposes of resources allocated by the IoT Hub Registry Manager.

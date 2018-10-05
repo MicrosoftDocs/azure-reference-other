@@ -9,7 +9,8 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetModule(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const char *                   deviceId,
   const char *                   moduleId,
-  IOTHUB_MODULE                  module);
+  IOTHUB_MODULE                  module
+);
 ```
 
 Gets module info for a given module.

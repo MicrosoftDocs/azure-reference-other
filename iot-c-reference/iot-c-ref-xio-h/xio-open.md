@@ -12,6 +12,7 @@ int xio_open(
   ON_BYTES_RECEIVED    on_bytes_received,
   void *               on_bytes_received_context,
   ON_IO_ERROR          on_io_error,
-  void *               on_io_error_context);
+  void *               on_io_error_context
+);
 ```
 

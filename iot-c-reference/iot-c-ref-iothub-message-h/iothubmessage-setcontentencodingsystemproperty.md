@@ -7,7 +7,8 @@
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentEncodingSystemProperty(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           contentEncoding);
+  const char *           contentEncoding
+);
 ```
 
 Sets the content-encoding of the message payload, as per supported values on RFC 2616.

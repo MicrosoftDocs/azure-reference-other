@@ -6,7 +6,8 @@
 
 ```C
 void ThreadAPI_Sleep(
-  unsigned int  milliseconds);
+  unsigned int  milliseconds
+);
 ```
 
 Sleeps the current thread for the given number of milliseconds.

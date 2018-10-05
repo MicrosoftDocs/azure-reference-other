@@ -31,31 +31,31 @@ OPTIONHANDLER_RESULT_VALUES            |
 
 ## Typedefs
 
-####OPTIONHANDLER_HANDLE
+#### OPTIONHANDLER_HANDLE
 
 ```C
-typedef struct OPTIONHANDLER_HANDLE_DATA_TAG * OPTIONHANDLER_HANDLE()
+typedef struct OPTIONHANDLER_HANDLE_DATA_TAG * OPTIONHANDLER_HANDLE;
 
 ```
 
-####pfCloneOption
+#### pfCloneOption
 
 ```C
-typedef void *(* pfCloneOption()
+typedef void *(* pfCloneOption;
 
 ```
 
-####pfDestroyOption
+#### pfDestroyOption
 
 ```C
-typedef void(* pfDestroyOption()
+typedef void(* pfDestroyOption;
 
 ```
 
-####pfSetOption
+#### pfSetOption
 
 ```C
-typedef int(* pfSetOption()
+typedef int(* pfSetOption;
 
 ```
 

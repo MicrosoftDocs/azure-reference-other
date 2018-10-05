@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-void platform_deinit(  void);
+void platform_deinit(void);
 ```
 

@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-void iothub_security_deinit(  void);
+void iothub_security_deinit(void);
 ```
 

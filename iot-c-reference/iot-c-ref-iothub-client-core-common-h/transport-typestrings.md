@@ -6,6 +6,7 @@
 
 ```C
 const char* TRANSPORT_TYPEStrings(
-  TRANSPORT_TYPE  value);
+  TRANSPORT_TYPE  value
+);
 ```
 

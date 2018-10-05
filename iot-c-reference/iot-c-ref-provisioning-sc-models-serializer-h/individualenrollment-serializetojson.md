@@ -6,7 +6,8 @@
 
 ```C
 char* individualEnrollment_serializeToJson(
-  const   enrollment);
+  const   enrollment
+);
 ```
 
 Serializes an Individual Enrollment into a JSON String.

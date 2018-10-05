@@ -6,7 +6,8 @@
 
 ```C
 void IoTHubRegistryManager_FreeModuleMembers(
-  IOTHUB_MODULE  moduleInfo);
+  IOTHUB_MODULE  moduleInfo
+);
 ```
 
 Free members of the [IOTHUB_MODULE](#struct_i_o_t_h_u_b___m_o_d_u_l_e) structure (NOT the structure itself)

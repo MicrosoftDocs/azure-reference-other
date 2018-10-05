@@ -14,7 +14,8 @@ IOTHUB_DEVICE_METHOD_RESULT IoTHubDeviceMethod_InvokeModule(
   unsigned int                                timeout,
   int *                                       responseStatus,
   unsigned char **                            responsePayload,
-  size_t *                                    responsePayloadSize);
+  size_t *                                    responsePayloadSize
+);
 ```
 
 Call a method on device and a module with a given payload.

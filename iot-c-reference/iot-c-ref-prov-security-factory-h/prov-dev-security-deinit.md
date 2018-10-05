@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-void prov_dev_security_deinit(  void);
+void prov_dev_security_deinit(void);
 ```
 

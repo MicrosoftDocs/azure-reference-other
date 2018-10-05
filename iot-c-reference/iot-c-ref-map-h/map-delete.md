@@ -7,7 +7,8 @@
 ```C
 MAP_RESULT Map_Delete(
   MAP_HANDLE    handle,
-  const char *  key);
+  const char *  key
+);
 ```
 
 Removes a key and its associated value from the map.

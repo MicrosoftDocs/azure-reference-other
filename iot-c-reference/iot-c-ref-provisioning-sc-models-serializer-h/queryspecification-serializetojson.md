@@ -6,7 +6,8 @@
 
 ```C
 char* querySpecification_serializeToJson(
-  const   query_spec);
+  const   query_spec
+);
 ```
 
 Serializes a Query Specification into a JSON String.

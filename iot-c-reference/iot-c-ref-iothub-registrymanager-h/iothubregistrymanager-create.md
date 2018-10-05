@@ -6,7 +6,8 @@
 
 ```C
 IOTHUB_REGISTRYMANAGER_HANDLE IoTHubRegistryManager_Create(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle);
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle
+);
 ```
 
 Creates a IoT Hub Registry Manager handle for use it in consequent APIs.

@@ -6,7 +6,8 @@
 
 ```C
 IOTHUB_MESSAGING_HANDLE IoTHubMessaging_LL_Create(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  iotHubMessagingServiceClientHandle);
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  iotHubMessagingServiceClientHandle
+);
 ```
 
 Creates a IoT Hub Service Client Messaging handle for use it in consequent APIs.

@@ -7,6 +7,7 @@
 ```C
 int IOTHUB_CLIENT_CONNECTION_STATUS_REASON_FromString(
   const char *                            enumAsString,
-  IOTHUB_CLIENT_CONNECTION_STATUS_REASON  destination);
+  IOTHUB_CLIENT_CONNECTION_STATUS_REASON  destination
+);
 ```
 

@@ -9,7 +9,8 @@ MAP_RESULT Map_GetInternals(
   MAP_HANDLE            handle,
   const char *const **  keys,
   const char *const **  values,
-  size_t *              count);
+  size_t *              count
+);
 ```
 
 Retrieves the complete list of keys and values from the map in `values` and `keys`. Also writes the size of the list in `count`.

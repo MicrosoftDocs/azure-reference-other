@@ -6,7 +6,8 @@
 
 ```C
 IOTHUB_MESSAGE_HANDLE IoTHubMessage_Clone(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+);
 ```
 
 Creates a new IoT hub message with the content identical to that of the `iotHubMessageHandle` parameter.

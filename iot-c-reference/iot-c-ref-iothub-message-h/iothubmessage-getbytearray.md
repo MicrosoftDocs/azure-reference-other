@@ -8,7 +8,8 @@
 IOTHUB_MESSAGE_RESULT IoTHubMessage_GetByteArray(
   IOTHUB_MESSAGE_HANDLE   iotHubMessageHandle,
   const unsigned char **  buffer,
-  size_t *                size);
+  size_t *                size
+);
 ```
 
 Fetches a pointer and size for the data associated with the IoT hub message handle. If the content type of the message is not `IOTHUBMESSAGE_BYTEARRAY` then the function returns `IOTHUB_MESSAGE_INVALID_ARG`.

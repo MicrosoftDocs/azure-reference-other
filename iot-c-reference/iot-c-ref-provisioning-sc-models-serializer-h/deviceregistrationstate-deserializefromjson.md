@@ -6,7 +6,8 @@
 
 ```C
 DEVICE_REGISTRATION_STATE_HANDLE deviceRegistrationState_deserializeFromJson(
-  const char *  json_string);
+  const char *  json_string
+);
 ```
 
 Deserializes a JSON String representation of a Device Registration State.

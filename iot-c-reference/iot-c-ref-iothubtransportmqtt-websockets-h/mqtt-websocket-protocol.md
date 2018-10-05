@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-const TRANSPORT_PROVIDER* MQTT_WebSocket_Protocol(  void);
+const TRANSPORT_PROVIDER* MQTT_WebSocket_Protocol(void);
 ```
 

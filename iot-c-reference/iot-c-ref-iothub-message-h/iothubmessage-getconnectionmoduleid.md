@@ -6,7 +6,8 @@
 
 ```C
 const char* IoTHubMessage_GetConnectionModuleId(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+);
 ```
 
 Gets the module name from the IOTHUB_MESSAGE_HANDLE.

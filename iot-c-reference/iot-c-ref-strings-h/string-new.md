@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-STRING_HANDLE STRING_new(  void);
+STRING_HANDLE STRING_new(void);
 ```
 

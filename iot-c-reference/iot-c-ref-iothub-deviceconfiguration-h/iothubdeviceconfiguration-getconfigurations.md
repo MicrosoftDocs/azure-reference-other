@@ -8,7 +8,8 @@
 IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_GetConfigurations(
   IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  serviceClientDeviceConfigurationHandle,
   size_t                                             maxConfigurationsCount,
-  SINGLYLINKEDLIST_HANDLE                            configurationsList);
+  SINGLYLINKEDLIST_HANDLE                            configurationsList
+);
 ```
 
 Retrieves the Configuration info for multiple configurations from IoT Hub.

@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-const IO_INTERFACE_DESCRIPTION* socketio_get_interface_description(  void);
+const IO_INTERFACE_DESCRIPTION* socketio_get_interface_description(void);
 ```
 

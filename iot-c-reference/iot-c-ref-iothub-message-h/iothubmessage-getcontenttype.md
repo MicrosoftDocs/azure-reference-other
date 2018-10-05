@@ -6,7 +6,8 @@
 
 ```C
 IOTHUBMESSAGE_CONTENT_TYPE IoTHubMessage_GetContentType(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+);
 ```
 
 Returns the content type of the message given by parameter `iotHubMessageHandle`.

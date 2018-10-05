@@ -6,6 +6,7 @@
 
 ```C
 INITIAL_TWIN_HANDLE enrollmentGroup_getInitialTwin(
-  ENROLLMENT_GROUP_HANDLE  enrollment);
+  ENROLLMENT_GROUP_HANDLE  enrollment
+);
 ```
 

@@ -10,10 +10,10 @@ Stub comment for details. Please update this comment.
 
 ## Typedefs
 
-####STRING_HANDLE
+#### STRING_HANDLE
 
 ```C
-typedef struct STRING_TAG * STRING_HANDLE()
+typedef struct STRING_TAG * STRING_HANDLE;
 
 ```
 

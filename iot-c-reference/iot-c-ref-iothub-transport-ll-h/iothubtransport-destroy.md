@@ -6,6 +6,7 @@
 
 ```C
 void IoTHubTransport_Destroy(
-  TRANSPORT_HANDLE  transportHandle);
+  TRANSPORT_HANDLE  transportHandle
+);
 ```
 

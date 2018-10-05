@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-TICK_COUNTER_HANDLE tickcounter_create(  void);
+TICK_COUNTER_HANDLE tickcounter_create(void);
 ```
 

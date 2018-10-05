@@ -8,6 +8,7 @@
 PROV_DEVICE_HANDLE Prov_Device_Create(
   const char *                             uri,
   const char *                             scope_id,
-  PROV_DEVICE_TRANSPORT_PROVIDER_FUNCTION  protocol);
+  PROV_DEVICE_TRANSPORT_PROVIDER_FUNCTION  protocol
+);
 ```
 

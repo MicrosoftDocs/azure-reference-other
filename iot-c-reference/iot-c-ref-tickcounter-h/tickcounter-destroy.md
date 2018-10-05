@@ -6,6 +6,7 @@
 
 ```C
 void tickcounter_destroy(
-  TICK_COUNTER_HANDLE  tick_counter);
+  TICK_COUNTER_HANDLE  tick_counter
+);
 ```
 

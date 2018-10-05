@@ -8,7 +8,8 @@
 MAP_RESULT Map_ContainsValue(
   MAP_HANDLE    handle,
   const char *  value,
-  bool *        valueExists);
+  bool *        valueExists
+);
 ```
 
 This function returns `true` in `valueExists` if at least one <key,value> pair exists in the map where the entry's value is equal to the parameter `value`.

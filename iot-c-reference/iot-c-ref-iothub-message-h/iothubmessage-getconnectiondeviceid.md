@@ -6,7 +6,8 @@
 
 ```C
 const char* IoTHubMessage_GetConnectionDeviceId(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+);
 ```
 
 Gets the connection device ID from the IOTHUB_MESSAGE_HANDLE.

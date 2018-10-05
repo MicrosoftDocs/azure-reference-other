@@ -8,7 +8,8 @@
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetModuleTwinCallback(
   IOTHUB_MODULE_CLIENT_LL_HANDLE      iotHubModuleClientHandle,
   IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK  moduleTwinCallback,
-  void *                              userContextCallback);
+  void *                              userContextCallback
+);
 ```
 
 This API specifies a call back to be used when the module receives a desired state update.

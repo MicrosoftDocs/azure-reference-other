@@ -8,7 +8,8 @@
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetMessageCallback(
   IOTHUB_MODULE_CLIENT_HANDLE           iotHubModuleClientHandle,
   IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  messageCallback,
-  void *                                userContextCallback);
+  void *                                userContextCallback
+);
 ```
 
 Sets up the message callback to be invoked when IoT Hub issues a message to the device. This is a blocking call.

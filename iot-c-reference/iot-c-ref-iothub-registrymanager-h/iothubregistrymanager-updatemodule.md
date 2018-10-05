@@ -7,7 +7,8 @@
 ```C
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_UpdateModule(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
-  IOTHUB_REGISTRY_MODULE_UPDATE  moduleUpdate);
+  IOTHUB_REGISTRY_MODULE_UPDATE  moduleUpdate
+);
 ```
 
 Updates a module on IoT Hub.

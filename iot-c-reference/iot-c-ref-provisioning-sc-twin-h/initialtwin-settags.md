@@ -7,6 +7,7 @@
 ```C
 int initialTwin_setTags(
   INITIAL_TWIN_HANDLE  twin,
-  const char *         tags);
+  const char *         tags
+);
 ```
 

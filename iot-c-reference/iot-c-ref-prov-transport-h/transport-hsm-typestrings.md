@@ -6,6 +6,7 @@
 
 ```C
 const char* TRANSPORT_HSM_TYPEStrings(
-  TRANSPORT_HSM_TYPE  value);
+  TRANSPORT_HSM_TYPE  value
+);
 ```
 

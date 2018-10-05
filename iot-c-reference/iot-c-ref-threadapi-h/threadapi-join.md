@@ -7,7 +7,8 @@
 ```C
 THREADAPI_RESULT ThreadAPI_Join(
   THREAD_HANDLE  threadHandle,
-  int *          res);
+  int *          res
+);
 ```
 
 Blocks the calling thread by waiting on the thread identified by the `threadHandle` argument to complete.

@@ -8,7 +8,8 @@
 PROV_DEVICE_RESULT Prov_Device_LL_SetOption(
   PROV_DEVICE_LL_HANDLE  handle,
   const char *           optionName,
-  const void *           value);
+  const void *           value
+);
 ```
 
 API sets a runtime option identified by parameter optionName to a value pointed to by value.

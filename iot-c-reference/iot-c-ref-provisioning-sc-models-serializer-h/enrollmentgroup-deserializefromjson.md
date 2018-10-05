@@ -6,7 +6,8 @@
 
 ```C
 ENROLLMENT_GROUP_HANDLE enrollmentGroup_deserializeFromJson(
-  const char *  json_string);
+  const char *  json_string
+);
 ```
 
 Deserializes a JSON String representation of an Enrollment Group.

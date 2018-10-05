@@ -8,7 +8,8 @@
 IOTHUB_CLIENT_RESULT IoTHubClient_LL_SetOption(
   IOTHUB_CLIENT_LL_HANDLE  iotHubClientHandle,
   const char *             optionName,
-  const void *             value);
+  const void *             value
+);
 ```
 
 This API sets a runtime option identified by parameter `optionName` to a value pointed to by `value`. `optionName` and the data type `value` is pointing to are specific for every option.

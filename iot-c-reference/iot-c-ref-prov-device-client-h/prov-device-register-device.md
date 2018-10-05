@@ -10,6 +10,7 @@ PROV_DEVICE_RESULT Prov_Device_Register_Device(
   PROV_DEVICE_CLIENT_REGISTER_DEVICE_CALLBACK  register_callback,
   void *                                       user_context,
   PROV_DEVICE_CLIENT_REGISTER_STATUS_CALLBACK  register_status_callback,
-  void *                                       status_user_context);
+  void *                                       status_user_context
+);
 ```
 

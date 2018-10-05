@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-const void* iothub_security_interface(  void);
+const void* iothub_security_interface(void);
 ```
 

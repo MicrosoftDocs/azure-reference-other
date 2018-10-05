@@ -9,6 +9,7 @@ IOTHUB_CLIENT_RESULT IoTHubClientCore_SetInputMessageCallback(
   IOTHUB_CLIENT_CORE_HANDLE             iotHubClientHandle,
   const char *                          inputName,
   IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  eventHandlerCallback,
-  void *                                userContextCallback);
+  void *                                userContextCallback
+);
 ```
 

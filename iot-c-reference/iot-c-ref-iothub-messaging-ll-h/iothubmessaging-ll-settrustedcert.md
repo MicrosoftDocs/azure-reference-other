@@ -7,7 +7,8 @@
 ```C
 IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_SetTrustedCert(
   IOTHUB_MESSAGING_HANDLE  messagingHandle,
-  const char *             trusted_cert);
+  const char *             trusted_cert
+);
 ```
 
 This function is meant to be called by the user when to set the trusted certificate on the tls connection.

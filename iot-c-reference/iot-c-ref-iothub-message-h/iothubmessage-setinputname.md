@@ -7,7 +7,8 @@
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetInputName(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           inputName);
+  const char *           inputName
+);
 ```
 
 Sets input for named queues. CAUTION: SDK user should not call it directly, it is for internal use only.

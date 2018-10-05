@@ -5,6 +5,6 @@
 ## Syntax
 
 ```C
-const TRANSPORT_PROVIDER* HTTP_Protocol(  void);
+const TRANSPORT_PROVIDER* HTTP_Protocol(void);
 ```
 

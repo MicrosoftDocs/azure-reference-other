@@ -14,7 +14,8 @@ HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
   size_t                 contentLength,
   unsigned int *         statusCode,
   HTTP_HEADERS_HANDLE    responseHeadersHandle,
-  BUFFER_HANDLE          responseContent);
+  BUFFER_HANDLE          responseContent
+);
 ```
 
 Sends the HTTP request to the host and handles the response for the HTTP call.

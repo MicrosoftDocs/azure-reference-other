@@ -56,108 +56,108 @@ IO_OPEN_RESULT_VALUES            |
 
 ## Typedefs
 
-####XIO_HANDLE
+#### XIO_HANDLE
 
 ```C
-typedef struct XIO_INSTANCE_TAG * XIO_HANDLE()
+typedef struct XIO_INSTANCE_TAG * XIO_HANDLE;
 
 ```
 
-####CONCRETE_IO_HANDLE
+#### CONCRETE_IO_HANDLE
 
 ```C
-typedef void * CONCRETE_IO_HANDLE()
+typedef void * CONCRETE_IO_HANDLE;
 
 ```
 
-####ON_BYTES_RECEIVED
+#### ON_BYTES_RECEIVED
 
 ```C
-typedef void(* ON_BYTES_RECEIVED()
+typedef void(* ON_BYTES_RECEIVED;
 
 ```
 
-####ON_SEND_COMPLETE
+#### ON_SEND_COMPLETE
 
 ```C
-typedef void(* ON_SEND_COMPLETE()
+typedef void(* ON_SEND_COMPLETE;
 
 ```
 
-####ON_IO_OPEN_COMPLETE
+#### ON_IO_OPEN_COMPLETE
 
 ```C
-typedef void(* ON_IO_OPEN_COMPLETE()
+typedef void(* ON_IO_OPEN_COMPLETE;
 
 ```
 
-####ON_IO_CLOSE_COMPLETE
+#### ON_IO_CLOSE_COMPLETE
 
 ```C
-typedef void(* ON_IO_CLOSE_COMPLETE()
+typedef void(* ON_IO_CLOSE_COMPLETE;
 
 ```
 
-####ON_IO_ERROR
+#### ON_IO_ERROR
 
 ```C
-typedef void(* ON_IO_ERROR()
+typedef void(* ON_IO_ERROR;
 
 ```
 
-####IO_RETRIEVEOPTIONS
+#### IO_RETRIEVEOPTIONS
 
 ```C
-typedef (* IO_RETRIEVEOPTIONS()
+typedef (* IO_RETRIEVEOPTIONS;
 
 ```
 
-####IO_CREATE
+#### IO_CREATE
 
 ```C
-typedef (* IO_CREATE()
+typedef (* IO_CREATE;
 
 ```
 
-####IO_DESTROY
+#### IO_DESTROY
 
 ```C
-typedef void(* IO_DESTROY()
+typedef void(* IO_DESTROY;
 
 ```
 
-####IO_OPEN
+#### IO_OPEN
 
 ```C
-typedef int(* IO_OPEN()
+typedef int(* IO_OPEN;
 
 ```
 
-####IO_CLOSE
+#### IO_CLOSE
 
 ```C
-typedef int(* IO_CLOSE()
+typedef int(* IO_CLOSE;
 
 ```
 
-####IO_SEND
+#### IO_SEND
 
 ```C
-typedef int(* IO_SEND()
+typedef int(* IO_SEND;
 
 ```
 
-####IO_DOWORK
+#### IO_DOWORK
 
 ```C
-typedef void(* IO_DOWORK()
+typedef void(* IO_DOWORK;
 
 ```
 
-####IO_SETOPTION
+#### IO_SETOPTION
 
 ```C
-typedef int(* IO_SETOPTION()
+typedef int(* IO_SETOPTION;
 
 ```
 

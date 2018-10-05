@@ -7,6 +7,7 @@
 ```C
 int STRING_concat_with_STRING(
   STRING_HANDLE  s1,
-  STRING_HANDLE  s2);
+  STRING_HANDLE  s2
+);
 ```
 

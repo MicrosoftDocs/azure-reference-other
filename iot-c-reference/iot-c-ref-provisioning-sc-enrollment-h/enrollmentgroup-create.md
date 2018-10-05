@@ -7,7 +7,8 @@
 ```C
 ENROLLMENT_GROUP_HANDLE enrollmentGroup_create(
   const char *                  group_id,
-  ATTESTATION_MECHANISM_HANDLE  att_mech);
+  ATTESTATION_MECHANISM_HANDLE  att_mech
+);
 ```
 
 Creates an Enrollment Group handle with an X509 Attestation for use in consequent APIs.

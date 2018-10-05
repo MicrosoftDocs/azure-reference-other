@@ -6,6 +6,7 @@
 
 ```C
 const char* x509Certificate_getSha256Thumbprint(
-  X509_CERTIFICATE_HANDLE  x509_cert);
+  X509_CERTIFICATE_HANDLE  x509_cert
+);
 ```
 

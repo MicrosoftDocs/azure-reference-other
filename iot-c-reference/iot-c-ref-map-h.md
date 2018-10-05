@@ -38,17 +38,17 @@ MAP_RESULT_VALUES            |
 
 ## Typedefs
 
-####MAP_HANDLE
+#### MAP_HANDLE
 
 ```C
-typedef struct MAP_HANDLE_DATA_TAG * MAP_HANDLE()
+typedef struct MAP_HANDLE_DATA_TAG * MAP_HANDLE;
 
 ```
 
-####MAP_FILTER_CALLBACK
+#### MAP_FILTER_CALLBACK
 
 ```C
-typedef int(* MAP_FILTER_CALLBACK()
+typedef int(* MAP_FILTER_CALLBACK;
 
 ```
 

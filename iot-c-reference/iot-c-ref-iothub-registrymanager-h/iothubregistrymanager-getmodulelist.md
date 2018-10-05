@@ -9,7 +9,8 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetModuleList(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const char *                   deviceId,
   SINGLYLINKEDLIST_HANDLE        moduleList,
-  int                            module_version);
+  int                            module_version
+);
 ```
 
 Gets a list of modules registered on the specified device.

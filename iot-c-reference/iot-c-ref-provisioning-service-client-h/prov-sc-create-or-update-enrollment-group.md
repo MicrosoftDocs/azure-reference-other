@@ -7,7 +7,8 @@
 ```C
 int prov_sc_create_or_update_enrollment_group(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  ENROLLMENT_GROUP_HANDLE             enrollment_ptr);
+  ENROLLMENT_GROUP_HANDLE             enrollment_ptr
+);
 ```
 
 Creates or updates a device enrollment group record on the Provisioning Service.

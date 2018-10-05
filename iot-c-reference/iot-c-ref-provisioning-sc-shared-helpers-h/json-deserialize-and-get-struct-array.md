@@ -10,6 +10,7 @@ int json_deserialize_and_get_struct_array(
   size_t *            dest_len,
   JSON_Object *       root_object,
   const char *        json_key,
-  FROM_JSON_FUNCTION  element_fromJson);
+  FROM_JSON_FUNCTION  element_fromJson
+);
 ```
 

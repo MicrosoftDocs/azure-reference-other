@@ -7,7 +7,8 @@
 ```C
 void prov_sc_set_trace(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  TRACING_STATUS                      status);
+  TRACING_STATUS                      status
+);
 ```
 
 Sets tracing/logging of http communications on or off.

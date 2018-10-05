@@ -6,7 +6,8 @@
 
 ```C
 LOCK_RESULT Lock(
-  LOCK_HANDLE  handle);
+  LOCK_HANDLE  handle
+);
 ```
 
 Acquires a lock on the given lock handle. Uses platform specific mutex primitives in its implementation.

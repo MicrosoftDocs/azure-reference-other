@@ -8,7 +8,8 @@
 IOTHUB_DEVICE_CLIENT_LL_HANDLE IoTHubDeviceClient_LL_CreateFromDeviceAuth(
   const char *                      iothub_uri,
   const char *                      device_id,
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol);
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol
+);
 ```
 
 Creates a IoT Hub client for communication with an existing IoT Hub using the device auth module.

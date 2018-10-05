@@ -9,7 +9,8 @@ int prov_sc_query_enrollment_group(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
   PROVISIONING_QUERY_SPECIFICATION    query_spec,
   char **                             cont_token_ptr,
-  PROVISIONING_QUERY_RESPONSE         query_resp_ptr);
+  PROVISIONING_QUERY_RESPONSE         query_resp_ptr
+);
 ```
 
 Queries enrollment group records from the Provisioning Service.

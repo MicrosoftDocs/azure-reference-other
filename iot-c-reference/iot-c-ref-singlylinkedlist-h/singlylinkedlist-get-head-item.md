@@ -6,6 +6,7 @@
 
 ```C
 LIST_ITEM_HANDLE singlylinkedlist_get_head_item(
-  SINGLYLINKEDLIST_HANDLE  list);
+  SINGLYLINKEDLIST_HANDLE  list
+);
 ```
 

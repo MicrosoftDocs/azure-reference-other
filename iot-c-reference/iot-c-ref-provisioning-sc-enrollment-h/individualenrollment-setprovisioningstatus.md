@@ -7,6 +7,7 @@
 ```C
 int individualEnrollment_setProvisioningStatus(
   INDIVIDUAL_ENROLLMENT_HANDLE  enrollment,
-  PROVISIONING_STATUS           prov_status);
+  PROVISIONING_STATUS           prov_status
+);
 ```
 

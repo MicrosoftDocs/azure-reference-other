@@ -6,6 +6,7 @@
 
 ```C
 const char* X509_CERTIFICATE_TYPEStrings(
-  X509_CERTIFICATE_TYPE  value);
+  X509_CERTIFICATE_TYPE  value
+);
 ```
 

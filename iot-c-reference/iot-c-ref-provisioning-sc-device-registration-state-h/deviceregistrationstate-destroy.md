@@ -6,6 +6,7 @@
 
 ```C
 void deviceRegistrationState_destroy(
-  DEVICE_REGISTRATION_STATE_HANDLE  device_reg_state);
+  DEVICE_REGISTRATION_STATE_HANDLE  device_reg_state
+);
 ```
 

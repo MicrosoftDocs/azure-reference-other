@@ -7,7 +7,8 @@
 ```C
 INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_create(
   const char *                  reg_id,
-  ATTESTATION_MECHANISM_HANDLE  att_mech);
+  ATTESTATION_MECHANISM_HANDLE  att_mech
+);
 ```
 
 Creates an Individual Enrollment handle with a TPM Attestation for use in consequent APIs.

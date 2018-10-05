@@ -8,7 +8,8 @@
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateModule(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const                          moduleCreate,
-  IOTHUB_MODULE                  module);
+  IOTHUB_MODULE                  module
+);
 ```
 
 Creates a module on IoT Hub.

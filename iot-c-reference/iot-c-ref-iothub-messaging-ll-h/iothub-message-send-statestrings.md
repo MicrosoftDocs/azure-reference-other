@@ -6,6 +6,7 @@
 
 ```C
 const char* IOTHUB_MESSAGE_SEND_STATEStrings(
-  IOTHUB_MESSAGE_SEND_STATE  value);
+  IOTHUB_MESSAGE_SEND_STATE  value
+);
 ```
 

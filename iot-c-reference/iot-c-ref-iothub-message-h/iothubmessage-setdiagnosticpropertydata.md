@@ -7,7 +7,8 @@
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetDiagnosticPropertyData(
   IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const                  diagnosticData);
+  const                  diagnosticData
+);
 ```
 
 Sets the DiagnosticData for the IOTHUB_MESSAGE_HANDLE. CAUTION: SDK user should not call it directly, it is for internal use only.

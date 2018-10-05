@@ -6,6 +6,7 @@
 
 ```C
 CONCRETE_IO_HANDLE socketio_create(
-  void *  io_create_parameters);
+  void *  io_create_parameters
+);
 ```
 

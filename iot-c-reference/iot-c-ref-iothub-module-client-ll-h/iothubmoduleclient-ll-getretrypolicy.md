@@ -8,7 +8,8 @@
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_GetRetryPolicy(
   IOTHUB_MODULE_CLIENT_LL_HANDLE  iotHubModuleClientHandle,
   IOTHUB_CLIENT_RETRY_POLICY      retryPolicy,
-  size_t *                        retryTimeoutLimitInSeconds);
+  size_t *                        retryTimeoutLimitInSeconds
+);
 ```
 
 Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.

@@ -7,6 +7,7 @@
 ```C
 int X509_CERTIFICATE_TYPE_FromString(
   const char *           enumAsString,
-  X509_CERTIFICATE_TYPE  destination);
+  X509_CERTIFICATE_TYPE  destination
+);
 ```
 

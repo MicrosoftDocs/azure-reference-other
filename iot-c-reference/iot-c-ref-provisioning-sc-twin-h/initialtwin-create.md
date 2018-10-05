@@ -7,7 +7,8 @@
 ```C
 INITIAL_TWIN_HANDLE initialTwin_create(
   const char *  tags,
-  const char *  desired_properties);
+  const char *  desired_properties
+);
 ```
 
 Creates an Initial Twin handle for use in consequent APIs.

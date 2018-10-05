@@ -6,6 +6,7 @@
 
 ```C
 X509_CERTIFICATE_TYPE x509Attestation_getCertificateType(
-  X509_ATTESTATION_HANDLE  x509_att);
+  X509_ATTESTATION_HANDLE  x509_att
+);
 ```
 

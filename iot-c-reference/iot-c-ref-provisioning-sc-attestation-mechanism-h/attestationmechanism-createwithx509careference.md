@@ -7,7 +7,8 @@
 ```C
 ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509CAReference(
   const char *  primary_ref,
-  const char *  secondary_ref);
+  const char *  secondary_ref
+);
 ```
 
 Creates an Attestation Mechanism handle that uses an x509 Attestation with CA Certificate Reference(s) for use in consequent APIs. Please note that an x509 Attestation with a CA Certificate Reference is NOT VALID when attached to an Individual Enrollment.

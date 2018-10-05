@@ -6,7 +6,8 @@
 
 ```C
 INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_deserializeFromJson(
-  const char *  json_string);
+  const char *  json_string
+);
 ```
 
 Deserializes a JSON String representation of an Individual Enrollment.

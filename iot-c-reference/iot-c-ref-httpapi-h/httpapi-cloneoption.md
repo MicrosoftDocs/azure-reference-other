@@ -8,7 +8,8 @@
 HTTPAPI_RESULT HTTPAPI_CloneOption(
   const char *   optionName,
   const void *   value,
-  const void **  savedValue);
+  const void **  savedValue
+);
 ```
 
 Clones the option named `optionName` bearing the value `value` into the pointer `savedValue`.

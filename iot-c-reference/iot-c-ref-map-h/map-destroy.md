@@ -6,7 +6,8 @@
 
 ```C
 void Map_Destroy(
-  MAP_HANDLE  handle);
+  MAP_HANDLE  handle
+);
 ```
 
 Release all resources associated with the map.

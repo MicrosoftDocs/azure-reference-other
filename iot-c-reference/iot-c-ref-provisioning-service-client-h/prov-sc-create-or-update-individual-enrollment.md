@@ -7,7 +7,8 @@
 ```C
 int prov_sc_create_or_update_individual_enrollment(
   PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  INDIVIDUAL_ENROLLMENT_HANDLE        enrollment_ptr);
+  INDIVIDUAL_ENROLLMENT_HANDLE        enrollment_ptr
+);
 ```
 
 Creates or updates an individual device enrollment record on the Provisioning Service, reflecting the changes in the given struct.

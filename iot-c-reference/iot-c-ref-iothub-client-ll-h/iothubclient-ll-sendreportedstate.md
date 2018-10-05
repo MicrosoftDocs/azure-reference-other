@@ -10,7 +10,8 @@ IOTHUB_CLIENT_RESULT IoTHubClient_LL_SendReportedState(
   const unsigned char *                  reportedState,
   size_t                                 size,
   IOTHUB_CLIENT_REPORTED_STATE_CALLBACK  reportedStateCallback,
-  void *                                 userContextCallback);
+  void *                                 userContextCallback
+);
 ```
 
 This API sneds a report of the device's properties and their current values.

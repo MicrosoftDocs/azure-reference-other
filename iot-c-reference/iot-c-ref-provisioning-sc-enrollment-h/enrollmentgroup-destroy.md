@@ -6,7 +6,8 @@
 
 ```C
 void enrollmentGroup_destroy(
-  ENROLLMENT_GROUP_HANDLE  enrollment);
+  ENROLLMENT_GROUP_HANDLE  enrollment
+);
 ```
 
 Destorys an Enrollment Group handle, freeing all associated memory. Please note that this also includes the attestation mechanism that was given in the constructor.

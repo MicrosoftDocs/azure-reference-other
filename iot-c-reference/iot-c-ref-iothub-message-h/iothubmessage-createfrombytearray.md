@@ -7,7 +7,8 @@
 ```C
 IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromByteArray(
   const unsigned char *  byteArray,
-  size_t                 size);
+  size_t                 size
+);
 ```
 
 Creates a new IoT hub message from a byte array. The type of the message will be set to `IOTHUBMESSAGE_BYTEARRAY`.

@@ -6,7 +6,8 @@
 
 ```C
 IOTHUB_DEVICE_CLIENT_HANDLE IoTHubDeviceClient_Create(
-  const   config);
+  const   config
+);
 ```
 
 Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.

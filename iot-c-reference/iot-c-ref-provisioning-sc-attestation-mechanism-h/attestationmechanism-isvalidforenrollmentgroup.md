@@ -6,7 +6,8 @@
 
 ```C
 bool attestationMechanism_isValidForEnrollmentGroup(
-  ATTESTATION_MECHANISM_HANDLE  att_mech);
+  ATTESTATION_MECHANISM_HANDLE  att_mech
+);
 ```
 
 Returns result indicating if an attestation mechanism is valid to be attached to an Enrollment Group.

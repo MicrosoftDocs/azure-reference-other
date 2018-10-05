@@ -7,6 +7,7 @@
 ```C
 int MAP_RESULT_FromString(
   const char *  enumAsString,
-  MAP_RESULT    destination);
+  MAP_RESULT    destination
+);
 ```
 

@@ -6,7 +6,8 @@
 
 ```C
 const char* IoTHubMessage_GetOutputName(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+);
 ```
 
 Gets the output name from the IOTHUB_MESSAGE_HANDLE.

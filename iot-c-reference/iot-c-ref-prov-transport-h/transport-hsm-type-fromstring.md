@@ -7,6 +7,7 @@
 ```C
 int TRANSPORT_HSM_TYPE_FromString(
   const char *        enumAsString,
-  TRANSPORT_HSM_TYPE  destination);
+  TRANSPORT_HSM_TYPE  destination
+);
 ```
 

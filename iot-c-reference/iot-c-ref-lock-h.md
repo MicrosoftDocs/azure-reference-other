@@ -30,10 +30,10 @@ LOCK_RESULT_VALUES            |
 
 ## Typedefs
 
-####LOCK_HANDLE
+#### LOCK_HANDLE
 
 ```C
-typedef void * LOCK_HANDLE()
+typedef void * LOCK_HANDLE;
 
 ```
 

@@ -8,6 +8,7 @@
 IOTHUB_CLIENT_RESULT IoTHubClientCore_LL_SetDeviceMethodCallback(
   IOTHUB_CLIENT_CORE_LL_HANDLE                iotHubClientHandle,
   IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC  deviceMethodCallback,
-  void *                                      userContextCallback);
+  void *                                      userContextCallback
+);
 ```
 

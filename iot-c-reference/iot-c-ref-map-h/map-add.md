@@ -8,7 +8,8 @@
 MAP_RESULT Map_Add(
   MAP_HANDLE    handle,
   const char *  key,
-  const char *  value);
+  const char *  value
+);
 ```
 
 Adds a key/value pair to the map.
