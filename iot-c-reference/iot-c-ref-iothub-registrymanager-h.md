@@ -44,19 +44,152 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[IOTHUB_DEVICE_EX](./iot-c-ref-iothub-registrymanager-h/iothub-device-ex.md)            | 
-[IOTHUB_REGISTRY_DEVICE_CREATE_EX](./iot-c-ref-iothub-registrymanager-h/iothub-registry-device-create-ex.md)            | 
-[IOTHUB_REGISTRY_DEVICE_UPDATE_EX](./iot-c-ref-iothub-registrymanager-h/iothub-registry-device-update-ex.md)            | 
-[IOTHUB_REGISTRY_STATISTICS](./iot-c-ref-iothub-registrymanager-h/iothub-registry-statistics.md)            | 
-[IOTHUB_MODULE](./iot-c-ref-iothub-registrymanager-h/iothub-module.md)            | 
-[IOTHUB_REGISTRY_MODULE_CREATE](./iot-c-ref-iothub-registrymanager-h/iothub-registry-module-create.md)            | 
-[IOTHUB_REGISTRY_MODULE_UPDATE](./iot-c-ref-iothub-registrymanager-h/iothub-registry-module-update.md)            | 
-[IOTHUB_REGISTRYMANAGER](./iot-c-ref-iothub-registrymanager-h/iothub-registrymanager.md)            | Structure to store IoTHub authentication information.
-[IOTHUB_DEVICE](./iot-c-ref-iothub-registrymanager-h/iothub-device.md)            | 
-[IOTHUB_REGISTRY_DEVICE_CREATE](./iot-c-ref-iothub-registrymanager-h/iothub-registry-device-create.md)            | 
-[IOTHUB_REGISTRY_DEVICE_UPDATE](./iot-c-ref-iothub-registrymanager-h/iothub-registry-device-update.md)            | 
+#### IOTHUB_DEVICE_EX
+
+struct IOTHUB_DEVICE_EX{
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  const char *                        generationId,
+  const char *                        eTag,
+  IOTHUB_DEVICE_CONNECTION_STATE      connectionState,
+  const char *                        connectionStateUpdatedTime,
+  IOTHUB_DEVICE_STATUS                status,
+  const char *                        statusReason,
+  const char *                        statusUpdatedTime,
+  const char *                        lastActivityTime,
+  size_t                              cloudToDeviceMessageCount,
+  bool                                isManaged,
+  const char *                        configuration,
+  const char *                        deviceProperties,
+  const char *                        serviceProperties,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  bool                                iotEdge_capable
+};
+#### IOTHUB_REGISTRY_DEVICE_CREATE_EX
+
+struct IOTHUB_REGISTRY_DEVICE_CREATE_EX{
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  bool                                iotEdge_capable
+};
+#### IOTHUB_REGISTRY_DEVICE_UPDATE_EX
+
+struct IOTHUB_REGISTRY_DEVICE_UPDATE_EX{
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_DEVICE_STATUS                status,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  bool                                iotEdge_capable
+};
+#### IOTHUB_REGISTRY_STATISTICS
+
+struct IOTHUB_REGISTRY_STATISTICS{
+  size_t  totalDeviceCount,
+  size_t  enabledDeviceCount,
+  size_t  disabledDeviceCount
+};
+#### IOTHUB_MODULE
+
+struct IOTHUB_MODULE{
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  const char *                        generationId,
+  const char *                        eTag,
+  IOTHUB_DEVICE_CONNECTION_STATE      connectionState,
+  const char *                        connectionStateUpdatedTime,
+  IOTHUB_DEVICE_STATUS                status,
+  const char *                        statusReason,
+  const char *                        statusUpdatedTime,
+  const char *                        lastActivityTime,
+  size_t                              cloudToDeviceMessageCount,
+  bool                                isManaged,
+  const char *                        configuration,
+  const char *                        deviceProperties,
+  const char *                        serviceProperties,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  const char *                        moduleId,
+  const char *                        managedBy
+};
+#### IOTHUB_REGISTRY_MODULE_CREATE
+
+struct IOTHUB_REGISTRY_MODULE_CREATE{
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  const char *                        moduleId,
+  const char *                        managedBy
+};
+#### IOTHUB_REGISTRY_MODULE_UPDATE
+
+struct IOTHUB_REGISTRY_MODULE_UPDATE{
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_DEVICE_STATUS                status,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  const char *                        moduleId,
+  const char *                        managedBy
+};
+#### IOTHUB_REGISTRYMANAGER
+
+struct IOTHUB_REGISTRYMANAGER{
+  char *  hostname,
+  char *  iothubName,
+  char *  iothubSuffix,
+  char *  sharedAccessKey,
+  char *  keyName,
+  char *  deviceId
+};
+#### IOTHUB_DEVICE
+
+struct IOTHUB_DEVICE{
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  const char *                        generationId,
+  const char *                        eTag,
+  IOTHUB_DEVICE_CONNECTION_STATE      connectionState,
+  const char *                        connectionStateUpdatedTime,
+  IOTHUB_DEVICE_STATUS                status,
+  const char *                        statusReason,
+  const char *                        statusUpdatedTime,
+  const char *                        lastActivityTime,
+  size_t                              cloudToDeviceMessageCount,
+  bool                                isManaged,
+  const char *                        configuration,
+  const char *                        deviceProperties,
+  const char *                        serviceProperties,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
+};
+#### IOTHUB_REGISTRY_DEVICE_CREATE
+
+struct IOTHUB_REGISTRY_DEVICE_CREATE{
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
+};
+#### IOTHUB_REGISTRY_DEVICE_UPDATE
+
+struct IOTHUB_REGISTRY_DEVICE_UPDATE{
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_DEVICE_STATUS                status,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
+};
 
 ## Defines
 

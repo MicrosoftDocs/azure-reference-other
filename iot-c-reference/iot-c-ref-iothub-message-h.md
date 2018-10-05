@@ -50,9 +50,12 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA](./iot-c-ref-iothub-message-h/iothub-message-diagnostic-property-data.md)            | diagnostic related data
+#### IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA
+
+struct IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA{
+  char *  diagnosticId,
+  char *  diagnosticCreationTimeUtc
+};
 
 ## Defines
 

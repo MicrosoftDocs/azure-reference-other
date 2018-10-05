@@ -28,12 +28,34 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[PROVISIONING_BULK_OPERATION_ERROR](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation-error.md)            | 
-[PROVISIONING_BULK_OPERATION_RESULT](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation-result.md)            | 
-[PROVISIONING_BULK_OPERATION](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation.md)            | 
-[PROVISIONING_BULK_OPERATION.enrollments](./iot-c-ref-provisioning-sc-bulk-operation-h/provisioning-bulk-operation.enrollments.md)            | 
+#### PROVISIONING_BULK_OPERATION_ERROR
+
+struct PROVISIONING_BULK_OPERATION_ERROR{
+  char *   registration_id,
+  int32_t  error_code,
+  char *   error_status
+};
+#### PROVISIONING_BULK_OPERATION_RESULT
+
+struct PROVISIONING_BULK_OPERATION_RESULT{
+  bool                               is_successful,
+  PROVISIONING_BULK_OPERATION_ERROR  errors,
+  size_t                             num_errors
+};
+#### PROVISIONING_BULK_OPERATION
+
+struct PROVISIONING_BULK_OPERATION{
+  int                                    version,
+  PROVISIONING_BULK_OPERATION_MODE       mode,
+  union PROVISIONING_BULK_OPERATION::@0  enrollments,
+  size_t                                 num_enrollments,
+  PROVISIONING_BULK_OPERATION_TYPE       type
+};
+#### PROVISIONING_BULK_OPERATION.enrollments
+
+struct PROVISIONING_BULK_OPERATION.enrollments{
+  INDIVIDUAL_ENROLLMENT_HANDLE  ie
+};
 
 ## Defines
 

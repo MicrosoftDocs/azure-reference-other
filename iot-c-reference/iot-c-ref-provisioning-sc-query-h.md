@@ -24,11 +24,28 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[PROVISIONING_QUERY_SPECIFICATION](./iot-c-ref-provisioning-sc-query-h/provisioning-query-specification.md)            | 
-[PROVISIONING_QUERY_RESPONSE](./iot-c-ref-provisioning-sc-query-h/provisioning-query-response.md)            | 
-[PROVISIONING_QUERY_RESPONSE.response_arr](./iot-c-ref-provisioning-sc-query-h/provisioning-query-response.response-arr.md)            | 
+#### PROVISIONING_QUERY_SPECIFICATION
+
+struct PROVISIONING_QUERY_SPECIFICATION{
+  int           version,
+  const char *  query_string,
+  const char *  registration_id,
+  size_t        page_size
+};
+#### PROVISIONING_QUERY_RESPONSE
+
+struct PROVISIONING_QUERY_RESPONSE{
+  union PROVISIONING_QUERY_RESPONSE::@1  response_arr,
+  size_t                                 response_arr_size,
+  PROVISIONING_QUERY_TYPE                response_arr_type
+};
+#### PROVISIONING_QUERY_RESPONSE.response_arr
+
+struct PROVISIONING_QUERY_RESPONSE.response_arr{
+  INDIVIDUAL_ENROLLMENT_HANDLE      ie,
+  ENROLLMENT_GROUP_HANDLE           eg,
+  DEVICE_REGISTRATION_STATE_HANDLE  drs
+};
 
 ## Defines
 

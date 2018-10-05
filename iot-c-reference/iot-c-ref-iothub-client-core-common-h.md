@@ -48,10 +48,26 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[IOTHUB_CLIENT_CONFIG](./iot-c-ref-iothub-client-core-common-h/iothub-client-config.md)            | This struct captures IoTHub client configuration.
-[IOTHUB_CLIENT_DEVICE_CONFIG](./iot-c-ref-iothub-client-core-common-h/iothub-client-device-config.md)            | This struct captures IoTHub client device configuration.
+#### IOTHUB_CLIENT_CONFIG
+
+struct IOTHUB_CLIENT_CONFIG{
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
+  const char *                      deviceId,
+  const char *                      deviceKey,
+  const char *                      deviceSasToken,
+  const char *                      iotHubName,
+  const char *                      iotHubSuffix,
+  const char *                      protocolGatewayHostName
+};
+#### IOTHUB_CLIENT_DEVICE_CONFIG
+
+struct IOTHUB_CLIENT_DEVICE_CONFIG{
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
+  void *                            transportHandle,
+  const char *                      deviceId,
+  const char *                      deviceKey,
+  const char *                      deviceSasToken
+};
 
 ## Defines
 

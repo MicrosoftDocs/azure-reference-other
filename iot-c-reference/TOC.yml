@@ -24,6 +24,27 @@
               href: iot-c-ref-condition-h/condition-deinit.md
           - name: gballoc.h
             href: iot-c-ref-gballoc-h.md
+            items:
+            - name: gballoc_init
+              href: iot-c-ref-gballoc-h/gballoc-init.md
+            - name: gballoc_deinit
+              href: iot-c-ref-gballoc-h/gballoc-deinit.md
+            - name: gballoc_malloc
+              href: iot-c-ref-gballoc-h/gballoc-malloc.md
+            - name: gballoc_calloc
+              href: iot-c-ref-gballoc-h/gballoc-calloc.md
+            - name: gballoc_realloc
+              href: iot-c-ref-gballoc-h/gballoc-realloc.md
+            - name: gballoc_free
+              href: iot-c-ref-gballoc-h/gballoc-free.md
+            - name: gballoc_getMaximumMemoryUsed
+              href: iot-c-ref-gballoc-h/gballoc-getmaximummemoryused.md
+            - name: gballoc_getCurrentMemoryUsed
+              href: iot-c-ref-gballoc-h/gballoc-getcurrentmemoryused.md
+            - name: gballoc_getAllocationCount
+              href: iot-c-ref-gballoc-h/gballoc-getallocationcount.md
+            - name: gballoc_resetMetrics
+              href: iot-c-ref-gballoc-h/gballoc-resetmetrics.md
           - name: http_proxy_io.h
             href: iot-c-ref-http-proxy-io-h.md
             items:

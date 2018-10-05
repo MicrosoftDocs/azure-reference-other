@@ -12,7 +12,12 @@ Stub comment for details. Please update this comment.
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[HTTP_PROXY_OPTIONS](./iot-c-ref-shared-util-options-h/http-proxy-options.md)            | 
+#### HTTP_PROXY_OPTIONS
+
+struct HTTP_PROXY_OPTIONS{
+  const char *  host_address,
+  int           port,
+  const char *  username,
+  const char *  password
+};
 

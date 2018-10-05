@@ -19,7 +19,14 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[HTTP_PROXY_IO_CONFIG](./iot-c-ref-http-proxy-io-h/http-proxy-io-config.md)            | 
+#### HTTP_PROXY_IO_CONFIG
+
+struct HTTP_PROXY_IO_CONFIG{
+  const char *  hostname,
+  int           port,
+  const char *  proxy_hostname,
+  int           proxy_port,
+  const char *  username,
+  const char *  password
+};
 

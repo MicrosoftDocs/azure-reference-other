@@ -28,9 +28,13 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[SOCKETIO_CONFIG](./iot-c-ref-socketio-h/socketio-config.md)            | 
+#### SOCKETIO_CONFIG
+
+struct SOCKETIO_CONFIG{
+  const char *  hostname,
+  int           port,
+  void *        accepted_socket
+};
 
 ## Defines
 

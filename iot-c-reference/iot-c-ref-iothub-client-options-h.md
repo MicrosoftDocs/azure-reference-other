@@ -12,7 +12,11 @@ Stub comment for details. Please update this comment.
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[IOTHUB_PROXY_OPTIONS](./iot-c-ref-iothub-client-options-h/iothub-proxy-options.md)            | 
+#### IOTHUB_PROXY_OPTIONS
+
+struct IOTHUB_PROXY_OPTIONS{
+  const char *  host_address,
+  const char *  username,
+  const char *  password
+};
 

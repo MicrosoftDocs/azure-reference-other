@@ -32,9 +32,18 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[IO_INTERFACE_DESCRIPTION](./iot-c-ref-xio-h/io-interface-description.md)            | 
+#### IO_INTERFACE_DESCRIPTION
+
+struct IO_INTERFACE_DESCRIPTION{
+  IO_RETRIEVEOPTIONS  concrete_io_retrieveoptions,
+  IO_CREATE           concrete_io_create,
+  IO_DESTROY          concrete_io_destroy,
+  IO_OPEN             concrete_io_open,
+  IO_CLOSE            concrete_io_close,
+  IO_SEND             concrete_io_send,
+  IO_DOWORK           concrete_io_dowork,
+  IO_SETOPTION        concrete_io_setoption
+};
 
 ## Defines
 

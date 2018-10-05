@@ -12,7 +12,12 @@ Stub comment for details. Please update this comment.
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[TLSIO_CONFIG](./iot-c-ref-tlsio-h/tlsio-config.md)            | 
+#### TLSIO_CONFIG
+
+struct TLSIO_CONFIG{
+  const char *  hostname,
+  int           port,
+  const         underlying_io_interface,
+  void *        underlying_io_parameters
+};
 

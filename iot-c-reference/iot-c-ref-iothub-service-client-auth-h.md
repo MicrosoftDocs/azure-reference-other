@@ -26,9 +26,16 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[IOTHUB_SERVICE_CLIENT_AUTH](./iot-c-ref-iothub-service-client-auth-h/iothub-service-client-auth.md)            | Structure to store IoTHub authentication information.
+#### IOTHUB_SERVICE_CLIENT_AUTH
+
+struct IOTHUB_SERVICE_CLIENT_AUTH{
+  char *  hostname,
+  char *  iothubName,
+  char *  iothubSuffix,
+  char *  sharedAccessKey,
+  char *  keyName,
+  char *  deviceId
+};
 
 ## Defines
 

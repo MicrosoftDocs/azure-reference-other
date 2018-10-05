@@ -36,10 +36,24 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[IOTHUB_SERVICE_FEEDBACK_RECORD](./iot-c-ref-iothub-messaging-ll-h/iothub-service-feedback-record.md)            | 
-[IOTHUB_SERVICE_FEEDBACK_BATCH](./iot-c-ref-iothub-messaging-ll-h/iothub-service-feedback-batch.md)            | 
+#### IOTHUB_SERVICE_FEEDBACK_RECORD
+
+struct IOTHUB_SERVICE_FEEDBACK_RECORD{
+  char *                       description,
+  const char *                 deviceId,
+  const char *                 correlationId,
+  const char *                 generationId,
+  const char *                 enqueuedTimeUtc,
+  IOTHUB_FEEDBACK_STATUS_CODE  statusCode,
+  const char *                 originalMessageId
+};
+#### IOTHUB_SERVICE_FEEDBACK_BATCH
+
+struct IOTHUB_SERVICE_FEEDBACK_BATCH{
+  const char *             userId,
+  const char *             lockToken,
+  SINGLYLINKEDLIST_HANDLE  feedbackRecordList
+};
 
 ## Defines
 

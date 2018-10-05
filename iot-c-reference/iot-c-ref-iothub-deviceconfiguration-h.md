@@ -34,14 +34,62 @@ Function Name                  | Description
 
 ## Structures
 
-Function Name                  | Description                                
---------------------------------|---------------------------------------------
-[IOTHUB_DEVICE_CONFIGURATION_CONTENT](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-content.md)            | 
-[IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-metrics-result.md)            | 
-[IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-metrics-definition.md)            | 
-[IOTHUB_DEVICE_CONFIGURATION_LABELS](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-labels.md)            | 
-[IOTHUB_DEVICE_CONFIGURATION](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration.md)            | 
-[IOTHUB_DEVICE_CONFIGURATION_ADD](./iot-c-ref-iothub-deviceconfiguration-h/iothub-device-configuration-add.md)            | 
+#### IOTHUB_DEVICE_CONFIGURATION_CONTENT
+
+struct IOTHUB_DEVICE_CONFIGURATION_CONTENT{
+  const char *  deviceContent,
+  const char *  modulesContent
+};
+#### IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT
+
+struct IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT{
+  size_t         numQueries,
+  const char **  queryNames,
+  double *       results
+};
+#### IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION
+
+struct IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION{
+  size_t         numQueries,
+  const char **  queryNames,
+  const char **  queryStrings
+};
+#### IOTHUB_DEVICE_CONFIGURATION_LABELS
+
+struct IOTHUB_DEVICE_CONFIGURATION_LABELS{
+  size_t         numLabels,
+  const char **  labelNames,
+  const char **  labelValues
+};
+#### IOTHUB_DEVICE_CONFIGURATION
+
+struct IOTHUB_DEVICE_CONFIGURATION{
+  int                                             version,
+  const char *                                    schemaVersion,
+  const char *                                    configurationId,
+  const char *                                    targetCondition,
+  const char *                                    eTag,
+  const char *                                    createdTimeUtc,
+  const char *                                    lastUpdatedTimeUtc,
+  int                                             priority,
+  IOTHUB_DEVICE_CONFIGURATION_CONTENT             content,
+  IOTHUB_DEVICE_CONFIGURATION_LABELS              labels,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT      systemMetricsResult,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  systemMetricsDefinition,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT      metricResult,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  metricsDefinition
+};
+#### IOTHUB_DEVICE_CONFIGURATION_ADD
+
+struct IOTHUB_DEVICE_CONFIGURATION_ADD{
+  int                                             version,
+  const char *                                    configurationId,
+  const char *                                    targetCondition,
+  int                                             priority,
+  IOTHUB_DEVICE_CONFIGURATION_CONTENT             content,
+  IOTHUB_DEVICE_CONFIGURATION_LABELS              labels,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  metrics
+};
 
 ## Defines
 
