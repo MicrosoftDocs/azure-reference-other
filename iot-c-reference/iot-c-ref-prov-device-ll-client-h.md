@@ -121,7 +121,7 @@ Constant                    | Description
  PROV_DEVICE_REG_STATUS_ERROR            | 
  PROV_DEVICE_REG_HUB_NOT_SPECIFIED            | 
 
-## Typedef documentation
+## Type definitions
 
 #### PROV_DEVICE_LL_HANDLE
 

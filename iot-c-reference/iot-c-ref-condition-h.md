@@ -56,7 +56,7 @@ Constant                    | Description
  COND_ERROR            | 
  COND_TIMEOUT            | 
 
-## Typedef documentation
+## Type definitions
 
 #### COND_HANDLE
 

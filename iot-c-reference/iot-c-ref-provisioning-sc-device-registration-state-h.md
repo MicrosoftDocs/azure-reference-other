@@ -65,7 +65,7 @@ Constant                    | Description
  REGISTRATION_STATUS_FAILED            | 
  REGISTRATION_STATUS_DISABLED            | 
 
-## Typedef documentation
+## Type definitions
 
 #### DEVICE_REGISTRATION_STATE_HANDLE
 

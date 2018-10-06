@@ -19,7 +19,7 @@ Function Name                  | Description
 [tickcounter_destroy](./iot-c-ref-tickcounter-h/tickcounter-destroy.md)            | 
 [tickcounter_get_current_ms](./iot-c-ref-tickcounter-h/tickcounter-get-current-ms.md)            | 
 
-## Typedef documentation
+## Type definitions
 
 #### tickcounter_ms_t
 

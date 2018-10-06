@@ -75,7 +75,7 @@ Constant                    | Description
  PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED            | 
  PROV_DEVICE_TRANSPORT_RESULT_ERROR            | 
 
-## Typedef documentation
+## Type definitions
 
 #### PROV_DEVICE_TRANSPORT_PROVIDER
 

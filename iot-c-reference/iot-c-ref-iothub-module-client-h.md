@@ -48,7 +48,7 @@ Function Name                  | Description
 #define IOTHUB_MODULE_CLIENT_INSTANCE_TYPE
 ```
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_MODULE_CLIENT_HANDLE
 

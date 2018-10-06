@@ -8,7 +8,7 @@ Stub comment for brief. Please update this comment.
 
 Stub comment for details. Please update this comment.
 
-## Typedef documentation
+## Type definitions
 
 #### STRING_HANDLE
 

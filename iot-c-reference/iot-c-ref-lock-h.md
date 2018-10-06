@@ -49,7 +49,7 @@ Constant                    | Description
  LOCK_OK            | 
  LOCK_ERROR            | 
 
-## Typedef documentation
+## Type definitions
 
 #### LOCK_HANDLE
 

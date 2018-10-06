@@ -18,7 +18,7 @@ Function Name                  | Description
 --------------------------------|---------------------------------------------
 [tpmAttestation_getEndorsementKey](./iot-c-ref-provisioning-sc-tpm-attestation-h/tpmattestation-getendorsementkey.md)            | 
 
-## Typedef documentation
+## Type definitions
 
 #### TPM_ATTESTATION_HANDLE
 

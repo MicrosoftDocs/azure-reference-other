@@ -23,7 +23,7 @@ Function Name                  | Description
 [initialTwin_getDesiredProperties](./iot-c-ref-provisioning-sc-twin-h/initialtwin-getdesiredproperties.md)            | 
 [initialTwin_setDesiredProperties](./iot-c-ref-provisioning-sc-twin-h/initialtwin-setdesiredproperties.md)            | 
 
-## Typedef documentation
+## Type definitions
 
 #### INITIAL_TWIN_HANDLE
 

@@ -61,7 +61,7 @@ Constant                    | Description
  X509_CERTIFICATE_TYPE_SIGNING            | 
  X509_CERTIFICATE_TYPE_CA_REFERENCES            | 
 
-## Typedef documentation
+## Type definitions
 
 #### X509_ATTESTATION_HANDLE
 

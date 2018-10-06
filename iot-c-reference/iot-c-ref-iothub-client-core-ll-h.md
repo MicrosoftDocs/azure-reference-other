@@ -44,7 +44,7 @@ Function Name                  | Description
 [IoTHubClientCore_LL_UploadMultipleBlocksToBlob](./iot-c-ref-iothub-client-core-ll-h/iothubclientcore-ll-uploadmultipleblockstoblob.md)            | 
 [IoTHubClientCore_LL_UploadMultipleBlocksToBlobEx](./iot-c-ref-iothub-client-core-ll-h/iothubclientcore-ll-uploadmultipleblockstoblobex.md)            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_CLIENT_CORE_LL_HANDLE
 

@@ -167,7 +167,7 @@ Constant                    | Description
  HTTPAPI_REQUEST_PATCH            | 
  HTTPAPI_REQUEST_HEAD            | 
 
-## Typedef documentation
+## Type definitions
 
 #### HTTP_HANDLE
 

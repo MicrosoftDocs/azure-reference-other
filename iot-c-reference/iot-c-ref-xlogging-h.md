@@ -96,7 +96,7 @@ Constant                    | Description
  AZ_LOG_INFO            | 
  AZ_LOG_TRACE            | 
 
-## Typedef documentation
+## Type definitions
 
 #### LOGGER_LOG
 

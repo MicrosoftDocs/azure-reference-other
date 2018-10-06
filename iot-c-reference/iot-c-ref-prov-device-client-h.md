@@ -37,7 +37,7 @@ Function Name                  | Description
 #define PROV_DEVICE_CLIENT_INSTANCE_TYPE
 ```
 
-## Typedef documentation
+## Type definitions
 
 #### PROV_DEVICE_HANDLE
 

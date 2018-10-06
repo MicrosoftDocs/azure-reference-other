@@ -60,7 +60,7 @@ Constant                    | Description
  ATTESTATION_TYPE_TPM            | 
  ATTESTATION_TYPE_X509            | 
 
-## Typedef documentation
+## Type definitions
 
 #### ATTESTATION_MECHANISM_HANDLE
 

@@ -52,7 +52,7 @@ Constant                    | Description
  REQUIRED            | 
  OPTIONAL            | 
 
-## Typedef documentation
+## Type definitions
 
 #### TO_JSON_FUNCTION
 

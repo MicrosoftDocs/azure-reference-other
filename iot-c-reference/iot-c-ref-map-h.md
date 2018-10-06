@@ -69,7 +69,7 @@ Constant                    | Description
  MAP_KEYNOTFOUND            | 
  MAP_FILTER_REJECT            | 
 
-## Typedef documentation
+## Type definitions
 
 #### MAP_HANDLE
 

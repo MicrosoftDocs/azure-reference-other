@@ -452,7 +452,7 @@ Constant                    | Description
  IOTHUB_REGISTRYMANAGER_AUTH_NONE            | 
  IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_REGISTRYMANAGER_HANDLE
 

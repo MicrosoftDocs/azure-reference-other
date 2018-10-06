@@ -26,7 +26,7 @@ Function Name                  | Description
 [singlylinkedlist_remove_if](./iot-c-ref-singlylinkedlist-h/singlylinkedlist-remove-if.md)            | 
 [singlylinkedlist_foreach](./iot-c-ref-singlylinkedlist-h/singlylinkedlist-foreach.md)            | 
 
-## Typedef documentation
+## Type definitions
 
 #### SINGLYLINKEDLIST_HANDLE
 

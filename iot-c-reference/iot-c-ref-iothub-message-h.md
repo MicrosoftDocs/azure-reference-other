@@ -122,7 +122,7 @@ Constant                    | Description
  IOTHUBMESSAGE_STRING            | 
  IOTHUBMESSAGE_UNKNOWN            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_MESSAGE_HANDLE
 

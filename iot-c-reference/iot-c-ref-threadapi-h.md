@@ -53,7 +53,7 @@ Constant                    | Description
  THREADAPI_NO_MEMORY            | 
  THREADAPI_ERROR            | 
 
-## Typedef documentation
+## Type definitions
 
 #### THREAD_START_FUNC
 

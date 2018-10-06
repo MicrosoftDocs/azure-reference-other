@@ -51,7 +51,7 @@ Constant                    | Description
  OPTIONHANDLER_ERROR            | 
  OPTIONHANDLER_INVALIDARG            | 
 
-## Typedef documentation
+## Type definitions
 
 #### OPTIONHANDLER_HANDLE
 

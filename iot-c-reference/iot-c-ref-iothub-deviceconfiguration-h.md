@@ -241,7 +241,7 @@ Constant                    | Description
  IOTHUB_DEVICECONFIGURATION_REQUEST_DELETE            | 
  IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE
 

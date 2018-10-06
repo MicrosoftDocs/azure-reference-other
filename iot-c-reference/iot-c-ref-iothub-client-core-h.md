@@ -52,7 +52,7 @@ Function Name                  | Description
 #define IOTHUB_CLIENT_CORE_INSTANCE_TYPE
 ```
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_CLIENT_CORE_HANDLE
 

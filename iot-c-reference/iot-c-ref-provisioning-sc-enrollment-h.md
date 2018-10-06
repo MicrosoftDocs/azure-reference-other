@@ -85,7 +85,7 @@ Constant                    | Description
  PROVISIONING_STATUS_ENABLED            | 
  PROVISIONING_STATUS_DISABLED            | 
 
-## Typedef documentation
+## Type definitions
 
 #### INDIVIDUAL_ENROLLMENT_HANDLE
 

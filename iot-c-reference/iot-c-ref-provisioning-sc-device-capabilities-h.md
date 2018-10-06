@@ -21,7 +21,7 @@ Function Name                  | Description
 [deviceCapabilities_isIotEdgeCapable](./iot-c-ref-provisioning-sc-device-capabilities-h/devicecapabilities-isiotedgecapable.md)            | 
 [deviceCapabilities_setIotEdgeCapable](./iot-c-ref-provisioning-sc-device-capabilities-h/devicecapabilities-setiotedgecapable.md)            | 
 
-## Typedef documentation
+## Type definitions
 
 #### DEVICE_CAPABILITIES_HANDLE
 

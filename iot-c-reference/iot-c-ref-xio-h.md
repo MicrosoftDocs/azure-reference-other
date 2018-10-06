@@ -109,7 +109,7 @@ Constant                    | Description
  IO_OPEN_ERROR            | 
  IO_OPEN_CANCELLED            | 
 
-## Typedef documentation
+## Type definitions
 
 #### XIO_HANDLE
 

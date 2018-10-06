@@ -53,7 +53,7 @@ Constant                    | Description
  IOTHUB_DEVICE_METHOD_ERROR            | 
  IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE
 

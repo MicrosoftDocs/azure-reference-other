@@ -20,7 +20,7 @@ Function Name                  | Description
 [IoTHubTransport_Destroy](./iot-c-ref-iothub-transport-ll-h/iothubtransport-destroy.md)            | 
 [IoTHubTransport_GetLLTransport](./iot-c-ref-iothub-transport-ll-h/iothubtransport-getlltransport.md)            | 
 
-## Typedef documentation
+## Type definitions
 
 #### TRANSPORT_LL_HANDLE
 

@@ -167,7 +167,7 @@ Constant                    | Description
  IOTHUB_MESSAGING_DEVICE_EXIST            | 
  IOTHUB_MESSAGING_CALLBACK_NOT_SET            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_MESSAGING_HANDLE
 

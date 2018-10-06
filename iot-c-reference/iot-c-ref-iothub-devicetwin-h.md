@@ -59,7 +59,7 @@ Constant                    | Description
  IOTHUB_DEVICE_TWIN_ERROR            | 
  IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE
 

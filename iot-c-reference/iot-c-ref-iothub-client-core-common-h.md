@@ -471,7 +471,7 @@ Constant                    | Description
  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_OK            | 
  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_ABORT            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK
 

@@ -67,7 +67,7 @@ Constant                    | Description
  TRACING_STATUS_ON            | 
  TRACING_STATUS_OFF            | 
 
-## Typedef documentation
+## Type definitions
 
 #### PROVISIONING_SERVICE_CLIENT_HANDLE
 

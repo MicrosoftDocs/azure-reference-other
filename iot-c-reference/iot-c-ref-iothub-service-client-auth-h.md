@@ -93,7 +93,7 @@ Constant                    | Description
  IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED            | 
  IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED            | 
 
-## Typedef documentation
+## Type definitions
 
 #### IOTHUB_SERVICE_CLIENT_AUTH_HANDLE
 
