@@ -40,13 +40,13 @@ Function Name                  | Description
 
 ```C
 struct IOTHUB_SERVICE_FEEDBACK_RECORD {
-  char *                                     description,
-  const char *                               deviceId,
-  const char *                               correlationId,
-  const char *                               generationId,
-  const char *                               enqueuedTimeUtc,
-  [IOTHUB_FEEDBACK_STATUS_CODE](#undefined)  statusCode,
-  const char *                               originalMessageId
+  char *                       description,
+  const char *                 deviceId,
+  const char *                 correlationId,
+  const char *                 generationId,
+  const char *                 enqueuedTimeUtc,
+  IOTHUB_FEEDBACK_STATUS_CODE  statusCode,
+  const char *                 originalMessageId
 };
 ```
 Member name                 | Description                                
@@ -62,9 +62,9 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_SERVICE_FEEDBACK_BATCH {
-  const char *                           userId,
-  const char *                           lockToken,
-  [SINGLYLINKEDLIST_HANDLE](#undefined)  feedbackRecordList
+  const char *             userId,
+  const char *             lockToken,
+  SINGLYLINKEDLIST_HANDLE  feedbackRecordList
 };
 ```
 Member name                 | Description                                

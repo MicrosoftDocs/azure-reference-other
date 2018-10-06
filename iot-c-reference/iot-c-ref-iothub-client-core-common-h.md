@@ -52,13 +52,13 @@ Function Name                  | Description
 
 ```C
 struct IOTHUB_CLIENT_CONFIG {
-  [IOTHUB_CLIENT_TRANSPORT_PROVIDER](#undefined)  protocol,
-  const char *                                    deviceId,
-  const char *                                    deviceKey,
-  const char *                                    deviceSasToken,
-  const char *                                    iotHubName,
-  const char *                                    iotHubSuffix,
-  const char *                                    protocolGatewayHostName
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
+  const char *                      deviceId,
+  const char *                      deviceKey,
+  const char *                      deviceSasToken,
+  const char *                      iotHubName,
+  const char *                      iotHubSuffix,
+  const char *                      protocolGatewayHostName
 };
 ```
 Member name                 | Description                                
@@ -80,11 +80,11 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_CLIENT_DEVICE_CONFIG {
-  [IOTHUB_CLIENT_TRANSPORT_PROVIDER](#undefined)  protocol,
-  void *                                          transportHandle,
-  const char *                                    deviceId,
-  const char *                                    deviceKey,
-  const char *                                    deviceSasToken
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
+  void *                            transportHandle,
+  const char *                      deviceId,
+  const char *                      deviceKey,
+  const char *                      deviceSasToken
 };
 ```
 Member name                 | Description                                

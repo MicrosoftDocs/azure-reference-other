@@ -46,9 +46,9 @@ Member name                 | Description
 
 ```C
 struct PROVISIONING_BULK_OPERATION_RESULT {
-  bool                                                is_successful,
-  [PROVISIONING_BULK_OPERATION_ERROR](#undefined) **  errors,
-  size_t                                              num_errors
+  bool                                  is_successful,
+  PROVISIONING_BULK_OPERATION_ERROR **  errors,
+  size_t                                num_errors
 };
 ```
 Member name                 | Description                                
@@ -60,11 +60,11 @@ Member name                 | Description
 
 ```C
 struct PROVISIONING_BULK_OPERATION {
-  int                                             version,
-  [PROVISIONING_BULK_OPERATION_MODE](#undefined)  mode,
-  union PROVISIONING_BULK_OPERATION::@0           enrollments,
-  size_t                                          num_enrollments,
-  [PROVISIONING_BULK_OPERATION_TYPE](#undefined)  type
+  int                                    version,
+  PROVISIONING_BULK_OPERATION_MODE       mode,
+  union PROVISIONING_BULK_OPERATION::@0  enrollments,
+  size_t                                 num_enrollments,
+  PROVISIONING_BULK_OPERATION_TYPE       type
 };
 ```
 Member name                 | Description                                

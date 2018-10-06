@@ -48,25 +48,25 @@ Function Name                  | Description
 
 ```C
 struct IOTHUB_DEVICE_EX {
-  int                                               version,
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  const char *                                      generationId,
-  const char *                                      eTag,
-  [IOTHUB_DEVICE_CONNECTION_STATE](#undefined)      connectionState,
-  const char *                                      connectionStateUpdatedTime,
-  [IOTHUB_DEVICE_STATUS](#undefined)                status,
-  const char *                                      statusReason,
-  const char *                                      statusUpdatedTime,
-  const char *                                      lastActivityTime,
-  size_t                                            cloudToDeviceMessageCount,
-  bool                                              isManaged,
-  const char *                                      configuration,
-  const char *                                      deviceProperties,
-  const char *                                      serviceProperties,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
-  bool                                              iotEdge_capable
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  const char *                        generationId,
+  const char *                        eTag,
+  IOTHUB_DEVICE_CONNECTION_STATE      connectionState,
+  const char *                        connectionStateUpdatedTime,
+  IOTHUB_DEVICE_STATUS                status,
+  const char *                        statusReason,
+  const char *                        statusUpdatedTime,
+  const char *                        lastActivityTime,
+  size_t                              cloudToDeviceMessageCount,
+  bool                                isManaged,
+  const char *                        configuration,
+  const char *                        deviceProperties,
+  const char *                        serviceProperties,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  bool                                iotEdge_capable
 };
 ```
 Member name                 | Description                                
@@ -94,12 +94,12 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_DEVICE_CREATE_EX {
-  int                                               version,
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
-  bool                                              iotEdge_capable
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  bool                                iotEdge_capable
 };
 ```
 Member name                 | Description                                
@@ -114,13 +114,13 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_DEVICE_UPDATE_EX {
-  int                                               version,
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  [IOTHUB_DEVICE_STATUS](#undefined)                status,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
-  bool                                              iotEdge_capable
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_DEVICE_STATUS                status,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  bool                                iotEdge_capable
 };
 ```
 Member name                 | Description                                
@@ -150,26 +150,26 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_MODULE {
-  int                                               version,
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  const char *                                      generationId,
-  const char *                                      eTag,
-  [IOTHUB_DEVICE_CONNECTION_STATE](#undefined)      connectionState,
-  const char *                                      connectionStateUpdatedTime,
-  [IOTHUB_DEVICE_STATUS](#undefined)                status,
-  const char *                                      statusReason,
-  const char *                                      statusUpdatedTime,
-  const char *                                      lastActivityTime,
-  size_t                                            cloudToDeviceMessageCount,
-  bool                                              isManaged,
-  const char *                                      configuration,
-  const char *                                      deviceProperties,
-  const char *                                      serviceProperties,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
-  const char *                                      moduleId,
-  const char *                                      managedBy
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  const char *                        generationId,
+  const char *                        eTag,
+  IOTHUB_DEVICE_CONNECTION_STATE      connectionState,
+  const char *                        connectionStateUpdatedTime,
+  IOTHUB_DEVICE_STATUS                status,
+  const char *                        statusReason,
+  const char *                        statusUpdatedTime,
+  const char *                        lastActivityTime,
+  size_t                              cloudToDeviceMessageCount,
+  bool                                isManaged,
+  const char *                        configuration,
+  const char *                        deviceProperties,
+  const char *                        serviceProperties,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  const char *                        moduleId,
+  const char *                        managedBy
 };
 ```
 Member name                 | Description                                
@@ -198,13 +198,13 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_MODULE_CREATE {
-  int                                               version,
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
-  const char *                                      moduleId,
-  const char *                                      managedBy
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  const char *                        moduleId,
+  const char *                        managedBy
 };
 ```
 Member name                 | Description                                
@@ -220,14 +220,14 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_MODULE_UPDATE {
-  int                                               version,
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  [IOTHUB_DEVICE_STATUS](#undefined)                status,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
-  const char *                                      moduleId,
-  const char *                                      managedBy
+  int                                 version,
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_DEVICE_STATUS                status,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod,
+  const char *                        moduleId,
+  const char *                        managedBy
 };
 ```
 Member name                 | Description                                
@@ -264,23 +264,23 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_DEVICE {
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  const char *                                      generationId,
-  const char *                                      eTag,
-  [IOTHUB_DEVICE_CONNECTION_STATE](#undefined)      connectionState,
-  const char *                                      connectionStateUpdatedTime,
-  [IOTHUB_DEVICE_STATUS](#undefined)                status,
-  const char *                                      statusReason,
-  const char *                                      statusUpdatedTime,
-  const char *                                      lastActivityTime,
-  size_t                                            cloudToDeviceMessageCount,
-  bool                                              isManaged,
-  const char *                                      configuration,
-  const char *                                      deviceProperties,
-  const char *                                      serviceProperties,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  const char *                        generationId,
+  const char *                        eTag,
+  IOTHUB_DEVICE_CONNECTION_STATE      connectionState,
+  const char *                        connectionStateUpdatedTime,
+  IOTHUB_DEVICE_STATUS                status,
+  const char *                        statusReason,
+  const char *                        statusUpdatedTime,
+  const char *                        lastActivityTime,
+  size_t                              cloudToDeviceMessageCount,
+  bool                                isManaged,
+  const char *                        configuration,
+  const char *                        deviceProperties,
+  const char *                        serviceProperties,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
 };
 ```
 Member name                 | Description                                
@@ -306,10 +306,10 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_DEVICE_CREATE {
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
 };
 ```
 Member name                 | Description                                
@@ -322,11 +322,11 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_DEVICE_UPDATE {
-  const char *                                      deviceId,
-  const char *                                      primaryKey,
-  const char *                                      secondaryKey,
-  [IOTHUB_DEVICE_STATUS](#undefined)                status,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod
+  const char *                        deviceId,
+  const char *                        primaryKey,
+  const char *                        secondaryKey,
+  IOTHUB_DEVICE_STATUS                status,
+  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  authMethod
 };
 ```
 Member name                 | Description                                

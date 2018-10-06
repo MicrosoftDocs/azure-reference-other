@@ -46,7 +46,7 @@ Member name                 | Description
 struct PROVISIONING_QUERY_RESPONSE {
   union PROVISIONING_QUERY_RESPONSE::@1  response_arr,
   size_t                                 response_arr_size,
-  [PROVISIONING_QUERY_TYPE](#undefined)  response_arr_type
+  PROVISIONING_QUERY_TYPE                response_arr_type
 };
 ```
 Member name                 | Description                                

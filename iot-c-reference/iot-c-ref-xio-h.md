@@ -36,14 +36,14 @@ Function Name                  | Description
 
 ```C
 struct IO_INTERFACE_DESCRIPTION {
-  [IO_RETRIEVEOPTIONS](#undefined)  concrete_io_retrieveoptions,
-  [IO_CREATE](#undefined)           concrete_io_create,
-  [IO_DESTROY](#undefined)          concrete_io_destroy,
-  [IO_OPEN](#undefined)             concrete_io_open,
-  [IO_CLOSE](#undefined)            concrete_io_close,
-  [IO_SEND](#undefined)             concrete_io_send,
-  [IO_DOWORK](#undefined)           concrete_io_dowork,
-  [IO_SETOPTION](#undefined)        concrete_io_setoption
+  IO_RETRIEVEOPTIONS  concrete_io_retrieveoptions,
+  IO_CREATE           concrete_io_create,
+  IO_DESTROY          concrete_io_destroy,
+  IO_OPEN             concrete_io_open,
+  IO_CLOSE            concrete_io_close,
+  IO_SEND             concrete_io_send,
+  IO_DOWORK           concrete_io_dowork,
+  IO_SETOPTION        concrete_io_setoption
 };
 ```
 Member name                 | Description                                

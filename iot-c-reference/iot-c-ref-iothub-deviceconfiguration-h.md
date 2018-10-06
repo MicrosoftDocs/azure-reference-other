@@ -92,20 +92,20 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_DEVICE_CONFIGURATION {
-  int                                                           version,
-  const char *                                                  schemaVersion,
-  const char *                                                  configurationId,
-  const char *                                                  targetCondition,
-  const char *                                                  eTag,
-  const char *                                                  createdTimeUtc,
-  const char *                                                  lastUpdatedTimeUtc,
-  int                                                           priority,
-  [IOTHUB_DEVICE_CONFIGURATION_CONTENT](#undefined)             content,
-  [IOTHUB_DEVICE_CONFIGURATION_LABELS](#undefined)              labels,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](#undefined)      systemMetricsResult,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](#undefined)  systemMetricsDefinition,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](#undefined)      metricResult,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](#undefined)  metricsDefinition
+  int                                             version,
+  const char *                                    schemaVersion,
+  const char *                                    configurationId,
+  const char *                                    targetCondition,
+  const char *                                    eTag,
+  const char *                                    createdTimeUtc,
+  const char *                                    lastUpdatedTimeUtc,
+  int                                             priority,
+  IOTHUB_DEVICE_CONFIGURATION_CONTENT             content,
+  IOTHUB_DEVICE_CONFIGURATION_LABELS              labels,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT      systemMetricsResult,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  systemMetricsDefinition,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT      metricResult,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  metricsDefinition
 };
 ```
 Member name                 | Description                                
@@ -128,13 +128,13 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_DEVICE_CONFIGURATION_ADD {
-  int                                                           version,
-  const char *                                                  configurationId,
-  const char *                                                  targetCondition,
-  int                                                           priority,
-  [IOTHUB_DEVICE_CONFIGURATION_CONTENT](#undefined)             content,
-  [IOTHUB_DEVICE_CONFIGURATION_LABELS](#undefined)              labels,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](#undefined)  metrics
+  int                                             version,
+  const char *                                    configurationId,
+  const char *                                    targetCondition,
+  int                                             priority,
+  IOTHUB_DEVICE_CONFIGURATION_CONTENT             content,
+  IOTHUB_DEVICE_CONFIGURATION_LABELS              labels,
+  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  metrics
 };
 ```
 Member name                 | Description                                
