@@ -25,6 +25,6 @@ DEPRECATED: Use IoTHubClient_UploadMultipleBlocksToBlobAsyncEx instead ** This f
 
 * `context` Any data provided by the user to serve as context on getDataCallback. 
 
-## Returns
+## Return Value
 An IOTHUB_CLIENT_RESULT value indicating the success or failure of the API call. DEPRECATED: Use IoTHubClient_UploadMultipleBlocksToBlobAsyncEx instead **
 

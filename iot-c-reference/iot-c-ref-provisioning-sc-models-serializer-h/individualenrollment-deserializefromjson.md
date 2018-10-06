@@ -14,6 +14,6 @@ INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_deserializeFromJson(
 ## Parameters
 * `json_string` A JSON String representing an Individual Enrollment.
 
-## Returns
+## Return Value
 A non-NULL handle representing an Individual Enrollment, and NULL on failure.
 

@@ -22,6 +22,6 @@ IOTHUB_CLIENT_RESULT IoTHubClient_GetRetryPolicy(
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubClient_LL_Destroy](#undefined) function from within any callback.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

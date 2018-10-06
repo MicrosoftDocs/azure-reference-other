@@ -18,6 +18,6 @@ DEPRECATED:: Use IoTHubRegistryManager_UpdateDevice_Ex instead
 
 * `deviceUpdate` [IOTHUB_REGISTRY_DEVICE_UPDATE](#undefined) structure containing the new device Id, primaryKey (optional), secondaryKey (optional), authentication method, and status
 
-## Returns
+## Return Value
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.
 

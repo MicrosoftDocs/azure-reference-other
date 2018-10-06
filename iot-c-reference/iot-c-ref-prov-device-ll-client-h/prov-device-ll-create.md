@@ -20,6 +20,6 @@ PROV_DEVICE_LL_HANDLE Prov_Device_LL_Create(
 
 * `protocol` Function pointer for protocol implementation
 
-## Returns
+## Return Value
 A non-NULL PROV_DEVICE_LL_HANDLE value that is used when invoking other functions and NULL on Failure
 

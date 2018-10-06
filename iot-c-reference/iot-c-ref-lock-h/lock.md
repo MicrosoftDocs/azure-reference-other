@@ -14,6 +14,6 @@ LOCK_RESULT Lock(
 ## Parameters
 * `handle` A valid handle to the lock.
 
-## Returns
+## Return Value
 Returns `LOCK_OK` when a lock has been acquired and `LOCK_ERROR` when an error occurs.
 

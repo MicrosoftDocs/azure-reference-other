@@ -40,6 +40,6 @@ The options that can be set via this API are:
 
 * **sas_token_lifetime** - available for MQTT & AMQP protocol. size_t value that that determines the sas token timeout length.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

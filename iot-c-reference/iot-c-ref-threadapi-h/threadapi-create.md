@@ -20,6 +20,6 @@ THREADAPI_RESULT ThreadAPI_Create(
 
 * `arg` A void pointer that must be passed to the function pointed to by `func`.
 
-## Returns
+## Return Value
 `THREADAPI_OK` if the API call is successful or an error code in case it fails.
 

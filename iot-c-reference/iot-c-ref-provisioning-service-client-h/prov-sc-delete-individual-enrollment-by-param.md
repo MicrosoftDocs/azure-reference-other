@@ -20,6 +20,6 @@ int prov_sc_delete_individual_enrollment_by_param(
 
 * `etag` The etag of the target individual enrollment. If given as "*", will match any etag. If given as NULL, will be ignored.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

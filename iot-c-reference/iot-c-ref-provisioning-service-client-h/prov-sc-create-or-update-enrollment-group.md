@@ -17,6 +17,6 @@ int prov_sc_create_or_update_enrollment_group(
 
 * `enrollment_ptr` Pointer to a handle for a new or updated enrollment group.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

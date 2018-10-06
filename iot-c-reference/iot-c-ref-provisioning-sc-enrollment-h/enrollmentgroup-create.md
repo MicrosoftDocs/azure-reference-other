@@ -17,6 +17,6 @@ ENROLLMENT_GROUP_HANDLE enrollmentGroup_create(
 
 * `att_mech` The handle for the Attestation Mechanism to be used by the Enrollment Group. Note: only valid with type: X509
 
-## Returns
+## Return Value
 A non-NULL handle representing an Enrollment Group for use with the Provisioning Service, and NULL on failure.
 

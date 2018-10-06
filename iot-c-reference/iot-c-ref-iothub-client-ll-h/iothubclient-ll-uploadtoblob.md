@@ -23,6 +23,6 @@ IOTHUB_CLIENT_RESULT IoTHubClient_LL_UploadToBlob(
 
 * `size` the size of the source in memory (if `source` is NULL then size needs to be 0).
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

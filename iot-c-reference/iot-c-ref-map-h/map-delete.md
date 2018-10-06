@@ -17,6 +17,6 @@ MAP_RESULT Map_Delete(
 
 * `key` The `key` of the item to be deleted.
 
-## Returns
+## Return Value
 Returns `MAP_OK` if the key was deleted successfully or an error code otherwise.
 

@@ -16,6 +16,6 @@ HTTP_HANDLE HTTPAPI_CreateConnection(
 
 This function returns a handle to the newly created connection. You can use the handle in subsequent calls to execute specific HTTP calls using [HTTPAPI_ExecuteRequest](#undefined).
 
-## Returns
+## Return Value
 A `HTTP_HANDLE` to the newly created connection or `NULL` in case an error occurs.
 

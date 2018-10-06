@@ -14,6 +14,6 @@ const IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA* IoTHubMessage_GetDiagnosticProper
 ## Parameters
 * `iotHubMessageHandle` Handle to the message.
 
-## Returns
+## Return Value
 A const IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA* pointing to the diagnostic property data.
 

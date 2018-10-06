@@ -23,6 +23,6 @@ MAP_RESULT Map_GetInternals(
 
 * `count` The number of stored keys and values is written at the location indicated by this pointer.
 
-## Returns
+## Return Value
 Returns `MAP_OK` if the keys and values are retrieved and written successfully or an error code otherwise.
 

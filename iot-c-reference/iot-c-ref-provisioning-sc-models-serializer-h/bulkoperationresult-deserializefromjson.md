@@ -14,6 +14,6 @@ PROVISIONING_BULK_OPERATION_RESULT* bulkOperationResult_deserializeFromJson(
 ## Parameters
 * `json_string` A JSON String representing an Bulk Operation Result.
 
-## Returns
+## Return Value
 A non-NULL pointer to a Bulk Operation Result and NULL on failure.
 

@@ -38,6 +38,6 @@ HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
 
 * `responseContent` This is a buffer that must be filled by [HTTPAPI_ExecuteRequest](#undefined) with the contents of the HTTP response body. The buffer size must be increased by the [HTTPAPI_ExecuteRequest](#undefined) implementation in order to fit the response body. [HTTPAPI_ExecuteRequest](#undefined) must also handle chunked transfer encoding for HTTP responses. To manipulate the `responseContent` buffer, use the APIs available in `[Strings.h](#undefined)`.
 
-## Returns
+## Return Value
 `HTTPAPI_OK` if the API call is successful or an error code in case it fails.
 

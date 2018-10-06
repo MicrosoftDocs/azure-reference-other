@@ -14,6 +14,6 @@ LOCK_RESULT Lock_Deinit(
 ## Parameters
 * `handle` A valid handle to the lock.
 
-## Returns
+## Return Value
 Returns `LOCK_OK` when the lock object has been destroyed and `LOCK_ERROR` when an error occurs.
 

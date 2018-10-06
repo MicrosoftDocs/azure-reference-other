@@ -20,6 +20,6 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_GetByteArray(
 
 * `size` The size of the buffer will be written to this address.
 
-## Returns
+## Return Value
 Returns IOTHUB_MESSAGE_OK if the byte array was fetched successfully or an error code otherwise.
 

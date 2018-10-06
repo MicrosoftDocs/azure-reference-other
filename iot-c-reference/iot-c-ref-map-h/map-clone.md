@@ -14,6 +14,6 @@ MAP_HANDLE Map_Clone(
 ## Parameters
 * `handle` The handle to an existing map.
 
-## Returns
+## Return Value
 A valid `MAP_HANDLE` to the cloned copy of the map or `NULL` in case an error occurs.
 

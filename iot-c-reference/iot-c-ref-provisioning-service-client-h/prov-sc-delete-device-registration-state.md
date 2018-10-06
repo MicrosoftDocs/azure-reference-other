@@ -17,6 +17,6 @@ int prov_sc_delete_device_registration_state(
 
 * `reg_state` The handle for the target device registration state.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

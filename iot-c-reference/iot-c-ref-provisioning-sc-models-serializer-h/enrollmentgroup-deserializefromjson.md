@@ -14,6 +14,6 @@ ENROLLMENT_GROUP_HANDLE enrollmentGroup_deserializeFromJson(
 ## Parameters
 * `json_string` A JSON String representing an Enrollment Group.
 
-## Returns
+## Return Value
 A non-NULL handle representing an Enrollment Group, and NULL on failure.
 

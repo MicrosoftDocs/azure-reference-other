@@ -17,6 +17,6 @@ int prov_sc_set_certificate(
 
 * `certificate` The trusted certificate to be used for HTTP connections. If given as NULL, will clear a previously set certificate.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

@@ -14,6 +14,6 @@ char* individualEnrollment_serializeToJson(
 ## Parameters
 * `enrollment` A handle for the Individual Enrollment to be serialized.
 
-## Returns
+## Return Value
 A non-NULL string containing the serialized JSON String, and NULL on failure.
 

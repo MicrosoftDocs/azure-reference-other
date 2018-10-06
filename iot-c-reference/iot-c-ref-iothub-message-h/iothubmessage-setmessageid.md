@@ -17,6 +17,6 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetMessageId(
 
 * `messageId` Pointer to the memory location of the messageId
 
-## Returns
+## Return Value
 Returns IOTHUB_MESSAGE_OK if the messageId was set successfully or an error code otherwise.
 

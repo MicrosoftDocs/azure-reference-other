@@ -20,6 +20,6 @@ MAP_RESULT Map_ContainsKey(
 
 * `keyExists` The function writes `true` at the address pointed at by this parameter if the key exists in the map and `false` otherwise.
 
-## Returns
+## Return Value
 Returns `MAP_OK` if the check was performed successfully or an error code otherwise.
 

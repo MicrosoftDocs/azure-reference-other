@@ -40,6 +40,6 @@ The options that can be set via this API are:
 
 * **cl2svc_keep_alive_send_ratio** - the AMQP client side keep alive interval in seconds. After the connection established the server requests the client to set the keep alive interval for given time. If it is not set then the default ratio of 1/2 is applied. The ratio has to be greater than 0.0 and equal to or less than 0.9
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

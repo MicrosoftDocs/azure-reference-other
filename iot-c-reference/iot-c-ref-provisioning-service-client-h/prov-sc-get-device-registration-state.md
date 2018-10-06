@@ -20,6 +20,6 @@ int prov_sc_get_device_registration_state(
 
 * `reg_state_ptr` A pointer to a handle for a registration state, to be filled with retreived data.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

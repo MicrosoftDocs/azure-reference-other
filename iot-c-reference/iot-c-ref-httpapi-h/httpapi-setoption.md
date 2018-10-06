@@ -20,6 +20,6 @@ HTTPAPI_RESULT HTTPAPI_SetOption(
 
 * `value` A pointer to the value for the option.
 
-## Returns
+## Return Value
 `HTTPAPI_OK` if initialization is successful or an error code in case it fails.
 

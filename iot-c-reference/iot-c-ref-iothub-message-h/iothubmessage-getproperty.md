@@ -17,6 +17,6 @@ const char* IoTHubMessage_GetProperty(
 
 * `key` name of the property to retrieve.
 
-## Returns
+## Return Value
 A string with the property's value, or NULL if it does not exist in the properties list.
 

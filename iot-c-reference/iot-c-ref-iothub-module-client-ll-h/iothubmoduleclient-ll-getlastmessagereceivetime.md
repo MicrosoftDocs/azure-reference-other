@@ -17,6 +17,6 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_GetLastMessageReceiveTime(
 
 * `lastMessageReceiveTime` Out parameter containing the value of `time` function when the last message was received.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

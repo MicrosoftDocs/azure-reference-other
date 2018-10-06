@@ -25,6 +25,6 @@ This function allows users to upload large files in chunks, not requiring the wh
 
 * `context` Any data provided by the user to serve as context on getDataCallback. 
 
-## Returns
+## Return Value
 An IOTHUB_CLIENT_RESULT value indicating the success or failure of the API call.
 

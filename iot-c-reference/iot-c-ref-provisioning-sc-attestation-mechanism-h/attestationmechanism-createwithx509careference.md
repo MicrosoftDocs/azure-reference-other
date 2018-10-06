@@ -17,6 +17,6 @@ ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509CAReference(
 
 * `secondary_ref` A reference to a secondary CA Certificate for use with the x509 (optional - if not using two cert refs, pass NULL).
 
-## Returns
+## Return Value
 A non NULL handle representing an Attestation Mechanism using an X509 Attestation with a CA Reference, and NULL on failure.
 

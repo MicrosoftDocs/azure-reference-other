@@ -14,6 +14,6 @@ const char* IoTHubMessage_GetConnectionDeviceId(
 ## Parameters
 * `iotHubMessageHandle` Handle to the message.
 
-## Returns
+## Return Value
 A const char* pointing to the connection device Id.
 

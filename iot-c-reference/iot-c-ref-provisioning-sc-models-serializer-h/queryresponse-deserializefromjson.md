@@ -17,6 +17,6 @@ PROVISIONING_QUERY_RESPONSE* queryResponse_deserializeFromJson(
 
 * `type` The type of model the query is being done upon
 
-## Returns
+## Return Value
 A non-NULL pointer to a Query Response and NULL on failure.
 

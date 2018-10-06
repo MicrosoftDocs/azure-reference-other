@@ -17,6 +17,6 @@ int prov_sc_delete_enrollment_group(
 
 * `enrollment` The handle for the target enrollment group
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

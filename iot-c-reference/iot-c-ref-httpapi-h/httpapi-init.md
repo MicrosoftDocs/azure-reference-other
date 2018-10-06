@@ -11,6 +11,6 @@ HTTPAPI_RESULT HTTPAPI_Init(void);
 
 Platform specific implementations are expected to initialize the underlying HTTP API stacks.
 
-## Returns
+## Return Value
 `HTTPAPI_OK` if initialization is successful or an error code in case it fails.
 

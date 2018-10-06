@@ -9,6 +9,6 @@ Creates a Device Capabilities handle that can be used in consequent APIs, with a
 DEVICE_CAPABILITIES_HANDLE deviceCapabilities_create(void);
 ```
 
-## Returns
+## Return Value
 A non-NULL handle representing Device Capabilities for use with the Provisioning Service, and NULL on failure.
 

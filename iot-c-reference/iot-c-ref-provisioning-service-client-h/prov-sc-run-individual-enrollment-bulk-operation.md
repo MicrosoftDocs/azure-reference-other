@@ -20,6 +20,6 @@ int prov_sc_run_individual_enrollment_bulk_operation(
 
 * `bulk_res_ptr` A pointer to a bulk operation result pointer that will be filled with the results upon completion
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

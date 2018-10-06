@@ -17,6 +17,6 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_DeleteDevice(
 
 * `deviceId` The Id of the device to delete.
 
-## Returns
+## Return Value
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.
 

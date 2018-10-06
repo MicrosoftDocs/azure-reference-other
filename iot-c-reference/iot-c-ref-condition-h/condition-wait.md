@@ -16,6 +16,6 @@ COND_RESULT Condition_Wait(
 ## Parameters
 * `handle` A valid handle to the lock.
 
-## Returns
+## Return Value
 Returns `COND_OK` when the condition object has been destroyed and `COND_ERROR` when an error occurs and `COND_TIMEOUT` when the handle times out.
 

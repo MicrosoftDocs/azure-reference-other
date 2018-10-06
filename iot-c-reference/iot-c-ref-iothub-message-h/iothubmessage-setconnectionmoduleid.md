@@ -17,6 +17,6 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetConnectionModuleId(
 
 * `connectionModuleId` Pointer to the module ID of connector
 
-## Returns
+## Return Value
 Returns IOTHUB_MESSAGE_OK if the DiagnosticData was set successfully or an error code otherwise.
 

@@ -20,6 +20,6 @@ int prov_sc_get_enrollment_group(
 
 * `enrollment_ptr` A pointer to a handle for an enrollment group, to be filled with the retreived data.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

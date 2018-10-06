@@ -20,6 +20,6 @@ IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_ApplyConfigurationC
 
 * `configurationContent` The configuration content to be applied.
 
-## Returns
+## Return Value
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.
 

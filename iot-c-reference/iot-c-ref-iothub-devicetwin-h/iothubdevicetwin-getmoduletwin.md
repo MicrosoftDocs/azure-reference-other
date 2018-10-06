@@ -20,6 +20,6 @@ char* IoTHubDeviceTwin_GetModuleTwin(
 
 * `moduleId` The module name (id) to retrieve twin info for.
 
-## Returns
+## Return Value
 A non-NULL char* containing module twin info upon success or NULL upon failure.
 

@@ -17,6 +17,6 @@ int prov_sc_set_proxy(
 
 * `proxy_options` A struct containing the desired proxy settings
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

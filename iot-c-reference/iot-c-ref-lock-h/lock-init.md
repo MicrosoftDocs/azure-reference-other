@@ -9,6 +9,6 @@ This API creates and returns a valid lock handle.
 LOCK_HANDLE Lock_Init(void);
 ```
 
-## Returns
+## Return Value
 A valid `LOCK_HANDLE` when successful or `NULL` otherwise.
 

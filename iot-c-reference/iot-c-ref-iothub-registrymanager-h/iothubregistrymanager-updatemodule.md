@@ -17,6 +17,6 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_UpdateModule(
 
 * `moduleUpdate` [IOTHUB_REGISTRY_MODULE_UPDATE](#undefined) structure containing the new module Id, primaryKey (optional), secondaryKey (optional), authentication method, and status
 
-## Returns
+## Return Value
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.
 

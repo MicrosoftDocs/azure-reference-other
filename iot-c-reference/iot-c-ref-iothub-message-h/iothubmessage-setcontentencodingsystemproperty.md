@@ -17,6 +17,6 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentEncodingSystemProperty(
 
 * `contentEncoding` String defining the encoding of the payload (e.g., utf-8).
 
-## Returns
+## Return Value
 An `IOTHUB_MESSAGE_RESULT` value.
 

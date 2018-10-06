@@ -26,6 +26,6 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetDeviceTwinCallback(
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_Destroy](#undefined) function from within any callback.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

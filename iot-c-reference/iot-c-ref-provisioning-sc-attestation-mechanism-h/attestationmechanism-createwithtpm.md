@@ -17,6 +17,6 @@ ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithTpm(
 
 * `storage_root_key` A storage root key to use with the TPM (optional).
 
-## Returns
+## Return Value
 A non NULL handle representing an Attestation Mechanism using a TPM Attestation, and NULL on failure.
 

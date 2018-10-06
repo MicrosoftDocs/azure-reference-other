@@ -17,6 +17,6 @@ int prov_sc_delete_individual_enrollment(
 
 * `enrollment` The handle for the target individual enrollment. Will be matched based on registration id and etag.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

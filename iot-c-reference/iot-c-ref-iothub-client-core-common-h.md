@@ -569,7 +569,8 @@ Callback invoked by IoTHubClient_UploadMultipleBlocksToBlobAsync requesting the 
 typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK) (IOTHUB_CLIENT_FILE_UPLOAD_RESULT result, unsigned char const **data, size_t *size, void *context);
 ```
 
-## Parameters
+**Parameters**:
+
 * `result` The result of the upload of the previous block of data provided by the user (IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX only) 
 
 * `data` Next block of data to be uploaded, to be provided by the user when this callback is invoked. 

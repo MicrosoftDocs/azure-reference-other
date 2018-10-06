@@ -23,6 +23,6 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetModule(
 
 * `module` Input parameter, if it is not NULL will contain the requested module info structure
 
-## Returns
+## Return Value
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.
 

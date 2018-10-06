@@ -17,6 +17,6 @@ IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_UpdateConfiguration
 
 * `configuration` [IOTHUB_DEVICE_CONFIGURATION](#undefined) structure containing the new configuration info.
 
-## Returns
+## Return Value
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.
 

@@ -14,6 +14,6 @@ const char* IoTHubMessage_GetString(
 ## Parameters
 * `iotHubMessageHandle` Handle to the message.
 
-## Returns
+## Return Value
 `NULL` if an error occurs or a pointer to the stored null terminated string otherwise.
 

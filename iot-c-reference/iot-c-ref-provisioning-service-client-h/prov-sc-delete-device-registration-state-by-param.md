@@ -20,6 +20,6 @@ int prov_sc_delete_device_registration_state_by_param(
 
 * `etag` The etag of the target registration state
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

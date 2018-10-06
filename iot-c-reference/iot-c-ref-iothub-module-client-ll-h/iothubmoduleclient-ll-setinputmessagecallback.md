@@ -23,6 +23,6 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetInputMessageCallback(
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

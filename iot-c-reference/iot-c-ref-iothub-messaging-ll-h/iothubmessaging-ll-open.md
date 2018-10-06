@@ -20,6 +20,6 @@ IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_Open(
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
 
-## Returns
+## Return Value
 IOTHUB_MESSAGING_OK upon success or an error code upon failure.
 

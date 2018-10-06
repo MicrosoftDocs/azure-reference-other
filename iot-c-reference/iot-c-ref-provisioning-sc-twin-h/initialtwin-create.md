@@ -17,6 +17,6 @@ INITIAL_TWIN_HANDLE initialTwin_create(
 
 * `desired_properties` The json string for the desired properties of the initial Twin State
 
-## Returns
+## Return Value
 A non-NULL handle representing an Initial Twin for use with Provisioning Service, and NULL on failure.
 

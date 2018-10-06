@@ -22,6 +22,6 @@ IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_SetFeedbackMessageCallback(
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubMessaging_Destroy](#undefined) or IoTHubMessaging_Close function from within any callback.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

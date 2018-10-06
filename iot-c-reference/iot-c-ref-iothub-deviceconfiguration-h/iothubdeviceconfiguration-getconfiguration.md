@@ -20,6 +20,6 @@ IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_GetConfiguration(
 
 * `configuration` Output parameter, if it is not NULL will contain the requested configuration info structure
 
-## Returns
+## Return Value
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.
 

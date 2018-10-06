@@ -17,6 +17,6 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_GetSendStatus(
 
 * `IoTHubClientStatus` The sending state is populated at the address pointed at by this parameter. The value will be set to `IoTHubClient_SENDSTATUS_IDLE` if there is currently no item to be sent and `IoTHubClient_SENDSTATUS_BUSY` if there are.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

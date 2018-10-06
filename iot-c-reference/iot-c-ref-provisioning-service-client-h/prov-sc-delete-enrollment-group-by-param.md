@@ -20,6 +20,6 @@ int prov_sc_delete_enrollment_group_by_param(
 
 * `etag` The etag of the target enrollment group. If given as "*", will match any etag.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

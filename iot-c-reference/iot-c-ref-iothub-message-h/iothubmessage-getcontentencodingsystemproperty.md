@@ -14,6 +14,6 @@ const char* IoTHubMessage_GetContentEncodingSystemProperty(
 ## Parameters
 * `iotHubMessageHandle` Handle to the message.
 
-## Returns
+## Return Value
 A string with the content-encoding value if defined (or NULL otherwise).
 

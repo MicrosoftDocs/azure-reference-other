@@ -23,6 +23,6 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetModuleList(
 
 * `module_version` The version of the module structure to return
 
-## Returns
+## Return Value
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.
 

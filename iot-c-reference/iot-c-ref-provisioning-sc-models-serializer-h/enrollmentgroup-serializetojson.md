@@ -14,6 +14,6 @@ char* enrollmentGroup_serializeToJson(
 ## Parameters
 * `enrollment` A handle for the Enrollment Group to be serialized.
 
-## Returns
+## Return Value
 A non-NULL string containing the serialized JSON String, and NULL on failure.
 

@@ -9,6 +9,6 @@ IoTHubClient_Init Initializes the IoTHub Client System.
 int IoTHub_Init(void);
 ```
 
-## Returns
+## Return Value
 int zero upon success, any other value upon failure.
 

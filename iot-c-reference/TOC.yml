@@ -313,31 +313,6 @@
               href: iot-c-ref-xlogging-h/xlogging-set-log-function.md
             - name: xlogging_get_log_function
               href: iot-c-ref-xlogging-h/xlogging-get-log-function.md
-      - name: src
-        items:
-        - name: singlylinkedlist.c
-          href: iot-c-ref-singlylinkedlist-c.md
-          items:
-          - name: singlylinkedlist_create
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-create.md
-          - name: singlylinkedlist_destroy
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-destroy.md
-          - name: singlylinkedlist_add
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-add.md
-          - name: singlylinkedlist_remove
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-remove.md
-          - name: singlylinkedlist_get_head_item
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-get-head-item.md
-          - name: singlylinkedlist_get_next_item
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-get-next-item.md
-          - name: singlylinkedlist_item_get_value
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-item-get-value.md
-          - name: singlylinkedlist_find
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-find.md
-          - name: singlylinkedlist_remove_if
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-remove-if.md
-          - name: singlylinkedlist_foreach
-            href: iot-c-ref-singlylinkedlist-c/singlylinkedlist-foreach.md
     - name: iothub_client
       items:
       - name: inc

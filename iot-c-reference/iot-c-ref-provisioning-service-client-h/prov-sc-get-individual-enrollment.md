@@ -20,6 +20,6 @@ int prov_sc_get_individual_enrollment(
 
 * `enrollment` Pointer to a handle for an individual enrollment, to be filled with retreived data.
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

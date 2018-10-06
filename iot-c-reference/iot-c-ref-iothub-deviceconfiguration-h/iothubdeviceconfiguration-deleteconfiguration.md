@@ -17,6 +17,6 @@ IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_DeleteConfiguration
 
 * `configurationId` The configuration name (id) to delete Configuration info for.
 
-## Returns
+## Return Value
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.
 

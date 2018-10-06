@@ -9,6 +9,6 @@ This API creates and returns a valid condition handle.
 COND_HANDLE Condition_Init(void);
 ```
 
-## Returns
+## Return Value
 A valid `COND_HANDLE` when successful or `NULL` otherwise.
 

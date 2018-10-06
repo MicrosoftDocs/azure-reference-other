@@ -14,6 +14,6 @@ char* bulkOperation_serializeToJson(
 ## Parameters
 * `bulk_op` A pointer to a Bulk Operation structure
 
-## Returns
+## Return Value
 A non-NULL string containing the serialized JSON String, and NULL on failure.
 

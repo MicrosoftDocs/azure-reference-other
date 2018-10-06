@@ -14,6 +14,6 @@ void Condition_Deinit(
 ## Parameters
 * `handle` A valid handle to the condition.
 
-## Returns
+## Return Value
 Returns `COND_OK` when the condition object has been destroyed and `COND_ERROR` when an error occurs.
 

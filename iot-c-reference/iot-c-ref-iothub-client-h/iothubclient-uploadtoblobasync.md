@@ -29,6 +29,6 @@ IOTHUB_CLIENT_RESULT IoTHubClient_UploadToBlobAsync(
 
 * `context` A user-provided context to be passed to the file upload callback.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

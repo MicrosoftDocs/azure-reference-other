@@ -17,6 +17,6 @@ int prov_sc_create_or_update_individual_enrollment(
 
 * `enrollment_ptr` Pointer to a handle for a new or updated individual enrollment (will be updated with new info from the Provisioning Service).
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure.
 

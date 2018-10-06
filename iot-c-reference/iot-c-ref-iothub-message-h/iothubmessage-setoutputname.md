@@ -17,6 +17,6 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetOutputName(
 
 * `outputName` Pointer to the queue to output message to
 
-## Returns
+## Return Value
 Returns IOTHUB_MESSAGE_OK if the DiagnosticData was set successfully or an error code otherwise.
 

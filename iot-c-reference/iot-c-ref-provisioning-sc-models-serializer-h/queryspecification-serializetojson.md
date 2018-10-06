@@ -14,6 +14,6 @@ char* querySpecification_serializeToJson(
 ## Parameters
 * `query_spec` A pointer to a Query Specification structure
 
-## Returns
+## Return Value
 A non NULL string containing the serialized JSON String, and NULL on failure.
 

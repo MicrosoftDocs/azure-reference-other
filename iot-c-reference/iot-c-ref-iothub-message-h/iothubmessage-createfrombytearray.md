@@ -17,6 +17,6 @@ IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromByteArray(
 
 * `size` The size of the byte array.
 
-## Returns
+## Return Value
 A valid `IOTHUB_MESSAGE_HANDLE` if the message was successfully created or `NULL` in case an error occurs.
 

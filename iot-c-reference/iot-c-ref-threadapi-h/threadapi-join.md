@@ -19,6 +19,6 @@ THREADAPI_RESULT ThreadAPI_Join(
 
 When the `threadHandle` thread completes, all resources associated with the thread must be released and the thread handle will no longer be valid.
 
-## Returns
+## Return Value
 `THREADAPI_OK` if the API call is successful or an error code in case it fails.
 

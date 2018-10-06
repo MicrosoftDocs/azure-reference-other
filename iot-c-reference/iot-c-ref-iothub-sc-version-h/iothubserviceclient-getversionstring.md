@@ -9,6 +9,6 @@ Returns a pointer to a null terminated string containing the current IoT Hub Ser
 const char* IoTHubServiceClient_GetVersionString(void);
 ```
 
-## Returns
+## Return Value
 Pointer to a null terminated string containing the current IoT Hub Service Client SDK version.
 

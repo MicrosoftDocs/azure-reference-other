@@ -14,6 +14,6 @@ IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromString(
 ## Parameters
 * `source` The null terminated string from which the message is to be created.
 
-## Returns
+## Return Value
 A valid `IOTHUB_MESSAGE_HANDLE` if the message was successfully created or `NULL` in case an error occurs.
 

@@ -17,6 +17,6 @@ IOTHUB_MESSAGING_RESULT IoTHubMessaging_SetTrustedCert(
 
 * `trusted_cert` The trusted certificate that will be set.
 
-## Returns
+## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 

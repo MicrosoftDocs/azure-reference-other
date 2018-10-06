@@ -23,6 +23,6 @@ char* IoTHubDeviceTwin_UpdateModuleTwin(
 
 * `moduleTwinJson` ModuleTwin JSon string containing the info (tags, desired properties) to update. All well-known read-only members are ignored. Properties provided with value of null are removed from twin's document.
 
-## Returns
+## Return Value
 A non-NULL char* containing updated module twin info upon success or NULL upon failure.
 

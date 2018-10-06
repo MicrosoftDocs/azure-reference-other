@@ -23,6 +23,6 @@ int prov_sc_query_individual_enrollment(
 
 * `query_resp_ptr` A pointer to a query response pointer, which will be filled with retrieved data
 
-## Returns
+## Return Value
 0 upon success, a non-zero number upon failure
 

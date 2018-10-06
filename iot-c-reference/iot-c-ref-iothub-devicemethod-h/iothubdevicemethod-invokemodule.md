@@ -38,6 +38,6 @@ IOTHUB_DEVICE_METHOD_RESULT IoTHubDeviceMethod_InvokeModule(
 
 * `responsePayloadSize` String length of responsePayload.
 
-## Returns
+## Return Value
 An IOTHUB_DEVICE_METHOD_RESULT containing the return status.
 

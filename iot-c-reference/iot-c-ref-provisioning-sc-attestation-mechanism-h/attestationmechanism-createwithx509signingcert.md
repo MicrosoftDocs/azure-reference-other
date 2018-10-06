@@ -17,6 +17,6 @@ ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509SigningCert(
 
 * `secondary_cert` A secondary certificate for use with the x509 (optional - if not using two certs, pass NULL).
 
-## Returns
+## Return Value
 A non NULL handle representing an Attestation Mechanism using an X509 Attestation with a signing certificate, and NULL on failure.
 

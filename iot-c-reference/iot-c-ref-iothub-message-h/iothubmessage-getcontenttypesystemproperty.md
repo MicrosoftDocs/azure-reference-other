@@ -14,6 +14,6 @@ const char* IoTHubMessage_GetContentTypeSystemProperty(
 ## Parameters
 * `iotHubMessageHandle` Handle to the message.
 
-## Returns
+## Return Value
 A string with the content-type value if defined (or NULL otherwise).
 

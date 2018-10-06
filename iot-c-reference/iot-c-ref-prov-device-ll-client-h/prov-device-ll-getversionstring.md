@@ -9,6 +9,6 @@ API to get the version of the provisioning client.
 const char* Prov_Device_LL_GetVersionString(void);
 ```
 
-## Returns
+## Return Value
 The version number of the provisioning client
 

@@ -14,6 +14,6 @@ IOTHUB_MESSAGE_HANDLE IoTHubMessage_Clone(
 ## Parameters
 * `iotHubMessageHandle` Handle to the message that is to be cloned.
 
-## Returns
+## Return Value
 A valid `IOTHUB_MESSAGE_HANDLE` if the message was successfully cloned or `NULL` in case an error occurs.
 

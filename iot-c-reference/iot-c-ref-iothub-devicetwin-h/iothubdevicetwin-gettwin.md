@@ -17,6 +17,6 @@ char* IoTHubDeviceTwin_GetTwin(
 
 * `deviceId` The device name (id) to retrieve twin info for.
 
-## Returns
+## Return Value
 A non-NULL char* containing device twin info upon success or NULL upon failure.
 

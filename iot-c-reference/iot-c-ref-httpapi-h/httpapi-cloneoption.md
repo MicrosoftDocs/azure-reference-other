@@ -20,6 +20,6 @@ HTTPAPI_RESULT HTTPAPI_CloneOption(
 
 * `savedValue` This pointer receives the copy of the value of the option. The copy needs to be free-able.
 
-## Returns
+## Return Value
 `HTTPAPI_OK` if initialization is successful or an error code in case it fails.
 

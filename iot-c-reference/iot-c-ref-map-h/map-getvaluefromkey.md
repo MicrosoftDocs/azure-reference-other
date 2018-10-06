@@ -17,6 +17,6 @@ const char* Map_GetValueFromKey(
 
 * `key` The key to be looked up in the map.
 
-## Returns
+## Return Value
 Returns `NULL` in case the input arguments are `NULL` or if the requested key is not found in the map. Returns a pointer to the key's value otherwise.
 

@@ -20,6 +20,6 @@ PROV_DEVICE_RESULT Prov_Device_LL_SetOption(
 
 * `value` A pointer to the value of the option to be set
 
-## Returns
+## Return Value
 PROV_DEVICE_RESULT_OK upon success or an error code upon failure
 

@@ -20,6 +20,6 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_DeleteModule(
 
 * `moduleId` The Id of the module to delete.
 
-## Returns
+## Return Value
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.
 

@@ -17,6 +17,6 @@ INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_create(
 
 * `att_mech` The handle for the Attestation Mechanism to be used by the Individual Enrollment
 
-## Returns
+## Return Value
 A non-NULL handle representing an Individual Enrollment for use with the Provisioning Service, and NULL on failure.
 

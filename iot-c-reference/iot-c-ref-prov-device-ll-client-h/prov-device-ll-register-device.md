@@ -26,6 +26,6 @@ PROV_DEVICE_RESULT Prov_Device_LL_Register_Device(
 
 * `status_user_ctext` User specified context that will be provided to the registration status callback
 
-## Returns
+## Return Value
 PROV_DEVICE_RESULT_OK upon success or an error code upon failure
 
