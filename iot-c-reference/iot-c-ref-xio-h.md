@@ -36,16 +36,74 @@ Function Name                  | Description
 
 ```C
 struct IO_INTERFACE_DESCRIPTION {
-  IO_RETRIEVEOPTIONS  concrete_io_retrieveoptions,
-  IO_CREATE           concrete_io_create,
-  IO_DESTROY          concrete_io_destroy,
-  IO_OPEN             concrete_io_open,
-  IO_CLOSE            concrete_io_close,
-  IO_SEND             concrete_io_send,
-  IO_DOWORK           concrete_io_dowork,
-  IO_SETOPTION        concrete_io_setoption
+  [IO_RETRIEVEOPTIONS](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  concrete_io_retrieveoptions,
+  [IO_CREATE](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })           concrete_io_create,
+  [IO_DESTROY](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })          concrete_io_destroy,
+  [IO_OPEN](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })             concrete_io_open,
+  [IO_CLOSE](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })            concrete_io_close,
+  [IO_SEND](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })             concrete_io_send,
+  [IO_DOWORK](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })           concrete_io_dowork,
+  [IO_SETOPTION](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })        concrete_io_setoption
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ concrete_io_retrieveoptions            | 
+ concrete_io_create            | 
+ concrete_io_destroy            | 
+ concrete_io_open            | 
+ concrete_io_close            | 
+ concrete_io_send            | 
+ concrete_io_dowork            | 
+ concrete_io_setoption            | 
 
 ## Macro definitions
 

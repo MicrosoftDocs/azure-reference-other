@@ -38,6 +38,14 @@ struct IOTHUB_SERVICE_CLIENT_AUTH {
   char *  deviceId
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ hostname            | 
+ iothubName            | 
+ iothubSuffix            | 
+ sharedAccessKey            | 
+ keyName            | 
+ deviceId            | 
 
 ## Macro definitions
 

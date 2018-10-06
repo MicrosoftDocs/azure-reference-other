@@ -21,4 +21,9 @@ struct IOTHUB_PROXY_OPTIONS {
   const char *  password
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ host_address            | 
+ username            | 
+ password            | 
 

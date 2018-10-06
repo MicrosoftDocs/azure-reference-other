@@ -22,4 +22,10 @@ struct HTTP_PROXY_OPTIONS {
   const char *  password
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ host_address            | 
+ port            | 
+ username            | 
+ password            | 
 

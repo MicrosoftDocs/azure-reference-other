@@ -37,26 +37,61 @@ struct PROVISIONING_BULK_OPERATION_ERROR {
   char *   error_status
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ registration_id            | 
+ error_code            | 
+ error_status            | 
 #### PROVISIONING_BULK_OPERATION_RESULT
 
 ```C
 struct PROVISIONING_BULK_OPERATION_RESULT {
-  bool                               is_successful,
-  PROVISIONING_BULK_OPERATION_ERROR  errors,
-  size_t                             num_errors
+  bool                                                                                                                                                                                                                                                                                                                                                          is_successful,
+  [PROVISIONING_BULK_OPERATION_ERROR](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }) **  errors,
+  size_t                                                                                                                                                                                                                                                                                                                                                        num_errors
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ is_successful            | 
+ errors            | 
+ num_errors            | 
 #### PROVISIONING_BULK_OPERATION
 
 ```C
 struct PROVISIONING_BULK_OPERATION {
-  int                                    version,
-  PROVISIONING_BULK_OPERATION_MODE       mode,
-  union PROVISIONING_BULK_OPERATION::@0  enrollments,
-  size_t                                 num_enrollments,
-  PROVISIONING_BULK_OPERATION_TYPE       type
+  int                                                                                                                                                                                                                                                                                                                                                       version,
+  [PROVISIONING_BULK_OPERATION_MODE](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  mode,
+  union PROVISIONING_BULK_OPERATION::@0                                                                                                                                                                                                                                                                                                                     enrollments,
+  size_t                                                                                                                                                                                                                                                                                                                                                    num_enrollments,
+  [PROVISIONING_BULK_OPERATION_TYPE](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  type
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ version            | 
+ mode            | 
+ enrollments            | 
+ num_enrollments            | 
+ type            | 
 
 ## Macro definitions
 

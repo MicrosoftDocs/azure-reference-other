@@ -58,6 +58,10 @@ struct IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA {
   char *  diagnosticCreationTimeUtc
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ diagnosticId            | 
+ diagnosticCreationTimeUtc            | 
 
 ## Macro definitions
 

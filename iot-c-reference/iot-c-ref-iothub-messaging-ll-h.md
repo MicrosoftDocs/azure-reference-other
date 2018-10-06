@@ -40,24 +40,50 @@ Function Name                  | Description
 
 ```C
 struct IOTHUB_SERVICE_FEEDBACK_RECORD {
-  char *                       description,
-  const char *                 deviceId,
-  const char *                 correlationId,
-  const char *                 generationId,
-  const char *                 enqueuedTimeUtc,
-  IOTHUB_FEEDBACK_STATUS_CODE  statusCode,
-  const char *                 originalMessageId
+  char *                                                                                                                                                                                                                                                                                                                                               description,
+  const char *                                                                                                                                                                                                                                                                                                                                         deviceId,
+  const char *                                                                                                                                                                                                                                                                                                                                         correlationId,
+  const char *                                                                                                                                                                                                                                                                                                                                         generationId,
+  const char *                                                                                                                                                                                                                                                                                                                                         enqueuedTimeUtc,
+  [IOTHUB_FEEDBACK_STATUS_CODE](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  statusCode,
+  const char *                                                                                                                                                                                                                                                                                                                                         originalMessageId
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ description            | 
+ deviceId            | 
+ correlationId            | 
+ generationId            | 
+ enqueuedTimeUtc            | 
+ statusCode            | 
+ originalMessageId            | 
 #### IOTHUB_SERVICE_FEEDBACK_BATCH
 
 ```C
 struct IOTHUB_SERVICE_FEEDBACK_BATCH {
-  const char *             userId,
-  const char *             lockToken,
-  SINGLYLINKEDLIST_HANDLE  feedbackRecordList
+  const char *                                                                                                                                                                                                                                                                                                                                     userId,
+  const char *                                                                                                                                                                                                                                                                                                                                     lockToken,
+  [SINGLYLINKEDLIST_HANDLE](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  feedbackRecordList
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ userId            | 
+ lockToken            | 
+ feedbackRecordList            | 
 
 ## Macro definitions
 

@@ -34,15 +34,32 @@ struct PROVISIONING_QUERY_SPECIFICATION {
   size_t        page_size
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ version            | 
+ query_string            | 
+ registration_id            | 
+ page_size            | 
 #### PROVISIONING_QUERY_RESPONSE
 
 ```C
 struct PROVISIONING_QUERY_RESPONSE {
-  union PROVISIONING_QUERY_RESPONSE::@1  response_arr,
-  size_t                                 response_arr_size,
-  PROVISIONING_QUERY_TYPE                response_arr_type
+  union PROVISIONING_QUERY_RESPONSE::@1                                                                                                                                                                                                                                                                                                            response_arr,
+  size_t                                                                                                                                                                                                                                                                                                                                           response_arr_size,
+  [PROVISIONING_QUERY_TYPE](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  response_arr_type
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ response_arr            | 
+ response_arr_size            | 
+ response_arr_type            | 
 
 ## Macro definitions
 

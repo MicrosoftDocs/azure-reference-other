@@ -31,4 +31,12 @@ struct HTTP_PROXY_IO_CONFIG {
   const char *  password
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ hostname            | 
+ port            | 
+ proxy_hostname            | 
+ proxy_port            | 
+ username            | 
+ password            | 
 

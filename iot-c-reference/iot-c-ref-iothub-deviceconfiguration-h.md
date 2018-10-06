@@ -42,6 +42,10 @@ struct IOTHUB_DEVICE_CONFIGURATION_CONTENT {
   const char *  modulesContent
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ deviceContent            | 
+ modulesContent            | 
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT
 
 ```C
@@ -51,6 +55,11 @@ struct IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT {
   double *       results
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ numQueries            | 
+ queryNames            | 
+ results            | 
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION
 
 ```C
@@ -60,6 +69,11 @@ struct IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION {
   const char **  queryStrings
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ numQueries            | 
+ queryNames            | 
+ queryStrings            | 
 #### IOTHUB_DEVICE_CONFIGURATION_LABELS
 
 ```C
@@ -69,39 +83,123 @@ struct IOTHUB_DEVICE_CONFIGURATION_LABELS {
   const char **  labelValues
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ numLabels            | 
+ labelNames            | 
+ labelValues            | 
 #### IOTHUB_DEVICE_CONFIGURATION
 
 ```C
 struct IOTHUB_DEVICE_CONFIGURATION {
-  int                                             version,
-  const char *                                    schemaVersion,
-  const char *                                    configurationId,
-  const char *                                    targetCondition,
-  const char *                                    eTag,
-  const char *                                    createdTimeUtc,
-  const char *                                    lastUpdatedTimeUtc,
-  int                                             priority,
-  IOTHUB_DEVICE_CONFIGURATION_CONTENT             content,
-  IOTHUB_DEVICE_CONFIGURATION_LABELS              labels,
-  IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT      systemMetricsResult,
-  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  systemMetricsDefinition,
-  IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT      metricResult,
-  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  metricsDefinition
+  int                                                                                                                                                                                                                                                                                                                                                                     version,
+  const char *                                                                                                                                                                                                                                                                                                                                                            schemaVersion,
+  const char *                                                                                                                                                                                                                                                                                                                                                            configurationId,
+  const char *                                                                                                                                                                                                                                                                                                                                                            targetCondition,
+  const char *                                                                                                                                                                                                                                                                                                                                                            eTag,
+  const char *                                                                                                                                                                                                                                                                                                                                                            createdTimeUtc,
+  const char *                                                                                                                                                                                                                                                                                                                                                            lastUpdatedTimeUtc,
+  int                                                                                                                                                                                                                                                                                                                                                                     priority,
+  [IOTHUB_DEVICE_CONFIGURATION_CONTENT](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })             content,
+  [IOTHUB_DEVICE_CONFIGURATION_LABELS](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })              labels,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })      systemMetricsResult,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  systemMetricsDefinition,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })      metricResult,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  metricsDefinition
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ version            | 
+ schemaVersion            | 
+ configurationId            | 
+ targetCondition            | 
+ eTag            | 
+ createdTimeUtc            | 
+ lastUpdatedTimeUtc            | 
+ priority            | 
+ content            | 
+ labels            | 
+ systemMetricsResult            | 
+ systemMetricsDefinition            | 
+ metricResult            | 
+ metricsDefinition            | 
 #### IOTHUB_DEVICE_CONFIGURATION_ADD
 
 ```C
 struct IOTHUB_DEVICE_CONFIGURATION_ADD {
-  int                                             version,
-  const char *                                    configurationId,
-  const char *                                    targetCondition,
-  int                                             priority,
-  IOTHUB_DEVICE_CONFIGURATION_CONTENT             content,
-  IOTHUB_DEVICE_CONFIGURATION_LABELS              labels,
-  IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION  metrics
+  int                                                                                                                                                                                                                                                                                                                                                                     version,
+  const char *                                                                                                                                                                                                                                                                                                                                                            configurationId,
+  const char *                                                                                                                                                                                                                                                                                                                                                            targetCondition,
+  int                                                                                                                                                                                                                                                                                                                                                                     priority,
+  [IOTHUB_DEVICE_CONFIGURATION_CONTENT](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })             content,
+  [IOTHUB_DEVICE_CONFIGURATION_LABELS](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })              labels,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })  metrics
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ version            | 
+ configurationId            | 
+ targetCondition            | 
+ priority            | 
+ content            | 
+ labels            | 
+ metrics            | 
 
 ## Macro definitions
 

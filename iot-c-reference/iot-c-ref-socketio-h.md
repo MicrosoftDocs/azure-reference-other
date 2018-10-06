@@ -37,6 +37,11 @@ struct SOCKETIO_CONFIG {
   void *        accepted_socket
 };
 ```
+Member name                 | Description                                
+----------------------------|----------------
+ hostname            | 
+ port            | 
+ accepted_socket            | 
 
 ## Macro definitions
 
