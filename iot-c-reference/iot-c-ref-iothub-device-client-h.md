@@ -50,7 +50,6 @@ Function Name                  | Description
 
 ```C
 #define IOTHUB_DEVICE_CLIENT_INSTANCE_TYPE
-
 ```
 
 ## Typedef documentation

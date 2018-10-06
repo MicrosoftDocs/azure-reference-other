@@ -26,11 +26,10 @@ Function Name                  | Description
 
 ```C
 #define THREADAPI_RESULT_VALUES \
- THREADAPI_OK, \
- THREADAPI_INVALID_ARG, \
- THREADAPI_NO_MEMORY, \
- THREADAPI_ERROR 
-
+        THREADAPI_OK, \
+        THREADAPI_INVALID_ARG, \
+        THREADAPI_NO_MEMORY, \
+        THREADAPI_ERROR 
 ```
 
 ## Enumeration types
@@ -46,7 +45,6 @@ enum THREADAPI_RESULT {
   THREADAPI_NO_MEMORY,
   THREADAPI_ERROR
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

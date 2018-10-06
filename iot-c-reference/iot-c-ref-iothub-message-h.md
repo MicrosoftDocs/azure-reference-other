@@ -69,21 +69,19 @@ Member name                 | Description
 
 ```C
 #define IOTHUB_MESSAGE_RESULT_VALUES \
- IOTHUB_MESSAGE_OK, \
- IOTHUB_MESSAGE_INVALID_ARG, \
- IOTHUB_MESSAGE_INVALID_TYPE, \
- IOTHUB_MESSAGE_ERROR 
-
+        IOTHUB_MESSAGE_OK, \
+        IOTHUB_MESSAGE_INVALID_ARG, \
+        IOTHUB_MESSAGE_INVALID_TYPE, \
+        IOTHUB_MESSAGE_ERROR 
 ```
 
 #### IOTHUBMESSAGE_CONTENT_TYPE_VALUES
 
 ```C
 #define IOTHUBMESSAGE_CONTENT_TYPE_VALUES \
- IOTHUBMESSAGE_BYTEARRAY, \
- IOTHUBMESSAGE_STRING, \
- IOTHUBMESSAGE_UNKNOWN 
-
+        IOTHUBMESSAGE_BYTEARRAY, \
+        IOTHUBMESSAGE_STRING, \
+        IOTHUBMESSAGE_UNKNOWN 
 ```
 
 ## Enumeration types
@@ -99,7 +97,6 @@ enum IOTHUB_MESSAGE_RESULT {
   IOTHUB_MESSAGE_INVALID_TYPE,
   IOTHUB_MESSAGE_ERROR
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------
@@ -118,7 +115,6 @@ enum IOTHUBMESSAGE_CONTENT_TYPE {
   IOTHUBMESSAGE_STRING,
   IOTHUBMESSAGE_UNKNOWN
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

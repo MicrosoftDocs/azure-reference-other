@@ -29,10 +29,9 @@ Function Name                  | Description
 
 ```C
 #define OPTIONHANDLER_RESULT_VALUES \
- OPTIONHANDLER_OK, \
- OPTIONHANDLER_ERROR, \
- OPTIONHANDLER_INVALIDARG 
-
+        OPTIONHANDLER_OK, \
+        OPTIONHANDLER_ERROR, \
+        OPTIONHANDLER_INVALIDARG 
 ```
 
 ## Enumeration types
@@ -45,7 +44,6 @@ enum OPTIONHANDLER_RESULT {
   OPTIONHANDLER_ERROR,
   OPTIONHANDLER_INVALIDARG
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

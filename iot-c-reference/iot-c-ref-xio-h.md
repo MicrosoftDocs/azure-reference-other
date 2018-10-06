@@ -63,20 +63,18 @@ Member name                 | Description
 
 ```C
 #define IO_SEND_RESULT_VALUES \
- IO_SEND_OK, \
- IO_SEND_ERROR, \
- IO_SEND_CANCELLED 
-
+        IO_SEND_OK, \
+        IO_SEND_ERROR, \
+        IO_SEND_CANCELLED 
 ```
 
 #### IO_OPEN_RESULT_VALUES
 
 ```C
 #define IO_OPEN_RESULT_VALUES \
- IO_OPEN_OK, \
- IO_OPEN_ERROR, \
- IO_OPEN_CANCELLED 
-
+        IO_OPEN_OK, \
+        IO_OPEN_ERROR, \
+        IO_OPEN_CANCELLED 
 ```
 
 ## Enumeration types
@@ -89,7 +87,6 @@ enum IO_SEND_RESULT {
   IO_SEND_ERROR,
   IO_SEND_CANCELLED
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------
@@ -105,7 +102,6 @@ enum IO_OPEN_RESULT {
   IO_OPEN_ERROR,
   IO_OPEN_CANCELLED
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

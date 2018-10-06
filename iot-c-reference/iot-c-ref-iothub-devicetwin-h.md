@@ -34,11 +34,10 @@ Function Name                  | Description
 
 ```C
 #define IOTHUB_DEVICE_TWIN_RESULT_VALUES \
- IOTHUB_DEVICE_TWIN_OK, \
- IOTHUB_DEVICE_TWIN_INVALID_ARG, \
- IOTHUB_DEVICE_TWIN_ERROR, \
- IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR 
-
+        IOTHUB_DEVICE_TWIN_OK, \
+        IOTHUB_DEVICE_TWIN_INVALID_ARG, \
+        IOTHUB_DEVICE_TWIN_ERROR, \
+        IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR 
 ```
 
 ## Enumeration types
@@ -52,7 +51,6 @@ enum IOTHUB_DEVICE_TWIN_RESULT {
   IOTHUB_DEVICE_TWIN_ERROR,
   IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

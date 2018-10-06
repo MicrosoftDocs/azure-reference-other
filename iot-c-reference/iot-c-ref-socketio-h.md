@@ -48,7 +48,6 @@ Member name                 | Description
 #### RECEIVE_BYTES_VALUE
 
 ```C
-#define RECEIVE_BYTES_VALUE 64 
-
+#define RECEIVE_BYTES_VALUE  64 
 ```
 

@@ -38,10 +38,9 @@ Function Name                  | Description
 
 ```C
 #define ATTESTATION_TYPE_VALUES \
- ATTESTATION_TYPE_NONE, \
- ATTESTATION_TYPE_TPM, \
- ATTESTATION_TYPE_X509 
-
+        ATTESTATION_TYPE_NONE, \
+        ATTESTATION_TYPE_TPM, \
+        ATTESTATION_TYPE_X509 
 ```
 
 ## Enumeration types
@@ -54,7 +53,6 @@ enum ATTESTATION_TYPE {
   ATTESTATION_TYPE_TPM,
   ATTESTATION_TYPE_X509
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

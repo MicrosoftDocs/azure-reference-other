@@ -28,9 +28,8 @@ Function Name                  | Description
 
 ```C
 #define LOCK_RESULT_VALUES \
- LOCK_OK, \
- LOCK_ERROR 
-
+        LOCK_OK, \
+        LOCK_ERROR 
 ```
 
 ## Enumeration types
@@ -44,7 +43,6 @@ enum LOCK_RESULT {
   LOCK_OK,
   LOCK_ERROR
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

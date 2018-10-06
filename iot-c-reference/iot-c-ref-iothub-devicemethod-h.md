@@ -28,11 +28,10 @@ Function Name                  | Description
 
 ```C
 #define IOTHUB_DEVICE_METHOD_RESULT_VALUES \
- IOTHUB_DEVICE_METHOD_OK, \
- IOTHUB_DEVICE_METHOD_INVALID_ARG, \
- IOTHUB_DEVICE_METHOD_ERROR, \
- IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR 
-
+        IOTHUB_DEVICE_METHOD_OK, \
+        IOTHUB_DEVICE_METHOD_INVALID_ARG, \
+        IOTHUB_DEVICE_METHOD_ERROR, \
+        IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR 
 ```
 
 ## Enumeration types
@@ -46,7 +45,6 @@ enum IOTHUB_DEVICE_METHOD_RESULT {
   IOTHUB_DEVICE_METHOD_ERROR,
   IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

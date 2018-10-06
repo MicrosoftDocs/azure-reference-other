@@ -80,26 +80,23 @@ Member name                 | Description
 #### PROVISIONING_BULK_OPERATION_VERSION_1
 
 ```C
-#define PROVISIONING_BULK_OPERATION_VERSION_1 1 
-
+#define PROVISIONING_BULK_OPERATION_VERSION_1  1 
 ```
 
 #### PROVISIONING_BULK_OPERATION_MODE_VALUES
 
 ```C
 #define PROVISIONING_BULK_OPERATION_MODE_VALUES \
- BULK_OP_CREATE, \
- BULK_OP_UPDATE, \
- BULK_OP_UPDATE_IF_MATCH_ETAG, \
- BULK_OP_DELETE 
-
+        BULK_OP_CREATE, \
+        BULK_OP_UPDATE, \
+        BULK_OP_UPDATE_IF_MATCH_ETAG, \
+        BULK_OP_DELETE 
 ```
 
 #### PROVISIONING_BULK_OPERATION_TYPE_VALUES
 
 ```C
-#define PROVISIONING_BULK_OPERATION_TYPE_VALUES BULK_OP_INDIVIDUAL_ENROLLMENT 
-
+#define PROVISIONING_BULK_OPERATION_TYPE_VALUES        BULK_OP_INDIVIDUAL_ENROLLMENT 
 ```
 
 ## Enumeration types
@@ -113,7 +110,6 @@ enum PROVISIONING_BULK_OPERATION_MODE {
   BULK_OP_UPDATE_IF_MATCH_ETAG,
   BULK_OP_DELETE
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------
@@ -128,7 +124,6 @@ Constant                    | Description
 enum PROVISIONING_BULK_OPERATION_TYPE {
   BULK_OP_INDIVIDUAL_ENROLLMENT
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

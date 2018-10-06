@@ -48,9 +48,8 @@ Function Name                  | Description
 
 ```C
 #define TRACING_STATUS_VALUES \
- TRACING_STATUS_ON, \
- TRACING_STATUS_OFF 
-
+        TRACING_STATUS_ON, \
+        TRACING_STATUS_OFF 
 ```
 
 ## Enumeration types
@@ -62,7 +61,6 @@ enum TRACING_STATUS {
   TRACING_STATUS_ON,
   TRACING_STATUS_OFF
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

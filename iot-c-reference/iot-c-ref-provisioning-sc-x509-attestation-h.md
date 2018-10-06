@@ -36,11 +36,10 @@ Function Name                  | Description
 
 ```C
 #define X509_CERTIFICATE_TYPE_VALUES \
- X509_CERTIFICATE_TYPE_NONE, \
- X509_CERTIFICATE_TYPE_CLIENT, \
- X509_CERTIFICATE_TYPE_SIGNING, \
- X509_CERTIFICATE_TYPE_CA_REFERENCES 
-
+        X509_CERTIFICATE_TYPE_NONE, \
+        X509_CERTIFICATE_TYPE_CLIENT, \
+        X509_CERTIFICATE_TYPE_SIGNING, \
+        X509_CERTIFICATE_TYPE_CA_REFERENCES 
 ```
 
 ## Enumeration types
@@ -54,7 +53,6 @@ enum X509_CERTIFICATE_TYPE {
   X509_CERTIFICATE_TYPE_SIGNING,
   X509_CERTIFICATE_TYPE_CA_REFERENCES
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

@@ -19,21 +19,18 @@ Function Name                  | Description
 #### IOTHUB_SERVICE_CLIENT_TYPE_PREFIX
 
 ```C
-#define IOTHUB_SERVICE_CLIENT_TYPE_PREFIX "iothubserviceclient" 
-
+#define IOTHUB_SERVICE_CLIENT_TYPE_PREFIX  "iothubserviceclient" 
 ```
 
 #### IOTHUB_SERVICE_CLIENT_BACKSLASH
 
 ```C
-#define IOTHUB_SERVICE_CLIENT_BACKSLASH "/" 
-
+#define IOTHUB_SERVICE_CLIENT_BACKSLASH  "/" 
 ```
 
 #### IOTHUB_SERVICE_CLIENT_VERSION
 
 ```C
-#define IOTHUB_SERVICE_CLIENT_VERSION "1.1.0" 
-
+#define IOTHUB_SERVICE_CLIENT_VERSION  "1.1.0" 
 ```
 

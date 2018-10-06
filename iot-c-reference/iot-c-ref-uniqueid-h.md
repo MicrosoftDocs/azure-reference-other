@@ -26,10 +26,9 @@ Function Name                  | Description
 
 ```C
 #define UNIQUEID_RESULT_VALUES \
- UNIQUEID_OK, \
- UNIQUEID_INVALID_ARG, \
- UNIQUEID_ERROR 
-
+        UNIQUEID_OK, \
+        UNIQUEID_INVALID_ARG, \
+        UNIQUEID_ERROR 
 ```
 
 ## Enumeration types
@@ -42,7 +41,6 @@ enum UNIQUEID_RESULT {
   UNIQUEID_INVALID_ARG,
   UNIQUEID_ERROR
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

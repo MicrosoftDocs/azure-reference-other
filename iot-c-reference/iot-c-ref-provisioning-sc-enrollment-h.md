@@ -63,10 +63,9 @@ Function Name                  | Description
 
 ```C
 #define PROVISIONING_STATUS_VALUES \
- PROVISIONING_STATUS_NONE, \
- PROVISIONING_STATUS_ENABLED, \
- PROVISIONING_STATUS_DISABLED 
-
+        PROVISIONING_STATUS_NONE, \
+        PROVISIONING_STATUS_ENABLED, \
+        PROVISIONING_STATUS_DISABLED 
 ```
 
 ## Enumeration types
@@ -79,7 +78,6 @@ enum PROVISIONING_STATUS {
   PROVISIONING_STATUS_ENABLED,
   PROVISIONING_STATUS_DISABLED
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

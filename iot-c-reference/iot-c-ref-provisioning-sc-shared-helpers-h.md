@@ -33,9 +33,8 @@ Function Name                  | Description
 
 ```C
 #define NECESSITY_VALUES \
- REQUIRED, \
- OPTIONAL 
-
+        REQUIRED, \
+        OPTIONAL 
 ```
 
 ## Enumeration types
@@ -47,7 +46,6 @@ enum NECESSITY {
   REQUIRED,
   OPTIONAL
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

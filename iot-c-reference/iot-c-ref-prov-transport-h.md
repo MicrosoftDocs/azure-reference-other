@@ -29,20 +29,18 @@ Function Name                  | Description
 
 ```C
 #define TRANSPORT_HSM_TYPE_VALUES \
- TRANSPORT_HSM_TYPE_TPM, \
- TRANSPORT_HSM_TYPE_X509, \
- TRANSPORT_HSM_TYPE_SYMM_KEY 
-
+        TRANSPORT_HSM_TYPE_TPM, \
+        TRANSPORT_HSM_TYPE_X509, \
+        TRANSPORT_HSM_TYPE_SYMM_KEY 
 ```
 
 #### PROV_DEVICE_TRANSPORT_RESULT_VALUES
 
 ```C
 #define PROV_DEVICE_TRANSPORT_RESULT_VALUES \
- PROV_DEVICE_TRANSPORT_RESULT_OK, \
- PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED, \
- PROV_DEVICE_TRANSPORT_RESULT_ERROR 
-
+        PROV_DEVICE_TRANSPORT_RESULT_OK, \
+        PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED, \
+        PROV_DEVICE_TRANSPORT_RESULT_ERROR 
 ```
 
 ## Enumeration types
@@ -55,7 +53,6 @@ enum TRANSPORT_HSM_TYPE {
   TRANSPORT_HSM_TYPE_X509,
   TRANSPORT_HSM_TYPE_SYMM_KEY
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------
@@ -71,7 +68,6 @@ enum PROV_DEVICE_TRANSPORT_RESULT {
   PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED,
   PROV_DEVICE_TRANSPORT_RESULT_ERROR
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

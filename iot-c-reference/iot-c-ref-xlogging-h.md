@@ -25,66 +25,58 @@ Function Name                  | Description
 #### FUNC_NAME
 
 ```C
-#define FUNC_NAME __func__ 
-
+#define FUNC_NAME  __func__ 
 ```
 
 #### TEMP_BUFFER_SIZE
 
 ```C
-#define TEMP_BUFFER_SIZE 1024 
-
+#define TEMP_BUFFER_SIZE  1024 
 ```
 
 #### MESSAGE_BUFFER_SIZE
 
 ```C
-#define MESSAGE_BUFFER_SIZE 260 
-
+#define MESSAGE_BUFFER_SIZE  260 
 ```
 
 #### LOG_NONE
 
 ```C
-#define LOG_NONE 0x00 
-
+#define LOG_NONE  0x00 
 ```
 
 #### LOG_LINE
 
 ```C
-#define LOG_LINE 0x01 
-
+#define LOG_LINE  0x01 
 ```
 
 #### LOG
 
 ```C
 #define LOG \
- LOGGER_LOG, \
- xlogging_get_log_function, \
- FUNC_NAME 
-
+        LOGGER_LOG, \
+        xlogging_get_log_function, \
+        FUNC_NAME 
 ```
 
 #### LogInfo
 
 ```C
 #define LogInfo \
- LOG, \
- AZ_LOG_INFO, \
- LOG_LINE 
-
+        LOG, \
+        AZ_LOG_INFO, \
+        LOG_LINE 
 ```
 
 #### LogError
 
 ```C
 #define LogError \
- LOG, \
- AZ_LOG_ERROR, \
- LOG_LINE 
-
+        LOG, \
+        AZ_LOG_ERROR, \
+        LOG_LINE 
 ```
 
 ## Enumeration types
@@ -97,7 +89,6 @@ enum LOG_CATEGORY {
   AZ_LOG_INFO,
   AZ_LOG_TRACE
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

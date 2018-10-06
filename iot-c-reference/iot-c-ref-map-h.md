@@ -36,13 +36,12 @@ Function Name                  | Description
 
 ```C
 #define MAP_RESULT_VALUES \
- MAP_OK, \
- MAP_ERROR, \
- MAP_INVALIDARG, \
- MAP_KEYEXISTS, \
- MAP_KEYNOTFOUND, \
- MAP_FILTER_REJECT 
-
+        MAP_OK, \
+        MAP_ERROR, \
+        MAP_INVALIDARG, \
+        MAP_KEYEXISTS, \
+        MAP_KEYNOTFOUND, \
+        MAP_FILTER_REJECT 
 ```
 
 ## Enumeration types
@@ -60,7 +59,6 @@ enum MAP_RESULT {
   MAP_KEYNOTFOUND,
   MAP_FILTER_REJECT
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

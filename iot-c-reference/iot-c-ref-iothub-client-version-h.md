@@ -19,7 +19,6 @@ Function Name                  | Description
 #### IOTHUB_SDK_VERSION
 
 ```C
-#define IOTHUB_SDK_VERSION "1.2.9" 
-
+#define IOTHUB_SDK_VERSION  "1.2.9" 
 ```
 

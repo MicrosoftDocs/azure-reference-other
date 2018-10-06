@@ -53,18 +53,16 @@ Member name                 | Description
 
 ```C
 #define IOTHUB_DEVICE_STATUS_VALUES \
- IOTHUB_DEVICE_STATUS_ENABLED, \
- IOTHUB_DEVICE_STATUS_DISABLED 
-
+        IOTHUB_DEVICE_STATUS_ENABLED, \
+        IOTHUB_DEVICE_STATUS_DISABLED 
 ```
 
 #### IOTHUB_DEVICE_CONNECTION_STATE_VALUES
 
 ```C
 #define IOTHUB_DEVICE_CONNECTION_STATE_VALUES \
- IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED, \
- IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED 
-
+        IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED, \
+        IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED 
 ```
 
 ## Enumeration types
@@ -76,7 +74,6 @@ enum IOTHUB_DEVICE_STATUS {
   IOTHUB_DEVICE_STATUS_ENABLED,
   IOTHUB_DEVICE_STATUS_DISABLED
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------
@@ -90,7 +87,6 @@ enum IOTHUB_DEVICE_CONNECTION_STATE {
   IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED,
   IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------

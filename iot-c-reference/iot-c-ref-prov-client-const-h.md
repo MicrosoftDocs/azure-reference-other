@@ -13,7 +13,6 @@ Stub comment for details. Please update this comment.
 #### PROV_DEVICE_CLIENT_VERSION
 
 ```C
-#define PROV_DEVICE_CLIENT_VERSION "1.2.9" 
-
+#define PROV_DEVICE_CLIENT_VERSION  "1.2.9" 
 ```
 

@@ -35,7 +35,6 @@ Function Name                  | Description
 
 ```C
 #define PROV_DEVICE_CLIENT_INSTANCE_TYPE
-
 ```
 
 ## Typedef documentation

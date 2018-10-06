@@ -15,14 +15,12 @@ Stub comment for details. Please update this comment.
 #### UMOCK_C_PROD_ARG_IN_SIGNATURE
 
 ```C
-#define UMOCK_C_PROD_ARG_IN_SIGNATURE arg_type arg_name IFCOMMA_##count 
-
+#define UMOCK_C_PROD_ARG_IN_SIGNATURE  arg_type arg_name IFCOMMA_##count 
 ```
 
 #### MOCKABLE_FUNCTION
 
 ```C
-#define MOCKABLE_FUNCTION UMOCK_C_PROD_ARG_IN_SIGNATURE 
-
+#define MOCKABLE_FUNCTION        UMOCK_C_PROD_ARG_IN_SIGNATURE 
 ```
 

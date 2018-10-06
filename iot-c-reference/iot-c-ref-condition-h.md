@@ -29,11 +29,10 @@ Function Name                  | Description
 
 ```C
 #define COND_RESULT_VALUES \
- COND_OK, \
- COND_INVALID_ARG, \
- COND_ERROR, \
- COND_TIMEOUT 
-
+        COND_OK, \
+        COND_INVALID_ARG, \
+        COND_ERROR, \
+        COND_TIMEOUT 
 ```
 
 ## Enumeration types
@@ -49,7 +48,6 @@ enum COND_RESULT {
   COND_ERROR,
   COND_TIMEOUT
 }
-
 ```
 Constant                    | Description                                
 ----------------------------|----------------
