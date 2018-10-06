@@ -63,3 +63,17 @@ Constant                    | Description
  X509_CERTIFICATE_TYPE_SIGNING            | 
  X509_CERTIFICATE_TYPE_CA_REFERENCES            | 
 
+## Typedef documentation
+
+#### X509_ATTESTATION_HANDLE
+
+```C
+typedef struct X509_ATTESTATION_TAG* X509_ATTESTATION_HANDLE;
+```
+
+#### X509_CERTIFICATE_HANDLE
+
+```C
+typedef struct X509_CERTIFICATE_WITH_INFO_TAG* X509_CERTIFICATE_HANDLE;
+```
+

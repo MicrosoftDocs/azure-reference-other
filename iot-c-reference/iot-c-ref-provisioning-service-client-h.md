@@ -69,3 +69,13 @@ Constant                    | Description
  TRACING_STATUS_ON            | 
  TRACING_STATUS_OFF            | 
 
+## Typedef documentation
+
+#### PROVISIONING_SERVICE_CLIENT_HANDLE
+
+Handle to hide struct and use it in consequent APIs. 
+
+```C
+typedef struct PROVISIONING_SERVICE_CLIENT_TAG* PROVISIONING_SERVICE_CLIENT_HANDLE;
+```
+

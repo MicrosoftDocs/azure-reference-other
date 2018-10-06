@@ -462,3 +462,13 @@ Constant                    | Description
  IOTHUB_REGISTRYMANAGER_AUTH_NONE            | 
  IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN            | 
 
+## Typedef documentation
+
+#### IOTHUB_REGISTRYMANAGER_HANDLE
+
+Handle to hide struct and use it in consequent APIs. 
+
+```C
+typedef struct IOTHUB_REGISTRYMANAGER_TAG* IOTHUB_REGISTRYMANAGER_HANDLE;
+```
+

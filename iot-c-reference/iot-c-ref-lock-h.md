@@ -51,3 +51,11 @@ Constant                    | Description
  LOCK_OK            | 
  LOCK_ERROR            | 
 
+## Typedef documentation
+
+#### LOCK_HANDLE
+
+```C
+typedef void* LOCK_HANDLE;
+```
+

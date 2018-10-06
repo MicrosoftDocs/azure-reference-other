@@ -42,3 +42,11 @@ Function Name                  | Description
 [IoTHubDeviceClient_LL_UploadToBlob](./iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-uploadtoblob.md)            | This API uploads to Azure Storage the content pointed to by `source` having the size `size` under the blob name devicename/.
 [IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob](./iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-uploadmultipleblockstoblob.md)            | This API uploads to Azure Storage the content provided block by block by `getDataCallback` under the blob name devicename/.
 
+## Typedef documentation
+
+#### IOTHUB_DEVICE_CLIENT_LL_HANDLE
+
+```C
+typedef struct IOTHUB_CLIENT_CORE_LL_HANDLE_DATA_TAG* IOTHUB_DEVICE_CLIENT_LL_HANDLE;
+```
+

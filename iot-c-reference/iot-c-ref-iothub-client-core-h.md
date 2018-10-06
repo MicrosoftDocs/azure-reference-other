@@ -53,3 +53,11 @@ Function Name                  | Description
 
 ```
 
+## Typedef documentation
+
+#### IOTHUB_CLIENT_CORE_HANDLE
+
+```C
+typedef struct IOTHUB_CLIENT_CORE_INSTANCE_TAG* IOTHUB_CLIENT_CORE_HANDLE;
+```
+

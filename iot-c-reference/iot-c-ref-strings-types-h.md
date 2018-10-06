@@ -8,3 +8,11 @@ Stub comment for brief. Please update this comment.
 
 Stub comment for details. Please update this comment.
 
+## Typedef documentation
+
+#### STRING_HANDLE
+
+```C
+typedef struct STRING_TAG* STRING_HANDLE;
+```
+

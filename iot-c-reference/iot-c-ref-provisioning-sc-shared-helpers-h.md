@@ -54,3 +54,17 @@ Constant                    | Description
  REQUIRED            | 
  OPTIONAL            | 
 
+## Typedef documentation
+
+#### TO_JSON_FUNCTION
+
+```C
+typedef JSON_Value*(* TO_JSON_FUNCTION) (void *handle);
+```
+
+#### FROM_JSON_FUNCTION
+
+```C
+typedef void*(* FROM_JSON_FUNCTION) (JSON_Object *root_object);
+```
+

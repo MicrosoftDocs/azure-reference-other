@@ -126,3 +126,11 @@ Constant                    | Description
  IOTHUBMESSAGE_STRING            | 
  IOTHUBMESSAGE_UNKNOWN            | 
 
+## Typedef documentation
+
+#### IOTHUB_MESSAGE_HANDLE
+
+```C
+typedef struct IOTHUB_MESSAGE_HANDLE_DATA_TAG* IOTHUB_MESSAGE_HANDLE;
+```
+

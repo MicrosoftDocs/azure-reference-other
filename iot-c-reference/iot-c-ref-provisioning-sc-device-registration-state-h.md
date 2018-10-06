@@ -67,3 +67,11 @@ Constant                    | Description
  REGISTRATION_STATUS_FAILED            | 
  REGISTRATION_STATUS_DISABLED            | 
 
+## Typedef documentation
+
+#### DEVICE_REGISTRATION_STATE_HANDLE
+
+```C
+typedef struct DEVICE_REGISTRATION_STATE_TAG* DEVICE_REGISTRATION_STATE_HANDLE;
+```
+

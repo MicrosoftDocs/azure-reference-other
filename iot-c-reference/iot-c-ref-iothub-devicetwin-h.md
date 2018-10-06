@@ -61,3 +61,13 @@ Constant                    | Description
  IOTHUB_DEVICE_TWIN_ERROR            | 
  IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR            | 
 
+## Typedef documentation
+
+#### IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE
+
+Handle to hide struct and use it in consequent APIs. 
+
+```C
+typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_TAG* IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE;
+```
+

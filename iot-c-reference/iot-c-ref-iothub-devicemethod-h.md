@@ -55,3 +55,13 @@ Constant                    | Description
  IOTHUB_DEVICE_METHOD_ERROR            | 
  IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR            | 
 
+## Typedef documentation
+
+#### IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE
+
+Handle to hide struct and use it in consequent APIs. 
+
+```C
+typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_TAG* IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE;
+```
+

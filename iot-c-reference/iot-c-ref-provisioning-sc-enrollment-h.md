@@ -87,3 +87,19 @@ Constant                    | Description
  PROVISIONING_STATUS_ENABLED            | 
  PROVISIONING_STATUS_DISABLED            | 
 
+## Typedef documentation
+
+#### INDIVIDUAL_ENROLLMENT_HANDLE
+
+Handles to hide structs and use them in consequent APIs. 
+
+```C
+typedef struct INDIVIDUAL_ENROLLMENT_TAG* INDIVIDUAL_ENROLLMENT_HANDLE;
+```
+
+#### ENROLLMENT_GROUP_HANDLE
+
+```C
+typedef struct ENROLLMENT_GROUP_TAG* ENROLLMENT_GROUP_HANDLE;
+```
+

@@ -53,3 +53,11 @@ Function Name                  | Description
 
 ```
 
+## Typedef documentation
+
+#### IOTHUB_DEVICE_CLIENT_HANDLE
+
+```C
+typedef IOTHUB_CLIENT_CORE_HANDLE IOTHUB_DEVICE_CLIENT_HANDLE;
+```
+

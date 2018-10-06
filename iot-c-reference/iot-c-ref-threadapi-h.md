@@ -55,3 +55,17 @@ Constant                    | Description
  THREADAPI_NO_MEMORY            | 
  THREADAPI_ERROR            | 
 
+## Typedef documentation
+
+#### THREAD_START_FUNC
+
+```C
+typedef int(* THREAD_START_FUNC) (void *);
+```
+
+#### THREAD_HANDLE
+
+```C
+typedef void* THREAD_HANDLE;
+```
+

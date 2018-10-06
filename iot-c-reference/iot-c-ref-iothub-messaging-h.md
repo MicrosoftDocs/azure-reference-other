@@ -23,3 +23,11 @@ Function Name                  | Description
 [IoTHubMessaging_SetFeedbackMessageCallback](./iot-c-ref-iothub-messaging-h/iothubmessaging-setfeedbackmessagecallback.md)            | This API specifies a callback to be used when the device receives the message.
 [IoTHubMessaging_SetTrustedCert](./iot-c-ref-iothub-messaging-h/iothubmessaging-settrustedcert.md)            | This function is meant to be called by the user when to set the trusted certificate on the tls connection.
 
+## Typedef documentation
+
+#### IOTHUB_MESSAGING_CLIENT_HANDLE
+
+```C
+typedef struct IOTHUB_MESSAGING_CLIENT_INSTANCE_TAG* IOTHUB_MESSAGING_CLIENT_HANDLE;
+```
+

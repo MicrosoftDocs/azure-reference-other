@@ -175,3 +175,11 @@ Constant                    | Description
  HTTPAPI_REQUEST_PATCH            | 
  HTTPAPI_REQUEST_HEAD            | 
 
+## Typedef documentation
+
+#### HTTP_HANDLE
+
+```C
+typedef struct HTTP_HANDLE_DATA_TAG* HTTP_HANDLE;
+```
+

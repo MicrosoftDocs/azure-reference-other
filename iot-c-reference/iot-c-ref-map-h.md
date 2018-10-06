@@ -71,3 +71,17 @@ Constant                    | Description
  MAP_KEYNOTFOUND            | 
  MAP_FILTER_REJECT            | 
 
+## Typedef documentation
+
+#### MAP_HANDLE
+
+```C
+typedef struct MAP_HANDLE_DATA_TAG* MAP_HANDLE;
+```
+
+#### MAP_FILTER_CALLBACK
+
+```C
+typedef int(* MAP_FILTER_CALLBACK) (const char *mapProperty, const char *mapValue);
+```
+

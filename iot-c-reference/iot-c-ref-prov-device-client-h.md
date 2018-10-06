@@ -38,3 +38,11 @@ Function Name                  | Description
 
 ```
 
+## Typedef documentation
+
+#### PROV_DEVICE_HANDLE
+
+```C
+typedef struct PROV_DEVICE_INSTANCE_TAG* PROV_DEVICE_HANDLE;
+```
+

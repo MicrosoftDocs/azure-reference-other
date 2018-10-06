@@ -173,3 +173,29 @@ Constant                    | Description
  IOTHUB_MESSAGING_DEVICE_EXIST            | 
  IOTHUB_MESSAGING_CALLBACK_NOT_SET            | 
 
+## Typedef documentation
+
+#### IOTHUB_MESSAGING_HANDLE
+
+```C
+typedef struct IOTHUB_MESSAGING_TAG* IOTHUB_MESSAGING_HANDLE;
+```
+
+#### IOTHUB_OPEN_COMPLETE_CALLBACK
+
+```C
+typedef void(* IOTHUB_OPEN_COMPLETE_CALLBACK) (void *context);
+```
+
+#### IOTHUB_SEND_COMPLETE_CALLBACK
+
+```C
+typedef void(* IOTHUB_SEND_COMPLETE_CALLBACK) (void *context, IOTHUB_MESSAGING_RESULT messagingResult);
+```
+
+#### IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK
+
+```C
+typedef void(* IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK) (void *context, IOTHUB_SERVICE_FEEDBACK_BATCH *feedbackBatch);
+```
+

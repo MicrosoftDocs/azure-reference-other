@@ -97,3 +97,13 @@ Constant                    | Description
  IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED            | 
  IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED            | 
 
+## Typedef documentation
+
+#### IOTHUB_SERVICE_CLIENT_AUTH_HANDLE
+
+Handle to hide struct and use it in consequent APIs. 
+
+```C
+typedef struct IOTHUB_SERVICE_CLIENT_AUTH_TAG* IOTHUB_SERVICE_CLIENT_AUTH_HANDLE;
+```
+

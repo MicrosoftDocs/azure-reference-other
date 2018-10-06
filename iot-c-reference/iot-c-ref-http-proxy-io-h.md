@@ -33,7 +33,7 @@ struct HTTP_PROXY_IO_CONFIG {
 ```
 Member name                 | Description                                
 ----------------------------|----------------
- hostname            | Stub comment. Please update this comment.
+ hostname            | 
  port            | 
  proxy_hostname            | 
  proxy_port            | 

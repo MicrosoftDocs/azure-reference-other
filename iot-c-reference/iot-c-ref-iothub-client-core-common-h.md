@@ -499,3 +499,90 @@ Constant                    | Description
  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_OK            | 
  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_ABORT            | 
 
+## Typedef documentation
+
+#### IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK
+
+```C
+typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK) (IOTHUB_CLIENT_FILE_UPLOAD_RESULT result, void *userContextCallback);
+```
+
+#### IOTHUB_METHOD_INVOKE_CALLBACK
+
+```C
+typedef void(* IOTHUB_METHOD_INVOKE_CALLBACK) (IOTHUB_CLIENT_RESULT result, int responseStatus, unsigned char *responsePayload, size_t responsePayloadSize, void *context);
+```
+
+#### IOTHUBTRANSPORT_CONFIG
+
+```C
+typedef struct IOTHUBTRANSPORT_CONFIG_TAG IOTHUBTRANSPORT_CONFIG;
+```
+
+#### IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK
+
+```C
+typedef void(* IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK) (IOTHUB_CLIENT_CONFIRMATION_RESULT result, void *userContextCallback);
+```
+
+#### IOTHUB_CLIENT_CONNECTION_STATUS_CALLBACK
+
+```C
+typedef void(* IOTHUB_CLIENT_CONNECTION_STATUS_CALLBACK) (IOTHUB_CLIENT_CONNECTION_STATUS result, IOTHUB_CLIENT_CONNECTION_STATUS_REASON reason, void *userContextCallback);
+```
+
+#### IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC
+
+```C
+typedef IOTHUBMESSAGE_DISPOSITION_RESULT(* IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC) (IOTHUB_MESSAGE_HANDLE message, void *userContextCallback);
+```
+
+#### IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK
+
+```C
+typedef void(* IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK) (DEVICE_TWIN_UPDATE_STATE update_state, const unsigned char *payLoad, size_t size, void *userContextCallback);
+```
+
+#### IOTHUB_CLIENT_REPORTED_STATE_CALLBACK
+
+```C
+typedef void(* IOTHUB_CLIENT_REPORTED_STATE_CALLBACK) (int status_code, void *userContextCallback);
+```
+
+#### IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC
+
+```C
+typedef int(* IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC) (const char *method_name, const unsigned char *payload, size_t size, unsigned char **response, size_t *response_size, void *userContextCallback);
+```
+
+#### IOTHUB_CLIENT_INBOUND_DEVICE_METHOD_CALLBACK
+
+```C
+typedef int(* IOTHUB_CLIENT_INBOUND_DEVICE_METHOD_CALLBACK) (const char *method_name, const unsigned char *payload, size_t size, METHOD_HANDLE method_id, void *userContextCallback);
+```
+
+#### IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK
+
+Callback invoked by IoTHubClient_UploadMultipleBlocksToBlobAsync requesting the chunks of data to be uploaded. 
+
+```C
+typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK) (IOTHUB_CLIENT_FILE_UPLOAD_RESULT result, unsigned char const **data, size_t *size, void *context);
+```
+
+## Parameters
+* `result` The result of the upload of the previous block of data provided by the user (IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX only) 
+
+* `data` Next block of data to be uploaded, to be provided by the user when this callback is invoked. 
+
+* `size` Size of the data parameter. 
+
+* `context` User context provided on the call to IoTHubClient_UploadMultipleBlocksToBlobAsync. 
+
+If the user wants to abort the upload, the callback should return IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_ABORT It should return IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_OK otherwise. If a NULL is provided for parameter "data" and/or zero is provided for "size", the user indicates to the client that the complete file has been uploaded. In such case this callback will be invoked only once more to indicate the status of the final block upload. If result is not FILE_UPLOAD_OK, the upload is cancelled and this callback stops being invoked. When this callback is called for the last time, no data or size is expected, so data and size are NULL 
+
+#### IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX
+
+```C
+typedef IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT(* IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX) (IOTHUB_CLIENT_FILE_UPLOAD_RESULT result, unsigned char const **data, size_t *size, void *context);
+```
+

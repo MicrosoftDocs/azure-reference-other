@@ -62,3 +62,11 @@ Constant                    | Description
  ATTESTATION_TYPE_TPM            | 
  ATTESTATION_TYPE_X509            | 
 
+## Typedef documentation
+
+#### ATTESTATION_MECHANISM_HANDLE
+
+```C
+typedef struct ATTESTATION_MECHANISM_TAG* ATTESTATION_MECHANISM_HANDLE;
+```
+

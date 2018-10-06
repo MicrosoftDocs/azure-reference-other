@@ -58,3 +58,11 @@ Constant                    | Description
  COND_ERROR            | 
  COND_TIMEOUT            | 
 
+## Typedef documentation
+
+#### COND_HANDLE
+
+```C
+typedef void* COND_HANDLE;
+```
+

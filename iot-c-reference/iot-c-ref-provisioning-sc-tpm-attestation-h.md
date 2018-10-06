@@ -18,3 +18,11 @@ Function Name                  | Description
 --------------------------------|---------------------------------------------
 [tpmAttestation_getEndorsementKey](./iot-c-ref-provisioning-sc-tpm-attestation-h/tpmattestation-getendorsementkey.md)            | 
 
+## Typedef documentation
+
+#### TPM_ATTESTATION_HANDLE
+
+```C
+typedef struct TPM_ATTESTATION_TAG* TPM_ATTESTATION_HANDLE;
+```
+

@@ -79,3 +79,17 @@ Constant                    | Description
  PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED            | 
  PROV_DEVICE_TRANSPORT_RESULT_ERROR            | 
 
+## Typedef documentation
+
+#### PROV_DEVICE_TRANSPORT_PROVIDER
+
+```C
+typedef struct PROV_DEVICE_TRANSPORT_PROVIDER_TAG PROV_DEVICE_TRANSPORT_PROVIDER;
+```
+
+#### PROV_DEVICE_TRANSPORT_HANDLE
+
+```C
+typedef void* PROV_DEVICE_TRANSPORT_HANDLE;
+```
+
