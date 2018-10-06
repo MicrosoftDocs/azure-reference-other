@@ -20,9 +20,33 @@ Function Name                  | Description
 [UNIQUEID_RESULT_FromString](./iot-c-ref-uniqueid-h/uniqueid-result-fromstring.md)            | 
 [UniqueId_Generate](./iot-c-ref-uniqueid-h/uniqueid-generate.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-UNIQUEID_RESULT_VALUES            | 
+#### UNIQUEID_RESULT_VALUES
+
+```C
+#define UNIQUEID_RESULT_VALUES \
+ UNIQUEID_OK, \
+ UNIQUEID_INVALID_ARG, \
+ UNIQUEID_ERROR 
+
+```
+
+## Enumeration types
+
+#### UNIQUEID_RESULT
+
+```C
+enum UNIQUEID_RESULT {
+  UNIQUEID_OK,
+  UNIQUEID_INVALID_ARG,
+  UNIQUEID_ERROR
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ UNIQUEID_OK            | 
+ UNIQUEID_INVALID_ARG            | 
+ UNIQUEID_ERROR            | 
 

@@ -23,12 +23,3 @@ Function Name                  | Description
 [initialTwin_getDesiredProperties](./iot-c-ref-provisioning-sc-twin-h/initialtwin-getdesiredproperties.md)            | 
 [initialTwin_setDesiredProperties](./iot-c-ref-provisioning-sc-twin-h/initialtwin-setdesiredproperties.md)            | 
 
-## Typedefs
-
-#### INITIAL_TWIN_HANDLE
-
-```C
-typedef struct INITIAL_TWIN_TAG * INITIAL_TWIN_HANDLE;
-
-```
-

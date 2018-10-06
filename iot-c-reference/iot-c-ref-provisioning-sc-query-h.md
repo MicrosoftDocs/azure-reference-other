@@ -44,11 +44,50 @@ struct PROVISIONING_QUERY_RESPONSE {
 };
 ```
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-PROVISIONING_QUERY_SPECIFICATION_VERSION_1            | 
-NO_MAX_PAGE_SIZE            | 
-PROVISIONING_QUERY_TYPE_VALUES            | 
+#### PROVISIONING_QUERY_SPECIFICATION_VERSION_1
+
+```C
+#define PROVISIONING_QUERY_SPECIFICATION_VERSION_1 1 
+
+```
+
+#### NO_MAX_PAGE_SIZE
+
+```C
+#define NO_MAX_PAGE_SIZE 0 
+
+```
+
+#### PROVISIONING_QUERY_TYPE_VALUES
+
+```C
+#define PROVISIONING_QUERY_TYPE_VALUES \
+ QUERY_TYPE_INVALID, \
+ QUERY_TYPE_INDIVIDUAL_ENROLLMENT, \
+ QUERY_TYPE_ENROLLMENT_GROUP, \
+ QUERY_TYPE_DEVICE_REGISTRATION_STATE 
+
+```
+
+## Enumeration types
+
+#### PROVISIONING_QUERY_TYPE
+
+```C
+enum PROVISIONING_QUERY_TYPE {
+  QUERY_TYPE_INVALID,
+  QUERY_TYPE_INDIVIDUAL_ENROLLMENT,
+  QUERY_TYPE_ENROLLMENT_GROUP,
+  QUERY_TYPE_DEVICE_REGISTRATION_STATE
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ QUERY_TYPE_INVALID            | 
+ QUERY_TYPE_INDIVIDUAL_ENROLLMENT            | 
+ QUERY_TYPE_ENROLLMENT_GROUP            | 
+ QUERY_TYPE_DEVICE_REGISTRATION_STATE            | 
 

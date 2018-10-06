@@ -38,9 +38,12 @@ struct SOCKETIO_CONFIG {
 };
 ```
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-RECEIVE_BYTES_VALUE            | 
+#### RECEIVE_BYTES_VALUE
+
+```C
+#define RECEIVE_BYTES_VALUE 64 
+
+```
 

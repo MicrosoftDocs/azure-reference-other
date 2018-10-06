@@ -23,39 +23,33 @@ Function Name                  | Description
 [OptionHandler_FeedOptions](./iot-c-ref-optionhandler-h/optionhandler-feedoptions.md)            | 
 [OptionHandler_Destroy](./iot-c-ref-optionhandler-h/optionhandler-destroy.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-OPTIONHANDLER_RESULT_VALUES            | 
-
-## Typedefs
-
-#### OPTIONHANDLER_HANDLE
+#### OPTIONHANDLER_RESULT_VALUES
 
 ```C
-typedef struct OPTIONHANDLER_HANDLE_DATA_TAG * OPTIONHANDLER_HANDLE;
+#define OPTIONHANDLER_RESULT_VALUES \
+ OPTIONHANDLER_OK, \
+ OPTIONHANDLER_ERROR, \
+ OPTIONHANDLER_INVALIDARG 
 
 ```
 
-#### pfCloneOption
+## Enumeration types
+
+#### OPTIONHANDLER_RESULT
 
 ```C
-typedef void *(* pfCloneOption;
+enum OPTIONHANDLER_RESULT {
+  OPTIONHANDLER_OK,
+  OPTIONHANDLER_ERROR,
+  OPTIONHANDLER_INVALIDARG
+}
 
 ```
-
-#### pfDestroyOption
-
-```C
-typedef void(* pfDestroyOption;
-
-```
-
-#### pfSetOption
-
-```C
-typedef int(* pfSetOption;
-
-```
+Constant                    | Description                                
+----------------------------|----------------
+ OPTIONHANDLER_OK            | 
+ OPTIONHANDLER_ERROR            | 
+ OPTIONHANDLER_INVALIDARG            | 
 

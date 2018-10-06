@@ -28,20 +28,36 @@ Function Name                  | Description
 [IoTHubDeviceTwin_GetModuleTwin](./iot-c-ref-iothub-devicetwin-h/iothubdevicetwin-getmoduletwin.md)            | Retrieves the given module's twin info.
 [IoTHubDeviceTwin_UpdateModuleTwin](./iot-c-ref-iothub-devicetwin-h/iothubdevicetwin-updatemoduletwin.md)            | Updates (partial update) the given module's twin info.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_DEVICE_TWIN_RESULT_VALUES            | 
-
-## Typedefs
-
-#### IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE
+#### IOTHUB_DEVICE_TWIN_RESULT_VALUES
 
 ```C
-typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_TAG * IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE;
+#define IOTHUB_DEVICE_TWIN_RESULT_VALUES \
+ IOTHUB_DEVICE_TWIN_OK, \
+ IOTHUB_DEVICE_TWIN_INVALID_ARG, \
+ IOTHUB_DEVICE_TWIN_ERROR, \
+ IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR 
 
 ```
 
-Handle to hide struct and use it in consequent APIs.
+## Enumeration types
+
+#### IOTHUB_DEVICE_TWIN_RESULT
+
+```C
+enum IOTHUB_DEVICE_TWIN_RESULT {
+  IOTHUB_DEVICE_TWIN_OK,
+  IOTHUB_DEVICE_TWIN_INVALID_ARG,
+  IOTHUB_DEVICE_TWIN_ERROR,
+  IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_DEVICE_TWIN_OK            | 
+ IOTHUB_DEVICE_TWIN_INVALID_ARG            | 
+ IOTHUB_DEVICE_TWIN_ERROR            | 
+ IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR            | 
 

@@ -29,18 +29,12 @@ Function Name                  | Description
 [Prov_Device_SetOption](./iot-c-ref-prov-device-client-h/prov-device-setoption.md)            | 
 [Prov_Device_GetVersionString](./iot-c-ref-prov-device-client-h/prov-device-getversionstring.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-PROV_DEVICE_CLIENT_INSTANCE_TYPE            | 
-
-## Typedefs
-
-#### PROV_DEVICE_HANDLE
+#### PROV_DEVICE_CLIENT_INSTANCE_TYPE
 
 ```C
-typedef struct PROV_DEVICE_INSTANCE_TAG * PROV_DEVICE_HANDLE;
+#define PROV_DEVICE_CLIENT_INSTANCE_TYPE
 
 ```
 

@@ -57,27 +57,33 @@ Function Name                  | Description
 [enrollmentGroup_getCreatedDateTime](./iot-c-ref-provisioning-sc-enrollment-h/enrollmentgroup-getcreateddatetime.md)            | 
 [enrollmentGroup_getUpdatedDateTime](./iot-c-ref-provisioning-sc-enrollment-h/enrollmentgroup-getupdateddatetime.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-PROVISIONING_STATUS_VALUES            | 
-
-## Typedefs
-
-#### INDIVIDUAL_ENROLLMENT_HANDLE
+#### PROVISIONING_STATUS_VALUES
 
 ```C
-typedef struct INDIVIDUAL_ENROLLMENT_TAG * INDIVIDUAL_ENROLLMENT_HANDLE;
+#define PROVISIONING_STATUS_VALUES \
+ PROVISIONING_STATUS_NONE, \
+ PROVISIONING_STATUS_ENABLED, \
+ PROVISIONING_STATUS_DISABLED 
 
 ```
 
-Handles to hide structs and use them in consequent APIs.
+## Enumeration types
 
-#### ENROLLMENT_GROUP_HANDLE
+#### PROVISIONING_STATUS
 
 ```C
-typedef struct ENROLLMENT_GROUP_TAG * ENROLLMENT_GROUP_HANDLE;
+enum PROVISIONING_STATUS {
+  PROVISIONING_STATUS_NONE,
+  PROVISIONING_STATUS_ENABLED,
+  PROVISIONING_STATUS_DISABLED
+}
 
 ```
+Constant                    | Description                                
+----------------------------|----------------
+ PROVISIONING_STATUS_NONE            | 
+ PROVISIONING_STATUS_ENABLED            | 
+ PROVISIONING_STATUS_DISABLED            | 
 

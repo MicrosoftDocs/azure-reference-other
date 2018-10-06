@@ -27,25 +27,30 @@ Function Name                  | Description
 [json_deserialize_and_get_struct_array](./iot-c-ref-provisioning-sc-shared-helpers-h/json-deserialize-and-get-struct-array.md)            | 
 [struct_array_fromJson](./iot-c-ref-provisioning-sc-shared-helpers-h/struct-array-fromjson.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-NECESSITY_VALUES            | 
-
-## Typedefs
-
-#### TO_JSON_FUNCTION
+#### NECESSITY_VALUES
 
 ```C
-typedef JSON_Value *(* TO_JSON_FUNCTION;
+#define NECESSITY_VALUES \
+ REQUIRED, \
+ OPTIONAL 
 
 ```
 
-#### FROM_JSON_FUNCTION
+## Enumeration types
+
+#### NECESSITY
 
 ```C
-typedef void *(* FROM_JSON_FUNCTION;
+enum NECESSITY {
+  REQUIRED,
+  OPTIONAL
+}
 
 ```
+Constant                    | Description                                
+----------------------------|----------------
+ REQUIRED            | 
+ OPTIONAL            | 
 

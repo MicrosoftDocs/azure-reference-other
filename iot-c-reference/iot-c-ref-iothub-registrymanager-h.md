@@ -23,8 +23,8 @@ Function Name                  | Description
 [IOTHUB_REGISTRYMANAGER_RESULT_FromString](./iot-c-ref-iothub-registrymanager-h/iothub-registrymanager-result-fromstring.md)            | 
 [IOTHUB_REGISTRYMANAGER_AUTH_METHODStrings](./iot-c-ref-iothub-registrymanager-h/iothub-registrymanager-auth-methodstrings.md)            | 
 [IOTHUB_REGISTRYMANAGER_AUTH_METHOD_FromString](./iot-c-ref-iothub-registrymanager-h/iothub-registrymanager-auth-method-fromstring.md)            | 
-[IoTHubRegistryManager_FreeDeviceExMembers](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-freedeviceexmembers.md)            | Free members of the [IOTHUB_DEVICE_EX](#struct_i_o_t_h_u_b___d_e_v_i_c_e___e_x) structure (NOT the structure itself)
-[IoTHubRegistryManager_FreeModuleMembers](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-freemodulemembers.md)            | Free members of the [IOTHUB_MODULE](#struct_i_o_t_h_u_b___m_o_d_u_l_e) structure (NOT the structure itself)
+[IoTHubRegistryManager_FreeDeviceExMembers](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-freedeviceexmembers.md)            | Free members of the [IOTHUB_DEVICE_EX](function (refid) {<br/>      if ((options.groups \|\| options.classes) && compound.refid !== refid && references[refid]) {<br/>        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;<br/>      } else {<br/>        return '#' + refid;<br/>      }<br/>    }) structure (NOT the structure itself)
+[IoTHubRegistryManager_FreeModuleMembers](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-freemodulemembers.md)            | Free members of the [IOTHUB_MODULE](function (refid) {<br/>      if ((options.groups \|\| options.classes) && compound.refid !== refid && references[refid]) {<br/>        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;<br/>      } else {<br/>        return '#' + refid;<br/>      }<br/>    }) structure (NOT the structure itself)
 [IoTHubRegistryManager_Create](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-create.md)            | Creates a IoT Hub Registry Manager handle for use it in consequent APIs.
 [IoTHubRegistryManager_Destroy](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-destroy.md)            | Disposes of resources allocated by the IoT Hub Registry Manager.
 [IoTHubRegistryManager_CreateDevice_Ex](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-createdevice-ex.md)            | Creates a device on IoT Hub.
@@ -213,27 +213,128 @@ struct IOTHUB_REGISTRY_DEVICE_UPDATE {
 };
 ```
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_REGISTRYMANAGER_RESULT_VALUES            | 
-IOTHUB_REGISTRYMANAGER_AUTH_METHOD_VALUES            | 
-IOTHUB_DEVICE_EX_VERSION_1            | 
-IOTHUB_REGISTRY_DEVICE_CREATE_EX_VERSION_1            | 
-IOTHUB_REGISTRY_DEVICE_UPDATE_EX_VERSION_1            | 
-IOTHUB_MODULE_VERSION_1            | 
-IOTHUB_REGISTRY_MODULE_CREATE_VERSION_1            | 
-IOTHUB_REGISTRY_MODULE_UPDATE_VERSION_1            | 
-
-## Typedefs
-
-#### IOTHUB_REGISTRYMANAGER_HANDLE
+#### IOTHUB_REGISTRYMANAGER_RESULT_VALUES
 
 ```C
-typedef struct IOTHUB_REGISTRYMANAGER_TAG * IOTHUB_REGISTRYMANAGER_HANDLE;
+#define IOTHUB_REGISTRYMANAGER_RESULT_VALUES \
+ IOTHUB_REGISTRYMANAGER_OK, \
+ IOTHUB_REGISTRYMANAGER_INVALID_ARG, \
+ IOTHUB_REGISTRYMANAGER_ERROR, \
+ IOTHUB_REGISTRYMANAGER_JSON_ERROR, \
+ IOTHUB_REGISTRYMANAGER_HTTPAPI_ERROR, \
+ IOTHUB_REGISTRYMANAGER_HTTP_STATUS_ERROR, \
+ IOTHUB_REGISTRYMANAGER_DEVICE_EXIST, \
+ IOTHUB_REGISTRYMANAGER_DEVICE_NOT_EXIST, \
+ IOTHUB_REGISTRYMANAGER_CALLBACK_NOT_SET, \
+ IOTHUB_REGISTRYMANAGER_INVALID_VERSION 
 
 ```
 
-Handle to hide struct and use it in consequent APIs.
+#### IOTHUB_REGISTRYMANAGER_AUTH_METHOD_VALUES
+
+```C
+#define IOTHUB_REGISTRYMANAGER_AUTH_METHOD_VALUES \
+ IOTHUB_REGISTRYMANAGER_AUTH_SPK, \
+ IOTHUB_REGISTRYMANAGER_AUTH_X509_THUMBPRINT, \
+ IOTHUB_REGISTRYMANAGER_AUTH_X509_CERTIFICATE_AUTHORITY, \
+ IOTHUB_REGISTRYMANAGER_AUTH_NONE, \
+ IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN 
+
+```
+
+#### IOTHUB_DEVICE_EX_VERSION_1
+
+```C
+#define IOTHUB_DEVICE_EX_VERSION_1 1 
+
+```
+
+#### IOTHUB_REGISTRY_DEVICE_CREATE_EX_VERSION_1
+
+```C
+#define IOTHUB_REGISTRY_DEVICE_CREATE_EX_VERSION_1 1 
+
+```
+
+#### IOTHUB_REGISTRY_DEVICE_UPDATE_EX_VERSION_1
+
+```C
+#define IOTHUB_REGISTRY_DEVICE_UPDATE_EX_VERSION_1 1 
+
+```
+
+#### IOTHUB_MODULE_VERSION_1
+
+```C
+#define IOTHUB_MODULE_VERSION_1 1 
+
+```
+
+#### IOTHUB_REGISTRY_MODULE_CREATE_VERSION_1
+
+```C
+#define IOTHUB_REGISTRY_MODULE_CREATE_VERSION_1 1 
+
+```
+
+#### IOTHUB_REGISTRY_MODULE_UPDATE_VERSION_1
+
+```C
+#define IOTHUB_REGISTRY_MODULE_UPDATE_VERSION_1 1 
+
+```
+
+## Enumeration types
+
+#### IOTHUB_REGISTRYMANAGER_RESULT
+
+```C
+enum IOTHUB_REGISTRYMANAGER_RESULT {
+  IOTHUB_REGISTRYMANAGER_OK,
+  IOTHUB_REGISTRYMANAGER_INVALID_ARG,
+  IOTHUB_REGISTRYMANAGER_ERROR,
+  IOTHUB_REGISTRYMANAGER_JSON_ERROR,
+  IOTHUB_REGISTRYMANAGER_HTTPAPI_ERROR,
+  IOTHUB_REGISTRYMANAGER_HTTP_STATUS_ERROR,
+  IOTHUB_REGISTRYMANAGER_DEVICE_EXIST,
+  IOTHUB_REGISTRYMANAGER_DEVICE_NOT_EXIST,
+  IOTHUB_REGISTRYMANAGER_CALLBACK_NOT_SET,
+  IOTHUB_REGISTRYMANAGER_INVALID_VERSION
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_REGISTRYMANAGER_OK            | 
+ IOTHUB_REGISTRYMANAGER_INVALID_ARG            | 
+ IOTHUB_REGISTRYMANAGER_ERROR            | 
+ IOTHUB_REGISTRYMANAGER_JSON_ERROR            | 
+ IOTHUB_REGISTRYMANAGER_HTTPAPI_ERROR            | 
+ IOTHUB_REGISTRYMANAGER_HTTP_STATUS_ERROR            | 
+ IOTHUB_REGISTRYMANAGER_DEVICE_EXIST            | 
+ IOTHUB_REGISTRYMANAGER_DEVICE_NOT_EXIST            | 
+ IOTHUB_REGISTRYMANAGER_CALLBACK_NOT_SET            | 
+ IOTHUB_REGISTRYMANAGER_INVALID_VERSION            | 
+
+#### IOTHUB_REGISTRYMANAGER_AUTH_METHOD
+
+```C
+enum IOTHUB_REGISTRYMANAGER_AUTH_METHOD {
+  IOTHUB_REGISTRYMANAGER_AUTH_SPK,
+  IOTHUB_REGISTRYMANAGER_AUTH_X509_THUMBPRINT,
+  IOTHUB_REGISTRYMANAGER_AUTH_X509_CERTIFICATE_AUTHORITY,
+  IOTHUB_REGISTRYMANAGER_AUTH_NONE,
+  IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_REGISTRYMANAGER_AUTH_SPK            | 
+ IOTHUB_REGISTRYMANAGER_AUTH_X509_THUMBPRINT            | 
+ IOTHUB_REGISTRYMANAGER_AUTH_X509_CERTIFICATE_AUTHORITY            | 
+ IOTHUB_REGISTRYMANAGER_AUTH_NONE            | 
+ IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN            | 
 

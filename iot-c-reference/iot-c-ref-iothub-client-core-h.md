@@ -44,18 +44,12 @@ Function Name                  | Description
 [IoTHubClientCore_SendEventToOutputAsync](./iot-c-ref-iothub-client-core-h/iothubclientcore-sendeventtooutputasync.md)            | 
 [IoTHubClientCore_SetInputMessageCallback](./iot-c-ref-iothub-client-core-h/iothubclientcore-setinputmessagecallback.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_CLIENT_CORE_INSTANCE_TYPE            | 
-
-## Typedefs
-
-#### IOTHUB_CLIENT_CORE_HANDLE
+#### IOTHUB_CLIENT_CORE_INSTANCE_TYPE
 
 ```C
-typedef struct IOTHUB_CLIENT_CORE_INSTANCE_TAG * IOTHUB_CLIENT_CORE_HANDLE;
+#define IOTHUB_CLIENT_CORE_INSTANCE_TYPE
 
 ```
 

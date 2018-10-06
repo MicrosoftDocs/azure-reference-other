@@ -20,7 +20,19 @@ MAP_RESULT Map_AddOrUpdate(
 
 * `value` The `value` to be associated with `key`.
 
-This function behaves exactly like [Map_Add](#map_8h_1a0dd145d19021b3e80d53868d61cbc684) except that if the key already exists in the map then it overwrites the value with the supplied value instead of returning an error. If a non-NULL pointer to a callback function was supplied via the `mapFilterFunc` parameter when [Map_Create](#map_8h_1a76142fc262744d64715a597eac0ed9ff) was called then that callback is invoked when a new entry is added or when an existing entry is updated and if the callback returns a non-zero value then the function cancels the add/update operation and returns `MAP_FILTER_REJECT`.
+This function behaves exactly like [Map_Add](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }) except that if the key already exists in the map then it overwrites the value with the supplied value instead of returning an error. If a non-NULL pointer to a callback function was supplied via the `mapFilterFunc` parameter when [Map_Create](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }) was called then that callback is invoked when a new entry is added or when an existing entry is updated and if the callback returns a non-zero value then the function cancels the add/update operation and returns `MAP_FILTER_REJECT`.
 
 ## Returns
 If any of the input parameters are `NULL` then this function returns `MAP_INVALID_ARG`. If the filter function associated with the map rejects the entry then `MAP_FILTER_REJECT` is returned. In case an error occurs when the new key is added/updated in the map the function returns `MAP_ERROR`. If everything goes well then `MAP_OK` is returned.

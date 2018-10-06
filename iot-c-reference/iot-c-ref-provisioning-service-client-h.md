@@ -42,20 +42,30 @@ Function Name                  | Description
 [prov_sc_get_device_registration_state](./iot-c-ref-provisioning-service-client-h/prov-sc-get-device-registration-state.md)            | Retreives a device registration state from the Provisioning Service.
 [prov_sc_query_device_registration_state](./iot-c-ref-provisioning-service-client-h/prov-sc-query-device-registration-state.md)            | Queries device registration state records from the Provisioning Service.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-TRACING_STATUS_VALUES            | 
-
-## Typedefs
-
-#### PROVISIONING_SERVICE_CLIENT_HANDLE
+#### TRACING_STATUS_VALUES
 
 ```C
-typedef struct PROVISIONING_SERVICE_CLIENT_TAG * PROVISIONING_SERVICE_CLIENT_HANDLE;
+#define TRACING_STATUS_VALUES \
+ TRACING_STATUS_ON, \
+ TRACING_STATUS_OFF 
 
 ```
 
-Handle to hide struct and use it in consequent APIs.
+## Enumeration types
+
+#### TRACING_STATUS
+
+```C
+enum TRACING_STATUS {
+  TRACING_STATUS_ON,
+  TRACING_STATUS_OFF
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ TRACING_STATUS_ON            | 
+ TRACING_STATUS_OFF            | 
 

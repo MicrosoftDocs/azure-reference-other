@@ -20,32 +20,88 @@ Function Name                  | Description
 [xlogging_set_log_function](./iot-c-ref-xlogging-h/xlogging-set-log-function.md)            | 
 [xlogging_get_log_function](./iot-c-ref-xlogging-h/xlogging-get-log-function.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-FUNC_NAME            | 
-TEMP_BUFFER_SIZE            | 
-MESSAGE_BUFFER_SIZE            | 
-LOG_NONE            | 
-LOG_LINE            | 
-LOG            | 
-LogInfo            | 
-LogError            | 
-
-## Typedefs
-
-#### LOGGER_LOG
+#### FUNC_NAME
 
 ```C
-typedef void(* LOGGER_LOG;
+#define FUNC_NAME __func__ 
 
 ```
 
-#### LOGGER_LOG_GETLASTERROR
+#### TEMP_BUFFER_SIZE
 
 ```C
-typedef void(* LOGGER_LOG_GETLASTERROR;
+#define TEMP_BUFFER_SIZE 1024 
 
 ```
+
+#### MESSAGE_BUFFER_SIZE
+
+```C
+#define MESSAGE_BUFFER_SIZE 260 
+
+```
+
+#### LOG_NONE
+
+```C
+#define LOG_NONE 0x00 
+
+```
+
+#### LOG_LINE
+
+```C
+#define LOG_LINE 0x01 
+
+```
+
+#### LOG
+
+```C
+#define LOG \
+ LOGGER_LOG, \
+ xlogging_get_log_function, \
+ FUNC_NAME 
+
+```
+
+#### LogInfo
+
+```C
+#define LogInfo \
+ LOG, \
+ AZ_LOG_INFO, \
+ LOG_LINE 
+
+```
+
+#### LogError
+
+```C
+#define LogError \
+ LOG, \
+ AZ_LOG_ERROR, \
+ LOG_LINE 
+
+```
+
+## Enumeration types
+
+#### LOG_CATEGORY
+
+```C
+enum LOG_CATEGORY {
+  AZ_LOG_ERROR,
+  AZ_LOG_INFO,
+  AZ_LOG_TRACE
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ AZ_LOG_ERROR            | 
+ AZ_LOG_INFO            | 
+ AZ_LOG_TRACE            | 
 

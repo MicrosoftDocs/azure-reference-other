@@ -20,7 +20,13 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_GetRetryPolicy(
 
 * `retryTimeoutLimitInSeconds` Out parameter containing maximum amount of time in seconds to attempt reconnection to IOT Hub.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubModuleClient_LL_Destroy](#iothub__module__client__ll_8h_1aad2dd6c3c24f89a9cfa861754a845138) function from within any callback.
+**NOTE:** The application behavior is undefined if the user calls the [IoTHubModuleClient_LL_Destroy](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }) function from within any callback.
 
 ## Returns
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

@@ -30,7 +30,7 @@ Function Name                  | Description
 [IoTHubDeviceConfiguration_UpdateConfiguration](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-updateconfiguration.md)            | Updates the given Configuration in IoT Hub.
 [IoTHubDeviceConfiguration_DeleteConfiguration](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-deleteconfiguration.md)            | Deletes the given Configuration from IoT Hub.
 [IoTHubDeviceConfiguration_ApplyConfigurationContentToDeviceOrModule](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-applyconfigurationcontenttodeviceormodule.md)            | Deletes the given Configuration from IoT Hub.
-[IoTHubDeviceConfiguration_FreeConfigurationMembers](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md)            | Free members of the [IOTHUB_DEVICE_CONFIGURATION](#struct_i_o_t_h_u_b___d_e_v_i_c_e___c_o_n_f_i_g_u_r_a_t_i_o_n) structure (NOT the structure itself)
+[IoTHubDeviceConfiguration_FreeConfigurationMembers](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md)            | Free members of the [IOTHUB_DEVICE_CONFIGURATION](function (refid) {<br/>      if ((options.groups \|\| options.classes) && compound.refid !== refid && references[refid]) {<br/>        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;<br/>      } else {<br/>        return '#' + refid;<br/>      }<br/>    }) structure (NOT the structure itself)
 
 ## Structures
 
@@ -103,24 +103,104 @@ struct IOTHUB_DEVICE_CONFIGURATION_ADD {
 };
 ```
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_DEVICE_CONFIGURATION_RESULT_VALUES            | 
-IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_VALUES            | 
-IOTHUB_DEVICE_CONFIGURATION_SCHEMA_VERSION_1            | 
-IOTHUB_DEVICE_CONFIGURATION_VERSION_1            | 
-IOTHUB_DEVICE_CONFIGURATION_ADD_VERSION_1            | 
-
-## Typedefs
-
-#### IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE
+#### IOTHUB_DEVICE_CONFIGURATION_RESULT_VALUES
 
 ```C
-typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_TAG * IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE;
+#define IOTHUB_DEVICE_CONFIGURATION_RESULT_VALUES \
+ IOTHUB_DEVICE_CONFIGURATION_OK, \
+ IOTHUB_DEVICE_CONFIGURATION_INVALID_ARG, \
+ IOTHUB_DEVICE_CONFIGURATION_ERROR, \
+ IOTHUB_DEVICE_CONFIGURATION_HTTPAPI_ERROR, \
+ IOTHUB_DEVICE_CONFIGURATION_JSON_ERROR, \
+ IOTHUB_DEVICE_CONFIGURATION_OUT_OF_MEMORY_ERROR, \
+ IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_NOT_EXIST, \
+ IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_EXIST 
 
 ```
 
-Handle to hide struct and use it in consequent APIs.
+#### IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_VALUES
+
+```C
+#define IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_VALUES \
+ IOTHUB_DEVICECONFIGURATION_REQUEST_GET_LIST, \
+ IOTHUB_DEVICECONFIGURATION_REQUEST_GET, \
+ IOTHUB_DEVICECONFIGURATION_REQUEST_ADD, \
+ IOTHUB_DEVICECONFIGURATION_REQUEST_UPDATE, \
+ IOTHUB_DEVICECONFIGURATION_REQUEST_DELETE, \
+ IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT 
+
+```
+
+#### IOTHUB_DEVICE_CONFIGURATION_SCHEMA_VERSION_1
+
+```C
+#define IOTHUB_DEVICE_CONFIGURATION_SCHEMA_VERSION_1 "1.0" 
+
+```
+
+#### IOTHUB_DEVICE_CONFIGURATION_VERSION_1
+
+```C
+#define IOTHUB_DEVICE_CONFIGURATION_VERSION_1 1 
+
+```
+
+#### IOTHUB_DEVICE_CONFIGURATION_ADD_VERSION_1
+
+```C
+#define IOTHUB_DEVICE_CONFIGURATION_ADD_VERSION_1 1 
+
+```
+
+## Enumeration types
+
+#### IOTHUB_DEVICE_CONFIGURATION_RESULT
+
+```C
+enum IOTHUB_DEVICE_CONFIGURATION_RESULT {
+  IOTHUB_DEVICE_CONFIGURATION_OK,
+  IOTHUB_DEVICE_CONFIGURATION_INVALID_ARG,
+  IOTHUB_DEVICE_CONFIGURATION_ERROR,
+  IOTHUB_DEVICE_CONFIGURATION_HTTPAPI_ERROR,
+  IOTHUB_DEVICE_CONFIGURATION_JSON_ERROR,
+  IOTHUB_DEVICE_CONFIGURATION_OUT_OF_MEMORY_ERROR,
+  IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_NOT_EXIST,
+  IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_EXIST
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_DEVICE_CONFIGURATION_OK            | 
+ IOTHUB_DEVICE_CONFIGURATION_INVALID_ARG            | 
+ IOTHUB_DEVICE_CONFIGURATION_ERROR            | 
+ IOTHUB_DEVICE_CONFIGURATION_HTTPAPI_ERROR            | 
+ IOTHUB_DEVICE_CONFIGURATION_JSON_ERROR            | 
+ IOTHUB_DEVICE_CONFIGURATION_OUT_OF_MEMORY_ERROR            | 
+ IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_NOT_EXIST            | 
+ IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_EXIST            | 
+
+#### IOTHUB_DEVICECONFIGURATION_REQUEST_MODE
+
+```C
+enum IOTHUB_DEVICECONFIGURATION_REQUEST_MODE {
+  IOTHUB_DEVICECONFIGURATION_REQUEST_GET_LIST,
+  IOTHUB_DEVICECONFIGURATION_REQUEST_GET,
+  IOTHUB_DEVICECONFIGURATION_REQUEST_ADD,
+  IOTHUB_DEVICECONFIGURATION_REQUEST_UPDATE,
+  IOTHUB_DEVICECONFIGURATION_REQUEST_DELETE,
+  IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_DEVICECONFIGURATION_REQUEST_GET_LIST            | 
+ IOTHUB_DEVICECONFIGURATION_REQUEST_GET            | 
+ IOTHUB_DEVICECONFIGURATION_REQUEST_ADD            | 
+ IOTHUB_DEVICECONFIGURATION_REQUEST_UPDATE            | 
+ IOTHUB_DEVICECONFIGURATION_REQUEST_DELETE            | 
+ IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT            | 
 

@@ -22,20 +22,36 @@ Function Name                  | Description
 [IoTHubDeviceMethod_Invoke](./iot-c-ref-iothub-devicemethod-h/iothubdevicemethod-invoke.md)            | Call a method on device with a given payload.
 [IoTHubDeviceMethod_InvokeModule](./iot-c-ref-iothub-devicemethod-h/iothubdevicemethod-invokemodule.md)            | Call a method on device and a module with a given payload.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_DEVICE_METHOD_RESULT_VALUES            | 
-
-## Typedefs
-
-#### IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE
+#### IOTHUB_DEVICE_METHOD_RESULT_VALUES
 
 ```C
-typedef struct IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_TAG * IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE;
+#define IOTHUB_DEVICE_METHOD_RESULT_VALUES \
+ IOTHUB_DEVICE_METHOD_OK, \
+ IOTHUB_DEVICE_METHOD_INVALID_ARG, \
+ IOTHUB_DEVICE_METHOD_ERROR, \
+ IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR 
 
 ```
 
-Handle to hide struct and use it in consequent APIs.
+## Enumeration types
+
+#### IOTHUB_DEVICE_METHOD_RESULT
+
+```C
+enum IOTHUB_DEVICE_METHOD_RESULT {
+  IOTHUB_DEVICE_METHOD_OK,
+  IOTHUB_DEVICE_METHOD_INVALID_ARG,
+  IOTHUB_DEVICE_METHOD_ERROR,
+  IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_DEVICE_METHOD_OK            | 
+ IOTHUB_DEVICE_METHOD_INVALID_ARG            | 
+ IOTHUB_DEVICE_METHOD_ERROR            | 
+ IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR            | 
 

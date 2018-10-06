@@ -8,9 +8,12 @@ Stub comment for brief. Please update this comment.
 
 Stub comment for details. Please update this comment.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-PROV_DEVICE_CLIENT_VERSION            | 
+#### PROV_DEVICE_CLIENT_VERSION
+
+```C
+#define PROV_DEVICE_CLIENT_VERSION "1.2.9" 
+
+```
 

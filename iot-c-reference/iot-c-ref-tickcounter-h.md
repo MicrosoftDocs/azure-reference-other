@@ -19,19 +19,3 @@ Function Name                  | Description
 [tickcounter_destroy](./iot-c-ref-tickcounter-h/tickcounter-destroy.md)            | 
 [tickcounter_get_current_ms](./iot-c-ref-tickcounter-h/tickcounter-get-current-ms.md)            | 
 
-## Typedefs
-
-#### tickcounter_ms_t
-
-```C
-typedef uint_fast32_t tickcounter_ms_t;
-
-```
-
-#### TICK_COUNTER_HANDLE
-
-```C
-typedef struct TICK_COUNTER_INSTANCE_TAG * TICK_COUNTER_HANDLE;
-
-```
-

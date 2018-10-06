@@ -21,12 +21,3 @@ Function Name                  | Description
 [deviceCapabilities_isIotEdgeCapable](./iot-c-ref-provisioning-sc-device-capabilities-h/devicecapabilities-isiotedgecapable.md)            | 
 [deviceCapabilities_setIotEdgeCapable](./iot-c-ref-provisioning-sc-device-capabilities-h/devicecapabilities-setiotedgecapable.md)            | 
 
-## Typedefs
-
-#### DEVICE_CAPABILITIES_HANDLE
-
-```C
-typedef struct DEVICE_CAPABILITIES_TAG * DEVICE_CAPABILITIES_HANDLE;
-
-```
-

@@ -20,7 +20,13 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SetConnectionStatusCallback(
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](#iothub__device__client__ll_8h_1ad2ac0d9176060dfeee0664668ce87e6f) function from within any callback.
+**NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }) function from within any callback.
 
 ## Returns
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

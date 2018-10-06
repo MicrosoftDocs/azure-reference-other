@@ -46,18 +46,12 @@ Function Name                  | Description
 [IoTHubClient_UploadMultipleBlocksToBlobAsync](./iot-c-ref-iothub-client-h/iothubclient-uploadmultipleblockstoblobasync.md)            | Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
 [IoTHubClient_UploadMultipleBlocksToBlobAsyncEx](./iot-c-ref-iothub-client-h/iothubclient-uploadmultipleblockstoblobasyncex.md)            | Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_CLIENT_INSTANCE_TYPE            | 
-
-## Typedefs
-
-#### IOTHUB_CLIENT_HANDLE
+#### IOTHUB_CLIENT_INSTANCE_TYPE
 
 ```C
-typedef undefined IOTHUB_CLIENT_HANDLE;
+#define IOTHUB_CLIENT_INSTANCE_TYPE
 
 ```
 

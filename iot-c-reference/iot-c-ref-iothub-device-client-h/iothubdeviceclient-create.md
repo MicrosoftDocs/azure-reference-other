@@ -12,7 +12,13 @@ IOTHUB_DEVICE_CLIENT_HANDLE IoTHubDeviceClient_Create(
 ```
 
 ## Parameters
-* `config` Pointer to an `[IOTHUB_CLIENT_CONFIG](#struct_i_o_t_h_u_b___c_l_i_e_n_t___c_o_n_f_i_g)` structure
+* `config` Pointer to an `[IOTHUB_CLIENT_CONFIG](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    })` structure
 
 The API does not allow sharing of a connection across multiple devices. This is a blocking call.
 

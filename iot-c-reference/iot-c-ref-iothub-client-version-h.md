@@ -14,9 +14,12 @@ Function Name                  | Description
 --------------------------------|---------------------------------------------
 [IoTHubClient_GetVersionString](./iot-c-ref-iothub-client-version-h/iothubclient-getversionstring.md)            | Returns a pointer to a null terminated string containing the current IoT Hub Client SDK version.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_SDK_VERSION            | 
+#### IOTHUB_SDK_VERSION
+
+```C
+#define IOTHUB_SDK_VERSION "1.2.9" 
+
+```
 

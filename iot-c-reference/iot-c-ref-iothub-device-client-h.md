@@ -44,18 +44,12 @@ Function Name                  | Description
 [IoTHubDeviceClient_UploadToBlobAsync](./iot-c-ref-iothub-device-client-h/iothubdeviceclient-uploadtoblobasync.md)            | IoTHubDeviceClient_UploadToBlobAsync uploads data from memory to a file in Azure Blob Storage.
 [IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync](./iot-c-ref-iothub-device-client-h/iothubdeviceclient-uploadmultipleblockstoblobasync.md)            | Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_DEVICE_CLIENT_INSTANCE_TYPE            | 
-
-## Typedefs
-
-#### IOTHUB_DEVICE_CLIENT_HANDLE
+#### IOTHUB_DEVICE_CLIENT_INSTANCE_TYPE
 
 ```C
-typedef undefined IOTHUB_DEVICE_CLIENT_HANDLE;
+#define IOTHUB_DEVICE_CLIENT_INSTANCE_TYPE
 
 ```
 

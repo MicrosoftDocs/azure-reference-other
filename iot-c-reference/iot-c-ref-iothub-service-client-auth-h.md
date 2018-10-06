@@ -39,21 +39,53 @@ struct IOTHUB_SERVICE_CLIENT_AUTH {
 };
 ```
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_DEVICE_STATUS_VALUES            | 
-IOTHUB_DEVICE_CONNECTION_STATE_VALUES            | 
-
-## Typedefs
-
-#### IOTHUB_SERVICE_CLIENT_AUTH_HANDLE
+#### IOTHUB_DEVICE_STATUS_VALUES
 
 ```C
-typedef struct IOTHUB_SERVICE_CLIENT_AUTH_TAG * IOTHUB_SERVICE_CLIENT_AUTH_HANDLE;
+#define IOTHUB_DEVICE_STATUS_VALUES \
+ IOTHUB_DEVICE_STATUS_ENABLED, \
+ IOTHUB_DEVICE_STATUS_DISABLED 
 
 ```
 
-Handle to hide struct and use it in consequent APIs.
+#### IOTHUB_DEVICE_CONNECTION_STATE_VALUES
+
+```C
+#define IOTHUB_DEVICE_CONNECTION_STATE_VALUES \
+ IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED, \
+ IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED 
+
+```
+
+## Enumeration types
+
+#### IOTHUB_DEVICE_STATUS
+
+```C
+enum IOTHUB_DEVICE_STATUS {
+  IOTHUB_DEVICE_STATUS_ENABLED,
+  IOTHUB_DEVICE_STATUS_DISABLED
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_DEVICE_STATUS_ENABLED            | 
+ IOTHUB_DEVICE_STATUS_DISABLED            | 
+
+#### IOTHUB_DEVICE_CONNECTION_STATE
+
+```C
+enum IOTHUB_DEVICE_CONNECTION_STATE {
+  IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED,
+  IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED            | 
+ IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED            | 
 

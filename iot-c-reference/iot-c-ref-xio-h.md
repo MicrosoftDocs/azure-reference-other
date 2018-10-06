@@ -47,117 +47,59 @@ struct IO_INTERFACE_DESCRIPTION {
 };
 ```
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IO_SEND_RESULT_VALUES            | 
-IO_OPEN_RESULT_VALUES            | 
-
-## Typedefs
-
-#### XIO_HANDLE
+#### IO_SEND_RESULT_VALUES
 
 ```C
-typedef struct XIO_INSTANCE_TAG * XIO_HANDLE;
+#define IO_SEND_RESULT_VALUES \
+ IO_SEND_OK, \
+ IO_SEND_ERROR, \
+ IO_SEND_CANCELLED 
 
 ```
 
-#### CONCRETE_IO_HANDLE
+#### IO_OPEN_RESULT_VALUES
 
 ```C
-typedef void * CONCRETE_IO_HANDLE;
+#define IO_OPEN_RESULT_VALUES \
+ IO_OPEN_OK, \
+ IO_OPEN_ERROR, \
+ IO_OPEN_CANCELLED 
 
 ```
 
-#### ON_BYTES_RECEIVED
+## Enumeration types
+
+#### IO_SEND_RESULT
 
 ```C
-typedef void(* ON_BYTES_RECEIVED;
+enum IO_SEND_RESULT {
+  IO_SEND_OK,
+  IO_SEND_ERROR,
+  IO_SEND_CANCELLED
+}
 
 ```
+Constant                    | Description                                
+----------------------------|----------------
+ IO_SEND_OK            | 
+ IO_SEND_ERROR            | 
+ IO_SEND_CANCELLED            | 
 
-#### ON_SEND_COMPLETE
+#### IO_OPEN_RESULT
 
 ```C
-typedef void(* ON_SEND_COMPLETE;
+enum IO_OPEN_RESULT {
+  IO_OPEN_OK,
+  IO_OPEN_ERROR,
+  IO_OPEN_CANCELLED
+}
 
 ```
-
-#### ON_IO_OPEN_COMPLETE
-
-```C
-typedef void(* ON_IO_OPEN_COMPLETE;
-
-```
-
-#### ON_IO_CLOSE_COMPLETE
-
-```C
-typedef void(* ON_IO_CLOSE_COMPLETE;
-
-```
-
-#### ON_IO_ERROR
-
-```C
-typedef void(* ON_IO_ERROR;
-
-```
-
-#### IO_RETRIEVEOPTIONS
-
-```C
-typedef (* IO_RETRIEVEOPTIONS;
-
-```
-
-#### IO_CREATE
-
-```C
-typedef (* IO_CREATE;
-
-```
-
-#### IO_DESTROY
-
-```C
-typedef void(* IO_DESTROY;
-
-```
-
-#### IO_OPEN
-
-```C
-typedef int(* IO_OPEN;
-
-```
-
-#### IO_CLOSE
-
-```C
-typedef int(* IO_CLOSE;
-
-```
-
-#### IO_SEND
-
-```C
-typedef int(* IO_SEND;
-
-```
-
-#### IO_DOWORK
-
-```C
-typedef void(* IO_DOWORK;
-
-```
-
-#### IO_SETOPTION
-
-```C
-typedef int(* IO_SETOPTION;
-
-```
+Constant                    | Description                                
+----------------------------|----------------
+ IO_OPEN_OK            | 
+ IO_OPEN_ERROR            | 
+ IO_OPEN_CANCELLED            | 
 

@@ -30,25 +30,44 @@ Function Name                  | Description
 [Map_GetInternals](./iot-c-ref-map-h/map-getinternals.md)            | Retrieves the complete list of keys and values from the map in `values` and `keys`. Also writes the size of the list in `count`.
 [Map_ToJSON](./iot-c-ref-map-h/map-tojson.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-MAP_RESULT_VALUES            | 
-
-## Typedefs
-
-#### MAP_HANDLE
+#### MAP_RESULT_VALUES
 
 ```C
-typedef struct MAP_HANDLE_DATA_TAG * MAP_HANDLE;
+#define MAP_RESULT_VALUES \
+ MAP_OK, \
+ MAP_ERROR, \
+ MAP_INVALIDARG, \
+ MAP_KEYEXISTS, \
+ MAP_KEYNOTFOUND, \
+ MAP_FILTER_REJECT 
 
 ```
 
-#### MAP_FILTER_CALLBACK
+## Enumeration types
+
+#### MAP_RESULT
+
+Enumeration specifying the status of calls to various APIs in this module. 
 
 ```C
-typedef int(* MAP_FILTER_CALLBACK;
+enum MAP_RESULT {
+  MAP_OK,
+  MAP_ERROR,
+  MAP_INVALIDARG,
+  MAP_KEYEXISTS,
+  MAP_KEYNOTFOUND,
+  MAP_FILTER_REJECT
+}
 
 ```
+Constant                    | Description                                
+----------------------------|----------------
+ MAP_OK            | 
+ MAP_ERROR            | 
+ MAP_INVALIDARG            | 
+ MAP_KEYEXISTS            | 
+ MAP_KEYNOTFOUND            | 
+ MAP_FILTER_REJECT            | 
 

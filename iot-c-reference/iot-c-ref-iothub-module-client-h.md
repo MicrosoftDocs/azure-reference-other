@@ -40,18 +40,12 @@ Function Name                  | Description
 [IoTHubModuleClient_SendEventToOutputAsync](./iot-c-ref-iothub-module-client-h/iothubmoduleclient-sendeventtooutputasync.md)            | Asynchronous call to send the message specified by `eventMessageHandle`.
 [IoTHubModuleClient_SetInputMessageCallback](./iot-c-ref-iothub-module-client-h/iothubmoduleclient-setinputmessagecallback.md)            | This API sets callback for method call that is directed to specified 'inputName' queue (e.g. messages from IoTHubClient_SendEventToOutputAsync)
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_MODULE_CLIENT_INSTANCE_TYPE            | 
-
-## Typedefs
-
-#### IOTHUB_MODULE_CLIENT_HANDLE
+#### IOTHUB_MODULE_CLIENT_INSTANCE_TYPE
 
 ```C
-typedef undefined IOTHUB_MODULE_CLIENT_HANDLE;
+#define IOTHUB_MODULE_CLIENT_INSTANCE_TYPE
 
 ```
 

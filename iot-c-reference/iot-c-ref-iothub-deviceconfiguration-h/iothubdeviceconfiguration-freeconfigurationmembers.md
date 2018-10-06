@@ -1,6 +1,12 @@
 # IoTHubDeviceConfiguration_FreeConfigurationMembers()
 
-Free members of the [IOTHUB_DEVICE_CONFIGURATION](#struct_i_o_t_h_u_b___d_e_v_i_c_e___c_o_n_f_i_g_u_r_a_t_i_o_n) structure (NOT the structure itself)
+Free members of the [IOTHUB_DEVICE_CONFIGURATION](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }) structure (NOT the structure itself)
 
 ## Syntax
 

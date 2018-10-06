@@ -14,13 +14,45 @@ Stub comment for brief. Please update this comment.
 
 Stub comment for details. Please update this comment.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-REFCOUNT_TYPE            | 
-REFCOUNT_SHORT_TYPE            | 
-REFCOUNT_TYPE_DECLARE_CREATE            | 
-REFCOUNT_TYPE_CREATE            | 
-DEFINE_REFCOUNT_TYPE            | 
+#### REFCOUNT_TYPE
+
+```C
+#define REFCOUNT_TYPE struct C2(C2(REFCOUNT_, type), _TAG) 
+
+```
+
+#### REFCOUNT_SHORT_TYPE
+
+```C
+#define REFCOUNT_SHORT_TYPE C2(REFCOUNT_, type) 
+
+```
+
+#### REFCOUNT_TYPE_DECLARE_CREATE
+
+```C
+#define REFCOUNT_TYPE_DECLARE_CREATE REFCOUNT_SHORT_TYPE 
+
+```
+
+#### REFCOUNT_TYPE_CREATE
+
+```C
+#define REFCOUNT_TYPE_CREATE REFCOUNT_SHORT_TYPE 
+
+```
+
+#### DEFINE_REFCOUNT_TYPE
+
+```C
+#define DEFINE_REFCOUNT_TYPE \
+ REFCOUNT_TYPE, \
+ REFCOUNT_TYPE_DECLARE_CREATE, \
+ REFCOUNT_TYPE, \
+ REFCOUNT_TYPE, \
+ REFCOUNT_TYPE 
+
+```
 

@@ -59,19 +59,66 @@ struct IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA {
 };
 ```
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_MESSAGE_RESULT_VALUES            | 
-IOTHUBMESSAGE_CONTENT_TYPE_VALUES            | 
-
-## Typedefs
-
-#### IOTHUB_MESSAGE_HANDLE
+#### IOTHUB_MESSAGE_RESULT_VALUES
 
 ```C
-typedef struct IOTHUB_MESSAGE_HANDLE_DATA_TAG * IOTHUB_MESSAGE_HANDLE;
+#define IOTHUB_MESSAGE_RESULT_VALUES \
+ IOTHUB_MESSAGE_OK, \
+ IOTHUB_MESSAGE_INVALID_ARG, \
+ IOTHUB_MESSAGE_INVALID_TYPE, \
+ IOTHUB_MESSAGE_ERROR 
 
 ```
+
+#### IOTHUBMESSAGE_CONTENT_TYPE_VALUES
+
+```C
+#define IOTHUBMESSAGE_CONTENT_TYPE_VALUES \
+ IOTHUBMESSAGE_BYTEARRAY, \
+ IOTHUBMESSAGE_STRING, \
+ IOTHUBMESSAGE_UNKNOWN 
+
+```
+
+## Enumeration types
+
+#### IOTHUB_MESSAGE_RESULT
+
+Enumeration specifying the status of calls to various APIs in this module. 
+
+```C
+enum IOTHUB_MESSAGE_RESULT {
+  IOTHUB_MESSAGE_OK,
+  IOTHUB_MESSAGE_INVALID_ARG,
+  IOTHUB_MESSAGE_INVALID_TYPE,
+  IOTHUB_MESSAGE_ERROR
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_MESSAGE_OK            | 
+ IOTHUB_MESSAGE_INVALID_ARG            | 
+ IOTHUB_MESSAGE_INVALID_TYPE            | 
+ IOTHUB_MESSAGE_ERROR            | 
+
+#### IOTHUBMESSAGE_CONTENT_TYPE
+
+Enumeration specifying the content type of the a given message. 
+
+```C
+enum IOTHUBMESSAGE_CONTENT_TYPE {
+  IOTHUBMESSAGE_BYTEARRAY,
+  IOTHUBMESSAGE_STRING,
+  IOTHUBMESSAGE_UNKNOWN
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUBMESSAGE_BYTEARRAY            | 
+ IOTHUBMESSAGE_STRING            | 
+ IOTHUBMESSAGE_UNKNOWN            | 
 

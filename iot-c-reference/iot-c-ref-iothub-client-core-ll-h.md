@@ -44,12 +44,3 @@ Function Name                  | Description
 [IoTHubClientCore_LL_UploadMultipleBlocksToBlob](./iot-c-ref-iothub-client-core-ll-h/iothubclientcore-ll-uploadmultipleblockstoblob.md)            | 
 [IoTHubClientCore_LL_UploadMultipleBlocksToBlobEx](./iot-c-ref-iothub-client-core-ll-h/iothubclientcore-ll-uploadmultipleblockstoblobex.md)            | 
 
-## Typedefs
-
-#### IOTHUB_CLIENT_CORE_LL_HANDLE
-
-```C
-typedef struct IOTHUB_CLIENT_CORE_LL_HANDLE_DATA_TAG * IOTHUB_CLIENT_CORE_LL_HANDLE;
-
-```
-

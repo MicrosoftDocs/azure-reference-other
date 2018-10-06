@@ -32,18 +32,33 @@ Function Name                  | Description
 [attestationMechanism_getTpmAttestation](./iot-c-ref-provisioning-sc-attestation-mechanism-h/attestationmechanism-gettpmattestation.md)            | 
 [attestationMechanism_getX509Attestation](./iot-c-ref-provisioning-sc-attestation-mechanism-h/attestationmechanism-getx509attestation.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-ATTESTATION_TYPE_VALUES            | 
-
-## Typedefs
-
-#### ATTESTATION_MECHANISM_HANDLE
+#### ATTESTATION_TYPE_VALUES
 
 ```C
-typedef struct ATTESTATION_MECHANISM_TAG * ATTESTATION_MECHANISM_HANDLE;
+#define ATTESTATION_TYPE_VALUES \
+ ATTESTATION_TYPE_NONE, \
+ ATTESTATION_TYPE_TPM, \
+ ATTESTATION_TYPE_X509 
 
 ```
+
+## Enumeration types
+
+#### ATTESTATION_TYPE
+
+```C
+enum ATTESTATION_TYPE {
+  ATTESTATION_TYPE_NONE,
+  ATTESTATION_TYPE_TPM,
+  ATTESTATION_TYPE_X509
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ ATTESTATION_TYPE_NONE            | 
+ ATTESTATION_TYPE_TPM            | 
+ ATTESTATION_TYPE_X509            | 
 

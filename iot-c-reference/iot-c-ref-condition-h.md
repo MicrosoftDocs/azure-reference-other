@@ -23,18 +23,38 @@ Function Name                  | Description
 [Condition_Wait](./iot-c-ref-condition-h/condition-wait.md)            | block on the condition handle unti the thread is signalled or until the timeout_milliseconds is reached.
 [Condition_Deinit](./iot-c-ref-condition-h/condition-deinit.md)            | The condition instance is deinitialized.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-COND_RESULT_VALUES            | 
-
-## Typedefs
-
-#### COND_HANDLE
+#### COND_RESULT_VALUES
 
 ```C
-typedef void * COND_HANDLE;
+#define COND_RESULT_VALUES \
+ COND_OK, \
+ COND_INVALID_ARG, \
+ COND_ERROR, \
+ COND_TIMEOUT 
 
 ```
+
+## Enumeration types
+
+#### COND_RESULT
+
+Enumeration specifying the lock status. 
+
+```C
+enum COND_RESULT {
+  COND_OK,
+  COND_INVALID_ARG,
+  COND_ERROR,
+  COND_TIMEOUT
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ COND_OK            | 
+ COND_INVALID_ARG            | 
+ COND_ERROR            | 
+ COND_TIMEOUT            | 
 

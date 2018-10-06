@@ -20,25 +20,38 @@ Function Name                  | Description
 [ThreadAPI_Exit](./iot-c-ref-threadapi-h/threadapi-exit.md)            | This function is called by a thread when the thread exits.
 [ThreadAPI_Sleep](./iot-c-ref-threadapi-h/threadapi-sleep.md)            | Sleeps the current thread for the given number of milliseconds.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-THREADAPI_RESULT_VALUES            | 
-
-## Typedefs
-
-#### THREAD_START_FUNC
+#### THREADAPI_RESULT_VALUES
 
 ```C
-typedef int(* THREAD_START_FUNC;
+#define THREADAPI_RESULT_VALUES \
+ THREADAPI_OK, \
+ THREADAPI_INVALID_ARG, \
+ THREADAPI_NO_MEMORY, \
+ THREADAPI_ERROR 
 
 ```
 
-#### THREAD_HANDLE
+## Enumeration types
+
+#### THREADAPI_RESULT
+
+Enumeration specifying the possible return values for the APIs in this module. 
 
 ```C
-typedef void * THREAD_HANDLE;
+enum THREADAPI_RESULT {
+  THREADAPI_OK,
+  THREADAPI_INVALID_ARG,
+  THREADAPI_NO_MEMORY,
+  THREADAPI_ERROR
+}
 
 ```
+Constant                    | Description                                
+----------------------------|----------------
+ THREADAPI_OK            | 
+ THREADAPI_INVALID_ARG            | 
+ THREADAPI_NO_MEMORY            | 
+ THREADAPI_ERROR            | 
 

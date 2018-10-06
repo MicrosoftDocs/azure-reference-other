@@ -58,11 +58,62 @@ struct PROVISIONING_BULK_OPERATION {
 };
 ```
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-PROVISIONING_BULK_OPERATION_VERSION_1            | 
-PROVISIONING_BULK_OPERATION_MODE_VALUES            | 
-PROVISIONING_BULK_OPERATION_TYPE_VALUES            | 
+#### PROVISIONING_BULK_OPERATION_VERSION_1
+
+```C
+#define PROVISIONING_BULK_OPERATION_VERSION_1 1 
+
+```
+
+#### PROVISIONING_BULK_OPERATION_MODE_VALUES
+
+```C
+#define PROVISIONING_BULK_OPERATION_MODE_VALUES \
+ BULK_OP_CREATE, \
+ BULK_OP_UPDATE, \
+ BULK_OP_UPDATE_IF_MATCH_ETAG, \
+ BULK_OP_DELETE 
+
+```
+
+#### PROVISIONING_BULK_OPERATION_TYPE_VALUES
+
+```C
+#define PROVISIONING_BULK_OPERATION_TYPE_VALUES BULK_OP_INDIVIDUAL_ENROLLMENT 
+
+```
+
+## Enumeration types
+
+#### PROVISIONING_BULK_OPERATION_MODE
+
+```C
+enum PROVISIONING_BULK_OPERATION_MODE {
+  BULK_OP_CREATE,
+  BULK_OP_UPDATE,
+  BULK_OP_UPDATE_IF_MATCH_ETAG,
+  BULK_OP_DELETE
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ BULK_OP_CREATE            | 
+ BULK_OP_UPDATE            | 
+ BULK_OP_UPDATE_IF_MATCH_ETAG            | 
+ BULK_OP_DELETE            | 
+
+#### PROVISIONING_BULK_OPERATION_TYPE
+
+```C
+enum PROVISIONING_BULK_OPERATION_TYPE {
+  BULK_OP_INDIVIDUAL_ENROLLMENT
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ BULK_OP_INDIVIDUAL_ENROLLMENT            | 
 

@@ -14,7 +14,13 @@ HTTP_HANDLE HTTPAPI_CreateConnection(
 ## Parameters
 * `hostName` Name of the host.
 
-This function returns a handle to the newly created connection. You can use the handle in subsequent calls to execute specific HTTP calls using [HTTPAPI_ExecuteRequest](#httpapi_8h_1afa60b8d96e73b2fe592b591208ef66b1).
+This function returns a handle to the newly created connection. You can use the handle in subsequent calls to execute specific HTTP calls using [HTTPAPI_ExecuteRequest](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }).
 
 ## Returns
 A `HTTP_HANDLE` to the newly created connection or `NULL` in case an error occurs.

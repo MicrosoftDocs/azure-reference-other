@@ -22,18 +22,32 @@ Function Name                  | Description
 [Unlock](./iot-c-ref-lock-h/unlock.md)            | Releases the lock on the given lock handle. Uses platform specific mutex primitives in its implementation.
 [Lock_Deinit](./iot-c-ref-lock-h/lock-deinit.md)            | The lock instance is destroyed.
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-LOCK_RESULT_VALUES            | 
-
-## Typedefs
-
-#### LOCK_HANDLE
+#### LOCK_RESULT_VALUES
 
 ```C
-typedef void * LOCK_HANDLE;
+#define LOCK_RESULT_VALUES \
+ LOCK_OK, \
+ LOCK_ERROR 
 
 ```
+
+## Enumeration types
+
+#### LOCK_RESULT
+
+Enumeration specifying the lock status. 
+
+```C
+enum LOCK_RESULT {
+  LOCK_OK,
+  LOCK_ERROR
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ LOCK_OK            | 
+ LOCK_ERROR            | 
 

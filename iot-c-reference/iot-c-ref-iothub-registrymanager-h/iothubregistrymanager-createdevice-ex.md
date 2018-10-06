@@ -16,7 +16,13 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateDevice_Ex(
 ## Parameters
 * `registryManagerHandle` The handle created by a call to the create function. 
 
-* `deviceCreate` [IOTHUB_REGISTRY_DEVICE_CREATE_EX](#struct_i_o_t_h_u_b___r_e_g_i_s_t_r_y___d_e_v_i_c_e___c_r_e_a_t_e___e_x) structure containing the new device Id, primaryKey (optional) and secondaryKey (optional) 
+* `deviceCreate` [IOTHUB_REGISTRY_DEVICE_CREATE_EX](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }) structure containing the new device Id, primaryKey (optional) and secondaryKey (optional) 
 
 * `device` Input parameter, if it is not NULL will contain the created device info structure
 

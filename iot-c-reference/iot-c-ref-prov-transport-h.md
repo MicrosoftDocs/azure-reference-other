@@ -23,26 +23,59 @@ Function Name                  | Description
 [PROV_DEVICE_TRANSPORT_RESULTStrings](./iot-c-ref-prov-transport-h/prov-device-transport-resultstrings.md)            | 
 [PROV_DEVICE_TRANSPORT_RESULT_FromString](./iot-c-ref-prov-transport-h/prov-device-transport-result-fromstring.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-TRANSPORT_HSM_TYPE_VALUES            | 
-PROV_DEVICE_TRANSPORT_RESULT_VALUES            | 
-
-## Typedefs
-
-#### PROV_DEVICE_TRANSPORT_PROVIDER
+#### TRANSPORT_HSM_TYPE_VALUES
 
 ```C
-typedef struct PROV_DEVICE_TRANSPORT_PROVIDER_TAG PROV_DEVICE_TRANSPORT_PROVIDER;
+#define TRANSPORT_HSM_TYPE_VALUES \
+ TRANSPORT_HSM_TYPE_TPM, \
+ TRANSPORT_HSM_TYPE_X509, \
+ TRANSPORT_HSM_TYPE_SYMM_KEY 
 
 ```
 
-#### PROV_DEVICE_TRANSPORT_HANDLE
+#### PROV_DEVICE_TRANSPORT_RESULT_VALUES
 
 ```C
-typedef void * PROV_DEVICE_TRANSPORT_HANDLE;
+#define PROV_DEVICE_TRANSPORT_RESULT_VALUES \
+ PROV_DEVICE_TRANSPORT_RESULT_OK, \
+ PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED, \
+ PROV_DEVICE_TRANSPORT_RESULT_ERROR 
 
 ```
+
+## Enumeration types
+
+#### TRANSPORT_HSM_TYPE
+
+```C
+enum TRANSPORT_HSM_TYPE {
+  TRANSPORT_HSM_TYPE_TPM,
+  TRANSPORT_HSM_TYPE_X509,
+  TRANSPORT_HSM_TYPE_SYMM_KEY
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ TRANSPORT_HSM_TYPE_TPM            | 
+ TRANSPORT_HSM_TYPE_X509            | 
+ TRANSPORT_HSM_TYPE_SYMM_KEY            | 
+
+#### PROV_DEVICE_TRANSPORT_RESULT
+
+```C
+enum PROV_DEVICE_TRANSPORT_RESULT {
+  PROV_DEVICE_TRANSPORT_RESULT_OK,
+  PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED,
+  PROV_DEVICE_TRANSPORT_RESULT_ERROR
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ PROV_DEVICE_TRANSPORT_RESULT_OK            | 
+ PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED            | 
+ PROV_DEVICE_TRANSPORT_RESULT_ERROR            | 
 

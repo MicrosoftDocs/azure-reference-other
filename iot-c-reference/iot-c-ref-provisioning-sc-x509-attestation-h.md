@@ -30,25 +30,36 @@ Function Name                  | Description
 [x509Certificate_getSerialNumber](./iot-c-ref-provisioning-sc-x509-attestation-h/x509certificate-getserialnumber.md)            | 
 [x509Certificate_getVersion](./iot-c-ref-provisioning-sc-x509-attestation-h/x509certificate-getversion.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-X509_CERTIFICATE_TYPE_VALUES            | 
-
-## Typedefs
-
-#### X509_ATTESTATION_HANDLE
+#### X509_CERTIFICATE_TYPE_VALUES
 
 ```C
-typedef struct X509_ATTESTATION_TAG * X509_ATTESTATION_HANDLE;
+#define X509_CERTIFICATE_TYPE_VALUES \
+ X509_CERTIFICATE_TYPE_NONE, \
+ X509_CERTIFICATE_TYPE_CLIENT, \
+ X509_CERTIFICATE_TYPE_SIGNING, \
+ X509_CERTIFICATE_TYPE_CA_REFERENCES 
 
 ```
 
-#### X509_CERTIFICATE_HANDLE
+## Enumeration types
+
+#### X509_CERTIFICATE_TYPE
 
 ```C
-typedef struct X509_CERTIFICATE_WITH_INFO_TAG * X509_CERTIFICATE_HANDLE;
+enum X509_CERTIFICATE_TYPE {
+  X509_CERTIFICATE_TYPE_NONE,
+  X509_CERTIFICATE_TYPE_CLIENT,
+  X509_CERTIFICATE_TYPE_SIGNING,
+  X509_CERTIFICATE_TYPE_CA_REFERENCES
+}
 
 ```
+Constant                    | Description                                
+----------------------------|----------------
+ X509_CERTIFICATE_TYPE_NONE            | 
+ X509_CERTIFICATE_TYPE_CLIENT            | 
+ X509_CERTIFICATE_TYPE_SIGNING            | 
+ X509_CERTIFICATE_TYPE_CA_REFERENCES            | 
 

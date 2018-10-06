@@ -28,18 +28,42 @@ Function Name                  | Description
 [deviceRegistrationState_getEtag](./iot-c-ref-provisioning-sc-device-registration-state-h/deviceregistrationstate-getetag.md)            | 
 [deviceRegistrationState_destroy](./iot-c-ref-provisioning-sc-device-registration-state-h/deviceregistrationstate-destroy.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-REGISTRATION_STATUS_VALUES            | 
-
-## Typedefs
-
-#### DEVICE_REGISTRATION_STATE_HANDLE
+#### REGISTRATION_STATUS_VALUES
 
 ```C
-typedef struct DEVICE_REGISTRATION_STATE_TAG * DEVICE_REGISTRATION_STATE_HANDLE;
+#define REGISTRATION_STATUS_VALUES \
+ REGISTRATION_STATUS_ERROR, \
+ REGISTRATION_STATUS_UNASSIGNED, \
+ REGISTRATION_STATUS_ASSIGNING, \
+ REGISTRATION_STATUS_ASSIGNED, \
+ REGISTRATION_STATUS_FAILED, \
+ REGISTRATION_STATUS_DISABLED 
 
 ```
+
+## Enumeration types
+
+#### REGISTRATION_STATUS
+
+```C
+enum REGISTRATION_STATUS {
+  REGISTRATION_STATUS_ERROR,
+  REGISTRATION_STATUS_UNASSIGNED,
+  REGISTRATION_STATUS_ASSIGNING,
+  REGISTRATION_STATUS_ASSIGNED,
+  REGISTRATION_STATUS_FAILED,
+  REGISTRATION_STATUS_DISABLED
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ REGISTRATION_STATUS_ERROR            | 
+ REGISTRATION_STATUS_UNASSIGNED            | 
+ REGISTRATION_STATUS_ASSIGNING            | 
+ REGISTRATION_STATUS_ASSIGNED            | 
+ REGISTRATION_STATUS_FAILED            | 
+ REGISTRATION_STATUS_DISABLED            | 
 

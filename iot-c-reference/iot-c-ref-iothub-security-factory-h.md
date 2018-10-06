@@ -24,9 +24,39 @@ Function Name                  | Description
 [iothub_security_interface](./iot-c-ref-iothub-security-factory-h/iothub-security-interface.md)            | 
 [iothub_security_type](./iot-c-ref-iothub-security-factory-h/iothub-security-type.md)            | 
 
-## Defines
+## Macro definitions
 
-Define Name                    | Value                                
---------------------------------|---------------------------------------------
-IOTHUB_SECURITY_TYPE_VALUES            | 
+#### IOTHUB_SECURITY_TYPE_VALUES
+
+```C
+#define IOTHUB_SECURITY_TYPE_VALUES \
+ IOTHUB_SECURITY_TYPE_UNKNOWN, \
+ IOTHUB_SECURITY_TYPE_SAS, \
+ IOTHUB_SECURITY_TYPE_X509, \
+ IOTHUB_SECURITY_TYPE_HTTP_EDGE, \
+ IOTHUB_SECURITY_TYPE_SYMMETRIC_KEY 
+
+```
+
+## Enumeration types
+
+#### IOTHUB_SECURITY_TYPE
+
+```C
+enum IOTHUB_SECURITY_TYPE {
+  IOTHUB_SECURITY_TYPE_UNKNOWN,
+  IOTHUB_SECURITY_TYPE_SAS,
+  IOTHUB_SECURITY_TYPE_X509,
+  IOTHUB_SECURITY_TYPE_HTTP_EDGE,
+  IOTHUB_SECURITY_TYPE_SYMMETRIC_KEY
+}
+
+```
+Constant                    | Description                                
+----------------------------|----------------
+ IOTHUB_SECURITY_TYPE_UNKNOWN            | 
+ IOTHUB_SECURITY_TYPE_SAS            | 
+ IOTHUB_SECURITY_TYPE_X509            | 
+ IOTHUB_SECURITY_TYPE_HTTP_EDGE            | 
+ IOTHUB_SECURITY_TYPE_SYMMETRIC_KEY            | 
 

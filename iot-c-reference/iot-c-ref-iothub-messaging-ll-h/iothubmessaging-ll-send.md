@@ -26,7 +26,13 @@ IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_Send(
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubMessaging_Destroy](#iothub__messaging_8h_1a5714171907353034b3bc60b7a404fc79) or IoTHubMessaging_Close function from within any callback.
+**NOTE:** The application behavior is undefined if the user calls the [IoTHubMessaging_Destroy](function (refid) {
+      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
+        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
+      } else {
+        return '#' + refid;
+      }
+    }) or IoTHubMessaging_Close function from within any callback.
 
 ## Returns
 IOTHUB_MESSAGING_OK upon success or an error code upon failure.
