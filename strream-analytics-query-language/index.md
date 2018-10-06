@@ -1,0 +1,1 @@
+# Welcome to stream-analytics-query-language!
