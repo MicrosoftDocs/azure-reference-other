@@ -1077,8 +1077,8 @@
           - name: prov_edge_trusted_certificates.h
             href: iot-c-ref-prov-edge-trusted-certificates-h.md
             items:
-            - name: MOCKABLE_FUNCTION
-              href: iot-c-ref-prov-edge-trusted-certificates-h/mockable-function.md
+            - name: prov_get_edge_trusted_certificates
+              href: iot-c-ref-prov-edge-trusted-certificates-h/prov-get-edge-trusted-certificates.md
           - name: prov_security_factory.h
             href: iot-c-ref-prov-security-factory-h.md
             items:

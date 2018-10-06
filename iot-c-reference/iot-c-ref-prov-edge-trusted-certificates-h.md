@@ -4,6 +4,9 @@ Stub comment for brief. Please update this comment.
 
 ## Includes
 
+\#include "[azure_c_shared_utility/umock_c_prod.h](iot-c-ref-umock-c-prod-h.md)"  
+\#include "azure_c_shared_utility/macro_utils.h"  
+
 ## Detailed Description
 
 Stub comment for details. Please update this comment.
@@ -12,5 +15,5 @@ Stub comment for details. Please update this comment.
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./iot-c-ref-prov-edge-trusted-certificates-h/mockable-function.md)            | 
+[prov_get_edge_trusted_certificates](./iot-c-ref-prov-edge-trusted-certificates-h/prov-get-edge-trusted-certificates.md)            | 
 

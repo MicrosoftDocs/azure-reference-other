@@ -579,6 +579,8 @@ typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK) (IOTHUB_CLIENT_FILE_
 
 * `context` User context provided on the call to IoTHubClient_UploadMultipleBlocksToBlobAsync. 
 
+**Remarks**:
+
 If the user wants to abort the upload, the callback should return IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_ABORT It should return IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_OK otherwise. If a NULL is provided for parameter "data" and/or zero is provided for "size", the user indicates to the client that the complete file has been uploaded. In such case this callback will be invoked only once more to indicate the status of the final block upload. If result is not FILE_UPLOAD_OK, the upload is cancelled and this callback stops being invoked. When this callback is called for the last time, no data or size is expected, so data and size are NULL 
 
 #### IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX

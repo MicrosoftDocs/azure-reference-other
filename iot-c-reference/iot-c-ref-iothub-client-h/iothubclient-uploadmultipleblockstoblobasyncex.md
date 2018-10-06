@@ -14,6 +14,7 @@ IOTHUB_CLIENT_RESULT IoTHubClient_UploadMultipleBlocksToBlobAsyncEx(
 );
 ```
 
+## Remarks
 This function allows users to upload large files in chunks, not requiring the whole file content to be passed in memory. 
 
 ## Parameters

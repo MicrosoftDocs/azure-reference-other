@@ -14,6 +14,7 @@ IOTHUBMESSAGE_CONTENT_TYPE IoTHubMessage_GetContentType(
 ## Parameters
 * `iotHubMessageHandle` Handle to the message.
 
+## Remarks
 This function retrieves the standardized type of the payload, which indicates if `iotHubMessageHandle` was created using a String or a Byte Array.
 
 ## Return Value
