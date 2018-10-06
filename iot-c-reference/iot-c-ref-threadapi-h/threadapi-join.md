@@ -15,13 +15,7 @@ THREADAPI_RESULT ThreadAPI_Join(
 ## Parameters
 * `threadHandle` The handle of the thread to wait for completion. 
 
-* `res` The result returned by the thread which is passed to the [ThreadAPI_Exit](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) function.
+* `res` The result returned by the thread which is passed to the [ThreadAPI_Exit](#undefined) function.
 
 When the `threadHandle` thread completes, all resources associated with the thread must be released and the thread handle will no longer be valid.
 

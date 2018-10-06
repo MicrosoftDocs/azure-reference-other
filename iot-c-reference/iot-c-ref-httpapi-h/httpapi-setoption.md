@@ -14,13 +14,7 @@ HTTPAPI_RESULT HTTPAPI_SetOption(
 ```
 
 ## Parameters
-* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }). 
+* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#undefined). 
 
 * `optionName` A `NULL` terminated string representing the name of the option. 
 

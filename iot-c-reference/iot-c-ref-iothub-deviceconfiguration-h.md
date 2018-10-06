@@ -30,7 +30,7 @@ Function Name                  | Description
 [IoTHubDeviceConfiguration_UpdateConfiguration](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-updateconfiguration.md)            | Updates the given Configuration in IoT Hub.
 [IoTHubDeviceConfiguration_DeleteConfiguration](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-deleteconfiguration.md)            | Deletes the given Configuration from IoT Hub.
 [IoTHubDeviceConfiguration_ApplyConfigurationContentToDeviceOrModule](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-applyconfigurationcontenttodeviceormodule.md)            | Deletes the given Configuration from IoT Hub.
-[IoTHubDeviceConfiguration_FreeConfigurationMembers](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md)            | Free members of the [IOTHUB_DEVICE_CONFIGURATION](function (refid) {<br/>      if ((options.groups \|\| options.classes) && compound.refid !== refid && references[refid]) {<br/>        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;<br/>      } else {<br/>        return '#' + refid;<br/>      }<br/>    }) structure (NOT the structure itself)
+[IoTHubDeviceConfiguration_FreeConfigurationMembers](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md)            | Free members of the [IOTHUB_DEVICE_CONFIGURATION](#undefined) structure (NOT the structure itself)
 
 ## Structures
 
@@ -92,56 +92,20 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_DEVICE_CONFIGURATION {
-  int                                                                                                                                                                                                                                                                                                                                                                     version,
-  const char *                                                                                                                                                                                                                                                                                                                                                            schemaVersion,
-  const char *                                                                                                                                                                                                                                                                                                                                                            configurationId,
-  const char *                                                                                                                                                                                                                                                                                                                                                            targetCondition,
-  const char *                                                                                                                                                                                                                                                                                                                                                            eTag,
-  const char *                                                                                                                                                                                                                                                                                                                                                            createdTimeUtc,
-  const char *                                                                                                                                                                                                                                                                                                                                                            lastUpdatedTimeUtc,
-  int                                                                                                                                                                                                                                                                                                                                                                     priority,
-  [IOTHUB_DEVICE_CONFIGURATION_CONTENT](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })             content,
-  [IOTHUB_DEVICE_CONFIGURATION_LABELS](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })              labels,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })      systemMetricsResult,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  systemMetricsDefinition,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })      metricResult,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  metricsDefinition
+  int                                                           version,
+  const char *                                                  schemaVersion,
+  const char *                                                  configurationId,
+  const char *                                                  targetCondition,
+  const char *                                                  eTag,
+  const char *                                                  createdTimeUtc,
+  const char *                                                  lastUpdatedTimeUtc,
+  int                                                           priority,
+  [IOTHUB_DEVICE_CONFIGURATION_CONTENT](#undefined)             content,
+  [IOTHUB_DEVICE_CONFIGURATION_LABELS](#undefined)              labels,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](#undefined)      systemMetricsResult,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](#undefined)  systemMetricsDefinition,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT](#undefined)      metricResult,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](#undefined)  metricsDefinition
 };
 ```
 Member name                 | Description                                
@@ -164,31 +128,13 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_DEVICE_CONFIGURATION_ADD {
-  int                                                                                                                                                                                                                                                                                                                                                                     version,
-  const char *                                                                                                                                                                                                                                                                                                                                                            configurationId,
-  const char *                                                                                                                                                                                                                                                                                                                                                            targetCondition,
-  int                                                                                                                                                                                                                                                                                                                                                                     priority,
-  [IOTHUB_DEVICE_CONFIGURATION_CONTENT](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })             content,
-  [IOTHUB_DEVICE_CONFIGURATION_LABELS](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })              labels,
-  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  metrics
+  int                                                           version,
+  const char *                                                  configurationId,
+  const char *                                                  targetCondition,
+  int                                                           priority,
+  [IOTHUB_DEVICE_CONFIGURATION_CONTENT](#undefined)             content,
+  [IOTHUB_DEVICE_CONFIGURATION_LABELS](#undefined)              labels,
+  [IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION](#undefined)  metrics
 };
 ```
 Member name                 | Description                                

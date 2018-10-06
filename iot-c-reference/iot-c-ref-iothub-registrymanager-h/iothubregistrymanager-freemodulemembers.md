@@ -1,12 +1,6 @@
 # IoTHubRegistryManager_FreeModuleMembers()
 
-Free members of the [IOTHUB_MODULE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) structure (NOT the structure itself)
+Free members of the [IOTHUB_MODULE](#undefined) structure (NOT the structure itself)
 
 ## Syntax
 

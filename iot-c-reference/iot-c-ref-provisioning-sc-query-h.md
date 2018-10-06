@@ -44,15 +44,9 @@ Member name                 | Description
 
 ```C
 struct PROVISIONING_QUERY_RESPONSE {
-  union PROVISIONING_QUERY_RESPONSE::@1                                                                                                                                                                                                                                                                                                            response_arr,
-  size_t                                                                                                                                                                                                                                                                                                                                           response_arr_size,
-  [PROVISIONING_QUERY_TYPE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  response_arr_type
+  union PROVISIONING_QUERY_RESPONSE::@1  response_arr,
+  size_t                                 response_arr_size,
+  [PROVISIONING_QUERY_TYPE](#undefined)  response_arr_type
 };
 ```
 Member name                 | Description                                

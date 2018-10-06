@@ -40,19 +40,13 @@ Function Name                  | Description
 
 ```C
 struct IOTHUB_SERVICE_FEEDBACK_RECORD {
-  char *                                                                                                                                                                                                                                                                                                                                               description,
-  const char *                                                                                                                                                                                                                                                                                                                                         deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                         correlationId,
-  const char *                                                                                                                                                                                                                                                                                                                                         generationId,
-  const char *                                                                                                                                                                                                                                                                                                                                         enqueuedTimeUtc,
-  [IOTHUB_FEEDBACK_STATUS_CODE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  statusCode,
-  const char *                                                                                                                                                                                                                                                                                                                                         originalMessageId
+  char *                                     description,
+  const char *                               deviceId,
+  const char *                               correlationId,
+  const char *                               generationId,
+  const char *                               enqueuedTimeUtc,
+  [IOTHUB_FEEDBACK_STATUS_CODE](#undefined)  statusCode,
+  const char *                               originalMessageId
 };
 ```
 Member name                 | Description                                
@@ -68,15 +62,9 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_SERVICE_FEEDBACK_BATCH {
-  const char *                                                                                                                                                                                                                                                                                                                                     userId,
-  const char *                                                                                                                                                                                                                                                                                                                                     lockToken,
-  [SINGLYLINKEDLIST_HANDLE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  feedbackRecordList
+  const char *                           userId,
+  const char *                           lockToken,
+  [SINGLYLINKEDLIST_HANDLE](#undefined)  feedbackRecordList
 };
 ```
 Member name                 | Description                                

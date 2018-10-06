@@ -52,42 +52,18 @@ Function Name                  | Description
 
 ```C
 struct IOTHUB_CLIENT_CONFIG {
-  [IOTHUB_CLIENT_TRANSPORT_PROVIDER](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  protocol,
-  const char *                                                                                                                                                                                                                                                                                                                                              deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                              deviceKey,
-  const char *                                                                                                                                                                                                                                                                                                                                              deviceSasToken,
-  const char *                                                                                                                                                                                                                                                                                                                                              iotHubName,
-  const char *                                                                                                                                                                                                                                                                                                                                              iotHubSuffix,
-  const char *                                                                                                                                                                                                                                                                                                                                              protocolGatewayHostName
+  [IOTHUB_CLIENT_TRANSPORT_PROVIDER](#undefined)  protocol,
+  const char *                                    deviceId,
+  const char *                                    deviceKey,
+  const char *                                    deviceSasToken,
+  const char *                                    iotHubName,
+  const char *                                    iotHubSuffix,
+  const char *                                    protocolGatewayHostName
 };
 ```
 Member name                 | Description                                
 ----------------------------|----------------
- protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })`. 
+ protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](#undefined)`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](#undefined)` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](#undefined)`. 
 
  deviceId            | A string that identifies the device. 
 
@@ -104,40 +80,16 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_CLIENT_DEVICE_CONFIG {
-  [IOTHUB_CLIENT_TRANSPORT_PROVIDER](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  protocol,
-  void *                                                                                                                                                                                                                                                                                                                                                    transportHandle,
-  const char *                                                                                                                                                                                                                                                                                                                                              deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                              deviceKey,
-  const char *                                                                                                                                                                                                                                                                                                                                              deviceSasToken
+  [IOTHUB_CLIENT_TRANSPORT_PROVIDER](#undefined)  protocol,
+  void *                                          transportHandle,
+  const char *                                    deviceId,
+  const char *                                    deviceKey,
+  const char *                                    deviceSasToken
 };
 ```
 Member name                 | Description                                
 ----------------------------|----------------
- protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })`. 
+ protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](#undefined)`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](#undefined)` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](#undefined)`. 
 
  transportHandle            | a transport handle implementing the protocol 
 
@@ -359,13 +311,7 @@ Constant                    | Description
 
 #### IOTHUB_CLIENT_STATUS
 
-Enumeration returned by the [IoTHubClient_LL_GetSendStatus](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) API to indicate the current sending status of the IoT Hub client. 
+Enumeration returned by the [IoTHubClient_LL_GetSendStatus](#undefined) API to indicate the current sending status of the IoT Hub client. 
 
 ```C
 enum IOTHUB_CLIENT_STATUS {

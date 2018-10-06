@@ -16,16 +16,10 @@ Stub comment for details. Please update this comment.
 
 ```C
 struct TLSIO_CONFIG {
-  const char *                                                                                                                                                                                                                                                                                                                                              hostname,
-  int                                                                                                                                                                                                                                                                                                                                                       port,
-  const [IO_INTERFACE_DESCRIPTION](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) *  underlying_io_interface,
-  void *                                                                                                                                                                                                                                                                                                                                                    underlying_io_parameters
+  const char *                                    hostname,
+  int                                             port,
+  const [IO_INTERFACE_DESCRIPTION](#undefined) *  underlying_io_interface,
+  void *                                          underlying_io_parameters
 };
 ```
 Member name                 | Description                                

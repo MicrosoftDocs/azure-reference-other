@@ -16,13 +16,7 @@ DEPRECATED:: Use IoTHubRegistryManager_UpdateDevice_Ex instead
 ## Parameters
 * `registryManagerHandle` The handle created by a call to the create function. 
 
-* `deviceUpdate` [IOTHUB_REGISTRY_DEVICE_UPDATE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) structure containing the new device Id, primaryKey (optional), secondaryKey (optional), authentication method, and status
+* `deviceUpdate` [IOTHUB_REGISTRY_DEVICE_UPDATE](#undefined) structure containing the new device Id, primaryKey (optional), secondaryKey (optional), authentication method, and status
 
 ## Returns
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.

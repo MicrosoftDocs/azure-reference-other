@@ -1,12 +1,6 @@
 # HTTPAPI_Deinit()
 
-Free resources allocated in [HTTPAPI_Init](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }).
+Free resources allocated in [HTTPAPI_Init](#undefined).
 
 ## Syntax
 

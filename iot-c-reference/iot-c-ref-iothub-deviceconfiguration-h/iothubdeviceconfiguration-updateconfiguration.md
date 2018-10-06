@@ -15,13 +15,7 @@ IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_UpdateConfiguration
 ## Parameters
 * `serviceClientDeviceConfigurationHandle` The handle created by a call to the create function. 
 
-* `configuration` [IOTHUB_DEVICE_CONFIGURATION](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) structure containing the new configuration info.
+* `configuration` [IOTHUB_DEVICE_CONFIGURATION](#undefined) structure containing the new configuration info.
 
 ## Returns
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.

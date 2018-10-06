@@ -1,12 +1,6 @@
 # HTTPAPI_CloseConnection()
 
-Closes a connection created with [HTTPAPI_CreateConnection](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }).
+Closes a connection created with [HTTPAPI_CreateConnection](#undefined).
 
 ## Syntax
 
@@ -18,25 +12,7 @@ void HTTPAPI_CloseConnection(
 ```
 
 ## Parameters
-* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }).
+* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#undefined).
 
-All resources allocated by [HTTPAPI_CreateConnection](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) should be freed in [HTTPAPI_CloseConnection](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }).
+All resources allocated by [HTTPAPI_CreateConnection](#undefined) should be freed in [HTTPAPI_CloseConnection](#undefined).
 

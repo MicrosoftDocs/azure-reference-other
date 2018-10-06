@@ -46,15 +46,9 @@ Member name                 | Description
 
 ```C
 struct PROVISIONING_BULK_OPERATION_RESULT {
-  bool                                                                                                                                                                                                                                                                                                                                                          is_successful,
-  [PROVISIONING_BULK_OPERATION_ERROR](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) **  errors,
-  size_t                                                                                                                                                                                                                                                                                                                                                        num_errors
+  bool                                                is_successful,
+  [PROVISIONING_BULK_OPERATION_ERROR](#undefined) **  errors,
+  size_t                                              num_errors
 };
 ```
 Member name                 | Description                                
@@ -66,23 +60,11 @@ Member name                 | Description
 
 ```C
 struct PROVISIONING_BULK_OPERATION {
-  int                                                                                                                                                                                                                                                                                                                                                       version,
-  [PROVISIONING_BULK_OPERATION_MODE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  mode,
-  union PROVISIONING_BULK_OPERATION::@0                                                                                                                                                                                                                                                                                                                     enrollments,
-  size_t                                                                                                                                                                                                                                                                                                                                                    num_enrollments,
-  [PROVISIONING_BULK_OPERATION_TYPE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  type
+  int                                             version,
+  [PROVISIONING_BULK_OPERATION_MODE](#undefined)  mode,
+  union PROVISIONING_BULK_OPERATION::@0           enrollments,
+  size_t                                          num_enrollments,
+  [PROVISIONING_BULK_OPERATION_TYPE](#undefined)  type
 };
 ```
 Member name                 | Description                                

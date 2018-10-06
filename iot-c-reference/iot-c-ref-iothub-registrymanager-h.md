@@ -23,8 +23,8 @@ Function Name                  | Description
 [IOTHUB_REGISTRYMANAGER_RESULT_FromString](./iot-c-ref-iothub-registrymanager-h/iothub-registrymanager-result-fromstring.md)            | 
 [IOTHUB_REGISTRYMANAGER_AUTH_METHODStrings](./iot-c-ref-iothub-registrymanager-h/iothub-registrymanager-auth-methodstrings.md)            | 
 [IOTHUB_REGISTRYMANAGER_AUTH_METHOD_FromString](./iot-c-ref-iothub-registrymanager-h/iothub-registrymanager-auth-method-fromstring.md)            | 
-[IoTHubRegistryManager_FreeDeviceExMembers](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-freedeviceexmembers.md)            | Free members of the [IOTHUB_DEVICE_EX](function (refid) {<br/>      if ((options.groups \|\| options.classes) && compound.refid !== refid && references[refid]) {<br/>        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;<br/>      } else {<br/>        return '#' + refid;<br/>      }<br/>    }) structure (NOT the structure itself)
-[IoTHubRegistryManager_FreeModuleMembers](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-freemodulemembers.md)            | Free members of the [IOTHUB_MODULE](function (refid) {<br/>      if ((options.groups \|\| options.classes) && compound.refid !== refid && references[refid]) {<br/>        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;<br/>      } else {<br/>        return '#' + refid;<br/>      }<br/>    }) structure (NOT the structure itself)
+[IoTHubRegistryManager_FreeDeviceExMembers](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-freedeviceexmembers.md)            | Free members of the [IOTHUB_DEVICE_EX](#undefined) structure (NOT the structure itself)
+[IoTHubRegistryManager_FreeModuleMembers](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-freemodulemembers.md)            | Free members of the [IOTHUB_MODULE](#undefined) structure (NOT the structure itself)
 [IoTHubRegistryManager_Create](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-create.md)            | Creates a IoT Hub Registry Manager handle for use it in consequent APIs.
 [IoTHubRegistryManager_Destroy](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-destroy.md)            | Disposes of resources allocated by the IoT Hub Registry Manager.
 [IoTHubRegistryManager_CreateDevice_Ex](./iot-c-ref-iothub-registrymanager-h/iothubregistrymanager-createdevice-ex.md)            | Creates a device on IoT Hub.
@@ -48,43 +48,25 @@ Function Name                  | Description
 
 ```C
 struct IOTHUB_DEVICE_EX {
-  int                                                                                                                                                                                                                                                                                                                                                         version,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                generationId,
-  const char *                                                                                                                                                                                                                                                                                                                                                eTag,
-  [IOTHUB_DEVICE_CONNECTION_STATE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })      connectionState,
-  const char *                                                                                                                                                                                                                                                                                                                                                connectionStateUpdatedTime,
-  [IOTHUB_DEVICE_STATUS](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })                status,
-  const char *                                                                                                                                                                                                                                                                                                                                                statusReason,
-  const char *                                                                                                                                                                                                                                                                                                                                                statusUpdatedTime,
-  const char *                                                                                                                                                                                                                                                                                                                                                lastActivityTime,
-  size_t                                                                                                                                                                                                                                                                                                                                                      cloudToDeviceMessageCount,
-  bool                                                                                                                                                                                                                                                                                                                                                        isManaged,
-  const char *                                                                                                                                                                                                                                                                                                                                                configuration,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceProperties,
-  const char *                                                                                                                                                                                                                                                                                                                                                serviceProperties,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod,
-  bool                                                                                                                                                                                                                                                                                                                                                        iotEdge_capable
+  int                                               version,
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  const char *                                      generationId,
+  const char *                                      eTag,
+  [IOTHUB_DEVICE_CONNECTION_STATE](#undefined)      connectionState,
+  const char *                                      connectionStateUpdatedTime,
+  [IOTHUB_DEVICE_STATUS](#undefined)                status,
+  const char *                                      statusReason,
+  const char *                                      statusUpdatedTime,
+  const char *                                      lastActivityTime,
+  size_t                                            cloudToDeviceMessageCount,
+  bool                                              isManaged,
+  const char *                                      configuration,
+  const char *                                      deviceProperties,
+  const char *                                      serviceProperties,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
+  bool                                              iotEdge_capable
 };
 ```
 Member name                 | Description                                
@@ -112,18 +94,12 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_DEVICE_CREATE_EX {
-  int                                                                                                                                                                                                                                                                                                                                                         version,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod,
-  bool                                                                                                                                                                                                                                                                                                                                                        iotEdge_capable
+  int                                               version,
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
+  bool                                              iotEdge_capable
 };
 ```
 Member name                 | Description                                
@@ -138,25 +114,13 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_DEVICE_UPDATE_EX {
-  int                                                                                                                                                                                                                                                                                                                                                         version,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  [IOTHUB_DEVICE_STATUS](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })                status,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod,
-  bool                                                                                                                                                                                                                                                                                                                                                        iotEdge_capable
+  int                                               version,
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  [IOTHUB_DEVICE_STATUS](#undefined)                status,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
+  bool                                              iotEdge_capable
 };
 ```
 Member name                 | Description                                
@@ -186,44 +150,26 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_MODULE {
-  int                                                                                                                                                                                                                                                                                                                                                         version,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                generationId,
-  const char *                                                                                                                                                                                                                                                                                                                                                eTag,
-  [IOTHUB_DEVICE_CONNECTION_STATE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })      connectionState,
-  const char *                                                                                                                                                                                                                                                                                                                                                connectionStateUpdatedTime,
-  [IOTHUB_DEVICE_STATUS](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })                status,
-  const char *                                                                                                                                                                                                                                                                                                                                                statusReason,
-  const char *                                                                                                                                                                                                                                                                                                                                                statusUpdatedTime,
-  const char *                                                                                                                                                                                                                                                                                                                                                lastActivityTime,
-  size_t                                                                                                                                                                                                                                                                                                                                                      cloudToDeviceMessageCount,
-  bool                                                                                                                                                                                                                                                                                                                                                        isManaged,
-  const char *                                                                                                                                                                                                                                                                                                                                                configuration,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceProperties,
-  const char *                                                                                                                                                                                                                                                                                                                                                serviceProperties,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod,
-  const char *                                                                                                                                                                                                                                                                                                                                                moduleId,
-  const char *                                                                                                                                                                                                                                                                                                                                                managedBy
+  int                                               version,
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  const char *                                      generationId,
+  const char *                                      eTag,
+  [IOTHUB_DEVICE_CONNECTION_STATE](#undefined)      connectionState,
+  const char *                                      connectionStateUpdatedTime,
+  [IOTHUB_DEVICE_STATUS](#undefined)                status,
+  const char *                                      statusReason,
+  const char *                                      statusUpdatedTime,
+  const char *                                      lastActivityTime,
+  size_t                                            cloudToDeviceMessageCount,
+  bool                                              isManaged,
+  const char *                                      configuration,
+  const char *                                      deviceProperties,
+  const char *                                      serviceProperties,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
+  const char *                                      moduleId,
+  const char *                                      managedBy
 };
 ```
 Member name                 | Description                                
@@ -252,19 +198,13 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_MODULE_CREATE {
-  int                                                                                                                                                                                                                                                                                                                                                         version,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod,
-  const char *                                                                                                                                                                                                                                                                                                                                                moduleId,
-  const char *                                                                                                                                                                                                                                                                                                                                                managedBy
+  int                                               version,
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
+  const char *                                      moduleId,
+  const char *                                      managedBy
 };
 ```
 Member name                 | Description                                
@@ -280,26 +220,14 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_MODULE_UPDATE {
-  int                                                                                                                                                                                                                                                                                                                                                         version,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  [IOTHUB_DEVICE_STATUS](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })                status,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod,
-  const char *                                                                                                                                                                                                                                                                                                                                                moduleId,
-  const char *                                                                                                                                                                                                                                                                                                                                                managedBy
+  int                                               version,
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  [IOTHUB_DEVICE_STATUS](#undefined)                status,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod,
+  const char *                                      moduleId,
+  const char *                                      managedBy
 };
 ```
 Member name                 | Description                                
@@ -336,41 +264,23 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_DEVICE {
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                generationId,
-  const char *                                                                                                                                                                                                                                                                                                                                                eTag,
-  [IOTHUB_DEVICE_CONNECTION_STATE](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })      connectionState,
-  const char *                                                                                                                                                                                                                                                                                                                                                connectionStateUpdatedTime,
-  [IOTHUB_DEVICE_STATUS](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })                status,
-  const char *                                                                                                                                                                                                                                                                                                                                                statusReason,
-  const char *                                                                                                                                                                                                                                                                                                                                                statusUpdatedTime,
-  const char *                                                                                                                                                                                                                                                                                                                                                lastActivityTime,
-  size_t                                                                                                                                                                                                                                                                                                                                                      cloudToDeviceMessageCount,
-  bool                                                                                                                                                                                                                                                                                                                                                        isManaged,
-  const char *                                                                                                                                                                                                                                                                                                                                                configuration,
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceProperties,
-  const char *                                                                                                                                                                                                                                                                                                                                                serviceProperties,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  const char *                                      generationId,
+  const char *                                      eTag,
+  [IOTHUB_DEVICE_CONNECTION_STATE](#undefined)      connectionState,
+  const char *                                      connectionStateUpdatedTime,
+  [IOTHUB_DEVICE_STATUS](#undefined)                status,
+  const char *                                      statusReason,
+  const char *                                      statusUpdatedTime,
+  const char *                                      lastActivityTime,
+  size_t                                            cloudToDeviceMessageCount,
+  bool                                              isManaged,
+  const char *                                      configuration,
+  const char *                                      deviceProperties,
+  const char *                                      serviceProperties,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod
 };
 ```
 Member name                 | Description                                
@@ -396,16 +306,10 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_DEVICE_CREATE {
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod
 };
 ```
 Member name                 | Description                                
@@ -418,23 +322,11 @@ Member name                 | Description
 
 ```C
 struct IOTHUB_REGISTRY_DEVICE_UPDATE {
-  const char *                                                                                                                                                                                                                                                                                                                                                deviceId,
-  const char *                                                                                                                                                                                                                                                                                                                                                primaryKey,
-  const char *                                                                                                                                                                                                                                                                                                                                                secondaryKey,
-  [IOTHUB_DEVICE_STATUS](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })                status,
-  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })  authMethod
+  const char *                                      deviceId,
+  const char *                                      primaryKey,
+  const char *                                      secondaryKey,
+  [IOTHUB_DEVICE_STATUS](#undefined)                status,
+  [IOTHUB_REGISTRYMANAGER_AUTH_METHOD](#undefined)  authMethod
 };
 ```
 Member name                 | Description                                

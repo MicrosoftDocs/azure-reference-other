@@ -20,13 +20,7 @@ HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
 ```
 
 ## Parameters
-* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }). 
+* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#undefined). 
 
 * `requestType` Specifies which HTTP method is used (GET, POST, DELETE, PUT, PATCH). 
 
@@ -38,53 +32,11 @@ HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
 
 * `contentLength` Specifies the request body size (this is typically added into the HTTP headers as the Content-Length header). This value is optional and can be 0. 
 
-* `statusCode` This is an out parameter, where [HTTPAPI_ExecuteRequest](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) returns the status code from the HTTP response (200, 201, 400, 401, etc.) 
+* `statusCode` This is an out parameter, where [HTTPAPI_ExecuteRequest](#undefined) returns the status code from the HTTP response (200, 201, 400, 401, etc.) 
 
-* `responseHeadersHandle` This is an HTTP headers handle to which [HTTPAPI_ExecuteRequest](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) must add all the HTTP response headers so that the caller of [HTTPAPI_ExecuteRequest](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) can inspect them. You can manipulate `responseHeadersHandle` by using the HTTPHeaders APIs available in `HTTPHeaders.h`
+* `responseHeadersHandle` This is an HTTP headers handle to which [HTTPAPI_ExecuteRequest](#undefined) must add all the HTTP response headers so that the caller of [HTTPAPI_ExecuteRequest](#undefined) can inspect them. You can manipulate `responseHeadersHandle` by using the HTTPHeaders APIs available in `HTTPHeaders.h`
 
-* `responseContent` This is a buffer that must be filled by [HTTPAPI_ExecuteRequest](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) with the contents of the HTTP response body. The buffer size must be increased by the [HTTPAPI_ExecuteRequest](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) implementation in order to fit the response body. [HTTPAPI_ExecuteRequest](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    }) must also handle chunked transfer encoding for HTTP responses. To manipulate the `responseContent` buffer, use the APIs available in `[Strings.h](function (refid) {
-      if ((options.groups || options.classes) && compound.refid !== refid && references[refid]) {
-        return util.format(options.output, options.groups ? references[refid].groupname : references[refid].name) + '#' + refid;
-      } else {
-        return '#' + refid;
-      }
-    })`.
+* `responseContent` This is a buffer that must be filled by [HTTPAPI_ExecuteRequest](#undefined) with the contents of the HTTP response body. The buffer size must be increased by the [HTTPAPI_ExecuteRequest](#undefined) implementation in order to fit the response body. [HTTPAPI_ExecuteRequest](#undefined) must also handle chunked transfer encoding for HTTP responses. To manipulate the `responseContent` buffer, use the APIs available in `[Strings.h](#undefined)`.
 
 ## Returns
 `HTTPAPI_OK` if the API call is successful or an error code in case it fails.
