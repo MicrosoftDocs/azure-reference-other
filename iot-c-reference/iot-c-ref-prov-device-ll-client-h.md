@@ -147,3 +147,20 @@ typedef void(* PROV_DEVICE_CLIENT_REGISTER_STATUS_CALLBACK) (PROV_DEVICE_REG_STA
 typedef const PROV_DEVICE_TRANSPORT_PROVIDER*(* PROV_DEVICE_TRANSPORT_PROVIDER_FUNCTION) (void);
 ```
 
+## Constants and Variables
+
+#### PROV_REGISTRATION_ID
+```C
+const char* const PROV_REGISTRATION_ID = "registration_id";
+```
+
+#### PROV_OPTION_LOG_TRACE
+```C
+const char* const PROV_OPTION_LOG_TRACE = "logtrace";
+```
+
+#### PROV_OPTION_TIMEOUT
+```C
+const char* const PROV_OPTION_TIMEOUT = "provisioning_timeout";
+```
+

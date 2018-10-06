@@ -130,3 +130,10 @@ Constant                    | Description
 typedef struct IOTHUB_MESSAGE_HANDLE_DATA_TAG* IOTHUB_MESSAGE_HANDLE;
 ```
 
+## Constants and Variables
+
+#### DIAG_CREATION_TIME_UTC_PROPERTY_NAME
+```C
+const char DIAG_CREATION_TIME_UTC_PROPERTY_NAME[] = "diag_creation_time_utc";
+```
+

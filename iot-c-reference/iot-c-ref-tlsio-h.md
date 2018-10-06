@@ -16,10 +16,10 @@ Stub comment for details. Please update this comment.
 
 ```C
 struct TLSIO_CONFIG {
-  const char *                      hostname,
-  int                               port,
-  IO_INTERFACE_DESCRIPTIONconst  *  underlying_io_interface,
-  void *                            underlying_io_parameters
+  const char *                        hostname,
+  int                                 port,
+  const  IO_INTERFACE_DESCRIPTION  *  underlying_io_interface,
+  void *                              underlying_io_parameters
 };
 ```
 Member name                 | Description                                

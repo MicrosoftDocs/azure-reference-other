@@ -46,9 +46,9 @@ Member name                 | Description
 
 ```C
 struct PROVISIONING_BULK_OPERATION_RESULT {
-  bool                                  is_successful,
-  PROVISIONING_BULK_OPERATION_ERROR **  errors,
-  size_t                                num_errors
+  bool                                   is_successful,
+  PROVISIONING_BULK_OPERATION_ERROR  **  errors,
+  size_t                                 num_errors
 };
 ```
 Member name                 | Description                                
