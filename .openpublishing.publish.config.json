@@ -18,7 +18,7 @@
     },
     {
       "docset_name": "stream-analytics-query-language",
-      "build_source_folder": "strream-analytics-query-language",
+      "build_source_folder": "stream-analytics-query-language",
       "build_output_subfolder": "stream-analytics-query-language",
       "locale": "en-us",
       "monikers": [],
