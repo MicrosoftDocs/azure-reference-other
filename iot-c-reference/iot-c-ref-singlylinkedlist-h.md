@@ -45,7 +45,10 @@ typedef struct LIST_ITEM_INSTANCE_TAG* LIST_ITEM_HANDLE;
 Function passed to singlylinkedlist_find, which returns whichever first list item that matches it. 
 
 ```C
-typedef bool(* LIST_MATCH_FUNCTION) (LIST_ITEM_HANDLE list_item, const void *match_context);
+typedef bool(* LIST_MATCH_FUNCTION) (
+  LIST_ITEM_HANDLE list_item,
+   const void *match_context
+);
 ```
 
 **Parameters**:
@@ -63,7 +66,11 @@ True to indicate that the current list node is the one to be returned, or false 
 Function passed to singlylinkedlist_remove_if, which is used to define if an item of the list should be removed or not. 
 
 ```C
-typedef bool(* LIST_CONDITION_FUNCTION) (const void *item, const void *match_context, bool *continue_processing);
+typedef bool(* LIST_CONDITION_FUNCTION) (
+  const void *item,
+   const void *match_context,
+   bool *continue_processing
+);
 ```
 
 **Parameters**:
@@ -83,7 +90,11 @@ True to indicate that the current list node shall be removed, or false to not to
 Function passed to singlylinkedlist_foreach, which is called for the value of each node of the list. 
 
 ```C
-typedef void(* LIST_ACTION_FUNCTION) (const void *item, const void *action_context, bool *continue_processing);
+typedef void(* LIST_ACTION_FUNCTION) (
+  const void *item,
+   const void *action_context,
+   bool *continue_processing
+);
 ```
 
 **Parameters**:

@@ -58,7 +58,9 @@ Constant                    | Description
 #### THREAD_START_FUNC
 
 ```C
-typedef int(* THREAD_START_FUNC) (void *);
+typedef int(* THREAD_START_FUNC) (
+  void *
+);
 ```
 
 #### THREAD_HANDLE

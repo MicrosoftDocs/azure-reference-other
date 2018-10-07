@@ -132,19 +132,29 @@ typedef struct PROV_INSTANCE_INFO_TAG* PROV_DEVICE_LL_HANDLE;
 #### PROV_DEVICE_CLIENT_REGISTER_DEVICE_CALLBACK
 
 ```C
-typedef void(* PROV_DEVICE_CLIENT_REGISTER_DEVICE_CALLBACK) (PROV_DEVICE_RESULT register_result, const char *iothub_uri, const char *device_id, void *user_context);
+typedef void(* PROV_DEVICE_CLIENT_REGISTER_DEVICE_CALLBACK) (
+  PROV_DEVICE_RESULT register_result,
+   const char *iothub_uri,
+   const char *device_id,
+   void *user_context
+);
 ```
 
 #### PROV_DEVICE_CLIENT_REGISTER_STATUS_CALLBACK
 
 ```C
-typedef void(* PROV_DEVICE_CLIENT_REGISTER_STATUS_CALLBACK) (PROV_DEVICE_REG_STATUS reg_status, void *user_context);
+typedef void(* PROV_DEVICE_CLIENT_REGISTER_STATUS_CALLBACK) (
+  PROV_DEVICE_REG_STATUS reg_status,
+   void *user_context
+);
 ```
 
 #### PROV_DEVICE_TRANSPORT_PROVIDER_FUNCTION
 
 ```C
-typedef const PROV_DEVICE_TRANSPORT_PROVIDER*(* PROV_DEVICE_TRANSPORT_PROVIDER_FUNCTION) (void);
+typedef const PROV_DEVICE_TRANSPORT_PROVIDER*(* PROV_DEVICE_TRANSPORT_PROVIDER_FUNCTION) (
+  void
+);
 ```
 
 ## Constants and Variables

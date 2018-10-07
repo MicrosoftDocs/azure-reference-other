@@ -101,12 +101,26 @@ Constant                    | Description
 #### LOGGER_LOG
 
 ```C
-typedef void(* LOGGER_LOG) (LOG_CATEGORY log_category, const char *file, const char *func, int line, unsigned int options, const char *format,...);
+typedef void(* LOGGER_LOG) (
+  LOG_CATEGORY log_category,
+   const char *file,
+   const char *func,
+   int line,
+   unsigned int options,
+   const char *format,
+  ...
+);
 ```
 
 #### LOGGER_LOG_GETLASTERROR
 
 ```C
-typedef void(* LOGGER_LOG_GETLASTERROR) (const char *file, const char *func, int line, const char *format,...);
+typedef void(* LOGGER_LOG_GETLASTERROR) (
+  const char *file,
+   const char *func,
+   int line,
+   const char *format,
+  ...
+);
 ```
 
