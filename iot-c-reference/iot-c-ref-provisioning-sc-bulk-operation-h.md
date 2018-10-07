@@ -42,6 +42,7 @@ Member name                 | Description
  registration_id            | 
  error_code            | 
  error_status            | 
+
 #### PROVISIONING_BULK_OPERATION_RESULT
 
 ```C
@@ -56,6 +57,7 @@ Member name                 | Description
  is_successful            | 
  errors            | 
  num_errors            | 
+
 #### PROVISIONING_BULK_OPERATION
 
 ```C

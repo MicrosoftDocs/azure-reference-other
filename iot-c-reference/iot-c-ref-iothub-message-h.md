@@ -63,6 +63,8 @@ Member name                 | Description
  diagnosticId            | 
  diagnosticCreationTimeUtc            | 
 
+diagnostic related data
+
 ## Macro definitions
 
 #### IOTHUB_MESSAGE_RESULT_VALUES

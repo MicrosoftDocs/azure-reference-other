@@ -47,6 +47,8 @@ Member name                 | Description
  keyName            | 
  deviceId            | 
 
+Structure to store IoTHub authentication information.
+
 ## Macro definitions
 
 #### IOTHUB_DEVICE_STATUS_VALUES

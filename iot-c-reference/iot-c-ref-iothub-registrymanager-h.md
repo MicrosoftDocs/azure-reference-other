@@ -90,6 +90,7 @@ Member name                 | Description
  serviceProperties            | 
  authMethod            | 
  iotEdge_capable            | 
+
 #### IOTHUB_REGISTRY_DEVICE_CREATE_EX
 
 ```C
@@ -110,6 +111,7 @@ Member name                 | Description
  secondaryKey            | 
  authMethod            | 
  iotEdge_capable            | 
+
 #### IOTHUB_REGISTRY_DEVICE_UPDATE_EX
 
 ```C
@@ -132,6 +134,7 @@ Member name                 | Description
  status            | 
  authMethod            | 
  iotEdge_capable            | 
+
 #### IOTHUB_REGISTRY_STATISTICS
 
 ```C
@@ -146,6 +149,7 @@ Member name                 | Description
  totalDeviceCount            | 
  enabledDeviceCount            | 
  disabledDeviceCount            | 
+
 #### IOTHUB_MODULE
 
 ```C
@@ -194,6 +198,7 @@ Member name                 | Description
  authMethod            | 
  moduleId            | 
  managedBy            | 
+
 #### IOTHUB_REGISTRY_MODULE_CREATE
 
 ```C
@@ -216,6 +221,7 @@ Member name                 | Description
  authMethod            | 
  moduleId            | 
  managedBy            | 
+
 #### IOTHUB_REGISTRY_MODULE_UPDATE
 
 ```C
@@ -240,6 +246,7 @@ Member name                 | Description
  authMethod            | 
  moduleId            | 
  managedBy            | 
+
 #### IOTHUB_REGISTRYMANAGER
 
 ```C
@@ -260,6 +267,9 @@ Member name                 | Description
  sharedAccessKey            | 
  keyName            | 
  deviceId            | 
+
+Structure to store IoTHub authentication information.
+
 #### IOTHUB_DEVICE
 
 ```C
@@ -302,6 +312,7 @@ Member name                 | Description
  deviceProperties            | 
  serviceProperties            | 
  authMethod            | 
+
 #### IOTHUB_REGISTRY_DEVICE_CREATE
 
 ```C
@@ -318,6 +329,7 @@ Member name                 | Description
  primaryKey            | 
  secondaryKey            | 
  authMethod            | 
+
 #### IOTHUB_REGISTRY_DEVICE_UPDATE
 
 ```C

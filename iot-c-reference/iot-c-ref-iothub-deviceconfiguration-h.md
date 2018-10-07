@@ -46,6 +46,7 @@ Member name                 | Description
 ----------------------------|----------------
  deviceContent            | 
  modulesContent            | 
+
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT
 
 ```C
@@ -60,6 +61,7 @@ Member name                 | Description
  numQueries            | 
  queryNames            | 
  results            | 
+
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION
 
 ```C
@@ -74,6 +76,7 @@ Member name                 | Description
  numQueries            | 
  queryNames            | 
  queryStrings            | 
+
 #### IOTHUB_DEVICE_CONFIGURATION_LABELS
 
 ```C
@@ -88,6 +91,7 @@ Member name                 | Description
  numLabels            | 
  labelNames            | 
  labelValues            | 
+
 #### IOTHUB_DEVICE_CONFIGURATION
 
 ```C
@@ -124,6 +128,7 @@ Member name                 | Description
  systemMetricsDefinition            | 
  metricResult            | 
  metricsDefinition            | 
+
 #### IOTHUB_DEVICE_CONFIGURATION_ADD
 
 ```C

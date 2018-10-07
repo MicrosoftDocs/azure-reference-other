@@ -63,19 +63,16 @@ struct IOTHUB_CLIENT_CONFIG {
 ```
 Member name                 | Description                                
 ----------------------------|----------------
- protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](#undefined)`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](#undefined)` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](#undefined)`. 
-
- deviceId            | A string that identifies the device. 
-
- deviceKey            | The device key used to authenticate the device. If neither deviceSasToken nor deviceKey is present then the authentication is assumed x509. 
-
- deviceSasToken            | The device SAS Token used to authenticate the device in place of device key. If neither deviceSasToken nor deviceKey is present then the authentication is assumed x509. 
-
- iotHubName            | The IoT Hub name to which the device is connecting. 
-
- iotHubSuffix            | IoT Hub suffix goes here, e.g., private.azure-devices-int.net. 
-
+ protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](#undefined)`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](#undefined)` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](#undefined)`.
+ deviceId            | A string that identifies the device.
+ deviceKey            | The device key used to authenticate the device. If neither deviceSasToken nor deviceKey is present then the authentication is assumed x509.
+ deviceSasToken            | The device SAS Token used to authenticate the device in place of device key. If neither deviceSasToken nor deviceKey is present then the authentication is assumed x509.
+ iotHubName            | The IoT Hub name to which the device is connecting.
+ iotHubSuffix            | IoT Hub suffix goes here, e.g., private.azure-devices-int.net.
  protocolGatewayHostName            | 
+
+This struct captures IoTHub client configuration.
+
 #### IOTHUB_CLIENT_DEVICE_CONFIG
 
 ```C
@@ -89,15 +86,13 @@ struct IOTHUB_CLIENT_DEVICE_CONFIG {
 ```
 Member name                 | Description                                
 ----------------------------|----------------
- protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](#undefined)`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](#undefined)` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](#undefined)`. 
+ protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](#undefined)`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](#undefined)` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](#undefined)`.
+ transportHandle            | a transport handle implementing the protocol
+ deviceId            | A string that identifies the device.
+ deviceKey            | The device key used to authenticate the device. x509 authentication is is not supported for multiplexed connections.
+ deviceSasToken            | The device SAS Token used to authenticate the device in place of device key. x509 authentication is is not supported for multiplexed connections.
 
- transportHandle            | a transport handle implementing the protocol 
-
- deviceId            | A string that identifies the device. 
-
- deviceKey            | The device key used to authenticate the device. x509 authentication is is not supported for multiplexed connections. 
-
- deviceSasToken            | The device SAS Token used to authenticate the device in place of device key. x509 authentication is is not supported for multiplexed connections. 
+This struct captures IoTHub client device configuration.
 
 ## Macro definitions
 

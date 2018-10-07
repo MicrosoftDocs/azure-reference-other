@@ -58,6 +58,7 @@ Member name                 | Description
  enqueuedTimeUtc            | 
  statusCode            | 
  originalMessageId            | 
+
 #### IOTHUB_SERVICE_FEEDBACK_BATCH
 
 ```C
