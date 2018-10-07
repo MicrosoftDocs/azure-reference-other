@@ -252,7 +252,7 @@ enum IOTHUB_CLIENT_RESULT {
 
 **Parameters**:
 
-* `IOTHUB_CLIENT_OK` Just an example comment for IOTHUB_CLIENT_INVALID_ARG. 
+* `IOTHUB_CLIENT_OK` Just an example comment for IOTHUB_CLIENT_OK. 
 
 * `IOTHUB_CLIENT_INVALID_ARG` Just an example comment for IOTHUB_CLIENT_INVALID_ARG. 
 
