@@ -110,9 +110,9 @@ typedef struct PROV_INSTANCE_INFO_TAG* PROV_DEVICE_LL_HANDLE;
 ```C
 typedef void(* PROV_DEVICE_CLIENT_REGISTER_DEVICE_CALLBACK) (
   PROV_DEVICE_RESULT register_result,
-   const char *iothub_uri,
-   const char *device_id,
-   void *user_context
+  const char *iothub_uri,
+  const char *device_id,
+  void *user_context
 );
 ```
 
@@ -121,7 +121,7 @@ typedef void(* PROV_DEVICE_CLIENT_REGISTER_DEVICE_CALLBACK) (
 ```C
 typedef void(* PROV_DEVICE_CLIENT_REGISTER_STATUS_CALLBACK) (
   PROV_DEVICE_REG_STATUS reg_status,
-   void *user_context
+  void *user_context
 );
 ```
 

@@ -59,7 +59,7 @@ typedef struct OPTIONHANDLER_HANDLE_DATA_TAG* OPTIONHANDLER_HANDLE;
 ```C
 typedef void*(* pfCloneOption) (
   const char *name,
-   const void *value
+  const void *value
 );
 ```
 
@@ -68,7 +68,7 @@ typedef void*(* pfCloneOption) (
 ```C
 typedef void(* pfDestroyOption) (
   const char *name,
-   const void *value
+  const void *value
 );
 ```
 
@@ -77,8 +77,8 @@ typedef void(* pfDestroyOption) (
 ```C
 typedef int(* pfSetOption) (
   void *handle,
-   const char *name,
-   const void *value
+  const char *name,
+  const void *value
 );
 ```
 

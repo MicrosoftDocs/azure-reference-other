@@ -74,7 +74,7 @@ typedef struct MAP_HANDLE_DATA_TAG* MAP_HANDLE;
 ```C
 typedef int(* MAP_FILTER_CALLBACK) (
   const char *mapProperty,
-   const char *mapValue
+  const char *mapValue
 );
 ```
 

@@ -98,11 +98,11 @@ enum LOG_CATEGORY {
 ```C
 typedef void(* LOGGER_LOG) (
   LOG_CATEGORY log_category,
-   const char *file,
-   const char *func,
-   int line,
-   unsigned int options,
-   const char *format,
+  const char *file,
+  const char *func,
+  int line,
+  unsigned int options,
+  const char *format,
   ...
 );
 ```
@@ -112,9 +112,9 @@ typedef void(* LOGGER_LOG) (
 ```C
 typedef void(* LOGGER_LOG_GETLASTERROR) (
   const char *file,
-   const char *func,
-   int line,
-   const char *format,
+  const char *func,
+  int line,
+  const char *format,
   ...
 );
 ```

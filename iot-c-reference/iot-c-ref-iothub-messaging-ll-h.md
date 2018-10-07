@@ -167,7 +167,7 @@ typedef void(* IOTHUB_OPEN_COMPLETE_CALLBACK) (
 ```C
 typedef void(* IOTHUB_SEND_COMPLETE_CALLBACK) (
   void *context,
-   IOTHUB_MESSAGING_RESULT messagingResult
+  IOTHUB_MESSAGING_RESULT messagingResult
 );
 ```
 
@@ -176,7 +176,7 @@ typedef void(* IOTHUB_SEND_COMPLETE_CALLBACK) (
 ```C
 typedef void(* IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK) (
   void *context,
-   IOTHUB_SERVICE_FEEDBACK_BATCH *feedbackBatch
+  IOTHUB_SERVICE_FEEDBACK_BATCH *feedbackBatch
 );
 ```
 
