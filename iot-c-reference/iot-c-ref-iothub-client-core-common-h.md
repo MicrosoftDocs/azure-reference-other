@@ -50,6 +50,8 @@ Function Name                  | Description
 
 #### IOTHUB_CLIENT_CONFIG
 
+This struct captures IoTHub client configuration.
+
 ```C
 struct IOTHUB_CLIENT_CONFIG {
   IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol,
@@ -70,10 +72,9 @@ Member name                 | Description
  iotHubName            | The IoT Hub name to which the device is connecting.
  iotHubSuffix            | IoT Hub suffix goes here, e.g., private.azure-devices-int.net.
  protocolGatewayHostName            | 
-
-This struct captures IoTHub client configuration.
-
 #### IOTHUB_CLIENT_DEVICE_CONFIG
+
+This struct captures IoTHub client device configuration.
 
 ```C
 struct IOTHUB_CLIENT_DEVICE_CONFIG {
@@ -91,8 +92,6 @@ Member name                 | Description
  deviceId            | A string that identifies the device.
  deviceKey            | The device key used to authenticate the device. x509 authentication is is not supported for multiplexed connections.
  deviceSasToken            | The device SAS Token used to authenticate the device in place of device key. x509 authentication is is not supported for multiplexed connections.
-
-This struct captures IoTHub client device configuration.
 
 ## Macro definitions
 
@@ -236,10 +235,6 @@ enum IOTHUB_CLIENT_FILE_UPLOAD_RESULT {
   FILE_UPLOAD_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- FILE_UPLOAD_OK            | 
- FILE_UPLOAD_ERROR            | 
 
 #### IOTHUB_CLIENT_RESULT
 
@@ -254,13 +249,20 @@ enum IOTHUB_CLIENT_RESULT {
   IOTHUB_CLIENT_INDEFINITE_TIME
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_CLIENT_OK            | 
- IOTHUB_CLIENT_INVALID_ARG            | 
- IOTHUB_CLIENT_ERROR            | 
- IOTHUB_CLIENT_INVALID_SIZE            | 
- IOTHUB_CLIENT_INDEFINITE_TIME            | 
+
+## Parameters
+* `IOTHUB_CLIENT_OK` Just an example comment for IOTHUB_CLIENT_INVALID_ARG. 
+
+* `IOTHUB_CLIENT_INVALID_ARG` Just an example comment for IOTHUB_CLIENT_INVALID_ARG. 
+
+* `IOTHUB_CLIENT_ERROR` Just an example comment for IOTHUB_CLIENT_ERROR. 
+
+* `IOTHUB_CLIENT_INVALID_SIZE` Just an example comment for IOTHUB_CLIENT_INVALID_SIZE. 
+
+* `IOTHUB_CLIENT_INDEFINITE_TIME` Just an example comment for IOTHUB_CLIENT_INDEFINITE_TIME. 
+
+## Remarks
+If the user wants to abort the upload, the callback should return IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_ABORT It should return IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_OK otherwise. If a NULL is provided for parameter "data" and/or zero is provided for "size", the user indicates to the client that the complete file has been uploaded. In such case this callback will be invoked only once more to indicate the status of the final block upload. If result is not FILE_UPLOAD_OK, the upload is cancelled and this callback stops being invoked. When this callback is called for the last time, no data or size is expected, so data and size are NULL 
 
 #### IOTHUB_CLIENT_RETRY_POLICY
 
@@ -277,15 +279,6 @@ enum IOTHUB_CLIENT_RETRY_POLICY {
   IOTHUB_CLIENT_RETRY_RANDOM
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_CLIENT_RETRY_NONE            | 
- IOTHUB_CLIENT_RETRY_IMMEDIATE            | 
- IOTHUB_CLIENT_RETRY_INTERVAL            | 
- IOTHUB_CLIENT_RETRY_LINEAR_BACKOFF            | 
- IOTHUB_CLIENT_RETRY_EXPONENTIAL_BACKOFF            | 
- IOTHUB_CLIENT_RETRY_EXPONENTIAL_BACKOFF_WITH_JITTER            | 
- IOTHUB_CLIENT_RETRY_RANDOM            | 
 
 #### IOTHUB_CLIENT_STATUS
 
@@ -297,10 +290,6 @@ enum IOTHUB_CLIENT_STATUS {
   IOTHUB_CLIENT_SEND_STATUS_BUSY
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_CLIENT_SEND_STATUS_IDLE            | 
- IOTHUB_CLIENT_SEND_STATUS_BUSY            | 
 
 #### IOTHUB_IDENTITY_TYPE
 
@@ -312,12 +301,6 @@ enum IOTHUB_IDENTITY_TYPE {
   IOTHUB_TYPE_EVENT_QUEUE
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_TYPE_TELEMETRY            | 
- IOTHUB_TYPE_DEVICE_TWIN            | 
- IOTHUB_TYPE_DEVICE_METHODS            | 
- IOTHUB_TYPE_EVENT_QUEUE            | 
 
 #### IOTHUB_PROCESS_ITEM_RESULT
 
@@ -329,12 +312,6 @@ enum IOTHUB_PROCESS_ITEM_RESULT {
   IOTHUB_PROCESS_CONTINUE
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_PROCESS_OK            | 
- IOTHUB_PROCESS_ERROR            | 
- IOTHUB_PROCESS_NOT_CONNECTED            | 
- IOTHUB_PROCESS_CONTINUE            | 
 
 #### IOTHUBMESSAGE_DISPOSITION_RESULT
 
@@ -347,11 +324,6 @@ enum IOTHUBMESSAGE_DISPOSITION_RESULT {
   IOTHUBMESSAGE_ABANDONED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUBMESSAGE_ACCEPTED            | 
- IOTHUBMESSAGE_REJECTED            | 
- IOTHUBMESSAGE_ABANDONED            | 
 
 #### IOTHUB_CLIENT_IOTHUB_METHOD_STATUS
 
@@ -363,10 +335,6 @@ enum IOTHUB_CLIENT_IOTHUB_METHOD_STATUS {
   IOTHUB_CLIENT_IOTHUB_METHOD_STATUS_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_CLIENT_IOTHUB_METHOD_STATUS_SUCCESS            | 
- IOTHUB_CLIENT_IOTHUB_METHOD_STATUS_ERROR            | 
 
 #### IOTHUB_CLIENT_CONFIRMATION_RESULT
 
@@ -380,12 +348,6 @@ enum IOTHUB_CLIENT_CONFIRMATION_RESULT {
   IOTHUB_CLIENT_CONFIRMATION_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_CLIENT_CONFIRMATION_OK            | 
- IOTHUB_CLIENT_CONFIRMATION_BECAUSE_DESTROY            | 
- IOTHUB_CLIENT_CONFIRMATION_MESSAGE_TIMEOUT            | 
- IOTHUB_CLIENT_CONFIRMATION_ERROR            | 
 
 #### IOTHUB_CLIENT_CONNECTION_STATUS
 
@@ -397,10 +359,6 @@ enum IOTHUB_CLIENT_CONNECTION_STATUS {
   IOTHUB_CLIENT_CONNECTION_UNAUTHENTICATED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_CLIENT_CONNECTION_AUTHENTICATED            | 
- IOTHUB_CLIENT_CONNECTION_UNAUTHENTICATED            | 
 
 #### IOTHUB_CLIENT_CONNECTION_STATUS_REASON
 
@@ -417,15 +375,6 @@ enum IOTHUB_CLIENT_CONNECTION_STATUS_REASON {
   IOTHUB_CLIENT_CONNECTION_OK
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_CLIENT_CONNECTION_EXPIRED_SAS_TOKEN            | 
- IOTHUB_CLIENT_CONNECTION_DEVICE_DISABLED            | 
- IOTHUB_CLIENT_CONNECTION_BAD_CREDENTIAL            | 
- IOTHUB_CLIENT_CONNECTION_RETRY_EXPIRED            | 
- IOTHUB_CLIENT_CONNECTION_NO_NETWORK            | 
- IOTHUB_CLIENT_CONNECTION_COMMUNICATION_ERROR            | 
- IOTHUB_CLIENT_CONNECTION_OK            | 
 
 #### TRANSPORT_TYPE
 
@@ -435,10 +384,6 @@ enum TRANSPORT_TYPE {
   TRANSPORT_THREADED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- TRANSPORT_LL            | 
- TRANSPORT_THREADED            | 
 
 #### DEVICE_TWIN_UPDATE_STATE
 
@@ -448,10 +393,6 @@ enum DEVICE_TWIN_UPDATE_STATE {
   DEVICE_TWIN_UPDATE_PARTIAL
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- DEVICE_TWIN_UPDATE_COMPLETE            | 
- DEVICE_TWIN_UPDATE_PARTIAL            | 
 
 #### IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT
 
@@ -461,10 +402,6 @@ enum IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT {
   IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_ABORT
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_OK            | 
- IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_ABORT            | 
 
 ## Type definitions
 

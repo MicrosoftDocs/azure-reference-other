@@ -90,7 +90,6 @@ Member name                 | Description
  serviceProperties            | 
  authMethod            | 
  iotEdge_capable            | 
-
 #### IOTHUB_REGISTRY_DEVICE_CREATE_EX
 
 ```C
@@ -111,7 +110,6 @@ Member name                 | Description
  secondaryKey            | 
  authMethod            | 
  iotEdge_capable            | 
-
 #### IOTHUB_REGISTRY_DEVICE_UPDATE_EX
 
 ```C
@@ -134,7 +132,6 @@ Member name                 | Description
  status            | 
  authMethod            | 
  iotEdge_capable            | 
-
 #### IOTHUB_REGISTRY_STATISTICS
 
 ```C
@@ -149,7 +146,6 @@ Member name                 | Description
  totalDeviceCount            | 
  enabledDeviceCount            | 
  disabledDeviceCount            | 
-
 #### IOTHUB_MODULE
 
 ```C
@@ -198,7 +194,6 @@ Member name                 | Description
  authMethod            | 
  moduleId            | 
  managedBy            | 
-
 #### IOTHUB_REGISTRY_MODULE_CREATE
 
 ```C
@@ -221,7 +216,6 @@ Member name                 | Description
  authMethod            | 
  moduleId            | 
  managedBy            | 
-
 #### IOTHUB_REGISTRY_MODULE_UPDATE
 
 ```C
@@ -246,8 +240,9 @@ Member name                 | Description
  authMethod            | 
  moduleId            | 
  managedBy            | 
-
 #### IOTHUB_REGISTRYMANAGER
+
+Structure to store IoTHub authentication information.
 
 ```C
 struct IOTHUB_REGISTRYMANAGER {
@@ -267,9 +262,6 @@ Member name                 | Description
  sharedAccessKey            | 
  keyName            | 
  deviceId            | 
-
-Structure to store IoTHub authentication information.
-
 #### IOTHUB_DEVICE
 
 ```C
@@ -312,7 +304,6 @@ Member name                 | Description
  deviceProperties            | 
  serviceProperties            | 
  authMethod            | 
-
 #### IOTHUB_REGISTRY_DEVICE_CREATE
 
 ```C
@@ -329,7 +320,6 @@ Member name                 | Description
  primaryKey            | 
  secondaryKey            | 
  authMethod            | 
-
 #### IOTHUB_REGISTRY_DEVICE_UPDATE
 
 ```C
@@ -432,18 +422,6 @@ enum IOTHUB_REGISTRYMANAGER_RESULT {
   IOTHUB_REGISTRYMANAGER_INVALID_VERSION
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_REGISTRYMANAGER_OK            | 
- IOTHUB_REGISTRYMANAGER_INVALID_ARG            | 
- IOTHUB_REGISTRYMANAGER_ERROR            | 
- IOTHUB_REGISTRYMANAGER_JSON_ERROR            | 
- IOTHUB_REGISTRYMANAGER_HTTPAPI_ERROR            | 
- IOTHUB_REGISTRYMANAGER_HTTP_STATUS_ERROR            | 
- IOTHUB_REGISTRYMANAGER_DEVICE_EXIST            | 
- IOTHUB_REGISTRYMANAGER_DEVICE_NOT_EXIST            | 
- IOTHUB_REGISTRYMANAGER_CALLBACK_NOT_SET            | 
- IOTHUB_REGISTRYMANAGER_INVALID_VERSION            | 
 
 #### IOTHUB_REGISTRYMANAGER_AUTH_METHOD
 
@@ -456,13 +434,6 @@ enum IOTHUB_REGISTRYMANAGER_AUTH_METHOD {
   IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_REGISTRYMANAGER_AUTH_SPK            | 
- IOTHUB_REGISTRYMANAGER_AUTH_X509_THUMBPRINT            | 
- IOTHUB_REGISTRYMANAGER_AUTH_X509_CERTIFICATE_AUTHORITY            | 
- IOTHUB_REGISTRYMANAGER_AUTH_NONE            | 
- IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN            | 
 
 ## Type definitions
 

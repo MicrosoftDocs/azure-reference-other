@@ -40,7 +40,6 @@ Member name                 | Description
  query_string            | 
  registration_id            | 
  page_size            | 
-
 #### PROVISIONING_QUERY_RESPONSE
 
 ```C
@@ -92,10 +91,4 @@ enum PROVISIONING_QUERY_TYPE {
   QUERY_TYPE_DEVICE_REGISTRATION_STATE
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- QUERY_TYPE_INVALID            | 
- QUERY_TYPE_INDIVIDUAL_ENROLLMENT            | 
- QUERY_TYPE_ENROLLMENT_GROUP            | 
- QUERY_TYPE_DEVICE_REGISTRATION_STATE            | 
 

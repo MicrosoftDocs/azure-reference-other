@@ -45,11 +45,6 @@ enum OPTIONHANDLER_RESULT {
   OPTIONHANDLER_INVALIDARG
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- OPTIONHANDLER_OK            | 
- OPTIONHANDLER_ERROR            | 
- OPTIONHANDLER_INVALIDARG            | 
 
 ## Type definitions
 

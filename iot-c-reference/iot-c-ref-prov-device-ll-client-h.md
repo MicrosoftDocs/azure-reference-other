@@ -83,22 +83,6 @@ enum PROV_DEVICE_RESULT {
   PROV_DEVICE_RESULT_DISABLED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- PROV_DEVICE_RESULT_OK            | 
- PROV_DEVICE_RESULT_INVALID_ARG            | 
- PROV_DEVICE_RESULT_SUCCESS            | 
- PROV_DEVICE_RESULT_MEMORY            | 
- PROV_DEVICE_RESULT_PARSING            | 
- PROV_DEVICE_RESULT_TRANSPORT            | 
- PROV_DEVICE_RESULT_INVALID_STATE            | 
- PROV_DEVICE_RESULT_DEV_AUTH_ERROR            | 
- PROV_DEVICE_RESULT_TIMEOUT            | 
- PROV_DEVICE_RESULT_KEY_ERROR            | 
- PROV_DEVICE_RESULT_ERROR            | 
- PROV_DEVICE_RESULT_HUB_NOT_SPECIFIED            | 
- PROV_DEVICE_RESULT_UNAUTHORIZED            | 
- PROV_DEVICE_RESULT_DISABLED            | 
 
 #### PROV_DEVICE_REG_STATUS
 
@@ -112,14 +96,6 @@ enum PROV_DEVICE_REG_STATUS {
   PROV_DEVICE_REG_HUB_NOT_SPECIFIED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- PROV_DEVICE_REG_STATUS_CONNECTED            | 
- PROV_DEVICE_REG_STATUS_REGISTERING            | 
- PROV_DEVICE_REG_STATUS_ASSIGNING            | 
- PROV_DEVICE_REG_STATUS_ASSIGNED            | 
- PROV_DEVICE_REG_STATUS_ERROR            | 
- PROV_DEVICE_REG_HUB_NOT_SPECIFIED            | 
 
 ## Type definitions
 

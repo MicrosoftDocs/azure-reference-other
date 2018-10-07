@@ -46,12 +46,6 @@ enum THREADAPI_RESULT {
   THREADAPI_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- THREADAPI_OK            | 
- THREADAPI_INVALID_ARG            | 
- THREADAPI_NO_MEMORY            | 
- THREADAPI_ERROR            | 
 
 ## Type definitions
 

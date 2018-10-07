@@ -52,12 +52,6 @@ enum IOTHUB_DEVICE_TWIN_RESULT {
   IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_DEVICE_TWIN_OK            | 
- IOTHUB_DEVICE_TWIN_INVALID_ARG            | 
- IOTHUB_DEVICE_TWIN_ERROR            | 
- IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR            | 
 
 ## Type definitions
 

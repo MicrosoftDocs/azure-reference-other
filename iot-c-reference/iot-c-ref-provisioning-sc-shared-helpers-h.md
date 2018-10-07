@@ -47,10 +47,6 @@ enum NECESSITY {
   OPTIONAL
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- REQUIRED            | 
- OPTIONAL            | 
 
 ## Type definitions
 

@@ -62,10 +62,6 @@ enum TRACING_STATUS {
   TRACING_STATUS_OFF
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- TRACING_STATUS_ON            | 
- TRACING_STATUS_OFF            | 
 
 ## Type definitions
 

@@ -50,11 +50,4 @@ enum IOTHUB_SECURITY_TYPE {
   IOTHUB_SECURITY_TYPE_SYMMETRIC_KEY
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_SECURITY_TYPE_UNKNOWN            | 
- IOTHUB_SECURITY_TYPE_SAS            | 
- IOTHUB_SECURITY_TYPE_X509            | 
- IOTHUB_SECURITY_TYPE_HTTP_EDGE            | 
- IOTHUB_SECURITY_TYPE_SYMMETRIC_KEY            | 
 

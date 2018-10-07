@@ -42,7 +42,6 @@ Member name                 | Description
  registration_id            | 
  error_code            | 
  error_status            | 
-
 #### PROVISIONING_BULK_OPERATION_RESULT
 
 ```C
@@ -57,7 +56,6 @@ Member name                 | Description
  is_successful            | 
  errors            | 
  num_errors            | 
-
 #### PROVISIONING_BULK_OPERATION
 
 ```C
@@ -113,12 +111,6 @@ enum PROVISIONING_BULK_OPERATION_MODE {
   BULK_OP_DELETE
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- BULK_OP_CREATE            | 
- BULK_OP_UPDATE            | 
- BULK_OP_UPDATE_IF_MATCH_ETAG            | 
- BULK_OP_DELETE            | 
 
 #### PROVISIONING_BULK_OPERATION_TYPE
 
@@ -127,7 +119,4 @@ enum PROVISIONING_BULK_OPERATION_TYPE {
   BULK_OP_INDIVIDUAL_ENROLLMENT
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- BULK_OP_INDIVIDUAL_ENROLLMENT            | 
 

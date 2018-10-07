@@ -42,9 +42,4 @@ enum UNIQUEID_RESULT {
   UNIQUEID_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- UNIQUEID_OK            | 
- UNIQUEID_INVALID_ARG            | 
- UNIQUEID_ERROR            | 
 

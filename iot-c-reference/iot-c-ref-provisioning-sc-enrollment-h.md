@@ -79,11 +79,6 @@ enum PROVISIONING_STATUS {
   PROVISIONING_STATUS_DISABLED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- PROVISIONING_STATUS_NONE            | 
- PROVISIONING_STATUS_ENABLED            | 
- PROVISIONING_STATUS_DISABLED            | 
 
 ## Type definitions
 

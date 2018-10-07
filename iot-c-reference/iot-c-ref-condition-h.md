@@ -49,12 +49,6 @@ enum COND_RESULT {
   COND_TIMEOUT
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- COND_OK            | 
- COND_INVALID_ARG            | 
- COND_ERROR            | 
- COND_TIMEOUT            | 
 
 ## Type definitions
 

@@ -52,6 +52,8 @@ Function Name                  | Description
 
 #### IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA
 
+diagnostic related data
+
 ```C
 struct IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA {
   char *  diagnosticId,
@@ -62,8 +64,6 @@ Member name                 | Description
 ----------------------------|----------------
  diagnosticId            | 
  diagnosticCreationTimeUtc            | 
-
-diagnostic related data
 
 ## Macro definitions
 
@@ -100,12 +100,6 @@ enum IOTHUB_MESSAGE_RESULT {
   IOTHUB_MESSAGE_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_MESSAGE_OK            | 
- IOTHUB_MESSAGE_INVALID_ARG            | 
- IOTHUB_MESSAGE_INVALID_TYPE            | 
- IOTHUB_MESSAGE_ERROR            | 
 
 #### IOTHUBMESSAGE_CONTENT_TYPE
 
@@ -118,11 +112,6 @@ enum IOTHUBMESSAGE_CONTENT_TYPE {
   IOTHUBMESSAGE_UNKNOWN
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUBMESSAGE_BYTEARRAY            | 
- IOTHUBMESSAGE_STRING            | 
- IOTHUBMESSAGE_UNKNOWN            | 
 
 ## Type definitions
 

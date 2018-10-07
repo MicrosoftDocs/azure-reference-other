@@ -54,11 +54,6 @@ enum TRANSPORT_HSM_TYPE {
   TRANSPORT_HSM_TYPE_SYMM_KEY
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- TRANSPORT_HSM_TYPE_TPM            | 
- TRANSPORT_HSM_TYPE_X509            | 
- TRANSPORT_HSM_TYPE_SYMM_KEY            | 
 
 #### PROV_DEVICE_TRANSPORT_RESULT
 
@@ -69,11 +64,6 @@ enum PROV_DEVICE_TRANSPORT_RESULT {
   PROV_DEVICE_TRANSPORT_RESULT_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- PROV_DEVICE_TRANSPORT_RESULT_OK            | 
- PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED            | 
- PROV_DEVICE_TRANSPORT_RESULT_ERROR            | 
 
 ## Type definitions
 

@@ -28,6 +28,8 @@ Function Name                  | Description
 
 #### IOTHUB_SERVICE_CLIENT_AUTH
 
+Structure to store IoTHub authentication information.
+
 ```C
 struct IOTHUB_SERVICE_CLIENT_AUTH {
   char *  hostname,
@@ -46,8 +48,6 @@ Member name                 | Description
  sharedAccessKey            | 
  keyName            | 
  deviceId            | 
-
-Structure to store IoTHub authentication information.
 
 ## Macro definitions
 
@@ -77,10 +77,6 @@ enum IOTHUB_DEVICE_STATUS {
   IOTHUB_DEVICE_STATUS_DISABLED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_DEVICE_STATUS_ENABLED            | 
- IOTHUB_DEVICE_STATUS_DISABLED            | 
 
 #### IOTHUB_DEVICE_CONNECTION_STATE
 
@@ -90,10 +86,6 @@ enum IOTHUB_DEVICE_CONNECTION_STATE {
   IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED            | 
- IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED            | 
 
 ## Type definitions
 

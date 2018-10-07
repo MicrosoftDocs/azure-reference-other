@@ -44,10 +44,6 @@ enum LOCK_RESULT {
   LOCK_ERROR
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- LOCK_OK            | 
- LOCK_ERROR            | 
 
 ## Type definitions
 

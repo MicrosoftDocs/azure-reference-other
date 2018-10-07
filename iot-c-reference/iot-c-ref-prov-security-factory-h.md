@@ -48,11 +48,4 @@ enum SECURE_DEVICE_TYPE {
   SECURE_DEVICE_TYPE_SYMMETRIC_KEY
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- SECURE_DEVICE_TYPE_UNKNOWN            | 
- SECURE_DEVICE_TYPE_TPM            | 
- SECURE_DEVICE_TYPE_X509            | 
- SECURE_DEVICE_TYPE_HTTP_EDGE            | 
- SECURE_DEVICE_TYPE_SYMMETRIC_KEY            | 
 

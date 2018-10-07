@@ -60,14 +60,6 @@ enum MAP_RESULT {
   MAP_FILTER_REJECT
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- MAP_OK            | 
- MAP_ERROR            | 
- MAP_INVALIDARG            | 
- MAP_KEYEXISTS            | 
- MAP_KEYNOTFOUND            | 
- MAP_FILTER_REJECT            | 
 
 ## Type definitions
 

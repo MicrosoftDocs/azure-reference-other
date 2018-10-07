@@ -54,12 +54,6 @@ enum X509_CERTIFICATE_TYPE {
   X509_CERTIFICATE_TYPE_CA_REFERENCES
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- X509_CERTIFICATE_TYPE_NONE            | 
- X509_CERTIFICATE_TYPE_CLIENT            | 
- X509_CERTIFICATE_TYPE_SIGNING            | 
- X509_CERTIFICATE_TYPE_CA_REFERENCES            | 
 
 ## Type definitions
 

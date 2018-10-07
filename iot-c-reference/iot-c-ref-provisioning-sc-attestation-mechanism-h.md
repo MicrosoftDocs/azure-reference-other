@@ -54,11 +54,6 @@ enum ATTESTATION_TYPE {
   ATTESTATION_TYPE_X509
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- ATTESTATION_TYPE_NONE            | 
- ATTESTATION_TYPE_TPM            | 
- ATTESTATION_TYPE_X509            | 
 
 ## Type definitions
 

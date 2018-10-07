@@ -90,11 +90,6 @@ enum LOG_CATEGORY {
   AZ_LOG_TRACE
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- AZ_LOG_ERROR            | 
- AZ_LOG_INFO            | 
- AZ_LOG_TRACE            | 
 
 ## Type definitions
 

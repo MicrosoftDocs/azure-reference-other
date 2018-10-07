@@ -88,11 +88,6 @@ enum IO_SEND_RESULT {
   IO_SEND_CANCELLED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IO_SEND_OK            | 
- IO_SEND_ERROR            | 
- IO_SEND_CANCELLED            | 
 
 #### IO_OPEN_RESULT
 
@@ -103,11 +98,6 @@ enum IO_OPEN_RESULT {
   IO_OPEN_CANCELLED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IO_OPEN_OK            | 
- IO_OPEN_ERROR            | 
- IO_OPEN_CANCELLED            | 
 
 ## Type definitions
 

@@ -122,27 +122,6 @@ enum HTTPAPI_RESULT {
   HTTPAPI_SET_TIMEOUTS_FAILED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- HTTPAPI_OK            | 
- HTTPAPI_INVALID_ARG            | 
- HTTPAPI_ERROR            | 
- HTTPAPI_OPEN_REQUEST_FAILED            | 
- HTTPAPI_SET_OPTION_FAILED            | 
- HTTPAPI_SEND_REQUEST_FAILED            | 
- HTTPAPI_RECEIVE_RESPONSE_FAILED            | 
- HTTPAPI_QUERY_HEADERS_FAILED            | 
- HTTPAPI_QUERY_DATA_AVAILABLE_FAILED            | 
- HTTPAPI_READ_DATA_FAILED            | 
- HTTPAPI_ALREADY_INIT            | 
- HTTPAPI_NOT_INIT            | 
- HTTPAPI_HTTP_HEADERS_FAILED            | 
- HTTPAPI_STRING_PROCESSING_ERROR            | 
- HTTPAPI_ALLOC_FAILED            | 
- HTTPAPI_INIT_FAILED            | 
- HTTPAPI_INSUFFICIENT_RESPONSE_BUFFER            | 
- HTTPAPI_SET_X509_FAILURE            | 
- HTTPAPI_SET_TIMEOUTS_FAILED            | 
 
 #### HTTPAPI_REQUEST_TYPE
 
@@ -158,14 +137,6 @@ enum HTTPAPI_REQUEST_TYPE {
   HTTPAPI_REQUEST_HEAD
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- HTTPAPI_REQUEST_GET            | 
- HTTPAPI_REQUEST_POST            | 
- HTTPAPI_REQUEST_PUT            | 
- HTTPAPI_REQUEST_DELETE            | 
- HTTPAPI_REQUEST_PATCH            | 
- HTTPAPI_REQUEST_HEAD            | 
 
 ## Type definitions
 

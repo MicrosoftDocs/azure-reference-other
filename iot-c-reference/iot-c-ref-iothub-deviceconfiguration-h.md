@@ -46,7 +46,6 @@ Member name                 | Description
 ----------------------------|----------------
  deviceContent            | 
  modulesContent            | 
-
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_RESULT
 
 ```C
@@ -61,7 +60,6 @@ Member name                 | Description
  numQueries            | 
  queryNames            | 
  results            | 
-
 #### IOTHUB_DEVICE_CONFIGURATION_METRICS_DEFINITION
 
 ```C
@@ -76,7 +74,6 @@ Member name                 | Description
  numQueries            | 
  queryNames            | 
  queryStrings            | 
-
 #### IOTHUB_DEVICE_CONFIGURATION_LABELS
 
 ```C
@@ -91,7 +88,6 @@ Member name                 | Description
  numLabels            | 
  labelNames            | 
  labelValues            | 
-
 #### IOTHUB_DEVICE_CONFIGURATION
 
 ```C
@@ -128,7 +124,6 @@ Member name                 | Description
  systemMetricsDefinition            | 
  metricResult            | 
  metricsDefinition            | 
-
 #### IOTHUB_DEVICE_CONFIGURATION_ADD
 
 ```C
@@ -214,16 +209,6 @@ enum IOTHUB_DEVICE_CONFIGURATION_RESULT {
   IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_EXIST
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_DEVICE_CONFIGURATION_OK            | 
- IOTHUB_DEVICE_CONFIGURATION_INVALID_ARG            | 
- IOTHUB_DEVICE_CONFIGURATION_ERROR            | 
- IOTHUB_DEVICE_CONFIGURATION_HTTPAPI_ERROR            | 
- IOTHUB_DEVICE_CONFIGURATION_JSON_ERROR            | 
- IOTHUB_DEVICE_CONFIGURATION_OUT_OF_MEMORY_ERROR            | 
- IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_NOT_EXIST            | 
- IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_EXIST            | 
 
 #### IOTHUB_DEVICECONFIGURATION_REQUEST_MODE
 
@@ -237,14 +222,6 @@ enum IOTHUB_DEVICECONFIGURATION_REQUEST_MODE {
   IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_DEVICECONFIGURATION_REQUEST_GET_LIST            | 
- IOTHUB_DEVICECONFIGURATION_REQUEST_GET            | 
- IOTHUB_DEVICECONFIGURATION_REQUEST_ADD            | 
- IOTHUB_DEVICECONFIGURATION_REQUEST_UPDATE            | 
- IOTHUB_DEVICECONFIGURATION_REQUEST_DELETE            | 
- IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT            | 
 
 ## Type definitions
 

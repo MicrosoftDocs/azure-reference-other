@@ -56,14 +56,6 @@ enum REGISTRATION_STATUS {
   REGISTRATION_STATUS_DISABLED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- REGISTRATION_STATUS_ERROR            | 
- REGISTRATION_STATUS_UNASSIGNED            | 
- REGISTRATION_STATUS_ASSIGNING            | 
- REGISTRATION_STATUS_ASSIGNED            | 
- REGISTRATION_STATUS_FAILED            | 
- REGISTRATION_STATUS_DISABLED            | 
 
 ## Type definitions
 

@@ -58,7 +58,6 @@ Member name                 | Description
  enqueuedTimeUtc            | 
  statusCode            | 
  originalMessageId            | 
-
 #### IOTHUB_SERVICE_FEEDBACK_BATCH
 
 ```C
@@ -122,13 +121,6 @@ enum IOTHUB_FEEDBACK_STATUS_CODE {
   IOTHUB_FEEDBACK_STATUS_CODE_UNKNOWN
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_FEEDBACK_STATUS_CODE_SUCCESS            | 
- IOTHUB_FEEDBACK_STATUS_CODE_EXPIRED            | 
- IOTHUB_FEEDBACK_STATUS_CODE_DELIVER_COUNT_EXCEEDED            | 
- IOTHUB_FEEDBACK_STATUS_CODE_REJECTED            | 
- IOTHUB_FEEDBACK_STATUS_CODE_UNKNOWN            | 
 
 #### IOTHUB_MESSAGE_SEND_STATE
 
@@ -140,12 +132,6 @@ enum IOTHUB_MESSAGE_SEND_STATE {
   IOTHUB_MESSAGE_SEND_STATE_SEND_FAILED
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_MESSAGE_SEND_STATE_NOT_SENT            | 
- IOTHUB_MESSAGE_SEND_STATE_SEND_IN_PROGRESS            | 
- IOTHUB_MESSAGE_SEND_STATE_SENT_OK            | 
- IOTHUB_MESSAGE_SEND_STATE_SEND_FAILED            | 
 
 #### IOTHUB_MESSAGING_RESULT
 
@@ -159,14 +145,6 @@ enum IOTHUB_MESSAGING_RESULT {
   IOTHUB_MESSAGING_CALLBACK_NOT_SET
 }
 ```
-Constant                    | Description                                
-----------------------------|----------------
- IOTHUB_MESSAGING_OK            | 
- IOTHUB_MESSAGING_INVALID_ARG            | 
- IOTHUB_MESSAGING_ERROR            | 
- IOTHUB_MESSAGING_INVALID_JSON            | 
- IOTHUB_MESSAGING_DEVICE_EXIST            | 
- IOTHUB_MESSAGING_CALLBACK_NOT_SET            | 
 
 ## Type definitions
 
