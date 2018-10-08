@@ -25,7 +25,7 @@ ms.author: mamccrea
 SQUARE (float_expression)  
 ```  
   
-## Arguement  
+## Argument  
  **float_expression**  
   
  Is an expression of type **float** or of a type that can be implicitly converted to **float**.  
