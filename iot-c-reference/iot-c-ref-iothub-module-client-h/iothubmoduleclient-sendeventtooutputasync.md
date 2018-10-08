@@ -1,6 +1,6 @@
 # IoTHubModuleClient_SendEventToOutputAsync()
 
-Asynchronous call to send the message specified by `eventMessageHandle`.
+Asynchronous call to send the message specified by eventMessageHandle.
 
 ## Syntax
 
@@ -22,9 +22,9 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_SendEventToOutputAsync(
 
 * `outputName` The name of the queue to send the message to. 
 
-* `eventConfirmationCallback` The callback specified by the module for receiving confirmation of the delivery of the IoT Hub message. This callback can be expected to invoke the [IoTHubClient_SendEventAsync](#undefined) function for the same message in an attempt to retry sending a failing message. The user can specify a `NULL` value here to indicate that no callback is required. 
+* `eventConfirmationCallback` The callback specified by the module for receiving confirmation of the delivery of the IoT Hub message. This callback can be expected to invoke the [IoTHubClient_SendEventAsync](#undefined) function for the same message in an attempt to retry sending a failing message. The user can specify a NULL value here to indicate that no callback is required. 
 
-* `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubClient_Destroy](#undefined) function from within any callback.
 

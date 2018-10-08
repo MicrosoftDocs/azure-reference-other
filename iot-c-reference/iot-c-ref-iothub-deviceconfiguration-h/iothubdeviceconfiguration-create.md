@@ -15,5 +15,5 @@ IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE IoTHubDeviceConfiguration_Crea
 * `serviceClientHandle` Service client handle.
 
 ## Return Value
-A non-NULL `IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE` value that is used when invoking other functions for IoT Hub DeviceConfiguration and `NULL` on failure.
+A non-NULL IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE value that is used when invoking other functions for IoT Hub DeviceConfiguration and NULL on failure.
 

@@ -117,9 +117,9 @@ typedef void* CONCRETE_IO_HANDLE;
 
 ```C
 typedef void(* ON_BYTES_RECEIVED) (
-  void *context,
-  const unsigned char *buffer,
-  size_t size
+  void *                 context,
+  const unsigned char *  buffer,
+  size_t                 size
 );
 ```
 
@@ -127,8 +127,8 @@ typedef void(* ON_BYTES_RECEIVED) (
 
 ```C
 typedef void(* ON_SEND_COMPLETE) (
-  void *context,
-  IO_SEND_RESULT send_result
+  void *          context,
+  IO_SEND_RESULT  send_result
 );
 ```
 
@@ -136,8 +136,8 @@ typedef void(* ON_SEND_COMPLETE) (
 
 ```C
 typedef void(* ON_IO_OPEN_COMPLETE) (
-  void *context,
-  IO_OPEN_RESULT open_result
+  void *          context,
+  IO_OPEN_RESULT  open_result
 );
 ```
 
@@ -145,7 +145,7 @@ typedef void(* ON_IO_OPEN_COMPLETE) (
 
 ```C
 typedef void(* ON_IO_CLOSE_COMPLETE) (
-  void *context
+  void *  context
 );
 ```
 
@@ -153,7 +153,7 @@ typedef void(* ON_IO_CLOSE_COMPLETE) (
 
 ```C
 typedef void(* ON_IO_ERROR) (
-  void *context
+  void *  context
 );
 ```
 
@@ -161,7 +161,7 @@ typedef void(* ON_IO_ERROR) (
 
 ```C
 typedef OPTIONHANDLER_HANDLE(* IO_RETRIEVEOPTIONS) (
-  CONCRETE_IO_HANDLE concrete_io
+  CONCRETE_IO_HANDLE  concrete_io
 );
 ```
 
@@ -169,7 +169,7 @@ typedef OPTIONHANDLER_HANDLE(* IO_RETRIEVEOPTIONS) (
 
 ```C
 typedef CONCRETE_IO_HANDLE(* IO_CREATE) (
-  void *io_create_parameters
+  void *  io_create_parameters
 );
 ```
 
@@ -177,7 +177,7 @@ typedef CONCRETE_IO_HANDLE(* IO_CREATE) (
 
 ```C
 typedef void(* IO_DESTROY) (
-  CONCRETE_IO_HANDLE concrete_io
+  CONCRETE_IO_HANDLE  concrete_io
 );
 ```
 
@@ -185,13 +185,13 @@ typedef void(* IO_DESTROY) (
 
 ```C
 typedef int(* IO_OPEN) (
-  CONCRETE_IO_HANDLE concrete_io,
-  ON_IO_OPEN_COMPLETE on_io_open_complete,
-  void *on_io_open_complete_context,
-  ON_BYTES_RECEIVED on_bytes_received,
-  void *on_bytes_received_context,
-  ON_IO_ERROR on_io_error,
-  void *on_io_error_context
+  CONCRETE_IO_HANDLE   concrete_io,
+  ON_IO_OPEN_COMPLETE  on_io_open_complete,
+  void *               on_io_open_complete_context,
+  ON_BYTES_RECEIVED    on_bytes_received,
+  void *               on_bytes_received_context,
+  ON_IO_ERROR          on_io_error,
+  void *               on_io_error_context
 );
 ```
 
@@ -199,9 +199,9 @@ typedef int(* IO_OPEN) (
 
 ```C
 typedef int(* IO_CLOSE) (
-  CONCRETE_IO_HANDLE concrete_io,
-  ON_IO_CLOSE_COMPLETE on_io_close_complete,
-  void *callback_context
+  CONCRETE_IO_HANDLE    concrete_io,
+  ON_IO_CLOSE_COMPLETE  on_io_close_complete,
+  void *                callback_context
 );
 ```
 
@@ -209,11 +209,11 @@ typedef int(* IO_CLOSE) (
 
 ```C
 typedef int(* IO_SEND) (
-  CONCRETE_IO_HANDLE concrete_io,
-  const void *buffer,
-  size_t size,
-  ON_SEND_COMPLETE on_send_complete,
-  void *callback_context
+  CONCRETE_IO_HANDLE  concrete_io,
+  const void *        buffer,
+  size_t              size,
+  ON_SEND_COMPLETE    on_send_complete,
+  void *              callback_context
 );
 ```
 
@@ -221,7 +221,7 @@ typedef int(* IO_SEND) (
 
 ```C
 typedef void(* IO_DOWORK) (
-  CONCRETE_IO_HANDLE concrete_io
+  CONCRETE_IO_HANDLE  concrete_io
 );
 ```
 
@@ -229,9 +229,9 @@ typedef void(* IO_DOWORK) (
 
 ```C
 typedef int(* IO_SETOPTION) (
-  CONCRETE_IO_HANDLE concrete_io,
-  const char *optionName,
-  const void *value
+  CONCRETE_IO_HANDLE  concrete_io,
+  const char *        optionName,
+  const void *        value
 );
 ```
 

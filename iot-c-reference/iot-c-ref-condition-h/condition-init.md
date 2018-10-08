@@ -10,5 +10,5 @@ COND_HANDLE Condition_Init(void);
 ```
 
 ## Return Value
-A valid `COND_HANDLE` when successful or `NULL` otherwise.
+A valid COND_HANDLE when successful or NULL otherwise.
 

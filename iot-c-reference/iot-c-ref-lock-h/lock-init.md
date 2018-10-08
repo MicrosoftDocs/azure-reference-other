@@ -10,5 +10,5 @@ LOCK_HANDLE Lock_Init(void);
 ```
 
 ## Return Value
-A valid `LOCK_HANDLE` when successful or `NULL` otherwise.
+A valid LOCK_HANDLE when successful or NULL otherwise.
 

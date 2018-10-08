@@ -1,6 +1,6 @@
 # iothub_message.h 
 
-The `IoTHub_Message` component encapsulates one message that can be transferred by an IoT hub client.
+The IoTHub_Message component encapsulates one message that can be transferred by an IoT hub client.
 
 ## Includes
 
@@ -19,12 +19,12 @@ Function Name                  | Description
 [IOTHUB_MESSAGE_RESULT_FromString](./iot-c-ref-iothub-message-h/iothub-message-result-fromstring.md)            | 
 [IOTHUBMESSAGE_CONTENT_TYPEStrings](./iot-c-ref-iothub-message-h/iothubmessage-content-typestrings.md)            | 
 [IOTHUBMESSAGE_CONTENT_TYPE_FromString](./iot-c-ref-iothub-message-h/iothubmessage-content-type-fromstring.md)            | 
-[IoTHubMessage_CreateFromByteArray](./iot-c-ref-iothub-message-h/iothubmessage-createfrombytearray.md)            | Creates a new IoT hub message from a byte array. The type of the message will be set to `IOTHUBMESSAGE_BYTEARRAY`.
-[IoTHubMessage_CreateFromString](./iot-c-ref-iothub-message-h/iothubmessage-createfromstring.md)            | Creates a new IoT hub message from a null terminated string. The type of the message will be set to `IOTHUBMESSAGE_STRING`.
-[IoTHubMessage_Clone](./iot-c-ref-iothub-message-h/iothubmessage-clone.md)            | Creates a new IoT hub message with the content identical to that of the `iotHubMessageHandle` parameter.
-[IoTHubMessage_GetByteArray](./iot-c-ref-iothub-message-h/iothubmessage-getbytearray.md)            | Fetches a pointer and size for the data associated with the IoT hub message handle. If the content type of the message is not `IOTHUBMESSAGE_BYTEARRAY` then the function returns `IOTHUB_MESSAGE_INVALID_ARG`.
-[IoTHubMessage_GetString](./iot-c-ref-iothub-message-h/iothubmessage-getstring.md)            | Returns the null terminated string stored in the message. If the content type of the message is not `IOTHUBMESSAGE_STRING` then the function returns `NULL`.
-[IoTHubMessage_GetContentType](./iot-c-ref-iothub-message-h/iothubmessage-getcontenttype.md)            | Returns the content type of the message given by parameter `iotHubMessageHandle`.
+[IoTHubMessage_CreateFromByteArray](./iot-c-ref-iothub-message-h/iothubmessage-createfrombytearray.md)            | Creates a new IoT hub message from a byte array. The type of the message will be set to IOTHUBMESSAGE_BYTEARRAY.
+[IoTHubMessage_CreateFromString](./iot-c-ref-iothub-message-h/iothubmessage-createfromstring.md)            | Creates a new IoT hub message from a null terminated string. The type of the message will be set to IOTHUBMESSAGE_STRING.
+[IoTHubMessage_Clone](./iot-c-ref-iothub-message-h/iothubmessage-clone.md)            | Creates a new IoT hub message with the content identical to that of the iotHubMessageHandle parameter.
+[IoTHubMessage_GetByteArray](./iot-c-ref-iothub-message-h/iothubmessage-getbytearray.md)            | Fetches a pointer and size for the data associated with the IoT hub message handle. If the content type of the message is not IOTHUBMESSAGE_BYTEARRAY then the function returns IOTHUB_MESSAGE_INVALID_ARG.
+[IoTHubMessage_GetString](./iot-c-ref-iothub-message-h/iothubmessage-getstring.md)            | Returns the null terminated string stored in the message. If the content type of the message is not IOTHUBMESSAGE_STRING then the function returns NULL.
+[IoTHubMessage_GetContentType](./iot-c-ref-iothub-message-h/iothubmessage-getcontenttype.md)            | Returns the content type of the message given by parameter iotHubMessageHandle.
 [IoTHubMessage_SetContentTypeSystemProperty](./iot-c-ref-iothub-message-h/iothubmessage-setcontenttypesystemproperty.md)            | Sets the content-type of the message payload, as per supported values on RFC 2046.
 [IoTHubMessage_GetContentTypeSystemProperty](./iot-c-ref-iothub-message-h/iothubmessage-getcontenttypesystemproperty.md)            | Returns the content-type of the message payload, if defined.
 [IoTHubMessage_SetContentEncodingSystemProperty](./iot-c-ref-iothub-message-h/iothubmessage-setcontentencodingsystemproperty.md)            | Sets the content-encoding of the message payload, as per supported values on RFC 2616.

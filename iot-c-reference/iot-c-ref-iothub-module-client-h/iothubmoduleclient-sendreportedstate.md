@@ -22,7 +22,7 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_SendReportedState(
 
 * `reportedStateCallback` The callback specified by the module client to be called with the result of the transaction. 
 
-* `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubModuleClient_Destroy](#undefined) function from within any callback.
 

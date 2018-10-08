@@ -15,5 +15,5 @@ COND_RESULT Condition_Post(
 * `handle` A valid handle to the lock.
 
 ## Return Value
-Returns `COND_OK` when the condition object has been destroyed and `COND_ERROR` when an error occurs and `COND_TIMEOUT` when the handle times out.
+Returns COND_OK when the condition object has been destroyed and COND_ERROR when an error occurs and COND_TIMEOUT when the handle times out.
 

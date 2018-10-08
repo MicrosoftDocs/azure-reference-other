@@ -1,6 +1,6 @@
 # IoTHubMessage_GetString()
 
-Returns the null terminated string stored in the message. If the content type of the message is not `IOTHUBMESSAGE_STRING` then the function returns `NULL`.
+Returns the null terminated string stored in the message. If the content type of the message is not IOTHUBMESSAGE_STRING then the function returns NULL.
 
 ## Syntax
 
@@ -15,5 +15,5 @@ const char* IoTHubMessage_GetString(
 * `iotHubMessageHandle` Handle to the message.
 
 ## Return Value
-`NULL` if an error occurs or a pointer to the stored null terminated string otherwise.
+NULL if an error occurs or a pointer to the stored null terminated string otherwise.
 

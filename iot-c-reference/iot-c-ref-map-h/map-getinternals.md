@@ -1,6 +1,6 @@
 # Map_GetInternals()
 
-Retrieves the complete list of keys and values from the map in `values` and `keys`. Also writes the size of the list in `count`.
+Retrieves the complete list of keys and values from the map in values and keys. Also writes the size of the list in count.
 
 ## Syntax
 
@@ -24,5 +24,5 @@ MAP_RESULT Map_GetInternals(
 * `count` The number of stored keys and values is written at the location indicated by this pointer.
 
 ## Return Value
-Returns `MAP_OK` if the keys and values are retrieved and written successfully or an error code otherwise.
+Returns MAP_OK if the keys and values are retrieved and written successfully or an error code otherwise.
 

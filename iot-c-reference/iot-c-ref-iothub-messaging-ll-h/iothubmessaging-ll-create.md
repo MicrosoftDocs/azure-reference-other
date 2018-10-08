@@ -15,5 +15,5 @@ IOTHUB_MESSAGING_HANDLE IoTHubMessaging_LL_Create(
 * `iotHubMessagingServiceClientHandle` Service client handle.
 
 ## Return Value
-A non-NULL `IOTHUB_MESSAGING_CLIENT_HANDLE` value that is used when invoking other functions for IoT Hub DeviceMethod and `NULL` on failure.
+A non-NULL IOTHUB_MESSAGING_CLIENT_HANDLE value that is used when invoking other functions for IoT Hub DeviceMethod and NULL on failure.
 

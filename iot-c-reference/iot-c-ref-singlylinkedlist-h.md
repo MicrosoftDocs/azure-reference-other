@@ -46,8 +46,8 @@ Function passed to singlylinkedlist_find, which returns whichever first list ite
 
 ```C
 typedef bool(* LIST_MATCH_FUNCTION) (
-  LIST_ITEM_HANDLE list_item,
-  const void *match_context
+  LIST_ITEM_HANDLE  list_item,
+  const void *      match_context
 );
 ```
 
@@ -67,9 +67,9 @@ Function passed to singlylinkedlist_remove_if, which is used to define if an ite
 
 ```C
 typedef bool(* LIST_CONDITION_FUNCTION) (
-  const void *item,
-  const void *match_context,
-  bool *continue_processing
+  const void *  item,
+  const void *  match_context,
+  bool *        continue_processing
 );
 ```
 
@@ -91,9 +91,9 @@ Function passed to singlylinkedlist_foreach, which is called for the value of ea
 
 ```C
 typedef void(* LIST_ACTION_FUNCTION) (
-  const void *item,
-  const void *action_context,
-  bool *continue_processing
+  const void *  item,
+  const void *  action_context,
+  bool *        continue_processing
 );
 ```
 

@@ -16,5 +16,5 @@ DEPRECATED: Use IoTHubMessage_SetProperty and IoTHubMessage_GetProperty instead.
 * `iotHubMessageHandle` Handle to the message.
 
 ## Return Value
-A `MAP_HANDLE` pointing to the properties map for this message.
+A MAP_HANDLE pointing to the properties map for this message.
 

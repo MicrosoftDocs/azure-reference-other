@@ -15,8 +15,8 @@ MAP_RESULT Map_Delete(
 ## Parameters
 * `handle` The handle to an existing map. 
 
-* `key` The `key` of the item to be deleted.
+* `key` The key of the item to be deleted.
 
 ## Return Value
-Returns `MAP_OK` if the key was deleted successfully or an error code otherwise.
+Returns MAP_OK if the key was deleted successfully or an error code otherwise.
 

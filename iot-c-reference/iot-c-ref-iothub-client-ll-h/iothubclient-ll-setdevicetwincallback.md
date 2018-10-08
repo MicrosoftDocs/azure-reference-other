@@ -22,7 +22,7 @@ IOTHUB_CLIENT_RESULT IoTHubClient_LL_SetDeviceTwinCallback(
 
 * LastSeenReported: 
 
-* `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubClient_LL_Destroy](#undefined) function from within any callback.
 

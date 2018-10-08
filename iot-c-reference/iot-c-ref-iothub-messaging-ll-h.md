@@ -158,7 +158,7 @@ typedef struct IOTHUB_MESSAGING_TAG* IOTHUB_MESSAGING_HANDLE;
 
 ```C
 typedef void(* IOTHUB_OPEN_COMPLETE_CALLBACK) (
-  void *context
+  void *  context
 );
 ```
 
@@ -166,8 +166,8 @@ typedef void(* IOTHUB_OPEN_COMPLETE_CALLBACK) (
 
 ```C
 typedef void(* IOTHUB_SEND_COMPLETE_CALLBACK) (
-  void *context,
-  IOTHUB_MESSAGING_RESULT messagingResult
+  void *                   context,
+  IOTHUB_MESSAGING_RESULT  messagingResult
 );
 ```
 
@@ -175,8 +175,8 @@ typedef void(* IOTHUB_SEND_COMPLETE_CALLBACK) (
 
 ```C
 typedef void(* IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK) (
-  void *context,
-  IOTHUB_SERVICE_FEEDBACK_BATCH *feedbackBatch
+  void *                           context,
+  IOTHUB_SERVICE_FEEDBACK_BATCH *  feedbackBatch
 );
 ```
 

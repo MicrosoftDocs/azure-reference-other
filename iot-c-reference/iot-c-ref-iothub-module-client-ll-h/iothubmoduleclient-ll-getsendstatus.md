@@ -15,7 +15,7 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_GetSendStatus(
 ## Parameters
 * `iotHubModuleClientHandle` The handle created by a call to the create function. 
 
-* `iotHubClientStatus` The sending state is populated at the address pointed at by this parameter. The value will be set to `IOTHUBCLIENT_SENDSTATUS_IDLE` if there is currently no item to be sent and `IOTHUBCLIENT_SENDSTATUS_BUSY` if there are.
+* `iotHubClientStatus` The sending state is populated at the address pointed at by this parameter. The value will be set to IOTHUBCLIENT_SENDSTATUS_IDLE if there is currently no item to be sent and IOTHUBCLIENT_SENDSTATUS_BUSY if there are.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

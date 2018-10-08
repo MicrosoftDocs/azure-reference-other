@@ -22,9 +22,9 @@ IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_Send(
 
 * `message` The message to send. 
 
-* `sendCompleteCallback` The callback specified by the user for receiving confirmation of the delivery of the message. The user can specify a `NULL` value here to indicate that no callback is required. 
+* `sendCompleteCallback` The callback specified by the user for receiving confirmation of the delivery of the message. The user can specify a NULL value here to indicate that no callback is required. 
 
-* `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubMessaging_Destroy](#undefined) or IoTHubMessaging_Close function from within any callback.
 

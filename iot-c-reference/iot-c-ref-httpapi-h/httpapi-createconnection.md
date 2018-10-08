@@ -1,6 +1,6 @@
 # HTTPAPI_CreateConnection()
 
-Creates an HTTPS connection to the host specified by the `hostName` parameter.
+Creates an HTTPS connection to the host specified by the hostName parameter.
 
 ## Syntax
 
@@ -17,5 +17,5 @@ HTTP_HANDLE HTTPAPI_CreateConnection(
 This function returns a handle to the newly created connection. You can use the handle in subsequent calls to execute specific HTTP calls using [HTTPAPI_ExecuteRequest](#undefined).
 
 ## Return Value
-A `HTTP_HANDLE` to the newly created connection or `NULL` in case an error occurs.
+A HTTP_HANDLE to the newly created connection or NULL in case an error occurs.
 

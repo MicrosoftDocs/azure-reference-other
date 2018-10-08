@@ -1,6 +1,6 @@
 # IoTHubDeviceClient_LL_SendEventAsync()
 
-Asynchronous call to send the message specified by `eventMessageHandle`.
+Asynchronous call to send the message specified by eventMessageHandle.
 
 ## Syntax
 
@@ -19,9 +19,9 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendEventAsync(
 
 * `eventMessageHandle` The handle to an IoT Hub message. 
 
-* `eventConfirmationCallback` The callback specified by the device for receiving confirmation of the delivery of the IoT Hub message. This callback can be expected to invoke the [IoTHubDeviceClient_LL_SendEventAsync](#undefined) function for the same message in an attempt to retry sending a failing message. The user can specify a `NULL` value here to indicate that no callback is required. 
+* `eventConfirmationCallback` The callback specified by the device for receiving confirmation of the delivery of the IoT Hub message. This callback can be expected to invoke the [IoTHubDeviceClient_LL_SendEventAsync](#undefined) function for the same message in an attempt to retry sending a failing message. The user can specify a NULL value here to indicate that no callback is required. 
 
-* `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
 **NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](#undefined) function from within any callback.
 

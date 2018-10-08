@@ -18,5 +18,5 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentTypeSystemProperty(
 * `contentType` String defining the type of the payload (e.g., text/plain).
 
 ## Return Value
-An `IOTHUB_MESSAGE_RESULT` value.
+An IOTHUB_MESSAGE_RESULT value.
 

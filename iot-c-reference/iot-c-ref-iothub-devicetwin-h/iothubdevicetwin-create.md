@@ -15,5 +15,5 @@ IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE IoTHubDeviceTwin_Create(
 * `serviceClientHandle` Service client handle.
 
 ## Return Value
-A non-NULL `IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE` value that is used when invoking other functions for IoT Hub DeviceTwin and `NULL` on failure.
+A non-NULL IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE value that is used when invoking other functions for IoT Hub DeviceTwin and NULL on failure.
 

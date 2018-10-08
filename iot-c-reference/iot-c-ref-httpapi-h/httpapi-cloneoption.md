@@ -1,6 +1,6 @@
 # HTTPAPI_CloneOption()
 
-Clones the option named `optionName` bearing the value `value` into the pointer `savedValue`.
+Clones the option named optionName bearing the value value into the pointer savedValue.
 
 ## Syntax
 
@@ -14,12 +14,12 @@ HTTPAPI_RESULT HTTPAPI_CloneOption(
 ```
 
 ## Parameters
-* `optionName` A `NULL` terminated string representing the name of the option 
+* `optionName` A NULL terminated string representing the name of the option 
 
 * `value` A pointer to the value of the option. 
 
 * `savedValue` This pointer receives the copy of the value of the option. The copy needs to be free-able.
 
 ## Return Value
-`HTTPAPI_OK` if initialization is successful or an error code in case it fails.
+HTTPAPI_OK if initialization is successful or an error code in case it fails.
 

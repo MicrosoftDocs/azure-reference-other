@@ -1,6 +1,6 @@
 # ThreadAPI_Create()
 
-Creates a thread with the entry point specified by the `func` argument.
+Creates a thread with the entry point specified by the func argument.
 
 ## Syntax
 
@@ -18,8 +18,8 @@ THREADAPI_RESULT ThreadAPI_Create(
 
 * `func` A function pointer that indicates the entry point to the new thread. 
 
-* `arg` A void pointer that must be passed to the function pointed to by `func`.
+* `arg` A void pointer that must be passed to the function pointed to by func.
 
 ## Return Value
-`THREADAPI_OK` if the API call is successful or an error code in case it fails.
+THREADAPI_OK if the API call is successful or an error code in case it fails.
 

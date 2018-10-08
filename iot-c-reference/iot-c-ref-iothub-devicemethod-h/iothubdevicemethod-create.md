@@ -15,5 +15,5 @@ IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE IoTHubDeviceMethod_Create(
 * `serviceClientHandle` Service client handle.
 
 ## Return Value
-A non-NULL `IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE` value that is used when invoking other functions for IoT Hub DeviceMethod and `NULL` on failure.
+A non-NULL IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE value that is used when invoking other functions for IoT Hub DeviceMethod and NULL on failure.
 

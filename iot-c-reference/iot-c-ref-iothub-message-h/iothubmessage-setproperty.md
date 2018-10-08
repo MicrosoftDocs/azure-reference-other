@@ -21,5 +21,5 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(
 * `value` of the property to set.
 
 ## Return Value
-An `IOTHUB_MESSAGE_RESULT` value indicating the result of setting the property.
+An IOTHUB_MESSAGE_RESULT value indicating the result of setting the property.
 

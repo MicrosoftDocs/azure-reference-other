@@ -1,6 +1,6 @@
 # IoTHubClient_LL_GetLastMessageReceiveTime()
 
-This function returns in the out parameter `lastMessageReceiveTime` what was the value of the `time` function when the last message was received at the client.
+This function returns in the out parameter lastMessageReceiveTime what was the value of the time function when the last message was received at the client.
 
 ## Syntax
 
@@ -15,7 +15,7 @@ IOTHUB_CLIENT_RESULT IoTHubClient_LL_GetLastMessageReceiveTime(
 ## Parameters
 * `iotHubClientHandle` The handle created by a call to the create function. 
 
-* `lastMessageReceiveTime` Out parameter containing the value of `time` function when the last message was received.
+* `lastMessageReceiveTime` Out parameter containing the value of time function when the last message was received.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

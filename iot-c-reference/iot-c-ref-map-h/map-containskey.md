@@ -1,6 +1,6 @@
 # Map_ContainsKey()
 
-This function returns a boolean value in `keyExists` if the map contains a key with the same value the parameter `key`.
+This function returns a boolean value in keyExists if the map contains a key with the same value the parameter key.
 
 ## Syntax
 
@@ -18,8 +18,8 @@ MAP_RESULT Map_ContainsKey(
 
 * `key` The key that the caller wants checked. 
 
-* `keyExists` The function writes `true` at the address pointed at by this parameter if the key exists in the map and `false` otherwise.
+* `keyExists` The function writes true at the address pointed at by this parameter if the key exists in the map and false otherwise.
 
 ## Return Value
-Returns `MAP_OK` if the check was performed successfully or an error code otherwise.
+Returns MAP_OK if the check was performed successfully or an error code otherwise.
 

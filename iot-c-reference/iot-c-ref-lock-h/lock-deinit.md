@@ -15,5 +15,5 @@ LOCK_RESULT Lock_Deinit(
 * `handle` A valid handle to the lock.
 
 ## Return Value
-Returns `LOCK_OK` when the lock object has been destroyed and `LOCK_ERROR` when an error occurs.
+Returns LOCK_OK when the lock object has been destroyed and LOCK_ERROR when an error occurs.
 

@@ -56,7 +56,7 @@ typedef struct TRANSPORT_PROVIDER_TAG TRANSPORT_PROVIDER;
 
 ```C
 typedef const TRANSPORT_PROVIDER*(* IOTHUB_CLIENT_TRANSPORT_PROVIDER) (
-  void
+    void
 );
 ```
 

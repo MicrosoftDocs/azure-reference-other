@@ -1,6 +1,6 @@
 # Map_Clone()
 
-Creates a copy of the map indicated by `handle` and returns a handle to it.
+Creates a copy of the map indicated by handle and returns a handle to it.
 
 ## Syntax
 
@@ -15,5 +15,5 @@ MAP_HANDLE Map_Clone(
 * `handle` The handle to an existing map.
 
 ## Return Value
-A valid `MAP_HANDLE` to the cloned copy of the map or `NULL` in case an error occurs.
+A valid MAP_HANDLE to the cloned copy of the map or NULL in case an error occurs.
 

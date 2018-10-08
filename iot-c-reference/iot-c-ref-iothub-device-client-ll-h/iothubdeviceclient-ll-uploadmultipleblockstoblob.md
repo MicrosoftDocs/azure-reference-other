@@ -1,6 +1,6 @@
 # IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob()
 
-This API uploads to Azure Storage the content provided block by block by `getDataCallback` under the blob name devicename/.
+This API uploads to Azure Storage the content provided block by block by getDataCallback under the blob name devicename/.
 
 ## Syntax
 

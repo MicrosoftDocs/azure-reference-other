@@ -54,7 +54,7 @@ enum NECESSITY {
 
 ```C
 typedef JSON_Value*(* TO_JSON_FUNCTION) (
-  void *handle
+  void *  handle
 );
 ```
 
@@ -62,7 +62,7 @@ typedef JSON_Value*(* TO_JSON_FUNCTION) (
 
 ```C
 typedef void*(* FROM_JSON_FUNCTION) (
-  JSON_Object *root_object
+  JSON_Object *  root_object
 );
 ```
 

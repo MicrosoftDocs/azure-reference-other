@@ -12,10 +12,10 @@ IOTHUB_CLIENT_LL_HANDLE IoTHubClient_LL_CreateWithTransport(
 ```
 
 ## Parameters
-* `config` Pointer to an `[IOTHUB_CLIENT_DEVICE_CONFIG](#undefined)` structure
+* `config` Pointer to an [IOTHUB_CLIENT_DEVICE_CONFIG](#undefined) structure
 
 The API *allows* sharing of a connection across multiple devices. This is a blocking call.
 
 ## Return Value
-A non-NULL `IOTHUB_CLIENT_LL_HANDLE` value that is used when invoking other functions for IoT Hub client and `NULL` on failure.
+A non-NULL IOTHUB_CLIENT_LL_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
 

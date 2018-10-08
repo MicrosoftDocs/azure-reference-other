@@ -1,6 +1,6 @@
 # HTTPAPI_SetOption()
 
-Sets the option named `optionName` bearing the value `value` for the HTTP_HANDLE `handle`.
+Sets the option named optionName bearing the value value for the HTTP_HANDLE handle.
 
 ## Syntax
 
@@ -16,10 +16,10 @@ HTTPAPI_RESULT HTTPAPI_SetOption(
 ## Parameters
 * `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#undefined). 
 
-* `optionName` A `NULL` terminated string representing the name of the option. 
+* `optionName` A NULL terminated string representing the name of the option. 
 
 * `value` A pointer to the value for the option.
 
 ## Return Value
-`HTTPAPI_OK` if initialization is successful or an error code in case it fails.
+HTTPAPI_OK if initialization is successful or an error code in case it fails.
 

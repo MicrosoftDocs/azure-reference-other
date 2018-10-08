@@ -1,6 +1,6 @@
 # IoTHubMessage_CreateFromByteArray()
 
-Creates a new IoT hub message from a byte array. The type of the message will be set to `IOTHUBMESSAGE_BYTEARRAY`.
+Creates a new IoT hub message from a byte array. The type of the message will be set to IOTHUBMESSAGE_BYTEARRAY.
 
 ## Syntax
 
@@ -18,5 +18,5 @@ IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromByteArray(
 * `size` The size of the byte array.
 
 ## Return Value
-A valid `IOTHUB_MESSAGE_HANDLE` if the message was successfully created or `NULL` in case an error occurs.
+A valid IOTHUB_MESSAGE_HANDLE if the message was successfully created or NULL in case an error occurs.
 

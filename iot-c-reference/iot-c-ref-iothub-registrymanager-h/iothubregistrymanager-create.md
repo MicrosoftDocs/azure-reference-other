@@ -15,5 +15,5 @@ IOTHUB_REGISTRYMANAGER_HANDLE IoTHubRegistryManager_Create(
 * `serviceClientHandle` Service client handle.
 
 ## Return Value
-A non-NULL `IOTHUB_REGISTRYMANAGER_HANDLE` value that is used when invoking other functions for IoT Hub REgistry Manager and `NULL` on failure.
+A non-NULL IOTHUB_REGISTRYMANAGER_HANDLE value that is used when invoking other functions for IoT Hub REgistry Manager and NULL on failure.
 

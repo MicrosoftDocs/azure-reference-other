@@ -65,7 +65,7 @@ struct IOTHUB_CLIENT_CONFIG {
 ```
 Member name                 | Description                                
 ----------------------------|----------------
- protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](#undefined)`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](#undefined)` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](#undefined)`.
+ protocol            | A function pointer that is passed into the IoTHubClientCreate. A function definition for AMQP is defined in the include [iothubtransportamqp.h](./iot-c-ref-iothubtransportamqp-h.md). A function definition for HTTP is defined in the include [iothubtransporthttp.h](./iot-c-ref-iothubtransporthttp-h.md) A function definition for MQTT is defined in the include [iothubtransportmqtt.h](./iot-c-ref-iothubtransportmqtt-h.md).
  deviceId            | A string that identifies the device.
  deviceKey            | The device key used to authenticate the device. If neither deviceSasToken nor deviceKey is present then the authentication is assumed x509.
  deviceSasToken            | The device SAS Token used to authenticate the device in place of device key. If neither deviceSasToken nor deviceKey is present then the authentication is assumed x509.
@@ -87,7 +87,7 @@ struct IOTHUB_CLIENT_DEVICE_CONFIG {
 ```
 Member name                 | Description                                
 ----------------------------|----------------
- protocol            | A function pointer that is passed into the `IoTHubClientCreate`. A function definition for AMQP is defined in the include `[iothubtransportamqp.h](#undefined)`. A function definition for HTTP is defined in the include `[iothubtransporthttp.h](#undefined)` A function definition for MQTT is defined in the include `[iothubtransportmqtt.h](#undefined)`.
+ protocol            | A function pointer that is passed into the IoTHubClientCreate. A function definition for AMQP is defined in the include [iothubtransportamqp.h](./iot-c-ref-iothubtransportamqp-h.md). A function definition for HTTP is defined in the include [iothubtransporthttp.h](./iot-c-ref-iothubtransporthttp-h.md) A function definition for MQTT is defined in the include [iothubtransportmqtt.h](./iot-c-ref-iothubtransportmqtt-h.md).
  transportHandle            | a transport handle implementing the protocol
  deviceId            | A string that identifies the device.
  deviceKey            | The device key used to authenticate the device. x509 authentication is is not supported for multiplexed connections.
@@ -284,7 +284,7 @@ enum IOTHUB_CLIENT_RETRY_POLICY {
 
 #### IOTHUB_CLIENT_STATUS
 
-Enumeration returned by the [IoTHubClient_LL_GetSendStatus](#undefined) API to indicate the current sending status of the IoT Hub client. 
+Enumeration returned by the IoTHubClient_LL_GetSendStatusIoTHubClient_LL_GetSendStatus API to indicate the current sending status of the IoT Hub client. 
 
 ```C
 enum IOTHUB_CLIENT_STATUS {
@@ -411,8 +411,8 @@ enum IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT {
 
 ```C
 typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK) (
-  IOTHUB_CLIENT_FILE_UPLOAD_RESULT result,
-  void *userContextCallback
+  IOTHUB_CLIENT_FILE_UPLOAD_RESULT  result,
+  void *                            userContextCallback
 );
 ```
 
@@ -420,11 +420,11 @@ typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK) (
 
 ```C
 typedef void(* IOTHUB_METHOD_INVOKE_CALLBACK) (
-  IOTHUB_CLIENT_RESULT result,
-  int responseStatus,
-  unsigned char *responsePayload,
-  size_t responsePayloadSize,
-  void *context
+  IOTHUB_CLIENT_RESULT  result,
+  int                   responseStatus,
+  unsigned char *       responsePayload,
+  size_t                responsePayloadSize,
+  void *                context
 );
 ```
 
@@ -438,8 +438,8 @@ typedef struct IOTHUBTRANSPORT_CONFIG_TAG IOTHUBTRANSPORT_CONFIG;
 
 ```C
 typedef void(* IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK) (
-  IOTHUB_CLIENT_CONFIRMATION_RESULT result,
-  void *userContextCallback
+  IOTHUB_CLIENT_CONFIRMATION_RESULT  result,
+  void *                             userContextCallback
 );
 ```
 
@@ -447,9 +447,9 @@ typedef void(* IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK) (
 
 ```C
 typedef void(* IOTHUB_CLIENT_CONNECTION_STATUS_CALLBACK) (
-  IOTHUB_CLIENT_CONNECTION_STATUS result,
-  IOTHUB_CLIENT_CONNECTION_STATUS_REASON reason,
-  void *userContextCallback
+  IOTHUB_CLIENT_CONNECTION_STATUS         result,
+  IOTHUB_CLIENT_CONNECTION_STATUS_REASON  reason,
+  void *                                  userContextCallback
 );
 ```
 
@@ -457,8 +457,8 @@ typedef void(* IOTHUB_CLIENT_CONNECTION_STATUS_CALLBACK) (
 
 ```C
 typedef IOTHUBMESSAGE_DISPOSITION_RESULT(* IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC) (
-  IOTHUB_MESSAGE_HANDLE message,
-  void *userContextCallback
+  IOTHUB_MESSAGE_HANDLE  message,
+  void *                 userContextCallback
 );
 ```
 
@@ -466,10 +466,10 @@ typedef IOTHUBMESSAGE_DISPOSITION_RESULT(* IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC)
 
 ```C
 typedef void(* IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK) (
-  DEVICE_TWIN_UPDATE_STATE update_state,
-  const unsigned char *payLoad,
-  size_t size,
-  void *userContextCallback
+  DEVICE_TWIN_UPDATE_STATE  update_state,
+  const unsigned char *     payLoad,
+  size_t                    size,
+  void *                    userContextCallback
 );
 ```
 
@@ -477,8 +477,8 @@ typedef void(* IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK) (
 
 ```C
 typedef void(* IOTHUB_CLIENT_REPORTED_STATE_CALLBACK) (
-  int status_code,
-  void *userContextCallback
+  int     status_code,
+  void *  userContextCallback
 );
 ```
 
@@ -486,12 +486,12 @@ typedef void(* IOTHUB_CLIENT_REPORTED_STATE_CALLBACK) (
 
 ```C
 typedef int(* IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC) (
-  const char *method_name,
-  const unsigned char *payload,
-  size_t size,
-  unsigned char **response,
-  size_t *response_size,
-  void *userContextCallback
+  const char *           method_name,
+  const unsigned char *  payload,
+  size_t                 size,
+  unsigned char **       response,
+  size_t *               response_size,
+  void *                 userContextCallback
 );
 ```
 
@@ -499,11 +499,11 @@ typedef int(* IOTHUB_CLIENT_DEVICE_METHOD_CALLBACK_ASYNC) (
 
 ```C
 typedef int(* IOTHUB_CLIENT_INBOUND_DEVICE_METHOD_CALLBACK) (
-  const char *method_name,
-  const unsigned char *payload,
-  size_t size,
-  METHOD_HANDLE method_id,
-  void *userContextCallback
+  const char *           method_name,
+  const unsigned char *  payload,
+  size_t                 size,
+  METHOD_HANDLE          method_id,
+  void *                 userContextCallback
 );
 ```
 
@@ -513,10 +513,10 @@ Callback invoked by IoTHubClient_UploadMultipleBlocksToBlobAsync requesting the 
 
 ```C
 typedef void(* IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK) (
-  IOTHUB_CLIENT_FILE_UPLOAD_RESULT result,
-  unsigned char const **data,
-  size_t *size,
-  void *context
+  IOTHUB_CLIENT_FILE_UPLOAD_RESULT  result,
+  unsigned char const **            data,
+  size_t *                          size,
+  void *                            context
 );
 ```
 
@@ -538,10 +538,10 @@ If the user wants to abort the upload, the callback should return IOTHUB_CLIENT_
 
 ```C
 typedef IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT(* IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX) (
-  IOTHUB_CLIENT_FILE_UPLOAD_RESULT result,
-  unsigned char const **data,
-  size_t *size,
-  void *context
+  IOTHUB_CLIENT_FILE_UPLOAD_RESULT  result,
+  unsigned char const **            data,
+  size_t *                          size,
+  void *                            context
 );
 ```
 

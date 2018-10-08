@@ -18,7 +18,7 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetDeviceMethodCallback(
 
 * `inboundDeviceMethodCallback` The callback which will be called by IoTHub. 
 
-* `userContextCallback` User specified context that will be provided to the callback. This can be `NULL`.
+* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

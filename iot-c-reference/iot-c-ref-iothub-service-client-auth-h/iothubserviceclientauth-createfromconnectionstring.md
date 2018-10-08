@@ -20,5 +20,5 @@ HostName=[IoT Hub name goes here].[IoT Hub suffix goes here, e.g., private.azure
 ```
 
 ## Return Value
-A non-NULL `IOTHUB_SERVICE_CLIENT_AUTH_HANDLE` value that is used when invoking other functions for IoT Hub Service Client and `NULL` on failure.
+A non-NULL IOTHUB_SERVICE_CLIENT_AUTH_HANDLE value that is used when invoking other functions for IoT Hub Service Client and NULL on failure.
 

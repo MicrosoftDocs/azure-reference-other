@@ -21,5 +21,5 @@ IOTHUB_CLIENT_HANDLE IoTHubClient_CreateFromDeviceAuth(
 * `protocol` Function pointer for protocol implementation
 
 ## Return Value
-A non-NULL `IOTHUB_CLIENT_LL_HANDLE` value that is used when invoking other functions for IoT Hub client and `NULL` on failure.
+A non-NULL IOTHUB_CLIENT_LL_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
 
