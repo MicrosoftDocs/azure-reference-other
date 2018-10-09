@@ -74,6 +74,16 @@ Member name                 | Description
  enrollments            | 
  num_enrollments            | 
  type            | 
+#### PROVISIONING_BULK_OPERATION.enrollments
+
+```C
+union PROVISIONING_BULK_OPERATION.enrollments {
+  INDIVIDUAL_ENROLLMENT_HANDLE  *  ie
+};
+```
+Member name                 | Description                                
+----------------------------|----------------
+ ie            | 
 
 ## Macro definitions
 

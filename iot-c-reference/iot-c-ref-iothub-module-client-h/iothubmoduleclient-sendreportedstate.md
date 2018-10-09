@@ -24,7 +24,7 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_SendReportedState(
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubModuleClient_Destroy](#undefined) function from within any callback.
+**NOTE:** The application behavior is undefined if the user calls the [IoTHubModuleClient_Destroy](../iot-c-ref-iothub-module-client-h/iothubmoduleclient-destroy.md) function from within any callback.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

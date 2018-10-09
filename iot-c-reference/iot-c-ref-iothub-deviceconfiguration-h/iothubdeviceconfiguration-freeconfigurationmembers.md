@@ -1,6 +1,6 @@
 # IoTHubDeviceConfiguration_FreeConfigurationMembers()
 
-Free members of the [IOTHUB_DEVICE_CONFIGURATION](#undefined) structure (NOT the structure itself)
+Free members of the [IOTHUB_DEVICE_CONFIGURATION](../iot-c-ref-iothub-deviceconfiguration-h.md#iothub_device_configuration) structure (NOT the structure itself)
 
 ## Syntax
 

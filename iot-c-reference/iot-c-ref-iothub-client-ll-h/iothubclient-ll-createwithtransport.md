@@ -12,7 +12,7 @@ IOTHUB_CLIENT_LL_HANDLE IoTHubClient_LL_CreateWithTransport(
 ```
 
 ## Parameters
-* `config` Pointer to an [IOTHUB_CLIENT_DEVICE_CONFIG](#undefined) structure
+* `config` Pointer to an [IOTHUB_CLIENT_DEVICE_CONFIG](../iot-c-ref-iothub-client-core-common-h.md#iothub_client_device_config) structure
 
 The API *allows* sharing of a connection across multiple devices. This is a blocking call.
 

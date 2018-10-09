@@ -23,9 +23,9 @@ Function Name                  | Description
 [HTTPAPI_REQUEST_TYPEStrings](./iot-c-ref-httpapi-h/httpapi-request-typestrings.md)            | 
 [HTTPAPI_REQUEST_TYPE_FromString](./iot-c-ref-httpapi-h/httpapi-request-type-fromstring.md)            | 
 [HTTPAPI_Init](./iot-c-ref-httpapi-h/httpapi-init.md)            | Global initialization for the HTTP API component.
-[HTTPAPI_Deinit](./iot-c-ref-httpapi-h/httpapi-deinit.md)            | Free resources allocated in [HTTPAPI_Init](#undefined).
+[HTTPAPI_Deinit](./iot-c-ref-httpapi-h/httpapi-deinit.md)            | Free resources allocated in [HTTPAPI_Init](iot-c-ref-httpapi-h/httpapi-init.md).
 [HTTPAPI_CreateConnection](./iot-c-ref-httpapi-h/httpapi-createconnection.md)            | Creates an HTTPS connection to the host specified by the hostName parameter.
-[HTTPAPI_CloseConnection](./iot-c-ref-httpapi-h/httpapi-closeconnection.md)            | Closes a connection created with [HTTPAPI_CreateConnection](#undefined).
+[HTTPAPI_CloseConnection](./iot-c-ref-httpapi-h/httpapi-closeconnection.md)            | Closes a connection created with [HTTPAPI_CreateConnection](iot-c-ref-httpapi-h/httpapi-createconnection.md).
 [HTTPAPI_ExecuteRequest](./iot-c-ref-httpapi-h/httpapi-executerequest.md)            | Sends the HTTP request to the host and handles the response for the HTTP call.
 [HTTPAPI_SetOption](./iot-c-ref-httpapi-h/httpapi-setoption.md)            | Sets the option named optionName bearing the value value for the HTTP_HANDLE handle.
 [HTTPAPI_CloneOption](./iot-c-ref-httpapi-h/httpapi-cloneoption.md)            | Clones the option named optionName bearing the value value into the pointer savedValue.

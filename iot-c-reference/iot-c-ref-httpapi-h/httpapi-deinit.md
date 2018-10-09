@@ -1,6 +1,6 @@
 # HTTPAPI_Deinit()
 
-Free resources allocated in [HTTPAPI_Init](#undefined).
+Free resources allocated in [HTTPAPI_Init](../iot-c-ref-httpapi-h/httpapi-init.md).
 
 ## Syntax
 

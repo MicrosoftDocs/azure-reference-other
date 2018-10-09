@@ -20,7 +20,7 @@ HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
 ```
 
 ## Parameters
-* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#undefined). 
+* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](../iot-c-ref-httpapi-h/httpapi-createconnection.md). 
 
 * `requestType` Specifies which HTTP method is used (GET, POST, DELETE, PUT, PATCH). 
 
@@ -32,11 +32,11 @@ HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
 
 * `contentLength` Specifies the request body size (this is typically added into the HTTP headers as the Content-Length header). This value is optional and can be 0. 
 
-* `statusCode` This is an out parameter, where [HTTPAPI_ExecuteRequest](#undefined) returns the status code from the HTTP response (200, 201, 400, 401, etc.) 
+* `statusCode` This is an out parameter, where [HTTPAPI_ExecuteRequest](../iot-c-ref-httpapi-h/httpapi-executerequest.md) returns the status code from the HTTP response (200, 201, 400, 401, etc.) 
 
-* `responseHeadersHandle` This is an HTTP headers handle to which [HTTPAPI_ExecuteRequest](#undefined) must add all the HTTP response headers so that the caller of [HTTPAPI_ExecuteRequest](#undefined) can inspect them. You can manipulate responseHeadersHandle by using the HTTPHeaders APIs available in HTTPHeaders.h
+* `responseHeadersHandle` This is an HTTP headers handle to which [HTTPAPI_ExecuteRequest](../iot-c-ref-httpapi-h/httpapi-executerequest.md) must add all the HTTP response headers so that the caller of [HTTPAPI_ExecuteRequest](../iot-c-ref-httpapi-h/httpapi-executerequest.md) can inspect them. You can manipulate responseHeadersHandle by using the HTTPHeaders APIs available in HTTPHeaders.h
 
-* `responseContent` This is a buffer that must be filled by [HTTPAPI_ExecuteRequest](#undefined) with the contents of the HTTP response body. The buffer size must be increased by the [HTTPAPI_ExecuteRequest](#undefined) implementation in order to fit the response body. [HTTPAPI_ExecuteRequest](#undefined) must also handle chunked transfer encoding for HTTP responses. To manipulate the responseContent buffer, use the APIs available in [Strings.h](#undefined).
+* `responseContent` This is a buffer that must be filled by [HTTPAPI_ExecuteRequest](../iot-c-ref-httpapi-h/httpapi-executerequest.md) with the contents of the HTTP response body. The buffer size must be increased by the [HTTPAPI_ExecuteRequest](../iot-c-ref-httpapi-h/httpapi-executerequest.md) implementation in order to fit the response body. [HTTPAPI_ExecuteRequest](../iot-c-ref-httpapi-h/httpapi-executerequest.md) must also handle chunked transfer encoding for HTTP responses. To manipulate the responseContent buffer, use the APIs available in [Strings.h](../iot-c-ref-strings-h.md).
 
 ## Return Value
 HTTPAPI_OK if the API call is successful or an error code in case it fails.

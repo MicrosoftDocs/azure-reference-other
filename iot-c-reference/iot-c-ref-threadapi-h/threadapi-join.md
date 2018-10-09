@@ -15,7 +15,7 @@ THREADAPI_RESULT ThreadAPI_Join(
 ## Parameters
 * `threadHandle` The handle of the thread to wait for completion. 
 
-* `res` The result returned by the thread which is passed to the [ThreadAPI_Exit](#undefined) function.
+* `res` The result returned by the thread which is passed to the [ThreadAPI_Exit](../iot-c-ref-threadapi-h/threadapi-exit.md) function.
 
 When the threadHandle thread completes, all resources associated with the thread must be released and the thread handle will no longer be valid.
 

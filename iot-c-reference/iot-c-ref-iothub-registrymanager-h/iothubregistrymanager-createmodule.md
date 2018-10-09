@@ -16,7 +16,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateModule(
 ## Parameters
 * `registryManagerHandle` The handle created by a call to the create function. 
 
-* `moduleCreate` [IOTHUB_REGISTRY_MODULE_CREATE](#undefined) structure containing the existing deviceID, new module Id, primaryKey (optional) and secondaryKey (optional) 
+* `moduleCreate` [IOTHUB_REGISTRY_MODULE_CREATE](../iot-c-ref-iothub-registrymanager-h.md#iothub_registry_module_create) structure containing the existing deviceID, new module Id, primaryKey (optional) and secondaryKey (optional) 
 
 * `module` Input parameter, if it is not NULL will contain the created module info structure
 

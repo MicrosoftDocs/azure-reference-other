@@ -1,6 +1,6 @@
 # HTTPAPI_CloseConnection()
 
-Closes a connection created with [HTTPAPI_CreateConnection](#undefined).
+Closes a connection created with [HTTPAPI_CreateConnection](../iot-c-ref-httpapi-h/httpapi-createconnection.md).
 
 ## Syntax
 
@@ -12,7 +12,7 @@ void HTTPAPI_CloseConnection(
 ```
 
 ## Parameters
-* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#undefined).
+* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](../iot-c-ref-httpapi-h/httpapi-createconnection.md).
 
-All resources allocated by [HTTPAPI_CreateConnection](#undefined) should be freed in [HTTPAPI_CloseConnection](#undefined).
+All resources allocated by [HTTPAPI_CreateConnection](../iot-c-ref-httpapi-h/httpapi-createconnection.md) should be freed in [HTTPAPI_CloseConnection](../iot-c-ref-httpapi-h/httpapi-closeconnection.md).
 

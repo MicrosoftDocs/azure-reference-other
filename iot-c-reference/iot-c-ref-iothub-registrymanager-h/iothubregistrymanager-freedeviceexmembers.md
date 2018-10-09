@@ -1,6 +1,6 @@
 # IoTHubRegistryManager_FreeDeviceExMembers()
 
-Free members of the [IOTHUB_DEVICE_EX](#undefined) structure (NOT the structure itself)
+Free members of the [IOTHUB_DEVICE_EX](../iot-c-ref-iothub-registrymanager-h.md#iothub_device_ex) structure (NOT the structure itself)
 
 ## Syntax
 

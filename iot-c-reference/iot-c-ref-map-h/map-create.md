@@ -12,7 +12,7 @@ MAP_HANDLE Map_Create(
 ```
 
 ## Parameters
-* `mapFilterFunc` A callback function supplied by the caller that is invoked during calls to [Map_Add](#undefined) and [Map_AddOrUpdate](#undefined) to provide the caller an opportunity to indicate whether the new entry or the update to an existing entry can be made or not. The callback function can request that the operation be canceled by returning a non-zero value from the callback.
+* `mapFilterFunc` A callback function supplied by the caller that is invoked during calls to [Map_Add](../iot-c-ref-map-h/map-add.md) and [Map_AddOrUpdate](../iot-c-ref-map-h/map-addorupdate.md) to provide the caller an opportunity to indicate whether the new entry or the update to an existing entry can be made or not. The callback function can request that the operation be canceled by returning a non-zero value from the callback.
 
 ## Return Value
 A valid MAP_HANDLE or NULL in case an error occurs.

@@ -15,7 +15,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_UpdateDevice_Ex(
 ## Parameters
 * `registryManagerHandle` The handle created by a call to the create function. 
 
-* `deviceUpdate` [IOTHUB_REGISTRY_DEVICE_UPDATE_EX](#undefined) structure containing the new device Id, primaryKey (optional), secondaryKey (optional), authentication method, and status
+* `deviceUpdate` [IOTHUB_REGISTRY_DEVICE_UPDATE_EX](../iot-c-ref-iothub-registrymanager-h.md#iothub_registry_device_update_ex) structure containing the new device Id, primaryKey (optional), secondaryKey (optional), authentication method, and status
 
 ## Return Value
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.

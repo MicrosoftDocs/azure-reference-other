@@ -1,6 +1,6 @@
 # IoTHubRegistryManager_FreeModuleMembers()
 
-Free members of the [IOTHUB_MODULE](#undefined) structure (NOT the structure itself)
+Free members of the [IOTHUB_MODULE](../iot-c-ref-iothub-registrymanager-h.md#iothub_module) structure (NOT the structure itself)
 
 ## Syntax
 

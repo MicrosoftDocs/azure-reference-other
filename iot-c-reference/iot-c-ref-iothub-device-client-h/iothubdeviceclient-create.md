@@ -12,7 +12,7 @@ IOTHUB_DEVICE_CLIENT_HANDLE IoTHubDeviceClient_Create(
 ```
 
 ## Parameters
-* `config` Pointer to an [IOTHUB_CLIENT_CONFIG](#undefined) structure
+* `config` Pointer to an [IOTHUB_CLIENT_CONFIG](../iot-c-ref-iothub-client-core-common-h.md#iothub_client_config) structure
 
 The API does not allow sharing of a connection across multiple devices. This is a blocking call.
 

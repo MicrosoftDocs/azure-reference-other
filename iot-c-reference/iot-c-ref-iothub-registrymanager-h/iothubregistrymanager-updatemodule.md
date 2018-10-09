@@ -15,7 +15,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_UpdateModule(
 ## Parameters
 * `registryManagerHandle` The handle created by a call to the create function. 
 
-* `moduleUpdate` [IOTHUB_REGISTRY_MODULE_UPDATE](#undefined) structure containing the new module Id, primaryKey (optional), secondaryKey (optional), authentication method, and status
+* `moduleUpdate` [IOTHUB_REGISTRY_MODULE_UPDATE](../iot-c-ref-iothub-registrymanager-h.md#iothub_registry_module_update) structure containing the new module Id, primaryKey (optional), secondaryKey (optional), authentication method, and status
 
 ## Return Value
 IOTHUB_REGISTRYMANAGER_RESULT_OK upon success or an error code upon failure.

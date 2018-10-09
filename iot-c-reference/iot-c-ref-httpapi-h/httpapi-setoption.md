@@ -14,7 +14,7 @@ HTTPAPI_RESULT HTTPAPI_SetOption(
 ```
 
 ## Parameters
-* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](#undefined). 
+* `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](../iot-c-ref-httpapi-h/httpapi-createconnection.md). 
 
 * `optionName` A NULL terminated string representing the name of the option. 
 

@@ -20,7 +20,7 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_GetRetryPolicy(
 
 * `retryTimeoutLimitInSeconds` Out parameter containing maximum amount of time in seconds to attempt reconnection to IOT Hub.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](#undefined) function from within any callback.
+**NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](../iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-destroy.md) function from within any callback.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

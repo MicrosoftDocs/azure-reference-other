@@ -30,7 +30,7 @@ Function Name                  | Description
 [IoTHubDeviceConfiguration_UpdateConfiguration](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-updateconfiguration.md)            | Updates the given Configuration in IoT Hub.
 [IoTHubDeviceConfiguration_DeleteConfiguration](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-deleteconfiguration.md)            | Deletes the given Configuration from IoT Hub.
 [IoTHubDeviceConfiguration_ApplyConfigurationContentToDeviceOrModule](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-applyconfigurationcontenttodeviceormodule.md)            | Deletes the given Configuration from IoT Hub.
-[IoTHubDeviceConfiguration_FreeConfigurationMembers](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md)            | Free members of the [IOTHUB_DEVICE_CONFIGURATION](#undefined) structure (NOT the structure itself)
+[IoTHubDeviceConfiguration_FreeConfigurationMembers](./iot-c-ref-iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md)            | Free members of the [IOTHUB_DEVICE_CONFIGURATION](iot-c-ref-iothub-deviceconfiguration-h.md#IOTHUB_DEVICE_CONFIGURATION) structure (NOT the structure itself)
 
 ## Structures
 

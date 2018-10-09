@@ -54,6 +54,20 @@ Member name                 | Description
  response_arr            | 
  response_arr_size            | 
  response_arr_type            | 
+#### PROVISIONING_QUERY_RESPONSE.response_arr
+
+```C
+union PROVISIONING_QUERY_RESPONSE.response_arr {
+  INDIVIDUAL_ENROLLMENT_HANDLE  *      ie,
+  ENROLLMENT_GROUP_HANDLE  *           eg,
+  DEVICE_REGISTRATION_STATE_HANDLE  *  drs
+};
+```
+Member name                 | Description                                
+----------------------------|----------------
+ ie            | 
+ eg            | 
+ drs            | 
 
 ## Macro definitions
 

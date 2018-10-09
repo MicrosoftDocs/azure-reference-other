@@ -15,7 +15,7 @@ IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_UpdateConfiguration
 ## Parameters
 * `serviceClientDeviceConfigurationHandle` The handle created by a call to the create function. 
 
-* `configuration` [IOTHUB_DEVICE_CONFIGURATION](#undefined) structure containing the new configuration info.
+* `configuration` [IOTHUB_DEVICE_CONFIGURATION](../iot-c-ref-iothub-deviceconfiguration-h.md#iothub_device_configuration) structure containing the new configuration info.
 
 ## Return Value
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.

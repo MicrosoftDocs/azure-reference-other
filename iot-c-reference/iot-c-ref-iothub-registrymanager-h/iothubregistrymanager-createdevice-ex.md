@@ -16,7 +16,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateDevice_Ex(
 ## Parameters
 * `registryManagerHandle` The handle created by a call to the create function. 
 
-* `deviceCreate` [IOTHUB_REGISTRY_DEVICE_CREATE_EX](#undefined) structure containing the new device Id, primaryKey (optional) and secondaryKey (optional) 
+* `deviceCreate` [IOTHUB_REGISTRY_DEVICE_CREATE_EX](../iot-c-ref-iothub-registrymanager-h.md#iothub_registry_device_create_ex) structure containing the new device Id, primaryKey (optional) and secondaryKey (optional) 
 
 * `device` Input parameter, if it is not NULL will contain the created device info structure
 
