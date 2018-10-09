@@ -6,7 +6,8 @@ Returns a pointer to a null terminated string containing the current IoT Hub Cli
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_version.h](../iot-c-ref-iothub-client-version-h.md)"  
 ```C
-const char* IoTHubClient_GetVersionString(void);
+const char* IoTHubClient_GetVersionString(void
+);
 ```
 
 ## Return Value

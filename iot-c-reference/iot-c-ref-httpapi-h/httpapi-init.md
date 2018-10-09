@@ -6,7 +6,8 @@ Global initialization for the HTTP API component.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../iot-c-ref-httpapi-h.md)"  
 ```C
-HTTPAPI_RESULT HTTPAPI_Init(void);
+HTTPAPI_RESULT HTTPAPI_Init(void
+);
 ```
 
 Platform specific implementations are expected to initialize the underlying HTTP API stacks.

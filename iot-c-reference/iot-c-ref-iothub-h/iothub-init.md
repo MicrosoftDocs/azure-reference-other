@@ -6,7 +6,8 @@ IoTHubClient_Init Initializes the IoTHub Client System.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub.h](../iot-c-ref-iothub-h.md)"  
 ```C
-int IoTHub_Init(void);
+int IoTHub_Init(void
+);
 ```
 
 ## Return Value
