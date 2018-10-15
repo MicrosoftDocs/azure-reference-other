@@ -19,7 +19,7 @@ ms.author: mamccrea
 # CollectTOP (Azure Stream Analytics)
   Returns an array of ranked records, where rank defines the ranking position of the event in the window according to the specified ordering. Ordering/ranking is based on event columns and can be specified in ORDER BY clause.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 CollectTop(<number of events as integer literal>) OVER (ORDER BY (<column name> [ASC |DESC])+)  

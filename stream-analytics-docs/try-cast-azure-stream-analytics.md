@@ -22,7 +22,7 @@ For example, the clause `TRY_CAST ('this is a string' AS bigint)` results in a N
 
 This function is useful to help ensure data purity, by enforcing the data types on an input column. You can filter out dirty data that does not match the expected data type in a given column by using TRY_CAST on each column. 
 
- **Syntax**  
+ ## Syntax  
   
 ```  
 TRY_CAST ( expression AS data_type)  

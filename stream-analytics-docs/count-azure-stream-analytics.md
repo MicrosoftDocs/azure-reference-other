@@ -18,7 +18,7 @@ ms.author: mamccrea
 # COUNT (Azure Stream Analytics)
   Returns the number of items in a group. COUNT always returns a bigint data type value.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 COUNT ( { [ [ALL | DISTINCT] expression ] | * } ) 

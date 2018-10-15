@@ -18,7 +18,7 @@ ms.author: mamccrea
 # GetArrayLength (Azure Stream Analytics)
   Returns the length of the specified array.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 GetArrayLength ( array_expression )  

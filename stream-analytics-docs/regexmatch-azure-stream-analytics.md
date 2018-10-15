@@ -18,7 +18,7 @@ ms.author: mamccrea
 # REGEXMATCH (Azure Stream Analytics)
   Returns the starting position of the first occurrence of a pattern in a specified expression, or 0 if the pattern is not found, on all valid nvarchar(max) data types. Pattern is interpreted as single-line, case-insensitive, ECMAScript compatible regular expression.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 REGEXMATCH( <expression>, <pattern> )  

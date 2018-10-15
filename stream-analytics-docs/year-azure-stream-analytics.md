@@ -18,7 +18,7 @@ ms.author: mamccrea
 # YEAR (Azure Stream Analytics)
   Returns an integer that represents the year of the specified date  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 YEAR ( date )  

@@ -17,7 +17,7 @@ ms.date: 02/01/2017
 # ST_WITHIN (Azure Stream Analytics)
   Returns 1 if a geography is within another, if not it will return 0.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 ST_WITHIN (geography, polygon)  

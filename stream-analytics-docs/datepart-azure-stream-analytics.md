@@ -18,7 +18,7 @@ ms.author: mamccrea
 # DATEPART (Azure Stream Analytics)
   Returns an integer that represents the specified datepart of the specified date.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 DATEPART ( datepart , date )  

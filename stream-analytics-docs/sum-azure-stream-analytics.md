@@ -18,7 +18,7 @@ ms.author: mamccrea
 # SUM (Azure Stream Analytics)
   Returns the sum of all the values in the expression. SUM can be used with numeric columns only. Null values are ignored.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 SUM ( expression )  

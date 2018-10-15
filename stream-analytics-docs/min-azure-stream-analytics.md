@@ -18,7 +18,7 @@ ms.author: mamccrea
 # MIN (Azure Stream Analytics)
   Returns the minimum value in the expression.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 MIN ( expression )  

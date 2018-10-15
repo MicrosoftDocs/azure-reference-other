@@ -18,7 +18,7 @@ ms.author: mamccrea
 # STDEV (Azure Stream Analytics)
   Returns the statistical standard deviation of all values in a group. Null values are ignored.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 STDEV (expression )  

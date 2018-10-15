@@ -18,7 +18,7 @@ ms.author: mamccrea
 # FROM (Azure Stream Analytics)
   Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 [ FROM { <input_source> } [ ,...n ] ]  

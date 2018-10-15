@@ -20,7 +20,7 @@ The LAG analytic operator allows one to look up a “previous” event in an eve
   
 In Stream Analytics, the scope of LAG (that is, how far back in history from the current event it needs to look) is always limited to a finite time interval, using the LIMIT DURATION clause. LAG can optionally be limited to only consider events that match the current event on a certain property or condition using the PARTITION BY and WHEN clauses. LAG is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
   
- **Syntax**  
+ ## Syntax  
   
 ```SQL  
 LAG(<scalar_expression >, [<offset >], [<default>])  

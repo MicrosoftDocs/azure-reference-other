@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  It’s important to understand that CREATE TABLE does not actually create any table but only defines the data type for each column in the payload of the Input alias that has been created in the “Add Input” section of the portal. In the absence of such a declaration, the compiler will infer the data type of the columns. If the data is in CSV or JSON format, then all inferred types will be nvarchar(max). To perform non-text operations or transformations on the data, the data types either need to be defined using CREATE TABLE or established using the CAST function within the query.  
   
- **Syntax**  
+ ## Syntax  
   
 ```SQL 
 CREATE TABLE   

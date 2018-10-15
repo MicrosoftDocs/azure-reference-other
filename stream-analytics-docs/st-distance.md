@@ -18,7 +18,7 @@ ms.date: 02/01/2017
 # ST_DISTANCE  (Azure Stream Analytics)
   Returns the distance between two points in meters. If used with Polygons will return 0.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 ST_DISTANCE ( pointA, pointB )  

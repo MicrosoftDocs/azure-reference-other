@@ -18,7 +18,7 @@ ms.author: mamccrea
 # SUBSTRING (Azure Stream Analytics)
   Returns part of a character or a text.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 SUBSTRING ( expression ,start ,length )  

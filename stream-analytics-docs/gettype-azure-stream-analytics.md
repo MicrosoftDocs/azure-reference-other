@@ -18,7 +18,7 @@ ms.author: mamccrea
 # GetType (Azure Stream Analytics)
   Returns a data type name of the value.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 GetType (expression)  

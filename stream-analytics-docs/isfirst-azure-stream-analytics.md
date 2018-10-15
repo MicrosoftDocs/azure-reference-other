@@ -18,7 +18,7 @@ ms.author: mamccrea
 # ISFIRST (Azure Stream Analytics)
 Returns 1 if the event is the first event within a given duration, or 0 otherwise. ISFIRST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
   
- **Syntax**  
+ ## Syntax  
   
 ```SQL  
 ISFIRST ( timeunit  , duration )   

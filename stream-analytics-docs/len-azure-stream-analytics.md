@@ -18,7 +18,7 @@ ms.author: mamccrea
 # LEN (Azure Stream Analytics)
   Returns the number of characters of the specified string expression, excluding trailing blanks.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 LEN ( string_expression )  

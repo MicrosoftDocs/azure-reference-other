@@ -29,7 +29,7 @@ Thus mathematically, our session window ends if the following condition is satis
 
 When a partition key is provided, the events are grouped together by the key and session window is applied to each group independently. This is useful for cases where you need different session windows for different users or devices.
 
-**Syntax**
+## Syntax
 
 ```SQL
 SESSIONWINDOW(timeunit, timeoutSize, maxDurationSize) [OVER (PARTITION BY partitionKey)]

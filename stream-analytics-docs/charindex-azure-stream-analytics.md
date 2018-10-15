@@ -19,7 +19,7 @@ ms.author: mamccrea
 # CHARINDEX (Azure Stream Analytics)
   Searches an expression for another expression and returns its starting position if found.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 CHARINDEX ( expressionToFind ,expressionToSearch [ , start_location ] )  

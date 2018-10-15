@@ -23,7 +23,7 @@ ms.author: mamccrea
   
  There are two table-valued functions available in Azure Stream Analytics to facilitate working with Array and Record type fields. They are [GetArrayElements](getarrayelements-azure-stream-analytics.md) and [GetRecordProperties](getrecordproperties-azure-stream-analytics.md).  
   
- **Syntax**  
+ ## Syntax  
   
 ```SQL
   

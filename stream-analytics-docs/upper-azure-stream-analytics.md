@@ -18,7 +18,7 @@ ms.author: mamccrea
 # UPPER (Azure Stream Analytics)
   Returns a character expression with lowercase character data converted to uppercase.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 UPPER ( string_expression )  

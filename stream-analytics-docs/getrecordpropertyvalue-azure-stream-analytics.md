@@ -18,7 +18,7 @@ ms.author: mamccrea
 # GetRecordPropertyValue (Azure Stream Analytics)
   Returns the record value associated with the specified property.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 GetRecordPropertyValue ( record_expression, string_expression )  
