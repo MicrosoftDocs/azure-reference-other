@@ -3,6 +3,7 @@
   expanded: true
   items: 
     - name: Built-in Functions
+      expanded: true
       items: 
         - name: Built-in Functions Overview
           href: built-in-functions-azure-stream-analytics.md
@@ -39,8 +40,9 @@
             - name: VARP
               href: varp-azure-stream-analytics.md
         - name: Analytic Functions
-          href: analytic-functions-azure-stream-analytics.md
           items: 
+            - name: Analytic Functions Overview
+              href: analytic-functions-azure-stream-analytics.md
             - name: ISFIRST
               href: isfirst-azure-stream-analytics.md
             - name: LAG
@@ -50,8 +52,9 @@
             - name: AnomalyDetection
               href: anomaly-detection-azure-stream-analytics.md
         - name: Array Functions
-          href: array-functions-stream-analytics.md
           items: 
+            - name: Array Functions Overview
+              href: array-functions-stream-analytics.md
             - name: GetArrayLength
               href: getarraylength-azure-stream-analytics.md
             - name: GetArrayElement
@@ -59,8 +62,9 @@
             - name: GetArrayElements
               href: getarrayelements-azure-stream-analytics.md
         - name: Conversion Functions
-          href: conversion-functions-azure-stream-analytics.md
           items: 
+            - name: Conversion Functions Overview
+              href: conversion-functions-azure-stream-analytics.md
             - name: CAST
               href: cast-azure-stream-analytics.md
             - name: GetType
@@ -68,8 +72,9 @@
             - name: TRY_CAST
               href: try-cast-azure-stream-analytics.md
         - name: Date and Time Functions
-          href: date-and-time-functions-azure-stream-analytics.md
           items: 
+            - name: Date and Time Functions Overview
+              href: date-and-time-functions-azure-stream-analytics.md
             - name: DATEADD
               href: dateadd-azure-stream-analytics.md
             - name: DATEDIFF
@@ -87,8 +92,9 @@
             - name: YEAR
               href: year-azure-stream-analytics.md
         - name: GeoSpatial Functions
-          href: geospatial-functions.md
           items: 
+            - name: GeoSpatial Functions Overview
+              href: geospatial-functions.md
             - name: CreateLineString
               href: createlinestring.md
             - name: CreatePoint
@@ -104,13 +110,15 @@
             - name: ST_WITHIN
               href: st-within.md
         - name: Input Metadata Functions
-          href: input-metadata-functions.md
           items: 
+            - name: Input Metadata Functions Overview
+              href: input-metadata-functions.md
             - name: GetMetadataPropertyValue
               href: getmetadatapropertyvalue.md
         - name: Mathematical Functions
-          href: mathematical-functions-azure-stream-analytics.md
           items: 
+            - name: Mathematical Functions Overview
+              href: mathematical-functions-azure-stream-analytics.md
             - name: ABS
               href: abs-azure-stream-analytics.md
             - name: CEILING
@@ -128,15 +136,17 @@
             - name: SQRT
               href: sqrt-azure-stream-analytics.md
         - name: Record Functions
-          href: record-functions-azure-stream-analytics.md
           items: 
+            - name: Record Functions Overview
+              href: record-functions-azure-stream-analytics.md
             - name: GetRecordProperties
               href: getrecordproperties-azure-stream-analytics.md
             - name: GetRecordPropertyValue
               href: getrecordpropertyvalue-azure-stream-analytics.md
         - name: String Functions
-          href: string-functions-azure-stream-analytics.md
           items: 
+            - name: String Functions Overview
+              href: string-functions-azure-stream-analytics.md
             - name: CHARINDEX
               href: charindex-azure-stream-analytics.md
             - name: CONCAT
@@ -154,8 +164,9 @@
             - name: UPPER
               href: upper-azure-stream-analytics.md
         - name: Windowing Functions
-          href: windowing-azure-stream-analytics.md
           items: 
+            - name: Windowing Functions Overview
+              href: windowing-azure-stream-analytics.md
             - name: Hopping Window
               href: hopping-window-azure-stream-analytics.md
             - name: Session Window
@@ -165,6 +176,7 @@
             - name: Tumbling Window
               href: tumbling-window-azure-stream-analytics.md
     - name: Data Types
+      expanded: true
       items: 
         - name: Data Types Overview
           href: data-types-azure-stream-analytics.md
@@ -204,13 +216,13 @@
     - name: Time Management
       expanded: true
       items: 
+        - name: Time Management Overview
+          href: time-management-azure-stream-analytics.md
         - name: System.Timestamp
           href: system-timestamp-stream-analytics.md
         - name: TIMESTAMP BY
           href: timestamp-by-azure-stream-analytics.md
         - name: Time Skew Policies
           href: time-skew-policies-azure-stream-analytics.md
-        - name: Time Management Overview
-          href: time-management-azure-stream-analytics.md
     - name: Event Delivery Guarantees
       href: event-delivery-guarantees-azure-stream-analytics.md
