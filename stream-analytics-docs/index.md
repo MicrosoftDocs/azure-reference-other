@@ -1,3 +1,3 @@
 ---
-redirect_url: /stream-analytics-query/stream-analytics-query-language-reference.md
+redirect_url: /stream-analytics-query/stream-analytics-query-language-reference
 ---
