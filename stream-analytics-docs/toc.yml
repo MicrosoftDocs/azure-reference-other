@@ -1,0 +1,216 @@
+- name: Stream Analytics Query Language
+  href: stream-analytics-query-language-reference.md
+  expanded: true
+  items: 
+    - name: Built-in Functions
+      items: 
+        - name: Built-in Functions Overview
+          href: built-in-functions-azure-stream-analytics.md
+        - name: Aggregate Functions
+          items: 
+            - name: Aggregate Functions Overview
+              href: aggregate-functions-azure-stream-analytics.md
+            - name: AVG
+              href: avg-azure-stream-analytics.md
+            - name: COUNT
+              href: count-azure-stream-analytics.md
+            - name: Collect
+              href: collect-azure-stream-analytics.md
+            - name: CollectTOP
+              href: collecttop-azure-stream-analytics.md
+            - name: MAX
+              href: max-azure-stream-analytics.md
+            - name: MIN
+              href: min-azure-stream-analytics.md
+            - name: Percentile_Cont
+              href: percentile-cont-azure-stream-analytics.md
+            - name: Percentile_Disc
+              href: percentile-disc-azure-stream-analytics.md
+            - name: STDEV
+              href: stdev-azure-stream-analytics.md
+            - name: STDEVP
+              href: stdevp-azure-stream-analytics.md
+            - name: SUM
+              href: sum-azure-stream-analytics.md
+            - name: TopOne
+              href: topone-azure-stream-analytics.md
+            - name: VAR
+              href: var-azure-stream-analytics.md
+            - name: VARP
+              href: varp-azure-stream-analytics.md
+        - name: Analytic Functions
+          href: analytic-functions-azure-stream-analytics.md
+          items: 
+            - name: ISFIRST
+              href: isfirst-azure-stream-analytics.md
+            - name: LAG
+              href: lag-azure-stream-analytics.md
+            - name: LAST
+              href: last-azure-stream-analytics.md
+            - name: AnomalyDetection
+              href: anomaly-detection-azure-stream-analytics.md
+        - name: Array Functions
+          href: array-functions-stream-analytics.md
+          items: 
+            - name: GetArrayLength
+              href: getarraylength-azure-stream-analytics.md
+            - name: GetArrayElement
+              href: getarrayelement-azure-stream-analytics.md
+            - name: GetArrayElements
+              href: getarrayelements-azure-stream-analytics.md
+        - name: Conversion Functions
+          href: conversion-functions-azure-stream-analytics.md
+          items: 
+            - name: CAST
+              href: cast-azure-stream-analytics.md
+            - name: GetType
+              href: gettype-azure-stream-analytics.md
+            - name: TRY_CAST
+              href: try-cast-azure-stream-analytics.md
+        - name: Date and Time Functions
+          href: date-and-time-functions-azure-stream-analytics.md
+          items: 
+            - name: DATEADD
+              href: dateadd-azure-stream-analytics.md
+            - name: DATEDIFF
+              href: datediff-azure-stream-analytics.md
+            - name: DATENAME
+              href: datename-azure-stream-analytics.md
+            - name: DATEPART
+              href: datepart-azure-stream-analytics.md
+            - name: DATETIMEFROMPARTS
+              href: datetimefromparts-azure-stream-analytics.md
+            - name: DAY
+              href: day-azure-stream-analytics.md
+            - name: MONTH
+              href: month-azure-stream-analytics.md
+            - name: YEAR
+              href: year-azure-stream-analytics.md
+        - name: GeoSpatial Functions
+          href: geospatial-functions.md
+          items: 
+            - name: CreateLineString
+              href: createlinestring.md
+            - name: CreatePoint
+              href: createpoint.md
+            - name: CreatePolygon
+              href: createpolygon.md
+            - name: ST_DISTANCE
+              href: st-distance.md
+            - name: ST_OVERLAPS
+              href: st-overlaps.md
+            - name: ST_INTERSECTS
+              href: st-intersects.md
+            - name: ST_WITHIN
+              href: st-within.md
+        - name: Input Metadata Functions
+          href: input-metadata-functions.md
+          items: 
+            - name: GetMetadataPropertyValue
+              href: getmetadatapropertyvalue.md
+        - name: Mathematical Functions
+          href: mathematical-functions-azure-stream-analytics.md
+          items: 
+            - name: ABS
+              href: abs-azure-stream-analytics.md
+            - name: CEILING
+              href: ceiling-azure-stream-analytics.md
+            - name: EXP
+              href: exp-azure-stream-analytics.md
+            - name: FLOOR
+              href: floor-azure-stream-analytics.md
+            - name: POWER
+              href: power-azure-stream-analytics.md
+            - name: SIGN
+              href: sign-azure-stream-analytics.md
+            - name: SQUARE
+              href: square-azure-stream-analytics.md
+            - name: SQRT
+              href: sqrt-azure-stream-analytics.md
+        - name: Record Functions
+          href: record-functions-azure-stream-analytics.md
+          items: 
+            - name: GetRecordProperties
+              href: getrecordproperties-azure-stream-analytics.md
+            - name: GetRecordPropertyValue
+              href: getrecordpropertyvalue-azure-stream-analytics.md
+        - name: String Functions
+          href: string-functions-azure-stream-analytics.md
+          items: 
+            - name: CHARINDEX
+              href: charindex-azure-stream-analytics.md
+            - name: CONCAT
+              href: concat-azure-stream-analytics.md
+            - name: LEN
+              href: len-azure-stream-analytics.md
+            - name: LOWER
+              href: lower-azure-stream-analytics.md
+            - name: PATINDEX
+              href: patindex-azure-stream-analytics.md
+            - name: REGEXMATCH
+              href: regexmatch-azure-stream-analytics.md
+            - name: SUBSTRING
+              href: substring-azure-stream-analytics.md
+            - name: UPPER
+              href: upper-azure-stream-analytics.md
+        - name: Windowing Functions
+          href: windowing-azure-stream-analytics.md
+          items: 
+            - name: Hopping Window
+              href: hopping-window-azure-stream-analytics.md
+            - name: Session Window
+              href: session-window-azure-stream-analytics.md
+            - name: Sliding Window
+              href: sliding-window-azure-stream-analytics.md
+            - name: Tumbling Window
+              href: tumbling-window-azure-stream-analytics.md
+    - name: Data Types
+      items: 
+        - name: Data Types Overview
+          href: data-types-azure-stream-analytics.md
+        - name: Parsing JSON and AVRO data
+          href: http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json
+    - name: Query Language Elements
+      expanded: true
+      items: 
+        - name: Query Language Elements Overview
+          href: query-language-elements-azure-stream-analytics.md
+        - name: APPLY
+          href: apply-azure-stream-analytics.md
+        - name: CASE
+          href: case-azure-stream-analytics.md
+        - name: CREATE TABLE
+          href: create-table-stream-analytics.md
+        - name: FROM
+          href: from-azure-stream-analytics.md
+        - name: GROUP BY
+          href: group-by-azure-stream-analytics.md
+        - name: HAVING
+          href: having-azure-stream-analytics.md
+        - name: INTO
+          href: into-azure-stream-analytics.md
+        - name: JOIN
+          href: join-azure-stream-analytics.md
+        - name: Reference Data JOIN
+          href: reference-data-join-azure-stream-analytics.md
+        - name: SELECT
+          href: select-azure-stream-analytics.md
+        - name: UNION
+          href: union-azure-stream-analytics.md
+        - name: WHERE
+          href: where-azure-stream-analytics.md
+        - name: WITH
+          href: with-azure-stream-analytics.md
+    - name: Time Management
+      expanded: true
+      items: 
+        - name: System.Timestamp
+          href: system-timestamp-stream-analytics.md
+        - name: TIMESTAMP BY
+          href: timestamp-by-azure-stream-analytics.md
+        - name: Time Skew Policies
+          href: time-skew-policies-azure-stream-analytics.md
+        - name: Time Management Overview
+          href: time-management-azure-stream-analytics.md
+    - name: Event Delivery Guarantees
+      href: event-delivery-guarantees-azure-stream-analytics.md
