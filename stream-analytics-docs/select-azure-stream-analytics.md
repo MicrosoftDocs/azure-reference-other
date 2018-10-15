@@ -28,7 +28,7 @@ FROM input_source [TIMESTAMP BY column_name ] [PARTITION BY column_name ]
   
 ```  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 SELECT <select_list>   

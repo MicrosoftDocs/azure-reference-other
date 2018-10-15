@@ -22,7 +22,7 @@ The following diagram illustrates a stream with a series of events and how they 
 
  ![Stream Analytics 10 second sliding window](media/sliding-window-azure-stream-analytics/streamanalytics-slidingwindow.png "Stream Analytics 10 second sliding window")
   
-**Syntax**  
+## Syntax  
   
 ```  
 SLIDINGWINDOW ( timeunit  , windowsize )   

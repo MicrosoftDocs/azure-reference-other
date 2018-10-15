@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ![Stream Analytics hopping window diagram](media/hopping-window-azure-stream-analytics/streamanalytics-hoppingwindow.png "Stream Analytics hopping window diagram")  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 HOPPINGWINDOW ( timeunit  , windowsize , hopsize, [offsetsize] )   

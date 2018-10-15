@@ -18,7 +18,7 @@ ms.author: mamccrea
 # FLOOR (Azure Stream Analytics)
   A mathematical function that returns the largest integer less than or equal to the specified numeric expression.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 FLOOR (expression)  

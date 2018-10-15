@@ -18,7 +18,7 @@ ms.date: 04/22/2016
   
  ![Stream Analytics tumbling window 5 mins](media/tumbling-window-azure-stream-analytics/streamanalytics-tumblingwindow5mins.png "Stream Analytics tumbling window 5 mins")  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 TUMBLINGWINDOW ( timeunit  , windowsize, [offsetsize] )  

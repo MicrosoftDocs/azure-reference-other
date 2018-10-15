@@ -18,7 +18,7 @@ ms.date: 02/01/2017
 # CreatePoint (Azure Stream Analytics)
   Returns a GeoJSON Point record. The result of a CreatePoint can be used as input to other Geospatial functions.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 CreatePoint (latitude, longitude)  

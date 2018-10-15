@@ -24,7 +24,7 @@ ms.author: mamccrea
   
 -   The data types must be compatible.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
   { <query_specification> | ( <query_expression> ) }   

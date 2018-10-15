@@ -18,7 +18,7 @@ ms.author: mamccrea
 # MAX (Azure Stream Analytics)
   Returns the maximum value in the expression.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 MAX ( expression )  

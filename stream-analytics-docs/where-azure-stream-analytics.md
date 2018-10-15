@@ -18,7 +18,7 @@ ms.author: mamccrea
 # WHERE (Azure Stream Analytics)
   Specifies the search condition for the rows returned by the query.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 [ WHERE <search_condition> ]  

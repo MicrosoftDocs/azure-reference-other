@@ -17,7 +17,7 @@ ms.date: 02/01/2017
 # ST_OVERLAPS (Azure Stream Analytics)
   Returns 1 if a geography overlaps with another. If geographies do not overlap or one is within another, it will return 0.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 ST_OVERLAPS (polygonA, polygonB)  

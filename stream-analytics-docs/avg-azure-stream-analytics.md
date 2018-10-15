@@ -19,7 +19,7 @@ ms.author: mamccrea
 # AVG (Azure Stream Analytics)
   Returns the average of the values in a group. Null values are ignored.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 AVG (expression )  

@@ -20,7 +20,7 @@ ms.author: mamccrea
 ## INTO (Output Stream)
 INTO explicitly specifies an output stream, and is always associated with an SELECT expression.  If not specified, the default output stream is “output”.
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 [ INTO <output_stream> ]  
@@ -56,7 +56,7 @@ INTO explicitly specifies the number of shards in an input step when specifying 
 
 INTO is a hint to the system, and may be ignored should the system determine the explicit specification is not beneficial.
 
-**Syntax**  
+## Syntax  
   
 ```  
 [ INTO <shard_count> ]  

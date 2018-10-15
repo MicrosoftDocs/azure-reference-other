@@ -27,7 +27,7 @@ ms.date: 03/22/2017
   
 -   First and last points declared must be equal to close the loop  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 CreatePolygon (points)  

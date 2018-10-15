@@ -19,7 +19,7 @@ ms.author: mamccrea
 # SQUARE (Azure Stream Analytics)
   A mathematical function that returns the square of the specified float value.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 SQUARE (float_expression)  

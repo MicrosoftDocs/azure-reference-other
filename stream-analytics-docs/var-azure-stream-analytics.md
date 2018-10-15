@@ -18,7 +18,7 @@ ms.author: mamccrea
 # VAR (Azure Stream Analytics)
   Returns the statistical variance of all values in a group. Null values are ignored.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 VAR (expression )  

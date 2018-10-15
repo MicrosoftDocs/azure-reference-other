@@ -23,7 +23,7 @@ ms.date: 03/22/2017
   
 -   The structure cannot overlap itself over an interval of two or more consecutive points.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 CreateLineString (points)  

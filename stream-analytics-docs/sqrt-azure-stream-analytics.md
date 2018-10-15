@@ -19,7 +19,7 @@ ms.author: mamccrea
 # SQRT (Azure Stream Analytics)
   A mathematical function that returns the square root of the specified float value.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 SQRT (float_expression)  

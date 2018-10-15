@@ -18,7 +18,7 @@ ms.author: mamccrea
 # DATEDIFF (Azure Stream Analytics)
   Returns the count (signed integer) of the specified datepart boundaries crossed between the specified startdate and enddate.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 DATEDIFF ( datepart , startdate, enddate )  
