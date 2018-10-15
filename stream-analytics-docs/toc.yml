@@ -176,7 +176,6 @@
             - name: Tumbling Window
               href: tumbling-window-azure-stream-analytics.md
     - name: Data Types
-      expanded: true
       items: 
         - name: Data Types Overview
           href: data-types-azure-stream-analytics.md
@@ -184,7 +183,6 @@
           href: http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json
           maintainContext: true
     - name: Query Language Elements
-      expanded: true
       items: 
         - name: Query Language Elements Overview
           href: query-language-elements-azure-stream-analytics.md
@@ -215,7 +213,6 @@
         - name: WITH
           href: with-azure-stream-analytics.md
     - name: Time Management
-      expanded: true
       items: 
         - name: Time Management Overview
           href: time-management-azure-stream-analytics.md
