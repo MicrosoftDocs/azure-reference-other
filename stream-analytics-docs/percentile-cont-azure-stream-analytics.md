@@ -49,8 +49,9 @@ GROUP BY SlidingWindow(hours, 1)
 ```  
   
  **Example input:**
+
 | Regions | ServiceAvailability |
-|---|---|
+|---------|---------|
 | A |	0.98 |
 | B |	0.93 |
 | C |	0.78 |
