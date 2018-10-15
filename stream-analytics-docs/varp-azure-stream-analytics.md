@@ -18,7 +18,7 @@ ms.author: mamccrea
 # VARP (Azure Stream Analytics)
   Returns the statistical variance for the population for all values in a group. Null values are ignored.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 VARP (expression )  

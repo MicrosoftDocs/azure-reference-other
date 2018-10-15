@@ -18,7 +18,7 @@ ms.author: mamccrea
 # POWER (Azure Stream Analytics)
   A mathematical function that returns the value of the specified expression to the specified power.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 POWER (float_expression, y)  

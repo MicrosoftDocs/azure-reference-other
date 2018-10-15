@@ -18,7 +18,7 @@ ms.author: mamccrea
 # DATETIMEFROMPARTS (Azure Stream Analytics)
   Returns a datetime value for the specified date and time.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 DATETIMEFROMPARTS (year, month, day, hour, minute, seconds, milliseconds)  

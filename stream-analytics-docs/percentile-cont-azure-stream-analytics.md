@@ -18,7 +18,7 @@ ms.author: mamccrea
 # Percentile_Cont (Azure Stream Analytics)
 Calculates a percentile based on a continuous distribution of the entire data set. The result is interpolated and might not be equal to any of the specific values from the input set. 
   
- **Syntax**  
+ ## Syntax  
   
 ``` 
 PERCENTILE_CONT ( numeric_literal )

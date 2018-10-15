@@ -18,7 +18,7 @@ ms.author: mamccrea
 # DAY (Azure Stream Analytics)
   Returns an integer representing the day (day of the month) of the specified date.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 DAY ( date )  

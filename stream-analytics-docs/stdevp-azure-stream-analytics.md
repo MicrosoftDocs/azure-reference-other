@@ -18,7 +18,7 @@ ms.author: mamccrea
 # STDEVP (Azure Stream Analytics)
   Returns the statistical standard deviation for the population for all values in a group. Null values are ignored.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 STDEVP (expression )  

@@ -22,7 +22,7 @@ In Stream Analytics, the scope of LAST (that is, how far back in history from th
   
  **Remark:** LAST(\<expression>, \<default>) is  equivalent of LAG(\<expression>, 0, \<default>) (that is offset value set to ‘0’). Note that LAG(\<expression>, 0, \<default>) is actually not a valid construct since LAG takes an offset greater or equal to 1. So, you must use LAST operator instead, which was introduced for convenience and better readability.
   
- **Syntax**  
+ ## Syntax  
   
 ```SQL  
 LAST(<scalar_expression >, [<default>])    

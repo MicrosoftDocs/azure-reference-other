@@ -22,7 +22,7 @@ ms.author: mamccrea
  
  Additionally, SELECT * cannot be used in JOIN statements.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 [ FROM { <input_source> } [ ,...n ] ]  
@@ -137,7 +137,7 @@ WHERE I2.TollId IS NULL
 ```  
   
 ##  <a name="BKMK_DateDiff"></a> Special DATEDIFF Function for JOIN  
- **Syntax**  
+ ## Syntax  
   
 ```  
 DATEDIFF ( datepart , input_source1, input_source2 )  

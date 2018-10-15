@@ -17,7 +17,7 @@ ms.date: 02/01/2017
 # ST_INTERSECTS (Azure Stream Analytics)
   Returns 1 if a geography intersects with another. If geographies do not intersect it will return 0.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 ST_INTERSECTS (lineStringA, lineStringB)  

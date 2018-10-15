@@ -18,7 +18,7 @@ ms.author: mamccrea
 # CONCAT (Azure Stream Analytics)
   Returns a string that is the result of concatenating two or more string values.  
   
- **Syntax**  
+ ## Syntax  
   
 ```SQL  
 CONCAT ( string_value1, string_value2 [, string_valueN ] )  

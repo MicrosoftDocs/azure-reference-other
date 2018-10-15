@@ -17,7 +17,7 @@ ms.date: 05/17/2018
 # GetArrayElements (Azure Stream Analytics)
 Returns a dataset with array values and indexes. The result of the GetArrayElements function must be used with [CROSS APPLY](apply-azure-stream-analytics.md) operator only.  This function is useful for parsing arrays and nested objects in JSON and AVRO formatted input event data. For more examples, see [Parsing JSON and AVRO data](http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json).
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 GetArrayElements ( column_reference )  

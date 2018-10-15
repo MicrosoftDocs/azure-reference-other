@@ -19,7 +19,7 @@ ms.author: mamccrea
 # CEILING (Azure Stream Analytics)
   A mathematical function that returns the smallest integer greater than or equal to the specified numeric expression.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 CEILING (expression)  

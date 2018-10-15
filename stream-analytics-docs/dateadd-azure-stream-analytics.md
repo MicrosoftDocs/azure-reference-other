@@ -18,7 +18,7 @@ ms.author: mamccrea
 # DATEADD (Azure Stream Analytics)
   Returns a specified date with the specified number interval (signed integer) added to a specified datepart of that date.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 DATEADD ( datepart , number, date )  

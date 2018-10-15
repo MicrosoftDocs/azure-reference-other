@@ -18,7 +18,7 @@ ms.author: mamccrea
 # LOWER (Azure Stream Analytics)
   Returns a character expression after converting uppercase character data to lowercase.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 LOWER ( string_expression )  

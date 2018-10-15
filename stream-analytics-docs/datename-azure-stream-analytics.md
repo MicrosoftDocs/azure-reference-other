@@ -18,7 +18,7 @@ ms.author: mamccrea
 # DATENAME (Azure Stream Analytics)
   Returns a character string that represents the specified datepart of the specified date.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 DATENAME ( datepart , date )  

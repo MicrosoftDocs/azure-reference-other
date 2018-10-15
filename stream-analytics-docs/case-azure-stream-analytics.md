@@ -29,7 +29,7 @@ ms.author: mamccrea
   
  CASE can be used in any statement or clause that allows a valid expression. For example, you can use CASE in expressions such as SELECT and in clauses such as WHERE and HAVING.  
   
- **Syntax**  
+ ## Syntax  
   
  Simple CASE expression:  
   

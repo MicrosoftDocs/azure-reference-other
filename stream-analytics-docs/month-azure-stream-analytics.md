@@ -18,7 +18,7 @@ ms.author: mamccrea
 # MONTH (Azure Stream Analytics)
   Returns an integer that represents the month of the specified date.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 MONTH ( date )  

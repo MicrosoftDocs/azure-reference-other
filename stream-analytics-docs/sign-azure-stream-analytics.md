@@ -18,7 +18,7 @@ ms.author: mamccrea
 # SIGN (Azure Stream Analytics)
   A mathematical function that returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 SIGN (expression)  

@@ -21,7 +21,7 @@ ms.author: mamccrea
 > [!NOTE]  
 >  The WITH clause has a special use with respect to scaling out your queries. For more information, see [Scale Azure Stream Analytics jobs](http://go.microsoft.com/fwlink/?LinkId=517300)  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 WITH   

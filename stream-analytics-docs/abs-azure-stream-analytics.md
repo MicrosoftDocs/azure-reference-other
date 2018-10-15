@@ -19,7 +19,7 @@ ms.author: mamccrea
 # ABS (Absolute value- Azure Stream Analytics)
   A mathematical function that returns the absolute (positive) value of the specified numeric expression.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 ABS (expression )  

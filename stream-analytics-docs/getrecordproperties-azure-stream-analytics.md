@@ -18,7 +18,7 @@ ms.author: mamccrea
 # GetRecordProperties (Azure Stream Analytics)
   Returns a dataset with record property names and values. The result of the GetRecordProperties function must be used with the [CROSS APPLY](apply-azure-stream-analytics.md) operator.  
   
- **Syntax**  
+ ## Syntax  
   
 ```  
 GetRecordProperties ( column_reference )  
