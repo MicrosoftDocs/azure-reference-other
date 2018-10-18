@@ -3,7 +3,6 @@
   expanded: true
   items: 
     - name: Built-in Functions
-      expanded: true
       items: 
         - name: Built-in Functions Overview
           href: built-in-functions-azure-stream-analytics.md
@@ -183,6 +182,7 @@
           href: http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json
           maintainContext: true
     - name: Query Language Elements
+      expanded: true
       items: 
         - name: Query Language Elements Overview
           href: query-language-elements-azure-stream-analytics.md
