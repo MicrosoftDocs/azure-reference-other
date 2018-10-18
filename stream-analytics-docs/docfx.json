@@ -37,7 +37,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/stream-analytics-query/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "titleSuffix": "Stream Analytics Query"
     },
     "fileMetadata": {},
     "template": [],
