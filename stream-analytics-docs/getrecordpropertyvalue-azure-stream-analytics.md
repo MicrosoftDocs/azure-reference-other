@@ -61,4 +61,4 @@ FROM input
 ```  
   
 ## See also
-- [Parsing JSON and AVRO data](http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json)
+- [Parsing JSON and AVRO data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json)

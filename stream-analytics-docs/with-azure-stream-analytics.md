@@ -19,7 +19,7 @@ ms.author: mamccrea
   Specifies a temporary named result set which can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.  
   
 > [!NOTE]  
->  The WITH clause has a special use with respect to scaling out your queries. For more information, see [Scale Azure Stream Analytics jobs](http://go.microsoft.com/fwlink/?LinkId=517300)  
+>  The WITH clause has a special use with respect to scaling out your queries. For more information, see [Scale Azure Stream Analytics jobs](https://go.microsoft.com/fwlink/?LinkId=517300)  
   
  ## Syntax  
   
