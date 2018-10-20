@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 TopOne() OVER (ORDER BY (<column name> [ASC |DESC])+)  
 ```  
   

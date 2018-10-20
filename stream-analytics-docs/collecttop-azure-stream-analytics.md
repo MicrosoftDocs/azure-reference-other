@@ -21,7 +21,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 CollectTop(<number of events as integer literal>) OVER (ORDER BY (<column name> [ASC |DESC])+)  
 ```  
   

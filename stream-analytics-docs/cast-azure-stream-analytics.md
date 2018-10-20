@@ -22,7 +22,7 @@ If the conversion cannot be performed, the function fails and causes the job to 
     
 ## Syntax  
   
-``` 
+```SQL  
 CAST ( expression AS data_type)  
   
 ```  

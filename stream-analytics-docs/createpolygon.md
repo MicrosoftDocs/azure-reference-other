@@ -29,7 +29,7 @@ ms.date: 03/22/2017
   
  ## Syntax  
   
-```  
+```SQL   
 CreatePolygon (points)  
 ```  
   

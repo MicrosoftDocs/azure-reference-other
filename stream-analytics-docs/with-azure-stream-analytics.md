@@ -23,7 +23,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 WITH   
   
 <result_set_name1> AS  

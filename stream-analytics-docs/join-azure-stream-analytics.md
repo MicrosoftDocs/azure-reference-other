@@ -24,7 +24,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 [ FROM { <input_source> } [ ,...n ] ]  
 <input_source> ::=   
 {  
@@ -139,7 +139,7 @@ WHERE I2.TollId IS NULL
 ##  <a name="BKMK_DateDiff"></a> Special DATEDIFF Function for JOIN  
  ## Syntax  
   
-```  
+```SQL   
 DATEDIFF ( datepart , input_source1, input_source2 )  
 ```  
   

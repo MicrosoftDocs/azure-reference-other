@@ -19,7 +19,7 @@ ms.date: 02/01/2017
   
  ## Syntax  
   
-```  
+```SQL   
 ST_WITHIN (geography, polygon)  
 ```  
   

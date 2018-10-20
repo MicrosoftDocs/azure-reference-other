@@ -20,7 +20,7 @@ Calculates a percentile based on entire data set. For a given percentile value P
   
  ## Syntax  
   
-```  
+```SQL   
 PERCENTILE_DISC ( numeric_literal )
        OVER ( ORDER_BY order_by_expression [ ASC | DESC ])
 ```  

@@ -19,7 +19,7 @@ Returns a dataset with array values and indexes. The result of the GetArrayEleme
   
  ## Syntax  
   
-```  
+```SQL   
 GetArrayElements ( column_reference )  
 ```  
   

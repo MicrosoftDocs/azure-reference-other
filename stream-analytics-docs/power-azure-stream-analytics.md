@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 POWER (float_expression, y)  
 ```  
   

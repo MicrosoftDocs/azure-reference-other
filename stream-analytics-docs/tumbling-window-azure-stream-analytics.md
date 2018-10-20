@@ -20,7 +20,7 @@ ms.date: 04/22/2016
   
  ## Syntax  
   
-```  
+```SQL   
 TUMBLINGWINDOW ( timeunit  , windowsize, [offsetsize] )  
 TUMBLINGWINDOW ( Duration( timeunit  , windowsize ), [Offset(timeunit  , offsetsize)] )  
   

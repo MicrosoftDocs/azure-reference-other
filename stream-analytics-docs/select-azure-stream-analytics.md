@@ -18,7 +18,7 @@ ms.author: mamccrea
 # SELECT (Azure Stream Analytics)
   Retrieves rows from input streams and enables the selection of one or many columns from one or many input streams in Azure Stream Analytics. The main clauses used with a SELECT expression can be summarized as:  
   
-```  
+```SQL   
 [ WITH <Result_Set_name>]   
 SELECT select_list   
 FROM input_source [TIMESTAMP BY column_name ] [PARTITION BY column_name ]   
@@ -30,7 +30,7 @@ FROM input_source [TIMESTAMP BY column_name ] [PARTITION BY column_name ]
   
  ## Syntax  
   
-```  
+```SQL   
 SELECT <select_list>   
 <select_list> ::=   
     {   

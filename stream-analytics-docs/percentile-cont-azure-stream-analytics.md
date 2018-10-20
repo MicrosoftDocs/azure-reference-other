@@ -20,7 +20,7 @@ Calculates a percentile based on a continuous distribution of the entire data se
   
  ## Syntax  
   
-``` 
+```SQL  
 PERCENTILE_CONT ( numeric_literal )
       OVER ( ORDER BY order_by_expression [ ASC | DESC ] )
 ```  
