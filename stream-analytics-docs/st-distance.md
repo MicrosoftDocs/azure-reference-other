@@ -20,7 +20,7 @@ ms.date: 02/01/2017
   
  ## Syntax  
   
-```  
+```SQL   
 ST_DISTANCE ( pointA, pointB )  
 ```  
   

@@ -24,7 +24,7 @@ This function is useful to help ensure data purity, by enforcing the data types 
 
  ## Syntax  
   
-```  
+```SQL   
 TRY_CAST ( expression AS data_type)  
   
 ```  

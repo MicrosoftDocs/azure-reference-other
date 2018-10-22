@@ -22,7 +22,7 @@ Returns an array with all record values from the window.
  
  ## Syntax  
   
-```  
+```SQL   
 Collect()
 ```  
   

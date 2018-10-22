@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 COUNT ( { [ [ALL | DISTINCT] expression ] | * } ) 
   
 ```  

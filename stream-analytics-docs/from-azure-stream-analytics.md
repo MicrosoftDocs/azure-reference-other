@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 [ FROM { <input_source> } [ ,...n ] ]  
   
 <input_source> ::=   

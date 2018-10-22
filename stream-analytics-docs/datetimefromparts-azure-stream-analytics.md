@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 DATETIMEFROMPARTS (year, month, day, hour, minute, seconds, milliseconds)  
   
 ```  

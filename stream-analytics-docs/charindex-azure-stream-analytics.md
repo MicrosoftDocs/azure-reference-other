@@ -21,7 +21,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 CHARINDEX ( expressionToFind ,expressionToSearch [ , start_location ] )  
 ```  
   

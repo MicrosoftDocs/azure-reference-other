@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 GROUP BY <group by spec>  
   
 <group by spec> ::=  

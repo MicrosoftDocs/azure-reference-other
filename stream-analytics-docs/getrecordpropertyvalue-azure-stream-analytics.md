@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 GetRecordPropertyValue ( record_expression, string_expression )  
 ```  
   

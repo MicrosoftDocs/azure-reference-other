@@ -26,7 +26,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
   { <query_specification> | ( <query_expression> ) }   
   UNION  
   <query_specification | ( <query_expression> )   

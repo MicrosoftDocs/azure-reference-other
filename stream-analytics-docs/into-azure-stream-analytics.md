@@ -22,7 +22,7 @@ INTO explicitly specifies an output stream, and is always associated with an SEL
   
  ## Syntax  
   
-```  
+```SQL   
 [ INTO <output_stream> ]  
 
 ```  
