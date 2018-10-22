@@ -27,7 +27,7 @@ Note that using a custom timestamp (TIMESTAMP BY clause) may cause Azure Stream 
 While the disorder between event producers may be large, the disorder within the events from a single producer is generally small or even non-existent. In case a query only processes data from each event producer independently, handling events from each producer in its own timeline is more efficient than managing time skews between producers. Azure Stream Analytics supports specifying OVER \<over spec> sub-clause to enable processing of events in independent timelines. See ‘OVER clause interacts with event ordering’ for the impact the use of the OVER clause has on the processing of the job. 
   
 ## Syntax  
-```  
+```SQL   
 TIMESTAMP BY scalar_expression [OVER <over spec> ]  
       
 <over spec> ::= 

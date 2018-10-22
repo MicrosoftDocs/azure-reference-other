@@ -59,7 +59,7 @@ scalar_expression.
  **partition_by_clause** PARTITION BY \<partition key> clause requests that only events whose value of  
 \<partition key> is the same as that of the current event be considered. For instance,  
   
-```  
+```SQL   
 LAG(reading) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1))  
 ```  
   

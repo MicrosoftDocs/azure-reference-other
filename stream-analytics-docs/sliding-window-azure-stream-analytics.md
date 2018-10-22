@@ -24,7 +24,7 @@ The following diagram illustrates a stream with a series of events and how they 
   
 ## Syntax  
   
-```  
+```SQL   
 SLIDINGWINDOW ( timeunit  , windowsize )   
 SLIDINGWINDOW ( Duration( timeunit  , windowsize ) )  
   

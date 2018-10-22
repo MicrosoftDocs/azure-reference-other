@@ -22,7 +22,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 HOPPINGWINDOW ( timeunit  , windowsize , hopsize, [offsetsize] )   
 HOPPINGWINDOW ( Duration( timeunit  , windowsize ) , Hop (timeunit  , windowsize ), [Offset(timeunit  , offsetsize)])  
   

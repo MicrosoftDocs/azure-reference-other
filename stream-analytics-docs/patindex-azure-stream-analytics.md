@@ -19,7 +19,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 PATINDEX ( '%pattern%' , expression )  
 ```  
   

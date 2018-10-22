@@ -21,7 +21,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 SQRT (float_expression)  
 ```  
   

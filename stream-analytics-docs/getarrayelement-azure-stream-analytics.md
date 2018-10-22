@@ -20,7 +20,7 @@ Returns the array element at the specified index. This function is useful for pa
   
  ## Syntax  
   
-```  
+```SQL   
 GetArrayElement ( array_expression, bigint_expression )  
 ```  
   

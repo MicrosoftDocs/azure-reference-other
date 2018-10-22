@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```  
+```SQL   
 [ WHERE <search_condition> ]  
   
 <search_condition> ::=   
