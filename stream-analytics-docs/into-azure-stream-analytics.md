@@ -58,7 +58,7 @@ INTO is a hint to the system, and may be ignored should the system determine the
 
 ## Syntax  
   
-```  
+```SQL  
 [ INTO <shard_count> ]  
 
 ```  
