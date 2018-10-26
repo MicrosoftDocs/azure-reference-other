@@ -63,7 +63,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |actuar||  
 |ade4||  
 |AdMit||  
-|aplpack||  
+|aod|MRO 3.4.4 only|
 |ape||  
 |aplpack||  
 |approximator||  
@@ -82,12 +82,13 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |**Package name**|**Compatibility**|  
 |-|-|  
 |BaBooN||  
-|BACCO||  
+|BACCO||
+|backports| MRO 3.4.4. only|
 |BaM||  
 |bark|CRAN R only|  
 |BAS||  
 |base||  
-|base4enc|MRO only|  
+|base64enc|MRO only|  
 |BayesDA||  
 |bayesGARCH||  
 |bayesm||  
@@ -107,10 +108,13 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |BenfordTests||  
 |bfp||  
 |BH||  
+|bindr|MRO 3.4.4 only|
+|bindrcpp|MRO 3.4.4 only|
 |bisoreg||  
 |bit||  
 |bit64||  
-|bitops||  
+|bitops||
+|blob|MRO 3.4.4 only|
 |BLR||  
 |BMA||  
 |Bmix||  
@@ -123,9 +127,11 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |bqtl||  
 |BradleyTerry2||  
 |brew||  
-|brglm||  
+|brglm|| 
+|broom|MRO 3.4.4 only|
 |bspec||  
-|bspmma||  
+|bspmma|| 
+|BVS|MRO 3.4.4 only|
   
  [List of supported packages](#bkmk_List)  
   
@@ -138,12 +144,18 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |cairoDevice|| 
 |calibrator||  
 |car|CRAN R only|  
+|carData|MRO 3.4.4 only|
 |caret|CRAN R only|  
 |catnet||  
 |caTools||  
 |cclust|MRO only|  
+|cellranger|MRO 3.4.4 only|
+|checkmate|MRO 3.4.4 only|
+|checkpoint|MRO 3.4.4 only|
 |chron||  
-|class||  
+|class|| 
+|classInt|MRO 3.4.4 only|
+|cli|MRO 3.4.4 only|
 |clue||  
 |cluster||  
 |clusterSim|| 
@@ -152,16 +164,20 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |codetools||  
 |coin||  
 |colorspace||  
-|combinat||  
+|combinat|| 
+|commonmark|MRO 3.4.4 only|
 |compiler||  
 |CORElearn||  
 |corpcor||  
 |corrplot||  
 |crayon|MRO only|  
+|crosstalk|MRO 3.4.4 only|
 |cslogistic||  
 |ctv||  
 |cubature||  
+|Cubist|MRO 3.4.4 only|
 |curl|MRO only| 
+|CVST|MRO 3.4.4 only|
 |cvTools|MRO only|  
   
  [List of supported packages](#bkmk_List)  
@@ -175,6 +191,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |date||  
 |DBI||  
 |dclone|CRAN R only|  
+|ddalpha|MRO 3.4.4 only|
 |deal||  
 |Deducer||  
 |DeducerExtras||  
@@ -183,20 +200,28 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |deldir||  
 |dendextend|MRO only|  
 |DEoptimR||  
+|Deriv|MRO 3.4.4 only|
+|desc|MRO 3.4.4 only|
 |deSolve||  
 |devtools||  
 |DiagrammeR|MRO only|  
 |dichromat||  
 |digest||  
+|dimRed|MRO 3.4.4 only|
+|diptest|MRO 3.4.4 only|
 |distrom||  
 |dlm||  
 |DMwR|MRO only|  
 |doParallel|MRO only|  
 |doRSR|MRO only|
 |doSNOW||  
+|dotCall64|MRO 3.4.4 only|
+|downloader|MRO 3.4.4 only|
 |dplyr||  
 |DPpackage||  
+|DRR|MRO 3.4.4 only|
 |dse||  
+|DT|MRO 3.4.4 only|
 |dtw|MRO only|  
   
  [List of supported packages](#bkmk_List)  
@@ -213,11 +238,13 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |ellipse||  
 |emulator||  
 |ensembleBMA||  
-|entropy||  
+|entropy|| 
+|estimability|MRO 3.4.4 only|
 |EvalEst||  
 |evaluate||  
 |evdbayes||  
 |exactLoglinTest||  
+|expint|MRO 3.4.4 only|
 |expm||  
 |extremevalues||  
   
@@ -236,12 +263,16 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |filehash||  
 |fitdistrplus||  
 |flashClust||  
+|flexmix|MRO 3.4.4 only|
 |FME||  
+|FNN|MRO 3.4.4 only|
+|forcats|MRO 3.4.4 only|
 |foreach||  
-|forecast||  
+|forecast||
 |foreign||  
 |formatR||  
-|Formula||  
+|Formula||
+|fpc|MRO 3.4.4 only|  
 |fracdiff||  
 |fTrading||  
   
@@ -263,7 +294,8 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |geoRglm||  
 |geosphere||  
 |GGally||  
-|ggdendro||  
+|ggdendro|| 
+|ggformula|MRO 3.4.4 only|
 |ggmap||  
 |ggmcmc||  
 |ggplot2||  
@@ -271,18 +303,20 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |git2r|MRO only|  
 |glmmBUGS||  
 |glmnet||  
+|glue|MRO 3.4.4 only|
 |gmodels||  
 |gmp||  
 |gnm||  
 |googlePublicData|| 
 |googleVis||  
+|gower|MRO 3.4.4 only|
 |GPArotation||  
 |gplots||  
 |graphics||  
 |grDevices||  
 |gregmisc|CRAN R only|  
 |grid||  
-|gribBase|MRO only|  
+|gridBase|MRO only|  
 |gridExtra||  
 |growcurves||  
 |grpreg||  
@@ -302,16 +336,20 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |-|-|  
 |haplo.stats||  
 |hash||  
+|haven|MRO 3.4.4 only|
 |hbsae||  
 |hdrcde||  
 |heavy||  
+|hexbin|
 |hflights||  
 |HH||  
 |HI||  
 |highr||  
 |HistData||  
 |Hmisc||  
+|hms|MRO 3.4.4 only|
 |HSAUR||  
+|htmlTable|MRO 3.4.4 only|
 |htmltools||  
 |htmlwidgets|MRO only|  
 |httpuv||  
@@ -325,9 +363,12 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |-|-|  
 |IBrokers||  
 |ifultools|MRO only|  
-|igraph||  
+|igraph|| 
+|influenceR|MRO 3.4.4 only|
 |inline||  
-|intervals||  
+|intervals|| 
+|inum|MRO 3.4.4 only|
+|iplots|MRO 3.4.4 only|
 |ipred||  
 |irlba|MRO only|  
 |irr||  
@@ -366,6 +407,8 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |**Package name**|**Compatibility**|  
 |-|-|  
 |labeling||  
+|labelled|MRO 3.4.4 only|
+|laeken|MRO 3.4.4 only|
 |Lahman||  
 |lars||  
 |lattice||  
@@ -375,6 +418,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |lazyeval||  
 |leaps||  
 |LearnBayes||  
+|libcoin|MRO 3.4.4 only|
 |LiblineaR||  
 |limSolve||  
 |lme4||  
@@ -382,11 +426,12 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |lmPerm|CRAN R only|  
 |lmtest||  
 |locfit||  
-|logpol|MRO only|  
+|locpol|MRO only|  
 |LogicReg||
 |longitudinalData|MRO only|  
 |lpSolve||  
-|lsa||  
+|lsa|| 
+|LSAfun|MRO 3.4.4 only|
 |lubridate||  
   
  [List of supported packages](#bkmk_List)  
@@ -397,6 +442,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |-|-|  
 |magic||  
 |magrittr||  
+|manipulateWidget|MRO 3.4.4 only|
 |mapdata||  
 |mapproj||  
 |maps||  
@@ -411,6 +457,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |maxent||  
 |maxLik||  
 |mboost||  
+|mclust|MRO 3.4.4 only|
 |mcmc||  
 |MCMCglmm||  
 |MCMCpack|CRAN R only|  
@@ -422,7 +469,8 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |mice||  
 |microbenchmark||  
 |mime||  
-|miniCRAN|MRO only|  
+|miniCRAN|MRO only| 
+|miniUI|MRO 3.4.4 only|
 |minpack.lm||  
 |minqa||  
 |mirt|MRO only|  
@@ -434,11 +482,14 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |mlogitBMA||  
 |mnormt||  
 |MNP||  
+|modeest|MRO 3.4.4 only|
+|ModelMetrics|MRO 3.4.4 only|
 |modeltools||  
 |mombf||  
 |monomvn||  
 |monreg||  
 |mosaic|CRAN R only|  
+|mosaicCore|MRO 3.4.4 only|
 |mosaicData||  
 |MSBVAR||  
 |msm||  
@@ -454,7 +505,8 @@ The **Compatibility** column indicates whether the package is included with CRAN
 
 |**Package name**|**Compatibility**|  
 |-|-|  
-|ncvreg||  
+|ncvreg|| 
+|network|MRO 3.4.4 only|
 |nlme||  
 |nloptr||  
 |NLP||  
@@ -470,6 +522,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
   
 |**Package name**|**Compatibility**|  
 |-|-|  
+|OceanView|MRO 3.4.4 only|
 |openNLP||
 |openNLPdata|
 |openssl|MRO only|  
@@ -489,13 +542,21 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |party||  
 |partykit|MRO only|  
 |PAWL||  
-|pbivnorm||  
+|pbapply|MRO 3.4.4 only|
+|pbivnorm|| 
+|pbkrtest|MRO 3.4.4 only|
 |pcaPP||  
 |pdc|MRO only|  
 |PerformanceAnalytics||  
 |permute||  
+|pillar|MRO 3.4.4 only|
+|pkgconfig|MRO 3.4.4 only|
 |pkgmaker|MRO only|  
 |pkgXMLBuilder|MRO only|  
+|plogr|MRO 3.4.4 only|
+|plot3D|MRO 3.4.4 only|
+|plot3Drgl|MRO 3.4.4 only|
+|plotly|MRO 3.4.4 only|
 |plotmo||  
 |plotrix||  
 |pls||  
@@ -504,18 +565,22 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |polspline||  
 |polynom||  
 |PottsUtils||  
+|prablclus|MRO 3.4.4 only|
 |praise|MRO only|  
 |predmixcor||  
 |PresenceAbsence||  
+|prettyunits|MRO 3.4.4 only|
 |pROC||  
 |prodlim||  
 |profdpm||  
 |profileModel||  
+|progress|MRO 3.4.4 only|
 |proto||  
 |proxy|MRO only|  
 |pryr||  
 |pscl||  
 |psych||  
+|purr|MRO 3.4.4 only|
   
  [List of supported packages](#bkmk_List)  
   
@@ -524,12 +589,14 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |**Package name**|**Compatibility**|  
 |-|-|  
 |qap|MRO only|  
+|qdap|MRO 3.4.4 only|
 |qdapDictionaries||  
 |qdapRegex||  
 |qdapTools|CRAN R only|  
 |quadprog||  
 |quantmod||  
-|quantreg||  
+|quantreg|| 
+|questionr|MRO 3.4.4 only|
 |qvcalc||  
   
  [List of supported packages](#bkmk_List)  
@@ -561,11 +628,15 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |RcppArmadillo||  
 |rcppbugs||  
 |RcppEigen||  
-|RcppExamples||  
+|RcppExamples|| 
+|RcppRoll|MRO 3.4.4 only|
 |RCurl||  
 |readr|MRO only|  
+|readxl|MRO 3.4.4 only|
+|recipes|MRO 3.4.4 only|
 |registry|MRO only|  
 |relimp||  
+|rematch|MRO 3.4.4 only|
 |reports||  
 |reshape||  
 |reshape2||  
@@ -580,14 +651,18 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |RevoUtilsMath|MRO only|
 |rgdal||  
 |rgeos||  
+|regx|MRO 3.4.4 only|
+|rgl|MRO 3.4.4 only|
 |RgoogleMaps||  
 |RGraphics||  
 |RGtk2||
 |RINside|MRO only|  
 |RJaCGH||  
+|rjags|MRO 3.4.4 only|
 |Rjava||
 |rjson||  
 |RJSONIO||  
+|rlang|MRO 3.4.4 only|
 |rlecuyer|MRO only|  
 |Rmpfr|MRO only|  
 |rms|MRO only|  
@@ -597,11 +672,13 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |robustbase||  
 |ROCR||  
 |RODBC||  
+|Rook|MRO 3.4.4 only|
 |rootSolve||  
 |roxygen|CRAN R only|  
 |roxygen2||  
 |rpart||  
 |rpart.plot||  
+|rprojroot|MRO 3.4.4 only|
 |rrcov||  
 |rscproxy||  
 |RSGHB||  
@@ -612,7 +689,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |RUnit||  
 |runjags||  
 |Runuran||  
-|Rekajars||
+|RWekajars||
 |rworldmap||  
 |rworldxtra||  
   
@@ -636,6 +713,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |setRNG||  
 |sfsmisc|MRO only|  
 |sgeostat||  
+|shape|MRO 3.4.4 only|
 |shapefiles||  
 |shiny||  
 |SimpleTable||  
@@ -647,23 +725,27 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |snow||  
 |SnowballC||  
 |snowFT||  
+|sourcetools|MRO 3.4.4 only|
 |sp||  
 |spacetime||  
 |spam|MRO only|  
 |SparseM||  
 |spatial||  
-|spBayes||  
+|spBayes||
+|spData|MRO 3.4.4 only|  
 |spdep||  
 |spikeslab||  
 |splancs||  
 |splines||  
 |spls||  
 |splus2R|MRO only|  
-|spTimer||  
-|sqldf||  
+|spTimer||
+|SQUAREM|MRO 3.4.4 only|
+|sqldf||
 |sROC|MRO only|  
 |stabledist||  
-|stabs||  
+|stabs|| 
+|statnet.common|MRO 3.4.4 only|
 |stats||  
 |stats4||  
 |stepPlr||  
@@ -675,6 +757,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |stsm||  
 |stsm.class||  
 |SuppDists||  
+|survey|MRO 3.4.4 only|
 |survival||  
 |svmpath||  
 |svUnit||  
@@ -696,14 +779,18 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |tfplot||  
 |tframe||  
 |tgp||  
-|TH.data||  
-|tidyr||  
+|TH.data|| 
+|tibble|MRO 3.4.4 only|
+|tidyr|| 
+|tidyselect|MRO 3.4.4 only|
 |timeDate||  
 |timeSeries||  
 |tm||  
 |tools||  
 |topicmodels||  
+|translations|MRO 3.4.4 only|
 |tree||  
+|trimcluster|MRO 3.4.4 only|
 |TSclust|MRO only|
 |tseries||  
 |tsfa||  
@@ -718,7 +805,8 @@ The **Compatibility** column indicates whether the package is included with CRAN
   
 |**Package name**|**Compatibility**|  
 |-|-|  
-|UsingR||  
+|UsingR|| 
+|utf8|MRO 3.4.4 only|
 |utils||  
 |uuid|MRO only|  
   
@@ -735,6 +823,8 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |VGAM||  
 |VIF||  
 |VIM|MRO only|
+|viridis|MRO 3.4.4 only|
+|viridisLite|MRO 3.4.4 only|
 |visNetwork|MRO only|
   
  [List of supported packages](#bkmk_List)  
@@ -743,6 +833,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
   
 |**Package name**|**Compatibility**|  
 |-|-|  
+|wavethresh|MRO 3.4.4 only|
 |whisker||  
 |withr|MRO only|  
 |wmtsa|MRO only|  
@@ -759,7 +850,8 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |XLConnectJars||  
 |xlsx||
 |xlsxjars||
-|XML||  
+|XML|| 
+|xml2|MRO 3.4.4 only|
 |xtable||  
 |xts||  
   
