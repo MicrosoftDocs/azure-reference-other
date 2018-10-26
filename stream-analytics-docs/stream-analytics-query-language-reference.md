@@ -64,6 +64,6 @@ FROM TollTagEntry TIMESTAMP BY EntryTime
   
 ## See Also  
   
--   [Stream Analytics REST API](http://msdn.microsoft.com/library/71a66e31-dfa5-48a7-8771-192f1490c205)  
+-   [Stream Analytics REST API](https://msdn.microsoft.com/library/71a66e31-dfa5-48a7-8771-192f1490c205)  
   
   
