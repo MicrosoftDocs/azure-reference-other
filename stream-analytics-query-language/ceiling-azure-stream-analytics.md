@@ -25,7 +25,7 @@ ms.author: mamccrea
 CEILING (expression)  
 ```  
   
-## Arguement  
+## Argument  
  **expression**  
   
  An expression of the exact numeric or approximate numeric data type category.  
