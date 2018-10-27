@@ -92,7 +92,7 @@ For examples of how Vowpal Wabbit can be used in machine learning, see the [Azur
 
 The following video provides a walkthrough of the training and scoring process for Vowpal Wabbit:  
   
- [https://azure.microsoft.com/en-us/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/](https://azure.microsoft.com/en-us/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
+ [https://azure.microsoft.com/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/](https://azure.microsoft.com/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
   
 ##  <a name="bkmk_TechnicalNotes"></a> Technical notes
 
