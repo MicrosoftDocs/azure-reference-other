@@ -70,7 +70,7 @@ To configure the **Execute Python Script** module, you provide a set of inputs, 
 
     Use of a dataset is optional, if you want to generate data using Python, or use Python code to import the data directly into the module.
 
-    This module supports addition of a second Studio dataset on on **Dataset2**. Reference this in your Python script as DataFrame2.
+    This module supports addition of a second Studio dataset on **Dataset2**. Reference this in your Python script as DataFrame2.
 
     Datasets stored in Studio are automatically converted to **pandas** data.frames when loaded with this module.
 
