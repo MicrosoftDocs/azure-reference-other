@@ -38,7 +38,7 @@ The options that can be set via this API are:
 
 * **logtrace** - available for MQTT protocol. Boolean value that turns on and off the diagnostic logging.
 
-* **sas_token_lifetime** - available for MQTT & AMQP protocol. size_t value that that determines the sas token timeout length.
+* **sas_token_lifetime** - available for MQTT & AMQP protocol. size_t value that determines the sas token timeout length.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
