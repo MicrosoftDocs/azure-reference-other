@@ -49,12 +49,12 @@ The language reference is organized as follows:
     f.  [Built-in Functions](built-in-functions-u-sql.md)
 4. [How to express common SQL expressions in U-SQL](common-sql-expressions-in-u-sql.md)  
 
-If you are interested in seeing how you use the above concepts to solve certain scenarios please refer to the Language User Guide, [tutorials](https://azure.microsoft.com/documentation/articles/data-lake-analytics-u-sql-get-started/) as well as the [U-SQL Programmability Guide](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide).  
+If you are interested in seeing how you use the above concepts to solve certain scenarios please refer to the Language User Guide, [tutorials](https://azure.microsoft.com/documentation/articles/data-lake-analytics-u-sql-get-started/) as well as the [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide).  
   
 ### See Also  
 * In order to see how the above concepts can be applied to solve certain scenarios, please refer to the following:   
     * [U-SQL Tutorials](https://azure.microsoft.com/documentation/articles/data-lake-analytics-u-sql-get-started/)   
-    * [U-SQL Programmability Guide](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide) 
+    * [U-SQL Programmability Guide](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-programmability-guide) 
 * For additional information please refer to:  
     * [Release Notes](https://github.com/Azure/AzureDataLake/tree/master/docs/Release_Notes) 
     * U-SQL C# Developer’s Guide (under development)  
