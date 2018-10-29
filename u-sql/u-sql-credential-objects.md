@@ -19,7 +19,7 @@ manager: "ryanw"
 > See [Set-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.3.0/set-azurermdatalakeanalyticscatalogcredential) for information on creating and managing an Azure Data Lake Analytics catalog credential.
 
 
-U-SQL’s data sources may require the specification of login credentials (username/password) if the data source is not using integrated authentication via Azure Active Directory. In order to provide secure management of these credentials, one has to use a combination of [PowerShell script commands](https://azure.microsoft.com/en-us/documentation/articles/data-lake-analytics-get-started-powershell/) to encode and encrypt the password into the key store and then register the key store reference in the meta data service so it can be used when creating a data source object.  
+U-SQL’s data sources may require the specification of login credentials (username/password) if the data source is not using integrated authentication via Azure Active Directory. In order to provide secure management of these credentials, one has to use a combination of [PowerShell script commands](https://azure.microsoft.com/documentation/articles/data-lake-analytics-get-started-powershell/) to encode and encrypt the password into the key store and then register the key store reference in the meta data service so it can be used when creating a data source object.  
  
  <!--
 ### Credential DDL Statements    
