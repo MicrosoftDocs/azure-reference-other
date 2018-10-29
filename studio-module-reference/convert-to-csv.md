@@ -76,7 +76,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Requirements of the CSV format
 
-The CSV file format is is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
+The CSV file format is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
  
 A CSV file stores tabular data (numbers and text) in plain text form. A CSV file consists of any number of records, separated by line breaks of some kind. Each record consists of fields, separated by a literal comma. In some regions, the separator might be a semi-colon. 
 
