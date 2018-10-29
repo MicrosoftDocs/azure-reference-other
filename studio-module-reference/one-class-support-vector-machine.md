@@ -29,7 +29,7 @@ This module is particularly useful in scenarios where you have a lot of "normal"
 
 You use the **One-Class Support Vector Model** module to create the model, and then train the model using the [Train Anomaly Detection Model](train-anomaly-detection-model.md). The dataset that you use for training can contain all or mostly normal cases.
 
-You can then apply different metrics to identify potential anomalies. For example, you might use a large dataset of good transactions to identify cases that that possibly represent fraudulent transactions.
+You can then apply different metrics to identify potential anomalies. For example, you might use a large dataset of good transactions to identify cases that possibly represent fraudulent transactions.
 
 ### More about one-class SVM
 
