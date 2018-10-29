@@ -173,7 +173,7 @@ Azure Machine Learning Studio uses the Anaconda distribution, which includes the
 
 Jupyter Notebooks support multiple Python environments, and can be run from Azure Machine Learning Studio, under the name **Azure Notebooks**. The datasets that you use in experiments can easily be accessed from a notebook, and the notebooks can interact with Azure ML experiments.
 
-+ [Use Jupyter notebooks with Azure ML Workbench](https://docs.microsoft.com/en-us/azure/machine-learning/preview/how-to-use-jupyter-notebooks)
++ [Use Jupyter notebooks with Azure ML Workbench](https://docs.microsoft.com/azure/machine-learning/preview/how-to-use-jupyter-notebooks)
 
 + [Channel 9 video - Using Jupyter notebooks in Azure ML](https://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Using-JupyterIPython-Notebooks-in-Azure-ML)
 
