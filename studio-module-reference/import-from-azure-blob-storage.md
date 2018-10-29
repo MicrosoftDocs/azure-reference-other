@@ -246,7 +246,7 @@ For uploaded datasets, Azure Machine Learning generally supports only UTF-8. How
     maml.mapOutputPort("dataset")
     ```
 
-    You can then use **Visualize** on the output of the Execute R Script module and verify that that characters are displayed correctly.
+    You can then use **Visualize** on the output of the Execute R Script module and verify that characters are displayed correctly.
 
 #### What options do I have for importing text files? The CSV is not appropriate for my data.
 
