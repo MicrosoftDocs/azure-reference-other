@@ -39,7 +39,7 @@ Function Name                  | Description
 [IoTHubDeviceClient_LL_SendReportedState](./iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-sendreportedstate.md)            | This API sends a report of the device's properties and their current values.
 [IoTHubDeviceClient_LL_SetDeviceMethodCallback](./iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-setdevicemethodcallback.md)            | This API sets the callback for async cloud to device method calls.
 [IoTHubDeviceClient_LL_DeviceMethodResponse](./iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-devicemethodresponse.md)            | This API responds to an asnyc method callback identified the methodId.
-[IoTHubDeviceClient_LL_UploadToBlob](./iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-uploadtoblob.md)            | This API uploads to Azure Storage the content pointed to by source having the size size under the blob name devicename/.
+[IoTHubDeviceClient_LL_UploadToBlob](./iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-uploadtoblob.md)            | This API uploads to Azure Storage the content pointed to by source having the size under the blob name devicename/.
 [IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob](./iot-c-ref-iothub-device-client-ll-h/iothubdeviceclient-ll-uploadmultipleblockstoblob.md)            | This API uploads to Azure Storage the content provided block by block by getDataCallback under the blob name devicename/.
 
 ## Type definitions

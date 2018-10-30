@@ -1,6 +1,6 @@
 # IoTHubDeviceClient_LL_UploadToBlob()
 
-This API uploads to Azure Storage the content pointed to by source having the size size under the blob name devicename/.
+This API uploads to Azure Storage the content pointed to by source having the size under the blob name devicename/.
 
 ## Syntax
 
