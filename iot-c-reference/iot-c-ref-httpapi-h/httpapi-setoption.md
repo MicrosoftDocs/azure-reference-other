@@ -1,6 +1,6 @@
 # HTTPAPI_SetOption()
 
-Sets the option named optionName bearing the value value for the HTTP_HANDLE handle.
+Sets the option named optionName bearing the value for the HTTP_HANDLE handle.
 
 ## Syntax
 

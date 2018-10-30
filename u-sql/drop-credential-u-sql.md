@@ -27,7 +27,7 @@ manager: "ryanw"
 \<!--
 > [!WARNING] 
 > CREATE/ALTER/DROP CREDENTIAL statements are deprecated and will be removed in the next deployment. Use credential management commandlets in the latest Azure Powershell.
-> See [Remove-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/en-us/powershell/resourcemanager/azurerm.datalakeanalytics/v2.3.0/remove-azurermdatalakeanalyticscatalogcredential) for information on deleting an Azure Data Lake Analytics catalog credential.
+> See [Remove-AzureRmDataLakeAnalyticsCatalogCredential](https://docs.microsoft.com/powershell/resourcemanager/azurerm.datalakeanalytics/v2.3.0/remove-azurermdatalakeanalyticscatalogcredential) for information on deleting an Azure Data Lake Analytics catalog credential.
 
 A credential can be dropped with the `DROP CREDENTIAL` statement. If the credential is being referenced by a data source, the command will fail.  
   
