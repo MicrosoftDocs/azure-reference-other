@@ -24,7 +24,7 @@ ms.author: mamccrea
 FLOOR (expression)  
 ```  
   
-## Arguement  
+## Argument  
  **expression**  
   
  Is an expression of the exact numeric or approximate numeric data type category.  
