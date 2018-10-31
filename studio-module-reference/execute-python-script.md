@@ -70,7 +70,7 @@ To configure the **Execute Python Script** module, you provide a set of inputs, 
 
     Use of a dataset is optional, if you want to generate data using Python, or use Python code to import the data directly into the module.
 
-    This module supports addition of a second Studio dataset on on **Dataset2**. Reference this in your Python script as DataFrame2.
+    This module supports addition of a second Studio dataset on **Dataset2**. Reference this in your Python script as DataFrame2.
 
     Datasets stored in Studio are automatically converted to **pandas** data.frames when loaded with this module.
 
@@ -173,7 +173,7 @@ Azure Machine Learning Studio uses the Anaconda distribution, which includes the
 
 Jupyter Notebooks support multiple Python environments, and can be run from Azure Machine Learning Studio, under the name **Azure Notebooks**. The datasets that you use in experiments can easily be accessed from a notebook, and the notebooks can interact with Azure ML experiments.
 
-+ [Use Jupyter notebooks with Azure ML Workbench](https://docs.microsoft.com/en-us/azure/machine-learning/preview/how-to-use-jupyter-notebooks)
++ [Use Jupyter notebooks with Azure ML Workbench](https://docs.microsoft.com/azure/machine-learning/preview/how-to-use-jupyter-notebooks)
 
 + [Channel 9 video - Using Jupyter notebooks in Azure ML](https://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Using-JupyterIPython-Notebooks-in-Azure-ML)
 

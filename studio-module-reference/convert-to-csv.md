@@ -76,7 +76,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Requirements of the CSV format
 
-The CSV file format is is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
+The CSV file format is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
  
 A CSV file stores tabular data (numbers and text) in plain text form. A CSV file consists of any number of records, separated by line breaks of some kind. Each record consists of fields, separated by a literal comma. In some regions, the separator might be a semi-colon. 
 
@@ -138,7 +138,7 @@ For importing, don't use the **Export to CSV** module. Instead, use the [Import 
 
 For general information about importing from CSV, see these resources:
 
-+ [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-import-data)
++ [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
 + [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
 
 ##  Expected inputs

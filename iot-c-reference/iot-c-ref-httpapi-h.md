@@ -27,8 +27,8 @@ Function Name                  | Description
 [HTTPAPI_CreateConnection](./iot-c-ref-httpapi-h/httpapi-createconnection.md)            | Creates an HTTPS connection to the host specified by the hostName parameter.
 [HTTPAPI_CloseConnection](./iot-c-ref-httpapi-h/httpapi-closeconnection.md)            | Closes a connection created with [HTTPAPI_CreateConnection](iot-c-ref-httpapi-h/httpapi-createconnection.md).
 [HTTPAPI_ExecuteRequest](./iot-c-ref-httpapi-h/httpapi-executerequest.md)            | Sends the HTTP request to the host and handles the response for the HTTP call.
-[HTTPAPI_SetOption](./iot-c-ref-httpapi-h/httpapi-setoption.md)            | Sets the option named optionName bearing the value value for the HTTP_HANDLE handle.
-[HTTPAPI_CloneOption](./iot-c-ref-httpapi-h/httpapi-cloneoption.md)            | Clones the option named optionName bearing the value value into the pointer savedValue.
+[HTTPAPI_SetOption](./iot-c-ref-httpapi-h/httpapi-setoption.md)            | Sets the option named optionName bearing the value for the HTTP_HANDLE handle.
+[HTTPAPI_CloneOption](./iot-c-ref-httpapi-h/httpapi-cloneoption.md)            | Clones the option named optionName bearing the value into the pointer savedValue.
 
 ## Macro definitions
 

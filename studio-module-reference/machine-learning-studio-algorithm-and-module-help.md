@@ -31,7 +31,7 @@ Azure Machine Learning Studio is a collaborative visual development environment 
 If you have not used machine learning before, see these resources:
 + [Webinars and on-demand videos](https://gallery.cortanaintelligence.com/learnings)
 + [Tutorial: Create your first machine learning experiment](https://docs.microsoft.com/azure/machine-learning/machine-learning-create-experiment)
-+ The [Azure AI Gallery](https://gallery.cortanaintelligence.com/) provides examples of how machine machine learning has been applied in various industries.
++ The [Azure AI Gallery](https://gallery.cortanaintelligence.com/) provides examples of how machine learning has been applied in various industries.
   
 ## Help for Machine Learning Studio modules  
 

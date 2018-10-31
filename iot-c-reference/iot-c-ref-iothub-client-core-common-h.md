@@ -90,8 +90,8 @@ Member name                 | Description
  protocol            | A function pointer that is passed into the IoTHubClientCreate. A function definition for AMQP is defined in the include [iothubtransportamqp.h](iot-c-ref-iothubtransportamqp-h.md). A function definition for HTTP is defined in the include [iothubtransporthttp.h](iot-c-ref-iothubtransporthttp-h.md) A function definition for MQTT is defined in the include [iothubtransportmqtt.h](iot-c-ref-iothubtransportmqtt-h.md).
  transportHandle            | a transport handle implementing the protocol
  deviceId            | A string that identifies the device.
- deviceKey            | The device key used to authenticate the device. x509 authentication is is not supported for multiplexed connections.
- deviceSasToken            | The device SAS Token used to authenticate the device in place of device key. x509 authentication is is not supported for multiplexed connections.
+ deviceKey            | The device key used to authenticate the device. x509 authentication is not supported for multiplexed connections.
+ deviceSasToken            | The device SAS Token used to authenticate the device in place of device key. x509 authentication is not supported for multiplexed connections.
 
 ## Macro definitions
 
