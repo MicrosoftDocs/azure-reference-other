@@ -33,21 +33,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "stream-analytics-query-language",
-      "build_source_folder": "strream-analytics-query-language",
-      "build_output_subfolder": "stream-analytics-query-language",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "op"
-    },
-    {
       "docset_name": "studio-module-reference",
       "build_source_folder": "studio-module-reference",
       "build_output_subfolder": "studio-module-reference",
