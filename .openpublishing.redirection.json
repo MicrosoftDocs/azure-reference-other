@@ -1167,6 +1167,7 @@
      },
      {
         "source_path": "u-sql/using-variables-u-sql.md",
+<<<<<<< HEAD
         "redirect_url": "https://docs.microsoft.com/u-sql/variables/using-variables",
         "redirect_document_id": true}
 
@@ -1182,5 +1183,490 @@
 
   
 
+=======
+        "redirect_url": "https://docs.microsoft.com/en-us/u-sql/variables/using-variables",
+        "redirect_document_id": true
+     },
+    		{
+			"source_path": "stream-analytics-msdn/abs-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/abs-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/aggregate-functions-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/aggregate-functions-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/analytic-functions-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/analytic-functions-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/anomaly-detection-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/anomaly-detection-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/apply-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/apply-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/array-functions-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/array-functions-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/avg-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/avg-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/built-in-functions-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/built-in-functions-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/case-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/case-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/cast-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/cast-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/ceiling-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/ceiling-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/charindex-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/charindex-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/collect-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/collect-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/collecttop-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/collecttop-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/concat-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/concat-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/conversion-functions-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/conversion-functions-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/count-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/count-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/createlinestring.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/createlinestring",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/createpoint.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/createpoint",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/createpolygon.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/createpolygon",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/create-table-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/create-table-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/data-types-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/data-types-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/dateadd-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/dateadd-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/date-and-time-functions-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/date-and-time-functions-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/datediff-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/datediff-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/datename-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/datename-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/datepart-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/datepart-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/datetimefromparts-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/datetimefromparts-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/day-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/day-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/event-delivery-guarantees-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/event-delivery-guarantees-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/exp-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/exp-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/floor-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/floor-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/from-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/from-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/geospatial-functions.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/geospatial-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/getarrayelement-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/getarrayelement-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/getarrayelements-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/getarrayelements-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/getarraylength-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/getarraylength-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/getmetadatapropertyvalue.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/getmetadatapropertyvalue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/getrecordproperties-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/getrecordproperties-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/getrecordpropertyvalue-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/getrecordpropertyvalue-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/gettype-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/gettype-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/group-by-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/group-by-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/having-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/having-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/hopping-window-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/hopping-window-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/index.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/index",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/input-metadata-functions.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/input-metadata-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/into-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/into-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/isfirst-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/isfirst-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/join-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/join-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/lag-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/lag-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/last-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/last-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/len-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/len-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/lower-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/lower-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/mathematical-functions-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/mathematical-functions-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/max-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/max-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/min-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/min-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/month-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/month-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/patindex-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/patindex-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/percentile-cont-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/percentile-cont-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/percentile-disc-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/percentile-disc-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/power-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/power-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/query-language-elements-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/query-language-elements-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/record-functions-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/record-functions-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/reference-data-join-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/reference-data-join-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/regexmatch-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/regexmatch-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/select-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/select-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/session-window-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/session-window-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/sign-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/sign-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/sliding-window-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/sliding-window-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/sqrt-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/sqrt-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/square-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/square-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/stdev-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/stdev-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/stdevp-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/stdevp-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/st-distance.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/st-distance",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/st-intersects.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/st-intersects",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/st-overlaps.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/st-overlaps",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/stream-analytics-query-language-reference.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/stream-analytics-query-language-reference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/string-functions-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/string-functions-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/st-within.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/st-within",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/substring-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/substring-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/sum-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/sum-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/system-timestamp-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/system-timestamp-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/time-management-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/time-management-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/time-skew-policies-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/timestamp-by-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/timestamp-by-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/topone-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/topone-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/try-cast-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/try-cast-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/tumbling-window-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/tumbling-window-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/union-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/union-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/upper-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/upper-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/var-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/var-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/varp-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/varp-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/where-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/where-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/windowing-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/windowing-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/with-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/with-azure-stream-analytics",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "stream-analytics-msdn/year-azure-stream-analytics.md",
+			"redirect_url": "https://docs.microsoft.com/stream-analytics-query/year-azure-stream-analytics",
+			"redirect_document_id": true
+		}
+>>>>>>> 481ceb1fccfccc36cad21f7dcf226aa58f95ee94
   ] 
 } 
