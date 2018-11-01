@@ -1649,6 +1649,11 @@
      	"source_path": "stream-analytics-msdn/year-azure-stream-analytics.md",
      	"redirect_url": "https://docs.microsoft.com/stream-analytics-query/year-azure-stream-analytics",
      	"redirect_document_id": true
-     }
+     },
+     {
+       "source_path": "stream-analytics-msdn-redirects/index.md",
+       "redirect_url": "https://docs.microsoft.com/stream-analytics-query",
+       "redirect_document_id": true
+    }
   ] 
 } 
