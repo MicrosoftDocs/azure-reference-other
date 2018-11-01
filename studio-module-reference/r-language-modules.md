@@ -54,7 +54,7 @@ Therefore, R workspaces in Machine Learning Studio also support two kinds of sco
 Machine Learning Studio includes over 500 of the most popular R packages. The R packages that you can select from depend on which R version you select for your experiment:
 
 + CRAN R
-+ Microsoft R Open (MRO 3.2.2)
++ Microsoft R Open (MRO 3.2.2 or MRO 3.4.4)
 
 Whenever you create an experiment, you must choose a single R version to run on, for all modules in your experiment.
 
