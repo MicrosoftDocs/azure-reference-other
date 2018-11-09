@@ -68,7 +68,7 @@ Double-click the output of [Convert to CSV](convert-to-csv.md), and select one o
 
 To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Accessing Azure ML datasets using R](https://gallery.cortanaintelligence.com/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5): Demonstates how you can convert datasets to CSV format for use with external applications. 
+- [Accessing Azure ML datasets using R](https://gallery.cortanaintelligence.com/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5): Demonstrates how you can convert datasets to CSV format for use with external applications. 
   
 ## Technical notes  
 
