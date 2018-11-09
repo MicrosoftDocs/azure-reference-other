@@ -10,7 +10,7 @@ ms.service: stream-analytics
 ms.topic: reference
 ms.workload: data-services
 ms.date: 04/30/2018
-ms.author: minhe
+ms.author: mamccrea
 ---
 # Session window (Azure Stream Analytics) -- Preview
 Session windows group events that arrive at similar times, filtering out periods of time where there is no data. Session window function has three main parameters: timeout, maximum duration, and partitioning key (optional). 
