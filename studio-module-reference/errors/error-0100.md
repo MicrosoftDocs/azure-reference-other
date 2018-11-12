@@ -27,7 +27,7 @@ manager: cgronlun
   
 |Exception Messages|  
 |------------------------|  
-|Unsupported custom module langauge specified|  
+|Unsupported custom module language specified|  
   
  > [!TIP]
  >  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
