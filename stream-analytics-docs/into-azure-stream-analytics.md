@@ -28,7 +28,7 @@ INTO explicitly specifies an output stream, and is always associated with an SEL
 ```  
   
 ## Arguments  
- **ouput_stream**  
+ **output_stream**  
   
  Specifies the name of an output stream.  
   
