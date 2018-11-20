@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b9064dc3-2d69-4e06-b307-6cebf324686a
 caps.latest.revision: 20
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Fast Forest Quantile Regression

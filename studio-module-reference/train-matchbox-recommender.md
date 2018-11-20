@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: fa4aa69d-2f1c-4ba4-ad5f-90ea3a515b4c
 caps.latest.revision: 22
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Train Matchbox Recommender

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 02016f47-e4c3-4a06-9ae5-16c747389e34
 caps.latest.revision: 14
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Remove Duplicate Rows

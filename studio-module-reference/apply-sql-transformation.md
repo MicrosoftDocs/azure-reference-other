@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 90381e80-67c3-4d99-8754-1db785b7ea37
 caps.latest.revision: 20
-author: rastala
-ms.author: roastala 
+author: ericlicoding
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Apply SQL Transformation

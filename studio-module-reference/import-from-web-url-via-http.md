@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b1e62901-41fb-4839-bacd-c0071c984fc1
 caps.latest.revision: 23
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Import from Web URL via HTTP

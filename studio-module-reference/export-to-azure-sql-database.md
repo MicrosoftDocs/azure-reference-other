@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: adc130f5-3b07-462d-8f61-17e0457c41eb
 caps.latest.revision: 19
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Export to Azure SQL Database

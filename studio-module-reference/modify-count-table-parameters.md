@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 7f7c68b0-e0a4-443d-a396-b2346acc5683
 caps.latest.revision: 10
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Modify Count Table Parameters

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5049a09b-bd90-4c4e-9b46-7c87e3a36810
 caps.latest.revision: 27
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # K-Means Clustering

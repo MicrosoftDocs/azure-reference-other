@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: de609cf3-6501-4c04-b719-b9f52c166d65
 caps.latest.revision: 12
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Import from On-Premises SQL Server Database

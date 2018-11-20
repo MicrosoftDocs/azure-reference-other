@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6d9e2516-1343-4859-a3dc-9673ccec9edc
 caps.latest.revision: 13
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine learning modules in Azure Machine Learning Studio

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 3086b8d4-c895-45ba-8aa9-34f0c944d4d3
 caps.latest.revision: 20
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Compute Elementary Statistics
