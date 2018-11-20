@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: 0c67013c-bfbc-428b-87f3-f552d8dd41f6
 caps.latest.revision: 10
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Initialize Model

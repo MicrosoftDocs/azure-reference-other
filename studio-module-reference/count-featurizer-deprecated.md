@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 217741b5-730a-4c4b-839c-93c9cbb80ae7
 caps.latest.revision: 11
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Count Featurizer (deprecated)

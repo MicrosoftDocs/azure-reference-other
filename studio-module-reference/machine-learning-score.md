@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: be8a69b7-d1e3-4fa2-a174-7abe0bcce4e9
 caps.latest.revision: 23
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Score

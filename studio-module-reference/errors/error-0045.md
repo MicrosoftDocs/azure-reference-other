@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 60822377-da7a-40b8-0045-d185d1509344
 caps.latest.revision: 7
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Error 0045  

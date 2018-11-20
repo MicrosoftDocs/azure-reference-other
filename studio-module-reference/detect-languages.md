@@ -12,7 +12,7 @@ ms.topic: "article"
 ms.assetid: 489238da-6806-48a0-a2f3-12ce2cfe0851
 caps.latest.revision: 16
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Detect Languages

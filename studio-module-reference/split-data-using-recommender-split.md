@@ -11,7 +11,7 @@ ms.topic: "reference"
 ms.assetid: 37e1926c-09f5-452c-9e8a-cfe05d2500ea
 caps.latest.revision: 4
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Split Data using Recommender Split

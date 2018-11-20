@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 60036051-8954-4cdf-972f-2d9196ce1328
 caps.latest.revision: 15
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Unpack Zipped Datasets

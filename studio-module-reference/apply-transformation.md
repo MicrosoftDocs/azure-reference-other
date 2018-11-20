@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 805e592d-0f1f-48eb-97c9-688ed0c1dc70
 caps.latest.revision: 16
 author: rastala
-ms.author: roastala 
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Apply Transformation

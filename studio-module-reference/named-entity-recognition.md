@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 50b91b4f-9c98-40d6-9814-2d945c0bb3f1
 caps.latest.revision: 18
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Named Entity Recognition

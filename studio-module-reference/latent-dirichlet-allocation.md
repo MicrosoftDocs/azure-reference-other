@@ -12,7 +12,7 @@ ms.topic: "article"
 ms.assetid: e35a5905-bd57-41f4-9576-82bfcb92f837
 caps.latest.revision: 16
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Latent Dirichlet Allocation

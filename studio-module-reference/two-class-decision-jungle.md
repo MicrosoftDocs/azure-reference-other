@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 563cdba2-de6c-4082-b8f8-18f56ffa147c
 caps.latest.revision: 26
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Decision Jungle

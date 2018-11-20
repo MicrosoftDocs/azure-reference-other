@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 986df333-6748-4b85-923d-871df70d6aaf
 caps.latest.revision: 19
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Normalize Data

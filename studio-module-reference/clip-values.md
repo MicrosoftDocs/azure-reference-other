@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: cdc62e1d-b64f-424c-ac09-bb050918a668
 caps.latest.revision: 15
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Clip Values

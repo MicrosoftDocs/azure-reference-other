@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: a682181b-fa8e-4f5d-a361-766c619df288
 caps.latest.revision: 15
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # OpenCV Library Modules

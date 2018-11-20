@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 207a28dc-f934-4ec0-a51f-926446352eb9
 caps.latest.revision: 12
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Train Vowpal Wabbit Version 7-10 Model

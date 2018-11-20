@@ -12,7 +12,7 @@ ms.topic: "article"
 ms.assetid: 43d255dc-c03d-4dce-acc4-884e660210d9
 caps.latest.revision: 10
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Score Vowpal Wabbit Version 8 Model

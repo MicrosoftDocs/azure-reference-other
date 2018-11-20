@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 1ca59bb6-dc5b-4a1d-a59a-bbf17e26fdc0
 caps.latest.revision: 21
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Import from Data Feed Providers

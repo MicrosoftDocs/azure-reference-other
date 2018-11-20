@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 60822377-da7a-40b8-0141-d185d1509344
 caps.latest.revision: 8
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Error 0141  

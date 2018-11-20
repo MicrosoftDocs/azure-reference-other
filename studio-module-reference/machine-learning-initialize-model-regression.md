@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: 97f9510f-60ba-4d78-8a33-3078a6c7f260
 caps.latest.revision: 11
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Initialize Model - Regression

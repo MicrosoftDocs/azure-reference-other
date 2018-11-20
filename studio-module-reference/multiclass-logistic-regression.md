@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 1d195fe5-98cd-4e1a-a1c8-076aaa3e02c3
 caps.latest.revision: 28
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Multiclass Logistic Regression

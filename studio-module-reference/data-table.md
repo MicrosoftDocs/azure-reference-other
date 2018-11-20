@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 285668ca-bd74-42b2-9c2c-3111b4819e56
 caps.latest.revision: 8
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Table

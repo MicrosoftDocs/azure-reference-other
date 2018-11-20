@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 75fb875d-6b86-4d46-8bcc-74261ade5826
 caps.latest.revision: 21
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Cross-Validate Model

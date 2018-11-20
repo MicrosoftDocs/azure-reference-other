@@ -11,7 +11,7 @@ ms.topic: "reference"
 ms.assetid: 444302ce-a1b6-4003-9a64-8a56120be6ce
 caps.latest.revision: 5
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # ITransform interface

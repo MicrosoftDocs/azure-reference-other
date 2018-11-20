@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 204f6baa-c5f3-4748-844b-1d122a76792e
 caps.latest.revision: 20
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Load Trained Model

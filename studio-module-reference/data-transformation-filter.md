@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: 529b4991-8a7f-4e12-8f36-51f9faca4383
 caps.latest.revision: 20
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Transformation - Filter

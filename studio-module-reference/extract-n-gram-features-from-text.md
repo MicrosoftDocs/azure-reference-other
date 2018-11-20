@@ -12,7 +12,7 @@ ms.topic: "article"
 ms.assetid: a8a662d0-89bb-48c9-8562-9b9589124c4a
 caps.latest.revision: 14
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Extract N-Gram Features from Text

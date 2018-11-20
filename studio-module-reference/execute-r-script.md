@@ -14,7 +14,7 @@ dev_langs:
 ms.assetid: 30806023-392b-42e0-94d6-6b775a6e0fd5
 caps.latest.revision: 39
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Execute R Script

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: a7974d98-616d-4a78-8966-cad384b41886
 caps.latest.revision: 19
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Median Filter

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 11fbc6ba-3a9f-4492-b789-8ef8a9320306
 caps.latest.revision: 19
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Threshold Filter

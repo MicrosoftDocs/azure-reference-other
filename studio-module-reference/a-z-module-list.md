@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: dfdcb393-0285-4a60-a2bd-7c79f80e4d20
 caps.latest.revision: 41
 author: rastala
-ms.author: roastala 
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # A-Z list of Machine Learning Studio modules

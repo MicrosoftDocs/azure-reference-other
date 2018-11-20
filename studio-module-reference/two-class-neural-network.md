@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: ebc29f52-719d-4d0f-b66a-2ce85f527c7d
 caps.latest.revision: 25
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Neural Network

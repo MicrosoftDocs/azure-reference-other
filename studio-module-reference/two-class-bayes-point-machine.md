@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: a1acf84e-a4d0-42ab-99d6-a4f4616b92cf
 caps.latest.revision: 18
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Bayes Point Machine

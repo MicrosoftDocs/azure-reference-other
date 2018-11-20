@@ -14,7 +14,7 @@ dev_langs:
 ms.assetid: 314e34a8-b24c-4870-afe6-2649b6fc7476
 caps.latest.revision: 17
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Create R Model

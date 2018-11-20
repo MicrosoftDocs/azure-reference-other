@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: faa6ba63-383c-4086-ba58-7abf26b85814
 caps.latest.revision: 30
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Convert to CSV

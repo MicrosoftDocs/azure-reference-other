@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 9f3fe1c4-520e-49ac-a152-2e104169912a
 caps.latest.revision: 22
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # SMOTE

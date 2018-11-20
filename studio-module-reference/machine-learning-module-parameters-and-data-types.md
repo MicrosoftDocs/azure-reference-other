@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 16e1806f-cac7-4be2-925e-83500a46cf89
 caps.latest.revision: 4
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 
 ---

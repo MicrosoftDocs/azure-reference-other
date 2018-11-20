@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: b2ebdabd-217d-4915-86cc-5b05972f7270
 caps.latest.revision: 15
 author: rastala
-ms.author: roastala 
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Add Rows

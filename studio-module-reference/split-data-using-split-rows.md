@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 0941c850-4833-44b5-83d1-5625564decf9
 caps.latest.revision: 4
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Split Data using Split Rows

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: a5cf55b2-43ed-4989-a0f4-e74e866279d7
 caps.latest.revision: 14
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Sweep Clustering

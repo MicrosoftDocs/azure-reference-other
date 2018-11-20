@@ -12,7 +12,7 @@ ms.topic: "article"
 ms.assetid: f2460018-5139-434b-881e-3e22de9c7917
 caps.latest.revision: 22
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Import from Azure Cosmos DB

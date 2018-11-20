@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: b0fd7660-eeed-43c5-9487-20d9cc79ed5d
 caps.latest.revision: 29
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Logistic Regression

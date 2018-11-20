@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 70530644-c97a-4ab6-85f7-88bf30a8be5f
 caps.latest.revision: 34
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Split Data

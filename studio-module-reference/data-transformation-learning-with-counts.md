@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: 81c457af-f5c0-4b2d-922c-fdef2274413c
 caps.latest.revision: 17
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Transformation - Learning with Counts

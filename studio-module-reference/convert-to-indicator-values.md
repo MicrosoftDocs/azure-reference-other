@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 6ea59c36-f283-410e-b34c-edfabfac39b0
 caps.latest.revision: 18
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Convert to Indicator Values

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 20a0683a-07f9-4a08-a89b-44b3bbaae382
 caps.latest.revision: 13
 author: rastala
-ms.author: roastala 
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Assign Data to Clusters

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 166586ff-5bba-46a9-b469-20179f179b6c
 caps.latest.revision: 12
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Build Count Table (deprecated)

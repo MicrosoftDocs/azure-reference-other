@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 403eb35a-83b2-4191-a212-7716292c7a5b
 caps.latest.revision: 22
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Pretrained Cascade Image Classification

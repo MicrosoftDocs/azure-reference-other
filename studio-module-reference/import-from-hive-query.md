@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b3779636-b1ea-450d-a58f-d47adf3f548e
 caps.latest.revision: 23
-author: heatherbshapiro
-ms.author: hshapiro
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Import from Hive Query

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: d15ec08c-2af6-4437-be31-70262ec70806
 caps.latest.revision: 18
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Test Hypothesis Using t-Test

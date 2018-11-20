@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: 73a66797-d6e4-48a1-98c1-2d764ec5d2cd
 caps.latest.revision: 19
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Transformation - Sample and Split

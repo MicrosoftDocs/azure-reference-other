@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: dfe32418-04e8-407d-88fc-eadbc78e3148
 caps.latest.revision: 8
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Export Count Table

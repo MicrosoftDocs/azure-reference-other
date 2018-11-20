@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: e3c522f8-53d9-4829-8ea4-5c6a6b75330c
 caps.latest.revision: 24
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Boosted Decision Tree

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 1c22cafc-1da0-4dc5-9336-831ee3f2860b
 caps.latest.revision: 17
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # IIR Filter

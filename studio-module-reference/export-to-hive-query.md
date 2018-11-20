@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 1d64cce7-de98-437f-99cc-a3c30aba5c19
 caps.latest.revision: 12
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Export to Hive Query

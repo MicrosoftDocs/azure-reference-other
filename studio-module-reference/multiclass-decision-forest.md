@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 5e70108d-2e44-45d9-86e8-94f37c68fe86
 caps.latest.revision: 34
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Multiclass Decision Forest

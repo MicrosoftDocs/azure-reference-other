@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: d7ee222c-669f-4200-a576-a761a9c1a928
 caps.latest.revision: 21
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Neural Network Regression

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: eed3ee76-e8aa-46e6-907c-9ca767f5c114
 caps.latest.revision: 17
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Assign to Clusters (deprecated)

@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: d88e45c9-9c3c-4e5c-8bc9-7a80af8113c2
 caps.latest.revision: 9
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Deprecated modules and functionality

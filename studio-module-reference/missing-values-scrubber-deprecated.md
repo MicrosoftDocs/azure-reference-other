@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: ba668ff5-8720-4676-a0a5-ff14f5133da7
 caps.latest.revision: 13
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Missing Values Scrubber (deprecated)

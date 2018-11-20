@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: aa517da1-4978-43ed-960f-f26cf55bfa95
 caps.latest.revision: 6
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Select Columns Transform

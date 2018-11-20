@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 401b4f92-e724-4d5a-be81-d5b0ff9bdb33
 caps.latest.revision: 13
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Score Model

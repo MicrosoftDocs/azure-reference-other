@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 7090088b-8def-4552-a191-1bb73f3184f7
 caps.latest.revision: 21
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Export to Azure Blob Storage

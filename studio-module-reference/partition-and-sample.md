@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: a8726e34-1b3e-4515-b59a-3e4a475654b8
 caps.latest.revision: 21
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Partition and Sample

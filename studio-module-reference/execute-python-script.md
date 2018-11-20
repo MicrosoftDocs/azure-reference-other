@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: cdb56f95-7f4c-404d-bde7-5bb972e6f232
 caps.latest.revision: 12
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Execute Python Script

@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 61dd433a-ee80-4ac3-87f0-b54708644d93
 caps.latest.revision: 21
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Group Data into Bins

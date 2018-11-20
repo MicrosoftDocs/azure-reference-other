@@ -13,7 +13,7 @@ ms.topic: "reference"
 ms.assetid: 0d90dcab-08e1-4a66-9ea1-b571c22ae74d
 caps.latest.revision: 15
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Initialize Model - Classification

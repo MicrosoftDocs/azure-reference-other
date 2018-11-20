@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 00e34943-4996-42e5-8bd4-6fb3e3f0906e
 caps.latest.revision: 18
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Build Counting Transform

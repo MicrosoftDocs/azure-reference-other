@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: bb43c744-f7fa-41d0-ae67-74ae75da3ffd
 caps.latest.revision: 14
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Train Clustering Model

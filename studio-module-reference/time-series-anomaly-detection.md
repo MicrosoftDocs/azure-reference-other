@@ -12,7 +12,7 @@ ms.topic: "article"
 ms.assetid: 96b98cc0-50df-46ff-bc18-c0665d69f3e3
 caps.latest.revision: 10
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Time Series Anomaly Detection

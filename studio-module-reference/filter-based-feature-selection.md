@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 818b356b-045c-412b-aa12-94a1d2dad90f
 caps.latest.revision: 23
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Filter Based Feature Selection

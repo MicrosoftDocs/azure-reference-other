@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: 62839cbe-2ae3-4b64-ada4-ad6eba89444a
 caps.latest.revision: 16
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # One-Class Support Vector Machine

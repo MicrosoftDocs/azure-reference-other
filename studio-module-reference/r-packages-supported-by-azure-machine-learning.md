@@ -12,7 +12,7 @@ ms.topic: "article"
 ms.assetid: 309a7f30-0da4-43b3-8a41-6203dcd78710
 caps.latest.revision: 10
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # R Packages supported by Azure Machine Learning Studio

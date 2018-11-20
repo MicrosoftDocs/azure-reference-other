@@ -12,7 +12,7 @@ ms.topic: "reference"
 ms.assetid: d6acbace-a72d-44b9-9878-869115e02458
 caps.latest.revision: 11
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Train Anomaly Detection Model

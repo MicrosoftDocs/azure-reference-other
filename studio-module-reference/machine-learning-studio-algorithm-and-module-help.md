@@ -15,7 +15,7 @@ applies_to:
 ms.assetid: f5c746fd-dcea-4929-ba50-2a79c4c067d7
 caps.latest.revision: 18
 author: rastala
-ms.author: roastala
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning Studio: algorithm and module help
