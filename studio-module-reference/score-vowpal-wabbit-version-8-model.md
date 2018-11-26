@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 43d255dc-c03d-4dce-acc4-884e660210d9
 caps.latest.revision: 10
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Score Vowpal Wabbit Version 8 Model

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d2c5ca2f-7323-41a3-9b7e-da917c99f0c4
 caps.latest.revision: 25
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Clean Missing Data

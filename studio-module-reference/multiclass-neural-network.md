@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e8b401fb-230a-4b21-bd11-d1fda0d57c1f
 caps.latest.revision: 27
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Multiclass Neural Network

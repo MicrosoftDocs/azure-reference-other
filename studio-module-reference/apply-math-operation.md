@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6bd12c13-d9c3-4522-94d3-4aa44513af57
 caps.latest.revision: 33
-author: rastala
-ms.author: roastala 
+author: ericlicoding
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Apply Math Operation

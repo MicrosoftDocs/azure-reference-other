@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d42f7c08-039b-4f91-809d-aa138fccf254
 caps.latest.revision: 21
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # R Language Modules

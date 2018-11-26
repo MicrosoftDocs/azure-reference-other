@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 2e010ee4-714e-44e9-933e-62d8c41818a9
 caps.latest.revision: 13
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Permutation Feature Importance

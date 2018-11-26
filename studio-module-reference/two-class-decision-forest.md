@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5a7d5466-9928-40c8-a19c-d5de4882c77e
 caps.latest.revision: 30
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Decision Forest

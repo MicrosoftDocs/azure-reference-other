@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 53f113fe-2e9d-45dd-a421-cdd7ada0567b
 caps.latest.revision: 19
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # User-Defined Filter

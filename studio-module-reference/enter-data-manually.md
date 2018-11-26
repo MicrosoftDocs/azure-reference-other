@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 4fbef0ab-2c8e-4a25-b5c4-7be76eac33d6
 caps.latest.revision: 21
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Enter Data Manually

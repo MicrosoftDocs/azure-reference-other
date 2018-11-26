@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e9ad68a7-e91b-4ae6-800e-b5ee7e22cd17
 caps.latest.revision: 13
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Evaluate Recommender

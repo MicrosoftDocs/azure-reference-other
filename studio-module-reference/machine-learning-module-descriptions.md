@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c72a3e1a-29cf-46c1-bf98-bd3d30d62c96
 caps.latest.revision: 17
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning module descriptions

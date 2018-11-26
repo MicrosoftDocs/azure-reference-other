@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 44960281-6126-457a-9411-b0bc9ffd128f
 caps.latest.revision: 25
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Locally Deep Support Vector Machine

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 55544522-9a10-44bd-884f-9a91a9cec2cd
 caps.latest.revision: 25
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Score Matchbox Recommender
