@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 12d8479b-74b4-4e67-b8de-d32867380e20
 caps.latest.revision: 20
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Support Vector Machine

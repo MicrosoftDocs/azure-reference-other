@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5db11bad-a518-4874-b1a8-b7786c18fc0d
 caps.latest.revision: 3
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Split a dataset using a relative expression

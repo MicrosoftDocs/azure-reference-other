@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c08afa36-58ac-4a2b-bc59-f2a16bb4c2f3
 caps.latest.revision: 10
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Extract Key Phrases from Text

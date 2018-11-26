@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5780aca0-de56-4e83-9db0-06e97d03eb4e
 caps.latest.revision: 27
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Multiclass Decision Jungle

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 98eb2eaf-2257-4dfc-876d-9b4d9c2c58df
 caps.latest.revision: 6
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning Module Parameter Types

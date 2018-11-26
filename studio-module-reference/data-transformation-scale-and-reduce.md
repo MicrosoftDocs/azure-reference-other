@@ -12,8 +12,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 345c5ed4-4dd6-4998-9773-6ca0e00e6946
 caps.latest.revision: 16
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Transformation - Scale and Reduce

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8be18eb5-ddd8-4d12-8573-7ae10d5f72fb
 caps.latest.revision: 13
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Principal Component Analysis

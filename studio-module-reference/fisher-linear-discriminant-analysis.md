@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: dcaab0b2-59ca-4bec-bb66-79fd23540080
 caps.latest.revision: 19
-author: rastala
-ms.author: roastala
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Fisher Linear Discriminant Analysis
