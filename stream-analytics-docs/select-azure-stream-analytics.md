@@ -53,7 +53,14 @@ SELECT <select_list>
   
  **input_name | input_alias.\***  
   
- Limits the scope of the * to the specified input name.  
+ Limits the scope of the * to the specified input name.
+
+**column_name.\***
+
+For columns of type Record (complex object) return all nested fields as individual columns.
+
+Columns from * expression with names conflicting with previously projected columns in the same SELECT statement are ignored. Columns on the left side of the SELECT statement take precedence over columns on the right.
+
   
  **column_name**  
   
