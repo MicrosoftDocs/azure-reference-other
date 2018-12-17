@@ -41,12 +41,13 @@ The downstream consumer of the output events need to dedupe the events using log
 
 ### Output supporting exact-once delivery with Azure Stream Analtycis
 #### Cosmos DB
-Using Cosmos DB, Azure Stream Analytics guarantees exactly-once delivery. Since Azure Stream Analytics uses upsert, no action is needed by the user. See more information on [Azure Stream Analytics output to CosmosDB](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-documentdb-output).
+Using Cosmos DB, Azure Stream Analytics guarantees exactly-once delivery. Since Azure Stream Analytics uses upsert, no action is needed by the user. See more information on [Azure Stream Analytics output to CosmosDB](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-documentdb-output).
 
 #### SQL
 When using SQL output, users can achieve exactly-once delivery if the following requirements are met:
 - all output streaming events have a natural key, i.e. are uniquely identifiable either by a field or a combination of fields.
 - the output SQL table has a unique constraint (or primary key) created using the natural key of the output events.
+
 This is sufficient to avoid duplicates because the SQL output honors any constraints placed on the table by skipping any events that cause a unique constraint violation.
 
   
