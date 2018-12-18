@@ -23,7 +23,7 @@ Azure Stream Analytics query language extends SQL syntax to enable complex compu
 *   Duplicate records  
   
 ## Exactly-once processing  
-Exactly-once processing guarantee means that given a set of inputs, the system always returns the same results. This is very important for repeatability, and applies even in case of restart of the job, or aross multiple jobs running in parallel on the same input. Azure Stream Analytics guarantees exactly once processing.  
+Exactly-once processing guarantee means that given a set of inputs, the system always returns the same results. This is very important for repeatability, and applies even in case of restart of the job, or aross multiple jobs running in parallel on the same input. Azure Stream Analytics guarantees exactly once processing in most sitations.  
 
 ## Exactly-once delivery  
 Exactly-once delivery guarantee means all input events are processed and only processed once by the streaming system, so there is no duplicate output. This requires transactional capabilities on the output adaptor to be achieved. 
