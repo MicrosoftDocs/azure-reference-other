@@ -39,7 +39,7 @@ Due to at-least-once delivery guarantee, when a Stream Analytics job is running,
   
 The downstream consumer of the output events need to dedupe the events using logical identity of the events. For example, if you are aggregating events by groups in a tumbling window, the logical identity of the event is the groups and the tumbling window’s end time. If you are running a pass through query, you may need to carry a unique id on the event in order to dedupe.  
 
-### Output supporting exact-once delivery with Azure Stream Analtycis
+### Output supporting exact-once delivery with Azure Stream Analytics
 #### Cosmos DB
 Using Cosmos DB, Azure Stream Analytics guarantees exactly-once delivery. Since Azure Stream Analytics uses upsert, no action is needed by the user. See more information on [Azure Stream Analytics output to CosmosDB](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-documentdb-output).
 
