@@ -59,9 +59,6 @@ TIMESTAMP BY OVER clause has the following limitations of usage:
 2.	If input stream has more than one partition, OVER clause must be used together with PARTITION BY clause. The PartitionId column must be specified as part of TIMESTAMP BY OVER columns.
 
 3.	If TIMESTAMP BY OVER \<over spec> clause is used, column names from the clause must be used as grouping key in GROUP BY statements and in all JOIN predicates when joining between streams.
-      
-4.	At this time, reference data JOIN cannot be used in the queries using TIMESTAMP BY OVER clause.
-
   
 ## Examples  
  **Example 1 – Access a timestamp field from the payload**  
