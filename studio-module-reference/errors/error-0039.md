@@ -5,7 +5,7 @@ ms.custom: ""
 ms.date: 10/12/2016
 ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
+ms.subservice: "studio"
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
