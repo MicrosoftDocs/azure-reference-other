@@ -1,16 +1,11 @@
 ---
 title: "Train Anomaly Detection Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: d6acbace-a72d-44b9-9878-869115e02458
-caps.latest.revision: 11
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

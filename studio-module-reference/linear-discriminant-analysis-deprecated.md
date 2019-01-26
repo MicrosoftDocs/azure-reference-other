@@ -1,16 +1,11 @@
 ---
 title: "Linear Discriminant Analysis (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: f83ba3fb-6680-442c-89b6-db418b53264c
-caps.latest.revision: 8
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

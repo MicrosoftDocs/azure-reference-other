@@ -1,16 +1,11 @@
 ---
 title: "Remove Duplicate Rows | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 02016f47-e4c3-4a06-9ae5-16c747389e34
-caps.latest.revision: 14
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

@@ -1,16 +1,11 @@
 ---
 title: "Machine Learning Module Parameter Types | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 98eb2eaf-2257-4dfc-876d-9b4d9c2c58df
-caps.latest.revision: 6
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

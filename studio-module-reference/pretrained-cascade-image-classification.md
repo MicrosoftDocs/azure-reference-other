@@ -1,16 +1,11 @@
 ---
 title: "Pretrained Cascade Image Classification | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 403eb35a-83b2-4191-a212-7716292c7a5b
-caps.latest.revision: 22
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

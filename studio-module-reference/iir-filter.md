@@ -3,14 +3,10 @@ title: "IIR Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 1c22cafc-1da0-4dc5-9336-831ee3f2860b
-caps.latest.revision: 17
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

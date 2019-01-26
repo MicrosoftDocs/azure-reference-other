@@ -2,16 +2,11 @@
 title: "Machine Learning - Train | Microsoft Docs"
 description: This article describes the modules provided in Azure Machine Learning Studio for training a machine learning model.
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: a85a6491-fe78-4461-ba01-2f798a9e3927
-caps.latest.revision: 27
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

@@ -1,16 +1,11 @@
 ---
 title: "Two-Class Bayes Point Machine | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: a1acf84e-a4d0-42ab-99d6-a4f4616b92cf
-caps.latest.revision: 18
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

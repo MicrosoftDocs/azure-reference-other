@@ -1,16 +1,11 @@
 ---
 title: "Build Count Table (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 12/18/2017
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 166586ff-5bba-46a9-b469-20179f179b6c
-caps.latest.revision: 12
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

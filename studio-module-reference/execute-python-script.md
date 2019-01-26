@@ -1,16 +1,11 @@
 ---
 title: "Execute Python Script | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: cdb56f95-7f4c-404d-bde7-5bb972e6f232
-caps.latest.revision: 12
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

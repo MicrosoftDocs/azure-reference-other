@@ -1,16 +1,11 @@
 ---
 title: "Select Columns in Dataset | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 1ec722fa-b623-4e26-a44e-a50c6d726223
-caps.latest.revision: 22
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

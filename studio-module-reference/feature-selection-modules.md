@@ -2,16 +2,11 @@
 title: "Feature Selection modules | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that you can use for feature selection."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: cc98f178-b2ed-44a0-8b35-8d02b266f20b
-caps.latest.revision: 17
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

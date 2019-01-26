@@ -1,16 +1,11 @@
 ---
 title: "Score Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 401b4f92-e724-4d5a-be81-d5b0ff9bdb33
-caps.latest.revision: 13
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

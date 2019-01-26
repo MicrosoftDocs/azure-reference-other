@@ -1,16 +1,11 @@
 ---
 title: "Export to Azure Blob Storage | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 7090088b-8def-4552-a191-1bb73f3184f7
-caps.latest.revision: 21
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

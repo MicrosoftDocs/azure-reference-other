@@ -1,16 +1,11 @@
 ---
 title: "Assign Data to Clusters | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/10/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 20a0683a-07f9-4a08-a89b-44b3bbaae382
-caps.latest.revision: 13
+
 author: ericlicoding
 ms.author: amlstudiodocs 
 manager: cgronlun

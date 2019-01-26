@@ -1,16 +1,11 @@
 ---
 title: "Error 0071 | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 08/25/2016
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 60822377-da7a-40b8-0071-d185d1509344
-caps.latest.revision: 8
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

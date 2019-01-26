@@ -1,16 +1,11 @@
 ---
 title: "Build Counting Transform | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 12/18/2017
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 00e34943-4996-42e5-8bd4-6fb3e3f0906e
-caps.latest.revision: 18
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

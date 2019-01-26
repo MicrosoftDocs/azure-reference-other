@@ -1,16 +1,11 @@
 ---
 title: "Unpack Zipped Datasets | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 60036051-8954-4cdf-972f-2d9196ce1328
-caps.latest.revision: 15
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

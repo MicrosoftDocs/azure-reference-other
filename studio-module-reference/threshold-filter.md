@@ -3,14 +3,10 @@ title: "Threshold Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 11fbc6ba-3a9f-4492-b789-8ef8a9320306
-caps.latest.revision: 19
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

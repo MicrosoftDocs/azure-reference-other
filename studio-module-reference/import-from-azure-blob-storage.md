@@ -1,16 +1,11 @@
 ---
 title: "Import from Azure Blob Storage | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 35179535-3038-4af1-9675-e65c247aafd1
-caps.latest.revision: 28
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

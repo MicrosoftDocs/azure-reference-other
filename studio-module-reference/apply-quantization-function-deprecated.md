@@ -1,16 +1,11 @@
 ---
 title: "Apply Quantization Function (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 77443f05-e1c3-47fc-9167-963b2703936d
-caps.latest.revision: 9
+
 author: ericlicoding
 ms.author: amlstudiodocs 
 manager: cgronlun
