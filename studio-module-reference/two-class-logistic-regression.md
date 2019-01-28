@@ -3,14 +3,10 @@ title: "Two-Class Logistic Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: b0fd7660-eeed-43c5-9487-20d9cc79ed5d
-caps.latest.revision: 29
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

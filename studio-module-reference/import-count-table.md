@@ -1,16 +1,11 @@
 ---
 title: "Import Count Table | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 12/18/2017
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: db546854-7d3f-40da-9960-8b56ba03ada0
-caps.latest.revision: 9
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

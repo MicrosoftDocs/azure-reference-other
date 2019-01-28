@@ -1,16 +1,11 @@
 ---
 title: "Two-Class Neural Network | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: ebc29f52-719d-4d0f-b66a-2ce85f527c7d
-caps.latest.revision: 25
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

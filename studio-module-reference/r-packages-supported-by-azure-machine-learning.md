@@ -1,16 +1,12 @@
 ---
 title: "R Packages Supported by Azure Machine Learning | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 10/29/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-ms.assetid: 309a7f30-0da4-43b3-8a41-6203dcd78710
-caps.latest.revision: 10
+
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

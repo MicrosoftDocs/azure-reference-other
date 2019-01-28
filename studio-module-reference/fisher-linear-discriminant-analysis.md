@@ -1,16 +1,11 @@
 ---
 title: "Fisher Linear Discriminant Analysis | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: dcaab0b2-59ca-4bec-bb66-79fd23540080
-caps.latest.revision: 19
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

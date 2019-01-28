@@ -2,16 +2,11 @@
 title: "Data Transformation - Manipulation | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that you can use for basic data manipulation."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 92b32033-f75f-4854-ac8f-9110b3fe7e09
-caps.latest.revision: 17
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

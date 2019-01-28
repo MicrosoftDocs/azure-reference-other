@@ -1,16 +1,11 @@
 ---
 title: "Apply SQL Transformation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 90381e80-67c3-4d99-8754-1db785b7ea37
-caps.latest.revision: 20
+
 author: ericlicoding
 ms.author: amlstudiodocs 
 manager: cgronlun

@@ -1,16 +1,11 @@
 ---
 title: "Export to Hive Query | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 1d64cce7-de98-437f-99cc-a3c30aba5c19
-caps.latest.revision: 12
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

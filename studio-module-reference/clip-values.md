@@ -1,16 +1,11 @@
 ---
 title: "Clip Values | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: cdc62e1d-b64f-424c-ac09-bb050918a668
-caps.latest.revision: 15
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

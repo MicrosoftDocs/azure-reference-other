@@ -1,16 +1,11 @@
 ---
 title: "Error 0014 | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 06/14/2017
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 60822377-da7a-40b8-0014-d185d1509344
-caps.latest.revision: 7
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

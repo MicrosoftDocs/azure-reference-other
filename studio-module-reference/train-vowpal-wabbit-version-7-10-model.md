@@ -1,16 +1,11 @@
 ---
 title: "Train Vowpal Wabbit Version 7-10 Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 207a28dc-f934-4ec0-a51f-926446352eb9
-caps.latest.revision: 12
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

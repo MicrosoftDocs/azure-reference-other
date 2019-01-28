@@ -1,16 +1,11 @@
 ---
 title: "Feature Hashing | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: c9a82660-2d9c-411d-8122-4d9e0b3ce92a
-caps.latest.revision: 18
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

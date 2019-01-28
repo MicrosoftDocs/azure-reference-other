@@ -1,16 +1,11 @@
 ---
 title: "Extract Key Phrases from Text | Microsoft Azure Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/09/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: c08afa36-58ac-4a2b-bc59-f2a16bb4c2f3
-caps.latest.revision: 10
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

@@ -3,14 +3,10 @@ title: "Normalize Data | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 986df333-6748-4b85-923d-871df70d6aaf
-caps.latest.revision: 19
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

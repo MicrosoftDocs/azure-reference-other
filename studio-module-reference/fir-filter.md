@@ -1,16 +1,11 @@
 ---
 title: "FIR Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 5bcfd02b-e359-4289-b75c-3aa9f3e4479f
-caps.latest.revision: 20
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

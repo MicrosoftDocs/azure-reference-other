@@ -1,16 +1,11 @@
 ---
 title: "Tune Model Hyperparameters | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 038d91b6-c2f2-42a1-9215-1f2c20ed1b40
-caps.latest.revision: 22
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

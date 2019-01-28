@@ -1,17 +1,13 @@
 ---
 title: "Azure Machine Learning Studio Algorithm and Module Reference | Microsoft Docs"
-ms.custom: ""
 ms.date: 09/21/2017
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 applies_to: 
   - "Azure"
-ms.assetid: f5c746fd-dcea-4929-ba50-2a79c4c067d7
-caps.latest.revision: 18
+
+
 author: j-martens
 ms.author: jmartens
 manager: cgronlun

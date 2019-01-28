@@ -1,16 +1,12 @@
 ---
 title: "Import from On-Premises SQL Server Database | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-ms.assetid: de609cf3-6501-4c04-b719-b9f52c166d65
-caps.latest.revision: 12
+
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

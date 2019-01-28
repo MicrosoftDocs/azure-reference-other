@@ -3,14 +3,10 @@ title: "User-Defined Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 53f113fe-2e9d-45dd-a421-cdd7ada0567b
-caps.latest.revision: 19
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

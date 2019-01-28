@@ -1,16 +1,11 @@
 ---
 title: "Two-Class Decision Forest | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 5a7d5466-9928-40c8-a19c-d5de4882c77e
-caps.latest.revision: 30
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

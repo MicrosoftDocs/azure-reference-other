@@ -1,16 +1,11 @@
 ---
 title: "Summarize Data | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/28/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 2c57074f-674f-45de-ad85-d84e4726f04e
-caps.latest.revision: 15
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

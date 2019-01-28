@@ -1,16 +1,11 @@
 ---
 title: "Export to Azure SQL Database | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: adc130f5-3b07-462d-8f61-17e0457c41eb
-caps.latest.revision: 19
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

@@ -1,16 +1,11 @@
 ---
 title: "Evaluate Recommender | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: e9ad68a7-e91b-4ae6-800e-b5ee7e22cd17
-caps.latest.revision: 13
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

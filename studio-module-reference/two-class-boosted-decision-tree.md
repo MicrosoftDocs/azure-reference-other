@@ -1,16 +1,11 @@
 ---
 title: "Two-Class Boosted Decision Tree | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/10/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: e3c522f8-53d9-4829-8ea4-5c6a6b75330c
-caps.latest.revision: 24
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

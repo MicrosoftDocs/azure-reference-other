@@ -1,16 +1,12 @@
 ---
 title: "Extract N-Gram Features from Text | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 12/12/2017
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-ms.assetid: a8a662d0-89bb-48c9-8562-9b9589124c4a
-caps.latest.revision: 14
+
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

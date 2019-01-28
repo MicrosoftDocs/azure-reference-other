@@ -1,16 +1,11 @@
 ---
 title: "Export Count Table | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 12/18/2017
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: dfe32418-04e8-407d-88fc-eadbc78e3148
-caps.latest.revision: 8
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

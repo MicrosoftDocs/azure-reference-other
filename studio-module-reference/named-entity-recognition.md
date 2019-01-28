@@ -1,16 +1,11 @@
 ---
 title: "Named Entity Recognition | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 50b91b4f-9c98-40d6-9814-2d945c0bb3f1
-caps.latest.revision: 18
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

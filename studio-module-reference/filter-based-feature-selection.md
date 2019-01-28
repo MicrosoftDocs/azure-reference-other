@@ -1,16 +1,11 @@
 ---
 title: "Filter Based Feature Selection | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-ms.assetid: 818b356b-045c-412b-aa12-94a1d2dad90f
-caps.latest.revision: 23
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun
