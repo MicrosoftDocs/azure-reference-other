@@ -50,6 +50,9 @@ When using SQL output, users can achieve exactly-once delivery if the following 
 
 This is sufficient to avoid duplicates because the SQL output honors any constraints placed on the table by skipping any events that cause a unique constraint violation.
 
-  
+#### Azure Table
+
+All entities in an Azure Storage Table are uniquely identified by the concatenation of the `RowKey` and `PartitionKey` fields. Azure Stream Analytics upserts entities, so the value of a table entity will be the latest output event with the corresponding `RowKey`/`PartitionKey` combination. Therefore, to achieve exactly-once delivery, ensure that each output event has a unique `RowKey`/`PartitionKey` combination. If this is done, duplicate events will overwrite earlier versions. (The system-defined `Timestamp` field, which is the last modified time for the entity, will still change in this case.)
+
 ## See Also  
  [Time Management](time-management-azure-stream-analytics.md)  
