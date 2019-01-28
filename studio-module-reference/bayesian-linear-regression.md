@@ -1,16 +1,11 @@
 ---
 title: "Bayesian Linear Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: ee12de50-2b34-4145-aec0-23e0485da308
-caps.latest.revision: 14
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

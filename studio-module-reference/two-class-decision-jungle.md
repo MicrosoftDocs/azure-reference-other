@@ -1,16 +1,11 @@
 ---
 title: "Two-Class Decision Jungle | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 563cdba2-de6c-4082-b8f8-18f56ffa147c
-caps.latest.revision: 26
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

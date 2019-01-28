@@ -1,16 +1,11 @@
 ---
 title: "K-Means Clustering | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 5049a09b-bd90-4c4e-9b46-7c87e3a36810
-caps.latest.revision: 27
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

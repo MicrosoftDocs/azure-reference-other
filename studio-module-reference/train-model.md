@@ -1,16 +1,11 @@
 ---
 title: "Train Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/10/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 5cc7053e-aa30-450d-96c0-dae4be720977
-caps.latest.revision: 15
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

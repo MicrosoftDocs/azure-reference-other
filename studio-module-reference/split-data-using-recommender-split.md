@@ -1,15 +1,10 @@
 ---
 title: "Split Data using Recommender Split | Microsoft Docs"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 37e1926c-09f5-452c-9e8a-cfe05d2500ea
-caps.latest.revision: 4
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

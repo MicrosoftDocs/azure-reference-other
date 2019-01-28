@@ -1,16 +1,11 @@
 ---
 title: "Two-Class Averaged Perceptron | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 5ed44caa-5360-407d-ae6c-7a88c491474a
-caps.latest.revision: 20
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

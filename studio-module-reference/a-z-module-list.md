@@ -1,20 +1,13 @@
 ---
 title: "A-Z list of Machine Learning Studio modules | Microsoft Docs"
-description: "Review an A-Z list of modules that are available in Machine Learning Studio."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
-ms.date: 01/05/2018
-ms.reviewer: ""
+description: "Review an A-Z list of modules that are available in Machine Learning Studio."
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: dfdcb393-0285-4a60-a2bd-7c79f80e4d20
-caps.latest.revision: 41
 author: ericlicoding
 ms.author: amlstudiodocs 
-manager: cgronlun
+ms.date: 01/05/2018
 ---
 # A-Z list of Machine Learning Studio modules
 

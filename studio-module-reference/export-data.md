@@ -1,16 +1,11 @@
 ---
 title: "Export Data | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 7a391181-b6a7-4ad4-b82d-e419c0d6522c
-caps.latest.revision: 39
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

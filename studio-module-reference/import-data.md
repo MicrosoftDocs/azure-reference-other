@@ -1,16 +1,11 @@
 ---
 title: "Import Data | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 4e1b0fe6-aded-4b3f-a36f-39b8862b9004
-caps.latest.revision: 59
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

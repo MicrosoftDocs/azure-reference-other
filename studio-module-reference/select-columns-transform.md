@@ -1,16 +1,11 @@
 ---
 title: "Select Columns Transform | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: aa517da1-4978-43ed-960f-f26cf55bfa95
-caps.latest.revision: 6
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

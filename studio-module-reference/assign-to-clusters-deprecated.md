@@ -1,16 +1,11 @@
 ---
 title: "Assign to Clusters (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: eed3ee76-e8aa-46e6-907c-9ca767f5c114
-caps.latest.revision: 17
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

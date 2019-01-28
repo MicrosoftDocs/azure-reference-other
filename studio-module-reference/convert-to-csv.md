@@ -1,16 +1,11 @@
 ---
 title: "Convert to CSV | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: faa6ba63-383c-4086-ba58-7abf26b85814
-caps.latest.revision: 30
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

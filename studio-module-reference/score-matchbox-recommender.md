@@ -1,16 +1,11 @@
 ---
 title: "Score Matchbox Recommender | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 55544522-9a10-44bd-884f-9a91a9cec2cd
-caps.latest.revision: 25
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

@@ -2,16 +2,11 @@
 title: "Machine Learning Modules | Microsoft Docs"
 description: The modules in this section provide tools for the final phases of machine learning.
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 6d9e2516-1343-4859-a3dc-9673ccec9edc
-caps.latest.revision: 13
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

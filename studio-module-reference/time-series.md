@@ -2,16 +2,12 @@
 title: "Time Series | Microsoft Docs"
 description: This article describes the modules in Azure Machine Learning Studio that are specifically designed for working with time series data.
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "article"
-ms.assetid: 8d6cc347-4258-40c5-b099-57efdcc60cdd
-caps.latest.revision: 8
+
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

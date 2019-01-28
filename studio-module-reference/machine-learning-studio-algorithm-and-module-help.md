@@ -2,18 +2,14 @@
 title: "Machine Learning Studio: Algorithm and Module Help | Microsoft Docs"
 description: Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/10/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
 applies_to: 
   - "Azure"
-ms.assetid: f5c746fd-dcea-4929-ba50-2a79c4c067d7
-caps.latest.revision: 18
+
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

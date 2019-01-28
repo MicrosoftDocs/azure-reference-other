@@ -1,16 +1,11 @@
 ---
 title: "Merge Count Transform | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 85150a29-8e57-4c03-a9e0-e49e5876f9b7
-caps.latest.revision: 9
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

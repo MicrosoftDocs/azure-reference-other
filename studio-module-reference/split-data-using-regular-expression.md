@@ -1,16 +1,11 @@
 ---
 title: "Split Data using Regular Expression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: c8bc8103-02ce-490a-a299-1db1a50b2e12
-caps.latest.revision: 3
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

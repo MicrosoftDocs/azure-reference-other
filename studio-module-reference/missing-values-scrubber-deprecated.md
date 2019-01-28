@@ -1,16 +1,11 @@
 ---
 title: "Missing Values Scrubber (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: ba668ff5-8720-4676-a0a5-ff14f5133da7
-caps.latest.revision: 13
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

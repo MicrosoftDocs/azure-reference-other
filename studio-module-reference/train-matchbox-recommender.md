@@ -1,16 +1,11 @@
 ---
 title: "Train Matchbox Recommender | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: fa4aa69d-2f1c-4ba4-ad5f-90ea3a515b4c
-caps.latest.revision: 22
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

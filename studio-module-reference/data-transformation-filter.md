@@ -2,16 +2,11 @@
 title: "Data Transformation - Filter | Microsoft Docs"
 description: "Learn how to use the filter modules in Azure Machine Learning Studio to transform digital data."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 529b4991-8a7f-4e12-8f36-51f9faca4383
-caps.latest.revision: 20
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

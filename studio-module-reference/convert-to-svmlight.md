@@ -1,16 +1,11 @@
 ---
 title: "Convert to SVMLight | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 8d44b923-97df-4dd5-a6d4-173bb89c7441
-caps.latest.revision: 18
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

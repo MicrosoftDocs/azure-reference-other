@@ -2,16 +2,11 @@
 title: "Machine Learning - Evaluate | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that you can use to evaluate a machine learning model."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: ea496474-d04c-474f-896f-3f4531cd8be0
-caps.latest.revision: 24
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

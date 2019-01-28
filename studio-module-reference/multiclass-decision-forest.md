@@ -1,16 +1,11 @@
 ---
 title: "Multiclass Decision Forest | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 5e70108d-2e44-45d9-86e8-94f37c68fe86
-caps.latest.revision: 34
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

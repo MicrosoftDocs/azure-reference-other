@@ -1,16 +1,11 @@
 ---
 title: "Import from Azure SQL Database | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 1aea52c2-e5fa-4127-b2d4-f5737f6ee002
-caps.latest.revision: 27
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

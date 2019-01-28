@@ -1,16 +1,11 @@
 ---
 title: "Split Data using Split Rows | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 0941c850-4833-44b5-83d1-5625564decf9
-caps.latest.revision: 4
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

@@ -1,18 +1,14 @@
 ---
 title: "Execute R Script - Azure Machine Learning Studio Reference Module | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 10/28/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
 dev_langs: 
   - "R"
-ms.assetid: 30806023-392b-42e0-94d6-6b775a6e0fd5
-caps.latest.revision: 39
+
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

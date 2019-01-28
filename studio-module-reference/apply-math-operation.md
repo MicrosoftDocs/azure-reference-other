@@ -1,16 +1,10 @@
 ---
 title: "Apply Math Operation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 6bd12c13-d9c3-4522-94d3-4aa44513af57
-caps.latest.revision: 33
 author: ericlicoding
 ms.author: amlstudiodocs 
 manager: cgronlun

@@ -1,16 +1,12 @@
 ---
 title: "Import from Azure Cosmos DB | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "article"
-ms.assetid: f2460018-5139-434b-881e-3e22de9c7917
-caps.latest.revision: 22
+
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

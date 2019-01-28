@@ -1,16 +1,11 @@
 ---
 title: "Multiclass Neural Network | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: e8b401fb-230a-4b21-bd11-d1fda0d57c1f
-caps.latest.revision: 27
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

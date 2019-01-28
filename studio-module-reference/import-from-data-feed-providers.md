@@ -1,16 +1,11 @@
 ---
 title: "Import from Data Feed Providers | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 1ca59bb6-dc5b-4a1d-a59a-bbf17e26fdc0
-caps.latest.revision: 21
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

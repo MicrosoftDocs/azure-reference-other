@@ -1,16 +1,11 @@
 ---
 title: "Fast Forest Quantile Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: b9064dc3-2d69-4e06-b307-6cebf324686a
-caps.latest.revision: 20
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

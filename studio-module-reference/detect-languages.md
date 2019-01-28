@@ -1,16 +1,12 @@
 ---
 title: "Detect Languages | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 12/18/2017
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "article"
-ms.assetid: 489238da-6806-48a0-a2f3-12ce2cfe0851
-caps.latest.revision: 16
+
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun

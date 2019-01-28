@@ -2,16 +2,11 @@
 title: "OpenCV Library Modules | Microsoft Docs"
 description: This article describes the modules in Azure Machine Learning Studio that support use of the Open Source Computer Vision Library.
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: a682181b-fa8e-4f5d-a361-766c619df288
-caps.latest.revision: 15
+
 author: ericlicoding
 ms.author: amlstudiodocs
 manager: cgronlun
