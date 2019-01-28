@@ -42,14 +42,16 @@
           items: 
             - name: Analytic Functions Overview
               href: analytic-functions-azure-stream-analytics.md
+            - name: AnomalyDetection
+              href: anomaly-detection-azure-stream-analytics.md
+            - name: COALESCE
+              href: coalesce-azure-stream-analytics.md
             - name: ISFIRST
               href: isfirst-azure-stream-analytics.md
             - name: LAG
               href: lag-azure-stream-analytics.md
             - name: LAST
               href: last-azure-stream-analytics.md
-            - name: AnomalyDetection
-              href: anomaly-detection-azure-stream-analytics.md
         - name: Array Functions
           items: 
             - name: Array Functions Overview
@@ -128,6 +130,8 @@
               href: floor-azure-stream-analytics.md
             - name: POWER
               href: power-azure-stream-analytics.md
+            - name: ROUND
+              href: round-stream-azure-analytics.md
             - name: SIGN
               href: sign-azure-stream-analytics.md
             - name: SQUARE
@@ -158,6 +162,8 @@
               href: patindex-azure-stream-analytics.md
             - name: REGEXMATCH
               href: regexmatch-azure-stream-analytics.md
+            - name: REPLACE
+              href: replace-azure-stream-analytics.md
             - name: SUBSTRING
               href: substring-azure-stream-analytics.md
             - name: UPPER
