@@ -21,7 +21,8 @@ ms.author: mamccrea
   
 ||||  
 |-|-|-|  
-|[ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)|[LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)|[LAST &#40;Azure Stream Analytics&#41;](last-azure-stream-analytics.md)|  
+|[ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)|[LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)|[LAST &#40;Azure Stream Analytics&#41;](last-azure-stream-analytics.md)|
+|[COALESCE &#40;Azure Stream Analytics&#41;](coalesce-azure-stream-analytics.md)|||
   
 Note that analytic functions in Stream Analytics query language, unlike in T-SQL, are evaluated first. In Stream Analytics query language:
 * Analytic functions can be used in any place in the query that a scalar function is allowed. For example, you can use analytic functions in **WHERE** clause, **JOIN** clause, or **GROUP BY** clause.

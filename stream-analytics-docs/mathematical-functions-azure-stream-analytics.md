@@ -23,7 +23,8 @@ ms.author: mamccrea
 |[ABS](abs-azure-stream-analytics.md)|[CEILING](ceiling-azure-stream-analytics.md)|  
 |[EXP](exp-azure-stream-analytics.md)|[FLOOR](floor-azure-stream-analytics.md)|  
 |[POWER](power-azure-stream-analytics.md)|[SIGN](sign-azure-stream-analytics.md)|  
-|[SQUARE](square-azure-stream-analytics.md)|[SQRT](sqrt-azure-stream-analytics.md)|  
+|[SQUARE](square-azure-stream-analytics.md)|[SQRT](sqrt-azure-stream-analytics.md)|
+|[ROUND](round-azure-stream-analytics.md)||
   
 > All mathematical functions are deterministic functions. This means they return the same results each time they are called with a specific set of input values.  
   
