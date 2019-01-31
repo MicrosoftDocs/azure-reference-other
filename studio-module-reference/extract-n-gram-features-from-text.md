@@ -4,7 +4,7 @@ titleSuffix: "Azure Machine Learning Studio"
 ms.date: 12/12/2017
 ms.service: "machine-learning"
 ms.subservice: "studio"
-ms.topic: "article"
+ms.topic: "reference"
 
 
 author: ericlicoding
