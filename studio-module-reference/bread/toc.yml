@@ -9,11 +9,3 @@
     - name: Studio
       tocHref: /azure/machine-learning/studio
       topicHref: /azure/machine-learning/studio/
-      items:
-      - name: Module Reference
-        tocHref: /azure/machine-learning/studio-module-reference
-        topicHref: /azure/machine-learning/studio-module-reference/
-        items:
-        - name: Errors
-          tocHref: /azure/machine-learning/studio-module-reference/errors
-          topicHref: /azure/machine-learning/studio-module-reference/errors/machine-learning-module-error-codes
