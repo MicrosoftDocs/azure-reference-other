@@ -1,5 +1,5 @@
 ---
-title: "Execute R Script - Azure Machine Learning Studio Reference Module | Microsoft Docs"
+title: "Execute R Script | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.date: 10/28/2018
 ms.service: "machine-learning"
