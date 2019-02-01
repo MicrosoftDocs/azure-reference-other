@@ -1,5 +1,5 @@
 ---
-title: "Extract Key Phrases from Text | Microsoft Azure Docs"
+title: "Extract Key Phrases from Text | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.date: 01/09/2018
 ms.service: "machine-learning"
