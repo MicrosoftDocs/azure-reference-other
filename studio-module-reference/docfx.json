@@ -32,7 +32,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/azure/machine-learning/studio-module-reference/bread/toc.json",
-      "extendBreadcrumb": true,
+      "extendBreadcrumb": false,
       "brand": "azure"
     },
     "fileMetadata": {},
