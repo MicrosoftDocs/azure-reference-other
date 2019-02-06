@@ -15,8 +15,8 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "studio-module-reference/index.md",
-			"redirect_url": "/azure/machine-learning/studio-module-reference/machine-learning-studio-algorithm-and-module-help",
+			"source_path": "studio-module-reference/machine-learning-studio-algorithm-and-module-help.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/index",
 			"redirect_document_id": true
 		},
 		{
