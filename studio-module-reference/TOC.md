@@ -309,4 +309,3 @@
 ## [Linear Discriminant Analysis (deprecated)](linear-discriminant-analysis-deprecated.md)
 ## [Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md)
 ## [Quantize (deprecated)](quantize-deprecated.md)
-# [Back to Studio docs](https://docs.microsoft.com/azure/machine-learning/studio/)
