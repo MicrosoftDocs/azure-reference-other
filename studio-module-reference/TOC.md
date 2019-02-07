@@ -1,4 +1,4 @@
-# [Machine Learning Studio Module Reference](machine-learning-studio-algorithm-and-module-help.md)
+# [Machine Learning Studio Module Reference](index.md)
 # [A-Z Module List](a-z-module-list.md)
 # [Module Categories and Descriptions](machine-learning-module-descriptions.md)
 ## [Data Format Conversions](data-format-conversions.md)
@@ -309,4 +309,3 @@
 ## [Linear Discriminant Analysis (deprecated)](linear-discriminant-analysis-deprecated.md)
 ## [Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md)
 ## [Quantize (deprecated)](quantize-deprecated.md)
-# [Back to Studio docs](https://docs.microsoft.com/azure/machine-learning/studio/)

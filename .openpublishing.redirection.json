@@ -15,6 +15,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "studio-module-reference/machine-learning-studio-algorithm-and-module-help.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/index",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "stream-analytics-query-language/complex-data-types-stream-analytics.md",
 			"redirect_url": "http://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json",
 			"redirect_document_id": true
