@@ -65,7 +65,7 @@ In Studio, modules are organized by functionality:
 In this reference section, you'll find technical background on the machine learning algorithms,  implementation details if available, and links to sample experiments that demonstrate how the module is used. You can download examples in the [Azure AI Gallery](https://gallery.azure.ai/) to your workspace. These examples are for public use.  
 
  > [!TIP]
- > If you are signed in to Machine Learning Studio and have created an experiment, you can get information about a specific module by selecting the module. Then select the **more help** link in the **Quick Help** pane.  
+ > If you are signed in to Machine Learning Studio and have created an experiment, you can get information about a specific module. Select the module, then select the **more help** link in the **Quick Help** pane.
 
 ## Other technical references
 
@@ -77,4 +77,4 @@ In this reference section, you'll find technical background on the machine learn
 
 ## See also  
 
-[Azure Machine Learning Documentation Center](https://docs.microsoft.com/azure/machine-learning/studio/)
+[Azure Machine Learning Studio documentation](https://docs.microsoft.com/azure/machine-learning/studio/)
