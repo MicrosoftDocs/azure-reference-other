@@ -15,7 +15,7 @@ manager: cgronlun
 ---
 # Azure Machine Learning Studio: algorithm and module help
 
-Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC.
+Azure Machine Learning Studio is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC.
 
 + Sign in to your [Machine Learning Studio workspace](https://studio.azureml.net/Home) and get started.
   
