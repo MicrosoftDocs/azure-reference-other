@@ -3,16 +3,12 @@ title: "Multiclass Logistic Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 1d195fe5-98cd-4e1a-a1c8-076aaa3e02c3
-caps.latest.revision: 28
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Multiclass Logistic Regression

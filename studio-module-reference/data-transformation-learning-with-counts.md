@@ -4,16 +4,12 @@ description: "Learn about the Azure Machine Learning Studio modules that support
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 81c457af-f5c0-4b2d-922c-fdef2274413c
-caps.latest.revision: 17
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Transformation - Learning with Counts

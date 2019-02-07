@@ -1,18 +1,13 @@
 ---
 title: "Error 0102 | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 09/16/2016
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 60822377-da7a-40b8-0102-d185d1509344
-caps.latest.revision: 7
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Error 0102  

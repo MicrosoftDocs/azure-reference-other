@@ -1,18 +1,13 @@
 ---
 title: "Multiclass Decision Jungle | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 5780aca0-de56-4e83-9db0-06e97d03eb4e
-caps.latest.revision: 27
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Multiclass Decision Jungle

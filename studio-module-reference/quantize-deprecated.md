@@ -1,18 +1,13 @@
 ---
 title: "Quantize (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 08550dd9-c5d3-4538-8188-96a9024ed92d
-caps.latest.revision: 10
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Quantize (deprecated)

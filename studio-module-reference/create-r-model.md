@@ -1,20 +1,16 @@
 ---
 title: "Create R Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/31/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
 dev_langs: 
   - "R"
-ms.assetid: 314e34a8-b24c-4870-afe6-2649b6fc7476
-caps.latest.revision: 17
-author: rastala
-ms.author: roastala
+
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Create R Model

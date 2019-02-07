@@ -1,18 +1,13 @@
 ---
 title: "Score Vowpal Wabbit Version 7-4 Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 6a8e06c3-851b-49c0-b350-a6af93755f31
-caps.latest.revision: 23
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Score Vowpal Wabbit Version 7-4 Model

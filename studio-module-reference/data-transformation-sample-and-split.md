@@ -2,18 +2,13 @@
 title: "Data Transformation - Sample and Split | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules you can use to partition or sample data."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 73a66797-d6e4-48a1-98c1-2d764ec5d2cd
-caps.latest.revision: 19
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Transformation - Sample and Split

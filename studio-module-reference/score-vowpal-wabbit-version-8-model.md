@@ -1,18 +1,14 @@
 ---
 title: "Score Vowpal Wabbit Version 8 Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 43d255dc-c03d-4dce-acc4-884e660210d9
-caps.latest.revision: 10
-author: rastala
-ms.author: roastala
+ms.subservice: "studio"
+ms.topic: "reference"
+
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Score Vowpal Wabbit Version 8 Model
@@ -92,7 +88,7 @@ For examples of how Vowpal Wabbit can be used in machine learning, see the [Azur
 
 The following video provides a walkthrough of the training and scoring process for Vowpal Wabbit:  
   
- [https://azure.microsoft.com/en-us/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/](https://azure.microsoft.com/en-us/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
+ [https://azure.microsoft.com/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/](https://azure.microsoft.com/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
   
 ##  <a name="bkmk_TechnicalNotes"></a> Technical notes
 

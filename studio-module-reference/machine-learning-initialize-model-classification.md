@@ -2,18 +2,13 @@
 title: "Machine Learning - Initialize Model - Classification | Microsoft Docs"
 description: "Learn about the modules you can use in Azure Machine Learning Studio to create binary or multiclass classification models."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 0d90dcab-08e1-4a66-9ea1-b571c22ae74d
-caps.latest.revision: 15
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Initialize Model - Classification

@@ -1,18 +1,13 @@
 ---
 title: "Unpack Zipped Datasets | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 60036051-8954-4cdf-972f-2d9196ce1328
-caps.latest.revision: 15
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Unpack Zipped Datasets
@@ -22,7 +17,7 @@ manager: cgronlun
   
 ## Module overview
 
-This article describes how to use the the **Unpack Zipped Datasets** module in Azure Machine Learning Studio, to upload data and script files in compressed format, and then unzip them for use in an experiment.
+This article describes how to use the **Unpack Zipped Datasets** module in Azure Machine Learning Studio, to upload data and script files in compressed format, and then unzip them for use in an experiment.
 
 The purpose of this module is to reduce data transfer times when working with very large datasets by saving and uploading your data files in a compressed format. Generally, zipping files is a good option when your dataset is so large that you want to use compression for the upload, to minimize upload time and associated costs.
 

@@ -1,18 +1,13 @@
 ---
 title: "Fisher Linear Discriminant Analysis | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: dcaab0b2-59ca-4bec-bb66-79fd23540080
-caps.latest.revision: 19
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Fisher Linear Discriminant Analysis
@@ -23,7 +18,7 @@ Category: [Feature Selection Modules](feature-selection-modules.md)
 
 ## Module overview
 
-This article describes how to use the  the **Fisher Linear Discriminant Analysis** module in Azure Machine Learning Studio, to create a new feature dataset that captures the combination of features that best separates two or more classes.
+This article describes how to use the **Fisher Linear Discriminant Analysis** module in Azure Machine Learning Studio, to create a new feature dataset that captures the combination of features that best separates two or more classes.
 
 This method is often used for dimensionality reduction, because it projects a set of features onto a smaller feature space while preserving the information that discriminates between classes. This not only reduces computational costs for a given classification task, but can help prevent overfitting.
 

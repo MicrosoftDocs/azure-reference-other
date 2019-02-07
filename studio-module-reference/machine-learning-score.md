@@ -1,18 +1,13 @@
 ---
 title: "Machine Learning - Score | Microsoft Docs"
 description: This section lists the modules provided in Azure Machine Learning Studio for scoring.
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: be8a69b7-d1e3-4fa2-a174-7abe0bcce4e9
-caps.latest.revision: 23
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Score

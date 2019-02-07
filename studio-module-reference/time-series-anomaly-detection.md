@@ -1,18 +1,14 @@
 ---
 title: "Time Series Anomaly Detection | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/17/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 96b98cc0-50df-46ff-bc18-c0665d69f3e3
-caps.latest.revision: 10
-author: rastala
-ms.author: roastala
+ms.subservice: "studio"
+ms.topic: "reference"
+
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Time Series Anomaly Detection

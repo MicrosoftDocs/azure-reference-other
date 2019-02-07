@@ -1,6 +1,6 @@
 # HTTPAPI_CloneOption()
 
-Clones the option named optionName bearing the value value into the pointer savedValue.
+Clones the option named optionName bearing the value into the pointer savedValue.
 
 ## Syntax
 

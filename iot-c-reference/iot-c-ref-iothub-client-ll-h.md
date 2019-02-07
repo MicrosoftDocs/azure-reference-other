@@ -39,7 +39,7 @@ Function Name                  | Description
 [IoTHubClient_LL_SetDeviceMethodCallback](./iot-c-ref-iothub-client-ll-h/iothubclient-ll-setdevicemethodcallback.md)            | This API sets callback for cloud to device method call.
 [IoTHubClient_LL_SetDeviceMethodCallback_Ex](./iot-c-ref-iothub-client-ll-h/iothubclient-ll-setdevicemethodcallback-ex.md)            | This API sets callback for async cloud to device method call.
 [IoTHubClient_LL_DeviceMethodResponse](./iot-c-ref-iothub-client-ll-h/iothubclient-ll-devicemethodresponse.md)            | This API responses to a asnyc method callback identified the methodId.
-[IoTHubClient_LL_UploadToBlob](./iot-c-ref-iothub-client-ll-h/iothubclient-ll-uploadtoblob.md)            | This API uploads to Azure Storage the content pointed to by source having the size size under the blob name devicename/.
+[IoTHubClient_LL_UploadToBlob](./iot-c-ref-iothub-client-ll-h/iothubclient-ll-uploadtoblob.md)            | This API uploads to Azure Storage the content pointed to by source having the size under the blob name devicename/.
 [IoTHubClient_LL_UploadMultipleBlocksToBlob](./iot-c-ref-iothub-client-ll-h/iothubclient-ll-uploadmultipleblockstoblob.md)            | This API uploads to Azure Storage the content provided block by block by getDataCallback under the blob name devicename/.
 [IoTHubClient_LL_UploadMultipleBlocksToBlobEx](./iot-c-ref-iothub-client-ll-h/iothubclient-ll-uploadmultipleblockstoblobex.md)            | This API uploads to Azure Storage the content provided block by block by getDataCallback under the blob name devicename/.
 

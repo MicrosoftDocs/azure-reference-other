@@ -1,18 +1,12 @@
 ---
 title: "Apply Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 278e11ec-cb16-49d4-a13c-54b2c9f5ce88
-caps.latest.revision: 18
-author: rastala
-ms.author: roastala 
+author: ericlicoding
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Apply Filter

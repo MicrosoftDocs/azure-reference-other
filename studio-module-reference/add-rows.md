@@ -1,18 +1,12 @@
 ---
 title: "Add Rows | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: b2ebdabd-217d-4915-86cc-5b05972f7270
-caps.latest.revision: 15
-author: rastala
-ms.author: roastala 
+author: ericlicoding
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Add Rows

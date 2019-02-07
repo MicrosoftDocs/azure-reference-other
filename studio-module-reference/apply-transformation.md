@@ -1,18 +1,13 @@
 ---
 title: "Apply Transformation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 805e592d-0f1f-48eb-97c9-688ed0c1dc70
-caps.latest.revision: 16
-author: rastala
-ms.author: roastala 
+
+author: ericlicoding
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Apply Transformation

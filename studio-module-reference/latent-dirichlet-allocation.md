@@ -1,18 +1,14 @@
 ---
 title: "Latent Dirichlet Allocation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: e35a5905-bd57-41f4-9576-82bfcb92f837
-caps.latest.revision: 16
-author: rastala
-ms.author: roastala
+ms.subservice: "studio"
+ms.topic: "reference"
+
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Latent Dirichlet Allocation

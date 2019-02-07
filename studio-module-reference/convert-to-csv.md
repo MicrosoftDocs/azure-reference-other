@@ -1,18 +1,13 @@
 ---
 title: "Convert to CSV | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: faa6ba63-383c-4086-ba58-7abf26b85814
-caps.latest.revision: 30
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Convert to CSV
@@ -68,7 +63,7 @@ Double-click the output of [Convert to CSV](convert-to-csv.md), and select one o
 
 To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Accessing Azure ML datasets using R](https://gallery.cortanaintelligence.com/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5): Demonstates how you can convert datasets to CSV format for use with external applications. 
+- [Accessing Azure ML datasets using R](https://gallery.cortanaintelligence.com/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5): Demonstrates how you can convert datasets to CSV format for use with external applications. 
   
 ## Technical notes  
 
@@ -76,7 +71,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Requirements of the CSV format
 
-The CSV file format is is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
+The CSV file format is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
  
 A CSV file stores tabular data (numbers and text) in plain text form. A CSV file consists of any number of records, separated by line breaks of some kind. Each record consists of fields, separated by a literal comma. In some regions, the separator might be a semi-colon. 
 
@@ -138,7 +133,7 @@ For importing, don't use the **Export to CSV** module. Instead, use the [Import 
 
 For general information about importing from CSV, see these resources:
 
-+ [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-import-data)
++ [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
 + [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
 
 ##  Expected inputs

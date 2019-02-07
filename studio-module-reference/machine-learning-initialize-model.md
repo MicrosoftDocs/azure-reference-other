@@ -2,18 +2,13 @@
 title: "Machine Learning - Initialize Model | Microsoft Docs"
 description: "Learn about the modules you can use in Azure Machine Learning Studio to define a machine learning model and set its parameters."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/22/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 0c67013c-bfbc-428b-87f3-f552d8dd41f6
-caps.latest.revision: 10
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Initialize Model

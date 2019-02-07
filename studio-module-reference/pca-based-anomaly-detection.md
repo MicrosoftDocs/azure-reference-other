@@ -1,18 +1,13 @@
 ---
 title: "PCA-Based Anomaly Detection | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: c3822fa5-1095-4c72-bd1e-fd43d285153a
-caps.latest.revision: 20
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # PCA-Based Anomaly Detection

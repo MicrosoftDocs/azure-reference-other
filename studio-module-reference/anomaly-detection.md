@@ -1,19 +1,13 @@
 ---
 title: "Anomaly Detection | Microsoft Docs"
-description: "Learn about the modules you can use for anomaly detection in Azure Machine Learning."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
+description: "Learn about the modules you can use for anomaly detection in Azure Machine Learning."
 ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: ae17795c-6437-47b5-9853-646d77d461b0
-caps.latest.revision: 18
-author: rastala
-ms.author: roastala 
+author: ericlicoding
+ms.author: amlstudiodocs 
 manager: cgronlun
 ---
 # Anomaly Detection

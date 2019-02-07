@@ -2,18 +2,13 @@
 title: "Data Transformation - Scale and Reduce | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that can help you work with numerical data."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 345c5ed4-4dd6-4998-9773-6ca0e00e6946
-caps.latest.revision: 16
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Transformation - Scale and Reduce

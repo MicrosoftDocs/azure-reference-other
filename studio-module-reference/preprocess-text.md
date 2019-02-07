@@ -1,18 +1,14 @@
 ---
 title: "Preprocess Text | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: bf9e794a-9e2b-4662-902a-0e73b255c135
-caps.latest.revision: 18
-author: rastala
-ms.author: roastala
+ms.subservice: "studio"
+ms.topic: "reference"
+
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Preprocess Text

@@ -1,18 +1,13 @@
 ---
 title: "One-Class Support Vector Machine | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 62839cbe-2ae3-4b64-ada4-ad6eba89444a
-caps.latest.revision: 16
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # One-Class Support Vector Machine
@@ -29,7 +24,7 @@ This module is particularly useful in scenarios where you have a lot of "normal"
 
 You use the **One-Class Support Vector Model** module to create the model, and then train the model using the [Train Anomaly Detection Model](train-anomaly-detection-model.md). The dataset that you use for training can contain all or mostly normal cases.
 
-You can then apply different metrics to identify potential anomalies. For example, you might use a large dataset of good transactions to identify cases that that possibly represent fraudulent transactions.
+You can then apply different metrics to identify potential anomalies. For example, you might use a large dataset of good transactions to identify cases that possibly represent fraudulent transactions.
 
 ### More about one-class SVM
 

@@ -1,18 +1,13 @@
 ---
 title: "Missing Values Scrubber (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/24/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: ba668ff5-8720-4676-a0a5-ff14f5133da7
-caps.latest.revision: 13
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Missing Values Scrubber (deprecated)
@@ -57,7 +52,7 @@ There are multiple ways to handle missing values. However, whichever method you 
     
       This method initializes the missing entries with a default value. Then it updates each column by using an appropriate regression or classification algorithm. These updates are repeated a number of times, as specified by the Number of Iterations parameter.
 
-    - **Replace with value**: For every column with a data type of Integer, Double, Boolean, or Date, replaces the missing value with a value you specify. In date columns, you can provide a specific date in one of the supported formats, or you you can enter the number of 100-nanosecond ticks since 1/1/0001 12:00 AM.
+    - **Replace with value**: For every column with a data type of Integer, Double, Boolean, or Date, replaces the missing value with a value you specify. In date columns, you can provide a specific date in one of the supported formats, or you can enter the number of 100-nanosecond ticks since 1/1/0001 12:00 AM.
 
     - **Replace with mean**:  For every column with a data type of Integer, Double, or Boolean, the mean of the column replaces the missing value.
 

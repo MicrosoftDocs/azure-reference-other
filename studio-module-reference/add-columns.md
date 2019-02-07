@@ -1,19 +1,12 @@
 ---
 title: "Add Columns | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
-ms.date: 01/11/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 5714a225-befd-438a-9bb5-f6fdc50a4efb
-caps.latest.revision: 19
-author: rastala
-ms.author: roastala 
-manager: cgronlun
+author: ericlicoding
+ms.author: amlstudiodocs 
+ms.date: 01/11/2018
 ---
 # Add Columns
 

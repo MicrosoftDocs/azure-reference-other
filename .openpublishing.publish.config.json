@@ -1,9 +1,9 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "iot-c-reference",
-      "build_source_folder": "iot-c-reference",
-      "build_output_subfolder": "iot-c-reference",
+      "docset_name": "stream-analytics-docs",
+      "build_source_folder": "stream-analytics-docs",
+      "build_output_subfolder": "stream-analytics-docs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -17,9 +17,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "stream-analytics-query-language",
-      "build_source_folder": "stream-analytics-query-language",
-      "build_output_subfolder": "stream-analytics-query-language",
+      "docset_name": "stream-analytics-msdn-redirects",
+      "build_source_folder": "stream-analytics-msdn-redirects",
+      "build_output_subfolder": "stream-analytics-msdn-redirects",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -29,8 +29,7 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "op",
-      "template_folder": "_themes"
+      "build_entry_point": "op"
     },
     {
       "docset_name": "studio-module-reference",

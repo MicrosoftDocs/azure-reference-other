@@ -1,25 +1,21 @@
 ---
 title: "Execute R Script | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
-ms.date: 01/24/2018
-ms.reviewer: ""
+ms.date: 10/28/2018
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
 dev_langs: 
   - "R"
-ms.assetid: 30806023-392b-42e0-94d6-6b775a6e0fd5
-caps.latest.revision: 39
-author: rastala
-ms.author: roastala
+
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Execute R Script
 
-*Executes an R script from an Azure Machine Learning experiment*
+*Executes an R script from an Azure Machine Learning Studio experiment*
 
 Category: [R Language Modules](r-language-modules.md)
 
@@ -27,24 +23,21 @@ Category: [R Language Modules](r-language-modules.md)
 
 This article describes how to use the **Execute R Script** module in Azure Machine Learning Studio, to call and run R code in your experiments.
 
-By adding R code to this module, you can perform a variety of customized tasks that are not available in Studio. For example:  
-
+By adding R code to this module, you can perform a variety of customized tasks that are not available in Studio. For example: 
 - Create custom data transformations
 - Use your own metrics for evaluating predictions
 - Build models using algorithms that are not implemented as standalone modules in Studio
 
 ### R versions supported in Studio
 
-Azure Machine Learning supports both the typical distribution of R that is available from CRAN, and Microsoft R Open (MRO), which includes all the base R packages, plus the [Revo packages](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/introducing-r-server-r-package-reference).
+Studio supports both the typical distribution of R that is available from CRAN, and Microsoft R Open (MRO), which includes all the base R packages, plus the [Revo packages](https://docs.microsoft.com/machine-learning-server/r-reference/introducing-r-server-r-package-reference).
 
 You can specify which version of R to use in an experiment. However, you cannot install any other version of R into your workspace.
 
 We recommend that you determine which packages you need before choosing a distribution of R. Some packages are not compatible with both CRAN R and Microsoft R Open.
 
-This topic lists the packages that are supported in Azure Machine Learning, and their compatibility with CRAN R and Microsoft R Open, see [R Packages Supported by Azure Machine Learning](r-packages-supported-by-azure-machine-learning.md).
-
 > [!NOTE]
-> Currently, the [Create R Model](create-r-model.md) module is limited to use of CRAN R 3.1.0.  Therefore, if you use a custom R model in your experiment, any **Execute R Script** modules in the same experiment must also use CRAN R 3.1.0.  
+> Currently, the [Create R Model](create-r-model.md) module is limited to specific version of R.  Therefore, if you use a custom R model in your experiment, any **Execute R Script** modules in the same experiment must also use the same R version. Find the supported R version in the following article, [R Packages Supported by Azure Machine Learning Studio](r-packages-supported-by-azure-machine-learning.md).  
 
 ### Supported R packages
 
@@ -57,9 +50,7 @@ data.set <- data.frame(installed.packages())
 maml.mapOutputPort("data.set")
 ```
 
-The following topic lists the packages as of April 2017, and the supported versions.
-
-+ [R Packages in Azure Machine Learning](r-packages-supported-by-azure-machine-learning.md)
+This topic lists the packages that are supported in Azure Machine Learning, and their compatibility with CRAN R and Microsoft R Open, see [R Packages Supported by Azure Machine Learning Studio](r-packages-supported-by-azure-machine-learning.md).
 
 ### Installing new R packages
 

@@ -2,18 +2,13 @@
 title: "Data Transformation | Microsoft Docs"
 description: "Learn about the modules in Azure Machine Learning Studio that you can use for data transformation."
 titleSuffix: "Azure Machine Learning Studio"
-ms.custom: ""
 ms.date: 01/16/2018
-ms.reviewer: ""
 ms.service: "machine-learning"
-ms.component: "studio"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.subservice: "studio"
 ms.topic: "reference"
-ms.assetid: 9c2844b8-7a4c-483b-848a-e35a27855716
-caps.latest.revision: 14
-author: rastala
-ms.author: roastala
+
+author: ericlicoding
+ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Transformation
