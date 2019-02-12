@@ -15,9 +15,7 @@ ms.author: mamccrea
 
 # AnomalyDetection_ChangePoint (Azure Stream Analytics) (Preview)
 
-Persistent anomalies in a time series event stream are changes in the distribution of values in the event stream, such as level changes and trends. In Stream Analytics, anomalies are detected using the Machine Learning based **AnomalyDetection_ChangePoint** operator. The underlying Machine Learning model uses the Exchangeability Martingales algorithm.
-
-These changes are persistent and last much longer than spikes and dips, possibly indicating a catastrophic event.
+Detects persistent anomalies in a time series event stream. The underlying machine learning model uses the Exchangeability Martingales algorithm.
 
 ## Syntax
 
@@ -42,24 +40,21 @@ The wildcard expression * is not allowed. Also, *scalar_expression* cannot conta
 
 **confidence**
 
-A percentage number from 1.00 to 100 (inclusive) that sets the sensitivity of the Machine Learning model. The lower the confidence, the higher the number of anomalies detected, and vice versa. You are advised to start from an arbitrary number between 70 and 90 and adjust this based on the results observed in development or testing.
+A percentage number from 1.00 to 100 (inclusive) that sets the sensitivity of the machine learning model. The lower the confidence, the higher the number of anomalies detected, and vice versa. Start from an arbitrary number between 70 and 90 and adjust this based on the results observed in development or testing.
 
 **historySize**
 
-The number of events in a sliding window that the model continuously learns from and uses for scoring the next event for anomalousness. Typically, this should represent the period of time of normal behavior to enable the model to flag a subsequent anomaly. 
-Operationally, users are advised to start with an educated guess using historical logs, and adjust it based on the results observed in dev/test.
+The number of events in a sliding window that the model continuously learns from and uses for scoring the next event for anomalousness. Typically, this should represent the period of time of normal behavior to enable the model to flag a subsequent anomaly. Start with an educated guess using historical logs, and adjust based on the results observed in development or test.
 
 **OVER ([ partition_by_clause ] limit_duration_clause [when_clause])**
 
 **partition_by_clause**
 
-Users may want to partition a model's training based on a particular column in the events. For example, if several sensors with different sensor IDs are feeding into the same Stream Analytics job, partitioning by sensor ID trains a different Machine Learning model for each sensor as every sensor’s behavior patterns may be slightly different. 
+Used to partition a model's training based on a particular column in the events. The model applies the same function parameter settings across all the partitions.
 
-The model applies the same function parameter settings across all the partitions.
+**limit_duration_clause** DURATION(unit, length)
 
-**limit_duration_clause** DURATION(<unit>, <length>)
-
-This is the size of the sliding window within Stream Analytics in terms of time. We recommend setting the size of this time window to be equal to the time it takes to generate *historySize* number of events in steady state. The maximum supported value is 7 days (as with all other Stream Analytics windows and durations). For persistent anomalies, it is recommended to set the window size longer than anomaly duration based on historical observations to avoid false positives. 
+The size of the sliding window within Stream Analytics in terms of time. The recommended size of this time window is the equivalent of the time it takes to generate *historySize* number of events in steady state.
 
 **when_clause**
 
@@ -79,7 +74,7 @@ The computed Martingale score (float) indicating how anomalous an event is. This
 
 ## Examples
 
-The following example assumes an event every 5 minutes and example 2 assumes an event every second. Confidence level is set at 75 for both models. 
+In the following query sample, the first query assumes an event every 5 minutes, and the second query assumes an event every second. The confidence level is set at 75 for both models.
 
 ```SQL
 AnomalyDetection_ChangePoint(reading, 75, 72)
@@ -89,7 +84,7 @@ AnomalyDetection_ChangePoint(temperature, 75, 120)
 	OVER ([PARTITION BY sensorId] LIMIT DURATION(second, 120))
 ```
 
-Basic example, assuming a uniform input rate of 1 event per second in a 20 minute sliding window with a history size of 1200 events. The final SELECT statement extracts and outputs the score and anomaly status with a confidence level of 80%.
+Example assuming a uniform input rate of 1 event per second in a 20 minute sliding window with a history size of 1200 events. The final SELECT statement extracts and outputs the score and anomaly status with a confidence level of 80%.
 
 ```SQL
 WITH AnomalyDetectionStep AS
