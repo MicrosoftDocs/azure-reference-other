@@ -42,8 +42,10 @@
           items: 
             - name: Analytic Functions Overview
               href: analytic-functions-azure-stream-analytics.md
-            - name: AnomalyDetection
-              href: anomaly-detection-azure-stream-analytics.md
+            - name: AnomalyDetection_SpikeAndDip
+              href: anomalydetection-spikeanddip-azure-stream-analytics.md
+            - name: AnomalyDetection_ChangePoint
+              href: anomalydetection-changepoint-azure-stream-analytics.md
             - name: COALESCE
               href: coalesce-azure-stream-analytics.md
             - name: ISFIRST
