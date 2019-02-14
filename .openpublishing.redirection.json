@@ -25,7 +25,7 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "stream-analytics-query/anomaly-detection-azure-stream-analytics.md",
+			"source_path": "stream-analytics-docs/anomaly-detection-azure-stream-analytics.md",
 			"redirect_url": "/stream-analytics-query/anomalydetection-spikeanddip-azure-stream-analytics",
 			"redirect_document_id": true
 		},
