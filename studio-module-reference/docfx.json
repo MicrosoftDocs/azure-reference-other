@@ -32,7 +32,9 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/azure/machine-learning/studio-module-reference/bread/toc.json",
-      "brand": "azure"
+      "brand": "azure",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/azure-reference-other"
     },
     "fileMetadata": {},
     "template": [],
