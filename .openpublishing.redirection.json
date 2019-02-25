@@ -1,5 +1,12 @@
 {
-	"redirections": [{
+	"redirections": [
+		{
+			"source_path": "studio-module-reference/machine-learning-module-error-codes.md",
+			"redirect_url": "errors/stream-analytics-query-language-reference",
+			"redirect_document_id": true
+		},
+		
+		{
 			"source_path": "stream-analytics-query-language/index.md",
 			"redirect_url": "stream-analytics-query-language-reference",
 			"redirect_document_id": true
