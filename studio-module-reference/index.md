@@ -73,7 +73,7 @@ In this reference section, you'll find technical background on the machine learn
 |-------------|-----------------|  
 |[Data Types List](machine-learning-module-data-types.md#types)|This section contains reference topics describing the learner interfaces, and  the `DataTable` format used for datasets.|  
 |[Module Parameter Types](machine-learning-module-parameter-types.md)|This section contains reference topics describing the parameter API.|  
-|[Exceptions List](machine-learning-module-error-codes.md#errors)|This section lists the errors that modules can generate, with causes and possible workarounds.<br /><br /> For the list of error codes related to the web service API, see [Machine Learning REST API error codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).|  
+|[Exceptions List](machine-learning-module-error-codes.md)|This section lists the errors that modules can generate, with causes and possible workarounds.<br /><br /> For the list of error codes related to the web service API, see [Machine Learning REST API error codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).|  
 
 ## See also  
 

@@ -48,4 +48,4 @@ In addition, Machine Learning Studio supports the following custom data classes.
 
 ## See also
 
- [Machine Learning Studio](machine-learning-studio-algorithm-and-module-help.md)
+ [Machine Learning Studio](/azure/machine-learning/studio-module-reference/index)
