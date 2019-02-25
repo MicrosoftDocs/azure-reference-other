@@ -1,7 +1,7 @@
 ---
 title: "Machine learning module error codes | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 08/15/2016
+ms.date: 01/22/2018
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
