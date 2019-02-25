@@ -19,7 +19,7 @@ This article describes the modules in Azure Machine Learning Studio that support
 + Compute means, logarithms, and other statistics commonly used in machine learning.
 + Calculate correlation and probability scores.
 + Compute z-scores.
-+ Compute widely used statistical distributions, such as such as Weibull, gamma, and beta.
++ Compute widely used statistical distributions, such as Weibull, gamma, and beta.
 + Generate statistical reports over a set of columns or a dataset.
 
 For example, if you have a new dataset, you might use the [Summarize Data](summarize-data.md) module first. It generates a report for an entire dataset that includes standard statistical measures, such as mean and standard deviation. 
