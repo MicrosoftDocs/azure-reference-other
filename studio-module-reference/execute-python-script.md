@@ -137,11 +137,11 @@ Some common problems that you can look for:
 
 ## Examples
 
-For examples of integrating Python script with Studio experiments, see these resources in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of integrating Python script with Studio experiments, see these resources in the [Azure AI Gallery](https://gallery.azure.ai/):
 
 + [Execute Python Script](http://go.microsoft.com/fwlink/p/?LinkId=525942): Use text tokenization, stemming, and other natural language processing using the **Execute Python Script** module.
-+ [Custom R and Python scripts in Azure ML](https://gallery.cortanaintelligence.com/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
-+ [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.cortanaintelligence.com/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): Estimate the point when demand for Python 3 outstrips that for Python 2.7 using python.
++ [Custom R and Python scripts in Azure ML](https://gallery.azure.ai/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
++ [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.azure.ai/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): Estimate the point when demand for Python 3 outstrips that for Python 2.7 using python.
 
 ## See also
 
