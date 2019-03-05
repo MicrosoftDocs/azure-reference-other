@@ -53,6 +53,8 @@ The **Execute Python Script** module contains sample Python code that you can us
 
     Datasets stored in Studio are automatically converted to **pandas** data.frames when loaded with this module.
 
+    ![Execute Python input map](./media/aml-execute-python-input-map.png)
+
 4. To include new Python packages or code, add the zipped file containing these custom resources  on **Script bundle**. The input to **Script bundle** must be a zipped file already uploaded to your workspace. For more information about how to prepare and upload these resources, see [Unpack Zipped Data](unpack-zipped-datasets.md).
 
     Any file contained in the uploaded zipped archive can be used during experiment execution. If the archive includes a directory structure, the structure is preserved, but you must prepend a directory called **src** to the path.
