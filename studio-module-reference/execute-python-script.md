@@ -18,25 +18,19 @@ Category: [Python Language Modules](python-language-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio to run Python code. For more information about the architecture and common uses of Python script in Azure Machine Learning Studio, see [Azure Machine Learning and Python](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/04/22/azure-machine-learning-and-python/)
+This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio to run Python code. For more information about the architecture and design principles of Python in Studio, see [the following article.](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)
 
-With Python, you can perform tasks not supported by existing Studio modules such as:
+With Python, you can perform tasks that aren't currently supported by existing Studio modules such as:
 
 + Visualizing data using `matplotlib`
 + Using Python libraries to enumerate datasets and models in your workspace
 + Reading, loading, and manipulating data from sources not supported by the [Import Data](import-data.md) module
 
-## Examples
-
-For examples of how to integrate Python script with Studio experiments, see these resources in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
-
-+ [Execute Python Script](http://go.microsoft.com/fwlink/p/?LinkId=525942): This sample demonstrates text tokenization, stemming, and other processing using the **Execute Python Script** module.
-+ [Custom R and Python scripts in Azure ML](https://gallery.cortanaintelligence.com/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
-+ [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.cortanaintelligence.com/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): This fun sample uses Python code and Python data to estimate the point when demand for Python 3 outstrips that for Python 2.7.
+Azure Machine Learning Studio uses the Anaconda distribution of Python, which includes many common utilities for data processing.
 
 ## How to use Execute Python Script
 
-The **Execute Python Script** module contains sample Python code that you can use as a starting point when developing new code. To configure the **Execute Python Script** module, you provide a set of inputs, and type the Python code to execute in the **Python script** text box.
+The **Execute Python Script** module contains sample Python code that you can use as a starting point. To configure the **Execute Python Script** module, you provide a set of inputs and Python code to execute in the **Python script** text box.
 
 1. Add the **Execute Python Script** module to your experiment.
 
@@ -55,7 +49,7 @@ The **Execute Python Script** module contains sample Python code that you can us
 
     Use of a dataset is optional, if you want to generate data using Python, or use Python code to import the data directly into the module.
 
-    This module supports addition of a second Studio dataset on **Dataset2**. Reference this in your Python script as DataFrame2.
+    This module supports addition of a second Studio dataset on **Dataset2**. Reference the second dataset in your Python script as DataFrame2.
 
     Datasets stored in Studio are automatically converted to **pandas** data.frames when loaded with this module.
 
@@ -83,14 +77,13 @@ The **Execute Python Script** module contains sample Python code that you can us
 
 The module returns these outputs:  
   
-- **Results Dataset**. The results of any computations performed by the embedded Python code must be provided as a pandas data.frame, which is automatically converted to the Azure Machine Learning dataset format, so that you can use the results with other modules in the experiment. For more information, see [Data Table](data-table.md).
++ **Results Dataset**. The results of any computations performed by the embedded Python code must be provided as a pandas data.frame, which is automatically converted to the Azure Machine Learning dataset format, so that you can use the results with other modules in the experiment. The module is limited to a single dataset as output. For more information, see [Data Table](data-table.md).
 
-- **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
-
++ **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
 
 ## How to attach script resources
 
-The **Execute Python Script** module supports the use of arbitrary Python script files as inputs, provided they are prepared in advance and uploaded to your workspace as part of a .ZIP file. The module is generally limited to a single dataset as output. 
+The **Execute Python Script** module supports arbitrary Python script files as inputs, provided they are prepared in advance and uploaded to your workspace as part of a .ZIP file.
 
 ### Upload a ZIP file containing Python code to your workspace
 
@@ -112,22 +105,19 @@ The **Execute Python Script** module supports the use of arbitrary Python script
 
     If there was a directory structure present, it is preserved. However, you must alter your code to prepend the directory **src** to the path.
 
-> [!NOTE]
-> Because the zip file mechanism is the only way to add custom Python modules, it might be difficult to work with large modules or many modules. In such cases, we recommend the new [Azure ML Workbench](https://docs.microsoft.com/azure/machine-learning/preview/how-to-configure-your-ide), a preview feature that greatly expands support for Python environments.
-
 ## Debugging Python code
 
 The **Execute Python Script** module works best when the code has been factored as a function with clearly defined inputs and outputs, rather than a sequence of loosely related executable statements.
 
-This Python module does not support features such as Intellisense and debugging. If the module fails at runtime, you can view some error details in the output log for the module. However, the full Python stack trace is not available. Thus we recommend that users develop and debug their Python scripts in a different environment and then import the code into the module. 
+This Python module does not support features such as Intellisense and debugging. If the module fails at runtime, you can view some error details in the output log for the module. However, the full Python stack trace is not available. Thus we recommend that users develop and debug their Python scripts in a different environment and then import the code into the module.
 
 Some common problems that you can look for:
 
-- Check the data types in the data frame you are returning back from `azureml_main`. Errors are likely if columns contains data types other than numeric types and strings. 
++ Check the data types in the data frame you are returning back from `azureml_main`. Errors are likely if columns contain data types other than numeric types and strings. 
 
-- Remove NA values from your dataset, using `dataframe.dropna()` on export from Python script. When preparing your data, use the [Clean Missing Data](clean-missing-data.md) module.
++ Remove NA values from your dataset, using `dataframe.dropna()` on export from Python script. When preparing your data, use the [Clean Missing Data](clean-missing-data.md) module.
 
-- Check your embedded code for indentation and whitespace errors. If you get the error, "IndentationError: expected an indented block", see these resources for guidance: 
++ Check your embedded code for indentation and whitespace errors. If you get the error, "IndentationError: expected an indented block", see these resources for guidance: 
 
    + [Python Reference - Indentation](https://docs.python.org/2/reference/lexical_analysis.html#indentation)
 
@@ -135,15 +125,21 @@ Some common problems that you can look for:
 
 ## Known limitations
 
-+ The Python runtime is sandboxed and does not allow access to the network or to the local file system in a persistent manner. 
++ The Python runtime is sandboxed and does not allow access to the network or to the local file system in a persistent manner.
 
-+ All files saved locally are isolated and deleted once the module finishes. The Python code cannot access most directories on the machine it runs on, the exception being the current directory and its sub-directories.
++ All files saved locally are isolated and deleted once the module finishes. The Python code cannot access most directories on the machine it runs on, the exception being the current directory and its subdirectories.
 
     When you provide a zipped file as resource, the files are copied from your workspace to the experiment execution space, unpacked, and then used. Copying and unpacking resources can consume memory.
 
-+ The module can output a single data frame. It is not possible to return arbitrary Python objects such as trained models directly back to the Azure Machine Learning runtime.
++ The module can output a single data frame. It's not possible to return arbitrary Python objects such as trained models directly back to the Studio runtime. However, you can write objects to storage or to the workspace. Another option is to use `pickle` to serialize multiple objects into a byte array and then return the array inside a data frame.
 
-    However, you can write objects to storage or to the workspace. Another option is to use `pickle` to serialize multiple objects into a byte array and then return the array inside a data frame.
+## Examples
+
+For examples of integrating Python script with Studio experiments, see these resources in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+
++ [Execute Python Script](http://go.microsoft.com/fwlink/p/?LinkId=525942): Use text tokenization, stemming, and other natural language processing using the **Execute Python Script** module.
++ [Custom R and Python scripts in Azure ML](https://gallery.cortanaintelligence.com/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
++ [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.cortanaintelligence.com/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): Estimate the point when demand for Python 3 outstrips that for Python 2.7 using python.
 
 ## See also
 
