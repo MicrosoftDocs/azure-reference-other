@@ -18,35 +18,25 @@ Category: [Python Language Modules](python-language-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio, to run Python code as part of your Studio experiments.
+This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio to run Python code. For more information about the architecture and common uses of Python script in Azure Machine Learning Studio, see [Azure Machine Learning and Python](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/04/22/azure-machine-learning-and-python/)
 
-By using Python, you can perform custom tasks, create visualizations, and share your models with the world. For example:
+With Python, you can perform tasks not supported by existing Studio modules such as:
 
-+ Visualize data using `matplotlib`
-+ Use Python client libraries to enumerate datasets and models in your workspace
-+ Read, load, and manipulate data from sources not supported by the [Import Data](import-data.md) module
-
-The **Execute Python Script** module contains sample Python code that you can use as a starting point when developing new code.
++ Visualizing data using `matplotlib`
++ Using Python libraries to enumerate datasets and models in your workspace
++ Reading, loading, and manipulating data from sources not supported by the [Import Data](import-data.md) module
 
 ## Examples
 
-For examples of how to integrate Python script with Azure Machine Learning experiments, see these resources:
+For examples of how to integrate Python script with Studio experiments, see these resources in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-- [Execute Python scripts in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)
-
-- [Creating an Azure VM, installing Jupyter, and running a Jupyter Notebook on Azure](https://docs.microsoft.com/azure/virtual-machines/linux/jupyter-notebook)
-
-- [Access datasets with Python using the Azure Machine Learning Python client library](https://docs.microsoft.com/azure/machine-learning/machine-learning-python-data-access)  
-
-The following experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) use Python:
-
-- [Execute Python Script](http://go.microsoft.com/fwlink/p/?LinkId=525942): This sample demonstrates text tokenization, stemming, and other processing using the **Execute Python Script** module.
-- [Custom R and Python scripts in Azure ML](https://gallery.cortanaintelligence.com/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
-- [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.cortanaintelligence.com/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): This fun sample uses Python code and Python data to estimate the point when demand for Python 3 outstrips that for Python 2.7.
++ [Execute Python Script](http://go.microsoft.com/fwlink/p/?LinkId=525942): This sample demonstrates text tokenization, stemming, and other processing using the **Execute Python Script** module.
++ [Custom R and Python scripts in Azure ML](https://gallery.cortanaintelligence.com/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
++ [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.cortanaintelligence.com/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): This fun sample uses Python code and Python data to estimate the point when demand for Python 3 outstrips that for Python 2.7.
 
 ## How to use Execute Python Script
 
-To configure the **Execute Python Script** module, you provide a set of inputs, and type the Python code to execute in the **Python script** text box.
+The **Execute Python Script** module contains sample Python code that you can use as a starting point when developing new code. To configure the **Execute Python Script** module, you provide a set of inputs, and type the Python code to execute in the **Python script** text box.
 
 1. Add the **Execute Python Script** module to your experiment.
 
@@ -97,17 +87,12 @@ The module returns these outputs:
 
 - **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
 
-##  Technical notes
 
-This section contains additional technical details and frequently asked questions.
-
-For more information about the architecture, inception, and common uses of Python script in Azure Machine Learning, see [Azure Machine Learning and Python](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/04/22/azure-machine-learning-and-python/)
-
-### How to attach script resources
+## How to attach script resources
 
 The **Execute Python Script** module supports the use of arbitrary Python script files as inputs, provided they are prepared in advance and uploaded to your workspace as part of a .ZIP file. The module is generally limited to a single dataset as output. 
 
-#### Upload a ZIP file containing Python code to your workspace
+### Upload a ZIP file containing Python code to your workspace
 
 1. In the experiment area of Azure Machine Learning Studio, click **Datasets**, and then click **New**.
 
@@ -130,7 +115,7 @@ The **Execute Python Script** module supports the use of arbitrary Python script
 > [!NOTE]
 > Because the zip file mechanism is the only way to add custom Python modules, it might be difficult to work with large modules or many modules. In such cases, we recommend the new [Azure ML Workbench](https://docs.microsoft.com/azure/machine-learning/preview/how-to-configure-your-ide), a preview feature that greatly expands support for Python environments.
 
-### My run failed.  How do I debug Python code and fix it?
+## Debugging Python code
 
 The **Execute Python Script** module works best when the code has been factored as a function with clearly defined inputs and outputs, rather than a sequence of loosely related executable statements.
 
@@ -148,31 +133,18 @@ Some common problems that you can look for:
 
    + [Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 
-### Known limitations
+## Known limitations
 
 + The Python runtime is sandboxed and does not allow access to the network or to the local file system in a persistent manner. 
 
 + All files saved locally are isolated and deleted once the module finishes. The Python code cannot access most directories on the machine it runs on, the exception being the current directory and its sub-directories.
 
-    When you provide a zipped file as resource, the files are copied from your workspace to the experiment execution space, unpacked, and then used. Copying and unpacking resources can consume memory. 
+    When you provide a zipped file as resource, the files are copied from your workspace to the experiment execution space, unpacked, and then used. Copying and unpacking resources can consume memory.
 
-+ The module can output a single data frame. It is not possible to return arbitrary Python objects such as trained models directly back to the Azure Machine Learning runtime. 
++ The module can output a single data frame. It is not possible to return arbitrary Python objects such as trained models directly back to the Azure Machine Learning runtime.
 
     However, you can write objects to storage or to the workspace. Another option is to use `pickle` to serialize multiple objects into a byte array and then return the array inside a data frame.
 
-### How can I determine which Python packages are installed in Azure ML?
-
-Azure Machine Learning Studio uses the Anaconda distribution, which includes the most important Python libraries for machine learning. 
-
-### How does this relate to Jupyter notebooks?
-
-Jupyter Notebooks support multiple Python environments, and can be run from Azure Machine Learning Studio, under the name **Azure Notebooks**. The datasets that you use in experiments can easily be accessed from a notebook, and the notebooks can interact with Azure ML experiments.
-
-+ [Use Jupyter notebooks with Azure ML Workbench](https://docs.microsoft.com/azure/machine-learning/preview/how-to-use-jupyter-notebooks)
-
-+ [Channel 9 video - Using Jupyter notebooks in Azure ML](https://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Using-JupyterIPython-Notebooks-in-Azure-ML)
-
 ## See also
 
- [Python Language Modules](python-language-modules.md)   
- [R Language Modules](r-language-modules.md)
+[R Language Modules](r-language-modules.md)
