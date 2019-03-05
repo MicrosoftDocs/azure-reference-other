@@ -1,14 +1,13 @@
 ---
 title: "Execute Python Script | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 03/05/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
 author: ericlicoding
 ms.author: amlstudiodocs
-manager: cgronlun
 ---
 # Execute Python Script
 
