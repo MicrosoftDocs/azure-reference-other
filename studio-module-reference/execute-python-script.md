@@ -8,6 +8,7 @@ ms.topic: "reference"
 
 author: ericlicoding
 ms.author: amlstudiodocs
+
 ---
 # Execute Python Script
 
@@ -114,11 +115,11 @@ This Python module does not support features such as Intellisense and debugging.
 
 Some common problems that you can look for:
 
-+ Check the data types in the data frame you are returning back from `azureml_main`. Errors are likely if columns contain data types other than numeric types and strings. 
++ Check the data types in the data frame you are returning back from `azureml_main`. Errors are likely if columns contain data types other than numeric types and strings.
 
 + Remove NA values from your dataset, using `dataframe.dropna()` on export from Python script. When preparing your data, use the [Clean Missing Data](clean-missing-data.md) module.
 
-+ Check your embedded code for indentation and whitespace errors. If you get the error, "IndentationError: expected an indented block", see these resources for guidance: 
++ Check your embedded code for indentation and whitespace errors. If you get the error, "IndentationError: expected an indented block", see these resources for guidance:
 
    + [Python Reference - Indentation](https://docs.python.org/2/reference/lexical_analysis.html#indentation)
 
