@@ -19,7 +19,7 @@ manager: cgronlun
 
 This article describes how to use the **Two-Class Decision Forest** module in Azure Machine Learning Studio, to create a machine learning model based on the decision forests algorithm.  
 
-Decision forests are fast, supervised ensemble models. This module is a good choice if you want to predict a target with a mximum of two outcomes. If you are not sure how to configure a decision tree model for the best results, we recommend that you use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to train and test multiple models. tuning iterates over multiple possibilities and finds the optimal solution for you.
+Decision forests are fast, supervised ensemble models. This module is a good choice if you want to predict a target with a maximum of two outcomes. If you are not sure how to configure a decision tree model for the best results, we recommend that you use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to train and test multiple models. tuning iterates over multiple possibilities and finds the optimal solution for you.
 
 ## Understanding decision forests
 
