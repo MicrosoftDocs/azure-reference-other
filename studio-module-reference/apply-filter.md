@@ -5,7 +5,7 @@ ms.date: 01/11/2018
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs 
 manager: cgronlun
 ---
