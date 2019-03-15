@@ -270,7 +270,7 @@ This error occurs only when the MICE method is selected, and if the training dat
 |[Error 0018](errors/error-0018.md)|An exception occurs if the input dataset is not valid.|  
 |[Error 0039](errors/error-0039.md)|An exception occurs if the operation fails.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

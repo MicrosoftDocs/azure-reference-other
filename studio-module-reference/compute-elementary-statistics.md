@@ -275,7 +275,7 @@ Boolean columns are processed as follows:
 |---------------|-----------------|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

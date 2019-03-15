@@ -212,7 +212,7 @@ For examples of how recommendation models are used in Azure Machine Learning, se
 |[Error 0018](errors/error-0018.md)|Exception occurs if input dataset is not valid.|  
 |[Error 0002](errors/error-0002.md)|Exception occurs if one or more parameters could not be parsed or converted from specified type into required by target method type.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

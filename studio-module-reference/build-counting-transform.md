@@ -235,7 +235,7 @@ The following parameters define the format of the count table:
 |[Error 0060](errors/error-0060.md)|Exception occurs when an out of range column range is specified in a column picker.|  
 |[Error 0089](errors/error-0089.md)|Exception occurs when the specified number of classes is less than the actual number of classes in a dataset used for counting.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
