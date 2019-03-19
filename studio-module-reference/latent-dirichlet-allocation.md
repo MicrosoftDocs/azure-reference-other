@@ -37,7 +37,7 @@ Generally speaking, LDA is not a method for classification per se, but uses a ge
 
 A generative model can be preferable because it avoids making any strong assumptions about the relationship between the text and categories, and uses only the distribution of words to mathematically model topics.
 
-+ The theory is discussed in this paper, available as a PDF download: [Online Learning for Latent Dirichlet Allocation: Hoffman, Blei, and Bach](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2010_1291.pdf)
++ The theory is discussed in this paper, available as a PDF download: [Latent Dirichlet Allocation: Blei, Ng, and Jordan](https://ai.stanford.edu/~ang/papers/nips01-lda.pdf)
 
 + The implementation in this module is based on the [Vowpal Wabbit library](https://github.com/JohnLangford/vowpal_wabbit/wiki/Latent-Dirichlet-Allocation) (version 8) for LDA.
 
