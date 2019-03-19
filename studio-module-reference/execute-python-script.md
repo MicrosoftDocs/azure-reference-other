@@ -6,7 +6,7 @@ ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 
 ---
