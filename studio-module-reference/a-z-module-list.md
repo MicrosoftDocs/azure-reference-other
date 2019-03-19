@@ -5,7 +5,7 @@ description: "Review an A-Z list of modules that are available in Machine Learni
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs 
 ms.date: 01/05/2018
 ---

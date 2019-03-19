@@ -6,7 +6,7 @@ ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -280,7 +280,7 @@ To give you an idea of how the scores compare when using different metrics, the 
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

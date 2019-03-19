@@ -6,7 +6,7 @@ ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -146,7 +146,7 @@ This table lists parameters that apply to all [Export Data](export-data.md) opti
 |[Error 0029](errors/error-0029.md)|An exception occurs when an invalid URI is passed.|  
 |[Error 0003](errors/error-0003.md)|An exception occurs if one or more inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 
