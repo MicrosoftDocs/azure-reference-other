@@ -17,7 +17,7 @@ ms.date: 10/30/2018
   Queries input data for specific properties. There are three types of properties: Adapter, User, and Unique EventId.
   
 ## Adapter metadata properties
-Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record.
+Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record. This function cannot be tested on the Azure portal using sample data. You can use Visual Studio tools for Stream Analytics to test this function in your query using [live data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-live-data-local-testing).
 
 ### Examples
 
