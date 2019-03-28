@@ -46,8 +46,6 @@
               href: anomalydetection-spikeanddip-azure-stream-analytics.md
             - name: AnomalyDetection_ChangePoint
               href: anomalydetection-changepoint-azure-stream-analytics.md
-            - name: COALESCE
-              href: coalesce-azure-stream-analytics.md
             - name: ISFIRST
               href: isfirst-azure-stream-analytics.md
             - name: LAG
@@ -198,6 +196,8 @@
           href: apply-azure-stream-analytics.md
         - name: CASE
           href: case-azure-stream-analytics.md
+        - name: COALESCE
+          href: coalesce-azure-stream-analytics.md
         - name: CREATE TABLE
           href: create-table-stream-analytics.md
         - name: FROM
