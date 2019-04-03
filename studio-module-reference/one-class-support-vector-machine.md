@@ -60,12 +60,12 @@ For more information, including links to basic research, see the [Technical note
 
 5. Connect a training dataset, and one of the training modules:
 
-    - If you set **Create trainer mode** to **Single Parameter**, use the [Train Model](train-model.md) module.
+    - If you set **Create trainer mode** to **Single Parameter**, use the [Train Anomaly Detection Model](train-anomaly-detection-model.md) module.
     - If you set **Create trainer mode** to **Parameter Range**, use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module.
 
    > [!NOTE]
    > 
-   > If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list. 
+   > If you pass a parameter range to [Train Anomaly Detection Model](train-anomaly-detection-model.md), it uses only the first value in the parameter range list. 
    > 
    > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and uses the default values for the learner.
    > 
