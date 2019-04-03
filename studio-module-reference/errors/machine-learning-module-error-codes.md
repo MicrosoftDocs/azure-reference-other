@@ -143,32 +143,420 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0127](error-0127.md)|Image pixel size exceeds allowed limit.|  
 |[Error 0128](error-0128.md)|Number of conditional probabilities for categorical columns exceeds limit.|  
 |[Error 0129](error-0129.md)|Number of columns in the dataset exceeds allowed limit.|  
-|[Error 0130](error-0130.md)|Exception occurs when all rows in the training dataset contain missing values.|  
-|[Error 0131](error-0131.md)|Exception occurs if one or more datasets in a zip file fails to be unzipped and registered correctly.|  
-|[Error 0132](error-0132.md)|No file name was specified for unpacking; multiple files were found in zip file.|  
-|[Error 0133](error-0133.md)|The specified file was not found in the zip file.|  
-|[Error 0134](error-0134.md)|Exception occurs when label column is missing or has insufficient number of labeled rows.|  
-|[Error 0135](error-0135.md)|Only centroid-based cluster is supported.|  
-|[Error 0136](error-0136.md)|No file name was returned; unable to process the file as a result.|  
-|[Error 0137](error-0137.md)|Azure Storage SDK encountered an error converting between table properties and dataset columns during read or write.|  
-|[Error 0138](error-0138.md)|Memory has been exhausted, unable to complete running of module.|  
-|[Error 0139](error-0139.md)|Exception occurs when it is not possible to convert column to another type.|  
-|[Error 0140](error-0140.md)|Exception occurs if passed column set argument does not contain other columns except label column.|  
-|[Error 0141](error-0141.md)|Exception occurs if the number of the selected numerical columns and unique values in the categorical and string columns is too small.|  
-|[Error 0142](error-0142.md)|Exception occurs when the system cannot load certificate to authenticate.|  
-|[Error 0143](error-0143.md)|Can't parse user-provided URL that is supposed to be from GitHub|  
-|[Error 0144](error-0144.md)|User-provided GitHub url is missing the expected part.|  
-|[Error 0145](error-0145.md)|Cannot create the replication directory for some reason|  
-|[Error 0146](error-0146.md)|When the user files are unzipped into the local directory, the combined path might be too long.|  
-|[Error 0147](error-0147.md)|Could not download stuff from GitHub for some reason|  
-|[Error 0148](error-0148.md)|Unauthorized access issues while extracting data or creating directory|  
-|[Error 0149](error-0149.md)|The user file does not exist inside GitHub bundle.|  
-|[Error 0150](error-0150.md)|The scripts that come from the user package could not be unzipped, most likely because of the collision with Github files.|  
-|[Error 0151](error-0151.md)|There was an error writing to cloud storage. Please check the url.|  
-|[Error 0152](error-0152.md)|The Azure cloud type was specified incorrectly in the module context.|  
-|[Error 0153](error-0153.md)|The storage end point specified is invalid.|  
-|[Error 0154](error-0154.md)|The specified server name could not be resolved.|  
-|[Error 0155](error-0155.md)|The DocDb Client threw an exception.|  
-|[Error 0156](error-0156.md)|Bad response for HCatalog Server|  
-|[Error 0157](error-0157.md)|There was an error reading from Azure Cosmos DB due to inconsistent or different document schemas.|  
-|[Error 1000](error-1000.md)|Internal library exception|
+|[Error 0130](#error-0130)|Exception occurs when all rows in the training dataset contain missing values.|  
+|[Error 0131](#error-0131)|Exception occurs if one or more datasets in a zip file fails to be unzipped and registered correctly.|  
+|[Error 0132](#error-0132)|No file name was specified for unpacking; multiple files were found in zip file.|  
+|[Error 0133](#error-0133)|The specified file was not found in the zip file.|  
+|[Error 0134](#error-0134)|Exception occurs when label column is missing or has insufficient number of labeled rows.|  
+|[Error 0135](#error-0135)|Only centroid-based cluster is supported.|  
+|[Error 0136](#error-0136)|No file name was returned; unable to process the file as a result.|  
+|[Error 0137](#error-0137)|Azure Storage SDK encountered an error converting between table properties and dataset columns during read or write.|  
+|[Error 0138](#error-0138)|Memory has been exhausted, unable to complete running of module.|  
+|[Error 0139](#error-0139)|Exception occurs when it is not possible to convert column to another type.|  
+|[Error 0140](#error-0140)|Exception occurs if passed column set argument does not contain other columns except label column.|  
+|[Error 0141](#error-0141)|Exception occurs if the number of the selected numerical columns and unique values in the categorical and string columns is too small.|  
+|[Error 0142](#error-0142)|Exception occurs when the system cannot load certificate to authenticate.|  
+|[Error 0143](#error-0143)|Can't parse user-provided URL that is supposed to be from GitHub|  
+|[Error 0144](#error-0144)|User-provided GitHub url is missing the expected part.|  
+|[Error 0145](#error-0145)|Cannot create the replication directory for some reason|  
+|[Error 0146](#error-0146)|When the user files are unzipped into the local directory, the combined path might be too long.|  
+|[Error 0147](#error-0147)|Could not download stuff from GitHub for some reason|  
+|[Error 0148](#error-0148)|Unauthorized access issues while extracting data or creating directory|  
+|[Error 0149](#error-0149)|The user file does not exist inside GitHub bundle.|  
+|[Error 0150](#error-0150)|The scripts that come from the user package could not be unzipped, most likely because of the collision with Github files.|  
+|[Error 0151](#error-0151)|There was an error writing to cloud storage. Please check the url.|  
+|[Error 0152](#error-0152)|The Azure cloud type was specified incorrectly in the module context.|  
+|[Error 0153](#error-0153)|The storage end point specified is invalid.|  
+|[Error 0154](#error-0154)|The specified server name could not be resolved.|  
+|[Error 0155](#error-0155)|The DocDb Client threw an exception.|  
+|[Error 0156](#error-0156)|Bad response for HCatalog Server|  
+|[Error 0157](#error-0157)|There was an error reading from Azure Cosmos DB due to inconsistent or different document schemas.|  
+|[Error 1000](#error-1000)|Internal library exception|
+
+
+
+
+
+
+
+## Error 0130  
+ Exception occurs when all rows in the training dataset contain missing values.  
+  
+ This occurs when some column in the training dataset is empty.  
+  
+Resolution:   
+ Use the [Clean Missing Data](../clean-missing-data.md) module to remove columns with all missing values.  
+  
+|Exception Messages|  
+|------------------------|  
+|All rows in training dataset contain missing values.  Consider using the Clean Missing Data module to remove missing values.|  
+ 
+
+## Error 0131  
+ Exception occurs if one or more datasets in a zip file fails to be unzipped and registered correctly  
+  
+ This error is produced when one or more datasets in a zip file fails to be unzipped and read correctly. You will receive this error if the unpacking fails because the zip file itself or one of the files in it is corrupt, or there is a system error while trying to unpack and expand a file.  
+  
+Resolution:   
+ Use the details provided in the error message to determine how to proceed.  
+  
+|Exception Messages|  
+|------------------------|  
+|Upload zipped datasets failed|  
+|Zipped dataset {0} failed with the following message: {1}|  
+|Zipped dataset {0} failed with a {1} exception with message: {2}|  
+  
+
+## Error 0132  
+ No file name was specified for unpacking; multiple files were found in zip file.  
+  
+ This error is produced when no file name was specified for unpacking; multiple files were found in zip file. You will receive this error if the .zip file contains more than one compressed file, but you did not specify a file for extraction in the **Dataset to Unpack** text box, in the **Property** pane of the module. Currently, only one file can be extracted each time the module is run.  
+  
+Resolution:   
+ The error message provides a list of the files found in the .zip file. Copy the name of the desired file and paste it into the **Dataset to Unpack** text box.  
+  
+|Exception Messages|  
+|------------------------|  
+|Zip file contains multiple files; you must specify the file to expand.|  
+|The file contains more than one file. Please specify the file to expand. The following files were found: {0}|  
+  
+
+## Error 0133  
+ The specified file was not found in the zip file  
+  
+ This error is produced when the filename entered in the **Dataset to Unpack** field of the **Property** pane does not match the name of any file found in the .zip file. The most common causes of this error are a typing error or searching the wrong archive file for the file to expand.  
+  
+Resolution:   
+ Revisit the module. If the name of the file you intended to decompress appears in the list of files found, copy the file name and paste it into the **Dataset to Unpack** property box. If you do not see the desired file name in the list, verify that you have the correct .zip file and the correct name for the desired file.  
+  
+|Exception Messages|  
+|------------------------|  
+|The specified file was not found int the zip file.|  
+|The specified file was not found. Found the following file(s): {0}|  
+  
+
+## Error 0134
+Exception occurs when label column is missing or has insufficient number of labeled rows.  
+  
+This error occurs when the module requires a label column, but you did not include one in the column selection, or the label column is missing too many values.
+
+This error can also occur when a previous operation changes the dataset such that insufficient rows are available to a downstream operation. For example, suppose you use an expression in the **Partition and Sample** module to divide a dataset by values. If no matches are found for your expression, one of the datasets resulting from the partition would be empty.
+
+Resolution: 
+
+ If you include a label column in the column selection but it isn’t recognized, use the [Edit Metadata](../edit-metadata.md) module to mark it as a label column.
+  
+ Use the [Summarize Data](../summarize-data.md) module to generate a report that shows how many values are missing in each column. Then, you can use the [Clean Missing Data](../clean-missing-data.md) module to remove rows with missing values in the label column. 
+
+ Check your input datasets to make sure that they contain valid data, and enough rows to satisfy the requirements of the operation. Many algorithms will generate an error message if they require some minimum number rows of data, but the data contains only a few rows, or only a header.
+  
+|Exception Messages|
+|------------------------|
+|Exception occurs when label column is missing or has insufficient number of labeled rows.|  
+|Exception occurs when label column is missing or has less than {0} labeled rows|  
+  
+
+## Error 0135  
+ Only centroid-based cluster is supported.  
+  
+Resolution:   
+ You might encounter this error message if you have attempted to evaluate a clustering model that is based on a custom clustering algorithm that does not use centroids to initialize the cluster.  
+  
+ You can use [Evaluate Model](../evaluate-model.md) to evaluate clustering models that are based on the  [K-Means Clustering](../k-means-clustering.md) module. For custom algorithms, use the [Execute R Script](../execute-r-script.md) module to create a custom evaluation script.  
+  
+|Exception Messages|  
+|------------------------|  
+|Only centroid-based cluster is supported.|  
+  
+
+## Error 0136  
+ No file name was returned; unable to process the file as a result.  
+  
+Resolution:   
+  
+|Exception Messages|  
+|------------------------|  
+|No file name was returned; unable to process the file as a result.|  
+  
+
+## Error 0137  
+ Azure Storage SDK encountered an error converting between table properties and dataset columns during read or write.  
+  
+Resolution:   
+  
+|Exception Messages|  
+|------------------------|  
+|Conversion error between Azure table storage property and dataset column.|  
+|Conversion error between Azure table storage property and dataset column. Additional information: {0}|  
+
+## Error 0138  
+ Memory has been exhausted, unable to complete running of module. Downsampling the dataset may help to alleviate the problem.  
+  
+ This error occurs when the module that is running requires more memory than is available in the Azure container. This can happen if you are working with a very large dataset and the current operation cannot fit into memory.  
+  
+Resolution:   
+ If you are trying to read a very large dataset and the operation cannot be completed, downsampling the dataset might help.  
+  
+ If you use the visualizations on datasets to check the cardinality of columns, only some rows are sampled. To get a full report, use [Summarize Data](../summarize-data.md). You can also use the [Apply SQL Transformation](../apply-sql-transformation.md) to check for the number of unique values in each column.  
+  
+ Sometimes transient loads can lead to this error. Machine support also changes over time. See the [Azure Machine Learning FAQ](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/) for  a description of supported data size.  
+  
+ Try using [Principal Component Analysis](../principal-component-analysis.md) or one of the provided feature selection methods to reduce your dataset to a smaller set of more feature-rich columns: [Feature Selection](../feature-selection-modules.md)  
+  
+|Exception Messages|  
+|------------------------|  
+|Memory has been exhausted, unable to complete running of module.|  
+  
+
+## Error 0139  
+ Exception occurs when it is not possible to convert a column to another type.  
+  
+ This error in Azure Machine Learning occurs when you try to convert a column to a different data type, but that type is not supported by the current operation or by the module.  
+  
+ The error might also appear when a module tries to implicitly convert data to meet requirements of the current module, but the conversion is not possible.  
+  
+Resolution:   
+
+1. Review your input data and determine the exact data type of the column that you want to use, and the data type of the column that is producing the error. Sometimes you might think the data type is correct, but find that an upstream operation has modified the data type or usage of a column. Use the [Edit Metadata](../edit-metadata.md) module to reset column metadata to its original state. 
+2. Look at the module help page to verify the requirements for the specified operation. Determine which data types are supported by the current module, and what range of values is supported. 
+3. If values need to be truncated, rounded, or outliers removed, use the [Apply Math Operation](../apply-math-operation.md) or [Clip Values](../clip-values.md) modules to make corrections.
+4. Consider whether it is possible to convert or cast the column to a different data type. The following modules all provide considerable flexibility and power for modifying data: 
+  
+   + [Apply SQL Transformation](../apply-sql-transformation.md)
+   + [Execute R Script](../execute-r-script.md)
+   + [Execute Python Script](../execute-python-script.md).  
+
+> [!NOTE]
+> Still not working? Consider providing additional feedback on the problem, to help us develop better troubleshooting guidance. Just submit feedback on this page and provide the name of the module that generated the error, and the data type conversion that failed.
+  
+|Exception Messages|  
+|------------------------|  
+|Not allowed conversion.|  
+|Could not convert: {0}.|  
+|Could not convert: {0}, on row {1}.|  
+|Could not convert column of type {0} to column of type {1} on row {2}.|  
+|Could not convert column "{2}" of type {0} to column of type {1} on row {3}.|  
+|Could not convert column "{2}" of type {0} to column "{3}" of type {1} on row {4}.| 
+
+## Error 0140  
+ Exception occurs if passed column set argument does not contain other columns except label column.  
+  
+ This error occurs if you connected a dataset to a module that requires multiple columns, including features, but you have provided only the label column.  
+  
+Resolution:   
+ Choose at least one feature column to include in the dataset.  
+  
+|Exception Messages|  
+|------------------------|  
+|Specified column set does not contain other columns except label column.|  
+  
+
+## Error 0141  
+ Exception occurs if the number of the selected numerical columns and unique values in the categorical and string columns is too small.  
+  
+ This error in Azure Machine Learning occurs when there are not enough unique values in the selected column to perform the operation.  
+  
+Resolution:   
+ Some operations perform statistical operations on feature and categorical columns, and if there are not enough values, the operation might fail or return an invalid result. Check your dataset to see how many values there are in the fature and label columns, and determine whether the operation you are trying to perform is statistically valid.  
+  
+ If the source dataset is valid, you might also check whether some upstream data maniipulation or metadata operation has changed the data and removed some values.  
+  
+ If upstream operations include splitting, sampling, or resampling, verify that the outputs contain the expected number of rows and values.  
+  
+|Exception Messages|  
+|------------------------|  
+|The number of the selected numerical columns and unique values in the categorical and string columns is too small.|  
+|The total number of the selected numerical columns and unique values in the categorical and string columns (currently {0}) should be at least {1}|  
+  
+
+## Error 0142  
+ Exception occurs when the system cannot load certificate to authenticate.  
+  
+Resolution:   
+  
+|Exception Messages|  
+|------------------------|  
+|The certificate cannot be loaded.|  
+|The certificate {0} cannot be loaded. Its thumbprint is {1}.|  
+  
+
+## Error 0143  
+ Can't parse user-provided URL that is supposed to be from GitHub.  
+  
+ This error in Azure Machine Learning occurs when you specify an invalid URL and the module requires a valid GitHub URL.  
+  
+Resolution:   
+ Verify that the URL refers to a valid GitHub repository. Other site types are not supported.  
+  
+|Exception Messages|  
+|------------------------|  
+|URL is not from github.com.|  
+|URL is not from github.com: {0}|  
+
+## Error 0144  
+ User-provided GitHub url is missing the expected part.  
+  
+ This error in Azure Machine Learning occurs when you specify a GitHub file source using an invalid URL format.  
+  
+Resolution:   
+ Check that the URL of the GitHub repository is valid and ends with \blob\ or \tree\\.  
+  
+|Exception Messages|  
+|------------------------|  
+|Cannot parse GitHub URL.|  
+|Cannot parse GitHub URL (expecting '\blob\\' or '\tree\\' after the repository name): {0}|  
+
+## Error 0145  
+ Cannot create the replication directory for some reason.  
+  
+ This error in Azure Machine Learning occurs when the module fails to create the specified directory.  
+  
+Resolution:   
+  
+|Exception Messages|  
+|------------------------|  
+|Cannot create replication directory.|  
+  
+
+## Error 0146  
+ When the user files are unzipped into the local directory, the combined path might be too long.  
+  
+ This error in Azure Machine Learning occurs when you are extracting files but some file names are too long when unzipped.  
+  
+Resolution:   
+ Edit the file names such that combined path and file name is no longer than 248 characters.  
+  
+|Exception Messages|  
+|------------------------|  
+|Replication path is longer than 248 characters, shorten the script name or path.|  
+
+## Error 0147  
+ Could not download stuff from GitHub for some reason  
+  
+ This error in Azure Machine Learning occurs when you cannot read or download the specified files from GitHub.  
+  
+Resolution:   
+ The issue might be temporary; you might try accessing the files at another time. Or verify that you have the necessary permissions and that the source is valid.  
+  
+|Exception Messages|  
+|------------------------|  
+|GitHub access error.|  
+|GitHub access error. {0}|  
+  
+
+## Error 0148  
+ Unauthorized access issues while extracting data or creating directory.  
+  
+ This error in Azure Machine Learning occurs when you are trying to create a directory or read data from storage but do not have the necessary permissions.  
+  
+Resolution:   
+  
+|Exception Messages|  
+|------------------------|  
+|Unauthorized access exception while extracting data.|  
+  
+
+## Error 0149  
+ The user file does not exist inside GitHub bundle.  
+  
+ This error in Azure Machine Learning occurs when the specified file cannot be found.  
+  
+Resolution: 
+  
+|Exception Messages|  
+|------------------------|  
+|GitHub file is not found.|  
+|GitHub file is not found.: {0}|  
+  
+
+## Error 0150  
+ The scripts that come from the user package could not be unzipped, most likely because of a collision with Github files.  
+  
+ This error in Azure Machine Learning occurs when a script cannot be extracted, typically when there is an existing file of the same name.  
+  
+Resolution:
+  
+|Exception Messages|  
+|------------------------|  
+|Unable to unzip the bundle; possible name collision with GitHub files.|  
+  
+
+## Error 0151  
+ There was an error writing to cloud storage. Please check the URL.  
+  
+ This error in Azure Machine Learning occurs when the module tries to write data to cloud storage but the URL is unavailable or invalid.  
+  
+Resolution: Check the URL and verify that it is writable.  
+  
+|Exception Messages|  
+|------------------------|  
+|Error writing to cloud storage (possibly a bad url).|  
+|Error writing to cloud storage: {0}. Please check the url.|  
+  
+## Error 0152  
+ The Azure cloud type was specified incorrectly in the module context.  
+  
+|Exception messages|  
+|------------------------|  
+|Bad Azure Cloud Type|  
+|Bad Azure Cloud Type: {0}|  
+  
+## Error 0153  
+ The storage end point specified is invalid.  
+  
+|Exception Messages|  
+|------------------------|  
+|Bad Azure Cloud Type|  
+|Bad Storage End Point: {0}|  
+
+## Error 0154  
+ The specified server name could not be resolved  
+  
+|Exception Messages|  
+|------------------------|  
+|The specified server name could not be resolved|  
+|The specified server {0}.documents.azure.com could not be resolved|
+
+## Error 0155  
+ The DocDb Client threw an exception  
+  
+|Exception Messages|  
+|------------------------|  
+|The DocDb Client threw an exception|  
+|DocDb Client: {0}|
+
+## Error 0156  
+ Bad response for HCatalog Server.  
+  
+|Exception Messages|  
+|------------------------|  
+|Bad response for HCatalog Server. Check that all services are running.|  
+|Bad response for HCatalog Server. Check that all services are running. Error details: {0}|
+
+## Error 0157  
+ There was an error reading from Azure Cosmos DB due to inconsistent or different document schemas. Reader requires all documents to have the same schema.  
+  
+|Exception Messages|  
+|------------------------|  
+|Detected documents with different schemas. Please make sure all documents have the same schema|
+
+## Error 1000  
+Internal library exception.  
+  
+This error is provided to capture otherwise unhandled internal engine errors. Therefore, the cause for this error might be very different depending on the module that generated the error.  
+  
+To get more help, we recommend that you post the detailed message that accompanies the error to the Azure Machine Learning forum, together with a description of the scenario, including the data used as inputs. This feedback will help us to prioritize errors and identify the most important issues for further work.  
+  
+|Exception Messages|  
+|------------------------|  
+|Library exception.|  
+|Library exception: {0}|  
+|{0} library exception: {1}|  
+  
+
+## More help  
+[Module error codes](../machine-learning-module-error-codes.md)
+
+Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
++ [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
++ [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
