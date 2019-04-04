@@ -22,74 +22,906 @@ To resolve the issue, look for the error in this article to read about common ca
 - Select the module that has the error, and click the red X. Only the pertinent error text is displayed.  
   
 If the error message text is not helpful, send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the [Azure Machine Learning STUDIO forum](https://aka.ms/aml-forum-studio) and post a question.  
+
+
+## Error 0001  
+ Exception occurs if one or more specified columns of data set couldn't be found.  
   
-###  <a name="errors"></a> Exceptions list  
+ You will receive this error if a column selection is made for a module, but the selected column(s) do not exist in the input data set. This error may occur if you have manually typed in a column name or if the column selector has provided a suggested column that did not exist in your dataset when you ran the experiment.  
   
-|Exception|Description|  
-|---------------|-----------------|  
-|Error 0000|Internal Error|  
-|[Error 0001](error-0001.md)|Exception occurs if one or more specified columns of data set couldn't be found.|  
-|[Error 0002](error-0002.md)|Exception occurs if one or more parameters could not be parsed or converted from specified type into required by target method type.|  
-|[Error 0003](error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
-|[Error 0004](error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
-|[Error 0005](error-0005.md)|Exception occurs if parameter is less than a specific value.|  
-|[Error 0006](error-0006.md)|Exception occurs if parameter is greater than or equal to the specified value.|  
-|[Error 0007](error-0007.md)|Exception occurs if parameter is greater than a specific value.|  
-|[Error 0008](error-0008.md)|Exception occurs if parameter is not in range.|  
-|[Error 0009](error-0009.md)|Exception occurs if Azure storage account name or container name specified incorrectly.|  
-|[Error 0010](error-0010.md)|Exception occurs if input datasets have column names that should match but do not.|  
-|[Error 0011](error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
-|[Error 0012](error-0012.md)|Exception occurs if instance of class could not be created with passed set of arguments.|  
-|[Error 0013](error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
-|[Error 0014](error-0014.md)|Exception occurs if number of column unique values is greater than allowed.|  
-|[Error 0015](error-0015.md)|Exception occurs if database connection has failed.|  
-|[Error 0016](error-0016.md)|Exception occurs if input datasets passed to the module should have compatible column types but do not.|  
-|[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
-|[Error 0018](error-0018.md)|Exception occurs if input dataset is not valid.|  
-|[Error 0019](error-0019.md)|Exception occurs if column is expected to contain sorted values, but it does not.|  
-|[Error 0020](error-0020.md)|Exception occurs if number of columns in some of the datasets passed to the module is too small.|  
-|[Error 0021](error-0021.md)|Exception occurs if number of rows in some of the datasets passed to the module is too small.|  
-|[Error 0022](error-0022.md)|Exception occurs if number of selected columns in input dataset does not equal to the expected number.|  
-|[Error 0023](error-0023.md)|Exception occurs if target column of input dataset is not valid for the current trainer module.|  
-|[Error 0024](error-0024.md)|Exception occurs if dataset does not contain a label column.|  
-|[Error 0025](error-0025.md)|Exception occurs if dataset does not contain a score column.|  
-|[Error 0026](error-0026.md)|Exception occurs if columns with the same name are not allowed.|  
-|[Error 0027](error-0027.md)|Exception occurs in case when two objects have to be of the same size but are not.|  
-|[Error 0028](error-0028.md)|Exception occurs in the case when column set contains duplicated column names and it is not allowed.|  
-|[Error 0029](error-0029.md)|Exception occurs in case when invalid URI is passed.|  
-|[Error 0030](error-0030.md)|Exception occurs in the case when it is not possible to download a file.|  
-|[Error 0031](error-0031.md)|Exception occurs if number of columns in column set is less than needed.|  
-|[Error 0032](error-0032.md)|Exception occurs if argument is not a number.|  
-|[Error 0033](error-0033.md)|Exception occurs if argument is Infinity.|  
-|[Error 0034](error-0034.md)|Exception occurs if more than one rating exists for a given user-item pair.|  
-|[Error 0035](error-0035.md)|Exception occurs if no features were provided for a given user or item.|  
-|[Error 0036](error-0036.md)|Exception occurs if multiple feature vectors were provided for a given user or item.|  
-|[Error 0037](error-0037.md)|Exception occurs if multiple label columns are specified and just one is allowed.|  
-|[Error 0038](error-0038.md)|Exception occurs if number of elements expected should be an exact value, but is not.|  
-|[Error 0039](error-0039.md)|Exception occurs if operation has failed.|  
-|[Error 0040](error-0040.md)|Exception occurs when calling a deprecated module.|  
-|[Error 0041](error-0041.md)|Exception occurs when calling a deprecated module.|  
-|[Error 0042](error-0042.md)|Exception occurs when it is not possible to convert column to another type.|  
-|[Error 0043](error-0043.md)|Exception occurs when element type does not explicitly implement Equals.|  
-|[Error 0044](error-0044.md)|Exception occurs when it is not possible to derive element type of column from the existing values.|  
-|[Error 0045](error-0045.md)|Exception occurs when it is not possible to create a column because of mixed element types in the source.|  
-|[Error 0046](error-0046.md)|Exception occurs when it is not possible to create directory on specified path.|  
-|[Error 0047](error-0047.md)|Exception occurs if number of feature columns in some of the datasets passed to the module is too small.|  
-|[Error 0048](error-0048.md)|Exception occurs in the case when it is not possible to open a file.|  
-|[Error 0049](error-0049.md)|Exception occurs in the case when it is not possible to parse a file.|  
+**Resolution:**
+ Revisit the module throwing this exception and validate that the column name or names are correct and that all referenced columns do exist.  
+  
+|Exception Messages|  
+|------------------------|  
+|One or more specified columns were not found|  
+|Column with name or index "{0}" not found|  
+|Column with name or index "{0}" does not exist in "{1}"|  
+ 
+
+## Error 0002  
+ Exception occurs if one or more parameters could not be parsed or converted from specified type into required by target method type.  
+  
+ This error occurs in Azure Machine Learning when you specify a parameter as input and the value type is different from the type that is expected, and implicit conversion cannot be performed.  
+  
+**Resolution:**
+ Check the module requirements and determine which value type is required (string, integer, double, etc.)  
+  
+|Exception Messages|  
+|------------------------|  
+|Failed to parse parameter|  
+|Failed to parse "{0}" parameter|  
+|Failed to parse (convert) "{0}" parameter to "{1}"|  
+|Failed to convert "{0}" parameter from "{1}" to "{2}"|  
+|Failed to convert "{0}" parameter value "{1}" from "{2}" to "{3}"|  
+|Failed to convert value "{0}" in column "{1}" from "{2}" to "{3}" with usage of the format "{4}" provided|  
+  
+
+## Error 0003  
+ Exception occurs if one or more of inputs are null or empty.  
+  
+ You will receive this error in Azure Machine Learning if any inputs or parameters to a module are null or empty.  This error might occur, for example, when you did not type in any value for a parameter. It can also happen if you chose a dataset that has missing values, or an empty dataset.  
+  
+**Resolution:**
+ 
++ Open the module that produced the exception and verify that all inputs have been specified. Ensure that all required inputs are specified. 
++ Make sure that data that is loaded from Azure storage is accessible, and that the account name or key has not changed.  
++ Check the input data for missing values, or nulls.
++ If using a query on a data source, verify that data is being returned in the format you expect. 
++ Check for typos or other changes in the specification of data.
+  
+|Exception Messages|  
+|------------------------|  
+|One or more of inputs are null or empty|  
+|Input "{0}" is null or empty|  
+  
+
+## Error 0004  
+ Exception occurs if parameter is less than or equal to specific value.  
+  
+ You will receive this error in Azure Machine Learning if the parameter in the message is below a boundary value required for the module to process the data.  
+  
+**Resolution:**
+ Revisit the module throwing the exception and modify the parameter to be greater than the specified value.  
+  
+|Exception Messages|  
+|------------------------|  
+|Parameter should be greater than boundary value.|  
+|Parameter "{0}" value should be greater than {1}.|  
+|Parameter "{0}" has value "{1}" which should be greater than {2}|  
+  
+
+
+## Error 0005  
+ Exception occurs if parameter is less than a specific value.  
+  
+ You will receive this error in Azure Machine Learning if the parameter in the message is below or equal to a boundary value required for the module to process the data.  
+  
+**Resolution:**
+ Revisit the module throwing the exception and modify the parameter to be greater than or equal to the specified value.  
+  
+|Exception Messages|  
+|------------------------|  
+|Parameter should be greater than or equal to boundary value.|  
+|Parameter "{0}" value should be greater than or equal to {1}.|  
+|Parameter "{0}" has value "{1}" which should be greater than or equal to {2}.|  
+  
+
+## Error 0006  
+ Exception occurs if parameter is greater than or equal to the specified value.  
+  
+ You will receive this error in Azure Machine Learning if the parameter in the message is greater than or equal to a boundary value required for the module to process the data.  
+  
+**Resolution:**
+ Revisit the module throwing the exception and modify the parameter to be less than the specified value.  
+  
+|Exception Messages|  
+|------------------------|  
+|Parameters mismatch. One of the parameters should be less than another.|  
+|Parameter "{0}" value should be less than parameter "{1}" value.|  
+|Parameter "{0}" has value "{1}" which should be less than {2}.|  
+  
+
+## Error 0007  
+ Exception occurs if parameter is greater than a specific value.  
+  
+ You will receive this error in Azure Machine Learning if, in the properties for the module, you specified a value that is greater than is allowed. For example, you might specify a data that is outside the range of supported dates, or you might indicate that five columns be used when only three columns are available. 
+ 
+ You might also see this error if you are specifying two sets of data that need to match in some way. For example, if you are renaming columns, and specify the columns by index, the number of names you supply must match the number of column indices. Another example might be a math operation that uses two columns, where the columns must have the same number of rows. 
+  
+**Resolution:**
+ 
+ + Open the module in question and review any numeric property settings.
+ + Ensure that any parameter values fall within the supported range of values for that property.
+ + If the module takes multiple inputs, ensure that inputs are of the same size.
+ + If the module has multiple properties that can be set, ensure that related properties have appropriate values. For example, when using [Group Data into Bins](../group-data-into-bins.md), if you use the option to specify custom bin edges, the number of bins must match the number of values you provide as bin boundaries.
+ + Check whether the dataset or data source has changed. Sometimes a value that worked with a previous version of the data will fail after the number of columns, the column data types, or the size of the data has changed.  
+  
+|Exception messages|  
+|------------------------|  
+|Parameters mismatch. One of the parameters should be less than or equal to another.|  
+|Parameter "{0}" value should be less than or equal to parameter "{1}" value.|  
+|Parameter "{0}" has value "{1}" which should be less than or equal to {2}.|  
+  
+
+## Error 0008  
+ Exception occurs if parameter is not in range.  
+  
+ You will receive this error in Azure Machine Learning if the parameter in the message is outside the bounds required for the module to process the data.  
+  
+ For example, this error is displayed if you try to use [Add Rows](../add-rows.md) to combine two datasets that have a different number of columns.  
+  
+**Resolution:**
+ Revisit the module throwing the exception and modify the parameter to be within the specified range.  
+  
+|Exception Messages|  
+|------------------------|  
+|Parameter value is not in the specified range.|  
+|Parameter "{0}" value is not in range.|  
+|Parameter "{0}" value should be in the range of [{1}, {2}].|  
+  
+
+## Error 0009  
+ Exception occurs when the Azure storage account name or container name is specified incorrectly.  
+  
+This error occurs in Azure Machine Learning Studio when you specify parameters for an Azure storage account, but the name or password cannot be resolved. Errors on passwords or account names can happen for many reasons:
+ 
+ + The account is the wrong type. Some new account types are not supported for use with Machine Learning Studio. See [Import Data](../import-data.md) for details.
+ + You entered the incorrect account name
+ + The account no longer exists
+ + The password for the storage account is wrong or has changed
+ + You didn't specify the container name, or the container does not exist
+ + You didn't fully specify the file path (path to the blob)
+   
+**Resolution:**
+
+Such problems often occur when you try to manually enter the account name, password, or container path. We recommend that you use the new wizard for the [Import Data](../import-data.md) module, which helps you look up and check names.
+
+Also check whether the account, container, or blob has been deleted. Use another Azure storage utility to verify that the account name and password have been entered correctly, and that the container exists. 
+
+Some newer account types are not supported by Azure Machine Learning. For example, the new "hot" or "cold" storage types cannot be used for machine learning. Both classic storage accounts and storage accounts created as "General purpose" work fine.
+
+If the complete path to a blob was specified, verify that the path is specified as **container/blobname**, and that both the container and the blob exist in the account.  
+  
+ The path should not contain a leading slash. For example **/container/blob** is incorrect and should be entered as **container/blob**.  
+
+### Resources
+
+See this article for an explanation of the different storage options that are supported: [Import data into Azure Machine Learning Studio from various online data sources with the Import Data module](https://docs.microsoft.com/azure/machine-learning/machine-learning-import-data-from-online-sources)
+
+### Sample experiments
+
+See these experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) for examples of how to connect to different data sources:
+
++ Input data from various sources:  This lab provides a visual guide to using many of the Azure ML data sources: [AzureML experiments and data interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1)
+
++ Azure Cosmos DB: [Reading data from Azure Cosmos DB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1)
+
++ Azure blob storage and Azure SQL Database: [Twitter Stream Analysis with Azure Machine Learning](https://gallery.cortanaintelligence.com/Tutorial/Twitter-Stream-Analysis-with-Azure-Machine-Learning)
+
++ Import otherwise unreadable data using Python: [Load non-text file from Azure Blob storage](https://gallery.cortanaintelligence.com/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1)
+
+  
+|Exception Messages|  
+|------------------------|  
+|The Azure storage account name or container name is incorrect.|  
+|The Azure storage account name "{0}" or container name "{1}" is incorrect; a container name of the format container/blob was expected.|  
+  
+
+## Error 0010  
+ Exception occurs if input datasets have column names that should match but do not.  
+  
+ You will receive this error in Azure Machine Learning if the column index in the message has different column names in the two input datasets.  
+  
+**Resolution:**
+ Use [Edit Metadata](../edit-metadata.md) or modify the original dataset to have the same column name for the specified column index.  
+  
+|Exception Messages|  
+|------------------------|  
+|Columns with corresponding index in input datasets have different names.|  
+|Column names are not the same for column {0} (zero-based) of input datasets ({1} and {2} respectively).|  
+  
+
+## Error 0011  
+ Exception occurs if passed column set argument does not apply to any of dataset columns.  
+  
+ You will receive this error in Azure Machine Learning if the specified column selection does not match any of the columns in the given dataset.  
+  
+ You can also get this error if you haven't selected a column and at least one column is required for the module to work.  
+  
+**Resolution:**
+ Modify the column selection in the module so that it will apply to the columns in the dataset.  
+  
+ If the module requires that you select a specific column, such as a label column, verify that the right column is selected.  
+  
+ If inappropriate columns are selected, remove them and rerun the experiment.  
+  
+|Exception Messages|  
+|------------------------|  
+|Specified column set does not apply to any of dataset columns.|  
+|Specified column set "{0}" does not apply to any of dataset columns.|  
+  
+
+## Error 0012  
+ Exception occurs if instance of class could not be created with passed set of arguments.  
+  
+**Resolution:**
+ This error is not actionable by the user and will be deprecated in a future release.  
+  
+|Exception Messages|  
+|------------------------|  
+|Untrained model, train model first.|  
+|Untrained model ({0}), use trained model.|  
+  
+
+## Error 0013  
+ Exception occurs if the learner passed to the module is an invalid type.  
+  
+ This error occurs whenever a trained model is incompatible with the connected scoring module. For example, connecting the output of [Train Matchbox Recommender](../train-matchbox-recommender.md) to [Score Model](../score-model.md) (instead of [Score Matchbox Recommender](../score-matchbox-recommender.md)) will generate this error when the experiment is run.  
+  
+**Resolution:**
+
+Determine the type of learner that is produced by the training module, and determine the scoring module that is appropriate for the learner. 
+
+If the model was trained using any of the specialized training modules, connect the trained model only to the corresponding specialized scoring module. 
+
+
+|Model type|Training module| Scoring module|
+|----|----|----|
+|any classifier|[Train Model](../train-model.md) or [Tune Model Hyperparameters](../tune-model-hyperparameters.md)|[Score Model](../score-model.md)|
+|any regression model|[Train Model](../train-model.md) or [Tune Model Hyperparameters](../tune-model-hyperparameters.md)|[Score Model](../score-model.md)|
+| clustering models| [Train Clustering Model](../train-clustering-model.md) or [Sweep Clustering](../sweep-clustering.md)| [Assign Data to Clusters](../assign-data-to-clusters.md)|
+| anomaly detection - One-Class SVM | [Train Anomaly Detection Model](../train-anomaly-detection-model.md) |[Score Model](../score-model.md)|
+| anomaly detection - PCA |[Train Model](../train-model.md) or [Tune Model Hyperparameters](../tune-model-hyperparameters.md)|[Score Model](../score-model.md) </br> Some additional steps are required to evaluate the model. |
+| anomaly detection - time series|  [Time Series Anomaly Detection](../time-series-anomaly-detection.md) |Model trains from data and generates scores. The module does not create a trained learner and no additional scoring is required. |
+| recommendation model| [Train Matchbox Recommender](../train-matchbox-recommender.md) | [Score Matchbox Recommender](../score-matchbox-recommender.md) |
+| image classification | [Pretrained Cascade Image Classification](../pretrained-cascade-image-classification.md) | [Score Model](../score-model.md) |
+|Vowpal Wabbit models| [Train Vowpal Wabbit Version 7-4 Model](../train-vowpal-wabbit-version-7-4-model.md) | [Score Vowpal Wabbit Version 7-4 Model](../score-vowpal-wabbit-version-7-4-model.md) |   
+|Vowpal Wabbit models| [Train Vowpal Wabbit Version 7-10 Model](../train-vowpal-wabbit-version-7-10-model.md) | [Score Vowpal Wabbit Version 7-10 Model](../score-vowpal-wabbit-version-7-10-model.md) |
+|Vowpal Wabbit models| [Train Vowpal Wabbit Version 8 Model](../score-vowpal-wabbit-version-8-model.md) | [Score Vowpal Wabbit Version 8 Model](../score-vowpal-wabbit-version-8-model.md) |
+  
+|Exception Messages|  
+|------------------------|  
+|Learner of invalid type is passed.|  
+|Learner "{0}" has invalid type.|  
+
+
+## Error 0014  
+ Exception occurs if the count of column unique values is greater than allowed.  
+  
+ This error occurs when a column contains too many unique values.  For example, you might see this error if you specify that a column be handled as categorical data, but there are too many unique values in the column to allow processing to complete. You might also see this error if there is a mismatch between the number of unique values in two inputs.   
+  
+**Resolution:**
+
+Open the module that generated the error, and identify the columns used as inputs. For some modules, you can right-click the dataset input and select **Visualize** to get statistics on individual columns, including the number of unique values and their distribution.
+
+For columns that you intend to use for grouping or categorization, take steps to reduce the number of unique values in columns. You can reduce in different ways, depending on the data type of the column. 
+
++ For text data, you might be able to use [Preprocess Text](../preprocess-text.md) to collapse similar entries. 
++ For numeric data, you can create a smaller number of bins using [Group Data into Bins](../group-data-into-bins.md), remove or truncate values using [Clip Values](../clip-values.md), or use machine learning methods such as [Principal Component Analysis](../principal-component-analysis.md) or [Learning with Counts](../data-transformation-learning-with-counts.md) to reduce the dimensionality of the data.  
+
+> [!TIP]
+> Unable to find a resolution that matches your scenario? You can provide feedback on this topic that includes the name of the module that generated the error, and the data type and cardinality of the column. We will use the information to provide more targeted troubleshooting steps for common scenarios.   
+  
+|Exception Messages|  
+|------------------------|  
+|Number of column unique values is greater than allowed.|  
+|Number of unique values in column: "{0}" exceeds tuple count of {1}.|  
+  
+
+## Error 0015  
+ Exception occurs if database connection has failed.  
+  
+ You will receive this error if you enter an incorrect SQL account name, password, database server, or database name, or if a connection with the database cannot be established due to problems with the database or server.  
+  
+**Resolution:**
+ Verify that the account name, password, database server, and database have been entered correctly, and that the specified account has the correct level of permissions. Verify that the database is currently accessible.  
+  
+|Exception Messages|  
+|------------------------|  
+|Error making database connection.|  
+|Error making database connection: {0}.|  
+  
+
+
+## Error 0016  
+ Exception occurs if input datasets passed to the module should have compatible column types but do not.  
+  
+ You will receive this error in Azure Machine Learning if the types of the columns passed in two or more datasets are not compatible with each other.  
+  
+**Resolution:**
+ Use [Edit Metadata](../edit-metadata.md), modify the original input dataset, or use [Convert to Dataset](../convert-to-dataset.md) to ensure that the types of the columns are compatible.  
+  
+|Exception Messages|  
+|------------------------|  
+|Columns with corresponding index in input datasets do have incompatible types.|  
+|Columns {0} and {1} are incompatible.|  
+|Column element types are not compatible for column {0} (zero-based) of input datasets ({1} and {2} respectively).|  
+  
+
+## Error 0017  
+ Exception occurs if a selected column uses a data type that is not supported by the current module.  
+  
+ For example, you might receive this error in Azure Machine Learning if your column selection includes a column with a data type that cannot be processed by the module, such as a string column for a math operation, or a score column where a categorical feature column is required.  
+  
+**Resolution:**
+ 1. Identify the column that is the problem.
+ 2. Review the requirements of the module.
+ 3. Modify the column to make it conform to requirements. You might need to use several of the following modules to make changes, depending on the column and the conversion you are attempting:
+    + Use [Edit Metadata](../edit-metadata.md) to change the data type of columns, or to change the column usage from feature to numeric, categorical to non-categorical, and so forth.
+    + Use [Convert to Dataset](../convert-to-dataset.md) to ensure that all included columns use data types that are supported by Azure Machine Learning.  If you cannot convert the columns, consider removing them from the input dataset.
+    + Use the [Apply SQL Transformation](../apply-sql-transformation.md) or [Execute R Script](../execute-r-script.md) modules to cast or convert any columns that cannot be modified using [Edit Metadata](../edit-metadata.md). These modules provide more flexibility for working with datetime data types.
+    + For numeric data types, you can use the [Apply Math Operation](../apply-math-operation.md) module to round or truncate values, or use the [Clip Values](../clip-values.md) module to remove out of range values.  
+ 4. As a last resort, you might need to modify the original input dataset.
+
+> [!TIP]
+> Unable to find a resolution that matches your scenario? You can provide feedback on this topic that includes the name of the module that generated the error, and the data type and cardinality of the column. We will use the information to provide more targeted troubleshooting steps for common scenarios. 
+  
+|Exception Messages|  
+|------------------------|  
+|Cannot process column of current type. The type is not supported by the module.|  
+|Cannot process column of type {0}. The type is not supported by the module.|  
+|Cannot process column "{1}" of type {0}. The type is not supported by the module.|  
+|Cannot process column "{1}" of type {0}. The type is not supported by the module. Parameter name: {2}|  
+  
+
+## Error 0018  
+ Exception occurs if input dataset is not valid.  
+  
+**Resolution:**
+ This error in Azure Machine Learning can appear in many contexts, so there is not a single resolution. In general, the error indicates that the data provided as input to a module has the wrong number of columns, or that the data type does not match requirements of the module. For example:  
+  
+-   The module requires a label column, but no column is marked as a label, or you have not selected a label column yet.  
+  
+-   The module requires that data be categorical but your data is numeric.  
+  
+-   The module requires a specific data type. For example, ratings provided to [Train Matchbox Recommender](../train-matchbox-recommender.md) can be either numeric or categorical, but cannot be floating point numbers.  
+  
+-   The data is in the wrong format.  
+  
+-   Imported data contains invalid characters, bad values, or out of range values.  
+-   The column is empty or contains too many missing values.  
+  
+ To determine the requirements and how your data might, review the help topic for the module that will be consuming the dataset as input.  
+  
+ We also recommend that you use [Summarize Data](../summarize-data.md) or [Compute Elementary Statistics](../compute-elementary-statistics.md) to profile your data, and use these modules to fix metadata and clean values: [Edit Metadata](../edit-metadata.md), [Clean Missing Data](../clean-missing-data.md), [Clip Values](../clip-values.md).  
+  
+|Exception Messages|  
+|------------------------|  
+|Dataset is not valid.|  
+|{0} contains invalid data.|  
+|{0} and {1} should be consistent column wise.|  
+  
+
+## Error 0019  
+ Exception occurs if column is expected to contain sorted values, but it does not.  
+  
+ You will receive this error in Azure Machine Learning if the specified column values are out of order.  
+  
+**Resolution:**
+ Sort the column values by manually modifying the input dataset and rerun the module.  
+  
+|Exception Messages|  
+|------------------------|  
+|Values in column are not sorted.|  
+|Values in column "{0}" are not sorted.|  
+|Values in column "{0}" of dataset "{1}" are not sorted.|  
+  
+
+## Error 0020  
+ Exception occurs if number of columns in some of the datasets passed to the module is too small.  
+  
+ You will receive this error in Azure Machine Learning if not enough columns have been selected for a module.  
+  
+**Resolution:**
+ Revisit the module and ensure that column selector has correct number of columns selected.  
+  
+|Exception Messages|  
+|------------------------|  
+|Number of columns in input dataset is less than allowed minimum.|  
+|Number of columns in input dataset is less than allowed minimum of {0} column(s).|  
+|Number of columns in input dataset "{0}" is less than allowed minimum of {1} column(s).|
+
+## Error 0021  
+ Exception occurs if number of rows in some of the datasets passed to the module is too small.  
+  
+ This error in seen in Azure Machine Learning when there are not enough rows in the dataset to perform the specified operation. For example, you might see this error if the input dataset is empty, or if you are trying to perform an operation that requires some minimum number of rows to be valid. Such operations can include (but are not limited to) grouping or classification based on statistical methods, certain types of binning, and learning with counts.  
+  
+**Resolution:**
+ 
+ + Open the module that returned the error, and check the input dataset and module properties. 
+ + Verify that the input dataset is not empty and that there are enough rows of data to meet the requirements described in module help.  
+ + If your data is loaded from an external source, make sure that the data source is available and that there is no error or change in the data definition that would cause the import process to get fewer rows.
+ + If you are performing an operation on the data upstream of the module that might affect the type of data or the number of values, such as cleaning, splitting, or join operations, check the outputs of those operations to determine the number of rows returned.  
 
 
 
+## Error 0022  
+ Exception occurs if number of selected columns in input dataset does not equal to the expected number.  
+  
+ This error in Azure Machine Learning can occur when the downstream module or operation requires a specific number of columns or inputs, and you have provided too few or too many columns or inputs. For example:  
+  
+-   You specify a single label column or key column and accidentally selected multiple columns.  
+  
+-   You are renaming columns, but provided more or fewer names than there are columns.  
+  
+-   The number of columns in the source or destination has changed or doesn't match the number of columns used by the module.  
+  
+-   You have provided a comma-separated list of values for inputs, but the number of values does not match, or multiple inputs are not supported.  
+  
+**Resolution:**
+ Revisit the module and check the column selection to ensure that the correct number of columns is selected. Verify the outputs of upstream modules, and the requirements of downstream operations.  
+  
+ If you used one of the column selection options that can select multiple columns (column indices, all features, all numeric, etc.), validate the exact number of columns returned by the selection.  
+  
+ If you are trying to specify a comma-separated list of datasets as inputs to [Unpack Zipped Datasets](../unpack-zipped-datasets.md), unpack only one dataset at a time. Multiple inputs are not supported.  
+  
+ Verify that the number or type of upstream columns has not changed.  
+  
+ If you are using a recommendation dataset to train a model, remember that the recommender expects a limited number of columns, corresponding to user-item pairs or user-item-rankings. Remove additional columns before training the model or splitting recommendation datasets. For more information, see [Split Data](../split-data.md).  
+  
+|Exception Messages|  
+|------------------------|  
+|Number of selected columns in input dataset does not equal to the expected number.|  
+|Number of selected columns in input dataset does not equal to {0}.|  
+|Column selection pattern "{0}" provides number of selected columns in input dataset not equal to {1}.|  
+|Column selection pattern "{0}" is expected to provide {1} column(s) selected in input dataset, but {2} column(s) is/are provided.|  
 
 
 
+## Error 0023  
+ Exception occurs if target column of input dataset is not valid for the current trainer module.  
+  
+ This error in Azure Machine Learning  occurs if the target column (as selected in the module parameters) is not of the valid data-type, contained all missing values, or was not categorical as expected.  
+  
+**Resolution:**
+ Revisit the module input to inspect the content of the label/target column. Make sure it does not have all missing values. If the module is expecting target column to be categorical, make sure that there are more than one distinct values in the target column.  
+  
+|Exception Messages|  
+|------------------------|  
+|Input dataset has unsupported target column.|  
+|Input dataset has unsupported target column "{0}".|  
+|Input dataset has unsupported target column "{0}" for learner of type {1}.|  
+ 
+
+## Error 0024  
+Exception occurs if dataset does not contain a label column.  
+
+ This error in Azure Machine Learning occurs when the module requires a label column and the dataset does not have a label column. For example, evaluation of a scored dataset usually requires that a label column is present to compute accuracy metrics.  
+ 
+It can also happen that a label column is present in the dataset, but not detected correctly by Azure Machine Learning.
+  
+**Resolution:**
+
++ Open the module that generated the error, and determine if a label column is present. The name or data type of the column doesn't matter, as long as the column contains a single outcome (or dependent variable) that you are trying to predict. If you are not sure which column has the label, look for a generic name such as  *Class* or *Target*. 
++  If the dataset does not include a label column, it is possible that the label column was explicitly or accidentally removed upstream. It could also be that the dataset is not the output of an upstream scoring module.
++ To explicitly mark the column as the label column, add the [Edit Metadata](../edit-metadata.md) module and connect the dataset. Select only the label column, and select **Label** from the **Fields** dropdown list. 
++ If the wrong column is chosen as the label, you can select **Clear label** from the **Fields** to fix the metadata on the column. 
+  
+|Exception Messages|  
+|------------------------|  
+|There is no label column in dataset.|  
+|There is no label column in "{0}".|  
+  
+
+## Error 0025  
+ Exception occurs if dataset does not contain a score column.  
+  
+ This error in Azure Machine Learning occurs if the input to the evaluate model does not contain valid score columns. For example, the user attempts to evaluate a dataset before it was scored with a correct trained model, or the score column was explicitly dropped upstream. This exception also occurs if the score columns on the two datasets are incompatible. For example, you might be trying to compare the accuracy of a linear regressor with that of a binary classifier.  
+  
+**Resolution:**
+ Revisit the input to the evaluate model and examine if it contains one or more score columns. If not, the dataset was not scored or the score columns were dropped in an upstream module.  
+  
+|Exception Messages|  
+|------------------------|  
+|There is no score column in dataset.|  
+|There is no score column in "{0}".|  
+|There is no score column in "{0}" that is produced by a "{1}". Score the dataset using the correct type of learner.|  
+  
+
+## Error 0026  
+ Exception occurs if columns with the same name are not allowed.  
+  
+ This error in Azure Machine Learning occurs if multiple columns have the same name. One way you may receive this error is if the dataset does not have a header row and column names are automatically assigned: Col0, Col1, etc.  
+  
+**Resolution:**
+ If columns have same name, insert a [Edit Metadata](../edit-metadata.md) module between the input dataset and the module. Use the column selector in [Edit Metadata](../edit-metadata.md) to select columns to rename, typing the new names into the **New column names** textbox.  
+  
+|Exception Messages|  
+|------------------------|  
+|Equal column names are specified in arguments. Equal column names are not allowed by module.|  
+|Equal column names in arguments "{0}" and "{1}" are not allowed. Specify different names.|  
+  
+
+## Error 0027  
+ Exception occurs in case when two objects have to be of the same size but are not.  
+  
+ This is an common error in Azure Machine Learning and can be caused by many conditions.  
+  
+**Resolution:**
+ There is no specific resolution. However, you can check for conditions such as  the following:  
+  
+-   If you are renaming columns, make sure that each list (the input columns and the list of new names) has the same number of items.  
+  
+-   If you are joining or concatenating two datasets, make sure they have the same schema.  
+  
+-   If you are joining two datasets that have multiple columns, make sure that the key columns have the same data type, and select the option **Allow duplicates and preserve column order in selection**.  
+  
+|Exception Messages|  
+|------------------------|  
+|The size of passed objects is inconsistent.|  
+|The size of "{0}" is inconsistent with size of "{1}".|  
+  
+
+## Error 0028  
+ Exception occurs in the case when column set contains duplicated column names and it is not allowed.  
+  
+ This error in Azure Machine Learning occurs when column names are duplicated; that is, not unique.  
+  
+**Resolution:**
+ If any columns have same name, add an instance of [Edit Metadata](../edit-metadata.md) between the input dataset and the module raising the error. Use the Column Selector in [Edit Metadata](../edit-metadata.md) to select columns to rename, and type the new columns names into the **New column names** textbox. If you are renaming multiple columns, ensure that the values you type in the **New column names** are unique.  
+  
+|Exception Messages|  
+|------------------------|  
+|Column set contains duplicated column name(s).|  
+|The name "{0}" is duplicated.|  
+|The name "{0}" is duplicated in "{1}".|  
+  
+
+## Error 0029  
+ Exception occurs in case when invalid URI is passed.  
+  
+ This error in Azure Machine Learning occurs in case when invalid URI is passed.  You will receive this error if any of the following conditions are true:, or.  
+  
+-   The Public or SAS URI provided for Azure Blob Storage for read or write contains an error.  
+  
+-   The time window for the SAS has expired.  
+  
+-   The Web URL via HTTP source represents a file or a loopback URI.  
+  
+-   The Web URL via HTTP contains an incorrectly formatted URL.  
+  
+-   The URL cannot be resolved by the remote source.  
+  
+**Resolution:**
+ Revisit the module and verify the format of the URI. If the data source is a Web URL via HTTP, verify that the intended source is not a file or a loopback URI (localhost).  
+  
+|Exception Messages|  
+|------------------------|  
+|Invalid Uri is passed.|  
+  
+
+## Error 0030  
+ Exception occurs in the case when it is not possible to download a file.  
+  
+ This exception in Azure Machine Learning occurs when it is not possible to download a file. You will receive this exception when an attempted read from an HTTP source has failed after three (3) retry attempts.  
+  
+**Resolution:**
+ Verify that the URI to the HTTP source is correct and that the site is currently accessible via the Internet.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unable to download a file.|  
+|Error while downloading the file: {0}.|  
+  
+
+## Error 0031  
+ Exception occurs if number of columns in column set is less than needed.  
+  
+ This error in Azure Machine Learning occurs if the number of columns selected is less than needed.  You will receive this error if the minimum required number of columns are not selected.  
+  
+**Resolution:**
+ Add additional columns to the column selection by using the **Column Selector**.  
+  
+|Exception Messages|  
+|------------------------|  
+|Number of columns in column set is less than required.|  
+|{0} column(s) should be specified. The actual number of specified columns is {1}.|  
+
+## Error 0032  
+ Exception occurs if argument is not a number.  
+  
+ You will receive this error  in Azure Machine Learning if the argument is a double or NaN.  
+  
+**Resolution:**
+ Modify the specified argument to use a valid value.  
+  
+|Exception Messages|  
+|------------------------|  
+|Argument is not a number.|  
+|"{0}" is not a number.|  
+  
+
+## Error 0033  
+ Exception occurs if argument is Infinity.  
+  
+ This error in Azure Machine Learning occurs if the argument is infinite. You will receive this error if the argument is either `double.NegativeInfinity` or `double.PositiveInfinity`.  
+  
+**Resolution:**
+ Modify the specified argument to be a valid value.  
+  
+|Exception Messages|  
+|------------------------|  
+|Argument is must be finite.|  
+|"{0}" is not finite.|  
+  
+
+## Error 0034  
+ Exception occurs if more than one rating exists for a given user-item pair.  
+  
+ This error in Azure Machine Learning occurs in recommendation if a user-item pair has more than one rating value.  
+  
+**Resolution:**
+ Ensure that the user-item pair possesses one rating value only.  
+  
+|Exception Messages|  
+|------------------------|  
+|More than one rating exists for the value(s) in dataset.|  
+|More than one rating for user {0} and item {1} in rating prediction data table.|  
+  
+
+## Error 0035  
+ Exception occurs if no features were provided for a given user or item.  
+  
+ This error in Azure Machine Learning occurs you are trying to use a recommendation model for scoring but a feature vector cannot be found.  
+  
+**Resolution:**
+
+The Matchbox recommender has certain requirements that must be met when using either item features or user features.  This error indicates that a feature vector is missing for a user or item that you provided as input.  You must ensure that a vector of features is available in the data for each user or item.  
+  
+ For example, if you trained a recommendation model using features such as the user's age, location, or income, but now want to create scores for new users who were not seen during training, you must provide some equivalent set of features (namely, age, location, and income values) for the new users in order to make appropriate predictions for them. 
+ 
+ If you do not have any features for these users, consider feature engineering to generate appropriate features.  For example, if you do not have individual user age or income values, you might generate approximate values to use for a group of users. 
+ 
+When you are scoring from a recommendation mode, you can use item or user features only if you previously used item or user features during training. For more information, see [Score Matchbox Recommender](../score-matchbox-recommender.md).
+ 
+For general information about how the Matchbox recommendation algorithm works, and how to prepare a dataset of item features or user features, see [Train Matchbox Recommender](../train-matchbox-recommender.md).  
+  
+ > [!TIP]
+ > Resolution not applicable to your case? You are welcome to send feedback on this article and provide information about the scenario, including the module and the number of rows in the column. We will use this information to provide more detailed troubleshooting steps in future.
+   
+|Exception Messages|  
+|------------------------|  
+|No features were provided for a required user or item.|  
+|Features for {0} required but not provided.|  
+  
+
+## Error 0036  
+ Exception occurs if multiple feature vectors were provided for a given user or item.  
+  
+ This error in Azure Machine Learning occurs if a feature vector is defined more than once.  
+  
+**Resolution:**
+ Ensure that the feature vector is not defined more than once.  
+  
+|Exception Messages|  
+|------------------------|  
+|Duplicate feature definition for a user or item.|  
+|Duplicate feature definition for {0}.|  
+  
+
+## Error 0037  
+ Exception occurs if multiple label columns are specified and just one is allowed.  
+  
+ This error in Azure Machine Learning occurs if more than one column is selected to be the new label column. Most supervised learning algorithms require a single column to be marked as the target or label.  
+  
+**Resolution:**
+ Make sure to select a single column as the new label column.  
+  
+|Exception Messages|  
+|------------------------|  
+|Multiple label columns are specified.|  
+  
+
+## Error 0038  
+ Exception occurs if number of elements expected should be an exact value, but is not.  
+  
+ This error in Azure Machine Learning occurs if the number of elements expected should be an exact value, but is not.  You will receive this error if the number of elements is not equal to the valid expected value.  
+  
+**Resolution:**
+ Modify the input to have the correct number of elements.  
+  
+|Exception Messages|  
+|------------------------|  
+|Number of elements is not valid.|  
+|Number of elements in "{0}" is not valid.|  
+|Number of elements in "{0}" is not equal to valid number of {1} element(s).|  
+  
+
+## Error 0039  
+ Exception occurs if an operation has failed.  
+  
+ This error in Azure Machine Learning occurs when an internal operation cannot be completed.  
+  
+**Resolution:**
+ This error is caused by many conditions and there is no specific remedy.  
+ The following table contains generic messages for this error, which are followed by a specific description of the condition. 
+ 
+ If no details are available, [send feedback](https://social.msdn.microsoft.com/forums/azure/home?forum=MachineLearning) and provide information about the modules that generated the error and related conditions.
+  
+|Exception Messages|  
+|------------------------|  
+|Operation failed.|  
+|Error while completing operation: {0}.|  
+  
+
+## Error 0040  
+ Exception occurs when calling a deprecated module.  
+  
+ This error in Azure Machine Learning is produced when calling a deprecated module.  
+  
+**Resolution:**
+ Replace the deprecated module with a supported one. See the module output log for the information about which module to use instead.  
+  
+|Exception Messages|  
+|------------------------|  
+|Accessing deprecated module.|  
+|Module "{0}" is deprecated. Use module "{1}" instead.|  
+ 
+
+## Error 0041  
+ Exception occurs when calling a deprecated module.  
+  
+ This error in Azure Machine Learning is produced when calling a deprecated module.  
+  
+**Resolution:**
+ Replace the deprecated module with a set of supported ones. This information should be visible in the module output log.  
+  
+|Exception Messages|  
+|------------------------|  
+|Accessing deprecated module.|  
+|Module "{0}" is deprecated. Use the modules "{1}" for requested functionality.|  
+ 
+
+## Error 0042  
+ Exception occurs when it is not possible to convert column to another type.  
+  
+ This error in Azure Machine Learning occurs when it is not possible to convert column to the specified type.  You will receive this error if a module requires a particular data type, such as datetime, text, a floating point number, or integer, but it is not possible to convert an existing column to the required type.  
+ 
+For example, you might select a column and try to convert it to a numeric data type for use in a math operation, and get this error if the column contained invalid data. 
+
+Another reason you might get this error if you try to use a column containing floating point numbers or many unique values as a categorical column. 
+  
+**Resolution:**
+
++ Open the help page for the module that generated the error, and verify the data type requirements.
++ Review the data types of the columns in the input dataset.
++ Inspect data originating in so-called schema-less data sources.
++ Check the dataset for missing values or special characters that might block conversion to the desired data type. 
+    + Numeric data types should be consistent: for example, check for floating point numbers in a column of integers.
+    + Look for text strings or NA values in a number column. 
+    + Boolean values can be converted to an appropriate representation depending on the required data type.
+    + Examine text columns for non-unicode characters, tab characters, or control characters
+    + Datetime data should be consistent to avoid modeling errors, but cleanup can be complex owing to the many formats. Consider using the [Execute R Script](../execute-r-script.md) or [Execute Python Script](../execute-python-script.md) modules to perform cleanup.  
++ If necessary, modify the values in the input dataset so that the column can be converted successfully. Modification might include binning, truncation or rounding operations, elimination of outliers, or imputation of missing values. See the following articles for some common data transformation scenarios in machine learning:
+    + [Clip Values](../clip-values.md) 
+    + [Clean Missing Data](../clean-missing-data.md)
+    + [Normalize Data](../normalize-data.md)
+    + [Group Data Into Bins](../group-data-into-bins.md)
+  
+ 
+> [!TIP]
+> Resolution unclear, or not applicable to your case? You are welcome to send feedback on this article and provide information about the scenario, including the module and the data type of the column. We will use this information to provide more detailed troubleshooting steps in future.  
+  
+|Exception Messages|  
+|------------------------|  
+|Not allowed conversion.|  
+|Could not convert column of type {0} to column of type {1}.|  
+|Could not convert column "{2}" of type {0} to column of type {1}.|  
+|Could not convert column "{2}" of type {0} to column "{3}" of type {1}.|  
+  
+
+## Error 0043  
+ Exception occurs when element type does not explicitly implement Equals.  
+  
+ This error in Azure Machine Learning is unused and will be deprecated.  
+  
+**Resolution:**
+ None.  
+  
+|Exception Messages|  
+|------------------------|  
+|No accessible explicit method Equals found.|  
+|Cannot compare values for column \\"{0}\\" of type {1}. No accessible explicit method Equals found.|  
 
 
+## Error 0044  
+ Exception occurs when it is not possible to derive element type of column from the existing values.  
+  
+ This error in Azure Machine Learning occurs when it is not possible to infer the type of a column or columns in a dataset. This typically happens when concatenating two or more datasets with different element types. If Azure Machine Learning is unable to determine a common type that is able to represent all the values in a column or columns without loss of information, it will generate this error.  
+  
+**Resolution:**
+ Ensure that all values in a given column in both datasets being combined are either of the same type (numeric, Boolean, categorical, string, date, etc.) or can be coerced to the same type.  
+  
+|Exception Messages|  
+|------------------------|  
+|Cannot derive element type of the column.|  
+|Cannot derive element type for column "{0}" -- all the elements are null references.|  
+|Cannot derive element type for column "{0}" of dataset "{1}" -- all the elements are null references.|  
+  
+
+## Error 0045  
+ Exception occurs when it is not possible to create a column because of mixed element types in the source.  
+  
+ This error in Azure Machine Learning is produced when the element types of two datasets being combined are different.  
+  
+**Resolution:**
+ Ensure that all values in a given column in both datasets being combined are of the same type (numeric, Boolean, categorical, string, date, etc.).  
+  
+|Exception Messages|  
+|------------------------|  
+|Cannot create column with mixed element types.|  
+|Cannot create column with ID "{0}" of mixed element types:\n\tType of data[{1}, {0}] is {2}\n\tType of data[{3}, {0}] is {4}.|  
+  
+
+## Error 0046  
+ Exception occurs when it is not possible to create directory on specified path.  
+  
+ This error in Azure Machine Learning occurs when it is not possible to create a directory on the specified path. You will receive this error if any part of the path to the output directory for a Hive Query is incorrect or inaccessible.  
+  
+**Resolution:**
+ Revisit the module and verify that the directory path is correctly formatted and that it is accessible with the current credentials.  
+  
+|Exception Messages|  
+|------------------------|  
+|Specify a valid output directory.|  
+|Directory: {0} cannot be created. Specify valid path.|  
+  
+
+## Error 0047  
+ Exception occurs if number of feature columns in some of the datasets passed to the module is too small.  
+  
+ This error in Azure Machine Learning occurs if the input dataset to training does not contain the minimum number of columns required by the algorithm. Typically either the dataset is empty or only contains training columns.  
+  
+**Resolution:**
+ Revisit the input dataset to make sure there one or more additional columns apart from the label column.  
+  
+|Exception Messages|  
+|------------------------|  
+|Number of feature columns in input dataset is less than allowed minimum.|  
+|Number of feature columns in input dataset is less than allowed minimum of {0} column(s).|  
+|Number of feature columns in input dataset "{0}" is less than allowed minimum of {1} column(s).|  
+  
+
+## Error 0048  
+ Exception occurs in the case when it is not possible to open a file.  
+  
+ This error in Azure Machine Learning occurs when it is not possible to open a file for read or write. You might receive this error for these reasons:  
+  
+-   The container or the file (blob) does not exist  
+  
+-   The access level of the file or container does not allow you to access the file  
+  
+-   The file is too large to read or the wrong format  
+  
+**Resolution:**
+ Revisit the module and the file you are trying to read.  
+  
+ Verify that the names of the container and file are correct.  
+  
+ Use the Azure classic portal or an Azure storage tool to verify that you have permission to access the file.  
+  
+ If you are trying to read an image file, make sure that it meets the requirements for image files in terms of size, number of pixels, and so forth. For more information, see [Import Images](../import-images.md).  
+  
+|Exception Messages|  
+|------------------------|  
+|Unable to open a file.|  
+|Error while opening the file: {0}.|  
 
 
-
-
-
+## Error 0049  
+ Exception occurs in the case when it is not possible to parse a file.  
+  
+ This error in Azure Machine Learning occurs when it is not possible to parse a file. You will receive this error if the file format selected in the [Import Data](../import-data.md) module does not match the actual format of the file, or if the file contains an unrecognizable character.  
+  
+**Resolution:**
+ Revisit the module and correct the file format selection if it does not match the format of the file. If possible, inspect the file to confirm that it does not contain any illegal characters.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unable to parse a file.|  
+|Error while parsing the file: {0}.|  
+  
 
 ## Error 0050  
  Exception occurs in the case when input and output files are the same.  
@@ -450,7 +1282,7 @@ See the following articles for help with Hive queries for machine learning:
 ## Error 0070  
  Exception occurs when attempting to access non-existent Azure table.  
   
- This error in Azure Machine Learning occurs when you attempt to access a non-existent Azure table. You will receive this error if you specify a table in Azure storage which does not exist when reading from or writing to Azure Table Storage. This can happen if you mistype the name of the desired table, or you have a mismatch between the target name and the storage type. For example, you intended to read from a table but entered the name of a blob instead.  
+ This error in Azure Machine Learning occurs when you attempt to access a non-existent Azure table. You will receive this error if you specify a table in Azure storage, which does not exist when reading from or writing to Azure Table Storage. This can happen if you mistype the name of the desired table, or you have a mismatch between the target name and the storage type. For example, you intended to read from a table but entered the name of a blob instead.  
   
 **Resolution:**
  Revisit the module to verify that the name of the table is correct.  
@@ -474,7 +1306,7 @@ See the following articles for help with Hive queries for machine learning:
   
 -   The schema of the dataset does not match the schema of the destination datatable.  
   
--   Column names are missing or misstyped.  
+-   Column names are missing or misspelled  
   
 -   You are writing to a table that has column names with illegal characters. Ordinarily you can enclose such column names in square brackets, but if that does not work, edit column names to use only letters and underscores (_)  
   
@@ -609,7 +1441,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
 |Exception Messages|  
 |------------------------|  
-|For dataset containing sparse feature columns number of dimensions to reduce to should be less than number of feature columns.|  
+|For dataset containing sparse feature columns number of dimensions to reduce should be less than number of feature columns.|  
  
 
 ## Error 0082  
@@ -674,7 +1506,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
 **Resolution:**
  The module supports saving the counts and rules that make up the transformation in two different formats. If you are merging count tables, verify that both tables you intend to merge use the same format.  
   
- Also, note that in general, a count-based transform can only be applied to datasets that have the same schema as the dataset on which the transform was originally created.  
+In general, a count-based transform can only be applied to datasets that have the same schema as the dataset on which the transform was originally created.  
   
  For general information, see [Learning with Counts](../data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
   
@@ -798,7 +1630,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  If you get this error when importing datasets in compressed format, verify that all contained files use one of the supported file formats, and are in Unicode format. For more information, see [Unpack Zipped Datasets](../unpack-zipped-datasets.md).  
   
- Try re-adding the desired files to a new compressed zipped folder and try to add the custom module again.  
+ Try readding the desired files to a new compressed zipped folder and try to add the custom module again.  
   
 |Exception Messages|  
 |------------------------|  
@@ -962,7 +1794,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
 ## Error 0114  
  Thrown when building a custom module fails.  
   
- This error in Azure Machine Learning is produced when a custom module build fails. This occurs when one or more custom module related errors are encountered while adding the custom module. The additional errors are reported within this error message.  
+ This error in Azure Machine Learning is produced when a custom module build fails. This occurs when one or more custom module-related errors are encountered while adding the custom module. The additional errors are reported within this error message.  
   
 **Resolution:**
  Resolve the errors reported within this exception message.  
@@ -995,7 +1827,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
 **Resolution:**
  - Open the Properties pane of the [Export Data](../export-data.md) module and verify that the database and table names are entered correctly. 
  - Review the schema of the dataset you are exporting, and make sure that the data is compatible with the destination table.
- - Verify that the SQL log in associated with the user name and password has permissions to write to the table. 
+ - Verify that the SQL sign in associated with the user name and password has permissions to write to the table. 
  - If the exception contains additional error information from SQL Server, use that information to make corrections.  
   
 |Exception Messages|  
@@ -1116,7 +1948,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This occurs when some column in the training dataset is empty.  
   
-Resolution:   
+**Resolution:**
  Use the [Clean Missing Data](../clean-missing-data.md) module to remove columns with all missing values.  
   
 |Exception Messages|  
@@ -1129,7 +1961,7 @@ Resolution:
   
  This error is produced when one or more datasets in a zip file fails to be unzipped and read correctly. You will receive this error if the unpacking fails because the zip file itself or one of the files in it is corrupt, or there is a system error while trying to unpack and expand a file.  
   
-Resolution:   
+**Resolution:**
  Use the details provided in the error message to determine how to proceed.  
   
 |Exception Messages|  
@@ -1144,7 +1976,7 @@ Resolution:
   
  This error is produced when no file name was specified for unpacking; multiple files were found in zip file. You will receive this error if the .zip file contains more than one compressed file, but you did not specify a file for extraction in the **Dataset to Unpack** text box, in the **Property** pane of the module. Currently, only one file can be extracted each time the module is run.  
   
-Resolution:   
+**Resolution:**
  The error message provides a list of the files found in the .zip file. Copy the name of the desired file and paste it into the **Dataset to Unpack** text box.  
   
 |Exception Messages|  
@@ -1158,7 +1990,7 @@ Resolution:
   
  This error is produced when the filename entered in the **Dataset to Unpack** field of the **Property** pane does not match the name of any file found in the .zip file. The most common causes of this error are a typing error or searching the wrong archive file for the file to expand.  
   
-Resolution:   
+**Resolution:**
  Revisit the module. If the name of the file you intended to decompress appears in the list of files found, copy the file name and paste it into the **Dataset to Unpack** property box. If you do not see the desired file name in the list, verify that you have the correct .zip file and the correct name for the desired file.  
   
 |Exception Messages|  
@@ -1191,7 +2023,7 @@ Resolution:
 ## Error 0135  
  Only centroid-based cluster is supported.  
   
-Resolution:   
+**Resolution:**
  You might encounter this error message if you have attempted to evaluate a clustering model that is based on a custom clustering algorithm that does not use centroids to initialize the cluster.  
   
  You can use [Evaluate Model](../evaluate-model.md) to evaluate clustering models that are based on the  [K-Means Clustering](../k-means-clustering.md) module. For custom algorithms, use the [Execute R Script](../execute-r-script.md) module to create a custom evaluation script.  
@@ -1204,7 +2036,7 @@ Resolution:
 ## Error 0136  
  No file name was returned; unable to process the file as a result.  
   
-Resolution:   
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -1214,7 +2046,7 @@ Resolution:
 ## Error 0137  
  Azure Storage SDK encountered an error converting between table properties and dataset columns during read or write.  
   
-Resolution:   
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -1226,7 +2058,7 @@ Resolution:
   
  This error occurs when the module that is running requires more memory than is available in the Azure container. This can happen if you are working with a large dataset and the current operation cannot fit into memory.  
   
-Resolution:   
+**Resolution:**
  If you are trying to read a large dataset and the operation cannot be completed, downsampling the dataset might help.  
   
  If you use the visualizations on datasets to check the cardinality of columns, only some rows are sampled. To get a full report, use [Summarize Data](../summarize-data.md). You can also use the [Apply SQL Transformation](../apply-sql-transformation.md) to check for the number of unique values in each column.  
@@ -1247,7 +2079,7 @@ Resolution:
   
  The error might also appear when a module tries to implicitly convert data to meet requirements of the current module, but the conversion is not possible.  
   
-Resolution:   
+**Resolution:**
 
 1. Review your input data and determine the exact data type of the column that you want to use, and the data type of the column that is producing the error. Sometimes you might think the data type is correct, but find that an upstream operation has modified the data type or usage of a column. Use the [Edit Metadata](../edit-metadata.md) module to reset column metadata to its original state. 
 2. Look at the module help page to verify the requirements for the specified operation. Determine which data types are supported by the current module, and what range of values is supported. 
@@ -1275,7 +2107,7 @@ Resolution:
   
  This error occurs if you connected a dataset to a module that requires multiple columns, including features, but you have provided only the label column.  
   
-Resolution:   
+**Resolution:**
  Choose at least one feature column to include in the dataset.  
   
 |Exception Messages|  
@@ -1288,7 +2120,7 @@ Resolution:
   
  This error in Azure Machine Learning occurs when there are not enough unique values in the selected column to perform the operation.  
   
-Resolution:   
+**Resolution:**
  Some operations perform statistical operations on feature and categorical columns, and if there are not enough values, the operation might fail or return an invalid result. Check your dataset to see how many values there are in the fature and label columns, and determine whether the operation you are trying to perform is statistically valid.  
   
  If the source dataset is valid, you might also check whether some upstream data manipulation or metadata operation has changed the data and removed some values.  
@@ -1304,7 +2136,7 @@ Resolution:
 ## Error 0142  
  Exception occurs when the system cannot load certificate to authenticate.  
   
-Resolution:   
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -1317,7 +2149,7 @@ Resolution:
   
  This error in Azure Machine Learning occurs when you specify an invalid URL and the module requires a valid GitHub URL.  
   
-Resolution:   
+**Resolution:**
  Verify that the URL refers to a valid GitHub repository. Other site types are not supported.  
   
 |Exception Messages|  
@@ -1330,7 +2162,7 @@ Resolution:
   
  This error in Azure Machine Learning occurs when you specify a GitHub file source using an invalid URL format.  
   
-Resolution:   
+**Resolution:**
  Check that the URL of the GitHub repository is valid and ends with \blob\ or \tree\\.  
   
 |Exception Messages|  
@@ -1343,7 +2175,7 @@ Resolution:
   
  This error in Azure Machine Learning occurs when the module fails to create the specified directory.  
   
-Resolution:   
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -1355,7 +2187,7 @@ Resolution:
   
  This error in Azure Machine Learning occurs when you are extracting files but some file names are too long when unzipped.  
   
-Resolution:   
+**Resolution:**
  Edit the file names such that combined path and file name is no longer than 248 characters.  
   
 |Exception Messages|  
@@ -1367,7 +2199,7 @@ Resolution:
   
  This error in Azure Machine Learning occurs when you cannot read or download the specified files from GitHub.  
   
-Resolution:   
+**Resolution:**
  The issue might be temporary; you might try accessing the files at another time. Or verify that you have the necessary permissions and that the source is valid.  
   
 |Exception Messages|  
@@ -1381,7 +2213,7 @@ Resolution:
   
  This error in Azure Machine Learning occurs when you are trying to create a directory or read data from storage but do not have the necessary permissions.  
   
-Resolution:   
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
