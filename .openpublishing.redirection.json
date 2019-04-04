@@ -1,6 +1,100 @@
 {
 	"redirections": [
-
+{
+			"source_path": "studio-module-reference/errors/error-0070.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0071.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0072.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0073.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0075.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0077.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0078.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0079.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0080.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0081.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0082.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0083.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0084.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0085.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0086.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0087.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0088.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0089.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/errors/error-0090.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",
+			"redirect_document_id": false
+		},
 		{
 			"source_path": "studio-module-reference/errors/error-0100.md",
 			"redirect_url": "/azure/machine-learning/studio-module-reference/error/machine-learning-module-error-codes",

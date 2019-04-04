@@ -1,7 +1,8 @@
 ---
-title: "Machine learning module error codes | Microsoft Docs"
+title: Troubleshoot Studio module errors in Azure Machine Learning
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+description: Troubleshoot module exceptions in Azure Machine Learning Studion using error codes
+ms.date: 04/10/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -10,19 +11,17 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Machine learning module error codes
+# Troubleshoot module exceptions in Azure Machine Learning using error codes
 
-This topic lists some of the errors that are reported from modules in Azure Machine Learning Studio, either when an experiment fails, or when you are editing the properties of the module. 
+Learn about the the error messages and exception codes you might encounter using  modules in Azure Machine Learning Studio. 
 
-## Error resolution
-
-To resolve the issue, click the error name in the following table and read about common causes. There are two ways to get the full text of an error message in Studio:  
-  
+To resolve the issue, look for the error in this article to read about common causes. There are two ways to get the full text of an error message in Studio:  
+ 
 - Click the link, **View Output Log**, in the right pane and scroll to the bottom of the. The detailed error message is displayed in the last two lines of the window.  
   
 - Select the module that has the error, and click the red X. Only the pertinent error text is displayed.  
   
- If the error message text is not helpful, send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the Azure Machine Learning forum and post a question.  
+If the error message text is not helpful, send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the [Azure Machine Learning STUDIO forum](https://aka.ms/aml-forum-studio) and post a question.  
   
 ###  <a name="errors"></a> Exceptions list  
   
@@ -98,29 +97,323 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0067](error-0067.md)|Exception occurs if a dataset has a different number of columns than expected.|  
 |[Error 0068](error-0068.md)|Exception occurs if the specified Hive script is not correct.|  
 |[Error 0069](error-0069.md)|Exception occurs if the specified SQL script is not correct.|  
-|[Error 0070](error-0070.md)|Exception occurs when attempting to access non-existent Azure table.|  
-|[Error 0071](error-0071.md)|Exception occurs if provided credentials are incorrect.|  
-|[Error 0072](error-0072.md)|Exception occurs in the case of connection timeout.|  
-|[Error 0073](error-0073.md)|Exception occurs if an error occurs while converting a column to another type.|  
-|[Error 0074](error-0074.md)|Exception occurs when the Metadata Editor tries to convert a sparse column to categorical.|  
-|[Error 0075](error-0075.md)|Exception occurs when an invalid binning function is used when quantizing a dataset.|  
-|[Error 0077](error-0077.md)|Exception occurs when unknown blob file writes mode passed.|  
-|[Error 0078](error-0078.md)|Exception occurs when the HTTP option for Import Data receives a 3xx status code indicating redirection.|  
-|[Error 0079](error-0079.md)|Exception occurs if Azure storage container name is specified incorrectly.|  
-|[Error 0080](error-0080.md)|Exception occurs when column with all values missing is not allowed by module.|  
-|[Error 0081](error-0081.md)|Exception occurs in PCA module if number of dimensions to reduce to is equal to number of feature columns in input dataset, containing at least one sparse feature column.|  
-|[Error 0082](error-0082.md)|Exception occurs when a model cannot be successfully deserialized.|  
-|[Error 0083](error-0083.md)|Exception occurs if dataset used for training cannot be used for concrete type of learner.|  
-|[Error 0084](error-0084.md)|Exception occurs when scores produced from an R Script are evaluated. This is currently unsupported.|  
-|[Error 0085](error-0085.md)|Exception occurs when script evaluation fails with an error.|  
-|[Error 0086](error-0086.md)|Exception occurs when a counting transform is invalid.|  
-|[Error 0087](error-0087.md)|Exception occurs when an invalid count table type is specified for learning with counts modules.|  
-|[Error 0088](error-0088.md)|Exception occurs when an invalid counting type is specified for learning with counts modules.|  
-|[Error 0089](error-0089.md)|Exception occurs when the specified number of classes is less than the actual number of classes in a dataset used for counting.|  
-|[Error 0090](error-0090.md)|Exception occurs when Hive table creation fails.|  
 
 
 
+
+
+
+## Error 0070  
+ Exception occurs when attempting to access non-existent Azure table.  
+  
+ This error in Azure Machine Learning occurs when you attempt to access a non-existent Azure table. You will receive this error if you specify a table in Azure storage which does not exist when reading from or writing to Azure Table Storage. This can happen if you mistype the name of the desired table, or you have a mismatch between the target name and the storage type. For example, you intended to read from a table but entered the name of a blob instead.  
+  
+**Resolution :**
+ Revisit the module to verify that the name of the table is correct.  
+  
+|Exception Messages|  
+|------------------------|  
+|Azure table does not exist.|  
+|Azure table "{0}" does not exist.|  
+  
+## Error 0071  
+ Exception occurs if provided credentials are incorrect.  
+  
+ This error in Azure Machine Learning occurs if the provided credentials are incorrect.  
+  
+ You might also receive this error if the module cannot connect to an HDInsight cluster.  
+  
+**Resolution :**
+ Review the inputs to the module and verify the account name and password.  
+  
+ Check for the following issues that can cause an error:  
+  
+-   The schema of the dataset does not match the schema of the destination datatable.  
+  
+-   Column names are missing or misstyped.  
+  
+-   You are writing to a table that has column names with illegal characters. Ordinarily you can enclose such column names in square brackets , but if that does not work, edit column names to use only letters and underscores (_)  
+  
+-   Strings that you are trying to write contain single quotation marks  
+  
+ If you are trying to connect to an HDInsight cluster, verify that the target cluster is accessible with the supplied credentials.  
+  
+|Exception Messages|  
+|------------------------|  
+|Incorrect credentials are passed.|  
+|Incorrect username "{0}" or password is passed|  
+  
+
+## Error 0072  
+ Exception occurs in the case of connection timeout.  
+  
+ This error in Azure Machine Learning occurs when a connection times out. You will receive this error if there are currently connectivity issues with the data source or destination, such as slow internet connectivity, or if the dataset is very large and/or the SQL query to read in the data performs complicated processing.  
+  
+**Resolution :**
+ Determine whether there are currently issues with slow connections to Azure storage or the internet.  
+  
+|Exception Messages|  
+|------------------------|  
+|Connection timeout occured.|  
+  
+
+## Error 0073  
+ Exception occurs if an error occurs while converting a column to another type.  
+  
+ This error in Azure Machine Learning occurs when it is not possible to convert column to another type.  You will receive this error if a module requires a particular type and it is not possible to convert the column to the new type.  
+  
+**Resolution :**
+ Modify the input dataset so that the column can be converted based on the inner exception.  
+  
+|Exception Messages|  
+|------------------------|  
+|Failed to convert column.|  
+|Failed to convert column to {0}.|  
+  
+
+## Error 0074  
+ Exception occurs when the [Edit Metadata](../edit-metadata.md) tries to convert a sparse column to categorical.  
+  
+ This error in Azure Machine Learning occurs when the [Edit Metadata](../edit-metadata.md) tries to convert a sparse column to categorical.  You will receive this error when trying to convert sparse columns to categorical with the **Make categorical** option.  Azure machine Learning does not support sparse categorical arrays, so the module will fail.  
+  
+**Resolution :**
+ Make the column dense by using [Convert to Dataset](../convert-to-dataset.md) first or do not convert the column to categorical.  
+  
+|Exception Messages|  
+|------------------------|  
+|Sparse columns cannot be converted to Categorical.|  
+  
+
+## Error 0075  
+Exception occurs when an invalid binning function is used when quantizing a dataset.  
+  
+This error in Azure Machine Learning occurs when you are trying to bin data using an unsupported method, or when the parameter combinations are invalid.  
+  
+**Resolution :**
+
+Error handling for this event was introduced in an earlier version of Azure Machine Learning that allowed more customization of binning methods. Currently all binning methods are based on a selection from a dropdown list, so technically it should no longer be possible to get this error.
+
+If you get this error when using the [Group Data into Bins](../group-data-into-bins.md) module, consider reporting the issue in the [Azure Machine Learning forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=MachineLearning), providing the data types, parameter settings, and the exact error message.  
+  
+|Exception Messages|  
+|------------------------|  
+|Invalid binning function used.|  
+  
+
+## Error 0077  
+ Exception occurs when unknown blob file write mode passed.  
+  
+ This error in Azure Machine Learning occurs if an invalid argument is passed in the specifications for a blob file destination or source.  
+  
+**Resolution :**
+ In almost all modules that import or export data to and from Azure blob storage, parameter values controlling the write mode are assigned by using a dropdown list; therefore, it is not possible to pass an invalid value, and this error should not appear. This error will be deprecated in a later release.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unsupported blob write mode.|  
+|Unsupported blob write mode: {0}.|  
+  
+
+## Error 0078  
+ Exception occurs when the HTTP option for [Import Data](../import-data.md) receives a 3xx status code indicating redirection.  
+  
+ This error in Azure Machine Learning occurs when the HTTP option for [Import Data](../import-data.md) receives a 3xx (301, 302, 304, etc.) status code indicating redirection. You will receive this error if you attempt to connect to an HTTP source that redirects the browser to another page. For security reasons, redirecting websites are not allowed as data sources for Azure Machine Learning.  
+  
+**Resolution :**
+ If the website is a trusted website, enter the redirected URL directly.  
+  
+|Exception Messages|  
+|------------------------|  
+|Http redirection not allowed|  
+  
+
+## Error 0079  
+ Exception occurs if Azure storage container name is specified incorrectly.  
+  
+ This error in Azure Machine Learning occurs if the Azure storage container name is specified incorrectly. You will receive this error if you have not specified both the container and the blob (file) name using **the Path to blob beginning with container** option when writing to Azure Blob Storage.  
+  
+**Resolution :**
+ Revisit the [Export Data](../export-data.md) module and verify that the specified path to the blob contains both the container and the file name, in the format **container/filename**.  
+  
+|Exception Messages|  
+|------------------------|  
+|The Azure storage container name is incorrect.|  
+|The Azure storage container name "{0}" is incorrect; a container name of the format container/blob was expected.|  
+  
+
+## Error 0080  
+ Exception occurs when column with all values missing is not allowed by module.  
+  
+ This error in Azure Machine Learning is produced when one or more of the columns consumed by the module contains all missing values. For example, if a module is computing aggregate statistics for each column, it cannot operate on a column containing no data. In such cases, module execution is halted with this exception.  
+  
+**Resolution :**
+ Revisit the input dataset and remove any columns that contain all missing values.  
+  
+|Exception Messages|  
+|------------------------|  
+|Columns with all values missing are not allowed.|  
+|Column {0} has all values missing.|  
+  
+
+## Error 0081  
+ Exception occurs in PCA module if number of dimensions to reduce to is equal to number of feature columns in input dataset, containing at least one sparse feature column.  
+  
+ This error in Azure Machine Learning is produced if the following conditions are met: (a) the input dataset has at least one sparse column and (b) the final number of dimensions requested is the same as the number of input dimensions.  
+  
+**Resolution :**
+ Consider reducing the number of dimensions in the output to be fewer than the number of dimensions in the input. This is typical in applications of PCA.  For more information, see [Principal Component Analysis](../principal-component-analysis.md).  
+  
+|Exception Messages|  
+|------------------------|  
+|For dataset containing sparse feature columns number of dimensions to reduce to should be less than number of feature columns.|  
+ 
+
+## Error 0082  
+ Exception occurs when a model cannot be successfully deserialized.  
+  
+ This error in Azure Machine Learning occurs when a saved machine learning model or transform cannot be loaded by a newer version of the Azure Machine Learning runtime as a result of a breaking change.  
+  
+**Resolution :**
+ The training experiment that produced the model or transform must be rerun and the model or transform must be resaved.  
+  
+|Exception Messages|  
+|------------------------|  
+|Model could not be deserialized because it is likely serialized with an older serialization format. Please retrain and re-save the model.|  
+  
+
+## Error 0083  
+ Exception occurs if dataset used for training cannot be used for concrete type of learner.  
+  
+ This error in Azure Machine Learning is produced when the dataset is incompatible with the learner being trained. For example, the dataset might contain at least one missing value in each row, and as a result, the entire dataset would be skipped during training. In other cases, some machine learning algorithms such as anomaly detection do not expect labels to be present and can throw this exception if labels are present in the dataset.  
+  
+**Resolution :**
+ Consult the documentation of the learner being used to check requirements for the input dataset. Examine the columns to see all required columns are present.  
+  
+|Exception Messages|  
+|------------------------|  
+|Dataset used for training is invalid.|  
+|{0} contains invalid data for training.|  
+|{0} contains invalid data for training. Learner type: {1}.|  
+  
+
+## Error 0084  
+ Exception occurs when scores produced from an R Script are evaluated. This is currently unsupported.  
+  
+ This error in Azure Machine Learning occurs if you try to use one of the modules for evaluating a model with output from an R script that contains scores.  
+  
+**Resolution :**
+  
+|Exception Messages|  
+|------------------------|  
+|Evaluating scores produced by R is currently unsupported.|  
+  
+
+## Error 0085  
+ Exception occurs when script evaluation fails with an error.  
+  
+ This error in Azure Machine Learning occurs when you are running custom script that contains syntax errors.  
+  
+**Resolution :**
+ Review your code in an external editor and check for errors.  
+  
+|Exception Messages|  
+|------------------------|  
+|Error during evaluation of script.|  
+|The following error occurred during script evaluation, please view the output log for more information: ---------- Start of error message from {0} interpreter ---------- {1} ---------- End of error message from {0}  interpreter  ----------|  
+  
+
+## Error 0086  
+ Exception occurs when a counting transform is invalid.  
+  
+ This error in Azure Machine Learning occurs when you select a transformation based on a count table, but the selected transform is incompatible with the current data, or with the new count table.  
+  
+**Resolution :**
+ The module supports saving the counts and rules that make up the transformation in two different formats. If you are merging count tables, verify that both tables you intend to merge use the same format.  
+  
+ Also, note that in general, a count-based transform can only be applied to datasets that have the same schema as the dataset on which the transform was originally created.  
+  
+ For general information, see [Learning with Counts](../data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
+  
+-   [Merge Count Transform](../merge-count-transform.md)  
+  
+-   [Import Count Table](../import-count-table.md)  
+  
+-   [Modify Count Table Parameters](../modify-count-table-parameters.md)  
+  
+|Exception Messages|  
+|------------------------|  
+|Invalid counting transform specified.|  
+|The counting transform at input port '{0}' is invalid.|  
+|The counting transform at input port '{0}' cannot be merged with the counting transform at input port '{1}'. Please check to verify the metadata used for counting matches.|  
+  
+
+## Error 0087  
+ Exception occurs when an invalid count table type is specified for learning with counts modules.  
+  
+ This error in Azure Machine Learning occurs when you try to import an existing count table, but the table is incompatible with the current data, or with the new count table.  
+  
+**Resolution :**
+ There are different formats for saving the counts and rules that make up the transformation. If you are merging count tables, verify that both use the same format.  
+  
+ Generally, a count-based transform can only be applied to datasets that have the same schema as the dataset on which the transform was originally created.  
+  
+ For general information, see [Learning with Counts](../data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
+  
+
+## Error 0088  
+ Exception occurs when an invalid counting type is specified for learning with counts modules.  
+  
+ This error in Azure Machine Learning occurs when you try to use a  different counting method than is supported for count-based featurization.  
+  
+**Resolution :**
+ In general, counting methods are chosen from a dropdown list, so you should not see this error.  
+  
+ For general information, see [Learning with Counts](../data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
+  
+-   [Merge Count Transform](../merge-count-transform.md)  
+  
+-   [Import Count Table](../import-count-table.md)  
+  
+-   [Modify Count Table Parameters](../modify-count-table-parameters.md)  
+  
+|Exception Messages|  
+|------------------------|  
+|Invalid counting type is specified.|  
+|The specified counting type '{0}' is not a valid counting type.|  
+  
+
+## Error 0089  
+ Exception occurs when the specified number of classes is less than the actual number of classes in a dataset used for counting.  
+  
+ This error in Azure Machine Learning occurs when you are creating a count table and the label column contains a different number of classes than you specified in the module parameters.  
+  
+**Resolution :**
+ Check your dataset and find out exactly how many distinct values (possible classes) there are in the label column. When you create the count table, you must specify at least this number of classes.  
+  
+ The count table cannot automatically determine the number of classes available.  
+  
+ When you create the count table you cannot specify 0 or any number that is less than the actual number of classes in the label column.  
+  
+|Exception Messages|  
+|------------------------|  
+|The number of classes is incorrect. Please make sure that the number of classes you specify in the parameter pane is greater than or equal to the number of classes in the label column.|  
+|The number of classes specified is '{0}', which is not greater than a label value '{1}' in the data set used to count. Please make sure that the number of classes you specify in the parameter pane is greater than or equal to the number of classes in the label column.|  
+  
+
+## Error 0090  
+ Exception occurs when Hive table creation fails.  
+  
+ This error in Azure Machine Learning occurs when you are using [Export Data](../export-data.md) or another option to save data to an HDInsight cluster and the specified Hive table cannot be created.  
+  
+**Resolution :**
+ Check the Azure storage account name associated with the cluster and verify that you are using the same account in the module properties.  
+  
+|Exception Messages|  
+|------------------------|  
+|The Hive table could not be created. For a HDInsight cluster, please ensure the Azure storage account name associated with cluster is the same as what is passed in through the module parameter.|  
+|The Hive table "{0}" could not be created. For a HDInsight cluster, please ensure the Azure storage account name associated with cluster is the same as what is passed in through the module parameter.|  
+|The Hive table "{0}" could not be created. For a HDInsight cluster, please ensure the Azure storage account name associated with cluster is "{1}".|  
+ 
 
 ## Error 0100  
  Exception occurs when an unsupported language is specified for a custom module.  
