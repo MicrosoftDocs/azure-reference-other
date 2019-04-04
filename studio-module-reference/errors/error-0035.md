@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0035  
+## Error 0035  
  Exception occurs if no features were provided for a given user or item.  
   
  This error in Azure Machine Learning occurs you are trying to use a recommendation model for scoring but a feature vector cannot be found.  
   
-## Resolution  
+**Resolution :**
 
 The Matchbox recommender has certain requirements that must be met when using either item features or user features.  This error indicates that a feature vector is missing for a user or item that you provided as input.  You must ensure that a vector of features is available in the data for each user or item.  
   
@@ -42,4 +42,4 @@ For general information about how the Matchbox recommendation algorithm works, a
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

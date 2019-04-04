@@ -128,23 +128,220 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0107](error-0107.md)|Thrown when a module definition file defines an unsupported output type|  
 |[Error 0108](error-0108.md)|Thrown when a module definition file defines more input or output ports than are supported|  
 |[Error 0109](error-0109.md)|Thrown when a module definition file defines a column picker incorrectly|  
-|[Error 0110](error-0110.md)|Thrown when a module definition file defines a column picker that references a non-existent input port ID|  
-|[Error 0111](error-0111.md)|Thrown when a module definition file defines an invalid property|  
-|[Error 0112](error-0112.md)|Thrown when a module definition file cannot be parsed|  
-|[Error 0113](error-0113.md)|Thrown when a module definition file contains errors|  
-|[Error 0114](error-0114.md)|Thrown when building a custom module fails|  
-|[Error 0115](error-0115.md)|Thrown when a custom module default script has an unsupported extension|  
-|[Error 0121](error-0121.md)|Thrown when SQL write fails because the table is not writeable|  
-|[Error 0122](error-0122.md)|Exception occurs if multiple weight columns are specified and just one is allowed.|  
-|[Error 0123](error-0123.md)|Exception occurs if column of vectors is specified to be Label column.|  
-|[Error 0124](error-0124.md)|Exception occurs if non-numeric or categorical column is specified to be the weight column.|  
-|[Error 0125](error-0125.md)|Thrown when schema for multiple datasets do not match.|  
-|[Error 0126](error-0126.md)|Exception occurs if the user specifies a SQL domain that is not supported in Azure ML.|  
-|[Error 0127](error-0127.md)|Image pixel size exceeds allowed limit.|  
-|[Error 0128](error-0128.md)|Number of conditional probabilities for categorical columns exceeds limit.|  
-|[Error 0129](error-0129.md)|Number of columns in the dataset exceeds allowed limit.|  
 
 
+
+
+
+## Error 0110  
+ Thrown when a module definition file defines a column picker that references a non existent input port ID  
+  
+ This error in Azure Machine Learning is produced when the *portId* property within the Properties element of an Arg of type ColumnPicker does not match the Id value of an input port.  
+  
+**Resolution :**
+ Make sure the portId property matches the id value of an input port defined in the custom module xml definition.  
+  
+|Exception Messages|  
+|------------------------|  
+|Column picker references a non existent input port ID.|  
+|Column picker references a non existent input port ID '{0}'.|  
+  
+
+## Error 0111  
+ Thrown when a module definition file defines an invalid property  
+  
+ This error in Azure Machine Learning is produced when an invalid property is assigned to an element in the custom module XML definition.  
+  
+**Resolution :**
+ Make sure the property is supported by the custom module element.  
+  
+|Exception Messages|  
+|------------------------|  
+|Property definition is invalid.|  
+|Property definition '{0}' is invalid.|  
+  
+
+## Error 0112  
+ Thrown when a module definition file cannot be parsed  
+  
+ This error in Azure Machine Learning is produced when there is an error in the xml format that prevents the custom module XML definition from being parsed as a valid XML file.  
+  
+**Resolution :**
+ Ensure that each element is opened and closed correctly. Make sure that there are no errors in the XML formatting.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unable to parse module definition file.|  
+|Unable to parse module definition file '{0}'.|  
+  
+
+## Error 0113  
+ Thrown when a module definition file contains errors.  
+  
+ This error in Azure Machine Learning is produced when the custom module XML definition file can be parsed but contains errors, such as definition of elements not supported by custom modules.  
+  
+**Resolution :**
+ Make sure the custom module definition file defines elements and properties that are supported by custom modules.  
+  
+|Exception Messages|  
+|------------------------|  
+|Module definition file contains errors.|  
+|Module definition file '{0}' contains errors.|  
+|Module definition file '{0}' contains errors. {1}|  
+  
+
+## Error 0114  
+ Thrown when building a custom module fails.  
+  
+ This error in Azure Machine Learning is produced when a custom module build fails. This occurs when one or more custom module related errors are encountered while adding the custom module. The additional errors are reported within this error message.  
+  
+**Resolution :**
+ Resolve the errors reported within this exception message.  
+  
+|Exception Messages|  
+|------------------------|  
+|Failed to build custom module.|  
+|Custom module build failed with error(s): {0}|  
+  
+
+## Error 0115  
+ Thrown when a custom module default script has an unsupported extension.  
+  
+ This error in Azure Machine Learning occurs when you provide a script for a custom module that uses an unknown filname extension.  
+  
+**Resolution :**
+ Verify the file format and filename extension of any script files included in the custom module.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unsupported extention for default script.|  
+|Unsupported file extention {0} for default script.|  
+  
+
+## Error 0121  
+ Thrown when SQL write fails because the table is unwriteable  
+  
+ This error in Azure Machine Learning is produced when you are using the [Export Data](../export-data.md) module to save results to a table in a SQL database, and the table cannot be written to. Typically, you will see this error if the [Export Data](../export-data.md) module successfully establishes a connection with the SQL Server instance, but is then unable to write the contents of the Azure ML dataset to the table.  
+  
+**Resolution :**
+ - Open the Properties pane of the [Export Data](../export-data.md) module and verify that the database and table names are entered correctly. 
+ - Review the schema of the dataset you are exporting, and make sure that the data is compatile with the destination table.
+ - Verify that the SQL login associated with the user name and password has permissions to write to the table. 
+ - If the exception contains additional error information from SQL Server, use that information to make corrections.  
+  
+|Exception Messages|  
+|------------------------|  
+|Connected to server, unable to write to table.|  
+|Unable to write to Sql table: {0}|  
+
+
+## Error 0122  
+ Exception occurs if multiple weight columns are specified and just one is allowed.  
+  
+ This error in Azure Machine Learning occurs when too many columns have been selected as weight columns.  
+  
+**Resolution :**
+ Review the input dataset and its metadata. Ensure that only one column contains weights.  
+  
+|Exception Messages|  
+|------------------------|  
+|Multiple weight columns are specified.|  
+
+
+## Error 0123  
+ Exception occurs if column of vectors is specified to Label column.  
+  
+ This error in Azure Machine Learning occurs if you use a vector as the label column.  
+  
+**Resolution :**
+ Change the data format of the column if necessary, or choose a different column.  
+  
+|Exception Messages|  
+|------------------------|  
+|Column of vectors is specified as Label column.|  
+
+
+## Error 0124  
+ Exception occurs if non-numeric columns is specified to be the weight column.  
+  
+**Resolution :**
+  
+|Exception Messages|  
+|------------------------|  
+|Non-numeric column is specified as the weight column.|  
+  
+
+
+## Error 0125  
+ Thrown when schema for multiple datasets do not match.  
+  
+**Resolution :**
+  
+|Exception Messages|  
+|------------------------|  
+|Dataset schema does not match.|  
+
+
+## Error 0126  
+ Exception occurs if the user specifies a SQL domain that is not supported in Azure ML.  
+  
+ This error is produced when the user specifies a SQL domain that is not supported in Azure Machine Learning. You will receive this error if you are attempting to connect to a database server in a domain that is not whitelisted. Currently, the allowed SQL domains are: ".database.windows.net", ".cloudapp.net", or ".database.secure.windows.net". That is, the server must be an Azure SQL server or a server in a virtual machine on Azure.  
+  
+**Resolution :**
+ Revisit the module. Verify that the SQL database server belongs to one of the accepted domains:  
+  
+-   .database.windows.net  
+  
+-   .cloudapp.net  
+  
+-   .database.secure.windows.net  
+  
+|Exception Messages|  
+|------------------------|  
+|Unsupported SQL domain.|  
+|The SQL domain {0} is not currently supported in Azure ML|  
+  
+
+## Error 0127  
+ Image pixel size exceeds allowed limit  
+  
+ This error occurs if you are reading images from an image dataset for classification and the images are larger than the model can handle.  
+  
+**Resolution :**
+ For more information about the image size and other requirements, see these topics:  
+  
+-   [Import Images](../import-images.md)  
+  
+-   [Pretrained Cascade Image Classification](../pretrained-cascade-image-classification.md)  
+  
+|Exception Messages|  
+|------------------------|  
+|Image pixel size exceeds allowed limit.|  
+|Image pixel size in the file '{0}' exceeds allowed limit: '{1}'|  
+
+
+## Error 0128  
+ Number of conditional probabilities for categorical columns exceeds limit.  
+  
+**Resolution :**
+  
+|Exception Messages|  
+|------------------------|  
+|Number of conditional probabilities for categorical columns exceeds limit.|  
+|Number of conditional probabilities for categorical columns exceeds limit. Columns '{0}' and '{1}' are the problematic pair.|  
+
+
+## Error 0129  
+ Number of columns in the dataset exceeds allowed limit.  
+  
+**Resolution :**
+  
+|Exception Messages|  
+|------------------------|  
+|Number of columns in the dataset exceeds allowed limit.|  
+|Number of columns in the dataset in '{0}' exceeds allowed.'|  
+|Number of columns in the dataset in '{0}' exceeds allowed limit of '{1}'.'|  
+|Number of columns in the dataset in '{0}' exceeds allowed '{1}' limit of '{2}'.'|  
 ## Error 0130  
  Exception occurs when all rows in the training dataset contain missing values.  
   
@@ -521,7 +718,7 @@ To get more help, we recommend that you post the detailed message that accompani
   
 
 ## More help  
-[Module error codes](../machine-learning-module-error-codes.md)
+[Module error codes](machine-learning-module-error-codes.md)
 
 Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
 + [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  

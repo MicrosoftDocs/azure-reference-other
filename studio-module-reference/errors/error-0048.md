@@ -10,7 +10,7 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0048  
+## Error 0048  
  Exception occurs in the case when it is not possible to open a file.  
   
  This error in Azure Machine Learning occurs when it is not possible to open a file for read or write. You might receive this error for these reasons:  
@@ -21,7 +21,7 @@ manager: cgronlun
   
 -   The file is too large to read or the wrong format  
   
-## Resolution  
+**Resolution :**
  Revisit the module and the file you are trying to read.  
   
  Verify that the names of the container and file are correct.  
@@ -42,4 +42,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

@@ -10,14 +10,14 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0011  
+## Error 0011  
  Exception occurs if passed column set argument does not apply to any of dataset columns.  
   
  You will receive this error in Azure Machine Learning if the specified column selection does not match any of the columns in the given dataset.  
   
  You can also get this error if you haven't selected a column and at least one column is required for the module to work.  
   
-## Resolution  
+**Resolution :**
  Modify the column selection in the module so that it will apply to the columns in the dataset.  
   
  If the module requires that you select a specific column, such as a label column, verify that the right column is selected.  
@@ -36,4 +36,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

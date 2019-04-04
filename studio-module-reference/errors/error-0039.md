@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0039  
+## Error 0039  
  Exception occurs if an operation has failed.  
   
  This error in Azure Machine Learning occurs when an internal operation cannot be completed.  
   
-## Resolution  
+**Resolution :**
  This error is caused by many conditions and there is no specific remedy.  
  The following table contains generic messages for this error, which are usually followed by a specific description of the condition. 
  
@@ -33,4 +33,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

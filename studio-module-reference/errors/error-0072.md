@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0072  
+## Error 0072  
  Exception occurs in the case of connection timeout.  
   
  This error in Azure Machine Learning occurs when a connection times out. You will receive this error if there are currently connectivity issues with the data source or destination, such as slow internet connectivity, or if the dataset is very large and/or the SQL query to read in the data performs complicated processing.  
   
-## Resolution  
+**Resolution :**
  Determine whether there are currently issues with slow connections to Azure storage or the internet.  
   
 |Exception Messages|  
@@ -29,4 +29,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

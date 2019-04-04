@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0020  
+## Error 0020  
  Exception occurs if number of columns in some of the datasets passed to the module is too small.  
   
  You will receive this error in Azure Machine Learning if not enough columns have been selected to be used for a module.  
   
-## Resolution  
+**Resolution :**
  Revisit the module and ensure that column selector has correct number of columns selected.  
   
 |Exception Messages|  
@@ -31,4 +31,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

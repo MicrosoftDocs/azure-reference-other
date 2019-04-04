@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0002  
+## Error 0002  
  Exception occurs if one or more parameters could not be parsed or converted from specified type into required by target method type.  
   
  This error occurs in Azure Machine Learning when you specify a parameter as input and the value type is different from the type that is expected, and implicit conversion cannot be performed.  
   
-## Resolution  
+**Resolution :**
  Check the module requirements and determine which value type is required (string, integer, double, etc.)  
   
 |Exception Messages|  
@@ -34,4 +34,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](machine-learning-module-error-codes.md)
+ 

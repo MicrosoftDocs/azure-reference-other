@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0003  
+## Error 0003  
  Exception occurs if one or more of inputs are null or empty.  
   
  You will receive this error in Azure Machine Learning if any inputs or parameters to a module are null or empty.  This might occur, for example, when you did not type in any value for a parameter. It can also happen if you chose a dataset that has missing values, or an empty dataset.  
   
-## Resolution  
+**Resolution :**
  
 + Open the module that produced the exception and verify that all inputs have been specified. Ensure that all required inputs are specified. 
 + Make sure that data that is loaded from Azure storage is accessible, and that the account name or key has not changed.  
@@ -35,4 +35,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](machine-learning-module-error-codes.md)
+ 

@@ -10,10 +10,10 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0050  
+## Error 0050  
  Exception occurs in the case when input and output files are the same.  
   
-### Resolution  
+#**Resolution :**
  This error in Azure Machine Learning is unused and will be deprecated.  
   
 |Exception Messages|  

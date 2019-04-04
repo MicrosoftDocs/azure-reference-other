@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0027  
+## Error 0027  
  Exception occurs in case when two objects have to be of the same size but are not.  
   
  This is an extremely common error in Azure Machine Learning and can be caused by many conditions.  
   
-## Resolution  
+**Resolution :**
  There is no specific resolution. However, you can check for conditions such as  the following:  
   
 -   If you are renaming columns, make sure that each list (the input columns and the list of new names) has the same number of items.  
@@ -36,4 +36,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0031  
+## Error 0031  
  Exception occurs if number of columns in column set is less than needed.  
   
  This error in Azure Machine Learning occurs if the number of columns selected is less than needed.  You will receive this error if the minimum required number of columns are not selected.  
   
-## Resolution  
+**Resolution :**
  Add additional columns to the column selection by using the **Column Selector**.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

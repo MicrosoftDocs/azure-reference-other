@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0082  
+## Error 0082  
  Exception occurs when a model cannot be successfully deserialized.  
   
  This error in Azure Machine Learning occurs when a saved machine learning model or transform cannot be loaded by a newer version of the Azure Machine Learning runtime as a result of a breaking change.  
   
-## Resolution  
+**Resolution :**
  The training experiment that produced the model or transform must be rerun and the model or transform must be resaved.  
   
 |Exception Messages|  
@@ -29,4 +29,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

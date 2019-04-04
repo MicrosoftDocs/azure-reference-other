@@ -10,7 +10,7 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0009  
+## Error 0009  
  Exception occurs when the Azure storage account name or container name is specified incorrectly.  
   
 This error occurs in Azure Machine Learning Studio when you specify parameters for an Azure storage account, but the name or password cannot be resolved. Errors on passwords or account names can happen for many reasons:
@@ -22,7 +22,7 @@ This error occurs in Azure Machine Learning Studio when you specify parameters f
  + You didn't specify the container name, or the container does not exist
  + You didn't fully specify the file path (path to the blob)
    
-## Resolution  
+**Resolution :**
 
 Such problems often occur when you try to manually enter the account name, password, or container path. We recommend that you use the new wizard for the [Import Data](../import-data.md) module, which helps you look up and check names.
 
@@ -64,4 +64,4 @@ See these experiments in the [Cortana Intelligence Gallery](https://gallery.cort
   
 ## See also  
 
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

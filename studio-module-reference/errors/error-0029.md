@@ -10,7 +10,7 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0029  
+## Error 0029  
  Exception occurs in case when invalid URI is passed.  
   
  This error in Azure Machine Learning occurs in case when invalid URI is passed.  You will receive this error if any of the following is true:, or.  
@@ -25,7 +25,7 @@ manager: cgronlun
   
 -   The URL cannot be resolved by the remote source.  
   
-## Resolution  
+**Resolution :**
  Revisit the module and verify the format of the URI. If the data source is a Web URL via HTTP, verify that the intended source is neither a file nor a loopback URI (localhost).  
   
 |Exception Messages|  
@@ -39,4 +39,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

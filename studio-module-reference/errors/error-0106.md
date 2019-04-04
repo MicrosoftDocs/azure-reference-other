@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0106  
+## Error 0106  
  Thrown when a module definition file defines an unsuppported input type  
   
  This error in Azure Machine Learning is produced when the type of an input port in a custom module XML definition does not match a supported type.  
   
-## Resolution  
+**Resolution :**
  Make sure that the type property of an Input element in the custom module XML definition file is a supported type.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

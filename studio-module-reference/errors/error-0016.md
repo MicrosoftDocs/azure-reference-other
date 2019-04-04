@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0016  
+## Error 0016  
  Exception occurs if input datasets passed to the module should have compatible column types but do not.  
   
  You will receive this error in Azure Machine Learning if the types of the columns passed in two or more datasets are not compatible with each other.  
   
-## Resolution  
+**Resolution :**
  Use [Edit Metadata](../edit-metadata.md), modify the original input dataset, or use [Convert to Dataset](../convert-to-dataset.md) to ensure that the types of the columns are compatible.  
   
 |Exception Messages|  
@@ -31,4 +31,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

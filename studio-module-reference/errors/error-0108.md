@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0108  
+## Error 0108  
  Thrown when a module definition file defines more input or output ports than are supported  
   
  This error in Azure Machine Learning is produced when too many input or output ports are defined in a custom module xml definition.  
   
-## Resolution  
+**Resolution :**
  Makes sure the maximum number of input and output ports defined in the custom module xml definition does not exceed the maximum number of supported ports.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

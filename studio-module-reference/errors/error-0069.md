@@ -10,14 +10,14 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0069  
+## Error 0069  
  Exception occurs if the specified SQL script is not correct.  
   
  This error in Azure Machine Learning occurs if the specified SQL script has syntax problems, or if the columns or table specified in the script is not valid. 
  
  You will receive this error if the SQL engine encounters any error while executing the query or script. The SQL error message is normally reported back in the Error Log so that you can take action based on the specific error.  
   
-## Resolution  
+**Resolution :**
  Revisit the module and inspect the SQL query for mistakes.  
   
  Verify that the query works correctly outside of Azure ML by logging in to the database server directly and running the query.  
@@ -40,4 +40,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0034  
+## Error 0034  
  Exception occurs if more than one rating exists for a given user-item pair.  
   
  This error in Azure Machine Learning occurs in recommendation if a user-item pair has more than one rating value.  
   
-## Resolution  
+**Resolution :**
  Ensure that the user-item pair possesses one rating value only.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

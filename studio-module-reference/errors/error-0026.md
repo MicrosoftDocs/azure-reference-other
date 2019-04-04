@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0026  
+## Error 0026  
  Exception occurs if columns with the same name is not allowed.  
   
  This error in Azure Machine Learning occurs if multiple columns have the same name. One way you may receive this error is if the dataset does not have a header row and column names are automatically assigned: Col0, Col1, etc.  
   
-## Resolution  
+**Resolution :**
  If columns have same name, insert a [Edit Metadata](../edit-metadata.md) module between the input dataset and the module. Use the column selector in [Edit Metadata](../edit-metadata.md) to select columns to rename, typing the new names into the **New column names** textbox.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

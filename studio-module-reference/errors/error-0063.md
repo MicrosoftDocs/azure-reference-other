@@ -10,14 +10,14 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0063  
+## Error 0063  
  This exception is raised when R script evaluation fails with an error.  
   
  This error occurs when you have provided an R script in one of the [R language modules](../r-language-modules.md) in Azure Machine Learning, and the R code contains internal syntax errors. The exception can also occur if you provide the wrong inputs to the R script. 
  
  The error can also occur if the script is too big to execute in the workspace. The maximum script size for the **Execute R Script** module is 1,000 lines or 32KB of work space, whichever is lesser.
   
-## Resolution  
+**Resolution :**
 
 1. In Azure Machine Learning Studio, right-click the module that has the error, and select **View Log**.
 2. Examine the standard error log of the module, which contains the stack trace.
@@ -51,4 +51,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

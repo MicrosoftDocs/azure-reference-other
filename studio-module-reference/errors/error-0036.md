@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0036  
+## Error 0036  
  Exception occurs if multiple feature vectors were provided for a given user or item.  
   
  This error in Azure Machine Learning occurs if a feature vector is defined more than once.  
   
-## Resolution  
+**Resolution :**
  Ensure that the feature vector is not defined more than once.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

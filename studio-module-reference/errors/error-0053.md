@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0053  
+## Error 0053  
  Exception occurs in the case when there are no user features or items for machbox reccomendations.  
   
  This error in Azure Machine Learning is produced when a feature vector cannot be found.  
   
-## Resolution  
+**Resolution :**
  Ensure that a feature vector is present in the input dataset.  
   
 |Exception Messages|  
@@ -29,4 +29,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

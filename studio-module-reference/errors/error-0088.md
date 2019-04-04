@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0088  
+## Error 0088  
  Exception occurs when an invalid counting type is specified for learning with counts modules.  
   
  This error in Azure Machine Learning occurs when you try to use a  different counting method than is supported for count-based featurization.  
   
-## Resolution  
+**Resolution :**
  In general, counting methods are chosen from a dropdown list, so you should not see this error.  
   
  For general information, see [Learning with Counts](../data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
@@ -38,4 +38,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

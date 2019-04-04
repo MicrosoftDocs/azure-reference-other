@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0101  
+## Error 0101  
  All port and parameter ID's must be unique.  
   
  This error in Azure Machine Learning occurs when one or more ports or parameters are assigned the same id value in a custom module XML definition file.  
   
-## Resolution  
+**Resolution :**
  Check that the id values across all ports and parameters are unique. Save the xml file, update the custom module zip package and try to add the custom module again.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

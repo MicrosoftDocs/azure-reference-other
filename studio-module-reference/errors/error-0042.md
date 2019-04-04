@@ -10,7 +10,7 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0042  
+## Error 0042  
  Exception occurs when it is not possible to convert column to another type.  
   
  This error in Azure Machine Learning occurs when it is not possible to convert column to the specified type.  You will receive this error if a module requires a particular data type, such as datetime, text, a floating point number, or integer, but it is not possible to convert an existing column to the required type.  
@@ -19,7 +19,7 @@ For example, you might select a column and try to convert it to a numeric data t
 
 Another reason you might get this error if you try to use a column containing floating point numbers or many unique values as a categorical column. 
   
-## Resolution  
+**Resolution :**
 
 + Open the help page for the module that generated the error, and verify the data type requirements.
 + Review the data types of the columns in the input dataset.
@@ -54,4 +54,4 @@ Another reason you might get this error if you try to use a column containing fl
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

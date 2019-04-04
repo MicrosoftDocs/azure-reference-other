@@ -10,14 +10,14 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0008  
+## Error 0008  
  Exception occurs if parameter is not in range.  
   
  You will receive this error in Azure Machine Learning if the parameter in the message is outside the bounds required for the module to process the data.  
   
  For example, this error is displayed if you try to use [Add Rows](../add-rows.md) to combine two datasets that have a different number of columns.  
   
-## Resolution  
+**Resolution :**
  Revisit the module throwing the exception and modify the parameter to be within the specified range.  
   
 |Exception Messages|  
@@ -33,4 +33,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](machine-learning-module-error-codes.md)
+ 

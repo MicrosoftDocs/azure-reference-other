@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0010  
+## Error 0010  
  Exception occurs if input datasets have column names that should match but do not.  
   
  You will receive this error in Azure Machine Learning if the column index in the message has different column names in the two input datasets.  
   
-## Resolution  
+**Resolution :**
  Use [Edit Metadata](../edit-metadata.md) or modify the original dataset to have the same column name for the specified column index.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

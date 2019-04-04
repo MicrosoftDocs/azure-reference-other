@@ -10,10 +10,10 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0051  
+## Error 0051  
  Exception occurs in the case when several output files are the same.  
   
-### Resolution  
+#**Resolution :**
  This error in Azure Machine Learning is unused and will be deprecated.  
   
 |Exception Messages|  

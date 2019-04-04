@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0005  
+## Error 0005  
  Exception occurs if parameter is less than a specific value.  
   
  You will receive this error in Azure Machine Learning if the parameter in the message is below or equal to a boundary value required for the module to process the data.  
   
-## Resolution  
+**Resolution :**
  Revisit the module throwing the exception and modify the parameter to be greater than or equal to the specified value.  
   
 |Exception Messages|  
@@ -31,4 +31,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](machine-learning-module-error-codes.md)
+ 

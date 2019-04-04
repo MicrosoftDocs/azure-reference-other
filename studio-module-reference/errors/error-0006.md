@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0006  
+## Error 0006  
  Exception occurs if parameter is greater than or equal to the specified value.  
   
  You will receive this error in Azure Machine Learning if the parameter in the message is greater than or equal to a boundary value required for the module to process the data.  
   
-## Resolution  
+**Resolution :**
  Revisit the module throwing the exception and modify the parameter to be less than the specified value.  
   
 |Exception Messages|  
@@ -31,4 +31,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](machine-learning-module-error-codes.md)
+ 

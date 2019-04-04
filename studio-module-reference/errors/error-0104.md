@@ -10,14 +10,14 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0104  
+## Error 0104  
  Thrown when a module definition file references a script that cannot be located  
   
  This error in Azure Machine Learning is thrown when a custom module xml definition file references a script file in the **Language** element that does not exist in the zip package. The script file path is defined in the **sourceFile** property of the **Language** element. The path to the source file is relative to the root of the zip package (same location as the module xml definition files). If the script file is in a sub folder, the relative path to the script file must be specified. For instance, if all scripts were stored in a **myScripts** folder within the zip package, the **Language** element would have to add this path to the **sourceFile** property as below. For example:  
   
  `<Language name="R" sourceFile="myScripts/CustomAddRows.R" entryPoint="CustomAddRows" />`  
   
-## Resolution  
+**Resolution :**
  Make sure that the value of the **sourceFile** property in the **Language** element of the custom module xml definition is correct and that the source file exists in the correct relative path in the zip package.  
   
 |Exception Messages|  
@@ -32,4 +32,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

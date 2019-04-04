@@ -10,7 +10,7 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0056  
+## Error 0056  
  Exception occurs if the columns you selected for an operation violates requirements.  
   
  This error in Azure Machine Learning occurs when you are choosing columns for an operation that requires the column be of a particular data type. 
@@ -19,7 +19,7 @@ manager: cgronlun
   
  For example, the [Convert to Indicator Values](../convert-to-indicator-values.md) module requires that columns be categorical, and will raise this error if you select a feature column or label column.  
   
-## Resolution  
+**Resolution :**
   
 1.  Review the data type of the columns that are currently selected. 
 
@@ -41,4 +41,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

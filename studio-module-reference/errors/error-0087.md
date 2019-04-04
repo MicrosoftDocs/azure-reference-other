@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0087  
+## Error 0087  
  Exception occurs when an invalid count table type is specified for learning with counts modules.  
   
  This error in Azure Machine Learning occurs when you try to import an existing count table, but the table is incompatible with the current data, or with the new count table.  
   
-## Resolution  
+**Resolution :**
  There are different formats for saving the counts and rules that make up the transformation. If you are merging count tables, verify that both use the same format.  
   
  Generally, a count-based transform can only be applied to datasets that have the same schema as the dataset on which the transform was originally created.  
@@ -40,4 +40,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

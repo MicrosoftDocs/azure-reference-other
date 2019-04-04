@@ -10,10 +10,10 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0012  
+## Error 0012  
  Exception occurs if instance of class could not be created with passed set of arguments.  
   
-## Resolution  
+**Resolution :**
  This error is not actionable by the user and will be deprecated in a future release.  
   
 |Exception Messages|  
@@ -22,4 +22,4 @@ manager: cgronlun
 |Untrained model ({0}), use trained model.|  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

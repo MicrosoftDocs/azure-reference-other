@@ -10,14 +10,14 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0071  
+## Error 0071  
  Exception occurs if provided credentials are incorrect.  
   
  This error in Azure Machine Learning occurs if the provided credentials are incorrect.  
   
  You might also receive this error if the module cannot connect to an HDInsight cluster.  
   
-## Resolution  
+**Resolution :**
  Review the inputs to the module and verify the account name and password.  
   
  Check for the following issues that can cause an error:  
@@ -44,4 +44,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

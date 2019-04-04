@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0068  
+## Error 0068  
  Exception occurs if the specified Hive script is not correct.  
   
  This error in Azure Machine Learning occurs if there are syntax errors in a Hive QL script, or if the Hive interpreter encounters an error while executing the query or script.  
   
-## Resolution  
+**Resolution :**
 
 The error message from Hive is normally reported back in the Error Log so that you can take action based on the specific error. 
 
@@ -45,4 +45,4 @@ See the following articles for help with Hive queries for machine learning:
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0038  
+## Error 0038  
  Exception occurs if number of elements expected should be an exact value, but is not.  
   
  This error in Azure Machine Learning occurs if the number of elements expected should be an exact value, but is not.  You will receive this error if the number of elements is not equal to the valid expected value.  
   
-## Resolution  
+**Resolution :**
  Modify the input to have the correct number of elements.  
   
 |Exception Messages|  
@@ -31,4 +31,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

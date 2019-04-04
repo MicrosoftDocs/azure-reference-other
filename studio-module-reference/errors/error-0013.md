@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0013  
+## Error 0013  
  Exception occurs if the learner passed to the module is an invalid type.  
   
  This error occurs whenever a trained model is incompatible with the connected scoring module. For example, connecting the output of [Train Matchbox Recommender](../train-matchbox-recommender.md) to [Score Model](../score-model.md) (instead of [Score Matchbox Recommender](../score-matchbox-recommender.md)) will generate this error when the experiment is run.  
   
-## Resolution  
+**Resolution :**
 
 Determine the type of learner that is produced by the training module, and determine the scoring module that is appropriate for the learner. 
 
@@ -42,4 +42,4 @@ If the model was trained using any of the specialized training modules, connect 
 |Learner "{0}" has invalid type.|  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

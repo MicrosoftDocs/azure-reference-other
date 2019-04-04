@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0109  
+## Error 0109  
  Thrown when a module definition file defines a column picker incorrectly  
   
  This error in Azure Machine Learning is produced when the syntax for a column picker argument contains an error in a custom module xml definition.  
   
-## Resolution  
+**Resolution :**
  This error is produced when the syntax for a column picker argument contains an error in a custom module xml definition.  
   
 |Exception Messages|  
@@ -29,4 +29,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

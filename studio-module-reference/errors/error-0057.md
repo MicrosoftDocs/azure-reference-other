@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0057  
+## Error 0057  
  Exception occurs when attempting to create a file or blob that already exists.  
   
  This exception occurs when you are using the [Export Data](../export-data.md) module or other module to save  results of an experiment in Azure Machine Learning to Azure blob storage, but you attempt to create a file or blob that already exists.   
   
-## Resolution  
+**Resolution :**
  
  You will receive this error only if you previously set the property **Azure blob storage write mode** to **Error**. By design, this module raises an error if you attempt to write a dataset to a blob that already exists.
  
@@ -28,4 +28,4 @@ manager: cgronlun
 |File or Blob "{0}" already exists.|  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

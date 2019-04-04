@@ -10,7 +10,7 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0065  
+## Error 0065  
  Exception occurs if Azure blob name is specified incorrectly.  
   
  This error in Azure Machine Learning occurs if the Azure blob name is specified incorrectly.  You will receive the error if:  
@@ -23,7 +23,7 @@ manager: cgronlun
   
 -   A SAS URI does not contain the name of a valid blob.  
   
-## Resolution  
+**Resolution :**
  Revisit the module throwing the exception. Verify that the specified blob does exist in the container in the storage account and that permissions allow you to see the blob. Verify that the input is of the form **containername/filename** in the case of Excel or CSV with encoding formats. Verify that a SAS URI contains the name of a valid blob.  
   
 |Exception Messages|  
@@ -38,4 +38,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0019  
+## Error 0019  
  Exception occurs if column is expected to contain sorted values, but it does not.  
   
  You will receive this error in Azure Machine Learning if the specified column values are out of order.  
   
-## Resolution  
+**Resolution :**
  Sort the column values by manually modifying the input dataset and rerun the module.  
   
 |Exception Messages|  
@@ -31,4 +31,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)

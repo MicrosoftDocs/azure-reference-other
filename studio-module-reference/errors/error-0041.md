@@ -10,12 +10,12 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Error 0041  
+## Error 0041  
  Exception occurs when calling a deprecated module.  
   
  This error in Azure Machine Learning is produced when calling a deprecated module.  
   
-## Resolution  
+**Resolution :**
  Replace the deprecated module with a set of supported ones. This information should be visible in the module output log.  
   
 |Exception Messages|  
@@ -30,4 +30,4 @@ manager: cgronlun
  >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
   
 ## See also  
- [Module error codes](../machine-learning-module-error-codes.md)
+ [Module error codes](machine-learning-module-error-codes.md)
