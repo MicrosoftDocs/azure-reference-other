@@ -118,20 +118,152 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0088](error-0088.md)|Exception occurs when an invalid counting type is specified for learning with counts modules.|  
 |[Error 0089](error-0089.md)|Exception occurs when the specified number of classes is less than the actual number of classes in a dataset used for counting.|  
 |[Error 0090](error-0090.md)|Exception occurs when Hive table creation fails.|  
-|[Error 0100](error-0100.md)|Exception occurs when an unsupported language is specified for a custom module.|  
-|[Error 0101](error-0101.md)|All port and parameter ID's must be unique.|  
-|[Error 0102](error-0102.md)|Thrown when a ZIP file cannot be extracted|  
-|[Error 0103](error-0103.md)|Thrown when a ZIP file does not contain any .xml files|  
-|[Error 0104](error-0104.md)|Thrown when a module definition file references a script that cannot be located|  
-|[Error 0105](error-0105.md)|Thrown when a module definition file defines an unsupported parameter type|  
-|[Error 0106](error-0106.md)|Thrown when a module definition file defines an unsupported input type|  
-|[Error 0107](error-0107.md)|Thrown when a module definition file defines an unsupported output type|  
-|[Error 0108](error-0108.md)|Thrown when a module definition file defines more input or output ports than are supported|  
-|[Error 0109](error-0109.md)|Thrown when a module definition file defines a column picker incorrectly|  
 
 
 
 
+## Error 0100  
+ Exception occurs when an unsupported language is specified for a custom module.  
+  
+ This error in Azure Machine Learning occurs when building a custom module and the name property of the **Language** element in a custom module xml definition file has an invalid value. Currently, the only valid value for this property is `R`. For example:  
+  
+ `<Language name="R" sourceFile="CustomAddRows.R" entryPoint="CustomAddRows" />`  
+  
+**Resolution :**
+ Verify that the name property of the **Language** element in the custom module xml definition file is set to `R`. Save the file, update the custom module zip package, and try to add the custom module again.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unsupported custom module language specified|  
+  
+
+## Error 0101  
+ All port and parameter ID's must be unique.  
+  
+ This error in Azure Machine Learning occurs when one or more ports or parameters are assigned the same id value in a custom module XML definition file.  
+  
+**Resolution :**
+ Check that the id values across all ports and parameters are unique. Save the xml file, update the custom module zip package and try to add the custom module again.  
+  
+|Exception Messages|  
+|------------------------|  
+|All port and parameter IDs for a module must be unique|  
+|Module '{0}' has duplicate port/argument ID's. All port/argument ID's must be unique for a module.|  
+  
+
+## Error 0102  
+ Thrown when a ZIP file cannot be extracted.  
+  
+ This error in Azure Machine Learning occurs when you are importing a zipped package with the .zip extension, but the package is either not a zip file, or the file does not use a supported zip format.  
+  
+**Resolution :**
+ Make sure the selected file is a valid .zip file, and that it was compressed by using one of the supported compression algorithms.  
+  
+ If you get this error when importing datasets in compressed format, verify that all contained files use one of the supported file formats, and are in Unicode format. For more information, see [Unpack Zipped Datasets](../unpack-zipped-datasets.md).  
+  
+ Try re-adding the desired files to a new compressed zipped folder and try to add the custom module again.  
+  
+|Exception Messages|  
+|------------------------|  
+|Given ZIP file is not in the correct format|  
+
+
+## Error 0103  
+ Thrown when a ZIP file does not contain any .xml files  
+  
+ This error in Azure Machine Learning occurs when the custom module zip package does not contain any module definition (.xml) files. These files need to reside in the root of the zip package (e.g. not within a subfolder.)  
+  
+**Resolution :**
+ Verify that one or more xml module definition files are in the root folder of the zip package by extracting it to a temporary folder on your disk drive. Any xml files should be directly in the folder you extracted the zip package to. Make sure when you create the zip package that you do not simply select a folder that contains xml files to zip as this will create a sub folder within the zip package with the same name as the folder you selected to zip.  
+  
+|Exception Messages|  
+|------------------------|  
+|Given ZIP file does not contain any module definition files (.xml files)|  
+
+
+## Error 0104  
+ Thrown when a module definition file references a script that cannot be located  
+  
+ This error in Azure Machine Learning is thrown when a custom module xml definition file references a script file in the **Language** element that does not exist in the zip package. The script file path is defined in the **sourceFile** property of the **Language** element. The path to the source file is relative to the root of the zip package (same location as the module xml definition files). If the script file is in a sub folder, the relative path to the script file must be specified. For instance, if all scripts were stored in a **myScripts** folder within the zip package, the **Language** element would have to add this path to the **sourceFile** property as below. For example:  
+  
+ `<Language name="R" sourceFile="myScripts/CustomAddRows.R" entryPoint="CustomAddRows" />`  
+  
+**Resolution :**
+ Make sure that the value of the **sourceFile** property in the **Language** element of the custom module xml definition is correct and that the source file exists in the correct relative path in the zip package.  
+  
+|Exception Messages|  
+|------------------------|  
+|Referenced R script file does not exist.|  
+|Referenced R script file '{0}' can not be found. Ensure that the relative path to the file is correct from the definitions location.|  
+
+
+## Error 0105  
+ This error is displayed when a module definition file contains an unsupported parameter type  
+  
+ This error in Azure Machine Learning is produced when the you create a custom module xml definition and the type of a parameter or argument in the definition does not match a supported type.  
+  
+**Resolution :**
+ Make sure that the type property of any **Arg** element in the custom module xml definition file is a supported type.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unsupported parameter type.|  
+|Unsupported parameter type '{0}' specified.|  
+
+
+## Error 0106  
+ Thrown when a module definition file defines an unsuppported input type  
+  
+ This error in Azure Machine Learning is produced when the type of an input port in a custom module XML definition does not match a supported type.  
+  
+**Resolution :**
+ Make sure that the type property of an Input element in the custom module XML definition file is a supported type.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unsupported input type.|  
+|Unsupported input type '{0}' specified.|  
+
+
+## Error 0107  
+ Thrown when a module definition file defines an unsuppported output type  
+  
+ This error in Azure Machine Learning is produced when the type of an output port in a custom module xml definition does not match a supported type.  
+  
+**Resolution :**
+ Make sure that the type property of an Output element in the custom module xml definition file is a supported type.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unsupported output type.|  
+|Unsupported output type '{0}' specified.|  
+
+
+## Error 0108  
+ Thrown when a module definition file defines more input or output ports than are supported  
+  
+ This error in Azure Machine Learning is produced when too many input or output ports are defined in a custom module xml definition.  
+  
+**Resolution :**
+ Makes sure the maximum number of input and output ports defined in the custom module xml definition does not exceed the maximum number of supported ports.  
+  
+|Exception Messages|  
+|------------------------|  
+|Exceeded supported number of input or output ports.|  
+|Exceeded number of supported '{0}' ports. Maximum allowed number of '{0}' ports is '{1}'.| 
+
+## Error 0109  
+ Thrown when a module definition file defines a column picker incorrectly  
+  
+ This error in Azure Machine Learning is produced when the syntax for a column picker argument contains an error in a custom module xml definition.  
+  
+**Resolution :**
+ This error is produced when the syntax for a column picker argument contains an error in a custom module xml definition.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unsupported syntax for column picker.|  
+  
 
 ## Error 0110  
  Thrown when a module definition file defines a column picker that references a non existent input port ID  
