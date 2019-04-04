@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error occurs in Azure Machine Learning when you specify a parameter as input and the value type is different from the type that is expected, and implicit conversion cannot be performed.  
   
-**Resolution :**
+**Resolution:**
  Check the module requirements and determine which value type is required (string, integer, double, etc.)  
   
 |Exception Messages|  

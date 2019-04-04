@@ -23,7 +23,7 @@ manager: cgronlun
   
 -   You have provided a comma-separated list of values for inputs, but the number of values does not match, or multiple inputs are not supported.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module and check the column selection to ensure that the correct number of columns is selected. Verify the outputs of upstream modules, and the requirements of downstream operations.  
   
  If you used one of the column selection options that can select multiple columns (column indices, all features, all numeric, etc.), validate the exact number of columns returned by the selection.  

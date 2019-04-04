@@ -15,7 +15,7 @@ manager: cgronlun
   
  This is an extremely common error in Azure Machine Learning and can be caused by many conditions.  
   
-**Resolution :**
+**Resolution:**
  There is no specific resolution. However, you can check for conditions such as  the following:  
   
 -   If you are renaming columns, make sure that each list (the input columns and the list of new names) has the same number of items.  

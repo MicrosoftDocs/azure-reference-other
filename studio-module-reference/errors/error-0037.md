@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning occurs if more than one column is selected to be the new label column. Most supervised learning algorithms require a single column to be marked as the target or label.  
   
-**Resolution :**
+**Resolution:**
  Make sure to select a single column as the new label column.  
   
 |Exception Messages|  

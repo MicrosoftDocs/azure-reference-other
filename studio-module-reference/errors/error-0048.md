@@ -21,7 +21,7 @@ manager: cgronlun
   
 -   The file is too large to read or the wrong format  
   
-**Resolution :**
+**Resolution:**
  Revisit the module and the file you are trying to read.  
   
  Verify that the names of the container and file are correct.  

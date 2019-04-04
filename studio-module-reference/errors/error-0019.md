@@ -15,7 +15,7 @@ manager: cgronlun
   
  You will receive this error in Azure Machine Learning if the specified column values are out of order.  
   
-**Resolution :**
+**Resolution:**
  Sort the column values by manually modifying the input dataset and rerun the module.  
   
 |Exception Messages|  

@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning occurs if a feature vector is defined more than once.  
   
-**Resolution :**
+**Resolution:**
  Ensure that the feature vector is not defined more than once.  
   
 |Exception Messages|  

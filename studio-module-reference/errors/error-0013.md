@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error occurs whenever a trained model is incompatible with the connected scoring module. For example, connecting the output of [Train Matchbox Recommender](../train-matchbox-recommender.md) to [Score Model](../score-model.md) (instead of [Score Matchbox Recommender](../score-matchbox-recommender.md)) will generate this error when the experiment is run.  
   
-**Resolution :**
+**Resolution:**
 
 Determine the type of learner that is produced by the training module, and determine the scoring module that is appropriate for the learner. 
 

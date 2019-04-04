@@ -19,7 +19,7 @@ For example, you might select a column and try to convert it to a numeric data t
 
 Another reason you might get this error if you try to use a column containing floating point numbers or many unique values as a categorical column. 
   
-**Resolution :**
+**Resolution:**
 
 + Open the help page for the module that generated the error, and verify the data type requirements.
 + Review the data types of the columns in the input dataset.

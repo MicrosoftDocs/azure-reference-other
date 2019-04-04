@@ -15,7 +15,7 @@ manager: cgronlun
   
  You will receive this error in Azure Machine Learning if the column index in the message has different column names in the two input datasets.  
   
-**Resolution :**
+**Resolution:**
  Use [Edit Metadata](../edit-metadata.md) or modify the original dataset to have the same column name for the specified column index.  
   
 |Exception Messages|  

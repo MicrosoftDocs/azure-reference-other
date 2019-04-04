@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning is produced when calling a deprecated module.  
   
-**Resolution :**
+**Resolution:**
  Replace the deprecated module with a set of supported ones. This information should be visible in the module output log.  
   
 |Exception Messages|  

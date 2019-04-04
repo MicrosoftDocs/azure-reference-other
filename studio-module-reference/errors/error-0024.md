@@ -17,7 +17,7 @@ Exception occurs if dataset does not contain a label column.
  
 It can also happen that a label column is present in the dataset, but not detected correctly by Azure Machine Learning.
   
-**Resolution :**
+**Resolution:**
 
 + Open the module that generated the error, and determine if a label column is present. The name or data type of the column doesn't matter, as long as the column contains a single outcome (or dependent variable) that you are trying to predict. If you are not sure which column has the label, look for a generic name such as  *Class* or *Target*. 
 +  If the dataset does not include a label column, it is possible that the label column was explicitly or accidentally removed upstream. It could also be that the dataset is not the output of an upstream scoring module.

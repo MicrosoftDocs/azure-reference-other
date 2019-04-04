@@ -15,7 +15,7 @@ manager: cgronlun
   
  You will receive this error if a column selection is made for a module, but the selected column(s) do not exist in the input data set. This may occur if you have manually typed in a column name or if the column selector has provided a suggested column that did not exist in your dataset when you ran the experiment.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module throwing this exception and validate that the column name or names are correct and that all referenced columns do exist.  
   
 |Exception Messages|  

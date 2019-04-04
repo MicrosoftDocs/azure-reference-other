@@ -25,7 +25,7 @@ manager: cgronlun
   
 -   The URL cannot be resolved by the remote source.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module and verify the format of the URI. If the data source is a Web URL via HTTP, verify that the intended source is neither a file nor a loopback URI (localhost).  
   
 |Exception Messages|  

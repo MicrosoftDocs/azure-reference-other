@@ -17,7 +17,7 @@ manager: cgronlun
  
  You might also see this error if you are specifying two sets of data that need to match in some way. For example, if you are renaming columns, and specify the columns by index, the number of names you supply must match the number of column indices. Another example might be a math operation that uses two columns, where the columns must have the same number of rows. 
   
-**Resolution :**
+**Resolution:**
  
  + Open the module in question and review any numeric property settings.
  + Ensure that any parameter values fall within the supported range of values for that property.

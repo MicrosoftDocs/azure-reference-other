@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning occurs when column names are duplicated; that is, not unique.  
   
-**Resolution :**
+**Resolution:**
  If any columns have same name, add an instance of [Edit Metadata](../edit-metadata.md) between the input dataset and the module raising the error. Use the Column Selector in [Edit Metadata](../edit-metadata.md) to select columns to rename, and type the new columns names into the **New column names** textbox. If you are renaming multiple columns, ensure that the values you type in the **New column names** are unique.  
   
 |Exception Messages|  

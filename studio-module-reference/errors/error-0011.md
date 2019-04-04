@@ -17,7 +17,7 @@ manager: cgronlun
   
  You can also get this error if you haven't selected a column and at least one column is required for the module to work.  
   
-**Resolution :**
+**Resolution:**
  Modify the column selection in the module so that it will apply to the columns in the dataset.  
   
  If the module requires that you select a specific column, such as a label column, verify that the right column is selected.  

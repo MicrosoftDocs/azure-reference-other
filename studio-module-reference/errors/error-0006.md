@@ -15,7 +15,7 @@ manager: cgronlun
   
  You will receive this error in Azure Machine Learning if the parameter in the message is greater than or equal to a boundary value required for the module to process the data.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module throwing the exception and modify the parameter to be less than the specified value.  
   
 |Exception Messages|  

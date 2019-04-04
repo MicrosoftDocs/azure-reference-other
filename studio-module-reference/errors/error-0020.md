@@ -15,7 +15,7 @@ manager: cgronlun
   
  You will receive this error in Azure Machine Learning if not enough columns have been selected to be used for a module.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module and ensure that column selector has correct number of columns selected.  
   
 |Exception Messages|  

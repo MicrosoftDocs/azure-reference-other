@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning  occurs if the target column (as selected in the module parameters) is not of the valid data-type, contained all missing values, or was not categorical as expected.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module input to inspect the content of the label/target column. Make sure it does not have all missing values. If the module is expecting target column to be categorical, make sure that there are more than one distinct values in the target column.  
   
 |Exception Messages|  

@@ -17,7 +17,7 @@ manager: cgronlun
   
  For example, this error is displayed if you try to use [Add Rows](../add-rows.md) to combine two datasets that have a different number of columns.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module throwing the exception and modify the parameter to be within the specified range.  
   
 |Exception Messages|  

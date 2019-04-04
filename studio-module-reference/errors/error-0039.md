@@ -15,11 +15,11 @@ manager: cgronlun
   
  This error in Azure Machine Learning occurs when an internal operation cannot be completed.  
   
-**Resolution :**
+**Resolution:**
  This error is caused by many conditions and there is no specific remedy.  
  The following table contains generic messages for this error, which are usually followed by a specific description of the condition. 
  
- If no details are available, please [send feedback](https://social.msdn.microsoft.com/forums/azure/home?forum=MachineLearning) and provide information about the modules that generated the error and related conditions.
+ If no details are available, [send feedback](https://social.msdn.microsoft.com/forums/azure/home?forum=MachineLearning) and provide information about the modules that generated the error and related conditions.
   
 |Exception Messages|  
 |------------------------|  

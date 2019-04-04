@@ -22,7 +22,7 @@ This error occurs in Azure Machine Learning Studio when you specify parameters f
  + You didn't specify the container name, or the container does not exist
  + You didn't fully specify the file path (path to the blob)
    
-**Resolution :**
+**Resolution:**
 
 Such problems often occur when you try to manually enter the account name, password, or container path. We recommend that you use the new wizard for the [Import Data](../import-data.md) module, which helps you look up and check names.
 

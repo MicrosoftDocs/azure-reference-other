@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning occurs if the argument is infinite. You will receive this error if the argument is either `double.NegativeInfinity` or `double.PositiveInfinity`.  
   
-**Resolution :**
+**Resolution:**
  Modify the specified argument to be a valid value.  
   
 |Exception Messages|  

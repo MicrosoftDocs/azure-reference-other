@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning is produced when the element types of two datasets being combined are different.  
   
-**Resolution :**
+**Resolution:**
  Ensure that all values in a given column in both datasets being combined are of the same type (numeric, Boolean, categorical, string, date, etc.).  
   
 |Exception Messages|  

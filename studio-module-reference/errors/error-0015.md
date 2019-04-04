@@ -15,7 +15,7 @@ manager: cgronlun
   
  You will receive this error if you enter an incorrect SQL account name, password, database server, or database name, or if a connection with the database cannot be established due to problems with the database or server.  
   
-**Resolution :**
+**Resolution:**
  Verify that the account name, password, database server, and database have been entered correctly, and that the specified account has the correct level of permissions. Verify that the database is currently accessible.  
   
 |Exception Messages|  

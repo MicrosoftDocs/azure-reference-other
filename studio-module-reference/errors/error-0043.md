@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning is unused and will be deprecated.  
   
-**Resolution :**
+**Resolution:**
  None.  
   
 |Exception Messages|  

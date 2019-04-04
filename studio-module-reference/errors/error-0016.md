@@ -15,7 +15,7 @@ manager: cgronlun
   
  You will receive this error in Azure Machine Learning if the types of the columns passed in two or more datasets are not compatible with each other.  
   
-**Resolution :**
+**Resolution:**
  Use [Edit Metadata](../edit-metadata.md), modify the original input dataset, or use [Convert to Dataset](../convert-to-dataset.md) to ensure that the types of the columns are compatible.  
   
 |Exception Messages|  

@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning occurs when it is not possible to create a directory on the specified path. You will receive this error if any part of the path to the output directory for a Hive Query is incorrect or inaccessible.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module and verify that the directory path is correctly formatted and that it is accessible with the current credentials.  
   
 |Exception Messages|  

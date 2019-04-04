@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Studio module errors in Azure Machine Learning
 titleSuffix: "Azure Machine Learning Studio"
-description: Troubleshoot module exceptions in Azure Machine Learning Studion using error codes
+description: Troubleshoot module exceptions in Azure Machine Learning Studio using error codes
 ms.date: 04/10/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,11 +13,11 @@ manager: cgronlun
 ---
 # Troubleshoot module exceptions in Azure Machine Learning using error codes
 
-Learn about the the error messages and exception codes you might encounter using  modules in Azure Machine Learning Studio. 
+Learn about the error messages and exception codes you might encounter using  modules in Azure Machine Learning Studio. 
 
 To resolve the issue, look for the error in this article to read about common causes. There are two ways to get the full text of an error message in Studio:  
  
-- Click the link, **View Output Log**, in the right pane and scroll to the bottom of the. The detailed error message is displayed in the last two lines of the window.  
+- Click the link, **View Output Log**, in the right pane and scroll to the bottom. The detailed error message is displayed in the last two lines of the window.  
   
 - Select the module that has the error, and click the red X. Only the pertinent error text is displayed.  
   
@@ -77,38 +77,382 @@ If the error message text is not helpful, send us information about the context 
 |[Error 0047](error-0047.md)|Exception occurs if number of feature columns in some of the datasets passed to the module is too small.|  
 |[Error 0048](error-0048.md)|Exception occurs in the case when it is not possible to open a file.|  
 |[Error 0049](error-0049.md)|Exception occurs in the case when it is not possible to parse a file.|  
-|[Error 0050](error-0050.md)|Exception occurs in the case when input and output files are the same.|  
-|[Error 0051](error-0051.md)|Exception occurs in the case when several output files are the same.|  
-|[Error 0052](error-0052.md)|Exception occurs if Azure storage account key is specified incorrectly.|  
-|[Error 0053](error-0053.md)|Exception occurs in the case when there are no user features or items for matchbox recommendations.|  
-|[Error 0054](error-0054.md)|Exception occurs if there is too few distinct values in the column to complete operation.|  
-|[Error 0055](error-0055.md)|Exception occurs when calling a deprecated module.|  
-|[Error 0056](error-0056.md)|Exception occurs if columns are selected in a column picker violates the Selected Columns Category constraint.|  
-|[Error 0057](error-0057.md)|Exception occurs when attempting to create a file or blob that already exists.|  
-|[Error 0058](error-0058.md)|Exception occurs if dataset does not contain the expected label column.|  
-|[Error 0059](error-0059.md)|Exception occurs if a column index specified in a column picker cannot be parsed.|  
-|[Error 0060](error-0060.md)|Exception occurs when an out of range column range is specified in a column picker.|  
-|[Error 0061](error-0061.md)|Exception occurs when attempting to add a row to a DataTable that has a different number of columns than the table.|  
-|[Error 0062](error-0062.md)|Exception occurs when attempting to compare two models with different learner types.|  
-|[Error 0063](error-0063.md)|Exception occurs when R script evaluation fails with an error.|  
-|[Error 0064](error-0064.md)|Exception occurs if Azure storage account name or storage key is specified incorrectly.|  
-|[Error 0065](error-0065.md)|Exception occurs if Azure blob name is specified incorrectly.|  
-|[Error 0066](error-0066.md)|Exception occurs if a resource could not be uploaded to an Azure Blob.|  
-|[Error 0067](error-0067.md)|Exception occurs if a dataset has a different number of columns than expected.|  
-|[Error 0068](error-0068.md)|Exception occurs if the specified Hive script is not correct.|  
-|[Error 0069](error-0069.md)|Exception occurs if the specified SQL script is not correct.|  
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+## Error 0050  
+ Exception occurs in the case when input and output files are the same.  
+  
+**Resolution:**
+ This error in Azure Machine Learning is unused and will be deprecated.  
+  
+|Exception Messages|  
+|------------------------|  
+|Specified files for input and output cannot be the same.|
+
+
+## Error 0051  
+ Exception occurs in the case when several output files are the same.  
+  
+**Resolution:**
+ This error in Azure Machine Learning is unused and will be deprecated.  
+  
+|Exception Messages|  
+|------------------------|  
+|Specified files for outputs cannot be the same.|
+
+
+## Error 0052  
+ Exception occurs if Azure storage account key is specified incorrectly.  
+  
+ This error in Azure Machine Learning occurs if the key used to access the Azure storage account is incorrect. For example, you might see this error if the Azure storage key was truncated when copied and pasted, or if the wrong key was used.  
+  
+ For more information about how to get the key for an Azure storage account, see [View, copy, and regenerate storage access keys](https://azure.microsoft.com/documentation/articles/storage-create-storage-account-classic-portal/).  
+  
+**Resolution:**
+ Revisit the module and verify that the Azure storage key is correct for the account; copy the key again from the Azure classic portal if necessary.  
+  
+|Exception Messages|  
+|------------------------|  
+|The Azure storage account key is incorrect.|  
+  
+
+## Error 0053  
+ Exception occurs in the case when there are no user features or items for matchbox recommendations.  
+  
+ This error in Azure Machine Learning is produced when a feature vector cannot be found.  
+  
+**Resolution:**
+ Ensure that a feature vector is present in the input dataset.  
+  
+|Exception Messages|  
+|------------------------|  
+|User features or/and items are required but not provided.|  
+  
+ > [!TIP]
+ >  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
+ >  
+ >  -  [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
+ >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
+  
+
+## Error 0054  
+ Exception occurs if there is too few distinct values in the column to complete operation.  
+  
+**Resolution:**
+ This error in Azure Machine Learning is unused and will be deprecated.  
+  
+|Exception Messages|  
+|------------------------|  
+|Data has too few distinct values in the specified column to complete operation.|  
+|Data has too few distinct values in the specified column to complete operation. The required minimum is {0} elements.|  
+|Data has too few distinct values in the column "{1}" to complete operation. The required minimum is {0} elements.|  
+  
+
+## Error 0055  
+ Exception occurs when calling a deprecated module.  
+  
+ This error in Azure Machine Learning appears if you try to call a module that has been deprecated. For a list of all deprecated modules and newer modules that you can use instead, see [Deprecated Modules and Features](../deprecated-modules-and-features.md).  
+  
+**Resolution:**
+  
+|Exception Messages|  
+|------------------------|  
+|Accessing deprecated module.|  
+|Module "{0}" is deprecated.|  
+  
+## See also  
+ [Module error codes](machine-learning-module-error-codes.md)
+
+
+## Error 0056  
+ Exception occurs if the columns you selected for an operation violates requirements.  
+  
+ This error in Azure Machine Learning occurs when you are choosing columns for an operation that requires the column be of a particular data type. 
+ 
+ This error can also happen if the column is the correct data type, but the module you are using requires that the column also be marked as a feature, label, or categorical column.  
+  
+ For example, the [Convert to Indicator Values](../convert-to-indicator-values.md) module requires that columns be categorical, and will raise this error if you select a feature column or label column.  
+  
+**Resolution:**
+  
+1.  Review the data type of the columns that are currently selected. 
+
+2. Ascertain whether the selected columns are categorical, label, or feature columns.  
+  
+3.  Review the help topic for the module in which you made the column selection, to determine if there are specific requirements for data type or column usage.  
+  
+3.  Use [Edit Metadata](../edit-metadata.md) to change the column type for the duration of this operation. Be sure to change the column type back to its original value, using another instance of [Edit Metadata](../edit-metadata.md), if you need it for downstream operations.  
+  
+|Exception Messages|  
+|------------------------|  
+|One or more selected columns were not in an allowed category.|  
+|Column with name "{0}" is not in an allowed category.|  
+  
+
+## Error 0057  
+ Exception occurs when attempting to create a file or blob that already exists.  
+  
+ This exception occurs when you are using the [Export Data](../export-data.md) module or other module to save  results of an experiment in Azure Machine Learning to Azure blob storage, but you attempt to create a file or blob that already exists.   
+  
+**Resolution:**
+ 
+ You will receive this error only if you previously set the property **Azure blob storage write mode** to **Error**. By design, this module raises an error if you attempt to write a dataset to a blob that already exists.
+ 
+ - Open the module properties and change the property **Azure blob storage write mode** to **Overwrite**.
+ - Alternatively, you can type the name of a different destination blob or file and be sure to specify a blob that does not already exist.  
+  
+|Exception Messages|  
+|------------------------|  
+|File or Blob already exists.|  
+|File or Blob "{0}" already exists.|  
+  
+
+## Error 0058  
+ This error in Azure Machine Learning occurs if the dataset does not contain the expected label column.  
+  
+ This exception can also occur when the label column provided does not match the data or datatype expected by the learner, or has the wrong values. For example, this exception is produced when using a real-valued label column when training a binary classifier.  
+  
+**Resolution:**
+ The resolution depends on the learner or trainer that you are using, and the data types of  the columns in your dataset. First, verify the requirements of the machine learning algorithm or training module.  
+  
+ Revisit the input dataset. Verify that the column you expect to be treated as the label has the right data type for the model you are creating.  
+  
+ Check inputs for missing values and eliminate or replace them if necessary.  
+  
+ If necessary, add the [Edit Metadata](../edit-metadata.md) module and ensure that the label column is marked as a label.  
+  
+|Exception Messages|  
+|------------------------|  
+|The label column is not as expected|  
+|The label column is not as expected in "{0}".|  
+|The label column "{0}" is not expected in "{1}".|  
+  
+
+## Error 0059  
+ Exception occurs if a column index specified in a column picker cannot be parsed.  
+  
+ This error in Azure Machine Learning occurs if a column index specified when using the Column Selector cannot be parsed.  You will receive this error when the column index is in an invalid format that cannot be parsed.  
+  
+**Resolution:**
+ Modify the column index to use a valid index value.  
+  
+|Exception Messages|  
+|------------------------|  
+|One or more specified column indexes or index ranges could not be parsed.|  
+|Column index or range "{0}" could not be parsed.|  
+  
+
+## Error 0060  
+ Exception occurs when an out of range column range is specified in a column picker.  
+  
+ This error in Azure Machine Learning occurs when an out-of-range column range is specified in the Column Selector. You will receive this error if the column range in the column picker does not correspond to the columns in the dataset.  
+  
+**Resolution:**
+ Modify the column range in the column picker to correspond to the columns in the dataset.  
+  
+|Exception Messages|  
+|------------------------|  
+|Invalid or out of range column index range specified.|  
+|Column range "{0}" is invalid or out of range.|  
+  
+
+## Error 0061  
+ Exception occurs when attempting to add a row to a DataTable that has a different number of columns than the table.  
+  
+ This error in Azure Machine Learning occurs when you attempt to add a row to a dataset that has a different number of columns than the dataset.  You will receive this error if the row that is being added to the dataset has a different number of columns from the input dataset.  The row cannot be appended to the dataset if the number of columns is different.  
+  
+**Resolution:**
+ Modify the input dataset to have the same number of columns as the row added, or modify the row added to have the same number of columns as the dataset.  
+  
+|Exception Messages|  
+|------------------------|  
+|All tables must have the same number of columns.|  
+  
+
+## Error 0062  
+ Exception occurs when attempting to compare two models with different learner types.  
+  
+ This error in Azure Machine Learning is produced when evaluation metrics for two different scored datasets cannot be compared. In this case, it is not possible to compare the effectiveness of the models used to produce the two scored datasets.  
+  
+**Resolution:**
+ Verify that the scored results are produced by the same kind of machine learning model (binary classification, regression, multi-class classification, recommendation, clustering, anomaly detection, etc.) All models that you compare must have the same learner type.  
+  
+|Exception Messages|  
+|------------------------|  
+|All models must have the same learner type.|  
+  
+
+## Error 0063  
+ This exception is raised when R script evaluation fails with an error.  
+  
+ This error occurs when you have provided an R script in one of the [R language modules](../r-language-modules.md) in Azure Machine Learning, and the R code contains internal syntax errors. The exception can also occur if you provide the wrong inputs to the R script. 
+ 
+ The error can also occur if the script is too large to execute in the workspace. The maximum script size for the **Execute R Script** module is 1,000 lines or 32 KB of work space, whichever is lesser.
+  
+**Resolution:**
+
+1. In Azure Machine Learning Studio, right-click the module that has the error, and select **View Log**.
+2. Examine the standard error log of the module, which contains the stack trace.
+    + Lines beginning with [ModuleOutput] indicate output from R.
+    + Messages from R marked as **warnings** typically do not cause the experiment to fail.
+3. Resolve script issues.  
+    + Check for R syntax errors. Check for variables that are defined but never populated.
+    + Review the input data and the script to determine if either the data or variables in the script use characters not supported by Azure Machine Learning.
+    + Check whether all package dependencies are installed.
+    + Check whether your code loads required libraries that are not loaded by default.
+    + Check whether the required packages are the correct version.
+    + Make sure that any dataset that you want to output is converted to a data frame.  
+4.  Resubmit the experiment.
+
+
+> [!NOTE]
+> These topics contains examples of R code that you can use, as well as links to experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com) that use R script.
+> + [Execute R Script](../execute-r-script.md)
+> + [Create R Model](../create-r-model.md)
+  
+|Exception Messages|  
+|------------------------|  
+|Error during evaluation of R script.|  
+|The following error occurred during evaluation of R script: ---------- Start of error message from R ---------- {0} ----------- End of error message from R -----------|  
+|During the evaluation of R script "{1}" the following error occurred: ---------- Start of error message from R ---------- {0} ----------- End of error message from R -----------|  
+  
+
+
+## Error 0064  
+ Exception occurs if Azure storage account name or storage key is specified incorrectly.  
+  
+ This error in Azure Machine Learning occurs if the Azure storage account name or storage key is specified incorrectly. You will receive this error if you enter an incorrect account name or password for the storage account. This may occur if you manually enter the account name or password. It may also occur if the account has been deleted.  
+  
+**Resolution:**
+ Verify that the account name and password have been entered correctly, and that the account exists.  
+  
+|Exception Messages|  
+|------------------------|  
+|The Azure storage account name or storage key is incorrect.|  
+|The Azure storage account name "{0}" or storage key for the account name is incorrect.|  
+  
+
+## Error 0065  
+ Exception occurs if Azure blob name is specified incorrectly.  
+  
+ This error in Azure Machine Learning occurs if the Azure blob name is specified incorrectly.  You will receive the error if:  
+  
+-   The blob cannot be found in the specified container.  
+  
+-   The fully qualified name of the blob specified for output in one of the [Learning with Counts](../data-transformation-learning-with-counts.md) modules is greater than 512 characters.  
+  
+-   Only the container was specified as the source in a [Import Data](../import-data.md) request when the format was Excel or CSV with encoding; concatenation of the contents of all blobs within a container is not allowed with these formats.  
+  
+-   A SAS URI does not contain the name of a valid blob.  
+  
+**Resolution:**
+ Revisit the module throwing the exception. Verify that the specified blob does exist in the container in the storage account and that permissions allow you to see the blob. Verify that the input is of the form **containername/filename** if you have Excel or CSV with encoding formats. Verify that a SAS URI contains the name of a valid blob.  
+  
+|Exception Messages|  
+|------------------------|  
+|The Azure storage blob is incorrect.|  
+|The Azure storage blob name "{0}" is incorrect|  
+  
+
+## Error 0066  
+ Exception occurs if a resource could not be uploaded to an Azure Blob.  
+  
+ This error in Azure Machine Learning occurs if a resource could not be uploaded to an Azure Blob. You will receive this message if [Train Vowpal Wabbit 7-4 Model](../train-vowpal-wabbit-version-7-4-model.md) encounters an error attempting to save either the model or the hash created when training the model. Both are saved to the same Azure storage account as the account containing the input file.  
+  
+**Resolution:**
+ Revisit the module. Verify that the Azure account name, storage key, and container are correct and that the account has permission to write to the container.  
+  
+|Exception Messages|  
+|------------------------|  
+|The resource could not be uploaded to Azure storage.|  
+|The file "{0}" could not be uploaded to Azure storage as {1}.|  
+  
+
+## Error 0067  
+ Exception occurs if a dataset has a different number of columns than expected.  
+  
+ This error in Azure Machine Learning occurs if a dataset has a different number of columns than expected.  You will receive this error when the number of columns in the dataset are different from the number of columns that the module expects during execution.  
+  
+**Resolution:**
+ Modify the input dataset or the parameters.  
+  
+|Exception Messages|  
+|------------------------|  
+|Unexpected number of columns in the datatable.|  
+|Expected "{0}" columns but found "{1}" columns instead.|  
+  
+
+## Error 0068  
+ Exception occurs if the specified Hive script is not correct.  
+  
+ This error in Azure Machine Learning occurs if there are syntax errors in a Hive QL script, or if the Hive interpreter encounters an error while executing the query or script.  
+  
+**Resolution:**
+
+The error message from Hive is normally reported back in the Error Log so that you can take action based on the specific error. 
+
++ Open the module and inspect the query for mistakes.  
++ Verify that the query works correctly outside of Azure Machine Learning by logging in to the Hive console of your Hadoop cluster and running the query.  
++ Try placing comments in your Hive script in a separate line as opposed to mixing executable statements and comments in a single line.  
+
+### Resources
+
+See the following articles for help with Hive queries for machine learning:
+
++ [Create Hive tables and load data from Azure Blob Storage](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-move-hive-tables)
++ [Explore data in tables with Hive queries](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-explore-data-hive-tables)
++ [Create features for data in an Hadoop cluster using Hive queries](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-create-features-hive)
++ [Hive for SQL Users Cheat Sheet (PDF)](http://hortonworks.com/wp-content/uploads/2013/05/hql_cheat_sheet.pdf)
+
+  
+|Exception Messages|  
+|------------------------|  
+|Hive script is incorrect.|  
+|Hive script {0} is not correct.|  
+  
+
+## Error 0069  
+ Exception occurs if the specified SQL script is not correct.  
+  
+ This error in Azure Machine Learning occurs if the specified SQL script has syntax problems, or if the columns or table specified in the script is not valid. 
+ 
+ You will receive this error if the SQL engine encounters any error while executing the query or script. The SQL error message is normally reported back in the Error Log so that you can take action based on the specific error.  
+  
+**Resolution:**
+ Revisit the module and inspect the SQL query for mistakes.  
+  
+ Verify that the query works correctly outside of Azure ML by logging in to the database server directly and running the query.  
+  
+ If there is a SQL generated message reported by the module exception, take action based on the reported error. For example, the error messages sometimes include specific guidance on the likely error:
++ *No such column or missing database*, indicating that you might have typed a column name wrong. If you are sure the column name is correct, try using brackets or quotation marks to enclose the column identifier.
++ *SQL logic error near \<SQL keyword\>*, indicating that you might have a syntax error before the specified keyword
+
+  
+|Exception Messages|  
+|------------------------|  
+|SQL script is incorrect.|  
+|SQL query "{0}" is not correct.|  
+|SQL query "{0}" is not correct: {1}|  
+  
 
 ## Error 0070  
  Exception occurs when attempting to access non-existent Azure table.  
   
  This error in Azure Machine Learning occurs when you attempt to access a non-existent Azure table. You will receive this error if you specify a table in Azure storage which does not exist when reading from or writing to Azure Table Storage. This can happen if you mistype the name of the desired table, or you have a mismatch between the target name and the storage type. For example, you intended to read from a table but entered the name of a blob instead.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module to verify that the name of the table is correct.  
   
 |Exception Messages|  
@@ -123,7 +467,7 @@ If the error message text is not helpful, send us information about the context 
   
  You might also receive this error if the module cannot connect to an HDInsight cluster.  
   
-**Resolution :**
+**Resolution:**
  Review the inputs to the module and verify the account name and password.  
   
  Check for the following issues that can cause an error:  
@@ -132,7 +476,7 @@ If the error message text is not helpful, send us information about the context 
   
 -   Column names are missing or misstyped.  
   
--   You are writing to a table that has column names with illegal characters. Ordinarily you can enclose such column names in square brackets , but if that does not work, edit column names to use only letters and underscores (_)  
+-   You are writing to a table that has column names with illegal characters. Ordinarily you can enclose such column names in square brackets, but if that does not work, edit column names to use only letters and underscores (_)  
   
 -   Strings that you are trying to write contain single quotation marks  
   
@@ -147,14 +491,14 @@ If the error message text is not helpful, send us information about the context 
 ## Error 0072  
  Exception occurs in the case of connection timeout.  
   
- This error in Azure Machine Learning occurs when a connection times out. You will receive this error if there are currently connectivity issues with the data source or destination, such as slow internet connectivity, or if the dataset is very large and/or the SQL query to read in the data performs complicated processing.  
+ This error in Azure Machine Learning occurs when a connection times out. You will receive this error if there are currently connectivity issues with the data source or destination, such as slow internet connectivity, or if the dataset is large and/or the SQL query to read in the data performs complicated processing.  
   
-**Resolution :**
+**Resolution:**
  Determine whether there are currently issues with slow connections to Azure storage or the internet.  
   
 |Exception Messages|  
 |------------------------|  
-|Connection timeout occured.|  
+|Connection timeout occurred.|  
   
 
 ## Error 0073  
@@ -162,7 +506,7 @@ If the error message text is not helpful, send us information about the context 
   
  This error in Azure Machine Learning occurs when it is not possible to convert column to another type.  You will receive this error if a module requires a particular type and it is not possible to convert the column to the new type.  
   
-**Resolution :**
+**Resolution:**
  Modify the input dataset so that the column can be converted based on the inner exception.  
   
 |Exception Messages|  
@@ -176,7 +520,7 @@ If the error message text is not helpful, send us information about the context 
   
  This error in Azure Machine Learning occurs when the [Edit Metadata](../edit-metadata.md) tries to convert a sparse column to categorical.  You will receive this error when trying to convert sparse columns to categorical with the **Make categorical** option.  Azure machine Learning does not support sparse categorical arrays, so the module will fail.  
   
-**Resolution :**
+**Resolution:**
  Make the column dense by using [Convert to Dataset](../convert-to-dataset.md) first or do not convert the column to categorical.  
   
 |Exception Messages|  
@@ -189,7 +533,7 @@ Exception occurs when an invalid binning function is used when quantizing a data
   
 This error in Azure Machine Learning occurs when you are trying to bin data using an unsupported method, or when the parameter combinations are invalid.  
   
-**Resolution :**
+**Resolution:**
 
 Error handling for this event was introduced in an earlier version of Azure Machine Learning that allowed more customization of binning methods. Currently all binning methods are based on a selection from a dropdown list, so technically it should no longer be possible to get this error.
 
@@ -201,17 +545,17 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
 
 ## Error 0077  
- Exception occurs when unknown blob file write mode passed.  
+ Exception occurs when unknown blob file writes mode passed.  
   
  This error in Azure Machine Learning occurs if an invalid argument is passed in the specifications for a blob file destination or source.  
   
-**Resolution :**
+**Resolution:**
  In almost all modules that import or export data to and from Azure blob storage, parameter values controlling the write mode are assigned by using a dropdown list; therefore, it is not possible to pass an invalid value, and this error should not appear. This error will be deprecated in a later release.  
   
 |Exception Messages|  
 |------------------------|  
-|Unsupported blob write mode.|  
-|Unsupported blob write mode: {0}.|  
+|Unsupported blob writes mode.|  
+|Unsupported blob writes mode: {0}.|  
   
 
 ## Error 0078  
@@ -219,7 +563,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs when the HTTP option for [Import Data](../import-data.md) receives a 3xx (301, 302, 304, etc.) status code indicating redirection. You will receive this error if you attempt to connect to an HTTP source that redirects the browser to another page. For security reasons, redirecting websites are not allowed as data sources for Azure Machine Learning.  
   
-**Resolution :**
+**Resolution:**
  If the website is a trusted website, enter the redirected URL directly.  
   
 |Exception Messages|  
@@ -232,7 +576,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs if the Azure storage container name is specified incorrectly. You will receive this error if you have not specified both the container and the blob (file) name using **the Path to blob beginning with container** option when writing to Azure Blob Storage.  
   
-**Resolution :**
+**Resolution:**
  Revisit the [Export Data](../export-data.md) module and verify that the specified path to the blob contains both the container and the file name, in the format **container/filename**.  
   
 |Exception Messages|  
@@ -246,7 +590,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning is produced when one or more of the columns consumed by the module contains all missing values. For example, if a module is computing aggregate statistics for each column, it cannot operate on a column containing no data. In such cases, module execution is halted with this exception.  
   
-**Resolution :**
+**Resolution:**
  Revisit the input dataset and remove any columns that contain all missing values.  
   
 |Exception Messages|  
@@ -260,7 +604,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning is produced if the following conditions are met: (a) the input dataset has at least one sparse column and (b) the final number of dimensions requested is the same as the number of input dimensions.  
   
-**Resolution :**
+**Resolution:**
  Consider reducing the number of dimensions in the output to be fewer than the number of dimensions in the input. This is typical in applications of PCA.  For more information, see [Principal Component Analysis](../principal-component-analysis.md).  
   
 |Exception Messages|  
@@ -273,12 +617,12 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs when a saved machine learning model or transform cannot be loaded by a newer version of the Azure Machine Learning runtime as a result of a breaking change.  
   
-**Resolution :**
+**Resolution:**
  The training experiment that produced the model or transform must be rerun and the model or transform must be resaved.  
   
 |Exception Messages|  
 |------------------------|  
-|Model could not be deserialized because it is likely serialized with an older serialization format. Please retrain and re-save the model.|  
+|Model could not be deserialized because it is likely serialized with an older serialization format. Retrain and resave the model.|  
   
 
 ## Error 0083  
@@ -286,7 +630,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning is produced when the dataset is incompatible with the learner being trained. For example, the dataset might contain at least one missing value in each row, and as a result, the entire dataset would be skipped during training. In other cases, some machine learning algorithms such as anomaly detection do not expect labels to be present and can throw this exception if labels are present in the dataset.  
   
-**Resolution :**
+**Resolution:**
  Consult the documentation of the learner being used to check requirements for the input dataset. Examine the columns to see all required columns are present.  
   
 |Exception Messages|  
@@ -301,7 +645,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs if you try to use one of the modules for evaluating a model with output from an R script that contains scores.  
   
-**Resolution :**
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -313,13 +657,13 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs when you are running custom script that contains syntax errors.  
   
-**Resolution :**
+**Resolution:**
  Review your code in an external editor and check for errors.  
   
 |Exception Messages|  
 |------------------------|  
 |Error during evaluation of script.|  
-|The following error occurred during script evaluation, please view the output log for more information: ---------- Start of error message from {0} interpreter ---------- {1} ---------- End of error message from {0}  interpreter  ----------|  
+|The following error occurred during script evaluation, view the output log for more information: ---------- Start of error message from {0} interpreter ---------- {1} ---------- End of error message from {0}  interpreter  ----------|  
   
 
 ## Error 0086  
@@ -327,7 +671,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs when you select a transformation based on a count table, but the selected transform is incompatible with the current data, or with the new count table.  
   
-**Resolution :**
+**Resolution:**
  The module supports saving the counts and rules that make up the transformation in two different formats. If you are merging count tables, verify that both tables you intend to merge use the same format.  
   
  Also, note that in general, a count-based transform can only be applied to datasets that have the same schema as the dataset on which the transform was originally created.  
@@ -344,7 +688,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
 |------------------------|  
 |Invalid counting transform specified.|  
 |The counting transform at input port '{0}' is invalid.|  
-|The counting transform at input port '{0}' cannot be merged with the counting transform at input port '{1}'. Please check to verify the metadata used for counting matches.|  
+|The counting transform at input port '{0}' cannot be merged with the counting transform at input port '{1}'. Check to verify the metadata used for counting matches.|  
   
 
 ## Error 0087  
@@ -352,7 +696,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs when you try to import an existing count table, but the table is incompatible with the current data, or with the new count table.  
   
-**Resolution :**
+**Resolution:**
  There are different formats for saving the counts and rules that make up the transformation. If you are merging count tables, verify that both use the same format.  
   
  Generally, a count-based transform can only be applied to datasets that have the same schema as the dataset on which the transform was originally created.  
@@ -365,7 +709,7 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs when you try to use a  different counting method than is supported for count-based featurization.  
   
-**Resolution :**
+**Resolution:**
  In general, counting methods are chosen from a dropdown list, so you should not see this error.  
   
  For general information, see [Learning with Counts](../data-transformation-learning-with-counts.md). For requirements specific to creating and merging count-based features, see these topics:  
@@ -387,17 +731,17 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs when you are creating a count table and the label column contains a different number of classes than you specified in the module parameters.  
   
-**Resolution :**
+**Resolution:**
  Check your dataset and find out exactly how many distinct values (possible classes) there are in the label column. When you create the count table, you must specify at least this number of classes.  
   
  The count table cannot automatically determine the number of classes available.  
   
- When you create the count table you cannot specify 0 or any number that is less than the actual number of classes in the label column.  
+ When you create the count table, you cannot specify 0 or any number that is less than the actual number of classes in the label column.  
   
 |Exception Messages|  
 |------------------------|  
-|The number of classes is incorrect. Please make sure that the number of classes you specify in the parameter pane is greater than or equal to the number of classes in the label column.|  
-|The number of classes specified is '{0}', which is not greater than a label value '{1}' in the data set used to count. Please make sure that the number of classes you specify in the parameter pane is greater than or equal to the number of classes in the label column.|  
+|The number of classes is incorrect. Make sure that the number of classes you specify in the parameter pane is greater than or equal to the number of classes in the label column.|  
+|The number of classes specified is '{0}', which is not greater than a label value '{1}' in the data set used to count. Make sure that the number of classes you specify in the parameter pane is greater than or equal to the number of classes in the label column.|  
   
 
 ## Error 0090  
@@ -405,14 +749,14 @@ If you get this error when using the [Group Data into Bins](../group-data-into-b
   
  This error in Azure Machine Learning occurs when you are using [Export Data](../export-data.md) or another option to save data to an HDInsight cluster and the specified Hive table cannot be created.  
   
-**Resolution :**
+**Resolution:**
  Check the Azure storage account name associated with the cluster and verify that you are using the same account in the module properties.  
   
 |Exception Messages|  
 |------------------------|  
-|The Hive table could not be created. For a HDInsight cluster, please ensure the Azure storage account name associated with cluster is the same as what is passed in through the module parameter.|  
-|The Hive table "{0}" could not be created. For a HDInsight cluster, please ensure the Azure storage account name associated with cluster is the same as what is passed in through the module parameter.|  
-|The Hive table "{0}" could not be created. For a HDInsight cluster, please ensure the Azure storage account name associated with cluster is "{1}".|  
+|The Hive table could not be created. For a HDInsight cluster, ensure the Azure storage account name associated with cluster is the same as what is passed in through the module parameter.|  
+|The Hive table "{0}" could not be created. For a HDInsight cluster, ensure the Azure storage account name associated with cluster is the same as what is passed in through the module parameter.|  
+|The Hive table "{0}" could not be created. For a HDInsight cluster, ensure the Azure storage account name associated with cluster is "{1}".|  
  
 
 ## Error 0100  

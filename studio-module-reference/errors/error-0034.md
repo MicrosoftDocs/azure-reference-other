@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning occurs in recommendation if a user-item pair has more than one rating value.  
   
-**Resolution :**
+**Resolution:**
  Ensure that the user-item pair possesses one rating value only.  
   
 |Exception Messages|  

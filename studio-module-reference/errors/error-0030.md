@@ -15,7 +15,7 @@ manager: cgronlun
   
  This exception in Azure Machine Learning occurs when it is not possible to download a file. You will receive this exception when an attempted read from an HTTP source has failed after three (3) retry attempts.  
   
-**Resolution :**
+**Resolution:**
  Verify that the URI to the HTTP source is correct and that the site is currently accessible via the Internet.  
   
 |Exception Messages|  

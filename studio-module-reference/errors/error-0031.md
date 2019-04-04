@@ -15,7 +15,7 @@ manager: cgronlun
   
  This error in Azure Machine Learning occurs if the number of columns selected is less than needed.  You will receive this error if the minimum required number of columns are not selected.  
   
-**Resolution :**
+**Resolution:**
  Add additional columns to the column selection by using the **Column Selector**.  
   
 |Exception Messages|  

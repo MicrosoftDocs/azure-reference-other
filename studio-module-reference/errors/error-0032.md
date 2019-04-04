@@ -15,7 +15,7 @@ manager: cgronlun
   
  You will receive this error  in Azure Machine Learning if the argument is a double or NaN.  
   
-**Resolution :**
+**Resolution:**
  Modify the specified argument to use a valid value.  
   
 |Exception Messages|  
