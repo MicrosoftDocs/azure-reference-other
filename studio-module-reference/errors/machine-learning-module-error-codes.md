@@ -18,11 +18,11 @@ This topic lists some of the errors that are reported from modules in Azure Mach
 
 To resolve the issue, click the error name in the following table and read about common causes. There are two ways to get the full text of an error message in Studio:  
   
-- Click the link, **View Output Log**, in the right pane and scroll to the bottom of the. The detailed error message is generally displayed in the last two lines of the window.  
+- Click the link, **View Output Log**, in the right pane and scroll to the bottom of the. The detailed error message is displayed in the last two lines of the window.  
   
 - Select the module that has the error, and click the red X. Only the pertinent error text is displayed.  
   
- If the error message text is not helpful, please send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the Azure Machine Learning forum and post a question.  
+ If the error message text is not helpful, send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the Azure Machine Learning forum and post a question.  
   
 ###  <a name="errors"></a> Exceptions list  
   
@@ -42,7 +42,7 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0011](error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
 |[Error 0012](error-0012.md)|Exception occurs if instance of class could not be created with passed set of arguments.|  
 |[Error 0013](error-0013.md)|Exception occurs if passed to module learner has invalid type.|  
-|[Error 0014](error-0014.md)|Exception occurs if amount of column unique values is greater than allowed.|  
+|[Error 0014](error-0014.md)|Exception occurs if number of column unique values is greater than allowed.|  
 |[Error 0015](error-0015.md)|Exception occurs if database connection has failed.|  
 |[Error 0016](error-0016.md)|Exception occurs if input datasets passed to the module should have compatible column types but do not.|  
 |[Error 0017](error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
@@ -54,11 +54,11 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0023](error-0023.md)|Exception occurs if target column of input dataset is not valid for the current trainer module.|  
 |[Error 0024](error-0024.md)|Exception occurs if dataset does not contain a label column.|  
 |[Error 0025](error-0025.md)|Exception occurs if dataset does not contain a score column.|  
-|[Error 0026](error-0026.md)|Exception occurs if columns with the same name is not allowed.|  
+|[Error 0026](error-0026.md)|Exception occurs if columns with the same name are not allowed.|  
 |[Error 0027](error-0027.md)|Exception occurs in case when two objects have to be of the same size but are not.|  
 |[Error 0028](error-0028.md)|Exception occurs in the case when column set contains duplicated column names and it is not allowed.|  
 |[Error 0029](error-0029.md)|Exception occurs in case when invalid URI is passed.|  
-|[Error 0030](error-0030.md)|Exception uccurs in the case when it is not possible to download a file.|  
+|[Error 0030](error-0030.md)|Exception occurs in the case when it is not possible to download a file.|  
 |[Error 0031](error-0031.md)|Exception occurs if number of columns in column set is less than needed.|  
 |[Error 0032](error-0032.md)|Exception occurs if argument is not a number.|  
 |[Error 0033](error-0033.md)|Exception occurs if argument is Infinity.|  
@@ -81,7 +81,7 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0050](error-0050.md)|Exception occurs in the case when input and output files are the same.|  
 |[Error 0051](error-0051.md)|Exception occurs in the case when several output files are the same.|  
 |[Error 0052](error-0052.md)|Exception occurs if Azure storage account key is specified incorrectly.|  
-|[Error 0053](error-0053.md)|Exception occurs in the case when there are no user features or items for machbox reccomendations.|  
+|[Error 0053](error-0053.md)|Exception occurs in the case when there are no user features or items for matchbox recommendations.|  
 |[Error 0054](error-0054.md)|Exception occurs if there is too few distinct values in the column to complete operation.|  
 |[Error 0055](error-0055.md)|Exception occurs when calling a deprecated module.|  
 |[Error 0056](error-0056.md)|Exception occurs if columns are selected in a column picker violates the Selected Columns Category constraint.|  
@@ -104,7 +104,7 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0073](error-0073.md)|Exception occurs if an error occurs while converting a column to another type.|  
 |[Error 0074](error-0074.md)|Exception occurs when the Metadata Editor tries to convert a sparse column to categorical.|  
 |[Error 0075](error-0075.md)|Exception occurs when an invalid binning function is used when quantizing a dataset.|  
-|[Error 0077](error-0077.md)|Exception occurs when unknown blob file write mode passed.|  
+|[Error 0077](error-0077.md)|Exception occurs when unknown blob file writes mode passed.|  
 |[Error 0078](error-0078.md)|Exception occurs when the HTTP option for Import Data receives a 3xx status code indicating redirection.|  
 |[Error 0079](error-0079.md)|Exception occurs if Azure storage container name is specified incorrectly.|  
 |[Error 0080](error-0080.md)|Exception occurs when column with all values missing is not allowed by module.|  
@@ -129,7 +129,7 @@ To resolve the issue, click the error name in the following table and read about
   
  `<Language name="R" sourceFile="CustomAddRows.R" entryPoint="CustomAddRows" />`  
   
-**Resolution :**
+**Resolution:**
  Verify that the name property of the **Language** element in the custom module xml definition file is set to `R`. Save the file, update the custom module zip package, and try to add the custom module again.  
   
 |Exception Messages|  
@@ -138,17 +138,17 @@ To resolve the issue, click the error name in the following table and read about
   
 
 ## Error 0101  
- All port and parameter ID's must be unique.  
+ All port and parameter IDs must be unique.  
   
- This error in Azure Machine Learning occurs when one or more ports or parameters are assigned the same id value in a custom module XML definition file.  
+ This error in Azure Machine Learning occurs when one or more ports or parameters are assigned the same ID value in a custom module XML definition file.  
   
-**Resolution :**
- Check that the id values across all ports and parameters are unique. Save the xml file, update the custom module zip package and try to add the custom module again.  
+**Resolution:**
+ Check that the ID values across all ports and parameters are unique. Save the xml file, update the custom module zip package, and try to add the custom module again.  
   
 |Exception Messages|  
 |------------------------|  
 |All port and parameter IDs for a module must be unique|  
-|Module '{0}' has duplicate port/argument ID's. All port/argument ID's must be unique for a module.|  
+|Module '{0}' has duplicate port/argument IDs. All port/argument IDs must be unique for a module.|  
   
 
 ## Error 0102  
@@ -156,7 +156,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning occurs when you are importing a zipped package with the .zip extension, but the package is either not a zip file, or the file does not use a supported zip format.  
   
-**Resolution :**
+**Resolution:**
  Make sure the selected file is a valid .zip file, and that it was compressed by using one of the supported compression algorithms.  
   
  If you get this error when importing datasets in compressed format, verify that all contained files use one of the supported file formats, and are in Unicode format. For more information, see [Unpack Zipped Datasets](../unpack-zipped-datasets.md).  
@@ -171,10 +171,10 @@ To resolve the issue, click the error name in the following table and read about
 ## Error 0103  
  Thrown when a ZIP file does not contain any .xml files  
   
- This error in Azure Machine Learning occurs when the custom module zip package does not contain any module definition (.xml) files. These files need to reside in the root of the zip package (e.g. not within a subfolder.)  
+ This error in Azure Machine Learning occurs when the custom module zip package does not contain any module definition (.xml) files. These files need to reside in the root of the zip package (for example, not within a subfolder.)  
   
-**Resolution :**
- Verify that one or more xml module definition files are in the root folder of the zip package by extracting it to a temporary folder on your disk drive. Any xml files should be directly in the folder you extracted the zip package to. Make sure when you create the zip package that you do not simply select a folder that contains xml files to zip as this will create a sub folder within the zip package with the same name as the folder you selected to zip.  
+**Resolution:**
+ Verify that one or more xml module definition files are in the root folder of the zip package by extracting it to a temporary folder on your disk drive. Any xml files should be directly in the folder you extracted the zip package to. Make sure when you create the zip package that you do not  select a folder that contains xml files to zip as this will create a sub folder within the zip package with the same name as the folder you selected to zip.  
   
 |Exception Messages|  
 |------------------------|  
@@ -188,13 +188,13 @@ To resolve the issue, click the error name in the following table and read about
   
  `<Language name="R" sourceFile="myScripts/CustomAddRows.R" entryPoint="CustomAddRows" />`  
   
-**Resolution :**
+**Resolution:**
  Make sure that the value of the **sourceFile** property in the **Language** element of the custom module xml definition is correct and that the source file exists in the correct relative path in the zip package.  
   
 |Exception Messages|  
 |------------------------|  
 |Referenced R script file does not exist.|  
-|Referenced R script file '{0}' can not be found. Ensure that the relative path to the file is correct from the definitions location.|  
+|Referenced R script file '{0}' cannot be found. Ensure that the relative path to the file is correct from the definitions location.|  
 
 
 ## Error 0105  
@@ -202,7 +202,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning is produced when the you create a custom module xml definition and the type of a parameter or argument in the definition does not match a supported type.  
   
-**Resolution :**
+**Resolution:**
  Make sure that the type property of any **Arg** element in the custom module xml definition file is a supported type.  
   
 |Exception Messages|  
@@ -212,11 +212,11 @@ To resolve the issue, click the error name in the following table and read about
 
 
 ## Error 0106  
- Thrown when a module definition file defines an unsuppported input type  
+ Thrown when a module definition file defines an unsupported input type  
   
  This error in Azure Machine Learning is produced when the type of an input port in a custom module XML definition does not match a supported type.  
   
-**Resolution :**
+**Resolution:**
  Make sure that the type property of an Input element in the custom module XML definition file is a supported type.  
   
 |Exception Messages|  
@@ -226,11 +226,11 @@ To resolve the issue, click the error name in the following table and read about
 
 
 ## Error 0107  
- Thrown when a module definition file defines an unsuppported output type  
+ Thrown when a module definition file defines an unsupported output type  
   
  This error in Azure Machine Learning is produced when the type of an output port in a custom module xml definition does not match a supported type.  
   
-**Resolution :**
+**Resolution:**
  Make sure that the type property of an Output element in the custom module xml definition file is a supported type.  
   
 |Exception Messages|  
@@ -244,7 +244,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning is produced when too many input or output ports are defined in a custom module xml definition.  
   
-**Resolution :**
+**Resolution:**
  Makes sure the maximum number of input and output ports defined in the custom module xml definition does not exceed the maximum number of supported ports.  
   
 |Exception Messages|  
@@ -257,7 +257,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning is produced when the syntax for a column picker argument contains an error in a custom module xml definition.  
   
-**Resolution :**
+**Resolution:**
  This error is produced when the syntax for a column picker argument contains an error in a custom module xml definition.  
   
 |Exception Messages|  
@@ -266,17 +266,17 @@ To resolve the issue, click the error name in the following table and read about
   
 
 ## Error 0110  
- Thrown when a module definition file defines a column picker that references a non existent input port ID  
+ Thrown when a module definition file defines a column picker that references a non-existent input port ID  
   
- This error in Azure Machine Learning is produced when the *portId* property within the Properties element of an Arg of type ColumnPicker does not match the Id value of an input port.  
+ This error in Azure Machine Learning is produced when the *portId* property within the Properties element of an Arg of type ColumnPicker does not match the ID value of an input port.  
   
-**Resolution :**
- Make sure the portId property matches the id value of an input port defined in the custom module xml definition.  
+**Resolution:**
+ Make sure the portId property matches the ID value of an input port defined in the custom module xml definition.  
   
 |Exception Messages|  
 |------------------------|  
-|Column picker references a non existent input port ID.|  
-|Column picker references a non existent input port ID '{0}'.|  
+|Column picker references a non-existent input port ID.|  
+|Column picker references a non-existent input port ID '{0}'.|  
   
 
 ## Error 0111  
@@ -284,7 +284,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning is produced when an invalid property is assigned to an element in the custom module XML definition.  
   
-**Resolution :**
+**Resolution:**
  Make sure the property is supported by the custom module element.  
   
 |Exception Messages|  
@@ -298,7 +298,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning is produced when there is an error in the xml format that prevents the custom module XML definition from being parsed as a valid XML file.  
   
-**Resolution :**
+**Resolution:**
  Ensure that each element is opened and closed correctly. Make sure that there are no errors in the XML formatting.  
   
 |Exception Messages|  
@@ -312,7 +312,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning is produced when the custom module XML definition file can be parsed but contains errors, such as definition of elements not supported by custom modules.  
   
-**Resolution :**
+**Resolution:**
  Make sure the custom module definition file defines elements and properties that are supported by custom modules.  
   
 |Exception Messages|  
@@ -327,21 +327,21 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning is produced when a custom module build fails. This occurs when one or more custom module related errors are encountered while adding the custom module. The additional errors are reported within this error message.  
   
-**Resolution :**
+**Resolution:**
  Resolve the errors reported within this exception message.  
   
 |Exception Messages|  
 |------------------------|  
 |Failed to build custom module.|  
-|Custom module build failed with error(s): {0}|  
+|Custom module builds failed with error(s): {0}|  
   
 
 ## Error 0115  
  Thrown when a custom module default script has an unsupported extension.  
   
- This error in Azure Machine Learning occurs when you provide a script for a custom module that uses an unknown filname extension.  
+ This error in Azure Machine Learning occurs when you provide a script for a custom module that uses an unknown filename extension.  
   
-**Resolution :**
+**Resolution:**
  Verify the file format and filename extension of any script files included in the custom module.  
   
 |Exception Messages|  
@@ -351,14 +351,14 @@ To resolve the issue, click the error name in the following table and read about
   
 
 ## Error 0121  
- Thrown when SQL write fails because the table is unwriteable  
+ Thrown when SQL writes fails because the table is unwriteable  
   
  This error in Azure Machine Learning is produced when you are using the [Export Data](../export-data.md) module to save results to a table in a SQL database, and the table cannot be written to. Typically, you will see this error if the [Export Data](../export-data.md) module successfully establishes a connection with the SQL Server instance, but is then unable to write the contents of the Azure ML dataset to the table.  
   
-**Resolution :**
+**Resolution:**
  - Open the Properties pane of the [Export Data](../export-data.md) module and verify that the database and table names are entered correctly. 
- - Review the schema of the dataset you are exporting, and make sure that the data is compatile with the destination table.
- - Verify that the SQL login associated with the user name and password has permissions to write to the table. 
+ - Review the schema of the dataset you are exporting, and make sure that the data is compatible with the destination table.
+ - Verify that the SQL log in associated with the user name and password has permissions to write to the table. 
  - If the exception contains additional error information from SQL Server, use that information to make corrections.  
   
 |Exception Messages|  
@@ -372,7 +372,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning occurs when too many columns have been selected as weight columns.  
   
-**Resolution :**
+**Resolution:**
  Review the input dataset and its metadata. Ensure that only one column contains weights.  
   
 |Exception Messages|  
@@ -385,7 +385,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error in Azure Machine Learning occurs if you use a vector as the label column.  
   
-**Resolution :**
+**Resolution:**
  Change the data format of the column if necessary, or choose a different column.  
   
 |Exception Messages|  
@@ -394,9 +394,9 @@ To resolve the issue, click the error name in the following table and read about
 
 
 ## Error 0124  
- Exception occurs if non-numeric columns is specified to be the weight column.  
+ Exception occurs if non-numeric columns are specified to be the weight column.  
   
-**Resolution :**
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -405,9 +405,9 @@ To resolve the issue, click the error name in the following table and read about
 
 
 ## Error 0125  
- Thrown when schema for multiple datasets do not match.  
+ Thrown when schema for multiple datasets does not match.  
   
-**Resolution :**
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -419,7 +419,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error is produced when the user specifies a SQL domain that is not supported in Azure Machine Learning. You will receive this error if you are attempting to connect to a database server in a domain that is not whitelisted. Currently, the allowed SQL domains are: ".database.windows.net", ".cloudapp.net", or ".database.secure.windows.net". That is, the server must be an Azure SQL server or a server in a virtual machine on Azure.  
   
-**Resolution :**
+**Resolution:**
  Revisit the module. Verify that the SQL database server belongs to one of the accepted domains:  
   
 -   .database.windows.net  
@@ -439,7 +439,7 @@ To resolve the issue, click the error name in the following table and read about
   
  This error occurs if you are reading images from an image dataset for classification and the images are larger than the model can handle.  
   
-**Resolution :**
+**Resolution:**
  For more information about the image size and other requirements, see these topics:  
   
 -   [Import Images](../import-images.md)  
@@ -455,7 +455,7 @@ To resolve the issue, click the error name in the following table and read about
 ## Error 0128  
  Number of conditional probabilities for categorical columns exceeds limit.  
   
-**Resolution :**
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -466,7 +466,7 @@ To resolve the issue, click the error name in the following table and read about
 ## Error 0129  
  Number of columns in the dataset exceeds allowed limit.  
   
-**Resolution :**
+**Resolution:**
   
 |Exception Messages|  
 |------------------------|  
@@ -513,7 +513,7 @@ Resolution:
 |Exception Messages|  
 |------------------------|  
 |Zip file contains multiple files; you must specify the file to expand.|  
-|The file contains more than one file. Please specify the file to expand. The following files were found: {0}|  
+|The file contains more than one file. Specify the file to expand. The following files were found: {0}|  
   
 
 ## Error 0133  
@@ -587,10 +587,10 @@ Resolution:
 ## Error 0138  
  Memory has been exhausted, unable to complete running of module. Downsampling the dataset may help to alleviate the problem.  
   
- This error occurs when the module that is running requires more memory than is available in the Azure container. This can happen if you are working with a very large dataset and the current operation cannot fit into memory.  
+ This error occurs when the module that is running requires more memory than is available in the Azure container. This can happen if you are working with a large dataset and the current operation cannot fit into memory.  
   
 Resolution:   
- If you are trying to read a very large dataset and the operation cannot be completed, downsampling the dataset might help.  
+ If you are trying to read a large dataset and the operation cannot be completed, downsampling the dataset might help.  
   
  If you use the visualizations on datasets to check the cardinality of columns, only some rows are sampled. To get a full report, use [Summarize Data](../summarize-data.md). You can also use the [Apply SQL Transformation](../apply-sql-transformation.md) to check for the number of unique values in each column.  
   
@@ -654,7 +654,7 @@ Resolution:
 Resolution:   
  Some operations perform statistical operations on feature and categorical columns, and if there are not enough values, the operation might fail or return an invalid result. Check your dataset to see how many values there are in the fature and label columns, and determine whether the operation you are trying to perform is statistically valid.  
   
- If the source dataset is valid, you might also check whether some upstream data maniipulation or metadata operation has changed the data and removed some values.  
+ If the source dataset is valid, you might also check whether some upstream data manipulation or metadata operation has changed the data and removed some values.  
   
  If upstream operations include splitting, sampling, or resampling, verify that the outputs contain the expected number of rows and values.  
   
@@ -765,7 +765,7 @@ Resolution:
   
 
 ## Error 0150  
- The scripts that come from the user package could not be unzipped, most likely because of a collision with Github files.  
+ The scripts that come from the user package could not be unzipped, most likely because of a collision with GitHub files.  
   
  This error in Azure Machine Learning occurs when a script cannot be extracted, typically when there is an existing file of the same name.  
   
@@ -777,7 +777,7 @@ Resolution:
   
 
 ## Error 0151  
- There was an error writing to cloud storage. Please check the URL.  
+ There was an error writing to cloud storage. Check the URL.  
   
  This error in Azure Machine Learning occurs when the module tries to write data to cloud storage but the URL is unavailable or invalid.  
   
@@ -786,7 +786,7 @@ Resolution: Check the URL and verify that it is writable.
 |Exception Messages|  
 |------------------------|  
 |Error writing to cloud storage (possibly a bad url).|  
-|Error writing to cloud storage: {0}. Please check the url.|  
+|Error writing to cloud storage: {0}. Check the url.|  
   
 ## Error 0152  
  The Azure cloud type was specified incorrectly in the module context.  
@@ -833,12 +833,12 @@ Resolution: Check the URL and verify that it is writable.
   
 |Exception Messages|  
 |------------------------|  
-|Detected documents with different schemas. Please make sure all documents have the same schema|
+|Detected documents with different schemas. Make sure all documents have the same schema|
 
 ## Error 1000  
 Internal library exception.  
   
-This error is provided to capture otherwise unhandled internal engine errors. Therefore, the cause for this error might be very different depending on the module that generated the error.  
+This error is provided to capture otherwise unhandled internal engine errors. Therefore, the cause for this error might be different depending on the module that generated the error.  
   
 To get more help, we recommend that you post the detailed message that accompanies the error to the Azure Machine Learning forum, together with a description of the scenario, including the data used as inputs. This feedback will help us to prioritize errors and identify the most important issues for further work.  
   
