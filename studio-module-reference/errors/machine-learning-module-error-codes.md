@@ -143,40 +143,6 @@ To resolve the issue, click the error name in the following table and read about
 |[Error 0127](error-0127.md)|Image pixel size exceeds allowed limit.|  
 |[Error 0128](error-0128.md)|Number of conditional probabilities for categorical columns exceeds limit.|  
 |[Error 0129](error-0129.md)|Number of columns in the dataset exceeds allowed limit.|  
-|[Error 0130](#error-0130)|Exception occurs when all rows in the training dataset contain missing values.|  
-|[Error 0131](#error-0131)|Exception occurs if one or more datasets in a zip file fails to be unzipped and registered correctly.|  
-|[Error 0132](#error-0132)|No file name was specified for unpacking; multiple files were found in zip file.|  
-|[Error 0133](#error-0133)|The specified file was not found in the zip file.|  
-|[Error 0134](#error-0134)|Exception occurs when label column is missing or has insufficient number of labeled rows.|  
-|[Error 0135](#error-0135)|Only centroid-based cluster is supported.|  
-|[Error 0136](#error-0136)|No file name was returned; unable to process the file as a result.|  
-|[Error 0137](#error-0137)|Azure Storage SDK encountered an error converting between table properties and dataset columns during read or write.|  
-|[Error 0138](#error-0138)|Memory has been exhausted, unable to complete running of module.|  
-|[Error 0139](#error-0139)|Exception occurs when it is not possible to convert column to another type.|  
-|[Error 0140](#error-0140)|Exception occurs if passed column set argument does not contain other columns except label column.|  
-|[Error 0141](#error-0141)|Exception occurs if the number of the selected numerical columns and unique values in the categorical and string columns is too small.|  
-|[Error 0142](#error-0142)|Exception occurs when the system cannot load certificate to authenticate.|  
-|[Error 0143](#error-0143)|Can't parse user-provided URL that is supposed to be from GitHub|  
-|[Error 0144](#error-0144)|User-provided GitHub url is missing the expected part.|  
-|[Error 0145](#error-0145)|Cannot create the replication directory for some reason|  
-|[Error 0146](#error-0146)|When the user files are unzipped into the local directory, the combined path might be too long.|  
-|[Error 0147](#error-0147)|Could not download stuff from GitHub for some reason|  
-|[Error 0148](#error-0148)|Unauthorized access issues while extracting data or creating directory|  
-|[Error 0149](#error-0149)|The user file does not exist inside GitHub bundle.|  
-|[Error 0150](#error-0150)|The scripts that come from the user package could not be unzipped, most likely because of the collision with Github files.|  
-|[Error 0151](#error-0151)|There was an error writing to cloud storage. Please check the url.|  
-|[Error 0152](#error-0152)|The Azure cloud type was specified incorrectly in the module context.|  
-|[Error 0153](#error-0153)|The storage end point specified is invalid.|  
-|[Error 0154](#error-0154)|The specified server name could not be resolved.|  
-|[Error 0155](#error-0155)|The DocDb Client threw an exception.|  
-|[Error 0156](#error-0156)|Bad response for HCatalog Server|  
-|[Error 0157](#error-0157)|There was an error reading from Azure Cosmos DB due to inconsistent or different document schemas.|  
-|[Error 1000](#error-1000)|Internal library exception|
-
-
-
-
-
 
 
 ## Error 0130  
@@ -560,3 +526,4 @@ To get more help, we recommend that you post the detailed message that accompani
 Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
 + [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
 + [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
+ 
