@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot Studio module errors in Azure Machine Learning
+title: Studio module error codes and messages
 titleSuffix: "Azure Machine Learning Studio"
-description: Troubleshoot module exceptions in Azure Machine Learning Studio using error codes
+description: Module exceptions in Azure Machine Learning Studio using error codes and messages
 ms.date: 04/10/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
