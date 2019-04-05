@@ -567,7 +567,7 @@ This module supports calculating any of these values for the specified distribut
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
   
 ##  Exception  
- For a complete list of error messages, see [Module Error Codes](machine-learning-module-error-codes.md).  
+ For a complete list of error messages, see [Module Error Codes](errors/machine-learning-module-error-codes.md).  
   
 |Exception|Description|  
 |---------------|-----------------|  

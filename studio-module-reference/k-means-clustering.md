@@ -255,11 +255,11 @@ Given a specific number of clusters (*K*) to find for a set of *D*-dimensional d
   
 ##  Exceptions  
 
-For a list of all exceptions, see [Machine Learning Module Error Codes](machine-learning-module-error-codes.md).  
+For a list of all exceptions, see [Machine Learning Module Error Codes](errors/machine-learning-module-error-codes.md).  
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0003](errors/machine-learning-module-error-codes.md)|Exception occurs if one or more of inputs are null or empty.|  
   
 ## See also
   
