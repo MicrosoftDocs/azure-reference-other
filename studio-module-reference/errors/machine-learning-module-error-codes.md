@@ -6,6 +6,7 @@ ms.date: 04/10/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
+ms.custom: seoapril2019
 
 author: xiaoharper
 ms.author: amlstudiodocs
