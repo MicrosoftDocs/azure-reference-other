@@ -679,7 +679,7 @@ When you are scoring from a recommendation mode, you can use item or user featur
 For general information about how the Matchbox recommendation algorithm works, and how to prepare a dataset of item features or user features, see [Train Matchbox Recommender](../train-matchbox-recommender.md).  
   
  > [!TIP]
- > Resolution not applicable to your case? You are welcome to send feedback on this article and provide information about the scenario, including the module and the number of rows in the column. We will use this information to provide more detailed troubleshooting steps in future.
+ > Resolution not applicable to your case? You are welcome to send feedback on this article and provide information about the scenario, including the module and the number of rows in the column. We will use this information to provide more detailed troubleshooting steps in the future.
    
 |Exception Messages|  
 |------------------------|  
@@ -802,7 +802,7 @@ Another reason you might get this error if you try to use a column containing fl
   
  
 > [!TIP]
-> Resolution unclear, or not applicable to your case? You are welcome to send feedback on this article and provide information about the scenario, including the module and the data type of the column. We will use this information to provide more detailed troubleshooting steps in future.  
+> Resolution unclear, or not applicable to your case? You are welcome to send feedback on this article and provide information about the scenario, including the module and the data type of the column. We will use this information to provide more detailed troubleshooting steps in the future.  
   
 |Exception Messages|  
 |------------------------|  
@@ -1004,10 +1004,6 @@ Another reason you might get this error if you try to use a column containing fl
 |------------------------|  
 |Accessing deprecated module.|  
 |Module "{0}" is deprecated.|  
-  
-## See also  
- [Module error codes](machine-learning-module-error-codes.md)
-
 
 ## Error 0056  
  Exception occurs if the columns you selected for an operation violates requirements.  
