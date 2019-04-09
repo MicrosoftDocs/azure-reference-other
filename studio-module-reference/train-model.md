@@ -144,7 +144,7 @@ For examples of how the **Train Model** module is used in machine learning exper
   
 ##  Exceptions  
 
- For a list of all module errors, see [Module Error Codes](machine-learning-module-error-codes.md).  
+ For a list of all module errors, see [Module Error Codes](errors/machine-learning-module-error-codes.md).  
   
 |Exception|Description|  
 |---------------|-----------------|  

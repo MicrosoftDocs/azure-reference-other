@@ -61,8 +61,6 @@ In other cases,  a persistent negative trend might be the anomaly. For example, 
 
 ## Resources
 
-To learn more, see this article: [Anomaly detection using machine learning to detect abnormalities in time series data](https://blogs.technet.microsoft.com/machinelearning/2014/11/05/anomaly-detection-using-machine-learning-to-detect-abnormalities-in-time-series-data/)  
-  
 For more information about the research underlying this approach, see these articles:  
   
 + Shen-Shyang Ho; Wechsler, H., "A Martingale Framework for Detecting Changes in Data Streams by Testing Exchangeability," Pattern Analysis and Machine Intelligence, IEEE Transactions , vol.32, no.12, pp.2113,2127, Dec. 2010  
