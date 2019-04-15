@@ -34,7 +34,8 @@
     "globalMetadata": {
       "breadcrumb_path": "./breadcrumb/toc.yml",
       "extendBreadcrumb": true,
-      "brand": "azure"
+      "brand": "azure", 
+      "toc_preview": true
     },
     "fileMetadata": {},
     "template": [],
