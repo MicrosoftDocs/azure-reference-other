@@ -15,13 +15,15 @@ ms.author: mamccrea
 
 # Windows (Azure Stream Analytics)
 
-Windowing provides a way to aggregate events over various time intervals depending on specific window definitions. The Windows function extends this concept to simultaneously compute results of multiple different windows. The Windows function allows you to specify more than one window definition. The query logic is computed for each of these windows, and the result is a union of all window results.
+Windowing provides a way to aggregate events over various time intervals depending on specific window definitions. There are four kinds of temporal windows to choose from: [Tumbling](tumbling-window-azure-stream-analytics.md), [Hopping](hopping-window-azure-stream-analytics.md), [Sliding](sliding-window-azure-stream-analytics.md), and [Session](session-window-azure-stream-analytics.md).
 
-Since the result of the Windows function contains a combination of multiple windows, you need to distinguish between the results of the different windows. This is done by assigning identity to each window which can be accessed using the system function **System.Window().Id**. **System.Windows()** returns a record with the Id as its field.
+The **Windows()** function extends this concept to simultaneously compute results of multiple different window definitions. The **Windows()** function allows you to specify more than one window definition. The query logic is computed for each of these window definitions, and the result is a union of all window results.
+
+Since the result of the **Windows()** function contains a combination of multiple windows, you need to distinguish between the different results. This is done by assigning an identity to each window which can be accessed using the system function **System.Window().Id**. **System.Windows()** returns a record with the Id as its field.
 
 There are two ways to define Windows:
 
-* Assigning unique identities using function Window, **Window ( ID , window_definition )**, where ID is an identity of **window_definition** and is a unique **varchar(max)** value within the Windows construct.
+* Assign unique identities using the **Window()** function, **Window ( ID , window_definition )**, where ID is an identity of **window_definition** and is a unique **varchar(max)** value within the Windows construct.
 
 * Without identities, in which case **System.Window().Id** results in null value.
   
@@ -46,17 +48,17 @@ window_definition =
 > [!NOTE]  
 >  The **Windows** constructs cannot be nested. Identities must either be given to all window definitions or given to none. 
 
-There are shortened window definition names, like "Tumbling", which can be used in Windows to avoid repetition of the word "window" like in **Windows(Window('MyWindow', TumblingWindow(…**. The shortened names can also be used outside of the Windows construct.
+There are shortened window definition names, like "Tumbling", which can be used in **Windows()** to avoid repetition of the word "window" like in `Windows(Window('MyWindow', TumblingWindow(…`. The shortened names can also be used outside of the Windows construct.
 
 It is not an error to use **System.Window().Id** without the Windows construct, but its value will be null because no identity was given to the window.
 
-When window definitions are specified using the Window(…) function, all window definitions must use the Window function and all Ids must be unique. Null is not allowed. 
+If window definitions are specified using the **Window()** function, then all window definitions must use the **Window()** function and all IDs must be unique. Null is not allowed.
   
 ## System.Window() function
 
-The **System.Window()** function can only be used in the **SELECT** clause of the GROUP BY statement to retrieve metadata about the grouping time window.
+The **System.Window()** function can only be used in the **SELECT** clause of the **GROUP BY** statement to retrieve metadata about the grouping time window.
 
-The function returns value of type **Record** containing a single field Id, which holds the identity of the window the event belongs to.
+The function returns a value of type **Record** containing a single field **Id**, which holds the identity of the window the event belongs to.
   
 ## Examples  
   
