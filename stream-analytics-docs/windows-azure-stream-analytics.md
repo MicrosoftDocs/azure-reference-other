@@ -7,9 +7,8 @@ services: stream-analytics
 author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: aff805fa-3490-49a9-81b2-ddcaac4debaf
 ms.workload: data-services
-ms.date: 05/01/2019
+ms.date: 05/06/2019
 ms.author: mamccrea
 ---
 
@@ -102,7 +101,7 @@ GROUP BY
 Create windows of different sizes and filter results based on the window duration specified in the Reference table.
 
 ```SQL
-WITH HoppinWindowResults 
+WITH HoppingWindowResults 
 ( 
     SELECT 
         System.Window().Id, 
@@ -127,3 +126,10 @@ JOIN ReferenceTable ON
     AND HoppingWindowResults.Id = ReferenceTable.windowId  
 
 ```
+
+## See also
+
+* [Hopping Window](hopping-window-azure-stream-analytics.md)
+* [Session Window](session-window-azure-stream-analytics.md)
+* [Sliding Window](sliding-window-azure-stream-analytics.md)
+* [Tumbling Window](tumbling-window-azure-stream-analytics.md)
