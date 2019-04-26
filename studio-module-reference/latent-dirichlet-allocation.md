@@ -17,6 +17,8 @@ manager: cgronlun
 
 Category: [Text Analytics](text-analytics.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Latent Dirichlet Allocation** module in Azure Machine Learning Studio, to group otherwise unclassified text into a number of categories. Latent Dirichlet Allocation (LDA) is often used in natural language processing (NLP) to find texts that are similar. Another common term is *topic modeling*.

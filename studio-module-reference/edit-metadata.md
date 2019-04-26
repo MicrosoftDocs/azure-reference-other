@@ -14,6 +14,8 @@ manager: cgronlun
 *Edits metadata associated with columns in a dataset*  
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

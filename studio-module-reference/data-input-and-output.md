@@ -16,6 +16,8 @@ manager: cgronlun
 ---
 # Data Input and Output
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 This article lists the modules that you can use for importing and exporting data and models in Azure Machine Learning Studio.
 
 In addition to using modules, you can directly upload and download datasets from local files on your computer or network. For more information, see [Upload existing data into an Azure Machine Learning experiment](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-2-upload-data).

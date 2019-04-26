@@ -15,6 +15,8 @@ manager: cgronlun
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data from an on-premises SQL Server database into a machine learning experiment.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 Azure Machine Learning can access an on-premises SQL Server database if the data is provided using a Microsoft Data Management Gateway. Therefore, before you use [Import Data](import-data.md),  you must meet these requirements:
 
 - Install a [Microsoft Data Management Gateway](https://docs.microsoft.com/azure/data-factory/v1/data-factory-data-management-gateway) that can access the data source

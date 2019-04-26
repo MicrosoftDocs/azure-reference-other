@@ -14,7 +14,9 @@ manager: cgronlun
 
 *Puts numerical data into bins*
 
-ategory: [Deprecated Modules and Features](deprecated-modules-and-features.md)
+Category: [Deprecated Modules and Features](deprecated-modules-and-features.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Quantize Module Overview  
 

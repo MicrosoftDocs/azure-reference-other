@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Anomaly Detection](anomaly-detection.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **PCA-Based Anomaly Detection** module in Azure Machine Learning Studio, to create an anomaly detection model based on Principal Component Analysis (PCA).

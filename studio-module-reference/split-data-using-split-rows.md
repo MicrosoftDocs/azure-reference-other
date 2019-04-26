@@ -14,6 +14,8 @@ manager: cgronlun
 
 This article describes how to use the **Split Rows** option in the [Split Data](split-data.md) module of Azure Machine Learning Studio. This option is particularly useful when you need to divide datasets used for training and testing, either randomly or by some criteria.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 The  **Split Rows** option supports both random and stratified splits. For example, you can specify a 70-30 split, or a 10-90 split with your target variable equally represented in both datasets.
 
 For general information about data partitioning for machine learning experiments, see [Split Data](split-data.md) and [Partition and Split](partition-and-sample.md). 

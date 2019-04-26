@@ -14,6 +14,8 @@ manager: cgronlun
 *Converts data input to the format used by the SVM-Light framework*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  

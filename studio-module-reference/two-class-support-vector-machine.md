@@ -13,7 +13,9 @@ manager: cgronlun
 # Two-Class Support Vector Machine
 *Creates a binary classification model using the Support Vector Machine algorithm*  
   
- Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
+ Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md) 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
   
 ## Module overview  
 

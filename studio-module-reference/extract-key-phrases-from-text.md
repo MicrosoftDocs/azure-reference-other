@@ -15,6 +15,8 @@ manager: cgronlun
   
  Category: [Text Analytics](text-analytics.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article explains how to use the **Extract Key Phrases from Text** module in Azure Machine Learning Studio, to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.

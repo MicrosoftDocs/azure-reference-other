@@ -14,6 +14,8 @@ manager: cgronlun
 
 This article describes `IFilter`, which is the interface for working with digital signal filters in Azure Machine Learning Studio.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 The `IFilter` interface provides methods and properties that are used to configure and interact with digital signal filters that have been defined using one of the filter modules in Studio. For more information, see [Filter](data-transformation-filter.md). 
 
 You use the `IFilter` interface to save a filter or apply a predefined filter to data.  

@@ -15,6 +15,8 @@ manager: cgronlun
 *Detects the language of each line in the input file*  
   
  Category: [Text Analytics](text-analytics.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module Overview  
 

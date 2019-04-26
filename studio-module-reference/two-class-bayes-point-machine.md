@@ -13,7 +13,9 @@ manager: cgronlun
 # Two-Class Bayes Point Machine
 *Creates a Bayes point machine binary classification model*  
   
- Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
+ Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md) 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
   
 ## Module overview  
 

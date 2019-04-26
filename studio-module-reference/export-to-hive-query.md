@@ -12,6 +12,8 @@ manager: cgronlun
 ---
 # Export to Hive Query
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 This article describes how to use the **Export data to Hive** option in the [Export Data](export-data.md) module in Azure Machine Learning Studio. This option is useful when you are working with very large datasets, and want to save your machine learning experiment data to a Hadoop cluster or HDInsight distributed storage. You might also want to export intermediate results or other data to Hadoop so that you can process it using a MapReduce job.
 
 ## How to export data to Hive

@@ -15,6 +15,8 @@ manager: cgronlun
 
 Category: [Text Analytics](text-analytics.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Feature Hashing** module in Azure Machine Learning Studio, to transform a stream of English text into a set of features represented as integers. You can then pass this hashed feature set to a machine learning algorithm to train a text analysis model.

@@ -17,6 +17,8 @@ manager: cgronlun
 
 Category: [Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Normalize Data** module in Azure Machine Learning Studio, to transform a dataset through *normalization*.

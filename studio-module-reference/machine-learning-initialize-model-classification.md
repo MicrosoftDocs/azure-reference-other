@@ -15,7 +15,9 @@ manager: cgronlun
 
 This article describes the modules in Azure Machine Learning Studio that support the creation of classification models. You can use these modules to build binary or multiclass classification models.
 
-For more information about Machine Learning Studio modules, and to learn how to combine modules to create complete machine learning experiments, see [Machine learning modules](machine-learning-modules.md).
+
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## About classification
 

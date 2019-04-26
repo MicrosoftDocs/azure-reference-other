@@ -22,6 +22,8 @@ This article describes the text analytics modules included in Azure Machine Lear
 + Vowpal Wabbit, for very fast machine learning on text. Vowpal Wabbit supports feature hashing, topic modeling (LDA), and classification.
 + Named entity recognition, to extract the names of people, places, and organizations from unstructured text.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Examples
 
 For examples of text analytics using Azure Machine Learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  

@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Build Count Table** module in Azure Machine Learning Studio, to analyze training data and create a *count table*, which contains the joint distribution of all feature columns given a specified label column.

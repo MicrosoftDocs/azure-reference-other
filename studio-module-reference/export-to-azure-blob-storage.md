@@ -14,6 +14,8 @@ manager: cgronlun
 
 This article describes how to use the **Export to Azure Blob Storage** option, in the [Export Data](export-data.md) module in Azure Machine Learning Studio. 
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 This option is useful when you want to to export data from a machine learning experiment to Azure blob storage. For example, you might want to share machine learning data outputs with other applications, or store intermediate data or cleaned datasets for use in other experiments. 
 
 Azure blobs can be accessed from anywhere, by using either HTTP or HTTPS. Because Azure blob storage is an unstructured data store, you can export  data in various formats. Currently, CSV, TSV, and ARFF  formats are supported.

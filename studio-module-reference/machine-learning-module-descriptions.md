@@ -15,8 +15,9 @@ manager: cgronlun
 
 This topic provides an overview of all the *modules* included in Azure Machine Learning Studio, which is an interactive, visual workspace to easily build and test predictive models. 
 
-> [!TIP]
-> To learn about new features for the professional data scientist in Machine Learning, such as Machine Learning Workbench, see [Azure Machine Learning concepts](https://docs.microsoft.com/azure/machine-learning/preview/overview-general-concepts). 
+
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## What is a module?  
 

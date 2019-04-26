@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Linear Regression** module in Azure Machine Learning Studio, to create a linear regression model for use in an experiment.  Linear regression attempts to establish a linear relationship between one or more independent variables and a numeric outcome, or dependent variable. 

@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Score](machine-learning-score.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview  
 
 This article describes how to use the [Assign Data to Clusters](assign-data-to-clusters.md) module in Azure Machine Learning Studio, to generate predictions using a clustering model that was trained using the K-Means clustering algorithm.

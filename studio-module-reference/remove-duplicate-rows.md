@@ -14,6 +14,8 @@ manager: cgronlun
 *Removes the duplicate rows from a dataset*  
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

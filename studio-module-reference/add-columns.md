@@ -11,11 +11,11 @@ ms.date: 01/11/2018
 
 # Add Columns
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
-
-*Adds a set of columns from one dataset to another*  
+*Adds a set of columns from one dataset to another*
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

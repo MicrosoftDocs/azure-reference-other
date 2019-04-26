@@ -14,6 +14,8 @@ manager: cgronlun
 *Converts data input to the internal Dataset format used by Microsoft Azure Machine Learning*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

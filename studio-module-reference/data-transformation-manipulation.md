@@ -15,6 +15,8 @@ manager: cgronlun
 
 This article describes the modules in Azure Machine Learning Studio that you can use for basic data manipulation.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 Machine Learning Studio supports tasks that are specific to machine learning, such as normalization or feature selection. The modules in this category are intended for more general tasks.
 
 > [!TIP]

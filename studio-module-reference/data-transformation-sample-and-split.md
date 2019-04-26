@@ -15,6 +15,8 @@ manager: cgronlun
 
 This article describes the modules in Azure Machine Learning Studio that you can use to partition or sample data.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 Splitting and sampling datasets are both important tasks in machine learning. For example, it's a common practice to divide data into training and testing sets to help you evaluate a model on a holdout dataset. Sampling is also increasingly important in the era of big data, to ensure that there's a fair distribution of classes in your training data. Sampling also helps ensure that you're not processing more data than is needed.
 
 You can use Machine Learning Studio modules to customize the way you split or sample datasets:

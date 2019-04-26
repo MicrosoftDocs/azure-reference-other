@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates a median filter used to smooth data for trend analysis*  
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  

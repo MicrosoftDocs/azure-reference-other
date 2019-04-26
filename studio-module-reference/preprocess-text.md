@@ -17,6 +17,8 @@ manager: cgronlun
 
 Category: [Text Analytics](text-analytics.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Preprocess Text** module in Azure Machine Learning Studio, to clean and simplify text. By preprocessing the text, you can more easily create meaningful features from text.

@@ -15,6 +15,8 @@ manager: cgronlun
 
 This article describes how you can use the filter modules in Azure Machine Learning Studio to transform digital data.  The modules in this group of tools for Machine Learning Studio are based on filters that were developed for digital signal processing technology.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 Filters typically are applied to data in the data processing stage or the preprocessing stage. Filters enhance the clarity of the signal that's used for machine learning. For example, you can use the filter modules in Machine Learning Studio for these processing tasks:
 
 -   Clean up waveforms that are used for speech recognition.

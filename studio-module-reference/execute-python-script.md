@@ -16,6 +16,8 @@ ms.author: amlstudiodocs
 
 Category: [Python Language Modules](python-language-modules.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio to run Python code. For more information about the architecture and design principles of Python in Studio, see [the following article.](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)

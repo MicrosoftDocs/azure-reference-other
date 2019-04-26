@@ -14,6 +14,8 @@ manager: cgronlun
 *Trains a classification or regression model in a supervised manner*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview
  

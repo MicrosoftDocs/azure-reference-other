@@ -14,6 +14,8 @@ manager: cgronlun
 # Import from Azure Cosmos DB
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data from Azure Cosmos DB for use in a machine learning experiment.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction) supports NoSQL database storage, using a flexible data model. The advantages of using the SQL APIs in this data store for machine learning include fast and predictable performance, automatic scaling, global distribution, and rich query capabilities. 
 

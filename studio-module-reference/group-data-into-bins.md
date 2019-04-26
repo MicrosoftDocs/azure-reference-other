@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Scale and Reduce](data-transformation-scale-and-reduce.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the [Group Data into Bins](group-data-into-bins.md) module in Azure Machine Learning Studio, to group numbers or change the distribution of continuous data.

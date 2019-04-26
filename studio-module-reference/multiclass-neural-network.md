@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Multiclass Neural Network** module in Azure Machine Learning Studio, to create a neural network model that can be used to predict a target that has multiple values. 

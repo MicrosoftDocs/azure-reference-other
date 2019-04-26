@@ -14,6 +14,8 @@ manager: cgronlun
 *Evaluates the accuracy of recommender model predictions*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  

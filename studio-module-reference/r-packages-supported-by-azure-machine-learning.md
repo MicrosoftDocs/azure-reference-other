@@ -15,6 +15,8 @@ manager: cgronlun
 
 This article lists the packages included by default in Azure Machine Learning Studio. To use one of the preloaded packages in your R code, you simply import the package using standard R syntax.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 > [!IMPORTANT]
 > Packages available in Studio can be updated, or the version refreshed, without warning. To get the latest and most complete list of the R packages that are in the Azure Machine Learning Studio environment, we recommend that you use [this script](#bkmk_code).
 

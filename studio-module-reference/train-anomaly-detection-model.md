@@ -13,7 +13,9 @@ manager: cgronlun
 # Train Anomaly Detection Model
 *Trains an anomaly detection model on a training set*  
   
- Category: [Machine Learning / Train](machine-learning-train.md)  
+ Category: [Machine Learning / Train](machine-learning-train.md) 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
   
 ## Module overview
 

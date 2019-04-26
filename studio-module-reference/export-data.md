@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Data Input and Output](data-input-and-output.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the  [Export Data](export-data.md) module in Azure Machine Learning Studio, to save results, intermediate data, and working data from your experiments into cloud storage destinations outside Azure Machine Learning Studio.

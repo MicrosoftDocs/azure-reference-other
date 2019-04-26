@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Statistical Functions](statistical-functions.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Summarize Data** module in Azure Machine Learning Studio, to create a set of standard statistical measures that describe each column in the input table.

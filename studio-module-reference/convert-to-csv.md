@@ -14,6 +14,8 @@ manager: cgronlun
 *Converts data input to a comma-separated values format*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview
  

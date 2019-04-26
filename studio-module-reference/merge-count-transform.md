@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Merge Count Transform** module in Azure Machine Learning Studio, to combine two sets of count-based features. By merging two sets of related counts and features, you can potentially improve the coverage and distribution of the features.

@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Score](machine-learning-score.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview  
 
 This article describes how to use the [Apply Transformation](apply-transformation.md) module in Azure Machine Learning Studio, to modify an input dataset based on a previously computed transformation.  

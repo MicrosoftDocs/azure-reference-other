@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Score](machine-learning-score.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the [Score Model](score-model.md) module in Azure Machine Learning Studio, to generate predictions using a trained classification or regression model.

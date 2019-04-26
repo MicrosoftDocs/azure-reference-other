@@ -14,6 +14,8 @@ manager: cgronlun
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to get data from Hadoop clusters and HDInsight distributed storage.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 Importing data from Hive is particularly useful for loading large datasets, or if you want to pre-process the data using a MapReduce job before loading the data into a machine learning experiment.
 
 > [!IMPORTANT]

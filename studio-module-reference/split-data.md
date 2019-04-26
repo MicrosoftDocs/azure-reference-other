@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Data Transformation / Sample and Split](data-transformation-sample-and-split.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This topic describes how to use the [Split Data](split-data.md) module in Azure Machine Learning Studio, to divide a dataset into two distinct sets.

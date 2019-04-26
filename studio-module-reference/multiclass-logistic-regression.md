@@ -17,6 +17,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Multiclass Logistic Regression** module in Azure Machine Learning Studio, to create a logistic regression model that can be used to predict multiple values.

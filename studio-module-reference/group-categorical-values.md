@@ -16,6 +16,8 @@ manager: cgronlun
 
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Group Categorical Values** module in Azure Machine Learning, to create an in-place lookup table.

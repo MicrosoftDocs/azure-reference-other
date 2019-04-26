@@ -15,6 +15,8 @@ manager: cgronlun
 
 This section describes some of the common interfaces on modules in Azure Machine Learning Studio.  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 + [Module parameter types](machine-learning-module-parameter-types.md)
 
     The parameters are used to customize module behavior. This topic lists some of the parameters used in various modules.  

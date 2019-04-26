@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Ordinal Regression** module in Azure Machine Learning Studio, to create a regression model that can be used to predict ranked values. 

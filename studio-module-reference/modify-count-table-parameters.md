@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Modify Count Table Parameters** module in Azure Machine Learning Studio, to change the way that features are generated from a count table.

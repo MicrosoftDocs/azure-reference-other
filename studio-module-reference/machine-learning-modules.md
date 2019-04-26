@@ -27,6 +27,8 @@ The typical workflow for machine learning includes many phases:
   
 The modules in this section provide tools for the final phases of machine learning, in which you apply an algorithm to data to train a model. In these final phases, you also generate scores, and then evaluate the accuracy and usefulness of the model.  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## List of machine learning tasks by category
 
 -   [Initialize Model](machine-learning-initialize-model.md)

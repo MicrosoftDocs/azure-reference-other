@@ -17,6 +17,8 @@ manager: cgronlun
 
 Category: [Statistical Functions](statistical-functions.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Replace Discrete Values** module in Azure Machine Learning Studio, to generate a probability score that can be used to represent a discrete value. This score can be useful for understanding the information value of the discrete values.

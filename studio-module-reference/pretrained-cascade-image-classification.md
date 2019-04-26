@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [OpenCV Library Modules](opencv-library-modules.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Pretrained Cascade Image Classification** module in Azure Machine Learning Studio, to detect faces in images. 

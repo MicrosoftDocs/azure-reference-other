@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Train](machine-learning-train.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the [Sweep Clustering](sweep-clustering.md) module in Azure Machine Learning Studio, to train a model using a parameter sweep. A parameter sweep is a way of finding the best hyperparameters for a model, given a set of data.

@@ -16,6 +16,8 @@ manager: cgronlun
 
 A dataset is data that has been uploaded to Azure Machine Learning Studio so that it can be used in the modeling process.  Even if you upload data in another format, or specify a storage format such as CSV, ARFF, or TSV, the data is implicitly converted to a `DataTable` object whenever used by a module in an experiment.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 The dataset is based on the .NET [Data Table](https://msdn.microsoft.com/library/system.data.datatable\(v=vs.110\).aspx)  
   
 ## Column types

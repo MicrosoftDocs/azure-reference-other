@@ -14,6 +14,8 @@ manager: cgronlun
 *Trains a clustering model and assigns data from the training set to clusters*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

@@ -15,6 +15,8 @@ manager: cgronlun
 *Converts data input to the attribute relation file format used by the Weka toolset*  
   
 Category: [Data Format Conversions](data-format-conversions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

@@ -15,6 +15,8 @@ manager: cgronlun
 
 This article lists Azure Machine Learning Studio modules and functionality that have been deprecated.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 To maintain backward compatibility with earlier versions of Machine Learning Studio, some functionality, including machine learning algorithms and data processing modules, remain available to support existing experiments. Deprecated modules and functionality aren't available to use when you create new experiments.
  
 We recommend that you modify your experiments to use the newer modules as soon as possible. The newer modules provide all the functionality of the deprecated module, in addition to some improvements.

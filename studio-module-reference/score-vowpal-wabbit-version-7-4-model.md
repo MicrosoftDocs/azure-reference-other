@@ -14,6 +14,8 @@ manager: cgronlun
 *Scores data using the Vowpal Wabbit machine learning system from the command line interface*  
   
  Category: [Text Analytics](text-analytics.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

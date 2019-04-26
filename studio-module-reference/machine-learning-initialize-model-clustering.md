@@ -15,7 +15,9 @@ manager: cgronlun
 
 This article describes the modules in Azure Machine Learning Studio that support creation of clustering models. 
 
-For general information about modules in Machine Learning Studio, and how they can be combined to create complete machine learning experiments, see [Machine learning modules](machine-learning-modules.md).
+
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## What is clustering?
 

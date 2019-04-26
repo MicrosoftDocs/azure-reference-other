@@ -14,6 +14,8 @@ manager: cgronlun
 *Trains a Bayesian recommender using the Matchbox algorithm*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  

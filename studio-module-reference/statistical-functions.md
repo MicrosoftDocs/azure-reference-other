@@ -22,6 +22,8 @@ This article describes the modules in Azure Machine Learning Studio that support
 + Compute widely used statistical distributions, such as Weibull, gamma, and beta.
 + Generate statistical reports over a set of columns or a dataset.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 For example, if you have a new dataset, you might use the [Summarize Data](summarize-data.md) module first. It generates a report for an entire dataset that includes standard statistical measures, such as mean and standard deviation. 
 
 If you need more advanced statistics, such as sample skewness or interquartile distance, use the [Compute Elementary Statistics](compute-elementary-statistics.md) module to generate additional descriptive statistics.

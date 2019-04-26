@@ -14,6 +14,8 @@ manager: cgronlun
 *Creates a regression model using a neural network algorithm*  
   
  Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

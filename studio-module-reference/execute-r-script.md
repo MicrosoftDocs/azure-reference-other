@@ -19,6 +19,8 @@ manager: cgronlun
 
 Category: [R Language Modules](r-language-modules.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Execute R Script** module in Azure Machine Learning Studio, to call and run R code in your experiments.

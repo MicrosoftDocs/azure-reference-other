@@ -14,6 +14,8 @@ manager: cgronlun
 *Fits a specified probability distribution function to a dataset*  
   
  Category: [Statistical Functions](statistical-functions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

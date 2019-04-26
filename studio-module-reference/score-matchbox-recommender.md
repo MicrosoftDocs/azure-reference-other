@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Score](machine-learning-score.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Score Matchbox Recommender** module in Azure Machine Learning Studio, to create predictions based on a trained recommendation model, based on the Matchbox algorithm from Microsoft Research.

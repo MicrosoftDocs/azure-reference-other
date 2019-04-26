@@ -17,6 +17,8 @@ manager: cgronlun
 
 Category: [Statistical Functions](statistical-functions.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the [Compute Linear Correlation](compute-linear-correlation.md) module in Azure Machine Learning Studio, to compute a set of Pearson correlation coefficients for each possible pair of variables in the input dataset.  

@@ -13,7 +13,9 @@ manager: cgronlun
 # Fast Forest Quantile Regression
 *Creates a quantile regression model*  
   
- Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
+ Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md) 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
   
 ## Module overview
 

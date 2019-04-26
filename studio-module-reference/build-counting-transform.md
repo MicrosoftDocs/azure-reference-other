@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Build Counting Transform** module in Azure Machine Learning Studio, to analyze training data. From this data, the module builds a *count table* as well as a set of *count-based features* that can be used in a predictive model.

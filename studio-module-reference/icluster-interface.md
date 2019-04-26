@@ -14,6 +14,8 @@ manager: cgronlun
 
 This article describes `ICluster`, which is the interface for trained clustering models that is used in Azure Machine Learning Studio.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 The `ICluster` interface provides methods and properties that are used to configure and interact with clustering models. A learner is defined as a set of instructions that perform standardized machine learning tasks. 
 
 The `ICluster` interface provides the following methods and properties for working with clustering models:

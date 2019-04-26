@@ -14,6 +14,8 @@ manager: cgronlun
 
 This article describes `iLearner`, which is the interface for trained models that is used in Azure Machine Learning Studio.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 The `ILearner` interface provides methods and properties that are used to configure and interact with machine learning models. A learner is defined as a set of instructions that perform standardized machine learning tasks. Learners include classification algorithms, clustering algorithms, and regression algorithms.
 
 You can interact with `iLearner` only in Studio, or in one of the supported APIs.

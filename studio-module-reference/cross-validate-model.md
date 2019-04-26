@@ -14,6 +14,8 @@ manager: cgronlun
 *Cross-validates parameter estimates for classification or regression models by partitioning the data*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

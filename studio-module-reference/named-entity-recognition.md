@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Text Analytics](text-analytics.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Named Entity Recognition** module in Azure Machine Learning Studio, to identify the names of things, such as people, companies, or locations in a column of text. 

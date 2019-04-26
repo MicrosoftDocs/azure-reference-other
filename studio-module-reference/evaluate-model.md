@@ -15,6 +15,8 @@ manager: cgronlun
 *Evaluates the results of a classification or regression model with standard metrics*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

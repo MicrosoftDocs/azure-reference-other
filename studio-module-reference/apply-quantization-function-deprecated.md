@@ -14,6 +14,8 @@ manager: cgronlun
 *Puts data into bins using numeric values from a column*  
   
  Category: [Deprecated Modules and Features](deprecated-modules-and-features.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview
 

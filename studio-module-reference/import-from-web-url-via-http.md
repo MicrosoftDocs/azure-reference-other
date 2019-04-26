@@ -14,6 +14,8 @@ manager: cgronlun
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to read data from a public Web page for use in a machine learning experiment.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 The following restrictions apply to data published on a web page:
 
 - Data must be in one of the supported formats: CSV, TSV, ARFF, or SvmLight. Other data will cause errors.

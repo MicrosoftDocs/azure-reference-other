@@ -10,7 +10,10 @@ author: xiaoharper
 ms.author: amlstudiodocs 
 manager: cgronlun
 ---
+
 # Anomaly Detection
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This article introduces the modules provided in Azure Machine Learning Studio for anomaly detection. Anomaly detection encompasses many important tasks in machine learning:  
   

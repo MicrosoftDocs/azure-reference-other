@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview  
 
 This article describes how to use the **Boosted Decision Tree Regression** module in Azure Machine Learning Studio, to create an ensemble of regression trees using boosting. *Boosting* means that each tree is dependent on prior trees. The algorithm learns by fitting the residual of the trees that preceded it. Thus, boosting in a decision tree ensemble tends to improve accuracy with some small risk of less coverage.  

@@ -14,6 +14,8 @@ manager: cgronlun
 *Computes the permutation feature importance scores of feature variables given a trained model and a test dataset*  
   
  Category: [Feature Selection Modules](feature-selection-modules.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview
 

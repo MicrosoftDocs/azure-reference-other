@@ -15,6 +15,8 @@ manager: cgronlun
 *Detects anomalies in the input time series data.*  
   
  Category: Time Series  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  

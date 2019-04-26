@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates N-Gram dictionary features and does feature selection on them*  
 
 Category: [Text Analytics](text-analytics.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

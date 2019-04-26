@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [OpenCV Library Modules](opencv-library-modules.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the [Import Images](import-images.md) module in Azure Machine Learning Studio, to get multiple images from Azure Blob storage and create an image dataset from them.

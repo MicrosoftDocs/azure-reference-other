@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Data Transformation / Sample and Split](data-transformation-sample-and-split.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Partition and Sample** module in Azure Machine Learning Studio, to perform sampling on a dataset or to create partitions from your dataset.

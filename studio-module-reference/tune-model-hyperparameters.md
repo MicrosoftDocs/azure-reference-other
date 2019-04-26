@@ -14,6 +14,8 @@ manager: cgronlun
 *Performs a parameter sweep on a model to determine the optimum parameter settings*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview
 

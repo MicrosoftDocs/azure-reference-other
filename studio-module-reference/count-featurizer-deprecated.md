@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Count Featurizer** module in Azure Machine Learning Studio, to create features from a previously generated count table.

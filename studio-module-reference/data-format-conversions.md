@@ -13,6 +13,8 @@ manager: cgronlun
 ---
 # Data Format Conversions
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 This article lists the modules provided in Azure Machine Learning Studio for converting data among various file formats used in machine learning. 
 
 The supported formats include:

@@ -15,6 +15,8 @@ manager: cgronlun
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview  
 
 This article describes how to use the **FIR Filter** module in Azure Machine Learning Studio, to define a kind of filter called a *finite impulse response* (FIR) filter. FIR filters have many applications in signal processing, and are most commonly used in applications that require a linear-phase response. For example, a filter might be applied to  images used in healthcare to sharpen the overall image, eliminate noise, or focus on an imaged object.

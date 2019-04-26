@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the [Select Columns in Dataset](select-columns-in-dataset.md) module in Azure Machine Learning Studio, to choose a subset of columns to use in downstream operations. The module does not physically remove the columns from the source dataset; instead, it creates a subset of columns, much like a database *view* or *projection*.

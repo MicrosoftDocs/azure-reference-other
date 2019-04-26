@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Clip Values** module in Azure Machine Learning Studio, to identify and optionally replace data values that are above or below a specified threshold. This is useful when you want to remove outliers or replace them with a mean, a constant, or other substitute value.  

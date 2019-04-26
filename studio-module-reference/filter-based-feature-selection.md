@@ -14,6 +14,8 @@ manager: cgronlun
 *Identifies the features in a dataset with the greatest predictive power*  
   
  Category: [Feature Selection Modules](feature-selection-modules.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ##  Module overview  
 

@@ -13,6 +13,8 @@ manager: cgronlun
 # Import from Azure Table
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import structured or semi-structured data from Azure tables into a machine learning experiment.  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
  The Azure **table** service is a data management service in Azure that can store large amounts of structured, non-relational data. It is a NoSQL data store that accepts authenticated calls from inside and outside Azure.  
   

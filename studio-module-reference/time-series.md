@@ -16,6 +16,8 @@ manager: cgronlun
 
 This article describes the modules in Azure Machine Learning Studio that are specifically designed for working with time series data.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 If you need help determining whether you need an algorithm specially for time series, or another type of algorithm, see these resources:
 
 - [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-cheat-sheet/)

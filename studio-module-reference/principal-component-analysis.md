@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Data Transformation / Sample and Split](data-transformation-sample-and-split.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Principal Component Analysis** module in Azure Machine Learning to reduce the dimensionality of your training data. The module analyzes your data and creates a reduced feature set that captures all the information contained in the dataset, but in a smaller number of features.

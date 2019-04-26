@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Feature Selection Modules](feature-selection-modules.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the **Fisher Linear Discriminant Analysis** module in Azure Machine Learning Studio, to create a new feature dataset that captures the combination of features that best separates two or more classes.

@@ -16,6 +16,8 @@ manager: cgronlun
 
 Category: [Data Input and Output](data-input-and-output.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to load data into a machine learning experiment from existing cloud data services.  

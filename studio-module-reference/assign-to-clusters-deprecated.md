@@ -16,6 +16,8 @@ manager: cgronlun
   
  Category: [Deprecated Modules and Features](deprecated-modules-and-features.md)  
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview  
 
 This article describes how to use the **Assign to Clusters** module in Azure Machine Learning Studio, to generate predictions using a trained clustering model, based on the K-Means clustering algorithm included in Studio.

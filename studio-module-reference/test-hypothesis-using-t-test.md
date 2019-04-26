@@ -17,6 +17,8 @@ manager: cgronlun
 
 Category: [Statistical Functions](statistical-functions.md)
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 ## Module overview
 
 This article describes how to use the [Test Hypothesis Using t-Test](test-hypothesis-using-t-test.md) module in Azure Machine Learning Studio, to generate scores for three types of t-tests:

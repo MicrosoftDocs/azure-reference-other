@@ -15,6 +15,8 @@ manager: cgronlun
 
 This article lists the modules in Azure Machine Learning Studio that support running R code. These modules make it easier to publish R models in production, and to use the experience of the R language community to solve real-world problems.
 
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 This article also describes some general requirements for using R in Machine Language Studio, and lists known issues and tips.
 
 ## List of modules

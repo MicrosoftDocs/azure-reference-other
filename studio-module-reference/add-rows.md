@@ -13,7 +13,9 @@ manager: cgronlun
 
 *Appends a set of rows from an input dataset to the end of another dataset*  
 
-Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview  
 

@@ -13,6 +13,8 @@ manager: cgronlun
 *Applies a mathematical operation to column values*  
   
  Category: [Statistical Functions](statistical-functions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 
