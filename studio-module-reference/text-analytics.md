@@ -2,7 +2,7 @@
 title: "Text Analytics | Microsoft Docs"
 description: This article describes the text analytics modules included in Azure Machine Learning Studio. 
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -21,6 +21,8 @@ This article describes the text analytics modules included in Azure Machine Lear
 + Feature hashing, to efficiently analyze text without preprocessing or advanced linguistic analysis.  
 + Vowpal Wabbit, for very fast machine learning on text. Vowpal Wabbit supports feature hashing, topic modeling (LDA), and classification.
 + Named entity recognition, to extract the names of people, places, and organizations from unstructured text.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Examples
 

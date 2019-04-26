@@ -2,7 +2,7 @@
 title: "Evaluate Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
-ms.date: 01/10/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ manager: cgronlun
 *Evaluates the results of a classification or regression model with standard metrics*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

@@ -1,7 +1,7 @@
 ---
 title: "Cross-Validate Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/09/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -14,6 +14,8 @@ manager: cgronlun
 *Cross-validates parameter estimates for classification or regression models by partitioning the data*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

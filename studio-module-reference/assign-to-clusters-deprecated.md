@@ -1,7 +1,7 @@
 ---
 title: "Assign to Clusters (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/16/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ manager: cgronlun
 *Assigns data to clusters using an existing trained clustering model*  
   
  Category: [Deprecated Modules and Features](deprecated-modules-and-features.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview  
 

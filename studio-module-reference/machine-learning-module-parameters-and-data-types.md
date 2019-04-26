@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning Module Parameters and Data Types | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -14,6 +14,8 @@ manager: cgronlun
 # Machine Learning Studio Parameters and Data Types
 
 This section describes some of the common interfaces on modules in Azure Machine Learning Studio.  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 + [Module parameter types](machine-learning-module-parameter-types.md)
 

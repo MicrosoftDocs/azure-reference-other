@@ -2,7 +2,7 @@
 title: "Test Hypothesis Using t-Test | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
-ms.date: 01/28/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -16,6 +16,8 @@ manager: cgronlun
 *Compares means from two columns using a t-test*
 
 Category: [Statistical Functions](statistical-functions.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

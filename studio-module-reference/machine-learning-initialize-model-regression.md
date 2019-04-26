@@ -2,7 +2,7 @@
 title: "Machine Learning - Initialize Model - Regression | Microsoft Docs"
 description: Description of the modules in Azure Machine Learning Studio that support creation of regression models.
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,7 +15,9 @@ manager: cgronlun
 
 This article describes the modules in Azure Machine Learning Studio that support creation of regression models.
 
-For general information about modules in Machine Learning Studio, and how they can be combined to create complete machine learning experiments, see [Machine learning modules](machine-learning-modules.md).
+
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## More about regression
 

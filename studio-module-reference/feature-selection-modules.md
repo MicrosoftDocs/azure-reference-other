@@ -2,7 +2,7 @@
 title: "Feature Selection modules | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that you can use for feature selection."
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -14,6 +14,8 @@ manager: cgronlun
 # Feature Selection modules
 
 This article describes the modules in Azure Machine Learning Studio that you can use for feature selection.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 Feature selection is an important tool in machine learning. Machine Learning Studio provides multiple methods for performing feature selection. Choose a feature selection method based on the type of data that you have, and the requirements of the statistical technique that's applied.
 

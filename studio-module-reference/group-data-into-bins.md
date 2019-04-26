@@ -1,7 +1,7 @@
 ---
 title: "Group Data into Bins | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ manager: cgronlun
 *Puts numerical data into bins*
 
 Category: [Scale and Reduce](data-transformation-scale-and-reduce.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

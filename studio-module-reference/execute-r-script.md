@@ -1,7 +1,7 @@
 ---
 title: "Execute R Script | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 10/28/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -18,6 +18,8 @@ manager: cgronlun
 *Executes an R script from an Azure Machine Learning Studio experiment*
 
 Category: [R Language Modules](r-language-modules.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 
