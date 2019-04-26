@@ -8,6 +8,8 @@ author: xiaoharper
 ms.author: amlstudiodocs 
 ms.date: 01/11/2018
 ---
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+
 # Add Columns
 
 *Adds a set of columns from one dataset to another*  
