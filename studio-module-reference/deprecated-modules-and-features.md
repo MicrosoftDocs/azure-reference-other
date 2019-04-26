@@ -2,7 +2,7 @@
 title: "Deprecated modules and features | Microsoft Docs"
 description: "Review deprecated modules and functionality in Azure Machine Learning Studio."
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/16/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"

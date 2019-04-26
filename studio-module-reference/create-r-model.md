@@ -1,7 +1,7 @@
 ---
 title: "Create R Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/31/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"

@@ -2,7 +2,7 @@
 title: "Machine Learning Modules | Microsoft Docs"
 description: The modules in this section provide tools for the final phases of machine learning.
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"

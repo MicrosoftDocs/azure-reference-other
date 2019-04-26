@@ -2,7 +2,7 @@
 title: "Feature Selection modules | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that you can use for feature selection."
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"

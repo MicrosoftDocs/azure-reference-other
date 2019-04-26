@@ -2,7 +2,7 @@
 title: "Machine Learning - Evaluate | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that you can use to evaluate a machine learning model."
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"

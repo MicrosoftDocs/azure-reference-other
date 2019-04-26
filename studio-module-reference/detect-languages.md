@@ -1,7 +1,7 @@
 ---
 title: "Detect Languages | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 12/18/2017
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
