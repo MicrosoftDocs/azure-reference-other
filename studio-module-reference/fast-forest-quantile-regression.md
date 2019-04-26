@@ -1,7 +1,7 @@
 ---
 title: "Fast Forest Quantile Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -13,7 +13,9 @@ manager: cgronlun
 # Fast Forest Quantile Regression
 *Creates a quantile regression model*  
   
- Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
+ Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md) 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
   
 ## Module overview
 

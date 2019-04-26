@@ -2,7 +2,7 @@
 title: "Statistical Functions | Microsoft Docs"
 description: This article describes the modules in Azure Machine Learning Studio that support mathematical and statistical operations critical for machine learning.
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -21,6 +21,8 @@ This article describes the modules in Azure Machine Learning Studio that support
 + Compute z-scores.
 + Compute widely used statistical distributions, such as Weibull, gamma, and beta.
 + Generate statistical reports over a set of columns or a dataset.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 For example, if you have a new dataset, you might use the [Summarize Data](summarize-data.md) module first. It generates a report for an entire dataset that includes standard statistical measures, such as mean and standard deviation. 
 

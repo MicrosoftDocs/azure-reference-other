@@ -2,7 +2,7 @@
 title: "Median Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates a median filter used to smooth data for trend analysis*  
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  

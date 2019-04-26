@@ -2,7 +2,7 @@
 title: "Data Input and Output | Microsoft Docs"
 description: "Learn about the modules you can use to import and export data and models in Azure Machine Learning Studio."
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/16/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Data Input and Output
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This article lists the modules that you can use for importing and exporting data and models in Azure Machine Learning Studio.
 

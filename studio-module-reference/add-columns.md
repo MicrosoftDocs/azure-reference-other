@@ -6,13 +6,16 @@ ms.subservice: "studio"
 ms.topic: "reference"
 author: xiaoharper
 ms.author: amlstudiodocs 
-ms.date: 01/11/2018
+ms.date: 05/06/2019
 ---
+
 # Add Columns
 
-*Adds a set of columns from one dataset to another*  
+*Adds a set of columns from one dataset to another*
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

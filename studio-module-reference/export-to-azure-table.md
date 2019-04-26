@@ -1,7 +1,7 @@
 ---
 title: "Export to Azure Table | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -13,6 +13,8 @@ manager: cgronlun
 # Export to Azure Table
 
 This article describes how to use the **Export to Azure** option in the [Export Data](export-data.md) module in Azure Machine Learning Studio.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This option is useful when you want to export results or intermediate data from a machine learning experiment to an Azure table. The Azure table service is a data management service in Azure that can store large amounts of structured, non-relational data. It is a NoSQL data store that accepts authenticated calls from inside and outside Azure.
 

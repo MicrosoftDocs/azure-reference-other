@@ -1,7 +1,7 @@
 ---
 title: "Pretrained Cascade Image Classification | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates a pretrained image classification model for frontal faces using the OpenCV Library*
 
 Category: [OpenCV Library Modules](opencv-library-modules.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

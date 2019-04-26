@@ -1,7 +1,7 @@
 ---
 title: "Train Anomaly Detection Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -13,7 +13,9 @@ manager: cgronlun
 # Train Anomaly Detection Model
 *Trains an anomaly detection model on a training set*  
   
- Category: [Machine Learning / Train](machine-learning-train.md)  
+ Category: [Machine Learning / Train](machine-learning-train.md) 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
   
 ## Module overview
 

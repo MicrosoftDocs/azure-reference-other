@@ -1,7 +1,7 @@
 ---
 title: "Convert to ARFF | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/16/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ manager: cgronlun
 *Converts data input to the attribute relation file format used by the Weka toolset*  
   
 Category: [Data Format Conversions](data-format-conversions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

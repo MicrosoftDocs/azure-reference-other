@@ -1,7 +1,7 @@
 ---
 title: "Score Vowpal Wabbit Version 7-4 Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -14,6 +14,8 @@ manager: cgronlun
 *Scores data using the Vowpal Wabbit machine learning system from the command line interface*  
   
  Category: [Text Analytics](text-analytics.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

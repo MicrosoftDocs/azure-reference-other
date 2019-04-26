@@ -1,7 +1,7 @@
 ---
 title: "Import from Azure Blob Storage | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -13,6 +13,8 @@ manager: cgronlun
 # Import from Azure Blob Storage
 
 This topic describes how to use the [Import Data](import-data.md) module in Azure Machine Learning, to read data from Azure blob storage, so that you can use the data in a machine learning experiment.  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 The Azure Blob Service is for storing large amounts of data, including binary data. Azure blobs can be accessed from anywhere, by using either HTTP or HTTPS. Authentication might be required depending on the type of blob storage. 
 

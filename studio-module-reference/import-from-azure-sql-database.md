@@ -1,7 +1,7 @@
 ---
 title: "Import from Azure SQL Database | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -13,6 +13,8 @@ manager: cgronlun
 # Import from Azure SQL Database
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to get data from an Azure SQL Database or Azure SQL Data Warehouse.  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 To import data from a database, you must specify both the server name and database name, and a SQL statement that defines the table, view, or query.  
 

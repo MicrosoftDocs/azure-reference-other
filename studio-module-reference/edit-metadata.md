@@ -1,7 +1,7 @@
 ---
 title: "Edit Metadata | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 12/18/2017
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -14,6 +14,8 @@ manager: cgronlun
 *Edits metadata associated with columns in a dataset*  
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

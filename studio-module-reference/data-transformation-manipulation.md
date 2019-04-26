@@ -2,7 +2,7 @@
 title: "Data Transformation - Manipulation | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that you can use for basic data manipulation."
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/16/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -14,6 +14,8 @@ manager: cgronlun
 # Data Transformation - Manipulation
 
 This article describes the modules in Azure Machine Learning Studio that you can use for basic data manipulation.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 Machine Learning Studio supports tasks that are specific to machine learning, such as normalization or feature selection. The modules in this category are intended for more general tasks.
 

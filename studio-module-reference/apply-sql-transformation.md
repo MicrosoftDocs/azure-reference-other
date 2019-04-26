@@ -1,7 +1,7 @@
 ---
 title: "Apply SQL Transformation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/11/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ manager: cgronlun
 *Runs a SQLite query on input datasets to transform the data*  
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview  
 

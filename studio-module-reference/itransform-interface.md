@@ -1,7 +1,7 @@
 ---
 title: "ITransform interface | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -13,6 +13,8 @@ manager: cgronlun
 # ITransform interface
 
 This article describes `ITransform`, which is an interface in Azure Machine Learning Studio that stores a predefined transformation, or applies a predefined transformation to data.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 The `ITransform` interface provides the following functionality:
 

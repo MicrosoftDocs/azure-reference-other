@@ -2,7 +2,7 @@
 title: "Compute Linear Correlation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
-ms.date: 01/16/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -16,6 +16,8 @@ manager: cgronlun
 *Calculates the linear correlation between column values in a dataset*  
 
 Category: [Statistical Functions](statistical-functions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

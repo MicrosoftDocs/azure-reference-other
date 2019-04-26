@@ -7,11 +7,13 @@ ms.subservice: "studio"
 ms.topic: "reference"
 author: xiaoharper
 ms.author: amlstudiodocs 
-ms.date: 01/05/2018
+ms.date: 05/06/2019
 ---
 # A-Z list of Machine Learning Studio modules
 
-This article provides an alphabetized list of the modules that are available in Azure Machine Learning Studio.  
+This article provides an alphabetized list of the modules that are available in Azure Machine Learning Studio.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 The modules cover a wide range of features and functions necessary for machine learning tasks:
 - Data conversion functions

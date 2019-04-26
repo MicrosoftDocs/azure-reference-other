@@ -1,7 +1,7 @@
 ---
 title: "Split Data using Relative Expression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -17,6 +17,8 @@ This article describes how to use the **Relative Expression Split** option in th
 + Age greater than 40 vs. 40 or younger
 + Test score of 60 or higher vs. less than 60
 + Rank value of 1 vs. all other values
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 To divide your data, you choose a single numeric column in your data, and define an expression to use in evaluating each row. The *relative expression* must include the column name, the value, and an operator such as greater than and less than, equal and not equals.
 

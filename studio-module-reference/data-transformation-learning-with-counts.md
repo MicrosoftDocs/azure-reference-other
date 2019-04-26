@@ -3,7 +3,7 @@ title: "Data Transformation - Learning with Counts | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that support count-based featurization."
 titleSuffix: "Azure Machine Learning Studio"
 ms.custom: "formulas"
-ms.date: 01/16/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -15,6 +15,8 @@ manager: cgronlun
 # Data Transformation - Learning with Counts
 
 This article describes the modules in Azure Machine Learning Studio that support count-based featurization.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 Learning with counts is an efficient way to create a compact set of dataset features that are based on counts of the values. You can use the modules in this category to build a set of counts and features. Later, you can update the counts and the features to take advantage of new data, or merge two sets of count data.
 
