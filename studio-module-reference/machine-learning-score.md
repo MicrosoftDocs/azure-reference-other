@@ -1,18 +1,20 @@
 ---
 title: "Machine Learning - Score | Microsoft Docs"
 description: This section lists the modules provided in Azure Machine Learning Studio for scoring.
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Score
 
 This section lists the modules provided in Azure Machine Learning Studio for *scoring*.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 Scoring is also called prediction, and is the process of generating values based on a trained machine learning model, given some new input data. The values or scores that are created can represent predictions of future values, but they might also represent a likely category or outcome. The meaning of the score depends on the type of data you provide, and the type of model that you created.
 

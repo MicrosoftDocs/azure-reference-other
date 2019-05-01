@@ -1,12 +1,12 @@
 ---
 title: "PCA-Based Anomaly Detection | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates an anomaly detection model using Principal Component Analysis*
 
 Category: [Anomaly Detection](anomaly-detection.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 
@@ -74,11 +76,11 @@ For additional information about how PCA works, and about the implementation for
 
 6. Connect a tagged training dataset, and one of the  training modules:
 
-    - If you set the **Create trainer mode** option to **Single Parameter**, use the [Train Model](train-model.md) module.
+    - If you set the **Create trainer mode** option to **Single Parameter**, use the [Train Anomaly Detection Model](train-anomaly-detection-model.md) module.
     -  If you set the **Create trainer mode** option to **Parameter Range**, use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module.
 
     > [!NOTE]
-    > If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list.
+    > If you pass a parameter range to [Train Anomaly Detection Model](train-anomaly-detection-model.md), it uses only the first value in the parameter range list.
     > 
     > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and using the default values for the learner.
     > 
@@ -143,7 +145,7 @@ This algorithm uses PCA to approximate the subspace containing the normal class.
 |[Error 0062](errors/error-0062.md)|Exception occurs when attempting to compare two models with different learner types.|  
 |[Error 0047](errors/error-0047.md)|Exception occurs if number of feature columns in some of the datasets passed to the module is too small.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

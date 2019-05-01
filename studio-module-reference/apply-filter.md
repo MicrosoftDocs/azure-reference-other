@@ -1,11 +1,11 @@
 ---
 title: "Apply Filter | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/11/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs 
 manager: cgronlun
 ---
@@ -14,6 +14,8 @@ manager: cgronlun
 *Applies a filter to specified columns of a dataset*  
   
 Category: [Data Transformation / Filter](data-transformation-filter.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ##  Module overview  
 
@@ -90,7 +92,7 @@ This section describes the behavior when missing values are encountered, by filt
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

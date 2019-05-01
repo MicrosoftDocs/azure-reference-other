@@ -1,12 +1,12 @@
 ---
 title: "Select Columns Transform | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates a transformation that selects the same subset of columns as in the given dataset*
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This article describes how to use the **Select Columns Transform** module in Azure Machine Learning Studio. The purpose of the **Select Columns Transform** module is to ensure that a predictable, consistent set of columns is always used in downstream machine learning operations.
 

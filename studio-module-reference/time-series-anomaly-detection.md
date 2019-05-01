@@ -1,13 +1,13 @@
 ---
 title: "Time Series Anomaly Detection | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -15,6 +15,8 @@ manager: cgronlun
 *Detects anomalies in the input time series data.*  
   
  Category: Time Series  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  
@@ -61,8 +63,6 @@ In other cases,  a persistent negative trend might be the anomaly. For example, 
 
 ## Resources
 
-To learn more, see this article: [Anomaly detection using machine learning to detect abnormalities in time series data](https://blogs.technet.microsoft.com/machinelearning/2014/11/05/anomaly-detection-using-machine-learning-to-detect-abnormalities-in-time-series-data/)  
-  
 For more information about the research underlying this approach, see these articles:  
   
 + Shen-Shyang Ho; Wechsler, H., "A Martingale Framework for Detecting Changes in Data Streams by Testing Exchangeability," Pattern Analysis and Machine Intelligence, IEEE Transactions , vol.32, no.12, pp.2113,2127, Dec. 2010  

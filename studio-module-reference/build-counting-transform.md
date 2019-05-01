@@ -1,12 +1,12 @@
 ---
 title: "Build Counting Transform | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 12/18/2017
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates a transformation that turns count tables into features, so that you can apply the transformation to multiple datasets*
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 
@@ -235,7 +237,7 @@ The following parameters define the format of the count table:
 |[Error 0060](errors/error-0060.md)|Exception occurs when an out of range column range is specified in a column picker.|  
 |[Error 0089](errors/error-0089.md)|Exception occurs when the specified number of classes is less than the actual number of classes in a dataset used for counting.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

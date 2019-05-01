@@ -2,18 +2,20 @@
 title: "Machine Learning - Initialize Model | Microsoft Docs"
 description: "Learn about the modules you can use in Azure Machine Learning Studio to define a machine learning model and set its parameters."
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Initialize Model
 
 This article describes the modules in Azure Machine Learning Studio that you can use to define a machine learning model and set its parameters. 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 You can think of the *untrained model* as a specification that you can apply to different input datasets. You might apply the same model specification to different data and get different results. Or, you can use the specification to retrain a model. You can then add new data.
 

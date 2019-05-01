@@ -1,18 +1,20 @@
 ---
 title: "Import from Azure SQL Database | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Import from Azure SQL Database
 
 This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to get data from an Azure SQL Database or Azure SQL Data Warehouse.  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 To import data from a database, you must specify both the server name and database name, and a SQL statement that defines the table, view, or query.  
 
@@ -155,7 +157,7 @@ One option is to export the data to a CSV  file in Azure storage, and use the op
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

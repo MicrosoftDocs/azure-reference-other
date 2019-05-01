@@ -1,12 +1,12 @@
 ---
 title: "Apply Quantization Function (deprecated) | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/11/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs 
 manager: cgronlun
 ---
@@ -14,6 +14,8 @@ manager: cgronlun
 *Puts data into bins using numeric values from a column*  
   
  Category: [Deprecated Modules and Features](deprecated-modules-and-features.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview
 

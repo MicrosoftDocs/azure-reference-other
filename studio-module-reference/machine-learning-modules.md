@@ -2,12 +2,12 @@
 title: "Machine Learning Modules | Microsoft Docs"
 description: The modules in this section provide tools for the final phases of machine learning.
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -26,6 +26,8 @@ The typical workflow for machine learning includes many phases:
 -   Using models to generate predictions, recommendations, and other results.  
   
 The modules in this section provide tools for the final phases of machine learning, in which you apply an algorithm to data to train a model. In these final phases, you also generate scores, and then evaluate the accuracy and usefulness of the model.  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## List of machine learning tasks by category
 

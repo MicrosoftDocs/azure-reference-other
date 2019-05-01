@@ -1,18 +1,20 @@
 ---
 title: "Export to Azure Blob Storage | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Export to Azure Blob Storage
 
 This article describes how to use the **Export to Azure Blob Storage** option, in the [Export Data](export-data.md) module in Azure Machine Learning Studio. 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This option is useful when you want to to export data from a machine learning experiment to Azure blob storage. For example, you might want to share machine learning data outputs with other applications, or store intermediate data or cleaned datasets for use in other experiments. 
 
@@ -138,7 +140,7 @@ Yes, you can write data to accounts in different regions. However, if the storag
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

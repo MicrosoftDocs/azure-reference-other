@@ -1,19 +1,21 @@
 ---
 title: "Two-Class Boosted Decision Tree | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/10/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Boosted Decision Tree
 *Creates a binary classifier using a boosted decision tree algorithm*  
   
- Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
+ Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md) 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
   
 ## Module overview  
 

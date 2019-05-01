@@ -1,12 +1,12 @@
 ---
 title: "K-Means Clustering | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/11/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -14,6 +14,8 @@ manager: cgronlun
 *Configures and initializes a K-means clustering model*  
   
  Category: [Machine Learning / Initialize Model / Clustering](machine-learning-initialize-model-clustering.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  
@@ -255,11 +257,11 @@ Given a specific number of clusters (*K*) to find for a set of *D*-dimensional d
   
 ##  Exceptions  
 
-For a list of all exceptions, see [Machine Learning Module Error Codes](machine-learning-module-error-codes.md).  
+For a list of all exceptions, see [Machine Learning Module Error Codes](errors/machine-learning-module-error-codes.md).  
   
 |Exception|Description|  
 |---------------|-----------------|  
-|[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
+|[Error 0003](errors/machine-learning-module-error-codes.md)|Exception occurs if one or more of inputs are null or empty.|  
   
 ## See also
   

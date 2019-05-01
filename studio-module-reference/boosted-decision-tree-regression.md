@@ -1,12 +1,12 @@
 ---
 title: "Boosted Decision Tree Regression | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/11/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates a regression model using the Boosted Decision Tree algorithm*  
 
 Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview  
 

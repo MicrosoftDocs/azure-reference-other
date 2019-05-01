@@ -1,19 +1,21 @@
 ---
 title: "Two-Class Decision Jungle | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Two-Class Decision Jungle
 *Creates a two-class classification model using the decision jungle algorithm*  
   
- Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)  
+ Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md) 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
   
 ## Module overview  
 
@@ -38,13 +40,13 @@ Decision jungles have the following advantages:
   
 ## How to configure Two-Class Decision Jungle
 
-1.  Add the **Two-Class Decision Forest** module to your experiment in Studio.  
+1.  Add the **Two-Class Decision Jungle** module to your experiment in Studio.  
   
 2.  For **Resampling method**, choose the method used to create the individual trees.  You can choose from **Bagging** or **Replicate**.  
   
     -   **Bagging**: Select this option to use bagging, also called bootstrap aggregating.  
   
-         Each tree in a decision forest outputs a Gaussian distribution as prediction. The aggregation is to find a Gaussian whose first two moments match the moments of the mixture of Gaussians given by combining all Gaussians returned by individual trees.  
+         Each tree in a decision jungle outputs a Gaussian distribution as prediction. The aggregation is to find a Gaussian whose first two moments match the moments of the mixture of Gaussians given by combining all Gaussians returned by individual trees.  
   
     -   **Replicate**: In replication, each tree is trained on exactly the same input data. The determination of which split predicate is used for each tree node remains random and the trees will be diverse.  
   

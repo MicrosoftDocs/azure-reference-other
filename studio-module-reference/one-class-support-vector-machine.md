@@ -1,12 +1,12 @@
 ---
 title: "One-Class Support Vector Machine | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -15,6 +15,8 @@ manager: cgronlun
 *Creates a one class Support Vector Machine model for anomaly detection*
 
 Category: [Anomaly Detection](anomaly-detection.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 
@@ -60,12 +62,12 @@ For more information, including links to basic research, see the [Technical note
 
 5. Connect a training dataset, and one of the training modules:
 
-    - If you set **Create trainer mode** to **Single Parameter**, use the [Train Model](train-model.md) module.
+    - If you set **Create trainer mode** to **Single Parameter**, use the [Train Anomaly Detection Model](train-anomaly-detection-model.md) module.
     - If you set **Create trainer mode** to **Parameter Range**, use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module.
 
    > [!NOTE]
    > 
-   > If you pass a parameter range to [Train Model](train-model.md), it uses only the first value in the parameter range list. 
+   > If you pass a parameter range to [Train Anomaly Detection Model](train-anomaly-detection-model.md), it uses only the first value in the parameter range list. 
    > 
    > If you pass a single set of parameter values to the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, when it expects a range of settings for each parameter, it ignores the values and uses the default values for the learner.
    > 

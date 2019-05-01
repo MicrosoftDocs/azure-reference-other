@@ -1,13 +1,13 @@
 ---
 title: "Latent Dirichlet Allocation | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -16,6 +16,8 @@ manager: cgronlun
 *Use the Vowpal Wabbit library to perform VW LDA*
 
 Category: [Text Analytics](text-analytics.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 
@@ -37,7 +39,7 @@ Generally speaking, LDA is not a method for classification per se, but uses a ge
 
 A generative model can be preferable because it avoids making any strong assumptions about the relationship between the text and categories, and uses only the distribution of words to mathematically model topics.
 
-+ The theory is discussed in this paper, available as a PDF download: [Online Learning for Latent Dirichlet Allocation: Hoffman, Blei, and Bach](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2010_1291.pdf)
++ The theory is discussed in this paper, available as a PDF download: [Latent Dirichlet Allocation: Blei, Ng, and Jordan](https://ai.stanford.edu/~ang/papers/nips01-lda.pdf)
 
 + The implementation in this module is based on the [Vowpal Wabbit library](https://github.com/JohnLangford/vowpal_wabbit/wiki/Latent-Dirichlet-Allocation) (version 8) for LDA.
 
@@ -288,7 +290,7 @@ After the term indexes have been computed, individual rows of text are compared 
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

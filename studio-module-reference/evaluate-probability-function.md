@@ -1,12 +1,12 @@
 ---
 title: "Evaluate Probability Function | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/16/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -14,6 +14,8 @@ manager: cgronlun
 *Fits a specified probability distribution function to a dataset*  
   
  Category: [Statistical Functions](statistical-functions.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 
@@ -567,13 +569,13 @@ This module supports calculating any of these values for the specified distribut
 |Results dataset|[Data Table](data-table.md)|Output dataset|  
   
 ##  Exception  
- For a complete list of error messages, see [Module Error Codes](machine-learning-module-error-codes.md).  
+ For a complete list of error messages, see [Module Error Codes](errors/machine-learning-module-error-codes.md).  
   
 |Exception|Description|  
 |---------------|-----------------|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

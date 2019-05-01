@@ -2,18 +2,20 @@
 title: "Machine Learning - Evaluate | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio modules that you can use to evaluate a machine learning model."
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Evaluate
 
 This article describes the modules in Azure Machine Learning Studio that you can use to evaluate a machine learning model. _Model evaluation_ is performed after training is complete, to measure the accuracy of the predictions and assess model fit.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This article also describes the overall process in Machine Learning Studio for model creation, training, evaluation, and scoring.
 

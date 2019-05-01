@@ -2,39 +2,26 @@
 title: "Machine Learning Studio: algorithm and module help"
 description: Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 02/06/2019
+ms.date: 04/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 applies_to: 
   - "Azure"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Azure Machine Learning Studio: algorithm and module help
 
-Azure Machine Learning Studio is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC.
-
-+ Sign in to your [Machine Learning Studio workspace](https://studio.azureml.net/Home) and get started.
-  
-## What is Azure Machine Learning Studio?
-
-Azure Machine Learning Studio is a collaborative visual development environment that helps you build, test, and deploy predictive analytics solutions in the cloud. You upload data or connect to data already in the cloud, choose an algorithm from a ready-to-use library of algorithms, and build an end-to-end predictive workflow. You can then quickly deploy the model and integrate the workflow in applications by calling a web service.
-
-If you have not used machine learning before, try these resources:
-
-+ [Data Science for Beginners video series](/azure/machine-learning/studio/data-science-for-beginners-the-5-questions-data-science-answers.md)
-+ [Tutorial: Create your first data science experiment in Azure Machine Learning Studio](/azure/machine-learning/studio/create-experiment.md)
-+ The [Azure AI Gallery](https://gallery.azure.ai/) provides examples of how machine learning has been applied in various industries.
-+ [Webinars and on-demand videos](https://gallery.cortanaintelligence.com/learnings)
-  
-## Help for Machine Learning Studio modules  
+Azure Machine Learning Studio is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio?"](https://docs.microsoft.com/azure/machine-learning/studio/what-is-ml-studio) for more details.
 
 This documentation contains detailed technical and how-to information for the modules that are available in Machine Learning Studio.
 
-### What is a module?
++ Sign in to your [Machine Learning Studio workspace](https://studio.azureml.net/Home) and get started.
+
+## What is a module?
 
 Each *module* in Machine Learning Studio represents a set of code that can run independently and perform a machine learning task, given the required inputs. A module might contain a particular algorithm, or perform a task that is important in machine learning, such as missing value replacement, or statistical analysis. 
 
@@ -73,7 +60,7 @@ In this reference section, you'll find technical background on the machine learn
 |-------------|-----------------|  
 |[Data Types List](machine-learning-module-data-types.md#types)|This section contains reference topics describing the learner interfaces, and  the `DataTable` format used for datasets.|  
 |[Module Parameter Types](machine-learning-module-parameter-types.md)|This section contains reference topics describing the parameter API.|  
-|[Exceptions List](machine-learning-module-error-codes.md)|This section lists the errors that modules can generate, with causes and possible workarounds.<br /><br /> For the list of error codes related to the web service API, see [Machine Learning REST API error codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).|  
+|[Exceptions List](errors/machine-learning-module-error-codes.md)|This section lists the errors that modules can generate, with causes and possible workarounds.<br /><br /> For the list of error codes related to the web service API, see [Machine Learning REST API error codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).|  
 
 ## See also  
 

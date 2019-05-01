@@ -1,12 +1,12 @@
 ---
 title: "Execute Python Script | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 03/05/2019
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 
 ---
@@ -15,6 +15,8 @@ ms.author: amlstudiodocs
 *Executes a Python script from an Azure Machine Learning experiment*
 
 Category: [Python Language Modules](python-language-modules.md)
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

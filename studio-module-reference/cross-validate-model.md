@@ -1,12 +1,12 @@
 ---
 title: "Cross-Validate Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/09/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -14,6 +14,8 @@ manager: cgronlun
 *Cross-validates parameter estimates for classification or regression models by partitioning the data*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 
@@ -204,7 +206,7 @@ For examples of how cross-validation is used in machine learning, see the [Azure
 |[Error 0008](errors/error-0008.md)|Exception occurs if parameter is not in range.|  
 |[Error 0013](errors/error-0013.md)|Exception occurs if the learner that is passed to the module has an invalid type.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

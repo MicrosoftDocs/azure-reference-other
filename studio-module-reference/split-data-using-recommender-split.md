@@ -1,18 +1,20 @@
 ---
 title: "Split Data using Recommender Split | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Split Data using Recommender Split
 
 This article describes how to use the **Recommender Split** option in the [Split Data](split-data.md) module of Azure Machine Learning Studio. This option is useful when you need to prepare training and testing datasets for use with a recommendation model. Not only do these models require a specific format, but it can be very difficult to divide up ratings, users, and items in a balanced way without special tools.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 The **Recommender split** option makes this process easier by asking for the type of recommendation model you are working with: for example, are you recommending items, suggesting a rating, or finding related users? It then divides the dataset by criteria you specify, such as how to handle cold users or cold items.
 

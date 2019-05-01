@@ -9,28 +9,30 @@ ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 7fca3d2c-2475-49e8-8c16-e268b65def22
-caps.latest.revision: 10
+caps.latest.revision: 11
 ms.workload: data-services
-ms.date: 10/30/2018
+ms.date: 02/14/2019
 ---
 # GetMetadataPropertyValue (Azure Stream Analytics)
   Queries input data for specific properties. There are three types of properties: Adapter, User, and Unique EventId.
   
 ## Adapter metadata properties
-Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record.
+Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record. This function cannot be tested on the Azure portal using sample data. You can use Visual Studio tools for Stream Analytics to test this function in your query using [live data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-live-data-local-testing).
 
 ### Examples
 
 To query from an Event Hub input,  
 `SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[EventEnqueuedUtcTime]') AS mytime FROM ehInput`
+Other valid property names are EventProcessedUtcTime, PartitionId, Offset, SequenceNumber, PartitionKey.
 
 To query from an IoT Hub input,  
 `SELECT GetMetadataPropertyValue(iotInput, 'IoTHub.CorrelationId') AS iotCorrelationId FROM iotInput`
+Other valid property names are MessageId, ConnectionDeviceId, ConnectionDeviceGenerationId, EnqueuedTime.
 
 To query from Event Hub with IoT Routing enabled,  
 `SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
 
-To query all adapter-related properties as a record,
+To query *all possible* adapter-related properties as a record,
 
 For Event Hub:  
 `SELECT GetMetadataPropertyValue(ehInput, 'EventHub') AS myEHPropertiesRecord FROM ehInput`

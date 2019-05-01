@@ -1,13 +1,13 @@
 ---
 title: "Train Vowpal Wabbit Version 8 Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/17/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -15,6 +15,8 @@ manager: cgronlun
 *Trains a model using version 8 of the Vowpal Wabbit machine learning system*  
   
  Category: [Text Analytics](text-analytics.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 
@@ -65,7 +67,7 @@ However, as a shortcut, you can use the [Convert to SVMLight](convert-to-svmligh
 
 The Vowpal Wabbit data format has the advantage that it does not require a columnar format, which saves space when dealing with sparse data. For more information about this format, see the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Input-format).  
 
-### <a name=bkmk_NewModel"></a> Create and train a Vowpal Wabbit model
+### <a name="bkmk_NewModel"></a> Create and train a Vowpal Wabbit model
 
 1. Add the **Train Vowpal Wabbit Version 8** module to your experiment. 
   
@@ -216,7 +218,7 @@ Rather than using data in the Azure ML workspace, the training data is directly 
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

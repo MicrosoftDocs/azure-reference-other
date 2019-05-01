@@ -1,12 +1,12 @@
 ---
 title: "Join Data | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 12/18/2017
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -14,6 +14,8 @@ manager: cgronlun
 *Joins two datasets*  
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 
@@ -148,7 +150,7 @@ The **Add Columns** module behaves like R, and can merge two datasets on a row-b
 |[Error 0011](errors/error-0011.md)|An exception occurs if the argument for the passed column set does not apply to any dataset columns.|  
 |[Error 0027](errors/error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

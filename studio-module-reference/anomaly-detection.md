@@ -2,15 +2,18 @@
 title: "Anomaly Detection | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
 description: "Learn about the modules you can use for anomaly detection in Azure Machine Learning."
-ms.date: 01/11/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs 
 manager: cgronlun
 ---
+
 # Anomaly Detection
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This article introduces the modules provided in Azure Machine Learning Studio for anomaly detection. Anomaly detection encompasses many important tasks in machine learning:  
   

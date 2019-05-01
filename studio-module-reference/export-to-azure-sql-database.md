@@ -1,18 +1,20 @@
 ---
 title: "Export to Azure SQL Database | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/24/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Export to Azure SQL Database
 
 This article describes how to use the **Export to Azure SQL Database** option in the [Export Data](export-data.md) module in Azure Machine Learning Studio. This option is useful when you want to export data from your machine learning experiment to an Azure SQL Database or Azure SQL Data Warehouse. 
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 Export to a SQL database is useful in many machine learning scenarios: for example, you might want to store intermediate results, save scores, or persist tables of engineered features. Although storing data in an Azure SQL Database or Azure SQL Data Warehouse can be more expensive than using tables or blobs in Azure, there are no transaction fees against SQL databases. Moreover, database storage is ideal for quickly writing smaller amounts of frequently used information, for sharing data between experiments, or for reporting results, predictions, and metrics. 
 
@@ -125,7 +127,7 @@ Also, Azure Machine Learning cannot output data types such as `money`.
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

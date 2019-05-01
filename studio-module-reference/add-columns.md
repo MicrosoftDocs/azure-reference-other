@@ -4,15 +4,18 @@ titleSuffix: "Azure Machine Learning Studio"
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs 
-ms.date: 01/11/2018
+ms.date: 05/06/2019
 ---
+
 # Add Columns
 
-*Adds a set of columns from one dataset to another*  
+*Adds a set of columns from one dataset to another*
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 ## Module overview
 
@@ -73,7 +76,7 @@ For examples of how **Add Columns** is used in an experiment, see the [Azure AI 
 |[Error 0003](errors/error-0003.md)|An exception occurs if one or more input datasets is null or empty.|  
 |[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns has a type that is unsupported by the current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](\errors\machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

@@ -1,12 +1,12 @@
 ---
 title: "Train Model | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/10/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -14,6 +14,8 @@ manager: cgronlun
 *Trains a classification or regression model in a supervised manner*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
 ## Module overview
  
@@ -144,7 +146,7 @@ For examples of how the **Train Model** module is used in machine learning exper
   
 ##  Exceptions  
 
- For a list of all module errors, see [Module Error Codes](machine-learning-module-error-codes.md).  
+ For a list of all module errors, see [Module Error Codes](errors/machine-learning-module-error-codes.md).  
   
 |Exception|Description|  
 |---------------|-----------------|  

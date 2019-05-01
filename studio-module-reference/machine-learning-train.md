@@ -2,18 +2,20 @@
 title: "Machine Learning - Train | Microsoft Docs"
 description: This article describes the modules provided in Azure Machine Learning Studio for training a machine learning model.
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 01/22/2018
+ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: ericlicoding
+author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Machine Learning - Train
 
 This article describes the modules provided in Azure Machine Learning Studio for training a machine learning model. _Training_ is the process of analyzing input data by using the parameters of a predefined model. From this analysis, the model learns the patterns, and saves them in the form of a trained model.
+
+[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This article also describes the overall process in Machine Learning Studio for model creation, training, evaluation, and scoring.
 

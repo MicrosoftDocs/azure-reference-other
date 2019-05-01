@@ -17,7 +17,7 @@ ms.date: 02/10/2017
 # Input Metadata Functions (Azure Stream Analytics)
 Sometimes in real-time data analytics, there is a requirement to query on the metadata of a property in the data input. Stream Analytics has a function to do this, the [GetMetadataPropertyValue](getmetadatapropertyvalue.md) function.
 
-For details on this function and how to use it properly please review the article 
+For details on this function and how to use it properly review the article 
 [GetMetadataPropertyValue](getmetadatapropertyvalue.md).
 
   
