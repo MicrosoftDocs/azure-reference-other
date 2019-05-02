@@ -67,7 +67,7 @@ However, as a shortcut, you can use the [Convert to SVMLight](convert-to-svmligh
 
 The Vowpal Wabbit data format has the advantage that it does not require a columnar format, which saves space when dealing with sparse data. For more information about this format, see the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Input-format).  
 
-### <a name=bkmk_NewModel"></a> Create and train a Vowpal Wabbit model
+### <a name="bkmk_NewModel"></a> Create and train a Vowpal Wabbit model
 
 1. Add the **Train Vowpal Wabbit Version 8** module to your experiment. 
   
