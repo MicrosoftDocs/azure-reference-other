@@ -180,6 +180,8 @@
               href: sliding-window-azure-stream-analytics.md
             - name: Tumbling Window
               href: tumbling-window-azure-stream-analytics.md
+            - name: Aggregate Windowing functions
+              href: windows-azure-stream-analytics.md
     - name: Data Types
       items: 
         - name: Data Types Overview
