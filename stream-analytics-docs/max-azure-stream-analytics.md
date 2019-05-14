@@ -39,7 +39,7 @@ MAX ( expression )
   
 ```SQL  
   
-SELECT System.TimeStamp AS OutTime, TollId, MAX (Toll)   
+SELECT System.Timestamp() AS OutTime, TollId, MAX (Toll)   
 FROM Input TIMESTAMP BY EntryTime  
 GROUP BY TollId, TumblingWindow(minute,3)  
   

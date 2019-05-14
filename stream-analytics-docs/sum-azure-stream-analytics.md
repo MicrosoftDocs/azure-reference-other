@@ -35,7 +35,7 @@ SUM ( expression )
 ## Example  
   
 ```SQL  
-SELECT System.TimeStamp AS OutTime, TollId, SUM (Toll)   
+SELECT System.Timestamp() AS OutTime, TollId, SUM (Toll)   
 FROM Input TIMESTAMP BY EntryTime  
 GROUP BY TollId, TumblingWindow(minute,3)  
   

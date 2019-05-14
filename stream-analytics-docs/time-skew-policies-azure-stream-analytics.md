@@ -49,7 +49,7 @@ As a result, you will need to tune the value to reduce the number of out of orde
   
 ## **Late Arrival Tolerance**  
 The late arrival tolerance window is used to account for delay in events reaching the input source because of various reasons outlined above.
-Briefly, late arrival window is the maximum delay between event generation and receiving of the event at input source. Adjustment based on Late arrival tolerance is done first and out of order is done next. The **System.Timestamp** column will have the final timestamp assigned to the event.
+Briefly, late arrival window is the maximum delay between event generation and receiving of the event at input source. Adjustment based on Late arrival tolerance is done first and out of order is done next. The **System.Timestamp()** column will have the final timestamp assigned to the event.
 
 This setting is applicable only when processing by Application time, otherwise it is ignored. It can also be set in the Azure portal (in the “Event Ordering” tab of a job). For more information, refer to [the event order considerations page](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-out-of-order-and-late-events).
 
@@ -65,7 +65,7 @@ For example, input events are generated once every minute for a *select** query.
   
 ## See Also  
  [Time Management &#40;Azure Stream Analytics&#41;](time-management-azure-stream-analytics.md)   
- [System.Timestamp  &#40;Stream Analytics&#41;](system-timestamp-stream-analytics.md)   
+ [System.Timestamp()  &#40;Stream Analytics&#41;](system-timestamp-stream-analytics.md)   
  [TIMESTAMP BY &#40;Azure Stream Analytics&#41;](timestamp-by-azure-stream-analytics.md)  
  [Event Order Consideration](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-out-of-order-and-late-events)
   

@@ -226,7 +226,7 @@
       items: 
         - name: Time Management Overview
           href: time-management-azure-stream-analytics.md
-        - name: System.Timestamp
+        - name: System.Timestamp()
           href: system-timestamp-stream-analytics.md
         - name: TIMESTAMP BY
           href: timestamp-by-azure-stream-analytics.md

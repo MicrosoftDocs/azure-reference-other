@@ -101,8 +101,8 @@ CREATE TABLE localinput(time DATETIME, user_id BIGINT, url NVARCHAR(MAX))
 SELECT
     user_id,
     MIN(time) AS window_start,
-    System.Timestamp AS window_end,
-    DATEDIFF(s, MIN(time), System.Timestamp) AS duration_in_seconds
+    System.Timestamp() AS window_end,
+    DATEDIFF(s, MIN(time), System.Timestamp()) AS duration_in_seconds
 FROM localinput TIMESTAMP BY time
 GROUP BY user_id, SessionWindow(minute, 2, 60) OVER (PARTITION BY user_id)
 ```

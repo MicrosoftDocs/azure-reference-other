@@ -35,7 +35,7 @@ STDEVP (expression )
 ## Examples  
   
 ```SQL  
-SELECT System.TimeStamp AS OutTime, TollId, STDEVP (Toll)   
+SELECT System.Timestamp() AS OutTime, TollId, STDEVP (Toll)   
 FROM Input  
 GROUP BY TollId, TumblingWindow(minute,3)  
   
