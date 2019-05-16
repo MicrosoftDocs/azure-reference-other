@@ -1,6 +1,6 @@
 ---
-title: "System.Timestamp  (Stream Analytics) | Microsoft Docs"
-description: "System.Timestamp is a system property that can be used to retrieve the event’s timestamp. "
+title: "System.Timestamp()  (Stream Analytics) | Microsoft Docs"
+description: "System.Timestamp() is a system property that can be used to retrieve the event’s timestamp. "
 applies_to: 
   - "Azure"
 services: stream-analytics
@@ -15,8 +15,8 @@ ms.workload: data-services
 ms.date: 04/22/2016
 ms.author: mamccrea
 ---
-# System.Timestamp  (Stream Analytics)
-  Every event at every stage of the query in Azure Stream Analytics has a timestamp associated with it. System.Timestamp is a system property that can be used to retrieve the event’s timestamp.  
+# System.Timestamp()  (Stream Analytics)
+  Every event at every stage of the query in Azure Stream Analytics has a timestamp associated with it. System.Timestamp() is a system property that can be used to retrieve the event’s timestamp.  
   
  Below, we describe how Azure Stream Analytics assigns timestamps to events.  
   
@@ -24,7 +24,7 @@ ms.author: mamccrea
  Timestamp of the input event can be defined by column value (or an expression) specified in the [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md) clause:  
   
 ```SQL  
-SELECT System.Timestamp t   
+SELECT System.Timestamp() t   
 FROM input   
 TIMESTAMP BY MyTimeField  
   
@@ -44,7 +44,7 @@ SELECT
       Prop1,  
       Prop2,  
       Prop3 - Prop4 / 12,
-      System.Timestamp t  
+      System.Timestamp() t  
 FROM input  
   
 ```  
@@ -69,7 +69,7 @@ SELECT
       userId,  
       AVG(prop1),  
       SUM(prop2),  
-      System.Timestamp t  
+      System.Timestamp() t  
 FROM input  
 GROUP BY TumblingWindow(minute, 1), userId  
   
@@ -81,7 +81,7 @@ GROUP BY TumblingWindow(minute, 1), userId
   
 ```SQL  
 SELECT  
-      System.Timestamp  
+      System.Timestamp()  
 FROM input1  
 JOIN input2  
 ON DATEDIFF(minute, input1, input2) BETWEEN 0 AND 10  
@@ -96,7 +96,7 @@ ON DATEDIFF(minute, input1, input2) BETWEEN 0 AND 10
   
 ```SQL  
 SELECT  
-      System.Timestamp  
+      System.Timestamp()  
 FROM input1  
 LEFT JOIN input2  
 ON DATEDIFF(minute, input1, input2) BETWEEN -2 AND 10  

@@ -36,7 +36,7 @@ AVG (expression )
 ## Examples  
   
 ```SQL
-SELECT System.TimeStamp AS OutTime, TollId, AVG (Toll)   
+SELECT System.Timestamp() AS OutTime, TollId, AVG (Toll)   
 FROM Input TIMESTAMP BY EntryTime  
 GROUP BY TollId, TumblingWindow(minute,3)  
   

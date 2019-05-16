@@ -32,7 +32,7 @@ ms.author: mamccrea
 ## Example  
   
 ```SQL  
-SELECT TollId, System.Timestamp AS WinEndTime, COUNT(*)   
+SELECT TollId, System.Timestamp() AS WinEndTime, COUNT(*)   
 FROM TollTagEntry TIMESTAMP BY EntryTime  
 GROUP BY TumblingWindow( minute , 3 ) , TollId  
 HAVING COUNT(*) > 2  

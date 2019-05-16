@@ -37,7 +37,7 @@ TIMESTAMP BY scalar_expression [OVER <over spec> ]
 ## Remarks 
 ### Retrieving event timestamp 
 
-Event timestamp can be retrieved in the SELECT statement in any part of the query using System.Timestamp property. 
+Event timestamp can be retrieved in the SELECT statement in any part of the query using System.Timestamp() property. 
 
 ### OVER clause interacts with event ordering 
 When the OVER clause is used, several aspects of event processing by Azure Stream Analytics are modified: 
@@ -79,7 +79,7 @@ FROM input TIMESTAMP BY EntryTime
  
 ```SQL  
 SELECT  
-      System.Timestamp,  
+      System.Timestamp(),  
       LicensePlate,  
       State  
 FROM input TIMESTAMP BY DATEADD(millisecond, epochtime, '1970-01-01T00:00:00Z')  
@@ -92,7 +92,7 @@ FROM input TIMESTAMP BY DATEADD(millisecond, epochtime, '1970-01-01T00:00:00Z')
   
 ```SQL  
 SELECT  
-      System.Timestamp,  
+      System.Timestamp(),  
       eventType,  
       eventValue,  
 FROM input TIMESTAMP BY  
@@ -119,7 +119,7 @@ GROUP BY TUMBLINGWINDOW(minute,3), TollId, PartitionId
 
 
 ## See Also  
- [System.Timestamp](system-timestamp-stream-analytics.md)   
+ [System.Timestamp()](system-timestamp-stream-analytics.md)   
  [Time Skew Policies](time-skew-policies-azure-stream-analytics.md)   
  [Unix Time](https://en.wikipedia.org/wiki/Unix_time)  
   

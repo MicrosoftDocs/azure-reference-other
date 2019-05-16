@@ -57,7 +57,7 @@ SLIDINGWINDOW ( Duration( timeunit  , windowsize ) )
  This example finds all toll booths which have served more than 3 vehicles in the last 5 minutes:  
   
 ```SQL  
-SELECT DateAdd(minute,-5,System.TimeStamp) AS WinStartTime, System.TimeStamp AS WinEndTime, TollId, COUNT(*)   
+SELECT DateAdd(minute,-5,System.Timestamp()) AS WinStartTime, System.Timestamp() AS WinEndTime, TollId, COUNT(*)   
 FROM Input TIMESTAMP BY EntryTime  
 GROUP BY TollId, SlidingWindow(minute, 5)  
 HAVING COUNT(*) > 3  

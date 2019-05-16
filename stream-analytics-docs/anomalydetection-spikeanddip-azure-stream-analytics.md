@@ -109,7 +109,7 @@ Example with a non-uniform input stream that is made uniform using a tumbling wi
 WITH SmootheningStep AS
 (
     SELECT
-        System.Timestamp as time,
+        System.Timestamp() as time,
         AVG(CAST(temperature as float)) as temp
     FROM input
     GROUP BY TUMBLINGWINDOW(second, 1)
@@ -141,7 +141,7 @@ WITH AnomalyDetectionStep AS
 (
     SELECT
         sensorid,
-        System.Timestamp AS time,
+        System.Timestamp() AS time,
         CAST(temperature AS FLOAT) AS temp,
         AnomalyDetection_SpikeAndDip(CAST(temperature AS FLOAT), 95, 120, 'spikesanddips')
             OVER(PARTITION BY sensorid LIMIT DURATION(second, 120)) AS SpikeAndDipScores
