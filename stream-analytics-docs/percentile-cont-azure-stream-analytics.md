@@ -32,7 +32,7 @@ The percentile to compute. The value must range between 0 and 1.
 
  **OVER ( ORDER BY order_by_expression [ ASC | DESC] )**
 
-Specifies a list of numeric values to sort and compute the percentile over. Only one order_by_expression is allowed. The expression must evaluate to a numeric type. Other data types are not allowed. The default sort order is ascending.
+Specifies a list of numeric values to sort and compute the percentile over. Only one order_by_expression is allowed. The expression must be of BIGINT, FLOAT, or NVARCHAR(MAX) type and evaluate to a numeric value. The default sort order is ascending.
 
 ## Return Types  
 

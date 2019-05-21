@@ -25,14 +25,14 @@ GROUP BY <group by spec>
   
 <group by spec> ::=  
     <group by item> [ ,...n ]  
-    | <window_type> | System.Timestamp  
+    | <window_type> | System.Timestamp()  
   
 <group by item> ::=  
     <column_expression>  
   
 ```  
   
- Either <window_type> or System.Timestamp is required, \<group by item> is optional.  <window_type> and a sequence of \<group by items> can appear in any order.  
+ Either <window_type> or System.Timestamp() is required, \<group by item> is optional.  <window_type> and a sequence of \<group by items> can appear in any order.  
   
 ## Arguments  
  **<window_type>**  
@@ -46,13 +46,13 @@ GROUP BY <group by spec>
 ## Example  
   
 ```SQL  
-SELECT TollId, System.Timestamp AS WinEndTime, COUNT(*)   
+SELECT TollId, System.Timestamp() AS WinEndTime, COUNT(*)   
 FROM TollTagEntry TIMESTAMP BY EntryTime  
 GROUP BY TumblingWindow( minute , 3 ) , TollId  
 ```  
   
 ## See Also  
- [System.Timestamp](system-timestamp-stream-analytics.md)   
+ [System.Timestamp()](system-timestamp-stream-analytics.md)   
  [Windowing](windowing-azure-stream-analytics.md)  
   
   

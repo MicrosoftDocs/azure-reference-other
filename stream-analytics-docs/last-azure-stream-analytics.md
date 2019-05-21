@@ -67,7 +67,7 @@ FROM input
 ```SQL  
 SELECT
        sensorId,
-       LAST(System.Timestamp) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1) WHEN reading > 50 )
+       LAST(System.Timestamp()) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1) WHEN reading > 50 )
 FROM input 
 ```  
   

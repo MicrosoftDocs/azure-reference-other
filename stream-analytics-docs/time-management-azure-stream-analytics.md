@@ -23,7 +23,7 @@ ms.author: mamccrea
  
 |Item|Summary|  
 |----------|-------------|  
-|[System.Timestamp](system-timestamp-stream-analytics.md)|System.Timestamp is a system property that can be used to retrieve the event’s timestamp.|  
+|[System.Timestamp()](system-timestamp-stream-analytics.md)|System.Timestamp() is a system property that can be used to retrieve the event’s timestamp.|  
 |[TIMESTAMP BY](timestamp-by-azure-stream-analytics.md)|The TIMESTAMP BY clause allows specifying custom timestamp values.|  
 |[Time Skew Policies](time-skew-policies-azure-stream-analytics.md)|Policies for Out of Order and Late Arrival Events.|  
 |[Aggregate functions](aggregate-functions-azure-stream-analytics.md) over [time window](windowing-azure-stream-analytics.md)|Aggregate functions are used to perform a calculation on a set of values from a time window and return a single value.|  

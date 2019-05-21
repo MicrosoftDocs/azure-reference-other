@@ -47,7 +47,7 @@ WITH WAVehicle AS (
   
 SELECT * INTO WAVehicleArchive FROM WAVehicle;  
   
-SELECT DateAdd(minute,-3,System.TimeStamp) AS WinStartTime, System.TimeStamp AS WinEndTime, COUNT(*) INTO WAVehicleCount FROM WAVehicle GROUP BY TumblingWindow(minute, 3)  
+SELECT DateAdd(minute,-3,System.Timestamp()) AS WinStartTime, System.Timestamp() AS WinEndTime, COUNT(*) INTO WAVehicleCount FROM WAVehicle GROUP BY TumblingWindow(minute, 3)  
   
 ```  
   
