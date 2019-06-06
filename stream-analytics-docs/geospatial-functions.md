@@ -6,13 +6,12 @@ applies_to:
 services: stream-analytics
 author: mamccrea
 ms.author: mamccrea
-manager: kfile
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 10f7e6fb-4483-485a-b9bc-670ec6b37691
 caps.latest.revision: 5
 ms.workload: data-services
-ms.date: 02/01/2017
+ms.date: 06/07/2019
 ---
 # GeoSpatial Functions (Azure Stream Analytics)
 In Stream Analytics, real-time geospatial analytics can be performed using the following capabilities:
