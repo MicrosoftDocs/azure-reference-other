@@ -21,7 +21,7 @@ Azure Stream Analytics provides a variety of  elements for building queries. The
 |-------------|-------------|  
 |[APPLY](apply-azure-stream-analytics.md)|The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query. There are two forms of APPLY:<br /><br /> CROSS APPLY returns only rows from the outer table that produce a result set from the table-valued function.<br /><br /> OUTER APPLY returns both rows that produce a result set, and rows that do not, with NULL values in the columns produced by the table-valued function.|  
 |[CASE](case-azure-stream-analytics.md)|CASE evaluates a list of conditions and returns one of multiple possible result expressions|
-|[COALESCE](coalesce-azure-stream-analytics)|COALESCE evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL.|
+|[COALESCE](coalesce-azure-stream-analytics.md)|COALESCE evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL.|
 |[CREATE TABLE](create-table-stream-analytics.md)|CREATE TABLE is used to define the schema of the payload of the events coming into Azure Stream Analytics.|  
 |[FROM](from-azure-stream-analytics.md)|FROM specifies the input stream or a step name associated in a WITH clause. The FROM clause is **always** required for any SELECT statement.|  
 |[GROUP BY](group-by-azure-stream-analytics.md)|GROUP BY groups a selected set of rows into a set of summary rows grouped by the values of one or more columns or expressions.|  
