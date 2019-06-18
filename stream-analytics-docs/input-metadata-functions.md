@@ -6,16 +6,16 @@ applies_to:
 services: stream-analytics
 author: mamccrea
 ms.author: mamccrea
-manager: kfile
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: f6b1278d-7034-4520-be0b-bcba5e892415
 caps.latest.revision: 3
 ms.workload: data-services
-ms.date: 02/10/2017
+ms.date: 06/07/2019
 ---
 # Input Metadata Functions (Azure Stream Analytics)
-Sometimes in real-time data analytics, there is a requirement to query on the metadata of a property in the data input. Stream Analytics has a function to do this, the [GetMetadataPropertyValue](getmetadatapropertyvalue.md) function.
+
+Sometimes in real-time data analytics, there is a requirement to query on the metadata of a property in the data input. This can be done in Azure Stream Analytics using the [GetMetadataPropertyValue](getmetadatapropertyvalue.md) function.
 
 For details on this function and how to use it properly review the article 
 [GetMetadataPropertyValue](getmetadatapropertyvalue.md).
