@@ -5,19 +5,18 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 975c1684-866c-4e9d-adc3-5f5d97227c8b
 caps.latest.revision: 15
 ms.workload: data-services
-ms.date: 02/10/2017
+ms.date: 06/07/2019
 ms.author: mamccrea
 ---
 
 # Built-in Functions (Azure Stream Analytics)
-  Azure Stream Analytics provides some built-in functions. The categories of built-in functions are:  
+
+Azure Stream Analytics provides some built-in functions. The categories of built-in functions are:  
   
 ## Types of Functions  
   
@@ -25,8 +24,11 @@ ms.author: mamccrea
 |-----------------------|-----------------|  
 |[Aggregate Functions](aggregate-functions-azure-stream-analytics.md)|Operate on a collection of values but return a single, summarizing value.|  
 |[Analytic Functions](analytic-functions-azure-stream-analytics.md)|Return a value based on defined constraints.|  
+|[Array Functions](array-functions-stream-analytics.md)|Returns information from an array.|
 |[GeoSpatial Functions](geospatial-functions.md)|Perform specialized GeoSpatial functions.|  
-|[Record Functions](record-functions-azure-stream-analytics.md)|Returns record properties or values.|  
+|[Input Metadata Functions](input-metadata-functions.md)|Query the metadata of property in the data input.|
+|[Record Functions](record-functions-azure-stream-analytics.md)|Returns record properties or values.|
+|[Windowing Functions](windowing-azure-stream-analytics.md)|Perform operations on events within a time window.| 
 |[Scalar Functions](built-in-functions-azure-stream-analytics.md#BKMK_ScalarFunctions)|Operate on a single value and then return a single value. Scalar functions can be used wherever an expression is valid.|  
   
 ##  <a name="BKMK_ScalarFunctions"></a> Scalar Functions  

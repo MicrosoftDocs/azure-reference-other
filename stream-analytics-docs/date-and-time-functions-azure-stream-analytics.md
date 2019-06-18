@@ -5,14 +5,12 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 06786ca9-a363-45f7-9f14-45614121f100
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 04/22/2016
+ms.date: 06/07/2019
 ms.author: mamccrea
 ---
 # Date and Time Functions (Azure Stream Analytics)

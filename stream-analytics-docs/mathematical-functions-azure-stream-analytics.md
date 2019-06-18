@@ -5,18 +5,17 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 31b44dd4-f843-4cd3-96ed-36e0fe7df840
 caps.latest.revision: 7
 ms.workload: data-services
-ms.date: 04/22/2016
+ms.date: 06/07/2019
 ms.author: mamccrea
 ---
 # Mathematical Functions (Azure Stream Analytics)
-  The following scalar functions perform a calculation, usually based on input values that are provided as arguments, and return a numeric value:  
+
+The following scalar functions perform a calculation, usually based on input values that are provided as arguments, and return a numeric value:  
   
 |||  
 |-|-|  
@@ -26,7 +25,7 @@ ms.author: mamccrea
 |[SQUARE](square-azure-stream-analytics.md)|[SQRT](sqrt-azure-stream-analytics.md)|
 |[ROUND](round-azure-stream-analytics.md)||
   
-> All mathematical functions are deterministic functions. This means they return the same results each time they are called with a specific set of input values.  
+All mathematical functions are deterministic functions. This means they return the same results each time they are called with a specific set of input values.  
   
 ## See Also  
  [Built-In Functions](built-in-functions-azure-stream-analytics.md)   

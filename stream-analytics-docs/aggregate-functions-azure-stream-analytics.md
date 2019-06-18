@@ -5,27 +5,26 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-manager: kfile
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 1fa11c79-3f97-4050-8d2c-b4cf61cdaf59
 caps.latest.revision: 23
 ms.workload: data-services
-ms.date: 12/09/2016
+ms.date: 06/07/2019
 ms.author: mamccrea
 ---
 
 # Aggregate Functions (Azure Stream Analytics)
-  Aggregate functions perform a calculation on a set of values and return a single value. Except for the COUNT function, aggregate functions ignore null values. Aggregate functions are frequently used with the GROUP BY clause of the SELECT statement.  
+
+Aggregate functions perform a calculation on a set of values and return a single value. Except for the COUNT function, aggregate functions ignore null values. Aggregate functions are frequently used with the GROUP BY clause of the SELECT statement.  
   
- All aggregate functions are deterministic. This means aggregate functions return the same value any time that they are called by using a specific set of input values.  
+All aggregate functions are deterministic. This means aggregate functions return the same value any time that they are called by using a specific set of input values.  
   
- Aggregate functions can be used as expressions only in the following:  
+Aggregate functions can be used as expressions only in the following:  
   
--   The select list of a SELECT statement (either a subquery or an outer query).  
+- The select list of a SELECT statement (either a subquery or an outer query).  
   
--   A HAVING clause.  
+- A HAVING clause.  
   
  Stream Analytics Query Language provides the following aggregate functions:  
   
@@ -38,6 +37,7 @@ ms.author: mamccrea
 |[VAR &#40;Azure Stream Analytics&#41;](var-azure-stream-analytics.md)|[VARP &#40;Azure Stream Analytics&#41;](varp-azure-stream-analytics.md)|
   
 ## See Also  
+
  [Built-In Functions](built-in-functions-azure-stream-analytics.md)   
  [Analytic Functions](analytic-functions-azure-stream-analytics.md)   
  [Array Functions](array-functions-stream-analytics.md)   
