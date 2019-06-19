@@ -16,7 +16,7 @@ ms.date: 06/18/2019
 ms.author: hysm
 ---
 # OVER (Azure Stream Analytics)
-For each row, determines the grouping of rows before an associated aggregate or analytic function is applied. 
+For each row, the OVER clause determines the grouping of rows before an associated aggregate or analytic function is applied. 
   
 You can use the OVER clause anywhere a scalar function is allowed. For example, you can use the OVER clause in the SELECT, WHERE, JOIN or GROUP BY clauses.
 
@@ -25,20 +25,13 @@ You can use the OVER clause anywhere a scalar function is allowed. For example, 
 ## Syntax  
   
 ```SQL
-OVER (
-        [<PARTITION BY clause>]
-        <LIMIT DURATION clause>
-        [<WHEN clause>]
-     )
+OVER ([<PARTITION BY clause>] <LIMIT DURATION clause> [<WHEN clause>])
 
-<PARTITION BY clause> ::==
-    PARTITION BY partition_key, ... [n]
+<PARTITION BY clause> ::== PARTITION BY partition_key, ... [n]
 
-<LIMIT DURATION clause> ::==
-    LIMIT DURATION (unit, length)
+<LIMIT DURATION clause> ::== LIMIT DURATION (unit, length)
 
-<WHEN clause> ::==
-    WHEN boolean_expression
+<WHEN clause> ::== WHEN boolean_expression
   
 ```  
   
