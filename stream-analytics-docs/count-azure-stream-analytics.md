@@ -20,8 +20,12 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```SQL   
+```SQL
+-- Aggregate Function Syntax
 COUNT ( { [ [ALL | DISTINCT] expression ] | * } ) 
+
+-- Analytic Function Syntax
+COUNT ( { [expression] | * }) OVER ([<PARTITION BY clause>] <LIMIT DURATION clause> [<WHEN clause>])
   
 ```  
   
@@ -34,13 +38,17 @@ Applies the aggregate function to all values. ALL is the default.
 
 Specifies that COUNT returns the number of unique non-null values.
 
- **expression**  
+**expression**  
   
- Is an expression of any type or a column name. Aggregate functions and sub queries are not permitted.  
+Is an expression of any type or a column name. Aggregate functions and sub queries are not permitted.  
   
- \* (wildcard expression) 
+\* (wildcard expression) 
   
 Specifies that all events should be counted to return the total number of events in a group. COUNT(\*) takes no parameters. COUNT(\*) does not require an expression parameter because, by definition, it does not use information about any particular column. COUNT(\*) returns the number of events without getting rid of duplicates. It counts each event separately. This includes events that contain null values.
+
+**OVER ([\<PARTITION BY clause> \<LIMIT DURATION clause> [\<WHEN clause>]]**
+
+Determines the group of rows over which COUNT is applied. The PARTITION BY clause specifies that rows with the same partition key will be grouped together. The LIMIT DURATION clause specifies how much history is included in the group. The WHEN clause specifies a boolean condition for rows to be included in the group. See [OVER clause](over-azure-stream-analytics.md) for more details on the usage.
 
 ## Remarks
 
@@ -49,7 +57,10 @@ Specifies that all events should be counted to return the total number of events
  - COUNT(ALL expression) and COUNT(expression) evaluates expression for each event in a group and returns the number of non-null values.
 
  - COUNT(DISTINCT expression) evaluates expression for each event in a group and returns the number of unique, non-null values.
+
  - COUNT(input_stream) is equivalent to COUNT() and COUNT(*), but COUNT(DISTINCT input_stream) counts only unique events.
+
+ - COUNT(DISTINCT expression) is not supported as an analytic function. That is, you can not use COUNT(DISTINCT expression) with the OVER clause.
 
   
 ## Return Types  
