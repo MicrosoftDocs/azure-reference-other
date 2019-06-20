@@ -20,7 +20,9 @@ For each row, the OVER clause determines the grouping of rows before an associat
   
 You can use the OVER clause anywhere a scalar function is allowed. For example, you can use the OVER clause in the SELECT, WHERE, JOIN or GROUP BY clauses.
 
-**Remark:** The OVER clause groups rows directly from the query input. It is not affected by predicates in the WHERE clause, join conditions in the JOIN clause or grouping conditions in the GROUP BY clause. 
+**Remarks:** 
+- The OVER clause groups rows directly from the query input. It is not affected by predicates in the WHERE clause, join conditions in the JOIN clause or grouping conditions in the GROUP BY clause.
+- Currently, the following aggregate functions are supported with the OVER clause: SUM, AVG, MIN and MAX.
   
 ## Syntax  
   
@@ -32,13 +34,12 @@ OVER ([<PARTITION BY clause>] <LIMIT DURATION clause> [<WHEN clause>])
 <LIMIT DURATION clause> ::== LIMIT DURATION (unit, length)
 
 <WHEN clause> ::== WHEN boolean_expression
-  
 ```  
   
 ## Arguments  
  **\<PARTITON BY clause>**  
 
-Specifies that only events with the same \<partition_key> will be considered for the aggregate or analytic function.
+Specifies that only the rows with the same \<partition_key> will be considered for the aggregate or analytic function.
   
  **\<LIMIT DURATION clause>**  
   
@@ -67,7 +68,7 @@ WHERE MAX(healthy) OVER (PARTITION BY id LIMIT DURATION (hour, 1)) = 0
 
 
 ## See Also  
- [Analytic Functions](analytic-functions-azure-stream-analytics.md)   
- [Aggregate Functions](aggregate-functions-azure-stream-analytics.md)  
+[Analytic Functions](analytic-functions-azure-stream-analytics.md)   
+[Aggregate Functions](aggregate-functions-azure-stream-analytics.md)  
   
   

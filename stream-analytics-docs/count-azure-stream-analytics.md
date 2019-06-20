@@ -48,7 +48,7 @@ Specifies that all events should be counted to return the total number of events
 
 **OVER ([\<PARTITION BY clause> \<LIMIT DURATION clause> [\<WHEN clause>]]**
 
-Determines the group of rows over which COUNT is applied. The PARTITION BY clause specifies that rows with the same partition key will be grouped together. The LIMIT DURATION clause specifies how much history is included in the group. The WHEN clause specifies a boolean condition for rows to be included in the group. See [OVER clause](over-azure-stream-analytics.md) for more details on the usage.
+Determines the group of rows over which COUNT is applied. The PARTITION BY clause specifies that the rows with the same partition key will be grouped together. The LIMIT DURATION clause specifies how much history is included in the group. The WHEN clause specifies a boolean condition for the rows to be included in the group. See [OVER clause](over-azure-stream-analytics.md) for more details on the usage.
 
 ## Remarks
 
@@ -72,7 +72,8 @@ Determines the group of rows over which COUNT is applied. The PARTITION BY claus
 SELECT System.Timestamp() AS OutTime, TollId, COUNT(*)   
 FROM Input TIMESTAMP BY EntryTime  
 GROUP BY TollId, TumblingWindow(minute,3)  
-  
 ```  
-  
-  
+
+## See Also
+[GROUP BY clause](group-by-azure-stream-analytics.md)   
+[OVER clause](over-azure-stream-analytics.md)
