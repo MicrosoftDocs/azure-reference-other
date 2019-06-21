@@ -16,7 +16,9 @@ ms.date: 10/20/2017
 ms.author: mamccrea
 ---
 # ISFIRST (Azure Stream Analytics)
-Returns 1 if the event is the first event within a given duration, or 0 otherwise. ISFIRST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
+
+Returns 1 if the event is the first event within a given fixed interval, or 0 otherwise. The intervals are aligned the same way as tumbling windows (see [Tumbling Window](tumbling-window-azure-stream-analytics.md)). ISFIRST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
+).  
   
  ## Syntax  
   
@@ -68,7 +70,7 @@ The WHEN clause is optional.
  ISFIRST is nondeterministic. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.  
   
 ## Examples  
- Indicate whether a sensor reading event is the first within 10 minutes:  
+ Indicate whether a sensor reading event is the first within 10 minute tumbling intervals:  
   
 ```SQL  
 SELECT  
@@ -77,7 +79,7 @@ SELECT
 FROM Input  
 ```  
   
- Indicate whether an event is the first within 10 minute intervals per deviceid:  
+ Indicate whether an event is the first within 10 minute tumbling intervals per deviceid:  
   
 ```SQL  
 SELECT  
@@ -87,7 +89,7 @@ SELECT
 FROM Input  
 ```  
   
- Indicate whether an event is the first event with value greater than 50 within 10 minute intervals  
+ Indicate whether an event is the first event with value greater than 50 within 10 minute tumbling intervals  
 per deviceid:  
   
 ```SQL  
