@@ -61,41 +61,39 @@ The function returns a value of type **Record** containing a single field **Id**
   
 ## Examples  
   
-Create a window with a 5 minute hop and create output every 10 minutes. The full output will be outputted at 60 minutes.
+Create window to count cars for each of the durations 10, 20, 30, 40, 50, and 60 minutes without window identity. 
 
 ```SQL  
 SELECT 
-System.Window().Id, 
-TollId, 
-COUNT(*) 
+    TollId, 
+    COUNT(*) 
 FROM Input TIMESTAMP BY EntryTime 
 GROUP BY 
-TollId, 
-Windows( 
-            HoppingWindow(minute, 10, 5), 
-            HoppingWindow(minute, 20, 5), 
-            HoppingWindow(minute, 30, 5), 
-            HoppingWindow(minute, 40, 5), 
-            HoppingWindow(minute, 50, 5), 
-            HoppingWindow(minute, 60, 5))  
-  
+    TollId, 
+    Windows( 
+        TumblingWindow(minute, 10), 
+        TumblingWindow(minute, 20), 
+        TumblingWindow(minute, 30), 
+        TumblingWindow(minute, 40), 
+        TumblingWindow(minute, 50), 
+        TumblingWindow(minute, 60)) 
 ```  
   
-Create windows with a 1 minute hop and four different durations – 1 min, 15 min, 30 min and 60 min.
+Create windows with a 1 minute hop and four different durations - 1 min, 15 min, 30 min and 60 min.
 
 ```SQL
 SELECT 
-        System.Window().Id, 
-        TollId, 
-        COUNT(*) 
+    System.Window().Id, 
+    TollId, 
+    COUNT(*) 
 FROM Input TIMESTAMP BY EntryTime 
 GROUP BY 
-        TollId, 
-        Windows( 
-            Window('1 min', TumblingWindow(minute, 1)), 
-            Window('15 min', HoppingWindow(minute, 15, 1)), 
-            Window('30 min', HoppingWindow(minute, 30, 1)), 
-            Window('60 min', HoppingWindow(minute, 60, 1))) 
+    TollId, 
+    Windows( 
+        Window('1 min', TumblingWindow(minute, 1)), 
+        Window('15 min', HoppingWindow(minute, 15, 1)), 
+        Window('30 min', HoppingWindow(minute, 30, 1)), 
+        Window('60 min', HoppingWindow(minute, 60, 1))) 
 ```
 
 Create windows of different sizes and filter results based on the window duration specified in the Reference table.

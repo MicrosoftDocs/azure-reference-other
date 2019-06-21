@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: cd42711f-1064-41d9-8165-58d5da25008f
 caps.latest.revision: 13
 ms.workload: data-services
-ms.date: 02/23/2016
+ms.date: 06/21/2019
 ms.author: mamccrea
 ---
 # Sliding Window (Azure Stream Analytics)
@@ -25,8 +25,8 @@ The following diagram illustrates a stream with a series of events and how they 
 ## Syntax  
   
 ```SQL   
-SLIDINGWINDOW ( timeunit  , windowsize )   
-SLIDINGWINDOW ( Duration( timeunit  , windowsize ) )  
+{SLIDINGWINDOW | SLIDING} ( timeunit, windowsize )   
+{SLIDINGWINDOW | SLIDING} ( Duration( timeunit, windowsize ) )  
   
 ```  
   

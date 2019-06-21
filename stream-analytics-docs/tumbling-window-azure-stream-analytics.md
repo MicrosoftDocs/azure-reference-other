@@ -11,7 +11,7 @@ ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: cfc2fb3b-0e8e-4b5e-b3ba-8ca6fea61c17
 ms.workload: data-services
-ms.date: 04/22/2016
+ms.date: 06/21/2019
 ---
 # Tumbling Window (Azure Stream Analytics)
   Tumbling windows are a series of fixed-sized, non-overlapping and contiguous time intervals. The following diagram illustrates a stream with a series of events and how they are mapped into 5-second tumbling windows.  
@@ -21,11 +21,11 @@ ms.date: 04/22/2016
  ## Syntax  
   
 ```SQL   
-TUMBLINGWINDOW ( timeunit  , windowsize, [offsetsize] )  
-TUMBLINGWINDOW ( Duration( timeunit  , windowsize ), [Offset(timeunit  , offsetsize)] )  
+{TUMBLINGWINDOW | TUMBLING} ( timeunit  , windowsize, [offsetsize] )  
+{TUMBLINGWINDOW | TUMBLING} ( Duration( timeunit  , windowsize ), [Offset(timeunit  , offsetsize)] )  
   
 ```  
-  
+
 > [!NOTE]  
 >  The Tumbling Window can be used in the above two ways. To allow consistency with the Hopping Window, the Duration function can also be used with all types of windows to specify the window size.  
   
