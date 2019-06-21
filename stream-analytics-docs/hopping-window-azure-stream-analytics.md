@@ -10,7 +10,7 @@ ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: aff805fa-3490-49a9-81b2-ddcaac4debaf
 ms.workload: data-services
-ms.date: 04/22/2016
+ms.date: 06/21/2019
 ms.author: mamccrea
 ---
 # Hopping Window (Azure Stream Analytics)
@@ -22,11 +22,11 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```SQL   
-HOPPINGWINDOW ( timeunit  , windowsize , hopsize, [offsetsize] )   
-HOPPINGWINDOW ( Duration( timeunit  , windowsize ) , Hop (timeunit  , windowsize ), [Offset(timeunit  , offsetsize)])  
+```SQL
+{HOPPINGWINDOW | HOPPING} ( timeunit  , windowsize , hopsize, [offsetsize] )
+{HOPPINGWINDOW | HOPPING} ( Duration( timeunit  , windowsize ) , Hop (timeunit  , windowsize ), [Offset(timeunit  , offsetsize)])  
   
-```  
+```
   
 > [!NOTE]  
 >  The Hopping Window can be used in the above two ways. If the windowsize and the hopsize has the same timeunit, you can use it without the Duration and Hop functions. The Duration function can also be used with other types of windows to specify the window size.  

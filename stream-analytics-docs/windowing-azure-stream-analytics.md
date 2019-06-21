@@ -40,7 +40,7 @@ There are four types of windows:
 
  The maximum size of the window in all cases is 7 days.
 
-You can aggregate windowing functions using the [Windows &#40;Azure Stream Analytics&#41;](windows-azure-stream-analytics.md) function.
+You can aggregate over multiple time windows in the same GROUP BY statement using the [Windows &#40;Azure Stream Analytics&#41;](windows-azure-stream-analytics.md) function.
 
 ## See Also  
 

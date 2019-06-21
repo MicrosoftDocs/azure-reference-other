@@ -9,7 +9,7 @@ manager: kfile
 ms.service: stream-analytics
 ms.topic: reference
 ms.workload: data-services
-ms.date: 04/30/2018
+ms.date: 06/21/2019
 ms.author: mamccrea
 ---
 # Session window (Azure Stream Analytics)
@@ -32,9 +32,9 @@ When a partition key is provided, the events are grouped together by the key and
 ## Syntax
 
 ```SQL
-SESSIONWINDOW(timeunit, timeoutSize, maxDurationSize) [OVER (PARTITION BY partitionKey)]
+{SESSIONWINDOW | SESSION} (timeunit, timeoutSize, maxDurationSize) [OVER (PARTITION BY partitionKey)]
 
-SESSIONWINDOW(Timeout(timeunit , timeoutSize), MaxDuration(timeunit, maxDurationSize)) [OVER (PARTITION BY partitionKey)]
+{SESSIONWINDOW | SESSION} (Timeout(timeunit , timeoutSize), MaxDuration(timeunit, maxDurationSize)) [OVER (PARTITION BY partitionKey)]
 
 ```
 
