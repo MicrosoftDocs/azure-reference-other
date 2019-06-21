@@ -108,7 +108,8 @@ JOIN TEnd TE TIMESTAMP BY TEndTime
 ON DATEDIFF(second, TS, TE) BETWEEEN 0 AND 5  
 AND TS.Id = TE.Id  
 JOIN Error E TIMESTAMP BY ErrorTime  
-ON DATEDIFF(second, TS, E) BETWEEN 0 AND 5  
+ON DATEDIFF(second, TS, E) BETWEEN 0 AND 5
+AND DATEDIFF(second, TE, E) < 0
 AND E.TId = TS.Id  
   
 ```  
