@@ -65,7 +65,7 @@ FROM <input_source> [<PARTITION BY clause>] [<TIMESTAMP BY clause>]
 
  **PARTITON BY \<key_spec>**
 
- Partitions data into subsets based on *\<key_spec>*. This allows the job to consume and write different partitions in parallel. For more information, see [Leverage query parallelization in Azure Stream Analytics](azure/stream-analytics/stream-analytics-parallelization.md).
+ Partitions data into subsets based on *\<key_spec>*. This allows the job to consume and write different partitions in parallel. For more information, see [Leverage query parallelization in Azure Stream Analytics](//azure/stream-analytics/stream-analytics-parallelization.md).
 
   
  **TIMESTAMP BY scalar_expression [OVER \<key_spec>]**
