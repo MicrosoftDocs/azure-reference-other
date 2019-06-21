@@ -26,7 +26,7 @@ This module is useful for creating models that predict three or more possible ou
 
 ### More about one-vs.all models
 
-While some classification algorithms permit the use of more than two classes by design, others restrict the possible outcomes to one of two values (a binary, or two-class model. However, even binary classification algorithms can be adapted for multi-class classification tasks using a variety of strategies. 
+While some classification algorithms permit the use of more than two classes by design, others restrict the possible outcomes to one of two values (a binary, or two-class model). However, even binary classification algorithms can be adapted for multi-class classification tasks using a variety of strategies. 
 
 This module implements the *one vs. all method*, in which a binary model is created for each of the multiple output classes. Each of these binary models for the individual classes is assessed against its complement (all other classes in the model) as though it were a binary classification issue. Prediction is then performed by running these binary classifiers, and choosing the prediction with the highest confidence score.  
   
