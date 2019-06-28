@@ -12,7 +12,7 @@ ms.workload: data-services
 ms.date: 06/27/2019
 ---
 
-# MATCH_RECOGNIZE (Azure Stream Analytics)
+# MATCH_RECOGNIZE (Preview)
 
 The MATCH_RECOGNIZE clause is used to search for a set of events over a data stream. This clause enables you to define event patterns using regular expressions and aggregate methods to verify and extract values from the match.
 
@@ -26,8 +26,8 @@ INTO output FROM input TIMESTAMP BY time
 		LIMIT DURATION (minute, 1)
 		AFTER MATCH SKIP TO NEXT ROW
 		MEASURES
-			Last(Toyota.LicensePlate) AS aid,
-			Last(Lexus.LicensePlate) AS cid
+			Last(Toyota.LicensePlate) AS toyotaLicensePlate,
+			Last(Lexus.LicensePlate) AS lexusLicensePlate
 		PATTERN (Toyota+ Ford* Lexus+)
 		DEFINE
 			Toyota AS Toyota.make = ‘Toyota’,
@@ -128,6 +128,26 @@ DEFINE
 
 This example defines rules **A** and **B** where LAST value of **A** is bigger than 5, and **B** where LAST value of **A** is smaller than the current value of **B**. When not using an aggregate function on DEFINE expression, the current event being evaluated binds to the pattern variable, for example, on **B.bigint** the **B** value comes from the current event being evaluated.
 
+Defined patterns can only be accessed in order, if pattern **A** is defined before pattern **B**, **A** cannot reference **B**.
+
+**Allowed**
+```SQL
+...
+DEFINE
+A AS Last(A.value),
+B AS Max(A.value) + Max(B.value),
+...
+```
+
+**Not allowed**
+```SQL
+...
+DEFINE
+A AS Last(A.value) + Last(B.Value),
+B AS Max(A.value) + Max(B.value),
+...
+```
+
 ## Aggregate Methods
 
 The following aggregate methods can be used in MEASURES and DEFINE:
@@ -162,7 +182,7 @@ MATCH_RECOGNIZE (
 
 This query matches **Normal** to any event that is filling the tank and in case the pressure is over double of a **Normal** filling within 3 minutes, than an event is fired with the maximum pressure reading for the **Dangerous** pattern.
 
-## Limitations
+## Preview Limitations
 
 * The SELECT clause must select * and cannot specify which fields of match alias to use.
 
@@ -215,26 +235,6 @@ This query matches **Normal** to any event that is filling the tank and in case 
 	    A AS Max(A.value1 + A.value2) > 5,
 	...
 	```
-
-* Defined patterns can only be accessed in order, if pattern **A** is defined before pattern **B**, **A** cannot reference **B**.
-
-    **Allowed**
-    ```SQL
-    ...
-    DEFINE
-        A AS Last(A.value),
-        B AS Max(A.value) + Max(B.value),
-    ...
-    ```
-
-    **Not allowed**
-    ```SQL
-    ...
-    DEFINE
-        A AS Last(A.value) + Last(B.Value),
-        B AS Max(A.value) + Max(B.value),
-    ...
-    ```
 
 * TIMESTAMP BY cannot have an OVER clause. Substreams are not supported.
 
