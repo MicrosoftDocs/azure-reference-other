@@ -1,5 +1,5 @@
 ---
-title: MATCH_RECOGNIZE (Azure Stream Analytics) | Microsoft Docs
+title: MATCH_RECOGNIZE (Azure Stream Analytics - Preview) | Microsoft Docs
 description: Search for a set of events over a data stream in Stream Analytics Query Language.
 applies_to: 
   - "Azure"
@@ -12,7 +12,7 @@ ms.workload: data-services
 ms.date: 06/27/2019
 ---
 
-# MATCH_RECOGNIZE (Preview)
+# MATCH_RECOGNIZE (Stream Analytics - Preview)
 
 The MATCH_RECOGNIZE clause is used to search for a set of events over a data stream. This clause enables you to define event patterns using regular expressions and aggregate methods to verify and extract values from the match.
 
