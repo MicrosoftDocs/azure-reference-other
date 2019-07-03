@@ -161,7 +161,7 @@ Those module supports the following scenarios for creating, updating, or applyin
     + **TF Weight**: Assigns a term-frequency score (**TF**) to the extracted n-grams.  The value for each n-gram is its occurrence frequency in the given document.  
     + **IDF Weight**: Assigns an inverse document frequency score (**IDF**) to the extracted n-grams.  The value for each n-gram is the log of corpus size divided by its occurrence frequency in the whole corpus. That is: `IDF = log of corpus_size / document_frequency` 
     +  **TF-IDF Weight**: Assigns an term frequency/inverse document frequency score (**TF/IDF**) to the extracted n-grams. The value for each n-gram is its TF score multiplied by its IDF score.  
-    + **Graph Weight**: Assigns score to the extracted n-grams based on the TextRank graph ranking. TextRank is a graph-based ranking model for text processing. Graph-based ranking algorithms are essentially a way of deciding importance  based on global information. For more information, see [TextRank- Bringing Order Into Texts](http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf) by Rada Mihalcea and Paul Tarau.
+    + **Graph Weight**: Assigns score to the extracted n-grams based on the TextRank graph ranking. TextRank is a graph-based ranking model for text processing. Graph-based ranking algorithms are essentially a way of deciding importance  based on global information. For more information, see [TextRank: Bringing Order into Texts](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf) by Rada Mihalcea and Paul Tarau.
 
 10. For all other options, see the property descriptions in the [preceding section](#bkmk_create).
 

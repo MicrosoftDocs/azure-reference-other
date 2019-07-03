@@ -1,7 +1,7 @@
 ---
 title: "Import from Hive Query | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 05/06/2019
+ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -19,7 +19,7 @@ This article describes how to use the [Import Data](import-data.md) module in Az
 Importing data from Hive is particularly useful for loading large datasets, or if you want to pre-process the data using a MapReduce job before loading the data into a machine learning experiment.
 
 > [!IMPORTANT]
-> As of July 31, 2018, Microsoft Azure HDInsight version 3.3 was the last version of HDInsight on Windows. If you have any HDInsight clusters on Windows 3.3 or earlier, you must migrate to HDInsight on Linux (HDInsight version 3.5 or later). Please see the [HDInsight on Windows retirement notice](https://docs.microsoft.com/azure/hdinsight/hdinsight-component-versioning#hdinsight-windows-retirement) for more information on how to migrate. Azure Machine Learning Studio will support [HDInsight on Linux](#support-for-hdinsight-on-linux) in certain scenarios. 
+> As of July 31, 2018, Microsoft Azure HDInsight version 3.3 was the last version of HDInsight on Windows. If you have any HDInsight clusters on Windows 3.3 or earlier, you must migrate to HDInsight on Linux (HDInsight version 3.5 or later). Please see the [Retired versions](/azure/hdinsight/hdinsight-component-versioning#retired-versions) section for more information on retired versions of HDInsight. Azure Machine Learning Studio will support [HDInsight on Linux](#support-for-hdinsight-on-linux) in certain scenarios. 
 
 ## Support for HDInsight on Linux
 

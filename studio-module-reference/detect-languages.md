@@ -1,7 +1,7 @@
 ---
 title: "Detect Languages | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 05/06/2019
+ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -75,7 +75,7 @@ For a general idea of the languages that potentially can be detected, refer to [
 
 Many more languages can be detected than Azure Machine Learning currently supports for advanced text analytics. We recommend that you use the results of **Detect Languages** to filter the results that you send to other modules that require language-specific processing.
 
-The underlying linguistic services are also used by the [Text Analytics ](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) service in [Azure Cognitive Services](https://docs.microsoft.com/azure/#pivot=products&panel=cognitive).
+The underlying linguistic services are also used by the [Text Analytics ](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) service in [Azure Cognitive Services](/azure/cognitive-services/).
 
 ##  Expected inputs
 

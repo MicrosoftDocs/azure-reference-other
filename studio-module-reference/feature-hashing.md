@@ -149,7 +149,7 @@ For examples of how feature hashing is used for text analytics, see the [Azure A
   
 - [Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.
   
-- [Text Classification](https://gallery.cortanaintelligence.com/Experiment/f43e79f47d8a4219bf8613d271ea2c45e): This five-part sample uses text from Twitter messages to perform sentiment analysis.
+- [Text Classification](https://gallery.azure.ai/Experiment/Text-Classification-Step-1-of-5-data-preparation-3): This five-part sample uses text from Twitter messages to perform sentiment analysis.
 
 ## <a name="bkmk_Notes"></a> Technical notes
 
