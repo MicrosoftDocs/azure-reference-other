@@ -225,7 +225,7 @@ The following graphic shows the distribution of values in the column before and 
 |[Error 0039](errors/error-0039.md)|Exception occurs if operation has failed.|  
 |[Error 0075](errors/error-0075.md)|Exception occurs when an invalid binning function is used when quantizing a dataset.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

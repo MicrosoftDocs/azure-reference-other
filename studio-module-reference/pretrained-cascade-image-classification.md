@@ -134,7 +134,7 @@ The facial recognition model provided by this module is based on the Viola-Jones
 |---------------|-----------------|  
 |[Error 0005](errors/error-0005.md)|Exception occurs if parameter is less than a specific value.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

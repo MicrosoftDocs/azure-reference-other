@@ -150,7 +150,7 @@ The **Add Columns** module behaves like R, and can merge two datasets on a row-b
 |[Error 0011](errors/error-0011.md)|An exception occurs if the argument for the passed column set does not apply to any dataset columns.|  
 |[Error 0027](errors/error-0027.md)|An exception occurs when two objects have to be of the same size, but they are not.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

@@ -121,7 +121,7 @@ The following requirements apply to images processed by the [Import Images](impo
 |[Error 0049](errors/error-0049.md)|Exception occurs when it is not possible to parse a file.|  
 |[Error 0048](errors/error-0048.md)|Exception occurs when it is not possible to open a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

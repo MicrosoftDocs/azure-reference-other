@@ -262,7 +262,7 @@ The probability of the null hypothesis, designated as P, is calculated as follow
 |[Error 0032](errors/error-0032.md)|Exception occurs if the argument is not a number.|  
 |[Error 0033](errors/error-0033.md)|Exception occurs if the argument is infinity.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md)
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
