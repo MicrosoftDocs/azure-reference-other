@@ -91,7 +91,7 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
 |---------------|-----------------|  
 |[Error 0013](errors/error-0013.md)|An exception occurs if the learner that was passed to the module is the wrong type.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

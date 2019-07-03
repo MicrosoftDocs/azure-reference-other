@@ -200,7 +200,7 @@ This example demonstrates how missing values (nulls) propagate to the results wh
 |[Error 0026](errors/error-0026.md)|Exception occurs when columns with the same name are not allowed.|  
 |[Error 0022](errors/error-0022.md)|Exception occurs if the number of selected columns in the input dataset does not equal the expected number.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 
