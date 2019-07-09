@@ -163,7 +163,7 @@ The following table compares selectivity with stop band attenuation for a FIR fi
 |---------------|-----------------|  
 |NotInRangeValue|Exception occurs if parameter is not in range.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).    
 

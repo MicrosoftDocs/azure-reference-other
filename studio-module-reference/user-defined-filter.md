@@ -77,7 +77,7 @@ This FIR filter approximates a triangularly weighted moving average (WMA). You d
 0.0625, 0.0625, 0.2500, 0.3750, 0.2500, 0.0625
 ```
 
-The values used in this custom FIR filter represent a vector of feed-forward coefficients obtained by using the Deslauriers-Dubuc method of finite sequencing. For more information, see [Dubuc-Deslauriers Subdivision for Finite Sequences and Interpolation Wavelets on an Interval](http://dip.sun.ac.za/~herbst/research/publications/subdiv.pdf).
+The values used in this custom FIR filter represent a vector of feed-forward coefficients obtained by using the Deslauriers-Dubuc method of finite sequencing. For more information, see [Dubuc-Deslauriers Subdivision for Finite Sequences and Interpolation Wavelets on an Interval](http://appliedmaths.sun.ac.za/~herbst/research/publications/subdiv.pdf).
 
 ###  IIR filter example: Notch filter
 
@@ -135,7 +135,7 @@ From this, you can get the following feed-forward (b) and feed-backward (a) coef
 |---------------|-----------------|  
 |ParameterParsing|An exception occurs if one or more parameters could not be parsed or converted from the specified type into the type that is required by the target method.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

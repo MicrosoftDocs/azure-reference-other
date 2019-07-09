@@ -241,5 +241,6 @@ This query matches **Normal** to any event that is filling the tank and in case 
 ## See also
 
 * [Query Language Elements](query-language-elements-azure-stream-analytics.md)
+* This feature is in preview, you can provide feedback and suggestions using [Azure Stream Analytics User voice](https://feedback.azure.com/forums/270577-stream-analytics)
 
 

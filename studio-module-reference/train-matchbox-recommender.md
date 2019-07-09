@@ -185,7 +185,7 @@ The size of a serialized Matchbox recommender model is approximately `16 * T\(U\
 |[Error 0053](errors/error-0053.md)|Exception occurs in the case when there are no user features or items for Matchbox recommendations.|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

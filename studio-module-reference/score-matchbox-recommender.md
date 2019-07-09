@@ -366,10 +366,10 @@ Online updating (or continuous training) of a recommendation model is not curren
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
-|Recommender prediction kind|List|[Prediction kind](http://msdn.microsoft.com/library/5a7f6dbd-7539-434d-b0fa-c7f862368cae)|Item Recommendation|Specify the type of prediction the recommender should output|  
-|Recommended item selection|List|[Item selection](http://msdn.microsoft.com/library/58609e2d-f162-4a48-a2b8-1ffcc8336c81)|From Rated Items (for model evaluation)|Select the set of items to make recommendations from|  
-|Related user selection|List|[User selection](http://msdn.microsoft.com/library/51c80b01-17c9-44e4-841d-fc90fb837327)|From Users That Rated Items (for model evaluation)|Select the set of users to use when finding related items|  
-|Related item selection|List|[Item selection](http://msdn.microsoft.com/library/58609e2d-f162-4a48-a2b8-1ffcc8336c81)|From Rated Items (for model evaluation)|Select the set of items to use when finding related items|  
+|Recommender prediction kind|List|[Prediction kind](machine-learning-module-parameter-types.md)|Item Recommendation|Specify the type of prediction the recommender should output|  
+|Recommended item selection|List|[Item selection](machine-learning-module-parameter-types.md)|From Rated Items (for model evaluation)|Select the set of items to make recommendations from|  
+|Related user selection|List|[User selection](machine-learning-module-parameter-types.md)|From Users That Rated Items (for model evaluation)|Select the set of users to use when finding related items|  
+|Related item selection|List|[Item selection](machine-learning-module-parameter-types.md)|From Rated Items (for model evaluation)|Select the set of items to use when finding related items|  
 
 ## Outputs
 
@@ -388,7 +388,7 @@ Online updating (or continuous training) of a recommendation model is not curren
 |[Error 0053](errors/error-0053.md)|Exception occurs in the case when there are no user features or items for Matchbox recommendations.|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

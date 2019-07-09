@@ -1,7 +1,7 @@
 ---
 title: "Import from Azure Cosmos DB | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 05/06/2019
+ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -136,9 +136,7 @@ If you don't have an existing document store, see these articles to get started.
 
 + [Azure Cosmos DB: Build a SQL API web app with .NET and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)
 
-+ [Create a database](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet#create-collection)
-
-+ [Add a collection](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet#create-collection)
++ [Add a database and a collection](/azure/cosmos-db/create-sql-api-dotnet#add-a-database-and-a-collection)
 
 + [Azure Cosmos DB Migration Tool](https://www.microsoft.com/download/details.aspx?id=46436)
 
@@ -191,7 +189,7 @@ The following table includes only those parameters for the **Import Data** modul
 |[Error 0048](errors/error-0048.md)|An exception occurs when it is not possible to open a file.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](/errors/machine-learning-module-error-codes.md)
+For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

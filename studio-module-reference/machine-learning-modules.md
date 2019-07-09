@@ -90,7 +90,7 @@ For more information, see [How to choose an algorithm in Azure Machine Learning]
 
 For examples of machine learning in action, see the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/).
 
-For tips, and a walkthrough of some typical data prepration tasks, see [Advanced data processing in Azure](http://azure.microsoft.com/documentation/articles/machine-learning-data-science-advanced-data-processing/).
+For tips, and a walkthrough of some typical data prepration tasks, see [Walkthroughs executing the Team Data Science Process](/azure/machine-learning/team-data-science-process/walkthroughs).
 
 
 ## See also  
