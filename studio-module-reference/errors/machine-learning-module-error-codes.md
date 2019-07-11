@@ -198,8 +198,6 @@ See these experiments in the [Cortana Intelligence Gallery](https://gallery.cort
 
 + Azure Cosmos DB: [Reading data from Azure Cosmos DB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1)
 
-+ Azure blob storage and Azure SQL Database: [Twitter Stream Analysis with Azure Machine Learning](https://gallery.cortanaintelligence.com/Tutorial/Twitter-Stream-Analysis-with-Azure-Machine-Learning)
-
 + Import otherwise unreadable data using Python: [Load non-text file from Azure Blob storage](https://gallery.cortanaintelligence.com/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1)
 
   
