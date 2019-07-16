@@ -6,7 +6,6 @@ applies_to:
 services: stream-analytics
 author: mamccrea
 ms.author: mamccrea
-manager: kfile
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: cfc2fb3b-0e8e-4b5e-b3ba-8ca6fea61c17
@@ -27,7 +26,7 @@ ms.date: 06/21/2019
 ```  
 
 > [!NOTE]  
->  The Tumbling Window can be used in the above two ways. To allow consistency with the Hopping Window, the Duration function can also be used with all types of windows to specify the window size.  
+>  The Tumbling Window can be used in the above two ways. To allow consistency with the Hopping Window, the Duration function can also be used with all types of windows to specify the window size. The window duration must be a positive float constant.  
   
 ## Arguments  
  **timeunit**  
