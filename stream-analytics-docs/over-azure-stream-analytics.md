@@ -5,14 +5,12 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: hydersm
-manager: kfile
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 6ae879ff-435d-44e3-bbc7-09cbd399a502
 caps.latest.revision: 11
 ms.workload: data-services
-ms.date: 06/18/2019
+ms.date: 07/30/2019
 ms.author: hysm
 ---
 # OVER (Azure Stream Analytics)
