@@ -24,10 +24,10 @@ INTO output FROM input TIMESTAMP BY time
 	MATCH_RECOGNIZE (
 		PARTITION BY tollBoothId
 		LIMIT DURATION (minute, 1)
-		AFTER MATCH SKIP TO NEXT ROW
 		MEASURES
 			Last(Toyota.LicensePlate) AS toyotaLicensePlate,
 			Last(Lexus.LicensePlate) AS lexusLicensePlate
+		AFTER MATCH SKIP TO NEXT ROW
 		PATTERN (Toyota+ Ford* Lexus+)
 		DEFINE
 			Toyota AS Toyota.make = ‘Toyota’,
@@ -45,9 +45,9 @@ SELECT_star_query_definition
 MATCH_RECOGNIZE (
 	PARTITION BY column_alias
 	LIMIT DURATION (time_unit, time)
-	AFTER MATCH SKIP TO NEXT ROW
 	MEASURES
 		expression AS column_alias [,...n]
+	AFTER MATCH SKIP TO NEXT ROW
 	PATTERN ( <pattern_group> )
 	DEFINE
 		pattern_name AS boolean_expression [,…n]
