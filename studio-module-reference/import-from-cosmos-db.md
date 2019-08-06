@@ -136,7 +136,7 @@ If you don't have an existing document store, see these articles to get started.
 
 + [Azure Cosmos DB: Build a SQL API web app with .NET and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)
 
-+ [Add a database and a collection](/azure/cosmos-db/create-sql-api-dotnet#add-a-database-and-a-collection)
++ [Quickstart: Build a .NET console app to manage Azure Cosmos DB SQL API resources](/azure/cosmos-db/create-sql-api-dotnet)
 
 + [Azure Cosmos DB Migration Tool](https://www.microsoft.com/download/details.aspx?id=46436)
 

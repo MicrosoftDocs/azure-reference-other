@@ -50,7 +50,7 @@ When you combine the models, even though the training dataset might have multipl
 
     If you need help choosing the right algorithm, see these resources:
     
-    - [Machine learning algorithm cheat sheet for Azure ML](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet)  
+    - [Machine learning algorithm cheat sheet for Azure ML](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
     - [How to choose algorithms for Azure Machine Learning Studio](/azure/machine-learning/studio/algorithm-choice)
 
 3. Add the [Train Model](train-model.md) module to your experiment, and connect the untrained classifier that is the output of **One-Vs-All Multiclass**.
