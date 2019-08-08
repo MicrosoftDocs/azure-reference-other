@@ -19,7 +19,13 @@ For each row, the OVER clause determines the grouping of rows before an associat
 You can use the OVER clause anywhere a scalar function is allowed. For example, you can use the OVER clause in the SELECT, WHERE, JOIN or GROUP BY clauses.
 
 - The OVER clause groups rows directly from the query input. It is not affected by predicates in the WHERE clause, join conditions in the JOIN clause or grouping conditions in the GROUP BY clause.
-- Currently, the following aggregate functions are supported with the OVER clause: SUM, AVG, MIN and MAX.
+The OVER clause groups rows directly from the query input. It is not affected by predicates in the WHERE clause, join conditions in the JOIN clause, or grouping conditions in the GROUP BY clause.
+
+Currently, the following aggregate functions are supported with the OVER clause:
+* SUM
+* AVG
+* MIN
+* MAX
   
 ## Syntax  
   
