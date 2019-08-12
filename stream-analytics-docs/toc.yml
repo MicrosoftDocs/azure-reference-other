@@ -214,6 +214,8 @@
           href: join-azure-stream-analytics.md
         - name: MATCH_RECOGNIZE
           href: match-recognize-stream-analytics.md
+        - name: OVER
+          href: over-azure-stream-analytics.md
         - name: Reference Data JOIN
           href: reference-data-join-azure-stream-analytics.md
         - name: SELECT
