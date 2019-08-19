@@ -28,6 +28,7 @@ ms.date: 05/17/2018
 |float|Floating point numbers in the range - 1.79E+308 to -2.23E-308, 0, and 2.23E-308 to 1.79E+308.|  
 |nvarchar(max)|Text values, comprised of Unicode characters. Note: A value other than max is not supported.|  
 |datetime|Defines a date that is combined with a time of day with fractional seconds that is based on a 24-hour clock and relative to UTC (time zone offset 0).|  
+|bit|An integer that can take a value of 1, 0, or NULL.|
 |record|Set of name/value pairs. Values must be of supported data type.|  
 |array|Ordered collection of values. Values must be of supported data type.|  
   
@@ -55,6 +56,7 @@ There are three functions in the streaming SQL language that are useful for obse
 | **float**  | string converted to 64 bit signed float point number  | 64 bit signed float point number converted to string using job culture  | number: fraction converted to 64 bit signed float point number  | number: fraction  | double and float converted to 64 bit signed float point number    | double  |
 | **nvarchar(max)**  | string  | string  | string  | string  | string  | string  |
 | **datetime**  | string converted to datetime following ISO 8601 standard  | string using ISO 8601 standard  | string converted to datetime following ISO 8601 standard  | datetime converted to string using ISO 8601 standard  | string converted to datetime following ISO 8601 standard  | datetime converted to string using ISO 8601 standard  |
+| **bit** | string converted to integer value 0, 1, or null | ? | ? | ? | ? | ? |
 | **record**  | N/A  | Not supported, “Record” string is outputted  | JSON object  | JSON object  | Avro record type  | Avro record type  |
 | **array**  | N/A  | Not supported,  “Array” string is outputted  | JSON object  | JSON object  | Avro record type  | Avro record type  |
  
@@ -65,5 +67,6 @@ There are three functions in the streaming SQL language that are useful for obse
 | **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction |
 | **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string |
 | **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard |
+| **bit** | ? | ? | ? | ? | ? | ? |
 | **record** | Not supported,  “Record” string is outputted | Not supported,  "Record" string is outputted | JSON object |
 | **array** | Not supported,  “Array” string is outputted | Not supported,  “Array” string is outputted | JSON object |
