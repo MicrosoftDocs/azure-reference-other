@@ -42,7 +42,9 @@
       "product_feedback_url": "https://feedback.azure.com/forums/270577-stream-analytics",
       "titleSuffix": "Stream Analytics Query"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+       "searchScope": { "**/*.md": ["Azure","Stream Analytics"] }
+    },
     "template": [],
     "dest": "stream-analytics-docs",
     "markdownEngineName": "markdig"
