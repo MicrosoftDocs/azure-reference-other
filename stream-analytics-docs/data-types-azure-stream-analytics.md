@@ -67,6 +67,6 @@ There are three functions in the streaming SQL language that are useful for obse
 | **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction |
 | **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string |
 | **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard |
-| **bit** | ? | ? | ? | ? | ? | ? |
+| **bit** ([compatibility level 1.2](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12-preview) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false |
 | **record** | Not supported,  “Record” string is outputted | Not supported,  "Record" string is outputted | JSON object |
 | **array** | Not supported,  “Array” string is outputted | Not supported,  “Array” string is outputted | JSON object |
