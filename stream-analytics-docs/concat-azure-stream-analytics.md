@@ -30,8 +30,11 @@ CONCAT ( string_value1, string_value2 [, string_valueN ] )
  A string value to concatenate to the other values.  
   
 ## Return Types  
- nvarchar(max)  
-  
+ nvarchar(max)
+
+## Remarks
+CONCAT implicitly converts null values to empty strings. If CONCAT receives arguments with all NULL values, it will return an empty string.
+
 ## Examples  
   
 ```SQL 
