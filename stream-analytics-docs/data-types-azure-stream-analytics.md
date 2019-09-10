@@ -28,6 +28,7 @@ ms.date: 05/17/2018
 |float|Floating point numbers in the range - 1.79E+308 to -2.23E-308, 0, and 2.23E-308 to 1.79E+308.|  
 |nvarchar(max)|Text values, comprised of Unicode characters. Note: A value other than max is not supported.|  
 |datetime|Defines a date that is combined with a time of day with fractional seconds that is based on a 24-hour clock and relative to UTC (time zone offset 0).|  
+|bit|An integer that can take a value of 1, 0, or NULL. This is supported in [compatibility level 1.2](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12-preview) and above. |
 |record|Set of name/value pairs. Values must be of supported data type.|  
 |array|Ordered collection of values. Values must be of supported data type.|  
   
@@ -47,14 +48,15 @@ There are three functions in the streaming SQL language that are useful for obse
 - [TRY_CAST](try-cast-azure-stream-analytics.md)
 - [GetType](gettype-azure-stream-analytics.md)
   
-  
+
 ## Type mappings and serialization formats:
 | Data type  | CSV in  | CSV out  | JSON in  | JSON out  | Avro in  | Avro out  |
 |---|---|---|---|---|---|---|
-| **bigint**  | string converted to 64 bit signed integer  | 64 bit signed integer converted to string using job culture  | number: integer converted to 64 bit signed integer; <br /><br />Boolean: false is converted to 0, true is converted to 1  | numeric: integer  | long and int converted to 64 bit signed integer; <br /><br />Boolean: false is converted to 0, true is converted to 1  | long  |
+| **bigint**  | string converted to 64 bit signed integer  | 64 bit signed integer converted to string using job culture  | number: integer converted to 64 bit signed integer; <br /><br />Boolean: in [compatibility level 1.1](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-compatibility-level) and below "false" is converted to 0, "true" is converted to 1  | number: integer  | long and int converted to 64 bit signed integer; <br /><br />Boolean: in [compatibility level 1.1](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-compatibility-level) and below false is converted to 0, true is converted to 1  | long  |
 | **float**  | string converted to 64 bit signed float point number  | 64 bit signed float point number converted to string using job culture  | number: fraction converted to 64 bit signed float point number  | number: fraction  | double and float converted to 64 bit signed float point number    | double  |
 | **nvarchar(max)**  | string  | string  | string  | string  | string  | string  |
 | **datetime**  | string converted to datetime following ISO 8601 standard  | string using ISO 8601 standard  | string converted to datetime following ISO 8601 standard  | datetime converted to string using ISO 8601 standard  | string converted to datetime following ISO 8601 standard  | datetime converted to string using ISO 8601 standard  |
+| **bit** ([compatibility level 1.2](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12-preview) and above) | string "true", "false", or "null" is converted to integer value 1, 0, or null correspondingly | converted to string "true" or "false" | Boolean: "false" is converted to 0, "true" is converted to 1 | Boolean: boolean value | Boolean: false is converted to 0, true is converted to 1 | boolean |
 | **record**  | N/A  | Not supported, “Record” string is outputted  | JSON object  | JSON object  | Avro record type  | Avro record type  |
 | **array**  | N/A  | Not supported,  “Array” string is outputted  | JSON object  | JSON object  | Avro record type  | Avro record type  |
  
@@ -65,5 +67,6 @@ There are three functions in the streaming SQL language that are useful for obse
 | **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction |
 | **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string |
 | **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard |
+| **bit** ([compatibility level 1.2](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12-preview) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false |
 | **record** | Not supported,  “Record” string is outputted | Not supported,  "Record" string is outputted | JSON object |
 | **array** | Not supported,  “Array” string is outputted | Not supported,  “Array” string is outputted | JSON object |
