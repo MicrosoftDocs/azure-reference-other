@@ -6,17 +6,17 @@ applies_to:
 services: stream-analytics
 author: mamccrea
 ms.author: mamccrea
-manager: kfile
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 80550bf3-96a8-47a2-8287-181e1992008c
 caps.latest.revision: 2
 ms.workload: data-services
-ms.date: 02/01/2017
+ms.date: 09/13/2019
 ---
 
 # ST_DISTANCE  (Azure Stream Analytics)
-  Returns the distance between two points in meters. If used with Polygons will return 0.  
+
+Returns the geodesic distance between two points in meters. Cartesian distances require projection calculations and are not supported, but they can be implemented in user defined functions. If used with Polygons will return 0.  
   
  ## Syntax  
   
@@ -40,7 +40,7 @@ ST_DISTANCE ( pointA, pointB )
   
 ```SQL  
 SELECT  
-     ST_DISTANCE(input.car1Position, input.car2Position)  
+     ST_DISTANCE(input.carPosition, input.warehouse)  
 FROM input  
   
 ```  
@@ -56,4 +56,10 @@ FROM input
   
 ## See Also  
 
-  
+* [GeoSpatial Functions](geospatial-functions.md)
+* [CreateLineString](createlinestring.md)
+* [CreatePoint](createpoint.md)
+* [CreatePolygon](createpolygon.md)
+* [ST_OVERLAPS](st-overlaps.md)
+* [ST_INTERSECTS](st-intersects.md)
+* [ST_WITHIN](st-within.md)

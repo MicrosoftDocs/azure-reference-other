@@ -58,4 +58,11 @@ FROM input
   
 ## See Also  
 
+* [GeoSpatial Functions](geospatial-functions.md)
+* [CreateLineString](createlinestring.md)
+* [CreatePoint](createpoint.md)
+* [CreatePolygon](createpolygon.md)
+* [ST_DISTANCE](st-distance.md)
+* [ST_INTERSECTS](st-intersects.md)
+* [ST_WITHIN](st-within.md)
   
