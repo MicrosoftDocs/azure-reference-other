@@ -1,4 +1,2 @@
-- name: Azure Monitor Reference
+- name: Index
   href: index.md
-- name: Logs
-  items:
