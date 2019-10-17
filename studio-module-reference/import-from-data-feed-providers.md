@@ -1,6 +1,6 @@
 ---
 title: "Import from Data Feed Providers | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Import from Data Feed Providers
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data provided in the OData format into a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to import data provided in the OData format into a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -95,7 +95,7 @@ To filter data from the feed, use statements supported by the [OData protocol](h
 
 For more examples of filter syntax, see [Using Filter Expressions in OData URIs](https://msdn.microsoft.com/library/hh169248\(v=nav.90\).aspx).
 
-Alternatively, you can get all the data, and filter it after loading it into Azure Machine Learning Studio:
+Alternatively, you can get all the data, and filter it after loading it into Azure Machine Learning Studio (classic):
 
 - Use a custom R script to get only the data you want.
 

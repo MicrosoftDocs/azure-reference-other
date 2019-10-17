@@ -1,6 +1,6 @@
 ---
 title: "Convert to CSV | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,13 +19,13 @@ manager: cgronlun
   
 ## Module overview
  
-This article describes how to use the [Convert to CSV](convert-to-csv.md) module in Azure Machine Learning Studio, to convert a dataset from Azure ML into a CSV format that can be downloaded, exported, or shared with R or Python script modules.
+This article describes how to use the [Convert to CSV](convert-to-csv.md) module in Azure Machine Learning Studio (classic), to convert a dataset from Azure ML into a CSV format that can be downloaded, exported, or shared with R or Python script modules.
 
 ### More about the CSV format 
 
 The CSV format, which stands for "comma-separated values", is a file format used by many external machine learning tools. Although the native dataset format used by Azure Machine Learning is based on the .NET datatable and thus can be read by .NET libraries, CSV is a common interchange format when working with open-source languages such as R or Python.
 
-Even if you do must of your work in Azure Machine Learning Studio, there are times when you might find it handy to convert your dataset to CSV to use in external tools. For example:
+Even if you do must of your work in Azure Machine Learning Studio (classic), there are times when you might find it handy to convert your dataset to CSV to use in external tools. For example:
 
 + Download the CSV file to open it with Excel, or import it into a relational database.  
 + Save the CSV file to cloud storage and connect to it from Power BI to create visualizations.  
@@ -135,7 +135,7 @@ For importing, don't use the **Export to CSV** module. Instead, use the [Import 
 
 For general information about importing from CSV, see these resources:
 
-+ [Import your training data into Azure Machine Learning Studio from various data sources](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
++ [Import your training data into Azure Machine Learning Studio (classic) from various data sources](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
 + [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
 
 ##  Expected inputs

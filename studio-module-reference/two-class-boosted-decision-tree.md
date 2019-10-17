@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Boosted Decision Tree | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Two-Class Boosted Decision Tree** module in Azure Machine Learning Studio, to create a machine learning model that is based on the boosted decision trees algorithm. 
+This article describes how to use the **Two-Class Boosted Decision Tree** module in Azure Machine Learning Studio (classic), to create a machine learning model that is based on the boosted decision trees algorithm. 
 
 A boosted decision tree is an ensemble learning method in which the second tree corrects for the errors of the first tree, the third tree corrects for the errors of the first and second trees, and so forth.  Predictions are based on the entire ensemble of trees together that makes the prediction. For further technical details, see the [Research](#bkmk_research) section of this article.
   
@@ -27,7 +27,7 @@ Generally, when properly configured, boosted decision trees are the easiest meth
   
 For more information about how to choose an algorithm, see these resources:  
   
--   [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
+-   [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
 -   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/machine-learning-algorithm-choice/)  
 
@@ -37,7 +37,7 @@ This module creates an untrained classification model. Because classification is
 
 You can train this type of model by using either the [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) modules. 
 
-1.  In Azure Machine Learning Studio, add the **Boosted Decision Tree** module to your experiment.
+1.  In Azure Machine Learning Studio (classic), add the **Boosted Decision Tree** module to your experiment.
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.
   

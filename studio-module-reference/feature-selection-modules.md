@@ -1,7 +1,7 @@
 ---
 title: "Feature Selection modules | Microsoft Docs"
-description: "Learn about the Azure Machine Learning Studio modules that you can use for feature selection."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use for feature selection."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,11 +13,11 @@ manager: cgronlun
 ---
 # Feature Selection modules
 
-This article describes the modules in Azure Machine Learning Studio that you can use for feature selection.
+This article describes the modules in Azure Machine Learning Studio (classic) that you can use for feature selection.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-Feature selection is an important tool in machine learning. Machine Learning Studio provides multiple methods for performing feature selection. Choose a feature selection method based on the type of data that you have, and the requirements of the statistical technique that's applied.
+Feature selection is an important tool in machine learning. Machine Learning Studio (classic) provides multiple methods for performing feature selection. Choose a feature selection method based on the type of data that you have, and the requirements of the statistical technique that's applied.
 
 This article covers:
 
@@ -26,7 +26,7 @@ This article covers:
 - [How to use feature selection](#bkmk_howto)
 - [Algorithms that include feature selection](#LearnersWithFeatureSelection)
 
-Each feature selection module in Machine Learning Studio uses a dataset as input. Then, the module applies well-known statistical methods to the data columns that are provided as input. The output is a set of metrics that can help you identify the columns that have the best information value.
+Each feature selection module in Machine Learning Studio (classic) uses a dataset as input. Then, the module applies well-known statistical methods to the data columns that are provided as input. The output is a set of metrics that can help you identify the columns that have the best information value.
 
 ## <a name="bkmk_Introduction"></a>About feature selection
  
@@ -42,7 +42,7 @@ New users of machine learning might be tempted to include all data that's availa
  
 > [!TIP]
 > 
-> Some machine learning algorithms in Machine Learning Studio also use feature selection or dimensionality reduction as part of the training process. When you use these learners, you can skip the feature selection process and let the algorithm decide the best inputs.
+> Some machine learning algorithms in Machine Learning Studio (classic) also use feature selection or dimensionality reduction as part of the training process. When you use these learners, you can skip the feature selection process and let the algorithm decide the best inputs.
 
 ### <a name="bkmk_howto"></a>Use feature selection in an experiment
 
@@ -59,9 +59,9 @@ Feature selection is different from feature engineering, which focuses on creati
 - For a discussion of the different ways that you can engineer features or select the best features as part of the data science process, see [Feature engineering in data science](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-create-features).
 - For a walkthrough of feature selection in the data science process, see [Filter features from your data - Feature selection](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-select-features).
 
-## <a name="bkmk_ModulesDescribed"></a>Feature selection methods in Machine Learning Studio
+## <a name="bkmk_ModulesDescribed"></a>Feature selection methods in Machine Learning Studio (classic)
 
-The following feature selection modules are provided in Machine Learning Studio.
+The following feature selection modules are provided in Machine Learning Studio (classic).
 
 ### Filter Based Feature Selection
 
@@ -93,7 +93,7 @@ The scores that the module returns represent the potential change in the accurac
 
 ### <a name="LearnersWithFeatureSelection"></a>Machine learning algorithms that incorporate feature selection
 
-Some machine learning algorithms in Machine Learning Studio optimize feature selection during training. They might also provide parameters that help with feature selection. If you're using a method that has its own heuristic for choosing features, it's often better to rely on that heuristic instead of preselecting features.
+Some machine learning algorithms in Machine Learning Studio (classic) optimize feature selection during training. They might also provide parameters that help with feature selection. If you're using a method that has its own heuristic for choosing features, it's often better to rely on that heuristic instead of preselecting features.
 
 These algorithms and feature selection methods are used internally:
 
@@ -103,7 +103,7 @@ These algorithms and feature selection methods are used internally:
  
 - **Logistic regression models and linear models**
 
-  The modules for multiclass and binary logistic regression support L1 and L2 regularization. Regularization is a way of adding constraints during training to manually specify an aspect of the learned model. Regularization typically is used to avoid overfitting. Machine Learning Studio supports regularization for the L1 or L2 norms of the weight vector in linear classification algorithms:
+  The modules for multiclass and binary logistic regression support L1 and L2 regularization. Regularization is a way of adding constraints during training to manually specify an aspect of the learned model. Regularization typically is used to avoid overfitting. Machine Learning Studio (classic) supports regularization for the L1 or L2 norms of the weight vector in linear classification algorithms:
  
     - L1 regularization is useful if the goal is to have a model that's as sparse as possible.
     - L2 regularization prevents any single coordinate in the weight vector from growing too much in magnitude. It's useful if the goal is to have a model with small overall weights.

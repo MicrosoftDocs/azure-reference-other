@@ -1,6 +1,6 @@
 ---
 title: "Principal Component Analysis | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -30,7 +30,7 @@ Principal Component Analysis (PCA) is a popular technique in machine learning. I
 
 Added benefits of PCA are improved data visualization, and optimization of resource use by the learning algorithm.
 
-The **Principal Component Analysis** module in Azure Machine Learning Studio takes a set of feature columns in the provided dataset, and creates a projection of the feature space that has lower dimensionality. The algorithm uses randomization techniques to identify a feature subspace that captures most of the information in the complete feature matrix. Hence, the transformed data matrices capture the variance in the original data while reducing the effect of noise and minimizing the risk of overfitting.
+The **Principal Component Analysis** module in Azure Machine Learning Studio (classic) takes a set of feature columns in the provided dataset, and creates a projection of the feature space that has lower dimensionality. The algorithm uses randomization techniques to identify a feature subspace that captures most of the information in the complete feature matrix. Hence, the transformed data matrices capture the variance in the original data while reducing the effect of noise and minimizing the risk of overfitting.
 
 For general information about principal component analysis (PCA) see this [Wikipedia article](https://wikipedia.org/wiki/Principal_component_analysis). For information about the PCA approaches used in this module, see these articles:
 

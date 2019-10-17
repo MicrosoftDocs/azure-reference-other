@@ -1,6 +1,6 @@
 ---
 title: "Score Vowpal Wabbit Version 7-4 Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Score Vowpal Wabbit Version 7-4 Model** module in Azure Machine Learning Studio, to generate scores for a set of input data, using an existing trained Vowpal Wabbit model.  
+This article describes how to use the **Score Vowpal Wabbit Version 7-4 Model** module in Azure Machine Learning Studio (classic), to generate scores for a set of input data, using an existing trained Vowpal Wabbit model.  
 
 This module is provided for compatibility with version 7-4 of the Vowpal Wabbit framework. Use this module only if you need to score data using a trained model that was saved in the 7-4 format.
 
@@ -36,7 +36,7 @@ To create a  new VW model, we recommend that you use the latest version::
 
     **Restrictions** 
     
-    The model must be available in Azure Machine Learning Studio; you cannot directly load a model from Azure storage.
+    The model must be available in Azure Machine Learning Studio (classic); you cannot directly load a model from Azure storage.
   
     Only Vowpal Wabbit 7-4 models are supported; you cannot connect saved models that were trained by using other algorithms, and you cannot use models that were trained using later versions.  
   
@@ -98,7 +98,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 Vowpal Wabbit has many command-line options for choosing and tuning algorithms. A full discussion of these options is not possible here; we recommend that you view the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments).
 
-The following parameters are not supported in Azure Machine Learning Studio.  
+The following parameters are not supported in Azure Machine Learning Studio (classic).  
 
 -   The input/output options specified in [https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments)  
   

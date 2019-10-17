@@ -1,6 +1,6 @@
 ---
 title: "Import Count Table | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 ## Module overview
 
-This article describes how to use the **Import Count Table** module in Azure Machine Learning Studio.
+This article describes how to use the **Import Count Table** module in Azure Machine Learning Studio (classic).
 
 The purpose of the **Import Count Table** module is to allow customers who created a table of count-based statistics using an earlier version of Azure Machine Learning to upgrade their experiment. This module merges the existing count tables with new data.
 
@@ -37,7 +37,7 @@ For all new experiments, we recommend that you use the following modules:
 
 ## How to configure Import Count Table
 
-1. In Azure Machine Learning Studio, open an experiment that contains a count table created using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.
+1. In Azure Machine Learning Studio (classic), open an experiment that contains a count table created using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.
 
 2. Add the **Import Count Table** module to the experiment.
 
@@ -47,7 +47,7 @@ For all new experiments, we recommend that you use the following modules:
 
 4. Use the **Counting type** option to specify where and how the count table is stored:
 
-    - **Dataset**: The data used to build counts is saved as a dataset in Azure Machine Learning Studio.
+    - **Dataset**: The data used to build counts is saved as a dataset in Azure Machine Learning Studio (classic).
 
     - **Blob**: The data used to build counts is stored as a block blob in Windows Azure storage.
 

@@ -1,6 +1,6 @@
 ---
 title: "Execute Python Script | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Python Language Modules](python-language-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio to run Python code. For more information about the architecture and design principles of Python in Studio, see [the following article.](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)
+This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio (classic) to run Python code. For more information about the architecture and design principles of Python in Studio, see [the following article.](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)
 
 With Python, you can perform tasks that aren't currently supported by existing Studio modules such as:
 
@@ -28,7 +28,7 @@ With Python, you can perform tasks that aren't currently supported by existing S
 + Using Python libraries to enumerate datasets and models in your workspace
 + Reading, loading, and manipulating data from sources not supported by the [Import Data](import-data.md) module
 
-Azure Machine Learning Studio uses the Anaconda distribution of Python, which includes many common utilities for data processing.
+Azure Machine Learning Studio (classic) uses the Anaconda distribution of Python, which includes many common utilities for data processing.
 
 ## How to use Execute Python Script
 
@@ -91,7 +91,7 @@ The **Execute Python Script** module supports arbitrary Python script files as i
 
 ### Upload a ZIP file containing Python code to your workspace
 
-1. In the experiment area of Azure Machine Learning Studio, click **Datasets**, and then click **New**.
+1. In the experiment area of Azure Machine Learning Studio (classic), click **Datasets**, and then click **New**.
 
 2. Select the option, **From local file**.
 
@@ -105,7 +105,7 @@ The **Execute Python Script** module supports arbitrary Python script files as i
 
     All files that are contained in the ZIP file are available for use during run time: for example, sample data, scripts, or new Python packages.
 
-    If your zipped file contains any libraries that are not already installed in Azure Machine Learning Studio, you must install the Python library package as part of your custom script.
+    If your zipped file contains any libraries that are not already installed in Azure Machine Learning Studio (classic), you must install the Python library package as part of your custom script.
 
     If there was a directory structure present, it is preserved. However, you must alter your code to prepend the directory **src** to the path.
 

@@ -1,6 +1,6 @@
 ---
 title: "Fast Forest Quantile Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview
 
-This article describes how to use the **Fast Forest Quantile Regression** module in Azure Machine Learning Studio, to create a regression model that can predict values for a specified number of quantiles. 
+This article describes how to use the **Fast Forest Quantile Regression** module in Azure Machine Learning Studio (classic), to create a regression model that can predict values for a specified number of quantiles. 
 
 Quantile regression is useful if you want to understand more about the distribution of the predicted value, rather than get a single mean prediction value. This method has many applications, including:  
   

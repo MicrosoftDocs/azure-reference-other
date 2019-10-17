@@ -1,6 +1,6 @@
 ---
 title: "Pretrained Cascade Image Classification | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [OpenCV Library Modules](opencv-library-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Pretrained Cascade Image Classification** module in Azure Machine Learning Studio, to detect faces in images. 
+This article describes how to use the **Pretrained Cascade Image Classification** module in Azure Machine Learning Studio (classic), to detect faces in images. 
 
 The model is based on the [OpenCV](http://opencv.org/) library. The OpenCV Library provides a list of predefined models, each optimized to detect a particular type of object.
 

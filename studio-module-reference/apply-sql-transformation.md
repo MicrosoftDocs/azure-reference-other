@@ -1,6 +1,6 @@
 ---
 title: "Apply SQL Transformation | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
 
 ## Module overview  
 
-This article describes how to use the **Apply SQL Transformation** module in Azure Machine Learning Studio, to specify a SQL query on an input dataset or datasets. 
+This article describes how to use the **Apply SQL Transformation** module in Azure Machine Learning Studio (classic), to specify a SQL query on an input dataset or datasets. 
 
 SQL is handy when you need to modify your data in complex ways, or persist the data for use in other environments. For example, using the **Apply SQL Transformation** module, you can:
   

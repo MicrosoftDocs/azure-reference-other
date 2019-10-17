@@ -1,6 +1,6 @@
 ---
 title: "Export Data | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Data Input and Output](data-input-and-output.md)
 
 ## Module overview
 
-This article describes how to use the  [Export Data](export-data.md) module in Azure Machine Learning Studio, to save results, intermediate data, and working data from your experiments into cloud storage destinations outside Azure Machine Learning Studio.
+This article describes how to use the  [Export Data](export-data.md) module in Azure Machine Learning Studio (classic), to save results, intermediate data, and working data from your experiments into cloud storage destinations outside Azure Machine Learning Studio (classic).
 
 This module supports exporting or saving your data to the following cloud data services:
 
@@ -44,7 +44,7 @@ This module supports exporting or saving your data to the following cloud data s
   - `Export-AmlExperimentGraph` exports a definition of the complete experiment to a JSON file.
   - `Download-AmlExperimentNodeOutput` lets you extract the information provided on the output ports of any module.
 
-    For more information, see [PowerShell Module for Azure Machine Learning Studio](https://github.com/hning86/azuremlps).
+    For more information, see [PowerShell Module for Azure Machine Learning Studio (classic)](https://github.com/hning86/azuremlps).
   
 ## How to configure Export Data
 

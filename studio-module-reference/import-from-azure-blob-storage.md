@@ -1,6 +1,6 @@
 ---
 title: "Import from Azure Blob Storage | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -176,7 +176,7 @@ If your source data changes, you can refresh the dataset and add new data by re-
 
 The **Import Data** module does not support filtering as data is being read.
 
-After you have loaded the data into Azure Machine Learning Studio, you can modify the data with these tools:
+After you have loaded the data into Azure Machine Learning Studio (classic), you can modify the data with these tools:
 
 - Use a custom R script to filter or transform data.
 
@@ -249,7 +249,7 @@ For uploaded datasets, Azure Machine Learning generally supports only UTF-8. How
 
 Processing and cleaning unstructured text to fit neatly in columns is always a challenge. However, if  you need to import columns of text data, the TSV format often presents fewer difficulties, though you still need to check for excess tab characters in advance.
 
-We recommend that you review the [Text Classification template](https://gallery.cortanaintelligence.com/Collection/Text-Classification-Template-1), in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/), to see an example of text ingestion and processing in Azure Machine Learning Studio.
+We recommend that you review the [Text Classification template](https://gallery.cortanaintelligence.com/Collection/Text-Classification-Template-1), in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/), to see an example of text ingestion and processing in Azure Machine Learning Studio (classic).
 
 ###  Custom encoding for CSV files  
 

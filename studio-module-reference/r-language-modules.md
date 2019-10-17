@@ -1,7 +1,7 @@
 ---
 title: "R Language Modules | Microsoft Docs"
-description: This article lists the modules in Azure Machine Learning Studio that support running R code.
-titleSuffix: "Azure Machine Learning Studio"
+description: This article lists the modules in Azure Machine Learning Studio (classic) that support running R code.
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # R Language Modules
 
-This article lists the modules in Azure Machine Learning Studio that support running R code. These modules make it easier to publish R models in production, and to use the experience of the R language community to solve real-world problems.
+This article lists the modules in Azure Machine Learning Studio (classic) that support running R code. These modules make it easier to publish R models in production, and to use the experience of the R language community to solve real-world problems.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -28,7 +28,7 @@ The **R Language Modules** category includes the following modules:
 
 ## Requirements when using R
 
-Before using R script in Machine Learning Studio, observe the following requirements:
+Before using R script in Machine Learning Studio (classic), observe the following requirements:
 
 - If you imported data that uses CSV or other formats, you cannot read the data directly in CSV format from your R code. Instead, use [Convert to Dataset](convert-to-dataset.md) to prepare the data, before using it as input to an R module.
 
@@ -42,13 +42,13 @@ Before using R script in Machine Learning Studio, observe the following requirem
 
 ## Optimization for R scoring tasks
 
-The implementation of R in the Machine Learning Studio and workspace environment includes two principal components. One component coordinates script execution, and the other provides high-speed data access and scoring. The scoring component is optimized to enhance scalability and performance. 
+The implementation of R in the Machine Learning Studio (classic) and workspace environment includes two principal components. One component coordinates script execution, and the other provides high-speed data access and scoring. The scoring component is optimized to enhance scalability and performance. 
 
-Therefore, R workspaces in Machine Learning Studio also support two kinds of scoring tasks, each optimized for different requirements. You typically use scoring on a file-by-file basis when you are building an experiment. You typically use the request response service (RRS) for very fast scoring, when you are scoring as part of a web service.
+Therefore, R workspaces in Machine Learning Studio (classic) also support two kinds of scoring tasks, each optimized for different requirements. You typically use scoring on a file-by-file basis when you are building an experiment. You typically use the request response service (RRS) for very fast scoring, when you are scoring as part of a web service.
 
 ## R package and version support 
 
-Machine Learning Studio includes over 500 of the most popular R packages. The R packages that you can select from depend on which R version you select for your experiment:
+Machine Learning Studio (classic) includes over 500 of the most popular R packages. The R packages that you can select from depend on which R version you select for your experiment:
 
 + CRAN R
 + Microsoft R Open (MRO 3.2.2 or MRO 3.4.4)
@@ -138,7 +138,7 @@ This experiment in the Azure AI Gallery demonstrates how you can create a custom
 
 This article, published on R-Bloggers, demonstrates how you can create your own evaluation method in Machine Learning:
 
-+ [How to evaluate R models in Azure Machine Learning Studio](https://www.r-bloggers.com/how-to-evaluate-r-models-in-azure-machine-learning-studio/)
++ [How to evaluate R models in Azure Machine Learning Studio (classic)](https://www.r-bloggers.com/how-to-evaluate-r-models-in-azure-machine-learning-studio/)
 
 ### More help with R
 
@@ -162,7 +162,7 @@ For additional R code samples and help with R and its applications, see these re
 
 - [Bioconductor](http://bioconductor.org/): A large repository of R packages in bioinformatics.
 
-- [Quick Start Guide for R](http://go.microsoft.com/fwlink/?LinkId=524954): A detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio.
+- [Quick Start Guide for R](http://go.microsoft.com/fwlink/?LinkId=524954): A detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio (classic).
 
 ## See also
 

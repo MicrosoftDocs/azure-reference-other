@@ -1,6 +1,6 @@
 ---
 title: "PCA-Based Anomaly Detection | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Anomaly Detection](anomaly-detection.md)
 
 ## Module overview
 
-This article describes how to use the **PCA-Based Anomaly Detection** module in Azure Machine Learning Studio, to create an anomaly detection model based on Principal Component Analysis (PCA).
+This article describes how to use the **PCA-Based Anomaly Detection** module in Azure Machine Learning Studio (classic), to create an anomaly detection model based on Principal Component Analysis (PCA).
 
 This module helps you build a model in scenarios where it is easy to obtain training data from one class, such as valid transactions, but difficult to obtain sufficient samples of the targeted anomalies. 
 

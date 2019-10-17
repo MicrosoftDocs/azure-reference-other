@@ -1,6 +1,6 @@
 ---
 title: "Latent Dirichlet Allocation | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -21,7 +21,7 @@ Category: [Text Analytics](text-analytics.md)
 
 ## Module overview
 
-This article describes how to use the **Latent Dirichlet Allocation** module in Azure Machine Learning Studio, to group otherwise unclassified text into a number of categories. Latent Dirichlet Allocation (LDA) is often used in natural language processing (NLP) to find texts that are similar. Another common term is *topic modeling*.
+This article describes how to use the **Latent Dirichlet Allocation** module in Azure Machine Learning Studio (classic), to group otherwise unclassified text into a number of categories. Latent Dirichlet Allocation (LDA) is often used in natural language processing (NLP) to find texts that are similar. Another common term is *topic modeling*.
 
 This module takes a column of text, and generates these outputs:
 
@@ -157,7 +157,7 @@ For details and an example based on customer review text, see [Understanding LDA
 
 ### <a name="bkmk_Understanding"></a>Example of LDA results
 
-To illustrate how the **Latent Dirichlet Allocation** module works, the following example applies LDA with the default settings to the Book Review dataset provided in Azure Machine Learning Studio.
+To illustrate how the **Latent Dirichlet Allocation** module works, the following example applies LDA with the default settings to the Book Review dataset provided in Azure Machine Learning Studio (classic).
 
 #### Source dataset
 

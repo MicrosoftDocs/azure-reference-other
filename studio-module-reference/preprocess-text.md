@@ -1,6 +1,6 @@
 ---
 title: "Preprocess Text | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -21,7 +21,7 @@ Category: [Text Analytics](text-analytics.md)
 
 ## Module overview
 
-This article describes how to use the **Preprocess Text** module in Azure Machine Learning Studio, to clean and simplify text. By preprocessing the text, you can more easily create meaningful features from text.
+This article describes how to use the **Preprocess Text** module in Azure Machine Learning Studio (classic), to clean and simplify text. By preprocessing the text, you can more easily create meaningful features from text.
 
 For example, the **Preprocess Text** module supports these common operations on text:
 
@@ -147,7 +147,7 @@ Additional languages are planned. See the [Microsoft Machine Learning blog](http
 
 Lemmatization is the process of identifying a single canonical form to represent multiple word tokens.
 
-The natural language processing libraries included in Azure Machine Learning Studio combine the following multiple linguistic operations to provide lemmatization:
+The natural language processing libraries included in Azure Machine Learning Studio (classic) combine the following multiple linguistic operations to provide lemmatization:
 
 - **Sentence separation**: In free text used for sentiment analysis and other text analytics, sentences are frequently run-on or punctuation might be missing. Input texts might constitute an arbitrarily long chunk of text, ranging from a tweet or fragment to a complete paragraph, or even document.
 

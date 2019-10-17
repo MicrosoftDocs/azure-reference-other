@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Logistic Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -20,7 +20,7 @@ manager: cgronlun
   
 ##  Module overview  
 
-This article describes how to use the **Two-Class Logistic Regression** module in Azure Machine Learning Studio, to create a logistic regression model that can be used to predict two (and only two) outcomes. 
+This article describes how to use the **Two-Class Logistic Regression** module in Azure Machine Learning Studio (classic), to create a logistic regression model that can be used to predict two (and only two) outcomes. 
 
 Logistic regression is a well-known statistical technique that is used for modeling many kinds of problems. This algorithm is a *supervised learning* method;  therefore, you must provide a dataset that already contains the outcomes to train the model.  
 

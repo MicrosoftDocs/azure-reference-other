@@ -1,6 +1,6 @@
 ---
 title: "Threshold Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -20,7 +20,7 @@ manager: cgronlun
   
 ## Module overview
 
-This article describes how to use the **Threshold Filter** module in Azure Machine Learning Studio, to define a filter that restricts numeric values to a specified range.
+This article describes how to use the **Threshold Filter** module in Azure Machine Learning Studio (classic), to define a filter that restricts numeric values to a specified range.
 
 Threshold filters are commonly used in digital signal processing. A threshold filter examines each value of the input dataset and changes all values that do not meet the boundary conditions. You typically would use this type of filter for the following applications:  
 

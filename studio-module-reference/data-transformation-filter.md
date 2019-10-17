@@ -1,7 +1,7 @@
 ---
 title: "Data Transformation - Filter | Microsoft Docs"
-description: "Learn how to use the filter modules in Azure Machine Learning Studio to transform digital data."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Learn how to use the filter modules in Azure Machine Learning Studio (classic) to transform digital data."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,11 +13,11 @@ manager: cgronlun
 ---
 # Data Transformation - Filter
 
-This article describes how you can use the filter modules in Azure Machine Learning Studio to transform digital data.  The modules in this group of tools for Machine Learning Studio are based on filters that were developed for digital signal processing technology.
+This article describes how you can use the filter modules in Azure Machine Learning Studio (classic) to transform digital data.  The modules in this group of tools for Machine Learning Studio (classic) are based on filters that were developed for digital signal processing technology.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-Filters typically are applied to data in the data processing stage or the preprocessing stage. Filters enhance the clarity of the signal that's used for machine learning. For example, you can use the filter modules in Machine Learning Studio for these processing tasks:
+Filters typically are applied to data in the data processing stage or the preprocessing stage. Filters enhance the clarity of the signal that's used for machine learning. For example, you can use the filter modules in Machine Learning Studio (classic) for these processing tasks:
 
 -   Clean up waveforms that are used for speech recognition.
 -   Detect trends or remove seasonal effects in noisy sales or economic data.
@@ -45,9 +45,9 @@ Various techniques are applied to decompose individual trends or waveform compon
 
 When filtering is applied to a noisy series to isolate different components, you can specify which frequencies to remove or strengthen by specifying the band of frequencies to work with.
 
-### Digital filters in Machine Learning Studio
+### Digital filters in Machine Learning Studio (classic)
 
-The following types of filters are supported in Machine Learning Studio:
+The following types of filters are supported in Machine Learning Studio (classic):
   
 -   **Filters based on waveform decomposition**. Examples include finite impulse response (FIR) and infinite impulse response (IIR) filters. These filters work by removing specific components from an overall series. You can then view and investigate the simplified waveform.  
 -   **Filters based on moving averages or median values**. These filters smooth out variations in a data series by averaging across windows of time. The windows can be fixed or sliding, and can have different shapes. For example, a triangular window peaks at the current data point (weights the current value stronger) and tails off before and after the data point (weights preceding and following values less strongly).  
