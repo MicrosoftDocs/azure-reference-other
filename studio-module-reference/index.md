@@ -1,7 +1,7 @@
 ---
-title: "Machine Learning Studio: algorithm and module help"
+title: "Machine Learning Studio (classic): algorithm and module help"
 description: Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 04/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,17 +13,17 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Azure Machine Learning Studio: algorithm and module help
+# Azure Machine Learning Studio (classic): algorithm and module help
 
-Azure Machine Learning Studio is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio?"](https://docs.microsoft.com/azure/machine-learning/studio/what-is-ml-studio) for more details.
+Azure Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio?"](https://docs.microsoft.com/azure/machine-learning/studio/what-is-ml-studio) for more details.
 
-This documentation contains detailed technical and how-to information for the modules that are available in Machine Learning Studio.
+This documentation contains detailed technical and how-to information for the modules that are available in Machine Learning Studio (classic).
 
-+ Sign in to your [Machine Learning Studio workspace](https://studio.azureml.net/Home) and get started.
++ Sign in to your [Machine Learning Studio (classic) workspace](https://studio.azureml.net/Home) and get started.
 
 ## What is a module?
 
-Each *module* in Machine Learning Studio represents a set of code that can run independently and perform a machine learning task, given the required inputs. A module might contain a particular algorithm, or perform a task that is important in machine learning, such as missing value replacement, or statistical analysis. 
+Each *module* in Machine Learning Studio (classic) represents a set of code that can run independently and perform a machine learning task, given the required inputs. A module might contain a particular algorithm, or perform a task that is important in machine learning, such as missing value replacement, or statistical analysis. 
 
 In Studio, modules are organized by functionality:
 
@@ -35,7 +35,7 @@ In Studio, modules are organized by functionality:
 
      After you've configured the model, use a [training module](machine-learning-train.md) to run data through the algorithm, and measure the accuracy of the trained model by using one of the [evaluation modules](machine-learning-evaluate.md). To get predictions from the model you've just trained, use one of the [scoring modules](machine-learning-score.md).  
 
-+ [Anomaly detection](anomaly-detection.md): Machine Learning Studio includes multiple algorithms specialized for these tasks.
++ [Anomaly detection](anomaly-detection.md): Machine Learning Studio (classic) includes multiple algorithms specialized for these tasks.
 
 + [Text analytics modules](text-analytics.md) support various natural language processing tasks. 
 
@@ -52,7 +52,7 @@ In Studio, modules are organized by functionality:
 In this reference section, you'll find technical background on the machine learning algorithms,  implementation details if available, and links to sample experiments that demonstrate how the module is used. You can download examples in the [Azure AI Gallery](https://gallery.azure.ai/) to your workspace. These examples are for public use.  
 
  > [!TIP]
- > If you are signed in to Machine Learning Studio and have created an experiment, you can get information about a specific module. Select the module, then select the **more help** link in the **Quick Help** pane.
+ > If you are signed in to Machine Learning Studio (classic) and have created an experiment, you can get information about a specific module. Select the module, then select the **more help** link in the **Quick Help** pane.
 
 ## Other technical references
 
@@ -64,4 +64,4 @@ In this reference section, you'll find technical background on the machine learn
 
 ## See also  
 
-[Azure Machine Learning Studio documentation](https://docs.microsoft.com/azure/machine-learning/studio/)
+[Azure Machine Learning Studio (classic) documentation](https://docs.microsoft.com/azure/machine-learning/studio/)

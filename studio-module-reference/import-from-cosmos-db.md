@@ -1,6 +1,6 @@
 ---
 title: "Import from Azure Cosmos DB | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # Import from Azure Cosmos DB
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data from Azure Cosmos DB for use in a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to import data from Azure Cosmos DB for use in a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
@@ -26,7 +26,7 @@ Learn how it works: [Learn about Azure Cosmos DB](https://azure.microsoft.com/se
 + To get started with machine learning using data from Azure Cosmos DB, you must have access to an existing Azure Cosmos DB account containing a collection of related documents. 
 
 > [!NOTE]
-> The user interface in Azure Machine Learning Studio still uses the name DocumentDB in many places. Therefore, you may continue to see references to DocumentDB, even though the API has been incorporated into Azure Cosmos DB. 
+> The user interface in Azure Machine Learning Studio (classic) still uses the name DocumentDB in many places. Therefore, you may continue to see references to DocumentDB, even though the API has been incorporated into Azure Cosmos DB. 
 
 ## How to use Import Data with Azure Cosmos DB
 
@@ -56,7 +56,7 @@ The following steps describe how to manually configure the import source.
     You might need to provide connection information for the document database. 
 
     > [!TIP]
-    > Look for the name of the option in Machine Learning Studio to change at a later date. The import functionality was not affected by the name change.
+    > Look for the name of the option in Machine Learning Studio (classic) to change at a later date. The import functionality was not affected by the name change.
 
 3. For **Endpoint URL**, in the Azure Portal, click **Keys**, and copy the contents of the **URI** field at the top of the page.
 

@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - Initialize Model - Classification | Microsoft Docs"
-description: "Learn about the modules you can use in Azure Machine Learning Studio to create binary or multiclass classification models."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Learn about the modules you can use in Azure Machine Learning Studio (classic) to create binary or multiclass classification models."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # Machine Learning - Initialize Model - Classification
 
-This article describes the modules in Azure Machine Learning Studio that support the creation of classification models. You can use these modules to build binary or multiclass classification models.
+This article describes the modules in Azure Machine Learning Studio (classic) that support the creation of classification models. You can use these modules to build binary or multiclass classification models.
 
 
 
@@ -38,7 +38,7 @@ To create a classification model, or *classifier*, first, select an appropriate 
 - What is the distribution of the data?
 - How much time can you allow for training?
 
-Machine Learning Studio provides multiple classification algorithms. When you use the [One-Vs-All](one-vs-all-multiclass.md) algorithm, you can even apply a binary classifier to a multiclass problem.
+Machine Learning Studio (classic) provides multiple classification algorithms. When you use the [One-Vs-All](one-vs-all-multiclass.md) algorithm, you can even apply a binary classifier to a multiclass problem.
 
 After you choose an algorithm and set the parameters by using the modules in this section, train the model on labeled data. Classification is a supervised machine learning method. It always requires labeled training data.
 

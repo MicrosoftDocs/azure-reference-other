@@ -1,6 +1,6 @@
 ---
 title: "R Packages Supported by Azure Machine Learning | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -11,14 +11,14 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# R Packages supported by Azure Machine Learning Studio
+# R Packages supported by Azure Machine Learning Studio (classic)
 
-This article lists the packages included by default in Azure Machine Learning Studio. To use one of the preloaded packages in your R code, you simply import the package using standard R syntax.
+This article lists the packages included by default in Azure Machine Learning Studio (classic). To use one of the preloaded packages in your R code, you simply import the package using standard R syntax.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 > [!IMPORTANT]
-> Packages available in Studio can be updated, or the version refreshed, without warning. To get the latest and most complete list of the R packages that are in the Azure Machine Learning Studio environment, we recommend that you use [this script](#bkmk_code).
+> Packages available in Studio can be updated, or the version refreshed, without warning. To get the latest and most complete list of the R packages that are in the Azure Machine Learning Studio (classic) environment, we recommend that you use [this script](#bkmk_code).
 
 ## Unsupported packages  
 

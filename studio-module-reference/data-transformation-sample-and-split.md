@@ -1,7 +1,7 @@
 ---
 title: "Data Transformation - Sample and Split | Microsoft Docs"
-description: "Learn about the Azure Machine Learning Studio modules you can use to partition or sample data."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Learn about the Azure Machine Learning Studio (classic) modules you can use to partition or sample data."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,13 +13,13 @@ manager: cgronlun
 ---
 # Data Transformation - Sample and Split
 
-This article describes the modules in Azure Machine Learning Studio that you can use to partition or sample data.
+This article describes the modules in Azure Machine Learning Studio (classic) that you can use to partition or sample data.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 Splitting and sampling datasets are both important tasks in machine learning. For example, it's a common practice to divide data into training and testing sets to help you evaluate a model on a holdout dataset. Sampling is also increasingly important in the era of big data, to ensure that there's a fair distribution of classes in your training data. Sampling also helps ensure that you're not processing more data than is needed.
 
-You can use Machine Learning Studio modules to customize the way you split or sample datasets:
+You can use Machine Learning Studio (classic) modules to customize the way you split or sample datasets:
 
 - Filter training data based on an attribute in the data.
 - Perform stratified sampling to divide the class variable equally among *n* number of groups.
@@ -28,7 +28,7 @@ You can use Machine Learning Studio modules to customize the way you split or sa
 
 ## Choosing the right operation: Split or sampling
 
-Machine Learning Studio provides two modules that encapsulate tasks. The modules sound similar, but they have different uses, and provide complementary functionality. It's likely that you'll use both modules in an experiment, to get the right amount and the right mix of data.
+Machine Learning Studio (classic) provides two modules that encapsulate tasks. The modules sound similar, but they have different uses, and provide complementary functionality. It's likely that you'll use both modules in an experiment, to get the right amount and the right mix of data.
 
 Next, we compare the **Split Data** module and the **Partition and Sample** module by seeing which tasks each module is commonly used for.
 

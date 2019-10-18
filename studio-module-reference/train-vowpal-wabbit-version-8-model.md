@@ -1,6 +1,6 @@
 ---
 title: "Train Vowpal Wabbit Version 8 Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Train Vowpal Wabbit Version 8** module in Azure Machine Learning Studio, to create a machine learning model by using Vowpal Wabbit (version 8).  
+This article describes how to use the **Train Vowpal Wabbit Version 8** module in Azure Machine Learning Studio (classic), to create a machine learning model by using Vowpal Wabbit (version 8).  
 
 To use Vowpal Wabbit for machine learning, format your input according to Vowpal Wabbit requirements, and save the data in an Azure blob. Use this module to specify Vowpal Wabbit command-line arguments. 
 
@@ -29,7 +29,7 @@ When the experiment is run, an instance of Vowpal Wabbit is loaded into the expe
 To incrementally train an existing model on new data, connect a saved model to the **Pre-trained model** input, and add the new data to the other input.  
   
 > [!NOTE]
-> Azure Machine Learning Studio hosts multiple versions of the Vowpal Wabbit framework.  This module uses the latest version of the Vowpal Wabbit framework, which is version 8.  To score new input data, you must use [Score Vowpal Wabbit Version 8 Model](score-vowpal-wabbit-version-8-model.md).
+> Azure Machine Learning Studio (classic) hosts multiple versions of the Vowpal Wabbit framework.  This module uses the latest version of the Vowpal Wabbit framework, which is version 8.  To score new input data, you must use [Score Vowpal Wabbit Version 8 Model](score-vowpal-wabbit-version-8-model.md).
 >   
 >  Vowpal Wabbit versions 7-4 or 7-6: [Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md) and [Score Vowpal Wabbit 7-4 Model](score-vowpal-wabbit-version-7-4-model.md).  
 >   
@@ -170,7 +170,7 @@ During training, the module makes calls into a Vowpal Wabbit wrapper developed f
 
 ###  <a name="bkmk_Options"></a> Supported and unsupported parameters 
 
-This section describes support for Vowpal Wabbit command line parameters in Azure Machine Learning Studio. 
+This section describes support for Vowpal Wabbit command line parameters in Azure Machine Learning Studio (classic). 
 
 Generally, all but a limited set of arguments are supported. For a complete list of arguments, use the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments).    
 

@@ -1,6 +1,6 @@
 ---
 title: "Median Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -20,7 +20,7 @@ manager: cgronlun
   
 ## Module overview  
  
-This article describes how to use the **Median Filter** module in Azure Machine Learning Studio, to define a *median filter* for applying to a series of values that represent a digital input signal or image.  
+This article describes how to use the **Median Filter** module in Azure Machine Learning Studio (classic), to define a *median filter* for applying to a series of values that represent a digital input signal or image.  
 
 Median filters are widely used in image recognition to reduce noise so that features can more easily be detected.  
 

@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning Modules | Microsoft Docs"
 description: The modules in this section provide tools for the final phases of machine learning.
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -11,7 +11,7 @@ author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
-# Machine learning modules in Azure Machine Learning Studio
+# Machine learning modules in Azure Machine Learning Studio (classic)
 
 The typical workflow for machine learning includes many phases:  
   
@@ -51,7 +51,7 @@ For a detailed description of this experimental workflow, see the [credit risk s
 
 ## Prerequisites
 
-Before you can get to the fun part of building a model, typically a lot of preparation is required. This section provides links to tools in Machine Learning Studio that can help you clean up your data, improve the quality of input, and prevent run-time errors.
+Before you can get to the fun part of building a model, typically a lot of preparation is required. This section provides links to tools in Machine Learning Studio (classic) that can help you clean up your data, improve the quality of input, and prevent run-time errors.
 
 ### Data exploration and data quality
 
@@ -71,7 +71,7 @@ Be sure to check your data before training your model. To impute the missing val
 
 ### Select features and reduce dimensionality
 
-Machine Learning Studio can help you sift through your data to find the most useful attributes.  
+Machine Learning Studio (classic) can help you sift through your data to find the most useful attributes.  
   
 -   Use tools such as [Fisher Linear Discriminant Analysis](fisher-linear-discriminant-analysis.md) or [Filter Based Feature Selection](filter-based-feature-selection.md) to determine which columns of data have the most predictive power. These tools can also identify columns that should be removed because of data leakage.  
   

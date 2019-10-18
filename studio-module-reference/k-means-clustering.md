@@ -1,6 +1,6 @@
 ---
 title: "K-Means Clustering | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
  
- This article describes how to use the **K-Means Clustering** module in Azure Machine Learning Studio to create an untrained K-means clustering model. 
+ This article describes how to use the **K-Means Clustering** module in Azure Machine Learning Studio (classic) to create an untrained K-means clustering model. 
  
  K-means is one of the simplest and the best known *unsupervised* learning algorithms, and can be  used for a variety of machine learning tasks, such as [detecting abnormal data](https://msdn.microsoft.com/magazine/jj891054.aspx), clustering of text documents, and analysis of a dataset prior to using other classification or regression methods. To create a clustering model, you add this module to your experiment, connect a dataset, and set parameters such as the number of clusters you expect, the distance metric to use in creating the clusters, and so forth. 
   

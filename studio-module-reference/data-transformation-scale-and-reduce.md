@@ -1,7 +1,7 @@
 ---
 title: "Data Transformation - Scale and Reduce | Microsoft Docs"
-description: "Learn about the Azure Machine Learning Studio modules that can help you work with numerical data."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Learn about the Azure Machine Learning Studio (classic) modules that can help you work with numerical data."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # Data Transformation - Scale and Reduce
 
-This article describes the modules in Azure Machine Learning Studio that can help you work with numerical data. For machine learning, common data tasks include clipping, binning, and normalizing numerical values. Other modules support dimensionality reduction.
+This article describes the modules in Azure Machine Learning Studio (classic) that can help you work with numerical data. For machine learning, common data tasks include clipping, binning, and normalizing numerical values. Other modules support dimensionality reduction.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

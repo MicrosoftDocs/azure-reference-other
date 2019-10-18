@@ -1,6 +1,6 @@
 ---
 title: "Load Trained Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Data Input and Output](data-input-and-output.md)
 
 ## Module overview
 
-This article describes how to use the **Load Trained Model** module in Azure Machine Learning Studio, to load an already trained model for use in an experiment. 
+This article describes how to use the **Load Trained Model** module in Azure Machine Learning Studio (classic), to load an already trained model for use in an experiment. 
 
 This module requires an existing trained model. Typically, you create and then train the model in a different experiment, and then save the model either to your workspace, or to one of the supported cloud storage options.  
 
@@ -103,7 +103,7 @@ Therefore, we generally advise that the Web service be run in batch execution mo
 
 ### Does the trained model load faster if I use the cached results option
 
-Yes, but only when the experiment is run in Azure Machine Learning Studio, and only after the cache has been filled by the first run. After the experiment is deployed as web service, this flag is ignored by  web service execution.
+Yes, but only when the experiment is run in Azure Machine Learning Studio (classic), and only after the cache has been filled by the first run. After the experiment is deployed as web service, this flag is ignored by  web service execution.
 
 #### Is there a way to automate the process
 

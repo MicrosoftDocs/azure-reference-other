@@ -1,6 +1,6 @@
 ---
 title: "Multiclass Logistic Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -21,11 +21,11 @@ Category: [Machine Learning / Initialize Model / Classification](machine-learnin
 
 ## Module overview
 
-This article describes how to use the **Multiclass Logistic Regression** module in Azure Machine Learning Studio, to create a logistic regression model that can be used to predict multiple values.
+This article describes how to use the **Multiclass Logistic Regression** module in Azure Machine Learning Studio (classic), to create a logistic regression model that can be used to predict multiple values.
 
 Classification using logistic regression is a supervised learning method, and therefore requires a labeled dataset. You train the model by providing the model and the labeled dataset as an input to a module such as [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for new input examples.
 
-Azure Machine Learning Studio also provides a [Two-Class Logistic Regression](two-class-logistic-regression.md) module, which is suited for classification of binary or dichotomous variables.
+Azure Machine Learning Studio (classic) also provides a [Two-Class Logistic Regression](two-class-logistic-regression.md) module, which is suited for classification of binary or dichotomous variables.
 
 ### More about multiclass logistic regression
 

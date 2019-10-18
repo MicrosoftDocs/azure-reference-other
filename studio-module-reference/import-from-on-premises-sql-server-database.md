@@ -1,6 +1,6 @@
 ---
 title: "Import from On-Premises SQL Server Database | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # Import from On-Premises SQL Server Database
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import data from an on-premises SQL Server database into a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to import data from an on-premises SQL Server database into a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -27,7 +27,7 @@ After the gateway connection is established, you can then specify additional pro
 
 ## How to install a Microsoft Data Management Gateway
 
-To access an on-premises SQL Server database in Azure Machine Learning, you need to download and install the **Microsoft Data Management Gateway**, and then register the gateway in Machine Learning Studio.
+To access an on-premises SQL Server database in Azure Machine Learning, you need to download and install the **Microsoft Data Management Gateway**, and then register the gateway in Machine Learning Studio (classic).
 
 For details about installing and registering the gateway, see these articles:
 
@@ -37,7 +37,7 @@ For details about installing and registering the gateway, see these articles:
 
 ## How to import data from an on-premises SQL Server database
 
-After a Data Management Gateway has been installed on a computer where it can access your SQL Server database, and you have registered the gateway in Machine Learning Studio, you must configure the [Import Data](import-data.md) module.
+After a Data Management Gateway has been installed on a computer where it can access your SQL Server database, and you have registered the gateway in Machine Learning Studio (classic), you must configure the [Import Data](import-data.md) module.
 
 Before you start, disable your browser's pop-up blocker for the site, `studio.azureml.net`.
 

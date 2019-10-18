@@ -1,7 +1,7 @@
 ---
-title: Studio module error codes and messages
-titleSuffix: "Azure Machine Learning Studio"
-description: Module exceptions in Azure Machine Learning Studio using error codes and messages
+title: Studio (classic) module error codes and messages
+titleSuffix: "Azure Machine Learning Studio (classic)"
+description: Module exceptions in Azure Machine Learning Studio (classic) using error codes and messages
 ms.date: 04/10/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -14,7 +14,7 @@ manager: cgronlun
 ---
 # Troubleshoot module exceptions in Azure Machine Learning using error codes
 
-Learn about the error messages and exception codes you might encounter using  modules in Azure Machine Learning Studio. 
+Learn about the error messages and exception codes you might encounter using  modules in Azure Machine Learning Studio (classic). 
 
 To resolve the issue, look for the error in this article to read about common causes. There are two ways to get the full text of an error message in Studio:  
  
@@ -165,9 +165,9 @@ If the error message text is not helpful, send us information about the context 
 ## Error 0009  
  Exception occurs when the Azure storage account name or container name is specified incorrectly.  
   
-This error occurs in Azure Machine Learning Studio when you specify parameters for an Azure storage account, but the name or password cannot be resolved. Errors on passwords or account names can happen for many reasons:
+This error occurs in Azure Machine Learning Studio (classic) when you specify parameters for an Azure storage account, but the name or password cannot be resolved. Errors on passwords or account names can happen for many reasons:
  
- + The account is the wrong type. Some new account types are not supported for use with Machine Learning Studio. See [Import Data](../import-data.md) for details.
+ + The account is the wrong type. Some new account types are not supported for use with Machine Learning Studio (classic). See [Import Data](../import-data.md) for details.
  + You entered the incorrect account name
  + The account no longer exists
  + The password for the storage account is wrong or has changed
@@ -188,7 +188,7 @@ If the complete path to a blob was specified, verify that the path is specified 
 
 ### Resources
 
-See this article for an explanation of the different storage options that are supported: [Import data into Azure Machine Learning Studio from various online data sources with the Import Data module](https://docs.microsoft.com/azure/machine-learning/machine-learning-import-data-from-online-sources)
+See this article for an explanation of the different storage options that are supported: [Import data into Azure Machine Learning Studio (classic) from various online data sources with the Import Data module](https://docs.microsoft.com/azure/machine-learning/machine-learning-import-data-from-online-sources)
 
 ### Sample experiments
 
@@ -1130,7 +1130,7 @@ Another reason you might get this error if you try to use a column containing fl
   
 **Resolution:**
 
-1. In Azure Machine Learning Studio, right-click the module that has the error, and select **View Log**.
+1. In Azure Machine Learning Studio (classic), right-click the module that has the error, and select **View Log**.
 2. Examine the standard error log of the module, which contains the stack trace.
     + Lines beginning with [ModuleOutput] indicate output from R.
     + Messages from R marked as **warnings** typically do not cause the experiment to fail.

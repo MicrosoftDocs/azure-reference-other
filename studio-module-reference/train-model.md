@@ -1,6 +1,6 @@
 ---
 title: "Train Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview
  
-This article describes how to use the **Train Model** module in Azure Machine Learning Studio to train a classification or regression model. Training takes place after you have defined a model and set its parameters, and requires tagged data. You can also use **Train Model** to retrain an existing model with new data. 
+This article describes how to use the **Train Model** module in Azure Machine Learning Studio (classic) to train a classification or regression model. Training takes place after you have defined a model and set its parameters, and requires tagged data. You can also use **Train Model** to retrain an existing model with new data. 
 
 ### How the training process works
 
@@ -54,7 +54,7 @@ _Unsupervised learning_ indicates either that the outcome is unknown, or you cho
 
 ## How to use **Train Model**  
   
-1.  In Azure Machine Learning Studio, configure a [classification model](machine-learning-initialize-model-classification.md) or [regression model](machine-learning-initialize-model-regression.md) models.  
+1.  In Azure Machine Learning Studio (classic), configure a [classification model](machine-learning-initialize-model-classification.md) or [regression model](machine-learning-initialize-model-regression.md) models.  
 
     You can also train a custom model created by using [Create R Model](create-r-model.md).
     
