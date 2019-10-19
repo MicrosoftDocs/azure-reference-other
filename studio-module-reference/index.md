@@ -15,6 +15,8 @@ manager: cgronlun
 ---
 # Azure Machine Learning Studio (classic): algorithm and module help
 
+[!INCLUDE [aml-designer-notice](../includes/aml-studio-ui-notice.md)]
+
 Azure Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio?"](https://docs.microsoft.com/azure/machine-learning/studio/what-is-ml-studio) for more details.
 
 This documentation contains detailed technical and how-to information for the modules that are available in Machine Learning Studio (classic).
