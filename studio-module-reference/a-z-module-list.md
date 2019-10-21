@@ -13,7 +13,7 @@ ms.date: 05/06/2019
 
 This article provides an alphabetized list of the modules that are available in Azure Machine Learning Studio (classic).
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
 The modules cover a wide range of features and functions necessary for machine learning tasks:
 - Data conversion functions
