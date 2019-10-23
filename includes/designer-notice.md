@@ -11,5 +11,4 @@ ms.date: 11/04/2019
 ---
 
 > [!TIP]
->
-> We recommend that all **new customers** start with [Azure Machine Learning designer](https://docs.microsoft.com/azure/machine-learning/service/ui-concept-visual-interface) (preview) instead of Studio (classic). While both offer drag-n-drop modules to build your machine learning models, the designer provides scalability, version control, and enterprise security as well.
+> We recommend that all **new customers** start with [Azure Machine Learning designer](https://docs.microsoft.com/azure/machine-learning/service/ui-concept-visual-interface) (preview) instead of Studio (classic). While both offer drag-n-drop modules to build your machine learning models, only the designer provides scalability, version control, and enterprise security.
