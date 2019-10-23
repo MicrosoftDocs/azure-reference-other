@@ -19,7 +19,11 @@ ms.author: mamccrea
 # APPLY (Azure Stream Analytics)
   The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query. The table-valued function acts as the right input and the outer table expression acts as the left input. The right input is evaluated for each row from the left input and the rows produced are combined for the final output. The list of columns produced by the APPLY operator is the set of columns in the left input followed by the list of columns returned by the right input.  
   
- There are two forms of APPLY: CROSS APPLY and OUTER APPLY. CROSS APPLY returns only rows from the outer table that produce a result set from the table-valued function. OUTER APPLY returns both rows that produce a result set, and rows that do not, with NULL values in the columns produced by the table-valued function.  
+ There are two forms of APPLY: CROSS APPLY and OUTER APPLY. 
+ 
+CROSS APPLY returns only rows from the outer table that produce a result set from the table-valued function. The result of a CROSS APPLY cannot be used as the target value of the [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md). However, you can use one Azure Stream Analytics job that performs the CROSS APPLY, and use a second job to perform the TIMESTAMP BY.
+
+OUTER APPLY returns both rows that produce a result set, and rows that do not, with NULL values in the columns produced by the table-valued function.  
   
  There are two table-valued functions available in Azure Stream Analytics to facilitate working with Array and Record type fields. They are [GetArrayElements](getarrayelements-azure-stream-analytics.md) and [GetRecordProperties](getrecordproperties-azure-stream-analytics.md).  
   
