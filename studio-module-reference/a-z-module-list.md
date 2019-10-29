@@ -1,7 +1,7 @@
 ---
 title: "A-Z list of Machine Learning Studio modules | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-description: "Review an A-Z list of modules that are available in Machine Learning Studio."
+description: "Review an A-Z list of modules that you drag-and-drop to create machine learning experiments in Azure Machine Learning Studio."
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
