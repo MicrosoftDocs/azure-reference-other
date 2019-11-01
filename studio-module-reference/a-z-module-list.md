@@ -7,7 +7,7 @@ ms.subservice: "studio"
 ms.topic: "reference"
 author: xiaoharper
 ms.author: amlstudiodocs 
-ms.date: 05/06/2019
+ms.date: 11/04/2019
 ---
 # A-Z list of Machine Learning Studio (classic) modules
 

@@ -59,6 +59,8 @@ TIMESTAMP BY OVER clause has the following limitations of usage:
 2.	If input stream has more than one partition, OVER clause must be used together with PARTITION BY clause. The PartitionId column must be specified as part of TIMESTAMP BY OVER columns.
 
 3.	If TIMESTAMP BY OVER \<over spec> clause is used, column names from the clause must be used as grouping key in GROUP BY statements and in all JOIN predicates when joining between streams.
+
+4. The result of a [CROSS APPLY](apply-azure-stream-analytics.md) cannot be used as the target value of the TIMESTAMP BY. However, you can use one Azure Stream Analytics job that performs the CROSS APPLY, and use a second job to perform the TIMESTAMP BY.
   
 ## Examples  
  **Example 1 – Access a timestamp field from the payload**  
