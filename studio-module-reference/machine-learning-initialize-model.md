@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - Initialize Model | Microsoft Docs"
-description: "Learn about the modules you can use in Azure Machine Learning Studio to define a machine learning model and set its parameters."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Learn about the modules you can use in Azure Machine Learning Studio (classic) to define a machine learning model and set its parameters."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,15 +13,15 @@ manager: cgronlun
 ---
 # Machine Learning - Initialize Model
 
-This article describes the modules in Azure Machine Learning Studio that you can use to define a machine learning model and set its parameters. 
+This article describes the modules in Azure Machine Learning Studio (classic) that you can use to define a machine learning model and set its parameters. 
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 You can think of the *untrained model* as a specification that you can apply to different input datasets. You might apply the same model specification to different data and get different results. Or, you can use the specification to retrain a model. You can then add new data.
 
-This article also describes the overall process of creating, training, evaluating, and scoring a model in Machine Learning Studio.
+This article also describes the overall process of creating, training, evaluating, and scoring a model in Machine Learning Studio (classic).
 
-## Create and use machine learning models in Machine Learning Studio
+## Create and use machine learning models in Machine Learning Studio (classic)
 
 The typical workflow for machine learning includes these phases:
 
@@ -30,7 +30,7 @@ The typical workflow for machine learning includes these phases:
 - Create predictions by using new data based on the patterns in the model.
 - Evaluate the model to determine whether the predictions are accurate, the amount of error, and whether overfitting occurs.
 
-Machine Learning Studio supports a flexible, customizable framework for machine learning. Each task in this process is performed by a specific type of module. Modules can be modified, added, or removed without breaking the rest of your experiment.
+Machine Learning Studio (classic) supports a flexible, customizable framework for machine learning. Each task in this process is performed by a specific type of module. Modules can be modified, added, or removed without breaking the rest of your experiment.
 
 Use the modules in this category to select an initial algorithm. Then, configure detailed parameters based on the specific model type. You can then apply this model specification to a set of data.
 
@@ -42,7 +42,7 @@ Azure Machine Learning provides many state-of-the art machine learning algorithm
 
     Algorithms are grouped by specific types of predictive tasks. Examples include regression, classification, and image recognition. Your first task is to identify the general category of machine learning task to perform, and then to select an algorithm. If you need help selecting an algorithm, see these resources:
  
-    - [Machine learning algorithm cheat sheet for Machine Learning Studio](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-cheat-sheet/)
+    - [Machine learning algorithm cheat sheet for Machine Learning Studio (classic)](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-cheat-sheet/)
  
     - [Choose Azure Machine Learning algorithms for clustering, classification, or regression](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/)
  

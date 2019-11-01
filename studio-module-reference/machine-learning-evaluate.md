@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - Evaluate | Microsoft Docs"
-description: "Learn about the Azure Machine Learning Studio modules that you can use to evaluate a machine learning model."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use to evaluate a machine learning model."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,13 +13,13 @@ manager: cgronlun
 ---
 # Machine Learning - Evaluate
 
-This article describes the modules in Azure Machine Learning Studio that you can use to evaluate a machine learning model. _Model evaluation_ is performed after training is complete, to measure the accuracy of the predictions and assess model fit.
+This article describes the modules in Azure Machine Learning Studio (classic) that you can use to evaluate a machine learning model. _Model evaluation_ is performed after training is complete, to measure the accuracy of the predictions and assess model fit.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-This article also describes the overall process in Machine Learning Studio for model creation, training, evaluation, and scoring.
+This article also describes the overall process in Machine Learning Studio (classic) for model creation, training, evaluation, and scoring.
 
-## Create and use machine learning models in Machine Learning Studio
+## Create and use machine learning models in Machine Learning Studio (classic)
 
 The typical workflow for machine learning includes these phases:
 
@@ -28,7 +28,7 @@ The typical workflow for machine learning includes these phases:
 3. Create predictions by using new data that's based on the patterns in the model.
 4. Evaluate the model to determine whether the predictions are accurate, the amount of error, and whether overfitting occurs.
 
-Machine Learning Studio supports a flexible, customizable framework for machine learning. Each task in this process is performed by a specific type of module. The module can be modified, added, or removed without breaking the rest of your experiment.
+Machine Learning Studio (classic) supports a flexible, customizable framework for machine learning. Each task in this process is performed by a specific type of module. The module can be modified, added, or removed without breaking the rest of your experiment.
 
 Use the modules in this category to evaluate an existing model. Model evaluation typically requires some kind of result dataset. If you don't have an evaluation dataset, you can generate results by scoring. You can also use a test dataset, or some other set of data that contains "ground truth" or known expected results.
 
@@ -39,7 +39,7 @@ In general, when evaluating a model, your options depend on the type of model yo
 - [Evaluate Model](evaluate-model.md)
 - [Cross-Validate Model ](cross-validate-model.md)
 
-Machine Learning Studio also provides a variety of visualizations, depending on the type of model you're using, and how many classes your model is predicting. For help finding these visualizations, see [View evaluation metrics](#bkmk_ViewMetrics).
+Machine Learning Studio (classic) also provides a variety of visualizations, depending on the type of model you're using, and how many classes your model is predicting. For help finding these visualizations, see [View evaluation metrics](#bkmk_ViewMetrics).
 
 Interpreting these statistics often requires a greater understanding of the particular algorithm on which the model was trained. For a good explanation of how to evaluate a model, and how to interpret the values that are returned for each measure, see [How to evaluate model performance in Azure Machine Learning](https://azure.microsoft.com/documentation/articles/machine-learning-evaluate-model-performance).
 
@@ -78,7 +78,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### <a name="bkmk_ViewMetrics"></a>View evaluation metrics
 
-Learn where to look in Machine Learning Studio to find the metric charts for each model type.
+Learn where to look in Machine Learning Studio (classic) to find the metric charts for each model type.
 
 #### Two-class classification models
 
@@ -132,7 +132,7 @@ The following regression models generate a table of default metrics, along with 
 
 ### Tips for working with the data
 
-To extract the numbers without copying and pasting from the Machine Learning Studio UI, you can use the new [PowerShell library for Azure Machine Learning](https://github.com/hning86/azuremlps). You can get metadata and other information for an entire experiment, or from individual modules.
+To extract the numbers without copying and pasting from the Machine Learning Studio (classic) UI, you can use the new [PowerShell library for Azure Machine Learning](https://github.com/hning86/azuremlps). You can get metadata and other information for an entire experiment, or from individual modules.
 
 To extract values from an **Evaluate Model** module, you must add a unique comment to the module, for easier identification. Then, use the **Download-AmlExperimentNodeOutput** cmdlet to get the metrics and their values from the visualization in JSON format.
 

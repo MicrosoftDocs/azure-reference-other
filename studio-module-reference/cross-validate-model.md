@@ -1,6 +1,6 @@
 ---
 title: "Cross-Validate Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Cross-Validate Model** module in Azure Machine Learning Studio. *Cross-validation* is an important technique often used in machine learning to assess both the variability of a dataset and the reliability of any model trained using that data.  
+This article describes how to use the **Cross-Validate Model** module in Azure Machine Learning Studio (classic). *Cross-validation* is an important technique often used in machine learning to assess both the variability of a dataset and the reliability of any model trained using that data.  
   
 The **Cross-Validate Model** module takes as input a labeled dataset, together with an untrained classification or regression model. It divides the dataset into some number of subsets (*folds*), builds a model on each fold, and then returns a set of accuracy statistics for each fold. By comparing the accuracy statistics for all the folds, you can interpret the quality of the data set and understand whether the model is susceptible to variations in the data.  
   
@@ -67,7 +67,7 @@ Cross-validation can take a long time to run if you use a lot of data.  Therefor
 
 In this scenario, you both train and test the model using **Cross Validate Model**.
 
-1. Add the **Cross Validate Model** module to your experiment. You can find it in Azure Machine Learning Studio, in the **Machine Learning** category, under **Evaluate**. 
+1. Add the **Cross Validate Model** module to your experiment. You can find it in Azure Machine Learning Studio (classic), in the **Machine Learning** category, under **Evaluate**. 
 
 2. Connect the output of any [classification](machine-learning-initialize-model-classification.md) or [regression](machine-learning-initialize-model-regression.md) model. 
 
@@ -98,7 +98,7 @@ In this scenario, you use [Tune Model Hyperparameters](tune-model-hyperparameter
 
 3. Attach the classification or regression model to the **Untrained model** input of [Tune Model Hyperparameters](tune-model-hyperparameters.md).
 
-4. Add the **Cross Validate Model** module to your experiment. You can find it in Azure Machine Learning Studio, in the **Machine Learning** category, under **Evaluate**. 
+4. Add the **Cross Validate Model** module to your experiment. You can find it in Azure Machine Learning Studio (classic), in the **Machine Learning** category, under **Evaluate**. 
 
 5. Locate the **Trained best model** output of **Tune Model Hyperparameters**, and connect it to the **Untrained model** input of **Cross Validate Model**.
 

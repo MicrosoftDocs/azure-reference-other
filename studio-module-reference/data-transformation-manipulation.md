@@ -1,7 +1,7 @@
 ---
 title: "Data Transformation - Manipulation | Microsoft Docs"
-description: "Learn about the Azure Machine Learning Studio modules that you can use for basic data manipulation."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use for basic data manipulation."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,18 +13,18 @@ manager: cgronlun
 ---
 # Data Transformation - Manipulation
 
-This article describes the modules in Azure Machine Learning Studio that you can use for basic data manipulation.
+This article describes the modules in Azure Machine Learning Studio (classic) that you can use for basic data manipulation.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-Machine Learning Studio supports tasks that are specific to machine learning, such as normalization or feature selection. The modules in this category are intended for more general tasks.
+Machine Learning Studio (classic) supports tasks that are specific to machine learning, such as normalization or feature selection. The modules in this category are intended for more general tasks.
 
 > [!TIP]
 > You can use Azure Machine Learning Workbench to perform more sophisticated data cleanup and preparations tasks by using "learn by example" functions. For examples, see Microsoft Machine Learning team blog post [Data transformations “by example” in Machine Learning Workbench](https://blogs.technet.microsoft.com/machinelearning/2017/09/25/by-example-transformations-in-the-azure-machine-learning-workbench/).
    
 ## Data manipulation tasks
  
-The modules in this category are intended to support core data management tasks that might need to be performed in Machine Learning Studio. The following tasks are examples of core data management tasks:
+The modules in this category are intended to support core data management tasks that might need to be performed in Machine Learning Studio (classic). The following tasks are examples of core data management tasks:
 -   Combine two datasets, either by using joins, or by merging columns or rows.
 -   Create new categories to use in grouping data.
 -   Modify column headings, change column data types, or flag columns as features or labels.

@@ -1,6 +1,6 @@
 ---
 title: "Export to Azure Blob Storage | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Export to Azure Blob Storage
 
-This article describes how to use the **Export to Azure Blob Storage** option, in the [Export Data](export-data.md) module in Azure Machine Learning Studio. 
+This article describes how to use the **Export to Azure Blob Storage** option, in the [Export Data](export-data.md) module in Azure Machine Learning Studio (classic). 
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

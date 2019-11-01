@@ -1,6 +1,6 @@
 ---
 title: "Build Count Table (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 ## Module overview
 
-This article describes how to use the **Build Count Table** module in Azure Machine Learning Studio, to analyze training data and create a *count table*, which contains the joint distribution of all feature columns given a specified label column.
+This article describes how to use the **Build Count Table** module in Azure Machine Learning Studio (classic), to analyze training data and create a *count table*, which contains the joint distribution of all feature columns given a specified label column.
 
 The table of counts is used as an input to the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module. From the count-based information, the **Count Featurizer** module creates a new set of features, which is more compact than the original training data, but which captures all the most useful information.
 

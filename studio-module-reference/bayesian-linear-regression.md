@@ -1,6 +1,6 @@
 ---
 title: "Bayesian Linear Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -21,7 +21,7 @@ Category: [Machine Learning / Initialize Model / Regression](machine-learning-in
 
 ## Module overview  
  
-This article describes how to use the **Bayesian Linear Regression** module in Azure Machine Learning Studio, to define a regression model based on Bayesian statistics.  
+This article describes how to use the **Bayesian Linear Regression** module in Azure Machine Learning Studio (classic), to define a regression model based on Bayesian statistics.  
   
 After you have defined the model parameters, you must train the model using a tagged dataset and the [Train Model](train-model.md) module.  The trained model can then be used to make predictions. Alternatively, the untrained model can be passed to [Cross-Validate Model](cross-validate-model.md) for cross-validation against a labeled data set.
   

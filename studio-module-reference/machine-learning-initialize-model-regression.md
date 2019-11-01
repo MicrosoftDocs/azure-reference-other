@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - Initialize Model - Regression | Microsoft Docs"
-description: Description of the modules in Azure Machine Learning Studio that support creation of regression models.
-titleSuffix: "Azure Machine Learning Studio"
+description: Description of the modules in Azure Machine Learning Studio (classic) that support creation of regression models.
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # Machine Learning - Initialize Model - Regression
 
-This article describes the modules in Azure Machine Learning Studio that support creation of regression models.
+This article describes the modules in Azure Machine Learning Studio (classic) that support creation of regression models.
 
 
 
@@ -25,7 +25,7 @@ Regression is a methodology used widely in fields ranging from engineering to ed
 
 Regression tasks are supported in many tools: for example, Excel provides "What If" analysis, forecasting over time, and the Analysis ToolPak for traditional regression.
 
-The modules for regression in Machine Learning Studio each incorporate a different method, or algorithm, for regression. In general, a regression algorithm tries to learn the value of a function for a particular instance of data. You might predict someone's height by using a height function, or predict the probability of hospital admission based on medical test values.
+The modules for regression in Machine Learning Studio (classic) each incorporate a different method, or algorithm, for regression. In general, a regression algorithm tries to learn the value of a function for a particular instance of data. You might predict someone's height by using a height function, or predict the probability of hospital admission based on medical test values.
 
 Regression algorithms can incorporate input from multiple features, by determining the contribution of each feature of the data to the regression function.
 

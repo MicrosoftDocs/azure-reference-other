@@ -1,6 +1,6 @@
 ---
 title: "Remove Duplicate Rows | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Remove Duplicate Rows** module in Azure Machine Learning Studio, to remove potential duplicates from a dataset.
+This article describes how to use the **Remove Duplicate Rows** module in Azure Machine Learning Studio (classic), to remove potential duplicates from a dataset.
 
 For example, assume your data looks like the following, and represents multiple records for patients. 
 

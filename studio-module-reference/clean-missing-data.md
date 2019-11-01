@@ -1,6 +1,6 @@
 ---
 title: "Clean Missing Data | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
   
 ## Module overview  
 
-This article describes how to use the [Clean Missing Data](clean-missing-data.md) module in Azure Machine Learning Studio, to remove, replace, or infer missing values. 
+This article describes how to use the [Clean Missing Data](clean-missing-data.md) module in Azure Machine Learning Studio (classic), to remove, replace, or infer missing values. 
 
 Data scientists often check data for missing values and then perform various operations to fix the data or insert new values. The goal of such cleaning operations is to prevent problems caused by missing data that can arise when training a model. 
 

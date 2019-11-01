@@ -1,6 +1,6 @@
 ---
 title: "Apply Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ Category: [Data Transformation / Filter](data-transformation-filter.md)
   
 ##  Module overview  
 
-This article descries how to use the **Apply Filter** module in Azure Machine Learning Studio, to transform a column of values by applying a previously defined filter. Filters are used in digital signal processing to reduce noise or highlight a pattern. Thus, the values that you transform are always numeric, and typically represent some kind of audio or visual signal.  
+This article descries how to use the **Apply Filter** module in Azure Machine Learning Studio (classic), to transform a column of values by applying a previously defined filter. Filters are used in digital signal processing to reduce noise or highlight a pattern. Thus, the values that you transform are always numeric, and typically represent some kind of audio or visual signal.  
 
 > [!TIP]
 > Are you looking for a different type of filter? Studio provides these modules for sampling data, getting a subset of data, removing bad values, or creating test and training sets: [Split Data](split-data.md), [Clean Missing Data](clean-missing-data.md), [Partition and Sample](partition-and-sample.md), [Apply SQL Transformation](apply-sql-transformation.md), [Clip Values](clip-values.md).  If you need to filter data as you read it from a source, see [Import Data](import-data.md). The options depend on the source type. 

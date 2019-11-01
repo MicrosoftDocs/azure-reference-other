@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - Train | Microsoft Docs"
-description: This article describes the modules provided in Azure Machine Learning Studio for training a machine learning model.
-titleSuffix: "Azure Machine Learning Studio"
+description: This article describes the modules provided in Azure Machine Learning Studio (classic) for training a machine learning model.
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,11 +13,11 @@ manager: cgronlun
 ---
 # Machine Learning - Train
 
-This article describes the modules provided in Azure Machine Learning Studio for training a machine learning model. _Training_ is the process of analyzing input data by using the parameters of a predefined model. From this analysis, the model learns the patterns, and saves them in the form of a trained model.
+This article describes the modules provided in Azure Machine Learning Studio (classic) for training a machine learning model. _Training_ is the process of analyzing input data by using the parameters of a predefined model. From this analysis, the model learns the patterns, and saves them in the form of a trained model.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-This article also describes the overall process in Machine Learning Studio for model creation, training, evaluation, and scoring.
+This article also describes the overall process in Machine Learning Studio (classic) for model creation, training, evaluation, and scoring.
 
 ## Create and use machine learning models
 
@@ -28,7 +28,7 @@ The typical workflow for machine learning includes these phases:
 - Creating predictions by using new data, based on the patterns in the model.
 - Evaluating the model to determine if the predictions are accurate, how much error there is, and if there is any overfitting.
 
-Machine Learning Studio supports a flexible, customizable framework for machine learning. Each task in this process is performed by a specific type of module, which can be modified, added, or removed, without breaking the rest of your experiment. 
+Machine Learning Studio (classic) supports a flexible, customizable framework for machine learning. Each task in this process is performed by a specific type of module, which can be modified, added, or removed, without breaking the rest of your experiment. 
 
 The modules in this category support training for different types of models. During training, the data is analyzed by the machine learning algorithm. This algorithm analyzes the distribution and type of the data, compiles statistics, and creates patterns that can be used later for prediction.
 

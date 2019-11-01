@@ -1,6 +1,6 @@
 ---
 title: "Unpack Zipped Datasets | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview
 
-This article describes how to use the **Unpack Zipped Datasets** module in Azure Machine Learning Studio, to upload data and script files in compressed format, and then unzip them for use in an experiment.
+This article describes how to use the **Unpack Zipped Datasets** module in Azure Machine Learning Studio (classic), to upload data and script files in compressed format, and then unzip them for use in an experiment.
 
 The purpose of this module is to reduce data transfer times when working with very large datasets by saving and uploading your data files in a compressed format. Generally, zipping files is a good option when your dataset is so large that you want to use compression for the upload, to minimize upload time and associated costs.
 
@@ -27,7 +27,7 @@ The module takes as input a dataset in your workspace. The dataset must have bee
 
 ## How to use Unpack Zipped Datasets
 
-This section describes how to prepare your data and then unzip it in Azure Machine Learning Studio. 
+This section describes how to prepare your data and then unzip it in Azure Machine Learning Studio (classic). 
 
 ### Step 1. Prepare files
 
@@ -55,7 +55,7 @@ Next, upload the zipped dataset to your experiment workspace.
 
 After the dataset has uploaded completely, add it to your experiment in zipped format.
 
-1. In the left-hand navigation pane of Azure Machine Learning Studio, select **Saved Datasets**, and then expand **My Datasets**. 
+1. In the left-hand navigation pane of Azure Machine Learning Studio (classic), select **Saved Datasets**, and then expand **My Datasets**. 
 
 2. Locate the zipped dataset that you just uploaded, and drag it to the experiment canvas.
 

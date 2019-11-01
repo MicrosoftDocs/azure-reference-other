@@ -1,6 +1,6 @@
 ---
 title: "Group Data into Bins | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Scale and Reduce](data-transformation-scale-and-reduce.md)
 
 ## Module overview
 
-This article describes how to use the [Group Data into Bins](group-data-into-bins.md) module in Azure Machine Learning Studio, to group numbers or change the distribution of continuous data.
+This article describes how to use the [Group Data into Bins](group-data-into-bins.md) module in Azure Machine Learning Studio (classic), to group numbers or change the distribution of continuous data.
 
 The [Group Data into Bins](group-data-into-bins.md) module supports multiple options for binning data. You can customize how the bin edges are set and how values are apportioned into the bins. For example, you can:  
 

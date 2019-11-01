@@ -1,6 +1,6 @@
 ---
 title: "Create R Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -23,7 +23,7 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
 
 ## Module overview
 
-This article describes how to use the **Create R Model** module in Azure Machine Learning Studio, to create an untrained model from an R script. 
+This article describes how to use the **Create R Model** module in Azure Machine Learning Studio (classic), to create an untrained model from an R script. 
 
 You can base the model on any learner that is included in an R package in the Azure Machine Learning environment. 
 

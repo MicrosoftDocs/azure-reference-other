@@ -1,7 +1,7 @@
 ---
 title: "Deprecated modules and features | Microsoft Docs"
-description: "Review deprecated modules and functionality in Azure Machine Learning Studio."
-titleSuffix: "Azure Machine Learning Studio"
+description: "Review deprecated modules and functionality in Azure Machine Learning Studio (classic)."
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,11 +13,11 @@ manager: cgronlun
 ---
 # Deprecated modules and functionality
 
-This article lists Azure Machine Learning Studio modules and functionality that have been deprecated.
+This article lists Azure Machine Learning Studio (classic) modules and functionality that have been deprecated.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-To maintain backward compatibility with earlier versions of Machine Learning Studio, some functionality, including machine learning algorithms and data processing modules, remain available to support existing experiments. Deprecated modules and functionality aren't available to use when you create new experiments.
+To maintain backward compatibility with earlier versions of Machine Learning Studio (classic), some functionality, including machine learning algorithms and data processing modules, remain available to support existing experiments. Deprecated modules and functionality aren't available to use when you create new experiments.
  
 We recommend that you modify your experiments to use the newer modules as soon as possible. The newer modules provide all the functionality of the deprecated module, in addition to some improvements.
  

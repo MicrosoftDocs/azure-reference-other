@@ -1,19 +1,19 @@
 ---
-title: "A-Z list of Machine Learning Studio modules | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
-description: "Review an A-Z list of modules that you can drag-and-drop to create machine learning experiments in Azure Machine Learning Studio."
+title: "A-Z list of Machine Learning Studio (classic) modules | Microsoft Docs"
+titleSuffix: "Azure Machine Learning Studio (classic)"
+description: "Review an A-Z list of modules that are available in Machine Learning Studio (classic)."
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 author: xiaoharper
 ms.author: amlstudiodocs 
-ms.date: 05/06/2019
+ms.date: 11/04/2019
 ---
-# A-Z list of Machine Learning Studio modules
+# A-Z list of Machine Learning Studio (classic) modules
 
-This article provides an alphabetized list of the modules that are available in Azure Machine Learning Studio.
+This article provides an alphabetized list of the modules that are available in Azure Machine Learning Studio (classic).
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
 The modules cover a wide range of features and functions necessary for machine learning tasks:
 - Data conversion functions

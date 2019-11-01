@@ -1,6 +1,6 @@
 ---
 title: "Apply Quantization Function (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview
 
-This article describes how to use the **Apply Quantization Function** module in Azure Machine Learning Studio, to group data into bins.
+This article describes how to use the **Apply Quantization Function** module in Azure Machine Learning Studio (classic), to group data into bins.
 
 > [!WARNING]
 >  This module is provided for backward compatibility with experiments created using the pre-release version of Azure Machine Learning, and has been deprecated. It is provided for support of older experiments only. We recommend that you modify your experiments to use [Group Data into Bins](group-data-into-bins.md).  

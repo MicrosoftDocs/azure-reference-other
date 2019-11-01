@@ -1,7 +1,7 @@
 ---
 title: "Data Format Conversions | Microsoft Docs"
 description: "Learn about the modules you can use for data format conversion in Azure Machine Learning."
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -15,7 +15,7 @@ manager: cgronlun
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-This article lists the modules provided in Azure Machine Learning Studio for converting data among various file formats used in machine learning. 
+This article lists the modules provided in Azure Machine Learning Studio (classic) for converting data among various file formats used in machine learning. 
 
 The supported formats include:
 
@@ -49,7 +49,7 @@ If you need to import data into Azure Machine Learning or transform data in indi
 
 |Task| Use this|
 |----|----|   
-|Import data from my computer into Azure Machine Learning.|Upload datasets in CSV format as described in [Import your training data into Azure Machine Learning Studio](import-data.md).|
+|Import data from my computer into Azure Machine Learning.|Upload datasets in CSV format as described in [Import your training data into Azure Machine Learning Studio (classic)](import-data.md).|
 |Import data from a cloud data source, including Hadoop or Azure.|Use the [Import Data](import-data.md) module.|
 |Save machine learning datasets to Azure Blob storage, a Hadoop cluster, or other cloud-based storage.|Use the [Export Data](export-data.md) module.|
 |Change the data type of columns or cast columns to a different format or type.|In Azure Machine Learning, use the [Edit Metadata](edit-metadata.md) or [Apply SQL Transformation](apply-sql-transformation.md) modules. If you are proficient with R or Python, try the [Execute Python Script](execute-python-script.md) or [Execute R Script](execute-r-script.md) modules.|

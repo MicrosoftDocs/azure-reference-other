@@ -1,4 +1,4 @@
-# [Machine Learning Studio Module Reference](index.md)
+# [Machine Learning Studio (classic) Module Reference](index.md)
 # [A-Z Module List](a-z-module-list.md)
 # [Module Categories and Descriptions](machine-learning-module-descriptions.md)
 ## [Data Format Conversions](data-format-conversions.md)

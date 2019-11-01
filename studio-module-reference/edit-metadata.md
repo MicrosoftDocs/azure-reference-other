@@ -1,6 +1,6 @@
 ---
 title: "Edit Metadata | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the [Edit Metadata](edit-metadata.md) module in Azure Machine Learning Studio to change metadata that is associated with columns in a dataset. The values and the data types in the dataset are not actually altered; what changes is the metadata inside Azure Machine Learning that tells downstream components how to use the column.
+This article describes how to use the [Edit Metadata](edit-metadata.md) module in Azure Machine Learning Studio (classic) to change metadata that is associated with columns in a dataset. The values and the data types in the dataset are not actually altered; what changes is the metadata inside Azure Machine Learning that tells downstream components how to use the column.
 
 Typical metadata changes might include:
   
@@ -39,7 +39,7 @@ Typical metadata changes might include:
   
 ##  How to configure Edit Metadata
   
-1.  In Azure Machine Learning Studio, add [Edit Metadata](edit-metadata.md) module to your experiment and connect the dataset you want to update. You can find it under **Data Transformation**, in the **Manipulate** category.
+1.  In Azure Machine Learning Studio (classic), add [Edit Metadata](edit-metadata.md) module to your experiment and connect the dataset you want to update. You can find it under **Data Transformation**, in the **Manipulate** category.
   
 2.  Click **Launch the column selector** and choose the column or set of columns to work with. You can choose columns individually, by name or index, or you can choose a group of columns, by type.  
 
