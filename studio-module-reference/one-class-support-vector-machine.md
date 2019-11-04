@@ -1,6 +1,6 @@
 ---
 title: "One-Class Support Vector Machine | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

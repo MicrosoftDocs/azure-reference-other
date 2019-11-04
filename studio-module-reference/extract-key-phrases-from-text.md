@@ -1,6 +1,6 @@
 ---
 title: "Extract Key Phrases from Text | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
 
 ## Module overview
 
-This article explains how to use the **Extract Key Phrases from Text** module in Azure Machine Learning Studio, to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.
+This article explains how to use the **Extract Key Phrases from Text** module in Azure Machine Learning Studio (classic), to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.
  
 This module is a wrapper for natural language processing APIs for key-phrase extraction. The phrases are analyzed as potentially meaningful in the context of the sentence for various reasons:
 
@@ -38,7 +38,7 @@ The **Extract Key Phrases from Text** module might return these key phrases:
 
 To extract key phrases, you must connect a dataset that has a column of text.  
   
-1. Add the **Extract Key Phrases from Text** module to your experiment in Azure Machine Learning Studio. Then, connect a dataset that has at least one full-text column.  
+1. Add the **Extract Key Phrases from Text** module to your experiment in Azure Machine Learning Studio (classic). Then, connect a dataset that has at least one full-text column.  
   
 2. Use the Column Selector to select a column of type string, from which to extract key phrases.
 

@@ -1,6 +1,6 @@
 ---
 title: "Export to Azure Table | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Export to Azure Table
 
-This article describes how to use the **Export to Azure** option in the [Export Data](export-data.md) module in Azure Machine Learning Studio.
+This article describes how to use the **Export to Azure** option in the [Export Data](export-data.md) module in Azure Machine Learning Studio (classic).
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

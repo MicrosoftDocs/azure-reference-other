@@ -1,6 +1,6 @@
 ---
 title: "Poisson Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Machine Learning / Initialize Model / Regression](machine-learning-in
 
 ## Module overview
 
-This article describes how to use the **Poisson Regression** module in Azure Machine Learning Studio to create a Poisson regression model.
+This article describes how to use the **Poisson Regression** module in Azure Machine Learning Studio (classic) to create a Poisson regression model.
 
 Poisson regression is intended for use in regression models that are used to predict numeric values, typically counts. Therefore, you should use this module to create your regression model only if the values you are trying to predict fit the following conditions:
 

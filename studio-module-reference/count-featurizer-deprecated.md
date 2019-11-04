@@ -1,6 +1,6 @@
 ---
 title: "Count Featurizer (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 ## Module overview
 
-This article describes how to use the **Count Featurizer** module in Azure Machine Learning Studio, to create features from a previously generated count table.
+This article describes how to use the **Count Featurizer** module in Azure Machine Learning Studio (classic), to create features from a previously generated count table.
 
 Creating features from counts is an efficient way of summarizing useful information about the distribution of data and labels in a set of training data. This method of creating features from raw data is particularly useful in large data sets with high-cardinality features.  For example, in fraud detection, count tables can be used to collect information about the user ID, product and transaction and all the possible combinations over terabytes of data.  Count tables can also be useful in improving accuracy on small data sets.
 
@@ -43,7 +43,7 @@ If you have existing count-based features or data that you want to use in a new 
 > [!IMPORTANT]
 > This module has been replaced with the [Build Counting Transform](build-counting-transform.md). These instructions are provided only for customers who have existing experiments that use the older, deprecated modules.
 
-1. In Azure Machine Learning Studio, create a table of counts using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.
+1. In Azure Machine Learning Studio (classic), create a table of counts using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.
 
 2. Connect the output of the [Build Count Table (deprecated)](build-count-table-deprecated.md) module to the leftmost input port of **Count Featurizer**.
 

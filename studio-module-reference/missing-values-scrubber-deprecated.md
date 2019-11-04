@@ -1,6 +1,6 @@
 ---
 title: "Missing Values Scrubber (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,10 +20,10 @@ Category: [Deprecated Modules and Features](deprecated-modules-and-features.md)
 
 ## Module overview
 
-This article describes how to use the **Missing Values Scrubber** module in Azure Machine Learning Studio, to handle missing values. 
+This article describes how to use the **Missing Values Scrubber** module in Azure Machine Learning Studio (classic), to handle missing values. 
 
 > [!WARNING]
-> This module is provided only for backward compatibility with experiments created using the pre-release version of Azure Machine Learning Studio, and will soon be deprecated. We recommend that you modify your experiments to use [Clean Missing Data](clean-missing-data.md) instead.
+> This module is provided only for backward compatibility with experiments created using the pre-release version of Azure Machine Learning Studio (classic), and will soon be deprecated. We recommend that you modify your experiments to use [Clean Missing Data](clean-missing-data.md) instead.
 
 The module takes a dataset as input, and returns a dataset in which missing values have been replaced using the method you specify.
 

@@ -1,6 +1,6 @@
 ---
 title: "Modify Count Table Parameters | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 ## Module overview
 
-This article describes how to use the **Modify Count Table Parameters** module in Azure Machine Learning Studio, to change the way that features are generated from a count table.
+This article describes how to use the **Modify Count Table Parameters** module in Azure Machine Learning Studio (classic), to change the way that features are generated from a count table.
 
 In general, to create count-based features, you use [Build Counting Transform](build-counting-transform.md) to process a dataset and create a count table, and from that count table generate a new set of features. 
 

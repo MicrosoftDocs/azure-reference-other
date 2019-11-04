@@ -1,6 +1,6 @@
 ---
 title: "Time Series Anomaly Detection | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ manager: cgronlun
   
 ## Module overview  
  
-This article describes how to use the **Time Series Anomaly Detection** module in Azure Machine Learning Studio, to detect anomalies in time series data. The module learns the normal operating characteristics of a time series that you provide as input, and uses that information to detect deviations from the normal pattern. The module can detect both changes in the overall trend, and changes in the magnitude or range of values.  
+This article describes how to use the **Time Series Anomaly Detection** module in Azure Machine Learning Studio (classic), to detect anomalies in time series data. The module learns the normal operating characteristics of a time series that you provide as input, and uses that information to detect deviations from the normal pattern. The module can detect both changes in the overall trend, and changes in the magnitude or range of values.  
 
 Detecting changes in time series data has wide applications. For example, you could use it for near-real-time  monitoring of sensors, networks, or resource usage. By tracking service errors, service usage, and other KPIs, you can respond quickly to critical anomalies. Other applications include health care and finance.  
 ### Anomaly detection methods  

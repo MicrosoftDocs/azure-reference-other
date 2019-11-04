@@ -1,6 +1,6 @@
 ---
 title: "Quantize (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Deprecated Modules and Features](deprecated-modules-and-features.md)
 
 ## Quantize Module Overview  
 
-This article describes how to use the **Quantize** module in Azure Machine Learning Studio, to bin numbers.
+This article describes how to use the **Quantize** module in Azure Machine Learning Studio (classic), to bin numbers.
 
 > [!WARNING]
 > This module is provided only for backward compatibility with experiments created using the pre-release version of Azure Machine Learning, and has been deprecated. We recommend that you modify your experiments to use the new module, [Group Data into Bins](group-data-into-bins.md).

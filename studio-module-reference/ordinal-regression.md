@@ -1,6 +1,6 @@
 ---
 title: "Ordinal Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Machine Learning / Initialize Model / Regression](machine-learning-in
 
 ## Module overview
 
-This article describes how to use the **Ordinal Regression** module in Azure Machine Learning Studio, to create a regression model that can be used to predict ranked values. 
+This article describes how to use the **Ordinal Regression** module in Azure Machine Learning Studio (classic), to create a regression model that can be used to predict ranked values. 
 
 Some examples of ranked values:
 

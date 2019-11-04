@@ -6,7 +6,7 @@
     tocHref: /azure/machine-learning/
     topicHref: /azure/machine-learning/
     items:
-    - name: Studio
+    - name: Studio (classic)
       tocHref: /azure/machine-learning/studio
       topicHref: /azure/machine-learning/studio/
       items:

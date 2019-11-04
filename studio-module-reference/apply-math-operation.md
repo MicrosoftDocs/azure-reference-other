@@ -1,6 +1,6 @@
 ---
 title: "Apply Math Operation | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -18,7 +18,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Apply Math Operation** module in Azure Machine Learning Studio, to create calculations that are applied to numeric columns in the input dataset. 
+This article describes how to use the **Apply Math Operation** module in Azure Machine Learning Studio (classic), to create calculations that are applied to numeric columns in the input dataset. 
 
 Supported math operations include common arithmetic functions such as multiplication and division, trigonometric functions, a variety of rounding functions, and special functions used in data science such as gamma and error functions.  
 
@@ -241,7 +241,7 @@ Squares the values in the selected column.
 
 ## <a name="bkmk_Compare"></a> Comparison operations  
 
-Use the comparison functions in Azure Machine Learning Studio any time that you need to test two sets of values against each other. For example, in an experiment you might need to do these comparison operations:  
+Use the comparison functions in Azure Machine Learning Studio (classic) any time that you need to test two sets of values against each other. For example, in an experiment you might need to do these comparison operations:  
 
 - Evaluate a column of probability scores model against a threshold value.
 - Determine if two sets of results are the same, and for each row that is different, add a FALSE flag that can be used for further processing or filtering.  

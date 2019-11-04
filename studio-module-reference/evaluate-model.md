@@ -1,6 +1,6 @@
 ---
 title: "Evaluate Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -20,7 +20,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Evaluate Model** module in Azure Machine Learning Studio to measure the accuracy of a trained model. You provide a dataset containing scores generated from a model, and the **Evaluate Model** module computes a set of industry-standard evaluation metrics.
+This article describes how to use the **Evaluate Model** module in Azure Machine Learning Studio (classic) to measure the accuracy of a trained model. You provide a dataset containing scores generated from a model, and the **Evaluate Model** module computes a set of industry-standard evaluation metrics.
   
  The metrics returned by **Evaluate Model** depend on the type of model that you are evaluating:  
   
@@ -140,7 +140,7 @@ Because clustering models differ significantly from classification and regressio
   
  The statistics for the clustering model are averaged over the entire dataset, with additional rows containing the statistics per cluster.  
   
- For example, the following results show a portion of the results from a sample experiment that clusters the data in the PIMA Indian Diabetes Binary Classification dataset, which is available in Azure Machine Learning Studio.  
+ For example, the following results show a portion of the results from a sample experiment that clusters the data in the PIMA Indian Diabetes Binary Classification dataset, which is available in Azure Machine Learning Studio (classic).  
   
 |Result description|Average Distance to Cluster Center|Average Distance to Other Center|Number of Points|Maximal Distance To Cluster Center|  
 |------------------------|----------------------------------------|--------------------------------------|----------------------|----------------------------------------|  

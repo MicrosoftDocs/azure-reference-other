@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Locally Deep Support Vector Machine | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -20,7 +20,7 @@ manager: cgronlun
   
 ##  Module overview  
 
-This article describes how to use the **Two-Class Locally Deep Support Vector Machine** module in Azure Machine Learning Studio, to create a two-class, non-linear support vector machines (SVM) classifier that is optimized for efficient prediction.  
+This article describes how to use the **Two-Class Locally Deep Support Vector Machine** module in Azure Machine Learning Studio (classic), to create a two-class, non-linear support vector machines (SVM) classifier that is optimized for efficient prediction.  
 
 Support vector machines (SVMs) are an extremely popular and well-researched class of supervised learning models, which can be used in linear and non-linear classification tasks. Recent research has focused on ways to optimize these models to efficiently scale to larger training sets. In this implementation from Microsoft Research, the kernel function that is used for mapping data points to feature space is specifically designed to reduce the time needed for training while maintaining most of the classification accuracy.  
 

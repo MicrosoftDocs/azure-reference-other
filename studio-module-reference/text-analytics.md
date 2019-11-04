@@ -1,7 +1,7 @@
 ---
 title: "Text Analytics | Microsoft Docs"
-description: This article describes the text analytics modules included in Azure Machine Learning Studio. 
-titleSuffix: "Azure Machine Learning Studio"
+description: This article describes the text analytics modules included in Azure Machine Learning Studio (classic). 
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # Text Analytics
 
-This article describes the text analytics modules included in Azure Machine Learning Studio. These modules provide specialized computational tools for working with both structured and unstructured text, including:  
+This article describes the text analytics modules included in Azure Machine Learning Studio (classic). These modules provide specialized computational tools for working with both structured and unstructured text, including:  
 
 + Multiple options for preprocessing text.
 + Language detection.
@@ -36,7 +36,7 @@ For examples of text analytics using Azure Machine Learning, see the [Azure AI G
 
 ##  List of modules
 
-The **Text Analytics** category in Azure Machine Learning Studio includes these modules:
+The **Text Analytics** category in Azure Machine Learning Studio (classic) includes these modules:
 
 + [Detect Languages](detect-languages.md): Detects the language of each line in the input file.  
 + [Extract Key Phrases from Text](extract-key-phrases-from-text.md): Extracts key phrases from given text.  
