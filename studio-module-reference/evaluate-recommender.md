@@ -1,6 +1,6 @@
 ---
 title: "Evaluate Recommender | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
  
-This article describes how to use the **Evaluate Recommender** module in Azure Machine Learning Studio, to measure the accuracy of predictions made by a recommendation model. Using this module, you can evaluet four different kinds of recommendations:  
+This article describes how to use the **Evaluate Recommender** module in Azure Machine Learning Studio (classic), to measure the accuracy of predictions made by a recommendation model. Using this module, you can evaluet four different kinds of recommendations:  
   
 -   Ratings predicted for a given user and item  
   

@@ -1,6 +1,6 @@
 ---
 title: "Linear Discriminant Analysis (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Feature Selection Modules](feature-selection-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Fisher Linear Discriminant Analysis** module in Azure Machine Learning Studio, to create a set of scores that identifies the combination of features that best separate two or more classes.  
+This article describes how to use the **Fisher Linear Discriminant Analysis** module in Azure Machine Learning Studio (classic), to create a set of scores that identifies the combination of features that best separate two or more classes.  
 
 You provide a set of possible feature columns as inputs, and the algorithm determines the optimal combination of the input columns that linearly separates each group of data while minimizing the distances within each group.  
 

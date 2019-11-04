@@ -1,6 +1,6 @@
 ---
 title: "Assign to Clusters (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ manager: cgronlun
 
 ## Module overview  
 
-This article describes how to use the **Assign to Clusters** module in Azure Machine Learning Studio, to generate predictions using a trained clustering model, based on the K-Means clustering algorithm included in Studio.
+This article describes how to use the **Assign to Clusters** module in Azure Machine Learning Studio (classic), to generate predictions using a trained clustering model, based on the K-Means clustering algorithm included in Studio.
 
 The module returns the probable assignment for each new data point, based on the trained model.  
 
@@ -83,7 +83,7 @@ To see examples of updated clustering models, see these experiments:
 
 -   If any column names are duplicated when the new column is appended to the dataset, a numeric suffix is added to the name of the new column.  
 
-- The clusters created by the model are 0-based numeric labels. These labels cannot be edited in Azure Machine Learning Studio.
+- The clusters created by the model are 0-based numeric labels. These labels cannot be edited in Azure Machine Learning Studio (classic).
 
 ## Expected inputs  
 

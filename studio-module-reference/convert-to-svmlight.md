@@ -1,6 +1,6 @@
 ---
 title: "Convert to SVMLight | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
  
-This article describes how to use the [Convert to SVMLight](convert-to-svmlight.md) module in Azure Machine Learning Studio, to convert your datasets to the format that is used by SVMLight. 
+This article describes how to use the [Convert to SVMLight](convert-to-svmlight.md) module in Azure Machine Learning Studio (classic), to convert your datasets to the format that is used by SVMLight. 
 
 The SVM-Light framework was developed by researchers at Cornell University. The SVM-Light library implements Vapnik's Support Vector Machine, but the format has been adopted elsewhere and can be used for many machine learning tasks, including classification and regression.  
   
@@ -29,7 +29,7 @@ For more information, see [SVMLight Support Vector Machine](http://svmlight.joac
 
 The conversion to SVMLight format entails converting each case into a row of data that begins with the label, followed by feature-value pairs expressed as colon-separated numbers. The conversion process **does not** automatically identify the correct columns, so it is important that you prepare the columns in your dataset before attempting conversion. For more information, see [Preparing Data for Conversion](#bkmk_PreparingData). 
     
-1. Add the [Convert to SVMLight](convert-to-svmlight.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Azure Machine Learning Studio. 
+1. Add the [Convert to SVMLight](convert-to-svmlight.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Azure Machine Learning Studio (classic). 
 
 2. Connect the dataset or output that you want to convert to SVMLight format.
 

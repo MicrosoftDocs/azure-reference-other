@@ -1,6 +1,6 @@
 ---
 title: "Score Matchbox Recommender | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Machine Learning / Score](machine-learning-score.md)
 
 ## Module overview
 
-This article describes how to use the **Score Matchbox Recommender** module in Azure Machine Learning Studio, to create predictions based on a trained recommendation model, based on the Matchbox algorithm from Microsoft Research.
+This article describes how to use the **Score Matchbox Recommender** module in Azure Machine Learning Studio (classic), to create predictions based on a trained recommendation model, based on the Matchbox algorithm from Microsoft Research.
 
 The Matchbox recommender can generate four different kinds of predictions:
 

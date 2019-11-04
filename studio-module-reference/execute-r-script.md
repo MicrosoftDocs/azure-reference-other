@@ -1,6 +1,6 @@
 ---
 title: "Execute R Script | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -15,7 +15,7 @@ manager: cgronlun
 ---
 # Execute R Script
 
-*Executes an R script from an Azure Machine Learning Studio experiment*
+*Executes an R script from an Azure Machine Learning Studio (classic) experiment*
 
 Category: [R Language Modules](r-language-modules.md)
 
@@ -23,7 +23,7 @@ Category: [R Language Modules](r-language-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Execute R Script** module in Azure Machine Learning Studio, to call and run R code in your experiments.
+This article describes how to use the **Execute R Script** module in Azure Machine Learning Studio (classic), to call and run R code in your experiments.
 
 By adding R code to this module, you can perform a variety of customized tasks that are not available in Studio. For example: 
 - Create custom data transformations
@@ -39,7 +39,7 @@ You can specify which version of R to use in an experiment. However, you cannot 
 We recommend that you determine which packages you need before choosing a distribution of R. Some packages are not compatible with both CRAN R and Microsoft R Open.
 
 > [!NOTE]
-> Currently, the [Create R Model](create-r-model.md) module is limited to specific version of R.  Therefore, if you use a custom R model in your experiment, any **Execute R Script** modules in the same experiment must also use the same R version. Find the supported R version in the following article, [R Packages Supported by Azure Machine Learning Studio](r-packages-supported-by-azure-machine-learning.md).  
+> Currently, the [Create R Model](create-r-model.md) module is limited to specific version of R.  Therefore, if you use a custom R model in your experiment, any **Execute R Script** modules in the same experiment must also use the same R version. Find the supported R version in the following article, [R Packages Supported by Azure Machine Learning Studio (classic)](r-packages-supported-by-azure-machine-learning.md).  
 
 ### Supported R packages
 
@@ -52,7 +52,7 @@ data.set <- data.frame(installed.packages())
 maml.mapOutputPort("data.set")
 ```
 
-This topic lists the packages that are supported in Azure Machine Learning, and their compatibility with CRAN R and Microsoft R Open, see [R Packages Supported by Azure Machine Learning Studio](r-packages-supported-by-azure-machine-learning.md).
+This topic lists the packages that are supported in Azure Machine Learning, and their compatibility with CRAN R and Microsoft R Open, see [R Packages Supported by Azure Machine Learning Studio (classic)](r-packages-supported-by-azure-machine-learning.md).
 
 ### Installing new R packages
 
@@ -80,7 +80,7 @@ You can also add files containing additional R code, if you prepare them in a zi
 
 To install any additional packages, include them in the zipped archive file.
 
-1.  Add the **Execute R Script** module to your experiment.  You can find this module in Azure Machine Learning Studio, in the **R Language Modules** group.
+1.  Add the **Execute R Script** module to your experiment.  You can find this module in Azure Machine Learning Studio (classic), in the **R Language Modules** group.
 
 2. Connect any inputs needed by the script. Inputs can include data, R packages that you added to your workspace in zipped file format, and additional R code.
 
@@ -138,7 +138,7 @@ To install any additional packages, include them in the zipped archive file.
 The module can return multiple outputs. 
 
 + To get a dataset back, your R code should return a single R data.frame.
-+ You can display images in the R graphics device, which is displayed in the Azure Machine Learning Studio log area. 
++ You can display images in the R graphics device, which is displayed in the Azure Machine Learning Studio (classic) log area. 
 + To persist images, you can write them to a file, or serialize them to a tabular format.
 + You can save objects to your workspace.
 + Standard messages and errors from R are returned to the module's log.
@@ -173,7 +173,7 @@ You can find this and related samples in the [Azure AI Gallery](https://gallery.
 
 There are many ways that you can extend your experiment by using custom R script.  This section provides sample code for some common tasks.
 
-To get started using R in the **Execute R Script** module, see this video: [Using R in Azure Machine Learning Studio](http://channel9.msdn.com/Blogs/Windows-Azure/R-in-Azure-ML-Studio)  
+To get started using R in the **Execute R Script** module, see this video: [Using R in Azure Machine Learning Studio (classic)](http://channel9.msdn.com/Blogs/Windows-Azure/R-in-Azure-ML-Studio)  
 
 ### Add an R script as input
 
@@ -183,7 +183,7 @@ The **Execute R Script** module supports the use of arbitrary R script files as 
 
 2. After you have uploaded the zipped package to Studio, verify that the zipped file is available in the **Saved Datasets** list, and then connect the dataset to the **Script Bundle** input port.
 
-3. If your zipped file contains any R package that is not already installed in Azure Machine Learning Studio, you must install the R package as part of the custom code in the **Execute R Script** module. All files that are contained in the ZIP file are available during experiment run time. 
+3. If your zipped file contains any R package that is not already installed in Azure Machine Learning Studio (classic), you must install the R package as part of the custom code in the **Execute R Script** module. All files that are contained in the ZIP file are available during experiment run time. 
 
     If the script bundle file contained a directory structure, the structure is preserved. However, you must alter your code to prepend the directory **src** to the path.
 
@@ -222,7 +222,7 @@ maml.mapOutputPort("newdataset");
 
 ### Read a ZIP file as input
 
-This example demonstrates how to add a dataset to Azure Machine Learning Studio in zipped format and then use the data as an input to the **Execute R Script** module.
+This example demonstrates how to add a dataset to Azure Machine Learning Studio (classic) in zipped format and then use the data as an input to the **Execute R Script** module.
 
 1. Create the data file in CSV format, and name it “mydatafile.csv”.
 2. Create a .ZIP file and add the CSV file to the archive.
@@ -470,9 +470,9 @@ maml.mapOutputPort("data.set")
 
 ### Converting datetime values
 
-Azure Machine Learning Studio uses different datetime types than does R. If the data that you are analyzing contains date or time data, you should be aware of the following conversion requirements when porting existing R code into Studio:  
+Azure Machine Learning Studio (classic) uses different datetime types than does R. If the data that you are analyzing contains date or time data, you should be aware of the following conversion requirements when porting existing R code into Studio:  
 
-#### Converting from Azure Machine Learning Studio to R
+#### Converting from Azure Machine Learning Studio (classic) to R
 
 DateTime columns are converted to POSIXct vectors. However, each individual element of the resulting vector is a number of seconds since 1970-01-01T00:00:00.
 

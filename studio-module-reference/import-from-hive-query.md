@@ -1,6 +1,6 @@
 ---
 title: "Import from Hive Query | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,18 +12,18 @@ manager: cgronlun
 ---
 # Import from Hive Query
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to get data from Hadoop clusters and HDInsight distributed storage.
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to get data from Hadoop clusters and HDInsight distributed storage.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 Importing data from Hive is particularly useful for loading large datasets, or if you want to pre-process the data using a MapReduce job before loading the data into a machine learning experiment.
 
 > [!IMPORTANT]
-> As of July 31, 2018, Microsoft Azure HDInsight version 3.3 was the last version of HDInsight on Windows. If you have any HDInsight clusters on Windows 3.3 or earlier, you must migrate to HDInsight on Linux (HDInsight version 3.5 or later). Please see the [Retired versions](/azure/hdinsight/hdinsight-component-versioning#retired-versions) section for more information on retired versions of HDInsight. Azure Machine Learning Studio will support [HDInsight on Linux](#support-for-hdinsight-on-linux) in certain scenarios. 
+> As of July 31, 2018, Microsoft Azure HDInsight version 3.3 was the last version of HDInsight on Windows. If you have any HDInsight clusters on Windows 3.3 or earlier, you must migrate to HDInsight on Linux (HDInsight version 3.5 or later). Please see the [Retired versions](/azure/hdinsight/hdinsight-component-versioning#retired-versions) section for more information on retired versions of HDInsight. Azure Machine Learning Studio (classic) will support [HDInsight on Linux](#support-for-hdinsight-on-linux) in certain scenarios. 
 
 ## Support for HDInsight on Linux
 
-Azure Machine Learning Studio has support for HDInsight on Linux in the following scenarios:
+Azure Machine Learning Studio (classic) has support for HDInsight on Linux in the following scenarios:
 
 - Hadoop 2.7.3 (HDI 3.6) Blob as default, ADLS secondary
 - Spark 2.1.0 (HDI 3.6) Blob as default, ADLS secondary
@@ -60,7 +60,7 @@ The following steps describe how to manually configure the import source.
 
 3. In the **Hive database query** text box, specify the data you want to read by using HiveQL.
 
-    HiveQL is a SQL-like query language that can also be used to aggregate data and perform data filtering before you add the data to Machine Learning Studio. However, the Hive query must return the data in a tabular format.
+    HiveQL is a SQL-like query language that can also be used to aggregate data and perform data filtering before you add the data to Machine Learning Studio (classic). However, the Hive query must return the data in a tabular format.
 
     For example, this statement is a valid Hive query:
 
@@ -151,9 +151,9 @@ If your source data changes, you can refresh the dataset and add new data by re-
 
 The [Import Data](import-data.md) module itself does not support filtering as data is being read.
 
-To filter data before reading it into Azure Machine Learning Studio, use a Hive query or a MapReduce job to aggregate and transform the data.
+To filter data before reading it into Azure Machine Learning Studio (classic), use a Hive query or a MapReduce job to aggregate and transform the data.
 
-There are also multiple options for filtering data after it has been loaded into Azure Machine Learning Studio:
+There are also multiple options for filtering data after it has been loaded into Azure Machine Learning Studio (classic):
 
 - Use a custom R script to get only the data you want.
 - Use the [Split Data](split-data.md) module with a relative expression or a regular expression to isolate the data you want, and then save it as a dataset.

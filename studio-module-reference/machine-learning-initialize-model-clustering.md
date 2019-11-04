@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - Initialize Model - Clustering | Microsoft Docs"
-description: Description of the modules in Azure Machine Learning Studio that support creation of clustering models.
-titleSuffix: "Azure Machine Learning Studio"
+description: Description of the modules in Azure Machine Learning Studio (classic) that support creation of clustering models.
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # Machine Learning - Initialize Model - Clustering
 
-This article describes the modules in Azure Machine Learning Studio that support creation of clustering models. 
+This article describes the modules in Azure Machine Learning Studio (classic) that support creation of clustering models. 
 
 
 
@@ -29,7 +29,7 @@ Clustering is called a non-supervised learning technique because it can be used 
 
 ### How to create a clustering model
 
-In Machine Learning Studio, you can use clustering with either labeled or unlabeled data. 
+In Machine Learning Studio (classic), you can use clustering with either labeled or unlabeled data. 
 
 + In unlabeled data, the clustering algorithm determines which data points are closest together, and creates clusters around a central point, or centroid. You can then use the cluster ID as a temporary label for the group of data.
 
@@ -59,7 +59,7 @@ For examples of clustering in action, see the [Azure AI Gallery](https://gallery
 
 See these articles for help choosing an algorithm:  
 
--   [Machine learning algorithm cheat sheet for Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
+-   [Machine learning algorithm cheat sheet for Azure Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
      Provides a graphical decision chart to guide you through the selection process.  
   

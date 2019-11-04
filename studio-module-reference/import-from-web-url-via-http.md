@@ -1,6 +1,6 @@
 ---
 title: "Import from Web URL via HTTP | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Import from Web URL via HTTP
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to read data from a public Web page for use in a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to read data from a public Web page for use in a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -89,7 +89,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 No. That option is not supported with this data source.
 
-After reading the data into Azure Machine Learning Studio, you can split the dataset, use sampling, and so forth to get just the rows you want:
+After reading the data into Azure Machine Learning Studio (classic), you can split the dataset, use sampling, and so forth to get just the rows you want:
 
 - Write some simple R code in the [Execute R Script](execute-r-script.md) to get a portion of the data by rows or columns.
 

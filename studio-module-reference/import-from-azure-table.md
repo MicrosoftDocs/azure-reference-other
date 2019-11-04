@@ -1,6 +1,6 @@
 ---
 title: "Import from Azure Table | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Import from Azure Table
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to import structured or semi-structured data from Azure tables into a machine learning experiment.  
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to import structured or semi-structured data from Azure tables into a machine learning experiment.  
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
@@ -38,7 +38,7 @@ If you need to edit an existing data connection, the wizard loads all previous c
 
 The following steps describe how to manually configure the import source.
 
-1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) group in the **experiment items** list in Azure Machine Learning Studio.  
+1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) group in the **experiment items** list in Azure Machine Learning Studio (classic).  
 
 2. For **Data source**, select **Azure Table**.  
 
@@ -99,7 +99,7 @@ If your source data changes, you can refresh the dataset and add new data by re-
 
 The [Import Data](import-data.md) module does not support filtering as data is being read. The exception is reading from data feeds, which sometimes allow you to specify a filter condition as part of the feed URL.
 
-However, you can change or filter data after reading it into Azure Machine Learning Studio:
+However, you can change or filter data after reading it into Azure Machine Learning Studio (classic):
 
 - Use a custom R script to change or filter data.
 - Use the [Split Data](split-data.md) module with a relative expression or a regular expression to isolate the data you want, and then save it as a dataset.

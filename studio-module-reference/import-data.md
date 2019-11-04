@@ -1,6 +1,6 @@
 ---
 title: "Import Data | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,11 +20,11 @@ Category: [Data Input and Output](data-input-and-output.md)
 
 ## Module overview
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio, to load data into a machine learning experiment from existing cloud data services.  
+This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to load data into a machine learning experiment from existing cloud data services.  
 
 The module now features a wizard to help you choose a storage option and select from among existing subscriptions and accounts to quickly configure all options. Need to edit an existing data connection? No problem; the wizard loads all previous configuration details so that you don't have to start again from scratch. 
   
-After you define the data you want and connect to the source, [Import Data](import-data.md) infers the data type of each column based on the values it contains, and loads the data into your Azure Machine Learning Studio workspace. The output of [Import Data](import-data.md) is a dataset that can be used with any experiment.
+After you define the data you want and connect to the source, [Import Data](import-data.md) infers the data type of each column based on the values it contains, and loads the data into your Azure Machine Learning Studio (classic) workspace. The output of [Import Data](import-data.md) is a dataset that can be used with any experiment.
 
 > [!IMPORTANT]
 > Currently, there are limitations on the types of storage accounts that are supported. For more information, see [Technical Notes](#bkmk_Notes).
@@ -116,7 +116,7 @@ This section provides a list of known issues with the **Import Data** module, as
 
 ### Supported account types
 
-Frequently Azure releases new services or new storage types; however, there is typically a delay while support for new account types is implemented in Azure Machine Learning Studio.
+Frequently Azure releases new services or new storage types; however, there is typically a delay while support for new account types is implemented in Azure Machine Learning Studio (classic).
 
 - Currently, Azure Machine Learning supports all general purpose storage accounts, except for those using zone-redundant storage (ZRS). 
 

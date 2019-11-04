@@ -1,6 +1,6 @@
 ---
 title: "Data Table | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -14,7 +14,7 @@ manager: cgronlun
 
 **Data Table Class**  
 
-A dataset is data that has been uploaded to Azure Machine Learning Studio so that it can be used in the modeling process.  Even if you upload data in another format, or specify a storage format such as CSV, ARFF, or TSV, the data is implicitly converted to a `DataTable` object whenever used by a module in an experiment.
+A dataset is data that has been uploaded to Azure Machine Learning Studio (classic) so that it can be used in the modeling process.  Even if you upload data in another format, or specify a storage format such as CSV, ARFF, or TSV, the data is implicitly converted to a `DataTable` object whenever used by a module in an experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -22,7 +22,7 @@ The dataset is based on the .NET [Data Table](https://msdn.microsoft.com/library
   
 ## Column types
 
-A `DataTable` consists of a collection of columns with associated metadata.  These columns implement the `IArray` interface. Columns of data in Machine Learning Studio are understood to be one-dimensional arrays – that is, *vectors*.  
+A `DataTable` consists of a collection of columns with associated metadata.  These columns implement the `IArray` interface. Columns of data in Machine Learning Studio (classic) are understood to be one-dimensional arrays – that is, *vectors*.  
   
 
 The .NET [Array](https://msdn.microsoft.com/library/system.array.aspx) class implements these generic interfaces:  `System.Collections.Generic.IList<T>`, `System.Collections.Generic.ICollection<T>`, and `System.Collections.Generic.IEnumerable<T>`.  
@@ -51,7 +51,7 @@ This section also describes the following interfaces for Azure Machine Learning:
 |[ICluster interface](icluster-interface.md)|The ICluster interface defines the structure of clustering models.|  
 |[IFilter interface](ifilter-interface.md)|The IFilter interface defines the structure of digital signal processing filters applied to an entire series of numerical values. Filters can be created and then saved and applied to a new series.|  
 |[ILearner interface](ilearner-interface.md)|The ILearner interface provides a generic structure for defining and saving analytical models, excluding some special types such as clustering models.|  
-|[ITransform interface](itransform-interface.md)|The ITransform interface provides a generic structure for defining and saving transformations. You can create an iTransform using Machine Learning Studio and then apply the transformation to new datasets.|  
+|[ITransform interface](itransform-interface.md)|The ITransform interface provides a generic structure for defining and saving transformations. You can create an iTransform using Machine Learning Studio (classic) and then apply the transformation to new datasets.|  
   
 ## See also  
  [Module Parameter Types](machine-learning-module-parameter-types.md)   

@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Averaged Perceptron | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Two-Class Averaged Perceptron** module in Azure Machine Learning Studio, to create a machine learning model based on the averaged perceptron algorithm.  
+This article describes how to use the **Two-Class Averaged Perceptron** module in Azure Machine Learning Studio (classic), to create a machine learning model based on the averaged perceptron algorithm.  
   
 This classification algorithm is a supervised learning method, and requires a *tagged dataset*, which includes a label column. You can train the model by providing the model and the tagged dataset as an input to [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for the new input examples.  
 

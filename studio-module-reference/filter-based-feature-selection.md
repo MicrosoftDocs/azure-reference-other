@@ -1,6 +1,6 @@
 ---
 title: "Filter Based Feature Selection | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ##  Module overview  
 
-This article describes how to use the [Filter Based Feature Selection](filter-based-feature-selection.md) module in Azure Machine Learning Studio, to identify the columns in your input dataset that have the greatest predictive power. 
+This article describes how to use the [Filter Based Feature Selection](filter-based-feature-selection.md) module in Azure Machine Learning Studio (classic), to identify the columns in your input dataset that have the greatest predictive power. 
 
 In general, *feature selection* refers to the process of applying statistical tests to inputs, given a specified output, to determine which columns are more predictive of the output. The [Filter Based Feature Selection](filter-based-feature-selection.md) module provides multiple feature selection algorithms to choose from, including correlation methods such as Pearsons's or Kendall's correlation, mutual information scores, and chi-squared values. Azure Machine Learning also supports feature value counts as an indicator of information value.
  

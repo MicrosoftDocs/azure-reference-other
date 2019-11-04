@@ -1,6 +1,6 @@
 ---
 title: "Train Matchbox Recommender | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
  
-This article describes how to use the **Train Matchbox Recommender** module in Azure Machine Learning Studio, to train a recommendation model. 
+This article describes how to use the **Train Matchbox Recommender** module in Azure Machine Learning Studio (classic), to train a recommendation model. 
 
 The recommendation algorithm in Azure Machine Learning is based on the **Matchbox** model, developed by [Microsoft Research](http://research.microsoft.com/projects/). To download a paper that describes the algorithm in detail, click this link on the [Microsoft Research site](http://research.microsoft.com/pubs/79460/www09.pdf).  
 
@@ -66,7 +66,7 @@ It is very important that the input data used for training contain the right typ
 
 During training, the rating values cannot all be the same. Moreover, if numeric, the difference between the minimum and the maximum rating values must be less than 100, and ideally not greater than 20.  
 
-The **Restaurant ratings** dataset in Azure Machine Learning Studio (click **Saved Datasets** and then **Samples**) demonstrates the expected format:
+The **Restaurant ratings** dataset in Azure Machine Learning Studio (classic) (click **Saved Datasets** and then **Samples**) demonstrates the expected format:
 
 |userID|placeID|rating|  
 |------------|-------------|------------|  
@@ -79,7 +79,7 @@ From this sample, you can see that a single user has rated two separate restaura
 
 The dataset of **user features** must contain identifiers for users, and use the same identifiers that were provided in the first column of the users-items-ratings dataset. The remaining columns can contain any number of features that describe the users.  
   
-For an example, see the **Restaurant customer** dataset in Azure Machine Learning Studio. A typical set of user features looks like this:  
+For an example, see the **Restaurant customer** dataset in Azure Machine Learning Studio (classic). A typical set of user features looks like this:  
 
 |userID|ambience|Dress_preference|transport|smoker|  
 |------------|--------------|-----------------------|---------------|------------|  
@@ -90,7 +90,7 @@ For an example, see the **Restaurant customer** dataset in Azure Machine Learnin
 
 The dataset of item features must contain item identifiers in its first column. The remaining columns can contain any number of descriptive features for the items.  
   
-For an example, see the Restaurant feature data dataset, provided in Azure Machine Learning Studio (click **Saved Datasets** and then **Samples**). A typical set of item features (in this case, the item is a restaurant) might look like this:  
+For an example, see the Restaurant feature data dataset, provided in Azure Machine Learning Studio (classic) (click **Saved Datasets** and then **Samples**). A typical set of item features (in this case, the item is a restaurant) might look like this:  
 
 |placeID|alcohol|Smoking_area|price|Rambience|  
 |-------------|-------------|-------------------|-----------|---------------|  

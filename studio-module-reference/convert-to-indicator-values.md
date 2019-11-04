@@ -1,6 +1,6 @@
 ---
 title: "Convert to Indicator Values | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -19,7 +19,7 @@ manager: cgronlun
   
 ## Module overview  
  
-This article describes how to use the [Convert to Indicator Values](convert-to-indicator-values.md) module in Azure Machine Learning Studio. The purpose of this module is to convert columns that contain categorical values into a series of binary indicator columns that can more easily be used as features in a machine learning model.  
+This article describes how to use the [Convert to Indicator Values](convert-to-indicator-values.md) module in Azure Machine Learning Studio (classic). The purpose of this module is to convert columns that contain categorical values into a series of binary indicator columns that can more easily be used as features in a machine learning model.  
 
 ## How to configure Convert to Indicator Values
   

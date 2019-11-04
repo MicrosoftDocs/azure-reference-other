@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning module descriptions | Microsoft Docs"
-description: An overview of all the modules included in Azure Machine Learning Studio, which is an interactive, visual workspace to easily build and test predictive models.
-titleSuffix: "Azure Machine Learning Studio"
+description: An overview of all the modules included in Azure Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models.
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -13,7 +13,7 @@ manager: cgronlun
 ---
 # Machine Learning module descriptions
 
-This topic provides an overview of all the *modules* included in Azure Machine Learning Studio, which is an interactive, visual workspace to easily build and test predictive models. 
+This topic provides an overview of all the *modules* included in Azure Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models. 
 
 
 
@@ -21,7 +21,7 @@ This topic provides an overview of all the *modules* included in Azure Machine L
 
 ## What is a module?  
 
-In Machine Learning Studio, a module is a building block for creating experiments. Each module encapsulates a specific machine learning algorithm, function, or code library that can act on data in your workspace. The modules are designed to accept connections from other modules, to share and modify data. 
+In Machine Learning Studio (classic), a module is a building block for creating experiments. Each module encapsulates a specific machine learning algorithm, function, or code library that can act on data in your workspace. The modules are designed to accept connections from other modules, to share and modify data. 
 
 The code that runs in each module comes from many sources. These include open source libraries and languages, algorithms developed by Microsoft Research, and tools for working with Azure and other cloud services. 
  
@@ -40,11 +40,11 @@ For an example of how to build a complete machine learning experiment, see these
   
 -   [Develop a predictive solution by using Azure Machine Learning](http://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/)  
   
--   [Create a simple experiment in Azure Machine Learning Studio](http://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
+-   [Create a simple experiment in Azure Machine Learning Studio (classic)](http://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
  
 ##  Module categories
 
-To make it easier to find related modules, the machine learning tools in Machine Learning Studio are grouped by these categories.
+To make it easier to find related modules, the machine learning tools in Machine Learning Studio (classic) are grouped by these categories.
 
 ### [Data Format conversions](data-format-conversions.md)
 
@@ -135,7 +135,7 @@ Use these modules to assess anomalies in trends, by using algorithms specificall
 
 ### Related tasks
 
-Machine Learning Studio modules don't attempt to duplicate data integration tools supported in other tools, such as Azure Data Factory. Instead, the modules provide functionality that is specific to machine learning:
+Machine Learning Studio (classic) modules don't attempt to duplicate data integration tools supported in other tools, such as Azure Data Factory. Instead, the modules provide functionality that is specific to machine learning:
  
  - Normalization, grouping, and scaling of data
  - Computing statistical distribution of data
@@ -147,7 +147,7 @@ If you need more sophisticated facilities for data manipulation and storage, see
 
 + [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/): Enterprise-ready, cloud data processing pipelines.
 + [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): Scalable storage, with integrated access to machine learning.
-+ [CosmosDB](https://docs.microsoft.com/azure/cosmos-db/): NoSQL data store; import data to Machine Learning Studio. 
++ [CosmosDB](https://docs.microsoft.com/azure/cosmos-db/): NoSQL data store; import data to Machine Learning Studio (classic). 
 + [Azure Data Lake Analytics](https://docs.microsoft.com/azure/data-lake-analytics/): Distributed analytics on big data.
 + [Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/): Event processing for the Internet of Things. 
 + [Azure Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related cognitive services for speech, image, and facial recognition.

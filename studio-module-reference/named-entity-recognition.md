@@ -1,6 +1,6 @@
 ---
 title: "Named Entity Recognition | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Text Analytics](text-analytics.md)
 
 ## Module overview
 
-This article describes how to use the **Named Entity Recognition** module in Azure Machine Learning Studio, to identify the names of things, such as people, companies, or locations in a column of text. 
+This article describes how to use the **Named Entity Recognition** module in Azure Machine Learning Studio (classic), to identify the names of things, such as people, companies, or locations in a column of text. 
 
 Named entity recognition is an important area of research in machine learning and natural language processing (NLP), because it can be used to answer many real-world questions, such as:
 
@@ -83,7 +83,7 @@ You can convert this output dataset to CSV for download or save it as a dataset 
 
 ## Use named entity recognition in a web service
 
-If you publish a web service from Azure Machine Learning Studio and want to consume the web service by using C#, Python, or another language such as R, you must first implement the service code provided on the help page of the web service.
+If you publish a web service from Azure Machine Learning Studio (classic) and want to consume the web service by using C#, Python, or another language such as R, you must first implement the service code provided on the help page of the web service.
 
 If your web service provides multiple rows of output, the URL of the web service that you add to your C#, Python, or R code should have the suffix `scoremultirow` instead of `score`.
 

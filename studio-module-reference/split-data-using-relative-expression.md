@@ -1,6 +1,6 @@
 ---
 title: "Split Data using Relative Expression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Split a dataset using a relative expression
 
-This article describes how to use the **Relative Expression Split** option in the [Split Data](split-data.md) module of Azure Machine Learning Studio. This option is helpful when you need to divide a dataset into training and testing datasets using a numerical expression. For example:
+This article describes how to use the **Relative Expression Split** option in the [Split Data](split-data.md) module of Azure Machine Learning Studio (classic). This option is helpful when you need to divide a dataset into training and testing datasets using a numerical expression. For example:
 
 + Age greater than 40 vs. 40 or younger
 + Test score of 60 or higher vs. less than 60

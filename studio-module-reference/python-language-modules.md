@@ -1,6 +1,6 @@
 ---
 title: "Python Language Modules | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Python Language Modules
 
-This article describes the modules provided in Azure Machine Learning Studio that support running custom Python code in a machine learning experiment.
+This article describes the modules provided in Azure Machine Learning Studio (classic) that support running custom Python code in a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning - Score | Microsoft Docs"
-description: This section lists the modules provided in Azure Machine Learning Studio for scoring.
+description: This section lists the modules provided in Azure Machine Learning Studio (classic) for scoring.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,13 +12,13 @@ manager: cgronlun
 ---
 # Machine Learning - Score
 
-This section lists the modules provided in Azure Machine Learning Studio for *scoring*.
+This section lists the modules provided in Azure Machine Learning Studio (classic) for *scoring*.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 Scoring is also called prediction, and is the process of generating values based on a trained machine learning model, given some new input data. The values or scores that are created can represent predictions of future values, but they might also represent a likely category or outcome. The meaning of the score depends on the type of data you provide, and the type of model that you created.
 
-## Create and use models in Machine Learning Studio
+## Create and use models in Machine Learning Studio (classic)
 
 The typical workflow for machine learning includes these phases:
 
@@ -27,7 +27,7 @@ The typical workflow for machine learning includes these phases:
 - Creating predictions using new data, based on the patterns in the model.
 - Evaluating the model to determine if the predictions are accurate, how much error there is, and if there is any overfitting.
 
-Machine Learning Studio supports a flexible, customizable framework for machine learning. Each task in this process is performed by a specific type of module, which can be modified, added, or removed, without breaking the rest of your experiment. 
+Machine Learning Studio (classic) supports a flexible, customizable framework for machine learning. Each task in this process is performed by a specific type of module, which can be modified, added, or removed, without breaking the rest of your experiment. 
 
 The modules in this section include tools for scoring. In this phase of machine learning, you apply a trained model to new data, to generate predictions. You can either send those predictions to an application that consumes machine learning results, or use the results of scoring to evaluate the accuracy and usefulness of the model.
 
@@ -42,7 +42,7 @@ Scoring is widely used in machine learning to mean the process of generating new
 - A predicted class or outcome, for classification models.
 
 > [!NOTE] 
-> You might have also heard the word *score* used to mean a weight or value assigned as a result of data analysis. However, in Machine Learning Studio, scoring usually denotes the process of generating predicted values from new data.
+> You might have also heard the word *score* used to mean a weight or value assigned as a result of data analysis. However, in Machine Learning Studio (classic), scoring usually denotes the process of generating predicted values from new data.
 
 When you add one of these modules in your experiment, you must attach an already trained machine learning model, and some new data. When you run the experiment or the selected module, the scoring module ingests the new data, computes scores based on the model, and returns the scores in a table.
 
@@ -56,7 +56,7 @@ Before you perform scoring on your dataset, always check for missing values and 
 
 ## List of scoring modules
 
-Machine Learning Studio provides many different scoring modules. You select one depending on the type of model you are using, or the type of scoring task you are performing: 
+Machine Learning Studio (classic) provides many different scoring modules. You select one depending on the type of model you are using, or the type of scoring task you are performing: 
 
 + [Apply Transformation](apply-transformation.md): Applies a well-specified data transformation to a dataset.   
 

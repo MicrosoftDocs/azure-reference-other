@@ -1,6 +1,6 @@
 ---
 title: "Linear Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +20,7 @@ Category: [Machine Learning / Initialize Model / Regression](machine-learning-in
 
 ## Module overview
 
-This article describes how to use the **Linear Regression** module in Azure Machine Learning Studio, to create a linear regression model for use in an experiment.  Linear regression attempts to establish a linear relationship between one or more independent variables and a numeric outcome, or dependent variable. 
+This article describes how to use the **Linear Regression** module in Azure Machine Learning Studio (classic), to create a linear regression model for use in an experiment.  Linear regression attempts to establish a linear relationship between one or more independent variables and a numeric outcome, or dependent variable. 
 
 You use this module to define a linear regression method, and then train a model using a labeled dataset. The trained model can then be used to make predictions. Alternatively, the untrained model can be passed to [Cross-Validate Model](cross-validate-model.md) for cross-validation against a labeled data set.
 
@@ -28,7 +28,7 @@ You use this module to define a linear regression method, and then train a model
 
 Linear regression is a common statistical method, which has been adopted in machine learning and enhanced with many new methods for fitting the line and measuring error. In the most basic sense, regression refers to prediction of a numeric target. Linear regression is still a good choice when you want a very simple model for a basic predictive task. Linear regression also tends to work well on high-dimensional, sparse data sets lacking complexity.
 
-Azure Machine Learning Studio supports a variety of regression models, in addition to linear regression. However, the term "regression" can be interpreted loosely, and some types of regression provided in other tools are not supported in Studio.
+Azure Machine Learning Studio (classic) supports a variety of regression models, in addition to linear regression. However, the term "regression" can be interpreted loosely, and some types of regression provided in other tools are not supported in Studio.
 
 + The classic regression problem involves a single independent variable and a dependent variable. This is called *simple regression*.  This module supports simple regression.
 
@@ -188,13 +188,13 @@ However, because linear regression is a well-established technique that is suppo
 
 + In Azure Machine Learning, regression models support a single response variable.
 
-+ In the R language, the features provided for linear regression depend on the package you are using. For example, the **glm** package will give you the ability to create a logistic regression model with multiple independent variables.  In general, Azure Machine Learning Studio provides the same functionality as the R **glm** package.
++ In the R language, the features provided for linear regression depend on the package you are using. For example, the **glm** package will give you the ability to create a logistic regression model with multiple independent variables.  In general, Azure Machine Learning Studio (classic) provides the same functionality as the R **glm** package.
 
 We recommend that you use this module, **Linear Regression**, for typical regression problems.
 
 In contrast, if you are using multiple variables to predict a class value, we recommend the [Two-Class Logistic Regression](two-class-logistic-regression.md) or [Multiclass Logistic Regression](multiclass-logistic-regression.md) modules.
 
-If you want to use other linear regression packages that are available for the R language, we recommend that you use the [Execute R Script](execute-r-script.md) module and call the **lm** or **glm** packages, which are included in the runtime environment of Azure Machine Learning Studio.
+If you want to use other linear regression packages that are available for the R language, we recommend that you use the [Execute R Script](execute-r-script.md) module and call the **lm** or **glm** packages, which are included in the runtime environment of Azure Machine Learning Studio (classic).
 
 ## Module parameters
 

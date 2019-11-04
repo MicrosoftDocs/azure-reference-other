@@ -1,6 +1,6 @@
 ---
 title: "IIR Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio"
+titleSuffix: "Azure Machine Learning Studio (classic)"
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -20,7 +20,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **IIR Filter** module in Azure Machine Learning Studio, to create an *infinite impulse response* (IIR) filter. 
+This article describes how to use the **IIR Filter** module in Azure Machine Learning Studio (classic), to create an *infinite impulse response* (IIR) filter. 
 
 Filters are an important tool in digital signal processing, and are used to improve the results of image or voice recognition. In general, a filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).
 
