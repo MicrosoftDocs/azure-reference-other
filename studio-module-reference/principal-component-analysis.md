@@ -1,6 +1,6 @@
 ---
 title: "Principal Component Analysis | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -34,9 +34,9 @@ The **Principal Component Analysis** module in Azure Machine Learning Studio (cl
 
 For general information about principal component analysis (PCA) see this [Wikipedia article](https://wikipedia.org/wiki/Principal_component_analysis). For information about the PCA approaches used in this module, see these articles:
 
-- [Finding Structure with Randomness: Probabilistic Algorithms for Constructing Approximate Matrix Decompositions](http://arxiv.org/abs/0909.4061). Halko, Martinsson, and Tropp, 2010.  
+- [Finding Structure with Randomness: Probabilistic Algorithms for Constructing Approximate Matrix Decompositions](https://arxiv.org/abs/0909.4061). Halko, Martinsson, and Tropp, 2010.  
 
-- [Combining Structured and Unstructured Randomness in Large Scale PCA](http://arxiv.org/abs/1310.6304)Combining Structured and Unstructured Randomness in Large Scale PCA. Karampatziakis and Mineiro, 2013.
+- [Combining Structured and Unstructured Randomness in Large Scale PCA](https://arxiv.org/abs/1310.6304)Combining Structured and Unstructured Randomness in Large Scale PCA. Karampatziakis and Mineiro, 2013.
 
 ## How to configure Principal Component Analysis
 
@@ -69,9 +69,9 @@ The dataset you apply the transformation to must have the same schema as the ori
 
 ## Examples
 
-For examples of how Principal Component Analysis is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how Principal Component Analysis is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
-- [Clustering: Find Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses Principal Component Analysis to reduce the number of values from text mining to a manageable number of features.
+- [Clustering: Find Similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Uses Principal Component Analysis to reduce the number of values from text mining to a manageable number of features.
 
     Although in this sample PCA is applied using a custom R script, it illustrates how PCA is typically used.
 

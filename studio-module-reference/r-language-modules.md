@@ -1,7 +1,7 @@
 ---
 title: "R Language Modules | Microsoft Docs"
 description: This article lists the modules in Azure Machine Learning Studio (classic) that support running R code.
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -87,7 +87,7 @@ The following example demonstrates the overall process for how you can install n
 
 Sometimes the data requires extensive manipulation to extract features. Suppose you have a text file that contains an ID followed by values and notes, all separated by spaces. Or suppose that your text file contains characters that are not supported by Machine Language Studio.
 
-There are several R packages that provide specialized functions for such tasks. The [splitstackshape library](http://cran.r-project.org/web/packages/splitstackshape/index.html) package contains several useful functions for splitting multiple columns, even if each column has a different delimiter.
+There are several R packages that provide specialized functions for such tasks. The [splitstackshape library](https://cran.r-project.org/web/packages/splitstackshape/index.html) package contains several useful functions for splitting multiple columns, even if each column has a different delimiter.
 
 The following sample illustrates how to install the needed packages, and split apart columns. You would add this code to the **Execute R Script** module.
 
@@ -134,7 +134,7 @@ This article discusses the differences between the two scoring engines in detail
 
 This experiment in the Azure AI Gallery demonstrates how you can create a custom R module that does training, scoring, and evaluation:
 
- + [Create R Model with Evaluation](https://gallery.cortanaintelligence.com/Experiment/Create-R-Model-with-Evaluation-1)
+ + [Create R Model with Evaluation](https://gallery.azure.ai/Experiment/Create-R-Model-with-Evaluation-1)
 
 This article, published on R-Bloggers, demonstrates how you can create your own evaluation method in Machine Learning:
 
@@ -144,25 +144,25 @@ This article, published on R-Bloggers, demonstrates how you can create your own 
 
 This site provides a categorized list of packages that you can search by keywords:
 
-+ [R documentation](http://www.rdocumentation.org/)  
++ [R documentation](https://www.rdocumentation.org/)  
 
 For additional R code samples and help with R and its applications, see these resources:
 
-- [R Project](http://www.r-project.org/): The official site for the R language.
+- [R Project](https://www.r-project.org/): The official site for the R language.
 
-- [Rseek](http://www.rseek.org/): A search engine for R resources.
+- [Rseek](https://www.rseek.org/): A search engine for R resources.
 
-- [R-bloggers](http://www.r-bloggers.com/): An aggregation of blogs in the R community.
+- [R-bloggers](https://www.r-bloggers.com/): An aggregation of blogs in the R community.
 
-- [CRAN](http://cran.r-project.org/web/views/): The largest repository of R packages.
+- [CRAN](https://cran.r-project.org/web/views/): The largest repository of R packages.
 
-- [Quick-R](http://www.statmethods.net/): A good R tutorial.
+- [Quick-R](https://www.statmethods.net/): A good R tutorial.
 
-- [Webinar: Learn How to Get Faster End Results from Your R Models](http://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Learn-How-to-Get-Faster-End-Results-from-Your-R-Models)
+- [Webinar: Learn How to Get Faster End Results from Your R Models](https://channel9.msdn.com/blogs/Cloud-and-Enterprise-Premium/Learn-How-to-Get-Faster-End-Results-from-Your-R-Models)
 
-- [Bioconductor](http://bioconductor.org/): A large repository of R packages in bioinformatics.
+- [Bioconductor](https://bioconductor.org/): A large repository of R packages in bioinformatics.
 
-- [Quick Start Guide for R](http://go.microsoft.com/fwlink/?LinkId=524954): A detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio (classic).
+- [Quick Start Guide for R](https://go.microsoft.com/fwlink/?LinkId=524954): A detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio (classic).
 
 ## See also
 

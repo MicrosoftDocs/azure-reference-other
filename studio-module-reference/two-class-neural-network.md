@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Neural Network | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -61,7 +61,7 @@ To compute the output of the network for a particular input, a value is calculat
   
     -   **Custom definition script**: Choose this option to create a custom neural network architecture, using the [**Net#** language](#bkmk_Customizing). With this option, you can define the number of hidden layers, their connections, and the mappings between layers. 
     
-    After selecting the custom script option, in the **Neural network definition** text box, type or paste Net# statements that define the network. For examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).  
+    After selecting the custom script option, in the **Neural network definition** text box, type or paste Net# statements that define the network. For examples, see [Guide to the Net# Neural Networks Specification Language](https://go.microsoft.com/fwlink/?LinkId=402867).  
 
 4.  If you are not using the script option, use **Number of hidden nodes**, and type the number of hidden nodes. The default is one hidden layer with 100 nodes.
 
@@ -124,15 +124,15 @@ After training is complete:
 
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). These experiments are related and described in a single document that progresses from basic to advanced configurations:  
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/). These experiments are related and described in a single document that progresses from basic to advanced configurations:  
   
--   [Deep Neural networks sample (part A)](http://go.microsoft.com/fwlink/?LinkId=525278)  
+-   [Deep Neural networks sample (part A)](https://go.microsoft.com/fwlink/?LinkId=525278)  
   
--   [Deep Neural networks sample (part B)](http://go.microsoft.com/fwlink/?LinkId=525279)  
+-   [Deep Neural networks sample (part B)](https://go.microsoft.com/fwlink/?LinkId=525279)  
   
--   [Deep Neural networks sample (part C)](http://go.microsoft.com/fwlink/?LinkId=525280)  
+-   [Deep Neural networks sample (part C)](https://go.microsoft.com/fwlink/?LinkId=525280)  
   
--   [Deep Neural networks sample (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
+-   [Deep Neural networks sample (part D)](https://go.microsoft.com/fwlink/?LinkId=525281)  
   
 ##  Technical notes
 
@@ -177,7 +177,7 @@ hidden Hidden auto from Data all;
 output Result auto from Hidden all;   
 ```
 
-For additional script examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).
+For additional script examples, see [Guide to the Net# Neural Networks Specification Language](https://go.microsoft.com/fwlink/?LinkId=402867).
 
 
 > [!TIP]

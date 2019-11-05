@@ -1,6 +1,6 @@
 ---
 title: "Boosted Decision Tree Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -44,7 +44,7 @@ For additional information, see these articles:
 
     This Wikipedia article on gradient boosting provides some background on boosted trees. 
   
--  [http://research.microsoft.com/apps/pubs/default.aspx?id=132652](http://research.microsoft.com/apps/pubs/default.aspx?id=132652)  
+-  [https://research.microsoft.com/apps/pubs/default.aspx?id=132652](https://research.microsoft.com/apps/pubs/default.aspx?id=132652)  
 
     Microsoft Research: From RankNet to LambdaRank to LambdaMART: An Overview. By J.C. Burges.
 
@@ -110,11 +110,11 @@ After training is complete:
 
 ## Examples  
  
-For examples of how boosted trees are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):  
+For examples of how boosted trees are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai):  
 
-- [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271): Uses **Boosted Decision Tree Regression** to predict the number of rentals for a particular time.  
+- [Demand estimation](https://go.microsoft.com/fwlink/?LinkId=525271): Uses **Boosted Decision Tree Regression** to predict the number of rentals for a particular time.  
   
-- [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Uses regression to generate a predicted rating.  
+- [Twitter sentiment analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Uses regression to generate a predicted rating.  
   
 ##  Technical notes
 

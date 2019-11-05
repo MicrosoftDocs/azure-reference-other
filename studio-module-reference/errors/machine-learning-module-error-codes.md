@@ -1,6 +1,6 @@
 ---
-title: Studio (classic) module error codes and messages
-titleSuffix: "Azure Machine Learning Studio (classic)"
+title: Module errors
+titleSuffix: ML Studio (classic) Azure
 description: Module exceptions in Azure Machine Learning Studio (classic) using error codes and messages
 ms.date: 04/10/2019
 ms.service: "machine-learning"
@@ -192,13 +192,13 @@ See this article for an explanation of the different storage options that are su
 
 ### Sample experiments
 
-See these experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) for examples of how to connect to different data sources:
+See these experiments in the [Cortana Intelligence Gallery](https://gallery.azure.ai/) for examples of how to connect to different data sources:
 
-+ Input data from various sources:  This lab provides a visual guide to using many of the Azure ML data sources: [AzureML experiments and data interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1)
++ Input data from various sources:  This lab provides a visual guide to using many of the Azure ML data sources: [AzureML experiments and data interaction](https://gallery.azure.ai/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1)
 
-+ Azure Cosmos DB: [Reading data from Azure Cosmos DB in Azure Machine Learning](https://gallery.cortanaintelligence.com/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1)
++ Azure Cosmos DB: [Reading data from Azure Cosmos DB in Azure Machine Learning](https://gallery.azure.ai/Experiment/Reading-data-from-Azure-DocumentDB-in-Azure-Machine-Learning-1)
 
-+ Import otherwise unreadable data using Python: [Load non-text file from Azure Blob storage](https://gallery.cortanaintelligence.com/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1)
++ Import otherwise unreadable data using Python: [Load non-text file from Azure Blob storage](https://gallery.azure.ai/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1)
 
   
 |Exception Messages|  
@@ -1145,7 +1145,7 @@ Another reason you might get this error if you try to use a column containing fl
 
 
 > [!NOTE]
-> These topics contains examples of R code that you can use, as well as links to experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com) that use R script.
+> These topics contains examples of R code that you can use, as well as links to experiments in the [Cortana Intelligence Gallery](https://gallery.azure.ai) that use R script.
 > + [Execute R Script](../execute-r-script.md)
 > + [Create R Model](../create-r-model.md)
   
@@ -1241,7 +1241,7 @@ See the following articles for help with Hive queries for machine learning:
 + [Create Hive tables and load data from Azure Blob Storage](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-move-hive-tables)
 + [Explore data in tables with Hive queries](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-explore-data-hive-tables)
 + [Create features for data in an Hadoop cluster using Hive queries](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-create-features-hive)
-+ [Hive for SQL Users Cheat Sheet (PDF)](http://hortonworks.com/wp-content/uploads/2013/05/hql_cheat_sheet.pdf)
++ [Hive for SQL Users Cheat Sheet (PDF)](https://hortonworks.com/wp-content/uploads/2013/05/hql_cheat_sheet.pdf)
 
   
 |Exception Messages|  

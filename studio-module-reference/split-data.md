@@ -1,6 +1,6 @@
 ---
 title: "Split Data | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -64,9 +64,9 @@ This module is particularly useful when you need to separate data into training 
 
 ## Examples  
 
-For examples of how the [Split Data](split-data.md) module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how the [Split Data](split-data.md) module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
-- [Cross Validation for Binary Classification: Adult Dataset](http://go.microsoft.com/fwlink/?LinkId=525734): A 20% sampling rate is applied to create a smaller randomly sampled dataset. (The original census dataset had over 30,000 rows; the training dataset has around 6500). The dataset is cleaned for missing values and then passed to five different models for training and cross-validation.
+- [Cross Validation for Binary Classification: Adult Dataset](https://go.microsoft.com/fwlink/?LinkId=525734): A 20% sampling rate is applied to create a smaller randomly sampled dataset. (The original census dataset had over 30,000 rows; the training dataset has around 6500). The dataset is cleaned for missing values and then passed to five different models for training and cross-validation.
 
 ## Technical notes
 

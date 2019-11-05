@@ -1,7 +1,8 @@
 ---
-title: "Machine Learning module descriptions | Microsoft Docs"
+title: "Module descriptions"
+titleSuffix: ML Studio (classic) Azure
 description: An overview of all the modules included in Azure Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models.
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -9,7 +10,7 @@ ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Machine Learning module descriptions
 
@@ -38,9 +39,9 @@ Sometimes modules are updated to add new functionality, or to remove older code.
 
 For an example of how to build a complete machine learning experiment, see these tutorials:  
   
--   [Develop a predictive solution by using Azure Machine Learning](http://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/)  
+-   [Develop a predictive solution by using Azure Machine Learning](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/)  
   
--   [Create a simple experiment in Azure Machine Learning Studio (classic)](http://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
+-   [Create a simple experiment in Azure Machine Learning Studio (classic)](https://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
  
 ##  Module categories
 

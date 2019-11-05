@@ -1,6 +1,6 @@
 ---
 title: "Median Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -59,9 +59,9 @@ After you have defined a filter transformation that meets your needs by using th
 
 ## Examples
 
-For examples of how filters are used in machine learning, see this experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how filters are used in machine learning, see this experiment in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--  [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
+-  [Filters](https://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
 
 
 ## Technical notes  
@@ -80,7 +80,7 @@ Values beyond the borders of the input signal are assumed to equal the value at 
 
 For more information about median filters, this Wikipedia article provides a good explanation of the theory and application:  
   
- [Wikipedia: Median Filters](http://en.wikipedia.org/wiki/Median_filter)  
+ [Wikipedia: Median Filters](https://en.wikipedia.org/wiki/Median_filter)  
   
 ##  Module parameters  
   

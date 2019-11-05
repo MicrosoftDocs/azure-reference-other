@@ -1,7 +1,7 @@
 ---
-title: "Data Transformation - Learning with Counts | Microsoft Docs"
+title: "Data Transformation: Learning with Counts | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio (classic) modules that support count-based featurization."
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -66,7 +66,7 @@ These are the steps you take to create count-based features:
  
 ## Examples
 
-In [Use Azure Machine Learning to build clickthrough prediction models](http://go.microsoft.com/fwlink/?LinkId=699305), the Microsoft Machine Learning team provides a detailed walkthrough of how to use counts in machine learning. The article compares the efficacy of count-based modeling with other methods.
+In [Use Azure Machine Learning to build clickthrough prediction models](https://go.microsoft.com/fwlink/?LinkId=699305), the Microsoft Machine Learning team provides a detailed walkthrough of how to use counts in machine learning. The article compares the efficacy of count-based modeling with other methods.
  
 ## Technical notes
 

@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Decision Jungle | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -25,7 +25,7 @@ The **Two-Class Decision Jungle** module returns an untrained classifier. You th
   
 ###  More about decision jungles
 
-[Decision jungles](http://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](http://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).  
+[Decision jungles](https://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](https://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).  
   
 Decision jungles have the following advantages:  
   
@@ -36,7 +36,7 @@ Decision jungles have the following advantages:
 -   They perform integrated feature selection and classification and are resilient in the presence of noisy features.  
   
 > [!TIP]
->  For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](http://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).  
+>  For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](https://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).  
   
 ## How to configure Two-Class Decision Jungle
 
@@ -50,7 +50,7 @@ Decision jungles have the following advantages:
   
     -   **Replicate**: In replication, each tree is trained on exactly the same input data. The determination of which split predicate is used for each tree node remains random and the trees will be diverse.  
   
-        For more information, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](http://research.microsoft.com/en-us/projects/decisionforests/)  
+        For more information, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](https://research.microsoft.com/en-us/projects/decisionforests/)  
   
 3.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   
@@ -98,7 +98,7 @@ After training is complete:
  
 ## Examples
 
-For examples of how decision jungles are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how decision jungles are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Compare Binary Classifiers](https://gallery.azureml.net/Experiment/b2bfde196e604c0aa2f7cba916fc45c8): Uses several algorithms and discusses their pros and cons.  
   

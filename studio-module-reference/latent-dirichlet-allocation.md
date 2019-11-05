@@ -1,6 +1,6 @@
 ---
 title: "Latent Dirichlet Allocation | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -149,9 +149,9 @@ In Studio, you can also use R or Python libraries for text processing: [Execute 
 
 ## Examples
 
-For examples of text analytics, see these experiments in the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models):
+For examples of text analytics, see these experiments in the [Azure AI Gallery](https://azure.microsoft.com/documentation/services/machine-learning/models):
 
-+ [Execute Python Script](http://go.microsoft.com/fwlink/?LinkId=525942): Uses natural language processing in Python to clean and transform text.
++ [Execute Python Script](https://go.microsoft.com/fwlink/?LinkId=525942): Uses natural language processing in Python to clean and transform text.
 
 For details and an example based on customer review text, see [Understanding LDA Results](#bkmk_Understanding).
 

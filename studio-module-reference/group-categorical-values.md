@@ -1,6 +1,6 @@
 ---
 title: "Group Categorical Values | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -78,7 +78,7 @@ To view the results, right-click the **Group Categorical Values** module, select
 
 ## Examples
 
-For examples of machine learning in action, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). 
+For examples of machine learning in action, see the [Azure AI Gallery](https://gallery.azure.ai/). 
 
 You can also try this module for yourself, by using a small dataset with some string variables that can be easily grouped, such as the **Automobile price** dataset that is provided in Azure Machine Learning Studio (classic).
 

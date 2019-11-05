@@ -1,6 +1,6 @@
 ---
 title: "Apply SQL Transformation | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -213,9 +213,9 @@ FROM t1;
 
 ## Examples
 
-For an example of how this module might be used in machine learning experiments, see this sample in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For an example of how this module might be used in machine learning experiments, see this sample in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--  [Apply SQL Transformation](http://go.microsoft.com/fwlink/?LinkId=525947): Uses the Restaurant Ratings, Restaurant Features, and Restaurant Customers dataset to illustrate simple joins, select statements, and aggregate functions.
+-  [Apply SQL Transformation](https://go.microsoft.com/fwlink/?LinkId=525947): Uses the Restaurant Ratings, Restaurant Features, and Restaurant Customers dataset to illustrate simple joins, select statements, and aggregate functions.
 
 ##  <a name="bkmk_Notes"></a> Technical notes  
 
@@ -231,7 +231,7 @@ This section contains implementation details, tips, and answers to frequently as
   
 ### Unsupported statements  
 
-Although SQLite supports much of the ANSI SQL standard, it does not include many features supported by commercial relational database systems. For more information, see [SQL as Understood by SQLite](http://www.sqlite.org/lang.html). Also, be aware of the following restrictions when creating SQL statements:  
+Although SQLite supports much of the ANSI SQL standard, it does not include many features supported by commercial relational database systems. For more information, see [SQL as Understood by SQLite](https://www.sqlite.org/lang.html). Also, be aware of the following restrictions when creating SQL statements:  
   
 + SQLite uses dynamic typing for values, rather than assigning a type to a column as in most relational database systems. It is weakly typed, and allows implicit type conversion.  
   
@@ -242,7 +242,7 @@ Although SQLite supports much of the ANSI SQL standard, it does not include many
 + You can create a VIEW within SQLite, but thereafter views are read-only. You cannot execute a `DELETE`, `INSERT`, or `UPDATE` statement on a view. However, you can create a trigger that fires on an attempt to `DELETE`, `INSERT`, or `UPDATE` on a view and perform other operations in the body of the trigger.  
   
 
-In addition to the list of non-supported functions provided on the official SQLite site, the following wiki provides a list of other unsupported features: [SQLite - Unsupported SQL](http://www2.sqlite.org/cvstrac/wiki?p=UnsupportedSql)  
+In addition to the list of non-supported functions provided on the official SQLite site, the following wiki provides a list of other unsupported features: [SQLite - Unsupported SQL](https://www2.sqlite.org/cvstrac/wiki?p=UnsupportedSql)  
   
 ## Expected inputs  
 

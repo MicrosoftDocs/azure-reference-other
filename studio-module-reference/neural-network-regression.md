@@ -1,6 +1,6 @@
 ---
 title: "Neural Network Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -177,16 +177,16 @@ After training is complete:
 
 ##  Examples  
 
-For examples of how this algorithm is used in experiments, see these samples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how this algorithm is used in experiments, see these samples in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Compare Multiple Regressors](http://go.microsoft.com/fwlink/?LinkId=525731): Demonstrates the use of several regression algorithms and compares their results.  
+- [Compare Multiple Regressors](https://go.microsoft.com/fwlink/?LinkId=525731): Demonstrates the use of several regression algorithms and compares their results.  
 
 The experiments provide more help on Net#. The experiments are related and progress from basic to advanced configurations:
 
-+ [Deep Neural networks example (part A)](http://go.microsoft.com/fwlink/?LinkId=525278)  
-+ [Deep Neural networks example (part B)](http://go.microsoft.com/fwlink/?LinkId=525279)  
-+ [Deep Neural networks example (part C)](http://go.microsoft.com/fwlink/?LinkId=525280)  
-+ [Deep Neural networks example (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
++ [Deep Neural networks example (part A)](https://go.microsoft.com/fwlink/?LinkId=525278)  
++ [Deep Neural networks example (part B)](https://go.microsoft.com/fwlink/?LinkId=525279)  
++ [Deep Neural networks example (part C)](https://go.microsoft.com/fwlink/?LinkId=525280)  
++ [Deep Neural networks example (part D)](https://go.microsoft.com/fwlink/?LinkId=525281)  
 
 ##  Technical notes
 
@@ -231,7 +231,7 @@ hidden Hidden auto from Data all;
 output Result auto from Hidden all;   
 ```
 
-For additional script examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).
+For additional script examples, see [Guide to the Net# Neural Networks Specification Language](https://go.microsoft.com/fwlink/?LinkId=402867).
 
 > [!TIP]
 > Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve fair amount of sweeping (iterations) over hyperparameters.  

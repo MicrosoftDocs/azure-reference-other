@@ -1,6 +1,6 @@
 ---
 title: "Train Matchbox Recommender | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -21,7 +21,7 @@ manager: cgronlun
  
 This article describes how to use the **Train Matchbox Recommender** module in Azure Machine Learning Studio (classic), to train a recommendation model. 
 
-The recommendation algorithm in Azure Machine Learning is based on the **Matchbox** model, developed by [Microsoft Research](http://research.microsoft.com/projects/). To download a paper that describes the algorithm in detail, click this link on the [Microsoft Research site](http://research.microsoft.com/pubs/79460/www09.pdf).  
+The recommendation algorithm in Azure Machine Learning is based on the **Matchbox** model, developed by [Microsoft Research](https://research.microsoft.com/projects/). To download a paper that describes the algorithm in detail, click this link on the [Microsoft Research site](https://research.microsoft.com/pubs/79460/www09.pdf).  
 
 The **Train Matchbox Recommender** module reads a dataset of user-item-rating triples and, optionally, some user and item features. It returns a trained Matchbox recommender.  You can then use the trained model to generate recommendations, find related users, or find related items, by using the [Score Matchbox Recommender](score-matchbox-recommender.md) module.  
 
@@ -43,7 +43,7 @@ The Matchbox recommender combines these approaches, using collaborative filterin
 
 How this works: When a user is relatively new to the system, predictions are improved by making use of the feature information about the user, thus addressing the well-known "cold-start" problem. However, once you have collected a sufficient number of ratings from a particular user, it is possible to make fully personalized predictions for them based on their specific ratings rather than on their features alone. Hence, there is a smooth transition from content-based recommendations to recommendations based on collaborative filtering. Even if user or item features are not available, Matchbox will still work in its collaborative filtering mode.  
 
-More details on the Matchbox recommender and its underlying probabilistic algorithm can be found in the relevant research paper: [Matchbox: Large Scale Bayesian Recommendations Recommendations](http://research.microsoft.com/pubs/79460/www09.pdf).  In addition, the [Machine Learning Blog](http://blogs.technet.com/b/machinelearning/) has an article titled [Recommendations Everywhere](http://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx) that provides a high-level introduction to recommendation algorithms.  
+More details on the Matchbox recommender and its underlying probabilistic algorithm can be found in the relevant research paper: [Matchbox: Large Scale Bayesian Recommendations Recommendations](https://research.microsoft.com/pubs/79460/www09.pdf).  In addition, the [Machine Learning Blog](https://blogs.technet.com/b/machinelearning/) has an article titled [Recommendations Everywhere](https://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx) that provides a high-level introduction to recommendation algorithms.  
   
 ## How to configure Train Matchbox Recommender  
 
@@ -127,9 +127,9 @@ For an example, see the Restaurant feature data dataset, provided in Azure Machi
   
 ## Examples
 
-For examples of how recommendation models are used in Azure Machine Learning, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how recommendation models are used in Azure Machine Learning, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Movie recommender sample](http://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model.  
+- [Movie recommender sample](https://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model.  
   
 ## Technical notes
 

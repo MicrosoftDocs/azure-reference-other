@@ -1,6 +1,6 @@
 ---
 title: "Multiclass Decision Jungle | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -26,7 +26,7 @@ You define the model and its parameters using this module, and then connect a la
 
 ## More about decision jungles
 
-[Decision jungles](http://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](http://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).
+[Decision jungles](https://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](https://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).
 
 Decision jungles have the following advantages:
 
@@ -36,7 +36,7 @@ Decision jungles have the following advantages:
 
 + They perform integrated feature selection and classification and are resilient in the presence of noisy features.
 
-For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](http://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).
+For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](https://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).
 
 ## How to configure Multiclass Decision Jungle Model
 
@@ -96,9 +96,9 @@ After training is complete:
 
 ## Examples
 
-For examples of how decision forests are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how decision forests are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
-+ [Compare Multiclass Classifiers sample](http://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
++ [Compare Multiclass Classifiers sample](https://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
 
 ## Technical notes
 
@@ -108,7 +108,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 For more information about the training process with the **Replicate** option, see:
 
-+ [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013](http://research.microsoft.com/projects/decisionforests/)
++ [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013](https://research.microsoft.com/projects/decisionforests/)
 
 ### Usage tips
 

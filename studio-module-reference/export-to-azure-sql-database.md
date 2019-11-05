@@ -1,6 +1,6 @@
 ---
 title: "Export to Azure SQL Database | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -69,9 +69,9 @@ To export data, you provide the instance name and database name where the data i
 
 ## Examples
 
-For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):
+For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.azure.ai):
 
-+ [Retail Forecasting Step 1 of 6 - data-preprocessing](http://gallery.cortanaintelligence.com/Experiment/Retail-Forecasting-Step-1-of-6-data-preprocessing-5):  The retail forecasting template illustrates a machine learning task based on data stored in Azure SQLDB. It demonstrates useful techniques, such as using Azure SQL database to pass datasets between experiments in different accounts, saving and combining forecasts, and how to create an Azure SQL database just for machine learning.
++ [Retail Forecasting Step 1 of 6 - data-preprocessing](https://gallery.azure.ai/Experiment/Retail-Forecasting-Step-1-of-6-data-preprocessing-5):  The retail forecasting template illustrates a machine learning task based on data stored in Azure SQLDB. It demonstrates useful techniques, such as using Azure SQL database to pass datasets between experiments in different accounts, saving and combining forecasts, and how to create an Azure SQL database just for machine learning.
 
 + [Build and deploy a machine learning model using SQL Server on an Azure VM](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/walkthroughs-sql-data-warehouse): This article walks you through using a SQL Server database hosted in an Azure VM as a source for storing training data and predictions. It also illustrates how relational database can be used for feature engineering and feature selection.
 

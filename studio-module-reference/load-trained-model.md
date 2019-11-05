@@ -1,6 +1,6 @@
 ---
 title: "Load Trained Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -83,9 +83,9 @@ The following modules can create a saved model that uses the required [iLearner]
 
 ## Examples
 
-For examples of how to use this module, see the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/).
+For examples of how to use this module, see the [Cortana Intelligence Gallery](https://gallery.azure.ai/).
 
-+ [Load a Trained Deep Learning Model](https://gallery.cortanaintelligence.com/Collection/Load-a-Trained-Deep-Learning-Model-3): The example creates a custom neural network for image detection. By using the **Load Trained Model** module, you can easily re-use this model without having to train it, which can be time-consuming.
++ [Load a Trained Deep Learning Model](https://gallery.azure.ai/Collection/Load-a-Trained-Deep-Learning-Model-3): The example creates a custom neural network for image detection. By using the **Load Trained Model** module, you can easily re-use this model without having to train it, which can be time-consuming.
 
     This collection includes a training experiment, to create the model, and a predictive experiment, in which the model is loaded as a web service and used for predictions.
 

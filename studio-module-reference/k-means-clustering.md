@@ -1,6 +1,6 @@
 ---
 title: "K-Means Clustering | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -203,7 +203,7 @@ There are various ways to avoid this problem:
   
 -   Create multiple models, varying the metric or iterating more.  
   
--   Use a method such as PCA to find variables that have a detrimental effect on clustering. See the [Find similar companies](https://gallery.cortanaintelligence.com/Experiment/60cf8e46935c4fafbf86f669121a24f0) sample for a demonstration of this technique.  
+-   Use a method such as PCA to find variables that have a detrimental effect on clustering. See the [Find similar companies](https://gallery.azure.ai/Experiment/60cf8e46935c4fafbf86f669121a24f0) sample for a demonstration of this technique.  
   
 In general, with clustering models, it is possible that any given configuration will result in a locally optimized set of clusters. In other words, the set of clusters returned by the model suits only the current data points, and is not generalizable to other data. If you used a different initial configuration, the K-means method might find a different, perhaps superior, configuration. 
 
@@ -212,13 +212,13 @@ In general, with clustering models, it is possible that any given configuration 
   
 ##  Examples
 
-For examples of how K-means clustering is used in Azure Machine Learning, see these experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how K-means clustering is used in Azure Machine Learning, see these experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Group iris data](https://gallery.cortanaintelligence.com/Experiment/a7299de725a141388f373e9d74ef2f86): Compares the results of **K-Means Clustering** and [Multiclass Logistic Regression](multiclass-logistic-regression.md) for a classification task.
+- [Group iris data](https://gallery.azure.ai/Experiment/a7299de725a141388f373e9d74ef2f86): Compares the results of **K-Means Clustering** and [Multiclass Logistic Regression](multiclass-logistic-regression.md) for a classification task.
   
-- [Color Quantization sample](http://go.microsoft.com/fwlink/?LinkId=525272): Builds multiple K-means models with different parameters to find the optimum image compression.  
+- [Color Quantization sample](https://go.microsoft.com/fwlink/?LinkId=525272): Builds multiple K-means models with different parameters to find the optimum image compression.  
   
--  [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Varies the numbers of centroids to find groups of similar companies in the S&P500.
+-  [Clustering: Similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Varies the numbers of centroids to find groups of similar companies in the S&P500.
   
 ##  <a name="TechnicalNotes"></a> Technical notes  
 

@@ -1,6 +1,6 @@
 ---
 title: "Poisson Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -24,7 +24,7 @@ This article describes how to use the **Poisson Regression** module in Azure Mac
 
 Poisson regression is intended for use in regression models that are used to predict numeric values, typically counts. Therefore, you should use this module to create your regression model only if the values you are trying to predict fit the following conditions:
 
-- The response variable has a [Poisson distribution](http://en.wikipedia.org/wiki/Poisson_distribution).  
+- The response variable has a [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution).  
 
 - Counts cannot be negative. The method will fail outright if you attempt to use it with negative labels.
 
@@ -103,11 +103,11 @@ Because the response variable has a Poisson distribution, the model makes differ
 
 ## Examples
 
-For examples of how Poisson regression is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+For examples of how Poisson regression is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai).
 
-- [Sample 6: Train, Test, Evaluate for Regression: Auto Imports Dataset](https://gallery.cortanaintelligence.com/Experiment/670fbfc40c4f44438bfe72e47432ae7a?r=legacy): This experiment compares the outcomes of two algorithms:  **Poisson Regression** and [Decision Forest Regression](decision-forest-regression.md).
+- [Sample 6: Train, Test, Evaluate for Regression: Auto Imports Dataset](https://gallery.azure.ai/Experiment/670fbfc40c4f44438bfe72e47432ae7a?r=legacy): This experiment compares the outcomes of two algorithms:  **Poisson Regression** and [Decision Forest Regression](decision-forest-regression.md).
 
-- [Preventive Maintenance](https://gallery.cortanaintelligence.com/Experiment/a677f8eececf40eaa158699a2b27e3c8?r=legacy): An extended walkthrough that uses **Poisson Regression** to assess the severity of failures predicted by a decision forest model.
+- [Preventive Maintenance](https://gallery.azure.ai/Experiment/a677f8eececf40eaa158699a2b27e3c8?r=legacy): An extended walkthrough that uses **Poisson Regression** to assess the severity of failures predicted by a decision forest model.
 
 ##  Technical notes
 

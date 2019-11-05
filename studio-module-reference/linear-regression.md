@@ -1,6 +1,6 @@
 ---
 title: "Linear Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -164,13 +164,13 @@ After training is complete:
 
 ## Examples
 
-For examples of regression models, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of regression models, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):
 
-+ [Compare Regressors](http://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
++ [Compare Regressors](https://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
 
-+ [Cross Validation for Regression](http://go.microsoft.com/fwlink/?LinkId=525735): Demonstrates linear regression using ordinary least squares.
++ [Cross Validation for Regression](https://go.microsoft.com/fwlink/?LinkId=525735): Demonstrates linear regression using ordinary least squares.
 
-+ [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
++ [Twitter sentiment analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
 
 ## Technical notes  
 

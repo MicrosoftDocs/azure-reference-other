@@ -1,6 +1,6 @@
 ---
 title: "Import from Azure Table | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -57,11 +57,11 @@ The following steps describe how to manually configure the import source.
 
     - For **Table account name**, type or paste the name of the account that contains the blob you want to access.  
 
-        For example, if the full URL of the storage account is `http://myshared.table.core.windows.net`, you would type `myshared`.  
+        For example, if the full URL of the storage account is `https://myshared.table.core.windows.net`, you would type `myshared`.  
 
     - For **Table account key**, paste the access key that is associated with the storage account.\
 
-        If you don’t know the access key, see the section, “View, copy and regenerate storage access keys” in this article: [About Azure Storage Accounts](http://azure.microsoft.com/documentation/articles/storage-manage-storage-account/).
+        If you don’t know the access key, see the section, “View, copy and regenerate storage access keys” in this article: [About Azure Storage Accounts](https://azure.microsoft.com/documentation/articles/storage-manage-storage-account/).
 
     - For **Table name**, type the name of the specific table that you want to read.
 
@@ -83,7 +83,7 @@ The following steps describe how to manually configure the import source.
 
 ## Examples
 
-For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.azure.ai).
 
 ## Technical notes
 
@@ -117,7 +117,7 @@ Azure Machine Learning supports UTF-8 encoding. If your table uses another encod
 
 #### Are there any prohibited characters or characters that are changed during import?
 
-If attribute data contains quotation marks or escaped character sequences, they are handled by using the rules for such characters in Microsoft Excel. All other characters are handled by using the following specifications as a guideline: [RFC 4180](http://tools.ietf.org/html/rfc4180).
+If attribute data contains quotation marks or escaped character sequences, they are handled by using the rules for such characters in Microsoft Excel. All other characters are handled by using the following specifications as a guideline: [RFC 4180](https://tools.ietf.org/html/rfc4180).
 
 ## Module parameters
 

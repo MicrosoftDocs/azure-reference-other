@@ -1,6 +1,6 @@
 ---
 title: "Apply Math Operation | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -65,15 +65,15 @@ Look for the operation you need in these categories:
 
 ## Examples
 
-For examples of how to use **Apply Math Operation**, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how to use **Apply Math Operation**, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272): One set of column values is subtracted from another, and then the results are squared.  
+- [Color quantization](https://go.microsoft.com/fwlink/?LinkId=525272): One set of column values is subtracted from another, and then the results are squared.  
   
-- [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): The constant 1 is added to all values in a column to distinguish between zeros and missing values.  
+- [Customer relationship prediction](https://go.microsoft.com/fwlink/?LinkId=525941): The constant 1 is added to all values in a column to distinguish between zeros and missing values.  
 
-- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates various operations, including rounding and division.  
+- [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates various operations, including rounding and division.  
 
-- [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses comparison operations to determine whether probability scores meet a required value.  
+- [Direct marketing](https://go.microsoft.com/fwlink/?LinkId=525168): Uses comparison operations to determine whether probability scores meet a required value.  
 
 ## How to use Apply Math Operation  
 

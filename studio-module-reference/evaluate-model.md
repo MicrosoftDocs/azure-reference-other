@@ -1,6 +1,6 @@
 ---
 title: "Evaluate Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -33,9 +33,9 @@ For recommendation models, use the [Evaluate Recommender](evaluate-recommender.m
 > [!TIP]
 > If you are new to model evaluation, we recommend these samples in the Azure AI Gallery, which build a model and then explain how to use the related metrics:
 > 
-> + [Compare regression models](https://gallery.cortanaintelligence.com/Experiment/Compare-Regressors-5)
-> + [Compare binary classifiers](https://gallery.cortanaintelligence.com/Experiment/Compare-Binary-Classifiers-2)
-> + [Compare multiclass classifiers](https://gallery.cortanaintelligence.com/Experiment/Compare-Multi-class-Classifiers-Letter-recognition-2)
+> + [Compare regression models](https://gallery.azure.ai/Experiment/Compare-Regressors-5)
+> + [Compare binary classifiers](https://gallery.azure.ai/Experiment/Compare-Binary-Classifiers-2)
+> + [Compare multiclass classifiers](https://gallery.azure.ai/Experiment/Compare-Multi-class-Classifiers-Letter-recognition-2)
 > 
 > We also recommend the video series by Dr. Stephen Elston, as part of the [machine learning course](https://blogs.technet.microsoft.com/machinelearning/2015/09/08/new-edx-course-data-science-machine-learning-essentials/) from EdX. 
 
@@ -173,17 +173,17 @@ Because clustering models differ significantly from classification and regressio
   
 ## Examples
 
-For examples of how to generate, visualize, and interpret evaluation metrics, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com). These experiments demonstrate how to build multiple models and use **Evaluate Model** to determine which model is the best.  
+For examples of how to generate, visualize, and interpret evaluation metrics, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai). These experiments demonstrate how to build multiple models and use **Evaluate Model** to determine which model is the best.  
   
-- [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): Explains how to compare the performance of different classifiers that were built using the same data.
+- [Compare Binary Classifiers](https://go.microsoft.com/fwlink/?LinkId=525729): Explains how to compare the performance of different classifiers that were built using the same data.
   
-- [Compare Multi-class Classifiers](http://go.microsoft.com/fwlink/?LinkId=525730): Demonstrates how to compare the accuracy of different classification models that were built on the letter recognition dataset.
+- [Compare Multi-class Classifiers](https://go.microsoft.com/fwlink/?LinkId=525730): Demonstrates how to compare the accuracy of different classification models that were built on the letter recognition dataset.
   
-- [Compare Regressors](http://go.microsoft.com/fwlink/?LinkId=525731): Walks you through the process of evaluating different regression models.
+- [Compare Regressors](https://go.microsoft.com/fwlink/?LinkId=525731): Walks you through the process of evaluating different regression models.
 
-- [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271): Learn how to combine evaluation metrics from multiple models.  
+- [Demand estimation](https://go.microsoft.com/fwlink/?LinkId=525271): Learn how to combine evaluation metrics from multiple models.  
   
--  [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): Demonstrates how to evaluate multiple related models.
+-  [Customer relationship prediction](https://go.microsoft.com/fwlink/?LinkId=525941): Demonstrates how to evaluate multiple related models.
   
 ##  Expected inputs
   

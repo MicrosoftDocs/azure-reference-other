@@ -1,6 +1,6 @@
 ---
 title: "Fisher Linear Discriminant Analysis | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -71,9 +71,9 @@ The algorithm determines the combination of values in the input columns that lin
 
 ## Examples
 
-For examples of feature selection in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):
+For examples of feature selection in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai):
 
-- [Fisher Linear Discriminant Analysis](https://gallery.cortanaintelligence.com/Experiment/Fis-her-Linear-Discriminant-Analysis-and-Apply-Transformation-2): Demonstrates how to use this module for dimensionality reduction.
+- [Fisher Linear Discriminant Analysis](https://gallery.azure.ai/Experiment/Fis-her-Linear-Discriminant-Analysis-and-Apply-Transformation-2): Demonstrates how to use this module for dimensionality reduction.
 
 ## Technical notes
 
@@ -93,7 +93,7 @@ The dataset of features is transformed using *eigenvectors*. The eigenvectors fo
 
 The transformation output by the module contains these eigenvectors, which can be applied to transform another dataset that has the same schema.
 
-For more information about how the eigenvalues are calculated, see this paper (PDF): [Eigenvector-based Feature Extraction for Classification](http://www.aaai.org/Papers/FLAIRS/2002/FLAIRS02-070.pdf). Tymbal, Puuronen et al.
+For more information about how the eigenvalues are calculated, see this paper (PDF): [Eigenvector-based Feature Extraction for Classification](https://www.aaai.org/Papers/FLAIRS/2002/FLAIRS02-070.pdf). Tymbal, Puuronen et al.
 
 ## Expected inputs
 

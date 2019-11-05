@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Bayes Point Machine | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -23,7 +23,7 @@ This article describes how to use the **Two-Class Bayes Point Machine** module i
 
 The algorithm in this module uses a Bayesian approach to linear classification called the "Bayes Point Machine". This algorithm efficiently approximates the theoretically optimal Bayesian average of linear classifiers (in terms of generalization performance) by choosing one "average" classifier, the Bayes Point. Because the Bayes Point Machine is a Bayesian classification model, it is not prone to overfitting to the training data.
 
-For more information, see Chris Bishop's post on the Microsoft Machine Learning blog: [Embracing Uncertainty - Probabilistic Inference](http://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx).
+For more information, see Chris Bishop's post on the Microsoft Machine Learning blog: [Embracing Uncertainty - Probabilistic Inference](https://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx).
   
 ## How to configure Two-Class Bayes Point Machine
   
@@ -63,19 +63,19 @@ After training is complete, right-click the output of the [Train Model](train-mo
   
 ## Examples 
 
-To see how the Two-Class Bayes Point Machine is used in machine learning, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see how the Two-Class Bayes Point Machine is used in machine learning, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--  [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
+-  [Compare Binary Classifiers](https://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
 
 ##   Technical notes
 
 This section contains implementation details and frequently asked questions about this algorithm.
 
-Details from the original research and underlying theory are available in this paper (PDF): [Bayes Point Machines, by Herbert, Graepe, and Campbell](http://www.jmlr.org/papers/volume1/herbrich01a/herbrich01a.pdf)  
+Details from the original research and underlying theory are available in this paper (PDF): [Bayes Point Machines, by Herbert, Graepe, and Campbell](https://www.jmlr.org/papers/volume1/herbrich01a/herbrich01a.pdf)  
 
 However, this implementation improves on the original algorithm in several ways:
 
-+ It uses the expectation propagation message-passing algorithm. For more information, see [A family of algorithms for approximate Bayesian inference](http://go.microsoft.com/fwlink/?LinkId=511015).  
++ It uses the expectation propagation message-passing algorithm. For more information, see [A family of algorithms for approximate Bayesian inference](https://go.microsoft.com/fwlink/?LinkId=511015).  
 
 + A parameter sweep is not required.
 

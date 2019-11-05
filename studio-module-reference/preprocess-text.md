@@ -1,6 +1,6 @@
 ---
 title: "Preprocess Text | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -120,11 +120,11 @@ The module currently supports  six languages: English, Spanish, French, Dutch, G
 
 ## Examples
 
-The following examples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) illustrate the use of the **Preprocess Text** module:
+The following examples in the [Azure AI Gallery](https://gallery.azure.ai/) illustrate the use of the **Preprocess Text** module:
 
-- [How to use a custom stopword list](http://gallery.cortanaintelligence.com/Experiment/How-to-remove-custom-stopwords-1)
+- [How to use a custom stopword list](https://gallery.azure.ai/Experiment/How-to-remove-custom-stopwords-1)
 
-- [How to modify the default stopword list](http://gallery.cortanaintelligence.com/Experiment/How-to-modify-default-stopword-list-1)
+- [How to modify the default stopword list](https://gallery.azure.ai/Experiment/How-to-modify-default-stopword-list-1)
 
 ##  <a name="bkmk_TechnicalNotes"></a> Technical notes
 
@@ -201,13 +201,13 @@ The Azure Machine Learning environment includes  lists of the most common stopwo
 |Italian|135|a, adesso, ai|  
 |Spanish|368|ésa, ésta, éste|  
 
-For your convenience, a zipped file containing the default stopwords for all current languages has been made available in Azure storage: [Stopwords.zip](http://az754797.vo.msecnd.net/docs/Stopwords.zip).  
+For your convenience, a zipped file containing the default stopwords for all current languages has been made available in Azure storage: [Stopwords.zip](https://az754797.vo.msecnd.net/docs/Stopwords.zip).  
 
 ### How to modify the stopword list
 
-We expect that many users want to create their own stopword lists, or change the terms included in the default list. The following experiment in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) demonstrates how you can customize a stop word list.  
+We expect that many users want to create their own stopword lists, or change the terms included in the default list. The following experiment in the [Cortana Intelligence Gallery](https://gallery.azure.ai/) demonstrates how you can customize a stop word list.  
 
-- [How to modify the default stopword list](http://gallery.cortanaintelligence.com/Experiment/How-to-modify-default-stopword-list-1)  
+- [How to modify the default stopword list](https://gallery.azure.ai/Experiment/How-to-modify-default-stopword-list-1)  
 
 If you modify the list, or create your own stop word list, observe these requirements:
 

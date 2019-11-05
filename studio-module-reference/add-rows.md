@@ -1,6 +1,6 @@
 ---
 title: "Add Rows | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -49,15 +49,15 @@ This section describes implementation details and common questions.
 
 ## Examples  
 
-To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--  [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271): Combines the result of evaluating multiple models into a single dataset and passes it to an Execute R Script for custom processing  
+-  [Demand estimation](https://go.microsoft.com/fwlink/?LinkId=525271): Combines the result of evaluating multiple models into a single dataset and passes it to an Execute R Script for custom processing  
   
-- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Datasets that contain useful features are cleaned and then combined by using **Add Rows**, [Add Columns](add-columns.md), and [Join Data](join-data.md).  
+- [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): Datasets that contain useful features are cleaned and then combined by using **Add Rows**, [Add Columns](add-columns.md), and [Join Data](join-data.md).  
   
-- [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): Uses **Add Rows** to combine the results of custom metrics that are computed by using [Apply Math Operation](apply-math-operation.md).  
+- [Prediction of student performance](https://go.microsoft.com/fwlink/?LinkId=525727): Uses **Add Rows** to combine the results of custom metrics that are computed by using [Apply Math Operation](apply-math-operation.md).  
   
-- [Time Series Forecasting](http://go.microsoft.com/fwlink/?LinkId=525273): Uses R scripts to generate custom metrics and then combines them in a single table by using **Add Rows**.  
+- [Time Series Forecasting](https://go.microsoft.com/fwlink/?LinkId=525273): Uses R scripts to generate custom metrics and then combines them in a single table by using **Add Rows**.  
   
 ## Expected inputs  
 

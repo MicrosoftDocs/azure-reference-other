@@ -1,7 +1,7 @@
 ---
-title: "Data Transformation - Manipulation | Microsoft Docs"
+title: "Data Transformation: Manipulation | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use for basic data manipulation."
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -38,9 +38,9 @@ The modules in this category are intended to support core data management tasks 
   
 ## Examples
 
-For examples of how to work with complex data in machine learning experiments, see these samples in the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/):
-- [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): Demonstrates key tools and processes.
-- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Illustrates how to partition datasets, and then apply special processing to each partition.
+For examples of how to work with complex data in machine learning experiments, see these samples in the [Azure AI Gallery](https://azure.microsoft.com/documentation/services/machine-learning/models/):
+- [Data Processing and Analysis](https://go.microsoft.com/fwlink/?LinkId=525733): Demonstrates key tools and processes.
+- [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): Illustrates how to partition datasets, and then apply special processing to each partition.
  
 ##  Modules in this category
 
