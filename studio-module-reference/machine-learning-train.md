@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning - Train | Microsoft Docs"
+title: "Train | Microsoft Docs"
 description: This article describes the modules provided in Azure Machine Learning Studio (classic) for training a machine learning model.
 titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019

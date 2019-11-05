@@ -1,5 +1,5 @@
 ---
-title: "R Packages Supported by Azure Machine Learning | Microsoft Docs"
+title: "Supported R Packages | Microsoft Docs"
 titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"

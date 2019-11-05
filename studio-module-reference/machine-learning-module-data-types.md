@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Module Data Types | Microsoft Docs"
+title: "Module Data Types | Microsoft Docs"
 titleSuffix: ML Studio (classic) Azure
 ms.date: 01/31/2018
 ms.service: "machine-learning"
