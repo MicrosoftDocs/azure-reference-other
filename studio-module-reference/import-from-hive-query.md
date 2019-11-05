@@ -1,6 +1,6 @@
 ---
 title: "Import from Hive Query | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

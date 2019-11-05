@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - Initialize Model - Regression | Microsoft Docs"
 description: Description of the modules in Azure Machine Learning Studio (classic) that support creation of regression models.
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
