@@ -26,7 +26,7 @@ You define the model and its parameters using this module, and then connect a la
 
 ## More about decision jungles
 
-[Decision jungles](http://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](http://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).
+[Decision jungles](https://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](https://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).
 
 Decision jungles have the following advantages:
 
@@ -98,7 +98,7 @@ After training is complete:
 
 For examples of how decision forests are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-+ [Compare Multiclass Classifiers sample](http://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
++ [Compare Multiclass Classifiers sample](https://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
 
 ## Technical notes
 

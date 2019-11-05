@@ -57,7 +57,7 @@ After training is complete:
 
 For an example of how anomaly detection is implemented in Azure Machine Learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [On-line Fraud Detection](http://go.microsoft.com/fwlink/?LinkId=525964): Provides a detailed walkthrough of an anomaly detection scenario, including how to engineer features and interpret the results of an algorithm.  
+- [On-line Fraud Detection](https://go.microsoft.com/fwlink/?LinkId=525964): Provides a detailed walkthrough of an anomaly detection scenario, including how to engineer features and interpret the results of an algorithm.  
   
 - [Anomaly Detection: Credit Risk](https://gallery.azureml.net/Experiment/1219e87f8fb84e88a2e1b54256808bb3): Illustrates how to use the [One-Class Support Vector Machine](one-class-support-vector-machine.md) and [PCA-Based Anomaly Detection](pca-based-anomaly-detection.md) modules for fraud detection.  
   

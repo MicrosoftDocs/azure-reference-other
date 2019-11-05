@@ -35,7 +35,7 @@ Decision trees have many advantages:
 + They perform integrated feature selection and classification.
 + They are resilient in the presence of noisy features.
 
-The decision forest classifier in Azure Machine Learning Studio (classic) consists of an ensemble of decision trees. Generally, ensemble models provide better coverage and accuracy than single decision trees. For more information, see [Decision trees](http://go.microsoft.com/fwlink/?LinkId=403677).
+The decision forest classifier in Azure Machine Learning Studio (classic) consists of an ensemble of decision trees. Generally, ensemble models provide better coverage and accuracy than single decision trees. For more information, see [Decision trees](https://go.microsoft.com/fwlink/?LinkId=403677).
 
 ## How to configure Multiclass Decision Forest
 
@@ -103,7 +103,7 @@ After training is complete:
 
 For examples of how decision forests are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-+ [Compare Multiclass Classifiers sample](http://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
++ [Compare Multiclass Classifiers sample](https://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
 
 ## Technical notes
 

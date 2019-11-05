@@ -51,7 +51,7 @@ The following diagram shows the distribution of numeric values before and after 
 
  ![raw data and data binned and normalized](media/aml-quantizationexample.png "AML_QuantizationExample")  
 
-Another approach to binning  is demonstrated in the [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726) sample, in which [Group Data into Bins](group-data-into-bins.md) is used to assign patients to various control and test groups, to guarantee that each group has an equal number of patients.  
+Another approach to binning  is demonstrated in the [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726) sample, in which [Group Data into Bins](group-data-into-bins.md) is used to assign patients to various control and test groups, to guarantee that each group has an equal number of patients.  
 
 Because there are so many ways to group data, all customizable, we recommend that you experiment with different methods and values. The [Examples](#bkmk_Examples) section contains links to sample experiments that demonstrate how to use the different binning algorithms.
 
@@ -137,9 +137,9 @@ To see how well the binning method functions as a predictor, you can click the d
 
 For examples of how quantization is applied in machine learning scenarios, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-+ [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): In this sample, binning is used to divide patients into equal groups by using the patient ID field.
-+ [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Uses quantile normalization to sort cases into 10 bins.
-+ [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Scores are grouped into five bins representing the ranking scores.
++ [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): In this sample, binning is used to divide patients into equal groups by using the patient ID field.
++ [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525725): Uses quantile normalization to sort cases into 10 bins.
++ [Twitter sentiment analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Scores are grouped into five bins representing the ranking scores.
 
 ## Technical notes
 

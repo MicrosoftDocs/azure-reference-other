@@ -70,13 +70,13 @@ To perform a join on two datasets, they must be related by a **single** key colu
 
 You can see examples of how this module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): [Join Data](join-data.md) is used to combine the positive training cases with the negative training cases after the proportion of cases has been adjusted.  
+- [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): [Join Data](join-data.md) is used to combine the positive training cases with the negative training cases after the proportion of cases has been adjusted.  
   
-- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725): In this sample, [Join Data](join-data.md) is used to bring together useful features from external datasets.  
+- [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525725): In this sample, [Join Data](join-data.md) is used to bring together useful features from external datasets.  
   
-- [Movie recommendation](http://go.microsoft.com/fwlink/?LinkId=525276): Two datasets are joined so that we can present the recommended movie titles rather than a movie ID.  
+- [Movie recommendation](https://go.microsoft.com/fwlink/?LinkId=525276): Two datasets are joined so that we can present the recommended movie titles rather than a movie ID.  
   
-- [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): In this sample, [Join Data](join-data.md) is used to bring in new features.  
+- [Prediction of student performance](https://go.microsoft.com/fwlink/?LinkId=525727): In this sample, [Join Data](join-data.md) is used to bring in new features.  
 
 ##  Technical notes  
 

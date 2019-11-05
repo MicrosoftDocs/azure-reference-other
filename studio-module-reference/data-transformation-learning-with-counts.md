@@ -66,7 +66,7 @@ These are the steps you take to create count-based features:
  
 ## Examples
 
-In [Use Azure Machine Learning to build clickthrough prediction models](http://go.microsoft.com/fwlink/?LinkId=699305), the Microsoft Machine Learning team provides a detailed walkthrough of how to use counts in machine learning. The article compares the efficacy of count-based modeling with other methods.
+In [Use Azure Machine Learning to build clickthrough prediction models](https://go.microsoft.com/fwlink/?LinkId=699305), the Microsoft Machine Learning team provides a detailed walkthrough of how to use counts in machine learning. The article compares the efficacy of count-based modeling with other methods.
  
 ## Technical notes
 

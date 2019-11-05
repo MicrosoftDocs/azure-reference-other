@@ -75,9 +75,9 @@ Because this module has been deprecated, there are no examples of this module in
 
 To see examples of updated clustering models, see these experiments:
   
-- [Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272): Uses clustering to group images by color patterns to reduce the number of bits needed to represent each image.  
+- [Color quantization](https://go.microsoft.com/fwlink/?LinkId=525272): Uses clustering to group images by color patterns to reduce the number of bits needed to represent each image.  
   
-- [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses clustering with text extracted from Wikipedia description to find companies in predefined categories.  
+- [Clustering: Similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Uses clustering with text extracted from Wikipedia description to find companies in predefined categories.  
   
 ##  Technical notes
 

@@ -117,7 +117,7 @@ We recommend that you remove non-numeric columns, to avoid complex tables with m
 
 To see how this module is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
--   [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): This sample demonstrates multiple techniques for modifying your data. [Compute Linear Correlation](compute-linear-correlation.md) is used to identify potential feature columns.  
+-   [Data Processing and Analysis](https://go.microsoft.com/fwlink/?LinkId=525733): This sample demonstrates multiple techniques for modifying your data. [Compute Linear Correlation](compute-linear-correlation.md) is used to identify potential feature columns.  
   
 ##  Technical notes
 

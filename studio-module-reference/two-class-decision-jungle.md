@@ -25,7 +25,7 @@ The **Two-Class Decision Jungle** module returns an untrained classifier. You th
   
 ###  More about decision jungles
 
-[Decision jungles](http://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](http://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).  
+[Decision jungles](https://go.microsoft.com/fwlink/?LinkId=403675) are a recent extension to [decision forests](https://go.microsoft.com/fwlink/?LinkId=403677). A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).  
   
 Decision jungles have the following advantages:  
   

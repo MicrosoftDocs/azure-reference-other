@@ -28,11 +28,11 @@ This article describes the text analytics modules included in Azure Machine Lear
 
 For examples of text analytics using Azure Machine Learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
 
-- [News categorization](http://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
+- [News categorization](https://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
 
-- [Find similar companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.  
+- [Find similar companies](https://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.  
   
-- [Text classification](http://go.microsoft.com/fwlink/?LinkId=525957): Demonstrates the end-to-end process of using text from Twitter messages in sentiment analysis (five-part sample).
+- [Text classification](https://go.microsoft.com/fwlink/?LinkId=525957): Demonstrates the end-to-end process of using text from Twitter messages in sentiment analysis (five-part sample).
 
 ##  List of modules
 

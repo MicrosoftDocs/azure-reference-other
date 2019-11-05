@@ -84,7 +84,7 @@ After you have defined a filter that meets your needs, you can apply the filter 
 
 For examples of how filters are used in machine learning, see this experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--  [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
+-  [Filters](https://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
 
 ## Technical Notes
 

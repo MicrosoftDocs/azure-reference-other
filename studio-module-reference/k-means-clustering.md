@@ -216,9 +216,9 @@ For examples of how K-means clustering is used in Azure Machine Learning, see th
   
 - [Group iris data](https://gallery.cortanaintelligence.com/Experiment/a7299de725a141388f373e9d74ef2f86): Compares the results of **K-Means Clustering** and [Multiclass Logistic Regression](multiclass-logistic-regression.md) for a classification task.
   
-- [Color Quantization sample](http://go.microsoft.com/fwlink/?LinkId=525272): Builds multiple K-means models with different parameters to find the optimum image compression.  
+- [Color Quantization sample](https://go.microsoft.com/fwlink/?LinkId=525272): Builds multiple K-means models with different parameters to find the optimum image compression.  
   
--  [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Varies the numbers of centroids to find groups of similar companies in the S&P500.
+-  [Clustering: Similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Varies the numbers of centroids to find groups of similar companies in the S&P500.
   
 ##  <a name="TechnicalNotes"></a> Technical notes  
 

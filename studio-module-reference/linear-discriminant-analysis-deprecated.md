@@ -67,7 +67,7 @@ The module has two outputs:
 
 To see examples of how feature selection is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-+ [Twitter Sentiment Analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Uses filter-Based Feature Selection to improve experiment results.
++ [Twitter Sentiment Analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Uses filter-Based Feature Selection to improve experiment results.
 
 + [Fisher Linear Discriminant Analysis](https://gallery.cortanaintelligence.com/Details/35da9465c13f4050babff2f297284dc1): Demonstrates how to use this module for dimensionality reduction.
 

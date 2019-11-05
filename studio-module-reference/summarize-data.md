@@ -87,11 +87,11 @@ The report from the module can include the following statistics.
 
 For examples of how to use the **Summarize Data** module in an experiment, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
 
-- [Download dataset from UCI](http://go.microsoft.com/fwlink/?LinkId=525938): Reads a dataset in CSV format by using its URL in the UCI Machine Learning Repository, and generates some basic statistics about the dataset. 
+- [Download dataset from UCI](https://go.microsoft.com/fwlink/?LinkId=525938): Reads a dataset in CSV format by using its URL in the UCI Machine Learning Repository, and generates some basic statistics about the dataset. 
 
-- [Dataset Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): Loads the dataset into the workspace, changes column names, and adds metadata.
+- [Dataset Processing and Analysis](https://go.microsoft.com/fwlink/?LinkId=525733): Loads the dataset into the workspace, changes column names, and adds metadata.
 
-- [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): Reads data stored in TSV format from Azure Blob storage.
+- [Prediction of student performance](https://go.microsoft.com/fwlink/?LinkId=525727): Reads data stored in TSV format from Azure Blob storage.
 
 ## <a name="bkmk_Notes"></a> Technical notes
 

@@ -175,15 +175,15 @@ Because clustering models differ significantly from classification and regressio
 
 For examples of how to generate, visualize, and interpret evaluation metrics, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com). These experiments demonstrate how to build multiple models and use **Evaluate Model** to determine which model is the best.  
   
-- [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): Explains how to compare the performance of different classifiers that were built using the same data.
+- [Compare Binary Classifiers](https://go.microsoft.com/fwlink/?LinkId=525729): Explains how to compare the performance of different classifiers that were built using the same data.
   
-- [Compare Multi-class Classifiers](http://go.microsoft.com/fwlink/?LinkId=525730): Demonstrates how to compare the accuracy of different classification models that were built on the letter recognition dataset.
+- [Compare Multi-class Classifiers](https://go.microsoft.com/fwlink/?LinkId=525730): Demonstrates how to compare the accuracy of different classification models that were built on the letter recognition dataset.
   
-- [Compare Regressors](http://go.microsoft.com/fwlink/?LinkId=525731): Walks you through the process of evaluating different regression models.
+- [Compare Regressors](https://go.microsoft.com/fwlink/?LinkId=525731): Walks you through the process of evaluating different regression models.
 
-- [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271): Learn how to combine evaluation metrics from multiple models.  
+- [Demand estimation](https://go.microsoft.com/fwlink/?LinkId=525271): Learn how to combine evaluation metrics from multiple models.  
   
--  [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): Demonstrates how to evaluate multiple related models.
+-  [Customer relationship prediction](https://go.microsoft.com/fwlink/?LinkId=525941): Demonstrates how to evaluate multiple related models.
   
 ##  Expected inputs
   

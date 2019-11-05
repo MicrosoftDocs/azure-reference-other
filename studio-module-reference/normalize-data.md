@@ -111,7 +111,7 @@ The **Normalize Data** module generates two outputs:
 
 For examples of how normalization is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
 
-- [Credit risk prediction](http://go.microsoft.com/fwlink/?LinkId=525270): In this sample, normalization is applied to all numeric data except the class column, the credit risk score. This example uses the **tanh** transformation, which converts all numeric features to values within a range of 0-1.
+- [Credit risk prediction](https://go.microsoft.com/fwlink/?LinkId=525270): In this sample, normalization is applied to all numeric data except the class column, the credit risk score. This example uses the **tanh** transformation, which converts all numeric features to values within a range of 0-1.
 
 ## Technical notes
 

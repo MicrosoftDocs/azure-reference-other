@@ -103,9 +103,9 @@ After training is complete:
 
 For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
 
-- [Network intrusion detection](http://go.microsoft.com/fwlink/?LinkId=525724): Uses binary logistic regression to determine whether a case represents an intrusion.  
+- [Network intrusion detection](https://go.microsoft.com/fwlink/?LinkId=525724): Uses binary logistic regression to determine whether a case represents an intrusion.  
 
-- [Cross-Validation for Binary Classifier](http://go.microsoft.com/fwlink/?LinkId=525735): Demonstrates the use of logistic regression in a typical experimental workflow, including model evaluation.  
+- [Cross-Validation for Binary Classifier](https://go.microsoft.com/fwlink/?LinkId=525735): Demonstrates the use of logistic regression in a typical experimental workflow, including model evaluation.  
 
 ##  <a name="bkmk_Notes"></a> Technical notes
 

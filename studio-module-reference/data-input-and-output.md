@@ -62,8 +62,8 @@ The following articles introduce common data scenarios in machine learning:
   
 ### Sample experiments
   
--   [Data processing](http://go.microsoft.com/fwlink/?LinkId=525733)
--   [Download data](http://go.microsoft.com/fwlink/?LinkId=525938)
+-   [Data processing](https://go.microsoft.com/fwlink/?LinkId=525733)
+-   [Download data](https://go.microsoft.com/fwlink/?LinkId=525938)
   
 ## List of modules
 

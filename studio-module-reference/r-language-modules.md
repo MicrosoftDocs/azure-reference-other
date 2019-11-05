@@ -162,7 +162,7 @@ For additional R code samples and help with R and its applications, see these re
 
 - [Bioconductor](http://bioconductor.org/): A large repository of R packages in bioinformatics.
 
-- [Quick Start Guide for R](http://go.microsoft.com/fwlink/?LinkId=524954): A detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio (classic).
+- [Quick Start Guide for R](https://go.microsoft.com/fwlink/?LinkId=524954): A detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio (classic).
 
 ## See also
 

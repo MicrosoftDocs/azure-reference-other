@@ -114,13 +114,13 @@ For example, in a dataset with the columns Col1, Col2, Col3, and Col4, you could
 
 For examples of how to use [Select Columns in Dataset](select-columns-in-dataset.md), see these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
   
--   The [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726) sample uses [Select Columns in Dataset](select-columns-in-dataset.md) to remove a trailing empty column, remove a column with duplicate data, and to project training and test sets.  
+-   The [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726) sample uses [Select Columns in Dataset](select-columns-in-dataset.md) to remove a trailing empty column, remove a column with duplicate data, and to project training and test sets.  
   
--   In the [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525725) sample, [Select Columns in Dataset](select-columns-in-dataset.md) is used to exclude all string columns and to exclude columns by name.  
+-   In the [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525725) sample, [Select Columns in Dataset](select-columns-in-dataset.md) is used to exclude all string columns and to exclude columns by name.  
   
--   In the [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727) sample, [Select Columns in Dataset](select-columns-in-dataset.md) is used to get all temporal features, and to exclude multiple columns.  
+-   In the [Prediction of student performance](https://go.microsoft.com/fwlink/?LinkId=525727) sample, [Select Columns in Dataset](select-columns-in-dataset.md) is used to get all temporal features, and to exclude multiple columns.  
   
--   In the [Compare Regressors](http://go.microsoft.com/fwlink/?LinkId=525731) sample, [Select Columns in Dataset](select-columns-in-dataset.md) is used to exclude the column, **num-of-doors**, because it is the wrong data type for the math operation that follows.  
+-   In the [Compare Regressors](https://go.microsoft.com/fwlink/?LinkId=525731) sample, [Select Columns in Dataset](select-columns-in-dataset.md) is used to exclude the column, **num-of-doors**, because it is the wrong data type for the math operation that follows.  
 
 ### <a name ="bkmk_scenarios"></a>Common scenarios for column selection 
   

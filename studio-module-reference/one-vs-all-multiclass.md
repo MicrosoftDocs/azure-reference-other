@@ -69,9 +69,9 @@ Alternatively, you can pass the untrained classifier to [Cross-Validate Model](c
 
 For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-- [News Categorization](http://go.microsoft.com/fwlink/?LinkId=525167): This sample uses **One-Vs-All Multiclass** with a [Two-Class Decision Forest](two-class-decision-forest.md) model.
+- [News Categorization](https://go.microsoft.com/fwlink/?LinkId=525167): This sample uses **One-Vs-All Multiclass** with a [Two-Class Decision Forest](two-class-decision-forest.md) model.
 
-- [Compare Multiclass Classifier sample](http://go.microsoft.com/fwlink/?LinkId=525730): Binary classifiers are used for each digit and the results are combined.
+- [Compare Multiclass Classifier sample](https://go.microsoft.com/fwlink/?LinkId=525730): Binary classifiers are used for each digit and the results are combined.
 
 ## Expected inputs
 

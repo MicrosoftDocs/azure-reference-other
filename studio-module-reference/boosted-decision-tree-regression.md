@@ -112,9 +112,9 @@ After training is complete:
  
 For examples of how boosted trees are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):  
 
-- [Demand estimation](http://go.microsoft.com/fwlink/?LinkId=525271): Uses **Boosted Decision Tree Regression** to predict the number of rentals for a particular time.  
+- [Demand estimation](https://go.microsoft.com/fwlink/?LinkId=525271): Uses **Boosted Decision Tree Regression** to predict the number of rentals for a particular time.  
   
-- [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Uses regression to generate a predicted rating.  
+- [Twitter sentiment analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Uses regression to generate a predicted rating.  
   
 ##  Technical notes
 

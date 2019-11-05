@@ -71,7 +71,7 @@ The dataset you apply the transformation to must have the same schema as the ori
 
 For examples of how Principal Component Analysis is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
 
-- [Clustering: Find Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses Principal Component Analysis to reduce the number of values from text mining to a manageable number of features.
+- [Clustering: Find Similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Uses Principal Component Analysis to reduce the number of values from text mining to a manageable number of features.
 
     Although in this sample PCA is applied using a custom R script, it illustrates how PCA is typically used.
 

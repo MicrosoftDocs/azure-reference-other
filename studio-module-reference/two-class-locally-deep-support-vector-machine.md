@@ -160,7 +160,7 @@ As a consequence of these optimizations, training the LD-SVM model is exponentia
   
 ### Research
 
-For more information about the algorithm and underlying research, see [Local Deep Kernel Learning for Efficient Non-linear SVM Prediction](http://go.microsoft.com/fwlink/?LinkId=511662).  
+For more information about the algorithm and underlying research, see [Local Deep Kernel Learning for Efficient Non-linear SVM Prediction](https://go.microsoft.com/fwlink/?LinkId=511662).  
 
 ##  Module parameters  
   

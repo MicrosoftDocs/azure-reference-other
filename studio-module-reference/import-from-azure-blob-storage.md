@@ -126,9 +126,9 @@ The following steps describe how to manually configure the import source.
 
 To learn how to use data from Azure blob storage in machine learning experiments, see the [Azure Gallery](https://gallery.cortanaintelligence.com):
 
-- [News Categorization sample](http://go.microsoft.com/fwlink/?LinkId=525167): Loads and then combines multiple datasets from Azure blob storage.
+- [News Categorization sample](https://go.microsoft.com/fwlink/?LinkId=525167): Loads and then combines multiple datasets from Azure blob storage.
 
-- [Student Performance sample](http://go.microsoft.com/fwlink/?LinkId=525727): Reads data that is stored in the TSV format from Azure blob storage.
+- [Student Performance sample](https://go.microsoft.com/fwlink/?LinkId=525727): Reads data that is stored in the TSV format from Azure blob storage.
 
 ## <a name="bkmk_Notes"></a> Technical notes
 

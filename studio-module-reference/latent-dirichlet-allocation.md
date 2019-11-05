@@ -151,7 +151,7 @@ In Studio, you can also use R or Python libraries for text processing: [Execute 
 
 For examples of text analytics, see these experiments in the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models):
 
-+ [Execute Python Script](http://go.microsoft.com/fwlink/?LinkId=525942): Uses natural language processing in Python to clean and transform text.
++ [Execute Python Script](https://go.microsoft.com/fwlink/?LinkId=525942): Uses natural language processing in Python to clean and transform text.
 
 For details and an example based on customer review text, see [Understanding LDA Results](#bkmk_Understanding).
 

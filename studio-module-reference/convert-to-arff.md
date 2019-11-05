@@ -52,9 +52,9 @@ For more information about the Weka toolset, see this Wikipedia article: [Weka (
 
 There are no examples specific to this format in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). However, these experiments  demonstrate other types of format conversion:
   
-- [Color-Based Image Compression](http://go.microsoft.com/fwlink/?LinkId=525272): Exports the datasets used for each portion of the analysis to files for reproducibility and use on other analytics platforms.  
+- [Color-Based Image Compression](https://go.microsoft.com/fwlink/?LinkId=525272): Exports the datasets used for each portion of the analysis to files for reproducibility and use on other analytics platforms.  
   
-- [Cross Validation for Binary Classification sample](http://go.microsoft.com/fwlink/?LinkId=525734): Exports the results of cross validation to files so that the results for multiple models can be compared by using a tool such as Excel.  
+- [Cross Validation for Binary Classification sample](https://go.microsoft.com/fwlink/?LinkId=525734): Exports the results of cross validation to files so that the results for multiple models can be compared by using a tool such as Excel.  
   
 ## <a name="bkmk_Notes"></a> Technical notes  
 

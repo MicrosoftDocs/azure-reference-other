@@ -66,11 +66,11 @@ Packages cannot be shared across separate instances of the **Execute R Script** 
 
 There are many examples of custom R script in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
 
-- [Student performance](http://go.microsoft.com/fwlink/?LinkId=525727): Uses custom R script to combine the results of evaluations for multiple models into a single dataset. This sample also uses R code in the **Execute R Script** module to compute 16 time-dependent columns.
+- [Student performance](https://go.microsoft.com/fwlink/?LinkId=525727): Uses custom R script to combine the results of evaluations for multiple models into a single dataset. This sample also uses R code in the **Execute R Script** module to compute 16 time-dependent columns.
 
-- [Breast cancer](http://go.microsoft.com/fwlink/?LinkId=525726): Uses custom code in the **Execute R Script** module to replicate positive examples and to combine metrics.
+- [Breast cancer](https://go.microsoft.com/fwlink/?LinkId=525726): Uses custom code in the **Execute R Script** module to replicate positive examples and to combine metrics.
 
-- [Time series forecasting](http://go.microsoft.com/fwlink/?LinkId=525273): This sample uses **Execute R Script** to generate custom metrics, and then combines them into a single table by using the [Add Rows](add-rows.md) module.
+- [Time series forecasting](https://go.microsoft.com/fwlink/?LinkId=525273): This sample uses **Execute R Script** to generate custom metrics, and then combines them into a single table by using the [Add Rows](add-rows.md) module.
 
 ## How to configure Execute R Script
 

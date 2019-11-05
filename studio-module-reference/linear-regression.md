@@ -166,11 +166,11 @@ After training is complete:
 
 For examples of regression models, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-+ [Compare Regressors](http://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
++ [Compare Regressors](https://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
 
-+ [Cross Validation for Regression](http://go.microsoft.com/fwlink/?LinkId=525735): Demonstrates linear regression using ordinary least squares.
++ [Cross Validation for Regression](https://go.microsoft.com/fwlink/?LinkId=525735): Demonstrates linear regression using ordinary least squares.
 
-+ [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
++ [Twitter sentiment analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
 
 ## Technical notes  
 

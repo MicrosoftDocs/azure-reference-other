@@ -104,9 +104,9 @@ After training is complete:
 
 For examples of regression models, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
 
-- [Compare Regression Models sample](http://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
+- [Compare Regression Models sample](https://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
 
-- [Sentiment analysis sample](http://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
+- [Sentiment analysis sample](https://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
 
 ##  Technical notes
 

@@ -89,9 +89,9 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
 
 + [Iris clustering](https://gallery.azureml.net/Experiment/a7299de725a141388f373e9d74ef2f86): Compares the results of multiclass logistic regression with K-means clustering.
 
-+ [Network intrusion detection](http://go.microsoft.com/fwlink/?LinkId=525724): Uses binary logistic regression to determine if a case represents an intrusion.
++ [Network intrusion detection](https://go.microsoft.com/fwlink/?LinkId=525724): Uses binary logistic regression to determine if a case represents an intrusion.
 
-+ [Cross Validation for Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525734): Demonstrates the use of logistic regression in a typical experimental workflow, including model evaluation.
++ [Cross Validation for Binary Classifiers](https://go.microsoft.com/fwlink/?LinkId=525734): Demonstrates the use of logistic regression in a typical experimental workflow, including model evaluation.
 
 ## <a name="bkmk_Notes"></a> Technical notes
 

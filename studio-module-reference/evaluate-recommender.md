@@ -179,7 +179,7 @@ Therefore, to evaluate, the recommender scoring module must only predict related
 
 For examples of how recommendation models are used in Azure Machine Learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Movie recommender sample](http://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model. 
+- [Movie recommender sample](https://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model. 
 
 - [Building recommendation engine for .NET applications using Azure Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/): This blog provides a detailed description of how to build a movie recommendation model. 
 

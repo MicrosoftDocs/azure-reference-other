@@ -156,7 +156,7 @@ You can create a count-based feature transformation directly from a dataset, and
 
 See these articles for more information about the counts algorithm and the efficacy of count-based modeling compared to other methods.
 
-+ [Using Azure ML to Build Click-through Prediction Models](http://go.microsoft.com/fwlink/?LinkId=699305)
++ [Using Azure ML to Build Click-through Prediction Models](https://go.microsoft.com/fwlink/?LinkId=699305)
 + [Big Learning Made Easy with Counts!](https://blogs.technet.microsoft.com/machinelearning/2015/02/17/big-learning-made-easy-with-counts/)
 
 The following experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) demonstrate how to use count-based learning to build various predictive models:

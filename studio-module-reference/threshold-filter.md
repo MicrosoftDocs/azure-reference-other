@@ -90,7 +90,7 @@ Alternatively, if you select the **Indicator** option, instead of returning the 
 
 For examples of how filters are used in machine learning, see this experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--  [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
+-  [Filters](https://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
 
 ### Examples of indicator values
 

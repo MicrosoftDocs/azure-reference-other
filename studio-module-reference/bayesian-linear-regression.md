@@ -60,7 +60,7 @@ After training is complete:
 
 For examples of regression models, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
   
-- [Compare Regression Models sample](http://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.  
+- [Compare Regression Models sample](https://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.  
   
 ## <a name="bkmk_Notes"></a>Technical notes
 

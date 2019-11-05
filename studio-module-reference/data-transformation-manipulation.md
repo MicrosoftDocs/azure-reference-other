@@ -39,8 +39,8 @@ The modules in this category are intended to support core data management tasks 
 ## Examples
 
 For examples of how to work with complex data in machine learning experiments, see these samples in the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/):
-- [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): Demonstrates key tools and processes.
-- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Illustrates how to partition datasets, and then apply special processing to each partition.
+- [Data Processing and Analysis](https://go.microsoft.com/fwlink/?LinkId=525733): Demonstrates key tools and processes.
+- [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): Illustrates how to partition datasets, and then apply special processing to each partition.
  
 ##  Modules in this category
 

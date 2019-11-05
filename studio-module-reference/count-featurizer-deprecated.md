@@ -81,7 +81,7 @@ If you have existing count-based features or data that you want to use in a new 
 
 Explore examples of count-based featurization in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
+- [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
 
 - [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): Demonstrates the use of count-based features in a multiclass prediction task.
 

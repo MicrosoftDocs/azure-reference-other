@@ -57,9 +57,9 @@ A common use of scoring is to return the output as part of a predictive web serv
 
 For examples of how [Score Model](score-model.md) is used in an experimental workflow, see the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/):  
 
-- [Compare Binary Classification Models](http://go.microsoft.com/fwlink/?LinkId=525729)
-- [Compare Multiclass Classification Models](http://go.microsoft.com/fwlink/?LinkId=525730)
-- [Compare Multiple Regression Models](http://go.microsoft.com/fwlink/?LinkId=525731)
+- [Compare Binary Classification Models](https://go.microsoft.com/fwlink/?LinkId=525729)
+- [Compare Multiclass Classification Models](https://go.microsoft.com/fwlink/?LinkId=525730)
+- [Compare Multiple Regression Models](https://go.microsoft.com/fwlink/?LinkId=525731)
 
 ## Technical notes
 

@@ -57,7 +57,7 @@ After you have defined a filter that meets your needs, you can apply the filter 
 
 For more examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-- [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types. The example uses an engineered waveform dataset to more easily illustrate the effects of the different filters.  
+- [Filters](https://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types. The example uses an engineered waveform dataset to more easily illustrate the effects of the different filters.  
 
 ###  FIR filter example: Exponential weighted moving average
 

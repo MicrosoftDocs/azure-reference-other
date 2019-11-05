@@ -215,7 +215,7 @@ FROM t1;
 
 For an example of how this module might be used in machine learning experiments, see this sample in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--  [Apply SQL Transformation](http://go.microsoft.com/fwlink/?LinkId=525947): Uses the Restaurant Ratings, Restaurant Features, and Restaurant Customers dataset to illustrate simple joins, select statements, and aggregate functions.
+-  [Apply SQL Transformation](https://go.microsoft.com/fwlink/?LinkId=525947): Uses the Restaurant Ratings, Restaurant Features, and Restaurant Customers dataset to illustrate simple joins, select statements, and aggregate functions.
 
 ##  <a name="bkmk_Notes"></a> Technical notes  
 

@@ -97,11 +97,11 @@ After training is complete:
 
 For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses an SVM model to classify customers by appetency.
+- [Direct marketing](https://go.microsoft.com/fwlink/?LinkId=525168): Uses an SVM model to classify customers by appetency.
   
-- [Credit risk prediction](http://go.microsoft.com/fwlink/?LinkId=525270): Uses SVM for assessing credit risk.  
+- [Credit risk prediction](https://go.microsoft.com/fwlink/?LinkId=525270): Uses SVM for assessing credit risk.  
   
-- [Compare Multiclass Classifiers](http://go.microsoft.com/fwlink/?LinkId=525730):Uses an SVM model for handwriting recognition.  
+- [Compare Multiclass Classifiers](https://go.microsoft.com/fwlink/?LinkId=525730):Uses an SVM model for handwriting recognition.  
   
 ## Technical notes
 

@@ -165,13 +165,13 @@ If you need to repeat cleaning operations often, we recommend that you save your
 
 See examples of how this module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--   [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): In this sample, zeros are inserted for missing values.  
+-   [Prediction of student performance](https://go.microsoft.com/fwlink/?LinkId=525727): In this sample, zeros are inserted for missing values.  
   
--   [Cross Validation for Binary Classifier sample](http://go.microsoft.com/fwlink/?LinkId=525734): Zeros are used to fill-in for missing values, and an indicator column is created to track the changes. Columns with all missing values are also retained.  
+-   [Cross Validation for Binary Classifier sample](https://go.microsoft.com/fwlink/?LinkId=525734): Zeros are used to fill-in for missing values, and an indicator column is created to track the changes. Columns with all missing values are also retained.  
   
--   [Dataset Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): In this sample, different branches of the experiment use different methods for missing value substitution, and the datasets are then evaluated by using [Summarize Data](summarize-data.md) and [Compute Linear Correlation](compute-linear-correlation.md).
+-   [Dataset Processing and Analysis](https://go.microsoft.com/fwlink/?LinkId=525733): In this sample, different branches of the experiment use different methods for missing value substitution, and the datasets are then evaluated by using [Summarize Data](summarize-data.md) and [Compute Linear Correlation](compute-linear-correlation.md).
   
--   [Flight delay prediction sample](http://go.microsoft.com/fwlink/?LinkId=525725): Empty rows are removed entirely.  
+-   [Flight delay prediction sample](https://go.microsoft.com/fwlink/?LinkId=525725): Empty rows are removed entirely.  
   
 ##  <a name="bkmk_TechNotes"></a> Technical notes  
 

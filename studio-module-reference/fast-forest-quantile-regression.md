@@ -165,7 +165,7 @@ After training is complete:
 
 For examples of how to use this module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):  
   
-- [Quantile Regression](http://go.microsoft.com/fwlink/?LinkId=525769): Demonstrates how to build and interpret a quantile regression model, using the auto price dataset.
+- [Quantile Regression](https://go.microsoft.com/fwlink/?LinkId=525769): Demonstrates how to build and interpret a quantile regression model, using the auto price dataset.
 
 ##  <a name="bkmk_Notes"></a> Technical notes
 

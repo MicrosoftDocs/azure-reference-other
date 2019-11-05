@@ -65,7 +65,7 @@ After training is complete, right-click the output of the [Train Model](train-mo
 
 To see how the Two-Class Bayes Point Machine is used in machine learning, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
--  [Compare Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
+-  [Compare Binary Classifiers](https://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
 
 ##   Technical notes
 
@@ -75,7 +75,7 @@ Details from the original research and underlying theory are available in this p
 
 However, this implementation improves on the original algorithm in several ways:
 
-+ It uses the expectation propagation message-passing algorithm. For more information, see [A family of algorithms for approximate Bayesian inference](http://go.microsoft.com/fwlink/?LinkId=511015).  
++ It uses the expectation propagation message-passing algorithm. For more information, see [A family of algorithms for approximate Bayesian inference](https://go.microsoft.com/fwlink/?LinkId=511015).  
 
 + A parameter sweep is not required.
 

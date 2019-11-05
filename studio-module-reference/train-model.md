@@ -122,8 +122,8 @@ If you need to train a type of model not supported by **Train Model**, there are
 
 For examples of how the **Train Model** module is used in machine learning experiments, see these experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-+ [Retail Forecasting](http://go.microsoft.com/fwlink/?LinkId=525950): Demonstrates how to build, train, and compare multiple models.
-+ [Flight Delay Prediction](http://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates how to train multiple related classification models.
++ [Retail Forecasting](https://go.microsoft.com/fwlink/?LinkId=525950): Demonstrates how to build, train, and compare multiple models.
++ [Flight Delay Prediction](https://go.microsoft.com/fwlink/?LinkId=525725): Demonstrates how to train multiple related classification models.
 
 ##  Expected inputs  
   

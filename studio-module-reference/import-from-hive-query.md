@@ -111,7 +111,7 @@ For examples of how to configure an HDInsight cluster and use Hive queries in ma
 
 Although Hive offers superior features for many kinds of data clean-up and pre-processing, after import, you might find these tools useful for preparing the data for modeling:
 
-- Use the [Edit Metadata](edit-metadata.md) and other modules to change column names, specify which columns contain labels and features, and specify the column data type. For examples, see [Dataset Processing](http://go.microsoft.com/fwlink/?LinkId=525733).
+- Use the [Edit Metadata](edit-metadata.md) and other modules to change column names, specify which columns contain labels and features, and specify the column data type. For examples, see [Dataset Processing](https://go.microsoft.com/fwlink/?LinkId=525733).
 
 - Post-process text data using Python, to remove punctuation, flag parts of speech, and much more. For examples, see [Text Classification](https://gallery.azureml.net/Experiment/f43e79f47d8a4219bf8613d271ea2c45).
 

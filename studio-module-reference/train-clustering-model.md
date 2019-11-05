@@ -62,11 +62,11 @@ After training has completed:
 
 For an example of how clustering is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
   
-- [Clustering: Find similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Demonstrates how to use clustering on attributes derived from unstructured text.  
+- [Clustering: Find similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Demonstrates how to use clustering on attributes derived from unstructured text.  
   
-- [Clustering: Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272): Demonstrates how to use clustering to find related colors and reduce the number of bits used in images.
+- [Clustering: Color quantization](https://go.microsoft.com/fwlink/?LinkId=525272): Demonstrates how to use clustering to find related colors and reduce the number of bits used in images.
   
-- [Clustering: Group iris data](http://go.microsoft.com/fwlink/?LinkId=526317): Provides a simple example of clustering based on the iris dataset.  
+- [Clustering: Group iris data](https://go.microsoft.com/fwlink/?LinkId=526317): Provides a simple example of clustering based on the iris dataset.  
   
 ##  Expected inputs  
   

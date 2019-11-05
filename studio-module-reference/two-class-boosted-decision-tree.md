@@ -96,11 +96,11 @@ After model training is complete, right-click the output of [Train Model](train-
 
 For examples of how boosted decision trees are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
   
--   [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
+-   [Direct marketing](https://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
   
 -   [Flight delay prediction](https://gallery.azureml.net/Experiment/837e2095ce784f1ba5ac623a60232027): This sample uses the **Two-Class Boosted Decision Tree** algorithm to determine whether a flight is likely to be delayed.  
   
--   [Credit card risk](http://go.microsoft.com/fwlink/?LinkId=525270): This sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.
+-   [Credit card risk](https://go.microsoft.com/fwlink/?LinkId=525270): This sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.
   
 ## Technical notes  
 

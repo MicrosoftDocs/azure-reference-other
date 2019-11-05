@@ -145,9 +145,9 @@ The optimal set of preprocessing methods to apply in any individual solution dep
 
 For examples of how feature hashing is used for text analytics, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
 
-- [News Categorization](http://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
+- [News Categorization](https://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
   
-- [Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.
+- [Similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.
   
 - [Text Classification](https://gallery.azure.ai/Experiment/Text-Classification-Step-1-of-5-data-preparation-3): This five-part sample uses text from Twitter messages to perform sentiment analysis.
 
@@ -162,7 +162,7 @@ This section contains implementation details, tips, and answers to frequently as
 > - Use **Extract Key Phrases** to use natural language processing to extract phrases.
 > - Use **Named Entity Recognition** to identify important entities.
 > 
-> Azure Machine Learning Studio (classic) provides a [Text Classification template](http://go.microsoft.com/fwlink/?LinkId=525957) that guides you through using the **Feature Hashing** module for feature extraction.
+> Azure Machine Learning Studio (classic) provides a [Text Classification template](https://go.microsoft.com/fwlink/?LinkId=525957) that guides you through using the **Feature Hashing** module for feature extraction.
 
 ### Implementation details
 

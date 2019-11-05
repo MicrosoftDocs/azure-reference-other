@@ -111,11 +111,11 @@ Typical metadata changes might include:
 
  For examples of how [Edit Metadata](edit-metadata.md) is used in preparing data and building models, see the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/):  
   
--  [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Column names are changed after joining to datasets. The _Patient ID_ column is also flagged as **categorical** to ensure that it is not used in a calculation, but rather than handled as a string value.  
+-  [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): Column names are changed after joining to datasets. The _Patient ID_ column is also flagged as **categorical** to ensure that it is not used in a calculation, but rather than handled as a string value.  
   
-- [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Demonstrates how to use [Edit Metadata](edit-metadata.md) to ensure that columns are treated as features. Later in the experiment, the feature metadata is cleared.  
+- [Twitter sentiment analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Demonstrates how to use [Edit Metadata](edit-metadata.md) to ensure that columns are treated as features. Later in the experiment, the feature metadata is cleared.  
   
-- [Data Processing and analysis](http://go.microsoft.com/fwlink/?LinkId=525733): In this sample, [Edit Metadata](edit-metadata.md) is used to define new column names for data that was loaded from a webpage.  
+- [Data Processing and analysis](https://go.microsoft.com/fwlink/?LinkId=525733): In this sample, [Edit Metadata](edit-metadata.md) is used to define new column names for data that was loaded from a webpage.  
   
 ##  <a name="bkmk_TechnicalNotes"></a> Technical notes
 

@@ -44,7 +44,7 @@ Decision trees in general have many advantages for classification tasks:
 
 However, simple decision trees can overfit on data, and are less generalizable than tree ensembles.
 
-For more information, see [Decision Forests](http://go.microsoft.com/fwlink/?LinkId=403677), or the other papers listed in the [Technical notes](#bkmk_Notes) section.  
+For more information, see [Decision Forests](https://go.microsoft.com/fwlink/?LinkId=403677), or the other papers listed in the [Technical notes](#bkmk_Notes) section.  
 
 ## How to configure Two-Class Decision Forest
   
