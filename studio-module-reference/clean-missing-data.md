@@ -1,6 +1,6 @@
 ---
 title: "Clean Missing Data | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -31,7 +31,7 @@ This module supports multiple type of operations for "cleaning" missing values, 
 + Inferring values based on statistical methods
 
 > [!TIP]
-> New to machine learning? This article provides a good explanation of why you would use each of the different methods for replacing missing values: [Methods for handling missing values](https://gallery.cortanaintelligence.com/Experiment/Methods-for-handling-missing-values-1)  
+> New to machine learning? This article provides a good explanation of why you would use each of the different methods for replacing missing values: [Methods for handling missing values](https://gallery.azure.ai/Experiment/Methods-for-handling-missing-values-1)  
 
 Using this module does not change your source dataset. Instead, it creates a new dataset in your workspace that you can use in the subsequent workflow. You can also save the new, cleaned dataset for reuse.
 
@@ -93,7 +93,7 @@ Each time that you apply the  [Clean Missing Data](clean-missing-data.md) module
   
         All imputation methods introduce some error or bias, but multiple imputation better simulates the process generating the data and the probability distribution of the data.  
   
-        For a general introduction to methods for handling missing values, see [Missing Data: the state of the art. Schafer and Graham, 2002](http://www.academia.edu/1045565/Missing_Data_Our_View_of_the_State_of_the_Art).  
+        For a general introduction to methods for handling missing values, see [Missing Data: the state of the art. Schafer and Graham, 2002](https://www.academia.edu/1045565/Missing_Data_Our_View_of_the_State_of_the_Art).  
   
         > [!WARNING]
         > This option cannot be applied to completely empty columns. Such columns must be removed or passed to the output as is.  
@@ -163,15 +163,15 @@ If you need to repeat cleaning operations often, we recommend that you save your
 
 ## Examples
 
-See examples of how this module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+See examples of how this module is used in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--   [Prediction of student performance](http://go.microsoft.com/fwlink/?LinkId=525727): In this sample, zeros are inserted for missing values.  
+-   [Prediction of student performance](https://go.microsoft.com/fwlink/?LinkId=525727): In this sample, zeros are inserted for missing values.  
   
--   [Cross Validation for Binary Classifier sample](http://go.microsoft.com/fwlink/?LinkId=525734): Zeros are used to fill-in for missing values, and an indicator column is created to track the changes. Columns with all missing values are also retained.  
+-   [Cross Validation for Binary Classifier sample](https://go.microsoft.com/fwlink/?LinkId=525734): Zeros are used to fill-in for missing values, and an indicator column is created to track the changes. Columns with all missing values are also retained.  
   
--   [Dataset Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): In this sample, different branches of the experiment use different methods for missing value substitution, and the datasets are then evaluated by using [Summarize Data](summarize-data.md) and [Compute Linear Correlation](compute-linear-correlation.md).
+-   [Dataset Processing and Analysis](https://go.microsoft.com/fwlink/?LinkId=525733): In this sample, different branches of the experiment use different methods for missing value substitution, and the datasets are then evaluated by using [Summarize Data](summarize-data.md) and [Compute Linear Correlation](compute-linear-correlation.md).
   
--   [Flight delay prediction sample](http://go.microsoft.com/fwlink/?LinkId=525725): Empty rows are removed entirely.  
+-   [Flight delay prediction sample](https://go.microsoft.com/fwlink/?LinkId=525725): Empty rows are removed entirely.  
   
 ##  <a name="bkmk_TechNotes"></a> Technical notes  
 

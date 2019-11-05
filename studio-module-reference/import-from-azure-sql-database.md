@@ -1,6 +1,6 @@
 ---
 title: "Import from Azure SQL Database | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -82,7 +82,7 @@ Optionally, you can change the dataset and its metadata using the tools in Studi
 
 For an example of how to use data from Azure databases in machine learning, see these articles and experiments:
 
-- [Retail Forecasting Step 1 of 6 - data preprocessing](http://gallery.cortanaintelligence.com/Experiment/Retail-Forecasting-Step-1-of-6-data-preprocessing-5): The Retail forecasting template illustrates a typical scenario that uses data stored in Azure SQLDB for analysis. 
+- [Retail Forecasting Step 1 of 6 - data preprocessing](https://gallery.azure.ai/Experiment/Retail-Forecasting-Step-1-of-6-data-preprocessing-5): The Retail forecasting template illustrates a typical scenario that uses data stored in Azure SQLDB for analysis. 
 
     It also demonstrates some useful techniques, such as using Azure SQLDB to passing datasets between experiments in different accounts, saving and combining forecasts, and how to create an Azure SQLDB for machine learning.
 

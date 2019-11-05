@@ -1,6 +1,6 @@
 ---
 title: "Import from Hive Query | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -80,7 +80,7 @@ The following steps describe how to manually configure the import source.
 
     - **HDFS**: Type or paste the HDFS server URI. Be sure to use the HDInsight cluster name **without** the `HTTPS://` prefix.
 
-    - **Azure**: For **Azure storage account name**, type the name of the Azure account. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.
+    - **Azure**: For **Azure storage account name**, type the name of the Azure account. For example, if the full URL of the storage account is `https://myshared.blob.core.windows.net`, you would type `myshared`.
 
     - **Azure storage key**: Copy and paste the key that is provided for accessing the storage account.
 
@@ -111,7 +111,7 @@ For examples of how to configure an HDInsight cluster and use Hive queries in ma
 
 Although Hive offers superior features for many kinds of data clean-up and pre-processing, after import, you might find these tools useful for preparing the data for modeling:
 
-- Use the [Edit Metadata](edit-metadata.md) and other modules to change column names, specify which columns contain labels and features, and specify the column data type. For examples, see [Dataset Processing](http://go.microsoft.com/fwlink/?LinkId=525733).
+- Use the [Edit Metadata](edit-metadata.md) and other modules to change column names, specify which columns contain labels and features, and specify the column data type. For examples, see [Dataset Processing](https://go.microsoft.com/fwlink/?LinkId=525733).
 
 - Post-process text data using Python, to remove punctuation, flag parts of speech, and much more. For examples, see [Text Classification](https://gallery.azureml.net/Experiment/f43e79f47d8a4219bf8613d271ea2c45).
 
@@ -129,7 +129,7 @@ If you created your cluster by accepting all defaults, a container with the same
 
 You can use the [Import Data](import-data.md) module to run Hive queries that call Python UDFs to process records.  
 
-For more information, see [Use Python with Hive and Pig in HDInsight](http://azure.microsoft.com/documentation/articles/hdinsight-python/).  
+For more information, see [Use Python with Hive and Pig in HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-python/).  
 
 ### Avoiding out of memory problems when using Hive to pre-process data
 

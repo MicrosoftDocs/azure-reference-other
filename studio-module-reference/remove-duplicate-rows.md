@@ -1,6 +1,6 @@
 ---
 title: "Remove Duplicate Rows | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -77,13 +77,13 @@ When you run the module, it creates a candidate dataset, and returns a set of ro
 
 ## Examples  
 
-To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--  [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): **Remove Duplicate Rows** is used to consolidate the training and test datasets after adding feature columns. 
+-  [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): **Remove Duplicate Rows** is used to consolidate the training and test datasets after adding feature columns. 
   
-- [Movie recommendation](http://go.microsoft.com/fwlink/?LinkId=525276): Uses **Remove Duplicate Rows** to ensure that there is only one user _rating_ per movie.  
+- [Movie recommendation](https://go.microsoft.com/fwlink/?LinkId=525276): Uses **Remove Duplicate Rows** to ensure that there is only one user _rating_ per movie.  
   
-- [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): **Remove Duplicate Rows** is applied to only the ID and popularity columns, to ensure that there is only one _ordinal ranking_ value per movie. In other words, a movie cannot be both 1st and 3rd, so a single value is used even if users ranked the movie differently.
+- [Twitter sentiment analysis](https://go.microsoft.com/fwlink/?LinkId=525274): **Remove Duplicate Rows** is applied to only the ID and popularity columns, to ensure that there is only one _ordinal ranking_ value per movie. In other words, a movie cannot be both 1st and 3rd, so a single value is used even if users ranked the movie differently.
 
 ##  <a name="bkmk_Notes"></a> Technical notes  
 

@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Averaged Perceptron | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -75,9 +75,9 @@ After training is complete:
 
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
-- [Cross Validation for Binary Classifiers sample](http://go.microsoft.com/fwlink/?LinkId=525734): Compares multiple classification models.
+- [Cross Validation for Binary Classifiers sample](https://go.microsoft.com/fwlink/?LinkId=525734): Compares multiple classification models.
 
 ## Technical notes  
 

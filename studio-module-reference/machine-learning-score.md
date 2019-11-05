@@ -84,25 +84,25 @@ Machine Learning Studio (classic) provides many different scoring modules. You s
 
 ## Examples
 
-These examples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com) demonstrate the process of scoring, from basic to advanced scenarios:
+These examples in the [Azure AI Gallery](https://gallery.azure.ai) demonstrate the process of scoring, from basic to advanced scenarios:
 
-+ [Binary Classification for Direct Marketing](https://gallery.cortanaintelligence.com/Experiment/Binary-Classification-Direct-marketing-2): Demonstrates the basic workflow for scoring, in a scenario where the predicted value is customer response to a marketing campaign.
++ [Binary Classification for Direct Marketing](https://gallery.azure.ai/Experiment/Binary-Classification-Direct-marketing-2): Demonstrates the basic workflow for scoring, in a scenario where the predicted value is customer response to a marketing campaign.
 
-+ [Predict Book Reviews](https://gallery.cortanaintelligence.com/Experiment/Predict-Book-Reviews-1): Scoring on text data. Uses a logistic regression model.
++ [Predict Book Reviews](https://gallery.azure.ai/Experiment/Predict-Book-Reviews-1): Scoring on text data. Uses a logistic regression model.
 
-+ [Learning with Counts](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-Classification-2): Shows you how to use count-based featurization for making predictions.
++ [Learning with Counts](https://gallery.azure.ai/Experiment/Learning-with-Counts-Binary-Classification-2): Shows you how to use count-based featurization for making predictions.
 
-+ [No-code batch scoring with Logic Apps and Azure Machine Learning](https://gallery.cortanaintelligence.com/Tutorial/No-code-Batch-Scoring-1): Illustrates the end-to-end process of training and scoring, automated with the Logic Apps feature of Azure App Service.
++ [No-code batch scoring with Logic Apps and Azure Machine Learning](https://gallery.azure.ai/Tutorial/No-code-Batch-Scoring-1): Illustrates the end-to-end process of training and scoring, automated with the Logic Apps feature of Azure App Service.
 
 The following articles provide real-world examples of how you can use a machine learning model for scoring:
 
-- [Develop a predictive solution](http://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/)  
+- [Develop a predictive solution](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/)  
   
-- [Survival analysis](http://azure.microsoft.com/documentation/articles/machine-learning-r-csharp-survival-analysis/)  
+- [Survival analysis](https://azure.microsoft.com/documentation/articles/machine-learning-r-csharp-survival-analysis/)  
   
-- [Anomaly detection](http://azure.microsoft.com/documentation/articles/machine-learning-apps-anomaly-detection/)  
+- [Anomaly detection](https://azure.microsoft.com/documentation/articles/machine-learning-apps-anomaly-detection/)  
   
-- [Lexicon-based sentiment analysis](http://azure.microsoft.com/documentation/articles/machine-learning-r-csharp-lexicon-based-sentiment-analysis/)  
+- [Lexicon-based sentiment analysis](https://azure.microsoft.com/documentation/articles/machine-learning-r-csharp-lexicon-based-sentiment-analysis/)  
 
 ## See also  
 

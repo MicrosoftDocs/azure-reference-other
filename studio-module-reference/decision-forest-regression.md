@@ -1,6 +1,6 @@
 ---
 title: "Decision Forest Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -51,7 +51,7 @@ For more information about the theoretical framework for this algorithm and its 
 
     - **Replicate**: In replication, each tree is trained on exactly the same input data. The determination of which split predicate is used for each tree node remains random and the trees will be diverse.
 
-         For more information about the training process with the **Replicate** option, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](http://research.microsoft.com/projects/decisionforests/).
+         For more information about the training process with the **Replicate** option, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](https://research.microsoft.com/projects/decisionforests/).
 
 3. Specify how you want the model to be trained, by setting the **Create trainer mode** option.
 
@@ -102,11 +102,11 @@ After training is complete:
 
 ## Examples
 
-For examples of regression models, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/):
+For examples of regression models, see these sample experiments in the [Cortana Intelligence Gallery](https://gallery.azure.ai/):
 
-- [Compare Regression Models sample](http://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
+- [Compare Regression Models sample](https://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
 
-- [Sentiment analysis sample](http://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
+- [Sentiment analysis sample](https://go.microsoft.com/fwlink/?LinkId=525274): Uses several different regression models to generate predicted ratings.
 
 ##  Technical notes
 

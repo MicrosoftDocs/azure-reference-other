@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Locally Deep Support Vector Machine | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -160,7 +160,7 @@ As a consequence of these optimizations, training the LD-SVM model is exponentia
   
 ### Research
 
-For more information about the algorithm and underlying research, see [Local Deep Kernel Learning for Efficient Non-linear SVM Prediction](http://go.microsoft.com/fwlink/?LinkId=511662).  
+For more information about the algorithm and underlying research, see [Local Deep Kernel Learning for Efficient Non-linear SVM Prediction](https://go.microsoft.com/fwlink/?LinkId=511662).  
 
 ##  Module parameters  
   

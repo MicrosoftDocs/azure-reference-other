@@ -1,6 +1,6 @@
 ---
 title: "One-vs-All Multiclass | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -67,11 +67,11 @@ Alternatively, you can pass the untrained classifier to [Cross-Validate Model](c
 
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
-- [News Categorization](http://go.microsoft.com/fwlink/?LinkId=525167): This sample uses **One-Vs-All Multiclass** with a [Two-Class Decision Forest](two-class-decision-forest.md) model.
+- [News Categorization](https://go.microsoft.com/fwlink/?LinkId=525167): This sample uses **One-Vs-All Multiclass** with a [Two-Class Decision Forest](two-class-decision-forest.md) model.
 
-- [Compare Multiclass Classifier sample](http://go.microsoft.com/fwlink/?LinkId=525730): Binary classifiers are used for each digit and the results are combined.
+- [Compare Multiclass Classifier sample](https://go.microsoft.com/fwlink/?LinkId=525730): Binary classifiers are used for each digit and the results are combined.
 
 ## Expected inputs
 

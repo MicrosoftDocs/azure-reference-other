@@ -1,6 +1,6 @@
 ---
 title: "Convert to TSV | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -53,11 +53,11 @@ If you want to download the dataset, double-click the module output, and indicat
   
 ## Examples
 
-Although there are no examples that are specific to this format, you can see examples of how format conversion is used by exploring these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+Although there are no examples that are specific to this format, you can see examples of how format conversion is used by exploring these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Cross Validation for Binary Classification sample](http://go.microsoft.com/fwlink/?LinkId=525734):  Exports the results of cross validation to the comma-separated value (CSV) format so that results for multiple models can be compared by using a tool such as Excel.  
+- [Cross Validation for Binary Classification sample](https://go.microsoft.com/fwlink/?LinkId=525734):  Exports the results of cross validation to the comma-separated value (CSV) format so that results for multiple models can be compared by using a tool such as Excel.  
   
-- [Color-Based Image Compression Quantization](http://go.microsoft.com/fwlink/?LinkId=525272): Exports the datasets that are used for each portion of the analysis to CSV files, so that you can easily run a similar model in any tool that supports the CSV format.  
+- [Color-Based Image Compression Quantization](https://go.microsoft.com/fwlink/?LinkId=525272): Exports the datasets that are used for each portion of the analysis to CSV files, so that you can easily run a similar model in any tool that supports the CSV format.  
   
 ## Technical notes  
 

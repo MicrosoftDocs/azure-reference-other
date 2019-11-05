@@ -1,6 +1,6 @@
 ---
 title: "Import from Data Feed Providers | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -16,7 +16,7 @@ This article describes how to use the [Import Data](import-data.md) module in Az
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-Creating an OData endpoint for a data set is one way to make a data model available for consumption via URL. You can also specify which OData operations the endpoint will support. For more information about creating Odata endpoints, see [OData v4 (ASP.NET)](http://www.asp.net/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint).
+Creating an OData endpoint for a data set is one way to make a data model available for consumption via URL. You can also specify which OData operations the endpoint will support. For more information about creating Odata endpoints, see [OData v4 (ASP.NET)](https://www.asp.net/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint).
 
 ## How to import data from a feed
 
@@ -48,7 +48,7 @@ You can also manually configure the import source.
 
     For example, the following statement gets the list of products from the Northwind sample database:
 
-    `http://services.odata.org/northwind/northwind.svc/Products`
+    `https://services.odata.org/northwind/northwind.svc/Products`
 
     For more information, see [OData syntax](#bkmk_odata).
 
@@ -81,7 +81,7 @@ The query must return a flat table. Flattening nested OData records is not suppo
 
 Some columns included in OData feeds might have data types that are not supported in Studio, such as decimals. You can ingest the data as strings and convert them later using the **Execute R Script** or **Metadata Editor** modules.
 
-For more information about OData syntax and URLs, see [Odata.org - uri conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
+For more information about OData syntax and URLs, see [Odata.org - uri conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
 
 ### Common questions
 
@@ -89,9 +89,9 @@ For more information about OData syntax and URLs, see [Odata.org - uri conventio
 
 The [Import Data](import-data.md) module generally does not support filtering as data is being read. However, you can specify a filter condition as part of the feed resource URL.
 
-To filter data from the feed, use statements supported by the [OData protocol](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/). For example, this URL uses the `$filter` expression to get only the orders related to  the employee with ID equal to 1.
+To filter data from the feed, use statements supported by the [OData protocol](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/). For example, this URL uses the `$filter` expression to get only the orders related to  the employee with ID equal to 1.
 
-`http://services.odata.org/Northwind/Northwind.svc/Orders?$filter=Employee/EmployeeID eq 1`
+`https://services.odata.org/Northwind/Northwind.svc/Orders?$filter=Employee/EmployeeID eq 1`
 
 For more examples of filter syntax, see [Using Filter Expressions in OData URIs](https://msdn.microsoft.com/library/hh169248\(v=nav.90\).aspx).
 

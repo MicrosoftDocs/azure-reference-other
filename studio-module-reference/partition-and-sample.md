@@ -1,6 +1,6 @@
 ---
 title: "Partition and Sample | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -159,7 +159,7 @@ This option is used when you have divided a dataset into multiple partitions and
     For example, let's say previously partitioned patients into five folds using age. To work with each individual fold, you need five copies of the **Partition and Sample** module, and in each, you select a different fold.
 
     > [!TIP]
-    > The sample experiment, [Split Partition and Sample](http://go.microsoft.com/fwlink/?LinkId=525948), demonstrates this technique.
+    > The sample experiment, [Split Partition and Sample](https://go.microsoft.com/fwlink/?LinkId=525948), demonstrates this technique.
 
 5. Run the experiment.
 
@@ -170,13 +170,13 @@ This option is used when you have divided a dataset into multiple partitions and
 
 ## Examples
 
-For examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
-- [Cross Validation for Binary Classification](http://go.microsoft.com/fwlink/?LinkId=525734): A 20% sampling rate is applied to create a smaller randomly sampled dataset. The original census dataset had over 30,000 rows; the sampled dataset has around 6500.
+- [Cross Validation for Binary Classification](https://go.microsoft.com/fwlink/?LinkId=525734): A 20% sampling rate is applied to create a smaller randomly sampled dataset. The original census dataset had over 30,000 rows; the sampled dataset has around 6500.
 
-- [Cross Validation for Regression](http://go.microsoft.com/fwlink/?LinkId=525735): The data is randomly and evenly assigned to five folds, with no stratification, and the results are used for cross-validation.
+- [Cross Validation for Regression](https://go.microsoft.com/fwlink/?LinkId=525735): The data is randomly and evenly assigned to five folds, with no stratification, and the results are used for cross-validation.
 
-- [Split Partition and Sample](http://go.microsoft.com/fwlink/?LinkId=525948): Demonstrates multiple ways to use partitioning and sampling. First, the **Assign to Folds** option is used to assign rows in the dataset to one of three evenly sized groups. Then, three more instances of [Partition and Sample](partition-and-sample.md) are added by using the **Pick Fold** mode to apply operations to subsets of the data
+- [Split Partition and Sample](https://go.microsoft.com/fwlink/?LinkId=525948): Demonstrates multiple ways to use partitioning and sampling. First, the **Assign to Folds** option is used to assign rows in the dataset to one of three evenly sized groups. Then, three more instances of [Partition and Sample](partition-and-sample.md) are added by using the **Pick Fold** mode to apply operations to subsets of the data
 
     - In the first fold (index of 1), rows are split randomly.
     - In the second fold (index of 2), rows are split by education.

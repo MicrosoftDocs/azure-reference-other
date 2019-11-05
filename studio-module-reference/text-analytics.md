@@ -1,7 +1,7 @@
 ---
 title: "Text Analytics | Microsoft Docs"
 description: This article describes the text analytics modules included in Azure Machine Learning Studio (classic). 
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -26,13 +26,13 @@ This article describes the text analytics modules included in Azure Machine Lear
 
 ## Examples
 
-For examples of text analytics using Azure Machine Learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of text analytics using Azure Machine Learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
-- [News categorization](http://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
+- [News categorization](https://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
 
-- [Find similar companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.  
+- [Find similar companies](https://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.  
   
-- [Text classification](http://go.microsoft.com/fwlink/?LinkId=525957): Demonstrates the end-to-end process of using text from Twitter messages in sentiment analysis (five-part sample).
+- [Text classification](https://go.microsoft.com/fwlink/?LinkId=525957): Demonstrates the end-to-end process of using text from Twitter messages in sentiment analysis (five-part sample).
 
 ##  List of modules
 

@@ -1,6 +1,6 @@
 ---
 title: "Multiclass Decision Forest | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -35,7 +35,7 @@ Decision trees have many advantages:
 + They perform integrated feature selection and classification.
 + They are resilient in the presence of noisy features.
 
-The decision forest classifier in Azure Machine Learning Studio (classic) consists of an ensemble of decision trees. Generally, ensemble models provide better coverage and accuracy than single decision trees. For more information, see [Decision trees](http://go.microsoft.com/fwlink/?LinkId=403677).
+The decision forest classifier in Azure Machine Learning Studio (classic) consists of an ensemble of decision trees. Generally, ensemble models provide better coverage and accuracy than single decision trees. For more information, see [Decision trees](https://go.microsoft.com/fwlink/?LinkId=403677).
 
 ## How to configure Multiclass Decision Forest
 
@@ -101,9 +101,9 @@ After training is complete:
 
 ## Examples
 
-For examples of how decision forests are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how decision forests are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
-+ [Compare Multiclass Classifiers sample](http://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
++ [Compare Multiclass Classifiers sample](https://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
 
 ## Technical notes
 
@@ -117,7 +117,7 @@ Each tree in a classification decision forest outputs an un-normalized frequency
 
 For more information about the training process with the **Replicate** option, see:
 
-+  [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013.](http://research.microsoft.com/projects/decisionforests/)
++  [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013.](https://research.microsoft.com/projects/decisionforests/)
 
 ### <a name="tips"></a> How to Configure a Multiclass Decision Forest Model
 

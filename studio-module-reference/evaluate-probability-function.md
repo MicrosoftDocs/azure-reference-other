@@ -1,6 +1,6 @@
 ---
 title: "Evaluate Probability Function | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -233,7 +233,7 @@ To calculate, select **Gamma**, and set the following options:
 
 Creates a distribution developed to handle extreme values. The generalized extreme value (GEV) distribution is actually a group of continuous probability distributions that combines the Gumbel, Fréchet, and Weibull distributions (also known as type I, II, and III extreme value distributions).  
   
-For more information about extreme value theory, see this article in Wikipedia: [Fisher-Tippet-Gnedenko theorem](http://en.wikipedia.org/wiki/Fisher%E2%80%93Tippett%E2%80%93Gnedenko_theorem).  
+For more information about extreme value theory, see this article in Wikipedia: [Fisher-Tippet-Gnedenko theorem](https://en.wikipedia.org/wiki/Fisher%E2%80%93Tippett%E2%80%93Gnedenko_theorem).  
   
 To calculate, select **GeneralizedExtremeValues**, and set the following options:  
   
@@ -502,7 +502,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Implementation details
 
-This module supports all distributions that are provided in the open source MATH.NET Numerics library. For more information, see the documentation for the [Math.Net.Numerics.Distribution](http://numerics.mathdotnet.com/api/MathNet.Numerics.Distributions/index.htm) library.  
+This module supports all distributions that are provided in the open source MATH.NET Numerics library. For more information, see the documentation for the [Math.Net.Numerics.Distribution](https://numerics.mathdotnet.com/api/MathNet.Numerics.Distributions/index.htm) library.  
   
  Right-tailed and two-tailed distributions appear as separate distributions, not as parameterized versions of base distributions. The current behavior is to preserve compatibility with Excel.  
 

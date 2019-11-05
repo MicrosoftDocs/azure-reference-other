@@ -1,6 +1,6 @@
 ---
 title: "Tune Model Hyperparameters | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -166,13 +166,13 @@ When cross-validation is complete:
 
 ## Examples
 
-For examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):  
+For examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai):  
 
-- [Prediction of student performance](https://gallery.cortanaintelligence.com/Experiment/da44bcd5dc2d4e059ebbaf94527d3d5b?r=legacy): Uses the [Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md) algorithm with different parameters to generate a model with the best possible root mean squared error (RMSE).
+- [Prediction of student performance](https://gallery.azure.ai/Experiment/da44bcd5dc2d4e059ebbaf94527d3d5b?r=legacy): Uses the [Two-Class Boosted Decision Tree](two-class-boosted-decision-tree.md) algorithm with different parameters to generate a model with the best possible root mean squared error (RMSE).
 
-- [Learning with Counts: Binary Classification](https://gallery.cortanaintelligence.com/Experiment/47deb75fc7bb428194e9d0d5713350c8?r=legacy): Generates a compact set of features using count-based learning, and then applies a parameter sweep to find the best model parameters.
+- [Learning with Counts: Binary Classification](https://gallery.azure.ai/Experiment/47deb75fc7bb428194e9d0d5713350c8?r=legacy): Generates a compact set of features using count-based learning, and then applies a parameter sweep to find the best model parameters.
 
-- [Binary Classification: Network intrusion detection](https://gallery.cortanaintelligence.com/Experiment/e7fb30de726e4e02b034233ec6c34ce4?r=legacy): Uses [Tune Model Hyperparameters](tune-model-hyperparameters.md) in cross-validation mode, with a custom split into five folds, to find the best hyperparameters for a [Two-Class Logistic Regression](two-class-logistic-regression.md) model.
+- [Binary Classification: Network intrusion detection](https://gallery.azure.ai/Experiment/e7fb30de726e4e02b034233ec6c34ce4?r=legacy): Uses [Tune Model Hyperparameters](tune-model-hyperparameters.md) in cross-validation mode, with a custom split into five folds, to find the best hyperparameters for a [Two-Class Logistic Regression](two-class-logistic-regression.md) model.
 
 ## <a name="bkmk_Notes"></a>Technical notes
 

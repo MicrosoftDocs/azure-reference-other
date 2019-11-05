@@ -1,6 +1,6 @@
 ---
 title: "Export to Azure Blob Storage | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -47,11 +47,11 @@ The Azure blob service is for storing large amounts of data, including binary da
 
 5. For private accounts, choose **Account**, and provide the account name and the account key, so that the experiment can write to the storage account.
 
-    - **Account name**: Type or paste the name of the account where you want to save the data. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.
+    - **Account name**: Type or paste the name of the account where you want to save the data. For example, if the full URL of the storage account is `https://myshared.blob.core.windows.net`, you would type `myshared`.
 
     - **Account key**: Paste the storage access key that is associated with the account.
 
-6. **Path to container, directory, or blob**: Type the name of the blob where the exported data will be stored. For example, to save the results of your experiment to a new blob named **results01.csv** in the container **predictions** in an account named **mymldata**, the full URL for the blob would be `http://mymldata.blob.core.windows.net/predictions/results01.csv`.
+6. **Path to container, directory, or blob**: Type the name of the blob where the exported data will be stored. For example, to save the results of your experiment to a new blob named **results01.csv** in the container **predictions** in an account named **mymldata**, the full URL for the blob would be `https://mymldata.blob.core.windows.net/predictions/results01.csv`.
 
     Therefore, in the field  **Path to container, directory, or blob**, you would specify the container and blob name as follows: `predictions/results01.csv`
 
@@ -71,15 +71,15 @@ The Azure blob service is for storing large amounts of data, including binary da
 
 ## Examples
 
-For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):
+For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.azure.ai):
 
-- [Convert Dataset to VW Format](https://gallery.cortanaintelligence.com/Experiment/Step-1-Convert-Dataset-to-VW-Format-1): This experiment uses Python script together with the **Export Data** module to create data that can be used by Vowpal Wabbit.
+- [Convert Dataset to VW Format](https://gallery.azure.ai/Experiment/Step-1-Convert-Dataset-to-VW-Format-1): This experiment uses Python script together with the **Export Data** module to create data that can be used by Vowpal Wabbit.
 
-- [Setting up predictive analytics pipelines using Azure SQL Data Warehouse](https://gallery.cortanaintelligence.com/Tutorial/Setting-up-predictive-analytics-pipelines-using-Azure-SQL-Data-Warehouse-1):   This scenario describes data movement among multiple components, including Azure Machine Learning and SQL Data Warehouse.
+- [Setting up predictive analytics pipelines using Azure SQL Data Warehouse](https://gallery.azure.ai/Tutorial/Setting-up-predictive-analytics-pipelines-using-Azure-SQL-Data-Warehouse-1):   This scenario describes data movement among multiple components, including Azure Machine Learning and SQL Data Warehouse.
 
-- [No-code batch scoring](https://gallery.cortanaintelligence.com/Tutorial/No-code-Batch-Scoring-1): This tutorial demonstrates how you can use Azure Logic Apps to automate both the import of data used by experiments, and writing experiment results to blob storage. 
+- [No-code batch scoring](https://gallery.azure.ai/Tutorial/No-code-Batch-Scoring-1): This tutorial demonstrates how you can use Azure Logic Apps to automate both the import of data used by experiments, and writing experiment results to blob storage. 
 
-- [Operationalize Azure ML solution with On-premise SQL Server using Azure data factory](https://gallery.cortanaintelligence.com/Tutorial/Operationalize-Azure-ML-solution-with-On-premise-SQL-Server-using-Azure-data-factory-2): This article describes a more complex data pipeline that sends data back to an on-premises SQL Server database, using blob storage as an interim stage. Use of an on-premises database requires configuration of a data gateway, but you can skip that part of the example, and just use blob storage.
+- [Operationalize Azure ML solution with On-premise SQL Server using Azure data factory](https://gallery.azure.ai/Tutorial/Operationalize-Azure-ML-solution-with-On-premise-SQL-Server-using-Azure-data-factory-2): This article describes a more complex data pipeline that sends data back to an on-premises SQL Server database, using blob storage as an interim stage. Use of an on-premises database requires configuration of a data gateway, but you can skip that part of the example, and just use blob storage.
 
 ## Technical notes
 

@@ -1,6 +1,6 @@
 ---
 title: "Multiclass Neural Network | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -61,7 +61,7 @@ To compute the output of the network for a particular input, a value is calculat
   
     - **Custom definition script**. Choose this option to create a custom neural network architecture, using the Net# language. You can define the number of hidden layers, their connections, and advanced options such as specifying the mappings between layers. For an introduction to Net#, see [More About Net#](#bkmk_Customizing) later in this topic.
 
-4. **Neural network definition**: If you selected the custom architecture option, use the text box to type or paste in statements written in the Net# language. For additional script examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).  
+4. **Neural network definition**: If you selected the custom architecture option, use the text box to type or paste in statements written in the Net# language. For additional script examples, see [Guide to the Net# Neural Networks Specification Language](https://go.microsoft.com/fwlink/?LinkId=402867).  
 
 5. **Number of hidden nodes**: This option lets you customize the number of hidden nodes in the default architecture. Type the number of hidden nodes. The default is one hidden layer with 100 nodes.
 
@@ -121,12 +121,12 @@ After training is complete:
 
 ## Examples
 
-For examples of how this learning algorithm is used, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). The experiments are related and described in a single document that progresses from basic to advanced configurations:
+For examples of how this learning algorithm is used, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/). The experiments are related and described in a single document that progresses from basic to advanced configurations:
 
-- [Deep Neural networks example (part A)](http://go.microsoft.com/fwlink/?LinkId=525278)  
-- [Deep Neural networks example (part B)](http://go.microsoft.com/fwlink/?LinkId=525279)  
-- [Deep Neural networks example (part C)](http://go.microsoft.com/fwlink/?LinkId=525280)  
-- [Deep Neural networks example (part D)](http://go.microsoft.com/fwlink/?LinkId=525281)  
+- [Deep Neural networks example (part A)](https://go.microsoft.com/fwlink/?LinkId=525278)  
+- [Deep Neural networks example (part B)](https://go.microsoft.com/fwlink/?LinkId=525279)  
+- [Deep Neural networks example (part C)](https://go.microsoft.com/fwlink/?LinkId=525280)  
+- [Deep Neural networks example (part D)](https://go.microsoft.com/fwlink/?LinkId=525281)  
 
 ## Technical notes
 
@@ -171,7 +171,7 @@ hidden Hidden auto from Data all;
 output Result auto from Hidden all;   
 ```
 
-For additional script examples, see [Guide to the Net# Neural Networks Specification Language](http://go.microsoft.com/fwlink/?LinkId=402867).
+For additional script examples, see [Guide to the Net# Neural Networks Specification Language](https://go.microsoft.com/fwlink/?LinkId=402867).
 
 > [!TIP]
 > Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve fair amount of sweeping (iterations) over hyperparameters.

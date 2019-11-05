@@ -1,7 +1,7 @@
 ---
 title: "Data Input and Output | Microsoft Docs"
 description: "Learn about the modules you can use to import and export data and models in Azure Machine Learning Studio (classic)."
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -42,7 +42,7 @@ The following articles introduce common data scenarios in machine learning:
   
 ### Get started
   
--   [Microsoft Machine Learning blog: The Cloud Data Science Process](http://blogs.technet.com/b/machinelearning/archive/2015/04/15/the-cloud-data-science-process.aspx)
+-   [Microsoft Machine Learning blog: The Cloud Data Science Process](https://blogs.technet.com/b/machinelearning/archive/2015/04/15/the-cloud-data-science-process.aspx)
   
   Learn how to manage data for machine learning in the cloud. The information in this article is based on CRISP-DM, an industry standard. The article provides end-to-end walkthroughs that demonstrate the integration of machine learning with cloud data solutions such as Azure HDInsight and SQL Database.
   
@@ -50,7 +50,7 @@ The following articles introduce common data scenarios in machine learning:
   
   This article describes how to get your data into Azure, and then create an experiment.
   
--   [Data preparation for machine learning by using SQL Server Integration Services](http://blogs.msdn.com/b/ssis/archive/2015/06/25/data-preparation-for-azure-machine-learning-using-ssis.aspx)
+-   [Data preparation for machine learning by using SQL Server Integration Services](https://blogs.msdn.com/b/ssis/archive/2015/06/25/data-preparation-for-azure-machine-learning-using-ssis.aspx)
   
   Learn how to use ETL tools to integrate your data warehouse with Machine Learning.
   
@@ -62,8 +62,8 @@ The following articles introduce common data scenarios in machine learning:
   
 ### Sample experiments
   
--   [Data processing](http://go.microsoft.com/fwlink/?LinkId=525733)
--   [Download data](http://go.microsoft.com/fwlink/?LinkId=525938)
+-   [Data processing](https://go.microsoft.com/fwlink/?LinkId=525733)
+-   [Download data](https://go.microsoft.com/fwlink/?LinkId=525938)
   
 ## List of modules
 

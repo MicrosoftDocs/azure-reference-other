@@ -1,7 +1,7 @@
 ---
 title: "OpenCV Library Modules | Microsoft Docs"
 description: This article describes the modules in Azure Machine Learning Studio (classic) that support use of the Open Source Computer Vision Library.
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -17,7 +17,7 @@ This article describes the modules in Azure Machine Learning Studio (classic) th
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-OpenCV is an open-source library that supports a variety of image processing and image recognition tasks. For more information, see [the OpenCV website](http://opencv.org/).  
+OpenCV is an open-source library that supports a variety of image processing and image recognition tasks. For more information, see [the OpenCV website](https://opencv.org/).  
 
 The modules in Machine Learning Studio (classic) provide a way for you to easily incorporate the OpenCV Library into your machine learning experiments.
 

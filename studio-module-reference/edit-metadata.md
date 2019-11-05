@@ -1,6 +1,6 @@
 ---
 title: "Edit Metadata | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -109,13 +109,13 @@ Typical metadata changes might include:
   
 ## Examples  
 
- For examples of how [Edit Metadata](edit-metadata.md) is used in preparing data and building models, see the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/):  
+ For examples of how [Edit Metadata](edit-metadata.md) is used in preparing data and building models, see the [Azure AI Gallery](https://azure.microsoft.com/documentation/services/machine-learning/models/):  
   
--  [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Column names are changed after joining to datasets. The _Patient ID_ column is also flagged as **categorical** to ensure that it is not used in a calculation, but rather than handled as a string value.  
+-  [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): Column names are changed after joining to datasets. The _Patient ID_ column is also flagged as **categorical** to ensure that it is not used in a calculation, but rather than handled as a string value.  
   
-- [Twitter sentiment analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Demonstrates how to use [Edit Metadata](edit-metadata.md) to ensure that columns are treated as features. Later in the experiment, the feature metadata is cleared.  
+- [Twitter sentiment analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Demonstrates how to use [Edit Metadata](edit-metadata.md) to ensure that columns are treated as features. Later in the experiment, the feature metadata is cleared.  
   
-- [Data Processing and analysis](http://go.microsoft.com/fwlink/?LinkId=525733): In this sample, [Edit Metadata](edit-metadata.md) is used to define new column names for data that was loaded from a webpage.  
+- [Data Processing and analysis](https://go.microsoft.com/fwlink/?LinkId=525733): In this sample, [Edit Metadata](edit-metadata.md) is used to define new column names for data that was loaded from a webpage.  
   
 ##  <a name="bkmk_TechnicalNotes"></a> Technical notes
 
@@ -161,11 +161,11 @@ For example, open the Column Selector, click **WITH RULES**, select **Include** 
 
 The following experiments provide some examples of other methods for selecting and modifying multiple columns:
 
-+ [Binary Classification: Breast Cancer Detection](https://gallery.cortanaintelligence.com/Experiment/Binary-Classification-Breast-cancer-detection-2): The original data contained many blank columns generated during import from a spreadsheet. The extra columns were removed by specifying columns 1-11 in the **Split Data** module. 
++ [Binary Classification: Breast Cancer Detection](https://gallery.azure.ai/Experiment/Binary-Classification-Breast-cancer-detection-2): The original data contained many blank columns generated during import from a spreadsheet. The extra columns were removed by specifying columns 1-11 in the **Split Data** module. 
 
-+ [Download dataset from UCI](https://gallery.cortanaintelligence.com/Experiment/Sample-2-Dataset-Processing-and-Analysis-Auto-Imports-Regression-Dataset-5): Demonstrates how you can provide column names as a list using the **Enter Data Manually** module, and then insert the list into the dataset as headings, using the **Execute R script** module. 
++ [Download dataset from UCI](https://gallery.azure.ai/Experiment/Sample-2-Dataset-Processing-and-Analysis-Auto-Imports-Regression-Dataset-5): Demonstrates how you can provide column names as a list using the **Enter Data Manually** module, and then insert the list into the dataset as headings, using the **Execute R script** module. 
 
-+ [Regex Select Columns](https://gallery.cortanaintelligence.com/CustomModule/Regex-Select-Columns-1): This experiment provides a custom module that lets you apply a regular expression to column names. You could use this module as an input to **Edit Metadata**.
++ [Regex Select Columns](https://gallery.azure.ai/CustomModule/Regex-Select-Columns-1): This experiment provides a custom module that lets you apply a regular expression to column names. You could use this module as an input to **Edit Metadata**.
 
 ### Alternate methods for modifying column names
 

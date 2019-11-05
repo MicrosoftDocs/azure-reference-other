@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Boosted Decision Tree | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -94,13 +94,13 @@ After model training is complete, right-click the output of [Train Model](train-
   
 ## Examples
 
-For examples of how boosted decision trees are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how boosted decision trees are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):
   
--   [Direct marketing](http://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
+-   [Direct marketing](https://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
   
 -   [Flight delay prediction](https://gallery.azureml.net/Experiment/837e2095ce784f1ba5ac623a60232027): This sample uses the **Two-Class Boosted Decision Tree** algorithm to determine whether a flight is likely to be delayed.  
   
--   [Credit card risk](http://go.microsoft.com/fwlink/?LinkId=525270): This sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.
+-   [Credit card risk](https://go.microsoft.com/fwlink/?LinkId=525270): This sample uses the **Two-Class Boosted Decision Tree** algorithm to predict risk.
   
 ## Technical notes  
 
@@ -122,7 +122,7 @@ This section contains implementation details and frequently asked questions.
 
 ### <a name="bkmk_research"></a> Implementation details
 
-For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](http://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
+For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](https://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
   
 The boosted decision tree algorithm in Azure Machine Learning uses the following boosting method:
   

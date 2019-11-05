@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Decision Forest | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -44,7 +44,7 @@ Decision trees in general have many advantages for classification tasks:
 
 However, simple decision trees can overfit on data, and are less generalizable than tree ensembles.
 
-For more information, see [Decision Forests](http://go.microsoft.com/fwlink/?LinkId=403677), or the other papers listed in the [Technical notes](#bkmk_Notes) section.  
+For more information, see [Decision Forests](https://go.microsoft.com/fwlink/?LinkId=403677), or the other papers listed in the [Technical notes](#bkmk_Notes) section.  
 
 ## How to configure Two-Class Decision Forest
   
@@ -115,7 +115,7 @@ After training is complete:
 
 ## Examples
 
-For examples of how decision forests are used in machine learning, see the sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how decision forests are used in machine learning, see the sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 -  [News categorization](https://gallery.azureml.net/Experiment/fcb1bf27ee26443fb19bd07852a620c4): Compares a multiclass classifier to a model built using the **Two-Class Decision Forest** algorithm with the [One-vs-All Multiclass](one-vs-all-multiclass.md).  
   
@@ -147,9 +147,9 @@ If the training set contains a large number of instances and training time is li
 
 ### Implementation details
 
-This article by Microsoft Research provides useful information about ensemble methods that use decision trees. [From Stumps to Trees to Forests](http://blogs.technet.com/b/machinelearning/archive/2014/09/10/from-stumps-to-trees-to-forests.aspx).  
+This article by Microsoft Research provides useful information about ensemble methods that use decision trees. [From Stumps to Trees to Forests](https://blogs.technet.com/b/machinelearning/archive/2014/09/10/from-stumps-to-trees-to-forests.aspx).  
 
-For more information about the training process with the **Replicate** option, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](http://research.microsoft.com/en-us/projects/decisionforests/)
+For more information about the training process with the **Replicate** option, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](https://research.microsoft.com/en-us/projects/decisionforests/)
 
 
 ##  Module parameters  

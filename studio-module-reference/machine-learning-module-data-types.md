@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Module Data Types | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 01/31/2018
 ms.service: "machine-learning"
 ms.subservice: "studio"

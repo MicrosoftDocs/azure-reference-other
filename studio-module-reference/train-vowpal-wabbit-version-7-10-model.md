@@ -1,6 +1,6 @@
 ---
 title: "Train Vowpal Wabbit Version 7-10 Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -139,9 +139,9 @@ Vowpal Wabbit supports incremental training by adding new data to an existing mo
 
 ## Examples
 
-For examples of how Vowpal Wabbit can be used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how Vowpal Wabbit can be used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
-+ [Vowpal Wabbit sample](https://gallery.cortanaintelligence.com/Collection/Vowpal-Wabbit-Samples-2)
++ [Vowpal Wabbit sample](https://gallery.azure.ai/Collection/Vowpal-Wabbit-Samples-2)
 
     This experiment demonstrates data preparation, training, and operationalization of a VW model.  
 
@@ -149,7 +149,7 @@ Also, see these resources:
   
 -   Blog describing Vowpal Wabbit implementation and roadmap
   
-     [Vowpal Wabbit Modules in AzureML](http://blogs.technet.com/b/machinelearning/archive/2014/10/02/vowpal-wabbit-modules-in-azureml.aspx)  
+     [Vowpal Wabbit Modules in AzureML](https://blogs.technet.com/b/machinelearning/archive/2014/10/02/vowpal-wabbit-modules-in-azureml.aspx)  
   
 -   Video that demonstrates building and scoring a model using Vowpal Wabbit in Azure Machine Learning  
   
