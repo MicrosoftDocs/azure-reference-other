@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning - Initialize Model - Classification | Microsoft Docs"
+title: 'Initialize Model: Classification'
 description: "Learn about the modules you can use in Azure Machine Learning Studio (classic) to create binary or multiclass classification models."
 titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
