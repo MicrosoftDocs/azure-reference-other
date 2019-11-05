@@ -8,7 +8,6 @@ ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
 ---
 # Machine Learning Module Data Types
 
