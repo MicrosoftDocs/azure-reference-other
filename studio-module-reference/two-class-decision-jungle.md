@@ -36,7 +36,7 @@ Decision jungles have the following advantages:
 -   They perform integrated feature selection and classification and are resilient in the presence of noisy features.  
   
 > [!TIP]
->  For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](http://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).  
+>  For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](https://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).  
   
 ## How to configure Two-Class Decision Jungle
 
@@ -50,7 +50,7 @@ Decision jungles have the following advantages:
   
     -   **Replicate**: In replication, each tree is trained on exactly the same input data. The determination of which split predicate is used for each tree node remains random and the trees will be diverse.  
   
-        For more information, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](http://research.microsoft.com/en-us/projects/decisionforests/)  
+        For more information, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](https://research.microsoft.com/en-us/projects/decisionforests/)  
   
 3.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   

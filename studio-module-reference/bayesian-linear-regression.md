@@ -66,7 +66,7 @@ For examples of regression models, see the [Azure AI Gallery](https://gallery.co
 
 + The use of the lambda coefficient is described in detail in this textbook on machine learning: [Pattern Recognition and Machine Learning](http://www.springer.com/gb/book/9780387310732), Christopher Bishop, Springer-Verlag, 2007. 
 
-+ This article is available as a PDF download from the [Microsoft Research site](http://research.microsoft.com/en-us/um/people/cmbishop/PRML/):  [Bayesian Regression and Classification](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-nato-bayes.pdf)
++ This article is available as a PDF download from the [Microsoft Research site](https://research.microsoft.com/en-us/um/people/cmbishop/PRML/):  [Bayesian Regression and Classification](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-nato-bayes.pdf)
 
 ## Module parameters
 

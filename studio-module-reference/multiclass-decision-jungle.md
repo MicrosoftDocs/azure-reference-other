@@ -36,7 +36,7 @@ Decision jungles have the following advantages:
 
 + They perform integrated feature selection and classification and are resilient in the presence of noisy features.
 
-For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](http://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).
+For more information about the research behind this machine learning algorithm, see [Decision Jungles: Compact and Rich Models for Classification](https://research.microsoft.com/pubs/205439/DecisionJunglesNIPS2013.pdf) (downloadable PDF).
 
 ## How to configure Multiclass Decision Jungle Model
 
@@ -108,7 +108,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 For more information about the training process with the **Replicate** option, see:
 
-+ [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013](http://research.microsoft.com/projects/decisionforests/)
++ [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013](https://research.microsoft.com/projects/decisionforests/)
 
 ### Usage tips
 

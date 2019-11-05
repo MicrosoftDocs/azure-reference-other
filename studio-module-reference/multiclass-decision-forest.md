@@ -117,7 +117,7 @@ Each tree in a classification decision forest outputs an un-normalized frequency
 
 For more information about the training process with the **Replicate** option, see:
 
-+  [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013.](http://research.microsoft.com/projects/decisionforests/)
++  [Decision forests for computer vision and medical image analysis. Criminisi and Shotton. Springer 2013.](https://research.microsoft.com/projects/decisionforests/)
 
 ### <a name="tips"></a> How to Configure a Multiclass Decision Forest Model
 

@@ -125,7 +125,7 @@ maml.mapOutputPort("final_output");
 
 This blog provides an extended explanation of how named entity recognition works, its background, and possible applications: 
 
-- [Machine learning and text analytics](http://blogs.technet.com/b/machinelearning/archive/2014/07/23/machine-learning-and-text-analytics.aspx)
+- [Machine learning and text analytics](https://blogs.technet.com/b/machinelearning/archive/2014/07/23/machine-learning-and-text-analytics.aspx)
 
 Also, see the following sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) for demonstrations of how to use text classification methods commonly used in machine learning:
 

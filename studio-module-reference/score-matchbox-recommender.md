@@ -65,7 +65,7 @@ More details on the Matchbox recommender and its underlying probabilistic algori
 
 - [Recommender: Restaurant ratings](http://gallery.cortanaintelligence.com/Experiment/Recommender-Restaurant-ratings-2): This sample demonstrates item recommendations using both item features and user features.
 
-+ [Recommendations Everywhere](http://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx): This blog post provides a high-level introduction to recommender systems with lots of visual aids. 
++ [Recommendations Everywhere](https://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx): This blog post provides a high-level introduction to recommender systems with lots of visual aids. 
 
 ## How to configure Score Matchbox Recommender
 

@@ -252,7 +252,7 @@ We recommend that you experiment with different ranges of values for n-gram leng
 
 For more information about n-grams and skip-grams, see these resources:
   
- + [Automatic Evaluation of Summaries Using N-gram Co-Occurrence Statistics](http://research.microsoft.com/en-us/um/people/cyl/download/papers/NAACL2003.pdf)  
+ + [Automatic Evaluation of Summaries Using N-gram Co-Occurrence Statistics](https://research.microsoft.com/en-us/um/people/cyl/download/papers/NAACL2003.pdf)  
   
 ##  Expected inputs
 

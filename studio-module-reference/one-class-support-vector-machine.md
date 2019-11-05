@@ -56,7 +56,7 @@ For more information, including links to basic research, see the [Technical note
   
     - **Parameter Range**: Use this option if you are not sure of the best parameters, and want to perform a parameter sweep to find the optimal configuration.
 
-4. **η**: Type a value that represents the upper bound on the fraction of outliers. This parameter corresponds to the nu-property described in [this paper](http://research.microsoft.com/pubs/69731/tr-99-87.pdf). The nu-property lets you control the trade-off between outliers and normal cases.
+4. **η**: Type a value that represents the upper bound on the fraction of outliers. This parameter corresponds to the nu-property described in [this paper](https://research.microsoft.com/pubs/69731/tr-99-87.pdf). The nu-property lets you control the trade-off between outliers and normal cases.
 
 4. **ε** (epsilon): Type a value to use as the stopping tolerance. The stopping tolerance, affects the number of iterations used when optimizing the model, and depends on the stopping criterion value. When the value is exceeded, the trainer stops iterating on a solution.
 
@@ -95,7 +95,7 @@ Predictions from the [One-Class SVM](one-class-support-vector-machine.md) are un
 
 This implementation wraps the library for support vector machines named [libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm/).  The general theory on which `libsvm` is based, and the approach towards one-class support vector machines, is described in these papers by B. Schӧlkopf et al.
 
-- [Estimating the Support of a High-Dimensional Distribution](http://research.microsoft.com/pubs/69731/tr-99-87.pdf)
+- [Estimating the Support of a High-Dimensional Distribution](https://research.microsoft.com/pubs/69731/tr-99-87.pdf)
 
 - [New Support Vector Algorithms](http://www.stat.purdue.edu/~yuzhu/stat598m3/Papers/NewSVM.pdf)
 

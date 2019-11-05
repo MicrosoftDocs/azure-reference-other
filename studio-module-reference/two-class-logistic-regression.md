@@ -135,7 +135,7 @@ The algorithm tries to find the optimal values for <code>β{0},..., β {D-1}</co
 
 ### Research
 
-For more information on the implementation of this algorithm, see [Scalable Training of L-1 Regularized Log-Linear Models](http://research.microsoft.com/apps/pubs/default.aspx?id=78900), by Andrew and Gao.  
+For more information on the implementation of this algorithm, see [Scalable Training of L-1 Regularized Log-Linear Models](https://research.microsoft.com/apps/pubs/default.aspx?id=78900), by Andrew and Gao.  
 
 ##  Module parameters
 

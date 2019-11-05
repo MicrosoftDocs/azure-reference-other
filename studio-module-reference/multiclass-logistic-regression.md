@@ -105,7 +105,7 @@ Want to learn more about L1 and L2 regularization? The following article provide
 
 For more information on the implementation of this algorithm, see:
 
-+ [Scalable Training of L-1 Regularized Log-Linear Models](http://research.microsoft.com/apps/pubs/default.aspx?id=78900), by Andrew and Gao.  
++ [Scalable Training of L-1 Regularized Log-Linear Models](https://research.microsoft.com/apps/pubs/default.aspx?id=78900), by Andrew and Gao.  
 
 ### Implementation details
 

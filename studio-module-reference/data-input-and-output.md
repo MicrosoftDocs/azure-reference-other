@@ -42,7 +42,7 @@ The following articles introduce common data scenarios in machine learning:
   
 ### Get started
   
--   [Microsoft Machine Learning blog: The Cloud Data Science Process](http://blogs.technet.com/b/machinelearning/archive/2015/04/15/the-cloud-data-science-process.aspx)
+-   [Microsoft Machine Learning blog: The Cloud Data Science Process](https://blogs.technet.com/b/machinelearning/archive/2015/04/15/the-cloud-data-science-process.aspx)
   
   Learn how to manage data for machine learning in the cloud. The information in this article is based on CRISP-DM, an industry standard. The article provides end-to-end walkthroughs that demonstrate the integration of machine learning with cloud data solutions such as Azure HDInsight and SQL Database.
   

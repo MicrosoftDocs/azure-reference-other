@@ -149,7 +149,7 @@ Also, see these resources:
   
 -   Blog describing Vowpal Wabbit implementation and roadmap
   
-     [Vowpal Wabbit Modules in AzureML](http://blogs.technet.com/b/machinelearning/archive/2014/10/02/vowpal-wabbit-modules-in-azureml.aspx)  
+     [Vowpal Wabbit Modules in AzureML](https://blogs.technet.com/b/machinelearning/archive/2014/10/02/vowpal-wabbit-modules-in-azureml.aspx)  
   
 -   Video that demonstrates building and scoring a model using Vowpal Wabbit in Azure Machine Learning  
   

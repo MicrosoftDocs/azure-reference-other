@@ -147,9 +147,9 @@ If the training set contains a large number of instances and training time is li
 
 ### Implementation details
 
-This article by Microsoft Research provides useful information about ensemble methods that use decision trees. [From Stumps to Trees to Forests](http://blogs.technet.com/b/machinelearning/archive/2014/09/10/from-stumps-to-trees-to-forests.aspx).  
+This article by Microsoft Research provides useful information about ensemble methods that use decision trees. [From Stumps to Trees to Forests](https://blogs.technet.com/b/machinelearning/archive/2014/09/10/from-stumps-to-trees-to-forests.aspx).  
 
-For more information about the training process with the **Replicate** option, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](http://research.microsoft.com/en-us/projects/decisionforests/)
+For more information about the training process with the **Replicate** option, see [Decision Forests for Computer Vision and Medical Image Analysis. Criminisi and J. Shotton. Springer 2013.](https://research.microsoft.com/en-us/projects/decisionforests/)
 
 
 ##  Module parameters  
