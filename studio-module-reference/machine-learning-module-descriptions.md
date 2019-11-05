@@ -38,9 +38,9 @@ Sometimes modules are updated to add new functionality, or to remove older code.
 
 For an example of how to build a complete machine learning experiment, see these tutorials:  
   
--   [Develop a predictive solution by using Azure Machine Learning](http://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/)  
+-   [Develop a predictive solution by using Azure Machine Learning](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/)  
   
--   [Create a simple experiment in Azure Machine Learning Studio (classic)](http://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
+-   [Create a simple experiment in Azure Machine Learning Studio (classic)](https://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
  
 ##  Module categories
 

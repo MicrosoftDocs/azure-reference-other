@@ -66,7 +66,7 @@ The following list includes simple definitions of terms that are used in the par
 -   **Ripple**: A small, unwanted variation that occurs periodically. In Machine Learning, you can specify the amount of ripple to tolerate as part of the parameters in the IIR filter design.
 
 > [!TIP]
-> Need more information? If you are new to digital signal processing, see [An Introduction to Digital Signal Processing](http://www.hamradioschool.com/an-introduction-to-digital-signal-processing-dsp/). The website provides definitions and helpful visual aids that explain basic terminology and concepts. 
+> Need more information? If you are new to digital signal processing, see [An Introduction to Digital Signal Processing](https://www.hamradioschool.com/an-introduction-to-digital-signal-processing-dsp/). The website provides definitions and helpful visual aids that explain basic terminology and concepts. 
 > 
   
 ## List of modules

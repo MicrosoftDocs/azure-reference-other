@@ -78,7 +78,7 @@ You can create a count-based feature transformation directly from a dataset, and
 
         For very large datasets, we recommend that you use this option whenever possible. Although you might incur additional costs for using the HDInsight service, computation over large datasets might be faster in HDInsight.
 
-         For more information, see [http://azure.microsoft.com/services/hdinsight/](http://azure.microsoft.com/services/hdinsight/).
+         For more information, see [https://azure.microsoft.com/services/hdinsight/](https://azure.microsoft.com/services/hdinsight/).
 
 7. After specifying the data storage mode, provide any additional connection information for the data that is required:
 
@@ -123,7 +123,7 @@ You can create a count-based feature transformation directly from a dataset, and
 
         To use this option, the new data must be provided  as a blob in Windows Azure storage, and you must have access to a deployed HDInsight cluster. When you run the experiment, a Map/Reduce job will be launched in the cluster to perform the counting.
 
-         For more information, see [http://azure.microsoft.com/services/hdinsight/](http://azure.microsoft.com/services/hdinsight)
+         For more information, see [https://azure.microsoft.com/services/hdinsight/](https://azure.microsoft.com/services/hdinsight)
 
 3. After specifying the data storage mode, provide any additional connection information for the new data:
 
@@ -159,11 +159,11 @@ See these articles for more information about the counts algorithm and the effic
 + [Using Azure ML to Build Click-through Prediction Models](https://go.microsoft.com/fwlink/?LinkId=699305)
 + [Big Learning Made Easy with Counts!](https://blogs.technet.microsoft.com/machinelearning/2015/02/17/big-learning-made-easy-with-counts/)
 
-The following experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) demonstrate how to use count-based learning to build various predictive models:
+The following experiments in the [Azure AI Gallery](https://gallery.azure.ai/) demonstrate how to use count-based learning to build various predictive models:
 
-+ [Learning With Counts - Binary Classification](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-Classification-2)
-+ [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2)
-+ [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2)
++ [Learning With Counts - Binary Classification](https://gallery.azure.ai/Experiment/Learning-with-Counts-Binary-Classification-2)
++ [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2)
++ [Learning with Counts: Binary classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2)
 
 ## Module parameters
 

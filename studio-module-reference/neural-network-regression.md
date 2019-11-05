@@ -177,7 +177,7 @@ After training is complete:
 
 ##  Examples  
 
-For examples of how this algorithm is used in experiments, see these samples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how this algorithm is used in experiments, see these samples in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Compare Multiple Regressors](https://go.microsoft.com/fwlink/?LinkId=525731): Demonstrates the use of several regression algorithms and compares their results.  
 

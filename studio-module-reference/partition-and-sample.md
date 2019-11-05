@@ -170,7 +170,7 @@ This option is used when you have divided a dataset into multiple partitions and
 
 ## Examples
 
-For examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 - [Cross Validation for Binary Classification](https://go.microsoft.com/fwlink/?LinkId=525734): A 20% sampling rate is applied to create a smaller randomly sampled dataset. The original census dataset had over 30,000 rows; the sampled dataset has around 6500.
 

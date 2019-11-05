@@ -69,7 +69,7 @@ You can now use the three indicator columns as features and analyze their correl
 
 ## Examples  
 
-To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): Patients are binned into groups based on patient ID numbers, and then **Indicator Values** is used to flag which group the patient belongs to. Later, the group indicators are used when scoring models.  
   

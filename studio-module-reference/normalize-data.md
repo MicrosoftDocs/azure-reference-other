@@ -109,7 +109,7 @@ The **Normalize Data** module generates two outputs:
 
 ## Examples
 
-For examples of how normalization is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how normalization is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
 - [Credit risk prediction](https://go.microsoft.com/fwlink/?LinkId=525270): In this sample, normalization is applied to all numeric data except the class column, the credit risk score. This example uses the **tanh** transformation, which converts all numeric features to values within a range of 0-1.
 
@@ -133,11 +133,11 @@ Normalizing features so that they use a common scale is a general requirement fo
 
 If you are unsure which type of normalization suits your data, see these resources:
 
-- [Recommend Modules for My Data](https://gallery.cortanaintelligence.com/Experiment/Recommend-Modules-for-My-Data-1): This custom module by a member of the Azure ML team evaluates your dataset and recommends steps for cleaning and scaling data.
+- [Recommend Modules for My Data](https://gallery.azure.ai/Experiment/Recommend-Modules-for-My-Data-1): This custom module by a member of the Azure ML team evaluates your dataset and recommends steps for cleaning and scaling data.
 
 - [Feature scaling](https://en.wikipedia.org/wiki/Feature_scaling): This article in Wikipedia explains the basic methods used for normalizing numeric data.
 
-- [Data Preparation for Data Mining](http://dl.acm.org/citation.cfm?id=299577) covers many data preparation steps in depth. See Chapter 7 for a discussion of data normalization. 
+- [Data Preparation for Data Mining](https://dl.acm.org/citation.cfm?id=299577) covers many data preparation steps in depth. See Chapter 7 for a discussion of data normalization. 
 
 - The [Data Science Essentials course](https://www.edx.org/course/data-science-essentials-microsoft-dat203-1x-1) from EdX with Microsoft includes several lessons on the statistical methods for normalization.
 

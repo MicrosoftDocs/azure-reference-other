@@ -36,9 +36,9 @@ For anomaly detection, each new input is analyzed, and the anomaly detection alg
 
 For additional information about how PCA works, and about the implementation for anomaly detection, see these papers:
 
-- [A randomized algorithm for principal component analysis](http://arxiv.org/abs/0809.2274). Rokhlin, Szlan and Tygert
+- [A randomized algorithm for principal component analysis](https://arxiv.org/abs/0809.2274). Rokhlin, Szlan and Tygert
 
-- [Finding Structure with Randomness: Probabilistic Algorithms for Constructing Approximate Matrix Decompositions](http://users.cms.caltech.edu/~jtropp/papers/HMT11-Finding-Structure-SIREV.pdf) (PDF download). Halko, Martinsson and Tropp.
+- [Finding Structure with Randomness: Probabilistic Algorithms for Constructing Approximate Matrix Decompositions](https://users.cms.caltech.edu/~jtropp/papers/HMT11-Finding-Structure-SIREV.pdf) (PDF download). Halko, Martinsson and Tropp.
 
 ## How to configure PCA Anomaly Detection
 
@@ -112,7 +112,7 @@ To evaluate the results of an anomaly detection models requires some additional 
 
 ## Examples
 
-For examples of how PCA is used in anomaly detection, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how PCA is used in anomaly detection, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 - [Anomaly detection: credit risk](https://gallery.azureml.net/Experiment/1219e87f8fb84e88a2e1b54256808bb3): Illustrates how to find outliers in data. This example uses a parameter sweep to find the optimal model. It then applies that model to new data to identify risky transactions that might represent fraud, comparing two different anomaly detection models.
 

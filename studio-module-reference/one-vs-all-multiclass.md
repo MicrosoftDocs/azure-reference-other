@@ -67,7 +67,7 @@ Alternatively, you can pass the untrained classifier to [Cross-Validate Model](c
 
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 - [News Categorization](https://go.microsoft.com/fwlink/?LinkId=525167): This sample uses **One-Vs-All Multiclass** with a [Two-Class Decision Forest](two-class-decision-forest.md) model.
 

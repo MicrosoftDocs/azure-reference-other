@@ -68,7 +68,7 @@ To perform a join on two datasets, they must be related by a **single** key colu
 
 ## Examples  
 
-You can see examples of how this module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+You can see examples of how this module is used in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): [Join Data](join-data.md) is used to combine the positive training cases with the negative training cases after the proportion of cases has been adjusted.  
   

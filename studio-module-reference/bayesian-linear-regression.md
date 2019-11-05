@@ -58,13 +58,13 @@ After training is complete:
 
 ## Examples
 
-For examples of regression models, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+For examples of regression models, see the [Azure AI Gallery](https://gallery.azure.ai).
   
 - [Compare Regression Models sample](https://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.  
   
 ## <a name="bkmk_Notes"></a>Technical notes
 
-+ The use of the lambda coefficient is described in detail in this textbook on machine learning: [Pattern Recognition and Machine Learning](http://www.springer.com/gb/book/9780387310732), Christopher Bishop, Springer-Verlag, 2007. 
++ The use of the lambda coefficient is described in detail in this textbook on machine learning: [Pattern Recognition and Machine Learning](https://www.springer.com/gb/book/9780387310732), Christopher Bishop, Springer-Verlag, 2007. 
 
 + This article is available as a PDF download from the [Microsoft Research site](https://research.microsoft.com/en-us/um/people/cmbishop/PRML/):  [Bayesian Regression and Classification](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-nato-bayes.pdf)
 

@@ -77,7 +77,7 @@ When you run the module, it creates a candidate dataset, and returns a set of ro
 
 ## Examples  
 
-To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 -  [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): **Remove Duplicate Rows** is used to consolidate the training and test datasets after adding feature columns. 
   

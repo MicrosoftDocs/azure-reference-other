@@ -38,7 +38,7 @@ In addition to using the **Create R Model** to save and re-use custom R modules,
 
 Use of this module requires intermediate or expert knowledge of R. The module supports use of any learner that is included in the R packages already installed in Azure Machine Learning.
 
-This sample from the [Azure AI Gallery](https://gallery.cortanaintelligence.com) implements a two-class Naïve Bayes classifier by using the popular `e1070` package: + [Create R Model](https://gallery.cortanaintelligence.com/Experiment/Create-R-Model-3). We recommend that you copy the example to your workspace and follow along.
+This sample from the [Azure AI Gallery](https://gallery.azure.ai) implements a two-class Naïve Bayes classifier by using the popular `e1070` package: + [Create R Model](https://gallery.azure.ai/Experiment/Create-R-Model-3). We recommend that you copy the example to your workspace and follow along.
 
 1. Add these modules to your experiment: **Create R Model**, [Train Model](train-model.md), [Score Model](score-model.md).
 
@@ -225,7 +225,7 @@ By default, the web service expects all input columns from the training data to 
 
 ## Examples
 
-For additional examples of how to use this module in machine learning experiments, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+For additional examples of how to use this module in machine learning experiments, see the [Azure AI Gallery](https://gallery.azure.ai).
 
 ## Expected inputs
 

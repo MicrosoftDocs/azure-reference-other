@@ -67,7 +67,7 @@ Before you use this option, make sure that your data is in a compatible format. 
 
 ##  Examples
 
-For examples of how to divide a set of ratings and features used for training or testing a recommendation model, we recommend that you review the walkthrough provided with this sample experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/): [Movie Recommendation](https://gallery.cortanaintelligence.com/Experiment/3a02931f94114f47b4512dd9179b515e?share=1)  
+For examples of how to divide a set of ratings and features used for training or testing a recommendation model, we recommend that you review the walkthrough provided with this sample experiment in the [Azure AI Gallery](https://gallery.azure.ai/): [Movie Recommendation](https://gallery.azure.ai/Experiment/3a02931f94114f47b4512dd9179b515e?share=1)  
 
 ##  Technical notes
 

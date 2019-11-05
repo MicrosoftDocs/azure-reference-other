@@ -75,7 +75,7 @@ After training is complete:
 
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 - [Cross Validation for Binary Classifiers sample](https://go.microsoft.com/fwlink/?LinkId=525734): Compares multiple classification models.
 

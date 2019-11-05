@@ -23,7 +23,7 @@ This article describes how to use the [Convert to SVMLight](convert-to-svmlight.
 
 The SVM-Light framework was developed by researchers at Cornell University. The SVM-Light library implements Vapnik's Support Vector Machine, but the format has been adopted elsewhere and can be used for many machine learning tasks, including classification and regression.  
   
-For more information, see [SVMLight Support Vector Machine](http://svmlight.joachims.org/).  
+For more information, see [SVMLight Support Vector Machine](https://svmlight.joachims.org/).  
   
 ## How to configure Convert to SVMLight  
 
@@ -83,7 +83,7 @@ To use an SVMLight file in Vowpal Wabbit, and make additional modifications as d
 
 ## Examples  
 
-There are no examples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/): that are specific to this format.
+There are no examples in the [Azure AI Gallery](https://gallery.azure.ai/): that are specific to this format.
   
 ## Technical notes
 

@@ -58,7 +58,7 @@ To train the model, run the experiment. After the regression algorithm has learn
 
 ## Examples
 
-For examples of regression in action, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
+For examples of regression in action, see the [Azure AI Gallery](https://gallery.azure.ai/).
 
 
 ## See also  

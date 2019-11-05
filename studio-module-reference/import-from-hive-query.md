@@ -80,7 +80,7 @@ The following steps describe how to manually configure the import source.
 
     - **HDFS**: Type or paste the HDFS server URI. Be sure to use the HDInsight cluster name **without** the `HTTPS://` prefix.
 
-    - **Azure**: For **Azure storage account name**, type the name of the Azure account. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.
+    - **Azure**: For **Azure storage account name**, type the name of the Azure account. For example, if the full URL of the storage account is `https://myshared.blob.core.windows.net`, you would type `myshared`.
 
     - **Azure storage key**: Copy and paste the key that is provided for accessing the storage account.
 
@@ -129,7 +129,7 @@ If you created your cluster by accepting all defaults, a container with the same
 
 You can use the [Import Data](import-data.md) module to run Hive queries that call Python UDFs to process records.  
 
-For more information, see [Use Python with Hive and Pig in HDInsight](http://azure.microsoft.com/documentation/articles/hdinsight-python/).  
+For more information, see [Use Python with Hive and Pig in HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-python/).  
 
 ### Avoiding out of memory problems when using Hive to pre-process data
 

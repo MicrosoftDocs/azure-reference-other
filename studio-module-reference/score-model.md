@@ -50,12 +50,12 @@ The score, or predicted value, can be in many different formats, depending on th
 
 A common use of scoring is to return the output as part of a predictive web service. For more information, see this tutorial on how to create a web service based on an experiment in Azure ML Studio:
 
-+ [Publish a web service from Azure ML Studio](http://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-5-publish-web-service/)
++ [Publish a web service from Azure ML Studio](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-5-publish-web-service/)
 
 
 ## Examples
 
-For examples of how [Score Model](score-model.md) is used in an experimental workflow, see the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/):  
+For examples of how [Score Model](score-model.md) is used in an experimental workflow, see the [Azure AI Gallery](https://azure.microsoft.com/documentation/services/machine-learning/models/):  
 
 - [Compare Binary Classification Models](https://go.microsoft.com/fwlink/?LinkId=525729)
 - [Compare Multiclass Classification Models](https://go.microsoft.com/fwlink/?LinkId=525730)

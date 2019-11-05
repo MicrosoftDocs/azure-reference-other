@@ -85,7 +85,7 @@ After training is complete:
 
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 + [Iris clustering](https://gallery.azureml.net/Experiment/a7299de725a141388f373e9d74ef2f86): Compares the results of multiclass logistic regression with K-means clustering.
 
@@ -127,7 +127,7 @@ Binomial logistic regression assumes a *logistic distribution* of the data, wher
 
 + `β{0},..., β {D-1}` are the unknown parameters of the logistic distribution.
 
-The algorithm tries to find the optimal values for `β{0},..., β {D-1}` by maximizing the log probability of the parameters given the inputs. Maximization is performed by using a popular method for parameter estimation, called [Limited Memory BFGS](http://wikipedia.org/wiki/Limited-memory_BFGS).
+The algorithm tries to find the optimal values for `β{0},..., β {D-1}` by maximizing the log probability of the parameters given the inputs. Maximization is performed by using a popular method for parameter estimation, called [Limited Memory BFGS](https://wikipedia.org/wiki/Limited-memory_BFGS).
 
 ## Module parameters
 

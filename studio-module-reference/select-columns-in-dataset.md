@@ -112,7 +112,7 @@ For example, in a dataset with the columns Col1, Col2, Col3, and Col4, you could
 
 ## Examples  
 
-For examples of how to use [Select Columns in Dataset](select-columns-in-dataset.md), see these sample experiments in the [Model Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how to use [Select Columns in Dataset](select-columns-in-dataset.md), see these sample experiments in the [Model Gallery](https://gallery.azure.ai/):  
   
 -   The [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726) sample uses [Select Columns in Dataset](select-columns-in-dataset.md) to remove a trailing empty column, remove a column with duplicate data, and to project training and test sets.  
   

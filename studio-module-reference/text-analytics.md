@@ -26,7 +26,7 @@ This article describes the text analytics modules included in Azure Machine Lear
 
 ## Examples
 
-For examples of text analytics using Azure Machine Learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of text analytics using Azure Machine Learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
 - [News categorization](https://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
 

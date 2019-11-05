@@ -100,7 +100,7 @@ To capture a snapshot of this data in your Azure Machine Learning workspace as a
 
 ## Examples
 
-For a detailed walkthrough of how to use Azure Cosmos DB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
+For a detailed walkthrough of how to use Azure Cosmos DB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/).
 
 + [SQL queries for Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-sql-query): This article explains how to perform SQL queries on Azure Cosmos DB data.
 

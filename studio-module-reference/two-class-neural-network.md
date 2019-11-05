@@ -124,7 +124,7 @@ After training is complete:
 
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). These experiments are related and described in a single document that progresses from basic to advanced configurations:  
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/). These experiments are related and described in a single document that progresses from basic to advanced configurations:  
   
 -   [Deep Neural networks sample (part A)](https://go.microsoft.com/fwlink/?LinkId=525278)  
   

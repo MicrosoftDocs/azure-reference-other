@@ -53,7 +53,7 @@ If you want to download the dataset, double-click the module output, and indicat
   
 ## Examples
 
-Although there are no examples that are specific to this format, you can see examples of how format conversion is used by exploring these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+Although there are no examples that are specific to this format, you can see examples of how format conversion is used by exploring these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Cross Validation for Binary Classification sample](https://go.microsoft.com/fwlink/?LinkId=525734):  Exports the results of cross validation to the comma-separated value (CSV) format so that results for multiple models can be compared by using a tool such as Excel.  
   

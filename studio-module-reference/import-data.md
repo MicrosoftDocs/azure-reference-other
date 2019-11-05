@@ -174,15 +174,15 @@ If you need to get data from a source that is not in the list, there are various
 
     The [Execute Python Script](execute-python-script.md) module also lets you read  and convert data from a variety of sources. See these examples from Microsoft data scientists in the Cortana Intelligence Gallery:
 
-    [Convert PDF to Text](https://gallery.cortanaintelligence.com/Experiment/Convert-PDF-to-TEXT-1)
+    [Convert PDF to Text](https://gallery.azure.ai/Experiment/Convert-PDF-to-TEXT-1)
 
-    [Load non-text file from Azure blob storage](https://gallery.cortanaintelligence.com/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1)
+    [Load non-text file from Azure blob storage](https://gallery.azure.ai/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1)
 
 - Get data from AWS clusters. You can run a query against a generic Hive cluster with WebHCat or HCatalog endpoint enabled. Or publish as a page and read from the Web URL.
 
 - Get data from MongoDB. The data migration utility for Azure Cosmos DB supports a wide variety of sources and formats. For more information and examples, see [Azure Cosmos DB: Data migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data)
 
-For more ideas and workarounds, see the [Azure Machine Learning forum](https://social.msdn.microsoft.com/forums/azure/home?forum=MachineLearning) or [Azure AI Gallery](https://gallery.cortanaintelligence.com).  
+For more ideas and workarounds, see the [Azure Machine Learning forum](https://social.msdn.microsoft.com/forums/azure/home?forum=MachineLearning) or [Azure AI Gallery](https://gallery.azure.ai).  
 
 ## Module parameters
 

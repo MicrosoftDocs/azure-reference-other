@@ -94,7 +94,7 @@ After model training is complete, right-click the output of [Train Model](train-
   
 ## Examples
 
-For examples of how boosted decision trees are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how boosted decision trees are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):
   
 -   [Direct marketing](https://go.microsoft.com/fwlink/?LinkId=525168): Uses the **Two-Class Boosted Decision Tree** algorithm to predict customer appetency.
   
@@ -122,7 +122,7 @@ This section contains implementation details and frequently asked questions.
 
 ### <a name="bkmk_research"></a> Implementation details
 
-For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](http://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
+For detailed information about the boosted decision tree algorithm, see [Greedy Function Approximation: A Gradient Boosting Machines](https://www-stat.stanford.edu/~jhf/ftp/trebst.pdf).  
   
 The boosted decision tree algorithm in Azure Machine Learning uses the following boosting method:
   

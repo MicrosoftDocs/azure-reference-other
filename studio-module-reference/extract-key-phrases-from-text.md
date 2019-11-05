@@ -71,9 +71,9 @@ For example, the following example results are for an input dataset containing r
 
 ## Examples
 
-The following example demonstrates how to use this module to extract key phrases and then build a word cloud from the phrases: [Extract Key Phrases and Show Word Cloud](https://gallery.cortanaintelligence.com/Experiment/Extract-Key-Phrases-and-Show-Word-Cloud-1)
+The following example demonstrates how to use this module to extract key phrases and then build a word cloud from the phrases: [Extract Key Phrases and Show Word Cloud](https://gallery.azure.ai/Experiment/Extract-Key-Phrases-and-Show-Word-Cloud-1)
 
-See the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) for more examples of text processing using Azure Machine Learning.
+See the [Azure AI Gallery](https://gallery.azure.ai/) for more examples of text processing using Azure Machine Learning.
   
 ## Technical notes
 

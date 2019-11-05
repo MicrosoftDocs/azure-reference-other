@@ -127,13 +127,13 @@ This blog provides an extended explanation of how named entity recognition works
 
 - [Machine learning and text analytics](https://blogs.technet.com/b/machinelearning/archive/2014/07/23/machine-learning-and-text-analytics.aspx)
 
-Also, see the following sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) for demonstrations of how to use text classification methods commonly used in machine learning:
+Also, see the following sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/) for demonstrations of how to use text classification methods commonly used in machine learning:
 
 - [News Categorization sample](https://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
 
 - [Similar Companies sample](https://go.microsoft.com/fwlink/?LinkId=525164): Uses the text of Wikipedia articles to categorize companies.
 
-- [Text-Classification Step 1 of 5: Data preparation](http://gallery.cortanaanalytics.com/Experiment/Text-Classification-Step-1-of-5-data-preparation-3): In this five-part walkthrough of text classification, text from Twitter messages is used to perform sentiment analysis. A variety of text pre-processing techniques are also demonstrated.
+- [Text-Classification Step 1 of 5: Data preparation](https://gallery.cortanaanalytics.com/Experiment/Text-Classification-Step-1-of-5-data-preparation-3): In this five-part walkthrough of text classification, text from Twitter messages is used to perform sentiment analysis. A variety of text pre-processing techniques are also demonstrated.
 
 ## Technical notes
 

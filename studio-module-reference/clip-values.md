@@ -90,7 +90,7 @@ If you need to apply clipping methods or different criteria to some columns, you
 
 ## Examples  
 
-To see how this module is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see how this module is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
 + [Forest Fire outliers](https://gallery.azure.ai/Experiment/Forest-Fires-Outliers-1): This example from the EdX couse in data science demonstrates clipping methods using the Forest Fires sample dataset.
 

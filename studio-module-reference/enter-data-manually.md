@@ -106,7 +106,7 @@ This module can be helpful in scenarios such as these:
   
 ## Examples
 
-For examples of how this module is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how this module is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Download Data sample](https://go.microsoft.com/fwlink/?LinkId=525938): Gets data from the UCI Machine Learning repository and then uses [Enter Data Manually](enter-data-manually.md) to create column names. Sample R code is also provided, which you can use to merge the entered rows with the dataset.  
   

@@ -55,7 +55,7 @@ For all new experiments, we recommend that you use the following modules:
 
         This option is typically preferred for very large datasets. To access the counts, you must activate the HDInsight cluster. A MapReduce job is launched to perform the counting. Both of these activities can incur storage and compute costs.
 
-        For more information, see [HDInsight on Azure](http://azure.microsoft.com/services/hdinsight/).
+        For more information, see [HDInsight on Azure](https://azure.microsoft.com/services/hdinsight/).
 
     After specifying the data storage mode, you may need to provide additional connection information for the data, even if you previously used a [Import Data](import-data.md) module in the experiment to access data. That is because the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module accesses the data storage separately in order to read the data and build the required tables.
 
@@ -77,13 +77,13 @@ For all new experiments, we recommend that you use the following modules:
 
 ## Examples
 
-Explore examples of count-based featurization using these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+Explore examples of count-based featurization using these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):
 
 - [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
 
-- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): demonstrates the use of count-based features in a multiclass prediction task.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): demonstrates the use of count-based features in a multiclass prediction task.
 
-- [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
+- [Learning with Counts: Binary classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
 > These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.

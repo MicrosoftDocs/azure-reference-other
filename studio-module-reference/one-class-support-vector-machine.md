@@ -83,7 +83,7 @@ If you trained the model using a parameter sweep, make a note of the optimal par
 
 ## Examples
 
-For examples of how this module is used in anomaly detection, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how this module is used in anomaly detection, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
 - [Anomaly Detection: Credit Risk](https://gallery.azureml.net/Experiment/1219e87f8fb84e88a2e1b54256808bb3): This sample illustrates how to find outliers in data, using a parameter sweep to find the optimal model. It then applies that model to new data to identify risky transactions that might represent fraud, comparing two different anomaly detection models.
 
@@ -93,11 +93,11 @@ Predictions from the [One-Class SVM](one-class-support-vector-machine.md) are un
 
 ### Research
 
-This implementation wraps the library for support vector machines named [libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm/).  The general theory on which `libsvm` is based, and the approach towards one-class support vector machines, is described in these papers by B. Schӧlkopf et al.
+This implementation wraps the library for support vector machines named [libsvm](https://www.csie.ntu.edu.tw/~cjlin/libsvm/).  The general theory on which `libsvm` is based, and the approach towards one-class support vector machines, is described in these papers by B. Schӧlkopf et al.
 
 - [Estimating the Support of a High-Dimensional Distribution](https://research.microsoft.com/pubs/69731/tr-99-87.pdf)
 
-- [New Support Vector Algorithms](http://www.stat.purdue.edu/~yuzhu/stat598m3/Papers/NewSVM.pdf)
+- [New Support Vector Algorithms](https://www.stat.purdue.edu/~yuzhu/stat598m3/Papers/NewSVM.pdf)
 
 ## Module parameters
   

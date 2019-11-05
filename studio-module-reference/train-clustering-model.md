@@ -60,7 +60,7 @@ After training has completed:
 
 ## Examples  
 
-For an example of how clustering is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For an example of how clustering is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Clustering: Find similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Demonstrates how to use clustering on attributes derived from unstructured text.  
   

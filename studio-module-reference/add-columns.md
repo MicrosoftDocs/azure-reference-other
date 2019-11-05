@@ -50,7 +50,7 @@ If there are two columns with the same name in the input datasets, a numeric suf
 
 ## Examples  
 
-For examples of how **Add Columns** is used in an experiment, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how **Add Columns** is used in an experiment, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
 - [Customer relationship prediction](https://go.microsoft.com/fwlink/?LinkId=525941): A column that contains labels is combined with a feature dataset.  
 

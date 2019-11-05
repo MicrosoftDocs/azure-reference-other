@@ -51,7 +51,7 @@ The following steps describe how to manually configure the import source.
 
     For example, the following page contains the Iris data set from the machine learning repository of the University of California, Irvine:
 
-    `http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data`
+    `https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data`
 
 4. For **Data format**, select one of the supported data formats from the list.
 
@@ -73,7 +73,7 @@ When complete, click the output dataset and select **Visualize** to see if the d
 
 ## Examples
 
-See these examples in the [Azure AI Gallery](https://gallery.cortanaintelligence.com) of machine learning experiments that get data from public web sites:
+See these examples in the [Azure AI Gallery](https://gallery.azure.ai) of machine learning experiments that get data from public web sites:
 
 - [Letter Recognition sample](https://go.microsoft.com/fwlink/?LinkId=525737): Gets a training dataset from the public machine learning repository hosted by UC Irvine.
 

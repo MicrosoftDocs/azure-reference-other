@@ -67,7 +67,7 @@ We recommend that you use the [Edit Metadata](edit-metadata.md) module to prepar
   
 ## Examples  
 
-You can see examples of how the [Convert to Dataset](convert-to-dataset.md) module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+You can see examples of how the [Convert to Dataset](convert-to-dataset.md) module is used in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [CRM sample](https://go.microsoft.com/fwlink/?LinkId=525941): Reads from a shared dataset and saves a copy of the dataset in the local workspace.  
   

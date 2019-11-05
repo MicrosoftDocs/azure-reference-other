@@ -50,7 +50,7 @@ The following articles introduce common data scenarios in machine learning:
   
   This article describes how to get your data into Azure, and then create an experiment.
   
--   [Data preparation for machine learning by using SQL Server Integration Services](http://blogs.msdn.com/b/ssis/archive/2015/06/25/data-preparation-for-azure-machine-learning-using-ssis.aspx)
+-   [Data preparation for machine learning by using SQL Server Integration Services](https://blogs.msdn.com/b/ssis/archive/2015/06/25/data-preparation-for-azure-machine-learning-using-ssis.aspx)
   
   Learn how to use ETL tools to integrate your data warehouse with Machine Learning.
   

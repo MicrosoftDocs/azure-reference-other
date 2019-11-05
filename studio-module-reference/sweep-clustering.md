@@ -128,9 +128,9 @@ The [Sweep Clustering](sweep-clustering.md) module outputs three different resul
 
 ## Examples  
 
-To see examples a parameter sweep with K-means clustering, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples a parameter sweep with K-means clustering, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
-- [Clustering sweep using the Diabetes dataset](http://gallery.cortanaanalytics.com/Experiment/Clustering-sweep-diabetes-dataset-1)
+- [Clustering sweep using the Diabetes dataset](https://gallery.cortanaanalytics.com/Experiment/Clustering-sweep-diabetes-dataset-1)
 
 ## Technical notes
 

@@ -55,7 +55,7 @@ To use a different clustering algorithm, or create a custom clustering model by 
 
 ## Examples
 
-For examples of clustering in action, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
+For examples of clustering in action, see the [Azure AI Gallery](https://gallery.azure.ai/).
 
 See these articles for help choosing an algorithm:  
 

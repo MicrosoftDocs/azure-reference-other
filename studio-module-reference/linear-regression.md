@@ -164,7 +164,7 @@ After training is complete:
 
 ## Examples
 
-For examples of regression models, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of regression models, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):
 
 + [Compare Regressors](https://go.microsoft.com/fwlink/?LinkId=525731): Contrasts several different kinds of regression models.
 

@@ -47,7 +47,7 @@ The modules in this section provide tools for the final phases of machine learni
 
     Measure the accuracy of a trained model, or compare multiple models.  
 
-For a detailed description of this experimental workflow, see the [credit risk solution walkthrough](http://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/).  
+For a detailed description of this experimental workflow, see the [credit risk solution walkthrough](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/).  
 
 ## Prerequisites
 
@@ -84,11 +84,11 @@ Machine Learning Studio (classic) can help you sift through your data to find th
 
 The problem you are trying to solve determines both the choice of data to use in analysis, and the choice of an algorithm.  
 
-For more information, see [How to choose an algorithm in Azure Machine Learning](http://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/).  
+For more information, see [How to choose an algorithm in Azure Machine Learning](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/).  
 
 ## Examples
 
-For examples of machine learning in action, see the [Azure AI Gallery](http://azure.microsoft.com/documentation/services/machine-learning/models/).
+For examples of machine learning in action, see the [Azure AI Gallery](https://azure.microsoft.com/documentation/services/machine-learning/models/).
 
 For tips, and a walkthrough of some typical data prepration tasks, see [Walkthroughs executing the Team Data Science Process](/azure/machine-learning/team-data-science-process/walkthroughs).
 

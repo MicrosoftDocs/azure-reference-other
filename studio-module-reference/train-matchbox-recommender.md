@@ -127,7 +127,7 @@ For an example, see the Restaurant feature data dataset, provided in Azure Machi
   
 ## Examples
 
-For examples of how recommendation models are used in Azure Machine Learning, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how recommendation models are used in Azure Machine Learning, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Movie recommender sample](https://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model.  
   

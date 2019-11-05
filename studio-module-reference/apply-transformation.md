@@ -53,13 +53,13 @@ Azure Machine Learning Studio (classic) provides support for creating and then a
   
 ## Examples  
 
-To see how this module is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see how this module is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Online Fraud Detection](https://gallery.cortanaintelligence.com/Experiment/8e9fe4e03b8b4c65b9ca947c72b8e463): This sample demonstrates how to use **Apply Transformation** with [Clean Missing Data](clean-missing-data.md), to ensure that missing values are handled the same in all datasets.  
+- [Online Fraud Detection](https://gallery.azure.ai/Experiment/8e9fe4e03b8b4c65b9ca947c72b8e463): This sample demonstrates how to use **Apply Transformation** with [Clean Missing Data](clean-missing-data.md), to ensure that missing values are handled the same in all datasets.  
 
-- [Predictive Maintenance](https://gallery.cortanaintelligence.com/Experiment/df7c518dcba7407fb855377339d6589f): Demonstrates how to use **Apply Transformation** with [Normalize Data](normalize-data.md).  
+- [Predictive Maintenance](https://gallery.azure.ai/Experiment/df7c518dcba7407fb855377339d6589f): Demonstrates how to use **Apply Transformation** with [Normalize Data](normalize-data.md).  
   
-- [Learning with Counts](https://gallery.cortanaintelligence.com/Experiment/47deb75fc7bb428194e9d0d5713350c8): Uses **Apply Transformation** to reuse a count table.  
+- [Learning with Counts](https://gallery.azure.ai/Experiment/47deb75fc7bb428194e9d0d5713350c8): Uses **Apply Transformation** to reuse a count table.  
 
 ##  Technical notes  
 

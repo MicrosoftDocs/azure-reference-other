@@ -71,7 +71,7 @@ In this example, K-means clustering was used to group people in the **Adult Cens
 
 ## Examples  
   
-Because this module has been deprecated, there are no examples of this module in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).  
+Because this module has been deprecated, there are no examples of this module in the [Azure AI Gallery](https://gallery.azure.ai/).  
 
 To see examples of updated clustering models, see these experiments:
   

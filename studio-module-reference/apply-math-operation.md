@@ -65,7 +65,7 @@ Look for the operation you need in these categories:
 
 ## Examples
 
-For examples of how to use **Apply Math Operation**, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how to use **Apply Math Operation**, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Color quantization](https://go.microsoft.com/fwlink/?LinkId=525272): One set of column values is subtracted from another, and then the results are squared.  
   

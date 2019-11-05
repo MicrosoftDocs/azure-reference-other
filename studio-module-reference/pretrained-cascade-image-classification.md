@@ -22,7 +22,7 @@ Category: [OpenCV Library Modules](opencv-library-modules.md)
 
 This article describes how to use the **Pretrained Cascade Image Classification** module in Azure Machine Learning Studio (classic), to detect faces in images. 
 
-The model is based on the [OpenCV](http://opencv.org/) library. The OpenCV Library provides a list of predefined models, each optimized to detect a particular type of object.
+The model is based on the [OpenCV](https://opencv.org/) library. The OpenCV Library provides a list of predefined models, each optimized to detect a particular type of object.
 
 ### More about the pre-trained model
 
@@ -64,7 +64,7 @@ The image classification model in Azure Machine Learning has already been traine
 
     In the OpenCV library, the classifier detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles. The *neighbors* parameter controls how many possible matches are required to qualify as a detected face or feature. Thus, increasing this value tends to increase precision at the cost of coverage.
 
-    For examples of how neighbors are calculated, see this article in the OpenCv Library documentation: [Eigenfaces in OpenCV](http://docs.opencv.org/modules/contrib/doc/facerec/facerec_tutorial.html?highlight=neighbor)
+    For examples of how neighbors are calculated, see this article in the OpenCv Library documentation: [Eigenfaces in OpenCV](https://docs.opencv.org/modules/contrib/doc/facerec/facerec_tutorial.html?highlight=neighbor)
 
 6. Optionally, you can use the following settings to specify image size to the model so that it can make better predictions. Images that do not fit the requirements are eliminated:
 
@@ -103,7 +103,7 @@ The facial recognition model provided by this module is based on the Viola-Jones
 
 - This Wikipedia article describes the method used for the classifier, based on the paper by Navneet Dalal and Bill Triggs: [Histogram of oriented gradients](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients)
 
-- For the documentation of the face recognition algorithm provided in the OpenCV library, see [Cascade Classifier](http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html?highlight=detectmultiscale).
+- For the documentation of the face recognition algorithm provided in the OpenCV library, see [Cascade Classifier](https://docs.opencv.org/modules/objdetect/doc/cascade_classification.html?highlight=detectmultiscale).
 
 > [!NOTE]
 > This module does not output the full collection of information produced by the OpenCV library. In particular, this module only outputs the prediction of whether a face is present or not, and does not include the coordinates of the face or any other information.

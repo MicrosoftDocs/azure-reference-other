@@ -49,7 +49,7 @@ This section describes implementation details and common questions.
 
 ## Examples  
 
-To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 -  [Demand estimation](https://go.microsoft.com/fwlink/?LinkId=525271): Combines the result of evaluating multiple models into a single dataset and passes it to an Execute R Script for custom processing  
   

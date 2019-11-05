@@ -152,7 +152,7 @@ Additionally, the following metrics are included for each fold, depending on the
  
 ##  Examples  
 
-For examples of how cross-validation is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how cross-validation is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Cross validation for binary classifier](https://go.microsoft.com/fwlink/?LinkId=525734): Demonstrates how to use cross-validation with a binary classification model.
   

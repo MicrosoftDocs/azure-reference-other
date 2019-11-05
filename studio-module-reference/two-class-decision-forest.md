@@ -115,7 +115,7 @@ After training is complete:
 
 ## Examples
 
-For examples of how decision forests are used in machine learning, see the sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how decision forests are used in machine learning, see the sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 -  [News categorization](https://gallery.azureml.net/Experiment/fcb1bf27ee26443fb19bd07852a620c4): Compares a multiclass classifier to a model built using the **Two-Class Decision Forest** algorithm with the [One-vs-All Multiclass](one-vs-all-multiclass.md).  
   

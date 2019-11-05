@@ -143,7 +143,7 @@ The optimal set of preprocessing methods to apply in any individual solution dep
 
 ## Examples
 
-For examples of how feature hashing is used for text analytics, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how feature hashing is used for text analytics, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 - [News Categorization](https://go.microsoft.com/fwlink/?LinkId=525167): Uses feature hashing to classify articles into a predefined list of categories.
   

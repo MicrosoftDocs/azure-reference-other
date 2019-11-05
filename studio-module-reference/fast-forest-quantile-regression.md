@@ -163,7 +163,7 @@ After training is complete:
 + To see the final hyperparameters of the optimized model, right-click the output of [Tune Model Hyperparameters](tune-model-hyperparameters.md) and select **Visualize**. 
 ## Examples
 
-For examples of how to use this module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):  
+For examples of how to use this module, see the [Azure AI Gallery](https://gallery.azure.ai):  
   
 - [Quantile Regression](https://go.microsoft.com/fwlink/?LinkId=525769): Demonstrates how to build and interpret a quantile regression model, using the auto price dataset.
 
@@ -185,11 +185,11 @@ For more information about quantile regression, see these books and articles:
   
 -   Quantile Regression Forests. Nicolai Meinshausen  
   
-     [http://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf](http://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf)  
+     [https://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf](https://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf)  
   
 -   Random forests. Leo Breiman.  
   
-     [http://rd.springer.com/article/10.1023%2FA%3A1010933404324](http://rd.springer.com/article/10.1023%2FA%3A1010933404324)  
+     [https://rd.springer.com/article/10.1023%2FA%3A1010933404324](https://rd.springer.com/article/10.1023%2FA%3A1010933404324)  
   
 ##  Module parameters  
 

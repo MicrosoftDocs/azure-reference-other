@@ -135,7 +135,7 @@ To see how well the binning method functions as a predictor, you can click the d
 
 ## <a name="bkmk_Examples"></a> Examples
 
-For examples of how quantization is applied in machine learning scenarios, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how quantization is applied in machine learning scenarios, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 + [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): In this sample, binning is used to divide patients into equal groups by using the patient ID field.
 + [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525725): Uses quantile normalization to sort cases into 10 bins.

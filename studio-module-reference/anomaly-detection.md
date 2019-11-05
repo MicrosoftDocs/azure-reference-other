@@ -33,7 +33,7 @@ Machine Learning Studio (classic) provides the following modules that you can us
 
 After setting model parameters, you must train the model by using a labeled data set and the [Train Anomaly Detection Model](train-anomaly-detection-model.md) training module. The result is a trained model that you can use to test new data. To do this, use the all-purpose [Score Model](score-model.md) module.
 
-For an example of how these modules work together, see the [Anomaly Detection: Credit Risk](https://gallery.cortanaintelligence.com/Experiment/Anomaly-Detection-Credit-Risk-5) experiment in the Cortana Intelligence Gallery.
+For an example of how these modules work together, see the [Anomaly Detection: Credit Risk](https://gallery.azure.ai/Experiment/Anomaly-Detection-Credit-Risk-5) experiment in the Cortana Intelligence Gallery.
 
 ### Related tasks
  

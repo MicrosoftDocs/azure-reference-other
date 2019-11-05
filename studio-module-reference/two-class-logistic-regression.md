@@ -101,7 +101,7 @@ After training is complete:
   
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
 - [Network intrusion detection](https://go.microsoft.com/fwlink/?LinkId=525724): Uses binary logistic regression to determine whether a case represents an intrusion.  
 
@@ -131,7 +131,7 @@ Logistic regression assumes a *logistic distribution* of the data, where the pro
   
 -   <code>β{0},..., β {D-1}</code> are the unknown parameters of the logistic distribution.  
   
-The algorithm tries to find the optimal values for <code>β{0},..., β {D-1}</code> by maximizing the log probability of the parameters given the inputs. Maximization is performed by using a popular method for parameter estimation, called [Limited Memory BFGS](http://en.wikipedia.org/wiki/Limited-memory_BFGS).  
+The algorithm tries to find the optimal values for <code>β{0},..., β {D-1}</code> by maximizing the log probability of the parameters given the inputs. Maximization is performed by using a popular method for parameter estimation, called [Limited Memory BFGS](https://en.wikipedia.org/wiki/Limited-memory_BFGS).  
 
 ### Research
 

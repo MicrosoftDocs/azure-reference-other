@@ -63,7 +63,7 @@ After training is complete, right-click the output of the [Train Model](train-mo
   
 ## Examples 
 
-To see how the Two-Class Bayes Point Machine is used in machine learning, see these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see how the Two-Class Bayes Point Machine is used in machine learning, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 -  [Compare Binary Classifiers](https://go.microsoft.com/fwlink/?LinkId=525729): This sample demonstrates the use of multiple two-class classifiers.  
 
@@ -71,7 +71,7 @@ To see how the Two-Class Bayes Point Machine is used in machine learning, see th
 
 This section contains implementation details and frequently asked questions about this algorithm.
 
-Details from the original research and underlying theory are available in this paper (PDF): [Bayes Point Machines, by Herbert, Graepe, and Campbell](http://www.jmlr.org/papers/volume1/herbrich01a/herbrich01a.pdf)  
+Details from the original research and underlying theory are available in this paper (PDF): [Bayes Point Machines, by Herbert, Graepe, and Campbell](https://www.jmlr.org/papers/volume1/herbrich01a/herbrich01a.pdf)  
 
 However, this implementation improves on the original algorithm in several ways:
 

@@ -26,7 +26,7 @@ Importing from blob storage requires that data be stored in blobs that use the *
 For other restrictions on the types of blob storage supported for use with Azure Machine Learning, see the [Technical notes](#bkmk_Notes) section.
 
 > [!TIP]
-> Need to import data in a format that's not supported? You can use Python or R. See this sample in the Azure AI Gallery: [Load non-text file from Azure Blob Storage](https://gallery.cortanaintelligence.com/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1) 
+> Need to import data in a format that's not supported? You can use Python or R. See this sample in the Azure AI Gallery: [Load non-text file from Azure Blob Storage](https://gallery.azure.ai/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1) 
 
 ## How to import data from Azure blobs
 
@@ -67,7 +67,7 @@ The following steps describe how to manually configure the import source.
 
     - For **Account name**, type or paste the name of the account that contains the blob you want to access.
 
-        For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.
+        For example, if the full URL of the storage account is `https://myshared.blob.core.windows.net`, you would type `myshared`.
 
     - For **Account key**, paste the storage access key that is associated with the account.
 
@@ -75,7 +75,7 @@ The following steps describe how to manually configure the import source.
 
 6. For **Path to container, directory, or blob**, type the name of the specific blob that you want to retrieve.
 
-    For example, if you uploaded a file named **data01.csv** to the container **trainingdata** in an account named **mymldata**, the full URL for the file would be: `http://mymldata.blob.core.windows.net/trainingdata/data01.txt`.
+    For example, if you uploaded a file named **data01.csv** to the container **trainingdata** in an account named **mymldata**, the full URL for the file would be: `https://mymldata.blob.core.windows.net/trainingdata/data01.txt`.
 
     Therefore, in the field  **Path to container, directory, or blob**, you would type: `trainingdata/data01.csv`
 
@@ -124,7 +124,7 @@ The following steps describe how to manually configure the import source.
 
 ## Examples
 
-To learn how to use data from Azure blob storage in machine learning experiments, see the [Azure Gallery](https://gallery.cortanaintelligence.com):
+To learn how to use data from Azure blob storage in machine learning experiments, see the [Azure Gallery](https://gallery.azure.ai):
 
 - [News Categorization sample](https://go.microsoft.com/fwlink/?LinkId=525167): Loads and then combines multiple datasets from Azure blob storage.
 
@@ -207,7 +207,7 @@ If you have trouble loading data correctly, try using the option **CSV with enco
   
 #### Are there any prohibited characters or characters that are changed during import?
 
-If attribute data contains quotation marks or escaped character sequences, they are handled by using the rules for such characters in Microsoft Excel. All other characters are handled by using the following specifications as a guideline: [RFC 4180](http://tools.ietf.org/html/rfc4180).  
+If attribute data contains quotation marks or escaped character sequences, they are handled by using the rules for such characters in Microsoft Excel. All other characters are handled by using the following specifications as a guideline: [RFC 4180](https://tools.ietf.org/html/rfc4180).  
 
 #### I need to import a very large file. What is the recommended method?
 
@@ -249,7 +249,7 @@ For uploaded datasets, Azure Machine Learning generally supports only UTF-8. How
 
 Processing and cleaning unstructured text to fit neatly in columns is always a challenge. However, if  you need to import columns of text data, the TSV format often presents fewer difficulties, though you still need to check for excess tab characters in advance.
 
-We recommend that you review the [Text Classification template](https://gallery.cortanaintelligence.com/Collection/Text-Classification-Template-1), in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/), to see an example of text ingestion and processing in Azure Machine Learning Studio (classic).
+We recommend that you review the [Text Classification template](https://gallery.azure.ai/Collection/Text-Classification-Template-1), in the [Azure AI Gallery](https://gallery.azure.ai/), to see an example of text ingestion and processing in Azure Machine Learning Studio (classic).
 
 ###  Custom encoding for CSV files  
 

@@ -61,11 +61,11 @@ To generate a set of feature scores requires that you have an already trained mo
   
 ## Examples  
 
-See these sample experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+See these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--   [Permutation Feature Importance](https://gallery.cortanaintelligence.com/Experiment/e2ccb5a5d9dc480489ba8ff0b7eb98ac): Demonstrates how to use this module to rank feature variables of a dataset in order of permutation importance scores.  
+-   [Permutation Feature Importance](https://gallery.azure.ai/Experiment/e2ccb5a5d9dc480489ba8ff0b7eb98ac): Demonstrates how to use this module to rank feature variables of a dataset in order of permutation importance scores.  
   
--  [Using the Permutation Feature Importance module](https://gallery.cortanaintelligence.com/Experiment/4802f138edcb4582a877018460edd943): Illustrates the usage of this module in a web service.
+-  [Using the Permutation Feature Importance module](https://gallery.azure.ai/Experiment/4802f138edcb4582a877018460edd943): Illustrates the usage of this module in a web service.
   
 ##  Technical notes
 

@@ -46,7 +46,7 @@ This article describes how to use the **Export data to Hive** option in the [Exp
 
 9. If you selected the **Azure** option, provide the storage account name, and the credentials the module can use to connect to storage.
 
-    - **Azure storage account name**: Type the name of the Azure account. For example, if the full URL of the storage account is `http://myshared.blob.core.windows.net`, you would type `myshared`.
+    - **Azure storage account name**: Type the name of the Azure account. For example, if the full URL of the storage account is `https://myshared.blob.core.windows.net`, you would type `myshared`.
 
     - **Azure storage key**: Copy and paste the key that is provided for accessing the storage account.
 
@@ -60,7 +60,7 @@ This article describes how to use the **Export data to Hive** option in the [Exp
 
 ## Examples
 
-For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.azure.ai).
 
 + [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/hive-criteo-walkthrough): This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio using Hive.
 

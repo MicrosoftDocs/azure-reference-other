@@ -96,7 +96,7 @@ After training is complete:
 
 ## Examples
 
-For examples of how decision forests are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how decision forests are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 + [Compare Multiclass Classifiers sample](https://go.microsoft.com/fwlink/?LinkId=525730): Uses several algorithms and discusses their pros and cons.
 

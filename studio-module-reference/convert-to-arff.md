@@ -50,7 +50,7 @@ For more information about the Weka toolset, see this Wikipedia article: [Weka (
  
 ## Examples
 
-There are no examples specific to this format in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). However, these experiments  demonstrate other types of format conversion:
+There are no examples specific to this format in the [Azure AI Gallery](https://gallery.azure.ai/). However, these experiments  demonstrate other types of format conversion:
   
 - [Color-Based Image Compression](https://go.microsoft.com/fwlink/?LinkId=525272): Exports the datasets used for each portion of the analysis to files for reproducibility and use on other analytics platforms.  
   
@@ -81,7 +81,7 @@ The data section consists of comma-separated values, and looks very much like a 
   
 <code>@DATA   5.1,3.5,1.4,0.2,0</code>  
   
-For additional information about this file format, see the Weka Wiki page: [ARFF (developer version)](http://weka.wikispaces.com/ARFF+%28developer+version%29).  
+For additional information about this file format, see the Weka Wiki page: [ARFF (developer version)](https://weka.wikispaces.com/ARFF+%28developer+version%29).  
   
 ### Current ARFF version
 

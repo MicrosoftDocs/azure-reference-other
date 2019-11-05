@@ -80,7 +80,7 @@ The output indicates a prediction score normalized from 0 to 1.
 
 ## Examples
 
-For examples of how Vowpal Wabbit can be used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how Vowpal Wabbit can be used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 + [Vowpal Wabbit sample](https://gallery.azure.ai/Collection/Vowpal-Wabbit-Samples-2)
 

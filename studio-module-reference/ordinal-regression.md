@@ -36,7 +36,7 @@ Predicting ordinal numbers requires a different algorithm than predicting the va
 
 For example, to predict students’ test scores, you would use a standard regression model, because students’ test scores vary on a continuous scale and can be measured. However, to predict their class ranking, you must use an ordinal regression model.
 
-For more information about the research behind this algorithm, see this paper (downloadable PDF): [http://papers.nips.cc/paper/3125-ordinal-regression-by-extended-binary-classification.pdf](http://papers.nips.cc/paper/3125-ordinal-regression-by-extended-binary-classification.pdf)
+For more information about the research behind this algorithm, see this paper (downloadable PDF): [https://papers.nips.cc/paper/3125-ordinal-regression-by-extended-binary-classification.pdf](https://papers.nips.cc/paper/3125-ordinal-regression-by-extended-binary-classification.pdf)
 
 ## How to configure Ordinal Regression
 
@@ -72,9 +72,9 @@ After training is complete:
 
 ## Examples
 
-For examples of how ordinal regression is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+For examples of how ordinal regression is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai).
 
-- [Predictive Maintenance - Step C](https://gallery.cortanaintelligence.com/Experiment/68b4a27dc53d426e902025e77a393702?r=legacy): In this sample, **Ordinal Regression** is used to rank values output by a classification model, on the assumption that the value reflects the severity of the failure classification.
+- [Predictive Maintenance - Step C](https://gallery.azure.ai/Experiment/68b4a27dc53d426e902025e77a393702?r=legacy): In this sample, **Ordinal Regression** is used to rank values output by a classification model, on the assumption that the value reflects the severity of the failure classification.
 
 ## Technical notes
 

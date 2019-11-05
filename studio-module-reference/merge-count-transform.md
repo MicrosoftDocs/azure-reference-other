@@ -49,7 +49,7 @@ To merge two sets of count-based features, the features must have been created u
 
 ## Examples
 
-For examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 - [Learning with Counts: Binary Classification](https://gallery.azureml.net/Experiment/Learning-with-Counts-Binary-Classification-2): Demonstrates how to use the learning with counts modules to generate features from columns of categorical values for a binary classification model.
 

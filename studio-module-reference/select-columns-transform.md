@@ -58,11 +58,11 @@ This process of saving and then applying a column selection ensures that the sam
 
 ## Examples
 
-For examples of how to use this module, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com):
+For examples of how to use this module, see the [Azure AI Gallery](https://gallery.azure.ai):
 
-+ [Select columns transform](https://gallery.cortanaintelligence.com/Experiment/Select-columns-transform-1): A complete walkthrough that uses this module.
++ [Select columns transform](https://gallery.azure.ai/Experiment/Select-columns-transform-1): A complete walkthrough that uses this module.
 
-+ [Filter features and remove them from scoring inputs](https://gallery.cortanaintelligence.com/Experiment/Filter-Features-And-Remove-Them-From-Scoring-Inputs-1): Save this experiment to your workspace to see how the module is used in a complete experimental workflow.
++ [Filter features and remove them from scoring inputs](https://gallery.azure.ai/Experiment/Filter-Features-And-Remove-Them-From-Scoring-Inputs-1): Save this experiment to your workspace to see how the module is used in a complete experimental workflow.
 
 ## Expected inputs
 

@@ -65,7 +65,7 @@ The **Classification** category includes the following modules:
 
 ## Examples
 
-For examples of classification in action, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).
+For examples of classification in action, see the [Azure AI Gallery](https://gallery.azure.ai/).
 
 For help choosing an algorithm, see these articles:
 

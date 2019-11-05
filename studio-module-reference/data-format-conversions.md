@@ -20,8 +20,8 @@ This article lists the modules provided in Azure Machine Learning Studio (classi
 The supported formats include:
 
 - The **dataset** format that's used throughout Azure Machine Learning.
-- The **ARFF** format that's used by [Weka](http://www.cs.waikato.ac.nz/ml/weka/). Weka is an open-source Java-based set of machine learning algorithms.
-- The **SVMLight** format. The SVMLight format was developed for the [SVMlight](http://svmlight.joachims.org/) framework for machine learning. It can also be used by Vowpal Wabbit.
+- The **ARFF** format that's used by [Weka](https://www.cs.waikato.ac.nz/ml/weka/). Weka is an open-source Java-based set of machine learning algorithms.
+- The **SVMLight** format. The SVMLight format was developed for the [SVMlight](https://svmlight.joachims.org/) framework for machine learning. It can also be used by Vowpal Wabbit.
 - The **tab-separated (TSV)** and **comma-separated (CSV)** flat file formats that are supported by most relational databases. These formats are also widely supported by R and Python.  
 
 When you convert data to these formats, you can more easily move results and data between different machine learning frameworks or storage mechanisms.

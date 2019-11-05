@@ -85,7 +85,7 @@ The report from the module can include the following statistics.
   
 ## Examples
 
-For examples of how to use the **Summarize Data** module in an experiment, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how to use the **Summarize Data** module in an experiment, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
 - [Download dataset from UCI](https://go.microsoft.com/fwlink/?LinkId=525938): Reads a dataset in CSV format by using its URL in the UCI Machine Learning Repository, and generates some basic statistics about the dataset. 
 

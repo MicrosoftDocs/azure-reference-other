@@ -55,7 +55,7 @@ After training is complete:
 
 ## Examples
 
-For an example of how anomaly detection is implemented in Azure Machine Learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For an example of how anomaly detection is implemented in Azure Machine Learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [On-line Fraud Detection](https://go.microsoft.com/fwlink/?LinkId=525964): Provides a detailed walkthrough of an anomaly detection scenario, including how to engineer features and interpret the results of an algorithm.  
   
