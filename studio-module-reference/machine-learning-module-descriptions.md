@@ -1,5 +1,6 @@
 ---
-title: "Module descriptions | Microsoft Docs"
+title: "Module descriptions"
+titleSuffix: ML Studio (classic) Azure
 description: An overview of all the modules included in Azure Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models.
 titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
@@ -9,7 +10,7 @@ ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Machine Learning module descriptions
 
