@@ -1,6 +1,6 @@
 ---
 title: "Add Columns | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -50,11 +50,11 @@ If there are two columns with the same name in the input datasets, a numeric suf
 
 ## Examples  
 
-For examples of how **Add Columns** is used in an experiment, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how **Add Columns** is used in an experiment, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
-- [Customer relationship prediction](http://go.microsoft.com/fwlink/?LinkId=525941): A column that contains labels is combined with a feature dataset.  
+- [Customer relationship prediction](https://go.microsoft.com/fwlink/?LinkId=525941): A column that contains labels is combined with a feature dataset.  
 
-- [Breast cancer detection](http://go.microsoft.com/fwlink/?LinkId=525726): Datasets that contain features are cleaned and then combined by using [Add Rows](add-rows.md),  **Add Columns**, and [Join Data](join-data.md).  
+- [Breast cancer detection](https://go.microsoft.com/fwlink/?LinkId=525726): Datasets that contain features are cleaned and then combined by using [Add Rows](add-rows.md),  **Add Columns**, and [Join Data](join-data.md).  
 
 ## Expected inputs  
 

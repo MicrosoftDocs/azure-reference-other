@@ -1,6 +1,6 @@
 ---
 title: "User-Defined Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -55,9 +55,9 @@ After you have defined a filter that meets your needs, you can apply the filter 
 
 ##  <a name="bkmk_Examples"></a> Examples
 
-For more examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For more examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
-- [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types. The example uses an engineered waveform dataset to more easily illustrate the effects of the different filters.  
+- [Filters](https://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types. The example uses an engineered waveform dataset to more easily illustrate the effects of the different filters.  
 
 ###  FIR filter example: Exponential weighted moving average
 
@@ -77,7 +77,7 @@ This FIR filter approximates a triangularly weighted moving average (WMA). You d
 0.0625, 0.0625, 0.2500, 0.3750, 0.2500, 0.0625
 ```
 
-The values used in this custom FIR filter represent a vector of feed-forward coefficients obtained by using the Deslauriers-Dubuc method of finite sequencing. For more information, see [Dubuc-Deslauriers Subdivision for Finite Sequences and Interpolation Wavelets on an Interval](http://appliedmaths.sun.ac.za/~herbst/research/publications/subdiv.pdf).
+The values used in this custom FIR filter represent a vector of feed-forward coefficients obtained by using the Deslauriers-Dubuc method of finite sequencing. For more information, see [Dubuc-Deslauriers Subdivision for Finite Sequences and Interpolation Wavelets on an Interval](https://appliedmaths.sun.ac.za/~herbst/research/publications/subdiv.pdf).
 
 ###  IIR filter example: Notch filter
 

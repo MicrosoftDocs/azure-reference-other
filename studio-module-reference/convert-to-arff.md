@@ -1,6 +1,6 @@
 ---
 title: "Convert to ARFF | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -50,11 +50,11 @@ For more information about the Weka toolset, see this Wikipedia article: [Weka (
  
 ## Examples
 
-There are no examples specific to this format in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/). However, these experiments  demonstrate other types of format conversion:
+There are no examples specific to this format in the [Azure AI Gallery](https://gallery.azure.ai/). However, these experiments  demonstrate other types of format conversion:
   
-- [Color-Based Image Compression](http://go.microsoft.com/fwlink/?LinkId=525272): Exports the datasets used for each portion of the analysis to files for reproducibility and use on other analytics platforms.  
+- [Color-Based Image Compression](https://go.microsoft.com/fwlink/?LinkId=525272): Exports the datasets used for each portion of the analysis to files for reproducibility and use on other analytics platforms.  
   
-- [Cross Validation for Binary Classification sample](http://go.microsoft.com/fwlink/?LinkId=525734): Exports the results of cross validation to files so that the results for multiple models can be compared by using a tool such as Excel.  
+- [Cross Validation for Binary Classification sample](https://go.microsoft.com/fwlink/?LinkId=525734): Exports the results of cross validation to files so that the results for multiple models can be compared by using a tool such as Excel.  
   
 ## <a name="bkmk_Notes"></a> Technical notes  
 
@@ -81,7 +81,7 @@ The data section consists of comma-separated values, and looks very much like a 
   
 <code>@DATA   5.1,3.5,1.4,0.2,0</code>  
   
-For additional information about this file format, see the Weka Wiki page: [ARFF (developer version)](http://weka.wikispaces.com/ARFF+%28developer+version%29).  
+For additional information about this file format, see the Weka Wiki page: [ARFF (developer version)](https://weka.wikispaces.com/ARFF+%28developer+version%29).  
   
 ### Current ARFF version
 

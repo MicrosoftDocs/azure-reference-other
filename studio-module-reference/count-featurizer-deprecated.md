@@ -1,6 +1,6 @@
 ---
 title: "Count Featurizer (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -79,13 +79,13 @@ If you have existing count-based features or data that you want to use in a new 
 
 ## Examples
 
-Explore examples of count-based featurization in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+Explore examples of count-based featurization in the [Azure AI Gallery](https://gallery.azure.ai/):
 
-- [Flight delay prediction](http://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
+- [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
 
-- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): Demonstrates the use of count-based features in a multiclass prediction task.
+- [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): Demonstrates the use of count-based features in a multiclass prediction task.
 
-- [Learning with Counts: Binary classification with NYC taxi data](https://gallery.cortanaintelligence.com/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
+- [Learning with Counts: Binary classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
 > These experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.

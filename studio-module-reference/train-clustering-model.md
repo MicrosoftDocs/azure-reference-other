@@ -1,6 +1,6 @@
 ---
 title: "Train Clustering Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -60,13 +60,13 @@ After training has completed:
 
 ## Examples  
 
-For an example of how clustering is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For an example of how clustering is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Clustering: Find similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Demonstrates how to use clustering on attributes derived from unstructured text.  
+- [Clustering: Find similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Demonstrates how to use clustering on attributes derived from unstructured text.  
   
-- [Clustering: Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272): Demonstrates how to use clustering to find related colors and reduce the number of bits used in images.
+- [Clustering: Color quantization](https://go.microsoft.com/fwlink/?LinkId=525272): Demonstrates how to use clustering to find related colors and reduce the number of bits used in images.
   
-- [Clustering: Group iris data](http://go.microsoft.com/fwlink/?LinkId=526317): Provides a simple example of clustering based on the iris dataset.  
+- [Clustering: Group iris data](https://go.microsoft.com/fwlink/?LinkId=526317): Provides a simple example of clustering based on the iris dataset.  
   
 ##  Expected inputs  
   

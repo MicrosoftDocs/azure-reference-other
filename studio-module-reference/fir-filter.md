@@ -1,6 +1,6 @@
 ---
 title: "FIR Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -94,9 +94,9 @@ After you have defined a digital signal processing filter, you can apply the fil
 
 ## Examples
 
-For examples of how filters are used in machine learning, see this experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how filters are used in machine learning, see this experiment in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--  [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
+-  [Filters](https://go.microsoft.com/fwlink/?LinkId=525732): This experiment demonstrates all filter types, using an engineered waveform dataset.
 
 ## Technical notes
 

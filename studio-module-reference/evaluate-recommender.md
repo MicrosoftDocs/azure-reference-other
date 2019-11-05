@@ -1,6 +1,6 @@
 ---
 title: "Evaluate Recommender | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -177,9 +177,9 @@ Therefore, to evaluate, the recommender scoring module must only predict related
 
 ## Examples
 
-For examples of how recommendation models are used in Azure Machine Learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how recommendation models are used in Azure Machine Learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Movie recommender sample](http://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model. 
+- [Movie recommender sample](https://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model. 
 
 - [Building recommendation engine for .NET applications using Azure Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/): This blog provides a detailed description of how to build a movie recommendation model. 
 

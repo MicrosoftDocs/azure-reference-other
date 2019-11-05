@@ -1,6 +1,6 @@
 ---
-title: "A-Z list of Machine Learning Studio (classic) modules | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+title: "Module index | Microsoft Docs"
+titleSuffix: ML Studio (classic) Azure
 description: "Review an A-Z list of modules that are available in Machine Learning Studio (classic)."
 ms.service: "machine-learning"
 ms.subservice: "studio"

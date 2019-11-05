@@ -1,6 +1,6 @@
 ---
 title: "Compute Elementary Statistics | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -217,11 +217,11 @@ Calculates the *sum* of the column values.
 
 ## Examples  
 
-The following experiments in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/) demonstrate how you can create a summary report that contains descriptive statistics for an entire dataset. The summary report contains only general statistics; however, you can save it as a dataset and then add more detailed statistics, using the options in [Compute Elementary Statistics](compute-elementary-statistics.md).
+The following experiments in the [Azure AI Gallery](https://gallery.azure.ai/) demonstrate how you can create a summary report that contains descriptive statistics for an entire dataset. The summary report contains only general statistics; however, you can save it as a dataset and then add more detailed statistics, using the options in [Compute Elementary Statistics](compute-elementary-statistics.md).
 
-- [Download dataset from UCI](https://gallery.cortanaintelligence.com/Experiment/24c4e869c5c448958ce923c2e2bfbb27): The [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
+- [Download dataset from UCI](https://gallery.azure.ai/Experiment/24c4e869c5c448958ce923c2e2bfbb27): The [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
   
-- [Dataset Processing and Analysis](https://gallery.cortanaintelligence.com/Experiment/943c3d4becb7470e8acac6af699d6ea9): The [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
+- [Dataset Processing and Analysis](https://gallery.azure.ai/Experiment/943c3d4becb7470e8acac6af699d6ea9): The [Summarize Data](summarize-data.md) module is used to generate a summary report on all columns in the dataset.  
 
 
 ##  Technical notes  

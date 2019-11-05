@@ -1,6 +1,6 @@
 ---
 title: "Linear Discriminant Analysis (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -65,11 +65,11 @@ The module has two outputs:
 
 ## Examples
 
-To see examples of how feature selection is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+To see examples of how feature selection is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
-+ [Twitter Sentiment Analysis](http://go.microsoft.com/fwlink/?LinkId=525274): Uses filter-Based Feature Selection to improve experiment results.
++ [Twitter Sentiment Analysis](https://go.microsoft.com/fwlink/?LinkId=525274): Uses filter-Based Feature Selection to improve experiment results.
 
-+ [Fisher Linear Discriminant Analysis](https://gallery.cortanaintelligence.com/Details/35da9465c13f4050babff2f297284dc1): Demonstrates how to use this module for dimensionality reduction.
++ [Fisher Linear Discriminant Analysis](https://gallery.azure.ai/Details/35da9465c13f4050babff2f297284dc1): Demonstrates how to use this module for dimensionality reduction.
 
 ## Technical notes
 
@@ -87,7 +87,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 For more information about how the eigenvalues are calculated, see this paper (PDF download):
 
-+ [Eigenvector-based Feature Extraction for Classification](http://www.aaai.org/Papers/FLAIRS/2002/FLAIRS02-070.pdf). Tymbal, Puuronen et al.
++ [Eigenvector-based Feature Extraction for Classification](https://www.aaai.org/Papers/FLAIRS/2002/FLAIRS02-070.pdf). Tymbal, Puuronen et al.
 
 ## Expected inputs
 

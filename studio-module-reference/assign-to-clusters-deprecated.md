@@ -1,6 +1,6 @@
 ---
 title: "Assign to Clusters (deprecated) | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -71,13 +71,13 @@ In this example, K-means clustering was used to group people in the **Adult Cens
 
 ## Examples  
   
-Because this module has been deprecated, there are no examples of this module in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).  
+Because this module has been deprecated, there are no examples of this module in the [Azure AI Gallery](https://gallery.azure.ai/).  
 
 To see examples of updated clustering models, see these experiments:
   
-- [Color quantization](http://go.microsoft.com/fwlink/?LinkId=525272): Uses clustering to group images by color patterns to reduce the number of bits needed to represent each image.  
+- [Color quantization](https://go.microsoft.com/fwlink/?LinkId=525272): Uses clustering to group images by color patterns to reduce the number of bits needed to represent each image.  
   
-- [Clustering: Similar Companies](http://go.microsoft.com/fwlink/?LinkId=525164): Uses clustering with text extracted from Wikipedia description to find companies in predefined categories.  
+- [Clustering: Similar Companies](https://go.microsoft.com/fwlink/?LinkId=525164): Uses clustering with text extracted from Wikipedia description to find companies in predefined categories.  
   
 ##  Technical notes
 

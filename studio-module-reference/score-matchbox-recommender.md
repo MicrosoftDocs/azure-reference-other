@@ -1,6 +1,6 @@
 ---
 title: "Score Matchbox Recommender | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -59,13 +59,13 @@ More details on the Matchbox recommender and its underlying probabilistic algori
 
 ## Examples
 
- For examples of how to create scores from a recommendation engine, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/).  
+ For examples of how to create scores from a recommendation engine, see the [Azure AI Gallery](https://gallery.azure.ai/).  
 
-- [Recommender: Movie recommendation](http://gallery.cortanaintelligence.com/Experiment/Recommender-Movie-recommendation-3): This sample demonstrates item recommendation, where the items are movies, and also demonstrates rating prediction.
+- [Recommender: Movie recommendation](https://gallery.azure.ai/Experiment/Recommender-Movie-recommendation-3): This sample demonstrates item recommendation, where the items are movies, and also demonstrates rating prediction.
 
-- [Recommender: Restaurant ratings](http://gallery.cortanaintelligence.com/Experiment/Recommender-Restaurant-ratings-2): This sample demonstrates item recommendations using both item features and user features.
+- [Recommender: Restaurant ratings](https://gallery.azure.ai/Experiment/Recommender-Restaurant-ratings-2): This sample demonstrates item recommendations using both item features and user features.
 
-+ [Recommendations Everywhere](http://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx): This blog post provides a high-level introduction to recommender systems with lots of visual aids. 
++ [Recommendations Everywhere](https://blogs.technet.com/b/machinelearning/archive/2014/07/09/recommendations-everywhere.aspx): This blog post provides a high-level introduction to recommender systems with lots of visual aids. 
 
 ## How to configure Score Matchbox Recommender
 

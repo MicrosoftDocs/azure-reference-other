@@ -1,6 +1,6 @@
 ---
 title: "Apply Filter | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -49,9 +49,9 @@ If you want see other columns in the dataset, you can use the [Add Columns](add-
 
 ## Examples  
 
-For examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how filters are used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Filters](http://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types, using an engineered waveform dataset.
+- [Filters](https://go.microsoft.com/fwlink/?LinkId=525732): Demonstrates all filter types, using an engineered waveform dataset.
 
 ##  Technical notes  
 

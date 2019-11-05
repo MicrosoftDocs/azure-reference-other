@@ -1,6 +1,6 @@
 ---
 title: "Compute Linear Correlation | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -115,9 +115,9 @@ We recommend that you remove non-numeric columns, to avoid complex tables with m
 
 ## Examples  
 
-To see how this module is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+To see how this module is used in machine learning experiments, see the [Azure AI Gallery](https://gallery.azure.ai/):
   
--   [Data Processing and Analysis](http://go.microsoft.com/fwlink/?LinkId=525733): This sample demonstrates multiple techniques for modifying your data. [Compute Linear Correlation](compute-linear-correlation.md) is used to identify potential feature columns.  
+-   [Data Processing and Analysis](https://go.microsoft.com/fwlink/?LinkId=525733): This sample demonstrates multiple techniques for modifying your data. [Compute Linear Correlation](compute-linear-correlation.md) is used to identify potential feature columns.  
   
 ##  Technical notes
 

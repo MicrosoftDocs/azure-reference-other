@@ -1,7 +1,7 @@
 ---
-title: "Machine Learning - Initialize Model | Microsoft Docs"
+title: "Initialize Model | Microsoft Docs"
 description: "Learn about the modules you can use in Azure Machine Learning Studio (classic) to define a machine learning model and set its parameters."
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

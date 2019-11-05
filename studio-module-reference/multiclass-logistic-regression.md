@@ -1,6 +1,6 @@
 ---
 title: "Multiclass Logistic Regression | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
@@ -85,13 +85,13 @@ After training is complete:
 
 ## Examples
 
-For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):
+For examples of how this learning algorithm is used, see the [Azure AI Gallery](https://gallery.azure.ai/):
 
 + [Iris clustering](https://gallery.azureml.net/Experiment/a7299de725a141388f373e9d74ef2f86): Compares the results of multiclass logistic regression with K-means clustering.
 
-+ [Network intrusion detection](http://go.microsoft.com/fwlink/?LinkId=525724): Uses binary logistic regression to determine if a case represents an intrusion.
++ [Network intrusion detection](https://go.microsoft.com/fwlink/?LinkId=525724): Uses binary logistic regression to determine if a case represents an intrusion.
 
-+ [Cross Validation for Binary Classifiers](http://go.microsoft.com/fwlink/?LinkId=525734): Demonstrates the use of logistic regression in a typical experimental workflow, including model evaluation.
++ [Cross Validation for Binary Classifiers](https://go.microsoft.com/fwlink/?LinkId=525734): Demonstrates the use of logistic regression in a typical experimental workflow, including model evaluation.
 
 ## <a name="bkmk_Notes"></a> Technical notes
 
@@ -105,7 +105,7 @@ Want to learn more about L1 and L2 regularization? The following article provide
 
 For more information on the implementation of this algorithm, see:
 
-+ [Scalable Training of L-1 Regularized Log-Linear Models](http://research.microsoft.com/apps/pubs/default.aspx?id=78900), by Andrew and Gao.  
++ [Scalable Training of L-1 Regularized Log-Linear Models](https://research.microsoft.com/apps/pubs/default.aspx?id=78900), by Andrew and Gao.  
 
 ### Implementation details
 
@@ -127,7 +127,7 @@ Binomial logistic regression assumes a *logistic distribution* of the data, wher
 
 + `β{0},..., β {D-1}` are the unknown parameters of the logistic distribution.
 
-The algorithm tries to find the optimal values for `β{0},..., β {D-1}` by maximizing the log probability of the parameters given the inputs. Maximization is performed by using a popular method for parameter estimation, called [Limited Memory BFGS](http://wikipedia.org/wiki/Limited-memory_BFGS).
+The algorithm tries to find the optimal values for `β{0},..., β {D-1}` by maximizing the log probability of the parameters given the inputs. Maximization is performed by using a popular method for parameter estimation, called [Limited Memory BFGS](https://wikipedia.org/wiki/Limited-memory_BFGS).
 
 ## Module parameters
 

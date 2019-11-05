@@ -1,6 +1,6 @@
 ---
 title: "Convert to Dataset | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -67,11 +67,11 @@ We recommend that you use the [Edit Metadata](edit-metadata.md) module to prepar
   
 ## Examples  
 
-You can see examples of how the [Convert to Dataset](convert-to-dataset.md) module is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+You can see examples of how the [Convert to Dataset](convert-to-dataset.md) module is used in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [CRM sample](http://go.microsoft.com/fwlink/?LinkId=525941): Reads from a shared dataset and saves a copy of the dataset in the local workspace.  
+- [CRM sample](https://go.microsoft.com/fwlink/?LinkId=525941): Reads from a shared dataset and saves a copy of the dataset in the local workspace.  
   
-- [Flight Delay example](http://go.microsoft.com/fwlink/?LinkId=525725): Saves a dataset that has been cleaned by replacing missing values so that you can use it for future experiments.  
+- [Flight Delay example](https://go.microsoft.com/fwlink/?LinkId=525725): Saves a dataset that has been cleaned by replacing missing values so that you can use it for future experiments.  
   
 ## Technical notes  
 

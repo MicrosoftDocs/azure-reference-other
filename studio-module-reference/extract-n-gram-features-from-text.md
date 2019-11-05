@@ -1,6 +1,6 @@
 ---
 title: "Extract N-Gram Features from Text | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -58,7 +58,7 @@ Those module supports the following scenarios for creating, updating, or applyin
   
     For example, assume that your dictionary contains  the unigram "computer". A _k_ value of 0 would mean that "computer" is the only valid unigram. If you increase the value of _k_ to 1, you can skip over one intervening character, which lets you find more similar sequences. A skip-gram with a _k_ value of 1 would differ by one character from the 0-_k_ unigram. Thus, the skip-grams "conputer" and "compuuter" would both be considered part of the same dictionary entry as "computer". Setting the _k_ value to 2 would match even more dissimilar words.
   
-    For more information about how skip-grams are used in text analytics, see this paper: [Candidate Generation and Feature Engineering for Supervised Lexical Normalization](http://www.aclweb.org/anthology/W15-4313)  
+    For more information about how skip-grams are used in text analytics, see this paper: [Candidate Generation and Feature Engineering for Supervised Lexical Normalization](https://www.aclweb.org/anthology/W15-4313)  
   
 6. The option, **Weighting function**, is required only if you merge or update vocabularies. It specifies how terms in the two vocabularies and their scores should be weighted against each other.
   
@@ -252,7 +252,7 @@ We recommend that you experiment with different ranges of values for n-gram leng
 
 For more information about n-grams and skip-grams, see these resources:
   
- + [Automatic Evaluation of Summaries Using N-gram Co-Occurrence Statistics](http://research.microsoft.com/en-us/um/people/cyl/download/papers/NAACL2003.pdf)  
+ + [Automatic Evaluation of Summaries Using N-gram Co-Occurrence Statistics](https://research.microsoft.com/en-us/um/people/cyl/download/papers/NAACL2003.pdf)  
   
 ##  Expected inputs
 

@@ -1,6 +1,6 @@
 ---
 title: "Convert to CSV | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -63,9 +63,9 @@ Double-click the output of [Convert to CSV](convert-to-csv.md), and select one o
 
 ## Examples  
 
-To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Accessing Azure ML datasets using R](https://gallery.cortanaintelligence.com/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5): Demonstrates how you can convert datasets to CSV format for use with external applications. 
+- [Accessing Azure ML datasets using R](https://gallery.azure.ai/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5): Demonstrates how you can convert datasets to CSV format for use with external applications. 
   
 ## Technical notes  
 
@@ -127,7 +127,7 @@ If the first column of the dataset that you convert to CSV has the name **ID**, 
   
      "SYLK: File format is not valid."  
   
-To avoid this error, you must rename the column. For more information, see [http://support.microsoft.com/kb/215591](http://support.microsoft.com/kb/215591)  
+To avoid this error, you must rename the column. For more information, see [https://support.microsoft.com/kb/215591](https://support.microsoft.com/kb/215591)  
 
 #### I need help with importing from CSV
 
@@ -136,7 +136,7 @@ For importing, don't use the **Export to CSV** module. Instead, use the [Import 
 For general information about importing from CSV, see these resources:
 
 + [Import your training data into Azure Machine Learning Studio (classic) from various data sources](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
-+ [AzureML Experiments and Data Interaction](https://gallery.cortanaintelligence.com/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
++ [AzureML Experiments and Data Interaction](https://gallery.azure.ai/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
 
 ##  Expected inputs
   

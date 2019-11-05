@@ -1,6 +1,6 @@
 ---
 title: "Filter Based Feature Selection | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -173,9 +173,9 @@ String features always get a zero (0) score and are thus are not output.
 
 ## Examples  
 
-You can see examples of how feature selection is used in the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+You can see examples of how feature selection is used in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
--   [Text Classification](https://gallery.cortanaintelligence.com/Experiment/cf65bf129fee4190b6f48a53e599a755); In the third step of this sample, **Filter-Based Feature Selection** is used to identify the 15 best features. Feature hashing is used to convert the text documents to numeric vectors. Pearson’s correlation is then used on the vector features.
+-   [Text Classification](https://gallery.azure.ai/Experiment/cf65bf129fee4190b6f48a53e599a755); In the third step of this sample, **Filter-Based Feature Selection** is used to identify the 15 best features. Feature hashing is used to convert the text documents to numeric vectors. Pearson’s correlation is then used on the vector features.
   
 -  [Machine learning feature selection and feature engineering](https://azure.microsoft.com/documentation/articles/machine-learning-feature-selection-and-engineering/): This article provides an introduction to feature selection and feature engineering in machine learning.
 

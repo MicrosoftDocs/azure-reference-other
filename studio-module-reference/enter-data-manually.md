@@ -1,6 +1,6 @@
 ---
 title: "Enter Data Manually | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -106,9 +106,9 @@ This module can be helpful in scenarios such as these:
   
 ## Examples
 
-For examples of how this module is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how this module is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Download Data sample](http://go.microsoft.com/fwlink/?LinkId=525938): Gets data from the UCI Machine Learning repository and then uses [Enter Data Manually](enter-data-manually.md) to create column names. Sample R code is also provided, which you can use to merge the entered rows with the dataset.  
+- [Download Data sample](https://go.microsoft.com/fwlink/?LinkId=525938): Gets data from the UCI Machine Learning repository and then uses [Enter Data Manually](enter-data-manually.md) to create column names. Sample R code is also provided, which you can use to merge the entered rows with the dataset.  
   
 ##  Technical notes  
 

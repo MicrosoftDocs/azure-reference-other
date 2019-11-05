@@ -1,6 +1,6 @@
 ---
 title: "One-Class Support Vector Machine | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -56,7 +56,7 @@ For more information, including links to basic research, see the [Technical note
   
     - **Parameter Range**: Use this option if you are not sure of the best parameters, and want to perform a parameter sweep to find the optimal configuration.
 
-4. **η**: Type a value that represents the upper bound on the fraction of outliers. This parameter corresponds to the nu-property described in [this paper](http://research.microsoft.com/pubs/69731/tr-99-87.pdf). The nu-property lets you control the trade-off between outliers and normal cases.
+4. **η**: Type a value that represents the upper bound on the fraction of outliers. This parameter corresponds to the nu-property described in [this paper](https://research.microsoft.com/pubs/69731/tr-99-87.pdf). The nu-property lets you control the trade-off between outliers and normal cases.
 
 4. **ε** (epsilon): Type a value to use as the stopping tolerance. The stopping tolerance, affects the number of iterations used when optimizing the model, and depends on the stopping criterion value. When the value is exceeded, the trainer stops iterating on a solution.
 
@@ -83,7 +83,7 @@ If you trained the model using a parameter sweep, make a note of the optimal par
 
 ## Examples
 
-For examples of how this module is used in anomaly detection, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how this module is used in anomaly detection, see the [Azure AI Gallery](https://gallery.azure.ai/):  
 
 - [Anomaly Detection: Credit Risk](https://gallery.azureml.net/Experiment/1219e87f8fb84e88a2e1b54256808bb3): This sample illustrates how to find outliers in data, using a parameter sweep to find the optimal model. It then applies that model to new data to identify risky transactions that might represent fraud, comparing two different anomaly detection models.
 
@@ -93,11 +93,11 @@ Predictions from the [One-Class SVM](one-class-support-vector-machine.md) are un
 
 ### Research
 
-This implementation wraps the library for support vector machines named [libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm/).  The general theory on which `libsvm` is based, and the approach towards one-class support vector machines, is described in these papers by B. Schӧlkopf et al.
+This implementation wraps the library for support vector machines named [libsvm](https://www.csie.ntu.edu.tw/~cjlin/libsvm/).  The general theory on which `libsvm` is based, and the approach towards one-class support vector machines, is described in these papers by B. Schӧlkopf et al.
 
-- [Estimating the Support of a High-Dimensional Distribution](http://research.microsoft.com/pubs/69731/tr-99-87.pdf)
+- [Estimating the Support of a High-Dimensional Distribution](https://research.microsoft.com/pubs/69731/tr-99-87.pdf)
 
-- [New Support Vector Algorithms](http://www.stat.purdue.edu/~yuzhu/stat598m3/Papers/NewSVM.pdf)
+- [New Support Vector Algorithms](https://www.stat.purdue.edu/~yuzhu/stat598m3/Papers/NewSVM.pdf)
 
 ## Module parameters
   

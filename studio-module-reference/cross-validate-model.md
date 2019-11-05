@@ -1,6 +1,6 @@
 ---
 title: "Cross-Validate Model | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -152,11 +152,11 @@ Additionally, the following metrics are included for each fold, depending on the
  
 ##  Examples  
 
-For examples of how cross-validation is used in machine learning, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com/):  
+For examples of how cross-validation is used in machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
-- [Cross validation for binary classifier](http://go.microsoft.com/fwlink/?LinkId=525734): Demonstrates how to use cross-validation with a binary classification model.
+- [Cross validation for binary classifier](https://go.microsoft.com/fwlink/?LinkId=525734): Demonstrates how to use cross-validation with a binary classification model.
   
-- [Cross Validation Regression: Auto Imports Dataset](http://go.microsoft.com/fwlink/?LinkId=525735): Demonstrates how to use cross validation with regression models and how to interpret the results.  
+- [Cross Validation Regression: Auto Imports Dataset](https://go.microsoft.com/fwlink/?LinkId=525735): Demonstrates how to use cross validation with regression models and how to interpret the results.  
 
 ## Technical notes  
 

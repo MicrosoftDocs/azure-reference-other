@@ -1,6 +1,6 @@
 ---
 title: "Export to Azure Table | Microsoft Docs"
-titleSuffix: "Azure Machine Learning Studio (classic)"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -34,7 +34,7 @@ This option is useful when you want to export results or intermediate data from 
 
 4. If you want to export your data to secured, private storage, provide the credentials needed for accessing the account:
 
-    - **Table account name**: Type or paste the name of the account that contains the blob you want to access. For example, if the full URL of the storage account is `http://myshared.table.core.windows.net`, you would type `myshared`.
+    - **Table account name**: Type or paste the name of the account that contains the blob you want to access. For example, if the full URL of the storage account is `https://myshared.table.core.windows.net`, you would type `myshared`.
 
     - **Table account key**: Paste the access key that is associated with the storage account.
 
@@ -110,7 +110,7 @@ Yes. However, if the storage account is in a different region from the compute n
 
 ## Examples
 
-For examples of how to use these machine learning modules, see the [Azure AI Gallery](https://gallery.cortanaintelligence.com).
+For examples of how to use these machine learning modules, see the [Azure AI Gallery](https://gallery.azure.ai).
 
 ## Module parameters
 
