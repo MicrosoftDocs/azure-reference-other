@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Module Parameter Types"
 titleSuffix: ML Studio (classic) Azure
 ms.date: 01/22/2018
