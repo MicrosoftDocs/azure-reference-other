@@ -1,6 +1,6 @@
 ---
 title: "Anomaly Detection | Microsoft Docs"
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 description: "Learn about the modules you can use for anomaly detection in Azure Machine Learning."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
