@@ -1,5 +1,5 @@
 ---
-title: "Linear Discriminant Analysis (deprecated) | Microsoft Docs"
+title: "Linear Discriminant Analysis (deprecated)"
 titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
