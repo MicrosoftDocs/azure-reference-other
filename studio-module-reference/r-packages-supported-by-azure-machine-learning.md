@@ -1,11 +1,10 @@
 ---
-title: "Supported R Packages | Microsoft Docs"
+title: "Supported R Packages"
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-
 
 author: xiaoharper
 ms.author: amlstudiodocs

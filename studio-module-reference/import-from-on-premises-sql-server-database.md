@@ -1,11 +1,10 @@
 ---
-title: "Import from On-Premises SQL Server Database | Microsoft Docs"
+title: "Import from On-Prem SQL Server Database"
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-
 
 author: xiaoharper
 ms.author: amlstudiodocs

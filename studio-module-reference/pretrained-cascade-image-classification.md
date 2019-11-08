@@ -1,6 +1,6 @@
 ---
-title: "Pretrained Cascade Image Classification | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "Pretrained Cascade Image Classification"
+titleSuffix: ML Studio (classic) Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
