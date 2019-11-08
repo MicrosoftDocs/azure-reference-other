@@ -1,6 +1,6 @@
 ---
 title: "Add Columns | Microsoft Docs"
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
