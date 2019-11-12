@@ -1,6 +1,6 @@
 ---
 title: "Module Data Types"
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 ms.date: 01/31/2018
 ms.service: "machine-learning"
 ms.subservice: "studio"

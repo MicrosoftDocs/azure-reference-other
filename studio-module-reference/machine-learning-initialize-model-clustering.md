@@ -1,6 +1,6 @@
 ---
 title: 'Initialize Model: Clustering'
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 description: Description of the modules in Azure Machine Learning Studio (classic) that support creation of clustering models.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

@@ -1,7 +1,7 @@
 ---
 title: "R Language Modules | Microsoft Docs"
 description: This article lists the modules in Azure Machine Learning Studio (classic) that support running R code.
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

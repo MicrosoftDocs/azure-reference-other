@@ -1,6 +1,6 @@
 ---
 title: "Detect Languages | Microsoft Docs"
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
