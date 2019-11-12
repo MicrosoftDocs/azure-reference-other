@@ -22,8 +22,8 @@ The following example shows the basic structure of a MATCH_RECOGNIZE clause:
 SELECT *
 INTO output FROM input TIMESTAMP BY time
 	MATCH_RECOGNIZE (
-		PARTITION BY tollBoothId
 		LIMIT DURATION (minute, 1)
+		PARTITION BY tollBoothId
 		MEASURES
 			Last(Toyota.LicensePlate) AS toyotaLicensePlate,
 			Last(Lexus.LicensePlate) AS lexusLicensePlate
@@ -43,8 +43,8 @@ MATCH_RECOGNIZE has a matching output of ONE ROW PER MATCH as default, which is 
 ```SQL  
 SELECT_star_query_definition
 MATCH_RECOGNIZE (
-	PARTITION BY column_alias
 	LIMIT DURATION (time_unit, time)
+	PARTITION BY column_alias
 	MEASURES
 		expression AS column_alias [,...n]
 	AFTER MATCH SKIP TO NEXT ROW
@@ -70,15 +70,15 @@ MATCH_RECOGNIZE (
 	* | + | ?
 }
 ```  
-  
-## PARTITION BY
-
-PARTITION BY allows the match to be keyed and partitioned over a column name. A match will happen over every unique key specified by the partition statement. This enables a single query to be matched over all the keys and generate separate matches, one to every key.
-  
+ 
 ## LIMIT DURATION
 
  The limit duration is used to define a window of time for the pattern to be searched on. The events are ordered by time and TIMESTAMP BY can be used on the SELECT clause to specify time field.
-  
+
+## PARTITION BY
+
+PARTITION BY allows the match to be keyed and partitioned over a column name. A match will happen over every unique key specified by the partition statement. This enables a single query to be matched over all the keys and generate separate matches, one to every key.
+
 ## AFTER MATCH SKIP TO NEXT ROW
 
 This skip clause defines that once a pattern is matched starting at event **S**, the next try to match pattern will start at event **S+1**. Matches can overlap in this case as a pattern can contain the start of another pattern inside. This is the only skip clause available.
