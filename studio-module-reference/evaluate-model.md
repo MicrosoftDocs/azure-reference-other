@@ -1,6 +1,7 @@
 ---
 title: "Evaluate Model | Microsoft Docs"
 titleSuffix: ML Studio (classic) Azure
+description: Learn how to use the Evaluate Model module to measure the accuracy of a trained model. 
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

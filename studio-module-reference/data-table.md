@@ -1,6 +1,7 @@
 ---
 title: "Data Table | Microsoft Docs"
 titleSuffix: ML Studio (classic) Azure
+description: Learn about the DataTable, which consists of a collection of columns with associated metadata. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -22,7 +23,7 @@ The dataset is based on the .NET [Data Table](https://msdn.microsoft.com/library
   
 ## Column types
 
-A `DataTable` consists of a collection of columns with associated metadata.  These columns implement the `IArray` interface. Columns of data in Machine Learning Studio (classic) are understood to be one-dimensional arrays – that is, *vectors*.  
+A These columns implement the `IArray` interface. Columns of data in Machine Learning Studio (classic) are understood to be one-dimensional arrays – that is, *vectors*.  
   
 
 The .NET [Array](https://msdn.microsoft.com/library/system.array.aspx) class implements these generic interfaces:  `System.Collections.Generic.IList<T>`, `System.Collections.Generic.ICollection<T>`, and `System.Collections.Generic.IEnumerable<T>`.  

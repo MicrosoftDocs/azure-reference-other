@@ -1,6 +1,8 @@
 ---
 title: "Assign Data to Clusters | Microsoft Docs"
 titleSuffix: ML Studio (classic) Azure
+description: Learn how to use the Assign Data to Clusters module to generate predictions using a clustering model that was trained using the K-Means clustering module.
+
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

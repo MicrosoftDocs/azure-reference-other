@@ -2,6 +2,7 @@
 title: "Deprecated modules and features | Microsoft Docs"
 description: "Review deprecated modules and functionality in Azure Machine Learning Studio (classic)."
 titleSuffix: ML Studio (classic) Azure
+description: This article lists Azure Machine Learning Studio (classic) modules and functionality that have been deprecated. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

@@ -2,6 +2,7 @@
 title: "Data Format Conversions | Microsoft Docs"
 description: "Learn about the modules you can use for data format conversion in Azure Machine Learning."
 titleSuffix: ML Studio (classic) Azure
+description: Learn about the  modules for converting data among various file formats used in machine learning.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

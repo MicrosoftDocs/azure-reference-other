@@ -1,7 +1,8 @@
 ---
 title: "Data Transformation: Manipulation | Microsoft Docs"
-description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use for basic data manipulation."
+description: "Learn about the modules that you can use for basic data manipulation."
 titleSuffix: ML Studio (classic) Azure
+description: Learn 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

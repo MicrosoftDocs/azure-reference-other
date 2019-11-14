@@ -1,6 +1,7 @@
 ---
 title: "Add Columns | Microsoft Docs"
 titleSuffix: ML Studio (classic) Azure
+description: Learn how to use the Add Columns module to combine all columns from two datasets to create a single dataset. 
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
