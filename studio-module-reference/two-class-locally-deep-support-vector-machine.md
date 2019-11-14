@@ -1,6 +1,6 @@
 ---
 title: "Two-Class Locally Deep SVM"
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

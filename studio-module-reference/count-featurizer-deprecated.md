@@ -1,6 +1,6 @@
 ---
 title: "Count Featurizer (deprecated) | Microsoft Docs"
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 description: Learn how to use the Count Featurizer module to create features from a previously generated count table.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

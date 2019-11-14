@@ -1,6 +1,6 @@
 ---
 title: "Edit Metadata | Microsoft Docs"
-titleSuffix: ML Studio (classic) Azure
+titleSuffix: ML Studio (classic) - Azure
 description: Learn how to use the Edit Metadata module to change metadata that is associated with columns in a dataset.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
