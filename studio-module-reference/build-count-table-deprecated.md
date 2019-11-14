@@ -1,7 +1,7 @@
 ---
 title: "Build Count Table (deprecated) | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
-description: Learn how to use the Build Count Table (deprecated) module build  table of counts used as an input to the Count Featurizer (deprecated) module.
+description: Learn how to use the Build Count Table (deprecated) module to build a table of counts used as an input to the Count Featurizer (deprecated) module.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
