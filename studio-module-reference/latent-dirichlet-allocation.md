@@ -1,6 +1,7 @@
 ---
 title: "Latent Dirichlet Allocation | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Latent Dirichlet Allocation module to group otherwise unclassified text into a number of categories.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

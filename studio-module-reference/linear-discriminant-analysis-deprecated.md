@@ -1,6 +1,7 @@
 ---
 title: "Linear Discriminant Analysis"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Fisher Linear Discriminant Analysis module identify the combination of features that best separate two or more classes
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

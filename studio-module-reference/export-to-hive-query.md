@@ -1,6 +1,7 @@
 ---
 title: "Export to Hive Query | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Export Data module to save your machine learning experiment data to a Hadoop cluster or HDInsight distributed storage.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

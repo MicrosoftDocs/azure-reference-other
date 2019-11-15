@@ -1,6 +1,7 @@
 ---
 title: "Load Trained Model | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Load Trained Model module to load an already trained model for use in an experiment.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

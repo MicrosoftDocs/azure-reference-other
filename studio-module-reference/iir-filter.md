@@ -1,6 +1,7 @@
 ---
 title: "IIR Filter | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the IIR Filter module to create an *infinite impulse response* (IIR) filter. 
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
