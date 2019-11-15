@@ -1,6 +1,7 @@
 ---
 title: "Add Rows | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Add Rows module to concatenate two datasets. The rows of the second dataset are added to the end of the first dataset.  
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

@@ -1,6 +1,7 @@
 ---
 title: "Evaluate Probability Function | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Evaluate Probability Function module to  describe a column’s distribution, such as the Bernoulli, Pareto, or Poisson distributions.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
