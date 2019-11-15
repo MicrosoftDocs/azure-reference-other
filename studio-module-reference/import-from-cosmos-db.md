@@ -1,6 +1,7 @@
 ---
 title: "Import from Azure Cosmos DB | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Import Data module to import data from Azure Cosmos DB for use in a machine learning experiment.
 ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

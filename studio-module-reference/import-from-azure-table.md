@@ -1,6 +1,7 @@
 ---
 title: "Import from Azure Table | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Import Data module to import structured or semi-structured data from Azure tables into a machine learning experiment.  
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

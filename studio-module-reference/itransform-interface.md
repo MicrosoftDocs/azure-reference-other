@@ -1,6 +1,7 @@
 ---
 title: "ITransform interface | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use `ITransform`, which is an interface that stores a predefined transformation, or applies a predefined transformation to data.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

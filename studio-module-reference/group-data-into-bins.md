@@ -1,6 +1,7 @@
 ---
 title: "Group Data into Bins | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Group Data into Bins module to group numbers or change the distribution of continuous data.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

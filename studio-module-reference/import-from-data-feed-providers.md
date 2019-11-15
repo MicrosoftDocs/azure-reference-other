@@ -1,6 +1,8 @@
 ---
 title: "Import from Data Feed Providers | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Import Data module to import data provided in the `OData` format into a machine learning experiment.
+
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -16,7 +18,7 @@ This article describes how to use the [Import Data](import-data.md) module in Az
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-Creating an OData endpoint for a data set is one way to make a data model available for consumption via URL. You can also specify which OData operations the endpoint will support. For more information about creating Odata endpoints, see [OData v4 (ASP.NET)](https://www.asp.net/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint).
+Creating an OData endpoint for a data set is one way to make a data model available for consumption via URL. You can also specify which OData operations the endpoint will support. For more information about creating `Odata` endpoints, see [OData v4 (ASP.NET)](https://www.asp.net/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint).
 
 ## How to import data from a feed
 

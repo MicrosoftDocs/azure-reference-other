@@ -1,6 +1,7 @@
 ---
 title: "Import from Azure SQL Database | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Import Data module to get data from an Azure SQL Database or Azure SQL Data Warehouse.  
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

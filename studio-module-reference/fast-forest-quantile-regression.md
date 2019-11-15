@@ -1,6 +1,7 @@
 ---
 title: "Fast Forest Quantile Regression | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Fast Forest Quantile Regression module to create a regression model that can predict values for a specified number of quantiles.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
