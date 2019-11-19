@@ -1,6 +1,7 @@
 ---
 title: "Filter Based Feature Selection | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Filter Based Feature Selection module to identify the columns in your input dataset that have the greatest predictive power.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

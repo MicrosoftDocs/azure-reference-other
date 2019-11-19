@@ -1,6 +1,7 @@
 ---
 title: "Import from Web URL via HTTP | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Import Data module to read data from a public Web page for use in a machine learning experiment.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

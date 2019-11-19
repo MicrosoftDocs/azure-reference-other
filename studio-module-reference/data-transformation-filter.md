@@ -1,6 +1,6 @@
 ---
 title: "Data Transformation: Filter | Microsoft Docs"
-description: "Learn how to use the filter modules in Azure Machine Learning Studio (classic) to transform digital data."
+description: "Learn how to use the filter modules to transform digital data."
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"

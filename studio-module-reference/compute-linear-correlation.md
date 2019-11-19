@@ -1,6 +1,7 @@
 ---
 title: "Compute Linear Correlation | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Compute Linear Correlation module to compute Pearson correlation coefficients for each possible pair of variables in the input dataset.
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

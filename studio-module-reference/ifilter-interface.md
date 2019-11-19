@@ -1,6 +1,7 @@
 ---
 title: "IFilter interface | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use `IFilter`, which is the interface for working with digital signal filters.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

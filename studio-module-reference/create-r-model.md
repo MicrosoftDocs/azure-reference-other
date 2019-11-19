@@ -1,6 +1,7 @@
 ---
 title: "Create R Model | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Create R Model module to create an untrained model from an R script. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

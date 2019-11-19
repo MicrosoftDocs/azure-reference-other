@@ -1,6 +1,7 @@
 ---
 title: "Enter Data Manually | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Enter Data Manually module to create a small dataset by typing values. The dataset can have multiple columns.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

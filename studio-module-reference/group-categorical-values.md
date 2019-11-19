@@ -1,6 +1,7 @@
 ---
 title: "Group Categorical Values | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Group Categorical Values module to create an in-place lookup table.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +21,7 @@ manager: cgronlun
 
 ## Module overview
 
-This article describes how to use the **Group Categorical Values** module in Azure Machine Learning, to create an in-place lookup table.
+This article describes how to use the **Group Categorical Values** module in Azure Machine Learning Studio (classic), to create an in-place lookup table.
 
 The typical use for grouping categorical values is to merge multiple string values into a single new level. For example, you might assign individual postal codes in a region to a single regional code, or group multiple products under one category.
 
