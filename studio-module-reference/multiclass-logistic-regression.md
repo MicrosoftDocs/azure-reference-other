@@ -1,6 +1,7 @@
 ---
 title: "Multiclass Logistic Regression | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Multiclass Logistic Regression module to create a logistic regression model that can be used to predict multiple values.
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

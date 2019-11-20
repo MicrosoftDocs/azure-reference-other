@@ -1,6 +1,7 @@
 ---
 title: "Poisson Regression | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn  how to use the Poisson Regression module to create a Poisson regression model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

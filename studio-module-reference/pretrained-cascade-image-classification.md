@@ -1,6 +1,7 @@
 ---
 title: "Pretrained Cascade Image Classification"
 titleSuffix: ML Studio (classic) Azure
+description: Learn how to use the Pretrained Cascade Image Classification module to detect faces in images. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

@@ -1,6 +1,7 @@
 ---
 title: "Normalize Data | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Normalize Data module to transform a dataset through *normalization*.
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

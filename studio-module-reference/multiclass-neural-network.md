@@ -1,6 +1,7 @@
 ---
 title: "Multiclass Neural Network | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn  how to use the Multiclass Neural Network module to create a neural network model to predict a target that has multiple values. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
