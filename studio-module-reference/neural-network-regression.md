@@ -1,6 +1,7 @@
 ---
 title: "Neural Network Regression | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Neural Network Regression module to create a regression model using a customizable neural network algorithm.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

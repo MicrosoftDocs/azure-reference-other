@@ -1,6 +1,7 @@
 ---
 title: "Missing Values Scrubber (deprecated) | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Missing Values Scrubber module to handle missing values. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

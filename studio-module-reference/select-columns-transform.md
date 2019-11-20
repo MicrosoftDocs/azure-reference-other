@@ -1,6 +1,7 @@
 ---
 title: "Select Columns Transform | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Select Columns Transform module to ensure that a predictable, consistent set of columns is always used in downstream machine learning operations.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

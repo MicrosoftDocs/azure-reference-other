@@ -1,6 +1,7 @@
 ---
 title: "One-vs-All Multiclass | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the One-Vs-All Multiclass module to create a classification model that can predict multiple classes, using the "one vs. all" approach.
 ms.date: 07/03/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

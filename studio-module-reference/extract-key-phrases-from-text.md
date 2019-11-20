@@ -1,7 +1,7 @@
 ---
 title: "Extract Key Phrases from Text | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
-description: Learn how to use the Extract Key Phrases from Text module to pre-process a text column.
+description: Learn how to use the Text module extract key phrases from a text column.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

@@ -1,6 +1,7 @@
 ---
 title: "Module Parameter Types"
 titleSuffix: ML Studio (classic) - Azure
+description: The application programming interface of the parameters provided for Azure Machine Learning Studio (classic). 
 ms.date: 01/22/2018
 ms.service: "machine-learning"
 ms.subservice: "studio"

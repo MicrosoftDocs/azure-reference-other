@@ -1,6 +1,7 @@
 ---
 title: "Module Parameters and Data Types | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn about the common interfaces on modules in Azure Machine Learning Studio (classic).  
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
