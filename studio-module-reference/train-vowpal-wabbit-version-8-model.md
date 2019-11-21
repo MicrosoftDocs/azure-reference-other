@@ -1,7 +1,7 @@
 ---
 title: "Train Vowpal Wabbit Version 8 Model | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
-description: Learn how to use  the Train Vowpal Wabbit Version 8 module to create a machine learning model by using an instance of Vowpal Wabbit (version 8).
+description: Learn how to use the Train Vowpal Wabbit Version 8 module to create a machine learning model by using an instance of Vowpal Wabbit (version 8).
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
