@@ -1,6 +1,7 @@
 ---
 title: "Two-Class Decision Forest | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn  how to use the Two-Class Decision Forest module to create a machine learning model based on the decision forests algorithm.  
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

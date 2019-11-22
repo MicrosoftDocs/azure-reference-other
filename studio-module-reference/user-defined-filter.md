@@ -1,6 +1,7 @@
 ---
 title: "User-Defined Filter | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the User-Defined Filter module to define a custom filter using a finite impulse response (FIR) filter or an infinite impulse response (IIR) filter.
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

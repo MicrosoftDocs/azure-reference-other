@@ -1,6 +1,7 @@
 ---
 title: "Summarize Data | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Summarize Data module to create a set of standard statistical measures that describe each column in the input table.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
