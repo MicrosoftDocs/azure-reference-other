@@ -1,6 +1,7 @@
 ---
 title: "SMOTE | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn  how to use the SMOTE module to increase the number of underepresented cases in a dataset used for machine learning. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

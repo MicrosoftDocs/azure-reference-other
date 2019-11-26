@@ -1,6 +1,7 @@
 ---
 title: "Principal Component Analysis | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Principal Component Analysis module to reduce the dimensionality of your training data.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -20,7 +21,7 @@ Category: [Data Transformation / Sample and Split](data-transformation-sample-an
 
 ## Module overview
 
-This article describes how to use the **Principal Component Analysis** module in Azure Machine Learning to reduce the dimensionality of your training data. The module analyzes your data and creates a reduced feature set that captures all the information contained in the dataset, but in a smaller number of features.
+This article describes how to use the **Principal Component Analysis** module in Azure Machine Learning Studio (classic) to reduce the dimensionality of your training data. The module analyzes your data and creates a reduced feature set that captures all the information contained in the dataset, but in a smaller number of features.
 
 The module also creates a transformation that you can apply to new data, to achieve a similar reduction in dimensionality and compression of features, without requiring additional training.
 

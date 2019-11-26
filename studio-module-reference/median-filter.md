@@ -1,6 +1,7 @@
 ---
 title: "Median Filter | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Median Filter module to define a *median filter* for applying to a series of values that represent a digital input signal or image.
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

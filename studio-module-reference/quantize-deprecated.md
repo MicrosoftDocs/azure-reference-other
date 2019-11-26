@@ -1,6 +1,7 @@
 ---
 title: "Quantize (deprecated) | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Quantize module to bin numbers.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

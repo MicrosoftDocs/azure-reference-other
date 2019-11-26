@@ -1,6 +1,7 @@
 ---
 title: "Split Data using Recommender Split | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to prepare training and testing datasets for use with a recommendation model with the Recommender Split option in the Split Data module
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

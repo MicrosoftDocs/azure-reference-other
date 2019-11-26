@@ -1,6 +1,7 @@
 ---
 title: "Test Hypothesis Using t-Test | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Test Hypothesis by using the t-Test module to generate scores for single sample, paired, or unpaired t-test. 
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

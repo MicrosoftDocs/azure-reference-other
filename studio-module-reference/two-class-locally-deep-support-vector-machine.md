@@ -1,6 +1,7 @@
 ---
 title: "Two-Class Locally Deep SVM"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Two-Class Locally Deep Support Vector Machine module to create a two-class, non-linear support vector machines (SVM) classifier optimized for efficient prediction.  
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"

@@ -1,6 +1,7 @@
 ---
 title: "Named Entity Recognition | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Named Entity Recognition module to identify the names of things, such as people, companies, or locations in a column of text. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

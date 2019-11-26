@@ -1,6 +1,7 @@
 ---
 title: "Two-Class Logistic Regression | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
+description: Learn how to use the Two-Class Logistic Regression module to create a logistic regression model to predict a target that has only two values.
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
