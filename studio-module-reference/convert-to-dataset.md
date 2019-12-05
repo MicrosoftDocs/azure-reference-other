@@ -86,7 +86,7 @@ This section contains implementation details, tips, and answers to frequently as
   
 -   For custom replace operations, the replacement will silently fail if you use as a replacement any character that does not conform to the current data type of the column.  
   
--   If you need to save data that uses numerical data that is sparse and has missing values, internally, Studio supports sparse arrays by using a SparseVector, which is a class in the Math.NET numeric library. Prepare your data that uses zeros and has missing values, and then use [Convert to Dataset](convert-to-dataset.md) with the arguments **SparseOutput** and **Remove Zeros** = TRUE.  
+-   If you need to save data that uses numerical data that is sparse and has missing values, internally, Studio (classic) supports sparse arrays by using a SparseVector, which is a class in the Math.NET numeric library. Prepare your data that uses zeros and has missing values, and then use [Convert to Dataset](convert-to-dataset.md) with the arguments **SparseOutput** and **Remove Zeros** = TRUE.  
   
 ##  Expected inputs  
   
