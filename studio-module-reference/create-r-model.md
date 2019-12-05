@@ -88,7 +88,7 @@ model <- naiveBayes(Class ~ ., train.data)
     - `get.label.columns()` returns the column that is selected as the class label in the [Train Model](train-model.md) module.
     - `get.feature.columns()`selects the columns that were designated as features in the dataset.
 
-        By default, all columns except the label column are considered features in Studio. Therefore, to mark specific columns as features, use [Edit Metadata](edit-metadata.md), or select a set of columns within the R script.
+        By default, all columns except the label column are considered features in Studio (classic). Therefore, to mark specific columns as features, use [Edit Metadata](edit-metadata.md), or select a set of columns within the R script.
     - `get.feature.column.names(dataset)` gets feature column names from the dataset. 
 
 - The names from the combined dataset are designated as the names for columns in `train.data`, and a temporary name `Class` is created for the label column.

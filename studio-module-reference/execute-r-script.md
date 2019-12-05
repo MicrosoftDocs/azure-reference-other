@@ -26,7 +26,7 @@ Category: [R Language Modules](r-language-modules.md)
 
 This article describes how to use the **Execute R Script** module in Azure Machine Learning Studio (classic), to call and run R code in your experiments.
 
-By adding R code to this module, you can perform a variety of customized tasks that are not available in Studio. For example: 
+By adding R code to this module, you can perform a variety of customized tasks that are not available in Studio (classic). For example: 
 - Create custom data transformations
 - Use your own metrics for evaluating predictions
 - Build models using algorithms that are not implemented as standalone modules in Studio
@@ -278,7 +278,7 @@ plot(basket)
 
 ### Call a custom Naïve Bayes learner  
 
-This example shows how to call an R library that is not included in Studio.
+This example shows how to call an R library that is not included in Studio (classic).
 
 1. Upload a zipped file containing the `e1071` library to your workspace.  
 
@@ -377,7 +377,7 @@ The following procedure adds a new package together with its dependencies.
 1. Download the zipped file for the package that you want to import to Azure Machine Learning. Be sure to get the Windows version of the zipped file.
 
     > [!NOTE]
-    > If you have already extracted the R package that you want to use in your workspace, you must either re-zip the package, or provide the original ZIP file when you can upload the R package to Studio.
+    > If you have already extracted the R package that you want to use in your workspace, you must either re-zip the package, or provide the original ZIP file when you can upload the R package to Studio (classic).
 
 2. Check for any dependencies and if the package needs other packages that are not already in Azure ML Studio, download them in zipped format and add them to the archive file.
 

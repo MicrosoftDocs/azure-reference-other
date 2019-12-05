@@ -40,7 +40,7 @@ The conversion to SVMLight format entails converting each case into a row of dat
 
 ### <a name="bkmk_PreparingData"></a>Preparing data for conversion
 
-To illustrate the conversion process, this example uses the **Blood Donor** dataset in Studio. 
+To illustrate the conversion process, this example uses the **Blood Donor** dataset in Studio (classic). 
 
 This sample dataset has the following format, in tabular form.  
   

@@ -20,7 +20,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the [Convert to Dataset](convert-to-dataset.md) module in Azure Machine Learning Studio (classic), to convert any data that you might need for an experiment to the internal format used by Studio.
+This article describes how to use the [Convert to Dataset](convert-to-dataset.md) module in Azure Machine Learning Studio (classic), to convert any data that you might need for an experiment to the internal format used by Studio (classic).
   
 Conversion is not required in most cases, because Azure Machine Learning implicitly converts data to its native dataset format when any operation is performed on the data. 
 

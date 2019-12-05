@@ -22,7 +22,7 @@ To resolve the issue, look for the error in this article to read about common ca
   
 - Select the module that has the error, and click the red X. Only the pertinent error text is displayed.  
   
-If the error message text is not helpful, send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the [Azure Machine Learning STUDIO forum](https://aka.ms/aml-forum-studio) and post a question.  
+If the error message text is not helpful, send us information about the context and any desired additions or changes. You can either submit feedback on the error topic, or visit the [Azure Machine Learning Studio (classic) forum](https://aka.ms/aml-forum-studio) and post a question.  
 
 
 ## Error 0001  
