@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Studio (classic): algorithm and module help"
+title: "Algorithm and module help"
 description: Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 04/06/2019
