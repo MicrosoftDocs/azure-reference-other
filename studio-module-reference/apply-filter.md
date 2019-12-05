@@ -23,7 +23,7 @@ Category: [Data Transformation / Filter](data-transformation-filter.md)
 This article descries how to use the **Apply Filter** module in Azure Machine Learning Studio (classic), to transform a column of values by applying a previously defined filter. Filters are used in digital signal processing to reduce noise or highlight a pattern. Thus, the values that you transform are always numeric, and typically represent some kind of audio or visual signal.  
 
 > [!TIP]
-> Are you looking for a different type of filter? Studio provides these modules for sampling data, getting a subset of data, removing bad values, or creating test and training sets: [Split Data](split-data.md), [Clean Missing Data](clean-missing-data.md), [Partition and Sample](partition-and-sample.md), [Apply SQL Transformation](apply-sql-transformation.md), [Clip Values](clip-values.md).  If you need to filter data as you read it from a source, see [Import Data](import-data.md). The options depend on the source type. 
+> Are you looking for a different type of filter? Studio (classic) provides these modules for sampling data, getting a subset of data, removing bad values, or creating test and training sets: [Split Data](split-data.md), [Clean Missing Data](clean-missing-data.md), [Partition and Sample](partition-and-sample.md), [Apply SQL Transformation](apply-sql-transformation.md), [Clip Values](clip-values.md).  If you need to filter data as you read it from a source, see [Import Data](import-data.md). The options depend on the source type. 
   
 After determining which type of filter is best for your data source, you specify the parameters, and use **Apply Filter** to transform the dataset. Because the design of filters is separate from the process of applying a filter, filters are reusable. For example, if you frequently work with data used for forecasting, you might design several types of moving average filters to train and compare multiple models. You can also save the filter to apply to other experiments or to different datasets.
 
@@ -93,7 +93,7 @@ This section describes the behavior when missing values are encountered, by filt
 |Filter|[IFilter interface](ifilter-interface.md)|Filter implementation|  
 |Dataset|[Data Table](data-table.md)|Input dataset|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

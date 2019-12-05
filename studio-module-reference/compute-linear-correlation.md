@@ -44,7 +44,7 @@ If the columns you are testing are not expected to have some kind of linear rela
 
 There are various ways that you can determine whether the relationship between the columns is roughly linear:
 
-+ Create a scatter plot of the variables in Studio, by using the **Visualize** option on the dataset. Click one of the numeric variable columns, expand **Visualizations**, and click **compare to**.  Select a different variable, and a scatter plot is automatically generated. If a different type of plot is generated, it means at least one column has a different (non-numeric) data type. 
++ Create a scatter plot of the variables in Studio (classic), by using the **Visualize** option on the dataset. Click one of the numeric variable columns, expand **Visualizations**, and click **compare to**.  Select a different variable, and a scatter plot is automatically generated. If a different type of plot is generated, it means at least one column has a different (non-numeric) data type. 
 
 + Calculate a regression equation for the two variables.  There are many R packages that support this, which you can load and use in the [Execute R Script](execute-r-script.md) module. 
 
@@ -158,7 +158,7 @@ In this formula, μx represents the mean value of the column *x*i. The elements 
 |[Error 0020](errors/error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
 |[Error 0021](errors/error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

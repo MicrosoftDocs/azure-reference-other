@@ -180,7 +180,7 @@ Now try the same experiment using 60 as the upper percentile threshold and 30 as
 |[Error 0011](errors/error-0011.md)|Exception occurs if passed column set argument does not apply to any of dataset columns.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
