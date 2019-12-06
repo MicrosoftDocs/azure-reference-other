@@ -132,7 +132,7 @@ An IIR filter returns feed forward and feed backward coefficients, which are rep
 |---------------|-----------------|  
 |NotInRangeValue|Exception occurs if parameter is not in range.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

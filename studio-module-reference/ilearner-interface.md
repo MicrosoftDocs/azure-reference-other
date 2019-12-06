@@ -19,9 +19,9 @@ This article describes `iLearner`, which is the interface for trained models tha
 
 The `ILearner` interface provides methods and properties that are used to configure and interact with machine learning models. A learner is defined as a set of instructions that perform standardized machine learning tasks. Learners include classification algorithms, clustering algorithms, and regression algorithms.
 
-You can interact with `iLearner` only in Studio, or in one of the supported APIs.
+You can interact with `iLearner` only in Studio (classic), or in one of the supported APIs.
 
-Studio uses this interface for the following functionality:
+Studio (classic) uses this interface for the following functionality:
 
 + Determines whether a model has the correct format.
 + Gets the capabilities of the learner. These are any general properties of the learner that are not captured by the type signature of the specific learner.
