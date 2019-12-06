@@ -90,7 +90,7 @@ Those module supports the following scenarios for creating, updating, or applyin
   
 12.  Select the option, **Mark begin-of-sentence**, to add a special character sequence that indicates the beginning of a sentence in your n-gram dictionary. Prefixing n-grams that start a sentence with a special character is common in text analysis and can be useful in analyzing discourse boundaries.
   
-     Azure ML Studio inserts the symbol `|||`. You cannot specify a custom character.
+     Azure ML Studio (classic) inserts the symbol `|||`. You cannot specify a custom character.
 
 13. Select the option **Normalize n-gram feature vectors** if you want to normalize the feature vectors. When you do this, each n-gram feature vector is divided by its L2 norm.
   
@@ -200,7 +200,7 @@ The **Extract N-Gram Features from Text** module creates two types of output:
 
 ### Sample results
 
-To illustrate how you can use the results, the following short example uses the Amazon Book Review dataset available in Studio. The dataaset was filtered to show only reviews with a score of 4 or 5, and reviews with a string length of under 300 characters. 
+To illustrate how you can use the results, the following short example uses the Amazon Book Review dataset available in Studio (classic). The dataaset was filtered to show only reviews with a score of 4 or 5, and reviews with a string length of under 300 characters. 
 
 From this dataset, a short review was selected, containing only 92 words. Here the author's name has been replaced with `Xxx` and the book title replaced with `Yyy`: 
 
