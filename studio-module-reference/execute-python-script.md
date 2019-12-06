@@ -21,9 +21,9 @@ Category: [Python Language Modules](python-language-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio (classic) to run Python code. For more information about the architecture and design principles of Python in Studio, see [the following article.](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)
+This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio (classic) to run Python code. For more information about the architecture and design principles of Python in Studio (classic), see [the following article.](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)
 
-With Python, you can perform tasks that aren't currently supported by existing Studio modules such as:
+With Python, you can perform tasks that aren't currently supported by existing Studio (classic) modules such as:
 
 + Visualizing data using `matplotlib`
 + Using Python libraries to enumerate datasets and models in your workspace
@@ -48,13 +48,13 @@ The **Execute Python Script** module contains sample Python code that you can us
     > [!IMPORTANT]
     > If you use multiple instances of the **Execute Python Script** module in your experiment, you must choose a single version of Python for all modules in the experiment.
 
-3. Add and connect on **Dataset1** any datasets from Studio that you want to use for input. Reference this dataset in your Python script as **DataFrame1**.
+3. Add and connect on **Dataset1** any datasets from Studio (classic) that you want to use for input. Reference this dataset in your Python script as **DataFrame1**.
 
     Use of a dataset is optional, if you want to generate data using Python, or use Python code to import the data directly into the module.
 
-    This module supports addition of a second Studio dataset on **Dataset2**. Reference the second dataset in your Python script as DataFrame2.
+    This module supports addition of a second Studio (classic) dataset on **Dataset2**. Reference the second dataset in your Python script as DataFrame2.
 
-    Datasets stored in Studio are automatically converted to **pandas** data.frames when loaded with this module.
+    Datasets stored in Studio (classic) are automatically converted to **pandas** data.frames when loaded with this module.
 
     ![Execute Python input map](./media/aml-execute-python-input-map.png)
 
@@ -72,7 +72,7 @@ The **Execute Python Script** module contains sample Python code that you can us
 
     Therefore, if your zip file contains `mymodule.py`, import it using `import mymodule`.
 
-    + A single dataset can be returned to Studio, which must be a sequence of type `pandas.DataFrame`. You can create other outputs in your Python code and write them directly to Azure storage, or create visualizations using the **Python device**.
+    + A single dataset can be returned to Studio (classic), which must be a sequence of type `pandas.DataFrame`. You can create other outputs in your Python code and write them directly to Azure storage, or create visualizations using the **Python device**.
 
 6. Run the experiment, or select the module and click **Run selected** to run just the Python script.
 
@@ -102,7 +102,7 @@ The **Execute Python Script** module supports arbitrary Python script files as i
 
 5. Type a new name for use in the workspace. The name you assign to the dataset becomes the name of the folder in your workspace where the contained files are extracted.
 
-6. After you have uploaded the zipped package to Studio, verify that the zipped file is available in the **Saved Datasets** list, and then connect the dataset to the **Script Bundle** input port.
+6. After you have uploaded the zipped package to Studio (classic), verify that the zipped file is available in the **Saved Datasets** list, and then connect the dataset to the **Script Bundle** input port.
 
     All files that are contained in the ZIP file are available for use during run time: for example, sample data, scripts, or new Python packages.
 
@@ -136,11 +136,11 @@ Some common problems that you can look for:
 
     When you provide a zipped file as resource, the files are copied from your workspace to the experiment execution space, unpacked, and then used. Copying and unpacking resources can consume memory.
 
-+ The module can output a single data frame. It's not possible to return arbitrary Python objects such as trained models directly back to the Studio runtime. However, you can write objects to storage or to the workspace. Another option is to use `pickle` to serialize multiple objects into a byte array and then return the array inside a data frame.
++ The module can output a single data frame. It's not possible to return arbitrary Python objects such as trained models directly back to the Studio (classic) runtime. However, you can write objects to storage or to the workspace. Another option is to use `pickle` to serialize multiple objects into a byte array and then return the array inside a data frame.
 
 ## Examples
 
-For examples of integrating Python script with Studio experiments, see these resources in the [Azure AI Gallery](https://gallery.azure.ai/):
+For examples of integrating Python script with Studio (classic) experiments, see these resources in the [Azure AI Gallery](https://gallery.azure.ai/):
 
 + [Execute Python Script](https://go.microsoft.com/fwlink/p/?LinkId=525942): Use text tokenization, stemming, and other natural language processing using the **Execute Python Script** module.
 + [Custom R and Python scripts in Azure ML](https://gallery.azure.ai/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.

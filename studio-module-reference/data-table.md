@@ -42,7 +42,7 @@ You can get a column by calling the `GetColumn` method on the DataTable.  The `G
   
 -   `GetColumn(<string>)` gets a column by its name.  
   
-## Other interfaces in Studio  
+## Other interfaces in Studio (classic)  
 
 This section also describes the following interfaces for Azure Machine Learning:  
   
