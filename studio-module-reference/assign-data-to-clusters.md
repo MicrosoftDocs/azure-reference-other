@@ -67,7 +67,7 @@ The [Assign Data to Clusters](assign-data-to-clusters.md) module returns two typ
 
     From the graph, you can see the separation between the clusters, and how the clusters are distributed along the axes that represent the principal components.
   
-+ To view the table of results for each case in the input data, attach the [Convert to Dataset](convert-to-dataset.md) module, and visualize the results in  Studio.  
++ To view the table of results for each case in the input data, attach the [Convert to Dataset](convert-to-dataset.md) module, and visualize the results in  Studio (classic).  
   
     This dataset contains the *cluster assignments* for each case, and a distance metric that gives you some indication of how close this particular case is to the center of the cluster.  
   

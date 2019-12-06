@@ -21,7 +21,7 @@ manager: cgronlun
 
 ## Module overview  
 
-This article describes how to use the **Assign to Clusters** module in Azure Machine Learning Studio (classic), to generate predictions using a trained clustering model, based on the K-Means clustering algorithm included in Studio.
+This article describes how to use the **Assign to Clusters** module in Azure Machine Learning Studio (classic), to generate predictions using a trained clustering model, based on the K-Means clustering algorithm included in Studio (classic).
 
 The module returns the probable assignment for each new data point, based on the trained model.  
 
@@ -30,7 +30,7 @@ The module returns the probable assignment for each new data point, based on the
 
 ## How to use Assign to Clusters  
 
-Use of this module requires that you have already configured a clustering model in Studio using the [K-Means Clustering](k-means-clustering.md) module.
+Use of this module requires that you have already configured a clustering model in Studio (classic) using the [K-Means Clustering](k-means-clustering.md) module.
   
 1. Add the **Assign to Clusters** module to your experiment, and attach the trained model to the left input port.
   
@@ -112,7 +112,7 @@ To see examples of updated clustering models, see these experiments:
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

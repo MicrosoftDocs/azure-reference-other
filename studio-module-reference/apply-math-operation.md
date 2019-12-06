@@ -119,7 +119,7 @@ If you generate the results using the **Append** or **ResultOnly** options, the 
 -   **Equals(Col2_Col1)**,  indicating that you tested Col2 against Col1.  
 -   **Equals(Col2_$10)**, indicating that you compared column 2 to the constant 10.  
 
-Even if you use the **Inplace** option, the source data is not deleted or changed; the column in the original dataset is still available in Studio. To view the original data, you can connect the [Add Columns](add-columns.md) module and join it to the output of **Apply Math Operation**.  
+Even if you use the **Inplace** option, the source data is not deleted or changed; the column in the original dataset is still available in Studio (classic). To view the original data, you can connect the [Add Columns](add-columns.md) module and join it to the output of **Apply Math Operation**.  
     
 ## <a name="bkmk_Basic"></a> Basic math operations 
 
@@ -316,7 +316,7 @@ You can subtract a constant from each value in a column of values, but not the r
 
 ##  <a name="bkmk_Rounding"></a> Rounding operations 
 
-Studio supports a variety of rounding operations. For many operations, you must specify the amount of  precision to use when rounding. You can use either a static precision level, specified as a constant, or you can apply a dynamic precision value obtained from a column of values.  
+Studio (classic) supports a variety of rounding operations. For many operations, you must specify the amount of  precision to use when rounding. You can use either a static precision level, specified as a constant, or you can apply a dynamic precision value obtained from a column of values.  
 
 + If you use a constant, set **Precision Type** to **Constant** and then type the number of digits as an integer in the **Constant Precision** text box. If you type a non-integer, the module does not raise an error, but results can be unexpected.  
 
