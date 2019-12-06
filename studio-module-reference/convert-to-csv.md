@@ -36,7 +36,7 @@ When you convert a dataset to CSV, the file is saved in your Azure ML workspace.
 
 ## How to configure Convert to CSV
 
-1.  Add the [Convert to CSV](convert-to-csv.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) group in Studio. 
+1.  Add the [Convert to CSV](convert-to-csv.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) group in Studio (classic). 
 
 2. Connect it to any module that outputs a dataset.   
   
@@ -137,7 +137,7 @@ For importing, don't use the **Export to CSV** module. Instead, use the [Import 
 For general information about importing from CSV, see these resources:
 
 + [Import your training data into Azure Machine Learning Studio (classic) from various data sources](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
-+ [AzureML Experiments and Data Interaction](https://gallery.azure.ai/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio.
++ [AzureML Experiments and Data Interaction](https://gallery.azure.ai/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio (classic).
 
 ##  Expected inputs
   

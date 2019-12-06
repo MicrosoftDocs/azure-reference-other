@@ -152,7 +152,7 @@ If you need to repeat cleaning operations often, we recommend that you save your
   
 2.  Add the dataset you want to clean, and connect the dataset to the right-hand input port.  
   
-3.  Expand the **Transforms** group in the left-hand pane of Studio. Locate the saved transformation and drag it into the experiment.  
+3.  Expand the **Transforms** group in the left-hand pane of Studio (classic). Locate the saved transformation and drag it into the experiment.  
   
 4.  Connect the saved transformation to the left input port of [Apply Transformation](apply-transformation.md). 
 
@@ -273,7 +273,7 @@ This error occurs only when the MICE method is selected, and if the training dat
 |[Error 0018](errors/error-0018.md)|An exception occurs if the input dataset is not valid.|  
 |[Error 0039](errors/error-0039.md)|An exception occurs if the operation fails.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 
