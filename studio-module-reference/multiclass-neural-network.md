@@ -41,7 +41,7 @@ To compute the output of the network for a particular input, a value is calculat
 
 ## How to configure Multiclass Neural Network
 
-1. Add the **MultiClass Neural Network** module to your experiment in Studio. You can find this module under **Machine Learning**, **Initialize**, in the **Classification** category.
+1. Add the **MultiClass Neural Network** module to your experiment in Studio (classic). You can find this module under **Machine Learning**, **Initialize**, in the **Classification** category.
 
 2. **Create trainer mode**: Use this option to specify how you want the model to be trained:
 

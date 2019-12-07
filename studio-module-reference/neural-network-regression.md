@@ -46,7 +46,7 @@ Neural networks can be extensively customized. This section describes how to cre
 
 ###  <a name="bkmk_DefaultArchitecture"></a> Create a neural network model using the default architecture
   
-1.  Add the **Neural Network Regression** module to your experiment in Studio. You can find this module under **Machine Learning**, **Initialize**, in the **Regression** category. 
+1.  Add the **Neural Network Regression** module to your experiment in Studio (classic). You can find this module under **Machine Learning**, **Initialize**, in the **Regression** category. 
   
 2. Indicate how you want the model to be trained, by setting the **Create trainer mode** option.  
   

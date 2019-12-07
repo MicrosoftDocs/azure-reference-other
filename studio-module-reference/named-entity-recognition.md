@@ -57,7 +57,7 @@ The output can be interpreted as follows:
 
 ## How to configure Named Entity Recognition
 
-1. Add the **Named Entity Recognition** module to your experiment in Studio. You can find the module in the **Text Analytics** category.
+1. Add the **Named Entity Recognition** module to your experiment in Studio (classic). You can find the module in the **Text Analytics** category.
 
 2. On the input named **Story**, connect a dataset containing the text to analyze.  
 
