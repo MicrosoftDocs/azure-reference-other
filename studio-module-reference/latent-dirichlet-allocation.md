@@ -146,7 +146,7 @@ The accuracy of models based on LDA can often be improved by using natural langu
 
 For more information, see [Preprocess Text](preprocess-text.md) and [Named Entity Recognition](named-entity-recognition.md).
 
-In Studio, you can also use R or Python libraries for text processing: [Execute R Script](execute-r-script.md),  [Execute Python Script](execute-python-script.md)
+In Studio (classic), you can also use R or Python libraries for text processing: [Execute R Script](execute-r-script.md),  [Execute Python Script](execute-python-script.md)
 
 ## Examples
 
@@ -291,7 +291,7 @@ After the term indexes have been computed, individual rows of text are compared 
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

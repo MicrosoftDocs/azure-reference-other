@@ -26,4 +26,4 @@ This section describes some of the common interfaces on modules in Azure Machine
 
     Modules that generate data or take data as input support .NET data types. 
     
-    Studio modules also use custom data classes to pass information to other modules in an experiment.
+    Studio (classic) modules also use custom data classes to pass information to other modules in an experiment.

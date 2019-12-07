@@ -38,7 +38,7 @@ This section describes how to save a model, get a saved model, and apply a saved
 
 ### Save a trained model 
 
-You can save models by using the Studio interface, or using an experiment that runs as a web service.  
+You can save models by using the Studio (classic) interface, or using an experiment that runs as a web service.  
 
 #### Save a model using a web service
 
@@ -51,11 +51,11 @@ For step-by step information about how to create a training web service, see the
 + [Retrain Machine Learning Models Programmatically](https://docs.microsoft.com/azure/machine-learning/machine-learning-retrain-models-programmatically)
 + [Saving an experiment as a Web service](https://docs.microsoft.com/azure/machine-learning/machine-learning-model-progression-experiment-to-web-service).  
 
-#### Save a model in Studio
+#### Save a model in Studio (classic)
 
 1. Run the experiment that builds and trains the model.
 2. When training is complete, right-click the module that was used for training, select **Trained model**, and then click **Save as trained model.**
-3. By default, models are saved to your Studio workspace. You can view them using the Studio UI.
+3. By default, models are saved to your Studio (classic) workspace. You can view them using the Studio (classic) UI.
 
 The following modules can create a saved model that uses the required [iLearner](ilearner-interface.md) interface:
 
@@ -70,7 +70,7 @@ The following modules can create a saved model that uses the required [iLearner]
 
 ### Load the model into a new experiment
 
-1. Add the **Load Trained Model** module to your experiment in Studio.
+1. Add the **Load Trained Model** module to your experiment in Studio (classic).
 
 2. For **Data source**, indicate the location of the trained model, using one of the following options:
 
@@ -135,7 +135,7 @@ You can use PowerShell to simplify or automate many tasks in Azure Machine Learn
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

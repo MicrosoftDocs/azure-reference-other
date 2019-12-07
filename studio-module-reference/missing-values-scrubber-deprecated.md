@@ -32,7 +32,7 @@ The module takes a dataset as input, and returns a dataset in which missing valu
 
 There are multiple ways to handle missing values. However, whichever method you choose, it applies to the entire set of columns you have selected. If you need to treat missing values differently in some columns, use [Select Columns in Dataset](select-columns-in-dataset.md) to select a subset of data before applying **Missing Values Scrubber**.  
 
-1. Add the **Missing Values Scrubber** module to your experiment in Studio.
+1. Add the **Missing Values Scrubber** module to your experiment in Studio (classic).
 
     > [!WARNING]
     > This module has been deprecated. Use [Clean Missing Data](clean-missing-data.md) instead. 
