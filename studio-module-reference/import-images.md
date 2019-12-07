@@ -33,7 +33,7 @@ You can import any kind of images used for machine learning; however, there are 
 
 This example assumes that you have uploaded multiple images to your account in Azure blob storage. The images are in a container designated for that purpose only.  As a rule, each image must be fairly small and have the same dimensions and color channels. For a detailed list of requirements that apply to images, see the [Technical notes](#bkmk_Notes) section.
 
-1. Add the [Import Images](import-images.md) module to your experiment in Studio.
+1. Add the [Import Images](import-images.md) module to your experiment in Studio (classic).
 
 2. Add the [Pretrained Cascade Image Classification](pretrained-cascade-image-classification.md) and the [Score Model](score-model.md) module.
 
@@ -122,7 +122,7 @@ The following requirements apply to images processed by the [Import Images](impo
 |[Error 0049](errors/error-0049.md)|Exception occurs when it is not possible to parse a file.|  
 |[Error 0048](errors/error-0048.md)|Exception occurs when it is not possible to open a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

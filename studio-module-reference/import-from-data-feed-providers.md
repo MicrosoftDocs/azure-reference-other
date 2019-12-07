@@ -28,7 +28,7 @@ We strongly recommend that you profile your data before importing, to make sure 
 
 The module features a new wizard to help you choose a storage option. Use the wizard to select from among existing subscriptions and accounts, and quickly configure all options.
 
-1. Add the **Import Data** module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
+1. Add the **Import Data** module to your experiment. You can find the module in Studio (classic), in the **Data Input and Output** category.
 
 2. Click **Launch Import Data Wizard** and follow the prompts.
 
@@ -40,7 +40,7 @@ If you need to edit an existing data connection, the wizard loads all previous c
 
 You can also manually configure the import source.
 
-1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in Studio, in the [Data Input and Output](data-input-and-output.md) category.
+1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in Studio (classic), in the [Data Input and Output](data-input-and-output.md) category.
 
 2. For **Data source**, select **Data Feed Provider**.
 
@@ -67,7 +67,7 @@ You can also manually configure the import source.
 
 When complete, click the output dataset and select **Visualize** to see if the data was imported successfully.
 
-When [Import Data](import-data.md) loads the feed data into Studio, it infers the data type of each column based on the values it contains, either numerical or categorical.
+When [Import Data](import-data.md) loads the feed data into Studio (classic), it infers the data type of each column based on the values it contains, either numerical or categorical.
 
 - If a header is present, the header is used to name the columns of the output dataset.
 
@@ -81,7 +81,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 The query must return a flat table. Flattening nested OData records is not supported.
 
-Some columns included in OData feeds might have data types that are not supported in Studio, such as decimals. You can ingest the data as strings and convert them later using the **Execute R Script** or **Metadata Editor** modules.
+Some columns included in OData feeds might have data types that are not supported in Studio (classic), such as decimals. You can ingest the data as strings and convert them later using the **Execute R Script** or **Metadata Editor** modules.
 
 For more information about OData syntax and URLs, see [Odata.org - uri conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
 
@@ -156,7 +156,7 @@ As a workaround,  you can save the data to a CSV file in Azure table storage or 
 |[Error 0030](errors/error-0030.md)|an exception occurs in when it is not possible to download a file.|  
 |[Error 0002](errors/error-0002.md)|An exception occurs if one or more parameters could not be parsed or converted from the specified type to the type required by the target method.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

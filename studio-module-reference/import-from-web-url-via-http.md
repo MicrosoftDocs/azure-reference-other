@@ -28,7 +28,7 @@ There are two ways to get data: use the wizard to set up the data source, or con
 
 ### Use the Data Import Wizard
 
-1. Add the **Import Data** module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
+1. Add the **Import Data** module to your experiment. You can find the module in Studio (classic), in the **Data Input and Output** category.
 
 2. Click **Launch Import Data Wizard** and select Web URL via HTTP.
 
@@ -42,7 +42,7 @@ To edit an existing data connection, start the wizard again. The wizard loads al
 
 The following steps describe how to manually configure the import source.
 
-1. Add the [Import Data](import-data.md) module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
+1. Add the [Import Data](import-data.md) module to your experiment. You can find the module in Studio (classic), in the **Data Input and Output** category.
 
 2. For **Data source**, select **Web URL via HTTP**.
 
@@ -147,7 +147,7 @@ Azure Machine Learning supports the UTF-8 encoding. If your source file used ano
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 
