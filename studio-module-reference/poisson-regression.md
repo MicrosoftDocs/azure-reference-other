@@ -52,7 +52,7 @@ Because the response variable has a Poisson distribution, the model makes differ
 
 ## How to configure Poisson Regression
 
-1. Add the **Poisson Regression** module to your experiment in Studio.
+1. Add the **Poisson Regression** module to your experiment in Studio (classic).
 
     You can find this module under **Machine Learning - Initialize**, in the **Regression** category.
 

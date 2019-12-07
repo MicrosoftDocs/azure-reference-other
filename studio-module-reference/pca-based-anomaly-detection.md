@@ -43,7 +43,7 @@ For additional information about how PCA works, and about the implementation for
 
 ## How to configure PCA Anomaly Detection
 
-1. Add the **PCA-Based Anomaly Detection** module to your experiment in Studio. You can find this module under **Machine Learning**, **Initialize Model**, in the **Anomaly Detection** category.
+1. Add the **PCA-Based Anomaly Detection** module to your experiment in Studio (classic). You can find this module under **Machine Learning**, **Initialize Model**, in the **Anomaly Detection** category.
 
 2. In the **Properties** pane for the **PCA-Based Anomaly Detection** module, click the **Training mode** option, and indicate whether you want to train the model using a specific set of parameters, or use a parameter sweep to find the best parameters.
 
@@ -146,7 +146,7 @@ This algorithm uses PCA to approximate the subspace containing the normal class.
 |[Error 0062](errors/error-0062.md)|Exception occurs when attempting to compare two models with different learner types.|  
 |[Error 0047](errors/error-0047.md)|Exception occurs if number of feature columns in some of the datasets passed to the module is too small.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

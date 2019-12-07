@@ -18,7 +18,7 @@ This article lists the packages included by default in Azure Machine Learning St
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 > [!IMPORTANT]
-> Packages available in Studio can be updated, or the version refreshed, without warning. To get the latest and most complete list of the R packages that are in the Azure Machine Learning Studio (classic) environment, we recommend that you use [this script](#bkmk_code).
+> Packages available in Studio (classic) can be updated, or the version refreshed, without warning. To get the latest and most complete list of the R packages that are in the Azure Machine Learning Studio (classic) environment, we recommend that you use [this script](#bkmk_code).
 
 ## Unsupported packages  
 
@@ -48,7 +48,7 @@ Over 650 R packages are preloaded in the Azure Machine Learning environment. Thi
 The **Compatibility** column indicates whether the package is included with CRAN R 3.1 or  Microsoft R Open (MRO; currently 3.2.2 and 3.4.4). If not otherwise marked, the package is included with both.
 
 > [!NOTE]
-> Many new packages are now available from Microsoft R Open. This means that you can easily use the same R code in Azure ML Studio, Microsoft R Server, and in SQL Server Machine Learning Services. 
+> Many new packages are now available from Microsoft R Open. This means that you can easily use the same R code in Azure ML Studio (classic), Microsoft R Server, and in SQL Server Machine Learning Services. 
 
 ###  <a name="bkmk_A"></a> A  
 
