@@ -16,7 +16,7 @@ manager: cgronlun
 
 Learn about the error messages and exception codes you might encounter using  modules in Azure Machine Learning Studio (classic). 
 
-To resolve the issue, look for the error in this article to read about common causes. There are two ways to get the full text of an error message in Studio:  
+To resolve the issue, look for the error in this article to read about common causes. There are two ways to get the full text of an error message in Studio (classic):  
  
 - Click the link, **View Output Log**, in the right pane and scroll to the bottom. The detailed error message is displayed in the last two lines of the window.  
   

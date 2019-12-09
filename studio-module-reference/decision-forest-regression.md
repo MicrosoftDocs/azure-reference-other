@@ -42,7 +42,7 @@ For more information about the theoretical framework for this algorithm and its 
 
 ## How to configure Decision Forest Regression Model
 
-1. Add the **Decision Forest Regression** module to the experiment. You can find the module in Studio under **Machine Learning**, **Initialize Model**, and **Regression**.
+1. Add the **Decision Forest Regression** module to the experiment. You can find the module in Studio (classic) under **Machine Learning**, **Initialize Model**, and **Regression**.
 
 2. Open the module properties, and for **Resampling method**, choose the method used to create the individual trees.  You can choose from **Bagging** or **Replicate**.
 
