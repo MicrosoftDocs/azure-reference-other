@@ -87,7 +87,7 @@ Explore examples of count-based featurization using these sample experiments in 
 - [Learning with Counts: Binary classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
-> These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
+> These Gallery experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio (classic), the experiment is automatically upgraded to use the newer modules.
 
 ## Expected inputs
 
@@ -116,7 +116,7 @@ Explore examples of count-based featurization using these sample experiments in 
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0018](errors/error-0018.md)|Exception occurs if input dataset is not valid.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

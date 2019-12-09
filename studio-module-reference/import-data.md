@@ -60,7 +60,7 @@ If you are not sure how or where you should store your data, see this guide to c
 
 ## How to use Import Data
  
-1. Add the **Import Data** module to your experiment. You can find this module in the **Data Input and Output** category in Studio.
+1. Add the **Import Data** module to your experiment. You can find this module in the **Data Input and Output** category in Studio (classic).
 
 2. Click **Launch Data Import Wizard** to configure the data source using a wizard.
 
@@ -80,7 +80,7 @@ If you are not sure how or where you should store your data, see this guide to c
 
 5. Run the experiment.
 
-    When [Import Data](import-data.md) loads the data into Studio, it infers the data type of each column based on the values it contains, either numerical or categorical.
+    When [Import Data](import-data.md) loads the data into Studio (classic), it infers the data type of each column based on the values it contains, either numerical or categorical.
 
     - If a header is present, the header is used to name the columns of the output dataset.
 
@@ -169,7 +169,7 @@ If you are exporting a dataset to a CSV file, use [Edit Metadata](edit-metadata.
 
 If you need to get data from a source that is not in the list, there are various workarounds you can try: 
 
-- To upload data from a file on your computer, click **New** in Studio, select **Dataset**, and then select **From Local File**. Locate the file and specify the format (TSV, CSV, etc.). See [this article](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-2-upload-data/) for a walkthrough.
+- To upload data from a file on your computer, click **New** in Studio (classic), select **Dataset**, and then select **From Local File**. Locate the file and specify the format (TSV, CSV, etc.). See [this article](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-2-upload-data/) for a walkthrough.
 
 - Use R or Python.  You can use the [Execute R Script](execute-r-script.md) module with an appropriate R package to get data from other cloud databases.
 
@@ -215,7 +215,7 @@ Each data source must be configured using different options. This table lists on
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
