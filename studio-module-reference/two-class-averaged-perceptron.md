@@ -32,7 +32,7 @@ The simpler perceptron models are suited to learning linearly separable patterns
 
 ## How to configure Two-Class Averaged Perceptron
 
-1.  Add the **Two-Class Averaged Perceptron** module to your experiment in Studio.  
+1.  Add the **Two-Class Averaged Perceptron** module to your experiment in Studio (classic).  
 
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   

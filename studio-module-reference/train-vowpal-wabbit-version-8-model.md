@@ -50,7 +50,7 @@ The [Feature Hashing](feature-hashing.md) module also includes functionality pro
 
 This section describes how to train a new model, and how to add new data to an existing model.
 
-Unlike other modules in Studio, this module both specifies the module parameters, and trains the model. If you have an existing model, you can add it as an optional input, to incrementally train the model.
+Unlike other modules in Studio (classic), this module both specifies the module parameters, and trains the model. If you have an existing model, you can add it as an optional input, to incrementally train the model.
 
 + [Prepare input data in one of the required formats](#bkmk_prepData)
 + [Train a new model](#bkmk_NewModel)
@@ -106,13 +106,13 @@ The Vowpal Wabbit data format has the advantage that it does not require a colum
   
     - **SVMLight** is a format used by some other machine learning tools. 
 
-6.  Select the option, **Use cached results**, if you don't want to load the data from storage each time the experiment is re-reun. Assuming no other parameters have changed and a valid cache can be found, Studio uses a cached version of the data.
+6.  Select the option, **Use cached results**, if you don't want to load the data from storage each time the experiment is re-reun. Assuming no other parameters have changed and a valid cache can be found, Studio (classic) uses a cached version of the data.
   
      If this option is deselected, the module always reads the data from storage.
   
 7.  Run the experiment.
 
-8. When training is complete, right-click the output and select **Save as Trained Model** to save the model to your Studio workspace.
+8. When training is complete, right-click the output and select **Save as Trained Model** to save the model to your Studio (classic) workspace.
 
 ### <a name="bkmk_Retrain"></a> Retrain an existing Vowpal Wabbit model
 
@@ -120,7 +120,7 @@ Vowpal Wabbit supports incremental training by adding new data to an existing mo
 
 + Use the output of another **Train Vowpal Wabbit Version 8** module in the same experiment.  
   
-+ Locate a saved model in the **Trained Models** group of Studio’s left navigation pane, and drag it in to your experiment.  
++ Locate a saved model in the **Trained Models** group of Studio (classic)’s left navigation pane, and drag it in to your experiment.  
 
 1. Add the **Train Vowpal Wabbit Version 8** module to your experiment.  
   
@@ -219,7 +219,7 @@ Rather than using data in the Azure ML workspace, the training data is directly 
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

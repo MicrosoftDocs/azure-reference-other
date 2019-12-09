@@ -33,14 +33,14 @@ In Azure Machine Learning, creating and using a machine learning model is typica
 
 2. Provide a dataset that is labeled, and has data compatible with the algorithm. Connect both the data and the model to **Train Model**.
 
-    What training produces is a specific binary format, the [iLearner](ilearner-interface.md), that encapsulates the statistical patterns learned from the data. You cannot directly modify or read this format; however, other modules in Studio can use this trained model. 
+    What training produces is a specific binary format, the [iLearner](ilearner-interface.md), that encapsulates the statistical patterns learned from the data. You cannot directly modify or read this format; however, other modules in Studio (classic) can use this trained model. 
     
     You can also view properties of the model. For more information, see the [Results](#bkmk_results) section.
 
 3. After training is completed, use the trained model with one of the [scoring modules](machine-learning-score.md), to make predictions on new data.
 
 > [!NOTE]
-> Other specialized machine learning tasks require different training methods, and Studio provides separate training modules for them. For example, image detection, clustering, and anomaly detction all use custom training methods. **Train Model** is intended for use with regression and classification models only.
+> Other specialized machine learning tasks require different training methods, and Studio (classic) provides separate training modules for them. For example, image detection, clustering, and anomaly detction all use custom training methods. **Train Model** is intended for use with regression and classification models only.
 
 ### Supervised and unsupervised training
 
@@ -105,7 +105,7 @@ If you need to train a type of model not supported by **Train Model**, there are
 
 + Anomaly detection models 
 
-    - [Train Anomaly Detection Model](train-anomaly-detection-model.md) supports the anomaly detection modules in Studio.
+    - [Train Anomaly Detection Model](train-anomaly-detection-model.md) supports the anomaly detection modules in Studio (classic).
 
 + Recommendation models
 
