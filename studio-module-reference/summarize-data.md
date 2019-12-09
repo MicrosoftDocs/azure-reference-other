@@ -32,11 +32,11 @@ Such summary statistics are useful when you want to understand the characteristi
 The module calculates the important scores for each column, and returns a row of summary statistics for each variable (data column) provided as input.
 
 > [!TIP]
-> You might already know that you can get a short list of statistics by using the **Visualize** option in Studio. However, this visualization is created based on some top number of rows. In contrast, the **Summarize Data** module computes its statistics on all rows of data.  
+> You might already know that you can get a short list of statistics by using the **Visualize** option in Studio (classic). However, this visualization is created based on some top number of rows. In contrast, the **Summarize Data** module computes its statistics on all rows of data.  
 
 ## How to use Summarize Data  
 
-1. Add the **Summarize Data** module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Studio.
+1. Add the **Summarize Data** module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Studio (classic).
 
 2. Connect the dataset for which you want to generate a report.
 
@@ -130,7 +130,7 @@ For examples of how to use the **Summarize Data** module in an experiment, see t
 |[Error 0020](errors/error-0020.md)|Exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
 |[Error 0021](errors/error-0021.md)|Exception occurs if the number of rows in some of the datasets passed to the module is too small.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

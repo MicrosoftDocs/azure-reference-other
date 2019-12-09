@@ -29,7 +29,7 @@ It also returns a set of metrics describing the models that were tested, and a s
 
 ## How to configure Sweep Clustering
 
-1. Add the [Sweep Clustering](sweep-clustering.md) module to your experiment in Studio. You can find this module under **Machine Learning**, in the **Train** category.
+1. Add the [Sweep Clustering](sweep-clustering.md) module to your experiment in Studio (classic). You can find this module under **Machine Learning**, in the **Train** category.
 
 2. Add the [K-Means Clustering](k-means-clustering.md) module and your training dataset to the experiment, and connect them both to the [Sweep Clustering](sweep-clustering.md) module.  
 
@@ -196,7 +196,7 @@ The intent of the log is indicate which seed the module uses when the user does 
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

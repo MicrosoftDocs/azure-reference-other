@@ -33,7 +33,7 @@ To create a  new VW model, we recommend that you use the latest version::
   
 1.  Add the **Score Vowpal Wabbit Version 7-4 Model** module to your experiment.  
   
-2.  Add a trained Vowpal Wabbit model and connect it to the left-hand input port. You can use a trained model created in the same experiment, or locate a saved model in the **Trained Models** group of Studio’s left navigation pane. 
+2.  Add a trained Vowpal Wabbit model and connect it to the left-hand input port. You can use a trained model created in the same experiment, or locate a saved model in the **Trained Models** group of Studio (classic)’s left navigation pane. 
 
     **Restrictions** 
     
@@ -89,7 +89,7 @@ For examples of how Vowpal Wabbit can be used in machine learning, see the [Azur
 
 The following video provides a walkthrough of the training and scoring process for Vowpal Wabbit:  
 
-+ [Text analytics and Vowpal Wabbit in Azure ML Studio/](https://azure.microsoft.com/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
++ [Text analytics and Vowpal Wabbit in Azure ML Studio (classic)/](https://azure.microsoft.com/documentation/videos/text-analytics-and-vowpal-wabbit-in-azure-ml-studio/)  
 
 ##  <a name="bkmk_TechnicalNotes"></a> Technical notes
 
@@ -141,7 +141,7 @@ All arguments other than those described above are allowed.
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 ## See also  
