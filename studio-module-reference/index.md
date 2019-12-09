@@ -17,7 +17,7 @@ manager: cgronlun
 
 [!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
-Azure Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio?"](https://docs.microsoft.com/azure/machine-learning/studio/what-is-ml-studio) for more details.
+Azure Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio (classic)?"](https://docs.microsoft.com/azure/machine-learning/studio/what-is-ml-studio) for more details.
 
 This documentation contains detailed technical and how-to information for the modules that are available in Machine Learning Studio (classic).
 
@@ -27,7 +27,7 @@ This documentation contains detailed technical and how-to information for the mo
 
 Each *module* in Machine Learning Studio (classic) represents a set of code that can run independently and perform a machine learning task, given the required inputs. A module might contain a particular algorithm, or perform a task that is important in machine learning, such as missing value replacement, or statistical analysis. 
 
-In Studio, modules are organized by functionality:
+In Studio (classic), modules are organized by functionality:
 
 + [Data input and output modules](data-input-and-output.md) do the work of moving data from cloud sources into your experiment. You can write your results or intermediate data to Azure Storage, a SQL database, or Hive, while running an experiment, or use cloud storage to exchange data between experiments.  
 

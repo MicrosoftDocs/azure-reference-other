@@ -43,7 +43,7 @@ There are several known issues with using the Import Data module for Hive Querie
 
 The module features a new wizard to help you choose a storage option,  select from among existing subscriptions and accounts, and quickly configure all options.
 
-1. Add the **Import Data** module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
+1. Add the **Import Data** module to your experiment. You can find the module in Studio (classic), in the **Data Input and Output** category.
 
 2. Click **Launch Import Data Wizard** and follow the prompts.
 
@@ -55,7 +55,7 @@ If you need to edit an existing data connection, the wizard loads all previous c
 
 The following steps describe how to manually configure the import source.
 
-1. Add the **Import Data** module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
+1. Add the **Import Data** module to your experiment. You can find the module in Studio (classic), in the **Data Input and Output** category.
 
 2. For **Data source**, select **Hive Query**.
 
@@ -106,7 +106,7 @@ If you get errors, check your data for missing values, additional empty columns,
 
 For examples of how to configure an HDInsight cluster and use Hive queries in machine learning experiments, see these resources:
 
-- This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio using Hive: [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://azure.microsoft.com/documentation/articles/machine-learning-data-science-process-hive-criteo-walkthrough/).
+- This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio (classic) using Hive: [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://azure.microsoft.com/documentation/articles/machine-learning-data-science-process-hive-criteo-walkthrough/).
 
 - This blog by MVP Vesa Tikkanen describes  some issues and workarounds when reading very large files (distributed queries) from an HD cluster on Linux: [Reading Linux HDInsight Hive from Azure ML](https://www.qumio.com/Blog/Lists/Posts/Post.aspx?ID=38)
 
@@ -201,7 +201,7 @@ There are also multiple options for filtering data after it has been loaded into
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
