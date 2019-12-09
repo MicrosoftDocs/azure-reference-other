@@ -89,7 +89,7 @@ Explore examples of count-based featurization in the [Azure AI Gallery](https://
 - [Learning with Counts: Binary classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Binary-classification-with-NYC-taxi-data-2): Uses count-based features in a binary classification task.
 
 > [!NOTE]
-> These experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio, the experiment is automatically upgraded to use the newer modules.
+> These experiments were all created using the earlier, and now deprecated, version of the [Learning with Counts](data-transformation-learning-with-counts.md) modules. When you open the experiment in Studio (classic), the experiment is automatically upgraded to use the newer modules.
 
 ## Technical notes
 
@@ -127,7 +127,7 @@ It is statistically safe to count and train on the same data set if you set the 
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 
