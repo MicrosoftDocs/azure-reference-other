@@ -58,7 +58,7 @@ Configuration steps differ considerably dependng on whether you are providing a 
 
 Assuming you know how you want to configure the model, you can provide a specific set of values as arguments. When you train the model, use [Train Model](train-model.md).
 
-1.  Add the **Fast Forest Quantile Regression** module to your experiment in Studio.
+1.  Add the **Fast Forest Quantile Regression** module to your experiment in Studio (classic).
   
 2.  Set the **Create trainer mode** option to **Single Parameter**.  
 
@@ -100,7 +100,7 @@ Assuming you know how you want to configure the model, you can provide a specifi
 
 If you are not sure of the optimal parameters for the model, you can configure a parameter sweep, and provide a range of values as arguments. When you train the model, use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module.
 
-1.  Add the **Fast Forest Quantile Regression** module to your experiment in Studio.  
+1.  Add the **Fast Forest Quantile Regression** module to your experiment in Studio (classic).  
   
 2.  Set the **Create trainer mode** option to **Parameter Range**.  
   

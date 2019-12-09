@@ -49,7 +49,7 @@ This module supports exporting or saving your data to the following cloud data s
   
 ## How to configure Export Data
 
-1. Add the **Export Data** module to your experiment in Studio. You can find this module in the **Input and Output** category.
+1. Add the **Export Data** module to your experiment in Studio (classic). You can find this module in the **Input and Output** category.
 
 2. Connect **Export Data** to the module that contain the data you want to export.
 
@@ -149,7 +149,7 @@ This table lists parameters that apply to all [Export Data](export-data.md) opti
 |[Error 0029](errors/error-0029.md)|An exception occurs when an invalid URI is passed.|  
 |[Error 0003](errors/error-0003.md)|An exception occurs if one or more inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

@@ -63,7 +63,7 @@ This article describes how to use the **Export data to Hive** option in the [Exp
 
 For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.azure.ai).
 
-+ [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/hive-criteo-walkthrough): This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio using Hive.
++ [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/hive-criteo-walkthrough): This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio (classic) using Hive.
 
 ## <a name="TechnicalNotes"></a> Technical notes
 
@@ -123,7 +123,7 @@ It can be hard to figure out the default container for the cluster. Here are som
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

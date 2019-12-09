@@ -73,7 +73,7 @@ Having the outputs as numeric also makes it possible to use many different machi
 
 ## How to configure Feature Hashing
 
-1.  Add the **Feature Hashing** module to your experiment in Studio.
+1.  Add the **Feature Hashing** module to your experiment in Studio (classic).
 
 2. Connect the dataset that contains the text you want to analyze.
 
@@ -87,7 +87,7 @@ Having the outputs as numeric also makes it possible to use many different machi
     - If you choose multiple text columns to use as inputs, it can have a huge effect on feature dimensionality. For example, if a 10-bit hash is used for a single text column, the output contains 1024 columns. If a 10-bit hash is used for two text columns, the output contains 2048 columns.
 
      > [!NOTE]
-     > By default, Studio marks most text columns as features, so if you select all text columns, you might get too many columns, including many that are not actually free text. Use the **Clear feature** option in [Edit Metadata](edit-metadata.md) to prevent other text columns from being hashed.
+     > By default, Studio (classic) marks most text columns as features, so if you select all text columns, you might get too many columns, including many that are not actually free text. Use the **Clear feature** option in [Edit Metadata](edit-metadata.md) to prevent other text columns from being hashed.
 
 3. Use **Hashing bitsize** to specify the number of bits to use when creating the hash table.
     
@@ -204,7 +204,7 @@ For many problems, the default hash table (bitsize = 10) is more than adequate; 
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 
