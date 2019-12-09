@@ -43,7 +43,7 @@ The decision forest classifier in Azure Machine Learning Studio (classic) consis
 > [!TIP]
 > If you are not sure of the best parameters, we recommend that you use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to train and test multiple models and find the optimal parameters.
 
-1. Add the **Multiclass Decision Forest** module to your experiment in Studio. You can find this module under **Machine Learning**, **Initialize Model**, and **Classification**.
+1. Add the **Multiclass Decision Forest** module to your experiment in Studio (classic). You can find this module under **Machine Learning**, **Initialize Model**, and **Classification**.
 
 2. Double-click the module to open the **Properties** pane.
 

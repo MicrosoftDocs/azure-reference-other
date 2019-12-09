@@ -43,7 +43,7 @@ You then connect the binary model to **One-Vs-All Multiclass** module, and train
 
 When you combine the models, even though the training dataset might have multiple class values, the **One-Vs-All Multiclass** creates multiple binary classification models, optimizes the algorithm for each class, and then merges the models.
 
-1. Add the **One-Vs-All Multiclass** to your experiment in Studio. You can find this module under Machine Learning - Initialize, in the **Classification** category.
+1. Add the **One-Vs-All Multiclass** to your experiment in Studio (classic). You can find this module under Machine Learning - Initialize, in the **Classification** category.
 
     The **One-Vs-All Multiclass** classifier has no configurable parameters of its own. Any customizations must be done in the binary classification model that is provided as input.
 
@@ -92,7 +92,7 @@ For examples of how this learning algorithm is used, see the [Azure AI Gallery](
 |---------------|-----------------|  
 |[Error 0013](errors/error-0013.md)|An exception occurs if the learner that was passed to the module is the wrong type.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

@@ -41,7 +41,7 @@ For more information about the research behind this machine learning algorithm, 
 
 ## How to configure Multiclass Decision Jungle Model
 
-1. Add the **Multiclass Decision Jungle** module to your experiment in Studio. You can find this module under **Machine Learning**, **Initialize Model**, and **Classification**.
+1. Add the **Multiclass Decision Jungle** module to your experiment in Studio (classic). You can find this module under **Machine Learning**, **Initialize Model**, and **Classification**.
 
 2. Double-click the module to open the **Properties** pane.
 
