@@ -41,7 +41,7 @@ Decision jungles have the following advantages:
   
 ## How to configure Two-Class Decision Jungle
 
-1.  Add the **Two-Class Decision Jungle** module to your experiment in Studio.  
+1.  Add the **Two-Class Decision Jungle** module to your experiment in Studio (classic).  
   
 2.  For **Resampling method**, choose the method used to create the individual trees.  You can choose from **Bagging** or **Replicate**.  
   
