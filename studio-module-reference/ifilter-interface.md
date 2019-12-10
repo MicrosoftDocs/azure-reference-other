@@ -17,7 +17,7 @@ This article describes `IFilter`, which is the interface for working with digita
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-The `IFilter` interface provides methods and properties that are used to configure and interact with digital signal filters that have been defined using one of the filter modules in Studio. For more information, see [Filter](data-transformation-filter.md). 
+The `IFilter` interface provides methods and properties that are used to configure and interact with digital signal filters that have been defined using one of the filter modules in Studio (classic). For more information, see [Filter](data-transformation-filter.md). 
 
 You use the `IFilter` interface to save a filter or apply a predefined filter to data.  
 
@@ -25,7 +25,7 @@ You use the `IFilter` interface to save a filter or apply a predefined filter to
 + Apply the filter to input data
 + Generate a `DataTable` of data with filter results
 
-You can interact with `IFilter` only in Studio, or in one of the supported APIs.  
+You can interact with `IFilter` only in Studio (classic), or in one of the supported APIs.  
 
 ## See also  
  [Module parameter types](machine-learning-module-parameter-types.md)   

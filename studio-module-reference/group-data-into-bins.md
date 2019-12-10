@@ -58,7 +58,7 @@ Because there are so many ways to group data, all customizable, we recommend tha
 
 ## How to configure Group Data into Bins
 
-1. Add the **Group Data Into Bins** module to your experiment in Studio. You can find this module in the category **Data Transformation**, under **Scale and Reduce**.
+1. Add the **Group Data Into Bins** module to your experiment in Studio (classic). You can find this module in the category **Data Transformation**, under **Scale and Reduce**.
 
 2. Connect the dataset that has numerical data to bin.  Quantization can be applied only to columns containing numeric data. 
 
@@ -226,7 +226,7 @@ The following graphic shows the distribution of values in the column before and 
 |[Error 0039](errors/error-0039.md)|Exception occurs if operation has failed.|  
 |[Error 0075](errors/error-0075.md)|Exception occurs when an invalid binning function is used when quantizing a dataset.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

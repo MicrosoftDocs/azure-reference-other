@@ -179,7 +179,7 @@ The output contains the input data columns first, if you included them, and the 
 
 #### Visualize intra-cluster distances
 
-In the dataset of results from the previous section, click the column of distances for each cluster. Studio displays a histogram that visualizes the distribution of distances for points within the cluster.  
+In the dataset of results from the previous section, click the column of distances for each cluster. Studio (classic) displays a histogram that visualizes the distribution of distances for points within the cluster.  
     
 For example, the following histograms show the distribution of cluster distances from the same experiment, using four different metrics. All other settings for the parameter sweep were the same. Changing the metric resulted in a different number of clusters in one model.
 

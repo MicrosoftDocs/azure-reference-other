@@ -26,7 +26,7 @@ To export data, you provide the instance name and database name where the data i
 
 ## How to export data to an Azure SQL Database
 
-1. Add the [Export Data](export-data.md) module to your experiment in Studio. You can find this module in the [Data Input and Output](data-input-and-output.md) category. 
+1. Add the [Export Data](export-data.md) module to your experiment in Studio (classic). You can find this module in the [Data Input and Output](data-input-and-output.md) category. 
 
 2. Connect **Export data** to the module that produces the data that you want to export.
 
@@ -128,7 +128,7 @@ Also, Azure Machine Learning cannot output data types such as `money`.
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

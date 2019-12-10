@@ -47,7 +47,7 @@ For more information, including links to basic research, see the [Technical note
 
 ## How to configure One-Class SVM
 
-1. Add the **One-Class Support Vector Model** module to your experiment in Studio.  You can find the module under **Machine Learning - Initialize**, in the **Anomaly Detection** category.
+1. Add the **One-Class Support Vector Model** module to your experiment in Studio (classic).  You can find the module under **Machine Learning - Initialize**, in the **Anomaly Detection** category.
 
 2. Double-click the **One-Class Support Vector Model** module to open the **Properties** pane. 
 

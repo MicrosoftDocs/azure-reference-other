@@ -37,7 +37,7 @@ We strongly recommend that you profile your data before importing, to make sure 
 
 The module features a new wizard to help you choose a storage option, select from among existing subscriptions and accounts, and quickly configure all options.
 
-1. Add the **Import Data** module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
+1. Add the **Import Data** module to your experiment. You can find the module in Studio (classic), in the **Data Input and Output** category.
 
 2. Click **Launch Import Data Wizard** and follow the prompts.
 
@@ -49,7 +49,7 @@ If you need to edit an existing data connection, the wizard loads all previous c
 
 The following steps describe how to manually configure the import source.
 
-1. Add the **Import Data** module to your experiment. You can find this module in Studio, in the [Data Input and Output](data-input-and-output.md) category.
+1. Add the **Import Data** module to your experiment. You can find this module in Studio (classic), in the [Data Input and Output](data-input-and-output.md) category.
 
 2. For **Data source**, select **Azure Blob Storage**.
 
@@ -219,9 +219,9 @@ The size limit for uploading local datasets directly to Azure Machine Learning i
 
 To upload larger files, up to 10 GB, there are several approaches:
 
-- **Use a zipped file.** You can upload datasets to Azure ML Studio in zipped format, and then use the [Unpack Zipped Datasets](unpack-zipped-datasets.md) module to unpack and save the dataset. Zipped datasets can also be unpacked using the [Execute R Script](execute-r-script.md) module but performance might be limited.
+- **Use a zipped file.** You can upload datasets to Azure ML Studio (classic) in zipped format, and then use the [Unpack Zipped Datasets](unpack-zipped-datasets.md) module to unpack and save the dataset. Zipped datasets can also be unpacked using the [Execute R Script](execute-r-script.md) module but performance might be limited.
 
-- **Use a fast Azure utility such as AzCopy.** Stage the data to Microsoft Azure Blob Storage using   a utility such as [AzCopy](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/). Then, use the [Import Data](import-data.md) module to import data from blob storage to Studio.
+- **Use a fast Azure utility such as AzCopy.** Stage the data to Microsoft Azure Blob Storage using   a utility such as [AzCopy](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/). Then, use the [Import Data](import-data.md) module to import data from blob storage to Studio (classic).
 
     For example, the following code shows the AzCopy syntax for writing to blob storage.
 
@@ -323,7 +323,7 @@ However, you can override the results of the type guesser by editing the column 
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

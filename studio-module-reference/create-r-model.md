@@ -88,7 +88,7 @@ model <- naiveBayes(Class ~ ., train.data)
     - `get.label.columns()` returns the column that is selected as the class label in the [Train Model](train-model.md) module.
     - `get.feature.columns()`selects the columns that were designated as features in the dataset.
 
-        By default, all columns except the label column are considered features in Studio. Therefore, to mark specific columns as features, use [Edit Metadata](edit-metadata.md), or select a set of columns within the R script.
+        By default, all columns except the label column are considered features in Studio (classic). Therefore, to mark specific columns as features, use [Edit Metadata](edit-metadata.md), or select a set of columns within the R script.
     - `get.feature.column.names(dataset)` gets feature column names from the dataset. 
 
 - The names from the combined dataset are designated as the names for columns in `train.data`, and a temporary name `Class` is created for the label column.
@@ -173,7 +173,7 @@ def azureml_main(dataframe):
 
 After you have run the experiment, you can publish the complete experiment as a web service.
 
-For updated instructions on how to create a web service from a Studio experiment, see [Walkthrough Step 5: Deploy the Azure Machine Learning web service](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-5-publish-web-service)
+For updated instructions on how to create a web service from a Studio (classic) experiment, see [Walkthrough Step 5: Deploy the Azure Machine Learning web service](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-5-publish-web-service)
 
 By default, the web service expects all input columns from the training data to be provided, including the label column. You can add an instance of [Select Columns in Dataset](select-columns-in-dataset.md) between the input data source and the [Score Model](score-model.md) module to exclude the label you’re trying to predict.
 

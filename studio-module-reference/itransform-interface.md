@@ -25,7 +25,7 @@ The `ITransform` interface provides the following functionality:
 + Returns a `DataTable` containing the transformed data
 
 
-You can interact with `ITransform` only in Studio, or in one of the supported APIs.
+You can interact with `ITransform` only in Studio (classic), or in one of the supported APIs.
 
 ## See also
  [Module parameter types](machine-learning-module-parameter-types.md)   

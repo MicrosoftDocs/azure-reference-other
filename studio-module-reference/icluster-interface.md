@@ -25,7 +25,7 @@ The `ICluster` interface provides the following methods and properties for worki
 + Trains a clustering model from data
 + Applies a clustering model to new data
 
-You can interact with `ICluster` only in Studio, or in one of the supported APIs.  
+You can interact with `ICluster` only in Studio (classic), or in one of the supported APIs.  
 
 For classification or regression models, use the [iLearner](ilearner-interface.md) interface.
 

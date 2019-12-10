@@ -44,7 +44,7 @@ Linear Discriminant Analysis is sometimes abbreviated to LDA, but this is easily
 
 ## How to use Linear Discriminant Analysis
 
-1. Add the **Linear Discriminant Analysis** module to your experiment in Studio, and connect the dataset you want to evaluate.
+1. Add the **Linear Discriminant Analysis** module to your experiment in Studio (classic), and connect the dataset you want to evaluate.
 
 2. Select a set of numeric feature columns as inputs. The columns provided as inputs must meet these requirements:
 
@@ -117,7 +117,7 @@ For more information about how the eigenvalues are calculated, see this paper (P
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

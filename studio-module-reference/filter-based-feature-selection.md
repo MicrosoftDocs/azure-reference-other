@@ -95,7 +95,7 @@ This module provides two methods for determining feature scores:
     
 ### <a name="bkmk_correlationMethods"></a> Generate feature scores using a traditional statistical metric
  
-1.  Add the **Filter-Based Feature Selection** module to your experiment. You can find it in the **Feature Selection** category in Studio.
+1.  Add the **Filter-Based Feature Selection** module to your experiment. You can find it in the **Feature Selection** category in Studio (classic).
 
 2. Connect an input dataset that contains at least two columns that are potential features.  
 
@@ -152,7 +152,7 @@ If the dataset contains fewer columns than you expected, check the module settin
 
 ###  <a name="bkmk_countMethod"></a> Use count-based feature selection  
   
-1.  Add the **Filter-Based Feature Selection** module to your experiment. You can find it in the list of modules in Studio, in the **Feature Selection** group.
+1.  Add the **Filter-Based Feature Selection** module to your experiment. You can find it in the list of modules in Studio (classic), in the **Feature Selection** group.
 
 2. Connect an input dataset that contains at least two columns that are possible features.  
   
@@ -283,7 +283,7 @@ To give you an idea of how the scores compare when using different metrics, the 
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

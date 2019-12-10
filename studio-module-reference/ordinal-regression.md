@@ -43,7 +43,7 @@ For more information about the research behind this algorithm, see this paper (d
 
 This module solves a ranking problem as a series of related classification problems. Therefore, the algorithm creates a series of extended training examples using a binary model for each rank, and trains against that extended set. This operation can be computationally expensive.
 
-1. Add the **Ordinal Regression Model** module to your experiment in Studio. You can find this module under **Machine Learning - Initialize**, in the **Regression** category.
+1. Add the **Ordinal Regression Model** module to your experiment in Studio (classic). You can find this module under **Machine Learning - Initialize**, in the **Regression** category.
 
 2. Add a module that supports binary classification, and configure the model. There are several two-class modules in the [classification](machine-learning-initialize-model-classification.md) category.
 

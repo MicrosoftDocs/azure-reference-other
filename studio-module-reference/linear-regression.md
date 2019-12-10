@@ -29,13 +29,13 @@ You use this module to define a linear regression method, and then train a model
 
 Linear regression is a common statistical method, which has been adopted in machine learning and enhanced with many new methods for fitting the line and measuring error. In the most basic sense, regression refers to prediction of a numeric target. Linear regression is still a good choice when you want a very simple model for a basic predictive task. Linear regression also tends to work well on high-dimensional, sparse data sets lacking complexity.
 
-Azure Machine Learning Studio (classic) supports a variety of regression models, in addition to linear regression. However, the term "regression" can be interpreted loosely, and some types of regression provided in other tools are not supported in Studio.
+Azure Machine Learning Studio (classic) supports a variety of regression models, in addition to linear regression. However, the term "regression" can be interpreted loosely, and some types of regression provided in other tools are not supported in Studio (classic).
 
 + The classic regression problem involves a single independent variable and a dependent variable. This is called *simple regression*.  This module supports simple regression.
 
 + *Multiple linear regression* involves two or more independent variables that contribute to a single dependent variable. Problems in which multiple inputs are used to predict a single numeric outcome are also  called *multivariate linear regression*.
 
-    The **Linear Regression** module can solve these problems, as can most of the other regression modules in Studio.
+    The **Linear Regression** module can solve these problems, as can most of the other regression modules in Studio (classic).
 
 + *Multi-label regression* is the task of predicting multiple dependent variables within a single model. For example, in multi-label logistic regression, a sample can be assigned to multiple different labels. (This is different from the task of predicting multiple levels within a single class variable.)
 
@@ -65,7 +65,7 @@ This module supports two methods for fitting a regression model, with very diffe
 
 ### <a name="bkmk_OrdinaryLeastSquares"></a> Create a regression model using ordinary least squares
 
-1. Add the **Linear Regression Model** module to your experiment in Studio.
+1. Add the **Linear Regression Model** module to your experiment in Studio (classic).
 
     You can find this module in the **Machine Learning** category. Expand **Initialize Model**, expand **Regression**, and then drag the **Linear Regression Model** module to your experiment.
 
@@ -103,7 +103,7 @@ After training is complete:
 
 ### <a name="bkmk_GradientDescent"></a> Create a regression model using online gradient descent
 
-1. Add the **Linear Regression Model** module to your experiment in Studio.
+1. Add the **Linear Regression Model** module to your experiment in Studio (classic).
 
     You can find this module in the **Machine Learning** category. Expand **Initialize Model**, expand **Regression**, and drag the **Linear Regression Model** module to your experiment
 

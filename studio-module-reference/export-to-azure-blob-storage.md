@@ -34,7 +34,7 @@ To export data to Azure blob for use by other applications, you use the [Export 
 
 The Azure blob service is for storing large amounts of data, including binary data. There are two types of blob storage: public blobs, and blobs that require login credentials.
 
-1. Add the [Export Data](export-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category in Studio.
+1. Add the [Export Data](export-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category in Studio (classic).
 
 2. Connect **Export Data** to the module that produces the data that you want to export to Azure blob storage.
 
@@ -141,7 +141,7 @@ Yes, you can write data to accounts in different regions. However, if the storag
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

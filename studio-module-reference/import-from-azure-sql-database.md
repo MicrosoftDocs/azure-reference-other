@@ -29,7 +29,7 @@ Storing data in an Azure database is also preferred if you need to be able to fi
 
 The module features a new wizard to help you choose a storage option, select from among existing subscriptions and accounts, and quickly configure all options.
 
-1. Add the **Import Data** module to your experiment. You can find the module in Studio, in the **Data Input and Output** category.
+1. Add the **Import Data** module to your experiment. You can find the module in Studio (classic), in the **Data Input and Output** category.
 
 2. Click **Launch Import Data Wizard** and follow the prompts.
 
@@ -41,7 +41,7 @@ If you need to edit an existing data connection, the wizard loads all previous c
 
 The following steps describe how to manually configure the import source.
 
-1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in Studio, in the [Data Input and Output](data-input-and-output.md) category.
+1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in Studio (classic), in the [Data Input and Output](data-input-and-output.md) category.
 
 2. For **Data source**, select **Azure SQL Database**.
 
@@ -65,13 +65,13 @@ The following steps describe how to manually configure the import source.
 
 5. Run the experiment.
 
-    As [Import Data](import-data.md) loads the data into Studio, some implicit type conversion might also be performed, depending on the data types used in the source database.
+    As [Import Data](import-data.md) loads the data into Studio (classic), some implicit type conversion might also be performed, depending on the data types used in the source database.
 
 ### Results
 
 When import is complete, click the output dataset and select **Visualize** to see if the data was imported successfully.
 
-Optionally, you can change the dataset and its metadata using the tools in Studio:
+Optionally, you can change the dataset and its metadata using the tools in Studio (classic):
 
 - Use [Edit Metadata](edit-metadata.md) to change column names, convert a column to a different data type, or to indicate which columns are labels or features.
 
@@ -158,7 +158,7 @@ One option is to export the data to a CSV  file in Azure storage, and use the op
 |[Error 0046](errors/error-0046.md)|An exception occurs when it is not possible to create a directory on specified path.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 
