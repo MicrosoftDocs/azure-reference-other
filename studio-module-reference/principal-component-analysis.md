@@ -112,7 +112,7 @@ There are two stages to computation of the lower-dimensional components.
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.| 
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 ## See also
