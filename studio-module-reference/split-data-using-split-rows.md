@@ -34,7 +34,7 @@ Other options in the **Split Data** module support different ways to divide the 
 
 ##  Divide a dataset into two groups 
 
-1.  Add the [Split Data](split-data.md) module to your experiment in Studio, and connect the dataset you want to split.
+1.  Add the [Split Data](split-data.md) module to your experiment in Studio (classic), and connect the dataset you want to split.
   
 2.  For **Splitting mode**, choose **Split rows**. 
 

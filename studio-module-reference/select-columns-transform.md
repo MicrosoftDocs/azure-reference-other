@@ -29,7 +29,7 @@ You use the **Select Columns Transform** to create and save a set of columns. Th
 
 This scenario assumes that you intend to use feature selection to generate a dynamic set of columns that will be used for training a model. To ensure that column selections are the same for the scoring process, you use the **Select Columns Transform** module to capture the column selections and apply them elsewhere in the experiment.
 
-1. Add an input dataset to your experiment in Studio.
+1. Add an input dataset to your experiment in Studio (classic).
 
 2. Add an instance of [Filter Based Feature Selection](filter-based-feature-selection.md).
 

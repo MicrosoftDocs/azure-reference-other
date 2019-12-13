@@ -33,7 +33,7 @@ If you have existing models created using an earlier version, use these modules:
 
 1.  Add the **Score Vowpal Wabbit Version 8 Model** module to your experiment.  
   
-2.  Add a trained Vowpal Wabbit model and connect it to the left-hand input port. You can use a trained model created in the same experiment, or locate a saved model in the **Trained Models** group of Studio’s left navigation pane. However, the model must be available in Azure Machine Learning Studio (classic); you cannot directly load a model from Azure storage.  
+2.  Add a trained Vowpal Wabbit model and connect it to the left-hand input port. You can use a trained model created in the same experiment, or locate a saved model in the **Trained Models** group of Studio (classic)’s left navigation pane. However, the model must be available in Azure Machine Learning Studio (classic); you cannot directly load a model from Azure storage.  
   
     > [!NOTE]
     >  Only Vowpal Wabbit 8 models are supported; you cannot connect saved models that were trained by using other algorithms, and you cannot use models that were trained using earlier versions.  
@@ -144,7 +144,7 @@ All arguments other than those described above are allowed.
 |[Error 0004](errors/error-0004.md)|Exception occurs if parameter is less than or equal to specific value.|  
 |[Error 0017](errors/error-0017.md)|Exception occurs if one or more specified columns have type unsupported by current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
