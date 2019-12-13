@@ -32,7 +32,7 @@ For more information about the anomaly detection algorithms provided in Azure Ma
 
 ## How to configure Train Anomaly Detection Model 
 
-1.  Add the **Train Anomaly Detection Model** module to your experiment in Studio.  You can find the module under **Machine Learning**, in the **Train** category.
+1.  Add the **Train Anomaly Detection Model** module to your experiment in Studio (classic).  You can find the module under **Machine Learning**, in the **Train** category.
 
 2. Connect one of the modules designed for anomaly detection, such as [PCA-Based Anomaly Detection](pca-based-anomaly-detection.md) or [One-Class Support Vector Machine](one-class-support-vector-machine.md).  
   
@@ -81,7 +81,7 @@ For an example of how anomaly detection is implemented in Azure Machine Learning
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
