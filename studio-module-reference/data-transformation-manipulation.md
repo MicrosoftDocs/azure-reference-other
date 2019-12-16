@@ -19,8 +19,6 @@ This article describes the modules in Azure Machine Learning Studio (classic) th
 
 Machine Learning Studio (classic) supports tasks that are specific to machine learning, such as normalization or feature selection. The modules in this category are intended for more general tasks.
 
-> [!TIP]
-> You can use Azure Machine Learning Workbench to perform more sophisticated data cleanup and preparations tasks by using "learn by example" functions. For examples, see Microsoft Machine Learning team blog post [Data transformations “by example” in Machine Learning Workbench](https://blogs.technet.microsoft.com/machinelearning/2017/09/25/by-example-transformations-in-the-azure-machine-learning-workbench/).
    
 ## Data manipulation tasks
  
