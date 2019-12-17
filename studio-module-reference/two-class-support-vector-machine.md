@@ -38,7 +38,7 @@ For prediction, the SVM algorithm assigns new examples into one category or the 
 
 For this model type, it is recommended that you normalize the dataset before using it to train the classifier.
   
-1.  Add the **Two-Class Support Vector Machine** module to your experiment in Studio.  
+1.  Add the **Two-Class Support Vector Machine** module to your experiment in Studio (classic).  
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   

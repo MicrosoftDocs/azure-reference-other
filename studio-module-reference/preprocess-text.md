@@ -40,7 +40,7 @@ The module currently supports  six languages: English, Spanish, French, Dutch, G
 
 ## How to configure Text Preprocessing  
 
-1.  Add the **Preprocess Text** module to your experiment in Studio. You can find this module under **Text Analytics**.
+1.  Add the **Preprocess Text** module to your experiment in Studio (classic). You can find this module under **Text Analytics**.
 
 2. Connect a dataset that has at least one column containing text.
 
@@ -152,7 +152,7 @@ The natural language processing libraries included in Azure Machine Learning Stu
 
 - **Sentence separation**: In free text used for sentiment analysis and other text analytics, sentences are frequently run-on or punctuation might be missing. Input texts might constitute an arbitrarily long chunk of text, ranging from a tweet or fragment to a complete paragraph, or even document.
 
-    The natural language tools used by Studio perform sentence separation as part of the underlying lexical analysis. However, sentences are not separated in the output. Optionally, you can specify that a sentence boundary be marked to aid in other text processing and analysis.
+    The natural language tools used by Studio (classic) perform sentence separation as part of the underlying lexical analysis. However, sentences are not separated in the output. Optionally, you can specify that a sentence boundary be marked to aid in other text processing and analysis.
 
 - **Tokenization**: The rules that determine the boundaries of words are language-dependent and can be complex even in languages that use spaces between words.
 
@@ -296,7 +296,7 @@ If you have a column that contains the language identifier, or if you have gener
 |[Error 0048](errors/error-0048.md)|An exception occurs when it is not possible to open a file.|  
 |[Error 0049](errors/error-0049.md)|An exception occurs when it is not possible to parse a file.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

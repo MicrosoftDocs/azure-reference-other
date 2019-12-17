@@ -37,7 +37,7 @@ To train this model, you must provide a dataset that contains a label or class c
 
 For example, the label column might be [Voted] with possible values of "Yes" or "No". Or, it might be [Credit Risk], with possible values of "High" or "Low". 
   
-1.  Add the **Two-Class Logistic Regression** module to your experiment in Studio.  
+1.  Add the **Two-Class Logistic Regression** module to your experiment in Studio (classic).  
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   

@@ -49,7 +49,7 @@ The image classification model in Azure Machine Learning has already been traine
 
     You add the images to your experiment by using the [Import Images](import-images.md) module. Read the help for [Import Images](import-images.md) closely to ensure that the images you use meet the requirements. You must also ensure that the images are accessible in the defined storage option.
 
-2. Add the **Pretrained Cascade Image Classification** module to your experiment in Studio. You can find this module in the **OpenCV Library** category.  
+2. Add the **Pretrained Cascade Image Classification** module to your experiment in Studio (classic). You can find this module in the **OpenCV Library** category.  
 
 3. Select one of the pre-trained classifiers from the list in **Pre-trained classifier**.
 
@@ -135,7 +135,7 @@ The facial recognition model provided by this module is based on the Viola-Jones
 |---------------|-----------------|  
 |[Error 0005](errors/error-0005.md)|Exception occurs if parameter is less than a specific value.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
 

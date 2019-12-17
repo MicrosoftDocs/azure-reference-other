@@ -17,7 +17,7 @@ This article lists the modules in Azure Machine Learning Studio (classic) that s
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-This article also describes some general requirements for using R in Machine Language Studio, and lists known issues and tips.
+This article also describes some general requirements for using R in Machine Language Studio (classic), and lists known issues and tips.
 
 ## List of modules
 
@@ -67,7 +67,7 @@ maml.mapOutputPort("data.set")
 ```
 
 > [!IMPORTANT]
-> The packages that are supported in Machine Language Studio change frequently. If you have any doubts about whether an R package is supported, use the R code sample provided to get the complete list of packages in the current environment.
+> The packages that are supported in Machine Language Studio (classic) change frequently. If you have any doubts about whether an R package is supported, use the R code sample provided to get the complete list of packages in the current environment.
 
 ## Extend experiments by using the R language
 
@@ -85,7 +85,7 @@ The following example demonstrates the overall process for how you can install n
 
 ### Split columns by using R
 
-Sometimes the data requires extensive manipulation to extract features. Suppose you have a text file that contains an ID followed by values and notes, all separated by spaces. Or suppose that your text file contains characters that are not supported by Machine Language Studio.
+Sometimes the data requires extensive manipulation to extract features. Suppose you have a text file that contains an ID followed by values and notes, all separated by spaces. Or suppose that your text file contains characters that are not supported by Machine Language Studio (classic).
 
 There are several R packages that provide specialized functions for such tasks. The [splitstackshape library](https://cran.r-project.org/web/packages/splitstackshape/index.html) package contains several useful functions for splitting multiple columns, even if each column has a different delimiter.
 

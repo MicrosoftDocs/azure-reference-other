@@ -135,7 +135,7 @@ The input dataset might have missing values in non-key columns and key columns. 
 |[Error 0020](errors/error-0020.md)|An exception occurs if the number of columns in some of the datasets passed to the module is too small.|  
 |[Error 0017](errors/error-0017.md)|An exception occurs if one or more specified columns have a type that is unsupported by the current module.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 

@@ -52,7 +52,7 @@ Generally, learning the optimal hyperparameters for a given machine learning mod
 
 This section describes how to perform a basic parameter sweep, which trains a model by using the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module.
   
-1.  Add the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to your experiment in Studio.
+1.  Add the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to your experiment in Studio (classic).
 
 2.  Connect an untrained model (a model in the [iLearner](ilearner-interface.md) format) to the leftmost input. 
 
