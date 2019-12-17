@@ -31,7 +31,7 @@ After you define the model parameters, train it by providing the model and a tag
 
 ## How to configure Two-Class Locally Deep Support Vector Machine
   
-1.  Add the **Two-Class Locally-Deep Support Vector Machine** module to your experiment in Studio.  
+1.  Add the **Two-Class Locally-Deep Support Vector Machine** module to your experiment in Studio (classic).  
   
 2.  Specify how you want the model to be trained, by setting the **Create trainer mode** option.  
   

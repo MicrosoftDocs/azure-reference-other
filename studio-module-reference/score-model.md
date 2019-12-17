@@ -25,7 +25,7 @@ This article describes how to use the [Score Model](score-model.md) module in Az
 
 ## How to use Score Model
 
-1. Add the **Score Model** module to your experiment in Studio.
+1. Add the **Score Model** module to your experiment in Studio (classic).
 
 2. Attach a trained model and a dataset containing new input data. 
 
@@ -49,9 +49,9 @@ The score, or predicted value, can be in many different formats, depending on th
 
 ### Publish scores as a web service
 
-A common use of scoring is to return the output as part of a predictive web service. For more information, see this tutorial on how to create a web service based on an experiment in Azure ML Studio:
+A common use of scoring is to return the output as part of a predictive web service. For more information, see this tutorial on how to create a web service based on an experiment in Azure ML Studio (classic):
 
-+ [Publish a web service from Azure ML Studio](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-5-publish-web-service/)
++ [Publish a web service from Azure ML Studio (classic)](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-5-publish-web-service/)
 
 
 ## Examples

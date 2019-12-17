@@ -29,7 +29,7 @@ The module takes an untrained clustering model that you have already configured 
   
 ## How to use Train Clustering Model  
   
-1.  Add the **Train Clustering Model** module to your experiment in Studio. You can find the module under [Machine Learning Modules](machine-learning-modules.md), in the [Train](machine-learning-train.md) category.  
+1.  Add the **Train Clustering Model** module to your experiment in Studio (classic). You can find the module under [Machine Learning Modules](machine-learning-modules.md), in the [Train](machine-learning-train.md) category.  
   
 2. Add the [K-Means Clustering](k-means-clustering.md) module, or another custom module that creates a compatible clustering model, and set the parameters of the clustering model.  
     
@@ -96,7 +96,7 @@ For an example of how clustering is used in machine learning, see the [Azure AI 
 |---------------|-----------------|  
 |[Error 0003](errors/error-0003.md)|Exception occurs if one or more of inputs are null or empty.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
 

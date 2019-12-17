@@ -51,7 +51,7 @@ This module supports multiple methods for dividing your data into partitions or 
 
 Use this mode to get only the first *n* rows. This option is useful if you want to test an experiment on a small number of rows, and don't need the data to be balanced or sampled in any way.
 
-1. Add the **Partition and Sample** module to your experiment in Studio, and connect the dataset.  
+1. Add the **Partition and Sample** module to your experiment in Studio (classic), and connect the dataset.  
 
 2. **Partition or sample mode**: Set this option to **Head**.
 
@@ -67,7 +67,7 @@ The module outputs a single dataset containing only the specified number of rows
 
 This option supports simple random sampling or stratified random sampling. This is useful if you want to create a smaller representative sample dataset for testing.
 
-1. Add the **Partition and Sample** module to your experiment in Studio, and connect the dataset.
+1. Add the **Partition and Sample** module to your experiment in Studio (classic), and connect the dataset.
 
 2. **Partition or sample mode**: Set this to  **Sampling**.
 
@@ -103,7 +103,7 @@ This option supports simple random sampling or stratified random sampling. This 
 
 Use this option when you want to divide the dataset into subsets of the data. This option is also useful when you want to create a custom number of folds for cross-validation, or to split rows into several groups.
 
-1. Add the **Partition and Sample** module to your experiment in Studio, and connect the dataset.
+1. Add the **Partition and Sample** module to your experiment in Studio (classic), and connect the dataset.
 
 2. For **Partition or sample mode**, select **Assign to Folds**.
 
@@ -143,7 +143,7 @@ Use this option when you want to divide the dataset into subsets of the data. Th
 
 This option is used when you have divided a dataset into multiple partitions and now want to load each partition in turn for further analysis or processing.
 
-1. Add the **Partition and Sample** module to the experiment in Studio.
+1. Add the **Partition and Sample** module to the experiment in Studio (classic).
 
 2. Connect it to the output of a previous instance of **Partition and Sample**. That instance must have used the **Assign to Folds** option to generate some number of partitions.
 

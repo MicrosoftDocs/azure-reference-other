@@ -148,7 +148,7 @@ For more information about how to work with zipped R packages, see [Execute R Sc
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
 |Compression file format|Zip<br /><br /> Gzip|compression rule|Zip|Compression algorithm used to compress or expand the file.|  
-|Dataset to Unpack|Any|String|none|Name of  dataset to register with Azure ML Studio. If the name of a dataset is not specified, the name is obtained from the file name in the zipped file.|  
+|Dataset to Unpack|Any|String|none|Name of  dataset to register with Azure ML Studio (classic). If the name of a dataset is not specified, the name is obtained from the file name in the zipped file.|  
 |Dataset file format|CSV<br /><br /> TSV<br /><br /> ARFF<br /><br /> SVMLIGHT|File format|CSV|File format of the dataset in the zipped file|  
 |File has header row|TRUE/FALSE|Boolean|False|Set to **True** only if the CSV/TSV file has a header row| 
 ##  Expected inputs

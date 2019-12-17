@@ -11,12 +11,14 @@ ms.topic: reference
 ms.assetid: 7fca3d2c-2475-49e8-8c16-e268b65def22
 caps.latest.revision: 11
 ms.workload: data-services
-ms.date: 02/14/2019
+ms.date: 12/13/2019
 ---
 # GetMetadataPropertyValue (Azure Stream Analytics)
-  Queries input data for specific properties. There are three types of properties: Adapter, User, and Unique EventId.
+
+Queries input data for specific properties. There are three types of properties: Adapter, User, and Unique EventId.
   
 ## Adapter metadata properties
+
 Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record. This function cannot be tested on the Azure portal using sample data. You can use Visual Studio tools for Stream Analytics to test this function in your query using [live data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-live-data-local-testing).
 
 ### Examples
@@ -44,6 +46,7 @@ For Blob input:
 `SELECT GetMetadataPropertyValue(blobInput, 'Blob') AS blobRecord FROM blobInput`
 
 ## User properties
+
 A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages is made accessible using GetMetadataPropertyValue, as shown below.
 
 ### Examples
@@ -70,6 +73,7 @@ For Blob input:
 
 
 ## Unique EventId property
+
 The EventId property creates a unique ID (Guid) for an input event, which can be useful for primary key purposes. EventId is consistent (not random); if you go back in time and re-read the same input event, Stream Analytics will produce the same ID.
 
 ### Example
@@ -77,3 +81,11 @@ The EventId property creates a unique ID (Guid) for an input event, which can be
 ```SQL
 SELECT GetMetadataPropertyValue(ehInput, 'EventId') AS eventPrimaryKey FROM ehInput
 ```
+
+## Limitations and Restrictions
+
+GetMetadataPropertyValue has the following limitations of usage:
+
+* Using `SELECT *` in your query causes duplicate columns. To prevent duplicate columns, list columns individually in your SELECT statement.
+
+* The alias you give your Metadata Property Value will be lowercase regardless of the casing used in your query. For example, `SELECT GetMetadataPropertyValue(ehInput, 'EventId') AS eventPrimaryKey` outputs as `eventprimarykey`. To preserve casing, use compatibility level 1.2.

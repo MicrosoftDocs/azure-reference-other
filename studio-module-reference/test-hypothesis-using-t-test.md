@@ -74,7 +74,7 @@ If you need to compare columns from different datasets, you can isolate each col
 
 1. Add the [Test Hypothesis Using t-Test](test-hypothesis-using-t-test.md)  module to your experiment.
 
-    You can find this module in the [Statistical Functions](statistical-functions.md) category in Studio.
+    You can find this module in the [Statistical Functions](statistical-functions.md) category in Studio (classic).
 
 2. Add the dataset that contains the column or columns that you want to analyze.
 
@@ -263,7 +263,7 @@ The probability of the null hypothesis, designated as P, is calculated as follow
 |[Error 0032](errors/error-0032.md)|Exception occurs if the argument is not a number.|  
 |[Error 0033](errors/error-0033.md)|Exception occurs if the argument is infinity.|  
 
-For a list of errors specific to Studio modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
+For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
 For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
 
