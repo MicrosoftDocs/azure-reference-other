@@ -67,7 +67,7 @@ The sample dataset above is an array of two records. When used as [local input](
 
 At the individual record level, we have 2 properties with different [types](https://docs.microsoft.com/en-us/stream-analytics-query/data-types-azure-stream-analytics). `DeviceId` is of type **nvarchar(max)**, `SensorReadings` is of type **record** (object). [GetType](https://docs.microsoft.com/en-us/stream-analytics-query/gettype-azure-stream-analytics) can be used to determine the type when necessary.
 
-`SensorReadings` has 3 properties, 2 of type **bigint**: `Temperature` and `Humidity`, and finally `CustomSensor` of type **array** (of **bigint**). If this array was in turn more complex (itself containing records or arrays), a combination of [GetArrayElements](https://docs.microsoft.com/en-us/stream-analytics-query/getarrayelements-azure-stream-analytics]) (plural) and [GetRecordPropertyValue](https://docs.microsoft.com/en-us/stream-analytics-query/getrecordpropertyvalue-azure-stream-analytics) could be leveraged.
+`SensorReadings` has three properties: two are of type **bigint**: `Temperature` and `Humidity`, and `CustomSensor` is of type **array** (of **bigint**). If this array was more complex (itself containing records or arrays), a combination of [GetArrayElements](https://docs.microsoft.com/en-us/stream-analytics-query/getarrayelements-azure-stream-analytics]) (plural) and [GetRecordPropertyValue](https://docs.microsoft.com/en-us/stream-analytics-query/getrecordpropertyvalue-azure-stream-analytics) could be used.
 
 #### Queries
 
