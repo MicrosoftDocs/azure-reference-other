@@ -82,7 +82,7 @@ SELECT
 FROM input i
 ```
 
-Will return
+Returns the following output:
 
 |DeviceId|Temperature|Humidity|CustomSensorArray|FirstCustomSensorValue|SecondCustomSensorValue|
 |---|---|---|---|---|---|
