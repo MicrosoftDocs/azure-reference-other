@@ -99,7 +99,7 @@ FROM input AS i
 CROSS APPLY GetArrayElements(i.SensorReadings.CustomSensor) AS CustomerSensorValue
 ``` 
 
-Will return
+Returns the following output:
 
 |DeviceId|CustomerSensorValue|
 |---|---|
