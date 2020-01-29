@@ -89,7 +89,7 @@ Will return
 |631|81|69|0,1,0|0|1|
 |123|80|70|1,1,0|1|1|
 
-In order to unfold the array, [CROSS APPLY](apply-azure-stream-analytics.md) can be leveraged:
+Use [CROSS APPLY](apply-azure-stream-analytics.md) to unfold the array:
 
 ```SQL  
 SELECT   
