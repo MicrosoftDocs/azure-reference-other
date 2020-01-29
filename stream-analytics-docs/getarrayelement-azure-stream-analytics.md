@@ -110,7 +110,7 @@ Will return
 |123|1|
 |123|1|
 
-From there it is straightforward to aggregate the content if necessary:
+From there, you can easily aggregate the content if necessary:
 
 ```SQL
 SELECT   
