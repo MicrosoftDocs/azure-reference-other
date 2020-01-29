@@ -65,7 +65,7 @@ GetArrayElement ( array_expression, bigint_expression )
 
 The sample dataset above is an array of two records. When used as [local input](https://docs.microsoft.com/en-us/azure/stream-analytics/visual-studio-code-local-run) in a json file, the top level array is interpreted for the generation of rows/events by Azure Stream Analytics. There is no need to take it into consideration in the query syntax.
 
-At the individual record level, we have 2 properties with different [types](https://docs.microsoft.com/en-us/stream-analytics-query/data-types-azure-stream-analytics). `DeviceId` is of type **nvarchar(max)**, `SensorReadings` is of type **record** (object). [GetType](https://docs.microsoft.com/en-us/stream-analytics-query/gettype-azure-stream-analytics) can be used to determine the type when necessary.
+At the individual record level, there are two properties with different [types](https://docs.microsoft.com/en-us/stream-analytics-query/data-types-azure-stream-analytics). `DeviceId` is of type **nvarchar(max)**, `SensorReadings` is of type **record** (object). [GetType](https://docs.microsoft.com/en-us/stream-analytics-query/gettype-azure-stream-analytics) can be used to determine the type when necessary.
 
 `SensorReadings` has three properties: two are of type **bigint**: `Temperature` and `Humidity`, and `CustomSensor` is of type **array** (of **bigint**). If this array was more complex (itself containing records or arrays), a combination of [GetArrayElements](https://docs.microsoft.com/en-us/stream-analytics-query/getarrayelements-azure-stream-analytics]) (plural) and [GetRecordPropertyValue](https://docs.microsoft.com/en-us/stream-analytics-query/getrecordpropertyvalue-azure-stream-analytics) could be used.
 
