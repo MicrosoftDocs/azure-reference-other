@@ -71,6 +71,8 @@ At the individual record level, there are two properties with different [types](
 
 #### Queries
 
+This query returns fields at the root of the record (`DeviceId`), nested fields using the [dot notation](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json#access-nested-fields-in-known-schema) (`Temperature`,`Humidity`) including an **array** (`CustomSensor`), and finally the first and second elements of that array via **GetArrayElement** (index 0 and 1):
+
 ```SQL  
 SELECT   
 	i.DeviceId,
@@ -78,7 +80,7 @@ SELECT
 	i.SensorReadings.Humidity,
 	i.SensorReadings.CustomSensor as CustomSensorArray,
 	GetArrayElement(i.SensorReadings.CustomSensor,0) AS FirstCustomSensorValue,
-  GetArrayElement(i.SensorReadings.CustomSensor,1) AS SecondCustomSensorValue
+	GetArrayElement(i.SensorReadings.CustomSensor,1) AS SecondCustomSensorValue
 FROM input i
 ```
 
