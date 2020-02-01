@@ -9,11 +9,11 @@ ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 
 ms.workload: data-services
-ms.date: 02/12/2018
+ms.date: 02/1/2020
 ms.author: mamccrea
 ---
 
-# AnomalyDetection_ChangePoint (Azure Stream Analytics) (Preview)
+# AnomalyDetection_ChangePoint (Azure Stream Analytics)
 
 Detects persistent anomalies in a time series event stream. The underlying machine learning model uses the Exchangeability Martingales algorithm.
 
