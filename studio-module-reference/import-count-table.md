@@ -80,7 +80,7 @@ For all new experiments, we recommend that you use the following modules:
 
 Explore examples of count-based featurization using these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):
 
-- [Flight delay prediction](https://go.microsoft.com/fwlink/?LinkId=525277): Shows how count-based featurization can be useful in a very large dataset.
+- [Flight delay prediction](https://gallery.azure.ai/Experiment/Binary-Classification-Flight-delay-prediction-3): Shows how count-based featurization can be useful in a very large dataset.
 
 - [Learning with Counts: Multiclass classification with NYC taxi data](https://gallery.azure.ai/Experiment/Learning-with-Counts-Multiclass-classification-with-NYC-taxi-data-2): demonstrates the use of count-based features in a multiclass prediction task.
 
