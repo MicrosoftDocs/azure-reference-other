@@ -9,10 +9,10 @@ ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.workload: data-services
-ms.date: 01/13/2020
+ms.date: 02/05/2020
 ---
 
-# MATCH_RECOGNIZE (Stream Analytics - Preview)
+# MATCH_RECOGNIZE (Stream Analytics)
 
 The MATCH_RECOGNIZE clause is used to search for a set of events over a data stream. This clause enables you to define event patterns using regular expressions and aggregate methods to verify and extract values from the match.
 

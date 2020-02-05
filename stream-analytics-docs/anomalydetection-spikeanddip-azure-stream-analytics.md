@@ -13,7 +13,7 @@ ms.date: 02/12/2018
 ms.author: mamccrea
 ---
 
-# AnomalyDetection_SpikeAndDip (Azure Stream Analytics) (Preview)
+# AnomalyDetection_SpikeAndDip (Azure Stream Analytics)
 
 Detects temporary anomalies in a time series event. 
 
