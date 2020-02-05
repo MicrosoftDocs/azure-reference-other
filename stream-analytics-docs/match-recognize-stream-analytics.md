@@ -9,7 +9,7 @@ ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.workload: data-services
-ms.date: 2/5/2020
+ms.date: 02/05/2020
 ---
 
 # MATCH_RECOGNIZE (Stream Analytics)
