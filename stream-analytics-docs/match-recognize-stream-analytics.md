@@ -9,7 +9,7 @@ ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.workload: data-services
-ms.date: 2/1/2020
+ms.date: 2/5/2020
 ---
 
 # MATCH_RECOGNIZE (Stream Analytics)
@@ -65,7 +65,11 @@ MATCH_RECOGNIZE (
 {
 	[ pattern_name | ( <pattern_group> ) ] [ <pattern_modifier> ]?
 }
-<pattern_modifier ::=
+<pattern_name> :: =
+{
+	name | .
+}
+<pattern_modifier> ::=
 {
 	* | + | ?
 }
@@ -182,23 +186,7 @@ MATCH_RECOGNIZE (
 
 This query matches **Normal** to any event that is filling the tank and in case the pressure is over double of a **Normal** filling within 3 minutes, than an event is fired with the maximum pressure reading for the **Dangerous** pattern.
 
-## Preview Limitations
-
-* The SELECT clause must select * and cannot specify which fields of match alias to use.
-
-   **Allowed**
-
-   ```SQL
-   SELECT * FROM input
-       MATCH_RECOGNIZE (…) AS T
-   ```
-
-   **Not allowed** 
-    
-   ``` SQL
-   SELECT T.p1, T.p2 + T.p3 FROM input
-       MATCH_RECOGNIZE (..) AS T
-   ```
+## Limitations
 
 * Only field values can be used for aggregates. No functions can be called inside an aggregate call.
 
@@ -235,8 +223,6 @@ This query matches **Normal** to any event that is filling the tank and in case 
 	    A AS Max(A.value1 + A.value2) > 5,
 	...
 	```
-
-* TIMESTAMP BY cannot have an OVER clause. Substreams are not supported.
 
 ## See also
 
