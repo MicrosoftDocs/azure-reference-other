@@ -9,7 +9,7 @@ ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 
 ms.workload: data-services
-ms.date: 02/1/2020
+ms.date: 02/05/2020
 ms.author: mamccrea
 ---
 
