@@ -59,9 +59,18 @@ ms.date: 06/21/2019
 ```SQL  
 SELECT System.Timestamp() AS WindowEnd, TollId, COUNT(*)  
 FROM Input TIMESTAMP BY EntryTime  
-GROUP BY TollId, TumblingWindow(Duration(hour, 1), Offset(millisecond, -1))  
-  
-```  
+GROUP BY TollId, TumblingWindow(Duration(hour, 1), Offset(millisecond, -1))
+```
+
+```SQL
+SELECT 'reset' AS command
+INTO
+    alert
+FROM
+    temperature TIMESTAMP BY timeCreated
+GROUP BY TumblingWindow(second,15)
+HAVING Avg(machine.temperature) > 25
+```
   
 ## See Also  
  [Hopping Window](hopping-window-azure-stream-analytics.md)   
