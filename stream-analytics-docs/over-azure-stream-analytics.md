@@ -1,17 +1,13 @@
 ---
-title: "OVER (Azure Stream Analytics) | Microsoft Docs"
+title: "OVER (Azure Stream Analytics)"
 description: "Defines the grouping of rows before an associated aggregate or analytic function is applied."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: hydersm
-
+author: mamccrea
+ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-caps.latest.revision: 11
-ms.workload: data-services
 ms.date: 07/30/2019
-ms.author: hysm
 ---
 # OVER (Azure Stream Analytics)
 For each row, the OVER clause determines the grouping of rows before an associated aggregate or analytic function is applied. 
@@ -68,9 +64,6 @@ FROM input
 WHERE MAX(healthy) OVER (PARTITION BY id LIMIT DURATION (hour, 1)) = 0
 ```
 
-
 ## See Also  
 [Analytic Functions](analytic-functions-azure-stream-analytics.md)   
 [Aggregate Functions](aggregate-functions-azure-stream-analytics.md)  
-  
-  
