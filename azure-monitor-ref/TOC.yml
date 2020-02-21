@@ -2,12 +2,6 @@
   href: index.md
 - name: Logs
   items:
-  - name: AzureDiagnostics
-    items:
-    - name: AzureDiagnostics table
-      href: tables/azurediagnostics.md
-    - name: DOCUMENTDB resource provider
-      href: tables/azurediagnostics-documentdb.md
   - name: ADAssessmentRecommendation
     href: tables/adassessmentrecommendation.md
   - name: ADReplicationResult
