@@ -1,13 +1,13 @@
 ---
-title: "Test"
-description: "This is a placeholder index file."
+title: Azure Monitor data reference
+description: Reference details about data collected by Azure Monitor from different sources.
 author: rboucher
 ms.author: robb
 ms.service: azure-monitor
 ms.topic: reference
 ms.date: 02/06/2020
 ---
-# Azure Monitor reference
+# Azure Monitor data reference
 Welcome to the reference documentation for [Azure Monitor](/azure/azure-monitor/). This documentation includes details about data collected by Azure Monitor from different sources.
 
 > [!NOTE]
@@ -16,4 +16,3 @@ Welcome to the reference documentation for [Azure Monitor](/azure/azure-monitor/
 The following sections are currently included in this documentation.
 
 - **Logs** - Tables stored in Azure Monitor Logs.
-
