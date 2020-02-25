@@ -1,2 +1,126 @@
-- name: Index
+- name: Azure Monitor Reference
   href: index.md
+- name: Logs
+  items:
+  - name: ADAssessmentRecommendation
+    href: tables/adassessmentrecommendation.md
+  - name: ADReplicationResult
+    href: tables/adreplicationresult.md
+  - name: AegDeliveryFailureLogs
+    href: tables/aegdeliveryfailurelogs.md
+  - name: AegPublishFailureLogs
+    href: tables/aegpublishfailurelogs.md
+  - name: AppPlatformLogsforSpring
+    href: tables/appplatformlogsforspring.md
+  - name: AppPlatformSystemLogs
+    href: tables/appplatformsystemlogs.md
+  - name: AppServiceAppLogs
+    href: tables/appserviceapplogs.md
+  - name: AppServiceAuditLogs
+    href: tables/appserviceauditlogs.md
+  - name: AppServiceConsoleLogs
+    href: tables/appserviceconsolelogs.md
+  - name: AppServiceFileAuditLogs
+    href: tables/appservicefileauditlogs.md
+  - name: AppServiceHTTPLogs
+    href: tables/appservicehttplogs.md
+  - name: AuditLogs
+    href: tables/auditlogs.md
+  - name: availabilityResults
+    href: tables/availabilityresults.md
+  - name: AzureActivity
+    href: tables/azureactivity.md
+  - name: AzureMetrics
+    href: tables/azuremetrics.md
+  - name: browserTimings
+    href: tables/browsertimings.md
+  - name: ComputerGroup
+    href: tables/computergroup.md
+  - name: ConfigurationChange
+    href: tables/configurationchange.md
+  - name: ConfigurationData
+    href: tables/configurationdata.md
+  - name: ContainerLog
+    href: tables/containerlog.md
+  - name: customEvents
+    href: tables/customevents.md
+  - name: customMetrics
+    href: tables/custommetrics.md
+  - name: DHCPActivity
+    href: tables/dhcpactivity.md
+  - name: Event
+    href: tables/event.md
+  - name: ExchangeAssessmentRecommendation
+    href: tables/exchangeassessmentrecommendation.md
+  - name: ExchangeOnlineAssessmentRecommendation
+    href: tables/exchangeonlineassessmentrecommendation.md
+  - name: FailedIngestion
+    href: tables/failedingestion.md
+  - name: FunctionAppLogs
+    href: tables/functionapplogs.md
+  - name: Heartbeat
+    href: tables/heartbeat.md
+  - name: HuntingBookmark
+    href: tables/huntingbookmark.md
+  - name: IoTHubDistributedTracing
+    href: tables/iothubdistributedtracing.md
+  - name: MicrosoftAzureBastionAuditLogs
+    href: tables/microsoftazurebastionauditlogs.md
+  - name: MicrosoftDataShareReceivedSnapshotLog
+    href: tables/microsoftdatasharereceivedsnapshotlog.md
+  - name: MicrosoftDataShareSentSnapshotLog
+    href: tables/microsoftdatasharesentsnapshotlog.md
+  - name: MicrosoftDataShareShareLog
+    href: tables/microsoftdatasharesharelog.md
+  - name: MicrosoftDynamicsTelemetryPerformanceLogs
+    href: tables/microsoftdynamicstelemetryperformancelogs.md
+  - name: MicrosoftDynamicsTelemetrySystemMetricsLogs
+    href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
+  - name: MicrosoftHealthcareApisAuditLogs
+    href: tables/microsofthealthcareapisauditlogs.md
+  - name: OfficeActivity
+    href: tables/officeactivity.md
+  - name: Operation
+    href: tables/operation.md
+  - name: pageViews
+    href: tables/pageviews.md
+  - name: Perf
+    href: tables/perf.md
+  - name: performanceCounters
+    href: tables/performancecounters.md
+  - name: SignalRServiceDiagnosticLogs
+    href: tables/signalrservicediagnosticlogs.md
+  - name: SigninLogs
+    href: tables/signinlogs.md
+  - name: StorageBlobLogs
+    href: tables/storagebloblogs.md
+  - name: StorageFileLogs
+    href: tables/storagefilelogs.md
+  - name: StorageQueueLogs
+    href: tables/storagequeuelogs.md
+  - name: StorageTableLogs
+    href: tables/storagetablelogs.md
+  - name: SucceededIngestion
+    href: tables/succeededingestion.md
+  - name: Syslog
+    href: tables/syslog.md
+  - name: systemEvents
+    href: tables/systemevents.md
+  - name: ThreatIntelligenceIndicator
+    href: tables/threatintelligenceindicator.md
+  - name: traces
+    href: tables/traces.md
+  - name: Usage
+    href: tables/usage.md
+  - name: VMBoundPort
+    href: tables/vmboundport.md
+  - name: VMComputer
+    href: tables/vmcomputer.md
+  - name: VMConnection
+    href: tables/vmconnection.md
+  - name: VMProcess
+    href: tables/vmprocess.md
+  - name: W3CIISLog
+    href: tables/w3ciislog.md
+  - name: WireData
+    href: tables/wiredata.md
