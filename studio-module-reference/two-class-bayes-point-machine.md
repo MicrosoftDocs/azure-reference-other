@@ -2,7 +2,7 @@
 title: "Two-Class Bayes Point Machine | Microsoft Docs"
 titleSuffix: ML Studio (classic) - Azure
 description: Learn how to use the Two-Class Bayes Point Machine module to create an untrained binary classification model.
-ms.date: 05/06/2019
+ms.date: 03/05/2020
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
