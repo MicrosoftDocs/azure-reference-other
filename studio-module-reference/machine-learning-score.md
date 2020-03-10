@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - Score | Microsoft Docs"
 description: This section lists the modules provided in Azure Machine Learning Studio (classic) for scoring.
-ms.date: 05/06/2019
+ms.date: 03/05/2020
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -22,7 +22,7 @@ Scoring is also called prediction, and is the process of generating values based
 
 The typical workflow for machine learning includes these phases:
 
-- Choosing a suitable alorithm, and setting initial options.
+- Choosing a suitable algorithm, and setting initial options.
 - Training the model on compatible data.
 - Creating predictions using new data, based on the patterns in the model.
 - Evaluating the model to determine if the predictions are accurate, how much error there is, and if there is any overfitting.
