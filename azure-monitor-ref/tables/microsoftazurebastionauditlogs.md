@@ -6,12 +6,25 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # MicrosoftAzureBastionAuditLogs
 
  Microsoft Azure Bastion Audit Logs
+
+## Categories
+
+- Azure Resources
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Bastion
+
+
+
 
 ## Columns
 
