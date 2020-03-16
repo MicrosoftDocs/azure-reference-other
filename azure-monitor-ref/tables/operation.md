@@ -6,12 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # Operation
 
  Operational log of important activities affecting workspace. Includes both user-initiated activities and notifications from Log Analytics workspace services such as data-capping.
+
+## Categories
+
+- Azure Monitor
+## Solutions
+
+- LogManagement
+
+
+
 
 ## Columns
 
