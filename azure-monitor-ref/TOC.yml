@@ -16,3 +16,5 @@
     href: tables/adfssispackageexecutioncomponentphases.md
   - name: ADFSSISPackageExecutionDataStatistics
     href: tables/adfssispackageexecutiondatastatistics.md
+  - name: ADReplicationResult
+    href: tables/adreplicationresult.md
