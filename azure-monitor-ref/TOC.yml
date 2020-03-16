@@ -108,3 +108,5 @@
     href: tables/operation.md
   - name: Perf
     href: tables/perf.md
+  - name: SignalRServiceDiagnosticLogs
+    href: tables/signalrservicediagnosticlogs.md
