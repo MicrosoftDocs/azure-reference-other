@@ -4,3 +4,5 @@
   items:
   - name: ADAssessmentRecommendation
     href: tables/adassessmentrecommendation.md
+  - name: ADFSSISIntegrationRuntimeLogs
+    href: tables/adfssisintegrationruntimelogs.md
