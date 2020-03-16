@@ -62,3 +62,5 @@
     href: tables/azureactivity.md
   - name: AzureMetrics
     href: tables/azuremetrics.md
+  - name: ComputerGroup
+    href: tables/computergroup.md
