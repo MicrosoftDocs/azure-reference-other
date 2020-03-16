@@ -70,3 +70,5 @@
     href: tables/configurationdata.md
   - name: ContainerLog
     href: tables/containerlog.md
+  - name: DHCPActivity
+    href: tables/dhcpactivity.md
