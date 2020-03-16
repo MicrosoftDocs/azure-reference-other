@@ -18,3 +18,5 @@
     href: tables/adfssispackageexecutiondatastatistics.md
   - name: ADReplicationResult
     href: tables/adreplicationresult.md
+  - name: AegDeliveryFailureLogs
+    href: tables/aegdeliveryfailurelogs.md
