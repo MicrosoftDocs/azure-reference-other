@@ -60,3 +60,5 @@
     href: tables/auditlogs.md
   - name: AzureActivity
     href: tables/azureactivity.md
+  - name: AzureMetrics
+    href: tables/azuremetrics.md
