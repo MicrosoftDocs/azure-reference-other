@@ -50,3 +50,5 @@
     href: tables/appserviceconsolelogs.md
   - name: AppServiceFileAuditLogs
     href: tables/appservicefileauditlogs.md
+  - name: AppServiceHTTPLogs
+    href: tables/appservicehttplogs.md
