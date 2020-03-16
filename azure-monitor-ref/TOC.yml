@@ -82,3 +82,5 @@
     href: tables/failedingestion.md
   - name: FunctionAppLogs
     href: tables/functionapplogs.md
+  - name: Heartbeat
+    href: tables/heartbeat.md
