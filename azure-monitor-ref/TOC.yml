@@ -128,3 +128,5 @@
     href: tables/threatintelligenceindicator.md
   - name: Usage
     href: tables/usage.md
+  - name: VMBoundPort
+    href: tables/vmboundport.md
