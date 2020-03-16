@@ -124,3 +124,5 @@
     href: tables/succeededingestion.md
   - name: Syslog
     href: tables/syslog.md
+  - name: ThreatIntelligenceIndicator
+    href: tables/threatintelligenceindicator.md
