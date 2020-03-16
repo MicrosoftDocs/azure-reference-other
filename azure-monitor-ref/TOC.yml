@@ -68,3 +68,5 @@
     href: tables/configurationchange.md
   - name: ConfigurationData
     href: tables/configurationdata.md
+  - name: ContainerLog
+    href: tables/containerlog.md
