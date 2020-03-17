@@ -92,7 +92,8 @@ This skip clause defines that once a pattern is matched starting at event **S**,
 MEASURES is used to define the projected values from the match using aggregate methods. For example, `LAST(A.id) AS aid` will output the last `id` value that was found over all events that matched pattern named `A` into field name `aid`.
 
 ### Classifier function
-Classifier function can be used in **MEASURES** to output the pattern names matched to the input events. The function will return a list of string, each one with the pattern name that matched an event.
+
+The classifier function can be used in MEASURES to output pattern names matched to input events. The function returns a list of strings, each with the pattern name that matched an event.
 
 ## PATTERN
 
