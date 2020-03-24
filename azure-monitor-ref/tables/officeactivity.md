@@ -6,12 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # OfficeActivity
 
  Audit logs for Office 365 tenants collected by Azure Sentinel. Currently only Exchange and SharePoint logs are supported.
+
+## Categories
+
+- Security
+## Solutions
+
+- Office 365 Analytics (Preview)
+- SecurityInsights
+
+
+
 
 ## Columns
 

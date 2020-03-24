@@ -6,12 +6,81 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # AzureMetrics
 
  Metric data emitted by Azure services that measure their health and performance.
+
+## Categories
+
+- Azure Resources
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Analysis Services
+- Power BI Dedicated
+- Data Share
+- SQL Managed instance
+- SQL server
+- SQL database
+- Azure Database for MySQL server
+- Azure Database for PostgreSQL server
+- Azure Database for PostgreSQL server
+- Azure Database for MariaDB server
+- Device Provisioning Services
+- Event Hub
+- Application Gateway
+- Firewall
+- ExpressRoute circuit
+- Front Door
+- Load balancer
+- Network interface
+- Network security group
+- Public IP addresse
+- Traffic Manager profile
+- Virtual network gateway
+- Virtual network
+- Search Services
+- Stream Analytics
+- Bastion
+- Data Lake Analytics
+- Azure API for FHIR
+- Data Lake Storage Gen1
+- Automation account
+- Batch account
+- Azure Spring Cloud
+- Media Services
+- Azure Cache for Redis
+- Cognitive Services
+- Key vault
+- App Service
+- Storage account
+- SignalR
+- Container registry
+- Azure Data Explorer cluster
+- Azure AD Domain Services
+- Azure Blockchain service
+- Event Grid domain
+- Virtual machine
+- Virtual machine scale set
+- Kubernetes Services
+- Azure Databricks Services
+- Azure Monitor autoscale settings
+- IoT Hub
+- Azure Cosmos DB account
+- Machine Learning
+- Service Fabric cluster
+- Logic App
+- API Management services
+- Data factory (V2)
+- Service Bus
+
+
+
 
 ## Columns
 

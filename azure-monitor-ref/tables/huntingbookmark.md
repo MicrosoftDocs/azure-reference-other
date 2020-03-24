@@ -6,12 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # HuntingBookmark
 
  Azure sentinel hunting bookmarks audit table
+
+## Categories
+
+- Security
+## Solutions
+
+- SecurityInsights
+
+
+
 
 ## Columns
 
@@ -19,7 +29,7 @@ ms.date: 2/20/2020
 |---|---|---|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log|
-|BookmarkId|string|Guid - the bookmark Resource Manager resource name|
+|BookmarkId|string|Guid - the bookmark ARM resource name|
 |BookmarkName|string|Bookmark name given by the user|
 |BookmarkType|string|Can be used to mark bookmark origin - currently not used|
 |CreatedBy|string|JSON object with the user who created the bookmark, including: ObjectID, email and name|
@@ -33,7 +43,7 @@ ms.date: 2/20/2020
 |QueryEndTime|datetime|Query time range end time|
 |Notes|string|Notes provided by user|
 |SoftDeleted|bool|Was the bookmark deleted by user|
-|Tags|string|Comma separated list of tags provided by user|
+|Tags|string|Comma seperated list of tags provided by user|
 |SourceSystem|string||
 |Type|string||
 |_ResourceId|string||

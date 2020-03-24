@@ -6,12 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # DHCPActivity
 
  Windows DHCP Server Activity
+
+## Categories
+
+- Security
+## Solutions
+
+- SecurityInsights
+
+
+
 
 ## Columns
 

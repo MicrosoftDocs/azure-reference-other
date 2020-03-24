@@ -6,12 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # MicrosoftHealthcareApisAuditLogs
 
  Azure API for FHIR audit logs
+
+## Categories
+
+- Azure Resources
+- Audit
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Azure API for FHIR
+
+
+
 
 ## Columns
 
