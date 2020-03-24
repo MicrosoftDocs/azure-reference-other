@@ -6,12 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # VMProcess
 
  Process data for servers collected by the Service Map and VM Insights solutions using the Dependency agent and Log analytics agent.
+
+## Categories
+
+- Virtual Machines
+## Solutions
+
+- Service Map
+- VMInsights
+## Resource types
+
+- Virtual machine
+- Virtual machine scale set
+
+
+
 
 ## Columns
 

@@ -6,12 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # ComputerGroup
 
  Computer groups that can be used to scope log queries to a set of computers. Includes the computers in each group.
+
+## Categories
+
+- Azure Monitor
+- Virtual Machines
+- IT & Management Tools
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Virtual machine
+
+
+
 
 ## Columns
 

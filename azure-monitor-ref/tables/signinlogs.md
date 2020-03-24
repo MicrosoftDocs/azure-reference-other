@@ -6,12 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # SigninLogs
 
  Sign-in logs for Azure Active Directory. Includes information about the usage of managed applications and user sign-in activities.
+
+## Categories
+
+- Azure Resources
+- Security
+## Solutions
+
+- LogManagement
+
+
+
 
 ## Columns
 

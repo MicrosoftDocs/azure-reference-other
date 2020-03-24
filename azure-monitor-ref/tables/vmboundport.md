@@ -6,12 +6,28 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # VMBoundPort
 
  Traffic for open server ports on the monitored machine.
+
+## Categories
+
+- Virtual Machines
+## Solutions
+
+- InfrastructureInsights
+- Service Map
+- VMInsights
+## Resource types
+
+- Virtual machine
+- Virtual machine scale set
+
+
+
 
 ## Columns
 

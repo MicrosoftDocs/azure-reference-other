@@ -6,12 +6,85 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # AzureActivity
 
  Entries from the Azure Activity log that provides insight into any subscription-level events that have occurred in Azure.
+
+## Categories
+
+- Azure Resources
+- Audit
+- Security
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Analysis Services
+- Data Lake Analytics
+- Power BI Dedicated
+- Data Share
+- SQL Managed instance
+- SQL server
+- SQL database
+- Azure Database for MySQL server
+- Azure Database for PostgreSQL server
+- Azure Database for PostgreSQL server
+- Azure Database for MariaDB server
+- Device Provisioning Services
+- Event Hub
+- Data Lake Storage Gen1
+- Application Gateway
+- ExpressRoute circuit
+- Front Door
+- Load balancer
+- Network interface
+- Network security group
+- Public IP addresse
+- Traffic Manager profile
+- Virtual network gateway
+- Virtual network
+- Search Services
+- Stream Analytics
+- Bastion
+- Firewall
+- Azure API for FHIR
+- Recovery Services vault
+- Automation account
+- Batch account
+- CDN profile
+- Azure Spring Cloud
+- Media Services
+- Azure Cache for Redis
+- Cognitive Services
+- Key vault
+- App Service
+- Storage account
+- SignalR
+- Container registry
+- Azure Data Explorer cluster
+- Data factory (V2)
+- Azure AD Domain Services
+- Event Grid domain
+- Virtual machine
+- Virtual machine scale set
+- Kubernetes Services
+- Azure Databricks Services
+- Azure Monitor autoscale settings
+- IoT Hub
+- Azure Cosmos DB account
+- Machine Learning
+- Service Fabric cluster
+- Logic App
+- API Management services
+- Azure Blockchain service
+- Service Bus
+
+
+
 
 ## Columns
 

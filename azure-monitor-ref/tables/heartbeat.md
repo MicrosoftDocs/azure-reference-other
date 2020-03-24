@@ -6,12 +6,29 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # Heartbeat
 
  Records logged by Log Analytics agents once per minute to report on agent health.
+
+## Categories
+
+- Virtual Machines
+- IT & Management Tools
+- Containers
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Virtual machine
+- Virtual machine scale set
+- Kubernetes Services
+
+
+
 
 ## Columns
 
