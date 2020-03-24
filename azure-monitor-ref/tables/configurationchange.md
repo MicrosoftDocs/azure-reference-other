@@ -6,12 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # ConfigurationChange
 
  View changes to in-guest configuration data such as Files Software Registry Keys Windows Services and Linux Daemons
+
+## Categories
+
+- IT & Management Tools
+## Solutions
+
+- Change Tracking
+## Resource types
+
+- Virtual machine
+- Virtual machine scale set
+
+
+
 
 ## Columns
 

@@ -6,12 +6,28 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # WireData
 
  Network data collected by the WireData solution using by the Dependency agent and Log analytics agent.
+
+## Categories
+
+- Virtual Machines
+- Security
+## Solutions
+
+- WireData
+- Wire Data 2.0
+## Resource types
+
+- Virtual machine
+- Virtual machine scale set
+
+
+
 
 ## Columns
 

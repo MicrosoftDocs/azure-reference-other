@@ -6,12 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # Syslog
 
  Syslog events on Linux computers using the Log Analytics agent.
+
+## Categories
+
+- Virtual Machines
+- Security
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Virtual machine
+- Virtual machine scale set
+
+
+
 
 ## Columns
 

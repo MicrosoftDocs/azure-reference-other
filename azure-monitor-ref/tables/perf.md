@@ -6,12 +6,28 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/20/2020
+ms.date: 3/16/2020
 ---
 
 # Perf
 
  Performance counters from Windows and Linux agents that provide insight into the performance of hardware components operating systems and applications.
+
+## Categories
+
+- Virtual Machines
+- Containers
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Virtual machine
+- Virtual machine scale set
+- Kubernetes Services
+
+
+
 
 ## Columns
 
