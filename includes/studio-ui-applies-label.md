@@ -14,4 +14,4 @@ ms.date: 05/06/2019
 > **Applies to**:   Machine Learning Studio (classic)
 >
 > This content pertains only to Studio (classic). Similar drag and drop modules have been added to Azure Machine Learning
-designer (preview). Learn more in [this article comparing the two versions](https://docs.microsoft.com/azure/machine-learning/studio/what-is-ml-studio#compare).
+designer (preview). Learn more in [this article comparing the two versions](/azure/machine-learning/compare-azure-ml-to-studio-classic).
