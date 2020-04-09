@@ -2371,11 +2371,6 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "kusto/index.md",
-			"redirect_url": "/azure/data-explorer/kusto/index",
-			"redirect_document_id": true
-		},
-		{
 			"source_path": "kusto/api/client-libraries.md",
 			"redirect_url": "/azure/data-explorer/kusto/api/client-libraries",
 			"redirect_document_id": true
@@ -3103,11 +3098,6 @@
 		{
 			"source_path": "kusto/management/show-table-details-command.md",
 			"redirect_url": "/azure/data-explorer/kusto/management/show-table-details-command",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "kusto/management/show-table-schema-command.md",
-			"redirect_url": "/azure/data-explorer/kusto/management/show-table-schema-command",
 			"redirect_document_id": true
 		},
 		{
