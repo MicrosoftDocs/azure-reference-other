@@ -5242,7 +5242,7 @@
         	},
 		{
 			"source_path": "kusto/index.md",
-			"redirect_url": "/azure/data-explorer/kusto",
+			"redirect_url": "/azure/data-explorer",
 			"redirect_document_id": true
 		}
 	]
