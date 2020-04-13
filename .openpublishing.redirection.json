@@ -5239,6 +5239,11 @@
 			"source_path": "kusto/tools/synckusto.md",
 			"redirect_url": "/azure/data-explorer/kusto/tools/synckusto",
 			"redirect_document_id": true
-        }
+        	},
+		{
+			"source_path": "kusto/index.md",
+			"redirect_url": "/azure/data-explorer/kusto",
+			"redirect_document_id": true
+		}
 	]
 }
