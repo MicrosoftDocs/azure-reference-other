@@ -5081,8 +5081,8 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "kusto/query/vunionoperator.md",
-			"redirect_url": "/azure/data-explorer/kusto/query/vunionoperator",
+			"source_path": "kusto/query/unionoperator.md",
+			"redirect_url": "/azure/data-explorer/kusto/query/unionoperator",
 			"redirect_document_id": true
 		},
 		{
@@ -5239,6 +5239,11 @@
 			"source_path": "kusto/tools/synckusto.md",
 			"redirect_url": "/azure/data-explorer/kusto/tools/synckusto",
 			"redirect_document_id": true
-        }
+        	},
+		{
+			"source_path": "kusto/index.md",
+			"redirect_url": "/azure/data-explorer",
+			"redirect_document_id": true
+		}
 	]
 }
