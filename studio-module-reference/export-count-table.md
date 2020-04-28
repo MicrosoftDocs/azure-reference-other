@@ -21,7 +21,7 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 ## Module overview
 
-This article describes how to use the **Export Count Table** module in Azure Machine Learning Studio (classic). The **Export Count Table** module is provided for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.
+This article describes how to use the **Export Count Table** module in Azure Machine Learning Studio (classic). The **Export Count Table** module is provided for backward compatibility with experiments that use the deprecated Build Count Table and deprecated Count Featurizer modules.
 
 When you use the new [Build Counting Transform](build-counting-transform.md) module to create count-based features, the module outputs both a featurized dataset and a *transform* that creates features from counts. By using the **Export Count Table** module, you can separate the count-based features output by this newer module into **count metadata** and a **count table**. These output formats were used by earlier, now deprecated modules:
 
@@ -41,11 +41,11 @@ For general information about count tables and how they are used to create featu
 
 3. Connect the output of the saved count transformation (labeled **transformation**) to **Export Count Table**.
 
-4. Add the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module to the experiment, and connect it to the two outputs of **Export Count Table**.
+4. Add the Count Featurizer (deprecated) module to the experiment, and connect it to the two outputs of **Export Count Table**.
 
-5. The [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module requires an additional input, for the dataset you want to featurize. Connect the dataset to apply the saved transformation to outputs.
+5. The Count Featurizer (deprecated) module requires an additional input, for the dataset you want to featurize. Connect the dataset to apply the saved transformation to outputs.
 
-6. Set any necessary parameters for [Count Featurizer (deprecated)](count-featurizer-deprecated.md), including the label column, the count columns, the columns to featurize, and the features to output.
+6. Set any necessary parameters for Count Featurizer (deprecated), including the label column, the count columns, the columns to featurize, and the features to output.
 
     You must select a subset of the columns that were originally selected for the counting transformation. However, the **Export Count Table** module does not provide the list of these columns, so you should review the original experiment and make a note of which columns were used. If you select a column that was not used when creating the transformation, an error is raised.
 
@@ -89,4 +89,3 @@ For a list of API exceptions, see [Machine Learning REST API Error Codes](https:
 ## See also
 
  [Learning with Counts](data-transformation-learning-with-counts.md) 
- [Count Featurizer (deprecated)](count-featurizer-deprecated.md)
