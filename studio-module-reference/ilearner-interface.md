@@ -32,7 +32,5 @@ For a list of learners provided by Azure Machine Learning Studio (classic), see 
 > [!NOTE]
 > The [ICluster interface](icluster-interface.md) is also available, for clustering models only.
 
-## See also
-
- [Module parameter types](machine-learning-module-parameter-types.md)   
+## See also  
  [Module data types](machine-learning-module-data-types.md)
