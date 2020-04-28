@@ -95,8 +95,8 @@ By default, all items with a count that's less than 10 are collected in a single
 The **Learning with Counts** category includes the following modules:
 
 - [Build Counting Transform](build-counting-transform.md): Creates a count table and count-based features from a dataset, and then saves the table and features as a transformation.
-- [Export Count Table](export-count-table.md): Exports a count table from a counting transform. This module supports backward compatibility with experiments that create count-based features by using [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md).
-- [Import Count Table](import-count-table.md): Imports an existing count table. This module supports backward compatibility with experiments that create count-based features by using [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md). The module supports conversion of count tables to count transformations.
+- [Export Count Table](export-count-table.md): Exports a count table from a counting transform. This module supports backward compatibility with experiments that create count-based features by using Build Count Table (deprecated) and Count Featurizer (deprecated).
+- [Import Count Table](import-count-table.md): Imports an existing count table. This module supports backward compatibility with experiments that create count-based features by using Build Count Table (deprecated) and Count Featurizer (deprecated). The module supports conversion of count tables to count transformations.
 - [Merge Count Transform](merge-count-transform.md): Merges two sets of count-based features.
 - [Modify Count Table Parameters](modify-count-table-parameters.md): Modifies count-based features that are derived from an existing count table.
  
