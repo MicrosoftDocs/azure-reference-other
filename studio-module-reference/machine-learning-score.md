@@ -66,7 +66,7 @@ Machine Learning Studio (classic) provides many different scoring modules. You s
 
     Use this module if you want to cluster new data based on an existing K-Means clustering model. 
 
-    This module replaces the [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md) module, which has been deprecated but is still available for use in existing experiments.  
+    This module replaces the Assign to Clusters (deprecated) module, which has been deprecated but is still available for use in existing experiments.  
 
 + [Score Matchbox Recommender](score-matchbox-recommender.md): Scores predictions for a dataset by using the Matchbox recommender.  
 
