@@ -178,7 +178,7 @@ For more information about the algorithm and underlying research, see [Local Dee
 |Lambda Theta|[1.401298E-45;3.40282347E+38]|ParameterRangeSettings|0.1; 0.01; 0.001|Range for the regularization weight for the classifier parameter Lambda Theta.|  
 |Lambda Theta Prime|[1.401298E-45;3.40282347E+38]|ParameterRangeSettings|0.1; 0.01; 0.001|Range for the regularization weight for the classifier parameter Lambda Theta prime'.|  
 |Sigmoid sharpness|[1.401298E-45;3.40282347E+38]|ParameterRangeSettings|1.0; 0.1; 0.01|The range for the sigmoid sharpness.|  
-|Feature normalizer|List|[Normalizer type](machine-learning-module-parameter-types.md)|Min-Max normalizer|The type of normalization to apply to learning examples.|  
+|Feature normalizer|List|Normalizer type|Min-Max normalizer|The type of normalization to apply to learning examples.|  
 |Number of iterations|>=1|Integer|15000|Number of learning iterations.|  
 |Number of iterations|[1;int.MaxValue]|ParameterRangeSettings|10000; 15000; 20000|The range for the number of learning iterations.|  
 |*Random number seed*|Any|Integer||The seed for the random number generator that is used by the model. Leave it blank for the default.|  
