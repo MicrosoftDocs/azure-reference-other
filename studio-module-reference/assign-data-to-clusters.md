@@ -27,7 +27,7 @@ This article describes how to use the [Assign Data to Clusters](assign-data-to-c
 The module returns a dataset that contains the probable assignments for each new data point. It also creates a PCA (Principal Component Analysis) graph to help you visualize the dimensionality of the clusters.
 
 > [!WARNING]
-> This module replaces the [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md) module, which is available only for support of older experiments.
+> This module replaces the Assign to Clusters (deprecated) module, which is available only for support of older experiments.
 
 ## How to use Assign Data to Clusters
   
