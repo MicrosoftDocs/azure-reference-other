@@ -155,13 +155,5 @@
 ## [IFilter interface](ifilter-interface.md)
 ## [ILearner interface](ilearner-interface.md)
 ## [ITransform interface](itransform-interface.md)
-# [Deprecated Modules and Features](deprecated-modules-and-features.md)
-## [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md)
-## [Apply Quantization Function (deprecated)](apply-quantization-function-deprecated.md)
-## [Count Featurizer (deprecated)](count-featurizer-deprecated.md)
-## [Build Count Table (deprecated)](build-count-table-deprecated.md)
-## [Linear Discriminant Analysis (deprecated)](linear-discriminant-analysis-deprecated.md)
-## [Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md)
-## [Quantize (deprecated)](quantize-deprecated.md)
 # [Module Error Codes](errors/machine-learning-module-error-codes.md)
 
