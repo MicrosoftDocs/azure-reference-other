@@ -1,6 +1,16 @@
 {
 	"redirections": [
 		{
+			"source_path": "studio-module-reference/machine-learning-module-parameters-and-data-types.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/machine-learning-module-data-types”,
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/machine-learning-module-parameter-types.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/machine-learning-module-data-types”,
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "studio-module-reference/errors/error-0001.md",
 			"redirect_url": "/azure/machine-learning/studio-module-reference/errors/machine-learning-module-error-codes",
 			"redirect_document_id": false
