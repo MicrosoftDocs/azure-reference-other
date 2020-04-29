@@ -40,7 +40,8 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/azure-reference-other",
       "product_feedback_url": "https://feedback.azure.com/forums/270577-stream-analytics",
-      "titleSuffix": "Stream Analytics Query"
+      "titleSuffix": "Stream Analytics Query",
+      "uhfHeaderId": "azure"
     },
     "fileMetadata": {
        "searchScope": { "**/*.md": ["Azure","Stream Analytics"] }
