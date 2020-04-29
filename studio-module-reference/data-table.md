@@ -54,5 +54,4 @@ This section also describes the following interfaces for Azure Machine Learning:
 |[ITransform interface](itransform-interface.md)|The ITransform interface provides a generic structure for defining and saving transformations. You can create an iTransform using Machine Learning Studio (classic) and then apply the transformation to new datasets.|  
   
 ## See also  
- [Module Parameter Types](machine-learning-module-parameter-types.md)   
  [Module Data Types](machine-learning-module-data-types.md)

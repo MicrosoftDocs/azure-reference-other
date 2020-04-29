@@ -28,7 +28,7 @@ The purpose of the **Import Count Table** module is to allow customers who creat
 For general information about count tables and how they are used to create features, see [Learning with Counts](data-transformation-learning-with-counts.md).
 
 > [!IMPORTANT]
-> This module is provided solely for backward compatibility with experiments that use the [Build Count Table (deprecated)](build-count-table-deprecated.md) and [Count Featurizer (deprecated)](count-featurizer-deprecated.md) modules.We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. 
+> This module is provided solely for backward compatibility with experiments that use the deprecated Build Count Table and deprecated Count Featurizer modules. We recommend that you upgrade your experiment to use the newer modules, to take advantage of new features. 
 
 For all new experiments, we recommend that you use the following modules:
 
@@ -38,11 +38,11 @@ For all new experiments, we recommend that you use the following modules:
 
 ## How to configure Import Count Table
 
-1. In Azure Machine Learning Studio (classic), open an experiment that contains a count table created using the [Build Count Table (deprecated)](build-count-table-deprecated.md) module.
+1. In Azure Machine Learning Studio (classic), open an experiment that contains a count table created using the deprecated Build Count Table module.
 
 2. Add the **Import Count Table** module to the experiment.
 
-3. Connect the two outputs of the [Build Count Table (deprecated)](build-count-table-deprecated.md) module to the matching input ports of the **Import Count Table**.
+3. Connect the two outputs of the Build Count Table (deprecated) module to the matching input ports of the **Import Count Table**.
 
     If you have another dataset of counts that you want to merge with the imported count table, connect it to the rightmost input for the **Import Count Table** module.
 
@@ -58,7 +58,7 @@ For all new experiments, we recommend that you use the following modules:
 
         For more information, see [HDInsight on Azure](https://azure.microsoft.com/services/hdinsight/).
 
-    After specifying the data storage mode, you may need to provide additional connection information for the data, even if you previously used a [Import Data](import-data.md) module in the experiment to access data. That is because the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module accesses the data storage separately in order to read the data and build the required tables.
+    After specifying the data storage mode, you may need to provide additional connection information for the data, even if you previously used a [Import Data](import-data.md) module in the experiment to access data. That is because the Count Featurizer (deprecated) module accesses the data storage separately in order to read the data and build the required tables.
 
 5. Use the **Count table type** option to specify the format and storage mode of the table used to store counts.
 
@@ -123,4 +123,3 @@ For a list of API exceptions, see [Machine Learning REST API Error Codes](https:
 ## See also
 
  [Learning with Counts](data-transformation-learning-with-counts.md)   
- [Count Featurizer (deprecated)](count-featurizer-deprecated.md)

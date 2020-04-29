@@ -1,6 +1,56 @@
 {
 	"redirections": [
 		{
+			"source_path": "studio-module-reference/apply-quantization-function-deprecated.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/group-data-into-bins",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/assign-to-clusters-deprecated.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/assign-data-to-clusters",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/build-count-table-deprecated.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/build-counting-transform",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/count-featurizer-deprecated.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/modify-count-table-parameters",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/deprecated-modules-and-features.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/linear-discriminant-analysis-deprecated.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/fisher-linear-discriminant-analysis",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/quantize-deprecated.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/group-data-into-bins",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/missing-values-scrubber-deprecated.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/clean-missing-data",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/machine-learning-module-parameters-and-data-types.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/machine-learning-module-data-types",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "studio-module-reference/machine-learning-module-parameter-types.md",
+			"redirect_url": "/azure/machine-learning/studio-module-reference/machine-learning-module-data-types",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "studio-module-reference/errors/error-0001.md",
 			"redirect_url": "/azure/machine-learning/studio-module-reference/errors/machine-learning-module-error-codes",
 			"redirect_document_id": false

@@ -113,4 +113,3 @@ For a list of API exceptions, see [Machine Learning REST API Error Codes](https:
 ## See also
 
  [Learning with Counts](data-transformation-learning-with-counts.md)   
- [Build Count Table (deprecated)](build-count-table-deprecated.md)

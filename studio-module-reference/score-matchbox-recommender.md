@@ -367,10 +367,10 @@ Online updating (or continuous training) of a recommendation model is not curren
 
 |Name|Range|Type|Default|Description|  
 |----------|-----------|----------|-------------|-----------------|  
-|Recommender prediction kind|List|[Prediction kind](machine-learning-module-parameter-types.md)|Item Recommendation|Specify the type of prediction the recommender should output|  
-|Recommended item selection|List|[Item selection](machine-learning-module-parameter-types.md)|From Rated Items (for model evaluation)|Select the set of items to make recommendations from|  
-|Related user selection|List|[User selection](machine-learning-module-parameter-types.md)|From Users That Rated Items (for model evaluation)|Select the set of users to use when finding related items|  
-|Related item selection|List|[Item selection](machine-learning-module-parameter-types.md)|From Rated Items (for model evaluation)|Select the set of items to use when finding related items|  
+|Recommender prediction kind|List|Prediction kind|Item Recommendation|Specify the type of prediction the recommender should output|  
+|Recommended item selection|List|Item selection|From Rated Items (for model evaluation)|Select the set of items to make recommendations from|  
+|Related user selection|List|User selection|From Users That Rated Items (for model evaluation)|Select the set of users to use when finding related items|  
+|Related item selection|List|[Item selection|From Rated Items (for model evaluation)|Select the set of items to use when finding related items|  
 
 ## Outputs
 

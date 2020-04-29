@@ -30,5 +30,4 @@ You can interact with `ICluster` only in Studio (classic), or in one of the supp
 For classification or regression models, use the [iLearner](ilearner-interface.md) interface.
 
 ## See also
- [Module parameter types](machine-learning-module-parameter-types.md)   
  [Module data types](machine-learning-module-data-types.md)

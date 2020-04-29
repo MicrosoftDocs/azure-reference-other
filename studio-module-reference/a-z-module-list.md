@@ -7,7 +7,7 @@ ms.subservice: "studio"
 ms.topic: "reference"
 author: xiaoharper
 ms.author: amlstudiodocs 
-ms.date: 11/04/2019
+ms.date: 04/30/2020
 ---
 # A-Z list of Machine Learning Studio (classic) modules
 
@@ -43,11 +43,9 @@ To find a module:
 |[Apply Math Operation](apply-math-operation.md)|Applies a mathematical operation to column values.|
 |[Apply SQL Transformation](apply-sql-transformation.md)|Runs a SQLite query on input datasets to transform the data.|
 |[Apply Transformation](apply-transformation.md)|Applies a well-specified data transformation to a dataset.|
-|[Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md)|Assigns data to clusters by using an existing trained clustering model.<br /><br />This module has been deprecated, but is available for use with existing experiments. For new experiments, use [Assign Data to Clusters](assign-data-to-clusters.md).|
 |[Assign Data to Clusters](assign-data-to-clusters.md)|Assigns data to clusters by using an existing trained clustering model.|
 |[Bayesian Linear Regression](bayesian-linear-regression.md)|Creates a Bayesian linear regression model.|
 |[Boosted Decision Tree Regression](boosted-decision-tree-regression.md)|Creates a regression model by using the boosted decision tree algorithm.|
-|[Build Count Table (deprecated)](build-count-table-deprecated.md)|Creates counts to use to build features.|
 |[Build Counting Transform](build-counting-transform.md)|Creates counts to use to build features.|
 |[Clean Missing Data](clean-missing-data.md)|Specifies how to handle values that are missing from a dataset.|
 |[Clip Values](clip-values.md)|Detects outliers, and then clips or replaces their values.|
@@ -60,7 +58,6 @@ To find a module:
 |[Convert to Indicator Values](convert-to-indicator-values.md)|Converts categorical values in columns to indicator values.|
 |[Convert to SVMLight](convert-to-svmlight.md)|Converts data input to the format that's used by the SVMlight framework.|
 |[Convert to TSV](convert-to-tsv.md)|Converts data input to the tab-delimited format.|
-|[Count Featurizer (deprecated)](count-featurizer-deprecated.md)|Generates a set of compact features based on a count table.|
 |[Create R Model](create-r-model.md)|Creates an R model by using custom resources.| 
 |[Cross-Validate Model](cross-validate-model.md)|Cross-validates parameter estimates for classification or regression models by partitioning the data.|
 |[Decision Forest Regression](decision-forest-regression.md)|Creates a regression model by using the decision forest algorithm.|
@@ -94,7 +91,6 @@ To find a module:
 |[Load Trained Model](load-trained-model.md)|Gets a trained model that you can use for scoring in an experiment.|
 |[Median Filter](median-filter.md)|Creates a median filter that's used to smooth data for trend analysis.|
 |[Merge Count Transform](merge-count-transform.md)|Merges two sets of count tables.|
-|[Missing Values Scrubber (deprecated)](missing-values-scrubber-deprecated.md)|Specifies how to handle values that are missing from a dataset.|
 |[Modify Count Table Parameters](modify-count-table-parameters.md)|Builds a compact set of count-based features from count tables.|
 |[Moving Average Filter](moving-average-filter.md)|Creates a moving average filter that smooths data for trend analysis.|
 |[Multiclass Decision Forest](multiclass-decision-forest.md)|Creates a multiclass classification model by using the decision forest algorithm.|
@@ -148,7 +144,7 @@ To find a module:
 |[Two-Class Support Vector Machine](two-class-support-vector-machine.md)|Creates a binary classification model by using the support vector machine algorithm.|
 |[Unpack Zipped Datasets](unpack-zipped-datasets.md)|Unpacks datasets from a .zip package in user storage.|
 |[User-Defined Filter](user-defined-filter.md)|Creates a custom finite or infinite impulse response filter.|
-  
+
 ## See also
 
 - [Module categories and descriptions](machine-learning-module-descriptions.md)

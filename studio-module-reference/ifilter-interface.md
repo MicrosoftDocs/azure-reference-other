@@ -27,6 +27,5 @@ You use the `IFilter` interface to save a filter or apply a predefined filter to
 
 You can interact with `IFilter` only in Studio (classic), or in one of the supported APIs.  
 
-## See also  
- [Module parameter types](machine-learning-module-parameter-types.md)   
+## See also   
  [Module data types](machine-learning-module-data-types.md)
