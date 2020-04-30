@@ -4,9 +4,9 @@ description: Reference for BlockchainApplicationLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # BlockchainApplicationLog
@@ -30,18 +30,18 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
+|BlockchainMessage|string||
+|BlockchainNodeName|string||
 |Category|string||
-|Resource|string||
-|ResourceGroup|string||
-|ResourceProvider|string||
-|SubscriptionId|string||
 |Level|string||
 |NodeLocation|string||
-|BlockchainNodeName|string||
-|BlockchainMessage|string||
-|Type|string||
+|OperationName|string||
+|Resource|string||
+|ResourceGroup|string||
+|ResourceId|string||
 |_ResourceId|string||
+|ResourceProvider|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|TimeGenerated|datetime||
+|Type|string||
