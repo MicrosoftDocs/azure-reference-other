@@ -4,9 +4,9 @@ description: Reference for MAApplication table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAApplication
@@ -27,21 +27,21 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ProgramId|string||
+|AppCategory|string||
+|AppLanguage|string||
 |AppName|string||
+|AppType|string||
 |AppVendor|string||
 |AppVersion|string||
-|AppLanguage|string||
-|AppType|string||
-|AppCategory|string||
-|NPId|string||
 |HasSupportStatement|bool||
-|TotalInstalls|int||
-|MonthlyActiveDevices|int||
-|TestOwner|string||
-|TestPlan|string||
 |Importance|string||
 |IsVirtualized|bool||
+|MonthlyActiveDevices|int||
+|NPId|string||
+|ProgramId|string||
+|SourceSystem|string||
+|TestOwner|string||
+|TestPlan|string||
+|TimeGenerated|datetime||
+|TotalInstalls|int||
 |Type|string||
