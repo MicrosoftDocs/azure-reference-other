@@ -4,9 +4,9 @@ description: Reference for ADFSSISPackageExecutableStatistics table in Azure Mon
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ADFSSISPackageExecutableStatistics
@@ -24,21 +24,21 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
-|OperationName|string|The name of the operation represented by this event|
 |Category|string|The name of the log that belongs to|
 |CorrelationId|string|correlation id|
 |DataFactoryName|string|Data factory name|
-|IntegrationRuntimeName|string|Integration runtime name|
-|Level|string|Verbosity level of log|
-|ExecutionId|long|Execution id|
-|ExecutionPath|string|Execution path|
-|StartTime|datetime|Executable start time|
 |EndTime|datetime|Executable end time|
 |ExecutionDuration|int|Executable execution duration|
+|ExecutionId|long|Execution id|
+|ExecutionPath|string|Execution path|
 |ExecutionResult|int|Execution result|
 |ExecutionValue|dynamic|Execution value|
-|SourceSystem|string||
-|Type|string||
+|IntegrationRuntimeName|string|Integration runtime name|
+|Level|string|Verbosity level of log|
+|OperationName|string|The name of the operation represented by this event|
 |_ResourceId|string||
+|SourceSystem|string||
+|StartTime|datetime|Executable start time|
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|Type|string||
