@@ -4,9 +4,9 @@ description: Reference for UAComputer table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # UAComputer
@@ -27,35 +27,35 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|AppIssues|int||
 |Computer|string||
 |ComputerID|string||
-|Manufacturer|string||
-|Model|string||
-|OSVersion|string||
-|OSEdition|string||
-|OSBuild|string||
-|OSArchitecture|string||
-|TotalIssues|int||
-|SysReqIssues|int||
-|AppIssues|int||
-|DriverIssues|int||
-|UpgradeAssessment|string||
-|UpgradeDecision|string||
-|LastScan|datetime||
-|InventoryVersion|string||
 |ConfigMgrClientID|string||
-|ItemRank|int||
-|DeploymentStatus|string||
 |DeploymentError|string||
 |DeploymentErrorDetails|string||
+|DeploymentStatus|string||
+|DriverIssues|int||
+|HoursToUninstall|int||
+|InventoryVersion|string||
+|ItemRank|int||
+|LastScan|datetime||
+|Manufacturer|string||
+|Model|string||
 |OriginBuild|string||
 |OriginOSVersion|string||
+|OSArchitecture|string||
+|OSBuild|string||
+|OSEdition|string||
+|OSVersion|string||
+|SourceSystem|string||
+|SysReqIssues|int||
 |TargetBuild|string||
 |TargetOSVersion|string||
-|UserAction|string||
+|TimeGenerated|datetime||
+|TotalIssues|int||
+|Type|string||
 |UninstallComment|string||
 |UninstallReason|string||
-|HoursToUninstall|int||
-|Type|string||
+|UpgradeAssessment|string||
+|UpgradeDecision|string||
+|UserAction|string||
