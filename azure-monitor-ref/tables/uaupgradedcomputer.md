@@ -4,9 +4,9 @@ description: Reference for UAUpgradedComputer table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # UAUpgradedComputer
@@ -27,27 +27,27 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
 |Computer|string||
 |ComputerID|string||
-|Manufacturer|string||
-|Model|string||
-|OSVersion|string||
-|OSEdition|string||
-|OSBuild|string||
-|OSArchitecture|string||
-|LastScan|datetime||
 |ConfigMgrClientID|string||
-|DeploymentStatus|string||
 |DeploymentError|string||
 |DeploymentErrorDetails|string||
+|DeploymentStatus|string||
+|HoursToUninstall|int||
+|LastScan|datetime||
+|Manufacturer|string||
+|Model|string||
 |OriginBuild|string||
 |OriginOSVersion|string||
+|OSArchitecture|string||
+|OSBuild|string||
+|OSEdition|string||
+|OSVersion|string||
+|SourceSystem|string||
 |TargetBuild|string||
 |TargetOSVersion|string||
-|UserAction|string||
+|TimeGenerated|datetime||
+|Type|string||
 |UninstallComment|string||
 |UninstallReason|string||
-|HoursToUninstall|int||
-|Type|string||
+|UserAction|string||
