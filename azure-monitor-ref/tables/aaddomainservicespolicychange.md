@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesPolicyChange table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AADDomainServicesPolicyChange
@@ -31,62 +31,62 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
-|ResultType|string||
-|ResultDescription|string||
-|CorrelationId|string||
-|CrashOnAuditFailValue|int||
-|ObjectServer|string||
-|ObjectType|string||
-|ObjectName|string||
-|HandleId|string||
-|OldSd|string||
-|NewSd|string||
-|TdoDirection|int||
-|TdoAttributes|int||
-|TdoType|int||
-|EnabledPrivilegeList|string||
-|DisabledPrivilegeList|string||
-|DomainName|string||
-|DomainSid|string||
-|SidFilteringEnabled|string||
-|KerberosPolicyChange|string||
 |AccessGranted|string||
 |AccessRemoved|string||
-|CategoryId|string||
-|SubcategoryId|string||
-|SubcategoryGuid|string||
 |AuditPolicyChanges|string||
-|DomainPolicyChanged|string||
-|MinPasswordAge|string||
-|MaxPasswordAge|string||
-|ForceLogoff|string||
-|LockoutThreshold|string||
-|LockoutObservationWindow|string||
-|LockoutDuration|string||
-|PasswordProperties|string||
-|MinPasswordLength|string||
-|PasswordHistoryLength|string||
-|MachineAccountQuota|string||
-|MixedDomainMode|string||
-|DomainBehaviorVersion|string||
-|OemInformation|string||
-|CollisionTargetType|int||
-|CollisionTargetName|string||
-|ForestRoot|string||
-|TopLevelName|string||
-|DnsName|string||
-|NetbiosName|string||
-|Flags|int||
-|ForestRootSid|string||
-|OperationId|string||
-|EntryType|int||
 |AuditSourceName|string||
+|Category|string||
+|CategoryId|string||
+|CollisionTargetName|string||
+|CollisionTargetType|int||
+|CorrelationId|string||
+|CrashOnAuditFailValue|int||
+|DisabledPrivilegeList|string||
+|DnsName|string||
+|DomainBehaviorVersion|string||
+|DomainName|string||
+|DomainPolicyChanged|string||
+|DomainSid|string||
+|EnabledPrivilegeList|string||
+|EntryType|int||
 |EventSourceId|string||
+|Flags|int||
+|ForceLogoff|string||
+|ForestRoot|string||
+|ForestRootSid|string||
+|HandleId|string||
+|KerberosPolicyChange|string||
+|LockoutDuration|string||
+|LockoutObservationWindow|string||
+|LockoutThreshold|string||
+|MachineAccountQuota|string||
+|MaxPasswordAge|string||
+|MinPasswordAge|string||
+|MinPasswordLength|string||
+|MixedDomainMode|string||
+|NetbiosName|string||
+|NewSd|string||
+|ObjectName|string||
+|ObjectServer|string||
+|ObjectType|string||
+|OemInformation|string||
+|OldSd|string||
+|OperationId|string||
+|OperationName|string||
+|PasswordHistoryLength|string||
+|PasswordProperties|string||
 |RecordId|string||
-|Type|string||
 |_ResourceId|string||
+|ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
+|SidFilteringEnabled|string||
+|SourceSystem|string||
+|SubcategoryGuid|string||
+|SubcategoryId|string||
+|TdoAttributes|int||
+|TdoDirection|int||
+|TdoType|int||
+|TimeGenerated|datetime||
+|TopLevelName|string||
+|Type|string||
