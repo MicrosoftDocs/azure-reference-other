@@ -4,9 +4,9 @@ description: Reference for MADevice table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MADevice
@@ -27,43 +27,43 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|DeviceId|string||
-|ConfigMgrClientID|string||
-|DeviceName|string||
-|DeviceLastSeenDate|datetime||
-|Manufacturer|string||
-|Model|string||
-|OSVersion|string||
-|OSBuildNumber|int||
-|OSRevisionNumber|int||
-|OSBuild|string||
-|OSEdition|string||
-|OSArchitecture|string||
-|OSServicingBranch|string||
-|OSFamily|string||
-|Region|string||
-|TotalRAM|real||
-|Processor|string||
-|ModelFamily|string||
-|InventoryVersion|string||
-|InventoryCompleteness|bool||
+|AbnormalShutdownCount|int||
+|AbnormalShutdownCountTrailing|int||
+|AssignedToDeploymentPlan|bool||
 |BiosVersion|string||
+|ConfigMgrClientID|string||
 |DeviceAge|int||
-|TotalDiskSize|int||
+|DeviceId|string||
+|DeviceLastSeenDate|datetime||
+|DeviceName|string||
 |DiskFreeSpace|int||
+|InventoryCompleteness|bool||
+|InventoryVersion|string||
 |KernelModeCrashCount|int||
 |KernelModeCrashCountTrailing|int||
 |KernelModeCrashFreePercentTrailingIndustry|real||
-|AbnormalShutdownCount|int||
-|AbnormalShutdownCountTrailing|int||
-|OfficeChannel|string||
-|OfficeAudiencesGroup|string||
-|OfficeAudienceFFN|string||
-|OfficeVersion|string||
-|OfficeBuild|string||
-|AssignedToDeploymentPlan|bool||
-|WindowsTelemetryLevel|int||
+|Manufacturer|string||
+|Model|string||
+|ModelFamily|string||
 |OEMSerialNumber|string||
+|OfficeAudienceFFN|string||
+|OfficeAudiencesGroup|string||
+|OfficeBuild|string||
+|OfficeChannel|string||
+|OfficeVersion|string||
+|OSArchitecture|string||
+|OSBuild|string||
+|OSBuildNumber|int||
+|OSEdition|string||
+|OSFamily|string||
+|OSRevisionNumber|int||
+|OSServicingBranch|string||
+|OSVersion|string||
+|Processor|string||
+|Region|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
+|TotalDiskSize|int||
+|TotalRAM|real||
 |Type|string||
+|WindowsTelemetryLevel|int||
