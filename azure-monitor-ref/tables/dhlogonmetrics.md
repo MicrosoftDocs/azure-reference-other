@@ -4,9 +4,9 @@ description: Reference for DHLogonMetrics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DHLogonMetrics
@@ -27,23 +27,23 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|ComputerID|string||
 |Computer|string||
+|ComputerID|string||
 |Country|string||
 |Manufacturer|string||
-|ModelFamily|string||
 |Model|string||
+|ModelFamily|string||
 |OSArchitecture|string||
-|OSEdition|string||
-|OSVersion|string||
 |OSBuildNumber|int||
+|OSEdition|string||
 |OSRevisionNumber|int||
+|OSVersion|string||
+|PreferredSignInProviderId|string||
+|PreferredSignInProviderName|string||
 |ProviderId|string||
 |ProviderName|string||
 |SignInIndustrySuccessRate|real||
 |SignInSuccessRate|real||
-|PreferredSignInProviderId|string||
-|PreferredSignInProviderName|string||
-|TotalDailySignIns|long||
 |TimeGenerated|datetime||
+|TotalDailySignIns|long||
 |Type|string||
