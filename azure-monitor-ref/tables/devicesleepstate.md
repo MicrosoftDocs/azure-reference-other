@@ -4,9 +4,9 @@ description: Reference for DeviceSleepState table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DeviceSleepState
@@ -27,14 +27,14 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
 |Computer|string||
-|TimeGenerated|datetime||
-|EventId|int||
-|HealthServiceId|string||
-|EventName|string||
-|ProviderId|string||
-|State|string||
-|SerialNumber|string||
 |DeviceType|string||
+|EventId|int||
+|EventName|string||
+|HealthServiceId|string||
+|ProviderId|string||
+|SerialNumber|string||
+|SourceSystem|string||
+|State|string||
+|TimeGenerated|datetime||
 |Type|string||
