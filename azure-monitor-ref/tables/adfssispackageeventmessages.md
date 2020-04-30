@@ -4,9 +4,9 @@ description: Reference for ADFSSISPackageEventMessages table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ADFSSISPackageEventMessages
@@ -24,30 +24,30 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
-|OperationName|string|The name of the operation represented by this event|
 |Category|string|The name of the log that belongs to|
 |CorrelationId|string|correlation id|
 |DataFactoryName|string|Data factory name|
+|EventMessageGuid|string|Event message guid|
+|EventName|string|Event name|
+|ExecutionPath|string|Execution path|
+|ExtendedInfoId|long|Extended info id|
 |IntegrationRuntimeName|string|Integration runtime name|
 |Level|string|Verbosity level of log|
-|OperationId|long|Operation id|
+|Message|string|Event message|
+|MessageCode|int|Message code|
+|MessageSourceId|string|Message source id|
+|MessageSourceName|string|Message source name|
+|MessageSourceType|int|Message source type|
 |MessageTime|datetime|Message time|
 |MessageType|int|Message type|
-|MessageSourceType|int|Message source type|
-|Message|string|Event message|
-|ExtendedInfoId|long|Extended info id|
+|OperationId|long|Operation id|
+|OperationName|string|The name of the operation represented by this event|
 |PackageName|string|Package name|
-|EventName|string|Event name|
-|MessageSourceName|string|Message source name|
-|MessageSourceId|string|Message source id|
-|SubcomponentName|string|Subcomponent name|
 |PackagePath|string|Package path|
-|ExecutionPath|string|Execution path|
-|ThreadId|int|Thread id|
-|MessageCode|int|Message code|
-|EventMessageGuid|string|Event message guid|
-|SourceSystem|string||
-|Type|string||
 |_ResourceId|string||
+|SourceSystem|string||
+|SubcomponentName|string|Subcomponent name|
+|TenantId|string||
+|ThreadId|int|Thread id|
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|Type|string||
