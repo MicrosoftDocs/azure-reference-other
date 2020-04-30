@@ -20,7 +20,7 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```SQL   
+```syntaxsql
 FROM <input_source> [<PARTITION BY clause>] [<TIMESTAMP BY clause>]
   
 <PARTITION BY clause> ::== PARTITION BY <key_spec>
