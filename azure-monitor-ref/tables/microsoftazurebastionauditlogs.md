@@ -4,9 +4,9 @@ description: Reference for MicrosoftAzureBastionAuditLogs table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MicrosoftAzureBastionAuditLogs
@@ -30,23 +30,23 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Time|datetime|The timestamp (UTC) of the log|
-|OperationName|string|The name of the operation represented by this event|
-|Location|string|The location of the server that processed the request (e.g., South Central US).|
-|UserAgent|string|Browser User Agent that the request was sent|
-|UserName|string|UserName that was used to log into the VirtualMachine from Bastion|
 |ClientIpAddress|string|Browser IP Address that was used to log into the VirtualMachine from Bastion|
 |ClientPort|int|Browser Port Number that was used to log into the VirtualMachine from Bastion|
-|Protocol|string|Protocol (could be ssh or rdp) that was used to log into the VirtualMachine from Bastion|
-|TargetResourceId|string|ResourceID of the VirtualMachine where the Bastion was connected to|
-|Message|string|Additonal text that's assoicated of this event|
-|TargetVMIPAddress|string|IP Address of VirtualMachine where the Bastion was connected to|
-|TunnelId|string|Internal Bastion Connection GUID|
-|SessionStartTime|datetime|Timestamp (UTC) of when the Bastion Session was started|
-|SessionEndTime|string|Timestamp (UTC) of when the Bastion Session was ended|
 |Duration|int|Duration in milliseconds where the Bastion Session lasted (available only when the Bastion Session ended)|
-|Type|string||
+|Location|string|The location of the server that processed the request (e.g., South Central US).|
+|Message|string|Additonal text that's assoicated of this event|
+|OperationName|string|The name of the operation represented by this event|
+|Protocol|string|Protocol (could be ssh or rdp) that was used to log into the VirtualMachine from Bastion|
 |_ResourceId|string||
+|SessionEndTime|string|Timestamp (UTC) of when the Bastion Session was ended|
+|SessionStartTime|datetime|Timestamp (UTC) of when the Bastion Session was started|
+|SourceSystem|string||
+|TargetResourceId|string|ResourceID of the VirtualMachine where the Bastion was connected to|
+|TargetVMIPAddress|string|IP Address of VirtualMachine where the Bastion was connected to|
+|TenantId|string||
+|Time|datetime|The timestamp (UTC) of the log|
+|TimeGenerated|datetime||
+|TunnelId|string|Internal Bastion Connection GUID|
+|Type|string||
+|UserAgent|string|Browser User Agent that the request was sent|
+|UserName|string|UserName that was used to log into the VirtualMachine from Bastion|
