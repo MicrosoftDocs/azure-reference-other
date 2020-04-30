@@ -4,9 +4,9 @@ description: Reference for MAOfficeDeploymentStatusNRT table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeDeploymentStatusNRT
@@ -24,16 +24,16 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|DeploymentStage|string||
 |DeviceId|string||
-|InstalledBuild|string||
-|InstalledVersion|string||
-|TargetBuild|string||
-|TargetVersion|string||
-|ServicingChannel|string||
-|ReleaseType|string||
 |ErrorCode|int||
 |ErrorDetails|string||
-|DeploymentStage|string||
+|InstalledBuild|string||
+|InstalledVersion|string||
+|ReleaseType|string||
+|ServicingChannel|string||
+|SourceSystem|string||
+|TargetBuild|string||
+|TargetVersion|string||
+|TimeGenerated|datetime||
 |Type|string||
