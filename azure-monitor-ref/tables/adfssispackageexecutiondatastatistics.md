@@ -4,9 +4,9 @@ description: Reference for ADFSSISPackageExecutionDataStatistics table in Azure 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ADFSSISPackageExecutionDataStatistics
@@ -24,24 +24,24 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
-|OperationName|string|The name of the operation represented by this event|
 |Category|string|The name of the log that belongs to|
 |CorrelationId|string|correlation id|
+|CreatedTime|datetime|Created time|
 |DataFactoryName|string|Data factory name|
-|IntegrationRuntimeName|string|Integration runtime name|
-|Level|string|Verbosity level of log|
-|ExecutionId|long|Execution id|
-|PackageName|string|Package name|
-|TaskName|string|Task name|
 |DataflowPathIdString|string|Dataflow path Id string|
 |DataflowPathName|string|Dataflow path name|
-|SourceComponentName|string|Source somponent name|
 |DestinationComponentName|string|Destination component name|
-|RowsSet|long|Rows set|
-|CreatedTime|datetime|Created time|
+|ExecutionId|long|Execution id|
 |ExecutionPath|string|Execution path|
-|SourceSystem|string||
-|Type|string||
+|IntegrationRuntimeName|string|Integration runtime name|
+|Level|string|Verbosity level of log|
+|OperationName|string|The name of the operation represented by this event|
+|PackageName|string|Package name|
 |_ResourceId|string||
+|RowsSet|long|Rows set|
+|SourceComponentName|string|Source somponent name|
+|SourceSystem|string||
+|TaskName|string|Task name|
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|Type|string||
