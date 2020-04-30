@@ -4,9 +4,9 @@ description: Reference for AppServiceFileAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AppServiceFileAuditLogs
@@ -30,12 +30,12 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|Time when event is generated|
 |Category|string|Log category name|
 |OperationName|string|Operation performed on a file|
 |Path|string|Path to the file that was changed|
 |Process|string|Type of the process that change the file|
-|Type|string||
 |_ResourceId|string||
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime|Time when event is generated|
+|Type|string||
