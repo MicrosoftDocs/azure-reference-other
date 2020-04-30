@@ -4,9 +4,9 @@ description: Reference for DnsInventory table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DnsInventory
@@ -31,17 +31,17 @@ ms.date: 3/16/2020
 |Column|Type|Description|
 |---|---|---|
 |Computer|string||
-|TimeGenerated|datetime||
-|SourceSystem|string||
-|SubType|string||
+|DnsSecSigned|string||
+|DomainName|string||
+|DynamicUpdate|string||
+|ForestName|string||
+|NameServers|string||
+|_ResourceId|string||
 |ResourceRecordName|string||
 |ResourceRecordType|string||
-|ZoneName|string||
-|DomainName|string||
-|ForestName|string||
 |ServerIPs|string||
-|DynamicUpdate|string||
-|DnsSecSigned|string||
-|NameServers|string||
+|SourceSystem|string||
+|SubType|string||
+|TimeGenerated|datetime||
 |Type|string||
-|_ResourceId|string||
+|ZoneName|string||
