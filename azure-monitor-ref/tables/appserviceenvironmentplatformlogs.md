@@ -4,9 +4,9 @@ description: Reference for AppServiceEnvironmentPlatformLogs table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AppServiceEnvironmentPlatformLogs
@@ -24,12 +24,12 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|Category|string||
+|OperationName|string||
+|ResourceId|string||
+|_ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
 |SourceSystem|string||
 |TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
-|ResultType|string||
-|ResultDescription|string||
 |Type|string||
-|_ResourceId|string||
