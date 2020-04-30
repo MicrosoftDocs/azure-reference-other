@@ -4,9 +4,9 @@ description: Reference for DnsEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DnsEvents
@@ -30,26 +30,26 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|Computer|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|EventId|int||
-|SubType|string||
 |ClientIP|string||
-|Name|string||
-|Result|string||
-|IPAddresses|string||
-|Message|string||
-|TaskCategory|string||
-|QueryType|string||
-|ResultCode|int||
-|MaliciousIP|string||
-|IndicatorThreatType|string||
-|Description|string||
+|Computer|string||
 |Confidence|string||
-|Severity|int||
-|RemoteIPLongitude|real||
-|RemoteIPLatitude|real||
+|Description|string||
+|EventId|int||
+|IndicatorThreatType|string||
+|IPAddresses|string||
+|MaliciousIP|string||
+|Message|string||
+|Name|string||
+|QueryType|string||
 |RemoteIPCountry|string||
-|Type|string||
+|RemoteIPLatitude|real||
+|RemoteIPLongitude|real||
 |_ResourceId|string||
+|Result|string||
+|ResultCode|int||
+|Severity|int||
+|SourceSystem|string||
+|SubType|string||
+|TaskCategory|string||
+|TimeGenerated|datetime||
+|Type|string||
