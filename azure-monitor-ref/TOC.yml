@@ -40,3 +40,5 @@
     href: tables/appevents.md
   - name: AppExceptions
     href: tables/appexceptions.md
+  - name: AppMetrics
+    href: tables/appmetrics.md
