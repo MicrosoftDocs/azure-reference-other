@@ -4,9 +4,9 @@ description: Reference for WaaSInsiderStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WaaSInsiderStatus
@@ -27,16 +27,16 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
 |Computer|string||
 |ComputerID|string||
+|LastScan|datetime||
+|OSArchitecture|string||
+|OSBuild|string||
+|OSEdition|string||
 |OSFamily|string||
 |OSName|string||
-|OSVersion|string||
-|OSBuild|string||
 |OSRevisionNumber|int||
-|OSArchitecture|string||
-|OSEdition|string||
-|LastScan|datetime||
+|OSVersion|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||
