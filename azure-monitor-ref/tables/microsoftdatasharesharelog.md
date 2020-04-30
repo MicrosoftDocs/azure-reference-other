@@ -4,9 +4,9 @@ description: Reference for MicrosoftDataShareShareLog table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MicrosoftDataShareShareLog
@@ -24,10 +24,10 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
-|OperationName|string|The name of the operation represented by this event|
 |Category|string|The name of the log that belongs to|
-|Type|string||
+|OperationName|string|The name of the operation represented by this event|
 |_ResourceId|string||
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|Type|string||
