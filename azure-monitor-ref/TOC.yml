@@ -148,3 +148,5 @@
     href: tables/vmprocess.md
   - name: W3CIISLog
     href: tables/w3ciislog.md
+  - name: WireData
+    href: tables/wiredata.md
