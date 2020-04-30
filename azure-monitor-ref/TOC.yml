@@ -30,3 +30,5 @@
     href: tables/aegdeliveryfailurelogs.md
   - name: AegPublishFailureLogs
     href: tables/aegpublishfailurelogs.md
+  - name: AppAvailabilityResults
+    href: tables/appavailabilityresults.md
