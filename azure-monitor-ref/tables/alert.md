@@ -4,9 +4,9 @@ description: Reference for Alert table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # Alert
@@ -27,24 +27,24 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
-|AlertPriority|string||
-|AlertSeverity|string||
-|SourceDisplayName|string||
-|SourceFullName|string||
+|AlertContext|string||
+|AlertDescription|string||
+|AlertError|string||
 |AlertId|string||
 |AlertName|string||
-|AlertDescription|string||
-|RepeatCount|int||
+|AlertPriority|string||
+|AlertRuleId|string||
+|AlertRuleInstanceId|string||
+|AlertSeverity|string||
 |AlertState|string||
-|ResolvedBy|string||
-|LastModifiedBy|string||
-|TimeRaised|datetime||
-|TimeResolved|datetime||
-|TimeLastModified|datetime||
-|AlertContext|string||
-|TicketId|string||
+|AlertStatus|int||
+|AlertTypeDescription|string||
+|AlertTypeNumber|int||
+|AlertValue|int||
+|Comments|string||
+|Computer|string||
 |Custom1|string||
+|Custom10|string||
 |Custom2|string||
 |Custom3|string||
 |Custom4|string||
@@ -53,47 +53,47 @@ ms.date: 3/16/2020
 |Custom7|string||
 |Custom8|string||
 |Custom9|string||
-|Custom10|string||
-|ManagementGroupName|string||
-|SourceSystem|string||
-|PriorityNumber|int||
-|HostName|string||
-|StateType|string||
-|AlertTypeDescription|string||
-|AlertTypeNumber|int||
-|AlertError|string||
-|StatusDescription|string||
-|AlertStatus|int||
-|TriggerId|string||
-|Url|string||
-|ValueDescription|string||
-|AlertValue|int||
-|Comments|string||
-|TemplateId|string||
-|FlagsDescription|string||
-|Flags|int||
-|ValueFlagsDescription|string||
-|ValueFlags|int||
 |Expression|string||
-|QueryExecutionStartTime|datetime||
-|QueryExecutionEndTime|datetime||
+|Flags|int||
+|FlagsDescription|string||
+|HostName|string||
+|LastModifiedBy|string||
+|LinkToSearchResults|string||
+|ManagementGroupName|string||
+|ObjectDisplayName|string||
+|PriorityNumber|int||
 |Query|string||
+|QueryExecutionEndTime|datetime||
+|QueryExecutionStartTime|datetime||
 |RemediationJobId|string||
 |RemediationRunbookName|string||
-|AlertRuleId|string||
-|AlertRuleInstanceId|string||
-|ThresholdOperator|string||
-|ThresholdValue|int||
-|LinkToSearchResults|string||
+|RepeatCount|int||
+|ResolvedBy|string||
+|ResourceId|string||
+|_ResourceId|string||
+|ResourceType|string||
+|ResourceValue|string||
+|RootObjectName|string||
 |ServiceDeskConnectionName|string||
 |ServiceDeskId|string||
 |ServiceDeskWorkItemLink|string||
 |ServiceDeskWorkItemType|string||
-|ResourceId|string||
-|ResourceType|string||
-|ResourceValue|string||
-|RootObjectName|string||
-|ObjectDisplayName|string||
-|Computer|string||
+|SourceDisplayName|string||
+|SourceFullName|string||
+|SourceSystem|string||
+|StateType|string||
+|StatusDescription|string||
+|TemplateId|string||
+|ThresholdOperator|string||
+|ThresholdValue|int||
+|TicketId|string||
+|TimeGenerated|datetime||
+|TimeLastModified|datetime||
+|TimeRaised|datetime||
+|TimeResolved|datetime||
+|TriggerId|string||
 |Type|string||
-|_ResourceId|string||
+|Url|string||
+|ValueDescription|string||
+|ValueFlags|int||
+|ValueFlagsDescription|string||
