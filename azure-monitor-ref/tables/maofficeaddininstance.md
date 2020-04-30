@@ -4,9 +4,9 @@ description: Reference for MAOfficeAddinInstance table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeAddinInstance
@@ -27,8 +27,8 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|AddinInstanceId|string||
+|DeviceId|string||
 |SourceSystem|string||
 |TimeGenerated|datetime||
-|DeviceId|string||
-|AddinInstanceId|string||
 |Type|string||
