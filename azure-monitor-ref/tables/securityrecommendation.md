@@ -4,9 +4,9 @@ description: Reference for SecurityRecommendation table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SecurityRecommendation
@@ -29,19 +29,19 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|AssessedResourceId|string||
+|Description|string||
+|DeviceId|string||
+|DiscoveredTimeUTC|datetime||
+|PolicyDefinitionId|string||
+|ProviderName|string||
+|RecommendationAdditionalData|string||
+|RecommendationDisplayName|string||
 |RecommendationId|string||
 |RecommendationName|string||
-|RecommendationDisplayName|string||
-|ProviderName|string||
-|Description|string||
-|RecommendationState|string||
-|TimeGenerated|datetime||
-|DiscoveredTimeUTC|datetime||
-|ResolvedTimeUTC|datetime||
-|PolicyDefinitionId|string||
 |RecommendationSeverity|string||
-|AssessedResourceId|string||
-|DeviceId|string||
+|RecommendationState|string||
+|ResolvedTimeUTC|datetime||
 |ResourceRegion|string||
-|RecommendationAdditionalData|string||
+|TimeGenerated|datetime||
 |Type|string||
