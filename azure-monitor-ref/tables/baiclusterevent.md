@@ -4,9 +4,9 @@ description: Reference for BaiClusterEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # BaiClusterEvent
@@ -30,42 +30,42 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|ResultSignature|string||
-|TimeGenerated|datetime||
-|OperationName|string||
-|ProvisioningState|string||
-|ClusterName|string||
-|VmSize|string||
-|VmPriority|string||
-|ScalingType|string||
-|InitialNodeCount|int||
-|MinimumNodeCount|int||
-|MaximumNodeCount|int||
-|NodeDeallocationOption|string||
-|Publisher|string||
-|Offer|string||
-|Sku|string||
-|Version|string||
-|SubnetId|string||
 |AllocationState|string||
-|CurrentNodeCount|int||
-|TargetNodeCount|int||
-|EventType|string||
-|NodeIdleTimeSecondsBeforeScaleDown|int||
-|PreemptedNodeCount|string||
-|IsResizeGrow|string||
-|VmFamilyName|string||
-|LeavingNodeCount|int||
-|UnusableNodeCount|int||
-|IdleNodeCount|int||
-|RunningNodeCount|int||
-|PreparingNodeCount|int||
-|QuotaAllocated|string||
-|QuotaUtilized|string||
 |AllocationStateTransitionTime|datetime||
 |ClusterErrorCodes|string||
+|ClusterName|string||
 |CreationApiVersion|string||
+|CurrentNodeCount|int||
+|EventType|string||
+|IdleNodeCount|int||
+|InitialNodeCount|int||
 |InternalOperationName|string||
+|IsResizeGrow|string||
+|LeavingNodeCount|int||
+|MaximumNodeCount|int||
+|MinimumNodeCount|int||
+|NodeDeallocationOption|string||
+|NodeIdleTimeSecondsBeforeScaleDown|int||
+|Offer|string||
+|OperationName|string||
+|PreemptedNodeCount|string||
+|PreparingNodeCount|int||
+|ProvisioningState|string||
+|Publisher|string||
+|QuotaAllocated|string||
+|QuotaUtilized|string||
+|ResultSignature|string||
+|RunningNodeCount|int||
+|ScalingType|string||
+|Sku|string||
+|SourceSystem|string||
+|SubnetId|string||
+|TargetNodeCount|int||
+|TenantId|string||
+|TimeGenerated|datetime||
 |Type|string||
+|UnusableNodeCount|int||
+|Version|string||
+|VmFamilyName|string||
+|VmPriority|string||
+|VmSize|string||
