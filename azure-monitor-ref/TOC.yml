@@ -84,3 +84,5 @@
     href: tables/containerlog.md
   - name: DHCPActivity
     href: tables/dhcpactivity.md
+  - name: Event
+    href: tables/event.md
