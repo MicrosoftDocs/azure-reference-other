@@ -4,9 +4,9 @@ description: Reference for MADeploymentPlan table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MADeploymentPlan
@@ -27,14 +27,14 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|CompletionDate|datetime||
+|DeploymentPlanId|string||
+|DeploymentTask|string||
+|Name|string||
+|OfficeTargetBuild|string||
+|OfficeTargetRelease|string||
 |SourceSystem|string||
 |TimeGenerated|datetime||
-|DeploymentPlanId|string||
-|Name|string||
-|DeploymentTask|string||
-|OfficeTargetRelease|string||
-|WindowsTargetRelease|string||
-|CompletionDate|datetime||
-|WindowsTargetBuild|string||
-|OfficeTargetBuild|string||
 |Type|string||
+|WindowsTargetBuild|string||
+|WindowsTargetRelease|string||

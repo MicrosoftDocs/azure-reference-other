@@ -4,9 +4,9 @@ description: Reference for AddonAzureBackupProtectedInstance table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AddonAzureBackupProtectedInstance
@@ -31,17 +31,17 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
 |BackupItemUniqueId|string||
 |BackupManagementServerUniqueId|string||
 |BackupManagementType|string||
+|Category|string||
+|OperationName|string||
 |ProtectedContainerUniqueId|string||
 |ProtectedInstanceCount|int||
+|ResourceId|string||
 |SchemaVersion|string||
+|SourceSystem|string||
 |State|string||
-|VaultUniqueId|string||
+|TimeGenerated|datetime||
 |Type|string||
+|VaultUniqueId|string||

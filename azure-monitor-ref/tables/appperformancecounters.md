@@ -4,9 +4,9 @@ description: Reference for AppPerformanceCounters table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AppPerformanceCounters
@@ -30,36 +30,36 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|TimeGenerated|datetime|Date and time when performance counter was recorded.|
-|Name|string|Performance counter name.|
-|Category|string|Performance counter category.|
-|Counter|string|Performance counter name.|
-|Instance|string|Instance identifier, to which the counter is related.|
-|Value|real|Performance counter value.|
-|Properties|dynamic|Application-defined properties.|
-|OperationName|string|Application-defined name of the overall operation. The OperationName values typically match the Name values for AppRequests.|
-|OperationId|string|Application-defined operation ID.|
-|ParentId|string|ID of the parent operation.|
-|SyntheticSource|string|Synthetic source of the operation.|
-|SessionId|string|Application-defined session ID.|
-|UserId|string|Anonymous ID of a user accessing the application.|
-|UserAuthenticatedId|string|Persistent string that uniquely represents each authenticated user in the application.|
-|UserAccountId|string|Application-defined account associated with the user.|
-|AppVersion|string|Version of the application.|
-|AppRoleName|string|Role name of the application.|
 |AppRoleInstance|string|Role instance of the application.|
-|ClientType|string|Type of the client device.|
+|AppRoleName|string|Role name of the application.|
+|AppVersion|string|Version of the application.|
+|Category|string|Performance counter category.|
+|ClientBrowser|string|Browser running on the client device.|
+|ClientCity|string|City where the client device is located.|
+|ClientCountryOrRegion|string|Country or region where the client device is located.|
+|ClientIP|string|IP address of the client device.|
 |ClientModel|string|Model of the client device.|
 |ClientOS|string|Operating system of the client device.|
-|ClientIP|string|IP address of the client device.|
-|ClientCity|string|City where the client device is located.|
 |ClientStateOrProvince|string|State or province where the client device is located.|
-|ClientCountryOrRegion|string|Country or region where the client device is located.|
-|ClientBrowser|string|Browser running on the client device.|
-|ResourceGUID|string|Unique, persistent identifier of an Azure resource.|
+|ClientType|string|Type of the client device.|
+|Counter|string|Performance counter name.|
 |IKey|string|Instrumentation key of the Azure resource.|
-|SDKVersion|string|Version of the SDK used by the application to generate this telemetry item.|
-|SourceSystem|string||
-|Type|string||
+|Instance|string|Instance identifier, to which the counter is related.|
+|Name|string|Performance counter name.|
+|OperationId|string|Application-defined operation ID.|
+|OperationName|string|Application-defined name of the overall operation. The OperationName values typically match the Name values for AppRequests.|
+|ParentId|string|ID of the parent operation.|
+|Properties|dynamic|Application-defined properties.|
+|ResourceGUID|string|Unique, persistent identifier of an Azure resource.|
 |_ResourceId|string||
+|SDKVersion|string|Version of the SDK used by the application to generate this telemetry item.|
+|SessionId|string|Application-defined session ID.|
+|SourceSystem|string||
+|SyntheticSource|string|Synthetic source of the operation.|
+|TenantId|string||
+|TimeGenerated|datetime|Date and time when performance counter was recorded.|
+|Type|string||
+|UserAccountId|string|Application-defined account associated with the user.|
+|UserAuthenticatedId|string|Persistent string that uniquely represents each authenticated user in the application.|
+|UserId|string|Anonymous ID of a user accessing the application.|
+|Value|real|Performance counter value.|

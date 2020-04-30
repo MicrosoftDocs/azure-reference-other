@@ -4,9 +4,9 @@ description: Reference for SCOMAssessmentRecommendation table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SCOMAssessmentRecommendation
@@ -28,25 +28,25 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|AssessmentId|string||
-|RecommendationId|string||
-|Recommendation|string||
-|Description|string||
-|RecommendationResult|string||
-|TimeGenerated|datetime||
-|FocusAreaId|string||
-|FocusArea|string||
-|ActionAreaId|string||
 |ActionArea|string||
-|RecommendationWeight|real||
-|Computer|string||
-|AffectedObjectType|string||
+|ActionAreaId|string||
 |AffectedObjectName|string||
-|Technology|string||
+|AffectedObjectType|string||
+|AssessmentId|string||
+|Computer|string||
 |CustomData|string||
-|Server|string||
 |DatabaseName|string||
-|SqlInstanceName|string||
+|Description|string||
+|FocusArea|string||
+|FocusAreaId|string||
 |ManagementGroupName|string||
+|Recommendation|string||
+|RecommendationId|string||
+|RecommendationResult|string||
+|RecommendationWeight|real||
+|Server|string||
+|SourceSystem|string||
+|SqlInstanceName|string||
+|Technology|string||
+|TimeGenerated|datetime||
 |Type|string||

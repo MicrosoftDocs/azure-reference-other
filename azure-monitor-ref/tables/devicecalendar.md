@@ -4,9 +4,9 @@ description: Reference for DeviceCalendar table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DeviceCalendar
@@ -27,17 +27,17 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
 |Computer|string||
-|TimeGenerated|datetime||
+|DelaySeconds|int||
+|DeviceType|string||
+|ErrorMessage|string||
 |EventId|int||
-|HealthServiceId|string||
 |EventName|string||
+|HealthServiceId|string||
 |ProviderId|string||
 |ResultCode|int||
-|SyncStatus|string||
-|ErrorMessage|string||
-|DelaySeconds|int||
 |SerialNumber|string||
-|DeviceType|string||
+|SourceSystem|string||
+|SyncStatus|string||
+|TimeGenerated|datetime||
 |Type|string||

@@ -4,9 +4,9 @@ description: Reference for DeviceHardwareHealth table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DeviceHardwareHealth
@@ -27,13 +27,13 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
 |Computer|string||
-|TimeGenerated|datetime||
+|DeviceType|string||
 |EventId|int||
-|HealthServiceId|string||
 |EventName|string||
+|HealthServiceId|string||
 |ProviderId|string||
 |SerialNumber|string||
-|DeviceType|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

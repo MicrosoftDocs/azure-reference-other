@@ -4,9 +4,9 @@ description: Reference for AddonAzureBackupAlerts table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AddonAzureBackupAlerts
@@ -31,11 +31,6 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
 |AlertCode|string||
 |AlertConsolidationStatus|string||
 |AlertOccurrenceDateTime|datetime||
@@ -48,11 +43,16 @@ ms.date: 3/16/2020
 |BackupItemUniqueId|string||
 |BackupManagementServerUniqueId|string||
 |BackupManagementType|string||
+|Category|string||
 |CountOfAlertsConsolidated|int||
+|OperationName|string||
 |ProtectedContainerUniqueId|string||
 |RecommendedAction|string||
+|ResourceId|string||
 |SchemaVersion|string||
+|SourceSystem|string||
 |State|string||
 |StorageUniqueId|string||
-|VaultUniqueId|string||
+|TimeGenerated|datetime||
 |Type|string||
+|VaultUniqueId|string||

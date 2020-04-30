@@ -4,9 +4,9 @@ description: Reference for BlockchainProxyLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # BlockchainProxyLog
@@ -30,29 +30,29 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
+|Agent|string||
+|BlockchainMemberName|string||
+|BlockchainNodeName|string||
 |Category|string||
+|Code|string||
+|Consortium|string||
+|EthMethod|string||
+|LogLevel|string||
+|NodeHost|string||
+|NodeLocation|string||
+|OperationName|string||
+|PublicUser|string||
+|Remote|string||
+|RequestMethodName|string||
+|RequestSize|int||
+|RequestTime|real||
 |Resource|string||
 |ResourceGroup|string||
-|ResourceProvider|string||
-|SubscriptionId|string||
-|LogLevel|string||
-|NodeLocation|string||
-|BlockchainNodeName|string||
-|EthMethod|string||
-|Agent|string||
-|Code|string||
-|NodeHost|string||
-|RequestMethodName|string||
-|BlockchainMemberName|string||
-|Consortium|string||
-|Remote|string||
-|RequestSize|int||
-|Tenant|string||
-|PublicUser|string||
-|RequestTime|real||
-|Type|string||
 |_ResourceId|string||
+|ResourceId|string||
+|ResourceProvider|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|Tenant|string||
+|TimeGenerated|datetime||
+|Type|string||

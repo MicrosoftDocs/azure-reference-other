@@ -4,9 +4,9 @@ description: Reference for WaaSUpdateStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WaaSUpdateStatus
@@ -27,29 +27,29 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
 |Computer|string||
 |ComputerID|string||
-|OSFamily|string||
-|OSName|string||
-|OSVersion|string||
-|OSBuild|string||
-|OSRevisionNumber|int||
-|OSArchitecture|string||
-|OSEdition|string||
-|OSServicingBranch|string||
 |DownloadMode|string||
 |FeatureDeferralDays|int||
-|FeaturePauseState|string||
 |FeaturePauseDays|int||
-|QualityDeferralDays|int||
-|QualityPauseState|string||
-|QualityPauseDays|int||
-|OSCurrentStatus|string||
-|OSFeatureUpdateStatus|string||
-|OSQualityUpdateStatus|string||
-|OSSecurityUpdateStatus|string||
-|NeedAttentionStatus|string||
+|FeaturePauseState|string||
 |LastScan|datetime||
+|NeedAttentionStatus|string||
+|OSArchitecture|string||
+|OSBuild|string||
+|OSCurrentStatus|string||
+|OSEdition|string||
+|OSFamily|string||
+|OSFeatureUpdateStatus|string||
+|OSName|string||
+|OSQualityUpdateStatus|string||
+|OSRevisionNumber|int||
+|OSSecurityUpdateStatus|string||
+|OSServicingBranch|string||
+|OSVersion|string||
+|QualityDeferralDays|int||
+|QualityPauseDays|int||
+|QualityPauseState|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

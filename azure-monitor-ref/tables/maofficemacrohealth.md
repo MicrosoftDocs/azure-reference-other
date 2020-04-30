@@ -4,9 +4,9 @@ description: Reference for MAOfficeMacroHealth table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeMacroHealth
@@ -27,22 +27,22 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OSVersion|string||
-|OfficeAppRelease|string||
-|OfficeMacroIssueId|string||
-|DevicesWithOfficeApplicationInstalled|int||
-|DevicesWithOfficeApplicationLoaded|int||
-|RuntimeErrorsOnTarget|int||
 |CompileErrorsOnTarget|int||
 |DevicesWithAlertOnSource|int||
 |DevicesWithAlertOnTarget|int||
-|DevicesWithRuntimeErrorsOnSource|int||
-|DevicesWithRuntimeErrorsOnTarget|int||
-|DevicesWithRuntimeErrorsOnTargetPercentForCommercial|real||
 |DevicesWithCompileErrorsOnSource|int||
 |DevicesWithCompileErrorsOnTarget|int||
 |DevicesWithCompileErrorsOnTargetPercentForCommercial|real||
+|DevicesWithOfficeApplicationInstalled|int||
+|DevicesWithOfficeApplicationLoaded|int||
+|DevicesWithRuntimeErrorsOnSource|int||
+|DevicesWithRuntimeErrorsOnTarget|int||
+|DevicesWithRuntimeErrorsOnTargetPercentForCommercial|real||
 |HealthStatus|string||
+|OfficeAppRelease|string||
+|OfficeMacroIssueId|string||
+|OSVersion|string||
+|RuntimeErrorsOnTarget|int||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

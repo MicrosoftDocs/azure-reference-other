@@ -4,9 +4,9 @@ description: Reference for UpdateSummary table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # UpdateSummary
@@ -34,30 +34,30 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ManagementGroupName|string||
-|SourceComputerId|string||
-|OldestMissingSecurityUpdateInDays|int||
-|OldestMissingSecurityUpdateBucket|string||
-|WindowsUpdateSetting|string||
-|WindowsUpdateAgentVersion|string||
-|WSUSServer|string||
 |Computer|string||
-|OsVersion|string||
-|NETRuntimeVersion|string||
-|CriticalUpdatesMissing|int||
-|SecurityUpdatesMissing|int||
-|OtherUpdatesMissing|int||
-|TotalUpdatesMissing|int||
-|RestartPending|bool||
-|SubscriptionId|string||
-|ResourceGroup|string||
-|ResourceProvider|string||
-|Resource|string||
-|ResourceId|string||
-|ResourceType|string||
 |ComputerEnvironment|string||
-|VMUUID|string||
-|Type|string||
+|CriticalUpdatesMissing|int||
+|ManagementGroupName|string||
+|NETRuntimeVersion|string||
+|OldestMissingSecurityUpdateBucket|string||
+|OldestMissingSecurityUpdateInDays|int||
+|OsVersion|string||
+|OtherUpdatesMissing|int||
+|Resource|string||
+|ResourceGroup|string||
 |_ResourceId|string||
+|ResourceId|string||
+|ResourceProvider|string||
+|ResourceType|string||
+|RestartPending|bool||
+|SecurityUpdatesMissing|int||
+|SourceComputerId|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|TimeGenerated|datetime||
+|TotalUpdatesMissing|int||
+|Type|string||
+|VMUUID|string||
+|WindowsUpdateAgentVersion|string||
+|WindowsUpdateSetting|string||
+|WSUSServer|string||

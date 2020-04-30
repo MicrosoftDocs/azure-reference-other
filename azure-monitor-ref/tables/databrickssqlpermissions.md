@@ -4,9 +4,9 @@ description: Reference for DatabricksSQLPermissions table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DatabricksSQLPermissions
@@ -27,20 +27,20 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|OperationVersion|string||
+|ActionName|string||
 |Category|string||
 |Identity|string||
-|SourceIPAddress|string||
 |LogId|string||
-|ServiceName|string||
-|UserAgent|string||
-|SessionId|string||
-|ActionName|string||
+|OperationName|string||
+|OperationVersion|string||
 |RequestId|string||
-|Response|string||
 |RequestParams|string||
+|ResourceId|string||
+|Response|string||
+|ServiceName|string||
+|SessionId|string||
+|SourceIPAddress|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||
+|UserAgent|string||

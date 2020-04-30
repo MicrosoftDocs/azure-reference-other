@@ -4,9 +4,9 @@ description: Reference for ComputerGroup table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ComputerGroup
@@ -32,13 +32,13 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string|OpsManager for all records of this type.|
-|TimeGenerated|datetime|Date and time the computer group was created or updated.|
 |Computer|string|Name of the member computer.|
 |Group|string|Name of the group.|
-|GroupId|string|ID of the group.|
-|GroupSourceName|string|Name of the source that the group was collected from. For Active Directory this is the domain name.|
-|GroupSource|string|Source that group was collected from. Possible values are ActiveDirectory WSUSWSUSClientTargeting.|
 |GroupFullName|string|Full path to the group including the source and source name.|
-|Type|string||
+|GroupId|string|ID of the group.|
+|GroupSource|string|Source that group was collected from. Possible values are ActiveDirectory WSUSWSUSClientTargeting.|
+|GroupSourceName|string|Name of the source that the group was collected from. For Active Directory this is the domain name.|
 |_ResourceId|string||
+|SourceSystem|string|OpsManager for all records of this type.|
+|TimeGenerated|datetime|Date and time the computer group was created or updated.|
+|Type|string||

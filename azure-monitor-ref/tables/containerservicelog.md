@@ -4,9 +4,9 @@ description: Reference for ContainerServiceLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ContainerServiceLog
@@ -31,14 +31,14 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|Command|string||
 |Computer|string||
-|TimeOfCommand|datetime||
 |ContainerID|string||
 |Image|string||
 |ImageTag|string||
 |Repository|string||
-|Command|string||
-|Type|string||
 |_ResourceId|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
+|TimeOfCommand|datetime||
+|Type|string||

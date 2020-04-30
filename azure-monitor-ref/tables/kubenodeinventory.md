@@ -4,9 +4,9 @@ description: Reference for KubeNodeInventory table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # KubeNodeInventory
@@ -30,19 +30,19 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Computer|string||
-|ClusterName|string||
 |ClusterId|string||
-|LastTransitionTimeReady|datetime||
-|Labels|string||
-|Status|string||
+|ClusterName|string||
+|Computer|string||
+|CreationTimeStamp|datetime||
+|DockerVersion|string||
 |KubeletVersion|string||
 |KubeProxyVersion|string||
-|CreationTimeStamp|datetime||
 |KubernetesProviderID|string||
+|Labels|string||
+|LastTransitionTimeReady|datetime||
 |OperatingSystem|string||
-|DockerVersion|string||
-|Type|string||
 |_ResourceId|string||
+|SourceSystem|string||
+|Status|string||
+|TimeGenerated|datetime||
+|Type|string||

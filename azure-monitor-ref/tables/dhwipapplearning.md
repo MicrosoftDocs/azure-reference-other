@@ -4,9 +4,9 @@ description: Reference for DHWipAppLearning table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DHWipAppLearning
@@ -32,9 +32,9 @@ ms.date: 3/16/2020
 |ComputerID|string||
 |ConfigMgrClientID|string||
 |EventFiredTime|datetime||
+|TimeGenerated|datetime||
+|Type|string||
 |WipActionType|string||
 |WipAppId|string||
 |WipAppIdType|string||
 |WipAppRuleType|string||
-|TimeGenerated|datetime||
-|Type|string||

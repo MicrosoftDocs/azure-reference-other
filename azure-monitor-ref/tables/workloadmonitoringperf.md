@@ -4,9 +4,9 @@ description: Reference for WorkloadMonitoringPerf table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WorkloadMonitoringPerf
@@ -32,19 +32,19 @@ ms.date: 3/16/2020
 |Column|Type|Description|
 |---|---|---|
 |Computer|string||
-|ObjectName|string||
 |CounterName|string||
 |InstanceName|string||
-|PerfCounterValue|real||
-|TimeGenerated|datetime||
-|SourceSystem|string||
-|ProcessorInstance|string||
-|LogicalDisk|string||
-|PhysicalDisk|string||
-|NetworkAdapter|string||
-|MemoryInstance|string||
 |IsSystemDisk|string||
-|ServiceName|string||
-|SecureChannel|string||
+|LogicalDisk|string||
+|MemoryInstance|string||
+|NetworkAdapter|string||
+|ObjectName|string||
+|PerfCounterValue|real||
+|PhysicalDisk|string||
 |ProcessorInformation|string||
+|ProcessorInstance|string||
+|SecureChannel|string||
+|ServiceName|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

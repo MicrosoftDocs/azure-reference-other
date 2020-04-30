@@ -4,9 +4,9 @@ description: Reference for Operation table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # Operation
@@ -27,18 +27,18 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|Computer|string|Name of a physical or virtual machine having membership with Log Analytics agent.|
+|CorrelationId|string|GUID that is shared with telemetry belonging to the same uber action.|
+|Detail|string|User friendly string that describes further details about the operation|
+|ErrorId|string|Deprecated.|
+|HelpLink|string|Reference URL for additional contextual information.|
+|ManagementGroupName|string|Name of the Operations Manager management group for System Center Operations Manager agents.|
+|OperationCategory|string|Name of the area that produced the record.|
+|OperationKey|string|Operation ID. Can be a GUID or string.|
+|OperationStatus|string|Operation status description. Ccommon values include Warning Succeeded Failed Error.|
+|_ResourceId|string||
+|Solution|string|Name of the managed solution that produced the record. Can also include other sources such as RestAPI.|
+|SourceComputerId|string|Unique GUID identifier for a computer.|
 |SourceSystem|string|Value is OpsManager for all records in this table.|
 |TimeGenerated|datetime|Date and time that the record was created.|
-|ManagementGroupName|string|Name of the Operations Manager management group for System Center Operations Manager agents.|
-|SourceComputerId|string|Unique GUID identifier for a computer.|
-|OperationStatus|string|Operation status description. Ccommon values include Warning Succeeded Failed Error.|
-|Computer|string|Name of a physical or virtual machine having membership with Log Analytics agent.|
-|Detail|string|User friendly string that describes further details about the operation|
-|OperationCategory|string|Name of the area that produced the record.|
-|Solution|string|Name of the managed solution that produced the record. Can also include other sources such as RestAPI.|
-|HelpLink|string|Reference URL for additional contextual information.|
-|OperationKey|string|Operation ID. Can be a GUID or string.|
-|ErrorId|string|Deprecated.|
-|CorrelationId|string|GUID that is shared with telemetry belonging to the same uber action.|
 |Type|string||
-|_ResourceId|string||

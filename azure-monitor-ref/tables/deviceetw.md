@@ -4,9 +4,9 @@ description: Reference for DeviceEtw table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DeviceEtw
@@ -27,21 +27,21 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|Computer|string||
-|TimeGenerated|datetime||
-|EventId|int||
-|status|int||
-|appName|string||
-|type|int||
-|period|int||
-|wakeEnabled|bool||
-|EventName|string||
-|ThreadId|int||
-|ProcessId|string||
 |ActivityId|string||
-|ProviderId|string||
-|tags|string||
-|SerialNumber|string||
+|appName|string||
+|Computer|string||
 |DeviceType|string||
+|EventId|int||
+|EventName|string||
+|period|int||
+|ProcessId|string||
+|ProviderId|string||
+|SerialNumber|string||
+|SourceSystem|string||
+|status|int||
+|tags|string||
+|ThreadId|int||
+|TimeGenerated|datetime||
 |Type|string||
+|type|int||
+|wakeEnabled|bool||

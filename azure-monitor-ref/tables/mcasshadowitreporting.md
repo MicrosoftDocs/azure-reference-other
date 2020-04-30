@@ -4,9 +4,9 @@ description: Reference for McasShadowItReporting table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # McasShadowItReporting
@@ -27,24 +27,24 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|StreamName|string||
-|MachineName|string||
-|MachineId|string||
-|TotalEvents|int||
-|BlockedEvents|int||
-|UploadedBytes|int||
-|TotalBytes|int||
-|DownloadedBytes|int||
-|IpAddress|string||
-|UserName|string||
-|EnrichedUserName|string||
-|AppName|string||
+|AppCategory|string||
 |AppId|string||
 |AppInstance|string||
-|AppCategory|string||
-|AppTags|dynamic||
+|AppName|string||
 |AppScore|int||
+|AppTags|dynamic||
+|BlockedEvents|int||
+|DownloadedBytes|int||
+|EnrichedUserName|string||
+|IpAddress|string||
+|MachineId|string||
+|MachineName|string||
+|SourceSystem|string||
+|StreamName|string||
+|TenantId|string||
+|TimeGenerated|datetime||
+|TotalBytes|int||
+|TotalEvents|int||
 |Type|string||
+|UploadedBytes|int||
+|UserName|string||

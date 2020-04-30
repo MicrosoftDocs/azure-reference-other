@@ -4,9 +4,9 @@ description: Reference for MADeviceNRT table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MADeviceNRT
@@ -27,14 +27,14 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|DeviceFirstSeenDate|datetime||
 |DeviceId|string||
 |DeviceName|string||
 |Manufacturer|string||
 |ModelFamily|string||
-|OSVersion|string||
 |OSBuildNumber|int||
 |OSRevisionNumber|int||
-|DeviceFirstSeenDate|datetime||
+|OSVersion|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

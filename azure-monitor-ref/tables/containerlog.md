@@ -4,9 +4,9 @@ description: Reference for ContainerLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ContainerLog
@@ -32,16 +32,16 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string|Deprecated.|
-|TimeGenerated|datetime|Date and time the record was created.|
 |Computer|string|Computer/node that's generating the log.|
-|TimeOfCommand|datetime|Time that the agent processed the log. This is an optional field mainly useful for troubleshooting latency issues on the agent.|
 |ContainerID|string|Container ID for log source as seen by Docker engine.|
 |Image|string|Container Image for log source as seen by Docker engine.|
 |ImageTag|string|Used by Container solution only. Not populated by Azure Monitor for Containers.|
-|Repository|string|Used by Container solution only. Not populated by Azure Monitor for Containers.|
-|Name|string|Unique name of the container the form  PODUid/ContainerName.|
 |LogEntry|string|Actual log line.|
 |LogEntrySource|string|Source of the log line. Possible values are stdout or stderr.|
-|Type|string||
+|Name|string|Unique name of the container the form  PODUid/ContainerName.|
+|Repository|string|Used by Container solution only. Not populated by Azure Monitor for Containers.|
 |_ResourceId|string||
+|SourceSystem|string|Deprecated.|
+|TimeGenerated|datetime|Date and time the record was created.|
+|TimeOfCommand|datetime|Time that the agent processed the log. This is an optional field mainly useful for troubleshooting latency issues on the agent.|
+|Type|string||

@@ -4,9 +4,9 @@ description: Reference for HuntingBookmark table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # HuntingBookmark
@@ -27,23 +27,23 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
 |BookmarkId|string|Guid - the bookmark ARM resource name|
 |BookmarkName|string|Bookmark name given by the user|
 |BookmarkType|string|Can be used to mark bookmark origin - currently not used|
 |CreatedBy|string|JSON object with the user who created the bookmark, including: ObjectID, email and name|
-|UpdatedBy|string|JSON object with the user who last updated the bookmark, including: ObjectID, email and name|
 |CreatedTime|datetime|The timestamp of bookmark first creation time|
-|LastUpdatedTime|datetime|The timestamp of bookmark last update time|
 |EventTime|datetime|The timestamp of the original event that is bookmarked|
-|QueryText|string|Original log analytics query text|
+|LastUpdatedTime|datetime|The timestamp of bookmark last update time|
+|Notes|string|Notes provided by user|
+|QueryEndTime|datetime|Query time range end time|
 |QueryResultRow|string|JSON object with a single result row of the query|
 |QueryStartTime|datetime|Query time range start time|
-|QueryEndTime|datetime|Query time range end time|
-|Notes|string|Notes provided by user|
-|SoftDeleted|bool|Was the bookmark deleted by user|
-|Tags|string|Comma seperated list of tags provided by user|
-|SourceSystem|string||
-|Type|string||
+|QueryText|string|Original log analytics query text|
 |_ResourceId|string||
+|SoftDeleted|bool|Was the bookmark deleted by user|
+|SourceSystem|string||
+|Tags|string|Comma seperated list of tags provided by user|
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|Type|string||
+|UpdatedBy|string|JSON object with the user who last updated the bookmark, including: ObjectID, email and name|

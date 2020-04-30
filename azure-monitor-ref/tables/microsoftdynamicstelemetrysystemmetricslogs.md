@@ -4,9 +4,9 @@ description: Reference for MicrosoftDynamicsTelemetrySystemMetricsLogs table in 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MicrosoftDynamicsTelemetrySystemMetricsLogs
@@ -24,13 +24,13 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log.|
 |Category|string|Log category|
 |EnvironmentId|string|Unique identifier for an environment as shown in Lifecycle Services|
+|EventName|string|Name of the event|
+|_ResourceId|string||
 |Role|string|Type of the machine (AOS/BI) emitting the events|
 |RoleInstance|string|Name of the machine emitting the events|
-|EventName|string|Name of the event|
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log.|
 |Type|string||
-|_ResourceId|string||

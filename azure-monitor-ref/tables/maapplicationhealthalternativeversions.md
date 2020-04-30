@@ -4,9 +4,9 @@ description: Reference for MAApplicationHealthAlternativeVersions table in Azure
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAApplicationHealthAlternativeVersions
@@ -27,15 +27,15 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OSVersion|string||
-|ProgramId|string||
+|AdoptionStatus|string||
+|AppLanguage|string||
 |AppName|string||
 |AppVendor|string||
 |AppVersion|string||
-|AppLanguage|string||
-|AdoptionStatus|string||
 |DevicesWithCrashesPercentOnTargetForCommercial|real||
+|OSVersion|string||
+|ProgramId|string||
 |SessionsWithCrashesPercentOnTargetForCommercial|real||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

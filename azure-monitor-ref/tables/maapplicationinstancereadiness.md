@@ -4,9 +4,9 @@ description: Reference for MAApplicationInstanceReadiness table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAApplicationInstanceReadiness
@@ -27,16 +27,16 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|DeploymentPlanId|string||
-|DeviceId|string||
+|AppLanguage|string||
 |AppName|string||
 |AppVendor|string||
 |AppVersion|string||
-|AppLanguage|string||
-|ProgramId|string||
-|Issue|string||
 |ConfigMgrClientID|string||
+|DeploymentPlanId|string||
+|DeviceId|string||
 |DeviceName|string||
+|Issue|string||
+|ProgramId|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

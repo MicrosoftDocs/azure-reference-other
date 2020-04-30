@@ -4,9 +4,9 @@ description: Reference for SecurityEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SecurityEvent
@@ -32,25 +32,14 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
-|SourceSystem|string||
-|Account|string||
-|AccountType|string||
-|Computer|string||
-|EventSourceName|string||
-|Channel|string||
-|Task|int||
-|Level|string||
-|EventData|string||
-|EventID|int||
-|Activity|string||
-|SourceComputerId|string||
-|ManagementGroupName|string||
 |AccessMask|string||
+|Account|string||
 |AccountDomain|string||
 |AccountExpires|string||
 |AccountName|string||
 |AccountSessionIdentifier|string||
+|AccountType|string||
+|Activity|string||
 |AdditionalInfo|string||
 |AdditionalInfo2|string||
 |AllowedToDelegateTo|string||
@@ -63,6 +52,7 @@ ms.date: 3/16/2020
 |AuthenticationServer|string||
 |AuthenticationService|int||
 |AuthenticationType|string||
+|AzureDeploymentID|string||
 |CACertificateHash|string||
 |CalledStationID|string||
 |CallerProcessId|string||
@@ -71,6 +61,7 @@ ms.date: 3/16/2020
 |CAPublicKeyHash|string||
 |CategoryId|string||
 |CertificateDatabaseHash|string||
+|Channel|string||
 |ClassId|string||
 |ClassName|string||
 |ClientAddress|string||
@@ -78,6 +69,7 @@ ms.date: 3/16/2020
 |ClientName|string||
 |CommandLine|string||
 |CompatibleIds|string||
+|Computer|string||
 |DCDNSName|string||
 |DeviceDescription|string||
 |DeviceId|string||
@@ -90,6 +82,9 @@ ms.date: 3/16/2020
 |EAPType|string||
 |ElevatedToken|string||
 |ErrorCode|int||
+|EventData|string||
+|EventID|int||
+|EventSourceName|string||
 |ExtendedQuarantineState|string||
 |FailureReason|string||
 |FileHash|string||
@@ -109,6 +104,7 @@ ms.date: 3/16/2020
 |IpAddress|string||
 |IpPort|string||
 |KeyLength|int||
+|Level|string||
 |LmPackageName|string||
 |LocationInformation|string||
 |LockoutDuration|string||
@@ -124,6 +120,7 @@ ms.date: 3/16/2020
 |MachineAccountQuota|string||
 |MachineInventory|string||
 |MachineLogon|string||
+|ManagementGroupName|string||
 |MandatoryLabel|string||
 |MaxPasswordAge|string||
 |MemberName|string||
@@ -172,8 +169,8 @@ ms.date: 3/16/2020
 |Process|string||
 |ProcessId|string||
 |ProcessName|string||
-|Properties|string||
 |ProfilePath|string||
+|Properties|string||
 |ProtocolSequence|string||
 |ProxyPolicyName|string||
 |QuarantineHelpURL|string||
@@ -186,6 +183,7 @@ ms.date: 3/16/2020
 |RemotePort|string||
 |Requester|string||
 |RequestId|string||
+|_ResourceId|string||
 |RestrictedAdminMode|string||
 |RowsDeleted|string||
 |SamAccountName|string||
@@ -200,11 +198,14 @@ ms.date: 3/16/2020
 |ShareLocalPath|string||
 |ShareName|string||
 |SidHistory|string||
+|SourceComputerId|string||
+|SourceSystem|string||
 |Status|string||
-|SubjectAccount|string||
+|StorageAccount|string||
 |SubcategoryGuid|string||
 |SubcategoryId|string||
 |Subject|string||
+|SubjectAccount|string||
 |SubjectDomainName|string||
 |SubjectKeyIdentifier|string||
 |SubjectLogonId|string||
@@ -227,23 +228,22 @@ ms.date: 3/16/2020
 |TargetUser|string||
 |TargetUserName|string||
 |TargetUserSid|string||
+|Task|int||
 |TemplateContent|string||
 |TemplateDSObjectFQDN|string||
 |TemplateInternalName|string||
 |TemplateOID|string||
 |TemplateSchemaVersion|string||
 |TemplateVersion|string||
+|TimeGenerated|datetime||
 |TokenElevationType|string||
 |TransmittedServices|string||
+|Type|string||
 |UserAccountControl|string||
 |UserParameters|string||
 |UserPrincipalName|string||
 |UserWorkstations|string||
-|VirtualAccount|string||
 |VendorIds|string||
+|VirtualAccount|string||
 |Workstation|string||
 |WorkstationName|string||
-|StorageAccount|string||
-|AzureDeploymentID|string||
-|Type|string||
-|_ResourceId|string||

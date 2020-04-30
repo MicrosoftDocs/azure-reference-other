@@ -4,9 +4,9 @@ description: Reference for WUDOAggregatedStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WUDOAggregatedStatus
@@ -27,13 +27,13 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ContentType|string||
+|BWOptPercent28Days|real||
 |BytesFromCDN|long||
+|BytesFromGroupPeers|long||
 |BytesFromIntPeers|long||
 |BytesFromPeers|long||
-|BytesFromGroupPeers|long||
-|BWOptPercent28Days|real||
+|ContentType|string||
 |DeviceCount|int||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

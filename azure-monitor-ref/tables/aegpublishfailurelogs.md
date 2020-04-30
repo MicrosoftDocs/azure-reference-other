@@ -4,9 +4,9 @@ description: Reference for AegPublishFailureLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AegPublishFailureLogs
@@ -30,13 +30,13 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Time|datetime|Time when log was generated.|
-|SubResourceName|string|Name of the sub resource.|
 |Category|string|Log category name.|
-|OperationName|string|Name of the operation.|
 |Message|string|Log message for the user.|
-|Type|string||
+|OperationName|string|Name of the operation.|
 |_ResourceId|string||
+|SourceSystem|string||
+|SubResourceName|string|Name of the sub resource.|
+|TenantId|string||
+|Time|datetime|Time when log was generated.|
+|TimeGenerated|datetime||
+|Type|string||

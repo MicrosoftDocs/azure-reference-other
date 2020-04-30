@@ -4,9 +4,9 @@ description: Reference for MAOfficeAppReadiness table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeAppReadiness
@@ -27,26 +27,26 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
 |DeploymentPlanId|string||
-|OfficeAppId|string||
-|OfficeAppName|string||
-|OfficeAppMajorVersion|int||
-|OfficeAppVersion|string||
-|OfficeAppRelease|string||
-|OfficeAppArchitecture|string||
-|TotalInstalls|int||
-|MonthlyActiveUsers|int||
+|DevicesWithIssues|int||
+|Guidance|string||
 |Importance|string||
+|Issue|string||
+|MonthlyActiveUsers|int||
+|Notes|string||
+|OfficeAppArchitecture|string||
+|OfficeAppId|string||
+|OfficeAppMajorVersion|int||
+|OfficeAppName|string||
+|OfficeAppRelease|string||
+|OfficeAppVersion|string||
+|Remediation|string||
+|RiskAssessment|string||
+|SourceSystem|string||
 |TestOwner|string||
 |TestPlan|string||
 |TestResult|string||
-|UpgradeDecision|string||
-|Notes|string||
-|Remediation|string||
-|RiskAssessment|string||
-|Issue|string||
-|Guidance|string||
-|DevicesWithIssues|int||
+|TimeGenerated|datetime||
+|TotalInstalls|int||
 |Type|string||
+|UpgradeDecision|string||

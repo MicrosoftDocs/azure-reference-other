@@ -4,9 +4,9 @@ description: Reference for DHCPActivity table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DHCPActivity
@@ -27,15 +27,15 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|Computer|string|DHCP server that produced the activity log|
+|Description|string|Description of the DHCP activity|
+|EventID|int|Event ID of the DHCP activity|
+|HostName|string|Hostname of the DHCP client|
+|IPAddress|string|IP address of the DHCP client|
+|MACAddress|string|MAC address of the DHCP client|
+|ManagementGroupName|string|Workspace ID from OpsManager|
+|_ResourceId|string||
+|SourceSystem|string|Source System of Solution (OpsManager)|
 |TenantId|string||
 |TimeGenerated|datetime|Timestamp (UTC) of the DHCP activity|
-|ManagementGroupName|string|Workspace ID from OpsManager|
-|SourceSystem|string|Source System of Solution (OpsManager)|
-|Computer|string|DHCP server that produced the activity log|
-|EventID|int|Event ID of the DHCP activity|
-|Description|string|Description of the DHCP activity|
-|IPAddress|string|IP address of the DHCP client|
-|HostName|string|Hostname of the DHCP client|
-|MACAddress|string|MAC address of the DHCP client|
 |Type|string||
-|_ResourceId|string||

@@ -4,9 +4,9 @@ description: Reference for MAWindowsDeploymentStatusNRT table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAWindowsDeploymentStatusNRT
@@ -27,21 +27,21 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|DeploymentStage|string||
 |DeviceId|string||
 |DeviceName|string||
+|ErrorCode|int||
+|ErrorDescription|string||
+|ErrorFriendlyName|string||
+|ExtendedErrorCode|int||
 |Manufacturer|string||
 |Model|string||
+|RecommendedAction|string||
 |SourceBuild|string||
+|SourceSystem|string||
 |SourceVersion|string||
-|DeploymentStage|string||
 |TargetBuild|string||
 |TargetVersion|string||
-|ErrorCode|int||
-|ExtendedErrorCode|int||
-|ErrorDescription|string||
-|RecommendedAction|string||
-|ErrorFriendlyName|string||
-|UpdateSource|string||
+|TimeGenerated|datetime||
 |Type|string||
+|UpdateSource|string||

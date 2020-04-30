@@ -4,9 +4,9 @@ description: Reference for UAApp table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # UAApp
@@ -27,29 +27,29 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|AppCategory|string||
+|AppLanguage|string||
+|AppName|string||
+|AppOwner|string||
+|AppType|string||
+|AppVendor|string||
+|AppVersion|string||
 |Computer|string||
 |ComputerID|string||
-|AppVendor|string||
-|AppName|string||
-|AppVersion|string||
-|AppLanguage|string||
-|TotalInstalls|int||
 |ComputersWithIssues|int||
-|MonthlyActiveComputers|int||
-|PercentActiveComputers|string||
-|Issue|string||
-|UpgradeAssessment|string||
 |Guidance|string||
 |Importance|string||
-|UpgradeDecision|string||
-|ReadyForWindows|string||
 |IsRollup|bool||
+|Issue|string||
+|MonthlyActiveComputers|int||
+|PercentActiveComputers|string||
+|ReadyForWindows|string||
 |RollupLevel|string||
-|AppType|string||
-|AppCategory|string||
-|AppOwner|string||
+|SourceSystem|string||
 |TestPlan|string||
 |TestResult|string||
+|TimeGenerated|datetime||
+|TotalInstalls|int||
 |Type|string||
+|UpgradeAssessment|string||
+|UpgradeDecision|string||

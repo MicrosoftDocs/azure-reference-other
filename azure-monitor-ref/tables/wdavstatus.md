@@ -4,9 +4,9 @@ description: Reference for WDAVStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WDAVStatus
@@ -27,21 +27,21 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|ApplicationVersion|string||
+|CloudBlockLevel|string||
 |Computer|string||
 |ComputerID|string||
-|OSName|string||
-|EngineVersion|string||
-|ApplicationVersion|string||
 |DefinitionVersion|string||
-|UpdateStatus|string||
 |DetailedStatus|string||
+|EngineVersion|string||
+|LastDefinitionUpdateTime|datetime||
+|LastScan|datetime||
+|MoreInformation|string||
+|OSName|string||
 |ProtectionState|string||
-|CloudBlockLevel|string||
 |PuaMode|string||
 |SampleSubmission|string||
-|LastDefinitionUpdateTime|datetime||
-|MoreInformation|string||
-|LastScan|datetime||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||
+|UpdateStatus|string||

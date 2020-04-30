@@ -1,7 +1,15 @@
 - name: Azure Monitor Reference
   href: index.md
 - name: Logs
+  expanded: true
   items:
+  - name: Index
+    expanded: true
+    items:
+    - name: By category
+      href: tables/tables-category.md
+    - name: By resource type
+      href: tables/tables-resourcetype.md
   - name: ADAssessmentRecommendation
     href: tables/adassessmentrecommendation.md
   - name: ADFSSISIntegrationRuntimeLogs
@@ -30,6 +38,8 @@
     href: tables/appdependencies.md
   - name: AppEvents
     href: tables/appevents.md
+  - name: AppExceptions
+    href: tables/appexceptions.md
   - name: AppMetrics
     href: tables/appmetrics.md
   - name: AppPageViews
@@ -60,6 +70,8 @@
     href: tables/auditlogs.md
   - name: AzureActivity
     href: tables/azureactivity.md
+  - name: AzureDevOpsAuditing
+    href: tables/azuredevopsauditing.md
   - name: AzureMetrics
     href: tables/azuremetrics.md
   - name: ComputerGroup
@@ -110,8 +122,6 @@
     href: tables/perf.md
   - name: SignalRServiceDiagnosticLogs
     href: tables/signalrservicediagnosticlogs.md
-  - name: SigninLogs
-    href: tables/signinlogs.md
   - name: StorageBlobLogs
     href: tables/storagebloblogs.md
   - name: StorageFileLogs
@@ -140,3 +150,15 @@
     href: tables/w3ciislog.md
   - name: WireData
     href: tables/wiredata.md
+  - name: WVDCheckpoints
+    href: tables/wvdcheckpoints.md
+  - name: WVDConnections
+    href: tables/wvdconnections.md
+  - name: WVDErrors
+    href: tables/wvderrors.md
+  - name: WVDFeeds
+    href: tables/wvdfeeds.md
+  - name: WVDHostRegistrations
+    href: tables/wvdhostregistrations.md
+  - name: WVDManagement
+    href: tables/wvdmanagement.md

@@ -4,9 +4,9 @@ description: Reference for SecurityAlert table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SecurityAlert
@@ -31,30 +31,30 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
-|DisplayName|string||
+|AlertLink|string||
 |AlertName|string||
 |AlertSeverity|string||
-|Description|string||
-|ProviderName|string||
-|VendorName|string||
-|VendorOriginalId|string||
-|SystemAlertId|string||
-|ResourceId|string||
-|SourceComputerId|string||
 |ConfidenceLevel|string||
 |ConfidenceScore|real||
-|IsIncident|bool||
-|StartTime|datetime||
+|Description|string||
+|DisplayName|string||
 |EndTime|datetime||
-|ProcessingEndTime|datetime||
-|RemediationSteps|string||
-|ExtendedProperties|string||
 |Entities|string||
-|WorkspaceSubscriptionId|string||
-|WorkspaceResourceGroup|string||
 |ExtendedLinks|string||
-|ProductName|string||
+|ExtendedProperties|string||
+|IsIncident|bool||
+|ProcessingEndTime|datetime||
 |ProductComponentName|string||
-|AlertLink|string||
+|ProductName|string||
+|ProviderName|string||
+|RemediationSteps|string||
+|ResourceId|string||
+|SourceComputerId|string||
+|StartTime|datetime||
+|SystemAlertId|string||
+|TimeGenerated|datetime||
 |Type|string||
+|VendorName|string||
+|VendorOriginalId|string||
+|WorkspaceResourceGroup|string||
+|WorkspaceSubscriptionId|string||

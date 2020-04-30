@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesAccountLogon table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AADDomainServicesAccountLogon
@@ -31,27 +31,27 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
 |Category|string||
-|ResultType|string||
-|ResultDescription|string||
-|CorrelationId|string||
-|IpAddress|string||
-|IpPort|string||
-|ServiceName|string||
-|TicketOptions|string||
-|PreAuthType|string||
 |CertIssuerName|string||
 |CertSerialNumber|string||
 |CertThumbprint|string||
-|FailureCode|string||
-|MappingBy|string||
 |ClientUserName|string||
+|CorrelationId|string||
+|FailureCode|string||
+|IpAddress|string||
+|IpPort|string||
 |MappedName|string||
+|MappingBy|string||
+|OperationName|string||
 |PackageName|string||
+|PreAuthType|string||
 |RecordId|string||
-|Type|string||
+|ResourceId|string||
 |_ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
+|ServiceName|string||
+|SourceSystem|string||
+|TicketOptions|string||
+|TimeGenerated|datetime||
+|Type|string||

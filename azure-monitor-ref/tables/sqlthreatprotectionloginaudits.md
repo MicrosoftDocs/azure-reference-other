@@ -4,9 +4,9 @@ description: Reference for SqlThreatProtectionLoginAudits table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SqlThreatProtectionLoginAudits
@@ -28,25 +28,25 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
-|Computer|string||
-|ServerInstanceType|string||
-|ServerInstanceName|string||
-|ServerVersion|string||
+|AgentId|string||
 |ApplicationName|string||
+|Computer|string||
 |ConnectionId|string||
 |ErrorNumber|int||
 |ErrorState|int||
-|IsSuccess|bool||
 |IpAddress|string||
-|PrincipalName|string||
-|PasswordHashFirstNibble|string||
-|SourceSystem|string||
+|IsSuccess|bool||
 |ManagementGroupName|string||
-|AgentId|string||
-|SubscriptionId|string||
+|PasswordHashFirstNibble|string||
+|PrincipalName|string||
 |ResourceGroup|string||
-|ResourceProvider|string||
 |ResourceId|string||
+|ResourceProvider|string||
 |ResourceType|string||
+|ServerInstanceName|string||
+|ServerInstanceType|string||
+|ServerVersion|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|TimeGenerated|datetime||
 |Type|string||

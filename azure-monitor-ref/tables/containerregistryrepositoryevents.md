@@ -4,9 +4,9 @@ description: Reference for ContainerRegistryRepositoryEvents table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ContainerRegistryRepositoryEvents
@@ -30,26 +30,26 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OperationName|string||
-|LoginServer|string||
-|Identity|string||
-|Repository|string||
-|Tag|string||
-|Digest|string||
-|MediaType|string||
-|Size|int||
 |ArtifactType|string||
-|CorrelationId|string||
-|Region|string||
-|ResultType|string||
-|Category|string||
-|ResultDescription|string||
 |CallerIpAddress|string||
+|Category|string||
+|CorrelationId|string||
+|Digest|string||
 |DurationMs|string||
-|UserTenantId|string||
-|UserAgent|string||
-|Type|string||
+|Identity|string||
+|LoginServer|string||
+|MediaType|string||
+|OperationName|string||
+|Region|string||
+|Repository|string||
 |_ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
+|Size|int||
+|SourceSystem|string||
+|Tag|string||
+|TenantId|string||
+|TimeGenerated|datetime||
+|Type|string||
+|UserAgent|string||
+|UserTenantId|string||

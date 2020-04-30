@@ -4,9 +4,9 @@ description: Reference for AutoscaleScaleActionsLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AutoscaleScaleActionsLog
@@ -32,21 +32,21 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
 |Category|string||
-|ResultType|string||
-|ResultDescription|string||
 |CorrelationId|string||
-|TargetResourceId|string||
 |CreatedAsyncScaleActionJob|bool||
 |CreatedAsyncScaleActionJobId|string||
 |CurrentInstanceCount|int||
 |NewInstanceCount|int||
+|OperationName|string||
+|ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
 |ScaleActionMessage|string||
 |ScaleActionOperationId|string||
 |ScaleActionOperationStatus|string||
 |ScaleDirection|string||
+|SourceSystem|string||
+|TargetResourceId|string||
+|TimeGenerated|datetime||
 |Type|string||

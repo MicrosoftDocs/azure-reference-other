@@ -4,9 +4,9 @@ description: Reference for IntuneAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # IntuneAuditLogs
@@ -27,13 +27,13 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OperationName|string||
 |Category|string||
-|ResultType|string||
-|ResultDescription|string||
 |CorrelationId|string||
 |Identity|string||
+|OperationName|string||
 |Properties|string||
+|ResultDescription|string||
+|ResultType|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

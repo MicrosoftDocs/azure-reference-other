@@ -4,9 +4,9 @@ description: Reference for WindowsServerAssessmentRecommendation table in Azure 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WindowsServerAssessmentRecommendation
@@ -27,32 +27,32 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|AssessmentId|string||
-|RecommendationId|string||
-|Recommendation|string||
-|Description|string||
-|RecommendationResult|string||
-|TimeGenerated|datetime||
-|FocusAreaId|string||
-|FocusArea|string||
-|ActionAreaId|string||
 |ActionArea|string||
-|RecommendationWeight|real||
-|Computer|string||
-|AffectedObjectType|string||
+|ActionAreaId|string||
 |AffectedObjectName|string||
-|Domain|string||
-|Server|string||
+|AffectedObjectType|string||
+|AssessmentId|string||
 |Cluster|string||
+|Computer|string||
+|CustomData|string||
+|Description|string||
+|Domain|string||
+|FocusArea|string||
+|FocusAreaId|string||
 |HyperVMHost|string||
-|Ipv4Address|string||
-|OSVersion|string||
-|Technology|string||
-|WebServer|string||
-|WebSite|string||
 |IISApplication|string||
 |IISApplicationPool|string||
-|CustomData|string||
-|Type|string||
+|Ipv4Address|string||
+|OSVersion|string||
+|Recommendation|string||
+|RecommendationId|string||
+|RecommendationResult|string||
+|RecommendationWeight|real||
 |_ResourceId|string||
+|Server|string||
+|SourceSystem|string||
+|Technology|string||
+|TimeGenerated|datetime||
+|Type|string||
+|WebServer|string||
+|WebSite|string||
