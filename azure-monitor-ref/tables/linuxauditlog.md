@@ -4,9 +4,9 @@ description: Reference for LinuxAuditLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # LinuxAuditLog
@@ -28,21 +28,6 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
-|SourceComputerId|string||
-|ManagementGroup|string||
-|TimeUploaded|datetime||
-|ManagementGroupName|string||
-|ExternalAgentIp|string||
-|ResourceId|string||
-|Computer|string||
-|RecordType|string||
-|AuditID|string||
-|SerialNumber|string||
-|uid|long||
-|user|string||
-|node|string||
-|argc|long||
 |a0|string||
 |a1|string||
 |a2|string||
@@ -53,42 +38,57 @@ ms.date: 3/16/2020
 |a7|string||
 |a8|string||
 |a9|string||
-|auid|long||
-|audit_user|string||
-|euid|long||
-|op|string||
-|effective_user|string||
 |acct|string||
 |addr|string||
 |arch|string||
+|argc|long||
+|AuditID|string||
+|audit_user|string||
+|auid|long||
 |cmd|string||
 |comm|string||
+|Computer|string||
+|ComputerEnvironment|string||
 |cwd|string||
 |data|string||
+|effective_group|string||
+|effective_user|string||
+|egid|long||
+|euid|long||
 |exe|string||
 |exit|string||
+|ExternalAgentIp|string||
 |family|string||
 |filetype|string||
 |gid|long||
 |group|string||
-|egid|long||
-|effective_group|string||
 |hostname|string||
 |icmptype|string||
 |key|string||
+|ManagementGroup|string||
+|ManagementGroupName|string||
 |name|string||
+|node|string||
+|op|string||
 |path|string||
 |pid|long||
 |ppid|long||
+|RawRecord|string||
+|RecordType|string||
 |res|string||
+|_ResourceId|string||
+|ResourceId|string||
 |result|string||
+|SerialNumber|string||
 |ses|long||
+|SourceComputerId|string||
 |success|string||
 |syscall|string||
 |terminal|string||
+|TimeGenerated|datetime||
+|TimeUploaded|datetime||
 |tty|string||
-|vm|string||
-|RawRecord|string||
-|ComputerEnvironment|string||
 |Type|string||
-|_ResourceId|string||
+|uid|long||
+|user|string||
+|vm|string||
