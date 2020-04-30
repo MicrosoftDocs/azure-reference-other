@@ -4,9 +4,9 @@ description: Reference for WDAVThreat table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WDAVThreat
@@ -27,22 +27,22 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
 |Computer|string||
 |ComputerID|string||
+|IsCloudSignature|bool||
+|LastScan|datetime||
+|MoreInformation|string||
+|RemediationAction|string||
+|SourceSystem|string||
+|ThreatAction|string||
+|ThreatAlertLevel|string||
+|ThreatCategory|string||
+|ThreatEncyclopediaLink|string||
+|ThreatError|string||
+|ThreatFamily|string||
+|ThreatId|int||
 |ThreatName|string||
 |ThreatReportId|string||
-|ThreatId|int||
 |ThreatStatus|string||
-|ThreatAction|string||
-|ThreatError|string||
-|IsCloudSignature|bool||
-|ThreatCategory|string||
-|ThreatAlertLevel|string||
-|ThreatFamily|string||
-|RemediationAction|string||
-|ThreatEncyclopediaLink|string||
-|MoreInformation|string||
-|LastScan|datetime||
+|TimeGenerated|datetime||
 |Type|string||
