@@ -4,9 +4,9 @@ description: Reference for DHLogonFailures table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DHLogonFailures
@@ -27,24 +27,24 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|ComputerID|string||
 |Computer|string||
+|ComputerID|string||
 |Country|string||
-|Manufacturer|string||
-|ModelFamily|string||
-|Model|string||
-|OSArchitecture|string||
-|OSEdition|string||
-|OSVersion|string||
-|OSBuildNumber|int||
-|OSRevisionNumber|int||
-|ProviderId|string||
-|ProviderName|string||
 |LogonStatus|string||
 |LogonSubStatus|string||
-|SignInFailureReason|string||
-|SuggestedSignInRemediation|string||
-|SignInUserError|string||
+|Manufacturer|string||
+|Model|string||
+|ModelFamily|string||
+|OSArchitecture|string||
+|OSBuildNumber|int||
+|OSEdition|string||
+|OSRevisionNumber|int||
+|OSVersion|string||
+|ProviderId|string||
+|ProviderName|string||
 |SignInFailureCount|long||
+|SignInFailureReason|string||
+|SignInUserError|string||
+|SuggestedSignInRemediation|string||
 |TimeGenerated|datetime||
 |Type|string||
