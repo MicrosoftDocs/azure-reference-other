@@ -4,9 +4,9 @@ description: Reference for ReservedCommonFields table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ReservedCommonFields
@@ -24,27 +24,27 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
-|SourceSystem|string||
-|Computer|string||
-|Severity|int||
-|SourceIP|string||
-|IPAddress|string||
-|Message|string||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
-|OperationVersion|string||
-|ResultType|string||
-|ResultSignature|string||
-|ResultDescription|string||
-|DurationMs|long||
 |CallerIPAddress|string||
+|Category|string||
+|Computer|string||
 |CorrelationId|string||
+|DurationMs|long||
+|IPAddress|string||
 |Level|string||
+|Message|string||
+|OperationName|string||
+|OperationVersion|string||
 |Resource|string||
 |ResourceGroup|string||
+|ResourceId|string||
 |ResourceProvider|string||
-|SubscriptionId|string||
 |ResourceType|string||
+|ResultDescription|string||
+|ResultSignature|string||
+|ResultType|string||
+|Severity|int||
+|SourceIP|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|TimeGenerated|datetime||
 |Type|string||
