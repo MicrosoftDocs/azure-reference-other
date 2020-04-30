@@ -98,3 +98,5 @@
     href: tables/heartbeat.md
   - name: HuntingBookmark
     href: tables/huntingbookmark.md
+  - name: IoTHubDistributedTracing
+    href: tables/iothubdistributedtracing.md
