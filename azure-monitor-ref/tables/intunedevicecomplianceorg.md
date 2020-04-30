@@ -4,9 +4,9 @@ description: Reference for IntuneDeviceComplianceOrg table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # IntuneDeviceComplianceOrg
@@ -27,27 +27,27 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Result|string||
-|DeviceName|string||
-|UPN|string||
 |ComplianceState|string||
+|DeviceHealthThreatLevel|string||
+|DeviceId|string||
+|DeviceName|string||
+|DeviceType|string||
+|IMEI|string||
+|InGracePeriodUntil|string||
+|LastContact|string||
+|ManagementAgents|string||
 |OSDescription|string||
 |OSVersion|string||
 |OwnerType|string||
-|DeviceId|string||
-|LastContact|string||
-|UserId|string||
-|IMEI|string||
-|SerialNumber|string||
-|RetireAfterDatetime|string||
-|ManagementAgents|string||
-|DeviceType|string||
-|UserName|string||
-|InGracePeriodUntil|string||
-|DeviceHealthThreatLevel|string||
-|UserEmail|string||
-|Type|string||
 |_ResourceId|string||
+|Result|string||
+|RetireAfterDatetime|string||
+|SerialNumber|string||
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime||
+|Type|string||
+|UPN|string||
+|UserEmail|string||
+|UserId|string||
+|UserName|string||
