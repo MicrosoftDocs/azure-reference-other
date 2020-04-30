@@ -4,9 +4,9 @@ description: Reference for AmlComputeClusterNodeEvent table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AmlComputeClusterNodeEvent
@@ -30,27 +30,27 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|ResultSignature|string||
-|TimeGenerated|datetime||
-|OperationName|string||
-|ClusterName|string||
-|NodeId|string||
-|VmSize|string||
-|VmFamilyName|string||
-|VmPriority|string||
-|Publisher|string||
-|Offer|string||
-|Sku|string||
-|Version|string||
 |ClusterCreationTime|string||
-|ResizeStartTime|datetime||
-|ResizeEndTime|datetime||
+|ClusterName|string||
+|InternalOperationName|string||
 |NodeAllocationTime|datetime||
 |NodeBootTime|datetime||
-|StartTaskStartTime|datetime||
+|NodeId|string||
+|Offer|string||
+|OperationName|string||
+|Publisher|string||
+|ResizeEndTime|datetime||
+|ResizeStartTime|datetime||
+|ResultSignature|string||
+|Sku|string||
+|SourceSystem|string||
 |StartTaskEndTime|datetime||
+|StartTaskStartTime|datetime||
+|TenantId|string||
+|TimeGenerated|datetime||
 |TotalE2ETimeInSeconds|string||
-|InternalOperationName|string||
 |Type|string||
+|Version|string||
+|VmFamilyName|string||
+|VmPriority|string||
+|VmSize|string||
