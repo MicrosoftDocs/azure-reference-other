@@ -4,9 +4,9 @@ description: Reference for SQLAssessmentRecommendation table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SQLAssessmentRecommendation
@@ -31,25 +31,25 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|AssessmentId|string||
-|RecommendationId|string||
-|Recommendation|string||
-|Description|string||
-|RecommendationResult|string||
-|TimeGenerated|datetime||
-|FocusAreaId|string||
-|FocusArea|string||
-|ActionAreaId|string||
 |ActionArea|string||
-|RecommendationWeight|real||
-|Computer|string||
-|AffectedObjectType|string||
+|ActionAreaId|string||
 |AffectedObjectName|string||
-|SqlInstanceName|string||
-|DatabaseName|string||
 |AffectedObjectResult|string||
-|Technology|string||
+|AffectedObjectType|string||
+|AssessmentId|string||
+|Computer|string||
 |CustomData|string||
-|Type|string||
+|DatabaseName|string||
+|Description|string||
+|FocusArea|string||
+|FocusAreaId|string||
+|Recommendation|string||
+|RecommendationId|string||
+|RecommendationResult|string||
+|RecommendationWeight|real||
 |_ResourceId|string||
+|SourceSystem|string||
+|SqlInstanceName|string||
+|Technology|string||
+|TimeGenerated|datetime||
+|Type|string||
