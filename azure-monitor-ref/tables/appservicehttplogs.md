@@ -4,9 +4,9 @@ description: Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AppServiceHTTPLogs
@@ -30,22 +30,22 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|Time when event is generated|
 |Category|string|Log category name|
+|CIp|string|IP address of the client|
+|CsBytes|int|Number of bytes received by server|
+|CsHost|string|Host name header on HTTP request|
 |CsMethod|string|HTTP Verb on request|
 |CsUriStem|string|HTTP Target on request|
-|SPort|string|Server port number|
-|CIp|string|IP address of the client|
-|UserAgent|string|User Agent on HTTP request|
-|CsHost|string|Host name header on HTTP request|
+|_ResourceId|string||
+|Result|string||
+|ScBytes|int|Number of bytes sent by server|
 |ScStatus|int|HTTP Status Code|
 |ScSubStatus|string|Substatus error code on HTTP request|
 |ScWin32Status|string|Windows status code on HTTP request|
-|ScBytes|int|Number of bytes sent by server|
-|CsBytes|int|Number of bytes received by server|
+|SourceSystem|string||
+|SPort|string|Server port number|
+|TenantId|string||
+|TimeGenerated|datetime|Time when event is generated|
 |TimeTaken|int|Time taken by HTTP request|
-|Result|string||
 |Type|string||
-|_ResourceId|string||
+|UserAgent|string|User Agent on HTTP request|
