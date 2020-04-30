@@ -4,9 +4,9 @@ description: Reference for AppPlatformSystemLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AppPlatformSystemLogs
@@ -30,17 +30,17 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
-|ServiceName|string|The service name that emitted the log|
-|Level|string|The level of the log|
-|Thread|string|The thread of the log|
-|Logger|string|The logger of the log|
-|Log|string|The log of the log|
-|Stack|string|The stack of the log|
-|LogType|string|The type of the log|
 |Category|string|Log Category|
+|Level|string|The level of the log|
+|Log|string|The log of the log|
+|Logger|string|The logger of the log|
+|LogType|string|The type of the log|
 |OperationName|string|The name of the operation represented by this event|
-|Type|string||
 |_ResourceId|string||
+|ServiceName|string|The service name that emitted the log|
+|SourceSystem|string||
+|Stack|string|The stack of the log|
+|TenantId|string||
+|Thread|string|The thread of the log|
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|Type|string||
