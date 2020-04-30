@@ -4,9 +4,9 @@ description: Reference for SecurityBaselineSummary table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SecurityBaselineSummary
@@ -32,25 +32,25 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|ManagementGroupName|string||
-|SourceComputerId|string||
-|TimeGenerated|datetime||
-|SubscriptionId|string||
-|ResourceGroup|string||
-|ResourceProvider|string||
-|Resource|string||
-|ResourceId|string||
-|ResourceType|string||
-|ComputerEnvironment|string||
-|Computer|string||
-|BaselineType|string||
-|OSName|string||
 |AssessmentId|string||
-|TotalAssessedRules|int||
-|PercentageOfPassedRules|int||
+|BaselineType|string||
+|Computer|string||
+|ComputerEnvironment|string||
 |CriticalFailedRules|int||
-|WarningFailedRules|int||
 |InformationalFailedRules|int||
-|Type|string||
+|ManagementGroupName|string||
+|OSName|string||
+|PercentageOfPassedRules|int||
+|Resource|string||
+|ResourceGroup|string||
 |_ResourceId|string||
+|ResourceId|string||
+|ResourceProvider|string||
+|ResourceType|string||
+|SourceComputerId|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|TimeGenerated|datetime||
+|TotalAssessedRules|int||
+|Type|string||
+|WarningFailedRules|int||
