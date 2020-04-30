@@ -4,9 +4,9 @@ description: Reference for MAWindowsCurrencyAssessmentDailyCounts table in Azure
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAWindowsCurrencyAssessmentDailyCounts
@@ -27,14 +27,14 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|ServicingChannel|string||
-|ReleaseVersion|string||
+|AggregationTime|datetime||
 |BuildId|int||
 |BuildVersion|string||
 |DeviceCount|int||
-|AggregationTime|datetime||
-|SnapshotTime|datetime||
 |FeatureCurrencyLegend|string||
+|ReleaseVersion|string||
 |SecurityComplianceLegend|string||
+|ServicingChannel|string||
+|SnapshotTime|datetime||
 |TimeGenerated|datetime||
 |Type|string||
