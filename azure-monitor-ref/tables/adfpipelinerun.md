@@ -4,9 +4,9 @@ description: Reference for ADFPipelineRun table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ADFPipelineRun
@@ -30,26 +30,26 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
+|Annotations|string||
 |Category|string||
 |CorrelationId|string||
+|End|datetime||
+|EventMessage|string||
+|FailureType|string||
 |Level|string||
 |Location|string||
-|Tags|string||
-|Status|string||
-|UserProperties|string||
-|Annotations|string||
-|EventMessage|string||
-|Start|datetime||
-|End|datetime||
-|FailureType|string||
-|PipelineName|string||
-|RunId|string||
-|Predecessors|string||
+|OperationName|string||
 |Parameters|string||
+|PipelineName|string||
+|Predecessors|string||
+|ResourceId|string||
+|RunId|string||
+|SourceSystem|string||
+|Start|datetime||
+|Status|string||
 |SystemParameters|string||
+|Tags|string||
+|TenantId|string||
+|TimeGenerated|datetime||
 |Type|string||
+|UserProperties|string||
