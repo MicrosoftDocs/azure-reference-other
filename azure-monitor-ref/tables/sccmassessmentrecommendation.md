@@ -4,9 +4,9 @@ description: Reference for SCCMAssessmentRecommendation table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SCCMAssessmentRecommendation
@@ -27,23 +27,23 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|AssessmentId|string||
-|RecommendationId|string||
-|Recommendation|string||
-|Description|string||
-|RecommendationResult|string||
-|TimeGenerated|datetime||
-|FocusAreaId|string||
-|FocusArea|string||
-|ActionAreaId|string||
 |ActionArea|string||
-|RecommendationWeight|real||
-|Computer|string||
-|AffectedObjectType|string||
+|ActionAreaId|string||
 |AffectedObjectName|string||
+|AffectedObjectType|string||
+|AssessmentId|string||
+|Computer|string||
+|CustomData|string||
+|Description|string||
+|FocusArea|string||
+|FocusAreaId|string||
+|Recommendation|string||
+|RecommendationId|string||
+|RecommendationResult|string||
+|RecommendationWeight|real||
 |SiteCode|string||
 |SiteServer|string||
+|SourceSystem|string||
 |Technology|string||
-|CustomData|string||
+|TimeGenerated|datetime||
 |Type|string||
