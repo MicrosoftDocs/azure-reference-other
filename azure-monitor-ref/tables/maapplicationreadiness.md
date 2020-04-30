@@ -4,9 +4,9 @@ description: Reference for MAApplicationReadiness table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAApplicationReadiness
@@ -27,32 +27,32 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|DeploymentPlanId|string||
-|ProgramId|string||
+|AdoptionStatus|string||
+|AHAInsight|string||
+|AppCategory|string||
+|AppLanguage|string||
 |AppName|string||
+|AppType|string||
 |AppVendor|string||
 |AppVersion|string||
-|AppLanguage|string||
-|AppType|string||
-|AppCategory|string||
-|NPId|string||
+|DeploymentPlanId|string||
+|DevicesWithIssues|int||
+|Guidance|string||
 |HasSupportStatement|bool||
-|AdoptionStatus|string||
 |Importance|string||
+|Issue|string||
+|IsVirtualized|bool||
+|MonthlyActiveDevices|int||
+|Notes|string||
+|NPId|string||
+|ProgramId|string||
+|Remediation|string||
+|RiskAssessment|string||
+|SourceSystem|string||
 |TestOwner|string||
 |TestPlan|string||
 |TestResult|string||
-|UpgradeDecision|string||
-|Notes|string||
-|Remediation|string||
-|RiskAssessment|string||
-|Issue|string||
-|Guidance|string||
+|TimeGenerated|datetime||
 |TotalInstalls|int||
-|MonthlyActiveDevices|int||
-|DevicesWithIssues|int||
-|IsVirtualized|bool||
-|AHAInsight|string||
 |Type|string||
+|UpgradeDecision|string||
