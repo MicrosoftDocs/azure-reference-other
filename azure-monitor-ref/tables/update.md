@@ -4,9 +4,9 @@ description: Reference for Update table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # Update
@@ -35,46 +35,46 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ManagementGroupName|string||
-|SourceComputerId|string||
-|Title|string||
-|MSRCSeverity|string||
-|Classification|string||
-|PublishedDate|datetime||
-|Computer|string||
-|UpdateState|string||
-|Product|string||
-|KBID|string||
-|UpdateID|string||
-|RevisionNumber|string||
-|Optional|bool||
-|RebootBehavior|string||
-|MSRCBulletinID|string||
-|Approved|bool||
 |ApprovalSource|string||
-|InstallTimePredictionSeconds|real||
-|InstallTimeDeviationRangeSeconds|real||
-|InstallTimeAvailable|bool||
-|SubscriptionId|string||
-|ResourceGroup|string||
-|ResourceProvider|string||
-|Resource|string||
-|ResourceId|string||
-|ResourceType|string||
-|ComputerEnvironment|string||
-|VMUUID|string||
-|OSType|string||
-|ProductVersion|string||
-|ProductArch|string||
-|CVENumbers|string||
-|BulletinUrl|string||
+|Approved|bool||
 |BulletinID|string||
+|BulletinUrl|string||
+|Classification|string||
+|Computer|string||
+|ComputerEnvironment|string||
+|CVENumbers|string||
+|InstallTimeAvailable|bool||
+|InstallTimeDeviationRangeSeconds|real||
+|InstallTimePredictionSeconds|real||
+|KBID|string||
+|ManagementGroupName|string||
+|MSRCBulletinID|string||
+|MSRCSeverity|string||
+|Optional|bool||
+|OSFullName|string||
+|OSName|string||
+|OSType|string||
+|OSVersion|string||
 |PackageRepository|string||
 |PackageSeverity|string||
-|OSName|string||
-|OSVersion|string||
-|OSFullName|string||
-|Type|string||
+|Product|string||
+|ProductArch|string||
+|ProductVersion|string||
+|PublishedDate|datetime||
+|RebootBehavior|string||
+|Resource|string||
+|ResourceGroup|string||
 |_ResourceId|string||
+|ResourceId|string||
+|ResourceProvider|string||
+|ResourceType|string||
+|RevisionNumber|string||
+|SourceComputerId|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|TimeGenerated|datetime||
+|Title|string||
+|Type|string||
+|UpdateID|string||
+|UpdateState|string||
+|VMUUID|string||
