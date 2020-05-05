@@ -4,9 +4,9 @@ description: Reference for ContainerInventory table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ContainerInventory
@@ -31,25 +31,25 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Computer|string||
-|ContainerID|string||
-|Name|string||
-|ContainerHostname|string||
-|ImageID|string||
-|Repository|string||
-|Image|string||
-|ImageTag|string||
-|ContainerState|string||
-|Ports|string||
-|Links|string||
-|ExitCode|int||
-|ComposeGroup|string||
-|EnvironmentVar|string||
 |Command|string||
+|ComposeGroup|string||
+|Computer|string||
+|ContainerHostname|string||
+|ContainerID|string||
+|ContainerState|string||
 |CreatedTime|datetime||
-|StartedTime|datetime||
+|EnvironmentVar|string||
+|ExitCode|int||
 |FinishedTime|datetime||
-|Type|string||
+|Image|string||
+|ImageID|string||
+|ImageTag|string||
+|Links|string||
+|Name|string||
+|Ports|string||
+|Repository|string||
 |_ResourceId|string||
+|SourceSystem|string||
+|StartedTime|datetime||
+|TimeGenerated|datetime||
+|Type|string||

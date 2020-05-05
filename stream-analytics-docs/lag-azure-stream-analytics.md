@@ -18,7 +18,9 @@ ms.author: mamccrea
 # LAG (Azure Stream Analytics)
 The LAG analytic operator allows one to look up a “previous” event in an event stream, within certain constraints. It is very useful for computing the rate of growth of a variable, detecting when a variable crosses a threshold, or when a condition starts or stops being true. 
   
-In Stream Analytics, the scope of LAG (that is, how far back in history from the current event it needs to look) is always limited to a finite time interval, using the LIMIT DURATION clause. LAG can optionally be limited to only consider events that match the current event on a certain property or condition using the PARTITION BY and WHEN clauses. LAG is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
+In Stream Analytics, the scope of LAG (that is, how far back in history from the current event it needs to look) is always limited to a finite time interval, using the LIMIT DURATION clause. LAG can optionally be limited to only consider events that match the current event on a certain property or condition using the PARTITION BY and WHEN clauses.
+
+LAG isn't affected by predicates in the WHERE clause, join conditions in the JOIN clause, or grouping expressions in the GROUP BY clause of the current query because it's evaluated before those clauses.
   
  ## Syntax  
   
@@ -89,7 +91,7 @@ FROM input
   
 ```  
   
- Find previous not-null sensor reading’:  
+ Find previous not-null sensor reading:  
   
 ```SQL  
 SELECT  
@@ -98,7 +100,22 @@ SELECT
      FROM input  
   
 ```  
-  
+
+Find previous non-null sensor reading for a specific sensor type:
+
+```SQL
+WITH filterSensor AS
+(
+  SELECT *
+  FROM input
+  WHERE input.sensorType = 4 AND sensorId IS NOT NULL
+)
+
+SELECT
+  LAG(reading) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1))
+FROM filterSensor
+```
+
  Determine when a variable crosses a threshold:  
   
 ```SQL  
@@ -109,8 +126,7 @@ WHERE
     devicetype = 'thermostat'
     AND reading > 100
     AND LAG(reading) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1) WHEN devicetype = 'thermostat') <= 100
-  
-```  
+```
   
 ## See Also  
  [ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)   

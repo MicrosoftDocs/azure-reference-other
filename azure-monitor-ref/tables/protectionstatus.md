@@ -4,9 +4,9 @@ description: Reference for ProtectionStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ProtectionStatus
@@ -34,33 +34,33 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|SourceComputerId|string||
-|DeviceName|string||
+|AMProductVersion|string||
+|Computer|string||
+|ComputerEnvironment|string||
+|ComputerIP_Hidden|string||
 |DetectionId|string||
-|Threat|string||
-|ThreatStatusRank|int||
-|ThreatStatus|string||
-|ThreatStatusDetails|string||
-|ProtectionStatusRank|int||
+|DeviceName|string||
+|ManagementGroupName|string||
 |ProtectionStatus|string||
 |ProtectionStatusDetails|string||
-|SignatureVersion|string||
-|TypeofProtection|string||
-|ScanDate|datetime||
-|AMProductVersion|string||
-|ManagementGroupName|string||
-|Computer|string||
-|ComputerIP_Hidden|string||
-|ResourceId|string||
-|ComputerEnvironment|string||
+|ProtectionStatusRank|int||
 |Resource|string||
-|SubscriptionId|string||
 |ResourceGroup|string||
+|_ResourceId|string||
+|ResourceId|string||
 |ResourceProvider|string||
 |ResourceType|string||
-|VMUUID|string||
+|ScanDate|datetime||
+|SignatureVersion|string||
+|SourceComputerId|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|TenantId|string||
+|Threat|string||
+|ThreatStatus|string||
+|ThreatStatusDetails|string||
+|ThreatStatusRank|int||
+|TimeGenerated|datetime||
 |Type|string||
-|_ResourceId|string||
+|TypeofProtection|string||
+|VMUUID|string||

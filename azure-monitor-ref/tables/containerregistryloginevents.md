@@ -4,9 +4,9 @@ description: Reference for ContainerRegistryLoginEvents table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ContainerRegistryLoginEvents
@@ -30,20 +30,20 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OperationName|string||
-|LoginServer|string||
+|CallerIpAddress|string||
+|Category|string||
+|CorrelationId|string||
+|DurationMs|string||
 |Identity|string||
 |JwtId|string||
+|LoginServer|string||
+|OperationName|string||
 |Region|string||
-|CorrelationId|string||
-|ResultType|string||
-|ResultDescription|string||
-|CallerIpAddress|string||
-|DurationMs|string||
-|UserAgent|string||
-|Category|string||
-|Type|string||
 |_ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime||
+|Type|string||
+|UserAgent|string||

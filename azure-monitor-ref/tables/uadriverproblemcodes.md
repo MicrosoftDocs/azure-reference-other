@@ -4,9 +4,9 @@ description: Reference for UADriverProblemCodes table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # UADriverProblemCodes
@@ -27,18 +27,18 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
 |Computer|string||
 |ComputerID|string||
+|DriverAvailability|string||
+|DriverDate|string||
+|DriverName|string||
+|DriverVendor|string||
+|DriverVersion|string||
+|Guidance|string||
+|HardwareID|string||
 |HardwareName|string||
 |HardwareType|string||
-|HardwareID|string||
-|DriverVendor|string||
-|DriverName|string||
-|DriverVersion|string||
-|DriverDate|string||
-|DriverAvailability|string||
 |ProblemCode|string||
-|Guidance|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

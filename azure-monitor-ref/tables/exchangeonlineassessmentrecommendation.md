@@ -4,9 +4,9 @@ description: Reference for ExchangeOnlineAssessmentRecommendation table in Azure
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ExchangeOnlineAssessmentRecommendation
@@ -27,25 +27,25 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|AssessmentId|string|ID of the assessment|
-|RecommendationId|string|ID of the recommendation generated|
-|Recommendation|string|Generated recommendation|
-|Description|string|Description of the recommendation|
-|RecommendationResult|string|Result of the recommendation generated|
-|TimeGenerated|datetime|Date and time the record was created.|
-|FocusAreaId|string|ID of the Focus Area|
-|FocusArea|string|Area to be focussed on|
-|ActionAreaId|string|ID generated for Action Area|
 |ActionArea|string|The segment in which action is to be performed|
-|RecommendationWeight|real|Weight of recommendation|
-|Computer|string|The machine from which data is uploaded|
-|AffectedObjectType|string|Type of object which is affected|
+|ActionAreaId|string|ID generated for Action Area|
 |AffectedObjectName|string|Name of the affected object|
-|O365TenantId|string|ID of O365 Tenant|
-|TenantName|string|Name of the Tenant|
+|AffectedObjectType|string|Type of object which is affected|
+|AssessmentId|string|ID of the assessment|
+|Computer|string|The machine from which data is uploaded|
+|CustomData|string||
+|Description|string|Description of the recommendation|
 |Domain|string|Domain of the system|
 |ExchangeOrganization|string||
+|FocusArea|string|Area to be focussed on|
+|FocusAreaId|string|ID of the Focus Area|
+|O365TenantId|string|ID of O365 Tenant|
+|Recommendation|string|Generated recommendation|
+|RecommendationId|string|ID of the recommendation generated|
+|RecommendationResult|string|Result of the recommendation generated|
+|RecommendationWeight|real|Weight of recommendation|
+|SourceSystem|string||
 |Technology|string||
-|CustomData|string||
+|TenantName|string|Name of the Tenant|
+|TimeGenerated|datetime|Date and time the record was created.|
 |Type|string||

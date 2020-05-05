@@ -4,9 +4,9 @@ description: Reference for AlertHistory table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AlertHistory
@@ -27,24 +27,15 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
-|AlertPriority|string||
-|AlertSeverity|string||
-|SourceDisplayName|string||
-|SourceFullName|string||
+|AlertContext|string||
+|AlertDescription|string||
 |AlertId|string||
 |AlertName|string||
-|AlertDescription|string||
-|RepeatCount|int||
+|AlertPriority|string||
+|AlertSeverity|string||
 |AlertState|string||
-|ResolvedBy|string||
-|LastModifiedBy|string||
-|TimeRaised|datetime||
-|TimeResolved|datetime||
-|TimeLastModified|datetime||
-|AlertContext|string||
-|TicketId|string||
 |Custom1|string||
+|Custom10|string||
 |Custom2|string||
 |Custom3|string||
 |Custom4|string||
@@ -53,8 +44,17 @@ ms.date: 3/16/2020
 |Custom7|string||
 |Custom8|string||
 |Custom9|string||
-|Custom10|string||
+|LastModifiedBy|string||
 |ManagementGroupName|string||
-|SourceSystem|string||
-|Type|string||
+|RepeatCount|int||
+|ResolvedBy|string||
 |_ResourceId|string||
+|SourceDisplayName|string||
+|SourceFullName|string||
+|SourceSystem|string||
+|TicketId|string||
+|TimeGenerated|datetime||
+|TimeLastModified|datetime||
+|TimeRaised|datetime||
+|TimeResolved|datetime||
+|Type|string||

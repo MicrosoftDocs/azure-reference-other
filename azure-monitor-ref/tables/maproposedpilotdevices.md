@@ -4,9 +4,9 @@ description: Reference for MAProposedPilotDevices table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAProposedPilotDevices
@@ -27,15 +27,15 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|Coverage|real||
 |DeploymentPlanId|string||
+|DeviceFamily|string||
 |DeviceId|string||
 |DeviceName|string||
-|DeviceFamily|string||
+|PilotStatus|string||
 |Rank|int||
-|Coverage|real||
 |Redundancy|real||
 |Source|string||
-|PilotStatus|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

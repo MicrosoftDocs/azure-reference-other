@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesSystemSecurity table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AADDomainServicesSystemSecurity
@@ -31,15 +31,15 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|AuditsDiscarded|int||
+|Category|string||
+|CorrelationId|string||
+|OperationName|string||
+|RecordId|string||
+|ResourceId|string||
+|_ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
 |SourceSystem|string||
 |TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
-|ResultType|string||
-|ResultDescription|string||
-|CorrelationId|string||
-|AuditsDiscarded|int||
-|RecordId|string||
 |Type|string||
-|_ResourceId|string||

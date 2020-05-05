@@ -4,9 +4,9 @@ description: Reference for AppPlatformLogsforSpring table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AppPlatformLogsforSpring
@@ -30,15 +30,15 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
-|ServiceName|string|The service name that emitted the log|
 |AppName|string|The application name that emitted the log|
+|Category|string|Log Category|
 |InstanceName|string|The instance name that emitted the log|
 |Log|string|The content of the log|
-|Stream|string|The stream of the log|
-|Category|string|Log Category|
 |OperationName|string|The name of the operation represented by this event|
-|Type|string||
 |_ResourceId|string||
+|ServiceName|string|The service name that emitted the log|
+|SourceSystem|string||
+|Stream|string|The stream of the log|
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|Type|string||

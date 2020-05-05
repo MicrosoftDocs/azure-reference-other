@@ -4,9 +4,9 @@ description: Reference for WindowsFirewall table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WindowsFirewall
@@ -32,32 +32,32 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|Computer|string||
-|TimeGenerated|datetime||
 |CommunicationDirection|string||
-|FirewallAction|string||
-|Protocol|string||
-|SourceIP|string||
-|DestinationIP|string||
-|RemoteIP|string||
-|SourcePort|int||
-|FullDestinationAddress|string||
-|DestinationPort|int||
-|RequestSizeInBytes|long||
-|Info|string||
-|ManagementGroupName|string||
-|MaliciousIP|string||
-|IndicatorThreatType|string||
-|Description|string||
-|TLPLevel|string||
+|Computer|string||
 |Confidence|string||
-|Severity|int||
+|Description|string||
+|DestinationIP|string||
+|DestinationPort|int||
+|FirewallAction|string||
 |FirstReportedDateTime|string||
-|LastReportedDateTime|string||
+|FullDestinationAddress|string||
+|IndicatorThreatType|string||
+|Info|string||
 |IsActive|string||
-|MaliciousIPLongitude|real||
-|MaliciousIPLatitude|real||
+|LastReportedDateTime|string||
+|MaliciousIP|string||
 |MaliciousIPCountry|string||
-|Type|string||
+|MaliciousIPLatitude|real||
+|MaliciousIPLongitude|real||
+|ManagementGroupName|string||
+|Protocol|string||
+|RemoteIP|string||
+|RequestSizeInBytes|long||
 |_ResourceId|string||
+|Severity|int||
+|SourceIP|string||
+|SourcePort|int||
+|SourceSystem|string||
+|TimeGenerated|datetime||
+|TLPLevel|string||
+|Type|string||

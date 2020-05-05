@@ -4,9 +4,9 @@ description: Reference for DHAppReliability table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DHAppReliability
@@ -27,29 +27,29 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|ComputerID|string||
-|ConfigMgrClientID|string||
-|Computer|string||
-|DeviceLastSeenTime|datetime||
-|AppFileName|string||
 |AppFileDisplayName|string||
+|AppFileName|string||
 |AppFileVersion|string||
 |AppName|string||
 |AppVersion|string||
+|Computer|string||
+|ComputerID|string||
+|ConfigMgrClientID|string||
+|CrashFreeDevicesPercentForIndustryTrailing|real||
+|DeviceLastSeenTime|datetime||
+|HangFreeDevicesPercentForIndustryTrailing|real||
+|HasCrashesDaily|bool||
+|HasCrashesTrailing|bool||
+|HasHangsDaily|bool||
+|HasHangsTrailing|bool||
+|HasIncidentsDaily|bool||
+|HasIncidentsTrailing|bool||
+|HasUsageDaily|bool||
+|HasUsageTrailing|bool||
+|IncidentFreeDevicesPercentForIndustryTrailing|real||
 |OSBuildNumber|int||
 |OSRevisionNumber|int||
 |OSVersion|string||
 |Publisher|string||
-|HasUsageTrailing|bool||
-|HasUsageDaily|bool||
-|HasCrashesTrailing|bool||
-|HasCrashesDaily|bool||
-|HasHangsTrailing|bool||
-|HasHangsDaily|bool||
-|HasIncidentsTrailing|bool||
-|HasIncidentsDaily|bool||
-|CrashFreeDevicesPercentForIndustryTrailing|real||
-|HangFreeDevicesPercentForIndustryTrailing|real||
-|IncidentFreeDevicesPercentForIndustryTrailing|real||
 |TimeGenerated|datetime||
 |Type|string||

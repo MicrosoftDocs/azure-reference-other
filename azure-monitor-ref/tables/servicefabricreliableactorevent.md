@@ -4,9 +4,9 @@ description: Reference for ServiceFabricReliableActorEvent table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ServiceFabricReliableActorEvent
@@ -27,39 +27,39 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Computer|string||
-|Level|string||
-|ProviderGuid|string||
-|EventSourceName|string||
-|EventId|int||
-|Pid|int||
-|Tid|int||
-|OpcodeName|string||
-|KeywordName|string||
-|TaskName|string||
-|ChannelName|string||
-|AzureDeploymentID|string||
-|Role|string||
-|EventMessage|string||
-|ActorType|string||
 |ActorId|string||
 |ActorIdKind|int||
-|IsStateful|bool||
-|ReplicaOrInstanceId|long||
-|PartitionId|string||
-|ServiceName|string||
+|ActorType|string||
 |ApplicationName|string||
-|ServiceTypeName|string||
 |ApplicationTypeName|string||
-|NodeName|string||
-|NodeId|string||
+|AzureDeploymentID|string||
+|ChannelName|string||
+|Computer|string||
 |CountOfWaitingMethodCalls|long||
+|EventId|int||
+|EventMessage|string||
+|EventSourceName|string||
+|Exception|string||
+|IsStateful|bool||
+|KeywordName|string||
+|Level|string||
+|MethodExecutionTimeTicks|long||
 |MethodName|string||
 |MethodSignature|string||
-|MethodExecutionTimeTicks|long||
-|Exception|string||
-|SaveStateExecutionTimeTicks|long||
+|NodeId|string||
+|NodeName|string||
+|OpcodeName|string||
+|PartitionId|string||
+|Pid|int||
+|ProviderGuid|string||
 |ReplicaId|long||
+|ReplicaOrInstanceId|long||
+|Role|string||
+|SaveStateExecutionTimeTicks|long||
+|ServiceName|string||
+|ServiceTypeName|string||
+|SourceSystem|string||
+|TaskName|string||
+|Tid|int||
+|TimeGenerated|datetime||
 |Type|string||

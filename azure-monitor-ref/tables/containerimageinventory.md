@@ -4,9 +4,9 @@ description: Reference for ContainerImageInventory table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ContainerImageInventory
@@ -31,19 +31,19 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
 |Computer|string||
-|ImageID|string||
-|Repository|string||
-|Image|string||
-|ImageTag|string||
-|ImageSize|string||
-|VirtualSize|string||
-|Running|int||
-|Stopped|int||
 |Failed|int||
+|Image|string||
+|ImageID|string||
+|ImageSize|string||
+|ImageTag|string||
 |Paused|int||
+|Repository|string||
+|_ResourceId|string||
+|Running|int||
+|SourceSystem|string||
+|Stopped|int||
+|TimeGenerated|datetime||
 |TotalContainer|long||
 |Type|string||
-|_ResourceId|string||
+|VirtualSize|string||

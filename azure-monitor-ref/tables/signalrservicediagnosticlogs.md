@@ -4,9 +4,9 @@ description: Reference for SignalRServiceDiagnosticLogs table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SignalRServiceDiagnosticLogs
@@ -30,17 +30,17 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
-|OperationName|string||
-|Location|string|Location of Azure SignalR Service|
-|Level|string|Log level|
 |CallerIpAddress|string|Caller Ip address|
-|Message|string|Log message|
-|UserId|string|User ID for the connection|
 |ConnectionId|string|Connection ID|
 |ConnectionType|string|Connection type|
+|Level|string|Log level|
+|Location|string|Location of Azure SignalR Service|
+|Message|string|Log message|
+|OperationName|string||
+|_ResourceId|string||
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
 |TransportType|string|Transport type|
 |Type|string||
-|_ResourceId|string||
+|UserId|string|User ID for the connection|

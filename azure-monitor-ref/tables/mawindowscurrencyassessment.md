@@ -4,9 +4,9 @@ description: Reference for MAWindowsCurrencyAssessment table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAWindowsCurrencyAssessment
@@ -27,18 +27,18 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|DeviceId|string||
-|BuildVersion|string||
-|ReleaseVersion|string||
-|ServicingChannel|string||
-|FeatureCurrency|string||
-|SecurityCompliance|string||
-|BuildId|int||
-|LastEventTime|datetime||
 |AssessmentTime|datetime||
-|ReleaseServicingLevel|string||
-|DeviceServicingLevel|string||
+|BuildId|int||
+|BuildVersion|string||
 |DeviceEOSDate|datetime||
+|DeviceId|string||
+|DeviceServicingLevel|string||
+|FeatureCurrency|string||
+|LastEventTime|datetime||
+|ReleaseServicingLevel|string||
+|ReleaseVersion|string||
+|SecurityCompliance|string||
+|ServicingChannel|string||
 |ServicingState|string||
 |TimeGenerated|datetime||
 |Type|string||

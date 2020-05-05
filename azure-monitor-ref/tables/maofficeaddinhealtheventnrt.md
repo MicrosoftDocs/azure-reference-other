@@ -4,9 +4,9 @@ description: Reference for MAOfficeAddinHealthEventNRT table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeAddinHealthEventNRT
@@ -27,18 +27,18 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|AddinInstanceId|string||
+|DeviceId|string||
+|DurationInMicroseconds|int||
 |EventType|int||
 |EventTypeName|string||
-|DeviceId|string||
-|OfficeApplication|string||
-|OfficeAppRelease|string||
-|AddinInstanceId|string||
-|OfficeInterface|string||
-|OfficeMethod|string||
-|Timestamp|datetime||
 |IsVSTO|bool||
 |LoadAttempts|int||
-|DurationInMicroseconds|int||
+|OfficeApplication|string||
+|OfficeAppRelease|string||
+|OfficeInterface|string||
+|OfficeMethod|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
+|Timestamp|datetime||
 |Type|string||

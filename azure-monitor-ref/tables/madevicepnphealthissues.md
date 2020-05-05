@@ -4,9 +4,9 @@ description: Reference for MADevicePnPHealthIssues table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MADevicePnPHealthIssues
@@ -27,19 +27,19 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OSVersion|string||
 |DeviceId|string||
-|DeviceName|string||
-|DeviceModel|string||
 |DeviceManufacturer|string||
-|HardwareID|string||
+|DeviceModel|string||
+|DeviceName|string||
 |DriverName|string||
 |DriverVersion|string||
-|FailureId|string||
-|LastFailureDate|datetime||
 |ErrorCode|int||
+|FailureId|string||
 |FailureInstanceCount|int||
+|HardwareID|string||
 |IncidentType|string||
+|LastFailureDate|datetime||
+|OSVersion|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

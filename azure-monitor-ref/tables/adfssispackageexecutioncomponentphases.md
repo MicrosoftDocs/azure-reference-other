@@ -4,9 +4,9 @@ description: Reference for ADFSSISPackageExecutionComponentPhases table in Azure
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ADFSSISPackageExecutionComponentPhases
@@ -24,22 +24,22 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
-|OperationName|string|The name of the operation represented by this event|
 |Category|string|The name of the log that belongs to|
 |CorrelationId|string|correlation id|
 |DataFactoryName|string|Data factory name|
+|EndTime|datetime|End time|
+|ExecutionId|long|Execution id|
+|ExecutionPath|string|Execution path|
 |IntegrationRuntimeName|string|Integration runtime name|
 |Level|string|Verbosity level of log|
-|ExecutionId|long|Execution id|
+|OperationName|string|The name of the operation represented by this event|
 |PackageName|string|Package name|
-|TaskName|string|Task name|
-|SubcomponentName|string|Subcomponent name|
 |Phase|string|Phase|
-|StartTime|datetime|Start time|
-|EndTime|datetime|End time|
-|ExecutionPath|string|Execution path|
-|SourceSystem|string||
-|Type|string||
 |_ResourceId|string||
+|SourceSystem|string||
+|StartTime|datetime|Start time|
+|SubcomponentName|string|Subcomponent name|
+|TaskName|string|Task name|
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|Type|string||

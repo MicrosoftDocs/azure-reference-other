@@ -4,9 +4,9 @@ description: Reference for ApiManagementGatewayLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ApiManagementGatewayLogs
@@ -30,48 +30,48 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OperationName|string||
-|CorrelationId|string||
-|Region|string||
-|IsRequestSuccess|bool||
-|Category|string||
-|TotalTime|long||
-|CallerIpAddress|string||
-|Method|string||
-|Url|string||
-|ClientProtocol|string||
-|ResponseCode|int||
+|ApiId|string||
+|ApimSubscriptionId|string||
+|ApiRevision|string||
+|BackendId|string||
 |BackendMethod|string||
-|BackendUrl|string||
-|BackendResponseCode|int||
 |BackendProtocol|string||
-|RequestSize|int||
-|ResponseSize|int||
+|BackendRequestHeaders|dynamic||
+|BackendResponseCode|int||
+|BackendResponseHeaders|dynamic||
+|BackendTime|long||
+|BackendUrl|string||
 |Cache|string||
 |CacheTime|long||
-|BackendTime|long||
+|CallerIpAddress|string||
+|Category|string||
+|ClientProtocol|string||
 |ClientTime|long||
-|ApiId|string||
-|OperationId|string||
-|ProductId|string||
-|UserId|string||
-|ApimSubscriptionId|string||
-|BackendId|string||
+|ClientTlsVersion|string||
+|CorrelationId|string||
+|Errors|dynamic||
+|IsRequestSuccess|bool||
 |LastErrorElapsed|long||
-|LastErrorSource|string||
+|LastErrorMessage|string||
+|LastErrorReason|string||
 |LastErrorScope|string||
 |LastErrorSection|string||
-|LastErrorReason|string||
-|LastErrorMessage|string||
-|ApiRevision|string||
-|ClientTlsVersion|string||
+|LastErrorSource|string||
+|Method|string||
+|OperationId|string||
+|OperationName|string||
+|ProductId|string||
+|Region|string||
 |RequestHeaders|dynamic||
-|ResponseHeaders|dynamic||
-|BackendRequestHeaders|dynamic||
-|BackendResponseHeaders|dynamic||
-|Errors|dynamic||
-|Type|string||
+|RequestSize|int||
 |_ResourceId|string||
+|ResponseCode|int||
+|ResponseHeaders|dynamic||
+|ResponseSize|int||
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime||
+|TotalTime|long||
+|Type|string||
+|Url|string||
+|UserId|string||

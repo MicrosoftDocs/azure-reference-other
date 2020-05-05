@@ -4,9 +4,9 @@ description: Reference for SqlDataClassification table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SqlDataClassification
@@ -24,31 +24,31 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
-|Computer|string||
-|ServerInstanceType|string||
-|ServerInstanceName|string||
-|ServerVersion|string||
-|DatabaseName|string||
-|RecordType|string||
-|SchemaName|string||
-|TableName|string||
+|AgentId|string||
 |ColumnName|string||
+|ColumnsCount|int||
 |ColumnType|string||
+|Computer|string||
+|DatabaseName|string||
 |InformationType|string||
 |InformationTypeId|string||
 |Label|string||
 |LabelId|string||
-|Rank|string||
-|ColumnsCount|int||
-|TablesCount|int||
-|ScanStartTime|datetime||
-|SourceSystem|string||
 |ManagementGroupName|string||
-|AgentId|string||
-|SubscriptionId|string||
+|Rank|string||
+|RecordType|string||
 |ResourceGroup|string||
-|ResourceProvider|string||
 |ResourceId|string||
+|ResourceProvider|string||
 |ResourceType|string||
+|ScanStartTime|datetime||
+|SchemaName|string||
+|ServerInstanceName|string||
+|ServerInstanceType|string||
+|ServerVersion|string||
+|SourceSystem|string||
+|SubscriptionId|string||
+|TableName|string||
+|TablesCount|int||
+|TimeGenerated|datetime||
 |Type|string||

@@ -4,9 +4,9 @@ description: Reference for MAOfficeAppHealth table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeAppHealth
@@ -27,23 +27,23 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OfficeAppId|string||
-|OfficeAppName|string||
-|OfficeAppMajorVersion|int||
-|OfficeAppRelease|string||
-|OfficeAppArchitecture|string||
+|ActiveDevices|int||
+|DeviceHealthStatus|string||
 |DevicesWithCrashes|int||
 |DevicesWithCrashesPercentForCommercial|real||
+|HealthStatus|string||
+|Issue|string||
+|OfficeAppArchitecture|string||
+|OfficeAppId|string||
+|OfficeAppMajorVersion|int||
+|OfficeAppName|string||
+|OfficeAppRelease|string||
+|RiskAssessment|string||
+|SessionHealthStatus|string||
 |SessionsWithCrashes|int||
 |SessionsWithCrashesPercentForCommercial|real||
-|ActiveDevices|int||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |TotalDevicesInstalled|int||
 |TotalSessions|int||
-|HealthStatus|string||
-|SessionHealthStatus|string||
-|DeviceHealthStatus|string||
-|RiskAssessment|string||
-|Issue|string||
 |Type|string||

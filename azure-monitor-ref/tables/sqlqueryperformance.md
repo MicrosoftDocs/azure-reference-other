@@ -4,9 +4,9 @@ description: Reference for SQLQueryPerformance table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SQLQueryPerformance
@@ -27,17 +27,17 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|QueryHash|string||
-|ObjectName|string||
-|TotalWorkerTime|long||
 |AverageCPUTime|long||
-|ExecutionCount|int||
-|TimeGenerated|datetime||
-|SqlInstanceName|string||
-|HelpLink|string||
-|DatabaseName|string||
-|CreationTime|datetime||
-|LastExecutionTime|datetime||
-|SourceSystem|string||
 |Computer|string||
+|CreationTime|datetime||
+|DatabaseName|string||
+|ExecutionCount|int||
+|HelpLink|string||
+|LastExecutionTime|datetime||
+|ObjectName|string||
+|QueryHash|string||
+|SourceSystem|string||
+|SqlInstanceName|string||
+|TimeGenerated|datetime||
+|TotalWorkerTime|long||
 |Type|string||

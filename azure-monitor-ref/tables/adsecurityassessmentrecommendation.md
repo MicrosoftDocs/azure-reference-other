@@ -4,9 +4,9 @@ description: Reference for ADSecurityAssessmentRecommendation table in Azure Mon
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ADSecurityAssessmentRecommendation
@@ -27,28 +27,28 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|AssessmentId|string||
-|RecommendationId|string||
-|Recommendation|string||
-|Description|string||
-|RecommendationResult|string||
-|TimeGenerated|datetime||
-|FocusAreaId|string||
-|FocusArea|string||
-|ActionAreaId|string||
 |ActionArea|string||
-|RecommendationWeight|real||
-|Computer|string||
-|AffectedObjectType|string||
+|ActionAreaId|string||
 |AffectedObjectName|string||
-|Forest|string||
-|Domain|string||
+|AffectedObjectType|string||
+|AssessmentId|string||
+|Computer|string||
+|CustomData|string||
+|Description|string||
+|DNSServer|string||
 |DNSZone|string||
+|Domain|string||
 |DomainController|string||
-|Site|string||
+|FocusArea|string||
+|FocusAreaId|string||
+|Forest|string||
 |GroupPolicyObject|string||
 |NamingContext|string||
-|DNSServer|string||
-|CustomData|string||
+|Recommendation|string||
+|RecommendationId|string||
+|RecommendationResult|string||
+|RecommendationWeight|real||
+|Site|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

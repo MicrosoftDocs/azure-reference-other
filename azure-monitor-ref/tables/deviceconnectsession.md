@@ -4,9 +4,9 @@ description: Reference for DeviceConnectSession table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DeviceConnectSession
@@ -27,19 +27,19 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
 |Computer|string||
-|TimeGenerated|datetime||
+|DeviceType|string||
 |EventId|int||
-|HealthServiceId|string||
 |EventName|string||
+|HealthServiceId|string||
+|Opcode|int||
 |ProviderId|string||
-|sessionType|string||
+|SerialNumber|string||
 |sessionClass|string||
 |sessionConnected|bool||
 |sessionDurationMilliSeconds|real||
-|wasCleanShutdown|bool||
-|Opcode|int||
-|SerialNumber|string||
-|DeviceType|string||
+|sessionType|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||
+|wasCleanShutdown|bool||

@@ -4,9 +4,9 @@ description: Reference for MAOfficeCurrencyAssessment table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeCurrencyAssessment
@@ -27,14 +27,14 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|DeviceId|string||
-|ServicingChannel|string||
-|ReleaseVersion|string||
-|BuildVersion|string||
-|FeatureCurrency|string||
-|SecurityCompliance|string||
-|BuildId|int||
-|LastEventTime|datetime||
 |AssessmentTime|datetime||
+|BuildId|int||
+|BuildVersion|string||
+|DeviceId|string||
+|FeatureCurrency|string||
+|LastEventTime|datetime||
+|ReleaseVersion|string||
+|SecurityCompliance|string||
+|ServicingChannel|string||
 |TimeGenerated|datetime||
 |Type|string||

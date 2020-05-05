@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesDirectoryServiceAccess table in Azur
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AADDomainServicesDirectoryServiceAccess
@@ -31,28 +31,28 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
-|ResultType|string||
-|ResultDescription|string||
-|CorrelationId|string||
-|OpCorrelationID|string||
 |AppCorrelationID|string||
-|DSName|string||
-|DSType|string||
-|ObjectDN|string||
-|ObjectGUID|string||
-|ObjectClass|string||
 |AttributeLDAPDisplayName|string||
 |AttributeSyntaxOID|string||
 |AttributeValue|string||
-|OperationType|string||
-|OldObjectDN|string||
+|Category|string||
+|CorrelationId|string||
+|DSName|string||
+|DSType|string||
 |NewObjectDN|string||
-|TreeDelete|string||
+|ObjectClass|string||
+|ObjectDN|string||
+|ObjectGUID|string||
+|OldObjectDN|string||
+|OpCorrelationID|string||
+|OperationName|string||
+|OperationType|string||
 |RecordId|string||
-|Type|string||
 |_ResourceId|string||
+|ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
+|TreeDelete|string||
+|Type|string||

@@ -4,9 +4,9 @@ description: Reference for MADeviceNotEnrolled table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MADeviceNotEnrolled
@@ -27,12 +27,12 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|ConfigMgrClientID|string||
+|ConfigMgrLastSeenDate|datetime||
+|DeviceName|string||
+|HasEnrollmentError|string||
+|OEMSerialNumber|string||
+|PropertyBag|string||
 |SourceSystem|string||
 |TimeGenerated|datetime||
-|ConfigMgrClientID|string||
-|DeviceName|string||
-|OEMSerialNumber|string||
-|HasEnrollmentError|string||
-|ConfigMgrLastSeenDate|datetime||
-|PropertyBag|string||
 |Type|string||

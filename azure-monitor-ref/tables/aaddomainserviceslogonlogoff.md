@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesLogonLogoff table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AADDomainServicesLogonLogoff
@@ -31,40 +31,40 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
-|ResultType|string||
-|ResultDescription|string||
-|CorrelationId|string||
-|TargetUserSid|string||
-|TargetUserName|string||
-|TargetDomainName|string||
-|TargetLogonId|string||
-|LogonType|int||
-|LogonProcessName|string||
 |AuthenticationPackageName|string||
-|WorkstationName|string||
-|LogonGuid|string||
-|TransmittedServices|string||
-|LmPackageName|string||
-|KeyLength|int||
-|ImpersonationLevel|string||
-|RestrictedAdminMode|string||
-|TargetOutboundUserName|string||
-|TargetOutboundDomainName|string||
-|VirtualAccount|string||
-|TargetLinkedLogonId|string||
+|Category|string||
+|CorrelationId|string||
 |ElevatedToken|string||
 |FailureReason|string||
-|SubStatus|string||
-|TargetLogonGuid|string||
-|TargetServerName|string||
-|TargetInfo|string||
-|TdoSid|string||
-|SidList|string||
+|ImpersonationLevel|string||
+|KeyLength|int||
+|LmPackageName|string||
+|LogonGuid|string||
+|LogonProcessName|string||
+|LogonType|int||
+|OperationName|string||
 |RecordId|string||
-|Type|string||
 |_ResourceId|string||
+|ResourceId|string||
+|RestrictedAdminMode|string||
+|ResultDescription|string||
+|ResultType|string||
+|SidList|string||
+|SourceSystem|string||
+|SubStatus|string||
+|TargetDomainName|string||
+|TargetInfo|string||
+|TargetLinkedLogonId|string||
+|TargetLogonGuid|string||
+|TargetLogonId|string||
+|TargetOutboundDomainName|string||
+|TargetOutboundUserName|string||
+|TargetServerName|string||
+|TargetUserName|string||
+|TargetUserSid|string||
+|TdoSid|string||
+|TimeGenerated|datetime||
+|TransmittedServices|string||
+|Type|string||
+|VirtualAccount|string||
+|WorkstationName|string||

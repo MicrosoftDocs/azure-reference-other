@@ -91,6 +91,10 @@ This skip clause defines that once a pattern is matched starting at event **S**,
 
 MEASURES is used to define the projected values from the match using aggregate methods. For example, `LAST(A.id) AS aid` will output the last `id` value that was found over all events that matched pattern named `A` into field name `aid`.
 
+### Classifier function
+
+The classifier function can be used in MEASURES to output pattern names matched to input events. The function returns a list of strings, each with the pattern name that matched an event.
+
 ## PATTERN
 
 The pattern defines the regular expression of events to be searched over the data stream. Pattern variables are user- defined and separated by spaces. Modifiers like **+** and **\*** can be used to modify the frequency of a variable when matching events.
@@ -175,7 +179,8 @@ INTO output FROM input TIMESTAMP BY time
 MATCH_RECOGNIZE (
 	LIMIT DURATION (minute, 3)
 	MEASURES
- 		MAX(Dangerous.pressure) as pressure
+ 		MAX(Dangerous.pressure) as pressure,
+		Classifier() as patterns
 	AFTER MATCH SKIP TO NEXT ROW
 	PATTERN (Normal+ Dangerous+)
 	DEFINE

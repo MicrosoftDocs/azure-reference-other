@@ -4,9 +4,9 @@ description: Reference for UpdateRunProgress table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # UpdateRunProgress
@@ -31,30 +31,30 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ManagementGroupName|string||
-|SourceComputerId|string||
-|KBID|string||
-|UpdateId|string||
-|SucceededOnRetry|bool||
-|ErrorResult|string||
-|UpdateRunName|string||
-|InstallationStatus|string||
 |Computer|string||
-|Title|string||
-|Product|string||
-|OSType|string||
-|StartTime|datetime||
-|EndTime|datetime||
-|CorrelationId|string||
-|SubscriptionId|string||
-|ResourceGroup|string||
-|ResourceProvider|string||
-|Resource|string||
-|ResourceId|string||
-|ResourceType|string||
 |ComputerEnvironment|string||
-|VMUUID|string||
-|Type|string||
+|CorrelationId|string||
+|EndTime|datetime||
+|ErrorResult|string||
+|InstallationStatus|string||
+|KBID|string||
+|ManagementGroupName|string||
+|OSType|string||
+|Product|string||
+|Resource|string||
+|ResourceGroup|string||
+|ResourceId|string||
 |_ResourceId|string||
+|ResourceProvider|string||
+|ResourceType|string||
+|SourceComputerId|string||
+|SourceSystem|string||
+|StartTime|datetime||
+|SubscriptionId|string||
+|SucceededOnRetry|bool||
+|TimeGenerated|datetime||
+|Title|string||
+|Type|string||
+|UpdateId|string||
+|UpdateRunName|string||
+|VMUUID|string||

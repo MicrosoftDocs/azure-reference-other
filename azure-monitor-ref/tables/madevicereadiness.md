@@ -4,9 +4,9 @@ description: Reference for MADeviceReadiness table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MADeviceReadiness
@@ -27,29 +27,29 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|AppIssues|int||
+|ConfigMgrClientID|string||
 |DeploymentPlanId|string||
 |DeviceId|string||
-|ConfigMgrClientID|string||
-|DeviceName|string||
 |DeviceLastSeenDate|datetime||
-|Manufacturer|string||
-|OSVersion|string||
-|ModelFamily|string||
-|InventoryCompleteness|bool||
-|OfficeVersion|string||
-|WindowsUpgradeDecision|string||
-|OfficeUpgradeDecision|string||
-|AppIssues|int||
+|DeviceName|string||
+|DeviceStatus|int||
 |DriverIssues|int||
-|SysReqIssues|int||
+|InventoryCompleteness|bool||
+|MacroIssues|int||
+|Manufacturer|string||
+|ModelFamily|string||
 |OfficeAddInIssues|int||
 |OfficeAppIssues|int||
-|TotalIssues|int||
-|OSBuild|string||
 |OfficeBuild|string||
-|MacroIssues|int||
+|OfficeUpgradeDecision|string||
+|OfficeVersion|string||
+|OSBuild|string||
+|OSVersion|string||
 |PilotDevice|bool||
-|DeviceStatus|int||
+|SourceSystem|string||
+|SysReqIssues|int||
+|TimeGenerated|datetime||
+|TotalIssues|int||
 |Type|string||
+|WindowsUpgradeDecision|string||

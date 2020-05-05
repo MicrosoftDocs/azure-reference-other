@@ -35,7 +35,7 @@ To merge two sets of count-based features, the features must have been created u
 
     - [Modify Count Table Parameters](modify-count-table-parameters.md). Takes an existing count transformation as an input and outputs an updated transformation.
 
-    - [Import Count Table](import-count-table.md). This module supports backward compatibility with older experiments that used count-based learning. If you used [Import Count Table](import-count-table.md) to analyze the distribution of values in a dataset, and then converted the values to features using the [Count Featurizer (deprecated)](count-featurizer-deprecated.md) module, use [Import Count Table](import-count-table.md) to convert the results to a transformation.
+    - [Import Count Table](import-count-table.md). This module supports backward compatibility with older experiments that used count-based learning. If you used [Import Count Table](import-count-table.md) to analyze the distribution of values in a dataset, and then converted the values to features using the deprecated Count Featurizer module, use [Import Count Table](import-count-table.md) to convert the results to a transformation.
 
 2. Add the **Merge Count Transform** module to the experiment, and connect a transformation to each input.
 
@@ -87,4 +87,3 @@ For examples of how this module is used, see the [Azure AI Gallery](https://gall
 ## See also
 
  [Learning with Counts](data-transformation-learning-with-counts.md)   
- [Build Count Table (deprecated)](build-count-table-deprecated.md)

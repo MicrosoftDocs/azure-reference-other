@@ -4,9 +4,9 @@ description: Reference for AWSCloudTrail table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AWSCloudTrail
@@ -27,43 +27,43 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TimeGenerated|datetime||
+|AdditionalEventData|string||
+|APIVersion|string||
 |AwsEventId|string||
-|EventVersion|string||
-|EventSource|string||
-|EventTypeName|string||
-|EventName|string||
-|UserIdentityType|string||
-|UserIdentityPrincipalid|string||
-|UserIdentityArn|string||
-|UserIdentityAccountId|string||
-|UserIdentityInvokedBy|string||
-|UserIdentityAccessKeyId|string||
-|UserIdentityUserName|string||
-|SessionMfaAuthenticated|bool||
-|SessionCreationDate|datetime||
-|SessionIssuerType|string||
-|SessionIssuerPrincipalId|string||
-|SessionIssuerArn|string||
-|SessionIssuerAccountId|string||
-|SessionIssuerUserName|string||
 |AWSRegion|string||
-|SourceIpAddress|string||
-|UserAgent|string||
+|AwsRequestId|string||
+|Category|string||
 |ErrorCode|int||
 |ErrorMessage|string||
-|RequestParameters|string||
-|ResponseElements|string||
-|AdditionalEventData|string||
-|AwsRequestId|string||
-|Resources|string||
-|APIVersion|string||
-|ReadOnly|bool||
-|RecipientAccountId|string||
-|ServiceEventDetails|string||
-|SharedEventId|string||
-|VpcEndpointId|string||
+|EventName|string||
+|EventSource|string||
+|EventTypeName|string||
+|EventVersion|string||
 |ManagementEvent|bool||
 |OperationName|string||
-|Category|string||
+|ReadOnly|bool||
+|RecipientAccountId|string||
+|RequestParameters|string||
+|Resources|string||
+|ResponseElements|string||
+|ServiceEventDetails|string||
+|SessionCreationDate|datetime||
+|SessionIssuerAccountId|string||
+|SessionIssuerArn|string||
+|SessionIssuerPrincipalId|string||
+|SessionIssuerType|string||
+|SessionIssuerUserName|string||
+|SessionMfaAuthenticated|bool||
+|SharedEventId|string||
+|SourceIpAddress|string||
+|TimeGenerated|datetime||
 |Type|string||
+|UserAgent|string||
+|UserIdentityAccessKeyId|string||
+|UserIdentityAccountId|string||
+|UserIdentityArn|string||
+|UserIdentityInvokedBy|string||
+|UserIdentityPrincipalid|string||
+|UserIdentityType|string||
+|UserIdentityUserName|string||
+|VpcEndpointId|string||

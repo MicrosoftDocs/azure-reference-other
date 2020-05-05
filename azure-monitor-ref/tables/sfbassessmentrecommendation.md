@@ -4,9 +4,9 @@ description: Reference for SfBAssessmentRecommendation table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # SfBAssessmentRecommendation
@@ -27,31 +27,31 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|AssessmentId|string||
-|RecommendationId|string||
-|Recommendation|string||
-|Description|string||
-|RecommendationResult|string||
-|TimeGenerated|datetime||
-|FocusAreaId|string||
-|FocusArea|string||
-|ActionAreaId|string||
 |ActionArea|string||
-|RecommendationWeight|real||
-|Computer|string||
-|AffectedObjectType|string||
+|ActionAreaId|string||
 |AffectedObjectName|string||
-|Forest|string||
+|AffectedObjectType|string||
+|AssessmentId|string||
+|Computer|string||
+|CustomData|string||
+|Description|string||
 |Domain|string||
-|LyncOrganization|string||
-|LyncInternalDomain|string||
-|LyncSimpleURLDomain|string||
-|LyncSite|string||
+|FocusArea|string||
+|FocusAreaId|string||
+|Forest|string||
+|LyncCentralMgmtStoreDatabase|string||
 |LyncFEPool|string||
 |LyncFrontEnd|string||
-|LyncCentralMgmtStoreDatabase|string||
+|LyncInternalDomain|string||
+|LyncOrganization|string||
+|LyncSimpleURLDomain|string||
+|LyncSite|string||
 |LyncUserStoreDatabase|string||
+|Recommendation|string||
+|RecommendationId|string||
+|RecommendationResult|string||
+|RecommendationWeight|real||
+|SourceSystem|string||
 |Technology|string||
-|CustomData|string||
+|TimeGenerated|datetime||
 |Type|string||

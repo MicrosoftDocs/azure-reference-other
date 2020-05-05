@@ -4,9 +4,9 @@ description: Reference for WindowsClientAssessmentRecommendation table in Azure 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # WindowsClientAssessmentRecommendation
@@ -27,24 +27,24 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|AssessmentId|string||
-|RecommendationId|string||
-|Recommendation|string||
-|Description|string||
-|RecommendationResult|string||
-|TimeGenerated|datetime||
-|FocusAreaId|string||
-|FocusArea|string||
-|ActionAreaId|string||
 |ActionArea|string||
-|RecommendationWeight|real||
-|Computer|string||
-|AffectedObjectType|string||
+|ActionAreaId|string||
 |AffectedObjectName|string||
-|Forest|string||
-|Domain|string||
-|Server|string||
-|Technology|string||
+|AffectedObjectType|string||
+|AssessmentId|string||
+|Computer|string||
 |CustomData|string||
+|Description|string||
+|Domain|string||
+|FocusArea|string||
+|FocusAreaId|string||
+|Forest|string||
+|Recommendation|string||
+|RecommendationId|string||
+|RecommendationResult|string||
+|RecommendationWeight|real||
+|Server|string||
+|SourceSystem|string||
+|Technology|string||
+|TimeGenerated|datetime||
 |Type|string||

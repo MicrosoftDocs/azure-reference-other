@@ -4,9 +4,9 @@ description: Reference for KubePodInventory table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # KubePodInventory
@@ -30,31 +30,31 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Computer|string||
 |ClusterId|string||
+|ClusterName|string||
+|Computer|string||
 |ContainerCreationTimeStamp|datetime||
-|PodUid|string||
-|PodCreationTimeStamp|datetime||
-|InstanceName|string||
+|ContainerID|string||
+|ContainerLastStatus|string||
+|ContainerName|string||
 |ContainerRestartCount|int||
-|PodRestartCount|int||
-|PodStartTime|datetime||
 |ContainerStartTime|datetime||
-|ServiceName|string||
+|ContainerStatus|string||
+|ContainerStatusReason|string||
 |ControllerKind|string||
 |ControllerName|string||
-|ContainerStatus|string||
-|ContainerID|string||
-|ContainerName|string||
+|InstanceName|string||
 |Name|string||
-|PodLabel|string||
 |Namespace|string||
-|PodStatus|string||
-|ClusterName|string||
+|PodCreationTimeStamp|datetime||
 |PodIp|string||
-|ContainerStatusReason|string||
-|ContainerLastStatus|string||
-|Type|string||
+|PodLabel|string||
+|PodRestartCount|int||
+|PodStartTime|datetime||
+|PodStatus|string||
+|PodUid|string||
 |_ResourceId|string||
+|ServiceName|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
+|Type|string||

@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesAccountManagement table in Azure Mon
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AADDomainServicesAccountManagement
@@ -31,53 +31,53 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|ResourceId|string||
-|OperationName|string||
-|Category|string||
-|ResultType|string||
-|ResultDescription|string||
-|CorrelationId|string||
-|SubjectUserSid|string||
-|SubjectUserName|string||
-|SubjectDomainName|string||
-|SubjectLogonId|string||
-|Status|string||
-|PrivilegeList|string||
-|TargetSid|string||
-|SamAccountName|string||
-|DisplayName|string||
-|UserPrincipalName|string||
-|HomeDirectory|string||
-|HomePath|string||
-|ScriptPath|string||
-|ProfilePath|string||
-|UserWorkstations|string||
-|PasswordLastSet|string||
 |AccountExpires|string||
-|PrimaryGroupId|string||
 |AllowedToDelegateTo|string||
-|OldUacValue|string||
-|NewUacValue|string||
-|UserAccountControl|string||
-|UserParameters|string||
-|SidHistory|string||
-|LogonHours|string||
-|MemberName|string||
-|MemberSid|string||
-|MembershipExpirationTime|datetime||
-|DnsHostName|string||
-|ServicePrincipalNames|string||
-|ComputerAccountChange|string||
-|GroupTypeChange|string||
-|SourceUserName|string||
-|SourceSid|string||
-|Workstation|string||
-|OldTargetUserName|string||
-|NewTargetUserName|string||
 |CallerProcessId|string||
 |CallerProcessName|string||
+|Category|string||
+|ComputerAccountChange|string||
+|CorrelationId|string||
+|DisplayName|string||
+|DnsHostName|string||
+|GroupTypeChange|string||
+|HomeDirectory|string||
+|HomePath|string||
+|LogonHours|string||
+|MemberName|string||
+|MembershipExpirationTime|datetime||
+|MemberSid|string||
+|NewTargetUserName|string||
+|NewUacValue|string||
+|OldTargetUserName|string||
+|OldUacValue|string||
+|OperationName|string||
+|PasswordLastSet|string||
+|PrimaryGroupId|string||
+|PrivilegeList|string||
+|ProfilePath|string||
 |RecordId|string||
-|Type|string||
 |_ResourceId|string||
+|ResourceId|string||
+|ResultDescription|string||
+|ResultType|string||
+|SamAccountName|string||
+|ScriptPath|string||
+|ServicePrincipalNames|string||
+|SidHistory|string||
+|SourceSid|string||
+|SourceSystem|string||
+|SourceUserName|string||
+|Status|string||
+|SubjectDomainName|string||
+|SubjectLogonId|string||
+|SubjectUserName|string||
+|SubjectUserSid|string||
+|TargetSid|string||
+|TimeGenerated|datetime||
+|Type|string||
+|UserAccountControl|string||
+|UserParameters|string||
+|UserPrincipalName|string||
+|UserWorkstations|string||
+|Workstation|string||

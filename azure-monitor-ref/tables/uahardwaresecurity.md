@@ -4,9 +4,9 @@ description: Reference for UAHardwareSecurity table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # UAHardwareSecurity
@@ -27,20 +27,20 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|AppraiserDataFileUpdated|string||
+|AVStatusOnTarget|string||
 |Computer|string||
 |ComputerID|string||
 |ConfigMgrClientID|string||
 |FirmwareUpdated|string||
-|WinSecurityUpdateInstalled|string||
-|WinSecurityFixEnabled|string||
-|WinSecurityM5FixEnabled|string||
-|WinSecurityM11FixEnabled|string||
-|AppraiserDataFileUpdated|string||
-|AVStatusOnTarget|string||
-|WinSecurityTarget|string||
-|Outcome|string||
 |Guidance|string||
 |Notes|string||
+|Outcome|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||
+|WinSecurityFixEnabled|string||
+|WinSecurityM11FixEnabled|string||
+|WinSecurityM5FixEnabled|string||
+|WinSecurityTarget|string||
+|WinSecurityUpdateInstalled|string||

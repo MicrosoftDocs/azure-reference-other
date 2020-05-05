@@ -68,7 +68,7 @@ For examples of how [Score Model](score-model.md) is used in an experimental wor
 
 If you are using one of the following special types of model, you might need to use one of these custom scoring modules:
 
-- Score a clustering model: Use [Assign Data to Clusters](assign-data-to-clusters.md), or [Assign to Clusters (deprecated)](assign-to-clusters-deprecated.md) if you have an older experiment.
+- Score a clustering model: Use [Assign Data to Clusters](assign-data-to-clusters.md).
 
 - Create recommendations or generate data for evaluating a recommender: Use [Score Matchbox Recommender](score-matchbox-recommender.md)
 

@@ -4,9 +4,9 @@ description: Reference for MAOfficeMacroGlobalHealth table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeMacroGlobalHealth
@@ -27,15 +27,15 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|OfficeAppRelease|string||
-|OfficeMacroIssueId|string||
-|CommercialDeviceRuntimeErrorRate|real||
+|ActiveDevicesInLast14Days|int||
+|CommercialDeviceCompileErrorDataSufficient|bool||
 |CommercialDeviceCompileErrorRate|real||
 |CommercialDeviceRuntimeErrorDataSufficient|bool||
-|CommercialDeviceCompileErrorDataSufficient|bool||
+|CommercialDeviceRuntimeErrorRate|real||
 |NumberOfDevicesOnAppRelease|int||
 |NumberOfDevicesOnPreviousAppReleases|int||
-|ActiveDevicesInLast14Days|int||
+|OfficeAppRelease|string||
+|OfficeMacroIssueId|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

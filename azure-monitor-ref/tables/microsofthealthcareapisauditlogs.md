@@ -4,9 +4,9 @@ description: Reference for MicrosoftHealthcareApisAuditLogs table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MicrosoftHealthcareApisAuditLogs
@@ -31,22 +31,22 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log.|
-|OperationName|string|The name of the operation represented by this event.|
-|CorrelationId|string|The correlation id of the request.|
-|RequestUri|string|The URI of the request.|
-|FhirResourceType|string|The resource type the operation was executed for.|
-|StatusCode|int|The HTTP status code.|
-|ResultType|string|The result type.|
-|OperationDuration|int|The duration of the operation in ms.|
-|LogCategory|string|The audit event category.|
-|CallerIPAddress|string|The IP address of the caller.|
+|CallerIdentity|dynamic|The caller's identity.|
 |CallerIdentityIssuer|string|The JWD token Issuer.|
 |CallerIdentityObjectId|string|The AAD object ID.|
-|CallerIdentity|dynamic|The caller's identity.|
+|CallerIPAddress|string|The IP address of the caller.|
+|CorrelationId|string|The correlation id of the request.|
+|FhirResourceType|string|The resource type the operation was executed for.|
 |Location|string|The location of the server that processed the request (e.g., South Central US).|
+|LogCategory|string|The audit event category.|
+|OperationDuration|int|The duration of the operation in ms.|
+|OperationName|string|The name of the operation represented by this event.|
 |Properties|dynamic|Additional properties.|
-|Type|string||
+|RequestUri|string|The URI of the request.|
 |_ResourceId|string||
+|ResultType|string|The result type.|
+|SourceSystem|string||
+|StatusCode|int|The HTTP status code.|
+|TenantId|string||
+|TimeGenerated|datetime|The timestamp (UTC) of the log.|
+|Type|string||

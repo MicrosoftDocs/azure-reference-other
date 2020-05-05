@@ -4,9 +4,9 @@ description: Reference for ServiceFabricReliableServiceEvent table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # ServiceFabricReliableServiceEvent
@@ -27,31 +27,31 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Computer|string||
-|Level|string||
-|ProviderGuid|string||
-|EventSourceName|string||
-|EventId|int||
-|Pid|int||
-|Tid|int||
-|OpcodeName|string||
-|KeywordName|string||
-|TaskName|string||
-|ChannelName|string||
-|AzureDeploymentID|string||
-|Role|string||
-|EventMessage|string||
-|ApplicationTypeName|string||
-|ApplicationName|string||
-|ServiceTypeName|string||
-|ServiceName|string||
-|PartitionId|string||
-|ReplicaId|long||
-|SlowCancellationTimeMillis|real||
-|WasCanceled|bool||
-|Exception|string||
 |ActualCancellationTimeMillis|real||
+|ApplicationName|string||
+|ApplicationTypeName|string||
+|AzureDeploymentID|string||
+|ChannelName|string||
+|Computer|string||
+|EventId|int||
+|EventMessage|string||
+|EventSourceName|string||
+|Exception|string||
 |InstanceId|long||
+|KeywordName|string||
+|Level|string||
+|OpcodeName|string||
+|PartitionId|string||
+|Pid|int||
+|ProviderGuid|string||
+|ReplicaId|long||
+|Role|string||
+|ServiceName|string||
+|ServiceTypeName|string||
+|SlowCancellationTimeMillis|real||
+|SourceSystem|string||
+|TaskName|string||
+|Tid|int||
+|TimeGenerated|datetime||
 |Type|string||
+|WasCanceled|bool||

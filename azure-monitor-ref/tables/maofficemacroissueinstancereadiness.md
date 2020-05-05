@@ -4,9 +4,9 @@ description: Reference for MAOfficeMacroIssueInstanceReadiness table in Azure Mo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MAOfficeMacroIssueInstanceReadiness
@@ -27,12 +27,12 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
+|ConfigMgrClientID|string||
 |DeploymentPlanId|string||
 |DeviceId|string||
-|OfficeMacroIssueId|string||
-|FileCount|int||
-|ConfigMgrClientID|string||
 |DeviceName|string||
+|FileCount|int||
+|OfficeMacroIssueId|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
 |Type|string||

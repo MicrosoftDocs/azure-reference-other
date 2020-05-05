@@ -4,9 +4,9 @@ description: Reference for AppServiceConsoleLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # AppServiceConsoleLogs
@@ -31,12 +31,12 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|TenantId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime|Time when event is generated|
 |Category|string|Log category name|
-|Level|string|Verbosity level of log|
 |Host|string|Host where the application is running|
-|ResultDescription|string|Log message description|
-|Type|string||
+|Level|string|Verbosity level of log|
 |_ResourceId|string||
+|ResultDescription|string|Log message description|
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime|Time when event is generated|
+|Type|string||

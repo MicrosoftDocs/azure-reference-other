@@ -4,9 +4,9 @@ description: Reference for MADriverReadiness table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # MADriverReadiness
@@ -27,22 +27,22 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
-|SourceSystem|string||
-|TimeGenerated|datetime||
 |DeploymentPlanId|string||
+|DriverAvailability|string||
+|DriverDate|string||
 |DriverKey|long||
+|DriverName|string||
+|DriverVendor|string||
+|DriverVersion|string||
+|Guidance|string||
+|HardwareID|string||
 |HardwareName|string||
 |HardwareType|string||
-|HardwareID|string||
-|DriverVendor|string||
-|DriverName|string||
-|DriverVersion|string||
-|DriverDate|string||
-|TotalComputers|int||
-|Remediation|string||
-|UpgradeDecision|string||
-|RiskAssessment|string||
 |Issue|string||
-|Guidance|string||
-|DriverAvailability|string||
+|Remediation|string||
+|RiskAssessment|string||
+|SourceSystem|string||
+|TimeGenerated|datetime||
+|TotalComputers|int||
 |Type|string||
+|UpgradeDecision|string||

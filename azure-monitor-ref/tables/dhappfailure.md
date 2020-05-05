@@ -4,9 +4,9 @@ description: Reference for DHAppFailure table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 4/30/2020
 ---
 
 # DHAppFailure
@@ -27,21 +27,21 @@ ms.date: 3/16/2020
 
 |Column|Type|Description|
 |---|---|---|
+|AppFileDisplayName|string||
+|AppFileName|string||
+|AppFileVersion|string||
+|AppName|string||
+|AppVersion|string||
+|Computer|string||
 |ComputerID|string||
 |ConfigMgrClientID|string||
-|Computer|string||
-|AppName|string||
-|AppFileName|string||
-|AppFileDisplayName|string||
-|AppFileVersion|string||
-|AppVersion|string||
+|DiagnosticSignature|string||
+|FailureId|string||
+|IsInteractiveApp|bool||
 |IsOSBinary|bool||
 |OSBuildNumber|int||
 |OSRevisionNumber|int||
 |OSVersion|string||
 |Publisher|string||
-|IsInteractiveApp|bool||
-|FailureId|string||
-|DiagnosticSignature|string||
 |TimeGenerated|datetime||
 |Type|string||
