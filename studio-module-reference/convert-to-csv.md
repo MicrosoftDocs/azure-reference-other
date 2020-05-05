@@ -62,12 +62,7 @@ Double-click the output of [Convert to CSV](convert-to-csv.md), and select one o
  
      For example, if you choose the R option, sample R code is provided that loads the CSV file into a data frame and displays the first few rows using the `head` function.
 
-## Examples  
 
-To see examples of how this module is used, see the [Azure AI Gallery](https://gallery.azure.ai/):  
-  
-- [Accessing Azure ML datasets using R](https://gallery.azure.ai/Notebook/Accessing-datasets-with-R-using-the-AzureML-R-package-5): Demonstrates how you can convert datasets to CSV format for use with external applications. 
-  
 ## Technical notes  
 
 This section contains implementation details, tips, and answers to frequently asked questions.
