@@ -144,7 +144,7 @@ For examples of integrating Python script with Studio (classic) experiments, see
 
 + [Execute Python Script](https://go.microsoft.com/fwlink/p/?LinkId=525942): Use text tokenization, stemming, and other natural language processing using the **Execute Python Script** module.
 + [Custom R and Python scripts in Azure ML](https://gallery.azure.ai/Tutorial/5-Custom-Scripts-R-and-Python-in-AML-1): Walks you through the process of adding custom code a(either R or Python), processing data, and visualizing the results.
-+ [Analyzing PyPI Data to Determine Python 3 Support](https://gallery.azure.ai/Notebook/Analyzing-PyPI-Data-to-Determine-Python-3-Support-2): Estimate the point when demand for Python 3 outstrips that for Python 2.7 using python.
++ [Analyzing PyPI Data to Determine Python 3 Support](https://notebooks.azure.com/chloe/projects/pypidataanalysis/html/Analyzing%20PyPI%20Data%20to%20Determine%20Python%203%20Support.ipynb): Estimate the point when demand for Python 3 outstrips that for Python 2.7 using python.
 
 ## See also
 

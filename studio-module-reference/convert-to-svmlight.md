@@ -24,7 +24,7 @@ This article describes how to use the [Convert to SVMLight](convert-to-svmlight.
 
 The SVM-Light framework was developed by researchers at Cornell University. The SVM-Light library implements Vapnik's Support Vector Machine, but the format has been adopted elsewhere and can be used for many machine learning tasks, including classification and regression.  
   
-For more information, see [SVMLight Support Vector Machine](https://svmlight.joachims.org/).  
+For more information, see [SVMLight Support Vector Machine](http://svmlight.joachims.org/).  
   
 ## How to configure Convert to SVMLight  
 
