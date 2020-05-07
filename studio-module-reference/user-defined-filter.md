@@ -78,7 +78,7 @@ This FIR filter approximates a triangularly weighted moving average (WMA). You d
 0.0625, 0.0625, 0.2500, 0.3750, 0.2500, 0.0625
 ```
 
-The values used in this custom FIR filter represent a vector of feed-forward coefficients obtained by using the Deslauriers-Dubuc method of finite sequencing. For more information, see [Dubuc-Deslauriers Subdivision for Finite Sequences and Interpolation Wavelets on an Interval](https://appliedmaths.sun.ac.za/~herbst/research/publications/subdiv.pdf).
+The values used in this custom FIR filter represent a vector of feed-forward coefficients obtained by using the Deslauriers-Dubuc method of finite sequencing. For more information, see [Dubuc-Deslauriers Subdivision for Finite Sequences and Interpolation Wavelets on an Interval](https://pdfs.semanticscholar.org/3fb4/90ff424cb919fa18e6aa7d1c8ed7ab106da7.pdf).
 
 ###  IIR filter example: Notch filter
 
