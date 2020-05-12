@@ -73,7 +73,7 @@ To see how the Two-Class Bayes Point Machine is used in machine learning, see th
 
 This section contains implementation details and frequently asked questions about this algorithm.
 
-Details from the original research and underlying theory are available in this paper (PDF): [Bayes Point Machines, by Herbert, Graepe, and Campbell](https://www.jmlr.org/papers/volume1/herbrich01a/herbrich01a.pdf)  
+Details from the original research and underlying theory are available in this paper (PDF): [Bayes Point Machines, by Herbert, Graepe, and Campbell](http://www.jmlr.org/papers/volume1/herbrich01a/herbrich01a.pdf)  
 
 However, this implementation improves on the original algorithm in several ways:
 

@@ -186,7 +186,7 @@ For more information about quantile regression, see these books and articles:
   
 -   Quantile Regression Forests. Nicolai Meinshausen  
   
-     [https://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf](https://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf)  
+     [http://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf](http://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf)  
   
 -   Random forests. Leo Breiman.  
   
