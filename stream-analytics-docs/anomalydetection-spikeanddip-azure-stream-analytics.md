@@ -86,7 +86,7 @@ The follwoing example assumes a uniform input rate of 1 event per second in a 2 
 WITH AnomalyDetectionStep AS
 (
     SELECT
-        EVENTENQUEUEDUTCTIME aASs time,
+        EVENTENQUEUEDUTCTIME as time,
         CAST(temperature AS FLOAT) as temp,
         AnomalyDetection_SpikeAndDip(CAST(temperature AS FLOAT), 95, 120, 'spikesanddips')
         OVER(LIMIT DURATION(second, 120)) AS SpikeAndDipScores
