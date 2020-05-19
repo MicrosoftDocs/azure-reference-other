@@ -5,7 +5,7 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-manager: kfile
+
 
 ms.service: stream-analytics
 ms.topic: reference
