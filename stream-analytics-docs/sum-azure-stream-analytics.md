@@ -5,18 +5,16 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 74d404e3-4a67-4303-b95e-d7063af3c513
 caps.latest.revision: 5
 ms.workload: data-services
-ms.date: 04/22/2016
+ms.date: 05/19/2020
 ms.author: mamccrea
 ---
 # SUM (Azure Stream Analytics)
-  Returns the sum of all the values in the expression. SUM can be used with numeric columns only. Null values are ignored.  
+  Returns the sum of all the values in the expression. SUM can be used with numeric columns only. NULL values are ignored. For all NULL values the result is also NULL.
   
  ## Syntax  
   
