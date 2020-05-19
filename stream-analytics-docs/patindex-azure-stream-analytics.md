@@ -5,7 +5,7 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-manager: kfile
+
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 42e4e849-2fbd-4374-bd8c-d40130ae81a3

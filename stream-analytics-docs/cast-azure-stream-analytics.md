@@ -6,7 +6,7 @@ applies_to:
 services: stream-analytics
 author: mamccrea
 ms.author: mamccrea
-manager: kfile
+
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 1cddcf7a-cdc7-4efc-91c3-9f8058b0e8c7
