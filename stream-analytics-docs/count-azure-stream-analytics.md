@@ -5,14 +5,14 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-manager: kfile
+manager: jasonh
 
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 494f899f-2ea7-4990-9a65-3881d9995b33
 caps.latest.revision: 11
 ms.workload: data-services
-ms.date: 10/02/2017
+ms.date: 05/19/2020
 ms.author: mamccrea
 ---
 # COUNT (Azure Stream Analytics)
@@ -44,7 +44,7 @@ Is an expression of any type or a column name. Aggregate functions and sub queri
   
 \* (wildcard expression) 
   
-Specifies that all events should be counted to return the total number of events in a group. COUNT(\*) takes no parameters. COUNT(\*) does not require an expression parameter because, by definition, it does not use information about any particular column. COUNT(\*) returns the number of events without getting rid of duplicates. It counts each event separately. This includes events that contain null values.
+Specifies that all events should be counted to return the total number of events in a group. COUNT(\*) takes no parameters. COUNT(\*) does not require an expression parameter because, by definition, it does not use information about any particular column. COUNT(\*) returns the number of events without getting rid of duplicates. It counts each event separately. This includes events that contain null values, returning a 0 for null values.
 
 **OVER ([\<PARTITION BY clause> \<LIMIT DURATION clause> [\<WHEN clause>]]**
 
