@@ -39,7 +39,7 @@ When a partition key is provided, the events are grouped together by the key and
 ```
 
 > [!NOTE]
-> The Sliding Window can be used in the above two ways.
+> The Session Window can be used in the above two ways.
 
 ## Arguments
 
