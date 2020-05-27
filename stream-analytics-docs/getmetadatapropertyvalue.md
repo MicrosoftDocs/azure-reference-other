@@ -89,3 +89,5 @@ GetMetadataPropertyValue has the following limitations of usage:
 * Using `SELECT *` in your query causes duplicate columns. To prevent duplicate columns, list columns individually in your SELECT statement.
 
 * The alias you give your Metadata Property Value will be lowercase regardless of the casing used in your query. For example, `SELECT GetMetadataPropertyValue(ehInput, 'EventId') AS eventPrimaryKey` outputs as `eventprimarykey`. To preserve casing, use compatibility level 1.2.
+
+* This function does not work in portal preview results pane or Visual Studio/VS Code local query testing. It only works when job is running in public cloud.
