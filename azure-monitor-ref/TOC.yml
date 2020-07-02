@@ -128,3 +128,5 @@
     href: tables/dhoscrashdata.md
   - name: DnsInventory
     href: tables/dnsinventory.md
+  - name: Dynamics365Activity
+    href: tables/dynamics365activity.md
