@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # SecurityDetection
@@ -50,7 +50,7 @@ ms.date: 4/30/2020
 |Provider|string||
 |RemediationSteps|string||
 |ReportingSystem|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ServiceId|string||
 |SubjectDomainName|string||
 |SubjectUserName|string||
@@ -58,5 +58,5 @@ ms.date: 4/30/2020
 |SuccessfulLogins|int||
 |SuspiciousProcess|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |ValidAccountsSeen|int||
