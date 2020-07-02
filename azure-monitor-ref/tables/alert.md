@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Alert
@@ -70,7 +70,7 @@ ms.date: 4/30/2020
 |RepeatCount|int||
 |ResolvedBy|string||
 |ResourceId|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceType|string||
 |ResourceValue|string||
 |RootObjectName|string||
@@ -92,7 +92,7 @@ ms.date: 4/30/2020
 |TimeRaised|datetime||
 |TimeResolved|datetime||
 |TriggerId|string||
-|Type|string||
+|Type|string|The name of the table|
 |Url|string||
 |ValueDescription|string||
 |ValueFlags|int||
