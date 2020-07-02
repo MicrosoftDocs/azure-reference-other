@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # requests
@@ -48,7 +48,7 @@ ms.date: 4/30/2020
 |operation_SyntheticSource|string||
 |performanceBucket|string||
 |ReferencedType|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |resultCode|string||
 |sdkVersion|string||
 |session_Id|string||
@@ -57,7 +57,7 @@ ms.date: 4/30/2020
 |success|bool||
 |TenantId|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |url|string||
 |user_AccountId|string||
 |user_AuthenticatedId|string||
