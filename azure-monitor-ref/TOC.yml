@@ -14,3 +14,5 @@
     href: tables/aaddomainservicesprivilegeuse.md
   - name: AADDomainServicesSystemSecurity
     href: tables/aaddomainservicessystemsecurity.md
+  - name: ADAssessmentRecommendation
+    href: tables/adassessmentrecommendation.md
