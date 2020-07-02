@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Usage
@@ -46,4 +46,4 @@ ms.date: 4/30/2020
 |StartTime|datetime|Start time of the 1 hour aggregation window (same as TimeGenerated).|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TotalBatches|long|Deprecated|
-|Type|string||
+|Type|string|The name of the table|
