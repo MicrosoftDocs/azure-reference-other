@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ContainerRegistryRepositoryEvents
@@ -42,7 +42,7 @@ ms.date: 4/30/2020
 |OperationName|string||
 |Region|string||
 |Repository|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultDescription|string||
 |ResultType|string||
 |Size|int||
@@ -50,6 +50,6 @@ ms.date: 4/30/2020
 |Tag|string||
 |TenantId|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |UserAgent|string||
 |UserTenantId|string||
