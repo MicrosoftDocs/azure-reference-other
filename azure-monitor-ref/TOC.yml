@@ -90,3 +90,5 @@
     href: tables/azuredevopsauditing.md
   - name: AzureMetrics
     href: tables/azuremetrics.md
+  - name: BehaviorAnalytics
+    href: tables/behavioranalytics.md
