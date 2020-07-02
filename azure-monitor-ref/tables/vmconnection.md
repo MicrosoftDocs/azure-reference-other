@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # VMConnection
@@ -63,7 +63,7 @@ ms.date: 4/30/2020
 |RemoteIp|string|The IP address of the remote end of a connection is included in the RemoteIp property. For inbound connections RemoteIp is the same as SourceIp while for outbound connections it is the same as DestinationIp.|
 |RemoteLatitude|real|Geolocation latitude. An example would be 47.68.|
 |RemoteLongitude|real|Geolocation longitude. An example would be -122.12.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Responses|long|Number of responses observed during the reporting time window.|
 |ResponseTimeMax|long|Largest response time observed during the reporting time window in milliseconds. If no value the property is blank.|
 |ResponseTimeMin|long|Smallest response time observed during the reporting time windowin milliseconds. If no value the property is blank.|
@@ -73,4 +73,4 @@ ms.date: 4/30/2020
 |SourceSystem|string|Value is OpsManager for all records.|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TLPLevel|string|Traffic Light Protocol (TLP) Level. Possible values are White Green Amber Red.|
-|Type|string||
+|Type|string|The name of the table|
