@@ -78,3 +78,5 @@
     href: tables/appservicehttplogs.md
   - name: AppServicePlatformLogs
     href: tables/appserviceplatformlogs.md
+  - name: AppSystemEvents
+    href: tables/appsystemevents.md
