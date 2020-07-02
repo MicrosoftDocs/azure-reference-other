@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # StorageTableLogs
@@ -58,7 +58,7 @@ ms.date: 4/30/2020
 |RequesterUpn|string|The User Principal Names of requestor.|
 |RequestHeaderSize|long|The size of the request header expressed in bytes. If a request is unsuccessful, this value might be empty.|
 |RequestMd5|string|The value of either the Content-MD5 header or the x-ms-content-md5 header in the request. The MD5 hash value specified in this field represents the content in the request.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResponseBodySize|long|The size of the response packets written by the storage service, in bytes. If a request is unsuccessful, this value may be empty.|
 |ResponseHeaderSize|long|The size of the response header expressed in bytes. If a request is unsuccessful, this value might be empty.|
 |ResponseMd5|string|The value of the MD5 hash calculated by the storage service.|
@@ -71,6 +71,6 @@ ms.date: 4/30/2020
 |TenantId|string||
 |TimeGenerated|datetime|The Universal Time Coordinated (UTC) time when the request was received by storage.|
 |TlsVersion|string|The TLS version used in the connection of request.|
-|Type|string||
+|Type|string|The name of the table|
 |Uri|string|Uniform resource identifier that is requested.|
 |UserAgentHeader|string|The User-Agent header value, in quotes.|
