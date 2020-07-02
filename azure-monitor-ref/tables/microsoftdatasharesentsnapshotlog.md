@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # MicrosoftDataShareSentSnapshotLog
@@ -40,7 +40,7 @@ ms.date: 4/30/2020
 |FilesRead|string|Number of files read from source|
 |FilesWritten|string|Number of files written into sink |
 |OperationName|string|The name of the operation represented by this event|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SizeRead|string|Size of files read from source|
 |SizeWritten|string|Size of files into sink in bytes|
 |SourceSystem|string||
@@ -49,4 +49,4 @@ ms.date: 4/30/2020
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log|
 |TriggerType|string|Ondemand/trigger|
-|Type|string||
+|Type|string|The name of the table|
