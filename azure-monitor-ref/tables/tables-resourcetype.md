@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -30,6 +30,7 @@ ms.date: 4/30/2020
 - [AppServiceConsoleLogs](appserviceconsolelogs.md)
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
+- [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
@@ -190,7 +191,39 @@ ms.date: 4/30/2020
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 
+## Desktop Virtualization Application Groups
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDErrors](wvderrors.md)
+- [WVDManagement](wvdmanagement.md)
+
+## Desktop Virtualization Host Pools
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDConnections](wvdconnections.md)
+- [WVDErrors](wvderrors.md)
+- [WVDHostRegistrations](wvdhostregistrations.md)
+- [WVDManagement](wvdmanagement.md)
+
+## Desktop Virtualization workspaces
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDErrors](wvderrors.md)
+- [WVDFeeds](wvdfeeds.md)
+- [WVDManagement](wvdmanagement.md)
+
 ## Device Provisioning Services
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Event Grid
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -230,6 +263,7 @@ ms.date: 4/30/2020
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [IoTHubDistributedTracing](iothubdistributedtracing.md)
 
 ## Key vault
 
@@ -275,10 +309,6 @@ ms.date: 4/30/2020
 - [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
-
-## Machine learning services
-
-- [AzureActivity](azureactivity.md)
 
 ## Media Services
 
@@ -365,6 +395,12 @@ ms.date: 4/30/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Time Series Insights
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [TSIIngress](tsiingress.md)
+
 ## Traffic Manager profile
 
 - [AzureActivity](azureactivity.md)
@@ -440,6 +476,11 @@ ms.date: 4/30/2020
 - [AzureMetrics](azuremetrics.md)
 
 ## Virtual network gateway
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Workload Monitor
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
