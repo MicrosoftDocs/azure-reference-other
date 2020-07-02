@@ -208,3 +208,5 @@
     href: tables/securityincident.md
   - name: SecurityNestedRecommendation
     href: tables/securitynestedrecommendation.md
+  - name: SignalRServiceDiagnosticLogs
+    href: tables/signalrservicediagnosticlogs.md
