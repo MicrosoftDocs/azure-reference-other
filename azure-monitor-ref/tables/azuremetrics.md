@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AzureMetrics
@@ -21,7 +21,10 @@ ms.date: 4/30/2020
 - LogManagement
 ## Resource types
 
-- Analysis Services
+- Desktop Virtualization Application Groups
+- Data factory (V2)
+- Data Lake Storage Gen1
+- Data Lake Analytics
 - Power BI Dedicated
 - Data Share
 - SQL Managed instance
@@ -32,8 +35,8 @@ ms.date: 4/30/2020
 - Azure Database for PostgreSQL server
 - Azure Database for MariaDB server
 - Device Provisioning Services
+- Automation account
 - Event Hub
-- Application Gateway
 - Firewall
 - ExpressRoute circuit
 - Front Door
@@ -47,10 +50,16 @@ ms.date: 4/30/2020
 - Search Services
 - Stream Analytics
 - Bastion
-- Data Lake Analytics
+- Application Gateway
 - Azure API for FHIR
-- Data Lake Storage Gen1
-- Automation account
+- API Management services
+- Service Fabric cluster
+- Desktop Virtualization Host Pools
+- Desktop Virtualization workspaces
+- Time Series Insights
+- Event Grid
+- Workload Monitor
+- Analysis Services
 - Batch account
 - Azure Spring Cloud
 - Media Services
@@ -58,8 +67,8 @@ ms.date: 4/30/2020
 - Cognitive Services
 - Key vault
 - App Service
+- Logic App
 - Storage account
-- SignalR
 - Container registry
 - Azure Data Explorer cluster
 - Azure AD Domain Services
@@ -73,10 +82,7 @@ ms.date: 4/30/2020
 - IoT Hub
 - Azure Cosmos DB account
 - Machine Learning
-- Service Fabric cluster
-- Logic App
-- API Management services
-- Data factory (V2)
+- SignalR
 - Service Bus
 
 
@@ -109,7 +115,7 @@ ms.date: 4/30/2020
 |RemoteIPLongitude|real|Deprecated|
 |Resource|string|Resource name of the Azure resource reporting the metric.|
 |ResourceGroup|string|Resource group name of the Azure resource reporting the metric.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string|Resource ID of the Azure resource reporting the metric. Same as _ResourceId present for backward compatibility reasons. _ResourceId should be used|
 |ResourceProvider|string|Resource provider of the Azure resource reporting the metric.|
 |ResultDescription|string|Deprecated|
@@ -122,5 +128,5 @@ ms.date: 4/30/2020
 |TimeGrain|string|Time grain of the metric e.g. PT1M|
 |TLPLevel|string|Deprecated|
 |Total|real|Sum of all of the values in the time range.|
-|Type|string||
+|Type|string|The name of the table|
 |UnitName|string|Unit of the metric. Examples include Seconds Percent Bytes.|
