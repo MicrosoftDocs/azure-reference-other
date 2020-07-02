@@ -152,3 +152,5 @@
     href: tables/intunedevicecomplianceorg.md
   - name: IntuneOperationalLogs
     href: tables/intuneoperationallogs.md
+  - name: IoTHubDistributedTracing
+    href: tables/iothubdistributedtracing.md
