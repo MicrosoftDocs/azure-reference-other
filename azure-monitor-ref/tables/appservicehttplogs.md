@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppServiceHTTPLogs
@@ -32,20 +32,24 @@ ms.date: 4/30/2020
 |---|---|---|
 |Category|string|Log category name|
 |CIp|string|IP address of the client|
+|Cookie|string|Cookie on HTTP request|
 |CsBytes|int|Number of bytes received by server|
 |CsHost|string|Host name header on HTTP request|
-|CsMethod|string|HTTP Verb on request|
-|CsUriStem|string|HTTP Target on request|
-|_ResourceId|string||
-|Result|string||
+|CsMethod|string|HTTP verb on request|
+|CsUriQuery|string|URI query on HTTP request|
+|CsUriStem|string|HTTP target on request|
+|CsUsername|string|The name of the authenticated user on HTTP request|
+|Referer|string|The site that the user last visited. This site provided a link to the current site|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|Result|string|Success / Failure of HTTP request|
 |ScBytes|int|Number of bytes sent by server|
-|ScStatus|int|HTTP Status Code|
+|ScStatus|int|HTTP status code|
 |ScSubStatus|string|Substatus error code on HTTP request|
 |ScWin32Status|string|Windows status code on HTTP request|
 |SourceSystem|string||
 |SPort|string|Server port number|
 |TenantId|string||
 |TimeGenerated|datetime|Time when event is generated|
-|TimeTaken|int|Time taken by HTTP request|
-|Type|string||
-|UserAgent|string|User Agent on HTTP request|
+|TimeTaken|int|Time taken by HTTP request in milliseconds|
+|Type|string|The name of the table|
+|UserAgent|string|User agent on HTTP request|
