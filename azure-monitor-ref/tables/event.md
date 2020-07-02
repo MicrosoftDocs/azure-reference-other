@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Event
@@ -43,10 +43,10 @@ ms.date: 4/30/2020
 |Message|string|Event message for the different Languages. The language is defined by the LCID attribute.|
 |ParameterXml|string|Event parameter values in XML format.|
 |RenderedDescription|string|Event description with parameter values.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Role|string|Role of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and collected from Azure storage.|
 |Source|string|Source of the event.|
 |SourceSystem|string|Type of agent the event was collected from. Possible values are OpsManager Linux and AzureStorage.|
 |TimeGenerated|datetime|Date and time the record was created.|
-|Type|string||
+|Type|string|The name of the table|
 |UserName|string|User name of the account that logged the event.|
