@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppDependencies
@@ -56,7 +56,7 @@ ms.date: 4/30/2020
 |ReferencedItemId|string|Id of the item with additional details about the dependency call.|
 |ReferencedType|string|Name of the table with additional details about the dependency call.|
 |ResourceGUID|string|Unique, persistent identifier of an Azure resource.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultCode|string|Result code returned to the application by the dependency call.|
 |SDKVersion|string|Version of the SDK used by the application to generate this telemetry item.|
 |SessionId|string|Application-defined session ID.|
@@ -66,7 +66,7 @@ ms.date: 4/30/2020
 |Target|string|Target of a dependency call, such as a Web or a SQL server name.|
 |TenantId|string||
 |TimeGenerated|datetime|Date and time when dependency call was recorded.|
-|Type|string||
+|Type|string|The name of the table|
 |UserAccountId|string|Application-defined account associated with the user.|
 |UserAuthenticatedId|string|Persistent string that uniquely represents each authenticated user in the application.|
 |UserId|string|Anonymous ID of a user accessing the application.|

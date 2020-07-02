@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -26,6 +26,7 @@ ms.date: 4/30/2020
 - [AppSystemEvents](appsystemevents.md)
 - [AppTraces](apptraces.md)
 - [ContainerLog](containerlog.md)
+- [FunctionAppLogs](functionapplogs.md)
 
 ## Audit
 
@@ -72,6 +73,7 @@ ms.date: 4/30/2020
 - [AppServiceConsoleLogs](appserviceconsolelogs.md)
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
+- [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AuditLogs](auditlogs.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
@@ -96,6 +98,7 @@ ms.date: 4/30/2020
 - [FailedIngestion](failedingestion.md)
 - [FunctionAppLogs](functionapplogs.md)
 - [InsightsMetrics](insightsmetrics.md)
+- [IoTHubDistributedTracing](iothubdistributedtracing.md)
 - [MicrosoftAzureBastionAuditLogs](microsoftazurebastionauditlogs.md)
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
@@ -110,6 +113,7 @@ ms.date: 4/30/2020
 - [StorageQueueLogs](storagequeuelogs.md)
 - [StorageTableLogs](storagetablelogs.md)
 - [SucceededIngestion](succeededingestion.md)
+- [TSIIngress](tsiingress.md)
 
 ## Containers
 
@@ -129,6 +133,9 @@ ms.date: 4/30/2020
 - [KubePodInventory](kubepodinventory.md)
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
+
+## Databases
+
 
 ## Desktop Analytics
 
@@ -248,6 +255,7 @@ ms.date: 4/30/2020
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
 - [AzureActivity](azureactivity.md)
+- [BehaviorAnalytics](behavioranalytics.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 - [DHCPActivity](dhcpactivity.md)
 - [HuntingBookmark](huntingbookmark.md)
@@ -292,6 +300,15 @@ ms.date: 4/30/2020
 - [W3CIISLog](w3ciislog.md)
 - [WireData](wiredata.md)
 
+## Windows Virtual Desktop
+
+- [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDConnections](wvdconnections.md)
+- [WVDErrors](wvderrors.md)
+- [WVDFeeds](wvdfeeds.md)
+- [WVDHostRegistrations](wvdhostregistrations.md)
+- [WVDManagement](wvdmanagement.md)
+
 ## Workloads
 
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
@@ -320,7 +337,6 @@ ms.date: 4/30/2020
 - [SPAssessmentRecommendation](spassessmentrecommendation.md)
 - [SQLAssessmentRecommendation](sqlassessmentrecommendation.md)
 - [SQLQueryPerformance](sqlqueryperformance.md)
-- [SqlThreatProtectionLoginAudits](sqlthreatprotectionloginaudits.md)
 - [SqlVulnerabilityAssessmentResult](sqlvulnerabilityassessmentresult.md)
 - [WindowsClientAssessmentRecommendation](windowsclientassessmentrecommendation.md)
 - [WindowsServerAssessmentRecommendation](windowsserverassessmentrecommendation.md)

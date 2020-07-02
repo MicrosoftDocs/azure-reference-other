@@ -10,6 +10,10 @@
       href: tables/tables-category.md
     - name: By resource type
       href: tables/tables-resourcetype.md
+  - name: AADDomainServicesPrivilegeUse
+    href: tables/aaddomainservicesprivilegeuse.md
+  - name: AADDomainServicesSystemSecurity
+    href: tables/aaddomainservicessystemsecurity.md
   - name: ADAssessmentRecommendation
     href: tables/adassessmentrecommendation.md
   - name: ADFSSISIntegrationRuntimeLogs
@@ -26,6 +30,14 @@
     href: tables/adfssispackageexecutiondatastatistics.md
   - name: ADReplicationResult
     href: tables/adreplicationresult.md
+  - name: ADTDigitalTwinsOperation
+    href: tables/adtdigitaltwinsoperation.md
+  - name: ADTEventRoutesOperation
+    href: tables/adteventroutesoperation.md
+  - name: ADTModelsOperation
+    href: tables/adtmodelsoperation.md
+  - name: ADTQueryOperation
+    href: tables/adtqueryoperation.md
   - name: AegDeliveryFailureLogs
     href: tables/aegdeliveryfailurelogs.md
   - name: AegPublishFailureLogs
@@ -58,10 +70,14 @@
     href: tables/appserviceauditlogs.md
   - name: AppServiceConsoleLogs
     href: tables/appserviceconsolelogs.md
+  - name: AppServiceEnvironmentPlatformLogs
+    href: tables/appserviceenvironmentplatformlogs.md
   - name: AppServiceFileAuditLogs
     href: tables/appservicefileauditlogs.md
   - name: AppServiceHTTPLogs
     href: tables/appservicehttplogs.md
+  - name: AppServicePlatformLogs
+    href: tables/appserviceplatformlogs.md
   - name: AppSystemEvents
     href: tables/appsystemevents.md
   - name: AppTraces
@@ -74,16 +90,46 @@
     href: tables/azuredevopsauditing.md
   - name: AzureMetrics
     href: tables/azuremetrics.md
+  - name: BehaviorAnalytics
+    href: tables/behavioranalytics.md
+  - name: BlockchainApplicationLog
+    href: tables/blockchainapplicationlog.md
+  - name: BoundPort
+    href: tables/boundport.md
   - name: ComputerGroup
     href: tables/computergroup.md
   - name: ConfigurationChange
     href: tables/configurationchange.md
   - name: ConfigurationData
     href: tables/configurationdata.md
+  - name: ContainerImageInventory
+    href: tables/containerimageinventory.md
+  - name: ContainerInventory
+    href: tables/containerinventory.md
   - name: ContainerLog
     href: tables/containerlog.md
+  - name: ContainerNodeInventory
+    href: tables/containernodeinventory.md
+  - name: ContainerRegistryLoginEvents
+    href: tables/containerregistryloginevents.md
+  - name: ContainerServiceLog
+    href: tables/containerservicelog.md
+  - name: DeviceAppCrash
+    href: tables/deviceappcrash.md
+  - name: DeviceAppLaunch
+    href: tables/deviceapplaunch.md
+  - name: DeviceSkypeHeartbeat
+    href: tables/deviceskypeheartbeat.md
+  - name: DeviceSkypeSignIn
+    href: tables/deviceskypesignin.md
   - name: DHCPActivity
     href: tables/dhcpactivity.md
+  - name: DHOSCrashData
+    href: tables/dhoscrashdata.md
+  - name: DnsInventory
+    href: tables/dnsinventory.md
+  - name: Dynamics365Activity
+    href: tables/dynamics365activity.md
   - name: Event
     href: tables/event.md
   - name: ExchangeAssessmentRecommendation
@@ -98,8 +144,44 @@
     href: tables/heartbeat.md
   - name: HuntingBookmark
     href: tables/huntingbookmark.md
+  - name: InboundConnection
+    href: tables/inboundconnection.md
+  - name: InsightsMetrics
+    href: tables/insightsmetrics.md
+  - name: IntuneDeviceComplianceOrg
+    href: tables/intunedevicecomplianceorg.md
+  - name: IntuneOperationalLogs
+    href: tables/intuneoperationallogs.md
   - name: IoTHubDistributedTracing
     href: tables/iothubdistributedtracing.md
+  - name: KubeEvents
+    href: tables/kubeevents.md
+  - name: KubeHealth
+    href: tables/kubehealth.md
+  - name: KubeMonAgentEvents
+    href: tables/kubemonagentevents.md
+  - name: KubeNodeInventory
+    href: tables/kubenodeinventory.md
+  - name: KubePodInventory
+    href: tables/kubepodinventory.md
+  - name: KubeServices
+    href: tables/kubeservices.md
+  - name: MAApplicationInstance
+    href: tables/maapplicationinstance.md
+  - name: MADeviceNotEnrolled
+    href: tables/madevicenotenrolled.md
+  - name: MAOfficeAddinInstance
+    href: tables/maofficeaddininstance.md
+  - name: MAOfficeAppInstance
+    href: tables/maofficeappinstance.md
+  - name: MAOfficeMacroIssueInstanceReadiness
+    href: tables/maofficemacroissueinstancereadiness.md
+  - name: MAOfficeMacroSummary
+    href: tables/maofficemacrosummary.md
+  - name: MAOfficeSuiteInstance
+    href: tables/maofficesuiteinstance.md
+  - name: MAWindowsSysReqInstanceReadiness
+    href: tables/mawindowssysreqinstancereadiness.md
   - name: MicrosoftAzureBastionAuditLogs
     href: tables/microsoftazurebastionauditlogs.md
   - name: MicrosoftDataShareReceivedSnapshotLog
@@ -118,8 +200,14 @@
     href: tables/officeactivity.md
   - name: Operation
     href: tables/operation.md
+  - name: OutboundConnection
+    href: tables/outboundconnection.md
   - name: Perf
     href: tables/perf.md
+  - name: SecurityIncident
+    href: tables/securityincident.md
+  - name: SecurityNestedRecommendation
+    href: tables/securitynestedrecommendation.md
   - name: SignalRServiceDiagnosticLogs
     href: tables/signalrservicediagnosticlogs.md
   - name: StorageBlobLogs
@@ -136,6 +224,12 @@
     href: tables/syslog.md
   - name: ThreatIntelligenceIndicator
     href: tables/threatintelligenceindicator.md
+  - name: TSIIngress
+    href: tables/tsiingress.md
+  - name: UAComputerRank
+    href: tables/uacomputerrank.md
+  - name: UASysReqIssue
+    href: tables/uasysreqissue.md
   - name: Usage
     href: tables/usage.md
   - name: VMBoundPort
@@ -148,6 +242,8 @@
     href: tables/vmprocess.md
   - name: W3CIISLog
     href: tables/w3ciislog.md
+  - name: WindowsEvent
+    href: tables/windowsevent.md
   - name: WireData
     href: tables/wiredata.md
   - name: WVDCheckpoints

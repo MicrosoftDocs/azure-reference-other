@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # LinuxAuditLog
@@ -76,7 +76,7 @@ ms.date: 4/30/2020
 |RawRecord|string||
 |RecordType|string||
 |res|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
 |result|string||
 |SerialNumber|string||
@@ -88,7 +88,7 @@ ms.date: 4/30/2020
 |TimeGenerated|datetime||
 |TimeUploaded|datetime||
 |tty|string||
-|Type|string||
+|Type|string|The name of the table|
 |uid|long||
 |user|string||
 |vm|string||

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AmlComputeClusterNodeEvent
@@ -49,7 +49,7 @@ ms.date: 4/30/2020
 |TenantId|string||
 |TimeGenerated|datetime||
 |TotalE2ETimeInSeconds|string||
-|Type|string||
+|Type|string|The name of the table|
 |Version|string||
 |VmFamilyName|string||
 |VmPriority|string||

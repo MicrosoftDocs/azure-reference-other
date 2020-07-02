@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # SecurityEvent
@@ -183,7 +183,7 @@ ms.date: 4/30/2020
 |RemotePort|string||
 |Requester|string||
 |RequestId|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |RestrictedAdminMode|string||
 |RowsDeleted|string||
 |SamAccountName|string||
@@ -238,7 +238,7 @@ ms.date: 4/30/2020
 |TimeGenerated|datetime||
 |TokenElevationType|string||
 |TransmittedServices|string||
-|Type|string||
+|Type|string|The name of the table|
 |UserAccountControl|string||
 |UserParameters|string||
 |UserPrincipalName|string||

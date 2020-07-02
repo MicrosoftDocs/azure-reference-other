@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppServiceConsoleLogs
@@ -31,12 +31,13 @@ ms.date: 4/30/2020
 
 |Column|Type|Description|
 |---|---|---|
-|Category|string|Log category name|
+|ContainerId|string|Application container id|
 |Host|string|Host where the application is running|
 |Level|string|Verbosity level of log|
-|_ResourceId|string||
+|OperationName|string|The name of the operation represented by this event.|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultDescription|string|Log message description|
 |SourceSystem|string||
 |TenantId|string||
 |TimeGenerated|datetime|Time when event is generated|
-|Type|string||
+|Type|string|The name of the table|

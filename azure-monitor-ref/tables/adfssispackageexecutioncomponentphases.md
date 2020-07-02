@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ADFSSISPackageExecutionComponentPhases
@@ -35,11 +35,11 @@ ms.date: 4/30/2020
 |OperationName|string|The name of the operation represented by this event|
 |PackageName|string|Package name|
 |Phase|string|Phase|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
 |StartTime|datetime|Start time|
 |SubcomponentName|string|Subcomponent name|
 |TaskName|string|Task name|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log|
-|Type|string||
+|Type|string|The name of the table|

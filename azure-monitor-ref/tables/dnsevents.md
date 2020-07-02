@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # DnsEvents
@@ -44,7 +44,7 @@ ms.date: 4/30/2020
 |RemoteIPCountry|string||
 |RemoteIPLatitude|real||
 |RemoteIPLongitude|real||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Result|string||
 |ResultCode|int||
 |Severity|int||
@@ -52,4 +52,4 @@ ms.date: 4/30/2020
 |SubType|string||
 |TaskCategory|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|

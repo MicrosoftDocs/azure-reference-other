@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # KubeHealth
 
- 
+ Table that stores Health states from various health monitors for kubernetes clusters and components 
 
 ## Categories
 
@@ -30,17 +30,17 @@ ms.date: 4/30/2020
 
 |Column|Type|Description|
 |---|---|---|
-|ClusterId|string||
-|Details|dynamic||
-|MonitorConfig|dynamic||
-|MonitorInstanceId|string||
-|MonitorLabels|dynamic||
-|MonitorTypeId|string||
-|NewState|string||
-|OldState|string||
-|ParentMonitorInstanceId|string||
-|_ResourceId|string||
-|SourceSystem|string||
-|TimeFirstObserved|datetime||
-|TimeGenerated|datetime||
-|Type|string||
+|ClusterId|string|ID of the kubernetes cluster from which the event was sourced|
+|Details|dynamic|Health state details|
+|MonitorConfig|dynamic|Monitor configuration. This will be empty for aggregate monitors. Populated for Unit Monitors|
+|MonitorInstanceId|string|Instance ID of the monitor generating the health state|
+|MonitorLabels|dynamic|Monitor Labels. This may be a combination of kubernetes labels and azure monitor specific labels|
+|MonitorTypeId|string|Type of the monitor. Ex;- node or cluster|
+|NewState|string|New state for the monitor|
+|OldState|string|Old state for the monitor|
+|ParentMonitorInstanceId|string|For future [Not used]|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|SourceSystem|string|Type of agent the data was collected from. |
+|TimeFirstObserved|datetime|Time the state change first was observed for this monitor|
+|TimeGenerated|datetime|Date and time the record was created.|
+|Type|string|The name of the table|

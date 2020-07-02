@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ProtectionStatus
@@ -46,7 +46,7 @@ ms.date: 4/30/2020
 |ProtectionStatusRank|int||
 |Resource|string||
 |ResourceGroup|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
 |ResourceProvider|string||
 |ResourceType|string||
@@ -61,6 +61,6 @@ ms.date: 4/30/2020
 |ThreatStatusDetails|string||
 |ThreatStatusRank|int||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |TypeofProtection|string||
 |VMUUID|string||

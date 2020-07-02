@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # W3CIISLog
@@ -55,7 +55,7 @@ ms.date: 4/30/2020
 |RemoteIPCountry|string|Country/region of the IP address of the client.|
 |RemoteIPLatitude|real|Latitude of the client IP address.|
 |RemoteIPLongitude|real|Longitude of the client IP address.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Role|string|Role instance of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and data is pulled from Azure storage.|
 |RoleInstance|string|Role of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and data is pulled from Azure storage.|
 |scBytes|long|Number of bytes that the server sent.|
@@ -71,4 +71,4 @@ ms.date: 4/30/2020
 |TimeGenerated|datetime|Date and time the record was created.|
 |TimeTaken|long|Length of time to process the request in milliseconds.|
 |TLPLevel|string|Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.|
-|Type|string||
+|Type|string|The name of the table|

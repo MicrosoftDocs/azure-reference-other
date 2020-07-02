@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # WindowsEvent
@@ -41,7 +41,7 @@ ms.date: 4/30/2020
 |EventLevelName|string||
 |ManagementGroupName|string||
 |Provider|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Task|int||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|

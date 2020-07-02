@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AegPublishFailureLogs
@@ -33,10 +33,10 @@ ms.date: 4/30/2020
 |Category|string|Log category name.|
 |Message|string|Log message for the user.|
 |OperationName|string|Name of the operation.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
 |SubResourceName|string|Name of the sub resource.|
 |TenantId|string||
 |Time|datetime|Time when log was generated.|
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|

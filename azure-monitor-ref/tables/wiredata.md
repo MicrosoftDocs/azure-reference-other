@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # WireData
@@ -64,7 +64,7 @@ ms.date: 4/30/2020
 |RemoteIPLongitude|real|IP longitude value|
 |RemoteMAC|string|Hold over field from old schema - attribute not collected|
 |RemotePortNumber|int|Port number used by the remote IP address|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SentBytes|long|Number of bytes sent|
 |SentPackets|long|Hold over field from old schema - attribute not collected|
 |SequenceNumber|long|Hold over field from old schema - attribute not collected|
@@ -77,4 +77,4 @@ ms.date: 4/30/2020
 |TimeGenerated|datetime|Time of the record|
 |TLPLevel|string|Traffic Light Protocol (TLP) Level is one of the defined values White Green Amber Red.|
 |TotalBytes|long|Total number of bytes sent during session|
-|Type|string||
+|Type|string|The name of the table|
