@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ApplicationInsights
@@ -117,7 +117,7 @@ ms.date: 4/30/2020
 |sPort|int||
 |TelemetryType|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |URL|string||
 |URLBase|string||
 |UserAccountId|string||
