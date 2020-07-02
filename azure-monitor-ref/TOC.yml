@@ -166,3 +166,5 @@
     href: tables/kubepodinventory.md
   - name: KubeServices
     href: tables/kubeservices.md
+  - name: MAApplicationInstance
+    href: tables/maapplicationinstance.md
