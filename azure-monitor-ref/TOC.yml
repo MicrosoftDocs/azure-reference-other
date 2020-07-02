@@ -150,3 +150,5 @@
     href: tables/insightsmetrics.md
   - name: IntuneDeviceComplianceOrg
     href: tables/intunedevicecomplianceorg.md
+  - name: IntuneOperationalLogs
+    href: tables/intuneoperationallogs.md
