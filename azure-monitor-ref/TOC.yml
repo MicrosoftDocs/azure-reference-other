@@ -204,3 +204,5 @@
     href: tables/outboundconnection.md
   - name: Perf
     href: tables/perf.md
+  - name: SecurityIncident
+    href: tables/securityincident.md
