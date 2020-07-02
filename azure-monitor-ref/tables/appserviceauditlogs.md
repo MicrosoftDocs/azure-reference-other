@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppServiceAuditLogs
@@ -33,11 +33,11 @@ ms.date: 4/30/2020
 |Category|string|Log category name|
 |OperationName|string|Name of the operation|
 |Protocol|string|Authentication protocol|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
 |TenantId|string||
 |TimeGenerated|datetime|Time when event is generated|
-|Type|string||
+|Type|string|The name of the table|
 |User|string|Username used for publishing access|
 |UserAddress|string|Client IP addres of the publishing user|
 |UserDisplayName|string|Email address of a user in case publishing was authorized via AAD authentication|
