@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # DHAppFailure
@@ -44,4 +44,4 @@ ms.date: 4/30/2020
 |OSVersion|string||
 |Publisher|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
