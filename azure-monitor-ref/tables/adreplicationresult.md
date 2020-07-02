@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ADReplicationResult
@@ -45,11 +45,11 @@ ms.date: 4/30/2020
 |PartitionName|string|Partition Name|
 |PercentOfTSL|real|Percentage of Tombstone Lifecycle|
 |ReplicationNeighborOption|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceInvocationId|string|Unique Id assigned to a Domain Controller|
 |SourceServer|string|Source Server Name|
 |SourceSiteName|string|Source Site Name|
 |SourceSystem|string|Source of the Output|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TombstoneLifetime|string|Length of time a deleted object persisted in the database|
-|Type|string||
+|Type|string|The name of the table|
