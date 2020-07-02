@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppServiceAppLogs
 
- Logs generated through your application and pushed to Azure Monitoring.
+ Logs generated through your application.
 
 ## Categories
 
@@ -30,20 +30,21 @@ ms.date: 4/30/2020
 
 |Column|Type|Description|
 |---|---|---|
-|Category|string|Log category name|
-|CustomLevel|string|Verbosity level of log emitted from application|
+|ContainerId|string|Application container id|
+|CustomLevel|string|Verbosity level of log|
 |ExceptionClass|string|Application class from where log message is emitted |
 |Host|string|Host where the application is running|
-|Level|string|Verbosity level of log mapped to standard levels|
+|Level|string|Verbosity level of log mapped to standard levels (Informational, Warning, Error, or Critical)|
 |Logger|string|Application logger used to emit log message|
 |Message|string|Log message|
 |Method|string|Application Method from where log message is emitted|
-|_ResourceId|string||
+|OperationName|string|The name of the operation represented by this event.|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultDescription|string|Log message description|
 |Source|string|Application source from where log message is emitted|
 |SourceSystem|string||
-|Stacktrace|string|Complete stack trace of the log message in case of exception|
+|StackTrace|string|Complete stack trace of the log message in case of exception|
 |TenantId|string||
 |TimeGenerated|datetime|Time when event is generated|
-|Type|string||
+|Type|string|The name of the table|
 |WebSiteInstanceId|string|Instance Id the application running|
