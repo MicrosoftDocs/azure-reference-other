@@ -112,3 +112,5 @@
     href: tables/containernodeinventory.md
   - name: ContainerRegistryLoginEvents
     href: tables/containerregistryloginevents.md
+  - name: ContainerServiceLog
+    href: tables/containerservicelog.md
