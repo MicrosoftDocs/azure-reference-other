@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # UpdateRunProgress
@@ -44,7 +44,7 @@ ms.date: 4/30/2020
 |Resource|string||
 |ResourceGroup|string||
 |ResourceId|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProvider|string||
 |ResourceType|string||
 |SourceComputerId|string||
@@ -54,7 +54,7 @@ ms.date: 4/30/2020
 |SucceededOnRetry|bool||
 |TimeGenerated|datetime||
 |Title|string||
-|Type|string||
+|Type|string|The name of the table|
 |UpdateId|string||
 |UpdateRunName|string||
 |VMUUID|string||
