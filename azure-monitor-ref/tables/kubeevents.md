@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # KubeEvents
 
- Kubernetes events and their properties.
+ Table that stores Kubernetes events 
 
 ## Categories
 
@@ -30,20 +30,20 @@ ms.date: 4/30/2020
 
 |Column|Type|Description|
 |---|---|---|
-|ClusterId|string||
-|ClusterName|string||
-|Computer|string||
-|Count|real||
+|ClusterId|string|ID of the kubernetes cluster from which the event was sourced|
+|ClusterName|string|ID of the kubernetes cluster from which the event was sourced|
+|Computer|string|Computer/node name in the cluster for which the event applies. If not, computer/node name of sourcing computer|
+|Count|real|Cumulative count of the number of occurences of a specific event [event.count] .|
 |FirstSeen|datetime||
-|KubeEventType|string||
-|LastSeen|datetime||
-|Message|string||
-|Name|string||
-|Namespace|string||
-|ObjectKind|string||
-|Reason|string||
-|_ResourceId|string||
-|SourceComponent|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string||
+|KubeEventType|string|Type of kubernetes event [event.type]. Ex;- 'Normal' |
+|LastSeen|datetime|Time event was last observed [event.lastTimestamp]|
+|Message|string|Event message [event.message]|
+|Name|string|Involved kubernetes object's name [event.InvolvedObject.name]. Ex;- 'autoschedulejob-158393400-gkv4g'|
+|Namespace|string|Involved kubernetes object's namespace [event.InvolvedObject.namespace]. Ex;- 'kube-system'|
+|ObjectKind|string|Kind of kubernetes object applicable for the event [event.InvolvedObject.kind] . Ex;- pod|
+|Reason|string|Reason as seen in kubernetes event [event.reason]|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|SourceComponent|string|Source component that generated the event [event.source.component] . Ex;- default-scheduler|
+|SourceSystem|string|Type of agent the data was collected from. |
+|TimeGenerated|datetime|Date and time the record was created.|
+|Type|string|The name of the table|
