@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # DeviceEtw
@@ -42,6 +42,6 @@ ms.date: 4/30/2020
 |tags|string||
 |ThreadId|int||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |type|int||
 |wakeEnabled|bool||
