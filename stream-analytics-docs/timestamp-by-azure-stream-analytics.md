@@ -24,7 +24,7 @@ Note that using a custom timestamp (TIMESTAMP BY clause) may cause Azure Stream 
 - Individual event producers may have different (and skewed) system clocks. 
 - Events from individual event producers may be delayed in transit, for example, by network unavailability at producer’s site. 
 
-While the disorder between event producers may be large, the disorder within the events from a single producer is generally small or even non-existent. In case a query only processes data from each event producer independently, handling events from each producer in its own timeline is more efficient than managing time skews between producers. Azure Stream Analytics supports specifying OVER \<over spec> sub-clause to enable processing of events in independent timelines. See ‘OVER clause interacts with event ordering’ for the impact the use of the OVER clause has on the processing of the job. 
+While the disorder between event producers may be large, the disorder within the events from a single producer is generally small or even non-existent. In case a query only processes data from each event producer independently, handling events from each producer in its own timeline is more efficient than managing time skews between producers. Azure Stream Analytics supports substreams by specifying OVER \<over spec> sub-clause to enable processing of events in independent timelines. See ‘OVER clause interacts with event ordering’ for the impact the use of the OVER clause has on the processing of the job. 
   
 ## Syntax  
 ```SQL   
@@ -123,6 +123,7 @@ GROUP BY TUMBLINGWINDOW(minute,3), TollId, PartitionId
 ## See Also  
  [System.Timestamp()](system-timestamp-stream-analytics.md)   
  [Time Skew Policies](time-skew-policies-azure-stream-analytics.md)   
+ [Understand time handling in Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-time-handling)
  [Unix Time](https://en.wikipedia.org/wiki/Unix_time)  
-  
-  
+
+ 
