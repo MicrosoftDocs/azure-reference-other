@@ -17,7 +17,7 @@ ms.author: mamccrea
 ---
 # Time Skew Policies (Azure Stream Analytics)
   In Stream Analytics, all data stream events have a [timestamp](/stream-analytics-query/system-timestamp-stream-analytics) associated with them. Users can use the [TIMESTAMP BY](/stream-analytics-query/timestamp-by-azure-stream-analytics) keyword to choose between one of these two different times:
-- **Application time**, that is to say the time the events are produced (as marked by the application/device generating the events). When using application time you can either process all events using a global timeline, or analyse each device/partition using its own timeline using [substreams](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-time-handling#handle-time-variation-with-substreams);
+- **Application time**, that is to say the time the events are produced (as marked by the application/device generating the events). When using application time, you can either process all events using a global timeline, or analyse each device/partition using its own timeline using [substreams](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-time-handling#handle-time-variation-with-substreams);
 - **Arrival time**, the time the event reached the cloud (e.g. arrival time in IoT Hub or Event Hub).
   
 In addition to the choice of timestamp, users may need to define Late Arrival and Out of Order policy due to the following issues:
