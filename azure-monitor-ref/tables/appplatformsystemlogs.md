@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppPlatformSystemLogs
@@ -36,11 +36,11 @@ ms.date: 4/30/2020
 |Logger|string|The logger of the log|
 |LogType|string|The type of the log|
 |OperationName|string|The name of the operation represented by this event|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ServiceName|string|The service name that emitted the log|
 |SourceSystem|string||
 |Stack|string|The stack of the log|
 |TenantId|string||
 |Thread|string|The thread of the log|
 |TimeGenerated|datetime|The timestamp (UTC) of the log|
-|Type|string||
+|Type|string|The name of the table|

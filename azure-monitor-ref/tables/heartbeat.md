@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Heartbeat
@@ -50,7 +50,7 @@ ms.date: 4/30/2020
 |Resource|string|Resource group name of the Azure resource running the agent.|
 |ResourceGroup|string|Resource name of the Azure resource running the agent.|
 |ResourceId|string|Resource ID of the Azure resource running the agent. Retained for for backward compatibility. _ResourceId should be used.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProvider|string|Resource provider of the Azure resource running the agent|
 |ResourceType|string|Type of the Azure resource running the agent. Examples include virtualmachines or managedclusters.|
 |SCAgentChannel|string|Specfies how agent is connected to workspace. Possible values are Direct or SCManagementServer.|
@@ -58,6 +58,6 @@ ms.date: 4/30/2020
 |SourceSystem|string|Type of agent the data was collected from. Possible values are OpsManager (Windows agent) or Linux.|
 |SubscriptionId|string|Subscription ID of the Azure resource running the agent|
 |TimeGenerated|datetime|Date and time the record was created.|
-|Type|string||
+|Type|string|The name of the table|
 |Version|string|Version of the agent.|
 |VMUUID|string||

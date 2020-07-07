@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AuditLogs
@@ -56,4 +56,4 @@ ms.date: 4/30/2020
 |SourceSystem|string||
 |TargetResources|dynamic|Indicates information on which resource was changed due to the activity. Target Resource Type can be User Device Directory App Role Group Policy or Other.|
 |TimeGenerated|datetime|Date and time the record was created.|
-|Type|string||
+|Type|string|The name of the table|

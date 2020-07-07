@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # SecurityBaseline
@@ -49,7 +49,7 @@ ms.date: 4/30/2020
 |OSName|string||
 |Resource|string||
 |ResourceGroup|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
 |ResourceProvider|string||
 |ResourceType|string||
@@ -60,4 +60,4 @@ ms.date: 4/30/2020
 |SourceSystem|string||
 |SubscriptionId|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|

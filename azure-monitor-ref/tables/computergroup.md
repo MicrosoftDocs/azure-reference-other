@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ComputerGroup
@@ -38,7 +38,7 @@ ms.date: 4/30/2020
 |GroupId|string|ID of the group.|
 |GroupSource|string|Source that group was collected from. Possible values are ActiveDirectory WSUSWSUSClientTargeting.|
 |GroupSourceName|string|Name of the source that the group was collected from. For Active Directory this is the domain name.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|OpsManager for all records of this type.|
 |TimeGenerated|datetime|Date and time the computer group was created or updated.|
-|Type|string||
+|Type|string|The name of the table|

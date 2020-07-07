@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Update
@@ -64,7 +64,7 @@ ms.date: 4/30/2020
 |RebootBehavior|string||
 |Resource|string||
 |ResourceGroup|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
 |ResourceProvider|string||
 |ResourceType|string||
@@ -74,7 +74,7 @@ ms.date: 4/30/2020
 |SubscriptionId|string||
 |TimeGenerated|datetime||
 |Title|string||
-|Type|string||
+|Type|string|The name of the table|
 |UpdateID|string||
 |UpdateState|string||
 |VMUUID|string||

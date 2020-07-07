@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppBrowserTimings
@@ -53,7 +53,7 @@ ms.date: 4/30/2020
 |Properties|dynamic|Application-defined properties.|
 |ReceiveDurationMs|real|Page load recieve response duration in milliseconds.|
 |ResourceGUID|string|Unique, persistent identifier of an Azure resource.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SDKVersion|string|Version of the SDK used by the application to generate this telemetry item.|
 |SendDurationMs|real|Send request time in milliseconds.|
 |SessionId|string|Application-defined session ID.|
@@ -62,7 +62,7 @@ ms.date: 4/30/2020
 |TenantId|string||
 |TimeGenerated|datetime|Date and time when request was recorded.|
 |TotalDurationMs|real|Page loading total time in milliseconds.|
-|Type|string||
+|Type|string|The name of the table|
 |Url|string|URI of the page view.|
 |UserAccountId|string|Application-defined account associated with the user.|
 |UserAuthenticatedId|string|Persistent string that uniquely represents each authenticated user in the application.|

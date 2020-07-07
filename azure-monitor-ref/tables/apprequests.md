@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppRequests
@@ -54,7 +54,7 @@ ms.date: 4/30/2020
 |ReferencedItemId|string|Id of the item with additional details about the request.|
 |ReferencedType|string|Name of the table with additional details about the request.|
 |ResourceGUID|string|Unique, persistent identifier of an Azure resource.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultCode|string|Result code returned by the application after handling the request.|
 |SDKVersion|string|Version of the SDK used by the application to generate this telemetry item.|
 |SessionId|string|Application-defined session ID.|
@@ -64,7 +64,7 @@ ms.date: 4/30/2020
 |SyntheticSource|string|Synthetic source of the operation.|
 |TenantId|string||
 |TimeGenerated|datetime|Date and time when request processing started.|
-|Type|string||
+|Type|string|The name of the table|
 |Url|string|URL of the request.|
 |UserAccountId|string|Application-defined account associated with the user.|
 |UserAuthenticatedId|string|Persistent string that uniquely represents each authenticated user in the application.|

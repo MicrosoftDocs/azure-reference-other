@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # MicrosoftDynamicsTelemetrySystemMetricsLogs
@@ -27,10 +27,10 @@ ms.date: 4/30/2020
 |Category|string|Log category|
 |EnvironmentId|string|Unique identifier for an environment as shown in Lifecycle Services|
 |EventName|string|Name of the event|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Role|string|Type of the machine (AOS/BI) emitting the events|
 |RoleInstance|string|Name of the machine emitting the events|
 |SourceSystem|string||
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log.|
-|Type|string||
+|Type|string|The name of the table|

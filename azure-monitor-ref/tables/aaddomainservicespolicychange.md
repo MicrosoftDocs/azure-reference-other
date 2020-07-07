@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AADDomainServicesPolicyChange
@@ -76,7 +76,7 @@ ms.date: 4/30/2020
 |PasswordHistoryLength|string||
 |PasswordProperties|string||
 |RecordId|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
 |ResultDescription|string||
 |ResultType|string||
@@ -89,4 +89,4 @@ ms.date: 4/30/2020
 |TdoType|int||
 |TimeGenerated|datetime||
 |TopLevelName|string||
-|Type|string||
+|Type|string|The name of the table|

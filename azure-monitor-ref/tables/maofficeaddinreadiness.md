@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # MAOfficeAddinReadiness
@@ -49,5 +49,5 @@ ms.date: 4/30/2020
 |TestResult|string||
 |TimeGenerated|datetime||
 |TotalInstalls|int||
-|Type|string||
+|Type|string|The name of the table|
 |UpgradeDecision|string||

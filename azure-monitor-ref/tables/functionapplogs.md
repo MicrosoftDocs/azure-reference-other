@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # FunctionAppLogs
@@ -16,6 +16,7 @@ ms.date: 4/30/2020
 ## Categories
 
 - Azure Resources
+- Applications
 ## Solutions
 
 - LogManagement
@@ -42,8 +43,8 @@ ms.date: 4/30/2020
 |Level|string|The log level.|
 |Location|string|The location of the server that processed the request (e.g., South Central US).|
 |Message|string|The log message.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log.|
-|Type|string||
+|Type|string|The name of the table|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # NetworkMonitoring
@@ -253,7 +253,7 @@ ms.date: 4/30/2020
 |TrapCount|int||
 |TrapData|string||
 |TrapOid|string||
-|Type|string||
+|Type|string|The name of the table|
 |UtilizationHealthState|string||
 |Vendor|string||
 |VirtualNetwork|string||

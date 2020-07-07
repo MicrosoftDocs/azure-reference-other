@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # KubeServices
 
- Kubernetes services and their properties
+ Table that stores Kubernetes services information 
 
 ## Categories
 
@@ -30,14 +30,14 @@ ms.date: 4/30/2020
 
 |Column|Type|Description|
 |---|---|---|
-|ClusterId|string||
-|ClusterIp|string||
-|ClusterName|string||
-|Namespace|string||
-|_ResourceId|string||
-|SelectorLabels|string||
-|ServiceName|string||
-|ServiceType|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string||
+|ClusterId|string|ID of the kubernetes cluster from which the event was sourced|
+|ClusterIp|string|Cluster IP address of the service|
+|ClusterName|string|ID of the kubernetes cluster from which the event was sourced|
+|Namespace|string|Kuberneets namespace for the service|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|SelectorLabels|string|Selector labels for label based services|
+|ServiceName|string|Kubernetes Service name|
+|ServiceType|string|Kubernetes Service type [ClusterIP/NodePort/LoadBalancer/ExternalName]|
+|SourceSystem|string|Type of agent the data was collected from. |
+|TimeGenerated|datetime|Date and time the record was created.|
+|Type|string|The name of the table|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ApiManagementGatewayLogs
@@ -64,7 +64,7 @@ ms.date: 4/30/2020
 |Region|string||
 |RequestHeaders|dynamic||
 |RequestSize|int||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResponseCode|int||
 |ResponseHeaders|dynamic||
 |ResponseSize|int||
@@ -72,6 +72,6 @@ ms.date: 4/30/2020
 |TenantId|string||
 |TimeGenerated|datetime||
 |TotalTime|long||
-|Type|string||
+|Type|string|The name of the table|
 |Url|string||
 |UserId|string||

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Syslog
@@ -39,9 +39,9 @@ ms.date: 4/30/2020
 |HostName|string|Name of the system sending the message.|
 |ProcessID|int|ID of the process that generated the message.|
 |ProcessName|string|Name of the process that generated the message.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SeverityLevel|string|Severity level of the event.|
 |SourceSystem|string|Type of agent the data was collected from. For syslog the value is typically Linux.|
 |SyslogMessage|string|Text of the message.|
 |TimeGenerated|datetime|Date and time the record was created.|
-|Type|string||
+|Type|string|The name of the table|

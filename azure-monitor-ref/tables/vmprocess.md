@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # VMProcess
@@ -48,13 +48,13 @@ ms.date: 4/30/2020
 |Process|string|The name of the process.|
 |ProductName|string|The name of the product|
 |ProductVersion|string|The product version|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Role|string|The role of the process.|
 |Services|dynamic|A list of services associated with the process.|
 |SourceSystem|string|The source of the data collected (OpsManager)|
 |StartTime|datetime|The process pool start time|
 |TimeGenerated|datetime|Date and time the record was created.|
-|Type|string||
+|Type|string|The name of the table|
 |UserDomain|string|The domain under which the process is executing|
 |UserName|string|The account under which the process is executing|
 |WorkingDirectory|string|The working directory|

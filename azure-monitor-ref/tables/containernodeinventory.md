@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ContainerNodeInventory
 
- Details of nodes that serve as container hosts.
+ Table that stores Container host/node information
 
 ## Categories
 
@@ -30,10 +30,10 @@ ms.date: 4/30/2020
 
 |Column|Type|Description|
 |---|---|---|
-|Computer|string||
-|DockerVersion|string||
-|OperatingSystem|string||
-|_ResourceId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string||
+|Computer|string|Computer/node name in the cluster for which the event applies. If not, computer/node name of sourcing computer|
+|DockerVersion|string|Container runtime version|
+|OperatingSystem|string|Nodes host OS Image|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|SourceSystem|string|Type of agent the data was collected from. |
+|TimeGenerated|datetime|Date and time the record was created.|
+|Type|string|The name of the table|

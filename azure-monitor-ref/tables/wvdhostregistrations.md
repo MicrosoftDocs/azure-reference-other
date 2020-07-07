@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # WVDHostRegistrations
 
  Windows Virtual Desktop Host Registration Activity
 
+## Categories
+
+- Windows Virtual Desktop
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Desktop Virtualization Host Pools
 
 
 
@@ -25,10 +31,10 @@ ms.date: 4/30/2020
 |Column|Type|Description|
 |---|---|---|
 |CorrelationId|string|The activity Id.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SessionHostIPAddress|string|The IP address of the session host that was registered with the WVD service.|
 |SessionHostName|string|The name of the session host that was registered with the WVD service.|
 |SourceSystem|string||
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the event.|
-|Type|string||
+|Type|string|The name of the table|

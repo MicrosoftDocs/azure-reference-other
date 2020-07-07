@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # FailedIngestion
@@ -43,7 +43,7 @@ ms.date: 4/30/2020
 |OperationName|string|The name of this operation|
 |OperationVersion|string|The version of this event|
 |OriginatesFromUpdatePolicy|bool|Indicates whether or not the failure originate from an Update Policy|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultType|string|The final state of this data ingestion operation|
 |RootActivityId|string|The ingestion's activity Id|
 |ShouldRetry|bool|Indicates whether or not the failure is transient and should be retried|
@@ -51,4 +51,4 @@ ms.date: 4/30/2020
 |Table|string|The name of the target table into which the data is ingested|
 |TenantId|string||
 |TimeGenerated|datetime|Time at which this event is generated and logged|
-|Type|string||
+|Type|string|The name of the table|

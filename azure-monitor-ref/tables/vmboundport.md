@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # VMBoundPort
@@ -48,11 +48,11 @@ ms.date: 4/30/2020
 |Process|string|Identity of the process or group of processes that the port is associated with.|
 |ProcessName|string|Unique identifier for the process in the ServiceMapProcess_CL table.|
 |Protocol|string|The protocol. Example tcp or udp (only tcp is currently supported).|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Responses|long|Count of responses in the time period recorded.|
 |ResponseTimeMax|long|Measurement of the maximum time between first and last byte received.|
 |ResponseTimeMin|long|Measurement of the minimum time between first and last byte received.|
 |ResponseTimeSum|long|Measurement of the total time between first and last byte received|
 |SourceSystem|string|Value is OpsManager for all records.|
 |TimeGenerated|datetime|Date and time the record was created.|
-|Type|string||
+|Type|string|The name of the table|

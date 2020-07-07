@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # MADeviceReadiness
@@ -51,5 +51,5 @@ ms.date: 4/30/2020
 |SysReqIssues|int||
 |TimeGenerated|datetime||
 |TotalIssues|int||
-|Type|string||
+|Type|string|The name of the table|
 |WindowsUpgradeDecision|string||

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # DHWipAppLearning
@@ -33,7 +33,7 @@ ms.date: 4/30/2020
 |ConfigMgrClientID|string||
 |EventFiredTime|datetime||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |WipActionType|string||
 |WipAppId|string||
 |WipAppIdType|string||

@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # IoTHubDistributedTracing
 
  The distributed tracing category tracks the trace-id and span-id for messages that carry the trace context header. To fully enable these logs, client-side code must be updated by following https://aka.ms/iottracing
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- IoT Hub
 
 
 
@@ -36,7 +42,7 @@ ms.date: 4/30/2020
 |MessageSize|int|The size of the message in bytes|
 |OperationName|string|Operation name of the event|
 |ParentId|string|Unique identifier of current span within trace (16 hex characters). A request without a parent id is the root of the trace.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceSubName|string|Name of sub-component that reports this message|
 |ResultDescription|string|Result description of the event, typically elaborates on the error|
 |ResultSignature|int|The status code of the event|
@@ -47,5 +53,5 @@ ms.date: 4/30/2020
 |TimeGenerated|datetime|Time at which this event is generated and logged|
 |TraceFlags|int|A bit field for controlling tracing options. For example, sampling and trace level.|
 |TraceId|string|Globally unique identifier of the trace (32 hex characters)|
-|Type|string||
+|Type|string|The name of the table|
 |Uri|string|Absolute request URI|

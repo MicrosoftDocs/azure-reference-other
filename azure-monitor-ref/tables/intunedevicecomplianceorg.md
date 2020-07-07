@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # IntuneDeviceComplianceOrg
 
- IntuneDeviceComplianceOrg
+ Intune device compliance specialist report.
 
 ## Categories
 
@@ -27,27 +27,28 @@ ms.date: 4/30/2020
 
 |Column|Type|Description|
 |---|---|---|
-|ComplianceState|string||
-|DeviceHealthThreatLevel|string||
-|DeviceId|string||
-|DeviceName|string||
-|DeviceType|string||
-|IMEI|string||
-|InGracePeriodUntil|string||
-|LastContact|string||
-|ManagementAgents|string||
-|OSDescription|string||
-|OSVersion|string||
-|OwnerType|string||
-|_ResourceId|string||
-|Result|string||
-|RetireAfterDatetime|string||
-|SerialNumber|string||
+|ComplianceState|string|The compliance state of the device.|
+|DeviceHealthThreatLevel|string|The device health threat level.|
+|DeviceId|string|The Id of the device.|
+|DeviceName|string|The name of the device.|
+|DeviceType|string|The type of the device.|
+|IMEI|string|The international mobile equipment identifier of the device.|
+|InGracePeriodUntil|string|The device grace period end time.|
+|LastContact|string|The date and time of last contact.|
+|ManagementAgents|string|The management agents.|
+|OS|string|The operating system of the device.|
+|OSDescription|string|The operating system of the device.|
+|OSVersion|string|The version of the operating system.|
+|OwnerType|string|The type of owner.|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|Result|string|The result of the operation.|
+|RetireAfterDatetime|string|The retire after date time.|
+|SerialNumber|string|The serial number of the device|
 |SourceSystem|string||
 |TenantId|string||
-|TimeGenerated|datetime||
-|Type|string||
-|UPN|string||
-|UserEmail|string||
-|UserId|string||
-|UserName|string||
+|TimeGenerated|datetime|Date and time when the report was generated.|
+|Type|string|The name of the table|
+|UPN|string|The user principal name.|
+|UserEmail|string|The user email address.|
+|UserId|string|The Id of the user.|
+|UserName|string|The user name.|

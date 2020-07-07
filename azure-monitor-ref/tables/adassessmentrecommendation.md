@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ADAssessmentRecommendation
@@ -48,8 +48,8 @@ ms.date: 4/30/2020
 |RecommendationId|string|ID of the recommendation generated|
 |RecommendationResult|string|Result of the recommendation generated|
 |RecommendationWeight|real|Weight of recommendation|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|OpsManager|
 |Technology|string||
 |TimeGenerated|datetime|Date and time the record was created.|
-|Type|string||
+|Type|string|The name of the table|
