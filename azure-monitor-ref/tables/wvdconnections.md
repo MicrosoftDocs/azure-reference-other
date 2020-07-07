@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # WVDConnections
 
  Windows Virtual Desktop Connection Activity
 
+## Categories
+
+- Windows Virtual Desktop
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Desktop Virtualization Host Pools
 
 
 
@@ -32,7 +38,7 @@ ms.date: 4/30/2020
 |CorrelationId|string|The activity Id.|
 |PredecessorConnectionId|string|The predecessor Correlation Id of the connection, if the current connection is an auto-reconnect.|
 |ResourceAlias|string|The alias of the app that the user attempted to connect to.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SessionHostAgentVersion|string|The version of the WVD Agent running on the machine where the user connection was orchestrated.|
 |SessionHostIPAddress|string|The IP address of the machine where the user connection was orchestrated.|
 |SessionHostName|string|The FQDN of the machine where the user connection was orchestrated.|
@@ -43,5 +49,5 @@ ms.date: 4/30/2020
 |State|string|The state of the connection.|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the event.|
-|Type|string||
+|Type|string|The name of the table|
 |UserName|string|The user who initiated the connection.|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # MicrosoftDynamicsTelemetryPerformanceLogs
@@ -55,7 +55,7 @@ ms.date: 4/30/2020
 |Parameters|dynamic|Collection of SQL performance metrics|
 |Pid|int|Process id|
 |QueryType|string|Type of the executed SQL query|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Role|string|Type of the machine (AOS/BI) emitting the events|
 |RoleInstance|string|Name of the machine emitting the events|
 |SourceSystem|string||
@@ -65,4 +65,4 @@ ms.date: 4/30/2020
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log.|
 |TransactionDurationSeconds|real|Transaction duration in seconds for Aos Large Active Transactions|
-|Type|string||
+|Type|string|The name of the table|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ConfigurationChange
@@ -58,7 +58,7 @@ ms.date: 4/30/2020
 |PreviousValueType|string|Previous registry value type|
 |Publisher|string|Software publisher name|
 |RegistryKey|string|Registry key name|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Size|long|Current size of the changed file|
 |SoftwareDescription|string|Description of the software|
 |SoftwareName|string|Name of the software|
@@ -81,7 +81,7 @@ ms.date: 4/30/2020
 |SvcStartupType|string|Startup behavior of the service|
 |SvcState|string|Current state of the service|
 |TimeGenerated|datetime|Date and time the record was created.|
-|Type|string||
+|Type|string|The name of the table|
 |ValueData|string|Data contained in the value and registry key being tracked|
 |ValueName|string|Name of the value for the registry key being tracked|
 |ValueType|string|Type of the value for the registry key being tracked|

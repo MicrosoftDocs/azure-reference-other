@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # DnsInventory
@@ -36,12 +36,12 @@ ms.date: 4/30/2020
 |DynamicUpdate|string||
 |ForestName|string||
 |NameServers|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceRecordName|string||
 |ResourceRecordType|string||
 |ServerIPs|string||
 |SourceSystem|string||
 |SubType|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |ZoneName|string||

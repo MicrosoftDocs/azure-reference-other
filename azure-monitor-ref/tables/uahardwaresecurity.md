@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # UAHardwareSecurity
@@ -38,7 +38,7 @@ ms.date: 4/30/2020
 |Outcome|string||
 |SourceSystem|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |WinSecurityFixEnabled|string||
 |WinSecurityM11FixEnabled|string||
 |WinSecurityM5FixEnabled|string||

@@ -6,16 +6,24 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # WVDCheckpoints
 
  Windows Virtual Desktop Checkpoint Activity
 
+## Categories
+
+- Windows Virtual Desktop
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Desktop Virtualization Application Groups
+- Desktop Virtualization Host Pools
+- Desktop Virtualization workspaces
 
 
 
@@ -28,10 +36,10 @@ ms.date: 4/30/2020
 |CorrelationId|string|The correlation Id for the activity.|
 |Name|string|The name of the checkpoint.|
 |Parameters|dynamic|The parameters for the checkpoint.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Source|string|The component that emitted the checkpoint.|
 |SourceSystem|string||
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the event.|
-|Type|string||
+|Type|string|The name of the table|
 |UserName|string|The user name for the activity associated with the checkpoint.|

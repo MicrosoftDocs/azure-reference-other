@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AzureDevOpsAuditing
@@ -47,5 +47,5 @@ ms.date: 4/30/2020
 |SourceSystem|string||
 |TenantId|string||
 |TimeGenerated|datetime|The time the auditing event occurred in UTC.|
-|Type|string||
+|Type|string|The name of the table|
 |UserAgent|string|The user agent from the request.|

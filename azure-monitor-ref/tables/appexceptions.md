@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppExceptions
@@ -58,7 +58,7 @@ ms.date: 4/30/2020
 |ProblemId|string|Problem ID of the exception.|
 |Properties|dynamic|Application-defined properties.|
 |ResourceGUID|string|Unique, persistent identifier of an Azure resource.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SDKVersion|string|Version of the SDK used by the application to generate this telemetry item.|
 |SessionId|string|Application-defined session ID.|
 |SeverityLevel|int|Severity level of the exception.|
@@ -66,7 +66,7 @@ ms.date: 4/30/2020
 |SyntheticSource|string|Synthetic source of the operation.|
 |TenantId|string||
 |TimeGenerated|datetime|Date and time when request was recorded.|
-|Type|string||
+|Type|string|The name of the table|
 |UserAccountId|string|Application-defined account associated with the user.|
 |UserAuthenticatedId|string|Persistent string that uniquely represents each authenticated user in the application.|
 |UserId|string|Anonymous ID of a user accessing the application.|

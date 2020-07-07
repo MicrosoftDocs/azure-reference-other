@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # Perf
@@ -43,9 +43,9 @@ ms.date: 4/30/2020
 |Max|real||
 |Min|real||
 |ObjectName|string|Name of the performance object.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SampleCount|int||
 |SourceSystem|string|Type of agent the event was collected from. Possible values are OpsManager Linux and AzureStorage.|
 |StandardDeviation|real||
 |TimeGenerated|datetime|Date and time the data was sampled.|
-|Type|string||
+|Type|string|The name of the table|

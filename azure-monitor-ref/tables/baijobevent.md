@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # BaiJobEvent
@@ -48,7 +48,7 @@ ms.date: 4/30/2020
 |OperationName|string||
 |ProvisioningState|string||
 |ResourceGroupName|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultSignature|string||
 |RunInContainer|string||
 |SourceSystem|string||
@@ -57,5 +57,5 @@ ms.date: 4/30/2020
 |TFWorkerCount|string||
 |TimeGenerated|datetime||
 |ToolType|string||
-|Type|string||
+|Type|string|The name of the table|
 |WorkspaceName|string||

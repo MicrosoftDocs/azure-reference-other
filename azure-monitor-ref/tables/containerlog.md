@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ContainerLog
@@ -40,8 +40,8 @@ ms.date: 4/30/2020
 |LogEntrySource|string|Source of the log line. Possible values are stdout or stderr.|
 |Name|string|Unique name of the container the form  PODUid/ContainerName.|
 |Repository|string|Used by Container solution only. Not populated by Azure Monitor for Containers.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|Deprecated.|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TimeOfCommand|datetime|Time that the agent processed the log. This is an optional field mainly useful for troubleshooting latency issues on the agent.|
-|Type|string||
+|Type|string|The name of the table|

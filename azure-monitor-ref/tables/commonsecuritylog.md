@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # CommonSecurityLog
@@ -154,7 +154,7 @@ ms.date: 4/30/2020
 |RequestCookies|string||
 |RequestMethod|string||
 |RequestURL|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SentBytes|long||
 |SimplifiedDeviceAction|string||
 |SourceDnsDomain|string||
@@ -177,4 +177,4 @@ ms.date: 4/30/2020
 |ThreatDescription|string||
 |ThreatSeverity|int||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|

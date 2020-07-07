@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # VMComputer
@@ -77,11 +77,11 @@ ms.date: 4/30/2020
 |OperatingSystemFamily|string|Value will be windows or linux|
 |OperatingSystemFullName|string|The full name of the operating system|
 |PhysicalMemoryMB|long|The physical memory in MB|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|The source of the data collected (Insights)|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TimeZone|string|The UTC timezone offset of the server.|
-|Type|string||
+|Type|string|The name of the table|
 |VirtualizationState|string|Values will be Unknown Physical Virtual or Hypervisor|
 |VirtualMachineHypervisorId|string|The hypervisor id of the server.|
 |VirtualMachineNativeId|string|The native id of the server.|

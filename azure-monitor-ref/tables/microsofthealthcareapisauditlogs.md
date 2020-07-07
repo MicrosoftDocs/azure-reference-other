@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # MicrosoftHealthcareApisAuditLogs
@@ -43,10 +43,10 @@ ms.date: 4/30/2020
 |OperationName|string|The name of the operation represented by this event.|
 |Properties|dynamic|Additional properties.|
 |RequestUri|string|The URI of the request.|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultType|string|The result type.|
 |SourceSystem|string||
 |StatusCode|int|The HTTP status code.|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log.|
-|Type|string||
+|Type|string|The name of the table|

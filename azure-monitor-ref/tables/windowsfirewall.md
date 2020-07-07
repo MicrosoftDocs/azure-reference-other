@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # WindowsFirewall
@@ -53,11 +53,11 @@ ms.date: 4/30/2020
 |Protocol|string||
 |RemoteIP|string||
 |RequestSizeInBytes|long||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Severity|int||
 |SourceIP|string||
 |SourcePort|int||
 |SourceSystem|string||
 |TimeGenerated|datetime||
 |TLPLevel|string||
-|Type|string||
+|Type|string|The name of the table|

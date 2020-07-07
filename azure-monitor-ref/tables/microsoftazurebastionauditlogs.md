@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # MicrosoftAzureBastionAuditLogs
@@ -37,7 +37,7 @@ ms.date: 4/30/2020
 |Message|string|Additonal text that's assoicated of this event|
 |OperationName|string|The name of the operation represented by this event|
 |Protocol|string|Protocol (could be ssh or rdp) that was used to log into the VirtualMachine from Bastion|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SessionEndTime|string|Timestamp (UTC) of when the Bastion Session was ended|
 |SessionStartTime|datetime|Timestamp (UTC) of when the Bastion Session was started|
 |SourceSystem|string||
@@ -47,6 +47,6 @@ ms.date: 4/30/2020
 |Time|datetime|The timestamp (UTC) of the log|
 |TimeGenerated|datetime||
 |TunnelId|string|Internal Bastion Connection GUID|
-|Type|string||
+|Type|string|The name of the table|
 |UserAgent|string|Browser User Agent that the request was sent|
 |UserName|string|UserName that was used to log into the VirtualMachine from Bastion|

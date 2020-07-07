@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # ThreatIntelligenceIndicator
@@ -85,6 +85,6 @@ ms.date: 4/30/2020
 |ThreatType|string|Threat type of indicator.|
 |TimeGenerated|datetime|Time of indicator ingestion.|
 |TrafficLightProtocolLevel|string|Industry standard traffic light protocol level, one of white, green, amber or red.|
-|Type|string||
+|Type|string|The name of the table|
 |Url|string|The url observable.|
 |UserAgent|string|The user agent observable.|

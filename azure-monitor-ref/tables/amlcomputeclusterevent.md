@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AmlComputeClusterEvent
@@ -57,7 +57,7 @@ ms.date: 4/30/2020
 |Publisher|string||
 |QuotaAllocated|string||
 |QuotaUtilized|string||
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultSignature|string||
 |RunningNodeCount|int||
 |ScalingType|string||
@@ -67,7 +67,7 @@ ms.date: 4/30/2020
 |TargetNodeCount|int||
 |TenantId|string||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|
 |UnusableNodeCount|int||
 |Version|string||
 |VmFamilyName|string||

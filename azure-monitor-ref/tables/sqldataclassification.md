@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # SqlDataClassification
@@ -15,7 +15,7 @@ ms.date: 4/30/2020
 
 ## Solutions
 
-- SQLDataClassification
+- SQL Data Discovery & Classification
 
 
 
@@ -51,4 +51,4 @@ ms.date: 4/30/2020
 |TableName|string||
 |TablesCount|int||
 |TimeGenerated|datetime||
-|Type|string||
+|Type|string|The name of the table|

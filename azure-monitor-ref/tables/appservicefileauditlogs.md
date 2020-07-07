@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/30/2020
+ms.date: 7/2/2020
 ---
 
 # AppServiceFileAuditLogs
@@ -34,8 +34,8 @@ ms.date: 4/30/2020
 |OperationName|string|Operation performed on a file|
 |Path|string|Path to the file that was changed|
 |Process|string|Type of the process that change the file|
-|_ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
 |TenantId|string||
 |TimeGenerated|datetime|Time when event is generated|
-|Type|string||
+|Type|string|The name of the table|
