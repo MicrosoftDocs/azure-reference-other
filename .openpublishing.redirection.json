@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+			"source_path": "/visualstudio/online/",
+			"redirect_url": "/visualstudio/codespaces/",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "studio-module-reference/apply-quantization-function-deprecated.md",
 			"redirect_url": "/azure/machine-learning/studio-module-reference/group-data-into-bins",
 			"redirect_document_id": false
