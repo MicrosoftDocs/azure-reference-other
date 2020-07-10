@@ -1,80 +1,80 @@
 {
 	"redirections": [
 		{
-			"source_path": "vs-online/how-to/browser.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/how-to/browser",
+			"source_path": "visualstudio/online/how-to/browser.md",
+			"redirect_url": "/visualstudio/codespaces/how-to/browser",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/how-to/self-hosting-cli.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/how-to/self-hosting-cli",
+			"source_path": "visualstudio/online/how-to/self-hosting-cli.md",
+			"redirect_url": "/visualstudio/codespaces/how-to/self-hosting-cli",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/how-to/self-hosting-vscode.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/how-to/self-hosting-vscode",
+			"source_path": "visualstudio/online/how-to/self-hosting-vscode.md",
+			"redirect_url": "/visualstudio/codespaces/how-to/self-hosting-vscode",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/how-to/vscode.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/how-to/vscode",
+			"source_path": "visualstudio/online/how-to/vscode.md",
+			"redirect_url": "/visualstudio/codespaces/how-to/vscode",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/how-to/vside.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/how-to/vside",
+			"source_path": "visualstudio/online/how-to/vside.md",
+			"redirect_url": "/visualstudio/codespaces/how-to/vside",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/overview/what-is-vsonline.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/overview/what-is-vsonline",
+			"source_path": "visualstudio/online/overview/what-is-vsonline.md",
+			"redirect_url": "/visualstudio/codespaces/overview/what-is-vsonline",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/quickstarts/browser.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/quickstarts/browser",
+			"source_path": "visualstudio/online/quickstarts/browser.md",
+			"redirect_url": "/visualstudio/codespaces/browser",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/quickstarts/vs.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/quickstarts/vs",
+			"source_path": "visualstudio/online/quickstarts/vs.md",
+			"redirect_url": "/visualstudio/codespaces/quickstarts/vs",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/quickstarts/vscode.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/quickstarts/vscode",
+			"source_path": "visualstudio/online/quickstarts/vscode.md",
+			"redirect_url": "/visualstudio/codespaces/quickstarts/vscode",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/reference/configuring.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/reference/configuring",
+			"source_path": "visualstudio/online/reference/configuring.md",
+			"redirect_url": "/visualstudio/codespaces/reference/configuring",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/reference/configuring-windows.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/reference/configuring-windows",
+			"source_path": "visualstudio/online/reference/configuring-windows.md",
+			"redirect_url": "/visualstudio/codespaces/reference/configuring-windows",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/reference/personalizing.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/reference/personalizing",
+			"source_path": "visualstudio/online/reference/personalizing.md",
+			"redirect_url": "/visualstudio/codespaces/reference/personalizing",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/reference/repository.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/reference/repository",
+			"source_path": "visualstudio/online/reference/repository.md",
+			"redirect_url": "/visualstudio/codespaces/reference/repository",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/reference/security-controls.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/reference/security-controls",
+			"source_path": "visualstudio/online/reference/security-controls.md",
+			"redirect_url": "/visualstudio/codespaces/reference/security-controls",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/reference/vsonline-cli.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/reference/vsonline-cli",
+			"source_path": "visualstudio/online/reference/vsonline-cli.md",
+			"redirect_url": "/visualstudio/codespaces/reference/vsonline-cli",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/resources/disaster-recovery-guidance.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/resources/disaster-recovery-guidance",
+			"source_path": "visualstudio/online/resources/disaster-recovery-guidance.md",
+			"redirect_url": "/visualstudio/codespaces/resources/disaster-recovery-guidance",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/resources/faq.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/resources/faq",
+			"source_path": "visualstudio/online/resources/faq.md",
+			"redirect_url": "/visualstudio/codespaces/resources/faq",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/resources/feedback.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/resources/feedback",
+			"source_path": "visualstudio/online/resources/feedback.md",
+			"redirect_url": "/visualstudio/codespaces/resources/feedback",
 			"redirect_document_id": true
 		}, {
-			"source_path": "vs-online/resources/troubleshooting.md",
-			"redirect_url": "/visualstudio/codespaces/vs-online/resources/troubleshooting",
+			"source_path": "visualstudio/online/resources/troubleshooting.md",
+			"redirect_url": "/visualstudio/codespaces/resources/troubleshooting",
 			"redirect_document_id": true
 		},
 		{
