@@ -1,15 +1,15 @@
 {
 	"redirections": [
 		{
-			"source_path": "visualstudio/online/how-to/browser.md",
+			"source_path": "vsonline/how-to/browser.md",
 			"redirect_url": "/visualstudio/codespaces/how-to/browser",
 			"redirect_document_id": true
 		}, {
-			"source_path": "visualstudio/online/how-to/self-hosting-cli.md",
+			"source_path": "vsonline/how-to/self-hosting-cli.md",
 			"redirect_url": "/visualstudio/codespaces/how-to/self-hosting-cli",
 			"redirect_document_id": true
 		}, {
-			"source_path": "visualstudio/online/how-to/self-hosting-vscode.md",
+			"source_path": "vsonline/how-to/self-hosting-vscode.md",
 			"redirect_url": "/visualstudio/codespaces/how-to/self-hosting-vscode",
 			"redirect_document_id": true
 		}, {
