@@ -5296,6 +5296,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "vsonline/index.md",
+			"redirect_url": "/visualstudio/codespaces/overview/what-is-vsonline",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "vsonline/how-to/browser.md",
 			"redirect_url": "/visualstudio/codespaces/how-to/browser",
 			"redirect_document_id": true
