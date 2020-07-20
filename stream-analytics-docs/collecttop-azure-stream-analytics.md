@@ -21,9 +21,13 @@ ms.author: mamccrea
   
  ## Syntax  
   
-```SQL   
-CollectTop(<number of events as integer literal>) OVER (ORDER BY (<column name> [ASC |DESC])+)  
-```  
+```SQL
+-- Aggregate Function Syntax
+CollectTop(<number of events as integer literal>) OVER (ORDER BY (<column name> [ASC |DESC])+)
+
+-- Analytic Function Syntax
+CollectTop(<number of events as integer literal>) OVER ([<PARTITION BY clause>] ORDER BY (<column name> [ASC | DESC])+ <LIMIT DURATION clause>  [<WHEN clause>])
+```
   
 ## Arguments  
  **\<number of events as integer literal>**  
@@ -32,8 +36,12 @@ CollectTop(<number of events as integer literal>) OVER (ORDER BY (<column name> 
   
  **\<column name>**  
   
- Name of the column in the input event, by which ordering will be done. Only ordering by bigint/float/datetime types is allowed.  
-  
+ Name of the column in the input event, by which ordering will be done. Only ordering by bigint/float/datetime types is allowed.
+
+**OVER ([\<PARTITION BY clause> \<LIMIT DURATION clause> [\<WHEN clause>]]**
+
+Determines the group of rows over which CollectTop is applied. The PARTITION BY clause specifies that the rows with the same partition key will be grouped together. The LIMIT DURATION clause specifies how much history is included in the group. The WHEN clause specifies a boolean condition for the rows to be included in the group. See [OVER clause](over-azure-stream-analytics.md) for more details on the usage.
+
 ## Return Types  
  Array of records of type { “rank” : bigint, “value”: record  }  
   
