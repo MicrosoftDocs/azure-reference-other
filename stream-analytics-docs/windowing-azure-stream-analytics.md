@@ -28,15 +28,17 @@ Every window operation outputs event at the end of the window. The windows of Az
 > [!NOTE]
 > All windows should be used in a GROUP BY clause.
 
-There are four types of windows:
+There are five types of windows:
 
-1.  [Tumbling Window &#40;Azure Stream Analytics&#41;](tumbling-window-azure-stream-analytics.md)
+1. [Tumbling Window &#40;Azure Stream Analytics&#41;](tumbling-window-azure-stream-analytics.md)
 
-2.  [Hopping Window &#40;Azure Stream Analytics&#41;](hopping-window-azure-stream-analytics.md)
+2. [Hopping Window &#40;Azure Stream Analytics&#41;](hopping-window-azure-stream-analytics.md)
 
-3.  [Sliding Window &#40;Azure Stream Analytics&#41;](sliding-window-azure-stream-analytics.md)
+3. [Sliding Window &#40;Azure Stream Analytics&#41;](sliding-window-azure-stream-analytics.md)
 
-4.  [Session Window &#40;Azure Stream Analytics&#41;](session-window-azure-stream-analytics.md)
+4. [Session Window &#40;Azure Stream Analytics&#41;](session-window-azure-stream-analytics.md)
+
+5. [Snapshot Window (Azure Stream Analytics)](snapshot-window-azure-stream-analytics.md)
 
  The maximum size of the window in all cases is 7 days.
 

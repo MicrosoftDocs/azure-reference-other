@@ -178,6 +178,8 @@
               href: session-window-azure-stream-analytics.md
             - name: Sliding Window
               href: sliding-window-azure-stream-analytics.md
+            - name: Snapshot Window
+              href: snapshot-window-azure-stream-analytics.md
             - name: Tumbling Window
               href: tumbling-window-azure-stream-analytics.md
             - name: Aggregate Windowing functions
