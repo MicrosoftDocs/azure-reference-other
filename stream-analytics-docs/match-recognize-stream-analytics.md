@@ -9,7 +9,7 @@ ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.workload: data-services
-ms.date: 02/05/2020
+ms.date: 07/21/2020
 ---
 
 # MATCH_RECOGNIZE (Stream Analytics)
@@ -30,9 +30,9 @@ INTO output FROM input TIMESTAMP BY time
 		AFTER MATCH SKIP TO NEXT ROW
 		PATTERN (Toyota+ Ford* Lexus+)
 		DEFINE
-			Toyota AS Toyota.make = ‘Toyota’,
-			Ford AS Ford.make = ‘Ford’,
-			Lexus AS Lexus.make = ‘Lexus’
+			Toyota AS Toyota.make = 'Toyota',
+			Ford AS Ford.make = 'Ford',
+			Lexus AS Lexus.make = 'Lexus'
 	) AS T
 ```
 
