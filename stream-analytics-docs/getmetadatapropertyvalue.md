@@ -39,6 +39,19 @@ Certain input-specific properties are accessible by the GetMetadataPropertyValue
 #### To query *all possible* adapter-related properties as a record:
 `SELECT GetMetadataPropertyValue(ehInput, 'EventHub') AS myEHPropertiesRecord FROM ehInput`
 
+### IoT Hub properties when routed to Event Hubs endpoints
+When using IoT Hub routing feature to Event Hubs endpoints, the property will be available by reading properties from Event Hubs, here are the list of properties that can be retrieved in this case:
+* IoTConnectionDeviceId
+* IoTAuthMethod
+* IoTAuthGenerationId
+* IoTEnqueueTime
+* IoTMessageSource
+* IoTConnectionModuleId
+* IoTInterfaceName
+
+Example:
+`SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
+
 ## Default metadata properties for IoT Hub
 * EnqueuedTime
 * CorrelationId
@@ -52,12 +65,15 @@ Certain input-specific properties are accessible by the GetMetadataPropertyValue
 #### To query *all possible* adapter-related properties as a record:
 `SELECT GetMetadataPropertyValue(iotInput, 'IoTHub') AS iotRecord FROM iotInput`
 
-When using IoT Hub routing feature to an Event Hubs endpoint, the property will be available by reading properties at the Event Hubs level, as shown below.
 
-`SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
 
 ## Default metadata properties for Blob input:  
-`SELECT GetMetadataPropertyValue(blobInput, 'Blob') AS blobRecord FROM blobInput`
+* BlobName
+* BlobLastModifiedUtcTime
+* PartitionId
+
+Example
+`SELECT GetMetadataPropertyValue(blobInput, 'BlobName') AS myBlobName FROM blobInput`
 
 ## User properties
 
