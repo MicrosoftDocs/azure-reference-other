@@ -11,7 +11,7 @@ ms.topic: reference
 ms.assetid: 7fca3d2c-2475-49e8-8c16-e268b65def22
 caps.latest.revision: 11
 ms.workload: data-services
-ms.date: 12/13/2019
+ms.date: 7/24/2020
 ---
 # GetMetadataPropertyValue (Azure Stream Analytics)
 
@@ -19,35 +19,51 @@ Queries input data for specific properties. There are three types of properties:
   
 ## Adapter metadata properties
 
-Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record. This function cannot be tested on the Azure portal using sample data. You can use Visual Studio tools for Stream Analytics to test this function in your query using [live data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-live-data-local-testing).
+Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record. 
 
-### Examples
+> [!NOTE]
+> At this time,this function cannot be tested on the Azure portal (it will return empty results). You can use Visual Studio tools for Stream Analytics to test this function in your query using [live data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-live-data-local-testing).
 
-To query from an Event Hub input,  
+##  Default metadata properties for Event Hubs
+* EventEnqueuedUtcTime
+* EventProcessedUtcTime
+* PartitionId
+* Offset
+* SequenceNumber
+* PartitionKey
+
+### Examples:
+#### Retrieve EventEnqueuedUtcTime from Event Hubs:
 `SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[EventEnqueuedUtcTime]') AS mytime FROM ehInput`
-Other valid property names are EventProcessedUtcTime, PartitionId, Offset, SequenceNumber, PartitionKey.
 
-To query from an IoT Hub input,  
-`SELECT GetMetadataPropertyValue(iotInput, 'IoTHub.CorrelationId') AS iotCorrelationId FROM iotInput`
-Other valid property names are MessageId, ConnectionDeviceId, ConnectionDeviceGenerationId, EnqueuedTime.
-
-To query from Event Hub with IoT Routing enabled,  
-`SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
-
-To query *all possible* adapter-related properties as a record,
-
-For Event Hub:  
+#### To query *all possible* adapter-related properties as a record:
 `SELECT GetMetadataPropertyValue(ehInput, 'EventHub') AS myEHPropertiesRecord FROM ehInput`
 
-For IoT Hub:  
+## Default metadata properties for IoT Hub
+* EnqueuedTime
+* CorrelationId
+* MessageId
+* ConnectionDeviceId
+* ConnectionDeviceGenerationId
+
+### Examples:
+#### Retrieve EnqueuedTime from IoT Hub:
+`SELECT GetMetadataPropertyValue(iotInput, 'IoTHub.EnqueuedTime') AS myEnqueuedTime FROM iotInput`
+#### To query *all possible* adapter-related properties as a record:
 `SELECT GetMetadataPropertyValue(iotInput, 'IoTHub') AS iotRecord FROM iotInput`
 
-For Blob input:  
+When using IoT Hub routing feature to an Event Hubs endpoint, the property will be available by reading properties at the Event Hubs level, as shown below.
+
+`SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
+
+## Default metadata properties for Blob input:  
 `SELECT GetMetadataPropertyValue(blobInput, 'Blob') AS blobRecord FROM blobInput`
 
 ## User properties
 
 A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages is made accessible using GetMetadataPropertyValue, as shown below.
+
+Additionally, twin properties and enriched properties added using [IoT Hub message enrichment](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-message-enrichments-overview), can also be retrieved using GetMetadataPropertyValue.
 
 ### Examples
 
