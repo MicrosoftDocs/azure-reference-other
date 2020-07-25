@@ -31,6 +31,7 @@ Certain input-specific properties are accessible by the GetMetadataPropertyValue
 * Offset
 * SequenceNumber
 * PartitionKey
+* Publisher, when available in the incoming event
 
 ### Examples:
 #### Retrieve EventEnqueuedUtcTime from Event Hubs:
@@ -40,7 +41,7 @@ Certain input-specific properties are accessible by the GetMetadataPropertyValue
 `SELECT GetMetadataPropertyValue(ehInput, 'EventHub') AS myEHPropertiesRecord FROM ehInput`
 
 ### IoT Hub properties when routed to Event Hubs endpoints
-When using IoT Hub routing feature to Event Hubs endpoints, the property will be available by reading properties from Event Hubs, here are the list of properties that can be retrieved in this case:
+When using IoT Hub routing feature to Event Hubs endpoints, metadata properties will be available by reading properties from  Event Hubs. In this case the following properties that can be retrieved:
 * IoTConnectionDeviceId
 * IoTAuthMethod
 * IoTAuthGenerationId
@@ -53,10 +54,16 @@ Example:
 `SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
 
 ## Default metadata properties for IoT Hub
-* EnqueuedTime
+* ConnectionDeviceId
+* AuthMethod
+* AuthGenerationId 
+* EnqueueTime
+* MessageSource
+* ConnectionModuleId
+* InterfaceName
 * CorrelationId
 * MessageId
-* ConnectionDeviceId
+
 * ConnectionDeviceGenerationId
 
 ### Examples:
@@ -64,7 +71,6 @@ Example:
 `SELECT GetMetadataPropertyValue(iotInput, 'IoTHub.EnqueuedTime') AS myEnqueuedTime FROM iotInput`
 #### To query *all possible* adapter-related properties as a record:
 `SELECT GetMetadataPropertyValue(iotInput, 'IoTHub') AS iotRecord FROM iotInput`
-
 
 
 ## Default metadata properties for Blob input:  
@@ -77,9 +83,9 @@ Example
 
 ## User properties
 
-A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages is made accessible using GetMetadataPropertyValue, as shown below.
+A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages is made accessible using GetMetadataPropertyValue, as shown in the example below.
 
-Additionally, twin properties and enriched properties added using [IoT Hub message enrichment](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-message-enrichments-overview), can also be retrieved using GetMetadataPropertyValue.
+Additionally, twin properties and enriched properties added using [IoT Hub message enrichment](https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview), can also be retrieved using GetMetadataPropertyValue.
 
 ### Examples
 
