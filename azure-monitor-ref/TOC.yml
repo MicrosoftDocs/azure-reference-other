@@ -142,3 +142,5 @@
     href: tables/dynamics365activity.md
   - name: Event
     href: tables/event.md
+  - name: ExchangeAssessmentRecommendation
+    href: tables/exchangeassessmentrecommendation.md
