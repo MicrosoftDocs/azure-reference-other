@@ -20,3 +20,5 @@
     href: tables/aadnoninteractiveusersigninlogs.md
   - name: AADServicePrincipalSignInLogs
     href: tables/aadserviceprincipalsigninlogs.md
+  - name: ADAssessmentRecommendation
+    href: tables/adassessmentrecommendation.md
