@@ -24,3 +24,5 @@
     href: tables/adassessmentrecommendation.md
   - name: ADFSSISIntegrationRuntimeLogs
     href: tables/adfssisintegrationruntimelogs.md
+  - name: ADFSSISPackageEventMessageContext
+    href: tables/adfssispackageeventmessagecontext.md
