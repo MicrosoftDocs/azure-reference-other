@@ -130,3 +130,5 @@
     href: tables/deviceapplaunch.md
   - name: DeviceSkypeHeartbeat
     href: tables/deviceskypeheartbeat.md
+  - name: DeviceSkypeSignIn
+    href: tables/deviceskypesignin.md
