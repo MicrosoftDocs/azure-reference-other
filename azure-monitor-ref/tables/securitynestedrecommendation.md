@@ -6,16 +6,17 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # SecurityNestedRecommendation
 
- Nested-recommendations are individual recommendations that are part of a parent security recommendation. These can be, for example, individual system updates under the parent 'System updates should be installed on your machines' recommendation.
+ Nested recommendations can be thought of as 'sub' recommendations grouped into a 'parent' recommendation. To view nested recommendations, open the 'parent' from the recommendations page. For example, if a vulnerability scan of your SQL databases returns 100 findings, each finding will be available as a nested recommendation within the parent recommendation 'Vulnerabilities on your SQL databases should be remediated'.
 
 ## Solutions
 
--  Security and Audit
+- Security and Audit
+- SecurityCenter
 - SecurityCenterFree
 
 
@@ -35,9 +36,10 @@ ms.date: 7/2/2020
 |NestedRecommendationId|string|Id of the nested-recommendation|
 |ParentRecommendationId|string|Id of the parent recommendation|
 |RecommendationLink|string|Recommendation link URL|
-|RecommendationName|string|Id of the assessed recommendation|
+|RecommendationName|string|Display name of the sub-assessment|
 |RecommendationSeverity|string|The sub-assessment severity level|
 |RecommendationState|string|The sub-assessment state|
+|RecommendationSubscriptionId|string|Recommendation's subscription Id|
 |RemidiationDescription|string|Information on how to remediate this sub-assessment|
 |ResourceDetails|dynamic|Details of the resource that was assessed|
 |ResourceGroup|string|Resource group name|
