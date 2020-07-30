@@ -52,3 +52,5 @@
     href: tables/amlcomputecpugpuutilization.md
   - name: AmlRunStatusChangedEvent
     href: tables/amlrunstatuschangedevent.md
+  - name: AppAvailabilityResults
+    href: tables/appavailabilityresults.md
