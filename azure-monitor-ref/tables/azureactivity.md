@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # AzureActivity
@@ -23,71 +23,70 @@ ms.date: 7/2/2020
 - LogManagement
 ## Resource types
 
-- Desktop Virtualization Application Groups
-- Data factory (V2)
-- Recovery Services vault
+- HDInsight Clusters
+- Automation account
+- Data factories
+- Recovery Services Vaults
 - Data Lake Storage Gen1
 - Data Lake Analytics
-- Power BI Dedicated
+- Power BI Embedded
 - Data Share
-- SQL Managed instance
-- SQL server
-- SQL database
-- Azure Database for MySQL server
-- Azure Database for PostgreSQL server
-- Azure Database for PostgreSQL server
-- Azure Database for MariaDB server
+- SQL Managed Instances
+- SQL Servers
+- SQL Databases
+- Azure Database for MySQL Servers
+- Azure Database for PostgreSQL Servers
+- Azure Database for MariaDB Servers
 - Device Provisioning Services
-- Event Hub
-- Application Gateway
-- Firewall
-- ExpressRoute circuit
-- Front Door
-- Load balancer
-- Network interface
-- Network security group
-- Public IP addresses
-- Traffic Manager profile
-- Virtual network gateway
-- Virtual network
+- Event Hubs
+- Application Gateways
+- Firewalls
+- ExpressRoute Circuits
+- Front Doors
+- Load Balancers
+- Network Interfaces
+- Network Security Groups
+- Public IP Addresses
+- Traffic Manager Profiles
+- Virtual network Gateways
+- Virtual Networks
 - Search Services
-- Stream Analytics
-- Bastion
-- Automation account
+- Stream Analytics jobs
+- Bastions
 - API Management services
-- Logic App
-- Service Fabric cluster
+- Azure API for FHIR
+- Logic Apps
+- Machine Learning
+- Desktop Virtualization Application Groups
 - Desktop Virtualization Host Pools
 - Desktop Virtualization workspaces
-- Time Series Insights
-- Event Grid
+- Time Series Insights Environments
+- Event Grid Topics
 - Workload Monitor
 - Analysis Services
-- HDInsight cluster
-- Batch account
-- CDN profile
+- Batch Accounts
+- CDN Profiles
 - Azure Spring Cloud
 - Media Services
 - Azure Cache for Redis
 - Cognitive Services
-- Key vault
-- Azure API for FHIR
-- App Service
+- Key Vaults
+- App Services
+- Storage Accounts
 - SignalR
-- Container registry
-- Azure Data Explorer cluster
+- Container Registries
+- Azure Data Explorer Clusters
 - Azure AD Domain Services
-- Azure Blockchain service
-- Event Grid domain
-- Virtual machine
-- Virtual machine scale set
+- Azure Blockchain Service
+- Event Grid Domains
+- Virtual machines
+- Virtual Machine Scale Sets
 - Kubernetes Services
 - Azure Databricks Services
 - Azure Monitor autoscale settings
 - IoT Hub
-- Azure Cosmos DB account
-- Machine Learning
-- Storage account
+- Azure Cosmos DB
+- Service Fabric Clusters
 - Service Bus
 
 
