@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # DnsEvents
@@ -21,7 +21,7 @@ ms.date: 7/2/2020
 - DNS Analytics (Preview)
 ## Resource types
 
-- Virtual machine
+- Virtual machines
 
 
 
