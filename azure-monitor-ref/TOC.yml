@@ -240,3 +240,5 @@
     href: tables/uacomputerrank.md
   - name: UASysReqIssue
     href: tables/uasysreqissue.md
+  - name: Usage
+    href: tables/usage.md
