@@ -262,3 +262,5 @@
     href: tables/wiredata.md
   - name: WVDCheckpoints
     href: tables/wvdcheckpoints.md
+  - name: WVDConnections
+    href: tables/wvdconnections.md
