@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # AzureMetrics
@@ -22,65 +22,64 @@ ms.date: 7/2/2020
 ## Resource types
 
 - Desktop Virtualization Application Groups
-- Data factory (V2)
+- Data factories
 - Data Lake Storage Gen1
 - Data Lake Analytics
-- Power BI Dedicated
+- Power BI Embedded
 - Data Share
-- SQL Managed instance
-- SQL server
-- SQL database
-- Azure Database for MySQL server
-- Azure Database for PostgreSQL server
-- Azure Database for PostgreSQL server
-- Azure Database for MariaDB server
+- SQL Managed Instances
+- SQL Servers
+- SQL Databases
+- Azure Database for MySQL Servers
+- Azure Database for PostgreSQL Servers
+- Azure Database for MariaDB Servers
 - Device Provisioning Services
-- Automation account
-- Event Hub
-- Firewall
-- ExpressRoute circuit
-- Front Door
-- Load balancer
-- Network interface
-- Network security group
-- Public IP addresses
-- Traffic Manager profile
-- Virtual network gateway
-- Virtual network
+- Event Hubs
+- Application Gateways
+- Firewalls
+- ExpressRoute Circuits
+- Front Doors
+- Load Balancers
+- Network Interfaces
+- Network Security Groups
+- Public IP Addresses
+- Traffic Manager Profiles
+- Virtual network Gateways
+- Virtual Networks
 - Search Services
-- Stream Analytics
-- Bastion
-- Application Gateway
-- Azure API for FHIR
+- Stream Analytics jobs
+- Bastions
+- Automation account
 - API Management services
-- Service Fabric cluster
+- Logic Apps
+- Service Fabric Clusters
 - Desktop Virtualization Host Pools
 - Desktop Virtualization workspaces
-- Time Series Insights
-- Event Grid
+- Time Series Insights Environments
+- Event Grid Topics
 - Workload Monitor
 - Analysis Services
-- Batch account
+- Batch Accounts
 - Azure Spring Cloud
 - Media Services
 - Azure Cache for Redis
 - Cognitive Services
-- Key vault
-- App Service
-- Logic App
-- Storage account
-- Container registry
-- Azure Data Explorer cluster
+- Key Vaults
+- App Services
+- Azure API for FHIR
+- Storage Accounts
+- Container Registries
+- Azure Data Explorer Clusters
 - Azure AD Domain Services
-- Azure Blockchain service
-- Event Grid domain
-- Virtual machine
-- Virtual machine scale set
+- Azure Blockchain Service
+- Event Grid Domains
+- Virtual machines
+- Virtual Machine Scale Sets
 - Kubernetes Services
 - Azure Databricks Services
 - Azure Monitor autoscale settings
 - IoT Hub
-- Azure Cosmos DB account
+- Azure Cosmos DB
 - Machine Learning
 - SignalR
 - Service Bus

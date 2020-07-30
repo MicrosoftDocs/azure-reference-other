@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -64,7 +64,9 @@ ms.date: 7/2/2020
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
+- [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
 - [AmlComputeJobEvent](amlcomputejobevent.md)
+- [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
 - [AppPlatformSystemLogs](appplatformsystemlogs.md)
@@ -275,6 +277,8 @@ ms.date: 7/2/2020
 - [SysmonEvent](sysmonevent.md)
 - [ThreatIntelligenceIndicator](threatintelligenceindicator.md)
 - [Update](update.md)
+- [UserAccessAnalytics](useraccessanalytics.md)
+- [UserPeerAnalytics](userpeeranalytics.md)
 - [WindowsEvent](windowsevent.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)

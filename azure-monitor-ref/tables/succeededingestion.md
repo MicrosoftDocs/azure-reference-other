@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # SucceededIngestion
@@ -21,7 +21,7 @@ ms.date: 7/2/2020
 - LogManagement
 ## Resource types
 
-- Azure Data Explorer cluster
+- Azure Data Explorer Clusters
 
 
 

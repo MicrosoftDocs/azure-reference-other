@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # SecurityIncident
@@ -30,10 +30,12 @@ ms.date: 7/2/2020
 |Classification|string|The classification the incident was given when closed|
 |ClassificationComment|string|Description of the reason the incident was closed|
 |ClassificationReason|string|The classification reason the incident was given when closed|
+|ClosedTime|datetime|Timestamp (UTC) of when the incident was last closed|
 |Comments|dynamic|The comments added to the incident|
 |CreatedTime|datetime|Timestamp (UTC) of when the incident was created|
 |Description|string|The description of the incident|
 |FirstActivityTime|datetime|Timestamp (UTC) of when the first activity in the incident occured|
+|FirstModifiedTime|datetime|Timestamp (UTC) of when the incident was first modified|
 |IncidentName|string|The resource name of the incident|
 |IncidentNumber|int|The sequential number of the incident|
 |IncidentUrl|string|The URI to open the incident in Azure Sentinel portal|
