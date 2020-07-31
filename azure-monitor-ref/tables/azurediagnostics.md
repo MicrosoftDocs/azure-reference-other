@@ -4,89 +4,100 @@ description: Reference for AzureDiagnostics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 3/16/2020
+ms.author: bwren
+author: bwren
+ms.date: 07/31/2020
 ---
 
 # AzureDiagnostics
 
- Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here
+Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. All resource logs share a common top-level schema, which services extend to create unique properties for their specific events.
+
+Azure services that use resource-specific mode store data in a table specific to that service and do not use the AzureDiagnostics table. See [Azure resource logs](https://docs.microsoft.com/azure/azure-monitor/platform/resource-logs#send-to-log-analytics-workspace) for details.
+
 
 ## Categories
 
 - Azure Resources
 - Security
 - Network
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
+### Azure Diagnostics mode
+
 - Analysis Services
-- Azure Database for PostgreSQL server
-- Azure Database for MariaDB server
-- Device Provisioning Services
-- Event Hub
-- Application Gateway
-- Firewall
-- ExpressRoute circuit
-- Azure Database for PostgreSQL server
-- Front Door
-- Network interface
-- Network security group
-- Public IP addresse
-- Traffic Manager profile
-- Virtual network gateway
-- Virtual network
-- Search Services
-- Load balancer
-- Azure Database for MySQL server
-- SQL database
-- SQL server
-- Batch account
-- CDN profile
-- Media Services
-- Azure Cache for Redis
+- Application Gateways
+- Automation Accounts
+- Azure Database for MariaDB servers
+- Azure Database for MySQL servers
+- Azure Database for PostgreSQL servers
+- Azure Database for PostgreSQL servers v2
+- Batch accounts
+- CDN profiles
 - Cognitive Services
-- Key vault
-- IoT Hub
-- Azure Cosmos DB account
-- Logic App
-- API Management services
-- Automation account
-- Data factory (V2)
-- Recovery Services vault
-- Data Lake Storage Gen1
+- Cosmos DB
 - Data Lake Analytics
-- Power BI Dedicated
-- SQL Managed instance
-- Stream Analytics
+- DataLake Storage Gen1
+- Device Provisioning Services
+- Digital Twins
+- Event Grid Topics
+- Event Hubs
+- ExpressRoute circuits
+- Firewalls
+- Front Doors
+- Integration accounts
+- Key Vault
+- Load balancers
+- Logic Apps
+- Media services
+- Network interfaces
+- Network Security Groups
+- P2S VPN Gateways
+- Power BI Embedded
+- Public IP addresses
+- Recovery Services vaults(Site Recovery)
+- Search services
 - Service Bus
+- SQL databases
+- SQL managed Instances
+- SQL servers
+- Stream Analytics jobs
+- Traffic Manager profiles
+- Virtual networks
+- Virtual network gateways
+- VPN Gateways
 
+### Azure Diagnostics mode or resource-specific mode
 
+- API Management Services
+- Data factories (V2)
+- IoT Hub
+- Kubernetes services
+- Recovery Services vaults(Backup)
 
 
 ## Columns
 
 |Column|Type|Description|
 |---|---|---|
+|Category|string||
+|CorrelationId|string||
+|OperationName|string||
+|Resource|string||
+|ResourceGroup|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResourceId|string||
+|ResourceProvider|string||
+|ResourceType|string||
+|ResultDescription|string||
+|ResultType|string||
+|SourceSystem|string||
+|SubscriptionId|string||
 |TenantId|string||
 |TimeGenerated|datetime||
-|ResourceId|string||
-|Category|string||
-|ResourceGroup|string||
-|SubscriptionId|string||
-|ResourceProvider|string||
-|Resource|string||
-|ResourceType|string||
-|OperationName|string||
-|ResultType|string||
-|CorrelationId|string||
-|ResultDescription|string||
-|SourceSystem|string||
-|ManagementGroupName|string||
-|Computer|string||
-|RawData|string||
-|Type|string||
-|_ResourceId|string||
+|Type|string|The name of the table|
