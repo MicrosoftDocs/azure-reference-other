@@ -60,7 +60,9 @@ TIMESTAMP BY OVER clause has the following limitations of usage:
 
 3.	If TIMESTAMP BY OVER \<over spec> clause is used, column names from the clause must be used as grouping key in GROUP BY statements and in all JOIN predicates when joining between streams.
 
-4. The result of a [CROSS APPLY](apply-azure-stream-analytics.md) cannot be used as the target value of the TIMESTAMP BY. However, you can use one Azure Stream Analytics job that performs the CROSS APPLY, and use a second job to perform the TIMESTAMP BY.
+4. Columns created in a SELECT statement or in any other query clauses cannot be used in the TIMESTAMP BY clause, a field from the input payload must be used. For example, the result of a [CROSS APPLY](apply-azure-stream-analytics.md) cannot be used as the target value of the TIMESTAMP BY. However, you can use one Azure Stream Analytics job that performs the CROSS APPLY, and use a second job to perform the TIMESTAMP BY.
+
+5. System.Timestamp() cannot be used in TIMESTAMP BY, since TIMESTAMP BY is what establishes the value of System.Timestamp().
   
 ## Examples  
  **Example 1 – Access a timestamp field from the payload**  
