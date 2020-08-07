@@ -14,6 +14,12 @@
     href: tables/aaddomainservicesprivilegeuse.md
   - name: AADDomainServicesSystemSecurity
     href: tables/aaddomainservicessystemsecurity.md
+  - name: AADManagedIdentitySignInLogs
+    href: tables/aadmanagedidentitysigninlogs.md
+  - name: AADNonInteractiveUserSignInLogs
+    href: tables/aadnoninteractiveusersigninlogs.md
+  - name: AADServicePrincipalSignInLogs
+    href: tables/aadserviceprincipalsigninlogs.md
   - name: ADAssessmentRecommendation
     href: tables/adassessmentrecommendation.md
   - name: ADFSSISIntegrationRuntimeLogs
@@ -42,6 +48,10 @@
     href: tables/aegdeliveryfailurelogs.md
   - name: AegPublishFailureLogs
     href: tables/aegpublishfailurelogs.md
+  - name: AmlComputeCpuGpuUtilization
+    href: tables/amlcomputecpugpuutilization.md
+  - name: AmlRunStatusChangedEvent
+    href: tables/amlrunstatuschangedevent.md
   - name: AppAvailabilityResults
     href: tables/appavailabilityresults.md
   - name: AppBrowserTimings
@@ -232,6 +242,10 @@
     href: tables/uasysreqissue.md
   - name: Usage
     href: tables/usage.md
+  - name: UserAccessAnalytics
+    href: tables/useraccessanalytics.md
+  - name: UserPeerAnalytics
+    href: tables/userpeeranalytics.md
   - name: VMBoundPort
     href: tables/vmboundport.md
   - name: VMComputer

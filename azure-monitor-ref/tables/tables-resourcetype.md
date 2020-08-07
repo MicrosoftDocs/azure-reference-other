@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -23,7 +23,7 @@ ms.date: 7/2/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## App Service
+## App Services
 
 - [AppServiceAppLogs](appserviceapplogs.md)
 - [AppServiceAuditLogs](appserviceauditlogs.md)
@@ -35,7 +35,7 @@ ms.date: 7/2/2020
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
 
-## Application Gateway
+## Application Gateways
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -76,7 +76,7 @@ ms.date: 7/2/2020
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 
-## Azure Blockchain service
+## Azure Blockchain Service
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -88,34 +88,29 @@ ms.date: 7/2/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Azure Cosmos DB account
+## Azure Cosmos DB
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Azure Data Explorer cluster
+## Azure Data Explorer Clusters
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FailedIngestion](failedingestion.md)
 - [SucceededIngestion](succeededingestion.md)
 
-## Azure Database for MariaDB server
+## Azure Database for MariaDB Servers
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Azure Database for MySQL server
+## Azure Database for MySQL Servers
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Azure Database for PostgreSQL server
-
-- [AzureActivity](azureactivity.md)
-- [AzureMetrics](azuremetrics.md)
-
-## Azure Database for PostgreSQL server
+## Azure Database for PostgreSQL Servers
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -139,18 +134,18 @@ ms.date: 7/2/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Bastion
+## Bastions
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftAzureBastionAuditLogs](microsoftazurebastionauditlogs.md)
 
-## Batch account
+## Batch Accounts
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## CDN profile
+## CDN Profiles
 
 - [AzureActivity](azureactivity.md)
 
@@ -159,14 +154,14 @@ ms.date: 7/2/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Container registry
+## Container Registries
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ContainerRegistryLoginEvents](containerregistryloginevents.md)
 - [ContainerRegistryRepositoryEvents](containerregistryrepositoryevents.md)
 
-## Data factory (V2)
+## Data factories
 
 - [ADFActivityRun](adfactivityrun.md)
 - [ADFPipelineRun](adfpipelinerun.md)
@@ -223,39 +218,39 @@ ms.date: 7/2/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Event Grid
-
-- [AzureActivity](azureactivity.md)
-- [AzureMetrics](azuremetrics.md)
-
-## Event Grid domain
+## Event Grid Domains
 
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Event Hub
+## Event Grid Topics
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## ExpressRoute circuit
+## Event Hubs
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Firewall
+## ExpressRoute Circuits
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Front Door
+## Firewalls
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## HDInsight cluster
+## Front Doors
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
+## HDInsight Clusters
 
 - [AzureActivity](azureactivity.md)
 
@@ -265,7 +260,7 @@ ms.date: 7/2/2020
 - [AzureMetrics](azuremetrics.md)
 - [IoTHubDistributedTracing](iothubdistributedtracing.md)
 
-## Key vault
+## Key Vaults
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -289,12 +284,15 @@ ms.date: 7/2/2020
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
 
-## Load balancer
+## Load Balancers
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Logic App
+## Log Analytics workspaces
+
+
+## Logic Apps
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -303,7 +301,9 @@ ms.date: 7/2/2020
 
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
+- [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
 - [AmlComputeJobEvent](amlcomputejobevent.md)
+- [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [BaiClusterEvent](baiclusterevent.md)
@@ -315,27 +315,33 @@ ms.date: 7/2/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Network interface
+## Network Interfaces
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Network security group
+## Network Security Groups
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Power BI Dedicated
+## Power BI Datasets
+
+
+## Power BI Datasets
+
+
+## Power BI Embedded
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Public IP addresses
+## Public IP Addresses
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Recovery Services vault
+## Recovery Services Vaults
 
 - [AddonAzureBackupAlerts](addonazurebackupalerts.md)
 - [AddonAzureBackupJobs](addonazurebackupjobs.md)
@@ -355,7 +361,7 @@ ms.date: 7/2/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Service Fabric cluster
+## Service Fabric Clusters
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -366,22 +372,22 @@ ms.date: 7/2/2020
 - [AzureMetrics](azuremetrics.md)
 - [SignalRServiceDiagnosticLogs](signalrservicediagnosticlogs.md)
 
-## SQL database
+## SQL Databases
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## SQL Managed instance
+## SQL Managed Instances
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## SQL server
+## SQL Servers
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Storage account
+## Storage Accounts
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -390,23 +396,51 @@ ms.date: 7/2/2020
 - [StorageQueueLogs](storagequeuelogs.md)
 - [StorageTableLogs](storagetablelogs.md)
 
-## Stream Analytics
+## Stream Analytics jobs
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Time Series Insights
+## Time Series Insights Environments
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [TSIIngress](tsiingress.md)
 
-## Traffic Manager profile
+## Traffic Manager Profiles
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Virtual machine
+## Virtual Machine Scale Sets
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [BoundPort](boundport.md)
+- [ConfigurationChange](configurationchange.md)
+- [ConfigurationData](configurationdata.md)
+- [Event](event.md)
+- [Heartbeat](heartbeat.md)
+- [InsightsMetrics](insightsmetrics.md)
+- [OutboundConnection](outboundconnection.md)
+- [Perf](perf.md)
+- [ProtectionStatus](protectionstatus.md)
+- [SecurityBaseline](securitybaseline.md)
+- [SecurityEvent](securityevent.md)
+- [Syslog](syslog.md)
+- [Update](update.md)
+- [UpdateRunProgress](updaterunprogress.md)
+- [UpdateSummary](updatesummary.md)
+- [VMBoundPort](vmboundport.md)
+- [VMComputer](vmcomputer.md)
+- [VMConnection](vmconnection.md)
+- [VMProcess](vmprocess.md)
+- [W3CIISLog](w3ciislog.md)
+- [WindowsFirewall](windowsfirewall.md)
+- [WireData](wiredata.md)
+- [WorkloadMonitoringPerf](workloadmonitoringperf.md)
+
+## Virtual machines
 
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
 - [ADReplicationResult](adreplicationresult.md)
@@ -442,40 +476,12 @@ ms.date: 7/2/2020
 - [WireData](wiredata.md)
 - [WorkloadMonitoringPerf](workloadmonitoringperf.md)
 
-## Virtual machine scale set
-
-- [AzureActivity](azureactivity.md)
-- [AzureMetrics](azuremetrics.md)
-- [BoundPort](boundport.md)
-- [ConfigurationChange](configurationchange.md)
-- [ConfigurationData](configurationdata.md)
-- [Event](event.md)
-- [Heartbeat](heartbeat.md)
-- [InsightsMetrics](insightsmetrics.md)
-- [OutboundConnection](outboundconnection.md)
-- [Perf](perf.md)
-- [ProtectionStatus](protectionstatus.md)
-- [SecurityBaseline](securitybaseline.md)
-- [SecurityEvent](securityevent.md)
-- [Syslog](syslog.md)
-- [Update](update.md)
-- [UpdateRunProgress](updaterunprogress.md)
-- [UpdateSummary](updatesummary.md)
-- [VMBoundPort](vmboundport.md)
-- [VMComputer](vmcomputer.md)
-- [VMConnection](vmconnection.md)
-- [VMProcess](vmprocess.md)
-- [W3CIISLog](w3ciislog.md)
-- [WindowsFirewall](windowsfirewall.md)
-- [WireData](wiredata.md)
-- [WorkloadMonitoringPerf](workloadmonitoringperf.md)
-
-## Virtual network
+## Virtual network Gateways
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Virtual network gateway
+## Virtual Networks
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)

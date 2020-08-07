@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # AppTraces
@@ -49,6 +49,8 @@ ms.date: 7/2/2020
 |OperationName|string|Application-defined name of the overall operation. The OperationName values typically match the Name values for AppRequests.|
 |ParentId|string|ID of the parent operation.|
 |Properties|dynamic|Application-defined properties.|
+|ReferencedItemId|string|Id of the item with additional details about the trace.|
+|ReferencedType|string|Name of the table with additional details about the trace.|
 |ResourceGUID|string|Unique, persistent identifier of an Azure resource.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SDKVersion|string|Version of the SDK used by the application to generate this telemetry item.|

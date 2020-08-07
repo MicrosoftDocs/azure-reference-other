@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/2/2020
+ms.date: 7/30/2020
 ---
 
 # SecurityBaseline
@@ -23,8 +23,8 @@ ms.date: 7/2/2020
 - SecurityCenterFree
 ## Resource types
 
-- Virtual machine
-- Virtual machine scale set
+- Virtual machines
+- Virtual Machine Scale Sets
 
 
 
