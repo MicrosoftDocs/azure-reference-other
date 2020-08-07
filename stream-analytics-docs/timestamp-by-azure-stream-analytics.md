@@ -9,6 +9,7 @@ ms.topic: reference
 ms.date: 08/07/2020
 ---
 # TIMESTAMP BY (Azure Stream Analytics)
+
 All data stream events have a timestamp associated with them. By default, events from Event Hub and IoT Hub are timestamped based on when the event was received by the Event Hub or IoT Hub; events from Blob storage are timestamped by the blob’s last modified time. The timestamp of an event doesn’t change if you re-start or re-run your job. 
 
 Many streaming applications require using the exact timestamp that an event occurred, rather than the arrival time. For example, in a Point of Sales application one may need event timestamps corresponding to the time a payment was logged, rather than the time a payment event reaches the event ingestion service. Additionally, geo-distributed systems and network latencies may contribute to unpredictable arrival times, making the use of an application time more reliable in a streaming application. For these cases, the TIMESTAMP BY clause allows specifying custom timestamp values. The value can be any field from the event payload or expression of type **DATETIME**. String values conforming to any of **ISO 8601** formats are also supported.  
@@ -65,7 +66,8 @@ TIMESTAMP BY OVER clause has the following limitations of usage:
 ## Examples
 
 ### **Example 1 – Access a timestamp field from the payload**  
- Use `EntryTime` field from the payload as event timestamp 
+
+Use `EntryTime` field from the payload as event timestamp 
  
 ```SQL  
 SELECT  
@@ -76,7 +78,8 @@ FROM input TIMESTAMP BY EntryTime
 ```  
   
 ### **Example 2 – Use UNIX time from the payload as event timestamp**  
- UNIX systems often use POSIX (or Epoch) time defined as the number of milliseconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970.  
+
+UNIX systems often use POSIX (or Epoch) time defined as the number of milliseconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970.  
   
  This example shows how to use numeric ‘epochtime’ field containing Epoch time as event timestamp. 
  
@@ -89,7 +92,8 @@ FROM input TIMESTAMP BY DATEADD(millisecond, epochtime, '1970-01-01T00:00:00Z')
 ```  
   
 ### **Example 3 – Heterogeneous timestamps**    
- Imagine processing heterogeneous streams of data containing two type of events ‘A’ and ‘B’. Events ‘A’ have timestamp data in the field ‘timestampA’ and events ‘B’ have timestamp in the field ‘timestampB’.  
+
+Imagine processing heterogeneous streams of data containing two type of events ‘A’ and ‘B’. Events ‘A’ have timestamp data in the field ‘timestampA’ and events ‘B’ have timestamp in the field ‘timestampB’.  
   
  This example shows how to write TIMESTAMP BY to be able to work with both types of events/timestamps. 
   
@@ -106,6 +110,7 @@ FROM input TIMESTAMP BY
 ```  
 
 ### **Example 4 – Handling multiple timelines in a partitioned query**  
+
 Process data from different senders (toll stations) without applying time policies across different toll station IDs. The input data is partitioned based on TollId.
 
 ```SQL
