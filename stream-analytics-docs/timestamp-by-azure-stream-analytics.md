@@ -58,7 +58,7 @@ TIMESTAMP BY OVER clause has the following limitations of usage:
 
 2.  TIMESTAMP BY OVER clause is only supported with fully parallel jobs or single partition jobs.
 
-3.	If input stream has more than one partition with compatibility level 1.1 or lower, OVER clause must be used together with PARTITION BY clause. The PartitionId column must be specified as part of TIMESTAMP BY OVER columns. With compatibility level 1.2 or higher, this is done automatically.
+3.	If an input stream has more than one partition with compatibility level 1.1 or lower, the OVER clause must be used together with the PARTITION BY clause. The PartitionId column must be specified as part of TIMESTAMP BY OVER columns. With compatibility level 1.2 or higher, this is done automatically.
 
 4.	If TIMESTAMP BY OVER \<over spec> clause is used, column names from the clause must be used as grouping key in GROUP BY statements and in all JOIN predicates when joining between streams.
 
