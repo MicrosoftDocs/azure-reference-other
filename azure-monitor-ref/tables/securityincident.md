@@ -34,13 +34,13 @@ ms.date: 7/30/2020
 |Comments|dynamic|The comments added to the incident|
 |CreatedTime|datetime|Timestamp (UTC) of when the incident was created|
 |Description|string|The description of the incident|
-|FirstActivityTime|datetime|Timestamp (UTC) of when the first activity in the incident occured|
+|FirstActivityTime|datetime|Timestamp (UTC) of when the first activity in the incident occurred|
 |FirstModifiedTime|datetime|Timestamp (UTC) of when the incident was first modified|
 |IncidentName|string|The resource name of the incident|
 |IncidentNumber|int|The sequential number of the incident|
 |IncidentUrl|string|The URI to open the incident in Azure Sentinel portal|
 |Labels|dynamic|The labels added to the incident|
-|LastActivityTime|datetime|Timestamp (UTC) of when the last activity in the incident occured|
+|LastActivityTime|datetime|Timestamp (UTC) of when the last activity in the incident occurred|
 |LastModifiedTime|datetime|Timestamp (UTC) of when the incident was last modified|
 |ModifiedBy|string|The source of the change in the incident|
 |Owner|dynamic|The user the incident is assigned to|
