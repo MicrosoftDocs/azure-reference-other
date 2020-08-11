@@ -39,6 +39,8 @@ Those module supports the following scenarios for creating, updating, or applyin
   
 + You are generating scores from a predictive model and need to generate and use text inputs with an n-gram dictionary as part of the scoring process. [See instructions.](#bkmk_score)
 
+You could use the [example experiment](https://gallery.azure.ai/Experiment/Predict-Book-Reviews-1) for reference.
+
 ### <a name="bkmk_create"></a> Create a new n-gram dictionary from a text column
 
 1.  Add the **Extract N-Gram Features from Text** module to your experiment and connect the dataset that has the text you want to process.
