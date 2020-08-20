@@ -70,7 +70,7 @@ TIMESTAMP BY OVER clause has the following limitations of usage:
   
 ## Examples
 
-### **Example 1 – Access a timestamp field from the payload**  
+### Example 1 – Access a timestamp field from the payload 
 
 Use `EntryTime` field from the payload as event timestamp 
  
@@ -82,7 +82,7 @@ SELECT
 FROM input TIMESTAMP BY EntryTime  
 ```  
   
-### **Example 2 – Use UNIX time from the payload as event timestamp**  
+### Example 2 – Use UNIX time from the payload as event timestamp  
 
 UNIX systems often use POSIX (or Epoch) time defined as the number of milliseconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970.  
   
@@ -96,7 +96,7 @@ SELECT
 FROM input TIMESTAMP BY DATEADD(millisecond, epochtime, '1970-01-01T00:00:00Z')  
 ```  
   
-### **Example 3 – Heterogeneous timestamps**    
+### Example 3 – Heterogeneous timestamps    
 
 Imagine processing heterogeneous streams of data containing two type of events ‘A’ and ‘B’. Events ‘A’ have timestamp data in the field ‘timestampA’ and events ‘B’ have timestamp in the field ‘timestampB’.  
   
