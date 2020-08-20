@@ -6,7 +6,9 @@ author: mamccrea
 ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.date: 08/07/2020
+
+
+
 ---
 # TIMESTAMP BY (Azure Stream Analytics)
 
@@ -49,23 +51,26 @@ When the OVER clause is used, several aspects of event processing by Azure Strea
    
 3. Output events for each event producer are generated as they are computed, which means that the output events may have out-of-order timestamps; however, they will be in-order within a single value tuple of \<over spec>. 
       
-## Limitations and Restrictions
 
-TIMESTAMP BY OVER clause has the following limitations of usage:
+#### Limitations and Restrictions  
+TIMESTAMP BY OVER clause has the following limitations of usage: 
 
 1.	TIMESTAMP BY OVER clause must be used for all inputs of the query or not used for any of them.
 
-2.	If input stream has more than one partition, OVER clause must be used together with PARTITION BY clause. The PartitionId column must be specified as part of TIMESTAMP BY OVER columns.
+2.  TIMESTAMP BY OVER clause is only supported with fully parallel jobs or single partition jobs.
 
-3.	If TIMESTAMP BY OVER \<over spec> clause is used, column names from the clause must be used as grouping key in GROUP BY statements and in all JOIN predicates when joining between streams.
+3.	If an input stream has more than one partition with compatibility level 1.1 or lower, the OVER clause must be used together with the PARTITION BY clause. The PartitionId column must be specified as part of TIMESTAMP BY OVER columns. With compatibility level 1.2 or higher, this is done automatically.
 
-4. Columns created in a SELECT statement or in any other query clauses cannot be used in the TIMESTAMP BY clause, a field from the input payload must be used. For example, the result of a [CROSS APPLY](apply-azure-stream-analytics.md) cannot be used as the target value of the TIMESTAMP BY. However, you can use one Azure Stream Analytics job that performs the CROSS APPLY, and use a second job to perform the TIMESTAMP BY.
+4.	If TIMESTAMP BY OVER clause is used, column names from the clause must be used as grouping key in GROUP BY statements and in all JOIN predicates when joining between streams.
 
-5. System.Timestamp() cannot be used in TIMESTAMP BY, since TIMESTAMP BY is what establishes the value of System.Timestamp().
+5.  Columns created in a SELECT statement or in any other query clauses cannot be used in the TIMESTAMP BY clause, a field from the input payload must be used. For example, the result of a [CROSS APPLY](apply-azure-stream-analytics.md) cannot be used as the target value of the TIMESTAMP BY. However, you can use one Azure Stream Analytics job that performs the CROSS APPLY, and use a second job to perform the TIMESTAMP BY.
+
+6.  System.Timestamp() cannot be used in TIMESTAMP BY, since TIMESTAMP BY is what establishes the value of System.Timestamp().
+
   
 ## Examples
 
-### **Example 1 – Access a timestamp field from the payload**  
+### Example 1 – Access a timestamp field from the payload 
 
 Use `EntryTime` field from the payload as event timestamp 
  
@@ -77,7 +82,7 @@ SELECT
 FROM input TIMESTAMP BY EntryTime  
 ```  
   
-### **Example 2 – Use UNIX time from the payload as event timestamp**  
+### Example 2 – Use UNIX time from the payload as event timestamp  
 
 UNIX systems often use POSIX (or Epoch) time defined as the number of milliseconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970.  
   
@@ -91,7 +96,7 @@ SELECT
 FROM input TIMESTAMP BY DATEADD(millisecond, epochtime, '1970-01-01T00:00:00Z')  
 ```  
   
-### **Example 3 – Heterogeneous timestamps**    
+### Example 3 – Heterogeneous timestamps    
 
 Imagine processing heterogeneous streams of data containing two type of events ‘A’ and ‘B’. Events ‘A’ have timestamp data in the field ‘timestampA’ and events ‘B’ have timestamp in the field ‘timestampB’.  
   
@@ -109,7 +114,7 @@ FROM input TIMESTAMP BY
       ELSE NULL END) 
 ```  
 
-### **Example 4 – Handling multiple timelines in a partitioned query**  
+### Example 4 – Handling multiple timelines in a partitioned query
 
 Process data from different senders (toll stations) without applying time policies across different toll station IDs. The input data is partitioned based on TollId.
 
