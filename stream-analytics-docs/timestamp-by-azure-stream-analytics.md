@@ -114,7 +114,7 @@ FROM input TIMESTAMP BY
       ELSE NULL END) 
 ```  
 
-### **Example 4 – Handling multiple timelines in a partitioned query**  
+### Example 4 – Handling multiple timelines in a partitioned query
 
 Process data from different senders (toll stations) without applying time policies across different toll station IDs. The input data is partitioned based on TollId.
 
