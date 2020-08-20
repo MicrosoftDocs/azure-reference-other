@@ -6,11 +6,6 @@ author: mamccrea
 ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 89418f9a-c874-4f25-aa2d-ae066c460ce2
-caps.latest.revision: 20
-ms.workload: data-services
-ms.date: 8/7/2020
-ms.author: mamccrea
 
 
 
