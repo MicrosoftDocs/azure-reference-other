@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 07/31/2020
+ms.date: 08/26/2020
 ---
 
 # AzureDiagnostics
@@ -56,6 +56,7 @@ The following services use Azure diagnostics mode for their resource logs and se
 - Front Doors
 - Integration accounts
 - Key Vault
+- Kubernetes services
 - Load balancers
 - Logic Apps
 - Media services
@@ -82,7 +83,6 @@ The following services use either Azure diagnostics mode or resource-specific mo
 - API Management Services
 - Data factories (V2)
 - IoT Hub
-- Kubernetes services
 - Recovery Services vaults(Backup)
 
 
