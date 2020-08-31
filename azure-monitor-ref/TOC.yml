@@ -98,7 +98,7 @@
     href: tables/azureactivity.md
   - name: AzureDevOpsAuditing
     href: tables/azuredevopsauditing.md
-  - name: AzureDiagnotics
+  - name: AzureDiagnostics
     href: tables/azurediagnostics.md
   - name: AzureMetrics
     href: tables/azuremetrics.md
