@@ -13,7 +13,7 @@ ms.date: 08/26/2020
 
 Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. 
 
-The resource log for each Azure service has a unique set of columns. The AzureDiagnostics table includes the most common columns used by Azure services. If a resource log includes a column that doesn't already exist in the AzureDiagnostics table, that column is added the first time that data is collected. If the maximum number of 500 columns is reached, data for any additional columns is added to the \<Name?\> column. 
+The resource log for each Azure service has a unique set of columns. The AzureDiagnostics table includes the most common columns used by Azure services. If a resource log includes a column that doesn't already exist in the AzureDiagnostics table, that column is added the first time that data is collected. If the maximum number of 500 columns is reached, data for any additional columns is added to a dynamic column.
 
 Azure services that use resource-specific mode store data in a table specific to that service and do not use the AzureDiagnostics table. See [Azure resource logs](https://docs.microsoft.com/azure/azure-monitor/platform/resource-logs#send-to-log-analytics-workspace) for details.
 
