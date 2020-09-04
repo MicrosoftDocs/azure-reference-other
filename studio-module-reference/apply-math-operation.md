@@ -1,6 +1,5 @@
 ---
-title: "Apply Math Operation | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Apply Math Operation - Azure"
 description: Learn how to use the Apply Math Operation module to create calculations that are applied to numeric columns in the input dataset.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

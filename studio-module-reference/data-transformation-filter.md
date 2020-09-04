@@ -1,5 +1,5 @@
 ---
-title: "Data Transformation: Filter | Microsoft Docs"
+title: "ML Studio (classic): Data Transformation: Filter | Microsoft Docs"
 description: "Learn how to use the filter modules to transform digital data."
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019

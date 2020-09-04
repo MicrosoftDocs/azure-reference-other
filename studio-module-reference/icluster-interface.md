@@ -1,6 +1,5 @@
 ---
-title: "ICluster interface | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): ICluster interface - Azure"
 description: Learn how to use `ICluster`, which is the interface for trained clustering models.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

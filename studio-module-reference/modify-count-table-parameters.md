@@ -1,6 +1,5 @@
 ---
-title: "Modify Count Table Parameters | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Modify Count Table Parameters - Azure"
 description: Learn how to use the Modify Count Table Parameters module to change the way that features are generated from a count table.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

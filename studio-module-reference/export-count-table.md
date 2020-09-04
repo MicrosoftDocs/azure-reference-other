@@ -1,6 +1,5 @@
 ---
-title: "Export Count Table | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Export Count Table - Azure"
 description: Learn how to use the Export Count Table to separate the count-based features produced by deprecated Build Count Table and  Count Featurizer modules.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

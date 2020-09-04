@@ -1,6 +1,5 @@
 ---
-title: "Split Data using Regular Expression | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Split Data using Regular Expression - Azure"
 description: Learn how to apply a filter criteria to a text column with the Regular Expression Split option in the Split Data module.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

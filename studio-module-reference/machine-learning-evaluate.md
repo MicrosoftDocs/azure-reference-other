@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning - Evaluate | Microsoft Docs"
+title: "ML Studio (classic): Machine Learning - Evaluate | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use to evaluate a machine learning model."
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019

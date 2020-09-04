@@ -1,5 +1,5 @@
 ---
-title: "Data Transformation: Scale and Reduce | Microsoft Docs"
+title: "ML Studio (classic): Data Transformation: Scale and Reduce | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio (classic) modules that can help you work with numerical data."
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019

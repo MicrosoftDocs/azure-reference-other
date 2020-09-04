@@ -1,5 +1,5 @@
 ---
-title: "Feature Selection modules | Microsoft Docs"
+title: "ML Studio (classic): Feature Selection modules | Microsoft Docs"
 description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use for feature selection."
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019

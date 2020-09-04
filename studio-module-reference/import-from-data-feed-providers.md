@@ -1,6 +1,5 @@
 ---
-title: "Import from Data Feed Providers | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Import from Data Feed Providers - Azure"
 description: Learn how to use the Import Data module to import data provided in the `OData` format into a machine learning experiment.
 
 ms.date: 05/06/2019

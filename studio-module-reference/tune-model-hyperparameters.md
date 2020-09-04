@@ -1,6 +1,5 @@
 ---
-title: "Tune Model Hyperparameters | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Tune Model Hyperparameters - Azure"
 description: Learn how to use the Tune Model Hyperparameters module to determine the optimum hyperparameters for a given machine learning model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

@@ -1,5 +1,5 @@
 ---
-title: "Data Transformation: Counts"
+title: "ML Studio (classic): Data Transformation: Counts"
 description: "Learn about the modules that support count-based featurization."
 titleSuffix: ML Studio (classic) - Azure
 ms.custom: "formulas"

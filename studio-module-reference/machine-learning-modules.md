@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Modules | Microsoft Docs"
+title: "ML Studio (classic): Machine Learning Modules | Microsoft Docs"
 description: The modules in this section provide tools for the final phases of machine learning.
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019

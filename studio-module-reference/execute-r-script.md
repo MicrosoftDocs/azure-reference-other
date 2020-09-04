@@ -1,6 +1,5 @@
 ---
-title: "Execute R Script | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Execute R Script - Azure"
 description: Learn how to use the Execute R Script module to call and run R code in your experiments.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

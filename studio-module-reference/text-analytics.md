@@ -1,5 +1,5 @@
 ---
-title: "Text Analytics | Microsoft Docs"
+title: "ML Studio (classic): Text Analytics | Microsoft Docs"
 description: This article describes the text analytics modules included in Azure Machine Learning Studio (classic). 
 titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019

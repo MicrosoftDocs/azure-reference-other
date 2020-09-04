@@ -1,6 +1,5 @@
 ---
-title: "Ordinal Regression | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Ordinal Regression - Azure"
 description: Learn how to use the Ordinal Regression module to create a regression model that can be used to predict ranked values. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"

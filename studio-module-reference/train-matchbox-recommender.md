@@ -1,6 +1,5 @@
 ---
-title: "Train Matchbox Recommender | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Train Matchbox Recommender - Azure"
 description: Learn how to use the Train Matchbox Recommender module to train a recommendation model. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"

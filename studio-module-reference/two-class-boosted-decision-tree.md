@@ -1,6 +1,5 @@
 ---
-title: "Two-Class Boosted Decision Tree | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Two-Class Boosted Decision Tree - Azure"
 description: Learn how to use the Two-Class Boosted Decision Tree module to create a machine learning model that is based on the boosted decision trees algorithm. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"

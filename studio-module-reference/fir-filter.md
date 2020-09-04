@@ -1,6 +1,5 @@
 ---
-title: "FIR Filter | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): FIR Filter - Azure"
 description: Learn how to use the FIR Filter module to define a kind of filter called a *finite impulse response* (FIR) filter.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

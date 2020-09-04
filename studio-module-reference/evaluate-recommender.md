@@ -1,6 +1,5 @@
 ---
-title: "Evaluate Recommender | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Evaluate Recommender - Azure"
 description: Learn how to use the Evaluate Recommender module to measure the accuracy of predictions made by a recommendation model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

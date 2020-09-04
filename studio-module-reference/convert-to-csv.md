@@ -1,6 +1,5 @@
 ---
-title: "Convert to CSV | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Convert to CSV - Azure"
 description: Learn how to use the Convert to CSV module to convert a dataset into a CSV format that can be downloaded, exported, or shared with R or Python script modules.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

@@ -1,6 +1,5 @@
 ---
-title: "Join Data | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Join Data - Azure"
 description: Learn how to use the Join Data module to merge two datasets using a database-style *join operation*.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

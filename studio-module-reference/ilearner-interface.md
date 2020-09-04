@@ -1,6 +1,5 @@
 ---
-title: "ILearner interface | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): ILearner interface - Azure"
 description: Learn how to use the `iLearner` interface with its methods and properties to configure and interact with machine learning models.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
