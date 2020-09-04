@@ -1,6 +1,5 @@
 ---
-title: "ML Studio (classic): Supported R Packages"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Supported R Packages - Azure"
 description: This article lists the R packages included by default in Azure Machine Learning Studio (classic). 
 ms.date: 05/06/2019
 ms.service: "machine-learning"

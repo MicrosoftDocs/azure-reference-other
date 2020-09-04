@@ -1,5 +1,5 @@
 ---
-title: "ML Studio (classic): Machine Learning - Score | Microsoft Docs"
+title: "ML Studio (classic): Machine Learning - Score - Azure"
 description: This section lists the modules provided in Azure Machine Learning Studio (classic) for scoring.
 ms.date: 03/05/2020
 ms.service: "machine-learning"

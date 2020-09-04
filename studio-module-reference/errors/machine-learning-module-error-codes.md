@@ -1,6 +1,5 @@
 ---
-title: Module errors
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Module errors - Azure"
 description: Module exceptions in Azure Machine Learning Studio (classic) using error codes and messages
 ms.date: 04/10/2019
 ms.service: "machine-learning"

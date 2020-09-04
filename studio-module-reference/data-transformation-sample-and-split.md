@@ -1,7 +1,6 @@
 ---
-title: "ML Studio (classic): Data Transformation: Sample and Split | Microsoft Docs"
+title: "ML Studio (classic): Data Transformation: Sample and Split - Azure"
 description: "Learn about the modules you can use to partition or sample data."
-titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

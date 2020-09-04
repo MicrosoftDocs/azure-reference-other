@@ -1,6 +1,5 @@
 ---
-title: "ML Studio (classic): Module Data Types"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Module Data Types - Azure"
 description: Learn about the .NET data types for external data and the custom data type classes that are used for passing data between modules within an experiment.
 ms.date: 01/31/2018
 ms.service: "machine-learning"

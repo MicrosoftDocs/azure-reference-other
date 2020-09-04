@@ -1,7 +1,6 @@
 ---
-title: "ML Studio (classic): Time Series | Microsoft Docs"
+title: "ML Studio (classic): Time Series - Azure"
 description: This article describes the modules in Azure Machine Learning Studio (classic) that are specifically designed for working with time series data.
-titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
