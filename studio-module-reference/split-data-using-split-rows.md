@@ -1,6 +1,5 @@
 ---
-title: "Split Data using Split Rows | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Split Data using Split Rows - Azure"
 description: Learn how to divide into training and testing datasets using a numerical expression with the the Split Rows option in the Split Data module.
 ms.date: 03/05/2020
 ms.service: "machine-learning"

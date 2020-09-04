@@ -1,6 +1,5 @@
 ---
-title: "Apply Filter | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Apply Filter - Azure"
 description: Learn how to use the Apply Filter module to transform a column of values by applying a previously defined filter.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

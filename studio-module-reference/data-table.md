@@ -1,6 +1,5 @@
 ---
-title: "Data Table | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Data Table - Azure"
 description: Learn about the DataTable, which consists of a collection of columns with associated metadata. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"

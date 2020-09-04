@@ -1,7 +1,6 @@
 ---
-title: "Statistical Functions | Microsoft Docs"
+title: "ML Studio (classic): Statistical Functions - Azure"
 description: This article describes the modules in Azure Machine Learning Studio (classic) that support mathematical and statistical operations critical for machine learning.
-titleSuffix: ML Studio (classic) - Azure
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"

@@ -1,6 +1,5 @@
 ---
-title: "Execute Python Script | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Execute Python Script - Azure"
 description: Learn how to use the Execute Python Script module to run Python code.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

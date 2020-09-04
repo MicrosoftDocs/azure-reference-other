@@ -1,6 +1,5 @@
 ---
-title: "Merge Count Transform | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Merge Count Transform - Azure"
 description: Learn how to use the Merge Count Transform module to combine two sets of count-based features.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

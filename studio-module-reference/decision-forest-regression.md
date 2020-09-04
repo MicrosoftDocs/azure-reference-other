@@ -1,6 +1,5 @@
 ---
-title: "Decision Forest Regression | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Decision Forest Regression - Azure"
 description: Learn how to use the Decision Forest Regression module to create a regression model based on an ensemble of decision trees.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

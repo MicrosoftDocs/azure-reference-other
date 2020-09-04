@@ -1,6 +1,5 @@
 ---
-title: "Feature Hashing | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Feature Hashing - Azure"
 description: Learn how to use the Feature Hashing module to transform a stream of English text into a set of features represented as integers.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

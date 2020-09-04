@@ -1,6 +1,5 @@
 ---
-title: "Apply SQL Transformation | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Apply SQL Transformation - Azure"
 description: Learn how to use the Apply SQL Transformation module to specify a SQL query on an input dataset or datasets. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"

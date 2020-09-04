@@ -1,6 +1,5 @@
 ---
-title: "Moving Average Filter | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Moving Average Filter - Azure"
 description: Learn how to use the Moving Average Filter module to calculate a series of one-sided or two-sided averages over a dataset, using a window length that you specify.  
 ms.date: 05/06/2019
 ms.service: "machine-learning"

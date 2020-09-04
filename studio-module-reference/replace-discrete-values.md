@@ -1,6 +1,5 @@
 ---
-title: "Replace Discrete Values | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Replace Discrete Values - Azure"
 description: Learn how to use the Replace Discrete Values module to generate a probability score to represent a discrete value.
 ms.custom: "formulas"
 ms.date: 05/06/2019

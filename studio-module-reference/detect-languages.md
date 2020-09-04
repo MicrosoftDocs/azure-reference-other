@@ -1,6 +1,5 @@
 ---
-title: "Detect Languages | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Detect Languages - Azure"
 description: Learn how to use the Detect Languages module to analyze text input and identify the language associated with each record in the input.
 ms.date: 07/03/2019
 ms.service: "machine-learning"

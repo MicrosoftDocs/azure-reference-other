@@ -1,6 +1,5 @@
 ---
-title: "Clip Values | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Clip Values - Azure"
 description: Learn how to use the Clip Values module to identify and optionally replace data values that are above or below a specified threshold.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

@@ -1,6 +1,5 @@
 ---
-title: "Train Clustering Model | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Train Clustering Model - Azure"
 description: Learn how to use the Train Clustering Model module to train a clustering model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
