@@ -17,7 +17,7 @@ The resource log for each Azure service has a unique set of columns. The AzureDi
 
 Azure services that use resource-specific mode store data in a table specific to that service and do not use the AzureDiagnostics table. See [Azure resource logs](https://docs.microsoft.com/azure/azure-monitor/platform/resource-logs#send-to-log-analytics-workspace) for details.
 
-
+TESTING
 
 ## Categories
 
