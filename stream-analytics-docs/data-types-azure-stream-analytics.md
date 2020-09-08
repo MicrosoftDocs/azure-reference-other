@@ -59,6 +59,9 @@ There are three functions in the streaming SQL language that are useful for obse
 | **bit** ([compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above) | string "true", "false", or "null" is converted to integer value 1, 0, or null correspondingly | converted to string "true" or "false" | Boolean: "false" is converted to 0, "true" is converted to 1 | Boolean: boolean value | Boolean: false is converted to 0, true is converted to 1 | boolean |
 | **record**  | N/A  | Not supported, "Record" string is outputted  | JSON object  | JSON object  | Avro record type  | Avro record type  |
 | **array**  | N/A  | Not supported,  "Array" string is outputted  | JSON object  | JSON object  | Avro record type  | Avro record type  |
+
+> [!NOTE]
+> No data type conversion is needed for Parquet.
  
 ## Type mapping when writing to structured data stores:
 | Data type | SQL | Power BI | Document DB |
