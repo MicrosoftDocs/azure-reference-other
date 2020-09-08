@@ -1,6 +1,5 @@
 ---
-title: "Cross-Validate Model | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Cross-Validate Model - Azure"
 description: Learn how to use the Cross-Validate Model module to assess the variability of a dataset and the reliability of a model trained using that data.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

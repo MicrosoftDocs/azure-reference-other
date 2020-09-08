@@ -1,6 +1,5 @@
 ---
-title: "Convert to ARFF | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Convert to ARFF - Azure"
 description: Learn how to use the Convert to ARFF module to convert datasets and results to the attribute-relation file format used by the Weka toolset.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

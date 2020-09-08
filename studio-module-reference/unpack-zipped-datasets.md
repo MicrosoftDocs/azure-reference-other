@@ -1,6 +1,5 @@
 ---
-title: "Unpack Zipped Datasets | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Unpack Zipped Datasets - Azure"
 description: Learn how to use the Unpack Zipped Datasets module to upload data and script files in compressed format, then unzip them for use in an experiment.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

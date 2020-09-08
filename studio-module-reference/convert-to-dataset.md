@@ -1,6 +1,5 @@
 ---
-title: "Convert to Dataset | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Convert to Dataset - Azure"
 description: Learn how to use the Convert to Dataset module to convert any data that you might need for an experiment to the internal format used by Studio (classic).
 ms.date: 05/06/2019
 ms.service: "machine-learning"

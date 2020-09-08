@@ -1,6 +1,5 @@
 ---
-title: "Train Anomaly Detection Model | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Train Anomaly Detection Model - Azure"
 description: Learn how to use the Train Anomaly Detection Model module to create a trained anomaly detection model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

@@ -1,6 +1,5 @@
 ---
-title: "Export to Azure Blob Storage | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Export to Azure Blob Storage - Azure"
 description: Learn how to use the the Export Data module to export data from a machine learning experiment to Azure blob storage.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

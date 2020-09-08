@@ -1,6 +1,5 @@
 ---
-title: "Convert to TSV | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Convert to TSV - Azure"
 description: Learn how to use the Convert to TSV module to convert any dataset to a flat file in tab-separated format. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"

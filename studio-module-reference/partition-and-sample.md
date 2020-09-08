@@ -1,6 +1,5 @@
 ---
-title: "Partition and Sample | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Partition and Sample - Azure"
 description: Learn how to use the Partition and Sample module to perform sampling on a dataset or to create partitions from your dataset.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

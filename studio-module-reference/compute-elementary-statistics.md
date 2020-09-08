@@ -1,6 +1,5 @@
 ---
-title: "Compute Elementary Statistics | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Compute Elementary Statistics - Azure"
 description: Learn how to use the Compute Elementary Statistics module to generate key statistics such as mean, standard deviation, and the range of values for each of the selected columns.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

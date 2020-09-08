@@ -1,6 +1,5 @@
 ---
-title: "Build Counting Transform | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Build Counting Transform - Azure"
 description: Learn how to use the Build Counting Transform module to build a *count table* as well as a set of *count-based features* that can be used in a predictive model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

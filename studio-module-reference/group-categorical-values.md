@@ -1,6 +1,5 @@
 ---
-title: "Group Categorical Values | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Group Categorical Values - Azure"
 description: Learn how to use the Group Categorical Values module to create an in-place lookup table.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

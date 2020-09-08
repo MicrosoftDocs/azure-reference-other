@@ -1,6 +1,5 @@
 ---
-title: "PCA-Based Anomaly Detection | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): PCA-Based Anomaly Detection - Azure"
 description: Learn how to use the PCA-Based Anomaly Detection module to create an anomaly detection model based on Principal Component Analysis (PCA).
 ms.date: 05/06/2019
 ms.service: "machine-learning"

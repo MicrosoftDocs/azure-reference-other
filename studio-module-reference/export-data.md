@@ -1,6 +1,5 @@
 ---
-title: "Export Data | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Export Data - Azure"
 description: Learn how to use the Export Data module to save results, intermediate data, and working data from your experiments into cloud storage destinations.
 ms.date: 05/06/2019
 ms.service: "machine-learning"

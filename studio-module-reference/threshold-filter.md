@@ -1,6 +1,5 @@
 ---
-title: "Threshold Filter | Microsoft Docs"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Threshold Filter - Azure"
 description: Learn how to use the Threshold Filter module to define a filter that restricts numeric values to a specified range.
 ms.custom: "formulas"
 ms.date: 05/06/2019

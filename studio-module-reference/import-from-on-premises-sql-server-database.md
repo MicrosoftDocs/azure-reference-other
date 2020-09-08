@@ -1,6 +1,5 @@
 ---
-title: "Import from On-Prem SQL Server Database"
-titleSuffix: ML Studio (classic) - Azure
+title: "ML Studio (classic): Import from On-Prem SQL Server Database - Azure"
 description: Learn how to use the Import Data module to import data from an on-premises SQL Server database into a machine learning experiment.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
