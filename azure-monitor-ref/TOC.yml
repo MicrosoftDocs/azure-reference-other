@@ -44,6 +44,14 @@
     href: tables/adtmodelsoperation.md
   - name: ADTQueryOperation
     href: tables/adtqueryoperation.md
+  - name: ADXCommand
+    href: tables/adxcommand.md
+  - name: ADXQuery
+    href: tables/adxquery.md
+  - name: ADXTableDetails
+    href: tables/adxtabledetails.md
+  - name: ADXTableUsageStatistics
+    href: tables/adxtableusagestatistics.md
   - name: AegDeliveryFailureLogs
     href: tables/aegdeliveryfailurelogs.md
   - name: AegPublishFailureLogs
@@ -74,6 +82,10 @@
     href: tables/appplatformsystemlogs.md
   - name: AppRequests
     href: tables/apprequests.md
+  - name: AppServiceAntivirusScanAuditLogs
+    href: tables/appserviceantivirusscanauditlogs.md
+  - name: AppServiceAntivirusScanLogs
+    href: tables/appserviceantivirusscanlogs.md
   - name: AppServiceAppLogs
     href: tables/appserviceapplogs.md
   - name: AppServiceAuditLogs
@@ -86,6 +98,8 @@
     href: tables/appservicefileauditlogs.md
   - name: AppServiceHTTPLogs
     href: tables/appservicehttplogs.md
+  - name: AppServiceIPSecAuditLogs
+    href: tables/appserviceipsecauditlogs.md
   - name: AppServicePlatformLogs
     href: tables/appserviceplatformlogs.md
   - name: AppSystemEvents
@@ -106,8 +120,6 @@
     href: tables/behavioranalytics.md
   - name: BlockchainApplicationLog
     href: tables/blockchainapplicationlog.md
-  - name: BoundPort
-    href: tables/boundport.md
   - name: ComputerGroup
     href: tables/computergroup.md
   - name: ConfigurationChange
@@ -126,18 +138,26 @@
     href: tables/containerregistryloginevents.md
   - name: ContainerServiceLog
     href: tables/containerservicelog.md
-  - name: DeviceAppCrash
-    href: tables/deviceappcrash.md
-  - name: DeviceAppLaunch
-    href: tables/deviceapplaunch.md
-  - name: DeviceSkypeHeartbeat
-    href: tables/deviceskypeheartbeat.md
-  - name: DeviceSkypeSignIn
-    href: tables/deviceskypesignin.md
+  - name: DeviceEvents
+    href: tables/deviceevents.md
+  - name: DeviceFileEvents
+    href: tables/devicefileevents.md
+  - name: DeviceImageLoadEvents
+    href: tables/deviceimageloadevents.md
+  - name: DeviceInfo
+    href: tables/deviceinfo.md
+  - name: DeviceLogonEvents
+    href: tables/devicelogonevents.md
+  - name: DeviceNetworkEvents
+    href: tables/devicenetworkevents.md
+  - name: DeviceNetworkInfo
+    href: tables/devicenetworkinfo.md
+  - name: DeviceProcessEvents
+    href: tables/deviceprocessevents.md
+  - name: DeviceRegistryEvents
+    href: tables/deviceregistryevents.md
   - name: DHCPActivity
     href: tables/dhcpactivity.md
-  - name: DHOSCrashData
-    href: tables/dhoscrashdata.md
   - name: DnsInventory
     href: tables/dnsinventory.md
   - name: Dynamics365Activity
@@ -152,18 +172,74 @@
     href: tables/failedingestion.md
   - name: FunctionAppLogs
     href: tables/functionapplogs.md
+  - name: HDInsightAmbariClusterAlerts
+    href: tables/hdinsightambariclusteralerts.md
+  - name: HDInsightAmbariSystemMetrics
+    href: tables/hdinsightambarisystemmetrics.md
+  - name: HDInsightGatewayAuditLogs
+    href: tables/hdinsightgatewayauditlogs.md
+  - name: HDInsightHadoopAndYarnLogs
+    href: tables/hdinsighthadoopandyarnlogs.md
+  - name: HDInsightHadoopAndYarnMetrics
+    href: tables/hdinsighthadoopandyarnmetrics.md
+  - name: HDInsightHBaseLogs
+    href: tables/hdinsighthbaselogs.md
+  - name: HDInsightHBaseMetrics
+    href: tables/hdinsighthbasemetrics.md
+  - name: HDInsightHiveAndLLAPLogs
+    href: tables/hdinsighthiveandllaplogs.md
+  - name: HDInsightHiveAndLLAPMetrics
+    href: tables/hdinsighthiveandllapmetrics.md
+  - name: HDInsightJupyterNotebookEvents
+    href: tables/hdinsightjupyternotebookevents.md
+  - name: HDInsightKafkaLogs
+    href: tables/hdinsightkafkalogs.md
+  - name: HDInsightKafkaMetrics
+    href: tables/hdinsightkafkametrics.md
+  - name: HDInsightOozieLogs
+    href: tables/hdinsightoozielogs.md
+  - name: HDInsightRangerAuditLogs
+    href: tables/hdinsightrangerauditlogs.md
+  - name: HDInsightSecurityLogs
+    href: tables/hdinsightsecuritylogs.md
+  - name: HDInsightSparkApplicationEvents
+    href: tables/hdinsightsparkapplicationevents.md
+  - name: HDInsightSparkBlockManagerEvents
+    href: tables/hdinsightsparkblockmanagerevents.md
+  - name: HDInsightSparkEnvironmentEvents
+    href: tables/hdinsightsparkenvironmentevents.md
+  - name: HDInsightSparkExecutorEvents
+    href: tables/hdinsightsparkexecutorevents.md
+  - name: HDInsightSparkExtraEvents
+    href: tables/hdinsightsparkextraevents.md
+  - name: HDInsightSparkJobEvents
+    href: tables/hdinsightsparkjobevents.md
+  - name: HDInsightSparkLogs
+    href: tables/hdinsightsparklogs.md
+  - name: HDInsightSparkSQLExecutionEvents
+    href: tables/hdinsightsparksqlexecutionevents.md
+  - name: HDInsightSparkStageEvents
+    href: tables/hdinsightsparkstageevents.md
+  - name: HDInsightSparkStageTaskAccumulables
+    href: tables/hdinsightsparkstagetaskaccumulables.md
+  - name: HDInsightSparkTaskEvents
+    href: tables/hdinsightsparktaskevents.md
+  - name: HDInsightStormLogs
+    href: tables/hdinsightstormlogs.md
+  - name: HDInsightStormMetrics
+    href: tables/hdinsightstormmetrics.md
+  - name: HDInsightStormTopologyMetrics
+    href: tables/hdinsightstormtopologymetrics.md
+  - name: HealthStateChangeEvent
+    href: tables/healthstatechangeevent.md
   - name: Heartbeat
     href: tables/heartbeat.md
   - name: HuntingBookmark
     href: tables/huntingbookmark.md
-  - name: InboundConnection
-    href: tables/inboundconnection.md
   - name: InsightsMetrics
     href: tables/insightsmetrics.md
   - name: IntuneDeviceComplianceOrg
     href: tables/intunedevicecomplianceorg.md
-  - name: IntuneOperationalLogs
-    href: tables/intuneoperationallogs.md
   - name: IoTHubDistributedTracing
     href: tables/iothubdistributedtracing.md
   - name: KubeEvents
@@ -178,22 +254,8 @@
     href: tables/kubepodinventory.md
   - name: KubeServices
     href: tables/kubeservices.md
-  - name: MAApplicationInstance
-    href: tables/maapplicationinstance.md
-  - name: MADeviceNotEnrolled
-    href: tables/madevicenotenrolled.md
-  - name: MAOfficeAddinInstance
-    href: tables/maofficeaddininstance.md
-  - name: MAOfficeAppInstance
-    href: tables/maofficeappinstance.md
-  - name: MAOfficeMacroIssueInstanceReadiness
-    href: tables/maofficemacroissueinstancereadiness.md
-  - name: MAOfficeMacroSummary
-    href: tables/maofficemacrosummary.md
-  - name: MAOfficeSuiteInstance
-    href: tables/maofficesuiteinstance.md
-  - name: MAWindowsSysReqInstanceReadiness
-    href: tables/mawindowssysreqinstancereadiness.md
+  - name: LAQueryLogs
+    href: tables/laquerylogs.md
   - name: MicrosoftAzureBastionAuditLogs
     href: tables/microsoftazurebastionauditlogs.md
   - name: MicrosoftDataShareReceivedSnapshotLog
@@ -208,14 +270,24 @@
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
   - name: MicrosoftHealthcareApisAuditLogs
     href: tables/microsofthealthcareapisauditlogs.md
+  - name: NWConnectionMonitorDestinationListenerResult
+    href: tables/nwconnectionmonitordestinationlistenerresult.md
+  - name: NWConnectionMonitorDNSResult
+    href: tables/nwconnectionmonitordnsresult.md
+  - name: NWConnectionMonitorPathResult
+    href: tables/nwconnectionmonitorpathresult.md
+  - name: NWConnectionMonitorTestResult
+    href: tables/nwconnectionmonitortestresult.md
   - name: OfficeActivity
     href: tables/officeactivity.md
   - name: Operation
     href: tables/operation.md
-  - name: OutboundConnection
-    href: tables/outboundconnection.md
   - name: Perf
     href: tables/perf.md
+  - name: PowerBIDatasetsTenantPreview
+    href: tables/powerbidatasetstenantpreview.md
+  - name: PowerBIDatasetsWorkspacePreview
+    href: tables/powerbidatasetsworkspacepreview.md
   - name: SecurityIncident
     href: tables/securityincident.md
   - name: SecurityNestedRecommendation
@@ -238,10 +310,6 @@
     href: tables/threatintelligenceindicator.md
   - name: TSIIngress
     href: tables/tsiingress.md
-  - name: UAComputerRank
-    href: tables/uacomputerrank.md
-  - name: UASysReqIssue
-    href: tables/uasysreqissue.md
   - name: Usage
     href: tables/usage.md
   - name: UserAccessAnalytics
@@ -258,6 +326,8 @@
     href: tables/vmprocess.md
   - name: W3CIISLog
     href: tables/w3ciislog.md
+  - name: Watchlist
+    href: tables/watchlist.md
   - name: WindowsEvent
     href: tables/windowsevent.md
   - name: WireData
