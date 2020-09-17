@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # WindowsEvent
@@ -18,13 +18,13 @@ ms.date: 7/30/2020
 - Security
 ## Solutions
 
-- CustomizedWindowsEventsFiltering
-- InternalWindowsEvent
-- WEFInternalUat
-- WEF_10x
 - WEF_10xDSRE
 - WinLog
 - WindowsEventForwarding
+- WEF_10x
+- CustomizedWindowsEventsFiltering
+- InternalWindowsEvent
+- WEFInternalUat
 
 
 
