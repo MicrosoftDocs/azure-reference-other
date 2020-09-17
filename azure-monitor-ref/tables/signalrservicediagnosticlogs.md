@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # SignalRServiceDiagnosticLogs
@@ -31,11 +31,14 @@ ms.date: 7/30/2020
 |Column|Type|Description|
 |---|---|---|
 |CallerIpAddress|string|Caller Ip address|
+|Collection|string|Log collection|
 |ConnectionId|string|Connection ID|
 |ConnectionType|string|Connection type|
 |Level|string|Log level|
 |Location|string|Location of Azure SignalR Service|
 |Message|string|Log message|
+|MessageTracingId|int|Message tracing ID|
+|MessageType|string|Message type|
 |OperationName|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
