@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # AADDomainServicesPrivilegeUse
@@ -15,8 +15,8 @@ ms.date: 7/30/2020
 
 ## Categories
 
-- Azure Resources
 - Security
+- Azure Resources
 ## Solutions
 
 - LogManagement
@@ -38,8 +38,8 @@ ms.date: 7/30/2020
 |ProcessId|string||
 |ProcessName|string||
 |RecordId|string||
-|ResourceId|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResourceId|string||
 |ResourceManager|string||
 |ResultDescription|string||
 |ResultType|string||
