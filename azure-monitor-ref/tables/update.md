@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # Update
@@ -15,18 +15,18 @@ ms.date: 7/30/2020
 
 ## Categories
 
-- IT & Management Tools
 - Security
+- IT & Management Tools
 ## Solutions
 
-- Security and Audit
-- SecurityCenter
 - SecurityCenterFree
 - Update Management
+- Security and Audit
+- SecurityCenter
 ## Resource types
 
-- Virtual machines
 - Virtual Machine Scale Sets
+- Virtual machines
 
 
 
