@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # InsightsMetrics
@@ -15,20 +15,21 @@ ms.date: 7/30/2020
 
 ## Categories
 
-- Virtual Machines
-- Containers
 - Azure Resources
+- Containers
+- Virtual Machines
 ## Solutions
 
-- ContainerInsights
-- InfrastructureInsights
 - Service Map
 - Azure Monitor for VMs
+- ContainerInsights
+- InfrastructureInsights
 ## Resource types
 
+- Kubernetes Services
+- IoT Hub
 - Virtual machines
 - Virtual Machine Scale Sets
-- Kubernetes Services
 
 
 
