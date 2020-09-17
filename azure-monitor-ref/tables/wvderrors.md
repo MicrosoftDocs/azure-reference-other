@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # WVDErrors
@@ -21,9 +21,9 @@ ms.date: 7/30/2020
 - LogManagement
 ## Resource types
 
-- Desktop Virtualization Application Groups
-- Desktop Virtualization Host Pools
 - Desktop Virtualization workspaces
+- Desktop Virtualization Host Pools
+- Desktop Virtualization Application Groups
 
 
 
