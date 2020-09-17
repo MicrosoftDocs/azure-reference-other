@@ -1,0 +1,38 @@
+---
+title: Azure Monitor Logs reference - AppServiceAntivirusScanAuditLogs
+description: Reference for AppServiceAntivirusScanAuditLogs table in Azure Monitor Logs.
+ms.topic: reference
+ms.service: azure-monitor
+ms.subservice: logs
+ms.author: bwren
+author: bwren
+ms.date: 9/17/2020
+---
+
+# AppServiceAntivirusScanAuditLogs
+
+ Report on any discovered virus or infected files that have been uploaded to their site.
+
+## Solutions
+
+- LogManagement
+
+
+
+
+## Columns
+
+|Column|Type|Description|
+|---|---|---|
+|Category|string|Log category name|
+|ErrorMessage|string|Error Message|
+|ListOfInfectedFiles|string|List of each virus file path|
+|NumberOfInfectedFiles|int|Total number of virus files|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ScanStatus|string|Status of the scan|
+|SourceSystem|string||
+|TenantId|string||
+|TimeGenerated|datetime||
+|TimeStamp|datetime|Time when event is generated|
+|TotalFilesScanned|int|Total number of files scanned|
+|Type|string|The name of the table|
