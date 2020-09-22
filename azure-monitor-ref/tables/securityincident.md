@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # SecurityIncident
@@ -15,7 +15,7 @@ ms.date: 7/30/2020
 
 ## Solutions
 
-- SecurityInsights
+- Azure Sentinel
 
 
 
@@ -34,13 +34,13 @@ ms.date: 7/30/2020
 |Comments|dynamic|The comments added to the incident|
 |CreatedTime|datetime|Timestamp (UTC) of when the incident was created|
 |Description|string|The description of the incident|
-|FirstActivityTime|datetime|Timestamp (UTC) of when the first activity in the incident occurred|
+|FirstActivityTime|datetime|Timestamp (UTC) of when the first activity in the incident occured|
 |FirstModifiedTime|datetime|Timestamp (UTC) of when the incident was first modified|
 |IncidentName|string|The resource name of the incident|
 |IncidentNumber|int|The sequential number of the incident|
 |IncidentUrl|string|The URI to open the incident in Azure Sentinel portal|
 |Labels|dynamic|The labels added to the incident|
-|LastActivityTime|datetime|Timestamp (UTC) of when the last activity in the incident occurred|
+|LastActivityTime|datetime|Timestamp (UTC) of when the last activity in the incident occured|
 |LastModifiedTime|datetime|Timestamp (UTC) of when the incident was last modified|
 |ModifiedBy|string|The source of the change in the incident|
 |Owner|dynamic|The user the incident is assigned to|

@@ -6,18 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # SecurityNestedRecommendation
 
- Nested recommendations can be thought of as 'sub' recommendations grouped into a 'parent' recommendation. To view nested recommendations, open the 'parent' from the recommendations page. For example, if a vulnerability scan of your SQL databases returns 100 findings, each finding will be available as a nested recommendation within the parent recommendation 'Vulnerabilities on your SQL databases should be remediated'.
+ Nested recommendations can be thought of as 'sub' recommendations grouped into a 'parent' recommendation. To view nested recommendations, open the 'parent' from the recommendations page in Security Center. For example, if a vulnerability scan of your SQL databases returns 100 findings, each finding will be available as a nested recommendation within the parent recommendation 'Vulnerabilities on your SQL databases should be remediated'.
 
 ## Solutions
 
-- Security and Audit
-- SecurityCenter
 - SecurityCenterFree
+- SecurityCenter
+- Security and Audit
 
 
 
@@ -35,12 +35,11 @@ ms.date: 7/30/2020
 |Impact|string|Description of the impact of this sub-assessment|
 |NestedRecommendationId|string|Id of the nested-recommendation|
 |ParentRecommendationId|string|Id of the parent recommendation|
-|RecommendationLink|string|Recommendation link URL|
 |RecommendationName|string|Display name of the sub-assessment|
 |RecommendationSeverity|string|The sub-assessment severity level|
 |RecommendationState|string|The sub-assessment state|
 |RecommendationSubscriptionId|string|Recommendation's subscription Id|
-|RemidiationDescription|string|Information on how to remediate this sub-assessment|
+|RemediationDescription|string|Information on how to remediate this sub-assessment|
 |ResourceDetails|dynamic|Details of the resource that was assessed|
 |ResourceGroup|string|Resource group name|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|

@@ -6,16 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # AADNonInteractiveUserSignInLogs
 
  Non-interactive Azure Active Directory sign-in logs from user.
 
+## Categories
+
+- Security
+- Audit
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Active Directory Sign-In Logs
 
 
 

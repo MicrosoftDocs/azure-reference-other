@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # WireData
@@ -15,16 +15,16 @@ ms.date: 7/30/2020
 
 ## Categories
 
-- Virtual Machines
 - Security
+- Virtual Machines
 ## Solutions
 
-- WireData
 - Wire Data 2.0
+- WireData
 ## Resource types
 
-- Virtual machines
 - Virtual Machine Scale Sets
+- Virtual machines
 
 
 

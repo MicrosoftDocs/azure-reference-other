@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # WindowsFirewall
@@ -18,12 +18,12 @@ ms.date: 7/30/2020
 - Security
 ## Solutions
 
-- Security and Audit
 - WindowsFirewall
+- Security and Audit
 ## Resource types
 
-- Virtual machines
 - Virtual Machine Scale Sets
+- Virtual machines
 
 
 

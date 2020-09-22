@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # LinuxAuditLog
@@ -18,8 +18,8 @@ ms.date: 7/30/2020
 - Security
 ## Solutions
 
+- Azure Sentinel
 - Security and Audit
-- SecurityInsights
 
 
 
@@ -76,8 +76,8 @@ ms.date: 7/30/2020
 |RawRecord|string||
 |RecordType|string||
 |res|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |result|string||
 |SerialNumber|string||
 |ses|long||

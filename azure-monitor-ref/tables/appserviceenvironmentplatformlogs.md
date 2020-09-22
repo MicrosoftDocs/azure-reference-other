@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # AppServiceEnvironmentPlatformLogs
@@ -26,8 +26,8 @@ ms.date: 7/30/2020
 |---|---|---|
 |Category|string||
 |OperationName|string||
-|ResourceId|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResourceId|string||
 |ResultDescription|string||
 |ResultType|string||
 |SourceSystem|string||

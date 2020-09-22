@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # SCOMAssessmentRecommendation
@@ -18,8 +18,8 @@ ms.date: 7/30/2020
 - Workloads
 ## Solutions
 
-- System Center Operations Manager Health Check (Preview)
 - SCOMAssessmentPlus
+- System Center Operations Manager Health Check (Preview)
 
 
 

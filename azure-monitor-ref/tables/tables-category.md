@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -30,7 +30,12 @@ ms.date: 7/30/2020
 
 ## Audit
 
+- [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
+- [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
+- [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
 - [AzureActivity](azureactivity.md)
+- [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
+- [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 
 ## Azure Monitor
@@ -80,6 +85,7 @@ ms.date: 7/30/2020
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 - [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
@@ -99,12 +105,42 @@ ms.date: 7/30/2020
 - [DatabricksWorkspace](databricksworkspace.md)
 - [FailedIngestion](failedingestion.md)
 - [FunctionAppLogs](functionapplogs.md)
+- [HDInsightAmbariClusterAlerts](hdinsightambariclusteralerts.md)
+- [HDInsightAmbariSystemMetrics](hdinsightambarisystemmetrics.md)
+- [HDInsightHadoopAndYarnLogs](hdinsighthadoopandyarnlogs.md)
+- [HDInsightHadoopAndYarnMetrics](hdinsighthadoopandyarnmetrics.md)
+- [HDInsightHBaseLogs](hdinsighthbaselogs.md)
+- [HDInsightHBaseMetrics](hdinsighthbasemetrics.md)
+- [HDInsightHiveAndLLAPLogs](hdinsighthiveandllaplogs.md)
+- [HDInsightHiveAndLLAPMetrics](hdinsighthiveandllapmetrics.md)
+- [HDInsightJupyterNotebookEvents](hdinsightjupyternotebookevents.md)
+- [HDInsightKafkaLogs](hdinsightkafkalogs.md)
+- [HDInsightKafkaMetrics](hdinsightkafkametrics.md)
+- [HDInsightOozieLogs](hdinsightoozielogs.md)
+- [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
+- [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
+- [HDInsightSparkApplicationEvents](hdinsightsparkapplicationevents.md)
+- [HDInsightSparkBlockManagerEvents](hdinsightsparkblockmanagerevents.md)
+- [HDInsightSparkEnvironmentEvents](hdinsightsparkenvironmentevents.md)
+- [HDInsightSparkExecutorEvents](hdinsightsparkexecutorevents.md)
+- [HDInsightSparkExtraEvents](hdinsightsparkextraevents.md)
+- [HDInsightSparkJobEvents](hdinsightsparkjobevents.md)
+- [HDInsightSparkLogs](hdinsightsparklogs.md)
+- [HDInsightSparkSQLExecutionEvents](hdinsightsparksqlexecutionevents.md)
+- [HDInsightSparkStageEvents](hdinsightsparkstageevents.md)
+- [HDInsightSparkStageTaskAccumulables](hdinsightsparkstagetaskaccumulables.md)
+- [HDInsightSparkTaskEvents](hdinsightsparktaskevents.md)
+- [HDInsightStormLogs](hdinsightstormlogs.md)
+- [HDInsightStormMetrics](hdinsightstormmetrics.md)
+- [HDInsightStormTopologyMetrics](hdinsightstormtopologymetrics.md)
 - [InsightsMetrics](insightsmetrics.md)
 - [IoTHubDistributedTracing](iothubdistributedtracing.md)
 - [MicrosoftAzureBastionAuditLogs](microsoftazurebastionauditlogs.md)
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
+- [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
 - [ServiceFabricOperationalEvent](servicefabricoperationalevent.md)
 - [ServiceFabricReliableActorEvent](servicefabricreliableactorevent.md)
 - [ServiceFabricReliableServiceEvent](servicefabricreliableserviceevent.md)
@@ -241,9 +277,14 @@ ms.date: 7/30/2020
 
 ## Network
 
+- [AzureDiagnostics](azurediagnostics.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
 - [NetworkMonitoring](networkmonitoring.md)
+- [NWConnectionMonitorDestinationListenerResult](nwconnectionmonitordestinationlistenerresult.md)
+- [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
+- [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
+- [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
 
 ## Security
 
@@ -254,12 +295,18 @@ ms.date: 7/30/2020
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [AADDomainServicesSystemSecurity](aaddomainservicessystemsecurity.md)
+- [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
+- [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
+- [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [BehaviorAnalytics](behavioranalytics.md)
 - [CommonSecurityLog](commonsecuritylog.md)
+- [DeviceFileEvents](devicefileevents.md)
 - [DHCPActivity](dhcpactivity.md)
+- [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
 - [HuntingBookmark](huntingbookmark.md)
 - [LinuxAuditLog](linuxauditlog.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
@@ -279,6 +326,7 @@ ms.date: 7/30/2020
 - [Update](update.md)
 - [UserAccessAnalytics](useraccessanalytics.md)
 - [UserPeerAnalytics](userpeeranalytics.md)
+- [Watchlist](watchlist.md)
 - [WindowsEvent](windowsevent.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
@@ -333,6 +381,8 @@ ms.date: 7/30/2020
 - [DeviceSleepState](devicesleepstate.md)
 - [ExchangeAssessmentRecommendation](exchangeassessmentrecommendation.md)
 - [ExchangeOnlineAssessmentRecommendation](exchangeonlineassessmentrecommendation.md)
+- [MicrosoftDynamicsTelemetryPerformanceLogs](microsoftdynamicstelemetryperformancelogs.md)
+- [MicrosoftDynamicsTelemetrySystemMetricsLogs](microsoftdynamicstelemetrysystemmetricslogs.md)
 - [SCCMAssessmentRecommendation](sccmassessmentrecommendation.md)
 - [SCOMAssessmentRecommendation](scomassessmentrecommendation.md)
 - [SfBAssessmentRecommendation](sfbassessmentrecommendation.md)

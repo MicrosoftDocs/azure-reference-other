@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # AzureActivity
@@ -15,79 +15,87 @@ ms.date: 7/30/2020
 
 ## Categories
 
-- Azure Resources
-- Audit
 - Security
+- Audit
+- Azure Resources
 ## Solutions
 
 - LogManagement
 ## Resource types
 
-- HDInsight Clusters
-- Automation account
-- Data factories
-- Recovery Services Vaults
-- Data Lake Storage Gen1
-- Data Lake Analytics
-- Power BI Embedded
-- Data Share
-- SQL Managed Instances
-- SQL Servers
 - SQL Databases
 - Azure Database for MySQL Servers
+- SQL Managed Instances
+- SQL Servers
 - Azure Database for PostgreSQL Servers
 - Azure Database for MariaDB Servers
 - Device Provisioning Services
-- Event Hubs
-- Application Gateways
-- Firewalls
-- ExpressRoute Circuits
-- Front Doors
-- Load Balancers
-- Network Interfaces
-- Network Security Groups
-- Public IP Addresses
-- Traffic Manager Profiles
-- Virtual network Gateways
+- Azure Database for PostgreSQL Servers V2
+- Azure Database for PostgreSQL Flexible Servers
+- Automation account
+- Data factories
+- Logic Apps
+- API Management services
+- Recovery Services Vaults
+- Power BI Embedded
+- Data Share
+- Data Lake Storage Gen1
+- Data Lake Analytics
+- Virtual Private Network Gateways
 - Virtual Networks
+- Traffic Manager Profiles
+- Virtual Network Gateways
 - Search Services
+- Azure API for FHIR
+- Service Bus
 - Stream Analytics jobs
 - Bastions
-- API Management services
-- Azure API for FHIR
-- Logic Apps
-- Machine Learning
-- Desktop Virtualization Application Groups
-- Desktop Virtualization Host Pools
-- Desktop Virtualization workspaces
-- Time Series Insights Environments
-- Event Grid Topics
+- Firewalls
+- ExpressRoute Circuits
+- Event Hubs
+- Application Gateways
+- Front Doors
+- Network Security Groups
+- Public IP Addresses
+- Load Balancers
+- Network Interfaces
+- Service Fabric Clusters
 - Workload Monitor
 - Analysis Services
+- Time Series Insights Environments
+- Event Grid Topics
 - Batch Accounts
-- CDN Profiles
-- Azure Spring Cloud
 - Media Services
 - Azure Cache for Redis
-- Cognitive Services
-- Key Vaults
-- App Services
-- Storage Accounts
-- SignalR
-- Container Registries
-- Azure Data Explorer Clusters
-- Azure AD Domain Services
-- Azure Blockchain Service
-- Event Grid Domains
-- Virtual machines
+- CDN Profiles
+- Azure Spring Cloud
+- Default schema for a resource
+- Azure Subscription
+- Network Watcher - Connection Monitor
+- HDInsight Clusters
+- Azure Resource Group
+- Desktop Virtualization Host Pools
+- Desktop Virtualization workspaces
+- Application Insights
+- Desktop Virtualization Application Groups
 - Virtual Machine Scale Sets
 - Kubernetes Services
+- Event Grid Domains
+- Virtual machines
 - Azure Databricks Services
+- Azure Cosmos DB
+- Machine Learning
 - Azure Monitor autoscale settings
 - IoT Hub
-- Azure Cosmos DB
-- Service Fabric Clusters
-- Service Bus
+- App Services
+- Storage Accounts
+- Cognitive Services
+- Key Vaults
+- SignalR
+- Azure AD Domain Services
+- Azure Blockchain Service
+- Container Registries
+- Azure Data Explorer Clusters
 
 
 
@@ -121,8 +129,8 @@ ms.date: 7/30/2020
 |Properties_d|dynamic|Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column.|
 |Resource|string||
 |ResourceGroup|string|Resource group name of the impacted resource.|
-|ResourceId|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResourceId|string||
 |ResourceProvider|string||
 |ResourceProviderValue|string|Id of the resource provider for the impacted resource - e.g. Microsoft.Storage.|
 |SourceSystem|string|Azure is used always for AzureActivity|

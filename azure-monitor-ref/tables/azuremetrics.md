@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # AzureMetrics
@@ -21,68 +21,70 @@ ms.date: 7/30/2020
 - LogManagement
 ## Resource types
 
-- Desktop Virtualization Application Groups
-- Data factories
-- Data Lake Storage Gen1
-- Data Lake Analytics
-- Power BI Embedded
-- Data Share
-- SQL Managed Instances
-- SQL Servers
+- Azure Database for PostgreSQL Servers
+- Azure Database for PostgreSQL Servers V2
 - SQL Databases
 - Azure Database for MySQL Servers
-- Azure Database for PostgreSQL Servers
-- Azure Database for MariaDB Servers
 - Device Provisioning Services
 - Event Hubs
-- Application Gateways
-- Firewalls
-- ExpressRoute Circuits
-- Front Doors
-- Load Balancers
-- Network Interfaces
-- Network Security Groups
-- Public IP Addresses
-- Traffic Manager Profiles
-- Virtual network Gateways
+- Azure Database for PostgreSQL Flexible Servers
+- Azure Database for MariaDB Servers
+- Data Lake Storage Gen1
+- Data Lake Analytics
+- Automation account
+- Data factories
+- SQL Managed Instances
+- SQL Servers
+- Power BI Embedded
+- Data Share
 - Virtual Networks
 - Search Services
+- Virtual Network Gateways
+- Virtual Private Network Gateways
+- Azure API for FHIR
+- Service Bus
 - Stream Analytics jobs
 - Bastions
-- Automation account
-- API Management services
-- Logic Apps
-- Service Fabric Clusters
-- Desktop Virtualization Host Pools
-- Desktop Virtualization workspaces
-- Time Series Insights Environments
-- Event Grid Topics
-- Workload Monitor
-- Analysis Services
-- Batch Accounts
-- Azure Spring Cloud
-- Media Services
+- ExpressRoute Circuits
+- Front Doors
+- Application Gateways
+- Firewalls
+- Public IP Addresses
+- Traffic Manager Profiles
+- Network Interfaces
+- Network Security Groups
 - Azure Cache for Redis
 - Cognitive Services
+- Azure Spring Cloud
+- Media Services
+- Storage Accounts
+- SignalR
 - Key Vaults
 - App Services
-- Azure API for FHIR
-- Storage Accounts
-- Container Registries
-- Azure Data Explorer Clusters
-- Azure AD Domain Services
-- Azure Blockchain Service
-- Event Grid Domains
-- Virtual machines
-- Virtual Machine Scale Sets
-- Kubernetes Services
-- Azure Databricks Services
-- Azure Monitor autoscale settings
+- Desktop Virtualization workspaces
+- Time Series Insights Environments
+- Desktop Virtualization Application Groups
+- Desktop Virtualization Host Pools
+- Analysis Services
+- Batch Accounts
+- Event Grid Topics
+- Workload Monitor
 - IoT Hub
 - Azure Cosmos DB
+- Azure Databricks Services
+- Azure Monitor autoscale settings
+- Logic Apps
+- API Management services
 - Machine Learning
-- SignalR
-- Service Bus
+- Service Fabric Clusters
+- Azure AD Domain Services
+- Azure Blockchain Service
+- Container Registries
+- Azure Data Explorer Clusters
+- Virtual Machine Scale Sets
+- Kubernetes Services
+- Event Grid Domains
+- Virtual machines
 
 
 
@@ -114,8 +116,8 @@ ms.date: 7/30/2020
 |RemoteIPLongitude|real|Deprecated|
 |Resource|string|Resource name of the Azure resource reporting the metric.|
 |ResourceGroup|string|Resource group name of the Azure resource reporting the metric.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string|Resource ID of the Azure resource reporting the metric. Same as _ResourceId present for backward compatibility reasons. _ResourceId should be used|
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProvider|string|Resource provider of the Azure resource reporting the metric.|
 |ResultDescription|string|Deprecated|
 |ResultSignature|string|Deprecated|

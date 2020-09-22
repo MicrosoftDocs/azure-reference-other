@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # MicrosoftDynamicsTelemetryPerformanceLogs
 
  Microsoft Dynamics Telemetry Performance Logs
 
+## Categories
+
+- Workloads
 ## Solutions
 
 - LogManagement

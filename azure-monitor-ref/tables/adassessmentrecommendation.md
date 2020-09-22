@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # ADAssessmentRecommendation
@@ -18,8 +18,8 @@ ms.date: 7/30/2020
 - Workloads
 ## Solutions
 
-- Active Directory Health Check
 - ADAssessmentPlus
+- Active Directory Health Check
 ## Resource types
 
 - Virtual machines
