@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # ContainerLog
@@ -15,12 +15,12 @@ ms.date: 7/30/2020
 
 ## Categories
 
-- Containers
 - Applications
+- Containers
 ## Solutions
 
-- ContainerInsights
 - Container Monitoring Solution
+- ContainerInsights
 ## Resource types
 
 - Kubernetes Services

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -15,12 +15,14 @@ ms.date: 7/30/2020
 ## Analysis Services
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## API Management services
 
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## App Services
@@ -38,6 +40,7 @@ ms.date: 7/30/2020
 ## Application Gateways
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Application Insights
@@ -52,11 +55,19 @@ ms.date: 7/30/2020
 - [AppRequests](apprequests.md)
 - [AppSystemEvents](appsystemevents.md)
 - [AppTraces](apptraces.md)
+- [AzureActivity](azureactivity.md)
 
 ## Automation account
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Azure Active Directory Sign-In Logs
+
+- [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
+- [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
+- [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
 
 ## Azure AD Domain Services
 
@@ -86,11 +97,13 @@ ms.date: 7/30/2020
 ## Azure Cache for Redis
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Azure Cosmos DB
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Azure Data Explorer Clusters
@@ -103,16 +116,31 @@ ms.date: 7/30/2020
 ## Azure Database for MariaDB Servers
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Azure Database for MySQL Servers
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Azure Database for PostgreSQL Flexible Servers
+
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Azure Database for PostgreSQL Servers
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Azure Database for PostgreSQL Servers V2
+
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Azure Databricks Services
@@ -127,12 +155,24 @@ ms.date: 7/30/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Azure Resource Group
+
+- [AzureActivity](azureactivity.md)
+
+## Azure Sentinel Watchlist
+
+- [Watchlist](watchlist.md)
+
 ## Azure Spring Cloud
 
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
 - [AppPlatformSystemLogs](appplatformsystemlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Azure Subscription
+
+- [AzureActivity](azureactivity.md)
 
 ## Bastions
 
@@ -143,15 +183,18 @@ ms.date: 7/30/2020
 ## Batch Accounts
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## CDN Profiles
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 
 ## Cognitive Services
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Container Registries
@@ -167,16 +210,19 @@ ms.date: 7/30/2020
 - [ADFPipelineRun](adfpipelinerun.md)
 - [ADFTriggerRun](adftriggerrun.md)
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Data Lake Analytics
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Data Lake Storage Gen1
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Data Share
@@ -185,6 +231,10 @@ ms.date: 7/30/2020
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
+
+## Default schema for a resource
+
+- [AzureActivity](azureactivity.md)
 
 ## Desktop Virtualization Application Groups
 
@@ -216,6 +266,7 @@ ms.date: 7/30/2020
 ## Device Provisioning Services
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Event Grid Domains
@@ -228,41 +279,78 @@ ms.date: 7/30/2020
 ## Event Grid Topics
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Event Hubs
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## ExpressRoute Circuits
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Firewalls
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Front Doors
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## HDInsight Clusters
 
 - [AzureActivity](azureactivity.md)
+- [HDInsightAmbariClusterAlerts](hdinsightambariclusteralerts.md)
+- [HDInsightAmbariSystemMetrics](hdinsightambarisystemmetrics.md)
+- [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
+- [HDInsightHadoopAndYarnLogs](hdinsighthadoopandyarnlogs.md)
+- [HDInsightHadoopAndYarnMetrics](hdinsighthadoopandyarnmetrics.md)
+- [HDInsightHBaseLogs](hdinsighthbaselogs.md)
+- [HDInsightHBaseMetrics](hdinsighthbasemetrics.md)
+- [HDInsightHiveAndLLAPLogs](hdinsighthiveandllaplogs.md)
+- [HDInsightHiveAndLLAPMetrics](hdinsighthiveandllapmetrics.md)
+- [HDInsightJupyterNotebookEvents](hdinsightjupyternotebookevents.md)
+- [HDInsightKafkaLogs](hdinsightkafkalogs.md)
+- [HDInsightKafkaMetrics](hdinsightkafkametrics.md)
+- [HDInsightOozieLogs](hdinsightoozielogs.md)
+- [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
+- [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
+- [HDInsightSparkApplicationEvents](hdinsightsparkapplicationevents.md)
+- [HDInsightSparkBlockManagerEvents](hdinsightsparkblockmanagerevents.md)
+- [HDInsightSparkEnvironmentEvents](hdinsightsparkenvironmentevents.md)
+- [HDInsightSparkExecutorEvents](hdinsightsparkexecutorevents.md)
+- [HDInsightSparkExtraEvents](hdinsightsparkextraevents.md)
+- [HDInsightSparkJobEvents](hdinsightsparkjobevents.md)
+- [HDInsightSparkLogs](hdinsightsparklogs.md)
+- [HDInsightSparkSQLExecutionEvents](hdinsightsparksqlexecutionevents.md)
+- [HDInsightSparkStageEvents](hdinsightsparkstageevents.md)
+- [HDInsightSparkStageTaskAccumulables](hdinsightsparkstagetaskaccumulables.md)
+- [HDInsightSparkTaskEvents](hdinsightsparktaskevents.md)
+- [HDInsightStormLogs](hdinsightstormlogs.md)
+- [HDInsightStormMetrics](hdinsightstormmetrics.md)
+- [HDInsightStormTopologyMetrics](hdinsightstormtopologymetrics.md)
 
 ## IoT Hub
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+- [InsightsMetrics](insightsmetrics.md)
 - [IoTHubDistributedTracing](iothubdistributedtracing.md)
 
 ## Key Vaults
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Kubernetes Services
@@ -287,14 +375,15 @@ ms.date: 7/30/2020
 ## Load Balancers
 
 - [AzureActivity](azureactivity.md)
-- [AzureMetrics](azuremetrics.md)
 
 ## Log Analytics workspaces
 
+- [LAQueryLogs](laquerylogs.md)
 
 ## Logic Apps
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Machine Learning
@@ -313,32 +402,47 @@ ms.date: 7/30/2020
 ## Media Services
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Network Interfaces
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Network Security Groups
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Network Watcher - Connection Monitor
+
+- [AzureActivity](azureactivity.md)
+- [NWConnectionMonitorDestinationListenerResult](nwconnectionmonitordestinationlistenerresult.md)
+- [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
+- [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
+- [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
+
 ## Power BI Datasets
 
+- [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
 
 ## Power BI Datasets
 
+- [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
 
 ## Power BI Embedded
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Public IP Addresses
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Recovery Services Vaults
@@ -349,16 +453,23 @@ ms.date: 7/30/2020
 - [AddonAzureBackupProtectedInstance](addonazurebackupprotectedinstance.md)
 - [AddonAzureBackupStorage](addonazurebackupstorage.md)
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [CoreAzureBackup](coreazurebackup.md)
 
 ## Search Services
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## SecurityInsights
+
+- [DeviceFileEvents](devicefileevents.md)
 
 ## Service Bus
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Service Fabric Clusters
@@ -375,16 +486,19 @@ ms.date: 7/30/2020
 ## SQL Databases
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## SQL Managed Instances
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## SQL Servers
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Storage Accounts
@@ -399,6 +513,7 @@ ms.date: 7/30/2020
 ## Stream Analytics jobs
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Time Series Insights Environments
@@ -410,19 +525,18 @@ ms.date: 7/30/2020
 ## Traffic Manager Profiles
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Virtual Machine Scale Sets
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
-- [BoundPort](boundport.md)
 - [ConfigurationChange](configurationchange.md)
 - [ConfigurationData](configurationdata.md)
 - [Event](event.md)
 - [Heartbeat](heartbeat.md)
 - [InsightsMetrics](insightsmetrics.md)
-- [OutboundConnection](outboundconnection.md)
 - [Perf](perf.md)
 - [ProtectionStatus](protectionstatus.md)
 - [SecurityBaseline](securitybaseline.md)
@@ -438,7 +552,6 @@ ms.date: 7/30/2020
 - [W3CIISLog](w3ciislog.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
-- [WorkloadMonitoringPerf](workloadmonitoringperf.md)
 
 ## Virtual machines
 
@@ -446,17 +559,14 @@ ms.date: 7/30/2020
 - [ADReplicationResult](adreplicationresult.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
-- [BoundPort](boundport.md)
 - [ComputerGroup](computergroup.md)
 - [ConfigurationChange](configurationchange.md)
 - [ConfigurationData](configurationdata.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
-- [ETWEvent](etwevent.md)
 - [Event](event.md)
 - [Heartbeat](heartbeat.md)
 - [InsightsMetrics](insightsmetrics.md)
-- [OutboundConnection](outboundconnection.md)
 - [Perf](perf.md)
 - [ProtectionStatus](protectionstatus.md)
 - [SecurityBaseline](securitybaseline.md)
@@ -474,16 +584,23 @@ ms.date: 7/30/2020
 - [W3CIISLog](w3ciislog.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
-- [WorkloadMonitoringPerf](workloadmonitoringperf.md)
 
-## Virtual network Gateways
+## Virtual Network Gateways
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Virtual Networks
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Virtual Private Network Gateways
+
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Workload Monitor

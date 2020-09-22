@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # ComputerGroup
@@ -15,9 +15,9 @@ ms.date: 7/30/2020
 
 ## Categories
 
-- Azure Monitor
-- Virtual Machines
 - IT & Management Tools
+- Virtual Machines
+- Azure Monitor
 ## Solutions
 
 - LogManagement

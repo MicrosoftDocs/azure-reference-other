@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # OfficeActivity
@@ -18,8 +18,9 @@ ms.date: 7/30/2020
 - Security
 ## Solutions
 
-- Office365
-- SecurityInsights
+- SecurityInsightsPrivatePreview
+- Azure Sentinel
+- Office 365 Analytics (Preview)
 
 
 
@@ -33,9 +34,11 @@ ms.date: 7/30/2020
 |Actor|string|The user or service principal that performed the action|
 |ActorContextId|string|The GUID of the organization that the actor belongs to|
 |ActorIpAddress|string|The actor's IP address in IPV4 or IPV6 address format|
+|AddOnGuid|string|The unique identifier of the add-on generated this event|
 |AddonName|string|The name of the add-on that generated this event|
 |AddOnType|string|The type of add-on that generated this event|
 |AffectedItems|string|Information about each item in the group|
+|AppDistributionMode|string|Application distribution mode|
 |Application|string|The application name|
 |AzureActiveDirectory_EventType|string|The type of Azure AD event|
 |ChannelGuid|string|A unique identifier for the channel being audited|
@@ -104,6 +107,7 @@ ms.date: 7/30/2020
 |OfficeWorkload|string|The Office 365 service where the activity occurred|
 |OldValue|string|Only present for settings events. Old value of the setting|
 |Operation|string|The name of the operation that the user is performing|
+|OperationScope|string|The scope the operation was performed on|
 |OrganizationId|string|The GUID for your organization's Office 365 tenant. This value will always be the same for your organization|
 |OrganizationName|string|The name of the tenant|
 |OriginatingServer|string|The name of the server from which the cmdlet was executed|
@@ -129,6 +133,7 @@ ms.date: 7/30/2020
 |SupportTicketId|string|The customer support ticket ID for the action in 'act-on-behalf-of' situations|
 |TabType|string|The type of tab that generated this event|
 |TargetContextId|string|The GUID of the organization that the targeted user belongs to|
+|TargetUserId|string|Target user id|
 |TargetUserOrGroupName|string|Stores the UPN or name of the target user or group that a resource was shared with|
 |TargetUserOrGroupType|string|Identifies whether the target user or group is a Member, Guest, Group, or Partner|
 |TeamGuid|string|A unique identifier for the team being audited|

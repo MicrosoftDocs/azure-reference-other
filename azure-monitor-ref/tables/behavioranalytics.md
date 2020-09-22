@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # BehaviorAnalytics
@@ -35,6 +35,7 @@ ms.date: 7/30/2020
 |DestinationIPLocation|string|The destination Geo location based on the IP address|
 |DevicesInsights|dynamic|Devices metadata and insights|
 |EventSource|string|Data source for this event|
+|InvestigationPriority|int|Investigation priority score|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceDevice|string|The hostname of the source device|
 |SourceIPAddress|string|The source IP address|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # SecurityBaselineSummary
@@ -18,9 +18,9 @@ ms.date: 7/30/2020
 - Security
 ## Solutions
 
-- Security and Audit
-- SecurityCenter
 - SecurityCenterFree
+- SecurityCenter
+- Security and Audit
 ## Resource types
 
 - Virtual machines
@@ -43,8 +43,8 @@ ms.date: 7/30/2020
 |PercentageOfPassedRules|int||
 |Resource|string||
 |ResourceGroup|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProvider|string||
 |ResourceType|string||
 |SourceComputerId|string||

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # BlockchainProxyLog
@@ -48,8 +48,8 @@ ms.date: 7/30/2020
 |RequestTime|real||
 |Resource|string||
 |ResourceGroup|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProvider|string||
 |SourceSystem|string||
 |SubscriptionId|string||

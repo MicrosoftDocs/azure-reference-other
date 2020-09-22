@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # FunctionAppLogs
@@ -15,8 +15,8 @@ ms.date: 7/30/2020
 
 ## Categories
 
-- Azure Resources
 - Applications
+- Azure Resources
 ## Solutions
 
 - LogManagement

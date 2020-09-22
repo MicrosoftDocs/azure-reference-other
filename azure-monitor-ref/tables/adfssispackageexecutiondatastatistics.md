@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # ADFSSISPackageExecutionDataStatistics
@@ -38,6 +38,7 @@ ms.date: 7/30/2020
 |OperationName|string|The name of the operation represented by this event|
 |PackageName|string|Package name|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|RowsSent|long|Rows sent|
 |RowsSet|long|Rows set|
 |SourceComponentName|string|Source somponent name|
 |SourceSystem|string||

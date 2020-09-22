@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/30/2020
+ms.date: 9/17/2020
 ---
 
 # SecurityEvent
@@ -18,12 +18,12 @@ ms.date: 7/30/2020
 - Security
 ## Solutions
 
+- Azure Sentinel
 - Security and Audit
-- SecurityInsights
 ## Resource types
 
-- Virtual machines
 - Virtual Machine Scale Sets
+- Virtual machines
 
 
 
