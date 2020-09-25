@@ -1,7 +1,7 @@
 ---
 title: "Import from Azure Blob Storage | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 05/06/2019
+ms.date: 09/25/2020
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -20,6 +20,9 @@ The Azure Blob Service is for storing large amounts of data, including binary da
 
 - Public blobs can be accessed by anyone, or by users who have a SAS URL.
 - Private blobs require a login and credentials.
+
+> [!NOTE]
+> Import does not support connecting to Azure Blob storage account if "Secure Transfer Required" option is enabled. 
 
 Importing from blob storage requires that data be stored in blobs that use the **block blob** format. The files stored in the blob must use either comma-separated ( CSV) or tab-separated (TSV) formats. When you read the file, the records and any applicable attribute headings are loaded as rows into memory as a dataset.
 

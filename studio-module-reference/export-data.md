@@ -1,7 +1,7 @@
 ---
 title: "Export Data | Microsoft Docs"
 titleSuffix: "Azure Machine Learning Studio"
-ms.date: 05/06/2019
+ms.date: 09/25/2020
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -31,6 +31,8 @@ This module supports exporting or saving your data to the following cloud data s
 - [Export to Azure Table](export-to-azure-table.md): Save data to the table storage service in Azure. Table storage is good for storing large amounts of data. It provides a tabular format that is scalable, inexpensive, and highly available.
 
 - [Export to Azure Blob Storage](export-to-azure-blob-storage.md): Saves data to the Blob service in Azure. This option is useful for images, unstructured text, or binary data. Data in the Blob service can be shared publicly or saved in secured application data stores.
+> [!NOTE]
+> This module does not support connecting to storage account if "Secure Transfer Required" option is enabled. 
 
 ### Related tasks
 
