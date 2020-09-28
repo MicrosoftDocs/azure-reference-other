@@ -1,12 +1,12 @@
 ---
 title: "ML Studio (classic): Import from Azure Blob Storage - Azure"
 description: Learn how to use the Import Data module to read data from Azure blob storage, so that you can use the data in a machine learning experiment.  
-ms.date: 05/06/2019
+ms.date: 09/28/2020
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: xiaoharper
+author: likebupt
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -22,6 +22,8 @@ The Azure Blob Service is for storing large amounts of data, including binary da
 - Private blobs require a login and credentials.
 
 Importing from blob storage requires that data be stored in blobs that use the **block blob** format. The files stored in the blob must use either comma-separated ( CSV) or tab-separated (TSV) formats. When you read the file, the records and any applicable attribute headings are loaded as rows into memory as a dataset.
+> [!NOTE]
+> Import data module does not support connecting to Azure Blob storage account if "Secure Transfer Required" option is enabled. 
 
 For other restrictions on the types of blob storage supported for use with Azure Machine Learning, see the [Technical notes](#bkmk_Notes) section.
 
