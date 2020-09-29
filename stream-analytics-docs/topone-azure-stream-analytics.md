@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 9728630c-1c59-4349-a562-fdd98433da9d
 caps.latest.revision: 6
 ms.workload: data-services
-ms.date: 04/22/2016
+ms.date: 9/20/2020
 ms.author: mamccrea
 ---
 # TopOne (Azure Stream Analytics)
