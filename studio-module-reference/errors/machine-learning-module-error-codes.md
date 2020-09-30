@@ -1880,7 +1880,7 @@ In general, a count-based transform can only be applied to datasets that have th
 ## Error 0126  
  Exception occurs if the user specifies a SQL domain that is not supported in Azure ML.  
   
- This error is produced when the user specifies a SQL domain that is not supported in Azure Machine Learning. You will receive this error if you are attempting to connect to a database server in a domain that is not whitelisted. Currently, the allowed SQL domains are: ".database.windows.net", ".cloudapp.net", or ".database.secure.windows.net". That is, the server must be an Azure SQL server or a server in a virtual machine on Azure.  
+ This error is produced when the user specifies a SQL domain that is not supported in Azure Machine Learning. You will receive this error if you are attempting to connect to a database server in a domain that is not on the allowed list. Currently, the allowed SQL domains are: ".database.windows.net", ".cloudapp.net", or ".database.secure.windows.net". That is, the server must be an Azure SQL server or a server in a virtual machine on Azure.  
   
 **Resolution:**
  Revisit the module. Verify that the SQL database server belongs to one of the accepted domains:  
@@ -2318,4 +2318,3 @@ To get more help, we recommend that you post the detailed message that accompani
 Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
 + [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
 + [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
- 
