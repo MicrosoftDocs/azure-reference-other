@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ADAssessmentRecommendation
@@ -18,8 +18,8 @@ ms.date: 9/17/2020
 - Workloads
 ## Solutions
 
-- ADAssessmentPlus
 - Active Directory Health Check
+- ADAssessmentPlus
 ## Resource types
 
 - Virtual machines
@@ -50,6 +50,7 @@ ms.date: 9/17/2020
 |RecommendationWeight|real|Weight of recommendation|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|OpsManager|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Technology|string||
 |TimeGenerated|datetime|Date and time the record was created.|
 |Type|string|The name of the table|
