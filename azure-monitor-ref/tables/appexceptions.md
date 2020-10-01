@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AppExceptions
@@ -63,6 +63,7 @@ ms.date: 9/17/2020
 |SessionId|string|Application-defined session ID.|
 |SeverityLevel|int|Severity level of the exception.|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SyntheticSource|string|Synthetic source of the operation.|
 |TenantId|string||
 |TimeGenerated|datetime|Date and time when request was recorded.|
