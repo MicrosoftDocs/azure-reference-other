@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ConfigurationData
@@ -21,8 +21,8 @@ ms.date: 9/17/2020
 - Change Tracking
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -54,6 +54,7 @@ ms.date: 9/17/2020
 |SoftwareType|string|Type of the software: Application Package Update|
 |SourceComputerId|string||
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SvcAccount|string|User account that is associated with the service executable explicitly to provide a security context for the service|
 |SvcController|string|Service property that was changed|
 |SvcDescription|string|Parent process for the daemon|
