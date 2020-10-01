@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Update
@@ -15,18 +15,18 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Security
 - IT & Management Tools
+- Security
 ## Solutions
 
-- SecurityCenterFree
-- Update Management
 - Security and Audit
 - SecurityCenter
+- SecurityCenterFree
+- Update Management
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -72,6 +72,7 @@ ms.date: 9/17/2020
 |SourceComputerId|string||
 |SourceSystem|string||
 |SubscriptionId|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime||
 |Title|string||
 |Type|string|The name of the table|
