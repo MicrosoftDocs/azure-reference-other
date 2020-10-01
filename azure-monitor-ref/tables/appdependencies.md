@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AppDependencies
@@ -61,6 +61,7 @@ ms.date: 9/17/2020
 |SDKVersion|string|Version of the SDK used by the application to generate this telemetry item.|
 |SessionId|string|Application-defined session ID.|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Success|bool|Indicates whether the dependency call completed successfully.|
 |SyntheticSource|string|Synthetic source of the operation.|
 |Target|string|Target of a dependency call, such as a Web or a SQL server name.|
