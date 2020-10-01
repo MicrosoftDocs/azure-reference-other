@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ContainerLog
@@ -15,12 +15,12 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Applications
 - Containers
+- Applications
 ## Solutions
 
-- Container Monitoring Solution
 - ContainerInsights
+- Container Monitoring Solution
 ## Resource types
 
 - Kubernetes Services
@@ -42,6 +42,7 @@ ms.date: 9/17/2020
 |Repository|string|Used by Container solution only. Not populated by Azure Monitor for Containers.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|Deprecated.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TimeOfCommand|datetime|Time that the agent processed the log. This is an optional field mainly useful for troubleshooting latency issues on the agent.|
 |Type|string|The name of the table|
