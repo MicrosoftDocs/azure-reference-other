@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # IoTHubDistributedTracing
@@ -49,6 +49,7 @@ ms.date: 9/17/2020
 |ResultType|string|Result type of the event, typically empty unless it's an error|
 |SourceSystem|string||
 |SpanId|string|Unique identifier of current span within trace (16 hex characters)|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|Time at which this event is generated and logged|
 |TraceFlags|int|A bit field for controlling tracing options. For example, sampling and trace level.|
