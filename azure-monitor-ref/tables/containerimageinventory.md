@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ContainerImageInventory
@@ -18,8 +18,8 @@ ms.date: 9/17/2020
 - Containers
 ## Solutions
 
-- Container Monitoring Solution
 - ContainerInsights
+- Container Monitoring Solution
 ## Resource types
 
 - Kubernetes Services
@@ -43,6 +43,7 @@ ms.date: 9/17/2020
 |Running|int|Count of containers with this image that are in running state|
 |SourceSystem|string|Type of agent the data was collected from. This will be 'Containers'|
 |Stopped|int|Count of containers with this image that are in stopped state|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TotalContainer|long|Count of containers with this ContainerImage|
 |Type|string|The name of the table|
