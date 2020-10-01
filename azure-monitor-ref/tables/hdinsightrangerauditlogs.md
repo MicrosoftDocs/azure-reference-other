@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HDInsightRangerAuditLogs
@@ -15,8 +15,8 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Audit
 - Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement
@@ -57,6 +57,7 @@ ms.date: 9/17/2020
 |SequenceNumber|int|Sequence number of the event.|
 |SessionId|string|ID associated witht the user session.|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Tags|string|List of tags associated with the event.|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
