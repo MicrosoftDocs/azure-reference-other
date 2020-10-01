@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # UpdateRunProgress
@@ -21,8 +21,8 @@ ms.date: 9/17/2020
 - Update Management
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -43,14 +43,15 @@ ms.date: 9/17/2020
 |Product|string||
 |Resource|string||
 |ResourceGroup|string||
-|ResourceId|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResourceId|string||
 |ResourceProvider|string||
 |ResourceType|string||
 |SourceComputerId|string||
 |SourceSystem|string||
 |StartTime|datetime||
 |SubscriptionId|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SucceededOnRetry|bool||
 |TimeGenerated|datetime||
 |Title|string||
