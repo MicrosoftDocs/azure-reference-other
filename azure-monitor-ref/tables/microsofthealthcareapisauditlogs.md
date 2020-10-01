@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # MicrosoftHealthcareApisAuditLogs
@@ -15,8 +15,8 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Audit
 - Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement
@@ -47,6 +47,7 @@ ms.date: 9/17/2020
 |ResultType|string|The result type.|
 |SourceSystem|string||
 |StatusCode|int|The HTTP status code.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log.|
 |Type|string|The name of the table|
