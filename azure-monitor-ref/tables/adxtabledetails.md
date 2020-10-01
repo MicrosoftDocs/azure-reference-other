@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ADXTableDetails
@@ -16,6 +16,9 @@ ms.date: 9/17/2020
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Data Explorer Clusters
 
 
 
@@ -39,6 +42,7 @@ ms.date: 9/17/2020
 |RetentionPolicy|dynamic|The table's effective entity retention policy, serialized as JSON|
 |RetentionPolicyOrigin|string|Retention policy origin entity (Table/Database/Cluster)|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TableName|string|The name of the table|
 |TenantId|string||
 |TimeGenerated|datetime|The time (UTC) at which this event was generated|
