@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -32,7 +32,9 @@ ms.date: 9/17/2020
 
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
+- [AADProvisioningLogs](aadprovisioninglogs.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
@@ -80,6 +82,7 @@ ms.date: 9/17/2020
 - [AppServiceConsoleLogs](appserviceconsolelogs.md)
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
+- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AuditLogs](auditlogs.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
@@ -297,7 +300,9 @@ ms.date: 9/17/2020
 - [AADDomainServicesSystemSecurity](aaddomainservicessystemsecurity.md)
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
+- [AADProvisioningLogs](aadprovisioninglogs.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
 - [AzureActivity](azureactivity.md)
