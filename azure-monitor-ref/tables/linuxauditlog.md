@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # LinuxAuditLog
@@ -18,8 +18,8 @@ ms.date: 9/17/2020
 - Security
 ## Solutions
 
-- Azure Sentinel
 - Security and Audit
+- Azure Sentinel
 
 
 
@@ -82,6 +82,7 @@ ms.date: 9/17/2020
 |SerialNumber|string||
 |ses|long||
 |SourceComputerId|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |success|string||
 |syscall|string||
 |terminal|string||
