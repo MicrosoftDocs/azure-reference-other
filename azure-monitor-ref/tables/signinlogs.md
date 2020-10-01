@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # SigninLogs
@@ -15,8 +15,8 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Security
 - Azure Resources
+- Security
 ## Solutions
 
 - LogManagement
