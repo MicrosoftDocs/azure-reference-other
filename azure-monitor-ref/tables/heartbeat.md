@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Heartbeat
@@ -15,17 +15,17 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Containers
-- IT & Management Tools
 - Virtual Machines
+- IT & Management Tools
+- Containers
 ## Solutions
 
 - LogManagement
 ## Resource types
 
-- Kubernetes Services
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
+- Kubernetes Services
 
 
 
@@ -49,14 +49,15 @@ ms.date: 9/17/2020
 |RemoteIPLongitude|real|Longitude of computer's geographic location.|
 |Resource|string|Resource group name of the Azure resource running the agent.|
 |ResourceGroup|string|Resource name of the Azure resource running the agent.|
-|ResourceId|string|Resource ID of the Azure resource running the agent. Retained for for backward compatibility. _ResourceId should be used.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResourceId|string|Resource ID of the Azure resource running the agent. Retained for for backward compatibility. _ResourceId should be used.|
 |ResourceProvider|string|Resource provider of the Azure resource running the agent|
 |ResourceType|string|Type of the Azure resource running the agent. Examples include virtualmachines or managedclusters.|
 |SCAgentChannel|string|Specfies how agent is connected to workspace. Possible values are Direct or SCManagementServer.|
 |Solutions|string|List of solutions deployed on the agent at the moment when Heartbeat was issued.|
 |SourceSystem|string|Type of agent the data was collected from. Possible values are OpsManager (Windows agent) or Linux.|
 |SubscriptionId|string|Subscription ID of the Azure resource running the agent|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |Type|string|The name of the table|
 |Version|string|Version of the agent.|
