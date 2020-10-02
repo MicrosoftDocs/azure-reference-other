@@ -99,7 +99,7 @@ GROUP BY
 Create windows of different sizes and filter results based on the window duration specified in the Reference table.
 
 ```SQL
-WITH HoppingWindowResults 
+WITH HoppingWindowResults AS
 ( 
     SELECT 
         System.Window().Id, 
