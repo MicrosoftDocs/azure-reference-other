@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # UpdateSummary
@@ -18,14 +18,14 @@ ms.date: 9/17/2020
 - Virtual Machines
 ## Solutions
 
-- SecurityCenterFree
-- Update Management
 - Security and Audit
 - SecurityCenter
+- SecurityCenterFree
+- Update Management
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -45,8 +45,8 @@ ms.date: 9/17/2020
 |OtherUpdatesMissing|int||
 |Resource|string||
 |ResourceGroup|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProvider|string||
 |ResourceType|string||
 |RestartPending|bool||
@@ -54,6 +54,7 @@ ms.date: 9/17/2020
 |SourceComputerId|string||
 |SourceSystem|string||
 |SubscriptionId|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime||
 |TotalUpdatesMissing|int||
 |Type|string|The name of the table|

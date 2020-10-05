@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # PowerBIDatasetsWorkspacePreview
@@ -61,6 +61,7 @@ ms.date: 9/17/2020
 |SourceSystem|string||
 |SpId|int|Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A.|
 |StartTime|datetime|Contains the time at which the event started, when available.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Success|string|Indicates if the operation was successful. 1 = success. 0 = failure.|
 |TenantId|string||
 |TextData|string|Contains verbose information associated with the event|

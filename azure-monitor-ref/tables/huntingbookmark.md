@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HuntingBookmark
@@ -42,6 +42,7 @@ ms.date: 9/17/2020
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SoftDeleted|bool|Was the bookmark deleted by user|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Tags|string|Comma seperated list of tags provided by user|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log|

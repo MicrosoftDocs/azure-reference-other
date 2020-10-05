@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AppBrowserTimings
@@ -58,6 +58,7 @@ ms.date: 9/17/2020
 |SendDurationMs|real|Send request time in milliseconds.|
 |SessionId|string|Application-defined session ID.|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SyntheticSource|string|Synthetic source of the operation.|
 |TenantId|string||
 |TimeGenerated|datetime|Date and time when request was recorded.|

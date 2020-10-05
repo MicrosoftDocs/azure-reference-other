@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # WireData
@@ -15,16 +15,16 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Security
 - Virtual Machines
+- Security
 ## Solutions
 
-- Wire Data 2.0
 - WireData
+- Wire Data 2.0
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -74,6 +74,7 @@ ms.date: 9/17/2020
 |SessionState|string|Connected or disconnected|
 |Severity|int|Suspected malware severity|
 |SourceSystem|string|OpsManager|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Time of the record|
 |TLPLevel|string|Traffic Light Protocol (TLP) Level is one of the defined values White Green Amber Red.|
 |TotalBytes|long|Total number of bytes sent during session|

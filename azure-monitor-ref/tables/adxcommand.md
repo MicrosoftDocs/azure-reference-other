@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ADXCommand
@@ -16,6 +16,9 @@ ms.date: 9/17/2020
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Data Explorer Clusters
 
 
 
@@ -40,6 +43,7 @@ ms.date: 9/17/2020
 |SourceSystem|string||
 |StartedOn|datetime|Time (UTC) at which this command started|
 |State|string|The State the command ended with|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The time (UTC) at which this event was generated|
 |TotalCPU|string|Total CPU duration|

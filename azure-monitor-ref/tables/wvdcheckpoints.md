@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # WVDCheckpoints
@@ -21,9 +21,9 @@ ms.date: 9/17/2020
 - LogManagement
 ## Resource types
 
-- Desktop Virtualization workspaces
-- Desktop Virtualization Host Pools
 - Desktop Virtualization Application Groups
+- Desktop Virtualization Host Pools
+- Desktop Virtualization workspaces
 
 
 
@@ -39,6 +39,7 @@ ms.date: 9/17/2020
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Source|string|The component that emitted the checkpoint.|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the event.|
 |Type|string|The name of the table|

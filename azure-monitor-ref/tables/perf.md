@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Perf
@@ -15,16 +15,16 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Containers
 - Virtual Machines
+- Containers
 ## Solutions
 
 - LogManagement
 ## Resource types
 
-- Kubernetes Services
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
+- Kubernetes Services
 
 
 
@@ -47,5 +47,6 @@ ms.date: 9/17/2020
 |SampleCount|int||
 |SourceSystem|string|Type of agent the event was collected from. Possible values are OpsManager Linux and AzureStorage.|
 |StandardDeviation|real||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the data was sampled.|
 |Type|string|The name of the table|

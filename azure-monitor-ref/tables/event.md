@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Event
@@ -21,8 +21,8 @@ ms.date: 9/17/2020
 - LogManagement
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -47,6 +47,7 @@ ms.date: 9/17/2020
 |Role|string|Role of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and collected from Azure storage.|
 |Source|string|Source of the event.|
 |SourceSystem|string|Type of agent the event was collected from. Possible values are OpsManager Linux and AzureStorage.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |Type|string|The name of the table|
 |UserName|string|User name of the account that logged the event.|

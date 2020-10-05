@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # CommonSecurityLog
@@ -18,8 +18,8 @@ ms.date: 9/17/2020
 - Security
 ## Solutions
 
-- Azure Sentinel
 - Security and Audit
+- Azure Sentinel
 
 
 
@@ -173,6 +173,7 @@ ms.date: 9/17/2020
 |SourceUserName|string||
 |SourceUserPrivileges|string||
 |StartTime|datetime||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |ThreatConfidence|string||
 |ThreatDescription|string||
 |ThreatSeverity|int||

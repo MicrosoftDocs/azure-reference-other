@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -32,6 +32,7 @@ ms.date: 9/17/2020
 - [AppServiceConsoleLogs](appserviceconsolelogs.md)
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
+- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -67,6 +68,7 @@ ms.date: 9/17/2020
 
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
+- [AADProvisioningLogs](aadprovisioninglogs.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
 
 ## Azure AD Domain Services
@@ -108,6 +110,11 @@ ms.date: 9/17/2020
 
 ## Azure Data Explorer Clusters
 
+- [ADXCommand](adxcommand.md)
+- [ADXIngestionBatching](adxingestionbatching.md)
+- [ADXQuery](adxquery.md)
+- [ADXTableDetails](adxtabledetails.md)
+- [ADXTableUsageStatistics](adxtableusagestatistics.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FailedIngestion](failedingestion.md)
@@ -339,6 +346,10 @@ ms.date: 9/17/2020
 - [HDInsightStormMetrics](hdinsightstormmetrics.md)
 - [HDInsightStormTopologyMetrics](hdinsightstormtopologymetrics.md)
 
+## Intune Specialist Reports.
+
+- [IntuneDeviceComplianceOrg](intunedevicecomplianceorg.md)
+
 ## IoT Hub
 
 - [AzureActivity](azureactivity.md)
@@ -427,11 +438,11 @@ ms.date: 9/17/2020
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
+- [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
+- [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
 
 ## Power BI Embedded
 

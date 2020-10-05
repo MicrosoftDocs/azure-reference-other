@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ProtectionStatus
@@ -18,14 +18,14 @@ ms.date: 9/17/2020
 - Security
 ## Solutions
 
-- SecurityCenter
-- SecurityCenterFree
 - Antimalware Assessment
 - Security and Audit
+- SecurityCenter
+- SecurityCenterFree
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -46,8 +46,8 @@ ms.date: 9/17/2020
 |ProtectionStatusRank|int||
 |Resource|string||
 |ResourceGroup|string||
-|ResourceId|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResourceId|string||
 |ResourceProvider|string||
 |ResourceType|string||
 |ScanDate|datetime||
@@ -55,6 +55,7 @@ ms.date: 9/17/2020
 |SourceComputerId|string||
 |SourceSystem|string||
 |SubscriptionId|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |Threat|string||
 |ThreatStatus|string||

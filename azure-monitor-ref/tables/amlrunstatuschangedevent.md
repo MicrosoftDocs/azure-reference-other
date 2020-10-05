@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AmlRunStatusChangedEvent
@@ -46,6 +46,7 @@ ms.date: 9/17/2020
 |RunId|string|Unique run identifier.|
 |SourceSystem|string||
 |Status|string|Updated run status.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the event.|
 |TriggeringUserName|string|Friendly name of run status change initiator.|

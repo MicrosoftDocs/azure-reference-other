@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # VMConnection
@@ -18,13 +18,13 @@ ms.date: 9/17/2020
 - Virtual Machines
 ## Solutions
 
-- Azure Monitor for VMs
-- Service Map
 - InfrastructureInsights
+- Service Map
+- Azure Monitor for VMs
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -71,6 +71,7 @@ ms.date: 9/17/2020
 |Severity|int|Possible values are 0 - 5 where 5 is the most severe and 0 is not severe at all. Default value is 3.|
 |SourceIp|string|IP address of the source.|
 |SourceSystem|string|Value is OpsManager for all records.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TLPLevel|string|Traffic Light Protocol (TLP) Level. Possible values are White Green Amber Red.|
 |Type|string|The name of the table|

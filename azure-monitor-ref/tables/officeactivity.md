@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # OfficeActivity
@@ -18,9 +18,9 @@ ms.date: 9/17/2020
 - Security
 ## Solutions
 
-- SecurityInsightsPrivatePreview
-- Azure Sentinel
+- AzureSentinelPrivatePreview
 - Office 365 Analytics (Preview)
+- Azure Sentinel
 
 
 
@@ -41,9 +41,11 @@ ms.date: 9/17/2020
 |AppDistributionMode|string|Application distribution mode|
 |Application|string|The application name|
 |AzureActiveDirectory_EventType|string|The type of Azure AD event|
+|AzureADAppId|string|Teams Application Azure AD ID|
 |ChannelGuid|string|A unique identifier for the channel being audited|
 |ChannelName|string|The name of the channel being audited|
 |ChannelType|string|The type of channel being audited (Standard/Private)|
+|ChatName|string|The name of the chat|
 |ChatThreadId|string|The Id of the chat thread|
 |Client|string|Details about the client device, device OS, and device browser that was used for the of the account login event|
 |ClientInfoString|string|Information about the email client that was used to perform the operation|
@@ -130,6 +132,7 @@ ms.date: 9/17/2020
 |SourceRelativeUrl|string|The URL of the folder that contains the file accessed by the user|
 |SourceSystem|string|The source system name|
 |Start_Time|datetime|The date and time at which the cmdlet was executed|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SupportTicketId|string|The customer support ticket ID for the action in 'act-on-behalf-of' situations|
 |TabType|string|The type of tab that generated this event|
 |TargetContextId|string|The GUID of the organization that the targeted user belongs to|

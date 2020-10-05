@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HealthStateChangeEvent
@@ -39,6 +39,7 @@ ms.date: 9/17/2020
 |PreviousMonitorState|string|State of the monitor before this state change (Critical, Warning, Healthy, Unknown, None).|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|Timestamp (UTC) when the monitor health state change event was created.|
 |Type|string|The name of the table|

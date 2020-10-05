@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # KubeEvents
@@ -45,5 +45,6 @@ ms.date: 9/17/2020
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceComponent|string|Source component that generated the event [event.source.component] . Ex;- default-scheduler|
 |SourceSystem|string|Type of agent the data was collected from. |
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |Type|string|The name of the table|

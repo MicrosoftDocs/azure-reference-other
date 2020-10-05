@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HDInsightSparkStageEvents
@@ -47,6 +47,7 @@ ms.date: 9/17/2020
 |StageId|string|The ID of the stage.|
 |StageName|string|The name of the stage.|
 |SubmissionTime|datetime|The time (UTC) the stage was submitted.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TaskCount|int|The count of tasks associated with the stage.|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|

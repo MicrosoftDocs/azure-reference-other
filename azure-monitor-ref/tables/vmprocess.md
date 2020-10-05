@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # VMProcess
@@ -18,12 +18,12 @@ ms.date: 9/17/2020
 - Virtual Machines
 ## Solutions
 
-- Azure Monitor for VMs
 - Service Map
+- Azure Monitor for VMs
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -53,6 +53,7 @@ ms.date: 9/17/2020
 |Services|dynamic|A list of services associated with the process.|
 |SourceSystem|string|The source of the data collected (OpsManager)|
 |StartTime|datetime|The process pool start time|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |Type|string|The name of the table|
 |UserDomain|string|The domain under which the process is executing|

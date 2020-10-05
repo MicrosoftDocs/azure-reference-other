@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # WVDFeeds
@@ -40,6 +40,7 @@ ms.date: 9/17/2020
 |RDPTotal|int|The total number of RDP files that the client attempted to retrieve.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the event.|
 |Type|string|The name of the table|

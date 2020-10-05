@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # StorageBlobLogs
@@ -68,6 +68,7 @@ ms.date: 9/17/2020
 |SourceSystem|string||
 |StatusCode|string|The HTTP status code for the request. If the request is interrupted, this value might be set to Unknown.|
 |StatusText|string|The status of the requested operation.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The Universal Time Coordinated (UTC) time when the request was received by storage.|
 |TlsVersion|string|The TLS version used in the connection of request.|

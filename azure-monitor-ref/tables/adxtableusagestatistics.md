@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ADXTableUsageStatistics
@@ -16,6 +16,9 @@ ms.date: 9/17/2020
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Data Explorer Clusters
 
 
 
@@ -35,6 +38,7 @@ ms.date: 9/17/2020
 |RootActivityId|string|The root activity id|
 |SourceSystem|string||
 |StartedOn|datetime|Time (UTC) at which table usage statistics operation started|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TableName|string|The name of the table|
 |TenantId|string||
 |TimeGenerated|datetime|The time (UTC) at which this event was generated|

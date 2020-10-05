@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ContainerServiceLog
@@ -18,8 +18,8 @@ ms.date: 9/17/2020
 - Containers
 ## Solutions
 
-- Container Monitoring Solution
 - ContainerInsights
+- Container Monitoring Solution
 ## Resource types
 
 - Kubernetes Services
@@ -39,6 +39,7 @@ ms.date: 9/17/2020
 |Repository|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime||
 |TimeOfCommand|datetime||
 |Type|string|The name of the table|

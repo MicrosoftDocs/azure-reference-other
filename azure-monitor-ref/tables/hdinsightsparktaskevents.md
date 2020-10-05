@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HDInsightSparkTaskEvents
@@ -75,6 +75,7 @@ ms.date: 9/17/2020
 |ShuffleWriteTime|long|The time spent writing during the shuffle task.|
 |SourceSystem|string||
 |StageId|string|The ID of the stage associated with the task.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TaskId|string|The ID of the task.|
 |TaskType|string|The task type.|
 |TenantId|string||

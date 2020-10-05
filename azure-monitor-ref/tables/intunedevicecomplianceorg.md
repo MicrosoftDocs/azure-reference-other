@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # IntuneDeviceComplianceOrg
@@ -19,6 +19,9 @@ ms.date: 9/17/2020
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Intune Specialist Reports.
 
 
 
@@ -45,6 +48,7 @@ ms.date: 9/17/2020
 |RetireAfterDatetime|string|The retire after date time.|
 |SerialNumber|string|The serial number of the device|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|Date and time when the report was generated.|
 |Type|string|The name of the table|

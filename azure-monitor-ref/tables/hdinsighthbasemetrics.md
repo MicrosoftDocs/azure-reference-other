@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HDInsightHBaseMetrics
@@ -40,6 +40,7 @@ ms.date: 9/17/2020
 |OperationName|string|The operation associated with log record.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Tags|dynamic|Information about the record. For example a record may be tagged with 'master' if it is in the HMaster context.|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|

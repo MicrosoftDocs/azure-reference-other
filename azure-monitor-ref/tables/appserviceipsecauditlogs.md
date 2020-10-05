@@ -6,16 +6,24 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AppServiceIPSecAuditLogs
 
  Logs generated through your application which will show requests made to your web app if there were any IP access restriction rules created.
 
+## Categories
+
+- Azure Resources
+- Audit
+- Security
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- App Services
 
 
 
@@ -33,6 +41,7 @@ ms.date: 9/17/2020
 |Result|string|The result whether the access is Allowed or Denied|
 |ServiceEndpoint|string|This indicates whether the access is via Virtual Network Service Endpoint communication|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|Time (UTC) of the HTTP Request|
 |Type|string|The name of the table|

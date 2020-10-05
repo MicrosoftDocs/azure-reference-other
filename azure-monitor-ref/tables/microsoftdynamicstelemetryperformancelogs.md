@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # MicrosoftDynamicsTelemetryPerformanceLogs
@@ -65,6 +65,7 @@ ms.date: 9/17/2020
 |SqlCpu|real|SqlCpu Utilization|
 |SqlSpid|int|Process id for the SQL statement (SqlSpid)|
 |SqlStatement|string|SQL query statement|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log.|
 |TransactionDurationSeconds|real|Transaction duration in seconds for Aos Large Active Transactions|

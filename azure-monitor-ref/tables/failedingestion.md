@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # FailedIngestion
@@ -48,6 +48,7 @@ ms.date: 9/17/2020
 |RootActivityId|string|The ingestion's activity Id|
 |ShouldRetry|bool|Indicates whether or not the failure is transient and should be retried|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Table|string|The name of the target table into which the data is ingested|
 |TenantId|string||
 |TimeGenerated|datetime|Time at which this event is generated and logged|

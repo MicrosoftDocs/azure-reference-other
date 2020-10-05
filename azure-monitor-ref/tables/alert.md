@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Alert
@@ -83,6 +83,7 @@ ms.date: 9/17/2020
 |SourceSystem|string||
 |StateType|string||
 |StatusDescription|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TemplateId|string||
 |ThresholdOperator|string||
 |ThresholdValue|int||

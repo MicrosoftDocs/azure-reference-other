@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AppPlatformSystemLogs
@@ -40,6 +40,7 @@ ms.date: 9/17/2020
 |ServiceName|string|The service name that emitted the log|
 |SourceSystem|string||
 |Stack|string|The stack of the log|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |Thread|string|The thread of the log|
 |TimeGenerated|datetime|The timestamp (UTC) of the log|
