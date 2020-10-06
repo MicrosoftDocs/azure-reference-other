@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HDInsightAmbariClusterAlerts
@@ -53,6 +53,7 @@ ms.date: 9/17/2020
 |ServiceName|string|The name of the service that generated the alert.|
 |SourceSystem|string||
 |State|string|The state of the alert.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |Text|string|The informational text of the alert.|
 |TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|

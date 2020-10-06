@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # MicrosoftAzureBastionAuditLogs
@@ -41,6 +41,7 @@ ms.date: 9/17/2020
 |SessionEndTime|string|Timestamp (UTC) of when the Bastion Session was ended|
 |SessionStartTime|datetime|Timestamp (UTC) of when the Bastion Session was started|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TargetResourceId|string|ResourceID of the VirtualMachine where the Bastion was connected to|
 |TargetVMIPAddress|string|IP Address of VirtualMachine where the Bastion was connected to|
 |TenantId|string||

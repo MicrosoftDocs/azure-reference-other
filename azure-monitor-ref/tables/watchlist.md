@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Watchlist
@@ -31,14 +31,15 @@ ms.date: 9/17/2020
 |Column|Type|Description|
 |---|---|---|
 |AzureTenantId|string|The AAD TenantID to which this watchlist table belongs|
-|CreatedBy|string|JSON object with the user who created the watchlist or watchlist item, including: ObjectID, email and name|
+|CorrelationId|string|The ID for correlated events.|
+|CreatedBy|dynamic|JSON object with the user who created the watchlist or watchlist item, including: ObjectID, email and name|
 |CreatedTimeUTC|datetime|The time (UTC) when the watchlist or watchlist item was first created|
 |DefaultDuration|string|JSON object describing he default duration to live that each item of a watchlist should inherit on creation|
 |_DTItemId|string|The watchlist or watchlist-item unique Id. As an example, a watchlist 'RiskyUsers' can contain watchlist-item 'Name:John Doe; email:johndoe@contoso.com'. A watchlist-item has its unique Id and will belong to a watchlist. The containing watchlist can identified using the 'WatchlistId'|
 |_DTItemStatus|string|Was the watchlist or watchlist item created, updated or deleted by user. As an example, a watchlist 'RiskyUsers' can contain watchlist-item 'Name:John Doe; email:johndoe@contoso.com'. If a watchlist is added, the the status would be 'Created'. If the name of the watchlist is updated from 'RiskyUsers' to 'RiskyEmployees' the status would be 'Updated' |
 |_DTItemType|string|Distinguish between a watchlist and a watchlist-item. As an example, a watchlist 'RiskyUsers' can contain watchlist-item 'Name:John Doe; email:johndoe@contoso.com'. A watchlist-item type will belong to a watchlist type and the containing watchlist can identified using the 'WatchlistId'|
 |_DTTimestamp|datetime|The time (UTC) when the event was generated|
-|EntityMapping|string|JSON object with Azure Sentinel entity mapping to input columns|
+|EntityMapping|dynamic|JSON object with Azure Sentinel entity mapping to input columns|
 |LastUpdatedTimeUTC|datetime|The time (UTC) when watchlist or watchlist item was last updated|
 |Notes|string|Notes provided by user|
 |Provider|string|Input provider of the watchlist.|
@@ -49,9 +50,9 @@ ms.date: 9/17/2020
 |TimeGenerated|datetime|The timestamp (UTC) of when the event was generated.|
 |TimeToLive|datetime|When a row is inserted into a watchlist, a TimeToLive value is added to that row based on the watchlist’s default duration value. When the row's specified TimeToLive timestamp passes, the system will ignore the row and consider the row deleted. A row's duration can be extended at any time by refreshing the row's TimeToLive.|
 |Type|string|The name of the table|
-|UpdatedBy|string|JSON object with the user who last updated the watchlist or watchlist item, including: ObjectID, email and name|
+|UpdatedBy|dynamic|JSON object with the user who last updated the watchlist or watchlist item, including: ObjectID, email and name|
 |WatchlistAlias|string|Unique string referring to the watchlist|
 |WatchlistId|string|The watchlist ARM resource name|
-|WatchlistItem|string|JSON object with key-value pairs from the input watchlist source|
+|WatchlistItem|dynamic|JSON object with key-value pairs from the input watchlist source|
 |WatchlistItemId|string|The watchlist item unique Id|
 |WatchlistName|string|Display name of Watchlist|

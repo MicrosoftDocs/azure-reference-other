@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # DHCPActivity
@@ -36,6 +36,7 @@ ms.date: 9/17/2020
 |ManagementGroupName|string|Workspace ID from OpsManager|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|Source System of Solution (OpsManager)|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|Timestamp (UTC) of the DHCP activity|
 |Type|string|The name of the table|

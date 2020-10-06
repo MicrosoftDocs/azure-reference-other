@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Azure Monitor Logs table reference organized by solution
@@ -53,6 +53,10 @@ ms.date: 9/17/2020
 - [SecurityAlert](securityalert.md)
 - [SecurityIoTRawEvent](securityiotrawevent.md)
 - [SecurityRecommendation](securityrecommendation.md)
+
+## AzureSentinelPrivatePreview
+
+- [OfficeActivity](officeactivity.md)
 
 ## BehaviorAnalyticsInsights
 
@@ -319,6 +323,8 @@ ms.date: 9/17/2020
 - [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 - [NWConnectionMonitorDestinationListenerResult](nwconnectionmonitordestinationlistenerresult.md)
 - [AppServiceAntivirusScanAuditLogs](appserviceantivirusscanauditlogs.md)
+- [AADProvisioningLogs](aadprovisioninglogs.md)
+- [ADXIngestionBatching](adxingestionbatching.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
 ## Microsoft365Analytics
@@ -441,6 +447,8 @@ ms.date: 9/17/2020
 - [SecurityAlert](securityalert.md)
 - [SecurityRecommendation](securityrecommendation.md)
 - [SecurityNestedRecommendation](securitynestedrecommendation.md)
+- [SecureScoreControls](securescorecontrols.md)
+- [SecureScores](securescores.md)
 
 ## SecurityCenter
 
@@ -451,6 +459,8 @@ ms.date: 9/17/2020
 - [SecurityBaselineSummary](securitybaselinesummary.md)
 - [SecurityAlert](securityalert.md)
 - [SecurityNestedRecommendation](securitynestedrecommendation.md)
+- [SecureScoreControls](securescorecontrols.md)
+- [SecureScores](securescores.md)
 
 ## SecurityCenterFree
 
@@ -462,6 +472,8 @@ ms.date: 9/17/2020
 - [SecurityAlert](securityalert.md)
 - [SecurityRecommendation](securityrecommendation.md)
 - [SecurityNestedRecommendation](securitynestedrecommendation.md)
+- [SecureScoreControls](securescorecontrols.md)
+- [SecureScores](securescores.md)
 
 ## SecurityInsights
 
@@ -487,10 +499,6 @@ ms.date: 9/17/2020
 - [DeviceNetworkInfo](devicenetworkinfo.md)
 - [DeviceProcessEvents](deviceprocessevents.md)
 - [DeviceRegistryEvents](deviceregistryevents.md)
-
-## SecurityInsightsPrivatePreview
-
-- [OfficeActivity](officeactivity.md)
 
 ## ServiceMap
 

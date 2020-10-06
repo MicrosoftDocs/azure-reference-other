@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HDInsightStormTopologyMetrics
@@ -72,6 +72,7 @@ ms.date: 9/17/2020
 |SourceSystem|string||
 |SpoutId|string|The ID of the spout.|
 |Status|string|The status of the topology.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Tasks|int|The number of tasks running.|
 |TasksTotal|int|The total amount of tasks run.|
 |TenantId|string||

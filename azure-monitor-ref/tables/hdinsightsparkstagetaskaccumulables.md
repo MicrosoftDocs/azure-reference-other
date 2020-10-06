@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HDInsightSparkStageTaskAccumulables
@@ -45,6 +45,7 @@ ms.date: 9/17/2020
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Role|string|The type of node where the metric was collected.|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
 |Type|string|The name of the table|

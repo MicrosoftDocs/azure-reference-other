@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AppServiceAntivirusScanLogs
@@ -31,6 +31,7 @@ ms.date: 9/17/2020
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ScanStatus|string|Status of the scan|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime||
 |TimeStamp|datetime|Time when event is generated|

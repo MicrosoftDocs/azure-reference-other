@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # HDInsightSparkSQLExecutionEvents
@@ -44,6 +44,7 @@ ms.date: 9/17/2020
 |SourceSystem|string||
 |SparkPlanInfo|string|Json object containing information on the Spark SQL execution.|
 |StartTime|datetime|The time (UTC) the Spark SQL execution started.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
 |Type|string|The name of the table|

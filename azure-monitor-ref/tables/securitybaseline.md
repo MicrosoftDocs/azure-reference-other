@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # SecurityBaseline
@@ -18,13 +18,13 @@ ms.date: 9/17/2020
 - Security
 ## Solutions
 
-- SecurityCenterFree
-- SecurityCenter
 - Security and Audit
+- SecurityCenter
+- SecurityCenterFree
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -49,8 +49,8 @@ ms.date: 9/17/2020
 |OSName|string||
 |Resource|string||
 |ResourceGroup|string||
-|ResourceId|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResourceId|string||
 |ResourceProvider|string||
 |ResourceType|string||
 |RuleSetting|string||
@@ -59,5 +59,6 @@ ms.date: 9/17/2020
 |SourceComputerId|string||
 |SourceSystem|string||
 |SubscriptionId|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime||
 |Type|string|The name of the table|

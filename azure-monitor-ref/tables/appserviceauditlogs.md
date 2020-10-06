@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AppServiceAuditLogs
@@ -35,6 +35,7 @@ ms.date: 9/17/2020
 |Protocol|string|Authentication protocol|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|Time when event is generated|
 |Type|string|The name of the table|

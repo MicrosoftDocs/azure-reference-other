@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # SucceededIngestion
@@ -42,6 +42,7 @@ ms.date: 9/17/2020
 |ResultType|string|The final state of this data ingestion operation|
 |RootActivityId|string|The ingestion's activity Id|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SucceededOn|datetime|Time at which this ingest operation successfully ended|
 |Table|string|The name of the target table into which the data is ingested|
 |TenantId|string||

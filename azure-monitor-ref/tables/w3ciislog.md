@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # W3CIISLog
@@ -21,8 +21,8 @@ ms.date: 9/17/2020
 - LogManagement
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -68,6 +68,7 @@ ms.date: 9/17/2020
 |sPort|int|Server port number that is configured for the service.|
 |sSiteName|string|Name of the IIS site.|
 |StorageAccount|string|Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TimeTaken|long|Length of time to process the request in milliseconds.|
 |TLPLevel|string|Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.|

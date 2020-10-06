@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ComputerGroup
@@ -15,9 +15,9 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- IT & Management Tools
-- Virtual Machines
 - Azure Monitor
+- Virtual Machines
+- IT & Management Tools
 ## Solutions
 
 - LogManagement
@@ -40,5 +40,6 @@ ms.date: 9/17/2020
 |GroupSourceName|string|Name of the source that the group was collected from. For Active Directory this is the domain name.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|OpsManager for all records of this type.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the computer group was created or updated.|
 |Type|string|The name of the table|

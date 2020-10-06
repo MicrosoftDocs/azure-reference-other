@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # WindowsEvent
@@ -18,13 +18,13 @@ ms.date: 9/17/2020
 - Security
 ## Solutions
 
-- WEF_10xDSRE
-- WinLog
-- WindowsEventForwarding
-- WEF_10x
 - CustomizedWindowsEventsFiltering
 - InternalWindowsEvent
 - WEFInternalUat
+- WEF_10x
+- WEF_10xDSRE
+- WinLog
+- WindowsEventForwarding
 
 
 
@@ -42,6 +42,7 @@ ms.date: 9/17/2020
 |ManagementGroupName|string||
 |Provider|string||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Task|int||
 |TimeGenerated|datetime||
 |Type|string|The name of the table|

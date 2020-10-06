@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AADDomainServicesLogonLogoff
@@ -15,8 +15,8 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Security
 - Azure Resources
+- Security
 ## Solutions
 
 - AADDomainServices
@@ -44,13 +44,14 @@ ms.date: 9/17/2020
 |LogonType|int||
 |OperationName|string||
 |RecordId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |RestrictedAdminMode|string||
 |ResultDescription|string||
 |ResultType|string||
 |SidList|string||
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SubStatus|string||
 |TargetDomainName|string||
 |TargetInfo|string||

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # InsightsMetrics
@@ -15,21 +15,21 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Azure Resources
-- Containers
 - Virtual Machines
+- Containers
+- Azure Resources
 ## Solutions
 
-- Service Map
-- Azure Monitor for VMs
 - ContainerInsights
 - InfrastructureInsights
+- Service Map
+- Azure Monitor for VMs
 ## Resource types
 
-- Kubernetes Services
-- IoT Hub
 - Virtual machines
 - Virtual Machine Scale Sets
+- Kubernetes Services
+- IoT Hub
 
 
 
@@ -45,6 +45,7 @@ ms.date: 9/17/2020
 |Origin|string|Source of the metric. Ex;- 'container.azm.ms/telegraf'|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|Type of agent the data was collected from. Ex;- 'Insights' |
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Tags|string|Dimensions of the metric in json|
 |TimeGenerated|datetime|Date and time the record was created.|
 |Type|string|The name of the table|

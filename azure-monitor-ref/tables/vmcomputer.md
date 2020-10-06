@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # VMComputer
@@ -18,12 +18,12 @@ ms.date: 9/17/2020
 - Virtual Machines
 ## Solutions
 
-- Azure Monitor for VMs
 - Service Map
+- Azure Monitor for VMs
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -79,6 +79,7 @@ ms.date: 9/17/2020
 |PhysicalMemoryMB|long|The physical memory in MB|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string|The source of the data collected (Insights)|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TimeZone|string|The UTC timezone offset of the server.|
 |Type|string|The name of the table|

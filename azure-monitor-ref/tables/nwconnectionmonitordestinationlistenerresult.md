@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # NWConnectionMonitorDestinationListenerResult
@@ -45,6 +45,7 @@ ms.date: 9/17/2020
 |RecordId|string|The record id for unique identification of test result record|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TestConfigurationName|string|The test configuration name to which the test belongs to|
 |TestGroupName|string|The test group name to which the test belongs to|

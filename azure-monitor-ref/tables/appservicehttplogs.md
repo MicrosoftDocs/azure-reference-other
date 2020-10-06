@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # AppServiceHTTPLogs
@@ -48,6 +48,7 @@ ms.date: 9/17/2020
 |ScWin32Status|string|Windows status code on HTTP request|
 |SourceSystem|string||
 |SPort|string|Server port number|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|Time when event is generated|
 |TimeTaken|int|Time taken by HTTP request in milliseconds|

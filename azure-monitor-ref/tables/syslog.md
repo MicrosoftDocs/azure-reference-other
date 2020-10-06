@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # Syslog
@@ -15,15 +15,15 @@ ms.date: 9/17/2020
 
 ## Categories
 
-- Security
 - Virtual Machines
+- Security
 ## Solutions
 
 - LogManagement
 ## Resource types
 
-- Virtual Machine Scale Sets
 - Virtual machines
+- Virtual Machine Scale Sets
 
 
 
@@ -42,6 +42,7 @@ ms.date: 9/17/2020
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SeverityLevel|string|Severity level of the event.|
 |SourceSystem|string|Type of agent the data was collected from. For syslog the value is typically Linux.|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SyslogMessage|string|Text of the message.|
 |TimeGenerated|datetime|Date and time the record was created.|
 |Type|string|The name of the table|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # ADReplicationResult
@@ -50,6 +50,7 @@ ms.date: 9/17/2020
 |SourceServer|string|Source Server Name|
 |SourceSiteName|string|Source Site Name|
 |SourceSystem|string|Source of the Output|
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime|Date and time the record was created.|
 |TombstoneLifetime|string|Length of time a deleted object persisted in the database|
 |Type|string|The name of the table|

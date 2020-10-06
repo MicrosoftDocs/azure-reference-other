@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/17/2020
+ms.date: 10/1/2020
 ---
 
 # SecurityNestedRecommendation
@@ -15,9 +15,9 @@ ms.date: 9/17/2020
 
 ## Solutions
 
-- SecurityCenterFree
-- SecurityCenter
 - Security and Audit
+- SecurityCenter
+- SecurityCenterFree
 
 
 
@@ -44,6 +44,7 @@ ms.date: 9/17/2020
 |ResourceGroup|string|Resource group name|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SourceSystem|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The date and time the sub-assessment was generated|
 |Type|string|Resource type|
