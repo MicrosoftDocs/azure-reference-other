@@ -168,7 +168,7 @@ If you are exporting a dataset to a CSV file, use [Edit Metadata](edit-metadata.
 
 If you need to get data from a source that is not in the list, there are various workarounds you can try: 
 
-- To upload data from a file on your computer, click **New** in Studio (classic), select **Dataset**, and then select **From Local File**. Locate the file and specify the format (TSV, CSV, etc.). See [this article](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-2-upload-data/) for a walkthrough.
+- To upload data from a file on your computer, click **New** in Studio (classic), select **Dataset**, and then select **From Local File**. Locate the file and specify the format (TSV, CSV, etc.). For more information, see [Import training data into Studio (classic)](https://docs.microsoft.com/azure/machine-learning/classic/import-data).
 
 - Use R or Python.  You can use the [Execute R Script](execute-r-script.md) module with an appropriate R package to get data from other cloud databases.
 

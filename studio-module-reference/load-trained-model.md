@@ -47,8 +47,8 @@ You can save models by using the Studio (classic) interface, or using an experim
 
 For step-by step information about how to create a training web service, see these articles: 
 
-+ [Retrain Machine Learning Models Programmatically](https://docs.microsoft.com/azure/machine-learning/machine-learning-retrain-models-programmatically)
-+ [Saving an experiment as a Web service](https://docs.microsoft.com/azure/machine-learning/machine-learning-model-progression-experiment-to-web-service).  
++ [Retrain Machine Learning Models Programmatically](https://docs.microsoft.com/azure/machine-learning/classic/retrain-machine-learning-model)
++ [Saving an experiment as a Web service](https://docs.microsoft.com/azure/machine-learning/classic/deploy-a-machine-learning-web-service)
 
 #### Save a model in Studio (classic)
 
@@ -107,7 +107,7 @@ Yes, but only when the experiment is run in Azure Machine Learning Studio (class
 
 #### Is there a way to automate the process
 
-You can use PowerShell to simplify or automate many tasks in Azure Machine Learning. For example, you can download the contents of an entire experiment or a particular module, export the definition of web service, or invoke the web service execution API. For more information, see [PowerShell Module for Microsoft Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-powershell-module).
+You can use PowerShell to simplify or automate many tasks in Azure Machine Learning. For example, you can download the contents of an entire experiment or a particular module, export the definition of web service, or invoke the web service execution API. For more information, see [PowerShell Module for Microsoft Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/classic/powershell-module).
 
 ## Module parameters
 
