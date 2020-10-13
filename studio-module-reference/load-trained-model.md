@@ -47,8 +47,8 @@ You can save models by using the Studio (classic) interface, or using an experim
 
 For step-by step information about how to create a training web service, see these articles: 
 
-+ [Retrain Machine Learning Models Programmatically](https://docs.microsoft.com/azure/machine-learning/classic/retrain-machine-learning-model))
-+ [Saving an experiment as a Web service](https://docs.microsoft.com/azure/machine-learning/classic/deploy-a-machine-learning-web-service).  
++ [Retrain Machine Learning Models Programmatically](https://docs.microsoft.com/azure/machine-learning/classic/retrain-machine-learning-model)
++ [Saving an experiment as a Web service](https://docs.microsoft.com/azure/machine-learning/classic/deploy-a-machine-learning-web-service)
 
 #### Save a model in Studio (classic)
 
