@@ -49,8 +49,6 @@ The following articles introduce common data scenarios in machine learning:
   
   This article describes how to get your data into Azure, and then create an experiment.
   
-  Learn how to use ETL tools to integrate your data warehouse with Machine Learning.
-  
 ### Advanced data science
   
 -   [Access datasets with Python by using the Azure Machine Learning Python client library](https://docs.microsoft.com/azure/machine-learning/machine-learning-python-data-access)
