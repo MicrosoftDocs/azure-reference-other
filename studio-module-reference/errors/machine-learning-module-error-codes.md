@@ -187,7 +187,7 @@ If the complete path to a blob was specified, verify that the path is specified 
 
 ### Resources
 
-See this article for an explanation of the different storage options that are supported: [Import data into Azure Machine Learning Studio (classic) from various online data sources with the Import Data module](https://docs.microsoft.com/azure/machine-learning/machine-learning-import-data-from-online-sources)
+See this article for an explanation of the different storage options that are supported: [Import data into Azure Machine Learning Studio (classic) from various online data sources with the Import Data module](../import-data.md)
 
 ### Sample experiments
 
@@ -969,13 +969,6 @@ Another reason you might get this error if you try to use a column containing fl
 |Exception Messages|  
 |------------------------|  
 |User features or/and items are required but not provided.|  
-  
- > [!TIP]
- >  Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
- >  
- >  -  [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
- >  -  [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
-  
 
 ## Error 0054  
  Exception occurs if there is too few distinct values in the column to complete operation.  

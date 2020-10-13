@@ -125,11 +125,11 @@ maml.mapOutputPort("data")
 
 Begin with this tutorial that describes how to build a custom R module:
 
-+ [Extend Your Experiment with R](https://docs.microsoft.com/azure/machine-learning/machine-learning-custom-r-modules) 
++ [Extend Your Experiment with R](https://docs.microsoft.com/azure/machine-learning/classic/custom-r-modules) 
 
 This article discusses the differences between the two scoring engines in detail, and explains how you can choose a scoring method when you deploy your experiment as a web service:
 
-+ [Machine Learning: Consume Web Services](https://docs.microsoft.com/azure/machine-learning/machine-learning-consume-web-services)
++ [Machine Learning: Consume Web Services](https://docs.microsoft.com/azure/machine-learning/classic/consume-web-services)
 
 This experiment in the Azure AI Gallery demonstrates how you can create a custom R module that does training, scoring, and evaluation:
 
@@ -161,7 +161,6 @@ For additional R code samples and help with R and its applications, see these re
 
 - [Bioconductor](https://bioconductor.org/): A large repository of R packages in bioinformatics.
 
-- [Quick Start Guide for R](https://go.microsoft.com/fwlink/?LinkId=524954): A detailed walkthrough of a time series forecasting example, and tips about working with R in Machine Learning Studio (classic).
 
 ## See also
 

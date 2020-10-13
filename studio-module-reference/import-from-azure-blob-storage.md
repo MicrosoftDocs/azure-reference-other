@@ -146,7 +146,7 @@ There are a variety of ways to get new data and use it to regularly update an ex
 
 - [Use SSIS to move data to Blob storage](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-move-data-to-azure-blob-using-ssis)
 
-- [Retrain experiments programmatically](https://docs.microsoft.com/azure/machine-learning/machine-learning-retrain-models-programmatically)
+- [Retrain experiments programmatically](https://docs.microsoft.com/azure/machine-learning/classic/retrain-machine-learning-model)
 
 Automating the execution of the experiment generally requires creation of a web service, which can then be triggered by  a task scheduler, PowerShell, or other custom code.
 

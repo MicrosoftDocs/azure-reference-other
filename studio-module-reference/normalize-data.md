@@ -139,8 +139,6 @@ If you are unsure which type of normalization suits your data, see these resourc
 
 - [Data Preparation for Data Mining](https://dl.acm.org/citation.cfm?id=299577) covers many data preparation steps in depth. See Chapter 7 for a discussion of data normalization. 
 
-- The [Data Science Essentials course](https://www.edx.org/course/data-science-essentials-microsoft-dat203-1x-1) from EdX with Microsoft includes several lessons on the statistical methods for normalization.
-
 ## Expected inputs
 
 |Name|Type|Description|  

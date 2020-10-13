@@ -32,7 +32,7 @@ After you create the model, you can use [Train Model](train-model.md) to train t
 > [!WARNING]
 > Currently it is not possible to pass the scored results of an R model to [Evaluate Model](evaluate-model.md) or [Cross-Validate Model](cross-validate-model.md). If you need to evaluate a model, you can write custom R script and run it using the [Execute R Script](execute-r-script.md) module.  
 
-In addition to using the **Create R Model** to save and re-use custom R modules, you can create your own implementation of a modeling and data management process using R, upload the files in zipped format to your workspace, and then register the package as a custom module. For more information, see [Custom R Modules](https://azure.microsoft.com/documentation/articles/machine-learning-custom-r-modules/).  
+In addition to using the **Create R Model** to save and re-use custom R modules, you can create your own implementation of a modeling and data management process using R, upload the files in zipped format to your workspace, and then register the package as a custom module. For more information, see [Custom R Modules](https://docs.microsoft.com/azure/machine-learning/classic/custom-r-modules).  
 
 ## How to configure Create R Model
 
