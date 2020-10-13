@@ -50,7 +50,7 @@ The score, or predicted value, can be in many different formats, depending on th
 
 A common use of scoring is to return the output as part of a predictive web service. For more information, see this tutorial on how to create a web service based on an experiment in Azure ML Studio (classic):
 
-+ [Publish a web service from Azure ML Studio (classic)](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-5-publish-web-service/)
++ [Publish a web service from Azure ML Studio (classic)](https://docs.microsoft.com/azure/machine-learning/classic/tutorial-part3-credit-risk-deploy)
 
 
 ## Examples

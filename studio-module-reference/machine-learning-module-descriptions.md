@@ -12,22 +12,20 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning module descriptions
 
-This topic provides an overview of all the *modules* included in Azure Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models. 
-
-
+This topic provides an overview of all the *modules* included in Azure Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-## What is a module?  
+## What is a module?
 
 In Machine Learning Studio (classic), a module is a building block for creating experiments. Each module encapsulates a specific machine learning algorithm, function, or code library that can act on data in your workspace. The modules are designed to accept connections from other modules, to share and modify data. 
 
-The code that runs in each module comes from many sources. These include open source libraries and languages, algorithms developed by Microsoft Research, and tools for working with Azure and other cloud services. 
+The code that runs in each module comes from many sources. These include open source libraries and languages, algorithms developed by Microsoft Research, and tools for working with Azure and other cloud services.
  
  > [!TIP]
 > Looking for machine learning algorithms? See the [Machine Learning](machine-learning-initialize-model.md) category, which contains modules for decision trees, clustering, neural networks, among others. The [Train](machine-learning-train.md) and [Evaluate](machine-learning-evaluate.md) categories include modules to help train and test your models. 
 
-By connecting and configuring modules, you can create a workflow that reads data from external sources, prepares it for analysis, applies machine learning algorithms, and generates results. 
+By connecting and configuring modules, you can create a workflow that reads data from external sources, prepares it for analysis, applies machine learning algorithms, and generates results.
 
 When an *experiment* is open in Machine Learning Studio (classic), you can see the complete list of current modules in the navigation pane at left. You drag these building blocks into your experiment, and then connect them to create a complete machine learning workflow, called an experiment. 
 
@@ -37,9 +35,9 @@ Sometimes modules are updated to add new functionality, or to remove older code.
 
 For an example of how to build a complete machine learning experiment, see these tutorials:  
   
--   [Develop a predictive solution by using Azure Machine Learning](https://azure.microsoft.com/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/)  
+-   [Develop a predictive solution by using Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/classic/tutorial-part1-credit-risk)  
   
--   [Create a simple experiment in Azure Machine Learning Studio (classic)](https://azure.microsoft.com/documentation/articles/machine-learning-create-experiment/)  
+-   [Create a simple experiment in Azure Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/classic/create-experiment)  
  
 ##  Module categories
 

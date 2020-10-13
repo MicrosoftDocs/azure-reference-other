@@ -45,11 +45,9 @@ The following articles introduce common data scenarios in machine learning:
   
   Learn how to manage data for machine learning in the cloud. The information in this article is based on CRISP-DM, an industry standard. The article provides end-to-end walkthroughs that demonstrate the integration of machine learning with cloud data solutions such as Azure HDInsight and SQL Database.
   
--   [Import your training data into Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-import-data)
+-   [Import your training data into Machine Learning Studio (classic)](import-data.md)
   
   This article describes how to get your data into Azure, and then create an experiment.
-  
--   [Data preparation for machine learning by using SQL Server Integration Services](https://blogs.msdn.com/b/ssis/archive/2015/06/25/data-preparation-for-azure-machine-learning-using-ssis.aspx)
   
   Learn how to use ETL tools to integrate your data warehouse with Machine Learning.
   
