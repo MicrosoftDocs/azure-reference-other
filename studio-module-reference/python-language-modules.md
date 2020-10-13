@@ -23,7 +23,7 @@ For more information about the Python envionment, see [Microsoft Azure Machine L
 
 For more information about how you can use Python code in Azure Machine Learning, see these resources:
 
-- [Execute Python Scripts in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-execute-python-scripts)
+- [Execute Python Scripts in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/classic/execute-python-scripts)
 
 - [Access datasets with Python using the Azure Machine Learning client library](https://docs.microsoft.com/azure/machine-learning/machine-learning-python-data-access)
 
