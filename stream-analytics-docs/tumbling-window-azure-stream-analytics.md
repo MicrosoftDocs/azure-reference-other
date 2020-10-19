@@ -10,7 +10,7 @@ ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: cfc2fb3b-0e8e-4b5e-b3ba-8ca6fea61c17
 ms.workload: data-services
-ms.date: 06/21/2019
+ms.date: 10/19/2020
 ---
 # Tumbling Window (Azure Stream Analytics)
   Tumbling windows are a series of fixed-sized, non-overlapping and contiguous time intervals. The following diagram illustrates a stream with a series of events and how they are mapped into 10-second tumbling windows.  
@@ -71,6 +71,9 @@ FROM
 GROUP BY TumblingWindow(second,15)
 HAVING Avg(machine.temperature) > 25
 ```
+
+## Time considerations
+ Every window operation outputs event at the end of the window. The windows of Azure Stream Analytics are opened at the window start time and closed at the window end time. For example, if you have a 5 minute window from 12:00 AM to 12:05 AM all events with timestamp greater than 12:00 AM and up to timestamp 12:05 AM inclusive will be included within this window. The output of the window will be a single event based on the aggregate function used with a timestamp equal to the window end time. The timestamp of the output event of the window can be projected in the SELECT statement using the System.Timestamp() property using an alias.
   
 ## See Also  
  [Hopping Window](hopping-window-azure-stream-analytics.md)   
