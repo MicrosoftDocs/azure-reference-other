@@ -10,7 +10,7 @@ ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: aff805fa-3490-49a9-81b2-ddcaac4debaf
 ms.workload: data-services
-ms.date: 06/21/2019
+ms.date: 1/19/2020
 ms.author: mamccrea
 ---
 # Hopping Window (Azure Stream Analytics)
@@ -60,6 +60,7 @@ ms.author: mamccrea
  By default, hopping windows are inclusive in the end of the window and exclusive in the beginning – for example 12:05 PM – 1:05 PM window will include events that happened exactly at 1:05 PM, but will not include events that happened at 12:05:PM (these event will be part of 12:00 PM – 01:00 PM window).    
  The Offset parameter can be used to change behavior and include the events in the beginning of the window and exclude the ones that happened in the end.  
   
+  
 ## Examples  
   
 ```SQL  
@@ -68,5 +69,7 @@ FROM Input TIMESTAMP BY EntryTime
 GROUP BY TollId, HoppingWindow(Duration(hour, 1), Hop(minute, 5), Offset(millisecond, -1))  
   
 ```  
-  
+ 
+ ## Time consideration
+Every window operation outputs event at the end of the window (in the case of hopping windows, this happens at every hop size). The windows of Azure Stream Analytics are opened at the window start time and closed at the window end time. For example, if you have a 5 minute window from 12:00 AM to 12:05 AM all events with timestamp greater than 12:00 AM and up to timestamp 12:05 AM inclusive will be included within this window. The output of the window will be a single event based on the aggregate function used with a timestamp equal to the window end time. The timestamp of the output event of the window can be projected in the SELECT statement using the System.Timestamp() property using an alias.
   
