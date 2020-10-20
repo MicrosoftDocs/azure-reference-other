@@ -1,7 +1,7 @@
 ---
 title: "ML Studio (classic): Execute R Script - Azure"
 description: Learn how to use the Execute R Script module to call and run R code in your experiments.
-ms.date: 05/06/2019
+ms.date: 10/20/2020
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
@@ -9,7 +9,7 @@ dev_langs:
   - "R"
 
 
-author: xiaoharper
+author: likebupt
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -118,6 +118,7 @@ To install any additional packages, include them in the zipped archive file.
 
     > [!NOTE]
     >  R code that runs fine in external tools might need small changes to run in an Azure ML experiment. For example, input data that you provide in CSV format should be explicitly converted to a dataset before you can use it in your code. Data and column types used in the R language also differ in some ways from the data and column types used in Azure Machine Learning. For details, see the [Technical Notes](#bkmk_Conversion) section.  
+    > **Execute R Script module** is running in a sandbox of R environment, it's **not** recommended to setup HTTP/SQL connections in this module.
 
 4.  **Random Seed**: Type a value to use inside the R environment as the random seed value. This parameter is equivalent to calling `set.seed(value)` in R code.  
 

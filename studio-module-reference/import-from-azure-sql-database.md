@@ -6,7 +6,7 @@ ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: xiaoharper
+author: likebupt
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -55,6 +55,9 @@ The following steps describe how to manually configure the import source.
     **Server user account password**: Provide the password for the specified user account.
 
     **Database query**: Type or paste a SQL statement that describes the data you want to read. Always validate the SQL statement and verify the query results beforehand, using a tool such as Visual Studio Server Explorer or SQL Server Data Tools.
+    
+    > [!NOTE]
+    >  **Import Data** module only supports inputting Database name, user account name and password as credentials.     
 
 4. If the dataset that you read into Azure Machine Learning is not expected to change between runs of the experiment, select the **Use cached results** option.
 
