@@ -22,22 +22,37 @@ Returns an array with all record values from the window.
  
  ## Syntax  
   
-```SQL   
-Collect()
+```SQL
+-- Aggregate Function Syntax
+Collect ( [ <scalar_expression> ] )
+
+-- Analytic Function Syntax
+Collect ( [ <scalar_expression> ] ) OVER ([<PARTITION BY clause>] <LIMIT DURATION clause> [<WHEN clause>])
 ```  
   
-## Arguments  
-Collect does not take any arguments.
+## Arguments
+Collect takes an optional scalar expression that allows you to specify a projection over the collected events. Without the parameter, full event records are collected.
   
 ## Return Types  
-Array of record values.  
+Array of values projected by the `<scalar_expression>` parameter, or array of record values if no parameter is provided.  
 
 ## General Remarks
 Ordering of the values within returned array is **not** guaranteed
 
-## Examples  
-  
+## Examples
+
+Collect all input events within a 10 second window.
+
 ```SQL  
 SELECT Collect() AS allEvents 
 FROM Input 
-GROUP BY TumblingWindow(second,10) 
+GROUP BY Tumbling(second, 10) 
+```
+
+Collect the sums of the `a` and `b` fields of the input events within a 10 second window.
+
+```SQL  
+SELECT Collect(a + b) AS allab 
+FROM Input 
+GROUP BY Tumbling(second,10) 
+```
