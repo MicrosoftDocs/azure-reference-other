@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/1/2020
+ms.date: 10/26/2020
 ---
 
 # SecurityAlert
@@ -34,6 +34,7 @@ ms.date: 10/1/2020
 |AlertLink|string||
 |AlertName|string||
 |AlertSeverity|string||
+|CompromisedEntity|string||
 |ConfidenceLevel|string||
 |ConfidenceScore|real||
 |Description|string||
@@ -51,7 +52,9 @@ ms.date: 10/1/2020
 |ResourceId|string||
 |SourceComputerId|string||
 |StartTime|datetime||
+|Status|string||
 |SystemAlertId|string||
+|Tactics|string||
 |TimeGenerated|datetime||
 |Type|string|The name of the table|
 |VendorName|string||
