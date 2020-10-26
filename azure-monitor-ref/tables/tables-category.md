@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/1/2020
+ms.date: 10/26/2020
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -34,6 +34,7 @@ ms.date: 10/1/2020
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [AEWAuditLogs](aewauditlogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
@@ -59,6 +60,10 @@ ms.date: 10/1/2020
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [AADDomainServicesSystemSecurity](aaddomainservicessystemsecurity.md)
+- [ABSBotRequests](absbotrequests.md)
+- [ACSBillingUsage](acsbillingusage.md)
+- [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AddonAzureBackupAlerts](addonazurebackupalerts.md)
 - [AddonAzureBackupJobs](addonazurebackupjobs.md)
 - [AddonAzureBackupPolicy](addonazurebackuppolicy.md)
@@ -69,6 +74,7 @@ ms.date: 10/1/2020
 - [ADFTriggerRun](adftriggerrun.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
+- [AEWAuditLogs](aewauditlogs.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -154,6 +160,8 @@ ms.date: 10/1/2020
 - [StorageQueueLogs](storagequeuelogs.md)
 - [StorageTableLogs](storagetablelogs.md)
 - [SucceededIngestion](succeededingestion.md)
+- [SynapseGatewayEvents](synapsegatewayevents.md)
+- [SynapseRBACEvents](synapserbacevents.md)
 - [TSIIngress](tsiingress.md)
 
 ## Containers
