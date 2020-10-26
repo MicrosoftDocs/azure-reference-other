@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/1/2020
+ms.date: 10/26/2020
 ---
 
 # Azure Monitor Logs table reference organized by solution
@@ -63,6 +63,7 @@ ms.date: 10/1/2020
 - [BehaviorAnalytics](behavioranalytics.md)
 - [UserAccessAnalytics](useraccessanalytics.md)
 - [UserPeerAnalytics](userpeeranalytics.md)
+- [IdentityInfo](identityinfo.md)
 
 ## ChangeTracking
 
@@ -325,6 +326,16 @@ ms.date: 10/1/2020
 - [AppServiceAntivirusScanAuditLogs](appserviceantivirusscanauditlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
 - [ADXIngestionBatching](adxingestionbatching.md)
+- [SynapseRBACEvents](synapserbacevents.md)
+- [SynapseGatewayEvents](synapsegatewayevents.md)
+- [ABSChannelToBotRequests](abschanneltobotrequests.md)
+- [ABSDependenciesRequests](absdependenciesrequests.md)
+- [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSSMSIncomingOperations](acssmsincomingoperations.md)
+- [ACSBillingUsage](acsbillingusage.md)
+- [AEWAuditLogs](aewauditlogs.md)
+- [ABSBotRequests](absbotrequests.md)
+- [WVDAgentHealthStatus](wvdagenthealthstatus.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
 ## Microsoft365Analytics
@@ -449,6 +460,7 @@ ms.date: 10/1/2020
 - [SecurityNestedRecommendation](securitynestedrecommendation.md)
 - [SecureScoreControls](securescorecontrols.md)
 - [SecureScores](securescores.md)
+- [SecurityRegulatoryCompliance](securityregulatorycompliance.md)
 
 ## SecurityCenter
 
@@ -461,6 +473,7 @@ ms.date: 10/1/2020
 - [SecurityNestedRecommendation](securitynestedrecommendation.md)
 - [SecureScoreControls](securescorecontrols.md)
 - [SecureScores](securescores.md)
+- [SecurityRegulatoryCompliance](securityregulatorycompliance.md)
 
 ## SecurityCenterFree
 
