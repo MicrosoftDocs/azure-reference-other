@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/1/2020
+ms.date: 10/26/2020
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -64,7 +64,7 @@ ms.date: 10/1/2020
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Azure Active Directory Sign-In Logs
+## Azure Active Directory Logs
 
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
@@ -88,6 +88,26 @@ ms.date: 10/1/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+
+## Azure Arc enabled Kubernetes
+
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+- [ContainerImageInventory](containerimageinventory.md)
+- [ContainerInventory](containerinventory.md)
+- [ContainerLog](containerlog.md)
+- [ContainerNodeInventory](containernodeinventory.md)
+- [ContainerServiceLog](containerservicelog.md)
+- [Heartbeat](heartbeat.md)
+- [InsightsMetrics](insightsmetrics.md)
+- [KubeEvents](kubeevents.md)
+- [KubeHealth](kubehealth.md)
+- [KubeMonAgentEvents](kubemonagentevents.md)
+- [KubeNodeInventory](kubenodeinventory.md)
+- [KubePodInventory](kubepodinventory.md)
+- [KubeServices](kubeservices.md)
+- [Perf](perf.md)
 
 ## Azure Blockchain Service
 
@@ -166,6 +186,9 @@ ms.date: 10/1/2020
 
 - [AzureActivity](azureactivity.md)
 
+## Azure Sentinel Anomaly Table
+
+
 ## Azure Sentinel Watchlist
 
 - [Watchlist](watchlist.md)
@@ -193,6 +216,11 @@ ms.date: 10/1/2020
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Bot Services
+
+- [ABSBotRequests](absbotrequests.md)
+- [AzureActivity](azureactivity.md)
+
 ## CDN Profiles
 
 - [AzureActivity](azureactivity.md)
@@ -203,6 +231,13 @@ ms.date: 10/1/2020
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Communication Services
+
+- [ACSBillingUsage](acsbillingusage.md)
+- [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSSMSIncomingOperations](acssmsincomingoperations.md)
+- [AzureActivity](azureactivity.md)
 
 ## Container Registries
 
@@ -295,6 +330,11 @@ ms.date: 10/1/2020
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Experiment Workspace
+
+- [AEWAuditLogs](aewauditlogs.md)
+- [AzureDiagnostics](azurediagnostics.md)
+
 ## ExpressRoute Circuits
 
 - [AzureActivity](azureactivity.md)
@@ -367,6 +407,7 @@ ms.date: 10/1/2020
 ## Kubernetes Services
 
 - [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 - [ContainerImageInventory](containerimageinventory.md)
 - [ContainerInventory](containerinventory.md)
@@ -527,6 +568,11 @@ ms.date: 10/1/2020
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Synapse Workspaces
+
+- [SynapseGatewayEvents](synapsegatewayevents.md)
+- [SynapseRBACEvents](synapserbacevents.md)
+
 ## Time Series Insights Environments
 
 - [AzureActivity](azureactivity.md)
@@ -613,6 +659,10 @@ ms.date: 10/1/2020
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Windows Virtual Desktop Agent Health Status
+
+- [WVDAgentHealthStatus](wvdagenthealthstatus.md)
 
 ## Workload Monitor
 
