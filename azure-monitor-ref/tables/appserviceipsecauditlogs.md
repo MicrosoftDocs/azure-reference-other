@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/1/2020
+ms.date: 10/26/2020
 ---
 
 # AppServiceIPSecAuditLogs
 
- Logs generated through your application which will show requests made to your web app if there were any IP access restriction rules created.
+ Logs generated through your application and pushed to Azure Monitoring.
 
 ## Categories
 
@@ -32,18 +32,16 @@ ms.date: 10/1/2020
 
 |Column|Type|Description|
 |---|---|---|
-|Category|string|The name of the operation of this event|
 |CIp|string|IP address of the client|
 |CsHost|string|Host header of the HTTP request|
 |Details|string|Additional information|
-|OperationName|string|The name of the operation of this event|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Result|string|The result whether the access is Allowed or Denied|
 |ServiceEndpoint|string|This indicates whether the access is via Virtual Network Service Endpoint communication|
 |SourceSystem|string||
 |_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
-|TimeGenerated|datetime|Time (UTC) of the HTTP Request|
+|TimeGenerated|datetime|Time of the Http Request|
 |Type|string|The name of the table|
 |XAzureFDID|string|X-Azure-FDID header (Azure Frontdoor Id) of the HTTP request|
 |XFDHealthProbe|string|X-FD-HealthProbe (Azure Frontdoor Health Probe) of the HTTP request|
