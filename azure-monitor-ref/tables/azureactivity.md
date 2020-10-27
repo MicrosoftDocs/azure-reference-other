@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/1/2020
+ms.date: 10/26/2020
 ---
 
 # AzureActivity
@@ -30,17 +30,18 @@ ms.date: 10/1/2020
 - SQL Databases
 - SQL Servers
 - SQL Managed Instances
-- Azure Database for PostgreSQL Flexible Servers
 - Data Share
+- Power BI Embedded
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Recovery Services Vaults
 - Data factories
 - Automation account
 - API Management services
-- Power BI Embedded
+- Logic Apps
+- Azure Database for PostgreSQL Flexible Servers
+- Service Fabric Clusters
 - Azure Database for MariaDB Servers
-- Device Provisioning Services
 - Event Hubs
 - Bastions
 - Stream Analytics jobs
@@ -57,44 +58,46 @@ ms.date: 10/1/2020
 - ExpressRoute Circuits
 - Firewalls
 - Application Gateways
-- Logic Apps
-- Azure API for FHIR
-- Service Fabric Clusters
+- Device Provisioning Services
+- Machine Learning
 - Azure Cosmos DB
-- Batch Accounts
+- IoT Hub
 - Analysis Services
 - Workload Monitor
 - Event Grid Topics
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
-- CDN Profiles
 - Desktop Virtualization Host Pools
+- Desktop Virtualization Application Groups
 - Application Insights
 - Azure Resource Group
 - Azure Subscription
 - Default schema for a resource
 - HDInsight Clusters
 - Network Watcher - Connection Monitor
-- Desktop Virtualization Application Groups
+- Bot Services
+- Communication Services
+- Batch Accounts
+- CDN Profiles
 - Azure Spring Cloud
 - Media Services
-- Azure Cache for Redis
-- IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
+- Azure Arc enabled Kubernetes
 - Kubernetes Services
 - Virtual Machine Scale Sets
 - Virtual machines
 - Event Grid Domains
+- Azure API for FHIR
 - Azure Blockchain Service
-- Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
 - SignalR
 - Storage Accounts
 - Key Vaults
 - Cognitive Services
-- Machine Learning
+- Azure Cache for Redis
+- Azure AD Domain Services
 - Service Bus
 
 

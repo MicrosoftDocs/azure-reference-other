@@ -26,6 +26,18 @@
     href: tables/aadprovisioninglogs.md
   - name: AADServicePrincipalSignInLogs
     href: tables/aadserviceprincipalsigninlogs.md
+  - name: ABSBotRequests
+    href: tables/absbotrequests.md
+  - name: ABSChannelToBotRequests
+    href: tables/abschanneltobotrequests.md
+  - name: ABSDependenciesRequests
+    href: tables/absdependenciesrequests.md
+  - name: ACSBillingUsage
+    href: tables/acsbillingusage.md
+  - name: ACSChatIncomingOperations
+    href: tables/acschatincomingoperations.md
+  - name: ACSSMSIncomingOperations
+    href: tables/acssmsincomingoperations.md
   - name: ADAssessmentRecommendation
     href: tables/adassessmentrecommendation.md
   - name: ADFSSISIntegrationRuntimeLogs
@@ -64,6 +76,8 @@
     href: tables/aegdeliveryfailurelogs.md
   - name: AegPublishFailureLogs
     href: tables/aegpublishfailurelogs.md
+  - name: AEWAuditLogs
+    href: tables/aewauditlogs.md
   - name: AmlComputeCpuGpuUtilization
     href: tables/amlcomputecpugpuutilization.md
   - name: AmlRunStatusChangedEvent
@@ -262,6 +276,8 @@
     href: tables/heartbeat.md
   - name: HuntingBookmark
     href: tables/huntingbookmark.md
+  - name: IdentityInfo
+    href: tables/identityinfo.md
   - name: InboundConnection
     href: tables/inboundconnection.md
   - name: InsightsMetrics
@@ -348,6 +364,8 @@
     href: tables/securityincident.md
   - name: SecurityNestedRecommendation
     href: tables/securitynestedrecommendation.md
+  - name: SecurityRegulatoryCompliance
+    href: tables/securityregulatorycompliance.md
   - name: SignalRServiceDiagnosticLogs
     href: tables/signalrservicediagnosticlogs.md
   - name: SQLAssessmentRecommendation
@@ -362,6 +380,10 @@
     href: tables/storagetablelogs.md
   - name: SucceededIngestion
     href: tables/succeededingestion.md
+  - name: SynapseGatewayEvents
+    href: tables/synapsegatewayevents.md
+  - name: SynapseRBACEvents
+    href: tables/synapserbacevents.md
   - name: Syslog
     href: tables/syslog.md
   - name: ThreatIntelligenceIndicator
@@ -398,6 +420,8 @@
     href: tables/windowsevent.md
   - name: WireData
     href: tables/wiredata.md
+  - name: WVDAgentHealthStatus
+    href: tables/wvdagenthealthstatus.md
   - name: WVDCheckpoints
     href: tables/wvdcheckpoints.md
   - name: WVDConnections
