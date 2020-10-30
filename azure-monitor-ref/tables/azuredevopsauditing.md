@@ -38,7 +38,7 @@ ms.date: 10/26/2020
 |Details|string|Description of what happened.|
 |Id|string|The identifier for the audit event, unique across services.|
 |IpAddress|string|IP address where the event originated.|
-|OperationName|string|The unique identifier for the type of auditing event that occurred. For example, Git.CreateRepo identifies the an auditing event for Git repository creation.|
+|OperationName|string|The unique identifier for the type of auditing event that occurred. For example, Git.CreateRepo identifies an auditing event for Git repository creation.|
 |ProjectId|string|Unique identifier of the project that an auditing event occurred in. If not provided then the event isn't scoped to a particular project.|
 |ProjectName|string|Friendly name of the project that an auditing event occurred in. If not provided then the event isn't scoped to a particular project.|
 |ScopeDisplayName|string|User friendly name for the scope level that an auditing event occurred at.|
