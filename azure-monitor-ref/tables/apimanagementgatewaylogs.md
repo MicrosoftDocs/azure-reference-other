@@ -36,9 +36,9 @@ ms.date: 10/26/2020
 |BackendId|string||
 |BackendMethod|string||
 |BackendProtocol|string||
-|BackendRequestHeaders|dynamic||
+|BackendRequestHeaders|dynamic|An object of all traced backend request headers. Note: Enable header logging in Api > Settings > Diagnostic Logs|
 |BackendResponseCode|int||
-|BackendResponseHeaders|dynamic||
+|BackendResponseHeaders|dynamic|An object of all traced backend response headers. Note: Enable header logging in Api > Settings > Diagnostic Logs|
 |BackendTime|long||
 |BackendUrl|string||
 |Cache|string||
@@ -62,11 +62,11 @@ ms.date: 10/26/2020
 |OperationName|string||
 |ProductId|string||
 |Region|string||
-|RequestHeaders|dynamic||
+|RequestHeaders|dynamic|An object of all traced request headers. Note: Enable header logging in Api > Settings > Diagnostic Logs|
 |RequestSize|int||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResponseCode|int||
-|ResponseHeaders|dynamic||
+|ResponseHeaders|dynamic|An object of all traced response headers. Note: Enable header logging in Api > Settings > Diagnostic Logs|
 |ResponseSize|int||
 |SourceSystem|string||
 |_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
