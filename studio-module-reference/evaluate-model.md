@@ -2,12 +2,12 @@
 title: "ML Studio (classic): Evaluate Model - Azure"
 description: Learn how to use the Evaluate Model module to measure the accuracy of a trained model. 
 ms.custom: "formulas"
-ms.date: 05/06/2019
+ms.date: 11/13/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
 
-author: xiaoharper
+author: likebupt
 ms.author: amlstudiodocs
 manager: cgronlun
 ---
@@ -119,6 +119,8 @@ The following metrics are reported when evaluating classification models. If you
 The metrics returned for regression models are generally designed to estimate the amount of error.  A model is considered to fit the data well if the difference between observed and predicted values is small. However, looking at the pattern of the residuals (the difference between any one predicted point and its corresponding actual value) can tell you a lot about potential bias in the model.  
   
  The following metrics are reported for evaluating regression models. When you compare models, they are ranked by the metric you select for evaluation.  
+
+- **Negative log likelihood** measures the loss function, a lower score is better. Note that this metric is only calculated for **Bayesian Linear Regression** and **Decision Forest Regression**; for other algorithms, the value is `Infinity` which means for nothing.
   
 - **Mean absolute error (MAE)** measures how close the predictions are to the actual outcomes; thus, a lower score is better.  
   
