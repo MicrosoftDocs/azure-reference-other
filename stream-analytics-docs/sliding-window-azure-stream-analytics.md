@@ -20,7 +20,7 @@ ms.author: mamccrea
 
 The following diagram illustrates a stream with a series of events and how they are mapped into sliding windows of 10 seconds.
 
- ![Stream Analytics 10 second sliding window](media/sliding-window-azure-stream-analytics/streamanalytics-slidingwindow.png "Stream Analytics 10 second sliding window")
+ ![Stream Analytics 10 second sliding window](media/sliding-window-azure-stream-analytics/sliding-window.png "Stream Analytics 10 second sliding window")
   
 ## Syntax  
   
