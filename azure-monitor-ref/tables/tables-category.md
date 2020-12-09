@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -160,8 +160,11 @@ ms.date: 10/26/2020
 - [StorageQueueLogs](storagequeuelogs.md)
 - [StorageTableLogs](storagetablelogs.md)
 - [SucceededIngestion](succeededingestion.md)
-- [SynapseGatewayEvents](synapsegatewayevents.md)
-- [SynapseRBACEvents](synapserbacevents.md)
+- [SynapseGatewayApiRequests](synapsegatewayapirequests.md)
+- [SynapseIntegrationActivityRunsEnded](synapseintegrationactivityrunsended.md)
+- [SynapseIntegrationPipelineRunsEnded](synapseintegrationpipelinerunsended.md)
+- [SynapseIntegrationTriggerRunsEnded](synapseintegrationtriggerrunsended.md)
+- [SynapseRbacOperations](synapserbacoperations.md)
 - [TSIIngress](tsiingress.md)
 
 ## Containers
@@ -180,6 +183,7 @@ ms.date: 10/26/2020
 - [KubeMonAgentEvents](kubemonagentevents.md)
 - [KubeNodeInventory](kubenodeinventory.md)
 - [KubePodInventory](kubepodinventory.md)
+- [KubePVInventory](kubepvinventory.md)
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
 
@@ -310,6 +314,7 @@ ms.date: 10/26/2020
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [Anomalies](anomalies.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
