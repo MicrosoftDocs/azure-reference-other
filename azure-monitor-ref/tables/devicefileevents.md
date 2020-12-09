@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # DeviceFileEvents
@@ -47,7 +47,7 @@ ms.date: 10/26/2020
 |InitiatingProcessAccountSid|string|Security Identifier (SID) of the account that ran the process responsible for the event.|
 |InitiatingProcessAccountUpn|string|User principal name (UPN) of the account that ran the process responsible for the event.|
 |InitiatingProcessCommandLine|string|Command line used to run the process that initiated the event.|
-|InitiatingProcessCreationTime|datetime|Date and time when the process that initiated the event was started.|
+|InitiatingProcessCreationTime|datetime|Date and time when the parent of the process responsible for the event was started.|
 |InitiatingProcessFileName|string|Name of the process that initiated the event.|
 |InitiatingProcessFolderPath|string|Folder containing the process (image file) that initiated the event.|
 |InitiatingProcessId|long|Process ID (PID) of the process that initiated the event.|
