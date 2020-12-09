@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # WVDManagement
@@ -32,6 +32,7 @@ ms.date: 10/26/2020
 
 |Column|Type|Description|
 |---|---|---|
+|ClientSideIPAddress|string|The remote IP address from the client side.|
 |CorrelationId|string|The activity Id.|
 |ObjectsCreated|int|The number of objects that were created.|
 |ObjectsDeleted|int|The number of objects that were deleted.|
