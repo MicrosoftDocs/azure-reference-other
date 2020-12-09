@@ -40,6 +40,14 @@
     href: tables/acssmsincomingoperations.md
   - name: ADAssessmentRecommendation
     href: tables/adassessmentrecommendation.md
+  - name: AddonAzureBackupAlerts
+    href: tables/addonazurebackupalerts.md
+  - name: AddonAzureBackupJobs
+    href: tables/addonazurebackupjobs.md
+  - name: AddonAzureBackupProtectedInstance
+    href: tables/addonazurebackupprotectedinstance.md
+  - name: AddonAzureBackupStorage
+    href: tables/addonazurebackupstorage.md
   - name: ADFSSISIntegrationRuntimeLogs
     href: tables/adfssisintegrationruntimelogs.md
   - name: ADFSSISPackageEventMessageContext
@@ -82,6 +90,8 @@
     href: tables/amlcomputecpugpuutilization.md
   - name: AmlRunStatusChangedEvent
     href: tables/amlrunstatuschangedevent.md
+  - name: Anomalies
+    href: tables/anomalies.md
   - name: AppAvailabilityResults
     href: tables/appavailabilityresults.md
   - name: AppBrowserTimings
@@ -172,6 +182,8 @@
     href: tables/deviceapplaunch.md
   - name: DeviceEvents
     href: tables/deviceevents.md
+  - name: DeviceFileCertificateInfo
+    href: tables/devicefilecertificateinfo.md
   - name: DeviceFileEvents
     href: tables/devicefileevents.md
   - name: DeviceImageLoadEvents
@@ -200,6 +212,8 @@
     href: tables/dnsevents.md
   - name: DnsInventory
     href: tables/dnsinventory.md
+  - name: DynamicEventCollection
+    href: tables/dynamiceventcollection.md
   - name: Dynamics365Activity
     href: tables/dynamics365activity.md
   - name: Event
@@ -284,6 +298,8 @@
     href: tables/insightsmetrics.md
   - name: IntuneDeviceComplianceOrg
     href: tables/intunedevicecomplianceorg.md
+  - name: IntuneDevices
+    href: tables/intunedevices.md
   - name: IntuneOperationalLogs
     href: tables/intuneoperationallogs.md
   - name: IoTHubDistributedTracing
@@ -298,6 +314,8 @@
     href: tables/kubenodeinventory.md
   - name: KubePodInventory
     href: tables/kubepodinventory.md
+  - name: KubePVInventory
+    href: tables/kubepvinventory.md
   - name: KubeServices
     href: tables/kubeservices.md
   - name: LAQueryLogs
@@ -370,6 +388,8 @@
     href: tables/signalrservicediagnosticlogs.md
   - name: SQLAssessmentRecommendation
     href: tables/sqlassessmentrecommendation.md
+  - name: SqlVulnerabilityAssessmentScanStatus
+    href: tables/sqlvulnerabilityassessmentscanstatus.md
   - name: StorageBlobLogs
     href: tables/storagebloblogs.md
   - name: StorageFileLogs
@@ -380,10 +400,34 @@
     href: tables/storagetablelogs.md
   - name: SucceededIngestion
     href: tables/succeededingestion.md
+  - name: SynapseBigDataPoolApplicationsEnded
+    href: tables/synapsebigdatapoolapplicationsended.md
+  - name: SynapseBuiltinSqlPoolRequestsEnded
+    href: tables/synapsebuiltinsqlpoolrequestsended.md
+  - name: SynapseGatewayApiRequests
+    href: tables/synapsegatewayapirequests.md
   - name: SynapseGatewayEvents
     href: tables/synapsegatewayevents.md
+  - name: SynapseIntegrationActivityRunsEnded
+    href: tables/synapseintegrationactivityrunsended.md
+  - name: SynapseIntegrationPipelineRunsEnded
+    href: tables/synapseintegrationpipelinerunsended.md
+  - name: SynapseIntegrationTriggerRunsEnded
+    href: tables/synapseintegrationtriggerrunsended.md
   - name: SynapseRBACEvents
     href: tables/synapserbacevents.md
+  - name: SynapseRbacOperations
+    href: tables/synapserbacoperations.md
+  - name: SynapseSqlPoolDmsWorkers
+    href: tables/synapsesqlpooldmsworkers.md
+  - name: SynapseSqlPoolExecRequests
+    href: tables/synapsesqlpoolexecrequests.md
+  - name: SynapseSqlPoolRequestSteps
+    href: tables/synapsesqlpoolrequeststeps.md
+  - name: SynapseSqlPoolSqlRequests
+    href: tables/synapsesqlpoolsqlrequests.md
+  - name: SynapseSqlPoolWaits
+    href: tables/synapsesqlpoolwaits.md
   - name: Syslog
     href: tables/syslog.md
   - name: ThreatIntelligenceIndicator
