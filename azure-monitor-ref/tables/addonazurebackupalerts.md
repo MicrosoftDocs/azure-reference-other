@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # AddonAzureBackupAlerts
@@ -49,10 +49,12 @@ ms.date: 10/26/2020
 |ProtectedContainerUniqueId|string||
 |RecommendedAction|string||
 |ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |SchemaVersion|string||
 |SourceSystem|string||
 |State|string||
 |StorageUniqueId|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime||
 |Type|string|The name of the table|
 |VaultUniqueId|string||

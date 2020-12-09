@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # NWConnectionMonitorTestResult
@@ -30,6 +30,7 @@ ms.date: 10/26/2020
 
 |Column|Type|Description|
 |---|---|---|
+|AdditionalData|string|The additional data for the test|
 |AvgRoundTripTimeMs|real|The average round trip time for the test|
 |ChecksFailed|int|The total number of checks failed under the test|
 |ChecksFailedPercentThreshold|int|The checks failed percent threshold set for the test|

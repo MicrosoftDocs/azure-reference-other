@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # AddonAzureBackupPolicy
@@ -56,11 +56,13 @@ ms.date: 10/26/2020
 |PolicyTimeZone|string||
 |PolicyUniqueId|string||
 |ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |RetentionDuration|int||
 |RetentionType|string||
 |SchemaVersion|string||
 |SourceSystem|string||
 |State|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |SynchronisationFrequencyPerDay|string||
 |TimeGenerated|datetime||
 |Type|string|The name of the table|

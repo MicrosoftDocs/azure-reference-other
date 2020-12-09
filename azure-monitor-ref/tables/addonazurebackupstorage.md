@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # AddonAzureBackupStorage
@@ -38,6 +38,7 @@ ms.date: 10/26/2020
 |OperationName|string||
 |PreferredWorkloadOnVolume|string||
 |ProtectedContainerUniqueId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
 |SchemaVersion|string||
 |SourceSystem|string||
@@ -48,6 +49,7 @@ ms.date: 10/26/2020
 |StorageTotalSizeInGBs|real||
 |StorageType|string||
 |StorageUniqueId|string||
+|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TimeGenerated|datetime||
 |Type|string|The name of the table|
 |VaultUniqueId|string||
