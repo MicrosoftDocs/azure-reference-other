@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # AWSCloudTrail
@@ -31,7 +31,7 @@ ms.date: 10/26/2020
 |APIVersion|string||
 |AwsEventId|string||
 |AWSRegion|string||
-|AwsRequestId|string||
+|AwsRequestId_|string||
 |Category|string||
 |ErrorCode|int||
 |ErrorMessage|string||

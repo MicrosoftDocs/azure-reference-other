@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -106,6 +106,7 @@ ms.date: 10/26/2020
 - [KubeMonAgentEvents](kubemonagentevents.md)
 - [KubeNodeInventory](kubenodeinventory.md)
 - [KubePodInventory](kubepodinventory.md)
+- [KubePVInventory](kubepvinventory.md)
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
 
@@ -175,6 +176,14 @@ ms.date: 10/26/2020
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Azure Digital Twins
+
+- [ADTDigitalTwinsOperation](adtdigitaltwinsoperation.md)
+- [ADTEventRoutesOperation](adteventroutesoperation.md)
+- [ADTModelsOperation](adtmodelsoperation.md)
+- [ADTQueryOperation](adtqueryoperation.md)
+- [AzureActivity](azureactivity.md)
+
 ## Azure Monitor autoscale settings
 
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
@@ -188,6 +197,7 @@ ms.date: 10/26/2020
 
 ## Azure Sentinel Anomaly Table
 
+- [Anomalies](anomalies.md)
 
 ## Azure Sentinel Watchlist
 
@@ -250,6 +260,12 @@ ms.date: 10/26/2020
 
 - [ADFActivityRun](adfactivityrun.md)
 - [ADFPipelineRun](adfpipelinerun.md)
+- [ADFSSISIntegrationRuntimeLogs](adfssisintegrationruntimelogs.md)
+- [ADFSSISPackageEventMessageContext](adfssispackageeventmessagecontext.md)
+- [ADFSSISPackageEventMessages](adfssispackageeventmessages.md)
+- [ADFSSISPackageExecutableStatistics](adfssispackageexecutablestatistics.md)
+- [ADFSSISPackageExecutionComponentPhases](adfssispackageexecutioncomponentphases.md)
+- [ADFSSISPackageExecutionDataStatistics](adfssispackageexecutiondatastatistics.md)
 - [ADFTriggerRun](adftriggerrun.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -333,7 +349,7 @@ ms.date: 10/26/2020
 ## Experiment Workspace
 
 - [AEWAuditLogs](aewauditlogs.md)
-- [AzureDiagnostics](azurediagnostics.md)
+- [AzureActivity](azureactivity.md)
 
 ## ExpressRoute Circuits
 
@@ -421,6 +437,7 @@ ms.date: 10/26/2020
 - [KubeMonAgentEvents](kubemonagentevents.md)
 - [KubeNodeInventory](kubenodeinventory.md)
 - [KubePodInventory](kubepodinventory.md)
+- [KubePVInventory](kubepvinventory.md)
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
 
@@ -479,11 +496,11 @@ ms.date: 10/26/2020
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
+- [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
+- [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
 
 ## Power BI Embedded
 
@@ -570,8 +587,12 @@ ms.date: 10/26/2020
 
 ## Synapse Workspaces
 
-- [SynapseGatewayEvents](synapsegatewayevents.md)
-- [SynapseRBACEvents](synapserbacevents.md)
+- [AzureActivity](azureactivity.md)
+- [SynapseGatewayApiRequests](synapsegatewayapirequests.md)
+- [SynapseIntegrationActivityRunsEnded](synapseintegrationactivityrunsended.md)
+- [SynapseIntegrationPipelineRunsEnded](synapseintegrationpipelinerunsended.md)
+- [SynapseIntegrationTriggerRunsEnded](synapseintegrationtriggerrunsended.md)
+- [SynapseRbacOperations](synapserbacoperations.md)
 
 ## Time Series Insights Environments
 
@@ -622,6 +643,7 @@ ms.date: 10/26/2020
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
 - [Event](event.md)
+- [HealthStateChangeEvent](healthstatechangeevent.md)
 - [Heartbeat](heartbeat.md)
 - [InsightsMetrics](insightsmetrics.md)
 - [Perf](perf.md)

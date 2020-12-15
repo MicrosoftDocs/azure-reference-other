@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # NWConnectionMonitorPathResult
@@ -30,6 +30,7 @@ ms.date: 10/26/2020
 
 |Column|Type|Description|
 |---|---|---|
+|AdditionalData|string|The additional data for the test|
 |AvgRoundTripTimeMs|real|The average round trip time for the test|
 |ChecksFailed|int|The total number of checks failed under the test|
 |ChecksFailedPercentThreshold|int|The checks failed percent threshold set for the test|
@@ -70,4 +71,5 @@ ms.date: 10/26/2020
 |TestConfigurationName|string|The test configuration name to which the test belongs to|
 |TestGroupName|string|The test group name to which the test belongs to|
 |TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
+|TopologyId|string|The topology id of the path record|
 |Type|string|The name of the table|

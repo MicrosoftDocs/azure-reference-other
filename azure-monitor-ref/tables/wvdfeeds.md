@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # WVDFeeds
@@ -31,6 +31,7 @@ ms.date: 10/26/2020
 |Column|Type|Description|
 |---|---|---|
 |ClientOS|string|The OS of the client that is requesting the feed (if available).|
+|ClientSideIPAddress|string|The remote IP address from the client side.|
 |ClientType|string|The type of the client that is requesting the feed (if available).|
 |ClientVersion|string|The version of the client that is requesting the feed (if available).|
 |CorrelationId|string|The activity Id.|

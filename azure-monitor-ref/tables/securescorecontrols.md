@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # SecureScoreControls
@@ -29,7 +29,6 @@ ms.date: 10/26/2020
 |AssessedResourceId|string|The ID of the assessed resource|
 |ControlId|string|The ID of the assessed control|
 |ControlName|string|The display name of the control|
-|ControlRecommendations|dynamic|The recommendations assessed in the control|
 |ControlType|string|The type of security control (for example, BuiltIn)|
 |CurrentScore|real|The current secure score per control|
 |Description|string|The description of the control|
@@ -37,6 +36,7 @@ ms.date: 10/26/2020
 |MaxScore|int|The maximum control score|
 |NotApplicableResources|int|The number of not applicable resources|
 |PercentageScore|real|The percentage of the score (current score divided by max score)|
+|RecommendationResourceIds|dynamic|The recommendation resource IDs for the recommendations assessed in the control|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProviderType|string|Resource provider type of the assessed resource|
 |SecureScoresSubscriptionId|string|The ID of the subscription|

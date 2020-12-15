@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/26/2020
+ms.date: 12/9/2020
 ---
 
 # WVDConnections
@@ -31,8 +31,8 @@ ms.date: 10/26/2020
 |Column|Type|Description|
 |---|---|---|
 |AadTenantId|string|The AAD tenenat Id of the user.|
-|ClientIPAddress|string|The IP address of the client.|
 |ClientOS|string|The OS of the client that is connecting (if available).|
+|ClientSideIPAddress|string|The remote IP address from the client side.|
 |ClientType|string|The type of the client that is connecting (if available).|
 |ClientVersion|string|The version of the client that is connecting (if available).|
 |ConnectionType|string|The type of connection - either RAIL (RemoteApp Integrated Locally) or Desktop.|
