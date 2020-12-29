@@ -61,22 +61,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "u-sql",
-      "build_source_folder": "u-sql",
-      "build_output_subfolder": "u-sql",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "op",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "vsonline",
       "build_source_folder": "vsonline",
       "build_output_subfolder": "vsonline",
