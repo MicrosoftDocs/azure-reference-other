@@ -2309,5 +2309,5 @@ To get more help, we recommend that you post the detailed message that accompani
 [Module error codes](machine-learning-module-error-codes.md)
 
 Need more help or troubleshooting tips for Azure Machine Learning? Try these resources:  
-+ [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://azure.microsoft.com/documentation/articles/machine-learning-troubleshooting-creating-ml-workspace/)  
++ [Troubleshooting guide: Create and connect to an Machine Learning workspace](https://github.com/Huachao/azure-content/blob/master/articles/machine-learning/machine-learning-troubleshooting-creating-ml-workspace.md)  
 + [Azure Machine Learning Frequently Asked Questions (FAQ)](https://azure.microsoft.com/documentation/articles/machine-learning/studio/faq/)  
