@@ -81,7 +81,7 @@ The data section consists of comma-separated values, and looks very much like a 
   
 <code>@DATA   5.1,3.5,1.4,0.2,0</code>  
   
-For additional information about this file format, see the Weka Wiki page: [ARFF (developer version)](https://weka.wikispaces.com/ARFF+%28developer+version%29).  
+For additional information about this file format, see the Weka Wiki page: [ARFF (developer version)](https://waikato.github.io/weka-wiki/formats_and_processing/arff_developer/).  
   
 ### Current ARFF version
 
