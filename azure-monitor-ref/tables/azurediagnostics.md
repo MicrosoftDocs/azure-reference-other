@@ -60,11 +60,11 @@ AzureDiagnostics
 | where AdditionalFields.NewInfo2 == "789" and AdditionalFields.NewInfo3 == "qwerty"
 ```
 
-## Tips on using AdditionalFields column
+### Tips on using AdditionalFields column
 While general query best practices such as always filtering by time as the first clause in the query should be followed, there are some other recommendations you should consider when working with AdditionalFields:
 
 - You will need to typecast data prior to performing further operations on it. For example, if a column exists called **Perf1Sec_i** as well as a property in **AdditionalFields** called **Perf2Sec**, and you want to calculate total perf by adding both values, use something like: `AzureDiagnostics | extend TotalPerfSec = Perf1Sec_i + toint(AdditionalFields.Perf2Sec) | ....`.
-- Use [where]() clauses to reduce the data volume to the smallest possible prior to writing any complex logic to significantly improve performance. **TimeGenerated** is one column that should always be reduced to the smallest possible window. In the case of **AzureDiagnostics**, an additional filter should also always be included at the top of the query around the resource types that are being queried using the **ResourceType** column.
+- Use [where](/azure/data-explorer/kusto/query/whereoperator) clauses to reduce the data volume to the smallest possible prior to writing any complex logic to significantly improve performance. **TimeGenerated** is one column that should always be reduced to the smallest possible window. In the case of **AzureDiagnostics**, an additional filter should also always be included at the top of the query around the resource types that are being queried using the **ResourceType** column.
 - When querying very large volumes of data, it is sometimes more efficient to do a filter on **AdditionalFields** as a whole rather than parsing it. For example, for large volumes of data `AzureDiagnostics | where AdditionalFields has "Perf2Sec"` is often more efficient than `AzureDiagnostics | where isnotnull(toint(AdditionalFields.Perf2Sec))`.
 
 
