@@ -171,7 +171,7 @@ hidden Hidden auto from Data all;
 output Result auto from Hidden all;   
 ```
 
-For additional script examples, see [Guide to the Net# Neural Networks Specification Language](https://go.microsoft.com/fwlink/?LinkId=402867).
+For additional script examples, see [Guide to the Net# Neural Networks Specification Language](/azure/machine-learning/classic/azure-ml-netsharp-reference-guide).
 
 > [!TIP]
 > Neural networks can be computationally expensive, due to a number of hyperparameters and the introduction of custom network topologies. Although in many cases neural networks produce better results than other algorithms, obtaining such results may involve fair amount of sweeping (iterations) over hyperparameters.

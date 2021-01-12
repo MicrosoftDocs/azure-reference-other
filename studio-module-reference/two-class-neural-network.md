@@ -177,7 +177,7 @@ hidden Hidden auto from Data all;
 output Result auto from Hidden all;   
 ```
 
-For additional script examples, see [Guide to the Net# Neural Networks Specification Language](https://go.microsoft.com/fwlink/?LinkId=402867).
+For additional script examples, see [Guide to the Net# Neural Networks Specification Language](/azure/machine-learning/classic/azure-ml-netsharp-reference-guide).
 
 
 > [!TIP]
