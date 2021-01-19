@@ -20,7 +20,7 @@ Array functions perform actions against arrays and return information in them.
   
 Stream Analytics Query Language provides the following array functions:  
   
-||||  
+|Array functions| ...|...|  
 |-|-|-|  
 |[GetArrayElement &#40;Azure Stream Analytics&#41;](getarrayelement-azure-stream-analytics.md)|[GetArrayElements &#40;Azure Stream Analytics&#41;](getarrayelements-azure-stream-analytics.md)|[GetArrayLength &#40;Azure Stream Analytics&#41;](getarraylength-azure-stream-analytics.md)|  
   

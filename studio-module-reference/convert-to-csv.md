@@ -68,7 +68,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Requirements of the CSV format
 
-The CSV file format is a popular format supported by many machine learning frameworks. The format is variously referred to “comma-separated values” or "character-separated values."  
+The CSV file format is a popular format supported by many machine learning frameworks. The format is variously referred to "comma-separated values" or "character-separated values."  
  
 A CSV file stores tabular data (numbers and text) in plain text form. A CSV file consists of any number of records, separated by line breaks of some kind. Each record consists of fields, separated by a literal comma. In some regions, the separator might be a semi-colon. 
 
@@ -120,7 +120,7 @@ If the dataset you are exporting to a CSV file does not have column names, we re
 
 If the first column of the dataset that you convert to CSV has the name **ID**, you might get the following error when you try to open the file in Excel:  
   
-     "SYLK: File format is not valid."  
+"SYLK: File format is not valid."  
   
 To avoid this error, you must rename the column. For more information, see [https://support.microsoft.com/kb/215591](https://support.microsoft.com/kb/215591)  
 

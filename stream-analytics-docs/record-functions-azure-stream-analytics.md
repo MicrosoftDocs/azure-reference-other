@@ -19,7 +19,7 @@ Record functions get record properties or values.
   
 Stream Analytics Query Language provides the following record functions:  
   
-|||  
+|Record functions|...|  
 |-|-|  
 |[GetRecordProperties &#40;Azure Stream Analytics&#41;](getrecordproperties-azure-stream-analytics.md)|[GetRecordPropertyValue &#40;Azure Stream Analytics&#41;](getrecordpropertyvalue-azure-stream-analytics.md)|  
   

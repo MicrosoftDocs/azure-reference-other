@@ -17,7 +17,7 @@ ms.author: mamccrea
 
 Stream Analytics Query Language provides the following string functions:  
   
-||||  
+|String functions|...|...|  
 |-|-|-|  
 |[LEN &#40;Azure Stream Analytics&#41;](len-azure-stream-analytics.md)|[CONCAT &#40;Azure Stream Analytics&#41;](concat-azure-stream-analytics.md)|[CHARINDEX &#40;Azure Stream Analytics&#41;](charindex-azure-stream-analytics.md)|  
 |[LOWER &#40;Azure Stream Analytics&#41;](lower-azure-stream-analytics.md)|[SUBSTRING &#40;Azure Stream Analytics&#41;](substring-azure-stream-analytics.md)|[PATINDEX &#40;Azure Stream Analytics&#41;](patindex-azure-stream-analytics.md)|  

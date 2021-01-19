@@ -5,7 +5,6 @@ ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-
 author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
@@ -154,7 +153,7 @@ Azure Machine Learning requires UTF-8 encoding. If the data you are importing us
 
 For example, the following image contains the same multilanguage dataset exported from Excel and then imported into Azure Machine Learning under four different combinations of file type and encoding.
 
-![aml-encoding-data-problems-all](media/aml-encoding-data-problems-all.jpg)
+![Visualization of import encoding](media/aml-encoding-data-problems-all.jpg)
 
 The third example represents data that was lost during while saving from Excel in CSV format, because the correct encoding was not specified at that time. Therefore, if you run into problems, be sure to check not just the file you are importing from, but whether the file was correctly exported from the source.
 

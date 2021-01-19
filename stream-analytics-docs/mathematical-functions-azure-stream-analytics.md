@@ -17,7 +17,7 @@ ms.author: mamccrea
 
 The following scalar functions perform a calculation, usually based on input values that are provided as arguments, and return a numeric value:  
   
-|||  
+|Scalar functions|...|
 |-|-|  
 |[ABS](abs-azure-stream-analytics.md)|[CEILING](ceiling-azure-stream-analytics.md)|  
 |[EXP](exp-azure-stream-analytics.md)|[FLOOR](floor-azure-stream-analytics.md)|  

@@ -5,8 +5,6 @@ ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio"
 ms.topic: "reference"
-
-
 author: xiaoharper
 ms.author: amlstudiodocs
 manager: cgronlun
@@ -85,9 +83,9 @@ You could use the [example experiment](https://gallery.azure.ai/Experiment/Predi
   
 11.  Select the option, **Detect out-of-vocabulary rows**, if you want to generate an indicator for any rows that contain words not in the n-gram vocabulary, which are called "out of vocabulary" (OOV) words.
   
-    All lexicons are finite; therefore, your text corpus is almost guaranteed to include words that are not in the lexicon or n-gram dictionary. However, such words can have various effects on language models, including higher error rates compared to in-vocabulary (IV) words. Depending on your domain, these OOV words might represent important content words. 
-    
-    By identifying rows that contains these words, you can either compensate for the effects of these terms, or handle the terms and related rows separately.
+     All lexicons are finite; therefore, your text corpus is almost guaranteed to include words that are not in the lexicon or n-gram dictionary. However, such words can have various effects on language models, including higher error rates compared to in-vocabulary (IV) words. Depending on your domain, these OOV words might represent important content words. 
+
+     By identifying rows that contains these words, you can either compensate for the effects of these terms, or handle the terms and related rows separately.
   
 12.  Select the option, **Mark begin-of-sentence**, to add a special character sequence that indicates the beginning of a sentence in your n-gram dictionary. Prefixing n-grams that start a sentence with a special character is common in text analysis and can be useful in analyzing discourse boundaries.
   

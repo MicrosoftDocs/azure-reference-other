@@ -5,8 +5,6 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: cd42711f-1064-41d9-8165-58d5da25008f
@@ -15,6 +13,7 @@ ms.workload: data-services
 ms.date: 06/21/2019
 ms.author: mamccrea
 ---
+
 # Sliding Window (Azure Stream Analytics)
   When using a sliding window, the system is asked to logically consider all possible windows of a given length. As the number of such windows would be infinite, Azure Stream Analytics instead outputs events only for those points in time when the content of the window actually changes, in other words when an event entered or exits the window.  
 
