@@ -1,11 +1,10 @@
 ---
 title: Session Window (Azure Stream Analytics) | Microsoft Docs
-description: When using a sliding window, the system is asked to logically consider all possible windows of a given length.
+description: Learn about Session windows in Azure Stream Analytics.
 applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.workload: data-services
@@ -25,7 +24,7 @@ If events keep occurring within the specified timeout, the session window will k
 
 Thus mathematically, our session window ends if the following condition is satisfied:
 
- ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window-azure-stream-analytics/streamanalytics-sessionwindow_endconditions.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
+ ![Session window ending conditions](media/session-window-azure-stream-analytics/streamanalytics-sessionwindow_endconditions.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
 
 When a partition key is provided, the events are grouped together by the key and session window is applied to each group independently. This is useful for cases where you need different session windows for different users or devices.
 
