@@ -17,7 +17,7 @@ ms.author: mamccrea
 # Analytic Functions (Azure Stream Analytics)
   Stream Analytics Query Language provides the following analytic functions:  
   
-|||| 
+|Analytic functions| ...| ...| 
 |-|-|-| 
 |[ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)|[LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)|[LAST &#40;Azure Stream Analytics&#41;](last-azure-stream-analytics.md)|
 |[COUNT &#40;Azure Stream Analytics&#41;](count-azure-stream-analytics.md) | [MIN &#40;Azure Stream Analytics&#41;](min-azure-stream-analytics.md) | [MAX &#40;Azure Stream Analytics&#41;](max-azure-stream-analytics.md)

@@ -16,7 +16,7 @@ ms.date: 06/07/2019
 # GeoSpatial Functions (Azure Stream Analytics)
 In Stream Analytics, real-time geospatial analytics can be performed using the following capabilities:
 
-||||  
+|Geospatial capabilities|...|...|  
 |-|-|-|  
 |[CreatePoint](createpoint.md)|[CreatePolygon](createpolygon.md)|[CreateLineString](createlinestring.md)|  
 |[ST_DISTANCE](st-distance.md)|[ST_INTERSECTS](st-intersects.md)|[ST_OVERLAPS](st-overlaps.md)|  

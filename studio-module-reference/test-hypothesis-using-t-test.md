@@ -123,7 +123,7 @@ The dataset of scores contains these values, regardless of the type of t-test yo
 
 > [!TIP]
 > 
-> Remember, the goal is to determine whether you can reject the null hypothesis. A score of 0 doesn’t mean you should accept the null hypothesis: it means that you don’t have enough data, and need further investigation.
+> Remember, the goal is to determine whether you can reject the null hypothesis. A score of 0 doesn't mean you should accept the null hypothesis: it means that you don't have enough data, and need further investigation.
 
 ##  Technical notes
 
@@ -159,7 +159,7 @@ Given a single sample of scores, all independent of each other, and a normal dis
 
 5. Calculate t and degrees of freedom (df):
 
-     ![formula for degrees of freedom](media/aml-singlesampledegreesfreedom.png "AML_singlesampledegreesfreedom")  
+     ![Formula for degrees of freedom](media/aml-singlesampledegreesfreedom.png "AML_singlesampledegreesfreedom")  
 
 6. Extract probability P from distribution table T by using t and df.
 
@@ -183,7 +183,7 @@ Given a matched set of scores, with each pair independent of the other, and a no
 
 5. Calculate t and the degrees of freedom (df):
 
-     ![formula for degrees of freedom](media/aml-ttest-pairedttestdegreesfreedom.png "AML_TTest-pairedttestdegreesfreedom")
+     ![Formula for degrees of freedom df](media/aml-ttest-pairedttestdegreesfreedom.png "AML_TTest-pairedttestdegreesfreedom")
 
 6. Extract probability (P) from the distribution table (T) by using t and df.
 
