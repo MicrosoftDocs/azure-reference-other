@@ -5,8 +5,6 @@ applies_to:
   - "Azure"
 services: stream-analytics
 author: mamccrea
-
-
 ms.service: stream-analytics
 ms.topic: reference
 ms.assetid: 88431761-5ccc-4225-b9d0-d54811c6393e
@@ -43,7 +41,7 @@ CollectTop(<number of events as integer literal>) OVER ([<PARTITION BY clause>] 
 Determines the group of rows over which CollectTop is applied. The PARTITION BY clause specifies that the rows with the same partition key will be grouped together. The LIMIT DURATION clause specifies how much history is included in the group. The WHEN clause specifies a boolean condition for the rows to be included in the group. See [OVER clause](over-azure-stream-analytics.md) for more details on the usage.
 
 ## Return Types  
- Array of records of type { “rank” : bigint, “value”: record  }  
+ Array of records of type { "rank" : bigint, "value": record  }  
   
 ## Remarks  
  Null is treated as the minimal value, for more information look at [https://msdn.microsoft.com/library/ms188385.aspx](https://msdn.microsoft.com/library/ms188385.aspx)  
@@ -60,10 +58,8 @@ GROUP BY TumblingWindow(second, 5), value1
   
  Example input:  
   
-![SA-COLLECTTOP-INPUTv2.PNG](media/sa-collecttop-inputv2.png)
+![Example input](media/sa-collecttop-inputv2.png)
   
  Example output:  
 
-![SA-COLLECTTOP-OUTPUT.PNG](media/sa-collecttop-output.png)
-
-  
+![Example output](media/sa-collecttop-output.png)

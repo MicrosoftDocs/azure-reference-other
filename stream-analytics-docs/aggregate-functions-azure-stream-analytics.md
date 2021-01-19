@@ -28,7 +28,7 @@ Aggregate functions can be used as expressions only in the following:
   
  Stream Analytics Query Language provides the following aggregate functions:  
   
-||||  
+|Aggregate functions | ... | ...|  
 |-|-|-|  
 |[AVG &#40;Azure Stream Analytics&#41;](avg-azure-stream-analytics.md)|[COUNT &#40;Azure Stream Analytics&#41;](count-azure-stream-analytics.md)|[Collect &#40;Azure Stream Analytics&#41;](collect-azure-stream-analytics.md)|
 |[CollectTOP &#40;Azure Stream Analytics&#41;](collecttop-azure-stream-analytics.md)|[MAX &#40;Azure Stream Analytics&#41;](max-azure-stream-analytics.md)|[MIN &#40;Azure Stream Analytics&#41;](min-azure-stream-analytics.md)|

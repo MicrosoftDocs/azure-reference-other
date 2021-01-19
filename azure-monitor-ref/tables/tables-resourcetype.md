@@ -1,5 +1,5 @@
 ---
-title: Azure Monitor table reference index
+title: Azure Monitor table reference index (resource type)
 description: Index for tables in Azure Monitor Logs organized by resource type.
 ms.topic: reference
 ms.service: azure-monitor
@@ -497,9 +497,6 @@ ms.date: 12/9/2020
 ## Power BI Datasets
 
 - [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
-
-## Power BI Datasets
-
 - [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
 
 ## Power BI Embedded

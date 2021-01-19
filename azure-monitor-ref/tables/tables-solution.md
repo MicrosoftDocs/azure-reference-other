@@ -1,5 +1,5 @@
 ---
-title: Azure Monitor table reference index
+title: Azure Monitor table reference index (by solution)
 description: Index for tables in Azure Monitor Logs organized by solution.
 ms.topic: reference
 ms.service: azure-monitor

@@ -16,7 +16,7 @@ ms.author: mamccrea
 # Conversion Functions (Azure Stream Analytics)
   Stream Analytics Query Language provides the following conversion functions:  
   
-||||  
+|Conversion functions|...|...|  
 |-|-|-|  
 |[CAST &#40;Azure Stream Analytics&#41;](cast-azure-stream-analytics.md)|[TRY_CAST &#40;Azure Stream Analytics&#41;](try-cast-azure-stream-analytics.md)|[GetType &#40;Azure Stream Analytics&#41;](gettype-azure-stream-analytics.md)|  
   
