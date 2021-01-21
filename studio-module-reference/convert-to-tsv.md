@@ -43,7 +43,7 @@ Use the [Convert to TSV](convert-to-tsv.md) module whenever you need to download
   
 ### Results
 
-When conversion is complete, you can open the dataset, call it from R or Python code, use it in a Jupyter notebook, or save it to a local file.
+When conversion is complete, you can open the dataset, call it from R or Python code, use it in a Jupyter Notebook, or save it to a local file.
 
 If you want to download the dataset, double-click the module output, and indicate whether you want to open or save the datset.  
   
