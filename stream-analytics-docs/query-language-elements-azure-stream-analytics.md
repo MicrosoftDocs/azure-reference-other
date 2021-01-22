@@ -1,17 +1,11 @@
 ---
-title: "Query Language Elements (Azure Stream Analytics) | Microsoft Docs"
+title: "Query Language Elements (Azure Stream Analytics)"
 description: "Azure Stream Analytics provides a variety of  elements for building queries. They are summarized below."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: a1971269-c7a9-4b62-a3de-b771cc2669e0
-caps.latest.revision: 12
-ms.workload: data-services
 ms.date: 06/06/2019
-ms.author: mamccrea
 ---
 # Query Language Elements (Azure Stream Analytics)
 

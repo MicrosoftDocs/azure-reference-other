@@ -1,17 +1,11 @@
 ---
-title: "Date and Time Functions (Azure Stream Analytics) | Microsoft Docs"
+title: "Date and Time Functions (Azure Stream Analytics)"
 description: "Lists the date and time functions supported by Azure Stream Analytics."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 06786ca9-a363-45f7-9f14-45614121f100
-caps.latest.revision: 7
-ms.workload: data-services
 ms.date: 06/07/2019
-ms.author: mamccrea
 ---
 # Date and Time Functions (Azure Stream Analytics)
   Stream Analytics Query Language provides the following date and time functions:  

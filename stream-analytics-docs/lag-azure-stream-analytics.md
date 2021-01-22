@@ -1,19 +1,13 @@
 ---
-title: "LAG (Azure Stream Analytics) | Microsoft Docs"
+title: "LAG (Azure Stream Analytics)"
 description: "The LAG analytic operator allows one to look up the “previous” event in an event stream, within certain constraints."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 37ff8d85-b679-430a-bab6-6f8f313e7282
-caps.latest.revision: 13
-ms.workload: data-services
 ms.date: 12/03/2017
-ms.author: mamccrea
 ---
 # LAG (Azure Stream Analytics)
 The LAG analytic operator allows one to look up a “previous” event in an event stream, within certain constraints. It is very useful for computing the rate of growth of a variable, detecting when a variable crosses a threshold, or when a condition starts or stops being true. 

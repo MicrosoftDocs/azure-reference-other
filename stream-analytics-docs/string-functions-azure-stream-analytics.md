@@ -1,17 +1,11 @@
 ---
-title: "String Functions (Azure Stream Analytics) | Microsoft Docs"
+title: "String Functions (Azure Stream Analytics)"
 description: "Lists the String functions supported by Azure Stream Analytics."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: e9b9bc6f-84b3-4eea-b193-d50951382a7a
-caps.latest.revision: 7
-ms.workload: data-services
 ms.date: 06/07/2019
-ms.author: mamccrea
 ---
 # String Functions (Azure Stream Analytics)
 
