@@ -1,6 +1,6 @@
 ---
 title: "AnomalyDetection_SpikeAndDip (Azure Stream Analytics)"
-description: ""
+description: "Describes the AnomalyDetection_SpikeAndDip function supported by the Stream Analytics Query Language."
 applies_to: 
   - "Azure"
 ms.service: stream-analytics

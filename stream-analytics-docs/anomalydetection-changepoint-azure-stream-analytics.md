@@ -1,6 +1,6 @@
 ---
 title: "AnomalyDetection_ChangePoint (Azure Stream Analytics)"
-description: ""
+description: "Describes the AnomalyDetection_ChangePoint function supported by the Stream Analytics Query Language."
 applies_to: 
   - "Azure"
 ms.service: stream-analytics
@@ -16,12 +16,12 @@ Detects persistent anomalies in a time series event stream. The underlying machi
 
 ```SQL
 AnomalyDetection_ChangePoint(
-		<scalar_expression>, 
-		<confidence>, 
-		<historySize>)
-	OVER ([PARTITION BY <partition key>] 
-		LIMIT DURATION(<unit>, <length>)
-	[WHEN boolean_expression])
+        <scalar_expression>, 
+        <confidence>, 
+        <historySize>)
+    OVER ([PARTITION BY <partition key>] 
+        LIMIT DURATION(<unit>, <length>)
+    [WHEN boolean_expression])
 
 ```
 
@@ -73,10 +73,10 @@ In the following query sample, the first query assumes an event every 5 minutes,
 
 ```SQL
 AnomalyDetection_ChangePoint(reading, 75, 72)
-	OVER (LIMIT DURATION(hour, 6))
+    OVER (LIMIT DURATION(hour, 6))
 
 AnomalyDetection_ChangePoint(temperature, 75, 120)
-	OVER ([PARTITION BY sensorId] LIMIT DURATION(second, 120))
+    OVER ([PARTITION BY sensorId] LIMIT DURATION(second, 120))
 ```
 
 Example assuming a uniform input rate of 1 event per second in a 20 minute sliding window with a history size of 1200 events. The final SELECT statement extracts and outputs the score and anomaly status with a confidence level of 80%.
