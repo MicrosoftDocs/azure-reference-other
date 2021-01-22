@@ -1,15 +1,11 @@
 ---
-title: Session Window (Azure Stream Analytics) | Microsoft Docs
+title: Session Window (Azure Stream Analytics)
 description: Learn about Session windows in Azure Stream Analytics.
 applies_to:
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.workload: data-services
 ms.date: 06/21/2019
-ms.author: mamccrea
 ---
 # Session window (Azure Stream Analytics)
 Session windows group events that arrive at similar times, filtering out periods of time where there is no data. Session window function has three main parameters: timeout, maximum duration, and partitioning key (optional). 

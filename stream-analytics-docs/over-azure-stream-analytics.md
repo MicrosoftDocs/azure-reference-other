@@ -3,8 +3,6 @@ title: "OVER (Azure Stream Analytics)"
 description: "Defines the grouping of rows before an associated aggregate or analytic function is applied."
 applies_to: 
   - "Azure"
-author: mamccrea
-ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.date: 07/30/2019

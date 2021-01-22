@@ -1,19 +1,13 @@
 ---
-title: "VAR (Azure Stream Analytics) | Microsoft Docs"
+title: "VAR (Azure Stream Analytics)"
 description: "Returns the statistical variance of all values in a group."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 1bd52a25-c32e-47ac-84d7-21255ae8d572
-caps.latest.revision: 5
-ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: mamccrea
 ---
 # VAR (Azure Stream Analytics)
   Returns the statistical variance of all values in a group. Null values are ignored.  

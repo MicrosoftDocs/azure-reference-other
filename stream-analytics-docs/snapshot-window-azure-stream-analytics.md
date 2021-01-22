@@ -1,14 +1,10 @@
 ---
-title: Snapshot Window (Azure Stream Analytics) | Microsoft Docs
+title: Snapshot Window (Azure Stream Analytics)
 description: 
 applies_to:
   - "Azure"
-services: stream-analytics
-author: mamccrea
-ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.workload: data-services
 ms.date: 07/10/2020
 ---
 

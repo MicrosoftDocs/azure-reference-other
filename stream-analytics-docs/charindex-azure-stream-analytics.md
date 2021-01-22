@@ -1,19 +1,13 @@
 ---
-title: "CHARINDEX (Azure Stream Analytics) | Microsoft Docs"
+title: "CHARINDEX (Azure Stream Analytics)"
 description: "Searches an expression for another expression and returns its starting position if found.  "
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: ef239dd8-5b03-44c2-8d3f-3937262ab714
-caps.latest.revision: 8
-ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: mamccrea
 ---
 
 # CHARINDEX (Azure Stream Analytics)

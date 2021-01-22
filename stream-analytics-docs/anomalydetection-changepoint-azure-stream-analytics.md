@@ -1,16 +1,11 @@
 ---
-title: "AnomalyDetection_ChangePoint (Azure Stream Analytics) | Microsoft Docs"
+title: "AnomalyDetection_ChangePoint (Azure Stream Analytics)"
 description: ""
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 
-ms.workload: data-services
 ms.date: 02/05/2020
-ms.author: mamccrea
 ---
 
 # AnomalyDetection_ChangePoint (Azure Stream Analytics)

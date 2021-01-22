@@ -1,12 +1,9 @@
 ---
-title: "REPLACE (Azure Stream Analytics) | Microsoft Docs"
+title: "REPLACE (Azure Stream Analytics)"
 description: "Replaces all occurrences of a specified string value with another string value."
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.date: 01/28/2019
-ms.author: mamccrea
 ---
 # REPLACE (Azure Stream Analytics)
   Replaces all occurrences of a specified string value with another string value.  

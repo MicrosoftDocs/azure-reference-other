@@ -1,17 +1,11 @@
 ---
-title: GetArrayElements (Azure Stream Analytics) | Microsoft Docs
+title: GetArrayElements (Azure Stream Analytics)
 description: Returns a dataset with array values and indexes. Useful for parsing arrays and nested objects in JSON and AVRO data.
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
-ms.author: mamccrea
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: d1bd88f0-9c16-4a43-80dd-5cb54d8bd530
-caps.latest.revision: 8
-ms.workload: data-services
 ms.date: 05/17/2018
 ---
 # GetArrayElements (Azure Stream Analytics)

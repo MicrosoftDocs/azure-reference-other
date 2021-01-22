@@ -1,19 +1,13 @@
 ---
-title: "SELECT (Azure Stream Analytics) | Microsoft Docs"
+title: "SELECT (Azure Stream Analytics)"
 description: "Retrieves rows from input streams and enables the selection of one or many columns from one or many input streams in Azure Stream Analytics."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 727fc6f5-988c-4112-be3f-4700d0f4f849
-caps.latest.revision: 8
-ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: mamccrea
 ---
 # SELECT (Azure Stream Analytics)
   Retrieves rows from input streams and enables the selection of one or many columns from one or many input streams in Azure Stream Analytics. The main clauses used with a SELECT expression can be summarized as:  

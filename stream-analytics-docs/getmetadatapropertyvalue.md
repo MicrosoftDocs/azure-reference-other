@@ -1,16 +1,10 @@
 ---
-title: GetMetadataPropertyValue (Azure Stream Analytics) | Microsoft Docs
+title: GetMetadataPropertyValue (Azure Stream Analytics)
 description: Queries input data for specific properties.
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
-ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 7fca3d2c-2475-49e8-8c16-e268b65def22
-caps.latest.revision: 11
-ms.workload: data-services
 ms.date: 7/24/2020
 ---
 # GetMetadataPropertyValue (Azure Stream Analytics)

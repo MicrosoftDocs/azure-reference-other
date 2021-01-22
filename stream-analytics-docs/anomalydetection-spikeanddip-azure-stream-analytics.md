@@ -1,16 +1,11 @@
 ---
-title: "AnomalyDetection_SpikeAndDip (Azure Stream Analytics) | Microsoft Docs"
+title: "AnomalyDetection_SpikeAndDip (Azure Stream Analytics)"
 description: ""
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 
-ms.workload: data-services
 ms.date: 02/12/2018
-ms.author: mamccrea
 ---
 
 # AnomalyDetection_SpikeAndDip (Azure Stream Analytics)

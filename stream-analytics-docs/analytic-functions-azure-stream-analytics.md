@@ -1,17 +1,11 @@
 ---
-title: "Analytic Functions (Azure Stream Analytics) | Microsoft Docs"
+title: "Analytic Functions (Azure Stream Analytics)"
 description: "Lists the analytic functions supported by Stream Analytics Query Language"
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 953c32f0-985e-46b1-b050-1a6911acb83c
-caps.latest.revision: 12
-ms.workload: data-services
 ms.date: 06/07/2019
-ms.author: mamccrea
 ---
 
 # Analytic Functions (Azure Stream Analytics)

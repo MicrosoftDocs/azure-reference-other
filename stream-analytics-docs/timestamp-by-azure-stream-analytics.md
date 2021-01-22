@@ -1,9 +1,6 @@
 ---
 title: "TIMESTAMP BY (Azure Stream Analytics)"
 description: The TIMESTAMP BY clause allows specifying custom timestamp values.
-services: stream-analytics
-author: mamccrea
-ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.date: 09/24/2020
