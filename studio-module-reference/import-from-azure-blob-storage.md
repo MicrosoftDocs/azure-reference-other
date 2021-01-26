@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Import from Azure Blob Storage - Azure"
-description: Learn how to use the Import Data module to read data from Azure blob storage, so that you can use the data in a machine learning experiment.  
+description: Learn how to use the Import Data module to read data from Azure Blob Storage, so that you can use the data in a machine learning experiment.  
 ms.date: 09/28/2020
 ms.service: "machine-learning"
 ms.subservice: "studio"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Import from Azure Blob Storage
 
-This topic describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to read data from Azure blob storage, so that you can use the data in a machine learning experiment.  
+This topic describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to read data from Azure Blob Storage, so that you can use the data in a machine learning experiment.  
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -23,7 +23,7 @@ The Azure Blob Service is for storing large amounts of data, including binary da
 
 Importing from blob storage requires that data be stored in blobs that use the **block blob** format. The files stored in the blob must use either comma-separated ( CSV) or tab-separated (TSV) formats. When you read the file, the records and any applicable attribute headings are loaded as rows into memory as a dataset.
 > [!NOTE]
-> Import data module does not support connecting to Azure Blob storage account if "Secure Transfer Required" option is enabled. 
+> Import data module does not support connecting to Azure Blob Storage account if "Secure Transfer Required" option is enabled. 
 
 For other restrictions on the types of blob storage supported for use with Azure Machine Learning, see the [Technical notes](#bkmk_Notes) section.
 
@@ -106,7 +106,7 @@ The following steps describe how to manually configure the import source.
 
     - **CSV with a specified encoding**: Use this option for CSV files that might have been prepared using a different field separator, or if the source might have used a different character encoding than UTF-8. This format is not supported for files stored in a SAS URL.
 
-    - **Excel**: Use this option to read data from Excel workbooks stored in Azure blob storage. The Excel format is not supported for files stored in a SAS URL.
+    - **Excel**: Use this option to read data from Excel workbooks stored in Azure Blob Storage. The Excel format is not supported for files stored in a SAS URL.
 
 8. For CSV files with special encodings, set these additional options to control proper import of the characters:
 
@@ -126,11 +126,11 @@ The following steps describe how to manually configure the import source.
 
 ## Examples
 
-To learn how to use data from Azure blob storage in machine learning experiments, see the [Azure Gallery](https://gallery.azure.ai):
+To learn how to use data from Azure Blob Storage in machine learning experiments, see the [Azure Gallery](https://gallery.azure.ai):
 
-- [News Categorization sample](https://go.microsoft.com/fwlink/?LinkId=525167): Loads and then combines multiple datasets from Azure blob storage.
+- [News Categorization sample](https://go.microsoft.com/fwlink/?LinkId=525167): Loads and then combines multiple datasets from Azure Blob Storage.
 
-- [Student Performance sample](https://go.microsoft.com/fwlink/?LinkId=525727): Reads data that is stored in the TSV format from Azure blob storage.
+- [Student Performance sample](https://go.microsoft.com/fwlink/?LinkId=525727): Reads data that is stored in the TSV format from Azure Blob Storage.
 
 ## <a name="bkmk_Notes"></a> Technical notes
 
@@ -157,7 +157,7 @@ There are several possible issues:
 - The blob uses an unsupported format
 - The account itself was created using an option that is not yet supported by Azure Machine Learning.
 
-**Unsupported format**: When reading from Azure blob storage, currently Azure Machine Learning requires that the blob use the *block blob* format, which lets you upload large blobs efficiently. For example, if you upload a CSV file to blob storage, the file would be stored as  a block blob. However, when you create a blob file programmatically, you might be generating a different type of blob, such as the AppendBlob type, which is not supported.
+**Unsupported format**: When reading from Azure Blob Storage, currently Azure Machine Learning requires that the blob use the *block blob* format, which lets you upload large blobs efficiently. For example, if you upload a CSV file to blob storage, the file would be stored as  a block blob. However, when you create a blob file programmatically, you might be generating a different type of blob, such as the AppendBlob type, which is not supported.
 
 As a workaround, we recommend that you use the **block blob** type.
 
@@ -272,7 +272,7 @@ You can use the following character encodings:
 
 ### Data type inference in CSV and TSV formats
 
-When the **Import Data** module loads data from a CSV or TSV file in Azure blob storage, a type guesser looks for categorical or numerical data in the source file, and represents the discovered type in the metadata for the new dataset.  
+When the **Import Data** module loads data from a CSV or TSV file in Azure Blob Storage, a type guesser looks for categorical or numerical data in the source file, and represents the discovered type in the metadata for the new dataset.  
 
 However, you can override the results of the type guesser by editing the column attributes in the [Edit Metadata](edit-metadata.md) module after the data has been loaded.
 

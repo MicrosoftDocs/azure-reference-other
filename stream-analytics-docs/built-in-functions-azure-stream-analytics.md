@@ -1,17 +1,11 @@
 ---
-title: "Built-in Functions (Azure Stream Analytics) | Microsoft Docs"
+title: "Built-in Functions (Azure Stream Analytics)"
 description: "Lists the built-in functions supported by Stream Analytics Query Language"
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 975c1684-866c-4e9d-adc3-5f5d97227c8b
-caps.latest.revision: 15
-ms.workload: data-services
 ms.date: 06/07/2019
-ms.author: mamccrea
 ---
 
 # Built-in Functions (Azure Stream Analytics)

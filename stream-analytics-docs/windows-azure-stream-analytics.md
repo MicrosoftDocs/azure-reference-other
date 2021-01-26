@@ -1,15 +1,11 @@
 ---
-title: "Windows (Azure Stream Analytics) | Microsoft Docs"
+title: "Windows (Azure Stream Analytics)"
 description: "Describes the Windows concept in Azure Stream Analytics."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.workload: data-services
 ms.date: 05/06/2019
-ms.author: mamccrea
 ---
 
 # Windows (Azure Stream Analytics)
