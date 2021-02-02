@@ -122,7 +122,7 @@ If the first column of the dataset that you convert to CSV has the name **ID**, 
   
 "SYLK: File format is not valid."  
   
-To avoid this error, you must rename the column. For more information, see [https://support.microsoft.com/kb/215591](https://support.microsoft.com/kb/215591)  
+To avoid this error, you must rename the column. For more information, see [https://support.microsoft.com/kb/215591](https://www.betaarchive.com/wiki/index.php/Microsoft_KB_Archive/215591)  
 
 #### I need help with importing from CSV
 
