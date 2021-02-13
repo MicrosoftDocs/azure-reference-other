@@ -4,7 +4,7 @@ description: Learn how to use the Assign Data to Clusters module to generate pre
 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
