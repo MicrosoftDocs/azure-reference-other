@@ -3,12 +3,12 @@ title: "ML Studio (classic): Edit Metadata - Azure"
 description: Learn how to use the Edit Metadata module to change metadata that is associated with columns in a dataset.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Edit Metadata
 *Edits metadata associated with columns in a dataset*  

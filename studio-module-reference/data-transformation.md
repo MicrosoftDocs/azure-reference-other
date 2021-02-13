@@ -3,12 +3,12 @@ title: "ML Studio (classic): Data Transformation - Azure"
 description: "Learn about the modules in Azure Machine Learning Studio (classic) that you can use for data transformation."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Data Transformation
 
