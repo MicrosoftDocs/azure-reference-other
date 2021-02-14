@@ -3,7 +3,7 @@ title: "ML Studio (classic): Create R Model - Azure"
 description: Learn how to use the Create R Model module to create an untrained model from an R script. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 dev_langs: 
   - "R"
@@ -11,7 +11,7 @@ dev_langs:
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Create R Model
 

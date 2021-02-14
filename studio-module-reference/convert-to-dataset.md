@@ -3,12 +3,12 @@ title: "ML Studio (classic): Convert to Dataset - Azure"
 description: Learn how to use the Convert to Dataset module to convert any data that you might need for an experiment to the internal format used by Studio (classic).
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Convert to Dataset
 *Converts data input to the internal Dataset format used by Microsoft Azure Machine Learning*  

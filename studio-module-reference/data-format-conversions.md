@@ -3,12 +3,12 @@ title: "ML Studio (classic): Data Format Conversions - Azure"
 description: Learn about the  modules for converting data among various file formats used in machine learning.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Data Format Conversions
 

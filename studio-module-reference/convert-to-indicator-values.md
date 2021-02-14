@@ -3,12 +3,12 @@ title: "ML Studio (classic): Convert to Indicator Values - Azure"
 description: Learn how to use the Convert to Indicator Values to convert categorical columns into binary indicator columns to use as features in a machine learning model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Convert to Indicator Values
 *Converts categorical values in columns to indicator values*  
