@@ -3,7 +3,7 @@ title: "ML Studio (classic): Boosted Decision Tree Regression - Azure"
 description: Learn how to use the Boosted Decision Tree Regression module to create an ensemble of regression trees using boosting.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper

@@ -3,12 +3,12 @@ title: "ML Studio (classic): Data Transformation: Manipulation - Azure"
 description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use for basic data manipulation."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Data Transformation - Manipulation
 

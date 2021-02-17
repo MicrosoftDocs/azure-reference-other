@@ -4,12 +4,12 @@ description: Learn how to use the Compute Linear Correlation module to compute P
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Compute Linear Correlation
 
