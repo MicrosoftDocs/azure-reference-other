@@ -3,12 +3,12 @@ title: "ML Studio (classic): Convert to SVMLight - Azure"
 description: Learn how to use the Convert to SVMLight module to convert your datasets to the format that is used by SVMLight.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Convert to SVMLight
 *Converts data input to the format used by the SVM-Light framework*  

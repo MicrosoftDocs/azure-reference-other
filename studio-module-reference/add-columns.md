@@ -2,7 +2,7 @@
 title: "ML Studio (classic): Add Columns - Azure"
 description: Learn how to use the Add Columns module to combine all columns from two datasets to create a single dataset. 
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 author: xiaoharper
 ms.author: amlstudiodocs 

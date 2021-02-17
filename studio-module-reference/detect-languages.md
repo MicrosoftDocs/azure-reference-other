@@ -3,13 +3,13 @@ title: "ML Studio (classic): Detect Languages - Azure"
 description: Learn how to use the Detect Languages module to analyze text input and identify the language associated with each record in the input.
 ms.date: 07/03/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Detect Languages
 *Detects the language of each line in the input file*  

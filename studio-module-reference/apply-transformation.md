@@ -3,7 +3,7 @@ title: "ML Studio (classic): Apply Transformation - Azure"
 description: Learn how to use the Apply Transformation module to modify an input dataset based on a previously computed transformation. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper

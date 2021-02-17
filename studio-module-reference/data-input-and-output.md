@@ -3,7 +3,7 @@ title: "ML Studio (classic): Data Input and Output - Azure"
 description: "Learn about the modules you can use to import and export data and models in Azure Machine Learning Studio (classic)."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 applies_to: 
   - "Azure"
@@ -11,7 +11,7 @@ applies_to:
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Data Input and Output
 
