@@ -3,12 +3,12 @@ title: "ML Studio (classic): Machine Learning Scoring - Azure"
 description: This section lists the modules provided in Azure Machine Learning Studio (classic) for scoring.
 ms.date: 03/05/2020
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Machine Learning - Score
 

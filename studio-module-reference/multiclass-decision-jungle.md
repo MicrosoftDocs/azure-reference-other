@@ -3,12 +3,12 @@ title: "ML Studio (classic): Multiclass Decision Jungle - Azure"
 description: Learn how to use the Multiclass Decision Jungle module to create a machine learning model that is based on athe *decision jungles* supervised learning algorithm.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Multiclass Decision Jungle
 
