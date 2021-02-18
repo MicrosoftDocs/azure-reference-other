@@ -3,12 +3,12 @@ title: "ML Studio (classic): Permutation Feature Importance - Azure"
 description: Learn  how to use the Permutation Feature Importance module to determine the best features to use in a model by computing feature importance scores.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Permutation Feature Importance
 *Computes the permutation feature importance scores of feature variables given a trained model and a test dataset*  
