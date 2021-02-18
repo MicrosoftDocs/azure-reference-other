@@ -3,12 +3,12 @@ title: "ML Studio (classic): Train Vowpal Wabbit Version 7-10 Model - Azure"
 description: Learn how to use the Train Vowpal Wabbit Version 7-10 module to create a machine learning model by using an instance of Vowpal Wabbit (version 7-10).
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Train Vowpal Wabbit Version 7-10 Model
 *Trains a model using version 7-10 of the Vowpal Wabbit machine learning system*  

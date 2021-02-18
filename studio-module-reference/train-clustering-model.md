@@ -3,12 +3,12 @@ title: "ML Studio (classic): Train Clustering Model - Azure"
 description: Learn how to use the Train Clustering Model module to train a clustering model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Train Clustering Model
 *Trains a clustering model and assigns data from the training set to clusters*  
