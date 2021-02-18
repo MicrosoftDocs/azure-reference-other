@@ -3,12 +3,12 @@ title: "ML Studio (classic): Remove Duplicate Rows - Azure"
 description: Learn how to use the Remove Duplicate Rows module to remove potential duplicates from a dataset.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Remove Duplicate Rows
 *Removes the duplicate rows from a dataset*  
