@@ -3,13 +3,13 @@ title: "ML Studio (classic): Import from Azure Cosmos DB - Azure"
 description: Learn how to use the Import Data module to import data from Azure Cosmos DB for use in a machine learning experiment.
 ms.date: 07/03/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Import from Azure Cosmos DB
 

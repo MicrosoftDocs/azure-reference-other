@@ -3,12 +3,12 @@ title: "ML Studio (classic): Import from Web URL via HTTP - Azure"
 description: Learn how to use the Import Data module to read data from a public Web page for use in a machine learning experiment.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Import from Web URL via HTTP
 
