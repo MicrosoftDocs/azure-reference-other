@@ -3,12 +3,12 @@ title: "ML Studio (classic): Extract Key Phrases from Text - Azure"
 description: Learn how to extract key phrases with the Extract Key Phrases from Text module.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Extract Key Phrases from Text
 *Extracts key phrases from given text*  

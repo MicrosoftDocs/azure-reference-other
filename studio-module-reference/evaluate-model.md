@@ -4,12 +4,12 @@ description: Learn how to use the Evaluate Model module to measure the accuracy 
 ms.custom: "formulas"
 ms.date: 11/13/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: likebupt
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Evaluate Model
 *Evaluates the results of a classification or regression model with standard metrics*  

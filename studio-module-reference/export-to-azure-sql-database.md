@@ -3,12 +3,12 @@ title: "ML Studio (classic): Export to Azure SQL Database - Azure"
 description: Learn how to use the Export Data module to export data to an Azure SQL Database or Azure SQL Data Warehouse. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Export to Azure SQL Database
 

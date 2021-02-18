@@ -3,12 +3,12 @@ title: "ML Studio (classic): Filter Based Feature Selection - Azure"
 description: Learn how to use the Filter Based Feature Selection module to identify the columns in your input dataset that have the greatest predictive power.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Filter Based Feature Selection
 *Identifies the features in a dataset with the greatest predictive power*  
