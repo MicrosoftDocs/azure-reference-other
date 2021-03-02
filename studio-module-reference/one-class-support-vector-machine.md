@@ -3,12 +3,12 @@ title: "ML Studio (classic): One-Class Support Vector Machine - Azure"
 description: Learn how to use the One-Class Support Vector Model module to create an anomaly detection model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # One-Class Support Vector Machine
 
