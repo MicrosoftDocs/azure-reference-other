@@ -3,13 +3,13 @@ title: "ML Studio (classic): Time Series Anomaly Detection - Azure"
 description: Learn how to use the Time Series Anomaly Detection module to detect anomalies in time series data. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Time Series Anomaly Detection
 *Detects anomalies in the input time series data.*  
