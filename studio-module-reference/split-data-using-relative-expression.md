@@ -3,12 +3,12 @@ title: "ML Studio (classic): Split Data using Relative Expression - Azure"
 description: Learn how to divide into training and testing datasets using a numerical expression with the the Relative Expression Split option in the Split Data module.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Split a dataset using a relative expression
 
