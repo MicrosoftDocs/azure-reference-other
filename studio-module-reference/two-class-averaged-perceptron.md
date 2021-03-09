@@ -3,12 +3,12 @@ title: "ML Studio (classic): Two-Class Averaged Perceptron - Azure"
 description: Learn how to use the Two-Class Averaged Perceptron module to create a machine learning model based on the averaged perceptron algorithm. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Two-Class Averaged Perceptron
 *Creates an averaged perceptron binary classification model*  

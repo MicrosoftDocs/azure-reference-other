@@ -3,12 +3,12 @@ title: "ML Studio (classic): Text Analytics - Azure"
 description: This article describes the text analytics modules included in Azure Machine Learning Studio (classic). 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Text Analytics
 

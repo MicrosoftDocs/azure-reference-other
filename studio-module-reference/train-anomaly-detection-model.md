@@ -3,12 +3,12 @@ title: "ML Studio (classic): Train Anomaly Detection Model - Azure"
 description: Learn how to use the Train Anomaly Detection Model module to create a trained anomaly detection model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Train Anomaly Detection Model
 *Trains an anomaly detection model on a training set*  

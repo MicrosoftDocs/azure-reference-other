@@ -3,12 +3,12 @@ title: "ML Studio (classic): FIR Filter - Azure"
 description: Learn how to use the FIR Filter module to define a kind of filter called a *finite impulse response* (FIR) filter.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # FIR Filter
 *Creates a finite impulse response filter for signal processing*  

@@ -3,12 +3,12 @@ title: "ML Studio (classic): Two-Class Support Vector Machine - Azure"
 description: Learn how to use the Two-Class Support Vector Machine module to create a model that is based on the support vector machine algorithm. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Two-Class Support Vector Machine
 *Creates a binary classification model using the Support Vector Machine algorithm*  

@@ -3,13 +3,13 @@ title: "ML Studio (classic): Execute R Script - Azure"
 description: Learn how to use the Execute R Script module to call and run R code in your experiments.
 ms.date: 10/20/2020
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 dev_langs: 
   - "R"
 author: likebupt
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Execute R Script
 

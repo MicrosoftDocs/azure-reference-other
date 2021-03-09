@@ -3,12 +3,12 @@ title: "ML Studio (classic): Export Data - Azure"
 description: Learn how to use the Export Data module to save results, intermediate data, and working data from your experiments into cloud storage destinations.
 ms.date: 09/28/2020
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: likebupt
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Export Data
 

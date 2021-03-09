@@ -3,12 +3,12 @@ title: "ML Studio (classic): Two-Class Decision Jungle - Azure"
 description: Learn how to use the Two-Class Decision Jungle module to create a machine learning model that is based on a decision jungles supervised ensemble learning algorithm.  
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Two-Class Decision Jungle
 *Creates a two-class classification model using the decision jungle algorithm*  

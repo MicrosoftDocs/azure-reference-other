@@ -3,12 +3,12 @@ title: "ML Studio (classic): Fast Forest Quantile Regression - Azure"
 description: Learn how to use the Fast Forest Quantile Regression module to create a regression model that can predict values for a specified number of quantiles.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Fast Forest Quantile Regression
 *Creates a quantile regression model*  

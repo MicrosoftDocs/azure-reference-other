@@ -3,7 +3,7 @@ title: 'ML Studio (classic): Initialize Classification Models - Azure'
 description: "Learn about the modules you can use in Azure Machine Learning Studio (classic) to create binary or multiclass classification models."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper

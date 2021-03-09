@@ -3,12 +3,12 @@ title: "ML Studio (classic): Select Columns in Dataset - Azure"
 description: Learn how to use the Select Columns in Dataset module to choose a subset of columns to use in downstream operations. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Select Columns in Dataset
 

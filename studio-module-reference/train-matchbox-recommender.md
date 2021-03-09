@@ -3,12 +3,12 @@ title: "ML Studio (classic): Train Matchbox Recommender - Azure"
 description: Learn how to use the Train Matchbox Recommender module to train a recommendation model. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Train Matchbox Recommender
 *Trains a Bayesian recommender using the Matchbox algorithm*  

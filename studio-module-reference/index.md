@@ -3,16 +3,16 @@ title: "ML Studio (classic): Algorithm and module help - Azure"
 description: Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
 ms.date: 04/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 applies_to: 
   - "Azure"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
-# Azure Machine Learning Studio (classic): algorithm and module help
+# Azure Machine Learning Studio (classic): Algorithm and module help
 
 [!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
