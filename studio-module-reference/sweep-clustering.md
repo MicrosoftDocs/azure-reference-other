@@ -3,12 +3,12 @@ title: "ML Studio (classic): Sweep Clustering - Azure"
 description: Learn how to use the Sweep Clustering module to train a model by using a parameter sweep to find the best hyperparameters for a model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Sweep Clustering
 

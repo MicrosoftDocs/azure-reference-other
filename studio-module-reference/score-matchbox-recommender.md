@@ -3,12 +3,12 @@ title: "ML Studio (classic): Score Matchbox Recommender - Azure"
 description: Learn  how to use the Score Matchbox Recommender module to create predictions from a trained recommendation model, based on the Matchbox algorithm from Microsoft Research.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Score Matchbox Recommender
 

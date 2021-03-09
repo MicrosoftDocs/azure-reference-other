@@ -3,12 +3,12 @@ title: "ML Studio (classic): Import from Hive Query - Azure"
 description: Learn how to use the Import Data module to get data from Hadoop clusters and HDInsight distributed storage.
 ms.date: 07/03/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Import from Hive Query
 

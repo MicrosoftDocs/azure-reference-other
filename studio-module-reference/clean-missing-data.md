@@ -3,12 +3,12 @@ title: "ML Studio (classic): Clean Missing Data - Azure"
 description: Learn how to use the Clean Missing Data module to remove, replace, or infer missing values.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Clean Missing Data
 

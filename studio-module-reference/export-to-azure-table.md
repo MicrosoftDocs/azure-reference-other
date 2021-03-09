@@ -3,12 +3,12 @@ title: "ML Studio (classic): Export to Azure Table - Azure"
 description: Learn how to use the Export Data module to export results or intermediate data from a machine learning experiment to an Azure table.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Export to Azure Table
 

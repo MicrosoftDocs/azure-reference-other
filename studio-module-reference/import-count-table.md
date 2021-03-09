@@ -3,12 +3,12 @@ title: "ML Studio (classic): Import Count Table - Azure"
 description: Learn how to use the Import Count Table module to merge existing count tables with new data.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Import Count Table
 

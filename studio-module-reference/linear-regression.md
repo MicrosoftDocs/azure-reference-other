@@ -3,12 +3,12 @@ title: "ML Studio (classic): Linear Regression - Azure"
 description: Learn how to use the Linear Regression module to create a linear regression model for use in an experiment.  
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Linear Regression
 

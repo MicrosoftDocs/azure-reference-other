@@ -3,12 +3,12 @@ title: "ML Studio (classic): Two-Class Neural Network - Azure"
 description: Learn how to use the Two-Class Neural Network module to create a neural network model that can be used to predict a target that has only two values.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Two-Class Neural Network
 *Creates a binary classifier using a neural network algorithm*  

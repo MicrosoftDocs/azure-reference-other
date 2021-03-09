@@ -3,12 +3,12 @@ title: "ML Studio (classic): Score Vowpal Wabbit Version 7-10 Model - Azure"
 description: Learn how to use the Score Vowpal Wabbit Version 7-10 Model module to generate scores for a set of input data, using an existing trained Vowpal Wabbit model.  
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Score Vowpal Wabbit Version 7-10 Model
 *Scores data using the Vowpal Wabbit machine learning system from the command line interface*  

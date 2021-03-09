@@ -3,12 +3,12 @@ title: "ML Studio (classic): Evaluate Recommender - Azure"
 description: Learn how to use the Evaluate Recommender module to measure the accuracy of predictions made by a recommendation model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Evaluate Recommender
 *Evaluates the accuracy of recommender model predictions*  

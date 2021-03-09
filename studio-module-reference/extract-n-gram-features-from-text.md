@@ -3,11 +3,11 @@ title: "ML Studio (classic): Extract N-Gram Features from Text - Azure"
 description: Learn how to use the Extract N-Gram Features from Text module to *featurize* text, and extract only the most important pieces of information from long text strings.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Extract N-Gram Features from Text
 *Creates N-Gram dictionary features and does feature selection on them*  

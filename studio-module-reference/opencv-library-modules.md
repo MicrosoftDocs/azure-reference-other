@@ -3,12 +3,12 @@ title: "ML Studio (classic): OpenCV Library Modules - Azure"
 description: This article describes the modules in Azure Machine Learning Studio (classic) that support use of the Open Source Computer Vision Library.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # OpenCV Library Modules
 

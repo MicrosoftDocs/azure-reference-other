@@ -4,12 +4,12 @@ description: Learn how to use the User-Defined Filter module to define a custom 
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # User-Defined Filter
 *Creates a custom finite or infinite impulse response filter*  

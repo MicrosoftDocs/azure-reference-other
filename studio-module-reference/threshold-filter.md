@@ -4,12 +4,12 @@ description: Learn how to use the Threshold Filter module to define a filter tha
 ms.custom: "formulas"
 ms.date: 05/06/2019
 ms.service: "machine-learning"
-ms.subservice: "studio"
+ms.subservice: "studio-classic"
 ms.topic: "reference"
 
 author: xiaoharper
 ms.author: amlstudiodocs
-manager: cgronlun
+
 ---
 # Threshold Filter
 *Creates a threshold filter that constrains values*  
