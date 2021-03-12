@@ -96,8 +96,8 @@ The decision forest classifier in Azure Machine Learning Studio (classic) consis
 
 After training is complete:
 
-+ To see the tree that was created on each iteration, right-click the output of the [Train Model](train-model.md) module or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, and select **Visualize**.
-+ To see the rules for each node, click each tree to drill down into the splits.
++ To see the tree that was created on each iteration, right-click [Train Model](train-model.md) module and select **Trained model** to visualize. If you use [Tune Model Hyperparameters](tune-model-hyperparameters.md), right click the module and select **Trained best model** to visualize the best model. 
+    To see the rules for each node, click each tree to drill down into the splits.
 
 ## Examples
 
