@@ -90,9 +90,7 @@ For more information about the research behind this machine learning algorithm, 
 
 After training is complete:
 
-+ To see the tree that was created on each iteration, right-click the output of the [Train Model](train-model.md) module or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module, and select **Visualize**.
-
-+ To see the rules for each node, click each tree to drill down into the splits.
++ To use the model for scoring, connect it to [Score Model](score-model.md), to predict values for new input examples.
 
 ## Examples
 
