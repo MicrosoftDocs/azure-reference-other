@@ -87,10 +87,13 @@ You can train this type of model by using either the [Train Model](train-model.m
   
 ### Results
 
-After model training is complete, right-click the output of [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md) to view the results:
+After training is complete:
 
-+ To see the tree that was created on each iteration, select **Visualize**. 
-+ To drill down into the splits and see the rules for each node, click each tree.
++ To see the tree that was created on each iteration, right-click [Train Model](train-model.md) module and select **Trained model** to visualize. If you use [Tune Model Hyperparameters](tune-model-hyperparameters.md), right click the module and select **Trained best model** to visualize the best model. 
+  
+     Click each tree to drill down into the splits and see the rules for each node.  
+
++ To use the model for scoring, connect it to [Score Model](score-model.md), to predict values for new input examples.
   
 ## Examples
 

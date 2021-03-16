@@ -88,13 +88,7 @@ Decision jungles have the following advantages:
 
 After training is complete:
 
-+ To see the tree that was created on each iteration, right-click the output of the [Train Model](train-model.md) module (or [Tune Model Hyperparameters](tune-model-hyperparameters.md) module) and select **Visualize**.
-
-+ To see the rules for each node, click each tree and drill down into the splits.  
-
-+ To save a snapshot of the trained model, right-click the **Trained model** output and select **Save As Trained Model**. This model is not updated on successive runs of the same experiment.
-
-+  To perform cross-validation against a labeled data set, connect the untrained model to [Cross-Validate Model](cross-validate-model.md).
++ To use the model for scoring, connect it to [Score Model](score-model.md), to predict values for new input examples.
  
 ## Examples
 
