@@ -10,6 +10,8 @@
       href: tables/tables-category.md
     - name: By resource type
       href: tables/tables-resourcetype.md
+  - name: AACHttpRequest
+    href: tables/aachttprequest.md
   - name: AADDomainServicesAccountLogon
     href: tables/aaddomainservicesaccountlogon.md
   - name: AADDomainServicesDirectoryServiceAccess
@@ -32,6 +34,8 @@
     href: tables/abschanneltobotrequests.md
   - name: ABSDependenciesRequests
     href: tables/absdependenciesrequests.md
+  - name: ACSAuthIncomingOperations
+    href: tables/acsauthincomingoperations.md
   - name: ACSBillingUsage
     href: tables/acsbillingusage.md
   - name: ACSChatIncomingOperations
@@ -48,6 +52,10 @@
     href: tables/addonazurebackupprotectedinstance.md
   - name: AddonAzureBackupStorage
     href: tables/addonazurebackupstorage.md
+  - name: ADFSandboxPipelineRun
+    href: tables/adfsandboxpipelinerun.md
+  - name: ADFSSignInLogs
+    href: tables/adfssigninlogs.md
   - name: ADFSSISIntegrationRuntimeLogs
     href: tables/adfssisintegrationruntimelogs.md
   - name: ADFSSISPackageEventMessageContext
@@ -60,6 +68,10 @@
     href: tables/adfssispackageexecutioncomponentphases.md
   - name: ADFSSISPackageExecutionDataStatistics
     href: tables/adfssispackageexecutiondatastatistics.md
+  - name: ADPAudit
+    href: tables/adpaudit.md
+  - name: ADPRequests
+    href: tables/adprequests.md
   - name: ADReplicationResult
     href: tables/adreplicationresult.md
   - name: ADTDigitalTwinsOperation
@@ -88,10 +100,14 @@
     href: tables/aewauditlogs.md
   - name: AmlComputeCpuGpuUtilization
     href: tables/amlcomputecpugpuutilization.md
+  - name: AmlOnlineEndpointConsoleLog
+    href: tables/amlonlineendpointconsolelog.md
   - name: AmlRunStatusChangedEvent
     href: tables/amlrunstatuschangedevent.md
   - name: Anomalies
     href: tables/anomalies.md
+  - name: ApiManagementGatewayLogs
+    href: tables/apimanagementgatewaylogs.md
   - name: AppAvailabilityResults
     href: tables/appavailabilityresults.md
   - name: AppBrowserTimings
@@ -142,6 +158,8 @@
     href: tables/auditlogs.md
   - name: AzureActivity
     href: tables/azureactivity.md
+  - name: AzureActivityV2
+    href: tables/azureactivityv2.md
   - name: AzureDevOpsAuditing
     href: tables/azuredevopsauditing.md
   - name: AzureDiagnostics
@@ -168,6 +186,8 @@
     href: tables/containerinventory.md
   - name: ContainerLog
     href: tables/containerlog.md
+  - name: ContainerLogV2
+    href: tables/containerlogv2.md
   - name: ContainerNodeInventory
     href: tables/containernodeinventory.md
   - name: ContainerRegistryLoginEvents
@@ -350,6 +370,8 @@
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
   - name: MicrosoftHealthcareApisAuditLogs
     href: tables/microsofthealthcareapisauditlogs.md
+  - name: NetworkSessions
+    href: tables/networksessions.md
   - name: NWConnectionMonitorDestinationListenerResult
     href: tables/nwconnectionmonitordestinationlistenerresult.md
   - name: NWConnectionMonitorDNSResult
@@ -366,8 +388,12 @@
     href: tables/outboundconnection.md
   - name: Perf
     href: tables/perf.md
+  - name: PowerBIDatasetsTenant
+    href: tables/powerbidatasetstenant.md
   - name: PowerBIDatasetsTenantPreview
     href: tables/powerbidatasetstenantpreview.md
+  - name: PowerBIDatasetsWorkspace
+    href: tables/powerbidatasetsworkspace.md
   - name: PowerBIDatasetsWorkspacePreview
     href: tables/powerbidatasetsworkspacepreview.md
   - name: SecureScoreControls
@@ -384,10 +410,14 @@
     href: tables/securitynestedrecommendation.md
   - name: SecurityRegulatoryCompliance
     href: tables/securityregulatorycompliance.md
+  - name: SentinelHealth
+    href: tables/sentinelhealth.md
   - name: SignalRServiceDiagnosticLogs
     href: tables/signalrservicediagnosticlogs.md
   - name: SQLAssessmentRecommendation
     href: tables/sqlassessmentrecommendation.md
+  - name: SqlAtpStatus
+    href: tables/sqlatpstatus.md
   - name: SqlVulnerabilityAssessmentScanStatus
     href: tables/sqlvulnerabilityassessmentscanstatus.md
   - name: StorageBlobLogs
@@ -408,10 +438,16 @@
     href: tables/synapsegatewayapirequests.md
   - name: SynapseGatewayEvents
     href: tables/synapsegatewayevents.md
+  - name: SynapseIntegrationActivityRuns
+    href: tables/synapseintegrationactivityruns.md
   - name: SynapseIntegrationActivityRunsEnded
     href: tables/synapseintegrationactivityrunsended.md
+  - name: SynapseIntegrationPipelineRuns
+    href: tables/synapseintegrationpipelineruns.md
   - name: SynapseIntegrationPipelineRunsEnded
     href: tables/synapseintegrationpipelinerunsended.md
+  - name: SynapseIntegrationTriggerRuns
+    href: tables/synapseintegrationtriggerruns.md
   - name: SynapseIntegrationTriggerRunsEnded
     href: tables/synapseintegrationtriggerrunsended.md
   - name: SynapseRBACEvents
@@ -458,12 +494,16 @@
     href: tables/vmprocess.md
   - name: W3CIISLog
     href: tables/w3ciislog.md
+  - name: W3CIISLogV2
+    href: tables/w3ciislogv2.md
   - name: Watchlist
     href: tables/watchlist.md
   - name: WindowsEvent
     href: tables/windowsevent.md
   - name: WireData
     href: tables/wiredata.md
+  - name: WorkloadDiagnosticLogs
+    href: tables/workloaddiagnosticlogs.md
   - name: WVDAgentHealthStatus
     href: tables/wvdagenthealthstatus.md
   - name: WVDCheckpoints

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # SecurityIncident
@@ -44,6 +44,8 @@ ms.date: 12/9/2020
 |LastModifiedTime|datetime|Timestamp (UTC) of when the incident was last modified|
 |ModifiedBy|string|The source of the change in the incident|
 |Owner|dynamic|The user the incident is assigned to|
+|ProviderIncidentId|string|The incident ID assigned by the incident provider|
+|ProviderName|string|The name of the source provider that generated the incident|
 |RelatedAnalyticRuleIds|dynamic|The IDs of the Analytic rules associated with the incident|
 |Severity|string|The severity of the incident|
 |SourceSystem|string||

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # OfficeActivity
@@ -38,6 +38,7 @@ ms.date: 12/9/2020
 |AddOnType|string|The type of add-on that generated this event|
 |AffectedItems|string|Information about each item in the group|
 |AppDistributionMode|string|Application distribution mode|
+|AppId|string|Application ID|
 |Application|string|The application name|
 |AzureActiveDirectory_EventType|string|The type of Azure AD event|
 |AzureADAppId|string|Teams Application Azure AD ID|
@@ -47,6 +48,7 @@ ms.date: 12/9/2020
 |ChatName|string|The name of the chat|
 |ChatThreadId|string|The Id of the chat thread|
 |Client|string|Details about the client device, device OS, and device browser that was used for the of the account login event|
+|ClientAppId|string|Client application ID|
 |ClientInfoString|string|Information about the email client that was used to perform the operation|
 |ClientIP|string|The IP address of the device that was used when the activity was logged|
 |Client_IPAddress|string|The IP address of the device that was used when the operation was logged|
@@ -108,6 +110,7 @@ ms.date: 12/9/2020
 |OfficeWorkload|string|The Office 365 service where the activity occurred|
 |OldValue|string|Only present for settings events. Old value of the setting|
 |Operation|string|The name of the operation that the user is performing|
+|OperationProperties|dynamic|Additional operation properties|
 |OperationScope|string|The scope the operation was performed on|
 |OrganizationId|string|The GUID for your organization's Office 365 tenant. This value will always be the same for your organization|
 |OrganizationName|string|The name of the tenant|

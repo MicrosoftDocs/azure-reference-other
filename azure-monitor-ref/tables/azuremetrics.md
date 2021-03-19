@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # AzureMetrics
@@ -22,6 +22,7 @@ ms.date: 12/9/2020
 ## Resource types
 
 - App Services
+- Automation account
 - Data factories
 - Data Lake Storage Gen1
 - Data Lake Analytics
@@ -35,8 +36,8 @@ ms.date: 12/9/2020
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Flexible Servers
 - Azure Database for MariaDB Servers
+- API Management services
 - Device Provisioning Services
-- Event Hubs
 - Application Gateways
 - Firewalls
 - ExpressRoute Circuits
@@ -51,10 +52,14 @@ ms.date: 12/9/2020
 - Search Services
 - Stream Analytics jobs
 - Bastions
-- Automation account
+- Event Hubs
 - Azure API for FHIR
-- API Management services
-- Service Fabric Clusters
+- Logic Apps
+- Machine Learning
+- Communication Services
+- Project CI Workspace
+- Kubernetes Services
+- Virtual machines
 - Desktop Virtualization Application Groups
 - Desktop Virtualization Host Pools
 - Desktop Virtualization workspaces
@@ -65,8 +70,8 @@ ms.date: 12/9/2020
 - Batch Accounts
 - Azure Spring Cloud
 - Media Services
+- Service Fabric Clusters
 - Azure Cache for Redis
-- Cognitive Services
 - Key Vaults
 - Storage Accounts
 - SignalR
@@ -75,16 +80,13 @@ ms.date: 12/9/2020
 - Azure AD Domain Services
 - Azure Blockchain Service
 - Event Grid Domains
-- Virtual machines
 - Virtual Machine Scale Sets
-- Kubernetes Services
 - Azure Arc enabled Kubernetes
 - Azure Databricks Services
 - Azure Monitor autoscale settings
 - IoT Hub
 - Azure Cosmos DB
-- Machine Learning
-- Logic Apps
+- Cognitive Services
 - Service Bus
 
 

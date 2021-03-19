@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # CommonSecurityLog
@@ -20,6 +20,10 @@ ms.date: 12/9/2020
 
 - Security and Audit
 - Azure Sentinel
+## Resource types
+
+- Virtual machines
+- Virtual Machine Scale Sets
 
 
 

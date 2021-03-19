@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # SigninLogs
@@ -45,9 +45,12 @@ ms.date: 12/9/2020
 |CreatedDateTime|datetime||
 |DeviceDetail|dynamic||
 |DurationMs|long||
+|FlaggedForReview|bool||
+|HomeTenantId|string||
 |Id|string||
 |Identity|string||
 |IPAddress|string||
+|IPAddressFromResourceProvider|string||
 |IsInteractive|bool||
 |IsRisky|bool||
 |Level|string||
@@ -65,6 +68,7 @@ ms.date: 12/9/2020
 |ResourceId|string||
 |ResourceIdentity|string||
 |ResourceProvider|string||
+|ResourceTenantId|string||
 |ResultDescription|string||
 |ResultSignature|string||
 |ResultType|string||
@@ -76,6 +80,8 @@ ms.date: 12/9/2020
 |RiskState|string||
 |ServicePrincipalId|string||
 |ServicePrincipalName|string||
+|SignInIdentifier|string||
+|SignInIdentifierType|string||
 |SourceSystem|string||
 |Status|dynamic||
 |TimeGenerated|datetime||
@@ -86,3 +92,4 @@ ms.date: 12/9/2020
 |UserDisplayName|string||
 |UserId|string||
 |UserPrincipalName|string||
+|UserType|string||

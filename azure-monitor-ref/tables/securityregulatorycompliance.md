@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # SecurityRegulatoryCompliance
@@ -29,6 +29,7 @@ ms.date: 12/9/2020
 |ComplianceControl|string|The name of regulatory compliance control|
 |ComplianceStandard|string|The name of compliance standard|
 |FailedResources|int|The number of resources that failed this assessment|
+|IsSnapshot|bool|Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'.|
 |PassedResources|int|The number of resources that passed this assessment|
 |RecommendationId|string|The ID of the assessed recommendation|
 |RecommendationLink|string|A link for more details on the assessment result|

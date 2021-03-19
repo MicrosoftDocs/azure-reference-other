@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # SecureScores
@@ -29,6 +29,7 @@ ms.date: 12/9/2020
 |AssessedResourceId|string|The ID of the assessed resource|
 |CurrentScore|real|The current secure score per control|
 |DisplayName|string|The initiative�s name|
+|IsSnapshot|bool|Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'.|
 |MaxScore|int|The maximum control score|
 |PercentageScore|real|The percentage of the score (current score divided by max score)|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # ProtectionStatus
@@ -41,13 +41,14 @@ ms.date: 12/9/2020
 |DetectionId|string||
 |DeviceName|string||
 |ManagementGroupName|string||
+|OSName|string||
 |ProtectionStatus|string||
 |ProtectionStatusDetails|string||
 |ProtectionStatusRank|int||
 |Resource|string||
 |ResourceGroup|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceId|string||
+|_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProvider|string||
 |ResourceType|string||
 |ScanDate|datetime||

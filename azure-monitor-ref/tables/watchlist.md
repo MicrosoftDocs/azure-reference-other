@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # Watchlist
@@ -19,9 +19,6 @@ ms.date: 12/9/2020
 ## Solutions
 
 - Azure Sentinel
-## Resource types
-
-- Azure Sentinel Watchlist
 
 
 

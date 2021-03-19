@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # SecureScoreControls
 
- Azure Security Center Secure Score per control. A control is a logical group of related security recommendations. its secure score reflects the security posture per the control.
+ Azure Security Center Secure Score per control. A control is a logical group of related security recommendations, its secure score reflects the security posture per the control.
 
 ## Solutions
 
@@ -33,6 +33,7 @@ ms.date: 12/9/2020
 |CurrentScore|real|The current secure score per control|
 |Description|string|The description of the control|
 |HealthyResources|int|The number of healthy resources|
+|IsSnapshot|bool|Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'.|
 |MaxScore|int|The maximum control score|
 |NotApplicableResources|int|The number of not applicable resources|
 |PercentageScore|real|The percentage of the score (current score divided by max score)|
