@@ -6,22 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # SynapseIntegrationActivityRunsEnded
 
  Logs for Synapse integration activity runs ended.
 
-## Categories
-
-- Azure Resources
 ## Solutions
 
 - LogManagement
-## Resource types
-
-- Synapse Workspaces
 
 
 
