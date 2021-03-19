@@ -182,3 +182,5 @@
     href: tables/configurationdata.md
   - name: ContainerImageInventory
     href: tables/containerimageinventory.md
+  - name: ContainerInventory
+    href: tables/containerinventory.md
