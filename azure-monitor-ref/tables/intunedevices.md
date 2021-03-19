@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # IntuneDevices
 
  Intune devices specialist report.
 
+## Categories
+
+- IT & Management Tools
 ## Solutions
 
 - LogManagement
