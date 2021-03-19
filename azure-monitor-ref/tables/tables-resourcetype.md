@@ -1,12 +1,12 @@
 ---
-title: Azure Monitor table reference index (resource type)
+title: Azure Monitor table reference index by resource type
 description: Index for tables in Azure Monitor Logs organized by resource type.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -66,10 +66,10 @@ ms.date: 12/9/2020
 
 ## Azure Active Directory Logs
 
-- [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
-- [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
-- [AADProvisioningLogs](aadprovisioninglogs.md)
-- [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+
+## Azure activity Log V2
+
+- [AzureActivityV2](azureactivityv2.md)
 
 ## Azure AD Domain Services
 
@@ -109,6 +109,12 @@ ms.date: 12/9/2020
 - [KubePVInventory](kubepvinventory.md)
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
+
+## Azure Autonomous Development Platform Account
+
+- [ADPAudit](adpaudit.md)
+- [ADPRequests](adprequests.md)
+- [AzureActivity](azureactivity.md)
 
 ## Azure Blockchain Service
 
@@ -195,13 +201,14 @@ ms.date: 12/9/2020
 
 - [AzureActivity](azureactivity.md)
 
+## Azure Sentinel
+
+
 ## Azure Sentinel Anomaly Table
 
-- [Anomalies](anomalies.md)
 
 ## Azure Sentinel Watchlist
 
-- [Watchlist](watchlist.md)
 
 ## Azure Spring Cloud
 
@@ -212,6 +219,11 @@ ms.date: 12/9/2020
 
 ## Azure Subscription
 
+- [AzureActivity](azureactivity.md)
+
+## AzureML/OnlineEndpoint
+
+- [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
 - [AzureActivity](azureactivity.md)
 
 ## Bastions
@@ -244,10 +256,12 @@ ms.date: 12/9/2020
 
 ## Communication Services
 
+- [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
 
 ## Container Registries
 
@@ -404,7 +418,6 @@ ms.date: 12/9/2020
 
 ## Intune Specialist Reports.
 
-- [IntuneDeviceComplianceOrg](intunedevicecomplianceorg.md)
 
 ## IoT Hub
 
@@ -428,6 +441,7 @@ ms.date: 12/9/2020
 - [ContainerImageInventory](containerimageinventory.md)
 - [ContainerInventory](containerinventory.md)
 - [ContainerLog](containerlog.md)
+- [ContainerLogV2](containerlogv2.md)
 - [ContainerNodeInventory](containernodeinventory.md)
 - [ContainerServiceLog](containerservicelog.md)
 - [Heartbeat](heartbeat.md)
@@ -447,7 +461,6 @@ ms.date: 12/9/2020
 
 ## Log Analytics workspaces
 
-- [LAQueryLogs](laquerylogs.md)
 
 ## Logic Apps
 
@@ -474,6 +487,11 @@ ms.date: 12/9/2020
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Microsoft App Configuration
+
+- [AACHttpRequest](aachttprequest.md)
+- [AzureActivity](azureactivity.md)
+
 ## Network Interfaces
 
 - [AzureActivity](azureactivity.md)
@@ -489,20 +507,27 @@ ms.date: 12/9/2020
 ## Network Watcher - Connection Monitor
 
 - [AzureActivity](azureactivity.md)
-- [NWConnectionMonitorDestinationListenerResult](nwconnectionmonitordestinationlistenerresult.md)
 - [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
-- [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
+- [PowerBIDatasetsTenant](powerbidatasetstenant.md)
+
+## Power BI Datasets
+
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
 
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Project CI Workspace
+
+- [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Public IP Addresses
@@ -530,7 +555,6 @@ ms.date: 12/9/2020
 
 ## SecurityInsights
 
-- [DeviceFileEvents](devicefileevents.md)
 
 ## Service Bus
 
@@ -585,11 +609,18 @@ ms.date: 12/9/2020
 ## Synapse Workspaces
 
 - [AzureActivity](azureactivity.md)
+- [SynapseBigDataPoolApplicationsEnded](synapsebigdatapoolapplicationsended.md)
+- [SynapseBuiltinSqlPoolRequestsEnded](synapsebuiltinsqlpoolrequestsended.md)
 - [SynapseGatewayApiRequests](synapsegatewayapirequests.md)
-- [SynapseIntegrationActivityRunsEnded](synapseintegrationactivityrunsended.md)
-- [SynapseIntegrationPipelineRunsEnded](synapseintegrationpipelinerunsended.md)
-- [SynapseIntegrationTriggerRunsEnded](synapseintegrationtriggerrunsended.md)
+- [SynapseIntegrationActivityRuns](synapseintegrationactivityruns.md)
+- [SynapseIntegrationPipelineRuns](synapseintegrationpipelineruns.md)
+- [SynapseIntegrationTriggerRuns](synapseintegrationtriggerruns.md)
 - [SynapseRbacOperations](synapserbacoperations.md)
+- [SynapseSqlPoolDmsWorkers](synapsesqlpooldmsworkers.md)
+- [SynapseSqlPoolExecRequests](synapsesqlpoolexecrequests.md)
+- [SynapseSqlPoolRequestSteps](synapsesqlpoolrequeststeps.md)
+- [SynapseSqlPoolSqlRequests](synapsesqlpoolsqlrequests.md)
+- [SynapseSqlPoolWaits](synapsesqlpoolwaits.md)
 
 ## Time Series Insights Environments
 
@@ -607,6 +638,7 @@ ms.date: 12/9/2020
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [CommonSecurityLog](commonsecuritylog.md)
 - [ConfigurationChange](configurationchange.md)
 - [ConfigurationData](configurationdata.md)
 - [Event](event.md)
@@ -634,6 +666,7 @@ ms.date: 12/9/2020
 - [ADReplicationResult](adreplicationresult.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [CommonSecurityLog](commonsecuritylog.md)
 - [ComputerGroup](computergroup.md)
 - [ConfigurationChange](configurationchange.md)
 - [ConfigurationData](configurationdata.md)
@@ -658,6 +691,7 @@ ms.date: 12/9/2020
 - [VMConnection](vmconnection.md)
 - [VMProcess](vmprocess.md)
 - [W3CIISLog](w3ciislog.md)
+- [W3CIISLogV2](w3ciislogv2.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 
@@ -681,9 +715,12 @@ ms.date: 12/9/2020
 
 ## Windows Virtual Desktop Agent Health Status
 
-- [WVDAgentHealthStatus](wvdagenthealthstatus.md)
 
 ## Workload Monitor
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Workload Monitoring of Azure Monitor Insights
+
+- [InsightsMetrics](insightsmetrics.md)
