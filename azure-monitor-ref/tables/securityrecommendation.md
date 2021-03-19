@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # SecurityRecommendation
@@ -33,6 +33,7 @@ ms.date: 12/9/2020
 |Description|string||
 |DeviceId|string||
 |DiscoveredTimeUTC|datetime||
+|IsSnapshot|bool||
 |PolicyDefinitionId|string||
 |ProviderName|string||
 |RecommendationAdditionalData|string||
