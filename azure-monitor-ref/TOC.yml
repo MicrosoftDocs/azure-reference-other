@@ -356,3 +356,5 @@
     href: tables/maofficesuiteinstance.md
   - name: MAWindowsSysReqInstanceReadiness
     href: tables/mawindowssysreqinstancereadiness.md
+  - name: MicrosoftAzureBastionAuditLogs
+    href: tables/microsoftazurebastionauditlogs.md
