@@ -412,3 +412,5 @@
     href: tables/securityregulatorycompliance.md
   - name: SentinelHealth
     href: tables/sentinelhealth.md
+  - name: SignalRServiceDiagnosticLogs
+    href: tables/signalrservicediagnosticlogs.md
