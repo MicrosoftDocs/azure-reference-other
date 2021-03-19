@@ -442,3 +442,5 @@
     href: tables/synapseintegrationactivityruns.md
   - name: SynapseIntegrationActivityRunsEnded
     href: tables/synapseintegrationactivityrunsended.md
+  - name: SynapseIntegrationPipelineRuns
+    href: tables/synapseintegrationpipelineruns.md
