@@ -226,3 +226,5 @@
     href: tables/deviceskypesignin.md
   - name: DHCPActivity
     href: tables/dhcpactivity.md
+  - name: DHOSCrashData
+    href: tables/dhoscrashdata.md
