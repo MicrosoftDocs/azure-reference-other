@@ -502,3 +502,5 @@
     href: tables/windowsevent.md
   - name: WireData
     href: tables/wiredata.md
+  - name: WorkloadDiagnosticLogs
+    href: tables/workloaddiagnosticlogs.md
