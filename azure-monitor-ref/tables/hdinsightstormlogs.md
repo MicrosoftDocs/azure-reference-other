@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # HDInsightStormLogs
@@ -33,6 +33,7 @@ ms.date: 12/9/2020
 |ClusterName|string|Name of cluster.|
 |CorrelationId|string|The ID for correlated events. Can be used to identify correlated events between multiple tables.|
 |HostName|string|Name of host where log was emitted.|
+|LogLevel|string|The severity level of the log (e.g. INFO,WARN, ERROR, etc.)|
 |LogType|string|The name of the log file that a record came from (e.g. StormNimbus, StormSupervisor).|
 |Message|string|message from Storm log.|
 |OperationName|string|The operation associated with log record.|
