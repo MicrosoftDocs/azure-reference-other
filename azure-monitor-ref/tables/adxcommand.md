@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # ADXCommand
@@ -49,3 +49,4 @@ ms.date: 12/9/2020
 |TotalCPU|string|Total CPU duration|
 |Type|string|The name of the table|
 |User|string|The user that invoked the query|
+|WorkloadGroup|string|The workload group the command was classified to|
