@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # HDInsightRangerAuditLogs
@@ -39,6 +39,7 @@ ms.date: 12/9/2020
 |ClusterName|string|Name of cluster.|
 |ClusterResource|string|Resource involved in request event.|
 |ClusterResourceType|string|The type of resource accessed.|
+|ClusterType|string|Type of the cluster that emitted the record.|
 |CorrelationId|string|The ID for correlated events. Can be used to identify correlated events between multiple tables.|
 |Enforcer|string|Name of the policy enforcer.|
 |EventCount|int|Number of events associated with the request.|
