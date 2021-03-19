@@ -1,12 +1,12 @@
 ---
-title: Azure Monitor table reference index (category)
+title: Azure Monitor table reference index by category
 description: Index for tables in Azure Monitor Logs organized by category.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -34,9 +34,12 @@ ms.date: 12/9/2020
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [ADFSSignInLogs](adfssigninlogs.md)
+- [ADPAudit](adpaudit.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
+- [AzureActivityV2](azureactivityv2.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
@@ -50,9 +53,11 @@ ms.date: 12/9/2020
 - [ComputerGroup](computergroup.md)
 - [Operation](operation.md)
 - [Usage](usage.md)
+- [WorkloadDiagnosticLogs](workloaddiagnosticlogs.md)
 
 ## Azure Resources
 
+- [AACHttpRequest](aachttprequest.md)
 - [AADDomainServicesAccountLogon](aaddomainservicesaccountlogon.md)
 - [AADDomainServicesAccountManagement](aaddomainservicesaccountmanagement.md)
 - [AADDomainServicesDirectoryServiceAccess](aaddomainservicesdirectoryserviceaccess.md)
@@ -61,6 +66,7 @@ ms.date: 12/9/2020
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [AADDomainServicesSystemSecurity](aaddomainservicessystemsecurity.md)
 - [ABSBotRequests](absbotrequests.md)
+- [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
@@ -72,6 +78,8 @@ ms.date: 12/9/2020
 - [ADFActivityRun](adfactivityrun.md)
 - [ADFPipelineRun](adfpipelinerun.md)
 - [ADFTriggerRun](adftriggerrun.md)
+- [ADPAudit](adpaudit.md)
+- [ADPRequests](adprequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AEWAuditLogs](aewauditlogs.md)
@@ -79,6 +87,7 @@ ms.date: 12/9/2020
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
 - [AmlComputeJobEvent](amlcomputejobevent.md)
+- [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
@@ -148,8 +157,8 @@ ms.date: 12/9/2020
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
-- [PowerBIDatasetsTenantPreview](powerbidatasetstenantpreview.md)
-- [PowerBIDatasetsWorkspacePreview](powerbidatasetsworkspacepreview.md)
+- [PowerBIDatasetsTenant](powerbidatasetstenant.md)
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [ServiceFabricOperationalEvent](servicefabricoperationalevent.md)
 - [ServiceFabricReliableActorEvent](servicefabricreliableactorevent.md)
 - [ServiceFabricReliableServiceEvent](servicefabricreliableserviceevent.md)
@@ -160,11 +169,18 @@ ms.date: 12/9/2020
 - [StorageQueueLogs](storagequeuelogs.md)
 - [StorageTableLogs](storagetablelogs.md)
 - [SucceededIngestion](succeededingestion.md)
+- [SynapseBigDataPoolApplicationsEnded](synapsebigdatapoolapplicationsended.md)
+- [SynapseBuiltinSqlPoolRequestsEnded](synapsebuiltinsqlpoolrequestsended.md)
 - [SynapseGatewayApiRequests](synapsegatewayapirequests.md)
-- [SynapseIntegrationActivityRunsEnded](synapseintegrationactivityrunsended.md)
-- [SynapseIntegrationPipelineRunsEnded](synapseintegrationpipelinerunsended.md)
-- [SynapseIntegrationTriggerRunsEnded](synapseintegrationtriggerrunsended.md)
+- [SynapseIntegrationActivityRuns](synapseintegrationactivityruns.md)
+- [SynapseIntegrationPipelineRuns](synapseintegrationpipelineruns.md)
+- [SynapseIntegrationTriggerRuns](synapseintegrationtriggerruns.md)
 - [SynapseRbacOperations](synapserbacoperations.md)
+- [SynapseSqlPoolDmsWorkers](synapsesqlpooldmsworkers.md)
+- [SynapseSqlPoolExecRequests](synapsesqlpoolexecrequests.md)
+- [SynapseSqlPoolRequestSteps](synapsesqlpoolrequeststeps.md)
+- [SynapseSqlPoolSqlRequests](synapsesqlpoolsqlrequests.md)
+- [SynapseSqlPoolWaits](synapsesqlpoolwaits.md)
 - [TSIIngress](tsiingress.md)
 
 ## Containers
@@ -172,6 +188,7 @@ ms.date: 12/9/2020
 - [ContainerImageInventory](containerimageinventory.md)
 - [ContainerInventory](containerinventory.md)
 - [ContainerLog](containerlog.md)
+- [ContainerLogV2](containerlogv2.md)
 - [ContainerNodeInventory](containernodeinventory.md)
 - [ContainerRegistryLoginEvents](containerregistryloginevents.md)
 - [ContainerRegistryRepositoryEvents](containerregistryrepositoryevents.md)
@@ -286,9 +303,11 @@ ms.date: 12/9/2020
 - [Heartbeat](heartbeat.md)
 - [IntuneAuditLogs](intuneauditlogs.md)
 - [IntuneDeviceComplianceOrg](intunedevicecomplianceorg.md)
+- [IntuneDevices](intunedevices.md)
 - [IntuneOperationalLogs](intuneoperationallogs.md)
 - [Update](update.md)
 - [UpdateRunProgress](updaterunprogress.md)
+- [W3CIISLogV2](w3ciislogv2.md)
 
 ## Network
 
@@ -296,7 +315,6 @@ ms.date: 12/9/2020
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
 - [NetworkMonitoring](networkmonitoring.md)
-- [NWConnectionMonitorDestinationListenerResult](nwconnectionmonitordestinationlistenerresult.md)
 - [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
@@ -314,6 +332,7 @@ ms.date: 12/9/2020
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [ADFSSignInLogs](adfssigninlogs.md)
 - [Anomalies](anomalies.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AuditLogs](auditlogs.md)
@@ -328,6 +347,7 @@ ms.date: 12/9/2020
 - [HuntingBookmark](huntingbookmark.md)
 - [LinuxAuditLog](linuxauditlog.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
+- [NetworkSessions](networksessions.md)
 - [OfficeActivity](officeactivity.md)
 - [ProtectionStatus](protectionstatus.md)
 - [SecurityAlert](securityalert.md)
@@ -337,6 +357,7 @@ ms.date: 12/9/2020
 - [SecurityEvent](securityevent.md)
 - [SecurityIoTRawEvent](securityiotrawevent.md)
 - [SecurityRecommendation](securityrecommendation.md)
+- [SentinelHealth](sentinelhealth.md)
 - [SigninLogs](signinlogs.md)
 - [Syslog](syslog.md)
 - [SysmonEvent](sysmonevent.md)
@@ -412,4 +433,5 @@ ms.date: 12/9/2020
 - [SqlVulnerabilityAssessmentResult](sqlvulnerabilityassessmentresult.md)
 - [WindowsClientAssessmentRecommendation](windowsclientassessmentrecommendation.md)
 - [WindowsServerAssessmentRecommendation](windowsserverassessmentrecommendation.md)
+- [WorkloadDiagnosticLogs](workloaddiagnosticlogs.md)
 - [WorkloadMonitoringPerf](workloadmonitoringperf.md)
