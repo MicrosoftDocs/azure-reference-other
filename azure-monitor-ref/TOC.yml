@@ -350,3 +350,5 @@
     href: tables/maofficeappinstance.md
   - name: MAOfficeMacroIssueInstanceReadiness
     href: tables/maofficemacroissueinstancereadiness.md
+  - name: MAOfficeMacroSummary
+    href: tables/maofficemacrosummary.md
