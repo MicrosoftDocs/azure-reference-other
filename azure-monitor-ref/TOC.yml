@@ -332,3 +332,5 @@
     href: tables/kubemonagentevents.md
   - name: KubeNodeInventory
     href: tables/kubenodeinventory.md
+  - name: KubePodInventory
+    href: tables/kubepodinventory.md
