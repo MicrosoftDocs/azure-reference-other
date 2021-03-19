@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # SucceededIngestion
 
- Succeeded ingestion operations
+ Succeeded ingestion operations logs provide information about successfully completed ingest operations. Logs include data source details that together with `Failed ingestion operations` logs can be used for tracking the process of ingestion of each data source. Ingestion logs are supported for queued ingestion to the ingestion endpoint using SDKs, data connections, and connectors.
 
 ## Categories
 
@@ -30,14 +30,10 @@ ms.date: 12/9/2020
 
 |Column|Type|Description|
 |---|---|---|
-|Category|string|The category of this log|
-|CorrelationId|string|The ingestion source id|
 |Database|string|The name of the database holding the target table|
 |IngestionSourceId|string|A unique identifier representing the ingested source|
 |IngestionSourcePath|string|The Azure blob storage URI|
 |OperationId|string|The ingestion's operation Id|
-|OperationName|string|The name of this operation|
-|OperationVersion|string|The version of this event|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResultType|string|The final state of this data ingestion operation|
 |RootActivityId|string|The ingestion's activity Id|
@@ -46,5 +42,5 @@ ms.date: 12/9/2020
 |SucceededOn|datetime|Time at which this ingest operation successfully ended|
 |Table|string|The name of the target table into which the data is ingested|
 |TenantId|string||
-|TimeGenerated|datetime|Time at which this event is generated and logged|
+|TimeGenerated|datetime||
 |Type|string|The name of the table|
