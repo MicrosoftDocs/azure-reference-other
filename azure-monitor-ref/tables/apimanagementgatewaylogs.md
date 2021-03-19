@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # ApiManagementGatewayLogs
 
- Azure ApiManagement Gateway Logs
+ Azure ApiManagement gateway logs.
 
 ## Categories
 
@@ -36,7 +36,9 @@ ms.date: 12/9/2020
 |BackendId|string||
 |BackendMethod|string||
 |BackendProtocol|string||
+|BackendRequestBody|string|Backend request body|
 |BackendRequestHeaders|dynamic||
+|BackendResponseBody|string|Backend response body|
 |BackendResponseCode|int||
 |BackendResponseHeaders|dynamic||
 |BackendTime|long||
@@ -62,9 +64,11 @@ ms.date: 12/9/2020
 |OperationName|string||
 |ProductId|string||
 |Region|string||
+|RequestBody|string|Client request body|
 |RequestHeaders|dynamic||
 |RequestSize|int||
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
+|ResponseBody|string|Gateway response body|
 |ResponseCode|int||
 |ResponseHeaders|dynamic||
 |ResponseSize|int||
@@ -73,6 +77,7 @@ ms.date: 12/9/2020
 |TenantId|string||
 |TimeGenerated|datetime||
 |TotalTime|long||
+|TraceRecords|dynamic|Records emitted by trace policies|
 |Type|string|The name of the table|
 |Url|string||
 |UserId|string||
