@@ -494,3 +494,5 @@
     href: tables/vmprocess.md
   - name: W3CIISLog
     href: tables/w3ciislog.md
+  - name: W3CIISLogV2
+    href: tables/w3ciislogv2.md
