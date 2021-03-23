@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # Perf
@@ -22,9 +22,9 @@ ms.date: 12/9/2020
 - LogManagement
 ## Resource types
 
+- Kubernetes Services
 - Virtual machines
 - Virtual Machine Scale Sets
-- Kubernetes Services
 - Azure Arc enabled Kubernetes
 
 

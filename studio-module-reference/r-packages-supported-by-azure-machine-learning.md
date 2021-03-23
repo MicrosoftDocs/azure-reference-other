@@ -5,7 +5,6 @@ ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
 ms.topic: "reference"
-
 author: xiaoharper
 ms.author: amlstudiodocs
 
@@ -341,7 +340,7 @@ The **Compatibility** column indicates whether the package is included with CRAN
 |HI|x|x|x|  
 |highr|x|x|x|  
 |HistData|x|x|x|  
-|Hmisc||x|x|x  
+|Hmisc|x|x|x|
 |hms|||x|
 |HSAUR|x|x|x|  
 |htmlTable|||x|

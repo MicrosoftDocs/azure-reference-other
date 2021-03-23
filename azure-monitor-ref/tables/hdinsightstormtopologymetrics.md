@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # HDInsightStormTopologyMetrics
@@ -30,7 +30,7 @@ ms.date: 12/9/2020
 
 |Column|Type|Description|
 |---|---|---|
-|Acked|long|The number of Tuple “trees” successfully processed. A value of 0 is expected if no acking is done.|
+|Acked|real|The number of Tuple “trees” successfully processed. A value of 0 is expected if no acking is done.|
 |AssignedCPUPercent|real|Percent of CPU cores assigned to the topology.|
 |AssignedMemOffHeapMB|real|MB of off heap memory assigned to the topology.|
 |AssignedMemOnHeapMB|real|MB of on heap memory assigned to the topology.|
@@ -42,18 +42,18 @@ ms.date: 12/9/2020
 |CompleteLatencyMs|real|The average time (millisecond) a Tuple “tree” takes to be completely processed by the Topology. A value of 0 is expected if no acking is done.|
 |CorrelationId|string|The ID for correlated events. Can be used to identify correlated events between multiple tables.|
 |Debug|bool|Boolean representing whether debug tracing is activated.|
-|Emitted|long|The number of Tuples emitted.|
+|Emitted|real|The number of Tuples emitted.|
 |EncodedBoltId|string|The encoded ID of the bolt.|
 |EncodedId|string|The enocded ID of the topology.|
 |EncodedSpoutId|string|The encoded ID of the Spout.|
 |ErrorHost|string|Host where the error occurred.|
 |ErrorPort|string|Port associated with the error.|
 |ErrorWorkerLogLink|string|Link to the log of the worker where an error occurred.|
-|Executed|long| The number of incoming Tuples processed.|
+|Executed|real| The number of incoming Tuples processed.|
 |ExecuteLatencyMs|real|The average time (millisecond) a Tuple spends in the execute method. The execute method may complete without sending an Ack for the tuple.|
 |Executors|int|The number of threads being used to execute a task.|
 |ExecutorsTotal|int|The total amount of executors currently used and already used to execute a task.|
-|Failed|long|The number of Tuple “trees” that were explicitly failed or timed out before acking was completed. A value of 0 is expected if no acking is done.|
+|Failed|real|The number of Tuple “trees” that were explicitly failed or timed out before acking was completed. A value of 0 is expected if no acking is done.|
 |HostName|string|Hostname of the host the record came from.|
 |Id|string|The name of the component the record is from (could be spout, bolt, or name of topology).|
 |InstanceName|string|Type of record shape (there are bolt, spout, topology, and topology_stats record shapes).|
@@ -79,7 +79,7 @@ ms.date: 12/9/2020
 |TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
 |TopologyId|string|The ID of the topology.|
 |TopologyName|string|Name of the topology.|
-|Transferred|long|The number of Tuples emitted that sent to one or more bolts.|
+|Transferred|real|The number of Tuples emitted that sent to one or more bolts.|
 |Type|string|The name of the table|
 |Uptime|string|The length of time an Executor (thread) has been alive.|
 |UptimeSeconds|real|The amount of time the topology has been running in seconds.|

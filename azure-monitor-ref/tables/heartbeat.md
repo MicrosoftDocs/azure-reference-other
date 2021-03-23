@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # Heartbeat
@@ -15,17 +15,17 @@ ms.date: 12/9/2020
 
 ## Categories
 
-- Virtual Machines
-- IT & Management Tools
 - Containers
+- IT & Management Tools
+- Virtual Machines
 ## Solutions
 
 - LogManagement
 ## Resource types
 
 - Virtual machines
-- Virtual Machine Scale Sets
 - Kubernetes Services
+- Virtual Machine Scale Sets
 - Azure Arc enabled Kubernetes
 
 
@@ -39,6 +39,7 @@ ms.date: 12/9/2020
 |Computer|string|Computer name|
 |ComputerEnvironment|string|Environment that hosts the computer: Azure or Non-Azure|
 |ComputerIP|string|IP address of the computer. Note that public IP is used|
+|ComputerPrivateIPs|dynamic||
 |IsGatewayInstalled|bool|If Log Analytics gateway is installed value is true otherwise value is false.|
 |ManagementGroupName|string|Name of Operations Manager management group.|
 |OSMajorVersion|string|Operating system major version.|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/9/2020
+ms.date: 3/19/2021
 ---
 
 # AzureActivity
@@ -23,16 +23,15 @@ ms.date: 12/9/2020
 - LogManagement
 ## Resource types
 
-- App Services
-- Azure Database for PostgreSQL Servers
+- Microsoft App Configuration
 - Azure Database for MySQL Servers
 - SQL Databases
 - SQL Servers
 - SQL Managed Instances
 - Data Share
 - Power BI Embedded
-- Azure Database for PostgreSQL Servers V2
 - Data Lake Analytics
+- Data Lake Storage Gen1
 - Recovery Services Vaults
 - Data factories
 - Automation account
@@ -40,10 +39,12 @@ ms.date: 12/9/2020
 - Logic Apps
 - Service Fabric Clusters
 - Machine Learning
-- Data Lake Storage Gen1
 - Azure Cosmos DB
-- Azure Database for PostgreSQL Flexible Servers
-- Device Provisioning Services
+- IoT Hub
+- Azure Database for PostgreSQL Servers
+- Azure Monitor autoscale settings
+- Azure Database for PostgreSQL Servers V2
+- Azure Database for MariaDB Servers
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -51,8 +52,8 @@ ms.date: 12/9/2020
 - Virtual Private Network Gateways
 - Virtual Network Gateways
 - Traffic Manager Profiles
-- Azure Database for MariaDB Servers
 - Public IP Addresses
+- Network Security Groups
 - Network Interfaces
 - Load Balancers
 - Front Doors
@@ -60,39 +61,37 @@ ms.date: 12/9/2020
 - Firewalls
 - Application Gateways
 - Event Hubs
-- Network Security Groups
+- Device Provisioning Services
+- Azure Database for PostgreSQL Flexible Servers
 - Azure API for FHIR
-- IoT Hub
 - Azure Databricks Services
-- Event Grid Topics
-- Time Series Insights Environments
-- Desktop Virtualization workspaces
-- Desktop Virtualization Host Pools
-- Desktop Virtualization Application Groups
+- Virtual Machine Scale Sets
 - Application Insights
 - Azure Digital Twins
-- Workload Monitor
 - Azure Resource Group
+- Azure Subscription
 - Default schema for a resource
 - Synapse Workspaces
+- Virtual machines
+- AzureML/OnlineEndpoint
 - HDInsight Clusters
 - Experiment Workspace
 - Network Watcher - Connection Monitor
 - Bot Services
-- Communication Services
-- Azure Subscription
-- Azure Monitor autoscale settings
-- Analysis Services
-- CDN Profiles
-- Azure Arc enabled Kubernetes
 - Kubernetes Services
-- Virtual Machine Scale Sets
-- Virtual machines
+- Project CI Workspace
+- Communication Services
+- Azure Autonomous Development Platform Account
+- App Services
+- Desktop Virtualization Application Groups
+- Azure Arc enabled Kubernetes
+- Desktop Virtualization Host Pools
+- Time Series Insights Environments
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
-- Batch Accounts
 - Azure Data Explorer Clusters
+- Container Registries
 - SignalR
 - Storage Accounts
 - Key Vaults
@@ -100,7 +99,12 @@ ms.date: 12/9/2020
 - Azure Cache for Redis
 - Media Services
 - Azure Spring Cloud
-- Container Registries
+- CDN Profiles
+- Batch Accounts
+- Analysis Services
+- Workload Monitor
+- Event Grid Topics
+- Desktop Virtualization workspaces
 - Service Bus
 
 
