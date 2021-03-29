@@ -392,3 +392,5 @@
     href: tables/officeactivity.md
   - name: Operation
     href: tables/operation.md
+  - name: OutboundConnection
+    href: tables/outboundconnection.md
