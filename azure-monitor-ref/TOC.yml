@@ -366,3 +366,5 @@
     href: tables/mawindowssysreqinstancereadiness.md
   - name: MicrosoftAzureBastionAuditLogs
     href: tables/microsoftazurebastionauditlogs.md
+  - name: MicrosoftDataShareReceivedSnapshotLog
+    href: tables/microsoftdatasharereceivedsnapshotlog.md
