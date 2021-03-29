@@ -264,3 +264,5 @@
     href: tables/hdinsighthadoopandyarnlogs.md
   - name: HDInsightHadoopAndYarnMetrics
     href: tables/hdinsighthadoopandyarnmetrics.md
+  - name: HDInsightHBaseLogs
+    href: tables/hdinsighthbaselogs.md
