@@ -174,3 +174,5 @@
     href: tables/blockchainproxylog.md
   - name: BoundPort
     href: tables/boundport.md
+  - name: ComputerGroup
+    href: tables/computergroup.md
