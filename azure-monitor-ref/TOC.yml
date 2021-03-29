@@ -34,3 +34,5 @@
     href: tables/abschanneltobotrequests.md
   - name: ABSDependenciesRequests
     href: tables/absdependenciesrequests.md
+  - name: ACSAuthIncomingOperations
+    href: tables/acsauthincomingoperations.md
