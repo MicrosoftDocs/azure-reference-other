@@ -324,3 +324,5 @@
     href: tables/inboundconnection.md
   - name: InsightsMetrics
     href: tables/insightsmetrics.md
+  - name: IntuneDeviceComplianceOrg
+    href: tables/intunedevicecomplianceorg.md
