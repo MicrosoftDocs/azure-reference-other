@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/19/2021
+ms.date: 3/29/2021
 ---
 
 # WUDOStatus
