@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/19/2021
+ms.date: 3/29/2021
 ---
 
 # Watchlist
@@ -40,6 +40,7 @@ ms.date: 3/19/2021
 |LastUpdatedTimeUTC|datetime|The time (UTC) when watchlist or watchlist item was last updated|
 |Notes|string|Notes provided by user|
 |Provider|string|Input provider of the watchlist.|
+|SearchKey|string|The SearchKey is used to optimize query performance when using watchlists for joins with other data.  For example, enable a column with IP addresses to be the designated SearchKey field, then use this field to join in other event tables by IP address.|
 |Source|string|Input source of the watchlist.|
 |SourceSystem|string||
 |Tags|string|JSON array of tags provided by user|

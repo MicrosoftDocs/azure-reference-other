@@ -236,6 +236,14 @@
     href: tables/dynamiceventcollection.md
   - name: Dynamics365Activity
     href: tables/dynamics365activity.md
+  - name: EmailAttachmentInfo
+    href: tables/emailattachmentinfo.md
+  - name: EmailEvents
+    href: tables/emailevents.md
+  - name: EmailPostDeliveryEvents
+    href: tables/emailpostdeliveryevents.md
+  - name: EmailUrlInfo
+    href: tables/emailurlinfo.md
   - name: Event
     href: tables/event.md
   - name: ExchangeAssessmentRecommendation
