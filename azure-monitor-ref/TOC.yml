@@ -404,3 +404,5 @@
     href: tables/powerbidatasetsworkspace.md
   - name: PowerBIDatasetsWorkspacePreview
     href: tables/powerbidatasetsworkspacepreview.md
+  - name: SecureScoreControls
+    href: tables/securescorecontrols.md
