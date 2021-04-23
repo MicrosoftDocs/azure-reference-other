@@ -7507,8 +7507,13 @@
 		},
 		{
 			"source_path": "quantum/user-guide/language/typesystem/typeparameterizations.md",
-			"redirect_url": "/azure/quantum/user-guide/language/typesystem/typeparameterizations.md",
+			"redirect_url": "/azure/quantum/user-guide/language/typesystem/typeparameterizations",
 			"redirect_document_id": false
-		}
+		},
+			{
+			"source_path": "quantum/reference-target-list.md",
+			"redirect_url": "/azure/quantum/qc-target-list",
+			"redirect_document_id": false
+		},
 	]
 }
