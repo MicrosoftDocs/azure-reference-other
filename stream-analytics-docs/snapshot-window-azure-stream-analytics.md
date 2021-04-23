@@ -34,7 +34,7 @@ The following example returns the count of tweets with the same topic type that 
 
 ```sql
 SELECT Topic, COUNT(*)
-FROM TwitterStream TIMESTAM BY CreatedAt
+FROM TwitterStream TIMESTAMP BY CreatedAt
 GROUP BY Topic, System.Timestamp()
 ```
 
