@@ -1662,7 +1662,7 @@
 		},
 		{
 			"source_path": "articles/user-guide/quickref/iqsharp.md",
-			"redirect_url": "/azure/quantum/user-guide/quickref/iqsharp",
+			"redirect_url": "/qsharp/api/iqsharp-magic",
 			"redirect_document_id": false
 		},
 		{
@@ -7042,7 +7042,7 @@
 		},
 		{
 			"source_path": "quantum/user-guide/quickref/iqsharp.md",
-			"redirect_url": "/azure/quantum/user-guide/quickref/iqsharp",
+			"redirect_url": "/qsharp/api/iqsharp-magic",
 			"redirect_document_id": false
 		},
 		{
