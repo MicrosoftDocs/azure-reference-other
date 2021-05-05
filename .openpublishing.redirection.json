@@ -437,7 +437,7 @@
 		},
 		{
 			"source_path": "quantum/install-guide/jupyter.md",
-			"redirect_url": "/azure/quantum/install-jupyter-qkd",
+			"redirect_url": "/azure/quantum/install-jupyter-qdk",
 			"redirect_document_id": false
 		},
 		{
@@ -582,7 +582,7 @@
 		},
 		{
 			"source_path": "quantum/install-guide/qjupyter.md",
-			"redirect_url": "/azure/quantum/install-jupyter-qkd",
+			"redirect_url": "/azure/quantum/install-jupyter-qdk",
 			"redirect_document_id": false
 		},
 		{
@@ -1077,8 +1077,13 @@
 		},
 		{
 			"source_path": "articles/quickstarts/install-jupyter.md",
-			"redirect_url": "/azure/quantum/install-jupyter-qkd",
+			"redirect_url": "/azure/quantum/install-jupyter-qdk",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "articles/install-jupyter-qkd.md",
+			"redirect_url": "/azure/quantum/install-jupyter-qdk",
+			"redirect_document_id": true
 		},
 		{
 			"source_path": "articles/quickstarts/install-python.md",
@@ -6902,7 +6907,7 @@
 		},
 		{
 			"source_path": "quantum/quickstarts/install-jupyter.md",
-			"redirect_url": "/azure/quantum/install-jupyter-qkd",
+			"redirect_url": "/azure/quantum/install-jupyter-qdk",
 			"redirect_document_id": false
 		},
 		{
