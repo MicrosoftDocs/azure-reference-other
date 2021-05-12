@@ -1086,9 +1086,9 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "quantum/install-jupyter-qkd.md",
+			"source_path": "azure/quantum/install-jupyter-qkd.md",
 			"redirect_url": "/azure/quantum/install-jupyter-qdk",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "articles/quickstarts/install-python.md",
