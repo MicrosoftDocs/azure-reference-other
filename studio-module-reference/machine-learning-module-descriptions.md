@@ -147,7 +147,7 @@ If you need more sophisticated facilities for data manipulation and storage, see
 + [CosmosDB](https://docs.microsoft.com/azure/cosmos-db/): NoSQL data store; import data to Machine Learning Studio (classic). 
 + [Azure Data Lake Analytics](https://docs.microsoft.com/azure/data-lake-analytics/): Distributed analytics on big data.
 + [Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/): Event processing for the Internet of Things. 
-+ [Azure Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related cognitive services for speech, image, and facial recognition.
++ [Azure Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related Cognitive Services for speech, image, and facial recognition.
 + [Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/): Spark-based analytics platform.
 
 
