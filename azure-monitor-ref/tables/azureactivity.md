@@ -47,7 +47,6 @@ ms.date: 3/29/2021
 - Azure Database for MariaDB Servers
 - Bastions
 - Stream Analytics jobs
-- Search Services
 - Virtual Networks
 - Virtual Private Network Gateways
 - Virtual Network Gateways
