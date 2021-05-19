@@ -46,7 +46,7 @@ The modules in this section provide tools for the final phases of machine learni
 
     Measure the accuracy of a trained model, or compare multiple models.  
 
-For a detailed description of this experimental workflow, see the [credit risk solution walkthrough](https://docs.microsoft.com/azure/machine-learning/classic/tutorial-part1-credit-risk).  
+For a detailed description of this experimental workflow, see the [credit risk solution walkthrough](/azure/machine-learning/classic/tutorial-part1-credit-risk).  
 
 ## Prerequisites
 

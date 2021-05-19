@@ -30,7 +30,7 @@ By adding R code to this module, you can perform a variety of customized tasks t
 
 ### R versions supported in Studio (classic)
 
-Studio (classic) supports both the typical distribution of R that is available from CRAN, and Microsoft R Open (MRO), which includes all the base R packages, plus the [Revo packages](https://docs.microsoft.com/machine-learning-server/r-reference/introducing-r-server-r-package-reference).
+Studio (classic) supports both the typical distribution of R that is available from CRAN, and Microsoft R Open (MRO), which includes all the base R packages, plus the [Revo packages](/machine-learning-server/r-reference/introducing-r-server-r-package-reference).
 
 You can specify which version of R to use in an experiment. However, you cannot install any other version of R into your workspace.
 

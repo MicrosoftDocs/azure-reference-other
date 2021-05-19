@@ -1230,9 +1230,9 @@ The error message from Hive is normally reported back in the Error Log so that y
 
 See the following articles for help with Hive queries for machine learning:
 
-+ [Create Hive tables and load data from Azure Blob Storage](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-move-hive-tables)
-+ [Explore data in tables with Hive queries](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-explore-data-hive-tables)
-+ [Create features for data in an Hadoop cluster using Hive queries](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-create-features-hive)
++ [Create Hive tables and load data from Azure Blob Storage](/azure/machine-learning/machine-learning-data-science-move-hive-tables)
++ [Explore data in tables with Hive queries](/azure/machine-learning/machine-learning-data-science-explore-data-hive-tables)
++ [Create features for data in an Hadoop cluster using Hive queries](/azure/machine-learning/machine-learning-data-science-create-features-hive)
 + [Hive for SQL Users Cheat Sheet (PDF)](https://hortonworks.com/wp-content/uploads/2013/05/hql_cheat_sheet.pdf)
 
   

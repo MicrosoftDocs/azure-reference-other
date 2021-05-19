@@ -67,11 +67,11 @@ For examples of classification in action, see the [Azure AI Gallery](https://gal
 
 For help choosing an algorithm, see these articles:
 
-- [Machine learning algorithm cheat sheet for Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
+- [Machine learning algorithm cheat sheet for Azure Machine Learning](/azure/machine-learning/studio/algorithm-cheat-sheet)
  
     Provides a graphical decision chart to guide you through the selection process.
  
-- [Choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice)
+- [Choose Azure Machine Learning algorithms for clustering, classification, or regression](/azure/machine-learning/studio/algorithm-choice)
  
     Explains in greater detail the different types of machine learning algorithms and how they're used.
 

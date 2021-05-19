@@ -62,7 +62,7 @@ This article describes how to use the **Export data to Hive** option in the [Exp
 
 For examples of how to use the [Export Data](export-data.md) module, see the [Azure AI Gallery](https://gallery.azure.ai).
 
-+ [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/hive-criteo-walkthrough): This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio (classic) using Hive.
++ [Advanced Analytics Process and Technology in Action: Using HDInsight Hadoop clusters](/azure/machine-learning/team-data-science-process/hive-criteo-walkthrough): This article provides a detailed walkthrough of how to create a cluster, upload data, and call the data from Studio (classic) using Hive.
 
 ## <a name="TechnicalNotes"></a> Technical notes
 
@@ -72,7 +72,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 #### How to avoid out of memory problems when writing large datasets
 
-Sometimes the default configuration of the Hadoop cluster is too limited to support running the MapReduce job. For example, in these [Release Notes](https://docs.microsoft.com/azure/hdinsight/hdinsight-release-notes) for HDInsight, the default settings are defined as a four-node cluster.
+Sometimes the default configuration of the Hadoop cluster is too limited to support running the MapReduce job. For example, in these [Release Notes](/azure/hdinsight/hdinsight-release-notes) for HDInsight, the default settings are defined as a four-node cluster.
 
 If the requirements of the MapReduce job exceed available capacity, the Hive queries might return an **Out of Memory** error message, which causes the [Export Data](export-data.md) operation to fail. If this happens, you can change the default memory allocation for Hive queries.
 
@@ -124,7 +124,7 @@ It can be hard to figure out the default container for the cluster. Here are som
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes).  
 
 ## See also
 

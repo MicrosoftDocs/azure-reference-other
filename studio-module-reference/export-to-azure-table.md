@@ -51,7 +51,7 @@ This option is useful when you want to export results or intermediate data from 
 
     - **Azure table origin columns**: Select any additional columns from the dataset that you want to save to the Azure table. You must also include the columns selected for **PartitionKey** and **RowKey**.
 
-     For more information about tables in Azure Storage, see [Understanding the Table Service Data Model](https://docs.microsoft.com/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
+     For more information about tables in Azure Storage, see [Understanding the Table Service Data Model](/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
 
 6. Specify the names of the columns to write to the table.
 
@@ -155,7 +155,7 @@ For examples of how to use these machine learning modules, see the [Azure AI Gal
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes). 
 
 ## See also
 

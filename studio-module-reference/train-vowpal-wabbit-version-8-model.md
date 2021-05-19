@@ -77,11 +77,11 @@ The Vowpal Wabbit data format has the advantage that it does not require a colum
   
     - For  **Azure storage key**, copy and paste the key that is provided for accessing the storage account,  
   
-    If you don’t have a key, see [How to regenerate storage access keys](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)  
+    If you don’t have a key, see [How to regenerate storage access keys](/azure/storage/common/storage-create-storage-account)  
 
 4.  For **Azure container name**, type the name of a single container in the specified Azure storage account where the model training data is stored. Do not type the account name or any protocol prefix.   
    
-    For example, if the full container path and name is `https://myaccount.blob.core.windows.net/vwmodels`, you should type just `vwmodels`.  For more information about container names, see [Naming and Referencing Containers, Blobs, and Metadata](https://docs.microsoft.com/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).  
+    For example, if the full container path and name is `https://myaccount.blob.core.windows.net/vwmodels`, you should type just `vwmodels`.  For more information about container names, see [Naming and Referencing Containers, Blobs, and Metadata](/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).  
 
 5. In the **VW arguments** text box, type the command-line arguments for the Vowpal Wabbit executable.
   
@@ -220,7 +220,7 @@ Rather than using data in the Azure ML workspace, the training data is directly 
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes).  
 
 ## See also  
  [Text Analytics](text-analytics.md)   

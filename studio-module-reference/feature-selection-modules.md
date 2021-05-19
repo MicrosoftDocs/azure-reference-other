@@ -55,8 +55,8 @@ Feature selection is different from feature engineering, which focuses on creati
 
 ### Resources
 
-- For a discussion of the different ways that you can engineer features or select the best features as part of the data science process, see [Feature engineering in data science](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-create-features).
-- For a walkthrough of feature selection in the data science process, see [Filter features from your data - Feature selection](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-select-features).
+- For a discussion of the different ways that you can engineer features or select the best features as part of the data science process, see [Feature engineering in data science](/azure/machine-learning/machine-learning-data-science-create-features).
+- For a walkthrough of feature selection in the data science process, see [Filter features from your data - Feature selection](/azure/machine-learning/machine-learning-data-science-select-features).
 
 ## <a name="bkmk_ModulesDescribed"></a>Feature selection methods in Machine Learning Studio (classic)
 

@@ -17,7 +17,7 @@ This article describes how to use the [Import Data](import-data.md) module in Az
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
-[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction) supports NoSQL database storage, using a flexible data model. The advantages of using the SQL APIs in this data store for machine learning include fast and predictable performance, automatic scaling, global distribution, and rich query capabilities. 
+[Azure Cosmos DB](/azure/cosmos-db/sql-api-introduction) supports NoSQL database storage, using a flexible data model. The advantages of using the SQL APIs in this data store for machine learning include fast and predictable performance, automatic scaling, global distribution, and rich query capabilities. 
 
 Together with Azure SQL Database, this option lets you dynamically filter incoming datasets.
 
@@ -72,7 +72,7 @@ The following steps describe how to manually configure the import source.
 
 7. Define a SQL query and filter condition on the data, by using the **SQL query** and **SQL query parameters** options.
 
-    For **SQL query**, type a query that defines the data to retrieve from the collection. We recommend that you use the [Query Explorer](https://docs.microsoft.com/azure/cosmos-db/tutorial-query-sql-api) to create and test your CosmosDB queries beforehand.
+    For **SQL query**, type a query that defines the data to retrieve from the collection. We recommend that you use the [Query Explorer](/azure/cosmos-db/tutorial-query-sql-api) to create and test your CosmosDB queries beforehand.
 
     For **SQL query parameters**, provide an expression in JSON format that can be used to dynamically filter the data returned. Typically you supply the actual value of the parameter value when running the experiment as part of a Web service. 
 
@@ -88,7 +88,7 @@ The following steps describe how to manually configure the import source.
 
     Azure Machine Learning **cannot** compare the cached data against the data in your CosmosDB account. Hence, there is no way to perform incremental updates from Azure Machine Learning.
 
-    If you want to re-import only when the data changes, you must define that logic in another application, such as Azure Data Factory. For more information, see [Move data to and from Azure Cosmos DB using Azure Data Factory](https://docs.microsoft.com/azure/data-factory/v1/data-factory-azure-documentdb-connector).
+    If you want to re-import only when the data changes, you must define that logic in another application, such as Azure Data Factory. For more information, see [Move data to and from Azure Cosmos DB using Azure Data Factory](/azure/data-factory/v1/data-factory-azure-documentdb-connector).
 
 9. Run the experiment, or select just the [Import Data](import-data.md) module and click **Run selected**.
 
@@ -102,7 +102,7 @@ To capture a snapshot of this data in your Azure Machine Learning workspace as a
 
 For a detailed walkthrough of how to use Azure Cosmos DB as a data source for machine learning, see the [Azure AI Gallery](https://gallery.azure.ai/).
 
-+ [SQL queries for Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-sql-query): This article explains how to perform SQL queries on Azure Cosmos DB data.
++ [SQL queries for Azure Cosmos DB](/azure/cosmos-db/sql-api-sql-query): This article explains how to perform SQL queries on Azure Cosmos DB data.
 
 ## <a name="TechnicalNotes"></a> Technical notes
 
@@ -134,7 +134,7 @@ To get only the volcano data related to a specific country, you can specify the 
 
 If you don't have an existing document store, see these articles to get started.
 
-+ [Azure Cosmos DB: Build a SQL API web app with .NET and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)
++ [Azure Cosmos DB: Build a SQL API web app with .NET and the Azure portal](/azure/cosmos-db/create-sql-api-dotnet)
 
 + [Quickstart: Build a .NET console app to manage Azure Cosmos DB SQL API resources](/azure/cosmos-db/create-sql-api-dotnet)
 
@@ -142,9 +142,9 @@ If you don't have an existing document store, see these articles to get started.
 
 ### Data migration and query syntax help
 
-For samples of queries on a JSON data store, download the [Azure Cosmos DB query cheat sheet](https://docs.microsoft.com/azure/cosmos-db/query-cheat-sheet).
+For samples of queries on a JSON data store, download the [Azure Cosmos DB query cheat sheet](/azure/cosmos-db/query-cheat-sheet).
 
-If you need to upload content into Azure Cosmos DB, we recommend the [Azure Cosmos DB migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data). It validates, uploads, and indexes your data. The tool supports multiple sources, including MongoDB, Amazon DynamoDB, HBase, SQL Server databases, and CSV files.
+If you need to upload content into Azure Cosmos DB, we recommend the [Azure Cosmos DB migration tool](/azure/cosmos-db/import-data). It validates, uploads, and indexes your data. The tool supports multiple sources, including MongoDB, Amazon DynamoDB, HBase, SQL Server databases, and CSV files.
 
 ### Using schema-less queries
 
@@ -191,7 +191,7 @@ The following table includes only those parameters for the **Import Data** modul
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes). 
 
 ## See also
 
