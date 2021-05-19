@@ -47,4 +47,4 @@ WHERE CAST( TollId AS bigint) > 2
 For more information on Stream Analytics data types, see:
 - [Data types](data-types-azure-stream-analytics.md)
 - [TRY_CAST](try-cast-azure-stream-analytics.md)
-- [Parsing JSON and AVRO data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json)
+- [Parsing JSON and AVRO data](/azure/stream-analytics/stream-analytics-parsing-json)

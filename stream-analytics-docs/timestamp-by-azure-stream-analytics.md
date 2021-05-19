@@ -126,5 +126,5 @@ GROUP BY TUMBLINGWINDOW(minute,3), TollId, PartitionId
 ## See Also  
  [System.Timestamp()](system-timestamp-stream-analytics.md)   
  [Time Skew Policies](time-skew-policies-azure-stream-analytics.md)   
- [Understand time handling in Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-time-handling)   
+ [Understand time handling in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-time-handling)   
  [Unix Time](https://en.wikipedia.org/wiki/Unix_time)  

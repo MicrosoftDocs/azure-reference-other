@@ -37,7 +37,7 @@ If your source data changes, you can refresh the dataset and add new data by re-
 
 The [Import Data](import-data.md) module supports the following data sources. Click the links for detailed instructions and examples of using each data source. 
  
-If you are not sure how or where you should store your data, see this guide to common data scenarios in the data science process:  [Scenarios for advanced analytics in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-plan-sample-scenarios). 
+If you are not sure how or where you should store your data, see this guide to common data scenarios in the data science process:  [Scenarios for advanced analytics in Azure Machine Learning](/azure/machine-learning/machine-learning-data-science-plan-sample-scenarios). 
 
 |Data source| Use with|
 |-----------|-----------|  
@@ -167,7 +167,7 @@ If you are exporting a dataset to a CSV file, use [Edit Metadata](edit-metadata.
 
 If you need to get data from a source that is not in the list, there are various workarounds you can try: 
 
-- To upload data from a file on your computer, click **New** in Studio (classic), select **Dataset**, and then select **From Local File**. Locate the file and specify the format (TSV, CSV, etc.). For more information, see [Import training data into Studio (classic)](https://docs.microsoft.com/azure/machine-learning/classic/import-data).
+- To upload data from a file on your computer, click **New** in Studio (classic), select **Dataset**, and then select **From Local File**. Locate the file and specify the format (TSV, CSV, etc.). For more information, see [Import training data into Studio (classic)](/azure/machine-learning/classic/import-data).
 
 - Use R or Python.  You can use the [Execute R Script](execute-r-script.md) module with an appropriate R package to get data from other cloud databases.
 
@@ -179,7 +179,7 @@ If you need to get data from a source that is not in the list, there are various
 
 - Get data from AWS clusters. You can run a query against a generic Hive cluster with WebHCat or HCatalog endpoint enabled. Or publish as a page and read from the Web URL.
 
-- Get data from MongoDB. The data migration utility for Azure Cosmos DB supports a wide variety of sources and formats. For more information and examples, see [Azure Cosmos DB: Data migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data)
+- Get data from MongoDB. The data migration utility for Azure Cosmos DB supports a wide variety of sources and formats. For more information and examples, see [Azure Cosmos DB: Data migration tool](/azure/cosmos-db/import-data)
 
 For more ideas and workarounds, see the [Azure Machine Learning forum](https://social.msdn.microsoft.com/forums/azure/home?forum=MachineLearning) or [Azure AI Gallery](https://gallery.azure.ai).  
 
@@ -215,7 +215,7 @@ Each data source must be configured using different options. This table lists on
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes).  
 
 ## See also
 

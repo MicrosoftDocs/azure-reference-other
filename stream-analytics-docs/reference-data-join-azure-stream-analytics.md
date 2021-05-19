@@ -25,11 +25,11 @@ WHERE R.Expired = '1'
 ## Particularities of Reference Data JOIN
 - Using Reference Data JOIN requires that an input source for Reference Data is defined.  
 - Reference data JOIN is supported for inner JOIN (default) and left outer JOIN, with reference data on the right side of the JOIN operator.
-- Reference data can be static (loaded only once) or dynamic (refreshed regularly). However even in the dynamic case, reference data does not make the time progress so the stream on the left side needs to get new events in order to produce outputs. See also [how time progresses in azure stream analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-time-handling#how-time-progresses-in-azure-stream-analytics) for more information.
+- Reference data can be static (loaded only once) or dynamic (refreshed regularly). However even in the dynamic case, reference data does not make the time progress so the stream on the left side needs to get new events in order to produce outputs. See also [how time progresses in azure stream analytics](/azure/stream-analytics/stream-analytics-time-handling#how-time-progresses-in-azure-stream-analytics) for more information.
   
  ## See Also  
 - [JOIN](join-azure-stream-analytics.md)
-- [Reference data input](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-use-reference-data)
--  [Use reference data from a SQL Database for an Azure Stream Analytics job](https://docs.microsoft.com/azure/stream-analytics/sql-reference-data)
-- [Process configurable threshold-based rules in Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-threshold-based-rules)
+- [Reference data input](/azure/stream-analytics/stream-analytics-use-reference-data)
+-  [Use reference data from a SQL Database for an Azure Stream Analytics job](/azure/stream-analytics/sql-reference-data)
+- [Process configurable threshold-based rules in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-threshold-based-rules)
  

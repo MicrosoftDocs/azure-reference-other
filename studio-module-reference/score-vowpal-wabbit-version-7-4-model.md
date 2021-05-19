@@ -142,7 +142,7 @@ All arguments other than those described above are allowed.
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes).  
 ## See also  
  [Text Analytics](text-analytics.md)   
  [Feature Hashing](feature-hashing.md)   

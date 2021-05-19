@@ -87,9 +87,7 @@ This is because permutation feature importance doesn’t measure the association
 |Test data|[Data Table](data-table.md)|Test dataset for scoring and evaluating a model after permutation of feature values|  
   
 ##  Module parameters  
-  
-###  
-  
+    
 |Name|Type|Range|Optional|Default|Description|  
 |----------|----------|-----------|--------------|-------------|-----------------|  
 |Random seed|Integer|>=0|Required|0|Random number generator seed value|  

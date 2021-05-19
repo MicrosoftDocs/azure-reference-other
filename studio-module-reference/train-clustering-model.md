@@ -97,7 +97,7 @@ For an example of how clustering is used in machine learning, see the [Azure AI 
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes). 
 
 ## See also  
  [A-Z Module List](a-z-module-list.md)   

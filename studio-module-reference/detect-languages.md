@@ -75,7 +75,7 @@ For a general idea of the languages that potentially can be detected, refer to [
 
 Many more languages can be detected than Azure Machine Learning currently supports for advanced text analytics. We recommend that you use the results of **Detect Languages** to filter the results that you send to other modules that require language-specific processing.
 
-The underlying linguistic services are also used by the [Text Analytics ](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) service in [Azure Cognitive Services](/azure/cognitive-services/).
+The underlying linguistic services are also used by the [Text Analytics ](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) service in [Azure Cognitive Services](/azure/cognitive-services/).
 
 ##  Expected inputs
 
@@ -107,7 +107,7 @@ The underlying linguistic services are also used by the [Text Analytics ](https:
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes).
 
 ## See also  
  [Text Analytics](text-analytics.md)   
