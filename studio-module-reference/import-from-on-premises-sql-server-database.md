@@ -18,7 +18,7 @@ This article describes how to use the [Import Data](import-data.md) module in Az
 
 Azure Machine Learning can access an on-premises SQL Server database if the data is provided using a Microsoft Data Management Gateway. Therefore, before you use [Import Data](import-data.md),  you must meet these requirements:
 
-- Install a [Microsoft Data Management Gateway](https://docs.microsoft.com/azure/data-factory/v1/data-factory-data-management-gateway) that can access the data source
+- Install a [Microsoft Data Management Gateway](/azure/data-factory/v1/data-factory-data-management-gateway) that can access the data source
 - Register the gateway in your Azure Machine Learning workspace
 - Configure the [Import Data](import-data.md) to identify the gateway
 
@@ -30,9 +30,9 @@ To access an on-premises SQL Server database in Azure Machine Learning, you need
 
 For details about installing and registering the gateway, see these articles:
 
-- [Perform advanced analytics with Azure Machine Learning using data from an on-premises SQL Server database](https://docs.microsoft.com/azure/machine-learning/studio/use-data-from-an-on-premises-sql-server)
+- [Perform advanced analytics with Azure Machine Learning using data from an on-premises SQL Server database](/azure/machine-learning/studio/use-data-from-an-on-premises-sql-server)
 
-- [Troubleshoot issues with using Data Management Gateway](https://docs.microsoft.com/azure/data-factory/v1/data-factory-troubleshoot-gateway-issues)]
+- [Troubleshoot issues with using Data Management Gateway](/azure/data-factory/v1/data-factory-troubleshoot-gateway-issues)]
 
 ## How to import data from an on-premises SQL Server database
 
@@ -171,7 +171,7 @@ As a workaround, you can use Azure Data Factory to copy your on-premises data in
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes).
 
 ## See also
 

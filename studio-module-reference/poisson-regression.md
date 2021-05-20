@@ -31,7 +31,7 @@ Poisson regression is intended for use in regression models that are used to pre
 - A Poisson distribution is a discrete distribution; therefore, it is not meaningful to use this method with non-whole numbers.
 
 > [!TIP]
-> If your target isn’t a count, Poisson regression is probably not an appropriate method. Try one of the other modules in this category. For help picking a regression method, see the [Azure machine Learning algorithm cheat sheet](https://docs.microsoft.com/azure/machine-learning/machine-learning-algorithm-cheat-sheet). 
+> If your target isn’t a count, Poisson regression is probably not an appropriate method. Try one of the other modules in this category. For help picking a regression method, see the [Azure machine Learning algorithm cheat sheet](/azure/machine-learning/machine-learning-algorithm-cheat-sheet). 
 
 After you have set up the regression method, you must train the model using a dataset containing examples of the value you want to predict. The trained model can then be used to make predictions.
 

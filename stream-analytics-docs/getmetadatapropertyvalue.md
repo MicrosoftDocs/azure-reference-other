@@ -16,7 +16,7 @@ Queries input data for specific properties. There are three types of properties:
 Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record. 
 
 > [!NOTE]
-> At this time,this function cannot be tested on the Azure portal (it will return empty results). You can use Visual Studio tools for Stream Analytics to test this function in your query using [live data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-live-data-local-testing).
+> At this time,this function cannot be tested on the Azure portal (it will return empty results). You can use Visual Studio tools for Stream Analytics to test this function in your query using [live data](/azure/stream-analytics/stream-analytics-live-data-local-testing).
 
 ##  Default metadata properties for Event Hubs
 * EventEnqueuedUtcTime
@@ -79,7 +79,7 @@ Example
 
 A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages is made accessible using GetMetadataPropertyValue, as shown in the example below.
 
-Additionally, twin properties and enriched properties added using [IoT Hub message enrichment](https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview), can also be retrieved using GetMetadataPropertyValue.
+Additionally, twin properties and enriched properties added using [IoT Hub message enrichment](/azure/iot-hub/iot-hub-message-enrichments-overview), can also be retrieved using GetMetadataPropertyValue.
 
 ### Examples
 

@@ -32,7 +32,7 @@ After you create the model, you can use [Train Model](train-model.md) to train t
 > [!WARNING]
 > Currently it is not possible to pass the scored results of an R model to [Evaluate Model](evaluate-model.md) or [Cross-Validate Model](cross-validate-model.md). If you need to evaluate a model, you can write custom R script and run it using the [Execute R Script](execute-r-script.md) module.  
 
-In addition to using the **Create R Model** to save and re-use custom R modules, you can create your own implementation of a modeling and data management process using R, upload the files in zipped format to your workspace, and then register the package as a custom module. For more information, see [Custom R Modules](https://docs.microsoft.com/azure/machine-learning/classic/custom-r-modules).  
+In addition to using the **Create R Model** to save and re-use custom R modules, you can create your own implementation of a modeling and data management process using R, upload the files in zipped format to your workspace, and then register the package as a custom module. For more information, see [Custom R Modules](/azure/machine-learning/classic/custom-r-modules).  
 
 ## How to configure Create R Model
 
@@ -172,7 +172,7 @@ def azureml_main(dataframe):
 
 After you have run the experiment, you can publish the complete experiment as a web service.
 
-For updated instructions on how to create a web service from a Studio (classic) experiment, see [Walkthrough Step 5: Deploy the Azure Machine Learning web service](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-5-publish-web-service)
+For updated instructions on how to create a web service from a Studio (classic) experiment, see [Walkthrough Step 5: Deploy the Azure Machine Learning web service](/azure/machine-learning/studio/walkthrough-5-publish-web-service)
 
 By default, the web service expects all input columns from the training data to be provided, including the label column. You can add an instance of [Select Columns in Dataset](select-columns-in-dataset.md) between the input data source and the [Score Model](score-model.md) module to exclude the label you’re trying to predict.
 

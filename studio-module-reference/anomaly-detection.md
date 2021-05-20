@@ -38,12 +38,12 @@ For an example of how these modules work together, see the [Anomaly Detection: C
  
 [Time Series Anomaly Detection](time-series-anomaly-detection.md) is a new module that's a bit different from the other anomaly detection models. The Time Series Anomaly Detection module is designed for time series data. It's intended to use to analyze trends over time. The algorithm identifies potentially anomalous trends in the time series data. It flags deviations from the trend's direction or magnitude.
 
-Azure also provides the [Machine Learning Anomaly Detection API](https://docs.microsoft.com/azure/machine-learning/machine-learning-apps-anomaly-detection-api), which you can call as a web service.
+Azure also provides the [Machine Learning Anomaly Detection API](/azure/machine-learning/machine-learning-apps-anomaly-detection-api), which you can call as a web service.
 
 > [!TIP]
 > If you're not sure whether anomaly detection is the right algorithm to use with your data, see these guides: 
-> -  [Machine learning algorithm cheat sheet for Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet/) provides a graphical decision chart to guide you through the selection process.
-> - [Choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-choice).
+> -  [Machine learning algorithm cheat sheet for Azure Machine Learning](/azure/machine-learning/studio/algorithm-cheat-sheet/) provides a graphical decision chart to guide you through the selection process.
+> - [Choose Azure Machine Learning algorithms for clustering, classification, or regression](/azure/machine-learning/studio/algorithm-choice).
 
 ## List of modules
 

@@ -125,11 +125,11 @@ maml.mapOutputPort("data")
 
 Begin with this tutorial that describes how to build a custom R module:
 
-+ [Extend Your Experiment with R](https://docs.microsoft.com/azure/machine-learning/classic/custom-r-modules) 
++ [Extend Your Experiment with R](/azure/machine-learning/classic/custom-r-modules) 
 
 This article discusses the differences between the two scoring engines in detail, and explains how you can choose a scoring method when you deploy your experiment as a web service:
 
-+ [Machine Learning: Consume Web Services](https://docs.microsoft.com/azure/machine-learning/classic/consume-web-services)
++ [Machine Learning: Consume Web Services](/azure/machine-learning/classic/consume-web-services)
 
 This experiment in the Azure AI Gallery demonstrates how you can create a custom R module that does training, scoring, and evaluation:
 

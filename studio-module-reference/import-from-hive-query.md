@@ -74,7 +74,7 @@ The following steps describe how to manually configure the import source.
 
 6. Click the **Hadoop user account password** text box, and type the credentials that you used when you provisioned the cluster.
 
-    For more information about cluster naming and authentication for Hadoop, see [Provision Hadoop clusters in HDInsight](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters).
+    For more information about cluster naming and authentication for Hadoop, see [Provision Hadoop clusters in HDInsight](/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters).
 
 7. For **Location of output data**, select the option that indicates where the data is stored. If the data is in the Hadoop distributed file system (HDFS), it must be accessible via the same account and password that you just entered. If the data is in Azure, provide the location and credentials of the storage account.
 
@@ -133,7 +133,7 @@ For more information, see [Use Python with Hive and Pig in HDInsight](https://az
 
 ### Avoiding out of memory problems when using Hive to pre-process data
 
-When using Hive queries to extract records from big data sources, sometimes the default configuration of the Hadoop cluster is too limited to support running the MapReduce job. For example, in these [Release Notes](https://docs.microsoft.com/azure/hdinsight/hdinsight-release-notes) for HDInsight, the default settings are defined as a four-node cluster.
+When using Hive queries to extract records from big data sources, sometimes the default configuration of the Hadoop cluster is too limited to support running the MapReduce job. For example, in these [Release Notes](/azure/hdinsight/hdinsight-release-notes) for HDInsight, the default settings are defined as a four-node cluster.
 
 If the requirements of the MapReduce job exceed available capacity, the Hive queries might return an **Out of Memory** error message, which causes the [Import Data](import-data.md) operation to fail. If this happens, you can change the default memory allocation for Hive queries in the [Import Data](import-data.md) module, as shown here:
 
@@ -202,7 +202,7 @@ There are also multiple options for filtering data after it has been loaded into
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).  
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes).  
 
 ## See also
 

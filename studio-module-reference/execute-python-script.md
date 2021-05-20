@@ -20,7 +20,7 @@ Category: [Python Language Modules](python-language-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio (classic) to run Python code. For more information about the architecture and design principles of Python in Studio (classic), see [the following article.](https://docs.microsoft.com/azure/machine-learning/classic/execute-python-scripts)
+This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio (classic) to run Python code. For more information about the architecture and design principles of Python in Studio (classic), see [the following article.](/azure/machine-learning/classic/execute-python-scripts)
 
 With Python, you can perform tasks that aren't currently supported by existing Studio (classic) modules such as:
 

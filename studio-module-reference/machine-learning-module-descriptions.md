@@ -35,9 +35,9 @@ Sometimes modules are updated to add new functionality, or to remove older code.
 
 For an example of how to build a complete machine learning experiment, see these tutorials:  
   
--   [Develop a predictive solution by using Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/classic/tutorial-part1-credit-risk)  
+-   [Develop a predictive solution by using Azure Machine Learning](/azure/machine-learning/classic/tutorial-part1-credit-risk)  
   
--   [Create a simple experiment in Azure Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/classic/create-experiment)  
+-   [Create a simple experiment in Azure Machine Learning Studio (classic)](/azure/machine-learning/classic/create-experiment)  
  
 ##  Module categories
 
@@ -142,14 +142,13 @@ Machine Learning Studio (classic) modules don't attempt to duplicate data integr
 
 If you need more sophisticated facilities for data manipulation and storage, see the following:
 
-+ [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/): Enterprise-ready, cloud data processing pipelines.
-+ [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): Scalable storage, with integrated access to machine learning.
-+ [CosmosDB](https://docs.microsoft.com/azure/cosmos-db/): NoSQL data store; import data to Machine Learning Studio (classic). 
-+ [Azure Data Lake Analytics](https://docs.microsoft.com/azure/data-lake-analytics/): Distributed analytics on big data.
-+ [Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/): Event processing for the Internet of Things. 
-+ [Azure Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related Cognitive Services for speech, image, and facial recognition.
-+ [Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/): Spark-based analytics platform.
-
+- [Azure Data Factory](/azure/data-factory/): Enterprise-ready, cloud data processing pipelines.
+- [Azure SQL Database](/azure/sql-database/): Scalable storage, with integrated access to machine learning.
+- [CosmosDB](/azure/cosmos-db/): NoSQL data store; import data to Machine Learning Studio (classic). 
+- [Azure Data Lake Analytics](/azure/data-lake-analytics/): Distributed analytics on big data.
+- [Stream Analytics](/azure/stream-analytics/): Event processing for the Internet of Things. 
+- [Azure Text Analytics](/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related Cognitive Services for speech, image, and facial recognition.
+- [Azure Databricks](/azure/azure-databricks/): Spark-based analytics platform.
 
 ## See also
 

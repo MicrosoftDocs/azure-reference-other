@@ -170,7 +170,7 @@ For examples of how cross-validation is used in machine learning, see the [Azure
 
     However, if a validation dataset is provided upstream, the module uses the specified training and testing datasets instead of splitting into *n* folds. That is, the first dataset is used to train the model for each parameter combination, and the models are evaluated on the validation dataset. See the section on [using a parameter sweep with cross-validation](#bkmk_sweep).
 
-+ Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-parameters-optimize)
++ Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](/azure/machine-learning/studio/algorithm-parameters-optimize)
 
 ##  Expected inputs
 
@@ -208,7 +208,7 @@ For examples of how cross-validation is used in machine learning, see the [Azure
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes). 
 
 ## See also
   

@@ -210,7 +210,7 @@ We recommend that you experiment with the settings to determine the most efficie
 
 A report containing the accuracy for each model is presented at the end so that you can review the metric results. A uniform set of metrics is used for all classification models, and a different set of metrics is used for regression models. However, during training, you must choose a **single** metric to use in ranking the models that are generated during the tuning process. You might find that the best metric varies, depending on your business problem, and the cost of false positives and false negatives.
 
-For more information, see [How to evaluate model performance in Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/classic/evaluate-model-performance)
+For more information, see [How to evaluate model performance in Azure Machine Learning](/azure/machine-learning/classic/evaluate-model-performance)
 
 
 #### Metrics used for classification

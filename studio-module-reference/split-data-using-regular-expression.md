@@ -40,7 +40,7 @@ Other options in the **Split Data** module:
   
     The regular expression is applied only to the specified column, which must be a string data type.
 
-    For help composing regular expressions, see the [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+    For help composing regular expressions, see the [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 4. Run the experiment, or right-click the module and select **Run selected**.
 
