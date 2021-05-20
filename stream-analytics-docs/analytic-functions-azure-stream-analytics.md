@@ -14,9 +14,6 @@ ms.date: 06/07/2019
 |Analytic functions| ...| ...| 
 |-|-|-| 
 |[ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)|[LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)|[LAST &#40;Azure Stream Analytics&#41;](last-azure-stream-analytics.md)|
-|[COUNT &#40;Azure Stream Analytics&#41;](count-azure-stream-analytics.md) | [MIN &#40;Azure Stream Analytics&#41;](min-azure-stream-analytics.md) | [MAX &#40;Azure Stream Analytics&#41;](max-azure-stream-analytics.md)
-| [SUM &#40;Azure Stream Analytics&#41;](sum-azure-stream-analytics.md) | [AVG &#40;Azure Stream Analytics&#41;](avg-azure-stream-analytics.md) |
-|[Collect &#40;Azure Stream Analytics&#41;](collect-azure-stream-analytics.md) | [CollectTOP &#40;Azure Stream Analytics&#41;](collecttop-azure-stream-analytics.md)| [TopOne &#40;Azure Stream Analytics&#41;](topone-azure-stream-analytics.md)|
 |[AnomalyDetection_SpikeAndDip](anomalydetection-spikeanddip-azure-stream-analytics.md)|[AnomalyDetection_ChangePoint](anomalydetection-changepoint-azure-stream-analytics.md)||
   
 Note that analytic functions in Stream Analytics query language, unlike in T-SQL, are evaluated first. In Stream Analytics query language:
