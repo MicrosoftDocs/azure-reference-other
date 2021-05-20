@@ -96,7 +96,7 @@ These examples in the [Azure AI Gallery](https://gallery.azure.ai) demonstrate t
 
 The following articles provide real-world examples of how you can use a machine learning model for scoring:
 
-- [Develop a predictive solution](https://docs.microsoft.com/azure/machine-learning/classic/tutorial-part1-credit-risk)  
+- [Develop a predictive solution](/azure/machine-learning/classic/tutorial-part1-credit-risk)  
   
 - [Survival analysis](https://azure.microsoft.com/documentation/articles/machine-learning-r-csharp-survival-analysis/)  
   

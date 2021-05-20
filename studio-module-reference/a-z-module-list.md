@@ -30,7 +30,7 @@ To find a module:
 
 - If you know the name of the module, use the [alphabetical table](#modules) as an index to quickly find a specific module or algorithm.  
 - For a list of the modules by functional category, see [Module categories and descriptions](machine-learning-module-descriptions.md).  
-- If you don't know which module you might need, see [Choose algorithms for Microsoft Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-algorithm-choice/).  
+- If you don't know which module you might need, see [Choose algorithms for Microsoft Azure Machine Learning](/azure/machine-learning/machine-learning-algorithm-choice/).  
   
 ##  <a name="modules"></a>Alphabetical table of modules
 

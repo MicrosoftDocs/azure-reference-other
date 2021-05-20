@@ -73,7 +73,7 @@ The following steps describe how to manually configure the import source.
 
     - For **Account key**, paste the storage access key that is associated with the account.
 
-        If you don’t know the access key, see the section, “Manage your Azure storage accounts” in this article: [About Azure Storage Accounts](https://docs.microsoft.com/azure/storage/storage-create-storage-account).
+        If you don’t know the access key, see the section, “Manage your Azure storage accounts” in this article: [About Azure Storage Accounts](/azure/storage/storage-create-storage-account).
 
 6. For **Path to container, directory, or blob**, type the name of the specific blob that you want to retrieve.
 
@@ -142,11 +142,11 @@ This section contains implementation details, tips, and answers to frequently as
 
 There are a variety of ways to get new data and use it to regularly update an experiment. Much depends on where the source data originates, and the tools you prefer for data movement. see these articles for some ideas.
 
-- [Cheat sheet: automated data pipeline for Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/machine-learning-automated-data-pipeline-cheat-sheet)
+- [Cheat sheet: automated data pipeline for Azure Machine Learning](/azure/machine-learning/machine-learning-automated-data-pipeline-cheat-sheet)
 
-- [Use SSIS to move data to Blob storage](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-move-data-to-azure-blob-using-ssis)
+- [Use SSIS to move data to Blob storage](/azure/machine-learning/machine-learning-data-science-move-data-to-azure-blob-using-ssis)
 
-- [Retrain experiments programmatically](https://docs.microsoft.com/azure/machine-learning/classic/retrain-machine-learning-model)
+- [Retrain experiments programmatically](/azure/machine-learning/classic/retrain-machine-learning-model)
 
 Automating the execution of the experiment generally requires creation of a web service, which can then be triggered by  a task scheduler, PowerShell, or other custom code.
 
@@ -164,7 +164,7 @@ As a workaround, we recommend that you use the **block blob** type.
 > [!IMPORTANT]
 > After the blob has been created, the type cannot be changed.
 
-For more information, see [Understanding Block Blobs, Append Blobs, and Page Blobs](https://docs.microsoft.com/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs).
+For more information, see [Understanding Block Blobs, Append Blobs, and Page Blobs](/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs).
 
 **Unsupported account type**: The import and export modules can read and write data only from Azure storage accounts that were created using the Classic deployment model. In other words, the new Azure Blob Storage account type that offers a hot and cool storage access tiers is not yet supported.  Generally, any Azure storage accounts that you might have created before this service option became available should not have been affected.
 
@@ -326,7 +326,7 @@ However, you can override the results of the type guesser by editing the column 
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes). 
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes). 
 
 ## See also
 

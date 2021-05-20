@@ -61,7 +61,7 @@ To compute the output of the network for a particular input, a value is calculat
   
     - **Custom definition script**. Choose this option to create a custom neural network architecture, using the Net# language. You can define the number of hidden layers, their connections, and advanced options such as specifying the mappings between layers. For an introduction to Net#, see [More About Net#](#bkmk_Customizing) later in this topic.
 
-4. **Neural network definition**: If you selected the custom architecture option, use the text box to type or paste in statements written in the Net# language. For additional script examples, see [Guide to the Net# Neural Networks Specification Language](https://docs.microsoft.com/azure/machine-learning/classic/azure-ml-netsharp-reference-guide).  
+4. **Neural network definition**: If you selected the custom architecture option, use the text box to type or paste in statements written in the Net# language. For additional script examples, see [Guide to the Net# Neural Networks Specification Language](/azure/machine-learning/classic/azure-ml-netsharp-reference-guide).  
 
 5. **Number of hidden nodes**: This option lets you customize the number of hidden nodes in the default architecture. Type the number of hidden nodes. The default is one hidden layer with 100 nodes.
 

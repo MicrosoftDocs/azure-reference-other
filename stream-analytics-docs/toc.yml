@@ -1,3 +1,4 @@
+items:
 - name: Stream Analytics Query Language
   href: stream-analytics-query-language-reference.md
   expanded: true
@@ -189,7 +190,7 @@
         - name: Data Types Overview
           href: data-types-azure-stream-analytics.md
         - name: Parsing JSON and AVRO data
-          href: https://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json
+          href: /azure/stream-analytics/stream-analytics-parsing-json
           maintainContext: true
     - name: Query Language Elements
       expanded: true

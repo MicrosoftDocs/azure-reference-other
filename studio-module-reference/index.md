@@ -16,7 +16,7 @@ ms.author: amlstudiodocs
 
 [!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
-Azure Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio (classic)?"](https://docs.microsoft.com/azure/machine-learning/studio/what-is-ml-studio) for more details.
+Azure Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio (classic)?"](/azure/machine-learning/studio/what-is-ml-studio) for more details.
 
 This documentation contains detailed technical and how-to information for the modules that are available in Machine Learning Studio (classic).
 
@@ -60,8 +60,8 @@ In this reference section, you'll find technical background on the machine learn
 |Section|Description|  
 |-------------|-----------------|  
 |[Data Types List](machine-learning-module-data-types.md#types)|This section contains reference topics describing the learner interfaces, and  the `DataTable` format used for datasets.|  
-|[Exceptions List](errors/machine-learning-module-error-codes.md)|This section lists the errors that modules can generate, with causes and possible workarounds.<br /><br /> For the list of error codes related to the web service API, see [Machine Learning REST API error codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).|  
+|[Exceptions List](errors/machine-learning-module-error-codes.md)|This section lists the errors that modules can generate, with causes and possible workarounds.<br /><br /> For the list of error codes related to the web service API, see [Machine Learning REST API error codes](/azure/machine-learning/studio/web-service-error-codes).|  
 
 ## See also  
 
-[Azure Machine Learning Studio (classic) documentation](https://docs.microsoft.com/azure/machine-learning/studio/)
+[Azure Machine Learning Studio (classic) documentation](/azure/machine-learning/studio/)

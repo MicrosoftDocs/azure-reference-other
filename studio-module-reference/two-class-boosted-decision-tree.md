@@ -27,9 +27,9 @@ Generally, when properly configured, boosted decision trees are the easiest meth
   
 For more information about how to choose an algorithm, see these resources:  
   
--   [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)  
+-   [Machine learning algorithm cheat sheet for Microsoft Azure Machine Learning Studio (classic)](/azure/machine-learning/studio/algorithm-cheat-sheet)  
   
--   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](https://docs.microsoft.com/azure/machine-learning/machine-learning-algorithm-choice/)  
+-   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](/azure/machine-learning/machine-learning-algorithm-choice/)  
 
 ## How to configure Two-Class Boosted Decision Tree
 

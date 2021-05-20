@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
 
 This article lists the modules that you can use for importing and exporting data and models in Azure Machine Learning Studio (classic).
 
-In addition to using modules, you can directly upload and download datasets from local files on your computer or network. For more information, see [Upload existing data into an Azure Machine Learning experiment](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-2-upload-data).
+In addition to using modules, you can directly upload and download datasets from local files on your computer or network. For more information, see [Upload existing data into an Azure Machine Learning experiment](/azure/machine-learning/studio/walkthrough-2-upload-data).
 
 Here are some of the sources you can use to import and export data and models in Machine Learning Studio (classic):
  
@@ -51,7 +51,7 @@ The following articles introduce common data scenarios in machine learning:
   
 ### Advanced data science
   
--   [Access datasets with Python by using the Azure Machine Learning Python client library](https://docs.microsoft.com/azure/machine-learning/machine-learning-python-data-access)
+-   [Access datasets with Python by using the Azure Machine Learning Python client library](/azure/machine-learning/machine-learning-python-data-access)
   
   Learn how to install the Machine Learning Python client library, and then use it to access metadata and work with datasets.
   

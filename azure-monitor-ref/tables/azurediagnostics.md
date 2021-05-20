@@ -286,7 +286,7 @@ The following services use either Azure diagnostics mode or resource-specific mo
 |resource_workflowId_g|Guid||
 |resource_workflowName_s|String||
 |ResourceGroup|String||
-|_ResourceId|String|A unique identifier for the resource that the record is associated with||
+|_ResourceId|String|A unique identifier for the resource that the record is associated with|
 |ResourceProvider|String||
 |ResourceProvider|String||
 |ResourceType|String||

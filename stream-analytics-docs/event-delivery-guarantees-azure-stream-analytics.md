@@ -30,13 +30,13 @@ Due to at-least-once delivery guarantee, when a Stream Analytics job is running,
 - The Azure instance is upgraded while the job is running  
 - The Stream Analytics job is upgraded or an issue occurs with connectivity or reliability to the job output   
 - The Azure instance running the job has an outage
-- Stream Analytics job is started with the [*when last stopped*](https://docs.microsoft.com/azure/stream-analytics/start-job#start-options) option
+- Stream Analytics job is started with the [*when last stopped*](/azure/stream-analytics/start-job#start-options) option
   
 The downstream consumer of the output events need to dedupe the events using logical identity of the events. For example, if you are aggregating events by groups in a tumbling window, the logical identity of the event is the groups and the tumbling window’s end time. If you are running a pass through query, you may need to carry a unique id on the event in order to dedupe.  
 
 ### Output supporting exact-once delivery with Azure Stream Analytics
 #### Cosmos DB
-Using Cosmos DB, Azure Stream Analytics guarantees exactly-once delivery. Since Azure Stream Analytics uses upsert, no action is needed by the user. See more information on [Azure Stream Analytics output to CosmosDB](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-documentdb-output).
+Using Cosmos DB, Azure Stream Analytics guarantees exactly-once delivery. Since Azure Stream Analytics uses upsert, no action is needed by the user. See more information on [Azure Stream Analytics output to CosmosDB](/azure/stream-analytics/stream-analytics-documentdb-output).
 
 #### SQL
 When using SQL output, users can achieve exactly-once delivery if the following requirements are met:

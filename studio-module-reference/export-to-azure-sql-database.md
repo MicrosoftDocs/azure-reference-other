@@ -73,7 +73,7 @@ For examples of how to use the [Export Data](export-data.md) module, see the [Az
 
 + [Retail Forecasting Step 1 of 6 - data-preprocessing](https://gallery.azure.ai/Experiment/Retail-Forecasting-Step-1-of-6-data-preprocessing-5):  The retail forecasting template illustrates a machine learning task based on data stored in Azure SQLDB. It demonstrates useful techniques, such as using Azure SQL database to pass datasets between experiments in different accounts, saving and combining forecasts, and how to create an Azure SQL database just for machine learning.
 
-+ [Build and deploy a machine learning model using SQL Server on an Azure VM](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/walkthroughs-sql-data-warehouse): This article walks you through using a SQL Server database hosted in an Azure VM as a source for storing training data and predictions. It also illustrates how relational database can be used for feature engineering and feature selection.
++ [Build and deploy a machine learning model using SQL Server on an Azure VM](/azure/machine-learning/team-data-science-process/walkthroughs-sql-data-warehouse): This article walks you through using a SQL Server database hosted in an Azure VM as a source for storing training data and predictions. It also illustrates how relational database can be used for feature engineering and feature selection.
 
 + [How to use Azure ML with Azure SQL Data Warehouse](https://blogs.technet.microsoft.com/machinelearning/2016/03/08/how-to-use-azure-ml-with-azure-sql-data-warehouse): Demonstrates the use of data from Azure SQL Data Warehouse to build a clustering model.
 
@@ -129,7 +129,7 @@ Also, Azure Machine Learning cannot output data types such as `money`.
 
 For a list of errors specific to Studio (classic) modules, see [Machine Learning Error codes](errors/machine-learning-module-error-codes.md).
 
-For a list of API exceptions, see [Machine Learning REST API Error Codes](https://docs.microsoft.com/azure/machine-learning/studio/web-service-error-codes).
+For a list of API exceptions, see [Machine Learning REST API Error Codes](/azure/machine-learning/studio/web-service-error-codes).
 
 ## See also
 
