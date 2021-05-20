@@ -1086,11 +1086,6 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "azure/quantum/install-jupyter-qkd.md",
-			"redirect_url": "/azure/quantum/install-jupyter-qdk",
-			"redirect_document_id": false
-		},
-		{
 			"source_path": "articles/quickstarts/install-python.md",
 			"redirect_url": "/azure/quantum/install-python-qdk",
 			"redirect_document_id": false
@@ -7518,26 +7513,6 @@
 		{
 			"source_path": "quantum/user-guide/language/typesystem/typeparameterizations.md",
 			"redirect_url": "/azure/quantum/user-guide/language/typesystem/typeparameterizations.md",
-			"redirect_document_id": false
-		},
-		{
-			"source_path": "azure/quantum/reference-target-list.md",
-			"redirect_url": "/azure/quantum/qc-target-list",
-			"redirect_document_id": false
-		},
-		{
-			"source_path": "azure/quantum/quantum-reference-overview.md",
-			"redirect_url": "/azure/quantum/qio-target-list",
-			"redirect_document_id": false
-		},
-		{
-			"source_path": "azure/quantum/azure.quantum.md",
-			"redirect_url": "/azure/quantum/optimization-workspace",
-			"redirect_document_id": false
-		},
-		{
-			"source_path": "azure/quantum/azure.quantum.optimization.md",
-			"redirect_url": "/azure/quantum/optimization-job-reference",
 			"redirect_document_id": false
 		}
 	]
