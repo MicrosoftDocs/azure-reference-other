@@ -976,11 +976,6 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "quantum/index.yml",
-			"redirect_url": "/azure/quantum",
-			"redirect_document_id": false
-		},
-		{
 			"source_path": "articles/concepts/advanced-matrices.md",
 			"redirect_url": "/azure/quantum/concepts-advanced-matrices",
 			"redirect_document_id": false
