@@ -532,3 +532,5 @@
     href: tables/w3ciislogv2.md
   - name: Watchlist
     href: tables/watchlist.md
+  - name: WindowsEvent
+    href: tables/windowsevent.md
