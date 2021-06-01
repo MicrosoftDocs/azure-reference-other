@@ -10,6 +10,8 @@
       href: tables/tables-category.md
     - name: By resource type
       href: tables/tables-resourcetype.md
+  - name: AACAudit
+    href: tables/aacaudit.md
   - name: AACHttpRequest
     href: tables/aachttprequest.md
   - name: AADDomainServicesAccountLogon
@@ -34,6 +36,8 @@
     href: tables/abschanneltobotrequests.md
   - name: ABSDependenciesRequests
     href: tables/absdependenciesrequests.md
+  - name: ACICollaborationAudit
+    href: tables/acicollaborationaudit.md
   - name: ACSAuthIncomingOperations
     href: tables/acsauthincomingoperations.md
   - name: ACSBillingUsage
@@ -158,8 +162,6 @@
     href: tables/auditlogs.md
   - name: AzureActivity
     href: tables/azureactivity.md
-  - name: AzureActivityV2
-    href: tables/azureactivityv2.md
   - name: AzureDevOpsAuditing
     href: tables/azuredevopsauditing.md
   - name: AzureDiagnostics
@@ -174,6 +176,22 @@
     href: tables/blockchainproxylog.md
   - name: BoundPort
     href: tables/boundport.md
+  - name: CDBCassandraRequests
+    href: tables/cdbcassandrarequests.md
+  - name: CDBControlPlaneRequests
+    href: tables/cdbcontrolplanerequests.md
+  - name: CDBDataPlaneRequests
+    href: tables/cdbdataplanerequests.md
+  - name: CDBGremlinRequests
+    href: tables/cdbgremlinrequests.md
+  - name: CDBMongoRequests
+    href: tables/cdbmongorequests.md
+  - name: CDBPartitionKeyRUConsumption
+    href: tables/cdbpartitionkeyruconsumption.md
+  - name: CDBPartitionKeyStatistics
+    href: tables/cdbpartitionkeystatistics.md
+  - name: CDBQueryRuntimeStatistics
+    href: tables/cdbqueryruntimestatistics.md
   - name: ComputerGroup
     href: tables/computergroup.md
   - name: ConfigurationChange
@@ -272,6 +290,10 @@
     href: tables/hdinsighthiveandllaplogs.md
   - name: HDInsightHiveAndLLAPMetrics
     href: tables/hdinsighthiveandllapmetrics.md
+  - name: HDInsightHiveQueryAppStats
+    href: tables/hdinsighthivequeryappstats.md
+  - name: HDInsightHiveTezAppStats
+    href: tables/hdinsighthivetezappstats.md
   - name: HDInsightJupyterNotebookEvents
     href: tables/hdinsightjupyternotebookevents.md
   - name: HDInsightKafkaLogs
@@ -364,6 +386,8 @@
     href: tables/maofficesuiteinstance.md
   - name: MAWindowsSysReqInstanceReadiness
     href: tables/mawindowssysreqinstancereadiness.md
+  - name: MCVPOperationLogs
+    href: tables/mcvpoperationlogs.md
   - name: MicrosoftAzureBastionAuditLogs
     href: tables/microsoftazurebastionauditlogs.md
   - name: MicrosoftDataShareReceivedSnapshotLog
@@ -404,6 +428,8 @@
     href: tables/powerbidatasetsworkspace.md
   - name: PowerBIDatasetsWorkspacePreview
     href: tables/powerbidatasetsworkspacepreview.md
+  - name: PurviewScanStatusLogs
+    href: tables/purviewscanstatuslogs.md
   - name: SecureScoreControls
     href: tables/securescorecontrols.md
   - name: SecureScores

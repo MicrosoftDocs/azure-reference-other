@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # NWConnectionMonitorPathResult
@@ -50,6 +50,7 @@ ms.date: 3/29/2021
 |Hops|string|The hops identified for the test|
 |HopTypes|string|The hop types identified for the test|
 |Issues|string|The issues identified for the test|
+|JitterMs|real|The mean deviation round trip time for the test|
 |MaxRoundTripTimeMs|real|The maximum round trip time for the test|
 |MinRoundTripTimeMs|real|The minimum round trip time (ms) for the test|
 |PathTestResult|string|The result of the test|
