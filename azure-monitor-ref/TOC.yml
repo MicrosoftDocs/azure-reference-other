@@ -250,3 +250,5 @@
     href: tables/dnsevents.md
   - name: DnsInventory
     href: tables/dnsinventory.md
+  - name: DynamicEventCollection
+    href: tables/dynamiceventcollection.md
