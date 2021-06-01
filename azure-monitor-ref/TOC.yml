@@ -344,3 +344,5 @@
     href: tables/identityinfo.md
   - name: InboundConnection
     href: tables/inboundconnection.md
+  - name: InsightsMetrics
+    href: tables/insightsmetrics.md
