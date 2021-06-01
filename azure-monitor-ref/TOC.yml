@@ -526,3 +526,5 @@
     href: tables/vmconnection.md
   - name: VMProcess
     href: tables/vmprocess.md
+  - name: W3CIISLog
+    href: tables/w3ciislog.md
