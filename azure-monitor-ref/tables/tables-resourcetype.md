@@ -581,11 +581,11 @@ ms.date: 6/1/2021
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
 
-## Power BI Datasets
+## Power BI Datasets Workspace
 
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
-## Power BI Datasets
+## Power BI Datasets Tenant
 
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 
