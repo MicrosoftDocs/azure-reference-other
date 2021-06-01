@@ -194,3 +194,5 @@
     href: tables/cdbqueryruntimestatistics.md
   - name: ComputerGroup
     href: tables/computergroup.md
+  - name: ConfigurationChange
+    href: tables/configurationchange.md
