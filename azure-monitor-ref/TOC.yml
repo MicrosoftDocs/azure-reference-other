@@ -272,3 +272,5 @@
     href: tables/failedingestion.md
   - name: FunctionAppLogs
     href: tables/functionapplogs.md
+  - name: HDInsightAmbariClusterAlerts
+    href: tables/hdinsightambariclusteralerts.md
