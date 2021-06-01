@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # DeviceRegistryEvents
 
  This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Creation and modification of registry entries.
 
+## Categories
+
+- Security
 ## Solutions
 
 - Azure Sentinel
