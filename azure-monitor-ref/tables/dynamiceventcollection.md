@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # DynamicEventCollection
 
  A generic windows events table for data collected by the Defender for Endpoint agent
 
+## Categories
+
+- Security
 ## Solutions
 
 - AzureSentinelDSRE
