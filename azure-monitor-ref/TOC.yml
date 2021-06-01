@@ -30,3 +30,5 @@
     href: tables/aadprovisioninglogs.md
   - name: AADServicePrincipalSignInLogs
     href: tables/aadserviceprincipalsigninlogs.md
+  - name: ABSBotRequests
+    href: tables/absbotrequests.md
