@@ -56,3 +56,5 @@
     href: tables/addonazurebackupprotectedinstance.md
   - name: AddonAzureBackupStorage
     href: tables/addonazurebackupstorage.md
+  - name: ADFSandboxPipelineRun
+    href: tables/adfsandboxpipelinerun.md
