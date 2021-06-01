@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # ADTModelsOperation
@@ -27,21 +27,27 @@ ms.date: 3/29/2021
 
 |Column|Type|Description|
 |---|---|---|
-|Caller IP Address|string|IP address of the requester|
-|Category|string|Category of the log event|
-|Correlation ID|string|Correlation ID of the operation|
-|DurationMs|string|Duration of the operation in milliseconds|
-|Level|string|Level of severity of the event|
-|Location|string|Azure region in which the Iot Hub is located|
-|OperationName|string|Operation name of the event|
-|OperationVersion|string|Operation version of the event|
-|RequestUri|string|The URI of the request.|
+|ApplicationId|string|Application ID used in bearer authorization|
+|CallerIpAddress|string|A masked source IP address for the event|
+|Category|string|The type of resource being emitted|
+|CorrelationId|string|Customer provided unique identifier for the event|
+|DurationMs|string|How long it took to perform the event in milliseconds|
+|Level|string|The logging severity of the event|
+|Location|string|Azure region in which the Digital Twins instance is located|
+|OperationName|string|The type of action being performed during the event|
+|OperationVersion|string|The API Version utilized during the event|
+|ParentId|string|ParentId as part of W3C's Trace Context. A request without a parent id is the root of the trace|
+|RequestUri|string|The endpoint utilized during the event|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultDescription|string|Result description of the event, typically elaborates on the error|
-|ResultSignature|string|Result signature of the event, typically the status code of the result|
-|ResultType|string|Result type of the event, typically empty unless it's an error|
+|ResultDescription|string|Additional details about the event|
+|ResultSignature|string|Http status code of the event (if applicable)|
+|ResultType|string|Outcome of the event|
 |SourceSystem|string||
+|SpanId|string|SpanId as part of W3C's Trace Context. The ID of this request in the trace|
 |_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
-|TimeGenerated|datetime|Time at which this event is generated|
+|TimeGenerated|datetime|The date and time that this event occurred, in UTC|
+|TraceFlags|string|TraceFlags as part of W3C's Trace Context. Controls tracing flags such as sampling, trace level, etc.|
+|TraceId|string|TraceId as part of W3C's Trace Context. The ID of the whole trace used to uniquely identify a distributed trace across systems|
+|TraceState|string|TraceState as part of W3C's Trace Context. Additional vendor-specific trace identification information to span across different distributed tracing systems|
 |Type|string|The name of the table|

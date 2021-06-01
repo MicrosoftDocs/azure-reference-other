@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # Heartbeat
@@ -25,6 +25,9 @@ ms.date: 3/29/2021
 
 - Virtual machines
 - Kubernetes Services
+- VMware
+- Azure Stack HCI
+- System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 - Azure Arc enabled Kubernetes
 

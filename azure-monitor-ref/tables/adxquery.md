@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # ADXQuery
@@ -59,6 +59,7 @@ ms.date: 3/29/2021
 |TableCount|int|Table count|
 |TablesStatistics|dynamic|Tables statistics|
 |TenantId|string||
+|Text|string|The text of the invoked query|
 |TimeGenerated|datetime|The time (UTC) at which this event was generated|
 |TotalCPU|string|Total CPU duration|
 |TotalExtentsCount|long|Total extents count|

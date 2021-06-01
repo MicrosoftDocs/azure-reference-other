@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # HealthStateChangeEvent
@@ -19,6 +19,9 @@ ms.date: 3/29/2021
 ## Resource types
 
 - Virtual machines
+- VMware
+- Azure Stack HCI
+- System Center Virtual Machine Manager
 
 
 
@@ -44,4 +47,5 @@ ms.date: 3/29/2021
 |SourceSystem|string||
 |_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
+|TimeGenerated|datetime|Timestamp (UTC) when the record was generated.|
 |Type|string|The name of the table|

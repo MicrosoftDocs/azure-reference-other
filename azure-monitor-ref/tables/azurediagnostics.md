@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 03/29/2021
+ms.date: 6/1/2021
 ---
 
 # AzureDiagnostics
@@ -313,38 +313,3 @@ The following services use either Azure diagnostics mode or resource-specific mo
 |sequence_number_d|Double||
 |server_principal_sid_s|String||
 |session_id_d|Double||
-|sizeKb_d|Double||
-|SourceSystem|String||
-|sql_text_s|String||
-|sslEnabled_s|String||
-|start_time_t|DateTime||
-|startTime_s|String||
-|startTime_t|DateTime||
-|statement_s|String||
-|statement_sql_handle_s|String||
-|status_s|String||
-|Status_s|String||
-|statusCode_s|String||
-|storage_space_used_mb_s|String||
-|StreamType_s|String||
-|subnetId_s|String||
-|subnetPrefix_s|String||
-|SubscriptionId|Guid||
-|SubscriptionId|String||
-|succeeded_s|String||
-|sum_calls_s|String||
-|systemId_g|Guid||
-|target_database_principal_name_s|String||
-|target_server_principal_name_s|String||
-|Tenant_g|Guid||
-|TenantId|String||
-|TimeGenerated|DateTime||
-|timeTaken_d|Double||
-|Type|String||
-|type_s|String||
-|user_defined_information_s|String||
-|user_id_s|String||
-|user_s|String||
-|userAgent_s|String||
-|vnetResourceGuid_g|Guid||
-|workflowId_s|String||
