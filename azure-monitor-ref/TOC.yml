@@ -40,3 +40,5 @@
     href: tables/acicollaborationaudit.md
   - name: ACSAuthIncomingOperations
     href: tables/acsauthincomingoperations.md
+  - name: ACSBillingUsage
+    href: tables/acsbillingusage.md
