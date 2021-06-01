@@ -428,3 +428,5 @@
     href: tables/powerbidatasetsworkspace.md
   - name: PowerBIDatasetsWorkspacePreview
     href: tables/powerbidatasetsworkspacepreview.md
+  - name: PurviewScanStatusLogs
+    href: tables/purviewscanstatuslogs.md
