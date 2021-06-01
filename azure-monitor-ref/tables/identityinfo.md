@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # IdentityInfo
@@ -35,6 +35,7 @@ ms.date: 3/29/2021
 |AccountUPN|string|User principal name of the account|
 |AdditionalMailAddresses|dynamic|Additional email addresses of the user|
 |Applications|string|All known applications this user account accessed|
+|AssignedRoles|dynamic|AAD roles the user account is assigned to|
 |BlastRadius|string|The potential impact of the user account in the org (low/medium/high)|
 |City|string|The city of the user account as defined in AAD|
 |Country|string|The country of the user account as defined in AAD|
@@ -43,7 +44,7 @@ ms.date: 3/29/2021
 |EmployeeId|string|The employee identifier assigned to the user by the organization|
 |ExtensionProperty|dynamic|ExtensionProperty fields from Azure AD|
 |GivenName|string|The user account given name|
-|GroupMembership|string|Azure AD Groups the user account is a member|
+|GroupMembership|dynamic|Azure AD Groups the user account is a member|
 |InvestigationPriority|int|The Investigation Priority score of the account|
 |InvestigationPriorityPercentile|int|The account score compared to the organization |
 |IsAccountEnabled|bool|Indication if the account is enabled in AAD or not|
@@ -58,7 +59,6 @@ ms.date: 3/29/2021
 |RiskLevel|string|The AAD risk level (Low/Medium/High) of the user account|
 |RiskLevelDetails|string|Details regarding the AAD risk level|
 |RiskState|string|Indication if the account is at risk now or if the risk was remediated|
-|RoleMembership|string|AAD roles the user account is assigned to|
 |ServicePrincipals|dynamic|Azure AD service principals that are owned by the user|
 |SourceSystem|string||
 |State|string|The geographical state of the user account as defined in AAD|
