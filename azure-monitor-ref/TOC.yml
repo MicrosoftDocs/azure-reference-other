@@ -358,3 +358,5 @@
     href: tables/kubeevents.md
   - name: KubeHealth
     href: tables/kubehealth.md
+  - name: KubeMonAgentEvents
+    href: tables/kubemonagentevents.md
