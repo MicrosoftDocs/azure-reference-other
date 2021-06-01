@@ -386,3 +386,5 @@
     href: tables/maofficesuiteinstance.md
   - name: MAWindowsSysReqInstanceReadiness
     href: tables/mawindowssysreqinstancereadiness.md
+  - name: MCVPOperationLogs
+    href: tables/mcvpoperationlogs.md
