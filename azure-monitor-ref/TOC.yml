@@ -162,3 +162,5 @@
     href: tables/auditlogs.md
   - name: AzureActivity
     href: tables/azureactivity.md
+  - name: AzureDevOpsAuditing
+    href: tables/azuredevopsauditing.md
