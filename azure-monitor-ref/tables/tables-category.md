@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -30,16 +30,17 @@ ms.date: 3/29/2021
 
 ## Audit
 
+- [AACAudit](aacaudit.md)
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [ACICollaborationAudit](acicollaborationaudit.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [ADPAudit](adpaudit.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
-- [AzureActivityV2](azureactivityv2.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
@@ -66,6 +67,7 @@ ms.date: 3/29/2021
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [AADDomainServicesSystemSecurity](aaddomainservicessystemsecurity.md)
 - [ABSBotRequests](absbotrequests.md)
+- [ACICollaborationAudit](acicollaborationaudit.md)
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
@@ -131,6 +133,8 @@ ms.date: 3/29/2021
 - [HDInsightHBaseMetrics](hdinsighthbasemetrics.md)
 - [HDInsightHiveAndLLAPLogs](hdinsighthiveandllaplogs.md)
 - [HDInsightHiveAndLLAPMetrics](hdinsighthiveandllapmetrics.md)
+- [HDInsightHiveQueryAppStats](hdinsighthivequeryappstats.md)
+- [HDInsightHiveTezAppStats](hdinsighthivetezappstats.md)
 - [HDInsightJupyterNotebookEvents](hdinsightjupyternotebookevents.md)
 - [HDInsightKafkaLogs](hdinsightkafkalogs.md)
 - [HDInsightKafkaMetrics](hdinsightkafkametrics.md)
@@ -153,12 +157,14 @@ ms.date: 3/29/2021
 - [HDInsightStormTopologyMetrics](hdinsightstormtopologymetrics.md)
 - [InsightsMetrics](insightsmetrics.md)
 - [IoTHubDistributedTracing](iothubdistributedtracing.md)
+- [MCVPOperationLogs](mcvpoperationlogs.md)
 - [MicrosoftAzureBastionAuditLogs](microsoftazurebastionauditlogs.md)
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PurviewScanStatusLogs](purviewscanstatuslogs.md)
 - [ServiceFabricOperationalEvent](servicefabricoperationalevent.md)
 - [ServiceFabricReliableActorEvent](servicefabricreliableactorevent.md)
 - [ServiceFabricReliableServiceEvent](servicefabricreliableserviceevent.md)
@@ -342,7 +348,16 @@ ms.date: 3/29/2021
 - [BehaviorAnalytics](behavioranalytics.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 - [DeviceFileEvents](devicefileevents.md)
+- [DeviceNetworkEvents](devicenetworkevents.md)
+- [DeviceNetworkInfo](devicenetworkinfo.md)
+- [DeviceProcessEvents](deviceprocessevents.md)
+- [DeviceRegistryEvents](deviceregistryevents.md)
 - [DHCPActivity](dhcpactivity.md)
+- [DynamicEventCollection](dynamiceventcollection.md)
+- [EmailAttachmentInfo](emailattachmentinfo.md)
+- [EmailEvents](emailevents.md)
+- [EmailPostDeliveryEvents](emailpostdeliveryevents.md)
+- [EmailUrlInfo](emailurlinfo.md)
 - [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
 - [HuntingBookmark](huntingbookmark.md)
 - [LinuxAuditLog](linuxauditlog.md)

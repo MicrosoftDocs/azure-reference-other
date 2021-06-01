@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # NWConnectionMonitorTestResult
@@ -44,6 +44,7 @@ ms.date: 3/29/2021
 |DestinationResourceId|string|The resource id of the Destination machine|
 |DestinationSubnet|string|If applicable, the subnet of the destination|
 |DestinationType|string|The type of the destination machine configured for the test|
+|JitterMs|real|The mean deviation round trip time for the test|
 |MaxRoundTripTimeMs|real|The maximum round trip time for the test|
 |MinRoundTripTimeMs|real|The minimum round trip time (ms) for the test|
 |Protocol|string|The protocol of the test|
