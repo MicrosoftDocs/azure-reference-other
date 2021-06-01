@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # SecurityRecommendation
@@ -33,10 +33,11 @@ ms.date: 3/29/2021
 |Description|string||
 |DeviceId|string||
 |DiscoveredTimeUTC|datetime||
+|FirstEvaluationDate|datetime||
 |IsSnapshot|bool||
 |PolicyDefinitionId|string||
 |ProviderName|string||
-|RecommendationAdditionalData|string||
+|RecommendationAdditionalData|dynamic||
 |RecommendationDisplayName|string||
 |RecommendationId|string||
 |RecommendationName|string||
@@ -44,5 +45,6 @@ ms.date: 3/29/2021
 |RecommendationState|string||
 |ResolvedTimeUTC|datetime||
 |ResourceRegion|string||
+|StatusChangeDate|datetime||
 |TimeGenerated|datetime||
 |Type|string|The name of the table|
