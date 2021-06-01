@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 3/29/2021
 ## Resource types
 
 - Microsoft App Configuration
-- Azure Database for MySQL Servers
 - SQL Databases
 - SQL Servers
 - SQL Managed Instances
@@ -33,27 +32,30 @@ ms.date: 3/29/2021
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Recovery Services Vaults
+- Azure Database for MySQL Servers
 - Data factories
-- Automation account
 - API Management services
 - Logic Apps
 - Service Fabric Clusters
 - Machine Learning
-- Azure Cosmos DB
 - IoT Hub
-- Azure Database for PostgreSQL Servers
 - Azure Monitor autoscale settings
-- Azure Database for PostgreSQL Servers V2
-- Azure Database for MariaDB Servers
+- Azure Databricks Services
+- Azure Arc enabled Kubernetes
+- Automation account
+- Virtual Machine Scale Sets
+- Azure Database for PostgreSQL Servers
+- Azure Database for PostgreSQL Flexible Servers
 - Bastions
 - Stream Analytics jobs
+- Search Services
 - Virtual Networks
 - Virtual Private Network Gateways
 - Virtual Network Gateways
 - Traffic Manager Profiles
 - Public IP Addresses
+- Azure Database for PostgreSQL Servers V2
 - Network Security Groups
-- Network Interfaces
 - Load Balancers
 - Front Doors
 - ExpressRoute Circuits
@@ -61,31 +63,33 @@ ms.date: 3/29/2021
 - Application Gateways
 - Event Hubs
 - Device Provisioning Services
-- Azure Database for PostgreSQL Flexible Servers
-- Azure API for FHIR
-- Azure Databricks Services
-- Virtual Machine Scale Sets
-- Application Insights
-- Azure Digital Twins
-- Azure Resource Group
+- Azure Database for MariaDB Servers
+- Network Interfaces
+- System Center Virtual Machine Manager
+- Azure Stack HCI
+- VMware
 - Azure Subscription
 - Default schema for a resource
+- Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Virtual machines
 - AzureML/OnlineEndpoint
 - HDInsight Clusters
 - Experiment Workspace
+- Azure Resource Group
 - Network Watcher - Connection Monitor
 - Bot Services
+- Microsoft.Purview/accounts
 - Kubernetes Services
 - Project CI Workspace
+- Azure Cosmos DB
 - Communication Services
 - Azure Autonomous Development Platform Account
 - App Services
+- Microsoft Connected Vehicle Platform
+- Azure Digital Twins
+- Application Insights
 - Desktop Virtualization Application Groups
-- Azure Arc enabled Kubernetes
-- Desktop Virtualization Host Pools
-- Time Series Insights Environments
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
@@ -103,7 +107,9 @@ ms.date: 3/29/2021
 - Analysis Services
 - Workload Monitor
 - Event Grid Topics
+- Time Series Insights Environments
 - Desktop Virtualization workspaces
+- Azure API for FHIR
 - Service Bus
 
 
