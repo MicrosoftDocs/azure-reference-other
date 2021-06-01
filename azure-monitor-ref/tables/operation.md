@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # Operation
@@ -35,7 +35,7 @@ ms.date: 3/29/2021
 |ManagementGroupName|string|Name of the Operations Manager management group for System Center Operations Manager agents.|
 |OperationCategory|string|Name of the area that produced the record.|
 |OperationKey|string|Operation ID. Can be a GUID or string.|
-|OperationStatus|string|Operation status description. Common values include Warning Succeeded Failed Error.|
+|OperationStatus|string|Operation status description. Ccommon values include Warning Succeeded Failed Error.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |Solution|string|Name of the managed solution that produced the record. Can also include other sources such as RestAPI.|
 |SourceComputerId|string|Unique GUID identifier for a computer.|
