@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -69,7 +69,6 @@ ms.date: 3/29/2021
 
 ## Azure activity Log V2
 
-- [AzureActivityV2](azureactivityv2.md)
 
 ## Azure AD Domain Services
 
@@ -134,6 +133,14 @@ ms.date: 3/29/2021
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+- [CDBCassandraRequests](cdbcassandrarequests.md)
+- [CDBControlPlaneRequests](cdbcontrolplanerequests.md)
+- [CDBDataPlaneRequests](cdbdataplanerequests.md)
+- [CDBGremlinRequests](cdbgremlinrequests.md)
+- [CDBMongoRequests](cdbmongorequests.md)
+- [CDBPartitionKeyRUConsumption](cdbpartitionkeyruconsumption.md)
+- [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
+- [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
 
 ## Azure Data Explorer Clusters
 
@@ -204,7 +211,20 @@ ms.date: 3/29/2021
 ## Azure Sentinel
 
 
+## Azure Sentinel Amazon
+
+
 ## Azure Sentinel Anomaly Table
+
+
+## Azure Sentinel CEF Table
+
+- [CommonSecurityLog](commonsecuritylog.md)
+
+## Azure Sentinel MDE
+
+
+## Azure Sentinel MDO
 
 
 ## Azure Sentinel Watchlist
@@ -216,6 +236,41 @@ ms.date: 3/29/2021
 - [AppPlatformSystemLogs](appplatformsystemlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Azure Stack HCI
+
+- [ADAssessmentRecommendation](adassessmentrecommendation.md)
+- [ADReplicationResult](adreplicationresult.md)
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [CommonSecurityLog](commonsecuritylog.md)
+- [ComputerGroup](computergroup.md)
+- [ConfigurationChange](configurationchange.md)
+- [ConfigurationData](configurationdata.md)
+- [ContainerLog](containerlog.md)
+- [DnsEvents](dnsevents.md)
+- [DnsInventory](dnsinventory.md)
+- [Event](event.md)
+- [HealthStateChangeEvent](healthstatechangeevent.md)
+- [Heartbeat](heartbeat.md)
+- [InsightsMetrics](insightsmetrics.md)
+- [Perf](perf.md)
+- [ProtectionStatus](protectionstatus.md)
+- [SecurityBaseline](securitybaseline.md)
+- [SecurityBaselineSummary](securitybaselinesummary.md)
+- [SecurityEvent](securityevent.md)
+- [SQLAssessmentRecommendation](sqlassessmentrecommendation.md)
+- [Syslog](syslog.md)
+- [Update](update.md)
+- [UpdateRunProgress](updaterunprogress.md)
+- [UpdateSummary](updatesummary.md)
+- [VMBoundPort](vmboundport.md)
+- [VMComputer](vmcomputer.md)
+- [VMConnection](vmconnection.md)
+- [VMProcess](vmprocess.md)
+- [W3CIISLog](w3ciislog.md)
+- [WindowsFirewall](windowsfirewall.md)
+- [WireData](wiredata.md)
 
 ## Azure Subscription
 
@@ -320,6 +375,7 @@ ms.date: 3/29/2021
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [WVDAgentHealthStatus](wvdagenthealthstatus.md)
 - [WVDCheckpoints](wvdcheckpoints.md)
 - [WVDConnections](wvdconnections.md)
 - [WVDErrors](wvderrors.md)
@@ -395,6 +451,8 @@ ms.date: 3/29/2021
 - [HDInsightHBaseMetrics](hdinsighthbasemetrics.md)
 - [HDInsightHiveAndLLAPLogs](hdinsighthiveandllaplogs.md)
 - [HDInsightHiveAndLLAPMetrics](hdinsighthiveandllapmetrics.md)
+- [HDInsightHiveQueryAppStats](hdinsighthivequeryappstats.md)
+- [HDInsightHiveTezAppStats](hdinsighthivetezappstats.md)
 - [HDInsightJupyterNotebookEvents](hdinsightjupyternotebookevents.md)
 - [HDInsightKafkaLogs](hdinsightkafkalogs.md)
 - [HDInsightKafkaMetrics](hdinsightkafkametrics.md)
@@ -489,8 +547,20 @@ ms.date: 3/29/2021
 
 ## Microsoft App Configuration
 
+- [AACAudit](aacaudit.md)
 - [AACHttpRequest](aachttprequest.md)
 - [AzureActivity](azureactivity.md)
+
+## Microsoft Connected Vehicle Platform
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [MCVPOperationLogs](mcvpoperationlogs.md)
+
+## Microsoft.Purview/accounts
+
+- [AzureActivity](azureactivity.md)
+- [PurviewScanStatusLogs](purviewscanstatuslogs.md)
 
 ## Network Interfaces
 
@@ -513,8 +583,11 @@ ms.date: 3/29/2021
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+
+## Power BI Datasets
+
+- [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 
 ## Power BI Embedded
 
@@ -524,6 +597,7 @@ ms.date: 3/29/2021
 
 ## Project CI Workspace
 
+- [ACICollaborationAudit](acicollaborationaudit.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
@@ -619,6 +693,41 @@ ms.date: 3/29/2021
 - [SynapseSqlPoolSqlRequests](synapsesqlpoolsqlrequests.md)
 - [SynapseSqlPoolWaits](synapsesqlpoolwaits.md)
 
+## System Center Virtual Machine Manager
+
+- [ADAssessmentRecommendation](adassessmentrecommendation.md)
+- [ADReplicationResult](adreplicationresult.md)
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [CommonSecurityLog](commonsecuritylog.md)
+- [ComputerGroup](computergroup.md)
+- [ConfigurationChange](configurationchange.md)
+- [ConfigurationData](configurationdata.md)
+- [ContainerLog](containerlog.md)
+- [DnsEvents](dnsevents.md)
+- [DnsInventory](dnsinventory.md)
+- [Event](event.md)
+- [HealthStateChangeEvent](healthstatechangeevent.md)
+- [Heartbeat](heartbeat.md)
+- [InsightsMetrics](insightsmetrics.md)
+- [Perf](perf.md)
+- [ProtectionStatus](protectionstatus.md)
+- [SecurityBaseline](securitybaseline.md)
+- [SecurityBaselineSummary](securitybaselinesummary.md)
+- [SecurityEvent](securityevent.md)
+- [SQLAssessmentRecommendation](sqlassessmentrecommendation.md)
+- [Syslog](syslog.md)
+- [Update](update.md)
+- [UpdateRunProgress](updaterunprogress.md)
+- [UpdateSummary](updatesummary.md)
+- [VMBoundPort](vmboundport.md)
+- [VMComputer](vmcomputer.md)
+- [VMConnection](vmconnection.md)
+- [VMProcess](vmprocess.md)
+- [W3CIISLog](w3ciislog.md)
+- [WindowsFirewall](windowsfirewall.md)
+- [WireData](wiredata.md)
+
 ## Time Series Insights Environments
 
 - [AzureActivity](azureactivity.md)
@@ -638,6 +747,7 @@ ms.date: 3/29/2021
 - [CommonSecurityLog](commonsecuritylog.md)
 - [ConfigurationChange](configurationchange.md)
 - [ConfigurationData](configurationdata.md)
+- [ContainerLog](containerlog.md)
 - [Event](event.md)
 - [Heartbeat](heartbeat.md)
 - [InsightsMetrics](insightsmetrics.md)
@@ -667,6 +777,7 @@ ms.date: 3/29/2021
 - [ComputerGroup](computergroup.md)
 - [ConfigurationChange](configurationchange.md)
 - [ConfigurationData](configurationdata.md)
+- [ContainerLog](containerlog.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
 - [Event](event.md)
@@ -710,8 +821,40 @@ ms.date: 3/29/2021
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Windows Virtual Desktop Agent Health Status
+## VMware
 
+- [ADAssessmentRecommendation](adassessmentrecommendation.md)
+- [ADReplicationResult](adreplicationresult.md)
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [CommonSecurityLog](commonsecuritylog.md)
+- [ComputerGroup](computergroup.md)
+- [ConfigurationChange](configurationchange.md)
+- [ConfigurationData](configurationdata.md)
+- [ContainerLog](containerlog.md)
+- [DnsEvents](dnsevents.md)
+- [DnsInventory](dnsinventory.md)
+- [Event](event.md)
+- [HealthStateChangeEvent](healthstatechangeevent.md)
+- [Heartbeat](heartbeat.md)
+- [InsightsMetrics](insightsmetrics.md)
+- [Perf](perf.md)
+- [ProtectionStatus](protectionstatus.md)
+- [SecurityBaseline](securitybaseline.md)
+- [SecurityBaselineSummary](securitybaselinesummary.md)
+- [SecurityEvent](securityevent.md)
+- [SQLAssessmentRecommendation](sqlassessmentrecommendation.md)
+- [Syslog](syslog.md)
+- [Update](update.md)
+- [UpdateRunProgress](updaterunprogress.md)
+- [UpdateSummary](updatesummary.md)
+- [VMBoundPort](vmboundport.md)
+- [VMComputer](vmcomputer.md)
+- [VMConnection](vmconnection.md)
+- [VMProcess](vmprocess.md)
+- [W3CIISLog](w3ciislog.md)
+- [WindowsFirewall](windowsfirewall.md)
+- [WireData](wiredata.md)
 
 ## Workload Monitor
 
