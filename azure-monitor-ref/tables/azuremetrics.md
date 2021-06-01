@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # AzureMetrics
@@ -22,71 +22,75 @@ ms.date: 3/29/2021
 ## Resource types
 
 - App Services
-- Automation account
-- Data factories
-- Data Lake Storage Gen1
-- Data Lake Analytics
-- Power BI Embedded
-- Data Share
-- SQL Managed Instances
-- SQL Servers
-- SQL Databases
-- Azure Database for MySQL Servers
-- Azure Database for PostgreSQL Servers
 - Azure Database for PostgreSQL Servers V2
+- Azure Database for PostgreSQL Servers
+- Azure Database for MySQL Servers
+- SQL Databases
+- SQL Servers
+- SQL Managed Instances
 - Azure Database for PostgreSQL Flexible Servers
-- Azure Database for MariaDB Servers
+- Data Share
+- Data Lake Analytics
+- Data Lake Storage Gen1
+- Data factories
+- Automation account
 - API Management services
-- Device Provisioning Services
-- Application Gateways
-- Firewalls
-- ExpressRoute Circuits
-- Front Doors
-- Network Interfaces
-- Network Security Groups
-- Public IP Addresses
-- Traffic Manager Profiles
-- Virtual Network Gateways
-- Virtual Private Network Gateways
-- Virtual Networks
-- Search Services
-- Stream Analytics jobs
-- Bastions
-- Event Hubs
-- Azure API for FHIR
 - Logic Apps
-- Machine Learning
-- Communication Services
-- Project CI Workspace
-- Kubernetes Services
-- Virtual machines
-- Desktop Virtualization Application Groups
-- Desktop Virtualization Host Pools
-- Desktop Virtualization workspaces
-- Time Series Insights Environments
-- Event Grid Topics
-- Workload Monitor
-- Analysis Services
-- Batch Accounts
-- Azure Spring Cloud
-- Media Services
+- Power BI Embedded
 - Service Fabric Clusters
-- Azure Cache for Redis
-- Key Vaults
-- Storage Accounts
-- SignalR
-- Container Registries
-- Azure Data Explorer Clusters
-- Azure AD Domain Services
-- Azure Blockchain Service
-- Event Grid Domains
-- Virtual Machine Scale Sets
-- Azure Arc enabled Kubernetes
-- Azure Databricks Services
+- Azure Database for MariaDB Servers
+- Event Hubs
+- Bastions
+- Stream Analytics jobs
+- Search Services
+- Virtual Networks
+- Virtual Private Network Gateways
+- Virtual Network Gateways
+- Device Provisioning Services
+- Traffic Manager Profiles
+- Network Security Groups
+- Network Interfaces
+- Front Doors
+- ExpressRoute Circuits
+- Firewalls
+- Application Gateways
+- Public IP Addresses
+- Azure API for FHIR
+- Machine Learning
 - Azure Monitor autoscale settings
-- IoT Hub
+- Batch Accounts
+- Analysis Services
+- Workload Monitor
+- Event Grid Topics
+- Time Series Insights Environments
+- Desktop Virtualization workspaces
+- Azure Spring Cloud
+- Desktop Virtualization Application Groups
+- Virtual machines
+- Microsoft Connected Vehicle Platform
+- Kubernetes Services
+- Project CI Workspace
 - Azure Cosmos DB
+- Communication Services
+- Desktop Virtualization Host Pools
+- IoT Hub
+- Media Services
 - Cognitive Services
+- Azure Databricks Services
+- Azure Arc enabled Kubernetes
+- Virtual Machine Scale Sets
+- System Center Virtual Machine Manager
+- Azure Stack HCI
+- VMware
+- Azure Cache for Redis
+- Event Grid Domains
+- Azure AD Domain Services
+- Azure Data Explorer Clusters
+- Container Registries
+- SignalR
+- Storage Accounts
+- Key Vaults
+- Azure Blockchain Service
 - Service Bus
 
 
