@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/29/2021
+ms.date: 6/1/2021
 ---
 
 # Event
@@ -22,6 +22,9 @@ ms.date: 3/29/2021
 ## Resource types
 
 - Virtual machines
+- VMware
+- Azure Stack HCI
+- System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 
 
