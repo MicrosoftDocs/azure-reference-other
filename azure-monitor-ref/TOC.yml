@@ -104,3 +104,5 @@
     href: tables/aewauditlogs.md
   - name: AmlComputeCpuGpuUtilization
     href: tables/amlcomputecpugpuutilization.md
+  - name: AmlOnlineEndpointConsoleLog
+    href: tables/amlonlineendpointconsolelog.md
