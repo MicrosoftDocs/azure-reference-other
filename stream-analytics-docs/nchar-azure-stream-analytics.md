@@ -12,7 +12,7 @@ ms.date: 06/03/2021
 
 # NCHAR (Azure Stream Analytics)
 
-Returns the Unicode character with the specified integer code, as defined by the Unicode standard (UTF-8).
+Returns the Unicode character with the specified integer code, as defined by the Unicode standard.
 
 ## Syntax
 

@@ -12,7 +12,7 @@ ms.date: 06/03/2021
 
 # UNICODE (Azure Stream Analytics)
 
-Returns the integer value, as defined by the Unicode standard, for the first character of the input expression (UTF-8).
+Returns the integer value, as defined by the Unicode standard, for the first character of the input expression.
 
 ## Syntax
 
