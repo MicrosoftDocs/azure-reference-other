@@ -14,10 +14,10 @@ Stream Analytics Query Language provides the following string functions:
 
 :::row:::
     :::column:::
-        [CHARINDEX](charindex-azure-stream-analytics.md))
+        [CHARINDEX](charindex-azure-stream-analytics.md)
     :::column-end:::
     :::column:::
-        [CONCAT](concat-azure-stream-analytics.md))
+        [CONCAT](concat-azure-stream-analytics.md)
     :::column-end:::
     :::column:::
         [LEN](len-azure-stream-analytics.md)
@@ -57,11 +57,10 @@ Stream Analytics Query Language provides the following string functions:
 :::row-end:::
 
 ## See Also
-
- [Built-in Functions (Azure Stream Analytics)](built-in-functions-azure-stream-analytics.md)
- [Aggregate Functions (Azure Stream Analytics)](aggregate-functions-azure-stream-analytics.md)
- [Analytic Functions (Azure Stream Analytics)](analytic-functions-azure-stream-analytics.md)
+ [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)
+ [Aggregate Functions &#40;Azure Stream Analytics&#41;](aggregate-functions-azure-stream-analytics.md)
+ [Analytic Functions &#40;Azure Stream Analytics&#41;](analytic-functions-azure-stream-analytics.md)
  [Array Functions &#40;Stream Analytics&#41;](array-functions-stream-analytics.md)
- [Conversion Functions (Azure Stream Analytics)](conversion-functions-azure-stream-analytics.md)
- [Date and Time Functions (Azure Stream Analytics)](date-and-time-functions-azure-stream-analytics.md)
- [Record Functions (Azure Stream Analytics)](record-functions-azure-stream-analytics.md)
+ [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)
+ [Date and Time Functions &#40;Azure Stream Analytics&#41;](date-and-time-functions-azure-stream-analytics.md)
+ [Record Functions &#40;Azure Stream Analytics&#41;](record-functions-azure-stream-analytics.md)
