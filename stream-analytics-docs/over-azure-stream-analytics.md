@@ -33,7 +33,7 @@ OVER ([<PARTITION BY clause>] <LIMIT DURATION clause> [<WHEN clause>])
 ```  
   
 ## Arguments  
- **\<PARTITON BY clause>**  
+ **\<PARTITION BY clause>**  
 
 Specifies that only the rows with the same \<partition_key> will be considered for the aggregate or analytic function.
   
