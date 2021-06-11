@@ -48,7 +48,7 @@ SELECT TollId, ExitTime AS Time, LicensePlate
 FROM Input2 TIMESTAMP BY ExitTime  
   
 ```  
-If need be, streams can be [repartitioned](../stream-analytics/repartition) to match (either in the same job as below, or another one to achieve better performance):
+If need be, streams can be [repartitioned](/azure/stream-analytics/repartition) to match (either in the same job as below, or another one to achieve better performance):
 
 ```SQL
 WITH Input1_P as (
