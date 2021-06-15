@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Export to Azure Blob Storage - Azure"
-description: Learn how to use the the Export Data module to export data from a machine learning experiment to Azure blob storage.
+description: Learn how to use the the Export Data module to export data from a machine learning experiment to Azure Blob Storage.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -16,11 +16,11 @@ This article describes how to use the **Export to Azure Blob Storage** option, i
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-This option is useful when you want to to export data from a machine learning experiment to Azure blob storage. For example, you might want to share machine learning data outputs with other applications, or store intermediate data or cleaned datasets for use in other experiments. 
+This option is useful when you want to to export data from a machine learning experiment to Azure Blob Storage. For example, you might want to share machine learning data outputs with other applications, or store intermediate data or cleaned datasets for use in other experiments. 
 
-Azure blobs can be accessed from anywhere, by using either HTTP or HTTPS. Because Azure blob storage is an unstructured data store, you can export  data in various formats. Currently, CSV, TSV, and ARFF  formats are supported.
+Azure blobs can be accessed from anywhere, by using either HTTP or HTTPS. Because Azure Blob Storage is an unstructured data store, you can export  data in various formats. Currently, CSV, TSV, and ARFF  formats are supported.
 
-To export data to Azure blob for use by other applications, you use the [Export Data](export-data.md) module to save the data to Azure blob storage. Then, use any tool that can read data from Azure storage (such as Excel, cloud storage utilities, or other cloud services), to load and use the data.
+To export data to Azure blob for use by other applications, you use the [Export Data](export-data.md) module to save the data to Azure Blob Storage. Then, use any tool that can read data from Azure storage (such as Excel, cloud storage utilities, or other cloud services), to load and use the data.
 
 > [!NOTE]
 >  The [Import Data](import-data.md) and [Export Data](export-data.md) modules can read and write data only from Azure storage created using the Classic deployment model. In other words, the new Azure Blob Storage account type that offers a hot and cool storage access tiers is not yet supported.  
@@ -29,13 +29,13 @@ To export data to Azure blob for use by other applications, you use the [Export 
 > 
 > However, if you need to create a new account for use with Azure Machine Learning, we recommend that you either select **Classic** for the **Deployment model**, or use **Resource manager** and for **Account kind**, select **General purpose** rather than **Blob storage**.
 
-## How to export data to Azure blob storage
+## How to export data to Azure Blob Storage
 
 The Azure blob service is for storing large amounts of data, including binary data. There are two types of blob storage: public blobs, and blobs that require login credentials.
 
 1. Add the [Export Data](export-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category in Studio (classic).
 
-2. Connect **Export Data** to the module that produces the data that you want to export to Azure blob storage.
+2. Connect **Export Data** to the module that produces the data that you want to export to Azure Blob Storage.
 
 3. Open the **Properties** pane of **Export Data**. For the data destination, select **Azure Blob Storage**.
 
@@ -57,7 +57,7 @@ The Azure blob service is for storing large amounts of data, including binary da
 
 7. If you specify the name of a blob that does not already exist, Azure creates the blob for you.
 
-    When writing to an existing blob, you can specify that current contents of the blob be overwritten by setting the property, **Azure blob storage write mode**. By default, this property is set to **Error**, meaning that an error is raised whenever an existing blob file of the same name is found.
+    When writing to an existing blob, you can specify that current contents of the blob be overwritten by setting the property, **Azure Blob Storage write mode**. By default, this property is set to **Error**, meaning that an error is raised whenever an existing blob file of the same name is found.
 
 8. For **File format for blob file**, select the format in which data should be stored.
 
@@ -122,7 +122,7 @@ Yes, you can write data to accounts in different regions. However, if the storag
 |Azure account name|any|String|none|Azure user account name|  
 |Azure account key|any|SecureString|none|Azure storage key|  
 |Path to blob beginning with container|any|String|none|Name of the blob file, beginning with the container name|  
-|Azure blob storage write mode|List: Error, Overwrite|enum:BlobFileWriteMode|Error|Choose the method of writing blob files|  
+|Azure Blob Storage write mode|List: Error, Overwrite|enum:BlobFileWriteMode|Error|Choose the method of writing blob files|  
 |File format for blob file|ARFF<br /><br /> CSV<br /><br /> TSV|LoaderUtils.FileTypes|CSV|Indicates whether blob file is CSV, TSV, or ARFF|  
 |Write blob header row|TRUE/FALSE|Boolean|FALSE|Indicates whether blob file should have header row|  
 
