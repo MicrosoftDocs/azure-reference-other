@@ -40,7 +40,7 @@ GROUP BY Topic, System.Timestamp()
 
 ### Tumbling window snapshot example
 
-It is not usual to expect input events to occur at exactly same time. It's more common to happen within an intermediate step of the query, especially after applying a different window function.
+It is usual to expect input events to occur at exactly the same time. It's more common to happen within an intermediate step of the query, especially after applying a different window function.
 
 The following example returns the count of tweets with the same topic type by the same user within 30 minute intervals:
 
