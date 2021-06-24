@@ -20,7 +20,7 @@ ms.author: amlstudiodocs
 
 ## Module overview
 
-This article describes how to use the **Group Categorical Values** module in Azure Machine Learning Studio (classic), to create an in-place lookup table.
+This article describes how to use the **Group Categorical Values** module in Machine Learning Studio (classic), to create an in-place lookup table.
 
 The typical use for grouping categorical values is to merge multiple string values into a single new level. For example, you might assign individual postal codes in a region to a single regional code, or group multiple products under one category.
 
@@ -80,7 +80,7 @@ To view the results, right-click the **Group Categorical Values** module, select
 
 For examples of machine learning in action, see the [Azure AI Gallery](https://gallery.azure.ai/). 
 
-You can also try this module for yourself, by using a small dataset with some string variables that can be easily grouped, such as the **Automobile price** dataset that is provided in Azure Machine Learning Studio (classic).
+You can also try this module for yourself, by using a small dataset with some string variables that can be easily grouped, such as the **Automobile price** dataset that is provided in Machine Learning Studio (classic).
 
 Let's assume that you want to group cars in the Automobile price dataset by engine size, using the number of cylinders. Rather than lots of different engine sizes, you will create the new levels, "big", "small", and "other" as follows:
 

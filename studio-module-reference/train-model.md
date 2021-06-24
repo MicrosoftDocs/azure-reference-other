@@ -19,11 +19,11 @@ ms.author: amlstudiodocs
   
 ## Module overview
  
-This article describes how to use the **Train Model** module in Azure Machine Learning Studio (classic) to train a classification or regression model. Training takes place after you have defined a model and set its parameters, and requires tagged data. You can also use **Train Model** to retrain an existing model with new data. 
+This article describes how to use the **Train Model** module in Machine Learning Studio (classic) to train a classification or regression model. Training takes place after you have defined a model and set its parameters, and requires tagged data. You can also use **Train Model** to retrain an existing model with new data. 
 
 ### How the training process works
 
-In Azure Machine Learning, creating and using a machine learning model is typically a three-step process. 
+In Machine Learning, creating and using a machine learning model is typically a three-step process. 
 
 1. You configure a model, by choosing a particular type of algorithm, and defining its parameters or hyperparameters. Choose any of the following model types: 
 
@@ -54,7 +54,7 @@ _Unsupervised learning_ indicates either that the outcome is unknown, or you cho
 
 ## How to use **Train Model**  
   
-1.  In Azure Machine Learning Studio (classic), configure a [classification model](machine-learning-initialize-model-classification.md) or [regression model](machine-learning-initialize-model-regression.md) models.  
+1.  In Machine Learning Studio (classic), configure a [classification model](machine-learning-initialize-model-classification.md) or [regression model](machine-learning-initialize-model-regression.md) models.  
 
     You can also train a custom model created by using [Create R Model](create-r-model.md).
     
@@ -72,7 +72,7 @@ _Unsupervised learning_ indicates either that the outcome is unknown, or you cho
     
     Examples might be a credit risk score, the projected time to failure for a hard drive, or the forecasted number of calls to a call center on a given day or time.  If you do not choose a numeric column, you might get an error.
   
-    -   If you do not specify which label column to use, Azure Machine Learning will try to infer which is the appropriate label column, by using the metadata of the dataset. If it picks the wrong column, use the column selector to correct it.
+    -   If you do not specify which label column to use, Machine Learning will try to infer which is the appropriate label column, by using the metadata of the dataset. If it picks the wrong column, use the column selector to correct it.
   
     > [!TIP] 
     > If you have trouble using the Column Selector, see the article [Select Columns in Dataset](select-columns-in-dataset.md) for tips. It describes some common scenarios and tips for using the **WITH RULES** and **BY NAME** options.
@@ -108,7 +108,7 @@ If you need to train a type of model not supported by **Train Model**, there are
 
 + Recommendation models
 
-    - If your model uses the Matchbox recommend provided in Azure Machine Learning, use the [Train Matchbox Recommender](train-matchbox-recommender.md) module. 
+    - If your model uses the Matchbox recommend provided in Machine Learning, use the [Train Matchbox Recommender](train-matchbox-recommender.md) module. 
 
     - If you are using a different algorithm for market basket analysis or recommendation, use its training methods, in [R script](execute-r-script.md) or [Python script](execute-python-script.md).
 

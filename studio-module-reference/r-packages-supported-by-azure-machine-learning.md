@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Supported R Packages - Azure"
-description: This article lists the R packages included by default in Azure Machine Learning Studio (classic). 
+description: This article lists the R packages included by default in Machine Learning Studio (classic). 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -9,18 +9,18 @@ author: xiaoharper
 ms.author: amlstudiodocs
 
 ---
-# R Packages supported by Azure Machine Learning Studio (classic)
+# R Packages supported by Machine Learning Studio (classic)
 
-This article lists the packages included by default in Azure Machine Learning Studio (classic). To use one of the preloaded packages in your R code, you simply import the package using standard R syntax.
+This article lists the packages included by default in Machine Learning Studio (classic). To use one of the preloaded packages in your R code, you simply import the package using standard R syntax.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 > [!IMPORTANT]
-> Packages available in Studio (classic) can be updated, or the version refreshed, without warning. To get the latest and most complete list of the R packages that are in the Azure Machine Learning Studio (classic) environment, we recommend that you use [this script](#bkmk_code).
+> Packages available in Studio (classic) can be updated, or the version refreshed, without warning. To get the latest and most complete list of the R packages that are in the Machine Learning Studio (classic) environment, we recommend that you use [this script](#bkmk_code).
 
 ## Unsupported packages  
 
-A number of packages (not listed here) are included in the Azure Machine Learning environment but cannot be called from R code because of the following issues:
+A number of packages (not listed here) are included in the Machine Learning environment but cannot be called from R code because of the following issues:
 
 - The package has a Java dependency.
 - The package binaries are not compatible with the sandboxed Azure environment.
@@ -37,7 +37,7 @@ maml.mapOutputPort("data.set")
 
 ## <a name="bkmk_List"></a> List of supported packages
 
-Over 650 R packages are preloaded in the Azure Machine Learning environment. This section lists the packages from CRAN and Microsoft R Open that are supported as of the date of this update (10/2018). 
+Over 650 R packages are preloaded in the Machine Learning environment. This section lists the packages from CRAN and Microsoft R Open that are supported as of the date of this update (10/2018). 
 
 **Index**
 

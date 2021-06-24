@@ -19,11 +19,11 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the **Train Anomaly Detection Model** module in Azure Machine Learning to create a trained anomaly detection model.
+This article describes how to use the **Train Anomaly Detection Model** module in Machine Learning to create a trained anomaly detection model.
 
 The module takes as input a set of model parameters for anomaly detection model, such as that produced by the [One-Class Support Vector Machine](one-class-support-vector-machine.md) module, and an unlabeled dataset. It returns a trained anomaly detection model, together with a set of labels for the training data.  
 
-For more information about the anomaly detection algorithms provided in Azure Machine Learning, see these topics: 
+For more information about the anomaly detection algorithms provided in Machine Learning, see these topics: 
 
 + [One-Class Support Vector Machine](one-class-support-vector-machine.md)
   
@@ -55,7 +55,7 @@ After training is complete:
 
 ## Examples
 
-For an example of how anomaly detection is implemented in Azure Machine Learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
+For an example of how anomaly detection is implemented in Machine Learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [On-line Fraud Detection](https://go.microsoft.com/fwlink/?LinkId=525964): Provides a detailed walkthrough of an anomaly detection scenario, including how to engineer features and interpret the results of an algorithm.  
   

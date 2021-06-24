@@ -20,7 +20,7 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the **User-Defined Filter** module in Azure Machine Learning Studio (classic), to define a custom filter by using a finite impulse response (FIR) filter or an infinite impulse response (IIR) filter with coefficients that you specify.
+This article describes how to use the **User-Defined Filter** module in Machine Learning Studio (classic), to define a custom filter by using a finite impulse response (FIR) filter or an infinite impulse response (IIR) filter with coefficients that you specify.
 
 A filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md). This module is particularly useful for applying a set of previously derived filter coefficients to your data.
 

@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Execute Python Script
 
-*Executes a Python script from an Azure Machine Learning experiment*
+*Executes a Python script from an Machine Learning experiment*
 
 Category: [Python Language Modules](python-language-modules.md)
 
@@ -20,7 +20,7 @@ Category: [Python Language Modules](python-language-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Execute Python Script** module in Azure Machine Learning Studio (classic) to run Python code. For more information about the architecture and design principles of Python in Studio (classic), see [the following article.](/azure/machine-learning/classic/execute-python-scripts)
+This article describes how to use the **Execute Python Script** module in Machine Learning Studio (classic) to run Python code. For more information about the architecture and design principles of Python in Studio (classic), see [the following article.](/azure/machine-learning/classic/execute-python-scripts)
 
 With Python, you can perform tasks that aren't currently supported by existing Studio (classic) modules such as:
 
@@ -28,7 +28,7 @@ With Python, you can perform tasks that aren't currently supported by existing S
 + Using Python libraries to enumerate datasets and models in your workspace
 + Reading, loading, and manipulating data from sources not supported by the [Import Data](import-data.md) module
 
-Azure Machine Learning Studio (classic) uses the Anaconda distribution of Python, which includes many common utilities for data processing.
+Machine Learning Studio (classic) uses the Anaconda distribution of Python, which includes many common utilities for data processing.
 
 ## How to use Execute Python Script
 
@@ -81,7 +81,7 @@ The **Execute Python Script** module contains sample Python code that you can us
 
 The module returns these outputs:  
   
-+ **Results Dataset**. The results of any computations performed by the embedded Python code must be provided as a pandas data.frame, which is automatically converted to the Azure Machine Learning dataset format, so that you can use the results with other modules in the experiment. The module is limited to a single dataset as output. For more information, see [Data Table](data-table.md).
++ **Results Dataset**. The results of any computations performed by the embedded Python code must be provided as a pandas data.frame, which is automatically converted to the Machine Learning dataset format, so that you can use the results with other modules in the experiment. The module is limited to a single dataset as output. For more information, see [Data Table](data-table.md).
 
 + **Python Device**. This output supports both console output and display of PNG graphics using the Python interpreter.
 
@@ -91,7 +91,7 @@ The **Execute Python Script** module supports arbitrary Python script files as i
 
 ### Upload a ZIP file containing Python code to your workspace
 
-1. In the experiment area of Azure Machine Learning Studio (classic), click **Datasets**, and then click **New**.
+1. In the experiment area of Machine Learning Studio (classic), click **Datasets**, and then click **New**.
 
 2. Select the option, **From local file**.
 
@@ -105,7 +105,7 @@ The **Execute Python Script** module supports arbitrary Python script files as i
 
     All files that are contained in the ZIP file are available for use during run time: for example, sample data, scripts, or new Python packages.
 
-    If your zipped file contains any libraries that are not already installed in Azure Machine Learning Studio (classic), you must install the Python library package as part of your custom script.
+    If your zipped file contains any libraries that are not already installed in Machine Learning Studio (classic), you must install the Python library package as part of your custom script.
 
     If there was a directory structure present, it is preserved. However, you must alter your code to prepend the directory **src** to the path.
 

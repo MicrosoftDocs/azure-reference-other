@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the **Train Clustering Model** module in Azure Machine Learning Studio (classic), to train a clustering model.
+This article describes how to use the **Train Clustering Model** module in Machine Learning Studio (classic), to train a clustering model.
 
 The module takes an untrained clustering model that you have already configured using the [K-Means Clustering](k-means-clustering.md) module, and trains the model using a labeled or unlabeled data set. The module creates both a trained model that you can use for prediction, and a set of cluster assignments for each case in the training data.
 

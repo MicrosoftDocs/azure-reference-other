@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Algorithm and module help - Azure"
-description: Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
+description: Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
 ms.date: 04/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,11 +12,11 @@ author: xiaoharper
 ms.author: amlstudiodocs
 
 ---
-# Azure Machine Learning Studio (classic): Algorithm and module help
+# Machine Learning Studio (classic): Algorithm and module help
 
 [!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
-Azure Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio (classic)?"](/azure/machine-learning/studio/what-is-ml-studio) for more details.
+Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio (classic)?"](/azure/machine-learning/studio/what-is-ml-studio) for more details.
 
 This documentation contains detailed technical and how-to information for the modules that are available in Machine Learning Studio (classic).
 
@@ -64,4 +64,4 @@ In this reference section, you'll find technical background on the machine learn
 
 ## See also  
 
-[Azure Machine Learning Studio (classic) documentation](/azure/machine-learning/studio/)
+[Machine Learning Studio (classic) documentation](/azure/machine-learning/studio/)

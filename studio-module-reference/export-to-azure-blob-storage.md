@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Export to Azure Blob Storage
 
-This article describes how to use the **Export to Azure Blob Storage** option, in the [Export Data](export-data.md) module in Azure Machine Learning Studio (classic). 
+This article describes how to use the **Export to Azure Blob Storage** option, in the [Export Data](export-data.md) module in Machine Learning Studio (classic). 
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -27,7 +27,7 @@ To export data to Azure blob for use by other applications, you use the [Export 
 > 
 > Generally, any Azure storage accounts that you might have created before this service option became available should not be affected.
 > 
-> However, if you need to create a new account for use with Azure Machine Learning, we recommend that you either select **Classic** for the **Deployment model**, or use **Resource manager** and for **Account kind**, select **General purpose** rather than **Blob storage**.
+> However, if you need to create a new account for use with Machine Learning, we recommend that you either select **Classic** for the **Deployment model**, or use **Resource manager** and for **Account kind**, select **General purpose** rather than **Blob storage**.
 
 ## How to export data to Azure blob storage
 
@@ -61,9 +61,9 @@ The Azure blob service is for storing large amounts of data, including binary da
 
 8. For **File format for blob file**, select the format in which data should be stored.
 
-    - **CSV**: Comma-separated values (CSV) is the default storage format. To export column headings together with the data, select the option, **Write blob header row**.  For more information about the comma- delimited format used in Azure Machine Learning, see [Convert to CSV](convert-to-csv.md).
+    - **CSV**: Comma-separated values (CSV) is the default storage format. To export column headings together with the data, select the option, **Write blob header row**.  For more information about the comma- delimited format used in Machine Learning, see [Convert to CSV](convert-to-csv.md).
 
-    - **TSV**: Tab-separated values (TSV) format is compatible with many machine learning tools. To export column headings together with the data, select the option, **Write blob header row**.  For more information about the tab-separated format used in Azure Machine Learning, see [Convert to TSV](convert-to-tsv.md).
+    - **TSV**: Tab-separated values (TSV) format is compatible with many machine learning tools. To export column headings together with the data, select the option, **Write blob header row**.  For more information about the tab-separated format used in Machine Learning, see [Convert to TSV](convert-to-tsv.md).
 
     - **ARFF**: This format supports saving files in the format used by the Weka toolset. This format is not supported for files stored in a SAS URL. For more information about the ARFF format, see [Convert to ARFF](convert-to-arff.md).
 
@@ -75,7 +75,7 @@ For examples of how to use the [Export Data](export-data.md) module, see the [Az
 
 - [Convert Dataset to VW Format](https://gallery.azure.ai/Experiment/Step-1-Convert-Dataset-to-VW-Format-1): This experiment uses Python script together with the **Export Data** module to create data that can be used by Vowpal Wabbit.
 
-- [Setting up predictive analytics pipelines using Azure SQL Data Warehouse](https://gallery.azure.ai/Tutorial/Setting-up-predictive-analytics-pipelines-using-Azure-SQL-Data-Warehouse-1):   This scenario describes data movement among multiple components, including Azure Machine Learning and SQL Data Warehouse.
+- [Setting up predictive analytics pipelines using Azure SQL Data Warehouse](https://gallery.azure.ai/Tutorial/Setting-up-predictive-analytics-pipelines-using-Azure-SQL-Data-Warehouse-1):   This scenario describes data movement among multiple components, including Machine Learning and SQL Data Warehouse.
 
 - [No-code batch scoring](https://gallery.azure.ai/Tutorial/No-code-Batch-Scoring-1): This tutorial demonstrates how you can use Azure Logic Apps to automate both the import of data used by experiments, and writing experiment results to blob storage. 
 

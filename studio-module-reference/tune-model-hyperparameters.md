@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module in Azure Machine Learning Studio (classic), to determine the optimum hyperparameters for a given machine learning model. The module builds and tests multiple models, using different combinations of settings, and compares metrics over all models to get the combination of settings. 
+This article describes how to use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module in Machine Learning Studio (classic), to determine the optimum hyperparameters for a given machine learning model. The module builds and tests multiple models, using different combinations of settings, and compares metrics over all models to get the combination of settings. 
 
 The terms *parameter* and *hyperparameter* can be confusing. The model's *parameters* are what you set in the properties pane. Basically, this module performs a *parameter sweep* over the specified parameter settings, and learns an optimal set of _hyperparameters_, which might be different for each specific decision tree, dataset, or regression method. The process of finding the optimal configuration is sometimes called *tuning*. 
 
@@ -210,7 +210,7 @@ We recommend that you experiment with the settings to determine the most efficie
 
 A report containing the accuracy for each model is presented at the end so that you can review the metric results. A uniform set of metrics is used for all classification models, and a different set of metrics is used for regression models. However, during training, you must choose a **single** metric to use in ranking the models that are generated during the tuning process. You might find that the best metric varies, depending on your business problem, and the cost of false positives and false negatives.
 
-For more information, see [How to evaluate model performance in Azure Machine Learning](/azure/machine-learning/classic/evaluate-model-performance)
+For more information, see [How to evaluate model performance in Machine Learning](/azure/machine-learning/classic/evaluate-model-performance)
 
 
 #### Metrics used for classification
@@ -243,7 +243,7 @@ For more information, see [How to evaluate model performance in Azure Machine Le
 
 ### Modules that do not support a parameter sweep
 
-Almost all learners in Azure Machine Learning support cross-validation with an integrated parameter sweep, which lets you choose the parameters to experiment with. If the learner doesn't support setting a range of values, you can still use it in cross-validation. In this case, some range of allowed values is selected for the sweep. 
+Almost all learners in Machine Learning support cross-validation with an integrated parameter sweep, which lets you choose the parameters to experiment with. If the learner doesn't support setting a range of values, you can still use it in cross-validation. In this case, some range of allowed values is selected for the sweep. 
 
 The following learners do not support setting a range of values to use in a parameter sweep:
 

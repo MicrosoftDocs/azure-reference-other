@@ -21,7 +21,7 @@ Category: [Statistical Functions](statistical-functions.md)
 
 ## Module overview
 
-This article describes how to use the **Replace Discrete Values** module in Azure Machine Learning Studio (classic), to generate a probability score that can be used to represent a discrete value. This score can be useful for understanding the information value of the discrete values.
+This article describes how to use the **Replace Discrete Values** module in Machine Learning Studio (classic), to generate a probability score that can be used to represent a discrete value. This score can be useful for understanding the information value of the discrete values.
 
 How it works:
 
@@ -43,7 +43,7 @@ The module outputs both a dataset with the scores, and a function that you can s
 > 
 > If you need to generate scores for multiple columns, use separate instances of **Replace Discrete Values**.
 
-1. Add the **Replace Discrete Values** module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) group in the **experiment items** list in Azure Machine Learning Studio (classic).
+1. Add the **Replace Discrete Values** module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) group in the **experiment items** list in Machine Learning Studio (classic).
 
 2. Connect a dataset containing at least one column of categorical data.
 

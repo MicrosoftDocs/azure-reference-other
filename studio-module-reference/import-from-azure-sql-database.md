@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Import from Azure SQL Database
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to get data from an Azure SQL Database or Azure SQL Data Warehouse.  
+This article describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to get data from an Azure SQL Database or Azure SQL Data Warehouse.  
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -59,7 +59,7 @@ The following steps describe how to manually configure the import source.
     > [!NOTE]
     >  **Import Data** module only supports inputting Database name, user account name and password as credentials.     
 
-4. If the dataset that you read into Azure Machine Learning is not expected to change between runs of the experiment, select the **Use cached results** option.
+4. If the dataset that you read into Machine Learning is not expected to change between runs of the experiment, select the **Use cached results** option.
 
     When this is selected, if there are no other changes to module parameters, the experiment loads the data the first time the module is run, and thereafter uses a cached version of the dataset.
 
@@ -89,7 +89,7 @@ For an example of how to use data from Azure databases in machine learning, see 
 
     It also demonstrates some useful techniques, such as using Azure SQLDB to passing datasets between experiments in different accounts, saving and combining forecasts, and how to create an Azure SQLDB for machine learning.
 
-- [Use Azure Machine Learning with SQL Data Warehouse](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-integrate-azure-machine-learning/): This article demonstrates how to create a regression model to predict prices using Azure SQL Data Warehouse.
+- [Use Machine Learning with SQL Data Warehouse](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-integrate-azure-machine-learning/): This article demonstrates how to create a regression model to predict prices using Azure SQL Data Warehouse.
 
 - [How to use Azure ML with Azure SQL Data Warehouse](https://blogs.technet.microsoft.com/machinelearning/2016/03/08/how-to-use-azure-ml-with-azure-sql-data-warehouse/): This article builds a clustering model on AdventureWorks, using [Import Data](import-data.md) and [Export Data](export-data.md) with Azure SQL Data Warehouse.
 
@@ -110,7 +110,7 @@ The [Import Data](import-data.md) module does not support filtering as data is b
 
 When reading data from a SQL database, you might encounter an error message reporting an unsupported data type.
 
-If the data you get from the SQL database includes data types that are not supported in Azure Machine Learning, you should cast or convert the decimals to a supported data before reading the data. [Import Data](import-data.md) cannot automatically perform any conversions that would result in a loss of precision.
+If the data you get from the SQL database includes data types that are not supported in Machine Learning, you should cast or convert the decimals to a supported data before reading the data. [Import Data](import-data.md) cannot automatically perform any conversions that would result in a loss of precision.
 
 For more information about supported data types, see [Module Data Types](machine-learning-module-data-types.md).
 
@@ -122,7 +122,7 @@ Data that you read into your workspace for an experiment is saved in the storage
 
 #### Why are some characters not displayed correctly?
 
-Azure Machine Learning supports the UTF-8 encoding. If string columns in your database use a different encoding, the characters might not be imported correctly.
+Machine Learning supports the UTF-8 encoding. If string columns in your database use a different encoding, the characters might not be imported correctly.
 
 One option is to export the data to a CSV  file in Azure storage, and use the option **CSV with encoding** to specify parameters for custom delimiters, the code page, and so forth.  
 

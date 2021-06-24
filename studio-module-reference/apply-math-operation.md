@@ -18,7 +18,7 @@ manager: cgronlun
   
 ## Module overview  
 
-This article describes how to use the **Apply Math Operation** module in Azure Machine Learning Studio (classic), to create calculations that are applied to numeric columns in the input dataset. 
+This article describes how to use the **Apply Math Operation** module in Machine Learning Studio (classic), to create calculations that are applied to numeric columns in the input dataset. 
 
 Supported math operations include common arithmetic functions such as multiplication and division, trigonometric functions, a variety of rounding functions, and special functions used in data science such as gamma and error functions.  
 
@@ -26,7 +26,7 @@ After you define an operation and run the experiment, the values are added to yo
 
 + Append the results to your dataset. This is particularly useful when you are verifying the result of the operation.
 + Replace columns values with the new, computed values.
-+ Generate a new column for results, and not show the orginal data. 
++ Generate a new column for results, and not show the original data. 
 
 > [!TIP]
 > This module performs a single math operation at a time. For complex math operations, we recommend using these modules instead:
@@ -124,7 +124,7 @@ Even if you use the **Inplace** option, the source data is not deleted or change
 
 The functions in the **Basic** category usually take a single value from a column, perform the predefined operation, and return a single value. For some functions you can specify a constant as a second argument.  
   
- Azure Machine Learning supports the following functions in the **Basic** category:  
+ Machine Learning supports the following functions in the **Basic** category:  
 
 ### Abs
 
@@ -241,7 +241,7 @@ Squares the values in the selected column.
 
 ## <a name="bkmk_Compare"></a> Comparison operations  
 
-Use the comparison functions in Azure Machine Learning Studio (classic) any time that you need to test two sets of values against each other. For example, in an experiment you might need to do these comparison operations:  
+Use the comparison functions in Machine Learning Studio (classic) any time that you need to test two sets of values against each other. For example, in an experiment you might need to do these comparison operations:  
 
 - Evaluate a column of probability scores model against a threshold value.
 - Determine if two sets of results are the same, and for each row that is different, add a FALSE flag that can be used for further processing or filtering.  

@@ -20,7 +20,7 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
 
 ## Module overview
 
-This article describes how to use the [Select Columns in Dataset](select-columns-in-dataset.md) module in Azure Machine Learning Studio (classic), to choose a subset of columns to use in downstream operations. The module does not physically remove the columns from the source dataset; instead, it creates a subset of columns, much like a database *view* or *projection*.
+This article describes how to use the [Select Columns in Dataset](select-columns-in-dataset.md) module in Machine Learning Studio (classic), to choose a subset of columns to use in downstream operations. The module does not physically remove the columns from the source dataset; instead, it creates a subset of columns, much like a database *view* or *projection*.
 
 This module is particularly useful when you need to limit the columns available for a downstream operation, or if you want to reduce the size of the dataset by removing unneeded columns.
 
@@ -188,7 +188,7 @@ The following examples describe some typical ways that users apply  [Select Colu
   
      If there are just a few columns in your dataset, you can use the **Visualize** option to see the first 100 rows and then figure out which column is index 1, 2, and so forth. 
      
-     - The indexes in Azure Machine Learning start at 1, so the first column is always 1.  
+     - The indexes in Machine Learning start at 1, so the first column is always 1.  
      
      - To get the index of the last column, look at the two lists of columns in the Column Selector: AVAILABLE COLUMNS and SELECTED COLUMNS. The gray bar beneath the column list displays the count of columns in each list. Thus, if 24 columns are available and two columns are selected, there are a total of 26 columns, and the index of the final column is 26.
   

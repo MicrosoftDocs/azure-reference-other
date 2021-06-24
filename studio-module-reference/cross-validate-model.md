@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the **Cross-Validate Model** module in Azure Machine Learning Studio (classic). *Cross-validation* is an important technique often used in machine learning to assess both the variability of a dataset and the reliability of any model trained using that data.  
+This article describes how to use the **Cross-Validate Model** module in Machine Learning Studio (classic). *Cross-validation* is an important technique often used in machine learning to assess both the variability of a dataset and the reliability of any model trained using that data.  
   
 The **Cross-Validate Model** module takes as input a labeled dataset, together with an untrained classification or regression model. It divides the dataset into some number of subsets (*folds*), builds a model on each fold, and then returns a set of accuracy statistics for each fold. By comparing the accuracy statistics for all the folds, you can interpret the quality of the data set and understand whether the model is susceptible to variations in the data.  
   
@@ -67,7 +67,7 @@ Cross-validation can take a long time to run if you use a lot of data.  Therefor
 
 In this scenario, you both train and test the model using **Cross Validate Model**.
 
-1. Add the **Cross Validate Model** module to your experiment. You can find it in Azure Machine Learning Studio (classic), in the **Machine Learning** category, under **Evaluate**. 
+1. Add the **Cross Validate Model** module to your experiment. You can find it in Machine Learning Studio (classic), in the **Machine Learning** category, under **Evaluate**. 
 
 2. Connect the output of any [classification](machine-learning-initialize-model-classification.md) or [regression](machine-learning-initialize-model-regression.md) model. 
 
@@ -90,7 +90,7 @@ In this scenario, you both train and test the model using **Cross Validate Model
 
 ### <a name ="bkmk_sweep"></a>Cross-validation with a parameter sweep
 
-In this scenario, you use [Tune Model Hyperparameters](tune-model-hyperparameters.md) to identify the best model by conducting a parameter sweep, and then use **Cross Validate Model** to check its reliability. This is the easiest way to have Azure Machine Learning identify the best model and then generate metrics for it.
+In this scenario, you use [Tune Model Hyperparameters](tune-model-hyperparameters.md) to identify the best model by conducting a parameter sweep, and then use **Cross Validate Model** to check its reliability. This is the easiest way to have Machine Learning identify the best model and then generate metrics for it.
 
 1. Add the dataset for model training, and add one of the machine learning modules that creates a classification or regression model.
 
@@ -98,7 +98,7 @@ In this scenario, you use [Tune Model Hyperparameters](tune-model-hyperparameter
 
 3. Attach the classification or regression model to the **Untrained model** input of [Tune Model Hyperparameters](tune-model-hyperparameters.md).
 
-4. Add the **Cross Validate Model** module to your experiment. You can find it in Azure Machine Learning Studio (classic), in the **Machine Learning** category, under **Evaluate**. 
+4. Add the **Cross Validate Model** module to your experiment. You can find it in Machine Learning Studio (classic), in the **Machine Learning** category, under **Evaluate**. 
 
 5. Locate the **Trained best model** output of **Tune Model Hyperparameters**, and connect it to the **Untrained model** input of **Cross Validate Model**.
 
@@ -170,7 +170,7 @@ For examples of how cross-validation is used in machine learning, see the [Azure
 
     However, if a validation dataset is provided upstream, the module uses the specified training and testing datasets instead of splitting into *n* folds. That is, the first dataset is used to train the model for each parameter combination, and the models are evaluated on the validation dataset. See the section on [using a parameter sweep with cross-validation](#bkmk_sweep).
 
-+ Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Azure Machine Learning](/azure/machine-learning/studio/algorithm-parameters-optimize)
++ Although this article uses older versions of the modules, it has a good explanation of the cross-validation process: [How to choose parameters to optimize your algorithms in Machine Learning](/azure/machine-learning/studio/algorithm-parameters-optimize)
 
 ##  Expected inputs
 

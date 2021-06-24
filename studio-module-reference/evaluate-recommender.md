@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
  
-This article describes how to use the **Evaluate Recommender** module in Azure Machine Learning Studio (classic), to measure the accuracy of predictions made by a recommendation model. Using this module, you can evaluate four different kinds of recommendations:  
+This article describes how to use the **Evaluate Recommender** module in Machine Learning Studio (classic), to measure the accuracy of predictions made by a recommendation model. Using this module, you can evaluate four different kinds of recommendations:  
   
 -   Ratings predicted for a given user and item  
   
@@ -39,9 +39,9 @@ When you create predictions using a recommendation model, slightly different res
 The module also applies the appropriate performance metrics, based on the type of prediction being made. 
 
 > [!TIP]
-> Learn everything you need to know about the end-to-end experience of building a recommendation system in this tutorial from the .NET development team. Includes sample code and discussion of how to call Azure Machine Learning from an application.
+> Learn everything you need to know about the end-to-end experience of building a recommendation system in this tutorial from the .NET development team. Includes sample code and discussion of how to call Machine Learning from an application.
 > 
-> [Building recommendation engine for .NET applications using Azure Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/)
+> [Building recommendation engine for .NET applications using Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/)
   
 ## How to configure Evaluate Recommender
 
@@ -177,11 +177,11 @@ Therefore, to evaluate, the recommender scoring module must only predict related
 
 ## Examples
 
-For examples of how recommendation models are used in Azure Machine Learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
+For examples of how recommendation models are used in Machine Learning, see the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Movie recommender sample](https://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model. 
 
-- [Building recommendation engine for .NET applications using Azure Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/): This blog provides a detailed description of how to build a movie recommendation model. 
+- [Building recommendation engine for .NET applications using Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/): This blog provides a detailed description of how to build a movie recommendation model. 
 
 ##  Expected inputs
 

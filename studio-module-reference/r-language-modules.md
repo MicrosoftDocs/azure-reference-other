@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): R Language Modules - Azure"
-description: This article lists the modules in Azure Machine Learning Studio (classic) that support running R code.
+description: This article lists the modules in Machine Learning Studio (classic) that support running R code.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # R Language Modules
 
-This article lists the modules in Azure Machine Learning Studio (classic) that support running R code. These modules make it easier to publish R models in production, and to use the experience of the R language community to solve real-world problems.
+This article lists the modules in Machine Learning Studio (classic) that support running R code. These modules make it easier to publish R models in production, and to use the experience of the R language community to solve real-world problems.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -56,7 +56,7 @@ Whenever you create an experiment, you must choose a single R version to run on,
 
 ## List of packages per version
 
-For a list of the packages that are currently supported in Machine Learning, see [R Packages Supported by Azure Machine Learning](r-packages-supported-by-azure-machine-learning.md). 
+For a list of the packages that are currently supported in Machine Learning, see [R Packages Supported by Machine Learning](r-packages-supported-by-azure-machine-learning.md). 
 
 You can also add the following code to an [Execute R Script](execute-r-script.md) module in your experiment, and run it to get a dataset containing package names and versions. Be sure to set the R version in the module properties to generate the correct list for your intended environment.
 
@@ -137,7 +137,7 @@ This experiment in the Azure AI Gallery demonstrates how you can create a custom
 
 This article, published on R-Bloggers, demonstrates how you can create your own evaluation method in Machine Learning:
 
-+ [How to evaluate R models in Azure Machine Learning Studio (classic)](https://www.r-bloggers.com/how-to-evaluate-r-models-in-azure-machine-learning-studio/)
++ [How to evaluate R models in Machine Learning Studio (classic)](https://www.r-bloggers.com/how-to-evaluate-r-models-in-azure-machine-learning-studio/)
 
 ### More help with R
 

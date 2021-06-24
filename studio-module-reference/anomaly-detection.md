@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Anomaly Detection - Azure"
-description: "Learn about the modules you can use for anomaly detection in Azure Machine Learning."
+description: "Learn about the modules you can use for anomaly detection in Machine Learning Studio (classic)."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -14,7 +14,7 @@ manager: cgronlun
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-This article introduces the modules provided in Azure Machine Learning Studio (classic) for anomaly detection. Anomaly detection encompasses many important tasks in machine learning:  
+This article introduces the modules provided in Machine Learning Studio (classic) for anomaly detection. Anomaly detection encompasses many important tasks in machine learning:  
   
 -   Identifying transactions that are potentially fraudulent.
 -   Learning patterns that indicate that a network intrusion has occurred.
@@ -40,10 +40,6 @@ For an example of how these modules work together, see the [Anomaly Detection: C
 
 Azure also provides the [Machine Learning Anomaly Detection API](/azure/machine-learning/machine-learning-apps-anomaly-detection-api), which you can call as a web service.
 
-> [!TIP]
-> If you're not sure whether anomaly detection is the right algorithm to use with your data, see these guides: 
-> -  [Machine learning algorithm cheat sheet for Azure Machine Learning](/azure/machine-learning/studio/algorithm-cheat-sheet/) provides a graphical decision chart to guide you through the selection process.
-> - [Choose Azure Machine Learning algorithms for clustering, classification, or regression](/azure/machine-learning/studio/algorithm-choice).
 
 ## List of modules
 

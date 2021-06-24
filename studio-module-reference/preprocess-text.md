@@ -21,7 +21,7 @@ Category: [Text Analytics](text-analytics.md)
 
 ## Module overview
 
-This article describes how to use the **Preprocess Text** module in Azure Machine Learning Studio (classic), to clean and simplify text. By preprocessing the text, you can more easily create meaningful features from text.
+This article describes how to use the **Preprocess Text** module in Machine Learning Studio (classic), to clean and simplify text. By preprocessing the text, you can more easily create meaningful features from text.
 
 For example, the **Preprocess Text** module supports these common operations on text:
 
@@ -132,7 +132,7 @@ This section provides more information about the underlying text pre-processing 
 
 ### Supported languages
 
-Currently Azure Machine Learning supports text preprocessing in these languages:
+Currently Machine Learning supports text preprocessing in these languages:
 
 - Dutch
 - English
@@ -147,7 +147,7 @@ Additional languages are planned. See the [Microsoft Machine Learning blog](http
 
 Lemmatization is the process of identifying a single canonical form to represent multiple word tokens.
 
-The natural language processing libraries included in Azure Machine Learning Studio (classic) combine the following multiple linguistic operations to provide lemmatization:
+The natural language processing libraries included in Machine Learning Studio (classic) combine the following multiple linguistic operations to provide lemmatization:
 
 - **Sentence separation**: In free text used for sentiment analysis and other text analytics, sentences are frequently run-on or punctuation might be missing. Input texts might constitute an arbitrarily long chunk of text, ranging from a tweet or fragment to a complete paragraph, or even document.
 
@@ -161,9 +161,9 @@ The natural language processing libraries included in Azure Machine Learning Stu
 
 - **Part-of-speech identification**: In any sequence of words, it can be difficult to computationally identify the exact part of speech for each word. Even an apparently simple sentence such as "Time flies like an arrow" can have many dozen parses (a famous example). Parts of speech are also very different depending on the morphology of different languages.
 
-    In Azure Machine Learning, a disambiguation model is used to choose the **single most likely part of speech**, given the current sentence context.  The part-of-speech information is used to help filter words used as features and aid in key-phrase extraction. However, the output of this module does not explicitly include POS tags and therefore cannot be used to generate POS-tagged text.
+    In Machine Learning, a disambiguation model is used to choose the **single most likely part of speech**, given the current sentence context.  The part-of-speech information is used to help filter words used as features and aid in key-phrase extraction. However, the output of this module does not explicitly include POS tags and therefore cannot be used to generate POS-tagged text.
 
-- **Generating dictionary form**: A word may have multiple *lemmas*, or dictionary forms, each coming from a different analysis. For instance, the English word building has two possible lemmas: *building* if the word is a noun ("the tall building"), or *build* if the word is a verb ("they are building a house"). In Azure Machine Learning, only the *single most probable* dictionary form is generated.
+- **Generating dictionary form**: A word may have multiple *lemmas*, or dictionary forms, each coming from a different analysis. For instance, the English word building has two possible lemmas: *building* if the word is a noun ("the tall building"), or *build* if the word is a verb ("they are building a house"). In Machine Learning, only the *single most probable* dictionary form is generated.
 
 Sample lemmatization output
 
@@ -190,7 +190,7 @@ A **stop word** (or **stopword**) is a word that is often removed from indexes b
 
 For example, many languages make a semantic distinction between definite and indefinite articles ("the building" vs "a building"), but for machine learning and information retrieval, the information is sometimes not relevant. Hence you might decide to discard these words.
 
-The Azure Machine Learning environment includes  lists of the most common stopwords for each of the supported languages.
+The Machine Learning environment includes  lists of the most common stopwords for each of the supported languages.
 
 |Language|Number of stopwords|Examples|  
 |-|-|-|  
@@ -231,7 +231,7 @@ Be sure to test target terms in advance to guarantee the correct results.
 
 ## Unsupported languages
 
-If your text column includes languages not supported by Azure Machine Learning, we recommend that you use only those options that do not require language-dependent processing. This can help avoid strange results.
+If your text column includes languages not supported by Machine Learning, we recommend that you use only those options that do not require language-dependent processing. This can help avoid strange results.
 
 Also, if you use the option **Column contains language**, you must ensure that no unsupported languages are included in the text that is processed. If an unsupported language or its identifier is present in the dataset, the following run-time error is generated:
 

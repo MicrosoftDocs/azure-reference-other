@@ -19,7 +19,7 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
 
 ## Module overview  
 
-This article describes how to use the **Add Rows** module in Azure Machine Learning to concatenate two datasets. In concatenation, the rows of the second dataset are added to the end of the first dataset.  
+This article describes how to use the **Add Rows** module in Machine Learning Studio (classic) to concatenate two datasets. In concatenation, the rows of the second dataset are added to the end of the first dataset.  
   
 Concatenation of rows is useful in scenarios such as these:  
   

@@ -20,7 +20,7 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 ## Module overview
 
-This article describes how to use the **Merge Count Transform** module in Azure Machine Learning Studio (classic), to combine two sets of count-based features. By merging two sets of related counts and features, you can potentially improve the coverage and distribution of the features.
+This article describes how to use the **Merge Count Transform** module in Machine Learning Studio (classic), to combine two sets of count-based features. By merging two sets of related counts and features, you can potentially improve the coverage and distribution of the features.
 
 Learning from counts is particularly useful in large data sets with high-cardinality features.  The ability to combine multiple datasets into count-based feature sets without having to reprocess the datasets makes it easier to gather statistics on very large datasets and apply them to new datasets. For example, count tables can be used to collect information over terabytes of data. You can re-use those statistics to improve the accuracy of predictive models on small data sets.
 

@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the **Score Vowpal Wabbit Version 7-10 Model** module in Azure Machine Learning Studio (classic), to generate scores for a set of input data, using an existing Vowpal Wabbit model.
+This article describes how to use the **Score Vowpal Wabbit Version 7-10 Model** module in Machine Learning Studio (classic), to generate scores for a set of input data, using an existing Vowpal Wabbit model.
 
 This module uses version 7-10 of the Vowpal Wabbit framework. Use this module to score data using a trained model that was saved in the 7-10 format.
 
@@ -41,12 +41,12 @@ For the latest version of Vowpal Wabbit, use:
 
     **Restrictions**
     
-    The model must be available in Azure Machine Learning Studio (classic); you cannot directly load a model from Azure storage.
+    The model must be available in Machine Learning Studio (classic); you cannot directly load a model from Azure storage.
   
     Only Vowpal Wabbit 7-10 models are supported; you cannot connect saved models that were trained by using other algorithms, and you cannot use models that were trained using earlier or later versions.  
   
 3.  In the **VW arguments** text box, type a set of valid command-line arguments to the Vowpal Wabbit executable.   
-     For information about which Vowpal Wabbit arguments are supported and unsupported in Azure Machine Learning, see the [Technical Notes](#bkmk_TechnicalNotes) section.  
+     For information about which Vowpal Wabbit arguments are supported and unsupported in Machine Learning, see the [Technical Notes](#bkmk_TechnicalNotes) section.  
   
 4.  Click **Specify data type**, and select one of the supported data types from the list.  
   
@@ -102,7 +102,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 Vowpal Wabbit has many command-line options for choosing and tuning algorithms. A full discussion of these options is not possible here; we recommend that you view the [Vowpal Wabbit wiki page](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments).  
 
-The following parameters are not supported in Azure Machine Learning Studio (classic).  
+The following parameters are not supported in Machine Learning Studio (classic).  
 
 -   The input/output options specified in [https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments)  
   

@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the [Edit Metadata](edit-metadata.md) module in Azure Machine Learning Studio (classic) to change metadata that is associated with columns in a dataset. The values and the data types in the dataset are not actually altered; what changes is the metadata inside Azure Machine Learning that tells downstream components how to use the column.
+This article describes how to use the [Edit Metadata](edit-metadata.md) module in Machine Learning Studio (classic) to change metadata that is associated with columns in a dataset. The values and the data types in the dataset are not actually altered; what changes is the metadata inside Machine Learning that tells downstream components how to use the column.
 
 Typical metadata changes might include:
   
@@ -39,7 +39,7 @@ Typical metadata changes might include:
   
 ##  How to configure Edit Metadata
   
-1.  In Azure Machine Learning Studio (classic), add [Edit Metadata](edit-metadata.md) module to your experiment and connect the dataset you want to update. You can find it under **Data Transformation**, in the **Manipulate** category.
+1.  In Machine Learning Studio (classic), add [Edit Metadata](edit-metadata.md) module to your experiment and connect the dataset you want to update. You can find it under **Data Transformation**, in the **Manipulate** category.
   
 2.  Click **Launch the column selector** and choose the column or set of columns to work with. You can choose columns individually, by name or index, or you can choose a group of columns, by type.  
 
@@ -59,26 +59,26 @@ Typical metadata changes might include:
     > [!NOTE]
     > If you change any type of number to the **DateTime** type, leave the **DateTime Format** field blank. Currently, it is not possible to specify the target data format.  
    >  
-   >  Azure Machine Learning can convert dates to numbers, or numbers to dates, if the numbers are compatible with one of the supported .NET DateTime objects. For more information, see the [Technical Notes](#bkmk_TechnicalNotes) section.  
+   >  Machine Learning can convert dates to numbers, or numbers to dates, if the numbers are compatible with one of the supported .NET DateTime objects. For more information, see the [Technical Notes](#bkmk_TechnicalNotes) section.  
       
 4.  Select the **Categorical** option to specify that the values in the selected columns should be treated as categories. 
 
     For example, you might have a column that contains the numbers 0,1 and 2, but know that the numbers actually mean "Smoker", "Non smoker" and "Unknown". In that case, by flagging the column as categorical you can ensure that the values are not used in numeric calculations, only to group data. 
   
-5.  Use the **Fields** option if you want to change the way that Azure Machine Learning uses the data in a model.
+5.  Use the **Fields** option if you want to change the way that Machine Learning uses the data in a model.
 
     + **Feature**: Use this option to flag a column as a feature, for use with modules that operate only on feature columns. By default, all columns are initially treated as features.  
   
     + **Label**: Use this option to mark the label (also known as the predictable attribute, or target variable). Many modules requires that at least one (and only one) label column be present in the dataset. 
     
-        In many cases, Azure Machine Learning can infer that a column contains a class label, but by setting this metadata you can ensure that the column is identified correctly. Setting this option does not change data values, only the way that some machine learning algorithms handle the data.
+        In many cases, Machine Learning can infer that a column contains a class label, but by setting this metadata you can ensure that the column is identified correctly. Setting this option does not change data values, only the way that some machine learning algorithms handle the data.
   
     + **Weight**: Use this option with numeric data to indicate that column values represents weights for use in machine learning scoring or training operations. Only one weight column can be present in a dataset, and the column must be numeric.
   
     > [!TIP]
     >  Have data that doesn't fit into these categories?  For example, your dataset might contain values such as unique identifiers that are not useful as variables. Sometimes IDs can cause problems when used in a model. 
     >   
-    >  Fortunately "under the covers" Azure Machine Learning keeps all your data, so you don't have to delete such columns from the dataset. When you need to perform operations on some special set of columns, just remove all other columns temporarily by using the [Select Columns in Dataset](select-columns-in-dataset.md) module. Later you can merge the columns back into the dataset by using the [Add Columns](add-columns.md) module.  
+    >  Fortunately "under the covers" Machine Learning keeps all your data, so you don't have to delete such columns from the dataset. When you need to perform operations on some special set of columns, just remove all other columns temporarily by using the [Select Columns in Dataset](select-columns-in-dataset.md) module. Later you can merge the columns back into the dataset by using the [Add Columns](add-columns.md) module.  
   
 6. Use the following options to clear previous selections and restore metadata to the default values.  
   
@@ -90,7 +90,7 @@ Typical metadata changes might include:
   
     + **Clear score**: Use this option to remove the **score** metadata from the specified column.  
   
-         Currently the ability to explicitly mark a column as a score is not available in Azure Machine Learning. However, some operations result in a column being flagged as a score internally. Also, a custom R module might output score values.
+         Currently the ability to explicitly mark a column as a score is not available in Machine Learning. However, some operations result in a column being flagged as a score internally. Also, a custom R module might output score values.
   
     + **Clear weight**: Use this option to remove the **weight** metadata from the specified column.  
   
@@ -123,7 +123,7 @@ This section contains known issues, frequently asked questions, and some example
 
 ### Known Issues
 
--   **Custom metadata is not supported.** It is not possible to use custom metadata in Azure Machine Learning or to edit column metadata outside  [Edit Metadata](edit-metadata.md). For example, you cannot add metadata indicating that a column is a unique identifier, or add other descriptive attributes . Azure Machine Learning supports only the metadata attributes that are used within R for working with factors, features, weights, and labels.  
+-   **Custom metadata is not supported.** It is not possible to use custom metadata in Machine Learning or to edit column metadata outside  [Edit Metadata](edit-metadata.md). For example, you cannot add metadata indicating that a column is a unique identifier, or add other descriptive attributes . Machine Learning supports only the metadata attributes that are used within R for working with factors, features, weights, and labels.  
   
 -   **Unsupported data types.** The following numeric data types are not supported: Double (decimal) and TimeStamp.  
   
@@ -137,7 +137,7 @@ This section contains known issues, frequently asked questions, and some example
     maml.mapOutputPort("dataset");
     ```
 
-+ **Problems with datetime formats.**  The underlying `datetime` data type used by Azure Machine Learning is `POSIXct`.  
++ **Problems with datetime formats.**  The underlying `datetime` data type used by Machine Learning is `POSIXct`.  
   
     If all dates in a column can be parsed by the default parser, the column is imported and treated as string data. 
     
@@ -173,7 +173,7 @@ If you have many columns to rename, you can use the **Execute R Script** module,
 
 #### Using R script
 
-Data sets used by Azure Machine Learning are passed into this module as a data.frame, meaning that you can use the R `colnames()` function and other related R functions, to list or change column names.
+Data sets used by Machine Learning are passed into this module as a data.frame, meaning that you can use the R `colnames()` function and other related R functions, to list or change column names.
 
 For example, the following code creates a list of new column names, and then applies that list to the input dataset to generate new column headings.
 

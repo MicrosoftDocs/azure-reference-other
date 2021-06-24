@@ -19,13 +19,13 @@ ms.author: amlstudiodocs
   
 ## Module overview
  
-This article describes how to use the [Convert to CSV](convert-to-csv.md) module in Azure Machine Learning Studio (classic), to convert a dataset from Azure ML into a CSV format that can be downloaded, exported, or shared with R or Python script modules.
+This article describes how to use the [Convert to CSV](convert-to-csv.md) module in Machine Learning Studio (classic), to convert a dataset from Azure ML into a CSV format that can be downloaded, exported, or shared with R or Python script modules.
 
 ### More about the CSV format 
 
-The CSV format, which stands for "comma-separated values", is a file format used by many external machine learning tools. Although the native dataset format used by Azure Machine Learning is based on the .NET datatable and thus can be read by .NET libraries, CSV is a common interchange format when working with open-source languages such as R or Python.
+The CSV format, which stands for "comma-separated values", is a file format used by many external machine learning tools. Although the native dataset format used by Machine Learning is based on the .NET datatable and thus can be read by .NET libraries, CSV is a common interchange format when working with open-source languages such as R or Python.
 
-Even if you do most of your work in Azure Machine Learning Studio (classic), there are times when you might find it handy to convert your dataset to CSV to use in external tools. For example:
+Even if you do most of your work in Machine Learning Studio (classic), there are times when you might find it handy to convert your dataset to CSV to use in external tools. For example:
 
 + Download the CSV file to open it with Excel, or import it into a relational database.  
 + Save the CSV file to cloud storage and connect to it from Power BI to create visualizations.  
@@ -75,7 +75,7 @@ A CSV file stores tabular data (numbers and text) in plain text form. A CSV file
 Typically, all records have an identical number of fields, and missing values are represented as nulls or empty strings.  
 
 > [!TIP]
-> You can easily export data from Excel, Access, or a relational database into CSV files, to use in Azure Machine Learning. Although file names typically have the .CSV extension, Azure Machine Learning does not require that this filename extension be present if you want to import the data as CSV. You can import XLSX, TXT, and other files as CSV. 
+> You can easily export data from Excel, Access, or a relational database into CSV files, to use in Machine Learning. Although file names typically have the .CSV extension, Machine Learning does not require that this filename extension be present if you want to import the data as CSV. You can import XLSX, TXT, and other files as CSV. 
 > However, the fields in the file must be formatted as described in the preceding section, and the file must use the UTF-8 encoding.
 
 ### Common questions and issues 
@@ -84,7 +84,7 @@ This section describes some known issues, common questions, and workarounds spec
 
 #### Headers must be single rows
   
-The CSV file format used in Azure Machine Learning supports a single header row.  You cannot insert multi-line headers.
+The CSV file format used in Machine Learning supports a single header row.  You cannot insert multi-line headers.
 
 #### Custom separators supported on import but not export
 
@@ -96,7 +96,7 @@ However, when you import data from CSV files in external storage, you can specif
   
 It is a common problem in text processing that just about every character that can be specified as a column separator (tabs, spaces, commas, etc.) can also be found randomly in text fields. Importing text from CSV always requires caution to avoid separating text across unnecessary new columns. 
 
-When you try to export a column of string data that contains commas, you might run into problems as well. Azure Machine Learning does not support any special handling or special translation of such data, such as enclosing strings in quotation marks. Also, you cannot use escape characters before a comma to ensure that commas are handled as a literal character. 
+When you try to export a column of string data that contains commas, you might run into problems as well. Machine Learning does not support any special handling or special translation of such data, such as enclosing strings in quotation marks. Also, you cannot use escape characters before a comma to ensure that commas are handled as a literal character. 
 
 Therefore, new fields are created in the output file for each comma that is encountered in the string field. To avoid this problem, there are several workarounds:
 
@@ -130,7 +130,7 @@ For importing, don't use the **Export to CSV** module. Instead, use the [Import 
 
 For general information about importing from CSV, see these resources:
 
-+ [Import your training data into Azure Machine Learning Studio (classic) from various data sources](import-data.md)
++ [Import your training data into Machine Learning Studio (classic) from various data sources](import-data.md)
 + [AzureML Experiments and Data Interaction](https://gallery.azure.ai/Tutorial/3-AzureML-Experiments-and-Data-Interaction-1): Demonstrates various data sources and how to work with them in Studio (classic).
 
 ##  Expected inputs

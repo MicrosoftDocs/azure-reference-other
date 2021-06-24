@@ -21,7 +21,7 @@ Category: [Statistical Functions](statistical-functions.md)
 
 ## Module overview
 
-This article describes how to use the [Test Hypothesis Using t-Test](test-hypothesis-using-t-test.md) module in Azure Machine Learning Studio (classic), to generate scores for three types of t-tests:
+This article describes how to use the [Test Hypothesis Using t-Test](test-hypothesis-using-t-test.md) module in Machine Learning Studio (classic), to generate scores for three types of t-tests:
 
 - Single sample t-test
 - Paired t-test

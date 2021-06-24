@@ -11,7 +11,7 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning Module Data Types
 
-This article describes the .NET data types that are supported in Microsoft Azure Machine Learning Studio (classic) for external data. It also describes the custom data type classes that are used for passing data between modules within an experiment.
+This article describes the .NET data types that are supported in Machine Learning Studio (classic) for external data. It also describes the custom data type classes that are used for passing data between modules within an experiment.
 
 ##  <a name="types"></a> Table of .NET data types
 
@@ -39,7 +39,7 @@ In addition, Machine Learning Studio (classic) supports the following custom dat
 
 |Data Type|Description|  
 |---------------|-----------------|  
-|[Data Table](data-table.md)|The DataTable interface defines the structure of all datasets used in Azure Machine Learning.|  
+|[Data Table](data-table.md)|The DataTable interface defines the structure of all datasets used in Machine Learning.|  
 |[ICluster interface](icluster-interface.md)|The ICluster interface defines the structure of clustering models.|  
 |[IFilter interface](ifilter-interface.md)|The IFilter interface defines the structure of digital signal processing filters applied to an entire series of numerical values. Filters can be created and then saved and applied to a new series.|  
 |[ILearner interface](ilearner-interface.md)|The ILearner interface provides a generic structure for defining and saving analytical models, excluding some special types such as clustering models.|  

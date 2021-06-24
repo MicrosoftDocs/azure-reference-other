@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Data Transformation - Filter
 
-This article describes how you can use the filter modules in Azure Machine Learning Studio (classic) to transform digital data.  The modules in this group of tools for Machine Learning Studio (classic) are based on filters that were developed for digital signal processing technology.
+This article describes how you can use the filter modules in Machine Learning Studio (classic) to transform digital data.  The modules in this group of tools for Machine Learning Studio (classic) are based on filters that were developed for digital signal processing technology.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

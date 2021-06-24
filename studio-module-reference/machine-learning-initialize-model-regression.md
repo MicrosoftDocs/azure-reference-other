@@ -1,6 +1,6 @@
 ---
 title: 'ML Studio (classic): Initialize Regression Models - Azure'
-description: Description of the modules in Azure Machine Learning Studio (classic) that support creation of regression models.
+description: Description of the modules in Machine Learning Studio (classic) that support creation of regression models.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -11,7 +11,7 @@ ms.author: amlstudiodocs
 ---
 # Regression modules
 
-This article describes the modules in Azure Machine Learning Studio (classic) that support creation of regression models.
+This article describes the modules in Machine Learning Studio (classic) that support creation of regression models.
 
 
 
@@ -31,11 +31,11 @@ Regression algorithms can incorporate input from multiple features, by determini
 
 First, select the regression algorithm that meets your needs and suits your data. For help, see these topics:  
   
--   [Machine learning algorithm cheat sheet for Azure Machine Learning](/azure/machine-learning/studio/algorithm-cheat-sheet)  
+-   [Machine learning algorithm cheat sheet for Machine Learning](/azure/machine-learning/studio/algorithm-cheat-sheet)  
 
     Provides a graphical decision chart to guide you through the selection process.  
   
--   [How to choose Azure Machine Learning algorithms for clustering, classification, or regression](/azure/machine-learning/studio/algorithm-choice)  
+-   [How to choose Machine Learning algorithms for clustering, classification, or regression](/azure/machine-learning/studio/algorithm-choice)  
   
      Explains in greater detail the different types of machine learning algorithms, and how they're used.  
 

@@ -20,7 +20,7 @@ Category: [Data Input and Output](data-input-and-output.md)
 
 ## Module overview
 
-This article describes how to use the  [Export Data](export-data.md) module in Azure Machine Learning Studio (classic), to save results, intermediate data, and working data from your experiments into cloud storage destinations outside Azure Machine Learning Studio (classic).
+This article describes how to use the  [Export Data](export-data.md) module in Machine Learning Studio (classic), to save results, intermediate data, and working data from your experiments into cloud storage destinations outside Machine Learning Studio (classic).
 
 This module supports exporting or saving your data to the following cloud data services:
 
@@ -40,13 +40,13 @@ This module supports exporting or saving your data to the following cloud data s
 
 - You can download the results of any module that outputs a dataset by right-clicking the output and selecting **Download dataset**. By default, the data is exported in CSV format.
 
-- **Download a module definition or experiment graph:** A new PowerShell library lets you download the complete metadata for your experiment, or the details for a particular module. The PowerShell for Azure Machine Learning library is an experimental release, but has many useful cmdlets:
+- **Download a module definition or experiment graph:** A new PowerShell library lets you download the complete metadata for your experiment, or the details for a particular module. The PowerShell for Machine Learning library is an experimental release, but has many useful cmdlets:
 
   - `Get-AmlExperiment` lists all the experiments in a workspace.
   - `Export-AmlExperimentGraph` exports a definition of the complete experiment to a JSON file.
   - `Download-AmlExperimentNodeOutput` lets you extract the information provided on the output ports of any module.
 
-    For more information, see [PowerShell Module for Azure Machine Learning Studio (classic)](https://github.com/hning86/azuremlps).
+    For more information, see [PowerShell Module for Machine Learning Studio (classic)](https://github.com/hning86/azuremlps).
   
 ## How to configure Export Data
 
@@ -96,8 +96,6 @@ For examples of how to use the [Export Data](export-data.md) module, see the [Az
 
 This section contains implementation details, tips, and answers to frequently asked questions.
 
-> [!TIP]
-> Not sure how or where you should store your data? See this guide to common data scenarios in the data science process:  [Scenarios for advanced analytics in Azure Machine Learning](/azure/machine-learning/team-data-science-process/plan-sample-scenarios)
 
 ### Implementation details
 

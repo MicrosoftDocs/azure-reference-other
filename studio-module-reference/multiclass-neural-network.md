@@ -20,7 +20,7 @@ Category: [Machine Learning / Initialize Model / Classification](machine-learnin
 
 ## Module overview
 
-This article describes how to use the **Multiclass Neural Network** module in Azure Machine Learning Studio (classic), to create a neural network model that can be used to predict a target that has multiple values. 
+This article describes how to use the **Multiclass Neural Network** module in Machine Learning Studio (classic), to create a neural network model that can be used to predict a target that has multiple values. 
 
 For example, neural networks of this kind might be used in complex computer vision tasks, such as digit or letter recognition, document classification, and pattern recognition.
 
@@ -134,7 +134,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### <a name="bkmk_Customizing"></a> Customizing the neural network using script
 
-In Azure Machine Learning Studio (classic), you can customize the architecture of a neural network model by using the Net# language.  Customizations supported by the Net# language include:
+In Machine Learning Studio (classic), you can customize the architecture of a neural network model by using the Net# language.  Customizations supported by the Net# language include:
 
 - Specifying the number of hidden layers and the number of nodes in each layer
 - Specifying mappings between layers

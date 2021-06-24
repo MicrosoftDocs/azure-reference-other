@@ -20,7 +20,7 @@ Creates a Bayes point machine binary classification model
   
 ## Module overview  
 
-This article describes how to use the **Two-Class Bayes Point Machine** module in Azure Machine Learning Studio (classic), to create an untrained binary classification model.
+This article describes how to use the **Two-Class Bayes Point Machine** module in Machine Learning Studio (classic), to create an untrained binary classification model.
 
 The algorithm in this module uses a Bayesian approach to linear classification called the "Bayes Point Machine". This algorithm efficiently approximates the theoretically optimal Bayesian average of linear classifiers (in terms of generalization performance) by choosing one "average" classifier, the Bayes Point. Because the Bayes Point Machine is a Bayesian classification model, it is not prone to overfitting to the training data.
 
@@ -28,7 +28,7 @@ For more information, see Chris Bishop's post on the Microsoft Machine Learning 
   
 ## How to configure Two-Class Bayes Point Machine
   
-1. In Azure Machine Learning Studio (classic), add the **Two-Class Bayes Point Machine** module to your experiment. You can find the module under **Machine Learning**, **Initialize Model**, **Classification**.
+1. In Machine Learning Studio (classic), add the **Two-Class Bayes Point Machine** module to your experiment. You can find the module under **Machine Learning**, **Initialize Model**, **Classification**.
   
 2. For **Number of training iterations**, type a number to specify how often the message-passing algorithm iterates over the training data. Typically, the number of iterations should be set to a value in the range 5 – 100.
 

@@ -20,7 +20,7 @@ Category: [Machine Learning / Initialize Model / Classification](machine-learnin
 
 ## Module overview
 
-This article describes how to use the **Multiclass Decision Forest** module in Azure Machine Learning Studio (classic), to create a machine learning model based on the *decision forest* algorithm. A decision forest is an ensemble model that very rapidly builds a series of decision trees, while learning from tagged data.
+This article describes how to use the **Multiclass Decision Forest** module in Machine Learning Studio (classic), to create a machine learning model based on the *decision forest* algorithm. A decision forest is an ensemble model that very rapidly builds a series of decision trees, while learning from tagged data.
 
 ## More about decision forests
 
@@ -35,7 +35,7 @@ Decision trees have many advantages:
 + They perform integrated feature selection and classification.
 + They are resilient in the presence of noisy features.
 
-The decision forest classifier in Azure Machine Learning Studio (classic) consists of an ensemble of decision trees. Generally, ensemble models provide better coverage and accuracy than single decision trees. For more information, see [Decision trees](https://go.microsoft.com/fwlink/?LinkId=403677).
+The decision forest classifier in Machine Learning Studio (classic) consists of an ensemble of decision trees. Generally, ensemble models provide better coverage and accuracy than single decision trees. For more information, see [Decision trees](https://go.microsoft.com/fwlink/?LinkId=403677).
 
 ## How to configure Multiclass Decision Forest
 

@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Initialize Model - Azure"
-description: "Learn about the modules you can use in Azure Machine Learning Studio (classic) to define a machine learning model and set its parameters."
+description: "Learn about the modules you can use in Machine Learning Studio (classic) to define a machine learning model and set its parameters."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,7 +12,7 @@ manager: cgronlun
 ---
 # Machine Learning - Initialize Model
 
-This article describes the modules in Azure Machine Learning Studio (classic) that you can use to define a machine learning model and set its parameters. 
+This article describes the modules in Machine Learning Studio (classic) that you can use to define a machine learning model and set its parameters. 
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -35,15 +35,11 @@ Use the modules in this category to select an initial algorithm. Then, configure
 
 ## About creating models
 
-Azure Machine Learning provides many state-of-the art machine learning algorithms to help you build analytical models. Each algorithm is packaged in its own module. To create a customized model:
+Machine Learning provides many state-of-the art machine learning algorithms to help you build analytical models. Each algorithm is packaged in its own module. To create a customized model:
 
 1. Choose a model by category.
 
-    Algorithms are grouped by specific types of predictive tasks. Examples include regression, classification, and image recognition. Your first task is to identify the general category of machine learning task to perform, and then to select an algorithm. If you need help selecting an algorithm, see these resources:
- 
-    - [Machine learning algorithm cheat sheet for Machine Learning Studio (classic)](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-cheat-sheet/)
- 
-    - [Choose Azure Machine Learning algorithms for clustering, classification, or regression](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/)
+    Algorithms are grouped by specific types of predictive tasks. Examples include regression, classification, and image recognition. Your first task is to identify the general category of machine learning task to perform, and then to select an algorithm. 
  
 2. Configure algorithm parameters.
 

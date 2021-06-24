@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the **Fast Forest Quantile Regression** module in Azure Machine Learning Studio (classic), to create a regression model that can predict values for a specified number of quantiles. 
+This article describes how to use the **Fast Forest Quantile Regression** module in Machine Learning Studio (classic), to create a regression model that can predict values for a specified number of quantiles. 
 
 Quantile regression is useful if you want to understand more about the distribution of the predicted value, rather than get a single mean prediction value. This method has many applications, including:  
   
@@ -173,7 +173,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Implementation details
 
-The **Fast Forest Quantile Regression** module in Azure Machine Learning is an implementation of random forest quantile regression using decision trees. Random forests can be helpful to avoid overfitting that can occur with decision trees.  A decision tree is a binary tree-like flow chart, where at every interior node, one decides which of the two child nodes to continue to, based on the value of one of the features of the input.  
+The **Fast Forest Quantile Regression** module in Machine Learning is an implementation of random forest quantile regression using decision trees. Random forests can be helpful to avoid overfitting that can occur with decision trees.  A decision tree is a binary tree-like flow chart, where at every interior node, one decides which of the two child nodes to continue to, based on the value of one of the features of the input.  
   
 In each leaf node, a value is returned. In the interior nodes, the decision is based on the test ``x≤v`, where x is the value of the feature in the input sample and v is one of the possible values of this feature. The functions that can be produced by a regression tree are all the piece-wise constant functions.  
   
