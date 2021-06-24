@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the [Evaluate Probability Function](evaluate-probability-function.md) module in Azure Machine Learning Studio (classic), to calculate statistical measures that describe a column’s distribution, such as the Bernoulli, Pareto, or Poisson distributions.  
+This article describes how to use the [Evaluate Probability Function](evaluate-probability-function.md) module in Machine Learning Studio (classic), to calculate statistical measures that describe a column’s distribution, such as the Bernoulli, Pareto, or Poisson distributions.  
 
 To use this model, connect a dataset that contains at least one column of numerical values, and choose a probability distribution to test. The module returns a data table that contains values from the specified probability function.
 
@@ -46,7 +46,7 @@ The question of which probability distribution function to use depends on the da
 + For each analysis, you can apply a single probability distribution method. To compute a different probability distribution, add a separate instance of the module for each distribution you intend to test.
 
 
-1. Add the [Evaluate Probability Function](evaluate-probability-function.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Azure Machine Learning Studio (classic).  
+1. Add the [Evaluate Probability Function](evaluate-probability-function.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Machine Learning Studio (classic).  
 
 2. Connect a dataset that contains at least one column of numbers. 
 

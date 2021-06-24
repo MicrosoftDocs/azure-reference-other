@@ -10,7 +10,7 @@ author: xiaoharper
 ms.author: amlstudiodocs
 
 ---
-# Machine learning modules in Azure Machine Learning Studio (classic)
+# Machine learning modules in Machine Learning Studio (classic)
 
 The typical workflow for machine learning includes many phases:  
   
@@ -78,12 +78,6 @@ Machine Learning Studio (classic) can help you sift through your data to find th
   
 -   Reduce dimensionality by [grouping categorical values](group-categorical-values.md), by using [principal component analysis](principal-component-analysis.md), or by [sampling](partition-and-sample.md).  
   
-
-### Choose an appropriate algorithm
-
-The problem you are trying to solve determines both the choice of data to use in analysis, and the choice of an algorithm.  
-
-For more information, see [How to choose an algorithm in Azure Machine Learning](https://azure.microsoft.com/documentation/articles/machine-learning-algorithm-choice/).  
 
 ## Examples
 

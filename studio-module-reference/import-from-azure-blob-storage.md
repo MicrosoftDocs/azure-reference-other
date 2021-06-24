@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Import from Azure Blob Storage
 
-This topic describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to read data from Azure Blob Storage, so that you can use the data in a machine learning experiment.  
+This topic describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to read data from Azure Blob Storage, so that you can use the data in a machine learning experiment.  
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -25,7 +25,7 @@ Importing from blob storage requires that data be stored in blobs that use the *
 > [!NOTE]
 > Import data module does not support connecting to Azure Blob Storage account if "Secure Transfer Required" option is enabled. 
 
-For other restrictions on the types of blob storage supported for use with Azure Machine Learning, see the [Technical notes](#bkmk_Notes) section.
+For other restrictions on the types of blob storage supported for use with Machine Learning, see the [Technical notes](#bkmk_Notes) section.
 
 > [!TIP]
 > Need to import data in a format that's not supported? You can use Python or R. See this sample in the Azure AI Gallery: [Load non-text file from Azure Blob Storage](https://gallery.azure.ai/Experiment/Load-non-text-file-from-Azure-Blob-Storage-1) 
@@ -92,15 +92,15 @@ The following steps describe how to manually configure the import source.
     > [!NOTE]
     > If you have selected the option, **Use cached results**, any changes that you make to the files in the container do not trigger a refresh of the data in the experiment.
 
-7. For **Blob file format**, select an option that indicates the format of the data that is stored in the blob, so that Azure Machine Learning can process the data appropriately. The following formats are supported:
+7. For **Blob file format**, select an option that indicates the format of the data that is stored in the blob, so that Machine Learning can process the data appropriately. The following formats are supported:
 
-    - **CSV**: Comma-separated values (CSV) is the default storage format for exporting and importing files in Azure Machine Learning. If the data already contains a header row, be sure to select the option, **File has header row**, or the header will be treated as a data row.
+    - **CSV**: Comma-separated values (CSV) is the default storage format for exporting and importing files in Machine Learning. If the data already contains a header row, be sure to select the option, **File has header row**, or the header will be treated as a data row.
 
-        For more information about the CSV format used in Azure Machine Learning, see [Convert to CSV](convert-to-csv.md
+        For more information about the CSV format used in Machine Learning, see [Convert to CSV](convert-to-csv.md
 
     - **TSV**: Tab-separated values (TSV) is a format used by many machine learning tools. If the data already contains a header row, be sure to select the option, **File has header row**, or the header will be treated as a data row.
 
-        For more information about the TSV format used in Azure Machine Learning, see [Convert to TSV](convert-to-tsv.md).
+        For more information about the TSV format used in Machine Learning, see [Convert to TSV](convert-to-tsv.md).
 
     - **ARFF**: This format supports importing files in the format used by the Weka toolset. For more information, see [Convert to ARFF](convert-to-arff.md).
 
@@ -142,7 +142,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 There are a variety of ways to get new data and use it to regularly update an experiment. Much depends on where the source data originates, and the tools you prefer for data movement. see these articles for some ideas.
 
-- [Cheat sheet: automated data pipeline for Azure Machine Learning](/azure/machine-learning/machine-learning-automated-data-pipeline-cheat-sheet)
+- [Cheat sheet: automated data pipeline for Machine Learning](/azure/machine-learning/machine-learning-automated-data-pipeline-cheat-sheet)
 
 - [Use SSIS to move data to Blob storage](/azure/machine-learning/machine-learning-data-science-move-data-to-azure-blob-using-ssis)
 
@@ -155,9 +155,9 @@ Automating the execution of the experiment generally requires creation of a web 
 There are several possible issues:
 
 - The blob uses an unsupported format
-- The account itself was created using an option that is not yet supported by Azure Machine Learning.
+- The account itself was created using an option that is not yet supported by Machine Learning.
 
-**Unsupported format**: When reading from Azure Blob Storage, currently Azure Machine Learning requires that the blob use the *block blob* format, which lets you upload large blobs efficiently. For example, if you upload a CSV file to blob storage, the file would be stored as  a block blob. However, when you create a blob file programmatically, you might be generating a different type of blob, such as the AppendBlob type, which is not supported.
+**Unsupported format**: When reading from Azure Blob Storage, currently Machine Learning requires that the blob use the *block blob* format, which lets you upload large blobs efficiently. For example, if you upload a CSV file to blob storage, the file would be stored as  a block blob. However, when you create a blob file programmatically, you might be generating a different type of blob, such as the AppendBlob type, which is not supported.
 
 As a workaround, we recommend that you use the **block blob** type.
 
@@ -168,7 +168,7 @@ For more information, see [Understanding Block Blobs, Append Blobs, and Page Blo
 
 **Unsupported account type**: The import and export modules can read and write data only from Azure storage accounts that were created using the Classic deployment model. In other words, the new Azure Blob Storage account type that offers a hot and cool storage access tiers is not yet supported.  Generally, any Azure storage accounts that you might have created before this service option became available should not have been affected.
 
-If you need to create a new account for use with Azure Machine Learning, select **Classic** for the **Deployment model**, or use **Resource manager** and for **Account kind**, select **General purpose** rather than **Blob storage**.
+If you need to create a new account for use with Machine Learning, select **Classic** for the **Deployment model**, or use **Resource manager** and for **Account kind**, select **General purpose** rather than **Blob storage**.
 
 #### How can I avoid re-loading the same data unnecessarily?
 
@@ -178,7 +178,7 @@ If your source data changes, you can refresh the dataset and add new data by re-
 
 The **Import Data** module does not support filtering as data is being read.
 
-After you have loaded the data into Azure Machine Learning Studio (classic), you can modify the data with these tools:
+After you have loaded the data into Machine Learning Studio (classic), you can modify the data with these tools:
 
 - Use a custom R script to filter or transform data.
 
@@ -203,7 +203,7 @@ If the blob or table storage account is in a different region from the compute n
 
 #### Why are some characters in my source file not displayed correctly in the header?
 
-Azure Machine Learning generally supports UTF-8 encoding. If your source file uses another type of encoding, the characters might not be imported correctly.  
+Machine Learning generally supports UTF-8 encoding. If your source file uses another type of encoding, the characters might not be imported correctly.  
 
 If you have trouble loading data correctly, try using the option **CSV with encoding** and specify parameters for custom delimiters, the code page, and so forth.  
   
@@ -213,7 +213,7 @@ If attribute data contains quotation marks or escaped character sequences, they 
 
 #### I need to import a very large file. What is the recommended method?
 
-The size limit for uploading local datasets directly to Azure Machine Learning is 1.98 GB. With very large files, adding the dataset to your experiment account can take a long time to complete. 
+The size limit for uploading local datasets directly to Machine Learning is 1.98 GB. With very large files, adding the dataset to your experiment account can take a long time to complete. 
 
 - Estimate 10 minutes or more per GB of data. 
 - To optimize performance, use a storage account in the same region that Azure ML service uses.
@@ -233,7 +233,7 @@ To upload larger files, up to 10 GB, there are several approaches:
 
 #### I imported a CSV file using a specified encoding but the text is not displayed  correctly when I use the option to visualize. Why?
 
-For uploaded datasets, Azure Machine Learning generally supports only UTF-8. However, the **Import Data** module supports additional encoding formats. Therefore, after you have imported a file using one of these formats, you might find that the characters are not displaying correctly. The solution is to convert the encoding to UTF-8 using one of these methods: 
+For uploaded datasets, Machine Learning generally supports only UTF-8. However, the **Import Data** module supports additional encoding formats. Therefore, after you have imported a file using one of these formats, you might find that the characters are not displaying correctly. The solution is to convert the encoding to UTF-8 using one of these methods: 
 
 - Save the imported data as a dataset. (Using a saved dataset instead of the CSV data also might improve performance.)
 
@@ -251,7 +251,7 @@ For uploaded datasets, Azure Machine Learning generally supports only UTF-8. How
 
 Processing and cleaning unstructured text to fit neatly in columns is always a challenge. However, if  you need to import columns of text data, the TSV format often presents fewer difficulties, though you still need to check for excess tab characters in advance.
 
-We recommend that you review the [Text Classification template](https://gallery.azure.ai/Collection/Text-Classification-Template-1), in the [Azure AI Gallery](https://gallery.azure.ai/), to see an example of text ingestion and processing in Azure Machine Learning Studio (classic).
+We recommend that you review the [Text Classification template](https://gallery.azure.ai/Collection/Text-Classification-Template-1), in the [Azure AI Gallery](https://gallery.azure.ai/), to see an example of text ingestion and processing in Machine Learning Studio (classic).
 
 ###  Custom encoding for CSV files  
 

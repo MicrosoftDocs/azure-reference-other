@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the **Neural Network Regression** module in Azure Machine Learning Studio (classic), to create a regression model using a customizable neural network algorithm.
+This article describes how to use the **Neural Network Regression** module in Machine Learning Studio (classic), to create a regression model using a customizable neural network algorithm.
   
  Although neural networks are widely known for use in deep learning and modeling complex problems such as image recognition, they are easily adapted to regression problems. Any class of statistical models can be termed a neural network if they use adaptive weights and can approximate non-linear functions of their inputs. Thus neural network regression is suited to problems where a more traditional regression model cannot fit a solution.
   
@@ -194,7 +194,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ###  <a name="bkmk_Customizing"></a> More about Net#  
 
-In Azure Machine Learning Studio (classic), you can customize the architecture of a neural network model by using the Net# language.  Customizations supported by the Net# language include:  
+In Machine Learning Studio (classic), you can customize the architecture of a neural network model by using the Net# language.  Customizations supported by the Net# language include:  
 
 + Specifying the number of hidden layers and the number of nodes in each layer  
 + Specifying mappings between layers

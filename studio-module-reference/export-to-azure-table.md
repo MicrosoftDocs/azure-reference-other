@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Export to Azure Table
 
-This article describes how to use the **Export to Azure** option in the [Export Data](export-data.md) module in Azure Machine Learning Studio (classic).
+This article describes how to use the **Export to Azure** option in the [Export Data](export-data.md) module in Machine Learning Studio (classic).
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

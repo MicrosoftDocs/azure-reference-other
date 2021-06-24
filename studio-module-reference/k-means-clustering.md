@@ -18,7 +18,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
  
- This article describes how to use the **K-Means Clustering** module in Azure Machine Learning Studio (classic) to create an untrained K-means clustering model. 
+ This article describes how to use the **K-Means Clustering** module in Machine Learning Studio (classic) to create an untrained K-means clustering model. 
  
  K-means is one of the simplest and the best known *unsupervised* learning algorithms, and can be  used for a variety of machine learning tasks, such as [detecting abnormal data](https://msdn.microsoft.com/magazine/jj891054.aspx), clustering of text documents, and analysis of a dataset prior to using other classification or regression methods. To create a clustering model, you add this module to your experiment, connect a dataset, and set parameters such as the number of clusters you expect, the distance metric to use in creating the clusters, and so forth. 
   
@@ -28,7 +28,7 @@ ms.author: amlstudiodocs
  + If your data has no label, the algorithm creates clusters representing possible categories, based solely on the data.  
   
 > [!TIP]
-> If your training data has labels, consider using one of the supervised [classification](machine-learning-initialize-model-classification.md) methods provided in Azure Machine Learning. For example, you might compare the results of clustering to the results when using one of the multiclass decision tree algorithms. 
+> If your training data has labels, consider using one of the supervised [classification](machine-learning-initialize-model-classification.md) methods provided in Machine Learning. For example, you might compare the results of clustering to the results when using one of the multiclass decision tree algorithms. 
   
 ##  Understanding k-means clustering
  
@@ -86,7 +86,7 @@ When processing the training data, the K-means algorithm begins with an initial 
   
      If you use a parameter sweep, you can specify that multiple initial seeds be created, to look for the best initial seed value. For **Number of seeds to sweep**, type the total number of random seed values to use as starting points.  
   
-6.  For **Metric**, choose the function to use for measuring the distance between cluster vectors, or between new data points and the randomly chosen centroid. Azure Machine Learning supports the following cluster distance metrics:  
+6.  For **Metric**, choose the function to use for measuring the distance between cluster vectors, or between new data points and the randomly chosen centroid. Machine Learning supports the following cluster distance metrics:  
   
     -   **Euclidean**: The Euclidean distance is commonly used as a measure of cluster scatter for K-means clustering. This metric is preferred because it minimizes the mean distance between points and the centroids.
   
@@ -186,7 +186,7 @@ For example, the following histograms show the distribution of cluster distances
 In general, you should choose a metric that maximizes the distance between data points in different classes, and minimizes distances within a class. You can use the precomputed means and other values in the **Statistics** pane to guide you in this decision.
 
 > [!TIP]
-> You can extract means and other values used in visualizations by using the [PowerShell module for Azure Machine Learning](https://github.com/hning86/azuremlps). 
+> You can extract means and other values used in visualizations by using the [PowerShell module for Machine Learning](https://github.com/hning86/azuremlps). 
 > 
 > Or use the [Execute R Script](execute-r-script.md) module to compute a custom distance matrix.   
 
@@ -211,7 +211,7 @@ In general, with clustering models, it is possible that any given configuration 
   
 ##  Examples
 
-For examples of how K-means clustering is used in Azure Machine Learning, see these experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
+For examples of how K-means clustering is used in Machine Learning, see these experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Group iris data](https://gallery.azure.ai/Experiment/a7299de725a141388f373e9d74ef2f86): Compares the results of **K-Means Clustering** and [Multiclass Logistic Regression](multiclass-logistic-regression.md) for a classification task.
   

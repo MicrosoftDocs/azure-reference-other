@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): SMOTE - Azure"
-description: Learn  how to use the SMOTE module to increase the number of underepresented cases in a dataset used for machine learning. 
+description: Learn  how to use the SMOTE module to increase the number of underrepresented cases in a dataset used for machine learning. 
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the **SMOTE** module in Azure Machine Learning Studio (classic) to increase the number of underepresented cases in a dataset used for machine learning. SMOTE is a better way of increasing the number of rare cases than simply duplicating existing cases.  
+This article describes how to use the **SMOTE** module in Machine Learning Studio (classic) to increase the number of underepresented cases in a dataset used for machine learning. SMOTE is a better way of increasing the number of rare cases than simply duplicating existing cases.  
 
  You connect the SMOTE module to a dataset that is *imbalanced*. There are many reasons why a dataset might be imbalanced: the category you are targeting might be very rare in the population, or the data might simply be difficult to collect. Typically, you use SMOTE when the *class* you want to analyze is under-represented. 
   
@@ -35,7 +35,7 @@ SMOTE takes the entire dataset as an input, but it increases the percentage of o
   
 ## Examples  
 
-We recommend that you try using **SMOTE** with a small dataset to see how it works. The following example uses the Blood Donation dataset available in Azure Machine Learning Studio (classic).
+We recommend that you try using **SMOTE** with a small dataset to see how it works. The following example uses the Blood Donation dataset available in Machine Learning Studio (classic).
   
 If you add the dataset to an experiment, and click **Visualize** on the dataset’s output, you can see that, of the 748 rows or cases in the dataset, there are 570 cases (76%) of Class 0, and 178 cases (24%) of class 1. Although this isn’t terribly imbalanced, Class 1 represents the people who donated blood, and thus these rows contain the *feature space* that you want to model.
  

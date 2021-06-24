@@ -21,11 +21,11 @@ Category: [Machine Learning / Initialize Model / Classification](machine-learnin
 
 ## Module overview
 
-This article describes how to use the **Multiclass Logistic Regression** module in Azure Machine Learning Studio (classic), to create a logistic regression model that can be used to predict multiple values.
+This article describes how to use the **Multiclass Logistic Regression** module in Machine Learning Studio (classic), to create a logistic regression model that can be used to predict multiple values.
 
 Classification using logistic regression is a supervised learning method, and therefore requires a labeled dataset. You train the model by providing the model and the labeled dataset as an input to a module such as [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to predict values for new input examples.
 
-Azure Machine Learning Studio (classic) also provides a [Two-Class Logistic Regression](two-class-logistic-regression.md) module, which is suited for classification of binary or dichotomous variables.
+Machine Learning Studio (classic) also provides a [Two-Class Logistic Regression](two-class-logistic-regression.md) module, which is suited for classification of binary or dichotomous variables.
 
 ### More about multiclass logistic regression
 
@@ -109,7 +109,7 @@ For more information on the implementation of this algorithm, see:
 
 ### Implementation details
 
-Logistic regression requires numeric variables. Therefore, when you try to use categorical columns as a variable, Azure Machine Learning converts the values to an indicator array internally.
+Logistic regression requires numeric variables. Therefore, when you try to use categorical columns as a variable, Machine Learning converts the values to an indicator array internally.
 
 For dates and times, a numeric representation is used. For more information about date time values, see [DateTime Structure .NET Framework](https://msdn.microsoft.com/library/system.datetime). If you want to handle dates and times differently we suggest that you create a derived column.  
 

@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Machine Learning Scoring - Azure"
-description: This section lists the modules provided in Azure Machine Learning Studio (classic) for scoring.
+description: This section lists the modules provided in Machine Learning Studio (classic) for scoring.
 ms.date: 03/05/2020
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning - Score
 
-This section lists the modules provided in Azure Machine Learning Studio (classic) for *scoring*.
+This section lists the modules provided in Machine Learning Studio (classic) for *scoring*.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -92,7 +92,7 @@ These examples in the [Azure AI Gallery](https://gallery.azure.ai) demonstrate t
 
 + [Learning with Counts](https://gallery.azure.ai/Experiment/Learning-with-Counts-Binary-Classification-2): Shows you how to use count-based featurization for making predictions.
 
-+ [No-code batch scoring with Logic Apps and Azure Machine Learning](https://gallery.azure.ai/Tutorial/No-code-Batch-Scoring-1): Illustrates the end-to-end process of training and scoring, automated with the Logic Apps feature of Azure App Service.
++ [No-code batch scoring with Logic Apps and Machine Learning](https://gallery.azure.ai/Tutorial/No-code-Batch-Scoring-1): Illustrates the end-to-end process of training and scoring, automated with the Logic Apps feature of Azure App Service.
 
 The following articles provide real-world examples of how you can use a machine learning model for scoring:
 

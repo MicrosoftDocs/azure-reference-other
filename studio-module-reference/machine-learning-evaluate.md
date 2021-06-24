@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Machine Learning Evaluate - Azure"
-description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use to evaluate a machine learning model."
+description: "Learn about the Machine Learning Studio (classic) modules that you can use to evaluate a machine learning model."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning - Evaluate
 
-This article describes the modules in Azure Machine Learning Studio (classic) that you can use to evaluate a machine learning model. _Model evaluation_ is performed after training is complete, to measure the accuracy of the predictions and assess model fit.
+This article describes the modules in Machine Learning Studio (classic) that you can use to evaluate a machine learning model. _Model evaluation_ is performed after training is complete, to measure the accuracy of the predictions and assess model fit.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -40,7 +40,7 @@ In general, when evaluating a model, your options depend on the type of model yo
 
 Machine Learning Studio (classic) also provides a variety of visualizations, depending on the type of model you're using, and how many classes your model is predicting. For help finding these visualizations, see [View evaluation metrics](#bkmk_ViewMetrics).
 
-Interpreting these statistics often requires a greater understanding of the particular algorithm on which the model was trained. For a good explanation of how to evaluate a model, and how to interpret the values that are returned for each measure, see [How to evaluate model performance in Azure Machine Learning](/azure/machine-learning/classic/evaluate-model-performance).
+Interpreting these statistics often requires a greater understanding of the particular algorithm on which the model was trained. For a good explanation of how to evaluate a model, and how to interpret the values that are returned for each measure, see [How to evaluate model performance in Machine Learning](/azure/machine-learning/classic/evaluate-model-performance).
 
 ## List of modules
 
@@ -67,9 +67,9 @@ The **Machine Learning - Evaluate** category includes the following modules:
 
 Interpreting the results of machine learning model evaluation is an art. It requires understanding the mathematical results, in addition to the data and the business problems. We recommend that you review these articles for an explanation of how to interpret results in different scenarios:
 
-- [Choose parameters to optimize your algorithms in Azure Machine Learning](/azure/machine-learning/classic/algorithm-parameters-optimize)
-- [Interpret model results in Azure Machine Learning](/azure/machine-learning/classic/interpret-model-results)
-- [Evaluate model performance in Azure Machine Learning](/azure/machine-learning/classic/evaluate-model-performance)
+- [Choose parameters to optimize your algorithms in Machine Learning](/azure/machine-learning/classic/algorithm-parameters-optimize)
+- [Interpret model results in Machine Learning](/azure/machine-learning/classic/interpret-model-results)
+- [Evaluate model performance in Machine Learning](/azure/machine-learning/classic/evaluate-model-performance)
 
 ## Technical notes
 
@@ -131,7 +131,7 @@ The following regression models generate a table of default metrics, along with 
 
 ### Tips for working with the data
 
-To extract the numbers without copying and pasting from the Machine Learning Studio (classic) UI, you can use the new [PowerShell library for Azure Machine Learning](https://github.com/hning86/azuremlps). You can get metadata and other information for an entire experiment, or from individual modules.
+To extract the numbers without copying and pasting from the Machine Learning Studio (classic) UI, you can use the new [PowerShell library for Machine Learning](https://github.com/hning86/azuremlps). You can get metadata and other information for an entire experiment, or from individual modules.
 
 To extract values from an **Evaluate Model** module, you must add a unique comment to the module, for easier identification. Then, use the **Download-AmlExperimentNodeOutput** cmdlet to get the metrics and their values from the visualization in JSON format.
 

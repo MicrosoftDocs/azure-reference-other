@@ -21,7 +21,7 @@ Category: [Score](machine-learning-score.md)
 
 ## Module overview  
 
-This article describes how to use the [Assign Data to Clusters](assign-data-to-clusters.md) module in Azure Machine Learning Studio (classic), to generate predictions using a clustering model that was trained using the K-Means clustering algorithm.
+This article describes how to use the [Assign Data to Clusters](assign-data-to-clusters.md) module in Machine Learning Studio (classic), to generate predictions using a clustering model that was trained using the K-Means clustering algorithm.
 
 The module returns a dataset that contains the probable assignments for each new data point. It also creates a PCA (Principal Component Analysis) graph to help you visualize the dimensionality of the clusters.
 
@@ -30,7 +30,7 @@ The module returns a dataset that contains the probable assignments for each new
 
 ## How to use Assign Data to Clusters
   
-1.  In Azure Machine Learning Studio (classic), locate a previously trained clustering model. You can create and train a clustering model by using either of these methods:  
+1.  In Machine Learning Studio (classic), locate a previously trained clustering model. You can create and train a clustering model by using either of these methods:  
   
     - Configure the K-means algorithm using the [K-Means Clustering](k-means-clustering.md) module, and then train the model using a dataset and the [Train Clustering Model](train-clustering-model.md) module.  
   

@@ -20,7 +20,7 @@ Category: [Statistical Functions](statistical-functions.md)
 
 ## Module overview
 
-This article describes how to use the **Summarize Data** module in Azure Machine Learning Studio (classic), to create a set of standard statistical measures that describe each column in the input table.
+This article describes how to use the **Summarize Data** module in Machine Learning Studio (classic), to create a set of standard statistical measures that describe each column in the input table.
 
 Such summary statistics are useful when you want to understand the characteristics of the complete dataset. For example, you might need to know:
 

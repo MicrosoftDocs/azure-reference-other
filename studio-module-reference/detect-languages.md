@@ -20,13 +20,13 @@ ms.author: amlstudiodocs
   
 ## Module Overview  
 
-This article describes how to use the **Detect Languages** module in Azure Machine Learning Studio (classic) to analyze text input and identify the language associated with each record in the input.
+This article describes how to use the **Detect Languages** module in Machine Learning Studio (classic) to analyze text input and identify the language associated with each record in the input.
 
 The language detection algorithm can identify many different languages. Just specify the string column to analyze, and the total number of languages to detect. The algorithm will analyze each row of text, and assign a probability score for each language. The language in the first result column is the language that got the highest score.
 
 ## How to configure Detect Languages
 
-1. Add the dataset containing the text you want to analyze to an experiment in Azure Machine Learning Studio (classic). The column with the text to analyze must be the string data type.
+1. Add the dataset containing the text you want to analyze to an experiment in Machine Learning Studio (classic). The column with the text to analyze must be the string data type.
 
     The datset need not contain a label column; the language detection algorithm works purely on linguistic features of the supported languages.
 
@@ -73,7 +73,7 @@ For example, the following table contains a sample analysis on test data.
 
 For a general idea of the languages that potentially can be detected, refer to [Bing Translator](https://www.bing.com/translator/).  
 
-Many more languages can be detected than Azure Machine Learning currently supports for advanced text analytics. We recommend that you use the results of **Detect Languages** to filter the results that you send to other modules that require language-specific processing.
+Many more languages can be detected than Machine Learning currently supports for advanced text analytics. We recommend that you use the results of **Detect Languages** to filter the results that you send to other modules that require language-specific processing.
 
 The underlying linguistic services are also used by the [Text Analytics ](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) service in [Azure Cognitive Services](/azure/cognitive-services/).
 

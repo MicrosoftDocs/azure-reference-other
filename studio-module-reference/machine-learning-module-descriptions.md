@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Module descriptions - Azure"
-description: An overview of all the modules included in Azure Machine Learning Studio (classic), an interactive, visual workspace to easily build and test predictive models.
+description: An overview of all the modules included in Machine Learning Studio (classic), an interactive, visual workspace to easily build and test predictive models.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning module descriptions
 
-This topic provides an overview of all the *modules* included in Azure Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models.
+This topic provides an overview of all the *modules* included in Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -35,9 +35,9 @@ Sometimes modules are updated to add new functionality, or to remove older code.
 
 For an example of how to build a complete machine learning experiment, see these tutorials:  
   
--   [Develop a predictive solution by using Azure Machine Learning](/azure/machine-learning/classic/tutorial-part1-credit-risk)  
+-   [Develop a predictive solution by using Machine Learning](/azure/machine-learning/classic/tutorial-part1-credit-risk)  
   
--   [Create a simple experiment in Azure Machine Learning Studio (classic)](/azure/machine-learning/classic/create-experiment)  
+-   [Create a simple experiment in Machine Learning Studio (classic)](/azure/machine-learning/classic/create-experiment)  
  
 ##  Module categories
 

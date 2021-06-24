@@ -13,7 +13,7 @@ ms.author: amlstudiodocs
 ---
 # Data Transformation - Learning with Counts
 
-This article describes the modules in Azure Machine Learning Studio (classic) that support count-based featurization.
+This article describes the modules in Machine Learning Studio (classic) that support count-based featurization.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -65,7 +65,7 @@ These are the steps you take to create count-based features:
  
 ## Examples
 
-In [Use Azure Machine Learning to build clickthrough prediction models](https://go.microsoft.com/fwlink/?LinkId=699305), the Microsoft Machine Learning team provides a detailed walkthrough of how to use counts in machine learning. The article compares the efficacy of count-based modeling with other methods.
+In [Use Machine Learning to build clickthrough prediction models](https://go.microsoft.com/fwlink/?LinkId=699305), the Microsoft Machine Learning team provides a detailed walkthrough of how to use counts in machine learning. The article compares the efficacy of count-based modeling with other methods.
  
 ## Technical notes
 

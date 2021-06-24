@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # IFilter interface
 
-This article describes `IFilter`, which is the interface for working with digital signal filters in Azure Machine Learning Studio (classic).
+This article describes `IFilter`, which is the interface for working with digital signal filters in Machine Learning Studio (classic).
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

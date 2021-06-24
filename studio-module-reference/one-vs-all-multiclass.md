@@ -20,7 +20,7 @@ Category: [Machine Learning / Initialize Model / Classification](machine-learnin
 
 ## Module overview
 
-This article describes how to use the **One-Vs-All Multiclass** module in Azure Machine Learning Studio (classic), to create a classification model that can predict multiple classes, using the "one vs. all" approach.
+This article describes how to use the **One-Vs-All Multiclass** module in Machine Learning Studio (classic), to create a classification model that can predict multiple classes, using the "one vs. all" approach.
 
 This module is useful for creating models that predict three or more possible outcomes, when the outcome depends on continuous or categorical predictor variables. This method also lets you use binary classification methods for issues that require multiple output classes.
 
@@ -51,7 +51,7 @@ When you combine the models, even though the training dataset might have multipl
     If you need help choosing the right algorithm, see these resources:
     
     - [Machine learning algorithm cheat sheet for Azure ML](/azure/machine-learning/studio/algorithm-cheat-sheet)  
-    - [How to choose algorithms for Azure Machine Learning Studio (classic)](/azure/machine-learning/studio/algorithm-choice)
+    - [How to choose algorithms for Machine Learning Studio (classic)](/azure/machine-learning/studio/algorithm-choice)
 
 3. Add the [Train Model](train-model.md) module to your experiment, and connect the untrained classifier that is the output of **One-Vs-All Multiclass**.
 

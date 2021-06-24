@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Data Transformation - Sample and Split
 
-This article describes the modules in Azure Machine Learning Studio (classic) that you can use to partition or sample data.
+This article describes the modules in Machine Learning Studio (classic) that you can use to partition or sample data.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
 
 ## Module overview
 
-This article explains how to use the **Extract Key Phrases from Text** module in Azure Machine Learning Studio (classic), to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.
+This article explains how to use the **Extract Key Phrases from Text** module in Machine Learning Studio (classic), to pre-process a text column. Given a column of natural language text, the module extracts one or more meaningful phrases. A phrase might be a single word, a compound noun, or a modifier plus a noun.
  
 This module is a wrapper for natural language processing APIs for key-phrase extraction. The phrases are analyzed as potentially meaningful in the context of the sentence for various reasons:
 
@@ -38,7 +38,7 @@ The **Extract Key Phrases from Text** module might return these key phrases:
 
 To extract key phrases, you must connect a dataset that has a column of text.  
   
-1. Add the **Extract Key Phrases from Text** module to your experiment in Azure Machine Learning Studio (classic). Then, connect a dataset that has at least one full-text column.  
+1. Add the **Extract Key Phrases from Text** module to your experiment in Machine Learning Studio (classic). Then, connect a dataset that has at least one full-text column.  
   
 2. Use the Column Selector to select a column of type string, from which to extract key phrases.
 
@@ -73,7 +73,7 @@ For example, the following example results are for an input dataset containing r
 
 The following example demonstrates how to use this module to extract key phrases and then build a word cloud from the phrases: [Extract Key Phrases and Show Word Cloud](https://gallery.azure.ai/Experiment/Extract-Key-Phrases-and-Show-Word-Cloud-1)
 
-See the [Azure AI Gallery](https://gallery.azure.ai/) for more examples of text processing using Azure Machine Learning.
+See the [Azure AI Gallery](https://gallery.azure.ai/) for more examples of text processing using Machine Learning.
   
 ## Technical notes
 

@@ -20,7 +20,7 @@ Category: [Machine Learning / Initialize Model / Classification](machine-learnin
 
 ## Module overview
 
-This article describes how to use the **Multiclass Decision Jungle** module in Azure Machine Learning Studio (classic), to create a machine learning model that is based on a supervised learning algorithm called *decision jungles*.
+This article describes how to use the **Multiclass Decision Jungle** module in Machine Learning Studio (classic), to create a machine learning model that is based on a supervised learning algorithm called *decision jungles*.
 
 You define the model and its parameters using this module, and then connect a labeled training data set to train the model using one of the [training modules](machine-learning-train.md). The trained model can be used to predict a target that has multiple values.
 

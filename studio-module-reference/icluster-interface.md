@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # ICluster interface
 
-This article describes `ICluster`, which is the interface for trained clustering models that is used in Azure Machine Learning Studio (classic).
+This article describes `ICluster`, which is the interface for trained clustering models that is used in Machine Learning Studio (classic).
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

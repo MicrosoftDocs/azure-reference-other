@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Export to Azure SQL Database
 
-This article describes how to use the **Export to Azure SQL Database** option in the [Export Data](export-data.md) module in Azure Machine Learning Studio (classic). This option is useful when you want to export data from your machine learning experiment to an Azure SQL Database or Azure SQL Data Warehouse. 
+This article describes how to use the **Export to Azure SQL Database** option in the [Export Data](export-data.md) module in Machine Learning Studio (classic). This option is useful when you want to export data from your machine learning experiment to an Azure SQL Database or Azure SQL Data Warehouse. 
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -77,7 +77,7 @@ For examples of how to use the [Export Data](export-data.md) module, see the [Az
 
 + [How to use Azure ML with Azure SQL Data Warehouse](https://blogs.technet.microsoft.com/machinelearning/2016/03/08/how-to-use-azure-ml-with-azure-sql-data-warehouse): Demonstrates the use of data from Azure SQL Data Warehouse to build a clustering model.
 
-+ [Use Azure Machine Learning with SQL Data Warehouse](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-integrate-azure-machine-learning/): Demonstrates how to create a regression model to predict pricing, using data in Azure SQL Data Warehouse.
++ [Use Machine Learning with SQL Data Warehouse](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-integrate-azure-machine-learning/): Demonstrates how to create a regression model to predict pricing, using data in Azure SQL Data Warehouse.
 
 ## Technical notes
 
@@ -93,9 +93,9 @@ Also, you are charged for data ingress and egress on the subscription if the com
 
 #### Why are some characters in the output data not displayed correctly
 
-Azure Machine Learning supports the UTF-8 encoding. If string columns in your database use a different encoding, the characters might not be saved correctly.
+Machine Learning supports the UTF-8 encoding. If string columns in your database use a different encoding, the characters might not be saved correctly.
 
-Also, Azure Machine Learning cannot output data types such as `money`.
+Also, Machine Learning cannot output data types such as `money`.
 
 ## Module parameters
 

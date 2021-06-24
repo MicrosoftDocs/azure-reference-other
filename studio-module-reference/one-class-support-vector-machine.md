@@ -20,7 +20,7 @@ Category: [Anomaly Detection](anomaly-detection.md)
 
 ## Module overview
 
-This article describes how to use the **One-Class Support Vector Model** module in Azure Machine Learning, to create an anomaly detection model.
+This article describes how to use the **One-Class Support Vector Model** module in Machine Learning Studio (classic), to create an anomaly detection model.
 
 This module is particularly useful in scenarios where you have a lot of "normal" data and not many cases of the anomalies you are trying to detect.  For example, if you need to detect fraudulent transactions, you might not have many examples of fraud that you could use to train a typical classification model, but you might have many examples of good transactions.
 

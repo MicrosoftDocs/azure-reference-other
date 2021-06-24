@@ -23,11 +23,11 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
 
 ## Module overview
 
-This article describes how to use the **Create R Model** module in Azure Machine Learning Studio (classic), to create an untrained model from an R script. 
+This article describes how to use the **Create R Model** module in Machine Learning Studio (classic), to create an untrained model from an R script. 
 
-You can base the model on any learner that is included in an R package in the Azure Machine Learning environment. 
+You can base the model on any learner that is included in an R package in the Machine Learning environment. 
 
-After you create the model, you can use [Train Model](train-model.md) to train the model on a dataset, like any other learner in Azure Machine Learning. The trained model can be passed to [Score Model](score-model.md) to use the model to make predictions. The trained model can then be saved, and the scoring workflow can be published as a web service.
+After you create the model, you can use [Train Model](train-model.md) to train the model on a dataset, like any other learner in Machine Learning. The trained model can be passed to [Score Model](score-model.md) to use the model to make predictions. The trained model can then be saved, and the scoring workflow can be published as a web service.
 
 > [!WARNING]
 > Currently it is not possible to pass the scored results of an R model to [Evaluate Model](evaluate-model.md) or [Cross-Validate Model](cross-validate-model.md). If you need to evaluate a model, you can write custom R script and run it using the [Execute R Script](execute-r-script.md) module.  
@@ -36,7 +36,7 @@ In addition to using the **Create R Model** to save and re-use custom R modules,
 
 ## How to configure Create R Model
 
-Use of this module requires intermediate or expert knowledge of R. The module supports use of any learner that is included in the R packages already installed in Azure Machine Learning.
+Use of this module requires intermediate or expert knowledge of R. The module supports use of any learner that is included in the R packages already installed in Machine Learning.
 
 This sample from the [Azure AI Gallery](https://gallery.azure.ai) implements a two-class Naïve Bayes classifier by using the popular `e1070` package: + [Create R Model](https://gallery.azure.ai/Experiment/Create-R-Model-3). We recommend that you copy the example to your workspace and follow along.
 
@@ -71,7 +71,7 @@ names(train.data) <- c(feature.names, "Class")
 model <- naiveBayes(Class ~ ., train.data)
 ```
 
-- The first line loads the R package, **e1071**, which contain the Naïve Bayes classifier algorithm we want to use. Since this is one of the packages pre-installed in the Azure Machine Learning environment, you don’t need to download or install the package.  
+- The first line loads the R package, **e1071**, which contain the Naïve Bayes classifier algorithm we want to use. Since this is one of the packages pre-installed in the Machine Learning environment, you don’t need to download or install the package.  
 
 - The next lines get the feature columns and the label column from the dataset, and combine them into a new R data frame that is named `train.data`:
 
@@ -172,7 +172,7 @@ def azureml_main(dataframe):
 
 After you have run the experiment, you can publish the complete experiment as a web service.
 
-For updated instructions on how to create a web service from a Studio (classic) experiment, see [Walkthrough Step 5: Deploy the Azure Machine Learning web service](/azure/machine-learning/studio/walkthrough-5-publish-web-service)
+For updated instructions on how to create a web service from a Studio (classic) experiment, see [Walkthrough Step 5: Deploy the Machine Learning web service](/azure/machine-learning/studio/walkthrough-5-publish-web-service)
 
 By default, the web service expects all input columns from the training data to be provided, including the label column. You can add an instance of [Select Columns in Dataset](select-columns-in-dataset.md) between the input data source and the [Score Model](score-model.md) module to exclude the label you’re trying to predict.
 

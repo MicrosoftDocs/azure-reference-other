@@ -20,7 +20,7 @@ Category: [Data Transformation / Sample and Split](data-transformation-sample-an
 
 ## Module overview
 
-This article describes how to use the **Principal Component Analysis** module in Azure Machine Learning Studio (classic) to reduce the dimensionality of your training data. The module analyzes your data and creates a reduced feature set that captures all the information contained in the dataset, but in a smaller number of features.
+This article describes how to use the **Principal Component Analysis** module in Machine Learning Studio (classic) to reduce the dimensionality of your training data. The module analyzes your data and creates a reduced feature set that captures all the information contained in the dataset, but in a smaller number of features.
 
 The module also creates a transformation that you can apply to new data, to achieve a similar reduction in dimensionality and compression of features, without requiring additional training.
 
@@ -30,7 +30,7 @@ Principal Component Analysis (PCA) is a popular technique in machine learning. I
 
 Added benefits of PCA are improved data visualization, and optimization of resource use by the learning algorithm.
 
-The **Principal Component Analysis** module in Azure Machine Learning Studio (classic) takes a set of feature columns in the provided dataset, and creates a projection of the feature space that has lower dimensionality. The algorithm uses randomization techniques to identify a feature subspace that captures most of the information in the complete feature matrix. Hence, the transformed data matrices capture the variance in the original data while reducing the effect of noise and minimizing the risk of overfitting.
+The **Principal Component Analysis** module in Machine Learning Studio (classic) takes a set of feature columns in the provided dataset, and creates a projection of the feature space that has lower dimensionality. The algorithm uses randomization techniques to identify a feature subspace that captures most of the information in the complete feature matrix. Hence, the transformed data matrices capture the variance in the original data while reducing the effect of noise and minimizing the risk of overfitting.
 
 For general information about principal component analysis (PCA) see this [Wikipedia article](https://wikipedia.org/wiki/Principal_component_analysis). For information about the PCA approaches used in this module, see these articles:
 

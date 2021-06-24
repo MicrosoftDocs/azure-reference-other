@@ -20,11 +20,11 @@ Category: [Machine Learning / Score](machine-learning-score.md)
 
 ## Module overview  
 
-This article describes how to use the [Apply Transformation](apply-transformation.md) module in Azure Machine Learning Studio (classic), to modify an input dataset based on a previously computed transformation.  
+This article describes how to use the [Apply Transformation](apply-transformation.md) module in Machine Learning Studio (classic), to modify an input dataset based on a previously computed transformation.  
   
-For example, if you used z-scores to normalize your training data by using the [Normalize Data](normalize-data.md) module, you would want to use the z-score value that was computed for training during the scoring phase as well. In Azure Machine Learning Studio (classic), you can do this easily by saving the normalization method as a transform, and then using [Apply Transformation](apply-transformation.md) to apply the z-score to the input data before scoring.
+For example, if you used z-scores to normalize your training data by using the [Normalize Data](normalize-data.md) module, you would want to use the z-score value that was computed for training during the scoring phase as well. In Machine Learning Studio (classic), you can do this easily by saving the normalization method as a transform, and then using [Apply Transformation](apply-transformation.md) to apply the z-score to the input data before scoring.
   
-Azure Machine Learning Studio (classic) provides support for creating and then applying many different kinds of custom transformations. For example, you might want to save and then re-use transformations that do the following:  
+Machine Learning Studio (classic) provides support for creating and then applying many different kinds of custom transformations. For example, you might want to save and then re-use transformations that do the following:  
   
 - Remove or replace missing values, using [Clean Missing Data](clean-missing-data.md)  
   

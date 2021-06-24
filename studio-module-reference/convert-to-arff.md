@@ -20,11 +20,11 @@ Category: [Data Format Conversions](data-format-conversions.md)
   
 ## Module overview  
 
-This article describes how to use the [Convert to ARFF](convert-to-arff.md) module in Azure Machine Learning Studio (classic), to convert datasets and results in Azure Machine Learning to the attribute-relation file format used by the Weka toolset. This format is known as ARFF.
+This article describes how to use the [Convert to ARFF](convert-to-arff.md) module in Machine Learning Studio (classic), to convert datasets and results the attribute-relation file format used by the Weka toolset. This format is known as ARFF.
 
 The ARFF data specification for Weka supports multiple machine learning tasks, including data preprocessing, classification, and feature selection. In this format, data is organized by entites and their attributes, and is contained in a single text file. You can find details of the Weka file format in the [Technical Notes](#bkmk_Notes) section.
 
-In general, conversion to the Weka file format is required only if you want to use both Azure Machine Learning and Weka, and intend to move your training data back and forth between them. 
+In general, conversion to the Weka file format is required only if you want to use both Machine Learning and Weka, and intend to move your training data back and forth between them. 
 
 For more information about the Weka toolset, see this Wikipedia article: [Weka (machine learning)](https://wikipedia.org/wiki/Weka_(machine_learning))
 
@@ -33,7 +33,7 @@ For more information about the Weka toolset, see this Wikipedia article: [Weka (
 
 ## How to use Convert to ARFF
 
-1.  Add the [Convert to ARFF](convert-to-arff.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Azure Machine Learning Studio (classic). 
+1.  Add the [Convert to ARFF](convert-to-arff.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Machine Learning Studio (classic). 
 
 2. Connect it to any module that outputs a dataset.   
   
@@ -85,7 +85,7 @@ For additional information about this file format, see the Weka Wiki page: [ARFF
   
 ### Current ARFF version
 
-Azure Machine Learning Studio (classic) saves ARFF files by using the ARFF 3.0 format.  
+Machine Learning Studio (classic) saves ARFF files by using the ARFF 3.0 format.  
   
 ## Expected inputs  
 

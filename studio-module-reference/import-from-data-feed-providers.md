@@ -13,7 +13,7 @@ ms.author: amlstudiodocs
 ---
 # Import from Data Feed Providers
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to import data provided in the OData format into a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to import data provided in the OData format into a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -96,7 +96,7 @@ To filter data from the feed, use statements supported by the [OData protocol](h
 
 For more examples of filter syntax, see [Using Filter Expressions in OData URIs](https://msdn.microsoft.com/library/hh169248\(v=nav.90\).aspx).
 
-Alternatively, you can get all the data, and filter it after loading it into Azure Machine Learning Studio (classic):
+Alternatively, you can get all the data, and filter it after loading it into Machine Learning Studio (classic):
 
 - Use a custom R script to get only the data you want.
 
@@ -119,7 +119,7 @@ If your source data changes, you can refresh the dataset and add new data by re-
 
 #### Why do I get an error message  “Type Decimal is not supported”?
 
-The `decimal` data type is not supported in Azure Machine Learning.  The reason is that [Import Data](import-data.md) cannot automatically perform any conversions that would result in a loss of precision.
+The `decimal` data type is not supported in Machine Learning.  The reason is that [Import Data](import-data.md) cannot automatically perform any conversions that would result in a loss of precision.
 
 For more information about supported data types, see [Module Data Types](machine-learning-module-data-types.md).
 
@@ -127,7 +127,7 @@ As a workaround, you can read the data as a string data type, and then use [Edit
 
 #### Why are some characters in the feed not displayed correctly?
 
-Azure Machine Learning supports the UTF-8 encoding. If your source uses another type of encoding, the characters might not be imported correctly.
+Machine Learning supports the UTF-8 encoding. If your source uses another type of encoding, the characters might not be imported correctly.
 
 As a workaround,  you can save the data to a CSV file in Azure table storage or Azure blob storage. Then, use the option **CSV with encoding** to specify parameters for custom delimiters, the code page, and so forth.
 

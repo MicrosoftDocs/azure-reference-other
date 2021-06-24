@@ -19,7 +19,7 @@ Category: [Text Analytics](text-analytics.md)
 
 ## Module overview
 
-This article describes how to use the **Feature Hashing** module in Azure Machine Learning Studio (classic), to transform a stream of English text into a set of features represented as integers. You can then pass this hashed feature set to a machine learning algorithm to train a text analysis model.
+This article describes how to use the **Feature Hashing** module in Machine Learning Studio (classic), to transform a stream of English text into a set of features represented as integers. You can then pass this hashed feature set to a machine learning algorithm to train a text analysis model.
 
 The feature hashing functionality provided in this module is based on the Vowpal Wabbit framework. For more information, see [Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md) or [Train Vowpal Wabbit 7-10 Model](train-vowpal-wabbit-version-7-10-model.md).
 
@@ -162,7 +162,7 @@ This section contains implementation details, tips, and answers to frequently as
 > - Use **Extract Key Phrases** to use natural language processing to extract phrases.
 > - Use **Named Entity Recognition** to identify important entities.
 > 
-> Azure Machine Learning Studio (classic) provides a [Text Classification template](https://go.microsoft.com/fwlink/?LinkId=525957) that guides you through using the **Feature Hashing** module for feature extraction.
+> Machine Learning Studio (classic) provides a [Text Classification template](https://go.microsoft.com/fwlink/?LinkId=525957) that guides you through using the **Feature Hashing** module for feature extraction.
 
 ### Implementation details
 

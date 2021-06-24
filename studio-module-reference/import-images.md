@@ -20,7 +20,7 @@ Category: [OpenCV Library Modules](opencv-library-modules.md)
 
 ## Module overview
 
-This article describes how to use the [Import Images](import-images.md) module in Azure Machine Learning Studio (classic), to get multiple images from Azure Blob storage and create an image dataset from them.
+This article describes how to use the [Import Images](import-images.md) module in Machine Learning Studio (classic), to get multiple images from Azure Blob storage and create an image dataset from them.
 
 When you use this module to load images from blob storage into your workspace, each image is converted to a series of numeric values for the red, green, and blue channels, together with the image file name.  A dataset of such images consists of multiple rows in a table, each with a different set of RGB values and corresponding image file names. For instructions about how to prepare your images and connect to blob storage, see [How to Import Images](#HowToImportImages). 
 
