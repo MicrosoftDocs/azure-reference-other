@@ -93,7 +93,6 @@ The following services use Azure diagnostics mode for their resource logs and se
 - Batch accounts
 - CDN profiles
 - Cognitive Services
-- Cosmos DB
 - Data Lake Analytics
 - DataLake Storage Gen1
 - Device Provisioning Services
@@ -126,10 +125,11 @@ The following services use Azure diagnostics mode for their resource logs and se
 - Virtual network gateways
 - VPN Gateways
 
-### Azure Diagnostics mode or resource-specific mode
+### 
 The following services use either Azure diagnostics mode or resource-specific mode for their resource logs depending on their configuration. When they use resource-specific mode, they do not send data to the AzureDiagnostics table. See [Azure resource logs](/azure/azure-monitor/platform/resource-logs) for details on this configuration.
 
 - API Management Services
+- Cosmos DB
 - Data factories (V2)
 - IoT Hub
 - Recovery Services vaults(Backup)
