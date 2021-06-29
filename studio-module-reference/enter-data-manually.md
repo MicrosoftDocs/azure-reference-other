@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the [Enter Data Manually](enter-data-manually.md) module in Azure Machine Learning Studio (classic), to create a small dataset by typing values. The dataset can have multiple columns.
+This article describes how to use the [Enter Data Manually](enter-data-manually.md) module in Machine Learning Studio (classic), to create a small dataset by typing values. The dataset can have multiple columns.
   
 This module can be helpful in scenarios such as these:  
   
@@ -35,7 +35,7 @@ This module can be helpful in scenarios such as these:
 
 ## How to use Enter Data Manually 
   
-1.  Add the [Enter Data Manually](enter-data-manually.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category in Azure Machine Learning Studio (classic). 
+1.  Add the [Enter Data Manually](enter-data-manually.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) category in Machine Learning Studio (classic). 
   
 2.  For **DataFormat**, select one of the following options. These options determine how the data that you provide should be parsed. The requirements for each format differ greatly, so be sure to read the related topics.  
   

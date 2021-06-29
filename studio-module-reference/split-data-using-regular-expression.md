@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Split Data using Regular Expression
 
-This article describes how to use the **Regular Expression Split** option in the [Split Data](split-data.md) module of Azure Machine Learning Studio (classic). This option is useful when you need to apply a filter criteria to a text column. For example, you might divide your dataset by whether a particular product is mentioned.
+This article describes how to use the **Regular Expression Split** option in the [Split Data](split-data.md) module of Machine Learning Studio (classic). This option is useful when you need to apply a filter criteria to a text column. For example, you might divide your dataset by whether a particular product is mentioned.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

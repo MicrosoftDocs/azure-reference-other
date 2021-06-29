@@ -20,7 +20,7 @@ Category: [Data Transformation / Sample and Split](data-transformation-sample-an
 
 ## Module overview
 
-This topic describes how to use the [Split Data](split-data.md) module in Azure Machine Learning Studio (classic), to divide a dataset into two distinct sets.
+This topic describes how to use the [Split Data](split-data.md) module in Machine Learning Studio (classic), to divide a dataset into two distinct sets.
 
 This module is particularly useful when you need to separate data into training and testing sets. You can customize the way that data is divided as well. Some options support randomization of data; others are tailored for a certain data type or model type.
 

@@ -19,7 +19,7 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
 
 ## Module overview
 
-This article describes how to use the [Add Columns](add-columns.md) module in Azure Machine Learning Studio (classic) to concatenate two datasets. 
+This article describes how to use the [Add Columns](add-columns.md) module in Machine Learning Studio (classic) to concatenate two datasets. 
 
 You combine all columns from the two datasets that you specify as inputs to create a single dataset. If you need to concatenate more than two datasets, use several instances of **Add Columns**.  
   

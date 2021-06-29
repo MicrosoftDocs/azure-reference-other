@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Import from Azure Table
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to import structured or semi-structured data from Azure tables into a machine learning experiment.  
+This article describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to import structured or semi-structured data from Azure tables into a machine learning experiment.  
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
@@ -38,7 +38,7 @@ If you need to edit an existing data connection, the wizard loads all previous c
 
 The following steps describe how to manually configure the import source.
 
-1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) group in the **experiment items** list in Azure Machine Learning Studio (classic).  
+1. Add the [Import Data](import-data.md) module to your experiment. You can find this module in the [Data Input and Output](data-input-and-output.md) group in the **experiment items** list in Machine Learning Studio (classic).  
 
 2. For **Data source**, select **Azure Table**.  
 
@@ -99,7 +99,7 @@ If your source data changes, you can refresh the dataset and add new data by re-
 
 The [Import Data](import-data.md) module does not support filtering as data is being read. The exception is reading from data feeds, which sometimes allow you to specify a filter condition as part of the feed URL.
 
-However, you can change or filter data after reading it into Azure Machine Learning Studio (classic):
+However, you can change or filter data after reading it into Machine Learning Studio (classic):
 
 - Use a custom R script to change or filter data.
 - Use the [Split Data](split-data.md) module with a relative expression or a regular expression to isolate the data you want, and then save it as a dataset.
@@ -113,7 +113,7 @@ If the blob or table storage account is in a different region from the compute n
 
 #### Why are some characters in my table not displayed correctly?
 
-Azure Machine Learning supports UTF-8 encoding. If your table uses another encoding, the characters might not be imported correctly.
+Machine Learning supports UTF-8 encoding. If your table uses another encoding, the characters might not be imported correctly.
 
 #### Are there any prohibited characters or characters that are changed during import?
 

@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the **Two-Class Neural Network** module in Azure Machine Learning Studio (classic), to create a neural network model that can be used to predict a target that has only two values.
+This article describes how to use the **Two-Class Neural Network** module in Machine Learning Studio (classic), to create a neural network model that can be used to predict a target that has only two values.
 
 Classification using neural networks is a supervised learning method, and therefore requires a *tagged dataset*, which includes a label column. For example, you could use this neural network model to predict binary outcomes such as whether or not a patient has a certain disease, or whether a machine is likely to fail within a specified window of time.  
 
@@ -140,7 +140,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ##  <a name="bkmk_Customizing"></a> More about Net#  
 
-In Azure Machine Learning Studio (classic), you can customize the architecture of a neural network model by using the Net# language.  Customizations supported by the Net# language include:  
+In Machine Learning Studio (classic), you can customize the architecture of a neural network model by using the Net# language.  Customizations supported by the Net# language include:  
   
 + Specifying the number of hidden layers and the number of nodes in each layer  
 + Specifying mappings between layers

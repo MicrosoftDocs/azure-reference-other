@@ -21,7 +21,7 @@ Category: [Statistical Functions](statistical-functions.md)
 
 ## Module overview
 
-This article describes how to use the [Compute Linear Correlation](compute-linear-correlation.md) module in Azure Machine Learning Studio (classic), to compute a set of Pearson correlation coefficients for each possible pair of variables in the input dataset.  
+This article describes how to use the [Compute Linear Correlation](compute-linear-correlation.md) module in Machine Learning Studio (classic), to compute a set of Pearson correlation coefficients for each possible pair of variables in the input dataset.  
   
 The Pearson correlation coefficient, sometimes called Pearson’s R test, is a statistical value that measures the linear relationship between two variables. By examining the coefficient values, you can infer something about the strength of the relationship between the two variables, and whether they are positively correlated or negatively correlated.
 
@@ -63,7 +63,7 @@ You can adjust the data type of the columns by using [Edit Metadata](edit-metada
 
 ### Step 3: Generate the coefficient
 
-1. Add the [Compute Linear Correlation](compute-linear-correlation.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Azure Machine Learning Studio (classic).
+1. Add the [Compute Linear Correlation](compute-linear-correlation.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Machine Learning Studio (classic).
 
 2. Add the dataset that you want to analyze.
 

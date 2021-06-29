@@ -20,13 +20,13 @@ Category: [Statistical Functions](statistical-functions.md)
 
 ## Module overview  
 
-This article describes how to use the [Compute Elementary Statistics](compute-elementary-statistics.md) module in Azure Machine Learning Studio (classic), to generate a summary report for your dataset that lists key statistics such as mean, standard deviation, and the range of values for each of the selected columns.  
+This article describes how to use the [Compute Elementary Statistics](compute-elementary-statistics.md) module in Machine Learning Studio (classic), to generate a summary report for your dataset that lists key statistics such as mean, standard deviation, and the range of values for each of the selected columns.  
   
  This report is useful for analyzing the central tendency, dispersion, and shape of data.  
   
 ## How to configure Compute Elementary Statistics
   
-1.  Add the [Compute Elementary Statistics](compute-elementary-statistics.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Azure Machine Learning Studio (classic).
+1.  Add the [Compute Elementary Statistics](compute-elementary-statistics.md) module to your experiment. You can find this module in the [Statistical Functions](statistical-functions.md) category in Machine Learning Studio (classic).
 
 2. Connect a dataset that contains the columns you want to analyze.
  

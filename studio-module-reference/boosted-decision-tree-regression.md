@@ -20,7 +20,7 @@ Category: [Machine Learning / Initialize Model / Regression](machine-learning-in
 
 ## Module overview  
 
-This article describes how to use the **Boosted Decision Tree Regression** module in Azure Machine Learning Studio (classic), to create an ensemble of regression trees using boosting. *Boosting* means that each tree is dependent on prior trees. The algorithm learns by fitting the residual of the trees that preceded it. Thus, boosting in a decision tree ensemble tends to improve accuracy with some small risk of less coverage.  
+This article describes how to use the **Boosted Decision Tree Regression** module in Machine Learning Studio (classic), to create an ensemble of regression trees using boosting. *Boosting* means that each tree is dependent on prior trees. The algorithm learns by fitting the residual of the trees that preceded it. Thus, boosting in a decision tree ensemble tends to improve accuracy with some small risk of less coverage.  
   
 This regression method is a supervised learning method, and therefore requires a *labeled dataset*. The label column must contain numerical values.  
 
@@ -34,7 +34,7 @@ After you have defined the model, train it by using the [Train Model](train-mode
   
 ## More about boosted regression trees  
 
-Boosting is one of several classic methods for creating ensemble models, along with bagging, random forests, and so forth.  In Azure Machine Learning Studio (classic), boosted decision trees use an efficient implementation of the MART gradient boosting algorithm. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion, using a predefined loss function to measure the error in each step and correct for it in the next. Thus the prediction model is actually an ensemble of weaker prediction models.  
+Boosting is one of several classic methods for creating ensemble models, along with bagging, random forests, and so forth.  In Machine Learning Studio (classic), boosted decision trees use an efficient implementation of the MART gradient boosting algorithm. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion, using a predefined loss function to measure the error in each step and correct for it in the next. Thus the prediction model is actually an ensemble of weaker prediction models.  
   
 In regression problems, boosting builds a series of trees in a step-wise fashion, and then selects the optimal tree using an arbitrary differentiable loss function.  
   

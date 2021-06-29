@@ -20,7 +20,7 @@ Category: [Data Transformation / Sample and Split](data-transformation-sample-an
 
 ## Module overview
 
-This article describes how to use the **Partition and Sample** module in Azure Machine Learning Studio (classic), to perform sampling on a dataset or to create partitions from your dataset.
+This article describes how to use the **Partition and Sample** module in Machine Learning Studio (classic), to perform sampling on a dataset or to create partitions from your dataset.
 
 Sampling is an important tool in machine learning because it lets you reduce the size of a dataset while maintaining the same ratio of values. This module supports several related tasks that are important in  machine learning: 
 
@@ -200,7 +200,7 @@ For examples of how this module is used, see the [Azure AI Gallery](https://gall
 
 You specify values on which to separate the data by selecting a single column to serve as the **strata column**.
 
-This module requires that the strata column is a categorical column. If you want to use a column of integer values for the strata, it is a best practice to assign a categorical type to this column. You can do this through the schema of the data before you add it to Azure Machine Learning Studio (classic), or you can update the column’s metadata by using [Edit Metadata](edit-metadata.md).
+This module requires that the strata column is a categorical column. If you want to use a column of integer values for the strata, it is a best practice to assign a categorical type to this column. You can do this through the schema of the data before you add it to Machine Learning Studio (classic), or you can update the column’s metadata by using [Edit Metadata](edit-metadata.md).
 
 Columns with continuous data (that is, numerical data with floating point values in each cell) cannot be used as strata columns. If you get an error, you can use [Group Data into Bins](group-data-into-bins.md) to bucket the values into discrete ranges, and then use [Edit Metadata](edit-metadata.md) to guarantee that the column will be treated as categorical.
 

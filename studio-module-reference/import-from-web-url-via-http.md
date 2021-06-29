@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Import from Web URL via HTTP
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to read data from a public Web page for use in a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to read data from a public Web page for use in a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -89,7 +89,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 No. That option is not supported with this data source.
 
-After reading the data into Azure Machine Learning Studio (classic), you can split the dataset, use sampling, and so forth to get just the rows you want:
+After reading the data into Machine Learning Studio (classic), you can split the dataset, use sampling, and so forth to get just the rows you want:
 
 - Write some simple R code in the [Execute R Script](execute-r-script.md) to get a portion of the data by rows or columns.
 
@@ -115,7 +115,7 @@ Before you check for empty rows, you might also want to divide the dataset by us
 
 #### Why are some characters in my source file not displayed correctly
 
-Azure Machine Learning supports the UTF-8 encoding. If your source file used another type of encoding, the characters might not be imported correctly.
+Machine Learning supports the UTF-8 encoding. If your source file used another type of encoding, the characters might not be imported correctly.
 
 ## Module parameters
 

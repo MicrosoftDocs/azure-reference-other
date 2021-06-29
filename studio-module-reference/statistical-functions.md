@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Statistical Functions - Azure"
-description: This article describes the modules in Azure Machine Learning Studio (classic) that support mathematical and statistical operations critical for machine learning.
+description: This article describes the modules in Machine Learning Studio (classic) that support mathematical and statistical operations critical for machine learning.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Statistical Functions
 
-This article describes the modules in Azure Machine Learning Studio (classic) that support mathematical and statistical operations critical for machine learning. If you need to perform tasks such as the following in your experiment, look in the **Statistical Functions** category:
+This article describes the modules in Machine Learning Studio (classic) that support mathematical and statistical operations critical for machine learning. If you need to perform tasks such as the following in your experiment, look in the **Statistical Functions** category:
 
 + Perform ad hoc computations on column values, such as rounding or using an absolute value.
 + Compute means, logarithms, and other statistics commonly used in machine learning.

@@ -20,7 +20,7 @@ Category: [OpenCV Library Modules](opencv-library-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Pretrained Cascade Image Classification** module in Azure Machine Learning Studio (classic), to detect faces in images. 
+This article describes how to use the **Pretrained Cascade Image Classification** module in Machine Learning Studio (classic), to detect faces in images. 
 
 The model is based on the [OpenCV](https://opencv.org/) library. The OpenCV Library provides a list of predefined models, each optimized to detect a particular type of object.
 
@@ -42,7 +42,7 @@ The format in which the model is stored is incompatible with the [Train Model](t
 
 ## How to configure Pretrained Cascade Image Classification
 
-The image classification model in Azure Machine Learning has already been trained using a large dataset and is optimized for a specific image type. Therefore, all you need to do is provide a set of images as a *scoring dataset*. As an output, the module generates a score that indicates whether each image contains the target image type.
+The image classification model in Machine Learning has already been trained using a large dataset and is optimized for a specific image type. Therefore, all you need to do is provide a set of images as a *scoring dataset*. As an output, the module generates a score that indicates whether each image contains the target image type.
 
 1. Prepare and import the dataset of images you plan to use in scoring. In general, all images in the dataset should be the same size.
 

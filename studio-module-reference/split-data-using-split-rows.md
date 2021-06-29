@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Split Data using Split Rows
 
-This article describes how to use the **Split Rows** option in the [Split Data](split-data.md) module of Azure Machine Learning Studio (classic). This option is particularly useful when you need to divide datasets used for training and testing, either randomly or by some criteria.
+This article describes how to use the **Split Rows** option in the [Split Data](split-data.md) module of Machine Learning Studio (classic). This option is particularly useful when you need to divide datasets used for training and testing, either randomly or by some criteria.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

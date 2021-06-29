@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the **Train Vowpal Wabbit Version 7-10** module in Azure Machine Learning Studio (classic), to create a machine learning model using an instance of Vowpal Wabbit (version 7-10).
+This article describes how to use the **Train Vowpal Wabbit Version 7-10** module in Machine Learning Studio (classic), to create a machine learning model using an instance of Vowpal Wabbit (version 7-10).
 
 To use Vowpal Wabbit for machine learning, format your input according to Vowpal Wabbit requirements, and save the data in an Azure blob. Use this module to specify Vowpal Wabbit command-line arguments.
 
@@ -28,7 +28,7 @@ When the experiment is run, an instance of Vowpal Wabbit is loaded into the expe
 To incrementally train an existing model on new data, connect a saved model to the **Pre-trained model** input, and add the new data to the other input.
 
 > [!NOTE]
-> Azure Machine Learning Studio (classic) hosts multiple versions of the Vowpal Wabbit framework. This module uses the version 7-10 of the Vowpal Wabbit framework. 
+> Machine Learning Studio (classic) hosts multiple versions of the Vowpal Wabbit framework. This module uses the version 7-10 of the Vowpal Wabbit framework. 
 > 
 >  If you need to build or score a model based on a previous version (7-4 or 7-6), use these modules: [Train Vowpal Wabbit 7-4 Model](train-vowpal-wabbit-version-7-4-model.md) and [Score Vowpal Wabbit 7-4 Model](score-vowpal-wabbit-version-7-4-model.md). 
 > 
@@ -40,7 +40,7 @@ Vowpal Wabbit (VW) is a fast, parallel machine learning framework that was devel
 
 Features of Vowpal Wabbit that are important for machine learning include continuous learning (online learning), dimensionality reduction, and interactive learning. Vowpal Wabbit is also a solution for problems when you cannot fit the model data into memory.
 
-The primary users of Vowpal Wabbit in Azure Machine Learning  are data scientists who have previously used the framework for machine learning tasks such as classification, regression, topic modeling or matrix factorization. The Azure wrapper for Vowpal Wabbit has very similar performance characteristics to the on-premise version, which means that users can continue to build models, retrain, and score using the powerful features and native performance of Vowpal Wabbit, while gaining the ability to easily publish the trained model as an operationalized service.
+The primary users of Vowpal Wabbit in Machine Learning  are data scientists who have previously used the framework for machine learning tasks such as classification, regression, topic modeling or matrix factorization. The Azure wrapper for Vowpal Wabbit has very similar performance characteristics to the on-premise version, which means that users can continue to build models, retrain, and score using the powerful features and native performance of Vowpal Wabbit, while gaining the ability to easily publish the trained model as an operationalized service.
 
 The [Feature Hashing](feature-hashing.md) module also includes functionality provided by Vowpal Wabbit, that lets you transform text datasets into binary features using a hashing algorithm.
 
@@ -135,7 +135,7 @@ Vowpal Wabbit supports incremental training by adding new data to an existing mo
 
 6.  Run the experiment.  
 
-7.  Right-click the module and select **Save as Trained Model** to preserve the updated model in your Azure Machine Learning workspace.  If you don't specify a new name, the updated model overwrites the existing saved model.
+7.  Right-click the module and select **Save as Trained Model** to preserve the updated model in your Machine Learning workspace.  If you don't specify a new name, the updated model overwrites the existing saved model.
 
 ## Examples
 
@@ -151,9 +151,9 @@ Also, see these resources:
   
      [Vowpal Wabbit Modules in AzureML](https://blogs.technet.com/b/machinelearning/archive/2014/10/02/vowpal-wabbit-modules-in-azureml.aspx)  
   
--   Video that demonstrates building and scoring a model using Vowpal Wabbit in Azure Machine Learning  
+-   Video that demonstrates building and scoring a model using Vowpal Wabbit in Machine Learning  
   
-     [Text Analytics and Vowpal Wabbit in Azure Machine Learning Studio (classic)](https://channel9.msdn.com/Blogs/Windows-Azure/Text-Analytics-and-Vowpal-Wabbit-in-Azure-ML-Studio)  
+     [Text Analytics and Vowpal Wabbit in Machine Learning Studio (classic)](https://channel9.msdn.com/Blogs/Windows-Azure/Text-Analytics-and-Vowpal-Wabbit-in-Azure-ML-Studio)  
 
 ## Technical notes
 
@@ -167,13 +167,13 @@ Vowpal Wabbit uses *online learning* techniques such as stochastic gradient desc
 
 Vowpal Wabbit converts all data to hashes, not just text data but other categorical variables. Using hashes makes lookup of regression weights more efficient, which is critical for effective stochastic gradient descent.
 
-During training, the module makes calls into a Vowpal Wabbit wrapper developed for Azure. The training data is downloaded in blocks from Azure, utilizing the high bandwidth between the store and the worker roles executing the computations, and is streamed to the VW learners. The resulting model is generally very compact due to the internal compression done by VW. The model is copied back to the experiment workspace where it can be utilized like other models in Azure Machine Learning. 
+During training, the module makes calls into a Vowpal Wabbit wrapper developed for Azure. The training data is downloaded in blocks from Azure, utilizing the high bandwidth between the store and the worker roles executing the computations, and is streamed to the VW learners. The resulting model is generally very compact due to the internal compression done by VW. The model is copied back to the experiment workspace where it can be utilized like other models in Machine Learning. 
 
 ###  <a name="bkmk_Options"></a> Supported and unsupported parameters 
 
-This section describes support for Vowpal Wabbit command line parameters in Azure Machine Learning Studio (classic). 
+This section describes support for Vowpal Wabbit command line parameters in Machine Learning Studio (classic). 
 
-You cannot use the following command-line arguments in Azure Machine Learning Studio (classic).  
+You cannot use the following command-line arguments in Machine Learning Studio (classic).  
 
 -   The input/output options specified in [Vowpal Wabbit Wiki - Command-line-arguments](https://github.com/JohnLangford/vowpal_wabbit/wiki/Command-line-arguments)
   

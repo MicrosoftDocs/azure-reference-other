@@ -18,7 +18,7 @@ Category: [Text Analytics](text-analytics.md)
   
 ## Module overview  
 
-This article explains how to use the **Extract N-Gram Features from Text** module in Azure Machine Learning Studio (classic), to *featurize* text, and extract only the most important pieces of information from long text strings.
+This article explains how to use the **Extract N-Gram Features from Text** module in Machine Learning Studio (classic), to *featurize* text, and extract only the most important pieces of information from long text strings.
   
 The module works by creating a dictionary of n-grams from a column of free text that you specify as input. The module applies various information metrics to the n-gram list to reduce data dimensionality and identify the n-grams that have the most information value.
    

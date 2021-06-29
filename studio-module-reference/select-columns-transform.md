@@ -18,7 +18,7 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
-This article describes how to use the **Select Columns Transform** module in Azure Machine Learning Studio (classic). The purpose of the **Select Columns Transform** module is to ensure that a predictable, consistent set of columns is always used in downstream machine learning operations.
+This article describes how to use the **Select Columns Transform** module in Machine Learning Studio (classic). The purpose of the **Select Columns Transform** module is to ensure that a predictable, consistent set of columns is always used in downstream machine learning operations.
 
 This module is particularly helpful for tasks such as scoring, which require specific columns. Changes in the available columns might break the experiment or change the results.
 

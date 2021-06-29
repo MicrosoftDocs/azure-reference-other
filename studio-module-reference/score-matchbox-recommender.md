@@ -20,7 +20,7 @@ Category: [Machine Learning / Score](machine-learning-score.md)
 
 ## Module overview
 
-This article describes how to use the **Score Matchbox Recommender** module in Azure Machine Learning Studio (classic), to create predictions based on a trained recommendation model, based on the Matchbox algorithm from Microsoft Research.
+This article describes how to use the **Score Matchbox Recommender** module in Machine Learning Studio (classic), to create predictions based on a trained recommendation model, based on the Matchbox algorithm from Microsoft Research.
 
 The Matchbox recommender can generate four different kinds of predictions:
 
@@ -41,9 +41,9 @@ When creating the latter three kinds of predictions, you can operate in either *
 - **Evaluation mode** operates on a reduced set of users or items that can be evaluated, and is typically used during experimentation.
 
 > [!TIP]
-> Learn everything you need to know about the end-to-end experience of building a recommendation system in this tutorial from the .NET development team. Includes sample code and discussion of how to call Azure Machine Learning from an application.
+> Learn everything you need to know about the end-to-end experience of building a recommendation system in this tutorial from the .NET development team. Includes sample code and discussion of how to call Machine Learning from an application.
 > 
-> [Building recommendation engine for .NET applications using Azure Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/)
+> [Building recommendation engine for .NET applications using Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/)
 
 ## More about the Matchbox recommender
 
@@ -351,7 +351,7 @@ If you have experimented with the Matchbox recommender and then move the model t
 
 ### Continuous update of the recommender
 
-Online updating (or continuous training) of a recommendation model is not currently supported in Azure Machine Learning. If you want to capture user responses to recommendations and use those for improving the model, we suggest retraining the complete model periodically. Incremental training is not possible, but you can apply a sliding window to the training data to ensure that data volume is minimized while using the most recent data.
+Online updating (or continuous training) of a recommendation model is not currently supported in Machine Learning. If you want to capture user responses to recommendations and use those for improving the model, we suggest retraining the complete model periodically. Incremental training is not possible, but you can apply a sliding window to the training data to ensure that data volume is minimized while using the most recent data.
 
 ## Expected inputs
 

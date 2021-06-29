@@ -14,7 +14,7 @@ ms.author: amlstudiodocs
 
 **Data Table Class**  
 
-A dataset is data that has been uploaded to Azure Machine Learning Studio (classic) so that it can be used in the modeling process.  Even if you upload data in another format, or specify a storage format such as CSV, ARFF, or TSV, the data is implicitly converted to a `DataTable` object whenever used by a module in an experiment.
+A dataset is data that has been uploaded to Machine Learning Studio (classic) so that it can be used in the modeling process.  Even if you upload data in another format, or specify a storage format such as CSV, ARFF, or TSV, the data is implicitly converted to a `DataTable` object whenever used by a module in an experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -43,7 +43,7 @@ You can get a column by calling the `GetColumn` method on the DataTable.  The `G
   
 ## Other interfaces in Studio (classic)  
 
-This section also describes the following interfaces for Azure Machine Learning:  
+This section also describes the following interfaces for Machine Learning Studio (classic):  
   
 |Type|Description|  
 |----------|-----------------|  

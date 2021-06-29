@@ -20,7 +20,7 @@ Category: [Feature Selection Modules](feature-selection-modules.md)
 
 ## Module overview
 
-This article describes how to use the **Fisher Linear Discriminant Analysis** module in Azure Machine Learning Studio (classic), to create a new feature dataset that captures the combination of features that best separates two or more classes.
+This article describes how to use the **Fisher Linear Discriminant Analysis** module in Machine Learning Studio (classic), to create a new feature dataset that captures the combination of features that best separates two or more classes.
 
 This method is often used for dimensionality reduction, because it projects a set of features onto a smaller feature space while preserving the information that discriminates between classes. This not only reduces computational costs for a given classification task, but can help prevent overfitting.
 

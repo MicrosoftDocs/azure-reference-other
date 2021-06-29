@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the **Two-Class Decision Jungle** module in Azure Machine Learning Studio (classic), to create a machine learning model that is based on a supervised ensemble learning algorithm called decision jungles.  
+This article describes how to use the **Two-Class Decision Jungle** module in Machine Learning Studio (classic), to create a machine learning model that is based on a supervised ensemble learning algorithm called decision jungles.  
   
 The **Two-Class Decision Jungle** module returns an untrained classifier. You then train this model on a labeled training data set, by using [Train Model](train-model.md) or [Tune Model Hyperparameters](tune-model-hyperparameters.md). The trained model can then be used to make predictions. 
   

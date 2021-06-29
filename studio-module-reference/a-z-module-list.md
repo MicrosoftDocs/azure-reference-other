@@ -10,7 +10,7 @@ ms.date: 04/30/2020
 ---
 # A-Z list of Machine Learning Studio (classic) modules
 
-This article provides an alphabetized list of the modules that are available in Azure Machine Learning Studio (classic).
+This article provides an alphabetized list of the modules that are available in Machine Learning Studio (classic).
 
 [!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
@@ -30,7 +30,7 @@ To find a module:
 
 - If you know the name of the module, use the [alphabetical table](#modules) as an index to quickly find a specific module or algorithm.  
 - For a list of the modules by functional category, see [Module categories and descriptions](machine-learning-module-descriptions.md).  
-- If you don't know which module you might need, see [Choose algorithms for Microsoft Azure Machine Learning](/azure/machine-learning/machine-learning-algorithm-choice/).  
+
   
 ##  <a name="modules"></a>Alphabetical table of modules
 
@@ -53,7 +53,7 @@ To find a module:
 |[Compute Linear Correlation](compute-linear-correlation.md)|Calculates the linear correlation between column values in a dataset.|
 |[Convert to ARFF](convert-to-arff.md)|Converts data input to the attribute relation file format that's used by the Weka toolset.|
 |[Convert to CSV](convert-to-csv.md)|Converts data input to a comma-separated values format.|
-|[Convert to Dataset](convert-to-dataset.md)|Converts data input to the internal dataset format that's used by Azure Machine Learning.|
+|[Convert to Dataset](convert-to-dataset.md)|Converts data input to the internal dataset format that's used by Machine Learning.|
 |[Convert to Indicator Values](convert-to-indicator-values.md)|Converts categorical values in columns to indicator values.|
 |[Convert to SVMLight](convert-to-svmlight.md)|Converts data input to the format that's used by the SVMlight framework.|
 |[Convert to TSV](convert-to-tsv.md)|Converts data input to the tab-delimited format.|
@@ -66,8 +66,8 @@ To find a module:
 |[Evaluate Model](evaluate-model.md)|Evaluates a scored classification or regression model by using standard metrics.|
 |[Evaluate Probability Function](evaluate-probability-function.md)|Fits a specified probability distribution function to a dataset.|
 |[Evaluate Recommender](evaluate-recommender.md)|Evaluates the accuracy of recommender model predictions.|
-|[Execute Python Script](execute-python-script.md)|Executes a Python script from an Azure Machine Learning experiment.|
-|[Execute R Script](execute-r-script.md)|Executes an R script from an Azure Machine Learning experiment.|
+|[Execute Python Script](execute-python-script.md)|Executes a Python script from an Machine Learning experiment.|
+|[Execute R Script](execute-r-script.md)|Executes an R script from an Machine Learning experiment.|
 |[Export Count Table](export-count-table.md)|Exports counts from a count transform.|
 |[Export Data](export-data.md)|Writes a dataset to web URLs or to various forms of cloud-based storage in Azure, such as tables, blobs, and Azure SQL databases.<br /><br />This module was formerly named **Writer**.|
 |[Extract Key Phrases from Text](extract-key-phrases-from-text.md)| Extracts key words and phrases from a text column.|

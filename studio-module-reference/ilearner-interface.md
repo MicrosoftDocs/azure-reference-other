@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # ILearner interface
 
-This article describes `iLearner`, which is the interface for trained models that is used in Azure Machine Learning Studio (classic).
+This article describes `iLearner`, which is the interface for trained models that is used in Machine Learning Studio (classic).
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -26,7 +26,7 @@ Studio (classic) uses this interface for the following functionality:
 + Gets the capabilities of the learner. These are any general properties of the learner that are not captured by the type signature of the specific learner.
 + Gets or sets the settings of the learner.The settings are unique to each learner and must be configured once before any query methods can be called on the learner.
 
-For a list of learners provided by Azure Machine Learning Studio (classic), see [Initialize Model](machine-learning-initialize-model.md).  
+For a list of learners provided by Machine Learning Studio (classic), see [Initialize Model](machine-learning-initialize-model.md).  
 
 > [!NOTE]
 > The [ICluster interface](icluster-interface.md) is also available, for clustering models only.

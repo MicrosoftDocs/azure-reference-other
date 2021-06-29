@@ -20,7 +20,7 @@ ms.author: amlstudiodocs
   
 ##  Module overview  
 
-This article describes how to use the **Two-Class Logistic Regression** module in Azure Machine Learning Studio (classic), to create a logistic regression model that can be used to predict two (and only two) outcomes. 
+This article describes how to use the **Two-Class Logistic Regression** module in Machine Learning Studio (classic), to create a logistic regression model that can be used to predict two (and only two) outcomes. 
 
 Logistic regression is a well-known statistical technique that is used for modeling many kinds of problems. This algorithm is a *supervised learning* method;  therefore, you must provide a dataset that already contains the outcomes to train the model.  
 
@@ -113,7 +113,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Usage tips
 
-Logistic regression requires numeric variables. Therefore, when you use categorical columns as variable, Azure Machine Learning converts the values to an indicator array internally.
+Logistic regression requires numeric variables. Therefore, when you use categorical columns as variable, Machine Learning converts the values to an indicator array internally.
 
 For dates and times, a numeric representation is used. (For more information about date time values, see [DateTime Structure (.NET Framework) - Remarks](https://msdn.microsoft.com/library/system.datetime\(v=vs.110\).aspx).) If you want to handle dates and times differently we suggest that you create a derived column.  
 

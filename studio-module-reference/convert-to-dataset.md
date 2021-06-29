@@ -11,7 +11,7 @@ ms.author: amlstudiodocs
 
 ---
 # Convert to Dataset
-*Converts data input to the internal Dataset format used by Microsoft Azure Machine Learning*  
+*Converts data input to the internal Dataset format used by Microsoft Machine Learning*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  
 
@@ -19,9 +19,9 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the [Convert to Dataset](convert-to-dataset.md) module in Azure Machine Learning Studio (classic), to convert any data that you might need for an experiment to the internal format used by Studio (classic).
+This article describes how to use the [Convert to Dataset](convert-to-dataset.md) module in Machine Learning Studio (classic), to convert any data that you might need for an experiment to the internal format used by Studio (classic).
   
-Conversion is not required in most cases, because Azure Machine Learning implicitly converts data to its native dataset format when any operation is performed on the data. 
+Conversion is not required in most cases, because Machine Learning implicitly converts data to its native dataset format when any operation is performed on the data. 
 
 However, saving data to the dataset format is recommended if you have performed some kind of normalization or cleaning on a set of data, and you want to ensure that the changes are used in further experiments.  
   
@@ -32,7 +32,7 @@ However, saving data to the dataset format is recommended if you have performed 
 
 We recommend that you use the [Edit Metadata](edit-metadata.md) module to prepare the dataset before using [Convert to Dataset](convert-to-dataset.md).  You can add or change column names, adjust data types, and so forth.
 
-1.  Add the [Convert to Dataset](convert-to-dataset.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Azure Machine Learning Studio (classic). 
+1.  Add the [Convert to Dataset](convert-to-dataset.md) module to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Machine Learning Studio (classic). 
 
 2. Connect it to any module that outputs a dataset.   
 
