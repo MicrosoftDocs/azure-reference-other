@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the **Two-Class Decision Forest** module in Azure Machine Learning Studio (classic), to create a machine learning model based on the decision forests algorithm.  
+This article describes how to use the **Two-Class Decision Forest** module in Machine Learning Studio (classic), to create a machine learning model based on the decision forests algorithm.  
 
 Decision forests are fast, supervised ensemble models. This module is a good choice if you want to predict a target with a maximum of two outcomes. If you are not sure how to configure a decision tree model for the best results, we recommend that you use the [Tune Model Hyperparameters](tune-model-hyperparameters.md) module to train and test multiple models. tuning iterates over multiple possibilities and finds the optimal solution for you.
 
@@ -48,7 +48,7 @@ For more information, see [Decision Forests](https://go.microsoft.com/fwlink/?Li
 
 ## How to configure Two-Class Decision Forest
   
-1.  Add the **Two-Class Decision Forest** module to your experiment in Azure Machine Learning Studio (classic), and open the **Properties** pane of the module. 
+1.  Add the **Two-Class Decision Forest** module to your experiment in Machine Learning Studio (classic), and open the **Properties** pane of the module. 
 
     You can find the module under **Machine Learning**. Expand **Initialize**, and then **Classification**.  
   

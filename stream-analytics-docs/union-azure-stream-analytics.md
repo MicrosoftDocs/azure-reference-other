@@ -15,8 +15,8 @@ ms.date: 04/22/2016
  The following are basic rules for combining the result sets of two queries by using UNION:  
   
 -   The number and the order of the columns must be the same in all queries.  
-  
--   The data types must be compatible.  
+-   The data types must be compatible.
+-   Streams must have the same partition and partition count
   
  ## Syntax  
   
@@ -48,5 +48,21 @@ SELECT TollId, ExitTime AS Time, LicensePlate
 FROM Input2 TIMESTAMP BY ExitTime  
   
 ```  
-  
+If need be, streams can be [repartitioned](/azure/stream-analytics/repartition) to match (either in the same job as below, or another one to achieve better performance):
+
+```SQL
+WITH Input1_P as (
+SELECT * FROM Input1 PARTITION BY partitionId INTO 2
+),
+
+Input2_P as (
+SELET * FROM Input2 PARTITION BY partitionId INTO 2
+)
+
+SELECT TollId, EntryTime AS Time, LicensePlate   
+FROM Input1_P TIMESTAMP BY EntryTime
+UNION  
+SELECT TollId, ExitTime AS Time, LicensePlate   
+FROM Input2_P TIMESTAMP BY ExitTime
+```
   

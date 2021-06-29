@@ -20,7 +20,7 @@ Category: [Data Transformation / Scale and Reduce](data-transformation-scale-and
 
 ## Module overview
 
-This article describes how to use the **Clip Values** module in Azure Machine Learning Studio (classic), to identify and optionally replace data values that are above or below a specified threshold. This is useful when you want to remove outliers or replace them with a mean, a constant, or other substitute value.  
+This article describes how to use the **Clip Values** module in Machine Learning Studio (classic), to identify and optionally replace data values that are above or below a specified threshold. This is useful when you want to remove outliers or replace them with a mean, a constant, or other substitute value.  
 
 You connect the module to a dataset that has the numbers you want to clip, choose the columns to work with, and then set a threshold or range of values, and a replacement method. The module can output either just the results, or the changed values appended to the original dataset.
 

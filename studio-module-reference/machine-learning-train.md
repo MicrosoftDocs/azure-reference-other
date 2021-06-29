@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Train - Azure"
-description: This article describes the modules provided in Azure Machine Learning Studio (classic) for training a machine learning model.
+description: This article describes the modules provided in Machine Learning Studio (classic) for training a machine learning model.
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning - Train
 
-This article describes the modules provided in Azure Machine Learning Studio (classic) for training a machine learning model. _Training_ is the process of analyzing input data by using the parameters of a predefined model. From this analysis, the model learns the patterns, and saves them in the form of a trained model.
+This article describes the modules provided in Machine Learning Studio (classic) for training a machine learning model. _Training_ is the process of analyzing input data by using the parameters of a predefined model. From this analysis, the model learns the patterns, and saves them in the form of a trained model.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -57,7 +57,7 @@ If you are not sure of the best parameters to use when training a model, use one
 
 If you need to retrain a production model, you can re-run the experiment at any time.
 
-You can also automate the retraining process by using web services. For a walkthrough, see [Retraining and updating Azure Machine Learning models with Azure Data Factory](https://azure.microsoft.com/blog/retraining-and-updating-azure-machine-learning-models-with-azure-data-factory/).
+You can also automate the retraining process by using web services. For a walkthrough, see [Retraining and updating Machine Learning models with Azure Data Factory](https://azure.microsoft.com/blog/retraining-and-updating-azure-machine-learning-models-with-azure-data-factory/).
 
 ### Use pretrained models
 

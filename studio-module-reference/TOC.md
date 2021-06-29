@@ -124,7 +124,7 @@
 ## [R Language Modules](r-language-modules.md)
 ### [Execute R Script](execute-r-script.md)
 ### [Create R Model](create-r-model.md)
-### [R Packages Supported by Azure Machine Learning](r-packages-supported-by-azure-machine-learning.md)
+### [R Packages Supported](r-packages-supported-by-azure-machine-learning.md)
 ## [Statistical Functions](statistical-functions.md)
 ### [Apply Math Operation](apply-math-operation.md)
 ### [Compute Elementary Statistics](compute-elementary-statistics.md)

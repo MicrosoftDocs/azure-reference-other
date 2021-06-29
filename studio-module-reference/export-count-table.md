@@ -20,7 +20,7 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 ## Module overview
 
-This article describes how to use the **Export Count Table** module in Azure Machine Learning Studio (classic). The **Export Count Table** module is provided for backward compatibility with experiments that use the deprecated Build Count Table and deprecated Count Featurizer modules.
+This article describes how to use the **Export Count Table** module in Machine Learning Studio (classic). The **Export Count Table** module is provided for backward compatibility with experiments that use the deprecated Build Count Table and deprecated Count Featurizer modules.
 
 When you use the new [Build Counting Transform](build-counting-transform.md) module to create count-based features, the module outputs both a featurized dataset and a *transform* that creates features from counts. By using the **Export Count Table** module, you can separate the count-based features output by this newer module into **count metadata** and a **count table**. These output formats were used by earlier, now deprecated modules:
 
@@ -34,7 +34,7 @@ For general information about count tables and how they are used to create featu
 
 ## How to configure Export Count Table
 
-1. In Azure Machine Learning Studio (classic), open the experiment where you want to use the imported count table.
+1. In Machine Learning Studio (classic), open the experiment where you want to use the imported count table.
 
 2. Locate the saved count transformation, and add it to the experiment.
 

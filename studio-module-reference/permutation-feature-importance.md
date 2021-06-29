@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the [Permutation Feature Importance](permutation-feature-importance.md) module in Azure Machine Learning Studio (classic), to compute a set of feature importance scores for your dataset. You use these scores to help you determine the best features to use in a model.
+This article describes how to use the [Permutation Feature Importance](permutation-feature-importance.md) module in Machine Learning Studio (classic), to compute a set of feature importance scores for your dataset. You use these scores to help you determine the best features to use in a model.
 
 In this module, feature values are randomly shuffled, one column at a time, and the performance of the model is measured before and after. You can choose one of the standard metrics provided to measure performance.
 
@@ -43,7 +43,7 @@ To generate a set of feature scores requires that you have an already trained mo
   
 5.  For **Metric for measuring performance**, select a single metric to use when computing model quality after permutation.  
   
-     Azure Machine Learning Studio (classic) supports the following metrics, depending on whether you are evaluating a classification or regression model:  
+     Machine Learning Studio (classic) supports the following metrics, depending on whether you are evaluating a classification or regression model:  
   
     -   **Classification**
     

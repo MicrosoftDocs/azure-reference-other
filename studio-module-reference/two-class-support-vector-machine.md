@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the **Two-Class Support Vector Machine** module in Azure Machine Learning Studio (classic), to create a model that is based on the support vector machine algorithm. 
+This article describes how to use the **Two-Class Support Vector Machine** module in Machine Learning Studio (classic), to create a model that is based on the support vector machine algorithm. 
 
 Support vector machines (SVMs) are a well-researched class of supervised learning methods. This particular implementation is suited to prediction of two possible outcomes, based on either continuous or categorical variables.
 

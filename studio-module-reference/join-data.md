@@ -19,13 +19,13 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the [Join Data](join-data.md) module in Azure Machine Learning Studio (classic) to merge two datasets using a database-style *join operation*.  
+This article describes how to use the [Join Data](join-data.md) module in Machine Learning Studio (classic) to merge two datasets using a database-style *join operation*.  
 
 To perform a join on two datasets, they must be related by a **single** key column. Composite keys are not supported. 
 
 ## How to configure Join Data
 
-1. In Azure Machine Learning Studio (classic), add the datasets you want to combine, and then drag the **Join Data** module into your experiment. 
+1. In Machine Learning Studio (classic), add the datasets you want to combine, and then drag the **Join Data** module into your experiment. 
 
     You can find the module in the **Data Transformation** category, under **Manipulation**.
 

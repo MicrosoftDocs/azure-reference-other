@@ -19,16 +19,16 @@ ms.author: amlstudiodocs
   
 ## Module overview  
  
-This article describes how to use the **Train Matchbox Recommender** module in Azure Machine Learning Studio (classic), to train a recommendation model. 
+This article describes how to use the **Train Matchbox Recommender** module in Machine Learning Studio (classic), to train a recommendation model. 
 
-The recommendation algorithm in Azure Machine Learning is based on the **Matchbox** model, developed by [Microsoft Research](https://research.microsoft.com/projects/). To download a paper that describes the algorithm in detail, click this link on the [Microsoft Research site](https://research.microsoft.com/pubs/79460/www09.pdf).  
+The recommendation algorithm in Machine Learning is based on the **Matchbox** model, developed by [Microsoft Research](https://research.microsoft.com/projects/). To download a paper that describes the algorithm in detail, click this link on the [Microsoft Research site](https://research.microsoft.com/pubs/79460/www09.pdf).  
 
 The **Train Matchbox Recommender** module reads a dataset of user-item-rating triples and, optionally, some user and item features. It returns a trained Matchbox recommender.  You can then use the trained model to generate recommendations, find related users, or find related items, by using the [Score Matchbox Recommender](score-matchbox-recommender.md) module.  
 
 > [!TIP]
-> Learn everything you need to know about the end-to-end experience of building a recommendation system in this tutorial from the .NET development team. Includes sample code and discussion of how to call Azure Machine Learning from an application.
+> Learn everything you need to know about the end-to-end experience of building a recommendation system in this tutorial from the .NET development team. Includes sample code and discussion of how to call Machine Learning from an application.
 > 
-> [Building recommendation engine for .NET applications using Azure Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/)
+> [Building recommendation engine for .NET applications using Machine Learning](https://blogs.msdn.microsoft.com/dotnet/2017/06/26/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/)
   
 ## More about recommendation models and the Matchbox recommender  
  
@@ -66,7 +66,7 @@ It is very important that the input data used for training contain the right typ
 
 During training, the rating values cannot all be the same. Moreover, if numeric, the difference between the minimum and the maximum rating values must be less than 100, and ideally not greater than 20.  
 
-The **Restaurant ratings** dataset in Azure Machine Learning Studio (classic) (click **Saved Datasets** and then **Samples**) demonstrates the expected format:
+The **Restaurant ratings** dataset in Machine Learning Studio (classic) (click **Saved Datasets** and then **Samples**) demonstrates the expected format:
 
 |userID|placeID|rating|  
 |------------|-------------|------------|  
@@ -79,7 +79,7 @@ From this sample, you can see that a single user has rated two separate restaura
 
 The dataset of **user features** must contain identifiers for users, and use the same identifiers that were provided in the first column of the users-items-ratings dataset. The remaining columns can contain any number of features that describe the users.  
   
-For an example, see the **Restaurant customer** dataset in Azure Machine Learning Studio (classic). A typical set of user features looks like this:  
+For an example, see the **Restaurant customer** dataset in Machine Learning Studio (classic). A typical set of user features looks like this:  
 
 |userID|ambience|Dress_preference|transport|smoker|  
 |------------|--------------|-----------------------|---------------|------------|  
@@ -90,7 +90,7 @@ For an example, see the **Restaurant customer** dataset in Azure Machine Learnin
 
 The dataset of item features must contain item identifiers in its first column. The remaining columns can contain any number of descriptive features for the items.  
   
-For an example, see the Restaurant feature data dataset, provided in Azure Machine Learning Studio (classic) (click **Saved Datasets** and then **Samples**). A typical set of item features (in this case, the item is a restaurant) might look like this:  
+For an example, see the Restaurant feature data dataset, provided in Machine Learning Studio (classic) (click **Saved Datasets** and then **Samples**). A typical set of item features (in this case, the item is a restaurant) might look like this:  
 
 |placeID|alcohol|Smoking_area|price|Rambience|  
 |-------------|-------------|-------------------|-----------|---------------|  
@@ -127,7 +127,7 @@ For an example, see the Restaurant feature data dataset, provided in Azure Machi
   
 ## Examples
 
-For examples of how recommendation models are used in Azure Machine Learning, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
+For examples of how recommendation models are used in Machine Learning, see these sample experiments in the [Azure AI Gallery](https://gallery.azure.ai/):  
   
 - [Movie recommender sample](https://go.microsoft.com/fwlink/?LinkId=525276): Demonstrates how to train, evaluate, and score using a recommendation model.  
   
@@ -143,7 +143,7 @@ This section contains implementation details, tips, and answers to frequently as
 
 ### Restrictions
 
-Online update (or continuous training) of a recommendation model is not currently supported in Azure Machine Learning. If you want to capture user responses to recommendations and use those for improving the model, we suggest retraining the complete model periodically. Incremental training is not possible, but you can apply a sliding window to the training data to ensure that data volume is minimized while using the most recent data.
+Online update (or continuous training) of a recommendation model is not currently supported in Machine Learning. If you want to capture user responses to recommendations and use those for improving the model, we suggest retraining the complete model periodically. Incremental training is not possible, but you can apply a sliding window to the training data to ensure that data volume is minimized while using the most recent data.
 
 ### Estimating recommender memory usage  
 

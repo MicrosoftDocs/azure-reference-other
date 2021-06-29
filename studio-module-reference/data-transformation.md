@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Data Transformation - Azure"
-description: "Learn about the modules in Azure Machine Learning Studio (classic) that you can use for data transformation."
+description: "Learn about the modules in Machine Learning Studio (classic) that you can use for data transformation."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,14 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Data Transformation
 
-This article lists the modules that are provided in Azure Machine Learning Studio (classic) for data transformation. For machine learning, *data transformation* entails some very general tasks, such as joining datasets or changing column names. But, it also includes many tasks that are specific to machine learning, such as normalization, binning and grouping, and inference of missing values.
+This article lists the modules that are provided in Machine Learning Studio (classic) for data transformation. For machine learning, *data transformation* entails some very general tasks, such as joining datasets or changing column names. But, it also includes many tasks that are specific to machine learning, such as normalization, binning and grouping, and inference of missing values.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 > [!IMPORTANT]
 > Data that you use in Machine Learning Studio (classic) is generally expected to be "tidy" before you import it to Machine Learning Studio (classic). Data preparation might include, for example, ensuring that the data uses the correct encoding and checking that the data has a consistent schema.
 > 
-> You can use Azure Machine Learning Workbench to transform and prepare all kinds of data. For examples, see [Data transformations “by example” in Machine Learning Workbench](https://blogs.technet.microsoft.com/machinelearning/2017/09/25/by-example-transformations-in-the-azure-machine-learning-workbench/).
 
 Modules for data transformation are grouped into the following task-based categories:
    

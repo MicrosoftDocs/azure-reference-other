@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview
 
-This article describes how to use the **Moving Average Filter** module in Azure Machine Learning Studio (classic), to calculate a series of one-sided or two-sided averages over a dataset, using a window length that you specify.  
+This article describes how to use the **Moving Average Filter** module in Machine Learning Studio (classic), to calculate a series of one-sided or two-sided averages over a dataset, using a window length that you specify.  
   
 After you have defined a filter that meets your needs, you can apply it to selected columns in a dataset by connecting it to the [Apply Filter](apply-filter.md) module. The module does all the calculations and replaces values within numerical columns with corresponding moving averages.  
   
@@ -56,7 +56,7 @@ In an *exponential moving average*, the averages consist of a *head* and a *tail
   
 3.  For **Type**, choose the type of moving average to apply.  
   
-    Azure Machine Learning Studio (classic) supports the following types of moving average calculations:  
+    Machine Learning Studio (classic) supports the following types of moving average calculations:  
   
      **Simple**: A simple moving average (SMA) is calculated as an unweighted rolling mean.  
   

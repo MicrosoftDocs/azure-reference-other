@@ -21,7 +21,7 @@ Category: [Data Transformation / Scale and Reduce](data-transformation-scale-and
 
 ## Module overview
 
-This article describes how to use the **Normalize Data** module in Azure Machine Learning Studio (classic), to transform a dataset through *normalization*.
+This article describes how to use the **Normalize Data** module in Machine Learning Studio (classic), to transform a dataset through *normalization*.
 
 Normalization is a technique often applied as part of data preparation for machine learning. The goal of normalization is to change the values of numeric columns in the dataset to use a common scale, without distorting differences in the ranges of values or losing information. Normalization is also required for some algorithms to model the data correctly.
 
@@ -42,7 +42,7 @@ This module offers several options for transforming numeric data:
 
 You can apply only one normalization method at a time using this module. Therefore, the same normalization method is applied to all columns that you select. To use different normalization methods, use a second instance of **Normalize Data**.
 
-1. Add the **Normalize Data** module to your experiment. You can find the module in Azure Machine Learning Studio (classic), under **Data Transformation**, in the **Scale and Reduce** category.
+1. Add the **Normalize Data** module to your experiment. You can find the module in Machine Learning Studio (classic), under **Data Transformation**, in the **Scale and Reduce** category.
 
 2. Connect a dataset that contains at least one column of all numbers.
 

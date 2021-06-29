@@ -20,7 +20,7 @@ Category: [Machine Learning / Score](machine-learning-score.md)
 
 ## Module overview
 
-This article describes how to use the [Score Model](score-model.md) module in Azure Machine Learning Studio (classic), to generate predictions using a trained classification or regression model.
+This article describes how to use the [Score Model](score-model.md) module in Machine Learning Studio (classic), to generate predictions using a trained classification or regression model.
 
 ## How to use Score Model
 

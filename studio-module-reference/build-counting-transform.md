@@ -20,7 +20,7 @@ Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
 ## Module overview
 
-This article describes how to use the **Build Counting Transform** module in Azure Machine Learning Studio (classic), to analyze training data. From this data, the module builds a *count table* as well as a set of *count-based features* that can be used in a predictive model.
+This article describes how to use the **Build Counting Transform** module in Machine Learning Studio (classic), to analyze training data. From this data, the module builds a *count table* as well as a set of *count-based features* that can be used in a predictive model.
 
 A count table contains the joint distribution of all feature columns, given a specified label column. Such statistics are useful in determining which columns have the most information value. *Count-based featurization* is useful because such features are more compact than the original training data, but capture all the most useful information. You can use the module parameters to customize how the counts are transformed into the new set of count-based features.
 
@@ -44,13 +44,13 @@ You can create a count-based feature transformation directly from a dataset, and
 
 + [Merge counts and features from multiple datasets](#bkmk_MergeCounts)
 
-    If you have already generated a count table from a previous dataset, generate counts on just the new data, or import an existing count table created in an earlier version of Azure Machine Learning. Then, merge the two sets of count tables
+    If you have already generated a count table from a previous dataset, generate counts on just the new data, or import an existing count table created in an earlier version of Machine Learning. Then, merge the two sets of count tables
 
     This process creates a new feature transformation that you can apply to a dataset, using the [Apply Transformation](apply-transformation.md) module.
 
 ### <a name="bkmk_CreateCounts"></a> Create count-based features from a dataset
 
-1. In Azure Machine Learning Studio (classic), add the **Build Counting Transform** module to your experiment. You can find the module under **Data Transformation**, in the category **Learning with Counts**.
+1. In Machine Learning Studio (classic), add the **Build Counting Transform** module to your experiment. You can find the module under **Data Transformation**, in the category **Learning with Counts**.
 
 2. Connect the dataset you want to use as the basis for our count-based features.
 
@@ -68,7 +68,7 @@ You can create a count-based feature transformation directly from a dataset, and
 
 6. Use the **Module type** option to indicate the type of data that you will be counting, based on the storage mode:
 
-    + **Dataset**: Choose this option if you are counting data that is saved as a dataset in Azure Machine Learning Studio (classic).
+    + **Dataset**: Choose this option if you are counting data that is saved as a dataset in Machine Learning Studio (classic).
 
     + **Blob**: Choose this option if your source data used to build counts is stored as a block blob in Windows Azure storage.
 
@@ -111,11 +111,11 @@ You can create a count-based feature transformation directly from a dataset, and
 
 ### <a name="bkmk_MergeCounts"></a> Merge counts and features from multiple datasets
 
-1. In Azure Machine Learning Studio (classic), add the **Build Counting Transform** module to your experiment, and connect the dataset that contains the new data you want to add.
+1. In Machine Learning Studio (classic), add the **Build Counting Transform** module to your experiment, and connect the dataset that contains the new data you want to add.
 
 2. Use the **Module type** option to indicate the source of the new data. You can merge data from different sources.
 
-    + **Dataset**: Choose this option if the new data is provided as a dataset in Azure Machine Learning Studio (classic).
+    + **Dataset**: Choose this option if the new data is provided as a dataset in Machine Learning Studio (classic).
 
     + **Blob**: Choose this option if the new data is provided as a block blob in Windows Azure storage.
 

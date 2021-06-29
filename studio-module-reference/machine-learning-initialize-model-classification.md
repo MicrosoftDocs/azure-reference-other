@@ -1,6 +1,6 @@
 ---
 title: 'ML Studio (classic): Initialize Classification Models - Azure'
-description: "Learn about the modules you can use in Azure Machine Learning Studio (classic) to create binary or multiclass classification models."
+description: "Learn about the modules you can use in Machine Learning Studio (classic) to create binary or multiclass classification models."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -11,7 +11,7 @@ ms.author: amlstudiodocs
 ---
 # Classification modules
 
-This article describes the modules in Azure Machine Learning Studio (classic) that support the creation of classification models. You can use these modules to build binary or multiclass classification models.
+This article describes the modules in Machine Learning Studio (classic) that support the creation of classification models. You can use these modules to build binary or multiclass classification models.
 
 
 
@@ -67,11 +67,11 @@ For examples of classification in action, see the [Azure AI Gallery](https://gal
 
 For help choosing an algorithm, see these articles:
 
-- [Machine learning algorithm cheat sheet for Azure Machine Learning](/azure/machine-learning/studio/algorithm-cheat-sheet)
+- [Machine learning algorithm cheat sheet for Machine Learning](/azure/machine-learning/studio/algorithm-cheat-sheet)
  
     Provides a graphical decision chart to guide you through the selection process.
  
-- [Choose Azure Machine Learning algorithms for clustering, classification, or regression](/azure/machine-learning/studio/algorithm-choice)
+- [Choose Machine Learning algorithms for clustering, classification, or regression](/azure/machine-learning/studio/algorithm-choice)
  
     Explains in greater detail the different types of machine learning algorithms and how they're used.
 

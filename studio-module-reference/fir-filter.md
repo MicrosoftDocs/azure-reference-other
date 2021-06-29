@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
 
 ## Module overview  
 
-This article describes how to use the **FIR Filter** module in Azure Machine Learning Studio (classic), to define a kind of filter called a *finite impulse response* (FIR) filter. FIR filters have many applications in signal processing, and are most commonly used in applications that require a linear-phase response. For example, a filter might be applied to  images used in healthcare to sharpen the overall image, eliminate noise, or focus on an imaged object.
+This article describes how to use the **FIR Filter** module in Machine Learning Studio (classic), to define a kind of filter called a *finite impulse response* (FIR) filter. FIR filters have many applications in signal processing, and are most commonly used in applications that require a linear-phase response. For example, a filter might be applied to  images used in healthcare to sharpen the overall image, eliminate noise, or focus on an imaged object.
 
 > [!NOTE]
 >  A filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).  
@@ -41,7 +41,7 @@ After you have defined a digital signal processing filter, you can apply the fil
   
      For a FIR filter, the minimum order is 4.  
   
-3.  For **Window**, select the shape of the data to which the filter will be applied. Azure Machine Learning supports the following types of windowing functions for use in finite impulse response filters:  
+3.  For **Window**, select the shape of the data to which the filter will be applied. Machine Learning supports the following types of windowing functions for use in finite impulse response filters:  
   
      **Hamming**: The *generalized Hamming window* provides a type of weighted averaging, which is commonly used in image processing and computer vision.  
   
@@ -124,7 +124,7 @@ The **FIR Filter** module returns filter coefficients, or tap weights, for the c
   
 The coefficients are determined by the filter, based on the parameters you enter (such as the order). If you want to specify custom coefficients, use the [User-Defined Filter](user-defined-filter.md) module.  
   
-When **Scale** is set to **True**, filter coefficients will be normalized, such that the magnitude response of the filter at the center frequency of the passband is 0. The implementation of normalization in Azure Machine Learning Studio (classic) is the same as in the **fir1** function in MATLAB.  
+When **Scale** is set to **True**, filter coefficients will be normalized, such that the magnitude response of the filter at the center frequency of the passband is 0. The implementation of normalization in Machine Learning Studio (classic) is the same as in the **fir1** function in MATLAB.  
 
 Typically, in the window design method, you design an ideal infinite impulse response (IIR) filter. The window function is applied to the waveform in the time domain, and multiplies the infinite impulse response by the window function. This results in the frequency response of the IIR filter being convolved with the frequency response of the window function. However, in the case of FIR filters, the input and filter coefficients (or tap weights) are convolved when applying the filter.
 

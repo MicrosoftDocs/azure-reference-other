@@ -19,7 +19,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the [Convert to TSV](convert-to-tsv.md) module in Azure Machine Learning Studio (classic), to convert any dataset from the internal format that is used by all Azure Machine Learning Studio (classic) modules, to a flat file in tab-separated format. 
+This article describes how to use the [Convert to TSV](convert-to-tsv.md) module in Machine Learning Studio (classic), to convert any dataset from the internal format that is used by all Machine Learning Studio (classic) modules, to a flat file in tab-separated format. 
 
 Tab-separated value (TSV) files are compatible with many external tools, including:  
   
@@ -35,7 +35,7 @@ For example, if your experiment has an intermediate dataset that you would like 
 
 Use the [Convert to TSV](convert-to-tsv.md) module whenever you need to download a dataset in tab-delimited format.  
   
-1.  Add the [Convert to TSV](convert-to-tsv.md) to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Azure Machine Learning Studio (classic). 
+1.  Add the [Convert to TSV](convert-to-tsv.md) to your experiment. You can find this module in the [Data Format Conversions](data-format-conversions.md) category in Machine Learning Studio (classic). 
   
 2.  Connect the module to another datset, or to a module that outputs a tabular dataset.
 
@@ -71,7 +71,7 @@ The TSV format is a useful alternative to the CSV format if your data contains c
   
 One problem with the tab-delimited format is that tab stops are frequently considered as white space in unstructured text. However, the IANA standard for TSV fosters clean and accurate parsing of TSV files by disallowing tabs within fields.  
   
-Note the following requirements for TSV files in Azure Machine Learning Studio (classic):  
+Note the following requirements for TSV files in Machine Learning Studio (classic):  
   
 -   The [Convert to TSV](convert-to-tsv.md) module supports the output of a single heading row, if the dataset contains column names.  
   

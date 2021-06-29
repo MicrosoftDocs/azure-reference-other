@@ -13,7 +13,7 @@ ms.author: amlstudiodocs
 ---
 # Import from Azure Cosmos DB
 
-This article describes how to use the [Import Data](import-data.md) module in Azure Machine Learning Studio (classic), to import data from Azure Cosmos DB for use in a machine learning experiment.
+This article describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to import data from Azure Cosmos DB for use in a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
   
@@ -26,7 +26,7 @@ Learn how it works: [Learn about Azure Cosmos DB](https://azure.microsoft.com/se
 + To get started with machine learning using data from Azure Cosmos DB, you must have access to an existing Azure Cosmos DB account containing a collection of related documents. 
 
 > [!NOTE]
-> The user interface in Azure Machine Learning Studio (classic) still uses the name DocumentDB in many places. Therefore, you may continue to see references to DocumentDB, even though the API has been incorporated into Azure Cosmos DB. 
+> The user interface in Machine Learning Studio (classic) still uses the name DocumentDB in many places. Therefore, you may continue to see references to DocumentDB, even though the API has been incorporated into Azure Cosmos DB. 
 
 ## How to use Import Data with Azure Cosmos DB
 
@@ -86,7 +86,7 @@ The following steps describe how to manually configure the import source.
 
     If you deselect this option, the data is read from the source each time the experiment is run, regardless of whether the data is the same or not.
 
-    Azure Machine Learning **cannot** compare the cached data against the data in your CosmosDB account. Hence, there is no way to perform incremental updates from Azure Machine Learning.
+    Machine Learning **cannot** compare the cached data against the data in your CosmosDB account. Hence, there is no way to perform incremental updates from Machine Learning.
 
     If you want to re-import only when the data changes, you must define that logic in another application, such as Azure Data Factory. For more information, see [Move data to and from Azure Cosmos DB using Azure Data Factory](/azure/data-factory/v1/data-factory-azure-documentdb-connector).
 
@@ -96,7 +96,7 @@ The following steps describe how to manually configure the import source.
 
 After you have run the module or experiment, you can right-click the output of the module to visualize the results in tabular format.
 
-To capture a snapshot of this data in your Azure Machine Learning workspace as a dataset, you can right-click the module's output and select **Save As Dataset**. However, doing so captures only the data available at the time of import. If the data is expected to change frequently, rerun **Import Data** as needed. 
+To capture a snapshot of this data in your Machine Learning workspace as a dataset, you can right-click the module's output and select **Save As Dataset**. However, doing so captures only the data available at the time of import. If the data is expected to change frequently, rerun **Import Data** as needed. 
 
 ## Examples
 

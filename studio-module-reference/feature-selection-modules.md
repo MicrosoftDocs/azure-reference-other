@@ -1,6 +1,6 @@
 ---
 title: "ML Studio (classic): Feature Selection modules - Azure"
-description: "Learn about the Azure Machine Learning Studio (classic) modules that you can use for feature selection."
+description: "Learn about the Machine Learning Studio (classic) modules that you can use for feature selection."
 ms.date: 05/06/2019
 ms.service: "machine-learning"
 ms.subservice: "studio-classic"
@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Feature Selection modules
 
-This article describes the modules in Azure Machine Learning Studio (classic) that you can use for feature selection.
+This article describes the modules in Machine Learning Studio (classic) that you can use for feature selection.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
@@ -21,7 +21,7 @@ Feature selection is an important tool in machine learning. Machine Learning Stu
 This article covers:
 
 - [What is feature selection](#bkmk_Introduction)
-- [Feature selection modules in Azure Machine Learning](#bkmk_ModulesDescribed)
+- [Feature selection modules in Machine Learning](#bkmk_ModulesDescribed)
 - [How to use feature selection](#bkmk_howto)
 - [Algorithms that include feature selection](#LearnersWithFeatureSelection)
 

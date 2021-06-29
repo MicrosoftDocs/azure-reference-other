@@ -20,7 +20,7 @@ ms.author: amlstudiodocs
   
 ## Module overview  
 
-This article describes how to use the **IIR Filter** module in Azure Machine Learning Studio (classic), to create an *infinite impulse response* (IIR) filter. 
+This article describes how to use the **IIR Filter** module in Machine Learning Studio (classic), to create an *infinite impulse response* (IIR) filter. 
 
 Filters are an important tool in digital signal processing, and are used to improve the results of image or voice recognition. In general, a filter is a transfer function that takes an input signal and creates an output signal based on the filter characteristics. For more general information about the user of filters in digital signal processing, see [Filter](data-transformation-filter.md).
 
@@ -48,7 +48,7 @@ After you have defined a filter that meets your needs, you can apply the filter 
   
      For an IIR filter, the minimum order is 4.  
   
-3.  For **Filter kind**, choose the algorithm that is used to compute filter coefficients. The *filter kind* designates the mathematical transfer function that controls frequency response and frequency suppression. Azure Machine Learning supports these kinds of filters commonly used in digital signal processing:  
+3.  For **Filter kind**, choose the algorithm that is used to compute filter coefficients. The *filter kind* designates the mathematical transfer function that controls frequency response and frequency suppression. Machine Learning supports these kinds of filters commonly used in digital signal processing:  
   
      **Butterworth**: A Butterworth filter is also called a *maximally flat magnitude filter* because it constrains the response (change in signal) in the passband and the stopband.  
   

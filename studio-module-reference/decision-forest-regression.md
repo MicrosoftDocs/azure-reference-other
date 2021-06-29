@@ -19,7 +19,7 @@ Category: [Initialize Model - Regression](machine-learning-initialize-model-regr
 
 ## Module overview
 
-This article describes how to use the **Decision Forest Regression** module in Azure Machine Learning Studio (classic), to create a regression model based on an ensemble of decision trees.
+This article describes how to use the **Decision Forest Regression** module in Machine Learning Studio (classic), to create a regression model based on an ensemble of decision trees.
 
 After you have configured the model, you must train the model using a labeled dataset and the [Train Model](train-model.md) module.  The trained model can then be used to make predictions. Alternatively, the untrained model can be passed to [Cross-Validate Model](cross-validate-model.md) for cross-validation against a labeled data set.
 

@@ -21,7 +21,7 @@ Category: [Text Analytics](text-analytics.md)
 
 ## Module overview
 
-This article describes how to use the **Latent Dirichlet Allocation** module in Azure Machine Learning Studio (classic), to group otherwise unclassified text into a number of categories. Latent Dirichlet Allocation (LDA) is often used in natural language processing (NLP) to find texts that are similar. Another common term is *topic modeling*.
+This article describes how to use the **Latent Dirichlet Allocation** module in Machine Learning Studio (classic), to group otherwise unclassified text into a number of categories. Latent Dirichlet Allocation (LDA) is often used in natural language processing (NLP) to find texts that are similar. Another common term is *topic modeling*.
 
 This module takes a column of text, and generates these outputs:
 
@@ -133,7 +133,7 @@ Qualitative measures can also be useful for assessing the results. To evaluate t
 + Diversity - Can the model discriminate between similar items when required for the business problem?
 + Scalability - Does it work on a wide range of text categories or only on a narrow target domain?
 
-The accuracy of models based on LDA can often be improved by using natural language processing to clean, summarize and simplify, or categorize text. For example, the following techniques, all supported in Azure Machine Learning, can improve classification accuracy:
+The accuracy of models based on LDA can often be improved by using natural language processing to clean, summarize and simplify, or categorize text. For example, the following techniques, all supported in Machine Learning, can improve classification accuracy:
 
 + Stop word removal
 
@@ -157,7 +157,7 @@ For details and an example based on customer review text, see [Understanding LDA
 
 ### <a name="bkmk_Understanding"></a>Example of LDA results
 
-To illustrate how the **Latent Dirichlet Allocation** module works, the following example applies LDA with the default settings to the Book Review dataset provided in Azure Machine Learning Studio (classic).
+To illustrate how the **Latent Dirichlet Allocation** module works, the following example applies LDA with the default settings to the Book Review dataset provided in Machine Learning Studio (classic).
 
 #### Source dataset
 

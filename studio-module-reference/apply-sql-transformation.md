@@ -20,7 +20,7 @@ Category: [Data Transformation / Manipulation](data-transformation-manipulation.
 
 ## Module overview  
 
-This article describes how to use the **Apply SQL Transformation** module in Azure Machine Learning Studio (classic), to specify a SQL query on an input dataset or datasets. 
+This article describes how to use the **Apply SQL Transformation** module in Machine Learning Studio (classic), to specify a SQL query on an input dataset or datasets. 
 
 SQL is handy when you need to modify your data in complex ways, or persist the data for use in other environments. For example, using the **Apply SQL Transformation** module, you can:
   
@@ -179,7 +179,7 @@ FROM t1
 > [!WARNING]
 > The Transact-SQL string concatenation operator is not supported: [+ (String Concatenation)](https://msdn.microsoft.com/library/ms177561.aspx). For example, the expression `('city + '-' + state) AS 'Target Region'`in the example query would return 0 for all values.  
 > 
-> However, even though the operator is not supported for this data type, no error is raised in Azure Machine Learning. Be sure to verify the results of **Apply SQL Transformation** before using the resulting dataset in an experiment.  
+> However, even though the operator is not supported for this data type, no error is raised in Machine Learning. Be sure to verify the results of **Apply SQL Transformation** before using the resulting dataset in an experiment.  
 
 ### COALESCE and CASE  
 
