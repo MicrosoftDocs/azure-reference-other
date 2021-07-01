@@ -11,7 +11,7 @@ ms.date: 6/1/2021
 
 # MAApplicationHealthAlternativeVersions
 
-![Note on Desktop Analytics table not intended for direct query](../../includes/azure-monitor-reference-ma-tables.md)
+[!INCLUDE [Note on Desktop Analytics table not intended for direct query](../../includes/azure-monitor-reference-ma-tables.md)]
 
 ## Categories
 
