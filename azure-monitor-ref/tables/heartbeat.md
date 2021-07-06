@@ -41,8 +41,8 @@ ms.date: 6/1/2021
 |Category|string|Value is Direct Agent SCOM Agent or SCOM Management Server.|
 |Computer|string|Computer name|
 |ComputerEnvironment|string|Environment that hosts the computer: Azure or Non-Azure|
-|ComputerIP|string|IP address of the computer. Note that public IP is used|
-|ComputerPrivateIPs|dynamic||
+|ComputerIP|string|Public IP address of the computer.|
+|ComputerPrivateIPs|dynamic|The list of private IP addresses of the computer.|
 |IsGatewayInstalled|bool|If Log Analytics gateway is installed value is true otherwise value is false.|
 |ManagementGroupName|string|Name of Operations Manager management group.|
 |OSMajorVersion|string|Operating system major version.|
