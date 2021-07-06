@@ -125,7 +125,7 @@ The following services use Azure diagnostics mode for their resource logs and se
 - Virtual network gateways
 - VPN Gateways
 
-### 
+### Azure Diagnostics mode or resource-specific mode
 The following services use either Azure diagnostics mode or resource-specific mode for their resource logs depending on their configuration. When they use resource-specific mode, they do not send data to the AzureDiagnostics table. See [Azure resource logs](/azure/azure-monitor/platform/resource-logs) for details on this configuration.
 
 - API Management Services
