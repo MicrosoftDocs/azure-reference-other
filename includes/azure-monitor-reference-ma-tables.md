@@ -2,6 +2,7 @@
 title: "include file" 
 description: "include file" 
 services: azure-monitor
+ms.service: azure-monitor
 author: bwren
 tags: azure-service-management
 ms.topic: "include"
