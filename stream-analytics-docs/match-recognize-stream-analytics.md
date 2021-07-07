@@ -1,11 +1,11 @@
 ---
-title: MATCH_RECOGNIZE (Azure Stream Analytics - Preview)
+title: MATCH_RECOGNIZE (Azure Stream Analytics)
 description: Search for a set of events over a data stream in Stream Analytics Query Language.
 applies_to: 
   - "Azure"
 ms.service: stream-analytics
 ms.topic: reference
-ms.date: 07/21/2020
+ms.date: 07/7/2021
 ---
 
 # MATCH_RECOGNIZE (Stream Analytics)
@@ -228,6 +228,4 @@ This query matches **Normal** to any event that is filling the tank and in case 
 ## See also
 
 * [Query Language Elements](query-language-elements-azure-stream-analytics.md)
-* This feature is in preview, you can provide feedback and suggestions using [Azure Stream Analytics User voice](https://feedback.azure.com/forums/270577-stream-analytics)
-
 
