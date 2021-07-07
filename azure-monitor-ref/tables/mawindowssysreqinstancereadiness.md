@@ -11,8 +11,7 @@ ms.date: 6/1/2021
 
 # MAWindowsSysReqInstanceReadiness
 
- 
-
+[!INCLUDE [Note on Desktop Analytics table not intended for direct query](../../includes/azure-monitor-reference-ma-tables.md)]
 ## Categories
 
 - Desktop Analytics
