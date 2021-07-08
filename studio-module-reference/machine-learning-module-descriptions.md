@@ -142,14 +142,13 @@ Machine Learning Studio (classic) modules don't attempt to duplicate data integr
 
 If you need more sophisticated facilities for data manipulation and storage, see the following:
 
-+ [Azure Data Factory](/azure/data-factory/): Enterprise-ready, cloud data processing pipelines.
-+ [Azure SQL Database](/azure/sql-database/): Scalable storage, with integrated access to machine learning.
-+ [CosmosDB](/azure/cosmos-db/): NoSQL data store; import data to Machine Learning Studio (classic). 
-+ [Azure Data Lake Analytics](/azure/data-lake-analytics/): Distributed analytics on big data.
-+ [Stream Analytics](/azure/stream-analytics/): Event processing for the Internet of Things. 
-+ [Azure Text Analytics](/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related cognitive services for speech, image, and facial recognition.
-+ [Azure Databricks](/azure/azure-databricks/): Spark-based analytics platform.
-
+- [Azure Data Factory](/azure/data-factory/): Enterprise-ready, cloud data processing pipelines.
+- [Azure SQL Database](/azure/sql-database/): Scalable storage, with integrated access to machine learning.
+- [CosmosDB](/azure/cosmos-db/): NoSQL data store; import data to Machine Learning Studio (classic). 
+- [Azure Data Lake Analytics](/azure/data-lake-analytics/): Distributed analytics on big data.
+- [Stream Analytics](/azure/stream-analytics/): Event processing for the Internet of Things. 
+- [Azure Text Analytics](/azure/cognitive-services/text-analytics/): Multiple options for text processing, and related Cognitive Services for speech, image, and facial recognition.
+- [Azure Databricks](/azure/azure-databricks/): Spark-based analytics platform.
 
 ## See also
 
