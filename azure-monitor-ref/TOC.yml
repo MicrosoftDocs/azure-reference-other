@@ -186,3 +186,5 @@
     href: tables/azuredevopsauditing.md
   - name: AzureDiagnostics
     href: tables/azurediagnostics.md
+  - name: AzureMetrics
+    href: tables/azuremetrics.md
