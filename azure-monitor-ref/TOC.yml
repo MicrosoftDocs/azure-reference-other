@@ -380,3 +380,5 @@
     href: tables/kubepvinventory.md
   - name: KubeServices
     href: tables/kubeservices.md
+  - name: LAQueryLogs
+    href: tables/laquerylogs.md
