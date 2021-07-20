@@ -516,3 +516,5 @@
     href: tables/userpeeranalytics.md
   - name: VMBoundPort
     href: tables/vmboundport.md
+  - name: VMComputer
+    href: tables/vmcomputer.md
