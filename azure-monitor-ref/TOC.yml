@@ -404,3 +404,5 @@
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
   - name: MicrosoftHealthcareApisAuditLogs
     href: tables/microsofthealthcareapisauditlogs.md
+  - name: NetworkSessions
+    href: tables/networksessions.md
