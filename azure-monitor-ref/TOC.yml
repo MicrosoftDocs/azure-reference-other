@@ -426,3 +426,5 @@
     href: tables/powerbidatasetsworkspace.md
   - name: PowerBIDatasetsWorkspacePreview
     href: tables/powerbidatasetsworkspacepreview.md
+  - name: PurviewDataSensitivityLogs
+    href: tables/purviewdatasensitivitylogs.md
