@@ -386,3 +386,5 @@
     href: tables/maapplicationinstance.md
   - name: MADeviceNotEnrolled
     href: tables/madevicenotenrolled.md
+  - name: MCCEventLogs
+    href: tables/mcceventlogs.md
