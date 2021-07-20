@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # SynapseGatewayApiRequests
@@ -31,6 +31,7 @@ ms.date: 6/1/2021
 |Column|Type|Description|
 |---|---|---|
 |Category|string|The category of the log.|
+|ClientCorrelationId|string|The client correlation id of this query.|
 |CorrelationId|string|A GUID used to group together a set of related events.|
 |Identity|dynamic|A JSON blob that describes the identity of the user or application that performed the operation.|
 |Location|string|The region of the resource emitting the event.|
