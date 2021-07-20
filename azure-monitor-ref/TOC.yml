@@ -330,3 +330,5 @@
     href: tables/hdinsightsparkenvironmentevents.md
   - name: HDInsightSparkExecutorEvents
     href: tables/hdinsightsparkexecutorevents.md
+  - name: HDInsightSparkJobEvents
+    href: tables/hdinsightsparkjobevents.md
