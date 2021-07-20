@@ -514,3 +514,5 @@
     href: tables/useraccessanalytics.md
   - name: UserPeerAnalytics
     href: tables/userpeeranalytics.md
+  - name: VMBoundPort
+    href: tables/vmboundport.md
