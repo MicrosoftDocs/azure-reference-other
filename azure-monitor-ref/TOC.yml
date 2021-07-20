@@ -108,3 +108,5 @@
     href: tables/amlcomputeinstanceevent.md
   - name: AmlDataLabelEvent
     href: tables/amldatalabelevent.md
+  - name: AmlDataSetEvent
+    href: tables/amldatasetevent.md
