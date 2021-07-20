@@ -178,3 +178,5 @@
     href: tables/auditlogs.md
   - name: AWSGuardDuty
     href: tables/awsguardduty.md
+  - name: AWSVPCFlow
+    href: tables/awsvpcflow.md
