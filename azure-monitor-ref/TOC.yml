@@ -126,3 +126,5 @@
     href: tables/amlrunevent.md
   - name: AmlRunStatusChangedEvent
     href: tables/amlrunstatuschangedevent.md
+  - name: Anomalies
+    href: tables/anomalies.md
