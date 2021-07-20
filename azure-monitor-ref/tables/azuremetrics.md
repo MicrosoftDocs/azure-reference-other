@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # AzureMetrics
@@ -55,42 +55,43 @@ ms.date: 6/1/2021
 - Firewalls
 - Application Gateways
 - Public IP Addresses
-- Azure API for FHIR
 - Machine Learning
+- IoT Hub
 - Azure Monitor autoscale settings
-- Batch Accounts
 - Analysis Services
 - Workload Monitor
 - Event Grid Topics
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
-- Azure Spring Cloud
 - Desktop Virtualization Application Groups
-- Virtual machines
+- Batch Accounts
+- Desktop Virtualization Host Pools
 - Microsoft Connected Vehicle Platform
+- Microsoft Connected Cache
 - Kubernetes Services
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
-- Desktop Virtualization Host Pools
-- IoT Hub
+- Virtual machines
+- Azure Spring Cloud
 - Media Services
-- Cognitive Services
+- Azure Cache for Redis
 - Azure Databricks Services
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
 - Azure Stack HCI
 - VMware
-- Azure Cache for Redis
 - Event Grid Domains
+- Azure Blockchain Service
 - Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
 - SignalR
 - Storage Accounts
 - Key Vaults
-- Azure Blockchain Service
+- Cognitive Services
+- Azure API for FHIR
 - Service Bus
 
 
