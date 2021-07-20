@@ -597,9 +597,6 @@ ms.date: 7/20/2021
 ## Power BI Datasets
 
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
-
-## Power BI Datasets
-
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
