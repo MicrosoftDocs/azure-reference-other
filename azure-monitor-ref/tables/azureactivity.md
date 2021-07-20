@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 6/1/2021
 ## Resource types
 
 - Microsoft App Configuration
-- SQL Databases
 - SQL Servers
 - SQL Managed Instances
 - Data Share
@@ -32,9 +31,9 @@ ms.date: 6/1/2021
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Recovery Services Vaults
-- Azure Database for MySQL Servers
 - Data factories
-- API Management services
+- SQL Databases
+- Automation account
 - Logic Apps
 - Service Fabric Clusters
 - Machine Learning
@@ -42,10 +41,11 @@ ms.date: 6/1/2021
 - Azure Monitor autoscale settings
 - Azure Databricks Services
 - Azure Arc enabled Kubernetes
-- Automation account
 - Virtual Machine Scale Sets
+- API Management services
+- Azure Database for MySQL Servers
 - Azure Database for PostgreSQL Servers
-- Azure Database for PostgreSQL Flexible Servers
+- Azure Database for PostgreSQL Servers V2
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -54,8 +54,8 @@ ms.date: 6/1/2021
 - Virtual Network Gateways
 - Traffic Manager Profiles
 - Public IP Addresses
-- Azure Database for PostgreSQL Servers V2
 - Network Security Groups
+- Network Interfaces
 - Load Balancers
 - Front Doors
 - ExpressRoute Circuits
@@ -64,11 +64,11 @@ ms.date: 6/1/2021
 - Event Hubs
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
-- Network Interfaces
+- Azure Database for PostgreSQL Flexible Servers
 - System Center Virtual Machine Manager
+- Azure API for FHIR
 - Azure Stack HCI
-- VMware
-- Azure Subscription
+- Event Grid Domains
 - Default schema for a resource
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
@@ -76,8 +76,9 @@ ms.date: 6/1/2021
 - AzureML/OnlineEndpoint
 - HDInsight Clusters
 - Experiment Workspace
-- Azure Resource Group
 - Network Watcher - Connection Monitor
+- Azure Subscription
+- Microsoft Connected Vehicle Platform
 - Bot Services
 - Microsoft.Purview/accounts
 - Kubernetes Services
@@ -86,11 +87,10 @@ ms.date: 6/1/2021
 - Communication Services
 - Azure Autonomous Development Platform Account
 - App Services
-- Microsoft Connected Vehicle Platform
+- Microsoft Connected Cache
+- Azure Resource Group
 - Azure Digital Twins
 - Application Insights
-- Desktop Virtualization Application Groups
-- Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
 - Azure Data Explorer Clusters
@@ -109,7 +109,8 @@ ms.date: 6/1/2021
 - Event Grid Topics
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
-- Azure API for FHIR
+- Desktop Virtualization Application Groups
+- VMware
 - Service Bus
 
 
