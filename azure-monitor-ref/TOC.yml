@@ -480,3 +480,5 @@
     href: tables/synapseintegrationpipelineruns.md
   - name: SynapseIntegrationTriggerRuns
     href: tables/synapseintegrationtriggerruns.md
+  - name: SynapseRBACEvents
+    href: tables/synapserbacevents.md
