@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # AppPlatformLogsforSpring
@@ -38,6 +38,7 @@ ms.date: 6/1/2021
 |InstanceName|string|The instance name that emitted the log|
 |Log|string|The content of the log|
 |Logger|string|The logger from user application log|
+|MDC|string|Customized MDC field in the log|
 |Message|string|The message of the log|
 |OperationName|string|The name of the operation represented by this event|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|

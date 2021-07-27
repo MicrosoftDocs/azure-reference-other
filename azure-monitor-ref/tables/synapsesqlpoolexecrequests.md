@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # SynapseSqlPoolExecRequests
@@ -31,6 +31,7 @@ ms.date: 6/1/2021
 |Column|Type|Description|
 |---|---|---|
 |Category|string|The category of the log.|
+|ClientCorrelationId|string|The correlation set by client/user.|
 |Command|string|The SQL command of the execution requests.|
 |DatabaseId|string|The databaseId of the execution requests.|
 |EndCompileTime|datetime|The end compile time (UTC) of the execution requests.|

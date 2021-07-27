@@ -20,8 +20,6 @@
     href: tables/aaddomainservicesdirectoryserviceaccess.md
   - name: AADDomainServicesPrivilegeUse
     href: tables/aaddomainservicesprivilegeuse.md
-  - name: AADDomainServicesSystemSecurity
-    href: tables/aaddomainservicessystemsecurity.md
   - name: AADManagedIdentitySignInLogs
     href: tables/aadmanagedidentitysigninlogs.md
   - name: AADNonInteractiveUserSignInLogs
@@ -74,6 +72,8 @@
     href: tables/adfssispackageexecutiondatastatistics.md
   - name: ADPAudit
     href: tables/adpaudit.md
+  - name: ADPDiagnostics
+    href: tables/adpdiagnostics.md
   - name: ADPRequests
     href: tables/adprequests.md
   - name: ADReplicationResult
@@ -104,8 +104,26 @@
     href: tables/aewauditlogs.md
   - name: AmlComputeCpuGpuUtilization
     href: tables/amlcomputecpugpuutilization.md
+  - name: AmlComputeInstanceEvent
+    href: tables/amlcomputeinstanceevent.md
+  - name: AmlDataLabelEvent
+    href: tables/amldatalabelevent.md
+  - name: AmlDataSetEvent
+    href: tables/amldatasetevent.md
+  - name: AmlDataStoreEvent
+    href: tables/amldatastoreevent.md
+  - name: AmlDeploymentEvent
+    href: tables/amldeploymentevent.md
+  - name: AmlInferencingEvent
+    href: tables/amlinferencingevent.md
+  - name: AmlModelsEvent
+    href: tables/amlmodelsevent.md
   - name: AmlOnlineEndpointConsoleLog
     href: tables/amlonlineendpointconsolelog.md
+  - name: AmlPipelineEvent
+    href: tables/amlpipelineevent.md
+  - name: AmlRunEvent
+    href: tables/amlrunevent.md
   - name: AmlRunStatusChangedEvent
     href: tables/amlrunstatuschangedevent.md
   - name: Anomalies
@@ -136,8 +154,6 @@
     href: tables/apprequests.md
   - name: AppServiceAntivirusScanAuditLogs
     href: tables/appserviceantivirusscanauditlogs.md
-  - name: AppServiceAntivirusScanLogs
-    href: tables/appserviceantivirusscanlogs.md
   - name: AppServiceAppLogs
     href: tables/appserviceapplogs.md
   - name: AppServiceAuditLogs
@@ -160,6 +176,10 @@
     href: tables/apptraces.md
   - name: AuditLogs
     href: tables/auditlogs.md
+  - name: AWSGuardDuty
+    href: tables/awsguardduty.md
+  - name: AWSVPCFlow
+    href: tables/awsvpcflow.md
   - name: AzureActivity
     href: tables/azureactivity.md
   - name: AzureDevOpsAuditing
@@ -174,8 +194,6 @@
     href: tables/blockchainapplicationlog.md
   - name: BlockchainProxyLog
     href: tables/blockchainproxylog.md
-  - name: BoundPort
-    href: tables/boundport.md
   - name: CDBCassandraRequests
     href: tables/cdbcassandrarequests.md
   - name: CDBControlPlaneRequests
@@ -192,6 +210,8 @@
     href: tables/cdbpartitionkeystatistics.md
   - name: CDBQueryRuntimeStatistics
     href: tables/cdbqueryruntimestatistics.md
+  - name: CommonSecurityLog
+    href: tables/commonsecuritylog.md
   - name: ComputerGroup
     href: tables/computergroup.md
   - name: ConfigurationChange
@@ -242,8 +262,6 @@
     href: tables/deviceskypeheartbeat.md
   - name: DeviceSkypeSignIn
     href: tables/deviceskypesignin.md
-  - name: DHCPActivity
-    href: tables/dhcpactivity.md
   - name: DHOSCrashData
     href: tables/dhoscrashdata.md
   - name: DnsEvents
@@ -276,8 +294,6 @@
     href: tables/hdinsightambariclusteralerts.md
   - name: HDInsightAmbariSystemMetrics
     href: tables/hdinsightambarisystemmetrics.md
-  - name: HDInsightGatewayAuditLogs
-    href: tables/hdinsightgatewayauditlogs.md
   - name: HDInsightHadoopAndYarnLogs
     href: tables/hdinsighthadoopandyarnlogs.md
   - name: HDInsightHadoopAndYarnMetrics
@@ -314,8 +330,6 @@
     href: tables/hdinsightsparkenvironmentevents.md
   - name: HDInsightSparkExecutorEvents
     href: tables/hdinsightsparkexecutorevents.md
-  - name: HDInsightSparkExtraEvents
-    href: tables/hdinsightsparkextraevents.md
   - name: HDInsightSparkJobEvents
     href: tables/hdinsightsparkjobevents.md
   - name: HDInsightSparkLogs
@@ -342,8 +356,6 @@
     href: tables/huntingbookmark.md
   - name: IdentityInfo
     href: tables/identityinfo.md
-  - name: InboundConnection
-    href: tables/inboundconnection.md
   - name: InsightsMetrics
     href: tables/insightsmetrics.md
   - name: IntuneDeviceComplianceOrg
@@ -374,18 +386,8 @@
     href: tables/maapplicationinstance.md
   - name: MADeviceNotEnrolled
     href: tables/madevicenotenrolled.md
-  - name: MAOfficeAddinInstance
-    href: tables/maofficeaddininstance.md
-  - name: MAOfficeAppInstance
-    href: tables/maofficeappinstance.md
-  - name: MAOfficeMacroIssueInstanceReadiness
-    href: tables/maofficemacroissueinstancereadiness.md
-  - name: MAOfficeMacroSummary
-    href: tables/maofficemacrosummary.md
-  - name: MAOfficeSuiteInstance
-    href: tables/maofficesuiteinstance.md
-  - name: MAWindowsSysReqInstanceReadiness
-    href: tables/mawindowssysreqinstancereadiness.md
+  - name: MCCEventLogs
+    href: tables/mcceventlogs.md
   - name: MCVPOperationLogs
     href: tables/mcvpoperationlogs.md
   - name: MicrosoftAzureBastionAuditLogs
@@ -406,8 +408,6 @@
     href: tables/networksessions.md
   - name: NWConnectionMonitorDestinationListenerResult
     href: tables/nwconnectionmonitordestinationlistenerresult.md
-  - name: NWConnectionMonitorDNSResult
-    href: tables/nwconnectionmonitordnsresult.md
   - name: NWConnectionMonitorPathResult
     href: tables/nwconnectionmonitorpathresult.md
   - name: NWConnectionMonitorTestResult
@@ -416,8 +416,6 @@
     href: tables/officeactivity.md
   - name: Operation
     href: tables/operation.md
-  - name: OutboundConnection
-    href: tables/outboundconnection.md
   - name: Perf
     href: tables/perf.md
   - name: PowerBIDatasetsTenant
@@ -428,6 +426,8 @@
     href: tables/powerbidatasetsworkspace.md
   - name: PowerBIDatasetsWorkspacePreview
     href: tables/powerbidatasetsworkspacepreview.md
+  - name: PurviewDataSensitivityLogs
+    href: tables/purviewdatasensitivitylogs.md
   - name: PurviewScanStatusLogs
     href: tables/purviewscanstatuslogs.md
   - name: SecureScoreControls
@@ -452,6 +452,8 @@
     href: tables/sqlassessmentrecommendation.md
   - name: SqlAtpStatus
     href: tables/sqlatpstatus.md
+  - name: SQLSecurityAuditEvents
+    href: tables/sqlsecurityauditevents.md
   - name: SqlVulnerabilityAssessmentScanStatus
     href: tables/sqlvulnerabilityassessmentscanstatus.md
   - name: StorageBlobLogs
@@ -474,16 +476,10 @@
     href: tables/synapsegatewayevents.md
   - name: SynapseIntegrationActivityRuns
     href: tables/synapseintegrationactivityruns.md
-  - name: SynapseIntegrationActivityRunsEnded
-    href: tables/synapseintegrationactivityrunsended.md
   - name: SynapseIntegrationPipelineRuns
     href: tables/synapseintegrationpipelineruns.md
-  - name: SynapseIntegrationPipelineRunsEnded
-    href: tables/synapseintegrationpipelinerunsended.md
   - name: SynapseIntegrationTriggerRuns
     href: tables/synapseintegrationtriggerruns.md
-  - name: SynapseIntegrationTriggerRunsEnded
-    href: tables/synapseintegrationtriggerrunsended.md
   - name: SynapseRBACEvents
     href: tables/synapserbacevents.md
   - name: SynapseRbacOperations
@@ -528,8 +524,6 @@
     href: tables/vmprocess.md
   - name: W3CIISLog
     href: tables/w3ciislog.md
-  - name: W3CIISLogV2
-    href: tables/w3ciislogv2.md
   - name: Watchlist
     href: tables/watchlist.md
   - name: WindowsEvent
