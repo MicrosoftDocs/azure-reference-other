@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -78,7 +78,6 @@ ms.date: 6/1/2021
 - [AADDomainServicesLogonLogoff](aaddomainserviceslogonlogoff.md)
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
-- [AADDomainServicesSystemSecurity](aaddomainservicessystemsecurity.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
@@ -188,6 +187,16 @@ ms.date: 6/1/2021
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [DatabricksAccounts](databricksaccounts.md)
+- [DatabricksClusters](databricksclusters.md)
+- [DatabricksDBFS](databricksdbfs.md)
+- [DatabricksInstancePools](databricksinstancepools.md)
+- [DatabricksJobs](databricksjobs.md)
+- [DatabricksNotebook](databricksnotebook.md)
+- [DatabricksSecrets](databrickssecrets.md)
+- [DatabricksSQLPermissions](databrickssqlpermissions.md)
+- [DatabricksSSH](databricksssh.md)
+- [DatabricksWorkspace](databricksworkspace.md)
 
 ## Azure Digital Twins
 
@@ -444,7 +453,6 @@ ms.date: 6/1/2021
 - [AzureActivity](azureactivity.md)
 - [HDInsightAmbariClusterAlerts](hdinsightambariclusteralerts.md)
 - [HDInsightAmbariSystemMetrics](hdinsightambarisystemmetrics.md)
-- [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
 - [HDInsightHadoopAndYarnLogs](hdinsighthadoopandyarnlogs.md)
 - [HDInsightHadoopAndYarnMetrics](hdinsighthadoopandyarnmetrics.md)
 - [HDInsightHBaseLogs](hdinsighthbaselogs.md)
@@ -463,7 +471,6 @@ ms.date: 6/1/2021
 - [HDInsightSparkBlockManagerEvents](hdinsightsparkblockmanagerevents.md)
 - [HDInsightSparkEnvironmentEvents](hdinsightsparkenvironmentevents.md)
 - [HDInsightSparkExecutorEvents](hdinsightsparkexecutorevents.md)
-- [HDInsightSparkExtraEvents](hdinsightsparkextraevents.md)
 - [HDInsightSparkJobEvents](hdinsightsparkjobevents.md)
 - [HDInsightSparkLogs](hdinsightsparklogs.md)
 - [HDInsightSparkSQLExecutionEvents](hdinsightsparksqlexecutionevents.md)
@@ -551,6 +558,12 @@ ms.date: 6/1/2021
 - [AACHttpRequest](aachttprequest.md)
 - [AzureActivity](azureactivity.md)
 
+## Microsoft Connected Cache
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [MCCEventLogs](mcceventlogs.md)
+
 ## Microsoft Connected Vehicle Platform
 
 - [AzureActivity](azureactivity.md)
@@ -560,6 +573,7 @@ ms.date: 6/1/2021
 ## Microsoft.Purview/accounts
 
 - [AzureActivity](azureactivity.md)
+- [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [PurviewScanStatusLogs](purviewscanstatuslogs.md)
 
 ## Network Interfaces
@@ -577,17 +591,13 @@ ms.date: 6/1/2021
 ## Network Watcher - Connection Monitor
 
 - [AzureActivity](azureactivity.md)
-- [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
 
-## Power BI Datasets Workspace
-
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-
-## Power BI Datasets Tenant
+## Power BI Datasets
 
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
 
@@ -680,6 +690,7 @@ ms.date: 6/1/2021
 ## Synapse Workspaces
 
 - [AzureActivity](azureactivity.md)
+- [SQLSecurityAuditEvents](sqlsecurityauditevents.md)
 - [SynapseBigDataPoolApplicationsEnded](synapsebigdatapoolapplicationsended.md)
 - [SynapseBuiltinSqlPoolRequestsEnded](synapsebuiltinsqlpoolrequestsended.md)
 - [SynapseGatewayApiRequests](synapsegatewayapirequests.md)
@@ -799,7 +810,6 @@ ms.date: 6/1/2021
 - [VMConnection](vmconnection.md)
 - [VMProcess](vmprocess.md)
 - [W3CIISLog](w3ciislog.md)
-- [W3CIISLogV2](w3ciislogv2.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 

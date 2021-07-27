@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # SynapseBuiltinSqlPoolRequestsEnded
@@ -33,11 +33,11 @@ ms.date: 6/1/2021
 |Category|string|The category of the log.|
 |CorrelationId|string|A GUID used to group together a set of related events.|
 |DurationMs|int|The total elapsed time in milliseconds.|
+|ErrorCode|int|The error/success code|
 |Identity|dynamic|A JSON blob that describes the identity of the user or application that performed the operation.|
 |OperationName|string|The operation associated with log record.|
 |Properties|dynamic|extended properties related to this event.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultSignature|string|The error/success code|
 |ResultType|string|The status of the request.|
 |SourceSystem|string||
 |_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|

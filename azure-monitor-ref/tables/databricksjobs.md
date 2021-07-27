@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # DatabricksJobs
@@ -19,6 +19,9 @@ ms.date: 6/1/2021
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Databricks Services
 
 
 

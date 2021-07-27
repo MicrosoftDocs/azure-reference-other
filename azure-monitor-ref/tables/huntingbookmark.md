@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 7/20/2021
 ---
 
 # HuntingBookmark
@@ -32,6 +32,7 @@ ms.date: 6/1/2021
 |BookmarkType|string|Can be used to mark bookmark origin - currently not used|
 |CreatedBy|string|JSON object with the user who created the bookmark, including: ObjectID, email and name|
 |CreatedTime|datetime|The timestamp of bookmark first creation time|
+|Entities|string|A serialized JSON of entities mapped by this bookmark|
 |EventTime|datetime|The timestamp of the original event that is bookmarked|
 |LastUpdatedTime|datetime|The timestamp of bookmark last update time|
 |Notes|string|Notes provided by user|
