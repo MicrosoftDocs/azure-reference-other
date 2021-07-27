@@ -11,8 +11,12 @@ ms.date: 7/20/2021
 
 # CommonSecurityLog
 
- This table is for collecting events in the Common Event Format, that are most often sent from different security appliances such as Check Point, Palo Alto and more.
-
+ Syslog messages using Common Event Format (CEF) streamed from variety of security solutions.
+ 
+> [!NOTE]
+> An Azure Sentinel workspace is required in order to ingest CEF data. For more information, see [Connect your external solution using Common Event Format](/azure/sentinel/connect-common-event-format#prerequisites).
+>
+ 
 ## Categories
 
 - Security
