@@ -10,11 +10,13 @@ ms.topic: reference
 ms.date: 12/17/2018
 ---
 # Event Delivery Guarantees (Azure Stream Analytics)
-Azure Stream Analytics query language extends SQL syntax to enable complex computations over streams of events. With Stream Analytics there are some concepts related to Event Delivery worth discussing. They are:  
+Azure Stream Analytics query language extends the SQL syntax to enable complex computations over streams of events. With Stream Analytics there are some concepts related to Event Delivery worth discussing. They are:  
   
 *   Exactly once processing 
 *   Exactly once delivery  
-*   Duplicate records  
+*   Duplicate records
+
+In addition to these concepts detailed below, it is important to consider the [start option of a job](/azure/stream-analytics/start-job#start-options) to make sure that no data loss can happen.
   
 ## Exactly-once processing  
 Exactly-once processing guarantee means that given a set of inputs, the system always returns the same results. This is very important for repeatability, and applies even in case of restart of the job, or aross multiple jobs running in parallel on the same input. Azure Stream Analytics guarantees exactly once processing. 
