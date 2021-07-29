@@ -454,3 +454,5 @@
     href: tables/sentinelhealth.md
   - name: SignalRServiceDiagnosticLogs
     href: tables/signalrservicediagnosticlogs.md
+  - name: SQLAssessmentRecommendation
+    href: tables/sqlassessmentrecommendation.md
