@@ -266,3 +266,5 @@
     href: tables/deviceregistryevents.md
   - name: DeviceSkypeHeartbeat
     href: tables/deviceskypeheartbeat.md
+  - name: DeviceSkypeSignIn
+    href: tables/deviceskypesignin.md
