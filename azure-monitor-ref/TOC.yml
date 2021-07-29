@@ -46,3 +46,5 @@
     href: tables/acsbillingusage.md
   - name: ACSChatIncomingOperations
     href: tables/acschatincomingoperations.md
+  - name: ACSSMSIncomingOperations
+    href: tables/acssmsincomingoperations.md
