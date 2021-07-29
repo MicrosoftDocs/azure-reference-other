@@ -126,3 +126,5 @@
     href: tables/amlmodelsevent.md
   - name: AmlOnlineEndpointConsoleLog
     href: tables/amlonlineendpointconsolelog.md
+  - name: AmlPipelineEvent
+    href: tables/amlpipelineevent.md
