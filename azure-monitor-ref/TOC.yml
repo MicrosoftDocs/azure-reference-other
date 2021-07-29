@@ -178,3 +178,5 @@
     href: tables/appserviceplatformlogs.md
   - name: AppSystemEvents
     href: tables/appsystemevents.md
+  - name: AppTraces
+    href: tables/apptraces.md
