@@ -372,3 +372,5 @@
     href: tables/intuneoperationallogs.md
   - name: IoTHubDistributedTracing
     href: tables/iothubdistributedtracing.md
+  - name: KubeEvents
+    href: tables/kubeevents.md
