@@ -78,3 +78,5 @@
     href: tables/adpaudit.md
   - name: ADPDiagnostics
     href: tables/adpdiagnostics.md
+  - name: ADPRequests
+    href: tables/adprequests.md
