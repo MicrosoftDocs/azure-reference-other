@@ -394,3 +394,5 @@
     href: tables/madevicenotenrolled.md
   - name: MCCEventLogs
     href: tables/mcceventlogs.md
+  - name: MCVPOperationLogs
+    href: tables/mcvpoperationlogs.md
