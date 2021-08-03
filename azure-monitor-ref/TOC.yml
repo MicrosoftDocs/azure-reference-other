@@ -26,8 +26,12 @@
     href: tables/aadnoninteractiveusersigninlogs.md
   - name: AADProvisioningLogs
     href: tables/aadprovisioninglogs.md
+  - name: AADRiskyUsers
+    href: tables/aadriskyusers.md
   - name: AADServicePrincipalSignInLogs
     href: tables/aadserviceprincipalsigninlogs.md
+  - name: AADUserRiskEvents
+    href: tables/aaduserriskevents.md
   - name: ABSBotRequests
     href: tables/absbotrequests.md
   - name: ABSChannelToBotRequests
@@ -114,6 +118,8 @@
     href: tables/amldatastoreevent.md
   - name: AmlDeploymentEvent
     href: tables/amldeploymentevent.md
+  - name: AmlEnvironmentEvent
+    href: tables/amlenvironmentevent.md
   - name: AmlInferencingEvent
     href: tables/amlinferencingevent.md
   - name: AmlModelsEvent

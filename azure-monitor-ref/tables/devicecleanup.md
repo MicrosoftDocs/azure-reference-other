@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/20/2021
+ms.date: 7/29/2021
 ---
 
 # DeviceCleanup
