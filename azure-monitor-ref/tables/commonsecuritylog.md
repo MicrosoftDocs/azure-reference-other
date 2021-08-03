@@ -6,17 +6,13 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/20/2021
+ms.date: 7/29/2021
 ---
 
 # CommonSecurityLog
 
- Syslog messages using Common Event Format (CEF) streamed from variety of security solutions.
- 
-> [!NOTE]
-> An Azure Sentinel workspace is required in order to ingest CEF data. For more information, see [Connect your external solution using Common Event Format](/azure/sentinel/connect-common-event-format#prerequisites).
->
- 
+ This table is for collecting events in the Common Event Format, that are most often sent from different security appliances such as Check Point, Palo Alto and more.
+
 ## Categories
 
 - Security
