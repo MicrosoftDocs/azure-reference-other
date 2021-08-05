@@ -268,3 +268,5 @@
     href: tables/deviceskypeheartbeat.md
   - name: DeviceSkypeSignIn
     href: tables/deviceskypesignin.md
+  - name: DHOSCrashData
+    href: tables/dhoscrashdata.md
