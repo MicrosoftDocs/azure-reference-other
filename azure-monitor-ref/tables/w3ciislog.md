@@ -54,7 +54,7 @@ ms.date: 8/5/2021
 |IsActive|string|Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).|
 |LastReportedDateTime|string|Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).|
 |MaliciousIP|string|Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).|
-|ManagementGroupName|string|Name of the management group for Operations Manager agents. For other agents this is AOI-<workspace ID>.|
+|ManagementGroupName|string|Name of the management group for Operations Manager agents. For other agents this is AOI-\<workspace ID>.|
 |RemoteIPCountry|string|Country/region of the IP address of the client.|
 |RemoteIPLatitude|real|Latitude of the client IP address.|
 |RemoteIPLongitude|real|Longitude of the client IP address.|
