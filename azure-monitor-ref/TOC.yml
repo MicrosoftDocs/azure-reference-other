@@ -152,3 +152,5 @@
     href: tables/apppageviews.md
   - name: AppPerformanceCounters
     href: tables/appperformancecounters.md
+  - name: AppPlatformLogsforSpring
+    href: tables/appplatformlogsforspring.md
