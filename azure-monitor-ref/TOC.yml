@@ -420,3 +420,5 @@
     href: tables/nwconnectionmonitortestresult.md
   - name: OfficeActivity
     href: tables/officeactivity.md
+  - name: Operation
+    href: tables/operation.md
