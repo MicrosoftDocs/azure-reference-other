@@ -288,3 +288,5 @@
     href: tables/emailurlinfo.md
   - name: Event
     href: tables/event.md
+  - name: ExchangeAssessmentRecommendation
+    href: tables/exchangeassessmentrecommendation.md
