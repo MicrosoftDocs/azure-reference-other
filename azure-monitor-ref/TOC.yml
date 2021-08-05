@@ -526,3 +526,5 @@
     href: tables/uasysreqissue.md
   - name: UpdateRunProgress
     href: tables/updaterunprogress.md
+  - name: UpdateSummary
+    href: tables/updatesummary.md
