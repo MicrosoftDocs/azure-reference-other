@@ -436,3 +436,5 @@
     href: tables/purviewdatasensitivitylogs.md
   - name: PurviewScanStatusLogs
     href: tables/purviewscanstatuslogs.md
+  - name: SecureScoreControls
+    href: tables/securescorecontrols.md
