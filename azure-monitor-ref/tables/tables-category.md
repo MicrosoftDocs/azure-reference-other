@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2021
+ms.date: 8/5/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -34,7 +34,9 @@ ms.date: 7/29/2021
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
+- [AADRiskyUsers](aadriskyusers.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [AADUserRiskEvents](aaduserriskevents.md)
 - [ACICollaborationAudit](acicollaborationaudit.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [ADPAudit](adpaudit.md)
@@ -80,6 +82,7 @@ ms.date: 7/29/2021
 - [ADFPipelineRun](adfpipelinerun.md)
 - [ADFTriggerRun](adftriggerrun.md)
 - [ADPAudit](adpaudit.md)
+- [ADPDiagnostics](adpdiagnostics.md)
 - [ADPRequests](adprequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
@@ -300,7 +303,9 @@ ms.date: 7/29/2021
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
+- [AADRiskyUsers](aadriskyusers.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
+- [AADUserRiskEvents](aaduserriskevents.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [Anomalies](anomalies.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
