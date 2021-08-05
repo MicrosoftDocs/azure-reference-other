@@ -558,3 +558,5 @@
     href: tables/wvdcheckpoints.md
   - name: WVDConnections
     href: tables/wvdconnections.md
+  - name: WVDErrors
+    href: tables/wvderrors.md
