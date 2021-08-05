@@ -240,3 +240,5 @@
     href: tables/containerregistryrepositoryevents.md
   - name: ContainerServiceLog
     href: tables/containerservicelog.md
+  - name: DeviceAppCrash
+    href: tables/deviceappcrash.md
