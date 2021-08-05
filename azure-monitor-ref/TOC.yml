@@ -476,6 +476,20 @@
     href: tables/synapsebigdatapoolapplicationsended.md
   - name: SynapseBuiltinSqlPoolRequestsEnded
     href: tables/synapsebuiltinsqlpoolrequestsended.md
+  - name: SynapseDXCommand
+    href: tables/synapsedxcommand.md
+  - name: SynapseDXFailedIngestion
+    href: tables/synapsedxfailedingestion.md
+  - name: SynapseDXIngestionBatching
+    href: tables/synapsedxingestionbatching.md
+  - name: SynapseDXQuery
+    href: tables/synapsedxquery.md
+  - name: SynapseDXSucceededIngestion
+    href: tables/synapsedxsucceededingestion.md
+  - name: SynapseDXTableDetails
+    href: tables/synapsedxtabledetails.md
+  - name: SynapseDXTableUsageStatistics
+    href: tables/synapsedxtableusagestatistics.md
   - name: SynapseGatewayApiRequests
     href: tables/synapsegatewayapirequests.md
   - name: SynapseGatewayEvents

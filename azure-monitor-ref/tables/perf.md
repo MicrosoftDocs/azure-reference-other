@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2021
+ms.date: 8/5/2021
 ---
 
 # Perf
@@ -41,7 +41,7 @@ ms.date: 7/29/2021
 |BucketStartTime|datetime||
 |Computer|string|Computer that the event was collected from.|
 |CounterName|string|Name of the performance counter.|
-|CounterPath|string|Full path of the counter in the form \\<Computer>\object(instance)\counter.|
+|CounterPath|string|Full path of the counter in the form \\\\\<Computer>\object(instance)\counter.|
 |CounterValue|real||
 |InstanceName|string|Name of the event instance. Empty if no instance.|
 |Max|real||

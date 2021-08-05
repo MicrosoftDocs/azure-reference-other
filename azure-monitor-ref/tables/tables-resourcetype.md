@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2021
+ms.date: 8/5/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -111,6 +111,7 @@ ms.date: 7/29/2021
 ## Azure Autonomous Development Platform Account
 
 - [ADPAudit](adpaudit.md)
+- [ADPDiagnostics](adpdiagnostics.md)
 - [ADPRequests](adprequests.md)
 - [AzureActivity](azureactivity.md)
 
@@ -405,6 +406,10 @@ ms.date: 7/29/2021
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Dynamics 365 Customer Insights - AUI
+
+- [AzureActivity](azureactivity.md)
 
 ## Event Grid Domains
 

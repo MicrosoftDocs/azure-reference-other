@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2021
+ms.date: 8/5/2021
 ---
 
 # WindowsEvent
 
- 
+ Windows events which are collected and sent by the agent.
 
 ## Categories
 
