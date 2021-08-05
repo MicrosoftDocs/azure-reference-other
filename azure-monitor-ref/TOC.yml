@@ -40,3 +40,5 @@
     href: tables/absdependenciesrequests.md
   - name: ACICollaborationAudit
     href: tables/acicollaborationaudit.md
+  - name: ACSAuthIncomingOperations
+    href: tables/acsauthincomingoperations.md
