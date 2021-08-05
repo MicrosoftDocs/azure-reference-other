@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2021
+ms.date: 8/5/2021
 ---
 
 # ADPDiagnostics
 
  Diagnostic logs of the ADP service.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Autonomous Development Platform Account
 
 
 
