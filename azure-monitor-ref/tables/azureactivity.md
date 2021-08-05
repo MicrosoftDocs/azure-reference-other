@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2021
+ms.date: 8/5/2021
 ---
 
 # AzureActivity
@@ -66,8 +66,8 @@ ms.date: 7/29/2021
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Flexible Servers
 - System Center Virtual Machine Manager
-- Azure API for FHIR
 - Azure Stack HCI
+- VMware
 - Event Grid Domains
 - Default schema for a resource
 - Desktop Virtualization Host Pools
@@ -76,9 +76,10 @@ ms.date: 7/29/2021
 - AzureML/OnlineEndpoint
 - HDInsight Clusters
 - Experiment Workspace
+- Dynamics 365 Customer Insights - AUI
 - Network Watcher - Connection Monitor
-- Azure Subscription
 - Microsoft Connected Vehicle Platform
+- Microsoft Connected Cache
 - Bot Services
 - Microsoft.Purview/accounts
 - Kubernetes Services
@@ -87,9 +88,9 @@ ms.date: 7/29/2021
 - Communication Services
 - Azure Autonomous Development Platform Account
 - App Services
-- Microsoft Connected Cache
+- Azure Subscription
+- Azure API for FHIR
 - Azure Resource Group
-- Azure Digital Twins
 - Application Insights
 - Azure Blockchain Service
 - Azure AD Domain Services
@@ -110,7 +111,7 @@ ms.date: 7/29/2021
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
-- VMware
+- Azure Digital Twins
 - Service Bus
 
 
