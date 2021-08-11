@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/5/2021
+ms.date: 8/11/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -602,6 +602,9 @@ ms.date: 8/5/2021
 ## Power BI Datasets
 
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
