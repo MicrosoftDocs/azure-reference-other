@@ -532,3 +532,5 @@
     href: tables/updatesummary.md
   - name: Usage
     href: tables/usage.md
+  - name: UserAccessAnalytics
+    href: tables/useraccessanalytics.md
