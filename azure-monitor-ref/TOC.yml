@@ -272,3 +272,5 @@
     href: tables/deviceskypesignin.md
   - name: DHOSCrashData
     href: tables/dhoscrashdata.md
+  - name: DnsEvents
+    href: tables/dnsevents.md
