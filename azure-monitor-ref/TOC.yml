@@ -362,3 +362,5 @@
     href: tables/heartbeat.md
   - name: HuntingBookmark
     href: tables/huntingbookmark.md
+  - name: IdentityInfo
+    href: tables/identityinfo.md
