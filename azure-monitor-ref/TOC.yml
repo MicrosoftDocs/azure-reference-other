@@ -508,3 +508,5 @@
     href: tables/synapserbacoperations.md
   - name: SynapseSqlPoolDmsWorkers
     href: tables/synapsesqlpooldmsworkers.md
+  - name: SynapseSqlPoolExecRequests
+    href: tables/synapsesqlpoolexecrequests.md
