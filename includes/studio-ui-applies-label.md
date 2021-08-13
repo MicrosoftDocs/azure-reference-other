@@ -11,7 +11,6 @@ ms.date: 08/23/2021
 ---
 
 > [!Note]
-> **Applies to**:   Machine Learning Studio (classic)
+> **Applies to**:   Machine Learning Studio (classic) *only*
 >
-> This content applies only to ML Studio (classic). Similar drag and drop modules have been added to [Azure Machine Learning designer](/azure/machine-learning/concept-designer)
-designer.
+> Similar drag-and-drop modules are available in [Azure Machine Learning designer](/azure/machine-learning/concept-designer).
