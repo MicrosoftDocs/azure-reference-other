@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Select Columns Transform
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a transformation that selects the same subset of columns as in the given dataset*
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  

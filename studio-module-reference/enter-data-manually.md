@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Enter Data Manually
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Enables entering and editing small datasets by typing values*  
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  

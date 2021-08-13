@@ -13,6 +13,8 @@ ms.author: amlstudiodocs
 ---
 # Latent Dirichlet Allocation
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Use the Vowpal Wabbit library to perform VW LDA*
 
 Category: [Text Analytics](text-analytics.md)

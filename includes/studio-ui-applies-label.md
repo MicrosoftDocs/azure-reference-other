@@ -5,13 +5,13 @@ services: machine-learning
 ms.service: machine-learning
 ms.custom: "include file"
 ms.topic: "include"
-author: peterlu
-ms.author: peterlu
-ms.date: 05/06/2019
+author: cjgronlund
+ms.author: cgronlun
+ms.date: 08/23/2021
 ---
 
 > [!Note]
 > **Applies to**:   Machine Learning Studio (classic)
 >
-> This content pertains only to Studio (classic). Similar drag and drop modules have been added to [Azure Machine Learning](/azure/machine-learning/)
-designer. Learn more in [this article comparing the two versions](/azure/machine-learning/compare-azure-ml-to-studio-classic).
+> This content applies only to ML Studio (classic). Similar drag and drop modules have been added to [Azure Machine Learning designer](/azure/machine-learning/concept-designer)
+designer.

@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Python Language Modules
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes the modules provided in Machine Learning Studio (classic) that support running custom Python code in a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

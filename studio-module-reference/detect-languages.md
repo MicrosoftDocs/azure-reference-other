@@ -12,6 +12,9 @@ ms.author: amlstudiodocs
 
 ---
 # Detect Languages
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Detects the language of each line in the input file*  
   
  Category: [Text Analytics](text-analytics.md)  

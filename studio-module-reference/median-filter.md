@@ -12,6 +12,9 @@ ms.author: amlstudiodocs
 
 ---
 # Median Filter
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a median filter used to smooth data for trend analysis*  
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  

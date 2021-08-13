@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # R Language Modules
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article lists the modules in Machine Learning Studio (classic) that support running R code. These modules make it easier to publish R models in production, and to use the experience of the R language community to solve real-world problems.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

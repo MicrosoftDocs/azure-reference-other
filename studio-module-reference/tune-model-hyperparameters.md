@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Tune Model Hyperparameters
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Performs a parameter sweep on a model to determine the optimum parameter settings*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  

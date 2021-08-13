@@ -13,6 +13,8 @@ ms.author: amlstudiodocs
 ---
 # Execute R Script
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Executes an R script from an Machine Learning Studio (classic) experiment*
 
 Category: [R Language Modules](r-language-modules.md)

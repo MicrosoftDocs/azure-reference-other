@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Train Model
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Trains a classification or regression model in a supervised manner*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  

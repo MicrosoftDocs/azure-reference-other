@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Train Matchbox Recommender
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Trains a Bayesian recommender using the Matchbox algorithm*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  

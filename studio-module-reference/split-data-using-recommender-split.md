@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Split Data using Recommender Split
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes how to use the **Recommender Split** option in the [Split Data](split-data.md) module of Machine Learning Studio (classic). This option is useful when you need to prepare training and testing datasets for use with a recommendation model. Not only do these models require a specific format, but it can be very difficult to divide up ratings, users, and items in a balanced way without special tools.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

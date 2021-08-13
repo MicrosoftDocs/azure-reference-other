@@ -15,6 +15,8 @@ ms.author: amlstudiodocs
 ---
 # Create R Model
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates an R model using custom resources*
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)

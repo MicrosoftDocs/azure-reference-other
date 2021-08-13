@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Decision Forest Regression
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a regression model using the decision forest algorithm*
 
 Category: [Initialize Model - Regression](machine-learning-initialize-model-regression.md)

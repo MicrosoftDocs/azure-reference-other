@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Two-Class Decision Jungle
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a two-class classification model using the decision jungle algorithm*  
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md) 

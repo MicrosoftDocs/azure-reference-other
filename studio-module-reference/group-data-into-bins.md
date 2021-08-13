@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Group Data into Bins
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Puts numerical data into bins*
 
 Category: [Scale and Reduce](data-transformation-scale-and-reduce.md)

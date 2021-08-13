@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Export Data
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Writes a dataset to various forms of cloud-based storage in Azure, such as tables, blobs, and Azure SQL databases*
 
 Category: [Data Input and Output](data-input-and-output.md)
