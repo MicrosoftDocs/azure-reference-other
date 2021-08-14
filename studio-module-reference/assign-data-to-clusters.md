@@ -13,6 +13,8 @@ manager: cgronlun
 ---
 # Assign Data to Clusters
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Assigns data to clusters using an existing trained clustering model*  
 
 Category: [Score](machine-learning-score.md)  

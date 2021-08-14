@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Import from Azure SQL Database
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to get data from an Azure SQL Database or Azure SQL Data Warehouse.  
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

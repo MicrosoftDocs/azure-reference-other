@@ -12,6 +12,8 @@ manager: cgronlun
 ---
 # Apply SQL Transformation
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Runs a SQLite query on input datasets to transform the data*  
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  

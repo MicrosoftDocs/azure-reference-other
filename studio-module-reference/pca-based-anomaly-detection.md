@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # PCA-Based Anomaly Detection
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates an anomaly detection model using Principal Component Analysis*
 
 Category: [Anomaly Detection](anomaly-detection.md)

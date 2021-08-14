@@ -12,6 +12,8 @@ manager: cgronlun
 ---
 # Apply Transformation
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Applies a well-specified data transformation to a dataset*  
 
 Category: [Machine Learning / Score](machine-learning-score.md)  

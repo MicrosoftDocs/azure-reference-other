@@ -13,6 +13,8 @@ ms.author: amlstudiodocs
 ---
 # Compute Linear Correlation
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Calculates the linear correlation between column values in a dataset*  
 
 Category: [Statistical Functions](statistical-functions.md)  

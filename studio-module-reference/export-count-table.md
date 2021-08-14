@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Export Count Table
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Exports the count table from a saved transformation for use with new data*
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)

@@ -12,6 +12,9 @@ ms.author: amlstudiodocs
 
 ---
 # Two-Class Logistic Regression
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a two-class logistic regression model*  
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md) 

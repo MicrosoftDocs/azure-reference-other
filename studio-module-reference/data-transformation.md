@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Data Transformation
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article lists the modules that are provided in Machine Learning Studio (classic) for data transformation. For machine learning, *data transformation* entails some very general tasks, such as joining datasets or changing column names. But, it also includes many tasks that are specific to machine learning, such as normalization, binning and grouping, and inference of missing values.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Two-Class Bayes Point Machine
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 Creates a Bayes point machine binary classification model
   
  Category: [Machine Learning / Initialize Model / Classification](machine-learning-initialize-model-classification.md)

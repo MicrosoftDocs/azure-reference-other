@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Convert to CSV
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Converts data input to a comma-separated values format*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  

@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # One-Class Support Vector Machine
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a one class Support Vector Machine model for anomaly detection*
 
 Category: [Anomaly Detection](anomaly-detection.md)

@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Permutation Feature Importance
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Computes the permutation feature importance scores of feature variables given a trained model and a test dataset*  
   
  Category: [Feature Selection Modules](feature-selection-modules.md)  

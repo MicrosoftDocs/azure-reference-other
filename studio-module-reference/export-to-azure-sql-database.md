@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Export to Azure SQL Database
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes how to use the **Export to Azure SQL Database** option in the [Export Data](export-data.md) module in Machine Learning Studio (classic). This option is useful when you want to export data from your machine learning experiment to an Azure SQL Database or Azure SQL Data Warehouse. 
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

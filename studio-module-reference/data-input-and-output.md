@@ -15,6 +15,8 @@ ms.author: amlstudiodocs
 ---
 # Data Input and Output
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This article lists the modules that you can use for importing and exporting data and models in Machine Learning Studio (classic).

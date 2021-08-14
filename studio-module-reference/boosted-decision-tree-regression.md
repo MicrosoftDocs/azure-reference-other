@@ -12,6 +12,8 @@ manager: cgronlun
 ---
 # Boosted Decision Tree Regression
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a regression model using the Boosted Decision Tree algorithm*  
 
 Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
