@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/5/2021
+ms.date: 8/11/2021
 ---
 
 # SignalRServiceDiagnosticLogs
@@ -46,6 +46,6 @@ ms.date: 8/5/2021
 |_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |TimeGenerated|datetime|The timestamp (UTC) of the log.|
-|TransportType|string|The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more details, see [httptransporttype](/dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype).|
+|TransportType|string|The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more details, see https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype.|
 |Type|string|The name of the table|
 |UserId|string|The user ID of the connection. It is defined by the client or app server.|
