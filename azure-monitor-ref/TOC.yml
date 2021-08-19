@@ -188,3 +188,5 @@
     href: tables/awsguardduty.md
   - name: AWSVPCFlow
     href: tables/awsvpcflow.md
+  - name: AzureActivity
+    href: tables/azureactivity.md
