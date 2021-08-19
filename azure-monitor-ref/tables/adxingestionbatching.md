@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/11/2021
+ms.date: 8/19/2021
 ---
 
 # ADXIngestionBatching
 
- Azure Data Explorer ingestion batching operations.
+ Azure Data Explorer ingestion batching operations. These logs have detailed statistics of batches ready for ingestion (duration, batch size and blobs count).
 
 ## Solutions
 
