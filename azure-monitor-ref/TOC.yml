@@ -440,3 +440,5 @@
     href: tables/purviewscanstatuslogs.md
   - name: SecureScoreControls
     href: tables/securescorecontrols.md
+  - name: SecureScores
+    href: tables/securescores.md
