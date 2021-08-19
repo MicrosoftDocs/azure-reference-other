@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/11/2021
+ms.date: 8/19/2021
 ---
 
 # AWSCloudTrail
 
- 
+ CloudTrail logs, which ingested from Sentinel's connector, holds all your data and management events of your Amazon Wev Services account.
 
 ## Categories
 
@@ -33,7 +33,7 @@ ms.date: 8/11/2021
 |AWSRegion|string||
 |AwsRequestId_|string||
 |Category|string||
-|ErrorCode|int||
+|ErrorCode|string||
 |ErrorMessage|string||
 |EventName|string||
 |EventSource|string||
