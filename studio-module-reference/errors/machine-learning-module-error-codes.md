@@ -18,8 +18,8 @@ ms.author: amlstudiodocs
 >
 > Beginning 1 December 2021, you will not be able to create new Machine Learning Studio (classic) resources. Through 31 August 2024, you can continue to use the existing Machine Learning Studio (classic) resources.  
 > 
-> -	See [information on moving machine learning projects from ML Studio (classic) to Azure Machine Learning](../migrate-overview.md). 
-> -	Learn more about [Azure Machine Learning](../overview-what-is-azure-machine-learning.md).
+> -	See [information on moving machine learning projects from ML Studio (classic) to Azure Machine Learning](../../migrate-overview.md). 
+> -	Learn more about [Azure Machine Learning](../../overview-what-is-azure-machine-learning.md).
 > 
 > ML Studio (classic) documentation is being retired and may not be updated in the future.
 
