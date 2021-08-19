@@ -13,6 +13,8 @@ ms.author: amlstudiodocs
 ---
 # Troubleshoot module exceptions in Machine Learning Studio (classic) using error codes
 
+[!INCLUDE [ML Studio (classic) retirement](../../includes/machine-learning-studio-classic-deprecation.md)]
+
 Learn about the error messages and exception codes you might encounter using  modules in Machine Learning Studio (classic). 
 
 To resolve the issue, look for the error in this article to read about common causes. There are two ways to get the full text of an error message in Studio (classic):  
