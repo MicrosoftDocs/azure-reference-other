@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/11/2021
+ms.date: 8/19/2021
 ---
 
 # AzureMetrics
@@ -22,50 +22,51 @@ ms.date: 8/11/2021
 ## Resource types
 
 - App Services
-- Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
 - SQL Databases
 - SQL Servers
 - SQL Managed Instances
-- Azure Database for PostgreSQL Flexible Servers
 - Data Share
-- Data Lake Analytics
+- Azure Database for PostgreSQL Servers V2
+- Power BI Embedded
 - Data Lake Storage Gen1
 - Data factories
 - Automation account
 - API Management services
 - Logic Apps
-- Power BI Embedded
 - Service Fabric Clusters
+- Data Lake Analytics
+- Azure Database for PostgreSQL Flexible Servers
 - Azure Database for MariaDB Servers
-- Event Hubs
+- Device Provisioning Services
 - Bastions
 - Stream Analytics jobs
 - Search Services
 - Virtual Networks
 - Virtual Private Network Gateways
 - Virtual Network Gateways
-- Device Provisioning Services
 - Traffic Manager Profiles
+- Public IP Addresses
 - Network Security Groups
 - Network Interfaces
 - Front Doors
 - ExpressRoute Circuits
 - Firewalls
 - Application Gateways
-- Public IP Addresses
+- Event Hubs
 - Machine Learning
+- Azure API for FHIR
 - IoT Hub
-- Azure Monitor autoscale settings
-- Analysis Services
+- Azure Databricks Services
 - Workload Monitor
 - Event Grid Topics
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
-- Batch Accounts
 - Desktop Virtualization Host Pools
+- Analysis Services
+- Synapse Workspaces
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
 - Kubernetes Services
@@ -73,10 +74,9 @@ ms.date: 8/11/2021
 - Azure Cosmos DB
 - Communication Services
 - Virtual machines
+- Batch Accounts
 - Azure Spring Cloud
 - Media Services
-- Azure Cache for Redis
-- Azure Databricks Services
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
@@ -91,7 +91,8 @@ ms.date: 8/11/2021
 - Storage Accounts
 - Key Vaults
 - Cognitive Services
-- Azure API for FHIR
+- Azure Cache for Redis
+- Azure Monitor autoscale settings
 - Service Bus
 
 
