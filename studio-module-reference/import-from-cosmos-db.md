@@ -13,6 +13,8 @@ ms.author: amlstudiodocs
 ---
 # Import from Azure Cosmos DB
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to import data from Azure Cosmos DB for use in a machine learning experiment.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

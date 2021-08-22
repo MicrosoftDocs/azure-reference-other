@@ -12,6 +12,9 @@ ms.author: amlstudiodocs
 
 ---
 # Time Series Anomaly Detection
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Detects anomalies in the input time series data.*  
   
  Category: Time Series  

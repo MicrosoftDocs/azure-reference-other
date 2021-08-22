@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Execute Python Script
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Executes a Python script from an Machine Learning experiment*
 
 Category: [Python Language Modules](python-language-modules.md)

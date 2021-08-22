@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Filter Based Feature Selection
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Identifies the features in a dataset with the greatest predictive power*  
   
  Category: [Feature Selection Modules](feature-selection-modules.md)  

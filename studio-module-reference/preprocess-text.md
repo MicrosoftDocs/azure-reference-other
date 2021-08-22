@@ -13,6 +13,8 @@ ms.author: amlstudiodocs
 ---
 # Preprocess Text
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Performs cleaning operations on text*
 
 Category: [Text Analytics](text-analytics.md)

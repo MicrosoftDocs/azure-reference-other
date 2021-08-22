@@ -12,6 +12,8 @@ manager: cgronlun
 ---
 # Machine Learning - Initialize Model
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes the modules in Machine Learning Studio (classic) that you can use to define a machine learning model and set its parameters. 
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

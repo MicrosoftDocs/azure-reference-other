@@ -11,9 +11,9 @@ ms.author: amlstudiodocs
 ---
 # Regression modules
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes the modules in Machine Learning Studio (classic) that support creation of regression models.
-
-
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 

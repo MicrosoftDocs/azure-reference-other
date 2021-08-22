@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Sweep Clustering
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Performs a parameter sweep to determine the optimum settings for a clustering model*  
 
 Category: [Machine Learning / Train](machine-learning-train.md)  

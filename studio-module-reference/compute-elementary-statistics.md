@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Compute Elementary Statistics
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Calculates specified summary statistics for selected dataset columns*  
 
 Category: [Statistical Functions](statistical-functions.md)  

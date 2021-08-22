@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning - Evaluate
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes the modules in Machine Learning Studio (classic) that you can use to evaluate a machine learning model. _Model evaluation_ is performed after training is complete, to measure the accuracy of the predictions and assess model fit.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

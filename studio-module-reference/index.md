@@ -14,6 +14,8 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning Studio (classic): Algorithm and module help
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 [!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
 Machine Learning Studio (classic) is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. The machine learning tools are mostly cloud-based services, which eliminates setup and installation concerns because you can work through your web browser on any internet-connected PC. See the article, ["What is Studio (classic)?"](/azure/machine-learning/studio/what-is-ml-studio) for more details.

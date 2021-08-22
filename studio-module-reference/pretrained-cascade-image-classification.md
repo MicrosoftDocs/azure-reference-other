@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Pretrained Cascade Image Classification
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a pretrained image classification model for frontal faces using the OpenCV Library*
 
 Category: [OpenCV Library Modules](opencv-library-modules.md)  

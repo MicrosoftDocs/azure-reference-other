@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Machine Learning - Score
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This section lists the modules provided in Machine Learning Studio (classic) for *scoring*.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

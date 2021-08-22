@@ -12,6 +12,8 @@ manager: cgronlun
 ---
 # Bayesian Linear Regression
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a Bayesian linear regression model*  
 
 

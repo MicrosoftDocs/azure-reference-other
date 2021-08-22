@@ -13,6 +13,16 @@ ms.author: amlstudiodocs
 ---
 # Troubleshoot module exceptions in Machine Learning Studio (classic) using error codes
 
+> [!IMPORTANT]
+> Support for Machine Learning Studio (classic) will end on 31 August 2024. We recommend you transition to [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) by that date.
+>
+> Beginning 1 December 2021, you will not be able to create new Machine Learning Studio (classic) resources. Through 31 August 2024, you can continue to use the existing Machine Learning Studio (classic) resources.  
+> 
+> -	See [information on moving machine learning projects from ML Studio (classic) to Azure Machine Learning](/azure/machine-learning/classic/migrate-overview). 
+> -	Learn more about [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning).
+> 
+> ML Studio (classic) documentation is being retired and may not be updated in the future.
+
 Learn about the error messages and exception codes you might encounter using  modules in Machine Learning Studio (classic). 
 
 To resolve the issue, look for the error in this article to read about common causes. There are two ways to get the full text of an error message in Studio (classic):  

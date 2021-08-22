@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Data Table
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 **Data Table Class**  
 
 A dataset is data that has been uploaded to Machine Learning Studio (classic) so that it can be used in the modeling process.  Even if you upload data in another format, or specify a storage format such as CSV, ARFF, or TSV, the data is implicitly converted to a `DataTable` object whenever used by a module in an experiment.

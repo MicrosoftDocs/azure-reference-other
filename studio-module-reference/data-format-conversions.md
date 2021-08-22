@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Data Format Conversions
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
 
 This article lists the modules provided in Machine Learning Studio (classic) for converting data among various file formats used in machine learning. 

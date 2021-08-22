@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Clean Missing Data
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Specifies how to handle the values missing from a dataset*  
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  

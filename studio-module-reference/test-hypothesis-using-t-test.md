@@ -13,6 +13,8 @@ ms.author: amlstudiodocs
 ---
 # Test Hypothesis Using t-Test
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Compares means from two columns using a t-test*
 
 Category: [Statistical Functions](statistical-functions.md)

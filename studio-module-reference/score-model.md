@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Score Model
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Scores predictions for a trained classification or regression model*
 
 Category: [Machine Learning / Score](machine-learning-score.md)  

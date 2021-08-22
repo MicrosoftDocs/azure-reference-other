@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Text Analytics
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes the text analytics modules included in Machine Learning Studio (classic). These modules provide specialized computational tools for working with both structured and unstructured text, including:  
 
 + Multiple options for preprocessing text.
