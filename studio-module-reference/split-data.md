@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Split Data
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Partitions the rows of a dataset into two distinct sets*
 
 Category: [Data Transformation / Sample and Split](data-transformation-sample-and-split.md)

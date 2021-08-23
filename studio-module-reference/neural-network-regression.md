@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Neural Network Regression
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a regression model using a neural network algorithm*  
   
  Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  

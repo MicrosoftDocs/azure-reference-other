@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Evaluate Recommender
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Evaluates the accuracy of recommender model predictions*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  

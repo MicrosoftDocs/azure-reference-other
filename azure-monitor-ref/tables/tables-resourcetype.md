@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/11/2021
+ms.date: 8/19/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -146,6 +146,7 @@ ms.date: 8/11/2021
 
 - [ADXCommand](adxcommand.md)
 - [ADXIngestionBatching](adxingestionbatching.md)
+- [ADXJournal](adxjournal.md)
 - [ADXQuery](adxquery.md)
 - [ADXTableDetails](adxtabledetails.md)
 - [ADXTableUsageStatistics](adxtableusagestatistics.md)
@@ -543,7 +544,18 @@ ms.date: 8/11/2021
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
+- [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
+- [AmlComputeInstanceEvent](amlcomputeinstanceevent.md)
 - [AmlComputeJobEvent](amlcomputejobevent.md)
+- [AmlDataLabelEvent](amldatalabelevent.md)
+- [AmlDataSetEvent](amldatasetevent.md)
+- [AmlDataStoreEvent](amldatastoreevent.md)
+- [AmlDeploymentEvent](amldeploymentevent.md)
+- [AmlEnvironmentEvent](amlenvironmentevent.md)
+- [AmlInferencingEvent](amlinferencingevent.md)
+- [AmlModelsEvent](amlmodelsevent.md)
+- [AmlPipelineEvent](amlpipelineevent.md)
+- [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -695,9 +707,17 @@ ms.date: 8/11/2021
 ## Synapse Workspaces
 
 - [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
 - [SQLSecurityAuditEvents](sqlsecurityauditevents.md)
 - [SynapseBigDataPoolApplicationsEnded](synapsebigdatapoolapplicationsended.md)
 - [SynapseBuiltinSqlPoolRequestsEnded](synapsebuiltinsqlpoolrequestsended.md)
+- [SynapseDXCommand](synapsedxcommand.md)
+- [SynapseDXFailedIngestion](synapsedxfailedingestion.md)
+- [SynapseDXIngestionBatching](synapsedxingestionbatching.md)
+- [SynapseDXQuery](synapsedxquery.md)
+- [SynapseDXSucceededIngestion](synapsedxsucceededingestion.md)
+- [SynapseDXTableDetails](synapsedxtabledetails.md)
+- [SynapseDXTableUsageStatistics](synapsedxtableusagestatistics.md)
 - [SynapseGatewayApiRequests](synapsegatewayapirequests.md)
 - [SynapseIntegrationActivityRuns](synapseintegrationactivityruns.md)
 - [SynapseIntegrationPipelineRuns](synapseintegrationpipelineruns.md)

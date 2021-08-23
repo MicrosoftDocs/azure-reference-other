@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Feature Hashing
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Converts text data to integer encoded features using the Vowpal Wabbit library*
 
 Category: [Text Analytics](text-analytics.md)

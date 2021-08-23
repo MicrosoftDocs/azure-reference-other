@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Import from Azure Blob Storage
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This topic describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to read data from Azure Blob Storage, so that you can use the data in a machine learning experiment.  
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Convert to SVMLight
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Converts data input to the format used by the SVM-Light framework*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  

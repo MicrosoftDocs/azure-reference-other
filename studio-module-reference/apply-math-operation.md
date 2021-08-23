@@ -10,6 +10,9 @@ ms.author: amlstudiodocs
 manager: cgronlun
 ---
 # Apply Math Operation
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Applies a mathematical operation to column values*  
   
  Category: [Statistical Functions](statistical-functions.md)  

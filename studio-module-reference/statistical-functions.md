@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Statistical Functions
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes the modules in Machine Learning Studio (classic) that support mathematical and statistical operations critical for machine learning. If you need to perform tasks such as the following in your experiment, look in the **Statistical Functions** category:
 
 + Perform ad hoc computations on column values, such as rounding or using an absolute value.

@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Extract Key Phrases from Text
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Extracts key phrases from given text*  
   
  Category: [Text Analytics](text-analytics.md)

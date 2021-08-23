@@ -10,6 +10,9 @@ ms.author: amlstudiodocs
 
 ---
 # Extract N-Gram Features from Text
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates N-Gram dictionary features and does feature selection on them*  
 
 Category: [Text Analytics](text-analytics.md)  

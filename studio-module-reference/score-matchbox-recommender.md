@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Score Matchbox Recommender
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Scores predictions for a dataset using the Matchbox recommender*
 
 Category: [Machine Learning / Score](machine-learning-score.md)

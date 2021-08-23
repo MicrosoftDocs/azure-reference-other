@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Convert to Indicator Values
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Converts categorical values in columns to indicator values*  
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  

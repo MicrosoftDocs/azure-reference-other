@@ -12,6 +12,9 @@ ms.author: amlstudiodocs
 
 ---
 # Evaluate Model
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Evaluates the results of a classification or regression model with standard metrics*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  

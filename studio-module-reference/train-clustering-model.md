@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Train Clustering Model
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Trains a clustering model and assigns data from the training set to clusters*  
   
  Category: [Machine Learning / Train](machine-learning-train.md)  

@@ -13,6 +13,8 @@ ms.author: amlstudiodocs
 ---
 # Time Series
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 This article describes the modules in Machine Learning Studio (classic) that are specifically designed for working with time series data.
 
 [!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]

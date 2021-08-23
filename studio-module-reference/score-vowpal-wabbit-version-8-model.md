@@ -12,6 +12,9 @@ ms.author: amlstudiodocs
 
 ---
 # Score Vowpal Wabbit Version 8 Model
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Scores data using the Vowpal Wabbit machine learning system from the command line interface*  
   
  Category: [Text Analytics](text-analytics.md)  

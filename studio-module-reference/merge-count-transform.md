@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Merge Count Transform
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Creates a set of features based on a counts table*
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)

@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Remove Duplicate Rows
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Removes the duplicate rows from a dataset*  
   
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  

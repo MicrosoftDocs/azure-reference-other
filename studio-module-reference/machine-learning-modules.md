@@ -10,7 +10,9 @@ author: xiaoharper
 ms.author: amlstudiodocs
 
 ---
-# Machine learning modules in Machine Learning Studio (classic)
+# Machine learning modules in ML Studio (classic) modules
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
 
 The typical workflow for machine learning includes many phases:  
   

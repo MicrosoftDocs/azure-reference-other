@@ -11,6 +11,9 @@ ms.author: amlstudiodocs
 
 ---
 # Train Vowpal Wabbit Version 7-10 Model
+
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Trains a model using version 7-10 of the Vowpal Wabbit machine learning system*  
   
  Category: [Text Analytics](text-analytics.md)  

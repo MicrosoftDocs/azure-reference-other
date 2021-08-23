@@ -12,6 +12,8 @@ ms.author: amlstudiodocs
 ---
 # Load Trained Model
 
+[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+
 *Load a web-hosted trained model*
 
 Category: [Data Input and Output](data-input-and-output.md)
