@@ -202,3 +202,5 @@
     href: tables/blockchainapplicationlog.md
   - name: BlockchainProxyLog
     href: tables/blockchainproxylog.md
+  - name: CDBCassandraRequests
+    href: tables/cdbcassandrarequests.md
