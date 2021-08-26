@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/19/2021
+ms.date: 8/26/2021
 ---
 
 # AppPlatformSystemLogs
 
- Azure Spring Cloud System Logs
+ Azure Spring Cloud System Logs.
 
 ## Categories
 
@@ -30,7 +30,9 @@ ms.date: 8/19/2021
 
 |Column|Type|Description|
 |---|---|---|
+|AppTimestamp|datetime|The log timestamp (UTC) from application log|
 |Category|string|Log Category|
+|InstanceName|string|The instance name that emitted the log|
 |Level|string|The level of the log|
 |Log|string|The log of the log|
 |Logger|string|The logger of the log|
@@ -43,5 +45,5 @@ ms.date: 8/19/2021
 |_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |TenantId|string||
 |Thread|string|The thread of the log|
-|TimeGenerated|datetime|The timestamp (UTC) of the log|
+|TimeGenerated|datetime|The timestamp (UTC) when the log is collected by Azure Spring Cloud|
 |Type|string|The name of the table|
