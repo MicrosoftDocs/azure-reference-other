@@ -244,3 +244,5 @@
     href: tables/containerservicelog.md
   - name: DeviceAppCrash
     href: tables/deviceappcrash.md
+  - name: DeviceAppLaunch
+    href: tables/deviceapplaunch.md
