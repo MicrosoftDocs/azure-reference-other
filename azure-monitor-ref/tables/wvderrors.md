@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/19/2021
+ms.date: 8/26/2021
 ---
 
 # WVDErrors
@@ -37,6 +37,7 @@ ms.date: 8/19/2021
 |CodeSymbolic|string|The error code symbolic representation (if available).|
 |CorrelationId|string|The activity Id.|
 |Message|string|The error message.|
+|Operation|string|The name of the operation that failed.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ServiceError|bool|Indicator whether this is a service or customer error.|
 |Source|string|The source of the error.|
