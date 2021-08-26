@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/19/2021
+ms.date: 8/26/2021
 ---
 
 # WindowsEvent
@@ -20,6 +20,7 @@ ms.date: 8/19/2021
 
 - CustomizedWindowsEventsFiltering
 - InternalWindowsEvent
+- Azure Sentinel
 - WEFInternalUat
 - WEF_10x
 - WEF_10xDSRE
@@ -36,11 +37,13 @@ ms.date: 8/19/2021
 |Channel|string||
 |Computer|string||
 |Data|dynamic||
+|EventData|dynamic|Contains the event data parsed to dynamic type. If the parsing fails then this field will contain null and the RawEventData field will be populated.|
 |EventID|int||
 |EventLevel|int||
 |EventLevelName|string||
 |ManagementGroupName|string||
 |Provider|string||
+|RawEventData|string|The raw event XML when parsing fails. It's null when parsing successful.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
 |Task|int||
