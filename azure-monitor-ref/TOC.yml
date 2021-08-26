@@ -324,3 +324,5 @@
     href: tables/hdinsightkafkalogs.md
   - name: HDInsightKafkaMetrics
     href: tables/hdinsightkafkametrics.md
+  - name: HDInsightOozieLogs
+    href: tables/hdinsightoozielogs.md
