@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/19/2021
+ms.date: 8/26/2021
 ---
 
 # WVDManagement
@@ -32,6 +32,7 @@ ms.date: 8/19/2021
 
 |Column|Type|Description|
 |---|---|---|
+|ArmObjectScope|string|The ARM object scope for the management request - used for session hosts, applications.|
 |ClientSideIPAddress|string|The remote IP address from the client side.|
 |CorrelationId|string|The activity Id.|
 |ObjectsCreated|int|The number of objects that were created.|
