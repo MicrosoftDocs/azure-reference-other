@@ -190,3 +190,5 @@
     href: tables/awsvpcflow.md
   - name: AzureActivity
     href: tables/azureactivity.md
+  - name: AzureDevOpsAuditing
+    href: tables/azuredevopsauditing.md
