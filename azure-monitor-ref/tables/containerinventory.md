@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/26/2021
+ms.date: 9/2/2021
 ---
 
 # ContainerInventory
