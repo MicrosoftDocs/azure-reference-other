@@ -278,3 +278,5 @@
     href: tables/dnsinventory.md
   - name: DynamicEventCollection
     href: tables/dynamiceventcollection.md
+  - name: Dynamics365Activity
+    href: tables/dynamics365activity.md
