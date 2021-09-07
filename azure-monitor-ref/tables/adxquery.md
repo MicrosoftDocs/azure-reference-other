@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/26/2021
+ms.date: 9/2/2021
 ---
 
 # ADXQuery
@@ -38,6 +38,7 @@ ms.date: 8/26/2021
 |CacheShardsHotHits|long|Shards hot cache hits|
 |CacheShardsHotMisses|long|Shards hot cache misses|
 |Category|string|The category of this log for this events it will be Query|
+|ComponentFault|string|The entity that caused the query to fail. For example, if the query result is too large, the ComponentFault will be 'Client'. If an internal error occured, it will be 'Server'|
 |CorrelationId|string|The client request id|
 |DatabaseName|string|The name of the database the command ran on|
 |Duration|string|Command duration|
