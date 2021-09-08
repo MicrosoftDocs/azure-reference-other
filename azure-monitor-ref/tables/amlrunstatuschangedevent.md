@@ -33,7 +33,7 @@ ms.date: 9/2/2021
 |CallerIpAddress|string|The caller IP address.|
 |CorrelationId|string|A GUID used to group together a set of related events.|
 |DurationMs|string|The duration of the operation in milliseconds.|
-|Identity|string|Identity of the user or application that performed the operation|
+|Identity|string|Blank (It is planned that the identity of the user or application that performed the operation will be set in the future.)|
 |Level|string|The severity level of the event. Must be one of Informational, Warning, Error, or Critical.|
 |Location|string|The region of the resource emitting the event.|
 |Message|string|Message associated with run status change.|
