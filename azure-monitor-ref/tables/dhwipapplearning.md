@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # DHWipAppLearning
@@ -25,16 +25,16 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AppName|string||
-|Computer|string||
-|ComputerID|string||
-|ConfigMgrClientID|string||
-|EventFiredTime|datetime||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|WipActionType|string||
-|WipAppId|string||
-|WipAppIdType|string||
-|WipAppRuleType|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AppName | string |  |
+| Computer | string |  |
+| ComputerID | string |  |
+| ConfigMgrClientID | string |  |
+| EventFiredTime | datetime |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| WipActionType | string |  |
+| WipAppId | string |  |
+| WipAppIdType | string |  |
+| WipAppRuleType | string |  |
