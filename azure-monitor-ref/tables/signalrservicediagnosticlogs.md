@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SignalRServiceDiagnosticLogs
 
-Azure SignalR service diagnostic logs.
+ Azure SignalR service diagnostic logs.
 
 ## Categories
 
