@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WVDManagement
@@ -30,20 +30,20 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ArmObjectScope|string|The ARM object scope for the management request - used for session hosts, applications.|
-|ClientSideIPAddress|string|The remote IP address from the client side.|
-|CorrelationId|string|The activity Id.|
-|ObjectsCreated|int|The number of objects that were created.|
-|ObjectsDeleted|int|The number of objects that were deleted.|
-|ObjectsFetched|int|The number of objects that were fetched.|
-|ObjectsUpdated|int|The number of objects that were updated.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|Route|string|The route for the management request.|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the event.|
-|Type|string|The name of the table|
-|UserName|string|The user that initiated the management request.|
+| Column | Type | Description |
+| --- | --- | --- |
+| ArmObjectScope | string | The ARM object scope for the management request - used for session hosts, applications. |
+| ClientSideIPAddress | string | The remote IP address from the client side. |
+| CorrelationId | string | The activity Id. |
+| ObjectsCreated | int | The number of objects that were created. |
+| ObjectsDeleted | int | The number of objects that were deleted. |
+| ObjectsFetched | int | The number of objects that were fetched. |
+| ObjectsUpdated | int | The number of objects that were updated. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| Route | string | The route for the management request. |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of the event. |
+| Type | string | The name of the table |
+| UserName | string | The user that initiated the management request. |
