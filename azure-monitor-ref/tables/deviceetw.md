@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # DeviceEtw
@@ -25,23 +25,23 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActivityId|string||
-|appName|string||
-|Computer|string||
-|DeviceType|string||
-|EventId|int||
-|EventName|string||
-|period|int||
-|ProcessId|string||
-|ProviderId|string||
-|SerialNumber|string||
-|SourceSystem|string||
-|status|int||
-|tags|string||
-|ThreadId|int||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|type|int||
-|wakeEnabled|bool||
+| Column | Type | Description |
+| --- | --- | --- |
+| ActivityId | string |  |
+| appName | string |  |
+| Computer | string |  |
+| DeviceType | string |  |
+| EventId | int |  |
+| EventName | string |  |
+| period | int |  |
+| ProcessId | string |  |
+| ProviderId | string |  |
+| SerialNumber | string |  |
+| SourceSystem | string |  |
+| status | int |  |
+| tags | string |  |
+| ThreadId | int |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| type | int |  |
+| wakeEnabled | bool |  |

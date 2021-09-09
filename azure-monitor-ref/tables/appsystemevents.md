@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AppSystemEvents
@@ -28,15 +28,15 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|EventType|string|Event type|
-|Measurements|dynamic|Event measurements.|
-|Name|string|Event name|
-|Properties|dynamic|Event properties.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|Date and time when the system event was recorded.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| EventType | string | Event type |
+| Measurements | dynamic | Event measurements. |
+| Name | string | Event name |
+| Properties | dynamic | Event properties. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | Date and time when the system event was recorded. |
+| Type | string | The name of the table |

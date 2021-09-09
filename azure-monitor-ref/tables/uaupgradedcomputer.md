@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # UAUpgradedComputer
@@ -25,29 +25,29 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerID|string||
-|ConfigMgrClientID|string||
-|DeploymentError|string||
-|DeploymentErrorDetails|string||
-|DeploymentStatus|string||
-|HoursToUninstall|int||
-|LastScan|datetime||
-|Manufacturer|string||
-|Model|string||
-|OriginBuild|string||
-|OriginOSVersion|string||
-|OSArchitecture|string||
-|OSBuild|string||
-|OSEdition|string||
-|OSVersion|string||
-|SourceSystem|string||
-|TargetBuild|string||
-|TargetOSVersion|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UninstallComment|string||
-|UninstallReason|string||
-|UserAction|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerID | string |  |
+| ConfigMgrClientID | string |  |
+| DeploymentError | string |  |
+| DeploymentErrorDetails | string |  |
+| DeploymentStatus | string |  |
+| HoursToUninstall | int |  |
+| LastScan | datetime |  |
+| Manufacturer | string |  |
+| Model | string |  |
+| OriginBuild | string |  |
+| OriginOSVersion | string |  |
+| OSArchitecture | string |  |
+| OSBuild | string |  |
+| OSEdition | string |  |
+| OSVersion | string |  |
+| SourceSystem | string |  |
+| TargetBuild | string |  |
+| TargetOSVersion | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UninstallComment | string |  |
+| UninstallReason | string |  |
+| UserAction | string |  |

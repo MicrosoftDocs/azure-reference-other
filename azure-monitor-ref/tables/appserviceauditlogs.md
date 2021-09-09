@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AppServiceAuditLogs
@@ -28,17 +28,17 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string|Log category name|
-|OperationName|string|Name of the operation|
-|Protocol|string|Authentication protocol|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|Time when event is generated|
-|Type|string|The name of the table|
-|User|string|Username used for publishing access|
-|UserAddress|string|Client IP addres of the publishing user|
-|UserDisplayName|string|Email address of a user in case publishing was authorized via AAD authentication|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string | Log category name |
+| OperationName | string | Name of the operation |
+| Protocol | string | Authentication protocol |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | Time when event is generated |
+| Type | string | The name of the table |
+| User | string | Username used for publishing access |
+| UserAddress | string | Client IP addres of the publishing user |
+| UserDisplayName | string | Email address of a user in case publishing was authorized via AAD authentication |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # ServiceFabricReliableServiceEvent
@@ -25,33 +25,33 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActualCancellationTimeMillis|real||
-|ApplicationName|string||
-|ApplicationTypeName|string||
-|AzureDeploymentID|string||
-|ChannelName|string||
-|Computer|string||
-|EventId|int||
-|EventMessage|string||
-|EventSourceName|string||
-|Exception|string||
-|InstanceId|long||
-|KeywordName|string||
-|Level|string||
-|OpcodeName|string||
-|PartitionId|string||
-|Pid|int||
-|ProviderGuid|string||
-|ReplicaId|long||
-|Role|string||
-|ServiceName|string||
-|ServiceTypeName|string||
-|SlowCancellationTimeMillis|real||
-|SourceSystem|string||
-|TaskName|string||
-|Tid|int||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|WasCanceled|bool||
+| Column | Type | Description |
+| --- | --- | --- |
+| ActualCancellationTimeMillis | real |  |
+| ApplicationName | string |  |
+| ApplicationTypeName | string |  |
+| AzureDeploymentID | string |  |
+| ChannelName | string |  |
+| Computer | string |  |
+| EventId | int |  |
+| EventMessage | string |  |
+| EventSourceName | string |  |
+| Exception | string |  |
+| InstanceId | long |  |
+| KeywordName | string |  |
+| Level | string |  |
+| OpcodeName | string |  |
+| PartitionId | string |  |
+| Pid | int |  |
+| ProviderGuid | string |  |
+| ReplicaId | long |  |
+| Role | string |  |
+| ServiceName | string |  |
+| ServiceTypeName | string |  |
+| SlowCancellationTimeMillis | real |  |
+| SourceSystem | string |  |
+| TaskName | string |  |
+| Tid | int |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| WasCanceled | bool |  |

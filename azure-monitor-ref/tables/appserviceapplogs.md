@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AppServiceAppLogs
@@ -28,24 +28,24 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ContainerId|string|Application container id|
-|CustomLevel|string|Verbosity level of log|
-|ExceptionClass|string|Application class from where log message is emitted |
-|Host|string|Host where the application is running|
-|Level|string|Verbosity level of log mapped to standard levels (Informational, Warning, Error, or Critical)|
-|Logger|string|Application logger used to emit log message|
-|Message|string|Log message|
-|Method|string|Application Method from where log message is emitted|
-|OperationName|string|The name of the operation represented by this event.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultDescription|string|Log message description|
-|Source|string|Application source from where log message is emitted|
-|SourceSystem|string||
-|StackTrace|string|Complete stack trace of the log message in case of exception|
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|Time when event is generated|
-|Type|string|The name of the table|
-|WebSiteInstanceId|string|Instance Id the application running|
+| Column | Type | Description |
+| --- | --- | --- |
+| ContainerId | string | Application container id |
+| CustomLevel | string | Verbosity level of log |
+| ExceptionClass | string | Application class from where log message is emitted  |
+| Host | string | Host where the application is running |
+| Level | string | Verbosity level of log mapped to standard levels (Informational, Warning, Error, or Critical) |
+| Logger | string | Application logger used to emit log message |
+| Message | string | Log message |
+| Method | string | Application Method from where log message is emitted |
+| OperationName | string | The name of the operation represented by this event. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultDescription | string | Log message description |
+| Source | string | Application source from where log message is emitted |
+| SourceSystem | string |  |
+| StackTrace | string | Complete stack trace of the log message in case of exception |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | Time when event is generated |
+| Type | string | The name of the table |
+| WebSiteInstanceId | string | Instance Id the application running |

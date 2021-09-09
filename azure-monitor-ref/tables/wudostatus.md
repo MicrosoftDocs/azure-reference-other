@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WUDOStatus
@@ -25,36 +25,36 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|BWOptPercent28Days|real||
-|BWOptPercent7Days|real||
-|BytesFromCDN|long||
-|BytesFromGroupPeers|long||
-|BytesFromIntPeers|long||
-|BytesFromPeers|long||
-|City|string||
-|Computer|string||
-|ComputerID|string||
-|ContentDownloadMode|int||
-|ContentType|string||
-|Country|string||
-|DOStatusDescription|string||
-|DownloadMode|string||
-|DownloadModeSrc|string||
-|GroupID|string||
-|ISP|string||
-|LastScan|datetime||
-|NoPeersCount|long||
-|OSName|string||
-|OSVersion|string||
-|PeerEligibleTransfers|long||
-|PeeringStatus|string||
-|PeersCannotConnectCount|long||
-|PeersSuccessCount|long||
-|PeersUnknownCount|long||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|TotalTimeForDownload|string||
-|TotalTransfers|long||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| BWOptPercent28Days | real |  |
+| BWOptPercent7Days | real |  |
+| BytesFromCDN | long |  |
+| BytesFromGroupPeers | long |  |
+| BytesFromIntPeers | long |  |
+| BytesFromPeers | long |  |
+| City | string |  |
+| Computer | string |  |
+| ComputerID | string |  |
+| ContentDownloadMode | int |  |
+| ContentType | string |  |
+| Country | string |  |
+| DOStatusDescription | string |  |
+| DownloadMode | string |  |
+| DownloadModeSrc | string |  |
+| GroupID | string |  |
+| ISP | string |  |
+| LastScan | datetime |  |
+| NoPeersCount | long |  |
+| OSName | string |  |
+| OSVersion | string |  |
+| PeerEligibleTransfers | long |  |
+| PeeringStatus | string |  |
+| PeersCannotConnectCount | long |  |
+| PeersSuccessCount | long |  |
+| PeersUnknownCount | long |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| TotalTimeForDownload | string |  |
+| TotalTransfers | long |  |
+| Type | string | The name of the table |

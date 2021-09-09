@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AddonAzureBackupProtectedInstance
@@ -29,21 +29,21 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|BackupItemUniqueId|string||
-|BackupManagementServerUniqueId|string||
-|BackupManagementType|string||
-|Category|string||
-|OperationName|string||
-|ProtectedContainerUniqueId|string||
-|ProtectedInstanceCount|int||
-|ResourceId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SchemaVersion|string||
-|SourceSystem|string||
-|State|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|VaultUniqueId|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| BackupItemUniqueId | string |  |
+| BackupManagementServerUniqueId | string |  |
+| BackupManagementType | string |  |
+| Category | string |  |
+| OperationName | string |  |
+| ProtectedContainerUniqueId | string |  |
+| ProtectedInstanceCount | int |  |
+| ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SchemaVersion | string |  |
+| SourceSystem | string |  |
+| State | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| VaultUniqueId | string |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # McasShadowItReporting
@@ -25,26 +25,26 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AppCategory|string||
-|AppId|string||
-|AppInstance|string||
-|AppName|string||
-|AppScore|int||
-|AppTags|dynamic||
-|BlockedEvents|int||
-|DownloadedBytes|int||
-|EnrichedUserName|string||
-|IpAddress|string||
-|MachineId|string||
-|MachineName|string||
-|SourceSystem|string||
-|StreamName|string||
-|TenantId|string||
-|TimeGenerated|datetime||
-|TotalBytes|int||
-|TotalEvents|int||
-|Type|string|The name of the table|
-|UploadedBytes|int||
-|UserName|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AppCategory | string |  |
+| AppId | string |  |
+| AppInstance | string |  |
+| AppName | string |  |
+| AppScore | int |  |
+| AppTags | dynamic |  |
+| BlockedEvents | int |  |
+| DownloadedBytes | int |  |
+| EnrichedUserName | string |  |
+| IpAddress | string |  |
+| MachineId | string |  |
+| MachineName | string |  |
+| SourceSystem | string |  |
+| StreamName | string |  |
+| TenantId | string |  |
+| TimeGenerated | datetime |  |
+| TotalBytes | int |  |
+| TotalEvents | int |  |
+| Type | string | The name of the table |
+| UploadedBytes | int |  |
+| UserName | string |  |

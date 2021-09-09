@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SecurityRecommendation
@@ -27,24 +27,24 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AssessedResourceId|string||
-|Description|string||
-|DeviceId|string||
-|DiscoveredTimeUTC|datetime||
-|FirstEvaluationDate|datetime||
-|IsSnapshot|bool||
-|PolicyDefinitionId|string||
-|ProviderName|string||
-|RecommendationAdditionalData|dynamic||
-|RecommendationDisplayName|string||
-|RecommendationId|string||
-|RecommendationName|string||
-|RecommendationSeverity|string||
-|RecommendationState|string||
-|ResolvedTimeUTC|datetime||
-|ResourceRegion|string||
-|StatusChangeDate|datetime||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AssessedResourceId | string |  |
+| Description | string |  |
+| DeviceId | string |  |
+| DiscoveredTimeUTC | datetime |  |
+| FirstEvaluationDate | datetime |  |
+| IsSnapshot | bool |  |
+| PolicyDefinitionId | string |  |
+| ProviderName | string |  |
+| RecommendationAdditionalData | dynamic |  |
+| RecommendationDisplayName | string |  |
+| RecommendationId | string |  |
+| RecommendationName | string |  |
+| RecommendationSeverity | string |  |
+| RecommendationState | string |  |
+| ResolvedTimeUTC | datetime |  |
+| ResourceRegion | string |  |
+| StatusChangeDate | datetime |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

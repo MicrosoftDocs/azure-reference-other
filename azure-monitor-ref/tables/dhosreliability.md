@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # DHOSReliability
@@ -25,23 +25,23 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AbnormalShutdownCount|int||
-|Computer|string||
-|ComputerID|string||
-|ConfigMgrClientID|string||
-|Country|string||
-|DeviceLastSeenTime|datetime||
-|KernelModeCrashCount|int||
-|KernelModeCrashFreePercentForIndustry|real||
-|Manufacturer|string||
-|Model|string||
-|ModelFamily|string||
-|OSArchitecture|string||
-|OSBuildNumber|int||
-|OSEdition|string||
-|OSRevisionNumber|int||
-|OSVersion|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AbnormalShutdownCount | int |  |
+| Computer | string |  |
+| ComputerID | string |  |
+| ConfigMgrClientID | string |  |
+| Country | string |  |
+| DeviceLastSeenTime | datetime |  |
+| KernelModeCrashCount | int |  |
+| KernelModeCrashFreePercentForIndustry | real |  |
+| Manufacturer | string |  |
+| Model | string |  |
+| ModelFamily | string |  |
+| OSArchitecture | string |  |
+| OSBuildNumber | int |  |
+| OSEdition | string |  |
+| OSRevisionNumber | int |  |
+| OSVersion | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

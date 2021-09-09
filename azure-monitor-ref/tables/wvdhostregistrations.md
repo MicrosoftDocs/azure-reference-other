@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WVDHostRegistrations
@@ -28,14 +28,14 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|CorrelationId|string|The activity Id.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SessionHostIPAddress|string|The IP address of the session host that was registered with the WVD service.|
-|SessionHostName|string|The name of the session host that was registered with the WVD service.|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the event.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| CorrelationId | string | The activity Id. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SessionHostIPAddress | string | The IP address of the session host that was registered with the WVD service. |
+| SessionHostName | string | The name of the session host that was registered with the WVD service. |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of the event. |
+| Type | string | The name of the table |

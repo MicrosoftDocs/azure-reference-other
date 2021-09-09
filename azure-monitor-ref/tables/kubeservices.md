@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # KubeServices
@@ -29,17 +29,17 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ClusterId|string|ID of the kubernetes cluster from which the event was sourced|
-|ClusterIp|string|Cluster IP address of the service|
-|ClusterName|string|ID of the kubernetes cluster from which the event was sourced|
-|Namespace|string|Kuberneets namespace for the service|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SelectorLabels|string|Selector labels for label based services|
-|ServiceName|string|Kubernetes Service name|
-|ServiceType|string|Kubernetes Service type [ClusterIP/NodePort/LoadBalancer/ExternalName]|
-|SourceSystem|string|Type of agent the data was collected from. |
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime|Date and time the record was created.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| ClusterId | string | ID of the kubernetes cluster from which the event was sourced |
+| ClusterIp | string | Cluster IP address of the service |
+| ClusterName | string | ID of the kubernetes cluster from which the event was sourced |
+| Namespace | string | Kuberneets namespace for the service |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SelectorLabels | string | Selector labels for label based services |
+| ServiceName | string | Kubernetes Service name |
+| ServiceType | string | Kubernetes Service type [ClusterIP/NodePort/LoadBalancer/ExternalName] |
+| SourceSystem | string | Type of agent the data was collected from.  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime | Date and time the record was created. |
+| Type | string | The name of the table |

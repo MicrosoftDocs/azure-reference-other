@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # DHDriverReliability
@@ -25,16 +25,16 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerID|string||
-|DeviceLastSeenTime|datetime||
-|DriverKernelModeCrashCount|int||
-|DriverName|string||
-|DriverPercentCrashFreeDevicesForIndustry|real||
-|DriverVendor|string||
-|DriverVersion|string||
-|HardwareType|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerID | string |  |
+| DeviceLastSeenTime | datetime |  |
+| DriverKernelModeCrashCount | int |  |
+| DriverName | string |  |
+| DriverPercentCrashFreeDevicesForIndustry | real |  |
+| DriverVendor | string |  |
+| DriverVersion | string |  |
+| HardwareType | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

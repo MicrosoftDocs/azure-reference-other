@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # BlockchainProxyLog
@@ -28,32 +28,32 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Agent|string||
-|BlockchainMemberName|string||
-|BlockchainNodeName|string||
-|Category|string||
-|Code|string||
-|Consortium|string||
-|EthMethod|string||
-|LogLevel|string||
-|NodeHost|string||
-|NodeLocation|string||
-|OperationName|string||
-|PublicUser|string||
-|Remote|string||
-|RequestMethodName|string||
-|RequestSize|int||
-|RequestTime|real||
-|Resource|string||
-|ResourceGroup|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResourceId|string||
-|ResourceProvider|string||
-|SourceSystem|string||
-|SubscriptionId|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|Tenant|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Agent | string |  |
+| BlockchainMemberName | string |  |
+| BlockchainNodeName | string |  |
+| Category | string |  |
+| Code | string |  |
+| Consortium | string |  |
+| EthMethod | string |  |
+| LogLevel | string |  |
+| NodeHost | string |  |
+| NodeLocation | string |  |
+| OperationName | string |  |
+| PublicUser | string |  |
+| Remote | string |  |
+| RequestMethodName | string |  |
+| RequestSize | int |  |
+| RequestTime | real |  |
+| Resource | string |  |
+| ResourceGroup | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
+| ResourceProvider | string |  |
+| SourceSystem | string |  |
+| SubscriptionId | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Tenant | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AADDomainServicesDirectoryServiceAccess
@@ -29,31 +29,31 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AppCorrelationID|string||
-|AttributeLDAPDisplayName|string||
-|AttributeSyntaxOID|string||
-|AttributeValue|string||
-|Category|string||
-|CorrelationId|string||
-|DSName|string||
-|DSType|string||
-|NewObjectDN|string||
-|ObjectClass|string||
-|ObjectDN|string||
-|ObjectGUID|string||
-|OldObjectDN|string||
-|OpCorrelationID|string||
-|OperationName|string||
-|OperationType|string||
-|RecordId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResourceId|string||
-|ResultDescription|string||
-|ResultType|string||
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime||
-|TreeDelete|string||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AppCorrelationID | string |  |
+| AttributeLDAPDisplayName | string |  |
+| AttributeSyntaxOID | string |  |
+| AttributeValue | string |  |
+| Category | string |  |
+| CorrelationId | string |  |
+| DSName | string |  |
+| DSType | string |  |
+| NewObjectDN | string |  |
+| ObjectClass | string |  |
+| ObjectDN | string |  |
+| ObjectGUID | string |  |
+| OldObjectDN | string |  |
+| OpCorrelationID | string |  |
+| OperationName | string |  |
+| OperationType | string |  |
+| RecordId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
+| ResultDescription | string |  |
+| ResultType | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime |  |
+| TreeDelete | string |  |
+| Type | string | The name of the table |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AmlComputeClusterEvent
@@ -28,49 +28,49 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AllocationState|string||
-|AllocationStateTransitionTime|datetime||
-|ClusterErrorCodes|string||
-|ClusterName|string||
-|ClusterType|string||
-|CoreCount|int||
-|CreatedBy|string||
-|CreationApiVersion|string||
-|CurrentNodeCount|int||
-|EventType|string||
-|IdleNodeCount|int||
-|InitialNodeCount|int||
-|InternalOperationName|string||
-|IsResizeGrow|string||
-|LeavingNodeCount|int||
-|MaximumNodeCount|int||
-|MinimumNodeCount|int||
-|NodeDeallocationOption|string||
-|NodeIdleTimeSecondsBeforeScaleDown|int||
-|Offer|string||
-|OperationName|string||
-|PreemptedNodeCount|string||
-|PreparingNodeCount|int||
-|ProvisioningState|string||
-|Publisher|string||
-|QuotaAllocated|string||
-|QuotaUtilized|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultSignature|string||
-|RunningNodeCount|int||
-|ScalingType|string||
-|Sku|string||
-|SourceSystem|string||
-|SubnetId|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TargetNodeCount|int||
-|TenantId|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UnusableNodeCount|int||
-|Version|string||
-|VmFamilyName|string||
-|VmPriority|string||
-|VmSize|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AllocationState | string |  |
+| AllocationStateTransitionTime | datetime |  |
+| ClusterErrorCodes | string |  |
+| ClusterName | string |  |
+| ClusterType | string |  |
+| CoreCount | int |  |
+| CreatedBy | string |  |
+| CreationApiVersion | string |  |
+| CurrentNodeCount | int |  |
+| EventType | string |  |
+| IdleNodeCount | int |  |
+| InitialNodeCount | int |  |
+| InternalOperationName | string |  |
+| IsResizeGrow | string |  |
+| LeavingNodeCount | int |  |
+| MaximumNodeCount | int |  |
+| MinimumNodeCount | int |  |
+| NodeDeallocationOption | string |  |
+| NodeIdleTimeSecondsBeforeScaleDown | int |  |
+| Offer | string |  |
+| OperationName | string |  |
+| PreemptedNodeCount | string |  |
+| PreparingNodeCount | int |  |
+| ProvisioningState | string |  |
+| Publisher | string |  |
+| QuotaAllocated | string |  |
+| QuotaUtilized | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultSignature | string |  |
+| RunningNodeCount | int |  |
+| ScalingType | string |  |
+| Sku | string |  |
+| SourceSystem | string |  |
+| SubnetId | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TargetNodeCount | int |  |
+| TenantId | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UnusableNodeCount | int |  |
+| Version | string |  |
+| VmFamilyName | string |  |
+| VmPriority | string |  |
+| VmSize | string |  |

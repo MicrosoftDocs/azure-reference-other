@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AADDomainServicesAccountLogon
@@ -29,30 +29,30 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string||
-|CertIssuerName|string||
-|CertSerialNumber|string||
-|CertThumbprint|string||
-|ClientUserName|string||
-|CorrelationId|string||
-|FailureCode|string||
-|IpAddress|string||
-|IpPort|string||
-|MappedName|string||
-|MappingBy|string||
-|OperationName|string||
-|PackageName|string||
-|PreAuthType|string||
-|RecordId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResourceId|string||
-|ResultDescription|string||
-|ResultType|string||
-|ServiceName|string||
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TicketOptions|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string |  |
+| CertIssuerName | string |  |
+| CertSerialNumber | string |  |
+| CertThumbprint | string |  |
+| ClientUserName | string |  |
+| CorrelationId | string |  |
+| FailureCode | string |  |
+| IpAddress | string |  |
+| IpPort | string |  |
+| MappedName | string |  |
+| MappingBy | string |  |
+| OperationName | string |  |
+| PackageName | string |  |
+| PreAuthType | string |  |
+| RecordId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
+| ResultDescription | string |  |
+| ResultType | string |  |
+| ServiceName | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TicketOptions | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AlertHistory
@@ -25,37 +25,37 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AlertContext|string||
-|AlertDescription|string||
-|AlertId|string||
-|AlertName|string||
-|AlertPriority|string||
-|AlertSeverity|string||
-|AlertState|string||
-|Custom1|string||
-|Custom10|string||
-|Custom2|string||
-|Custom3|string||
-|Custom4|string||
-|Custom5|string||
-|Custom6|string||
-|Custom7|string||
-|Custom8|string||
-|Custom9|string||
-|LastModifiedBy|string||
-|ManagementGroupName|string||
-|RepeatCount|int||
-|ResolvedBy|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceDisplayName|string||
-|SourceFullName|string||
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TicketId|string||
-|TimeGenerated|datetime||
-|TimeLastModified|datetime||
-|TimeRaised|datetime||
-|TimeResolved|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AlertContext | string |  |
+| AlertDescription | string |  |
+| AlertId | string |  |
+| AlertName | string |  |
+| AlertPriority | string |  |
+| AlertSeverity | string |  |
+| AlertState | string |  |
+| Custom1 | string |  |
+| Custom10 | string |  |
+| Custom2 | string |  |
+| Custom3 | string |  |
+| Custom4 | string |  |
+| Custom5 | string |  |
+| Custom6 | string |  |
+| Custom7 | string |  |
+| Custom8 | string |  |
+| Custom9 | string |  |
+| LastModifiedBy | string |  |
+| ManagementGroupName | string |  |
+| RepeatCount | int |  |
+| ResolvedBy | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceDisplayName | string |  |
+| SourceFullName | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TicketId | string |  |
+| TimeGenerated | datetime |  |
+| TimeLastModified | datetime |  |
+| TimeRaised | datetime |  |
+| TimeResolved | datetime |  |
+| Type | string | The name of the table |

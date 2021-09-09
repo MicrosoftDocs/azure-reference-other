@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WUDOAggregatedStatus
@@ -25,16 +25,16 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|BWOptPercent28Days|real||
-|BytesFromCDN|long||
-|BytesFromGroupPeers|long||
-|BytesFromIntPeers|long||
-|BytesFromPeers|long||
-|ContentType|string||
-|DeviceCount|int||
-|DownloadMode|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| BWOptPercent28Days | real |  |
+| BytesFromCDN | long |  |
+| BytesFromGroupPeers | long |  |
+| BytesFromIntPeers | long |  |
+| BytesFromPeers | long |  |
+| ContentType | string |  |
+| DeviceCount | int |  |
+| DownloadMode | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # ContainerRegistryLoginEvents
@@ -28,23 +28,23 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|CallerIpAddress|string||
-|Category|string||
-|CorrelationId|string||
-|DurationMs|string||
-|Identity|string||
-|JwtId|string||
-|LoginServer|string||
-|OperationName|string||
-|Region|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultDescription|string||
-|ResultType|string||
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UserAgent|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| CallerIpAddress | string |  |
+| Category | string |  |
+| CorrelationId | string |  |
+| DurationMs | string |  |
+| Identity | string |  |
+| JwtId | string |  |
+| LoginServer | string |  |
+| OperationName | string |  |
+| Region | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultDescription | string |  |
+| ResultType | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UserAgent | string |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SigninLogs
@@ -26,70 +26,70 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AADTenantId|string||
-|AlternateSignInName|string||
-|AppDisplayName|string||
-|AppId|string||
-|AuthenticationDetails|string||
-|AuthenticationMethodsUsed|string||
-|AuthenticationProcessingDetails|string||
-|AuthenticationRequirement|string||
-|AuthenticationRequirementPolicies|string||
-|Category|string||
-|ClientAppUsed|string||
-|ConditionalAccessPolicies|dynamic||
-|ConditionalAccessStatus|string||
-|CorrelationId|string||
-|CreatedDateTime|datetime||
-|DeviceDetail|dynamic||
-|DurationMs|long||
-|FlaggedForReview|bool||
-|HomeTenantId|string||
-|Id|string||
-|Identity|string||
-|IPAddress|string||
-|IPAddressFromResourceProvider|string||
-|IsInteractive|bool||
-|IsRisky|bool||
-|Level|string||
-|Location|string||
-|LocationDetails|dynamic||
-|MfaDetail|dynamic||
-|NetworkLocationDetails|string||
-|OperationName|string||
-|OperationVersion|string||
-|OriginalRequestId|string||
-|ProcessingTimeInMilliseconds|string||
-|Resource|string||
-|ResourceDisplayName|string||
-|ResourceGroup|string||
-|ResourceId|string||
-|ResourceIdentity|string||
-|ResourceProvider|string||
-|ResourceTenantId|string||
-|ResultDescription|string||
-|ResultSignature|string||
-|ResultType|string||
-|RiskDetail|string||
-|RiskEventTypes|string||
-|RiskEventTypes_V2|string||
-|RiskLevelAggregated|string||
-|RiskLevelDuringSignIn|string||
-|RiskState|string||
-|ServicePrincipalId|string||
-|ServicePrincipalName|string||
-|SignInIdentifier|string||
-|SignInIdentifierType|string||
-|SourceSystem|string||
-|Status|dynamic||
-|TimeGenerated|datetime||
-|TokenIssuerName|string||
-|TokenIssuerType|string||
-|Type|string|The name of the table|
-|UserAgent|string||
-|UserDisplayName|string||
-|UserId|string||
-|UserPrincipalName|string||
-|UserType|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AADTenantId | string |  |
+| AlternateSignInName | string |  |
+| AppDisplayName | string |  |
+| AppId | string |  |
+| AuthenticationDetails | string |  |
+| AuthenticationMethodsUsed | string |  |
+| AuthenticationProcessingDetails | string |  |
+| AuthenticationRequirement | string |  |
+| AuthenticationRequirementPolicies | string |  |
+| Category | string |  |
+| ClientAppUsed | string |  |
+| ConditionalAccessPolicies | dynamic |  |
+| ConditionalAccessStatus | string |  |
+| CorrelationId | string |  |
+| CreatedDateTime | datetime |  |
+| DeviceDetail | dynamic |  |
+| DurationMs | long |  |
+| FlaggedForReview | bool |  |
+| HomeTenantId | string |  |
+| Id | string |  |
+| Identity | string |  |
+| IPAddress | string |  |
+| IPAddressFromResourceProvider | string |  |
+| IsInteractive | bool |  |
+| IsRisky | bool |  |
+| Level | string |  |
+| Location | string |  |
+| LocationDetails | dynamic |  |
+| MfaDetail | dynamic |  |
+| NetworkLocationDetails | string |  |
+| OperationName | string |  |
+| OperationVersion | string |  |
+| OriginalRequestId | string |  |
+| ProcessingTimeInMilliseconds | string |  |
+| Resource | string |  |
+| ResourceDisplayName | string |  |
+| ResourceGroup | string |  |
+| ResourceId | string |  |
+| ResourceIdentity | string |  |
+| ResourceProvider | string |  |
+| ResourceTenantId | string |  |
+| ResultDescription | string |  |
+| ResultSignature | string |  |
+| ResultType | string |  |
+| RiskDetail | string |  |
+| RiskEventTypes | string |  |
+| RiskEventTypes_V2 | string |  |
+| RiskLevelAggregated | string |  |
+| RiskLevelDuringSignIn | string |  |
+| RiskState | string |  |
+| ServicePrincipalId | string |  |
+| ServicePrincipalName | string |  |
+| SignInIdentifier | string |  |
+| SignInIdentifierType | string |  |
+| SourceSystem | string |  |
+| Status | dynamic |  |
+| TimeGenerated | datetime |  |
+| TokenIssuerName | string |  |
+| TokenIssuerType | string |  |
+| Type | string | The name of the table |
+| UserAgent | string |  |
+| UserDisplayName | string |  |
+| UserId | string |  |
+| UserPrincipalName | string |  |
+| UserType | string |  |

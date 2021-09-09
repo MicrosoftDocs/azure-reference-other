@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AddonAzureBackupStorage
@@ -29,28 +29,28 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|BackupItemUniqueId|string||
-|BackupManagementServerUniqueId|string||
-|BackupManagementType|string||
-|Category|string||
-|OperationName|string||
-|PreferredWorkloadOnVolume|string||
-|ProtectedContainerUniqueId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResourceId|string||
-|SchemaVersion|string||
-|SourceSystem|string||
-|State|string||
-|StorageAllocatedInMBs|real||
-|StorageConsumedInMBs|real||
-|StorageName|string||
-|StorageTotalSizeInGBs|real||
-|StorageType|string||
-|StorageUniqueId|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|VaultUniqueId|string||
-|VolumeFriendlyName|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| BackupItemUniqueId | string |  |
+| BackupManagementServerUniqueId | string |  |
+| BackupManagementType | string |  |
+| Category | string |  |
+| OperationName | string |  |
+| PreferredWorkloadOnVolume | string |  |
+| ProtectedContainerUniqueId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
+| SchemaVersion | string |  |
+| SourceSystem | string |  |
+| State | string |  |
+| StorageAllocatedInMBs | real |  |
+| StorageConsumedInMBs | real |  |
+| StorageName | string |  |
+| StorageTotalSizeInGBs | real |  |
+| StorageType | string |  |
+| StorageUniqueId | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| VaultUniqueId | string |  |
+| VolumeFriendlyName | string |  |

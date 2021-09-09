@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -41,6 +41,7 @@ ms.date: 9/2/2021
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [ADPAudit](adpaudit.md)
 - [AEWAuditLogs](aewauditlogs.md)
+- [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
@@ -87,6 +88,7 @@ ms.date: 9/2/2021
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AEWAuditLogs](aewauditlogs.md)
+- [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
