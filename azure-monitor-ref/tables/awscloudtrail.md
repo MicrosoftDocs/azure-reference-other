@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AWSCloudTrail
@@ -25,45 +25,45 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AdditionalEventData|string||
-|APIVersion|string||
-|AwsEventId|string||
-|AWSRegion|string||
-|AwsRequestId_|string||
-|Category|string||
-|ErrorCode|string||
-|ErrorMessage|string||
-|EventName|string||
-|EventSource|string||
-|EventTypeName|string||
-|EventVersion|string||
-|ManagementEvent|bool||
-|OperationName|string||
-|ReadOnly|bool||
-|RecipientAccountId|string||
-|RequestParameters|string||
-|Resources|string||
-|ResponseElements|string||
-|ServiceEventDetails|string||
-|SessionCreationDate|datetime||
-|SessionIssuerAccountId|string||
-|SessionIssuerArn|string||
-|SessionIssuerPrincipalId|string||
-|SessionIssuerType|string||
-|SessionIssuerUserName|string||
-|SessionMfaAuthenticated|bool||
-|SharedEventId|string||
-|SourceIpAddress|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UserAgent|string||
-|UserIdentityAccessKeyId|string||
-|UserIdentityAccountId|string||
-|UserIdentityArn|string||
-|UserIdentityInvokedBy|string||
-|UserIdentityPrincipalid|string||
-|UserIdentityType|string||
-|UserIdentityUserName|string||
-|VpcEndpointId|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AdditionalEventData | string |  |
+| APIVersion | string |  |
+| AwsEventId | string |  |
+| AWSRegion | string |  |
+| AwsRequestId_ | string |  |
+| Category | string |  |
+| ErrorCode | string |  |
+| ErrorMessage | string |  |
+| EventName | string |  |
+| EventSource | string |  |
+| EventTypeName | string |  |
+| EventVersion | string |  |
+| ManagementEvent | bool |  |
+| OperationName | string |  |
+| ReadOnly | bool |  |
+| RecipientAccountId | string |  |
+| RequestParameters | string |  |
+| Resources | string |  |
+| ResponseElements | string |  |
+| ServiceEventDetails | string |  |
+| SessionCreationDate | datetime |  |
+| SessionIssuerAccountId | string |  |
+| SessionIssuerArn | string |  |
+| SessionIssuerPrincipalId | string |  |
+| SessionIssuerType | string |  |
+| SessionIssuerUserName | string |  |
+| SessionMfaAuthenticated | bool |  |
+| SharedEventId | string |  |
+| SourceIpAddress | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UserAgent | string |  |
+| UserIdentityAccessKeyId | string |  |
+| UserIdentityAccountId | string |  |
+| UserIdentityArn | string |  |
+| UserIdentityInvokedBy | string |  |
+| UserIdentityPrincipalid | string |  |
+| UserIdentityType | string |  |
+| UserIdentityUserName | string |  |
+| VpcEndpointId | string |  |
