@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SecurityIoTRawEvent
@@ -25,18 +25,18 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AgentVersion|string||
-|AssociatedResourceId|string||
-|AzureSubscriptionId|string||
-|DeviceId|string||
-|EventDetails|string||
-|IoTRawEventId|string||
-|IsEmpty|bool||
-|RawEventCategory|string||
-|RawEventName|string||
-|RawEventType|string||
-|TimeGenerated|datetime||
-|TimeStamp|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AgentVersion | string |  |
+| AssociatedResourceId | string |  |
+| AzureSubscriptionId | string |  |
+| DeviceId | string |  |
+| EventDetails | string |  |
+| IoTRawEventId | string |  |
+| IsEmpty | bool |  |
+| RawEventCategory | string |  |
+| RawEventName | string |  |
+| RawEventType | string |  |
+| TimeGenerated | datetime |  |
+| TimeStamp | datetime |  |
+| Type | string | The name of the table |
