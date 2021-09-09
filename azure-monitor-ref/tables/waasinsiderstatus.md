@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WaaSInsiderStatus
@@ -25,18 +25,18 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerID|string||
-|LastScan|datetime||
-|OSArchitecture|string||
-|OSBuild|string||
-|OSEdition|string||
-|OSFamily|string||
-|OSName|string||
-|OSRevisionNumber|int||
-|OSVersion|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerID | string |  |
+| LastScan | datetime |  |
+| OSArchitecture | string |  |
+| OSBuild | string |  |
+| OSEdition | string |  |
+| OSFamily | string |  |
+| OSName | string |  |
+| OSRevisionNumber | int |  |
+| OSVersion | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
