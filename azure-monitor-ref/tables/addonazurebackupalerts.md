@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AddonAzureBackupAlerts
@@ -29,32 +29,32 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AlertCode|string||
-|AlertConsolidationStatus|string||
-|AlertOccurrenceDateTime|datetime||
-|AlertRaisedOn|string||
-|AlertSeverity|string||
-|AlertStatus|string||
-|AlertTimeToResolveInMinutes|real||
-|AlertType|string||
-|AlertUniqueId|string||
-|BackupItemUniqueId|string||
-|BackupManagementServerUniqueId|string||
-|BackupManagementType|string||
-|Category|string||
-|CountOfAlertsConsolidated|int||
-|OperationName|string||
-|ProtectedContainerUniqueId|string||
-|RecommendedAction|string||
-|ResourceId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SchemaVersion|string||
-|SourceSystem|string||
-|State|string||
-|StorageUniqueId|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|VaultUniqueId|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AlertCode | string |  |
+| AlertConsolidationStatus | string |  |
+| AlertOccurrenceDateTime | datetime |  |
+| AlertRaisedOn | string |  |
+| AlertSeverity | string |  |
+| AlertStatus | string |  |
+| AlertTimeToResolveInMinutes | real |  |
+| AlertType | string |  |
+| AlertUniqueId | string |  |
+| BackupItemUniqueId | string |  |
+| BackupManagementServerUniqueId | string |  |
+| BackupManagementType | string |  |
+| Category | string |  |
+| CountOfAlertsConsolidated | int |  |
+| OperationName | string |  |
+| ProtectedContainerUniqueId | string |  |
+| RecommendedAction | string |  |
+| ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SchemaVersion | string |  |
+| SourceSystem | string |  |
+| State | string |  |
+| StorageUniqueId | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| VaultUniqueId | string |  |
