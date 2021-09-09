@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -434,6 +434,7 @@ ms.date: 9/2/2021
 ## Experiment Workspace
 
 - [AEWAuditLogs](aewauditlogs.md)
+- [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AzureActivity](azureactivity.md)
 
 ## ExpressRoute Circuits
@@ -614,6 +615,9 @@ ms.date: 9/2/2021
 ## Power BI Datasets
 
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
