@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # DeviceCalendar
@@ -25,19 +25,19 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|DelaySeconds|int||
-|DeviceType|string||
-|ErrorMessage|string||
-|EventId|int||
-|EventName|string||
-|HealthServiceId|string||
-|ProviderId|string||
-|ResultCode|int||
-|SerialNumber|string||
-|SourceSystem|string||
-|SyncStatus|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| DelaySeconds | int |  |
+| DeviceType | string |  |
+| ErrorMessage | string |  |
+| EventId | int |  |
+| EventName | string |  |
+| HealthServiceId | string |  |
+| ProviderId | string |  |
+| ResultCode | int |  |
+| SerialNumber | string |  |
+| SourceSystem | string |  |
+| SyncStatus | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
