@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AddonAzureBackupJobs
@@ -29,33 +29,33 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AdHocOrScheduledJob|string||
-|BackupItemUniqueId|string||
-|BackupManagementServerUniqueId|string||
-|BackupManagementType|string||
-|Category|string||
-|DataTransferredInMB|real||
-|JobDurationInSecs|real||
-|JobFailureCode|string||
-|JobOperation|string||
-|JobOperationSubType|string||
-|JobStartDateTime|datetime||
-|JobStatus|string||
-|JobUniqueId|string||
-|OperationName|string||
-|ProtectedContainerUniqueId|string||
-|RecoveryJobDestination|string||
-|RecoveryJobRPDateTime|datetime||
-|RecoveryJobRPLocation|string||
-|RecoveryLocationType|string||
-|ResourceId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SchemaVersion|string||
-|SourceSystem|string||
-|State|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|VaultUniqueId|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AdHocOrScheduledJob | string |  |
+| BackupItemUniqueId | string |  |
+| BackupManagementServerUniqueId | string |  |
+| BackupManagementType | string |  |
+| Category | string |  |
+| DataTransferredInMB | real |  |
+| JobDurationInSecs | real |  |
+| JobFailureCode | string |  |
+| JobOperation | string |  |
+| JobOperationSubType | string |  |
+| JobStartDateTime | datetime |  |
+| JobStatus | string |  |
+| JobUniqueId | string |  |
+| OperationName | string |  |
+| ProtectedContainerUniqueId | string |  |
+| RecoveryJobDestination | string |  |
+| RecoveryJobRPDateTime | datetime |  |
+| RecoveryJobRPLocation | string |  |
+| RecoveryLocationType | string |  |
+| ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SchemaVersion | string |  |
+| SourceSystem | string |  |
+| State | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| VaultUniqueId | string |  |
