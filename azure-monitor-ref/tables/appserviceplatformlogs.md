@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AppServicePlatformLogs
@@ -28,16 +28,16 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ContainerId|string|Application container id|
-|Host|string|Host where the application is running|
-|Level|string|Level of log verbosity|
-|Message|string|Log message|
-|OperationName|string|The name of the operation represented by this event.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|Time when event is generated|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| ContainerId | string | Application container id |
+| Host | string | Host where the application is running |
+| Level | string | Level of log verbosity |
+| Message | string | Log message |
+| OperationName | string | The name of the operation represented by this event. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | Time when event is generated |
+| Type | string | The name of the table |
