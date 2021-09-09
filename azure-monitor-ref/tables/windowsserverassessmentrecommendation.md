@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WindowsServerAssessmentRecommendation
@@ -25,35 +25,35 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActionArea|string||
-|ActionAreaId|string||
-|AffectedObjectName|string||
-|AffectedObjectType|string||
-|AssessmentId|string||
-|Cluster|string||
-|Computer|string||
-|CustomData|string||
-|Description|string||
-|Domain|string||
-|FocusArea|string||
-|FocusAreaId|string||
-|HyperVMHost|string||
-|IISApplication|string||
-|IISApplicationPool|string||
-|Ipv4Address|string||
-|OSVersion|string||
-|Recommendation|string||
-|RecommendationId|string||
-|RecommendationResult|string||
-|RecommendationWeight|real||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|Server|string||
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|Technology|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|WebServer|string||
-|WebSite|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| ActionArea | string |  |
+| ActionAreaId | string |  |
+| AffectedObjectName | string |  |
+| AffectedObjectType | string |  |
+| AssessmentId | string |  |
+| Cluster | string |  |
+| Computer | string |  |
+| CustomData | string |  |
+| Description | string |  |
+| Domain | string |  |
+| FocusArea | string |  |
+| FocusAreaId | string |  |
+| HyperVMHost | string |  |
+| IISApplication | string |  |
+| IISApplicationPool | string |  |
+| Ipv4Address | string |  |
+| OSVersion | string |  |
+| Recommendation | string |  |
+| RecommendationId | string |  |
+| RecommendationResult | string |  |
+| RecommendationWeight | real |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| Server | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Technology | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| WebServer | string |  |
+| WebSite | string |  |
