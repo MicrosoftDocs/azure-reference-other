@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # TSIIngress
@@ -28,21 +28,21 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string|Category of the log event.|
-|CorrelationId|string|The correlation ID of the request.|
-|ErrorCode|string|The code associated with the error|
-|EventSourceProperties|dynamic|A collection of properties specific to your event source. Contains details such as the consumer group and the access key name.|
-|EventSourceType|string|The type of event source. It could either be Event hub or IoT hub.|
-|Level|string|The severity level of the event.|
-|Location|string|The location of the resource.|
-|Message|string|The message associated with the error. Includes details on what went wrong and how to mitigate the error.|
-|OperationName|string|Operation name of the event.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultDescription|string|Description of the result of the operation, such as 'Received forbidden error'.|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|Time (UTC) at which this event is generated.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string | Category of the log event. |
+| CorrelationId | string | The correlation ID of the request. |
+| ErrorCode | string | The code associated with the error |
+| EventSourceProperties | dynamic | A collection of properties specific to your event source. Contains details such as the consumer group and the access key name. |
+| EventSourceType | string | The type of event source. It could either be Event hub or IoT hub. |
+| Level | string | The severity level of the event. |
+| Location | string | The location of the resource. |
+| Message | string | The message associated with the error. Includes details on what went wrong and how to mitigate the error. |
+| OperationName | string | Operation name of the event. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultDescription | string | Description of the result of the operation, such as 'Received forbidden error'. |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | Time (UTC) at which this event is generated. |
+| Type | string | The name of the table |
