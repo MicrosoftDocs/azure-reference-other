@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # DeviceConnectSession
@@ -25,21 +25,21 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|DeviceType|string||
-|EventId|int||
-|EventName|string||
-|HealthServiceId|string||
-|Opcode|int||
-|ProviderId|string||
-|SerialNumber|string||
-|sessionClass|string||
-|sessionConnected|bool||
-|sessionDurationMilliSeconds|real||
-|sessionType|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|wasCleanShutdown|bool||
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| DeviceType | string |  |
+| EventId | int |  |
+| EventName | string |  |
+| HealthServiceId | string |  |
+| Opcode | int |  |
+| ProviderId | string |  |
+| SerialNumber | string |  |
+| sessionClass | string |  |
+| sessionConnected | bool |  |
+| sessionDurationMilliSeconds | real |  |
+| sessionType | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| wasCleanShutdown | bool |  |
