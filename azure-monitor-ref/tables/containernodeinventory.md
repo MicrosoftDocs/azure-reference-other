@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # ContainerNodeInventory
@@ -29,13 +29,13 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string|Computer/node name in the cluster for which the event applies. If not, computer/node name of sourcing computer|
-|DockerVersion|string|Container runtime version|
-|OperatingSystem|string|Nodes host OS Image|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string|Type of agent the data was collected from. |
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime|Date and time the record was created.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string | Computer/node name in the cluster for which the event applies. If not, computer/node name of sourcing computer |
+| DockerVersion | string | Container runtime version |
+| OperatingSystem | string | Nodes host OS Image |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string | Type of agent the data was collected from.  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime | Date and time the record was created. |
+| Type | string | The name of the table |
