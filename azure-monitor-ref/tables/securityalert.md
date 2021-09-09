@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SecurityAlert
@@ -29,35 +29,35 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AlertLink|string||
-|AlertName|string||
-|AlertSeverity|string||
-|CompromisedEntity|string||
-|ConfidenceLevel|string||
-|ConfidenceScore|real||
-|Description|string||
-|DisplayName|string||
-|EndTime|datetime||
-|Entities|string||
-|ExtendedLinks|string||
-|ExtendedProperties|string||
-|IsIncident|bool||
-|ProcessingEndTime|datetime||
-|ProductComponentName|string||
-|ProductName|string||
-|ProviderName|string||
-|RemediationSteps|string||
-|ResourceId|string||
-|SourceComputerId|string||
-|StartTime|datetime||
-|Status|string||
-|SystemAlertId|string||
-|Tactics|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|VendorName|string||
-|VendorOriginalId|string||
-|WorkspaceResourceGroup|string||
-|WorkspaceSubscriptionId|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AlertLink | string |  |
+| AlertName | string |  |
+| AlertSeverity | string |  |
+| CompromisedEntity | string |  |
+| ConfidenceLevel | string |  |
+| ConfidenceScore | real |  |
+| Description | string |  |
+| DisplayName | string |  |
+| EndTime | datetime |  |
+| Entities | string |  |
+| ExtendedLinks | string |  |
+| ExtendedProperties | string |  |
+| IsIncident | bool |  |
+| ProcessingEndTime | datetime |  |
+| ProductComponentName | string |  |
+| ProductName | string |  |
+| ProviderName | string |  |
+| RemediationSteps | string |  |
+| ResourceId | string |  |
+| SourceComputerId | string |  |
+| StartTime | datetime |  |
+| Status | string |  |
+| SystemAlertId | string |  |
+| Tactics | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| VendorName | string |  |
+| VendorOriginalId | string |  |
+| WorkspaceResourceGroup | string |  |
+| WorkspaceSubscriptionId | string |  |
