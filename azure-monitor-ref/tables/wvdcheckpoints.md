@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WVDCheckpoints
@@ -30,17 +30,17 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActivityType|string|The type of activity for which this checkpoint was reported.|
-|CorrelationId|string|The correlation Id for the activity.|
-|Name|string|The name of the checkpoint.|
-|Parameters|dynamic|The parameters for the checkpoint.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|Source|string|The component that emitted the checkpoint.|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the event.|
-|Type|string|The name of the table|
-|UserName|string|The user name for the activity associated with the checkpoint.|
+| Column | Type | Description |
+| --- | --- | --- |
+| ActivityType | string | The type of activity for which this checkpoint was reported. |
+| CorrelationId | string | The correlation Id for the activity. |
+| Name | string | The name of the checkpoint. |
+| Parameters | dynamic | The parameters for the checkpoint. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| Source | string | The component that emitted the checkpoint. |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of the event. |
+| Type | string | The name of the table |
+| UserName | string | The user name for the activity associated with the checkpoint. |
