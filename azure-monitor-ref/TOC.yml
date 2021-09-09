@@ -60,3 +60,5 @@
     href: tables/addonazurebackupstorage.md
   - name: ADFSandboxPipelineRun
     href: tables/adfsandboxpipelinerun.md
+  - name: ADFSSignInLogs
+    href: tables/adfssigninlogs.md
