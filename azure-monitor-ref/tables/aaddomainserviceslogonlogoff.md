@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AADDomainServicesLogonLogoff
@@ -29,43 +29,43 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AuthenticationPackageName|string||
-|Category|string||
-|CorrelationId|string||
-|ElevatedToken|string||
-|FailureReason|string||
-|ImpersonationLevel|string||
-|KeyLength|int||
-|LmPackageName|string||
-|LogonGuid|string||
-|LogonProcessName|string||
-|LogonType|int||
-|OperationName|string||
-|RecordId|string||
-|ResourceId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|RestrictedAdminMode|string||
-|ResultDescription|string||
-|ResultType|string||
-|SidList|string||
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|SubStatus|string||
-|TargetDomainName|string||
-|TargetInfo|string||
-|TargetLinkedLogonId|string||
-|TargetLogonGuid|string||
-|TargetLogonId|string||
-|TargetOutboundDomainName|string||
-|TargetOutboundUserName|string||
-|TargetServerName|string||
-|TargetUserName|string||
-|TargetUserSid|string||
-|TdoSid|string||
-|TimeGenerated|datetime||
-|TransmittedServices|string||
-|Type|string|The name of the table|
-|VirtualAccount|string||
-|WorkstationName|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AuthenticationPackageName | string |  |
+| Category | string |  |
+| CorrelationId | string |  |
+| ElevatedToken | string |  |
+| FailureReason | string |  |
+| ImpersonationLevel | string |  |
+| KeyLength | int |  |
+| LmPackageName | string |  |
+| LogonGuid | string |  |
+| LogonProcessName | string |  |
+| LogonType | int |  |
+| OperationName | string |  |
+| RecordId | string |  |
+| ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| RestrictedAdminMode | string |  |
+| ResultDescription | string |  |
+| ResultType | string |  |
+| SidList | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| SubStatus | string |  |
+| TargetDomainName | string |  |
+| TargetInfo | string |  |
+| TargetLinkedLogonId | string |  |
+| TargetLogonGuid | string |  |
+| TargetLogonId | string |  |
+| TargetOutboundDomainName | string |  |
+| TargetOutboundUserName | string |  |
+| TargetServerName | string |  |
+| TargetUserName | string |  |
+| TargetUserSid | string |  |
+| TdoSid | string |  |
+| TimeGenerated | datetime |  |
+| TransmittedServices | string |  |
+| Type | string | The name of the table |
+| VirtualAccount | string |  |
+| WorkstationName | string |  |
