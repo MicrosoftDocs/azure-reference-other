@@ -19,7 +19,7 @@ ms.date: 05/17/2018
 |**Data type**|**Description**|
 |-|-|  
 |bigint|Integers in the range -2^63 (-9,223,372,036,854,775,808) to 2^63-1 (9,223,372,036,854,775,807).|  
-|float|Floating point numbers in the range - 1.79E+308 to -2.23E-308, 0, and 2.23E-308 to 1.79E+308.|  
+|float|Floating point numbers in the range - 1.79E+308 to -2.23E-308, 0, and 2.23E-308 to 1.79E+308. Floating-point decimal values generally do not have an exact binary representation. Loss of precision can be experienced. This is not specific to Azure Stream Analytics but to all floating-point numbers.|  
 |nvarchar(max)|Text values, comprised of Unicode characters. Note: A value other than max is not supported.|  
 |datetime|Defines a date that is combined with a time of day with fractional seconds (7 digits, 100 nanoseconds precision) that is based on a 24-hour clock and relative to UTC (time zone offset 0).|  
 |bit|An integer that can take a value of 1, 0, or NULL. This is supported in [compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above. |
@@ -35,6 +35,8 @@ These are the rules governing *data type conversions*:
 - Precision loss and overflow inside output write operations is handled by configured error policy (set to either Drop or Retry)  
 - Type conversion errors happening during output write operations are handled by the error policy  
 - Type conversion errors happening during input read operations cause the job to drop the event
+
+A loss of precision may happen in converting values to float. It is not specific to Azure Stream Analytics but to the float data type in general. As such it is not considered an error. In the case where every digit needs to be conserved, the data should be read as string.
 
 ## Casting data
 There are three functions in the streaming SQL language that are useful for observing and adjusting the data type of your data.
