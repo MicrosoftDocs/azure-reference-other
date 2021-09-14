@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # UpdateRunProgress
@@ -32,33 +32,33 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerEnvironment|string||
-|CorrelationId|string||
-|EndTime|datetime||
-|ErrorResult|string||
-|InstallationStatus|string||
-|KBID|string||
-|ManagementGroupName|string||
-|OSType|string||
-|Product|string||
-|Resource|string||
-|ResourceGroup|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResourceId|string||
-|ResourceProvider|string||
-|ResourceType|string||
-|SourceComputerId|string||
-|SourceSystem|string||
-|StartTime|datetime||
-|SubscriptionId|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|SucceededOnRetry|bool||
-|TimeGenerated|datetime||
-|Title|string||
-|Type|string|The name of the table|
-|UpdateId|string||
-|UpdateRunName|string||
-|VMUUID|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerEnvironment | string |  |
+| CorrelationId | string |  |
+| EndTime | datetime |  |
+| ErrorResult | string |  |
+| InstallationStatus | string |  |
+| KBID | string |  |
+| ManagementGroupName | string |  |
+| OSType | string |  |
+| Product | string |  |
+| Resource | string |  |
+| ResourceGroup | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
+| ResourceProvider | string |  |
+| ResourceType | string |  |
+| SourceComputerId | string |  |
+| SourceSystem | string |  |
+| StartTime | datetime |  |
+| SubscriptionId | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| SucceededOnRetry | bool |  |
+| TimeGenerated | datetime |  |
+| Title | string |  |
+| Type | string | The name of the table |
+| UpdateId | string |  |
+| UpdateRunName | string |  |
+| VMUUID | string |  |

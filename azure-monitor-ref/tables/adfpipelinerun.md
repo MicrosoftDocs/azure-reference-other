@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # ADFPipelineRun
@@ -28,28 +28,28 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Annotations|string||
-|Category|string||
-|CorrelationId|string||
-|End|datetime||
-|EventMessage|string||
-|FailureType|string||
-|Level|string||
-|Location|string||
-|OperationName|string||
-|Parameters|string||
-|PipelineName|string||
-|Predecessors|string||
-|ResourceId|string||
-|RunId|string||
-|SourceSystem|string||
-|Start|datetime||
-|Status|string||
-|SystemParameters|string||
-|Tags|string||
-|TenantId|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UserProperties|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| Annotations | string |  |
+| Category | string |  |
+| CorrelationId | string |  |
+| End | datetime |  |
+| EventMessage | string |  |
+| FailureType | string |  |
+| Level | string |  |
+| Location | string |  |
+| OperationName | string |  |
+| Parameters | string |  |
+| PipelineName | string |  |
+| Predecessors | string |  |
+| ResourceId | string |  |
+| RunId | string |  |
+| SourceSystem | string |  |
+| Start | datetime |  |
+| Status | string |  |
+| SystemParameters | string |  |
+| Tags | string |  |
+| TenantId | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UserProperties | string |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # UserPeerAnalytics
@@ -25,19 +25,19 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AADTenantId|string|Unique identifier of the Azure Tenant|
-|PeerUserId|string|Unique identifier of the peer of the primary user|
-|PeerUserName|string|User name of the peer of the primary user|
-|PeerUserPrincipalName|string|User principal name of the peer of the primary user|
-|Rank|int|Rank of the peer with respect to the primary user|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|Timestamp when the peer analytics is calculated|
-|Type|string|The name of the table|
-|UserId|string|Unique identifier of the primary user|
-|UserName|string|User name of the primary user|
-|UserPrincipalName|string|User principal name of the primary user|
+| Column | Type | Description |
+| --- | --- | --- |
+| AADTenantId | string | Unique identifier of the Azure Tenant |
+| PeerUserId | string | Unique identifier of the peer of the primary user |
+| PeerUserName | string | User name of the peer of the primary user |
+| PeerUserPrincipalName | string | User principal name of the peer of the primary user |
+| Rank | int | Rank of the peer with respect to the primary user |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | Timestamp when the peer analytics is calculated |
+| Type | string | The name of the table |
+| UserId | string | Unique identifier of the primary user |
+| UserName | string | User name of the primary user |
+| UserPrincipalName | string | User principal name of the primary user |

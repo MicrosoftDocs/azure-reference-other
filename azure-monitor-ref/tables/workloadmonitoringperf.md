@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WorkloadMonitoringPerf
@@ -25,22 +25,22 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|CounterName|string||
-|InstanceName|string||
-|IsSystemDisk|string||
-|LogicalDisk|string||
-|MemoryInstance|string||
-|NetworkAdapter|string||
-|ObjectName|string||
-|PerfCounterValue|real||
-|PhysicalDisk|string||
-|ProcessorInformation|string||
-|ProcessorInstance|string||
-|SecureChannel|string||
-|ServiceName|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| CounterName | string |  |
+| InstanceName | string |  |
+| IsSystemDisk | string |  |
+| LogicalDisk | string |  |
+| MemoryInstance | string |  |
+| NetworkAdapter | string |  |
+| ObjectName | string |  |
+| PerfCounterValue | real |  |
+| PhysicalDisk | string |  |
+| ProcessorInformation | string |  |
+| ProcessorInstance | string |  |
+| SecureChannel | string |  |
+| ServiceName | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

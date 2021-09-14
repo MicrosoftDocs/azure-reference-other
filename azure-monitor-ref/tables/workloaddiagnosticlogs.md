@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WorkloadDiagnosticLogs
@@ -26,14 +26,14 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string|The category of the log.|
-|Computer|string|Name of the Computer generating the log.|
-|Message|string|The message of the log entry.|
-|SourceSystem|string||
-|Status|string|The status of the record. Example: Error, Warning, etc.|
-|Tags|dynamic|Dimensions or other metatata about the record. For example may contain the Monitoring profile ID the log entry is about.|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp of when the log was generated.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string | The category of the log. |
+| Computer | string | Name of the Computer generating the log. |
+| Message | string | The message of the log entry. |
+| SourceSystem | string |  |
+| Status | string | The status of the record. Example: Error, Warning, etc. |
+| Tags | dynamic | Dimensions or other metatata about the record. For example may contain the Monitoring profile ID the log entry is about. |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp of when the log was generated. |
+| Type | string | The name of the table |

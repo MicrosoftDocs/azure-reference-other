@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SynapseDXTableUsageStatistics
@@ -25,21 +25,21 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ApplicationName|string|The name of the application that invoked the command|
-|CorrelationId|string|The client request ID|
-|DatabaseName|string|Name of the database|
-|MaxCreatedOn|datetime|Lastest extent time of the table|
-|MinCreatedOn|datetime|Earliest extent time of the table|
-|Principal|string|Principal that invoked the query like 'aaduser=USER_ID;TENANT'|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|RootActivityId|string|The root activity ID|
-|SourceSystem|string||
-|StartedOn|datetime|The time (UTC) the table usage statistics operation started|
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TableName|string|Name of the table|
-|TenantId|string||
-|TimeGenerated|datetime|The time (UTC) this event was generated|
-|Type|string|The name of the table|
-|User|string|User that invoked the query|
+| Column | Type | Description |
+| --- | --- | --- |
+| ApplicationName | string | The name of the application that invoked the command |
+| CorrelationId | string | The client request ID |
+| DatabaseName | string | Name of the database |
+| MaxCreatedOn | datetime | Lastest extent time of the table |
+| MinCreatedOn | datetime | Earliest extent time of the table |
+| Principal | string | Principal that invoked the query like 'aaduser=USER_ID;TENANT' |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| RootActivityId | string | The root activity ID |
+| SourceSystem | string |  |
+| StartedOn | datetime | The time (UTC) the table usage statistics operation started |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TableName | string | Name of the table |
+| TenantId | string |  |
+| TimeGenerated | datetime | The time (UTC) this event was generated |
+| Type | string | The name of the table |
+| User | string | User that invoked the query |

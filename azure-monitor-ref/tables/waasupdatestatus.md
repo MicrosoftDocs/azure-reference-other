@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # WaaSUpdateStatus
@@ -25,31 +25,31 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerID|string||
-|DownloadMode|string||
-|FeatureDeferralDays|int||
-|FeaturePauseDays|int||
-|FeaturePauseState|string||
-|LastScan|datetime||
-|NeedAttentionStatus|string||
-|OSArchitecture|string||
-|OSBuild|string||
-|OSCurrentStatus|string||
-|OSEdition|string||
-|OSFamily|string||
-|OSFeatureUpdateStatus|string||
-|OSName|string||
-|OSQualityUpdateStatus|string||
-|OSRevisionNumber|int||
-|OSSecurityUpdateStatus|string||
-|OSServicingBranch|string||
-|OSVersion|string||
-|QualityDeferralDays|int||
-|QualityPauseDays|int||
-|QualityPauseState|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerID | string |  |
+| DownloadMode | string |  |
+| FeatureDeferralDays | int |  |
+| FeaturePauseDays | int |  |
+| FeaturePauseState | string |  |
+| LastScan | datetime |  |
+| NeedAttentionStatus | string |  |
+| OSArchitecture | string |  |
+| OSBuild | string |  |
+| OSCurrentStatus | string |  |
+| OSEdition | string |  |
+| OSFamily | string |  |
+| OSFeatureUpdateStatus | string |  |
+| OSName | string |  |
+| OSQualityUpdateStatus | string |  |
+| OSRevisionNumber | int |  |
+| OSSecurityUpdateStatus | string |  |
+| OSServicingBranch | string |  |
+| OSVersion | string |  |
+| QualityDeferralDays | int |  |
+| QualityPauseDays | int |  |
+| QualityPauseState | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

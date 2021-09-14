@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SynapseDXIngestionBatching
@@ -25,19 +25,19 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|BatchingType|string|Batching type: Whether the batch reached the limit of batching time, data size, or number of files set by the the batching policy|
-|BatchSizeBytes|long|Total uncompressed size of data in this batch (bytes)|
-|BatchTimeSeconds|real|Total batching time of this batch (seconds)|
-|Database|string|The name of the database holding the target table|
-|DataSourcesInBatch|int|Number of data sources in this batch|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|RootActivityId|string|The operation's activity ID|
-|SourceCreationTime|datetime|When the first blobs in this batch were created (UTC time)|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|Table|string|The name of the target table the data is ingested into|
-|TenantId|string||
-|TimeGenerated|datetime|The time (UTC) this event was generated|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| BatchingType | string | Batching type: Whether the batch reached the limit of batching time, data size, or number of files set by the the batching policy |
+| BatchSizeBytes | long | Total uncompressed size of data in this batch (bytes) |
+| BatchTimeSeconds | real | Total batching time of this batch (seconds) |
+| Database | string | The name of the database holding the target table |
+| DataSourcesInBatch | int | Number of data sources in this batch |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| RootActivityId | string | The operation's activity ID |
+| SourceCreationTime | datetime | When the first blobs in this batch were created (UTC time) |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Table | string | The name of the target table the data is ingested into |
+| TenantId | string |  |
+| TimeGenerated | datetime | The time (UTC) this event was generated |
+| Type | string | The name of the table |

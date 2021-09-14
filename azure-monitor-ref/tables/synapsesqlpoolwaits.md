@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SynapseSqlPoolWaits
@@ -28,17 +28,17 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string|The category of the log.|
-|LogicalServerName|string|The logical server name of the SQL DW.|
-|OperationName|string|The operation associated with log record.|
-|Priority|int|The priority of the waits.|
-|ResourceGroup|string|The azure resourceGroup of the SQL DW.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string||
-|State|string|The State of the waits.|
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string | The category of the log. |
+| LogicalServerName | string | The logical server name of the SQL DW. |
+| OperationName | string | The operation associated with log record. |
+| Priority | int | The priority of the waits. |
+| ResourceGroup | string | The azure resourceGroup of the SQL DW. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string |  |
+| State | string | The State of the waits. |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
+| Type | string | The name of the table |

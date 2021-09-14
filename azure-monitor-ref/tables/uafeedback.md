@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # UAFeedback
@@ -25,19 +25,19 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AppName|string||
-|AppVersion|string||
-|Category|string||
-|Computer|string||
-|ComputerID|string||
-|Feedback|string||
-|FeedbackSubmittedDate|datetime||
-|MicrosoftResponse|string||
-|Sentiment|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Title|string||
-|TotalUpvotes|int||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AppName | string |  |
+| AppVersion | string |  |
+| Category | string |  |
+| Computer | string |  |
+| ComputerID | string |  |
+| Feedback | string |  |
+| FeedbackSubmittedDate | datetime |  |
+| MicrosoftResponse | string |  |
+| Sentiment | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Title | string |  |
+| TotalUpvotes | int |  |
+| Type | string | The name of the table |

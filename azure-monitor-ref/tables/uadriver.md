@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # UADriver
@@ -25,26 +25,26 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerID|string||
-|DriverAvailability|string||
-|DriverDate|string||
-|DriverName|string||
-|DriverVendor|string||
-|DriverVersion|string||
-|Guidance|string||
-|HardwareID|string||
-|HardwareName|string||
-|HardwareType|string||
-|Importance|string||
-|IsRollup|bool||
-|Issue|string||
-|RollupLevel|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|TotalComputers|int||
-|Type|string|The name of the table|
-|UpgradeAssessment|string||
-|UpgradeDecision|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerID | string |  |
+| DriverAvailability | string |  |
+| DriverDate | string |  |
+| DriverName | string |  |
+| DriverVendor | string |  |
+| DriverVersion | string |  |
+| Guidance | string |  |
+| HardwareID | string |  |
+| HardwareName | string |  |
+| HardwareType | string |  |
+| Importance | string |  |
+| IsRollup | bool |  |
+| Issue | string |  |
+| RollupLevel | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| TotalComputers | int |  |
+| Type | string | The name of the table |
+| UpgradeAssessment | string |  |
+| UpgradeDecision | string |  |

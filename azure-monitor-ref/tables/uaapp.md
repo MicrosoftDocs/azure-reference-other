@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # UAApp
@@ -25,31 +25,31 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AppCategory|string||
-|AppLanguage|string||
-|AppName|string||
-|AppOwner|string||
-|AppType|string||
-|AppVendor|string||
-|AppVersion|string||
-|Computer|string||
-|ComputerID|string||
-|ComputersWithIssues|int||
-|Guidance|string||
-|Importance|string||
-|IsRollup|bool||
-|Issue|string||
-|MonthlyActiveComputers|int||
-|PercentActiveComputers|string||
-|ReadyForWindows|string||
-|RollupLevel|string||
-|SourceSystem|string||
-|TestPlan|string||
-|TestResult|string||
-|TimeGenerated|datetime||
-|TotalInstalls|int||
-|Type|string|The name of the table|
-|UpgradeAssessment|string||
-|UpgradeDecision|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AppCategory | string |  |
+| AppLanguage | string |  |
+| AppName | string |  |
+| AppOwner | string |  |
+| AppType | string |  |
+| AppVendor | string |  |
+| AppVersion | string |  |
+| Computer | string |  |
+| ComputerID | string |  |
+| ComputersWithIssues | int |  |
+| Guidance | string |  |
+| Importance | string |  |
+| IsRollup | bool |  |
+| Issue | string |  |
+| MonthlyActiveComputers | int |  |
+| PercentActiveComputers | string |  |
+| ReadyForWindows | string |  |
+| RollupLevel | string |  |
+| SourceSystem | string |  |
+| TestPlan | string |  |
+| TestResult | string |  |
+| TimeGenerated | datetime |  |
+| TotalInstalls | int |  |
+| Type | string | The name of the table |
+| UpgradeAssessment | string |  |
+| UpgradeDecision | string |  |

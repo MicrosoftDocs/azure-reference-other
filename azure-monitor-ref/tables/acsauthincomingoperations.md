@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # ACSAuthIncomingOperations
@@ -28,24 +28,24 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|CallerIpAddress|string|The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address.|
-|Category|string|The log category of the event. Logs with the same log category and resource type will have the same properties fields.|
-|CorrelationId|string|The ID for correlated events. Can be used to identify correlated events between multiple tables.|
-|DurationMs|int|The duration of the operation in milliseconds.|
-|Identity|string|The request sender's identity|
-|Level|string|The severity level of the operation.|
-|OperationName|string|The operation associated with log record.|
-|OperationVersion|string|The API-version associated with the operation or version of the operation (if there is no API version).|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultDescription|string|The static text description of this operation.|
-|ResultSignature|string|The sub status of the operation. If this operation corresponds to a REST API call, this field is the HTTP status code of the corresponding REST call.|
-|ResultType|string|The status of the operation.|
-|Scopes|dynamic|Scopes for the auth request (e.g. Chat, SMS, etc.)|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
-|Type|string|The name of the table|
-|URI|string|The URI of the request|
+| Column | Type | Description |
+| --- | --- | --- |
+| CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
+| Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
+| CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
+| DurationMs | int | The duration of the operation in milliseconds. |
+| Identity | string | The request sender's identity |
+| Level | string | The severity level of the operation. |
+| OperationName | string | The operation associated with log record. |
+| OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultDescription | string | The static text description of this operation. |
+| ResultSignature | string | The sub status of the operation. If this operation corresponds to a REST API call, this field is the HTTP status code of the corresponding REST call. |
+| ResultType | string | The status of the operation. |
+| Scopes | dynamic | Scopes for the auth request (e.g. Chat, SMS, etc.) |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
+| Type | string | The name of the table |
+| URI | string | The URI of the request |

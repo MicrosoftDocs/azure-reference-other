@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # FunctionAppLogs
@@ -29,23 +29,23 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActivityId|string|The activity id that logged the message.|
-|Category|string|The log category name.|
-|ExceptionDetails|string|The exception details.|
-|ExceptionMessage|string|The exception message.|
-|ExceptionType|string|The exception type.|
-|FunctionInvocationId|string|The invocation id that logged the message.|
-|FunctionName|string|The name of the function that logged the message.|
-|HostInstanceId|string|The host instance id.|
-|HostVersion|string|The Functions host version.|
-|Level|string|The log level.|
-|Location|string|The location of the server that processed the request (e.g., South Central US).|
-|Message|string|The log message.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| ActivityId | string | The activity id that logged the message. |
+| Category | string | The log category name. |
+| ExceptionDetails | string | The exception details. |
+| ExceptionMessage | string | The exception message. |
+| ExceptionType | string | The exception type. |
+| FunctionInvocationId | string | The invocation id that logged the message. |
+| FunctionName | string | The name of the function that logged the message. |
+| HostInstanceId | string | The host instance id. |
+| HostVersion | string | The Functions host version. |
+| Level | string | The log level. |
+| Location | string | The location of the server that processed the request (e.g., South Central US). |
+| Message | string | The log message. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of the log. |
+| Type | string | The name of the table |

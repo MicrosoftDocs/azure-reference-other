@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # MicrosoftDynamicsTelemetrySystemMetricsLogs
@@ -25,16 +25,16 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string|Log category|
-|EnvironmentId|string|Unique identifier for an environment as shown in Lifecycle Services|
-|EventName|string|Name of the event|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|Role|string|Type of the machine (AOS/BI) emitting the events|
-|RoleInstance|string|Name of the machine emitting the events|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the log.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string | Log category |
+| EnvironmentId | string | Unique identifier for an environment as shown in Lifecycle Services |
+| EventName | string | Name of the event |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| Role | string | Type of the machine (AOS/BI) emitting the events |
+| RoleInstance | string | Name of the machine emitting the events |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of the log. |
+| Type | string | The name of the table |

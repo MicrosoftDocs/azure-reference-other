@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # ADFActivityRun
@@ -28,36 +28,36 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActivityIterationCount|int||
-|ActivityName|string||
-|ActivityRunId|string||
-|ActivityType|string||
-|Annotations|string||
-|Category|string||
-|CorrelationId|string||
-|EffectiveIntegrationRuntime|string||
-|End|datetime||
-|Error|string||
-|ErrorCode|int||
-|ErrorMessage|string||
-|EventMessage|string||
-|FailureType|string||
-|Input|string||
-|Level|string||
-|LinkedServiceName|string||
-|Location|string||
-|OperationName|string||
-|Output|string||
-|PipelineName|string||
-|PipelineRunId|string||
-|ResourceId|string||
-|SourceSystem|string||
-|Start|datetime||
-|Status|string||
-|Tags|string||
-|TenantId|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UserProperties|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| ActivityIterationCount | int |  |
+| ActivityName | string |  |
+| ActivityRunId | string |  |
+| ActivityType | string |  |
+| Annotations | string |  |
+| Category | string |  |
+| CorrelationId | string |  |
+| EffectiveIntegrationRuntime | string |  |
+| End | datetime |  |
+| Error | string |  |
+| ErrorCode | int |  |
+| ErrorMessage | string |  |
+| EventMessage | string |  |
+| FailureType | string |  |
+| Input | string |  |
+| Level | string |  |
+| LinkedServiceName | string |  |
+| Location | string |  |
+| OperationName | string |  |
+| Output | string |  |
+| PipelineName | string |  |
+| PipelineRunId | string |  |
+| ResourceId | string |  |
+| SourceSystem | string |  |
+| Start | datetime |  |
+| Status | string |  |
+| Tags | string |  |
+| TenantId | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UserProperties | string |  |

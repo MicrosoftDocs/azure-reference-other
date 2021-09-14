@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AzureAssessmentRecommendation
@@ -25,27 +25,27 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AADTenantDomain|string||
-|AADTenantId|string||
-|AADTenantName|string||
-|ActionArea|string||
-|ActionAreaId|string||
-|AffectedObjectName|string||
-|AffectedObjectType|string||
-|AssessmentId|string||
-|Computer|string||
-|CustomData|string||
-|Description|string||
-|FocusArea|string||
-|FocusAreaId|string||
-|Recommendation|string||
-|RecommendationId|string||
-|RecommendationResult|string||
-|RecommendationWeight|real||
-|Resource|string||
-|SourceSystem|string||
-|Technology|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AADTenantDomain | string |  |
+| AADTenantId | string |  |
+| AADTenantName | string |  |
+| ActionArea | string |  |
+| ActionAreaId | string |  |
+| AffectedObjectName | string |  |
+| AffectedObjectType | string |  |
+| AssessmentId | string |  |
+| Computer | string |  |
+| CustomData | string |  |
+| Description | string |  |
+| FocusArea | string |  |
+| FocusAreaId | string |  |
+| Recommendation | string |  |
+| RecommendationId | string |  |
+| RecommendationResult | string |  |
+| RecommendationWeight | real |  |
+| Resource | string |  |
+| SourceSystem | string |  |
+| Technology | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

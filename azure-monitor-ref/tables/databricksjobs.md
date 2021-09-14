@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # DatabricksJobs
@@ -28,22 +28,22 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActionName|string||
-|Category|string||
-|Identity|string||
-|LogId|string||
-|OperationName|string||
-|OperationVersion|string||
-|RequestId|string||
-|RequestParams|string||
-|ResourceId|string||
-|Response|string||
-|ServiceName|string||
-|SessionId|string||
-|SourceIPAddress|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UserAgent|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| ActionName | string |  |
+| Category | string |  |
+| Identity | string |  |
+| LogId | string |  |
+| OperationName | string |  |
+| OperationVersion | string |  |
+| RequestId | string |  |
+| RequestParams | string |  |
+| ResourceId | string |  |
+| Response | string |  |
+| ServiceName | string |  |
+| SessionId | string |  |
+| SourceIPAddress | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UserAgent | string |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # SecurityDetection
@@ -25,39 +25,39 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AccountsSeen|int||
-|AlertSeverity|string||
-|AlertTitle|string||
-|AssociatedResource|string||
-|ChildProcess|string||
-|CommandLine|string||
-|Computer|string||
-|Description|string||
-|DetectionID|string||
-|Duration|string||
-|ExtendedProperties|string||
-|FailedAttempts|int||
-|FullPath|string||
-|InvalidAccountsSeen|int||
-|IsFirstParty|bool||
-|LogChannel|string||
-|OccuringDatacenter|string||
-|OriginalSeverity|string||
-|ParentProcess|string||
-|ProcessName|string||
-|Provider|string||
-|RemediationSteps|string||
-|ReportingSystem|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ServiceId|string||
-|SubjectDomainName|string||
-|SubjectUserName|string||
-|SubscriptionId|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|SuccessfulLogins|int||
-|SuspiciousProcess|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|ValidAccountsSeen|int||
+| Column | Type | Description |
+| --- | --- | --- |
+| AccountsSeen | int |  |
+| AlertSeverity | string |  |
+| AlertTitle | string |  |
+| AssociatedResource | string |  |
+| ChildProcess | string |  |
+| CommandLine | string |  |
+| Computer | string |  |
+| Description | string |  |
+| DetectionID | string |  |
+| Duration | string |  |
+| ExtendedProperties | string |  |
+| FailedAttempts | int |  |
+| FullPath | string |  |
+| InvalidAccountsSeen | int |  |
+| IsFirstParty | bool |  |
+| LogChannel | string |  |
+| OccuringDatacenter | string |  |
+| OriginalSeverity | string |  |
+| ParentProcess | string |  |
+| ProcessName | string |  |
+| Provider | string |  |
+| RemediationSteps | string |  |
+| ReportingSystem | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ServiceId | string |  |
+| SubjectDomainName | string |  |
+| SubjectUserName | string |  |
+| SubscriptionId | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| SuccessfulLogins | int |  |
+| SuspiciousProcess | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| ValidAccountsSeen | int |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ---
 
 # AmlComputeClusterNodeEvent
@@ -28,29 +28,29 @@ ms.date: 9/2/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ClusterCreationTime|string||
-|ClusterName|string||
-|InternalOperationName|string||
-|NodeAllocationTime|datetime||
-|NodeBootTime|datetime||
-|NodeId|string||
-|Offer|string||
-|OperationName|string||
-|Publisher|string||
-|ResizeEndTime|datetime||
-|ResizeStartTime|datetime||
-|ResultSignature|string||
-|Sku|string||
-|SourceSystem|string||
-|StartTaskEndTime|datetime||
-|StartTaskStartTime|datetime||
-|TenantId|string||
-|TimeGenerated|datetime||
-|TotalE2ETimeInSeconds|string||
-|Type|string|The name of the table|
-|Version|string||
-|VmFamilyName|string||
-|VmPriority|string||
-|VmSize|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| ClusterCreationTime | string |  |
+| ClusterName | string |  |
+| InternalOperationName | string |  |
+| NodeAllocationTime | datetime |  |
+| NodeBootTime | datetime |  |
+| NodeId | string |  |
+| Offer | string |  |
+| OperationName | string |  |
+| Publisher | string |  |
+| ResizeEndTime | datetime |  |
+| ResizeStartTime | datetime |  |
+| ResultSignature | string |  |
+| Sku | string |  |
+| SourceSystem | string |  |
+| StartTaskEndTime | datetime |  |
+| StartTaskStartTime | datetime |  |
+| TenantId | string |  |
+| TimeGenerated | datetime |  |
+| TotalE2ETimeInSeconds | string |  |
+| Type | string | The name of the table |
+| Version | string |  |
+| VmFamilyName | string |  |
+| VmPriority | string |  |
+| VmSize | string |  |
