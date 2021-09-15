@@ -19,7 +19,7 @@ ms.date: 05/17/2018
 |**Data type**|**Description**|
 |-|-|  
 |bigint|Integers in the range -2^63 (-9,223,372,036,854,775,808) to 2^63-1 (9,223,372,036,854,775,807).|  
-|float|Floating point numbers in the range - 1.79E+308 to -2.23E-308, 0, and 2.23E-308 to 1.79E+308. Floating-point decimal values generally do not have an exact binary representation. Loss of precision can be experienced. This is not specific to Azure Stream Analytics but to all floating-point numbers.|  
+|float|Floating point numbers in the range - 1.79E+308 to -2.23E-308, 0, and 2.23E-308 to 1.79E+308. Floating-point decimal values generally do not have an exact binary representation. Loss of precision can be experienced. This is not specific to Azure Stream Analytics but occurs in all floating-point number implementations.|  
 |nvarchar(max)|Text values, comprised of Unicode characters. Note: A value other than max is not supported.|  
 |datetime|Defines a date that is combined with a time of day with fractional seconds (7 digits, 100 nanoseconds precision) that is based on a 24-hour clock and relative to UTC (time zone offset 0).|  
 |bit|An integer that can take a value of 1, 0, or NULL. This is supported in [compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above. |
