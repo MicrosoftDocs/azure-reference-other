@@ -102,7 +102,7 @@ FROM MyCTE
 
 Returns:
 
-|bigint0|bigint1|bigintN|AND00|AND01|AND10|AND11|ANDnull|**ANDvalues**|
+|bigint0|bigint1|bigintN|AND00|AND01|AND10|AND11|ANDnull|ANDvalues|
 |-|-|-|-|-|-|-|-|-|
 |0|1|NULL|0|0|0|1|NULL|**10**|
 

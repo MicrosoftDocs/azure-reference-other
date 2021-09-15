@@ -97,7 +97,7 @@ FROM MyCTE
 
 Returns:
 
-|bit0|bit1|bitN|NOT0|NOT1|NOTnull|**NOT170**|
+|bit0|bit1|bitN|NOT0|NOT1|NOTnull|NOT170|
 |-|-|-|-|-|-|-|
 |0|1|NULL|-1|-2|NULL|**-171**|
 
