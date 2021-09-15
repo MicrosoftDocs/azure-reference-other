@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 09/15/2021
 ---
 
-# & (Bitwise AND) (Azure Stream Analytics)
+# ~ (Bitwise NOT) (Azure Stream Analytics)
 
 Performs a bitwise logical NOT operation on an integer value.
 
