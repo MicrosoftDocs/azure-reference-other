@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/9/2021
+ms.date: 9/16/2021
 ---
 
 # AppDependencies
