@@ -45,6 +45,10 @@ Specifies how much history from the current row is included in the group. See [D
 
 Specifies the boolean condition for the rows to be included in the group.
   
+## General Remarks  
+
+Applying an aggregate or analytic function with OVER on the result set of a [windowing function](windowing-azure-stream-analytics.md) may produce unexpected results. Windowing functions alter the timestamp of events, as every window operation outputs event at the end of the window. The current timestamp of an event can be accessed with [system.timestamp()](system-timestamp-stream-analytics), after a window operation it will differ from the original event time attribute.
+
 ## Examples
 
 Compute the average temperature over the last 5 minutes, per sensor:
