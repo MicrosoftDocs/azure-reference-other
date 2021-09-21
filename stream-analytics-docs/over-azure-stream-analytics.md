@@ -47,7 +47,7 @@ Specifies the boolean condition for the rows to be included in the group.
   
 ## General Remarks  
 
-Applying an aggregate or analytic function with OVER on the result set of a [windowing function](windowing-azure-stream-analytics.md) may produce unexpected results. Windowing functions alter the timestamp of events, as every window operation outputs event at the end of the window. The current timestamp of an event can be accessed with [system.timestamp()](system-timestamp-stream-analytics), after a window operation it will differ from the original event time attribute.
+Applying an aggregate or analytic function with OVER on the result set of a [windowing function](windowing-azure-stream-analytics.md) may produce unexpected results. Windowing functions alter the timestamp of events, as every window operation outputs event at the end of the window. The current timestamp of an event can be accessed with [system.timestamp()](system-timestamp-stream-analytics.md), after a window operation it will differ from the original event time attribute.
 
 ## Examples
 
