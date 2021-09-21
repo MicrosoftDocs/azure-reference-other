@@ -45,7 +45,12 @@ Specifies how much of the history from the current event must be considered.  Se
   
 ## Return Types  
  The data type of the specified scalar_expression. NULL is returned if scalar_expression  
-  
+
+## General Remarks  
+LAST is nondeterministic. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.
+ 
+Applying LAST on the result set of a [windowing function](windowing-azure-stream-analytics.md) may produce unexpected results. Windowing functions alter the timestamp of events, as every window operation outputs event at the end of the window. The current timestamp of an event can be accessed with [system.timestamp()](system-timestamp-stream-analytics.md), after a window operation it will differ from the original event time attribute. If LAST can't be moved before the window operation, consider using [CollectTop](collecttop-azure-stream-analytics.md), ordering by the original event time.
+
 ## Examples  
  Find most recent non-null sensor reading:  
   
