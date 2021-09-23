@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/16/2021
+ms.date: 9/23/2021
 ---
 
 # WindowsEvent
@@ -41,6 +41,7 @@ ms.date: 9/16/2021
 | EventID | int |  |
 | EventLevel | int |  |
 | EventLevelName | string |  |
+| EventOriginId | string | The unique ID of the original event |
 | ManagementGroupName | string |  |
 | Provider | string |  |
 | RawEventData | string | The raw event XML when parsing fails. It's null when parsing successful. |
