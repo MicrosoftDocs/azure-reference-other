@@ -110,3 +110,5 @@
     href: tables/aewauditlogs.md
   - name: AEWComputePipelinesLogs
     href: tables/aewcomputepipelineslogs.md
+  - name: AmlComputeCpuGpuUtilization
+    href: tables/amlcomputecpugpuutilization.md
