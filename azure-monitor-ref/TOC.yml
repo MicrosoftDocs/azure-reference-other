@@ -186,6 +186,8 @@
     href: tables/appsystemevents.md
   - name: AppTraces
     href: tables/apptraces.md
+  - name: ATCExpressRouteCircuitIpfix
+    href: tables/atcexpressroutecircuitipfix.md
   - name: AuditLogs
     href: tables/auditlogs.md
   - name: AWSGuardDuty
@@ -534,6 +536,18 @@
     href: tables/uacomputerrank.md
   - name: UASysReqIssue
     href: tables/uasysreqissue.md
+  - name: UCClient
+    href: tables/ucclient.md
+  - name: UCClientReadinessStatus
+    href: tables/ucclientreadinessstatus.md
+  - name: UCClientUpdateStatus
+    href: tables/ucclientupdatestatus.md
+  - name: UCDeviceAlert
+    href: tables/ucdevicealert.md
+  - name: UCServiceUpdateStatus
+    href: tables/ucserviceupdatestatus.md
+  - name: UCUpdateAlert
+    href: tables/ucupdatealert.md
   - name: UpdateRunProgress
     href: tables/updaterunprogress.md
   - name: UpdateSummary
