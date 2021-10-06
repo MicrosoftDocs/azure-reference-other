@@ -1,5 +1,5 @@
 ---
-title: "Bitwise Operators (Azure Stream Analytics)"
+title: "Bitwise operators (Azure Stream Analytics)"
 description: "Lists the Bitwise Operators supported by Azure Stream Analytics."
 applies_to:
   - "Azure"
@@ -10,11 +10,11 @@ ms.date: 09/15/2021
 
 # Bitwise Operators (Azure Stream Analytics)
 
+Bitwise operators perform bit manipulations between two expressions of any of the data types of the integer data type category.
+
 ## Overview
 
-Bitwise operators perform bit manipulations between two expressions of any of the data types of the integer data type category.  
-Bitwise operators convert two integer values to binary bits, perform the AND, OR, or NOT operation on each bit, producing a result. Then converts the result to an integer.  
-  
+Bitwise operators convert two integer values to binary bits, perform the AND, OR, XOR, or NOT operation on each bit, producing a result. Then converts the result to an integer.   
 For example, the integer 170 converts to binary 1010 1010.
 The integer 75 converts to binary 0100 1011.
 
