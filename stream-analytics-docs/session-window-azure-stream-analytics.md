@@ -12,7 +12,7 @@ Session windows group events that arrive at similar times, filtering out periods
 
 The following diagram illustrates a stream with a series of events and how they are mapped into session windows of 5 minutes timeout, and maximum duration of 10 minutes.
 
- ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window-azure-stream-analytics/streamanalytics-sessionwindow.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
+ ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window-azure-stream-analytics/stream-analytics-window-functions-session-intro.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
 
 A session window begins when the first event occurs. If another event occurs within the specified timeout from the last ingested event, then the window extends to include the new event. Otherwise if no events occur within the timeout, then the window is closed at the timeout.
 
