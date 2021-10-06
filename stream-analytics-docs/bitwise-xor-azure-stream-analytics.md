@@ -1,5 +1,5 @@
 ---
-title: "^ (Bitwise Exclusive OR) (Azure Stream Analytics)"
+title: "^ (Bitwise exclusive OR) (Azure Stream Analytics)"
 description: "Performs a bitwise logical Exclusive OR operation between two integer values."
 applies_to:
   - "Azure"
