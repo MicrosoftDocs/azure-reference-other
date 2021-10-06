@@ -1,6 +1,6 @@
 ---
 title: "^ (Bitwise Exclusive OR) (Azure Stream Analytics)"
-description: "Performs a bitwise logical exclusive OR operation between two integer values."
+description: "Performs a bitwise logical Exclusive OR operation between two integer values."
 applies_to:
   - "Azure"
 ms.service: stream-analytics
