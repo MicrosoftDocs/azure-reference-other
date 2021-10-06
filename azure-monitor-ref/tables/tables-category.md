@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/9/2021
+ms.date: 9/30/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -165,6 +165,7 @@ ms.date: 9/9/2021
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
