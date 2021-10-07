@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 09/15/2021
 ---
 
-# ^ (Bitwise Exclusive OR) (Azure Stream Analytics)
+# ^ (Bitwise exclusive OR) (Azure Stream Analytics)
 
 Performs a bitwise logical exclusive OR (XOR) operation between two integer values, evaluating each corresponding bit from both expressions.
 
@@ -24,7 +24,7 @@ expression ^ expression
 
 Is any valid expression of the data types bit or bigint. Expression is treated as a binary number for the bitwise operation.
 
-## Return Types
+## Return types
 
 **bit** if both input values are **bit**.
 
@@ -123,7 +123,7 @@ Returns:
 |-|-|-|
 |bit|bigint|bigint|
 
-## See Also
+## See also
 
 - [Bitwise Operators &#40;Azure Stream Analytics&#41;](bitwise-operators-azure-stream-analytics.md)
 - [& (Bitwise AND) &#40;Azure Stream Analytics&#41;](bitwise-and-azure-stream-analytics.md)
