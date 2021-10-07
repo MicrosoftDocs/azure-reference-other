@@ -67,7 +67,11 @@ Columns from * expression with names conflicting with previously projected colum
  **column_alias**  
   
  Is an alternative name to replace the column name in the query result set. For example, an alias such as Quantity, or [Quantity to Date], or Qty can be specified for a column named quantity. Aliases are used also to specify names for the results of expressions. column_alias cannot be used in a WHERE, GROUP BY, or HAVING clause.  
-  
+
+## Remark
+
+To access a field or property that uses characters that need to be escaped, double quotes can be used: `SELECT "[my][Field]" AS myField ...`.
+
 ## Example  
   
 ```SQL  
