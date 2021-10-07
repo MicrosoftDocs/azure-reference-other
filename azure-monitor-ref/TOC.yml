@@ -44,6 +44,10 @@
     href: tables/acsauthincomingoperations.md
   - name: ACSBillingUsage
     href: tables/acsbillingusage.md
+  - name: ACSCallDiagnostics
+    href: tables/acscalldiagnostics.md
+  - name: ACSCallSummary
+    href: tables/acscallsummary.md
   - name: ACSChatIncomingOperations
     href: tables/acschatincomingoperations.md
   - name: ACSSMSIncomingOperations
@@ -110,6 +114,24 @@
     href: tables/aewauditlogs.md
   - name: AEWComputePipelinesLogs
     href: tables/aewcomputepipelineslogs.md
+  - name: AgriFoodApplicationAuditLogs
+    href: tables/agrifoodapplicationauditlogs.md
+  - name: AgriFoodFarmManagementLogs
+    href: tables/agrifoodfarmmanagementlogs.md
+  - name: AgriFoodFarmOperationLogs
+    href: tables/agrifoodfarmoperationlogs.md
+  - name: AgriFoodInsightLogs
+    href: tables/agrifoodinsightlogs.md
+  - name: AgriFoodJobProcessedLogs
+    href: tables/agrifoodjobprocessedlogs.md
+  - name: AgriFoodModelInferenceLogs
+    href: tables/agrifoodmodelinferencelogs.md
+  - name: AgriFoodProviderAuthLogs
+    href: tables/agrifoodproviderauthlogs.md
+  - name: AgriFoodSatelliteLogs
+    href: tables/agrifoodsatellitelogs.md
+  - name: AgriFoodWeatherLogs
+    href: tables/agrifoodweatherlogs.md
   - name: AmlComputeCpuGpuUtilization
     href: tables/amlcomputecpugpuutilization.md
   - name: AmlComputeInstanceEvent
@@ -248,6 +270,26 @@
     href: tables/containerregistryrepositoryevents.md
   - name: ContainerServiceLog
     href: tables/containerservicelog.md
+  - name: DatabricksAccounts
+    href: tables/databricksaccounts.md
+  - name: DatabricksClusters
+    href: tables/databricksclusters.md
+  - name: DatabricksDBFS
+    href: tables/databricksdbfs.md
+  - name: DatabricksInstancePools
+    href: tables/databricksinstancepools.md
+  - name: DatabricksJobs
+    href: tables/databricksjobs.md
+  - name: DatabricksNotebook
+    href: tables/databricksnotebook.md
+  - name: DatabricksSecrets
+    href: tables/databrickssecrets.md
+  - name: DatabricksSQLPermissions
+    href: tables/databrickssqlpermissions.md
+  - name: DatabricksSSH
+    href: tables/databricksssh.md
+  - name: DatabricksWorkspace
+    href: tables/databricksworkspace.md
   - name: DeviceAppCrash
     href: tables/deviceappcrash.md
   - name: DeviceAppLaunch
@@ -402,6 +444,8 @@
     href: tables/madevicenotenrolled.md
   - name: MCCEventLogs
     href: tables/mcceventlogs.md
+  - name: MCVPAuditLogs
+    href: tables/mcvpauditlogs.md
   - name: MCVPOperationLogs
     href: tables/mcvpoperationlogs.md
   - name: MicrosoftAzureBastionAuditLogs
