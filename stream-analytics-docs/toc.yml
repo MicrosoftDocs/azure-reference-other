@@ -63,6 +63,18 @@ items:
               href: getarrayelement-azure-stream-analytics.md
             - name: GetArrayElements
               href: getarrayelements-azure-stream-analytics.md
+        - name: Bitwise Operators
+          items:
+            - name: Bitwise Operators Overview
+              href: bitwise-operators-azure-stream-analytics.md
+            - name: Bitwise AND
+              href: bitwise-and-azure-stream-analytics.md
+            - name: Bitwise OR
+              href: bitwise-or-azure-stream-analytics.md
+            - name: Bitwise XOR
+              href: bitwise-xor-azure-stream-analytics.md
+            - name: Bitwise NOT
+              href: bitwise-not-azure-stream-analytics.md
         - name: Conversion Functions
           items:
             - name: Conversion Functions Overview

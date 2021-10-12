@@ -19,19 +19,27 @@ GetRecordPropertyValue ( record_expression, string_expression )
 ```  
   
 ## Arguments  
+
  **record_expression**  
   
  Is the record expression to be evaluated as a source record. record_expression can be a column of type Record or result of another function call.  
   
  **string_expression**  
   
- Is the string expression to be evaluated as a record property name.  
+Is the string expression to be evaluated as a record property name.
   
 ## Return Types  
- Return type is determined by the record property type and can be any of the [supported types](data-types-azure-stream-analytics.md).  
-  
+
+Return type is determined by the record property type and can be any of the [supported types](data-types-azure-stream-analytics.md).  
+
+## Remark
+
+The record property name in the string expression needs to follow the naming convention in use.
+
+To access a field or property that uses characters that need to be escaped, double quotes can be used: `SELECT "[my][Field]" AS myField ...`, or `GetRecordPropertyValue(input.SensorReadings, "[my][Field]")`.
+
 ## Examples  
- In this code example, “thresholds” is a reference data name defined on the inputs tab.  
+In this code example, “thresholds” is a reference data name defined on the inputs tab.  
   
 ```SQL  
 SELECT   

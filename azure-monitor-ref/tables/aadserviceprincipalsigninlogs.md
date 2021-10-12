@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/30/2021
+ms.date: 10/7/2021
 ---
 
 # AADServicePrincipalSignInLogs
@@ -29,7 +29,10 @@ ms.date: 9/30/2021
 | Column | Type | Description |
 | --- | --- | --- |
 | AppId | string | Unique GUID representing the app ID in the Azure Active Directory |
+| AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
 | Category | string | Category of the sign-in event |
+| ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
+| ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
 | CorrelationId | string | ID to provide sign-in trail |
 | DurationMs | long | The duration of the operation in milliseconds |
 | Id | string | Unique ID representing the sign-in activity |
@@ -46,9 +49,12 @@ ms.date: 9/30/2021
 | ResultDescription | string | Provides the error description for the sign-in operation |
 | ResultSignature | string | Contains the error code, if any, for the sign-in operation |
 | ResultType | string | The result of the sign-in operation can be Success or Failure |
+| ServicePrincipalCredentialKeyId | string | Key id of the service principal that initiated the sign-in |
+| ServicePrincipalCredentialThumbprint | string | Thumbprint of the service principal that initiated the sign-in |
 | ServicePrincipalId | string | ID of the service principal who initiated the sign-in |
 | ServicePrincipalName | string | Service Principal Name of the service principal who initiated the sign-in |
 | SourceSystem | string | Details of source system of the object being provisioned |
 | TenantId | string |  |
 | TimeGenerated | datetime | The date and time of the event in UTC |
 | Type | string | The name of the table |
+| UniqueTokenIdentifier | string | Unique token identifier for the request |

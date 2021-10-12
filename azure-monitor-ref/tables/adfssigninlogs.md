@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/30/2021
+ms.date: 10/7/2021
 ---
 
 # ADFSSignInLogs
@@ -68,6 +68,7 @@ ms.date: 9/30/2021
 | TokenIssuerName | string | Name of the identity provider (e.g. sts.microsoft.com ) |
 | TokenIssuerType | string | Type of identityProvider (Azure AD, AD Federation Services) |
 | Type | string | The name of the table |
+| UniqueTokenIdentifier | string | Unique token identifier for the request |
 | UserAgent | string | User Agent for the sign-in |
 | UserDisplayName | string | Display name of the user that initiated the sign-in |
 | UserId | string | ID of the user that initiated the sign-in |
