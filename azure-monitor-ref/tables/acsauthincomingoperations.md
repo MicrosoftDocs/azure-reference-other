@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/30/2021
+ms.date: 10/7/2021
 ---
 
 # ACSAuthIncomingOperations
@@ -38,11 +38,13 @@ ms.date: 9/30/2021
 | Level | string | The severity level of the operation. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
+| PlatformType | string | The platform type being used in the request. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | The static text description of this operation. |
 | ResultSignature | string | The sub status of the operation. If this operation corresponds to a REST API call, this field is the HTTP status code of the corresponding REST call. |
 | ResultType | string | The status of the operation. |
 | Scopes | dynamic | Scopes for the auth request (e.g. Chat, SMS, etc.) |
+| SdkType | string | The SDK type being used in the request. |
 | SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |

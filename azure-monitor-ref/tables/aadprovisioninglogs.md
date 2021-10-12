@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/30/2021
+ms.date: 10/7/2021
 ---
 
 # AADProvisioningLogs
@@ -29,7 +29,6 @@ ms.date: 9/30/2021
 | Column | Type | Description |
 | --- | --- | --- |
 | AADTenantId | string | Unique Azure AD tenant ID |
-| Action | string | Indicates the activity name or the operation name. For a list of activities logged, refer to Azure AD activity list |
 | Category | string | Category of the event |
 | ChangeId | string | Unique ID of this change in this cycle |
 | CorrelationId | string | ID to provide provisioning trail |
@@ -41,6 +40,8 @@ ms.date: 9/30/2021
 | ModifiedProperties | string | Details of each property that was modified in this provisioning action on this object |
 | OperationName | string | Name of the operation |
 | OperationVersion | string | The REST API version that's requested by the client |
+| ProvisioningAction | string | Indicates the activity name or the operation name. For a list of activities logged, refer to Azure AD activity list |
+| ProvisioningStatusInfo | string | Details of provisioning status |
 | ProvisioningSteps | string | Details of each step in provisioning |
 | ResultDescription | string | When available, provides the error description for the provisioning operation |
 | ResultSignature | string | Contains the error code, if any, for the provisioning operation |
@@ -48,7 +49,6 @@ ms.date: 9/30/2021
 | ServicePrincipal | string | Represents the service principal used for provisioning |
 | SourceIdentity | string | Details of source object being provisioned |
 | SourceSystem | string | Details of source system of the object being provisioned |
-| StatusInfo | string | Details of provisioning status |
 | TargetIdentity | string | Details of target object being provisioned |
 | TargetSystem | string | Details of target system of the object being provisioned |
 | TenantId | string |  |
