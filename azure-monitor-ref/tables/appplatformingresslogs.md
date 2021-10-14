@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # AppPlatformIngressLogs
 
  Azure Spring Cloud ingress logs, currently it is nginx access logs.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Spring Cloud
 
 
 
