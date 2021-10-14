@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # ADFSandboxActivityRun
@@ -34,7 +34,7 @@ ms.date: 10/7/2021
 | EffectiveIntegrationRuntime | string |  |
 | End | datetime |  |
 | Error | string |  |
-| ErrorCode | int |  |
+| ErrorCode | string |  |
 | ErrorMessage | string |  |
 | EventMessage | string |  |
 | FailureType | string |  |
