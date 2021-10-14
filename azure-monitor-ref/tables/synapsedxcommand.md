@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # SynapseDXCommand
 
  Azure data explorer synapse command execution summary. Logs include DatabaseName, State, Duration that can be used for monitoring the commands which were invoked on the cluster
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
