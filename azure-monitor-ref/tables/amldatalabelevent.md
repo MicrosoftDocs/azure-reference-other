@@ -6,13 +6,17 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # AmlDataLabelEvent
 
  Events when data label(s) or its projects is accessed (read, created, or deleted).
 
+## Categories
+
+- Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement
