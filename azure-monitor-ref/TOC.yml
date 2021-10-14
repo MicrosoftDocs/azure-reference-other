@@ -216,3 +216,5 @@
     href: tables/atcexpressroutecircuitipfix.md
   - name: AuditLogs
     href: tables/auditlogs.md
+  - name: AWSGuardDuty
+    href: tables/awsguardduty.md
