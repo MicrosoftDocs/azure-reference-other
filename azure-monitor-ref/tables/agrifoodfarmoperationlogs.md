@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # AgriFoodFarmOperationLogs
 
  Logs for create, update, delete and get operations for FarmOperations such as data ingestion job, ApplicationData, PlantingData, HarvestingData, TillageData etc.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Microsoft.AgFoodPlatform/farmBeats
 
 
 
