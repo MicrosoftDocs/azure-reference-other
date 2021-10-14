@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # AgriFoodWeatherLogs
 
  Logs for create, update, delete and get operations while ingesting weather data in FarmBeats.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Microsoft.AgFoodPlatform/farmBeats
 
 
 

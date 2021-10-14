@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # ADFActivityRun
@@ -40,7 +40,7 @@ ms.date: 10/7/2021
 | EffectiveIntegrationRuntime | string |  |
 | End | datetime |  |
 | Error | string |  |
-| ErrorCode | int |  |
+| ErrorCode | string |  |
 | ErrorMessage | string |  |
 | EventMessage | string |  |
 | FailureType | string |  |
@@ -52,10 +52,12 @@ ms.date: 10/7/2021
 | Output | string |  |
 | PipelineName | string |  |
 | PipelineRunId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
 | SourceSystem | string |  |
 | Start | datetime |  |
 | Status | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Tags | string |  |
 | TenantId | string |  |
 | TimeGenerated | datetime |  |

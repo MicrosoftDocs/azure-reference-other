@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # AzureActivity
@@ -32,8 +32,8 @@ ms.date: 10/7/2021
 - Data Lake Storage Gen1
 - Recovery Services Vaults
 - Data factories
-- SQL Databases
 - Automation account
+- API Management services
 - Logic Apps
 - Service Fabric Clusters
 - Machine Learning
@@ -42,9 +42,10 @@ ms.date: 10/7/2021
 - Azure Databricks Services
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
-- API Management services
+- System Center Virtual Machine Manager
+- SQL Databases
+- Azure Stack HCI
 - Azure Database for MySQL Servers
-- Azure Database for PostgreSQL Servers
 - Azure Database for PostgreSQL Servers V2
 - Bastions
 - Stream Analytics jobs
@@ -65,11 +66,10 @@ ms.date: 10/7/2021
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Flexible Servers
-- System Center Virtual Machine Manager
-- Azure Stack HCI
+- Azure Database for PostgreSQL Servers
+- Azure API for FHIR
 - VMware
-- Event Grid Domains
-- Default schema for a resource
+- Azure Blockchain Service
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Virtual machines
@@ -81,6 +81,7 @@ ms.date: 10/7/2021
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
 - Bot Services
+- Azure Traffic Collector
 - Microsoft.Purview/accounts
 - Kubernetes Services
 - Project CI Workspace
@@ -88,11 +89,10 @@ ms.date: 10/7/2021
 - Communication Services
 - Azure Autonomous Development Platform Account
 - App Services
+- Default schema for a resource
+- Event Grid Domains
 - Azure Subscription
-- Azure API for FHIR
-- Azure Resource Group
-- Application Insights
-- Azure Blockchain Service
+- Azure Digital Twins
 - Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
@@ -111,7 +111,8 @@ ms.date: 10/7/2021
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
-- Azure Digital Twins
+- Application Insights
+- Azure Resource Group
 - Service Bus
 
 

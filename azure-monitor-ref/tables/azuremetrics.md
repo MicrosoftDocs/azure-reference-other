@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # AzureMetrics
@@ -56,8 +56,8 @@ ms.date: 10/7/2021
 - Application Gateways
 - Event Hubs
 - Machine Learning
-- Azure API for FHIR
 - IoT Hub
+- Azure Monitor autoscale settings
 - Azure Databricks Services
 - Workload Monitor
 - Event Grid Topics
@@ -65,17 +65,18 @@ ms.date: 10/7/2021
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Desktop Virtualization Host Pools
-- Analysis Services
 - Synapse Workspaces
+- Virtual machines
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
+- Azure Traffic Collector
 - Kubernetes Services
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
-- Virtual machines
+- Analysis Services
+- Azure API for FHIR
 - Batch Accounts
-- Azure Spring Cloud
 - Media Services
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
@@ -92,7 +93,7 @@ ms.date: 10/7/2021
 - Key Vaults
 - Cognitive Services
 - Azure Cache for Redis
-- Azure Monitor autoscale settings
+- Azure Spring Cloud
 - Service Bus
 
 

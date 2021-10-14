@@ -6,13 +6,17 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # AmlDataSetEvent
 
  Events when a registered or unregistered ML datastore is accessed (read, created, or deleted).
 
+## Categories
+
+- Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement

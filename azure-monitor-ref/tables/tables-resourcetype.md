@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -193,6 +193,7 @@ ms.date: 10/7/2021
 - [DatabricksClusters](databricksclusters.md)
 - [DatabricksDBFS](databricksdbfs.md)
 - [DatabricksInstancePools](databricksinstancepools.md)
+- [DatabricksInstancePools](databricksinstancepools.md)
 - [DatabricksJobs](databricksjobs.md)
 - [DatabricksNotebook](databricksnotebook.md)
 - [DatabricksSecrets](databrickssecrets.md)
@@ -232,10 +233,22 @@ ms.date: 10/7/2021
 
 - [CommonSecurityLog](commonsecuritylog.md)
 
+## Azure Sentinel MCAS
+
+
+## Azure Sentinel MDA
+
+
 ## Azure Sentinel MDE
 
 
+## Azure Sentinel MDI
+
+
 ## Azure Sentinel MDO
+
+
+## Azure Sentinel Office 365
 
 
 ## Azure Sentinel Watchlist
@@ -243,6 +256,7 @@ ms.date: 10/7/2021
 
 ## Azure Spring Cloud
 
+- [AppPlatformIngressLogs](appplatformingresslogs.md)
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
 - [AppPlatformSystemLogs](appplatformsystemlogs.md)
 - [AzureActivity](azureactivity.md)
@@ -287,6 +301,12 @@ ms.date: 10/7/2021
 
 - [AzureActivity](azureactivity.md)
 
+## Azure Traffic Collector
+
+- [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
 ## AzureML/OnlineEndpoint
 
 - [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
@@ -324,6 +344,8 @@ ms.date: 10/7/2021
 
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
+- [ACSCallDiagnostics](acscalldiagnostics.md)
+- [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AzureActivity](azureactivity.md)
@@ -369,6 +391,9 @@ ms.date: 10/7/2021
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
+
+## DataSecurityManagement
+
 
 ## Default schema for a resource
 
@@ -545,7 +570,6 @@ ms.date: 10/7/2021
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
-- [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
 - [AmlComputeInstanceEvent](amlcomputeinstanceevent.md)
 - [AmlComputeJobEvent](amlcomputejobevent.md)
 - [AmlDataLabelEvent](amldatalabelevent.md)
@@ -576,6 +600,9 @@ ms.date: 10/7/2021
 - [AACHttpRequest](aachttprequest.md)
 - [AzureActivity](azureactivity.md)
 
+## Microsoft Authorization Datasets
+
+
 ## Microsoft Connected Cache
 
 - [AzureActivity](azureactivity.md)
@@ -586,7 +613,23 @@ ms.date: 10/7/2021
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [MCVPAuditLogs](mcvpauditlogs.md)
 - [MCVPOperationLogs](mcvpoperationlogs.md)
+
+## Microsoft.AgFoodPlatform/farmBeats
+
+- [AgriFoodApplicationAuditLogs](agrifoodapplicationauditlogs.md)
+- [AgriFoodFarmManagementLogs](agrifoodfarmmanagementlogs.md)
+- [AgriFoodFarmOperationLogs](agrifoodfarmoperationlogs.md)
+- [AgriFoodInsightLogs](agrifoodinsightlogs.md)
+- [AgriFoodJobProcessedLogs](agrifoodjobprocessedlogs.md)
+- [AgriFoodModelInferenceLogs](agrifoodmodelinferencelogs.md)
+- [AgriFoodProviderAuthLogs](agrifoodproviderauthlogs.md)
+- [AgriFoodSatelliteLogs](agrifoodsatellitelogs.md)
+- [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
+
+## Microsoft.Dynamics.FraudProtection/purchase
+
 
 ## Microsoft.Purview/accounts
 
@@ -616,6 +659,7 @@ ms.date: 10/7/2021
 
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
+- [PowerBIReportUsageTenant](powerbireportusagetenant.md)
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
