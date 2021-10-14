@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/15/2021
 ---
 
 # PowerBIReportUsageTenant
 
  Contains usage metric logs for open report and change report page for the workspaces on tenant level. Typically used to monitor usage of Power BI workspaces for customer tenant.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Power BI Datasets
 
 
 
