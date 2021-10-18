@@ -46,3 +46,5 @@
     href: tables/acsbillingusage.md
   - name: ACSCallDiagnostics
     href: tables/acscalldiagnostics.md
+  - name: ACSCallSummary
+    href: tables/acscallsummary.md
