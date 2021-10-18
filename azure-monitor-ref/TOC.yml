@@ -216,6 +216,10 @@
     href: tables/atcexpressroutecircuitipfix.md
   - name: AuditLogs
     href: tables/auditlogs.md
+  - name: AUIEventsAudit
+    href: tables/auieventsaudit.md
+  - name: AUIEventsOperational
+    href: tables/auieventsoperational.md
   - name: AWSGuardDuty
     href: tables/awsguardduty.md
   - name: AWSVPCFlow

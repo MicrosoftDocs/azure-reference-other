@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/15/2021
+ms.date: 10/19/2021
 ---
 
 # AzureActivity
@@ -143,8 +143,8 @@ ms.date: 10/15/2021
 | OperationId | string | GUID of the operation |
 | OperationName | string |  |
 | OperationNameValue | string | Identifier of the operation e.g. Microsoft.Storage/storageAccounts/listAccountSas/action. |
-| Properties | string | Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead. |
-| Properties_d | dynamic | Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column. |
+| Properties | string | Set of &lt;Key Value&gt; pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead. |
+| Properties_d | dynamic | Set of &lt;Key Value&gt; pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column. |
 | Resource | string |  |
 | ResourceGroup | string | Resource group name of the impacted resource. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
