@@ -240,3 +240,5 @@
     href: tables/blockchainproxylog.md
   - name: CDBCassandraRequests
     href: tables/cdbcassandrarequests.md
+  - name: CDBControlPlaneRequests
+    href: tables/cdbcontrolplanerequests.md
