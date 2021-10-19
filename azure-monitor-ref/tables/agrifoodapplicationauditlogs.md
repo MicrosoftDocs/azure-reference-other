@@ -6,16 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/19/2021
 ---
 
 # AgriFoodApplicationAuditLogs
 
  Logs for privileged actions such as data-plane resource create, update, delete and subscription management operations.
 
+## Categories
+
+- Audit
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Microsoft.AgFoodPlatform/farmBeats
 
 
 

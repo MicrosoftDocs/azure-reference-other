@@ -6,13 +6,17 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/19/2021
 ---
 
 # AmlInferencingEvent
 
  Events for inference or related operation on AKS or ACI compute type.
 
+## Categories
+
+- Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement

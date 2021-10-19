@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/19/2021
 ---
 
 # AgriFoodJobProcessedLogs
 
  Logs indicating success or failure of job runs for farmOperationDataIngestionJob, farmOperationPeriodicJob, farmOperationEventHandlingJob,satelliteDataIngestionJob, weatherDataIngestionJob etc. These logs also contain reasons for failure of these jobs if any.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Microsoft.AgFoodPlatform/farmBeats
 
 
 

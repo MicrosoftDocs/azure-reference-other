@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/19/2021
 ---
 
 # ADXJournal
 
  Azure Data Explorer journal (metadata operations).
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement

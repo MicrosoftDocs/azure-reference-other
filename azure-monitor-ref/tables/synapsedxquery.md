@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/19/2021
 ---
 
 # SynapseDXQuery
 
  Azure data explorer synpase query execution summary. Logs include DatabaseName, State, Duration that can be used for monitoring the queries which were invoked on the cluster
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
