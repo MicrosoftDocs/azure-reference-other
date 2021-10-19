@@ -132,6 +132,10 @@
     href: tables/agrifoodsatellitelogs.md
   - name: AgriFoodWeatherLogs
     href: tables/agrifoodweatherlogs.md
+  - name: AlertEvidence
+    href: tables/alertevidence.md
+  - name: AlertInfo
+    href: tables/alertinfo.md
   - name: AmlComputeCpuGpuUtilization
     href: tables/amlcomputecpugpuutilization.md
   - name: AmlComputeInstanceEvent
@@ -212,6 +216,10 @@
     href: tables/atcexpressroutecircuitipfix.md
   - name: AuditLogs
     href: tables/auditlogs.md
+  - name: AUIEventsAudit
+    href: tables/auieventsaudit.md
+  - name: AUIEventsOperational
+    href: tables/auieventsoperational.md
   - name: AWSGuardDuty
     href: tables/awsguardduty.md
   - name: AWSVPCFlow
@@ -246,6 +254,8 @@
     href: tables/cdbpartitionkeystatistics.md
   - name: CDBQueryRuntimeStatistics
     href: tables/cdbqueryruntimestatistics.md
+  - name: CloudAppEvents
+    href: tables/cloudappevents.md
   - name: CommonSecurityLog
     href: tables/commonsecuritylog.md
   - name: ComputerGroup

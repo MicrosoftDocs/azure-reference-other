@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/7/2021
+ms.date: 10/19/2021
 ---
 
 # PowerBIAuditTenant
@@ -16,6 +16,7 @@ ms.date: 10/7/2021
 ## Categories
 
 - Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement
