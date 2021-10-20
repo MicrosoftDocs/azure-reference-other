@@ -32,7 +32,7 @@ ms.date: 3/29/2021
 |---|---|---|
 |ActivityStatusValue|string|Status of the operation in display-friendly format. Common values include Started, In Progress, Succeeded, Failed, Active, Resolved.|
 |ActivitySubstatusValue|string|Substatus of the operation in display-friendly format. E.g. OK (HTTP Status Code: 200).|
-|Authorization|string|Blob of RBAC properties of the event. Usually includes the �action�, �role� and �scope� properties.|
+|Authorization|string|Blob of RBAC properties of the event. Usually includes the action, role, and scope properties.|
 |AzureResourceGroup|string|Resource group name of the impacted resource.|
 |AzureResourceId|string|Resource ID of the impacted resource.|
 |AzureSubscriptionId|string|Subscription ID of the impacted resource.|
@@ -46,14 +46,14 @@ ms.date: 3/29/2021
 |EventDataId|string|Unique identifier of an event.|
 |EventSubmissionTimestamp|datetime|Timestamp when the event became available for querying.|
 |Hierarchy|string|Management group hierarchy of the management group or subscription that event belongs to.|
-|HTTPRequest|string|Blob describing the Http Request. Usually includes the �clientRequestId�, �clientIpAddress� and �method� (HTTP method. For example, PUT).|
+|HTTPRequest|string|Blob describing the Http Request. Usually includes the clientRequestId, clientIpAddress, and method (HTTP method. For example, PUT).|
 |Level|string|Level of the event. One of the following values: Critical, Error, Warning, Informational and Verbose.|
 |Misc|dynamic|Miscellaneous column for internal use.|
 |MoboTenantId|string|ID of the activity logs workspace that stores this record.|
 |OperationId|string|Unique identifier of the operation.|
 |OperationNameValue|string|Identifier of the operation e.g. Microsoft.Storage/storageAccounts/listAccountSas/action.|
-|PropertiedBackCompat|string|Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Used for back compat with legacy activity logs|
-|Properties|string|Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event.|
+|PropertiedBackCompat|string|Set of `<Key Value>` pairs (i.e. Dictionary) describing the details of the event. Used for back compat with legacy activity logs|
+|Properties|string|Set of `<Key Value>` pairs (i.e. Dictionary) describing the details of the event.|
 |_ResourceId|string|A unique identifier for the resource that the record is associated with|
 |ResourceProviderValue|string|Id of the resource provider for the impacted resource - e.g. Microsoft.Storage.|
 |SourceSystem|string|Azure is used always for AzureActivity.|
