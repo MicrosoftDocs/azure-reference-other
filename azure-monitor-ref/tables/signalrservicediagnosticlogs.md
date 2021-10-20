@@ -41,11 +41,12 @@ ms.date: 10/19/2021
 | MessageTracingId | long | The tracing ID of the message. It's used for tracing messages. |
 | MessageType | string | The type of the messsage. Can be 'BroadcastDataMessage', 'MultiConnectionDataMessage', 'GroupBroadcastDataMessage', 'MultiGroupBroadcastDataMessage', 'UserDataMessage', 'MultiUserDataMessage', 'JoinGroupWithAckMessage' and 'LeaveGroupWithAckMessage'. For more details, see https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols. |
 | OperationName | string | The operation name of the log event. it can be used to filter the log based on a specific operation name. |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| \_ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |
-| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| \_SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) of the log. |
-| TransportType | string | The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more details, see https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype. |
+| TransportType | string | The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more details, see [HttpTransportType Enum
+](/dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype). |
 | Type | string | The name of the table |
 | UserId | string | The user ID of the connection. It is defined by the client or app server. |
