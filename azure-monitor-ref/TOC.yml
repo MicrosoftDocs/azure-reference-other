@@ -136,3 +136,5 @@
     href: tables/agrifoodweatherlogs.md
   - name: AlertEvidence
     href: tables/alertevidence.md
+  - name: AlertInfo
+    href: tables/alertinfo.md
