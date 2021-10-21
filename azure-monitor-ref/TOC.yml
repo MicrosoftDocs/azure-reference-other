@@ -290,3 +290,5 @@
     href: tables/databricksdbfs.md
   - name: DatabricksInstancePools
     href: tables/databricksinstancepools.md
+  - name: DatabricksJobs
+    href: tables/databricksjobs.md
