@@ -296,3 +296,5 @@
     href: tables/databricksnotebook.md
   - name: DatabricksSecrets
     href: tables/databrickssecrets.md
+  - name: DatabricksSQLPermissions
+    href: tables/databrickssqlpermissions.md
