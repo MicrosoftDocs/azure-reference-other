@@ -462,3 +462,5 @@
     href: tables/madevicenotenrolled.md
   - name: MCCEventLogs
     href: tables/mcceventlogs.md
+  - name: MCVPAuditLogs
+    href: tables/mcvpauditlogs.md
