@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/19/2021
+ms.date: 10/21/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -207,6 +207,10 @@ ms.date: 10/19/2021
 - [ADTEventRoutesOperation](adteventroutesoperation.md)
 - [ADTModelsOperation](adtmodelsoperation.md)
 - [ADTQueryOperation](adtqueryoperation.md)
+- [AzureActivity](azureactivity.md)
+
+## Azure Managed Instance for Apache Cassandra
+
 - [AzureActivity](azureactivity.md)
 
 ## Azure Monitor autoscale settings
@@ -435,6 +439,8 @@ ms.date: 10/19/2021
 
 ## Dynamics 365 Customer Insights - AUI
 
+- [AUIEventsAudit](auieventsaudit.md)
+- [AUIEventsOperational](auieventsoperational.md)
 - [AzureActivity](azureactivity.md)
 
 ## Event Grid Domains
@@ -660,6 +666,9 @@ ms.date: 10/19/2021
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
