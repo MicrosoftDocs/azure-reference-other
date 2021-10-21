@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/19/2021
+ms.date: 10/21/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -54,6 +54,7 @@ ms.date: 10/19/2021
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
+- [AUIEventsAudit](auieventsaudit.md)
 - [AzureActivity](azureactivity.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
@@ -142,6 +143,8 @@ ms.date: 10/19/2021
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
 - [AuditLogs](auditlogs.md)
+- [AUIEventsAudit](auieventsaudit.md)
+- [AUIEventsOperational](auieventsoperational.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
 - [AzureActivity](azureactivity.md)
@@ -381,6 +384,9 @@ ms.date: 10/19/2021
 - [EmailUrlInfo](emailurlinfo.md)
 - [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
 - [HuntingBookmark](huntingbookmark.md)
+- [IdentityDirectoryEvents](identitydirectoryevents.md)
+- [IdentityLogonEvents](identitylogonevents.md)
+- [IdentityQueryEvents](identityqueryevents.md)
 - [LinuxAuditLog](linuxauditlog.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
 - [NetworkSessions](networksessions.md)
