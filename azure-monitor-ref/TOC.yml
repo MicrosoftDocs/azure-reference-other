@@ -40,6 +40,8 @@
     href: tables/absdependenciesrequests.md
   - name: ACICollaborationAudit
     href: tables/acicollaborationaudit.md
+  - name: ACRConnectedClientList
+    href: tables/acrconnectedclientlist.md
   - name: ACSAuthIncomingOperations
     href: tables/acsauthincomingoperations.md
   - name: ACSBillingUsage
@@ -420,8 +422,14 @@
     href: tables/heartbeat.md
   - name: HuntingBookmark
     href: tables/huntingbookmark.md
+  - name: IdentityDirectoryEvents
+    href: tables/identitydirectoryevents.md
   - name: IdentityInfo
     href: tables/identityinfo.md
+  - name: IdentityLogonEvents
+    href: tables/identitylogonevents.md
+  - name: IdentityQueryEvents
+    href: tables/identityqueryevents.md
   - name: InsightsMetrics
     href: tables/insightsmetrics.md
   - name: IntuneDeviceComplianceOrg
