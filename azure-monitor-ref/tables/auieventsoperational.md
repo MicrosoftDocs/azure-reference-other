@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/19/2021
+ms.date: 10/21/2021
 ---
 
 # AUIEventsOperational
 
  Events generated using the service, for example GET requests or the execution events of a workflow.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Dynamics 365 Customer Insights - AUI
 
 
 
