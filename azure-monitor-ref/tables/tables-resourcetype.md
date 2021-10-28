@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/21/2021
+ms.date: 10/28/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -124,6 +124,7 @@ ms.date: 10/21/2021
 
 ## Azure Cache for Redis
 
+- [ACRConnectedClientList](acrconnectedclientlist.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -212,6 +213,8 @@ ms.date: 10/21/2021
 ## Azure Managed Instance for Apache Cassandra
 
 - [AzureActivity](azureactivity.md)
+- [CassandraAudit](cassandraaudit.md)
+- [CassandraLogs](cassandralogs.md)
 
 ## Azure Monitor autoscale settings
 
@@ -666,6 +669,9 @@ ms.date: 10/21/2021
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
