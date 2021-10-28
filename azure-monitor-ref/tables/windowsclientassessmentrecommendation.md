@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/21/2021
+ms.date: 10/28/2021
 ---
 
 # WindowsClientAssessmentRecommendation
