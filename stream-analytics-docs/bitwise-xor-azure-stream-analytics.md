@@ -44,6 +44,14 @@ For illustration, the binary representation of 170 is 0000 0000 1010 1010. The b
 0000 0000 1110 0001
 ```
 
+It is to be noted that casting a FLOAT value to BIGINT, and applying a bitwise operator on it will most often not return the same result as casting it to BIT and applying the same operator:
+
+- First option : 170 ^ 75.0 => 170 ^ 75 = 225
+- Second option : 170 ^ 75.0 => 170 ^ 1 = 171
+
+See the [Data Types Overview](data-types-azure-stream-analytics.md) for the rules of conversion to bit.
+
+
 ## Examples
 
 With a common input dataset:
