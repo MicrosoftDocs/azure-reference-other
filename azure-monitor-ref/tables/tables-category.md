@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/21/2021
+ms.date: 10/28/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -38,6 +38,7 @@ ms.date: 10/21/2021
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
 - [AADUserRiskEvents](aaduserriskevents.md)
 - [ACICollaborationAudit](acicollaborationaudit.md)
+- [ACRConnectedClientList](acrconnectedclientlist.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [ADPAudit](adpaudit.md)
 - [AEWAuditLogs](aewauditlogs.md)
@@ -56,6 +57,7 @@ ms.date: 10/21/2021
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AUIEventsAudit](auieventsaudit.md)
 - [AzureActivity](azureactivity.md)
+- [CassandraAudit](cassandraaudit.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
@@ -83,6 +85,7 @@ ms.date: 10/21/2021
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [ABSBotRequests](absbotrequests.md)
 - [ACICollaborationAudit](acicollaborationaudit.md)
+- [ACRConnectedClientList](acrconnectedclientlist.md)
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
