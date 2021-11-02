@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/21/2021
+ms.date: 10/28/2021
 ---
 
 # AzureMetrics
@@ -59,7 +59,6 @@ ms.date: 10/21/2021
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
-- Workload Monitor
 - Event Grid Topics
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
@@ -74,10 +73,11 @@ ms.date: 10/21/2021
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
-- Analysis Services
+- Azure Cache for Redis
+- Workload Monitor
 - Azure API for FHIR
-- Batch Accounts
-- Media Services
+- Analysis Services
+- Azure Spring Cloud
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
@@ -92,8 +92,8 @@ ms.date: 10/21/2021
 - Storage Accounts
 - Key Vaults
 - Cognitive Services
-- Azure Cache for Redis
-- Azure Spring Cloud
+- Media Services
+- Batch Accounts
 - Service Bus
 
 

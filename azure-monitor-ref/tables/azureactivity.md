@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/21/2021
+ms.date: 10/28/2021
 ---
 
 # AzureActivity
@@ -70,7 +70,6 @@ ms.date: 10/21/2021
 - VMware
 - Event Grid Domains
 - Azure Blockchain Service
-- Synapse Workspaces
 - Virtual machines
 - AzureML/OnlineEndpoint
 - HDInsight Clusters
@@ -87,12 +86,13 @@ ms.date: 10/21/2021
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
+- Azure Cache for Redis
 - Azure Autonomous Development Platform Account
 - App Services
+- Synapse Workspaces
 - Desktop Virtualization Host Pools
 - Default schema for a resource
 - Azure Subscription
-- Azure Resource Group
 - Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
@@ -100,11 +100,10 @@ ms.date: 10/21/2021
 - Storage Accounts
 - Key Vaults
 - Cognitive Services
-- Azure Cache for Redis
 - Media Services
-- Azure API for FHIR
 - Azure Spring Cloud
-- Batch Accounts
+- Azure API for FHIR
+- CDN Profiles
 - Analysis Services
 - Workload Monitor
 - Event Grid Topics
@@ -113,7 +112,8 @@ ms.date: 10/21/2021
 - Desktop Virtualization Application Groups
 - Application Insights
 - Azure Digital Twins
-- CDN Profiles
+- Azure Resource Group
+- Batch Accounts
 - Service Bus
 
 
@@ -144,8 +144,8 @@ ms.date: 10/21/2021
 | OperationId | string | GUID of the operation |
 | OperationName | string |  |
 | OperationNameValue | string | Identifier of the operation e.g. Microsoft.Storage/storageAccounts/listAccountSas/action. |
-| Properties | string | Set of %lt;Key Value%gt; pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead. |
-| Properties_d | dynamic | Set of %lt;Key Value%gt; pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column. |
+| Properties | string | Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead. |
+| Properties_d | dynamic | Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column. |
 | Resource | string |  |
 | ResourceGroup | string | Resource group name of the impacted resource. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
