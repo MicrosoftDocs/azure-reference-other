@@ -33,8 +33,8 @@ MAX can be used with Bit, Bigint, Datetime and Float columns.
 
 MAX can also be used with NVARCHAR(MAX) with the following behavior:
 
-- if the column was not explicitly cast to NVARCHAR(MAX), then MAX will try to implicitly cast it to FLOAT. Type mismatches will result in errors.
-- if the column was explicitly cast to NVARCHAR(MAX) by using [CAST](cast-azure-stream-analytics.md) or [TRY_CAST](try-cast-azure-stream-analytics.md), then the maximal string value will be returned.
+- If the column was not explicitly cast to NVARCHAR(MAX), then MAX will try to implicitly cast it to FLOAT. Type mismatches will result in errors.
+- If the column was explicitly cast to NVARCHAR(MAX) by using [CAST](cast-azure-stream-analytics.md) or [TRY_CAST](try-cast-azure-stream-analytics.md), then the maximal string value will be returned.
 
 **OVER ([\<PARTITION BY clause> \<LIMIT DURATION clause> [\<WHEN clause>]]**
 
@@ -52,7 +52,7 @@ With the aggregate syntax, we will reduce the number of rows. Here we select the
 SELECT
   TollId,
   System.Timestamp() AS WindowEnd,
-  MAX(Toll) AS MinFare
+  MAX(Toll) AS MaxFare
 FROM Input TIMESTAMP BY EntryTime
 GROUP BY
   TollId,

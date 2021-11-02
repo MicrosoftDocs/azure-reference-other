@@ -33,8 +33,8 @@ MIN can be used with Bit, Bigint, Datetime and Float columns.
 
 MIN can also be used with NVARCHAR(MAX) with the following behavior:
 
-- if the column was not explicitly cast to NVARCHAR(MAX), then MIN will try to implicitly cast it to FLOAT. Type mismatches will result in errors.
-- if the column was explicitly cast to NVARCHAR(MAX) by using [CAST](cast-azure-stream-analytics.md) or [TRY_CAST](try-cast-azure-stream-analytics.md), then the minimal string value will be returned.
+- If the column was not explicitly cast to NVARCHAR(MAX), then MIN will try to implicitly cast it to FLOAT. Type mismatches will result in errors.
+- If the column was explicitly cast to NVARCHAR(MAX) by using [CAST](cast-azure-stream-analytics.md) or [TRY_CAST](try-cast-azure-stream-analytics.md), then the minimal string value will be returned.
 
 **OVER ([\<PARTITION BY clause> \<LIMIT DURATION clause> [\<WHEN clause>]]**
 
