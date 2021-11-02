@@ -12,7 +12,13 @@ ms.date: 10/22/2021
 
 # TRIM (Azure Stream Analytics)
 
-Removes the space character `char(32)` from the start and end of a string.
+Removes any white-space characters from the start and end of a string. The entire list of
+
+> [!NOTE]
+>  This behavior differs from the [TRIM](https://docs.microsoft.com/en-us/sql/t-sql/functions/trim-transact-sql?view=sql-server-ver15) function of T-SQL, that only removes the space character `(char(32))`
+
+> [!NOTE]
+> During local runs, VSCode currently always trims all text values in the Result pane. This only happens for display. To observe the actual values, and the proper effect of the TRIM functions, select `Open File` in the result pane.
 
 ## Syntax
 
@@ -29,6 +35,15 @@ Is the string expression to be evaluated. string_expression can be a constant or
 ## Return Types
 
 nvarchar(max)
+
+## Remarks
+
+White-space characters are the following Unicode characters:
+
+- Members of the [UnicodeCategory.SpaceSeparator](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.unicodecategory?view=netcore-3.1#System_Globalization_UnicodeCategory_SpaceSeparator) category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).
+- Members of the [UnicodeCategory.LineSeparator](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.unicodecategory?view=netcore-3.1#System_Globalization_UnicodeCategory_LineSeparator) category, which consists solely of the LINE SEPARATOR character (U+2028).
+- Members of the [UnicodeCategory.ParagraphSeparator](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.unicodecategory?view=netcore-3.1#System_Globalization_UnicodeCategory_ParagraphSeparator) category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).
+- The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), and NEXT LINE (U+0085).
 
 ## Examples
 
