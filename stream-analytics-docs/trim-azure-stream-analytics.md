@@ -12,7 +12,7 @@ ms.date: 10/22/2021
 
 # TRIM (Azure Stream Analytics)
 
-Removes any white-space characters from the start and end of a string. The entire list of
+Removes any white-space characters from the start and end of a string.
 
 > [!NOTE]
 >  This behavior differs from the [TRIM](/sql/t-sql/functions/trim-transact-sql) function of T-SQL, that only removes the space character `(char(32))`

@@ -167,10 +167,16 @@ items:
               href: charindex-azure-stream-analytics.md
             - name: CONCAT
               href: concat-azure-stream-analytics.md
+            - name: CONCAT_WS
+              href: concat-ws-azure-stream-analytics.md
+            - name: LEFT
+              href: left-azure-stream-analytics.md
             - name: LEN
               href: len-azure-stream-analytics.md
             - name: LOWER
               href: lower-azure-stream-analytics.md
+            - name: LTRIM
+              href: ltrim-azure-stream-analytics.md
             - name: NCHAR
               href: nchar-azure-stream-analytics.md
             - name: PATINDEX
@@ -179,8 +185,24 @@ items:
               href: regexmatch-azure-stream-analytics.md
             - name: REPLACE
               href: replace-azure-stream-analytics.md
+            - name: REPLICATE
+              href: replicate-azure-stream-analytics.md
+            - name: REVERSE
+              href: reverse-azure-stream-analytics.md
+            - name: RIGHT
+              href: right-azure-stream-analytics.md
+            - name: RTRIM
+              href: rtrim-azure-stream-analytics.md
+            - name: SPACE
+              href: space-azure-stream-analytics.md
+            - name: STUFF
+              href: stuff-azure-stream-analytics.md
             - name: SUBSTRING
               href: substring-azure-stream-analytics.md
+            - name: TRANSLATE
+              href: translate-azure-stream-analytics.md
+            - name: TRIM
+              href: trim-azure-stream-analytics.md
             - name: UNICODE
               href: unicode-azure-stream-analytics.md
             - name: UPPER
@@ -233,6 +255,8 @@ items:
           href: join-azure-stream-analytics.md
         - name: MATCH_RECOGNIZE
           href: match-recognize-stream-analytics.md
+        - name: NULLIF
+          href: nullif-stream-analytics.md
         - name: OVER
           href: over-azure-stream-analytics.md
         - name: Reference Data JOIN

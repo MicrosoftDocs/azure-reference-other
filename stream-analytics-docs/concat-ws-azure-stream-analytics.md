@@ -59,4 +59,5 @@ FROM Input
 
 ## See Also
 
--[CONCAT (Azure Stream Analytics)](concat-azure-stream-analytics.md)
+- [CONCAT (Azure Stream Analytics)](concat-azure-stream-analytics.md)
+- [Substring (Azure Stream Analytics)](substring-azure-stream-analytics.md)
