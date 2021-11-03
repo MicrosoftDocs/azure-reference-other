@@ -256,7 +256,7 @@ items:
         - name: MATCH_RECOGNIZE
           href: match-recognize-stream-analytics.md
         - name: NULLIF
-          href: nullif-stream-analytics.md
+          href: nullif-azure-stream-analytics.md
         - name: OVER
           href: over-azure-stream-analytics.md
         - name: Reference Data JOIN
