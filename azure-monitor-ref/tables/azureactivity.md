@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/28/2021
+ms.date: 11/4/2021
 ---
 
 # AzureActivity
@@ -74,7 +74,7 @@ ms.date: 10/28/2021
 - AzureML/OnlineEndpoint
 - HDInsight Clusters
 - Experiment Workspace
-- Dynamics 365 Customer Insights - AUI
+- Dynamics 365 Customer Insights
 - Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache

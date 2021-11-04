@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/28/2021
+ms.date: 11/4/2021
 ---
 
 # UCUpdateAlert
@@ -49,9 +49,9 @@ ms.date: 10/28/2021
 | SourceSystem | string |  |
 | StartTime | datetime | The time this alert was activated. |
 | TargetBuild | string | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
-| TargetVersion | int | The target OS Version - eg, 1909. |
+| TargetVersion | string | The target OS Version - eg, 1909. |
 | TenantId | string |  |
-| TimeGenerated | datetime | Time at which this event is generated and logged. |
+| TimeGenerated | datetime | Time at which this event is generated. |
 | Type | string | The name of the table |
 | UpdateCategory | string | The type of content this DeviceUpdateEvent is tracking. |
 | UpdateClassification | string | Whether this content is an Upgrade (FU), Security (QU), NonSecurity (QU) |

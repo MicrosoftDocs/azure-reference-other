@@ -6,23 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/28/2021
+ms.date: 11/4/2021
 ---
 
 # AUIEventsAudit
 
  All API requests in the context of the Customer Insights (AUI) instance, for example all user actions while configuring and using the instance. POST|PUT|DELETE|PATCH operations go into this category.
 
-## Categories
-
-- Azure Resources
-- Audit
 ## Solutions
 
 - LogManagement
-## Resource types
-
-- Dynamics 365 Customer Insights - AUI
 
 
 
