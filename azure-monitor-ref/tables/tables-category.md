@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/28/2021
+ms.date: 11/4/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -55,7 +55,6 @@ ms.date: 10/28/2021
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
-- [AUIEventsAudit](auieventsaudit.md)
 - [AzureActivity](azureactivity.md)
 - [CassandraAudit](cassandraaudit.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
@@ -146,8 +145,6 @@ ms.date: 10/28/2021
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
 - [AuditLogs](auditlogs.md)
-- [AUIEventsAudit](auieventsaudit.md)
-- [AUIEventsOperational](auieventsoperational.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
 - [AzureActivity](azureactivity.md)
@@ -215,6 +212,7 @@ ms.date: 10/28/2021
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [PurviewScanStatusLogs](purviewscanstatuslogs.md)
+- [ResourceManagementPublicAccessLogs](resourcemanagementpublicaccesslogs.md)
 - [ServiceFabricOperationalEvent](servicefabricoperationalevent.md)
 - [ServiceFabricReliableActorEvent](servicefabricreliableactorevent.md)
 - [ServiceFabricReliableServiceEvent](servicefabricreliableserviceevent.md)

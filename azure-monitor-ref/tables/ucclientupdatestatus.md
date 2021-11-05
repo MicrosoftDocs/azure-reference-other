@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/28/2021
+ms.date: 11/4/2021
 ---
 
 # UCClientUpdateStatus
@@ -43,9 +43,9 @@ ms.date: 10/28/2021
 | SourceSystem | string |  |
 | TargetBuild | string | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
 | TargetBuildNumber | int | Integer of the Major portion of Build. |
-| TargetKBNumber | int | KB Article. |
+| TargetKBNumber | string | KB Article. |
 | TargetRevisionNumber | int | Integer or the Minor (or Revision) portion of Build. |
-| TargetVersion | int | The target OS Version - eg, 1909. |
+| TargetVersion | string | The target OS Version - eg, 1909. |
 | TenantId | string |  |
 | TimeGenerated | datetime | The time the snapshot generated this specific record. |
 | Type | string | The name of the table |
@@ -58,7 +58,7 @@ ms.date: 10/28/2021
 | UpdateHealthGroupL3 | string | Third grouping, subset of L3, more detailed. |
 | UpdateHealthGroupRankL1 | int | Integer for ranking the L1 UpdateHealthGroup. |
 | UpdateHealthGroupRankL2 | int | Integer for ranking the L2 UpdateHealthGroup. |
-| UpdateHealthGroupRankL3 | string | Integer for ranking the L3 UpdateHealthGroup. |
+| UpdateHealthGroupRankL3 | int | Integer for ranking the L3 UpdateHealthGroup. |
 | UpdateInstalledTime | datetime | DateTime when event transitioned to UpdateInstalled, else empty. |
 | UpdateManufacturer | string | Manufacturer of update. Microsoft for WU FU/QU, for D&F name of driver manufacturer e.g. NVIDIA. |
 | UpdateReleaseTime | datetime | The release date of the update. |

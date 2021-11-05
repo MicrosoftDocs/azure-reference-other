@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/28/2021
+ms.date: 11/4/2021
 ---
 
 # UCServiceUpdateStatus
@@ -34,11 +34,12 @@ ms.date: 10/28/2021
 | ServiceState | string | High-level state of update's status relative to device, service-side. |
 | ServiceSubstate | string | Last-known state of this update relative to the device, from the client (the device's WDD). |
 | ServiceSubstateRank | int | Ranking of Substates for sequential ordering in funnel-type views. The rankings between ServiceSubstate and ClientSubstate can be used together. |
+| ServiceSubstateTime | datetime | DateTime of last ServiceSubstate transition. |
 | SourceSystem | string |  |
 | TargetBuild | string | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
-| TargetVersion | int | The target OS Version - eg, 1909. |
+| TargetVersion | string | The target OS Version - eg, 1909. |
 | TenantId | string |  |
-| TimeGenerated | datetime | Time at which this event is generated and logged |
+| TimeGenerated | datetime | Time at which this event is generated. |
 | Type | string | The name of the table |
 | UpdateCategory | string | The type of content this DeviceUpdateEvent is tracking. |
 | UpdateClassification | string | Whether this content is an Upgrade (FU), Security (QU), NonSecurity (QU). |

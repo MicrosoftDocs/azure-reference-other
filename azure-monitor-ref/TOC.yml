@@ -184,6 +184,8 @@
     href: tables/apppageviews.md
   - name: AppPerformanceCounters
     href: tables/appperformancecounters.md
+  - name: AppPlatformBuildLogs
+    href: tables/appplatformbuildlogs.md
   - name: AppPlatformIngressLogs
     href: tables/appplatformingresslogs.md
   - name: AppPlatformLogsforSpring
@@ -514,6 +516,8 @@
     href: tables/purviewdatasensitivitylogs.md
   - name: PurviewScanStatusLogs
     href: tables/purviewscanstatuslogs.md
+  - name: ResourceManagementPublicAccessLogs
+    href: tables/resourcemanagementpublicaccesslogs.md
   - name: SecureScoreControls
     href: tables/securescorecontrols.md
   - name: SecureScores

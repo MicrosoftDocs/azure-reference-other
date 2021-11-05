@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/28/2021
+ms.date: 11/4/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -440,10 +440,8 @@ ms.date: 10/28/2021
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Dynamics 365 Customer Insights - AUI
+## Dynamics 365 Customer Insights
 
-- [AUIEventsAudit](auieventsaudit.md)
-- [AUIEventsOperational](auieventsoperational.md)
 - [AzureActivity](azureactivity.md)
 
 ## Event Grid Domains
