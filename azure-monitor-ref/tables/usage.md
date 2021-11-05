@@ -39,7 +39,7 @@ ms.date: 11/4/2021
 | LinkedResourceUri | string | Deprecated |
 | MeterId | string | GUID of the meter used for billing. |
 | Quantity | real | Size of data in Mbytes. |
-| QuantityUnit | string | Value is alwais Mbytes. |
+| QuantityUnit | string | Value is always Mbytes. |
 | ResourceUri | string | The URI of the workspace. This will be same for all records in this table in workspace. |
 | Solution | string | Solution about which usage is being reported. |
 | SourceSystem | string | For Usage record SourceSystem is always OMS. |
