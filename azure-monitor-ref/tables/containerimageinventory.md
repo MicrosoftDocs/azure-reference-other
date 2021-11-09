@@ -18,12 +18,12 @@ ms.date: 11/4/2021
 - Containers
 ## Solutions
 
-- ContainerInsights
 - Container Monitoring Solution
 ## Resource types
 
-- Kubernetes Services
-- Azure Arc enabled Kubernetes
+- Docker Swarm
+- DC/OS
+- Service Fabric
 
 
 
