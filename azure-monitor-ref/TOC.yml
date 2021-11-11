@@ -182,3 +182,5 @@
     href: tables/appmetrics.md
   - name: AppPageViews
     href: tables/apppageviews.md
+  - name: AppPerformanceCounters
+    href: tables/appperformancecounters.md
