@@ -6,16 +6,13 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/4/2021
+ms.date: 11/11/2021
 ---
 
 # AlertInfo
 
  Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity, including severity information and threat categorization.
 
-## Categories
-
-- Security
 ## Solutions
 
 - Azure Sentinel
