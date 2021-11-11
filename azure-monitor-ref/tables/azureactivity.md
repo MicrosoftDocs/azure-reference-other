@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/4/2021
+ms.date: 11/11/2021
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 11/4/2021
 ## Resource types
 
 - Microsoft App Configuration
-- SQL Servers
 - SQL Managed Instances
 - Data Share
 - Power BI Embedded
@@ -43,10 +42,11 @@ ms.date: 11/4/2021
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
-- SQL Databases
 - Azure Stack HCI
-- Azure Database for MySQL Servers
-- Azure Database for PostgreSQL Servers V2
+- SQL Servers
+- VMware
+- SQL Databases
+- Azure Database for PostgreSQL Servers
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -60,17 +60,16 @@ ms.date: 11/4/2021
 - Load Balancers
 - Front Doors
 - ExpressRoute Circuits
-- Firewalls
 - Application Gateways
 - Event Hubs
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Flexible Servers
-- Azure Database for PostgreSQL Servers
-- VMware
+- Azure Database for PostgreSQL Servers V2
+- Azure Database for MySQL Servers
 - Event Grid Domains
 - Azure Blockchain Service
-- Virtual machines
+- Azure AD Domain Services
 - AzureML/OnlineEndpoint
 - HDInsight Clusters
 - Experiment Workspace
@@ -83,17 +82,17 @@ ms.date: 11/4/2021
 - Microsoft.Purview/accounts
 - Kubernetes Services
 - Azure Managed Instance for Apache Cassandra
+- Firewalls
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
 - Azure Autonomous Development Platform Account
 - App Services
+- Virtual machines
 - Synapse Workspaces
 - Desktop Virtualization Host Pools
 - Default schema for a resource
-- Azure Subscription
-- Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
 - SignalR
@@ -102,9 +101,9 @@ ms.date: 11/4/2021
 - Cognitive Services
 - Media Services
 - Azure Spring Cloud
-- Azure API for FHIR
 - CDN Profiles
-- Analysis Services
+- Azure API for FHIR
+- Batch Accounts
 - Workload Monitor
 - Event Grid Topics
 - Time Series Insights Environments
@@ -113,7 +112,8 @@ ms.date: 11/4/2021
 - Application Insights
 - Azure Digital Twins
 - Azure Resource Group
-- Batch Accounts
+- Azure Subscription
+- Analysis Services
 - Service Bus
 
 
