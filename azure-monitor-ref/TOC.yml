@@ -262,6 +262,10 @@
     href: tables/cdbpartitionkeystatistics.md
   - name: CDBQueryRuntimeStatistics
     href: tables/cdbqueryruntimestatistics.md
+  - name: CIEventsAudit
+    href: tables/cieventsaudit.md
+  - name: CIEventsOperational
+    href: tables/cieventsoperational.md
   - name: CloudAppEvents
     href: tables/cloudappevents.md
   - name: CommonSecurityLog
@@ -640,6 +644,12 @@
     href: tables/w3ciislog.md
   - name: Watchlist
     href: tables/watchlist.md
+  - name: WebPubSubConnectivity
+    href: tables/webpubsubconnectivity.md
+  - name: WebPubSubHttpRequest
+    href: tables/webpubsubhttprequest.md
+  - name: WebPubSubMessaging
+    href: tables/webpubsubmessaging.md
   - name: WindowsEvent
     href: tables/windowsevent.md
   - name: WireData

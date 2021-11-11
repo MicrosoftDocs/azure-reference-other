@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/4/2021
+ms.date: 11/11/2021
 ---
 
 # ContainerImageInventory
@@ -18,12 +18,12 @@ ms.date: 11/4/2021
 - Containers
 ## Solutions
 
+- ContainerInsights
 - Container Monitoring Solution
 ## Resource types
 
-- Docker Swarm
-- DC/OS
-- Service Fabric
+- Kubernetes Services
+- Azure Arc enabled Kubernetes
 
 
 

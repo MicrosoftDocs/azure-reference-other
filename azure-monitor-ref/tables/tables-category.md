@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/4/2021
+ms.date: 11/11/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -57,6 +57,7 @@ ms.date: 11/4/2021
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
 - [CassandraAudit](cassandraaudit.md)
+- [CIEventsAudit](cieventsaudit.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
@@ -155,6 +156,8 @@ ms.date: 11/4/2021
 - [BaiJobEvent](baijobevent.md)
 - [BlockchainApplicationLog](blockchainapplicationlog.md)
 - [BlockchainProxyLog](blockchainproxylog.md)
+- [CIEventsAudit](cieventsaudit.md)
+- [CIEventsOperational](cieventsoperational.md)
 - [CoreAzureBackup](coreazurebackup.md)
 - [DatabricksAccounts](databricksaccounts.md)
 - [DatabricksClusters](databricksclusters.md)
@@ -361,7 +364,6 @@ ms.date: 11/4/2021
 - [AADUserRiskEvents](aaduserriskevents.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [AlertEvidence](alertevidence.md)
-- [AlertInfo](alertinfo.md)
 - [Anomalies](anomalies.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AuditLogs](auditlogs.md)
