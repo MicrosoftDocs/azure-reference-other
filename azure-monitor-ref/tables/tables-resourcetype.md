@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/4/2021
+ms.date: 11/11/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -92,6 +92,7 @@ ms.date: 11/4/2021
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+- [ContainerImageInventory](containerimageinventory.md)
 - [ContainerInventory](containerinventory.md)
 - [ContainerLog](containerlog.md)
 - [ContainerNodeInventory](containernodeinventory.md)
@@ -442,6 +443,8 @@ ms.date: 11/4/2021
 ## Dynamics 365 Customer Insights
 
 - [AzureActivity](azureactivity.md)
+- [CIEventsAudit](cieventsaudit.md)
+- [CIEventsOperational](cieventsoperational.md)
 
 ## Event Grid Domains
 
@@ -541,6 +544,7 @@ ms.date: 11/4/2021
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+- [ContainerImageInventory](containerimageinventory.md)
 - [ContainerInventory](containerinventory.md)
 - [ContainerLog](containerlog.md)
 - [ContainerLogV2](containerlogv2.md)
@@ -665,6 +669,9 @@ ms.date: 11/4/2021
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
