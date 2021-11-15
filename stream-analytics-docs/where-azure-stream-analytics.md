@@ -25,7 +25,9 @@ ms.date: 04/22/2016
     { expression { = | < > | ! = | > | > = | ! > | < | < = | ! < } expression
     | string_expression [ NOT ] LIKE string_expression
     | expression [ NOT ] BETWEEN expression AND expression
-    | expression IS [ NOT ] NULL }
+    | expression IS [ NOT ] NULL
+    | expression [ NOT ] IN ( expression [ ,...n ] )
+    }
 
 ```
 

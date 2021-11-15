@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/4/2021
+ms.date: 11/11/2021
 ---
 
 # AzureMetrics
@@ -22,24 +22,24 @@ ms.date: 11/4/2021
 ## Resource types
 
 - App Services
-- Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
 - SQL Databases
 - SQL Servers
 - SQL Managed Instances
 - Data Share
-- Azure Database for PostgreSQL Servers V2
 - Power BI Embedded
-- Data Lake Storage Gen1
+- Azure Database for PostgreSQL Servers
+- Data Lake Analytics
 - Data factories
 - Automation account
 - API Management services
 - Logic Apps
 - Service Fabric Clusters
-- Data Lake Analytics
+- Machine Learning
+- Data Lake Storage Gen1
+- Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Flexible Servers
 - Azure Database for MariaDB Servers
-- Device Provisioning Services
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -52,14 +52,13 @@ ms.date: 11/4/2021
 - Network Interfaces
 - Front Doors
 - ExpressRoute Circuits
-- Firewalls
 - Application Gateways
 - Event Hubs
-- Machine Learning
+- Device Provisioning Services
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
-- Event Grid Topics
+- Azure Arc enabled Kubernetes
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
@@ -70,15 +69,15 @@ ms.date: 11/4/2021
 - Microsoft Connected Cache
 - Azure Traffic Collector
 - Kubernetes Services
+- Firewalls
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
-- Workload Monitor
+- Event Grid Topics
 - Azure API for FHIR
-- Analysis Services
-- Azure Spring Cloud
-- Azure Arc enabled Kubernetes
+- Workload Monitor
+- Batch Accounts
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
 - Azure Stack HCI
@@ -93,7 +92,8 @@ ms.date: 11/4/2021
 - Key Vaults
 - Cognitive Services
 - Media Services
-- Batch Accounts
+- Azure Spring Cloud
+- Analysis Services
 - Service Bus
 
 
