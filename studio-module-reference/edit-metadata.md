@@ -76,7 +76,7 @@ Typical metadata changes might include:
     
         In many cases, Machine Learning can infer that a column contains a class label, but by setting this metadata you can ensure that the column is identified correctly. Setting this option does not change data values, only the way that some machine learning algorithms handle the data.
   
-    + **Weight**: Use this option with numeric data to indicate that column values represents weights for use in machine learning scoring or training operations. Only one weight column can be present in a dataset, and the column must be numeric.
+    + **Weight**: Use this option with numeric data to indicate that column values represents weights for use in machine learning scoring or training operations. Only one weight column can be present in a dataset, and the column must be numeric. This option works only in these models: Two-Class Logistic Regression, Two-Class Support Vector Machine, and Two-Class Neural Network. 
   
     > [!TIP]
     >  Have data that doesn't fit into these categories?  For example, your dataset might contain values such as unique identifiers that are not useful as variables. Sometimes IDs can cause problems when used in a model. 
