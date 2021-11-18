@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/11/2021
+ms.date: 11/18/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -193,10 +193,17 @@ ms.date: 11/11/2021
 - [DatabricksAccounts](databricksaccounts.md)
 - [DatabricksClusters](databricksclusters.md)
 - [DatabricksDBFS](databricksdbfs.md)
+- [DatabricksFeatureStore](databricksfeaturestore.md)
+- [DatabricksGenie](databricksgenie.md)
+- [DatabricksGlobalInitScripts](databricksglobalinitscripts.md)
+- [DatabricksIAMRole](databricksiamrole.md)
 - [DatabricksInstancePools](databricksinstancepools.md)
 - [DatabricksInstancePools](databricksinstancepools.md)
 - [DatabricksJobs](databricksjobs.md)
+- [DatabricksMLflowAcledArtifact](databricksmlflowacledartifact.md)
+- [DatabricksMLflowExperiment](databricksmlflowexperiment.md)
 - [DatabricksNotebook](databricksnotebook.md)
+- [DatabricksRemoteHistoryService](databricksremotehistoryservice.md)
 - [DatabricksSecrets](databrickssecrets.md)
 - [DatabricksSQLPermissions](databrickssqlpermissions.md)
 - [DatabricksSSH](databricksssh.md)
@@ -669,6 +676,9 @@ ms.date: 11/11/2021
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
