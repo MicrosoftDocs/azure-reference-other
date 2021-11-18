@@ -134,3 +134,5 @@
     href: tables/agrifoodproviderauthlogs.md
   - name: AgriFoodSatelliteLogs
     href: tables/agrifoodsatellitelogs.md
+  - name: AgriFoodWeatherLogs
+    href: tables/agrifoodweatherlogs.md
