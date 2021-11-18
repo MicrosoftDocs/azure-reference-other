@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/11/2021
+ms.date: 11/18/2021
 ---
 
 # SecurityAlert
@@ -22,7 +22,7 @@ ms.date: 11/11/2021
 - Security and Audit
 - SecurityCenter
 - SecurityCenterFree
-- Azure Sentinel
+- Microsoft Sentinel
 
 
 

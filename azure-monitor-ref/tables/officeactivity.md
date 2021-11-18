@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/11/2021
+ms.date: 11/18/2021
 ---
 
 # OfficeActivity
@@ -19,7 +19,7 @@ ms.date: 11/11/2021
 ## Solutions
 
 - AzureSentinelPrivatePreview
-- Azure Sentinel
+- Microsoft Sentinel
 
 
 
@@ -40,6 +40,7 @@ ms.date: 11/11/2021
 | AppDistributionMode | string | Application distribution mode |
 | AppId | string | Application ID |
 | Application | string | The application name |
+| ApplicationId | string | SharePoint application ID |
 | AzureActiveDirectory_EventType | string | The type of Azure AD event |
 | AzureADAppId | string | Teams Application Azure AD ID |
 | ChannelGuid | string | A unique identifier for the channel being audited |
