@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/11/2021
+ms.date: 11/18/2021
 ---
 
 # CommonSecurityLog
@@ -19,7 +19,7 @@ ms.date: 11/11/2021
 ## Solutions
 
 - Security and Audit
-- Azure Sentinel
+- Microsoft Sentinel
 ## Resource types
 
 - Azure Sentinel CEF Table
