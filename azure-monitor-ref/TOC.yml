@@ -504,3 +504,5 @@
     href: tables/microsoftdatasharesharelog.md
   - name: MicrosoftDynamicsTelemetryPerformanceLogs
     href: tables/microsoftdynamicstelemetryperformancelogs.md
+  - name: MicrosoftDynamicsTelemetrySystemMetricsLogs
+    href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
