@@ -52,6 +52,8 @@
     href: tables/acscallsummary.md
   - name: ACSChatIncomingOperations
     href: tables/acschatincomingoperations.md
+  - name: ACSNetworkTraversalIncomingOperations
+    href: tables/acsnetworktraversalincomingoperations.md
   - name: ACSSMSIncomingOperations
     href: tables/acssmsincomingoperations.md
   - name: ADAssessmentRecommendation
@@ -298,14 +300,30 @@
     href: tables/databricksclusters.md
   - name: DatabricksDBFS
     href: tables/databricksdbfs.md
+  - name: DatabricksFeatureStore
+    href: tables/databricksfeaturestore.md
+  - name: DatabricksGenie
+    href: tables/databricksgenie.md
+  - name: DatabricksGlobalInitScripts
+    href: tables/databricksglobalinitscripts.md
+  - name: DatabricksIAMRole
+    href: tables/databricksiamrole.md
   - name: DatabricksInstancePools
     href: tables/databricksinstancepools.md
   - name: DatabricksJobs
     href: tables/databricksjobs.md
+  - name: DatabricksMLflowAcledArtifact
+    href: tables/databricksmlflowacledartifact.md
+  - name: DatabricksMLflowExperiment
+    href: tables/databricksmlflowexperiment.md
   - name: DatabricksNotebook
     href: tables/databricksnotebook.md
+  - name: DatabricksRemoteHistoryService
+    href: tables/databricksremotehistoryservice.md
   - name: DatabricksSecrets
     href: tables/databrickssecrets.md
+  - name: DatabricksSQL
+    href: tables/databrickssql.md
   - name: DatabricksSQLPermissions
     href: tables/databrickssqlpermissions.md
   - name: DatabricksSSH
