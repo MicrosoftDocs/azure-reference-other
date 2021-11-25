@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/18/2021
+ms.date: 11/26/2021
 ---
 
 # ACSNetworkTraversalIncomingOperations
 
  Communication Services logs of incoming requests to Network Traversal operations.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Communication Services
 
 
 
