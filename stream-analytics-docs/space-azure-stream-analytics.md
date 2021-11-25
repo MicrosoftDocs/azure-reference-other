@@ -14,9 +14,6 @@ ms.date: 10/22/2021
 
 Returns a string of repeated spaces.
 
-> [!NOTE]
-> During local runs, VSCode currently always trims all text values in the Result pane. This only happens for display. To observe the actual values, select `Open File` in the result pane.
-
 ## Syntax
 
 ```SQL
