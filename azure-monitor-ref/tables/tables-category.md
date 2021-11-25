@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/18/2021
+ms.date: 11/26/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -91,6 +91,7 @@ ms.date: 11/18/2021
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AddonAzureBackupAlerts](addonazurebackupalerts.md)
 - [AddonAzureBackupJobs](addonazurebackupjobs.md)
@@ -302,6 +303,14 @@ ms.date: 11/18/2021
 - [MADeviceReadiness](madevicereadiness.md)
 - [MADriverInstanceReadiness](madriverinstancereadiness.md)
 - [MADriverReadiness](madriverreadiness.md)
+- [MAOfficeAddin](maofficeaddin.md)
+- [MAOfficeAddinInstance](maofficeaddininstance.md)
+- [MAOfficeAddinReadiness](maofficeaddinreadiness.md)
+- [MAOfficeAppInstance](maofficeappinstance.md)
+- [MAOfficeAppReadiness](maofficeappreadiness.md)
+- [MAOfficeBuildInfo](maofficebuildinfo.md)
+- [MAOfficeCurrencyAssessment](maofficecurrencyassessment.md)
+- [MAOfficeSuiteInstance](maofficesuiteinstance.md)
 - [MAProposedPilotDevices](maproposedpilotdevices.md)
 - [MAWindowsBuildInfo](mawindowsbuildinfo.md)
 - [MAWindowsCurrencyAssessment](mawindowscurrencyassessment.md)
