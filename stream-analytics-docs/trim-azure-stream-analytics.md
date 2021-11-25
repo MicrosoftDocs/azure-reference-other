@@ -17,9 +17,6 @@ Removes any white-space characters from the start and end of a string.
 > [!NOTE]
 >  This behavior differs from the [TRIM](/sql/t-sql/functions/trim-transact-sql) function of T-SQL, that only removes the space character `(char(32))`
 
-> [!NOTE]
-> During local runs, VSCode currently always trims all text values in the Result pane. This only happens for display. To observe the actual values, and the proper effect of the TRIM functions, select `Open File` in the result pane.
-
 ## Syntax
 
 ```SQL
