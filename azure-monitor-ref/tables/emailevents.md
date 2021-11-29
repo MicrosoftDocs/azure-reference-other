@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/18/2021
+ms.date: 11/26/2021
 ---
 
 # EmailEvents
@@ -46,16 +46,18 @@ ms.date: 11/18/2021
 | RecipientEmailAddress | string | Recipient email address or email address of the recipient after distribution list expansion |
 | RecipientObjectId | string | Email recipient Azure AD identifier  |
 | ReportId | string | Unique identifier for the event |
-| SenderDisplayName | string | Sender email address in the FROM header, which is visible to email recipients on their email clients |
+| SenderDisplayName | string | Sender email address in the from header, which is visible to email recipients on their email clients |
+| SenderFromAddress | string | Sender domain in the from header, which is visible to email recipients on their email clients |
+| SenderFromDomain | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | SenderIPv4 | string | IPv4 address of the last detected mail server that relayed the message |
 | SenderIPv6 | string | IPv6 address of the last detected mail server that relayed the message |
-| SenderMailFromAddress | string | Sender email address in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
-| SenderMailFromDomain | string | Sender domain in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
-| SenderObjectId | string | Sender email address in the FROM header, which is visible to email recipients on their email clients |
+| SenderMailFromAddress | string | Sender email address in the MAIL from header, also known as the envelope sender or the Return-Path address |
+| SenderMailFromDomain | string | Sender domain in the MAIL from header, also known as the envelope sender or the Return-Path address |
+| SenderObjectId | string | Sender email address in the from header, which is visible to email recipients on their email clients |
 | SourceSystem | string |  |
 | Subject | string | Email subject field |
 | TenantId | string |  |
-| ThreatNames | string | Sender email address in the FROM header, which is visible to email recipients on their email clients |
+| ThreatNames | string | Sender email address in the from header, which is visible to email recipients on their email clients |
 | ThreatTypes | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | Type | string | The name of the table |
