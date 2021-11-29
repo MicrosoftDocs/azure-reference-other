@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/18/2021
+ms.date: 11/26/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -361,6 +361,7 @@ ms.date: 11/18/2021
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
