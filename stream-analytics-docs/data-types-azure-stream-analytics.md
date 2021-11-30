@@ -81,12 +81,12 @@ Values will be converted between float and bit with the following rules:
 
 ## Type mapping when writing to structured data stores:
 
-| Data type | SQL | Power BI | Document DB | PostgreSQL |
-|---------------|-----------------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------|------------------------------------------------------|
-| **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer | Big Int |
-| **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction | Double Precision (works at least up to 1.79E+308), numeric works sometimes, it depends on the size of the value user is trying to input. Fails at 1.79E+308 |
-| **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string | Text, character varying |
-| **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard | Time without timezone, Timestamp without timezone, Time with timezone,Timestamp with timezone -- won’t cause an error but it doesn’t actually have the timezone |
-| **bit** ([compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false | bit |
-| **record** | Not supported,  "Record" string is outputted | Not supported,  "Record" string is outputted | JSON object | Not supported |
-| **array** | Not supported,  "Array" string is outputted | Not supported,  "Array" string is outputted | JSON object | Not supported |
+| Data type | SQL | Power BI | Document DB |
+|---------------|-----------------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------|
+| **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer |
+| **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction |
+| **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string |
+| **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard |
+| **bit** ([compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false |
+| **record** | Not supported,  "Record" string is outputted | Not supported,  "Record" string is outputted | JSON object |
+| **array** | Not supported,  "Array" string is outputted | Not supported,  "Array" string is outputted | JSON object |
