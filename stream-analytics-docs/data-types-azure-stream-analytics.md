@@ -67,7 +67,7 @@ Values will be converted between float and bit with the following rules:
 ## Type mappings and serialization formats:
 
 | Data type  | CSV in  | CSV out  | JSON in  | JSON out  | Avro in  | Avro out  |
-|---|---|---|---|---|---|---|
+|-|-|-|-|-|-|-|
 | **bigint**  | string converted to 64 bit signed integer  | 64 bit signed integer converted to string using job culture  | number: integer converted to 64 bit signed integer; <br /><br />Boolean: in [compatibility level 1.1](/azure/stream-analytics/stream-analytics-compatibility-level) and below "false" is converted to 0, "true" is converted to 1  | number: integer  | long and int converted to 64 bit signed integer; <br /><br />Boolean: in [compatibility level 1.1](/azure/stream-analytics/stream-analytics-compatibility-level) and below false is converted to 0, true is converted to 1  | long  |
 | **float**  | string converted to 64 bit signed float point number  | 64 bit signed float point number converted to string using job culture  | number: fraction converted to 64 bit signed float point number  | number: fraction  | double and float converted to 64 bit signed float point number    | double  |
 | **nvarchar(max)**  | string  | string  | string  | string  | string  | string  |
@@ -81,12 +81,12 @@ Values will be converted between float and bit with the following rules:
 
 ## Type mapping when writing to structured data stores:
 
-| Data type | SQL | Power BI | Document DB |
-|---------------|-----------------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------|
-| **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer |
-| **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction |
-| **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string |
-| **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard |
-| **bit** ([compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false |
-| **record** | Not supported,  "Record" string is outputted | Not supported,  "Record" string is outputted | JSON object |
-| **array** | Not supported,  "Array" string is outputted | Not supported,  "Array" string is outputted | JSON object |
+| Data type | SQL | Power BI | Document DB | PostgreSQL |
+|-|-|-|-|-|
+| **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer | bigint |
+| **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction | double precision, numeric. Limited to 1.78E+308 |
+| **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string | character varying, text |
+| **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard | timestamp, time. Timezone option supported but no time zone will be provided |
+| **bit** ([compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false | bit |
+| **record** | Not supported,  "Record" string is outputted | Not supported,  "Record" string is outputted | JSON object | Not supported |
+| **array** | Not supported,  "Array" string is outputted | Not supported,  "Array" string is outputted | JSON object | Not supported |
