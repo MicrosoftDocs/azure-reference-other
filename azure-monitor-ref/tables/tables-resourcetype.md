@@ -677,9 +677,6 @@ ms.date: 12/2/2021
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-
-## Power BI Datasets
-
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
