@@ -174,8 +174,6 @@ You can find this and related samples in the [Azure AI Gallery](https://gallery.
 
 There are many ways that you can extend your experiment by using custom R script.  This section provides sample code for some common tasks.
 
-To get started using R in the **Execute R Script** module, see this video: [Using R in Machine Learning Studio (classic)](https://channel9.msdn.com/Blogs/Windows-Azure/R-in-Azure-ML-Studio)  
-
 ### Add an R script as input
 
 The **Execute R Script** module supports the use of arbitrary R script files as inputs, provided they are prepared in advance and uploaded to your workspace as part of the ZIP file.

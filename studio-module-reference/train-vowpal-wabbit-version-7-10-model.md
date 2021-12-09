@@ -154,10 +154,6 @@ Also, see these resources:
   
      [Vowpal Wabbit Modules in AzureML](https://blogs.technet.com/b/machinelearning/archive/2014/10/02/vowpal-wabbit-modules-in-azureml.aspx)  
   
--   Video that demonstrates building and scoring a model using Vowpal Wabbit in Machine Learning  
-  
-     [Text Analytics and Vowpal Wabbit in Machine Learning Studio (classic)](https://channel9.msdn.com/Blogs/Windows-Azure/Text-Analytics-and-Vowpal-Wabbit-in-Azure-ML-Studio)  
-
 ## Technical notes
 
 This section contains implementation details, tips, and answers to frequently asked questions.
