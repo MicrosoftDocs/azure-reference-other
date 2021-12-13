@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # W3CIISLog
@@ -15,6 +15,7 @@ ms.date: 12/2/2021
 
 ## Categories
 
+- IT & Management Tools
 - Virtual Machines
 ## Solutions
 
