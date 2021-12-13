@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # Alert
@@ -28,15 +28,15 @@ ms.date: 12/2/2021
 | Column | Type | Description |
 | --- | --- | --- |
 | AlertContext | string |  |
-| AlertDescription | string |  |
+| AlertDescription | string | Detailed description of the alert. |
 | AlertError | string |  |
 | AlertId | string |  |
-| AlertName | string |  |
+| AlertName | string | Name of the alert. |
 | AlertPriority | string |  |
 | AlertRuleId | string |  |
 | AlertRuleInstanceId | string |  |
-| AlertSeverity | string |  |
-| AlertState | string |  |
+| AlertSeverity | string | Severity level of the alert. |
+| AlertState | string | Latest resolution state of the alert. |
 | AlertStatus | int |  |
 | AlertTypeDescription | string |  |
 | AlertTypeNumber | int |  |
@@ -78,7 +78,7 @@ ms.date: 12/2/2021
 | ServiceDeskId | string |  |
 | ServiceDeskWorkItemLink | string |  |
 | ServiceDeskWorkItemType | string |  |
-| SourceDisplayName | string |  |
+| SourceDisplayName | string | Display name of the monitoring object that generated the alert. |
 | SourceFullName | string |  |
 | SourceSystem | string |  |
 | StateType | string |  |
@@ -88,7 +88,7 @@ ms.date: 12/2/2021
 | ThresholdOperator | string |  |
 | ThresholdValue | int |  |
 | TicketId | string |  |
-| TimeGenerated | datetime |  |
+| TimeGenerated | datetime | Date and time the record was created. |
 | TimeLastModified | datetime |  |
 | TimeRaised | datetime |  |
 | TimeResolved | datetime |  |
