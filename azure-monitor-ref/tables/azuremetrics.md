@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # AzureMetrics
@@ -74,14 +74,15 @@ ms.date: 12/2/2021
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
-- Event Grid Topics
-- Azure API for FHIR
 - Workload Monitor
-- Batch Accounts
+- Azure API for FHIR
+- Analysis Services
+- Azure Spring Cloud
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
 - Azure Stack HCI
 - VMware
+- Event Grid Topics
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
@@ -92,8 +93,7 @@ ms.date: 12/2/2021
 - Key Vaults
 - Cognitive Services
 - Media Services
-- Azure Spring Cloud
-- Analysis Services
+- Batch Accounts
 - Service Bus
 
 
