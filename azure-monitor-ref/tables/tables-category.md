@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -177,6 +177,9 @@ ms.date: 12/2/2021
 - [DatabricksSQLPermissions](databrickssqlpermissions.md)
 - [DatabricksSSH](databricksssh.md)
 - [DatabricksWorkspace](databricksworkspace.md)
+- [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
+- [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
+- [DSMDataLabelingLogs](dsmdatalabelinglogs.md)
 - [FailedIngestion](failedingestion.md)
 - [FunctionAppLogs](functionapplogs.md)
 - [HDInsightAmbariClusterAlerts](hdinsightambariclusteralerts.md)
@@ -354,6 +357,7 @@ ms.date: 12/2/2021
 - [IntuneOperationalLogs](intuneoperationallogs.md)
 - [Update](update.md)
 - [UpdateRunProgress](updaterunprogress.md)
+- [W3CIISLog](w3ciislog.md)
 
 ## Network
 
@@ -396,6 +400,9 @@ ms.date: 12/2/2021
 - [DeviceNetworkInfo](devicenetworkinfo.md)
 - [DeviceProcessEvents](deviceprocessevents.md)
 - [DeviceRegistryEvents](deviceregistryevents.md)
+- [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
+- [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
+- [DSMDataLabelingLogs](dsmdatalabelinglogs.md)
 - [DynamicEventCollection](dynamiceventcollection.md)
 - [EmailAttachmentInfo](emailattachmentinfo.md)
 - [EmailEvents](emailevents.md)
@@ -411,6 +418,7 @@ ms.date: 12/2/2021
 - [NetworkSessions](networksessions.md)
 - [OfficeActivity](officeactivity.md)
 - [ProtectionStatus](protectionstatus.md)
+- [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [SecurityAlert](securityalert.md)
 - [SecurityBaseline](securitybaseline.md)
 - [SecurityBaselineSummary](securitybaselinesummary.md)
