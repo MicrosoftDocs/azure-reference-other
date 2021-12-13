@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # AegDeliveryFailureLogs
@@ -22,6 +22,7 @@ ms.date: 12/2/2021
 ## Resource types
 
 - Event Grid Domains
+- Event Grid Topics
 
 
 
