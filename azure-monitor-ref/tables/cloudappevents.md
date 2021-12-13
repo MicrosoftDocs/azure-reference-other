@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # CloudAppEvents
@@ -36,7 +36,7 @@ ms.date: 12/2/2021
 | Application | string | Application that performed the recorded action |
 | ApplicationId | int | Unique identifier for the application |
 | City | string | City where the client IP address is geolocated |
-| CountryCode | string | Two-letter code indicating the country/region where the client IP address is geolocated |
+| CountryCode | string | Two-letter code indicating the country where the client IP address is geolocated |
 | DeviceType | string | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer |
 | IPAddress | string | IP address assigned to the device during communication |
 | IsAdminOperation | bool | Indicates whether the activity was performed by an administrator |
