@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # AzureActivity
@@ -67,9 +67,9 @@ ms.date: 12/2/2021
 - Azure Database for PostgreSQL Flexible Servers
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for MySQL Servers
+- Event Grid Topics
 - Event Grid Domains
 - Azure Blockchain Service
-- Azure AD Domain Services
 - AzureML/OnlineEndpoint
 - HDInsight Clusters
 - Experiment Workspace
@@ -93,6 +93,7 @@ ms.date: 12/2/2021
 - Synapse Workspaces
 - Desktop Virtualization Host Pools
 - Default schema for a resource
+- Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
 - SignalR
@@ -101,11 +102,10 @@ ms.date: 12/2/2021
 - Cognitive Services
 - Media Services
 - Azure Spring Cloud
-- CDN Profiles
 - Azure API for FHIR
-- Batch Accounts
+- CDN Profiles
+- Analysis Services
 - Workload Monitor
-- Event Grid Topics
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
@@ -113,7 +113,7 @@ ms.date: 12/2/2021
 - Azure Digital Twins
 - Azure Resource Group
 - Azure Subscription
-- Analysis Services
+- Batch Accounts
 - Service Bus
 
 
