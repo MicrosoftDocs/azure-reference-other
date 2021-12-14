@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -63,6 +63,10 @@ ms.date: 12/2/2021
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+- [Heartbeat](heartbeat.md)
+- [Update](update.md)
+- [UpdateRunProgress](updaterunprogress.md)
+- [UpdateSummary](updatesummary.md)
 
 ## Azure Active Directory Logs
 
@@ -463,6 +467,8 @@ ms.date: 12/2/2021
 
 ## Event Grid Topics
 
+- [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
+- [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -632,6 +638,13 @@ ms.date: 12/2/2021
 - [AzureMetrics](azuremetrics.md)
 - [MCVPAuditLogs](mcvpauditlogs.md)
 - [MCVPOperationLogs](mcvpoperationlogs.md)
+
+## Microsoft Defender for cloud
+
+- [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
+
+## Microsoft Sentinel DNS activity ASim schema
+
 
 ## Microsoft.AgFoodPlatform/farmBeats
 

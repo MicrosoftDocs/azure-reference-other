@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/2/2021
+ms.date: 12/13/2021
 ---
 
 # Heartbeat
@@ -30,6 +30,7 @@ ms.date: 12/2/2021
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 - Azure Arc enabled Kubernetes
+- Automation account
 
 
 
@@ -38,17 +39,17 @@ ms.date: 12/2/2021
 
 | Column | Type | Description |
 | --- | --- | --- |
-| Category | string | Value is Direct Agent SCOM Agent or SCOM Management Server. |
+| Category | string | Possible values include Azure Monitor Agent, Direct Agent, SCOM Agent or SCOM Management Server. |
 | Computer | string | Computer name |
 | ComputerEnvironment | string | Environment that hosts the computer: Azure or Non-Azure |
 | ComputerIP | string | IP address of the computer. Note that public IP is used |
 | ComputerPrivateIPs | dynamic | The list of private IP addresses of the computer. |
-| IsGatewayInstalled | bool | If Log Analytics gateway is installed value is true otherwise value is false. |
+| IsGatewayInstalled | bool | If Log Analytics gateway is installed the value is true, otherwise false. |
 | ManagementGroupName | string | Name of Operations Manager management group. |
 | OSMajorVersion | string | Operating system major version. |
 | OSMinorVersion | string | Operating system minor version. |
 | OSName | string | Name of OS. |
-| OSType | string | Type of OS. Possible values are Windows or Linux. |
+| OSType | string | Type of OS. Possible values are Windows or Linux . |
 | RemoteIPCountry | string | Geographic location where computer is deployed. |
 | RemoteIPLatitude | real | Latitude of computer's geographic location. |
 | RemoteIPLongitude | real | Longitude of computer's geographic location. |

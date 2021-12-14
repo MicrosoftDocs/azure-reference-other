@@ -136,6 +136,8 @@
     href: tables/agrifoodsatellitelogs.md
   - name: AgriFoodWeatherLogs
     href: tables/agrifoodweatherlogs.md
+  - name: Alert
+    href: tables/alert.md
   - name: AlertEvidence
     href: tables/alertevidence.md
   - name: AlertInfo
@@ -364,6 +366,12 @@
     href: tables/dnsevents.md
   - name: DnsInventory
     href: tables/dnsinventory.md
+  - name: DSMAzureBlobStorageLogs
+    href: tables/dsmazureblobstoragelogs.md
+  - name: DSMDataClassificationLogs
+    href: tables/dsmdataclassificationlogs.md
+  - name: DSMDataLabelingLogs
+    href: tables/dsmdatalabelinglogs.md
   - name: DynamicEventCollection
     href: tables/dynamiceventcollection.md
   - name: Dynamics365Activity
