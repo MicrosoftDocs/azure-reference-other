@@ -14,7 +14,8 @@ ms.date: 04/30/2020
 
 This article provides an alphabetized list of the modules that are available in Machine Learning Studio (classic).
 
-[!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
+> [!TIP]
+> Customers currently using or evaluating Machine Learning Studio (classic) are encouraged to try [Azure Machine Learning designer](/azure/machine-learning/service/ui-concept-visual-interface), which provides drag-n-drop ML modules __plus__ scalability, version control, and enterprise security.
 
 The modules cover a wide range of features and functions necessary for machine learning tasks:
 - Data conversion functions
