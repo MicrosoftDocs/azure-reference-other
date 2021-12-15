@@ -46,7 +46,7 @@ Returns a value same as expression.
 
 ## Examples
 
-With the aggregate syntax, we will reduce the number of rows. Here we select the maximum fare at each Toll every each hour:
+With the aggregate syntax, we will reduce the number of rows. Here we select the maximum fare at each Toll every hour:
 
 ```SQL
 SELECT
