@@ -1,6 +1,6 @@
 items: 
 - name: Machine Learning Studio (classic) Module Reference
-  href: index.yml
+  href: index.md
 - name: A-Z Module List
   href: a-z-module-list.md
 - name: Module Categories and Descriptions 
@@ -15,12 +15,12 @@ items:
         href: convert-to-arff.md
       - name: Convert to CSV
         href: convert-to-csv.md
-      - name: Content to Dataset 
-        href: content-to-dataset.md
-      - name: Content to SVMLight
+      - name: Convert to Dataset 
+        href: convert-to-dataset.md
+      - name: Convert to SVMLight
         href: convert-to-svmlight.md
       - name: Content to TSV 
-        href: convert-to-tsv
+        href: convert-to-tsv.md
   - name: Data Input and Output 
     items:
       - name: Data Input and Output 
@@ -36,7 +36,7 @@ items:
           - name: Export to Azure SQL Database 
             href: export-to-azure-sql-database.md
           - name: Export to Azure Table
-            href: export-to-azure-table
+            href: export-to-azure-table.md
           - name: Export to Azure Blob Storage
             href: export-to-azure-blob-storage.md
       - name: Import Data
@@ -46,7 +46,7 @@ items:
           - name: Import from Web URL via HTTP
             href: import-from-web-url-via-http.md
           - name: Import from Hive Query 
-            href: import-from-give-query.md
+            href: import-from-hive-query.md
           - name: Import from Azure SQL Database
             href: import-from-azure-sql-database.md
           - name: Import from Azure table 
@@ -57,8 +57,8 @@ items:
             href: import-from-data-feed-providers.md
           - name: Import from On-Premises SQL Server Database
             href: import-from-on-premises-sql-server-database.md
-          - name: Import from Azure Cosmos Database
-            href: import-from-azure-cosmos-db.md
+          - name: Import from Azure Cosmos DB
+            href: import-from-cosmos-db.md
       - name: Load Trained Model 
         href: load-trained-model.md
       - name: Unpack Zipped Datasets
@@ -94,7 +94,7 @@ items:
           - name: Import Count Table
             href: import-count-table.md
           - name: Merge Count Transform
-            href: merge-count-transform
+            href: merge-count-transform.md
           - name: Modify Count Table Parameters 
             href: modify-count-table-parameters.md
       - name: Manipulation
@@ -138,7 +138,7 @@ items:
           - name: Split Data using Split Rows
             href: split-data-using-split-rows.md
           - name: Split Data using Recommender Split 
-            href: split-data-using-regular-split
+            href: split-data-using-recommender-split.md
           - name: Split Data using Regular Expression 
             href: split-data-using-regular-expression.md
           - name: Split Data using Relative Expression
@@ -148,7 +148,7 @@ items:
         - name: Scale and Reduce
           href: data-transformation-scale-and-reduce.md
         - name: Clip Values
-          href: clip-value.md 
+          href: clip-values.md 
         - name: Group Data into Bins
           href: group-data-into-bins.md
       - name: Normalize Data 
@@ -207,8 +207,8 @@ items:
           href: multiclass-neural-network.md
         - name: One-vs-All Multiclass 
           href: one-vs-all-multiclass.md
-        - name: Two-Class Averaged Perception
-          href: two-class-averaged-perception.md
+        - name: Two-Class Averaged Perceptron
+          href: two-class-averaged-perceptron.md
         - name: Two-Class Bayes Point Machine
           href: two-class-bayes-point-machine.md
         - name: Two-Class Boosted Decision Tree 
@@ -240,7 +240,7 @@ items:
         - name: Boosted Decision Tree Regression
           href: boosted-decision-tree-regression.md
         - name: Fast Forest Quantile Regression
-          href: fast-forest-quantitle-regression.md
+          href: fast-forest-quantile-regression.md
         - name: Linear Regression
           href: linear-regression.md 
         - name: Neural Network Regression 
@@ -264,7 +264,7 @@ items:
     - name: Train 
       items:
       - name: Train 
-        href: machine-learning-model.md
+        href: machine-learning-train.md
       - name: Sweep Clustering
         href: sweep-clustering.md
       - name: Train Anomaly Detection Model
@@ -294,7 +294,7 @@ items:
   - name: R Language Modules
     items:
     - name: R Language Modules 
-      href: r-language-modules,md
+      href: r-language-modules.md
     - name: Execute R Script 
       href: execute-r-script.md
     - name: Create R Model
@@ -314,7 +314,7 @@ items:
     - name: Evaluate Probability Function 
       href: evaluate-probability-function.md
     - name: Replace Discrete Values
-      href: replace-discrete-value.md
+      href: replace-discrete-values.md
     - name: Summarize Data
       href: summarize-data.md
     - name: Test Hypothesis Using t-Test
@@ -322,7 +322,7 @@ items:
   - name: Text Analytics
     items:
     - name: Text Analytics
-      href: test-analytics.md
+      href: text-analytics.md
     - name: Detect Languages 
       href: detect-languages.md
     - name: Extract Key Phrases from Text
@@ -331,8 +331,8 @@ items:
       href: extract-n-gram-features-from-text.md
     - name: Feature Hashing
       href: feature-hashing.md
-    - name: Latent Direchlet Allocation
-      href: latent-direchlet-allocation.md
+    - name: Latent Dirichlet Allocation
+      href: latent-dirichlet-allocation.md
     - name: Named Entity Recognition
       href: named-entity-recognition.md 
     - name: Preprocess Text
@@ -344,7 +344,7 @@ items:
     - name: Score Vowpal Wabbit 8 Model
       href: score-vowpal-wabbit-version-8-model.md
     - name: Train Vowpal Wabbit 7-4 Model
-      href: train-vowpal-wabbit-version-7-4model.md
+      href: train-vowpal-wabbit-version-7-4-model.md
     - name: Train Vowpal Wabbit 7-10 Model
       href: train-vowpal-wabbit-version-7-10-model.md
     - name: Train Vowpal Wabbit 8 Model
