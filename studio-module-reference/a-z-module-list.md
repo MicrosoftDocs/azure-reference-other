@@ -10,7 +10,15 @@ ms.date: 04/30/2020
 ---
 # A-Z list of Machine Learning Studio (classic) modules
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+> [!IMPORTANT]
+> Support for Machine Learning Studio (classic) will end on 31 August 2024. We recommend you transition to [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) by that date.
+>
+> Beginning 1 December 2021, you will not be able to create new Machine Learning Studio (classic) resources. Through 31 August 2024, you can continue to use the existing Machine Learning Studio (classic) resources.  
+> 
+> -	See [information on moving machine learning projects from ML Studio (classic) to Azure Machine Learning](/azure/machine-learning/migrate-overview). 
+> -	Learn more about [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning).
+> 
+> ML Studio (classic) documentation is being retired and may not be updated in the future.
 
 This article provides an alphabetized list of the modules that are available in Machine Learning Studio (classic).
 
