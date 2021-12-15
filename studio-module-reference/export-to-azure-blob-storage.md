@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # Export to Azure Blob Storage
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes how to use the **Export to Azure Blob Storage** option, in the [Export Data](export-data.md) module in Machine Learning Studio (classic). 
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 This option is useful when you want to to export data from a machine learning experiment to Azure Blob Storage. For example, you might want to share machine learning data outputs with other applications, or store intermediate data or cleaned datasets for use in other experiments. 
 

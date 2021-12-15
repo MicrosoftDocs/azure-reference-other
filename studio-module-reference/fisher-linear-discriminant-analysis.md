@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Fisher Linear Discriminant Analysis
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Identifies the linear combination of feature variables that can best group data into separate classes*
 
 Category: [Feature Selection Modules](feature-selection-modules.md)
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

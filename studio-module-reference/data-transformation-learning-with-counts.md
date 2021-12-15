@@ -13,11 +13,11 @@ ms.author: amlstudiodocs
 ---
 # Data Transformation - Learning with Counts
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes the modules in Machine Learning Studio (classic) that support count-based featurization.
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 Learning with counts is an efficient way to create a compact set of dataset features that are based on counts of the values. You can use the modules in this category to build a set of counts and features. Later, you can update the counts and the features to take advantage of new data, or merge two sets of count data.
 

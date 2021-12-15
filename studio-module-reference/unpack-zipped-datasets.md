@@ -15,7 +15,7 @@ ms.author: amlstudiodocs
   
  Category: [Data Input and Output](data-input-and-output.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
   
 ## Module overview
 

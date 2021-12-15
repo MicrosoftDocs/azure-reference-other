@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Train Anomaly Detection Model
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Trains an anomaly detection model on a training set*  
   
  Category: [Machine Learning / Train](machine-learning-train.md) 
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)] 
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)] 
   
 ## Module overview
 

@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # FIR Filter
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Creates a finite impulse response filter for signal processing*  
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview  
 

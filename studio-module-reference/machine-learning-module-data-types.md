@@ -11,7 +11,7 @@ ms.author: amlstudiodocs
 ---
 # ML Studio (classic) Module Data Types
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes the .NET data types that are supported in Machine Learning Studio (classic) for external data. It also describes the custom data type classes that are used for passing data between modules within an experiment.
 

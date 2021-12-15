@@ -16,7 +16,7 @@ ms.author: amlstudiodocs
   
  Category: [Data Transformation / Filter](data-transformation-filter.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
   
 ## Module overview
 

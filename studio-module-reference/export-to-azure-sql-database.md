@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # Export to Azure SQL Database
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes how to use the **Export to Azure SQL Database** option in the [Export Data](export-data.md) module in Machine Learning Studio (classic). This option is useful when you want to export data from your machine learning experiment to an Azure SQL Database or Azure SQL Data Warehouse. 
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 Export to a SQL database is useful in many machine learning scenarios: for example, you might want to store intermediate results, save scores, or persist tables of engineered features. Although storing data in an Azure SQL Database or Azure SQL Data Warehouse can be more expensive than using tables or blobs in Azure, there are no transaction fees against SQL databases. Moreover, database storage is ideal for quickly writing smaller amounts of frequently used information, for sharing data between experiments, or for reporting results, predictions, and metrics. 
 

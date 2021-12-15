@@ -11,13 +11,13 @@ ms.author: amlstudiodocs
 ---
 # K-Means Clustering
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Configures and initializes a K-means clustering model*  
   
  Category: [Machine Learning / Initialize Model / Clustering](machine-learning-initialize-model-clustering.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
   
 ## Module overview  
  

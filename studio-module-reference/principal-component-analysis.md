@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Principal Component Analysis
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Computes a set of features with reduced dimensionality for more efficient learning*
 
 Category: [Data Transformation / Sample and Split](data-transformation-sample-and-split.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

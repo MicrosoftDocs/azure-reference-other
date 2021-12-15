@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Partition and Sample
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Creates multiple partitions of a dataset based on sampling*
 
 Category: [Data Transformation / Sample and Split](data-transformation-sample-and-split.md)
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Modify Count Table Parameters
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Modifies the parameters used to create features from counts*
 
 Category: [Learning with Counts](data-transformation-learning-with-counts.md)
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 
