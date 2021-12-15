@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # OpenCV Library Modules
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes the modules in Machine Learning Studio (classic) that support use of the Open Source Computer Vision (OpenCV) Library. 
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 OpenCV is an open-source library that supports a variety of image processing and image recognition tasks. For more information, see [the OpenCV website](https://opencv.org/).  
 

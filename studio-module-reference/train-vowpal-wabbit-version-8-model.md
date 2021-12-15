@@ -13,13 +13,13 @@ ms.author: amlstudiodocs
 ---
 # Train Vowpal Wabbit Version 8 Model
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Trains a model using version 8 of the Vowpal Wabbit machine learning system*  
   
  Category: [Text Analytics](text-analytics.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # Split Data using Split Rows
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes how to use the **Split Rows** option in the [Split Data](split-data.md) module of Machine Learning Studio (classic). This option is particularly useful when you need to divide datasets used for training and testing, either randomly or by some criteria.
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 The  **Split Rows** option supports both random and stratified splits. For example, you can specify a 70-30 split, or a 10-90 split with your target variable equally represented in both datasets.
 

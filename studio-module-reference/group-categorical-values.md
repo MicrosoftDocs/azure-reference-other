@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Group Categorical Values
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Groups data from multiple categories into a new category*
 
  Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

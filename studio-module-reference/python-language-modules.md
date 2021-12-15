@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # Python Language Modules
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes the modules provided in Machine Learning Studio (classic) that support running custom Python code in a machine learning experiment.
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 The Python environment in Machine Learning uses the Anaconda environment, which is easy to use and also includes some of the more important and popular Python packages, including `NumPy`, `SciPy`, and `scikit-learn`. To run Python code using these packages, just write your code in the text editor of the [Execute Python Script](execute-python-script.md) module. 
 

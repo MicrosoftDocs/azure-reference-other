@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # ML Studio (classic) module descriptions
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This topic provides an overview of all the *modules* included in Machine Learning Studio (classic), which is an interactive, visual workspace to easily build and test predictive models.
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## What is a module?
 

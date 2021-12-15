@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Extract Key Phrases from Text
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Extracts key phrases from given text*  
   
  Category: [Text Analytics](text-analytics.md)
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

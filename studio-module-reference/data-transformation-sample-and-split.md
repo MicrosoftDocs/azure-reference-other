@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # Data Transformation - Sample and Split
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes the modules in Machine Learning Studio (classic) that you can use to partition or sample data.
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 Splitting and sampling datasets are both important tasks in machine learning. For example, it's a common practice to divide data into training and testing sets to help you evaluate a model on a holdout dataset. Sampling is also increasingly important in the era of big data, to ensure that there's a fair distribution of classes in your training data. Sampling also helps ensure that you're not processing more data than is needed.
 

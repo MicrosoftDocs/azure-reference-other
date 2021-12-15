@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # Import from Hive Query
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes how to use the [Import Data](import-data.md) module in Machine Learning Studio (classic), to get data from Hadoop clusters and HDInsight distributed storage.
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 Importing data from Hive is particularly useful for loading large datasets, or if you want to pre-process the data using a MapReduce job before loading the data into a machine learning experiment.
 

@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Poisson Regression
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Creates a regression model that assumes data has a Poisson distribution*
 
 Category: [Machine Learning / Initialize Model / Regression](machine-learning-initialize-model-regression.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

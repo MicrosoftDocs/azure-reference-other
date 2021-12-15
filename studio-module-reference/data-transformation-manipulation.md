@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # Data Transformation - Manipulation
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes the modules in Machine Learning Studio (classic) that you can use for basic data manipulation.
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 Machine Learning Studio (classic) supports tasks that are specific to machine learning, such as normalization or feature selection. The modules in this category are intended for more general tasks.
 

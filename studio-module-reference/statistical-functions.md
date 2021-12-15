@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Statistical Functions
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes the modules in Machine Learning Studio (classic) that support mathematical and statistical operations critical for machine learning. If you need to perform tasks such as the following in your experiment, look in the **Statistical Functions** category:
 
@@ -23,7 +23,7 @@ This article describes the modules in Machine Learning Studio (classic) that sup
 + Compute widely used statistical distributions, such as Weibull, gamma, and beta.
 + Generate statistical reports over a set of columns or a dataset.
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 For example, if you have a new dataset, you might use the [Summarize Data](summarize-data.md) module first. It generates a report for an entire dataset that includes standard statistical measures, such as mean and standard deviation. 
 

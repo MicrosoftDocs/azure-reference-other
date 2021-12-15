@@ -11,13 +11,13 @@ manager: cgronlun
 ---
 # Apply Math Operation
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Applies a mathematical operation to column values*  
   
  Category: [Statistical Functions](statistical-functions.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 
