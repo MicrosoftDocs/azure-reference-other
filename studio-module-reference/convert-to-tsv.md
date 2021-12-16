@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Convert to TSV
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Converts data input to a tab-delimited format*  
   
  Category: [Data Format Conversions](data-format-conversions.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

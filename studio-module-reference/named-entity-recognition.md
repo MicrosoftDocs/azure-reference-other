@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Named Entity Recognition
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Recognizes named entities in a text column*
 
 Category: [Text Analytics](text-analytics.md)
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

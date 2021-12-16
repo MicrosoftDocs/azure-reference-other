@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # ICluster interface
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes `ICluster`, which is the interface for trained clustering models that is used in Machine Learning Studio (classic).
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 The `ICluster` interface provides methods and properties that are used to configure and interact with clustering models. A learner is defined as a set of instructions that perform standardized machine learning tasks. 
 

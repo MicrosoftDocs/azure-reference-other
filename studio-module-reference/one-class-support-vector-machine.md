@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # One-Class Support Vector Machine
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Creates a one class Support Vector Machine model for anomaly detection*
 
 Category: [Anomaly Detection](anomaly-detection.md)
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

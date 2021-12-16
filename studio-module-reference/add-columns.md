@@ -11,13 +11,13 @@ ms.date: 05/06/2019
 
 # Add Columns
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Adds a set of columns from one dataset to another*
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 

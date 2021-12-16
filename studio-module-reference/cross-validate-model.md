@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Cross-Validate Model
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Cross-validates parameter estimates for classification or regression models by partitioning the data*  
   
  Category: [Machine Learning / Evaluate](machine-learning-evaluate.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
   
 ## Module overview  
 

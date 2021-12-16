@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # IFilter interface
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes `IFilter`, which is the interface for working with digital signal filters in Machine Learning Studio (classic).
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 The `IFilter` interface provides methods and properties that are used to configure and interact with digital signal filters that have been defined using one of the filter modules in Studio (classic). For more information, see [Filter](data-transformation-filter.md). 
 

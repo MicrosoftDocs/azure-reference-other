@@ -12,7 +12,7 @@ ms.author: amlstudiodocs
 ---
 # Split a dataset using a relative expression
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes how to use the **Relative Expression Split** option in the [Split Data](split-data.md) module of Machine Learning Studio (classic). This option is helpful when you need to divide a dataset into training and testing datasets using a numerical expression. For example:
 
@@ -20,7 +20,7 @@ This article describes how to use the **Relative Expression Split** option in th
 + Test score of 60 or higher vs. less than 60
 + Rank value of 1 vs. all other values
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 To divide your data, you choose a single numeric column in your data, and define an expression to use in evaluating each row. The *relative expression* must include the column name, the value, and an operator such as greater than and less than, equal and not equals.
 

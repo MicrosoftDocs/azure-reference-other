@@ -12,13 +12,13 @@ ms.author: amlstudiodocs
 ---
 # Select Columns Transform
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Creates a transformation that selects the same subset of columns as in the given dataset*
 
 Category: [Data Transformation / Manipulation](data-transformation-manipulation.md)  
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 This article describes how to use the **Select Columns Transform** module in Machine Learning Studio (classic). The purpose of the **Select Columns Transform** module is to ensure that a predictable, consistent set of columns is always used in downstream machine learning operations.
 

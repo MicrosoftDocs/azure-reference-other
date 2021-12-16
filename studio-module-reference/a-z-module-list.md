@@ -12,8 +12,6 @@ ms.date: 04/30/2020
 
 [!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
 
-This article provides an alphabetized list of the modules that are available in Machine Learning Studio (classic).
-
 [!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
 
 The modules cover a wide range of features and functions necessary for machine learning tasks:

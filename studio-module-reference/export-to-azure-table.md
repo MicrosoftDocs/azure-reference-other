@@ -12,11 +12,11 @@ ms.author: amlstudiodocs
 ---
 # Export to Azure Table
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 This article describes how to use the **Export to Azure** option in the [Export Data](export-data.md) module in Machine Learning Studio (classic).
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 This option is useful when you want to export results or intermediate data from a machine learning experiment to an Azure table. The Azure table service is a data management service in Azure that can store large amounts of structured, non-relational data. It is a NoSQL data store that accepts authenticated calls from inside and outside Azure.
 

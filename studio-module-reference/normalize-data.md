@@ -13,13 +13,13 @@ ms.author: amlstudiodocs
 ---
 # Normalize Data
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](./includes/machine-learning-studio-classic-deprecation.md)]
 
 *Rescales numeric data to constrain dataset values to a standard range*
 
 Category: [Data Transformation / Scale and Reduce](data-transformation-scale-and-reduce.md)
 
-[!INCLUDE [studio-ui-applies-label](../includes/studio-ui-applies-label.md)]
+[!INCLUDE [studio-ui-applies-label](./includes/studio-ui-applies-label.md)]
 
 ## Module overview
 
