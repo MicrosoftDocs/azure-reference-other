@@ -200,3 +200,5 @@
     href: tables/appperformancecounters.md
   - name: AppPlatformBuildLogs
     href: tables/appplatformbuildlogs.md
+  - name: AppPlatformIngressLogs
+    href: tables/appplatformingresslogs.md
