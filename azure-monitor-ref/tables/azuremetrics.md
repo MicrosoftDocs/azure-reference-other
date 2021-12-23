@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/17/2021
+ms.date: 12/23/2021
 ---
 
 # AzureMetrics
@@ -35,7 +35,7 @@ ms.date: 12/17/2021
 - API Management services
 - Logic Apps
 - Service Fabric Clusters
-- Machine Learning
+- IoT Hub
 - Data Lake Storage Gen1
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Flexible Servers
@@ -55,16 +55,16 @@ ms.date: 12/17/2021
 - Application Gateways
 - Event Hubs
 - Device Provisioning Services
-- IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
 - Azure Arc enabled Kubernetes
-- Time Series Insights Environments
+- Virtual Machine Scale Sets
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Virtual machines
+- Machine Learning
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
 - Azure Traffic Collector
@@ -74,11 +74,10 @@ ms.date: 12/17/2021
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
-- Workload Monitor
+- Time Series Insights Environments
 - Azure API for FHIR
-- Analysis Services
-- Azure Spring Cloud
-- Virtual Machine Scale Sets
+- Workload Monitor
+- Batch Accounts
 - System Center Virtual Machine Manager
 - Azure Stack HCI
 - VMware
@@ -93,7 +92,8 @@ ms.date: 12/17/2021
 - Key Vaults
 - Cognitive Services
 - Media Services
-- Batch Accounts
+- Azure Spring Cloud
+- Analysis Services
 - Service Bus
 
 
