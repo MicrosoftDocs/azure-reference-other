@@ -310,3 +310,5 @@
     href: tables/databricksaccounts.md
   - name: DatabricksClusters
     href: tables/databricksclusters.md
+  - name: DatabricksDBFS
+    href: tables/databricksdbfs.md
