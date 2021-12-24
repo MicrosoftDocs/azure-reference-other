@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/17/2021
+ms.date: 12/23/2021
 ---
 
 # AzureActivity
@@ -35,7 +35,6 @@ ms.date: 12/17/2021
 - API Management services
 - Logic Apps
 - Service Fabric Clusters
-- Machine Learning
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
@@ -43,8 +42,9 @@ ms.date: 12/17/2021
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
 - Azure Stack HCI
-- SQL Servers
 - VMware
+- SQL Servers
+- Event Grid Topics
 - SQL Databases
 - Azure Database for PostgreSQL Servers
 - Bastions
@@ -67,10 +67,10 @@ ms.date: 12/17/2021
 - Azure Database for PostgreSQL Flexible Servers
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for MySQL Servers
-- Event Grid Topics
+- Azure API for FHIR
 - Event Grid Domains
-- Azure Blockchain Service
-- AzureML/OnlineEndpoint
+- Azure AD Domain Services
+- Machine Learning
 - HDInsight Clusters
 - Experiment Workspace
 - Dynamics 365 Customer Insights
@@ -90,10 +90,9 @@ ms.date: 12/17/2021
 - Azure Autonomous Development Platform Account
 - App Services
 - Virtual machines
+- Azure Blockchain Service
 - Synapse Workspaces
-- Desktop Virtualization Host Pools
 - Default schema for a resource
-- Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
 - SignalR
@@ -102,8 +101,8 @@ ms.date: 12/17/2021
 - Cognitive Services
 - Media Services
 - Azure Spring Cloud
-- Azure API for FHIR
 - CDN Profiles
+- Batch Accounts
 - Analysis Services
 - Workload Monitor
 - Time Series Insights Environments
@@ -113,7 +112,7 @@ ms.date: 12/17/2021
 - Azure Digital Twins
 - Azure Resource Group
 - Azure Subscription
-- Batch Accounts
+- Desktop Virtualization Host Pools
 - Service Bus
 
 

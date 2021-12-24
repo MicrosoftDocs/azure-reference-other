@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/1/2021
+ms.date: 12/23/2021
 ---
 
 # HDInsightSparkExtraEvents
@@ -28,20 +28,20 @@ ms.date: 6/1/2021
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ApplicationId|string|The application ID of the application producing the record.|
-|ClusterDnsName|string|The DNS name of the cluster running the application.|
-|ClusterTenantId|string|The tenant  ID of the cluster running the application.|
-|EventJson|string|Json with information about the event.|
-|Host|string|The FQDN of the host.|
-|IpAddress|string|The IP Address of the node running the application.|
-|Region|string|The region of the cluster running the application.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|Role|string|The type of node  running the application.|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
-|Type|string|The name of the table|
-|UserSubscriptionId|string|The subscription ID of the cluster running the application.|
+| Column | Type | Description |
+| --- | --- | --- |
+| ApplicationId | string | The application ID of the application producing the record. |
+| ClusterDnsName | string | The DNS name of the cluster running the application. |
+| ClusterTenantId | string | The tenant  ID of the cluster running the application. |
+| EventJson | string | Json with information about the event. |
+| Host | string | The FQDN of the host. |
+| IpAddress | string | The IP Address of the node running the application. |
+| Region | string | The region of the cluster running the application. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| Role | string | The type of node  running the application. |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
+| Type | string | The name of the table |
+| UserSubscriptionId | string | The subscription ID of the cluster running the application. |

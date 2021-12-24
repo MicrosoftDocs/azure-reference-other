@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/17/2021
+ms.date: 12/23/2021
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -274,6 +274,7 @@ ms.date: 12/17/2021
 
 ## Azure Spring Cloud
 
+- [AppPlatformBuildLogs](appplatformbuildlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
 - [AppPlatformSystemLogs](appplatformsystemlogs.md)
@@ -324,11 +325,6 @@ ms.date: 12/17/2021
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
-
-## AzureML/OnlineEndpoint
-
-- [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
-- [AzureActivity](azureactivity.md)
 
 ## Bastions
 
@@ -508,6 +504,7 @@ ms.date: 12/17/2021
 - [AzureActivity](azureactivity.md)
 - [HDInsightAmbariClusterAlerts](hdinsightambariclusteralerts.md)
 - [HDInsightAmbariSystemMetrics](hdinsightambarisystemmetrics.md)
+- [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
 - [HDInsightHadoopAndYarnLogs](hdinsighthadoopandyarnlogs.md)
 - [HDInsightHadoopAndYarnMetrics](hdinsighthadoopandyarnmetrics.md)
 - [HDInsightHBaseLogs](hdinsighthbaselogs.md)
@@ -526,6 +523,7 @@ ms.date: 12/17/2021
 - [HDInsightSparkBlockManagerEvents](hdinsightsparkblockmanagerevents.md)
 - [HDInsightSparkEnvironmentEvents](hdinsightsparkenvironmentevents.md)
 - [HDInsightSparkExecutorEvents](hdinsightsparkexecutorevents.md)
+- [HDInsightSparkExtraEvents](hdinsightsparkextraevents.md)
 - [HDInsightSparkJobEvents](hdinsightsparkjobevents.md)
 - [HDInsightSparkLogs](hdinsightsparklogs.md)
 - [HDInsightSparkSQLExecutionEvents](hdinsightsparksqlexecutionevents.md)
@@ -602,6 +600,7 @@ ms.date: 12/17/2021
 - [AmlEnvironmentEvent](amlenvironmentevent.md)
 - [AmlInferencingEvent](amlinferencingevent.md)
 - [AmlModelsEvent](amlmodelsevent.md)
+- [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
@@ -682,6 +681,7 @@ ms.date: 12/17/2021
 ## Network Watcher - Connection Monitor
 
 - [AzureActivity](azureactivity.md)
+- [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
 
@@ -799,6 +799,8 @@ ms.date: 12/17/2021
 - [SynapseIntegrationPipelineRuns](synapseintegrationpipelineruns.md)
 - [SynapseIntegrationTriggerRuns](synapseintegrationtriggerruns.md)
 - [SynapseRbacOperations](synapserbacoperations.md)
+- [SynapseScopePoolScopeJobsEnded](synapsescopepoolscopejobsended.md)
+- [SynapseScopePoolScopeJobsStateChange](synapsescopepoolscopejobsstatechange.md)
 - [SynapseSqlPoolDmsWorkers](synapsesqlpooldmsworkers.md)
 - [SynapseSqlPoolExecRequests](synapsesqlpoolexecrequests.md)
 - [SynapseSqlPoolRequestSteps](synapsesqlpoolrequeststeps.md)

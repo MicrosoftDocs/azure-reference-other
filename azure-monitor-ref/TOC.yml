@@ -66,6 +66,14 @@
     href: tables/addonazurebackupprotectedinstance.md
   - name: AddonAzureBackupStorage
     href: tables/addonazurebackupstorage.md
+  - name: ADFAirflowSchedulerLogs
+    href: tables/adfairflowschedulerlogs.md
+  - name: ADFAirflowTaskLogs
+    href: tables/adfairflowtasklogs.md
+  - name: ADFAirflowWebLogs
+    href: tables/adfairflowweblogs.md
+  - name: ADFAirflowWorkerLogs
+    href: tables/adfairflowworkerlogs.md
   - name: ADFSandboxPipelineRun
     href: tables/adfsandboxpipelinerun.md
   - name: ADFSSignInLogs
@@ -136,6 +144,8 @@
     href: tables/agrifoodsatellitelogs.md
   - name: AgriFoodWeatherLogs
     href: tables/agrifoodweatherlogs.md
+  - name: AirflowDagProcessingLogs
+    href: tables/airflowdagprocessinglogs.md
   - name: Alert
     href: tables/alert.md
   - name: AlertEvidence
@@ -398,6 +408,8 @@
     href: tables/hdinsightambariclusteralerts.md
   - name: HDInsightAmbariSystemMetrics
     href: tables/hdinsightambarisystemmetrics.md
+  - name: HDInsightGatewayAuditLogs
+    href: tables/hdinsightgatewayauditlogs.md
   - name: HDInsightHadoopAndYarnLogs
     href: tables/hdinsighthadoopandyarnlogs.md
   - name: HDInsightHadoopAndYarnMetrics
@@ -434,6 +446,8 @@
     href: tables/hdinsightsparkenvironmentevents.md
   - name: HDInsightSparkExecutorEvents
     href: tables/hdinsightsparkexecutorevents.md
+  - name: HDInsightSparkExtraEvents
+    href: tables/hdinsightsparkextraevents.md
   - name: HDInsightSparkJobEvents
     href: tables/hdinsightsparkjobevents.md
   - name: HDInsightSparkLogs
@@ -526,6 +540,8 @@
     href: tables/networksessions.md
   - name: NWConnectionMonitorDestinationListenerResult
     href: tables/nwconnectionmonitordestinationlistenerresult.md
+  - name: NWConnectionMonitorDNSResult
+    href: tables/nwconnectionmonitordnsresult.md
   - name: NWConnectionMonitorPathResult
     href: tables/nwconnectionmonitorpathresult.md
   - name: NWConnectionMonitorTestResult
@@ -622,6 +638,10 @@
     href: tables/synapserbacevents.md
   - name: SynapseRbacOperations
     href: tables/synapserbacoperations.md
+  - name: SynapseScopePoolScopeJobsEnded
+    href: tables/synapsescopepoolscopejobsended.md
+  - name: SynapseScopePoolScopeJobsStateChange
+    href: tables/synapsescopepoolscopejobsstatechange.md
   - name: SynapseSqlPoolDmsWorkers
     href: tables/synapsesqlpooldmsworkers.md
   - name: SynapseSqlPoolExecRequests

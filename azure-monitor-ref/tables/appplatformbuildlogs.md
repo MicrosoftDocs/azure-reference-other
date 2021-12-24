@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/17/2021
+ms.date: 12/23/2021
 ---
 
 # AppPlatformBuildLogs
@@ -16,6 +16,9 @@ ms.date: 12/17/2021
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Spring Cloud
 
 
 
