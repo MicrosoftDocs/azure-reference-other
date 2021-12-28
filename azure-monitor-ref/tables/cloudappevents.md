@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/17/2021
+ms.date: 12/23/2021
 ---
 
 # CloudAppEvents
@@ -28,6 +28,7 @@ ms.date: 12/17/2021
 | Column | Type | Description |
 | --- | --- | --- |
 | AccountDisplayName | string | Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user. |
+| AccountId | string | An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers |
 | AccountObjectId | string | Unique identifier for the account in Azure AD |
 | ActionType | string | Type of activity that triggered the event |
 | ActivityObjects | dynamic | List of objects, such as files or folders, that were involved in the recorded activity |

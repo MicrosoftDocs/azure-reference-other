@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/17/2021
+ms.date: 12/23/2021
 ---
 
 # AmlOnlineEndpointConsoleLog
@@ -15,13 +15,14 @@ ms.date: 12/17/2021
 
 ## Categories
 
+- Audit
 - Azure Resources
 ## Solutions
 
 - LogManagement
 ## Resource types
 
-- AzureML/OnlineEndpoint
+- Machine Learning
 
 
 
