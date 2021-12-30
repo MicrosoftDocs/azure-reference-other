@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/23/2021
+ms.date: 12/30/2021
 ---
 
 # Update
