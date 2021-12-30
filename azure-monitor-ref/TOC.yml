@@ -328,3 +328,5 @@
     href: tables/databricksmlflowacledartifact.md
   - name: DatabricksMLflowExperiment
     href: tables/databricksmlflowexperiment.md
+  - name: DatabricksNotebook
+    href: tables/databricksnotebook.md
