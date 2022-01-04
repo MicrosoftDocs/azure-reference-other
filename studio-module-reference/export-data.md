@@ -47,9 +47,7 @@ This module supports exporting or saving your data to the following cloud data s
   - `Get-AmlExperiment` lists all the experiments in a workspace.
   - `Export-AmlExperimentGraph` exports a definition of the complete experiment to a JSON file.
   - `Download-AmlExperimentNodeOutput` lets you extract the information provided on the output ports of any module.
-
-    For more information, see [PowerShell Module for Machine Learning Studio (classic)](https://github.com/hning86/azuremlps).
-  
+     
 ## How to configure Export Data
 
 1. Add the **Export Data** module to your experiment in Studio (classic). You can find this module in the **Input and Output** category.
