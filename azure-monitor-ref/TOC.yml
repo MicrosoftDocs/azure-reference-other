@@ -118,3 +118,5 @@
     href: tables/adxtabledetails.md
   - name: ADXTableUsageStatistics
     href: tables/adxtableusagestatistics.md
+  - name: AegDeliveryFailureLogs
+    href: tables/aegdeliveryfailurelogs.md
