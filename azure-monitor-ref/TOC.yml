@@ -146,3 +146,5 @@
     href: tables/agrifoodweatherlogs.md
   - name: AirflowDagProcessingLogs
     href: tables/airflowdagprocessinglogs.md
+  - name: Alert
+    href: tables/alert.md
