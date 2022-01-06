@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/30/2021
+ms.date: 1/6/2022
 ---
 
 # SecurityAlert
@@ -55,6 +55,7 @@ ms.date: 12/30/2021
 | Status | string |  |
 | SystemAlertId | string |  |
 | Tactics | string |  |
+| Techniques | string |  |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |
 | VendorName | string |  |
