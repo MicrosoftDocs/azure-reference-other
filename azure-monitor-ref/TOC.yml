@@ -658,3 +658,5 @@
     href: tables/threatintelligenceindicator.md
   - name: TSIIngress
     href: tables/tsiingress.md
+  - name: UAComputerRank
+    href: tables/uacomputerrank.md
