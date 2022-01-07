@@ -133,7 +133,7 @@ The following regression models generate a table of default metrics, along with 
 
 ### Tips for working with the data
 
-To extract the numbers without copying and pasting from the Machine Learning Studio (classic) UI, you can use the new [PowerShell library for Machine Learning](https://github.com/hning86/azuremlps). You can get metadata and other information for an entire experiment, or from individual modules.
+To extract the numbers without copying and pasting from the Machine Learning Studio (classic) UI, you can use the new PowerShell library for Machine Learning. You can get metadata and other information for an entire experiment, or from individual modules.
 
 To extract values from an **Evaluate Model** module, you must add a unique comment to the module, for easier identification. Then, use the **Download-AmlExperimentNodeOutput** cmdlet to get the metrics and their values from the visualization in JSON format.
 

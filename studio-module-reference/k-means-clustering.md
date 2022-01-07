@@ -189,7 +189,7 @@ For example, the following histograms show the distribution of cluster distances
 In general, you should choose a metric that maximizes the distance between data points in different classes, and minimizes distances within a class. You can use the precomputed means and other values in the **Statistics** pane to guide you in this decision.
 
 > [!TIP]
-> You can extract means and other values used in visualizations by using the [PowerShell module for Machine Learning](https://github.com/hning86/azuremlps). 
+> You can extract means and other values used in visualizations by using the PowerShell module for Machine Learning. 
 > 
 > Or use the [Execute R Script](execute-r-script.md) module to compute a custom distance matrix.   
 
