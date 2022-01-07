@@ -10,9 +10,9 @@ ms.date: 04/30/2020
 ---
 # A-Z list of Machine Learning Studio (classic) modules
 
-[!INCLUDE [ML Studio (classic) retirement](../includes/machine-learning-studio-classic-deprecation.md)]
+[!INCLUDE [ML Studio (classic) retirement](includes/machine-learning-studio-classic-deprecation.md)]
 
-[!INCLUDE [aml-designer-notice](../includes/designer-notice.md)]
+[!INCLUDE [aml-designer-notice](includes/designer-notice.md)]
 
 The modules cover a wide range of features and functions necessary for machine learning tasks:
 - Data conversion functions
