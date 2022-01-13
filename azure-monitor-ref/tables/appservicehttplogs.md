@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/6/2022
+ms.date: 1/13/2022
 ---
 
 # AppServiceHTTPLogs
 
- Logs generated through your application and pushed to Azure Monitoring.
+ Incoming HTTP requests on App Service. Use these logs to monitor application health, performance and usage patterns.
 
 ## Categories
 
@@ -30,14 +30,14 @@ ms.date: 1/6/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| Category | string | Log category name |
 | CIp | string | IP address of the client |
+| ComputerName | string | The name of the server on which the log file entry was generated. |
 | Cookie | string | Cookie on HTTP request |
 | CsBytes | int | Number of bytes received by server |
 | CsHost | string | Host name header on HTTP request |
-| CsMethod | string | HTTP verb on request |
+| CsMethod | string | The request HTTP verb |
 | CsUriQuery | string | URI query on HTTP request |
-| CsUriStem | string | HTTP target on request |
+| CsUriStem | string | The target of the request |
 | CsUsername | string | The name of the authenticated user on HTTP request |
 | Referer | string | The site that the user last visited. This site provided a link to the current site |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
