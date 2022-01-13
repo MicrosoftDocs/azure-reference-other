@@ -252,3 +252,5 @@
     href: tables/azuremetrics.md
   - name: BehaviorAnalytics
     href: tables/behavioranalytics.md
+  - name: BlockchainApplicationLog
+    href: tables/blockchainapplicationlog.md
