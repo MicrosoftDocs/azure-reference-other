@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/6/2022
+ms.date: 1/13/2022
 ---
 
 # IdentityInfo
@@ -56,11 +56,12 @@ ms.date: 1/6/2022
 | OnPremisesDistinguishedName | string | Active Directory distinguished name (DN). A DN is a sequence of relative distinguished names (RDN) connected by commas. |
 | OnPremisesExtensionAttributes | string | OnPremisesExtensionAttributes field from Azure AD |
 | Phone | string | The phone number of the user account as defined in AAD |
+| RelatedAccounts | dynamic | Various accounts that correlate to a certain user |
 | RiskLevel | string | The AAD risk level (Low/Medium/High) of the user account |
 | RiskLevelDetails | string | Details regarding the AAD risk level |
 | RiskState | string | Indication if the account is at risk now or if the risk was remediated |
 | ServicePrincipals | dynamic | Azure AD service principals that are owned by the user |
-| SourceSystem | string |  |
+| SourceSystem | string | The entity provider source system |
 | State | string | The geographical state of the user account as defined in AAD |
 | StreetAddress | string | The office street address of the user account as defined in AAD |
 | Surname | string | The user account surname |

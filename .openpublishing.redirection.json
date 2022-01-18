@@ -1,5 +1,795 @@
 {
 	"redirections": [
+    {
+      "source_path": "studio-module-reference/a-z-module-list.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/a-z-module-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/add-columns.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/add-columns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/add-rows.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/add-rows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/anomaly-detection.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/anomaly-detection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/apply-filter.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/apply-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/apply-math-operation.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/apply-math-operation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/apply-sql-transformation.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/apply-sql-transformation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/apply-transformation.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/apply-transformation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/assign-data-to-clusters.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/assign-data-to-clusters",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/bayesian-linear-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/bayesian-linear-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/boosted-decision-tree-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/build-counting-transform.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/build-counting-transform",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/clean-missing-data.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/clean-missing-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/clip-values.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/clip-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/compute-elementary-statistics.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/compute-elementary-statistics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/compute-linear-correlation.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/compute-linear-correlation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/convert-to-arff.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/convert-to-arff",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/convert-to-csv.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/convert-to-csv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/convert-to-dataset.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/convert-to-dataset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/convert-to-indicator-values.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/convert-to-indicator-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/convert-to-svmlight.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/convert-to-svmlight",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/convert-to-tsv.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/convert-to-tsv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/create-r-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/create-r-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/cross-validate-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/cross-validate-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-format-conversions.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-format-conversions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-input-and-output.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-input-and-output",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-table.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-transformation-filter.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-transformation-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-transformation-learning-with-counts.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-transformation-learning-with-counts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-transformation-manipulation.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-transformation-manipulation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-transformation-sample-and-split.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-transformation-sample-and-split",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-transformation-scale-and-reduce.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-transformation-scale-and-reduce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/data-transformation.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/data-transformation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/decision-forest-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/decision-forest-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/detect-languages.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/detect-languages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/edit-metadata.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/edit-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/enter-data-manually.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/enter-data-manually",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/evaluate-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/evaluate-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/evaluate-probability-function.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/evaluate-probability-function",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/evaluate-recommender.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/evaluate-recommender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/execute-python-script.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/execute-python-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/execute-r-script.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/execute-r-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/export-count-table.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/export-count-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/export-data.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/export-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/export-to-azure-blob-storage.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/export-to-azure-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/export-to-azure-sql-database.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/export-to-azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/export-to-azure-table.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/export-to-azure-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/export-to-hive-query.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/export-to-hive-query",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/extract-key-phrases-from-text.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/extract-key-phrases-from-text",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/extract-n-gram-features-from-text.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/extract-n-gram-features-from-text",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/fast-forest-quantile-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/fast-forest-quantile-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/feature-hashing.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/feature-hashing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/feature-selection-modules.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/feature-selection-modules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/filter-based-feature-selection.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/filter-based-feature-selection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/fir-filter.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/fir-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/fisher-linear-discriminant-analysis.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/fisher-linear-discriminant-analysis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/group-categorical-values.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/group-categorical-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/group-data-into-bins.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/group-data-into-bins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/icluster-interface.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/icluster-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/ifilter-interface.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/ifilter-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/iir-filter.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/iir-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/ilearner-interface.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/ilearner-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-count-table.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-count-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-data.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-from-azure-blob-storage.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-from-azure-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-from-azure-sql-database.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-from-azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-from-azure-table.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-from-azure-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-from-cosmos-db.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-from-cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-from-data-feed-providers.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-from-data-feed-providers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-from-hive-query.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-from-hive-query",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-from-on-premises-sql-server-database.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-from-on-premises-sql-server-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-from-web-url-via-http.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-from-web-url-via-http",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/import-images.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/import-images",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/index.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/itransform-interface.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/itransform-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/join-data.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/join-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/k-means-clustering.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/k-means-clustering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/latent-dirichlet-allocation.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/latent-dirichlet-allocation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/linear-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/linear-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/load-trained-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/load-trained-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-evaluate.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-evaluate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-initialize-model-classification.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-classification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-initialize-model-clustering.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-clustering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-initialize-model-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-initialize-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-initialize-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-module-data-types.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-module-data-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-module-descriptions.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-module-descriptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-modules.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-modules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-score.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-score",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/machine-learning-train.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/machine-learning-train",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/median-filter.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/median-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/merge-count-transform.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/merge-count-transform",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/modify-count-table-parameters.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/modify-count-table-parameters",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/moving-average-filter.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/moving-average-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/multiclass-decision-forest.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/multiclass-decision-forest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/multiclass-decision-jungle.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/multiclass-decision-jungle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/multiclass-logistic-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/multiclass-logistic-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/multiclass-neural-network.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/multiclass-neural-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/named-entity-recognition.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/named-entity-recognition",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/neural-network-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/neural-network-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/normalize-data.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/normalize-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/one-class-support-vector-machine.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/one-class-support-vector-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/one-vs-all-multiclass.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/one-vs-all-multiclass",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/opencv-library-modules.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/opencv-library-modules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/ordinal-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/ordinal-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/partition-and-sample.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/partition-and-sample",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/pca-based-anomaly-detection.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/pca-based-anomaly-detection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/permutation-feature-importance.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/permutation-feature-importance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/poisson-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/poisson-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/preprocess-text.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/preprocess-text",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/pretrained-cascade-image-classification.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/pretrained-cascade-image-classification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/principal-component-analysis.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/principal-component-analysis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/python-language-modules.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/python-language-modules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/r-language-modules.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/r-language-modules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/r-packages-supported-by-azure-machine-learning.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/r-packages-supported-by-azure-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/remove-duplicate-rows.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/remove-duplicate-rows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/replace-discrete-values.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/replace-discrete-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/score-matchbox-recommender.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/score-matchbox-recommender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/score-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/score-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/score-vowpal-wabbit-version-7-10-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/score-vowpal-wabbit-version-7-10-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/score-vowpal-wabbit-version-7-4-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/score-vowpal-wabbit-version-7-4-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/score-vowpal-wabbit-version-8-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/score-vowpal-wabbit-version-8-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/select-columns-in-dataset.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/select-columns-in-dataset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/select-columns-transform.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/select-columns-transform",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/smote.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/smote",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/split-data-using-recommender-split.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/split-data-using-recommender-split",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/split-data-using-regular-expression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/split-data-using-regular-expression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/split-data-using-relative-expression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/split-data-using-relative-expression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/split-data-using-split-rows.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/split-data-using-split-rows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/split-data.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/split-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/statistical-functions.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/statistical-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/summarize-data.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/summarize-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/sweep-clustering.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/sweep-clustering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/test-hypothesis-using-t-test.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/test-hypothesis-using-t-test",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/text-analytics.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/text-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/threshold-filter.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/threshold-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/time-series-anomaly-detection.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/time-series-anomaly-detection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/time-series.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/time-series",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/train-anomaly-detection-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/train-anomaly-detection-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/train-clustering-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/train-clustering-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/train-matchbox-recommender.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/train-matchbox-recommender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/train-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/train-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/train-vowpal-wabbit-version-7-10-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/train-vowpal-wabbit-version-7-10-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/train-vowpal-wabbit-version-7-4-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/train-vowpal-wabbit-version-7-4-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/train-vowpal-wabbit-version-8-model.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/train-vowpal-wabbit-version-8-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/tune-model-hyperparameters.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/tune-model-hyperparameters",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-averaged-perceptron.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-averaged-perceptron",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-bayes-point-machine.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-bayes-point-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-boosted-decision-tree.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-boosted-decision-tree",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-decision-forest.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-decision-forest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-decision-jungle.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-decision-jungle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-locally-deep-support-vector-machine.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-locally-deep-support-vector-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-logistic-regression.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-logistic-regression",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-neural-network.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-neural-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/two-class-support-vector-machine.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/two-class-support-vector-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/unpack-zipped-datasets.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/unpack-zipped-datasets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/user-defined-filter.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/user-defined-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "studio-module-reference/errors/machine-learning-module-error-codes.md",
+      "redirect_url": "/previous-versions/azure/machine-learning/studio-module-reference/errors/machine-learning-module-error-codes",
+      "redirect_document_id": false
+    },
 		{
 			"source_path": "studio-module-reference/apply-quantization-function-deprecated.md",
 			"redirect_url": "/azure/machine-learning/studio-module-reference/group-data-into-bins",
