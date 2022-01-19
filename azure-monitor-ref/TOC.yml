@@ -342,3 +342,5 @@
     href: tables/databrickssqlpermissions.md
   - name: DatabricksSSH
     href: tables/databricksssh.md
+  - name: DatabricksWorkspace
+    href: tables/databricksworkspace.md
