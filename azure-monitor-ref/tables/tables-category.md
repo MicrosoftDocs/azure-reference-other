@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/13/2022
+ms.date: 1/20/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -391,6 +391,7 @@ ms.date: 1/13/2022
 - [AlertEvidence](alertevidence.md)
 - [Anomalies](anomalies.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
+- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
 - [AWSGuardDuty](awsguardduty.md)

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/13/2022
+ms.date: 1/20/2022
 ---
 
 # DSMAzureBlobStorageLogs
@@ -31,6 +31,7 @@ ms.date: 1/13/2022
 | AccountName | string | The name of the storage account. |
 | AggregationCount | long | Number of events that were aggregated into a single entry. |
 | AggregationLastEventTime | datetime | The time (UTC) when the last request was received by storage. |
+| AuthenticationHash | string | The hash of authentication token. |
 | AuthenticationType | string | The type of authentication that was used to make the request. E.g. OAuth, SAS, etc. |
 | CallerIpAddress | string | The IP address of the requester. |
 | Category | string | The category of requested operation. |
@@ -38,6 +39,8 @@ ms.date: 1/13/2022
 | Location | string | The location of storage account. |
 | OperationName | string | The type of REST operation that was performed. For example: GetBlob, DeleteBlob. |
 | RequesterAppId | string | The Open Authorization (OAuth) application ID that is used as the requester. |
+| RequesterObjectId | string | The Open Authorization (OAuth) object ID that is used as the requester. |
+| RequesterTenantId | string | The Open Authorization (OAuth) tenant ID that is used as the requester. |
 | RequesterUpn | string | The user principal names (UPN) of requestor. |
 | ResourceGroup | string | The Resource Group name of the storage account that was accessed. |
 | ResourceSubscriptionId | string | The subscription ID (GUID) of the storage account being accessed. |
