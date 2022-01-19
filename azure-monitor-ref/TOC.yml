@@ -314,3 +314,5 @@
     href: tables/databricksclusters.md
   - name: DatabricksDBFS
     href: tables/databricksdbfs.md
+  - name: DatabricksFeatureStore
+    href: tables/databricksfeaturestore.md
