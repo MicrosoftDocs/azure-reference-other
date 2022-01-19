@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/13/2022
+ms.date: 1/20/2022
 ---
 
 # BlockchainApplicationLog
