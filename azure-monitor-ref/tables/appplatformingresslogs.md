@@ -35,7 +35,7 @@ ms.date: 1/20/2022
 | HttpReferer | string | Value of the referer header |
 | HttpUserAgent | string | Value of user-agent header |
 | OperationName | string | The name of the operation represented by this event |
-| ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-<namespace>-<service name>-<service port> |
+| ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-&lt;namespace&gt;-&lt;service name&gt;-&lt;service port&gt; |
 | ProxyUpstreamName | string | Name of the upstream server. The format is upstream-<namespace>-<service name>-<service port> |
 | RemoteAddr | string | The source IP address of the client |
 | RemoteUser | string | User name supplied with the basic authentication |
