@@ -47,6 +47,8 @@ When using IoT Hub routing feature to Event Hubs endpoints, metadata properties 
 Example:
 `SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
 
+Properties added via [IoT Hub message enrichment](/azure/iot-hub/iot-hub-message-enrichments-overview) can be retrieved via [user properties](#user-properties).
+
 ## Default metadata properties for IoT Hub
 * ConnectionDeviceId
 * AuthMethod

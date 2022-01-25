@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/13/2022
+ms.date: 1/20/2022
 ---
 
 # AzureMetrics
@@ -59,7 +59,6 @@ ms.date: 1/13/2022
 - Azure Databricks Services
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
-- Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
@@ -70,18 +69,18 @@ ms.date: 1/13/2022
 - Azure Traffic Collector
 - Kubernetes Services
 - Firewalls
+- Event Grid Topics
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
-- Time Series Insights Environments
+- Desktop Virtualization workspaces
 - Azure API for FHIR
-- Workload Monitor
-- Batch Accounts
+- Time Series Insights Environments
+- Analysis Services
 - System Center Virtual Machine Manager
 - Azure Stack HCI
 - VMware
-- Event Grid Topics
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
@@ -93,7 +92,8 @@ ms.date: 1/13/2022
 - Cognitive Services
 - Media Services
 - Azure Spring Cloud
-- Analysis Services
+- Batch Accounts
+- Workload Monitor
 - Service Bus
 
 
