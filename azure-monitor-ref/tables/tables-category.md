@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/20/2022
+ms.date: 1/28/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -62,6 +62,7 @@ ms.date: 1/20/2022
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [PowerBIActivity](powerbiactivity.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 
 ## Azure Monitor
@@ -423,6 +424,8 @@ ms.date: 1/20/2022
 - [McasShadowItReporting](mcasshadowitreporting.md)
 - [NetworkSessions](networksessions.md)
 - [OfficeActivity](officeactivity.md)
+- [PowerBIActivity](powerbiactivity.md)
+- [ProjectActivity](projectactivity.md)
 - [ProtectionStatus](protectionstatus.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [SecurityAlert](securityalert.md)
