@@ -320,3 +320,5 @@
     href: tables/databricksgenie.md
   - name: DatabricksGlobalInitScripts
     href: tables/databricksglobalinitscripts.md
+  - name: DatabricksIAMRole
+    href: tables/databricksiamrole.md
