@@ -568,3 +568,5 @@
     href: tables/powerbidatasetsworkspacepreview.md
   - name: PowerBIReportUsageTenant
     href: tables/powerbireportusagetenant.md
+  - name: ProjectActivity
+    href: tables/projectactivity.md
