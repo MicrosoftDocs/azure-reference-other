@@ -554,6 +554,8 @@
     href: tables/operation.md
   - name: Perf
     href: tables/perf.md
+  - name: PowerBIActivity
+    href: tables/powerbiactivity.md
   - name: PowerBIAuditTenant
     href: tables/powerbiaudittenant.md
   - name: PowerBIDatasetsTenant
@@ -566,6 +568,8 @@
     href: tables/powerbidatasetsworkspacepreview.md
   - name: PowerBIReportUsageTenant
     href: tables/powerbireportusagetenant.md
+  - name: ProjectActivity
+    href: tables/projectactivity.md
   - name: PurviewDataSensitivityLogs
     href: tables/purviewdatasensitivitylogs.md
   - name: PurviewScanStatusLogs
