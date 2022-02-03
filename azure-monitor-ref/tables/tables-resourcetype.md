@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/28/2022
+ms.date: 2/4/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -658,6 +658,9 @@ ms.date: 1/28/2022
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
 
 ## Microsoft.Dynamics.FraudProtection/purchase
+
+
+## Microsoft.OpenLogisticsPlatform/Workspaces
 
 
 ## Microsoft.Purview/accounts
