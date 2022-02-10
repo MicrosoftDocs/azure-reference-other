@@ -350,3 +350,5 @@
     href: tables/databricksworkspace.md
   - name: DeviceAppCrash
     href: tables/deviceappcrash.md
+  - name: DeviceAppLaunch
+    href: tables/deviceapplaunch.md
