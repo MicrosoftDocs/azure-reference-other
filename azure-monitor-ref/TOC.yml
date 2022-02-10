@@ -14,3 +14,5 @@
     href: tables/aacaudit.md
   - name: AACHttpRequest
     href: tables/aachttprequest.md
+  - name: AADDomainServicesAccountLogon
+    href: tables/aaddomainservicesaccountlogon.md
