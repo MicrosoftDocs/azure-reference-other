@@ -358,3 +358,5 @@
     href: tables/deviceevents.md
   - name: DeviceFileCertificateInfo
     href: tables/devicefilecertificateinfo.md
+  - name: DeviceFileEvents
+    href: tables/devicefileevents.md
