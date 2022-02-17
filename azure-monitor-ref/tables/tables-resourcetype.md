@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/11/2022
+ms.date: 2/17/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -79,7 +79,6 @@ ms.date: 2/11/2022
 - [AADDomainServicesAccountLogon](aaddomainservicesaccountlogon.md)
 - [AADDomainServicesAccountManagement](aaddomainservicesaccountmanagement.md)
 - [AADDomainServicesDirectoryServiceAccess](aaddomainservicesdirectoryserviceaccess.md)
-- [AADDomainServicesLogonLogoff](aaddomainserviceslogonlogoff.md)
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [AzureActivity](azureactivity.md)
@@ -428,6 +427,7 @@ ms.date: 2/11/2022
 - [AzureMetrics](azuremetrics.md)
 - [WVDAgentHealthStatus](wvdagenthealthstatus.md)
 - [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDConnectionNetworkData](wvdconnectionnetworkdata.md)
 - [WVDConnections](wvdconnections.md)
 - [WVDErrors](wvderrors.md)
 - [WVDHostRegistrations](wvdhostregistrations.md)
@@ -606,7 +606,6 @@ ms.date: 2/11/2022
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
-- [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
 
@@ -662,6 +661,7 @@ ms.date: 2/11/2022
 
 ## Microsoft.OpenLogisticsPlatform/Workspaces
 
+- [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)
 
 ## Microsoft.Purview/accounts
 
@@ -690,9 +690,12 @@ ms.date: 2/11/2022
 
 ## Power BI Datasets
 
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+
+## Power BI Datasets
+
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
 
 ## Power BI Embedded
