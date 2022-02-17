@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/10/2022
+ms.date: 2/17/2022
 ---
 
 # WUDOAggregatedStatus
@@ -34,7 +34,6 @@ ms.date: 2/10/2022
 | BytesFromPeers | long |  |
 | ContentType | string |  |
 | DeviceCount | int |  |
-| DownloadMode | string |  |
 | SourceSystem | string |  |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |

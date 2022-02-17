@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/10/2022
+ms.date: 2/17/2022
 ---
 
 # DSMDataClassificationLogs
@@ -30,8 +30,8 @@ ms.date: 2/10/2022
 | --- | --- | --- |
 | AssetLastScanTime | datetime | The time (UTC) when the resource scan for sensitivity was performed by Azure Purview. |
 | AssetType | string | Type of asset that was scanned by Azure Purview (e.g., File, Table). |
-| Classification | string | JSON containing the list of classifications that were discovered. |
 | ClassificationDetails | dynamic | For every classification found in the resource - corresponding Instance Count (i.e. how many occurrences of a specific type of classification was present) and Confidence (i.e. Match Accuracy) is listed. |
+| Classifications | dynamic | JSON containing the list of classifications that were discovered. |
 | CorrelationId | string | The ID that is used to correlate resource logs with data sensitivity logs. |
 | SourceSystem | string |  |
 | SourceType | string | Type of resource that was scanned by Azure Purview (Azure Blob, Azure File, etc.). |

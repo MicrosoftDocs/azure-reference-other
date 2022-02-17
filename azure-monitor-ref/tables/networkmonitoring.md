@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/10/2022
+ms.date: 2/17/2022
 ---
 
 # NetworkMonitoring
@@ -71,22 +71,12 @@ ms.date: 2/10/2022
 | DiagnosticHop | string |  |
 | DiagnosticHopLatency | string |  |
 | DiskCount | int |  |
-| EgressByteCount | long |  |
-| EgressPacketCount | long |  |
 | EndpointId | int |  |
 | Enterprise | string |  |
-| ExporterIp | string |  |
-| ExportProtocol | string |  |
 | FanCount | int |  |
 | FriendlyName | string |  |
 | GenTrapType | string |  |
 | HighLatency | real |  |
-| HostFqdn | string |  |
-| HostFqdn1 | string |  |
-| HostFqdn2 | string |  |
-| HostIp | string |  |
-| HostIp1 | string |  |
-| HostIp2 | string |  |
 | IcmpPingStatus | string |  |
 | ifAdminStatus | string |  |
 | ifHCInBroadcastPkts | long |  |
@@ -113,14 +103,9 @@ ms.date: 2/10/2022
 | InDiscardsPerSec | long |  |
 | InErrorsPercent | int |  |
 | InErrorsPerSec | long |  |
-| IngressByteCount | long |  |
-| IngressPacketCount | long |  |
 | InMultiCastPktsPerSec | long |  |
 | InOctetsPerSec | long |  |
 | InterfaceCount | int |  |
-| InterfaceId | int |  |
-| InternalByteCount | long |  |
-| InternalPacketCount | long |  |
 | InUnicastPktsPerSec | long |  |
 | IpV4Addresses | string |  |
 | IpV4Subnets | string |  |
@@ -129,9 +114,6 @@ ms.date: 2/10/2022
 | IsPrimary | bool |  |
 | L2ConnectedNodes | string |  |
 | L2ConnectedPorts | string |  |
-| L4Port | int |  |
-| L4Protocol | string |  |
-| L7Protocol | string |  |
 | LatencyBenchmark | real |  |
 | LatencyFaultLinks | string |  |
 | LatencyHealthIndicator | bool |  |
@@ -225,8 +207,6 @@ ms.date: 2/10/2022
 | SourceSystem | string |  |
 | SpecificTrapType | string |  |
 | SubnetId | string |  |
-| SubnetId1 | string |  |
-| SubnetId2 | string |  |
 | SubnetLinkCount | int |  |
 | SubscriptionId | string |  |
 | SubType | string |  |
@@ -242,10 +222,6 @@ ms.date: 2/10/2022
 | TimeGenerated | datetime |  |
 | TimeProcessed | datetime |  |
 | TimeSinceActive | int |  |
-| ToS | int |  |
-| TotalByteCount | long |  |
-| TotalFlowRecords | long |  |
-| TotalPacketCount | long |  |
 | TotalPeerings | int |  |
 | TotalSessions | int |  |
 | TraceRouteCompletionTime | datetime |  |
