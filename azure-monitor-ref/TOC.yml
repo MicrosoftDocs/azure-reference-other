@@ -266,3 +266,5 @@
     href: tables/blockchainproxylog.md
   - name: CassandraAudit
     href: tables/cassandraaudit.md
+  - name: CassandraLogs
+    href: tables/cassandralogs.md
