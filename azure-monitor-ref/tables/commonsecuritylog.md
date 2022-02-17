@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/10/2022
+ms.date: 2/17/2022
 ---
 
 # CommonSecurityLog
@@ -39,14 +39,14 @@ ms.date: 2/10/2022
 | Activity | string | A string that represents a human-readable and understandable description of the event. |
 | AdditionalExtensions | string | A placeholder for additional fields. Fields are logged as key-value pairs. |
 | ApplicationProtocol | string | The protocol used in the application, such as HTTP, HTTPS, SSHv2, Telnet, POP, IMPA, IMAPS, and so on. |
-| CommunicationDirection | string |  |
-| Computer | string |  |
+| CommunicationDirection | string | Any information about the direction the observed communication has taken. Valid values: 0 = Inbound, 1 = Outbound. |
+| Computer | string | Host, from Syslog. |
 | DestinationDnsDomain | string | The DNS part of the fully-qualified domain name (FQDN). |
 | DestinationHostName | string | The destination that the event refers to in an IP network. The format should be an FQDN associated with the destination node, when a node is available. For example: host.domain.com or host. |
-| DestinationIP | string |  |
+| DestinationIP | string | The destination IpV4 address that the event refers to in an IP network. |
 | DestinationMACAddress | string | The destination MAC address (FQDN). |
 | DestinationNTDomain | string | The Windows domain name of the destination address. |
-| DestinationPort | int |  |
+| DestinationPort | int | Destination port. Valid values: 0 - 65535. |
 | DestinationProcessId | int | The ID of the destination process associated with the event. |
 | DestinationProcessName | string | The name of the event’s destination process, such as telnetd or sshd. |
 | DestinationServiceName | string | The service that is targeted by the event. For example: sshd. |
@@ -55,8 +55,8 @@ ms.date: 2/10/2022
 | DestinationUserID | string | Identifies the destination user by ID. For example: in Unix, the root user is generally associated with the user ID 0. |
 | DestinationUserName | string | Identifies the destination user by name. |
 | DestinationUserPrivileges | string | Defines the destination use's privileges. Valid values: Admninistrator, User, Guest. |
-| DeviceAction | string |  |
-| DeviceAddress | string |  |
+| DeviceAction | string | The action mentioned in the event. |
+| DeviceAddress | string | The IPv4 address of the device generating the event. |
 | DeviceCustomDate1 | string | One of two timestamp fields available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. |
 | DeviceCustomDate1Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
 | DeviceCustomDate2 | string | One of two timestamp fields available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. |
@@ -96,19 +96,19 @@ ms.date: 2/10/2022
 | DeviceCustomString6 | string | One of six strings available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. |
 | DeviceCustomString6Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
 | DeviceDnsDomain | string | The DNS domain part of the full qualified domain name (FQDN). |
-| DeviceEventClassID | string |  |
+| DeviceEventClassID | string | String or integer that serves as a unique identifier per event type. |
 | DeviceExternalID | string | A name that uniquely identifies the device generating the event. |
-| DeviceFacility | string |  |
+| DeviceFacility | string | The facility generating the event. For example: auth or local1. |
 | DeviceInboundInterface | string | The interface on which the packet or data entered the device. For example: ethernet1/2. |
 | DeviceMacAddress | string | The MAC address of the device generating the event. |
-| DeviceName | string |  |
+| DeviceName | string | The FQDN associated with the device node, when a node is available. For example: host.domain.com or host. |
 | DeviceNtDomain | string | The Windows domain of the device address. |
 | DeviceOutboundInterface | string | Interface on which the packet or data left the device. |
 | DevicePayloadId | string | Unique identifier for the payload associated with the event. |
-| DeviceProduct | string |  |
+| DeviceProduct | string | String that together with device product and version definitions, uniquely identifies the type of sending device. |
 | DeviceTimeZone | string | Timezone of the device generating the event. |
 | DeviceTranslatedAddress | string | Identifies the translated device address that the event refers to, in an IP network. The format is an Ipv4 address. |
-| DeviceVendor | string |  |
+| DeviceVendor | string | String that together with device product and version definitions, uniquely identifies the type of sending device. |
 | DeviceVersion | string | String that together with device product and version definitions, uniquely identifies the type of sending device. |
 | EndTime | datetime | The time at which the activity related to the event ended. |
 | EventCount | int | A count associated with the event, showing how many times the same event was observed. |
@@ -133,13 +133,13 @@ ms.date: 2/10/2022
 | FlexString1Label | string | The label field is a string and describes the purpose of the flex field. |
 | FlexString2 | string | One of four floating point fields available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. These fields are typically reserved for customer use and should not be set by vendors unless necessary. |
 | FlexString2Label | string | The label field is a string and describes the purpose of the flex field. |
-| IndicatorThreatType | string |  |
-| LogSeverity | string |  |
-| MaliciousIP | string |  |
-| MaliciousIPCountry | string |  |
-| MaliciousIPLatitude | real |  |
-| MaliciousIPLongitude | real |  |
-| Message | string |  |
+| IndicatorThreatType | string | The threat type of the MaliciousIP according to our TI feed. |
+| LogSeverity | string | A string or integer that describes the importance of the event. Valid string values: Unknown , Low, Medium, High, Very-High Valid integer values are: 0-3 = Low, 4-6 = Medium, 7-8 = High, 9-10 = Very-High. |
+| MaliciousIP | string | If one of the IP in the message was correlate with the current TI feed we have it will show up here. |
+| MaliciousIPCountry | string | The country of the MaliciousIP according to the GEO information at the time of the record ingestion. |
+| MaliciousIPLatitude | real | The Latitude of the MaliciousIP according to the GEO information at the time of the record ingestion. |
+| MaliciousIPLongitude | real | The Longitude of the MaliciousIP according to the GEO information at the time of the record ingestion. |
+| Message | string | A message that gives more details about the event. |
 | OldFileCreateTime | string | Time when the old file was created. |
 | OldFileHash | string | Hash of the old file. |
 | OldFileID | string | And ID associated with the old file, such as the inode. |
@@ -149,14 +149,15 @@ ms.date: 2/10/2022
 | OldFilePermission | string | Permissions of the old file. For example: '2,1,1'. |
 | OldFileSize | int | The size of the old file in bytes. |
 | OldFileType | string | File type of the old file, such as a pipe, socket, and so on. |
-| OriginalLogSeverity | string |  |
+| OriginalLogSeverity | string | A non-mapped version of LogSeverity. For example: Warning/Critical/Info insted of the normilized Low/Medium/High in the LogSeverity Field |
 | ProcessID | int | Defines the ID of the process on the device generating the event. |
 | ProcessName | string | Process name associated with the event. For example: in UNIX, the process generating the syslog entry. |
-| Protocol | string |  |
-| ReceiptTime | string |  |
+| Protocol | string | Transport protocol that identifies the Layer-4 protocol used. Possible values include protocol names, such as TCP or UDP. |
+| ReceiptTime | string | The time at which the event related to the activity was received. Different then the 'Timegenerated' field, which is when the event was recieved in the log collector machine. |
 | ReceivedBytes | long | Number of bytes transferred inbound. |
-| RemoteIP | string |  |
-| RemotePort | string |  |
+| RemoteIP | string | The remote IP address, derived from the event's direction value, if possible. |
+| RemotePort | string | The remote port, derived from the event's direction value, if possible. |
+| ReportReferenceLink | string | Link to the report of the TI feed. |
 | RequestClientApplication | string | The user agent associated with the request. |
 | RequestContext | string | Describes the content from which the request originated, such as the HTTP Referrer. |
 | RequestCookies | string | Cookies associated with the request. |
@@ -164,17 +165,17 @@ ms.date: 2/10/2022
 | RequestURL | string | The URL accessed for an HTTP request, including the protocol. For example: http://www/secure.com. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SentBytes | long | Number of bytes transferred outbound. |
-| SimplifiedDeviceAction | string |  |
+| SimplifiedDeviceAction | string | A mapped version of DeviceAction, such as Denied > Deny. |
 | SourceDnsDomain | string | The DNS domain part of the complete FQDN. |
 | SourceHostName | string | Identifies the source that event refers to in an IP network. Format should be a fully qualified domain name (DQDN) associated with the source node, when a node is available. For example: host or host.domain.com. |
-| SourceIP | string |  |
+| SourceIP | string | The source that an event refers to in an IP network, as an IPv4 address. |
 | SourceMACAddress | string | Source MAC address. |
 | SourceNTDomain | string | The Windows domain name for the source address. |
-| SourcePort | int |  |
+| SourcePort | int | The source port number. Valid port numbers are 0 - 65535. |
 | SourceProcessId | int | The ID of the source process associated with the event. |
 | SourceProcessName | string | The name of the event's source process. |
 | SourceServiceName | string | The service responsible for generating the event. |
-| SourceSystem | string |  |
+| SourceSystem | string | Hard coded- 'OpsManager'. |
 | SourceTranslatedAddress | string | Identifies the translated source that the event refers to in an IP network. |
 | SourceTranslatedPort | int | Source port after translation, such as a firewall. Valid port numbers are 0 - 65535. |
 | SourceUserID | string | Identifies the source user by ID. |
@@ -182,8 +183,9 @@ ms.date: 2/10/2022
 | SourceUserPrivileges | string | The source user's privileges. Valid values include: Administrator, User, Guest. |
 | StartTime | datetime | The time when the activity that the event refers to started. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| ThreatConfidence | string |  |
-| ThreatDescription | string |  |
-| ThreatSeverity | int |  |
-| TimeGenerated | datetime |  |
+| TenantId | string |  |
+| ThreatConfidence | string | The threat confidence of the MaliciousIP according to our TI feed. |
+| ThreatDescription | string | The threat description of the MaliciousIP according to our TI feed. |
+| ThreatSeverity | int | The threat severity of the MaliciousIP according to our TI feed at the time of the record ingestion. |
+| TimeGenerated | datetime | Event collection time in UTC. |
 | Type | string | The name of the table |
