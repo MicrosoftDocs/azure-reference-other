@@ -148,6 +148,8 @@
     href: tables/agrifoodsatellitelogs.md
   - name: AgriFoodWeatherLogs
     href: tables/agrifoodweatherlogs.md
+  - name: AGSGrafanaLoginEvents
+    href: tables/agsgrafanaloginevents.md
   - name: AirflowDagProcessingLogs
     href: tables/airflowdagprocessinglogs.md
   - name: Alert
@@ -554,6 +556,8 @@
     href: tables/nwconnectionmonitortestresult.md
   - name: OfficeActivity
     href: tables/officeactivity.md
+  - name: OLPSupplyChainEntityOperations
+    href: tables/olpsupplychainentityoperations.md
   - name: Operation
     href: tables/operation.md
   - name: Perf
@@ -722,6 +726,8 @@
     href: tables/wvdagenthealthstatus.md
   - name: WVDCheckpoints
     href: tables/wvdcheckpoints.md
+  - name: WVDConnectionNetworkData
+    href: tables/wvdconnectionnetworkdata.md
   - name: WVDConnections
     href: tables/wvdconnections.md
   - name: WVDErrors
