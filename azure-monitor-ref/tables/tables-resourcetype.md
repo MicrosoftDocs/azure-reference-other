@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/17/2022
+ms.date: 2/24/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -56,6 +56,10 @@ ms.date: 2/17/2022
 - [AppRequests](apprequests.md)
 - [AppSystemEvents](appsystemevents.md)
 - [AppTraces](apptraces.md)
+- [AzureActivity](azureactivity.md)
+
+## Attestation provider
+
 - [AzureActivity](azureactivity.md)
 
 ## Automation account
@@ -220,11 +224,22 @@ ms.date: 2/17/2022
 - [ADTQueryOperation](adtqueryoperation.md)
 - [AzureActivity](azureactivity.md)
 
+## Azure HPC Cache
+
+- [StorageCacheOperationEvents](storagecacheoperationevents.md)
+- [StorageCacheUpgradeEvents](storagecacheupgradeevents.md)
+- [StorageCacheWarningEvents](storagecachewarningevents.md)
+
 ## Azure Managed Instance for Apache Cassandra
 
 - [AzureActivity](azureactivity.md)
 - [CassandraAudit](cassandraaudit.md)
 - [CassandraLogs](cassandralogs.md)
+
+## Azure Managed Workspace for Grafana
+
+- [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
+- [AzureActivity](azureactivity.md)
 
 ## Azure Monitor autoscale settings
 
@@ -463,6 +478,7 @@ ms.date: 2/17/2022
 
 ## Event Grid Topics
 
+- [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AzureActivity](azureactivity.md)
@@ -692,8 +708,11 @@ ms.date: 2/17/2022
 
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 
 ## Power BI Embedded
 
@@ -749,6 +768,13 @@ ms.date: 2/17/2022
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [SignalRServiceDiagnosticLogs](signalrservicediagnosticlogs.md)
+
+## SignalR Service WebPubSub
+
+- [AzureActivity](azureactivity.md)
+- [WebPubSubConnectivity](webpubsubconnectivity.md)
+- [WebPubSubHttpRequest](webpubsubhttprequest.md)
+- [WebPubSubMessaging](webpubsubmessaging.md)
 
 ## SQL Databases
 
