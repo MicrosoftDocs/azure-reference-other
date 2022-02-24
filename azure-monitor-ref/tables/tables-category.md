@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/17/2022
+ms.date: 2/24/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -34,16 +34,20 @@ ms.date: 2/17/2022
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
+- [AADRiskyServicePrincipals](aadriskyserviceprincipals.md)
 - [AADRiskyUsers](aadriskyusers.md)
+- [AADServicePrincipalRiskEvents](aadserviceprincipalriskevents.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
 - [AADUserRiskEvents](aaduserriskevents.md)
 - [ACICollaborationAudit](acicollaborationaudit.md)
 - [ACRConnectedClientList](acrconnectedclientlist.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [ADPAudit](adpaudit.md)
+- [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AgriFoodApplicationAuditLogs](agrifoodapplicationauditlogs.md)
+- [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
 - [AmlComputeInstanceEvent](amlcomputeinstanceevent.md)
 - [AmlDataLabelEvent](amldatalabelevent.md)
 - [AmlDataSetEvent](amldatasetevent.md)
@@ -106,6 +110,7 @@ ms.date: 2/17/2022
 - [ADPDiagnostics](adpdiagnostics.md)
 - [ADPRequests](adprequests.md)
 - [ADXJournal](adxjournal.md)
+- [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AEWAuditLogs](aewauditlogs.md)
@@ -119,6 +124,7 @@ ms.date: 2/17/2022
 - [AgriFoodProviderAuthLogs](agrifoodproviderauthlogs.md)
 - [AgriFoodSatelliteLogs](agrifoodsatellitelogs.md)
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
+- [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -236,6 +242,9 @@ ms.date: 2/17/2022
 - [SigninLogs](signinlogs.md)
 - [SQLSecurityAuditEvents](sqlsecurityauditevents.md)
 - [StorageBlobLogs](storagebloblogs.md)
+- [StorageCacheOperationEvents](storagecacheoperationevents.md)
+- [StorageCacheUpgradeEvents](storagecacheupgradeevents.md)
+- [StorageCacheWarningEvents](storagecachewarningevents.md)
 - [StorageFileLogs](storagefilelogs.md)
 - [StorageQueueLogs](storagequeuelogs.md)
 - [StorageTableLogs](storagetablelogs.md)
@@ -262,6 +271,18 @@ ms.date: 2/17/2022
 - [SynapseSqlPoolSqlRequests](synapsesqlpoolsqlrequests.md)
 - [SynapseSqlPoolWaits](synapsesqlpoolwaits.md)
 - [TSIIngress](tsiingress.md)
+- [WebPubSubConnectivity](webpubsubconnectivity.md)
+- [WebPubSubHttpRequest](webpubsubhttprequest.md)
+- [WebPubSubMessaging](webpubsubmessaging.md)
+
+## Azure Virtual Desktop
+
+- [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDConnections](wvdconnections.md)
+- [WVDErrors](wvderrors.md)
+- [WVDFeeds](wvdfeeds.md)
+- [WVDHostRegistrations](wvdhostregistrations.md)
+- [WVDManagement](wvdmanagement.md)
 
 ## Containers
 
@@ -383,7 +404,9 @@ ms.date: 2/17/2022
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
+- [AADRiskyServicePrincipals](aadriskyserviceprincipals.md)
 - [AADRiskyUsers](aadriskyusers.md)
+- [AADServicePrincipalRiskEvents](aadserviceprincipalriskevents.md)
 - [AADServicePrincipalSignInLogs](aadserviceprincipalsigninlogs.md)
 - [AADUserRiskEvents](aaduserriskevents.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
@@ -463,15 +486,6 @@ ms.date: 2/17/2022
 - [VMProcess](vmprocess.md)
 - [W3CIISLog](w3ciislog.md)
 - [WireData](wiredata.md)
-
-## Windows Virtual Desktop
-
-- [WVDCheckpoints](wvdcheckpoints.md)
-- [WVDConnections](wvdconnections.md)
-- [WVDErrors](wvderrors.md)
-- [WVDFeeds](wvdfeeds.md)
-- [WVDHostRegistrations](wvdhostregistrations.md)
-- [WVDManagement](wvdmanagement.md)
 
 ## Workloads
 
