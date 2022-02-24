@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/17/2022
+ms.date: 2/24/2022
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 2/17/2022
 ## Resource types
 
 - Microsoft App Configuration
-- SQL Managed Instances
 - Data Share
 - Power BI Embedded
 - Data Lake Analytics
@@ -43,10 +42,11 @@ ms.date: 2/17/2022
 - System Center Virtual Machine Manager
 - Azure Stack HCI
 - VMware
-- SQL Servers
 - Event Grid Domains
+- SQL Managed Instances
+- SQL Servers
 - SQL Databases
-- Azure Database for PostgreSQL Servers
+- Azure Database for MySQL Servers
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -56,8 +56,8 @@ ms.date: 2/17/2022
 - Traffic Manager Profiles
 - Public IP Addresses
 - Network Security Groups
+- Azure Blockchain Service
 - Network Interfaces
-- Load Balancers
 - Front Doors
 - ExpressRoute Circuits
 - Application Gateways
@@ -66,11 +66,11 @@ ms.date: 2/17/2022
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Flexible Servers
 - Azure Database for PostgreSQL Servers V2
-- Azure Database for MySQL Servers
-- Azure API for FHIR
-- Azure Blockchain Service
+- Azure Database for PostgreSQL Servers
+- Load Balancers
+- Azure AD Domain Services
 - Azure Data Explorer Clusters
-- HDInsight Clusters
+- Container Registries
 - Experiment Workspace
 - Dynamics 365 Customer Insights
 - Network Watcher - Connection Monitor
@@ -80,6 +80,7 @@ ms.date: 2/17/2022
 - Azure Traffic Collector
 - Microsoft.Purview/accounts
 - Kubernetes Services
+- HDInsight Clusters
 - Azure Managed Instance for Apache Cassandra
 - Firewalls
 - Event Grid Topics
@@ -87,13 +88,13 @@ ms.date: 2/17/2022
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
+- Attestation provider
 - Azure Autonomous Development Platform Account
 - App Services
+- Azure Managed Workspace for Grafana
+- Azure API for FHIR
 - Machine Learning
-- Azure AD Domain Services
-- Virtual machines
-- Desktop Virtualization Host Pools
-- Container Registries
+- Synapse Workspaces
 - SignalR
 - Storage Accounts
 - Key Vaults
@@ -103,16 +104,18 @@ ms.date: 2/17/2022
 - CDN Profiles
 - Batch Accounts
 - Analysis Services
+- Virtual machines
 - Workload Monitor
-- Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Application Insights
 - Azure Digital Twins
+- SignalR Service WebPubSub
 - Azure Resource Group
 - Azure Subscription
 - Default schema for a resource
-- Synapse Workspaces
+- Desktop Virtualization Host Pools
+- Time Series Insights Environments
 - Service Bus
 
 

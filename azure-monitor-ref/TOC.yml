@@ -122,6 +122,8 @@
     href: tables/adxtabledetails.md
   - name: ADXTableUsageStatistics
     href: tables/adxtableusagestatistics.md
+  - name: AegDataPlaneRequests
+    href: tables/aegdataplanerequests.md
   - name: AegDeliveryFailureLogs
     href: tables/aegdeliveryfailurelogs.md
   - name: AegPublishFailureLogs
@@ -612,6 +614,12 @@
     href: tables/sqlvulnerabilityassessmentscanstatus.md
   - name: StorageBlobLogs
     href: tables/storagebloblogs.md
+  - name: StorageCacheOperationEvents
+    href: tables/storagecacheoperationevents.md
+  - name: StorageCacheUpgradeEvents
+    href: tables/storagecacheupgradeevents.md
+  - name: StorageCacheWarningEvents
+    href: tables/storagecachewarningevents.md
   - name: StorageFileLogs
     href: tables/storagefilelogs.md
   - name: StorageQueueLogs

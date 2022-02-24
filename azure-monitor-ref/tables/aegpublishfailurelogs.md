@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/17/2022
+ms.date: 2/24/2022
 ---
 
 # AegPublishFailureLogs
 
- AEG Event publish failure logs
+ Azure Event Grid - event publish failure logs.
 
 ## Categories
 
@@ -39,6 +39,5 @@ ms.date: 2/17/2022
 | SubResourceName | string | Name of the sub resource. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
-| Time | datetime | Time when log was generated. |
-| TimeGenerated | datetime |  |
+| TimeGenerated | datetime | Time when log was generated. |
 | Type | string | The name of the table |

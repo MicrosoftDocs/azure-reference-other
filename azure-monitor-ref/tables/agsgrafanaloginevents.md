@@ -6,16 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/17/2022
+ms.date: 2/24/2022
 ---
 
 # AGSGrafanaLoginEvents
 
  Login events for an instance of Azure Managed Workspace for Grafana including user identity, user Grafana role (in success) and detailed message (in failure).
 
+## Categories
+
+- Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Managed Workspace for Grafana
 
 
 
