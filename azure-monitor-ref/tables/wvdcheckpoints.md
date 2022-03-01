@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/17/2022
+ms.date: 2/24/2022
 ---
 
 # WVDCheckpoints
@@ -15,7 +15,7 @@ ms.date: 2/17/2022
 
 ## Categories
 
-- Windows Virtual Desktop
+- Azure Virtual Desktop
 ## Solutions
 
 - LogManagement
