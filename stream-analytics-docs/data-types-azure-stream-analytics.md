@@ -1,12 +1,14 @@
 ---
 title: "Data Types (Azure Stream Analytics)"
 description: "Lists the data types supported by Azure Stream Analytics."
+author:fleid
 applies_to:
   - "Azure"
 
+ms.author:fleide
 ms.service: stream-analytics
 ms.topic: reference
-ms.date: 05/17/2018
+ms.date: 03/07/2022
 ---
 
 # Data Types (Azure Stream Analytics)
