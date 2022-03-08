@@ -29,7 +29,7 @@ In case of conversion errors, CREATE TABLE will drop the rows from the stream. T
 "ErrorCategory": "DataError"
  ```
  
-This means that CREATE TABLE cannot be used to convert types between the original format (CSV, JSON..) and new ones. CREATE TABLE can only be used to explicitely inform the compiler of the types to expect, so deviations can be removed from the stream. If a conversion needs to be made, it should be done in a later query step by using [CAST](cast-azure-stream-analytics.ms) or [TRY_CAST](try-cast-azure-stream-analytics.md).
+This means that CREATE TABLE cannot be used to convert types between the original format (CSV, JSON..) and new ones. CREATE TABLE can only be used to explicitely inform the compiler of the types to expect, so deviations can be removed from the stream. If a conversion needs to be made, it should be done in a later query step by using [CAST](cast-azure-stream-analytics.md) or [TRY_CAST](try-cast-azure-stream-analytics.md).
  
 ## Syntax  
   
