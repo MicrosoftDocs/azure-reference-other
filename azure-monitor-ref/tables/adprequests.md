@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/24/2022
+ms.date: 3/3/2022
 ---
 
 # ADPRequests
@@ -31,7 +31,7 @@ ms.date: 2/24/2022
 | Column | Type | Description |
 | --- | --- | --- |
 | CallerIpAddress | string | IP address of the user who has performed the operation. |
-| CorrelationId | string | Internal ADP correlation ID needed for support scenarios. |
+| CorrelationId | string | Internal ADP correlation ID used in support scenarios. |
 | DurationMs | int | The duration of the operation in milliseconds. |
 | HttpStatusCode | int | The HTTP response status code of the corresponding REST call. |
 | Location | string | The location (region) of the resource. |

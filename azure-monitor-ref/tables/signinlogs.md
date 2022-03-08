@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/24/2022
+ms.date: 3/3/2022
 ---
 
 # SigninLogs
@@ -32,11 +32,13 @@ ms.date: 2/24/2022
 | AlternateSignInName | string |  |
 | AppDisplayName | string |  |
 | AppId | string |  |
+| AuthenticationContextClassReferences | string |  |
 | AuthenticationDetails | string |  |
 | AuthenticationMethodsUsed | string |  |
 | AuthenticationProcessingDetails | string |  |
 | AuthenticationRequirement | string |  |
 | AuthenticationRequirementPolicies | string |  |
+| AutonomousSystemNumber | string |  |
 | Category | string |  |
 | ClientAppUsed | string |  |
 | ConditionalAccessPolicies | dynamic |  |
@@ -68,6 +70,7 @@ ms.date: 2/24/2022
 | ResourceId | string |  |
 | ResourceIdentity | string |  |
 | ResourceProvider | string |  |
+| ResourceServicePrincipalId | string |  |
 | ResourceTenantId | string |  |
 | ResultDescription | string |  |
 | ResultSignature | string |  |
@@ -80,6 +83,7 @@ ms.date: 2/24/2022
 | RiskState | string |  |
 | ServicePrincipalId | string |  |
 | ServicePrincipalName | string |  |
+| SessionLifetimePolicies | string |  |
 | SignInIdentifier | string |  |
 | SignInIdentifierType | string |  |
 | SourceSystem | string |  |
@@ -88,6 +92,7 @@ ms.date: 2/24/2022
 | TokenIssuerName | string |  |
 | TokenIssuerType | string |  |
 | Type | string | The name of the table |
+| UniqueTokenIdentifier | string |  |
 | UserAgent | string |  |
 | UserDisplayName | string |  |
 | UserId | string |  |

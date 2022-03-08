@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/24/2022
+ms.date: 3/3/2022
 ---
 
 # AppPlatformSystemLogs
@@ -30,7 +30,6 @@ ms.date: 2/24/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| AppTimestamp | datetime | The log timestamp (UTC) from application log |
 | Category | string | Log Category |
 | InstanceName | string | The instance name that emitted the log |
 | Level | string | The level of the log |
