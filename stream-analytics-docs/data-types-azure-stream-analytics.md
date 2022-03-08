@@ -1,12 +1,14 @@
 ---
 title: "Data Types (Azure Stream Analytics)"
 description: "Lists the data types supported by Azure Stream Analytics."
+author: fleid
 applies_to:
   - "Azure"
 
+ms.author: fleide
 ms.service: stream-analytics
 ms.topic: reference
-ms.date: 05/17/2018
+ms.date: 03/07/2022
 ---
 
 # Data Types (Azure Stream Analytics)
@@ -43,13 +45,18 @@ A loss of precision may happen in converting values to float. It is not specific
 
 ## Casting data
 
-There are three functions in the streaming SQL language that are useful for observing and adjusting the data type of your data.
+There are four functions in the streaming SQL language that are useful for observing and adjusting the data type of your data.
 
-- [CAST](cast-azure-stream-analytics.md)
-- [TRY_CAST](try-cast-azure-stream-analytics.md)
-- [GetType](gettype-azure-stream-analytics.md)
+- [CAST](cast-azure-stream-analytics.md) : cast a single column to a given type - will fail the job in case of conversion error
+- [TRY_CAST](try-cast-azure-stream-analytics.md) : cast a single column to a given type - errors are let through as NULL. See [input validation](/azure/stream-analytics/input-validation) for how to best use `TRY_CAST`
+- [CREATE TABLE](create-table-stream-analytics.md) : define a single explicit schema to an input. Rows with conversion errors are removed from the stream
+- [GetType](gettype-azure-stream-analytics.md) : return the type of a column
 
-If possible, all casting operations should be done explicitly via these functions, rather than implicitly (silently) in other functions. This avoids type mismatches, unexpected behaviors, and insertion errors for strongly typed outputs like SQL databases.
+For most use cases, the recommended option is to use [TRY_CAST](try-cast-azure-stream-analytics.md). This function protects downstream processing by ensuring the output type, while preventing the loss of data by replacing the value in error by NULL. The row is not dropped, and that original value can still be projected in another column.
+
+For strong guarantees, the recommended option is to use [CREATE TABLE](create-table-stream-analytics.md). This approach allows to inform the job of the schema of a given input, with no risk of deviation. The trade-off being that only a single schema can be defined on a given input, and non-compliant rows will be dropped.
+
+If possible, all casting operations should be done explicitly via these functions, rather than implicitly (silently) in other functions. This avoids type mismatches, unexpected behaviors, and insertion errors for strongly typed outputs like SQL databases. See [input validation](/azure/stream-analytics/input-validation) for how to protect the main query logic from such errors.
 
 ## Conversion to bit
 
