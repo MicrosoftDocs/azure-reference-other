@@ -18,7 +18,7 @@ Converts an expression of one data type to another within the supported [data ty
 If the conversion cannot be performed, the function fails and causes the job to stop. For example, the clause `CAST ('this is a string' AS bigint)` results in a job failure since the input string cannot be converted into the `bigint` data type. To avoid type cast failures, use [TRY_CAST](try-cast-azure-stream-analytics.md) function instead.
 
 > [!NOTE]
-> To compare the different options available for type conversion, see [casting data](/data-types-azure-stream-analytics.md#casting-data)
+> To compare the different options available for type conversion, see [casting data](data-types-azure-stream-analytics.md#casting-data)
 
 ## Syntax
 
