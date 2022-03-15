@@ -320,8 +320,12 @@
     href: tables/databricksaccounts.md
   - name: DatabricksClusters
     href: tables/databricksclusters.md
+  - name: DatabricksDatabricksSQL
+    href: tables/databricksdatabrickssql.md
   - name: DatabricksDBFS
     href: tables/databricksdbfs.md
+  - name: DatabricksDeltaPipelines
+    href: tables/databricksdeltapipelines.md
   - name: DatabricksFeatureStore
     href: tables/databricksfeaturestore.md
   - name: DatabricksGenie
@@ -338,10 +342,14 @@
     href: tables/databricksmlflowacledartifact.md
   - name: DatabricksMLflowExperiment
     href: tables/databricksmlflowexperiment.md
+  - name: DatabricksModelRegistry
+    href: tables/databricksmodelregistry.md
   - name: DatabricksNotebook
     href: tables/databricksnotebook.md
   - name: DatabricksRemoteHistoryService
     href: tables/databricksremotehistoryservice.md
+  - name: DatabricksRepos
+    href: tables/databricksrepos.md
   - name: DatabricksSecrets
     href: tables/databrickssecrets.md
   - name: DatabricksSQL
@@ -350,6 +358,8 @@
     href: tables/databrickssqlpermissions.md
   - name: DatabricksSSH
     href: tables/databricksssh.md
+  - name: DatabricksUnityCatalog
+    href: tables/databricksunitycatalog.md
   - name: DatabricksWorkspace
     href: tables/databricksworkspace.md
   - name: DeviceAppCrash
