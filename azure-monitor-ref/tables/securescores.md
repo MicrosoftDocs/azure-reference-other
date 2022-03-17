@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/10/2022
+ms.date: 3/17/2022
 ---
 
 # SecureScores
@@ -29,9 +29,11 @@ ms.date: 3/10/2022
 | AssessedResourceId | string | The ID of the assessed resource |
 | CurrentScore | real | The current secure score per control |
 | DisplayName | string | The initiative�s name |
+| Environment | string | Data source environment. |
 | IsSnapshot | bool | Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'. |
 | MaxScore | int | The maximum control score |
 | PercentageScore | real | The percentage of the score (current score divided by max score) |
+| Properties | dynamic | The complete set of metadata. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceProviderType | string | Resource provider type of the assessed resource |
 | SecureScoresSubscriptionId | string | The ID of the subscription |

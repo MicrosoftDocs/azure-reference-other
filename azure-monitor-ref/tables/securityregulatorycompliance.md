@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/10/2022
+ms.date: 3/17/2022
 ---
 
 # SecurityRegulatoryCompliance
@@ -32,6 +32,7 @@ ms.date: 3/10/2022
 | FailedResources | int | The number of resources that failed this assessment |
 | IsSnapshot | bool | Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'. |
 | PassedResources | int | The number of resources that passed this assessment |
+| Properties | dynamic | The complete set of metadata. |
 | RecommendationId | string | The ID of the assessed recommendation |
 | RecommendationLink | string | A link for more details on the assessment result |
 | RecommendationName | string | Recommendation display name |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/10/2022
+ms.date: 3/17/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -505,6 +505,16 @@ ms.date: 3/10/2022
 
 ## Firewalls
 
+- [AZFWApplicationRule](azfwapplicationrule.md)
+- [AZFWApplicationRuleAggregation](azfwapplicationruleaggregation.md)
+- [AZFWDnsQuery](azfwdnsquery.md)
+- [AZFWIdpsSignature](azfwidpssignature.md)
+- [AZFWInternalFqdnResolutionFailure](azfwinternalfqdnresolutionfailure.md)
+- [AZFWNatRule](azfwnatrule.md)
+- [AZFWNatRuleAggregation](azfwnatruleaggregation.md)
+- [AZFWNetworkRule](azfwnetworkrule.md)
+- [AZFWNetworkRuleAggregation](azfwnetworkruleaggregation.md)
+- [AZFWThreatIntel](azfwthreatintel.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
