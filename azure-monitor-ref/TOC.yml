@@ -766,3 +766,5 @@
     href: tables/wvdcheckpoints.md
   - name: WVDConnectionNetworkData
     href: tables/wvdconnectionnetworkdata.md
+  - name: WVDConnections
+    href: tables/wvdconnections.md
