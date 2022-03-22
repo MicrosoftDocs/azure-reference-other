@@ -252,6 +252,26 @@
     href: tables/awsguardduty.md
   - name: AWSVPCFlow
     href: tables/awsvpcflow.md
+  - name: AZFWApplicationRule
+    href: tables/azfwapplicationrule.md
+  - name: AZFWApplicationRuleAggregation
+    href: tables/azfwapplicationruleaggregation.md
+  - name: AZFWDnsQuery
+    href: tables/azfwdnsquery.md
+  - name: AZFWIdpsSignature
+    href: tables/azfwidpssignature.md
+  - name: AZFWInternalFqdnResolutionFailure
+    href: tables/azfwinternalfqdnresolutionfailure.md
+  - name: AZFWNatRule
+    href: tables/azfwnatrule.md
+  - name: AZFWNatRuleAggregation
+    href: tables/azfwnatruleaggregation.md
+  - name: AZFWNetworkRule
+    href: tables/azfwnetworkrule.md
+  - name: AZFWNetworkRuleAggregation
+    href: tables/azfwnetworkruleaggregation.md
+  - name: AZFWThreatIntel
+    href: tables/azfwthreatintel.md
   - name: AzureActivity
     href: tables/azureactivity.md
   - name: AzureDevOpsAuditing
