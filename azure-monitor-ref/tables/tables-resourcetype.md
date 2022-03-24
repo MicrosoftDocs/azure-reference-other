@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/17/2022
+ms.date: 3/25/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -33,7 +33,6 @@ ms.date: 3/17/2022
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
-- [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
@@ -61,6 +60,7 @@ ms.date: 3/17/2022
 ## Attestation provider
 
 - [AzureActivity](azureactivity.md)
+- [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 
 ## Automation account
 
@@ -264,6 +264,9 @@ ms.date: 3/17/2022
 ## Azure Sentinel CEF Table
 
 - [CommonSecurityLog](commonsecuritylog.md)
+
+## Azure Sentinel data collection
+
 
 ## Azure Sentinel MCAS
 
@@ -471,9 +474,32 @@ ms.date: 3/17/2022
 
 ## Event Grid Domains
 
+- [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Event Grid Partner Namespaces
+
+- [AegDataPlaneRequests](aegdataplanerequests.md)
+- [AegPublishFailureLogs](aegpublishfailurelogs.md)
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Event Grid Partner Topics
+
+- [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Event Grid System Topics
+
+- [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Event Grid Topics
@@ -755,9 +781,6 @@ ms.date: 3/17/2022
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
-
-## SecurityInsights
-
 
 ## Service Bus
 

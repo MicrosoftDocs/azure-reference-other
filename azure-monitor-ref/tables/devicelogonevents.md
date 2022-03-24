@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/17/2022
+ms.date: 3/25/2022
 ---
 
 # DeviceLogonEvents
 
  This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Sign-ins and other authentication events.
 
+## Categories
+
+- Security
 ## Solutions
 
 - Microsoft Sentinel
