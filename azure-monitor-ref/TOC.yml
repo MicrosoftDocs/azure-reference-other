@@ -592,3 +592,5 @@
     href: tables/officeactivity.md
   - name: OLPSupplyChainEntityOperations
     href: tables/olpsupplychainentityoperations.md
+  - name: Operation
+    href: tables/operation.md
