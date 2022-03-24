@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/17/2022
+ms.date: 3/25/2022
 ---
 
 # AegPublishFailureLogs
@@ -23,6 +23,7 @@ ms.date: 3/17/2022
 
 - Event Grid Topics
 - Event Grid Domains
+- Event Grid Partner Namespaces
 
 
 
