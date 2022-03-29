@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/17/2022
+ms.date: 3/25/2022
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 3/17/2022
 ## Resource types
 
 - Microsoft App Configuration
-- Data Share
 - Power BI Embedded
 - Data Lake Analytics
 - Data Lake Storage Gen1
@@ -34,19 +33,21 @@ ms.date: 3/17/2022
 - API Management services
 - Logic Apps
 - Service Fabric Clusters
+- Data Share
 - IoT Hub
-- Azure Monitor autoscale settings
 - Azure Databricks Services
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
 - Azure Stack HCI
 - VMware
-- Event Grid Domains
+- Event Grid System Topics
+- Event Grid Partner Topics
+- Event Grid Partner Namespaces
+- Azure Monitor autoscale settings
 - SQL Managed Instances
 - SQL Servers
 - SQL Databases
-- Azure Database for MySQL Servers
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -56,8 +57,8 @@ ms.date: 3/17/2022
 - Traffic Manager Profiles
 - Public IP Addresses
 - Network Security Groups
-- Azure Blockchain Service
 - Network Interfaces
+- Load Balancers
 - Front Doors
 - ExpressRoute Circuits
 - Application Gateways
@@ -67,10 +68,11 @@ ms.date: 3/17/2022
 - Azure Database for PostgreSQL Flexible Servers
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Servers
-- Load Balancers
-- Azure AD Domain Services
+- Azure Database for MySQL Servers
+- Event Grid Domains
+- Azure API for FHIR
+- Azure Blockchain Service
 - Azure Data Explorer Clusters
-- Container Registries
 - Experiment Workspace
 - Dynamics 365 Customer Insights
 - Network Watcher - Connection Monitor
@@ -92,9 +94,10 @@ ms.date: 3/17/2022
 - Azure Autonomous Development Platform Account
 - App Services
 - Azure Managed Workspace for Grafana
-- Azure API for FHIR
 - Machine Learning
+- Virtual machines
 - Synapse Workspaces
+- Container Registries
 - SignalR
 - Storage Accounts
 - Key Vaults
@@ -104,8 +107,8 @@ ms.date: 3/17/2022
 - CDN Profiles
 - Batch Accounts
 - Analysis Services
-- Virtual machines
 - Workload Monitor
+- Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Application Insights
@@ -115,7 +118,7 @@ ms.date: 3/17/2022
 - Azure Subscription
 - Default schema for a resource
 - Desktop Virtualization Host Pools
-- Time Series Insights Environments
+- Azure AD Domain Services
 - Service Bus
 
 

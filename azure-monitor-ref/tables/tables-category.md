@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/17/2022
+ms.date: 3/25/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -151,12 +151,12 @@ ms.date: 3/17/2022
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
-- [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
 - [AuditLogs](auditlogs.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
 - [AzureActivity](azureactivity.md)
+- [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
@@ -278,6 +278,7 @@ ms.date: 3/17/2022
 ## Azure Virtual Desktop
 
 - [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDConnectionNetworkData](wvdconnectionnetworkdata.md)
 - [WVDConnections](wvdconnections.md)
 - [WVDErrors](wvderrors.md)
 - [WVDFeeds](wvdfeeds.md)
@@ -433,7 +434,12 @@ ms.date: 3/17/2022
 - [BehaviorAnalytics](behavioranalytics.md)
 - [CloudAppEvents](cloudappevents.md)
 - [CommonSecurityLog](commonsecuritylog.md)
+- [DeviceEvents](deviceevents.md)
+- [DeviceFileCertificateInfo](devicefilecertificateinfo.md)
 - [DeviceFileEvents](devicefileevents.md)
+- [DeviceImageLoadEvents](deviceimageloadevents.md)
+- [DeviceInfo](deviceinfo.md)
+- [DeviceLogonEvents](devicelogonevents.md)
 - [DeviceNetworkEvents](devicenetworkevents.md)
 - [DeviceNetworkInfo](devicenetworkinfo.md)
 - [DeviceProcessEvents](deviceprocessevents.md)

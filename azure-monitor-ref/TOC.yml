@@ -208,6 +208,8 @@
     href: tables/appperformancecounters.md
   - name: AppPlatformBuildLogs
     href: tables/appplatformbuildlogs.md
+  - name: AppPlatformContainerEventLogs
+    href: tables/appplatformcontainereventlogs.md
   - name: AppPlatformIngressLogs
     href: tables/appplatformingresslogs.md
   - name: AppPlatformLogsforSpring
@@ -232,8 +234,6 @@
     href: tables/appservicehttplogs.md
   - name: AppServiceIPSecAuditLogs
     href: tables/appserviceipsecauditlogs.md
-  - name: AppServicePlatformLogs
-    href: tables/appserviceplatformlogs.md
   - name: AppSystemEvents
     href: tables/appsystemevents.md
   - name: AppTraces
@@ -274,6 +274,8 @@
     href: tables/azfwthreatintel.md
   - name: AzureActivity
     href: tables/azureactivity.md
+  - name: AzureAttestationDiagnostics
+    href: tables/azureattestationdiagnostics.md
   - name: AzureDevOpsAuditing
     href: tables/azuredevopsauditing.md
   - name: AzureDiagnostics

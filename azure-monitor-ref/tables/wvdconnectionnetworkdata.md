@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/17/2022
+ms.date: 3/25/2022
 ---
 
 # WVDConnectionNetworkData
 
  Windows Virtual Desktop connection network data.
 
+## Categories
+
+- Azure Virtual Desktop
 ## Solutions
 
 - LogManagement
