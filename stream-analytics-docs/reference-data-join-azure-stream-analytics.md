@@ -19,14 +19,21 @@ FROM Input1 I1 TIMESTAMP BY EntryTime
 JOIN Registration R  
 ON I1.LicensePlate = R.LicensePlate  
 WHERE R.Expired = '1'
-  
 ```  
   
 ## Particularities of Reference Data JOIN
+
 - Using Reference Data JOIN requires that an input source for Reference Data is defined.  
 - Reference data JOIN is supported for inner JOIN (default) and left outer JOIN, with reference data on the right side of the JOIN operator.
+- Data types are an important aspect in the evaluation of the join predicate (`ON` clause). Similar values on different data types (`1.0` and `"1"`) may not be matched. [Explicitely converting](data-types-azure-stream-analytics.md) keys to a common type is recommended.
 - Reference data can be static (loaded only once) or dynamic (refreshed regularly). However even in the dynamic case, reference data does not make the time progress so the stream on the left side needs to get new events in order to produce outputs. See also [how time progresses in azure stream analytics](/azure/stream-analytics/stream-analytics-time-handling#how-time-progresses-in-azure-stream-analytics) for more information.
-  
+
+## Performance considerations
+
+To prevent performance degradations, reference join predicates (`ON` clause) should be defined via simple key equalities (`ON s.myKey = r.myKey`). Using complex expressions, or inequalities, will internally result in cross joins followed by filters (full scan vs lookup), which can severly impact the overall latency.
+
+When possible, prefere moving these complex expressions to the `WHERE` clause of the query step, or join the same Reference Data multiple times each with simpler conditions.
+
  ## See Also  
 - [JOIN](join-azure-stream-analytics.md)
 - [Reference data input](/azure/stream-analytics/stream-analytics-use-reference-data)
