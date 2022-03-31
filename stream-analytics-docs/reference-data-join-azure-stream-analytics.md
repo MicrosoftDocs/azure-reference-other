@@ -34,7 +34,7 @@ WHERE R.Expired = '1'
 
 To prevent performance degradations, reference join predicates (`ON` clause) should be defined via simple key equalities (`ON s.myKey = r.myKey`). Using complex expressions, or inequalities, will internally result in cross joins followed by filters (full scan vs lookup), which can severly impact the overall latency.
 
-When possible, prefere moving these complex expressions to the `WHERE` clause of the query step, or join the same Reference Data multiple times each with simpler conditions.
+When possible, move these complex expressions to the `WHERE` clause of the query step, or join the same Reference Data multiple times each with simpler conditions.
 
  ## See Also  
 - [JOIN](join-azure-stream-analytics.md)
