@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/25/2022
+ms.date: 4/1/2022
 ---
 
 # AzureActivity
@@ -90,7 +90,7 @@ ms.date: 3/25/2022
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
-- Attestation provider
+- Azure Attestation
 - Azure Autonomous Development Platform Account
 - App Services
 - Azure Managed Workspace for Grafana

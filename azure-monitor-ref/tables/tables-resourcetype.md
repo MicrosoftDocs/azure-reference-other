@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 3/25/2022
+ms.date: 4/1/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -33,6 +33,7 @@ ms.date: 3/25/2022
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
+- [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
@@ -56,11 +57,6 @@ ms.date: 3/25/2022
 - [AppSystemEvents](appsystemevents.md)
 - [AppTraces](apptraces.md)
 - [AzureActivity](azureactivity.md)
-
-## Attestation provider
-
-- [AzureActivity](azureactivity.md)
-- [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 
 ## Automation account
 
@@ -114,6 +110,11 @@ ms.date: 3/25/2022
 - [KubePVInventory](kubepvinventory.md)
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
+
+## Azure Attestation
+
+- [AzureActivity](azureactivity.md)
+- [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 
 ## Azure Autonomous Development Platform Account
 
@@ -709,6 +710,9 @@ ms.date: 3/25/2022
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
 
 ## Microsoft.Dynamics.FraudProtection/purchase
+
+
+## Microsoft.OpenEnergyPlatform/energyServices
 
 
 ## Microsoft.OpenLogisticsPlatform/Workspaces
