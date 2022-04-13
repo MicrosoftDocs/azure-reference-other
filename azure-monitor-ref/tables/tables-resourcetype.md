@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/1/2022
+ms.date: 4/7/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -714,10 +714,12 @@ ms.date: 4/1/2022
 
 ## Microsoft.OpenEnergyPlatform/energyServices
 
+- [OEPAirFlowTask](oepairflowtask.md)
 
 ## Microsoft.OpenLogisticsPlatform/Workspaces
 
 - [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)
+- [OLPSupplyChainEvents](olpsupplychainevents.md)
 
 ## Microsoft.Purview/accounts
 
@@ -916,6 +918,10 @@ ms.date: 4/1/2022
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Video Indexer
+
+- [VIAudit](viaudit.md)
 
 ## Virtual Machine Scale Sets
 
