@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/7/2022
+ms.date: 4/14/2022
 ---
 
 # AutoscaleEvaluationsLog
@@ -65,6 +65,7 @@ ms.date: 4/7/2022
 | ProfileSelected | bool |  |
 | Projection | real |  |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string |  |
 | ResultType | string |  |
 | SelectedAutoscaleProfile | string |  |
@@ -73,6 +74,7 @@ ms.date: 4/7/2022
 | SkipCurrentAutoscaleEvaluation | bool |  |
 | SkipRuleEvaluationForCooldown | bool |  |
 | SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetResourceId | string |  |
 | Threshold | real |  |
 | TimeAggregationType | string |  |
