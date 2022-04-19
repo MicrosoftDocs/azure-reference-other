@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/1/2022
+ms.date: 4/14/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -68,6 +68,8 @@ ms.date: 4/1/2022
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 - [PowerBIActivity](powerbiactivity.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
+- [SentinelAudit](sentinelaudit.md)
+- [VIAudit](viaudit.md)
 
 ## Azure Monitor
 
@@ -228,7 +230,9 @@ ms.date: 4/1/2022
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [OEPAirFlowTask](oepairflowtask.md)
 - [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)
+- [OLPSupplyChainEvents](olpsupplychainevents.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
@@ -473,6 +477,7 @@ ms.date: 4/1/2022
 - [SecurityEvent](securityevent.md)
 - [SecurityIoTRawEvent](securityiotrawevent.md)
 - [SecurityRecommendation](securityrecommendation.md)
+- [SentinelAudit](sentinelaudit.md)
 - [SentinelHealth](sentinelhealth.md)
 - [SigninLogs](signinlogs.md)
 - [Syslog](syslog.md)

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/1/2022
+ms.date: 4/14/2022
 ---
 
 # ASimDnsActivityLogs
@@ -74,6 +74,7 @@ ms.date: 4/1/2022
 | EventType | string | Indicates the operation reported by the record. For DNS activity events, this value is the DNS opcode as defined by the Internet Assigned Numbers Authority (IANA). |
 | EventVendor | string | The vendor of the product generating the event. |
 | NetworkProtocol | string | The transport protocol used by the network resolution event. The value can be UDP or TCP. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |
 | SrcDeviceType | string | The type of the source device. |
 | SrcDomain | string | The domain of the source device. |
@@ -93,6 +94,7 @@ ms.date: 4/1/2022
 | SrcUsername | string | The Source username, including domain information when available. |
 | SrcUsernameType | string | The type of the username stored in the SrcUsername field. |
 | SrcUserType | string | The type of the source user. |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | ThreatCategory | string | The threat category associated with the DNS event, if evaluated, for example by looking up the IP address or domain in a threat intelligence database. This value, when provided, is an enrichment and is not part of the DNS query itself. |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |

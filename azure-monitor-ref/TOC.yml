@@ -250,6 +250,8 @@
     href: tables/auieventsaudit.md
   - name: AUIEventsOperational
     href: tables/auieventsoperational.md
+  - name: AutoscaleScaleActionsLog
+    href: tables/autoscalescaleactionslog.md
   - name: AWSGuardDuty
     href: tables/awsguardduty.md
   - name: AWSVPCFlow
@@ -590,10 +592,14 @@
     href: tables/nwconnectionmonitorpathresult.md
   - name: NWConnectionMonitorTestResult
     href: tables/nwconnectionmonitortestresult.md
+  - name: OEPAirFlowTask
+    href: tables/oepairflowtask.md
   - name: OfficeActivity
     href: tables/officeactivity.md
   - name: OLPSupplyChainEntityOperations
     href: tables/olpsupplychainentityoperations.md
+  - name: OLPSupplyChainEvents
+    href: tables/olpsupplychainevents.md
   - name: Operation
     href: tables/operation.md
   - name: Perf
@@ -634,6 +640,8 @@
     href: tables/securitynestedrecommendation.md
   - name: SecurityRegulatoryCompliance
     href: tables/securityregulatorycompliance.md
+  - name: SentinelAudit
+    href: tables/sentinelaudit.md
   - name: SentinelHealth
     href: tables/sentinelhealth.md
   - name: SignalRServiceDiagnosticLogs
@@ -740,6 +748,8 @@
     href: tables/useraccessanalytics.md
   - name: UserPeerAnalytics
     href: tables/userpeeranalytics.md
+  - name: VIAudit
+    href: tables/viaudit.md
   - name: VMBoundPort
     href: tables/vmboundport.md
   - name: VMComputer

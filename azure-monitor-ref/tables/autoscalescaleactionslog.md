@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/1/2022
+ms.date: 4/14/2022
 ---
 
 # AutoscaleScaleActionsLog
@@ -40,6 +40,7 @@ ms.date: 4/1/2022
 | NewInstanceCount | int |  |
 | OperationName | string |  |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string |  |
 | ResultType | string |  |
 | ScaleActionMessage | string |  |
@@ -47,6 +48,7 @@ ms.date: 4/1/2022
 | ScaleActionOperationStatus | string |  |
 | ScaleDirection | string |  |
 | SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetResourceId | string |  |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |
