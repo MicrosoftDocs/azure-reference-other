@@ -102,3 +102,5 @@
     href: tables/adprequests.md
   - name: ADReplicationResult
     href: tables/adreplicationresult.md
+  - name: ADTDigitalTwinsOperation
+    href: tables/adtdigitaltwinsoperation.md
