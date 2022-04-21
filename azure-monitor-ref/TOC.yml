@@ -612,3 +612,5 @@
     href: tables/powerbidatasetstenant.md
   - name: PowerBIDatasetsTenantPreview
     href: tables/powerbidatasetstenantpreview.md
+  - name: PowerBIDatasetsWorkspace
+    href: tables/powerbidatasetsworkspace.md
