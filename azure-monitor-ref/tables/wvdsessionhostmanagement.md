@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/14/2022
+ms.date: 4/21/2022
 ---
 
 # WVDSessionHostManagement
@@ -34,8 +34,10 @@ ms.date: 4/14/2022
 | OSDiskSaved | bool | Property indicates whether the original disk is saved. |
 | OSDiskType | string | The Azure storage disk type used for the host pool update. |
 | ParentUpdateId | string | When the current host pool update is a retry or a resume of a previous host pool update operation, this represents the previous host pool update correlation ID. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ScheduledTime | string | When the host pool update is scheduled, the scheduled time. |
 | SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) of the event. |
 | Type | string | The name of the table |
