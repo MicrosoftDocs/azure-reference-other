@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/21/2022
+ms.date: 4/29/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -70,6 +70,7 @@ ms.date: 4/21/2022
 
 ## Azure Active Directory Logs
 
+- [AADB2CRequestLogs](aadb2crequestlogs.md)
 
 ## Azure activity Log V2
 
@@ -231,6 +232,11 @@ ms.date: 4/21/2022
 - [StorageCacheUpgradeEvents](storagecacheupgradeevents.md)
 - [StorageCacheWarningEvents](storagecachewarningevents.md)
 
+## Azure Load Testing
+
+- [AzureActivity](azureactivity.md)
+- [AzureLoadTestingOperation](azureloadtestingoperation.md)
+
 ## Azure Managed Instance for Apache Cassandra
 
 - [AzureActivity](azureactivity.md)
@@ -287,12 +293,16 @@ ms.date: 4/21/2022
 ## Azure Sentinel Office 365
 
 
+## Azure Sentinel TVM
+
+
 ## Azure Sentinel Watchlist
 
 
 ## Azure Spring Cloud
 
 - [AppPlatformBuildLogs](appplatformbuildlogs.md)
+- [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
 - [AppPlatformSystemLogs](appplatformsystemlogs.md)
@@ -379,6 +389,7 @@ ms.date: 4/21/2022
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AzureActivity](azureactivity.md)
@@ -451,6 +462,7 @@ ms.date: 4/21/2022
 - [WVDErrors](wvderrors.md)
 - [WVDHostRegistrations](wvdhostregistrations.md)
 - [WVDManagement](wvdmanagement.md)
+- [WVDSessionHostManagement](wvdsessionhostmanagement.md)
 
 ## Desktop Virtualization workspaces
 
@@ -696,6 +708,10 @@ ms.date: 4/21/2022
 
 ## Microsoft Sentinel DNS activity ASim schema
 
+- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
+
+## Microsoft Sentinel Network Session ASim schema
+
 
 ## Microsoft.AgFoodPlatform/farmBeats
 
@@ -707,6 +723,7 @@ ms.date: 4/21/2022
 - [AgriFoodModelInferenceLogs](agrifoodmodelinferencelogs.md)
 - [AgriFoodProviderAuthLogs](agrifoodproviderauthlogs.md)
 - [AgriFoodSatelliteLogs](agrifoodsatellitelogs.md)
+- [AgriFoodSensorManagementLogs](agrifoodsensormanagementlogs.md)
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
 
 ## Microsoft.Dynamics.FraudProtection/purchase

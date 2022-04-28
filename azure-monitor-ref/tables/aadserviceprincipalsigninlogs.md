@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/21/2022
+ms.date: 4/29/2022
 ---
 
 # AADServicePrincipalSignInLogs
@@ -29,12 +29,14 @@ ms.date: 4/21/2022
 | Column | Type | Description |
 | --- | --- | --- |
 | AppId | string | Unique GUID representing the app ID in the Azure Active Directory |
+| AuthenticationContextClassReferences | string | The authentication contexts of the sign-in |
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
 | Category | string | Category of the sign-in event |
-| ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
+| ConditionalAccessPoliciesV2 | dynamic | Details of the conditional access policies being applied for the sign-in |
 | ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
 | CorrelationId | string | ID to provide sign-in trail |
 | DurationMs | long | The duration of the operation in milliseconds |
+| FederatedCredentialId | string | Th identifier of an application's federated identity credential if a federated identity credential was used to sign in. |
 | Id | string | Unique ID representing the sign-in activity |
 | Identity | string | The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal |
 | IPAddress | string | IP address of the client used to sign in |
@@ -46,6 +48,7 @@ ms.date: 4/21/2022
 | ResourceDisplayName | string | Name of the resource that the service principal signed into |
 | ResourceGroup | string | Resource group for the logs |
 | ResourceIdentity | string | ID of the resource that the service principal signed into |
+| ResourceServicePrincipalId | string | Service Principal Id of the resource |
 | ResultDescription | string | Provides the error description for the sign-in operation |
 | ResultSignature | string | Contains the error code, if any, for the sign-in operation |
 | ResultType | string | The result of the sign-in operation can be Success or Failure |
