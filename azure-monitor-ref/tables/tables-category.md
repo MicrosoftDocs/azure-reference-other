@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/21/2022
+ms.date: 4/29/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -31,6 +31,7 @@ ms.date: 4/21/2022
 ## Audit
 
 - [AACAudit](aacaudit.md)
+- [AADB2CRequestLogs](aadb2crequestlogs.md)
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
@@ -61,6 +62,7 @@ ms.date: 4/21/2022
 - [AmlRunEvent](amlrunevent.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
+- [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [CassandraAudit](cassandraaudit.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
@@ -98,6 +100,7 @@ ms.date: 4/21/2022
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AddonAzureBackupAlerts](addonazurebackupalerts.md)
@@ -125,6 +128,7 @@ ms.date: 4/21/2022
 - [AgriFoodModelInferenceLogs](agrifoodmodelinferencelogs.md)
 - [AgriFoodProviderAuthLogs](agrifoodproviderauthlogs.md)
 - [AgriFoodSatelliteLogs](agrifoodsatellitelogs.md)
+- [AgriFoodSensorManagementLogs](agrifoodsensormanagementlogs.md)
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
@@ -144,6 +148,7 @@ ms.date: 4/21/2022
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
+- [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
 - [AppPlatformSystemLogs](appplatformsystemlogs.md)
@@ -161,6 +166,7 @@ ms.date: 4/21/2022
 - [AzureActivity](azureactivity.md)
 - [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 - [AzureDiagnostics](azurediagnostics.md)
+- [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [AzureMetrics](azuremetrics.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
@@ -289,6 +295,7 @@ ms.date: 4/21/2022
 - [WVDFeeds](wvdfeeds.md)
 - [WVDHostRegistrations](wvdhostregistrations.md)
 - [WVDManagement](wvdmanagement.md)
+- [WVDSessionHostManagement](wvdsessionhostmanagement.md)
 
 ## Containers
 
@@ -402,6 +409,7 @@ ms.date: 4/21/2022
 
 ## Security
 
+- [AADB2CRequestLogs](aadb2crequestlogs.md)
 - [AADDomainServicesAccountLogon](aaddomainservicesaccountlogon.md)
 - [AADDomainServicesAccountManagement](aaddomainservicesaccountmanagement.md)
 - [AADDomainServicesDirectoryServiceAccess](aaddomainservicesdirectoryserviceaccess.md)
