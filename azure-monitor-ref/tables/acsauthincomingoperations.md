@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/21/2022
+ms.date: 4/29/2022
 ---
 
 # ACSAuthIncomingOperations
@@ -30,7 +30,6 @@ ms.date: 4/21/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | int | The duration of the operation in milliseconds. |
