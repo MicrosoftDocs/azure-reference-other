@@ -28,3 +28,5 @@
     href: tables/aadnoninteractiveusersigninlogs.md
   - name: AADProvisioningLogs
     href: tables/aadprovisioninglogs.md
+  - name: AADRiskyServicePrincipals
+    href: tables/aadriskyserviceprincipals.md
