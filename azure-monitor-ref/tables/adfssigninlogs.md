@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/21/2022
+ms.date: 4/29/2022
 ---
 
 # ADFSSignInLogs
@@ -36,7 +36,7 @@ ms.date: 4/21/2022
 | AuthenticationRequirement | string | Type of authentication required for the sign-in.  If set to multiFactorAuthentication, an MFA step was required.  If set to singleFactorAuthentication, no MFA was required |
 | AuthenticationRequirementPolicies | string | Set of CA policies that apply to this sign-in, each as CA: policy name, and/or MFA: Per-user |
 | Category | string | Category of the sign-in event |
-| ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
+| ConditionalAccessPoliciesV2 | dynamic | Details of the conditional access policies being applied for the sign-in |
 | ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
 | CorrelationId | string | ID to provide sign-in trail |
 | CreatedDateTime | datetime | Datetime of the sign-in activity |
@@ -57,7 +57,7 @@ ms.date: 4/21/2022
 | ResourceDisplayName | string | The string name of the application the user signed into displayed in the Azure Portal |
 | ResourceGroup | string | Resource group for the logs |
 | ResourceIdentity | string | A unique ID application ID the user signed into of the request |
-| ResourceTenantId | string | The resource tenantId for B2B(business-to-business) scenarios |
+| ResourceTenantId | string | The resource tenant ID for cross-tenant scenarios |
 | ResultDescription | string | Provides the error description for the sign-in operation |
 | ResultSignature | string | Contains the error code, if any, for the sign-in operation |
 | ResultType | string | The result of the sign-in operation can be Success or Failure |
