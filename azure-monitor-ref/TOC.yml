@@ -14,6 +14,8 @@
     href: tables/aacaudit.md
   - name: AACHttpRequest
     href: tables/aachttprequest.md
+  - name: AADB2CRequestLogs
+    href: tables/aadb2crequestlogs.md
   - name: AADDomainServicesAccountLogon
     href: tables/aaddomainservicesaccountlogon.md
   - name: AADDomainServicesDirectoryServiceAccess
@@ -56,6 +58,8 @@
     href: tables/acscallsummary.md
   - name: ACSChatIncomingOperations
     href: tables/acschatincomingoperations.md
+  - name: ACSNetworkTraversalDiagnostics
+    href: tables/acsnetworktraversaldiagnostics.md
   - name: ACSNetworkTraversalIncomingOperations
     href: tables/acsnetworktraversalincomingoperations.md
   - name: ACSSMSIncomingOperations
@@ -148,6 +152,8 @@
     href: tables/agrifoodproviderauthlogs.md
   - name: AgriFoodSatelliteLogs
     href: tables/agrifoodsatellitelogs.md
+  - name: AgriFoodSensorManagementLogs
+    href: tables/agrifoodsensormanagementlogs.md
   - name: AgriFoodWeatherLogs
     href: tables/agrifoodweatherlogs.md
   - name: AGSGrafanaLoginEvents
@@ -284,6 +290,8 @@
     href: tables/azuredevopsauditing.md
   - name: AzureDiagnostics
     href: tables/azurediagnostics.md
+  - name: AzureLoadTestingOperation
+    href: tables/azureloadtestingoperation.md
   - name: AzureMetrics
     href: tables/azuremetrics.md
   - name: BehaviorAnalytics

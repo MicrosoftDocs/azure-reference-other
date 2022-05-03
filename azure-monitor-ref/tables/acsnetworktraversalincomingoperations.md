@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/21/2022
+ms.date: 4/29/2022
 ---
 
 # ACSNetworkTraversalIncomingOperations
@@ -47,5 +47,6 @@ ms.date: 4/21/2022
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
+| TTL | string | The TTL specified in the request. |
 | Type | string | The name of the table |
 | URI | string | The URI of the request |

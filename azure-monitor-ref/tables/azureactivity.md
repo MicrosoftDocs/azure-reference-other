@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/21/2022
+ms.date: 4/29/2022
 ---
 
 # AzureActivity
@@ -70,8 +70,8 @@ ms.date: 4/21/2022
 - Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
 - Event Grid Domains
-- Azure API for FHIR
 - Azure Blockchain Service
+- Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Experiment Workspace
 - Dynamics 365 Customer Insights
@@ -82,8 +82,9 @@ ms.date: 4/21/2022
 - Azure Traffic Collector
 - Microsoft.Purview/accounts
 - Kubernetes Services
-- HDInsight Clusters
 - Azure Managed Instance for Apache Cassandra
+- Azure Load Testing
+- Azure Managed Workspace for Grafana
 - Firewalls
 - Event Grid Topics
 - Project CI Workspace
@@ -93,9 +94,9 @@ ms.date: 4/21/2022
 - Azure Attestation
 - Azure Autonomous Development Platform Account
 - App Services
-- Azure Managed Workspace for Grafana
+- HDInsight Clusters
+- Azure API for FHIR
 - Machine Learning
-- Virtual machines
 - Synapse Workspaces
 - Container Registries
 - SignalR
@@ -118,7 +119,7 @@ ms.date: 4/21/2022
 - Azure Subscription
 - Default schema for a resource
 - Desktop Virtualization Host Pools
-- Azure AD Domain Services
+- Virtual machines
 - Service Bus
 
 
