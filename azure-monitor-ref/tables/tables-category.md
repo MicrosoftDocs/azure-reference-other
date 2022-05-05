@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/29/2022
+ms.date: 5/5/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -90,6 +90,7 @@ ms.date: 4/29/2022
 - [AADDomainServicesAccountLogon](aaddomainservicesaccountlogon.md)
 - [AADDomainServicesAccountManagement](aaddomainservicesaccountmanagement.md)
 - [AADDomainServicesDirectoryServiceAccess](aaddomainservicesdirectoryserviceaccess.md)
+- [AADDomainServicesLogonLogoff](aaddomainserviceslogonlogoff.md)
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [ABSBotRequests](absbotrequests.md)
@@ -168,6 +169,7 @@ ms.date: 4/29/2022
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [AzureMetrics](azuremetrics.md)
+- [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
 - [BlockchainApplicationLog](blockchainapplicationlog.md)
@@ -237,6 +239,8 @@ ms.date: 4/29/2022
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 - [OEPAirFlowTask](oepairflowtask.md)
+- [OEPElasticOperator](oepelasticoperator.md)
+- [OEPElasticsearch](oepelasticsearch.md)
 - [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)
 - [OLPSupplyChainEvents](olpsupplychainevents.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
@@ -393,6 +397,7 @@ ms.date: 4/29/2022
 - [IntuneDeviceComplianceOrg](intunedevicecomplianceorg.md)
 - [IntuneDevices](intunedevices.md)
 - [IntuneOperationalLogs](intuneoperationallogs.md)
+- [NetworkAccessTraffic](networkaccesstraffic.md)
 - [Update](update.md)
 - [UpdateRunProgress](updaterunprogress.md)
 - [W3CIISLog](w3ciislog.md)
@@ -402,6 +407,7 @@ ms.date: 4/29/2022
 - [AzureDiagnostics](azurediagnostics.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
+- [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkMonitoring](networkmonitoring.md)
 - [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
@@ -413,6 +419,7 @@ ms.date: 4/29/2022
 - [AADDomainServicesAccountLogon](aaddomainservicesaccountlogon.md)
 - [AADDomainServicesAccountManagement](aaddomainservicesaccountmanagement.md)
 - [AADDomainServicesDirectoryServiceAccess](aaddomainservicesdirectoryserviceaccess.md)
+- [AADDomainServicesLogonLogoff](aaddomainserviceslogonlogoff.md)
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
@@ -472,6 +479,7 @@ ms.date: 4/29/2022
 - [IdentityQueryEvents](identityqueryevents.md)
 - [LinuxAuditLog](linuxauditlog.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
+- [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkSessions](networksessions.md)
 - [OfficeActivity](officeactivity.md)
 - [PowerBIActivity](powerbiactivity.md)

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/29/2022
+ms.date: 5/5/2022
 ---
 
 # SecurityEvent
@@ -55,6 +55,7 @@ ms.date: 4/29/2022
 | AuthenticationServer | string |  |
 | AuthenticationService | int |  |
 | AuthenticationType | string |  |
+| AzureDeploymentID | string |  |
 | CACertificateHash | string |  |
 | CalledStationID | string |  |
 | CallerProcessId | string |  |
@@ -203,6 +204,7 @@ ms.date: 4/29/2022
 | SourceComputerId | string |  |
 | SourceSystem | string |  |
 | Status | string |  |
+| StorageAccount | string |  |
 | SubcategoryGuid | string |  |
 | SubcategoryId | string |  |
 | Subject | string |  |

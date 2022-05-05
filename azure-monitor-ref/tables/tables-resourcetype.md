@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/29/2022
+ms.date: 5/5/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -80,6 +80,7 @@ ms.date: 4/29/2022
 - [AADDomainServicesAccountLogon](aaddomainservicesaccountlogon.md)
 - [AADDomainServicesAccountManagement](aaddomainservicesaccountmanagement.md)
 - [AADDomainServicesDirectoryServiceAccess](aaddomainservicesdirectoryserviceaccess.md)
+- [AADDomainServicesLogonLogoff](aaddomainserviceslogonlogoff.md)
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 - [AzureActivity](azureactivity.md)
@@ -671,6 +672,7 @@ ms.date: 4/29/2022
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
 
@@ -732,6 +734,8 @@ ms.date: 4/29/2022
 ## Microsoft.OpenEnergyPlatform/energyServices
 
 - [OEPAirFlowTask](oepairflowtask.md)
+- [OEPElasticOperator](oepelasticoperator.md)
+- [OEPElasticsearch](oepelasticsearch.md)
 
 ## Microsoft.OpenLogisticsPlatform/Workspaces
 
