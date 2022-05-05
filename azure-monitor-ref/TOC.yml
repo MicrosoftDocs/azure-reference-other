@@ -74,3 +74,5 @@
     href: tables/addonazurebackupprotectedinstance.md
   - name: AddonAzureBackupStorage
     href: tables/addonazurebackupstorage.md
+  - name: ADFAirflowSchedulerLogs
+    href: tables/adfairflowschedulerlogs.md
