@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/29/2022
+ms.date: 5/5/2022
 ---
 
 # PurviewDataSensitivityLogs
@@ -32,18 +32,18 @@ ms.date: 4/29/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| ActivityType | string | The type of data sensitivity event: classification, labeling. |
-| AssetCreationTime | datetime | Time (UTC) at which the asset was created. |
-| AssetLastScanTime | datetime | Time (UTC) at which the asset was last scanned. |
-| AssetModifiedTime | datetime | Time (UTC) at which the asset was last modified. |
+| ActivityType | string | The type of data sensitivity event. |
+| AssetCreationTime | datetime | Time at which the asset was created. |
+| AssetLastScanTime | datetime | Time at which the asset was last scanned. |
+| AssetModifiedTime | datetime | Time at which the asset was last modified. |
 | AssetName | string | Name of the asset scanned. |
-| AssetPath | string | Path of the asset scanned in a source. |
-| AssetType | string | Type of asset that was scanned: file, column, table, generic. |
-| Classification | dynamic | Names of the classifications found. |
+| AssetPath | string | Path of the asset scanned. |
+| AssetType | string | Type of asset that was scanned. |
+| Classification | dynamic | List of classifications found. |
 | ClassificationDetails | dynamic | List of classification details: ID, name, count, uniquecount, confidence. |
 | ClassificationTrigger | string | The trigger for the classification event. |
-| FileExtension | string | File extension of the asset scanned. Only populated when asset type is a file. |
-| FileSize | long | File size of the asset scanned in bytes. Only populated when asset type is a file. |
+| FileExtension | string | File extension of the asset scanned. |
+| FileSize | long | File size of the asset scanned. |
 | PurviewAccountName | string | Name of the Purview account. |
 | PurviewRegion | string | Region of the Purview account. |
 | PurviewTenantId | string | Tenant ID associated with the Purview account. |
@@ -52,13 +52,13 @@ ms.date: 4/29/2022
 | SensitivityLabelDetails | dynamic | List of label details: ID, name, order. |
 | SensitivityLabelTrigger | string | The trigger for the sensitivity label event. |
 | SourceCollectionName | string | Name of the data source collection name in Purview. |
-| SourceName | string | Name of the data source scanned as registered in Purview. |
-| SourcePath | string | Resource Path of the data source. Ex: ARM path for Azure resources and ARN for AWS resources. |
-| SourceRegion | string | The location of the data source that was scanned. |
+| SourceName | string | Name of the data source scanned. |
+| SourcePath | string | Resource Path of the data source. Ex: ARM path for Azure resources and ARN for AWS resources |
+| SourceRegion | string | The location of the data source. |
 | SourceScanId | string | The associated Purview scan ID for the source. |
-| SourceSubscriptionId | string | Subscription ID associated with the data source. Account ID for AWS resources. |
+| SourceSubscriptionId | string | Subscription ID associated with the data source. |
 | SourceSystem | string |  |
-| SourceType | string | Type of data source scanned: azuredatalakegen1, azureblob, azuredataexplorer, amazons3 etc. |
+| SourceType | string | Type of data source scanned. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | Time (UTC) when the log was generated. |

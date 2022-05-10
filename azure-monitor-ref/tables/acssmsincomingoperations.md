@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 4/29/2022
+ms.date: 5/5/2022
 ---
 
 # ACSSMSIncomingOperations
@@ -31,26 +31,27 @@ ms.date: 4/29/2022
 | Column | Type | Description |
 | --- | --- | --- |
 | CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
-| Category | string | The log category of the event. Category is the granularity at which you can enable or disable logs on a particular resource. The properties that appear within the properties blob of an event are the same within a particular log category and resource type. |
+| Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DeliveryAttempts | int | The number of attempts made to deliver this message. |
 | DurationMs | int | The duration of the operation in milliseconds. |
 | IncomingMessageLength | int | The number of characters in the incoming message. |
 | Level | string | The severity level of the operation. |
 | Method | string | The method used in the request. |
+| NumberType | string | The type of number used for sending or receiving the SMS message (e.g. LongCodeNumber) |
 | OperationName | string | The operation associated with log record. |
-| OperationVersion | string | The API-version associated with the operation, if the operationName was performed using an API. If there is no API that corresponds to this operation, the version represents the version of that operation in case the properties associated with the operation change in the future. |
+| OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
 | OutgoingMessageLength | int | The number of characters in the outgoing message. |
-| PhoneNumber | string | The phone number the SMS message is being sent to. |
+| PhoneNumber | string | The number used for sending or receiving the SMS message (e.g. +18445791704) |
 | PlatformType | string | The platform type being used in the request. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | The status text response of the result of this operation. |
 | ResultSignature | string | The sub status of the operation. If this operation corresponds to a REST API call, this field is the HTTP status code of the corresponding REST call. |
 | ResultType | string | The status of the operation. |
-| SdkType | string | The Sdk type being used in the request. |
+| SdkType | string | The SDK type being used in the request. |
 | SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
-| URI | string | The URI of the request |
+| URI | string | The URI of the request. |

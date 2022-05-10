@@ -590,6 +590,8 @@
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
   - name: MicrosoftHealthcareApisAuditLogs
     href: tables/microsofthealthcareapisauditlogs.md
+  - name: NetworkAccessTraffic
+    href: tables/networkaccesstraffic.md
   - name: NetworkSessions
     href: tables/networksessions.md
   - name: NWConnectionMonitorDestinationListenerResult
@@ -602,6 +604,10 @@
     href: tables/nwconnectionmonitortestresult.md
   - name: OEPAirFlowTask
     href: tables/oepairflowtask.md
+  - name: OEPElasticOperator
+    href: tables/oepelasticoperator.md
+  - name: OEPElasticsearch
+    href: tables/oepelasticsearch.md
   - name: OfficeActivity
     href: tables/officeactivity.md
   - name: OLPSupplyChainEntityOperations
