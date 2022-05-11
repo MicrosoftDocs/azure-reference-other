@@ -355,6 +355,10 @@ ms.date: 5/5/2022
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Azure Video Indexer
+
+- [AzureMetrics](azuremetrics.md)
+
 ## Bastions
 
 - [AzureActivity](azureactivity.md)
