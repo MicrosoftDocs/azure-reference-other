@@ -32,7 +32,7 @@ ms.date: 5/5/2022
 | --- | --- | --- |
 | Category | string | The category of the log. |
 | ClientCorrelationId | string | The correlation set by client/user. |
-| Command | string | The SQL command of the execution requests. |
+| * Command | string | The SQL command of the execution requests. |
 | DatabaseId | string | The databaseId of the execution requests. |
 | EndCompileTime | datetime | The end compile time (UTC) of the execution requests. |
 | EndTime | datetime | The end time (UTC) for the execution requests. |
@@ -55,3 +55,5 @@ ms.date: 5/5/2022
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
+
+_* Command2, which is available in sys.dm_pdw_exec_requests and contains the full query text, is not supported on the SynapseSqlPoolExecRequests table._
