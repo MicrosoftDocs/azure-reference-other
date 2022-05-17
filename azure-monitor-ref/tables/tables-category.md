@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 5/5/2022
+ms.date: 5/12/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -111,6 +111,8 @@ ms.date: 5/5/2022
 - [AddonAzureBackupStorage](addonazurebackupstorage.md)
 - [ADFActivityRun](adfactivityrun.md)
 - [ADFPipelineRun](adfpipelinerun.md)
+- [ADFSandboxActivityRun](adfsandboxactivityrun.md)
+- [ADFSandboxPipelineRun](adfsandboxpipelinerun.md)
 - [ADFTriggerRun](adftriggerrun.md)
 - [ADPAudit](adpaudit.md)
 - [ADPDiagnostics](adpdiagnostics.md)
