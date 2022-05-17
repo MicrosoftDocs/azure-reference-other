@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 5/5/2022
+ms.date: 5/12/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -345,6 +345,9 @@ ms.date: 5/5/2022
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 
+## Azure Storage Antimalware
+
+
 ## Azure Subscription
 
 - [AzureActivity](azureactivity.md)
@@ -407,6 +410,8 @@ ms.date: 5/5/2022
 
 - [ADFActivityRun](adfactivityrun.md)
 - [ADFPipelineRun](adfpipelinerun.md)
+- [ADFSandboxActivityRun](adfsandboxactivityrun.md)
+- [ADFSandboxPipelineRun](adfsandboxpipelinerun.md)
 - [ADFSSISIntegrationRuntimeLogs](adfssisintegrationruntimelogs.md)
 - [ADFSSISPackageEventMessageContext](adfssispackageeventmessagecontext.md)
 - [ADFSSISPackageEventMessages](adfssispackageeventmessages.md)
