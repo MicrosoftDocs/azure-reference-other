@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 5/12/2022
+ms.date: 5/20/2022
 ---
 
 # AzureActivity
@@ -73,7 +73,6 @@ ms.date: 5/12/2022
 - Azure Blockchain Service
 - Azure AD Domain Services
 - Azure Data Explorer Clusters
-- Experiment Workspace
 - Dynamics 365 Customer Insights
 - Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
@@ -87,6 +86,7 @@ ms.date: 5/12/2022
 - Azure Managed Workspace for Grafana
 - Firewalls
 - Event Grid Topics
+- Azure Digital Twins
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
@@ -94,10 +94,10 @@ ms.date: 5/12/2022
 - Azure Attestation
 - Azure Autonomous Development Platform Account
 - App Services
-- HDInsight Clusters
+- Experiment Workspace
 - Azure API for FHIR
-- Machine Learning
-- Synapse Workspaces
+- HDInsight Clusters
+- Virtual machines
 - Container Registries
 - SignalR
 - Storage Accounts
@@ -113,13 +113,13 @@ ms.date: 5/12/2022
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Application Insights
-- Azure Digital Twins
 - SignalR Service WebPubSub
 - Azure Resource Group
 - Azure Subscription
 - Default schema for a resource
 - Desktop Virtualization Host Pools
-- Virtual machines
+- Synapse Workspaces
+- Machine Learning
 - Service Bus
 
 
