@@ -64,3 +64,5 @@
     href: tables/acsnetworktraversalincomingoperations.md
   - name: ACSSMSIncomingOperations
     href: tables/acssmsincomingoperations.md
+  - name: ADAssessmentRecommendation
+    href: tables/adassessmentrecommendation.md
