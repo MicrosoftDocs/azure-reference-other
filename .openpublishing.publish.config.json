@@ -16,7 +16,7 @@
     },
     {
       "docset_name": "entra",
-      "build_source_folder": "docs",
+      "build_source_folder": "entra",
       "build_output_subfolder": "entra",
       "locale": "en-us",
       "monikers": [],
