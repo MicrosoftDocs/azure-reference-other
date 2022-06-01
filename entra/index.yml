@@ -48,7 +48,7 @@ sections:
         componentType: image
         src: ./media/entra-verified-id.png
     - componentType: icon-card
-      title: Microsoft Entra admin portal
+      title: Microsoft Entra admin center
       summary: "Access and administer the Microsoft Entra family of products through the admin center"
       url: https://entra.microsoft.com
       icon:
