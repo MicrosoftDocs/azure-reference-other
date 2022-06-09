@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/2/2022
+ms.date: 6/9/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -775,11 +775,17 @@ ms.date: 6/2/2022
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
 
+## Network Watcher - Traffic Analytics
+
+
+## Power BI Datasets
+
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+
 ## Power BI Datasets
 
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
 
 ## Power BI Embedded
