@@ -777,15 +777,11 @@ ms.date: 6/9/2022
 
 ## Network Watcher - Traffic Analytics
 
-
-## Power BI Datasets
-
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-
 ## Power BI Datasets
 
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
 
 ## Power BI Embedded
