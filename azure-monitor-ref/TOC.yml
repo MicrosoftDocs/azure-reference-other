@@ -152,3 +152,5 @@
     href: tables/agrifoodproviderauthlogs.md
   - name: AgriFoodSatelliteLogs
     href: tables/agrifoodsatellitelogs.md
+  - name: AgriFoodSensorManagementLogs
+    href: tables/agrifoodsensormanagementlogs.md
