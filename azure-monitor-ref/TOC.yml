@@ -30,3 +30,5 @@
     href: tables/aadprovisioninglogs.md
   - name: AADRiskyServicePrincipals
     href: tables/aadriskyserviceprincipals.md
+  - name: AADRiskyUsers
+    href: tables/aadriskyusers.md
