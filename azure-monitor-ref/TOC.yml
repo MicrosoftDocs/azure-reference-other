@@ -100,3 +100,5 @@
     href: tables/adfssispackageexecutiondatastatistics.md
   - name: ADPAudit
     href: tables/adpaudit.md
+  - name: ADPDiagnostics
+    href: tables/adpdiagnostics.md
