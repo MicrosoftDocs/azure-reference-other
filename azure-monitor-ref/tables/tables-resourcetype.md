@@ -771,7 +771,6 @@ ms.date: 6/17/2022
 
 ## Network Security Perimeters
 
-
 ## Network Watcher - Connection Monitor
 
 - [AzureActivity](azureactivity.md)
@@ -781,16 +780,12 @@ ms.date: 6/17/2022
 
 ## Network Watcher - Traffic Analytics
 
-
 ## Power BI Datasets
 
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
-- [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-
-## Power BI Datasets
-
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageTenant](powerbireportusagetenant.md)
 
 ## Power BI Embedded
 
