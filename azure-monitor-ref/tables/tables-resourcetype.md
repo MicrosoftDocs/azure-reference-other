@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/9/2022
+ms.date: 6/17/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -657,6 +657,7 @@ ms.date: 6/9/2022
 
 ## Log Analytics workspaces
 
+- [LAQueryLogs](laquerylogs.md)
 
 ## Logic Apps
 
@@ -771,6 +772,8 @@ ms.date: 6/9/2022
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Network Security Perimeters
 
 ## Network Watcher - Connection Monitor
 

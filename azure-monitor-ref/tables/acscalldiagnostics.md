@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/9/2022
+ms.date: 6/17/2022
 ---
 
 # ACSCallDiagnostics
