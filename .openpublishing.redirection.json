@@ -8299,6 +8299,11 @@
 			"source_path": "quantum/user-guide/language/typesystem/typeparameterizations.md",
 			"redirect_url": "/azure/quantum/user-guide/language/typesystem/typeparameterizations.md",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "azure-monitor-ref/tables/dhcpactivity.md",
+			"redirect_url": "/azure/azure-monitor/reference",
+			"redirect_document_id": false
 		}
 	]
 }
