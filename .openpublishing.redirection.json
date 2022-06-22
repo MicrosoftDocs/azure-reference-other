@@ -8302,7 +8302,7 @@
 		},
 		{
 			"source_path": "azure-monitor-ref/tables/dhcpactivity.md",
-			"redirect_url": "/azure/azure-monitor/reference/tables/dhcpactivity",
+			"redirect_url": "/azure/azure-monitor/reference",
 			"redirect_document_id": false
 		}
 	]
