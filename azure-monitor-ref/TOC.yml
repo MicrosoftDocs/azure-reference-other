@@ -60,3 +60,5 @@
     href: tables/acschatincomingoperations.md
   - name: ACSNetworkTraversalDiagnostics
     href: tables/acsnetworktraversaldiagnostics.md
+  - name: ACSNetworkTraversalIncomingOperations
+    href: tables/acsnetworktraversalincomingoperations.md
