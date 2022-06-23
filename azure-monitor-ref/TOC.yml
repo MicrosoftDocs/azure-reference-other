@@ -12,3 +12,5 @@
       href: tables/tables-resourcetype.md
   - name: AACAudit
     href: tables/aacaudit.md
+  - name: AACHttpRequest
+    href: tables/aachttprequest.md
