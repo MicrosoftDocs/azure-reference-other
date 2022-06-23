@@ -268,3 +268,5 @@
     href: tables/azfwapplicationruleaggregation.md
   - name: AZFWDnsQuery
     href: tables/azfwdnsquery.md
+  - name: AZFWIdpsSignature
+    href: tables/azfwidpssignature.md
