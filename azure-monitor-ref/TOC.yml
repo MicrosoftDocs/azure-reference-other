@@ -60,3 +60,5 @@
     href: tables/acschatincomingoperations.md
   - name: ACSEmailSendMailOperational
     href: tables/acsemailsendmailoperational.md
+  - name: ACSEmailStatusUpdateOperational
+    href: tables/acsemailstatusupdateoperational.md
