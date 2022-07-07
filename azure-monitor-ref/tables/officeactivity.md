@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # OfficeActivity
@@ -134,6 +134,9 @@ ms.date: 6/23/2022
 | SourceRecordId | string | Unique identifier of an audit record |
 | SourceRelativeUrl | string | The URL of the folder that contains the file accessed by the user |
 | SourceSystem | string | The source system name |
+| SRPolicyId | string | Policy ID |
+| SRPolicyName | string | Policy name |
+| SRRuleMatchDetails | dynamic | Rule details |
 | Start_Time | datetime | The date and time at which the cmdlet was executed |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SupportTicketId | string | The customer support ticket ID for the action in 'act-on-behalf-of' situations |
