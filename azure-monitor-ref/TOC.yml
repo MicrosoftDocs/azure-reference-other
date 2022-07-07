@@ -194,3 +194,5 @@
     href: tables/amlmodelsevent.md
   - name: AmlOnlineEndpointConsoleLog
     href: tables/amlonlineendpointconsolelog.md
+  - name: AmlOnlineEndpointTrafficLog
+    href: tables/amlonlineendpointtrafficlog.md
