@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # ADPAudit
@@ -22,7 +22,7 @@ ms.date: 6/23/2022
 - LogManagement
 ## Resource types
 
-- Azure Autonomous Development Platform Account
+- Azure Autonomous Development Platform workspace
 
 
 
@@ -31,8 +31,7 @@ ms.date: 6/23/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| CallerIpAddress | string | IP address of the user who has performed the operation. |
-| CorrelationId | string | Internal ADP correlation ID needed for support scenarios. |
+| CorrelationId | string | Internal ADP correlation ID used in support scenarios. |
 | Identity | dynamic | Active Directory identity claims |
 | Location | string | The location (region) of the resource. |
 | OperationName | string | The operation associated with the log record. |
