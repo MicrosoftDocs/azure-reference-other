@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # AADNonInteractiveUserSignInLogs
@@ -40,7 +40,7 @@ ms.date: 6/23/2022
 | AutonomousSystemNumber | string | Autonomous System Number for the network |
 | Category | string | Category of the sign-in event |
 | ClientAppUsed | string | Details outlining app auth used (Legacy vs non Legacy) Eg: Modern Browser, Native App, Exchange Activty Sync and Older Clients |
-| ConditionalAccessPoliciesV2 | dynamic | Details of the conditional access policies being applied for the sign-in |
+| ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
 | ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
 | CorrelationId | string | ID to provide sign-in trail |
 | CreatedDateTime | datetime | Datetime of the sign-in activity |
