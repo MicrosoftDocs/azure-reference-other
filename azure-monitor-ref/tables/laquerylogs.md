@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # LAQueryLogs
@@ -42,6 +42,7 @@ ms.date: 6/23/2022
 | RequestContext | dynamic | ResourceId of all referenced workspaces, applications, and resources across which the query was requested by the caller to be executed. |
 | RequestContextFilters | dynamic | Filters applied to the request context. |
 | RequestTarget | string | ResourceId of the request URL. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResponseCode | int | The HTTP response code for the request. |
 | ResponseDurationMs | real | The duration (in ms) that the query took to execute. |
 | ResponseRowCount | int | The number of rows that were returned. |
@@ -52,6 +53,7 @@ ms.date: 6/23/2022
 | StatsDataProcessedStart | datetime | The starting time (UTC) of the time range across which the data processed. |
 | StatsRegionCount | int | The number of regions that the workspaces accessed are spread across. |
 | StatsWorkspaceCount | int | The number of workspaces that the query accessed, either explicitly or otherwise. |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) at which the query was submitted. |
 | Type | string | The name of the table |
