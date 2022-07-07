@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/8/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -50,6 +50,7 @@ ms.date: 6/23/2022
 - [AppBrowserTimings](appbrowsertimings.md)
 - [AppDependencies](appdependencies.md)
 - [AppEvents](appevents.md)
+- [AppExceptions](appexceptions.md)
 - [AppMetrics](appmetrics.md)
 - [AppPageViews](apppageviews.md)
 - [AppPerformanceCounters](appperformancecounters.md)
@@ -118,7 +119,7 @@ ms.date: 6/23/2022
 - [AzureActivity](azureactivity.md)
 - [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 
-## Azure Autonomous Development Platform Account
+## Azure Autonomous Development Platform workspace
 
 - [ADPAudit](adpaudit.md)
 - [ADPDiagnostics](adpdiagnostics.md)
@@ -221,6 +222,7 @@ ms.date: 6/23/2022
 
 ## Azure Digital Twins
 
+- [ADTDataHistoryOperation](adtdatahistoryoperation.md)
 - [ADTDigitalTwinsOperation](adtdigitaltwinsoperation.md)
 - [ADTEventRoutesOperation](adteventroutesoperation.md)
 - [ADTModelsOperation](adtmodelsoperation.md)
@@ -350,6 +352,7 @@ ms.date: 6/23/2022
 
 ## Azure Storage Antimalware
 
+- [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
 
 ## Azure Subscription
 
@@ -396,6 +399,9 @@ ms.date: 6/23/2022
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSEmailSendMailOperational](acsemailsendmailoperational.md)
+- [ACSEmailStatusUpdateOperational](acsemailstatusupdateoperational.md)
+- [ACSEmailUserEngagementOperational](acsemailuserengagementoperational.md)
 - [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
@@ -676,6 +682,7 @@ ms.date: 6/23/2022
 - [AmlInferencingEvent](amlinferencingevent.md)
 - [AmlModelsEvent](amlmodelsevent.md)
 - [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
+- [AmlOnlineEndpointTrafficLog](amlonlineendpointtrafficlog.md)
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
@@ -786,8 +793,12 @@ ms.date: 6/23/2022
 
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 
