@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # ADPRequests
@@ -21,7 +21,7 @@ ms.date: 6/23/2022
 - LogManagement
 ## Resource types
 
-- Azure Autonomous Development Platform Account
+- Azure Autonomous Development Platform workspace
 
 
 
