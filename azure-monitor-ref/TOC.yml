@@ -322,3 +322,5 @@
     href: tables/cdbdataplanerequests.md
   - name: CDBGremlinRequests
     href: tables/cdbgremlinrequests.md
+  - name: CDBMongoRequests
+    href: tables/cdbmongorequests.md
