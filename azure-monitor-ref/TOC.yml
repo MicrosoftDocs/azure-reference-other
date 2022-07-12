@@ -58,6 +58,12 @@
     href: tables/acscallsummary.md
   - name: ACSChatIncomingOperations
     href: tables/acschatincomingoperations.md
+  - name: ACSEmailSendMailOperational
+    href: tables/acsemailsendmailoperational.md
+  - name: ACSEmailStatusUpdateOperational
+    href: tables/acsemailstatusupdateoperational.md
+  - name: ACSEmailUserEngagementOperational
+    href: tables/acsemailuserengagementoperational.md
   - name: ACSNetworkTraversalDiagnostics
     href: tables/acsnetworktraversaldiagnostics.md
   - name: ACSNetworkTraversalIncomingOperations
@@ -106,6 +112,8 @@
     href: tables/adprequests.md
   - name: ADReplicationResult
     href: tables/adreplicationresult.md
+  - name: ADTDataHistoryOperation
+    href: tables/adtdatahistoryoperation.md
   - name: ADTDigitalTwinsOperation
     href: tables/adtdigitaltwinsoperation.md
   - name: ADTEventRoutesOperation
@@ -186,6 +194,8 @@
     href: tables/amlmodelsevent.md
   - name: AmlOnlineEndpointConsoleLog
     href: tables/amlonlineendpointconsolelog.md
+  - name: AmlOnlineEndpointTrafficLog
+    href: tables/amlonlineendpointtrafficlog.md
   - name: AmlPipelineEvent
     href: tables/amlpipelineevent.md
   - name: AmlRunEvent
@@ -330,6 +340,8 @@
     href: tables/commonsecuritylog.md
   - name: ComputerGroup
     href: tables/computergroup.md
+  - name: ConfidentialWatchlist
+    href: tables/confidentialwatchlist.md
   - name: ConfigurationChange
     href: tables/configurationchange.md
   - name: ConfigurationData
@@ -424,6 +436,12 @@
     href: tables/deviceskypeheartbeat.md
   - name: DeviceSkypeSignIn
     href: tables/deviceskypesignin.md
+  - name: DeviceTvmSecureConfigurationAssessment
+    href: tables/devicetvmsecureconfigurationassessment.md
+  - name: DeviceTvmSoftwareInventory
+    href: tables/devicetvmsoftwareinventory.md
+  - name: DeviceTvmSoftwareVulnerabilities
+    href: tables/devicetvmsoftwarevulnerabilities.md
   - name: DHOSCrashData
     href: tables/dhoscrashdata.md
   - name: DnsEvents
@@ -632,6 +650,8 @@
     href: tables/powerbidatasetsworkspacepreview.md
   - name: PowerBIReportUsageTenant
     href: tables/powerbireportusagetenant.md
+  - name: PowerBIReportUsageWorkspace
+    href: tables/powerbireportusageworkspace.md
   - name: ProjectActivity
     href: tables/projectactivity.md
   - name: PurviewDataSensitivityLogs
@@ -668,6 +688,8 @@
     href: tables/sqlsecurityauditevents.md
   - name: SqlVulnerabilityAssessmentScanStatus
     href: tables/sqlvulnerabilityassessmentscanstatus.md
+  - name: StorageAntimalwareScanResults
+    href: tables/storageantimalwarescanresults.md
   - name: StorageBlobLogs
     href: tables/storagebloblogs.md
   - name: StorageCacheOperationEvents

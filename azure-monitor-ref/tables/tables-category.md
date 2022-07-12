@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/8/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -18,6 +18,7 @@ ms.date: 6/23/2022
 - [AppBrowserTimings](appbrowsertimings.md)
 - [AppDependencies](appdependencies.md)
 - [AppEvents](appevents.md)
+- [AppExceptions](appexceptions.md)
 - [AppMetrics](appmetrics.md)
 - [AppPageViews](apppageviews.md)
 - [AppPerformanceCounters](appperformancecounters.md)
@@ -58,6 +59,7 @@ ms.date: 6/23/2022
 - [AmlInferencingEvent](amlinferencingevent.md)
 - [AmlModelsEvent](amlmodelsevent.md)
 - [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
+- [AmlOnlineEndpointTrafficLog](amlonlineendpointtrafficlog.md)
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
@@ -101,6 +103,9 @@ ms.date: 6/23/2022
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
+- [ACSEmailSendMailOperational](acsemailsendmailoperational.md)
+- [ACSEmailStatusUpdateOperational](acsemailstatusupdateoperational.md)
+- [ACSEmailUserEngagementOperational](acsemailuserengagementoperational.md)
 - [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
@@ -117,6 +122,7 @@ ms.date: 6/23/2022
 - [ADPAudit](adpaudit.md)
 - [ADPDiagnostics](adpdiagnostics.md)
 - [ADPRequests](adprequests.md)
+- [ADTDataHistoryOperation](adtdatahistoryoperation.md)
 - [ADXJournal](adxjournal.md)
 - [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
@@ -147,6 +153,7 @@ ms.date: 6/23/2022
 - [AmlInferencingEvent](amlinferencingevent.md)
 - [AmlModelsEvent](amlmodelsevent.md)
 - [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
+- [AmlOnlineEndpointTrafficLog](amlonlineendpointtrafficlog.md)
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
@@ -249,6 +256,7 @@ ms.date: 6/23/2022
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [PurviewScanStatusLogs](purviewscanstatuslogs.md)
 - [ResourceManagementPublicAccessLogs](resourcemanagementpublicaccesslogs.md)
@@ -258,6 +266,7 @@ ms.date: 6/23/2022
 - [SignalRServiceDiagnosticLogs](signalrservicediagnosticlogs.md)
 - [SigninLogs](signinlogs.md)
 - [SQLSecurityAuditEvents](sqlsecurityauditevents.md)
+- [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
 - [StorageBlobLogs](storagebloblogs.md)
 - [StorageCacheOperationEvents](storagecacheoperationevents.md)
 - [StorageCacheUpgradeEvents](storagecacheupgradeevents.md)
@@ -456,6 +465,7 @@ ms.date: 6/23/2022
 - [BehaviorAnalytics](behavioranalytics.md)
 - [CloudAppEvents](cloudappevents.md)
 - [CommonSecurityLog](commonsecuritylog.md)
+- [ConfidentialWatchlist](confidentialwatchlist.md)
 - [DeviceEvents](deviceevents.md)
 - [DeviceFileCertificateInfo](devicefilecertificateinfo.md)
 - [DeviceFileEvents](devicefileevents.md)
@@ -466,6 +476,9 @@ ms.date: 6/23/2022
 - [DeviceNetworkInfo](devicenetworkinfo.md)
 - [DeviceProcessEvents](deviceprocessevents.md)
 - [DeviceRegistryEvents](deviceregistryevents.md)
+- [DeviceTvmSecureConfigurationAssessment](devicetvmsecureconfigurationassessment.md)
+- [DeviceTvmSoftwareInventory](devicetvmsoftwareinventory.md)
+- [DeviceTvmSoftwareVulnerabilities](devicetvmsoftwarevulnerabilities.md)
 - [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
 - [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
 - [DSMDataLabelingLogs](dsmdatalabelinglogs.md)

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # AzureMetrics
@@ -22,7 +22,6 @@ ms.date: 6/23/2022
 ## Resource types
 
 - App Services
-- SQL Databases
 - SQL Servers
 - SQL Managed Instances
 - Data Share
@@ -37,10 +36,11 @@ ms.date: 6/23/2022
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
+- Azure Arc enabled Kubernetes
+- SQL Databases
 - Azure Database for MySQL Servers
 - Azure Database for PostgreSQL Servers
 - Azure Database for PostgreSQL Servers V2
-- Azure Database for PostgreSQL Flexible Servers
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -48,7 +48,7 @@ ms.date: 6/23/2022
 - Virtual Private Network Gateways
 - Virtual Network Gateways
 - Traffic Manager Profiles
-- Azure Arc enabled Kubernetes
+- Virtual Machine Scale Sets
 - Public IP Addresses
 - Network Interfaces
 - Front Doors
@@ -59,13 +59,13 @@ ms.date: 6/23/2022
 - Azure Database for MariaDB Servers
 - Network Security Groups
 - Azure API for FHIR
-- Virtual Machine Scale Sets
-- Azure Stack HCI
-- Desktop Virtualization Application Groups
+- System Center Virtual Machine Manager
+- VMware
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Virtual machines
 - Machine Learning
+- Azure Database for PostgreSQL Flexible Servers
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
 - Azure Traffic Collector
@@ -76,27 +76,27 @@ ms.date: 6/23/2022
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
+- Desktop Virtualization Application Groups
 - Desktop Virtualization workspaces
 - Time Series Insights Environments
 - Workload Monitor
-- Analysis Services
-- VMware
 - Event Grid System Topics
 - Event Grid Partner Topics
 - Event Grid Partner Namespaces
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
-- System Center Virtual Machine Manager
 - Azure Data Explorer Clusters
-- SignalR
+- Azure Stack HCI
+- Container Registries
 - Storage Accounts
 - Key Vaults
 - Cognitive Services
 - Media Services
 - Azure Spring Cloud
 - Batch Accounts
-- Container Registries
+- Analysis Services
+- SignalR
 - Service Bus
 
 

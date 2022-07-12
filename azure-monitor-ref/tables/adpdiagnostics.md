@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # ADPDiagnostics
@@ -21,7 +21,7 @@ ms.date: 6/23/2022
 - LogManagement
 ## Resource types
 
-- Azure Autonomous Development Platform Account
+- Azure Autonomous Development Platform workspace
 
 
 
@@ -30,7 +30,6 @@ ms.date: 6/23/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| CallerIpAddress | string | IP address of the user who has performed the operation. |
 | Category | string | The category of the diagnostic log record. |
 | CorrelationId | string | Internal ADP correlation ID used in support scenarios. |
 | Level | string | The verbosity level of the log record ('Informational', 'Warning', 'Error', or 'Critical'). |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # ADFSSignInLogs
@@ -36,7 +36,7 @@ ms.date: 6/23/2022
 | AuthenticationRequirement | string | Type of authentication required for the sign-in.  If set to multiFactorAuthentication, an MFA step was required.  If set to singleFactorAuthentication, no MFA was required |
 | AuthenticationRequirementPolicies | string | Set of CA policies that apply to this sign-in, each as CA: policy name, and/or MFA: Per-user |
 | Category | string | Category of the sign-in event |
-| ConditionalAccessPoliciesV2 | dynamic | Details of the conditional access policies being applied for the sign-in |
+| ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
 | ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
 | CorrelationId | string | ID to provide sign-in trail |
 | CreatedDateTime | datetime | Datetime of the sign-in activity |
