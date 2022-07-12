@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # AppExceptions
 
  Application Insights exceptions.
 
+## Categories
+
+- Applications
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Application Insights
 
 
 

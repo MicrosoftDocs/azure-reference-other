@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # ADTQueryOperation
@@ -37,6 +37,7 @@ ms.date: 6/23/2022
 | OperationName | string | The type of action being performed during the event |
 | OperationVersion | string | The API Version utilized during the event |
 | ParentId | string | ParentId as part of W3C's Trace Context. A request without a parent id is the root of the trace |
+| QueryCharge | real | The QueryCharge for this event in the trace. |
 | RequestUri | string | The endpoint utilized during the event |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | Additional details about the event |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # IdentityInfo
@@ -37,6 +37,7 @@ ms.date: 6/23/2022
 | Applications | string | All known applications this user account accessed |
 | AssignedRoles | dynamic | AAD roles the user account is assigned to |
 | BlastRadius | string | The potential impact of the user account in the org (low/medium/high) |
+| ChangeSource | string | The source of the latest change of the entity |
 | City | string | The city of the user account as defined in AAD |
 | Country | string | The country of the user account as defined in AAD |
 | DeletedDateTime | datetime | The date and time the user was deleted |
@@ -61,7 +62,7 @@ ms.date: 6/23/2022
 | RiskLevelDetails | string | Details regarding the AAD risk level |
 | RiskState | string | Indication if the account is at risk now or if the risk was remediated |
 | ServicePrincipals | dynamic | Azure AD service principals that are owned by the user |
-| SourceSystem | string | The entity provider source system |
+| SourceSystem | string | The system where the user is managed |
 | State | string | The geographical state of the user account as defined in AAD |
 | StreetAddress | string | The office street address of the user account as defined in AAD |
 | Surname | string | The user account surname |
@@ -70,6 +71,7 @@ ms.date: 6/23/2022
 | TimeGenerated | datetime | Time when the event was generated (UTC) |
 | Type | string | The name of the table |
 | UACFlags | string | User Access control flags from AD & AAD |
+| UserAccountControl | dynamic | Security attributes of the user account in the AD domain |
 | UserState | string | The current state in AAD of the account (Active/Disabled/Dormant/Lockout) |
 | UserStateChangedOn | datetime | Date of the last time the account state was changed (UTC) |
 | UserType | string | The user type as appears in Azure AD |

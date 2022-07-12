@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 6/23/2022
 ## Resource types
 
 - Microsoft App Configuration
-- Power BI Embedded
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Recovery Services Vaults
@@ -33,9 +32,9 @@ ms.date: 6/23/2022
 - API Management services
 - Logic Apps
 - Service Fabric Clusters
-- Data Share
 - IoT Hub
-- Azure Databricks Services
+- Power BI Embedded
+- Azure Monitor autoscale settings
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
@@ -44,10 +43,11 @@ ms.date: 6/23/2022
 - Event Grid System Topics
 - Event Grid Partner Topics
 - Event Grid Partner Namespaces
-- Azure Monitor autoscale settings
+- Event Grid Domains
+- Azure Databricks Services
+- Data Share
 - SQL Managed Instances
 - SQL Servers
-- SQL Databases
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -65,14 +65,14 @@ ms.date: 6/23/2022
 - Event Hubs
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
-- Azure Database for PostgreSQL Flexible Servers
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
-- Event Grid Domains
+- SQL Databases
 - Azure Blockchain Service
 - Azure AD Domain Services
 - Azure Data Explorer Clusters
+- Container Registries
 - Dynamics 365 Customer Insights
 - Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
@@ -92,13 +92,12 @@ ms.date: 6/23/2022
 - Communication Services
 - Azure Cache for Redis
 - Azure Attestation
-- Azure Autonomous Development Platform Account
+- Azure Autonomous Development Platform workspace
 - App Services
-- Experiment Workspace
+- Azure Database for PostgreSQL Flexible Servers
 - Azure API for FHIR
-- HDInsight Clusters
-- Virtual machines
-- Container Registries
+- Experiment Workspace
+- Machine Learning
 - SignalR
 - Storage Accounts
 - Key Vaults
@@ -119,7 +118,8 @@ ms.date: 6/23/2022
 - Default schema for a resource
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
-- Machine Learning
+- Virtual machines
+- HDInsight Clusters
 - Service Bus
 
 

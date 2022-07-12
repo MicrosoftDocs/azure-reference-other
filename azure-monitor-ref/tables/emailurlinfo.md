@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # EmailUrlInfo
@@ -35,3 +35,4 @@ ms.date: 6/23/2022
 | Type | string | The name of the table |
 | Url | string | Information about URLs on Office 365 emails |
 | UrlDomain | string | Domain part of the Url |
+| UrlLocation | string | Indicates which part of the email the URL is located |

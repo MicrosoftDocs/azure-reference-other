@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 6/23/2022
+ms.date: 7/7/2022
 ---
 
 # PowerBIDatasetsWorkspace
@@ -47,6 +47,8 @@ ms.date: 6/23/2022
 | LogAnalyticsCategory | string | Unique category of the events like Audit/Security/Request. |
 | OperationDetailName | string | Provides subcategories of OperationName. |
 | OperationName | string | The operation associated with the log record. |
+| PowerBIWorkspaceId | string | Unique identifier of the Power BI workspace that contains the artifact being operated on. |
+| PowerBIWorkspaceName | string | Name of the Power BI workspace containing the artifact. |
 | PremiumCapacityId | string | Unique identifier of the Premium capacity hosting the artifact being operated on. |
 | ProgressCounter | long | Progress Counter. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
@@ -58,8 +60,6 @@ ms.date: 6/23/2022
 | TimeGenerated | datetime | The timestamp(UTC) of when the log entry was generated. |
 | Type | string | The name of the table |
 | User | string | The user on whose behalf the operation is running. Used when an end user identity must be impersonated on the server. |
-| WorkspaceId | string | Unique identifier of the Power BI workspace that contains the artifact being operated on. |
-| WorkspaceName | string | Name of the workspace containing the artifact. |
 | XmlaObjectPath | string | A comma-separated list of parents, starting with the object's parent. |
 | XmlaProperties | string | Properties of the XMLA request. |
 | XmlaRequestId | string | Unique Identifier of request. |
