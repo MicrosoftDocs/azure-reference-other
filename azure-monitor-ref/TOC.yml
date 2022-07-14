@@ -152,3 +152,5 @@
     href: tables/agrifoodfarmoperationlogs.md
   - name: AgriFoodInsightLogs
     href: tables/agrifoodinsightlogs.md
+  - name: AgriFoodJobProcessedLogs
+    href: tables/agrifoodjobprocessedlogs.md
