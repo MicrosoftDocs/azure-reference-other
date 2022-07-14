@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/8/2022
+ms.date: 7/14/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -728,6 +728,9 @@ ms.date: 7/8/2022
 
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 
+## Microsoft Sentinel Dynamic Summary
+
+
 ## Microsoft Sentinel Network Session ASim schema
 
 
@@ -794,6 +797,9 @@ ms.date: 7/8/2022
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
