@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/8/2022
+ms.date: 7/14/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
