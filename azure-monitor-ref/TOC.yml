@@ -728,3 +728,5 @@
     href: tables/synapsedxsucceededingestion.md
   - name: SynapseDXTableDetails
     href: tables/synapsedxtabledetails.md
+  - name: SynapseDXTableUsageStatistics
+    href: tables/synapsedxtableusagestatistics.md
