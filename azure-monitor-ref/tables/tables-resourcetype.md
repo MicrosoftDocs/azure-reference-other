@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/14/2022
+ms.date: 7/22/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -682,6 +682,7 @@ ms.date: 7/14/2022
 - [AmlInferencingEvent](amlinferencingevent.md)
 - [AmlModelsEvent](amlmodelsevent.md)
 - [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
+- [AmlOnlineEndpointEventLog](amlonlineendpointeventlog.md)
 - [AmlOnlineEndpointTrafficLog](amlonlineendpointtrafficlog.md)
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)

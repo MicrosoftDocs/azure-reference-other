@@ -88,6 +88,8 @@
     href: tables/adfairflowweblogs.md
   - name: ADFAirflowWorkerLogs
     href: tables/adfairflowworkerlogs.md
+  - name: ADFPipelineRun
+    href: tables/adfpipelinerun.md
   - name: ADFSandboxPipelineRun
     href: tables/adfsandboxpipelinerun.md
   - name: ADFSSignInLogs
@@ -104,6 +106,8 @@
     href: tables/adfssispackageexecutioncomponentphases.md
   - name: ADFSSISPackageExecutionDataStatistics
     href: tables/adfssispackageexecutiondatastatistics.md
+  - name: ADFTriggerRun
+    href: tables/adftriggerrun.md
   - name: ADPAudit
     href: tables/adpaudit.md
   - name: ADPDiagnostics
@@ -194,6 +198,8 @@
     href: tables/amlmodelsevent.md
   - name: AmlOnlineEndpointConsoleLog
     href: tables/amlonlineendpointconsolelog.md
+  - name: AmlOnlineEndpointEventLog
+    href: tables/amlonlineendpointeventlog.md
   - name: AmlOnlineEndpointTrafficLog
     href: tables/amlonlineendpointtrafficlog.md
   - name: AmlPipelineEvent
