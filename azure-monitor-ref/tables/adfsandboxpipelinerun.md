@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/14/2022
+ms.date: 7/22/2022
 ---
 
 # ADFSandboxPipelineRun
@@ -34,11 +34,15 @@ ms.date: 7/14/2022
 | Category | string |  |
 | CorrelationId | string |  |
 | End | datetime |  |
+| ErrorCode | string |  |
+| ErrorMessage | string |  |
 | EventMessage | string |  |
 | FailureType | string |  |
+| Input | string |  |
 | Level | string |  |
 | Location | string |  |
 | OperationName | string |  |
+| Output | string |  |
 | Parameters | string |  |
 | PipelineName | string |  |
 | Predecessors | string |  |
