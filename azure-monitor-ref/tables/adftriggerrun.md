@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/14/2022
+ms.date: 7/22/2022
 ---
 
 # ADFTriggerRun
@@ -33,15 +33,21 @@ ms.date: 7/14/2022
 | Annotations | string |  |
 | Category | string |  |
 | CorrelationId | string |  |
+| ErrorCode | string |  |
+| ErrorMessage | string |  |
 | EventMessage | string |  |
+| Input | string |  |
 | Level | string |  |
 | Location | string |  |
 | OperationName | string |  |
+| Output | string |  |
 | Parameters | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
 | SourceSystem | string |  |
 | Start | datetime |  |
 | Status | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SystemParameters | string |  |
 | Tags | string |  |
 | TenantId | string |  |
