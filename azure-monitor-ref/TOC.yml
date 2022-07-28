@@ -496,3 +496,5 @@
     href: tables/hdinsighthbaselogs.md
   - name: HDInsightHBaseMetrics
     href: tables/hdinsighthbasemetrics.md
+  - name: HDInsightHiveAndLLAPLogs
+    href: tables/hdinsighthiveandllaplogs.md
