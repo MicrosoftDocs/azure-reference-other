@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/22/2022
+ms.date: 7/29/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -71,6 +71,7 @@ ms.date: 7/22/2022
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [NSPAccessLogs](nspaccesslogs.md)
 - [PowerBIActivity](powerbiactivity.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [SentinelAudit](sentinelaudit.md)
@@ -249,6 +250,7 @@ ms.date: 7/22/2022
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [NSPAccessLogs](nspaccesslogs.md)
 - [OEPAirFlowTask](oepairflowtask.md)
 - [OEPElasticOperator](oepelasticoperator.md)
 - [OEPElasticsearch](oepelasticsearch.md)
@@ -261,6 +263,7 @@ ms.date: 7/22/2022
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [PurviewScanStatusLogs](purviewscanstatuslogs.md)
+- [PurviewSecurityLogs](purviewsecuritylogs.md)
 - [ResourceManagementPublicAccessLogs](resourcemanagementpublicaccesslogs.md)
 - [ServiceFabricOperationalEvent](servicefabricoperationalevent.md)
 - [ServiceFabricReliableActorEvent](servicefabricreliableactorevent.md)
@@ -422,6 +425,7 @@ ms.date: 7/22/2022
 - [DnsInventory](dnsinventory.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkMonitoring](networkmonitoring.md)
+- [NSPAccessLogs](nspaccesslogs.md)
 - [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
@@ -498,6 +502,7 @@ ms.date: 7/22/2022
 - [McasShadowItReporting](mcasshadowitreporting.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkSessions](networksessions.md)
+- [NSPAccessLogs](nspaccesslogs.md)
 - [OfficeActivity](officeactivity.md)
 - [PowerBIActivity](powerbiactivity.md)
 - [ProjectActivity](projectactivity.md)
