@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/22/2022
+ms.date: 7/29/2022
 ---
 
 # VMComputer
@@ -18,6 +18,7 @@ ms.date: 7/22/2022
 - Virtual Machines
 ## Solutions
 
+- AzureResources
 - Service Map
 - Azure Monitor for VMs
 ## Resource types
@@ -51,7 +52,7 @@ ms.date: 7/22/2022
 | AzureResourceName | string | The Azure name for the resource. |
 | AzureServiceFabricClusterId | string | For service fabric clusters the cluster id of the server. |
 | AzureServiceFabricClusterName | string | For service fabric clusters the cluster name. |
-| AzureSize | string | The size of the Azure VM. Only available for Azure VMs and VMSS instances. |
+| AzureSize | string | The size of the Azure VM.�Only available for Azure VMs and VMSS instances. |
 | AzureSubscriptionId | string | The subscription ID of the server. Only available for Azure VMs and VMSS instances. |
 | AzureUpdateDomain | string | The update domain of the server. Only available for Azure VMs and VMSS instances. |
 | AzureVmId | string | The Azure ID of the server. Only available for Azure VMs and VMSS instances. |
