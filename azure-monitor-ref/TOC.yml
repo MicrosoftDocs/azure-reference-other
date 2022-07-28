@@ -824,3 +824,5 @@
     href: tables/wvdagenthealthstatus.md
   - name: WVDCheckpoints
     href: tables/wvdcheckpoints.md
+  - name: WVDConnectionNetworkData
+    href: tables/wvdconnectionnetworkdata.md
