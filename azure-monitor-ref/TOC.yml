@@ -616,3 +616,5 @@
     href: tables/microsofthealthcareapisauditlogs.md
   - name: NetworkAccessTraffic
     href: tables/networkaccesstraffic.md
+  - name: NetworkSessions
+    href: tables/networksessions.md
