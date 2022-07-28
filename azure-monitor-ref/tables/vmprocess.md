@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/22/2022
+ms.date: 7/29/2022
 ---
 
 # VMProcess
@@ -18,6 +18,7 @@ ms.date: 7/22/2022
 - Virtual Machines
 ## Solutions
 
+- AzureResources
 - Service Map
 - Azure Monitor for VMs
 ## Resource types

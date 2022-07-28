@@ -6,18 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/22/2022
+ms.date: 7/29/2022
 ---
 
 # KubeServices
 
- Table that stores Kubernetes services information 
+ Kubernetes services and their properties
 
 ## Categories
 
 - Containers
 ## Solutions
 
+- AzureResources
 - ContainerInsights
 ## Resource types
 
@@ -31,15 +32,15 @@ ms.date: 7/22/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| ClusterId | string | ID of the kubernetes cluster from which the event was sourced |
-| ClusterIp | string | Cluster IP address of the service |
-| ClusterName | string | ID of the kubernetes cluster from which the event was sourced |
-| Namespace | string | Kuberneets namespace for the service |
+| ClusterId | string |  |
+| ClusterIp | string |  |
+| ClusterName | string |  |
+| Namespace | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SelectorLabels | string | Selector labels for label based services |
-| ServiceName | string | Kubernetes Service name |
-| ServiceType | string | Kubernetes Service type [ClusterIP/NodePort/LoadBalancer/ExternalName] |
-| SourceSystem | string | Type of agent the data was collected from.  |
+| SelectorLabels | string |  |
+| ServiceName | string |  |
+| ServiceType | string |  |
+| SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TimeGenerated | datetime | Date and time the record was created. |
+| TimeGenerated | datetime |  |
 | Type | string | The name of the table |

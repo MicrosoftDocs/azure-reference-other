@@ -618,6 +618,8 @@
     href: tables/networkaccesstraffic.md
   - name: NetworkSessions
     href: tables/networksessions.md
+  - name: NSPAccessLogs
+    href: tables/nspaccesslogs.md
   - name: NWConnectionMonitorDestinationListenerResult
     href: tables/nwconnectionmonitordestinationlistenerresult.md
   - name: NWConnectionMonitorDNSResult
@@ -664,6 +666,8 @@
     href: tables/purviewdatasensitivitylogs.md
   - name: PurviewScanStatusLogs
     href: tables/purviewscanstatuslogs.md
+  - name: PurviewSecurityLogs
+    href: tables/purviewsecuritylogs.md
   - name: ResourceManagementPublicAccessLogs
     href: tables/resourcemanagementpublicaccesslogs.md
   - name: SecureScoreControls
