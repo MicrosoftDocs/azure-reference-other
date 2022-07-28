@@ -6,18 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/22/2022
+ms.date: 7/29/2022
 ---
 
 # KubeNodeInventory
 
- Table that stores kubernetes cluster's node information
+ Details for nodes that are part of kubernetes cluster.
 
 ## Categories
 
 - Containers
 ## Solutions
 
+- AzureResources
 - ContainerInsights
 ## Resource types
 
@@ -31,20 +32,20 @@ ms.date: 7/22/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| ClusterId | string | ID of the kubernetes cluster from which the event was sourced |
-| ClusterName | string | ID of the kubernetes cluster from which the event was sourced |
-| Computer | string | Computer/node name in the cluster for which the event applies. If not, computer/node name of sourcing computer |
-| CreationTimeStamp | datetime | Node created time |
-| DockerVersion | string | Container runtime version |
-| KubeletVersion | string | Version of Kubelet in the node |
-| KubeProxyVersion | string | Version of KubePxoxy in the node |
-| KubernetesProviderID | string | Provider ID for Kubernetes |
-| Labels | string | Kubernetes Node Labels |
-| LastTransitionTimeReady | datetime | Last transition to/from ready condition for the node (no matter ready is true/false) |
-| OperatingSystem | string | Nodes host OS Image |
+| ClusterId | string |  |
+| ClusterName | string |  |
+| Computer | string |  |
+| CreationTimeStamp | datetime |  |
+| DockerVersion | string |  |
+| KubeletVersion | string |  |
+| KubeProxyVersion | string |  |
+| KubernetesProviderID | string |  |
+| Labels | string |  |
+| LastTransitionTimeReady | datetime |  |
+| OperatingSystem | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | Type of agent the data was collected from.  |
-| Status | string | Comma seperated list of node's status.conditions.type for conditions.status that are true |
+| SourceSystem | string |  |
+| Status | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TimeGenerated | datetime | Date and time the record was created. |
+| TimeGenerated | datetime |  |
 | Type | string | The name of the table |
