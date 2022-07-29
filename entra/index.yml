@@ -1,77 +1,55 @@
-### YamlMime:Marketing
-title: Microsoft Entra
+### YamlMime:Hub
+title: Microsoft Entra documentation
+summary: Learn more about the Microsoft Entra family of multicloud identity and access solutions. Find content to help solve secure access needs across your multifaceted digital landscape, protect access to any app or resource for any user, verify and secure every identity and every access request, discover permissions and govern access, and simplify user experience with intelligent real-time access controls.
+brand: azure
 
 metadata:
-  title: Microsoft Entra
-  description: Microsoft Entra is an integrated family of multicloud identity and access solutions to secure access for the connected world. It unifies multicloud identity and access solutions into a comprehensive product family, so you can holistically solve secure access needs across your multifaceted digital landscape and the connected world.
+  title: Microsoft Entra documentation
+  description: Learn more about the Microsoft Entra family of multicloud identity and access solutions. Find content to help solve secure access needs across your multifaceted digital landscape, protect access to any app or resource for any user, verify and secure every identity and every access request, discover permissions and govern access, and simplify user experience with intelligent real-time access controls.
   services: azure
   ms.service: active-directory
   ms.topic: hub-page
   author: CelesteDG
   ms.author: celested
-  ms.date: 05/31/2022
+  ms.date: 07/29/2022
 
-sections:
-# Hero
-- componentType: hero
-  title: Microsoft Entra
-  supertitle: Documentation hub
-  subtitle: Learn more about the Microsoft Entra family of multicloud identity and access solutions. Find content to help solve secure access needs across your multifaceted digital landscape, protect access to any app or resource for any user, verify and secure every identity and every access request, discover permissions and govern access, and simplify user experience with intelligent real-time access controls.
-  background:
-    componentType: image
-    src: ./media/microsoft-entra-bg.svg
-
-# Getting started
-- componentType: grid
+productDirectory:
   title: Getting started
-  backgroundColor: medium
-  blocks:
-    - componentType: icon-card
-      title: Azure Active Directory
-      summary: "Protect your users, apps, workloads, and devices"
-      url: https://docs.microsoft.com/azure/active-directory
-      icon:
-        componentType: image
-        src: ./media/entra-azure-ad.png
-    - componentType: icon-card
-      title: Microsoft Entra Permissions Management
-      summary: "One unified model to manage permissions of any identity across any cloud"
-      url: https://docs.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/
-      icon:
-        componentType: image
-        src: ./media/entra-permissions-management.png
-    - componentType: icon-card
-      title: Microsoft Entra Verified ID
-      summary: "Enable more secure interactions while respecting privacy with an industry-leading global platform"
-      url: https://docs.microsoft.com/azure/active-directory/verifiable-credentials/
-      icon:
-        componentType: image
-        src: ./media/entra-verified-id.png
-    - componentType: icon-card
-      title: Microsoft Entra admin center
-      summary: "Access and administer the Microsoft Entra family of products through the admin center"
-      url: https://entra.microsoft.com
-      icon:
-        componentType: image
-        src: ./media/entra-portal-stub.png
-
-# Announcements and resources
-- componentType: grid
-  title: Announcements and resources
-  blocks:
-    - componentType: summary-card
-      title: "Microsoft Entra"
-      summary: "Learn more about Microsoft Entra and how the Entra family of products can help your business."
-      url: https://aka.ms/MicrosoftEntra
-    - componentType: summary-card
-      title: "Announcement"
-      summary: "Read our announcement about the Microsoft Entra family of multicloud identity and access solutions."
-      url: https://aka.ms/EntraAnnouncement
-    - componentType: summary-card
-      title: "Azure AD datasheet"
-      summary: "Learn how you can get secure single sign-on for any app and from any device with Microsoft's identity and access management cloud solution."
-      url: https://aka.ms/AADDatasheet
-    - componentType: summary-card
-      title: "Microsoft security documentation"
-      summary: "Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps."
-      url: https://docs.microsoft.com/security/
+  items:
+    - title: Azure Active Directory
+      imageSrc: ./media/entra-azure-ad.png
+      links:
+        - url: https://docs.microsoft.com/azure/active-directory
+          text: "Protect your users, apps, workloads, and devices"
+    - title: Microsoft Entra Permissions Management
+      imageSrc: ./media/entra-permissions-management.png
+      links:
+        - url: https://docs.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/
+          text: "One unified model to manage permissions of any identity across any cloud"
+    - title: Microsoft Entra Verified ID
+      imageSrc: ./media/entra-verified-id.png
+      links:
+        - url: https://docs.microsoft.com/azure/active-directory/verifiable-credentials/
+          text: "Enable more secure interactions while respecting privacy with an industry-leading global platform"
+    - title: Microsoft Entra admin center
+      imageSrc: ./media/entra-portal-stub.png
+      links:
+        - url: https://entra.microsoft.com
+          text: "Access and administer the Microsoft Entra family of products through the admin center"
+          
+additionalContent:
+  sections:
+    - title: Announcements and resources
+      items:
+        - title: "Microsoft Entra"
+          summary: "Learn more about Microsoft Entra and how the Entra family of products can help your business."
+          url: https://aka.ms/MicrosoftEntra
+        - title: "Announcement"
+          summary: "Read our announcement about the Microsoft Entra family of multicloud identity and access solutions."
+          url: https://aka.ms/EntraAnnouncement
+        - title: "Azure AD datasheet"
+          summary: "Learn how you can get secure single sign-on for any app and from any device with Microsoft's identity and access management cloud solution."
+          url: https://aka.ms/AADDatasheet
+        - title: "Microsoft security documentation"
+          summary: "Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps."
+          url: https://docs.microsoft.com/security/
