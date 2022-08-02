@@ -6,18 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/22/2022
+ms.date: 7/29/2022
 ---
 
 # ContainerNodeInventory
 
- Table that stores Container host/node information
+ Details of nodes that serve as container hosts.
 
 ## Categories
 
 - Containers
 ## Solutions
 
+- AzureResources
 - ContainerInsights
 ## Resource types
 
@@ -31,11 +32,11 @@ ms.date: 7/22/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| Computer | string | Computer/node name in the cluster for which the event applies. If not, computer/node name of sourcing computer |
-| DockerVersion | string | Container runtime version |
-| OperatingSystem | string | Nodes host OS Image |
+| Computer | string |  |
+| DockerVersion | string |  |
+| OperatingSystem | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | Type of agent the data was collected from.  |
+| SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TimeGenerated | datetime | Date and time the record was created. |
+| TimeGenerated | datetime |  |
 | Type | string | The name of the table |

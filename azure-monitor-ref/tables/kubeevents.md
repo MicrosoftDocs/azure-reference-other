@@ -6,18 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/22/2022
+ms.date: 7/29/2022
 ---
 
 # KubeEvents
 
- Table that stores Kubernetes events 
+ Kubernetes events and their properties.
 
 ## Categories
 
 - Containers
 ## Solutions
 
+- AzureResources
 - ContainerInsights
 ## Resource types
 
@@ -31,21 +32,21 @@ ms.date: 7/22/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
-| ClusterId | string | ID of the kubernetes cluster from which the event was sourced |
-| ClusterName | string | ID of the kubernetes cluster from which the event was sourced |
-| Computer | string | Computer/node name in the cluster for which the event applies. If not, computer/node name of sourcing computer |
-| Count | real | Cumulative count of the number of occurences of a specific event [event.count] . |
+| ClusterId | string |  |
+| ClusterName | string |  |
+| Computer | string |  |
+| Count | real |  |
 | FirstSeen | datetime |  |
-| KubeEventType | string | Type of kubernetes event [event.type]. Ex;- 'Normal'  |
-| LastSeen | datetime | Time event was last observed [event.lastTimestamp] |
-| Message | string | Event message [event.message] |
-| Name | string | Involved kubernetes object's name [event.InvolvedObject.name]. Ex;- 'autoschedulejob-158393400-gkv4g' |
-| Namespace | string | Involved kubernetes object's namespace [event.InvolvedObject.namespace]. Ex;- 'kube-system' |
-| ObjectKind | string | Kind of kubernetes object applicable for the event [event.InvolvedObject.kind] . Ex;- pod |
-| Reason | string | Reason as seen in kubernetes event [event.reason] |
+| KubeEventType | string |  |
+| LastSeen | datetime |  |
+| Message | string |  |
+| Name | string |  |
+| Namespace | string |  |
+| ObjectKind | string |  |
+| Reason | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceComponent | string | Source component that generated the event [event.source.component] . Ex;- default-scheduler |
-| SourceSystem | string | Type of agent the data was collected from.  |
+| SourceComponent | string |  |
+| SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TimeGenerated | datetime | Date and time the record was created. |
+| TimeGenerated | datetime |  |
 | Type | string | The name of the table |
