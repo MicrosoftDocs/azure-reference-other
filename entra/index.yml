@@ -18,24 +18,20 @@ productDirectory:
   items:
     - title: Azure Active Directory
       imageSrc: ./media/entra-azure-ad.png
-      links:
-        - url: https://docs.microsoft.com/azure/active-directory
-          text: "Protect your users, apps, workloads, and devices"
+      summary: "Protect your users, apps, workloads, and devices"
+      url: https://docs.microsoft.com/azure/active-directory
     - title: Microsoft Entra Permissions Management
       imageSrc: ./media/entra-permissions-management.png
-      links:
-        - url: https://docs.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/
-          text: "One unified model to manage permissions of any identity across any cloud"
+      summary: "One unified model to manage permissions of any identity across any cloud"
+      url: https://docs.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/
     - title: Microsoft Entra Verified ID
       imageSrc: ./media/entra-verified-id.png
-      links:
-        - url: https://docs.microsoft.com/azure/active-directory/verifiable-credentials/
-          text: "Enable more secure interactions while respecting privacy with an industry-leading global platform"
+      summary: "Enable more secure interactions while respecting privacy with an industry-leading global platform"
+      url: https://docs.microsoft.com/azure/active-directory/verifiable-credentials/
     - title: Microsoft Entra admin center
       imageSrc: ./media/entra-portal-stub.png
-      links:
-        - url: https://entra.microsoft.com
-          text: "Access and administer the Microsoft Entra family of products through the admin center"
+      summary: "Access and administer the Microsoft Entra family of products through the admin center"
+      url: https://entra.microsoft.com
           
 additionalContent:
   sections:
