@@ -728,3 +728,5 @@
     href: tables/synapsedxcommand.md
   - name: SynapseDXFailedIngestion
     href: tables/synapsedxfailedingestion.md
+  - name: SynapseDXIngestionBatching
+    href: tables/synapsedxingestionbatching.md
