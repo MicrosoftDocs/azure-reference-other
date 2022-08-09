@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 8/4/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -206,6 +206,7 @@ ms.date: 7/29/2022
 - [DatabricksDBFS](databricksdbfs.md)
 - [DatabricksFeatureStore](databricksfeaturestore.md)
 - [DatabricksGenie](databricksgenie.md)
+- [DatabricksGitCredentials](databricksgitcredentials.md)
 - [DatabricksGlobalInitScripts](databricksglobalinitscripts.md)
 - [DatabricksIAMRole](databricksiamrole.md)
 - [DatabricksInstancePools](databricksinstancepools.md)
@@ -218,6 +219,7 @@ ms.date: 7/29/2022
 - [DatabricksSecrets](databrickssecrets.md)
 - [DatabricksSQLPermissions](databrickssqlpermissions.md)
 - [DatabricksSSH](databricksssh.md)
+- [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
 
 ## Azure Digital Twins

@@ -1,14 +1,14 @@
 ---
 title: "Data Types (Azure Stream Analytics)"
 description: "Lists the data types supported by Azure Stream Analytics."
-author: fleid
+author: enkrumah
 applies_to:
   - "Azure"
 
-ms.author: fleide
+ms.author: ebnkruma
 ms.service: stream-analytics
 ms.topic: reference
-ms.date: 03/07/2022
+ms.date: 08/08/2022
 ---
 
 # Data Types (Azure Stream Analytics)
@@ -88,12 +88,12 @@ Values will be converted between float and bit with the following rules:
 
 ## Type mapping when writing to structured data stores:
 
-| Data type | SQL | Power BI | Document DB | PostgreSQL |
-|-|-|-|-|-|
-| **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer | bigint |
-| **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction | double precision, numeric. Limited to 1.78E+308 |
-| **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string | character varying, text |
-| **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard | timestamp, time. Timezone option supported but no time zone will be provided |
-| **bit** ([compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false | bit |
-| **record** | Not supported,  "Record" string is outputted | Not supported,  "Record" string is outputted | JSON object | Not supported |
-| **array** | Not supported,  "Array" string is outputted | Not supported,  "Array" string is outputted | JSON object | Not supported |
+| Data type | SQL | Power BI | Cosmos DB | PostgreSQL | Azure Data Explorer |
+|-|-|-|-|-|-|
+| **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer | bigint | dynamic, int, long |
+| **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction | double precision, numeric. Limited to 1.78E+308 | dynamic, real, double |
+| **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string | character varying, text | dynamic, string |
+| **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard | timestamp, time. Timezone option supported but no time zone will be provided | dynamic, string, datetime |
+| **bit** ([compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false | bit | dynamic, bool |
+| **record** | Not supported,  "Record" string is outputted | Not supported,  "Record" string is outputted | JSON object | Not supported | dynamic, bool, long, datetime, byte array, real, double, string |
+| **array** | Not supported,  "Array" string is outputted | Not supported,  "Array" string is outputted | JSON object | Not supported | dynamic, string |

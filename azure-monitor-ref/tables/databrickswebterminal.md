@@ -1,6 +1,6 @@
 ---
-title: Azure Monitor Logs reference - DatabricksGenie
-description: Reference for DatabricksGenie table in Azure Monitor Logs.
+title: Azure Monitor Logs reference - DatabricksWebTerminal
+description: Reference for DatabricksWebTerminal table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
@@ -9,9 +9,9 @@ author: bwren
 ms.date: 8/4/2022
 ---
 
-# DatabricksGenie
+# DatabricksWebTerminal
 
- Audit logs for Databricks workspaces customer support access events.
+ Databricks web terminal audit logs.
 
 ## Categories
 
@@ -32,14 +32,14 @@ ms.date: 8/4/2022
 | --- | --- | --- |
 | ActionName | string | The action of the request. |
 | Category | string | The service that logged the request. |
-| Identity | string | Information about the user that makes the requests. |
-| LogId | string | The unique identifier for the log message that can be used to deduplicate them. |
+| Identity | dynamic | Information about the user that makes the requests. |
+| LogId | string | The unique identifier for the log messages. |
 | OperationName | string | The action, such as login, logout, read, write, etc. |
-| OperationVersion | string | The schema version of the Databricks operation-based diagnostic log format. |
-| RequestId | string | The unique request ID. |
-| RequestParams | string | Parameter key-value pairs used in the event. |
+| OperationVersion | string | The Databricks schema version of the diagnostic log format. |
+| RequestId | string | Unique request ID. |
+| RequestParams | dynamic | Parameter key-value pairs used in the event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| Response | string | The HTTP response to the request, including error message (if applicable), result, and statusCode. |
+| Response | dynamic | The HTTP response to the request, including error message (if applicable), result, and statusCode. |
 | ServiceName | string | The service of the source request. |
 | SessionId | string | Session ID of the action. |
 | SourceIPAddress | string | The IP address of the source request. |

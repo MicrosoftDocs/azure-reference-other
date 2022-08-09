@@ -382,6 +382,8 @@
     href: tables/databricksfeaturestore.md
   - name: DatabricksGenie
     href: tables/databricksgenie.md
+  - name: DatabricksGitCredentials
+    href: tables/databricksgitcredentials.md
   - name: DatabricksGlobalInitScripts
     href: tables/databricksglobalinitscripts.md
   - name: DatabricksIAMRole
@@ -412,6 +414,8 @@
     href: tables/databricksssh.md
   - name: DatabricksUnityCatalog
     href: tables/databricksunitycatalog.md
+  - name: DatabricksWebTerminal
+    href: tables/databrickswebterminal.md
   - name: DatabricksWorkspace
     href: tables/databricksworkspace.md
   - name: DeviceAppCrash
