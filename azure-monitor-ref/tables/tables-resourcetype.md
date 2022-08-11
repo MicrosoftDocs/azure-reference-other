@@ -801,15 +801,11 @@ ms.date: 8/12/2022
 
 ## Network Watcher - Traffic Analytics
 
-
 ## Power BI Datasets
 
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-
-## Power BI Datasets
-
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
