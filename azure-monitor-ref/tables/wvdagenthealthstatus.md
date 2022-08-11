@@ -6,16 +6,13 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/4/2022
+ms.date: 8/12/2022
 ---
 
 # WVDAgentHealthStatus
 
  Azure Virtual Desktop agent health status.
 
-## Categories
-
-- Azure Virtual Desktop
 ## Solutions
 
 - LogManagement
