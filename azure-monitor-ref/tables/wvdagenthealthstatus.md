@@ -13,6 +13,9 @@ ms.date: 8/4/2022
 
  Azure Virtual Desktop agent health status.
 
+## Categories
+
+- Azure Virtual Desktop
 ## Solutions
 
 - LogManagement
