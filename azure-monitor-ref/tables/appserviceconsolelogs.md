@@ -33,7 +33,7 @@ ms.date: 8/4/2022
 | --- | --- | --- |
 | ContainerId | string | Application container id |
 | Host | string | Host where the application is running |
-| Level | string | Verbosity level of log |
+| Level | string | Standard output as Informational or standard error output as Error |
 | OperationName | string | The name of the operation represented by this event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | Log message description |
