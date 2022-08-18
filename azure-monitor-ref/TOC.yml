@@ -822,3 +822,5 @@
     href: tables/webpubsubmessaging.md
   - name: WindowsEvent
     href: tables/windowsevent.md
+  - name: WireData
+    href: tables/wiredata.md
