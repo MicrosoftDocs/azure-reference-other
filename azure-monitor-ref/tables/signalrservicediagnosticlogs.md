@@ -16,15 +16,14 @@ ms.date: 7/7/2022
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - SignalR
-
-
-
 
 ## Columns
 
@@ -39,13 +38,13 @@ ms.date: 7/7/2022
 | Location | string | The location of Azure SignalR service. |
 | Message | string | The message of the log event. It describes the log event in detail. |
 | MessageTracingId | long | The tracing ID of the message. It's used for tracing messages. |
-| MessageType | string | The type of the messsage. Can be 'BroadcastDataMessage', 'MultiConnectionDataMessage', 'GroupBroadcastDataMessage', 'MultiGroupBroadcastDataMessage', 'UserDataMessage', 'MultiUserDataMessage', 'JoinGroupWithAckMessage' and 'LeaveGroupWithAckMessage'. For more details, see https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols. |
+| MessageType | string | The type of the message. Can be 'BroadcastDataMessage', 'MultiConnectionDataMessage', 'GroupBroadcastDataMessage', 'MultiGroupBroadcastDataMessage', 'UserDataMessage', 'MultiUserDataMessage', 'JoinGroupWithAckMessage' and 'LeaveGroupWithAckMessage'. For more details, see the [Microsoft.Azure.SignalR.Protocols nuget package](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols). |
 | OperationName | string | The operation name of the log event. it can be used to filter the log based on a specific operation name. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) of the log. |
-| TransportType | string | The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more details, see https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype. |
+| TransportType | string | The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more information, see [HttpTransportType Enum](/dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype). |
 | Type | string | The name of the table |
 | UserId | string | The user ID of the connection. It is defined by the client or app server. |
