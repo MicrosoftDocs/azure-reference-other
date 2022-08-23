@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/4/2022
+ms.date: 8/18/2022
 ---
 
 # HDInsightSecurityLogs

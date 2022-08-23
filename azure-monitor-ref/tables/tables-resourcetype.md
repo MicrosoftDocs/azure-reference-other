@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/4/2022
+ms.date: 8/18/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -352,6 +352,11 @@ ms.date: 8/4/2022
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 
+## Azure Stack HCI Clusters
+
+- [Event](event.md)
+- [Perf](perf.md)
+
 ## Azure Storage Antimalware
 
 - [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
@@ -694,6 +699,9 @@ ms.date: 8/4/2022
 - [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
+
+## Managed CCF
+
 
 ## Media Services
 
