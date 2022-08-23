@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/4/2022
+ms.date: 8/18/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -125,6 +125,10 @@ ms.date: 8/4/2022
 - [ADPDiagnostics](adpdiagnostics.md)
 - [ADPRequests](adprequests.md)
 - [ADTDataHistoryOperation](adtdatahistoryoperation.md)
+- [ADTDigitalTwinsOperation](adtdigitaltwinsoperation.md)
+- [ADTEventRoutesOperation](adteventroutesoperation.md)
+- [ADTModelsOperation](adtmodelsoperation.md)
+- [ADTQueryOperation](adtqueryoperation.md)
 - [ADXJournal](adxjournal.md)
 - [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
@@ -523,6 +527,7 @@ ms.date: 8/4/2022
 - [Syslog](syslog.md)
 - [ThreatIntelligenceIndicator](threatintelligenceindicator.md)
 - [Update](update.md)
+- [UrlClickEvents](urlclickevents.md)
 - [UserAccessAnalytics](useraccessanalytics.md)
 - [UserPeerAnalytics](userpeeranalytics.md)
 - [Watchlist](watchlist.md)
