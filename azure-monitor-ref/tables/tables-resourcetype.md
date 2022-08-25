@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/18/2022
+ms.date: 8/25/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -34,6 +34,7 @@ ms.date: 8/18/2022
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
+- [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
