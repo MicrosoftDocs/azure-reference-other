@@ -618,3 +618,5 @@
     href: tables/microsoftdynamicstelemetryperformancelogs.md
   - name: MicrosoftDynamicsTelemetrySystemMetricsLogs
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
+  - name: MicrosoftHealthcareApisAuditLogs
+    href: tables/microsofthealthcareapisauditlogs.md
