@@ -258,6 +258,8 @@
     href: tables/appserviceipsecauditlogs.md
   - name: AppServicePlatformLogs
     href: tables/appserviceplatformlogs.md
+  - name: AppServiceServerlessSecurityPluginData
+    href: tables/appserviceserverlesssecurityplugindata.md
   - name: AppSystemEvents
     href: tables/appsystemevents.md
   - name: AppTraces
