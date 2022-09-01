@@ -290,3 +290,5 @@
     href: tables/azfwdnsquery.md
   - name: AZFWIdpsSignature
     href: tables/azfwidpssignature.md
+  - name: AZFWInternalFqdnResolutionFailure
+    href: tables/azfwinternalfqdnresolutionfailure.md
