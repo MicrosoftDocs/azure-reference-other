@@ -363,11 +363,6 @@ ms.date: 9/2/2022
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 
-## Azure Stack HCI
-
-- [Event](event.md)
-- [Perf](perf.md)
-
 ## Azure Storage Antimalware
 
 - [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
