@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/25/2022
+ms.date: 9/2/2022
 ---
 
 # AWSCloudTrail
 
- CloudTrail logs, which ingested from Sentinel's connector, holds all your data and management events of your Amazon Web Services account.
+ CloudTrail logs, which ingested from Sentinel's connector, holds all your data and management events of your Amazon Wev Services account.
 
 ## Categories
 

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/25/2022
+ms.date: 9/2/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -69,6 +69,9 @@ ms.date: 8/25/2022
 - [Update](update.md)
 - [UpdateRunProgress](updaterunprogress.md)
 - [UpdateSummary](updatesummary.md)
+
+## AVS Private Cloud
+
 
 ## Azure Active Directory Logs
 
@@ -263,6 +266,10 @@ ms.date: 8/25/2022
 
 ## Azure NetApp Files
 
+- [ANFFileAccess](anffileaccess.md)
+
+## Azure PlayFab
+
 
 ## Azure Resource Group
 
@@ -282,6 +289,9 @@ ms.date: 8/25/2022
 - [CommonSecurityLog](commonsecuritylog.md)
 
 ## Azure Sentinel data collection
+
+
+## Azure Sentinel GCP
 
 
 ## Azure Sentinel MCAS
@@ -353,11 +363,6 @@ ms.date: 8/25/2022
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 
-## Azure Stack HCI Clusters
-
-- [Event](event.md)
-- [Perf](perf.md)
-
 ## Azure Storage Antimalware
 
 - [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
@@ -370,10 +375,6 @@ ms.date: 8/25/2022
 
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
 - [AzureActivity](azureactivity.md)
-- [AzureMetrics](azuremetrics.md)
-
-## Azure Video Indexer
-
 - [AzureMetrics](azuremetrics.md)
 
 ## Bastions
@@ -626,6 +627,9 @@ ms.date: 8/25/2022
 - [HDInsightStormMetrics](hdinsightstormmetrics.md)
 - [HDInsightStormTopologyMetrics](hdinsightstormtopologymetrics.md)
 
+## Health Data Services
+
+
 ## Intune Specialist Reports.
 
 
@@ -740,6 +744,9 @@ ms.date: 8/25/2022
 
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
+## Microsoft Purview
+
+
 ## Microsoft Sentinel DNS activity ASim schema
 
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
@@ -809,14 +816,13 @@ ms.date: 8/25/2022
 
 ## Network Watcher - Traffic Analytics
 
-
 ## Power BI Datasets
 
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 
@@ -983,6 +989,9 @@ ms.date: 8/25/2022
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Update Compliance
+
 
 ## Video Indexer
 

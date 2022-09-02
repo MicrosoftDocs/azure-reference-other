@@ -208,6 +208,8 @@
     href: tables/amlrunevent.md
   - name: AmlRunStatusChangedEvent
     href: tables/amlrunstatuschangedevent.md
+  - name: ANFFileAccess
+    href: tables/anffileaccess.md
   - name: Anomalies
     href: tables/anomalies.md
   - name: ApiManagementGatewayLogs
@@ -420,6 +422,8 @@
     href: tables/databrickswebterminal.md
   - name: DatabricksWorkspace
     href: tables/databricksworkspace.md
+  - name: DefenderIoTRawEvent
+    href: tables/defenderiotrawevent.md
   - name: DeviceAppCrash
     href: tables/deviceappcrash.md
   - name: DeviceAppLaunch
@@ -488,6 +492,8 @@
     href: tables/failedingestion.md
   - name: FunctionAppLogs
     href: tables/functionapplogs.md
+  - name: GCPAuditLogs
+    href: tables/gcpauditlogs.md
   - name: HDInsightAmbariClusterAlerts
     href: tables/hdinsightambariclusteralerts.md
   - name: HDInsightAmbariSystemMetrics
