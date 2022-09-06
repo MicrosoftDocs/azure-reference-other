@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/25/2022
+ms.date: 9/2/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -164,6 +164,7 @@ ms.date: 8/25/2022
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
+- [ANFFileAccess](anffileaccess.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
@@ -500,6 +501,7 @@ ms.date: 8/25/2022
 - [EmailEvents](emailevents.md)
 - [EmailPostDeliveryEvents](emailpostdeliveryevents.md)
 - [EmailUrlInfo](emailurlinfo.md)
+- [GCPAuditLogs](gcpauditlogs.md)
 - [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
 - [HuntingBookmark](huntingbookmark.md)
 - [IdentityDirectoryEvents](identitydirectoryevents.md)

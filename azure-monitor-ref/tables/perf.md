@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 8/25/2022
+ms.date: 9/2/2022
 ---
 
 # Perf
@@ -28,7 +28,7 @@ ms.date: 8/25/2022
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
-- Azure Stack HCI Clusters
+- Azure Stack HCI
 - Azure Arc enabled Kubernetes
 
 
