@@ -812,3 +812,5 @@
     href: tables/viaudit.md
   - name: VMBoundPort
     href: tables/vmboundport.md
+  - name: VMComputer
+    href: tables/vmcomputer.md
