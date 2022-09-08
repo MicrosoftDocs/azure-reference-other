@@ -34,3 +34,5 @@
     href: tables/aadriskyusers.md
   - name: AADServicePrincipalRiskEvents
     href: tables/aadserviceprincipalriskevents.md
+  - name: AADServicePrincipalSignInLogs
+    href: tables/aadserviceprincipalsigninlogs.md
