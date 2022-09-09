@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -34,6 +34,7 @@ ms.date: 7/29/2022
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
+- [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
@@ -68,6 +69,9 @@ ms.date: 7/29/2022
 - [Update](update.md)
 - [UpdateRunProgress](updaterunprogress.md)
 - [UpdateSummary](updatesummary.md)
+
+## AVS Private Cloud
+
 
 ## Azure Active Directory Logs
 
@@ -206,6 +210,7 @@ ms.date: 7/29/2022
 - [DatabricksDBFS](databricksdbfs.md)
 - [DatabricksFeatureStore](databricksfeaturestore.md)
 - [DatabricksGenie](databricksgenie.md)
+- [DatabricksGitCredentials](databricksgitcredentials.md)
 - [DatabricksGlobalInitScripts](databricksglobalinitscripts.md)
 - [DatabricksIAMRole](databricksiamrole.md)
 - [DatabricksInstancePools](databricksinstancepools.md)
@@ -218,6 +223,7 @@ ms.date: 7/29/2022
 - [DatabricksSecrets](databrickssecrets.md)
 - [DatabricksSQLPermissions](databrickssqlpermissions.md)
 - [DatabricksSSH](databricksssh.md)
+- [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
 
 ## Azure Digital Twins
@@ -260,6 +266,10 @@ ms.date: 7/29/2022
 
 ## Azure NetApp Files
 
+- [ANFFileAccess](anffileaccess.md)
+
+## Azure PlayFab
+
 
 ## Azure Resource Group
 
@@ -279,6 +289,9 @@ ms.date: 7/29/2022
 - [CommonSecurityLog](commonsecuritylog.md)
 
 ## Azure Sentinel data collection
+
+
+## Azure Sentinel GCP
 
 
 ## Azure Sentinel MCAS
@@ -614,6 +627,9 @@ ms.date: 7/29/2022
 - [HDInsightStormMetrics](hdinsightstormmetrics.md)
 - [HDInsightStormTopologyMetrics](hdinsightstormtopologymetrics.md)
 
+## Health Data Services
+
+
 ## Intune Specialist Reports.
 
 
@@ -693,6 +709,9 @@ ms.date: 7/29/2022
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
 
+## Managed CCF
+
+
 ## Media Services
 
 - [AzureActivity](azureactivity.md)
@@ -724,6 +743,9 @@ ms.date: 7/29/2022
 ## Microsoft Defender for cloud
 
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
+
+## Microsoft Purview
+
 
 ## Microsoft Sentinel DNS activity ASim schema
 
@@ -794,14 +816,13 @@ ms.date: 7/29/2022
 
 ## Network Watcher - Traffic Analytics
 
-
 ## Power BI Datasets
 
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 
@@ -968,6 +989,9 @@ ms.date: 7/29/2022
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Update Compliance
+
 
 ## Video Indexer
 

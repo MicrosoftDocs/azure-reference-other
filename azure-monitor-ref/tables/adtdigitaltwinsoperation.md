@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ---
 
 # ADTDigitalTwinsOperation
 
  Schema for Azure Digital Twins' Digital Twin operations. The Digital Twins Operation category tracks all customer requests to manage a digital twin, including CRUD on Twins and Relationships.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement

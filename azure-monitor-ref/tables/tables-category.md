@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -125,6 +125,10 @@ ms.date: 7/29/2022
 - [ADPDiagnostics](adpdiagnostics.md)
 - [ADPRequests](adprequests.md)
 - [ADTDataHistoryOperation](adtdatahistoryoperation.md)
+- [ADTDigitalTwinsOperation](adtdigitaltwinsoperation.md)
+- [ADTEventRoutesOperation](adteventroutesoperation.md)
+- [ADTModelsOperation](adtmodelsoperation.md)
+- [ADTQueryOperation](adtqueryoperation.md)
 - [ADXJournal](adxjournal.md)
 - [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
@@ -160,6 +164,7 @@ ms.date: 7/29/2022
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
+- [ANFFileAccess](anffileaccess.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
@@ -194,6 +199,7 @@ ms.date: 7/29/2022
 - [DatabricksDBFS](databricksdbfs.md)
 - [DatabricksFeatureStore](databricksfeaturestore.md)
 - [DatabricksGenie](databricksgenie.md)
+- [DatabricksGitCredentials](databricksgitcredentials.md)
 - [DatabricksGlobalInitScripts](databricksglobalinitscripts.md)
 - [DatabricksIAMRole](databricksiamrole.md)
 - [DatabricksInstancePools](databricksinstancepools.md)
@@ -205,6 +211,7 @@ ms.date: 7/29/2022
 - [DatabricksSecrets](databrickssecrets.md)
 - [DatabricksSQLPermissions](databrickssqlpermissions.md)
 - [DatabricksSSH](databricksssh.md)
+- [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
 - [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
 - [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
@@ -451,6 +458,7 @@ ms.date: 7/29/2022
 - [AlertEvidence](alertevidence.md)
 - [Anomalies](anomalies.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
+- [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
@@ -493,6 +501,7 @@ ms.date: 7/29/2022
 - [EmailEvents](emailevents.md)
 - [EmailPostDeliveryEvents](emailpostdeliveryevents.md)
 - [EmailUrlInfo](emailurlinfo.md)
+- [GCPAuditLogs](gcpauditlogs.md)
 - [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
 - [HuntingBookmark](huntingbookmark.md)
 - [IdentityDirectoryEvents](identitydirectoryevents.md)
@@ -521,6 +530,7 @@ ms.date: 7/29/2022
 - [Syslog](syslog.md)
 - [ThreatIntelligenceIndicator](threatintelligenceindicator.md)
 - [Update](update.md)
+- [UrlClickEvents](urlclickevents.md)
 - [UserAccessAnalytics](useraccessanalytics.md)
 - [UserPeerAnalytics](userpeeranalytics.md)
 - [Watchlist](watchlist.md)

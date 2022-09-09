@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ---
 
 # LAQueryLogs
@@ -35,6 +35,7 @@ ms.date: 7/29/2022
 | AADObjectId | string | AAD ObjectId of the caller. |
 | AADTenantId | string | AAD TenantId of the caller. |
 | CorrelationId | string | The ID for correlated events. |
+| IsBillableQuery | bool | Indicates whether query execution is billed. |
 | QueryText | string | The full body of the query as submitted by the user. |
 | QueryTimeRangeEnd | datetime | The end time (UTC) of the time range across which the query was was requested by the caller to be executed. |
 | QueryTimeRangeStart | datetime | The starting time (UTC) of the time range across which the query was was requested by the caller to be executed. |
@@ -46,6 +47,7 @@ ms.date: 7/29/2022
 | ResponseCode | int | The HTTP response code for the request. |
 | ResponseDurationMs | real | The duration (in ms) that the query took to execute. |
 | ResponseRowCount | int | The number of rows that were returned. |
+| ScannedGB | real | For billable queries, like Basic logs queries, indicates the total GB of data scanned in the query. |
 | SourceSystem | string |  |
 | StatsCPUTimeMs | real | The CPU (in ms) used in the execution of this query. |
 | StatsDataProcessedEnd | datetime | The end time (UTC) of the time range across which the data processed. |

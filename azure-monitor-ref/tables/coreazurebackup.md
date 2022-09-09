@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ---
 
 # CoreAzureBackup
@@ -32,6 +32,11 @@ ms.date: 7/29/2022
 | Column | Type | Description |
 | --- | --- | --- |
 | AgentVersion | string |  |
+| ArchiveTierLatestRecoveryPointLocation | string |  |
+| ArchiveTierLatestRecoveryPointTime | datetime |  |
+| ArchiveTierOldestRecoveryPointLocation | string |  |
+| ArchiveTierOldestRecoveryPointTime | datetime |  |
+| ArchiveTierStorageReplicationType | string |  |
 | AzureBackupAgentVersion | string |  |
 | AzureDataCenter | string |  |
 | BackupItemAppVersion | string |  |
@@ -48,6 +53,7 @@ ms.date: 7/29/2022
 | BackupManagementServerVersion | string |  |
 | BackupManagementType | string |  |
 | Category | string |  |
+| IsArchiveEnabled | bool |  |
 | LatestRecoveryPointLocation | string |  |
 | LatestRecoveryPointTime | datetime |  |
 | OldestRecoveryPointLocation | string |  |
@@ -65,8 +71,8 @@ ms.date: 7/29/2022
 | ProtectedContainerWorkloadType | string |  |
 | ProtectionGroupName | string |  |
 | ResourceGroupName | string |  |
-| ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
 | SchemaVersion | string |  |
 | SecondaryBackupProtectionState | string |  |
 | SourceSystem | string |  |

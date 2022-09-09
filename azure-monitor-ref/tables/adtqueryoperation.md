@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ---
 
 # ADTQueryOperation
 
  Schema for Azure Digital Twins' Query operations. The Query Operation category tracks all customer requests to query their digital twins instance.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement

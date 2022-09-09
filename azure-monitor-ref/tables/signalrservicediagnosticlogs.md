@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ---
 
 # SignalRServiceDiagnosticLogs
@@ -34,6 +34,8 @@ ms.date: 7/29/2022
 | Collection | string | The collection of the log event. Can be 'Connection', 'Authorization', 'Throttling' or 'Message'. 'Connection' collection includes the logs about the lifetime of connections. 'Authorization' includes the logs about the authorization of connections. 'Throttling' includes the logs about the throttled connections. 'Message' includes the logs about the tracing messages. |
 | ConnectionId | string | The connection ID of the connection connected to SignalR service. |
 | ConnectionType | string | The connection type. Can be 'Server' and 'Client'. 'Server' means the connection connects to an app server. 'Client' means the connection connects to a SignalR client. |
+| GroupName | string | A group can have any number of clients, and a client can be a member of any number of groups. |
+| HubName | string | The SignalR Hubs API enables you to call methods on connected clients from the server. |
 | InvocationId | string | The invocation ID of the message. It's only available in ASP.NET SignalR. |
 | Level | string | The level of the log. Can be 'Informational', 'Warning', 'Error' or 'Critical'. |
 | Location | string | The location of Azure SignalR service. |

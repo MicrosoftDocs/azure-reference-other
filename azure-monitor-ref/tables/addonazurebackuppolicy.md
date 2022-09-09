@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 7/29/2022
+ms.date: 9/8/2022
 ---
 
 # AddonAzureBackupPolicy
@@ -31,8 +31,12 @@ ms.date: 7/29/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
+| ArchiveTieringDuration | int |  |
+| ArchiveTieringDurationType | string |  |
+| ArchiveTieringMode | string |  |
 | BackupDaysOfTheWeek | string |  |
 | BackupFrequency | string |  |
+| BackupIntervalInHours | int |  |
 | BackupManagementServerUniqueId | string |  |
 | BackupManagementType | string |  |
 | BackupTimes | string |  |
@@ -53,12 +57,15 @@ ms.date: 7/29/2022
 | MonthlyRetentionWeeksOfTheMonth | string |  |
 | OperationName | string |  |
 | PolicyName | string |  |
+| PolicySubType | string |  |
 | PolicyTimeZone | string |  |
 | PolicyUniqueId | string |  |
 | ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RetentionDuration | int |  |
 | RetentionType | string |  |
+| ScheduleWindowDuration | int |  |
+| ScheduleWindowStartTime | datetime |  |
 | SchemaVersion | string |  |
 | SourceSystem | string |  |
 | State | string |  |
