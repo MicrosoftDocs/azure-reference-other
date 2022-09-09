@@ -42,6 +42,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/entra/breadcrumb/toc.json",
       "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-Entra",
       "feedback_system": "None"
     },
     "fileMetadata": {},
