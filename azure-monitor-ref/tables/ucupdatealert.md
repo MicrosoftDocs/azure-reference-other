@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/8/2022
+ms.date: 9/15/2022
 ---
 
 # UCUpdateAlert
@@ -33,6 +33,7 @@ ms.date: 9/8/2022
 | AlertType | string | The type of Alert this is, ClientUpdateAlert, ServiceUpdateAlert. Indicates which fields will be present. |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID. |
+| CatalogId | string | The update catalog ID. |
 | ClientSubstate | string | If the Alert is from the Client, the ClientSubstate at the time thie Alert was activated or updated, else Empty. |
 | ClientSubstateRank | int | Rank of ClientSubstate. |
 | DeploymentId | string | The identifier of the Deployment that is targeting this update to this device, else empty. |
@@ -55,4 +56,5 @@ ms.date: 9/8/2022
 | Type | string | The name of the table |
 | UpdateCategory | string | The type of content this DeviceUpdateEvent is tracking. |
 | UpdateClassification | string | Whether this content is an Upgrade (FU), Security (QU), NonSecurity (QU) |
+| UpdateId | string | Update ID of the targeted update. |
 | URL | string | An optional URL to get more in-depth information related to this alert. |
