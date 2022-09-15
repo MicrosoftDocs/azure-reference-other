@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/8/2022
+ms.date: 9/16/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -270,6 +270,7 @@ ms.date: 9/8/2022
 
 ## Azure PlayFab
 
+- [PFTitleAuditLogs](pftitleauditlogs.md)
 
 ## Azure Resource Group
 
@@ -362,6 +363,11 @@ ms.date: 9/8/2022
 - [W3CIISLog](w3ciislog.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
+
+## Azure Stack HCI
+
+- [Event](event.md)
+- [Perf](perf.md)
 
 ## Azure Storage Antimalware
 
@@ -816,10 +822,14 @@ ms.date: 9/8/2022
 
 ## Network Watcher - Traffic Analytics
 
+
 ## Power BI Datasets
 
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
+
+## Power BI Datasets
+
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
@@ -996,6 +1006,7 @@ ms.date: 9/8/2022
 ## Video Indexer
 
 - [VIAudit](viaudit.md)
+- [VIIndexing](viindexing.md)
 
 ## Virtual Machine Scale Sets
 
