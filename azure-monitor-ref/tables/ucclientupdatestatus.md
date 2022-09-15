@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/8/2022
+ms.date: 9/15/2022
 ---
 
 # UCClientUpdateStatus
@@ -26,6 +26,7 @@ ms.date: 9/8/2022
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID. |
+| CatalogId | string | The update catalog ID. |
 | ClientState | string | Higher-level bucketization of ClientSubstate. |
 | ClientSubstate | string | Last-known state of this update relative to the device, from the client (the device's WDD). |
 | ClientSubstateRank | int | Ranking of Client Substates for sequential ordering in funnel-type views. The rankings between ServiceSubstate and ClientSubstate can be used together. |
@@ -59,6 +60,7 @@ ms.date: 9/8/2022
 | UpdateHealthGroupRankL1 | int | Integer for ranking the L1 UpdateHealthGroup. |
 | UpdateHealthGroupRankL2 | int | Integer for ranking the L2 UpdateHealthGroup. |
 | UpdateHealthGroupRankL3 | int | Integer for ranking the L3 UpdateHealthGroup. |
+| UpdateId | string | Update ID of the targeted update. |
 | UpdateInstalledTime | datetime | DateTime when event transitioned to UpdateInstalled, else empty. |
 | UpdateManufacturer | string | Manufacturer of update. Microsoft for WU FU/QU, for D&F name of driver manufacturer e.g. NVIDIA. |
 | UpdateReleaseTime | datetime | The release date of the update. |
