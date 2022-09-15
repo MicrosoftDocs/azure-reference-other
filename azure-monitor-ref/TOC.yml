@@ -656,6 +656,8 @@
     href: tables/operation.md
   - name: Perf
     href: tables/perf.md
+  - name: PFTitleAuditLogs
+    href: tables/pftitleauditlogs.md
   - name: PowerBIActivity
     href: tables/powerbiactivity.md
   - name: PowerBIAuditTenant
@@ -810,6 +812,8 @@
     href: tables/userpeeranalytics.md
   - name: VIAudit
     href: tables/viaudit.md
+  - name: VIIndexing
+    href: tables/viindexing.md
   - name: VMBoundPort
     href: tables/vmboundport.md
   - name: VMComputer
@@ -838,6 +842,8 @@
     href: tables/wvdagenthealthstatus.md
   - name: WVDCheckpoints
     href: tables/wvdcheckpoints.md
+  - name: WVDConnectionGraphicsDataPreview
+    href: tables/wvdconnectiongraphicsdatapreview.md
   - name: WVDConnectionNetworkData
     href: tables/wvdconnectionnetworkdata.md
   - name: WVDConnections

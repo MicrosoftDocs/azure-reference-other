@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/8/2022
+ms.date: 9/16/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -72,6 +72,7 @@ ms.date: 9/8/2022
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 - [NSPAccessLogs](nspaccesslogs.md)
+- [PFTitleAuditLogs](pftitleauditlogs.md)
 - [PowerBIActivity](powerbiactivity.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [SentinelAudit](sentinelaudit.md)
@@ -263,6 +264,7 @@ ms.date: 9/8/2022
 - [OEPElasticsearch](oepelasticsearch.md)
 - [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)
 - [OLPSupplyChainEvents](olpsupplychainevents.md)
+- [PFTitleAuditLogs](pftitleauditlogs.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
@@ -309,6 +311,7 @@ ms.date: 9/8/2022
 - [SynapseSqlPoolSqlRequests](synapsesqlpoolsqlrequests.md)
 - [SynapseSqlPoolWaits](synapsesqlpoolwaits.md)
 - [TSIIngress](tsiingress.md)
+- [VIIndexing](viindexing.md)
 - [WebPubSubConnectivity](webpubsubconnectivity.md)
 - [WebPubSubHttpRequest](webpubsubhttprequest.md)
 - [WebPubSubMessaging](webpubsubmessaging.md)
