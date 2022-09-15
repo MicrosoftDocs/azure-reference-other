@@ -818,3 +818,5 @@
     href: tables/vmboundport.md
   - name: VMComputer
     href: tables/vmcomputer.md
+  - name: VMConnection
+    href: tables/vmconnection.md
