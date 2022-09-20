@@ -123,7 +123,7 @@ ms.date: 9/8/2022
 | MachineAccountQuota | string |  |
 | MachineInventory | string |  |
 | MachineLogon | string |  |
-| ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-<workspace ID> |
+| ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-&lt;workspace ID&gt; |
 | MandatoryLabel | string |  |
 | MaxPasswordAge | string |  |
 | MemberName | string |  |
