@@ -36,13 +36,13 @@ ms.date: 9/8/2022
 | Column | Type | Description |
 | --- | --- | --- |
 | AccessMask | string |  |
-| Account | string |  |
+| Account | string | Domain and username of the account that made the actin |
 | AccountDomain | string |  |
 | AccountExpires | string |  |
 | AccountName | string |  |
 | AccountSessionIdentifier | string |  |
 | AccountType | string |  |
-| Activity | string |  |
+| Activity | string | ID and Description of the event. |
 | AdditionalInfo | string |  |
 | AdditionalInfo2 | string |  |
 | AllowedToDelegateTo | string |  |
@@ -55,7 +55,7 @@ ms.date: 9/8/2022
 | AuthenticationServer | string |  |
 | AuthenticationService | int |  |
 | AuthenticationType | string |  |
-| AzureDeploymentID | string |  |
+| AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and collected from Azure storage. |
 | CACertificateHash | string |  |
 | CalledStationID | string |  |
 | CallerProcessId | string |  |
@@ -72,7 +72,7 @@ ms.date: 9/8/2022
 | ClientName | string |  |
 | CommandLine | string |  |
 | CompatibleIds | string |  |
-| Computer | string |  |
+| Computer | string | Name of the computer that the event was collected from. |
 | DCDNSName | string |  |
 | DeviceDescription | string |  |
 | DeviceId | string |  |
@@ -85,8 +85,8 @@ ms.date: 9/8/2022
 | EAPType | string |  |
 | ElevatedToken | string |  |
 | ErrorCode | int |  |
-| EventData | string |  |
-| EventID | int |  |
+| EventData | string | 	All event data in raw format. |
+| EventID | int | Number of the event. |
 | EventSourceName | string |  |
 | ExtendedQuarantineState | string |  |
 | FailureReason | string |  |
@@ -123,7 +123,7 @@ ms.date: 9/8/2022
 | MachineAccountQuota | string |  |
 | MachineInventory | string |  |
 | MachineLogon | string |  |
-| ManagementGroupName | string |  |
+| ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-<workspace ID> |
 | MandatoryLabel | string |  |
 | MaxPasswordAge | string |  |
 | MemberName | string |  |
@@ -202,7 +202,7 @@ ms.date: 9/8/2022
 | ShareName | string |  |
 | SidHistory | string |  |
 | SourceComputerId | string |  |
-| SourceSystem | string |  |
+| SourceSystem | string | Type of agent the event was collected from. Possible values are OpsManager Linux and AzureStorage. |
 | Status | string |  |
 | StorageAccount | string |  |
 | SubcategoryGuid | string |  |
@@ -239,7 +239,7 @@ ms.date: 9/8/2022
 | TemplateOID | string |  |
 | TemplateSchemaVersion | string |  |
 | TemplateVersion | string |  |
-| TimeGenerated | datetime |  |
+| TimeGenerated | datetime | Date and time the record was created. |
 | TokenElevationType | string |  |
 | TransmittedServices | string |  |
 | Type | string | The name of the table |
@@ -249,5 +249,5 @@ ms.date: 9/8/2022
 | UserWorkstations | string |  |
 | VendorIds | string |  |
 | VirtualAccount | string |  |
-| Workstation | string |  |
+| Workstation | string | Name of the computer where the action happened. |
 | WorkstationName | string |  |
