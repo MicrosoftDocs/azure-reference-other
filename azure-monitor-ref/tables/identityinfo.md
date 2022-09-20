@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/8/2022
+ms.date: 9/15/2022
 ---
 
 # IdentityInfo
@@ -43,6 +43,7 @@ ms.date: 9/8/2022
 | DeletedDateTime | datetime | The date and time the user was deleted |
 | Department | string | The user account department as defined in AAD |
 | EmployeeId | string | The employee identifier assigned to the user by the organization |
+| EntityRiskScore | dynamic | The risk score of the entity as part of the UEBA scoring process |
 | ExtensionProperty | dynamic | ExtensionProperty fields from Azure AD |
 | GivenName | string | The user account given name |
 | GroupMembership | dynamic | Azure AD Groups the user account is a member |
