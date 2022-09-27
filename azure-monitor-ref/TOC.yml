@@ -278,6 +278,8 @@
     href: tables/auieventsoperational.md
   - name: AutoscaleScaleActionsLog
     href: tables/autoscalescaleactionslog.md
+  - name: AVSSyslog
+    href: tables/avssyslog.md
   - name: AWSGuardDuty
     href: tables/awsguardduty.md
   - name: AWSVPCFlow
@@ -356,6 +358,10 @@
     href: tables/configurationchange.md
   - name: ConfigurationData
     href: tables/configurationdata.md
+  - name: ContainerAppConsoleLogs
+    href: tables/containerappconsolelogs.md
+  - name: ContainerAppSystemLogs
+    href: tables/containerappsystemlogs.md
   - name: ContainerImageInventory
     href: tables/containerimageinventory.md
   - name: ContainerInventory
@@ -758,6 +764,8 @@
     href: tables/synapseintegrationpipelineruns.md
   - name: SynapseIntegrationTriggerRuns
     href: tables/synapseintegrationtriggerruns.md
+  - name: SynapseLinkEvent
+    href: tables/synapselinkevent.md
   - name: SynapseRBACEvents
     href: tables/synapserbacevents.md
   - name: SynapseRbacOperations

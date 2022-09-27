@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/16/2022
+ms.date: 9/22/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -72,6 +72,7 @@ ms.date: 9/16/2022
 
 ## AVS Private Cloud
 
+- [AVSSyslog](avssyslog.md)
 
 ## Azure Active Directory Logs
 
@@ -486,6 +487,7 @@ ms.date: 9/16/2022
 - [AzureMetrics](azuremetrics.md)
 - [WVDAgentHealthStatus](wvdagenthealthstatus.md)
 - [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDConnectionGraphicsDataPreview](wvdconnectiongraphicsdatapreview.md)
 - [WVDConnectionNetworkData](wvdconnectionnetworkdata.md)
 - [WVDConnections](wvdconnections.md)
 - [WVDErrors](wvderrors.md)
@@ -936,6 +938,7 @@ ms.date: 9/16/2022
 - [SynapseIntegrationActivityRuns](synapseintegrationactivityruns.md)
 - [SynapseIntegrationPipelineRuns](synapseintegrationpipelineruns.md)
 - [SynapseIntegrationTriggerRuns](synapseintegrationtriggerruns.md)
+- [SynapseLinkEvent](synapselinkevent.md)
 - [SynapseRbacOperations](synapserbacoperations.md)
 - [SynapseScopePoolScopeJobsEnded](synapsescopepoolscopejobsended.md)
 - [SynapseScopePoolScopeJobsStateChange](synapsescopepoolscopejobsstatechange.md)

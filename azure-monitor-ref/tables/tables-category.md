@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/16/2022
+ms.date: 9/22/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -302,6 +302,7 @@ ms.date: 9/16/2022
 - [SynapseIntegrationActivityRuns](synapseintegrationactivityruns.md)
 - [SynapseIntegrationPipelineRuns](synapseintegrationpipelineruns.md)
 - [SynapseIntegrationTriggerRuns](synapseintegrationtriggerruns.md)
+- [SynapseLinkEvent](synapselinkevent.md)
 - [SynapseRbacOperations](synapserbacoperations.md)
 - [SynapseScopePoolScopeJobsEnded](synapsescopepoolscopejobsended.md)
 - [SynapseScopePoolScopeJobsStateChange](synapsescopepoolscopejobsstatechange.md)
@@ -319,6 +320,7 @@ ms.date: 9/16/2022
 ## Azure Virtual Desktop
 
 - [WVDCheckpoints](wvdcheckpoints.md)
+- [WVDConnectionGraphicsDataPreview](wvdconnectiongraphicsdatapreview.md)
 - [WVDConnectionNetworkData](wvdconnectionnetworkdata.md)
 - [WVDConnections](wvdconnections.md)
 - [WVDErrors](wvderrors.md)

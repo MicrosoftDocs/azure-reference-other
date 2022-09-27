@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/15/2022
+ms.date: 9/22/2022
 ---
 
 # AzureAttestationDiagnostics
@@ -41,6 +41,7 @@ ms.date: 9/15/2022
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceRegion | string | Region where the resource is located. |
 | ResourceUri | string | URI of the resource. |
+| ResultDetails | string | Detailed response messages included in the result, if available. |
 | ResultSignature | string | HTTP status code returned from the service. |
 | ResultType | string | Indicates if the request was successful or failed. |
 | ServiceLocation | string | Location of the service which processed the request. |
