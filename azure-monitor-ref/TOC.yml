@@ -802,6 +802,10 @@
     href: tables/ucclientupdatestatus.md
   - name: UCDeviceAlert
     href: tables/ucdevicealert.md
+  - name: UCDOAggregatedStatus
+    href: tables/ucdoaggregatedstatus.md
+  - name: UCDOStatus
+    href: tables/ucdostatus.md
   - name: UCServiceUpdateStatus
     href: tables/ucserviceupdatestatus.md
   - name: UCUpdateAlert
