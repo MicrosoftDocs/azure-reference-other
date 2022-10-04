@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/22/2022
+ms.date: 9/29/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -401,6 +401,8 @@ ms.date: 9/22/2022
 - [UAProposedActionPlan](uaproposedactionplan.md)
 - [UASysReqIssue](uasysreqissue.md)
 - [UAUpgradedComputer](uaupgradedcomputer.md)
+- [UCDOAggregatedStatus](ucdoaggregatedstatus.md)
+- [UCDOStatus](ucdostatus.md)
 - [WaaSDeploymentStatus](waasdeploymentstatus.md)
 - [WaaSInsiderStatus](waasinsiderstatus.md)
 - [WaaSUpdateStatus](waasupdatestatus.md)
