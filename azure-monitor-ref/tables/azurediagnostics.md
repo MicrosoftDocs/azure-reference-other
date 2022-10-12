@@ -11,13 +11,14 @@ ms.date: 6/1/2021
 
 # AzureDiagnostics
 
-Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. 
+Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources.
 
 The resource log for each Azure service has a unique set of columns. The AzureDiagnostics table includes the most common columns used by Azure services. If a resource log includes a column that doesn't already exist in the AzureDiagnostics table, that column is added the first time that data is collected. If the maximum number of 500 columns is reached, data for any additional columns is added to a dynamic column.
 
 Azure services that use resource-specific mode store data in a table specific to that service and do not use the AzureDiagnostics table. See [Resource Types](#resource-types) below for the services that use each method. See [Azure resource logs](/azure/azure-monitor/platform/resource-logs#send-to-log-analytics-workspace) for details on the differences.
 
 ## AdditionalFields column
+
 Unlike other tables, **AzureDiagnostics** is much more susceptible to exceeding the 500 column limit imposed for any table in a Log Analytics workspace due to the wide assortment of Azure Resources capable of sending data to this table. To ensure that no data is lost due to the number of active columns exceeding this 500 column limit, AzureDiagnostics column creation is handled in a different manner to other tables.
 
 The AzureDiagnostics table in every workspace will contain at a minimum the same [200 columns](#columns). For workspaces created before January 19, 2021, the table will also contain any columns that were already in place prior to this date. When data is sent to a column not already in place:
@@ -26,16 +27,17 @@ The AzureDiagnostics table in every workspace will contain at a minimum the same
 - If the total number of columns is at or above 500, the excess data is added to a dynamic property bag column called **AdditionalFields** as a property.
 
 ### Example
+
 To illustrate this behavior, imagine that as of (deployment date) the AzureDiagnostics table in our workpsace looks as follows:
 
-| Column 1	| Column 2 | Column 3 | ... | Column 498 |
+| Column 1 | Column 2 | Column 3 | ... | Column 498 |
 |:---|:---|:---|:---|:---|
 | abc | def | 123 | ... | 456 |
 | ... | ... | ... | ... | ... |
 
 A resource that sends data to **AzureDiagnostics** then adds a new dimension to their data that they call **NewInfo1**. Since the table still has less than 500 columns, the first time an event occurs that contains data for this new dimension will add a new column to the table:
 
-| Column 1	| Column 2 | Column 3 | ... | Column 498 | NewInfo1_s |
+| Column 1 | Column 2 | Column 3 | ... | Column 498 | NewInfo1_s |
 |:---|:---|:---|:---|:---|:---|
 | abc | def | 123 | ... | 456 | xyz |
 | ... | ... | ... | ... | ... | ... |
@@ -48,7 +50,7 @@ AzureDiagnostics | where NewInfo1_s == "xyz"
 
 At a later date, another resource sends data to **AzureDiagnostics** that adds new dimensions called **NewInfo2** and **NewInfo3**. Because the table has reached 500 columns in this workspace, the new data will go into the **AdditionalFields** column:
 
-| Column 1	| Column 2 | Column 3 | ... | Column 498 | NewInfo1_s | AdditionalFields |
+| Column 1 | Column 2 | Column 3 | ... | Column 498 | NewInfo1_s | AdditionalFields |
 |:---|:---|:---|:---|:---|:---|:---|
 | abc | def | 123 | ... | 456 | xyz | {"NewInfo2":"789","NewInfo3":"qwerty"} |
 | ... | ... | ... | ... | ... | ... | ... |
@@ -61,6 +63,7 @@ AzureDiagnostics
 ```
 
 ### Tips on using AdditionalFields column
+
 While general query best practices such as always filtering by time as the first clause in the query should be followed, there are some other recommendations you should consider when working with AdditionalFields:
 
 - You will need to typecast data prior to performing further operations on it. For example, if a column exists called **Perf1Sec_i** as well as a property in **AdditionalFields** called **Perf2Sec**, and you want to calculate total perf by adding both values, use something like: `AzureDiagnostics | extend TotalPerfSec = Perf1Sec_i + toint(AdditionalFields.Perf2Sec) | ....`.
@@ -81,6 +84,7 @@ While general query best practices such as always filtering by time as the first
 ## Resource types
 
 ### Azure Diagnostics mode
+
 The following services use Azure diagnostics mode for their resource logs and send data to the Azure Diagnostics table.
 
 - Analysis Services
@@ -126,14 +130,14 @@ The following services use Azure diagnostics mode for their resource logs and se
 - VPN Gateways
 
 ### Azure Diagnostics mode or resource-specific mode
+
 The following services use either Azure diagnostics mode or resource-specific mode for their resource logs depending on their configuration. When they use resource-specific mode, they do not send data to the AzureDiagnostics table. See [Azure resource logs](/azure/azure-monitor/platform/resource-logs) for details on this configuration.
 
 - API Management Services
-- Cosmos DB
+- Azure Cosmos DB
 - Data factories (V2)
 - IoT Hub
 - Recovery Services vaults(Backup)
-
 
 ## Columns
 
