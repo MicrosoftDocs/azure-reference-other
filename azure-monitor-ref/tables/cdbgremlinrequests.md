@@ -16,23 +16,21 @@ ms.date: 9/29/2022
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Cosmos DB
-
-
-
 
 ## Columns
 
 | Column | Type | Description |
 | --- | --- | --- |
-| AccountName | string | The name of the Cosmos DB account against which this request was issued. |
+| AccountName | string | The name of the Azure Cosmos DB for Apache Gremlin account against which this request was issued. |
 | ActivityId | string | The unique identifier (GUID) for this Graph API request. |
 | Address | string | The IP address of the client, which issued this request. |
 | AuthorizationTokenType | string | The authorization token used  for this request. |
-| CollectionName | string | The name of the Cosmos DB table/container against which this request was issued. |
-| DatabaseName | string | The name of the Cosmos DB database against which this request was issued. |
+| CollectionName | string | The name of the Azure Cosmos DB table/container against which this request was issued. |
+| DatabaseName | string | The name of the Azure Cosmos DB database against which this request was issued. |
 | DurationMs | real | The server-side execution time (in ms) for this request. |
 | ErrorCode | string | The error code (if applicable) for this request. |
 | OperationName | string | The name of the Gremlin operation that was executed. |

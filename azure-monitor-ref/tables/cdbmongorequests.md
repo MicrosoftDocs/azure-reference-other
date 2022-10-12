@@ -11,33 +11,31 @@ ms.date: 9/29/2022
 
 # CDBMongoRequests
 
- This table details data plane operations, specifically for Mongo API accounts.
+ This table details data plane operations, specifically for Azure Cosmos DB for MongoDB accounts.
 
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Cosmos DB
-
-
-
 
 ## Columns
 
 | Column | Type | Description |
 | --- | --- | --- |
-| AccountName | string | The name of the Cosmos DB account against which this Mongo API request was issued. |
-| ActivityId | string | The unique identifier (GUID) for this Mongo API request. |
+| AccountName | string | The name of the Azure Cosmos DB for MongoDB account against which this request was issued. |
+| ActivityId | string | The unique identifier (GUID) for this request. |
 | Address | string | The IP address of the client VM which issued the request. |
 | AuthorizationTokenType | string | The authorization token used  for this request. |
-| CollectionName | string | The name of the Cosmos DB container against which this request was issued. |
-| DatabaseName | string | The name of the Cosmos DB database against which this request was issued. |
+| CollectionName | string | The name of the Azure Cosmos DB container against which this request was issued. |
+| DatabaseName | string | The name of the Azure Cosmos DB database against which this request was issued. |
 | DurationMs | real | The server-side execution time (in ms) for this request. |
 | ErrorCode | string | The error code (if applicable) for this request. |
-| OpCode | string | The operation code for the Mongo API request. |
-| OperationName | string | The Mongo API operation that was executed  |
-| PIICommandText | string | Full text query (if opted in) for this Mongo API request. |
+| OpCode | string | The operation code for the request. |
+| OperationName | string | The operation that was executed  |
+| PIICommandText | string | Full text query (if opted in) for this request. |
 | RateLimitingDelayMs | real | The estimated time (in ms) spent retrying due to rate limited operations. |
 | RegionName | string | The region against which this request was issued. |
 | RequestCharge | real | The RU (Request Unit) consumption for this request. |
@@ -49,6 +47,6 @@ ms.date: 9/29/2022
 | SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
-| TimeGenerated | datetime | Timestamp (in UTC) of the Mongo API data plane request. |
+| TimeGenerated | datetime | Timestamp (in UTC) of the data plane request. |
 | Type | string | The name of the table |
 | UserAgent | string | The user agent suffix associated with the client issuing the request. |

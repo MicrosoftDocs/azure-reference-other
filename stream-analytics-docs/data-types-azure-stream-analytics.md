@@ -36,6 +36,7 @@ Please note that it is records that have a type and not columns. Each record of 
 ## Type conversions
 
 These are the rules governing *data type conversions*:
+
 - Conversion without precision loss during input read and output write operations is implicit and is always successful
 - Precision loss and overflow inside output write operations is handled by configured error policy (set to either Drop or Retry)
 - Type conversion errors happening during output write operations are handled by the error policy
@@ -71,7 +72,7 @@ Values will be converted between float and bit with the following rules:
 |(FLOAT) **any other value** |(BIT) **1**|
 |(FLOAT) NULL|(BIT) NULL|
 
-## Type mappings and serialization formats:
+## Type mappings and serialization formats
 
 | Data type  | CSV in  | CSV out  | JSON in  | JSON out  | Avro in  | Avro out  |
 |-|-|-|-|-|-|-|
@@ -86,9 +87,9 @@ Values will be converted between float and bit with the following rules:
 > [!NOTE]
 > No data type conversion is needed for Parquet.
 
-## Type mapping when writing to structured data stores:
+## Type mapping when writing to structured data stores
 
-| Data type | SQL | Power BI | Cosmos DB | PostgreSQL | Azure Data Explorer |
+| Data type | SQL | Power BI | Azure Cosmos DB | PostgreSQL | Azure Data Explorer |
 |-|-|-|-|-|-|
 | **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer | bigint | dynamic, int, long |
 | **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction | double precision, numeric. Limited to 1.78E+308 | dynamic, real, double |
