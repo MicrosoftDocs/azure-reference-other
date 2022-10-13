@@ -350,3 +350,5 @@
     href: tables/cloudappevents.md
   - name: CommonSecurityLog
     href: tables/commonsecuritylog.md
+  - name: ComputerGroup
+    href: tables/computergroup.md
