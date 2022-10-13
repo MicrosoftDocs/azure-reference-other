@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/29/2022
+ms.date: 10/13/2022
 ---
 
 # AppPlatformBuildLogs
