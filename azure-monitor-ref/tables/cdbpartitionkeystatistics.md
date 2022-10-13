@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 9/29/2022
+ms.date: 10/13/2022
 ---
 
 # CDBPartitionKeyStatistics
@@ -16,18 +16,20 @@ ms.date: 9/29/2022
 ## Solutions
 
 - LogManagement
-
 ## Resource types
 
 - Azure Cosmos DB
+
+
+
 
 ## Columns
 
 | Column | Type | Description |
 | --- | --- | --- |
-| AccountName | string | The name of the Azure Cosmos DB account containing the dataset for which partition key stats were generated. |
-| CollectionName | string | The name of the Azure Cosmos DB collection, which contains the partition. |
-| DatabaseName | string | The name of the Azure Cosmos DB database, which contains the partition. |
+| AccountName | string | The name of the Cosmos DB account containing the dataset for which partition key stats were generated. |
+| CollectionName | string | The name of the Cosmos DB collection, which contains the partition. |
+| DatabaseName | string | The name of the Cosmos DB database, which contains the partition. |
 | PartitionKey | string | The logical partition key for which storage statistics were retrieved. |
 | RegionName | string | The Azure region from which statistics for this partition were retrieved. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
