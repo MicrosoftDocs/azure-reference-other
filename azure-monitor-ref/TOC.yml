@@ -66,3 +66,5 @@
     href: tables/acsemailstatusupdateoperational.md
   - name: ACSEmailUserEngagementOperational
     href: tables/acsemailuserengagementoperational.md
+  - name: ACSNetworkTraversalDiagnostics
+    href: tables/acsnetworktraversaldiagnostics.md
