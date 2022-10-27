@@ -174,3 +174,5 @@
     href: tables/agrifoodweatherlogs.md
   - name: AGSGrafanaLoginEvents
     href: tables/agsgrafanaloginevents.md
+  - name: AirflowDagProcessingLogs
+    href: tables/airflowdagprocessinglogs.md
