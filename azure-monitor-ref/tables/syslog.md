@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/13/2022
+ms.date: 10/27/2022
 ---
 
 # Syslog
@@ -22,6 +22,7 @@ ms.date: 10/13/2022
 - LogManagement
 ## Resource types
 
+- Kubernetes Services
 - Virtual machines
 - VMware
 - Azure Stack HCI
