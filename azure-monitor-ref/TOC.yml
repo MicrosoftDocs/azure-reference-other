@@ -88,3 +88,5 @@
     href: tables/adfairflowschedulerlogs.md
   - name: ADFAirflowTaskLogs
     href: tables/adfairflowtasklogs.md
+  - name: ADFAirflowWebLogs
+    href: tables/adfairflowweblogs.md
