@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/13/2022
+ms.date: 10/27/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -68,9 +68,12 @@ ms.date: 10/13/2022
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [CassandraAudit](cassandraaudit.md)
 - [CIEventsAudit](cieventsaudit.md)
+- [ContainerAppConsoleLogs](containerappconsolelogs.md)
+- [ContainerAppSystemLogs](containerappsystemlogs.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [PFTitleAuditLogs](pftitleauditlogs.md)
 - [PowerBIActivity](powerbiactivity.md)
@@ -104,6 +107,7 @@ ms.date: 10/13/2022
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
+- [ACSCallRecordingSummary](acscallrecordingsummary.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
 - [ACSEmailSendMailOperational](acsemailsendmailoperational.md)
@@ -111,6 +115,7 @@ ms.date: 10/13/2022
 - [ACSEmailUserEngagementOperational](acsemailuserengagementoperational.md)
 - [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
+- [ACSRoomsIncomingOperations](acsroomsincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AddonAzureBackupAlerts](addonazurebackupalerts.md)
 - [AddonAzureBackupJobs](addonazurebackupjobs.md)
@@ -194,6 +199,8 @@ ms.date: 10/13/2022
 - [BlockchainProxyLog](blockchainproxylog.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CIEventsOperational](cieventsoperational.md)
+- [ContainerAppConsoleLogs](containerappconsolelogs.md)
+- [ContainerAppSystemLogs](containerappsystemlogs.md)
 - [CoreAzureBackup](coreazurebackup.md)
 - [DatabricksAccounts](databricksaccounts.md)
 - [DatabricksClusters](databricksclusters.md)
@@ -465,7 +472,6 @@ ms.date: 10/13/2022
 - [AlertEvidence](alertevidence.md)
 - [Anomalies](anomalies.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
-- [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
@@ -516,6 +522,7 @@ ms.date: 10/13/2022
 - [IdentityQueryEvents](identityqueryevents.md)
 - [LinuxAuditLog](linuxauditlog.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
+- [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkSessions](networksessions.md)
 - [NSPAccessLogs](nspaccesslogs.md)
