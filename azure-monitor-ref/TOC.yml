@@ -132,3 +132,5 @@
     href: tables/adtqueryoperation.md
   - name: ADXCommand
     href: tables/adxcommand.md
+  - name: ADXIngestionBatching
+    href: tables/adxingestionbatching.md
