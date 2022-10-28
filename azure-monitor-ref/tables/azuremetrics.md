@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/13/2022
+ms.date: 10/27/2022
 ---
 
 # AzureMetrics
@@ -61,25 +61,25 @@ ms.date: 10/13/2022
 - Azure API for FHIR
 - System Center Virtual Machine Manager
 - VMware
-- Desktop Virtualization Host Pools
-- Synapse Workspaces
 - Virtual machines
+- Media Services
 - Machine Learning
 - Azure Database for PostgreSQL Flexible Servers
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
 - Azure Traffic Collector
 - Kubernetes Services
+- Key Vaults
 - Firewalls
 - Event Grid Topics
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
+- Synapse Workspaces
+- Desktop Virtualization Host Pools
 - Desktop Virtualization Application Groups
 - Desktop Virtualization workspaces
-- Time Series Insights Environments
-- Workload Monitor
 - Event Grid System Topics
 - Event Grid Partner Topics
 - Event Grid Partner Namespaces
@@ -90,12 +90,12 @@ ms.date: 10/13/2022
 - Azure Stack HCI
 - Container Registries
 - Storage Accounts
-- Key Vaults
 - Cognitive Services
-- Media Services
 - Azure Spring Cloud
 - Batch Accounts
 - Analysis Services
+- Workload Monitor
+- Time Series Insights Environments
 - SignalR
 - Service Bus
 

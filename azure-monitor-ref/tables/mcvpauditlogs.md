@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/13/2022
+ms.date: 10/27/2022
 ---
 
 # MCVPAuditLogs
@@ -41,7 +41,9 @@ ms.date: 10/13/2022
 | OperationResultDescription | string | The operation request result description. The column will contain information if the OperationResult value is other than Success or Fail. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |
+| SpanId | string | An identifier of the request as known by the caller. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | Timestamp (in UTC) when the audit log was created. |
+| TraceId | string | An identifier for distributed tracing through a system (W3C TraceContext). |
 | Type | string | The name of the table |

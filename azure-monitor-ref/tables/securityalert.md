@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/13/2022
+ms.date: 10/27/2022
 ---
 
 # SecurityAlert
@@ -34,6 +34,7 @@ ms.date: 10/13/2022
 | AlertLink | string |  |
 | AlertName | string |  |
 | AlertSeverity | string |  |
+| AlertType | string |  |
 | CompromisedEntity | string |  |
 | ConfidenceLevel | string |  |
 | ConfidenceScore | real |  |
