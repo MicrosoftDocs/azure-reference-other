@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/13/2022
+ms.date: 10/27/2022
 ---
 
 # AzureActivity
@@ -33,8 +33,8 @@ ms.date: 10/13/2022
 - Logic Apps
 - Service Fabric Clusters
 - IoT Hub
-- Power BI Embedded
 - Azure Monitor autoscale settings
+- Azure Databricks Services
 - Azure Arc enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
@@ -44,9 +44,10 @@ ms.date: 10/13/2022
 - Event Grid Partner Topics
 - Event Grid Partner Namespaces
 - Event Grid Domains
-- Azure Databricks Services
+- Azure Blockchain Service
+- Power BI Embedded
+- Azure AD Domain Services
 - Data Share
-- SQL Managed Instances
 - SQL Servers
 - Bastions
 - Stream Analytics jobs
@@ -69,11 +70,10 @@ ms.date: 10/13/2022
 - Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
 - SQL Databases
-- Azure Blockchain Service
-- Azure AD Domain Services
+- SQL Managed Instances
+- Azure API for FHIR
 - Azure Data Explorer Clusters
-- Container Registries
-- Dynamics 365 Customer Insights
+- SignalR
 - Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
@@ -83,6 +83,7 @@ ms.date: 10/13/2022
 - Kubernetes Services
 - Azure Managed Instance for Apache Cassandra
 - Azure Load Testing
+- Key Vaults
 - Azure Managed Workspace for Grafana
 - Firewalls
 - Event Grid Topics
@@ -94,15 +95,12 @@ ms.date: 10/13/2022
 - Azure Attestation
 - Azure Autonomous Development Platform workspace
 - App Services
-- Azure Database for PostgreSQL Flexible Servers
-- Azure API for FHIR
+- Container Apps
+- Container Registries
+- Dynamics 365 Customer Insights
 - Experiment Workspace
-- Machine Learning
-- SignalR
 - Storage Accounts
-- Key Vaults
 - Cognitive Services
-- Media Services
 - Azure Spring Cloud
 - CDN Profiles
 - Batch Accounts
@@ -119,7 +117,10 @@ ms.date: 10/13/2022
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Virtual machines
+- Media Services
+- Machine Learning
 - HDInsight Clusters
+- Azure Database for PostgreSQL Flexible Servers
 - Service Bus
 
 

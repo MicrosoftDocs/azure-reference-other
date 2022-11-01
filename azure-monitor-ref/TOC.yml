@@ -54,6 +54,8 @@
     href: tables/acsbillingusage.md
   - name: ACSCallDiagnostics
     href: tables/acscalldiagnostics.md
+  - name: ACSCallRecordingSummary
+    href: tables/acscallrecordingsummary.md
   - name: ACSCallSummary
     href: tables/acscallsummary.md
   - name: ACSChatIncomingOperations
@@ -68,6 +70,8 @@
     href: tables/acsnetworktraversaldiagnostics.md
   - name: ACSNetworkTraversalIncomingOperations
     href: tables/acsnetworktraversalincomingoperations.md
+  - name: ACSRoomsIncomingOperations
+    href: tables/acsroomsincomingoperations.md
   - name: ACSSMSIncomingOperations
     href: tables/acssmsincomingoperations.md
   - name: ADAssessmentRecommendation
@@ -260,8 +264,6 @@
     href: tables/appserviceipsecauditlogs.md
   - name: AppServicePlatformLogs
     href: tables/appserviceplatformlogs.md
-  - name: AppServiceServerlessSecurityPluginData
-    href: tables/appserviceserverlesssecurityplugindata.md
   - name: AppSystemEvents
     href: tables/appsystemevents.md
   - name: AppTraces
@@ -632,6 +634,8 @@
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
   - name: MicrosoftHealthcareApisAuditLogs
     href: tables/microsofthealthcareapisauditlogs.md
+  - name: MicrosoftPurviewInformationProtection
+    href: tables/microsoftpurviewinformationprotection.md
   - name: NetworkAccessTraffic
     href: tables/networkaccesstraffic.md
   - name: NetworkSessions

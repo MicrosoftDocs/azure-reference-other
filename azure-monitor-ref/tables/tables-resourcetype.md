@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/13/2022
+ms.date: 10/27/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -34,7 +34,6 @@ ms.date: 10/13/2022
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
-- [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
@@ -320,6 +319,9 @@ ms.date: 10/13/2022
 ## Azure Sentinel Watchlist
 
 
+## Azure Sphere
+
+
 ## Azure Spring Cloud
 
 - [AppPlatformBuildLogs](appplatformbuildlogs.md)
@@ -412,6 +414,7 @@ ms.date: 10/13/2022
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
+- [ACSCallRecordingSummary](acscallrecordingsummary.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
 - [ACSEmailSendMailOperational](acsemailsendmailoperational.md)
@@ -419,9 +422,16 @@ ms.date: 10/13/2022
 - [ACSEmailUserEngagementOperational](acsemailuserengagementoperational.md)
 - [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
+- [ACSRoomsIncomingOperations](acsroomsincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+
+## Container Apps
+
+- [AzureActivity](azureactivity.md)
+- [ContainerAppConsoleLogs](containerappconsolelogs.md)
+- [ContainerAppSystemLogs](containerappsystemlogs.md)
 
 ## Container Registries
 
@@ -671,6 +681,7 @@ ms.date: 10/13/2022
 - [KubePVInventory](kubepvinventory.md)
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
+- [Syslog](syslog.md)
 
 ## Load Balancers
 

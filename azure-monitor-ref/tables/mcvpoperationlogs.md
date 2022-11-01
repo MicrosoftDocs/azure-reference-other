@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/13/2022
+ms.date: 10/27/2022
 ---
 
 # MCVPOperationLogs
@@ -34,6 +34,7 @@ ms.date: 10/13/2022
 | Message | string | The general log message. |
 | OperationName | string | The operation name where the log was created. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SeverityText | string | The log severity. |
 | SourceSystem | string |  |
 | SpanId | string | An identifier of the request as known by the caller. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
