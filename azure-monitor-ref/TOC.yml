@@ -58,3 +58,5 @@
     href: tables/acscallrecordingsummary.md
   - name: ACSCallSummary
     href: tables/acscallsummary.md
+  - name: ACSChatIncomingOperations
+    href: tables/acschatincomingoperations.md
