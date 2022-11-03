@@ -594,3 +594,5 @@
     href: tables/insightsmetrics.md
   - name: IntuneDeviceComplianceOrg
     href: tables/intunedevicecomplianceorg.md
+  - name: IntuneDevices
+    href: tables/intunedevices.md
