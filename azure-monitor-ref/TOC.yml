@@ -722,3 +722,5 @@
     href: tables/securityregulatorycompliance.md
   - name: SentinelAudit
     href: tables/sentinelaudit.md
+  - name: SentinelHealth
+    href: tables/sentinelhealth.md
