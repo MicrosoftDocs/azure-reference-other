@@ -530,3 +530,5 @@
     href: tables/hdinsighthiveandllaplogs.md
   - name: HDInsightHiveAndLLAPMetrics
     href: tables/hdinsighthiveandllapmetrics.md
+  - name: HDInsightHiveQueryAppStats
+    href: tables/hdinsighthivequeryappstats.md
