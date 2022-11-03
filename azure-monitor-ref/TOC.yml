@@ -550,3 +550,5 @@
     href: tables/hdinsightsecuritylogs.md
   - name: HDInsightSparkApplicationEvents
     href: tables/hdinsightsparkapplicationevents.md
+  - name: HDInsightSparkBlockManagerEvents
+    href: tables/hdinsightsparkblockmanagerevents.md
