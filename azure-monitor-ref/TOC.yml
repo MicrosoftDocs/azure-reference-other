@@ -736,3 +736,5 @@
     href: tables/sqlvulnerabilityassessmentscanstatus.md
   - name: StorageAntimalwareScanResults
     href: tables/storageantimalwarescanresults.md
+  - name: StorageBlobLogs
+    href: tables/storagebloblogs.md
