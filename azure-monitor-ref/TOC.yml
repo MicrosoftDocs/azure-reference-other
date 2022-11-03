@@ -118,3 +118,5 @@
     href: tables/adpdiagnostics.md
   - name: ADPRequests
     href: tables/adprequests.md
+  - name: ADReplicationResult
+    href: tables/adreplicationresult.md
