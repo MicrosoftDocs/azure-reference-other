@@ -536,3 +536,5 @@
     href: tables/hdinsighthivetezappstats.md
   - name: HDInsightJupyterNotebookEvents
     href: tables/hdinsightjupyternotebookevents.md
+  - name: HDInsightKafkaLogs
+    href: tables/hdinsightkafkalogs.md
