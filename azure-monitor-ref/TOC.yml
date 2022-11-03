@@ -632,3 +632,5 @@
     href: tables/mcvpauditlogs.md
   - name: MCVPOperationLogs
     href: tables/mcvpoperationlogs.md
+  - name: MicrosoftAzureBastionAuditLogs
+    href: tables/microsoftazurebastionauditlogs.md
