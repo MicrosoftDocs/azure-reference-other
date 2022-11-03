@@ -404,3 +404,5 @@
     href: tables/databricksgenie.md
   - name: DatabricksGitCredentials
     href: tables/databricksgitcredentials.md
+  - name: DatabricksGlobalInitScripts
+    href: tables/databricksglobalinitscripts.md
