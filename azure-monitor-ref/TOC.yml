@@ -458,3 +458,5 @@
     href: tables/devicelogonevents.md
   - name: DeviceNetworkEvents
     href: tables/devicenetworkevents.md
+  - name: DeviceNetworkInfo
+    href: tables/devicenetworkinfo.md
