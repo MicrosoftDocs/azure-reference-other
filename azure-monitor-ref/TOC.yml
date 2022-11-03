@@ -564,3 +564,5 @@
     href: tables/hdinsightsparklogs.md
   - name: HDInsightSparkSQLExecutionEvents
     href: tables/hdinsightsparksqlexecutionevents.md
+  - name: HDInsightSparkStageEvents
+    href: tables/hdinsightsparkstageevents.md
