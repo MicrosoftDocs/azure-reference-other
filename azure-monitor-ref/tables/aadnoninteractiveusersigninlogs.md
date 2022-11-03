@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # AADNonInteractiveUserSignInLogs
@@ -31,6 +31,7 @@ ms.date: 10/27/2022
 | AlternateSignInName | string | Provides the on-premises UPN of the user sign-ing into Azure AD.e.g. Phone number sign-in |
 | AppDisplayName | string | App name displayed in the Azure portal |
 | AppId | string | Unique GUID representing the app ID in the Azure Active Directory |
+| AppliedEventListeners | dynamic | Detailed information about the applied event listeners or listeners that are triggered by the corresponding events in an authentication activity. It's called appliedEventListeners in ALP and MSGraph, but use Authentication Events to match name on UX. |
 | AuthenticationContextClassReferences | string | The authentication contexts of the sign-in |
 | AuthenticationDetails | string | A record of each step of authentication undertaken in the sign-in |
 | AuthenticationMethodsUsed | string | List of authentication methods used |
