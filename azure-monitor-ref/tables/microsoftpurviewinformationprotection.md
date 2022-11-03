@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # MicrosoftPurviewInformationProtection
@@ -38,10 +38,10 @@ ms.date: 10/27/2022
 | ConditionMatch | dynamic | The condition match that triggered the auto labeling. |
 | ContentType | string | Content type. |
 | CorrelationId | string | Correlation ID. |
+| CurrentProtectionType | dynamic | Current protection event information. |
+| CurrentProtectionTypeName | string | The type of protection applied. |
 | DataState | string | Azure Information Protection - data state. |
 | DeviceName | string | The device on which the activity happened. |
-| DocumentEncrypted | bool | Determines if the document is encrypted. |
-| DocumentEncryptedBefore | bool | Determines if the document was previously encrypted. |
 | EmailInfo | dynamic | The information required when the internalTarget is an email. |
 | ExchangeMetaData | dynamic | Exchange auto labeling metadata. |
 | ExecutionRuleId | string | The ID of the rule that was executed. |
@@ -74,12 +74,10 @@ ms.date: 10/27/2022
 | PolicyId | string | Policy ID. |
 | PolicyName | string | Policy name. |
 | PolicyVersion | string | Policy version. |
+| PreviousProtectionType | dynamic | Previous protection event information. |
+| PreviousProtectionTypeName | string | Previous protection type. |
 | ProtectionEventData | dynamic | Azure Information Protection - protection event data. |
 | ProtectionEventTypeName | string | Protection event type name. |
-| ProtectionOwner | string | The owner of the protection rule. |
-| ProtectionOwnerBefore | string | Previous owner of the protection rule. |
-| ProtectionType | string | The type of protection applied. |
-| ProtectionTypeBefore | string | Previous protection type. |
 | Receivers | dynamic | The email addresses of the receivers. |
 | RecordType | int | The type of operation indicated by the record. |
 | RecordTypeName | string | The record type name. |
@@ -98,8 +96,6 @@ ms.date: 10/27/2022
 | SharePointMetaData | dynamic | SharePoint auto labeling metadata. |
 | SourceSystem | string |  |
 | TargetLocation | string | The location of the document with respect to the user' device. |
-| TemplateId | string | Template ID. |
-| TemplateIdBefore | string | Previous templated ID. |
 | TenantId | string |  |
 | TimeGenerated | datetime | The date and time when the user performed the activity. |
 | Type | string | The name of the table |
