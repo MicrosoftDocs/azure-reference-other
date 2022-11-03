@@ -54,3 +54,5 @@
     href: tables/acsbillingusage.md
   - name: ACSCallDiagnostics
     href: tables/acscalldiagnostics.md
+  - name: ACSCallRecordingSummary
+    href: tables/acscallrecordingsummary.md
