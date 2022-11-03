@@ -588,3 +588,5 @@
     href: tables/identityinfo.md
   - name: IdentityLogonEvents
     href: tables/identitylogonevents.md
+  - name: IdentityQueryEvents
+    href: tables/identityqueryevents.md
