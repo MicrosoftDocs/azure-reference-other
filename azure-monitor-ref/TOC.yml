@@ -104,3 +104,5 @@
     href: tables/adfssispackageeventmessagecontext.md
   - name: ADFSSISPackageEventMessages
     href: tables/adfssispackageeventmessages.md
+  - name: ADFSSISPackageExecutableStatistics
+    href: tables/adfssispackageexecutablestatistics.md
