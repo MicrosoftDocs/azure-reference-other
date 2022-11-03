@@ -490,3 +490,5 @@
     href: tables/dynamiceventcollection.md
   - name: Dynamics365Activity
     href: tables/dynamics365activity.md
+  - name: DynamicSummary
+    href: tables/dynamicsummary.md
