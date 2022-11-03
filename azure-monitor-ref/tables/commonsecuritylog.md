@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # CommonSecurityLog
@@ -77,11 +77,11 @@ ms.date: 10/27/2022
 | DeviceCustomIPv6Address3Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
 | DeviceCustomIPv6Address4 | string | One of four IPv6 address fields available to map fields that do not apply to any other in this dictionary. |
 | DeviceCustomIPv6Address4Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
-| DeviceCustomNumber1 | int | One of three number fields available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. |
+| DeviceCustomNumber1 | int | Soon to be a deprecated field. Will be replaced by FieldDeviceCustomNumber1. |
 | DeviceCustomNumber1Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
-| DeviceCustomNumber2 | int | One of three number fields available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. |
+| DeviceCustomNumber2 | int | Soon to be a deprecated field. Will be replaced by FieldDeviceCustomNumber2. |
 | DeviceCustomNumber2Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
-| DeviceCustomNumber3 | int | One of three number fields available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. |
+| DeviceCustomNumber3 | int | Soon to be a deprecated field. Will be replaced by FieldDeviceCustomNumber3. |
 | DeviceCustomNumber3Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
 | DeviceCustomString1 | string | One of six strings available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. |
 | DeviceCustomString1Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
@@ -96,6 +96,7 @@ ms.date: 10/27/2022
 | DeviceCustomString6 | string | One of six strings available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. |
 | DeviceCustomString6Label | string | All custom fields have a corresponding label field. Each of these fields is a string and describes the purpose of the custom field. |
 | DeviceDnsDomain | string | The DNS domain part of the full qualified domain name (FQDN). |
+| DeviceEventCategory | string | Represents the category assigned by the originating device. Devices often use their own categorization schema to classify event. Example: '/Monitor/Disk/Read'. |
 | DeviceEventClassID | string |  |
 | DeviceExternalID | string | A name that uniquely identifies the device generating the event. |
 | DeviceFacility | string |  |
@@ -112,8 +113,13 @@ ms.date: 10/27/2022
 | DeviceVersion | string | String that together with device product and version definitions, uniquely identifies the type of sending device. |
 | EndTime | datetime | The time at which the activity related to the event ended. |
 | EventCount | int | A count associated with the event, showing how many times the same event was observed. |
+| EventOutcome | string | Displays the outcome, usually as ‘success’ or ‘failure’. |
 | EventType | int | Event type. Value values include: 0: base event, 1: aggregated, 2: correlation event, 3: action event. Note: This event can be omitted for base events. |
-| ExternalID | int | An ID used by the originating device. Typically, these values have increasing values that are each associated with an event. |
+| ExternalID | int | Soon to be a deprecated field. Will be replaced by ExtID. |
+| ExtID | string | An ID used by the originating device (will replace legacy ExternalID). Typically, these values have increasing values that are each associated with an event. |
+| FieldDeviceCustomNumber1 | long | One of three number fields available to map fields that do not apply to any other in this dictionary (will replace legacy DeviceCustomNumber1). Use sparingly and seek a more specific, dictionary supplied field when possible. |
+| FieldDeviceCustomNumber2 | long | One of three number fields available to map fields that do not apply to any other in this dictionary (will replace legacy DeviceCustomNumber2). Use sparingly and seek a more specific, dictionary supplied field when possible. |
+| FieldDeviceCustomNumber3 | long | One of three number fields available to map fields that do not apply to any other in this dictionary (will replace legacy DeviceCustomNumber3). Use sparingly and seek a more specific, dictionary supplied field when possible. |
 | FileCreateTime | string | Time when the file was created. |
 | FileHash | string | Hash of a file. |
 | FileID | string | An ID associated with a file, such as the inode. |
@@ -153,6 +159,7 @@ ms.date: 10/27/2022
 | ProcessID | int | Defines the ID of the process on the device generating the event. |
 | ProcessName | string | Process name associated with the event. For example: in UNIX, the process generating the syslog entry. |
 | Protocol | string |  |
+| Reason | string | The reason an audit event was generated. For example 'bad password' or 'unknown user'. This could also be an error or return code. Example: '0x1234'. |
 | ReceiptTime | string |  |
 | ReceivedBytes | long | Number of bytes transferred inbound. |
 | RemoteIP | string |  |
