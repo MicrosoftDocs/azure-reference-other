@@ -808,3 +808,5 @@
     href: tables/tsiingress.md
   - name: UAComputerRank
     href: tables/uacomputerrank.md
+  - name: UASysReqIssue
+    href: tables/uasysreqissue.md
