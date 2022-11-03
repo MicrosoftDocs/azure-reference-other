@@ -138,3 +138,5 @@
     href: tables/adxjournal.md
   - name: ADXQuery
     href: tables/adxquery.md
+  - name: ADXTableDetails
+    href: tables/adxtabledetails.md
