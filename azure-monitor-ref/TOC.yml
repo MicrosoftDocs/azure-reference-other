@@ -576,3 +576,5 @@
     href: tables/hdinsightstormmetrics.md
   - name: HDInsightStormTopologyMetrics
     href: tables/hdinsightstormtopologymetrics.md
+  - name: HealthStateChangeEvent
+    href: tables/healthstatechangeevent.md
