@@ -67,7 +67,7 @@ ms.date: 11/3/2022
 | PermGenBefore | long | Permanent Generation space before garbage collection (in bytes). Permanent generation stores classes metadata (renamed to Metaspace in Java 8). |
 | RequestedColumns | int | The number of columns requested. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SessionId | string | Unique string identifying what query was running when this log was emitted. Use SHOW SESSION <SessionId> to find details of the query's activity. |
+| SessionId | string | Unique string identifying what query was running when this log was emitted. Use SHOW SESSION &lt;SessionId&gt; to find details of the query's activity. |
 | SliceEnd | string | The end of the the column slice inclusive. |
 | SliceStart | string | The start of the column slice inclusive. |
 | SourceFile | string | File name where the logging request was issued. |
