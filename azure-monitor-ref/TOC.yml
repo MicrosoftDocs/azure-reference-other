@@ -534,3 +534,5 @@
     href: tables/hdinsighthivequeryappstats.md
   - name: HDInsightHiveTezAppStats
     href: tables/hdinsighthivetezappstats.md
+  - name: HDInsightJupyterNotebookEvents
+    href: tables/hdinsightjupyternotebookevents.md
