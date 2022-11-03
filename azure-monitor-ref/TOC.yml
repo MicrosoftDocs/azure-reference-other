@@ -136,3 +136,5 @@
     href: tables/adxingestionbatching.md
   - name: ADXJournal
     href: tables/adxjournal.md
+  - name: ADXQuery
+    href: tables/adxquery.md
