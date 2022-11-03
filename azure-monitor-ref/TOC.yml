@@ -824,3 +824,5 @@
     href: tables/ucdostatus.md
   - name: UCServiceUpdateStatus
     href: tables/ucserviceupdatestatus.md
+  - name: UCUpdateAlert
+    href: tables/ucupdatealert.md
