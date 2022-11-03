@@ -880,3 +880,5 @@
     href: tables/wvderrors.md
   - name: WVDFeeds
     href: tables/wvdfeeds.md
+  - name: WVDHostRegistrations
+    href: tables/wvdhostregistrations.md
