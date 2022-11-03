@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -34,6 +34,7 @@ ms.date: 10/27/2022
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
+- [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
@@ -334,6 +335,11 @@ ms.date: 10/27/2022
 
 ## Azure Stack HCI
 
+- [Event](event.md)
+- [Perf](perf.md)
+
+## Azure Stack HCI
+
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
 - [ADReplicationResult](adreplicationresult.md)
 - [AzureActivity](azureactivity.md)
@@ -588,6 +594,7 @@ ms.date: 10/27/2022
 - [AZFWApplicationRule](azfwapplicationrule.md)
 - [AZFWApplicationRuleAggregation](azfwapplicationruleaggregation.md)
 - [AZFWDnsQuery](azfwdnsquery.md)
+- [AZFWFatFlow](azfwfatflow.md)
 - [AZFWIdpsSignature](azfwidpssignature.md)
 - [AZFWInternalFqdnResolutionFailure](azfwinternalfqdnresolutionfailure.md)
 - [AZFWNatRule](azfwnatrule.md)
@@ -728,6 +735,8 @@ ms.date: 10/27/2022
 
 ## Media Services
 
+- [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
+- [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -835,6 +844,9 @@ ms.date: 10/27/2022
 
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
+
+## Power BI Datasets
+
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
