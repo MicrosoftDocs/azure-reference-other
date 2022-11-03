@@ -702,3 +702,5 @@
     href: tables/purviewdatasensitivitylogs.md
   - name: PurviewScanStatusLogs
     href: tables/purviewscanstatuslogs.md
+  - name: PurviewSecurityLogs
+    href: tables/purviewsecuritylogs.md
