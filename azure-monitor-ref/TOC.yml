@@ -764,3 +764,5 @@
     href: tables/synapsedxingestionbatching.md
   - name: SynapseDXQuery
     href: tables/synapsedxquery.md
+  - name: SynapseDXSucceededIngestion
+    href: tables/synapsedxsucceededingestion.md
