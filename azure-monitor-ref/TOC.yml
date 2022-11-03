@@ -216,3 +216,5 @@
     href: tables/amskeydeliveryrequests.md
   - name: AMSMediaAccountHealth
     href: tables/amsmediaaccounthealth.md
+  - name: ANFFileAccess
+    href: tables/anffileaccess.md
