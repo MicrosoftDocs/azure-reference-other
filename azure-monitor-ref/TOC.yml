@@ -784,3 +784,5 @@
     href: tables/synapselinkevent.md
   - name: SynapseRBACEvents
     href: tables/synapserbacevents.md
+  - name: SynapseRbacOperations
+    href: tables/synapserbacoperations.md
