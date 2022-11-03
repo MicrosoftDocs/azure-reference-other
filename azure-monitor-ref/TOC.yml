@@ -712,3 +712,5 @@
     href: tables/securescores.md
   - name: SecurityBaseline
     href: tables/securitybaseline.md
+  - name: SecurityBaselineSummary
+    href: tables/securitybaselinesummary.md
