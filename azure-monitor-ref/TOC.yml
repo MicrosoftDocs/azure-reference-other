@@ -398,3 +398,5 @@
     href: tables/databricksdbfs.md
   - name: DatabricksDeltaPipelines
     href: tables/databricksdeltapipelines.md
+  - name: DatabricksFeatureStore
+    href: tables/databricksfeaturestore.md
