@@ -878,3 +878,5 @@
     href: tables/wvdconnections.md
   - name: WVDErrors
     href: tables/wvderrors.md
+  - name: WVDFeeds
+    href: tables/wvdfeeds.md
