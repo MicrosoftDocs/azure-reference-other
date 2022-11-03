@@ -140,3 +140,5 @@
     href: tables/adxquery.md
   - name: ADXTableDetails
     href: tables/adxtabledetails.md
+  - name: ADXTableUsageStatistics
+    href: tables/adxtableusagestatistics.md
