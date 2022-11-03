@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # UCDOAggregatedStatus
@@ -18,6 +18,7 @@ ms.date: 10/27/2022
 - Desktop Analytics
 ## Solutions
 
+- LogManagement
 - Update Compliance
 
 
