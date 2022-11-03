@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # UCClientReadinessStatus
@@ -15,6 +15,7 @@ ms.date: 10/27/2022
 
 ## Solutions
 
+- LogManagement
 - Update Compliance
 
 
@@ -29,7 +30,7 @@ ms.date: 10/27/2022
 | DeviceName | string | The Device given name. |
 | GlobalDeviceId | string | Microsoft internal global device identifier. |
 | OSBuild | string | The currently-installed Windows 10 Build in the format 'Major'.'Revision'. 'Major' corresponds to which Feature Update the device is on, whereas 'Revision' corresponds to which quality update the device is on. Mappings between Feature release and Major, as well as Revision and KBs, are available aka.ms/win10releaseinfo. |
-| OSName  | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |
+| OSName | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |
 | OSVersion | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |
 | ReadinessExpiryTime | datetime | The time the readiness report expires. |
 | ReadinessReason | string | Reason why the device is not capable of taking target OS and version. |

@@ -212,6 +212,10 @@
     href: tables/amlrunevent.md
   - name: AmlRunStatusChangedEvent
     href: tables/amlrunstatuschangedevent.md
+  - name: AMSKeyDeliveryRequests
+    href: tables/amskeydeliveryrequests.md
+  - name: AMSMediaAccountHealth
+    href: tables/amsmediaaccounthealth.md
   - name: ANFFileAccess
     href: tables/anffileaccess.md
   - name: Anomalies
@@ -264,6 +268,8 @@
     href: tables/appserviceipsecauditlogs.md
   - name: AppServicePlatformLogs
     href: tables/appserviceplatformlogs.md
+  - name: AppServiceServerlessSecurityPluginData
+    href: tables/appserviceserverlesssecurityplugindata.md
   - name: AppSystemEvents
     href: tables/appsystemevents.md
   - name: AppTraces
@@ -292,6 +298,8 @@
     href: tables/azfwapplicationruleaggregation.md
   - name: AZFWDnsQuery
     href: tables/azfwdnsquery.md
+  - name: AZFWFatFlow
+    href: tables/azfwfatflow.md
   - name: AZFWIdpsSignature
     href: tables/azfwidpssignature.md
   - name: AZFWInternalFqdnResolutionFailure
@@ -482,6 +490,8 @@
     href: tables/dynamiceventcollection.md
   - name: Dynamics365Activity
     href: tables/dynamics365activity.md
+  - name: DynamicSummary
+    href: tables/dynamicsummary.md
   - name: EmailAttachmentInfo
     href: tables/emailattachmentinfo.md
   - name: EmailEvents
@@ -530,6 +540,8 @@
     href: tables/hdinsightkafkalogs.md
   - name: HDInsightKafkaMetrics
     href: tables/hdinsightkafkametrics.md
+  - name: HDInsightKafkaServerLog
+    href: tables/hdinsightkafkaserverlog.md
   - name: HDInsightOozieLogs
     href: tables/hdinsightoozielogs.md
   - name: HDInsightRangerAuditLogs
