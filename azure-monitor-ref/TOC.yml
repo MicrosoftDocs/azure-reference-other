@@ -244,3 +244,5 @@
     href: tables/appplatformcontainereventlogs.md
   - name: AppPlatformIngressLogs
     href: tables/appplatformingresslogs.md
+  - name: AppPlatformLogsforSpring
+    href: tables/appplatformlogsforspring.md
