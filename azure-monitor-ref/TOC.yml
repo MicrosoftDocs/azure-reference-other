@@ -860,3 +860,5 @@
     href: tables/webpubsubhttprequest.md
   - name: WebPubSubMessaging
     href: tables/webpubsubmessaging.md
+  - name: WindowsEvent
+    href: tables/windowsevent.md
