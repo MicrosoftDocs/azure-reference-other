@@ -150,3 +150,5 @@
     href: tables/aegpublishfailurelogs.md
   - name: AEWAuditLogs
     href: tables/aewauditlogs.md
+  - name: AEWComputePipelinesLogs
+    href: tables/aewcomputepipelineslogs.md
