@@ -348,3 +348,5 @@
     href: tables/cdbmongorequests.md
   - name: CDBPartitionKeyRUConsumption
     href: tables/cdbpartitionkeyruconsumption.md
+  - name: CDBPartitionKeyStatistics
+    href: tables/cdbpartitionkeystatistics.md
