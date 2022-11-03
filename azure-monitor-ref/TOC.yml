@@ -380,3 +380,5 @@
     href: tables/containerlog.md
   - name: ContainerLogV2
     href: tables/containerlogv2.md
+  - name: ContainerNodeInventory
+    href: tables/containernodeinventory.md
