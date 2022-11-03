@@ -390,3 +390,5 @@
     href: tables/containerservicelog.md
   - name: DatabricksAccounts
     href: tables/databricksaccounts.md
+  - name: DatabricksClusters
+    href: tables/databricksclusters.md
