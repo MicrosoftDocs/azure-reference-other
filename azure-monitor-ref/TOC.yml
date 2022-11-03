@@ -92,3 +92,5 @@
     href: tables/adfairflowweblogs.md
   - name: ADFAirflowWorkerLogs
     href: tables/adfairflowworkerlogs.md
+  - name: ADFPipelineRun
+    href: tables/adfpipelinerun.md
