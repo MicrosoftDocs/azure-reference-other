@@ -41,7 +41,7 @@ ms.date: 11/3/2022
 | DestinationPort | string | Destination port of related network communications |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device |
 | IPAddress | string | IP address assigned to the endpoint and used during related network communications |
-| Location | string | City, country, or other geographic location associated with the event |
+| Location | string | City, country/region, or other geographic location associated with the event |
 | Port | string | TCP port used during communication |
 | Protocol | string | Protocol used during the communication |
 | Query | string | String used to run the query |
