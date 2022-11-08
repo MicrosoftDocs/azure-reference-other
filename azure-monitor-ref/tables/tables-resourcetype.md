@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -34,6 +34,7 @@ ms.date: 10/27/2022
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
+- [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FunctionAppLogs](functionapplogs.md)
@@ -588,6 +589,7 @@ ms.date: 10/27/2022
 - [AZFWApplicationRule](azfwapplicationrule.md)
 - [AZFWApplicationRuleAggregation](azfwapplicationruleaggregation.md)
 - [AZFWDnsQuery](azfwdnsquery.md)
+- [AZFWFatFlow](azfwfatflow.md)
 - [AZFWIdpsSignature](azfwidpssignature.md)
 - [AZFWInternalFqdnResolutionFailure](azfwinternalfqdnresolutionfailure.md)
 - [AZFWNatRule](azfwnatrule.md)
@@ -728,6 +730,8 @@ ms.date: 10/27/2022
 
 ## Media Services
 
+- [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
+- [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)

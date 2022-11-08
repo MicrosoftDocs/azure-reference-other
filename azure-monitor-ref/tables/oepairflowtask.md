@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # OEPAirFlowTask
 
- Diagnostic Logs for AirFlow Task execution having task name, task details.
+ Diagnostic logs for AirFlow task execution having task name, task details.
 
 ## Categories
 

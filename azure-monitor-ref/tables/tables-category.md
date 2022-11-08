@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -63,6 +63,8 @@ ms.date: 10/27/2022
 - [AmlOnlineEndpointTrafficLog](amlonlineendpointtrafficlog.md)
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
+- [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
+- [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
@@ -170,6 +172,8 @@ ms.date: 10/27/2022
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
+- [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
+- [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [ANFFileAccess](anffileaccess.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
@@ -472,6 +476,7 @@ ms.date: 10/27/2022
 - [AlertEvidence](alertevidence.md)
 - [Anomalies](anomalies.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
+- [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
@@ -480,6 +485,7 @@ ms.date: 10/27/2022
 - [AZFWApplicationRule](azfwapplicationrule.md)
 - [AZFWApplicationRuleAggregation](azfwapplicationruleaggregation.md)
 - [AZFWDnsQuery](azfwdnsquery.md)
+- [AZFWFatFlow](azfwfatflow.md)
 - [AZFWIdpsSignature](azfwidpssignature.md)
 - [AZFWInternalFqdnResolutionFailure](azfwinternalfqdnresolutionfailure.md)
 - [AZFWNatRule](azfwnatrule.md)
@@ -510,6 +516,7 @@ ms.date: 10/27/2022
 - [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
 - [DSMDataLabelingLogs](dsmdatalabelinglogs.md)
 - [DynamicEventCollection](dynamiceventcollection.md)
+- [DynamicSummary](dynamicsummary.md)
 - [EmailAttachmentInfo](emailattachmentinfo.md)
 - [EmailEvents](emailevents.md)
 - [EmailPostDeliveryEvents](emailpostdeliveryevents.md)

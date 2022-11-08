@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # AgriFoodApplicationAuditLogs
@@ -32,7 +32,7 @@ ms.date: 10/27/2022
 | Column | Type | Description |
 | --- | --- | --- |
 | CallerIpAddress | string | IP address of the client that made the request. |
-| Category | string | Logs generated as a result of operations executed using FarmBeats APIs are grouped into categories. Categories in FarmBeats are logical groupings based on either the data source the underlying APIs fetch data from or on the basis of hierarchy of entities in FarmBeats. Another criteria for grouping into categories is the type of log generated i.e. privileged operations are in a separate category. These categories can have any value such as FarmManagementLogs, FarmOperationLogs, SatelliteLogs, WeatherLogs, ProviderAuthLogs, ApplicationAuditLogs etc. |
+| Category | string | Logs generated as a result of operations executed using FarmBeats APIs are grouped into categories. Categories in FarmBeats are logical groupings based on either the data source the underlying APIs fetch data from or on the basis of hierarchy of entities in FarmBeats. |
 | CorrelationId | string | Unique identifier to be used to correlate logs, when available. |
 | DataPlaneResourceId | string | ID that uniquely identifies a FarmBeats resource such as a Farm, Farmer, Boundary etc. |
 | Identity | dynamic | Identity from the token that was presented in the REST API request. |

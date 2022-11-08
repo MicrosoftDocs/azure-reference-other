@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/27/2022
+ms.date: 11/3/2022
 ---
 
 # IdentityLogonEvents
@@ -44,7 +44,7 @@ ms.date: 10/27/2022
 | FailureReason | string | Information explaining why the recorded action failed |
 | IPAddress | string | IP address assigned to the endpoint and used during related network communications |
 | ISP | string | Internet service provider (ISP) associated with the endpoint IP address |
-| Location | string | City, country, or other geographic location associated with the event |
+| Location | string | City, country/region, or other geographic location associated with the event |
 | LogonType | string | Type of logon session |
 | OSPlatform | string | Platform of the operating system running on the machine |
 | Port | string | TCP port used during communication |
