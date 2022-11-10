@@ -822,3 +822,5 @@
     href: tables/ucdoaggregatedstatus.md
   - name: UCDOStatus
     href: tables/ucdostatus.md
+  - name: UCServiceUpdateStatus
+    href: tables/ucserviceupdatestatus.md
