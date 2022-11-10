@@ -462,3 +462,5 @@
     href: tables/devicenetworkinfo.md
   - name: DeviceProcessEvents
     href: tables/deviceprocessevents.md
+  - name: DeviceRegistryEvents
+    href: tables/deviceregistryevents.md
