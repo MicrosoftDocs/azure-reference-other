@@ -56,3 +56,5 @@
     href: tables/acscalldiagnostics.md
   - name: ACSCallRecordingSummary
     href: tables/acscallrecordingsummary.md
+  - name: ACSCallSummary
+    href: tables/acscallsummary.md
