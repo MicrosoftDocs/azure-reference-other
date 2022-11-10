@@ -728,3 +728,5 @@
     href: tables/signalrservicediagnosticlogs.md
   - name: SQLAssessmentRecommendation
     href: tables/sqlassessmentrecommendation.md
+  - name: SqlAtpStatus
+    href: tables/sqlatpstatus.md
