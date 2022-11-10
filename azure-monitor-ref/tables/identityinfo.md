@@ -39,7 +39,7 @@ ms.date: 11/3/2022
 | BlastRadius | string | The potential impact of the user account in the org (low/medium/high) |
 | ChangeSource | string | The source of the latest change of the entity |
 | City | string | The city of the user account as defined in AAD |
-| Country | string | The country of the user account as defined in AAD |
+| Country | string | The country/region of the user account as defined in AAD |
 | DeletedDateTime | datetime | The date and time the user was deleted |
 | Department | string | The user account department as defined in AAD |
 | EmployeeId | string | The employee identifier assigned to the user by the organization |
