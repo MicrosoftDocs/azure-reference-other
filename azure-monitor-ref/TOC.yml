@@ -148,3 +148,5 @@
     href: tables/aegdeliveryfailurelogs.md
   - name: AegPublishFailureLogs
     href: tables/aegpublishfailurelogs.md
+  - name: AEWAuditLogs
+    href: tables/aewauditlogs.md
