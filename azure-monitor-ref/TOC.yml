@@ -356,3 +356,5 @@
     href: tables/cieventsaudit.md
   - name: CIEventsOperational
     href: tables/cieventsoperational.md
+  - name: CloudAppEvents
+    href: tables/cloudappevents.md
