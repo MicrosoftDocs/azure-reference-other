@@ -120,3 +120,5 @@
     href: tables/adprequests.md
   - name: ADReplicationResult
     href: tables/adreplicationresult.md
+  - name: ADTDataHistoryOperation
+    href: tables/adtdatahistoryoperation.md
