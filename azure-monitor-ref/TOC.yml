@@ -64,3 +64,5 @@
     href: tables/acsemailsendmailoperational.md
   - name: ACSEmailStatusUpdateOperational
     href: tables/acsemailstatusupdateoperational.md
+  - name: ACSEmailUserEngagementOperational
+    href: tables/acsemailuserengagementoperational.md
