@@ -772,3 +772,5 @@
     href: tables/synapsedxtableusagestatistics.md
   - name: SynapseGatewayApiRequests
     href: tables/synapsegatewayapirequests.md
+  - name: SynapseGatewayEvents
+    href: tables/synapsegatewayevents.md
