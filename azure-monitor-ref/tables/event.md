@@ -43,7 +43,7 @@ ms.date: 11/10/2022
 | EventLevel | int | Severity of the event in numeric form. |
 | EventLevelName | string | Severity of the event in text form. |
 | EventLog | string | Name of the event log that the event was collected from. |
-| ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-<workspace ID> |
+| ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-&lt;workspace ID&gt; |
 | Message | string | Event message for the different Languages. The language is defined by the LCID attribute. |
 | ParameterXml | string | Event parameter values in XML format. |
 | RenderedDescription | string | Event description with parameter values. |
