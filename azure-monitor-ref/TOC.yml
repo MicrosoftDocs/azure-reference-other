@@ -758,3 +758,5 @@
     href: tables/synapsebuiltinsqlpoolrequestsended.md
   - name: SynapseDXCommand
     href: tables/synapsedxcommand.md
+  - name: SynapseDXFailedIngestion
+    href: tables/synapsedxfailedingestion.md
