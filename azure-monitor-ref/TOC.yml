@@ -222,3 +222,5 @@
     href: tables/anomalies.md
   - name: ApiManagementGatewayLogs
     href: tables/apimanagementgatewaylogs.md
+  - name: AppAvailabilityResults
+    href: tables/appavailabilityresults.md
