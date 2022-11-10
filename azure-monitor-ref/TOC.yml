@@ -482,3 +482,5 @@
     href: tables/dnsinventory.md
   - name: DSMAzureBlobStorageLogs
     href: tables/dsmazureblobstoragelogs.md
+  - name: DSMDataClassificationLogs
+    href: tables/dsmdataclassificationlogs.md
