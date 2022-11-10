@@ -130,3 +130,5 @@
     href: tables/adtmodelsoperation.md
   - name: ADTQueryOperation
     href: tables/adtqueryoperation.md
+  - name: ADXCommand
+    href: tables/adxcommand.md
