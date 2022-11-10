@@ -568,3 +568,5 @@
     href: tables/hdinsightsparkstageevents.md
   - name: HDInsightSparkStageTaskAccumulables
     href: tables/hdinsightsparkstagetaskaccumulables.md
+  - name: HDInsightSparkTaskEvents
+    href: tables/hdinsightsparktaskevents.md
