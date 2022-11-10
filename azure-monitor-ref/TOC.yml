@@ -86,3 +86,5 @@
     href: tables/addonazurebackupstorage.md
   - name: ADFAirflowSchedulerLogs
     href: tables/adfairflowschedulerlogs.md
+  - name: ADFAirflowTaskLogs
+    href: tables/adfairflowtasklogs.md
