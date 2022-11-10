@@ -486,3 +486,5 @@
     href: tables/dsmdataclassificationlogs.md
   - name: DSMDataLabelingLogs
     href: tables/dsmdatalabelinglogs.md
+  - name: DynamicEventCollection
+    href: tables/dynamiceventcollection.md
