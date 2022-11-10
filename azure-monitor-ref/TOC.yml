@@ -856,3 +856,5 @@
     href: tables/watchlist.md
   - name: WebPubSubConnectivity
     href: tables/webpubsubconnectivity.md
+  - name: WebPubSubHttpRequest
+    href: tables/webpubsubhttprequest.md
