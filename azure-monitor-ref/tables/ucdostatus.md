@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/3/2022
+ms.date: 11/10/2022
 ---
 
 # UCDOStatus
@@ -40,7 +40,7 @@ ms.date: 11/3/2022
 | City | string | Approximate city device was in while downloading content, based on IP address. |
 | ContentDownloadMode | int | Device's delivery optimization download mode that was used for this content. |
 | ContentType | string | The type of content being downloaded. |
-| Country | string | Approximate country/region device was in while downloading content, based on IP address. |
+| Country | string | Approximate country device was in while downloading content, based on IP address. |
 | DeviceName | string | User or organization-provided device name. If this appears as '#', then you may need to configure devices to send device name. |
 | DOStatusDescription | string | A short description of DO's status, if any. |
 | DownloadMode | string | Device's delivery optimization download mode as configured on the device. |
