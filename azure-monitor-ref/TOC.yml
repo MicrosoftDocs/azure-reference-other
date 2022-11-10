@@ -38,3 +38,5 @@
     href: tables/aadserviceprincipalsigninlogs.md
   - name: AADUserRiskEvents
     href: tables/aaduserriskevents.md
+  - name: ABSBotRequests
+    href: tables/absbotrequests.md
