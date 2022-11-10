@@ -386,3 +386,5 @@
     href: tables/containerregistryloginevents.md
   - name: ContainerRegistryRepositoryEvents
     href: tables/containerregistryrepositoryevents.md
+  - name: ContainerServiceLog
+    href: tables/containerservicelog.md
