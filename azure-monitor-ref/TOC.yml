@@ -246,3 +246,5 @@
     href: tables/appplatformingresslogs.md
   - name: AppPlatformLogsforSpring
     href: tables/appplatformlogsforspring.md
+  - name: AppPlatformSystemLogs
+    href: tables/appplatformsystemlogs.md
