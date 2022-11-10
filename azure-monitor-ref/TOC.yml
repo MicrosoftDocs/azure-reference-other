@@ -194,3 +194,5 @@
     href: tables/amldatastoreevent.md
   - name: AmlDeploymentEvent
     href: tables/amldeploymentevent.md
+  - name: AmlEnvironmentEvent
+    href: tables/amlenvironmentevent.md
