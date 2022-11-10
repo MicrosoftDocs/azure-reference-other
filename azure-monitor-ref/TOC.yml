@@ -800,3 +800,5 @@
     href: tables/synapsesqlpoolsqlrequests.md
   - name: SynapseSqlPoolWaits
     href: tables/synapsesqlpoolwaits.md
+  - name: Syslog
+    href: tables/syslog.md
