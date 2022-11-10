@@ -228,3 +228,5 @@
     href: tables/appbrowsertimings.md
   - name: AppDependencies
     href: tables/appdependencies.md
+  - name: AppEvents
+    href: tables/appevents.md
