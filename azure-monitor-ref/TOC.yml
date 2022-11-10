@@ -544,3 +544,5 @@
     href: tables/hdinsightkafkaserverlog.md
   - name: HDInsightOozieLogs
     href: tables/hdinsightoozielogs.md
+  - name: HDInsightRangerAuditLogs
+    href: tables/hdinsightrangerauditlogs.md
