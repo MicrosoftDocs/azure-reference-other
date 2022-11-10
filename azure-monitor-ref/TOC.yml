@@ -302,3 +302,5 @@
     href: tables/azfwfatflow.md
   - name: AZFWIdpsSignature
     href: tables/azfwidpssignature.md
+  - name: AZFWInternalFqdnResolutionFailure
+    href: tables/azfwinternalfqdnresolutionfailure.md
