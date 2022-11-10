@@ -326,3 +326,5 @@
     href: tables/azureloadtestingoperation.md
   - name: AzureMetrics
     href: tables/azuremetrics.md
+  - name: BehaviorAnalytics
+    href: tables/behavioranalytics.md
