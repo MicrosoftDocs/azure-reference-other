@@ -124,3 +124,5 @@
     href: tables/adtdatahistoryoperation.md
   - name: ADTDigitalTwinsOperation
     href: tables/adtdigitaltwinsoperation.md
+  - name: ADTEventRoutesOperation
+    href: tables/adteventroutesoperation.md
