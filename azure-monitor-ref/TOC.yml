@@ -740,3 +740,5 @@
     href: tables/storagebloblogs.md
   - name: StorageCacheOperationEvents
     href: tables/storagecacheoperationevents.md
+  - name: StorageCacheUpgradeEvents
+    href: tables/storagecacheupgradeevents.md
