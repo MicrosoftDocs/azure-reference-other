@@ -440,3 +440,5 @@
     href: tables/databricksworkspace.md
   - name: DefenderIoTRawEvent
     href: tables/defenderiotrawevent.md
+  - name: DeviceAppCrash
+    href: tables/deviceappcrash.md
