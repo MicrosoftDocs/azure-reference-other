@@ -238,3 +238,5 @@
     href: tables/apppageviews.md
   - name: AppPerformanceCounters
     href: tables/appperformancecounters.md
+  - name: AppPlatformBuildLogs
+    href: tables/appplatformbuildlogs.md
