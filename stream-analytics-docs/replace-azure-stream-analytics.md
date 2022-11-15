@@ -1,12 +1,13 @@
 ---
 title: "REPLACE (Azure Stream Analytics)"
-description: "Replaces all occurrences of a specified string value with another string value."
+description: Replaces all occurrences of a specified string value with another string value.
 ms.service: stream-analytics
 ms.topic: reference
-ms.date: 01/28/2019
+ms.date: 11/11/2022
 ---
 # REPLACE (Azure Stream Analytics)
-  Replaces all occurrences of a specified string value with another string value.
+
+Replaces all occurrences of a specified string value with another string value.
 
 ## Syntax
 
@@ -40,16 +41,16 @@ SELECT REPLACE(value, pattern, replacement) AS result FROM input
 
 |Expression|Result|
 |----------|------|
-|REPLACE(‘abcde’, ‘cd’, ‘xx’)|‘abxxe’|
-|REPLACE(‘cdabcd’, ‘cd’, ‘x)|‘xabx’|
-|REPLACE(‘cd’, ‘cd’, ‘xxx’)|‘xxx’|
-|REPLACE(‘abcde’, ‘gh’, ‘xx’)|‘abcde’|
-|REPLACE(‘abcde’, ‘cde’, ‘’)|‘ab’|
-|REPLACE(‘abcde’, ‘’, ‘xxx’)|‘abcde’|
-|REPLACE(‘’, ‘cde’, ‘xxx’)|‘’|
-|REPLACE(NULL, ‘cde’, ‘xxx’)|null|
-|REPLACE(‘abcde’, NULL, ‘xxx’)|null|
-|REPLACE(‘abcde’, ‘cde’, NULL)|null|
+|REPLACE('abcde', 'cd', 'xx')|'abxxe'|
+|REPLACE('cdabcd', 'cd', 'x')|'xabx'|
+|REPLACE('cd', 'cd', 'xxx')|'xxx'|
+|REPLACE('abcde', 'gh', 'xx')|'abcde'|
+|REPLACE('abcde', 'cde', '')|'ab'|
+|REPLACE('abcde', '', 'xxx')|'abcde'|
+|REPLACE('', 'cde', 'xxx')|''|
+|REPLACE(NULL, 'cde', 'xxx')|null|
+|REPLACE('abcde', NULL, 'xxx')|null|
+|REPLACE('abcde', 'cde', NULL)|null|
 
 ## See Also
 
