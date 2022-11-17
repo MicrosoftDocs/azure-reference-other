@@ -784,3 +784,5 @@
     href: tables/synapsegatewayevents.md
   - name: SynapseIntegrationActivityRuns
     href: tables/synapseintegrationactivityruns.md
+  - name: SynapseIntegrationPipelineRuns
+    href: tables/synapseintegrationpipelineruns.md
