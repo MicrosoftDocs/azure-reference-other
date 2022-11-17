@@ -52,6 +52,8 @@
     href: tables/acsauthincomingoperations.md
   - name: ACSBillingUsage
     href: tables/acsbillingusage.md
+  - name: ACSCallAutomationIncomingOperations
+    href: tables/acscallautomationincomingoperations.md
   - name: ACSCallDiagnostics
     href: tables/acscalldiagnostics.md
   - name: ACSCallRecordingSummary
@@ -214,8 +216,12 @@
     href: tables/amlrunstatuschangedevent.md
   - name: AMSKeyDeliveryRequests
     href: tables/amskeydeliveryrequests.md
+  - name: AMSLiveEventOperations
+    href: tables/amsliveeventoperations.md
   - name: AMSMediaAccountHealth
     href: tables/amsmediaaccounthealth.md
+  - name: AMSStreamingEndpointRequests
+    href: tables/amsstreamingendpointrequests.md
   - name: ANFFileAccess
     href: tables/anffileaccess.md
   - name: Anomalies
@@ -440,6 +446,8 @@
     href: tables/databricksworkspace.md
   - name: DefenderIoTRawEvent
     href: tables/defenderiotrawevent.md
+  - name: DevCenterDiagnosticLogs
+    href: tables/devcenterdiagnosticlogs.md
   - name: DeviceAppCrash
     href: tables/deviceappcrash.md
   - name: DeviceAppLaunch
