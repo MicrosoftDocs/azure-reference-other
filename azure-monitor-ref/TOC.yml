@@ -282,3 +282,5 @@
     href: tables/apptraces.md
   - name: ASimDnsActivityLogs
     href: tables/asimdnsactivitylogs.md
+  - name: ATCExpressRouteCircuitIpfix
+    href: tables/atcexpressroutecircuitipfix.md
