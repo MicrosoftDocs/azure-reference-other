@@ -348,3 +348,5 @@
     href: tables/cdbcontrolplanerequests.md
   - name: CDBDataPlaneRequests
     href: tables/cdbdataplanerequests.md
+  - name: CDBGremlinRequests
+    href: tables/cdbgremlinrequests.md
