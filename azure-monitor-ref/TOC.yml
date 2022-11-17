@@ -448,3 +448,5 @@
     href: tables/defenderiotrawevent.md
   - name: DevCenterDiagnosticLogs
     href: tables/devcenterdiagnosticlogs.md
+  - name: DeviceAppCrash
+    href: tables/deviceappcrash.md
