@@ -874,3 +874,5 @@
     href: tables/wiredata.md
   - name: WorkloadDiagnosticLogs
     href: tables/workloaddiagnosticlogs.md
+  - name: WVDAgentHealthStatus
+    href: tables/wvdagenthealthstatus.md
