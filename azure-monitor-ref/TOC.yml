@@ -754,3 +754,5 @@
     href: tables/storagecachewarningevents.md
   - name: StorageFileLogs
     href: tables/storagefilelogs.md
+  - name: StorageQueueLogs
+    href: tables/storagequeuelogs.md
