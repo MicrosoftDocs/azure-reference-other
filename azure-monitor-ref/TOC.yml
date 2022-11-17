@@ -750,3 +750,5 @@
     href: tables/storagecacheoperationevents.md
   - name: StorageCacheUpgradeEvents
     href: tables/storagecacheupgradeevents.md
+  - name: StorageCacheWarningEvents
+    href: tables/storagecachewarningevents.md
