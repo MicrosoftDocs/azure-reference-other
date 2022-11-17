@@ -704,3 +704,5 @@
     href: tables/powerbireportusagetenant.md
   - name: PowerBIReportUsageWorkspace
     href: tables/powerbireportusageworkspace.md
+  - name: ProjectActivity
+    href: tables/projectactivity.md
