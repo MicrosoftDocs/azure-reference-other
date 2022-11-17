@@ -124,3 +124,5 @@
     href: tables/adreplicationresult.md
   - name: ADTDataHistoryOperation
     href: tables/adtdatahistoryoperation.md
+  - name: ADTDigitalTwinsOperation
+    href: tables/adtdigitaltwinsoperation.md
