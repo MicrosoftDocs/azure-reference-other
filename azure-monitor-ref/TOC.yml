@@ -312,3 +312,5 @@
     href: tables/azfwinternalfqdnresolutionfailure.md
   - name: AZFWNatRule
     href: tables/azfwnatrule.md
+  - name: AZFWNatRuleAggregation
+    href: tables/azfwnatruleaggregation.md
