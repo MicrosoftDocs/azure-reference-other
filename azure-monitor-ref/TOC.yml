@@ -300,3 +300,5 @@
     href: tables/awsvpcflow.md
   - name: AZFWApplicationRule
     href: tables/azfwapplicationrule.md
+  - name: AZFWApplicationRuleAggregation
+    href: tables/azfwapplicationruleaggregation.md
