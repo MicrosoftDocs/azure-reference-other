@@ -624,3 +624,5 @@
     href: tables/kubeservices.md
   - name: LAQueryLogs
     href: tables/laquerylogs.md
+  - name: MAApplicationInstance
+    href: tables/maapplicationinstance.md
