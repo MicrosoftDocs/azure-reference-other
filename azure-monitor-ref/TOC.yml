@@ -284,3 +284,5 @@
     href: tables/asimdnsactivitylogs.md
   - name: ATCExpressRouteCircuitIpfix
     href: tables/atcexpressroutecircuitipfix.md
+  - name: AuditLogs
+    href: tables/auditlogs.md
