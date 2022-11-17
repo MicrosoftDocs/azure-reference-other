@@ -760,3 +760,5 @@
     href: tables/storagetablelogs.md
   - name: SucceededIngestion
     href: tables/succeededingestion.md
+  - name: SynapseBigDataPoolApplicationsEnded
+    href: tables/synapsebigdatapoolapplicationsended.md
