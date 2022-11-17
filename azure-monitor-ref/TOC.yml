@@ -144,3 +144,5 @@
     href: tables/adxtabledetails.md
   - name: ADXTableUsageStatistics
     href: tables/adxtableusagestatistics.md
+  - name: AegDataPlaneRequests
+    href: tables/aegdataplanerequests.md
