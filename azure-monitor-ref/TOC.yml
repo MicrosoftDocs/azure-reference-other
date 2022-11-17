@@ -306,3 +306,5 @@
     href: tables/azfwdnsquery.md
   - name: AZFWFatFlow
     href: tables/azfwfatflow.md
+  - name: AZFWIdpsSignature
+    href: tables/azfwidpssignature.md
