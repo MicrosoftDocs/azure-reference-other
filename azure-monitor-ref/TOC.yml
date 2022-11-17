@@ -292,3 +292,5 @@
     href: tables/auieventsoperational.md
   - name: AutoscaleScaleActionsLog
     href: tables/autoscalescaleactionslog.md
+  - name: AVSSyslog
+    href: tables/avssyslog.md
