@@ -302,3 +302,5 @@
     href: tables/azfwapplicationrule.md
   - name: AZFWApplicationRuleAggregation
     href: tables/azfwapplicationruleaggregation.md
+  - name: AZFWDnsQuery
+    href: tables/azfwdnsquery.md
