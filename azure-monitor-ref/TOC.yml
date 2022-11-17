@@ -706,3 +706,5 @@
     href: tables/powerbireportusageworkspace.md
   - name: ProjectActivity
     href: tables/projectactivity.md
+  - name: PurviewDataSensitivityLogs
+    href: tables/purviewdatasensitivitylogs.md
