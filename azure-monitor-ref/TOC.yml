@@ -236,3 +236,5 @@
     href: tables/appdependencies.md
   - name: AppEvents
     href: tables/appevents.md
+  - name: AppExceptions
+    href: tables/appexceptions.md
