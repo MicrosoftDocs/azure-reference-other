@@ -574,3 +574,5 @@
     href: tables/hdinsightsparksqlexecutionevents.md
   - name: HDInsightSparkStageEvents
     href: tables/hdinsightsparkstageevents.md
+  - name: HDInsightSparkStageTaskAccumulables
+    href: tables/hdinsightsparkstagetaskaccumulables.md
