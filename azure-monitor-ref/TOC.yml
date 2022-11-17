@@ -658,3 +658,5 @@
     href: tables/microsoftpurviewinformationprotection.md
   - name: NetworkAccessTraffic
     href: tables/networkaccesstraffic.md
+  - name: NetworkSessions
+    href: tables/networksessions.md
