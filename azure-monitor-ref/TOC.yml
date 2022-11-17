@@ -130,3 +130,5 @@
     href: tables/adteventroutesoperation.md
   - name: ADTModelsOperation
     href: tables/adtmodelsoperation.md
+  - name: ADTQueryOperation
+    href: tables/adtqueryoperation.md
