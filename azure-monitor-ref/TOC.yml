@@ -774,3 +774,5 @@
     href: tables/synapsedxquery.md
   - name: SynapseDXSucceededIngestion
     href: tables/synapsedxsucceededingestion.md
+  - name: SynapseDXTableDetails
+    href: tables/synapsedxtabledetails.md
