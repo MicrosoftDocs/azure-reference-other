@@ -440,3 +440,5 @@
     href: tables/databricksssh.md
   - name: DatabricksUnityCatalog
     href: tables/databricksunitycatalog.md
+  - name: DatabricksWebTerminal
+    href: tables/databrickswebterminal.md
