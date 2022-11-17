@@ -178,3 +178,5 @@
     href: tables/agsgrafanaloginevents.md
   - name: AirflowDagProcessingLogs
     href: tables/airflowdagprocessinglogs.md
+  - name: Alert
+    href: tables/alert.md
