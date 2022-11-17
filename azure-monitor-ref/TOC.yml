@@ -822,3 +822,5 @@
     href: tables/ucclient.md
   - name: UCClientReadinessStatus
     href: tables/ucclientreadinessstatus.md
+  - name: UCClientUpdateStatus
+    href: tables/ucclientupdatestatus.md
