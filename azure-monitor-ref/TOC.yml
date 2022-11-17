@@ -168,3 +168,5 @@
     href: tables/agrifoodmodelinferencelogs.md
   - name: AgriFoodProviderAuthLogs
     href: tables/agrifoodproviderauthlogs.md
+  - name: AgriFoodSatelliteLogs
+    href: tables/agrifoodsatellitelogs.md
