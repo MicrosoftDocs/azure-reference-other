@@ -580,3 +580,5 @@
     href: tables/hdinsightsparktaskevents.md
   - name: HDInsightStormLogs
     href: tables/hdinsightstormlogs.md
+  - name: HDInsightStormMetrics
+    href: tables/hdinsightstormmetrics.md
