@@ -394,3 +394,5 @@
     href: tables/containerregistryrepositoryevents.md
   - name: ContainerServiceLog
     href: tables/containerservicelog.md
+  - name: DatabricksAccounts
+    href: tables/databricksaccounts.md
