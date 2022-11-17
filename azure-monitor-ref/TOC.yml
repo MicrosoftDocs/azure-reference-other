@@ -294,3 +294,5 @@
     href: tables/autoscalescaleactionslog.md
   - name: AVSSyslog
     href: tables/avssyslog.md
+  - name: AWSGuardDuty
+    href: tables/awsguardduty.md
