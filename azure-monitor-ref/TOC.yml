@@ -666,3 +666,5 @@
     href: tables/nwconnectionmonitordestinationlistenerresult.md
   - name: NWConnectionMonitorDNSResult
     href: tables/nwconnectionmonitordnsresult.md
+  - name: NWConnectionMonitorPathResult
+    href: tables/nwconnectionmonitorpathresult.md
