@@ -368,3 +368,5 @@
     href: tables/commonsecuritylog.md
   - name: ComputerGroup
     href: tables/computergroup.md
+  - name: ConfidentialWatchlist
+    href: tables/confidentialwatchlist.md
