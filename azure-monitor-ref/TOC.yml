@@ -562,3 +562,5 @@
     href: tables/hdinsightsparkblockmanagerevents.md
   - name: HDInsightSparkEnvironmentEvents
     href: tables/hdinsightsparkenvironmentevents.md
+  - name: HDInsightSparkExecutorEvents
+    href: tables/hdinsightsparkexecutorevents.md
