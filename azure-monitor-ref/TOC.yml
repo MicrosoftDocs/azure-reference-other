@@ -318,3 +318,5 @@
     href: tables/azfwnetworkrule.md
   - name: AZFWNetworkRuleAggregation
     href: tables/azfwnetworkruleaggregation.md
+  - name: AZFWThreatIntel
+    href: tables/azfwthreatintel.md
