@@ -682,3 +682,5 @@
     href: tables/olpsupplychainentityoperations.md
   - name: OLPSupplyChainEvents
     href: tables/olpsupplychainevents.md
+  - name: Operation
+    href: tables/operation.md
