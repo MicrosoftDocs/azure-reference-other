@@ -880,3 +880,5 @@
     href: tables/wvdcheckpoints.md
   - name: WVDConnectionGraphicsDataPreview
     href: tables/wvdconnectiongraphicsdatapreview.md
+  - name: WVDConnectionNetworkData
+    href: tables/wvdconnectionnetworkdata.md
