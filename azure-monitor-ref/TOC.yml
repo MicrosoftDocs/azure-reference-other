@@ -480,3 +480,5 @@
     href: tables/devicetvmsecureconfigurationassessment.md
   - name: DeviceTvmSoftwareInventory
     href: tables/devicetvmsoftwareinventory.md
+  - name: DeviceTvmSoftwareVulnerabilities
+    href: tables/devicetvmsoftwarevulnerabilities.md
