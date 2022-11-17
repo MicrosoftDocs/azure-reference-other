@@ -892,3 +892,5 @@
     href: tables/wvdhostregistrations.md
   - name: WVDManagement
     href: tables/wvdmanagement.md
+  - name: WVDSessionHostManagement
+    href: tables/wvdsessionhostmanagement.md
