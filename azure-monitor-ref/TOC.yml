@@ -492,3 +492,5 @@
     href: tables/dsmazureblobstoragelogs.md
   - name: DSMDataClassificationLogs
     href: tables/dsmdataclassificationlogs.md
+  - name: DSMDataLabelingLogs
+    href: tables/dsmdatalabelinglogs.md
