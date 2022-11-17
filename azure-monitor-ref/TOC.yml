@@ -344,3 +344,5 @@
     href: tables/cassandralogs.md
   - name: CDBCassandraRequests
     href: tables/cdbcassandrarequests.md
+  - name: CDBControlPlaneRequests
+    href: tables/cdbcontrolplanerequests.md
