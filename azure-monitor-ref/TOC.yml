@@ -582,3 +582,5 @@
     href: tables/hdinsightstormlogs.md
   - name: HDInsightStormMetrics
     href: tables/hdinsightstormmetrics.md
+  - name: HDInsightStormTopologyMetrics
+    href: tables/hdinsightstormtopologymetrics.md
