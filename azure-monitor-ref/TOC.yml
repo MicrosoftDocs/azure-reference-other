@@ -462,3 +462,5 @@
     href: tables/deviceimageloadevents.md
   - name: DeviceInfo
     href: tables/deviceinfo.md
+  - name: DeviceLogonEvents
+    href: tables/devicelogonevents.md
