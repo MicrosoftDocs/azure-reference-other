@@ -548,3 +548,5 @@
     href: tables/hdinsightkafkalogs.md
   - name: HDInsightKafkaMetrics
     href: tables/hdinsightkafkametrics.md
+  - name: HDInsightKafkaServerLog
+    href: tables/hdinsightkafkaserverlog.md
