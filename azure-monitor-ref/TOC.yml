@@ -358,3 +358,5 @@
     href: tables/cdbpartitionkeystatistics.md
   - name: CDBQueryRuntimeStatistics
     href: tables/cdbqueryruntimestatistics.md
+  - name: CIEventsAudit
+    href: tables/cieventsaudit.md
