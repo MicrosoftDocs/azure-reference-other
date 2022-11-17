@@ -336,3 +336,5 @@
     href: tables/behavioranalytics.md
   - name: BlockchainApplicationLog
     href: tables/blockchainapplicationlog.md
+  - name: BlockchainProxyLog
+    href: tables/blockchainproxylog.md
