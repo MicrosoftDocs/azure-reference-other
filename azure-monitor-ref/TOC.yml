@@ -608,3 +608,5 @@
     href: tables/intunedevicecomplianceorg.md
   - name: IntuneDevices
     href: tables/intunedevices.md
+  - name: IntuneOperationalLogs
+    href: tables/intuneoperationallogs.md
