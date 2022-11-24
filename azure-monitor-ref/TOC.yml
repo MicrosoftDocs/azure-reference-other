@@ -436,3 +436,5 @@
     href: tables/databricksrepos.md
   - name: DatabricksSecrets
     href: tables/databrickssecrets.md
+  - name: DatabricksSQL
+    href: tables/databrickssql.md
