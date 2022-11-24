@@ -404,3 +404,5 @@
     href: tables/databricksclusters.md
   - name: DatabricksDatabricksSQL
     href: tables/databricksdatabrickssql.md
+  - name: DatabricksDBFS
+    href: tables/databricksdbfs.md
