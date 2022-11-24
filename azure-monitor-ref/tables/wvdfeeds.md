@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/17/2022
+ms.date: 11/24/2022
 ---
 
 # WVDFeeds
@@ -37,6 +37,7 @@ ms.date: 11/17/2022
 | CorrelationId | string | The activity Id. |
 | IconFail | int | The number of Icons (PNG, ICO) files that failed to be retrieved. |
 | IconTotal | int | The total number of Icons (PNG, ICO) files that the client attempted to retrieve. |
+| IsClientPrivateLink | string | True if the client used a private link endpoint for the feed request. |
 | RDPFail | int | The number of RDP files that failed to be retrieved. |
 | RDPTotal | int | The total number of RDP files that the client attempted to retrieve. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
