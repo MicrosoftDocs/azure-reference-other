@@ -808,3 +808,5 @@
     href: tables/synapsesqlpoolexecrequests.md
   - name: SynapseSqlPoolRequestSteps
     href: tables/synapsesqlpoolrequeststeps.md
+  - name: SynapseSqlPoolSqlRequests
+    href: tables/synapsesqlpoolsqlrequests.md
