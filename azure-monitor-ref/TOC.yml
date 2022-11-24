@@ -636,3 +636,5 @@
     href: tables/maofficeaddininstance.md
   - name: MAOfficeAppInstance
     href: tables/maofficeappinstance.md
+  - name: MAOfficeSuiteInstance
+    href: tables/maofficesuiteinstance.md
