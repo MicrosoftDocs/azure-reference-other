@@ -698,3 +698,5 @@
     href: tables/powerbiaudittenant.md
   - name: PowerBIDatasetsTenant
     href: tables/powerbidatasetstenant.md
+  - name: PowerBIDatasetsTenantPreview
+    href: tables/powerbidatasetstenantpreview.md
