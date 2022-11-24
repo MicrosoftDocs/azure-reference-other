@@ -558,3 +558,5 @@
     href: tables/hdinsightoozielogs.md
   - name: HDInsightRangerAuditLogs
     href: tables/hdinsightrangerauditlogs.md
+  - name: HDInsightSecurityLogs
+    href: tables/hdinsightsecuritylogs.md
