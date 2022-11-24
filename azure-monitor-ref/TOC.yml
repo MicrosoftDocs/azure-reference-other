@@ -728,3 +728,5 @@
     href: tables/securitybaselinesummary.md
   - name: SecurityIncident
     href: tables/securityincident.md
+  - name: SecurityNestedRecommendation
+    href: tables/securitynestedrecommendation.md
