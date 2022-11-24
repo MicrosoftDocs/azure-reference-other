@@ -462,3 +462,5 @@
     href: tables/devicefilecertificateinfo.md
   - name: DeviceFileEvents
     href: tables/devicefileevents.md
+  - name: DeviceImageLoadEvents
+    href: tables/deviceimageloadevents.md
