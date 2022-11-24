@@ -790,3 +790,5 @@
     href: tables/synapseintegrationactivityruns.md
   - name: SynapseIntegrationPipelineRuns
     href: tables/synapseintegrationpipelineruns.md
+  - name: SynapseIntegrationTriggerRuns
+    href: tables/synapseintegrationtriggerruns.md
