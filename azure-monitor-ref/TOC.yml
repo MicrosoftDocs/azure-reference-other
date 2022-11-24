@@ -504,3 +504,5 @@
     href: tables/dynamics365activity.md
   - name: DynamicSummary
     href: tables/dynamicsummary.md
+  - name: EmailAttachmentInfo
+    href: tables/emailattachmentinfo.md
