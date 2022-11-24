@@ -762,3 +762,5 @@
     href: tables/storagequeuelogs.md
   - name: StorageTableLogs
     href: tables/storagetablelogs.md
+  - name: SucceededIngestion
+    href: tables/succeededingestion.md
