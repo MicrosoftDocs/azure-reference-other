@@ -706,3 +706,5 @@
     href: tables/powerbidatasetsworkspacepreview.md
   - name: PowerBIReportUsageTenant
     href: tables/powerbireportusagetenant.md
+  - name: PowerBIReportUsageWorkspace
+    href: tables/powerbireportusageworkspace.md
