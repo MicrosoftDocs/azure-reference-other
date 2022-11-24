@@ -794,3 +794,5 @@
     href: tables/synapseintegrationtriggerruns.md
   - name: SynapseLinkEvent
     href: tables/synapselinkevent.md
+  - name: SynapseRBACEvents
+    href: tables/synapserbacevents.md
