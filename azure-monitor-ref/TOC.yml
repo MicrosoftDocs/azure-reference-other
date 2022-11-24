@@ -520,3 +520,5 @@
     href: tables/exchangeonlineassessmentrecommendation.md
   - name: FailedIngestion
     href: tables/failedingestion.md
+  - name: FunctionAppLogs
+    href: tables/functionapplogs.md
