@@ -350,3 +350,5 @@
     href: tables/cdbcassandrarequests.md
   - name: CDBControlPlaneRequests
     href: tables/cdbcontrolplanerequests.md
+  - name: CDBDataPlaneRequests
+    href: tables/cdbdataplanerequests.md
