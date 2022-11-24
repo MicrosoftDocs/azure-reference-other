@@ -658,3 +658,5 @@
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
   - name: MicrosoftHealthcareApisAuditLogs
     href: tables/microsofthealthcareapisauditlogs.md
+  - name: MicrosoftPurviewInformationProtection
+    href: tables/microsoftpurviewinformationprotection.md
