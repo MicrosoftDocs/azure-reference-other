@@ -526,3 +526,5 @@
     href: tables/gcpauditlogs.md
   - name: HDInsightAmbariClusterAlerts
     href: tables/hdinsightambariclusteralerts.md
+  - name: HDInsightAmbariSystemMetrics
+    href: tables/hdinsightambarisystemmetrics.md
