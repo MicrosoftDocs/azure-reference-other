@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/17/2022
+ms.date: 11/24/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -69,6 +69,7 @@ ms.date: 11/17/2022
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [CassandraAudit](cassandraaudit.md)
+- [CCFApplicationLogs](ccfapplicationlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
@@ -201,6 +202,7 @@ ms.date: 11/17/2022
 - [BaiJobEvent](baijobevent.md)
 - [BlockchainApplicationLog](blockchainapplicationlog.md)
 - [BlockchainProxyLog](blockchainproxylog.md)
+- [CCFApplicationLogs](ccfapplicationlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CIEventsOperational](cieventsoperational.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
@@ -478,6 +480,7 @@ ms.date: 11/17/2022
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
+- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
 - [AWSGuardDuty](awsguardduty.md)
