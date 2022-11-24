@@ -798,3 +798,5 @@
     href: tables/synapserbacevents.md
   - name: SynapseRbacOperations
     href: tables/synapserbacoperations.md
+  - name: SynapseScopePoolScopeJobsEnded
+    href: tables/synapsescopepoolscopejobsended.md
