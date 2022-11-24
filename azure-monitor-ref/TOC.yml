@@ -664,3 +664,5 @@
     href: tables/networkaccesstraffic.md
   - name: NetworkSessions
     href: tables/networksessions.md
+  - name: NSPAccessLogs
+    href: tables/nspaccesslogs.md
