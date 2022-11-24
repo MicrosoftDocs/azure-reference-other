@@ -688,3 +688,5 @@
     href: tables/olpsupplychainevents.md
   - name: Operation
     href: tables/operation.md
+  - name: Perf
+    href: tables/perf.md
