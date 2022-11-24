@@ -492,3 +492,5 @@
     href: tables/dnsevents.md
   - name: DnsInventory
     href: tables/dnsinventory.md
+  - name: DSMAzureBlobStorageLogs
+    href: tables/dsmazureblobstoragelogs.md
