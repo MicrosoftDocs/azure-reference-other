@@ -730,3 +730,5 @@
     href: tables/securityincident.md
   - name: SecurityNestedRecommendation
     href: tables/securitynestedrecommendation.md
+  - name: SecurityRegulatoryCompliance
+    href: tables/securityregulatorycompliance.md
