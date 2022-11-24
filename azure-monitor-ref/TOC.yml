@@ -768,3 +768,5 @@
     href: tables/synapsebigdatapoolapplicationsended.md
   - name: SynapseBuiltinSqlPoolRequestsEnded
     href: tables/synapsebuiltinsqlpoolrequestsended.md
+  - name: SynapseDXCommand
+    href: tables/synapsedxcommand.md
