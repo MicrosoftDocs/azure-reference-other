@@ -524,3 +524,5 @@
     href: tables/functionapplogs.md
   - name: GCPAuditLogs
     href: tables/gcpauditlogs.md
+  - name: HDInsightAmbariClusterAlerts
+    href: tables/hdinsightambariclusteralerts.md
