@@ -572,3 +572,5 @@
     href: tables/hdinsightsparkextraevents.md
   - name: HDInsightSparkJobEvents
     href: tables/hdinsightsparkjobevents.md
+  - name: HDInsightSparkLogs
+    href: tables/hdinsightsparklogs.md
