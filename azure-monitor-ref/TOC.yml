@@ -642,3 +642,5 @@
     href: tables/mcceventlogs.md
   - name: MCVPAuditLogs
     href: tables/mcvpauditlogs.md
+  - name: MCVPOperationLogs
+    href: tables/mcvpoperationlogs.md
