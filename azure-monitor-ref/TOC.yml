@@ -424,3 +424,5 @@
     href: tables/databricksjobs.md
   - name: DatabricksMLflowAcledArtifact
     href: tables/databricksmlflowacledartifact.md
+  - name: DatabricksMLflowExperiment
+    href: tables/databricksmlflowexperiment.md
