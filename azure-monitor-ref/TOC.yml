@@ -690,3 +690,5 @@
     href: tables/operation.md
   - name: Perf
     href: tables/perf.md
+  - name: PFTitleAuditLogs
+    href: tables/pftitleauditlogs.md
