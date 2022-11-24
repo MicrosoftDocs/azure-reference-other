@@ -212,3 +212,5 @@
     href: tables/amlpipelineevent.md
   - name: AmlRunEvent
     href: tables/amlrunevent.md
+  - name: AmlRunStatusChangedEvent
+    href: tables/amlrunstatuschangedevent.md
