@@ -412,3 +412,5 @@
     href: tables/databricksfeaturestore.md
   - name: DatabricksGenie
     href: tables/databricksgenie.md
+  - name: DatabricksGitCredentials
+    href: tables/databricksgitcredentials.md
