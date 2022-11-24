@@ -880,3 +880,5 @@
     href: tables/workloaddiagnosticlogs.md
   - name: WVDAgentHealthStatus
     href: tables/wvdagenthealthstatus.md
+  - name: WVDCheckpoints
+    href: tables/wvdcheckpoints.md
