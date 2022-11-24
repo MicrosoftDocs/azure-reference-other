@@ -596,3 +596,5 @@
     href: tables/huntingbookmark.md
   - name: IdentityDirectoryEvents
     href: tables/identitydirectoryevents.md
+  - name: IdentityInfo
+    href: tables/identityinfo.md
