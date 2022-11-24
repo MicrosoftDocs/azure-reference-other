@@ -716,3 +716,5 @@
     href: tables/purviewscanstatuslogs.md
   - name: PurviewSecurityLogs
     href: tables/purviewsecuritylogs.md
+  - name: ResourceManagementPublicAccessLogs
+    href: tables/resourcemanagementpublicaccesslogs.md
