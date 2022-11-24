@@ -518,3 +518,5 @@
     href: tables/exchangeassessmentrecommendation.md
   - name: ExchangeOnlineAssessmentRecommendation
     href: tables/exchangeonlineassessmentrecommendation.md
+  - name: FailedIngestion
+    href: tables/failedingestion.md
