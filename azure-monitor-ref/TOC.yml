@@ -742,3 +742,5 @@
     href: tables/sqlassessmentrecommendation.md
   - name: SqlAtpStatus
     href: tables/sqlatpstatus.md
+  - name: SQLSecurityAuditEvents
+    href: tables/sqlsecurityauditevents.md
