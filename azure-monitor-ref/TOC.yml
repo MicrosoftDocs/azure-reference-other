@@ -624,3 +624,5 @@
     href: tables/kubepodinventory.md
   - name: KubePVInventory
     href: tables/kubepvinventory.md
+  - name: KubeServices
+    href: tables/kubeservices.md
