@@ -528,3 +528,5 @@
     href: tables/hdinsightambariclusteralerts.md
   - name: HDInsightAmbariSystemMetrics
     href: tables/hdinsightambarisystemmetrics.md
+  - name: HDInsightGatewayAuditLogs
+    href: tables/hdinsightgatewayauditlogs.md
