@@ -380,3 +380,5 @@
     href: tables/configurationdata.md
   - name: ContainerAppConsoleLogs
     href: tables/containerappconsolelogs.md
+  - name: ContainerAppSystemLogs
+    href: tables/containerappsystemlogs.md
