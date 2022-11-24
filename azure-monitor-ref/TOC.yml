@@ -426,3 +426,5 @@
     href: tables/databricksmlflowacledartifact.md
   - name: DatabricksMLflowExperiment
     href: tables/databricksmlflowexperiment.md
+  - name: DatabricksModelRegistry
+    href: tables/databricksmodelregistry.md
