@@ -544,3 +544,5 @@
     href: tables/hdinsighthiveandllapmetrics.md
   - name: HDInsightHiveQueryAppStats
     href: tables/hdinsighthivequeryappstats.md
+  - name: HDInsightHiveTezAppStats
+    href: tables/hdinsighthivetezappstats.md
