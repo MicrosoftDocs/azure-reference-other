@@ -506,3 +506,5 @@
     href: tables/dynamicsummary.md
   - name: EmailAttachmentInfo
     href: tables/emailattachmentinfo.md
+  - name: EmailEvents
+    href: tables/emailevents.md
