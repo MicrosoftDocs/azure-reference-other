@@ -476,3 +476,5 @@
     href: tables/deviceprocessevents.md
   - name: DeviceRegistryEvents
     href: tables/deviceregistryevents.md
+  - name: DeviceSkypeHeartbeat
+    href: tables/deviceskypeheartbeat.md
