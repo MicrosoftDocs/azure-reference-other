@@ -732,3 +732,5 @@
     href: tables/securitynestedrecommendation.md
   - name: SecurityRegulatoryCompliance
     href: tables/securityregulatorycompliance.md
+  - name: SentinelAudit
+    href: tables/sentinelaudit.md
