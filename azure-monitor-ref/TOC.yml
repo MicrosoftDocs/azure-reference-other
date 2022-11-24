@@ -458,3 +458,5 @@
     href: tables/deviceapplaunch.md
   - name: DeviceEvents
     href: tables/deviceevents.md
+  - name: DeviceFileCertificateInfo
+    href: tables/devicefilecertificateinfo.md
