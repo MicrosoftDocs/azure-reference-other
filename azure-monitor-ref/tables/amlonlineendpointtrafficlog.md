@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/17/2022
+ms.date: 11/24/2022
 ---
 
 # AmlOnlineEndpointTrafficLog
@@ -31,9 +31,11 @@ ms.date: 11/17/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
+| AuthType | string | The authentication type of the request (Key, AMLToken, AADToken). |
 | AzureMLWorkspaceId | string | The machine learning workspace ID of the online endpoint. |
 | DeploymentName | string | The name of the online deployment. |
 | EndpointName | string | The name of the online endpoint. |
+| IdentityData | string | The identity data from the user client (JWT OID). |
 | Location | string | The region of the online endpoint. |
 | Method | string | The requested method from client. |
 | ModelStatusCode | int | The response status code from model. |

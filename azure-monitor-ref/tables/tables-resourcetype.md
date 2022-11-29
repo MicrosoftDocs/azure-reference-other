@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/17/2022
+ms.date: 11/24/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -727,6 +727,7 @@ ms.date: 11/17/2022
 
 ## Managed CCF
 
+- [CCFApplicationLogs](ccfapplicationlogs.md)
 
 ## Media Services
 
@@ -774,6 +775,7 @@ ms.date: 11/17/2022
 
 ## Microsoft Sentinel Network Session ASim schema
 
+- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 
 ## Microsoft.AgFoodPlatform/farmBeats
 
