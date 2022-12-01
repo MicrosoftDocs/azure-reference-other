@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 11/24/2022
+ms.date: 12/1/2022
 ---
 
 # Perf
@@ -42,7 +42,7 @@ ms.date: 11/24/2022
 | BucketStartTime | datetime |  |
 | Computer | string | Computer that the event was collected from. |
 | CounterName | string | Name of the performance counter. |
-| CounterPath | string | Full path of the counter in the form \\&lt;Computer&gt;\object(instance)\counter. |
+| CounterPath | string | Full path of the counter in the form \\<Computer>\object(instance)\counter. |
 | CounterValue | real |  |
 | InstanceName | string | Name of the event instance. Empty if no instance. |
 | Max | real |  |
