@@ -335,11 +335,6 @@ ms.date: 12/1/2022
 
 ## Azure Stack HCI
 
-- [Event](event.md)
-- [Perf](perf.md)
-
-## Azure Stack HCI
-
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
 - [ADReplicationResult](adreplicationresult.md)
 - [AzureActivity](azureactivity.md)
@@ -846,9 +841,6 @@ ms.date: 12/1/2022
 
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
-
-## Power BI Datasets
-
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
