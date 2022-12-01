@@ -332,3 +332,5 @@
     href: tables/azurediagnostics.md
   - name: AzureLoadTestingOperation
     href: tables/azureloadtestingoperation.md
+  - name: AzureMetrics
+    href: tables/azuremetrics.md
