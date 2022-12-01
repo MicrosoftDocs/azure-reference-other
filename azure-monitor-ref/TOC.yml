@@ -670,3 +670,5 @@
     href: tables/microsofthealthcareapisauditlogs.md
   - name: MicrosoftPurviewInformationProtection
     href: tables/microsoftpurviewinformationprotection.md
+  - name: NetworkAccessTraffic
+    href: tables/networkaccesstraffic.md
