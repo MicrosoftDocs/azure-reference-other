@@ -500,3 +500,5 @@
     href: tables/dhoscrashdata.md
   - name: DnsEvents
     href: tables/dnsevents.md
+  - name: DnsInventory
+    href: tables/dnsinventory.md
