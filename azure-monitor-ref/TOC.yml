@@ -452,3 +452,5 @@
     href: tables/databrickssqlpermissions.md
   - name: DatabricksSSH
     href: tables/databricksssh.md
+  - name: DatabricksUnityCatalog
+    href: tables/databricksunitycatalog.md
