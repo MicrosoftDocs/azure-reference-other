@@ -632,3 +632,5 @@
     href: tables/kubenodeinventory.md
   - name: KubePodInventory
     href: tables/kubepodinventory.md
+  - name: KubePVInventory
+    href: tables/kubepvinventory.md
