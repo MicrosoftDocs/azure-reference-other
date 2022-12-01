@@ -404,3 +404,5 @@
     href: tables/databrickscapsule8dataplane.md
   - name: DatabricksClamAVScan
     href: tables/databricksclamavscan.md
+  - name: DatabricksClusterLibraries
+    href: tables/databricksclusterlibraries.md
