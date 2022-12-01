@@ -346,3 +346,5 @@
     href: tables/cassandralogs.md
   - name: CCFApplicationLogs
     href: tables/ccfapplicationlogs.md
+  - name: CDBCassandraRequests
+    href: tables/cdbcassandrarequests.md
