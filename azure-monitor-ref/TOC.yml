@@ -450,3 +450,5 @@
     href: tables/databrickssql.md
   - name: DatabricksSQLPermissions
     href: tables/databrickssqlpermissions.md
+  - name: DatabricksSSH
+    href: tables/databricksssh.md
