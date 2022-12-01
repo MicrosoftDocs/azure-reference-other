@@ -746,3 +746,5 @@
     href: tables/sentinelaudit.md
   - name: SentinelHealth
     href: tables/sentinelhealth.md
+  - name: SignalRServiceDiagnosticLogs
+    href: tables/signalrservicediagnosticlogs.md
