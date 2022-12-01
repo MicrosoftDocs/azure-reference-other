@@ -602,3 +602,5 @@
     href: tables/healthstatechangeevent.md
   - name: Heartbeat
     href: tables/heartbeat.md
+  - name: HuntingBookmark
+    href: tables/huntingbookmark.md
