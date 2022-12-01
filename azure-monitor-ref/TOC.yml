@@ -440,3 +440,5 @@
     href: tables/databrickspartnerhub.md
   - name: DatabricksRemoteHistoryService
     href: tables/databricksremotehistoryservice.md
+  - name: DatabricksRepos
+    href: tables/databricksrepos.md
