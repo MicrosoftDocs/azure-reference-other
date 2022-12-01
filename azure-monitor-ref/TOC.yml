@@ -796,3 +796,5 @@
     href: tables/synapsegatewayapirequests.md
   - name: SynapseGatewayEvents
     href: tables/synapsegatewayevents.md
+  - name: SynapseIntegrationActivityRuns
+    href: tables/synapseintegrationactivityruns.md
