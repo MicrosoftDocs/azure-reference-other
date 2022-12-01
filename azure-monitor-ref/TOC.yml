@@ -592,3 +592,5 @@
     href: tables/hdinsightsparkstagetaskaccumulables.md
   - name: HDInsightSparkTaskEvents
     href: tables/hdinsightsparktaskevents.md
+  - name: HDInsightStormLogs
+    href: tables/hdinsightstormlogs.md
