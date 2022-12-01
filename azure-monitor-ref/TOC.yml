@@ -382,3 +382,5 @@
     href: tables/containerappconsolelogs.md
   - name: ContainerAppSystemLogs
     href: tables/containerappsystemlogs.md
+  - name: ContainerImageInventory
+    href: tables/containerimageinventory.md
