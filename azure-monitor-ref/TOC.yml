@@ -862,3 +862,5 @@
     href: tables/userpeeranalytics.md
   - name: VIAudit
     href: tables/viaudit.md
+  - name: VIIndexing
+    href: tables/viindexing.md
