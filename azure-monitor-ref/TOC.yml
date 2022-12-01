@@ -406,3 +406,5 @@
     href: tables/databricksclamavscan.md
   - name: DatabricksClusterLibraries
     href: tables/databricksclusterlibraries.md
+  - name: DatabricksClusters
+    href: tables/databricksclusters.md
