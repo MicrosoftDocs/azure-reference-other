@@ -870,3 +870,5 @@
     href: tables/vmcomputer.md
   - name: VMConnection
     href: tables/vmconnection.md
+  - name: VMProcess
+    href: tables/vmprocess.md
