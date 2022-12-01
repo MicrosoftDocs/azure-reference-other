@@ -834,3 +834,5 @@
     href: tables/uasysreqissue.md
   - name: UCClient
     href: tables/ucclient.md
+  - name: UCClientReadinessStatus
+    href: tables/ucclientreadinessstatus.md
