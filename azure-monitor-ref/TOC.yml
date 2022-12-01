@@ -402,3 +402,5 @@
     href: tables/databricksaccounts.md
   - name: DatabricksCapsule8Dataplane
     href: tables/databrickscapsule8dataplane.md
+  - name: DatabricksClamAVScan
+    href: tables/databricksclamavscan.md
