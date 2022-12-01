@@ -760,3 +760,5 @@
     href: tables/storageantimalwarescanresults.md
   - name: StorageBlobLogs
     href: tables/storagebloblogs.md
+  - name: StorageCacheOperationEvents
+    href: tables/storagecacheoperationevents.md
