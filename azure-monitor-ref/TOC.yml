@@ -448,3 +448,5 @@
     href: tables/databricksserverlessrealtimeinference.md
   - name: DatabricksSQL
     href: tables/databrickssql.md
+  - name: DatabricksSQLPermissions
+    href: tables/databrickssqlpermissions.md
