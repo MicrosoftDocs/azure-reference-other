@@ -318,3 +318,5 @@
     href: tables/azfwnatruleaggregation.md
   - name: AZFWNetworkRule
     href: tables/azfwnetworkrule.md
+  - name: AZFWNetworkRuleAggregation
+    href: tables/azfwnetworkruleaggregation.md
