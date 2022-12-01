@@ -434,3 +434,5 @@
     href: tables/databricksmlflowexperiment.md
   - name: DatabricksModelRegistry
     href: tables/databricksmodelregistry.md
+  - name: DatabricksNotebook
+    href: tables/databricksnotebook.md
