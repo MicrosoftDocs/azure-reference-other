@@ -686,3 +686,5 @@
     href: tables/nwconnectionmonitortestresult.md
   - name: OEPAirFlowTask
     href: tables/oepairflowtask.md
+  - name: OEPElasticOperator
+    href: tables/oepelasticoperator.md
