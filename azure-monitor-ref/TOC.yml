@@ -540,3 +540,5 @@
     href: tables/hdinsightambarisystemmetrics.md
   - name: HDInsightGatewayAuditLogs
     href: tables/hdinsightgatewayauditlogs.md
+  - name: HDInsightHadoopAndYarnLogs
+    href: tables/hdinsighthadoopandyarnlogs.md
