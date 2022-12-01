@@ -812,3 +812,5 @@
     href: tables/synapsescopepoolscopejobsended.md
   - name: SynapseScopePoolScopeJobsStateChange
     href: tables/synapsescopepoolscopejobsstatechange.md
+  - name: SynapseSqlPoolDmsWorkers
+    href: tables/synapsesqlpooldmsworkers.md
