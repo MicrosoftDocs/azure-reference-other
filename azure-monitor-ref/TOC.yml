@@ -756,3 +756,5 @@
     href: tables/sqlsecurityauditevents.md
   - name: SqlVulnerabilityAssessmentScanStatus
     href: tables/sqlvulnerabilityassessmentscanstatus.md
+  - name: StorageAntimalwareScanResults
+    href: tables/storageantimalwarescanresults.md
