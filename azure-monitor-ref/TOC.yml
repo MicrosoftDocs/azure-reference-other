@@ -642,3 +642,5 @@
     href: tables/maapplicationinstance.md
   - name: MADeviceNotEnrolled
     href: tables/madevicenotenrolled.md
+  - name: MAOfficeAddinInstance
+    href: tables/maofficeaddininstance.md
