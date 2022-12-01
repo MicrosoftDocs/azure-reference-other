@@ -374,3 +374,5 @@
     href: tables/computergroup.md
   - name: ConfidentialWatchlist
     href: tables/confidentialwatchlist.md
+  - name: ConfigurationChange
+    href: tables/configurationchange.md
