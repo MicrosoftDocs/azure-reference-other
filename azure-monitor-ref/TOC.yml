@@ -220,3 +220,5 @@
     href: tables/amsliveeventoperations.md
   - name: AMSMediaAccountHealth
     href: tables/amsmediaaccounthealth.md
+  - name: AMSStreamingEndpointRequests
+    href: tables/amsstreamingendpointrequests.md
