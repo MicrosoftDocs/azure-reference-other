@@ -532,3 +532,5 @@
     href: tables/failedingestion.md
   - name: FunctionAppLogs
     href: tables/functionapplogs.md
+  - name: GCPAuditLogs
+    href: tables/gcpauditlogs.md
