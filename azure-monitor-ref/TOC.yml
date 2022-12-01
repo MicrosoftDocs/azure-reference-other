@@ -360,3 +360,5 @@
     href: tables/cdbpartitionkeyruconsumption.md
   - name: CDBPartitionKeyStatistics
     href: tables/cdbpartitionkeystatistics.md
+  - name: CDBQueryRuntimeStatistics
+    href: tables/cdbqueryruntimestatistics.md
