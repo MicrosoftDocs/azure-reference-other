@@ -42,3 +42,5 @@
     href: tables/absbotrequests.md
   - name: ABSChannelToBotRequests
     href: tables/abschanneltobotrequests.md
+  - name: ABSDependenciesRequests
+    href: tables/absdependenciesrequests.md
