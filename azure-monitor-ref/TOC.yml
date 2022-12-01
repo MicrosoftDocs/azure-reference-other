@@ -560,3 +560,5 @@
     href: tables/hdinsightjupyternotebookevents.md
   - name: HDInsightKafkaLogs
     href: tables/hdinsightkafkalogs.md
+  - name: HDInsightKafkaMetrics
+    href: tables/hdinsightkafkametrics.md
