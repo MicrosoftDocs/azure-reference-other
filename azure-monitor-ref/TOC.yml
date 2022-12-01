@@ -722,3 +722,5 @@
     href: tables/projectactivity.md
   - name: PurviewDataSensitivityLogs
     href: tables/purviewdatasensitivitylogs.md
+  - name: PurviewScanStatusLogs
+    href: tables/purviewscanstatuslogs.md
