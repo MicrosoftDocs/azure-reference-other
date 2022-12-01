@@ -792,3 +792,5 @@
     href: tables/synapsedxtabledetails.md
   - name: SynapseDXTableUsageStatistics
     href: tables/synapsedxtableusagestatistics.md
+  - name: SynapseGatewayApiRequests
+    href: tables/synapsegatewayapirequests.md
