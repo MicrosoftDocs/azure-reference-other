@@ -614,3 +614,5 @@
     href: tables/identityqueryevents.md
   - name: InsightsMetrics
     href: tables/insightsmetrics.md
+  - name: IntuneDeviceComplianceOrg
+    href: tables/intunedevicecomplianceorg.md
