@@ -620,3 +620,5 @@
     href: tables/intunedevices.md
   - name: IntuneOperationalLogs
     href: tables/intuneoperationallogs.md
+  - name: IoTHubDistributedTracing
+    href: tables/iothubdistributedtracing.md
