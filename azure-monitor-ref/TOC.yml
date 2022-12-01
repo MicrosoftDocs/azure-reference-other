@@ -490,3 +490,5 @@
     href: tables/deviceskypeheartbeat.md
   - name: DeviceSkypeSignIn
     href: tables/deviceskypesignin.md
+  - name: DeviceTvmSecureConfigurationAssessment
+    href: tables/devicetvmsecureconfigurationassessment.md
