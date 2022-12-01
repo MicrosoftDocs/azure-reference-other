@@ -240,3 +240,5 @@
     href: tables/appexceptions.md
   - name: AppMetrics
     href: tables/appmetrics.md
+  - name: AppPageViews
+    href: tables/apppageviews.md
