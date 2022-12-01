@@ -456,3 +456,5 @@
     href: tables/databricksunitycatalog.md
   - name: DatabricksWebTerminal
     href: tables/databrickswebterminal.md
+  - name: DatabricksWorkspace
+    href: tables/databricksworkspace.md
