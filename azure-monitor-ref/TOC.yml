@@ -428,3 +428,5 @@
     href: tables/databricksinstancepools.md
   - name: DatabricksJobs
     href: tables/databricksjobs.md
+  - name: DatabricksMLflowAcledArtifact
+    href: tables/databricksmlflowacledartifact.md
