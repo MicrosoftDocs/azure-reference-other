@@ -704,3 +704,5 @@
     href: tables/pftitleauditlogs.md
   - name: PowerBIActivity
     href: tables/powerbiactivity.md
+  - name: PowerBIAuditTenant
+    href: tables/powerbiaudittenant.md
