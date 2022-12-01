@@ -300,3 +300,5 @@
     href: tables/awsguardduty.md
   - name: AWSVPCFlow
     href: tables/awsvpcflow.md
+  - name: AZFWApplicationRule
+    href: tables/azfwapplicationrule.md
