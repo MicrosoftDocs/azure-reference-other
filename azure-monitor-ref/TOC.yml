@@ -898,3 +898,5 @@
     href: tables/wvdconnectionnetworkdata.md
   - name: WVDConnections
     href: tables/wvdconnections.md
+  - name: WVDErrors
+    href: tables/wvderrors.md
