@@ -438,3 +438,5 @@
     href: tables/databricksnotebook.md
   - name: DatabricksPartnerHub
     href: tables/databrickspartnerhub.md
+  - name: DatabricksRemoteHistoryService
+    href: tables/databricksremotehistoryservice.md
