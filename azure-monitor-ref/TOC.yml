@@ -492,3 +492,5 @@
     href: tables/deviceskypesignin.md
   - name: DeviceTvmSecureConfigurationAssessment
     href: tables/devicetvmsecureconfigurationassessment.md
+  - name: DeviceTvmSoftwareInventory
+    href: tables/devicetvmsoftwareinventory.md
