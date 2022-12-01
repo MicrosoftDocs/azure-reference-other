@@ -640,3 +640,5 @@
     href: tables/laquerylogs.md
   - name: MAApplicationInstance
     href: tables/maapplicationinstance.md
+  - name: MADeviceNotEnrolled
+    href: tables/madevicenotenrolled.md
