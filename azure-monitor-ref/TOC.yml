@@ -728,3 +728,5 @@
     href: tables/purviewsecuritylogs.md
   - name: ResourceManagementPublicAccessLogs
     href: tables/resourcemanagementpublicaccesslogs.md
+  - name: SecureScoreControls
+    href: tables/securescorecontrols.md
