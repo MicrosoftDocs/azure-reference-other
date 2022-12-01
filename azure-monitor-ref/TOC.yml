@@ -854,3 +854,5 @@
     href: tables/updatesummary.md
   - name: UrlClickEvents
     href: tables/urlclickevents.md
+  - name: Usage
+    href: tables/usage.md
