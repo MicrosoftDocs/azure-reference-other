@@ -400,6 +400,12 @@
     href: tables/containerservicelog.md
   - name: DatabricksAccounts
     href: tables/databricksaccounts.md
+  - name: DatabricksCapsule8Dataplane
+    href: tables/databrickscapsule8dataplane.md
+  - name: DatabricksClamAVScan
+    href: tables/databricksclamavscan.md
+  - name: DatabricksClusterLibraries
+    href: tables/databricksclusterlibraries.md
   - name: DatabricksClusters
     href: tables/databricksclusters.md
   - name: DatabricksDatabricksSQL
@@ -430,12 +436,16 @@
     href: tables/databricksmodelregistry.md
   - name: DatabricksNotebook
     href: tables/databricksnotebook.md
+  - name: DatabricksPartnerHub
+    href: tables/databrickspartnerhub.md
   - name: DatabricksRemoteHistoryService
     href: tables/databricksremotehistoryservice.md
   - name: DatabricksRepos
     href: tables/databricksrepos.md
   - name: DatabricksSecrets
     href: tables/databrickssecrets.md
+  - name: DatabricksServerlessRealTimeInference
+    href: tables/databricksserverlessrealtimeinference.md
   - name: DatabricksSQL
     href: tables/databrickssql.md
   - name: DatabricksSQLPermissions
