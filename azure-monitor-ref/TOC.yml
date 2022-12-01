@@ -400,3 +400,5 @@
     href: tables/containerservicelog.md
   - name: DatabricksAccounts
     href: tables/databricksaccounts.md
+  - name: DatabricksCapsule8Dataplane
+    href: tables/databrickscapsule8dataplane.md
