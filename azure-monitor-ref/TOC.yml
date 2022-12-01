@@ -72,3 +72,5 @@
     href: tables/acsnetworktraversaldiagnostics.md
   - name: ACSNetworkTraversalIncomingOperations
     href: tables/acsnetworktraversalincomingoperations.md
+  - name: ACSRoomsIncomingOperations
+    href: tables/acsroomsincomingoperations.md
