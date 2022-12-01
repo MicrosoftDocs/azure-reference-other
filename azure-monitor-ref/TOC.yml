@@ -866,3 +866,5 @@
     href: tables/viindexing.md
   - name: VMBoundPort
     href: tables/vmboundport.md
+  - name: VMComputer
+    href: tables/vmcomputer.md
