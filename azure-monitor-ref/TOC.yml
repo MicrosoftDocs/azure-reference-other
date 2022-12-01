@@ -604,3 +604,5 @@
     href: tables/heartbeat.md
   - name: HuntingBookmark
     href: tables/huntingbookmark.md
+  - name: IdentityDirectoryEvents
+    href: tables/identitydirectoryevents.md
