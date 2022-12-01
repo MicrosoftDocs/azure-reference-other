@@ -612,3 +612,5 @@
     href: tables/identitylogonevents.md
   - name: IdentityQueryEvents
     href: tables/identityqueryevents.md
+  - name: InsightsMetrics
+    href: tables/insightsmetrics.md
