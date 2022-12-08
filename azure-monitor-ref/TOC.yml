@@ -248,3 +248,5 @@
     href: tables/appperformancecounters.md
   - name: AppPlatformBuildLogs
     href: tables/appplatformbuildlogs.md
+  - name: AppPlatformContainerEventLogs
+    href: tables/appplatformcontainereventlogs.md
