@@ -98,3 +98,5 @@
     href: tables/adfpipelinerun.md
   - name: ADFSandboxPipelineRun
     href: tables/adfsandboxpipelinerun.md
+  - name: ADFSSignInLogs
+    href: tables/adfssigninlogs.md
