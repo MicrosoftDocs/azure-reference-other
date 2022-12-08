@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -106,6 +106,7 @@ ms.date: 12/1/2022
 - [ContainerImageInventory](containerimageinventory.md)
 - [ContainerInventory](containerinventory.md)
 - [ContainerLog](containerlog.md)
+- [ContainerLogV2](containerlogv2.md)
 - [ContainerNodeInventory](containernodeinventory.md)
 - [ContainerServiceLog](containerservicelog.md)
 - [Heartbeat](heartbeat.md)
@@ -118,6 +119,7 @@ ms.date: 12/1/2022
 - [KubePVInventory](kubepvinventory.md)
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
+- [Syslog](syslog.md)
 
 ## Azure Attestation
 
@@ -142,7 +144,6 @@ ms.date: 12/1/2022
 
 - [ACRConnectedClientList](acrconnectedclientlist.md)
 - [AzureActivity](azureactivity.md)
-- [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
 ## Azure Cosmos DB
@@ -246,6 +247,10 @@ ms.date: 12/1/2022
 
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
+
+## Azure Managed CCF
+
+- [CCFApplicationLogs](ccfapplicationlogs.md)
 
 ## Azure Managed Instance for Apache Cassandra
 
@@ -368,9 +373,19 @@ ms.date: 12/1/2022
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 
+## Azure Stack HCI
+
+- [Event](event.md)
+- [Perf](perf.md)
+
 ## Azure Storage Antimalware
 
 - [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
+
+## Azure Storage Mover
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
 
 ## Azure Subscription
 
@@ -379,6 +394,11 @@ ms.date: 12/1/2022
 ## Azure Traffic Collector
 
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Azure Virtual Network Manager
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
@@ -414,6 +434,7 @@ ms.date: 12/1/2022
 
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
+- [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallRecordingSummary](acscallrecordingsummary.md)
 - [ACSCallSummary](acscallsummary.md)
@@ -515,6 +536,12 @@ ms.date: 12/1/2022
 - [WVDFeeds](wvdfeeds.md)
 - [WVDManagement](wvdmanagement.md)
 
+## Dev Centers
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
+
 ## Device Provisioning Services
 
 - [AzureActivity](azureactivity.md)
@@ -590,6 +617,7 @@ ms.date: 12/1/2022
 - [AZFWApplicationRuleAggregation](azfwapplicationruleaggregation.md)
 - [AZFWDnsQuery](azfwdnsquery.md)
 - [AZFWFatFlow](azfwfatflow.md)
+- [AZFWFlowTrace](azfwflowtrace.md)
 - [AZFWIdpsSignature](azfwidpssignature.md)
 - [AZFWInternalFqdnResolutionFailure](azfwinternalfqdnresolutionfailure.md)
 - [AZFWNatRule](azfwnatrule.md)
@@ -644,6 +672,7 @@ ms.date: 12/1/2022
 
 ## Health Data Services
 
+- [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
 
 ## Intune Specialist Reports.
 
@@ -725,14 +754,12 @@ ms.date: 12/1/2022
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
 
-## Managed CCF
-
-- [CCFApplicationLogs](ccfapplicationlogs.md)
-
 ## Media Services
 
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
+- [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
+- [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -839,11 +866,14 @@ ms.date: 12/1/2022
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 
