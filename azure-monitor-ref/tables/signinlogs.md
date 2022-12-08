@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # SigninLogs
@@ -32,6 +32,7 @@ ms.date: 12/1/2022
 | AlternateSignInName | string |  |
 | AppDisplayName | string |  |
 | AppId | string |  |
+| AppliedConditionalAccessPolicies | string |  |
 | AuthenticationContextClassReferences | string |  |
 | AuthenticationDetails | string |  |
 | AuthenticationMethodsUsed | string |  |
@@ -78,6 +79,7 @@ ms.date: 12/1/2022
 | RiskDetail | string |  |
 | RiskEventTypes | string |  |
 | RiskEventTypes_V2 | string |  |
+| RiskLevel | string |  |
 | RiskLevelAggregated | string |  |
 | RiskLevelDuringSignIn | string |  |
 | RiskState | string |  |
