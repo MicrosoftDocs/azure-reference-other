@@ -216,3 +216,5 @@
     href: tables/amlrunevent.md
   - name: AmlRunStatusChangedEvent
     href: tables/amlrunstatuschangedevent.md
+  - name: AMSKeyDeliveryRequests
+    href: tables/amskeydeliveryrequests.md
