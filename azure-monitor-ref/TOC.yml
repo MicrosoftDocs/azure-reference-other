@@ -282,3 +282,5 @@
     href: tables/appsystemevents.md
   - name: AppTraces
     href: tables/apptraces.md
+  - name: ASimDnsActivityLogs
+    href: tables/asimdnsactivitylogs.md
