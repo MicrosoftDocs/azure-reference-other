@@ -194,3 +194,5 @@
     href: tables/amldatalabelevent.md
   - name: AmlDataSetEvent
     href: tables/amldatasetevent.md
+  - name: AmlDataStoreEvent
+    href: tables/amldatastoreevent.md
