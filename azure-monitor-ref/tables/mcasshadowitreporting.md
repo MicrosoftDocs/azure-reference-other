@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # McasShadowItReporting
@@ -27,6 +27,7 @@ ms.date: 12/1/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
+| AadTenantId | string |  |
 | AppCategory | string |  |
 | AppId | string |  |
 | AppInstance | string |  |
@@ -34,11 +35,14 @@ ms.date: 12/1/2022
 | AppScore | int |  |
 | AppTags | dynamic |  |
 | BlockedEvents | int |  |
+| Date | datetime |  |
 | DownloadedBytes | int |  |
 | EnrichedUserName | string |  |
 | IpAddress | string |  |
 | MachineId | string |  |
 | MachineName | string |  |
+| RawUserName | string |  |
+| RichUserName | string |  |
 | SourceSystem | string |  |
 | StreamName | string |  |
 | TenantId | string |  |
