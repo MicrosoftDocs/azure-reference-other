@@ -292,3 +292,5 @@
     href: tables/auditlogs.md
   - name: AUIEventsAudit
     href: tables/auieventsaudit.md
+  - name: AUIEventsOperational
+    href: tables/auieventsoperational.md
