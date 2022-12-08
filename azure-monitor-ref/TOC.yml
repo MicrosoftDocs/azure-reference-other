@@ -164,3 +164,5 @@
     href: tables/agrifoodinsightlogs.md
   - name: AgriFoodJobProcessedLogs
     href: tables/agrifoodjobprocessedlogs.md
+  - name: AgriFoodModelInferenceLogs
+    href: tables/agrifoodmodelinferencelogs.md
