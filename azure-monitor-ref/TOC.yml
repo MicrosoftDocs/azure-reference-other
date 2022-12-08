@@ -290,3 +290,5 @@
     href: tables/atcexpressroutecircuitipfix.md
   - name: AuditLogs
     href: tables/auditlogs.md
+  - name: AUIEventsAudit
+    href: tables/auieventsaudit.md
