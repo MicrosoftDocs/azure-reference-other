@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -64,7 +64,9 @@ ms.date: 12/1/2022
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
+- [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
+- [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
@@ -73,6 +75,7 @@ ms.date: 12/1/2022
 - [CIEventsAudit](cieventsaudit.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
+- [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
@@ -109,6 +112,7 @@ ms.date: 12/1/2022
 - [ACRConnectedClientList](acrconnectedclientlist.md)
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
+- [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallRecordingSummary](acscallrecordingsummary.md)
 - [ACSCallSummary](acscallsummary.md)
@@ -155,6 +159,7 @@ ms.date: 12/1/2022
 - [AgriFoodSensorManagementLogs](agrifoodsensormanagementlogs.md)
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
+- [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -174,7 +179,9 @@ ms.date: 12/1/2022
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
+- [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
+- [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
 - [ANFFileAccess](anffileaccess.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
@@ -192,6 +199,7 @@ ms.date: 12/1/2022
 - [AuditLogs](auditlogs.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
+- [AZFWFlowTrace](azfwflowtrace.md)
 - [AzureActivity](azureactivity.md)
 - [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -227,6 +235,7 @@ ms.date: 12/1/2022
 - [DatabricksSSH](databricksssh.md)
 - [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
+- [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
 - [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
 - [DSMDataLabelingLogs](dsmdatalabelinglogs.md)
