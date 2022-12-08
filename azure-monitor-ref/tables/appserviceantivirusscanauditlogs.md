@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # AppServiceAntivirusScanAuditLogs
@@ -24,6 +24,7 @@ ms.date: 12/1/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
+| Category | string | Log category name |
 | ErrorMessage | string | Error Message |
 | ListOfInfectedFiles | string | List of each virus file path |
 | NumberOfInfectedFiles | int | Total number of files infected with virus |
@@ -33,5 +34,6 @@ ms.date: 12/1/2022
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | Time when event is generated |
+| TimeStamp | datetime | Time when event is generated |
 | TotalFilesScanned | int | Total number of scanned files |
 | Type | string | The name of the table |
