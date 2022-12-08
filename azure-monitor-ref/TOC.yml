@@ -82,3 +82,5 @@
     href: tables/addonazurebackupalerts.md
   - name: AddonAzureBackupJobs
     href: tables/addonazurebackupjobs.md
+  - name: AddonAzureBackupProtectedInstance
+    href: tables/addonazurebackupprotectedinstance.md
