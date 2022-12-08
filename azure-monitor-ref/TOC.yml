@@ -332,3 +332,5 @@
     href: tables/azureattestationdiagnostics.md
   - name: AzureDevOpsAuditing
     href: tables/azuredevopsauditing.md
+  - name: AzureDiagnostics
+    href: tables/azurediagnostics.md
