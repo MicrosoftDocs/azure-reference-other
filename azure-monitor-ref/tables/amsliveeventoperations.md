@@ -6,16 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # AMSLiveEventOperations
 
  Contains logs related to a Live Event. Logs are sent when an encoder connects, disconnects, or if there is a discontinuity in the media data.
 
+## Categories
+
+- Audit
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Media Services
 
 
 
