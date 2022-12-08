@@ -26,3 +26,5 @@
     href: tables/aadmanagedidentitysigninlogs.md
   - name: AADNonInteractiveUserSignInLogs
     href: tables/aadnoninteractiveusersigninlogs.md
+  - name: AADProvisioningLogs
+    href: tables/aadprovisioninglogs.md
