@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # AppServiceConsoleLogs
@@ -31,6 +31,7 @@ ms.date: 12/1/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
+| Category | string | Log category name |
 | ContainerId | string | Application container id |
 | Host | string | Host where the application is running |
 | Level | string | Verbosity level of log |

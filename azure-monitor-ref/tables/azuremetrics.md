@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # AzureMetrics
@@ -29,17 +29,18 @@ ms.date: 12/1/2022
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Data factories
+- SQL Databases
 - Automation account
-- API Management services
 - Logic Apps
 - Service Fabric Clusters
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
 - Azure Arc enabled Kubernetes
-- SQL Databases
+- Virtual Machine Scale Sets
+- API Management services
+- System Center Virtual Machine Manager
 - Azure Database for MySQL Servers
-- Azure Database for PostgreSQL Servers
 - Azure Database for PostgreSQL Servers V2
 - Bastions
 - Stream Analytics jobs
@@ -48,7 +49,7 @@ ms.date: 12/1/2022
 - Virtual Private Network Gateways
 - Virtual Network Gateways
 - Traffic Manager Profiles
-- Virtual Machine Scale Sets
+- Azure Database for PostgreSQL Servers
 - Public IP Addresses
 - Network Interfaces
 - Front Doors
@@ -58,17 +59,18 @@ ms.date: 12/1/2022
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Network Security Groups
-- Azure API for FHIR
-- System Center Virtual Machine Manager
+- Azure Stack HCI
 - VMware
-- Virtual machines
+- Event Grid System Topics
 - Media Services
 - Machine Learning
+- Dev Centers
 - Azure Database for PostgreSQL Flexible Servers
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
+- Azure Virtual Network Manager
+- Virtual machines
 - Azure Traffic Collector
-- Kubernetes Services
 - Key Vaults
 - Firewalls
 - Event Grid Topics
@@ -76,19 +78,18 @@ ms.date: 12/1/2022
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
+- Kubernetes Services
+- Azure Storage Mover
 - Synapse Workspaces
 - Desktop Virtualization Host Pools
-- Desktop Virtualization Application Groups
-- Desktop Virtualization workspaces
-- Event Grid System Topics
 - Event Grid Partner Topics
 - Event Grid Partner Namespaces
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
 - Azure Data Explorer Clusters
-- Azure Stack HCI
 - Container Registries
+- SignalR
 - Storage Accounts
 - Cognitive Services
 - Azure Spring Cloud
@@ -96,7 +97,9 @@ ms.date: 12/1/2022
 - Analysis Services
 - Workload Monitor
 - Time Series Insights Environments
-- SignalR
+- Desktop Virtualization workspaces
+- Desktop Virtualization Application Groups
+- Azure API for FHIR
 - Service Bus
 
 

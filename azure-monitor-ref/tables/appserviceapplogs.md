@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # AppServiceAppLogs
@@ -30,6 +30,7 @@ ms.date: 12/1/2022
 
 | Column | Type | Description |
 | --- | --- | --- |
+| Category | string | Log category name |
 | ContainerId | string | Application container id |
 | CustomLevel | string | Verbosity level of log |
 | ExceptionClass | string | Application class from where log message is emitted  |
@@ -43,6 +44,7 @@ ms.date: 12/1/2022
 | ResultDescription | string | Log message description |
 | Source | string | Application source from where log message is emitted |
 | SourceSystem | string |  |
+| Stacktrace | string | Complete stack trace of the log message in case of exception |
 | StackTrace | string | Complete stack trace of the log message in case of exception |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
