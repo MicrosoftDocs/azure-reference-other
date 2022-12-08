@@ -202,3 +202,5 @@
     href: tables/amlenvironmentevent.md
   - name: AmlInferencingEvent
     href: tables/amlinferencingevent.md
+  - name: AmlModelsEvent
+    href: tables/amlmodelsevent.md
