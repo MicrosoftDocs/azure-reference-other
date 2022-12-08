@@ -266,3 +266,5 @@
     href: tables/appserviceauditlogs.md
   - name: AppServiceConsoleLogs
     href: tables/appserviceconsolelogs.md
+  - name: AppServiceEnvironmentPlatformLogs
+    href: tables/appserviceenvironmentplatformlogs.md
