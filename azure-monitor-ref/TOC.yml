@@ -20,3 +20,5 @@
     href: tables/aaddomainservicesaccountlogon.md
   - name: AADDomainServicesDirectoryServiceAccess
     href: tables/aaddomainservicesdirectoryserviceaccess.md
+  - name: AADDomainServicesPrivilegeUse
+    href: tables/aaddomainservicesprivilegeuse.md
