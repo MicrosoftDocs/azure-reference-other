@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # ApiManagementGatewayLogs
@@ -76,6 +76,7 @@ ms.date: 12/1/2022
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime |  |
+| Timestamp | datetime |  |
 | TotalTime | long |  |
 | TraceRecords | dynamic | Records emitted by trace policies |
 | Type | string | The name of the table |
