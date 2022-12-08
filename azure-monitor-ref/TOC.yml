@@ -264,3 +264,5 @@
     href: tables/appserviceapplogs.md
   - name: AppServiceAuditLogs
     href: tables/appserviceauditlogs.md
+  - name: AppServiceConsoleLogs
+    href: tables/appserviceconsolelogs.md
