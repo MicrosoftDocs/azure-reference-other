@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/1/2022
+ms.date: 12/8/2022
 ---
 
 # SecurityNestedRecommendation
@@ -36,11 +36,13 @@ ms.date: 12/1/2022
 | IsSnapshot | bool | Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'. |
 | NestedRecommendationId | string | Id of the nested-recommendation |
 | ParentRecommendationId | string | Id of the parent recommendation |
+| RecommendationLink | string | Recommendation link URL |
 | RecommendationName | string | Display name of the sub-assessment |
 | RecommendationSeverity | string | The sub-assessment severity level |
 | RecommendationState | string | The sub-assessment state |
 | RecommendationSubscriptionId | string | Recommendation's subscription Id |
 | RemediationDescription | string | Information on how to remediate this sub-assessment |
+| RemidiationDescription | string | Information on how to remediate this sub-assessment |
 | ResourceDetails | dynamic | Details of the resource that was assessed |
 | ResourceGroup | string | Resource group name |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
@@ -49,5 +51,5 @@ ms.date: 12/1/2022
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | The date and time the sub-assessment was generated |
-| Type | string | The name of the table |
+| Type | string | Resource type |
 | VulnerabilityId | string | Vulnerability Id |

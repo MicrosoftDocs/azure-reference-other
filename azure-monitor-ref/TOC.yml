@@ -176,6 +176,8 @@
     href: tables/agrifoodweatherlogs.md
   - name: AGSGrafanaLoginEvents
     href: tables/agsgrafanaloginevents.md
+  - name: AHDSMedTechDiagnosticLogs
+    href: tables/ahdsmedtechdiagnosticlogs.md
   - name: AirflowDagProcessingLogs
     href: tables/airflowdagprocessinglogs.md
   - name: Alert
@@ -308,6 +310,8 @@
     href: tables/azfwdnsquery.md
   - name: AZFWFatFlow
     href: tables/azfwfatflow.md
+  - name: AZFWFlowTrace
+    href: tables/azfwflowtrace.md
   - name: AZFWIdpsSignature
     href: tables/azfwidpssignature.md
   - name: AZFWInternalFqdnResolutionFailure
