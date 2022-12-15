@@ -156,3 +156,5 @@
     href: tables/aewcomputepipelineslogs.md
   - name: AgriFoodApplicationAuditLogs
     href: tables/agrifoodapplicationauditlogs.md
+  - name: AgriFoodFarmManagementLogs
+    href: tables/agrifoodfarmmanagementlogs.md
