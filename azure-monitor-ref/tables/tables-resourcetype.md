@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/8/2022
+ms.date: 12/15/2022
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -98,7 +98,30 @@ ms.date: 12/8/2022
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 
-## Azure Arc enabled Kubernetes
+## Azure Arc Enabled Kubernetes
+
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+- [ContainerImageInventory](containerimageinventory.md)
+- [ContainerInventory](containerinventory.md)
+- [ContainerLog](containerlog.md)
+- [ContainerLogV2](containerlogv2.md)
+- [ContainerNodeInventory](containernodeinventory.md)
+- [ContainerServiceLog](containerservicelog.md)
+- [Heartbeat](heartbeat.md)
+- [InsightsMetrics](insightsmetrics.md)
+- [KubeEvents](kubeevents.md)
+- [KubeHealth](kubehealth.md)
+- [KubeMonAgentEvents](kubemonagentevents.md)
+- [KubeNodeInventory](kubenodeinventory.md)
+- [KubePodInventory](kubepodinventory.md)
+- [KubePVInventory](kubepvinventory.md)
+- [KubeServices](kubeservices.md)
+- [Perf](perf.md)
+- [Syslog](syslog.md)
+
+## Azure Arc Provisioned Clusters
 
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -372,6 +395,11 @@ ms.date: 12/8/2022
 - [W3CIISLog](w3ciislog.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
+
+## Azure Stack HCI
+
+- [Event](event.md)
+- [Perf](perf.md)
 
 ## Azure Storage Antimalware
 
@@ -864,6 +892,9 @@ ms.date: 12/8/2022
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
