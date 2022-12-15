@@ -312,3 +312,5 @@
     href: tables/azfwfatflow.md
   - name: AZFWFlowTrace
     href: tables/azfwflowtrace.md
+  - name: AZFWIdpsSignature
+    href: tables/azfwidpssignature.md
