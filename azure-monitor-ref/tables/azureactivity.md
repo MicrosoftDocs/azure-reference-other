@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/8/2022
+ms.date: 12/15/2022
 ---
 
 # AzureActivity
@@ -34,7 +34,8 @@ ms.date: 12/8/2022
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
-- Azure Arc enabled Kubernetes
+- Data Lake Analytics
+- Azure Arc Provisioned Clusters
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
 - Azure Stack HCI
@@ -45,9 +46,9 @@ ms.date: 12/8/2022
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
-- Data Lake Analytics
+- Azure Arc Enabled Kubernetes
+- Azure Data Explorer Clusters
 - Power BI Embedded
-- Data Share
 - SQL Managed Instances
 - Bastions
 - Stream Analytics jobs
@@ -59,7 +60,7 @@ ms.date: 12/8/2022
 - Public IP Addresses
 - Network Security Groups
 - Network Interfaces
-- Azure Data Explorer Clusters
+- Data Share
 - Load Balancers
 - ExpressRoute Circuits
 - Application Gateways
@@ -72,8 +73,8 @@ ms.date: 12/8/2022
 - SQL Databases
 - SQL Servers
 - Front Doors
+- Azure API for FHIR
 - Container Registries
-- SignalR
 - Storage Accounts
 - Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
@@ -98,7 +99,7 @@ ms.date: 12/8/2022
 - Azure Autonomous Development Platform workspace
 - App Services
 - Azure Managed Workspace for Grafana
-- Azure API for FHIR
+- SignalR
 - Dynamics 365 Customer Insights
 - Dev Centers
 - Cognitive Services
