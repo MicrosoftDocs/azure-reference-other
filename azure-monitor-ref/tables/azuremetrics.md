@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/8/2022
+ms.date: 12/15/2022
 ---
 
 # AzureMetrics
@@ -22,26 +22,26 @@ ms.date: 12/8/2022
 ## Resource types
 
 - App Services
-- SQL Servers
 - SQL Managed Instances
 - Data Share
 - Power BI Embedded
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Data factories
-- SQL Databases
 - Automation account
-- Logic Apps
+- SQL Servers
+- API Management services
 - Service Fabric Clusters
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
-- Azure Arc enabled Kubernetes
+- Azure Arc Provisioned Clusters
+- Azure Arc Enabled Kubernetes
 - Virtual Machine Scale Sets
-- API Management services
-- System Center Virtual Machine Manager
+- Logic Apps
+- SQL Databases
 - Azure Database for MySQL Servers
-- Azure Database for PostgreSQL Servers V2
+- Azure Database for PostgreSQL Servers
 - Bastions
 - Stream Analytics jobs
 - Search Services
@@ -49,8 +49,8 @@ ms.date: 12/8/2022
 - Virtual Private Network Gateways
 - Virtual Network Gateways
 - Traffic Manager Profiles
-- Azure Database for PostgreSQL Servers
 - Public IP Addresses
+- Network Security Groups
 - Network Interfaces
 - Front Doors
 - ExpressRoute Circuits
@@ -58,9 +58,10 @@ ms.date: 12/8/2022
 - Event Hubs
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
-- Network Security Groups
+- Azure Database for PostgreSQL Servers V2
+- System Center Virtual Machine Manager
+- Azure API for FHIR
 - Azure Stack HCI
-- VMware
 - Event Grid System Topics
 - Media Services
 - Machine Learning
@@ -99,7 +100,7 @@ ms.date: 12/8/2022
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
-- Azure API for FHIR
+- VMware
 - Service Bus
 
 
