@@ -108,3 +108,5 @@
     href: tables/adfssispackageeventmessages.md
   - name: ADFSSISPackageExecutableStatistics
     href: tables/adfssispackageexecutablestatistics.md
+  - name: ADFSSISPackageExecutionComponentPhases
+    href: tables/adfssispackageexecutioncomponentphases.md
