@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/15/2022
+ms.date: 12/22/2022
 ---
 
 # ASimDnsActivityLogs
@@ -120,11 +120,11 @@ ms.date: 12/15/2022
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | ThreatCategory | string | If a DNS event source also provides DNS security, it may also evaluate the DNS event. For example, it can search for the IP address or domain in a threat intelligence database, and assign the domain or IP address with a Threat Category. |
-| ThreatConfidence | string | The confidence level of the threat identified, normalized to a value between 0 and a 100. |
+| ThreatConfidence | int | The confidence level of the threat identified, normalized to a value between 0 and a 100. |
 | ThreatField | string | The field for which a threat was identified. The value is either SrcIpAddr, DstIpAddr, Domain, or DnsResponseName. |
 | ThreatFirstReportedTime | string | The first time the IP address or domain were identified as a threat. |
 | ThreatIpAddr | string | An IP address for which a threat was identified. The field ThreatField contains the name of the field ThreatIpAddr represents. If a threat is identified in the Domain field, this field should be empty. |
-| ThreatIsActive | string | True ID the threat identified is considered an active threat. |
+| ThreatIsActive | bool | True ID the threat identified is considered an active threat. |
 | ThreatLastReportedTime | string | The last time the IP address or domain were identified as a threat. |
 | ThreatName | string | The name of the threat identified, as reported by the reporting device. |
 | ThreatOriginalConfidence | string | The original confidence level of the threat identified, as reported by the reporting device. |
