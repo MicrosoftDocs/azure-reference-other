@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/15/2022
+ms.date: 12/22/2022
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -273,6 +273,7 @@ ms.date: 12/15/2022
 - [HDInsightStormTopologyMetrics](hdinsightstormtopologymetrics.md)
 - [InsightsMetrics](insightsmetrics.md)
 - [IoTHubDistributedTracing](iothubdistributedtracing.md)
+- [LogicAppWorkflowRuntime](logicappworkflowruntime.md)
 - [MCCEventLogs](mcceventlogs.md)
 - [MCVPAuditLogs](mcvpauditlogs.md)
 - [MCVPOperationLogs](mcvpoperationlogs.md)
