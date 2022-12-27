@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/15/2022
+ms.date: 12/22/2022
 ---
 
 # AWSCloudTrail
@@ -33,6 +33,7 @@ ms.date: 12/15/2022
 | AWSRegion | string |  |
 | AwsRequestId_ | string |  |
 | Category | string |  |
+| EC2RoleDelivery | string |  |
 | ErrorCode | string |  |
 | ErrorMessage | string |  |
 | EventName | string |  |

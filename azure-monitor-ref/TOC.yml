@@ -298,6 +298,8 @@
     href: tables/autoscalescaleactionslog.md
   - name: AVSSyslog
     href: tables/avssyslog.md
+  - name: AWSCloudWatch
+    href: tables/awscloudwatch.md
   - name: AWSGuardDuty
     href: tables/awsguardduty.md
   - name: AWSVPCFlow
@@ -642,6 +644,8 @@
     href: tables/kubeservices.md
   - name: LAQueryLogs
     href: tables/laquerylogs.md
+  - name: LogicAppWorkflowRuntime
+    href: tables/logicappworkflowruntime.md
   - name: MAApplicationInstance
     href: tables/maapplicationinstance.md
   - name: MADeviceNotEnrolled
