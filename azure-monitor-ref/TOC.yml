@@ -452,3 +452,5 @@
     href: tables/databrickssecrets.md
   - name: DatabricksServerlessRealTimeInference
     href: tables/databricksserverlessrealtimeinference.md
+  - name: DatabricksSQL
+    href: tables/databrickssql.md
