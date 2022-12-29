@@ -274,3 +274,5 @@
     href: tables/appservicehttplogs.md
   - name: AppServiceIPSecAuditLogs
     href: tables/appserviceipsecauditlogs.md
+  - name: AppServicePlatformLogs
+    href: tables/appserviceplatformlogs.md
