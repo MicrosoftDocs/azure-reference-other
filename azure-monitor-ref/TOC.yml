@@ -92,3 +92,5 @@
     href: tables/adfairflowtasklogs.md
   - name: ADFAirflowWebLogs
     href: tables/adfairflowweblogs.md
+  - name: ADFAirflowWorkerLogs
+    href: tables/adfairflowworkerlogs.md
