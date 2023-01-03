@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/22/2022
+ms.date: 12/30/2022
 ---
 
 # AppPlatformIngressLogs
@@ -35,7 +35,7 @@ ms.date: 12/22/2022
 | HttpReferer | string | Value of the referer header |
 | HttpUserAgent | string | Value of user-agent header |
 | OperationName | string | The name of the operation represented by this event |
-| ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-&lt;namespace&gt;-&lt;service name&gt;-&lt;service port&gt; |
+| ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-&lt;namespace&gt;-&lt;service name&gt;-vservice port&gt; |
 | ProxyUpstreamName | string | Name of the upstream server. The format is upstream-&lt;namespace&gt;-&lt;service name&gt;-&lt;service port&gt; |
 | RemoteAddr | string | The source IP address of the client |
 | RemoteUser | string | User name supplied with the basic authentication |
