@@ -11,7 +11,7 @@ ms.date: 12/30/2022
 
 # DynamicSummary
 
- Azure Sentinel Dynamic Summary provides a security data storage to persist concentrated findings and summaries for hunting, investigation, search, detection.  Summary description and detailed observables can be stored in Log Analytics for further analysis and report generation.
+Microsoft Sentinel Dynamic Summary provides a security data storage to persist concentrated findings and summaries for hunting, investigation, search, detection.  Summary description and detailed observables can be stored in Log Analytics for further analysis and report generation.
 
 ## Categories
 
