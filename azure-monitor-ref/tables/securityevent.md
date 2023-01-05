@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 12/30/2022
+ms.date: 1/5/2023
 ---
 
 # SecurityEvent
