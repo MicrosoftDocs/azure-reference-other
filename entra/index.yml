@@ -51,9 +51,9 @@ additionalContent:
         - title: "Announcement"
           summary: "Read our announcement about the Microsoft Entra family of multicloud identity and access solutions."
           url: https://aka.ms/EntraAnnouncement
-        - title: "Azure AD datasheet"
-          summary: "Learn how you can get secure single sign-on for any app and from any device with Microsoft's identity and access management cloud solution."
-          url: https://aka.ms/AADDatasheet
+        - title: "Video demo"
+          summary: "See the new capabilities of Microsoft Entra, including unified identity management that spans beyond your Microsoft estate."
+          url: https://youtu.be/9qQiq3wTS2Y
         - title: "Microsoft security documentation"
           summary: "Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps."
           url: https://learn.microsoft.com/security/
