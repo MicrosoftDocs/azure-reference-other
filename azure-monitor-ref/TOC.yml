@@ -22,3 +22,5 @@
     href: tables/aaddomainservicesdirectoryserviceaccess.md
   - name: AADDomainServicesPrivilegeUse
     href: tables/aaddomainservicesprivilegeuse.md
+  - name: AADManagedIdentitySignInLogs
+    href: tables/aadmanagedidentitysigninlogs.md
