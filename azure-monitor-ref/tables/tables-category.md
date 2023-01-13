@@ -182,7 +182,6 @@ ms.date: 1/12/2023
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
-- [ANFFileAccess](anffileaccess.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)

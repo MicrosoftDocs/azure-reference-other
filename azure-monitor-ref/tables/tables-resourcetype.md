@@ -294,9 +294,6 @@ ms.date: 1/12/2023
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
-## Azure NetApp Files
-
-- [ANFFileAccess](anffileaccess.md)
 
 ## Azure PlayFab
 
