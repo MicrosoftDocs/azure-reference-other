@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/12/2023
+ms.date: 1/18/2023
 ---
 
 # OfficeActivity
@@ -30,6 +30,7 @@ ms.date: 1/12/2023
 | --- | --- | --- |
 | AADGroupId | string | Azure Active Directory group id |
 | AADTarget | string | The user that the action (identified by the Operation property) was performed on |
+| Activity | string | The activity that the user performed. |
 | Actor | string | The user or service principal that performed the action |
 | ActorContextId | string | The GUID of the organization that the actor belongs to |
 | ActorIpAddress | string | The actor's IP address in IPV4 or IPV6 address format |
