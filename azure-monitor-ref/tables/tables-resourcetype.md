@@ -397,11 +397,6 @@ ms.date: 1/18/2023
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 
-## Azure Stack HCI
-
-- [Event](event.md)
-- [Perf](perf.md)
-
 ## Azure Storage Antimalware
 
 - [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
@@ -893,9 +888,6 @@ ms.date: 1/18/2023
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-
-## Power BI Datasets
-
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
