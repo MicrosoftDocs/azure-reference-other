@@ -100,3 +100,5 @@
     href: tables/adfsandboxpipelinerun.md
   - name: ADFSSignInLogs
     href: tables/adfssigninlogs.md
+  - name: ADFSSISIntegrationRuntimeLogs
+    href: tables/adfssisintegrationruntimelogs.md
