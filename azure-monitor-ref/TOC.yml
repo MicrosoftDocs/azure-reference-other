@@ -226,3 +226,5 @@
     href: tables/amsstreamingendpointrequests.md
   - name: ANFFileAccess
     href: tables/anffileaccess.md
+  - name: Anomalies
+    href: tables/anomalies.md
