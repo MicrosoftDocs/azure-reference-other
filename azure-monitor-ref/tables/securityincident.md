@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/12/2023
+ms.date: 1/18/2023
 ---
 
 # SecurityIncident
@@ -50,6 +50,7 @@ ms.date: 1/12/2023
 | Severity | string | The severity of the incident |
 | SourceSystem | string |  |
 | Status | string | The status of the incident |
+| Tasks | dynamic | The tasks added to the incident |
 | TenantId | string |  |
 | TimeGenerated | datetime | Timestamp (UTC) of when the incident was ingested |
 | Title | string | The title of the incident |
