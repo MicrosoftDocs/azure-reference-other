@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/12/2023
+ms.date: 1/18/2023
 ---
 
 # ContainerLogV2
@@ -18,6 +18,7 @@ ms.date: 1/12/2023
 - Containers
 ## Solutions
 
+- AzureResources
 - ContainerInsights
 ## Resource types
 

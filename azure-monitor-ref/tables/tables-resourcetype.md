@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/12/2023
+ms.date: 1/18/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -294,6 +294,9 @@ ms.date: 1/12/2023
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Azure NetApp Files
+
+- [ANFFileAccess](anffileaccess.md)
 
 ## Azure PlayFab
 

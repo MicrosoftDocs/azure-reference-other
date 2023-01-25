@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/12/2023
+ms.date: 1/18/2023
 ---
 
 # AlertInfo
@@ -24,14 +24,14 @@ ms.date: 1/12/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| AlertId | string | Unique identifier for the alert |
-| AttackTechniques | string | MITRE ATT&CK techniques associated with the activity that triggered the alert |
-| Category | string | Type of threat indicator or breach activity identified by the alert |
-| DetectionSource | string | Detection technology or sensor that identified the notable component or activity |
-| ServiceSource | string | Product or service that provided the alert information |
-| Severity | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
+| AlertId | string | Unique identifier for the alert. |
+| AttackTechniques | string | MITRE ATT&CK techniques associated with the activity that triggered the alert. |
+| Category | string | Type of threat indicator or breach activity identified by the alert. |
+| DetectionSource | string | Detection technology or sensor that identified the notable component or activity. |
+| ServiceSource | string | Product or service that provided the alert information. |
+| Severity | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert. |
 | SourceSystem | string |  |
 | TenantId | string |  |
-| TimeGenerated | datetime | Date and time (UTC) when the record was generated |
-| Title | string | Title of the alert |
+| TimeGenerated | datetime | Date and time (UTC) when the record was generated. |
+| Title | string | Title of the alert. |
 | Type | string | The name of the table |
