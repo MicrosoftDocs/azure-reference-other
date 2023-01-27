@@ -258,3 +258,5 @@
     href: tables/appplatformsystemlogs.md
   - name: AppRequests
     href: tables/apprequests.md
+  - name: AppServiceAntivirusScanAuditLogs
+    href: tables/appserviceantivirusscanauditlogs.md
