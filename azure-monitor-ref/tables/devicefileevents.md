@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/18/2023
+ms.date: 1/27/2023
 ---
 
 # DeviceFileEvents
 
- This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains File creation, modification, and other file system events.
+ This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains file creation, modification, and other file system events.
 
 ## Categories
 
@@ -44,24 +44,31 @@ ms.date: 1/18/2023
 | InitiatingProcessAccountSid | string | Security Identifier (SID) of the account that ran the process responsible for the event. |
 | InitiatingProcessAccountUpn | string | User principal name (UPN) of the account that ran the process responsible for the event. |
 | InitiatingProcessCommandLine | string | Command line used to run the process that initiated the event. |
-| InitiatingProcessCreationTime | datetime | Date and time when the parent of the process responsible for the event was started. |
+| InitiatingProcessCreationTime | datetime | Date and time when the process that initiated the event was started. |
 | InitiatingProcessFileName | string | Name of the process that initiated the event. |
+| InitiatingProcessFileSize | long | Size in bytes of the process (image file) that initiated the event. |
 | InitiatingProcessFolderPath | string | Folder containing the process (image file) that initiated the event. |
 | InitiatingProcessId | long | Process ID (PID) of the process that initiated the event. |
-| InitiatingProcessIntegrityLevel | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.. |
+| InitiatingProcessIntegrityLevel | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources. |
 | InitiatingProcessMD5 | string | MD5 hash of the process (image file) that initiated the event. |
 | InitiatingProcessParentCreationTime | datetime | Date and time when the parent of the process responsible for the event was started. |
 | InitiatingProcessParentFileName | string | Name of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessParentId | long | Process ID (PID) of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessSHA1 | string | SHA-1 hash of the process (image file) that initiated the event. |
-| InitiatingProcessSHA256 | string | SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.. |
+| InitiatingProcessSHA256 | string | SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available. |
 | InitiatingProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event. |
+| InitiatingProcessVersionInfoCompanyName | string | Company name from the version information of the process (image file) responsible for the event. |
+| InitiatingProcessVersionInfoFileDescription | string | Description from the version information of the process (image file) responsible for the event. |
+| InitiatingProcessVersionInfoInternalFileName | string | Internal file name from the version information of the process (image file) responsible for the event. |
+| InitiatingProcessVersionInfoOriginalFileName | string | Original file name from the version information of the process (image file) responsible for the event. |
+| InitiatingProcessVersionInfoProductName | string | Product name from the version information of the process (image file) responsible for the event. |
+| InitiatingProcessVersionInfoProductVersion | string | Product version from the version information of the process (image file) responsible for the event. |
 | IsAzureInfoProtectionApplied | bool | Indicates whether the file is encrypted by Azure Information Protection. |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to. |
 | PreviousFileName | string | Original name of the file that was renamed as a result of the action. |
 | PreviousFolderPath | string | Original folder containing the file before the recorded action was applied. |
-| ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.. |
+| ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
 | RequestAccountDomain | string | Domain of the account used to remotely initiate the activity. |
 | RequestAccountName | string | User name of account used to remotely initiate the activity. |
 | RequestAccountSid | string | Security Identifier (SID) of the account used to remotely initiate the activity. |
@@ -75,5 +82,5 @@ ms.date: 1/18/2023
 | ShareName | string | Name of shared folder containing the file. |
 | SourceSystem | string |  |
 | TenantId | string |  |
-| TimeGenerated | datetime | Date and time when the record was generated. |
+| TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
