@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/18/2023
+ms.date: 1/27/2023
 ---
 
 # SynapseSqlPoolSqlRequests
@@ -46,6 +46,7 @@ ms.date: 1/18/2023
 | SpId | int | The sp id of the SQL requests. |
 | StartTime | datetime | The startTime (UTC) of the SQL requests. |
 | Status | string | The Status of the SQL requests. |
+| StepIndex | int | The step index of the SQL requests. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
