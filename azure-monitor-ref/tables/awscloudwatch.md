@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/18/2023
+ms.date: 1/27/2023
 ---
 
 # AWSCloudWatch
 
  The CloudWatch Logs provide performance and billing data from the AWS CloudWatch service which helps the user better understand and operate the AWS system and application.
 
+## Categories
+
+- Security
 ## Solutions
 
 - Microsoft Sentinel
