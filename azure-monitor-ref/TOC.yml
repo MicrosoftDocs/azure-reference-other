@@ -160,3 +160,5 @@
     href: tables/agrifoodfarmmanagementlogs.md
   - name: AgriFoodFarmOperationLogs
     href: tables/agrifoodfarmoperationlogs.md
+  - name: AgriFoodInsightLogs
+    href: tables/agrifoodinsightlogs.md
