@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/18/2023
+ms.date: 1/27/2023
 ---
 
 # Heartbeat
@@ -15,9 +15,9 @@ ms.date: 1/18/2023
 
 ## Categories
 
+- Virtual Machines
 - Containers
 - IT & Management Tools
-- Virtual Machines
 ## Solutions
 
 - LogManagement

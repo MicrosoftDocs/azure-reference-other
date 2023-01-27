@@ -6,24 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/18/2023
+ms.date: 1/27/2023
 ---
 
 # AppServiceIPSecAuditLogs
 
  Logs generated through your application and pushed to Azure Monitoring.
 
-## Categories
-
-- Azure Resources
-- Audit
-- Security
 ## Solutions
 
 - LogManagement
-## Resource types
-
-- App Services
 
 
 

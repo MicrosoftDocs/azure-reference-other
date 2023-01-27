@@ -282,6 +282,10 @@
     href: tables/appsystemevents.md
   - name: AppTraces
     href: tables/apptraces.md
+  - name: ASCAuditLogs
+    href: tables/ascauditlogs.md
+  - name: ASCDeviceEvents
+    href: tables/ascdeviceevents.md
   - name: ASimDnsActivityLogs
     href: tables/asimdnsactivitylogs.md
   - name: ASimNetworkSessionLogs
@@ -498,10 +502,14 @@
     href: tables/deviceskypesignin.md
   - name: DeviceTvmSecureConfigurationAssessment
     href: tables/devicetvmsecureconfigurationassessment.md
+  - name: DeviceTvmSecureConfigurationAssessmentKB
+    href: tables/devicetvmsecureconfigurationassessmentkb.md
   - name: DeviceTvmSoftwareInventory
     href: tables/devicetvmsoftwareinventory.md
   - name: DeviceTvmSoftwareVulnerabilities
     href: tables/devicetvmsoftwarevulnerabilities.md
+  - name: DeviceTvmSoftwareVulnerabilitiesKB
+    href: tables/devicetvmsoftwarevulnerabilitieskb.md
   - name: DHOSCrashData
     href: tables/dhoscrashdata.md
   - name: DnsEvents

@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/18/2023
+ms.date: 1/27/2023
 ---
 
 # AzureDevOpsAuditing
 
- Azure DevOps Audit Logs.
+ Schema for Azure DevOps audit logs, which can be used to track the many changes that occur within your Azure DevOps organization(s). Some examples include changes to security policies, pipelines, billing, and projects. For a full list of events, see aka.ms/azdev-audit-events.
 
 ## Solutions
 
@@ -25,10 +25,11 @@ ms.date: 1/18/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActivityId | string | Unique identifier for the action that occurred. |
-| ActorCUID | string | A consistently unique identifier for the actor that caused the auditing event. |
+| ActorClientId | string | When the action was performed by a managed identity or other service principal, this value represents the client ID of that principal. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field is populated, ActorCUID and ActorUserId will both be 00000000-0000-0000-0000-000000000000. |
+| ActorCUID | string | When the action was performed by a user, this value represents a consistently unique identifier for that actor. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field, along with ActorUserId, is populated, ActorClientId will be 00000000-0000-0000-0000-000000000000. |
 | ActorDisplayName | string | Display name of the user who initiated the auditing event to be logged. |
 | ActorUPN | string | The actor's user principal name. |
-| ActorUserId | string | The actor's user identifier. |
+| ActorUserId | string | When the action was performed by a user or Azure DevOps service, this value represents that actor's user identifier. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field, along with ActorUserId, is populated, ActorClientId will be 00000000-0000-0000-0000-000000000000. |
 | Area | string | Part of the Azure DevOps product where the auditing event occurred. |
 | AuthenticationMechanism | string | Type of authentication used by the actor. |
 | Category | string | Type of action that occurred when the auditing event was logged. |

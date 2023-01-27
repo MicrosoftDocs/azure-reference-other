@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 1/18/2023
+ms.date: 1/27/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -32,7 +32,6 @@ ms.date: 1/18/2023
 - [AppServiceConsoleLogs](appserviceconsolelogs.md)
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
-- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [AzureActivity](azureactivity.md)
@@ -308,6 +307,7 @@ ms.date: 1/18/2023
 
 ## Azure Sentinel
 
+- [SecurityAlert](securityalert.md)
 
 ## Azure Sentinel Amazon
 
@@ -320,6 +320,9 @@ ms.date: 1/18/2023
 - [CommonSecurityLog](commonsecuritylog.md)
 
 ## Azure Sentinel data collection
+
+
+## Azure Sentinel File Event Logs
 
 
 ## Azure Sentinel GCP
@@ -349,8 +352,13 @@ ms.date: 1/18/2023
 ## Azure Sentinel Watchlist
 
 
+## Azure Sentinel Web Session Logs
+
+
 ## Azure Sphere
 
+- [ASCAuditLogs](ascauditlogs.md)
+- [ASCDeviceEvents](ascdeviceevents.md)
 
 ## Azure Spring Cloud
 
