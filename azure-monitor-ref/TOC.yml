@@ -114,3 +114,5 @@
     href: tables/adfssispackageexecutiondatastatistics.md
   - name: ADFTriggerRun
     href: tables/adftriggerrun.md
+  - name: ADPAudit
+    href: tables/adpaudit.md
