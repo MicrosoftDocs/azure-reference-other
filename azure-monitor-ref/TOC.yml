@@ -282,3 +282,5 @@
     href: tables/apptraces.md
   - name: ASCAuditLogs
     href: tables/ascauditlogs.md
+  - name: ASCDeviceEvents
+    href: tables/ascdeviceevents.md
