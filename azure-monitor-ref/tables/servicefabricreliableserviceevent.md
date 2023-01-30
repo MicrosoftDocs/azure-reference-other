@@ -4,9 +4,9 @@ description: Reference for ServiceFabricReliableServiceEvent table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 1/27/2023
+ms.author: robb
+author: rboucher
+ms.date: 1/30/2023
 ---
 
 # ServiceFabricReliableServiceEvent
