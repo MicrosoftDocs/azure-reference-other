@@ -186,3 +186,5 @@
     href: tables/alertevidence.md
   - name: AlertInfo
     href: tables/alertinfo.md
+  - name: AmlComputeCpuGpuUtilization
+    href: tables/amlcomputecpugpuutilization.md
