@@ -146,3 +146,5 @@
     href: tables/adxtableusagestatistics.md
   - name: AegDataPlaneRequests
     href: tables/aegdataplanerequests.md
+  - name: AegDeliveryFailureLogs
+    href: tables/aegdeliveryfailurelogs.md
