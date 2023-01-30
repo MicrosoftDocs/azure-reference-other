@@ -96,3 +96,5 @@
     href: tables/adfairflowworkerlogs.md
   - name: ADFPipelineRun
     href: tables/adfpipelinerun.md
+  - name: ADFSandboxPipelineRun
+    href: tables/adfsandboxpipelinerun.md
