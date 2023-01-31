@@ -4,9 +4,9 @@ description: Index for tables in Azure Monitor Logs organized by category.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 1/27/2023
+ms.author: robb
+author: rboucher
+ms.date: 1/30/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -69,6 +69,7 @@ ms.date: 1/27/2023
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
+- [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [CassandraAudit](cassandraaudit.md)
@@ -192,7 +193,6 @@ ms.date: 1/27/2023
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
-- [ANFFileAccess](anffileaccess.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
@@ -210,6 +210,7 @@ ms.date: 1/27/2023
 - [AuditLogs](auditlogs.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
+- [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AZFWFlowTrace](azfwflowtrace.md)
 - [AzureActivity](azureactivity.md)
 - [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
@@ -477,6 +478,7 @@ ms.date: 1/27/2023
 
 ## Network
 
+- [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
