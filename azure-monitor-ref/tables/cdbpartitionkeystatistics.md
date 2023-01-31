@@ -4,15 +4,19 @@ description: Reference for CDBPartitionKeyStatistics table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 1/18/2023
+ms.author: robb
+author: rboucher
+ms.date: 1/30/2023
 ---
 
 # CDBPartitionKeyStatistics
 
  This table provides outlier logical partition keys that have consumed more storage space than others, which can be valuable in debugging storage skews.
 
+## Categories
+
+- Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement

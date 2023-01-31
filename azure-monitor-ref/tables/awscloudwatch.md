@@ -4,15 +4,18 @@ description: Reference for AWSCloudWatch table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 1/18/2023
+ms.author: robb
+author: rboucher
+ms.date: 1/30/2023
 ---
 
 # AWSCloudWatch
 
  The CloudWatch Logs provide performance and billing data from the AWS CloudWatch service which helps the user better understand and operate the AWS system and application.
 
+## Categories
+
+- Security
 ## Solutions
 
 - Microsoft Sentinel

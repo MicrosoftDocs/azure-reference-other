@@ -4,15 +4,19 @@ description: Reference for CDBControlPlaneRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 1/18/2023
+ms.author: robb
+author: rboucher
+ms.date: 1/30/2023
 ---
 
 # CDBControlPlaneRequests
 
  This table details all control plane operations executed on the account, which include modifications to the regional failover policy, indexing policy, IAM role assignments, backup/restore policies, VNet and firewall rules, private links as well as updates and deletes of the account.
 
+## Categories
+
+- Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement

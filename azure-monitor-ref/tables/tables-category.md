@@ -4,9 +4,9 @@ description: Index for tables in Azure Monitor Logs organized by category.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 1/18/2023
+ms.author: robb
+author: rboucher
+ms.date: 1/30/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -67,15 +67,26 @@ ms.date: 1/18/2023
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
-- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
+- [ASCAuditLogs](ascauditlogs.md)
+- [ASCDeviceEvents](ascdeviceevents.md)
+- [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [CassandraAudit](cassandraaudit.md)
 - [CCFApplicationLogs](ccfapplicationlogs.md)
+- [CDBCassandraRequests](cdbcassandrarequests.md)
+- [CDBControlPlaneRequests](cdbcontrolplanerequests.md)
+- [CDBDataPlaneRequests](cdbdataplanerequests.md)
+- [CDBGremlinRequests](cdbgremlinrequests.md)
+- [CDBMongoRequests](cdbmongorequests.md)
+- [CDBPartitionKeyRUConsumption](cdbpartitionkeyruconsumption.md)
+- [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
+- [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
+- [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
@@ -182,7 +193,6 @@ ms.date: 1/18/2023
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
-- [ANFFileAccess](anffileaccess.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
@@ -193,12 +203,14 @@ ms.date: 1/18/2023
 - [AppServiceConsoleLogs](appserviceconsolelogs.md)
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
-- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
+- [ASCAuditLogs](ascauditlogs.md)
+- [ASCDeviceEvents](ascdeviceevents.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
 - [AuditLogs](auditlogs.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
+- [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AZFWFlowTrace](azfwflowtrace.md)
 - [AzureActivity](azureactivity.md)
 - [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
@@ -211,6 +223,14 @@ ms.date: 1/18/2023
 - [BlockchainApplicationLog](blockchainapplicationlog.md)
 - [BlockchainProxyLog](blockchainproxylog.md)
 - [CCFApplicationLogs](ccfapplicationlogs.md)
+- [CDBCassandraRequests](cdbcassandrarequests.md)
+- [CDBControlPlaneRequests](cdbcontrolplanerequests.md)
+- [CDBDataPlaneRequests](cdbdataplanerequests.md)
+- [CDBGremlinRequests](cdbgremlinrequests.md)
+- [CDBMongoRequests](cdbmongorequests.md)
+- [CDBPartitionKeyRUConsumption](cdbpartitionkeyruconsumption.md)
+- [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
+- [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CIEventsOperational](cieventsoperational.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
@@ -243,6 +263,7 @@ ms.date: 1/18/2023
 - [FunctionAppLogs](functionapplogs.md)
 - [HDInsightAmbariClusterAlerts](hdinsightambariclusteralerts.md)
 - [HDInsightAmbariSystemMetrics](hdinsightambarisystemmetrics.md)
+- [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
 - [HDInsightHadoopAndYarnLogs](hdinsighthadoopandyarnlogs.md)
 - [HDInsightHadoopAndYarnMetrics](hdinsighthadoopandyarnmetrics.md)
 - [HDInsightHBaseLogs](hdinsighthbaselogs.md)
@@ -457,6 +478,7 @@ ms.date: 1/18/2023
 
 ## Network
 
+- [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
@@ -486,13 +508,14 @@ ms.date: 1/18/2023
 - [AADUserRiskEvents](aaduserriskevents.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [AlertEvidence](alertevidence.md)
+- [AlertInfo](alertinfo.md)
 - [Anomalies](anomalies.md)
-- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 - [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
+- [AWSCloudWatch](awscloudwatch.md)
 - [AWSGuardDuty](awsguardduty.md)
 - [AWSVPCFlow](awsvpcflow.md)
 - [AZFWApplicationRule](azfwapplicationrule.md)
@@ -523,8 +546,10 @@ ms.date: 1/18/2023
 - [DeviceProcessEvents](deviceprocessevents.md)
 - [DeviceRegistryEvents](deviceregistryevents.md)
 - [DeviceTvmSecureConfigurationAssessment](devicetvmsecureconfigurationassessment.md)
+- [DeviceTvmSecureConfigurationAssessmentKB](devicetvmsecureconfigurationassessmentkb.md)
 - [DeviceTvmSoftwareInventory](devicetvmsoftwareinventory.md)
 - [DeviceTvmSoftwareVulnerabilities](devicetvmsoftwarevulnerabilities.md)
+- [DeviceTvmSoftwareVulnerabilitiesKB](devicetvmsoftwarevulnerabilitieskb.md)
 - [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
 - [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
 - [DSMDataLabelingLogs](dsmdatalabelinglogs.md)
@@ -590,6 +615,7 @@ ms.date: 1/18/2023
 - [VMProcess](vmprocess.md)
 - [W3CIISLog](w3ciislog.md)
 - [WireData](wiredata.md)
+- [WVDAgentHealthStatus](wvdagenthealthstatus.md)
 
 ## Workloads
 
