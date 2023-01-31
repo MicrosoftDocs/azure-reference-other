@@ -4,15 +4,19 @@ description: Reference for CDBCassandraRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 1/18/2023
+ms.author: robb
+author: rboucher
+ms.date: 1/30/2023
 ---
 
 # CDBCassandraRequests
 
  This table details data plane operations, specifically for Cassandra API accounts.
 
+## Categories
+
+- Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement

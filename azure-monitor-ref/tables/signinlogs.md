@@ -4,9 +4,9 @@ description: Reference for SigninLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 1/18/2023
+ms.author: robb
+author: rboucher
+ms.date: 1/30/2023
 ---
 
 # SigninLogs
@@ -33,6 +33,7 @@ ms.date: 1/18/2023
 | AppDisplayName | string |  |
 | AppId | string |  |
 | AppliedConditionalAccessPolicies | string |  |
+| AppliedEventListeners | dynamic |  |
 | AuthenticationContextClassReferences | string |  |
 | AuthenticationDetails | string |  |
 | AuthenticationMethodsUsed | string |  |
