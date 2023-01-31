@@ -306,12 +306,12 @@ ms.date: 1/30/2023
 
 ## Azure Sentinel
 
-- [SecurityAlert](securityalert.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
-
+- [SecurityAlert](securityalert.md)
+ 
 ## Azure Sphere
 
 - [ASCAuditLogs](ascauditlogs.md)
