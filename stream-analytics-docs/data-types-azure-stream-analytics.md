@@ -8,7 +8,7 @@ applies_to:
 ms.author: ebnkruma
 ms.service: stream-analytics
 ms.topic: reference
-ms.date: 08/08/2022
+ms.date: 02/01/2023
 ---
 
 # Data Types (Azure Stream Analytics)
@@ -32,6 +32,9 @@ Please note that it is records that have a type and not columns. Each record of 
 |array|Ordered collection of values. Values must be of supported data type.|
 
  You may join on (or compare) a bigint and a float data type. It will work correctly in all cases except for the case of the very large bigint values that cannot be represented.
+
+> [!NOTE]
+> When reading bigint datatypes that are outside the range Azure Stream Analytics supports, you can use Azure functions to convert the file format to string.
 
 ## Type conversions
 
