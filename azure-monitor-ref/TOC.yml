@@ -186,3 +186,5 @@
     href: tables/amlcomputecpugpuutilization.md
   - name: AmlComputeInstanceEvent
     href: tables/amlcomputeinstanceevent.md
+  - name: AmlDataLabelEvent
+    href: tables/amldatalabelevent.md
