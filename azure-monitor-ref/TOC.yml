@@ -184,3 +184,5 @@
     href: tables/alertinfo.md
   - name: AmlComputeCpuGpuUtilization
     href: tables/amlcomputecpugpuutilization.md
+  - name: AmlComputeInstanceEvent
+    href: tables/amlcomputeinstanceevent.md
