@@ -4,9 +4,9 @@ description: Reference for DeviceInfo table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 1/30/2023
+ms.author: bwren
+author: bwren
+ms.date: 2/2/2023
 ---
 
 # DeviceInfo
@@ -34,7 +34,7 @@ ms.date: 1/30/2023
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | DeviceObjectId | string | Unique identifier for the device in Azure AD. |
-| DeviceSubType | string | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute. |
+| DeviceSubtype | string | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute. |
 | DeviceType | string | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer. |
 | IsAzureADJoined | bool | Boolean indicator of whether machine is joined to the Azure Active Directory. |
 | JoinType | string | The device's Azure Active Directory join type. |
