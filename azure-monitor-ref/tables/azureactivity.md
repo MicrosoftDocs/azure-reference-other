@@ -4,9 +4,9 @@ description: Reference for AzureActivity table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 1/30/2023
+ms.author: bwren
+author: bwren
+ms.date: 2/2/2023
 ---
 
 # AzureActivity
@@ -155,8 +155,8 @@ ms.date: 1/30/2023
 | OperationId | string | GUID of the operation |
 | OperationName | string |  |
 | OperationNameValue | string | Identifier of the operation e.g. Microsoft.Storage/storageAccounts/listAccountSas/action. |
-| Properties | string | Set of \<Key Value\> pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead. |
-| Properties_d | dynamic | Set of \<Key Value\> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column. |
+| Properties | string | Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead. |
+| Properties_d | dynamic | Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column. |
 | Resource | string |  |
 | ResourceGroup | string | Resource group name of the impacted resource. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
