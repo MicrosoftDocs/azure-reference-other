@@ -4,9 +4,9 @@ description: Reference for CoreAzureBackup table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 1/30/2023
+ms.author: bwren
+author: bwren
+ms.date: 2/2/2023
 ---
 
 # CoreAzureBackup
@@ -36,12 +36,14 @@ ms.date: 1/30/2023
 | ArchiveTierLatestRecoveryPointTime | datetime |  |
 | ArchiveTierOldestRecoveryPointLocation | string |  |
 | ArchiveTierOldestRecoveryPointTime | datetime |  |
+| ArchiveTierStorageConsumedInMBs | real |  |
 | ArchiveTierStorageReplicationType | string |  |
 | AzureBackupAgentVersion | string |  |
 | AzureDataCenter | string |  |
 | BackupItemAppVersion | string |  |
 | BackupItemFriendlyName | string |  |
 | BackupItemFrontEndSize | real |  |
+| BackupItemId | string |  |
 | BackupItemName | string |  |
 | BackupItemProtectionState | string |  |
 | BackupItemType | string |  |
@@ -52,13 +54,25 @@ ms.date: 1/30/2023
 | BackupManagementServerUniqueId | string |  |
 | BackupManagementServerVersion | string |  |
 | BackupManagementType | string |  |
+| BillingGroupFriendlyName | string |  |
+| BillingGroupUniqueId | string |  |
 | Category | string |  |
+| DatasourceFriendlyName | string |  |
+| DatasourceResourceGroupName | string |  |
+| DatasourceResourceId | string |  |
+| DatasourceSetFriendlyName | string |  |
+| DatasourceSetResourceId | string |  |
+| DatasourceSetType | string |  |
+| DatasourceSubscriptionId | string |  |
+| DatasourceType | string |  |
 | IsArchiveEnabled | bool |  |
 | LatestRecoveryPointLocation | string |  |
 | LatestRecoveryPointTime | datetime |  |
 | OldestRecoveryPointLocation | string |  |
 | OldestRecoveryPointTime | datetime |  |
 | OperationName | string |  |
+| PolicyId | string |  |
+| PolicyName | string |  |
 | PolicyUniqueId | string |  |
 | ProtectedContainerFriendlyName | string |  |
 | ProtectedContainerLocation | string |  |
@@ -77,6 +91,7 @@ ms.date: 1/30/2023
 | SecondaryBackupProtectionState | string |  |
 | SourceSystem | string |  |
 | State | string |  |
+| StorageConsumedInMBs | real |  |
 | StorageReplicationType | string |  |
 | SubscriptionId | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
@@ -84,4 +99,5 @@ ms.date: 1/30/2023
 | Type | string | The name of the table |
 | VaultName | string |  |
 | VaultTags | string |  |
+| VaultType | string |  |
 | VaultUniqueId | string |  |
