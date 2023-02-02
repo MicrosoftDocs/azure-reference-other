@@ -4,9 +4,9 @@ description: Index for tables in Azure Monitor Logs organized by resource type.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 1/30/2023
+ms.author: bwren
+author: bwren
+ms.date: 2/2/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -295,6 +295,7 @@ ms.date: 1/30/2023
 
 ## Azure NetApp Files
 
+- [ANFFileAccess](anffileaccess.md)
 
 ## Azure PlayFab
 
@@ -306,12 +307,55 @@ ms.date: 1/30/2023
 
 ## Azure Sentinel
 
-- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
-- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
-- [CommonSecurityLog](commonsecuritylog.md)
-- [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [SecurityAlert](securityalert.md)
- 
+
+## Azure Sentinel Amazon
+
+
+## Azure Sentinel Anomaly Table
+
+
+## Azure Sentinel CEF Table
+
+- [CommonSecurityLog](commonsecuritylog.md)
+
+## Azure Sentinel data collection
+
+
+## Azure Sentinel File Event Logs
+
+
+## Azure Sentinel GCP
+
+
+## Azure Sentinel MCAS
+
+
+## Azure Sentinel MDA
+
+
+## Azure Sentinel MDE
+
+
+## Azure Sentinel MDI
+
+
+## Azure Sentinel MDO
+
+
+## Azure Sentinel Office 365
+
+
+## Azure Sentinel TVM
+
+
+## Azure Sentinel Watchlist
+
+
+## Azure Sentinel Web Session Logs
+
+- [ASimWebSessionLogs](asimwebsessionlogs.md)
+
 ## Azure Sphere
 
 - [ASCAuditLogs](ascauditlogs.md)
@@ -331,6 +375,9 @@ ms.date: 1/30/2023
 
 - [Event](event.md)
 - [Perf](perf.md)
+
+## Azure Stack HCI
+
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
 - [ADReplicationResult](adreplicationresult.md)
 - [AzureActivity](azureactivity.md)
@@ -773,6 +820,24 @@ ms.date: 1/30/2023
 - [MCVPAuditLogs](mcvpauditlogs.md)
 - [MCVPOperationLogs](mcvpoperationlogs.md)
 
+## Microsoft Defender for cloud
+
+- [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
+
+## Microsoft Purview
+
+
+## Microsoft Sentinel DNS activity ASim schema
+
+- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
+
+## Microsoft Sentinel Dynamic Summary
+
+
+## Microsoft Sentinel Network Session ASim schema
+
+- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
+
 ## Microsoft.AgFoodPlatform/farmBeats
 
 - [AgriFoodApplicationAuditLogs](agrifoodapplicationauditlogs.md)
@@ -838,6 +903,9 @@ ms.date: 1/30/2023
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+
+## Power BI Datasets
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
