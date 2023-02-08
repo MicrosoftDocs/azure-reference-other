@@ -4,9 +4,9 @@ description: Reference for SecurityNestedRecommendation table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 1/30/2023
+ms.author: bwren
+author: bwren
+ms.date: 2/2/2023
 ---
 
 # SecurityNestedRecommendation
@@ -48,8 +48,9 @@ ms.date: 1/30/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceProviderType | string | Resource provider type of the assessed resource |
 | SourceSystem | string |  |
+| SubAssessmentTimeGeneration | datetime | The date and time the sub-assessment was generated |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
-| TimeGenerated | datetime | The date and time the sub-assessment was generated |
+| TimeGenerated | datetime | The date and time the sub-assessment was exported |
 | Type | string | Resource type |
 | VulnerabilityId | string | Vulnerability Id |
