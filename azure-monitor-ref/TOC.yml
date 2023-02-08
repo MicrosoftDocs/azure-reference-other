@@ -80,10 +80,6 @@
     href: tables/adassessmentrecommendation.md
   - name: AddonAzureBackupAlerts
     href: tables/addonazurebackupalerts.md
-  - name: AddonAzureBackupJobs
-    href: tables/addonazurebackupjobs.md
-  - name: AddonAzureBackupProtectedInstance
-    href: tables/addonazurebackupprotectedinstance.md
   - name: AddonAzureBackupStorage
     href: tables/addonazurebackupstorage.md
   - name: ADFAirflowSchedulerLogs
@@ -224,6 +220,8 @@
     href: tables/amsmediaaccounthealth.md
   - name: AMSStreamingEndpointRequests
     href: tables/amsstreamingendpointrequests.md
+  - name: ANFFileAccess
+    href: tables/anffileaccess.md
   - name: Anomalies
     href: tables/anomalies.md
   - name: ApiManagementGatewayLogs
@@ -288,6 +286,8 @@
     href: tables/asimdnsactivitylogs.md
   - name: ASimNetworkSessionLogs
     href: tables/asimnetworksessionlogs.md
+  - name: ASimWebSessionLogs
+    href: tables/asimwebsessionlogs.md
   - name: ATCExpressRouteCircuitIpfix
     href: tables/atcexpressroutecircuitipfix.md
   - name: AuditLogs
