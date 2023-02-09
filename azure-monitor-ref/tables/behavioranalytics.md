@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/2/2023
+ms.date: 2/10/2023
 ---
 
 # BehaviorAnalytics
@@ -27,26 +27,33 @@ ms.date: 2/2/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| ActionType | string | The specific type of action that triggered the event |
-| ActivityInsights | dynamic | Activity and behavioral insights |
-| ActivityType | string | The activity type that triggered the event |
-| DestinationDevice | string | The hostname of the destination device |
-| DestinationIPAddress | string | The destination IP address |
-| DestinationIPLocation | string | The destination Geo location based on the IP address |
-| DevicesInsights | dynamic | Devices metadata and insights |
-| EventSource | string | Data source for this event |
-| InvestigationPriority | int | Investigation priority score |
+| ActionType | string | The specific type of action that triggered the event. |
+| ActivityInsights | dynamic | Activity and behavioral insights. |
+| ActivityType | string | The activity type that triggered the event. |
+| ActorName | string | The name of the user initiating the action that generated the event. |
+| ActorPrincipalName | string | The principal name of the user initiating the action that generated the event. |
+| DestinationDevice | string | The hostname of the destination device. |
+| DestinationIPAddress | string | The destination IP address. |
+| DestinationIPLocation | string | The destination Geo location based on the IP address. |
+| Device | string | The name of the device on which the event occurred or which reported the event, depending on the schema. |
+| DevicesInsights | dynamic | Devices metadata and insights. |
+| EventProductVersion | string | The version of the product generating the event. |
+| EventSource | string | Data source for this event. |
+| EventVendor | string | The vendor of the product generating the event. |
+| InvestigationPriority | int | Investigation priority score. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceDevice | string | The hostname of the source device |
-| SourceIPAddress | string | The source IP address |
-| SourceIPLocation | string | The source Geo location based on the IP address |
-| SourceRecordId | string | The unique Id of the source raw event |
+| SourceDevice | string | The hostname of the source device. |
+| SourceIPAddress | string | The source IP address. |
+| SourceIPLocation | string | The source Geo location based on the IP address. |
+| SourceRecordId | string | The unique Id of the source raw event. |
 | SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TargetName | string | The name of the target user in the action that generated the event. |
+| TargetPrincipalName | string | The name of the target user in the action that generated the event. |
 | TenantId | string |  |
-| TimeGenerated | datetime | Time when the raw event was generated (UTC) |
-| TimeProcessed | datetime | Time when enrichment processing occurred (UTC) |
+| TimeGenerated | datetime | Time when the raw event was generated (UTC). |
+| TimeProcessed | datetime | Time when enrichment processing occurred (UTC). |
 | Type | string | The name of the table |
-| UserName | string | User name of the account |
-| UserPrincipalName | string | User principal name of the account |
-| UsersInsights | dynamic | Users metadata and insights |
+| UserName | string | User name of the account. |
+| UserPrincipalName | string | User principal name of the account. |
+| UsersInsights | dynamic | Users metadata and insights. |
