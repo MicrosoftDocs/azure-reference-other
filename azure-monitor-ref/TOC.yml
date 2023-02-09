@@ -510,3 +510,5 @@
     href: tables/devicetvmsoftwarevulnerabilities.md
   - name: DeviceTvmSoftwareVulnerabilitiesKB
     href: tables/devicetvmsoftwarevulnerabilitieskb.md
+  - name: DHOSCrashData
+    href: tables/dhoscrashdata.md
