@@ -418,3 +418,5 @@
     href: tables/databricksclusterlibraries.md
   - name: DatabricksClusters
     href: tables/databricksclusters.md
+  - name: DatabricksDatabricksSQL
+    href: tables/databricksdatabrickssql.md
