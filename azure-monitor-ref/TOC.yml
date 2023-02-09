@@ -674,3 +674,5 @@
     href: tables/microsoftazurebastionauditlogs.md
   - name: MicrosoftDataShareReceivedSnapshotLog
     href: tables/microsoftdatasharereceivedsnapshotlog.md
+  - name: MicrosoftDataShareSentSnapshotLog
+    href: tables/microsoftdatasharesentsnapshotlog.md
