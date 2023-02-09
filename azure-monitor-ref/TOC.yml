@@ -512,3 +512,5 @@
     href: tables/devicetvmsoftwarevulnerabilitieskb.md
   - name: DHOSCrashData
     href: tables/dhoscrashdata.md
+  - name: DnsEvents
+    href: tables/dnsevents.md
