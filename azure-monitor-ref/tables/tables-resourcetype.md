@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/2/2023
+ms.date: 2/10/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -406,14 +406,11 @@ ms.date: 2/2/2023
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
 
-## Azure Storage Antimalware
-
-- [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
-
 ## Azure Storage Mover
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [StorageMoverJobRunLogs](storagemoverjobrunlogs.md)
 
 ## Azure Subscription
 
@@ -452,6 +449,10 @@ ms.date: 2/2/2023
 
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
+
+## Chaos Experiment
+
+- [AzureActivity](azureactivity.md)
 
 ## Cognitive Services
 
@@ -533,6 +534,10 @@ ms.date: 2/2/2023
 ## Default schema for a resource
 
 - [AzureActivity](azureactivity.md)
+
+## Defender for Storage Settings
+
+- [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
 
 ## Desktop Virtualization Application Groups
 
