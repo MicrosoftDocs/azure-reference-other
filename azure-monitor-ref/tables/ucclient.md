@@ -4,9 +4,9 @@ description: Reference for UCClient table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 2/10/2023
+ms.author: robb
+author: rboucher
+ms.date: 2/14/2023
 ---
 
 # UCClient
@@ -64,16 +64,16 @@ ms.date: 2/10/2023
 | WUAutomaticUpdates | int | CSP: AllowAutoUpdate &'AuOptions'  Enables the IT admin to manage automatic update behavior to scan, download, and install updates. |
 | WUDeadlineNoAutoRestart | int | CSP:ConfigureDeadlineNoAutoReboot. Devices will not automatically restart outside of active hours until the deadline is reached, 1 - Enabled 0 (default) - Disabled |
 | WUDODownloadMode | string | The WU DO DownloadMode configuration, brought over from Update Compliance. |
-| WUFeatureDeadlineDays | int | CSP: ConfigureDeadlineForFeatureUpdatesThe WU Feature Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the deadline in days. |
-| WUFeatureDeferralDays | int | CSP: DeferFeatureUpdates. The WU Feature Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the policy setting. |
+| WUFeatureDeadlineDays | int | CSP: ConfigureDeadlineForFeatureUpdatesThe WU Feature Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values \>0 indicate the deadline in days. |
+| WUFeatureDeferralDays | int | CSP: DeferFeatureUpdates. The WU Feature Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values \>0 indicate the policy setting. |
 | WUFeatureGracePeriodDays | int | The WU grace period for feature update in days. -1 indicates not configured, 0 indicates configured and set to 0. Values greater than 0 indicate the Grace Period in days. |
 | WUFeaturePauseEndTime | datetime | CSP:PauseFEatureUpdatesEndTime The time WU Feature Update Pause will end, if activated, else null. |
 | WUFeaturePauseStartTime | datetime | CSP: PauseFeatureUpdatesStartTime. The time WU Feature Update Pause was activated, if activated, else null.eature Updates will be paused for 35 days from the specified start date. |
 | WUFeaturePauseState | string | Indicates pause status of device for FU, possible values are Paused, NotPaused, NotConfigured. |
 | WUNotificationLevel | int | CSP: UpdateNotificationLevel. This policy allows you to define what Windows Update notifications users see.  0 (default) � Use the default Windows Update notifications. 1 � Turn off all notifications, excluding restart warnings. 2 � Turn off all notifications, including restart warnings |
 | WUPauseUXDisabled | int | CSP: SetDisablePauseUXAccess. This policy allows the IT admin to disable the Pause Updates feature. When this policy is enabled, the user cannot access the Pause updates" feature. Supported values 0, 1. |
-| WUQualityDeadlineDays | int | CSP: ConfigureDeadlineForQualityUpdates The WU Qualty Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the deadline in days. |
-| WUQualityDeferralDays | int | CSP: DeferQualityUpdatesThe WU Quality Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the policy setting. |
+| WUQualityDeadlineDays | int | CSP: ConfigureDeadlineForQualityUpdates The WU Qualty Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values \>0 indicate the deadline in days. |
+| WUQualityDeferralDays | int | CSP: DeferQualityUpdatesThe WU Quality Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values \>0 indicate the policy setting. |
 | WUQualityGracePeriodDays | int | The WU grace period for quality update in days. -1 indicates not configured, 0 indicates configured and set to 0. Values greater than 0 indicate the Grace Period in days. |
 | WUQualityPauseEndTime | datetime | CSP:PauseQualityUpdatesEndTimeThe time WU Quality Update Pause will end, if activated, else null. |
 | WUQualityPauseStartTime | datetime | CSP:PauseQualityUpdatesStartTime The time WU Quality Update Pause was activated; if activated; else null. |
