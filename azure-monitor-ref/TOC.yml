@@ -302,3 +302,5 @@
     href: tables/avssyslog.md
   - name: AWSCloudWatch
     href: tables/awscloudwatch.md
+  - name: AWSGuardDuty
+    href: tables/awsguardduty.md
