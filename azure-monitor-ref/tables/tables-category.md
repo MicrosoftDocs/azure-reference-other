@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/2/2023
+ms.date: 2/10/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -331,6 +331,7 @@ ms.date: 2/2/2023
 - [StorageCacheUpgradeEvents](storagecacheupgradeevents.md)
 - [StorageCacheWarningEvents](storagecachewarningevents.md)
 - [StorageFileLogs](storagefilelogs.md)
+- [StorageMoverJobRunLogs](storagemoverjobrunlogs.md)
 - [StorageQueueLogs](storagequeuelogs.md)
 - [StorageTableLogs](storagetablelogs.md)
 - [SucceededIngestion](succeededingestion.md)

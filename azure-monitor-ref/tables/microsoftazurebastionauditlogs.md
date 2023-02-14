@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/2/2023
+ms.date: 2/10/2023
 ---
 
 # MicrosoftAzureBastionAuditLogs
@@ -38,6 +38,7 @@ ms.date: 2/2/2023
 | OperationName | string | The name of the operation represented by this event |
 | Protocol | string | Protocol (could be ssh or rdp) that was used to log into the VirtualMachine from Bastion |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceType | string | Resource Type that was accessed during the session. This could be a VM/VMSS/BSL/etc. |
 | SessionEndTime | string | Timestamp (UTC) of when the Bastion Session was ended |
 | SessionStartTime | datetime | Timestamp (UTC) of when the Bastion Session was started |
 | SourceSystem | string |  |
