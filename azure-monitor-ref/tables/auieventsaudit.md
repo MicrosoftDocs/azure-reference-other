@@ -4,9 +4,9 @@ description: Reference for AUIEventsAudit table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 2/10/2023
+ms.author: robb
+author: rboucher
+ms.date: 2/14/2023
 ---
 
 # AUIEventsAudit
@@ -36,7 +36,7 @@ ms.date: 2/10/2023
 | Level | string | Severity level of the event, is one of: Informational, Warning, Error, or Critical. |
 | Method | string | HTTP method: GET/POST/PUT/PATCH/HEAD |
 | OperationName | string | Name of the operation represented by this event. |
-| OperationStatus | string | Success for HTTP status code < 400, ClientError for HTTP status code < 500, Error for HTTP Status >= 500. |
+| OperationStatus | string | Success for HTTP status code \< 400, ClientError for HTTP status code \< 500, Error for HTTP Status \>= 500. |
 | Origin | string | URI indicating where a fetch originates from or unknown. |
 | Path | string | Relative path of the request. |
 | RequiredRoles | string | Required roles to do the operation. Admin role is allowed to do all operations. |
