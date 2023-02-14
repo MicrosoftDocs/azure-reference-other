@@ -1,6 +1,6 @@
 ---
-title: Azure Monitor Logs reference - AegPublishFailureLogs
-description: Reference for AegPublishFailureLogs table in Azure Monitor Logs.
+title: Azure Monitor Logs reference - StorageMoverJobRunLogs
+description: Reference for StorageMoverJobRunLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
@@ -9,9 +9,9 @@ author: bwren
 ms.date: 2/10/2023
 ---
 
-# AegPublishFailureLogs
+# StorageMoverJobRunLogs
 
- Azure Event Grid - event publish failure logs.
+ Logs associated with Storage Mover job runs.
 
 ## Categories
 
@@ -21,9 +21,7 @@ ms.date: 2/10/2023
 - LogManagement
 ## Resource types
 
-- Event Grid Topics
-- Event Grid Domains
-- Event Grid Partner Namespaces
+- Azure Storage Mover
 
 
 
@@ -32,13 +30,13 @@ ms.date: 2/10/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| Category | string | Log category name. |
-| Message | string | Log message for the user. |
-| OperationName | string | Name of the operation. |
+| JobRunName | string | JobRunName |
+| Level | string | The log level. Can be Informational, Warning or Error. |
+| Message | string | Log message. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |
-| SubResourceName | string | Name of the sub resource. |
+| StatusCode | string | Status code associated with the log message. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
-| TimeGenerated | datetime | Time when log was generated. |
+| TimeGenerated | datetime | Time in UTC when the log was generated on the Storage Mover agent. |
 | Type | string | The name of the table |
