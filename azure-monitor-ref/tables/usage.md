@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/2/2023
+ms.date: 2/10/2023
 ---
 
 # Usage

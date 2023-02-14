@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/2/2023
+ms.date: 2/10/2023
 ---
 
 # KubePVInventory
@@ -36,7 +36,7 @@ ms.date: 2/2/2023
 | ClusterId | string | The ID of the Kubernetes cluster of the persistent volume |
 | ClusterName | string | The name of the Kubernetes cluster of the persistent volume |
 | PVAccessModes | string | A comma separated list of access modes of the persistent volume |
-| PVCapacityBytes | long | The capacity of the persistent volume measured in bytes |
+| PVCapacityBytes | real | The capacity of the persistent volume measured in bytes |
 | PVCName | string | The Kubernetes persistent volume claim name |
 | PVCNamespace | string | The Kubernetes namespace of the persistent volume claim |
 | PVCreationTimeStamp | datetime | The Kubernetes persistent volume creation time |

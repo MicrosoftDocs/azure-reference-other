@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 2/2/2023
+ms.date: 2/10/2023
 ---
 
 # AzureActivity
@@ -73,12 +73,12 @@ ms.date: 2/2/2023
 - SQL Databases
 - SQL Servers
 - Front Doors
-- Azure API for FHIR
 - Container Registries
+- SignalR
 - Storage Accounts
-- Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
+- Chaos Experiment
 - Bot Services
 - Azure Virtual Network Manager
 - Azure Traffic Collector
@@ -86,7 +86,7 @@ ms.date: 2/2/2023
 - Kubernetes Services
 - Azure Managed Instance for Apache Cassandra
 - Azure Load Testing
-- Container Apps
+- Network Watcher - Connection Monitor
 - Key Vaults
 - Firewalls
 - Event Grid Topics
@@ -99,9 +99,9 @@ ms.date: 2/2/2023
 - Azure Autonomous Development Platform workspace
 - App Services
 - Azure Managed Workspace for Grafana
-- SignalR
+- Container Apps
 - Dynamics 365 Customer Insights
-- Dev Centers
+- Azure Database for PostgreSQL Flexible Servers
 - Cognitive Services
 - Azure Spring Cloud
 - CDN Profiles
@@ -112,8 +112,8 @@ ms.date: 2/2/2023
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Application Insights
-- Azure Database for PostgreSQL Flexible Servers
 - SignalR Service WebPubSub
+- Azure Resource Group
 - Azure Subscription
 - Default schema for a resource
 - Desktop Virtualization Host Pools
@@ -124,7 +124,8 @@ ms.date: 2/2/2023
 - Machine Learning
 - HDInsight Clusters
 - Experiment Workspace
-- Azure Resource Group
+- Dev Centers
+- Azure API for FHIR
 - Service Bus
 
 
