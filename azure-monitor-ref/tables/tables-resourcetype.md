@@ -4,9 +4,9 @@ description: Index for tables in Azure Monitor Logs organized by resource type.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 2/10/2023
+ms.author: robb
+author: rboucher
+ms.date: 2/14/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -295,7 +295,6 @@ ms.date: 2/10/2023
 
 ## Azure NetApp Files
 
-- [ANFFileAccess](anffileaccess.md)
 
 ## Azure PlayFab
 
@@ -307,54 +306,12 @@ ms.date: 2/10/2023
 
 ## Azure Sentinel
 
-- [SecurityAlert](securityalert.md)
-
-## Azure Sentinel Amazon
-
-
-## Azure Sentinel Anomaly Table
-
-
-## Azure Sentinel CEF Table
-
-- [CommonSecurityLog](commonsecuritylog.md)
-
-## Azure Sentinel data collection
-
-
-## Azure Sentinel File Event Logs
-
-
-## Azure Sentinel GCP
-
-
-## Azure Sentinel MCAS
-
-
-## Azure Sentinel MDA
-
-
-## Azure Sentinel MDE
-
-
-## Azure Sentinel MDI
-
-
-## Azure Sentinel MDO
-
-
-## Azure Sentinel Office 365
-
-
-## Azure Sentinel TVM
-
-
-## Azure Sentinel Watchlist
-
-
-## Azure Sentinel Web Session Logs
-
+- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
+- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
+- [CommonSecurityLog](commonsecuritylog.md)
+- [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
+- [SecurityAlert](securityalert.md)
 
 ## Azure Sphere
 
@@ -373,6 +330,8 @@ ms.date: 2/10/2023
 
 ## Azure Stack HCI
 
+- [Event](event.md)
+- [Perf](perf.md)
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
 - [ADReplicationResult](adreplicationresult.md)
 - [AzureActivity](azureactivity.md)
@@ -819,24 +778,6 @@ ms.date: 2/10/2023
 - [AzureMetrics](azuremetrics.md)
 - [MCVPAuditLogs](mcvpauditlogs.md)
 - [MCVPOperationLogs](mcvpoperationlogs.md)
-
-## Microsoft Defender for cloud
-
-- [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
-
-## Microsoft Purview
-
-
-## Microsoft Sentinel DNS activity ASim schema
-
-- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
-
-## Microsoft Sentinel Dynamic Summary
-
-
-## Microsoft Sentinel Network Session ASim schema
-
-- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 
 ## Microsoft.AgFoodPlatform/farmBeats
 

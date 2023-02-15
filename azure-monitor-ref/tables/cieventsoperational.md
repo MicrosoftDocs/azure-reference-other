@@ -4,9 +4,9 @@ description: Reference for CIEventsOperational table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 2/10/2023
+ms.author: robb
+author: rboucher
+ms.date: 2/14/2023
 ---
 
 # CIEventsOperational
@@ -47,7 +47,7 @@ ms.date: 2/10/2023
 | Level | string | Severity level of the event, is one of: Informational, Warning or Error. |
 | Method | string | HTTP method: GET/POST/PUT/PATCH/HEAD |
 | OperationName | string | Name of the operation represented by this event. {OperationType}.[WorkFlow\|Task][Started\|Completed]. |
-| OperationStatus | string | Success for HTTP Status code < 400, ClientError for HTTP Status code < 500, Error for HTTP Status >= 500. |
+| OperationStatus | string | Success for HTTP Status code \< 400, ClientError for HTTP Status code \< 500, Error for HTTP Status \>= 500. |
 | OperationType | string | Identifier of the operation. |
 | Origin | string | URI indicating where a fetch originates from or unknown. |
 | Path | string | Relative path of the request. |

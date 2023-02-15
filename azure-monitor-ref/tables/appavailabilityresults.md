@@ -4,9 +4,9 @@ description: Reference for AppAvailabilityResults table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 2/10/2023
+ms.author: robb
+author: rboucher
+ms.date: 2/14/2023
 ---
 
 # AppAvailabilityResults
