@@ -286,3 +286,5 @@
     href: tables/asimnetworksessionlogs.md
   - name: ASimWebSessionLogs
     href: tables/asimwebsessionlogs.md
+  - name: ATCExpressRouteCircuitIpfix
+    href: tables/atcexpressroutecircuitipfix.md
