@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/14/2023
+ms.date: 2/16/2023
 ---
 
 # AmlDataLabelEvent
