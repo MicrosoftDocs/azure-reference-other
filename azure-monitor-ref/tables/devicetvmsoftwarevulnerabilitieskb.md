@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/14/2023
+ms.date: 2/16/2023
 ---
 
 # DeviceTvmSoftwareVulnerabilitiesKB
@@ -36,6 +36,7 @@ ms.date: 2/14/2023
 | SourceSystem | string |  |
 | TenantId | string |  |
 | TimeGenerated | datetime | Date and time when the record was generated. |
+| Timestamp | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |
 | VulnerabilityDescription | string | Description of the vulnerability and associated risks. |
 | VulnerabilitySeverityLevel | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape. |
