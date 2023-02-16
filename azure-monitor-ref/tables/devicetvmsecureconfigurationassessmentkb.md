@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/14/2023
+ms.date: 2/16/2023
 ---
 
 # DeviceTvmSecureConfigurationAssessmentKB
@@ -42,4 +42,5 @@ ms.date: 2/14/2023
 | Tags | dynamic | Labels representing various attributes, used to identify or categorize a security configuration. |
 | TenantId | string |  |
 | TimeGenerated | datetime | Date and time when the record was generated. |
+| Timestamp | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |
