@@ -11,7 +11,7 @@ ms.date: 2/10/2023
 
 # SecurityEvent
 
- Security events collected from windows machines by Azure Security Center or Azure Sentinel.
+ Security events collected from windows machines by Microsoft Defender for Cloud or Microsoft Sentinel.
 
 ## Categories
 
