@@ -4,9 +4,9 @@ description: Reference for Event table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 2/10/2023
+ms.author: robb
+author: rboucher
+ms.date: 2/16/2023
 ---
 
 # Event
@@ -43,7 +43,7 @@ ms.date: 2/10/2023
 | EventLevel | int | Severity of the event in numeric form. |
 | EventLevelName | string | Severity of the event in text form. |
 | EventLog | string | Name of the event log that the event was collected from. |
-| ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-&lt;workspace ID&gt; |
+| ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-\<workspace ID\> |
 | Message | string | Event message for the different Languages. The language is defined by the LCID attribute. |
 | ParameterXml | string | Event parameter values in XML format. |
 | RenderedDescription | string | Event description with parameter values. |

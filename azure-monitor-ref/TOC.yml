@@ -220,8 +220,6 @@
     href: tables/amsmediaaccounthealth.md
   - name: AMSStreamingEndpointRequests
     href: tables/amsstreamingendpointrequests.md
-  - name: ANFFileAccess
-    href: tables/anffileaccess.md
   - name: Anomalies
     href: tables/anomalies.md
   - name: ApiManagementGatewayLogs
