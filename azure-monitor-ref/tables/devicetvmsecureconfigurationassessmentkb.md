@@ -4,9 +4,9 @@ description: Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azu
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 2/10/2023
+ms.author: robb
+author: rboucher
+ms.date: 2/16/2023
 ---
 
 # DeviceTvmSecureConfigurationAssessmentKB
@@ -42,4 +42,5 @@ ms.date: 2/10/2023
 | Tags | dynamic | Labels representing various attributes, used to identify or categorize a security configuration. |
 | TenantId | string |  |
 | TimeGenerated | datetime | Date and time when the record was generated. |
+| Timestamp | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |
