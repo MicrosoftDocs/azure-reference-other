@@ -680,6 +680,8 @@
     href: tables/microsoftdynamicstelemetryperformancelogs.md
   - name: MicrosoftDynamicsTelemetrySystemMetricsLogs
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
+  - name: MicrosoftGraphActivityLogs
+    href: tables/microsoftgraphactivitylogs.md
   - name: MicrosoftHealthcareApisAuditLogs
     href: tables/microsofthealthcareapisauditlogs.md
   - name: MicrosoftPurviewInformationProtection
@@ -782,6 +784,10 @@
     href: tables/storagecachewarningevents.md
   - name: StorageFileLogs
     href: tables/storagefilelogs.md
+  - name: StorageMoverCopyLogsFailed
+    href: tables/storagemovercopylogsfailed.md
+  - name: StorageMoverCopyLogsTransferred
+    href: tables/storagemovercopylogstransferred.md
   - name: StorageMoverJobRunLogs
     href: tables/storagemoverjobrunlogs.md
   - name: StorageQueueLogs
