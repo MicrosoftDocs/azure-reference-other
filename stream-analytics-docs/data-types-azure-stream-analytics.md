@@ -34,7 +34,7 @@ Please note that it is records that have a type and not columns. Each record of 
  You may join on (or compare) a bigint and a float data type. It will work correctly in all cases except for the case of the very large bigint values that cannot be represented.
 
 > [!NOTE]
-> When reading bigint datatypes outside the range, Azure Stream Analytics supports, your Stream Analytics job would fail to deserialize the events with the error message: **InputDeserializationError**. If you have control of the format of the events, you can pre-process the data and convert it to string. One option is using Azure functions to pre-process the data and convert such large integers to string.
+> When reading bigint datatypes outside the range, Azure Stream Analytics supports, your Stream Analytics job would fail to deserialize the events with the error message: **InputDeserializationError**. You can pre-process the data and convert it to string. One option is using Azure functions to pre-process the data and convert such large integers to string.
 
 
 you can use Azure functions to convert the file format to string.
