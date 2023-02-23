@@ -276,3 +276,5 @@
     href: tables/appsystemevents.md
   - name: AppTraces
     href: tables/apptraces.md
+  - name: ASCAuditLogs
+    href: tables/ascauditlogs.md
