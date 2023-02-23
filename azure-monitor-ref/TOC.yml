@@ -792,3 +792,5 @@
     href: tables/storagemoverjobrunlogs.md
   - name: StorageQueueLogs
     href: tables/storagequeuelogs.md
+  - name: StorageTableLogs
+    href: tables/storagetablelogs.md
