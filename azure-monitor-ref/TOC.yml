@@ -786,3 +786,5 @@
     href: tables/storagefilelogs.md
   - name: StorageMoverCopyLogsFailed
     href: tables/storagemovercopylogsfailed.md
+  - name: StorageMoverCopyLogsTransferred
+    href: tables/storagemovercopylogstransferred.md
