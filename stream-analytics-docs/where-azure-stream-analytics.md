@@ -104,9 +104,11 @@ ms.date: 04/22/2016
 
  Specifies an inclusive range of values. Use AND to separate the starting and ending values.
 
- **[NOT] NULL**
+ **IS [NOT] NULL**
 
  Specifies a search for null values, or for values that are not null, depending on the keywords used.
+ To determine whether an expression is NULL, use IS NULL or IS NOT NULL instead of comparison operators (such as = or !=). Comparison operators return false when either or both arguments are NULL.
+For example both `col1 = 1` and `col1 != 1` are false when col1 value is NULL, while `col1 IS NULL` is true in that case.
 
  **[NOT] IN**
 
