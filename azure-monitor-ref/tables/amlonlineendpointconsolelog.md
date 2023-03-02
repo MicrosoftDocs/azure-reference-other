@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/23/2023
+ms.date: 3/2/2023
 ---
 
 # AmlOnlineEndpointConsoleLog
 
- All console logs for AzureML online endpoints.
+ Azure ML online endpoints console logs. It provides console logs output from user containers.
 
 ## Categories
 
@@ -31,6 +31,7 @@ ms.date: 2/23/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| ContainerImageName | string | The name of the docker image running in the container where the log was generated. |
 | ContainerName | string | The name of the container where the log was generated. |
 | DeploymentName | string | The name of the deployment associated with the log record. |
 | InstanceId | string | The ID of the instance that generated this log record. |
