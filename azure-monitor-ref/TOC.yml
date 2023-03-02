@@ -792,3 +792,5 @@
     href: tables/storagecachewarningevents.md
   - name: StorageFileLogs
     href: tables/storagefilelogs.md
+  - name: StorageMoverCopyLogsFailed
+    href: tables/storagemovercopylogsfailed.md
