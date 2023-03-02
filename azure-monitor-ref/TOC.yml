@@ -748,3 +748,5 @@
     href: tables/purviewscanstatuslogs.md
   - name: PurviewSecurityLogs
     href: tables/purviewsecuritylogs.md
+  - name: REDConnectionEvents
+    href: tables/redconnectionevents.md
