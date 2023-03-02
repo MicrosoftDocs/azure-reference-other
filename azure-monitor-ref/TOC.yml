@@ -694,3 +694,5 @@
     href: tables/nspaccesslogs.md
   - name: NTAIpDetails
     href: tables/ntaipdetails.md
+  - name: NTANetAnalytics
+    href: tables/ntanetanalytics.md
