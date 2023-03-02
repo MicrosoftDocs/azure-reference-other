@@ -872,3 +872,5 @@
     href: tables/ucdevicealert.md
   - name: UCDOAggregatedStatus
     href: tables/ucdoaggregatedstatus.md
+  - name: UCDOStatus
+    href: tables/ucdostatus.md
