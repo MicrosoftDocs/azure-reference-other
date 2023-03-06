@@ -59,7 +59,7 @@ ms.date: 2/23/2023
 | ResourceGroup | string | Resource group of the SQL resoruce. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResponseRows | long | Number of rows returned in the result set. |
-| SchemaName | string | The schema context in which the action occurred. |
+| SchemaName | string | The schema context in which the action occurred.  Not populated for BATCH_COMPLETED_GROUP audit group actions. |
 | SecurableClassType | string | The type of auditable entity that the audit occurs on. |
 | SequenceGroupId | string | Unique identifier. |
 | SequenceNumber | int | Tracks the sequence of records within a single audit record that was too large to fit in the write buffer for audits. |
