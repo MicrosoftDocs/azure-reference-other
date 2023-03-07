@@ -692,6 +692,12 @@
     href: tables/networksessions.md
   - name: NSPAccessLogs
     href: tables/nspaccesslogs.md
+  - name: NTAIpDetails
+    href: tables/ntaipdetails.md
+  - name: NTANetAnalytics
+    href: tables/ntanetanalytics.md
+  - name: NTATopologyDetails
+    href: tables/ntatopologydetails.md
   - name: NWConnectionMonitorDestinationListenerResult
     href: tables/nwconnectionmonitordestinationlistenerresult.md
   - name: NWConnectionMonitorDNSResult
@@ -742,6 +748,8 @@
     href: tables/purviewscanstatuslogs.md
   - name: PurviewSecurityLogs
     href: tables/purviewsecuritylogs.md
+  - name: REDConnectionEvents
+    href: tables/redconnectionevents.md
   - name: ResourceManagementPublicAccessLogs
     href: tables/resourcemanagementpublicaccesslogs.md
   - name: SecureScoreControls

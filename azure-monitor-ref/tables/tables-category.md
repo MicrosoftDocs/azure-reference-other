@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/23/2023
+ms.date: 3/2/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -486,6 +486,9 @@ ms.date: 2/23/2023
 - [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkMonitoring](networkmonitoring.md)
 - [NSPAccessLogs](nspaccesslogs.md)
+- [NTAIpDetails](ntaipdetails.md)
+- [NTANetAnalytics](ntanetanalytics.md)
+- [NTATopologyDetails](ntatopologydetails.md)
 - [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
