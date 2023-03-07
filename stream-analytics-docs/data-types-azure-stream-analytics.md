@@ -8,7 +8,7 @@ applies_to:
 ms.author: ebnkruma
 ms.service: stream-analytics
 ms.topic: reference
-ms.date: 02/23/2023
+ms.date: 03/07/2023
 ---
 
 # Data Types (Azure Stream Analytics)
@@ -36,8 +36,6 @@ Please note that it is records that have a type and not columns. Each record of 
 > [!NOTE]
 > When reading bigint datatypes outside the range, Azure Stream Analytics supports, your Stream Analytics job would fail to deserialize the events with the error message: **InputDeserializationError**. You can pre-process the data and convert it to string. One option is using Azure functions to pre-process the data and convert such large integers to string.
 
-
-you can use Azure functions to convert the file format to string.
 
 ## Type conversions
 

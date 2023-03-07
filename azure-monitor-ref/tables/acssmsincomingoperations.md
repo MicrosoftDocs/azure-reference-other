@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 2/23/2023
+ms.date: 3/2/2023
 ---
 
 # ACSSMSIncomingOperations
@@ -33,10 +33,12 @@ ms.date: 2/23/2023
 | CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
+| Country | string | The recipient country. |
 | DeliveryAttempts | int | The number of attempts made to deliver this message. |
 | DurationMs | int | The duration of the operation in milliseconds. |
 | IncomingMessageLength | int | The number of characters in the incoming message. |
 | Level | string | The severity level of the operation. |
+| MessageId | string | The identifier of the outgoing Sms message. Only present if message processed. |
 | Method | string | The method used in the request. |
 | NumberType | string | The type of number used for sending or receiving the SMS message (e.g. LongCodeNumber) |
 | OperationName | string | The operation associated with log record. |
