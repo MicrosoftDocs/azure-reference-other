@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/2/2023
+ms.date: 3/9/2023
 ---
 
 # AzureMetrics
@@ -22,27 +22,26 @@ ms.date: 3/2/2023
 ## Resource types
 
 - App Services
-- SQL Managed Instances
-- Data Share
 - Power BI Embedded
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Data factories
 - Automation account
-- SQL Servers
 - API Management services
+- Logic Apps
+- Data Share
 - Service Fabric Clusters
-- IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
 - Azure Arc Provisioned Clusters
 - Azure Arc Enabled Kubernetes
 - Virtual Machine Scale Sets
-- Logic Apps
+- System Center Virtual Machine Manager
+- Azure Stack HCI
+- IoT Hub
+- SQL Managed Instances
+- SQL Servers
 - SQL Databases
-- Azure Database for MySQL Servers
-- Azure Database for PostgreSQL Servers
-- Bastions
 - Stream Analytics jobs
 - Search Services
 - Virtual Networks
@@ -55,36 +54,35 @@ ms.date: 3/2/2023
 - Front Doors
 - ExpressRoute Circuits
 - Application Gateways
-- Event Hubs
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Servers V2
-- System Center Virtual Machine Manager
-- Azure API for FHIR
-- Azure Stack HCI
+- Azure Database for PostgreSQL Servers
+- Azure Database for MySQL Servers
+- VMware
+- Bastions
 - Event Grid System Topics
-- Media Services
-- Machine Learning
+- Event Grid Partner Namespaces
 - Dev Centers
 - Azure Database for PostgreSQL Flexible Servers
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
 - Azure Virtual Network Manager
-- Virtual machines
 - Azure Traffic Collector
-- Key Vaults
+- Service Bus
+- Machine Learning
+- Kubernetes Services
 - Firewalls
+- Event Hubs
 - Event Grid Topics
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
-- Kubernetes Services
+- Key Vaults
+- Media Services
+- Virtual machines
 - Azure Storage Mover
-- Synapse Workspaces
-- Desktop Virtualization Host Pools
-- Event Grid Partner Topics
-- Event Grid Partner Namespaces
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
@@ -100,8 +98,10 @@ ms.date: 3/2/2023
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
-- VMware
-- Service Bus
+- Desktop Virtualization Host Pools
+- Synapse Workspaces
+- Event Grid Partner Topics
+- Azure API for FHIR
 
 
 
