@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/2/2023
+ms.date: 3/9/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -89,12 +89,14 @@ ms.date: 3/2/2023
 - [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
+- [MicrosoftGraphActivityLogs](microsoftgraphactivitylogs.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 - [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [PFTitleAuditLogs](pftitleauditlogs.md)
 - [PowerBIActivity](powerbiactivity.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
+- [REDConnectionEvents](redconnectionevents.md)
 - [SentinelAudit](sentinelaudit.md)
 - [VIAudit](viaudit.md)
 
@@ -317,6 +319,7 @@ ms.date: 3/2/2023
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [PurviewScanStatusLogs](purviewscanstatuslogs.md)
 - [PurviewSecurityLogs](purviewsecuritylogs.md)
+- [REDConnectionEvents](redconnectionevents.md)
 - [ResourceManagementPublicAccessLogs](resourcemanagementpublicaccesslogs.md)
 - [ServiceFabricOperationalEvent](servicefabricoperationalevent.md)
 - [ServiceFabricReliableActorEvent](servicefabricreliableactorevent.md)
@@ -330,6 +333,8 @@ ms.date: 3/2/2023
 - [StorageCacheUpgradeEvents](storagecacheupgradeevents.md)
 - [StorageCacheWarningEvents](storagecachewarningevents.md)
 - [StorageFileLogs](storagefilelogs.md)
+- [StorageMoverCopyLogsFailed](storagemovercopylogsfailed.md)
+- [StorageMoverCopyLogsTransferred](storagemovercopylogstransferred.md)
 - [StorageMoverJobRunLogs](storagemoverjobrunlogs.md)
 - [StorageQueueLogs](storagequeuelogs.md)
 - [StorageTableLogs](storagetablelogs.md)
@@ -572,6 +577,7 @@ ms.date: 3/2/2023
 - [IdentityQueryEvents](identityqueryevents.md)
 - [LinuxAuditLog](linuxauditlog.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
+- [MicrosoftGraphActivityLogs](microsoftgraphactivitylogs.md)
 - [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkSessions](networksessions.md)

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/2/2023
+ms.date: 3/9/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -169,6 +169,10 @@ ms.date: 3/2/2023
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Azure Cache for Redis Enterprise
+
+- [REDConnectionEvents](redconnectionevents.md)
+
 ## Azure Cosmos DB
 
 - [AzureActivity](azureactivity.md)
@@ -306,10 +310,10 @@ ms.date: 3/2/2023
 
 ## Azure Sentinel
 
+- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [SecurityAlert](securityalert.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
-- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
@@ -330,8 +334,6 @@ ms.date: 3/2/2023
 
 ## Azure Stack HCI
 
-- [Event](event.md)
-- [Perf](perf.md)
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
 - [ADReplicationResult](adreplicationresult.md)
 - [AzureActivity](azureactivity.md)
@@ -364,11 +366,15 @@ ms.date: 3/2/2023
 - [W3CIISLog](w3ciislog.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
+- [Event](event.md)
+- [Perf](perf.md)
 
 ## Azure Storage Mover
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [StorageMoverCopyLogsFailed](storagemovercopylogsfailed.md)
+- [StorageMoverCopyLogsTransferred](storagemovercopylogstransferred.md)
 - [StorageMoverJobRunLogs](storagemoverjobrunlogs.md)
 
 ## Azure Subscription
@@ -779,6 +785,12 @@ ms.date: 3/2/2023
 - [MCVPAuditLogs](mcvpauditlogs.md)
 - [MCVPOperationLogs](mcvpoperationlogs.md)
 
+## Microsoft Graph Logs
+
+- [AuditLogs](auditlogs.md)
+- [AzureActivity](azureactivity.md)
+- [SigninLogs](signinlogs.md)
+
 ## Microsoft.AgFoodPlatform/farmBeats
 
 - [AgriFoodApplicationAuditLogs](agrifoodapplicationauditlogs.md)
@@ -841,11 +853,11 @@ ms.date: 3/2/2023
 
 ## Power BI Datasets
 
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 

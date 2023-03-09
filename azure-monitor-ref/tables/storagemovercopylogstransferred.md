@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/2/2023
+ms.date: 3/9/2023
 ---
 
 # StorageMoverCopyLogsTransferred
 
  The result logs generated during the execution of Storage Mover job runs where the transfer result is 'Transferred'. The logs include the details of the scanned items and their transfer result.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Storage Mover
 
 
 
