@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/2/2023
+ms.date: 3/9/2023
 ---
 
 # AzureActivity
@@ -24,33 +24,32 @@ ms.date: 3/2/2023
 ## Resource types
 
 - Microsoft App Configuration
-- Data Lake Storage Gen1
-- Recovery Services Vaults
-- Data factories
-- Automation account
 - API Management services
 - Logic Apps
 - Service Fabric Clusters
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
-- Data Lake Analytics
 - Azure Arc Provisioned Clusters
+- Azure Arc Enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
+- Automation account
 - Azure Stack HCI
-- VMware
 - Event Grid System Topics
 - Event Grid Partner Topics
 - Event Grid Partner Namespaces
 - Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
-- Azure Arc Enabled Kubernetes
 - Azure Data Explorer Clusters
-- Power BI Embedded
-- SQL Managed Instances
-- Bastions
+- Container Registries
+- SignalR
+- Storage Accounts
+- VMware
+- Data factories
+- Data Lake Storage Gen1
+- Data Lake Analytics
 - Stream Analytics jobs
 - Search Services
 - Virtual Networks
@@ -60,11 +59,10 @@ ms.date: 3/2/2023
 - Public IP Addresses
 - Network Security Groups
 - Network Interfaces
-- Data Share
 - Load Balancers
+- Front Doors
 - ExpressRoute Circuits
 - Application Gateways
-- Event Hubs
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Servers V2
@@ -72,23 +70,26 @@ ms.date: 3/2/2023
 - Azure Database for MySQL Servers
 - SQL Databases
 - SQL Servers
-- Front Doors
-- Container Registries
-- SignalR
-- Storage Accounts
-- Microsoft Connected Vehicle Platform
-- Microsoft Connected Cache
-- Chaos Experiment
+- SQL Managed Instances
+- Data Share
+- Power BI Embedded
+- Cognitive Services
+- Bastions
+- Azure Spring Cloud
+- Batch Accounts
 - Bot Services
 - Azure Virtual Network Manager
 - Azure Traffic Collector
+- Service Bus
+- Recovery Services Vaults
 - Microsoft.Purview/accounts
-- Kubernetes Services
 - Azure Managed Instance for Apache Cassandra
 - Azure Load Testing
-- Network Watcher - Connection Monitor
+- Kubernetes Services
 - Key Vaults
-- Firewalls
+- Chaos Experiment
+- Azure Managed Workspace for Grafana
+- Event Hubs
 - Event Grid Topics
 - Azure Digital Twins
 - Project CI Workspace
@@ -98,14 +99,10 @@ ms.date: 3/2/2023
 - Azure Attestation
 - Azure Autonomous Development Platform workspace
 - App Services
-- Azure Managed Workspace for Grafana
-- Container Apps
-- Dynamics 365 Customer Insights
-- Azure Database for PostgreSQL Flexible Servers
-- Cognitive Services
-- Azure Spring Cloud
-- CDN Profiles
-- Batch Accounts
+- Firewalls
+- Microsoft Connected Cache
+- Microsoft Connected Vehicle Platform
+- Network Watcher - Connection Monitor
 - Analysis Services
 - Workload Monitor
 - Time Series Insights Environments
@@ -120,13 +117,17 @@ ms.date: 3/2/2023
 - Synapse Workspaces
 - Azure Storage Mover
 - Virtual machines
+- Microsoft Graph Logs
 - Media Services
 - Machine Learning
 - HDInsight Clusters
 - Experiment Workspace
 - Dev Centers
+- Azure Database for PostgreSQL Flexible Servers
+- Dynamics 365 Customer Insights
+- Container Apps
+- CDN Profiles
 - Azure API for FHIR
-- Service Bus
 
 
 
