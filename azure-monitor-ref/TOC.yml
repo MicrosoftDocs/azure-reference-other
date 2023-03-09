@@ -284,3 +284,5 @@
     href: tables/ascauditlogs.md
   - name: ASCDeviceEvents
     href: tables/ascdeviceevents.md
+  - name: ASimDnsActivityLogs
+    href: tables/asimdnsactivitylogs.md
