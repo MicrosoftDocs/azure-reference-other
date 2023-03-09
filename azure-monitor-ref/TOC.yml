@@ -78,3 +78,5 @@
     href: tables/acssmsincomingoperations.md
   - name: ADAssessmentRecommendation
     href: tables/adassessmentrecommendation.md
+  - name: AddonAzureBackupAlerts
+    href: tables/addonazurebackupalerts.md
