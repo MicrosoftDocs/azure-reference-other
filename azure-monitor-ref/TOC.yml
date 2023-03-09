@@ -220,3 +220,5 @@
     href: tables/amskeydeliveryrequests.md
   - name: AMSLiveEventOperations
     href: tables/amsliveeventoperations.md
+  - name: AMSMediaAccountHealth
+    href: tables/amsmediaaccounthealth.md
