@@ -318,3 +318,5 @@
     href: tables/azfwdnsquery.md
   - name: AZFWFatFlow
     href: tables/azfwfatflow.md
+  - name: AZFWFlowTrace
+    href: tables/azfwflowtrace.md
