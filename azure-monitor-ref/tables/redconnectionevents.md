@@ -6,16 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/2/2023
+ms.date: 3/9/2023
 ---
 
 # REDConnectionEvents
 
  Logs the connection events when client connects to redis enterprise database.
 
+## Categories
+
+- Azure Resources
+- Audit
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Cache for Redis Enterprise
 
 
 
