@@ -248,3 +248,5 @@
     href: tables/appplatformbuildlogs.md
   - name: AppPlatformContainerEventLogs
     href: tables/appplatformcontainereventlogs.md
+  - name: AppPlatformIngressLogs
+    href: tables/appplatformingresslogs.md
