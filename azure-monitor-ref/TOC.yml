@@ -304,3 +304,5 @@
     href: tables/avnmnetworkgroupmembershipchange.md
   - name: AVSSyslog
     href: tables/avssyslog.md
+  - name: AWSCloudWatch
+    href: tables/awscloudwatch.md
