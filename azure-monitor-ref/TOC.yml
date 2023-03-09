@@ -260,3 +260,5 @@
     href: tables/appserviceantivirusscanauditlogs.md
   - name: AppServiceAppLogs
     href: tables/appserviceapplogs.md
+  - name: AppServiceAuditLogs
+    href: tables/appserviceauditlogs.md
