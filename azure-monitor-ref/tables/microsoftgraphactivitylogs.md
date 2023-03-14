@@ -6,13 +6,17 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/2/2023
+ms.date: 3/9/2023
 ---
 
 # MicrosoftGraphActivityLogs
 
  Microsoft Graph Activity Logs provide details of API requests made to Microsoft Graph for resources in the tenant.
 
+## Categories
+
+- Audit
+- Security
 ## Solutions
 
 - LogManagement

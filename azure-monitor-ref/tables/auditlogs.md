@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/2/2023
+ms.date: 3/9/2023
 ---
 
 # AuditLogs
@@ -20,6 +20,9 @@ ms.date: 3/2/2023
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Microsoft Graph Logs
 
 
 

@@ -208,6 +208,10 @@
     href: tables/amlonlineendpointtrafficlog.md
   - name: AmlPipelineEvent
     href: tables/amlpipelineevent.md
+  - name: AmlRegistryReadEventsLog
+    href: tables/amlregistryreadeventslog.md
+  - name: AmlRegistryWriteEventsLog
+    href: tables/amlregistrywriteeventslog.md
   - name: AmlRunEvent
     href: tables/amlrunevent.md
   - name: AmlRunStatusChangedEvent
