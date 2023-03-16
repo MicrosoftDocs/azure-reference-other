@@ -6,16 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/9/2023
+ms.date: 3/16/2023
 ---
 
 # AmlRegistryReadEventsLog
 
  Azure ML Registry Read events log. It keeps records of Read operations with registries data access (data plane), including user identity, asset name and version for each access event.
 
+## Categories
+
+- Audit
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Machine Learning
 
 
 
