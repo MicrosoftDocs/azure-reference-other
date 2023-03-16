@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/9/2023
+ms.date: 3/16/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -418,6 +418,7 @@ ms.date: 3/9/2023
 ## Chaos Experiment
 
 - [AzureActivity](azureactivity.md)
+- [ChaosStudioExperimentEventLogs](chaosstudioexperimenteventlogs.md)
 
 ## Cognitive Services
 
@@ -502,7 +503,7 @@ ms.date: 3/9/2023
 
 ## Defender for Storage Settings
 
-- [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
+- [StorageMalwareScanningResults](storagemalwarescanningresults.md)
 
 ## Desktop Virtualization Application Groups
 
@@ -729,6 +730,9 @@ ms.date: 3/9/2023
 
 ## Machine Learning
 
+- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
+- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
+- [AzureActivity](azureactivity.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -853,11 +857,11 @@ ms.date: 3/9/2023
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 
