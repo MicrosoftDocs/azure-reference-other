@@ -46,3 +46,5 @@
     href: tables/absdependenciesrequests.md
   - name: ACICollaborationAudit
     href: tables/acicollaborationaudit.md
+  - name: ACRConnectedClientList
+    href: tables/acrconnectedclientlist.md
