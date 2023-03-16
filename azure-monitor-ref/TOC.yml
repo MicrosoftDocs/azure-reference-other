@@ -224,3 +224,5 @@
     href: tables/amsmediaaccounthealth.md
   - name: AMSStreamingEndpointRequests
     href: tables/amsstreamingendpointrequests.md
+  - name: Anomalies
+    href: tables/anomalies.md
