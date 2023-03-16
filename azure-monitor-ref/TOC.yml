@@ -234,6 +234,8 @@
     href: tables/appbrowsertimings.md
   - name: AppDependencies
     href: tables/appdependencies.md
+  - name: AppEnvSpringAppConsoleLogs
+    href: tables/appenvspringappconsolelogs.md
   - name: AppEvents
     href: tables/appevents.md
   - name: AppExceptions
@@ -374,6 +376,8 @@
     href: tables/cdbpartitionkeystatistics.md
   - name: CDBQueryRuntimeStatistics
     href: tables/cdbqueryruntimestatistics.md
+  - name: ChaosStudioExperimentEventLogs
+    href: tables/chaosstudioexperimenteventlogs.md
   - name: CIEventsAudit
     href: tables/cieventsaudit.md
   - name: CIEventsOperational
@@ -786,8 +790,6 @@
     href: tables/sqlsecurityauditevents.md
   - name: SqlVulnerabilityAssessmentScanStatus
     href: tables/sqlvulnerabilityassessmentscanstatus.md
-  - name: StorageAntimalwareScanResults
-    href: tables/storageantimalwarescanresults.md
   - name: StorageBlobLogs
     href: tables/storagebloblogs.md
   - name: StorageCacheOperationEvents
@@ -798,6 +800,8 @@
     href: tables/storagecachewarningevents.md
   - name: StorageFileLogs
     href: tables/storagefilelogs.md
+  - name: StorageMalwareScanningResults
+    href: tables/storagemalwarescanningresults.md
   - name: StorageMoverCopyLogsFailed
     href: tables/storagemovercopylogsfailed.md
   - name: StorageMoverCopyLogsTransferred
