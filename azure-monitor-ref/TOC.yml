@@ -210,3 +210,5 @@
     href: tables/amlpipelineevent.md
   - name: AmlRegistryReadEventsLog
     href: tables/amlregistryreadeventslog.md
+  - name: AmlRegistryWriteEventsLog
+    href: tables/amlregistrywriteeventslog.md
