@@ -278,3 +278,5 @@
     href: tables/appserviceplatformlogs.md
   - name: AppServiceServerlessSecurityPluginData
     href: tables/appserviceserverlesssecurityplugindata.md
+  - name: AppSystemEvents
+    href: tables/appsystemevents.md
