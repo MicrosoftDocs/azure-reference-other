@@ -440,3 +440,5 @@
     href: tables/databricksglobalinitscripts.md
   - name: DatabricksIAMRole
     href: tables/databricksiamrole.md
+  - name: DatabricksInstancePools
+    href: tables/databricksinstancepools.md
