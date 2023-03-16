@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/9/2023
+ms.date: 3/16/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -62,6 +62,8 @@ ms.date: 3/9/2023
 - [AmlOnlineEndpointEventLog](amlonlineendpointeventlog.md)
 - [AmlOnlineEndpointTrafficLog](amlonlineendpointtrafficlog.md)
 - [AmlPipelineEvent](amlpipelineevent.md)
+- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
+- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
 - [AMSLiveEventOperations](amsliveeventoperations.md)
@@ -82,6 +84,7 @@ ms.date: 3/9/2023
 - [CDBPartitionKeyRUConsumption](cdbpartitionkeyruconsumption.md)
 - [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
 - [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
+- [ChaosStudioExperimentEventLogs](chaosstudioexperimenteventlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
@@ -189,6 +192,8 @@ ms.date: 3/9/2023
 - [AmlOnlineEndpointEventLog](amlonlineendpointeventlog.md)
 - [AmlOnlineEndpointTrafficLog](amlonlineendpointtrafficlog.md)
 - [AmlPipelineEvent](amlpipelineevent.md)
+- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
+- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AmlRunStatusChangedEvent](amlrunstatuschangedevent.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
@@ -233,6 +238,7 @@ ms.date: 3/9/2023
 - [CDBPartitionKeyRUConsumption](cdbpartitionkeyruconsumption.md)
 - [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
 - [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
+- [ChaosStudioExperimentEventLogs](chaosstudioexperimenteventlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CIEventsOperational](cieventsoperational.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
@@ -327,12 +333,12 @@ ms.date: 3/9/2023
 - [SignalRServiceDiagnosticLogs](signalrservicediagnosticlogs.md)
 - [SigninLogs](signinlogs.md)
 - [SQLSecurityAuditEvents](sqlsecurityauditevents.md)
-- [StorageAntimalwareScanResults](storageantimalwarescanresults.md)
 - [StorageBlobLogs](storagebloblogs.md)
 - [StorageCacheOperationEvents](storagecacheoperationevents.md)
 - [StorageCacheUpgradeEvents](storagecacheupgradeevents.md)
 - [StorageCacheWarningEvents](storagecachewarningevents.md)
 - [StorageFileLogs](storagefilelogs.md)
+- [StorageMalwareScanningResults](storagemalwarescanningresults.md)
 - [StorageMoverCopyLogsFailed](storagemovercopylogsfailed.md)
 - [StorageMoverCopyLogsTransferred](storagemovercopylogstransferred.md)
 - [StorageMoverJobRunLogs](storagemoverjobrunlogs.md)
@@ -597,6 +603,7 @@ ms.date: 3/9/2023
 - [SentinelAudit](sentinelaudit.md)
 - [SentinelHealth](sentinelhealth.md)
 - [SigninLogs](signinlogs.md)
+- [StorageMalwareScanningResults](storagemalwarescanningresults.md)
 - [Syslog](syslog.md)
 - [ThreatIntelligenceIndicator](threatintelligenceindicator.md)
 - [Update](update.md)
