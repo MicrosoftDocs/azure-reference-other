@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/9/2023
+ms.date: 3/16/2023
 ---
 
 # LAQueryLogs
@@ -36,6 +36,7 @@ ms.date: 3/9/2023
 | AADTenantId | string | AAD TenantId of the caller. |
 | CorrelationId | string | The ID for correlated events. |
 | IsBillableQuery | bool | Indicates whether query execution is billed. |
+| IsWorkspaceInFailover | bool | Indicates whether the queried workspace was in failover mode. |
 | QueryText | string | The full body of the query as submitted by the user. |
 | QueryTimeRangeEnd | datetime | The end time (UTC) of the time range across which the query was was requested by the caller to be executed. |
 | QueryTimeRangeStart | datetime | The starting time (UTC) of the time range across which the query was was requested by the caller to be executed. |
@@ -59,3 +60,4 @@ ms.date: 3/9/2023
 | TenantId | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) at which the query was submitted. |
 | Type | string | The name of the table |
+| WorkspaceRegion | string | The region of the queried workspace. |
