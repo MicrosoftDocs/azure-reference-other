@@ -19,23 +19,23 @@ productDirectory:
     - title: Azure Active Directory
       imageSrc: ./media/azure-ad-monoline.png
       summary: "Protect your users, apps, workloads, and devices"
-      url: https://learn.microsoft.com/azure/active-directory
+      url: /azure/active-directory
     - title: Microsoft Entra Permissions Management
       imageSrc: ./media/permissions-management-monoline.png
       summary: "One unified model to manage permissions of any identity across any cloud"
-      url: https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/
+      url: /azure/active-directory/cloud-infrastructure-entitlement-management/
     - title: Microsoft Entra Verified ID
       imageSrc: ./media/verified-id-monoline.png
       summary: "Enable more secure interactions while respecting privacy with an industry-leading global platform"
-      url: https://learn.microsoft.com/azure/active-directory/verifiable-credentials/
+      url: /azure/active-directory/verifiable-credentials/
     - title: Microsoft Entra Workload Identities
       imageSrc: ./media/workload-identities-monoline.png
       summary: "Secure identities for apps and services and their access to cloud resources"
-      url: https://learn.microsoft.com/users/ryanwike-6887/collections/3ok0hz4e2g840z
+      url: /azure/active-directory/workload-identities/
     - title: Microsoft Entra Identity Governance
       imageSrc: ./media/identity-governance-monoline.png
       summary: "Ensure that the right people have the right access to the right resources at the right time"
-      url: https://learn.microsoft.com/azure/active-directory/governance/
+      url: /azure/active-directory/governance/
     - title: Microsoft Entra admin center
       imageSrc: ./media/entra-portal-stub.png
       summary: "Access and administer the Microsoft Entra family of products through the admin center"

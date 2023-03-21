@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/9/2023
+ms.date: 3/16/2023
 ---
 
 # AzureActivity
@@ -74,9 +74,10 @@ ms.date: 3/9/2023
 - Data Share
 - Power BI Embedded
 - Cognitive Services
-- Bastions
 - Azure Spring Cloud
+- CDN Profiles
 - Batch Accounts
+- Chaos Experiment
 - Bot Services
 - Azure Virtual Network Manager
 - Azure Traffic Collector
@@ -87,8 +88,8 @@ ms.date: 3/9/2023
 - Azure Load Testing
 - Kubernetes Services
 - Key Vaults
-- Chaos Experiment
 - Azure Managed Workspace for Grafana
+- Firewalls
 - Event Hubs
 - Event Grid Topics
 - Azure Digital Twins
@@ -99,10 +100,10 @@ ms.date: 3/9/2023
 - Azure Attestation
 - Azure Autonomous Development Platform workspace
 - App Services
-- Firewalls
 - Microsoft Connected Cache
+- Bastions
 - Microsoft Connected Vehicle Platform
-- Network Watcher - Connection Monitor
+- Container Apps
 - Analysis Services
 - Workload Monitor
 - Time Series Insights Environments
@@ -120,13 +121,13 @@ ms.date: 3/9/2023
 - Microsoft Graph Logs
 - Media Services
 - Machine Learning
+- Machine Learning
 - HDInsight Clusters
 - Experiment Workspace
 - Dev Centers
 - Azure Database for PostgreSQL Flexible Servers
 - Dynamics 365 Customer Insights
-- Container Apps
-- CDN Profiles
+- Network Watcher - Connection Monitor
 - Azure API for FHIR
 
 
