@@ -62,3 +62,5 @@
     href: tables/acscallsummary.md
   - name: ACSChatIncomingOperations
     href: tables/acschatincomingoperations.md
+  - name: ACSEmailSendMailOperational
+    href: tables/acsemailsendmailoperational.md
