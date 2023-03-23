@@ -710,3 +710,5 @@
     href: tables/ntaipdetails.md
   - name: NTANetAnalytics
     href: tables/ntanetanalytics.md
+  - name: NTATopologyDetails
+    href: tables/ntatopologydetails.md
