@@ -900,3 +900,5 @@
     href: tables/urlclickevents.md
   - name: Usage
     href: tables/usage.md
+  - name: UserAccessAnalytics
+    href: tables/useraccessanalytics.md
