@@ -48,3 +48,5 @@
     href: tables/acicollaborationaudit.md
   - name: ACRConnectedClientList
     href: tables/acrconnectedclientlist.md
+  - name: ACSAuthIncomingOperations
+    href: tables/acsauthincomingoperations.md
