@@ -32,3 +32,5 @@
     href: tables/aadriskyserviceprincipals.md
   - name: AADRiskyUsers
     href: tables/aadriskyusers.md
+  - name: AADServicePrincipalRiskEvents
+    href: tables/aadserviceprincipalriskevents.md
