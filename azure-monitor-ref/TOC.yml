@@ -546,3 +546,7 @@
     href: tables/emailevents.md
   - name: EmailPostDeliveryEvents
     href: tables/emailpostdeliveryevents.md
+  - name: EmailUrlInfo
+    href: tables/emailurlinfo.md
+  - name: Event
+    href: tables/event.md
