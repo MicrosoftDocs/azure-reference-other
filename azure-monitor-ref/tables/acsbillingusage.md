@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/16/2023
+ms.date: 3/23/2023
 ---
 
 # ACSBillingUsage
