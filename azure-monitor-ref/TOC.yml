@@ -654,3 +654,7 @@
     href: tables/kubehealth.md
   - name: KubeMonAgentEvents
     href: tables/kubemonagentevents.md
+  - name: KubeNodeInventory
+    href: tables/kubenodeinventory.md
+  - name: KubePodInventory
+    href: tables/kubepodinventory.md
