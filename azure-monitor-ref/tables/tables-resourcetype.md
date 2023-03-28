@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/16/2023
+ms.date: 3/23/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -447,6 +447,7 @@ ms.date: 3/16/2023
 
 ## Container Apps
 
+- [AppEnvSpringAppConsoleLogs](appenvspringappconsolelogs.md)
 - [AzureActivity](azureactivity.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
@@ -693,6 +694,9 @@ ms.date: 3/16/2023
 
 ## Kubernetes Services
 
+- [AKSAudit](aksaudit.md)
+- [AKSAuditAdmin](aksauditadmin.md)
+- [AKSControlPlane](akscontrolplane.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
