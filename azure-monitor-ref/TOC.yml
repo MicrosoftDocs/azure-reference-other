@@ -176,6 +176,12 @@
     href: tables/ahdsmedtechdiagnosticlogs.md
   - name: AirflowDagProcessingLogs
     href: tables/airflowdagprocessinglogs.md
+  - name: AKSAudit
+    href: tables/aksaudit.md
+  - name: AKSAuditAdmin
+    href: tables/aksauditadmin.md
+  - name: AKSControlPlane
+    href: tables/akscontrolplane.md
   - name: Alert
     href: tables/alert.md
   - name: AlertEvidence
@@ -778,8 +784,6 @@
     href: tables/sentinelaudit.md
   - name: SentinelHealth
     href: tables/sentinelhealth.md
-  - name: SigninLogs
-    href: tables/signinlogs.md
   - name: SignalRServiceDiagnosticLogs
     href: tables/signalrservicediagnosticlogs.md
   - name: SQLAssessmentRecommendation

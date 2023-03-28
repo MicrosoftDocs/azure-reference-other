@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/16/2023
+ms.date: 3/23/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -50,6 +50,8 @@ ms.date: 3/16/2023
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AgriFoodApplicationAuditLogs](agrifoodapplicationauditlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
+- [AKSAudit](aksaudit.md)
+- [AKSAuditAdmin](aksauditadmin.md)
 - [AmlComputeInstanceEvent](amlcomputeinstanceevent.md)
 - [AmlDataLabelEvent](amldatalabelevent.md)
 - [AmlDataSetEvent](amldatasetevent.md)
@@ -69,6 +71,7 @@ ms.date: 3/16/2023
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
+- [AppEnvSpringAppConsoleLogs](appenvspringappconsolelogs.md)
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
@@ -176,6 +179,9 @@ ms.date: 3/16/2023
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
 - [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
+- [AKSAudit](aksaudit.md)
+- [AKSAuditAdmin](aksauditadmin.md)
+- [AKSControlPlane](akscontrolplane.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -201,6 +207,7 @@ ms.date: 3/16/2023
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
+- [AppEnvSpringAppConsoleLogs](appenvspringappconsolelogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
@@ -387,6 +394,9 @@ ms.date: 3/16/2023
 
 ## Containers
 
+- [AKSAudit](aksaudit.md)
+- [AKSAuditAdmin](aksauditadmin.md)
+- [AKSControlPlane](akscontrolplane.md)
 - [ContainerImageInventory](containerimageinventory.md)
 - [ContainerInventory](containerinventory.md)
 - [ContainerLog](containerlog.md)
