@@ -22,3 +22,5 @@
     href: tables/aaddomainservicesaccountmanagement.md
   - name: AADDomainServicesDirectoryServiceAccess
     href: tables/aaddomainservicesdirectoryserviceaccess.md
+  - name: AADDomainServicesLogonLogoff
+    href: tables/aaddomainserviceslogonlogoff.md
