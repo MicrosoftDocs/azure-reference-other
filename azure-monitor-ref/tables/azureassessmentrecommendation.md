@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/23/2023
+ms.date: 3/31/2023
 ---
 
 # AzureAssessmentRecommendation
@@ -19,6 +19,7 @@ ms.date: 3/23/2023
 ## Solutions
 
 - AzureAssessment
+- AzureResources
 
 
 
