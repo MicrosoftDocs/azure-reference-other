@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/23/2023
+ms.date: 3/31/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -206,6 +206,12 @@ ms.date: 3/23/2023
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+## Azure Database for MySQL Flexible Servers
+
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
+
 ## Azure Database for MySQL Servers
 
 - [AzureActivity](azureactivity.md)
@@ -312,6 +318,7 @@ ms.date: 3/23/2023
 
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [SecurityAlert](securityalert.md)
+- [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [CommonSecurityLog](commonsecuritylog.md)
@@ -519,6 +526,7 @@ ms.date: 3/23/2023
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [WVDAgentHealthStatus](wvdagenthealthstatus.md)
+- [WVDAutoscaleEvaluationPooled](wvdautoscaleevaluationpooled.md)
 - [WVDCheckpoints](wvdcheckpoints.md)
 - [WVDConnectionGraphicsDataPreview](wvdconnectiongraphicsdatapreview.md)
 - [WVDConnectionNetworkData](wvdconnectionnetworkdata.md)
@@ -895,6 +903,11 @@ ms.date: 3/23/2023
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [CoreAzureBackup](coreazurebackup.md)
+
+## Relay
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
 
 ## Search Services
 

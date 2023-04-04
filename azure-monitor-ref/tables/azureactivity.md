@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/23/2023
+ms.date: 3/31/2023
 ---
 
 # AzureActivity
@@ -34,8 +34,8 @@ ms.date: 3/23/2023
 - Azure Arc Enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
-- Automation account
 - Azure Stack HCI
+- VMware
 - Event Grid System Topics
 - Event Grid Partner Topics
 - Event Grid Partner Namespaces
@@ -46,9 +46,10 @@ ms.date: 3/23/2023
 - Container Registries
 - SignalR
 - Storage Accounts
-- VMware
+- Cognitive Services
+- Automation account
+- Azure Spring Cloud
 - Data factories
-- Data Lake Storage Gen1
 - Data Lake Analytics
 - Stream Analytics jobs
 - Search Services
@@ -73,15 +74,15 @@ ms.date: 3/23/2023
 - SQL Managed Instances
 - Data Share
 - Power BI Embedded
-- Cognitive Services
-- Azure Spring Cloud
+- Data Lake Storage Gen1
 - CDN Profiles
 - Batch Accounts
-- Chaos Experiment
+- Analysis Services
 - Bot Services
 - Azure Virtual Network Manager
 - Azure Traffic Collector
 - Service Bus
+- Relay
 - Recovery Services Vaults
 - Microsoft.Purview/accounts
 - Azure Managed Instance for Apache Cassandra
@@ -100,11 +101,10 @@ ms.date: 3/23/2023
 - Azure Attestation
 - Azure Autonomous Development Platform workspace
 - App Services
+- Chaos Experiment
 - Microsoft Connected Cache
-- Bastions
 - Microsoft Connected Vehicle Platform
-- Container Apps
-- Analysis Services
+- Network Watcher - Connection Monitor
 - Workload Monitor
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
@@ -116,8 +116,8 @@ ms.date: 3/23/2023
 - Default schema for a resource
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
+- Bastions
 - Azure Storage Mover
-- Virtual machines
 - Microsoft Graph Logs
 - Media Services
 - Machine Learning
@@ -126,8 +126,10 @@ ms.date: 3/23/2023
 - Experiment Workspace
 - Dev Centers
 - Azure Database for PostgreSQL Flexible Servers
+- Azure Database for MySQL Flexible Servers
 - Dynamics 365 Customer Insights
-- Network Watcher - Connection Monitor
+- Container Apps
+- Virtual machines
 - Azure API for FHIR
 
 

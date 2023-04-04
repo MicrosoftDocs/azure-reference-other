@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/23/2023
+ms.date: 3/31/2023
 ---
 
 # AADDomainServicesDirectoryServiceAccess
@@ -31,23 +31,23 @@ ms.date: 3/23/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| AppCorrelationID | string |  |
-| AttributeLDAPDisplayName | string |  |
-| AttributeSyntaxOID | string |  |
-| AttributeValue | string |  |
+| AppCorrelationID | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| AttributeLDAPDisplayName | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| AttributeSyntaxOID | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| AttributeValue | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | Category | string |  |
 | CorrelationId | string |  |
-| DSName | string |  |
-| DSType | string |  |
-| NewObjectDN | string |  |
-| ObjectClass | string |  |
-| ObjectDN | string |  |
-| ObjectGUID | string |  |
-| OldObjectDN | string |  |
-| OpCorrelationID | string |  |
+| DSName | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| DSType | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| NewObjectDN | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| ObjectClass | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| ObjectDN | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| ObjectGUID | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| OldObjectDN | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| OpCorrelationID | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | OperationName | string |  |
-| OperationType | string |  |
-| RecordId | string |  |
+| OperationType | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| RecordId | string | A unique identifier corresponding to this record. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
 | ResultDescription | string |  |
@@ -55,5 +55,5 @@ ms.date: 3/23/2023
 | SourceSystem | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime |  |
-| TreeDelete | string |  |
+| TreeDelete | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | Type | string | The name of the table |
