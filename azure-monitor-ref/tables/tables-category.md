@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/23/2023
+ms.date: 3/31/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -382,6 +382,7 @@ ms.date: 3/23/2023
 
 ## Azure Virtual Desktop
 
+- [WVDAutoscaleEvaluationPooled](wvdautoscaleevaluationpooled.md)
 - [WVDCheckpoints](wvdcheckpoints.md)
 - [WVDConnectionGraphicsDataPreview](wvdconnectiongraphicsdatapreview.md)
 - [WVDConnectionNetworkData](wvdconnectionnetworkdata.md)
@@ -536,6 +537,7 @@ ms.date: 3/23/2023
 - [AlertInfo](alertinfo.md)
 - [Anomalies](anomalies.md)
 - [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
+- [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)

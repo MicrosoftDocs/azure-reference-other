@@ -18,8 +18,14 @@
     href: tables/aadb2crequestlogs.md
   - name: AADDomainServicesAccountLogon
     href: tables/aaddomainservicesaccountlogon.md
+  - name: AADDomainServicesAccountManagement
+    href: tables/aaddomainservicesaccountmanagement.md
   - name: AADDomainServicesDirectoryServiceAccess
     href: tables/aaddomainservicesdirectoryserviceaccess.md
+  - name: AADDomainServicesLogonLogoff
+    href: tables/aaddomainserviceslogonlogoff.md
+  - name: AADDomainServicesPolicyChange
+    href: tables/aaddomainservicespolicychange.md
   - name: AADDomainServicesPrivilegeUse
     href: tables/aaddomainservicesprivilegeuse.md
   - name: AADManagedIdentitySignInLogs
@@ -292,6 +298,8 @@
     href: tables/ascauditlogs.md
   - name: ASCDeviceEvents
     href: tables/ascdeviceevents.md
+  - name: ASimAuditEventLogs
+    href: tables/asimauditeventlogs.md
   - name: ASimDnsActivityLogs
     href: tables/asimdnsactivitylogs.md
   - name: ASimNetworkSessionLogs
@@ -934,6 +942,8 @@
     href: tables/workloaddiagnosticlogs.md
   - name: WVDAgentHealthStatus
     href: tables/wvdagenthealthstatus.md
+  - name: WVDAutoscaleEvaluationPooled
+    href: tables/wvdautoscaleevaluationpooled.md
   - name: WVDCheckpoints
     href: tables/wvdcheckpoints.md
   - name: WVDConnectionGraphicsDataPreview

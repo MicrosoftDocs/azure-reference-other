@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/23/2023
+ms.date: 3/31/2023
 ---
 
 # AzureMetrics
@@ -29,8 +29,8 @@ ms.date: 3/23/2023
 - Automation account
 - API Management services
 - Logic Apps
-- Data Share
 - Service Fabric Clusters
+- IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
 - Azure Arc Provisioned Clusters
@@ -38,9 +38,10 @@ ms.date: 3/23/2023
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
 - Azure Stack HCI
-- IoT Hub
+- VMware
+- Data Share
+- Event Grid System Topics
 - SQL Managed Instances
-- SQL Servers
 - SQL Databases
 - Stream Analytics jobs
 - Search Services
@@ -59,19 +60,20 @@ ms.date: 3/23/2023
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
-- VMware
+- SQL Servers
 - Bastions
-- Event Grid System Topics
-- Event Grid Partner Namespaces
-- Dev Centers
+- Event Grid Partner Topics
+- Event Grid Domains
 - Azure Database for PostgreSQL Flexible Servers
+- Azure Database for MySQL Flexible Servers
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
 - Azure Virtual Network Manager
 - Azure Traffic Collector
 - Service Bus
-- Machine Learning
+- Relay
 - Kubernetes Services
+- Key Vaults
 - Firewalls
 - Event Hubs
 - Event Grid Topics
@@ -79,11 +81,10 @@ ms.date: 3/23/2023
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
-- Key Vaults
-- Media Services
+- Dev Centers
+- Event Grid Partner Namespaces
+- Machine Learning
 - Virtual machines
-- Azure Storage Mover
-- Event Grid Domains
 - Azure Blockchain Service
 - Azure AD Domain Services
 - Azure Data Explorer Clusters
@@ -100,7 +101,8 @@ ms.date: 3/23/2023
 - Desktop Virtualization Application Groups
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
-- Event Grid Partner Topics
+- Azure Storage Mover
+- Media Services
 - Azure API for FHIR
 
 
