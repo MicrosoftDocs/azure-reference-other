@@ -772,3 +772,5 @@
     href: tables/purviewsecuritylogs.md
   - name: REDConnectionEvents
     href: tables/redconnectionevents.md
+  - name: ResourceManagementPublicAccessLogs
+    href: tables/resourcemanagementpublicaccesslogs.md
