@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 3/31/2023
+ms.date: 4/6/2023
 ---
 
 # ADSecurityAssessmentRecommendation
@@ -19,6 +19,7 @@ ms.date: 3/31/2023
 ## Solutions
 
 - ADSecurityAssessment
+- AzureResources
 
 
 
