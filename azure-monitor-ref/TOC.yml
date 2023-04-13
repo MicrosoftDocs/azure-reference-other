@@ -302,3 +302,5 @@
     href: tables/asimauditeventlogs.md
   - name: ASimDnsActivityLogs
     href: tables/asimdnsactivitylogs.md
+  - name: ASimNetworkSessionLogs
+    href: tables/asimnetworksessionlogs.md
