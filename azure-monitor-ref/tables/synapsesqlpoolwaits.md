@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 4/6/2023
+ms.date: 4/13/2023
 ---
 
 # SynapseSqlPoolWaits
@@ -31,11 +31,14 @@ ms.date: 4/6/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Category | string | The category of the log. |
+| LockType | string | The lock type associated to the wait. |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |
 | Priority | int | The priority of the waits. |
+| RequestId | string | 	ID of the request on which the wait state occurred.	 |
 | ResourceGroup | string | The azure resourceGroup of the SQL DW. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SessionId | string | 	ID of the session on which the wait state occurred. |
 | SourceSystem | string |  |
 | State | string | The State of the waits. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
