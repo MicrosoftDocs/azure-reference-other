@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 4/13/2023
+ms.date: 4/21/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -99,6 +99,7 @@ ms.date: 4/13/2023
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 - [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
 - [NSPAccessLogs](nspaccesslogs.md)
+- [OEPAuditLogs](oepauditlogs.md)
 - [PFTitleAuditLogs](pftitleauditlogs.md)
 - [PowerBIActivity](powerbiactivity.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
@@ -319,6 +320,8 @@ ms.date: 4/13/2023
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [OEPAirFlowTask](oepairflowtask.md)
+- [OEPAuditLogs](oepauditlogs.md)
+- [OEPDataplaneLogs](oepdataplanelogs.md)
 - [OEPElasticOperator](oepelasticoperator.md)
 - [OEPElasticsearch](oepelasticsearch.md)
 - [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)

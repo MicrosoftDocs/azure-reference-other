@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 4/13/2023
+ms.date: 4/21/2023
 ---
 
 # BehaviorAnalytics
@@ -41,12 +41,13 @@ ms.date: 4/13/2023
 | EventSource | string | Data source for this event. |
 | EventVendor | string | The vendor of the product generating the event. |
 | InvestigationPriority | int | Investigation priority score. |
+| NativeTableName | string | The original table from which the record was fetched. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceDevice | string | The hostname of the source device. |
 | SourceIPAddress | string | The source IP address. |
 | SourceIPLocation | string | The source Geo location based on the IP address. |
 | SourceRecordId | string | The unique Id of the source raw event. |
-| SourceSystem | string |  |
+| SourceSystem | string | The entity provider source system. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetName | string | The name of the target user in the action that generated the event. |
 | TargetPrincipalName | string | The name of the target user in the action that generated the event. |
