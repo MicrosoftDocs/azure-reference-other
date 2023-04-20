@@ -910,3 +910,5 @@
     href: tables/updaterunprogress.md
   - name: UpdateSummary
     href: tables/updatesummary.md
+  - name: UrlClickEvents
+    href: tables/urlclickevents.md
