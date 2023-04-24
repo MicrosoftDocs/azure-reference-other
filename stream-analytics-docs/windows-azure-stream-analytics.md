@@ -14,15 +14,15 @@ Windowing provides a way to aggregate events over various time intervals dependi
 
 The **Windows()** function extends this concept to simultaneously compute results of multiple different window definitions. The **Windows()** function allows you to specify more than one window definition. The query logic is computed for each of these window definitions, and the result is a union of all window results.
 
-Since the result of the **Windows()** function contains a combination of multiple windows, you need to distinguish between the different results. This is done by assigning an identity to each window which can be accessed using the system function **System.Window().Id**. **System.Windows()** returns a record with the Id as its field.
+Since the result of the **Windows()** function contains a combination of multiple windows, you need to distinguish between the different results. This is done by assigning an identity to each window which can be accessed using the system function **System.Window().Id**. **System.Window()** returns a record with the Id as its field.
 
 There are two ways to define Windows:
 
-* Assign unique identities using the **Window()** function, **Window ( ID , window_definition )**, where ID is an identity of **window_definition** and is a unique **varchar(max)** value within the Windows construct.
+* Assign unique identities using the **Window()** function, **Window ( ID , window_definition )**, where ID is an identity of **window_definition** and is a unique case insensitive **varchar(max)** value within the Windows construct.
 
 * Without identities, in which case **System.Window().Id** results in null value.
   
- ## Syntax  
+ ## Syntax
   
 ```SQL   
 | Windows ( window_definition, … ) 
@@ -47,7 +47,7 @@ There are shortened window definition names, like "Tumbling", which can be used 
 
 It is not an error to use **System.Window().Id** without the Windows construct, but its value will be null because no identity was given to the window.
 
-If window definitions are specified using the **Window()** function, then all window definitions must use the **Window()** function and all IDs must be unique. Null is not allowed.
+If window definitions are specified using the **Window()** function, then all window definitions must use the **Window()** function and all case insensitive IDs must be unique. Null is not allowed.
   
 ## System.Window() function
 
