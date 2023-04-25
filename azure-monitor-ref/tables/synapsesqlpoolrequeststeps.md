@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 4/13/2023
+ms.date: 4/21/2023
 ---
 
 # SynapseSqlPoolRequestSteps
 
- Information about request steps that compose a given SQL request/query in an Azure Synapse dedicated SQL pool.
+ Information about request steps that compose a given SQL request or query in an Azure Synapse dedicated SQL pool.
 
 ## Categories
 

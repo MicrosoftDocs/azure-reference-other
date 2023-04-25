@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 4/13/2023
+ms.date: 4/21/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -826,6 +826,8 @@ ms.date: 4/13/2023
 ## Microsoft.OpenEnergyPlatform/energyServices
 
 - [OEPAirFlowTask](oepairflowtask.md)
+- [OEPAuditLogs](oepauditlogs.md)
+- [OEPDataplaneLogs](oepdataplanelogs.md)
 - [OEPElasticOperator](oepelasticoperator.md)
 - [OEPElasticsearch](oepelasticsearch.md)
 
