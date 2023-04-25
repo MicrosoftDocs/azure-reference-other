@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 4/13/2023
+ms.date: 4/21/2023
 ---
 
 # AmlComputeCpuGpuUtilization
@@ -38,6 +38,7 @@ ms.date: 4/13/2023
 | Identity | string | Identity of the user or application that performed the operation. |
 | Level | string | The severity level of the event. Must be one of Informational, Warning, Error, or Critical. |
 | Location | string | The region of the resource emitting the event. |
+| MetricName | string | Metric name. This would be Cpu/Gpu utilization metric eg. GpuMemoryUtilization, GpuUtilization, CpuUtilization etc. |
 | NodeId | string | NodeId on the cluster. |
 | OperationName | string | The name of the operation associated with the log entry. |
 | OperationVersion | string | The api-version associated with the operation, if the operationName was performed using an API. |
