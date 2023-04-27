@@ -24,3 +24,5 @@
     href: tables/aaddomainservicesdirectoryserviceaccess.md
   - name: AADDomainServicesLogonLogoff
     href: tables/aaddomainserviceslogonlogoff.md
+  - name: AADDomainServicesPolicyChange
+    href: tables/aaddomainservicespolicychange.md
