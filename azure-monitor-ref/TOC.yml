@@ -46,3 +46,5 @@
     href: tables/aaduserriskevents.md
   - name: ABSBotRequests
     href: tables/absbotrequests.md
+  - name: ABSChannelToBotRequests
+    href: tables/abschanneltobotrequests.md
