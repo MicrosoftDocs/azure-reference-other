@@ -252,3 +252,5 @@
     href: tables/appdependencies.md
   - name: AppEnvSpringAppConsoleLogs
     href: tables/appenvspringappconsolelogs.md
+  - name: AppEvents
+    href: tables/appevents.md
