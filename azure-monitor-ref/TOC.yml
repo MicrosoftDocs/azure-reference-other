@@ -22,6 +22,10 @@
     href: tables/aaddomainservicesaccountmanagement.md
   - name: AADDomainServicesDirectoryServiceAccess
     href: tables/aaddomainservicesdirectoryserviceaccess.md
+  - name: AADDomainServicesDNSAuditsDynamicUpdates
+    href: tables/aaddomainservicesdnsauditsdynamicupdates.md
+  - name: AADDomainServicesDNSAuditsGeneral
+    href: tables/aaddomainservicesdnsauditsgeneral.md
   - name: AADDomainServicesLogonLogoff
     href: tables/aaddomainserviceslogonlogoff.md
   - name: AADDomainServicesPolicyChange
