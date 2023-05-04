@@ -358,3 +358,5 @@
     href: tables/azfwthreatintel.md
   - name: AzureActivity
     href: tables/azureactivity.md
+  - name: AzureAttestationDiagnostics
+    href: tables/azureattestationdiagnostics.md
