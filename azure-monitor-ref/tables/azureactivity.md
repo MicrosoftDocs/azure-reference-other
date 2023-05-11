@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/4/2023
+ms.date: 5/11/2023
 ---
 
 # AzureActivity
@@ -23,7 +23,7 @@ ms.date: 5/4/2023
 - LogManagement
 ## Resource types
 
-- Microsoft App Configuration
+- Azure AD Domain Services
 - API Management services
 - Logic Apps
 - Service Fabric Clusters
@@ -41,14 +41,14 @@ ms.date: 5/4/2023
 - Event Grid Partner Namespaces
 - Event Grid Domains
 - Azure Blockchain Service
-- Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
 - SignalR
 - Storage Accounts
 - Cognitive Services
-- Automation account
 - Azure Spring Cloud
+- Automation account
+- CDN Profiles
 - Data factories
 - Data Lake Analytics
 - Stream Analytics jobs
@@ -75,10 +75,9 @@ ms.date: 5/4/2023
 - Data Share
 - Power BI Embedded
 - Data Lake Storage Gen1
-- CDN Profiles
 - Batch Accounts
 - Analysis Services
-- Bot Services
+- Workload Monitor
 - Azure Virtual Network Manager
 - Azure Traffic Collector
 - Service Bus
@@ -101,11 +100,11 @@ ms.date: 5/4/2023
 - Azure Attestation
 - Azure Autonomous Development Platform workspace
 - App Services
+- Microsoft App Configuration
+- Bot Services
 - Chaos Experiment
 - Microsoft Connected Cache
 - Microsoft Connected Vehicle Platform
-- Network Watcher - Connection Monitor
-- Workload Monitor
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
@@ -116,9 +115,9 @@ ms.date: 5/4/2023
 - Default schema for a resource
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
-- Bastions
 - Azure Storage Mover
-- Microsoft Graph Logs
+- Bastions
+- Virtual machines
 - Media Services
 - Machine Learning
 - Machine Learning
@@ -129,7 +128,8 @@ ms.date: 5/4/2023
 - Azure Database for MySQL Flexible Servers
 - Dynamics 365 Customer Insights
 - Container Apps
-- Virtual machines
+- Network Watcher - Connection Monitor
+- Microsoft Graph Logs
 - Azure API for FHIR
 
 

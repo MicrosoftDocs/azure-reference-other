@@ -244,6 +244,8 @@
     href: tables/anomalies.md
   - name: ApiManagementGatewayLogs
     href: tables/apimanagementgatewaylogs.md
+  - name: ApiManagementWebSocketConnectionLogs
+    href: tables/apimanagementwebsocketconnectionlogs.md
   - name: AppAvailabilityResults
     href: tables/appavailabilityresults.md
   - name: AppBrowserTimings
@@ -304,6 +306,8 @@
     href: tables/ascdeviceevents.md
   - name: ASimAuditEventLogs
     href: tables/asimauditeventlogs.md
+  - name: ASimAuthenticationEventLogs
+    href: tables/asimauthenticationeventlogs.md
   - name: ASimDnsActivityLogs
     href: tables/asimdnsactivitylogs.md
   - name: ASimNetworkSessionLogs
@@ -356,6 +360,10 @@
     href: tables/azfwnetworkruleaggregation.md
   - name: AZFWThreatIntel
     href: tables/azfwthreatintel.md
+  - name: AZKVAuditLogs
+    href: tables/azkvauditlogs.md
+  - name: AZKVPolicyEvaluationDetailsLogs
+    href: tables/azkvpolicyevaluationdetailslogs.md
   - name: AzureActivity
     href: tables/azureactivity.md
   - name: AzureAttestationDiagnostics

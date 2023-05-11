@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/4/2023
+ms.date: 5/11/2023
 ---
 
 # AzureMetrics
@@ -21,7 +21,7 @@ ms.date: 5/4/2023
 - LogManagement
 ## Resource types
 
-- App Services
+- Azure AD Domain Services
 - Power BI Embedded
 - Data Lake Analytics
 - Data Lake Storage Gen1
@@ -64,7 +64,6 @@ ms.date: 5/4/2023
 - Bastions
 - Event Grid Partner Topics
 - Event Grid Domains
-- Azure Database for PostgreSQL Flexible Servers
 - Azure Database for MySQL Flexible Servers
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
@@ -81,12 +80,12 @@ ms.date: 5/4/2023
 - Azure Cosmos DB
 - Communication Services
 - Azure Cache for Redis
-- Dev Centers
+- App Services
+- Azure Database for PostgreSQL Flexible Servers
 - Event Grid Partner Namespaces
-- Machine Learning
-- Virtual machines
+- Dev Centers
+- Media Services
 - Azure Blockchain Service
-- Azure AD Domain Services
 - Azure Data Explorer Clusters
 - Container Registries
 - SignalR
@@ -102,7 +101,8 @@ ms.date: 5/4/2023
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Azure Storage Mover
-- Media Services
+- Virtual machines
+- Machine Learning
 - Azure API for FHIR
 
 

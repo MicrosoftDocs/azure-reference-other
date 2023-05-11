@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/4/2023
+ms.date: 5/11/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -75,6 +75,8 @@ ms.date: 5/4/2023
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
+- [AZKVAuditLogs](azkvauditlogs.md)
+- [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [CassandraAudit](cassandraaudit.md)
@@ -163,6 +165,7 @@ ms.date: 5/4/2023
 - [ADTModelsOperation](adtmodelsoperation.md)
 - [ADTQueryOperation](adtqueryoperation.md)
 - [ADXJournal](adxjournal.md)
+- [ADXTableDetails](adxtabledetails.md)
 - [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
@@ -208,6 +211,7 @@ ms.date: 5/4/2023
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
+- [ApiManagementWebSocketConnectionLogs](apimanagementwebsocketconnectionlogs.md)
 - [AppEnvSpringAppConsoleLogs](appenvspringappconsolelogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 - [AppPlatformIngressLogs](appplatformingresslogs.md)
@@ -227,6 +231,8 @@ ms.date: 5/4/2023
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AZFWFlowTrace](azfwflowtrace.md)
+- [AZKVAuditLogs](azkvauditlogs.md)
+- [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -541,6 +547,7 @@ ms.date: 5/4/2023
 - [Anomalies](anomalies.md)
 - [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
+- [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
