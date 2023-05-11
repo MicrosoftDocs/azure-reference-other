@@ -574,3 +574,5 @@
     href: tables/event.md
   - name: ExchangeAssessmentRecommendation
     href: tables/exchangeassessmentrecommendation.md
+  - name: ExchangeOnlineAssessmentRecommendation
+    href: tables/exchangeonlineassessmentrecommendation.md
