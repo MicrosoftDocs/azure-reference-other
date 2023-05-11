@@ -350,3 +350,5 @@
     href: tables/azfwidpssignature.md
   - name: AZFWInternalFqdnResolutionFailure
     href: tables/azfwinternalfqdnresolutionfailure.md
+  - name: AZFWNatRule
+    href: tables/azfwnatrule.md
