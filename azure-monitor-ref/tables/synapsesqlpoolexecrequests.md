@@ -31,7 +31,6 @@ ms.date: 5/4/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Category | string | The category of the log. |
-| ClassifierName | string | The classifier name of the execution requests. |
 | ClientCorrelationId | string | The correlation set by client/user. |
 | Command | string | The SQL command of the execution requests. |
 | DatabaseId | string | The databaseId of the execution requests. |
