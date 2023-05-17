@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/4/2023
+ms.date: 5/11/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -21,6 +21,7 @@ ms.date: 5/4/2023
 ## API Management services
 
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
+- [ApiManagementWebSocketConnectionLogs](apimanagementwebsocketconnectionlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -86,6 +87,8 @@ ms.date: 5/4/2023
 - [AADDomainServicesAccountLogon](aaddomainservicesaccountlogon.md)
 - [AADDomainServicesAccountManagement](aaddomainservicesaccountmanagement.md)
 - [AADDomainServicesDirectoryServiceAccess](aaddomainservicesdirectoryserviceaccess.md)
+- [AADDomainServicesDNSAuditsDynamicUpdates](aaddomainservicesdnsauditsdynamicupdates.md)
+- [AADDomainServicesDNSAuditsGeneral](aaddomainservicesdnsauditsgeneral.md)
 - [AADDomainServicesLogonLogoff](aaddomainserviceslogonlogoff.md)
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
@@ -256,6 +259,7 @@ ms.date: 5/4/2023
 - [DatabricksNotebook](databricksnotebook.md)
 - [DatabricksRemoteHistoryService](databricksremotehistoryservice.md)
 - [DatabricksSecrets](databrickssecrets.md)
+- [DatabricksSQL](databrickssql.md)
 - [DatabricksSQLPermissions](databrickssqlpermissions.md)
 - [DatabricksSSH](databricksssh.md)
 - [DatabricksWebTerminal](databrickswebterminal.md)
@@ -319,6 +323,7 @@ ms.date: 5/4/2023
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [SecurityAlert](securityalert.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
+- [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [CommonSecurityLog](commonsecuritylog.md)
@@ -465,6 +470,9 @@ ms.date: 5/4/2023
 - [AzureMetrics](azuremetrics.md)
 - [ContainerRegistryLoginEvents](containerregistryloginevents.md)
 - [ContainerRegistryRepositoryEvents](containerregistryrepositoryevents.md)
+
+## Data Collection Rules
+
 
 ## Data factories
 
@@ -696,6 +704,8 @@ ms.date: 5/4/2023
 
 ## Key Vaults
 
+- [AZKVAuditLogs](azkvauditlogs.md)
+- [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -742,9 +752,6 @@ ms.date: 5/4/2023
 
 ## Machine Learning
 
-- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
-- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
-- [AzureActivity](azureactivity.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -768,6 +775,9 @@ ms.date: 5/4/2023
 - [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
+- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
+- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
+- [AzureActivity](azureactivity.md)
 
 ## Media Services
 

@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/4/2023
+ms.date: 5/11/2023
 ---
 
 # ADXTableDetails
 
  Azure Data Explorer table details.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
