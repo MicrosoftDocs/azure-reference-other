@@ -72,3 +72,5 @@
     href: tables/acscallrecordingsummary.md
   - name: ACSCallSummary
     href: tables/acscallsummary.md
+  - name: ACSCallSurvey
+    href: tables/acscallsurvey.md
