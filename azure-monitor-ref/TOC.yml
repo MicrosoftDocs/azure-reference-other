@@ -190,3 +190,5 @@
     href: tables/ahdsmedtechdiagnosticlogs.md
   - name: AirflowDagProcessingLogs
     href: tables/airflowdagprocessinglogs.md
+  - name: AKSAudit
+    href: tables/aksaudit.md
