@@ -32,3 +32,5 @@
     href: tables/aaddomainservicespolicychange.md
   - name: AADDomainServicesPrivilegeUse
     href: tables/aaddomainservicesprivilegeuse.md
+  - name: AADManagedIdentitySignInLogs
+    href: tables/aadmanagedidentitysigninlogs.md
