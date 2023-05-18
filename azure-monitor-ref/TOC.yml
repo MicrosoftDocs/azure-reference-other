@@ -838,3 +838,5 @@
     href: tables/storagefilelogs.md
   - name: StorageMalwareScanningResults
     href: tables/storagemalwarescanningresults.md
+  - name: StorageMoverCopyLogsFailed
+    href: tables/storagemovercopylogsfailed.md
