@@ -720,3 +720,5 @@
     href: tables/microsoftdynamicstelemetryperformancelogs.md
   - name: MicrosoftDynamicsTelemetrySystemMetricsLogs
     href: tables/microsoftdynamicstelemetrysystemmetricslogs.md
+  - name: MicrosoftGraphActivityLogs
+    href: tables/microsoftgraphactivitylogs.md
