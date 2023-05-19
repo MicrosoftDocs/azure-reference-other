@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/11/2023
+ms.date: 5/19/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -176,6 +176,11 @@ ms.date: 5/11/2023
 
 - [REDConnectionEvents](redconnectionevents.md)
 
+## Azure CloudHsm
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
 ## Azure Cosmos DB
 
 - [AzureActivity](azureactivity.md)
@@ -202,6 +207,9 @@ ms.date: 5/11/2023
 - [AzureMetrics](azuremetrics.md)
 - [FailedIngestion](failedingestion.md)
 - [SucceededIngestion](succeededingestion.md)
+
+## Azure Data Transfer
+
 
 ## Azure Database for MariaDB Servers
 
@@ -320,11 +328,11 @@ ms.date: 5/11/2023
 
 ## Azure Sentinel
 
+- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [SecurityAlert](securityalert.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
-- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
@@ -443,9 +451,11 @@ ms.date: 5/11/2023
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
+- [ACSCallAutomationMediaSummary](acscallautomationmediasummary.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallRecordingSummary](acscallrecordingsummary.md)
 - [ACSCallSummary](acscallsummary.md)
+- [ACSCallSurvey](acscallsurvey.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
 - [ACSEmailSendMailOperational](acsemailsendmailoperational.md)
 - [ACSEmailStatusUpdateOperational](acsemailstatusupdateoperational.md)
@@ -752,6 +762,9 @@ ms.date: 5/11/2023
 
 ## Machine Learning
 
+- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
+- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
+- [AzureActivity](azureactivity.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -775,9 +788,6 @@ ms.date: 5/11/2023
 - [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
-- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
-- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
-- [AzureActivity](azureactivity.md)
 
 ## Media Services
 
@@ -881,11 +891,11 @@ ms.date: 5/11/2023
 
 ## Power BI Datasets
 
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 

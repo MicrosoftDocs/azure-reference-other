@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/11/2023
+ms.date: 5/19/2023
 ---
 
 # AutoscaleEvaluationsLog
