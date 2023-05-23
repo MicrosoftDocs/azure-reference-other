@@ -64,12 +64,16 @@
     href: tables/acsbillingusage.md
   - name: ACSCallAutomationIncomingOperations
     href: tables/acscallautomationincomingoperations.md
+  - name: ACSCallAutomationMediaSummary
+    href: tables/acscallautomationmediasummary.md
   - name: ACSCallDiagnostics
     href: tables/acscalldiagnostics.md
   - name: ACSCallRecordingSummary
     href: tables/acscallrecordingsummary.md
   - name: ACSCallSummary
     href: tables/acscallsummary.md
+  - name: ACSCallSurvey
+    href: tables/acscallsurvey.md
   - name: ACSChatIncomingOperations
     href: tables/acschatincomingoperations.md
   - name: ACSEmailSendMailOperational
@@ -812,6 +816,8 @@
     href: tables/sentinelhealth.md
   - name: SignalRServiceDiagnosticLogs
     href: tables/signalrservicediagnosticlogs.md
+  - name: SigninLogs
+    href: tables/signinlogs.md
   - name: SQLAssessmentRecommendation
     href: tables/sqlassessmentrecommendation.md
   - name: SqlAtpStatus
