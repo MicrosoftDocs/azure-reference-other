@@ -4,9 +4,9 @@ description: Reference for WorkloadMonitoringPerf table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # WorkloadMonitoringPerf
@@ -25,22 +25,22 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|CounterName|string||
-|InstanceName|string||
-|IsSystemDisk|string||
-|LogicalDisk|string||
-|MemoryInstance|string||
-|NetworkAdapter|string||
-|ObjectName|string||
-|PerfCounterValue|real||
-|PhysicalDisk|string||
-|ProcessorInformation|string||
-|ProcessorInstance|string||
-|SecureChannel|string||
-|ServiceName|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| CounterName | string |  |
+| InstanceName | string |  |
+| IsSystemDisk | string |  |
+| LogicalDisk | string |  |
+| MemoryInstance | string |  |
+| NetworkAdapter | string |  |
+| ObjectName | string |  |
+| PerfCounterValue | real |  |
+| PhysicalDisk | string |  |
+| ProcessorInformation | string |  |
+| ProcessorInstance | string |  |
+| SecureChannel | string |  |
+| ServiceName | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

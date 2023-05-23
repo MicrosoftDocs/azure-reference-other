@@ -1,25 +1,19 @@
 ---
-title: "WITH (Azure Stream Analytics) | Microsoft Docs"
+title: "WITH (Azure Stream Analytics)"
 description: "Specifies a temporary named result set which can be referenced by a FROM clause in the query."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: cb18a578-2ea6-4b03-8ea9-8e0fba4932df
-caps.latest.revision: 10
-ms.workload: data-services
 ms.date: 05/02/2016
-ms.author: mamccrea
 ---
 # WITH (Azure Stream Analytics)
   Specifies a temporary named result set which can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.  
   
 > [!NOTE]  
->  The WITH clause has a special use with respect to scaling out your queries. For more information, see [Scale Azure Stream Analytics jobs](https://go.microsoft.com/fwlink/?LinkId=517300)  
+>  The WITH clause has a special use with respect to scaling out your queries. For more information, see [Scale Azure Stream Analytics jobs](/azure/stream-analytics/stream-analytics-scale-jobs)  
   
  ## Syntax  
   

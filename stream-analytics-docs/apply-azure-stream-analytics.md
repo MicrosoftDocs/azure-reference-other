@@ -1,19 +1,13 @@
 ---
-title: "APPLY (Azure Stream Analytics) | Microsoft Docs"
+title: "APPLY (Azure Stream Analytics)"
 description: "The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 426c01d9-269a-49b9-949f-39b0a8c40850
-caps.latest.revision: 10
-ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: mamccrea
 ---
 
 # APPLY (Azure Stream Analytics)

@@ -4,9 +4,9 @@ description: Reference for UpdateRunProgress table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # UpdateRunProgress
@@ -22,40 +22,44 @@ ms.date: 10/1/2020
 ## Resource types
 
 - Virtual machines
+- VMware
+- Azure Stack HCI
+- System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
+- Automation account
 
 
 
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerEnvironment|string||
-|CorrelationId|string||
-|EndTime|datetime||
-|ErrorResult|string||
-|InstallationStatus|string||
-|KBID|string||
-|ManagementGroupName|string||
-|OSType|string||
-|Product|string||
-|Resource|string||
-|ResourceGroup|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResourceId|string||
-|ResourceProvider|string||
-|ResourceType|string||
-|SourceComputerId|string||
-|SourceSystem|string||
-|StartTime|datetime||
-|SubscriptionId|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|SucceededOnRetry|bool||
-|TimeGenerated|datetime||
-|Title|string||
-|Type|string|The name of the table|
-|UpdateId|string||
-|UpdateRunName|string||
-|VMUUID|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerEnvironment | string |  |
+| CorrelationId | string |  |
+| EndTime | datetime |  |
+| ErrorResult | string |  |
+| InstallationStatus | string |  |
+| KBID | string |  |
+| ManagementGroupName | string |  |
+| OSType | string |  |
+| Product | string |  |
+| Resource | string |  |
+| ResourceGroup | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
+| ResourceProvider | string |  |
+| ResourceType | string |  |
+| SourceComputerId | string |  |
+| SourceSystem | string |  |
+| StartTime | datetime |  |
+| SubscriptionId | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| SucceededOnRetry | bool |  |
+| TimeGenerated | datetime |  |
+| Title | string |  |
+| Type | string | The name of the table |
+| UpdateId | string |  |
+| UpdateRunName | string |  |
+| VMUUID | string |  |

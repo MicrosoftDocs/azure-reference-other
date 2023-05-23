@@ -4,9 +4,9 @@ description: Reference for UAApp table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # UAApp
@@ -25,31 +25,31 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AppCategory|string||
-|AppLanguage|string||
-|AppName|string||
-|AppOwner|string||
-|AppType|string||
-|AppVendor|string||
-|AppVersion|string||
-|Computer|string||
-|ComputerID|string||
-|ComputersWithIssues|int||
-|Guidance|string||
-|Importance|string||
-|IsRollup|bool||
-|Issue|string||
-|MonthlyActiveComputers|int||
-|PercentActiveComputers|string||
-|ReadyForWindows|string||
-|RollupLevel|string||
-|SourceSystem|string||
-|TestPlan|string||
-|TestResult|string||
-|TimeGenerated|datetime||
-|TotalInstalls|int||
-|Type|string|The name of the table|
-|UpgradeAssessment|string||
-|UpgradeDecision|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AppCategory | string |  |
+| AppLanguage | string |  |
+| AppName | string |  |
+| AppOwner | string |  |
+| AppType | string |  |
+| AppVendor | string |  |
+| AppVersion | string |  |
+| Computer | string |  |
+| ComputerID | string |  |
+| ComputersWithIssues | int |  |
+| Guidance | string |  |
+| Importance | string |  |
+| IsRollup | bool |  |
+| Issue | string |  |
+| MonthlyActiveComputers | int |  |
+| PercentActiveComputers | string |  |
+| ReadyForWindows | string |  |
+| RollupLevel | string |  |
+| SourceSystem | string |  |
+| TestPlan | string |  |
+| TestResult | string |  |
+| TimeGenerated | datetime |  |
+| TotalInstalls | int |  |
+| Type | string | The name of the table |
+| UpgradeAssessment | string |  |
+| UpgradeDecision | string |  |

@@ -1,28 +1,20 @@
 ---
-title: "JOIN (Azure Stream Analytics) | Microsoft Docs"
+title: "JOIN (Azure Stream Analytics)"
 description: "JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
-
-
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 6cb2e1d5-899f-490b-b2fd-4878f53cefea
-caps.latest.revision: 15
-ms.workload: data-services
 ms.date: 02/28/2017
-ms.author: mamccrea
 ---
 # JOIN (Azure Stream Analytics)
-  Like standard T-SQL, JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources.  JOIN in Azure Stream Analytics are temporal in nature, meaning that each JOIN must provide some limits on how far the matching rows can be separated in time.  For instance, saying “join TollBoothEntry events with TollBoothExit events when they occur on the same LicensePlate and TollId and within 5 minutes of each other” is legitimate; but “join TollBoothEntry events with TollBoothExit events when they occur on the LicensePlate and TollId” is not – it would match each TollBoothEntry with an unbounded and potentially infinite collection of all TollBoothExit to the same LicensePlate and TollId.  
+  Like standard T-SQL, JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources.  JOIN in Azure Stream Analytics are temporal in nature, meaning that each JOIN must provide some limits on how far the matching rows can be separated in time.  For instance, saying "join TollBoothEntry events with TollBoothExit events when they occur on the same LicensePlate and TollId and within 5 minutes of each other" is legitimate; but "join TollBoothEntry events with TollBoothExit events when they occur on the LicensePlate and TollId" is not – it would match each TollBoothEntry with an unbounded and potentially infinite collection of all TollBoothExit to the same LicensePlate and TollId.  
   
  The time bounds for the relationship are specified inside the ON clause of the JOIN, using the DATEDIFF function.  The maximum DATEDIFF size is seven days. For more information on its general use, see [DATEDIFF &#40;Azure Stream Analytics&#41;](datediff-azure-stream-analytics.md). When DATEDIFF is used inside the JOIN condition, the second and third parameter gain special treatment.  
  
  Additionally, SELECT * cannot be used in JOIN statements.  
   
- ## Syntax  
+## Syntax  
   
 ```SQL   
 [ FROM { <input_source> } [ ,...n ] ]  
@@ -138,7 +130,8 @@ WHERE I2.TollId IS NULL
 ```  
   
 ##  <a name="BKMK_DateDiff"></a> Special DATEDIFF Function for JOIN  
- ## Syntax  
+
+### Syntax  
   
 ```SQL   
 DATEDIFF ( datepart , input_source1, input_source2 )  
@@ -147,7 +140,7 @@ DATEDIFF ( datepart , input_source1, input_source2 )
 ### Arguments  
  **dateparts**  
   
- Example. ‘second’, ‘millisecond’, ‘minute’, etc.)  
+ Example. 'second', 'millisecond', 'minute', etc.)  
   
  **input_source1**  
   

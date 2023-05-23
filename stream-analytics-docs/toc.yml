@@ -1,13 +1,14 @@
+items:
 - name: Stream Analytics Query Language
   href: stream-analytics-query-language-reference.md
   expanded: true
-  items: 
+  items:
     - name: Built-in Functions
-      items: 
+      items:
         - name: Built-in Functions Overview
           href: built-in-functions-azure-stream-analytics.md
         - name: Aggregate Functions
-          items: 
+          items:
             - name: Aggregate Functions Overview
               href: aggregate-functions-azure-stream-analytics.md
             - name: AVG
@@ -39,7 +40,7 @@
             - name: VARP
               href: varp-azure-stream-analytics.md
         - name: Analytic Functions
-          items: 
+          items:
             - name: Analytic Functions Overview
               href: analytic-functions-azure-stream-analytics.md
             - name: AnomalyDetection_SpikeAndDip
@@ -53,7 +54,7 @@
             - name: LAST
               href: last-azure-stream-analytics.md
         - name: Array Functions
-          items: 
+          items:
             - name: Array Functions Overview
               href: array-functions-stream-analytics.md
             - name: GetArrayLength
@@ -62,8 +63,20 @@
               href: getarrayelement-azure-stream-analytics.md
             - name: GetArrayElements
               href: getarrayelements-azure-stream-analytics.md
+        - name: Bitwise Operators
+          items:
+            - name: Bitwise Operators Overview
+              href: bitwise-operators-azure-stream-analytics.md
+            - name: Bitwise AND
+              href: bitwise-and-azure-stream-analytics.md
+            - name: Bitwise OR
+              href: bitwise-or-azure-stream-analytics.md
+            - name: Bitwise XOR
+              href: bitwise-xor-azure-stream-analytics.md
+            - name: Bitwise NOT
+              href: bitwise-not-azure-stream-analytics.md
         - name: Conversion Functions
-          items: 
+          items:
             - name: Conversion Functions Overview
               href: conversion-functions-azure-stream-analytics.md
             - name: CAST
@@ -73,7 +86,7 @@
             - name: TRY_CAST
               href: try-cast-azure-stream-analytics.md
         - name: Date and Time Functions
-          items: 
+          items:
             - name: Date and Time Functions Overview
               href: date-and-time-functions-azure-stream-analytics.md
             - name: DATEADD
@@ -93,7 +106,7 @@
             - name: YEAR
               href: year-azure-stream-analytics.md
         - name: GeoSpatial Functions
-          items: 
+          items:
             - name: GeoSpatial Functions Overview
               href: geospatial-functions.md
             - name: CreateLineString
@@ -111,13 +124,13 @@
             - name: ST_WITHIN
               href: st-within.md
         - name: Input Metadata Functions
-          items: 
+          items:
             - name: Input Metadata Functions Overview
               href: input-metadata-functions.md
             - name: GetMetadataPropertyValue
               href: getmetadatapropertyvalue.md
         - name: Mathematical Functions
-          items: 
+          items:
             - name: Mathematical Functions Overview
               href: mathematical-functions-azure-stream-analytics.md
             - name: ABS
@@ -139,7 +152,7 @@
             - name: SQRT
               href: sqrt-azure-stream-analytics.md
         - name: Record Functions
-          items: 
+          items:
             - name: Record Functions Overview
               href: record-functions-azure-stream-analytics.md
             - name: GetRecordProperties
@@ -147,29 +160,55 @@
             - name: GetRecordPropertyValue
               href: getrecordpropertyvalue-azure-stream-analytics.md
         - name: String Functions
-          items: 
+          items:
             - name: String Functions Overview
               href: string-functions-azure-stream-analytics.md
             - name: CHARINDEX
               href: charindex-azure-stream-analytics.md
             - name: CONCAT
               href: concat-azure-stream-analytics.md
+            - name: CONCAT_WS
+              href: concat-ws-azure-stream-analytics.md
+            - name: LEFT
+              href: left-azure-stream-analytics.md
             - name: LEN
               href: len-azure-stream-analytics.md
             - name: LOWER
               href: lower-azure-stream-analytics.md
+            - name: LTRIM
+              href: ltrim-azure-stream-analytics.md
+            - name: NCHAR
+              href: nchar-azure-stream-analytics.md
             - name: PATINDEX
               href: patindex-azure-stream-analytics.md
             - name: REGEXMATCH
               href: regexmatch-azure-stream-analytics.md
             - name: REPLACE
               href: replace-azure-stream-analytics.md
+            - name: REPLICATE
+              href: replicate-azure-stream-analytics.md
+            - name: REVERSE
+              href: reverse-azure-stream-analytics.md
+            - name: RIGHT
+              href: right-azure-stream-analytics.md
+            - name: RTRIM
+              href: rtrim-azure-stream-analytics.md
+            - name: SPACE
+              href: space-azure-stream-analytics.md
+            - name: STUFF
+              href: stuff-azure-stream-analytics.md
             - name: SUBSTRING
               href: substring-azure-stream-analytics.md
+            - name: TRANSLATE
+              href: translate-azure-stream-analytics.md
+            - name: TRIM
+              href: trim-azure-stream-analytics.md
+            - name: UNICODE
+              href: unicode-azure-stream-analytics.md
             - name: UPPER
               href: upper-azure-stream-analytics.md
         - name: Windowing Functions
-          items: 
+          items:
             - name: Windowing Functions Overview
               href: windowing-azure-stream-analytics.md
             - name: Hopping Window
@@ -185,15 +224,15 @@
             - name: Aggregate Windowing functions
               href: windows-azure-stream-analytics.md
     - name: Data Types
-      items: 
+      items:
         - name: Data Types Overview
           href: data-types-azure-stream-analytics.md
         - name: Parsing JSON and AVRO data
-          href: https://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json
+          href: /azure/stream-analytics/stream-analytics-parsing-json
           maintainContext: true
     - name: Query Language Elements
       expanded: true
-      items: 
+      items:
         - name: Query Language Elements Overview
           href: query-language-elements-azure-stream-analytics.md
         - name: APPLY
@@ -216,6 +255,8 @@
           href: join-azure-stream-analytics.md
         - name: MATCH_RECOGNIZE
           href: match-recognize-stream-analytics.md
+        - name: NULLIF
+          href: nullif-azure-stream-analytics.md
         - name: OVER
           href: over-azure-stream-analytics.md
         - name: Reference Data JOIN
@@ -229,7 +270,7 @@
         - name: WITH
           href: with-azure-stream-analytics.md
     - name: Time Management
-      items: 
+      items:
         - name: Time Management Overview
           href: time-management-azure-stream-analytics.md
         - name: System.Timestamp()

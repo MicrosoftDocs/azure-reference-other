@@ -1,19 +1,13 @@
 ---
-title: "DATEDIFF (Azure Stream Analytics) | Microsoft Docs"
+title: "DATEDIFF (Azure Stream Analytics)"
 description: "Returns the count (signed integer) of the specified datepart boundaries crossed between the specified startdate and enddate."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: e8f6ec67-f286-4fa5-8acf-ae7c179d8b19
-caps.latest.revision: 9
-ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: mamccrea
 ---
 # DATEDIFF (Azure Stream Analytics)
   Returns the count (signed integer) of the specified datepart boundaries crossed between the specified startdate and enddate.  
@@ -58,7 +52,7 @@ DATEDIFF ( datepart , startdate, enddate )
 ## Examples  
   
 ```SQL  
-SELECT DATEDIFF (minute, EntryTime, CAST(’2014-09-10 12:00:00’ AS datetime)) AS DiffTime  
+SELECT DATEDIFF (minute, EntryTime, CAST('2014-09-10 12:00:00' AS datetime)) AS DiffTime  
 FROM Input TIMESTAMP BY EntryTime  
 WHERE Toll > 5  
   

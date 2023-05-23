@@ -4,9 +4,9 @@ description: Reference for ContainerServiceLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # ContainerServiceLog
@@ -18,28 +18,31 @@ ms.date: 10/1/2020
 - Containers
 ## Solutions
 
+- AzureResources
 - ContainerInsights
 - Container Monitoring Solution
 ## Resource types
 
 - Kubernetes Services
+- Azure Arc Enabled Kubernetes
+- Azure Arc Provisioned Clusters
 
 
 
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Command|string||
-|Computer|string||
-|ContainerID|string||
-|Image|string||
-|ImageTag|string||
-|Repository|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime||
-|TimeOfCommand|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Command | string |  |
+| Computer | string |  |
+| ContainerID | string |  |
+| Image | string |  |
+| ImageTag | string |  |
+| Repository | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime |  |
+| TimeOfCommand | datetime |  |
+| Type | string | The name of the table |

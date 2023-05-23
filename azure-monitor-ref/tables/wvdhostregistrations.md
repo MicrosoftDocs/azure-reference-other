@@ -4,9 +4,9 @@ description: Reference for WVDHostRegistrations table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # WVDHostRegistrations
@@ -15,7 +15,7 @@ ms.date: 10/1/2020
 
 ## Categories
 
-- Windows Virtual Desktop
+- Azure Virtual Desktop
 ## Solutions
 
 - LogManagement
@@ -28,14 +28,15 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|CorrelationId|string|The activity Id.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SessionHostIPAddress|string|The IP address of the session host that was registered with the WVD service.|
-|SessionHostName|string|The name of the session host that was registered with the WVD service.|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of the event.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| CorrelationId | string | The activity Id. |
+| IsSessionHostPrivateLink | string | True if the session host side of this connection used a private link endpoint during orchestration. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SessionHostIPAddress | string | The IP address of the session host that was registered with the WVD service. |
+| SessionHostName | string | The name of the session host that was registered with the WVD service. |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of the event. |
+| Type | string | The name of the table |

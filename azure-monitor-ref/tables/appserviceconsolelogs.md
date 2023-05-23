@@ -4,9 +4,9 @@ description: Reference for AppServiceConsoleLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # AppServiceConsoleLogs
@@ -29,16 +29,17 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ContainerId|string|Application container id|
-|Host|string|Host where the application is running|
-|Level|string|Verbosity level of log|
-|OperationName|string|The name of the operation represented by this event.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultDescription|string|Log message description|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|Time when event is generated|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string | Log category name |
+| ContainerId | string | Application container id |
+| Host | string | Host where the application is running |
+| Level | string | Verbosity level of log |
+| OperationName | string | The name of the operation represented by this event. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultDescription | string | Log message description |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | Time when event is generated |
+| Type | string | The name of the table |

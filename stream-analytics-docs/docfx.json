@@ -35,11 +35,13 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "author": "ajetasin",
+      "ms.author": "ajetasi",
       "breadcrumb_path": "/stream-analytics-query/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/azure-reference-other",
-      "product_feedback_url": "https://feedback.azure.com/forums/270577-stream-analytics",
+      "product_feedback_url": "https://feedback.azure.com/d365community/forum/d12ec4e3-b825-ec11-b6e6-000d3a4f0f1c",
       "titleSuffix": "Stream Analytics Query",
       "uhfHeaderId": "azure"
     },

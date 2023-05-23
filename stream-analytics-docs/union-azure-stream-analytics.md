@@ -1,19 +1,13 @@
 ---
-title: "UNION (Azure Stream Analytics) | Microsoft Docs"
+title: "UNION (Azure Stream Analytics)"
 description: "Combines the results of two or more queries into a single result set that includes all the rows that belong to all queries in the union."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 4642814a-14d1-4331-bb87-e5865cd9ae1f
-caps.latest.revision: 7
-ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: mamccrea
 ---
 # UNION (Azure Stream Analytics)
   Combines the results of two or more queries into a single result set that includes all the rows that belong to all queries in the union. The UNION operation is different from using joins that combine columns from two tables.  
@@ -21,8 +15,8 @@ ms.author: mamccrea
  The following are basic rules for combining the result sets of two queries by using UNION:  
   
 -   The number and the order of the columns must be the same in all queries.  
-  
--   The data types must be compatible.  
+-   The data types must be compatible.
+-   Streams must have the same partition and partition count
   
  ## Syntax  
   
@@ -54,5 +48,21 @@ SELECT TollId, ExitTime AS Time, LicensePlate
 FROM Input2 TIMESTAMP BY ExitTime  
   
 ```  
-  
+If need be, streams can be [repartitioned](/azure/stream-analytics/repartition) to match (either in the same job as below, or another one to achieve better performance):
+
+```SQL
+WITH Input1_P as (
+SELECT * FROM Input1 PARTITION BY partitionId INTO 2
+),
+
+Input2_P as (
+SELET * FROM Input2 PARTITION BY partitionId INTO 2
+)
+
+SELECT TollId, EntryTime AS Time, LicensePlate   
+FROM Input1_P TIMESTAMP BY EntryTime
+UNION  
+SELECT TollId, ExitTime AS Time, LicensePlate   
+FROM Input2_P TIMESTAMP BY ExitTime
+```
   

@@ -1,19 +1,13 @@
 ---
-title: "DATEPART (Azure Stream Analytics) | Microsoft Docs"
+title: "DATEPART (Azure Stream Analytics)"
 description: "Returns an integer that represents the specified datepart of the specified date.  "
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: d8aa30a4-2cf4-4b4f-ac5c-8204a72abb7a
-caps.latest.revision: 8
-ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: mamccrea
 ---
 # DATEPART (Azure Stream Analytics)
   Returns an integer that represents the specified datepart of the specified date.  

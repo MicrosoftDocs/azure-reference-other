@@ -4,9 +4,9 @@ description: Reference for DeviceCleanup table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # DeviceCleanup
@@ -25,16 +25,16 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|DeviceType|string||
-|EventId|int||
-|EventName|string||
-|HealthServiceId|string||
-|ProviderId|string||
-|SerialNumber|string||
-|SourceSystem|string||
-|State|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| DeviceType | string |  |
+| EventId | int |  |
+| EventName | string |  |
+| HealthServiceId | string |  |
+| ProviderId | string |  |
+| SerialNumber | string |  |
+| SourceSystem | string |  |
+| State | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

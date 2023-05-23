@@ -4,9 +4,9 @@ description: Reference for SCOMAssessmentRecommendation table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # SCOMAssessmentRecommendation
@@ -18,6 +18,7 @@ ms.date: 10/1/2020
 - Workloads
 ## Solutions
 
+- AzureResources
 - System Center Operations Manager Health Check (Preview)
 - SCOMAssessmentPlus
 
@@ -26,27 +27,27 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActionArea|string||
-|ActionAreaId|string||
-|AffectedObjectName|string||
-|AffectedObjectType|string||
-|AssessmentId|string||
-|Computer|string||
-|CustomData|string||
-|DatabaseName|string||
-|Description|string||
-|FocusArea|string||
-|FocusAreaId|string||
-|ManagementGroupName|string||
-|Recommendation|string||
-|RecommendationId|string||
-|RecommendationResult|string||
-|RecommendationWeight|real||
-|Server|string||
-|SourceSystem|string||
-|SqlInstanceName|string||
-|Technology|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| ActionArea | string |  |
+| ActionAreaId | string |  |
+| AffectedObjectName | string |  |
+| AffectedObjectType | string |  |
+| AssessmentId | string |  |
+| Computer | string |  |
+| CustomData | string |  |
+| DatabaseName | string |  |
+| Description | string |  |
+| FocusArea | string |  |
+| FocusAreaId | string |  |
+| ManagementGroupName | string |  |
+| Recommendation | string |  |
+| RecommendationId | string |  |
+| RecommendationResult | string |  |
+| RecommendationWeight | real |  |
+| Server | string |  |
+| SourceSystem | string |  |
+| SqlInstanceName | string |  |
+| Technology | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

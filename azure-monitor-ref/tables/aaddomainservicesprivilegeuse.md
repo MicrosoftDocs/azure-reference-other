@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesPrivilegeUse table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # AADDomainServicesPrivilegeUse
@@ -29,22 +29,22 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string||
-|CorrelationId|string||
-|NewState|int||
-|OperationName|string||
-|ProcessId|string||
-|ProcessName|string||
-|RecordId|string||
-|ResourceId|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResourceManager|string||
-|ResultDescription|string||
-|ResultType|string||
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime||
-|TransactionId|string||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string |  |
+| CorrelationId | string |  |
+| NewState | int | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| OperationName | string |  |
+| ProcessId | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| ProcessName | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| RecordId | string | A unique identifier corresponding to this record. |
+| ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceManager | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| ResultDescription | string |  |
+| ResultType | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime |  |
+| TransactionId | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| Type | string | The name of the table |

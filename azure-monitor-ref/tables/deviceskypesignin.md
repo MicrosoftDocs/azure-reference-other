@@ -4,9 +4,9 @@ description: Reference for DeviceSkypeSignIn table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # DeviceSkypeSignIn
@@ -25,14 +25,14 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|EventId|int||
-|EventName|string||
-|HealthServiceId|string||
-|Opcode|int||
-|ProviderId|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| EventId | int |  |
+| EventName | string |  |
+| HealthServiceId | string |  |
+| Opcode | int |  |
+| ProviderId | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

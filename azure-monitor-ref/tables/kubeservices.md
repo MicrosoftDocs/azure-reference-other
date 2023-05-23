@@ -4,41 +4,44 @@ description: Reference for KubeServices table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # KubeServices
 
- Table that stores Kubernetes services information 
+ Kubernetes services and their properties
 
 ## Categories
 
 - Containers
 ## Solutions
 
+- AzureResources
 - ContainerInsights
 ## Resource types
 
 - Kubernetes Services
+- Azure Arc Enabled Kubernetes
+- Azure Arc Provisioned Clusters
 
 
 
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ClusterId|string|ID of the kubernetes cluster from which the event was sourced|
-|ClusterIp|string|Cluster IP address of the service|
-|ClusterName|string|ID of the kubernetes cluster from which the event was sourced|
-|Namespace|string|Kuberneets namespace for the service|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SelectorLabels|string|Selector labels for label based services|
-|ServiceName|string|Kubernetes Service name|
-|ServiceType|string|Kubernetes Service type [ClusterIP/NodePort/LoadBalancer/ExternalName]|
-|SourceSystem|string|Type of agent the data was collected from. |
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TimeGenerated|datetime|Date and time the record was created.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| ClusterId | string |  |
+| ClusterIp | string |  |
+| ClusterName | string |  |
+| Namespace | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SelectorLabels | string |  |
+| ServiceName | string |  |
+| ServiceType | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

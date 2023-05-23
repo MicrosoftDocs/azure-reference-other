@@ -1,35 +1,106 @@
 ---
-title: "String Functions (Azure Stream Analytics) | Microsoft Docs"
+title: "String Functions (Azure Stream Analytics)"
 description: "Lists the String functions supported by Azure Stream Analytics."
-applies_to: 
+applies_to:
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: e9b9bc6f-84b3-4eea-b193-d50951382a7a
-caps.latest.revision: 7
-ms.workload: data-services
 ms.date: 06/07/2019
-ms.author: mamccrea
 ---
+
 # String Functions (Azure Stream Analytics)
 
-Stream Analytics Query Language provides the following string functions:  
-  
-||||  
-|-|-|-|  
-|[LEN &#40;Azure Stream Analytics&#41;](len-azure-stream-analytics.md)|[CONCAT &#40;Azure Stream Analytics&#41;](concat-azure-stream-analytics.md)|[CHARINDEX &#40;Azure Stream Analytics&#41;](charindex-azure-stream-analytics.md)|  
-|[LOWER &#40;Azure Stream Analytics&#41;](lower-azure-stream-analytics.md)|[SUBSTRING &#40;Azure Stream Analytics&#41;](substring-azure-stream-analytics.md)|[PATINDEX &#40;Azure Stream Analytics&#41;](patindex-azure-stream-analytics.md)|  
-|[UPPER &#40;Azure Stream Analytics&#41;](upper-azure-stream-analytics.md)|[REPLACE &#40;Azure Stream Analytics&#41;](replace-azure-stream-analytics.md)|[REGEXMATCH &#40;Azure Stream Analytics&#41;](regexmatch-azure-stream-analytics.md)|  
-  
-## See Also  
- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)   
- [Aggregate Functions &#40;Azure Stream Analytics&#41;](aggregate-functions-azure-stream-analytics.md)   
- [Analytic Functions &#40;Azure Stream Analytics&#41;](analytic-functions-azure-stream-analytics.md)   
- [Array Functions &#40;Stream Analytics&#41;](array-functions-stream-analytics.md)   
- [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)   
- [Date and Time Functions &#40;Azure Stream Analytics&#41;](date-and-time-functions-azure-stream-analytics.md)   
- [Record Functions &#40;Azure Stream Analytics&#41;](record-functions-azure-stream-analytics.md)  
-  
-  
+Stream Analytics Query Language provides the following string functions:
+
+:::row:::
+    :::column:::
+        [CHARINDEX](charindex-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [CONCAT](concat-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [CONCAT_WS](concat-ws-azure-stream-analytics.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [LEFT](left-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [LEN](len-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [LOWER](lower-azure-stream-analytics.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [LTRIM](ltrim-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [NCHAR](nchar-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [PATINDEX](patindex-azure-stream-analytics.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [REGEXMATCH](regexmatch-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [REPLACE](replace-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [REPLICATE](replicate-azure-stream-analytics.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [REVERSE](reverse-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [RIGHT](right-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [RTRIM](rtrim-azure-stream-analytics.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [SPACE](space-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [STUFF](stuff-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [SUBSTRING](substring-azure-stream-analytics.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [TRANSLATE](translate-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [TRIM](trim-azure-stream-analytics.md)
+    :::column-end:::
+    :::column:::
+        [UNICODE](unicode-azure-stream-analytics.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [UPPER](upper-azure-stream-analytics.md)
+    :::column-end:::
+:::row-end:::
+
+## See Also
+
+- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)
+- [Aggregate Functions &#40;Azure Stream Analytics&#41;](aggregate-functions-azure-stream-analytics.md)
+- [Analytic Functions &#40;Azure Stream Analytics&#41;](analytic-functions-azure-stream-analytics.md)
+- [Array Functions &#40;Stream Analytics&#41;](array-functions-stream-analytics.md)
+- [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)
+- [Date and Time Functions &#40;Azure Stream Analytics&#41;](date-and-time-functions-azure-stream-analytics.md)
+- [Record Functions &#40;Azure Stream Analytics&#41;](record-functions-azure-stream-analytics.md)

@@ -1,14 +1,10 @@
 ---
-title: Snapshot Window (Azure Stream Analytics) | Microsoft Docs
-description: 
+title: Snapshot Window (Azure Stream Analytics)
+description: "Describes the Snapshot Window function supported by the Stream Analytics Query Language."
 applies_to:
   - "Azure"
-services: stream-analytics
-author: mamccrea
-ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.workload: data-services
 ms.date: 07/10/2020
 ---
 
@@ -16,7 +12,7 @@ ms.date: 07/10/2020
 
 Snapshot windows groups events that have the same timestamp. Unlike other windowing types, which require a specific window function (such as [SessionWindow()](session-window-azure-stream-analytics.md), you can apply a snapshot window by adding System.Timestamp() to the GROUP BY clause.
 
-The following diagram illustrates a stream with a seriesof events and how they are mapped into snapshot windows.
+The following diagram illustrates a stream with a series of events and how they are mapped into snapshot windows.
 
 ![Snapshot window diagram](./media/snapshot-window-azure-stream-analytics/snapshot.png)
 
@@ -38,13 +34,13 @@ The following example returns the count of tweets with the same topic type that 
 
 ```sql
 SELECT Topic, COUNT(*)
-FROM TwitterStream TIMESTAM BY CreatedAt
+FROM TwitterStream TIMESTAMP BY CreatedAt
 GROUP BY Topic, System.Timestamp()
 ```
 
 ### Tumbling window snapshot example
 
-It is not usual to expect input events to occur at exactly same time. It's more common to happen within an intermediate step of the query, especially after applying a different window function.
+A common usage for snapshot windows is to aggregate events after they have been grouped on a single timestamp via a preceding window function, like TumblingWindow below.
 
 The following example returns the count of tweets with the same topic type by the same user within 30 minute intervals:
 

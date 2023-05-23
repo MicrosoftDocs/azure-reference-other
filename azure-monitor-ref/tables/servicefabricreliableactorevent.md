@@ -4,9 +4,9 @@ description: Reference for ServiceFabricReliableActorEvent table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # ServiceFabricReliableActorEvent
@@ -25,41 +25,41 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActorId|string||
-|ActorIdKind|int||
-|ActorType|string||
-|ApplicationName|string||
-|ApplicationTypeName|string||
-|AzureDeploymentID|string||
-|ChannelName|string||
-|Computer|string||
-|CountOfWaitingMethodCalls|long||
-|EventId|int||
-|EventMessage|string||
-|EventSourceName|string||
-|Exception|string||
-|IsStateful|bool||
-|KeywordName|string||
-|Level|string||
-|MethodExecutionTimeTicks|long||
-|MethodName|string||
-|MethodSignature|string||
-|NodeId|string||
-|NodeName|string||
-|OpcodeName|string||
-|PartitionId|string||
-|Pid|int||
-|ProviderGuid|string||
-|ReplicaId|long||
-|ReplicaOrInstanceId|long||
-|Role|string||
-|SaveStateExecutionTimeTicks|long||
-|ServiceName|string||
-|ServiceTypeName|string||
-|SourceSystem|string||
-|TaskName|string||
-|Tid|int||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| ActorId | string |  |
+| ActorIdKind | int |  |
+| ActorType | string |  |
+| ApplicationName | string |  |
+| ApplicationTypeName | string |  |
+| AzureDeploymentID | string |  |
+| ChannelName | string |  |
+| Computer | string |  |
+| CountOfWaitingMethodCalls | long |  |
+| EventId | int |  |
+| EventMessage | string |  |
+| EventSourceName | string |  |
+| Exception | string |  |
+| IsStateful | bool |  |
+| KeywordName | string |  |
+| Level | string |  |
+| MethodExecutionTimeTicks | long |  |
+| MethodName | string |  |
+| MethodSignature | string |  |
+| NodeId | string |  |
+| NodeName | string |  |
+| OpcodeName | string |  |
+| PartitionId | string |  |
+| Pid | int |  |
+| ProviderGuid | string |  |
+| ReplicaId | long |  |
+| ReplicaOrInstanceId | long |  |
+| Role | string |  |
+| SaveStateExecutionTimeTicks | long |  |
+| ServiceName | string |  |
+| ServiceTypeName | string |  |
+| SourceSystem | string |  |
+| TaskName | string |  |
+| Tid | int |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

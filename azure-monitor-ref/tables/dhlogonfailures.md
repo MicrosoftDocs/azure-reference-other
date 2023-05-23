@@ -4,9 +4,9 @@ description: Reference for DHLogonFailures table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # DHLogonFailures
@@ -25,26 +25,26 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerID|string||
-|Country|string||
-|LogonStatus|string||
-|LogonSubStatus|string||
-|Manufacturer|string||
-|Model|string||
-|ModelFamily|string||
-|OSArchitecture|string||
-|OSBuildNumber|int||
-|OSEdition|string||
-|OSRevisionNumber|int||
-|OSVersion|string||
-|ProviderId|string||
-|ProviderName|string||
-|SignInFailureCount|long||
-|SignInFailureReason|string||
-|SignInUserError|string||
-|SuggestedSignInRemediation|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerID | string |  |
+| Country | string |  |
+| LogonStatus | string |  |
+| LogonSubStatus | string |  |
+| Manufacturer | string |  |
+| Model | string |  |
+| ModelFamily | string |  |
+| OSArchitecture | string |  |
+| OSBuildNumber | int |  |
+| OSEdition | string |  |
+| OSRevisionNumber | int |  |
+| OSVersion | string |  |
+| ProviderId | string |  |
+| ProviderName | string |  |
+| SignInFailureCount | long |  |
+| SignInFailureReason | string |  |
+| SignInUserError | string |  |
+| SuggestedSignInRemediation | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

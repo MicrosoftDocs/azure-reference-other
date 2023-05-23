@@ -4,9 +4,9 @@ description: Reference for DHDriverReliability table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # DHDriverReliability
@@ -25,16 +25,16 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerID|string||
-|DeviceLastSeenTime|datetime||
-|DriverKernelModeCrashCount|int||
-|DriverName|string||
-|DriverPercentCrashFreeDevicesForIndustry|real||
-|DriverVendor|string||
-|DriverVersion|string||
-|HardwareType|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerID | string |  |
+| DeviceLastSeenTime | datetime |  |
+| DriverKernelModeCrashCount | int |  |
+| DriverName | string |  |
+| DriverPercentCrashFreeDevicesForIndustry | real |  |
+| DriverVendor | string |  |
+| DriverVersion | string |  |
+| HardwareType | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

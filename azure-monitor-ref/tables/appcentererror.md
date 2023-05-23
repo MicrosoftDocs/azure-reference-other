@@ -4,9 +4,9 @@ description: Reference for AppCenterError table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # AppCenterError
@@ -22,28 +22,28 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Annotation|string||
-|CreatedAt|datetime||
-|ErrorClass|string||
-|ErrorFile|string||
-|ErrorGroupId|string||
-|ErrorId|string||
-|ErrorLine|int||
-|ErrorMethod|string||
-|ErrorReason|string||
-|ErrorType|string||
-|ExceptionType|string||
-|JailBreak|bool||
-|LastErrorAt|datetime||
-|Model|string||
-|Oem|string||
-|OsVersion|string||
-|SchemaType|string||
-|SourceSystem|string||
-|Status|string||
-|SymbolicatedAt|datetime||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UserString|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| Annotation | string |  |
+| CreatedAt | datetime |  |
+| ErrorClass | string |  |
+| ErrorFile | string |  |
+| ErrorGroupId | string |  |
+| ErrorId | string |  |
+| ErrorLine | int |  |
+| ErrorMethod | string |  |
+| ErrorReason | string |  |
+| ErrorType | string |  |
+| ExceptionType | string |  |
+| JailBreak | bool |  |
+| LastErrorAt | datetime |  |
+| Model | string |  |
+| Oem | string |  |
+| OsVersion | string |  |
+| SchemaType | string |  |
+| SourceSystem | string |  |
+| Status | string |  |
+| SymbolicatedAt | datetime |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UserString | string |  |

@@ -1,19 +1,13 @@
 ---
-title: "ISFIRST (Azure Stream Analytics) | Microsoft Docs"
+title: "ISFIRST (Azure Stream Analytics)"
 description: "Returns 1 if the event is the first event within a given duration, or 0 otherwise."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: e905fd1b-94df-44ad-822f-7c92dc6acfcc
-caps.latest.revision: 11
-ms.workload: data-services
 ms.date: 10/20/2017
-ms.author: mamccrea
 ---
 # ISFIRST (Azure Stream Analytics)
 
@@ -67,7 +61,9 @@ The WHEN clause is optional.
  bigint (either ‘1’ or ‘0’ representing ‘true’ or ‘false’ respectively)  
   
 ## General Remarks  
- ISFIRST is nondeterministic. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.  
+ISFIRST is nondeterministic. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.
+ 
+Applying ISFIRST on the result set of a [windowing function](windowing-azure-stream-analytics.md) may produce unexpected results. Windowing functions alter the timestamp of events, as every window operation outputs event at the end of the window. The current timestamp of an event can be accessed with [system.timestamp()](system-timestamp-stream-analytics.md), after a window operation it will differ from the original event time attribute. If ISFIRST can't be moved before the window operation, consider using [CollectTop](collecttop-azure-stream-analytics.md), ordering by the original event time.
   
 ## Examples  
  Indicate whether a sensor reading event is the first within 10 minute tumbling intervals:  

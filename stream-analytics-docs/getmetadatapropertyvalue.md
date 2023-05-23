@@ -1,17 +1,11 @@
 ---
-title: GetMetadataPropertyValue (Azure Stream Analytics) | Microsoft Docs
+title: GetMetadataPropertyValue (Azure Stream Analytics)
 description: Queries input data for specific properties.
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
-ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 7fca3d2c-2475-49e8-8c16-e268b65def22
-caps.latest.revision: 11
-ms.workload: data-services
-ms.date: 7/24/2020
+ms.date: 12/20/2022
 ---
 # GetMetadataPropertyValue (Azure Stream Analytics)
 
@@ -19,10 +13,10 @@ Queries input data for specific properties. There are three types of properties:
   
 ## Adapter metadata properties
 
-Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record. 
+Certain input-specific properties are accessible by the GetMetadataPropertyValue function. Additionally, all properties can be accessed as a single record.
 
 > [!NOTE]
-> At this time,this function cannot be tested on the Azure portal (it will return empty results). You can use Visual Studio tools for Stream Analytics to test this function in your query using [live data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-live-data-local-testing).
+> At this time, this function cannot be tested on the Azure portal (it will return empty results). You can use the ASA extension for Visual Studio Code to test this function in your query using [live data](/azure/stream-analytics/visual-studio-code-local-run-live-input).
 
 ##  Default metadata properties for Event Hubs
 * EventEnqueuedUtcTime
@@ -52,6 +46,8 @@ When using IoT Hub routing feature to Event Hubs endpoints, metadata properties 
 
 Example:
 `SELECT GetMetadataPropertyValue(ehInput, '[EventHub].[IoTConnectionDeviceId]') AS myIoTDeviceId FROM ehInput`
+
+Properties added via [IoT Hub message enrichment](/azure/iot-hub/iot-hub-message-enrichments-overview) can be retrieved via [user properties](#user-properties).
 
 ## Default metadata properties for IoT Hub
 * ConnectionDeviceId
@@ -85,7 +81,7 @@ Example
 
 A custom user property called SenderClientId set on incoming EventHub/IoT/Blob messages is made accessible using GetMetadataPropertyValue, as shown in the example below.
 
-Additionally, twin properties and enriched properties added using [IoT Hub message enrichment](https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview), can also be retrieved using GetMetadataPropertyValue.
+Additionally, twin properties and enriched properties added using [IoT Hub message enrichment](/azure/iot-hub/iot-hub-message-enrichments-overview), can also be retrieved using GetMetadataPropertyValue.
 
 ### Examples
 
@@ -128,4 +124,10 @@ GetMetadataPropertyValue has the following limitations of usage:
 
 * The alias you give your Metadata Property Value will be lowercase regardless of the casing used in your query. For example, `SELECT GetMetadataPropertyValue(ehInput, 'EventId') AS eventPrimaryKey` outputs as `eventprimarykey`. To preserve casing, use compatibility level 1.2.
 
-* This function doesn't work in the Azure portal preview results pane or in Visual Studio or VS Code local query testing. It works only when the job is running in the public cloud.
+* This function doesn't work in the Azure portal preview results pane.
+
+* Rename the origial payload fields before the data arrives to ASA. The payload field name will be overwritten if it is the same as system metadata field name. 
+
+* MessageId and CorrelationId of EventHub's event metadata are not supported.
+
+

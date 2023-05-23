@@ -1,19 +1,13 @@
 ---
-title: "Percentile_Cont (Azure Stream Analytics) | Microsoft Docs"
+title: "Percentile_Cont (Azure Stream Analytics)"
 description: "Calculates a percentile based on a continuous distribution of the entire data set."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 7f4d2984-d4bc-4560-abd9-2d20cfe9104c
-caps.latest.revision: 2
-ms.workload: data-services
 ms.date: 09/08/2016
-ms.author: mamccrea
 ---
 # Percentile_Cont (Azure Stream Analytics)
 Calculates a percentile based on a continuous distribution of the entire data set. The result is interpolated and might not be equal to any of the specific values from the input set. 
@@ -32,7 +26,7 @@ The percentile to compute. The value must range between 0 and 1.
 
  **OVER ( ORDER BY order_by_expression [ ASC | DESC] )**
 
-Specifies a list of numeric values to sort and compute the percentile over. Only one order_by_expression is allowed. The expression must be of BIGINT, FLOAT, or NVARCHAR(MAX) type and evaluate to a numeric value. The default sort order is ascending.
+Specifies a list of numeric values to sort and compute the percentile over. Only one order_by_expression is allowed. The expression must be of BIGINT or FLOAT. The default sort order is ascending.
 
 ## Return Types  
 

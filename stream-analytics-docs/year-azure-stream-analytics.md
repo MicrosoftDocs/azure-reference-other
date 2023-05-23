@@ -1,19 +1,13 @@
 ---
-title: "YEAR (Azure Stream Analytics) | Microsoft Docs"
+title: "YEAR (Azure Stream Analytics)"
 description: "Returns an integer that represents the year of the specified date."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: b4015fdf-9d76-4688-b326-216493adcb47
-caps.latest.revision: 6
-ms.workload: data-services
 ms.date: 04/22/2016
-ms.author: mamccrea
 ---
 # YEAR (Azure Stream Analytics)
   Returns an integer that represents the year of the specified date  

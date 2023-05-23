@@ -4,9 +4,9 @@ description: Reference for SecurityAlert table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # SecurityAlert
@@ -22,6 +22,9 @@ ms.date: 10/1/2020
 - Security and Audit
 - SecurityCenter
 - SecurityCenterFree
+- Microsoft Sentinel
+## Resource types
+
 - Azure Sentinel
 
 
@@ -29,32 +32,37 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AlertLink|string||
-|AlertName|string||
-|AlertSeverity|string||
-|ConfidenceLevel|string||
-|ConfidenceScore|real||
-|Description|string||
-|DisplayName|string||
-|EndTime|datetime||
-|Entities|string||
-|ExtendedLinks|string||
-|ExtendedProperties|string||
-|IsIncident|bool||
-|ProcessingEndTime|datetime||
-|ProductComponentName|string||
-|ProductName|string||
-|ProviderName|string||
-|RemediationSteps|string||
-|ResourceId|string||
-|SourceComputerId|string||
-|StartTime|datetime||
-|SystemAlertId|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|VendorName|string||
-|VendorOriginalId|string||
-|WorkspaceResourceGroup|string||
-|WorkspaceSubscriptionId|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AlertLink | string |  |
+| AlertName | string |  |
+| AlertSeverity | string |  |
+| AlertType | string |  |
+| CompromisedEntity | string |  |
+| ConfidenceLevel | string |  |
+| ConfidenceScore | real |  |
+| Description | string |  |
+| DisplayName | string |  |
+| EndTime | datetime |  |
+| Entities | string |  |
+| ExtendedLinks | string |  |
+| ExtendedProperties | string |  |
+| IsIncident | bool |  |
+| ProcessingEndTime | datetime |  |
+| ProductComponentName | string |  |
+| ProductName | string |  |
+| ProviderName | string |  |
+| RemediationSteps | string |  |
+| ResourceId | string |  |
+| SourceComputerId | string |  |
+| StartTime | datetime |  |
+| Status | string |  |
+| SystemAlertId | string |  |
+| Tactics | string |  |
+| Techniques | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| VendorName | string |  |
+| VendorOriginalId | string |  |
+| WorkspaceResourceGroup | string |  |
+| WorkspaceSubscriptionId | string |  |

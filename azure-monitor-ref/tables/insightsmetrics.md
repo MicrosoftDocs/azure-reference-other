@@ -4,14 +4,14 @@ description: Reference for InsightsMetrics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # InsightsMetrics
 
- Table that stores metrics. 'Perf' table also stores many metrics and over time they all will converge to InsightsMetrics for Azure Monitor Solutions 
+ 
 
 ## Categories
 
@@ -20,15 +20,23 @@ ms.date: 10/1/2020
 - Azure Resources
 ## Solutions
 
+- AzureResources
 - ContainerInsights
 - InfrastructureInsights
+- LogManagement
 - Service Map
 - Azure Monitor for VMs
 ## Resource types
 
-- Virtual machines
-- Virtual Machine Scale Sets
 - Kubernetes Services
+- Workload Monitoring of Azure Monitor Insights
+- Virtual machines
+- VMware
+- Azure Stack HCI
+- System Center Virtual Machine Manager
+- Virtual Machine Scale Sets
+- Azure Arc Enabled Kubernetes
+- Azure Arc Provisioned Clusters
 - IoT Hub
 
 
@@ -36,17 +44,18 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AgentId|string|Unique ID of the agent that sourced the metric instance|
-|Computer|string|Computer name/Node name that sourced the metric instance|
-|Name|string|Name of the metric|
-|Namespace|string|Name space/Category of the metric. Ex;- 'container.azm.ms/disk' |
-|Origin|string|Source of the metric. Ex;- 'container.azm.ms/telegraf'|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SourceSystem|string|Type of agent the data was collected from. Ex;- 'Insights' |
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|Tags|string|Dimensions of the metric in json|
-|TimeGenerated|datetime|Date and time the record was created.|
-|Type|string|The name of the table|
-|Val|real|Value of the metric|
+| Column | Type | Description |
+| --- | --- | --- |
+| AgentId | string |  |
+| Computer | string |  |
+| Name | string |  |
+| Namespace | string |  |
+| Origin | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Tags | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| Val | real |  |
+| Value | string |  |

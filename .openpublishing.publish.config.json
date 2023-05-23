@@ -15,9 +15,37 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "entra",
+      "build_source_folder": "entra",
+      "build_output_subfolder": "entra",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "kusto",
       "build_source_folder": "kusto",
       "build_output_subfolder": "kusto",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "quantum",
+      "build_source_folder": "quantum",
+      "build_output_subfolder": "quantum",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -45,21 +73,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "stream-analytics-msdn-redirects",
-      "build_source_folder": "stream-analytics-msdn-redirects",
-      "build_output_subfolder": "stream-analytics-msdn-redirects",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "op"
-    },
-    {
       "docset_name": "studio-module-reference",
       "build_source_folder": "studio-module-reference",
       "build_output_subfolder": "studio-module-reference",
@@ -73,22 +86,6 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "u-sql",
-      "build_source_folder": "u-sql",
-      "build_output_subfolder": "u-sql",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "op",
       "template_folder": "_themes"
     },
     {
@@ -109,21 +106,20 @@
   "notification_subscribers": [],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-reference-other",
-  "git_repository_branch_open_to_public_contributors": "master",
+  "git_repository_branch_open_to_public_contributors": "main",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
@@ -132,7 +128,7 @@
       "Publish",
       "Pdf"
     ],
-    "master": [
+    "main": [
       "Publish",
       "PDF"
     ]
@@ -143,7 +139,6 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "docs_build_engine": {
-    "name": "docfx_v2"
-  }
+  "docs_build_engine": {},
+  "contribution_branch_mappings": {}
 }

@@ -4,9 +4,9 @@ description: Reference for UAProposedActionPlan table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # UAProposedActionPlan
@@ -25,19 +25,19 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ComputersUnblocked|int||
-|CumulativeUnblocked|int||
-|CumulativeUnblockedPct|real||
-|ItemHardwareID|string||
-|ItemLanguage|string||
-|ItemName|string||
-|ItemRank|int||
-|ItemType|string||
-|ItemVendor|string||
-|ItemVersion|string||
-|SourceSystem|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UpgradeDecision|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| ComputersUnblocked | int |  |
+| CumulativeUnblocked | int |  |
+| CumulativeUnblockedPct | real |  |
+| ItemHardwareID | string |  |
+| ItemLanguage | string |  |
+| ItemName | string |  |
+| ItemRank | int |  |
+| ItemType | string |  |
+| ItemVendor | string |  |
+| ItemVersion | string |  |
+| SourceSystem | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UpgradeDecision | string |  |

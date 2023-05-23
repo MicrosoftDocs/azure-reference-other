@@ -4,9 +4,9 @@ description: Reference for ContainerRegistryRepositoryEvents table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # ContainerRegistryRepositoryEvents
@@ -28,29 +28,29 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ArtifactType|string||
-|CallerIpAddress|string||
-|Category|string||
-|CorrelationId|string||
-|Digest|string||
-|DurationMs|string||
-|Identity|string||
-|LoginServer|string||
-|MediaType|string||
-|OperationName|string||
-|Region|string||
-|Repository|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResultDescription|string||
-|ResultType|string||
-|Size|int||
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|Tag|string||
-|TenantId|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UserAgent|string||
-|UserTenantId|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| ArtifactType | string |  |
+| CallerIpAddress | string |  |
+| Category | string |  |
+| CorrelationId | string |  |
+| Digest | string |  |
+| DurationMs | string |  |
+| Identity | string |  |
+| LoginServer | string |  |
+| MediaType | string |  |
+| OperationName | string |  |
+| Region | string |  |
+| Repository | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultDescription | string |  |
+| ResultType | string |  |
+| Size | int |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Tag | string |  |
+| TenantId | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UserAgent | string |  |
+| UserTenantId | string |  |

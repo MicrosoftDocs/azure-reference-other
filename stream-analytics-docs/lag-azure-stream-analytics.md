@@ -1,19 +1,13 @@
 ---
-title: "LAG (Azure Stream Analytics) | Microsoft Docs"
+title: "LAG (Azure Stream Analytics)"
 description: "The LAG analytic operator allows one to look up the “previous” event in an event stream, within certain constraints."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 37ff8d85-b679-430a-bab6-6f8f313e7282
-caps.latest.revision: 13
-ms.workload: data-services
 ms.date: 12/03/2017
-ms.author: mamccrea
 ---
 # LAG (Azure Stream Analytics)
 The LAG analytic operator allows one to look up a “previous” event in an event stream, within certain constraints. It is very useful for computing the rate of growth of a variable, detecting when a variable crosses a threshold, or when a condition starts or stops being true. 
@@ -78,8 +72,10 @@ LAG(reading) OVER (PARTITION BY sensorId LIMIT DURATION(hour, 1))
  The data type of the specified scalar_expression. NULL is returned if scalar_expression  
   
 ## General Remarks  
- LAG is nondeterministic. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.  
-  
+LAG is nondeterministic. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.  
+
+Applying LAG on the result set of a [windowing function](windowing-azure-stream-analytics.md) may produce unexpected results. Windowing functions alter the timestamp of events, as every window operation outputs event at the end of the window. The current timestamp of an event can be accessed with [system.timestamp()](system-timestamp-stream-analytics.md), after a window operation it will differ from the original event time attribute. If LAG can't be moved before the window operation, consider using [CollectTop](collecttop-azure-stream-analytics.md), ordering by the original event time.
+
 ## Examples  
  Compute the rate of growth, per sensor:  
   

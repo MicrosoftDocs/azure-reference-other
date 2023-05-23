@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: bwren
 author: bwren
-ms.date: 10/1/2020
+ms.date: 6/1/2021
 ---
 
 # MAApplication
 
- 
+[!INCLUDE [Note on Desktop Analytics table not intended for direct query](../../includes/azure-monitor-reference-ma-tables.md)]
 
 ## Categories
 
@@ -24,6 +24,7 @@ ms.date: 10/1/2020
 
 
 ## Columns
+
 
 |Column|Type|Description|
 |---|---|---|
@@ -44,4 +45,4 @@ ms.date: 10/1/2020
 |TestPlan|string||
 |TimeGenerated|datetime||
 |TotalInstalls|int||
-|Type|string|The name of the table|
+|Type|string||

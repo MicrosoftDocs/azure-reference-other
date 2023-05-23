@@ -1,17 +1,11 @@
 ---
-title: CreatePolygon (Azure Stream Analytics) | Microsoft Docs
+title: CreatePolygon (Azure Stream Analytics)
 description: Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions.
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
-ms.author: mamccrea
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: dea81560-3db1-49d9-bf56-736d81948944
-caps.latest.revision: 4
-ms.workload: data-services
 ms.date: 03/22/2017
 ---
 # CreatePolygon (Azure Stream Analytics)

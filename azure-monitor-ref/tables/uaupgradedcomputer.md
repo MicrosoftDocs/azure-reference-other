@@ -4,9 +4,9 @@ description: Reference for UAUpgradedComputer table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # UAUpgradedComputer
@@ -25,29 +25,29 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Computer|string||
-|ComputerID|string||
-|ConfigMgrClientID|string||
-|DeploymentError|string||
-|DeploymentErrorDetails|string||
-|DeploymentStatus|string||
-|HoursToUninstall|int||
-|LastScan|datetime||
-|Manufacturer|string||
-|Model|string||
-|OriginBuild|string||
-|OriginOSVersion|string||
-|OSArchitecture|string||
-|OSBuild|string||
-|OSEdition|string||
-|OSVersion|string||
-|SourceSystem|string||
-|TargetBuild|string||
-|TargetOSVersion|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UninstallComment|string||
-|UninstallReason|string||
-|UserAction|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| Computer | string |  |
+| ComputerID | string |  |
+| ConfigMgrClientID | string |  |
+| DeploymentError | string |  |
+| DeploymentErrorDetails | string |  |
+| DeploymentStatus | string |  |
+| HoursToUninstall | int |  |
+| LastScan | datetime |  |
+| Manufacturer | string |  |
+| Model | string |  |
+| OriginBuild | string |  |
+| OriginOSVersion | string |  |
+| OSArchitecture | string |  |
+| OSBuild | string |  |
+| OSEdition | string |  |
+| OSVersion | string |  |
+| SourceSystem | string |  |
+| TargetBuild | string |  |
+| TargetOSVersion | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UninstallComment | string |  |
+| UninstallReason | string |  |
+| UserAction | string |  |

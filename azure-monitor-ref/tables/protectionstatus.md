@@ -4,9 +4,9 @@ description: Reference for ProtectionStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # ProtectionStatus
@@ -25,6 +25,9 @@ ms.date: 10/1/2020
 ## Resource types
 
 - Virtual machines
+- VMware
+- Azure Stack HCI
+- System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 
 
@@ -32,36 +35,37 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AMProductVersion|string||
-|Computer|string||
-|ComputerEnvironment|string||
-|ComputerIP_Hidden|string||
-|DetectionId|string||
-|DeviceName|string||
-|ManagementGroupName|string||
-|ProtectionStatus|string||
-|ProtectionStatusDetails|string||
-|ProtectionStatusRank|int||
-|Resource|string||
-|ResourceGroup|string||
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ResourceId|string||
-|ResourceProvider|string||
-|ResourceType|string||
-|ScanDate|datetime||
-|SignatureVersion|string||
-|SourceComputerId|string||
-|SourceSystem|string||
-|SubscriptionId|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|Threat|string||
-|ThreatStatus|string||
-|ThreatStatusDetails|string||
-|ThreatStatusRank|int||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|TypeofProtection|string||
-|VMUUID|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| AMProductVersion | string |  |
+| Computer | string |  |
+| ComputerEnvironment | string |  |
+| ComputerIP_Hidden | string |  |
+| DetectionId | string |  |
+| DeviceName | string |  |
+| ManagementGroupName | string |  |
+| OSName | string |  |
+| ProtectionStatus | string |  |
+| ProtectionStatusDetails | string |  |
+| ProtectionStatusRank | int |  |
+| Resource | string |  |
+| ResourceGroup | string |  |
+| ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceProvider | string |  |
+| ResourceType | string |  |
+| ScanDate | datetime |  |
+| SignatureVersion | string |  |
+| SourceComputerId | string |  |
+| SourceSystem | string |  |
+| SubscriptionId | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| Threat | string |  |
+| ThreatStatus | string |  |
+| ThreatStatusDetails | string |  |
+| ThreatStatusRank | int |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| TypeofProtection | string |  |
+| VMUUID | string |  |

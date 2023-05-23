@@ -4,9 +4,9 @@ description: Reference for SCCMAssessmentRecommendation table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # SCCMAssessmentRecommendation
@@ -18,6 +18,7 @@ ms.date: 10/1/2020
 - Workloads
 ## Solutions
 
+- AzureResources
 - SCCMAssessmentPlus
 
 
@@ -25,25 +26,25 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActionArea|string||
-|ActionAreaId|string||
-|AffectedObjectName|string||
-|AffectedObjectType|string||
-|AssessmentId|string||
-|Computer|string||
-|CustomData|string||
-|Description|string||
-|FocusArea|string||
-|FocusAreaId|string||
-|Recommendation|string||
-|RecommendationId|string||
-|RecommendationResult|string||
-|RecommendationWeight|real||
-|SiteCode|string||
-|SiteServer|string||
-|SourceSystem|string||
-|Technology|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| ActionArea | string |  |
+| ActionAreaId | string |  |
+| AffectedObjectName | string |  |
+| AffectedObjectType | string |  |
+| AssessmentId | string |  |
+| Computer | string |  |
+| CustomData | string |  |
+| Description | string |  |
+| FocusArea | string |  |
+| FocusAreaId | string |  |
+| Recommendation | string |  |
+| RecommendationId | string |  |
+| RecommendationResult | string |  |
+| RecommendationWeight | real |  |
+| SiteCode | string |  |
+| SiteServer | string |  |
+| SourceSystem | string |  |
+| Technology | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

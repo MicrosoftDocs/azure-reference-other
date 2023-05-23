@@ -4,9 +4,9 @@ description: Reference for AutoscaleScaleActionsLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # AutoscaleScaleActionsLog
@@ -30,23 +30,25 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string||
-|CorrelationId|string||
-|CreatedAsyncScaleActionJob|bool||
-|CreatedAsyncScaleActionJobId|string||
-|CurrentInstanceCount|int||
-|NewInstanceCount|int||
-|OperationName|string||
-|ResourceId|string||
-|ResultDescription|string||
-|ResultType|string||
-|ScaleActionMessage|string||
-|ScaleActionOperationId|string||
-|ScaleActionOperationStatus|string||
-|ScaleDirection|string||
-|SourceSystem|string||
-|TargetResourceId|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string |  |
+| CorrelationId | string |  |
+| CreatedAsyncScaleActionJob | bool |  |
+| CreatedAsyncScaleActionJobId | string |  |
+| CurrentInstanceCount | int |  |
+| NewInstanceCount | int |  |
+| OperationName | string |  |
+| ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultDescription | string |  |
+| ResultType | string |  |
+| ScaleActionMessage | string |  |
+| ScaleActionOperationId | string |  |
+| ScaleActionOperationStatus | string |  |
+| ScaleDirection | string |  |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TargetResourceId | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

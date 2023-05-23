@@ -4,9 +4,9 @@ description: Reference for ExchangeOnlineAssessmentRecommendation table in Azure
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # ExchangeOnlineAssessmentRecommendation
@@ -18,6 +18,7 @@ ms.date: 10/1/2020
 - Workloads
 ## Solutions
 
+- AzureResources
 - ExchangeOnlineAssessment
 
 
@@ -25,27 +26,27 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ActionArea|string|The segment in which action is to be performed|
-|ActionAreaId|string|ID generated for Action Area|
-|AffectedObjectName|string|Name of the affected object|
-|AffectedObjectType|string|Type of object which is affected|
-|AssessmentId|string|ID of the assessment|
-|Computer|string|The machine from which data is uploaded|
-|CustomData|string||
-|Description|string|Description of the recommendation|
-|Domain|string|Domain of the system|
-|ExchangeOrganization|string||
-|FocusArea|string|Area to be focussed on|
-|FocusAreaId|string|ID of the Focus Area|
-|O365TenantId|string|ID of O365 Tenant|
-|Recommendation|string|Generated recommendation|
-|RecommendationId|string|ID of the recommendation generated|
-|RecommendationResult|string|Result of the recommendation generated|
-|RecommendationWeight|real|Weight of recommendation|
-|SourceSystem|string||
-|Technology|string||
-|TenantName|string|Name of the Tenant|
-|TimeGenerated|datetime|Date and time the record was created.|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| ActionArea | string | The segment in which action is to be performed |
+| ActionAreaId | string | ID generated for Action Area |
+| AffectedObjectName | string | Name of the affected object |
+| AffectedObjectType | string | Type of object which is affected |
+| AssessmentId | string | ID of the assessment |
+| Computer | string | The machine from which data is uploaded |
+| CustomData | string |  |
+| Description | string | Description of the recommendation |
+| Domain | string | Domain of the system |
+| ExchangeOrganization | string |  |
+| FocusArea | string | Area to be focussed on |
+| FocusAreaId | string | ID of the Focus Area |
+| O365TenantId | string | ID of O365 Tenant |
+| Recommendation | string | Generated recommendation |
+| RecommendationId | string | ID of the recommendation generated |
+| RecommendationResult | string | Result of the recommendation generated |
+| RecommendationWeight | real | Weight of recommendation |
+| SourceSystem | string |  |
+| Technology | string |  |
+| TenantName | string | Name of the Tenant |
+| TimeGenerated | datetime | Date and time the record was created. |
+| Type | string | The name of the table |

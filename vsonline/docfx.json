@@ -39,7 +39,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/visualstudio/online/breadcrumb/toc.json",
+      "breadcrumb_path": "/visualstudio/online/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },

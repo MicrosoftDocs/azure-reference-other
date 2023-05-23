@@ -1,31 +1,26 @@
 ---
-title: Session Window (Azure Stream Analytics) | Microsoft Docs
-description: When using a sliding window, the system is asked to logically consider all possible windows of a given length.
+title: Session Window (Azure Stream Analytics)
+description: Learn about Session windows in Azure Stream Analytics.
 applies_to:
   - "Azure"
-services: stream-analytics
-author: mamccrea
-
 ms.service: stream-analytics
 ms.topic: reference
-ms.workload: data-services
 ms.date: 06/21/2019
-ms.author: mamccrea
 ---
 # Session window (Azure Stream Analytics)
 Session windows group events that arrive at similar times, filtering out periods of time where there is no data. Session window function has three main parameters: timeout, maximum duration, and partitioning key (optional). 
 
 The following diagram illustrates a stream with a series of events and how they are mapped into session windows of 5 minutes timeout, and maximum duration of 10 minutes.
 
- ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window-azure-stream-analytics/streamanalytics-sessionwindow.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
+ ![Stream Analytics session window](media/session-window-azure-stream-analytics/stream-analytics-window-functions-session-intro.png)
 
 A session window begins when the first event occurs. If another event occurs within the specified timeout from the last ingested event, then the window extends to include the new event. Otherwise if no events occur within the timeout, then the window is closed at the timeout.
 
-If events keep occurring within the specified timeout, the session window will keep extending until maximum duration is reached. Please note that the maximum duration checking intervals are set to be the same size as the specified max duration. For example, if the max duration is 10, then the checks on if the window exceed maximum duration will happen at t = 0, 10, 20, 30, etc.
+If events keep occurring within the specified timeout, the session window will keep extending until maximum duration is reached. Please note that the maximum duration checking intervals are set to be the same size as the specified max duration. For example, if the max duration is 10, then the checks on if the window exceed maximum duration will happen at t = 0, 10, 20, 30, etc. That means that the actual duration of a session window could then be up to twice maxDuration.
 
 Thus mathematically, our session window ends if the following condition is satisfied:
 
- ![Stream Analytics session window 5 mins timeout & 10 mins maximum](media/session-window-azure-stream-analytics/streamanalytics-sessionwindow_endconditions.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
+ ![Session window ending conditions](media/session-window-azure-stream-analytics/streamanalytics-sessionwindow_endconditions.png "Stream Analytics session window 5 mins timeout & 10 mins maximum")
 
 When a partition key is provided, the events are grouped together by the key and session window is applied to each group independently. This is useful for cases where you need different session windows for different users or devices.
 

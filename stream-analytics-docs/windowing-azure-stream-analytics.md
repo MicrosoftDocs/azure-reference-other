@@ -1,16 +1,11 @@
 ---
-title: Windowing (Azure Stream Analytics) | Microsoft Docs
+title: Windowing (Azure Stream Analytics)
 description: This topic describes windowing functions. Includes the types of windows that are supported, and explains how you can use windows with various operators.
 applies_to:
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 5b46b0df-c441-4729-be82-9c000130fdbb
-ms.workload: data-services
 ms.date: 06/07/2019
-ms.author: mamccrea
 ---
 # Windowing functions (Azure Stream Analytics)
 
@@ -23,7 +18,9 @@ A window contains event data along a timeline and enables you to perform various
    ![Stream Analytics query language tumbling window](media/windowing-azure-stream-analytics/streamanalytics-tumblingwindow.png)
 
 
-Every window operation outputs event at the end of the window. The windows of Azure Stream Analytics are opened at the window start time and closed at the window end time. For example, if you have a 5 minute window from 12:00 AM to 12:05 AM all events with timestamp greater than 12:00 AM  and up to timestamp 12:05 AM inclusive will be included within this window. The output of the window will be a single event based on the aggregate function used with a timestamp equal to the window end time.  The timestamp of the output event of the window can be projected in the SELECT statement using the System.Timestamp() property using an alias. Every window automatically aligns itself to the zeroth hour. For example, a 5 minute tumbling window will align itself to (12:00-12:05] , (12:05-12:10], ..., and so on.
+**Every window operation outputs event at the end of the window**. The windows of Azure Stream Analytics are opened at the window start time and closed at the window end time. For example, if you have a 5 minute window from 12:00 AM to 12:05 AM all events with timestamp greater than 12:00 AM  and up to timestamp 12:05 AM inclusive will be included within this window. The output of the window will be a single event based on the aggregate function used with a timestamp equal to the window end time.  The timestamp of the output event of the window can be projected in the SELECT statement using the System.Timestamp() property using an alias. Every window automatically aligns itself to the zeroth hour. For example, a 5 minute tumbling window will align itself to (12:00-12:05] , (12:05-12:10], ..., and so on.
+
+After a window operation, the timestamp of an event will differ from the original event time attribute (either the [arrival time](/azure/stream-analytics/stream-analytics-out-of-order-and-late-events) or the column used with [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md)). The current, updated timestamp of an event can always be accessed with [system.timestamp()](system-timestamp-stream-analytics.md).
 
 > [!NOTE]
 > All windows should be used in a GROUP BY clause.

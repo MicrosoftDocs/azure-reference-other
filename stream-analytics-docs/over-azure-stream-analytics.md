@@ -3,8 +3,6 @@ title: "OVER (Azure Stream Analytics)"
 description: "Defines the grouping of rows before an associated aggregate or analytic function is applied."
 applies_to: 
   - "Azure"
-author: mamccrea
-ms.author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
 ms.date: 07/30/2019
@@ -35,7 +33,7 @@ OVER ([<PARTITION BY clause>] <LIMIT DURATION clause> [<WHEN clause>])
 ```  
   
 ## Arguments  
- **\<PARTITON BY clause>**  
+ **\<PARTITION BY clause>**  
 
 Specifies that only the rows with the same \<partition_key> will be considered for the aggregate or analytic function.
   
@@ -47,6 +45,10 @@ Specifies how much history from the current row is included in the group. See [D
 
 Specifies the boolean condition for the rows to be included in the group.
   
+## General Remarks  
+
+Applying an aggregate or analytic function with OVER on the result set of a [windowing function](windowing-azure-stream-analytics.md) may produce unexpected results. Windowing functions alter the timestamp of events, as every window operation outputs event at the end of the window. The current timestamp of an event can be accessed with [system.timestamp()](system-timestamp-stream-analytics.md), after a window operation it will differ from the original event time attribute.
+
 ## Examples
 
 Compute the average temperature over the last 5 minutes, per sensor:

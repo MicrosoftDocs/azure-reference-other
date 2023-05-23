@@ -4,9 +4,9 @@ description: Reference for BaiClusterNodeEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # BaiClusterNodeEvent
@@ -28,29 +28,29 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|ClusterCreationTime|string||
-|ClusterName|string||
-|InternalOperationName|string||
-|NodeAllocationTime|datetime||
-|NodeBootTime|datetime||
-|NodeId|string||
-|Offer|string||
-|OperationName|string||
-|Publisher|string||
-|ResizeEndTime|datetime||
-|ResizeStartTime|datetime||
-|ResultSignature|string||
-|Sku|string||
-|SourceSystem|string||
-|StartTaskEndTime|datetime||
-|StartTaskStartTime|datetime||
-|TenantId|string||
-|TimeGenerated|datetime||
-|TotalE2ETimeInSeconds|string||
-|Type|string|The name of the table|
-|Version|string||
-|VmFamilyName|string||
-|VmPriority|string||
-|VmSize|string||
+| Column | Type | Description |
+| --- | --- | --- |
+| ClusterCreationTime | string |  |
+| ClusterName | string |  |
+| InternalOperationName | string |  |
+| NodeAllocationTime | datetime |  |
+| NodeBootTime | datetime |  |
+| NodeId | string |  |
+| Offer | string |  |
+| OperationName | string |  |
+| Publisher | string |  |
+| ResizeEndTime | datetime |  |
+| ResizeStartTime | datetime |  |
+| ResultSignature | string |  |
+| Sku | string |  |
+| SourceSystem | string |  |
+| StartTaskEndTime | datetime |  |
+| StartTaskStartTime | datetime |  |
+| TenantId | string |  |
+| TimeGenerated | datetime |  |
+| TotalE2ETimeInSeconds | string |  |
+| Type | string | The name of the table |
+| Version | string |  |
+| VmFamilyName | string |  |
+| VmPriority | string |  |
+| VmSize | string |  |

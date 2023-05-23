@@ -4,9 +4,9 @@ description: Reference for HDInsightAmbariSystemMetrics table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # HDInsightAmbariSystemMetrics
@@ -28,42 +28,42 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|BytesIn|real|Bytes ingested in last timeframe.|
-|BytesOut|real|Bytes sent out.|
-|CachedMemory|real|amount of cached memory in KB.|
-|ClusterName|string|Name of the cluster the host belongs to.|
-|ClusterType|string|Type of cluster the record came from.|
-|CpuIdle|real|Percent of CPU time spent in idle state in past cycle.|
-|CpuIOWait|real|Percent of CPU time spent waiting for I/O requests in past cycle.|
-|CpuNice|real|Percent of CPU time spent running processes with positive nice values.|
-|CpuSystem|real|Percent of CPU time spent running system level processes in past cycle.|
-|CpuUser|real|Percent of CPU time spent running user level processes in past cycle.|
-|DiskFree|real|Amount of free disk space (in GB).|
-|DiskTotal|real|Total disk space (in GB).|
-|FifteenMinutLoad|real|load over past 15 minutes.|
-|FiveMinuteLoad|real|load over past five minutes.|
-|FreeMemory|real|amount of free memory in KB.|
-|FreeSwapMemory|real|amount of free swap memory in KB.|
-|HostName|string|Name of the host the record came from.|
-|NumberOfCpu|real|Number of CPU cores running on the node.|
-|OneMinuteLoad|real|load over past one minute.|
-|PacketsIn|real|Packets ingest in last timeframe.|
-|PacketsOut|real|Packets sent out in last timeframe.|
-|ProcessesRun|real|Processes run in last timeframe.|
-|ReadBytes|real|Number of bytes read.|
-|ReadCount|real|Number of read operations.|
-|ReadTime|real|Time spent on read operations.|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|SharedMemory|real|amount of sharedmemory in KB.|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|The timestamp (UTC) of when the log was generated.|
-|TotalMemory|real|total amount of memory in KB.|
-|TotalProcesses|real|Total amount of processes run on host.|
-|Type|string|The name of the table|
-|WriteBytes|real|Number of bytes written.|
-|WriteCount|real|Number of write operations.|
-|WriteTime|real|Time spent on write operations.|
+| Column | Type | Description |
+| --- | --- | --- |
+| BytesIn | real | Bytes ingested in last timeframe. |
+| BytesOut | real | Bytes sent out. |
+| CachedMemory | real | amount of cached memory in KB. |
+| ClusterName | string | Name of the cluster the host belongs to. |
+| ClusterType | string | Type of cluster the record came from. |
+| CpuIdle | real | Percent of CPU time spent in idle state in past cycle. |
+| CpuIOWait | real | Percent of CPU time spent waiting for I/O requests in past cycle. |
+| CpuNice | real | Percent of CPU time spent running processes with positive nice values. |
+| CpuSystem | real | Percent of CPU time spent running system level processes in past cycle. |
+| CpuUser | real | Percent of CPU time spent running user level processes in past cycle. |
+| DiskFree | real | Amount of free disk space (in GB). |
+| DiskTotal | real | Total disk space (in GB). |
+| FifteenMinutLoad | real | load over past 15 minutes. |
+| FiveMinuteLoad | real | load over past five minutes. |
+| FreeMemory | real | amount of free memory in KB. |
+| FreeSwapMemory | real | amount of free swap memory in KB. |
+| HostName | string | Name of the host the record came from. |
+| NumberOfCpu | real | Number of CPU cores running on the node. |
+| OneMinuteLoad | real | load over past one minute. |
+| PacketsIn | real | Packets ingest in last timeframe. |
+| PacketsOut | real | Packets sent out in last timeframe. |
+| ProcessesRun | real | Processes run in last timeframe. |
+| ReadBytes | real | Number of bytes read. |
+| ReadCount | real | Number of read operations. |
+| ReadTime | real | Time spent on read operations. |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SharedMemory | real | amount of sharedmemory in KB. |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
+| TotalMemory | real | total amount of memory in KB. |
+| TotalProcesses | real | Total amount of processes run on host. |
+| Type | string | The name of the table |
+| WriteBytes | real | Number of bytes written. |
+| WriteCount | real | Number of write operations. |
+| WriteTime | real | Time spent on write operations. |

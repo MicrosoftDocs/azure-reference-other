@@ -1,0 +1,59 @@
+### YamlMime:Hub
+title: Microsoft Entra documentation
+summary: Learn more about the Microsoft Entra family of multicloud identity and access solutions. Find content to help solve secure access needs across your multifaceted digital landscape, protect access to any app or resource for any user, verify and secure every identity and every access request, discover permissions and govern access, and simplify user experience with intelligent real-time access controls.
+brand: azure
+
+metadata:
+  title: Microsoft Entra documentation
+  description: Learn more about the Microsoft Entra family of multicloud identity and access solutions. Find content to help solve secure access needs across your multifaceted digital landscape, protect access to any app or resource for any user, verify and secure every identity and every access request, discover permissions and govern access, and simplify user experience with intelligent real-time access controls.
+  services: azure
+  ms.service: active-directory
+  ms.topic: hub-page
+  author: CelesteDG
+  ms.author: celested
+  ms.date: 12/05/2022
+
+productDirectory:
+  title: Getting started
+  items:
+    - title: Azure Active Directory
+      imageSrc: ./media/azure-ad-monoline.png
+      summary: "Protect your users, apps, workloads, and devices"
+      url: /azure/active-directory
+    - title: Microsoft Entra Permissions Management
+      imageSrc: ./media/permissions-management-monoline.png
+      summary: "One unified model to manage permissions of any identity across any cloud"
+      url: /azure/active-directory/cloud-infrastructure-entitlement-management/
+    - title: Microsoft Entra Verified ID
+      imageSrc: ./media/verified-id-monoline.png
+      summary: "Enable more secure interactions while respecting privacy with an industry-leading global platform"
+      url: /azure/active-directory/verifiable-credentials/
+    - title: Microsoft Entra Workload Identities
+      imageSrc: ./media/workload-identities-monoline.png
+      summary: "Secure identities for apps and services and their access to cloud resources"
+      url: /azure/active-directory/workload-identities/
+    - title: Microsoft Entra Identity Governance
+      imageSrc: ./media/identity-governance-monoline.png
+      summary: "Ensure that the right people have the right access to the right resources at the right time"
+      url: /azure/active-directory/governance/
+    - title: Microsoft Entra admin center
+      imageSrc: ./media/entra-portal-stub.png
+      summary: "Access and administer the Microsoft Entra family of products through the admin center"
+      url: https://entra.microsoft.com
+          
+additionalContent:
+  sections:
+    - title: Announcements and resources
+      items:
+        - title: "Microsoft Entra"
+          summary: "Learn more about Microsoft Entra and how the Entra family of products can help your business."
+          url: https://aka.ms/MicrosoftEntra
+        - title: "Announcement"
+          summary: "Read our announcement about the Microsoft Entra family of multicloud identity and access solutions."
+          url: https://aka.ms/EntraAnnouncement
+        - title: "Video demo"
+          summary: "See the new capabilities of Microsoft Entra, including unified identity management that spans beyond your Microsoft estate."
+          url: https://youtu.be/9qQiq3wTS2Y
+        - title: "Microsoft security documentation"
+          summary: "Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps."
+          url: https://learn.microsoft.com/security/

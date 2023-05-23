@@ -4,9 +4,9 @@ description: Reference for DHOSReliability table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # DHOSReliability
@@ -25,23 +25,23 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AbnormalShutdownCount|int||
-|Computer|string||
-|ComputerID|string||
-|ConfigMgrClientID|string||
-|Country|string||
-|DeviceLastSeenTime|datetime||
-|KernelModeCrashCount|int||
-|KernelModeCrashFreePercentForIndustry|real||
-|Manufacturer|string||
-|Model|string||
-|ModelFamily|string||
-|OSArchitecture|string||
-|OSBuildNumber|int||
-|OSEdition|string||
-|OSRevisionNumber|int||
-|OSVersion|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AbnormalShutdownCount | int |  |
+| Computer | string |  |
+| ComputerID | string |  |
+| ConfigMgrClientID | string |  |
+| Country | string |  |
+| DeviceLastSeenTime | datetime |  |
+| KernelModeCrashCount | int |  |
+| KernelModeCrashFreePercentForIndustry | real |  |
+| Manufacturer | string |  |
+| Model | string |  |
+| ModelFamily | string |  |
+| OSArchitecture | string |  |
+| OSBuildNumber | int |  |
+| OSEdition | string |  |
+| OSRevisionNumber | int |  |
+| OSVersion | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |

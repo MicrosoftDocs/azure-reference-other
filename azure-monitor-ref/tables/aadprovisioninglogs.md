@@ -4,9 +4,9 @@ description: Reference for AADProvisioningLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # AADProvisioningLogs
@@ -20,40 +20,37 @@ ms.date: 10/1/2020
 ## Solutions
 
 - LogManagement
-## Resource types
-
-- Azure Active Directory Sign-In Logs
 
 
 
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|AADTenantId|string|Unique Azure AD tenant ID|
-|Action|string|Indicates the activity name or the operation name. For a list of activities logged, refer to Azure AD activity list|
-|Category|string|Category of the event|
-|ChangeId|string|Unique ID of this change in this cycle|
-|CorrelationId|string|ID to provide provisioning trail|
-|CycleId|string|Unique ID per job iteration|
-|DurationMs|long|Indicates how long this provisioning action took to finish|
-|Id|string|Indicates the unique ID for the activity|
-|InitiatedBy|string|Details of who initiated this provisioning|
-|JobId|string|The unique ID for the whole provisioning job|
-|ModifiedProperties|string|Details of each property that was modified in this provisioning action on this object|
-|OperationName|string|Name of the operation|
-|OperationVersion|string|The REST API version that's requested by the client|
-|ProvisioningSteps|string|Details of each step in provisioning|
-|ResultDescription|string|When available, provides the error description for the provisioning operation|
-|ResultSignature|string|Contains the error code, if any, for the provisioning operation|
-|ResultType|string|The result of the provisioning operation can be Success, Failure, or Skipped|
-|ServicePrincipal|string|Represents the service principal used for provisioning|
-|SourceIdentity|string|Details of source object being provisioned|
-|SourceSystem|string|Details of source system of the object being provisioned|
-|StatusInfo|string|Details of provisioning status|
-|TargetIdentity|string|Details of target object being provisioned|
-|TargetSystem|string|Details of target system of the object being provisioned|
-|TenantId|string||
-|TimeGenerated|datetime|The date and time of the event in UTC|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| AADTenantId | string | Unique Azure AD tenant ID |
+| Category | string | Category of the event |
+| ChangeId | string | Unique ID of this change in this cycle |
+| CorrelationId | string | ID to provide provisioning trail |
+| CycleId | string | Unique ID per job iteration |
+| DurationMs | long | Indicates how long this provisioning action took to finish |
+| Id | string | Indicates the unique ID for the activity |
+| InitiatedBy | string | Details of who initiated this provisioning |
+| JobId | string | The unique ID for the whole provisioning job |
+| ModifiedProperties | string | Details of each property that was modified in this provisioning action on this object |
+| OperationName | string | Name of the operation |
+| OperationVersion | string | The REST API version that's requested by the client |
+| ProvisioningAction | string | Indicates the activity name or the operation name. For a list of activities logged, refer to Azure AD activity list |
+| ProvisioningStatusInfo | string | Details of provisioning status |
+| ProvisioningSteps | string | Details of each step in provisioning |
+| ResultDescription | string | When available, provides the error description for the provisioning operation |
+| ResultSignature | string | Contains the error code, if any, for the provisioning operation |
+| ResultType | string | The result of the provisioning operation can be Success, Failure, or Skipped |
+| ServicePrincipal | string | Represents the service principal used for provisioning |
+| SourceIdentity | string | Details of source object being provisioned |
+| SourceSystem | string | Details of source system of the object being provisioned |
+| TargetIdentity | string | Details of target object being provisioned |
+| TargetSystem | string | Details of target system of the object being provisioned |
+| TenantId | string |  |
+| TimeGenerated | datetime | The date and time of the event in UTC |
+| Type | string | The name of the table |

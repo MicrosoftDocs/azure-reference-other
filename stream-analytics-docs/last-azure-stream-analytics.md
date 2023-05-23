@@ -1,19 +1,13 @@
 ---
-title: "LAST (Azure Stream Analytics) | Microsoft Docs"
+title: "LAST (Azure Stream Analytics)"
 description: "The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
 
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 6f8fabcb-4af9-4c8f-b30d-a6b676717353
-caps.latest.revision: 19
-ms.workload: data-services
 ms.date: 10/20/2017
-ms.author: mamccrea
 ---
 # LAST (Azure Stream Analytics)
   The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints.  It is useful in the scenarios like computing last known good value (e.g. not null), finding last time when event matched certain criteria, etc.  
@@ -51,7 +45,12 @@ Specifies how much of the history from the current event must be considered.  Se
   
 ## Return Types  
  The data type of the specified scalar_expression. NULL is returned if scalar_expression  
-  
+
+## General Remarks  
+LAST is nondeterministic. Events are processed in temporal order. If there are several events with the same time stamp events are processed in the order of arrival.
+ 
+Applying LAST on the result set of a [windowing function](windowing-azure-stream-analytics.md) may produce unexpected results. Windowing functions alter the timestamp of events, as every window operation outputs event at the end of the window. The current timestamp of an event can be accessed with [system.timestamp()](system-timestamp-stream-analytics.md), after a window operation it will differ from the original event time attribute. If LAST can't be moved before the window operation, consider using [CollectTop](collecttop-azure-stream-analytics.md), ordering by the original event time.
+
 ## Examples  
  Find most recent non-null sensor reading:  
   

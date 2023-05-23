@@ -1,19 +1,14 @@
 ---
-title: TRY_CAST (Azure Stream Analytics) | Microsoft Docs
+title: TRY_CAST (Azure Stream Analytics)
 description: Returns a value cast to the specified data type if the cast succeeds; otherwise, returns null.
+author: fleid
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 
-
+ms.author: fleide
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 94e78203-32fd-44b8-a1bd-47457c30bfb3
-caps.latest.revision: 5
-ms.workload: data-services
-ms.date: 04/22/2016
-ms.author: mamccrea
+ms.date: 03/07/2022
 ---
 # TRY_CAST (Azure Stream Analytics)
 Returns a value cast to the specified data type if the cast succeeds; otherwise, returns NULL. Supports the [data types](data-types-azure-stream-analytics.md) in the Stream Analytics Query Language.
@@ -21,6 +16,9 @@ Returns a value cast to the specified data type if the cast succeeds; otherwise,
 For example, the clause `TRY_CAST ('this is a string' AS bigint)` results in a NULL since the input string cannot be converted into the `bigint` data type. If you need the cast to fail when there is an incompatible data type, use [CAST](cast-azure-stream-analytics.md) function instead.
 
 This function is useful to help ensure data purity, by enforcing the data types on an input column. You can filter out dirty data that does not match the expected data type in a given column by using TRY_CAST on each column. 
+
+> [!NOTE]
+> To compare the different options available for type conversion, see [casting data](data-types-azure-stream-analytics.md#casting-data)
 
  ## Syntax  
   
@@ -53,4 +51,4 @@ WHERE TRY_CAST(EntryTime AS datetime) IS NOT NULL
 For more information on Stream Analytics data types, see:
 - [Data types](data-types-azure-stream-analytics.md)
 - [CAST](cast-azure-stream-analytics.md)
-- [Parsing JSON and AVRO data](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-parsing-json)
+- [Parsing JSON and AVRO data](/azure/stream-analytics/stream-analytics-parsing-json)

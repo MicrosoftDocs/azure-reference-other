@@ -1,17 +1,11 @@
 ---
-title: "Aggregate Functions (Azure Stream Analytics) | Microsoft Docs"
+title: "Aggregate Functions (Azure Stream Analytics)"
 description: "Aggregate functions perform a calculation on a set of values and return a single value. Except for the COUNT function, aggregate functions ignore null values."
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 1fa11c79-3f97-4050-8d2c-b4cf61cdaf59
-caps.latest.revision: 23
-ms.workload: data-services
 ms.date: 06/07/2019
-ms.author: mamccrea
 ---
 
 # Aggregate Functions (Azure Stream Analytics)
@@ -28,7 +22,7 @@ Aggregate functions can be used as expressions only in the following:
   
  Stream Analytics Query Language provides the following aggregate functions:  
   
-||||  
+|Aggregate functions | ... | ...|  
 |-|-|-|  
 |[AVG &#40;Azure Stream Analytics&#41;](avg-azure-stream-analytics.md)|[COUNT &#40;Azure Stream Analytics&#41;](count-azure-stream-analytics.md)|[Collect &#40;Azure Stream Analytics&#41;](collect-azure-stream-analytics.md)|
 |[CollectTOP &#40;Azure Stream Analytics&#41;](collecttop-azure-stream-analytics.md)|[MAX &#40;Azure Stream Analytics&#41;](max-azure-stream-analytics.md)|[MIN &#40;Azure Stream Analytics&#41;](min-azure-stream-analytics.md)|

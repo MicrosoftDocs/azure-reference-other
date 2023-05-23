@@ -1,17 +1,11 @@
 ---
-title: "Array Functions (Stream Analytics) | Microsoft Docs"
+title: "Array Functions (Stream Analytics)"
 description: "Array functions perform actions against arrays return information in them.  "
 applies_to: 
   - "Azure"
-services: stream-analytics
-author: mamccrea
 ms.service: stream-analytics
 ms.topic: reference
-ms.assetid: 06db0d4c-9919-4bd4-96a6-e2ffb39d5a56
-caps.latest.revision: 5
-ms.workload: data-services
 ms.date: 06/07/2019
-ms.author: mamccrea
 ---
 
 # Array Functions (Stream Analytics)
@@ -20,7 +14,7 @@ Array functions perform actions against arrays and return information in them.
   
 Stream Analytics Query Language provides the following array functions:  
   
-||||  
+|Array functions| ...|...|  
 |-|-|-|  
 |[GetArrayElement &#40;Azure Stream Analytics&#41;](getarrayelement-azure-stream-analytics.md)|[GetArrayElements &#40;Azure Stream Analytics&#41;](getarrayelements-azure-stream-analytics.md)|[GetArrayLength &#40;Azure Stream Analytics&#41;](getarraylength-azure-stream-analytics.md)|  
   

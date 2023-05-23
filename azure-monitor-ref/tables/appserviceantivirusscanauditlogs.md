@@ -4,9 +4,9 @@ description: Reference for AppServiceAntivirusScanAuditLogs table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 10/1/2020
+ms.author: robb
+author: rboucher
+ms.date: 5/19/2023
 ---
 
 # AppServiceAntivirusScanAuditLogs
@@ -22,17 +22,18 @@ ms.date: 10/1/2020
 
 ## Columns
 
-|Column|Type|Description|
-|---|---|---|
-|Category|string|Log category name|
-|ErrorMessage|string|Error Message|
-|ListOfInfectedFiles|string|List of each virus file path|
-|NumberOfInfectedFiles|int|Total number of virus files|
-|_ResourceId|string|A unique identifier for the resource that the record is associated with|
-|ScanStatus|string|Status of the scan|
-|SourceSystem|string||
-|_SubscriptionId|string|A unique identifier for the subscription that the record is associated with|
-|TenantId|string||
-|TimeGenerated|datetime|Time when event is generated|
-|TotalFilesScanned|int|Total number of files scanned|
-|Type|string|The name of the table|
+| Column | Type | Description |
+| --- | --- | --- |
+| Category | string | Log category name |
+| ErrorMessage | string | Error Message |
+| ListOfInfectedFiles | string | List of each virus file path |
+| NumberOfInfectedFiles | int | Total number of files infected with virus |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ScanStatus | string | Status of the scan |
+| SourceSystem | string |  |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| TenantId | string |  |
+| TimeGenerated | datetime | Time when event is generated |
+| TimeStamp | datetime | Time when event is generated |
+| TotalFilesScanned | int | Total number of scanned files |
+| Type | string | The name of the table |
