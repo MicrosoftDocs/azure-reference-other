@@ -22,24 +22,30 @@ ms.author: mamccrea
   
 ```SQL
 -- Aggregate Function Syntax
-TopOne() OVER (ORDER BY (<column name> [ASC |DESC])+)  
+TopOne( [ <scalar_expression> ] ) OVER (ORDER BY (<column name> [ASC |DESC])+)  
 
 -- Analytic Function Syntax
-TopOne() OVER ([<PARTITION BY clause>] ORDER BY (<column name> [ASC |DESC])+ <LIMIT DURATION clause> [<WHEN clause>])  
+TopOne( [ <scalar_expression> ] ) OVER ([<PARTITION BY clause>] ORDER BY (<column name> [ASC |DESC])+ <LIMIT DURATION clause> [<WHEN clause>])  
 
 ```
   
-## Arguments  
- **column_name**  
+## Arguments
+
+**\<scalar_expression>**
+
+ TopOne takes an optional scalar expression that allows you to specify a projection over the top event. Without the parameter, full event record is returned.
+
+ **\<column_name>**  
   
  Specifies the name of the column in the input event by which ordering will be done. Note that only ordering by bigint, float and datetime types are allowed.  
 
 **OVER ([\<PARTITION BY clause> \<LIMIT DURATION clause> [\<WHEN clause>]]**
 
-Determines the group of rows over which TopOne is applied. The PARTITION BY clause specifies that the rows with the same partition key will be grouped together. The LIMIT DURATION clause specifies how much history is included in the group. The WHEN clause specifies a boolean condition for the rows to be included in the group. See [OVER clause](over-azure-stream-analytics.md) for more details on the usage.
+ Determines the group of rows over which TopOne is applied. The PARTITION BY clause specifies that the rows with the same partition key will be grouped together. The LIMIT DURATION clause specifies how much history is included in the group. The optional WHEN clause specifies a boolean condition for the rows to be included in the group. See [OVER clause](over-azure-stream-analytics.md) for more details on the usage.
 
 ## Return Types
- Returns a record.
+
+ Value projected by the `<scalar_expression>` parameter, or a record value if no parameter is provided.  
 
 ## Examples  
   
@@ -51,4 +57,11 @@ GROUP BY Tumbling(second, 10)
   
 ```  
   
+```SQL  
+SELECT   
+    TopOne(x * y) OVER (ORDER BY value DESC) as topEvent  
+FROM input  
+GROUP BY Tumbling(second, 10)  
+  
+```  
   

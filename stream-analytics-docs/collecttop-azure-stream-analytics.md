@@ -23,18 +23,22 @@ ms.author: mamccrea
   
 ```SQL
 -- Aggregate Function Syntax
-CollectTop(<number of events as integer literal>) OVER (ORDER BY (<column name> [ASC |DESC])+)
+CollectTop(<number of events as integer literal> [ , <scalar_expression> ]) OVER (ORDER BY (<column name> [ASC |DESC])+)
 
 -- Analytic Function Syntax
-CollectTop(<number of events as integer literal>) OVER ([<PARTITION BY clause>] ORDER BY (<column name> [ASC | DESC])+ <LIMIT DURATION clause>  [<WHEN clause>])
+CollectTop(<number of events as integer literal> [ , <scalar_expression> ]) OVER ([<PARTITION BY clause>] ORDER BY (<column name> [ASC | DESC])+ <LIMIT DURATION clause>  [<WHEN clause>])
 ```
   
 ## Arguments  
- **\<number of events as integer literal>**  
+**\<number of events as integer literal>**  
   
- The number of top events the user wants to collect from the window.  
-  
- **\<column name>**  
+ The number of top events the user wants to collect from the window.
+
+**\<scalar_expression>**
+
+ CollectTop takes an optional scalar expression that allows you to specify a projection over the collected events. Without the parameter, full event records are collected.
+
+**\<column name>**  
   
  Name of the column in the input event, by which ordering will be done. Only ordering by bigint/float/datetime types is allowed.
 
@@ -43,7 +47,7 @@ CollectTop(<number of events as integer literal>) OVER ([<PARTITION BY clause>] 
 Determines the group of rows over which CollectTop is applied. The PARTITION BY clause specifies that the rows with the same partition key will be grouped together. The LIMIT DURATION clause specifies how much history is included in the group. The WHEN clause specifies a boolean condition for the rows to be included in the group. See [OVER clause](over-azure-stream-analytics.md) for more details on the usage.
 
 ## Return Types  
- Array of records of type { “rank” : bigint, “value”: record  }  
+ Array of records of type { “rank” : bigint, “value”: <projected_type>  }, where <projected_type> is the type of the `<scalar_expression>` or a record if no expression is specified. 
   
 ## Remarks  
  Null is treated as the minimal value, for more information look at [https://msdn.microsoft.com/library/ms188385.aspx](https://msdn.microsoft.com/library/ms188385.aspx)  
@@ -66,4 +70,12 @@ GROUP BY TumblingWindow(second, 5), value1
 
 ![SA-COLLECTTOP-OUTPUT.PNG](media/sa-collecttop-output.png)
 
+
+```SQL  
+SELECT   
+    value1,  
+    CollectTop(2, x + y) OVER (ORDER BY value2 ASC, value3 DESC) as top1  
+FROM testinput timestamp by time  
+GROUP BY TumblingWindow(second, 5), value1  
+```  
   
