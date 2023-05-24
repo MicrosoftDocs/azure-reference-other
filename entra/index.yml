@@ -11,35 +11,47 @@ metadata:
   ms.topic: hub-page
   author: CelesteDG
   ms.author: celested
-  ms.date: 12/05/2022
+  ms.date: 05/24/2023
 
 productDirectory:
   title: Getting started
   items:
-    - title: Azure Active Directory
-      imageSrc: ./media/azure-ad-monoline.png
-      summary: "Protect your users, apps, workloads, and devices"
+    - title: Microsoft Entra ID
+      imageSrc: ./media/new-icons/azure-ad-color.png
+      summary: "Manage user identities and control access to your apps, data, and resources."
       url: /azure/active-directory
+    - title: Microsoft Entra ID Protection
+      imageSrc: ./media/new-icons/id-protection-color.png
+      summary: "Identify and address identity risks in your organization."
+      url: /azure/active-directory/identity-protection/
+    - title: Microsoft Entra ID Governance
+      imageSrc: ./media/new-icons/id-governance-color.png
+      summary: "Protect, monitor, and audit access to critical assets while ensuring employee productivity."
+      url: /azure/active-directory/governance/
+    - title: Microsoft Entra External ID
+      imageSrc: ./media/new-icons/azure-ad-color.png
+      summary: "Secure and manage any external user, including customers and partners, in your organization."
+      url: /azure/active-directory/external-identities
+    - title: Microsoft Entra Internet Access
+      imageSrc: ./media/new-icons/global-secure-access-color.png
+      summary: "Provide secure Internet access to apps and resources on the Internet."
+      url: https://review.learn.microsoft.com/en-us/azure/global-secure-access/?branch=release-preview-ztna
+    - title: Microsoft Entra Private Access
+      imageSrc: ./media/new-icons/global-secure-access-color.png
+      summary: "Provide access to apps and resources in private networks."
+      url: https://review.learn.microsoft.com/en-us/azure/global-secure-access/?branch=release-preview-ztna
     - title: Microsoft Entra Permissions Management
-      imageSrc: ./media/permissions-management-monoline.png
+      imageSrc: ./media/new-icons/permissions-management-color.png
       summary: "One unified model to manage permissions of any identity across any cloud"
       url: /azure/active-directory/cloud-infrastructure-entitlement-management/
     - title: Microsoft Entra Verified ID
-      imageSrc: ./media/verified-id-monoline.png
+      imageSrc: ./media/new-icons/verified-id-color.png
       summary: "Enable more secure interactions while respecting privacy with an industry-leading global platform"
       url: /azure/active-directory/verifiable-credentials/
-    - title: Microsoft Entra Workload Identities
-      imageSrc: ./media/workload-identities-monoline.png
+    - title: Microsoft Entra Workload ID
+      imageSrc: ./media/new-icons/workload-id-color.png
       summary: "Secure identities for apps and services and their access to cloud resources"
       url: /azure/active-directory/workload-identities/
-    - title: Microsoft Entra Identity Governance
-      imageSrc: ./media/identity-governance-monoline.png
-      summary: "Ensure that the right people have the right access to the right resources at the right time"
-      url: /azure/active-directory/governance/
-    - title: Microsoft Entra admin center
-      imageSrc: ./media/entra-portal-stub.png
-      summary: "Access and administer the Microsoft Entra family of products through the admin center"
-      url: https://entra.microsoft.com
           
 additionalContent:
   sections:
@@ -48,12 +60,12 @@ additionalContent:
         - title: "Microsoft Entra"
           summary: "Learn more about Microsoft Entra and how the Entra family of products can help your business."
           url: https://aka.ms/MicrosoftEntra
-        - title: "Announcement"
-          summary: "Read our announcement about the Microsoft Entra family of multicloud identity and access solutions."
+        - title: "Azure AD is becoming Microsoft Entra ID"
+          summary: "Learn more about the new name, what the change means, and how it affects you."
           url: https://aka.ms/EntraAnnouncement
         - title: "Video demo"
           summary: "See the new capabilities of Microsoft Entra, including unified identity management that spans beyond your Microsoft estate."
           url: https://youtu.be/9qQiq3wTS2Y
         - title: "Microsoft security documentation"
           summary: "Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps."
-          url: https://learn.microsoft.com/security/
+          url: /security/
