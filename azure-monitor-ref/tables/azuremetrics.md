@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/11/2023
+ms.date: 5/19/2023
 ---
 
 # AzureMetrics
@@ -61,10 +61,9 @@ ms.date: 5/11/2023
 - Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
 - SQL Servers
-- Bastions
 - Event Grid Partner Topics
+- Event Grid Partner Namespaces
 - Event Grid Domains
-- Azure Database for MySQL Flexible Servers
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
 - Azure Virtual Network Manager
@@ -79,12 +78,13 @@ ms.date: 5/11/2023
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
+- Azure CloudHsm
 - Azure Cache for Redis
 - App Services
+- Azure Database for MySQL Flexible Servers
 - Azure Database for PostgreSQL Flexible Servers
-- Event Grid Partner Namespaces
 - Dev Centers
-- Media Services
+- Machine Learning
 - Azure Blockchain Service
 - Azure Data Explorer Clusters
 - Container Registries
@@ -93,8 +93,8 @@ ms.date: 5/11/2023
 - Cognitive Services
 - Azure Spring Cloud
 - Batch Accounts
+- Bastions
 - Analysis Services
-- Workload Monitor
 - Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
@@ -102,7 +102,8 @@ ms.date: 5/11/2023
 - Synapse Workspaces
 - Azure Storage Mover
 - Virtual machines
-- Machine Learning
+- Media Services
+- Workload Monitor
 - Azure API for FHIR
 
 

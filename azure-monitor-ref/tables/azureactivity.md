@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/11/2023
+ms.date: 5/19/2023
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 5/11/2023
 ## Resource types
 
 - Azure AD Domain Services
-- API Management services
 - Logic Apps
 - Service Fabric Clusters
 - IoT Hub
@@ -47,10 +46,11 @@ ms.date: 5/11/2023
 - Storage Accounts
 - Cognitive Services
 - Azure Spring Cloud
-- Automation account
 - CDN Profiles
+- API Management services
+- Automation account
 - Data factories
-- Data Lake Analytics
+- Data Lake Storage Gen1
 - Stream Analytics jobs
 - Search Services
 - Virtual Networks
@@ -62,8 +62,8 @@ ms.date: 5/11/2023
 - Network Interfaces
 - Load Balancers
 - Front Doors
+- Batch Accounts
 - ExpressRoute Circuits
-- Application Gateways
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Servers V2
@@ -74,11 +74,11 @@ ms.date: 5/11/2023
 - SQL Managed Instances
 - Data Share
 - Power BI Embedded
-- Data Lake Storage Gen1
-- Batch Accounts
+- Data Lake Analytics
+- Application Gateways
+- Bastions
 - Analysis Services
-- Workload Monitor
-- Azure Virtual Network Manager
+- Time Series Insights Environments
 - Azure Traffic Collector
 - Service Bus
 - Relay
@@ -96,16 +96,16 @@ ms.date: 5/11/2023
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
+- Azure CloudHsm
 - Azure Cache for Redis
 - Azure Attestation
 - Azure Autonomous Development Platform workspace
 - App Services
 - Microsoft App Configuration
+- Azure Virtual Network Manager
 - Bot Services
 - Chaos Experiment
 - Microsoft Connected Cache
-- Microsoft Connected Vehicle Platform
-- Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Application Insights
@@ -116,9 +116,9 @@ ms.date: 5/11/2023
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Azure Storage Mover
-- Bastions
 - Virtual machines
-- Media Services
+- Workload Monitor
+- Microsoft Graph Logs
 - Machine Learning
 - Machine Learning
 - HDInsight Clusters
@@ -129,7 +129,8 @@ ms.date: 5/11/2023
 - Dynamics 365 Customer Insights
 - Container Apps
 - Network Watcher - Connection Monitor
-- Microsoft Graph Logs
+- Microsoft Connected Vehicle Platform
+- Media Services
 - Azure API for FHIR
 
 

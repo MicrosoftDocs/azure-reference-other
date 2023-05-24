@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/11/2023
+ms.date: 5/19/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -135,9 +135,11 @@ ms.date: 5/11/2023
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
+- [ACSCallAutomationMediaSummary](acscallautomationmediasummary.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallRecordingSummary](acscallrecordingsummary.md)
 - [ACSCallSummary](acscallsummary.md)
+- [ACSCallSurvey](acscallsurvey.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
 - [ACSEmailSendMailOperational](acsemailsendmailoperational.md)
 - [ACSEmailStatusUpdateOperational](acsemailstatusupdateoperational.md)
