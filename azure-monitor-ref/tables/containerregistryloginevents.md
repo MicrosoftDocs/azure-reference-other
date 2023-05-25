@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ContainerRegistryLoginEvents
@@ -30,11 +30,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIpAddress | string |  |
 | Category | string |  |
 | CorrelationId | string |  |
 | DurationMs | string |  |
 | Identity | string |  |
+| _IsBillable | string |  |
 | JwtId | string |  |
 | LoginServer | string |  |
 | OperationName | string |  |
