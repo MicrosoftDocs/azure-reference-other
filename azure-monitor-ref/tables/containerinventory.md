@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ContainerInventory
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Command | string |  |
 | ComposeGroup | string |  |
 | Computer | string |  |
@@ -47,6 +48,7 @@ ms.date: 5/19/2023
 | Image | string |  |
 | ImageID | string |  |
 | ImageTag | string |  |
+| _IsBillable | string |  |
 | Links | string |  |
 | Name | string |  |
 | Ports | string |  |
