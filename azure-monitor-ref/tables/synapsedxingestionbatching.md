@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseDXIngestionBatching
@@ -33,8 +33,10 @@ ms.date: 5/19/2023
 | BatchingType | string | Batching type: Whether the batch reached the limit of batching time, data size, or number of files set by the the batching policy |
 | BatchSizeBytes | long | Total uncompressed size of data in this batch (bytes) |
 | BatchTimeSeconds | real | Total batching time of this batch (seconds) |
+| _BilledSize | real |  |
 | Database | string | The name of the database holding the target table |
 | DataSourcesInBatch | int | Number of data sources in this batch |
+| _IsBillable | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RootActivityId | string | The operation's activity ID |
 | SourceCreationTime | datetime | When the first blobs in this batch were created (UTC time) |
