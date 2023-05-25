@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DeviceFileCertificateInfo
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CertificateCountersignatureTime | datetime | Date and time (UTC) the certificate was countersigned. |
 | CertificateCreationTime | datetime | Date and time (UTC) the certificate was created. |
 | CertificateExpirationTime | datetime | Certificate expiry date and time (UTC). |
@@ -34,6 +35,7 @@ ms.date: 5/19/2023
 | CrlDistributionPointUrls | string | A list of network shares URLs that contains certificates and certificate revocation (CRLs). |
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
+| _IsBillable | string |  |
 | IsRootSignerMicrosoft | bool | Indicates whether the signer of the root certificate is Microsoft. |
 | IsSigned | bool | Indicates whether the file is signed. |
 | Issuer | string | Information about the issuing certificate authority (CA). |
