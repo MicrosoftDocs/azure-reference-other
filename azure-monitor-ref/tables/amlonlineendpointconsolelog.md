@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlOnlineEndpointConsoleLog
@@ -31,10 +31,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ContainerImageName | string | The name of the docker image running in the container where the log was generated. |
 | ContainerName | string | The name of the container where the log was generated. |
 | DeploymentName | string | The name of the deployment associated with the log record. |
 | InstanceId | string | The ID of the instance that generated this log record. |
+| _IsBillable | string |  |
 | Message | string | The content of the log. |
 | OperationName | string | The operation associated with log record. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
