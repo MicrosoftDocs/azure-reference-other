@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UADriverProblemCodes
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | DriverAvailability | string |  |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | HardwareID | string |  |
 | HardwareName | string |  |
 | HardwareType | string |  |
+| _IsBillable | string |  |
 | ProblemCode | string |  |
 | SourceSystem | string |  |
 | TimeGenerated | datetime |  |
