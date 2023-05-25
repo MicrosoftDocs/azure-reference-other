@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightAmbariClusterAlerts
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | AlertFirmness | string | The firmness of the alert. |
 | AlertID | int | The ID of the alert message. |
 | AlertInstance | string | Instance number of the alert. |
+| _BilledSize | real |  |
 | ClusterName | string | The name of the cluster the alert came from. |
 | ClusterType | string | The type of cluster where the alert was generated. |
 | ComponentName | string | The component that generated the alert. |
@@ -40,6 +41,7 @@ ms.date: 5/19/2023
 | DefinitionName | string | Name of the alert definition |
 | HostFQDN | string | The FQDN of the host where the alert was generated. |
 | HostName | string | The name of the host where the alert was generated. |
+| _IsBillable | string |  |
 | Label | string | The label of the alert. |
 | LatestTimestamp | long | The latest time the alert occurred. |
 | MaintenanceState | string | The maintenance classifaction state of the alert. |
