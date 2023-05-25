@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseSqlPoolExecRequests
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of the log. |
 | ClassifierName | string | The classifier name of the execution requests. |
 | ClientCorrelationId | string | The correlation set by client/user. |
@@ -40,6 +41,7 @@ ms.date: 5/19/2023
 | ErrorId | string | The errorId of the execution requests. |
 | ExplainOutput | string | The output explain of the execution requests. |
 | Importance | string | The importance of the execution requests. |
+| _IsBillable | string |  |
 | Label | string | The label of the execution requests. |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |
