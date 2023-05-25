@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # PowerBIAuditTenant
@@ -32,9 +32,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AuditData | string | The complete audit record containing relevant operation details such as workspace name or dataset name. |
+| _BilledSize | real |  |
 | CorrelationId | string | An event ID that can be used to correlated events between multiple tables. |
 | CustomerTenantId | string | Customer's Power BI tenant identifier. |
 | ExecutingUser | string | The user executing the operation. |
+| _IsBillable | string |  |
 | Level | string | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
 | LogAnalyticsCategory | string | Unique category of the events like like Audit/Security/Request. |
 | OperationName | string | The operation associated with the log record. |
