@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityBaselineSummary
@@ -37,17 +37,19 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AssessmentId | string |  |
 | BaselineType | string |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerEnvironment | string |  |
 | CriticalFailedRules | int |  |
 | InformationalFailedRules | int |  |
+| _IsBillable | string |  |
 | ManagementGroupName | string |  |
 | OSName | string |  |
 | PercentageOfPassedRules | int |  |
 | Resource | string |  |
 | ResourceGroup | string |  |
-| ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
 | ResourceProvider | string |  |
 | ResourceType | string |  |
 | SourceComputerId | string |  |
