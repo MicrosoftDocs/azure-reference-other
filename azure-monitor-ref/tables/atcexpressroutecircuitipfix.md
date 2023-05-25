@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ATCExpressRouteCircuitIpfix
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | ATCRegion | string | Azure Traffic Collector (ATC) deployment region. |
 | ATCResourceId | string | Azure resource ID of Azure Traffic Collector (ATC). |
 | BgpNextHop | string | Border Gateway Protocol (BGP) next hop as defined in the routing table. |
+| _BilledSize | real |  |
 | DestinationIp | string | Destination IP address. |
 | DestinationPort | int | TCP destination port. |
 | Dot1qCustomerVlanId | int | Dot1q Customer VlanId. |
@@ -49,6 +50,7 @@ ms.date: 5/19/2023
 | IpClassOfService | int | IP Class of service as specified in IP header. |
 | IpProtocolIdentifier | int | Protocol type as specified in IP header. |
 | IpVerCode | int | IP version as defined in the IP header. |
+| _IsBillable | string |  |
 | MaxTtl | int | Maximum time to live (TTL) as defined in the IP header. |
 | MinTtl | int | Minimum time to live (TTL) as defined in the IP header. |
 | NextHop | string | Next hop as per forwarding table. |
