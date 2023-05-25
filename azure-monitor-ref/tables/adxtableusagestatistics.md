@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADXTableUsageStatistics
@@ -28,8 +28,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationName | string | application name invoked the command |
+| _BilledSize | real |  |
 | CorrelationId | string | The client request id |
 | DatabaseName | string | The name of the database |
+| _IsBillable | string |  |
 | MaxCreatedOn | datetime | Lastest extent time of the table |
 | MinCreatedOn | datetime | Oldest extent time of the table |
 | OperationName | string | The name of this operation |
