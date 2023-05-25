@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # VMBoundPort
@@ -38,10 +38,12 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AgentId | string | Unique agent GUID for the agent reporting data on the server. |
+| _BilledSize | real |  |
 | BytesReceived | long | Bytes received on the port |
 | BytesSent | long | Bytes sent on the port |
 | Computer | string | Name of the server |
 | Ip | string | Port IP address. Can be wildcard IP 0.0.0.0. |
+| _IsBillable | string |  |
 | IsWildcardBind | bool | Specifies whether connection made as a wildcard bind request. |
 | LinksEstablished | long | Count of links established on the port. |
 | LinksLive | long | Count of live links at the end of the time period recorded. |
