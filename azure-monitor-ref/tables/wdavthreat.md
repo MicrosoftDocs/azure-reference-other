@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WDAVThreat
@@ -27,8 +27,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
+| _IsBillable | string |  |
 | IsCloudSignature | bool |  |
 | LastScan | datetime |  |
 | MoreInformation | string |  |
