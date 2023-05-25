@@ -778,3 +778,5 @@
     href: tables/powerbireportusageworkspace.md
   - name: PowerPlatformConnectorActivity
     href: tables/powerplatformconnectoractivity.md
+  - name: PowerPlatformDlpActivity
+    href: tables/powerplatformdlpactivity.md
