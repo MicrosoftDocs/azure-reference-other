@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ASimNetworkSessionLogs
@@ -31,6 +31,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
+| _BilledSize | real |  |
 | DstAppId | string | The ID of the destination application, as reported by the reporting device. |
 | DstAppName | string | The name of the destination application. |
 | DstAppType | string | The type of the destination application. |
@@ -103,6 +104,7 @@ ms.date: 5/19/2023
 | EventSubType | string | Additional description of the event type, if applicable. |
 | EventType | string | The operation reported by the record. |
 | EventVendor | string | The vendor of the product generating the event. |
+| _IsBillable | string |  |
 | NetworkApplicationProtocol | string | The application layer protocol used by the connection or session. |
 | NetworkBytes | long | Number of bytes sent in both directions. If both BytesReceived and BytesSent exist, BytesTotal should equal their sum. If the event is aggregated, NetworkBytes is the sum over all aggregated sessions. |
 | NetworkConnectionHistory | string | TCP flags and other potential IP header information. |
