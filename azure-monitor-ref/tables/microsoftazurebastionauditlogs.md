@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # MicrosoftAzureBastionAuditLogs
@@ -30,9 +30,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClientIpAddress | string | Browser IP Address that was used to log into the VirtualMachine from Bastion |
 | ClientPort | int | Browser Port Number that was used to log into the VirtualMachine from Bastion |
 | Duration | int | Duration in milliseconds where the Bastion Session lasted (available only when the Bastion Session ended) |
+| _IsBillable | string |  |
 | Location | string | The location of the server that processed the request (e.g., South Central US). |
 | Message | string | Additonal text that's assoicated of this event |
 | OperationName | string | The name of the operation represented by this event |
