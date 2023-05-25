@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DeviceTvmSecureConfigurationAssessmentKB
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ConfigurationBenchmarks | dynamic | List of industry benchmarks which recommend the same or similar configuration. |
 | ConfigurationCategory | string | Category or grouping to which the configuration belongs. |
 | ConfigurationDescription | string | Description of the configuration. |
@@ -34,6 +35,7 @@ ms.date: 5/19/2023
 | ConfigurationImpact | real | Rated impact of the configuration to the overall configuration score (1-10). |
 | ConfigurationName | string | Display name of the configuration. |
 | ConfigurationSubcategory | string | Subcategory or subgrouping to which the configuration belongs. Commonly, this describes specific capabilities or features. |
+| _IsBillable | string |  |
 | RelatedMitreTactics | dynamic | Related tactics from Mitre knowledge base. |
 | RelatedMitreTechniques | dynamic | Related techniques from Mitre knowledge base. |
 | RemediationOptions | string | Recommended actions to reduce or address any associated risks |
