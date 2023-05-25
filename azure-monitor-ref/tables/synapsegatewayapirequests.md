@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseGatewayApiRequests
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of the log. |
 | ClientCorrelationId | string | The client correlation id of this query. |
 | CorrelationId | string | A GUID used to group together a set of related events. |
 | Identity | dynamic | A JSON blob that describes the identity of the user or application that performed the operation. |
+| _IsBillable | string |  |
 | Location | string | The region of the resource emitting the event. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API Version of the operation. |
