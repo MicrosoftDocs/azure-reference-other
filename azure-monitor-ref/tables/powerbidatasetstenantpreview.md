@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # PowerBIDatasetsTenantPreview
@@ -26,6 +26,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | ApplicationContext | string | Property bag of unique identifiers providing details about the application executing the request. E.g. report ID. |
 | ApplicationName | string | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
+| _BilledSize | real |  |
 | ClientHostName | string | The name of the computer on which the client application is running. This column is populated with the values passed by the client application. |
 | ClientProcessId | string | Contains the process ID of the client application. |
 | ConnectionId | string | Unique identifier of the connection. |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | EventClass | string | Event Class is used to categorize events. |
 | EventSubclass | string | Event Subclass provides additional information about each event class. |
 | IntegerData | long | Contains the integer data associated with the reported event, such as the current count of the number of rows processed for a processing event. |
+| _IsBillable | string |  |
 | ObjectId | string | Contains the object ID associated with the reported event. |
 | ObjectName | string | The name of the object for which the event occurred. |
 | ObjectPath | string | Object path. A comma-separated list of parents, starting with the object's parent. |
