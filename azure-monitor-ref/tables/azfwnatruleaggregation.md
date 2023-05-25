@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWNatRuleAggregation
@@ -30,6 +30,8 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
+| _IsBillable | string |  |
 | NatRuleCount | int | Aggregated count of NAT rules. |
 | Policy | string | Name of the policy in which the triggered rule resides. |
 | Protocol | string | Packet's network protocol. For example: UDP, TCP. |
