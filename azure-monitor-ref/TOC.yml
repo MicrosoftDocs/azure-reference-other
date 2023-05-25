@@ -812,3 +812,5 @@
     href: tables/signalrservicediagnosticlogs.md
   - name: SigninLogs
     href: tables/signinlogs.md
+  - name: SQLAssessmentRecommendation
+    href: tables/sqlassessmentrecommendation.md
