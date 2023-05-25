@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # MicrosoftDataShareReceivedSnapshotLog
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The name of the log that belongs to |
 | CorrelationId | string | CorrelationId of the event, this can be use as a reference to join with other tables |
 | DataSetMappingType | string | Indicating the dataSetMapping type, this can be Blob/container/bolbfolder,etc |
@@ -39,6 +40,7 @@ ms.date: 5/19/2023
 | EndTime | string | Datashare synchronization end time, can be empty if job not finished |
 | FilesRead | string | Number of files read from source |
 | FilesWritten | string | Number of files written into sink |
+| _IsBillable | string |  |
 | OperationName | string | The name of the operation represented by this event |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SizeRead | string | Size of files read from source |
