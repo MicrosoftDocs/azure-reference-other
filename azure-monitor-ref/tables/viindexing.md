@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # VIIndexing
@@ -32,12 +32,14 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AccountId | string | Video Indexer account ID. |
 | AccountName | string | Video Indexer account name. |
+| _BilledSize | real |  |
 | CorrelationId | string | A unique record identifier. |
 | DurationMs | int | The operation duration in milliseconds. |
 | ErrorCode | string | The error code if the operation failed |
 | ErrorDescription | string | The description of the error code . |
 | ExternalUserId | string | Caller external user Id. |
 | IndexingProperties | dynamic | Properties of the indexing operation request. |
+| _IsBillable | string |  |
 | Location | string | Video Indexer resource location. |
 | OperationName | string | The name of the operation that triggered the event. |
 | OperationVersion | string | Video Indexer operations API version. |
