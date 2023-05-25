@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WebPubSubHttpRequest
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIpAddress | string | The IP of the client or server connects to Web PubSub service. |
 | DurationMs | string | The duration in millisecond unit between the request is received and processed. |
 | Headers | string | The additional information passed by the client and the server with an HTTP request or response. |
 | HttpMethod | string | The HTTP method. |
+| _IsBillable | string |  |
 | Level | string | The level of the log. Can be 'Informational', 'Warning', 'Error' or 'Critical'. |
 | Location | string | The location of Azure Web PubSub service. |
 | Message | string | The message of the log event. It provides details about the event. |
