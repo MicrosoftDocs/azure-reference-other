@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightRangerAuditLogs
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 | AccessName | string | Name of the access method. |
 | Action | string | Type of action made by the event. |
 | AdditionalInfo | string | Additional info about the request including the remote and forwarded IPs |
+| _BilledSize | real |  |
 | CliIpAddress | string | IP address of where CLI request was made. |
 | CliType | string | Type of CLI used to create request. |
 | ClusterName | string | Name of cluster. |
@@ -46,6 +47,7 @@ ms.date: 5/19/2023
 | EventDurationMs | int | Duration of the event in milliseconds. |
 | HostName | string | Name of host where log was emitted. |
 | Id | string | ID of the event request. |
+| _IsBillable | string |  |
 | LogType | string | Type of log the record came from. |
 | OperationName | string | The operation associated with log record. |
 | Policy | int | Code representing the policy. |
