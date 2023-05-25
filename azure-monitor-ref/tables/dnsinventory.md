@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DnsInventory
@@ -33,11 +33,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string |  |
 | DnsSecSigned | string |  |
 | DomainName | string |  |
 | DynamicUpdate | string |  |
 | ForestName | string |  |
+| _IsBillable | string |  |
 | NameServers | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceRecordName | string |  |
