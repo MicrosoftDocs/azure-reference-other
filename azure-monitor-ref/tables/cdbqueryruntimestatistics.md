@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CDBQueryRuntimeStatistics
@@ -33,8 +33,10 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AccountName | string | The name of the Cosmos DB account against which the query operation was issued. |
 | ActivityId | string | The unique identifier (GUID) for this query operation, which can be correlating with the CDBDataPlaneRequests table for additional debugging. |
+| _BilledSize | real |  |
 | CollectionName | string | The name of the Cosmos DB container against which this query was issued. |
 | DatabaseName | string | The name of the Cosmos DB database containing the Cosmos DB container against which this query was issued. |
+| _IsBillable | string |  |
 | PartitionKeyRangeId | string | The physical partition to which this query was issued. |
 | QueryText | string | The query text (obfuscated by default, full query string provided upon request) for the operation. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
