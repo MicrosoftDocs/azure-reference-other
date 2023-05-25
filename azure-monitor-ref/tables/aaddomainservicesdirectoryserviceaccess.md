@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AADDomainServicesDirectoryServiceAccess
@@ -35,10 +35,12 @@ ms.date: 5/19/2023
 | AttributeLDAPDisplayName | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | AttributeSyntaxOID | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | AttributeValue | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| _BilledSize | real |  |
 | Category | string |  |
 | CorrelationId | string |  |
 | DSName | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | DSType | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| _IsBillable | string |  |
 | NewObjectDN | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | ObjectClass | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | ObjectDN | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
@@ -48,8 +50,8 @@ ms.date: 5/19/2023
 | OperationName | string |  |
 | OperationType | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | RecordId | string | A unique identifier corresponding to this record. |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string |  |
 | ResultType | string |  |
 | SourceSystem | string |  |

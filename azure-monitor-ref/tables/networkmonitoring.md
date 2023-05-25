@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NetworkMonitoring
@@ -39,6 +39,7 @@ ms.date: 5/19/2023
 | AzureHopListIPAddress | string |  |
 | AzureHopListResourceID | string |  |
 | AzureHopListType | string |  |
+| _BilledSize | real |  |
 | BitsInPerSecond | long |  |
 | BitsOutPerSecond | long |  |
 | CircuitName | string |  |
@@ -126,6 +127,7 @@ ms.date: 5/19/2023
 | IpV4Subnets | string |  |
 | IpV6Addresses | string |  |
 | IpV6Subnets | string |  |
+| _IsBillable | string |  |
 | IsPrimary | bool |  |
 | L2ConnectedNodes | string |  |
 | L2ConnectedPorts | string |  |

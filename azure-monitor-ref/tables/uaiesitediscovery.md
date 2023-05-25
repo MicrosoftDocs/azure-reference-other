@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UAIESiteDiscovery
@@ -29,11 +29,13 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | ActiveXGuid | string |  |
 | ActiveXName | string |  |
+| _BilledSize | real |  |
 | BrowserStateReason | string |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | DocMode | string |  |
 | DocModeReason | string |  |
+| _IsBillable | string |  |
 | IsRollup | bool |  |
 | NumberOfVisits | int |  |
 | SiteName | string |  |

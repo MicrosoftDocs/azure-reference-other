@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADFSandboxPipelineRun
@@ -31,6 +31,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Annotations | string |  |
+| _BilledSize | real |  |
 | Category | string |  |
 | CorrelationId | string |  |
 | End | datetime |  |
@@ -39,6 +40,7 @@ ms.date: 5/19/2023
 | EventMessage | string |  |
 | FailureType | string |  |
 | Input | string |  |
+| _IsBillable | string |  |
 | Level | string |  |
 | Location | string |  |
 | OperationName | string |  |

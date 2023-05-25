@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppPlatformLogsforSpring
@@ -32,10 +32,12 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AppName | string | The application name that emitted the log |
 | AppTimestamp | datetime | The log timestamp (UTC) from user application log |
+| _BilledSize | real |  |
 | Category | string | Log Category |
 | CustomLevel | string | Verbosity level of log |
 | ExceptionClass | string | The exceptionClass of the log |
 | InstanceName | string | The instance name that emitted the log |
+| _IsBillable | string |  |
 | Log | string | The content of the log |
 | Logger | string | The logger from user application log |
 | MDC | string | Customized MDC field in the log |

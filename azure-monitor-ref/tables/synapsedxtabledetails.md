@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseDXTableDetails
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CachingPolicy | dynamic | Table's effective entity caching policy, serialized as JSON |
 | CachingPolicyOrigin | string | Caching policy origin entity (Table/Database/Cluster) |
 | CorrelationId | string | The client request ID |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | HotExtentSize | real | Total size of extents (compressed size + index size) in the table, stored in the hot cache (in bytes) |
 | HotOriginalSize | long | Total original size of data in the table, stored in the hot cache (in bytes) |
 | HotRowCount | long | Total number of rows in the table, stored in the hot cache |
+| _IsBillable | string |  |
 | MaxExtentsCreationTime | datetime | Maximum creation time of an extent in the table (or null, if there are no extents) |
 | MinExtentsCreationTime | datetime | Minimum creation time of an extent in the table (or null, if there are no extents) |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

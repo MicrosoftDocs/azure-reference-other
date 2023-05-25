@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ACRConnectedClientList
@@ -31,9 +31,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CacheName | string | The name of the Azure Cache for Redis instance. |
 | ClientCount | int | The number of Redis client connections from the associated IP address. |
 | ClientIp | string | The Redis client IP address. |
+| _IsBillable | string |  |
 | Location | string | The location (region) the Azure Cache for Redis instance was accessed in. |
 | OperationName | string | The Redis operation associated with the log record. |
 | PrivateLinkIpv6 | string | The Redis client private link IPv6 address (if applicable). |

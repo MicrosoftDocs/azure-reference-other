@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WVDAutoscaleEvaluationPooled
@@ -32,12 +32,14 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | ActiveSessionHostCount | int | Number of session hosts accepting user connections. |
 | ActiveSessionHostsPercent | real | Percent of session hosts in the host pool considered active by Autoscale. |
+| _BilledSize | real |  |
 | ConfigCapacityThresholdPercent | real | Capacity threshold percent. |
 | ConfigMinActiveSessionHostsPercent | real | Minimum percent of session hosts that should be active. |
 | ConfigScheduleName | string | Name of schedule used in the evaluation. |
 | ConfigSchedulePhase | string | Schedule phase at the time of evaluation. |
 | CorrelationId | string | A GUID generated for this Autoscale evaluation. |
 | ExcludedSessionHostCount | int | Number of session hosts excluded from being managed by Autoscale. |
+| _IsBillable | string |  |
 | MaxSessionLimitPerSessionHost | int | The 'MaxSessionLimit' value defined on the host pool. The is the maximum number of user sessions allowed per session host. |
 | Properties | dynamic | Additional information. The fields included here may be changed in the future. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecureScores
@@ -27,9 +27,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AssessedResourceId | string | The ID of the assessed resource |
+| _BilledSize | real |  |
 | CurrentScore | real | The current secure score per control |
 | DisplayName | string | The initiative�s name |
 | Environment | string | Data source environment. |
+| _IsBillable | string |  |
 | IsSnapshot | bool | Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'. |
 | MaxScore | int | The maximum control score |
 | PercentageScore | real | The percentage of the score (current score divided by max score) |

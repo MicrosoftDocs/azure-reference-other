@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # TSIIngress
@@ -30,11 +30,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | Category of the log event. |
 | CorrelationId | string | The correlation ID of the request. |
 | ErrorCode | string | The code associated with the error |
 | EventSourceProperties | dynamic | A collection of properties specific to your event source. Contains details such as the consumer group and the access key name. |
 | EventSourceType | string | The type of event source. It could either be Event hub or IoT hub. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the event. |
 | Location | string | The location of the resource. |
 | Message | string | The message associated with the error. Includes details on what went wrong and how to mitigate the error. |

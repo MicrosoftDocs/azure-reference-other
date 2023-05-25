@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # OLPSupplyChainEvents
@@ -30,11 +30,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CorrelationId | string | Unique identifier to be used to correlate logs with OLPSupplyChainEntityOperations. |
 | DurationMs | real | Time it took to service the REST API request, in milliseconds. |
 | EventBody | dynamic | The event body. |
 | EventId | string | Unique identifier for each event. |
 | EventType | string | The type of the event, can be Microsoft.OpenLogisticsPlatform.EntityCreated, Microsoft.OpenLogisticsPlatform.EntityUpdated etc. |
+| _IsBillable | string |  |
 | OperationName | string | The operation name for which the log entry was created. |
 | RequestId | string | Unique identifier to be used to correlate request logs. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

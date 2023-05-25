@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseSqlPoolRequestSteps
@@ -30,12 +30,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of the log. |
 | Command | string | The SQL command of the execution requests. |
 | DistributionType | string | The distribution type of the execution requests. |
 | EndCompileTime | datetime | The end compile time (UTC) of the execution requests. |
 | EndTime | datetime | The end time (UTC) for the execution requests. |
 | ErrorId | string | The errorId of the execution requests. |
+| _IsBillable | string |  |
 | LocationType | string | The location type of the execution requests. |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ACSCallDiagnostics
@@ -30,11 +30,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | EndpointId | string | ID of the endpoint. |
 | EndpointType | string | Type of the endpoint. |
 | Identifier | string | The indentifier of the call used to correlate. Can be used to identify correlated events between multiple tables. |
+| _IsBillable | string |  |
 | JitterAvg | int | Average delay of sending the packages in milliseconds. |
 | JitterMax | int | Max delay of sending the packages in milliseconds. |
 | MediaType | string | Type of Media. |

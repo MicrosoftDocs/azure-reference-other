@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UCDOStatus
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD device ID. |
+| _BilledSize | real |  |
 | BWOptPercent28Days | real | Bandwidth optimization (as a percentage of savings of total bandwidth otherwise incurred) as a result of using delivery optimization for this device, computed on a rolling 28-day basis. |
 | BWOptPercent7Days | real | Bandwidth optimization (as a percentage of savings of total bandwidth otherwise incurred) as a result of using delivery optimization for this device, computed on a rolling 7-day basis. |
 | BytesFromCache | long | Total number of bytes downloaded from cache. |
@@ -47,6 +48,7 @@ ms.date: 5/19/2023
 | DownloadModeSrc | string | The source of the download mode configuration. |
 | GlobalDeviceId | string | Microsoft global device identifier. This is a identifier used by Microsoft internally. |
 | GroupID | string | The delivery optimization group ID. |
+| _IsBillable | string |  |
 | ISP | string | The internet service provider estimation. |
 | LastCensusSeenTime | datetime | A DateTime corresponding to the last time the device sent data to Microsoft. Indicates freshness of any fields of this record. |
 | NoPeersCount | long | The count of peers this device interacted with. |

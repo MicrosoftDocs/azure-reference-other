@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Update
@@ -41,6 +41,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | ApprovalSource | string |  |
 | Approved | bool |  |
+| _BilledSize | real |  |
 | BulletinID | string |  |
 | BulletinUrl | string |  |
 | Classification | string |  |
@@ -50,6 +51,7 @@ ms.date: 5/19/2023
 | InstallTimeAvailable | bool |  |
 | InstallTimeDeviationRangeSeconds | real |  |
 | InstallTimePredictionSeconds | real |  |
+| _IsBillable | string |  |
 | KBID | string |  |
 | ManagementGroupName | string |  |
 | MSRCBulletinID | string |  |
@@ -68,8 +70,8 @@ ms.date: 5/19/2023
 | RebootBehavior | string |  |
 | Resource | string |  |
 | ResourceGroup | string |  |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceProvider | string |  |
 | ResourceType | string |  |
 | RevisionNumber | string |  |

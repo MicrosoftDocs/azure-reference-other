@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CCFApplicationLogs
@@ -31,7 +31,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | File | string | The file name that generated the log message. |
+| _IsBillable | string |  |
 | Level | string | An error or informational message indicating if the service processed the request. |
 | LineNumber | int | The line number in the file that the message refers to. |
 | Location | string | The Azure datacenter region where the pod is deployed. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWThreatIntel
@@ -31,9 +31,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Action | string | Action taken by the firewall following the Threat Intelligence hit. |
+| _BilledSize | real |  |
 | DestinationIp | string | Packet's destination IP address. |
 | DestinationPort | int | Packet's destination port. |
 | Fqdn | string | Request's target address in FQDN (Fully qualified Domain Name). For example: www.microsoft.com. |
+| _IsBillable | string |  |
 | IsTlsInspected | bool | True if connection is TLS inspected. False otherwise. |
 | Protocol | string | Packet's network protocol. For example: UDP, TCP. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

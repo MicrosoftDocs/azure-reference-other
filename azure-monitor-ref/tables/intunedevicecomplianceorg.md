@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # IntuneDeviceComplianceOrg
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ComplianceState | string | The compliance state of the device. |
 | DeviceHealthThreatLevel | string | The device health threat level. |
 | DeviceId | string | The Id of the device. |
@@ -34,6 +35,7 @@ ms.date: 5/19/2023
 | DeviceType | string | The type of the device. |
 | IMEI | string | The international mobile equipment identifier of the device. |
 | InGracePeriodUntil | string | The device grace period end time. |
+| _IsBillable | string |  |
 | LastContact | string | The date and time of last contact. |
 | ManagementAgents | string | The management agents. |
 | OS | string | The operating system of the device. |

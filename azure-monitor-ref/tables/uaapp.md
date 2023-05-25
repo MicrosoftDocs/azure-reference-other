@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UAApp
@@ -34,11 +34,13 @@ ms.date: 5/19/2023
 | AppType | string |  |
 | AppVendor | string |  |
 | AppVersion | string |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | ComputersWithIssues | int |  |
 | Guidance | string |  |
 | Importance | string |  |
+| _IsBillable | string |  |
 | IsRollup | bool |  |
 | Issue | string |  |
 | MonthlyActiveComputers | int |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CDBControlPlaneRequests
@@ -39,6 +39,7 @@ ms.date: 5/19/2023
 | AssociatedRoleDefinitionId | string | The ID of the IAM role definition for the IAM role created for the account. |
 | BackupIntervalInMinutes | real | The time (in minutes) between consecutive backup snapshots for the Cosmos DB account. |
 | BackupRetentionIntervalInHours | real | The duration of time (in hours) for which backup snapshots are retained for the Cosmos DB account. |
+| _BilledSize | real |  |
 | Cors | string | Collection of account’s Cross Origin Resource Sharing Rules |
 | CurrentWriteRegion | string | The current write region for this account (applies when a regional failover is triggered to choose a new write region). |
 | DefaultConsistencyLevel | string | The default consistency level for the Cosmos DB account. |
@@ -54,6 +55,7 @@ ms.date: 5/19/2023
 | HttpMethod | string | The HTTP method issued for this control plane operation. |
 | HttpStatusCode | int | The HTTP status code of the control plane operation. |
 | IpRangeFilter | string | The IP range filter specified as part of the VNet rules for the Cosmos DB account. |
+| _IsBillable | string |  |
 | MaxStalenessIntervalInSeconds | real | The maximum staleness value (in seconds) for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MaxStalenessPrefix | string | The max staleness prefix for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MultipleWriteLocations | bool | Boolean flag indicating if the Cosmos DB account is a multi-master account. |

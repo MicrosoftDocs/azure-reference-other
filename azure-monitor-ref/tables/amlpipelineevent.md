@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlPipelineEvent
@@ -42,8 +42,10 @@ ms.date: 5/19/2023
 | AmlPipelineId | string | The ID of the AML pipeline. |
 | AmlWorkspaceId | string | The unique ID of the AML workspace. |
 | AmlWorkspaceName | string | The name of the AML workspace. |
+| _BilledSize | real |  |
 | CorrelationId | string | A GUID used to group together a set of related events. |
 | Identity | dynamic | The identity of the user or application that performed the operation. |
+| _IsBillable | string |  |
 | OperationName | string | The name of the operation associated with the log entry. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultType | string | The status of the event. Typical values include Started, In Progress, Succeeded, Failed, Active, and Resolved. |

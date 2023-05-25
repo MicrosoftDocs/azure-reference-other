@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NWConnectionMonitorDestinationListenerResult
@@ -24,6 +24,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ConnectionMonitorResourceId | string | The connection monitor resource id of the test |
 | DestinationAddress | string | The address of the destination configured for the test |
 | DestinationAgentId | string | The destination agent id |
@@ -33,6 +34,7 @@ ms.date: 5/19/2023
 | DestinationResourceId | string | The resource id of the Destination machine |
 | DestinationSubnet | string | If applicable, the subnet of the destination configured for the test |
 | DestinationType | string | The type of the destination machine configured for the test |
+| _IsBillable | string |  |
 | Issues | string | The issues identfied by Destination Listener |
 | ListeningOutcome | string | The listening outcome result |
 | Protocol | string | The protocol of the test |

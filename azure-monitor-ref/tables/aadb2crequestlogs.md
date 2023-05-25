@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AADB2CRequestLogs
@@ -32,8 +32,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AADTenantId | string | The AAD tenant ID of associated request. |
+| _BilledSize | real |  |
 | CallerIpAddress | string | Hashed format of caller IP address. Can be used to identify if a single IP address is using a large portion of traffic. |
 | CorrelationId | string | The ID for correlated log analytics events. Can be used to identify correlated events between multiple tables. |
+| _IsBillable | string |  |
 | OperationName | string | Name of the operation. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultSignature | string | The HTTP status code of the corresponding REST call. |

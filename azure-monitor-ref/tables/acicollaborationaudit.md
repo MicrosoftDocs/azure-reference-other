@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ACICollaborationAudit
@@ -31,6 +31,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CorrelationId | string | The ID for correlated pipeline run events. Can be used to identify audits that belong to the same pipeline run. |
 | EntitlementResult | string | The result of the entitlement evaluation. Options are: Granted = access granted; Denied = access was not granted; Revoked = accessed was revoked because the pipeline could not be fully approved; Actualized = the resource was accessed by the pipeline run. |
 | EntitlementSummary | string | Textual summary of the granted access. |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | GrantSource | string | The azure resource ID of the resource the grant is based on. |
 | GrantSourceType | string | The type of the the resource the grant is based on. |
 | GrantType | string | The method used to grant access to the resource (Owned, Reference, Entitlement). |
+| _IsBillable | string |  |
 | Location | string | The Location (Region) the resource was accessed in. |
 | OperationName | string | The operation associated with audit record. |
 | ParticipantName | string | The participant friendly name as used in the contract negotiation. |

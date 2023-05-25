@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightSparkEnvironmentEvents
@@ -31,10 +31,12 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
+| _BilledSize | real |  |
 | ClusterDnsName | string | The DNS name of the cluster running the application. |
 | ClusterTenantId | string | The tenant ID of the cluster running the application. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the application. |
+| _IsBillable | string |  |
 | Region | string | The region of the cluster running the application. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Role | string | The type of node running the application. |

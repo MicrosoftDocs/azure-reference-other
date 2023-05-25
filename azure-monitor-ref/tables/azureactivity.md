@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AzureActivity
@@ -146,6 +146,7 @@ ms.date: 5/19/2023
 | ActivitySubstatusValue | string | Substatus of the operation  in display-friendly format. E.g. OK (HTTP Status Code: 200). |
 | Authorization | string | Blob of RBAC properties of the event. Usually includes the “action”, “role” and “scope” properties. Stored as string. The use of Authorization_d should be preferred going forward. |
 | Authorization_d | dynamic | Blob of RBAC properties of the event. Usually includes the “action”, “role” and “scope” properties. Stored as dynamic column. |
+| _BilledSize | real |  |
 | Caller | string | GUID of the caller. |
 | CallerIpAddress | string | IP address of the user who has performed the operation UPN claim or SPN claim based on availability. |
 | Category | string |  |
@@ -157,6 +158,7 @@ ms.date: 5/19/2023
 | EventSubmissionTimestamp | datetime | Timestamp when the event became available for querying. |
 | Hierarchy | string | Management group hierarchy of the management group or subscription that event belongs to. |
 | HTTPRequest | string | Blob describing the Http Request. Usually includes the “clientRequestId”, “clientIpAddress” and “method” (HTTP method. For example, PUT). |
+| _IsBillable | string |  |
 | Level | string | Level of the event. One of the following values: Critical, Error, Warning, Informational and Verbose. |
 | OperationId | string | GUID of the operation |
 | OperationName | string |  |
@@ -165,8 +167,8 @@ ms.date: 5/19/2023
 | Properties_d | dynamic | Set of \<Key Value\> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column. |
 | Resource | string |  |
 | ResourceGroup | string | Resource group name of the impacted resource. |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceProvider | string |  |
 | ResourceProviderValue | string | Id of the resource provider for the impacted resource - e.g. Microsoft.Storage. |
 | SourceSystem | string | Azure is used always for AzureActivity |

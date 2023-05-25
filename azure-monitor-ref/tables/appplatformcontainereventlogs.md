@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppPlatformContainerEventLogs
@@ -31,11 +31,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | App | string | The name of the application that emitted the container event. |
+| _BilledSize | real |  |
 | Count | int | The count of this container event happened. |
 | Deployment | string | The name of the deployment that emitted the container event. |
 | Event | string | The name of container event, including: 'Backoff', 'Pulled', 'Created', 'Started', 'Unhealty' and so on. |
 | FirstTimestamp | datetime | The timestamp when this container event was first seen. |
 | Instance | string | The name of the instance that emitted the container event. |
+| _IsBillable | string |  |
 | LastTimestamp | datetime | The timestamp when this container event was last seen. |
 | Message | string | The detailed message of the container event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

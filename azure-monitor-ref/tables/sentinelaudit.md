@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SentinelAudit
@@ -28,9 +28,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CorrelationId | string | A unique record identifier. |
 | Description | string | The operation description. |
 | ExtendedProperties | dynamic | Additional information based on the resource type. |
+| _IsBillable | string |  |
 | OperationName | string | The name of the operation that triggered the event. |
 | SentinelResourceId | string | The Sentinel resource ID. |
 | SentinelResourceKind | string | The resource kind, for example: connector kind (such as Office365, AmazonWebServicesCloudTrail), alert rule kind (scheduld). |

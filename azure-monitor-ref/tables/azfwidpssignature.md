@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWIdpsSignature
@@ -31,10 +31,12 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Action | string | Action taken by the firewall following the IDPS signature hit. |
+| _BilledSize | real |  |
 | Category | string | Category of the matched IDPS signature. |
 | Description | string | Description of the matched IDPS signature. |
 | DestinationIp | string | Packet's destination IP address. |
 | DestinationPort | int | Packet's destination port. |
+| _IsBillable | string |  |
 | Protocol | string | Packet's network protocol. For example: UDP, TCP. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Severity | int | Severity of the matched IDPS signature. |

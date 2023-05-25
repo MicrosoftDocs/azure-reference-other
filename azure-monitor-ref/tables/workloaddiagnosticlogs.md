@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WorkloadDiagnosticLogs
@@ -28,8 +28,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of the log. |
 | Computer | string | Name of the Computer generating the log. |
+| _IsBillable | string |  |
 | Message | string | The message of the log entry. |
 | SourceSystem | string |  |
 | Status | string | The status of the record. Example: Error, Warning, etc. |

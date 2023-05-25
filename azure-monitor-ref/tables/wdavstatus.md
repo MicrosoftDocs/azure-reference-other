@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WDAVStatus
@@ -28,12 +28,14 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationVersion | string |  |
+| _BilledSize | real |  |
 | CloudBlockLevel | string |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | DefinitionVersion | string |  |
 | DetailedStatus | string |  |
 | EngineVersion | string |  |
+| _IsBillable | string |  |
 | LastDefinitionUpdateTime | datetime |  |
 | LastScan | datetime |  |
 | MoreInformation | string |  |

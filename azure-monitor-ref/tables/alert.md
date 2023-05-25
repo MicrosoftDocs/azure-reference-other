@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Alert
@@ -41,6 +41,7 @@ ms.date: 5/19/2023
 | AlertTypeDescription | string |  |
 | AlertTypeNumber | int |  |
 | AlertValue | int |  |
+| _BilledSize | real |  |
 | Comments | string |  |
 | Computer | string |  |
 | Custom1 | string |  |
@@ -57,6 +58,7 @@ ms.date: 5/19/2023
 | Flags | int |  |
 | FlagsDescription | string |  |
 | HostName | string |  |
+| _IsBillable | string |  |
 | LastModifiedBy | string | Name of the user who last modified the alert. |
 | LinkToSearchResults | string |  |
 | ManagementGroupName | string | Name of the management group for System Center Operations Manager agents.  |
@@ -69,8 +71,8 @@ ms.date: 5/19/2023
 | RemediationRunbookName | string |  |
 | RepeatCount | int | Number of times the same alert was generated for the same monitored object since being resolved. |
 | ResolvedBy | string | Name of the user who resolved the alert. Empty if the alert has not yet been resolved. |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceType | string |  |
 | ResourceValue | string |  |
 | RootObjectName | string |  |

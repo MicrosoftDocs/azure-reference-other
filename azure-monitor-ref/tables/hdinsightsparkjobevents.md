@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightSparkJobEvents
@@ -31,11 +31,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
+| _BilledSize | real |  |
 | ClusterDnsName | string | The DNS name of the cluster running the job. |
 | ClusterTenantId | string | The tenant  ID of the cluster running the job. |
 | CompletionTime | datetime | The time (UTC) the job was completed. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the job. |
+| _IsBillable | string |  |
 | JobId | string | The ID of the job. |
 | JobResult | string | The result of the job. |
 | Region | string | The region of the cluster running the job. |

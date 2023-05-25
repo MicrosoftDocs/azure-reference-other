@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WUDOAggregatedStatus
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | BWOptPercent28Days | real |  |
 | BytesFromCDN | long |  |
 | BytesFromGroupPeers | long |  |
@@ -35,6 +36,7 @@ ms.date: 5/19/2023
 | ContentType | string |  |
 | DeviceCount | int |  |
 | DownloadMode | string |  |
+| _IsBillable | string |  |
 | SourceSystem | string |  |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |

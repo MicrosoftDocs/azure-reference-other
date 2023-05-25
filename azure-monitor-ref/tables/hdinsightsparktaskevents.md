@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightSparkTaskEvents
@@ -32,6 +32,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
 | AttemptId | string | The ID of task attempt. |
+| _BilledSize | real |  |
 | BytesRead | long | The number bytes read during the task. |
 | BytesWritten | long | The number of bytes written by the task. |
 | ClusterDnsName | string | The DNS name of the cluster running the task. |
@@ -48,6 +49,7 @@ ms.date: 5/19/2023
 | Host | string | The FQDN of the host running the task. |
 | InputMetrics | long | The metrics associated with the task input. |
 | IpAddress | string | The IP Address of the node running the task. |
+| _IsBillable | string |  |
 | JvmGcTime | long | The time the JVM spent garbage collecting. |
 | Killed | bool | Boolean describing whether the task was killed. |
 | LaunchTime | datetime | The time (UTC) the task was launched. |

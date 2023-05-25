@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AutoscaleEvaluationsLog
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AutoscaleMetricName | string |  |
 | AvailabilitySet | string |  |
+| _BilledSize | real |  |
 | Category | string |  |
 | CloudServiceName | string |  |
 | CloudServiceRole | string |  |
@@ -46,6 +47,7 @@ ms.date: 5/19/2023
 | EvaluationResult | string |  |
 | EvaluationTime | datetime |  |
 | InstanceUpdateReason | string |  |
+| _IsBillable | string |  |
 | LastScaleActionOperationId | string |  |
 | LastScaleActionOperationStatus | string |  |
 | LastScaleActionTime | datetime |  |
@@ -64,8 +66,8 @@ ms.date: 5/19/2023
 | ProfileEvaluationTime | datetime |  |
 | ProfileSelected | bool |  |
 | Projection | real |  |
-| ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
 | ResultDescription | string |  |
 | ResultType | string |  |
 | SelectedAutoscaleProfile | string |  |

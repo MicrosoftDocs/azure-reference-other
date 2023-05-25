@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AzureDevOpsAuditing
@@ -32,6 +32,7 @@ ms.date: 5/19/2023
 | ActorUserId | string | When the action was performed by a user or Azure DevOps service, this value represents that actor's user identifier. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field, along with ActorUserId, is populated, ActorClientId will be 00000000-0000-0000-0000-000000000000. |
 | Area | string | Part of the Azure DevOps product where the auditing event occurred. |
 | AuthenticationMechanism | string | Type of authentication used by the actor. |
+| _BilledSize | real |  |
 | Category | string | Type of action that occurred when the auditing event was logged. |
 | CategoryDisplayName | string | Type of action that occurred when the auditing event was logged. |
 | CorrelationId | string | CorrelationId allows two or more auditing events to be grouped together. This happens when a single action causes a cascade of auditing entries. An example being project creation. |
@@ -39,6 +40,7 @@ ms.date: 5/19/2023
 | Details | string | Description of what happened. |
 | Id | string | The identifier for the audit event, unique across services. |
 | IpAddress | string | IP address where the event originated. |
+| _IsBillable | string |  |
 | OperationName | string | The unique identifier for the type of auditing event that occurred. For example, Git.CreateRepo identifies the an auditing event for Git repository creation. |
 | ProjectId | string | Unique identifier of the project that an auditing event occurred in. If not provided then the event isn't scoped to a particular project. |
 | ProjectName | string | Friendly name of the project that an auditing event occurred in. If not provided then the event isn't scoped to a particular project. |

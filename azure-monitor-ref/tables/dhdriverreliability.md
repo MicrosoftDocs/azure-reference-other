@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DHDriverReliability
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | DeviceLastSeenTime | datetime |  |
@@ -36,5 +37,6 @@ ms.date: 5/19/2023
 | DriverVendor | string |  |
 | DriverVersion | string |  |
 | HardwareType | string |  |
+| _IsBillable | string |  |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |

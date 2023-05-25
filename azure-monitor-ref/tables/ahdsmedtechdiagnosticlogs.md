@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AHDSMedTechDiagnosticLogs
@@ -30,6 +30,8 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
+| _IsBillable | string |  |
 | LogType | string | Type of the log entry. |
 | Message | string | Description of the log entry. |
 | OperationName | string | The operation stage of the service from which the log entry was generated. |

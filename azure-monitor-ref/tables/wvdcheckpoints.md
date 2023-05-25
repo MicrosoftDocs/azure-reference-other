@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WVDCheckpoints
@@ -33,7 +33,9 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActivityType | string | The type of activity for which this checkpoint was reported. |
+| _BilledSize | real |  |
 | CorrelationId | string | The correlation Id for the activity. |
+| _IsBillable | string |  |
 | Name | string | The name of the checkpoint. |
 | Parameters | dynamic | The parameters for the checkpoint. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

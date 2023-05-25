@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ACSCallAutomationMediaSummary
@@ -30,7 +30,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the operation. |
 | OperationId | string | The ID for media events. Can be used to identify operation events between ACSCallAutomationIncomingOperations table and this. |
 | OperationName | string | The operation associated with log record. |

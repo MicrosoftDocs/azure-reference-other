@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ACSCallAutomationIncomingOperations
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallConnectionId | string | Id of the call connection/leg, if available. |
 | CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | int | The duration of the operation in milliseconds. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the operation. |
 | OperationId | string | The ID for media events. Can be used to identify operation events between ACSCallAutomationMediaSummary table and this. |
 | OperationName | string | The operation associated with log record. |

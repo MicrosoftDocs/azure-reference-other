@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AKSAuditAdmin
@@ -34,6 +34,8 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | Annotations | dynamic | An unstructed key-value map associated with this audit event. These annotations are set by plugins as part of the request serving chain and are included at the Metadata event level. |
 | AuditId | string | Unique audit ID that is generated for each request. |
+| _BilledSize | real |  |
+| _IsBillable | string |  |
 | Level | string | Level (Metadata, Request, RequestResponse) of the audit event. |
 | ObjectRef | dynamic | The Kubernetes object reference this event was targeted for. This field does not apply for list requests nor non-resource requests. |
 | PodName | string | Name of the pod emitting this audit event. |

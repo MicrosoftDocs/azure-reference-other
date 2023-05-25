@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # PurviewDataSensitivityLogs
@@ -39,11 +39,13 @@ ms.date: 5/19/2023
 | AssetName | string | Name of the asset scanned. |
 | AssetPath | string | Path of the asset scanned in a source. |
 | AssetType | string | Type of asset that was scanned: file, column, table, generic. |
+| _BilledSize | real |  |
 | Classification | dynamic | Names of the classifications found. |
 | ClassificationDetails | dynamic | List of classification details: ID, name, count, uniquecount, confidence. |
 | ClassificationTrigger | string | The trigger for the classification event. |
 | FileExtension | string | File extension of the asset scanned. Only populated when asset type is a file. |
 | FileSize | long | File size of the asset scanned in bytes. Only populated when asset type is a file. |
+| _IsBillable | string |  |
 | PurviewAccountName | string | Name of the Purview account. |
 | PurviewRegion | string | Region of the Purview account. |
 | PurviewTenantId | string | Tenant ID associated with the Purview account. |

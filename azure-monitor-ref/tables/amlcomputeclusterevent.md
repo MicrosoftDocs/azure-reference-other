@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlComputeClusterEvent
@@ -32,6 +32,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AllocationState | string |  |
 | AllocationStateTransitionTime | datetime |  |
+| _BilledSize | real |  |
 | ClusterErrorCodes | string |  |
 | ClusterName | string |  |
 | ClusterType | string |  |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | IdleNodeCount | int |  |
 | InitialNodeCount | int |  |
 | InternalOperationName | string |  |
+| _IsBillable | string |  |
 | IsResizeGrow | string |  |
 | LeavingNodeCount | int |  |
 | MaximumNodeCount | int |  |

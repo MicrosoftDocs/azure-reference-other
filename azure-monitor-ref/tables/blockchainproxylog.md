@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # BlockchainProxyLog
@@ -31,12 +31,14 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Agent | string |  |
+| _BilledSize | real |  |
 | BlockchainMemberName | string |  |
 | BlockchainNodeName | string |  |
 | Category | string |  |
 | Code | string |  |
 | Consortium | string |  |
 | EthMethod | string |  |
+| _IsBillable | string |  |
 | LogLevel | string |  |
 | NodeHost | string |  |
 | NodeLocation | string |  |
@@ -48,8 +50,8 @@ ms.date: 5/19/2023
 | RequestTime | real |  |
 | Resource | string |  |
 | ResourceGroup | string |  |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceProvider | string |  |
 | SourceSystem | string |  |
 | SubscriptionId | string |  |

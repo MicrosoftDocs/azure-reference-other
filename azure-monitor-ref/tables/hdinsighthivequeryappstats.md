@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightHiveQueryAppStats
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClientIpAddress | string | The query client's IP address. |
 | ClusterName | string | Name of cluster. |
 | ClusterType | string | Type of cluster (e.g. LLAP or Hadoop). |
@@ -40,6 +41,7 @@ ms.date: 5/19/2023
 | ExecutionMode | string | The execution mode of the query. |
 | HiveInstanceType | string | The type of hive instance running the query. |
 | HostName | string | Name of host where log was emitted. |
+| _IsBillable | string |  |
 | IsMapReduce | bool | True if the query is a MapReduce query. |
 | IsTez | bool | True if the query is a Tez query. |
 | MetricName | string | Name of the metric for the record (e.g. AppsCompleted, AppsKilled, AppsFailed , etc). |

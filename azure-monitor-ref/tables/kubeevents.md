@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # KubeEvents
@@ -33,11 +33,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterId | string |  |
 | ClusterName | string |  |
 | Computer | string |  |
 | Count | real |  |
 | FirstSeen | datetime |  |
+| _IsBillable | string |  |
 | KubeEventType | string |  |
 | LastSeen | datetime |  |
 | Message | string |  |

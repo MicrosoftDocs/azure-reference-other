@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Dynamics365Activity
@@ -24,6 +24,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClientIP | string | The IP address of the device that was used when the activity was logged |
 | CorrelationId | string | A unique value used to associate related rows |
 | CrmOrganizationUniqueName | string | Unique name of the organization |
@@ -31,6 +32,7 @@ ms.date: 5/19/2023
 | EntityName | string | Name of the entity in the organization |
 | Fields | dynamic | JSON of Key Value pair reflecting the values that were created or updated |
 | InstanceUrl | string | URL to the instance |
+| _IsBillable | string |  |
 | ItemType | string | The type of object that was accessed or modified. See the ItemType table for details on the types of objects |
 | ItemUrl | string | URL to the record emitting the log |
 | Message | string | Name of the message called in the Dynamics365 SDK |

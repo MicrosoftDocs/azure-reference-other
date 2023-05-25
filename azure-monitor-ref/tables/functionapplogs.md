@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # FunctionAppLogs
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | ActivityId | string | The activity ID that logged the message. |
 | AppName | string | The Function application name. |
+| _BilledSize | real |  |
 | Category | string | The log category name. |
 | EventId | int | The event ID. |
 | EventName | string | The event name. |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | FunctionName | string | The name of the function that logged the message. |
 | HostInstanceId | string | The host instance ID. |
 | HostVersion | string | The Functions host version. |
+| _IsBillable | string |  |
 | Level | string | The log level. Valid values are Trace, Debug, Information, Warning, Error, or Critical. |
 | LevelId | int | The integer value of the log level. Valid values are 0 (Trace), 1 (Debug), 2 (Information), 3 (Warning), 4 (Error), or 5 (Critical). |
 | Location | string | The location of the server that processed the request (e.g., South Central US). |

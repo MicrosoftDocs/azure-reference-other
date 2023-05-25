@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # MicrosoftDynamicsTelemetryPerformanceLogs
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 | ActivityId | string | Unique identifier for an activity |
 | BatchJobId | long | Id of the batch job |
 | BatchJobTaskId | long | Task Id of the batch job |
+| _BilledSize | real |  |
 | CallStack | string | Execution call stack |
 | Category | string | Log category |
 | ClassName | string | Name of the class |
@@ -52,6 +53,7 @@ ms.date: 5/19/2023
 | ExecutionStatus | int | Execution Status of the query |
 | ExecutionTimeSeconds | real | Execution time in seconds for the AosDatabaseSlowQuery event |
 | formName | string | Name of the form in Finance and Operations |
+| _IsBillable | string |  |
 | IsValid | bool | Is it valid |
 | IsWarmEvent | bool | Is this a warm event |
 | LegalEntity | long | Legal entity |

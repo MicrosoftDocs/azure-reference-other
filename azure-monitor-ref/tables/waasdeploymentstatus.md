@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WaaSDeploymentStatus
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | DeferralDays | int |  |
@@ -35,6 +36,7 @@ ms.date: 5/19/2023
 | DeploymentStatus | string |  |
 | DetailedStatus | string |  |
 | ExpectedInstallDate | datetime |  |
+| _IsBillable | string |  |
 | LastScan | datetime |  |
 | OriginBuild | string |  |
 | OSBuild | string |  |

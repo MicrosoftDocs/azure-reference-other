@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityNestedRecommendation
@@ -28,11 +28,13 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AdditionalData | dynamic | Additional details of the sub-assessment |
 | AssessedResourceId | string | Id of the assessed resource |
+| _BilledSize | real |  |
 | Category | string | Category of the sub-assessment |
 | Cause | string | Cause of the assessment status |
 | Description | string | Description of the assessment status |
 | Id | string | Id of the assessed recommendation |
 | Impact | string | Description of the impact of this sub-assessment |
+| _IsBillable | string |  |
 | IsSnapshot | bool | Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'. |
 | NestedRecommendationId | string | Id of the nested-recommendation |
 | ParentRecommendationId | string | Id of the parent recommendation |

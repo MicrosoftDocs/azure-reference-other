@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppPlatformIngressLogs
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | BodyBytesSent | string | Number of bytes sent to a client, not counting the response header |
 | Host | string | The host name of the log |
 | HttpReferer | string | Value of the referer header |
 | HttpUserAgent | string | Value of user-agent header |
+| _IsBillable | string |  |
 | OperationName | string | The name of the operation represented by this event |
 | ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-\<namespace\>-\<service name\>-\<service port\> |
 | ProxyUpstreamName | string | Name of the upstream server. The format is upstream-\<namespace\>-\<service name\>-\<service port\> |

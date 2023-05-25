@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DatabricksJobs
@@ -31,8 +31,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActionName | string | The action of the request. |
+| _BilledSize | real |  |
 | Category | string | The service that logged the request. |
 | Identity | string | Information about the user that makes the requests. |
+| _IsBillable | string |  |
 | LogId | string | The unique identifier for the log messages. |
 | OperationName | string | The action, such as login, logout, read, write, etc. |
 | OperationVersion | string | The Databricks schema version of the diagnostic log format. |

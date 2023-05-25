@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZKVPolicyEvaluationDetailsLogs
@@ -31,8 +31,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | DurationMs | int | Time it took to service the REST API request, in milliseconds. This does not include the network latency, so the time you measure on the client side might not match this time. |
 | EvaluationDetails | dynamic | Details of Evaluation |
+| _IsBillable | string |  |
 | IsComplianceCheck | bool | Is Compliance check enabled. |
 | ObjectName | string | Name of the Object |
 | ObjectType | string | Type of Object |

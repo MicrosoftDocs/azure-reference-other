@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # IdentityInfo
@@ -36,6 +36,7 @@ ms.date: 5/19/2023
 | AdditionalMailAddresses | dynamic | Additional email addresses of the user |
 | Applications | string | All known applications this user account accessed |
 | AssignedRoles | dynamic | AAD roles the user account is assigned to |
+| _BilledSize | real |  |
 | BlastRadius | string | The potential impact of the user account in the org (low/medium/high) |
 | ChangeSource | string | The source of the latest change of the entity |
 | City | string | The city of the user account as defined in AAD |
@@ -51,6 +52,7 @@ ms.date: 5/19/2023
 | InvestigationPriority | int | The Investigation Priority score of the account |
 | InvestigationPriorityPercentile | int | The account score compared to the organization  |
 | IsAccountEnabled | bool | Indication if the account is enabled in AAD or not |
+| _IsBillable | string |  |
 | IsMFARegistered | bool | Indication if MFA is registered for this user account or not |
 | IsServiceAccount | bool | The account is a service account. |
 | JobTitle | string | The user account job title as defined in AAD |

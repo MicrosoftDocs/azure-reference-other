@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DeviceTvmSoftwareInventory
@@ -27,10 +27,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | DeviceId | string | Unique identifier for the device in the service |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device |
 | EndOfSupportDate | datetime | End-of-support (EOS) or end-of-life (EOL) date of the software product |
 | EndOfSupportStatus | string | Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date |
+| _IsBillable | string |  |
 | OSArchitecture | string | Architecture of the operating system running on the machine |
 | OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7 |
 | OSVersion | string | Version of the operating system running on the machine |

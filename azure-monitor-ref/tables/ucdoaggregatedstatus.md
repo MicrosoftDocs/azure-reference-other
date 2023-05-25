@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UCDOAggregatedStatus
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD device ID. |
+| _BilledSize | real |  |
 | BWOptPercent28Days | real | Bandwidth optimization (as a percentage of savings of total bandwidth otherwise incurred) as a result of using delivery optimization for this device, computed on a rolling 28-day basis. |
 | BytesFromCache | long | Total number of bytes downloaded from cache. |
 | BytesFromCDN | long | Total number of bytes downloaded from a CDN versus a peer. This counts against bandwidth optimization. |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | BytesFromPeers | long | Total number of bytes downloaded from peers. |
 | ContentType | string | The type of content being downloaded. |
 | DeviceCount | long | Total count of devices. |
+| _IsBillable | string |  |
 | SourceSystem | string |  |
 | TenantId | string |  |
 | TimeGenerated | datetime | Time at which this event was generated. |

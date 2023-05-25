@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # VMProcess
@@ -37,6 +37,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AgentId | string | Unique ID for the dependency agent installed on the server. |
+| _BilledSize | real |  |
 | CommandLine | string | The command line |
 | CompanyName | string | The name of the company |
 | Computer | string | The name of the computer. |
@@ -48,6 +49,7 @@ ms.date: 5/19/2023
 | FirstPid | int | The first PID in the process pool |
 | Group | string | The process group name for the process |
 | InternalName | string | The internal name |
+| _IsBillable | string |  |
 | Machine | string | The machine name of the server. |
 | Process | string | The name of the process. |
 | ProductName | string | The name of the product |

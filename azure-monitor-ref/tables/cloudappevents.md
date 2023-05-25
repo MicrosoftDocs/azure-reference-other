@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CloudAppEvents
@@ -38,6 +38,7 @@ ms.date: 5/19/2023
 | AppInstanceId | int | Unique identifier for the instance of an application |
 | Application | string | Application that performed the recorded action |
 | ApplicationId | int | Unique identifier for the application |
+| _BilledSize | real |  |
 | City | string | City where the client IP address is geolocated |
 | CountryCode | string | Two-letter code indicating the country where the client IP address is geolocated |
 | DeviceType | string | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer |
@@ -46,6 +47,7 @@ ms.date: 5/19/2023
 | IPTags | dynamic | Customer-defined information applied to specific IP addresses and IP address ranges |
 | IsAdminOperation | bool | Indicates whether the activity was performed by an administrator |
 | IsAnonymousProxy | bool | Indicates whether the IP address belongs to a known anonymous proxy |
+| _IsBillable | string |  |
 | IsExternalUser | bool | Indicates whether a user inside the network doesn't belong to the organization’s domain |
 | IsImpersonated | bool | Indicates whether the activity was performed by one user for another (impersonated) user |
 | ISP | string | Internet service provider associated with the IP address |

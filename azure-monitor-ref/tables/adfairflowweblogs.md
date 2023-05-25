@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADFAirflowWebLogs
@@ -24,10 +24,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of the log that belongs to Airflow application. |
 | CorrelationId | string | The correlation id of the event. |
 | DataFactoryName | string | The name of the Data factory. |
 | IntegrationRuntimeName | string | The name of the Integration runtime. |
+| _IsBillable | string |  |
 | Message | string | The application log of the Airflow event. |
 | OperationName | string | The name of the operation represented by this event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

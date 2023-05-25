@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WVDFeeds
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClientOS | string | The OS of the client that is requesting the feed (if available). |
 | ClientSideIPAddress | string | The remote IP address from the client side. |
 | ClientType | string | The type of the client that is requesting the feed (if available). |
@@ -37,6 +38,7 @@ ms.date: 5/19/2023
 | CorrelationId | string | The activity Id. |
 | IconFail | int | The number of Icons (PNG, ICO) files that failed to be retrieved. |
 | IconTotal | int | The total number of Icons (PNG, ICO) files that the client attempted to retrieve. |
+| _IsBillable | string |  |
 | IsClientPrivateLink | string | True if the client used a private link endpoint for the feed request. |
 | RDPFail | int | The number of RDP files that failed to be retrieved. |
 | RDPTotal | int | The total number of RDP files that the client attempted to retrieve. |

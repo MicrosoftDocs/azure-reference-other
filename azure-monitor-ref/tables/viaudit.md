@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # VIAudit
@@ -32,12 +32,14 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AccountId | string | The Video Indexer account ID. |
 | AccountName | string | The Video Indexer account name. |
+| _BilledSize | real |  |
 | CallerIpAddress | string | The caller IP address. |
 | Claims | dynamic | Caller claims details. |
 | CorrelationId | string | A unique record identifier. |
 | Description | string | The operation description. |
 | DurationMs | int | The operation duration in milliseconds. |
 | ExternalUserId | string | Caller external user Id. |
+| _IsBillable | string |  |
 | Location | string | The Video Indexer resource location. |
 | OperationName | string | The name of the operation that triggered the event. |
 | OperationVersion | string | The Video Indexer operations API version. |

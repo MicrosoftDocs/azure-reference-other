@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWFatFlow
@@ -30,9 +30,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | DestinationIp | string | Flow's destination IP address. |
 | DestinationPort | int | Flow's destination port. |
 | FlowRate | real | Flow's bandwidth consumption rate in Megabits per second unit. |
+| _IsBillable | string |  |
 | Protocol | string | Flow's network protocol. For example: UDP, TCP. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceIp | string | Flow's source IP address. |
