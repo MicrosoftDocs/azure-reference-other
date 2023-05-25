@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UCUpdateAlert
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 | AlertType | string | The type of Alert this is, ClientUpdateAlert, ServiceUpdateAlert. Indicates which fields will be present. |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID. |
+| _BilledSize | real |  |
 | CatalogId | string | The update catalog ID. |
 | ClientSubstate | string | If the Alert is from the Client, the ClientSubstate at the time thie Alert was activated or updated, else Empty. |
 | ClientSubstateRank | int | Rank of ClientSubstate. |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | ErrorCode | string | The Error Code, if any, that triggered this Alert. In the case of Client-based explicit alerts, error codes can have extended error codes, which are appended to the error code with a underscore separator. |
 | ErrorSymName | string | The symbolic name that maps to the Error Code, if any. Otherwise empty. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier. |
+| _IsBillable | string |  |
 | Recommendation | string | A localized string translated from RecommendedAction, Message, and other fields (depending on source of Alert) that provides a recommended action. |
 | ResolvedTime | datetime | The time this alert was resolved, else empty. |
 | SCCMClientId | string | A GUID corresponding to the SCCM Client ID on the device. |
