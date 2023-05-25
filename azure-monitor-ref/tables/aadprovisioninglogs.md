@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AADProvisioningLogs
@@ -29,6 +29,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AADTenantId | string | Unique Azure AD tenant ID |
+| _BilledSize | real |  |
 | Category | string | Category of the event |
 | ChangeId | string | Unique ID of this change in this cycle |
 | CorrelationId | string | ID to provide provisioning trail |
@@ -36,6 +37,7 @@ ms.date: 5/19/2023
 | DurationMs | long | Indicates how long this provisioning action took to finish |
 | Id | string | Indicates the unique ID for the activity |
 | InitiatedBy | string | Details of who initiated this provisioning |
+| _IsBillable | string |  |
 | JobId | string | The unique ID for the whole provisioning job |
 | ModifiedProperties | string | Details of each property that was modified in this provisioning action on this object |
 | OperationName | string | Name of the operation |
