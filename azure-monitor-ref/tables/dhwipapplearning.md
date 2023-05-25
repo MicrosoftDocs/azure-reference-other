@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DHWipAppLearning
@@ -28,10 +28,12 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AppName | string |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | ConfigMgrClientID | string |  |
 | EventFiredTime | datetime |  |
+| _IsBillable | string |  |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |
 | WipActionType | string |  |
