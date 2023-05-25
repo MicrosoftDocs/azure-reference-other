@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NTATopologyDetails
@@ -41,6 +41,7 @@ ms.date: 5/19/2023
 | BackendPort | int | Backend port associated with the inbound NAT rules. The port used for the internal endpoint. Acceptable values range from 1 to 65535. |
 | BackendSubnets | string | List of space separated subnets associated with the discovered resource. |
 | BgpEnabled | bool | Whether BGP is enabled for this resource or not. |
+| _BilledSize | real |  |
 | CircuitProvisioningState | string | The current provisioning state of express route circuit. |
 | ComponentType | string | Component type of the status message. Possible values are Flowlog/Topology. |
 | ConnectionStatus | string | Gateway connection status. |
@@ -52,6 +53,8 @@ ms.date: 5/19/2023
 | DiscoveryRegion | string | The region where resource is discovered. |
 | EgressBytesTransferred | long | The egress bytes transferred in this connection. |
 | EnableIpForwarding | bool | Indicates whether IP forwarding is enabled on the network interface. |
+| EncryptionEnabled | bool | Indicates whether encryption is enabled on the virtual network. |
+| EncryptionEnforcement | string | Indicates whether the encrypted virtual network allows VM that does not support encryption. Possible values include DropUnencrypted/AllowUnencrypted. |
 | FloatingIpEnabled | bool | Configures a virtual machine's endpoint for the floating IP capability required to configure a SQL AlwaysOn Availability Group. This setting is required when using the SQL AlwaysOn Availability Groups in SQL server. This setting can't be changed after you create the endpoint. |
 | FlowLogStorageAccount | string | Id of the storage account which is used to store the flow log. |
 | FrontendIpAddress | string | Frontend IP address associated with the inbound NAT rule. |
@@ -64,6 +67,7 @@ ms.date: 5/19/2023
 | GatewayType | string | Gateway Type assocaited with virtual network gateway, VPN or express route. |
 | IngressBytesTransferred | long | The ingress bytes transferred in this connection. |
 | IpAddress | string | Gateway IP address of the discovered resource. |
+| _IsBillable | string |  |
 | IsFlowEnabled | bool | Flag to enable/disable flow logging. |
 | IsVirtualAppliance | bool | Boolean to specify if the discovered resource is a virtual appliance. |
 | LoadBalancerBackendPools | string | Pool of load balancer backend IP addresses. |
@@ -116,7 +120,8 @@ ms.date: 5/19/2023
 | SubnetRegion1 | string | Subnet region associated with the discovered subnetwork connection. |
 | SubnetRegion2 | string | Subnet region associated with the discovered subnetwork connection. |
 | Subnetwork | string | The refrence to the subnetwork resource. |
-| Subscription | string | Subscription of the discovered resource. |
+| Subscription | string | Subscription guid of the discovered resource. |
+| SubscriptionName | string | Subscription name of the discovered resource. |
 | SubType | string | Subtype of the ingestion. Values can be Topology and StatusMessage. |
 | Tags | string | Tags associated with the discovered resource. |
 | TenantId | string |  |
@@ -135,6 +140,7 @@ ms.date: 5/19/2023
 | VirtualSubnetwork | string | Virtual subnetwork associated with virtual network gateway. |
 | VlanId | int | The VLAN Id of the peering. |
 | VmssName | string | The virtual machine scale set name. |
+| VnetEncryptionSupported | bool | Indicates whether the virtual machine this nic is attached to supports encryption. |
 | VpnClientAddressPrefixes | string | The reference to the address prefix resource which represents address prefix for P2S VpnClient. Will be empty when no point to site is configured. |
 | Weight | int | Route weight of the express route circuit route. |
 | Zones | string | The virtual machine zones information. |
