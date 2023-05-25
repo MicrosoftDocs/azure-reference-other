@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AddonAzureBackupAlerts
@@ -43,8 +43,10 @@ ms.date: 5/19/2023
 | BackupItemUniqueId | string |  |
 | BackupManagementServerUniqueId | string |  |
 | BackupManagementType | string |  |
+| _BilledSize | real |  |
 | Category | string |  |
 | CountOfAlertsConsolidated | int |  |
+| _IsBillable | string |  |
 | OperationName | string |  |
 | ProtectedContainerUniqueId | string |  |
 | RecommendedAction | string |  |
