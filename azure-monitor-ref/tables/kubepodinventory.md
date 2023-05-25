@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # KubePodInventory
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterId | string |  |
 | ClusterName | string |  |
 | Computer | string |  |
@@ -47,6 +48,7 @@ ms.date: 5/19/2023
 | ControllerKind | string |  |
 | ControllerName | string |  |
 | InstanceName | string |  |
+| _IsBillable | string |  |
 | Name | string |  |
 | Namespace | string |  |
 | PodCreationTimeStamp | datetime |  |
