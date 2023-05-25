@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # PowerBIReportUsageTenant
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | ArtifactId | string | Report unique identifier. |
 | ArtifactKind | string | Type of artifact this entry describe. |
 | ArtifactName | string | Report friendly name. As at time of event being raised. |
+| _BilledSize | real |  |
 | BootstrapDurationMs | long | The duration of Power BI application initialization in milliseconds. |
 | BrowserName | string | Name of the browser used to view the report. |
 | BrowserTabId | string | Unique identifier of the browser tab used to view the report. |
@@ -58,6 +59,7 @@ ms.date: 5/19/2023
 | HomeWorkspaceId | string | For app and direct share report cases the unique identifier of the workspace hosting the dataset that powers the report. |
 | HomeWorkspaceName | string | For app and direct share report cases the name of the workspace hosting the dataset that powers the report. |
 | Identity | dynamic | User and claim details. |
+| _IsBillable | string |  |
 | IsBootstrapIncluded | bool | For report view events shows whether the operation incurs application bootstrapping to initialize Power BI before the report load. |
 | IsQueryResultCacheEnabled | bool | For models on Premium capacities shows whether Query Result Caching enabled. |
 | Level | string | Log classification indicating if the entry is informational or represents a warning or error state. |
