@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ComputerGroup
@@ -35,12 +35,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string | Name of the member computer. |
 | Group | string | Name of the group. |
 | GroupFullName | string | Full path to the group including the source and source name. |
 | GroupId | string | ID of the group. |
 | GroupSource | string | Source that group was collected from. Possible values are ActiveDirectory WSUSWSUSClientTargeting. |
 | GroupSourceName | string | Name of the source that the group was collected from. For Active Directory this is the domain name. |
+| _IsBillable | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string | OpsManager for all records of this type. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
