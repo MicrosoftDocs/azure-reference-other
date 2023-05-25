@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseSqlPoolSqlRequests
@@ -30,11 +30,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of the log. |
 | Command | string | The command of the SQL requests. |
 | DistributionId | int | The distribution id of the SQL requests. |
 | EndTime | datetime | The end time (UTC) for the SQL requests. |
 | ErrorId | string | The error id of the SQL requests. |
+| _IsBillable | string |  |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |
 | PdwNodeId | int | The PdwNodeId of the SQL requests. |
