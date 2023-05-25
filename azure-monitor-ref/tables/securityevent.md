@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityEvent
@@ -56,6 +56,7 @@ ms.date: 5/19/2023
 | AuthenticationService | int |  |
 | AuthenticationType | string |  |
 | AzureDeploymentID | string |  |
+| _BilledSize | real |  |
 | CACertificateHash | string |  |
 | CalledStationID | string |  |
 | CallerProcessId | string |  |
@@ -106,6 +107,7 @@ ms.date: 5/19/2023
 | InterfaceUuid | string |  |
 | IpAddress | string |  |
 | IpPort | string |  |
+| _IsBillable | string |  |
 | KeyLength | int |  |
 | Level | string |  |
 | LmPackageName | string |  |
