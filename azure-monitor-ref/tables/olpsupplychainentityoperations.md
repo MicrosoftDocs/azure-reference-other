@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # OLPSupplyChainEntityOperations
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClientApplicationId | string | Application ID of the client making the API request. |
 | ClientName | string | Name of the client making the API request. |
 | ClientObjectId | string | Object ID of the client making the API request. |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | CustomRequestAttributes | dynamic | Client defined arbitrary data in the API request. |
 | DurationMs | real | Time it took to service the REST API request, in milliseconds. |
 | HttpStatusCode | int | HTTP status code of the API response. |
+| _IsBillable | string |  |
 | OperationName | string | The operation name for which the log entry was created. |
 | RequestBody | dynamic | Request body of the API calls. |
 | RequestId | string | Unique identifier to be used to correlate request logs. |
