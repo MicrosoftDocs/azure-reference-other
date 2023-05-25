@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlOnlineEndpointEventLog
@@ -31,8 +31,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | DeploymentName | string | The name of the deployment associated with this log record. |
 | InstanceId | string | The ID of the instance that generated this log record. |
+| _IsBillable | string |  |
 | Message | string | The content of the inference-server container life cycle event. |
 | Name | string | The name of the inference-server container life cycle event. |
 | OperationName | string | The operation associated with this log record. |
