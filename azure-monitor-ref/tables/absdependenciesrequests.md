@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ABSDependenciesRequests
@@ -24,11 +24,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | BotId | string | Name of the bot or the bot handle. |
 | Category | string | Classification of the log. |
 | Channel | string | Name of the Channel making generating the log (e.g. DirectLine, Facebook, etc.). |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | real | Duration of a request. |
+| _IsBillable | string |  |
 | Level | string | log level of message (Information, Warning, Error, etc.). |
 | Location | string | Location of the service sending the log (Azure region name e.g. West US). |
 | OperationName | string | The operation associated with log record. |
