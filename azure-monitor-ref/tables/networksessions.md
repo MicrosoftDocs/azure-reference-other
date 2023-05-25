@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NetworkSessions
@@ -28,6 +28,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AdditionalFields | dynamic | When no respective column in the schema matches, additional fields can be stored in a JSON bag. |
+| _BilledSize | real |  |
 | CloudAppId | string | The ID of the destination application for an HTTP application as identified by a proxy. This value is usually specific to the proxy used. |
 | CloudAppName | string | The name of the destination application for an HTTP application as identified by a proxy. |
 | CloudAppOperation | string | The operation the user performed in the context of the destination application for an HTTP application as identified by a proxy. This value is usually specific to the proxy used. |
@@ -101,6 +102,7 @@ ms.date: 5/19/2023
 | HttpStatusCode | string | The HTTP Status Code for HTTP/HTTPS network sessions. |
 | HttpUserAgentOriginal | string | The HTTP user agent header for HTTP/HTTPS network sessions. |
 | HttpVersion | string | The HTTP Request Version for HTTP/HTTPS network connections. |
+| _IsBillable | string |  |
 | NetworkApplicationProtocol | string | The application layer protocol used by the connection or session. |
 | NetworkBytes | long | Number of bytes sent in both directions. If both BytesReceived and BytesSent exist, BytesTotal should equal their sum. |
 | NetworkDirection | string | The direction the connection or session, into or out of the organization. |
