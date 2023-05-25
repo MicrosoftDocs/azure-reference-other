@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWNetworkRuleAggregation
@@ -32,8 +32,10 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | Action | string | Action taken by the firewall following the match with this Network rule. For example: Firewall may Allow/Deny this specific session/packet. |
 | ActionReason | string | When no rule is triggered for a request, this field contains the reason for the action performed by the firewall. For example: a packet dropped because no rule matched will show `Default Action`. |
+| _BilledSize | real |  |
 | DestinationIp | string | Packet's destination IP address. |
 | DestinationPort | int | Packet's destination port. |
+| _IsBillable | string |  |
 | IsDefaultRule | bool | True if no network rule was hit. False otherwise. |
 | NetworkRuleCount | int | Aggregated count of network rule. |
 | Policy | string | Name of the policy in which the triggered rule resides. |
