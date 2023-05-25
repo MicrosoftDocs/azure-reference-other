@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # W3CIISLog
@@ -36,6 +36,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent  when data is pulled from Azure storage. |
+| _BilledSize | real |  |
 | cIP | string | IP address of the client that accessed the web server. |
 | Computer | string | Name of the computer that the event was collected from. |
 | Confidence | string | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |
@@ -53,6 +54,7 @@ ms.date: 5/19/2023
 | FirstReportedDateTime | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | IndicatorThreatType | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | IsActive | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
+| _IsBillable | string |  |
 | LastReportedDateTime | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | MaliciousIP | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | ManagementGroupName | string | Name of the management group for Operations Manager agents. For other agents this is AOI-\<workspace ID\>. |
