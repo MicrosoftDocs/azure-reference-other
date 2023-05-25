@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseLinkEvent
@@ -30,6 +30,8 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
+| _IsBillable | string |  |
 | Level | int | The log type info level of the record. |
 | LinkConnectionName | string | The Synapse Link connection name. |
 | Location | string | The location of the resource in the cloud where this log is originated. |
