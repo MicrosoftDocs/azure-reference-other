@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppServiceHTTPLogs
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CIp | string | IP address of the client |
 | ComputerName | string | The name of the server on which the log file entry was generated. |
 | Cookie | string | Cookie on HTTP request |
@@ -39,6 +40,7 @@ ms.date: 5/19/2023
 | CsUriQuery | string | URI query on HTTP request |
 | CsUriStem | string | The target of the request |
 | CsUsername | string | The name of the authenticated user on HTTP request |
+| _IsBillable | string |  |
 | Referer | string | The site that the user last visited. This site provided a link to the current site |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Result | string | Success / Failure of HTTP request |
