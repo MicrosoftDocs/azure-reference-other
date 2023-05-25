@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HealthStateChangeEvent
@@ -30,12 +30,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CurrentMonitorState | string | Current state of the monitor (Critical, Warning, Healthy, Unknown, None). |
 | CurrentStateFirstObservedTimestamp | datetime | Timestamp (UTC) when the current state of the monitor was first observed. |
 | EvaluationTimestamp | datetime | Timestamp (UTC) when the monitor health state change event was created. |
 | Evidence | dynamic | Snapshot of samples and reason the monitor changed state. |
 | ImpactStartTimestamp | datetime | Timestamp (UTC) the monitor start change to non-healthy (Critical, Warning) state. |
 | InstrumentationData | dynamic | Current state of the monitor (Critical, Warning, Healthy, Unknown, None). |
+| _IsBillable | string |  |
 | MonitorConfiguration | dynamic | Configuration for the monitor. Aggregate monitor configuration is an empty string. |
 | MonitoredObject | string | Object the monitor is monitoring. Values only exist for dynamic monitors, e.g. D: for monitor logical-disks\|D:\|free-space-mb. |
 | MonitorName | string | Name of the monitor, e.g. logical-disks\|C:\|free-space-mb for Windows platform, filesystems\|/var/lib\|free-space-mb for Linux platform. |
