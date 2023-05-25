@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWDnsQuery
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | DnssecOkBit | bool | A flag indicating that the resolver supports DNSSEC records. |
 | EDNS0BufferSize | int | Client's EDNS0 buffer size. Specifies the maximum packet size allowed in responses in bytes. |
 | ErrorMessage | string | Description of the error returned to the client. Empty if request is successful. |
 | ErrorNumber | int | Error number matching the returned response code. |
+| _IsBillable | string |  |
 | Protocol | string | Protocol used to send the DNS query. For example: TCP, UDP |
 | QueryClass | string | DNS query's query class. |
 | QueryId | int | DNS query's query ID. |
