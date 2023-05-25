@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AWSVPCFlow
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 | AccountId | string | The AWS account ID of the owner of the source network interface for which traffic is recorded. If the network interface is created by an AWS service, for example when creating a VPC endpoint or Network Load Balancer, the record may display unknown for this field. |
 | Action | string | The action that is associated with the traffic. |
 | AzId | string | The ID of the Availability Zone. |
+| _BilledSize | real |  |
 | Bytes | long | The number of bytes transferred during the flow. |
 | DstAddr | string | The destination address for outgoing traffic. |
 | DstPort | int | The destination port of the traffic. |
@@ -37,6 +38,7 @@ ms.date: 5/19/2023
 | FlowDirection | string | The direction of the flow with respect to the interface where traffic is captured. |
 | InstanceId | string | The ID of the instance that's associated with network interface for which the traffic is recorded. |
 | InterfaceId | string | The ID of the network interface for which the traffic is recorded. |
+| _IsBillable | string |  |
 | LogStatus | string | The logging status of the flow log. |
 | Packets | int | The number of packets transferred during the flow. |
 | PktDstAddr | string | The packet-level (original) destination IP address for the traffic. |
