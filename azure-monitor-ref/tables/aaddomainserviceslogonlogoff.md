@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AADDomainServicesLogonLogoff
@@ -32,11 +32,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AuthenticationPackageName | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| _BilledSize | real |  |
 | Category | string |  |
 | CorrelationId | string |  |
 | ElevatedToken | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | FailureReason | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | ImpersonationLevel | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
+| _IsBillable | string |  |
 | KeyLength | int | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | LmPackageName | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | LogonGuid | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
@@ -44,8 +46,8 @@ ms.date: 5/19/2023
 | LogonType | int | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | OperationName | string |  |
 | RecordId | string | A unique identifier corresponding to this record. |
-| ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
 | RestrictedAdminMode | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName.  Please see the Windows Server description of this event for the meaning of this field. |
 | ResultDescription | string |  |
 | ResultType | string |  |
