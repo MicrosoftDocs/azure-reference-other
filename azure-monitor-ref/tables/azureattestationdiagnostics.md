@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AzureAttestationDiagnostics
@@ -30,12 +30,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIpAddress | string | IP Address of the client that submitted the request. |
 | ContentLength | int | Length of the content body in bytes. |
 | ContentType | string | Content-Type header value passed by the client. |
 | DurationMs | real | Amount of time it took to process request in milliseconds. |
 | FailureDetails | string | Details of the request failure, if it failed. Blank if the request succeeded. |
 | Identity | dynamic | JSON structure containing information about the caller. |
+| _IsBillable | string |  |
 | Level | string | Error or Informational message indicating if the service processed the request. |
 | OperationName | string | Name of the operation attempted on the resource. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
