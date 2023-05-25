@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ACSEmailUserEngagementOperational
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. This value is populated with the MessageID returned by Email send requests and can be used to identify correlated events between Email Operational tables. |
 | EngagementContext | string | The context of the user interaction. |
 | EngagementType | string | The type of user engagement. |
+| _IsBillable | string |  |
 | Location | string | The location the request was processed. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
