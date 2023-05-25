@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NWConnectionMonitorPathResult
@@ -32,6 +32,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AdditionalData | string | The additional data for the test |
 | AvgRoundTripTimeMs | real | The average round trip time for the test |
+| _BilledSize | real |  |
 | ChecksFailed | int | The total number of checks failed under the test |
 | ChecksFailedPercentThreshold | int | The checks failed percent threshold set for the test |
 | ChecksTotal | int | The total number of checks done under the test |
@@ -49,6 +50,7 @@ ms.date: 5/19/2023
 | HopResourceIds | string | The hop resource ids identified for the test |
 | Hops | string | The hops identified for the test |
 | HopTypes | string | The hop types identified for the test |
+| _IsBillable | string |  |
 | Issues | string | The issues identified for the test |
 | JitterMs | real | The mean deviation round trip time for the test |
 | MaxRoundTripTimeMs | real | The maximum round trip time for the test |
