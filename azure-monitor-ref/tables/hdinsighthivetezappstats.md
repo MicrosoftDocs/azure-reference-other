@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightHiveTezAppStats
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 | ApplicationId | string | The ID of the Application that the metrics describe. |
 | ApplicationName | string | The name of the application that the metrics describe. |
 | ApplicationType | string | The type of application. |
+| _BilledSize | real |  |
 | ClusterId | long | The final status of the application if it has reached a terminal state. |
 | ClusterName | string | Name of cluster. |
 | ClusterType | string | Name of cluster. |
@@ -42,6 +43,7 @@ ms.date: 5/19/2023
 | FinalStatus | string | The final status of the application if it has reached a terminal state. |
 | FinishedTime | long | The time the application finished. |
 | HostName | string | Name of host where log was emitted. |
+| _IsBillable | string |  |
 | LogAggregationStatus | string | The log aggregation status. |
 | MetricName | string | Name of the metric for the record (e.g. AppsCompleted, AppsKilled, AppsFailed , etc). |
 | MetricValue | real | Value of metric in the record. |
