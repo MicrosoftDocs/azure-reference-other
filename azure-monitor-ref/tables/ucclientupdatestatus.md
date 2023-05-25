@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UCClientUpdateStatus
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID. |
+| _BilledSize | real |  |
 | CatalogId | string | The update catalog ID. |
 | ClientState | string | Higher-level bucketization of ClientSubstate. |
 | ClientSubstate | string | Last-known state of this update relative to the device, from the client (the device's WDD). |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | FurthestClientSubstate | string | Furthest clientSubstate. |
 | FurthestClientSubstateRank | int | Ranking of furthest clientSubstate. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier |
+| _IsBillable | string |  |
 | IsUpdateHealthy | bool | True: No issues preventing this device from updating to this update have been found. False: There is something that may prevent this device from updating. |
 | OfferReceivedTime | datetime | DateTime when device last reported entering OfferReceived, else empty. |
 | RestartRequiredTime | datetime | DateTime when device first reported entering RebootRequired (or RebootPending), else empty. |
