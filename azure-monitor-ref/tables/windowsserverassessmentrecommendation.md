@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WindowsServerAssessmentRecommendation
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | AffectedObjectName | string |  |
 | AffectedObjectType | string |  |
 | AssessmentId | string |  |
+| _BilledSize | real |  |
 | Cluster | string |  |
 | Computer | string |  |
 | CustomData | string |  |
@@ -44,6 +45,7 @@ ms.date: 5/19/2023
 | IISApplication | string |  |
 | IISApplicationPool | string |  |
 | Ipv4Address | string |  |
+| _IsBillable | string |  |
 | OSVersion | string |  |
 | Recommendation | string |  |
 | RecommendationId | string |  |
