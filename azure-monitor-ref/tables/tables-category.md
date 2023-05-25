@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -50,6 +50,7 @@ ms.date: 5/19/2023
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AgriFoodApplicationAuditLogs](agrifoodapplicationauditlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
+- [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
 - [AKSAudit](aksaudit.md)
 - [AKSAuditAdmin](aksauditadmin.md)
 - [AmlComputeInstanceEvent](amlcomputeinstanceevent.md)
@@ -103,8 +104,12 @@ ms.date: 5/19/2023
 - [NSPAccessLogs](nspaccesslogs.md)
 - [OEPAuditLogs](oepauditlogs.md)
 - [PFTitleAuditLogs](pftitleauditlogs.md)
+- [PowerAppsActivity](powerappsactivity.md)
+- [PowerAutomateActivity](powerautomateactivity.md)
 - [PowerBIActivity](powerbiactivity.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
+- [PowerPlatformConnectorActivity](powerplatformconnectoractivity.md)
+- [PowerPlatformDlpActivity](powerplatformdlpactivity.md)
 - [REDConnectionEvents](redconnectionevents.md)
 - [SentinelAudit](sentinelaudit.md)
 - [VIAudit](viaudit.md)
@@ -184,6 +189,8 @@ ms.date: 5/19/2023
 - [AgriFoodSensorManagementLogs](agrifoodsensormanagementlogs.md)
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
+- [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
+- [AHDSDicomDiagnosticLogs](ahdsdicomdiagnosticlogs.md)
 - [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
 - [AKSAudit](aksaudit.md)
 - [AKSAuditAdmin](aksauditadmin.md)
@@ -613,7 +620,11 @@ ms.date: 5/19/2023
 - [NetworkSessions](networksessions.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [OfficeActivity](officeactivity.md)
+- [PowerAppsActivity](powerappsactivity.md)
+- [PowerAutomateActivity](powerautomateactivity.md)
 - [PowerBIActivity](powerbiactivity.md)
+- [PowerPlatformConnectorActivity](powerplatformconnectoractivity.md)
+- [PowerPlatformDlpActivity](powerplatformdlpactivity.md)
 - [ProjectActivity](projectactivity.md)
 - [ProtectionStatus](protectionstatus.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
