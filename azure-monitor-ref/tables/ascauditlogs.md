@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ASCAuditLogs
@@ -31,9 +31,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CorrelationId | string | A unique correlation ID for the log event. |
 | DurationMs | int | The total duration (in milliseconds) for the log event. |
 | Identity | dynamic | Identity of the user or application responsible for the log event. |
+| _IsBillable | string |  |
 | Location | string | The location and region where the log event was generated. |
 | OperationName | string | The Azure Sphere operation associated with the log event. |
 | Properties | dynamic | Additional properties related to the log event. |
