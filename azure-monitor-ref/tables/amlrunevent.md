@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlRunEvent
@@ -33,7 +33,9 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AadTenantId | string | The AAD tenant ID the operation was submitted for. |
 | AmlWorkspaceId | string | The unique ID of the workspace. |
+| _BilledSize | real |  |
 | Identity | dynamic | The identity of the user or application that performed the operation. |
+| _IsBillable | string |  |
 | OperationName | string | The name of the operation associated with the log entry. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RunId | string | The unique ID of the run. |
