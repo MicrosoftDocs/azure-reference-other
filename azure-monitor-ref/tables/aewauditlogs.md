@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AEWAuditLogs
@@ -32,8 +32,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActionName | string | The event name. |
+| _BilledSize | real |  |
 | Category | string | The event category. Typical log categories are Audit, Operational, Execution, and Request. |
 | ExpComponentName | string | The Exp component sending the log. |
+| _IsBillable | string |  |
 | Message | string | The message in the log. |
 | Operator | string | The user identity triggering the event. |
 | RequestUri | string | The event URI. |
