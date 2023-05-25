@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseDXQuery
@@ -31,6 +31,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationName | string | The name of the application that invoked the query |
+| _BilledSize | real |  |
 | CacheDiskHits | long | Disk cache hits |
 | CacheDiskMisses | long | Disk cache misses |
 | CacheMemoryHits | long | Memory cache hits |
@@ -47,6 +48,7 @@ ms.date: 5/19/2023
 | ExtentsMaxDataScannedTime | datetime | Maximum data scan time |
 | ExtentsMinDataScannedTime | datetime | Minimum data scan time |
 | FailureReason | string | The reason for the failure |
+| _IsBillable | string |  |
 | LastUpdatedOn | datetime | The time (UTC) this command ended |
 | MemoryPeak | long | Memory peak |
 | Principal | string | The principal that invoked the query like 'aaduser=USER_ID;TENANT' |
