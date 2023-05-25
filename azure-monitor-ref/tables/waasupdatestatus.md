@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WaaSUpdateStatus
@@ -27,12 +27,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | DownloadMode | string |  |
 | FeatureDeferralDays | int |  |
 | FeaturePauseDays | int |  |
 | FeaturePauseState | string |  |
+| _IsBillable | string |  |
 | LastScan | datetime |  |
 | NeedAttentionStatus | string |  |
 | OSArchitecture | string |  |
