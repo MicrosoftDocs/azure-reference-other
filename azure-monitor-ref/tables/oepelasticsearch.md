@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # OEPElasticsearch
@@ -30,9 +30,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | Logs generated as a result of operations executed using OAK APIs are grouped into categories. Categories in OAK are logical groupings based on the data source. |
 | Content | string | Log details as a result of operation performed. |
 | Duration | string | Time taken for performing the operation. Value is taken from 'took' property in Elasticsearch cluster as string, like '1.3ms', '478.9micros' etc. |
+| _IsBillable | string |  |
 | Location | string | The region of the resource emitting the event. |
 | Namespace | string | Namespace from which logs were generated, represents the data partition. |
 | OperationName | string | The operation name for which the log entry was created. |
