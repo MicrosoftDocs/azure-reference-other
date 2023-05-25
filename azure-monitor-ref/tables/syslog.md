@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Syslog
@@ -38,11 +38,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string | Computer that the event was collected from. |
 | EventTime | datetime | Date and time that the event was generated. |
 | Facility | string | The part of the system that generated the message. |
 | HostIP | string | IP address of the system sending the message. |
 | HostName | string | Name of the system sending the message. |
+| _IsBillable | string |  |
 | ProcessID | int | ID of the process that generated the message. |
 | ProcessName | string | Name of the process that generated the message. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
