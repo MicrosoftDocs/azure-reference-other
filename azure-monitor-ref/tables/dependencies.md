@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # dependencies
@@ -25,6 +25,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | application_Version | string |  |
+| _BilledSize | real |  |
 | client_Browser | string |  |
 | client_City | string |  |
 | client_CountryOrRegion | string |  |
@@ -40,6 +41,7 @@ ms.date: 5/19/2023
 | data | string |  |
 | duration | real |  |
 | id | string |  |
+| _IsBillable | string |  |
 | itemCount | int |  |
 | itemId | string |  |
 | name | string |  |
@@ -59,8 +61,8 @@ ms.date: 5/19/2023
 | target | string |  |
 | TenantId | string |  |
 | TimeGenerated | datetime |  |
-| type | string |  |
 | Type | string | The name of the table |
+| type | string |  |
 | user_AccountId | string |  |
 | user_AuthenticatedId | string |  |
 | user_Id | string |  |
