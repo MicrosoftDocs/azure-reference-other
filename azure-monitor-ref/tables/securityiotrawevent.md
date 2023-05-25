@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityIoTRawEvent
@@ -30,9 +30,11 @@ ms.date: 5/19/2023
 | AgentVersion | string |  |
 | AssociatedResourceId | string |  |
 | AzureSubscriptionId | string |  |
+| _BilledSize | real |  |
 | DeviceId | string |  |
 | EventDetails | string |  |
 | IoTRawEventId | string |  |
+| _IsBillable | string |  |
 | IsEmpty | bool |  |
 | RawEventCategory | string |  |
 | RawEventName | string |  |
