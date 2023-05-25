@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AADUserRiskEvents
@@ -31,11 +31,13 @@ ms.date: 5/19/2023
 | Activity | string | Indicates the activity type the detected risk is linked to. Possible values are: signin, user, unknownFutureValue. |
 | ActivityDateTime | datetime | Date and time when the risky activity occurred. |
 | AdditionalInfo | dynamic | Additional information associated with the user risk event in JSON format. |
+| _BilledSize | real |  |
 | CorrelationId | string | Correlation ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in. |
 | DetectedDateTime | datetime | Date and time that the risk was detected. |
 | DetectionTimingType | string | Timing of the detected risk (real-time/offline). Possible values are: notDefined, realtime, nearRealtime, offline, unknownFutureValue. |
 | Id | string | Unique ID of the risk event. |
 | IpAddress | string | The IP address of the client from where the risk occurred. |
+| _IsBillable | string |  |
 | LastUpdatedDateTime | datetime | Date and time when the risk detection was last updated. |
 | Location | dynamic | Location of the sign-in. |
 | OperationName | string | Name of the operation. |
