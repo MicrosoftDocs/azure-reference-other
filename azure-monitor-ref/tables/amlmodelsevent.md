@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlModelsEvent
@@ -33,8 +33,10 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AadTenantId | string | The AAD tenant ID the operation was submitted for. |
 | AmlModelName | string | The name of the AML Model. |
+| _BilledSize | real |  |
 | CorrelationId | string | A GUID used to group together a set of related events. |
 | Identity | dynamic | The identity of the user or application that performed the operation. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the event. Must be one of Informational, Warning, Error, or Critical. |
 | OperationName | string | The name of the operation associated with the log entry. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
