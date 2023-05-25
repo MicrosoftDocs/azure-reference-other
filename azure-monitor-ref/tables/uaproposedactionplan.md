@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UAProposedActionPlan
@@ -27,9 +27,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ComputersUnblocked | int |  |
 | CumulativeUnblocked | int |  |
 | CumulativeUnblockedPct | real |  |
+| _IsBillable | string |  |
 | ItemHardwareID | string |  |
 | ItemLanguage | string |  |
 | ItemName | string |  |
