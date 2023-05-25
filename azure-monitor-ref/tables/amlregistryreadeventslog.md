@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlRegistryReadEventsLog
@@ -33,7 +33,9 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AssetName | string | AzureML Asset name associated with log record. |
 | AssetVersion | string | AzureML Asset version associated with log record. |
+| _BilledSize | real |  |
 | CorrelationId | string | The correlation ID associated with log record. |
+| _IsBillable | string |  |
 | Labels | string | Labels associated with log record. |
 | RegistryResourceId | string | ARM ResourceId of the registry that generated this log record. |
 | RegistryTenantId | string | TenantId associated with log record. |
