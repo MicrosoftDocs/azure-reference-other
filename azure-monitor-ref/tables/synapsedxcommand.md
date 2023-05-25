@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseDXCommand
@@ -31,12 +31,14 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationName | string | The name of the application that invoked the command |
+| _BilledSize | real |  |
 | Category | string | The log category for these events will be 'Command' |
 | CommandType | string | Command type. like 'DatabasesShow' |
 | CorrelationId | string | The client request ID |
 | DatabaseName | string | The name of the database the command ran on |
 | Duration | string | Command duration as a string like '00:00:00.0156250' |
 | FailureReason | string | The reason for the failure |
+| _IsBillable | string |  |
 | LastUpdatedOn | datetime | The last time this command was updated |
 | Principal | string | Principal that invoked the query like 'aaduser=USER_ID;TENANT' |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
