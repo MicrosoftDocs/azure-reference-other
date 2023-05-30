@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseIntegrationPipelineRuns
@@ -31,9 +31,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Annotations | dynamic | The annotation details of the log record. |
+| _BilledSize | real |  |
 | Category | string | The category of the log. |
 | CorrelationId | string | The correlationId for the log record. |
 | End | datetime | The end time (UTC) for the pipelien run. |
+| _IsBillable | string |  |
 | Level | string | The log type info level of the record. |
 | Location | string | The location of the resource in the cloud where this log is originated. |
 | OperationName | string | The operation associated with log record. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SqlDataClassification
@@ -25,6 +25,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AgentId | string |  |
+| _BilledSize | real |  |
 | ColumnName | string |  |
 | ColumnsCount | int |  |
 | ColumnType | string |  |
@@ -32,6 +33,7 @@ ms.date: 5/19/2023
 | DatabaseName | string |  |
 | InformationType | string |  |
 | InformationTypeId | string |  |
+| _IsBillable | string |  |
 | Label | string |  |
 | LabelId | string |  |
 | ManagementGroupName | string |  |

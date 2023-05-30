@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CDBGremlinRequests
@@ -35,10 +35,12 @@ ms.date: 5/19/2023
 | ActivityId | string | The unique identifier (GUID) for this Graph API request. |
 | Address | string | The IP address of the client, which issued this request. |
 | AuthorizationTokenType | string | The authorization token used  for this request. |
+| _BilledSize | real |  |
 | CollectionName | string | The name of the Cosmos DB table/container against which this request was issued. |
 | DatabaseName | string | The name of the Cosmos DB database against which this request was issued. |
 | DurationMs | real | The server-side execution time (in ms) for this request. |
 | ErrorCode | string | The error code (if applicable) for this request. |
+| _IsBillable | string |  |
 | OperationName | string | The name of the Gremlin operation that was executed. |
 | PIICommandText | string | Full query with parameters (if opted in) for this request. |
 | RateLimitingDelayMs | real | The estimated time (in ms) spent retrying due to rate limited operations. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AlertInfo
@@ -29,8 +29,10 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AlertId | string | Unique identifier for the alert. |
 | AttackTechniques | string | MITRE ATT&CK techniques associated with the activity that triggered the alert. |
+| _BilledSize | real |  |
 | Category | string | Type of threat indicator or breach activity identified by the alert. |
 | DetectionSource | string | Detection technology or sensor that identified the notable component or activity. |
+| _IsBillable | string |  |
 | ServiceSource | string | Product or service that provided the alert information. |
 | Severity | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert. |
 | SourceSystem | string |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightHadoopAndYarnLogs
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterName | string | Name of cluster. |
 | ClusterType | string | Type of the cluster. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | HostName | string | Name of host where log was emitted. |
+| _IsBillable | string |  |
 | LogLevel | string | log level of message (INFO, WARN, ERROR, etc.). |
 | LogType | string | The name of the log file that a record came from (e.g. YarnTimeLineServer, YarnResourceManager, etc.). |
 | Message | string | message from Hadoop or YARN log. |

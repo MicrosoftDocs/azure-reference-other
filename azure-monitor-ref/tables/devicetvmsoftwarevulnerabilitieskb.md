@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DeviceTvmSoftwareVulnerabilitiesKB
@@ -28,8 +28,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AffectedSoftware | dynamic | List of all software products affected by the vulnerability. |
+| _BilledSize | real |  |
 | CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system. |
 | CvssScore | real | Severity score assigned to the security vulnerability under the Common Vulnerability Scoring System (CVSS). |
+| _IsBillable | string |  |
 | IsExploitAvailable | bool | Indicates whether exploit code for the vulnerability is publicly available. |
 | LastModifiedTime | datetime | Date and time the item or related metadata was last modified. |
 | PublishedDate | datetime | Date vulnerability was disclosed to the public. |

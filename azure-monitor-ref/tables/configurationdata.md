@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ConfigurationData
@@ -37,6 +37,7 @@ ms.date: 5/19/2023
 | Acls | string | The Access-Control List specifies which users or system processes are granted access to objects |
 | Architecture | string | Instruction set architecture for the software being tracked |
 | Attributes | string |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ConfigDataType | string | Type of configuration item: Files Software WindowsServices Registry Daemons |
 | CurrentVersion | string | Current software version |
@@ -45,6 +46,7 @@ ms.date: 5/19/2023
 | FileContentChecksum | string | Checksum of the reporting file |
 | FileSystemPath | string | File system path for the reporting file |
 | Hive | string | Registry hive for the reporting registry key |
+| _IsBillable | string |  |
 | Location | string |  |
 | ManagementGroupName | string |  |
 | Name | string |  |

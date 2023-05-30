@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # IdentityLogonEvents
@@ -36,6 +36,7 @@ ms.date: 5/19/2023
 | ActionType | string | Type of activity that triggered the event |
 | AdditionalFields | dynamic | Additional information about the entity or event |
 | Application | string | Application that performed the recorded action |
+| _BilledSize | real |  |
 | DestinationDeviceName | string | Name of the device running the server application that processed the recorded action |
 | DestinationIPAddress | string | IP address of the device running the server application that processed the recorded action |
 | DestinationPort | string | Destination port of related network communications |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | DeviceType | string | Type of device |
 | FailureReason | string | Information explaining why the recorded action failed |
 | IPAddress | string | IP address assigned to the endpoint and used during related network communications |
+| _IsBillable | string |  |
 | ISP | string | Internet service provider (ISP) associated with the endpoint IP address |
 | Location | string | City, country, or other geographic location associated with the event |
 | LogonType | string | Type of logon session |

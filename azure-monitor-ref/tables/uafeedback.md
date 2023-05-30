@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UAFeedback
@@ -29,11 +29,13 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AppName | string |  |
 | AppVersion | string |  |
+| _BilledSize | real |  |
 | Category | string |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | Feedback | string |  |
 | FeedbackSubmittedDate | datetime |  |
+| _IsBillable | string |  |
 | MicrosoftResponse | string |  |
 | Sentiment | string |  |
 | SourceSystem | string |  |

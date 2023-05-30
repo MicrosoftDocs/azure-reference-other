@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DefenderIoTRawEvent
@@ -27,9 +27,11 @@ ms.date: 5/19/2023
 | AgentVersion | string | The version of the agent. |
 | AssociatedResourceId | string | The associated Azure resource ID. |
 | AzureSubscriptionId | string | The Azure subscription ID. |
+| _BilledSize | real |  |
 | DeviceId | string | The device ID. |
 | EventDetails | dynamic | Additional raw event details. |
 | IoTRawEventId | string | The internal raw event ID. |
+| _IsBillable | string |  |
 | IsEmpty | bool | Property identifying if the raw event contains data. |
 | RawEventCategory | string | The category of the raw event - periodic or triggered. |
 | RawEventName | string | The name of the raw event. |

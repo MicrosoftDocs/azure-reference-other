@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AlertHistory
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 | AlertPriority | string |  |
 | AlertSeverity | string |  |
 | AlertState | string |  |
+| _BilledSize | real |  |
 | Custom1 | string |  |
 | Custom10 | string |  |
 | Custom2 | string |  |
@@ -44,6 +45,7 @@ ms.date: 5/19/2023
 | Custom7 | string |  |
 | Custom8 | string |  |
 | Custom9 | string |  |
+| _IsBillable | string |  |
 | LastModifiedBy | string |  |
 | ManagementGroupName | string |  |
 | RepeatCount | int |  |

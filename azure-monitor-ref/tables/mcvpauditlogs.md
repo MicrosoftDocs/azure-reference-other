@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # MCVPAuditLogs
@@ -30,9 +30,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerAccessLevels | string | The caller access level - Administrator, Writer or Reader. |
 | CallerIdentities | string | The caller identity, user alias or email address. |
 | CallerIpAddress | string | IPV4 caller ip address. |
+| _IsBillable | string |  |
 | OperationAccessLevel | string | The operation access level of the request - Administrator, Writer or Reader. |
 | OperationCategories | string | The operation request categories like Provision, Connection or Claims. |
 | OperationCategoryDescription | string | The operation request category general description. |

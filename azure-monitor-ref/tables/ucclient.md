@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UCClient
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID. |
+| _BilledSize | real |  |
 | City | string | The last-reported location of device (city), based on IP address. |
 | Country | string | The last-reported location of device (country), based on IP address. Shown as country code. |
 | DeviceFamily | string | The device family e.g. PC, Phone. |
@@ -35,6 +36,7 @@ ms.date: 5/19/2023
 | DeviceModel | string | The device's OEM model e.g. HP7420 Workstation. |
 | DeviceName | string | The Device given name. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier. |
+| _IsBillable | string |  |
 | IsVirtual | bool | Whether device is a Virtual Device. |
 | LastCensusScanTime | datetime | The last time this device performed a successful Census Scan, if any. |
 | LastWUScanTime | datetime | The last time this device performed a successful WU Scan, if any. |

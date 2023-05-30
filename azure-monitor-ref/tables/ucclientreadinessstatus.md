@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UCClientReadinessStatus
@@ -27,8 +27,10 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD device ID. |
+| _BilledSize | real |  |
 | DeviceName | string | The Device given name. |
 | GlobalDeviceId | string | Microsoft internal global device identifier. |
+| _IsBillable | string |  |
 | OSBuild | string | The currently-installed Windows 10 Build in the format 'Major'.'Revision'. 'Major' corresponds to which Feature Update the device is on, whereas 'Revision' corresponds to which quality update the device is on. Mappings between Feature release and Major, as well as Revision and KBs, are available aka.ms/win10releaseinfo. |
 | OSName | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |
 | OSVersion | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |

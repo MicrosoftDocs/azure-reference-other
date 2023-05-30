@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlRunStatusChangedEvent
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIpAddress | string | The caller IP address. |
 | CorrelationId | string | A GUID used to group together a set of related events. |
 | DurationMs | string | The duration of the operation in milliseconds. |
 | Identity | string | Identity of the user or application that performed the operation |
+| _IsBillable | string |  |
 | Level | string | The severity level of the event. Must be one of Informational, Warning, Error, or Critical. |
 | Location | string | The region of the resource emitting the event. |
 | Message | string | Message associated with run status change. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # VMComputer
@@ -60,6 +60,7 @@ ms.date: 5/19/2023
 | AzureVmScaleSetInstanceId | string | For scale sets the instance id of the server. |
 | AzureVmScaleSetName | string | For scale sets the name of the scale set. |
 | AzureVmScaleSetResourceId | string | For scale sets the resource id of the scale set. |
+| _BilledSize | real |  |
 | BootTime | datetime | The boot time in UTC |
 | Computer | string | The name of the computer. |
 | Cpus | int | The number of CPUs |
@@ -76,6 +77,7 @@ ms.date: 5/19/2023
 | Ipv4DefaultGateways | dynamic | A list of the server's IPv4 default gateways. |
 | Ipv4SubnetMasks | dynamic | A list of the server's IPv4 subnet masks. |
 | Ipv6Addresses | dynamic | A list of the server's IPv6 addresses |
+| _IsBillable | string |  |
 | MacAddresses | dynamic | A list of the server's MAC addresses |
 | Machine | string | AgentId with m- prepended. |
 | OperatingSystemFamily | string | Value will be windows or linux |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppServiceAntivirusScanAuditLogs
@@ -24,8 +24,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | Log category name |
 | ErrorMessage | string | Error Message |
+| _IsBillable | string |  |
 | ListOfInfectedFiles | string | List of each virus file path |
 | NumberOfInfectedFiles | int | Total number of files infected with virus |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

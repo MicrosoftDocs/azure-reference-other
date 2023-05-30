@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CDBPartitionKeyRUConsumption
@@ -32,8 +32,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AccountName | string | The name of the Cosmos DB account containing the physical partition. |
+| _BilledSize | real |  |
 | CollectionName | string | The name of the Cosmos DB collection, which contains the partition. |
 | DatabaseName | string | The name of the Cosmos DB database, which contains the partition. |
+| _IsBillable | string |  |
 | OperationName | string | The data plane operation that consumed RUs (Request Units) for this logical partition key. |
 | PartitionKey | string | The logical partition key for which RU (Request Unit) consumption statistics were retrieved. |
 | PartitionKeyRangeId | string | The physical partition containing the logical partition key against which the RU (Request Unit) consuming operation was issued. |

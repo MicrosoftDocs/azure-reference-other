@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppServiceAppLogs
@@ -30,11 +30,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | Log category name |
 | ContainerId | string | Application container id |
 | CustomLevel | string | Verbosity level of log |
 | ExceptionClass | string | Application class from where log message is emitted  |
 | Host | string | Host where the application is running |
+| _IsBillable | string |  |
 | Level | string | Verbosity level of log mapped to standard levels (Informational, Warning, Error, or Critical) |
 | Logger | string | Application logger used to emit log message |
 | Message | string | Log message |
@@ -44,8 +46,8 @@ ms.date: 5/19/2023
 | ResultDescription | string | Log message description |
 | Source | string | Application source from where log message is emitted |
 | SourceSystem | string |  |
-| Stacktrace | string | Complete stack trace of the log message in case of exception |
 | StackTrace | string | Complete stack trace of the log message in case of exception |
+| Stacktrace | string | Complete stack trace of the log message in case of exception |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string |  |
 | TimeGenerated | datetime | Time when event is generated |

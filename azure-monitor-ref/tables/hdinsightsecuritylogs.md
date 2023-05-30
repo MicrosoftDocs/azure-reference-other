@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightSecurityLogs
@@ -31,9 +31,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterName | string | Name of cluster. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | HostName | string | Name of host where log was emitted. |
+| _IsBillable | string |  |
 | LogType | string | The name of the log file that a record came from (e.g. AmbariAuditLog, AuthLog). |
 | Message | string | message from log file. |
 | OperationName | string | The operation associated with log record. |

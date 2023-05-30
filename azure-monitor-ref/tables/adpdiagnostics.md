@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADPDiagnostics
@@ -30,8 +30,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of the diagnostic log record. |
 | CorrelationId | string | Internal ADP correlation ID used in support scenarios. |
+| _IsBillable | string |  |
 | Level | string | The verbosity level of the log record ('Informational', 'Warning', 'Error', or 'Critical'). |
 | Location | string | The location (region) of the resource. |
 | Message | string | The log record message. |

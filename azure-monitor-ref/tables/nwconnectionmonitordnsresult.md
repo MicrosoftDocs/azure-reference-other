@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NWConnectionMonitorDNSResult
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ChecksFailed | int | The total number of checks failed under the test |
 | ChecksTotal | int | The total number of checks done under the test |
 | ConnectionMonitorResourceId | string | The connection monitor resource id of the test |
@@ -42,6 +43,7 @@ ms.date: 5/19/2023
 | DestinationSubnet | string | If applicable, the subnet of the destination |
 | DestinationType | string | The type of the destination machine configured for the test |
 | DomainName | string | The domain name of DNS Test |
+| _IsBillable | string |  |
 | Protocol | string | The protocol of the test |
 | RecordId | string | The record id for unique identification of test result record |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

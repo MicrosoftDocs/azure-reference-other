@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightKafkaMetrics
@@ -30,9 +30,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterName | string | Name of cluster. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | HostName | string | Name of host where log was emitted. |
+| _IsBillable | string |  |
 | MetricDataType | string | CollectD datatype of the metric (e.g. gauge, counter, etc.). Determines how metric is portrayed over time. Please reference CollectD documentation for more information: https://collectd.org/wiki/index.php/Data_source . |
 | MetricName | string | Name of the metric for the record (e.g. OfflinePartitionsCount, UnderReplicatedPartitions, LeaderCount, etc). |
 | MetricNamespace | string | Category of metric (e.g. RequestMetrics, BrokerTopicMetrics, KafkaController, etc).  |

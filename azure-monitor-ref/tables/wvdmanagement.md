@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WVDManagement
@@ -33,8 +33,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ArmObjectScope | string | The ARM object scope for the management request - used for session hosts, applications. |
+| _BilledSize | real |  |
 | ClientSideIPAddress | string | The remote IP address from the client side. |
 | CorrelationId | string | The activity Id. |
+| _IsBillable | string |  |
 | ObjectsCreated | int | The number of objects that were created. |
 | ObjectsDeleted | int | The number of objects that were deleted. |
 | ObjectsFetched | int | The number of objects that were fetched. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightSparkStageTaskAccumulables
@@ -31,12 +31,14 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
+| _BilledSize | real |  |
 | ClusterDnsName | string | The DNS name of the cluster where the metric was collected. |
 | ClusterTenantId | string | The tenant ID of the cluster where the metric was collected. |
 | Entity | string | The name of the entity being described. |
 | EntityId | string | The ID of the entity. |
 | Host | string | The FQDN of the host where the metric was collected. |
 | IpAddress | string | The IP Address of the node where the metric was collected. |
+| _IsBillable | string |  |
 | MetricId | string | The ID of the metric. |
 | MetricName | string | The name of the metric. |
 | MetricValue | long | The value of the metric. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # StorageCacheWarningEvents
@@ -30,8 +30,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CorrelationId | string | Unique identifier to be used to correlate logs, if available. |
 | Description | string | The description of the warning event. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the event: Informational, Warning, Error, or Critical. |
 | Location | string | The region of the resource associated with the event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

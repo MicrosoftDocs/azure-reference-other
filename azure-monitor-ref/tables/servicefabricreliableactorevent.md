@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ServiceFabricReliableActorEvent
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | ApplicationName | string |  |
 | ApplicationTypeName | string |  |
 | AzureDeploymentID | string |  |
+| _BilledSize | real |  |
 | ChannelName | string |  |
 | Computer | string |  |
 | CountOfWaitingMethodCalls | long |  |
@@ -40,6 +41,7 @@ ms.date: 5/19/2023
 | EventMessage | string |  |
 | EventSourceName | string |  |
 | Exception | string |  |
+| _IsBillable | string |  |
 | IsStateful | bool |  |
 | KeywordName | string |  |
 | Level | string |  |

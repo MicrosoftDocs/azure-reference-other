@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # StorageMoverJobRunLogs
@@ -30,6 +30,8 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
+| _IsBillable | string |  |
 | JobRunName | string | JobRunName |
 | Level | string | The log level. Can be Informational, Warning or Error. |
 | Message | string | Log message. |

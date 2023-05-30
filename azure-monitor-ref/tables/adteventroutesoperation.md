@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADTEventRoutesOperation
@@ -31,11 +31,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | Application ID used in bearer authorization |
+| _BilledSize | real |  |
 | CallerIpAddress | string | A masked source IP address for the event |
 | Category | string | The type of resource being emitted |
 | CorrelationId | string | Customer provided unique identifier for the event |
 | DurationMs | string | How long it took to perform the event in milliseconds |
 | EndpointName | string | The name of egress endpoint created in Azure Digital Twins |
+| _IsBillable | string |  |
 | Level | string | The logging severity of the event |
 | Location | string | Azure region in which the Digital Twins instance is located |
 | OperationName | string | The type of action being performed during the event |

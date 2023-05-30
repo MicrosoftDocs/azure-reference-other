@@ -68,6 +68,8 @@
     href: tables/acscallautomationmediasummary.md
   - name: ACSCallDiagnostics
     href: tables/acscalldiagnostics.md
+  - name: ACSCallRecordingIncomingOperations
+    href: tables/acscallrecordingincomingoperations.md
   - name: ACSCallRecordingSummary
     href: tables/acscallrecordingsummary.md
   - name: ACSCallSummary
@@ -104,10 +106,6 @@
     href: tables/adfairflowweblogs.md
   - name: ADFAirflowWorkerLogs
     href: tables/adfairflowworkerlogs.md
-  - name: ADFPipelineRun
-    href: tables/adfpipelinerun.md
-  - name: ADFSandboxPipelineRun
-    href: tables/adfsandboxpipelinerun.md
   - name: ADFSSignInLogs
     href: tables/adfssigninlogs.md
   - name: ADFSSISIntegrationRuntimeLogs
@@ -122,8 +120,6 @@
     href: tables/adfssispackageexecutioncomponentphases.md
   - name: ADFSSISPackageExecutionDataStatistics
     href: tables/adfssispackageexecutiondatastatistics.md
-  - name: ADFTriggerRun
-    href: tables/adftriggerrun.md
   - name: ADPAudit
     href: tables/adpaudit.md
   - name: ADPDiagnostics
@@ -186,6 +182,10 @@
     href: tables/agrifoodweatherlogs.md
   - name: AGSGrafanaLoginEvents
     href: tables/agsgrafanaloginevents.md
+  - name: AHDSDicomAuditLogs
+    href: tables/ahdsdicomauditlogs.md
+  - name: AHDSDicomDiagnosticLogs
+    href: tables/ahdsdicomdiagnosticlogs.md
   - name: AHDSMedTechDiagnosticLogs
     href: tables/ahdsmedtechdiagnosticlogs.md
   - name: AirflowDagProcessingLogs
@@ -506,14 +506,12 @@
     href: tables/databrickswebterminal.md
   - name: DatabricksWorkspace
     href: tables/databricksworkspace.md
+  - name: DataTransferOperations
+    href: tables/datatransferoperations.md
   - name: DefenderIoTRawEvent
     href: tables/defenderiotrawevent.md
   - name: DevCenterDiagnosticLogs
     href: tables/devcenterdiagnosticlogs.md
-  - name: DeviceAppCrash
-    href: tables/deviceappcrash.md
-  - name: DeviceAppLaunch
-    href: tables/deviceapplaunch.md
   - name: DeviceEvents
     href: tables/deviceevents.md
   - name: DeviceFileCertificateInfo
@@ -534,10 +532,6 @@
     href: tables/deviceprocessevents.md
   - name: DeviceRegistryEvents
     href: tables/deviceregistryevents.md
-  - name: DeviceSkypeHeartbeat
-    href: tables/deviceskypeheartbeat.md
-  - name: DeviceSkypeSignIn
-    href: tables/deviceskypesignin.md
   - name: DeviceTvmSecureConfigurationAssessment
     href: tables/devicetvmsecureconfigurationassessment.md
   - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -548,8 +542,6 @@
     href: tables/devicetvmsoftwarevulnerabilities.md
   - name: DeviceTvmSoftwareVulnerabilitiesKB
     href: tables/devicetvmsoftwarevulnerabilitieskb.md
-  - name: DHOSCrashData
-    href: tables/dhoscrashdata.md
   - name: DnsEvents
     href: tables/dnsevents.md
   - name: DnsInventory
@@ -682,8 +674,6 @@
     href: tables/kubemonagentevents.md
   - name: KubeNodeInventory
     href: tables/kubenodeinventory.md
-  - name: KubePodInventory
-    href: tables/kubepodinventory.md
   - name: KubePVInventory
     href: tables/kubepvinventory.md
   - name: KubeServices
@@ -694,8 +684,6 @@
     href: tables/logicappworkflowruntime.md
   - name: MAApplicationInstance
     href: tables/maapplicationinstance.md
-  - name: MADeviceNotEnrolled
-    href: tables/madevicenotenrolled.md
   - name: MAOfficeAddinInstance
     href: tables/maofficeaddininstance.md
   - name: MAOfficeAppInstance
@@ -768,6 +756,10 @@
     href: tables/perf.md
   - name: PFTitleAuditLogs
     href: tables/pftitleauditlogs.md
+  - name: PowerAppsActivity
+    href: tables/powerappsactivity.md
+  - name: PowerAutomateActivity
+    href: tables/powerautomateactivity.md
   - name: PowerBIActivity
     href: tables/powerbiactivity.md
   - name: PowerBIAuditTenant
@@ -784,6 +776,10 @@
     href: tables/powerbireportusagetenant.md
   - name: PowerBIReportUsageWorkspace
     href: tables/powerbireportusageworkspace.md
+  - name: PowerPlatformConnectorActivity
+    href: tables/powerplatformconnectoractivity.md
+  - name: PowerPlatformDlpActivity
+    href: tables/powerplatformdlpactivity.md
   - name: ProjectActivity
     href: tables/projectactivity.md
   - name: PurviewDataSensitivityLogs
@@ -800,8 +796,6 @@
     href: tables/securescorecontrols.md
   - name: SecureScores
     href: tables/securescores.md
-  - name: SecurityBaseline
-    href: tables/securitybaseline.md
   - name: SecurityBaselineSummary
     href: tables/securitybaselinesummary.md
   - name: SecurityIncident
@@ -906,8 +900,6 @@
     href: tables/tsiingress.md
   - name: UAComputerRank
     href: tables/uacomputerrank.md
-  - name: UASysReqIssue
-    href: tables/uasysreqissue.md
   - name: UCClient
     href: tables/ucclient.md
   - name: UCClientReadinessStatus
@@ -924,10 +916,6 @@
     href: tables/ucserviceupdatestatus.md
   - name: UCUpdateAlert
     href: tables/ucupdatealert.md
-  - name: UpdateRunProgress
-    href: tables/updaterunprogress.md
-  - name: UpdateSummary
-    href: tables/updatesummary.md
   - name: UrlClickEvents
     href: tables/urlclickevents.md
   - name: Usage

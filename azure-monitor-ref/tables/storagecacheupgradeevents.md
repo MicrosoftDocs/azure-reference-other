@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # StorageCacheUpgradeEvents
@@ -31,9 +31,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AvailableFirmwareVersion | string | The firmware version for upgrade, if available. |
+| _BilledSize | real |  |
 | CorrelationId | string | Unique identifier to be used to correlate logs, if available. |
 | CurrentFirmwareVersion | string | The firmware version currently running. |
 | Description | string | The description of the upgrade event. |
+| _IsBillable | string |  |
 | Location | string | The region of the resource associated with the event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |

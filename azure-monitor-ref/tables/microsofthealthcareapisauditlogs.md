@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # MicrosoftHealthcareApisAuditLogs
@@ -31,12 +31,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIdentity | dynamic | The caller's identity. |
 | CallerIdentityIssuer | string | The JWD token Issuer. |
 | CallerIdentityObjectId | string | The AAD object ID. |
 | CallerIPAddress | string | The IP address of the caller. |
 | CorrelationId | string | The correlation id of the request. |
 | FhirResourceType | string | The resource type the operation was executed for. |
+| _IsBillable | string |  |
 | Location | string | The location of the server that processed the request (e.g., South Central US). |
 | LogCategory | string | The audit event category. |
 | OperationDuration | int | The duration of the operation in ms. |

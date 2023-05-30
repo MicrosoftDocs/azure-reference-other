@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # KubePVInventory
@@ -33,8 +33,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterId | string | The ID of the Kubernetes cluster of the persistent volume |
 | ClusterName | string | The name of the Kubernetes cluster of the persistent volume |
+| _IsBillable | string |  |
 | PVAccessModes | string | A comma separated list of access modes of the persistent volume |
 | PVCapacityBytes | real | The capacity of the persistent volume measured in bytes |
 | PVCName | string | The Kubernetes persistent volume claim name |

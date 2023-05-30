@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UAComputer
@@ -28,6 +28,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AppIssues | int |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | ConfigMgrClientID | string |  |
@@ -37,6 +38,7 @@ ms.date: 5/19/2023
 | DriverIssues | int |  |
 | HoursToUninstall | int |  |
 | InventoryVersion | string |  |
+| _IsBillable | string |  |
 | ItemRank | int |  |
 | LastScan | datetime |  |
 | Manufacturer | string |  |

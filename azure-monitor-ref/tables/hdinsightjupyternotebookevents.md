@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightJupyterNotebookEvents
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterDnsName | string | The DNS name of the cluster running the application. |
 | ClusterTenantId | string | The tenant ID of the cluster running the application. |
 | Dim0 | string | Varies based of of type of event. |
@@ -46,6 +47,7 @@ ms.date: 5/19/2023
 | EventName | string | The name of the event. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the application. |
+| _IsBillable | string |  |
 | Region | string | The region of the cluster running the application. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Role | string | The type of node the application running the application. |

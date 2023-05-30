@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # StorageTableLogs
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 | AuthenticationHash | string | The hash of authentication token. |
 | AuthenticationType | string | The type of authentication that was used to make the request. |
 | AuthorizationDetails | dynamic | Detailed policy information used to authorize the request. |
+| _BilledSize | real |  |
 | CallerIpAddress | string | The IP address of the requester, including the port number. |
 | Category | string | The category of requested operation. |
 | ClientRequestId | string | The x-ms-client-request-id header value of the request. |
@@ -42,6 +43,7 @@ ms.date: 5/19/2023
 | CorrelationId | string | The ID that is used to correlate logs across resources. |
 | DurationMs | real | The total time, expressed in milliseconds, to perform the requested operation. This includes the time to read the incoming request, and to send the response to the requester. |
 | Etag | string | The ETag identifier for the returned object, in quotes. |
+| _IsBillable | string |  |
 | LastModifiedTime | datetime | The Last Modified Time (LMT) for the returned object. This field is empty for operations that can return multiple objects. |
 | Location | string | The location of storage account. |
 | OperationCount | int | The number of each logged operation that is involved in the request. This count starts with an index of 0. Some requests require more than one operation, such as a request to copy a blob. Most requests perform only one operation. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AzureLoadTestingOperation
@@ -31,12 +31,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIpAddress | string | IP Address of the client that submitted the request. |
 | CorrelationId | string | Unique identifier to be used to correlate logs. |
 | DurationMs | real | Amount of time it took to process request in milliseconds. |
 | FailureDetails | string | Details of the error in case if request is failed. |
 | HttpStatusCode | int | HTTP status code of the API response. |
 | Identity | dynamic | JSON structure containing information about the caller. |
+| _IsBillable | string |  |
 | OperationId | string | Operation identifier for rest api |
 | OperationName | string | Name of the operation attempted on the resource. |
 | OperationVersion | string | Request api version |

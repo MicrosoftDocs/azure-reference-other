@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # IoTHubDistributedTracing
@@ -30,12 +30,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerLocalTimeUtc | datetime | Creation time of the message as reported by the device local clock |
 | Category | string | Category of the log event |
 | DependencyType | string | For outgoing requests (dependencies), describes type of the dependency |
 | DurationMs | int | Duration of the operation in milliseconds |
 | EventKind | string | Kind of the event |
 | InstanceId | string | Name of the instance that processed request |
+| _IsBillable | string |  |
 | IsRoutingEnabled | bool | Either true or false, indicates whether or not message routing is enabled in the IoT Hub |
 | Level | string | Level of severity of the event |
 | Location | string | Azure region in which the Iot Hub is located |

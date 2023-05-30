@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # LinuxAuditLog
@@ -45,6 +45,7 @@ ms.date: 5/19/2023
 | AuditID | string |  |
 | audit_user | string |  |
 | auid | long |  |
+| _BilledSize | real |  |
 | cmd | string |  |
 | comm | string |  |
 | Computer | string |  |
@@ -64,6 +65,7 @@ ms.date: 5/19/2023
 | group | string |  |
 | hostname | string |  |
 | icmptype | string |  |
+| _IsBillable | string |  |
 | key | string |  |
 | ManagementGroup | string |  |
 | ManagementGroupName | string |  |

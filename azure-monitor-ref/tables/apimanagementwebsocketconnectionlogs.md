@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ApiManagementWebSocketConnectionLogs
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CorrelationId | string | Unique id to group related events for a websocket request. |
 | Destination | string | The destination of the request/message for the websocket connection. |
 | Error | string | Error details if any for the websocket connection. |
 | EventName | string | Name of the event describing the operation. |
+| _IsBillable | string |  |
 | Region | string | Country or region where API Management Gateway is located. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Source | string | The source of the request/message for the websocket connection. |

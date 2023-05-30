@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ConfigurationChange
@@ -36,6 +36,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | Acls | string | The Access-Control List specifies which users or system processes are granted access to objects |
 | Attributes | string |  |
+| _BilledSize | real |  |
 | ChangeCategory | string | The type of change that occurred: Added Removed Modified |
 | Computer | string |  |
 | ConfigChangeType | string | Type of configuration item that changed: Files Software WindowsServices Registry Daemons |
@@ -46,6 +47,7 @@ ms.date: 5/19/2023
 | FileContentChecksum | string | Checksum of the file content |
 | FileSystemPath | string | File system path for the changed file |
 | Hive | string | Registry hive for the changed registry key |
+| _IsBillable | string |  |
 | LastSnapshotAge | long | Age of the last snapshot |
 | Location | string |  |
 | ManagementGroupName | string | Name of a resource's assigned management group |

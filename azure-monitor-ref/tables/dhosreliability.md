@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DHOSReliability
@@ -28,11 +28,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AbnormalShutdownCount | int |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | ConfigMgrClientID | string |  |
 | Country | string |  |
 | DeviceLastSeenTime | datetime |  |
+| _IsBillable | string |  |
 | KernelModeCrashCount | int |  |
 | KernelModeCrashFreePercentForIndustry | real |  |
 | Manufacturer | string |  |

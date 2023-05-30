@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityRegulatoryCompliance
@@ -27,9 +27,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AssessedResourceId | string | The ID of the assessed resource |
+| _BilledSize | real |  |
 | ComplianceControl | string | The name of regulatory compliance control |
 | ComplianceStandard | string | The name of compliance standard |
 | FailedResources | int | The number of resources that failed this assessment |
+| _IsBillable | string |  |
 | IsSnapshot | bool | Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'. |
 | PassedResources | int | The number of resources that passed this assessment |
 | Properties | dynamic | The complete set of metadata. |

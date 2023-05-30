@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WVDErrors
@@ -33,9 +33,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActivityType | string | The activity type for which the error happened. |
+| _BilledSize | real |  |
 | Code | long | The error code for the error. |
 | CodeSymbolic | string | The error code symbolic representation (if available). |
 | CorrelationId | string | The activity Id. |
+| _IsBillable | string |  |
 | Message | string | The error message. |
 | Operation | string | The name of the operation that failed. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

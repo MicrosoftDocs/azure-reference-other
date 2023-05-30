@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecureScoreControls
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AssessedResourceId | string | The ID of the assessed resource |
+| _BilledSize | real |  |
 | ControlId | string | The ID of the assessed control |
 | ControlName | string | The display name of the control |
 | ControlType | string | The type of security control (for example, BuiltIn) |
@@ -34,6 +35,7 @@ ms.date: 5/19/2023
 | Description | string | The description of the control |
 | Environment | string | Data source environment. |
 | HealthyResources | int | The number of healthy resources |
+| _IsBillable | string |  |
 | IsSnapshot | bool | Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'. |
 | MaxScore | int | The maximum control score |
 | NotApplicableResources | int | The number of not applicable resources |

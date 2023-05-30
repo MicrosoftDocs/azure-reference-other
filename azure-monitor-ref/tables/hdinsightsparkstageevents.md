@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightSparkStageEvents
@@ -32,6 +32,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
 | AttemptId | string | The Id of the stage attempt. |
+| _BilledSize | real |  |
 | ClusterDnsName | string | The DNS name of the cluster running the stage. |
 | ClusterTenantId | string | The tenant ID of the cluster running the stage. |
 | CompletionTime | datetime | The time (UTC) the stage was completed. |
@@ -39,6 +40,7 @@ ms.date: 5/19/2023
 | FailureReason | string | The reason for failure if the stage failed. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the stage. |
+| _IsBillable | string |  |
 | RDDInfo | string | Json containing information about RDDs used in the stage. |
 | Region | string | The region of the cluster running the stage. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

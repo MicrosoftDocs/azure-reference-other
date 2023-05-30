@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AMSStreamingEndpointRequests
@@ -31,7 +31,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClientIP | string | IP address of the client. |
+| _IsBillable | string |  |
 | Level | string | Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
 | Location | string | Location of the service sending the event. |
 | OperationName | string | The name of the operation that triggered the event. |

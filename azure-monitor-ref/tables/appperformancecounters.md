@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppPerformanceCounters
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | AppRoleInstance | string | Role instance of the application. |
 | AppRoleName | string | Role name of the application. |
 | AppVersion | string | Version of the application. |
+| _BilledSize | real |  |
 | Category | string | Performance counter category. |
 | ClientBrowser | string | Browser running on the client device. |
 | ClientCity | string | City where the client device is located. |
@@ -45,6 +46,7 @@ ms.date: 5/19/2023
 | Counter | string | Performance counter name. |
 | IKey | string | Instrumentation key of the Azure resource. |
 | Instance | string | Instance identifier, to which the counter is related. |
+| _IsBillable | string |  |
 | Name | string | Performance counter name. |
 | OperationId | string | Application-defined operation ID. |
 | OperationName | string | Application-defined name of the overall operation. The OperationName values typically match the Name values for AppRequests. |

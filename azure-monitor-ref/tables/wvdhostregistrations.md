@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WVDHostRegistrations
@@ -30,7 +30,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CorrelationId | string | The activity Id. |
+| _IsBillable | string |  |
 | IsSessionHostPrivateLink | string | True if the session host side of this connection used a private link endpoint during orchestration. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SessionHostIPAddress | string | The IP address of the session host that was registered with the WVD service. |

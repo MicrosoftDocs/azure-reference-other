@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WVDConnections
@@ -31,6 +31,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AadTenantId | string | The AAD tenant Id of the user. |
+| _BilledSize | real |  |
 | ClientOS | string | The OS of the client that is connecting (if available). |
 | ClientSideIPAddress | string | The remote IP address from the client side. |
 | ClientType | string | The type of the client that is connecting (if available). |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | ConnectionType | string | The type of connection - either RAIL (RemoteApp Integrated Locally) or Desktop. |
 | CorrelationId | string | The activity Id. |
 | GatewayRegion | string | The region of the WVD Gateway for the server side user connection. |
+| _IsBillable | string |  |
 | IsClientPrivateLink | string | True if the client side of this connection used a private link endpoint during orchestration. |
 | IsSessionHostPrivateLink | string | True if the session host side of this connection used a private link endpoint during orchestration. |
 | PredecessorConnectionId | string | The predecessor Correlation Id of the connection, if the current connection is an auto-reconnect. |

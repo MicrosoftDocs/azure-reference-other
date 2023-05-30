@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # PowerBIActivity
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | ActorName | string | The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, my_name@my_domain_name. Note that records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included. In SharePoint, another value display in the UserId property is app@sharepoint. This indicates that the "user" who performed the activity was an application that has the necessary permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. For more information, see the app@sharepoint user in audit records. |
 | ActorUserId | string | An alternative ID for the user identified in the UserId property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint, OneDrive for Business, and Exchange. This property may also specify the same value as the UserID property for events occurring in other services and events performed by system accounts. |
 | ActorUserType | string | The type of user that performed the operation. Possible types are: Admin, System, Application, Service Principal and Other. |
+| _BilledSize | real |  |
 | DashboardId | string | The ID of the dashboard that the activity was performed on. |
 | DashboardName | string | The name of the dashboard where the event occurred. |
 | DataClassification | string | The data classification, if exists, for the dashboard where the event occurred. |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | EventProduct | string | The Microsoft product name (PowerBI). |
 | EventResult | string | Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceeded, or Failed. |
 | EventVendor | string | Service vendor name. |
+| _IsBillable | string |  |
 | IsSuccess | string | Indicates whether the action was successful or not. |
 | ItemName | string | The name of the item that the activity was performed on. |
 | MembershipInformation | string | Membership information about the group. |

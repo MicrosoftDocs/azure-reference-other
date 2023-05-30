@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADXCommand
@@ -28,12 +28,14 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationName | string | application name invoked the command |
+| _BilledSize | real |  |
 | Category | string | The category of this log for this events it will be Command |
 | CommandType | string | Command type |
 | CorrelationId | string | The client request id |
 | DatabaseName | string | The name of the database the command ran on |
 | Duration | string | Command duration |
 | FailureReason | string | The failure reason |
+| _IsBillable | string |  |
 | LastUpdatedOn | datetime | Time (UTC) at which this command ended |
 | OperationName | string | The name of this operation |
 | Principal | string | The principal that invoked the query |

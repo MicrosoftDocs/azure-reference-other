@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NetworkAccessTraffic
@@ -32,6 +32,7 @@ ms.date: 5/19/2023
 | Action | string | The action taken on the network session. Allowed, Denied. |
 | AgentVersion | string | The version of the agent connecting. |
 | AppliedRuleId | string | The ID of the rule for which the request was denied by. |
+| _BilledSize | real |  |
 | ConnectionId | string | Unique identifier representing the connection this traffic log was initiated from. |
 | CreationTime | datetime | The date and time (UTC) that the network connection was created. |
 | DestinationFQDN | string | The destination device hostname, including domain information when available. |
@@ -41,6 +42,7 @@ ms.date: 5/19/2023
 | DeviceId | string | The ID of the source device as reported in the record. |
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
+| _IsBillable | string |  |
 | NetworkProtocol | string | The network protocol, IPv6 \ IPv4. |
 | OriginHeader | string | The Origin header value. |
 | PolicyId | string | The ID of the policy for which the request was denied by its rule. |

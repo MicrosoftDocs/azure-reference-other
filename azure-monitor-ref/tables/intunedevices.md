@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # IntuneDevices
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 | AADTenantId | string | The AAD Tenant ID |
 | AndroidPatchLevel | string | The Android patch level of the device |
 | BatchId | string | The unique ID for the exported report |
+| _BilledSize | real |  |
 | CategoryName | string | The category name of the device |
 | CompliantState | string | The compliant state of the device |
 | CreatedDate | string | The date and time of the device entry was created |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | IMEI | string | The international mobile equipment identifier of the device |
 | InGracePeriodUntil | string | The device grace period end time |
 | IntuneAccountId | string | The Intune Account ID |
+| _IsBillable | string |  |
 | JailBroken | string | String describing whether the device is jail broken |
 | JoinType | string | The device join type |
 | LastContact | string | The date and time of last contact |

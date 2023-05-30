@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AVSSyslog
@@ -28,8 +28,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AppName | string | The name of the application that generated this log, if available. |
+| _BilledSize | real |  |
 | Facility | string | Indicates the source that generated the syslog (e.g., an operating system, a process, an application, etc). |
 | HostName | string | The name of the host that generated this log, if available. |
+| _IsBillable | string |  |
 | LogCreationTime | datetime | The time at which the log was created, if available. |
 | Message | string | The entire syslog message. |
 | MsgId | string | Identifies the type of message. For example, a firewall might use MSGID "TCPIN" for incoming traffic, and MSGID "TCPOUT" for outgoing traffic. Messages with the same MSGID reflect events of the same semantics. |

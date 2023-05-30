@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWInternalFqdnResolutionFailure
@@ -30,8 +30,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Error | string | Description of the error that caused the failure of the FQDN resolution. |
 | Fqdn | string | The FQDN which the firewall failed to resolve. |
+| _IsBillable | string |  |
 | Policy | string | Name of the policy in which the rule with the failing FQDN resolution resides. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Rule | string | Name of the rule with the failing FQDN resolution. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ContainerLog
@@ -40,10 +40,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string | Computer/node that's generating the log. |
 | ContainerID | string | Container ID for log source as seen by Docker engine. |
 | Image | string | Container Image for log source as seen by Docker engine. |
 | ImageTag | string | Used by Container solution only. Not populated by Azure Monitor for Containers. |
+| _IsBillable | string |  |
 | LogEntry | string | Actual log line. |
 | LogEntrySource | string | Source of the log line. Possible values are stdout or stderr. |
 | Name | string | Unique name of the container the form  PODUid/ContainerName. |

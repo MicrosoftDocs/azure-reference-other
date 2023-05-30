@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CoreAzureBackup
@@ -54,6 +54,7 @@ ms.date: 5/19/2023
 | BackupManagementServerUniqueId | string |  |
 | BackupManagementServerVersion | string |  |
 | BackupManagementType | string |  |
+| _BilledSize | real |  |
 | BillingGroupFriendlyName | string |  |
 | BillingGroupUniqueId | string |  |
 | Category | string |  |
@@ -66,6 +67,7 @@ ms.date: 5/19/2023
 | DatasourceSubscriptionId | string |  |
 | DatasourceType | string |  |
 | IsArchiveEnabled | bool |  |
+| _IsBillable | string |  |
 | LatestRecoveryPointLocation | string |  |
 | LatestRecoveryPointTime | datetime |  |
 | OldestRecoveryPointLocation | string |  |

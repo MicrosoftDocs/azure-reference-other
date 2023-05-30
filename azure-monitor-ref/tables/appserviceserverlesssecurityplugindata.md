@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppServiceServerlessSecurityPluginData
@@ -30,7 +30,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Index | int | Available when multiple payloads exist for the same message. In that case, payloads share the same SlSecRequestId and Index defines the chronological order of payloads. |
+| _IsBillable | string |  |
 | MsgVersion | string | The version of the message schema. Used to make code changes backward- and forward- compatible. |
 | Payload | dynamic | An array of messages, where each one is a JSON string. |
 | PayloadType | string | The type of the payload. Mostly used to distinguish between messages meant for different types of security analysis. |

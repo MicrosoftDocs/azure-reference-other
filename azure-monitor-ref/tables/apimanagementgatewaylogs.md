@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ApiManagementGatewayLogs
@@ -43,6 +43,7 @@ ms.date: 5/19/2023
 | BackendResponseHeaders | dynamic |  |
 | BackendTime | long |  |
 | BackendUrl | string |  |
+| _BilledSize | real |  |
 | Cache | string |  |
 | CacheTime | long |  |
 | CallerIpAddress | string |  |
@@ -52,6 +53,7 @@ ms.date: 5/19/2023
 | ClientTlsVersion | string |  |
 | CorrelationId | string |  |
 | Errors | dynamic |  |
+| _IsBillable | string |  |
 | IsRequestSuccess | bool |  |
 | LastErrorElapsed | long |  |
 | LastErrorMessage | string |  |

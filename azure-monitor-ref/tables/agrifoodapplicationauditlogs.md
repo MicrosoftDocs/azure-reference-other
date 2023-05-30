@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AgriFoodApplicationAuditLogs
@@ -31,11 +31,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIpAddress | string | IP address of the client that made the request. |
 | Category | string | Logs generated as a result of operations executed using FarmBeats APIs are grouped into categories. Categories in FarmBeats are logical groupings based on either the data source the underlying APIs fetch data from or on the basis of hierarchy of entities in FarmBeats. |
 | CorrelationId | string | Unique identifier to be used to correlate logs, when available. |
 | DataPlaneResourceId | string | ID that uniquely identifies a FarmBeats resource such as a Farm, Farmer, Boundary etc. |
 | Identity | dynamic | Identity from the token that was presented in the REST API request. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the event, will be one of Informational, Warning, Error, or Critical. |
 | Location | string | The region of the resource emitting the event. |
 | OperationName | string | The operation name for which the log entry was created. |

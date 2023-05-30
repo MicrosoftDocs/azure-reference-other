@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppPlatformBuildLogs
@@ -27,8 +27,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | BuildLog | string | The build log for each build stages. |
 | ContainerName | string | The name of the container that emitted the log. |
+| _IsBillable | string |  |
 | PodName | string | The name of the pod that emitted the log. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |

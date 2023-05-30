@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UserPeerAnalytics
@@ -28,6 +28,8 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AADTenantId | string | Unique identifier of the Azure Tenant |
+| _BilledSize | real |  |
+| _IsBillable | string |  |
 | PeerUserId | string | Unique identifier of the peer of the primary user |
 | PeerUserName | string | User name of the peer of the primary user |
 | PeerUserPrincipalName | string | User principal name of the peer of the primary user |

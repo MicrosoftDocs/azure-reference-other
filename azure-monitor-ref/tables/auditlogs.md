@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AuditLogs
@@ -36,12 +36,14 @@ ms.date: 5/19/2023
 | ActivityDateTime | datetime | Date and time the activity was performed in UTC. |
 | ActivityDisplayName | string | Activity name or the operation name. Examples include Create User and Add member to group. For full list see Azure AD activity list. |
 | AdditionalDetails | dynamic | Indicates additional details on the activity. |
+| _BilledSize | real |  |
 | Category | string | Currently Audit is the only supported value. |
 | CorrelationId | string | Optional GUID that's passed by the client. Can help correlate client-side operations with server-side operations and is useful when tracking logs that span services. |
 | DurationMs | long | Property is not used and can be ignored. |
 | Id | string | GUID that uniquely identifies the activity. |
 | Identity | string | Identity from the token that was presented when the request was made. The identity can be a user account system account or service principal. |
 | InitiatedBy | dynamic | User or app initiated the activity. |
+| _IsBillable | string |  |
 | Level | string | Message type. This is currently always Informational. |
 | Location | string | Location of the datacenter. |
 | LoggedByService | string | Service that initiated the activity (For example: Self-service Password Management Core Directory B2C Invited Users Microsoft Identity Manager Privileged Identity Management. |

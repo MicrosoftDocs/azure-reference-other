@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWApplicationRuleAggregation
@@ -33,8 +33,10 @@ ms.date: 5/19/2023
 | Action | string | Action taken by the firewall following the Application rule hit. |
 | ActionReason | string | When no rule is triggered for a packet, this field contains the reason for the action performed by the firewall. |
 | ApplicationRuleCount | int | Aggregated count of Application rule. |
+| _BilledSize | real |  |
 | DestinationPort | int | Request's destination port. |
 | Fqdn | string | Request's target address in FQDN (Fully qualified Domain Name). For example: www.microsoft.com. |
+| _IsBillable | string |  |
 | Policy | string | Name of the policy in which the triggered rule resides. |
 | Protocol | string | Request's network protocol. For example: HTTP/HTTPS. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

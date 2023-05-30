@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NSPAccessLogs
@@ -34,12 +34,14 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AppId | string | Unique GUID representing the app ID of resource in the Azure Active Directory. |
+| _BilledSize | real |  |
 | Category | string | NSP access log categories. |
 | DestinationFqdn | string | Fully Qualified Domain(FQDN) name of the destination. |
 | DestinationParameters | string | List of optional destination properties in key-value pair format. For example: [ {Param1}: {value1}, {Param2}: {value2}, ...]. |
 | DestinationPort | string | Port number of outbound connection, when available. |
 | DestinationProtocol | string | Application layer protocol and transport layer protocol used for outbound connection in the format {AppProtocol}:{TransportProtocol}. For example: 'HTTPS:TCP'. It be must specified if available. |
 | DestinationResourceId | string | Resource ID of destination PaaS resource for an outbound connection, when available. |
+| _IsBillable | string |  |
 | Location | string | Indicates the region of NSP. |
 | MatchedRule | string | JSON property bag containing matched access rule name. It can be either NSP access rule name or resource rule name (not it's resource ID). |
 | OperationName | string | Indicates top-level PaaS operation name. |
