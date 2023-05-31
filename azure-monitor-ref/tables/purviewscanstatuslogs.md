@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # PurviewScanStatusLogs
@@ -32,11 +32,13 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AssetsClassified | long | Number of assets classified from the scan. |
 | AssetsDiscovered | long | Number of assets discovered from the scan. |
+| _BilledSize | real |  |
 | Category | string | Log type category. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DataSourceName | string | Name of the data source where the scan is run. |
 | DataSourceType | string | Type of data source where the scan is run. For example: AzureDataExplorer, SQLServer etc. |
 | ErrorDetails | string | Error detail while running the scan. |
+| _IsBillable | string |  |
 | LogLevel | string | Log level of message (INFO, WARN, ERROR, etc.). |
 | OperationName | string | The operation associated with log record. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

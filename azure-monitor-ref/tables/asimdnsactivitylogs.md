@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ASimDnsActivityLogs
@@ -31,6 +31,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
+| _BilledSize | real |  |
 | DnsFlags | string | The DNS request flags, as provided by the reporting device.  The structure of the DNS flags information may vary between different reporting devices. |
 | DnsFlagsAuthenticated | bool | The DNS authenticated answer flag, which is related to DNSSEC, indicates in a response that all data included in the answer and authority sections of the response have been verified by the server according to the policies of that server. see RFC 3655 Section 6.1 for more information. |
 | DnsFlagsAuthoritative | bool | The DNS authoritative answer flag indicates whether the response from the server was authoritative. |
@@ -109,6 +110,7 @@ ms.date: 5/19/2023
 | EventSubType | string | Either request or response. |
 | EventType | string | Indicates the operation reported by the record. For DNS activity events, this value is the DNS opcode as defined by the Internet Assigned Numbers Authority (IANA). |
 | EventVendor | string | The vendor of the product generating the event. |
+| _IsBillable | string |  |
 | NetworkProtocol | string | The transport protocol used by the network resolution event. The value can be UDP or TCP. |
 | NetworkProtocolVersion | string | The version of the network protocol. Typically used to differentiate between IPv4 and Ipv6. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

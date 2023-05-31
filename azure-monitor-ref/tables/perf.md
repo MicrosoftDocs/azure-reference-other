@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Perf
@@ -39,6 +39,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | BucketEndTime | datetime |  |
 | BucketStartTime | datetime |  |
 | Computer | string | Computer that the event was collected from. |
@@ -46,6 +47,7 @@ ms.date: 5/19/2023
 | CounterPath | string | Full path of the counter in the form \\\<Computer\>\object(instance)\counter. |
 | CounterValue | real |  |
 | InstanceName | string | Name of the event instance. Empty if no instance. |
+| _IsBillable | string |  |
 | Max | real |  |
 | Min | real |  |
 | ObjectName | string | Name of the performance object. |

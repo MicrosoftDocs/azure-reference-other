@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WUDOStatus
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | BWOptPercent28Days | real |  |
 | BWOptPercent7Days | real |  |
 | BytesFromCDN | long |  |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | DownloadMode | string |  |
 | DownloadModeSrc | string |  |
 | GroupID | string |  |
+| _IsBillable | string |  |
 | ISP | string |  |
 | LastScan | datetime |  |
 | NoPeersCount | long |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Heartbeat
@@ -40,11 +40,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | Possible values include Azure Monitor Agent, Direct Agent, SCOM Agent or SCOM Management Server. |
 | Computer | string | Computer name |
 | ComputerEnvironment | string | Environment that hosts the computer: Azure or Non-Azure |
 | ComputerIP | string | IP address of the computer. Note that public IP is used |
 | ComputerPrivateIPs | dynamic | The list of private IP addresses of the computer. |
+| _IsBillable | string |  |
 | IsGatewayInstalled | bool | If Log Analytics gateway is installed the value is true, otherwise false. |
 | ManagementGroupName | string | Name of Operations Manager management group. |
 | OSMajorVersion | string | Operating system major version. |

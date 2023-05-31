@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CassandraAudit
@@ -31,11 +31,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | BatchId | string | Internal identifier shared by all statements in a batch operation. |
+| _BilledSize | real |  |
 | ClientIP | string | Client IP address. |
 | ClientPort | string | Client port. |
 | ClusterName | string | Cluster name. |
 | CoordinatorIP | string | Host address of the coordinator node. |
 | ExternalUserId | string | External user identity. |
+| _IsBillable | string |  |
 | Operation | string | The CQL statement or a textual description of the operation. |
 | OperationNaked | string | The CQL statement or a textual description of the operation, without bound values appended to prepared statements. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

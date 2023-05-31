@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DeviceEvents
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | ActionType | string | Type of activity that triggered the event. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
+| _BilledSize | real |  |
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | FileName | string | Domain of the account. |
@@ -64,6 +65,7 @@ ms.date: 5/19/2023
 | InitiatingProcessVersionInfoOriginalFileName | string | Original file name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | Product name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | Product version from the version information of the process (image file) responsible for the event. |
+| _IsBillable | string |  |
 | LocalIP | string | IP address assigned to the local machine used during communication. |
 | LocalPort | int | TCP port on the local machine used during communication. |
 | LogonId | long | Identifier for a logon session. This identifier is unique on the same machine only between restarts. |

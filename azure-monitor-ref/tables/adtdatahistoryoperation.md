@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADTDataHistoryOperation
@@ -31,9 +31,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | Application ID used in bearer authorization. |
+| _BilledSize | real |  |
 | CallerIpAddress | string | A masked source IP address for the event. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | long | How long it took to perform the event in milliseconds. |
+| _IsBillable | string |  |
 | Level | int | The logging severity of the event. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API version utilized during the event. |

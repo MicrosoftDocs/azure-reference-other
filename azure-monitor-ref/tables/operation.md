@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Operation
@@ -27,11 +27,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string | Name of a physical or virtual machine having membership with Log Analytics agent. |
 | CorrelationId | string | GUID that is shared with telemetry belonging to the same uber action. |
 | Detail | string | User friendly string that describes further details about the operation |
 | ErrorId | string | Deprecated. |
 | HelpLink | string | Reference URL for additional contextual information. |
+| _IsBillable | string |  |
 | ManagementGroupName | string | Name of the Operations Manager management group for System Center Operations Manager agents. |
 | OperationCategory | string | Name of the area that produced the record. |
 | OperationKey | string | Operation ID. Can be a GUID or string. |

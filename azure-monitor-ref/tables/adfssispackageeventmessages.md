@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADFSSISPackageEventMessages
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The name of the log that belongs to |
 | CorrelationId | string | correlation id |
 | DataFactoryName | string | Data factory name |
@@ -35,6 +36,7 @@ ms.date: 5/19/2023
 | ExecutionPath | string | Execution path |
 | ExtendedInfoId | long | Extended info id |
 | IntegrationRuntimeName | string | Integration runtime name |
+| _IsBillable | string |  |
 | Level | string | Verbosity level of log |
 | Message | string | Event message |
 | MessageCode | int | Message code |

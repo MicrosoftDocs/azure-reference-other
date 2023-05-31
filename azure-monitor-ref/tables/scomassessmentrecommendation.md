@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SCOMAssessmentRecommendation
@@ -34,12 +34,14 @@ ms.date: 5/19/2023
 | AffectedObjectName | string |  |
 | AffectedObjectType | string |  |
 | AssessmentId | string |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | CustomData | string |  |
 | DatabaseName | string |  |
 | Description | string |  |
 | FocusArea | string |  |
 | FocusAreaId | string |  |
+| _IsBillable | string |  |
 | ManagementGroupName | string |  |
 | Recommendation | string |  |
 | RecommendationId | string |  |

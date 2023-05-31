@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightHadoopAndYarnMetrics
@@ -30,10 +30,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterName | string | Name of cluster. |
 | ClusterType | string | Name of cluster. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | HostName | string | Name of host where log was emitted. |
+| _IsBillable | string |  |
 | MetricName | string | Name of the metric for the record (e.g. AppsCompleted, AppsKilled, AppsFailed , etc). |
 | MetricNamespace | string | Category of metric (value of jmx query URIs e.g. Hadoop:service=ResourceManager,name=QueueMetrics, etc). |
 | MetricValue | real | Value of metric in the record. |

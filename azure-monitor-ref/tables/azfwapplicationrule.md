@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZFWApplicationRule
@@ -32,8 +32,10 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | Action | string | Action taken by the firewall following the Application rule hit. |
 | ActionReason | string | When no rule is triggered for a request, this field contains the reason for the action performed by the firewall. For example: a packet dropped because no rule matched will show `Default Action`. |
+| _BilledSize | real |  |
 | DestinationPort | int | Request's destination port. |
 | Fqdn | string | Request's target address in FQDN (Fully qualified Domain Name). For example: www.microsoft.com. |
+| _IsBillable | string |  |
 | IsTlsInspected | bool | True if the connection is TLS inspected. False otherwise. |
 | Policy | string | Name of the policy in which the triggered rule resides. |
 | Protocol | string | Request's network protocol. For example: HTTP, HTTPS. |

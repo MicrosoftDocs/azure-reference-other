@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ProtectionStatus
@@ -38,11 +38,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AMProductVersion | string |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerEnvironment | string |  |
 | ComputerIP_Hidden | string |  |
 | DetectionId | string |  |
 | DeviceName | string |  |
+| _IsBillable | string |  |
 | ManagementGroupName | string |  |
 | OSName | string |  |
 | ProtectionStatus | string |  |
@@ -50,8 +52,8 @@ ms.date: 5/19/2023
 | ProtectionStatusRank | int |  |
 | Resource | string |  |
 | ResourceGroup | string |  |
-| ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
 | ResourceProvider | string |  |
 | ResourceType | string |  |
 | ScanDate | datetime |  |

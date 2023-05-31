@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HuntingBookmark
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | BookmarkId | string | Guid - the bookmark ARM resource name |
 | BookmarkName | string | Bookmark name given by the user |
 | BookmarkType | string | Can be used to mark bookmark origin - currently not used |
@@ -34,6 +35,7 @@ ms.date: 5/19/2023
 | CreatedTime | datetime | The timestamp of bookmark first creation time |
 | Entities | string | A serialized JSON of entities mapped by this bookmark |
 | EventTime | datetime | The timestamp of the original event that is bookmarked |
+| _IsBillable | string |  |
 | LastUpdatedTime | datetime | The timestamp of bookmark last update time |
 | Notes | string | Notes provided by user |
 | QueryEndTime | datetime | Query time range end time |

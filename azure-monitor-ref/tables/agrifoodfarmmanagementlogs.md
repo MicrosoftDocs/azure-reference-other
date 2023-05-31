@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AgriFoodFarmManagementLogs
@@ -31,6 +31,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | ApplicationId in identity claims. |
+| _BilledSize | real |  |
 | CallerIpAddress | string | IP address of the client that made the request. |
 | Category | string | Logs generated as a result of operations executed using FarmBeats APIs are grouped into categories. Categories in FarmBeats are logical groupings based on either the data source the underlying APIs fetch data from or on the basis of hierarchy of entities in FarmBeats. |
 | ClientTenantId | string | TenantId in identity claims. |
@@ -38,6 +39,7 @@ ms.date: 5/19/2023
 | DataPlaneResourceId | string | ID that uniquely identifies a FarmBeats resource such as a Farm, Farmer, Boundary etc. |
 | DurationMs | real | Time it took to service the REST API request, in milliseconds. |
 | FarmerId | string | Farmer ID associated with the request, wherever applicable. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the event, will be one of Informational, Warning, Error, or Critical. |
 | Location | string | The region of the resource emitting the event. |
 | ObjectId | string | ObjectId in identity claims. |

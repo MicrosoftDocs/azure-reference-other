@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityBaseline
@@ -43,11 +43,13 @@ ms.date: 5/19/2023
 | AzId | string |  |
 | BaselineRuleType | string |  |
 | BaselineType | string |  |
+| _BilledSize | real |  |
 | CceId | string |  |
 | Computer | string |  |
 | ComputerEnvironment | string |  |
 | Description | string |  |
 | ExpectedResult | string |  |
+| _IsBillable | string |  |
 | ManagementGroupName | string |  |
 | OSName | string |  |
 | Resource | string |  |

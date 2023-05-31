@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseSqlPoolDmsWorkers
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | BytesProcessed | int | The bytes processed of the DMS workers. |
 | Category | string | The category of the log. |
 | CpuTime | int | The cpu time for the DMS workers. |
@@ -39,6 +40,7 @@ ms.date: 5/19/2023
 | DmsStepIndex | int | The DMS step index of the DMS workers. |
 | EndTime | datetime | The end time (UTC) for the DMS workers. |
 | ErrorId | string | The errorId of the DMS workers. |
+| _IsBillable | string |  |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |
 | PdwNodeId | int | The pdw node id of the DMS workers. |

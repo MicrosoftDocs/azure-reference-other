@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SQLSecurityAuditEvents
@@ -36,6 +36,7 @@ ms.date: 5/19/2023
 | AffectedRows | long | Number of rows affected by the executed statement. |
 | ApplicationName | string | Name of client application which executed the statement that caused the audit event. |
 | AuditSchemaVersion | int | The audit logs schema version. |
+| _BilledSize | real |  |
 | Category | string | The category of the log. |
 | ClassType | string | The type of auditable entity that the audit occurs on. |
 | ClassTypeDescription | string | The description of the class type. |
@@ -50,6 +51,7 @@ ms.date: 5/19/2023
 | EventId | string | unique Guid identifying each audit event. |
 | EventTime | datetime | The time (UTC) the event was fired at. |
 | HostName | string | The host name. |
+| _IsBillable | string |  |
 | IsColumnPermission | bool | Flag indicating if this is a column level permission. |
 | IsServerLevelAudit | bool | Boolean indicating whether this was generated from a server level audit or database level audit. |
 | LogicalServerName | string | Logical server name. |

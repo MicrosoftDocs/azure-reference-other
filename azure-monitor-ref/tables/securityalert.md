@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityAlert
@@ -38,6 +38,7 @@ ms.date: 5/19/2023
 | AlertName | string |  |
 | AlertSeverity | string |  |
 | AlertType | string |  |
+| _BilledSize | real |  |
 | CompromisedEntity | string |  |
 | ConfidenceLevel | string |  |
 | ConfidenceScore | real |  |
@@ -47,6 +48,7 @@ ms.date: 5/19/2023
 | Entities | string |  |
 | ExtendedLinks | string |  |
 | ExtendedProperties | string |  |
+| _IsBillable | string |  |
 | IsIncident | bool |  |
 | ProcessingEndTime | datetime |  |
 | ProductComponentName | string |  |

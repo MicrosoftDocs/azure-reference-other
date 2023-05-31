@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AddonAzureBackupProtectedInstance
@@ -37,12 +37,14 @@ ms.date: 5/19/2023
 | BackupItemUniqueId | string |  |
 | BackupManagementServerUniqueId | string |  |
 | BackupManagementType | string |  |
+| _BilledSize | real |  |
 | BillingGroupFriendlyName | string |  |
 | BillingGroupResourceGroupName | string |  |
 | BillingGroupType | string |  |
 | BillingGroupUniqueId | string |  |
 | Category | string |  |
 | DatasourceType | string |  |
+| _IsBillable | string |  |
 | OperationName | string |  |
 | ProtectedContainerUniqueId | string |  |
 | ProtectedInstanceCount | int |  |

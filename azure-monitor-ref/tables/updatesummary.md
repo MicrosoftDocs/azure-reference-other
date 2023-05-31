@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UpdateSummary
@@ -38,9 +38,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerEnvironment | string |  |
 | CriticalUpdatesMissing | int |  |
+| _IsBillable | string |  |
 | ManagementGroupName | string |  |
 | NETRuntimeVersion | string |  |
 | OldestMissingSecurityUpdateBucket | string |  |
@@ -49,8 +51,8 @@ ms.date: 5/19/2023
 | OtherUpdatesMissing | int |  |
 | Resource | string |  |
 | ResourceGroup | string |  |
-| ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
 | ResourceProvider | string |  |
 | ResourceType | string |  |
 | RestartPending | bool |  |

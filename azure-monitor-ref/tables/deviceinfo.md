@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DeviceInfo
@@ -29,6 +29,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AadDeviceId | string | Unique identifier for the device in Azure Active Directory. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
+| _BilledSize | real |  |
 | ClientVersion | string | Version of the endpoint agent or sensor running on the machine. |
 | DeviceCategory | string | Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown. |
 | DeviceId | string | Unique identifier for the device in the service. |
@@ -37,6 +38,7 @@ ms.date: 5/19/2023
 | DeviceSubtype | string | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute. |
 | DeviceType | string | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer. |
 | IsAzureADJoined | bool | Boolean indicator of whether machine is joined to the Azure Active Directory. |
+| _IsBillable | string |  |
 | JoinType | string | The device's Azure Active Directory join type. |
 | LoggedOnUsers | dynamic | List of all users that are logged on the machine at the time of the event in JSON array format. |
 | MachineGroup | string | Machine group used to determine access to the machine and apply group-specific settings. |

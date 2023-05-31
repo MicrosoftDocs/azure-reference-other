@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AddonAzureBackupPolicy
@@ -47,6 +47,7 @@ ms.date: 5/19/2023
 | BackupManagementServerUniqueId | string |  |
 | BackupManagementType | string |  |
 | BackupTimes | string |  |
+| _BilledSize | real |  |
 | Category | string |  |
 | DailyRetentionDuration | int |  |
 | DailyRetentionTimes | string |  |
@@ -64,6 +65,7 @@ ms.date: 5/19/2023
 | IncrementalBackupDaysOfTheWeek | string |  |
 | IncrementalBackupFrequency | string |  |
 | IncrementalBackupTimes | string |  |
+| _IsBillable | string |  |
 | LogBackupFrequency | int |  |
 | LogBackupRetentionDuration | int |  |
 | MonthlyRetentionDaysOfTheMonth | string |  |

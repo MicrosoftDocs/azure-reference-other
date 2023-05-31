@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DnsEvents
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClientIP | string |  |
 | Computer | string |  |
 | Confidence | string |  |
@@ -40,6 +41,7 @@ ms.date: 5/19/2023
 | EventId | int |  |
 | IndicatorThreatType | string |  |
 | IPAddresses | string |  |
+| _IsBillable | string |  |
 | MaliciousIP | string |  |
 | Message | string |  |
 | Name | string |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # StorageMoverCopyLogsFailed
@@ -30,8 +30,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Details | string | The error description and any additional details if available. |
 | FileSize | long | The file size in bytes (if available). Only applicable when item type is File. |
+| _IsBillable | string |  |
 | ItemPath | string | Relative path of the item from the migration source, and target root directories. |
 | ItemType | string | Type of the item, either 'F' for file, or 'D' for directory. |
 | JobRunName | string | Unique name of the job run which generated this log. |

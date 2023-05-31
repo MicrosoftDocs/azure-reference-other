@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppServiceIPSecAuditLogs
@@ -24,9 +24,11 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CIp | string | IP address of the client |
 | CsHost | string | Host header of the HTTP request |
 | Details | string | Additional information |
+| _IsBillable | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Result | string | The result whether the access is Allowed or Denied |
 | ServiceEndpoint | string | This indicates whether the access is via Virtual Network Service Endpoint communication |

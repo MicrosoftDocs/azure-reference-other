@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DHAppReliability
@@ -32,6 +32,7 @@ ms.date: 5/19/2023
 | AppFileVersion | string |  |
 | AppName | string |  |
 | AppVersion | string |  |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerID | string |  |
 | ConfigMgrClientID | string |  |
@@ -47,6 +48,7 @@ ms.date: 5/19/2023
 | HasUsageDaily | bool |  |
 | HasUsageTrailing | bool |  |
 | IncidentFreeDevicesPercentForIndustryTrailing | real |  |
+| _IsBillable | string |  |
 | OSBuildNumber | int |  |
 | OSRevisionNumber | int |  |
 | OSVersion | string |  |

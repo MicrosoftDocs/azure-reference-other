@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CDBPartitionKeyStatistics
@@ -32,8 +32,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AccountName | string | The name of the Cosmos DB account containing the dataset for which partition key stats were generated. |
+| _BilledSize | real |  |
 | CollectionName | string | The name of the Cosmos DB collection, which contains the partition. |
 | DatabaseName | string | The name of the Cosmos DB database, which contains the partition. |
+| _IsBillable | string |  |
 | PartitionKey | string | The logical partition key for which storage statistics were retrieved. |
 | RegionName | string | The Azure region from which statistics for this partition were retrieved. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

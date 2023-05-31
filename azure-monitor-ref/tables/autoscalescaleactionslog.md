@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AutoscaleScaleActionsLog
@@ -32,15 +32,17 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string |  |
 | CorrelationId | string |  |
 | CreatedAsyncScaleActionJob | bool |  |
 | CreatedAsyncScaleActionJobId | string |  |
 | CurrentInstanceCount | int |  |
+| _IsBillable | string |  |
 | NewInstanceCount | int |  |
 | OperationName | string |  |
-| ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResourceId | string |  |
 | ResultDescription | string |  |
 | ResultType | string |  |
 | ScaleActionMessage | string |  |

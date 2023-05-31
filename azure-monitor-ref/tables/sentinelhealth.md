@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SentinelHealth
@@ -27,8 +27,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Description | string | The operation description. |
 | ExtendedProperties | dynamic | Additional information based on the resource type. |
+| _IsBillable | string |  |
 | OperationName | string | The name of the operation that triggered the event. |
 | Reason | string | The operation reason. |
 | RecordId | string | A unique record identifier. |

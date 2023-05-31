@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ApplicationInsights
@@ -49,6 +49,7 @@ ms.date: 5/19/2023
 | AvailabilityTestName | string |  |
 | AvailabilityTimestamp | datetime |  |
 | AvailabilityValue | real |  |
+| _BilledSize | real |  |
 | Browser | string |  |
 | BrowserVersion | string |  |
 | City | string |  |
@@ -78,6 +79,7 @@ ms.date: 5/19/2023
 | ExceptionType | string |  |
 | Host | string |  |
 | IsAuthenticated | bool |  |
+| _IsBillable | string |  |
 | isSynthetic | string |  |
 | Language | string |  |
 | Latitude | string |  |

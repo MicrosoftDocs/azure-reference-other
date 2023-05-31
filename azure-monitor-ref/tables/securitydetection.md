@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityDetection
@@ -31,6 +31,7 @@ ms.date: 5/19/2023
 | AlertSeverity | string |  |
 | AlertTitle | string |  |
 | AssociatedResource | string |  |
+| _BilledSize | real |  |
 | ChildProcess | string |  |
 | CommandLine | string |  |
 | Computer | string |  |
@@ -41,6 +42,7 @@ ms.date: 5/19/2023
 | FailedAttempts | int |  |
 | FullPath | string |  |
 | InvalidAccountsSeen | int |  |
+| _IsBillable | string |  |
 | IsFirstParty | bool |  |
 | LogChannel | string |  |
 | OccuringDatacenter | string |  |

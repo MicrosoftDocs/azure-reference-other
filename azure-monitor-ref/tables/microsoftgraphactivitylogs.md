@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # MicrosoftGraphActivityLogs
@@ -31,9 +31,11 @@ ms.date: 5/19/2023
 | AadTenantId | string | The Azure AD tenant ID. |
 | ApiVersion | string | The API version of the event. |
 | AppId | string | The identifier for the application. |
+| _BilledSize | real |  |
 | ClientRequestId | string | Optional. The client request identifier when sent. If no client request identifier is sent, the value will be equal to the operation identifier. |
 | DurationMs | int | The duration of the request in milliseconds. |
 | IpAddress | string | The IP address of the client from where the request occurred. |
+| _IsBillable | string |  |
 | Location | string | The name of the region that served the request. |
 | OperationId | string | The identifier for the batch. For non-batched requests, this will be unique per request. For batched requests, this will be the same for all requests in the batch. |
 | RequestId | string | The identifier representing the request. |

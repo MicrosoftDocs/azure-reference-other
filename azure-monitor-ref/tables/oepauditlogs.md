@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # OEPAuditLogs
@@ -33,8 +33,10 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | Action | string | Action performed,which can be CREATE,PUBLISH,UPDATE,DELETE,READ and JOB_RUN. |
 | ActionId | string | ID of the action performed. |
+| _BilledSize | real |  |
 | Category | string | Logs generated as a result of operations executed using OAK APIs are grouped into categories. Categories in OAK are logical groupings based on the data source. |
 | DataPartitionId | string | Represents the data partition ID. |
+| _IsBillable | string |  |
 | Location | string | The region of the resource emitting the event. |
 | Message | string | The message about the operation. |
 | OperationDescription | string | Description of operation that was performed. |

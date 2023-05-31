@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DeviceNetworkInfo
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ConnectedNetworks | dynamic | Networks that the adapter is connected to. Each JSON element in the array contains the network name, category (public, private or domain), a description, and a flag indicating if it is connected publicly to the internet. |
 | DefaultGateways | dynamic | Default gateway addresses in JSON array format. |
 | DeviceId | string | Unique identifier for the device in the service. |
@@ -35,6 +36,7 @@ ms.date: 5/19/2023
 | IPAddresses | dynamic | JSON array containing all the IP addresses assigned to the adapter, along with their respective subnet prefix and the IP class (RFC 1918 & RFC 4291). |
 | IPv4Dhcp | string | IPv4 address of the configured DHCP server. |
 | IPv6Dhcp | string | IPv6 address of the configured DHCP server. |
+| _IsBillable | string |  |
 | MacAddress | string | MAC address of the network adapter. |
 | MachineGroup | string | The machine-group which this machine is associated to. This group is used by role-based access control to determine access to the machine. |
 | NetworkAdapterName | string | Name of the network adapter. |

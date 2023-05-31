@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AMSKeyDeliveryRequests
@@ -31,7 +31,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | DurationMs | int | Azure Media Services operation duration in milli-seconds. |
+| _IsBillable | string |  |
 | KeyId | string | The ID of the requested key. |
 | KeyType | string | Could be one of the following values: Clear (no encryption), FairPlay, PlayReady, or Widevine. |
 | Level | string | Log level of message, e.g. Informational. |

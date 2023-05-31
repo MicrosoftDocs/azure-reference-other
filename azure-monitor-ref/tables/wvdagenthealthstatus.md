@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WVDAgentHealthStatus
@@ -33,7 +33,9 @@ ms.date: 5/19/2023
 | ActiveSessions | string | The number of active sessions on the VM |
 | AgentVersion | string | The version of the WVD Agent running on the Virtual Machine |
 | AllowNewSessions | string | State of the AllowNewSession settings of the host pool |
+| _BilledSize | real |  |
 | InactiveSessions | string | The number of disconnected, or logged off sessions on the VM |
+| _IsBillable | string |  |
 | LastHeartBeat | datetime | The time recorded when there was a change in the health status |
 | LastUpgradeTimeStamp | datetime | The time recorded when there was a change in the upgrade status |
 | OperationName | string | The name of the operation |

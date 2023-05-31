@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CDBDataPlaneRequests
@@ -36,11 +36,13 @@ ms.date: 5/19/2023
 | AccountName | string | The name of the Cosmos DB account. |
 | ActivityId | string | The unique identifier (GUID) for this data plane operation |
 | AuthTokenType | string | The authorization type (System Read/Write key) for this request by the Cosmos DB Gateway service when running in Gateway mode or using the REST API. |
+| _BilledSize | real |  |
 | ClientIpAddress | string | The IP address of the client VM issuing the request. |
 | CollectionName | string | The Cosmos DB container against which the request was issued. |
 | ConnectionMode | string | The connection mode used by the client issuing the request – (Direct or Gateway mode). |
 | DatabaseName | string | The Cosmos DB database against which the request was issued. |
 | DurationMs | real | The server-side execution time (in milliseconds) for this request. |
+| _IsBillable | string |  |
 | KeyType | string | The authorization type (Primary/Secondary Read/Write key) for this request when running in Direct mode. |
 | OperationName | string | The specific data plane operation executed against the account. |
 | PartitionId | string | The physical partition ID for the Cosmos DB container against which the request was issued. |

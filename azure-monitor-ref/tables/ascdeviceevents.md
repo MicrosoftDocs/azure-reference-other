@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ASCDeviceEvents
@@ -31,10 +31,12 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CatalogId | string | The catalog ID of the device where the log event was generated. |
 | CorrelationId | string | A unique correlation ID for the log event. |
 | DeviceId | string | The ID of the device where the log event was generated. |
 | DurationMs | int | The total duration (in milliseconds) for the log event. |
+| _IsBillable | string |  |
 | Location | string | The location and region where the log event was generated. |
 | OperationName | string | The Azure Sphere operation associated with the log event. |
 | Properties | dynamic | Additional properties related to the log event. |

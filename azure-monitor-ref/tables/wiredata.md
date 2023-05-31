@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WireData
@@ -38,6 +38,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | ApplicationProtocol | string | Type of network protocol used |
 | ApplicationServiceName | string | Hold over field from old schema - attribute not collected |
+| _BilledSize | real |  |
 | Computer | string | Computer name where data was collected |
 | Confidence | string | Confidence level for Malicious IP identification. Values are 0 - 100. |
 | Description | string | Description of the observed threat. |
@@ -46,6 +47,7 @@ ms.date: 5/19/2023
 | IndicatorThreatType | string | Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist. |
 | IPVersion | string | IP version |
 | IsActive | string | Indicates indicators are deactivated with True or False value. |
+| _IsBillable | string |  |
 | LastReportedDateTime | string | The last time the indicator was seen by Interflow. |
 | LatencyMilliseconds | int | Hold over field from old schema - attribute not collected |
 | LatencySamplingFailureRate | string | Hold over field from old schema - attribute not collected |

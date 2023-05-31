@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Anomalies
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | AnomalyTemplateId | string | The ID of the Anomaly template that generated this anomaly. |
 | AnomalyTemplateName | string | The name of the Anomaly template that generated this anomaly. |
 | AnomalyTemplateVersion | string | The version of the Anomaly template that generated this anomaly. |
+| _BilledSize | real |  |
 | Description | string | The description of the anomaly. |
 | DestinationDevice | string | The destination device for which the anomaly was generated. |
 | DestinationIpAddress | string | The destination ip address for which the anomaly was generated. |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | ExtendedLinks | dynamic | List of links pointing to the data that generated the anomaly. |
 | ExtendedProperties | dynamic | JSON object with additional data on the anomaly as key-value pairs. |
 | Id | string | The ID of the generated anomaly. |
+| _IsBillable | string |  |
 | RuleConfigVersion | string | The configuration version of the Anomaly analytics rule that generated this anomaly. |
 | RuleId | string | The ID of the Anomaly analytics rule that generated this anomaly. |
 | RuleName | string | The name of the Anomaly analytics rule that generated this anomaly. |

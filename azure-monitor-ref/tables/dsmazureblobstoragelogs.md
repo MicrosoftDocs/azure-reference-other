@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DSMAzureBlobStorageLogs
@@ -33,9 +33,11 @@ ms.date: 5/19/2023
 | AggregationLastEventTime | datetime | The time (UTC) when the last request was received by storage. |
 | AuthenticationHash | string | The hash of authentication token. |
 | AuthenticationType | string | The type of authentication that was used to make the request. E.g. OAuth, SAS, etc. |
+| _BilledSize | real |  |
 | CallerIpAddress | string | The IP address of the requester. |
 | Category | string | The category of requested operation. |
 | CorrelationId | string | The ID that is used to correlate resource logs with data sensitivity logs. |
+| _IsBillable | string |  |
 | Location | string | The location of storage account. |
 | OperationName | string | The type of REST operation that was performed. For example: GetBlob, DeleteBlob. |
 | RequesterAppId | string | The Open Authorization (OAuth) application ID that is used as the requester. |

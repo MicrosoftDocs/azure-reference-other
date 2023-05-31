@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # IntuneOperationalLogs
@@ -27,7 +27,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string |  |
+| _IsBillable | string |  |
 | OperationName | string |  |
 | Properties | string |  |
 | Result | string |  |

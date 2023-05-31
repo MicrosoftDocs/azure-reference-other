@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightSparkSQLExecutionEvents
@@ -31,12 +31,14 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
+| _BilledSize | real |  |
 | ClusterDnsName | string | The DNS name of the cluster running the Spark SQL execution. |
 | ClusterTenantId | string | The tenant ID of the cluster running the Spark SQL execution. |
 | EndTime | datetime | The time (UTC) the Spark SQL execution ended. |
 | ExecutionId | string | The ID of the Spark SQL execution. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the Spark SQL execution. |
+| _IsBillable | string |  |
 | PhysicalPlanDescription | string | The description of the Physical/Logical plan of the Spark SQL execution. |
 | Region | string | The region of the cluster running the Spark SQL execution. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AGSGrafanaLoginEvents
@@ -31,8 +31,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of the log record. |
 | CorrelationId | string | GUID for the correlated logs. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the log record. |
 | Location | string | The location (region) the Azure Managed Grafana instance was accessed in. |
 | Message | string | The inner message of the log record. |

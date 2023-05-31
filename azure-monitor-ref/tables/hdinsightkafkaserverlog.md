@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightKafkaServerLog
@@ -24,11 +24,13 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | ClusterDnsName | string | Name of cluster |
 | ClusterType | string | Type of the Cluster |
 | CorrelationId | string | Id of associated events |
 | FluentdIngestTimestamp | datetime | Time log was ingested by Fluentd framework |
 | HostName | string | Name of host where log was emitted |
+| _IsBillable | string |  |
 | Message | string | Entry of Kafka Server Log |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |

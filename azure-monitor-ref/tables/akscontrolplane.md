@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AKSControlPlane
@@ -31,7 +31,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | Service log category describing the service logging the message. |
+| _IsBillable | string |  |
 | Level | string | Level (Fatal, Error, Warning, Info) of the log message. |
 | Message | string | Log message body. |
 | PodName | string | Name of the pod logging the request. |

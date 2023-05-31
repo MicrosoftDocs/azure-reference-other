@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UpdateRunProgress
@@ -35,20 +35,22 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Computer | string |  |
 | ComputerEnvironment | string |  |
 | CorrelationId | string |  |
 | EndTime | datetime |  |
 | ErrorResult | string |  |
 | InstallationStatus | string |  |
+| _IsBillable | string |  |
 | KBID | string |  |
 | ManagementGroupName | string |  |
 | OSType | string |  |
 | Product | string |  |
 | Resource | string |  |
 | ResourceGroup | string |  |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceProvider | string |  |
 | ResourceType | string |  |
 | SourceComputerId | string |  |

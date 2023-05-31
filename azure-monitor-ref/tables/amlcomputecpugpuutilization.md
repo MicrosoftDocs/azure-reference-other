@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AmlComputeCpuGpuUtilization
@@ -30,12 +30,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIpAddress | string | The caller IP address. |
 | CorrelationId | string | A GUID used to group together a set of related events. |
 | DeviceId | string | DeviceId of GPU. |
 | DeviceType | string | Type of compute, either CPU or GPU. |
 | DurationMs | string | The duration of the operation in milliseconds. |
 | Identity | string | Identity of the user or application that performed the operation. |
+| _IsBillable | string |  |
 | Level | string | The severity level of the event. Must be one of Informational, Warning, Error, or Critical. |
 | Location | string | The region of the resource emitting the event. |
 | MetricName | string | Metric name. This would be Cpu/Gpu utilization metric eg. GpuMemoryUtilization, GpuUtilization, CpuUtilization etc. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UCServiceUpdateStatus
@@ -27,6 +27,7 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID |
+| _BilledSize | real |  |
 | CatalogId | string | Catalog ID for update. |
 | DeploymentApprovedTime | datetime | The datetime of when the update deployment was approved. |
 | DeploymentId | string | The identifier of the Deployment that is targeting this update to this device, else empty. |
@@ -34,6 +35,7 @@ ms.date: 5/19/2023
 | DeploymentName | string | Friendly name of the created deployment. |
 | DeploymentRevokeTime | datetime | The datetime of when the update deployment was Revoked. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier |
+| _IsBillable | string |  |
 | OfferReadyTime | datetime | DateTime of OfferReady transition. If empty, not yet been Offered. |
 | PolicyCreatedTime | datetime | The datetime of when the policy was created. |
 | PolicyId | string | The policy identifier targeting the update to this device. |

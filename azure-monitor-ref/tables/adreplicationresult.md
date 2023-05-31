@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADReplicationResult
@@ -34,11 +34,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AssessmentId | string | Unique Guid corresponding to each run |
+| _BilledSize | real |  |
 | Computer | string | Computer Name where the solution ran |
 | ConsecutiveFailures | int | Number of consecutive replication failures between two Domain Controllers |
 | DestinationServer | string | AD Replication Destination Server |
 | DestinationSiteName | string | AD Replication Destination Site Name |
 | HelpLink | string | Help Link for more information |
+| _IsBillable | string |  |
 | IsDestinationGC | bool | Is Destinationation Global Catalog |
 | IsSourceGC | bool | Is Source Global Catalog |
 | LastAttemptedSync | datetime | Last Attempted Replication DateTime |

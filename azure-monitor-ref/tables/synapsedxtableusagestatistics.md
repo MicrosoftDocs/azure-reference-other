@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SynapseDXTableUsageStatistics
@@ -31,8 +31,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationName | string | The name of the application that invoked the command |
+| _BilledSize | real |  |
 | CorrelationId | string | The client request ID |
 | DatabaseName | string | Name of the database |
+| _IsBillable | string |  |
 | MaxCreatedOn | datetime | Lastest extent time of the table |
 | MinCreatedOn | datetime | Earliest extent time of the table |
 | Principal | string | Principal that invoked the query like 'aaduser=USER_ID;TENANT' |

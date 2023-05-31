@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ServiceFabricOperationalEvent
@@ -31,11 +31,13 @@ ms.date: 5/19/2023
 | ApplicationTypeName | string |  |
 | ApplicationTypeVersion | string |  |
 | AzureDeploymentID | string |  |
+| _BilledSize | real |  |
 | ChannelName | string |  |
 | Computer | string |  |
 | EventId | int |  |
 | EventMessage | string |  |
 | EventSourceName | string |  |
+| _IsBillable | string |  |
 | KeywordName | string |  |
 | Level | string |  |
 | OpcodeName | string |  |

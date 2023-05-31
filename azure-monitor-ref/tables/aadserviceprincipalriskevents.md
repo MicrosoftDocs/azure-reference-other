@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AADServicePrincipalRiskEvents
@@ -32,11 +32,13 @@ ms.date: 5/19/2023
 | ActivityDateTime | datetime | Date and time when the risky activity occurred in UTC. |
 | AdditionalInfo | dynamic | Additional information associated with the risk detection in JSON format. |
 | AppId | string | The unique identifier for the associated application. |
+| _BilledSize | real |  |
 | CorrelationId | string | Correlation ID of the sign-in activity associated with the risk detection. Nullable. |
 | DetectedDateTime | datetime | Date and time when the risk was detected in UTC. |
 | DetectionTimingType | string | Timing of the detected risk , whether real-time or offline. |
 | Id | string | Unique identifier of the risk detection. Inherited from entity. |
 | IpAddress | string | Provides the IP address of the client from where the risk occurred. |
+| _IsBillable | string |  |
 | KeyIds | dynamic | The unique identifier (GUID) for the key credential associated with the risk detection. |
 | LastUpdatedDateTime | datetime | Date and time when the risk detection was last updated in UTC. |
 | Location | dynamic | Location of the sign-in. |

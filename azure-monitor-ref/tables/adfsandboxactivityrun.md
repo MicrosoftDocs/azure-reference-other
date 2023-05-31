@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADFSandboxActivityRun
@@ -35,6 +35,7 @@ ms.date: 5/19/2023
 | ActivityRunId | string |  |
 | ActivityType | string |  |
 | Annotations | string |  |
+| _BilledSize | real |  |
 | Category | string |  |
 | CorrelationId | string |  |
 | EffectiveIntegrationRuntime | string |  |
@@ -45,6 +46,7 @@ ms.date: 5/19/2023
 | EventMessage | string |  |
 | FailureType | string |  |
 | Input | string |  |
+| _IsBillable | string |  |
 | Level | string |  |
 | LinkedServiceName | string |  |
 | Location | string |  |
@@ -52,8 +54,8 @@ ms.date: 5/19/2023
 | Output | string |  |
 | PipelineName | string |  |
 | PipelineRunId | string |  |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string |  |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |
 | Start | datetime |  |
 | Status | string |  |

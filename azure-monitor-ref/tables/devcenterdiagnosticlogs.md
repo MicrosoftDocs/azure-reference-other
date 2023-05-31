@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DevCenterDiagnosticLogs
@@ -31,8 +31,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | CallerIdentity | string | User ID that created the request. |
 | CorrelationId | string | ID which groups operation logs for ease of debugging. |
+| _IsBillable | string |  |
 | OperationName | string | The operation stage of the service from which the log entry was generated. |
 | OperationResult | string | Displays whether operation was successful or unsuccessful. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

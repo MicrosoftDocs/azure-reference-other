@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # requests
@@ -25,6 +25,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | application_Version | string |  |
+| _BilledSize | real |  |
 | client_Browser | string |  |
 | client_City | string |  |
 | client_CountryOrRegion | string |  |
@@ -39,6 +40,7 @@ ms.date: 5/19/2023
 | customMeasurements | dynamic |  |
 | duration | real |  |
 | id | string |  |
+| _IsBillable | string |  |
 | itemCount | int |  |
 | itemId | string |  |
 | name | string |  |

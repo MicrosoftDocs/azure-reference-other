@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ADFSSignInLogs
@@ -35,6 +35,7 @@ ms.date: 5/19/2023
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
 | AuthenticationRequirement | string | Type of authentication required for the sign-in.  If set to multiFactorAuthentication, an MFA step was required.  If set to singleFactorAuthentication, no MFA was required |
 | AuthenticationRequirementPolicies | string | Set of CA policies that apply to this sign-in, each as CA: policy name, and/or MFA: Per-user |
+| _BilledSize | real |  |
 | Category | string | Category of the sign-in event |
 | ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
 | ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
@@ -45,6 +46,7 @@ ms.date: 5/19/2023
 | Id | string | Unique ID representing the sign-in activity |
 | Identity | string | The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal |
 | IPAddress | string | IP address of the client used to sign in |
+| _IsBillable | string |  |
 | IsInteractive | bool | Indicates if a sign-in is interactive or not |
 | Level | string | The severity level of the event |
 | Location | string | The region of the resource emitting the event |

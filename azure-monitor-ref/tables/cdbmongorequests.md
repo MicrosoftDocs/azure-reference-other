@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # CDBMongoRequests
@@ -35,10 +35,12 @@ ms.date: 5/19/2023
 | ActivityId | string | The unique identifier (GUID) for this Mongo API request. |
 | Address | string | The IP address of the client VM which issued the request. |
 | AuthorizationTokenType | string | The authorization token used  for this request. |
+| _BilledSize | real |  |
 | CollectionName | string | The name of the Cosmos DB container against which this request was issued. |
 | DatabaseName | string | The name of the Cosmos DB database against which this request was issued. |
 | DurationMs | real | The server-side execution time (in ms) for this request. |
 | ErrorCode | string | The error code (if applicable) for this request. |
+| _IsBillable | string |  |
 | OpCode | string | The operation code for the Mongo API request. |
 | OperationName | string | The Mongo API operation that was executed  |
 | PIICommandText | string | Full text query (if opted in) for this Mongo API request. |

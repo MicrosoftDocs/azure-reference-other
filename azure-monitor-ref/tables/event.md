@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # Event
@@ -36,6 +36,7 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and collected from Azure storage. |
+| _BilledSize | real |  |
 | Computer | string | Name of the computer that the event was collected from. |
 | EventCategory | int | Category of the event. |
 | EventData | string | All event data in raw format. |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | EventLevel | int | Severity of the event in numeric form. |
 | EventLevelName | string | Severity of the event in text form. |
 | EventLog | string | Name of the event log that the event was collected from. |
+| _IsBillable | string |  |
 | ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-\<workspace ID\> |
 | Message | string | Event message for the different Languages. The language is defined by the LCID attribute. |
 | ParameterXml | string | Event parameter values in XML format. |

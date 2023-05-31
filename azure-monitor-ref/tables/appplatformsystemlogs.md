@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppPlatformSystemLogs
@@ -30,8 +30,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | Log Category |
 | InstanceName | string | The instance name that emitted the log |
+| _IsBillable | string |  |
 | Level | string | The level of the log |
 | Log | string | The log of the log |
 | Logger | string | The logger of the log |

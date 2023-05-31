@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # WindowsEvent
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Channel | string | The channel to which the event was logged. |
 | Computer | string | The name of the computer on which the event occurred. |
 | Correlation | string | The activity identifiers that consumers can use to group related events together. |
@@ -43,6 +44,7 @@ ms.date: 5/19/2023
 | EventLevelName | string | The rendered message string of the level specified in the event. |
 | EventOriginId | string | VM ID obtained from the Azure Instance Metadata Service (IMDS). |
 | EventRecordId | string | The record number assigned to the event when it was logged. |
+| _IsBillable | string |  |
 | Keywords | string | A bitmask of the keywords defined in the event. |
 | ManagementGroupName | string | Additional information based on the resource type. |
 | Opcode | string | The opcode element is defined by the SystemPropertiesType complex type. |

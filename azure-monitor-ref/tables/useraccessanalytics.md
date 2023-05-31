@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # UserAccessAnalytics
@@ -34,6 +34,8 @@ ms.date: 5/19/2023
 | AccessLevel | string | The level of access that the source entity has to the target entity |
 | AccessStartTime | datetime | Timestamp when the source entity was provided access to the target entity |
 | AccessType | string | The type of access that the source entity has to the target entity |
+| _BilledSize | real |  |
+| _IsBillable | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceEntityId | string | Unique identifier of entity which has access to the target entity |
 | SourceEntityName | string | Display name of entity which has access to the target entity |

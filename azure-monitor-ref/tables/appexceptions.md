@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppExceptions
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 | AppRoleName | string | Role name of the application. |
 | AppVersion | string | Version of the application. |
 | Assembly | string | Exception assembly. |
+| _BilledSize | real |  |
 | ClientBrowser | string | Browser running on the client device. |
 | ClientCity | string | City where the client device is located. |
 | ClientCountryOrRegion | string | Country or region where the client device is located. |
@@ -50,6 +51,7 @@ ms.date: 5/19/2023
 | InnermostMessage | string | Message of the innermost exception. |
 | InnermostMethod | string | Method of the innermost exception. |
 | InnermostType | string | Type of the innermost exception. |
+| _IsBillable | string |  |
 | ItemCount | int | Number of telemetry items represented by a single sample item. |
 | Measurements | dynamic | Application-defined measurements. |
 | Message | string | Exception message. |

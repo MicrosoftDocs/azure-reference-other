@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AMSMediaAccountHealth
@@ -31,8 +31,10 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | EventCode | string | The event code. |
 | EventMessage | string | The event status message. |
+| _IsBillable | string |  |
 | Level | string | Log level of message, e.g. Informational. |
 | Location | string | Location of the service sending the log. |
 | OperationName | string | The name of the operation that triggered the event. |

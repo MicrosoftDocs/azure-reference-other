@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppAvailabilityResults
@@ -33,6 +33,7 @@ ms.date: 5/19/2023
 | AppRoleInstance | string | Role instance of the application. |
 | AppRoleName | string | Role name of the application. |
 | AppVersion | string | Version of the application. |
+| _BilledSize | real |  |
 | ClientBrowser | string | Browser running on the client device. |
 | ClientCity | string | City where the client device is located. |
 | ClientCountryOrRegion | string | Country or region where the client device is located. |
@@ -44,6 +45,7 @@ ms.date: 5/19/2023
 | DurationMs | real | Number of milliseconds it took to finish the test. |
 | Id | string | Unique ID of the availability test. |
 | IKey | string | Instrumentation key of the Azure resource. |
+| _IsBillable | string |  |
 | ItemCount | int | Number of telemetry items represented by a single sample item. |
 | Location | string | The location from where the test ran. |
 | Measurements | dynamic | Application-defined measurements. |

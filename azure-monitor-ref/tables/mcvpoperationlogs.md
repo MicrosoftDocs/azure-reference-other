@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # MCVPOperationLogs
@@ -30,7 +30,9 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | DeviceName | string | Device friendly name. |
+| _IsBillable | string |  |
 | Message | string | The general log message. |
 | OperationName | string | The operation name where the log was created. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ChaosStudioExperimentEventLogs
@@ -32,9 +32,11 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Action | string | Fault name of the action. |
+| _BilledSize | real |  |
 | Branch | string | Experiment Branch ID of the span. |
 | CorrelationId | string | The ID for the Experiment run. |
 | Error | string | Error detail of the span. |
+| _IsBillable | string |  |
 | Location | string | The location of the experiment. |
 | OperationName | string | The operation associated with event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

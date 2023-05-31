@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # HDInsightGatewayAuditLogs
@@ -32,8 +32,10 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AccessRequestCount | real | Number of login requests associated with the user. |
+| _BilledSize | real |  |
 | ClusterDnsName | string | The DNS name of the cluster. |
 | ErrorMessage | string | Any error message associated with the login attempt. |
+| _IsBillable | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string |  |
 | Status | string | The outcome of the login attempt. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # NTAIpDetails
@@ -27,12 +27,14 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | DnsDomain | string | For Malicious IPs only: Domain name associated with this IP. |
 | FaSchemaVersion | string | Schema version. |
 | FlowIntervalEndTime | datetime | End time of the flow log processing interval. |
 | FlowIntervalStartTime | datetime | Start time of the flow log processing interval. This is time from which flow interval is measured. |
 | FlowType | string | Can be AzurePublic/ExternalPublic/MaliciousFlow. |
 | Ip | string | Public IP whose information is provided in the record. |
+| _IsBillable | string |  |
 | Location | string | For Azure Public IP: Azure region of virtual network/network interface/virtual machine to which the IP belongs OR Global for IP 168.63.129.16. For External Public IP and Malicious IP: 2-letter country code where IP is located (ISO 3166-1 alpha-2). |
 | PublicIpDetails | string | For AzurePublic IP: Azure Service owning the IP OR "Microsoft Virtual Public IP" for IP 168.63.129.16 . ExternalPublic/Malicious IP: WhoIS information of the IP. |
 | SourceSystem | string |  |

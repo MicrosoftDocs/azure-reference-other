@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # DSMDataLabelingLogs
@@ -29,7 +29,9 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AssetLastScanTime | datetime | The time (UTC) when the resource scan for sensitivity was performed by Azure Purview. |
+| _BilledSize | real |  |
 | CorrelationId | string | The ID that is used to correlate resource logs with data sensitivity logs. |
+| _IsBillable | string |  |
 | SensitivityLabelName | string | The name of sensitive label found and/or applied. |
 | SourceSystem | string |  |
 | TenantId | string |  |

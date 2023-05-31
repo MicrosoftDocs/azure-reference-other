@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # ASimAuthenticationEventLogs
@@ -43,6 +43,7 @@ ms.date: 5/19/2023
 | ActorUsernameType | string | Specifies the type of the user name stored in the ActorUsername field. |
 | ActorUserType | string | The type of the Actor. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
+| _BilledSize | real |  |
 | DvcAction | string | For reporting security systems, the action taken by the system. |
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device reporting the event. |
@@ -81,6 +82,7 @@ ms.date: 5/19/2023
 | EventType | string | Describes the operation reported by the record |
 | EventVendor | string | The vendor of the product generating the event. |
 | HttpUserAgent | string | When authentication is performed over HTTP or HTTPS, this field's value is the user_agent HTTP header provided by the acting application when performing the authentication. |
+| _IsBillable | string |  |
 | LogonMethod | string | The method used to perform authentication. |
 | LogonProtocol | string | The protocol used to perform authentication. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # SecurityRecommendation
@@ -30,11 +30,13 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AssessedResourceId | string |  |
+| _BilledSize | real |  |
 | Description | string |  |
 | DeviceId | string |  |
 | DiscoveredTimeUTC | datetime |  |
 | Environment | string |  |
 | FirstEvaluationDate | datetime |  |
+| _IsBillable | string |  |
 | IsSnapshot | bool |  |
 | PolicyDefinitionId | string |  |
 | Properties | dynamic |  |

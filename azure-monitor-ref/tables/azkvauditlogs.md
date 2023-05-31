@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AZKVAuditLogs
@@ -34,6 +34,7 @@ ms.date: 5/19/2023
 | AddressAuthorizationType | string | Address Type (Public IP, Subnet, private connection) |
 | Algorithm | string | Algorithm used to generate the key. |
 | AppliedAssignmentId | string | AssignmentId that eiher granted or denied access as part of access check. |
+| _BilledSize | real |  |
 | CallerIpAddress | string | IP address of the client that made the request |
 | ClientInfo | string | User agent information. |
 | CorrelationId | string | An optional GUID that the client can pass to correlate client-side logs with service-side (Key Vault) logs. |
@@ -50,6 +51,7 @@ ms.date: 5/19/2023
 | Identity | dynamic | Identity from the token that was presented in the REST API request. This is usually a user, a service principal, or the combination user+appId, as in the case of a request that results from an Azure PowerShell cmdlet. |
 | IsAccessPolicyMatch | bool | True if the tenant matches vault tenant, and if the policy explicitly gives permission to the principal attempting the access. |
 | IsAddressAuthorized | bool | Specifies whether request came from an authorized entity. |
+| _IsBillable | string |  |
 | IsRbacAuthorized | bool | Specifies whether an access was granted or not as part of an access check. |
 | Nsp | dynamic | Network Security Perimeter Properties including Access Control List, Nsp ID's associated with profiles. |
 | OperationName | string | Name of the operation |

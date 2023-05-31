@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # GCPAuditLogs
@@ -29,8 +29,10 @@ ms.date: 5/19/2023
 | --- | --- | --- |
 | AuthenticationInfo | dynamic | Authentication information. |
 | AuthorizationInfo | dynamic | Authorization information. If there are multiple resources or permissions involved, then there is one AuthorizationInfo element for each {resource, permission} tuple. |
+| _BilledSize | real |  |
 | GCPResourceName | string | The resource or collection that is the target of the operation. The name is a scheme-less URI, not including the API service name. |
 | GCPResourceType | string | The identifier of the type associated with this resource, such as 'pubsub_subscription'. |
+| _IsBillable | string |  |
 | LogName | string | Information including a suffix identifying the log sub-type (e.g., admin activity, system access, data access) and where in the hierarchy the request was made. |
 | Metadata | dynamic | Other service-specific data about the request, response, and other information associated with the current audited event. |
 | MethodName | string | The name of the service method or operation. For API calls, this should be the name of the API method. |

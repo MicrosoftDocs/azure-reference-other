@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # AppServicePlatformLogs
@@ -31,10 +31,12 @@ ms.date: 5/19/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActivityId | string | Activity Id to correlate events |
+| _BilledSize | real |  |
 | ContainerId | string | Application container id |
 | DeploymentId | string | Deployment ID of the application deployment |
 | Exception | string | Details of the exception |
 | Host | string | Host where the application is running |
+| _IsBillable | string |  |
 | Level | string | Level of log verbosity |
 | Message | string | Log message |
 | OperationName | string | The name of the operation represented by this event. |

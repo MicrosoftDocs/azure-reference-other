@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/19/2023
+ms.date: 5/26/2023
 ---
 
 # FailedIngestion
@@ -30,6 +30,7 @@ ms.date: 5/19/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| _BilledSize | real |  |
 | Category | string | The category of this log |
 | CorrelationId | string | The ingestion source id |
 | Database | string | The name of the database holding the target table |
@@ -39,6 +40,7 @@ ms.date: 5/19/2023
 | FailureStatus | string | The failure's status |
 | IngestionSourceId | string | A unique identifier representing the ingested source |
 | IngestionSourcePath | string | The Azure blob storage URI |
+| _IsBillable | string |  |
 | OperationId | string | The ingestion's operation Id |
 | OperationName | string | The name of this operation |
 | OperationVersion | string | The version of this event |
