@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/26/2023
+ms.date: 6/1/2023
 ---
 
 # DatabricksDatabricksSQL
 
  Databricks databrickssql audit logs.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Azure Databricks Services
 
 
 

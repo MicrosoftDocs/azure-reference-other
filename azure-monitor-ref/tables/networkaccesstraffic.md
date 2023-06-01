@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/26/2023
+ms.date: 6/1/2023
 ---
 
 # NetworkAccessTraffic
@@ -31,27 +31,26 @@ ms.date: 5/26/2023
 | --- | --- | --- |
 | Action | string | The action taken on the network session. Allowed, Denied. |
 | AgentVersion | string | The version of the agent connecting. |
-| AppliedRuleId | string | The ID of the rule for which the request was denied by. |
 | _BilledSize | real |  |
 | ConnectionId | string | Unique identifier representing the connection this traffic log was initiated from. |
-| CreationTime | datetime | The date and time (UTC) that the network connection was created. |
-| DestinationFQDN | string | The destination device hostname, including domain information when available. |
+| DestinationFqdn | string | The destination device hostname, including domain information when available. |
 | DestinationIp | string | The IP address of the connection or session destination. |
-| DestinationPort | string | The destination IP port. |
+| DestinationPort | int | The destination IP port. |
 | DeviceCategory | string | Device type the transaction originated from. Client, Branch.  |
 | DeviceId | string | The ID of the source device as reported in the record. |
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
 | _IsBillable | string |  |
-| NetworkProtocol | string | The network protocol, IPv6 \ IPv4. |
-| OriginHeader | string | The Origin header value. |
+| NetworkProtocol | string | The network protocol, IPv6 or IPv4. |
+| OriginHeader | string | The origin header value. |
 | PolicyId | string | The ID of the policy for which the request was denied by its rule. |
+| PolicyRuleId | string | The ID of the rule for which the request was denied by. |
 | ReceivedBytes | long | The number of bytes received. |
 | ReferrerHeader | string | The Referer header value. |
 | SentBytes | long | The number of bytes sent. |
 | SessionId | string | Unique identifier representing the session. |
 | SourceIp | string | The IP address from which the connection or session originated. |
-| SourcePort | string | The IP port from which the connection originated. |
+| SourcePort | int | The IP port from which the connection originated. |
 | SourceSystem | string |  |
 | TenantId | string |  |
 | TimeGenerated | datetime | The date and time (UTC) that the event was generated. |
