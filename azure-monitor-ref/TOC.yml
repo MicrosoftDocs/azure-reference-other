@@ -366,3 +366,5 @@
     href: tables/azfwthreatintel.md
   - name: AZKVAuditLogs
     href: tables/azkvauditlogs.md
+  - name: AZKVPolicyEvaluationDetailsLogs
+    href: tables/azkvpolicyevaluationdetailslogs.md
