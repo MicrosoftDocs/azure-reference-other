@@ -916,3 +916,5 @@
     href: tables/ucserviceupdatestatus.md
   - name: UCUpdateAlert
     href: tables/ucupdatealert.md
+  - name: UrlClickEvents
+    href: tables/urlclickevents.md
