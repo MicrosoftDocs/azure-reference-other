@@ -760,3 +760,5 @@
     href: tables/powerappsactivity.md
   - name: PowerAutomateActivity
     href: tables/powerautomateactivity.md
+  - name: PowerBIActivity
+    href: tables/powerbiactivity.md
