@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # SentinelAudit
 
- Audit logs for operations performed on Azure Sentinel resources, such as Data Connectors, Analytic Rules and more. These logs can be used to audit operations on your Sentinel resources.
+ Audit logs for operations performed on Microsoft Sentinel resources, such as Data Connectors, Analytic Rules and more. These logs can be used to audit operations on your Microsoft Sentinel resources.
 
 ## Categories
 
