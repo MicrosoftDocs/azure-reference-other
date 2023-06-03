@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # BehaviorAnalytics
 
- This table stores the enriched events for Sentinel UEBA, providing behavior analytics over raw data.
+ This table stores the enriched events for Microsoft Sentinel UEBA, providing behavior analytics over raw data.
 
 ## Categories
 
