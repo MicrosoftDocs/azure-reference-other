@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # SentinelHealth
 
- Audit logs for operations performed by Azure Sentinel resources such as Data Connectors, Analytic Rules and more. These logs can be used to monitor the health of your Sentinel resources.
+ Audit logs for operations performed by Microsoft Sentinel resources such as Data Connectors, Analytic Rules and more. These logs can be used to monitor the health of your Microsoft Sentinel resources.
 
 ## Categories
 
