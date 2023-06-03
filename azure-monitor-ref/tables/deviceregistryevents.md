@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # DeviceRegistryEvents
 
- Microsoft Defender for Endpoints (MDE) device registry events table. This table contains contains creation and modification of registry entries on the endpoint, and information about the processes initiating such events.
+ Microsoft Defender for Endpoints (MDE) device registry events table. This table contains creation and modification of registry entries on the endpoint, and information about the processes initiating such events.
 
 ## Categories
 
