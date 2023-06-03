@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # DeviceImageLoadEvents
 
- This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains DLL loading events.
+ This table is part of Microsoft Defender for Endpoints with Microsoft Sentinel. This table contains DLL loading events.
 
 ## Categories
 
