@@ -10,8 +10,8 @@ ms.date: 5/26/2023
 ---
 
 # InsightsMetrics
+This table contains additional indicators to monitor system indicators of Azure Virtual Machines resources (CPU, memory, disks etc).
 
- 
 
 ## Categories
 
