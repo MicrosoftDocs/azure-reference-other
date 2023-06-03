@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # CloudAppEvents
 
- Information about activities in various cloud apps and services covered by Microsoft Cloud App Security.
+ Information about activities in various cloud apps and services covered by Microsoft Defender for Cloud Apps.
 
 ## Categories
 
