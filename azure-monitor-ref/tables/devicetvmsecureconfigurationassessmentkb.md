@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # DeviceTvmSecureConfigurationAssessmentKB
 
- Knowledge base of various security configurations used by Threat & Vulnerability Management to assess devices and includes mappings to various standards and benchmarks.
+This table is part of Microsoft Defender for Endpoint and captures the Knowledge base of various security configurations used by Threat & Vulnerability Management to assess devices and includes mappings to various standards and benchmarks.
 
 ## Categories
 
@@ -19,8 +19,7 @@ ms.date: 5/26/2023
 ## Solutions
 
 - Microsoft Sentinel
-
-
+- Microsoft Defender for Endpoint
 
 
 ## Columns
