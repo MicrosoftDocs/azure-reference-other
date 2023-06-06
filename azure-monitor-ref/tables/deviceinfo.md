@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # DeviceInfo
 
- This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Machine information, including OS information.
+ This table is part of Microsoft Defender for Endpoints with Microsoft Sentinel. This table contains Machine information, including OS information.
 
 ## Categories
 
@@ -19,9 +19,7 @@ ms.date: 5/26/2023
 ## Solutions
 
 - Microsoft Sentinel
-
-
-
+- Microsoft Defender for Endpoint
 
 ## Columns
 
