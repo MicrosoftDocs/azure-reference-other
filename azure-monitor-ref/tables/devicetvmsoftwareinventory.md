@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # DeviceTvmSoftwareInventory
 
- Inventory of software installed on devices, including their version information and end-of-support status.
+This table is part of Microsoft Defender for Endpoint and captures the Inventory of software installed on devices, including their version information and end-of-support status.
 
 ## Categories
 
@@ -19,8 +19,7 @@ ms.date: 5/26/2023
 ## Solutions
 
 - Microsoft Sentinel
-
-
+- Microsoft Defender for Endpoint
 
 
 ## Columns
