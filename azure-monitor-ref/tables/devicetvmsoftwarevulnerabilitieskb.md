@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # DeviceTvmSoftwareVulnerabilitiesKB
 
- Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available.
+This table is part of Microsoft Defender for Endpoint and captures the Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available.
 
 ## Categories
 
@@ -19,8 +19,7 @@ ms.date: 5/26/2023
 ## Solutions
 
 - Microsoft Sentinel
-
-
+- Microsoft Defender for Endpoint
 
 
 ## Columns
