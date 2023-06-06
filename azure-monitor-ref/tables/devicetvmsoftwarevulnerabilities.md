@@ -11,7 +11,7 @@ ms.date: 5/26/2023
 
 # DeviceTvmSoftwareVulnerabilities
 
- Captures various identity-related events, like password changes, password expiration, and user principal name (UPN) changes.
+This table is part of Microsoft Defender for Endpoint and captures various identity-related events, like password changes, password expiration, and user principal name (UPN) changes.
 
 ## Categories
 
@@ -19,6 +19,7 @@ ms.date: 5/26/2023
 ## Solutions
 
 - Microsoft Sentinel
+- Microsoft Defender for Endpoint
 
 
 
