@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/26/2023
+ms.date: 6/1/2023
 ---
 
 # HDInsightHBaseLogs

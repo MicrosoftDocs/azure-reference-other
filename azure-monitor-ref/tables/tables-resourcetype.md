@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 5/26/2023
+ms.date: 6/1/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -210,6 +210,7 @@ ms.date: 5/26/2023
 
 ## Azure Data Transfer
 
+- [DataTransferOperations](datatransferoperations.md)
 
 ## Azure Database for MariaDB Servers
 
@@ -253,6 +254,7 @@ ms.date: 5/26/2023
 - [AzureMetrics](azuremetrics.md)
 - [DatabricksAccounts](databricksaccounts.md)
 - [DatabricksClusters](databricksclusters.md)
+- [DatabricksDatabricksSQL](databricksdatabrickssql.md)
 - [DatabricksDBFS](databricksdbfs.md)
 - [DatabricksFeatureStore](databricksfeaturestore.md)
 - [DatabricksGenie](databricksgenie.md)
@@ -453,6 +455,7 @@ ms.date: 5/26/2023
 - [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
 - [ACSCallAutomationMediaSummary](acscallautomationmediasummary.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
+- [ACSCallRecordingIncomingOperations](acscallrecordingincomingoperations.md)
 - [ACSCallRecordingSummary](acscallrecordingsummary.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSCallSurvey](acscallsurvey.md)
