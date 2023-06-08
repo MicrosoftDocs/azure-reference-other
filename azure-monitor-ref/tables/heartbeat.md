@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # Heartbeat
@@ -64,7 +64,7 @@ ms.date: 6/1/2023
 | ResourceType | string | Type of the Azure resource running the agent. Examples include virtualmachines or managedclusters. |
 | SCAgentChannel | string | Specfies how agent is connected to workspace. Possible values are Direct or SCManagementServer. |
 | Solutions | string | List of solutions deployed on the agent at the moment when Heartbeat was issued. |
-| SourceSystem | string | Type of agent the data was collected from. Possible values are OpsManager (Windows agent) or Linux. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SubscriptionId | string | Subscription ID of the Azure resource running the agent |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |
