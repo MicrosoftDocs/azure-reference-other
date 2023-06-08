@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AlertEvidence
@@ -62,8 +62,8 @@ ms.date: 6/1/2023
 | ServiceSource | string | Product or service that provided the alert information. |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatFamily | string | Malware family that the suspicious or malicious file or process has been classified under. |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated. |
 | Title | string | Title of the alert. |
