@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ADXTableUsageStatistics
@@ -38,11 +38,11 @@ ms.date: 6/1/2023
 | Principal | string | The principal that invoked the query |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RootActivityId | string | The root activity id |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartedOn | datetime | Time (UTC) at which table usage statistics operation started |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TableName | string | The name of the table |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time (UTC) at which this event was generated |
 | Type | string | The name of the table |
 | User | string | The user that invoked the query |
