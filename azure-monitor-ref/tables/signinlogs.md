@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # SigninLogs
@@ -96,7 +96,7 @@ ms.date: 6/1/2023
 | SessionLifetimePolicies | string | Any conditional access session management policies that were applied during the sign-in event. |
 | SignInIdentifier | string | The identification that the user provided to sign in. It may be the userPrincipalName but it's also populated when a user signs in using other identifiers. |
 | SignInIdentifierType | string | The type of sign in identifier. Possible values are: userPrincipalName, phoneNumber, proxyAddress, qrCode, onPremisesUserPrincipalName. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | dynamic | The sign-in status. Includes the error code and description of the error (in case of a sign-in failure). |
 | TimeGenerated | datetime |  |
 | TokenIssuerName | string | The name of the identity provider. For example, sts.microsoft.com. |
