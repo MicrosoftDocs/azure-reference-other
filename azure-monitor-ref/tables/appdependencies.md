@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AppDependencies
@@ -62,12 +62,12 @@ ms.date: 6/1/2023
 | ResultCode | string | Result code returned to the application by the dependency call. |
 | SDKVersion | string | Version of the SDK used by the application to generate this telemetry item. |
 | SessionId | string | Application-defined session ID. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Success | bool | Indicates whether the dependency call completed successfully. |
 | SyntheticSource | string | Synthetic source of the operation. |
 | Target | string | Target of a dependency call, such as a Web or a SQL server name. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when dependency call was recorded. |
 | Type | string | The name of the table |
 | UserAccountId | string | Application-defined account associated with the user. |
