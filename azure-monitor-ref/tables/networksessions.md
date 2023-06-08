@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # NetworkSessions
@@ -114,7 +114,7 @@ ms.date: 6/1/2023
 | NetworkRuleName | string | The name or ID of the rule by which DeviceAction was decided upon. |
 | NetworkRuleNumber | int | Matched rule number. |
 | NetworkSessionId | string | The session identifier as reported by the reporting device. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SrcBytes | long | The number of bytes sent from the source to the destination for the connection or session. |
 | SrcDvcDomain | string | Domain of the device from which session was initiated. |
 | SrcDvcFqdn | string | The fully qualified domain name of the host where the log was created. |
@@ -145,7 +145,7 @@ ms.date: 6/1/2023
 | SrcUserSid | string | The user ID of the identity associated with the sessions source. Typically, user performing an action on the client. |
 | SrcUserUpn | string | UPN of the account initiating the session. |
 | SrcZone | string | The network zone of the source, as defined by the reporting device. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatCategory | string | The category of a threat identified by a security system such as Web Security Gateway of an IPS and is associated with this network session. |
 | ThreatId | string | The ID of a threat identified by a security system such as Web Security Gateway of an IPS and is associated with this network session. |
 | ThreatName | string | The name of the threat or malware identified. |
