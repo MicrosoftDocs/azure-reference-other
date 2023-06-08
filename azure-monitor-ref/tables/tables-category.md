@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -78,6 +78,16 @@ ms.date: 6/1/2023
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AZKVAuditLogs](azkvauditlogs.md)
 - [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
+- [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
+- [AZMSArchiveLogs](azmsarchivelogs.md)
+- [AZMSAutoscaleLogs](azmsautoscalelogs.md)
+- [AZMSCustomerManagedKeyUserLogs](azmscustomermanagedkeyuserlogs.md)
+- [AZMSHybridConnectionsEvents](azmshybridconnectionsevents.md)
+- [AZMSKafkaCoordinatorLogs](azmskafkacoordinatorlogs.md)
+- [AZMSKafkaUserErrorLogs](azmskafkausererrorlogs.md)
+- [AZMSOperationalLogs](azmsoperationallogs.md)
+- [AZMSRunTimeAuditLogs](azmsruntimeauditlogs.md)
+- [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [CassandraAudit](cassandraaudit.md)
@@ -243,6 +253,15 @@ ms.date: 6/1/2023
 - [AZFWFlowTrace](azfwflowtrace.md)
 - [AZKVAuditLogs](azkvauditlogs.md)
 - [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
+- [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
+- [AZMSArchiveLogs](azmsarchivelogs.md)
+- [AZMSAutoscaleLogs](azmsautoscalelogs.md)
+- [AZMSCustomerManagedKeyUserLogs](azmscustomermanagedkeyuserlogs.md)
+- [AZMSHybridConnectionsEvents](azmshybridconnectionsevents.md)
+- [AZMSKafkaCoordinatorLogs](azmskafkacoordinatorlogs.md)
+- [AZMSKafkaUserErrorLogs](azmskafkausererrorlogs.md)
+- [AZMSOperationalLogs](azmsoperationallogs.md)
+- [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
 - [AzureActivity](azureactivity.md)
 - [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 - [AzureDiagnostics](azurediagnostics.md)
