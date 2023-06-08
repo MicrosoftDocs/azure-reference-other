@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # Dynamics365Activity
@@ -47,10 +47,10 @@ ms.date: 6/1/2023
 | ResultStatus | string | Indicates whether the action (specified in the Operation property) was successful or not |
 | ServiceName | string | Name of the Service generating the log |
 | SourceRecordId | string | Unique identifier of an audit record |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SystemUserId | string | Unique identifier of the user GUID in the organization |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time in Coordinated Universal Time (UTC) when the user performed the activity |
 | Type | string | The name of the table |
 | UserAgent | string | The user agent |
