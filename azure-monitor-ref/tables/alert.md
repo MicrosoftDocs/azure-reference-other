@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # Alert
@@ -82,7 +82,7 @@ ms.date: 6/1/2023
 | ServiceDeskWorkItemType | string |  |
 | SourceDisplayName | string | Display name of the monitoring object that generated the alert. |
 | SourceFullName | string | Full name of the monitoring object that generated the alert. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StateType | string |  |
 | StatusDescription | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
