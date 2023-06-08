@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ADFSSISPackageEventMessages
@@ -50,10 +50,10 @@ ms.date: 6/1/2023
 | PackageName | string | Package name |
 | PackagePath | string | Package path |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SubcomponentName | string | Subcomponent name |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreadId | int | Thread id |
 | TimeGenerated | datetime | The timestamp (UTC) of the log |
 | Type | string | The name of the table |
