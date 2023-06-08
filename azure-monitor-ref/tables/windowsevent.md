@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # WindowsEvent
@@ -56,7 +56,7 @@ ms.date: 6/1/2023
 | SystemThreadId | int | Identifies the thread that generated the event. |
 | SystemUserId | string | The ID of the user who is responsible for the event. |
 | Task | int | The task defined in the event. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time stamp when the event was generated on the computer. |
 | Type | string | The name of the table |
 | Version | int | Contains the version number of the event's definition. |
