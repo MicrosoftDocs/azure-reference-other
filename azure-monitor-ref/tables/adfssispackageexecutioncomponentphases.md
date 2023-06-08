@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ADFSSISPackageExecutionComponentPhases
@@ -41,11 +41,11 @@ ms.date: 6/1/2023
 | PackageName | string | Package name |
 | Phase | string | Phase |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartTime | datetime | Start time |
 | SubcomponentName | string | Subcomponent name |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TaskName | string | Task name |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of the log |
 | Type | string | The name of the table |
