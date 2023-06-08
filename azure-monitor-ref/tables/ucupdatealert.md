@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # UCUpdateAlert
@@ -50,11 +50,11 @@ ms.date: 6/1/2023
 | SCCMClientId | string | A GUID corresponding to the SCCM Client ID on the device. |
 | ServiceSubstate | string | Ranking of Client Substates for sequential ordering in funnel-type views. The rankings between ServiceSubstate and ClientSubstate can be used together. |
 | ServiceSubstateRank | int | Rank of ServiceSubstate |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartTime | datetime | The time this alert was activated. |
 | TargetBuild | string | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
 | TargetVersion | string | The target OS Version - eg, 1909. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event is generated. |
 | Type | string | The name of the table |
 | UpdateCategory | string | The type of content this DeviceUpdateEvent is tracking. |
