@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # Syslog
@@ -49,7 +49,7 @@ ms.date: 6/1/2023
 | ProcessName | string | Name of the process that generated the message. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SeverityLevel | string | Severity level of the event. |
-| SourceSystem | string | Type of agent the data was collected from. For syslog the value is typically Linux. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SyslogMessage | string | Text of the message. |
 | TimeGenerated | datetime | Date and time the record was created. |
