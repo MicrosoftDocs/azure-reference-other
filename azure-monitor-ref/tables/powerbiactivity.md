@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # PowerBIActivity
@@ -57,11 +57,11 @@ ms.date: 6/1/2023
 | RequestId | string | A unique identifier for the request. |
 | Scope | string | Event can be created by a hosted Office 365 service or an on-premises server. Possible values are online and onprem. Note that SharePoint is the only workload currently sending events from on-premises to Office 365. |
 | SharingInformation | string | Information about the person to whom a sharing invitation is sent. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SrcIpAddr | string | The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. For some services, the value displayed in this property might be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by person who performed the activity. Also, for Azure Active Directory-related events, the IP address isn't logged and the value for the ClientIP property is null. |
 | SwitchState | string | Information about the state of various tenant level switches. |
 | TargetAppName | string | The name of the app where the event occurred. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time in (UTC) when the user performed the activity. |
 | Type | string | The name of the table |
 | UserAgent | string | Information about the user's browser. This information is provided by the browser. |
