@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AKSAuditAdmin
@@ -46,11 +46,11 @@ ms.date: 6/1/2023
 | ResponseObject | dynamic | Kubernetes API object from the response, in object format or the string "skipped-too-big-size-object". This is omitted for non-resource requests. |
 | ResponseStatus | dynamic | Response status for the request, which includes the response code. In error cases, this object will include the error message property. |
 | SourceIps | dynamic | The list of source IP addresses for the originating client and intermediate proxies. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Stage | string | The request handling stage (RequestReceived, ResponseStarted, ResponseComplete, Panic) at which this audit event was generated. |
 | StageReceivedTime | datetime | Time when the request reached the current audit stage. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Event generation time. |
 | Type | string | The name of the table |
 | User | dynamic | Authenticated user metadata of the requesting client, including optional fields such as UID and groups. |
