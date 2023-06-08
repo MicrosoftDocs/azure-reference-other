@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DeviceLogonEvents
@@ -73,7 +73,7 @@ ms.date: 6/1/2023
 | RemoteIPType | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast. |
 | RemotePort | int | TCP port on the remote device that was being connected to. |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
