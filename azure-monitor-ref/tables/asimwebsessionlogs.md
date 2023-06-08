@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ASimWebSessionLogs
@@ -125,7 +125,7 @@ ms.date: 6/1/2023
 | Rule | string | Either NetworkRuleName or NetworkRuleNumber |
 | RuleName | string | The name or ID of the rule by which DvcAction was decided upon. Example: AnyAnyDrop |
 | RuleNumber | int | The number of the rule by which DvcAction was decided upon. Example: 23 |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SrcAppId | string | The ID of the source application, as reported by the reporting device. |
 | SrcAppName | string | The name of the source application. |
 | SrcAppType | string | The type of the source application. |
@@ -162,7 +162,7 @@ ms.date: 6/1/2023
 | SrcUserScopeId | string | The ID of the scope, such as Azure AD tenant, in which SrcUserId and SrcUsername are defined. |
 | SrcUserType | string | The type of the source user. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatCategory | string | The category of the threat or malware identified in the web session. |
 | ThreatConfidence | int | The confidence level of the threat identified, normalized to a value between 0 and a 100. |
 | ThreatField | string | The field for which a threat was identified. The value is either SrcIpAddr, DstIpAddr, Domain, or DnsResponseName. |
