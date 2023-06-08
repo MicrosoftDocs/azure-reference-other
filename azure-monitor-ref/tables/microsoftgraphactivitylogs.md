@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # MicrosoftGraphActivityLogs
@@ -47,8 +47,8 @@ ms.date: 6/1/2023
 | Scopes | string | The scopes in token claims. |
 | ServicePrincipalId | string | The identifier of the servicePrincipal making the request. |
 | SignInActivityId | string | The identifier representing the sign-in activitys. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time the request was received. |
 | TokenIssuedAt | datetime | The timestamp the token was issued at. |
 | Type | string | The name of the table |
