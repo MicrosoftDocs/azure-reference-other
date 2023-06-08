@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # Anomalies
@@ -53,11 +53,11 @@ ms.date: 6/1/2023
 | SourceDevice | string | The source device for which the anomaly was generated. |
 | SourceIpAddress | string | The source ip address for which the anomaly was generated. |
 | SourceLocation | dynamic | Info about the source location for which the anomaly was generated as JSON. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartTime | datetime | The time (UTC) when the anomaly started. |
 | Tactics | string | List of MITRE ATT&CK tactics (strings) corresponding to the anomaly. |
 | Techniques | string | List MITRE ATT&CK techniques (strings) corresponding to the anomaly. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the anomaly was generated. |
 | Type | string | The name of the table |
 | UserInsights | dynamic | Insights about the users corresponding to the generated anomaly as JSON. |
