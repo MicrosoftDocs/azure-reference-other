@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AADServicePrincipalRiskEvents
@@ -51,8 +51,8 @@ ms.date: 6/1/2023
 | ServicePrincipalDisplayName | string | The display name for the service principal. |
 | ServicePrincipalId | string | The unique identifier for the service principal. |
 | Source | string | Source of the risk detection. For example, identityProtection. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC. |
 | TokenIssuerType | string | Indicates the type of token issuer for the detected sign-in risk. |
 | Type | string | The name of the table |
