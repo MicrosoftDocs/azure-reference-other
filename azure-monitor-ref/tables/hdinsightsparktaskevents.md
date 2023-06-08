@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # HDInsightSparkTaskEvents
@@ -75,12 +75,12 @@ ms.date: 6/1/2023
 | ShuffleTotalBytesRead | long | The number bytes read during the shuffle task. |
 | ShuffleWriteMetrics | long | The metrics associated with shuffle writes. |
 | ShuffleWriteTime | long | The time spent writing during the shuffle task. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StageId | string | The ID of the stage associated with the task. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TaskId | string | The ID of the task. |
 | TaskType | string | The task type. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
 | UpdatedBlocks | long | The number of updated blocks. |
