@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # IdentityInfo
@@ -67,12 +67,12 @@ ms.date: 6/1/2023
 | RiskLevelDetails | string | Details regarding the AAD risk level |
 | RiskState | string | Indication if the account is at risk now or if the risk was remediated |
 | ServicePrincipals | dynamic | Azure AD service principals that are owned by the user |
-| SourceSystem | string | The system where the user is managed |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | State | string | The geographical state of the user account as defined in AAD |
 | StreetAddress | string | The office street address of the user account as defined in AAD |
 | Surname | string | The user account surname |
 | Tags | string | Relevant information on the user account which is important for investigation: Sensitive\ VIP\  Administrator |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time when the event was generated (UTC) |
 | Type | string | The name of the table |
 | UACFlags | string | User Access control flags from AD & AAD |
