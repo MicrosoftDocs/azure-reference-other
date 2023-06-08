@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # CassandraLogs
@@ -74,12 +74,12 @@ ms.date: 6/1/2023
 | SliceStart | string | The start of the column slice inclusive. |
 | SourceFile | string | File name where the logging request was issued. |
 | SourceLine | int | Line number where the logging request was issued. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SSTableName | string | SSTable name. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SurvivorSpaceAfter | long | Survivor space after garbage collection (in bytes). Survivor space stores the objects that have survived the garbage collection of the Eden space. |
 | SurvivorSpaceBefore | long | Survivor space before garbage collection (in bytes). Survivor space stores the objects that have survived the garbage collection of the Eden space. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreadId | string | ID of the thread that generated the logging event. |
 | ThreadName | string | Name of the thread that generated the logging event. |
 | TimeGenerated | datetime | Date and time the record was created. |
