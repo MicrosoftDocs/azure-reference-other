@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # CIEventsOperational
@@ -57,13 +57,13 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultSignature | string | Sub status of the event. If the operation corresponds to a REST API call, it's the HTTP status code. |
 | ResultType | string | Status of the event. Running, Skipped, Successful, Failure. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartTime | datetime | Specifies the date and time that the workflow job was started (UTC) |
 | SubmittedBy | string | Workflow events only. The Azure Active Directory objectId of the user who triggered the workflow, see also properties.workflowSubmissionKinds. |
 | SubmittedTime | datetime | Specifies the date and time that the workflow job was submitted (UTC) |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TasksCount | int | Workflow only. Number of tasks the Workflow triggers. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp of the event (UTC). |
 | Type | string | The name of the table |
 | Uri | string | Absolute request URI. |
