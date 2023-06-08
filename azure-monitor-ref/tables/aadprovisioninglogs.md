@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AADProvisioningLogs
@@ -50,9 +50,9 @@ ms.date: 6/1/2023
 | ResultType | string | The result of the provisioning operation can be Success, Failure, or Skipped |
 | ServicePrincipal | string | Represents the service principal used for provisioning |
 | SourceIdentity | string | Details of source object being provisioned |
-| SourceSystem | string | Details of source system of the object being provisioned |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | TargetIdentity | string | Details of target object being provisioned |
 | TargetSystem | string | Details of target system of the object being provisioned |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC |
 | Type | string | The name of the table |
