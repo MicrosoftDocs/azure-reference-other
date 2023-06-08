@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # MicrosoftPurviewInformationProtection
@@ -96,9 +96,9 @@ ms.date: 6/1/2023
 | SensitivityLabelPolicyId | string | The identifier for the sensitivity labeling policy that was matched based on the content of the document. |
 | Severity | string | The severity of the auto label policy match. |
 | SharePointMetaData | dynamic | SharePoint auto labeling metadata. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | TargetLocation | string | The location of the document with respect to the user' device. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time when the user performed the activity. |
 | Type | string | The name of the table |
 | UserId | string | The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged. |
