@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ADFSSignInLogs
@@ -63,9 +63,9 @@ ms.date: 6/1/2023
 | ResultDescription | string | Provides the error description for the sign-in operation |
 | ResultSignature | string | Contains the error code, if any, for the sign-in operation |
 | ResultType | string | The result of the sign-in operation can be Success or Failure |
-| SourceSystem | string | Details of source system of the object being provisioned |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | string | Details of the sign-in status |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC |
 | TokenIssuerName | string | Name of the identity provider (e.g. sts.microsoft.com ) |
 | TokenIssuerType | string | Type of identityProvider (Azure AD, AD Federation Services) |
