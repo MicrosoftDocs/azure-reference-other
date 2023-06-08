@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # StorageCacheOperationEvents
@@ -40,9 +40,9 @@ ms.date: 6/1/2023
 | ResponseCode | int | HTTP status of API request. |
 | ResultDescription | string | Details about the result, if available. |
 | ResultType | string | Result of the REST API request. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StorageTargetName | string | Name of the storage target associated with the operation, if available. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (UTC) when the log was created. |
 | Type | string | The name of the table |
