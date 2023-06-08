@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # WVDAgentHealthStatus
@@ -44,12 +44,12 @@ ms.date: 6/1/2023
 | SessionHostHealthCheckResult | dynamic | The set of results on health checks |
 | SessionHostName | string | Name of the Virtual Machine |
 | SessionHostResourceId | string | The ARM path of the session host |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | string | The current status of the VM, whether its healthy or not |
 | StatusTimeStamp | datetime | The time recorded when there was a change in the health status |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SxSStackVersion | string | The version of the reverse connect listener running on the VM |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the report was generated (UTC) |
 | Type | string | The name of the table |
 | UpgradeErrorMsg | string | The version of the reverse connect listener running on the VM |

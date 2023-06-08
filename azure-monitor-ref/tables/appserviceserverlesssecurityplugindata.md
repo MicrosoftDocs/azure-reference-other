@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AppServiceServerlessSecurityPluginData
@@ -41,8 +41,8 @@ ms.date: 6/1/2023
 | SlSecMetadata | dynamic | Contains details about the resource like the deployment ID, runtime info, website info, OS, etc. |
 | SlSecProps | dynamic | Contains other details that might be needed for debugging end-to-end requests, e.g., slsec nuget version. |
 | SlSecRequestId | string | The ingestion request ID used for identifying the message and the request for diagnostics and debugging. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time (UTC) this message was created on the node. |
 | Type | string | The name of the table |

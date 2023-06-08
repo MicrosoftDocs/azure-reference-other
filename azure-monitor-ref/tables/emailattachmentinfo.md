@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # EmailAttachmentInfo
@@ -41,8 +41,8 @@ ms.date: 6/1/2023
 | SenderFromAddress | string | Sender domain in the from header, which is visible to email recipients on their email clients. |
 | SenderObjectId | string | Sender email address in the from header, which is visible to email recipients on their email clients. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatNames | string | Sender email address in the from header, which is visible to email recipients on their email clients. |
 | ThreatTypes | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats. |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated. |

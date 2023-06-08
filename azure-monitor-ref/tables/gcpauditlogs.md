@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # GCPAuditLogs
@@ -48,11 +48,11 @@ ms.date: 6/1/2023
 | ServiceData | dynamic | An object containing fields of an arbitrary type. An additional field "@type" contains a URI identifying the type. Example: { "id": 1234, "@type": "types.example.com/standard/id" }. |
 | ServiceName | string | The name of the API service performing the operation. For example, 'compute.googleapis.com'. |
 | Severity | string | Optional. The severity of the log entry. For example, the following filter expression will match log entries with severities INFO, NOTICE, and WARNING. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | dynamic | The status of the overall operation. |
 | StatusMessage | string | The message status of the overall operation. |
 | Subscription | string | A named resource representing the stream of messages from a single, specific topic, to be delivered to the subscribing application. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time the log entry was received by logging. |
 | Timestamp | datetime | The time the event described by the log entry occurred. |
 | Type | string | The name of the table |

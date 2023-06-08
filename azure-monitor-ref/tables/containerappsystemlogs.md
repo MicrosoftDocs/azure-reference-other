@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ContainerAppSystemLogs
@@ -46,8 +46,8 @@ ms.date: 6/1/2023
 | ReplicaName | string | The name of Container App replica generating this log. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RevisionName | string | The name of the revision generating this log. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time (UTC) when the log was generated. |
 | Type | string | For events emitted by the Container App Environment. Type indicates the severity level of the event. |

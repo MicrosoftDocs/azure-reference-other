@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # StorageMoverCopyLogsTransferred
@@ -38,10 +38,10 @@ ms.date: 6/1/2023
 | ItemType | string | Type of the item, either 'F' for file, or 'D' for directory. |
 | JobRunName | string | Unique name of the job run which generated this log. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StatusCode | string | The storage mover status code. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time in UTC when the log was generated on the Storage Mover agent. |
 | TransferResult | string | The final transfer result of the item. One of: Excluded, Failed, Transferred, NoCopyNecessary, Unsupported. |
 | Type | string | The name of the table |

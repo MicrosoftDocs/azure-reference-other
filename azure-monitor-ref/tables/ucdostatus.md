@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # UCDOStatus
@@ -58,8 +58,8 @@ ms.date: 6/1/2023
 | PeersCannotConnectCount | long | The count of peers this device was unable to connect to. |
 | PeersSuccessCount | long | The count of peers this device successfully connected to. |
 | PeersUnknownCount | long | The count of peers for which there is an unknown relation. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event was generated. |
 | TotalTimeForDownload | string | The total time it took to download the content. |
 | TotalTransfers | long | The total count of data transfers to download this content. |

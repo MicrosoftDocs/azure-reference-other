@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # IdentityLogonEvents
@@ -52,9 +52,9 @@ ms.date: 6/1/2023
 | Port | string | TCP port used during communication |
 | Protocol | string | Network protocol used |
 | ReportId | string | Unique identifier for the event |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | TargetAccountDisplayName | string | Display name of the account that the recorded action was applied to |
 | TargetDeviceName | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | Type | string | The name of the table |

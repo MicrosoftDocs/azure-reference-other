@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # SynapseSqlPoolDmsWorkers
@@ -49,12 +49,12 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RowsProcessed | int | The rows processed of the DMS workers. |
 | SourceInfo | string | The row count of the DMS workers. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SqlSpId | int | The SQL  Sp Id for the DMS workers. |
 | StartTime | datetime | The startTime (UTC) of the DMS workers. |
 | Status | string | The status of the DMS workers. |
 | StepIndex | int | The step index of the DMS workers. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The type of the DMS workers. |

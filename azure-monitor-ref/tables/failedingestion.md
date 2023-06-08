@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # FailedIngestion
@@ -49,9 +49,9 @@ ms.date: 6/1/2023
 | ResultType | string | The final state of this data ingestion operation |
 | RootActivityId | string | The ingestion's activity Id |
 | ShouldRetry | bool | Indicates whether or not the failure is transient and should be retried |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Table | string | The name of the target table into which the data is ingested |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event is generated and logged |
 | Type | string | The name of the table |

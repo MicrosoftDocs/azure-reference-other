@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ADXTableDetails
@@ -47,10 +47,10 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RetentionPolicy | dynamic | The table's effective entity retention policy, serialized as JSON. |
 | RetentionPolicyOrigin | string | Retention policy origin entity (Table/Database/Cluster). |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TableName | string | The name of the table. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time (UTC) at which this event was generated. |
 | TotalExtentCount | long | The total number of extents in the table. |
 | TotalExtentSize | real | The total size of extents (compressed size + index size) in the table (in bytes). |

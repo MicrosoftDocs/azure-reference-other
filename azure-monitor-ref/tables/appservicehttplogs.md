@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AppServiceHTTPLogs
@@ -48,10 +48,10 @@ ms.date: 6/1/2023
 | ScStatus | int | HTTP status code |
 | ScSubStatus | string | Substatus error code on HTTP request |
 | ScWin32Status | string | Windows status code on HTTP request |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SPort | string | Server port number |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time when event is generated |
 | TimeTaken | int | Time taken by HTTP request in milliseconds |
 | Type | string | The name of the table |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ACICollaborationAudit
@@ -47,11 +47,11 @@ ms.date: 6/1/2023
 | ReferencedResourceId | string | The storage resource that the accessed CI resource points to, if applicable |
 | ReferencedResourceType | string | The storage resource type that the accessed CI resource points to, if applicable. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetResourceId | string | The azure resource ID of the accessed resource. |
 | TargetResourceType | string | The resource type of the accessed resource. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the audit was generated. |
 | Type | string | The name of the table |
 | UserName | string | Name of the user that initiated the pipeline. Available only if the audit relate to owned resource |

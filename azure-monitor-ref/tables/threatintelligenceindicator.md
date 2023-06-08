@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ThreatIntelligenceIndicator
@@ -82,7 +82,7 @@ ms.date: 6/1/2023
 | NetworkSourcePort | int | The network source port observable. |
 | PassiveOnly | bool | Indicates whether the indicator should trigger an event that is visible to a user. |
 | Tags | string | Free form tags. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatSeverity | int | Indicator severity rating from 0 to 5. Higher value indicates greater severity. |
 | ThreatType | string | Threat type of indicator. |
 | TimeGenerated | datetime | Time of indicator ingestion. |

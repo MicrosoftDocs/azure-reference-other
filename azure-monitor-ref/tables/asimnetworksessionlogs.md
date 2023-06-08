@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ASimNetworkSessionLogs
@@ -119,7 +119,7 @@ ms.date: 6/1/2023
 | NetworkRuleNumber | int | The number of the rule by which DvcAction was decided upon. |
 | NetworkSessionId | string | The session identifier as reported by the reporting device. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SrcAppId | string | The ID of the source application, as reported by the reporting device. |
 | SrcAppName | string | The name of the source application. |
 | SrcAppType | string | The type of the source application. |
@@ -161,7 +161,7 @@ ms.date: 6/1/2023
 | TcpFlagsRst | bool | The TCP RST flag reported. The reset flag gets sent from the receiver to the sender when a packet is sent to a particular host that was not expecting it. |
 | TcpFlagsSyn | bool | The TCP SYN flag reported. The synchronisation flag is used as a first step in establishing a three way handshake between two hosts. Only the first packet from both the sender and receiver should have this flag set. |
 | TcpFlagsUrg | bool | The TCP URG flag reported. The urgent flag is used to notify the receiver to process the urgent packets before processing all other packets. The receiver will be notified when all known urgent data has been received. See RFC 6093 for more details. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatCategory | string | The category of the threat or malware identified in the network session. |
 | ThreatConfidence | int | The confidence level of the threat identified, normalized to a value between 0 and a 100. |
 | ThreatField | string | The field for which a threat was identified. The value is either SrcIpAddr, DstIpAddr, Domain, or DnsResponseName. |

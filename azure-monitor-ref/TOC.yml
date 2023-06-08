@@ -368,6 +368,26 @@
     href: tables/azkvauditlogs.md
   - name: AZKVPolicyEvaluationDetailsLogs
     href: tables/azkvpolicyevaluationdetailslogs.md
+  - name: AZMSApplicationMetricLogs
+    href: tables/azmsapplicationmetriclogs.md
+  - name: AZMSArchiveLogs
+    href: tables/azmsarchivelogs.md
+  - name: AZMSAutoscaleLogs
+    href: tables/azmsautoscalelogs.md
+  - name: AZMSCustomerManagedKeyUserLogs
+    href: tables/azmscustomermanagedkeyuserlogs.md
+  - name: AZMSHybridConnectionsEvents
+    href: tables/azmshybridconnectionsevents.md
+  - name: AZMSKafkaCoordinatorLogs
+    href: tables/azmskafkacoordinatorlogs.md
+  - name: AZMSKafkaUserErrorLogs
+    href: tables/azmskafkausererrorlogs.md
+  - name: AZMSOperationalLogs
+    href: tables/azmsoperationallogs.md
+  - name: AZMSRunTimeAuditLogs
+    href: tables/azmsruntimeauditlogs.md
+  - name: AZMSVnetConnectionEvents
+    href: tables/azmsvnetconnectionevents.md
   - name: AzureActivity
     href: tables/azureactivity.md
   - name: AzureAttestationDiagnostics

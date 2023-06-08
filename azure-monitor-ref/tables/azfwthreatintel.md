@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AZFWThreatIntel
@@ -41,10 +41,10 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceIp | string | Packet's source IP address. |
 | SourcePort | int | Packet's source port. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetUrl | string | Request's target address URL. Available only for HTTP or TLS-inspected HTTPS requests. For example: https://www.microsoft.com/en-us/about. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatDescription | string | Description of the Threat that was identified by the firewall. |
 | TimeGenerated | datetime | Timestamp (UTC) when the data plane log was created. |
 | Type | string | The name of the table |

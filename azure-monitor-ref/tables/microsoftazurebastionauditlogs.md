@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # MicrosoftAzureBastionAuditLogs
@@ -43,11 +43,11 @@ ms.date: 6/1/2023
 | ResourceType | string | Resource Type that was accessed during the session. This could be a VM/VMSS/BSL/etc. |
 | SessionEndTime | string | Timestamp (UTC) of when the Bastion Session was ended |
 | SessionStartTime | datetime | Timestamp (UTC) of when the Bastion Session was started |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetResourceId | string | ResourceID of the VirtualMachine where the Bastion was connected to |
 | TargetVMIPAddress | string | IP Address of VirtualMachine where the Bastion was connected to |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | Time | datetime | The timestamp (UTC) of the log |
 | TimeGenerated | datetime |  |
 | TunnelId | string | Internal Bastion Connection GUID |

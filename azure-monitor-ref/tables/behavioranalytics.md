@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # BehaviorAnalytics
@@ -49,11 +49,11 @@ ms.date: 6/1/2023
 | SourceIPAddress | string | The source IP address. |
 | SourceIPLocation | string | The source Geo location based on the IP address. |
 | SourceRecordId | string | The unique Id of the source raw event. |
-| SourceSystem | string | The entity provider source system. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetName | string | The name of the target user in the action that generated the event. |
 | TargetPrincipalName | string | The name of the target user in the action that generated the event. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time when the raw event was generated (UTC). |
 | TimeProcessed | datetime | Time when enrichment processing occurred (UTC). |
 | Type | string | The name of the table |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # Watchlist
@@ -44,9 +44,9 @@ ms.date: 6/1/2023
 | Provider | string | The input provider of the Watchlist. |
 | SearchKey | string | The SearchKey is used to optimize query performance when using watchlists for joins with other data. For example, enable a column with IP addresses to be the designated SearchKey field, then use this field to join in other event tables by IP address. |
 | Source | string | The input source of the Watchlist. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Tags | string | The JSON array of tags provided by user. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated. |
 | TimeToLive | datetime | The time to live for a Watchlist record, expressed as a date and time of day (e.g. 2020-08-20T17:00:00.9618037Z). Its original value is inherited from Watchlist’s default duration. If TimeToLive passes, the record is considered deleted. A record's duration can be extended at any time by updating the TimeToLive value. |
 | Type | string | The name of the table |

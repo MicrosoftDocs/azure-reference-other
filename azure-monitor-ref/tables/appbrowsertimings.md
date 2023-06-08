@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AppBrowserTimings
@@ -59,10 +59,10 @@ ms.date: 6/1/2023
 | SDKVersion | string | Version of the SDK used by the application to generate this telemetry item. |
 | SendDurationMs | real | Send request time in milliseconds. |
 | SessionId | string | Application-defined session ID. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SyntheticSource | string | Synthetic source of the operation. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when request was recorded. |
 | TotalDurationMs | real | Page loading total time in milliseconds. |
 | Type | string | The name of the table |

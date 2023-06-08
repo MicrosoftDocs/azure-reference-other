@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ServiceFabricReliableServiceEvent
@@ -51,7 +51,7 @@ ms.date: 6/1/2023
 | ServiceName | string |  |
 | ServiceTypeName | string |  |
 | SlowCancellationTimeMillis | real |  |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | TaskName | string |  |
 | Tid | int |  |
 | TimeGenerated | datetime |  |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # VIIndexing
@@ -44,10 +44,10 @@ ms.date: 6/1/2023
 | OperationName | string | The name of the operation that triggered the event. |
 | OperationVersion | string | Video Indexer operations API version. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | string | Status of the operation, for example: Success, Failure, Warning, Informational or PartialSuccess. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated. |
 | Type | string | The name of the table |
 | Upn | string | Caller email. |

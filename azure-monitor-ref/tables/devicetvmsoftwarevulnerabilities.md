@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DeviceTvmSoftwareVulnerabilities
@@ -41,8 +41,8 @@ ms.date: 6/1/2023
 | SoftwareName | string | Name of the software product |
 | SoftwareVendor | string | Name of the software vendor |
 | SoftwareVersion | string | Version number of the software product |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |
 | VulnerabilitySeverityLevel | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape |

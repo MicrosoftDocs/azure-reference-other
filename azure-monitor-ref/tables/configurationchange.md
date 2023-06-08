@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ConfigurationChange
@@ -69,7 +69,7 @@ ms.date: 6/1/2023
 | SoftwareName | string | Name of the software |
 | SoftwareType | string | Type of the software: Application Package Update |
 | SourceComputerId | string |  |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SvcAccount | string | User account that is associated with the service executable explicitly to provide a security context for the service |
 | SvcChangeType | string | Service property that was changed |

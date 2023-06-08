@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DeviceTvmSecureConfigurationAssessmentKB
@@ -40,9 +40,9 @@ ms.date: 6/1/2023
 | RelatedMitreTechniques | dynamic | Related techniques from Mitre knowledge base. |
 | RemediationOptions | string | Recommended actions to reduce or address any associated risks |
 | RiskDescription | string | Description of any associated risks. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Tags | dynamic | Labels representing various attributes, used to identify or categorize a security configuration. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the record was generated. |
 | Timestamp | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |

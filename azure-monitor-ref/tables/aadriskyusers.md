@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AADRiskyUsers
@@ -39,8 +39,8 @@ ms.date: 6/1/2023
 | RiskLastUpdatedDateTime | datetime | The date and time that the risky user was last updated. |
 | RiskLevel | string | Level of the detected risky user. Possible values are: low, medium, high, hidden, none, unknownFutureValue. |
 | RiskState | string | State of the user's risk. Possible values are: none, confirmedSafe, remediated, dismissed, atRisk, confirmedCompromised, unknownFutureValue. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC. |
 | Type | string | The name of the table |
 | UserDisplayName | string | Risky user display name. |

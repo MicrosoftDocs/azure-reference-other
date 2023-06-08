@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AzureMetrics
@@ -145,7 +145,7 @@ ms.date: 6/1/2023
 | ResultSignature | string | Deprecated |
 | ResultType | string | Reduces the set of data collected. The syntax allowed depends on the operation. See the operation's description for details. |
 | Severity | int | Deprecated |
-| SourceSystem | string | OpsManagerfor all records in this table. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SubscriptionId | string | Subscription id of the Azure resource reporting the metric. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |

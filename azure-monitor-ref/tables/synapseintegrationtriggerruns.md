@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # SynapseIntegrationTriggerRuns
@@ -41,13 +41,13 @@ ms.date: 6/1/2023
 | Parameters | dynamic | The parameter details of the pipeline run. |
 | PipelineTenantId | string | The tenantId details of the pipeline run. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Start | datetime | The start time (UTC) of the trigger run. |
 | Status | string | The Status of the SQL requests. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SystemParameters | dynamic | The system parameter details of the pipeline run. |
 | Tags | dynamic | The associated tags of the log record. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | TriggerEvent | string | The trigger id of the log record. |
 | TriggerId | string | The trigger id of the log record. |

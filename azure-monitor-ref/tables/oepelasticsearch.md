@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # OEPElasticsearch
@@ -41,9 +41,9 @@ ms.date: 6/1/2023
 | PodName | string | Elasticsearch pod name. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Source | string | Source responsible for the log. It could be a search query or a record to be indexed in case of slow logs and null otherwise. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) when the log was created. |
 | TotalHits | string | Total number of hits for a search operation. For example, value can be '3 hits' for 3 hits, '-1' for no hits, or 'null' if it is not a search slow log. |
 | Type | string | Type of log. Can be index_search_slowlog, index_indexing_slowlog, server, deprecation etc. |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # WVDManagement
@@ -43,9 +43,9 @@ ms.date: 6/1/2023
 | ObjectsUpdated | int | The number of objects that were updated. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Route | string | The route for the management request. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of the event. |
 | Type | string | The name of the table |
 | UserName | string | The user that initiated the management request. |

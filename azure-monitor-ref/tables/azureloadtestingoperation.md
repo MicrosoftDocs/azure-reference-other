@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AzureLoadTestingOperation
@@ -50,9 +50,9 @@ ms.date: 6/1/2023
 | ResourceRegion | string | Region where the resource is located. |
 | ResultType | string | Indicates if the request was successful or failed. |
 | ServiceLocation | string | Location of the service which processed the request. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
 | UserAgent | string | HTTP header passed by the client, if applicable. |

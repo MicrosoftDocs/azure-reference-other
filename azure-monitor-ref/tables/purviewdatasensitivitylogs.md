@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # PurviewDataSensitivityLogs
@@ -59,9 +59,9 @@ ms.date: 6/1/2023
 | SourceRegion | string | The location of the data source that was scanned. |
 | SourceScanId | string | The associated Purview scan ID for the source. |
 | SourceSubscriptionId | string | Subscription ID associated with the data source. Account ID for AWS resources. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SourceType | string | Type of data source scanned: azuredatalakegen1, azureblob, azuredataexplorer, amazons3 etc. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time (UTC) when the log was generated. |
 | Type | string | The name of the table |

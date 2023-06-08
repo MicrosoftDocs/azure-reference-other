@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # PowerBIDatasetsWorkspace
@@ -54,11 +54,11 @@ ms.date: 6/1/2023
 | PremiumCapacityId | string | Unique identifier of the Premium capacity hosting the artifact being operated on. |
 | ProgressCounter | long | Progress Counter. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | string | Status of the operation. |
 | StatusCode | int | Status code of the operation. It covers success and failure. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp(UTC) of when the log entry was generated. |
 | Type | string | The name of the table |
 | User | string | The user on whose behalf the operation is running. Used when an end user identity must be impersonated on the server. |

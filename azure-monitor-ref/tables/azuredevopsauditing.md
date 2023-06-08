@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AzureDevOpsAuditing
@@ -47,8 +47,8 @@ ms.date: 6/1/2023
 | ScopeDisplayName | string | User friendly name for the scope level that an auditing event occurred at. |
 | ScopeId | string | The organization identifier. |
 | ScopeType | string | The level (scope) that the event occurred. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time the auditing event occurred in UTC. |
 | Type | string | The name of the table |
 | UserAgent | string | The user agent from the request. |

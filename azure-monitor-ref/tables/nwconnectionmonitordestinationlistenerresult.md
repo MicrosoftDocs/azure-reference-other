@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # NWConnectionMonitorDestinationListenerResult
@@ -40,9 +40,9 @@ ms.date: 6/1/2023
 | Protocol | string | The protocol of the test |
 | RecordId | string | The record id for unique identification of test result record |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TestConfigurationName | string | The test configuration name to which the test belongs to |
 | TestGroupName | string | The test group name to which the test belongs to |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |

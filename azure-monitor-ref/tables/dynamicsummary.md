@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DynamicSummary
@@ -43,7 +43,7 @@ ms.date: 6/1/2023
 | RelationName | string | The original data source name. |
 | SearchKey | string | SearchKey is used to optimize query performance when using DynamicSummary for joins with other data. For example, enable a column with IP addresses to be the designated SearchKey field, then use this field to join in other event tables by IP address. |
 | SourceInfo | dynamic | The JSON object with the data producer info, including source, name, version. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SummaryDataType | string | This flag is used to tell if the record is either a summary level or a summary item level record. |
 | SummaryDescription | string | The description provided by user. |
 | SummaryId | string | Summary unique ID. |
@@ -52,7 +52,7 @@ ms.date: 6/1/2023
 | SummaryStatus | string | Active or deleted. |
 | Tactics | dynamic | MITRE ATT&CK tactics are what attackers are trying to achieve. For example, exfiltration. |
 | Techniques | dynamic | MITRE ATT&CK techniques are how those tactics are accomplished. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was ingested to Azure Monitor. |
 | Type | string | The name of the table |
 | UpdatedBy | dynamic | The JSON object with the user who updated summary, including: object ID, email and name. |

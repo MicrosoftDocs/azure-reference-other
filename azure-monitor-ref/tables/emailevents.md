@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # EmailEvents
@@ -61,9 +61,9 @@ ms.date: 6/1/2023
 | SenderMailFromAddress | string | Sender email address in the MAIL from header, also known as the envelope sender or the Return-Path address. |
 | SenderMailFromDomain | string | Sender domain in the MAIL from header, also known as the envelope sender or the Return-Path address. |
 | SenderObjectId | string | Sender email address in the from header, which is visible to email recipients on their email clients. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Subject | string | Email subject field. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatNames | string | Sender email address in the from header, which is visible to email recipients on their email clients. |
 | ThreatTypes | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats. |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated. |

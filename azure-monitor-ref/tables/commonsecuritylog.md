@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # CommonSecurityLog
@@ -184,7 +184,7 @@ ms.date: 6/1/2023
 | SourceProcessId | int | The ID of the source process associated with the event. |
 | SourceProcessName | string | The name of the event's source process. |
 | SourceServiceName | string | The service responsible for generating the event. |
-| SourceSystem | string | Hard coded- 'OpsManager'. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SourceTranslatedAddress | string | Identifies the translated source that the event refers to in an IP network. |
 | SourceTranslatedPort | int | Source port after translation, such as a firewall. Valid port numbers are 0 - 65535. |
 | SourceUserID | string | Identifies the source user by ID. |
@@ -192,7 +192,7 @@ ms.date: 6/1/2023
 | SourceUserPrivileges | string | The source user's privileges. Valid values include: Administrator, User, Guest. |
 | StartTime | datetime | The time when the activity that the event refers to started. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatConfidence | string | The threat confidence of the MaliciousIP according to our TI feed. |
 | ThreatDescription | string | The threat description of the MaliciousIP according to our TI feed. |
 | ThreatSeverity | int | The threat severity of the MaliciousIP according to our TI feed at the time of the record ingestion. |

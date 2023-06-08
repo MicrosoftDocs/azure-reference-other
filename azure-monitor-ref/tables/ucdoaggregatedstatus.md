@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # UCDOAggregatedStatus
@@ -40,7 +40,7 @@ ms.date: 6/1/2023
 | ContentType | string | The type of content being downloaded. |
 | DeviceCount | long | Total count of devices. |
 | _IsBillable | string |  |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event was generated. |
 | Type | string | The name of the table |

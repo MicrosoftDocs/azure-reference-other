@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DSMAzureBlobStorageLogs
@@ -46,10 +46,10 @@ ms.date: 6/1/2023
 | RequesterUpn | string | The user principal names (UPN) of requestor. |
 | ResourceGroup | string | The Resource Group name of the storage account that was accessed. |
 | ResourceSubscriptionId | string | The subscription ID (GUID) of the storage account being accessed. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StatusCode | string | The HTTP status code for the request. If the request is interrupted, this value might be set to Unknown. |
 | SumResponseBodySize | long | The sum of packets in responses written by the storage service, in bytes. If request(s) are unsuccessful, this value may be empty. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time (UTC) when the first request was received by storage. |
 | Type | string | The name of the table |
 | Uri | string | Uniform resource identifier that is requested. |

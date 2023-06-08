@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # IoTHubDistributedTracing
@@ -49,10 +49,10 @@ ms.date: 6/1/2023
 | ResultDescription | string | Result description of the event, typically elaborates on the error |
 | ResultSignature | int | The status code of the event |
 | ResultType | string | Result type of the event, typically empty unless it's an error |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SpanId | string | Unique identifier of current span within trace (16 hex characters) |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event is generated and logged |
 | TraceFlags | int | A bit field for controlling tracing options. For example, sampling and trace level. |
 | TraceId | string | Globally unique identifier of the trace (32 hex characters) |

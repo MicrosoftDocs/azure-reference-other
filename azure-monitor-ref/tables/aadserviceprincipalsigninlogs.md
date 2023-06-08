@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AADServicePrincipalSignInLogs
@@ -58,8 +58,8 @@ ms.date: 6/1/2023
 | ServicePrincipalCredentialThumbprint | string | Thumbprint of the service principal that initiated the sign-in |
 | ServicePrincipalId | string | ID of the service principal who initiated the sign-in |
 | ServicePrincipalName | string | Service Principal Name of the service principal who initiated the sign-in |
-| SourceSystem | string | Details of source system of the object being provisioned |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC |
 | Type | string | The name of the table |
 | UniqueTokenIdentifier | string | Unique token identifier for the request |

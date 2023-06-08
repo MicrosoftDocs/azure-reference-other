@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # CDBDataPlaneRequests
@@ -56,10 +56,10 @@ ms.date: 6/1/2023
 | ResourceTokenPermissionMode | string | The permission mode of the resource token associated with the resource accessed by this request. |
 | ResourceTokenUserRid | string | The user ID associated with the resource token for the resource accessed by this request. |
 | ResponseLength | real | The payload size (in bytes) of the server response. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StatusCode | int | The HTTP status code response for the data plane request, highlighting details of the success/failure of the request. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) when the data plane request was issued. |
 | Type | string | The name of the table |
 | UserAgent | string | The name of the user specified user agent suffix (as specified when initializing the Cosmos DB client) when running in Direct mode. |

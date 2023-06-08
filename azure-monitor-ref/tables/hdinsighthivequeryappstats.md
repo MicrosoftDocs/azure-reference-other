@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # HDInsightHiveQueryAppStats
@@ -53,11 +53,11 @@ ms.date: 6/1/2023
 | RequestUser | string | The client user that submitted the request. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SessionId | string | The session ID of the query. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TablesRead | string | The tables read by the query. |
 | Tags | dynamic | Information about the record. For example a record may be tagged with 'yarn' if it is in the yarn context. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreadName | string | The name of the thread running the query. |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |

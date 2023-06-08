@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # OfficeActivity
@@ -137,7 +137,7 @@ ms.date: 6/1/2023
 | Source_Name | string | The entity that triggered the audited operation. Possible values are SharePoint or ObjectModel |
 | SourceRecordId | string | Unique identifier of an audit record |
 | SourceRelativeUrl | string | The URL of the folder that contains the file accessed by the user |
-| SourceSystem | string | The source system name |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SRPolicyId | string | Policy ID |
 | SRPolicyName | string | Policy name |
 | SRRuleMatchDetails | dynamic | Rule details |
@@ -151,7 +151,7 @@ ms.date: 6/1/2023
 | TargetUserOrGroupType | string | Identifies whether the target user or group is a Member, Guest, Group, or Partner |
 | TeamGuid | string | A unique identifier for the team being audited |
 | TeamName | string | The name of the team being audited |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time in Coordinated Universal Time (UTC) when the user performed the activity |
 | Type | string | The name of the table |
 | UserAgent | string | The user agent |

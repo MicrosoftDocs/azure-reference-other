@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # PowerBIDatasetsWorkspacePreview
@@ -54,12 +54,12 @@ ms.date: 6/1/2023
 | RootActivityId | string | Unique Identifier of request |
 | SessionId | string | Unique identifier of a session which represents multiple transactions occurring within the same scope e.g. Sharing calculated members. |
 | Severity | string | Contains the severity level of an exception associated with the command event. Values are: 0 = Success, 1 = Informational, 2 = Warning, 3 = Error. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SpId | int | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
 | StartTime | datetime | Contains the time at which the event started, when available. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Success | string | Indicates if the operation was successful. 1 = success. 0 = failure. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TextData | string | Contains verbose information associated with the event |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # NTANetAnalytics
@@ -75,7 +75,7 @@ ms.date: 6/1/2023
 | NsgRuleType | string | The type of Network Security Group(NSG) rule used by the flow. This is a placeholder for NSG flow logging. |
 | PacketsDestToSrc | long | Represents packets sent from the destination to the source of the flow. |
 | PacketsSrcToDest | long | Represents packets sent from the source to the destination of the flow. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SrcApplicationGateway | string | Application gateway associated with the source IP in the flow. |
 | SrcExpressRouteCircuit | string | Express route circuit associated with the source IP in the flow. |
 | SrcIp | string | Source IP address. |
@@ -91,7 +91,7 @@ ms.date: 6/1/2023
 | SubType | string | Subtype of the ingestion. Values can be Flowlog and StatusMessage. |
 | TargetResourceId | string | Target Resource Id for the resource where flow logging has been enabled. |
 | TargetResourceType | string | Target Resource Type where flow logging is enabled. It can be virtual network(VNET)/subnet(SUBNET)/network interface(NIC). |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time when the data gets ingested into the log analytics workspace. |
 | TimeProcessed | datetime | Time(in UTC) at which the traffic analytics processed the raw flow logs from the storage account. |
 | Type | string | The name of the table |

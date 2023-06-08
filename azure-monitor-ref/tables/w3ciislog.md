@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # W3CIISLog
@@ -70,7 +70,7 @@ ms.date: 6/1/2023
 | scWin32Status | string | Windows status code. |
 | Severity | int | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |
 | sIP | string | IP address of the server on which the log file entry was generated. |
-| SourceSystem | string | Type of agent the event was collected from. Possible values are OpsManager and AzureStorage. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | sPort | int | Server port number that is configured for the service. |
 | sSiteName | string | Name of the IIS site. |
 | StorageAccount | string | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |

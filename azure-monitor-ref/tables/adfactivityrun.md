@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ADFActivityRun
@@ -56,12 +56,12 @@ ms.date: 6/1/2023
 | PipelineRunId | string |  |
 | ResourceId | string |  |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Start | datetime |  |
 | Status | string |  |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Tags | string |  |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |
 | UserProperties | string |  |

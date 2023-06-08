@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # UCClientReadinessStatus
@@ -43,10 +43,10 @@ ms.date: 6/1/2023
 | SetupReadinessReason | string | Reason why the device is not capable of taking target OS and version when setup ran. |
 | SetupReadinessStatus | string | Whether or not the device is capable of taking target OS and version when setup ran. |
 | SetupReadinessTime | datetime | The time the readiness generated this specific record when setup ran. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | TargetOSBuild | string | The currently-installed Windows 10 Build in the format 'Major'.'Revision'. 'Major' corresponds to which Feature Update the device is on, whereas 'Revision' corresponds to which quality update the device is on. Mappings between Feature release and Major, as well as Revision and KBs, are available aka.ms/win10releaseinfo. |
 | TargetOSName | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |
 | TargetOSVersion | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event is generated. |
 | Type | string | The name of the table |

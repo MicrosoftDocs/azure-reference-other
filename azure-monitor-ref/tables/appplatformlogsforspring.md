@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AppPlatformLogsforSpring
@@ -45,12 +45,12 @@ ms.date: 6/1/2023
 | OperationName | string | The name of the operation represented by this event |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ServiceName | string | The service name that emitted the log |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SpanId | string | SpanId for tracing |
 | StackTrace | string | The stackTrace of the log |
 | Stream | string | The stream of the log |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | Thread | string | The thread of the log |
 | TimeGenerated | datetime | The timestamp (UTC) when the log is collected by Azure Spring Cloud |
 | TraceId | string | TraceId for tracing |

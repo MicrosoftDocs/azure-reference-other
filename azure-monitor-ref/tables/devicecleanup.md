@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DeviceCleanup
@@ -36,7 +36,7 @@ ms.date: 6/1/2023
 | _IsBillable | string |  |
 | ProviderId | string |  |
 | SerialNumber | string |  |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | State | string |  |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |

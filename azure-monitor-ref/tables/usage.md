@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # Usage
@@ -44,7 +44,7 @@ ms.date: 6/1/2023
 | QuantityUnit | string | Value is alwais Mbytes. |
 | ResourceUri | string | The URI of the workspace. This will be same for all records in this table in workspace. |
 | Solution | string | Solution about which usage is being reported. |
-| SourceSystem | string | For Usage record SourceSystem is always OMS. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartTime | datetime | Start time of the 1 hour aggregation window (same as TimeGenerated). |
 | TimeGenerated | datetime | Date and time the record was created. |
 | TotalBatches | long | Deprecated |

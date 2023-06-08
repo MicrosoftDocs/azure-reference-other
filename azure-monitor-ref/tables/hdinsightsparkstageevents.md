@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # HDInsightSparkStageEvents
@@ -45,13 +45,13 @@ ms.date: 6/1/2023
 | Region | string | The region of the cluster running the stage. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Role | string | The type of node  running the stage. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StageId | string | The ID of the stage. |
 | StageName | string | The name of the stage. |
 | SubmissionTime | datetime | The time (UTC) the stage was submitted. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TaskCount | int | The count of tasks associated with the stage. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
 | UserSubscriptionId | string | The subscription ID of the cluster running the stage. |

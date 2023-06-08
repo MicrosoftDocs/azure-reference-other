@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # StorageQueueLogs
@@ -67,11 +67,11 @@ ms.date: 6/1/2023
 | SchemaVersion | string | The schema version of the log. |
 | ServerLatencyMs | real | The total time expressed in milliseconds to perform the requested operation. This value doesn't include network latency (the time to read the incoming request and send the response to the requester). |
 | ServiceType | string | The service associated with this request. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StatusCode | string | The HTTP status code for the request. If the request is interrupted, this value might be set to Unknown. |
 | StatusText | string | The status of the requested operation. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The Universal Time Coordinated (UTC) time when the request was received by storage. |
 | TlsVersion | string | The TLS version used in the connection of request. |
 | Type | string | The name of the table |

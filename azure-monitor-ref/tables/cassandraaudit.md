@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # CassandraAudit
@@ -41,10 +41,10 @@ ms.date: 6/1/2023
 | Operation | string | The CQL statement or a textual description of the operation. |
 | OperationNaked | string | The CQL statement or a textual description of the operation, without bound values appended to prepared statements. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | string | Value is either ATTEMPT or FAILED. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
 | User | string | Username of the authenticated user. |

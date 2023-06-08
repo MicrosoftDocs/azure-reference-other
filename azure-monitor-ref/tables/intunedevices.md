@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # IntuneDevices
@@ -63,13 +63,13 @@ ms.date: 6/1/2023
 | Result | string | The result of the operation |
 | SerialNumber | string | The serial number of the device |
 | SkuFamily | string | The stock-keeping unit family of the device |
-| SourceSystem | string | Details of source system of the object being provisioned |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Stats | dynamic | Statistics about the export, including the number of records exported per export |
 | StorageFree | long | The free storage size of the device |
 | StorageTotal | long | The total storage size of the device |
 | SubscriberCarrierNetwork | string | The subscriber carrier network |
 | SupervisedStatusString | string | String describing whether the device is supervised |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the report was generated (UTC) |
 | Type | string | The name of the table |
 | UPN | string | The user principal name |

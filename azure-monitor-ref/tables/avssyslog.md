@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AVSSyslog
@@ -38,8 +38,8 @@ ms.date: 6/1/2023
 | ProcId | string | Identifies a process; specific usage varies from application to application. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Severity | string | The severity of the log. Acceptable values, in ascending level of severity: debug, info, notice, warn, err, crit, alert, emerg. This field may be empty. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time at which the log was ingested. |
 | Type | string | The name of the table |

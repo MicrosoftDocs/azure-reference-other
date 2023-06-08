@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AppPlatformIngressLogs
@@ -47,10 +47,10 @@ ms.date: 6/1/2023
 | RequestLength | string | Request length in bytes (including request line, header, and request body) |
 | RequestTime | real | Time in seconds with millisecond resolution elapsed since the first bytes were read from the client |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | string | Response status |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) when the log is collected by Azure Spring Cloud |
 | TimeLocal | string | Local time in the common log format |
 | Type | string | The name of the table |
