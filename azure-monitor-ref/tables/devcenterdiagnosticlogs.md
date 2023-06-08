@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DevCenterDiagnosticLogs
@@ -39,9 +39,9 @@ ms.date: 6/1/2023
 | OperationResult | string | Displays whether operation was successful or unsuccessful. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResponseCode | string | HTTP status code of the completed operation. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetResourceId | string | Dataplane ID of the affected resource. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time (UTC) when the log was created. |
 | Type | string | The name of the table |
