@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # UserAccessAnalytics
@@ -40,11 +40,11 @@ ms.date: 6/1/2023
 | SourceEntityId | string | Unique identifier of entity which has access to the target entity |
 | SourceEntityName | string | Display name of entity which has access to the target entity |
 | SourceEntityType | string | Type of entity which has access to the target entity |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetEntityId | string | Unique identifier of the entity which the source entity can access |
 | TargetEntityName | string | Display name of the entity which the source entity can access |
 | TargetEntityType | string | Type of the entity which the source entity can access |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp when the access analytics is calculated |
 | Type | string | The name of the table |
