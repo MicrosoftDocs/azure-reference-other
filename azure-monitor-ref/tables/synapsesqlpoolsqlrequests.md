@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # SynapseSqlPoolSqlRequests
@@ -44,12 +44,12 @@ ms.date: 6/1/2023
 | ResourceGroup | string | The azure resourceGroup of the SQL DW. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RowCount | int | The row count of the SQL requests. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SpId | int | The sp id of the SQL requests. |
 | StartTime | datetime | The startTime (UTC) of the SQL requests. |
 | Status | string | The Status of the SQL requests. |
 | StepIndex | int | The step index of the SQL requests. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
