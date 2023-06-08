@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AuditLogs
@@ -58,7 +58,7 @@ ms.date: 6/1/2023
 | ResultReason | string | Describes cause of failure or timeout results. |
 | ResultSignature | string | Property is not used and can be ignored. |
 | ResultType | string | Result of the operation. Possible values are Success and Failure. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | TargetResources | dynamic | Indicates information on which resource was changed due to the activity. Target Resource Type can be User Device Directory App Role Group Policy or Other. |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
