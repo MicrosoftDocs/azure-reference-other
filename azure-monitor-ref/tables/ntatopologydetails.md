@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # NTATopologyDetails
@@ -111,7 +111,7 @@ ms.date: 6/1/2023
 | SkuDetail | string | "The SKU of express route circuit. Express route circuit SKU detail semicolon seperated "Family;Name;Tier"". |
 | SourceAddressPrefix | string | Source address prefix associated with network security group rule. |
 | SourcePortRange | string | Source port range associated with network security group rule. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | State | string | The peering state of express route circuit peering. |
 | Status | string | Status of the ingestion. Possible values can be Completed/Partial/Failed. |
 | Subnet1 | string | Subnet associated with the discovered subnetwork connection. |
@@ -124,7 +124,7 @@ ms.date: 6/1/2023
 | SubscriptionName | string | Subscription name of the discovered resource. |
 | SubType | string | Subtype of the ingestion. Values can be Topology and StatusMessage. |
 | Tags | string | Tags associated with the discovered resource. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time when the data gets ingested into the log analytics workspace. |
 | TimeProcessed | datetime | Time(in UTC) at which the traffic analytics discovered the topology resource. |
 | TopologyVersion | string | Topology version. |
