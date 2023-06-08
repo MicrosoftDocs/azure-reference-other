@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ASimAuditEventLogs
@@ -94,7 +94,7 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RuleName | string | The name or ID of the rule associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SrcDescription | string | A descriptive text associated with the source device. |
 | SrcDeviceType | string | The type of the source device. |
 | SrcDomain | string | The domain of the source device. |
@@ -139,7 +139,7 @@ ms.date: 6/1/2023
 | TargetPortNumber | int | The Target IP port from which the connection originated. |
 | TargetRiskLevel | int | The risk level associated with the target. |
 | TargetUrl | string | A URL associated with the target application. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatCategory | string | The category of the threat or malware identified in audit activity. |
 | ThreatConfidence | int | The confidence level of the threat identified, normalized to a value between 0 and a 100. |
 | ThreatField | string | The field for which a threat was identified. |
