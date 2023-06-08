@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AWSVPCFlow
@@ -47,14 +47,14 @@ ms.date: 6/1/2023
 | PktSrcAwsService | string | The name of the subset of IP address ranges for the PktSrcAddr field, if the source IP address is for an AWS service. |
 | Protocol | int | The IANA protocol number of the traffic. |
 | Region | string | The Region that contains the network interface for which traffic is recorded. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SrcAddr | string | The source address for incoming traffic. |
 | SrcPort | int | The source port of the traffic. |
 | SublocationId | string | The ID of the sublocation that contains the network interface for which traffic is recorded. |
 | SublocationType | string | The type of sublocation that is returned in the sublocationId field. |
 | SubnetId | string | The ID of the subnet. |
 | TcpFlags | int | The bitmask value for the following TCP flags. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated. This value will be the same as 'start' input field or the data arrival time to Azure Monitor in case the 'start' input field is empty or missing. |
 | TrafficPath | string | The path that egress traffic takes to the destination. |
 | TrafficType | string | The type of traffic. The possible values are: IPv4, IPv6, and EFA. For more information search for 'Elastic Fabric Adapter (EFA)'. |
