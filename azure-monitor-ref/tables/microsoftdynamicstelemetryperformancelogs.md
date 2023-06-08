@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # MicrosoftDynamicsTelemetryPerformanceLogs
@@ -63,12 +63,12 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Role | string | Type of the machine (AOS/BI) emitting the events |
 | RoleInstance | string | Name of the machine emitting the events |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SqlCpu | real | SqlCpu Utilization |
 | SqlSpid | int | Process id for the SQL statement (SqlSpid) |
 | SqlStatement | string | SQL query statement |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of the log. |
 | TransactionDurationSeconds | real | Transaction duration in seconds for Aos Large Active Transactions |
 | Type | string | The name of the table |
