@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AppRequests
@@ -61,11 +61,11 @@ ms.date: 6/1/2023
 | SDKVersion | string | Version of the SDK used by the application to generate this telemetry item. |
 | SessionId | string | Application-defined session ID. |
 | Source | string | Friendly name of the request source, when known. Source is based on the metadata supplied by the caller. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Success | bool | Indicates whether the application handled the request successfully. |
 | SyntheticSource | string | Synthetic source of the operation. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when request processing started. |
 | Type | string | The name of the table |
 | Url | string | URL of the request. |
