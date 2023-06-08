@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # WorkloadDiagnosticLogs
@@ -33,9 +33,9 @@ ms.date: 6/1/2023
 | Computer | string | Name of the Computer generating the log. |
 | _IsBillable | string |  |
 | Message | string | The message of the log entry. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | string | The status of the record. Example: Error, Warning, etc. |
 | Tags | dynamic | Dimensions or other metatata about the record. For example may contain the Monitoring profile ID the log entry is about. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp of when the log was generated. |
 | Type | string | The name of the table |
