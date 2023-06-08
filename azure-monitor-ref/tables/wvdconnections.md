@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # WVDConnections
@@ -55,10 +55,10 @@ ms.date: 6/1/2023
 | SessionHostPoolType | string | The type of session host pool - either SharedDesktop or PersonalDesktop. |
 | SessionHostSessionId | string | The Session Id of WVD RDP Stack running on the machine where the user connection was orchestrated. |
 | SessionHostSxSStackVersion | string | The version of the WVD RDP Stack running on the machine where the user connection was orchestrated. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | State | string | The state of the connection. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of the event. |
 | Type | string | The name of the table |
 | UdpUse | string | Indicates whether WVD RDP Stack uses UDP protocol on current user connection. |
