@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ADXCommand
@@ -42,11 +42,11 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceUtilization | dynamic | Command resource utilization |
 | RootActivityId | string | The root activity id |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartedOn | datetime | Time (UTC) at which this command started |
 | State | string | The State the command ended with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | Text | string | The text of the invoked command |
 | TimeGenerated | datetime | The time (UTC) at which this event was generated |
 | TotalCPU | string | Total CPU duration |
