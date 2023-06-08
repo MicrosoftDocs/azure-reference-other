@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # SQLSecurityAuditEvents
@@ -71,7 +71,7 @@ ms.date: 6/1/2023
 | SessionContext | string | The Session context key value content. provided as an XML. |
 | SessionId | int | ID of the session on which the event occurred. |
 | SessionServerPrincipalName | string | Server principal for session. Is nullable. Returns the identity of the original login which was connected to the instance of SQL Server in case there were explicit or implicit context switches. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Statement | string | TSQL statement if it exists. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Succeeded | bool | Indicates whether the action that triggered the event succeeded. Is not nullable. For all events other than login events, this only reports whether the permission check succeeded or failed, not the operation. |
@@ -80,7 +80,7 @@ ms.date: 6/1/2023
 | TargetServerPrincipalId | int | Server principal that the GRANT/DENY/REVOKE operation is performed on. |
 | TargetServerPrincipalName | string | Target login of action. |
 | TargetServerPrincipalSid | string | SID of target login. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | TransactionId | long | Unique identifier to identify multiple audit events in one transaction. |
 | Type | string | The name of the table |
