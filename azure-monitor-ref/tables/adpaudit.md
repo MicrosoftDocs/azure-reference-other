@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ADPAudit
@@ -41,9 +41,9 @@ ms.date: 6/1/2023
 | Properties | dynamic | Additional properties related to the audit event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultType | string | The result of the audit operation. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log record was generated. |
 | TraceContext | dynamic | W3C Trace Context information used for event correlation. |
 | Type | string | The name of the table |
