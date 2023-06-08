@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # SynapseSqlPoolExecRequests
@@ -54,12 +54,12 @@ ms.date: 6/1/2023
 | RootQueryId | string | The rootQueryId of the execution requests. |
 | ScopeDepth | int | The scope depth of the execution requests. |
 | SessionId | string | The Session ID of the SQL pool instance. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartTime | datetime | The startTime (UTC) of the execution requests. |
 | StatementType | string | The statement type of the execution requests. |
 | Status | string | The status of the execution requests. |
 | SubmitTime | datetime | The submitTime (UTC) of the execution requests. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
