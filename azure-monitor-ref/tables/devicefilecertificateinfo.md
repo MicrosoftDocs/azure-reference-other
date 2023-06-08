@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DeviceFileCertificateInfo
@@ -47,7 +47,7 @@ ms.date: 6/1/2023
 | SignatureType | string | Indicates whether signature information was read as embedded content in the file itself or read from an external catalog file. |
 | Signer | string | Information about the signer of the file. |
 | SignerHash | string | Unique hash value identifying the signer. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated. |
 | Type | string | The name of the table |
