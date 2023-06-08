@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # MCCEventLogs
@@ -40,8 +40,8 @@ ms.date: 6/1/2023
 | Misses | int | The number of times data is not found in the cache and had to download from CDN. |
 | MissMbps | real | Data volume (MB) per second that Microsoft Connected Cache had to download from CDN to see the cache. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (UTC) when the log was created. |
 | Type | string | The name of the table |
