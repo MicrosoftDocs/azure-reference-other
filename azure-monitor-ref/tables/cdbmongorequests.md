@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # CDBMongoRequests
@@ -52,9 +52,9 @@ ms.date: 6/1/2023
 | ResponseLength | real | The payload size (in bytes) of the server response. |
 | RetriedDueToRateLimiting | bool | Boolean flag indicating if this request was retried server side due to throttles. |
 | RetryCount | int | The number of server side retries executed for this request. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) of the Mongo API data plane request. |
 | Type | string | The name of the table |
 | UserAgent | string | The user agent suffix associated with the client issuing the request. |
