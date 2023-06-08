@@ -386,3 +386,5 @@
     href: tables/azmsoperationallogs.md
   - name: AZMSRunTimeAuditLogs
     href: tables/azmsruntimeauditlogs.md
+  - name: AZMSVnetConnectionEvents
+    href: tables/azmsvnetconnectionevents.md
