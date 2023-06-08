@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ResourceManagementPublicAccessLogs
@@ -41,8 +41,8 @@ ms.date: 6/1/2023
 | ProviderName | string | The resource provider name associated with the log record. |
 | ResultSignature | int | Status code of the operation. It covers success and failure. |
 | ResultType | string | Status of the operation. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log entry was generated. |
 | Type | string | The name of the table |
 | Uri | string | The resource URI for the operation. |
