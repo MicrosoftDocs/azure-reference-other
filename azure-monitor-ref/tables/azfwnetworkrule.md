@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AZFWNetworkRule
@@ -44,8 +44,8 @@ ms.date: 6/1/2023
 | RuleCollectionGroup | string | Name of the rule collection group in which the triggered rule resides. |
 | SourceIp | string | Packet's source IP address. |
 | SourcePort | int | Packet's source port. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (UTC) when the data plane log was created. |
 | Type | string | The name of the table |
