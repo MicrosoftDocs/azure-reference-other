@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AWSGuardDuty
@@ -40,8 +40,8 @@ ms.date: 6/1/2023
 | SchemaVersion | string | The Guard Duty finding version. |
 | ServiceDetails | dynamic | Gives details on the AWS service that was related to the finding, including Action, Actor/Target, Evidence, Anomalous behavior and Additional information. |
 | Severity | int | A finding's assigned severity level of either High, Medium, or Low. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeCreated | datetime | The time and date when this finding was first created. If this value differs from Updated at (TimeGenerated), it indicates that the activity has occurred multiple times and is an ongoing issue. |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated, The last time this finding was updated with new activity matching the pattern that prompted GuardDuty to generate this finding. |
 | Title | string | Summary of the primary purpose of the threat or attack related to the finding. |
