@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # LogicAppWorkflowRuntime
@@ -45,12 +45,12 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RetryHistory | string | The retry history of the workflow action. |
 | RunId | string | The unique ID of the workflow run. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartTime | datetime | The start time (UTC) of the operation. |
 | Status | string | The status of the operation, e.g. Succeeded, Failed, Skipped, Ignored. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Tags | string | The custom tags associated with the workflow. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | TrackedProperties | string | The custom tracked properties. |
 | TriggerName | string | The name of the workflow trigger. |
