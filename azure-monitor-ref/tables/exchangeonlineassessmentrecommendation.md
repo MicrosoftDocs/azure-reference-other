@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ExchangeOnlineAssessmentRecommendation
@@ -47,7 +47,7 @@ ms.date: 6/1/2023
 | RecommendationId | string | ID of the recommendation generated |
 | RecommendationResult | string | Result of the recommendation generated |
 | RecommendationWeight | real | Weight of recommendation |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Technology | string |  |
 | TenantName | string | Name of the Tenant |
 | TimeGenerated | datetime | Date and time the record was created. |
