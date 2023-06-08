@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DeviceTvmSoftwareVulnerabilitiesKB
@@ -35,8 +35,8 @@ ms.date: 6/1/2023
 | IsExploitAvailable | bool | Indicates whether exploit code for the vulnerability is publicly available. |
 | LastModifiedTime | datetime | Date and time the item or related metadata was last modified. |
 | PublishedDate | datetime | Date vulnerability was disclosed to the public. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the record was generated. |
 | Timestamp | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |
