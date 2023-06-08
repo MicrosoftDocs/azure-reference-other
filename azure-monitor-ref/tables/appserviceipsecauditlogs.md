@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AppServiceIPSecAuditLogs
@@ -32,9 +32,9 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Result | string | The result whether the access is Allowed or Denied |
 | ServiceEndpoint | string | This indicates whether the access is via Virtual Network Service Endpoint communication |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time of the Http Request |
 | Type | string | The name of the table |
 | XAzureFDID | string | X-Azure-FDID header (Azure Frontdoor Id) of the HTTP request |
