@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # SynapseDXCommand
@@ -44,11 +44,11 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceUtilization | dynamic | Resurce consumption for the exuected command |
 | RootActivityId | string | The root activity ID |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StartedOn | datetime | The time (UTC) when this command started |
 | State | string | The state the command ended with, like 'Completed' |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | Text | string | Text of the invoked command |
 | TimeGenerated | datetime | The time (UTC) when this event was generated |
 | TotalCPU | string | Total CPU runtime across cluster nodes |
