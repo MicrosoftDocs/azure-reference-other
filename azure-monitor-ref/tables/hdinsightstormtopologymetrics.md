@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # HDInsightStormTopologyMetrics
@@ -71,13 +71,13 @@ ms.date: 6/1/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SamplingPct | real | Percentage of messages sampled to calculate metrics. |
 | SchedulerDisplayResource | bool | Boolean describing the scheduler display setting. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SpoutId | string | The ID of the spout. |
 | Status | string | The status of the topology. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Tasks | int | The number of tasks running. |
 | TasksTotal | int | The total amount of tasks run. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | TopologyId | string | The ID of the topology. |
 | TopologyName | string | Name of the topology. |
