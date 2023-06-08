@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # WVDConnectionGraphicsDataPreview
@@ -44,8 +44,8 @@ ms.date: 6/1/2023
 | RenderingTimeOnClientInMs | int | The rendering time (milliseconds) of the frame with highest E2E delay in the last evaluated connection time interval |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ServerSkippedFramesPercentage | int | The percentage of frames dropped because server is busy in the second with the highest dropped frames in the last evaluated connection time interval |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) when the QoE event was generated on the VM |
 | Type | string | The name of the table |
