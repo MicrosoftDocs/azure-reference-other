@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # LAQueryLogs
@@ -51,7 +51,7 @@ ms.date: 6/1/2023
 | ResponseDurationMs | real | The duration (in ms) that the query took to execute. |
 | ResponseRowCount | int | The number of rows that were returned. |
 | ScannedGB | real | For billable queries, like Basic logs queries, indicates the total GB of data scanned in the query. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | StatsCPUTimeMs | real | The CPU (in ms) used in the execution of this query. |
 | StatsDataProcessedEnd | datetime | The end time (UTC) of the time range across which the data processed. |
 | StatsDataProcessedKB | real | The total KB of data that was processed as part of the query. |
@@ -59,7 +59,7 @@ ms.date: 6/1/2023
 | StatsRegionCount | int | The number of regions that the workspaces accessed are spread across. |
 | StatsWorkspaceCount | int | The number of workspaces that the query accessed, either explicitly or otherwise. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) at which the query was submitted. |
 | Type | string | The name of the table |
 | WorkspaceRegion | string | The region of the queried workspace. |
