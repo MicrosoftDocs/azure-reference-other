@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # WVDAutoscaleEvaluationPooled
@@ -49,9 +49,9 @@ ms.date: 6/1/2023
 | ScalingReasonMessage | string | The actions Autoscale decided to perform and why it took those actions. |
 | SessionCount | int | Number of user sessions, only the user sessions from session hosts which considered active by Autoscale are included. |
 | SessionOccupancyPercent | real | Percent of session host capacity occupied by user sessions. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) this event was generated. |
 | TotalSessionHostCount | int | Number of session hosts in the host pool. |
 | Type | string | The name of the table |
