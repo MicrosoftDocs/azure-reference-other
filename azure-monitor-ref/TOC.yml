@@ -800,3 +800,5 @@
     href: tables/powerplatformconnectoractivity.md
   - name: PowerPlatformDlpActivity
     href: tables/powerplatformdlpactivity.md
+  - name: ProjectActivity
+    href: tables/projectactivity.md
