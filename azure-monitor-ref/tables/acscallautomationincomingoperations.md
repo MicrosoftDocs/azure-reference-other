@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # ACSCallAutomationIncomingOperations
@@ -46,10 +46,10 @@ ms.date: 6/1/2023
 | SdkType | string | The SDK type used in the request. |
 | SdkVersion | string | SDK Version. |
 | ServerCallId | string | Server Call Id. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SubOperationName | string | Denotes the operation specific configuration (e.g. Recognize Dtmf, Play File), if available. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
 | URI | string | The URI of the request. |
