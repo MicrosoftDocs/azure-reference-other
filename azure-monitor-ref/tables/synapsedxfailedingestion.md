@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # SynapseDXFailedIngestion
@@ -45,9 +45,9 @@ ms.date: 6/1/2023
 | ResultType | string | Final state of this data ingestion operation like 'Failed' |
 | RootActivityId | string | The ingestion's activity ID Used for debugging issues |
 | ShouldRetry | bool | Indicates if the failure is temporary and the operation should be retried |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Table | string | The name of the target table the data is ingested into |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time (UTC) when this event was generated |
 | Type | string | The name of the table |
