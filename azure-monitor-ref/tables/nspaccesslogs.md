@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # NSPAccessLogs
@@ -61,9 +61,9 @@ ms.date: 6/1/2023
 | SourcePort | string | Port number of inbound connection, when available. |
 | SourceProtocol | string | Application layer protocol and transport layer protocol used for inbound connection in the format {AppProtocol}:{TransportProtocol}. For example: 'HTTPS:TCP'. It be must specified if available. |
 | SourceResourceId | string | Resource ID of source PaaS resource for an inbound connection, when available. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Event generation time. |
 | TrafficType | string | Indicates whether traffic is 'Private', 'Public' or 'Intra-Perimeter'. |
 | Type | string | The name of the table |
