@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # DSMDataClassificationLogs
@@ -35,9 +35,9 @@ ms.date: 6/1/2023
 | Classifications | dynamic | JSON containing the list of classifications that were discovered. |
 | CorrelationId | string | The ID that is used to correlate resource logs with data sensitivity logs. |
 | _IsBillable | string |  |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SourceType | string | Type of resource that was scanned by Azure Purview (Azure Blob, Azure File, etc.). |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time (UTC) when Azure Purview scan of asset occurred. |
 | Type | string | The name of the table |
 | Uri | string | Uniform resource identifier representing the asset that was scanned. |
