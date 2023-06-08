@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # AADUserRiskEvents
@@ -47,8 +47,8 @@ ms.date: 6/1/2023
 | RiskLevel | string | Level of the detected risk. Possible values are: low, medium, high, hidden, none, unknownFutureValue. |
 | RiskState | string | The state of a detected risky user or sign-in. Possible values are: none, confirmedSafe, remediated, dismissed, atRisk, confirmedCompromised, unknownFutureValue. |
 | Source | string | Source of the risk detection. For example, activeDirectory. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC. |
 | TokenIssuerType | string | Indicates the type of token issuer for the detected sign-in risk. Possible values are: AzureAD, ADFederationServices, UnknownFutureValue. |
 | Type | string | The name of the table |
