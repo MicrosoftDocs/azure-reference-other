@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # VMBoundPort
@@ -59,7 +59,7 @@ ms.date: 6/1/2023
 | ResponseTimeMax | long | Measurement of the maximum time between first and last byte received. |
 | ResponseTimeMin | long | Measurement of the minimum time between first and last byte received. |
 | ResponseTimeSum | long | Measurement of the total time between first and last byte received |
-| SourceSystem | string | Value is OpsManager for all records. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
