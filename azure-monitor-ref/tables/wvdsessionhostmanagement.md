@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # WVDSessionHostManagement
@@ -44,9 +44,9 @@ ms.date: 6/1/2023
 | ParentUpdateId | string | When the current host pool update is a retry or a resume of a previous host pool update operation, this represents the previous host pool update correlation ID. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ScheduledTime | string | When the host pool update is scheduled, the scheduled time. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of the event. |
 | Type | string | The name of the table |
 | UpdateMethod | string | The method that is used for the host pool update operation (e.g.: DiskSwap). |
