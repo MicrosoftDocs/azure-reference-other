@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # NetworkAccessTraffic
@@ -51,8 +51,8 @@ ms.date: 6/1/2023
 | SessionId | string | Unique identifier representing the session. |
 | SourceIp | string | The IP address from which the connection or session originated. |
 | SourcePort | int | The IP port from which the connection originated. |
-| SourceSystem | string |  |
-| TenantId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time (UTC) that the event was generated. |
 | TrafficType | string | The type of the target destination traffic. |
 | TransactionId | string | Unique identifier that representing a roundtrip of request response. |
