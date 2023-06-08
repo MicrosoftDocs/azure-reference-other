@@ -974,3 +974,5 @@
     href: tables/workloaddiagnosticlogs.md
   - name: WVDAgentHealthStatus
     href: tables/wvdagenthealthstatus.md
+  - name: WVDAutoscaleEvaluationPooled
+    href: tables/wvdautoscaleevaluationpooled.md
