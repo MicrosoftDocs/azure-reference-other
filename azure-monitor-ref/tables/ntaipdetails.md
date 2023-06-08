@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # NTAIpDetails
@@ -37,9 +37,9 @@ ms.date: 6/1/2023
 | _IsBillable | string |  |
 | Location | string | For Azure Public IP: Azure region of virtual network/network interface/virtual machine to which the IP belongs OR Global for IP 168.63.129.16. For External Public IP and Malicious IP: 2-letter country code where IP is located (ISO 3166-1 alpha-2). |
 | PublicIpDetails | string | For AzurePublic IP: Azure Service owning the IP OR "Microsoft Virtual Public IP" for IP 168.63.129.16 . ExternalPublic/Malicious IP: WhoIS information of the IP. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | SubType | string | Subtype for the flow logs. Use only FlowLog, other values of SubType_s are for internal workings of the product. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | ThreatDescription | string | For Malicious IPs only: Description of the threat posed by the malicious IP. |
 | ThreatType | string | For Malicious IPs only: One of the threats from the list of currently allowed values. |
 | TimeGenerated | datetime | The time when the data gets ingested into the Log Analytics Workspace. |
