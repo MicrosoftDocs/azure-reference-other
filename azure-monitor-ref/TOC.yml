@@ -334,3 +334,5 @@
     href: tables/avssyslog.md
   - name: AWSCloudTrail
     href: tables/awscloudtrail.md
+  - name: AWSCloudWatch
+    href: tables/awscloudwatch.md
