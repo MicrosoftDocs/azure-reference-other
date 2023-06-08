@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # CDBQueryRuntimeStatistics
@@ -40,8 +40,8 @@ ms.date: 6/1/2023
 | PartitionKeyRangeId | string | The physical partition to which this query was issued. |
 | QueryText | string | The query text (obfuscated by default, full query string provided upon request) for the operation. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) when this query operation was executed. |
 | Type | string | The name of the table |
