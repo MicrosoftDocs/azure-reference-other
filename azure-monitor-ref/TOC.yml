@@ -310,3 +310,5 @@
     href: tables/ascdeviceevents.md
   - name: ASimAuditEventLogs
     href: tables/asimauditeventlogs.md
+  - name: ASimAuthenticationEventLogs
+    href: tables/asimauthenticationeventlogs.md
