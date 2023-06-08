@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # VMConnection
@@ -76,7 +76,7 @@ ms.date: 6/1/2023
 | ResponseTimeSum | long | Sum of all response times observed during the reporting time window in milliseconds. If no value the property is blank. |
 | Severity | int | Possible values are 0 - 5 where 5 is the most severe and 0 is not severe at all. Default value is 3. |
 | SourceIp | string | IP address of the source. |
-| SourceSystem | string | Value is OpsManager for all records. |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |
 | TLPLevel | string | Traffic Light Protocol (TLP) Level. Possible values are White Green Amber Red. |
