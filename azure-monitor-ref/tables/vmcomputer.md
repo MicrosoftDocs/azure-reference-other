@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # VMComputer
@@ -84,7 +84,7 @@ ms.date: 6/1/2023
 | OperatingSystemFullName | string | The full name of the operating system |
 | PhysicalMemoryMB | long | The physical memory in MB |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | The source of the data collected (Insights) |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |
 | TimeZone | string | The UTC timezone offset of the server. |
