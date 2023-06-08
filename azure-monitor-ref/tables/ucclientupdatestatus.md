@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/8/2023
 ---
 
 # UCClientUpdateStatus
@@ -44,13 +44,13 @@ ms.date: 6/1/2023
 | OfferReceivedTime | datetime | DateTime when device last reported entering OfferReceived, else empty. |
 | RestartRequiredTime | datetime | DateTime when device first reported entering RebootRequired (or RebootPending), else empty. |
 | SCCMClientId | string | A GUID corresponding to the SCCM Client ID on the device. |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | TargetBuild | string | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
 | TargetBuildNumber | int | Integer of the Major portion of Build. |
 | TargetKBNumber | string | KB Article. |
 | TargetRevisionNumber | int | Integer or the Minor (or Revision) portion of Build. |
 | TargetVersion | string | The target OS Version - eg, 1909. |
-| TenantId | string |  |
+| TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time the snapshot generated this specific record. |
 | Type | string | The name of the table |
 | UpdateCategory | string | The type of content this DeviceUpdateEvent is tracking. |
