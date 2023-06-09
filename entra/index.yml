@@ -34,12 +34,12 @@ productDirectory:
       url: /azure/active-directory/external-identities
     - title: Microsoft Entra Internet Access
       imageSrc: ./media/new-icons/global-secure-access-color.png
-      summary: "Provide secure Internet access to apps and resources on the Internet."
-      url: https://review.learn.microsoft.com/en-us/azure/global-secure-access/?branch=release-preview-ztna
+      summary: "Protect access to all internet, SaaS, and Microsoft 365 apps and resources with an identity-centric Secure Web Gateway."
+      url: https://aka.ms/GlobalSecureAccessDocs
     - title: Microsoft Entra Private Access
       imageSrc: ./media/new-icons/global-secure-access-color.png
-      summary: "Provide access to apps and resources in private networks."
-      url: https://review.learn.microsoft.com/en-us/azure/global-secure-access/?branch=release-preview-ztna
+      summary: "Secure access to all private apps and resources with identity-centric Zero Trust Network Access (ZTNA)."
+      url: https://aka.ms/GlobalSecureAccessDocs
     - title: Microsoft Entra Permissions Management
       imageSrc: ./media/new-icons/permissions-management-color.png
       summary: "One unified model to manage permissions of any identity across any cloud"
@@ -60,9 +60,9 @@ additionalContent:
         - title: "Microsoft Entra"
           summary: "Learn more about Microsoft Entra and how the Entra family of products can help your business."
           url: https://aka.ms/MicrosoftEntra
-        - title: "Azure AD is becoming Microsoft Entra ID"
+        - title: "New name for Azure Active Directory"
           summary: "Learn more about the new name, what the change means, and how it affects you."
-          url: https://aka.ms/EntraAnnouncement
+          url: https://aka.ms/AzureADNewName
         - title: "Video demo"
           summary: "See the new capabilities of Microsoft Entra, including unified identity management that spans beyond your Microsoft estate."
           url: https://youtu.be/9qQiq3wTS2Y
