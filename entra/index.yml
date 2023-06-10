@@ -5,7 +5,7 @@ brand: azure
 
 metadata:
   title: Microsoft Entra documentation
-  description: Learn more about the Microsoft Entra family of multicloud identity and access solutions. Find content to help solve secure access needs across your multifaceted digital landscape, protect access to any app or resource for any user, verify and secure every identity and every access request, discover permissions and govern access, and simplify user experience with intelligent real-time access controls.
+  description: Learn more about the Microsoft Entra family of multicloud identity and network access solutions.
   services: azure
   ms.service: active-directory
   ms.topic: hub-page
@@ -42,15 +42,15 @@ productDirectory:
       url: https://aka.ms/GlobalSecureAccessDocs
     - title: Microsoft Entra Permissions Management
       imageSrc: ./media/new-icons/permissions-management-color.png
-      summary: "One unified model to manage permissions of any identity across any cloud"
+      summary: "One unified model to manage permissions of any identity across any cloud."
       url: /azure/active-directory/cloud-infrastructure-entitlement-management/
     - title: Microsoft Entra Verified ID
       imageSrc: ./media/new-icons/verified-id-color.png
-      summary: "Enable more secure interactions while respecting privacy with an industry-leading global platform"
+      summary: "Enable more secure interactions while respecting privacy with an industry-leading global platform."
       url: /azure/active-directory/verifiable-credentials/
     - title: Microsoft Entra Workload ID
       imageSrc: ./media/new-icons/workload-id-color.png
-      summary: "Secure identities for apps and services and their access to cloud resources"
+      summary: "Secure identities for apps and services and their access to cloud resources."
       url: /azure/active-directory/workload-identities/
           
 additionalContent:
@@ -63,9 +63,9 @@ additionalContent:
         - title: "New name for Azure Active Directory"
           summary: "Learn more about the new name, what the change means, and how it affects you."
           url: https://aka.ms/AzureADNewName
-        - title: "Video demo"
-          summary: "See the new capabilities of Microsoft Entra, including unified identity management that spans beyond your Microsoft estate."
-          url: https://youtu.be/9qQiq3wTS2Y
+        - title: "Introducing Security Service Edge (SSE)"
+          summary: "Read the blog on expanded capabilities for securing access with Microsoft Entra."
+          url: https://aka.ms/EntraMomentSecurityblog
         - title: "Microsoft security documentation"
           summary: "Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps."
           url: /security/
