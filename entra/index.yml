@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 title: Microsoft Entra documentation
-summary: Learn more about the Microsoft Entra family of multicloud identity and access solutions. Find content to help solve secure access needs across your multifaceted digital landscape, protect access to any app or resource for any user, verify and secure every identity and every access request, discover permissions and govern access, and simplify user experience with intelligent real-time access controls.
+summary: Learn more about the Microsoft Entra family of multicloud identity and access solutions.
 brand: azure
 
 metadata:
   title: Microsoft Entra documentation
-  description: Learn more about the Microsoft Entra family of multicloud identity and network access solutions.
+  description: Learn more about the Microsoft Entra family of multicloud identity and network access solutions. Find content to help solve secure access needs across your multifaceted digital landscape, protect access to any app or resource for any user, verify and secure every identity and every access request, discover permissions and govern access, and simplify user experience with intelligent real-time access controls.
   services: azure
   ms.service: active-directory
   ms.topic: hub-page
