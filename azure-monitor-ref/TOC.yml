@@ -252,3 +252,5 @@
     href: tables/apimanagementwebsocketconnectionlogs.md
   - name: AppAvailabilityResults
     href: tables/appavailabilityresults.md
+  - name: AppBrowserTimings
+    href: tables/appbrowsertimings.md
