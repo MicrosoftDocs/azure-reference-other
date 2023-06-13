@@ -346,3 +346,5 @@
     href: tables/azfwapplicationruleaggregation.md
   - name: AZFWDnsQuery
     href: tables/azfwdnsquery.md
+  - name: AZFWFatFlow
+    href: tables/azfwfatflow.md
