@@ -756,3 +756,5 @@
     href: tables/nwconnectionmonitortestresult.md
   - name: OEPAirFlowTask
     href: tables/oepairflowtask.md
+  - name: OEPAuditLogs
+    href: tables/oepauditlogs.md
