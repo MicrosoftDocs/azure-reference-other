@@ -796,3 +796,5 @@
     href: tables/powerbireportusagetenant.md
   - name: PowerBIReportUsageWorkspace
     href: tables/powerbireportusageworkspace.md
+  - name: PowerPlatformConnectorActivity
+    href: tables/powerplatformconnectoractivity.md
