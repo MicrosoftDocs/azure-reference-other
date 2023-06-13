@@ -746,3 +746,5 @@
     href: tables/ntanetanalytics.md
   - name: NTATopologyDetails
     href: tables/ntatopologydetails.md
+  - name: NWConnectionMonitorDestinationListenerResult
+    href: tables/nwconnectionmonitordestinationlistenerresult.md
