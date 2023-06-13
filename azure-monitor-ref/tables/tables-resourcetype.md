@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/13/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -333,6 +333,7 @@ ms.date: 6/1/2023
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [SecurityAlert](securityalert.md)
+- [SecurityEvent](securityevent.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
@@ -625,6 +626,12 @@ ms.date: 6/1/2023
 
 ## Event Hubs
 
+- [AZMSArchiveLogs](azmsarchivelogs.md)
+- [AZMSAutoscaleLogs](azmsautoscalelogs.md)
+- [AZMSCustomerManagedKeyUserLogs](azmscustomermanagedkeyuserlogs.md)
+- [AZMSKafkaCoordinatorLogs](azmskafkacoordinatorlogs.md)
+- [AZMSKafkaUserErrorLogs](azmskafkausererrorlogs.md)
+- [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -933,6 +940,7 @@ ms.date: 6/1/2023
 
 ## Relay
 
+- [AZMSHybridConnectionsEvents](azmshybridconnectionsevents.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
@@ -944,6 +952,10 @@ ms.date: 6/1/2023
 
 ## Service Bus
 
+- [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
+- [AZMSOperationalLogs](azmsoperationallogs.md)
+- [AZMSRunTimeAuditLogs](azmsruntimeauditlogs.md)
+- [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)

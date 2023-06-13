@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/1/2023
+ms.date: 6/13/2023
 ---
 
 # SecurityEvent
@@ -22,6 +22,7 @@ ms.date: 6/1/2023
 - Microsoft Sentinel
 ## Resource types
 
+- Azure Sentinel
 - Virtual machines
 - VMware
 - Azure Stack HCI
@@ -204,7 +205,7 @@ ms.date: 6/1/2023
 | ShareName | string |  |
 | SidHistory | string |  |
 | SourceComputerId | string |  |
-| SourceSystem | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | Status | string |  |
 | StorageAccount | string |  |
 | SubcategoryGuid | string |  |
