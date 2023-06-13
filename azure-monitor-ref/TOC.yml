@@ -858,3 +858,5 @@
     href: tables/storagemovercopylogstransferred.md
   - name: StorageMoverJobRunLogs
     href: tables/storagemoverjobrunlogs.md
+  - name: StorageQueueLogs
+    href: tables/storagequeuelogs.md
