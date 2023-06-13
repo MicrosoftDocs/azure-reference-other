@@ -976,3 +976,5 @@
     href: tables/wvdagenthealthstatus.md
   - name: WVDAutoscaleEvaluationPooled
     href: tables/wvdautoscaleevaluationpooled.md
+  - name: WVDCheckpoints
+    href: tables/wvdcheckpoints.md
