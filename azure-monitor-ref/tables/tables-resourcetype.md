@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/8/2023
+ms.date: 6/13/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -333,6 +333,7 @@ ms.date: 6/8/2023
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [SecurityAlert](securityalert.md)
+- [SecurityEvent](securityevent.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
