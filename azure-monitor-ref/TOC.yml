@@ -374,3 +374,5 @@
     href: tables/azmsarchivelogs.md
   - name: AZMSAutoscaleLogs
     href: tables/azmsautoscalelogs.md
+  - name: AZMSCustomerManagedKeyUserLogs
+    href: tables/azmscustomermanagedkeyuserlogs.md
