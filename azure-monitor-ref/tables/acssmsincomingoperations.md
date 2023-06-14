@@ -34,7 +34,7 @@ ms.date: 6/13/2023
 | CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
-| Country | string | The recipient country. |
+| Country | string | The recipient country/region. |
 | DeliveryAttempts | int | The number of attempts made to deliver this message. |
 | DurationMs | int | The duration of the operation in milliseconds. |
 | IncomingMessageLength | int | The number of characters in the incoming message. |
