@@ -47,7 +47,7 @@ ms.date: 6/13/2023
 | DstGeoCountry | string | The country associated with the destination IP address. |
 | DstGeoLatitude | real | The latitude of the geographical coordinate associated with the destination IP address. |
 | DstGeoLongitude | real | The longitude of the geographical coordinate associated with the destination IP address. |
-| DstGeoRegion | string | The region, or state, within a country associated with the destination IP address. |
+| DstGeoRegion | string | The region, or state, associated with the destination IP address. |
 | DstHostname | string | The destination device hostname, excluding domain information. |
 | DstInterfaceGuid | string | The GUID of the network interface used on the destination device. |
 | DstInterfaceName | string | The network interface used for the connection or session by the destination device. |
@@ -135,7 +135,7 @@ ms.date: 6/13/2023
 | SrcGeoCountry | string | The country associated with the source IP address. |
 | SrcGeoLatitude | real | The latitude of the geographical coordinate associated with the source IP address. |
 | SrcGeoLongitude | real | The longitude of the geographical coordinate associated with the source IP address. |
-| SrcGeoRegion | string | The region within a country associated with the source IP address. |
+| SrcGeoRegion | string | The region associated with the source IP address. |
 | SrcHostname | string | The source device hostname, excluding domain information. If no device name is available, may store the relevant IP address. |
 | SrcInterfaceGuid | string | The GUID of the network interface used on the source device. |
 | SrcInterfaceName | string | The network interface used for the connection or session by the source device. |

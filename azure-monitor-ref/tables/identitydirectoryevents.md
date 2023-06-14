@@ -44,7 +44,7 @@ ms.date: 6/13/2023
 | IPAddress | string | IP address assigned to the endpoint and used during related network communications |
 | _IsBillable | string |  |
 | ISP | string | Internet service provider (ISP) associated with the endpoint IP address |
-| Location | string | City, country, or other geographic location associated with the event |
+| Location | string | City, country/region, or other geographic location associated with the event |
 | Port | string | TCP port used during communication |
 | Protocol | string | Protocol used during the communication |
 | ReportId | string | Unique identifier for the event |

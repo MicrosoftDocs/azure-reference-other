@@ -108,7 +108,7 @@ ms.date: 6/13/2023
 | SrcGeoCountry | string | The country associated with the source IP address. |
 | SrcGeoLatitude | real | The latitude of the geographical coordinate associated with the source IP address. |
 | SrcGeoLongitude | real | The longitude of the geographical coordinate associated with the source IP address. |
-| SrcGeoRegion | string | The region within a country associated with the source IP address. |
+| SrcGeoRegion | string | The region associated with the source IP address. |
 | SrcHostname | string | The source device hostname, excluding domain information. |
 | SrcIpAddr | string | The Source IP address from which the connection or session originated. |
 | SrcOriginalRiskLevel | string | The risk level associaeted with the identified Source as reported by the reporting device. |
@@ -132,7 +132,7 @@ ms.date: 6/13/2023
 | TargetGeoCountry | string | The country associated with the target IP address. |
 | TargetGeoLatitude | real | The latitude of the geographical coordinate associated with the target IP address. |
 | TargetGeoLongitude | real | The longitude of the geographical coordinate associated with the target IP address. |
-| TargetGeoRegion | string | The region within a country associated with the target IP address. |
+| TargetGeoRegion | string | The region associated with the target IP address. |
 | TargetHostname | string | The target device hostname, excluding domain information. |
 | TargetIpAddr | string | The Target IP address from which the connection or session originated. |
 | TargetOriginalRiskLevel | string | The risk level associated with the target, as reported by the reporting device. |
