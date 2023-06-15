@@ -388,3 +388,5 @@
     href: tables/azmsruntimeauditlogs.md
   - name: AZMSVnetConnectionEvents
     href: tables/azmsvnetconnectionevents.md
+  - name: AzureActivity
+    href: tables/azureactivity.md
