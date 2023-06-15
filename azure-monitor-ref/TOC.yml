@@ -372,3 +372,5 @@
     href: tables/azmsapplicationmetriclogs.md
   - name: AZMSArchiveLogs
     href: tables/azmsarchivelogs.md
+  - name: AZMSAutoscaleLogs
+    href: tables/azmsautoscalelogs.md
