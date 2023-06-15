@@ -370,3 +370,5 @@
     href: tables/azkvpolicyevaluationdetailslogs.md
   - name: AZMSApplicationMetricLogs
     href: tables/azmsapplicationmetriclogs.md
+  - name: AZMSArchiveLogs
+    href: tables/azmsarchivelogs.md
