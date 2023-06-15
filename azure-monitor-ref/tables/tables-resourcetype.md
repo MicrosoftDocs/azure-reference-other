@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/13/2023
+ms.date: 6/15/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -208,6 +208,14 @@ ms.date: 6/13/2023
 - [FailedIngestion](failedingestion.md)
 - [SucceededIngestion](succeededingestion.md)
 
+## Azure Data Manager for Energy
+
+- [OEPAirFlowTask](oepairflowtask.md)
+- [OEPAuditLogs](oepauditlogs.md)
+- [OEPDataplaneLogs](oepdataplanelogs.md)
+- [OEPElasticOperator](oepelasticoperator.md)
+- [OEPElasticsearch](oepelasticsearch.md)
+
 ## Azure Data Transfer
 
 - [DataTransferOperations](datatransferoperations.md)
@@ -331,11 +339,11 @@ ms.date: 6/13/2023
 ## Azure Sentinel
 
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
-- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [SecurityAlert](securityalert.md)
 - [SecurityEvent](securityevent.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
+- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
@@ -357,6 +365,8 @@ ms.date: 6/13/2023
 
 ## Azure Stack HCI
 
+- [Event](event.md)
+- [Perf](perf.md)
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
 - [ADReplicationResult](adreplicationresult.md)
 - [AzureActivity](azureactivity.md)
@@ -389,8 +399,6 @@ ms.date: 6/13/2023
 - [W3CIISLog](w3ciislog.md)
 - [WindowsFirewall](windowsfirewall.md)
 - [WireData](wiredata.md)
-- [Event](event.md)
-- [Perf](perf.md)
 
 ## Azure Storage Mover
 
@@ -774,9 +782,6 @@ ms.date: 6/13/2023
 
 ## Machine Learning
 
-- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
-- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
-- [AzureActivity](azureactivity.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -800,6 +805,9 @@ ms.date: 6/13/2023
 - [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
+- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
+- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
+- [AzureActivity](azureactivity.md)
 
 ## Media Services
 
@@ -855,14 +863,6 @@ ms.date: 6/13/2023
 ## Microsoft.Dynamics.FraudProtection/purchase
 
 
-## Microsoft.OpenEnergyPlatform/energyServices
-
-- [OEPAirFlowTask](oepairflowtask.md)
-- [OEPAuditLogs](oepauditlogs.md)
-- [OEPDataplaneLogs](oepdataplanelogs.md)
-- [OEPElasticOperator](oepelasticoperator.md)
-- [OEPElasticsearch](oepelasticsearch.md)
-
 ## Microsoft.OpenLogisticsPlatform/Workspaces
 
 - [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)
@@ -903,11 +903,11 @@ ms.date: 6/13/2023
 
 ## Power BI Datasets
 
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 
