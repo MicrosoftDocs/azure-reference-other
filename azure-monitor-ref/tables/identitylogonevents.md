@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/13/2023
+ms.date: 6/15/2023
 ---
 
 # IdentityLogonEvents
@@ -46,7 +46,7 @@ ms.date: 6/13/2023
 | IPAddress | string | IP address assigned to the endpoint and used during related network communications |
 | _IsBillable | string |  |
 | ISP | string | Internet service provider (ISP) associated with the endpoint IP address |
-| Location | string | City, country/region, or other geographic location associated with the event |
+| Location | string | City, country, or other geographic location associated with the event |
 | LogonType | string | Type of logon session |
 | OSPlatform | string | Platform of the operating system running on the machine |
 | Port | string | TCP port used during communication |

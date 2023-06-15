@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/13/2023
+ms.date: 6/15/2023
 ---
 
 # ASimDnsActivityLogs
@@ -51,7 +51,7 @@ ms.date: 6/13/2023
 | DnsResponseIpCountry | string | The country associated with the response IP address. |
 | DnsResponseIpLatitude | real | The Latitude of the geographical coordinate associated with the response IP address. |
 | DnsResponseIpLongitude | real | The longitude of the geographical coordinate associated with the response IP address. |
-| DnsResponseIpRegion | string | The region, or state, associated with the source IP address. |
+| DnsResponseIpRegion | string | The region, or state, within a country, associated with the source IP address. |
 | DnsResponseName | string | The content of the response, as included in the record. The structure of the DNS response data may vary between different reporting devices. |
 | DnsSessionId | string | The DNS session identifier as reported by the reporting device. |
 | Dst | string | A unique identifier of the server that received the DNS request. |
@@ -68,7 +68,7 @@ ms.date: 6/13/2023
 | DstGeoCountry | string | The country associated with the destination IP address. |
 | DstGeoLatitude | real | The latitude of the geographical coordinate associated with the destination IP address. |
 | DstGeoLongitude | real | The longitude of the geographical coordinate associated with the destination IP address. |
-| DstGeoRegion | string | The region, or state, associated with the destination IP address. |
+| DstGeoRegion | string | The region, or state, within a country, associated with the destination IP address. |
 | DstHostname | string | The destination device hostname, excluding domain information. |
 | DstIpAddr | string | The IP address of the server receiving the DNS request. For a regular DNS request, this value would typically be the reporting device, and in most cases set to 127.0.0.1. |
 | DstOriginalRiskLevel | string | The risk level associated with the destination device as reported by the reporting device. |
@@ -131,7 +131,7 @@ ms.date: 6/13/2023
 | SrcGeoCountry | string | The country associated with the source IP address. |
 | SrcGeoLatitude | real | The latitude of the geographical coordinate associated with the source IP address. |
 | SrcGeoLongitude | real | The longitude of the geographical coordinate associated with the source IP address. |
-| SrcGeoRegion | string | The region, or state, associated with the source IP address. |
+| SrcGeoRegion | string | The region, or state, within a country, associated with the source IP address. |
 | SrcHostname | string | The source device hostname, excluding domain information. |
 | SrcIpAddr | string | The IP address of the client sending the DNS request. For a recursive DNS request, this value would typically be the reporting device, and in most cases, set to 127.0.0.1. |
 | SrcOriginalRiskLevel | string | The risk level associated with the source device as reported by the reporting device. |

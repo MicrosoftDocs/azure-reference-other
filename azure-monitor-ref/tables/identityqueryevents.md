@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/13/2023
+ms.date: 6/15/2023
 ---
 
 # IdentityQueryEvents
@@ -43,7 +43,7 @@ ms.date: 6/13/2023
 | DeviceName | string | Fully qualified domain name (FQDN) of the device |
 | IPAddress | string | IP address assigned to the endpoint and used during related network communications |
 | _IsBillable | string |  |
-| Location | string | City, country/region, or other geographic location associated with the event |
+| Location | string | City, country, or other geographic location associated with the event |
 | Port | string | TCP port used during communication |
 | Protocol | string | Protocol used during the communication |
 | Query | string | String used to run the query |
