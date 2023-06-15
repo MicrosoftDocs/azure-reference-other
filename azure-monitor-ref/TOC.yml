@@ -188,3 +188,5 @@
     href: tables/ahdsdicomdiagnosticlogs.md
   - name: AHDSMedTechDiagnosticLogs
     href: tables/ahdsmedtechdiagnosticlogs.md
+  - name: AirflowDagProcessingLogs
+    href: tables/airflowdagprocessinglogs.md
