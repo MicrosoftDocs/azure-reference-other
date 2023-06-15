@@ -816,3 +816,5 @@
     href: tables/securescorecontrols.md
   - name: SecureScores
     href: tables/securescores.md
+  - name: SecurityBaselineSummary
+    href: tables/securitybaselinesummary.md
