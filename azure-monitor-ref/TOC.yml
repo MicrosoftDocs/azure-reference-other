@@ -378,3 +378,5 @@
     href: tables/azmscustomermanagedkeyuserlogs.md
   - name: AZMSHybridConnectionsEvents
     href: tables/azmshybridconnectionsevents.md
+  - name: AZMSKafkaCoordinatorLogs
+    href: tables/azmskafkacoordinatorlogs.md
