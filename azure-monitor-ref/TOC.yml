@@ -700,3 +700,5 @@
     href: tables/kubeservices.md
   - name: LAQueryLogs
     href: tables/laquerylogs.md
+  - name: LogicAppWorkflowRuntime
+    href: tables/logicappworkflowruntime.md
