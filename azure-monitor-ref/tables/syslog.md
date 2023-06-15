@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/13/2023
+ms.date: 6/15/2023
 ---
 
 # Syslog
@@ -39,6 +39,7 @@ ms.date: 6/13/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | _BilledSize | real |  |
+| CollectorHostName | string | Name of the remote device that generated the message. |
 | Computer | string | Computer that the event was collected from. |
 | EventTime | datetime | Date and time that the event was generated. |
 | Facility | string | The part of the system that generated the message. |
