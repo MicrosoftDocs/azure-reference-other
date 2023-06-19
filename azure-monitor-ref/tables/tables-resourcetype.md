@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/15/2023
+ms.date: 6/20/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -180,6 +180,7 @@ ms.date: 6/15/2023
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
 
 ## Azure Cosmos DB
 
@@ -934,6 +935,8 @@ ms.date: 6/15/2023
 - [AddonAzureBackupPolicy](addonazurebackuppolicy.md)
 - [AddonAzureBackupProtectedInstance](addonazurebackupprotectedinstance.md)
 - [AddonAzureBackupStorage](addonazurebackupstorage.md)
+- [ASRJobs](asrjobs.md)
+- [ASRReplicatedItems](asrreplicateditems.md)
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [CoreAzureBackup](coreazurebackup.md)

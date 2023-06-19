@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/15/2023
+ms.date: 6/20/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -75,6 +75,8 @@ ms.date: 6/15/2023
 - [AppEnvSpringAppConsoleLogs](appenvspringappconsolelogs.md)
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
+- [ASRJobs](asrjobs.md)
+- [ASRReplicatedItems](asrreplicateditems.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AZKVAuditLogs](azkvauditlogs.md)
 - [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
@@ -101,6 +103,7 @@ ms.date: 6/15/2023
 - [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
 - [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
 - [ChaosStudioExperimentEventLogs](chaosstudioexperimenteventlogs.md)
+- [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
@@ -282,6 +285,7 @@ ms.date: 6/15/2023
 - [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
 - [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
 - [ChaosStudioExperimentEventLogs](chaosstudioexperimenteventlogs.md)
+- [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CIEventsOperational](cieventsoperational.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
@@ -529,6 +533,7 @@ ms.date: 6/15/2023
 - [ConfigurationChange](configurationchange.md)
 - [ConfigurationData](configurationdata.md)
 - [CoreAzureBackup](coreazurebackup.md)
+- [EnrichedMicrosoft365AuditLogs](enrichedmicrosoft365auditlogs.md)
 - [Heartbeat](heartbeat.md)
 - [IntuneAuditLogs](intuneauditlogs.md)
 - [IntuneDeviceComplianceOrg](intunedevicecomplianceorg.md)
@@ -545,6 +550,7 @@ ms.date: 6/15/2023
 - [AzureDiagnostics](azurediagnostics.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
+- [EnrichedMicrosoft365AuditLogs](enrichedmicrosoft365auditlogs.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkMonitoring](networkmonitoring.md)
 - [NSPAccessLogs](nspaccesslogs.md)
@@ -628,6 +634,7 @@ ms.date: 6/15/2023
 - [EmailEvents](emailevents.md)
 - [EmailPostDeliveryEvents](emailpostdeliveryevents.md)
 - [EmailUrlInfo](emailurlinfo.md)
+- [EnrichedMicrosoft365AuditLogs](enrichedmicrosoft365auditlogs.md)
 - [GCPAuditLogs](gcpauditlogs.md)
 - [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
 - [HuntingBookmark](huntingbookmark.md)
