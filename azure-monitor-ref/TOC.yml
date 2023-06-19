@@ -30,3 +30,5 @@
     href: tables/aaddomainserviceslogonlogoff.md
   - name: AADDomainServicesPolicyChange
     href: tables/aaddomainservicespolicychange.md
+  - name: AADDomainServicesPrivilegeUse
+    href: tables/aaddomainservicesprivilegeuse.md
