@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/13/2023
+ms.date: 6/20/2023
 ---
 
 # DeviceImageLoadEvents
@@ -33,6 +33,7 @@ ms.date: 6/13/2023
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | FileName | string | Domain of the account. |
+| FileSize | long | Size of the file in bytes. |
 | FolderPath | string | Domain of the account. |
 | InitiatingProcessAccountDomain | string | Domain of the account that ran the process responsible for the event. |
 | InitiatingProcessAccountName | string | User name of the account that ran the process responsible for the event. |
