@@ -318,6 +318,10 @@
     href: tables/asimnetworksessionlogs.md
   - name: ASimWebSessionLogs
     href: tables/asimwebsessionlogs.md
+  - name: ASRJobs
+    href: tables/asrjobs.md
+  - name: ASRReplicatedItems
+    href: tables/asrreplicateditems.md
   - name: ATCExpressRouteCircuitIpfix
     href: tables/atcexpressroutecircuitipfix.md
   - name: AuditLogs
@@ -430,6 +434,8 @@
     href: tables/cdbqueryruntimestatistics.md
   - name: ChaosStudioExperimentEventLogs
     href: tables/chaosstudioexperimenteventlogs.md
+  - name: CHSMManagementAuditLogs
+    href: tables/chsmmanagementauditlogs.md
   - name: CIEventsAudit
     href: tables/cieventsaudit.md
   - name: CIEventsOperational
@@ -586,6 +592,8 @@
     href: tables/emailpostdeliveryevents.md
   - name: EmailUrlInfo
     href: tables/emailurlinfo.md
+  - name: EnrichedMicrosoft365AuditLogs
+    href: tables/enrichedmicrosoft365auditlogs.md
   - name: Event
     href: tables/event.md
   - name: ExchangeAssessmentRecommendation
