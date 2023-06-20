@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/13/2023
+ms.date: 6/20/2023
 ---
 
 # OEPAirFlowTask
@@ -21,7 +21,7 @@ ms.date: 6/13/2023
 - LogManagement
 ## Resource types
 
-- Microsoft.OpenEnergyPlatform/energyServices
+- Azure Data Manager for Energy
 
 
 

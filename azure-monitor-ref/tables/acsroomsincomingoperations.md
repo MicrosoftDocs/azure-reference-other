@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/13/2023
+ms.date: 6/20/2023
 ---
 
 # ACSRoomsIncomingOperations
@@ -30,16 +30,18 @@ ms.date: 6/13/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
+| AddedRoomParticipantsCount | int | The count of participants added to a room. |
 | _BilledSize | real |  |
-| CorrelationId | string | The ID of the room, which is a distinguished identifier for an existing room. |
+| CorrelationId | string | The unique ID of the request. |
 | _IsBillable | string |  |
 | Level | string | The severity level of the operation. |
-| OperationName | string | The operation associated with log record. e.g., CreateRoom, PatchRoom, GetRoom, DeleteRoom, GetParticipants, AddParticipants, UpdateParticipants, or RemoveParticipants |
+| OperationName | string | The operation associated with log record. e.g., CreateRoom, PatchRoom, GetRoom, ListRooms, DeleteRoom, GetParticipants, AddParticipants, UpdateParticipants, or RemoveParticipants. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
+| RemovedRoomParticipantsCount | int | The count of participants removed in a room. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultSignature | string | The sub status of the operation. If this operation corresponds to a REST API call, this field is the HTTP status code of the corresponding REST call. |
 | ResultType | string | The status of the operation. |
-| RoomJoinPolicy | string | The policy of a room indicating invite only or CommunicationServiceUsers. |
+| RoomId | string | The ID of the room. |
 | RoomLifespan | int | The Room lifespan in minutes. |
 | RoomParticipantsAttendee | int | The participants count with attendee role. |
 | RoomParticipantsConsumer | int | The participants count with consumer role. |
@@ -50,3 +52,4 @@ ms.date: 6/13/2023
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
+| UpsertedRoomParticipantsCount | int | The count of participants upserted in a room. |
