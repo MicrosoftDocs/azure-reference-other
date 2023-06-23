@@ -106,3 +106,5 @@
     href: tables/adfairflowweblogs.md
   - name: ADFAirflowWorkerLogs
     href: tables/adfairflowworkerlogs.md
+  - name: ADFSSignInLogs
+    href: tables/adfssigninlogs.md
