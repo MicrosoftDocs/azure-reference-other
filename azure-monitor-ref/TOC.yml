@@ -16,3 +16,5 @@
     href: tables/aachttprequest.md
   - name: AADB2CRequestLogs
     href: tables/aadb2crequestlogs.md
+  - name: AADDomainServicesAccountLogon
+    href: tables/aaddomainservicesaccountlogon.md
