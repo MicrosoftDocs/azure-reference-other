@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/20/2023
+ms.date: 6/23/2023
 ---
 
 # AzureMetrics
@@ -84,7 +84,7 @@ ms.date: 6/20/2023
 - Azure Database for MySQL Flexible Servers
 - Azure Database for PostgreSQL Flexible Servers
 - Dev Centers
-- Machine Learning
+- Virtual machines
 - Azure Blockchain Service
 - Azure Data Explorer Clusters
 - Container Registries
@@ -101,8 +101,8 @@ ms.date: 6/20/2023
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Azure Storage Mover
-- Virtual machines
 - Media Services
+- Machine Learning
 - Workload Monitor
 - Azure API for FHIR
 
