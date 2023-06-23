@@ -434,3 +434,5 @@
     href: tables/cdbqueryruntimestatistics.md
   - name: ChaosStudioExperimentEventLogs
     href: tables/chaosstudioexperimenteventlogs.md
+  - name: CHSMManagementAuditLogs
+    href: tables/chsmmanagementauditlogs.md
