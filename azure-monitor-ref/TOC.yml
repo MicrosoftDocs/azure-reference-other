@@ -770,3 +770,5 @@
     href: tables/oepdataplanelogs.md
   - name: OEPElasticOperator
     href: tables/oepelasticoperator.md
+  - name: OEPElasticsearch
+    href: tables/oepelasticsearch.md
