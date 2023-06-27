@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/20/2023
+ms.date: 6/27/2023
 ---
 
 # AzureActivity
@@ -116,11 +116,11 @@ ms.date: 6/20/2023
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Azure Storage Mover
-- Virtual machines
-- Workload Monitor
 - Microsoft Graph Logs
+- Workload Monitor
+- Media Services
 - Machine Learning
-- Machine Learning
+- Virtual machines
 - HDInsight Clusters
 - Experiment Workspace
 - Dev Centers
@@ -130,7 +130,7 @@ ms.date: 6/20/2023
 - Container Apps
 - Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
-- Media Services
+- Machine Learning
 - Azure API for FHIR
 
 

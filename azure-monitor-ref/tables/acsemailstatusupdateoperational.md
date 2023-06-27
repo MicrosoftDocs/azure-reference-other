@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/20/2023
+ms.date: 6/27/2023
 ---
 
 # ACSEmailStatusUpdateOperational
@@ -34,12 +34,17 @@ ms.date: 6/20/2023
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. This value is populated with the MessageID returned by Email send requests and can be used to identify correlated events between Email Operational tables. |
 | DeliveryStatus | string | The count of unique recipients on the Cc line. |
+| EnhancedSmtpStatusCode | string | The enhanced SMTP status code returned from the recipient email server (if available). |
 | _IsBillable | string |  |
+| IsHardBounce | string | Signifies whether a delivery failure was due to a permanent or temporary issue. IsHardBounce == true means a permanent mailbox issue preventing emails from being delivered. |
 | Location | string | The location the request was processed. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
 | RecipientId | string | The count of unique recipients on the To line. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| SenderDomain | string | The domain portion of the SenderAddress used in sending emails. |
+| SenderUsername | string | The username portion of the SenderAddress used in sending emails. |
+| SmtpStatusCode | string | The SMTP status code returned from the recipient email server in response to  a send  mail request. |
 | SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
