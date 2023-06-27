@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/20/2023
+ms.date: 6/27/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -339,14 +339,14 @@ ms.date: 6/20/2023
 
 ## Azure Sentinel
 
-- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [SecurityAlert](securityalert.md)
 - [SecurityEvent](securityevent.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
+- [CommonSecurityLog](commonsecuritylog.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
-- [CommonSecurityLog](commonsecuritylog.md)
+- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
 ## Azure Sphere
