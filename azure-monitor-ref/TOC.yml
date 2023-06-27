@@ -312,3 +312,5 @@
     href: tables/asimauditeventlogs.md
   - name: ASimAuthenticationEventLogs
     href: tables/asimauthenticationeventlogs.md
+  - name: ASimDnsActivityLogs
+    href: tables/asimdnsactivitylogs.md
