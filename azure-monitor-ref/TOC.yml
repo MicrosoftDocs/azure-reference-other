@@ -70,3 +70,5 @@
     href: tables/acscalldiagnostics.md
   - name: ACSCallRecordingIncomingOperations
     href: tables/acscallrecordingincomingoperations.md
+  - name: ACSCallRecordingSummary
+    href: tables/acscallrecordingsummary.md
