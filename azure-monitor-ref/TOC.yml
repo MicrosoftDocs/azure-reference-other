@@ -844,3 +844,5 @@
     href: tables/signinlogs.md
   - name: SQLAssessmentRecommendation
     href: tables/sqlassessmentrecommendation.md
+  - name: SqlAtpStatus
+    href: tables/sqlatpstatus.md
