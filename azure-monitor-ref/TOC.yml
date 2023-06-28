@@ -534,3 +534,5 @@
     href: tables/databrickswebterminal.md
   - name: DatabricksWorkspace
     href: tables/databricksworkspace.md
+  - name: DataTransferOperations
+    href: tables/datatransferoperations.md
