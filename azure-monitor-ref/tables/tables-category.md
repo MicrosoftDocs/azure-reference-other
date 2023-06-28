@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/27/2023
+ms.date: 6/29/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -587,6 +587,7 @@ ms.date: 6/27/2023
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
+- [ASimProcessEventLogs](asimprocesseventlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [AuditLogs](auditlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
