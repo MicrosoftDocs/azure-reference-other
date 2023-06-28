@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/27/2023
+ms.date: 6/29/2023
 ---
 
 # DatabricksDatabricksSQL
