@@ -16,7 +16,7 @@ metadata:
 productDirectory:
   title: Getting started
   items:
-    - title: Microsoft Entra ID
+    - title: Azure AD (Microsoft Entra ID)
       imageSrc: ./media/new-icons/azure-ad-color.png
       summary: "Manage user identities and control access to your apps, data, and resources."
       url: /azure/active-directory
@@ -33,11 +33,11 @@ productDirectory:
       summary: "Secure and manage any external user, including customers and partners, in your organization."
       url: /azure/active-directory/external-identities
     - title: Microsoft Entra Internet Access
-      imageSrc: ./media/new-icons/global-secure-access-color.png
+      imageSrc: ./media/new-icons/internet-access-color.png
       summary: "Protect access to all internet, SaaS, and Microsoft 365 apps and resources with an identity-centric Secure Web Gateway."
       url: https://aka.ms/GlobalSecureAccessDocs
     - title: Microsoft Entra Private Access
-      imageSrc: ./media/new-icons/global-secure-access-color.png
+      imageSrc: ./media/new-icons/private-access-color.png
       summary: "Secure access to all private apps and resources with identity-centric Zero Trust Network Access (ZTNA)."
       url: https://aka.ms/GlobalSecureAccessDocs
     - title: Microsoft Entra Permissions Management
