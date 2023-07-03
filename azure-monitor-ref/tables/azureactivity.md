@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/29/2023
+ms.date: 7/3/2023
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 6/29/2023
 ## Resource types
 
 - Azure AD Domain Services
-- Logic Apps
 - Service Fabric Clusters
 - IoT Hub
 - Azure Monitor autoscale settings
@@ -47,10 +46,11 @@ ms.date: 6/29/2023
 - Cognitive Services
 - Azure Spring Cloud
 - CDN Profiles
+- Batch Accounts
+- Logic Apps
 - API Management services
 - Automation account
 - Data factories
-- Data Lake Storage Gen1
 - Stream Analytics jobs
 - Search Services
 - Virtual Networks
@@ -62,9 +62,8 @@ ms.date: 6/29/2023
 - Network Interfaces
 - Load Balancers
 - Front Doors
-- Batch Accounts
+- Analysis Services
 - ExpressRoute Circuits
-- Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Servers
@@ -75,11 +74,11 @@ ms.date: 6/29/2023
 - Data Share
 - Power BI Embedded
 - Data Lake Analytics
-- Application Gateways
+- Data Lake Storage Gen1
+- Device Provisioning Services
 - Bastions
-- Analysis Services
-- Time Series Insights Environments
-- Azure Traffic Collector
+- Workload Monitor
+- Desktop Virtualization workspaces
 - Service Bus
 - Relay
 - Recovery Services Vaults
@@ -101,12 +100,12 @@ ms.date: 6/29/2023
 - Azure Attestation
 - Azure Autonomous Development Platform workspace
 - App Services
+- Application Gateways
 - Microsoft App Configuration
+- Azure Traffic Collector
 - Azure Virtual Network Manager
 - Bot Services
 - Chaos Experiment
-- Microsoft Connected Cache
-- Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Application Insights
 - SignalR Service WebPubSub
@@ -117,8 +116,8 @@ ms.date: 6/29/2023
 - Synapse Workspaces
 - Azure Storage Mover
 - Microsoft Graph Logs
-- Workload Monitor
 - Media Services
+- Time Series Insights Environments
 - Machine Learning
 - Virtual machines
 - HDInsight Clusters
@@ -130,6 +129,7 @@ ms.date: 6/29/2023
 - Container Apps
 - Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
+- Microsoft Connected Cache
 - Machine Learning
 - Azure API for FHIR
 
