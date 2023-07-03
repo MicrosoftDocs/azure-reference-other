@@ -250,3 +250,5 @@
     href: tables/apimanagementgatewaylogs.md
   - name: ApiManagementWebSocketConnectionLogs
     href: tables/apimanagementwebsocketconnectionlogs.md
+  - name: AppAvailabilityResults
+    href: tables/appavailabilityresults.md
