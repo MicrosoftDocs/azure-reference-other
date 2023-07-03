@@ -64,3 +64,5 @@
     href: tables/acsbillingusage.md
   - name: ACSCallAutomationIncomingOperations
     href: tables/acscallautomationincomingoperations.md
+  - name: ACSCallAutomationMediaSummary
+    href: tables/acscallautomationmediasummary.md
