@@ -196,3 +196,5 @@
     href: tables/aksauditadmin.md
   - name: AKSControlPlane
     href: tables/akscontrolplane.md
+  - name: Alert
+    href: tables/alert.md
