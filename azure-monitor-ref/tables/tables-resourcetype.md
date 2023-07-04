@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/27/2023
+ms.date: 7/3/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -342,11 +342,12 @@ ms.date: 6/27/2023
 - [SecurityAlert](securityalert.md)
 - [SecurityEvent](securityevent.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
-- [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
+- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
+- [ASimProcessEventLogs](asimprocesseventlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
-- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
+- [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
 ## Azure Sphere
@@ -783,6 +784,9 @@ ms.date: 6/27/2023
 
 ## Machine Learning
 
+- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
+- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
+- [AzureActivity](azureactivity.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -806,9 +810,6 @@ ms.date: 6/27/2023
 - [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
-- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
-- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
-- [AzureActivity](azureactivity.md)
 
 ## Media Services
 
