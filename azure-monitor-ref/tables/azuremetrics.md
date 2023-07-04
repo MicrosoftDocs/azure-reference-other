@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/27/2023
+ms.date: 7/3/2023
 ---
 
 # AzureMetrics
@@ -22,7 +22,6 @@ ms.date: 6/27/2023
 ## Resource types
 
 - Azure AD Domain Services
-- Power BI Embedded
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Data factories
@@ -39,10 +38,11 @@ ms.date: 6/27/2023
 - System Center Virtual Machine Manager
 - Azure Stack HCI
 - VMware
-- Data Share
 - Event Grid System Topics
-- SQL Managed Instances
-- SQL Databases
+- Power BI Embedded
+- Event Grid Partner Topics
+- Data Share
+- SQL Servers
 - Stream Analytics jobs
 - Search Services
 - Virtual Networks
@@ -54,17 +54,16 @@ ms.date: 6/27/2023
 - Network Interfaces
 - Front Doors
 - ExpressRoute Circuits
-- Application Gateways
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
-- SQL Servers
-- Event Grid Partner Topics
+- SQL Databases
+- SQL Managed Instances
 - Event Grid Partner Namespaces
 - Event Grid Domains
-- Microsoft Connected Vehicle Platform
+- Azure Blockchain Service
 - Microsoft Connected Cache
 - Azure Virtual Network Manager
 - Azure Traffic Collector
@@ -81,11 +80,11 @@ ms.date: 6/27/2023
 - Azure CloudHsm
 - Azure Cache for Redis
 - App Services
+- Application Gateways
+- Microsoft Connected Vehicle Platform
 - Azure Database for MySQL Flexible Servers
 - Azure Database for PostgreSQL Flexible Servers
 - Dev Centers
-- Virtual machines
-- Azure Blockchain Service
 - Azure Data Explorer Clusters
 - Container Registries
 - SignalR
@@ -93,9 +92,9 @@ ms.date: 6/27/2023
 - Cognitive Services
 - Azure Spring Cloud
 - Batch Accounts
-- Bastions
 - Analysis Services
-- Time Series Insights Environments
+- Bastions
+- Workload Monitor
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Desktop Virtualization Host Pools
@@ -103,7 +102,8 @@ ms.date: 6/27/2023
 - Azure Storage Mover
 - Media Services
 - Machine Learning
-- Workload Monitor
+- Virtual machines
+- Time Series Insights Environments
 - Azure API for FHIR
 
 

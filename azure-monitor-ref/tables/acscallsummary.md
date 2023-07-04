@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/27/2023
+ms.date: 7/3/2023
 ---
 
 # ACSCallSummary
@@ -36,7 +36,7 @@ ms.date: 6/27/2023
 | CallType | string | Type of the call, for example P2P (peer to peer). |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
-| EndpointId | string | ID of the endpoint. |
+| EndpointId | string | The ID of the endpoint. |
 | EndpointType | string | Type of the endpoint, for example VoIP (voice over IP). |
 | Identifier | string | The indentifier of the call used to correlate. Can be used to identify correlated events between multiple tables. |
 | _IsBillable | string |  |
@@ -47,6 +47,9 @@ ms.date: 6/27/2023
 | ParticipantEndReason | string | Participant's call end reason. |
 | ParticipantId | string | ID of the participant. |
 | ParticipantStartTime | datetime | Start time of the participant. |
+| ParticipantTenantId | string | The ID of the Microsoft tenant associated with the participant. |
+| ParticipantType | string | Description of the participant as a combination of its client (ACS or Teams) and its identity (ACS or Microsoft 365). Possible values include ACS, Teams, ACS as Teams external user, and ACS as Microsoft 365 user. |
+| PstnParticipantCallType | string | The type and direction of PSTN participants, including emergency calling, direct routing, transfer, forwarding, etc. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SdkVersion | string | SDK version. |
 | SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |

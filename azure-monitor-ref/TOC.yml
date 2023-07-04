@@ -316,6 +316,8 @@
     href: tables/asimdnsactivitylogs.md
   - name: ASimNetworkSessionLogs
     href: tables/asimnetworksessionlogs.md
+  - name: ASimProcessEventLogs
+    href: tables/asimprocesseventlogs.md
   - name: ASimWebSessionLogs
     href: tables/asimwebsessionlogs.md
   - name: ASRJobs

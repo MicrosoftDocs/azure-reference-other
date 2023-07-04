@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: robb
 author: rboucher
-ms.date: 6/27/2023
+ms.date: 7/3/2023
 ---
 
 # PurviewSecurityLogs
@@ -37,6 +37,7 @@ ms.date: 6/27/2023
 | _IsBillable | string |  |
 | Location | string | Location of the Purview account. |
 | OperationName | string | The operation associated with log record. |
+| Properties | dynamic | Additional properties of the operation. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | Description of the result of the operation. May also contain the error description if the operation failed. |
 | ResultType | string | Result of the operation. |
