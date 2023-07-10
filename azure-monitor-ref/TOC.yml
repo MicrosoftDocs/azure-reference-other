@@ -388,3 +388,5 @@
     href: tables/azmskafkacoordinatorlogs.md
   - name: AZMSKafkaUserErrorLogs
     href: tables/azmskafkausererrorlogs.md
+  - name: AZMSOperationalLogs
+    href: tables/azmsoperationallogs.md
