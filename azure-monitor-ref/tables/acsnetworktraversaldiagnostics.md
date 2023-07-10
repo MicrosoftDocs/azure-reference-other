@@ -4,9 +4,9 @@ description: Reference for ACSNetworkTraversalDiagnostics table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSNetworkTraversalDiagnostics
@@ -30,14 +30,14 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BytesReceived | long | Number of bytes received by the client. |
 | BytesSent | long | Number of bytes sent by the client. |
 | CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID associated with the relay session. |
 | Identity | string | The request sender's identity, if provided when requesting the relay configuration used to establish the session. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the operation. |
 | OperationName | string | The operation associated with log record. |
 | Protocol | string | The protocol used for the session (e.g. TCP or UDP). |
