@@ -4,9 +4,9 @@ description: Reference for ADXJournal table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ADXJournal
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ChangeCommand | string | The executed control command that triggered the metadata change |
 | CorrelationId | string | The client request ID |
 | DatabaseName | string | The name of the database changed following the event |
@@ -38,7 +38,7 @@ ms.date: 7/3/2023
 | EntityName | string | The entity name that the operation was executed on, before the change |
 | EntityVersion | string | The new metadata version (DB/cluster) following the change |
 | Event | string | The metadata change event name |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationTimestamp | datetime | The timestamp (UTC) at which the metadata operation completed |
 | OriginalEntityState | string | The state of the entity (entity properties) before the change |
 | OriginalEntityVersion | string | The version of the entity (entity properties) before the change |
