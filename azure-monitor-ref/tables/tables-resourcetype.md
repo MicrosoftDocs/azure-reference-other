@@ -4,9 +4,9 @@ description: Index for tables in Azure Monitor Logs organized by resource type.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -314,6 +314,11 @@ ms.date: 7/3/2023
 - [CassandraAudit](cassandraaudit.md)
 - [CassandraLogs](cassandralogs.md)
 
+## Azure Managed Lustre
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
 ## Azure Managed Workspace for Grafana
 
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
@@ -339,15 +344,15 @@ ms.date: 7/3/2023
 
 ## Azure Sentinel
 
+- [ASimProcessEventLogs](asimprocesseventlogs.md)
+- [CommonSecurityLog](commonsecuritylog.md)
+- [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [SecurityAlert](securityalert.md)
 - [SecurityEvent](securityevent.md)
-- [ASimAuditEventLogs](asimauditeventlogs.md)
-- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
-- [CommonSecurityLog](commonsecuritylog.md)
-- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
-- [ASimProcessEventLogs](asimprocesseventlogs.md)
-- [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
+- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
+- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
+- [ASimAuditEventLogs](asimauditeventlogs.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
 ## Azure Sphere
@@ -784,9 +789,6 @@ ms.date: 7/3/2023
 
 ## Machine Learning
 
-- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
-- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
-- [AzureActivity](azureactivity.md)
 - [AmlComputeClusterEvent](amlcomputeclusterevent.md)
 - [AmlComputeClusterNodeEvent](amlcomputeclusternodeevent.md)
 - [AmlComputeCpuGpuUtilization](amlcomputecpugpuutilization.md)
@@ -810,6 +812,9 @@ ms.date: 7/3/2023
 - [BaiClusterEvent](baiclusterevent.md)
 - [BaiClusterNodeEvent](baiclusternodeevent.md)
 - [BaiJobEvent](baijobevent.md)
+- [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
+- [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
+- [AzureActivity](azureactivity.md)
 
 ## Media Services
 
@@ -902,6 +907,21 @@ ms.date: 7/3/2023
 
 ## Network Watcher - Traffic Analytics
 
+
+## Nexus BareMetal Machines
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Nexus Clusters
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+
+## Nexus Storage Appliances
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
 
 ## Power BI Datasets
 
