@@ -4,9 +4,9 @@ description: Reference for VMConnection table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # VMConnection
@@ -38,7 +38,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AgentId | string | Unique agent GUID for the agent reporting data on the server. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BytesReceived | long | Total number of bytes that have been received during the reporting time window. |
 | BytesSent | long | Total number of bytes that have been sent during the reporting time window. |
 | Computer | string | Name of the server from the ServiceMapComputer_CL table. |
@@ -51,7 +51,7 @@ ms.date: 7/3/2023
 | FirstReportedDateTime | string | The first time the provider reported the indicator. |
 | IndicatorThreatType | string | Threat indicator detected. Possible values are Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist. |
 | IsActive | string | The last time the indicator was seen by Interflow. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastReportedDateTime | string | Indicates indicators are deactivated with True or False value. |
 | LinksEstablished | long | Number of physical network connections that have been established during the reporting time window. |
 | LinksFailed | long | Number of physical network connections that have failed during the reporting time window. This information is currently available only for outbound connections. |
