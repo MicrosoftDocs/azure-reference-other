@@ -4,9 +4,9 @@ description: Reference for ACSCallSummary table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSCallSummary
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallDuration | long | Duration of the call in seconds. |
 | CallStartTime | datetime | Start time of the call. |
 | CallType | string | Type of the call, for example P2P (peer to peer). |
@@ -39,7 +39,7 @@ ms.date: 7/3/2023
 | EndpointId | string | The ID of the endpoint. |
 | EndpointType | string | Type of the endpoint, for example VoIP (voice over IP). |
 | Identifier | string | The indentifier of the call used to correlate. Can be used to identify correlated events between multiple tables. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
 | OsVersion | string | Operating System version. |
