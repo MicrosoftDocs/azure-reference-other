@@ -4,9 +4,9 @@ description: Reference for HDInsightAmbariSystemMetrics table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightAmbariSystemMetrics
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BytesIn | real | Bytes ingested in last timeframe. |
 | BytesOut | real | Bytes sent out. |
 | CachedMemory | real | amount of cached memory in KB. |
@@ -48,7 +48,7 @@ ms.date: 7/3/2023
 | FreeMemory | real | amount of free memory in KB. |
 | FreeSwapMemory | real | amount of free swap memory in KB. |
 | HostName | string | Name of the host the record came from. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | NumberOfCpu | real | Number of CPU cores running on the node. |
 | OneMinuteLoad | real | load over past one minute. |
 | PacketsIn | real | Packets ingest in last timeframe. |
