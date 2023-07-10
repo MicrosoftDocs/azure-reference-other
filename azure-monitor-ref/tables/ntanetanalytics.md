@@ -4,9 +4,9 @@ description: Reference for NTANetAnalytics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # NTANetAnalytics
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | AllowedInFlows | long | Count of inbound flows that were allowed. This represents the number of flows that shared the same four-tuple inbound to the network interface at which the flow was captured. |
 | AllowedOutFlows | long | Count of outbound flows that were allowed(Outbound to the network interface at which the flow was captured). |
 | AzureRegion | string | Azure region locations. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BytesDestToSrc | long | Represents bytes sent from the destination to the source of the flow. |
 | BytesSrcToDest | long | Represents bytes sent from the source to the destination of the flow. |
 | CompletedFlows | long | This is populated with non-zero value when a flow gets a Completed event. |
@@ -65,7 +65,7 @@ ms.date: 7/3/2023
 | FlowStartTime | datetime | First occurrence of the flow (which will get aggregated) in the flow log processing interval between "FlowIntervalStartTime_t" and "FlowIntervalEndTime_t". |
 | FlowStatus | string | Status of flow which can be allowed or denied. |
 | FlowType | string | Category of the flows(allowed values are IntraVNet, InterVNet, S2S, P2S, AzurePublic, ExternalPublic, MaliciousFlow, Unknown Private, Unknown) based on IP addresses involved in flow. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsFlowCapturedAtUdrHop | bool | True if flow gets captured at a UDR hop. |
 | L4Protocol | string | Transport Protocol,T = TCP, U = UDP. |
 | L7Protocol | string | Application Layer protocol name. |
