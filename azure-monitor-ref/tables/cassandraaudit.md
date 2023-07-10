@@ -4,9 +4,9 @@ description: Reference for CassandraAudit table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CassandraAudit
@@ -31,13 +31,13 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | BatchId | string | Internal identifier shared by all statements in a batch operation. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientIP | string | Client IP address. |
 | ClientPort | string | Client port. |
 | ClusterName | string | Cluster name. |
 | CoordinatorIP | string | Host address of the coordinator node. |
 | ExternalUserId | string | External user identity. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Operation | string | The CQL statement or a textual description of the operation. |
 | OperationNaked | string | The CQL statement or a textual description of the operation, without bound values appended to prepared statements. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
