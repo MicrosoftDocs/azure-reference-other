@@ -4,9 +4,9 @@ description: Reference for CDBCassandraRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CDBCassandraRequests
@@ -35,12 +35,12 @@ ms.date: 7/3/2023
 | ActivityId | string | The unique identifier (GUID) for this Cassandra API request. |
 | Address | string | The IP address of the client that issued this request. |
 | AuthorizationTokenType | string | The authorization token used for this request. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CollectionName | string | The name of the Cosmos DB table/container against which this request was issued. |
 | DatabaseName | string | The name of the Cosmos DB database against which this request was issued. |
 | DurationMs | real | The server side execution time (in ms) for this request. |
 | ErrorCode | string | The error code (if applicable) for this request. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | The Cassandra API operation that was executed. |
 | PIICommandText | string | Full query text with parameters (if opted in) for this request. |
 | RateLimitingDelayMs | real | The estimated time (in ms) spent in retrying due to rate limited operations. |
