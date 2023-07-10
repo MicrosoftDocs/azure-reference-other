@@ -4,9 +4,9 @@ description: Reference for StorageMoverCopyLogsFailed table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # StorageMoverCopyLogsFailed
@@ -30,10 +30,10 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Details | string | The error description and any additional details if available. |
 | FileSize | long | The file size in bytes (if available). Only applicable when item type is File. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ItemPath | string | Relative path of the item from the migration source, and target root directories. |
 | ItemType | string | Type of the item, either 'F' for file, or 'D' for directory. |
 | JobRunName | string | Unique name of the job run which generated this log. |
