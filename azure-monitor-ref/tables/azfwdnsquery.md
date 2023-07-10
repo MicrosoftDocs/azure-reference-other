@@ -4,9 +4,9 @@ description: Reference for AZFWDnsQuery table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZFWDnsQuery
@@ -30,12 +30,12 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DnssecOkBit | bool | A flag indicating that the resolver supports DNSSEC records. |
 | EDNS0BufferSize | int | Client's EDNS0 buffer size. Specifies the maximum packet size allowed in responses in bytes. |
 | ErrorMessage | string | Description of the error returned to the client. Empty if request is successful. |
 | ErrorNumber | int | Error number matching the returned response code. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Protocol | string | Protocol used to send the DNS query. For example: TCP, UDP |
 | QueryClass | string | DNS query's query class. |
 | QueryId | int | DNS query's query ID. |
