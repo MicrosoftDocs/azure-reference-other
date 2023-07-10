@@ -4,9 +4,9 @@ description: Reference for ACSRoomsIncomingOperations table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSRoomsIncomingOperations
@@ -31,9 +31,9 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AddedRoomParticipantsCount | int | The count of participants added to a room. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The unique ID of the request. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the operation. |
 | OperationName | string | The operation associated with log record. e.g., CreateRoom, PatchRoom, GetRoom, ListRooms, DeleteRoom, GetParticipants, AddParticipants, UpdateParticipants, or RemoveParticipants. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
