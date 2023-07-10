@@ -4,9 +4,9 @@ description: Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # NetworkAccessTraffic
@@ -31,7 +31,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | Action | string | The action taken on the network session. Allowed, Denied. |
 | AgentVersion | string | The version of the agent connecting. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ConnectionId | string | Unique identifier representing the connection this traffic log was initiated from. |
 | DestinationFqdn | string | The destination device hostname, including domain information when available. |
 | DestinationIp | string | The IP address of the connection or session destination. |
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | DeviceId | string | The ID of the source device as reported in the record. |
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | NetworkProtocol | string | The network protocol, IPv6 or IPv4. |
 | OriginHeader | string | The origin header value. |
 | PolicyId | string | The ID of the policy for which the request was denied by its rule. |
