@@ -4,9 +4,9 @@ description: Reference for AmlComputeClusterEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AmlComputeClusterEvent
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AllocationState | string |  |
 | AllocationStateTransitionTime | datetime |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterErrorCodes | string |  |
 | ClusterName | string |  |
 | ClusterType | string |  |
@@ -44,7 +44,7 @@ ms.date: 7/3/2023
 | IdleNodeCount | int |  |
 | InitialNodeCount | int |  |
 | InternalOperationName | string |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsResizeGrow | string |  |
 | LeavingNodeCount | int |  |
 | MaximumNodeCount | int |  |
