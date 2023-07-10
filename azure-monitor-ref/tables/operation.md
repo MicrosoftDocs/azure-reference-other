@@ -4,9 +4,9 @@ description: Reference for Operation table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # Operation
@@ -27,13 +27,13 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Computer | string | Name of a physical or virtual machine having membership with Log Analytics agent. |
 | CorrelationId | string | GUID that is shared with telemetry belonging to the same uber action. |
 | Detail | string | User friendly string that describes further details about the operation |
 | ErrorId | string | Deprecated. |
 | HelpLink | string | Reference URL for additional contextual information. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ManagementGroupName | string | Name of the Operations Manager management group for System Center Operations Manager agents. |
 | OperationCategory | string | Name of the area that produced the record. |
 | OperationKey | string | Operation ID. Can be a GUID or string. |
