@@ -4,9 +4,9 @@ description: Reference for IdentityInfo table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # IdentityInfo
@@ -36,7 +36,7 @@ ms.date: 7/3/2023
 | AdditionalMailAddresses | dynamic | Additional email addresses of the user |
 | Applications | string | All known applications this user account accessed |
 | AssignedRoles | dynamic | AAD roles the user account is assigned to |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BlastRadius | string | The potential impact of the user account in the org (low/medium/high) |
 | ChangeSource | string | The source of the latest change of the entity |
 | City | string | The city of the user account as defined in AAD |
@@ -52,7 +52,7 @@ ms.date: 7/3/2023
 | InvestigationPriority | int | The Investigation Priority score of the account |
 | InvestigationPriorityPercentile | int | The account score compared to the organization  |
 | IsAccountEnabled | bool | Indication if the account is enabled in AAD or not |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsMFARegistered | bool | Indication if MFA is registered for this user account or not |
 | IsServiceAccount | bool | The account is a service account. |
 | JobTitle | string | The user account job title as defined in AAD |
