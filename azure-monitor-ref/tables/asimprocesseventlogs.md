@@ -4,9 +4,9 @@ description: Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ASimProcessEventLogs
@@ -62,7 +62,7 @@ ms.date: 7/3/2023
 | ActorUsernameType | string | The type of the Actor's username specified in ActionUsername field |
 | ActorUserType | string | The type of the Actor. |
 | AdditionalFields | dynamic | Additional information, represented using key and value pairs provided by the source which do not map to ASim. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DvcAction | string | For reporting security systems, the action taken by the system. |
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device reporting the event. |
@@ -100,7 +100,7 @@ ms.date: 7/3/2023
 | EventSubType | string | Describes a subdivision of the operation reported in the EventType field. |
 | EventType | string | Describes the operation reported by the record |
 | EventVendor | string | The vendor of the product generating the event. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ParentProcessCreationTime | datetime | The date and time when the parent process was started. |
 | ParentProcessFileCompany | string | The company that created the parent process image file. |
 | ParentProcessFileDescription | string | The description from the version information of the parent process image file. |
