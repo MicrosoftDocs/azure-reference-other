@@ -4,9 +4,9 @@ description: Reference for NWConnectionMonitorPathResult table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # NWConnectionMonitorPathResult
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AdditionalData | string | The additional data for the test |
 | AvgRoundTripTimeMs | real | The average round trip time for the test |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ChecksFailed | int | The total number of checks failed under the test |
 | ChecksFailedPercentThreshold | int | The checks failed percent threshold set for the test |
 | ChecksTotal | int | The total number of checks done under the test |
@@ -50,7 +50,7 @@ ms.date: 7/3/2023
 | HopResourceIds | string | The hop resource ids identified for the test |
 | Hops | string | The hops identified for the test |
 | HopTypes | string | The hop types identified for the test |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Issues | string | The issues identified for the test |
 | JitterMs | real | The mean deviation round trip time for the test |
 | MaxRoundTripTimeMs | real | The maximum round trip time for the test |
