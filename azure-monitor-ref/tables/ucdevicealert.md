@@ -4,9 +4,9 @@ description: Reference for UCDeviceAlert table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # UCDeviceAlert
@@ -34,13 +34,13 @@ ms.date: 7/3/2023
 | AlertType | string | The type of Alert this is, ClientUpdateAlert, ServiceUpdateAlert. Indicates which fields will be present. |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Description | string | A localized string translated from a combination of other Alert fields + language preference that describes the issue in detail. |
 | DeviceName | string | Device's given name. |
 | ErrorCode | string | The Error Code, if any, that triggered this Alert. In the case of Client-based explicit alerts, error codes can have extended error codes, which are appended to the error code with a underscore separator. |
 | ErrorSymName | string | The symbolic name that maps to the Error Code, if any. Otherwise empty. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Recommendation | string | A localized string translated from RecommendedAction, Message, and other fields (depending on source of Alert) that provides a recommended action. |
 | ResolvedTime | datetime | The time this alert was resolved, else empty. |
 | SCCMClientId | string | A GUID corresponding to the SCCM Client ID on the device. |
