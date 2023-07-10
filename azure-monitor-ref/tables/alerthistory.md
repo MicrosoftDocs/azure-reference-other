@@ -4,9 +4,9 @@ description: Reference for AlertHistory table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AlertHistory
@@ -34,7 +34,7 @@ ms.date: 7/3/2023
 | AlertPriority | string |  |
 | AlertSeverity | string |  |
 | AlertState | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Custom1 | string |  |
 | Custom10 | string |  |
 | Custom2 | string |  |
@@ -45,7 +45,7 @@ ms.date: 7/3/2023
 | Custom7 | string |  |
 | Custom8 | string |  |
 | Custom9 | string |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastModifiedBy | string |  |
 | ManagementGroupName | string |  |
 | RepeatCount | int |  |
