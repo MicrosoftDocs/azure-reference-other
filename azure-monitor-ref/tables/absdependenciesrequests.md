@@ -4,9 +4,9 @@ description: Reference for ABSDependenciesRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ABSDependenciesRequests
@@ -24,13 +24,13 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BotId | string | Name of the bot or the bot handle. |
 | Category | string | Classification of the log. |
 | Channel | string | Name of the Channel making generating the log (e.g. DirectLine, Facebook, etc.). |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | real | Duration of a request. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | log level of message (Information, Warning, Error, etc.). |
 | Location | string | Location of the service sending the log (Azure region name e.g. West US). |
 | OperationName | string | The operation associated with log record. |
