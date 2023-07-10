@@ -192,3 +192,5 @@
     href: tables/airflowdagprocessinglogs.md
   - name: AKSAudit
     href: tables/aksaudit.md
+  - name: AKSAuditAdmin
+    href: tables/aksauditadmin.md
