@@ -4,9 +4,9 @@ description: Reference for ADFSSISPackageExecutionDataStatistics table in Azure 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ADFSSISPackageExecutionDataStatistics
@@ -27,7 +27,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The name of the log that belongs to |
 | CorrelationId | string | correlation id |
 | CreatedTime | datetime | Created time |
@@ -38,7 +38,7 @@ ms.date: 7/3/2023
 | ExecutionId | long | Execution id |
 | ExecutionPath | string | Execution path |
 | IntegrationRuntimeName | string | Integration runtime name |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | Verbosity level of log |
 | OperationName | string | The name of the operation represented by this event |
 | PackageName | string | Package name |

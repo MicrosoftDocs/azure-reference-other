@@ -4,9 +4,9 @@ description: Reference for AADRiskyServicePrincipals table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AADRiskyServicePrincipals
@@ -30,11 +30,11 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AccountEnabled | bool | true if the service principal account is enabled; otherwise, false. |
 | AppId | string | The globally unique identifier for the associated application (its appId property), if any. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The ID for correlated log analytics events. Can be used to identify correlated events between multiple tables. |
 | DisplayName | string | The display name for the service principal. |
 | Id | string | The unique identifier assigned to the service principal at risk. Inherited from entity. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsProcessing | bool | Indicates whether Azure AD is currently processing the service principal's risky state. |
 | OperationName | string | Name of the operation. |
 | RiskDetail | string | Details of the detected risk. |

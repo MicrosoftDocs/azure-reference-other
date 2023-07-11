@@ -4,9 +4,9 @@ description: Reference for ADTDataHistoryOperation table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ADTDataHistoryOperation
@@ -31,11 +31,11 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | Application ID used in bearer authorization. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | A masked source IP address for the event. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | long | How long it took to perform the event in milliseconds. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | int | The logging severity of the event. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API version utilized during the event. |

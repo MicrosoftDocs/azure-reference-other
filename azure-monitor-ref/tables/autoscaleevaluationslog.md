@@ -4,9 +4,9 @@ description: Reference for AutoscaleEvaluationsLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AutoscaleEvaluationsLog
@@ -34,7 +34,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AutoscaleMetricName | string |  |
 | AvailabilitySet | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string |  |
 | CloudServiceName | string |  |
 | CloudServiceRole | string |  |
@@ -47,7 +47,7 @@ ms.date: 7/3/2023
 | EvaluationResult | string |  |
 | EvaluationTime | datetime |  |
 | InstanceUpdateReason | string |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastScaleActionOperationId | string |  |
 | LastScaleActionOperationStatus | string |  |
 | LastScaleActionTime | datetime |  |

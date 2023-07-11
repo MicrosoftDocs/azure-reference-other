@@ -4,9 +4,9 @@ description: Reference for AzureAttestationDiagnostics table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AzureAttestationDiagnostics
@@ -30,14 +30,14 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | IP Address of the client that submitted the request. |
 | ContentLength | int | Length of the content body in bytes. |
 | ContentType | string | Content-Type header value passed by the client. |
 | DurationMs | real | Amount of time it took to process request in milliseconds. |
 | FailureDetails | string | Details of the request failure, if it failed. Blank if the request succeeded. |
 | Identity | dynamic | JSON structure containing information about the caller. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | Error or Informational message indicating if the service processed the request. |
 | OperationName | string | Name of the operation attempted on the resource. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

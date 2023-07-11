@@ -4,9 +4,9 @@ description: Reference for MicrosoftPurviewInformationProtection table in Azure 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # MicrosoftPurviewInformationProtection
@@ -33,7 +33,7 @@ ms.date: 7/3/2023
 | AppAccessContext | dynamic | The application context for the user or service principal that performed the action. |
 | Application | string | The application that where the activity happened. |
 | ApplicationMode | string | The label application mode, how the label was applied. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientIP | string | The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. |
 | Common | dynamic | Azure Information Protection - common event data. |
 | ConditionMatch | dynamic | The condition match that triggered the auto labeling. |
@@ -50,7 +50,7 @@ ms.date: 7/3/2023
 | ExecutionRuleVersion | string | The version of the rule that was executed. |
 | Id | string | Unique identifier of an audit record. |
 | IrmContentId | string | The unique ID used for identifying the encrypted document after the operation is complete. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsViewableByExternalUsers | bool | Is viewable by external users. |
 | ItemCreationTime | datetime | The date and time the item was created. |
 | ItemLastModifiedTime | datetime | The date and time the item was last modified. |

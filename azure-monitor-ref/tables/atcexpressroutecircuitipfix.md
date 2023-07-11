@@ -4,9 +4,9 @@ description: Reference for ATCExpressRouteCircuitIpfix table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ATCExpressRouteCircuitIpfix
@@ -33,7 +33,7 @@ ms.date: 7/3/2023
 | ATCRegion | string | Azure Traffic Collector (ATC) deployment region. |
 | ATCResourceId | string | Azure resource ID of Azure Traffic Collector (ATC). |
 | BgpNextHop | string | Border Gateway Protocol (BGP) next hop as defined in the routing table. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DestinationIp | string | Destination IP address. |
 | DestinationPort | int | TCP destination port. |
 | Dot1qCustomerVlanId | int | Dot1q Customer VlanId. |
@@ -50,7 +50,7 @@ ms.date: 7/3/2023
 | IpClassOfService | int | IP Class of service as specified in IP header. |
 | IpProtocolIdentifier | int | Protocol type as specified in IP header. |
 | IpVerCode | int | IP version as defined in the IP header. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | MaxTtl | int | Maximum time to live (TTL) as defined in the IP header. |
 | MinTtl | int | Minimum time to live (TTL) as defined in the IP header. |
 | NextHop | string | Next hop as per forwarding table. |

@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkExecutorEvents table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightSparkExecutorEvents
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AddedTime | datetime | The time (UTC) the Executor was added. |
 | ApplicationId | string | The application ID of the application producing the record. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterDnsName | string | The DNS name of the cluster running the Executor. |
 | ClusterTenantId | string | The tenant ID of the cluster running the Executor. |
 | ExecutorCores | int | The number of cores the Spark Executor has. |
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | ExecutorId | string | The ID of the Spark Executor. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the Executor. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Region | string | The region of the cluster running the Executor. |
 | RemovedReason | string | The reason the Executor was removed. |
 | RemovedTime | datetime | The time (UTC) the Executor was removed. |

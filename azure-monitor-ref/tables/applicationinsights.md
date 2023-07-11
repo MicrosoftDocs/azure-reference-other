@@ -4,9 +4,9 @@ description: Reference for ApplicationInsights table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ApplicationInsights
@@ -49,7 +49,7 @@ ms.date: 7/3/2023
 | AvailabilityTestName | string |  |
 | AvailabilityTimestamp | datetime |  |
 | AvailabilityValue | real |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Browser | string |  |
 | BrowserVersion | string |  |
 | City | string |  |
@@ -79,7 +79,7 @@ ms.date: 7/3/2023
 | ExceptionType | string |  |
 | Host | string |  |
 | IsAuthenticated | bool |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | isSynthetic | string |  |
 | Language | string |  |
 | Latitude | string |  |

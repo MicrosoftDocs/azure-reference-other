@@ -4,9 +4,9 @@ description: Reference for CDBMongoRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CDBMongoRequests
@@ -35,12 +35,12 @@ ms.date: 7/3/2023
 | ActivityId | string | The unique identifier (GUID) for this Mongo API request. |
 | Address | string | The IP address of the client VM which issued the request. |
 | AuthorizationTokenType | string | The authorization token used  for this request. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CollectionName | string | The name of the Cosmos DB container against which this request was issued. |
 | DatabaseName | string | The name of the Cosmos DB database against which this request was issued. |
 | DurationMs | real | The server-side execution time (in ms) for this request. |
 | ErrorCode | string | The error code (if applicable) for this request. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OpCode | string | The operation code for the Mongo API request. |
 | OperationName | string | The Mongo API operation that was executed  |
 | PIICommandText | string | Full text query (if opted in) for this Mongo API request. |

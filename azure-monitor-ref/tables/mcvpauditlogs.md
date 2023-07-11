@@ -4,9 +4,9 @@ description: Reference for MCVPAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # MCVPAuditLogs
@@ -30,11 +30,11 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerAccessLevels | string | The caller access level - Administrator, Writer or Reader. |
 | CallerIdentities | string | The caller identity, user alias or email address. |
 | CallerIpAddress | string | IPV4 caller ip address. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationAccessLevel | string | The operation access level of the request - Administrator, Writer or Reader. |
 | OperationCategories | string | The operation request categories like Provision, Connection or Claims. |
 | OperationCategoryDescription | string | The operation request category general description. |

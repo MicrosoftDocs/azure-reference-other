@@ -4,9 +4,9 @@ description: Reference for AZFWNetworkRuleAggregation table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZFWNetworkRuleAggregation
@@ -32,10 +32,10 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | Action | string | Action taken by the firewall following the match with this Network rule. For example: Firewall may Allow/Deny this specific session/packet. |
 | ActionReason | string | When no rule is triggered for a request, this field contains the reason for the action performed by the firewall. For example: a packet dropped because no rule matched will show `Default Action`. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DestinationIp | string | Packet's destination IP address. |
 | DestinationPort | int | Packet's destination port. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsDefaultRule | bool | True if no network rule was hit. False otherwise. |
 | NetworkRuleCount | int | Aggregated count of network rule. |
 | Policy | string | Name of the policy in which the triggered rule resides. |

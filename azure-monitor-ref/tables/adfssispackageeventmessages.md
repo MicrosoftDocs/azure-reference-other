@@ -4,9 +4,9 @@ description: Reference for ADFSSISPackageEventMessages table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ADFSSISPackageEventMessages
@@ -27,7 +27,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The name of the log that belongs to |
 | CorrelationId | string | correlation id |
 | DataFactoryName | string | Data factory name |
@@ -36,7 +36,7 @@ ms.date: 7/3/2023
 | ExecutionPath | string | Execution path |
 | ExtendedInfoId | long | Extended info id |
 | IntegrationRuntimeName | string | Integration runtime name |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | Verbosity level of log |
 | Message | string | Event message |
 | MessageCode | int | Message code |

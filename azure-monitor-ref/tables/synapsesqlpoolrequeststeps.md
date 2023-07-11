@@ -4,9 +4,9 @@ description: Reference for SynapseSqlPoolRequestSteps table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SynapseSqlPoolRequestSteps
@@ -30,14 +30,14 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
 | Command | string | The SQL command of the execution requests. |
 | DistributionType | string | The distribution type of the execution requests. |
 | EndCompileTime | datetime | The end compile time (UTC) of the execution requests. |
 | EndTime | datetime | The end time (UTC) for the execution requests. |
 | ErrorId | string | The errorId of the execution requests. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LocationType | string | The location type of the execution requests. |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |

@@ -4,9 +4,9 @@ description: Reference for CHSMManagementAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CHSMManagementAuditLogs
@@ -32,9 +32,9 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AdditionalFields | dynamic | Information that varies based on the operation (operationName). This field provides additional information about the operation performed on a particular HSM partition. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CommandType | string | The type of command in hexadecimal format. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | Location of the CloudHsm resource. |
 | LogType | string | The type of the log entry. |
 | MemberId | string | HSM partition identifier to whom this particular audit log belong. |

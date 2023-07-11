@@ -4,9 +4,9 @@ description: Reference for SynapseBuiltinSqlPoolRequestsEnded table in Azure Mon
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SynapseBuiltinSqlPoolRequestsEnded
@@ -30,13 +30,13 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
 | CorrelationId | string | A GUID used to group together a set of related events. |
 | DurationMs | int | The total elapsed time in milliseconds. |
 | ErrorCode | int | The error/success code |
 | Identity | dynamic | A JSON blob that describes the identity of the user or application that performed the operation. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | The operation associated with log record. |
 | Properties | dynamic | extended properties related to this event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

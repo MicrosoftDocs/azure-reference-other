@@ -4,9 +4,9 @@ description: Reference for AzureActivity table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AzureActivity
@@ -24,7 +24,6 @@ ms.date: 7/3/2023
 ## Resource types
 
 - Azure AD Domain Services
-- Service Fabric Clusters
 - IoT Hub
 - Azure Monitor autoscale settings
 - Azure Databricks Services
@@ -36,8 +35,8 @@ ms.date: 7/3/2023
 - VMware
 - Event Grid System Topics
 - Event Grid Partner Topics
+- Service Fabric Clusters
 - Event Grid Partner Namespaces
-- Event Grid Domains
 - Azure Blockchain Service
 - Azure Data Explorer Clusters
 - Container Registries
@@ -47,10 +46,12 @@ ms.date: 7/3/2023
 - Azure Spring Cloud
 - CDN Profiles
 - Batch Accounts
+- Analysis Services
+- Workload Monitor
+- Event Grid Domains
 - Logic Apps
 - API Management services
 - Automation account
-- Data factories
 - Stream Analytics jobs
 - Search Services
 - Virtual Networks
@@ -62,8 +63,8 @@ ms.date: 7/3/2023
 - Network Interfaces
 - Load Balancers
 - Front Doors
-- Analysis Services
 - ExpressRoute Circuits
+- Device Provisioning Services
 - Azure Database for MariaDB Servers
 - Azure Database for PostgreSQL Servers V2
 - Azure Database for PostgreSQL Servers
@@ -75,22 +76,24 @@ ms.date: 7/3/2023
 - Power BI Embedded
 - Data Lake Analytics
 - Data Lake Storage Gen1
-- Device Provisioning Services
+- Data factories
+- Time Series Insights Environments
 - Bastions
-- Workload Monitor
 - Desktop Virtualization workspaces
-- Service Bus
-- Relay
+- Application Insights
 - Recovery Services Vaults
 - Microsoft.Purview/accounts
+- Nexus Storage Appliances
+- Nexus Clusters
+- Nexus BareMetal Machines
 - Azure Managed Instance for Apache Cassandra
 - Azure Load Testing
 - Kubernetes Services
 - Key Vaults
 - Azure Managed Workspace for Grafana
 - Firewalls
+- Relay
 - Event Hubs
-- Event Grid Topics
 - Azure Digital Twins
 - Project CI Workspace
 - Azure Cosmos DB
@@ -102,12 +105,10 @@ ms.date: 7/3/2023
 - App Services
 - Application Gateways
 - Microsoft App Configuration
+- Event Grid Topics
+- Service Bus
 - Azure Traffic Collector
 - Azure Virtual Network Manager
-- Bot Services
-- Chaos Experiment
-- Desktop Virtualization Application Groups
-- Application Insights
 - SignalR Service WebPubSub
 - Azure Resource Group
 - Azure Subscription
@@ -115,9 +116,10 @@ ms.date: 7/3/2023
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Azure Storage Mover
+- Azure Managed Lustre
 - Microsoft Graph Logs
 - Media Services
-- Time Series Insights Environments
+- Machine Learning
 - Machine Learning
 - Virtual machines
 - HDInsight Clusters
@@ -130,7 +132,9 @@ ms.date: 7/3/2023
 - Network Watcher - Connection Monitor
 - Microsoft Connected Vehicle Platform
 - Microsoft Connected Cache
-- Machine Learning
+- Chaos Experiment
+- Bot Services
+- Desktop Virtualization Application Groups
 - Azure API for FHIR
 
 
@@ -146,7 +150,7 @@ ms.date: 7/3/2023
 | ActivitySubstatusValue | string | Substatus of the operation  in display-friendly format. E.g. OK (HTTP Status Code: 200). |
 | Authorization | string | Blob of RBAC properties of the event. Usually includes the “action”, “role” and “scope” properties. Stored as string. The use of Authorization_d should be preferred going forward. |
 | Authorization_d | dynamic | Blob of RBAC properties of the event. Usually includes the “action”, “role” and “scope” properties. Stored as dynamic column. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Caller | string | GUID of the caller. |
 | CallerIpAddress | string | IP address of the user who has performed the operation UPN claim or SPN claim based on availability. |
 | Category | string |  |
@@ -158,7 +162,7 @@ ms.date: 7/3/2023
 | EventSubmissionTimestamp | datetime | Timestamp when the event became available for querying. |
 | Hierarchy | string | Management group hierarchy of the management group or subscription that event belongs to. |
 | HTTPRequest | string | Blob describing the Http Request. Usually includes the “clientRequestId”, “clientIpAddress” and “method” (HTTP method. For example, PUT). |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | Level of the event. One of the following values: Critical, Error, Warning, Informational and Verbose. |
 | OperationId | string | GUID of the operation |
 | OperationName | string |  |

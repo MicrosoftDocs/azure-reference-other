@@ -4,9 +4,9 @@ description: Reference for CoreAzureBackup table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CoreAzureBackup
@@ -54,7 +54,7 @@ ms.date: 7/3/2023
 | BackupManagementServerUniqueId | string |  |
 | BackupManagementServerVersion | string |  |
 | BackupManagementType | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BillingGroupFriendlyName | string |  |
 | BillingGroupUniqueId | string |  |
 | Category | string |  |
@@ -67,7 +67,7 @@ ms.date: 7/3/2023
 | DatasourceSubscriptionId | string |  |
 | DatasourceType | string |  |
 | IsArchiveEnabled | bool |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LatestRecoveryPointLocation | string |  |
 | LatestRecoveryPointTime | datetime |  |
 | OldestRecoveryPointLocation | string |  |

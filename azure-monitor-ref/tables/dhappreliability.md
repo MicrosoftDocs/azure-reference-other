@@ -4,9 +4,9 @@ description: Reference for DHAppReliability table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DHAppReliability
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | AppFileVersion | string |  |
 | AppName | string |  |
 | AppVersion | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Computer | string |  |
 | ComputerID | string |  |
 | ConfigMgrClientID | string |  |
@@ -48,7 +48,7 @@ ms.date: 7/3/2023
 | HasUsageDaily | bool |  |
 | HasUsageTrailing | bool |  |
 | IncidentFreeDevicesPercentForIndustryTrailing | real |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OSBuildNumber | int |  |
 | OSRevisionNumber | int |  |
 | OSVersion | string |  |

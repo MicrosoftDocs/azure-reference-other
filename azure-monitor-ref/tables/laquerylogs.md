@@ -4,9 +4,9 @@ description: Reference for LAQueryLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # LAQueryLogs
@@ -34,9 +34,9 @@ ms.date: 7/3/2023
 | AADEmail | string | AAD Email of the caller. |
 | AADObjectId | string | AAD ObjectId of the caller. |
 | AADTenantId | string | AAD TenantId of the caller. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The ID for correlated events. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsBillableQuery | bool | Indicates whether query execution is billed. |
 | IsWorkspaceInFailover | bool | Indicates whether the queried workspace was in failover mode. |
 | QueryText | string | The full body of the query as submitted by the user. |

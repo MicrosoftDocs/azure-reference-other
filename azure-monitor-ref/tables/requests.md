@@ -4,9 +4,9 @@ description: Reference for requests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # requests
@@ -25,7 +25,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | application_Version | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | client_Browser | string |  |
 | client_City | string |  |
 | client_CountryOrRegion | string |  |
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | customMeasurements | dynamic |  |
 | duration | real |  |
 | id | string |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | itemCount | int |  |
 | itemId | string |  |
 | name | string |  |

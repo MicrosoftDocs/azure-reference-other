@@ -4,9 +4,9 @@ description: Reference for HDInsightAmbariClusterAlerts table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightAmbariClusterAlerts
@@ -33,7 +33,7 @@ ms.date: 7/3/2023
 | AlertFirmness | string | The firmness of the alert. |
 | AlertID | int | The ID of the alert message. |
 | AlertInstance | string | Instance number of the alert. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterName | string | The name of the cluster the alert came from. |
 | ClusterType | string | The type of cluster where the alert was generated. |
 | ComponentName | string | The component that generated the alert. |
@@ -41,7 +41,7 @@ ms.date: 7/3/2023
 | DefinitionName | string | Name of the alert definition |
 | HostFQDN | string | The FQDN of the host where the alert was generated. |
 | HostName | string | The name of the host where the alert was generated. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Label | string | The label of the alert. |
 | LatestTimestamp | long | The latest time the alert occurred. |
 | MaintenanceState | string | The maintenance classifaction state of the alert. |

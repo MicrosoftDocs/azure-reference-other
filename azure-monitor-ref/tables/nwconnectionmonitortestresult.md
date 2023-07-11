@@ -4,9 +4,9 @@ description: Reference for NWConnectionMonitorTestResult table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # NWConnectionMonitorTestResult
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AdditionalData | string | The additional data for the test |
 | AvgRoundTripTimeMs | real | The average round trip time for the test |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ChecksFailed | int | The total number of checks failed under the test |
 | ChecksFailedPercentThreshold | int | The checks failed percent threshold set for the test |
 | ChecksTotal | int | The total number of checks done under the test |
@@ -45,7 +45,7 @@ ms.date: 7/3/2023
 | DestinationResourceId | string | The resource id of the Destination machine |
 | DestinationSubnet | string | If applicable, the subnet of the destination |
 | DestinationType | string | The type of the destination machine configured for the test |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | JitterMs | real | The mean deviation round trip time for the test |
 | MaxRoundTripTimeMs | real | The maximum round trip time for the test |
 | MinRoundTripTimeMs | real | The minimum round trip time (ms) for the test |

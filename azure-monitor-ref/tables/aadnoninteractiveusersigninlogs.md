@@ -4,9 +4,9 @@ description: Reference for AADNonInteractiveUserSignInLogs table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AADNonInteractiveUserSignInLogs
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | AuthenticationRequirement | string | Type of authentication required for the sign-in.  If set to multiFactorAuthentication, an MFA step was required.  If set to singleFactorAuthentication, no MFA was required. |
 | AuthenticationRequirementPolicies | string | Set of CA policies that apply to this sign-in, each as CA: policy name, and/or MFA: Per-user. |
 | AutonomousSystemNumber | string | Autonomous System Number for the network. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | Category of the sign-in event. |
 | ClientAppUsed | string | Details outlining app auth used (Legacy vs non Legacy) Eg: Modern Browser, Native App, Exchange Activty Sync and Older Clients. |
 | ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in. |
@@ -54,7 +54,7 @@ ms.date: 7/3/2023
 | Id | string | Unique ID representing the sign-in activity. |
 | Identity | string | The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal. |
 | IPAddress | string | IP address of the client used to sign in. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsInteractive | bool | Indicates if a sign-in is interactive or not. |
 | IsRisky | bool | Indicates if a sign-in is considered risky or not. |
 | Level | string | The severity level of the event. |

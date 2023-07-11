@@ -4,9 +4,9 @@ description: Reference for MicrosoftDataShareReceivedSnapshotLog table in Azure 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # MicrosoftDataShareReceivedSnapshotLog
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The name of the log that belongs to |
 | CorrelationId | string | CorrelationId of the event, this can be use as a reference to join with other tables |
 | DataSetMappingType | string | Indicating the dataSetMapping type, this can be Blob/container/bolbfolder,etc |
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | EndTime | string | Datashare synchronization end time, can be empty if job not finished |
 | FilesRead | string | Number of files read from source |
 | FilesWritten | string | Number of files written into sink |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | The name of the operation represented by this event |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SizeRead | string | Size of files read from source |

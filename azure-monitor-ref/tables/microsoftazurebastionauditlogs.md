@@ -4,9 +4,9 @@ description: Reference for MicrosoftAzureBastionAuditLogs table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # MicrosoftAzureBastionAuditLogs
@@ -30,11 +30,11 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientIpAddress | string | Browser IP Address that was used to log into the VirtualMachine from Bastion |
 | ClientPort | int | Browser Port Number that was used to log into the VirtualMachine from Bastion |
 | Duration | int | Duration in milliseconds where the Bastion Session lasted (available only when the Bastion Session ended) |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The location of the server that processed the request (e.g., South Central US). |
 | Message | string | Additonal text that's assoicated of this event |
 | OperationName | string | The name of the operation represented by this event |

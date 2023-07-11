@@ -4,9 +4,9 @@ description: Reference for ExchangeAssessmentRecommendation table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ExchangeAssessmentRecommendation
@@ -34,7 +34,7 @@ ms.date: 7/3/2023
 | AffectedObjectName | string | Name of the affected object |
 | AffectedObjectType | string | Type of object which is affected |
 | AssessmentId | string | ID of the assessment |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Computer | string | The machine from which data is uploaded |
 | CustomData | string |  |
 | Description | string | Description of the recommendation |
@@ -46,7 +46,7 @@ ms.date: 7/3/2023
 | ExchangeServer | string |  |
 | FocusArea | string | Area to be focussed on |
 | FocusAreaId | string | ID of the Focus Area |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Recommendation | string | Generated recommendation |
 | RecommendationId | string | ID of the recommendation generated |
 | RecommendationResult | string | Result of the recommendation generated |

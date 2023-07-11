@@ -4,9 +4,9 @@ description: Reference for W3CIISLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # W3CIISLog
@@ -36,7 +36,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent  when data is pulled from Azure storage. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | cIP | string | IP address of the client that accessed the web server. |
 | Computer | string | Name of the computer that the event was collected from. |
 | Confidence | string | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |
@@ -54,7 +54,7 @@ ms.date: 7/3/2023
 | FirstReportedDateTime | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | IndicatorThreatType | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | IsActive | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastReportedDateTime | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | MaliciousIP | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | ManagementGroupName | string | Name of the management group for Operations Manager agents. For other agents this is AOI-\<workspace ID\>. |

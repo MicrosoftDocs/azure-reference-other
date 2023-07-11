@@ -4,9 +4,9 @@ description: Reference for DeviceTvmSoftwareVulnerabilitiesKB table in Azure Mon
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DeviceTvmSoftwareVulnerabilitiesKB
@@ -28,10 +28,10 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AffectedSoftware | dynamic | List of all software products affected by the vulnerability. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system. |
 | CvssScore | real | Severity score assigned to the security vulnerability under the Common Vulnerability Scoring System (CVSS). |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsExploitAvailable | bool | Indicates whether exploit code for the vulnerability is publicly available. |
 | LastModifiedTime | datetime | Date and time the item or related metadata was last modified. |
 | PublishedDate | datetime | Date vulnerability was disclosed to the public. |

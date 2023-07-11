@@ -4,9 +4,9 @@ description: Reference for AVNMNetworkGroupMembershipChange table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AVNMNetworkGroupMembershipChange
@@ -32,11 +32,11 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The correlation ID associated with the network group membership change operation of network resources. |
 | DetailedMessage | string | A descriptive message that can include explanations and resolution steps in the case of failures or warnings. |
 | GroupMemberships | dynamic | Details about the Virtual Network's membership of Network Group(s), including the networkgroupId, membership type, and membership details and IDs. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | Region of the Virtual Network. |
 | LogLevel | string | Indicates the log level and can include: Info, Warning, Error. |
 | Message | string | A brief success or failure message. |

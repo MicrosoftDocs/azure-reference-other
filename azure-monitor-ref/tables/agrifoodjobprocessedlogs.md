@@ -4,9 +4,9 @@ description: Reference for AgriFoodJobProcessedLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AgriFoodJobProcessedLogs
@@ -31,14 +31,14 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | ApplicationId in identity claims. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | Logs generated as a result of operations executed using FarmBeats APIs are grouped into categories. Categories in FarmBeats are logical groupings based on either the data source the underlying APIs fetch data from or on the basis of hierarchy of entities in FarmBeats. |
 | ClientTenantId | string | TenantId in identity claims. |
 | CorrelationId | string | Unique identifier to be used to correlate logs, when available. |
 | DurationMs | real | Time it took to service the REST API request, in milliseconds. |
 | FarmerId | string | Farmer ID associated with the request, wherever applicable. |
 | InitiatedBy | string | Indicates whether the job was initiated by FarmBeats or user. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | JobId | string | User defined ID of the job. |
 | JobRunType | string | Indicates whether a job is a periodic job or a one-time job. |
 | Level | string | The severity level of the event, will be one of Informational, Warning, Error, or Critical. |

@@ -4,9 +4,9 @@ description: Reference for WebPubSubHttpRequest table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # WebPubSubHttpRequest
@@ -30,12 +30,12 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | The IP of the client or server connects to Web PubSub service. |
 | DurationMs | string | The duration in millisecond unit between the request is received and processed. |
 | Headers | string | The additional information passed by the client and the server with an HTTP request or response. |
 | HttpMethod | string | The HTTP method. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The level of the log. Can be 'Informational', 'Warning', 'Error' or 'Critical'. |
 | Location | string | The location of Azure Web PubSub service. |
 | Message | string | The message of the log event. It provides details about the event. |

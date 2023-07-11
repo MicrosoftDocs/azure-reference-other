@@ -4,9 +4,9 @@ description: Reference for AmlOnlineEndpointEventLog table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AmlOnlineEndpointEventLog
@@ -31,10 +31,10 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DeploymentName | string | The name of the deployment associated with this log record. |
 | InstanceId | string | The ID of the instance that generated this log record. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Message | string | The content of the inference-server container life cycle event. |
 | Name | string | The name of the inference-server container life cycle event. |
 | OperationName | string | The operation associated with this log record. |

@@ -4,9 +4,9 @@ description: Reference for Watchlist table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # Watchlist
@@ -28,7 +28,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AzureTenantId | string | The AAD tenant ID to which this Watchlist table belongs. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The ID for correlated events. |
 | CreatedBy | dynamic | The JSON object with the user who created the Watchlist or Watchlist item, including: Object ID, email and name. |
 | CreatedTimeUTC | datetime | The time (UTC) when the Watchlist or Watchlist item was first created. |
@@ -38,7 +38,7 @@ ms.date: 7/3/2023
 | _DTItemType | string | Distinguish between a Watchlist and a Watchlist item. As an example, a Watchlist 'RiskyUsers' can contain Watchlist item 'Name:John Doe; email:johndoe@contoso.com'. A Watchlist item type will belong to a Watchlist type and the containing Watchlist can identified using the 'WatchlistId'. |
 | _DTTimestamp | datetime | The time (UTC) when the event was generated. |
 | EntityMapping | dynamic | The JSON object with Azure Sentinel entity mapping to input columns. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastUpdatedTimeUTC | datetime | The time (UTC) when Watchlist or Watchlist item was last updated. |
 | Notes | string | The notes provided by user. |
 | Provider | string | The input provider of the Watchlist. |

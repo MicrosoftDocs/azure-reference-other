@@ -4,9 +4,9 @@ description: Reference for AEWComputePipelinesLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AEWComputePipelinesLogs
@@ -33,14 +33,14 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AnalysisId | string | The ID of your experiment study. |
 | AnalysisType | string | The type of your analysis. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | EventName | string | The event name. |
 | ExperimentationGroup | string | Experimentation group name of your experiment. |
 | ExperimentId | string | The GUID of your experiment. |
 | ExperimentStepId | string | The GUID of your experiment step. |
 | ExperimentWorkspaceId | string | The Guid ID of your experimentation workspace. |
 | FeatureId | string | The GUID of your experiment feature. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Properties | dynamic | Event properties in Experimentation Platform Compute Pipeline with json format. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ScorecardId | string | The ID of your experiment scorecard. |

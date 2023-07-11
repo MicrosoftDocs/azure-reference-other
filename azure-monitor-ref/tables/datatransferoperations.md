@@ -4,9 +4,9 @@ description: Reference for DataTransferOperations table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DataTransferOperations
@@ -30,11 +30,11 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | Correlates different log messages for the same object. |
 | Description | string | Description of the object's state as it is transferred. |
 | FlowId | string | The internal ID of the customer's flow. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ObjectLastUpdated | datetime | Timestamp (in UTC) when the object was last updated. |
 | ObjectName | string | Name of the customer's object. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

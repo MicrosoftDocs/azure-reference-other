@@ -4,9 +4,9 @@ description: Reference for AWSGuardDuty table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AWSGuardDuty
@@ -30,10 +30,10 @@ ms.date: 7/3/2023
 | AccountId | string | The AWS account ID of the owner of the source network interface for which traffic is recorded. If the network interface is created by an AWS service, for example when creating a VPC endpoint or Network Load Balancer, the record may display unknown for this field. |
 | ActivityType | string | A formatted string representing the type of activity that triggered the finding. |
 | Arn | string | Amazon resource name of the finding. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Description | string | Description of the primary purpose of the threat or attack related to the finding. |
 | Id | string | A unique Finding ID for this finding type and set of parameters. New occurrences of activity matching this pattern will be aggregated to the same ID. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Partition | string | The AWS partition in which the finding was generated. |
 | Region | string | The AWS region in which the finding was generated. |
 | ResourceDetails | dynamic | Gives details on the AWS resource that was targeted by the trigger activity. The information available varies based on resource type and action typ. |

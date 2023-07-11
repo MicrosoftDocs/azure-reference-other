@@ -4,9 +4,9 @@ description: Reference for DeviceRegistryEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DeviceRegistryEvents
@@ -29,7 +29,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | ActionType | string | Type of activity that triggered the event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | InitiatingProcessAccountDomain | string | Domain of the account that ran the initiating process. |
@@ -57,7 +57,7 @@ ms.date: 7/3/2023
 | InitiatingProcessVersionInfoOriginalFileName | string | The original file name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | The product name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | The product version in version information (image file) responsible for the event. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | PreviousRegistryKey | string | Original registry key before it was modified. |
 | PreviousRegistryValueData | string | Original data of the registry value before it was modified. |

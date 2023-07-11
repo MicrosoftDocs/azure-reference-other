@@ -4,9 +4,9 @@ description: Reference for AppMetrics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AppMetrics
@@ -33,7 +33,7 @@ ms.date: 7/3/2023
 | AppRoleInstance | string | Role instance of the application. |
 | AppRoleName | string | Role name of the application. |
 | AppVersion | string | Version of the application. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientBrowser | string | Browser running on the client device. |
 | ClientCity | string | City where the client device is located. |
 | ClientCountryOrRegion | string | Country or region where the client device is located. |
@@ -43,7 +43,7 @@ ms.date: 7/3/2023
 | ClientStateOrProvince | string | State or province where the client device is located. |
 | ClientType | string | Type of the client device. |
 | IKey | string | Instrumentation key of the Azure resource. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ItemCount | int | The number of measurements that were aggregated into trackMetric(..) call. |
 | Max | real | The maximum value in the measurements that were aggregated into trackMetric(..) call. |
 | Min | real | The minimum value in the measurements that were aggregated into trackMetric(..) call. |

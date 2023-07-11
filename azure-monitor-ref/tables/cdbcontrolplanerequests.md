@@ -4,9 +4,9 @@ description: Reference for CDBControlPlaneRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CDBControlPlaneRequests
@@ -39,7 +39,7 @@ ms.date: 7/3/2023
 | AssociatedRoleDefinitionId | string | The ID of the IAM role definition for the IAM role created for the account. |
 | BackupIntervalInMinutes | real | The time (in minutes) between consecutive backup snapshots for the Cosmos DB account. |
 | BackupRetentionIntervalInHours | real | The duration of time (in hours) for which backup snapshots are retained for the Cosmos DB account. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Cors | string | Collection of account’s Cross Origin Resource Sharing Rules |
 | CurrentWriteRegion | string | The current write region for this account (applies when a regional failover is triggered to choose a new write region). |
 | DefaultConsistencyLevel | string | The default consistency level for the Cosmos DB account. |
@@ -55,7 +55,7 @@ ms.date: 7/3/2023
 | HttpMethod | string | The HTTP method issued for this control plane operation. |
 | HttpStatusCode | int | The HTTP status code of the control plane operation. |
 | IpRangeFilter | string | The IP range filter specified as part of the VNet rules for the Cosmos DB account. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | MaxStalenessIntervalInSeconds | real | The maximum staleness value (in seconds) for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MaxStalenessPrefix | string | The max staleness prefix for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MultipleWriteLocations | bool | Boolean flag indicating if the Cosmos DB account is a multi-master account. |

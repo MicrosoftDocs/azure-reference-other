@@ -4,9 +4,9 @@ description: Reference for MicrosoftHealthcareApisAuditLogs table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # MicrosoftHealthcareApisAuditLogs
@@ -31,14 +31,14 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIdentity | dynamic | The caller's identity. |
 | CallerIdentityIssuer | string | The JWD token Issuer. |
 | CallerIdentityObjectId | string | The AAD object ID. |
 | CallerIPAddress | string | The IP address of the caller. |
 | CorrelationId | string | The correlation id of the request. |
 | FhirResourceType | string | The resource type the operation was executed for. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The location of the server that processed the request (e.g., South Central US). |
 | LogCategory | string | The audit event category. |
 | OperationDuration | int | The duration of the operation in ms. |
