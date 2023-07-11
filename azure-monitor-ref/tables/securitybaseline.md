@@ -4,9 +4,9 @@ description: Reference for SecurityBaseline table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SecurityBaseline
@@ -43,13 +43,13 @@ ms.date: 7/3/2023
 | AzId | string |  |
 | BaselineRuleType | string |  |
 | BaselineType | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CceId | string |  |
 | Computer | string |  |
 | ComputerEnvironment | string |  |
 | Description | string |  |
 | ExpectedResult | string |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ManagementGroupName | string |  |
 | OSName | string |  |
 | Resource | string |  |

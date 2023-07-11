@@ -4,9 +4,9 @@ description: Reference for DeviceTvmSoftwareInventory table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DeviceTvmSoftwareInventory
@@ -27,12 +27,12 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DeviceId | string | Unique identifier for the device in the service |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device |
 | EndOfSupportDate | datetime | End-of-support (EOS) or end-of-life (EOL) date of the software product |
 | EndOfSupportStatus | string | Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OSArchitecture | string | Architecture of the operating system running on the machine |
 | OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7 |
 | OSVersion | string | Version of the operating system running on the machine |

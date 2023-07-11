@@ -4,9 +4,9 @@ description: Reference for OLPSupplyChainEntityOperations table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # OLPSupplyChainEntityOperations
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientApplicationId | string | Application ID of the client making the API request. |
 | ClientName | string | Name of the client making the API request. |
 | ClientObjectId | string | Object ID of the client making the API request. |
@@ -39,7 +39,7 @@ ms.date: 7/3/2023
 | CustomRequestAttributes | dynamic | Client defined arbitrary data in the API request. |
 | DurationMs | real | Time it took to service the REST API request, in milliseconds. |
 | HttpStatusCode | int | HTTP status code of the API response. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | The operation name for which the log entry was created. |
 | RequestBody | dynamic | Request body of the API calls. |
 | RequestId | string | Unique identifier to be used to correlate request logs. |

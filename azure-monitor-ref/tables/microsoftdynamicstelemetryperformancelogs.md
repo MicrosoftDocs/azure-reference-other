@@ -4,9 +4,9 @@ description: Reference for MicrosoftDynamicsTelemetryPerformanceLogs table in Az
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # MicrosoftDynamicsTelemetryPerformanceLogs
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 | ActivityId | string | Unique identifier for an activity |
 | BatchJobId | long | Id of the batch job |
 | BatchJobTaskId | long | Task Id of the batch job |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallStack | string | Execution call stack |
 | Category | string | Log category |
 | ClassName | string | Name of the class |
@@ -53,7 +53,7 @@ ms.date: 7/3/2023
 | ExecutionStatus | int | Execution Status of the query |
 | ExecutionTimeSeconds | real | Execution time in seconds for the AosDatabaseSlowQuery event |
 | formName | string | Name of the form in Finance and Operations |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsValid | bool | Is it valid |
 | IsWarmEvent | bool | Is this a warm event |
 | LegalEntity | long | Legal entity |

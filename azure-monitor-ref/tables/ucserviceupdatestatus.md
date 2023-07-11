@@ -4,9 +4,9 @@ description: Reference for UCServiceUpdateStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # UCServiceUpdateStatus
@@ -27,7 +27,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CatalogId | string | Catalog ID for update. |
 | DeploymentApprovedTime | datetime | The datetime of when the update deployment was approved. |
 | DeploymentId | string | The identifier of the Deployment that is targeting this update to this device, else empty. |
@@ -35,7 +35,7 @@ ms.date: 7/3/2023
 | DeploymentName | string | Friendly name of the created deployment. |
 | DeploymentRevokeTime | datetime | The datetime of when the update deployment was Revoked. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OfferReadyTime | datetime | DateTime of OfferReady transition. If empty, not yet been Offered. |
 | PolicyCreatedTime | datetime | The datetime of when the policy was created. |
 | PolicyId | string | The policy identifier targeting the update to this device. |

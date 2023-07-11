@@ -4,9 +4,9 @@ description: Reference for SigninLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SigninLogs
@@ -45,7 +45,7 @@ ms.date: 7/3/2023
 | AuthenticationRequirement | string | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed. |
 | AuthenticationRequirementPolicies | string | Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults. |
 | AutonomousSystemNumber | string | The Autonomous System Number (ASN) of the network used by the actor. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string |  |
 | ClientAppUsed | string | The legacy client used for sign-in activity. For example: Browser, Exchange ActiveSync, Modern clients, IMAP, MAPI, SMTP, or POP. |
 | ConditionalAccessPolicies | dynamic | A list of conditional access policies that are triggered by the corresponding sign-in activity. |
@@ -61,7 +61,7 @@ ms.date: 7/3/2023
 | Identity | string | The display name of the actor identified in the signin. |
 | IPAddress | string | The IP address of the client from where the sign-in occurred. |
 | IPAddressFromResourceProvider | string | The IP address a user used to reach a resource provider, used to determine Conditional Access compliance for some policies. For example, when a user interacts with Exchange Online, the IP address Exchange receives from the user may be recorded here. This value is often null. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsInteractive | bool | Indicates whether a user sign in is interactive. In interactive sign in, the user provides an authentication factor to Azure AD. These factors include passwords, responses to MFA challenges, biometric factors, or QR codes that a user provides to Azure AD or an associated app. In non-interactive sign in, the user doesn't provide an authentication factor. Instead, the client app uses a token or code to authenticate or access a resource on behalf of a user. Non-interactive sign ins are commonly used for a client to sign in on a user's behalf in a process transparent to the user. |
 | IsRisky | bool |  |
 | Level | string |  |

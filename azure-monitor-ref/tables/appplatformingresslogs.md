@@ -4,9 +4,9 @@ description: Reference for AppPlatformIngressLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AppPlatformIngressLogs
@@ -30,12 +30,12 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BodyBytesSent | string | Number of bytes sent to a client, not counting the response header |
 | Host | string | The host name of the log |
 | HttpReferer | string | Value of the referer header |
 | HttpUserAgent | string | Value of user-agent header |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | The name of the operation represented by this event |
 | ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-\<namespace\>-\<service name\>-\<service port\> |
 | ProxyUpstreamName | string | Name of the upstream server. The format is upstream-\<namespace\>-\<service name\>-\<service port\> |

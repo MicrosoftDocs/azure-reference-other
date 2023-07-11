@@ -4,9 +4,9 @@ description: Reference for AppServiceIPSecAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AppServiceIPSecAuditLogs
@@ -24,11 +24,11 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CIp | string | IP address of the client |
 | CsHost | string | Host header of the HTTP request |
 | Details | string | Additional information |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Result | string | The result whether the access is Allowed or Denied |
 | ServiceEndpoint | string | This indicates whether the access is via Virtual Network Service Endpoint communication |

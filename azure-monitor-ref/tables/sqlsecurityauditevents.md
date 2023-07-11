@@ -4,9 +4,9 @@ description: Reference for SQLSecurityAuditEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SQLSecurityAuditEvents
@@ -36,7 +36,7 @@ ms.date: 7/3/2023
 | AffectedRows | long | Number of rows affected by the executed statement. |
 | ApplicationName | string | Name of client application which executed the statement that caused the audit event. |
 | AuditSchemaVersion | int | The audit logs schema version. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
 | ClassType | string | The type of auditable entity that the audit occurs on. |
 | ClassTypeDescription | string | The description of the class type. |
@@ -51,7 +51,7 @@ ms.date: 7/3/2023
 | EventId | string | unique Guid identifying each audit event. |
 | EventTime | datetime | The time (UTC) the event was fired at. |
 | HostName | string | The host name. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsColumnPermission | bool | Flag indicating if this is a column level permission. |
 | IsServerLevelAudit | bool | Boolean indicating whether this was generated from a server level audit or database level audit. |
 | LogicalServerName | string | Logical server name. |

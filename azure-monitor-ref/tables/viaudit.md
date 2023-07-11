@@ -4,9 +4,9 @@ description: Reference for VIAudit table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # VIAudit
@@ -32,14 +32,14 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AccountId | string | The Video Indexer account ID. |
 | AccountName | string | The Video Indexer account name. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | The caller IP address. |
 | Claims | dynamic | Caller claims details. |
 | CorrelationId | string | A unique record identifier. |
 | Description | string | The operation description. |
 | DurationMs | int | The operation duration in milliseconds. |
 | ExternalUserId | string | Caller external user Id. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The Video Indexer resource location. |
 | OperationName | string | The name of the operation that triggered the event. |
 | OperationVersion | string | The Video Indexer operations API version. |

@@ -4,9 +4,9 @@ description: Reference for ACSEmailStatusUpdateOperational table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSEmailStatusUpdateOperational
@@ -30,12 +30,12 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. This value is populated with the MessageID returned by Email send requests and can be used to identify correlated events between Email Operational tables. |
 | DeliveryStatus | string | The count of unique recipients on the Cc line. |
 | EnhancedSmtpStatusCode | string | The enhanced SMTP status code returned from the recipient email server (if available). |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsHardBounce | string | Signifies whether a delivery failure was due to a permanent or temporary issue. IsHardBounce == true means a permanent mailbox issue preventing emails from being delivered. |
 | Location | string | The location the request was processed. |
 | OperationName | string | The operation associated with log record. |

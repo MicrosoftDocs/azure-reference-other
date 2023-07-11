@@ -4,9 +4,9 @@ description: Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azu
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DeviceTvmSecureConfigurationAssessmentKB
@@ -27,7 +27,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ConfigurationBenchmarks | dynamic | List of industry benchmarks which recommend the same or similar configuration. |
 | ConfigurationCategory | string | Category or grouping to which the configuration belongs. |
 | ConfigurationDescription | string | Description of the configuration. |
@@ -35,7 +35,7 @@ ms.date: 7/3/2023
 | ConfigurationImpact | real | Rated impact of the configuration to the overall configuration score (1-10). |
 | ConfigurationName | string | Display name of the configuration. |
 | ConfigurationSubcategory | string | Subcategory or subgrouping to which the configuration belongs. Commonly, this describes specific capabilities or features. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | RelatedMitreTactics | dynamic | Related tactics from Mitre knowledge base. |
 | RelatedMitreTechniques | dynamic | Related techniques from Mitre knowledge base. |
 | RemediationOptions | string | Recommended actions to reduce or address any associated risks |

@@ -4,9 +4,9 @@ description: Reference for PowerPlatformConnectorActivity table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # PowerPlatformConnectorActivity
@@ -32,12 +32,12 @@ ms.date: 7/3/2023
 | ActorUserId | string | An alternative ID for the user identified in the UserId property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint, OneDrive for Business, and Exchange. This property may also specify the same value as the UserID property for events occurring in other services and events performed by system accounts. |
 | ActorUserType | string | The type of user that performed the operation. Possible types are: Admin, System, Application, Service Principal and Other. |
 | AdditionalInfo | dynamic | More information, for example, the environment name. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ConnectorId | string | The unique ID of the resource. Examples: custom api, and connection or gateway. |
 | EventOriginalType | string | The name of the user or admin activity that performed the activity. For a description of the most common operations/activities, see "Search the audit log" in the Office 365 Protection Center. For Exchange admin activity, this property identifies the name of the cmdlet that was run. For Dlp events, this can be "DlpRuleMatch", "DlpRuleUndo" or "DlpInfo", which are described under "DLP schema" below. |
 | EventOriginalUid | string | Unique identifier of an audit record. |
 | EventResult | string | Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceeded, or Failed. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ObjectId | string | The full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet. |
 | OrganizationId | string | The GUID for your organization's Office 365 tenant. This value will always be the same for your organization, regardless of the Office 365 service in which it occurs. |
 | RecordType | string | The type of operation indicated by the record. See the AuditLogRecordType table for details on the types of audit log records. |

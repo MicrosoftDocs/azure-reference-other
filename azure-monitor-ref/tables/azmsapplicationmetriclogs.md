@@ -4,9 +4,9 @@ description: Reference for AZMSApplicationMetricLogs table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZMSApplicationMetricLogs
@@ -34,8 +34,8 @@ ms.date: 7/3/2023
 | ActivityId | string | Internal ID, used to identify the specified activity. |
 | AuthId | string | Authentication ID configured for Event Hub. |
 | AuthType | string | Type of authentication (Azure Active Directory or SAS Policy). |
-| _BilledSize | real |  |
-| _IsBillable | string |  |
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | Operation performed on Event Hub (ConsumerLag, ActiveConnection, IncomingMessages, Etc.). |
 | Outcome | string | Result of operation. Possible values: Success/Failure. |
 | Properties | dynamic | Metadata that are specific to the operation. |

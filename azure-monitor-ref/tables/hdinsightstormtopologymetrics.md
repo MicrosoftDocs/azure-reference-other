@@ -4,9 +4,9 @@ description: Reference for HDInsightStormTopologyMetrics table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightStormTopologyMetrics
@@ -35,7 +35,7 @@ ms.date: 7/3/2023
 | AssignedMemOffHeapMB | real | MB of off heap memory assigned to the topology. |
 | AssignedMemOnHeapMB | real | MB of on heap memory assigned to the topology. |
 | AssignedTotalMemMB | real | MB of total memory assigned to the topology. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BoltId | string | The ID of the bolt. |
 | Capacity | real | If this is around 1.0, the corresponding Bolt is running as fast as it can, so you may want to increase the Bolt’s parallelism. This is (number executed * average execute latency) / measurement time. |
 | ClusterName | string | The name of the cluster. |
@@ -58,7 +58,7 @@ ms.date: 7/3/2023
 | HostName | string | Hostname of the host the record came from. |
 | Id | string | The name of the component the record is from (could be spout, bolt, or name of topology). |
 | InstanceName | string | Type of record shape (there are bolt, spout, topology, and topology_stats record shapes). |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastError | string | Last error to occur in the component. |
 | MsgTimeout | real | The number of seconds until a message times out. |
 | OperationName | string | The operation associated with log record. |

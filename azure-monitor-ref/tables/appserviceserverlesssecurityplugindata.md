@@ -4,9 +4,9 @@ description: Reference for AppServiceServerlessSecurityPluginData table in Azure
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AppServiceServerlessSecurityPluginData
@@ -30,9 +30,9 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Index | int | Available when multiple payloads exist for the same message. In that case, payloads share the same SlSecRequestId and Index defines the chronological order of payloads. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | MsgVersion | string | The version of the message schema. Used to make code changes backward- and forward- compatible. |
 | Payload | dynamic | An array of messages, where each one is a JSON string. |
 | PayloadType | string | The type of the payload. Mostly used to distinguish between messages meant for different types of security analysis. |

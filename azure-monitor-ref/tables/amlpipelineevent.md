@@ -4,9 +4,9 @@ description: Reference for AmlPipelineEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AmlPipelineEvent
@@ -42,10 +42,10 @@ ms.date: 7/3/2023
 | AmlPipelineId | string | The ID of the AML pipeline. |
 | AmlWorkspaceId | string | The unique ID of the AML workspace. |
 | AmlWorkspaceName | string | The name of the AML workspace. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | A GUID used to group together a set of related events. |
 | Identity | dynamic | The identity of the user or application that performed the operation. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | The name of the operation associated with the log entry. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultType | string | The status of the event. Typical values include Started, In Progress, Succeeded, Failed, Active, and Resolved. |

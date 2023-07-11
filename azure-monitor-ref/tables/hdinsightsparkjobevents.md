@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkJobEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightSparkJobEvents
@@ -31,13 +31,13 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterDnsName | string | The DNS name of the cluster running the job. |
 | ClusterTenantId | string | The tenant  ID of the cluster running the job. |
 | CompletionTime | datetime | The time (UTC) the job was completed. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the job. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | JobId | string | The ID of the job. |
 | JobResult | string | The result of the job. |
 | Region | string | The region of the cluster running the job. |

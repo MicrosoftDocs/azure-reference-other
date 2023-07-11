@@ -4,9 +4,9 @@ description: Reference for SynapseDXQuery table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SynapseDXQuery
@@ -31,7 +31,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationName | string | The name of the application that invoked the query |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CacheDiskHits | long | Disk cache hits |
 | CacheDiskMisses | long | Disk cache misses |
 | CacheMemoryHits | long | Memory cache hits |
@@ -48,7 +48,7 @@ ms.date: 7/3/2023
 | ExtentsMaxDataScannedTime | datetime | Maximum data scan time |
 | ExtentsMinDataScannedTime | datetime | Minimum data scan time |
 | FailureReason | string | The reason for the failure |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastUpdatedOn | datetime | The time (UTC) this command ended |
 | MemoryPeak | long | Memory peak |
 | Principal | string | The principal that invoked the query like 'aaduser=USER_ID;TENANT' |

@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkSQLExecutionEvents table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightSparkSQLExecutionEvents
@@ -31,14 +31,14 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterDnsName | string | The DNS name of the cluster running the Spark SQL execution. |
 | ClusterTenantId | string | The tenant ID of the cluster running the Spark SQL execution. |
 | EndTime | datetime | The time (UTC) the Spark SQL execution ended. |
 | ExecutionId | string | The ID of the Spark SQL execution. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the Spark SQL execution. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | PhysicalPlanDescription | string | The description of the Physical/Logical plan of the Spark SQL execution. |
 | Region | string | The region of the cluster running the Spark SQL execution. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

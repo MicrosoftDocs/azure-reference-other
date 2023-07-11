@@ -4,9 +4,9 @@ description: Reference for NetworkSessions table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # NetworkSessions
@@ -28,7 +28,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AdditionalFields | dynamic | When no respective column in the schema matches, additional fields can be stored in a JSON bag. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CloudAppId | string | The ID of the destination application for an HTTP application as identified by a proxy. This value is usually specific to the proxy used. |
 | CloudAppName | string | The name of the destination application for an HTTP application as identified by a proxy. |
 | CloudAppOperation | string | The operation the user performed in the context of the destination application for an HTTP application as identified by a proxy. This value is usually specific to the proxy used. |
@@ -102,7 +102,7 @@ ms.date: 7/3/2023
 | HttpStatusCode | string | The HTTP Status Code for HTTP/HTTPS network sessions. |
 | HttpUserAgentOriginal | string | The HTTP user agent header for HTTP/HTTPS network sessions. |
 | HttpVersion | string | The HTTP Request Version for HTTP/HTTPS network connections. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | NetworkApplicationProtocol | string | The application layer protocol used by the connection or session. |
 | NetworkBytes | long | Number of bytes sent in both directions. If both BytesReceived and BytesSent exist, BytesTotal should equal their sum. |
 | NetworkDirection | string | The direction the connection or session, into or out of the organization. |

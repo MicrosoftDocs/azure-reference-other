@@ -4,9 +4,9 @@ description: Reference for ASRReplicatedItems table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ASRReplicatedItems
@@ -31,7 +31,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActiveLocation | string | Current active location for the replicated item. If the item is in failed over state, the active location will be the secondary (target) region. Otherwise, it will be the primary region. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
 | CorrelationId | string | Correlation ID associated with the configure replication operation, used for debugging errors in enabling replication for a resource. |
 | DatasourceFriendlyName | string | Friendly name of the datasource being replicated. |
@@ -39,7 +39,7 @@ ms.date: 7/3/2023
 | DatasourceUniqueId | string | Unique ID of the datasource being replicated. |
 | FailoverReadiness | string | Denotes whether there are any configuration issues that could affect the failover operation success for the ASR replicated item. |
 | IRProgressPercentage | int | Progress percentage of the initial replication phase for the replicated item. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastHeartbeat | datetime | Time at which the ASR agent associated with the replicated item last made a call to the ASR service. Useful for debugging error scenarios where you wish to identify the time at which issues started arising. |
 | LastRpoCalculatedTime | datetime | Time at which the RPO was last calculated by the ASR service for the replicated item. |
 | LastSuccessfulTestFailoverTime | datetime | Time of the last successful faliover performed on the replicated item. |

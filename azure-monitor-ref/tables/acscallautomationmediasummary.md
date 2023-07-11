@@ -4,9 +4,9 @@ description: Reference for ACSCallAutomationMediaSummary table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSCallAutomationMediaSummary
@@ -30,9 +30,9 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the operation. |
 | OperationId | string | The ID for media events. Can be used to identify operation events between ACSCallAutomationIncomingOperations table and this. |
 | OperationName | string | The operation associated with log record. |

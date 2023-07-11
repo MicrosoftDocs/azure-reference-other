@@ -4,9 +4,9 @@ description: Reference for AppExceptions table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AppExceptions
@@ -34,7 +34,7 @@ ms.date: 7/3/2023
 | AppRoleName | string | Role name of the application. |
 | AppVersion | string | Version of the application. |
 | Assembly | string | Exception assembly. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientBrowser | string | Browser running on the client device. |
 | ClientCity | string | City where the client device is located. |
 | ClientCountryOrRegion | string | Country or region where the client device is located. |
@@ -51,7 +51,7 @@ ms.date: 7/3/2023
 | InnermostMessage | string | Message of the innermost exception. |
 | InnermostMethod | string | Method of the innermost exception. |
 | InnermostType | string | Type of the innermost exception. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ItemCount | int | Number of telemetry items represented by a single sample item. |
 | Measurements | dynamic | Application-defined measurements. |
 | Message | string | Exception message. |

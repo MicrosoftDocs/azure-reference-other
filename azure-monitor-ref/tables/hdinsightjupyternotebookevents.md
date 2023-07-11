@@ -4,9 +4,9 @@ description: Reference for HDInsightJupyterNotebookEvents table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightJupyterNotebookEvents
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterDnsName | string | The DNS name of the cluster running the application. |
 | ClusterTenantId | string | The tenant ID of the cluster running the application. |
 | Dim0 | string | Varies based of of type of event. |
@@ -47,7 +47,7 @@ ms.date: 7/3/2023
 | EventName | string | The name of the event. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the application. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Region | string | The region of the cluster running the application. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Role | string | The type of node the application running the application. |

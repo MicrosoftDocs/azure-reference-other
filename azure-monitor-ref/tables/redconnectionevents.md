@@ -4,9 +4,9 @@ description: Reference for REDConnectionEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # REDConnectionEvents
@@ -31,13 +31,13 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientIp | string | The Redis client IP address. |
 | ConnectionId | long | Unique connection ID assigned by Redis. |
 | EventEpochTime | long | The unix timestamp (number of seconds since January 1, 1970) when the event happened in UTC. This can be converted to datetime format using function unixtime_seconds_todatetime in log analytics workspace. |
 | EventStatus | int | Results of an authentication request as a status code (only applicable for authentication event). |
 | EventType | string | Type of connection event(new_conn/auth/close_conn). |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The location (i.e. region) of the Azure Cache for Redis Enterprise instance that was accessed. |
 | OperationName | string | The Redis operation associated with the log record. |
 | PrivateLinkIPv6 | string | The Redis client private link IPv6 address (if applicable). |

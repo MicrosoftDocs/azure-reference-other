@@ -4,9 +4,9 @@ description: Reference for DeviceNetworkEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DeviceNetworkEvents
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 | ActionType | string | Type of activity that triggered the event. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | InitiatingProcessAccountDomain | string | Domain of the account that ran the initiating process. |
@@ -58,7 +58,7 @@ ms.date: 7/3/2023
 | InitiatingProcessVersionInfoOriginalFileName | string | The original file name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | The product name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | The product version in version information (image file) responsible for the event. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LocalIP | string | IP address assigned to the local machine used during communication. |
 | LocalIPType | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast. |
 | LocalPort | int | TCP port on the local machine used during communication. |

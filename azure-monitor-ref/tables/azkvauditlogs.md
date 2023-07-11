@@ -4,9 +4,9 @@ description: Reference for AZKVAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZKVAuditLogs
@@ -34,7 +34,7 @@ ms.date: 7/3/2023
 | AddressAuthorizationType | string | Address type (Public IP, subnet, private connection) |
 | Algorithm | string | Algorithm used to generate the key |
 | AppliedAssignmentId | string | AssignmentId that eiher granted or denied access as part of access check |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | IP address of the client that made the request |
 | CertificateIssuerProperties | dynamic | Information about certificate issuer properties including provider, id |
 | CertificatePolicyProperties | dynamic | Information about certificate policy properties including keyproperties, secretproperties, issuerproperties |
@@ -55,7 +55,7 @@ ms.date: 7/3/2023
 | Identity | dynamic | Identity from the token that was presented in the REST API request. This is usually a user, a service principal, or the combination user+appId, as in the case of a request that results from an Azure PowerShell cmdlet. |
 | IsAccessPolicyMatch | bool | True if the tenant matches vault tenant, and if the policy explicitly gives permission to the principal attempting the access. |
 | IsAddressAuthorized | bool | Specifies whether request came from an authorized entity |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsRbacAuthorized | bool | Specifies whether an access was granted or not as part of an access check |
 | KeyProperties | dynamic | Information about key properties including type, size, curve |
 | NetworkAcls | dynamic | Information about network acls that govern access to the vault |

@@ -4,9 +4,9 @@ description: Reference for AZMSKafkaCoordinatorLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZMSKafkaCoordinatorLogs
@@ -31,9 +31,9 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientId | string | The client ID. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Message | string | The Informational or warning message, which provides detailes about actions done during the group coordiantion. |
 | NamespaceName | string | The namespace name. |
 | Operation | string | The name of operation that done during the group coordination. |
