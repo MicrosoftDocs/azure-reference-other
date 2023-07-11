@@ -4,9 +4,9 @@ description: Reference for IoTHubDistributedTracing table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # IoTHubDistributedTracing
@@ -30,14 +30,14 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerLocalTimeUtc | datetime | Creation time of the message as reported by the device local clock |
 | Category | string | Category of the log event |
 | DependencyType | string | For outgoing requests (dependencies), describes type of the dependency |
 | DurationMs | int | Duration of the operation in milliseconds |
 | EventKind | string | Kind of the event |
 | InstanceId | string | Name of the instance that processed request |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsRoutingEnabled | bool | Either true or false, indicates whether or not message routing is enabled in the IoT Hub |
 | Level | string | Level of severity of the event |
 | Location | string | Azure region in which the Iot Hub is located |

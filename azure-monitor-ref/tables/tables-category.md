@@ -4,9 +4,9 @@ description: Index for tables in Azure Monitor Logs organized by category.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # Azure Monitor Logs table reference organized by category

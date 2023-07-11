@@ -4,9 +4,9 @@ description: Reference for ServiceFabricReliableActorEvent table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ServiceFabricReliableActorEvent
@@ -33,7 +33,7 @@ ms.date: 7/3/2023
 | ApplicationName | string |  |
 | ApplicationTypeName | string |  |
 | AzureDeploymentID | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ChannelName | string |  |
 | Computer | string |  |
 | CountOfWaitingMethodCalls | long |  |
@@ -41,7 +41,7 @@ ms.date: 7/3/2023
 | EventMessage | string |  |
 | EventSourceName | string |  |
 | Exception | string |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsStateful | bool |  |
 | KeywordName | string |  |
 | Level | string |  |

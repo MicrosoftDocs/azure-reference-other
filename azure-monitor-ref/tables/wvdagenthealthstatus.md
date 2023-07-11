@@ -4,9 +4,9 @@ description: Reference for WVDAgentHealthStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # WVDAgentHealthStatus
@@ -33,9 +33,9 @@ ms.date: 7/3/2023
 | ActiveSessions | string | The number of active sessions on the VM |
 | AgentVersion | string | The version of the WVD Agent running on the Virtual Machine |
 | AllowNewSessions | string | State of the AllowNewSession settings of the host pool |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | InactiveSessions | string | The number of disconnected, or logged off sessions on the VM |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastHeartBeat | datetime | The time recorded when there was a change in the health status |
 | LastUpgradeTimeStamp | datetime | The time recorded when there was a change in the upgrade status |
 | OperationName | string | The name of the operation |

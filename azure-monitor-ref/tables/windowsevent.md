@@ -4,9 +4,9 @@ description: Reference for WindowsEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # WindowsEvent
@@ -34,7 +34,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Channel | string | The channel to which the event was logged. |
 | Computer | string | The name of the computer on which the event occurred. |
 | Correlation | string | The activity identifiers that consumers can use to group related events together. |
@@ -44,7 +44,7 @@ ms.date: 7/3/2023
 | EventLevelName | string | The rendered message string of the level specified in the event. |
 | EventOriginId | string | VM ID obtained from the Azure Instance Metadata Service (IMDS). |
 | EventRecordId | string | The record number assigned to the event when it was logged. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Keywords | string | A bitmask of the keywords defined in the event. |
 | ManagementGroupName | string | Additional information based on the resource type. |
 | Opcode | string | The opcode element is defined by the SystemPropertiesType complex type. |

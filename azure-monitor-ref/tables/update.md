@@ -4,9 +4,9 @@ description: Reference for Update table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # Update
@@ -41,7 +41,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | ApprovalSource | string |  |
 | Approved | bool |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BulletinID | string |  |
 | BulletinUrl | string |  |
 | Classification | string |  |
@@ -51,7 +51,7 @@ ms.date: 7/3/2023
 | InstallTimeAvailable | bool |  |
 | InstallTimeDeviationRangeSeconds | real |  |
 | InstallTimePredictionSeconds | real |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | KBID | string |  |
 | ManagementGroupName | string |  |
 | MSRCBulletinID | string |  |

@@ -4,9 +4,9 @@ description: Reference for AWSCloudTrail table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AWSCloudTrail
@@ -33,7 +33,7 @@ ms.date: 7/3/2023
 | AWSRegion | string | The AWS region that the request was made to. |
 | AwsRequestId_ | string | The value that identifies the request. The service being called generates this value. |
 | AwsRequestId | string | deprecated, please use AwsRequestId_ instead. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | Shows the event category that is used in LookupEvents calls. |
 | CipherSuite | string | Optional. Part of tlsDetails. The cipher suite (combination of security algorithms used) of a request. |
 | ClientProvidedHostHeader | string | Optional. Part of tlsDetails. The client-provided host name used in the service API call, which is typically the FQDN of the service endpoint. |
@@ -44,7 +44,7 @@ ms.date: 7/3/2023
 | EventSource | string | The service that the request was made to. This name is typically a short form of the service name without spaces plus .amazonaws.com. |
 | EventTypeName | string | Identifies the type of event that generated the event record. This can be the one of the following values: AwsApiCall, AwsServiceEvent, AwsConsoleAction , AwsConsoleSignIn. |
 | EventVersion | string | The version of the log event format. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ManagementEvent | bool | A Boolean value that identifies whether the event is a management event. |
 | OperationName | string | Constant value: CloudTrail. |
 | ReadOnly | bool | Identifies whether this operation is a read-only operation. |

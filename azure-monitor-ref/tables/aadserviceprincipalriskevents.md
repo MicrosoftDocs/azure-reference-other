@@ -4,9 +4,9 @@ description: Reference for AADServicePrincipalRiskEvents table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AADServicePrincipalRiskEvents
@@ -32,13 +32,13 @@ ms.date: 7/3/2023
 | ActivityDateTime | datetime | Date and time when the risky activity occurred in UTC. |
 | AdditionalInfo | dynamic | Additional information associated with the risk detection in JSON format. |
 | AppId | string | The unique identifier for the associated application. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | Correlation ID of the sign-in activity associated with the risk detection. Nullable. |
 | DetectedDateTime | datetime | Date and time when the risk was detected in UTC. |
 | DetectionTimingType | string | Timing of the detected risk , whether real-time or offline. |
 | Id | string | Unique identifier of the risk detection. Inherited from entity. |
 | IpAddress | string | Provides the IP address of the client from where the risk occurred. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | KeyIds | dynamic | The unique identifier (GUID) for the key credential associated with the risk detection. |
 | LastUpdatedDateTime | datetime | Date and time when the risk detection was last updated in UTC. |
 | Location | dynamic | Location of the sign-in. |

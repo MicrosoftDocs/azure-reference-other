@@ -4,9 +4,9 @@ description: Reference for NTATopologyDetails table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # NTATopologyDetails
@@ -41,7 +41,7 @@ ms.date: 7/3/2023
 | BackendPort | int | Backend port associated with the inbound NAT rules. The port used for the internal endpoint. Acceptable values range from 1 to 65535. |
 | BackendSubnets | string | List of space separated subnets associated with the discovered resource. |
 | BgpEnabled | bool | Whether BGP is enabled for this resource or not. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CircuitProvisioningState | string | The current provisioning state of express route circuit. |
 | ComponentType | string | Component type of the status message. Possible values are Flowlog/Topology. |
 | ConnectionStatus | string | Gateway connection status. |
@@ -67,7 +67,7 @@ ms.date: 7/3/2023
 | GatewayType | string | Gateway Type assocaited with virtual network gateway, VPN or express route. |
 | IngressBytesTransferred | long | The ingress bytes transferred in this connection. |
 | IpAddress | string | Gateway IP address of the discovered resource. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsFlowEnabled | bool | Flag to enable/disable flow logging. |
 | IsVirtualAppliance | bool | Boolean to specify if the discovered resource is a virtual appliance. |
 | LoadBalancerBackendPools | string | Pool of load balancer backend IP addresses. |

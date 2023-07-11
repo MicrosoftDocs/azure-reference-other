@@ -4,9 +4,9 @@ description: Reference for DSMAzureBlobStorageLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DSMAzureBlobStorageLogs
@@ -33,11 +33,11 @@ ms.date: 7/3/2023
 | AggregationLastEventTime | datetime | The time (UTC) when the last request was received by storage. |
 | AuthenticationHash | string | The hash of authentication token. |
 | AuthenticationType | string | The type of authentication that was used to make the request. E.g. OAuth, SAS, etc. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | The IP address of the requester. |
 | Category | string | The category of requested operation. |
 | CorrelationId | string | The ID that is used to correlate resource logs with data sensitivity logs. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The location of storage account. |
 | OperationName | string | The type of REST operation that was performed. For example: GetBlob, DeleteBlob. |
 | RequesterAppId | string | The Open Authorization (OAuth) application ID that is used as the requester. |

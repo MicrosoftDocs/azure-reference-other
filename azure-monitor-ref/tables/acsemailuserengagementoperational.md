@@ -4,9 +4,9 @@ description: Reference for ACSEmailUserEngagementOperational table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSEmailUserEngagementOperational
@@ -30,12 +30,12 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. This value is populated with the MessageID returned by Email send requests and can be used to identify correlated events between Email Operational tables. |
 | EngagementContext | string | The context of the user interaction. |
 | EngagementType | string | The type of user engagement. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The location the request was processed. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |

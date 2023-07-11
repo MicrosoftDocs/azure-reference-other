@@ -4,9 +4,9 @@ description: Reference for NTAIpDetails table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # NTAIpDetails
@@ -27,14 +27,14 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DnsDomain | string | For Malicious IPs only: Domain name associated with this IP. |
 | FaSchemaVersion | string | Schema version. |
 | FlowIntervalEndTime | datetime | End time of the flow log processing interval. |
 | FlowIntervalStartTime | datetime | Start time of the flow log processing interval. This is time from which flow interval is measured. |
 | FlowType | string | Can be AzurePublic/ExternalPublic/MaliciousFlow. |
 | Ip | string | Public IP whose information is provided in the record. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | For Azure Public IP: Azure region of virtual network/network interface/virtual machine to which the IP belongs OR Global for IP 168.63.129.16. For External Public IP and Malicious IP: 2-letter country code where IP is located (ISO 3166-1 alpha-2). |
 | PublicIpDetails | string | For AzurePublic IP: Azure Service owning the IP OR "Microsoft Virtual Public IP" for IP 168.63.129.16 . ExternalPublic/Malicious IP: WhoIS information of the IP. |
 | SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |

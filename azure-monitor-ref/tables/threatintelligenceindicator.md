@@ -4,9 +4,9 @@ description: Reference for ThreatIntelligenceIndicator table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ThreatIntelligenceIndicator
@@ -31,7 +31,7 @@ ms.date: 7/3/2023
 | Active | bool | Indicates whether indicator is active. |
 | ActivityGroupNames | string | Activity groups associated with indicator. |
 | AdditionalInformation | string | Free text additional information for indicator. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ConfidenceScore | real | Confidence rating of the indicator, from 0 to 100. |
 | Description | string | Description of the indicator. |
 | DiamondModel | string | Diamond model value for the indicator, one of adversary, capability, infrastructure or victim. |
@@ -59,7 +59,7 @@ ms.date: 7/3/2023
 | FileType | string | The file type observable. |
 | IndicatorId | string | Unique identifier for indicator, calculated by receiving system. |
 | IndicatorProvider | string | The name of the entity that provided the indicator. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | KillChainActions | bool | Indicates whether kill chain value 'actions' is set. |
 | KillChainC2 | bool | Indicates whether kill chain value 'C2' is set. |
 | KillChainDelivery | bool | Indicates whether kill chain value 'delivery' is set. |

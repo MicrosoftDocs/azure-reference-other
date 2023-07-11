@@ -4,9 +4,9 @@ description: Reference for Alert table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # Alert
@@ -41,7 +41,7 @@ ms.date: 7/3/2023
 | AlertTypeDescription | string |  |
 | AlertTypeNumber | int |  |
 | AlertValue | int |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Comments | string |  |
 | Computer | string |  |
 | Custom1 | string |  |
@@ -58,7 +58,7 @@ ms.date: 7/3/2023
 | Flags | int |  |
 | FlagsDescription | string |  |
 | HostName | string |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastModifiedBy | string | Name of the user who last modified the alert. |
 | LinkToSearchResults | string |  |
 | ManagementGroupName | string | Name of the management group for System Center Operations Manager agents.  |

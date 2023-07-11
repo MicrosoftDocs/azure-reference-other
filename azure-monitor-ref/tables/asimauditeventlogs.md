@@ -4,9 +4,9 @@ description: Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ASimAuditEventLogs
@@ -45,7 +45,7 @@ ms.date: 7/3/2023
 | ActorUserSid | string | The Windows user ID (SIDs) of the actor. |
 | ActorUserType | string | The type of the Actor. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DvcAction | string | For reporting security systems, the action taken by the system. |
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device reporting the event. |
@@ -84,7 +84,7 @@ ms.date: 7/3/2023
 | EventType | string | Describes the operation reported by the record |
 | EventVendor | string | The vendor of the product generating the event. |
 | HttpUserAgent | string | When authentication is performed over HTTP or HTTPS, this field's value is the user_agent HTTP header provided by the acting application when performing the authentication. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | NewValue | string | The new value of Object after the operation was performed. |
 | Object | string | The name of the object on which the operation identified by EventType is performed. |
 | ObjectId | string | The name of the object on which the operation identified by EventType is performed. |

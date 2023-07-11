@@ -4,9 +4,9 @@ description: Reference for MCCEventLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # MCCEventLogs
@@ -30,13 +30,13 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CacheNodeId | string | Unique CacheNode identifier. |
 | EgressMbps | real | The total data volume (MB) per second delivered including: data volume (MB) that came directly from cache (hitMbps) and data volume (MB) that Microsoft Connected Cache had to download from CDN to see the cache (missMbps). |
 | HitMbps | real | Data volume (MB) per second that came directly from Microsoft Connected Cache. |
 | HitRatioMbps | real | Ratio of Data volume (MB) per second that came directly from Microsoft Connected Cache(hitMbps) to The total data volume (MB) per second delivered(egressMbps). |
 | Hits | int | The number of times data is found in the cache. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Misses | int | The number of times data is not found in the cache and had to download from CDN. |
 | MissMbps | real | Data volume (MB) per second that Microsoft Connected Cache had to download from CDN to see the cache. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

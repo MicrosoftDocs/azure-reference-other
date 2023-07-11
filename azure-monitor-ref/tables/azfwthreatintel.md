@@ -4,9 +4,9 @@ description: Reference for AZFWThreatIntel table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZFWThreatIntel
@@ -31,11 +31,11 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Action | string | Action taken by the firewall following the Threat Intelligence hit. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DestinationIp | string | Packet's destination IP address. |
 | DestinationPort | int | Packet's destination port. |
 | Fqdn | string | Request's target address in FQDN (Fully qualified Domain Name). For example: www.microsoft.com. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsTlsInspected | bool | True if connection is TLS inspected. False otherwise. |
 | Protocol | string | Packet's network protocol. For example: UDP, TCP. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

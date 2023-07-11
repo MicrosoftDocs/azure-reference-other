@@ -4,9 +4,9 @@ description: Reference for SynapseSqlPoolDmsWorkers table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SynapseSqlPoolDmsWorkers
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BytesProcessed | int | The bytes processed of the DMS workers. |
 | Category | string | The category of the log. |
 | CpuTime | int | The cpu time for the DMS workers. |
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | DmsStepIndex | int | The DMS step index of the DMS workers. |
 | EndTime | datetime | The end time (UTC) for the DMS workers. |
 | ErrorId | string | The errorId of the DMS workers. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |
 | PdwNodeId | int | The pdw node id of the DMS workers. |

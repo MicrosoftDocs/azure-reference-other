@@ -4,9 +4,9 @@ description: Reference for AzureMetrics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AzureMetrics
@@ -22,7 +22,6 @@ ms.date: 7/3/2023
 ## Resource types
 
 - Azure AD Domain Services
-- Data Lake Analytics
 - Data Lake Storage Gen1
 - Data factories
 - Automation account
@@ -31,18 +30,20 @@ ms.date: 7/3/2023
 - Service Fabric Clusters
 - IoT Hub
 - Azure Monitor autoscale settings
+- Data Lake Analytics
 - Azure Databricks Services
-- Azure Arc Provisioned Clusters
 - Azure Arc Enabled Kubernetes
 - Virtual Machine Scale Sets
 - System Center Virtual Machine Manager
 - Azure Stack HCI
 - VMware
 - Event Grid System Topics
-- Power BI Embedded
 - Event Grid Partner Topics
-- Data Share
-- SQL Servers
+- Event Grid Partner Namespaces
+- Azure Arc Provisioned Clusters
+- Event Grid Domains
+- Power BI Embedded
+- SQL Managed Instances
 - Stream Analytics jobs
 - Search Services
 - Virtual Networks
@@ -51,8 +52,8 @@ ms.date: 7/3/2023
 - Traffic Manager Profiles
 - Public IP Addresses
 - Network Security Groups
+- Data Share
 - Network Interfaces
-- Front Doors
 - ExpressRoute Circuits
 - Device Provisioning Services
 - Azure Database for MariaDB Servers
@@ -60,19 +61,21 @@ ms.date: 7/3/2023
 - Azure Database for PostgreSQL Servers
 - Azure Database for MySQL Servers
 - SQL Databases
-- SQL Managed Instances
-- Event Grid Partner Namespaces
-- Event Grid Domains
+- SQL Servers
+- Front Doors
 - Azure Blockchain Service
-- Microsoft Connected Cache
-- Azure Virtual Network Manager
+- Azure Data Explorer Clusters
+- Container Registries
 - Azure Traffic Collector
 - Service Bus
 - Relay
+- Nexus Storage Appliances
+- Nexus Clusters
+- Nexus BareMetal Machines
 - Kubernetes Services
 - Key Vaults
+- Azure Virtual Network Manager
 - Firewalls
-- Event Hubs
 - Event Grid Topics
 - Project CI Workspace
 - Azure Cosmos DB
@@ -81,29 +84,30 @@ ms.date: 7/3/2023
 - Azure Cache for Redis
 - App Services
 - Application Gateways
+- Event Hubs
+- Microsoft Connected Cache
 - Microsoft Connected Vehicle Platform
 - Azure Database for MySQL Flexible Servers
-- Azure Database for PostgreSQL Flexible Servers
-- Dev Centers
-- Azure Data Explorer Clusters
-- Container Registries
 - SignalR
 - Storage Accounts
 - Cognitive Services
 - Azure Spring Cloud
 - Batch Accounts
 - Analysis Services
-- Bastions
 - Workload Monitor
+- Time Series Insights Environments
 - Desktop Virtualization workspaces
 - Desktop Virtualization Application Groups
 - Desktop Virtualization Host Pools
 - Synapse Workspaces
 - Azure Storage Mover
+- Azure Managed Lustre
 - Media Services
 - Machine Learning
 - Virtual machines
-- Time Series Insights Environments
+- Dev Centers
+- Azure Database for PostgreSQL Flexible Servers
+- Bastions
 - Azure API for FHIR
 
 
@@ -114,7 +118,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Average | real |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | Deprecated |
 | Category | string | Deprecated |
 | Confidence | string | Deprecated |
@@ -125,7 +129,7 @@ ms.date: 7/3/2023
 | FirstReportedDateTime | string | Deprecated |
 | IndicatorThreatType | string | Deprecated |
 | IsActive | string | Deprecated |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastReportedDateTime | string | Deprecated |
 | MaliciousIP | string | Deprecated |
 | Maximum | real | Maximum value collected during in the time range. |

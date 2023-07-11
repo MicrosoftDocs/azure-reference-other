@@ -4,9 +4,9 @@ description: Reference for HDInsightHiveQueryAppStats table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightHiveQueryAppStats
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientIpAddress | string | The query client's IP address. |
 | ClusterName | string | Name of cluster. |
 | ClusterType | string | Type of cluster (e.g. LLAP or Hadoop). |
@@ -41,7 +41,7 @@ ms.date: 7/3/2023
 | ExecutionMode | string | The execution mode of the query. |
 | HiveInstanceType | string | The type of hive instance running the query. |
 | HostName | string | Name of host where log was emitted. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsMapReduce | bool | True if the query is a MapReduce query. |
 | IsTez | bool | True if the query is a Tez query. |
 | MetricName | string | Name of the metric for the record (e.g. AppsCompleted, AppsKilled, AppsFailed , etc). |

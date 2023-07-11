@@ -4,9 +4,9 @@ description: Reference for HDInsightHiveTezAppStats table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightHiveTezAppStats
@@ -34,7 +34,7 @@ ms.date: 7/3/2023
 | ApplicationId | string | The ID of the Application that the metrics describe. |
 | ApplicationName | string | The name of the application that the metrics describe. |
 | ApplicationType | string | The type of application. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterId | long | The final status of the application if it has reached a terminal state. |
 | ClusterName | string | Name of cluster. |
 | ClusterType | string | Name of cluster. |
@@ -43,7 +43,7 @@ ms.date: 7/3/2023
 | FinalStatus | string | The final status of the application if it has reached a terminal state. |
 | FinishedTime | long | The time the application finished. |
 | HostName | string | Name of host where log was emitted. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LogAggregationStatus | string | The log aggregation status. |
 | MetricName | string | Name of the metric for the record (e.g. AppsCompleted, AppsKilled, AppsFailed , etc). |
 | MetricValue | real | Value of metric in the record. |

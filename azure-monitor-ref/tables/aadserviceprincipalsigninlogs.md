@@ -4,9 +4,9 @@ description: Reference for AADServicePrincipalSignInLogs table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AADServicePrincipalSignInLogs
@@ -31,7 +31,7 @@ ms.date: 7/3/2023
 | AppId | string | Unique GUID representing the app ID in the Azure Active Directory |
 | AuthenticationContextClassReferences | string | The authentication contexts of the sign-in |
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | Category of the sign-in event |
 | ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
 | ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
@@ -41,7 +41,7 @@ ms.date: 7/3/2023
 | Id | string | Unique ID representing the sign-in activity |
 | Identity | string | The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal |
 | IPAddress | string | IP address of the client used to sign in |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the event |
 | Location | string | The region of the resource emitting the event |
 | LocationDetails | string | Details of the sign-in location |

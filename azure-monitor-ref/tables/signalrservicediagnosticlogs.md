@@ -4,9 +4,9 @@ description: Reference for SignalRServiceDiagnosticLogs table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SignalRServiceDiagnosticLogs
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | The IP of the client or server connects to SignalR service. |
 | Collection | string | The collection of the log event. Can be 'Connection', 'Authorization', 'Throttling' or 'Message'. 'Connection' collection includes the logs about the lifetime of connections. 'Authorization' includes the logs about the authorization of connections. 'Throttling' includes the logs about the throttled connections. 'Message' includes the logs about the tracing messages. |
 | ConnectionId | string | The connection ID of the connection connected to SignalR service. |
@@ -38,7 +38,7 @@ ms.date: 7/3/2023
 | GroupName | string | A group can have any number of clients, and a client can be a member of any number of groups. |
 | HubName | string | The SignalR Hubs API enables you to call methods on connected clients from the server. |
 | InvocationId | string | The invocation ID of the message. It's only available in ASP.NET SignalR. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The level of the log. Can be 'Informational', 'Warning', 'Error' or 'Critical'. |
 | Location | string | The location of Azure SignalR service. |
 | Message | string | The message of the log event. It describes the log event in detail. |

@@ -4,9 +4,9 @@ description: Reference for DeviceLogonEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DeviceLogonEvents
@@ -33,7 +33,7 @@ ms.date: 7/3/2023
 | ActionType | string | Type of activity that triggered the event. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | FailureReason | string | Information explaining why the recorded action failed. |
@@ -62,7 +62,7 @@ ms.date: 7/3/2023
 | InitiatingProcessVersionInfoOriginalFileName | string | Original file name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | Product name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | Product version from the version information of the process (image file) responsible for the event. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsLocalAdmin | bool | Boolean indicator of whether the user is a local administrator on the machine. |
 | LogonId | long | Identifier for a logon session. This identifier is unique on the same machine only between restarts. |
 | LogonType | string | Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service. |

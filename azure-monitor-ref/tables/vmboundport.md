@@ -4,9 +4,9 @@ description: Reference for VMBoundPort table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # VMBoundPort
@@ -38,12 +38,12 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AgentId | string | Unique agent GUID for the agent reporting data on the server. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BytesReceived | long | Bytes received on the port |
 | BytesSent | long | Bytes sent on the port |
 | Computer | string | Name of the server |
 | Ip | string | Port IP address. Can be wildcard IP 0.0.0.0. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsWildcardBind | bool | Specifies whether connection made as a wildcard bind request. |
 | LinksEstablished | long | Count of links established on the port. |
 | LinksLive | long | Count of live links at the end of the time period recorded. |

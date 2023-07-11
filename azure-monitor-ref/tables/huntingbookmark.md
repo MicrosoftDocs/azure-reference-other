@@ -4,9 +4,9 @@ description: Reference for HuntingBookmark table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HuntingBookmark
@@ -27,7 +27,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BookmarkId | string | Guid - the bookmark ARM resource name |
 | BookmarkName | string | Bookmark name given by the user |
 | BookmarkType | string | Can be used to mark bookmark origin - currently not used |
@@ -35,7 +35,7 @@ ms.date: 7/3/2023
 | CreatedTime | datetime | The timestamp of bookmark first creation time |
 | Entities | string | A serialized JSON of entities mapped by this bookmark |
 | EventTime | datetime | The timestamp of the original event that is bookmarked |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastUpdatedTime | datetime | The timestamp of bookmark last update time |
 | Notes | string | Notes provided by user |
 | QueryEndTime | datetime | Query time range end time |

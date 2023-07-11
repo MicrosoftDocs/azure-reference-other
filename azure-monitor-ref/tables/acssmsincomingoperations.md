@@ -4,9 +4,9 @@ description: Reference for ACSSMSIncomingOperations table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSSMSIncomingOperations
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
@@ -38,7 +38,7 @@ ms.date: 7/3/2023
 | DeliveryAttempts | int | The number of attempts made to deliver this message. |
 | DurationMs | int | The duration of the operation in milliseconds. |
 | IncomingMessageLength | int | The number of characters in the incoming message. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the operation. |
 | MessageId | string | The identifier of the outgoing Sms message. Only present if message processed. |
 | Method | string | The method used in the request. |

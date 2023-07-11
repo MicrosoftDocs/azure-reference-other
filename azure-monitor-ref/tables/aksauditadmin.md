@@ -4,9 +4,9 @@ description: Reference for AKSAuditAdmin table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AKSAuditAdmin
@@ -34,8 +34,8 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | Annotations | dynamic | An unstructed key-value map associated with this audit event. These annotations are set by plugins as part of the request serving chain and are included at the Metadata event level. |
 | AuditId | string | Unique audit ID that is generated for each request. |
-| _BilledSize | real |  |
-| _IsBillable | string |  |
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | Level (Metadata, Request, RequestResponse) of the audit event. |
 | ObjectRef | dynamic | The Kubernetes object reference this event was targeted for. This field does not apply for list requests nor non-resource requests. |
 | PodName | string | Name of the pod emitting this audit event. |
