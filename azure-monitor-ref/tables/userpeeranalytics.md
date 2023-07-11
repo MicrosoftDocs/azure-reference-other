@@ -4,9 +4,9 @@ description: Reference for UserPeerAnalytics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # UserPeerAnalytics
@@ -28,8 +28,8 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AADTenantId | string | Unique identifier of the Azure Tenant |
-| _BilledSize | real |  |
-| _IsBillable | string |  |
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | PeerUserId | string | Unique identifier of the peer of the primary user |
 | PeerUserName | string | User name of the peer of the primary user |
 | PeerUserPrincipalName | string | User principal name of the peer of the primary user |

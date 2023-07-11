@@ -4,9 +4,9 @@ description: Reference for LinuxAuditLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # LinuxAuditLog
@@ -45,7 +45,7 @@ ms.date: 7/3/2023
 | AuditID | string |  |
 | audit_user | string |  |
 | auid | long |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | cmd | string |  |
 | comm | string |  |
 | Computer | string |  |
@@ -65,7 +65,7 @@ ms.date: 7/3/2023
 | group | string |  |
 | hostname | string |  |
 | icmptype | string |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | key | string |  |
 | ManagementGroup | string |  |
 | ManagementGroupName | string |  |

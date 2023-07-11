@@ -4,9 +4,9 @@ description: Reference for EnrichedMicrosoft365AuditLogs table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # EnrichedMicrosoft365AuditLogs
@@ -31,13 +31,13 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | ActorUserType | string | The type of user that performed the operation. Possible types includes: Admin, System, Application, Service Principal and Other. |
 | AdditionalProperties | dynamic | Additional activity fields |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientIp | string | The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. For some services, the value displayed in this property might be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by person who performed the activity. Also, for Azure Active Directory-related events, the IP address isn't logged and the value for the ClientIP property is null. |
 | DeviceId | string | The ID of the source device as reported in the record. |
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
 | EventId | string | Unique identifier of an audit record. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ObjectId | string | For SharePoint and OneDrive for business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet. |
 | OperationName | string | The name of the user or admin activity that performed the activity. |
 | OrganizationId | string | The GUID for your organization's Office 365 tenant. This value will always be the same for your organization, regardless of the Office 365 service in which it occurs. |

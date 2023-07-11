@@ -4,9 +4,9 @@ description: Reference for DynamicEventCollection table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DynamicEventCollection
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 | AccountSid | string | Security identifier (SID) of the account. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | EventId | long | Contains the unique event identifier. |
@@ -46,7 +46,7 @@ ms.date: 7/3/2023
 | InitiatingProcessParentFileName | string | Name of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessParentId | long | Process ID (PID) of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessSHA1 | string | SHA-1 hash of the process (image file) that initiated the event. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LocalIP | string | IP address assigned to the local machine used during communication. |
 | LocalPort | int | TCP port on the local machine used during communication. |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |

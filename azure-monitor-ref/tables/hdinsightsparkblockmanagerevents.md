@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkBlockManagerEvents table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightSparkBlockManagerEvents
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AddedTime | datetime | The time (UTC) the event was added. |
 | ApplicationId | string | The application ID of the application producing the record. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BlockHost | string | The block host. |
 | BlockManagerHost | string | The host where the Block Manager is running. |
 | ClusterDnsName | string | The DNS name of the cluster the Block Manager is running on. |
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | ExecutorId | string | The ID of the executor running the application. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node the Block Manager is running on. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | MaxMemory | long | The max memory usage from the event. |
 | MaxOffHeapMemory | long | The max off heap memory usage from the event. |
 | MaxOnHeapMemory | long | The max on heap memory usage from the event. |

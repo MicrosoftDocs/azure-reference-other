@@ -4,9 +4,9 @@ description: Reference for AppServiceAppLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AppServiceAppLogs
@@ -30,13 +30,13 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | Log category name |
 | ContainerId | string | Application container id |
 | CustomLevel | string | Verbosity level of log |
 | ExceptionClass | string | Application class from where log message is emitted  |
 | Host | string | Host where the application is running |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | Verbosity level of log mapped to standard levels (Informational, Warning, Error, or Critical) |
 | Logger | string | Application logger used to emit log message |
 | Message | string | Log message |

@@ -4,9 +4,9 @@ description: Reference for ACSEmailSendMailOperational table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSEmailSendMailOperational
@@ -32,11 +32,11 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AttachmentsCount | int | The count of attachments attached to a request. |
 | BccRecipientsCount | int | The count of unique recipients on the 'Bcc' line. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CcRecipientsCount | int | The count of unique recipients on the 'Cc' line. |
 | CorrelationId | string | The ID for correlated events. This value is populated with the MessageID returned by Email send requests and can be used to identify correlated events between Email Operational tables. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The location the request was processed. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |

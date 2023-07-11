@@ -4,9 +4,9 @@ description: Reference for CassandraLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CassandraLogs
@@ -27,7 +27,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CassandraKey | string | Cassandra key. |
 | CassandraKeyspace | string | Cassandra keyspace. |
 | CassandraTable | string | Cassandra table. |
@@ -52,7 +52,7 @@ ms.date: 7/3/2023
 | Exception | string | Throwable trace bound to the logging event, by default this will output the full trace as one would normally find with a call to Throwable.printStackTrace(). |
 | GCType | string | The type of garbage collection, e.g. ParNew, MarkSweepCompact, G1 Old. |
 | HostId | string | The GUID assigned in the Cassandra cluster to uniquely identify this node. See the system.local table or nodetool status to find information about the host by its HostId. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | Severity level of the event, will be one of INFO, WARM, ERROR, or OFF. |
 | LiveCells | int | The number of live cells. |
 | MaxMemory | long | The maximum amount of memory (in bytes) that can be used for memory management. |

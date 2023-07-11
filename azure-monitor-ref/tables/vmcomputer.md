@@ -4,9 +4,9 @@ description: Reference for VMComputer table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # VMComputer
@@ -60,7 +60,7 @@ ms.date: 7/3/2023
 | AzureVmScaleSetInstanceId | string | For scale sets the instance id of the server. |
 | AzureVmScaleSetName | string | For scale sets the name of the scale set. |
 | AzureVmScaleSetResourceId | string | For scale sets the resource id of the scale set. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BootTime | datetime | The boot time in UTC |
 | Computer | string | The name of the computer. |
 | Cpus | int | The number of CPUs |
@@ -77,7 +77,7 @@ ms.date: 7/3/2023
 | Ipv4DefaultGateways | dynamic | A list of the server's IPv4 default gateways. |
 | Ipv4SubnetMasks | dynamic | A list of the server's IPv4 subnet masks. |
 | Ipv6Addresses | dynamic | A list of the server's IPv6 addresses |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | MacAddresses | dynamic | A list of the server's MAC addresses |
 | Machine | string | AgentId with m- prepended. |
 | OperatingSystemFamily | string | Value will be windows or linux |

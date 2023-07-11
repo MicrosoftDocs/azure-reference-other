@@ -4,9 +4,9 @@ description: Reference for SynapseDXSucceededIngestion table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SynapseDXSucceededIngestion
@@ -30,11 +30,11 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Database | string | The name of the database holding the target table |
 | IngestionSourceId | string | The ingestion source ID |
 | IngestionSourcePath | string | Azure blob storage URI |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationId | string | The ingestion's operation ID |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultType | string | Final state of this data ingestion operation like 'Succeeded' |

@@ -4,9 +4,9 @@ description: Reference for WVDConnectionGraphicsDataPreview table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # WVDConnectionGraphicsDataPreview
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientSkippedFramesPercentage | int | The percentage of frames dropped because of slow client decoding in the second with the highest dropped frames in the last evaluated connection time interval |
 | CompressedFrameSizeInBytes | int | The compressed size (bytes) of the frame with highest E2E delay in the last evaluated connection time interval |
 | CorrelationId | string | The correlation ID for the activity |
@@ -39,7 +39,7 @@ ms.date: 7/3/2023
 | EndToEndDelayInMs | int | The highest end-to-end delay (milliseconds) of the frames sent in the last evaluated connection time interval. E2E delay is the delay from the time when a frame is captured on the server until the time frame is rendered on the client |
 | EstAvailableBandwidthKBps | int | The average of estimated network bandwidth (kilobyte per second) in the last evaluated connection time interval |
 | EstRoundTripTimeInMs | int | The average of estimated network round trip times (milliseconds) in the last evaluated connection time interval |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | NetworkSkippedFramesPercentage | int | The percentage of frames dropped because of insufficient network bandwidth in the second with the highest dropped frames in the last evaluated connection time interval |
 | RenderingTimeOnClientInMs | int | The rendering time (milliseconds) of the frame with highest E2E delay in the last evaluated connection time interval |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

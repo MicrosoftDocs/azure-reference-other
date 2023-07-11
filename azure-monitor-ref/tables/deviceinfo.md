@@ -4,9 +4,9 @@ description: Reference for DeviceInfo table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DeviceInfo
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 | AadDeviceId | string | Unique identifier for the device in Azure Active Directory. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AssetValue | string | Indicates the value of a device as assigned by the user. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientVersion | string | Version of the endpoint agent or sensor running on the machine. |
 | DeviceCategory | string | Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown. |
 | DeviceId | string | Unique identifier for the device in the service. |
@@ -41,7 +41,7 @@ ms.date: 7/3/2023
 | ExclusionReason | string | Indicates the reason for device exclusion. |
 | ExposureLevel | string | Indicates the exposure level of a device. |
 | IsAzureADJoined | bool | Boolean indicator of whether machine is joined to the Azure Active Directory. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsExcluded | bool | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences. |
 | IsInternetFacing | bool | Indicates whether the device is internet-facing. |
 | JoinType | string | The device's Azure Active Directory join type. |

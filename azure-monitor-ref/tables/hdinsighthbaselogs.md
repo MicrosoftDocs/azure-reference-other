@@ -4,9 +4,9 @@ description: Reference for HDInsightHBaseLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightHBaseLogs
@@ -30,12 +30,12 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterName | string | Name of cluster. |
 | ClusterType | string | Name of cluster. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | HostName | string | Name of host where log was emitted. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LogLevel | string | log level of message (INFO, WARN, ERROR, etc.). |
 | LogType | string | The name of the log file that a record came from (e.g. RegionServer, HMaster). |
 | Message | string | message from HBase log. |

@@ -4,9 +4,9 @@ description: Reference for SynapseSqlPoolSqlRequests table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SynapseSqlPoolSqlRequests
@@ -30,13 +30,13 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
 | Command | string | The command of the SQL requests. |
 | DistributionId | int | The distribution id of the SQL requests. |
 | EndTime | datetime | The end time (UTC) for the SQL requests. |
 | ErrorId | string | The error id of the SQL requests. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |
 | PdwNodeId | int | The PdwNodeId of the SQL requests. |

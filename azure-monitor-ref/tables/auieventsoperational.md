@@ -4,9 +4,9 @@ description: Reference for AUIEventsOperational table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AUIEventsOperational
@@ -26,7 +26,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AdditionalInformation | string | Contains AffectedEntities, MessageCode and entityCount. |
 | Audience | string | The audience for which the accessToken was requested for. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIPAddress | string | Caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
 | CallerObjectId | string | Azure Active Directory ObjectId of the caller. |
 | Category | string | Log category of the event. Either Operational or Audit. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with Audit, everything else with Operational. |
@@ -39,7 +39,7 @@ ms.date: 7/3/2023
 | FriendlyName | string | User friendly Name of the Export or the Entity which is processed. |
 | Identifier | string | Depending on the OperationType in can be: the guid of the export configuration, the guid of the Enrichment, the Entity Name. |
 | InstanceId | string | Customer Insights (AUI) instance ID. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | Severity level of the event, is one of: Informational, Warning or Error. |
 | Method | string | HTTP method: GET/POST/PUT/PATCH/HEAD |
 | OperationName | string | Name of the operation represented by this event. {OperationType}.[WorkFlow\|Task][Started\|Completed]. |

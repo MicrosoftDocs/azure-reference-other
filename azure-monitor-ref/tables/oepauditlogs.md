@@ -4,9 +4,9 @@ description: Reference for OEPAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # OEPAuditLogs
@@ -33,10 +33,10 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | Action | string | Action performed,which can be CREATE,PUBLISH,UPDATE,DELETE,READ and JOB_RUN. |
 | ActionId | string | ID of the action performed. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | Logs generated as a result of operations executed using OAK APIs are grouped into categories. Categories in OAK are logical groupings based on the data source. |
 | DataPartitionId | string | Represents the data partition ID. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The region of the resource emitting the event. |
 | Message | string | The message about the operation. |
 | OperationDescription | string | Description of operation that was performed. |

@@ -4,9 +4,9 @@ description: Reference for CDBPartitionKeyRUConsumption table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CDBPartitionKeyRUConsumption
@@ -32,10 +32,10 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AccountName | string | The name of the Cosmos DB account containing the physical partition. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CollectionName | string | The name of the Cosmos DB collection, which contains the partition. |
 | DatabaseName | string | The name of the Cosmos DB database, which contains the partition. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationName | string | The data plane operation that consumed RUs (Request Units) for this logical partition key. |
 | PartitionKey | string | The logical partition key for which RU (Request Unit) consumption statistics were retrieved. |
 | PartitionKeyRangeId | string | The physical partition containing the logical partition key against which the RU (Request Unit) consuming operation was issued. |

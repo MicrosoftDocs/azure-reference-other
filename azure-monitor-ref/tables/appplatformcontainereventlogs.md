@@ -4,9 +4,9 @@ description: Reference for AppPlatformContainerEventLogs table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AppPlatformContainerEventLogs
@@ -31,13 +31,13 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | App | string | The name of the application that emitted the container event. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Count | int | The count of this container event happened. |
 | Deployment | string | The name of the deployment that emitted the container event. |
 | Event | string | The name of container event, including: 'Backoff', 'Pulled', 'Created', 'Started', 'Unhealty' and so on. |
 | FirstTimestamp | datetime | The timestamp when this container event was first seen. |
 | Instance | string | The name of the instance that emitted the container event. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastTimestamp | datetime | The timestamp when this container event was last seen. |
 | Message | string | The detailed message of the container event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

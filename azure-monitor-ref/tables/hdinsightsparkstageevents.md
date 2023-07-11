@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkStageEvents table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightSparkStageEvents
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
 | AttemptId | string | The Id of the stage attempt. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClusterDnsName | string | The DNS name of the cluster running the stage. |
 | ClusterTenantId | string | The tenant ID of the cluster running the stage. |
 | CompletionTime | datetime | The time (UTC) the stage was completed. |
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | FailureReason | string | The reason for failure if the stage failed. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node running the stage. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | RDDInfo | string | Json containing information about RDDs used in the stage. |
 | Region | string | The region of the cluster running the stage. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

@@ -4,9 +4,9 @@ description: Reference for UAUpgradedComputer table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # UAUpgradedComputer
@@ -27,7 +27,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Computer | string |  |
 | ComputerID | string |  |
 | ConfigMgrClientID | string |  |
@@ -35,7 +35,7 @@ ms.date: 7/3/2023
 | DeploymentErrorDetails | string |  |
 | DeploymentStatus | string |  |
 | HoursToUninstall | int |  |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastScan | datetime |  |
 | Manufacturer | string |  |
 | Model | string |  |

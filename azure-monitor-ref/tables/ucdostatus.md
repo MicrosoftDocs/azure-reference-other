@@ -4,9 +4,9 @@ description: Reference for UCDOStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # UCDOStatus
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | AzureADDeviceId | string | A GUID corresponding to the AAD tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD device ID. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BWOptPercent28Days | real | Bandwidth optimization (as a percentage of savings of total bandwidth otherwise incurred) as a result of using delivery optimization for this device, computed on a rolling 28-day basis. |
 | BWOptPercent7Days | real | Bandwidth optimization (as a percentage of savings of total bandwidth otherwise incurred) as a result of using delivery optimization for this device, computed on a rolling 7-day basis. |
 | BytesFromCache | long | Total number of bytes downloaded from cache. |
@@ -48,7 +48,7 @@ ms.date: 7/3/2023
 | DownloadModeSrc | string | The source of the download mode configuration. |
 | GlobalDeviceId | string | Microsoft global device identifier. This is a identifier used by Microsoft internally. |
 | GroupID | string | The delivery optimization group ID. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | ISP | string | The internet service provider estimation. |
 | LastCensusSeenTime | datetime | A DateTime corresponding to the last time the device sent data to Microsoft. Indicates freshness of any fields of this record. |
 | NoPeersCount | long | The count of peers this device interacted with. |

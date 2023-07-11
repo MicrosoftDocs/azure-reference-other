@@ -4,9 +4,9 @@ description: Reference for CDBDataPlaneRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CDBDataPlaneRequests
@@ -36,13 +36,13 @@ ms.date: 7/3/2023
 | AccountName | string | The name of the Cosmos DB account. |
 | ActivityId | string | The unique identifier (GUID) for this data plane operation |
 | AuthTokenType | string | The authorization type (System Read/Write key) for this request by the Cosmos DB Gateway service when running in Gateway mode or using the REST API. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientIpAddress | string | The IP address of the client VM issuing the request. |
 | CollectionName | string | The Cosmos DB container against which the request was issued. |
 | ConnectionMode | string | The connection mode used by the client issuing the request – (Direct or Gateway mode). |
 | DatabaseName | string | The Cosmos DB database against which the request was issued. |
 | DurationMs | real | The server-side execution time (in milliseconds) for this request. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | KeyType | string | The authorization type (Primary/Secondary Read/Write key) for this request when running in Direct mode. |
 | OperationName | string | The specific data plane operation executed against the account. |
 | PartitionId | string | The physical partition ID for the Cosmos DB container against which the request was issued. |

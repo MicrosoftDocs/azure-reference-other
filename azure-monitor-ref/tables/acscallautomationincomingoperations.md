@@ -4,9 +4,9 @@ description: Reference for ACSCallAutomationIncomingOperations table in Azure Mo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ACSCallAutomationIncomingOperations
@@ -30,12 +30,12 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallConnectionId | string | Id of the call connection/leg, if available. |
 | CallerIpAddress | string | The caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | int | The duration of the operation in milliseconds. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the operation. |
 | OperationId | string | The ID for media events. Can be used to identify operation events between ACSCallAutomationMediaSummary table and this. |
 | OperationName | string | The operation associated with log record. |

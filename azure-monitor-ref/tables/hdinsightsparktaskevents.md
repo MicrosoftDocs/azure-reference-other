@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkTaskEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightSparkTaskEvents
@@ -32,7 +32,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | ApplicationId | string | The application ID of the application producing the record. |
 | AttemptId | string | The ID of task attempt. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BytesRead | long | The number bytes read during the task. |
 | BytesWritten | long | The number of bytes written by the task. |
 | ClusterDnsName | string | The DNS name of the cluster running the task. |
@@ -49,7 +49,7 @@ ms.date: 7/3/2023
 | Host | string | The FQDN of the host running the task. |
 | InputMetrics | long | The metrics associated with the task input. |
 | IpAddress | string | The IP Address of the node running the task. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | JvmGcTime | long | The time the JVM spent garbage collecting. |
 | Killed | bool | Boolean describing whether the task was killed. |
 | LaunchTime | datetime | The time (UTC) the task was launched. |

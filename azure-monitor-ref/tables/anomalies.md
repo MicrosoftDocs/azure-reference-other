@@ -4,9 +4,9 @@ description: Reference for Anomalies table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # Anomalies
@@ -33,7 +33,7 @@ ms.date: 7/3/2023
 | AnomalyTemplateId | string | The ID of the Anomaly template that generated this anomaly. |
 | AnomalyTemplateName | string | The name of the Anomaly template that generated this anomaly. |
 | AnomalyTemplateVersion | string | The version of the Anomaly template that generated this anomaly. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Description | string | The description of the anomaly. |
 | DestinationDevice | string | The destination device for which the anomaly was generated. |
 | DestinationIpAddress | string | The destination ip address for which the anomaly was generated. |
@@ -44,7 +44,7 @@ ms.date: 7/3/2023
 | ExtendedLinks | dynamic | List of links pointing to the data that generated the anomaly. |
 | ExtendedProperties | dynamic | JSON object with additional data on the anomaly as key-value pairs. |
 | Id | string | The ID of the generated anomaly. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | RuleConfigVersion | string | The configuration version of the Anomaly analytics rule that generated this anomaly. |
 | RuleId | string | The ID of the Anomaly analytics rule that generated this anomaly. |
 | RuleName | string | The name of the Anomaly analytics rule that generated this anomaly. |

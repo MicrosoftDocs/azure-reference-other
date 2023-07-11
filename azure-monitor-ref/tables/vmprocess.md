@@ -4,9 +4,9 @@ description: Reference for VMProcess table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # VMProcess
@@ -37,7 +37,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AgentId | string | Unique ID for the dependency agent installed on the server. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CommandLine | string | The command line |
 | CompanyName | string | The name of the company |
 | Computer | string | The name of the computer. |
@@ -49,7 +49,7 @@ ms.date: 7/3/2023
 | FirstPid | int | The first PID in the process pool |
 | Group | string | The process group name for the process |
 | InternalName | string | The internal name |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Machine | string | The machine name of the server. |
 | Process | string | The name of the process. |
 | ProductName | string | The name of the product |

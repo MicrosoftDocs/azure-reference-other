@@ -4,9 +4,9 @@ description: Reference for IntuneDevices table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # IntuneDevices
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 | AADTenantId | string | The AAD Tenant ID |
 | AndroidPatchLevel | string | The Android patch level of the device |
 | BatchId | string | The unique ID for the exported report |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CategoryName | string | The category name of the device |
 | CompliantState | string | The compliant state of the device |
 | CreatedDate | string | The date and time of the device entry was created |
@@ -44,7 +44,7 @@ ms.date: 7/3/2023
 | IMEI | string | The international mobile equipment identifier of the device |
 | InGracePeriodUntil | string | The device grace period end time |
 | IntuneAccountId | string | The Intune Account ID |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | JailBroken | string | String describing whether the device is jail broken |
 | JoinType | string | The device join type |
 | LastContact | string | The date and time of last contact |

@@ -4,9 +4,9 @@ description: Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AppServiceHTTPLogs
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CIp | string | IP address of the client |
 | ComputerName | string | The name of the server on which the log file entry was generated. |
 | Cookie | string | Cookie on HTTP request |
@@ -40,7 +40,7 @@ ms.date: 7/3/2023
 | CsUriQuery | string | URI query on HTTP request |
 | CsUriStem | string | The target of the request |
 | CsUsername | string | The name of the authenticated user on HTTP request |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Referer | string | The site that the user last visited. This site provided a link to the current site |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Result | string | Success / Failure of HTTP request |

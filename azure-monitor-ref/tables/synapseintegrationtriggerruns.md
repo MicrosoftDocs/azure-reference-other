@@ -4,9 +4,9 @@ description: Reference for SynapseIntegrationTriggerRuns table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # SynapseIntegrationTriggerRuns
@@ -31,10 +31,10 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | Annotations | dynamic | The annotation details of the log record. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
 | CorrelationId | string | The correlationId for the log record. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Level | string | The log type info level of the record. |
 | Location | string | The location of the resource in the cloud where this log is originated. |
 | OperationName | string | The operation associated with log record. |

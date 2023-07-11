@@ -4,9 +4,9 @@ description: Reference for WVDCheckpoints table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # WVDCheckpoints
@@ -33,9 +33,9 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActivityType | string | The type of activity for which this checkpoint was reported. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The correlation Id for the activity. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Name | string | The name of the checkpoint. |
 | Parameters | dynamic | The parameters for the checkpoint. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

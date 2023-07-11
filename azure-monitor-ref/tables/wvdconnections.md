@@ -4,9 +4,9 @@ description: Reference for WVDConnections table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # WVDConnections
@@ -31,7 +31,7 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | AadTenantId | string | The AAD tenant Id of the user. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ClientOS | string | The OS of the client that is connecting (if available). |
 | ClientSideIPAddress | string | The remote IP address from the client side. |
 | ClientType | string | The type of the client that is connecting (if available). |
@@ -39,7 +39,7 @@ ms.date: 7/3/2023
 | ConnectionType | string | The type of connection - either RAIL (RemoteApp Integrated Locally) or Desktop. |
 | CorrelationId | string | The activity Id. |
 | GatewayRegion | string | The region of the WVD Gateway for the server side user connection. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | IsClientPrivateLink | string | True if the client side of this connection used a private link endpoint during orchestration. |
 | IsSessionHostPrivateLink | string | True if the session host side of this connection used a private link endpoint during orchestration. |
 | PredecessorConnectionId | string | The predecessor Correlation Id of the connection, if the current connection is an auto-reconnect. |

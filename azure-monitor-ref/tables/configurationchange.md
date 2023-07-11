@@ -4,9 +4,9 @@ description: Reference for ConfigurationChange table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ConfigurationChange
@@ -36,7 +36,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | Acls | string | The Access-Control List specifies which users or system processes are granted access to objects |
 | Attributes | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | ChangeCategory | string | The type of change that occurred: Added Removed Modified |
 | Computer | string |  |
 | ConfigChangeType | string | Type of configuration item that changed: Files Software WindowsServices Registry Daemons |
@@ -47,7 +47,7 @@ ms.date: 7/3/2023
 | FileContentChecksum | string | Checksum of the file content |
 | FileSystemPath | string | File system path for the changed file |
 | Hive | string | Registry hive for the changed registry key |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastSnapshotAge | long | Age of the last snapshot |
 | Location | string |  |
 | ManagementGroupName | string | Name of a resource's assigned management group |

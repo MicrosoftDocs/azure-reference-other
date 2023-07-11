@@ -4,9 +4,9 @@ description: Reference for CommonSecurityLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # CommonSecurityLog
@@ -39,7 +39,8 @@ ms.date: 7/3/2023
 | Activity | string | A string that represents a human-readable and understandable description of the event. |
 | AdditionalExtensions | string | A placeholder for additional fields. Fields are logged as key-value pairs. |
 | ApplicationProtocol | string | The protocol used in the application, such as HTTP, HTTPS, SSHv2, Telnet, POP, IMPA, IMAPS, and so on. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
+| CollectorHostName | string | The hostname of the collector machine running the agent. |
 | CommunicationDirection | string | Any information about the direction the observed communication has taken. Valid values: 0 = Inbound, 1 = Outbound. |
 | Computer | string | Host, from Syslog. |
 | DestinationDnsDomain | string | The DNS part of the fully-qualified domain name (FQDN). |
@@ -141,7 +142,7 @@ ms.date: 7/3/2023
 | FlexString2 | string | One of four floating point fields available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. These fields are typically reserved for customer use and should not be set by vendors unless necessary. |
 | FlexString2Label | string | The label field is a string and describes the purpose of the flex field. |
 | IndicatorThreatType | string | The threat type of the MaliciousIP according to our TI feed. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LogSeverity | string | A string or integer that describes the importance of the event. Valid string values: Unknown , Low, Medium, High, Very-High Valid integer values are: 0-3 = Low, 4-6 = Medium, 7-8 = High, 9-10 = Very-High. |
 | MaliciousIP | string | If one of the IP in the message was correlate with the current TI feed we have it will show up here. |
 | MaliciousIPCountry | string | The country of the MaliciousIP according to the GEO information at the time of the record ingestion. |

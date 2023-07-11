@@ -4,9 +4,9 @@ description: Reference for DatabricksDeltaPipelines table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DatabricksDeltaPipelines
@@ -25,10 +25,10 @@ ms.date: 7/3/2023
 | Column | Type | Description |
 | --- | --- | --- |
 | ActionName | string | The action of the request. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | The service that logged the request. |
 | Identity | string | Information about the user that makes the requests. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LogId | string | The unique identifier for the log messages. |
 | OperationName | string | The action, such as login, logout, read, write, etc. |
 | OperationVersion | string | The Databricks schema version of the diagnostic log format. |

@@ -4,9 +4,9 @@ description: Reference for AZMSCustomerManagedKeyUserLogs table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZMSCustomerManagedKeyUserLogs
@@ -31,9 +31,9 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Category | string | Type of category for a message. It's one of the following values: error and info. For example, if the key from your key vault is being disabled, then it would be an information category or if a key can't be unwrapped, it could fall under error. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Key | string | The name of the key-vault key that's used to encrypt the Event Hubs namespace. |
 | KeyVault | string | The name of the key vault resource. |
 | Message | string | The message, which provides detailes about an error or informational message. |

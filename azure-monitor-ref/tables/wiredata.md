@@ -4,9 +4,9 @@ description: Reference for WireData table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # WireData
@@ -38,7 +38,7 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | ApplicationProtocol | string | Type of network protocol used |
 | ApplicationServiceName | string | Hold over field from old schema - attribute not collected |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Computer | string | Computer name where data was collected |
 | Confidence | string | Confidence level for Malicious IP identification. Values are 0 - 100. |
 | Description | string | Description of the observed threat. |
@@ -47,7 +47,7 @@ ms.date: 7/3/2023
 | IndicatorThreatType | string | Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist. |
 | IPVersion | string | IP version |
 | IsActive | string | Indicates indicators are deactivated with True or False value. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LastReportedDateTime | string | The last time the indicator was seen by Interflow. |
 | LatencyMilliseconds | int | Hold over field from old schema - attribute not collected |
 | LatencySamplingFailureRate | string | Hold over field from old schema - attribute not collected |

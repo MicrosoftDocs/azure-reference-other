@@ -4,9 +4,9 @@ description: Reference for AZFWApplicationRuleAggregation table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZFWApplicationRuleAggregation
@@ -33,10 +33,10 @@ ms.date: 7/3/2023
 | Action | string | Action taken by the firewall following the Application rule hit. |
 | ActionReason | string | When no rule is triggered for a packet, this field contains the reason for the action performed by the firewall. |
 | ApplicationRuleCount | int | Aggregated count of Application rule. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DestinationPort | int | Request's destination port. |
 | Fqdn | string | Request's target address in FQDN (Fully qualified Domain Name). For example: www.microsoft.com. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Policy | string | Name of the policy in which the triggered rule resides. |
 | Protocol | string | Request's network protocol. For example: HTTP/HTTPS. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

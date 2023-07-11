@@ -4,9 +4,9 @@ description: Reference for DeviceFileEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # DeviceFileEvents
@@ -30,7 +30,7 @@ ms.date: 7/3/2023
 | ActionType | string | Type of activity that triggered the event. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | FileName | string | Name of the file that the recorded action was applied to. |
@@ -65,7 +65,7 @@ ms.date: 7/3/2023
 | InitiatingProcessVersionInfoProductName | string | Product name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | Product version from the version information of the process (image file) responsible for the event. |
 | IsAzureInfoProtectionApplied | bool | Indicates whether the file is encrypted by Azure Information Protection. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to. |
 | PreviousFileName | string | Original name of the file that was renamed as a result of the action. |

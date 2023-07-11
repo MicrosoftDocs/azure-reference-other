@@ -4,9 +4,9 @@ description: Reference for AZMSArchiveLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AZMSArchiveLogs
@@ -33,11 +33,11 @@ ms.date: 7/3/2023
 | --- | --- | --- |
 | ActivityId | string | Internal ID, used for tracking. |
 | ArchiveStep | string | The possible values: ArchiveFlushWriter, DestinationInit. |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | DurationMs | int | The duration of failure (in Milliseconds). |
 | EventhubName | string | The Event Hubs full name(includes namespace name). |
 | Failures | int | The number of occurrence of failures. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Message | string | Error message. |
 | PartitionId | int | The Event Hubs partition being written to. |
 | Provider | string | Event provider name. Possible values: eventhub, relay, and servicebus. |

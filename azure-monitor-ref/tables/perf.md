@@ -4,9 +4,9 @@ description: Reference for Perf table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # Perf
@@ -39,7 +39,7 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | BucketEndTime | datetime |  |
 | BucketStartTime | datetime |  |
 | Computer | string | Computer that the event was collected from. |
@@ -47,7 +47,7 @@ ms.date: 7/3/2023
 | CounterPath | string | Full path of the counter in the form \\\<Computer\>\object(instance)\counter. |
 | CounterValue | real |  |
 | InstanceName | string | Name of the event instance. Empty if no instance. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Max | real |  |
 | Min | real |  |
 | ObjectName | string | Name of the performance object. |

@@ -4,9 +4,9 @@ description: Reference for HDInsightRangerAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # HDInsightRangerAuditLogs
@@ -34,7 +34,7 @@ ms.date: 7/3/2023
 | AccessName | string | Name of the access method. |
 | Action | string | Type of action made by the event. |
 | AdditionalInfo | string | Additional info about the request including the remote and forwarded IPs |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CliIpAddress | string | IP address of where CLI request was made. |
 | CliType | string | Type of CLI used to create request. |
 | ClusterName | string | Name of cluster. |
@@ -47,7 +47,7 @@ ms.date: 7/3/2023
 | EventDurationMs | int | Duration of the event in milliseconds. |
 | HostName | string | Name of host where log was emitted. |
 | Id | string | ID of the event request. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | LogType | string | Type of log the record came from. |
 | OperationName | string | The operation associated with log record. |
 | Policy | int | Code representing the policy. |

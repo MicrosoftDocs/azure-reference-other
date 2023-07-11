@@ -4,9 +4,9 @@ description: Reference for ConfigurationData table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # ConfigurationData
@@ -37,7 +37,7 @@ ms.date: 7/3/2023
 | Acls | string | The Access-Control List specifies which users or system processes are granted access to objects |
 | Architecture | string | Instruction set architecture for the software being tracked |
 | Attributes | string |  |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | Computer | string |  |
 | ConfigDataType | string | Type of configuration item: Files Software WindowsServices Registry Daemons |
 | CurrentVersion | string | Current software version |
@@ -46,7 +46,7 @@ ms.date: 7/3/2023
 | FileContentChecksum | string | Checksum of the reporting file |
 | FileSystemPath | string | File system path for the reporting file |
 | Hive | string | Registry hive for the reporting registry key |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string |  |
 | ManagementGroupName | string |  |
 | Name | string |  |

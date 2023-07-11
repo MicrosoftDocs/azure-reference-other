@@ -4,9 +4,9 @@ description: Reference for AzureLoadTestingOperation table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: robb
-author: rboucher
-ms.date: 7/3/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 7/10/2023
 ---
 
 # AzureLoadTestingOperation
@@ -31,14 +31,14 @@ ms.date: 7/3/2023
 
 | Column | Type | Description |
 | --- | --- | --- |
-| _BilledSize | real |  |
+| _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | IP Address of the client that submitted the request. |
 | CorrelationId | string | Unique identifier to be used to correlate logs. |
 | DurationMs | real | Amount of time it took to process request in milliseconds. |
 | FailureDetails | string | Details of the error in case if request is failed. |
 | HttpStatusCode | int | HTTP status code of the API response. |
 | Identity | dynamic | JSON structure containing information about the caller. |
-| _IsBillable | string |  |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | OperationId | string | Operation identifier for rest api |
 | OperationName | string | Name of the operation attempted on the resource. |
 | OperationVersion | string | Request api version |
