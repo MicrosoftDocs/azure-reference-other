@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 07/13/2023
 ---
 # Supported logs for Microsoft.MachineLearningServices/workspaces/onlineEndpoints  
 <!-- Data source : naam-->
@@ -16,8 +16,8 @@ ms.date: 07/12/2023
 |Category|Category Display Name|Costs To Export|
 |---|---|---|
 |AmlOnlineEndpointConsoleLog |AmlOnlineEndpointConsoleLog |Yes |
-|AmlOnlineEndpointEventLog |AmlOnlineEndpointEventLog (preview) |Yes |
-|AmlOnlineEndpointTrafficLog |AmlOnlineEndpointTrafficLog (preview) |Yes |
+|AmlOnlineEndpointEventLog |AmlOnlineEndpointEventLog |Yes |
+|AmlOnlineEndpointTrafficLog |AmlOnlineEndpointTrafficLog |Yes |
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Thu Jul 13 2023 14:00:39 GMT+0300 (Israel Daylight Time)-->
