@@ -5,12 +5,18 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/06/2023
+ms.date: 07/13/2023
 ---
 # Supported metrics for Microsoft.EventGrid/namespaces  
 <!-- Data source : arm-->
 
 
+The following table lists the metrics available for the Microsoft.EventGrid/namespaces resource type.
+
+  
+
+**Table headings**
+  
 **Metric** - Metric display name follows by a description of the metric. The displayname appears in the Azure portal.  
 **Name** - The name of the metric as referred to in the REST API.  
 **Unit** - The default units used for the metric.  
@@ -43,4 +49,4 @@ ms.date: 07/06/2023
 |Successful Released Events<p><p>The number of events that were released successfully by queue subscriber clients. |`SuccessfulReleasedEvents` |Count |Total |Topic, EventSubscriptionName |No|
 
 
-<!--Gen Date:  Thu Jul 06 2023 17:40:07 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Thu Jul 13 2023 10:39:46 GMT+0300 (Israel Daylight Time)-->
