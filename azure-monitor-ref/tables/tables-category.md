@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/10/2023
+ms.date: 7/17/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -48,6 +48,7 @@ ms.date: 7/10/2023
 - [AegDataPlaneRequests](aegdataplanerequests.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
+- [AFSAuditLogs](afsauditlogs.md)
 - [AgriFoodApplicationAuditLogs](agrifoodapplicationauditlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
@@ -192,6 +193,7 @@ ms.date: 7/10/2023
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
+- [AFSAuditLogs](afsauditlogs.md)
 - [AgriFoodApplicationAuditLogs](agrifoodapplicationauditlogs.md)
 - [AgriFoodFarmManagementLogs](agrifoodfarmmanagementlogs.md)
 - [AgriFoodFarmOperationLogs](agrifoodfarmoperationlogs.md)
@@ -233,6 +235,7 @@ ms.date: 7/10/2023
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
+- [ANFFileAccess](anffileaccess.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [ApiManagementWebSocketConnectionLogs](apimanagementwebsocketconnectionlogs.md)
 - [AppEnvSpringAppConsoleLogs](appenvspringappconsolelogs.md)
@@ -359,6 +362,12 @@ ms.date: 7/10/2023
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [NCBMSecurityLogs](ncbmsecuritylogs.md)
+- [NCBMSystemLogs](ncbmsystemlogs.md)
+- [NCCKubernetesLogs](ncckuberneteslogs.md)
+- [NCCVMOrchestrationLogs](nccvmorchestrationlogs.md)
+- [NCSStorageAlerts](ncsstoragealerts.md)
+- [NCSStorageLogs](ncsstoragelogs.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [OEPAirFlowTask](oepairflowtask.md)
 - [OEPAuditLogs](oepauditlogs.md)
@@ -646,6 +655,7 @@ ms.date: 7/10/2023
 - [McasShadowItReporting](mcasshadowitreporting.md)
 - [MicrosoftGraphActivityLogs](microsoftgraphactivitylogs.md)
 - [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
+- [NCBMSecurityLogs](ncbmsecuritylogs.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkSessions](networksessions.md)
 - [NSPAccessLogs](nspaccesslogs.md)
