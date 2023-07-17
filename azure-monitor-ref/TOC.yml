@@ -598,3 +598,5 @@
     href: tables/emailurlinfo.md
   - name: EnrichedMicrosoft365AuditLogs
     href: tables/enrichedmicrosoft365auditlogs.md
+  - name: Event
+    href: tables/event.md
