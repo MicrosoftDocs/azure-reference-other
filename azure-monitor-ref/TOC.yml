@@ -324,3 +324,5 @@
     href: tables/asimwebsessionlogs.md
   - name: ASRJobs
     href: tables/asrjobs.md
+  - name: ASRReplicatedItems
+    href: tables/asrreplicateditems.md
