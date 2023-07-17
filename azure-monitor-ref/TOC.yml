@@ -750,3 +750,5 @@
     href: tables/ncbmsecuritylogs.md
   - name: NCBMSystemLogs
     href: tables/ncbmsystemlogs.md
+  - name: NCCKubernetesLogs
+    href: tables/ncckuberneteslogs.md
