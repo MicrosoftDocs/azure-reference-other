@@ -322,3 +322,5 @@
     href: tables/asimprocesseventlogs.md
   - name: ASimWebSessionLogs
     href: tables/asimwebsessionlogs.md
+  - name: ASRJobs
+    href: tables/asrjobs.md
