@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 07/17/2023
 ---
 # Supported metrics for Microsoft.ServiceNetworking/trafficControllers  
 <!-- Data source : naam-->
@@ -27,13 +27,13 @@ The following table lists the metrics available for the Microsoft.ServiceNetwork
   
 |Metric|Name|Unit|Aggregation|Dimensions|DS Export|
 |---|---|---|---|---|---|
-|Backend Connection Timeouts<p><p>Count of requests that timed out waiting for a response from the backend target (includes all retry requests initiated from Traffic Controller to the backend target) |`BackendConnectionTimeouts` |Count |Total |Microsoft.regionName, BackendService |Yes|
+|Backend Connection Timeouts<p><p>Count of requests that timed out waiting for a response from the backend target (includes all retry requests initiated from Application Gateway for Containers to the backend target) |`BackendConnectionTimeouts` |Count |Total |Microsoft.regionName, BackendService |Yes|
 |Backend Healthy Targets<p><p>Count of healthy backend targets |`BackendHealthyTargets` |Count |Average |Microsoft.regionName, BackendService |Yes|
-|Backend HTTP Response Status<p><p>HTTP response status returned by the backend target to Traffic Controller |`BackendHTTPResponseStatus` |Count |Total |Microsoft.regionName, BackendService, HttpResponseCode |Yes|
-|Total Connection Idle Timeouts<p><p>Count of connections closed, between client and Traffic Controller frontend, due to exceeding idle timeout |`ClientConnectionIdleTimeouts` |Count |Total |Microsoft.regionName, Frontend |Yes|
-|Connection Timeouts<p><p>Count of connections closed due to timeout between clients and Traffic Controller |`ConnectionTimeouts` |Count |Total |Microsoft.regionName, Frontend |Yes|
-|HTTP Response Status<p><p>HTTP response status returned by Traffic Controller |`HTTPResponseStatus` |Count |Total |Microsoft.regionName, Frontend, HttpResponseCode |Yes|
-|Total Requests<p><p>Count of requests Traffic Controller has served |`TotalRequests` |Count |Total |Microsoft.regionName, Frontend |Yes|
+|Backend HTTP Response Status<p><p>HTTP response status returned by the backend target to Application Gateway for Containers |`BackendHTTPResponseStatus` |Count |Total |Microsoft.regionName, BackendService, HttpResponseCode |Yes|
+|Total Connection Idle Timeouts<p><p>Count of connections closed, between client and Application Gateway for Containers frontend, due to exceeding idle timeout |`ClientConnectionIdleTimeouts` |Count |Total |Microsoft.regionName, Frontend |Yes|
+|Connection Timeouts<p><p>Count of connections closed due to timeout between clients and Application Gateway for Containers |`ConnectionTimeouts` |Count |Total |Microsoft.regionName, Frontend |Yes|
+|HTTP Response Status<p><p>HTTP response status returned by Application Gateway for Containers |`HTTPResponseStatus` |Count |Total |Microsoft.regionName, Frontend, HttpResponseCode |Yes|
+|Total Requests<p><p>Count of requests Application Gateway for Containers has served |`TotalRequests` |Count |Total |Microsoft.regionName, Frontend |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Jul 17 2023 12:39:39 GMT+0300 (Israel Daylight Time)-->
