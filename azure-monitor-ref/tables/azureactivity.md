@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/10/2023
+ms.date: 7/17/2023
 ---
 
 # AzureActivity
@@ -43,11 +43,11 @@ ms.date: 7/10/2023
 - SignalR
 - Storage Accounts
 - Cognitive Services
-- Azure Spring Cloud
-- CDN Profiles
+- Azure Spring Apps
 - Batch Accounts
 - Analysis Services
 - Workload Monitor
+- Time Series Insights Environments
 - Event Grid Domains
 - Logic Apps
 - API Management services
@@ -77,11 +77,10 @@ ms.date: 7/10/2023
 - Data Lake Analytics
 - Data Lake Storage Gen1
 - Data factories
-- Time Series Insights Environments
-- Bastions
 - Desktop Virtualization workspaces
-- Application Insights
-- Recovery Services Vaults
+- Bastions
+- Desktop Virtualization Application Groups
+- SignalR Service WebPubSub
 - Microsoft.Purview/accounts
 - Nexus Storage Appliances
 - Nexus Clusters
@@ -92,24 +91,24 @@ ms.date: 7/10/2023
 - Key Vaults
 - Azure Managed Workspace for Grafana
 - Firewalls
-- Relay
 - Event Hubs
-- Azure Digital Twins
+- Recovery Services Vaults
+- Event Grid Topics
 - Project CI Workspace
 - Azure Cosmos DB
 - Communication Services
 - Azure CloudHsm
+- CDN Profiles
 - Azure Cache for Redis
 - Azure Attestation
 - Azure Autonomous Development Platform workspace
 - App Services
 - Application Gateways
 - Microsoft App Configuration
-- Event Grid Topics
+- Azure Digital Twins
+- Relay
 - Service Bus
 - Azure Traffic Collector
-- Azure Virtual Network Manager
-- SignalR Service WebPubSub
 - Azure Resource Group
 - Azure Subscription
 - Default schema for a resource
@@ -134,7 +133,8 @@ ms.date: 7/10/2023
 - Microsoft Connected Cache
 - Chaos Experiment
 - Bot Services
-- Desktop Virtualization Application Groups
+- Azure Virtual Network Manager
+- Application Insights
 - Azure API for FHIR
 
 
