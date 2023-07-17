@@ -72,8 +72,6 @@ items:
     href: ../supported-metrics/Microsoft-ClusterStor-nodes-metrics.md
   - name: Microsoft.CodeSigning/codesigningaccounts
     href: ../supported-metrics/Microsoft-CodeSigning-codesigningaccounts-metrics.md
-  - name: Microsoft.CognitiveSearch/indexes
-    href: ../supported-metrics/Microsoft-CognitiveSearch-indexes-metrics.md
   - name: Microsoft.CognitiveServices/accounts
     href: ../supported-metrics/Microsoft-CognitiveServices-accounts-metrics.md
   - name: Microsoft.Communication/CommunicationServices
@@ -98,6 +96,8 @@ items:
     href: ../supported-metrics/Microsoft-ConnectedVehicle-platformAccounts-metrics.md
   - name: Microsoft.ContainerInstance/containerGroups
     href: ../supported-metrics/Microsoft-ContainerInstance-containerGroups-metrics.md
+  - name: Microsoft.ContainerInstance/containerScaleSets
+    href: ../supported-metrics/Microsoft-ContainerInstance-containerScaleSets-metrics.md
   - name: Microsoft.ContainerRegistry/registries
     href: ../supported-metrics/Microsoft-ContainerRegistry-registries-metrics.md
   - name: Microsoft.ContainerService/managedClusters

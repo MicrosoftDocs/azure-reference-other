@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 07/17/2023
 ---
 # Supported logs for Microsoft.ServiceNetworking/trafficControllers  
 <!-- Data source : naam-->
@@ -15,7 +15,7 @@ ms.date: 07/12/2023
 
 |Category|Category Display Name|Costs To Export|
 |---|---|---|
-|TrafficControllerAccessLog |Traffic Controller Access Log |Yes |
+|TrafficControllerAccessLog |Application Gateway for Containers Access Log |Yes |
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Jul 17 2023 12:39:39 GMT+0300 (Israel Daylight Time)-->
