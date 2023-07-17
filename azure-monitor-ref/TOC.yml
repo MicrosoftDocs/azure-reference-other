@@ -748,3 +748,5 @@
     href: tables/microsoftpurviewinformationprotection.md
   - name: NCBMSecurityLogs
     href: tables/ncbmsecuritylogs.md
+  - name: NCBMSystemLogs
+    href: tables/ncbmsystemlogs.md
