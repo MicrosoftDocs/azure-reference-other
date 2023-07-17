@@ -756,3 +756,5 @@
     href: tables/nccvmorchestrationlogs.md
   - name: NCSStorageAlerts
     href: tables/ncsstoragealerts.md
+  - name: NCSStorageLogs
+    href: tables/ncsstoragelogs.md
