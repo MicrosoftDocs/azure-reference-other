@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/10/2023
+ms.date: 7/17/2023
 ---
 
 # AppPlatformContainerEventLogs
@@ -21,7 +21,7 @@ ms.date: 7/10/2023
 - LogManagement
 ## Resource types
 
-- Azure Spring Cloud
+- Azure Spring Apps
 
 
 
