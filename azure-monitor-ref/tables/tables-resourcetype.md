@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/10/2023
+ms.date: 7/17/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -316,6 +316,7 @@ ms.date: 7/10/2023
 
 ## Azure Managed Lustre
 
+- [AFSAuditLogs](afsauditlogs.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
@@ -333,6 +334,7 @@ ms.date: 7/10/2023
 
 ## Azure NetApp Files
 
+- [ANFFileAccess](anffileaccess.md)
 
 ## Azure PlayFab
 
@@ -344,15 +346,15 @@ ms.date: 7/10/2023
 
 ## Azure Sentinel
 
-- [ASimProcessEventLogs](asimprocesseventlogs.md)
-- [CommonSecurityLog](commonsecuritylog.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
+- [CommonSecurityLog](commonsecuritylog.md)
 - [SecurityAlert](securityalert.md)
 - [SecurityEvent](securityevent.md)
+- [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
-- [ASimAuditEventLogs](asimauditeventlogs.md)
+- [ASimProcessEventLogs](asimprocesseventlogs.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
 ## Azure Sphere
@@ -360,7 +362,7 @@ ms.date: 7/10/2023
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
 
-## Azure Spring Cloud
+## Azure Spring Apps
 
 - [AppPlatformBuildLogs](appplatformbuildlogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
@@ -912,24 +914,30 @@ ms.date: 7/10/2023
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [NCBMSecurityLogs](ncbmsecuritylogs.md)
+- [NCBMSystemLogs](ncbmsystemlogs.md)
 
 ## Nexus Clusters
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [NCCKubernetesLogs](ncckuberneteslogs.md)
+- [NCCVMOrchestrationLogs](nccvmorchestrationlogs.md)
 
 ## Nexus Storage Appliances
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [NCSStorageAlerts](ncsstoragealerts.md)
+- [NCSStorageLogs](ncsstoragelogs.md)
 
 ## Power BI Datasets
 
+- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
+- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-- [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ## Power BI Embedded
 
