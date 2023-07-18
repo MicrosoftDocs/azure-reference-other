@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/10/2023
+ms.date: 7/17/2023
 ---
 
 # AzureMetrics
@@ -91,7 +91,7 @@ ms.date: 7/10/2023
 - SignalR
 - Storage Accounts
 - Cognitive Services
-- Azure Spring Cloud
+- Azure Spring Apps
 - Batch Accounts
 - Analysis Services
 - Workload Monitor
