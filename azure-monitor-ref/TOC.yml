@@ -160,6 +160,8 @@
     href: tables/aewauditlogs.md
   - name: AEWComputePipelinesLogs
     href: tables/aewcomputepipelineslogs.md
+  - name: AFSAuditLogs
+    href: tables/afsauditlogs.md
   - name: AgriFoodApplicationAuditLogs
     href: tables/agrifoodapplicationauditlogs.md
   - name: AgriFoodFarmManagementLogs
@@ -744,6 +746,18 @@
     href: tables/microsofthealthcareapisauditlogs.md
   - name: MicrosoftPurviewInformationProtection
     href: tables/microsoftpurviewinformationprotection.md
+  - name: NCBMSecurityLogs
+    href: tables/ncbmsecuritylogs.md
+  - name: NCBMSystemLogs
+    href: tables/ncbmsystemlogs.md
+  - name: NCCKubernetesLogs
+    href: tables/ncckuberneteslogs.md
+  - name: NCCVMOrchestrationLogs
+    href: tables/nccvmorchestrationlogs.md
+  - name: NCSStorageAlerts
+    href: tables/ncsstoragealerts.md
+  - name: NCSStorageLogs
+    href: tables/ncsstoragelogs.md
   - name: NetworkAccessTraffic
     href: tables/networkaccesstraffic.md
   - name: NetworkSessions
