@@ -15,6 +15,6 @@ Welcome to the reference documentation for [Azure Monitor](/azure/azure-monitor/
 
 The following sections are currently included in this documentation.
 
-- [**Supported metrics**](./supported-metrics/metrics-index.md)  - A list of all platform  metrics currently available with in Azure Monitor
+- [**Supported metrics**](./supported-metrics/metrics-index.md)  - A list of all platform  metrics currently available within Azure Monitor
 - [**Supported log categories**](./supported-logs/logs-index.md)  - A list of all resource logs available through Azure Monitor 
 - [**Log tables**](./tables/tables-category.md) - Tables stored in Azure Monitor Logs. These are the same tables viewable and queryable through the Log Analytics interface in the Azure portal. 
