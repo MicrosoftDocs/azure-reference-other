@@ -1,11 +1,11 @@
 ---
 title: Azure Monitor data reference
 description: Reference details about data collected by Azure Monitor from different sources.
-author: rboucher
-ms.author: robb
+author: EdB-MSFT
+ms.author: edbaynash
 ms.service: azure-monitor
 ms.topic: reference
-ms.date: 10/27/2022
+ms.date: 7/24/2023
 ---
 # Azure Monitor data reference
 Welcome to the reference documentation for [Azure Monitor](/azure/azure-monitor/). This documentation includes details about data collected by Azure Monitor from different sources.
@@ -15,4 +15,6 @@ Welcome to the reference documentation for [Azure Monitor](/azure/azure-monitor/
 
 The following sections are currently included in this documentation.
 
-- [**Logs**](./tables/tables-category.md) - Tables stored in Azure Monitor Logs. These are the same tables viewable and queryable through the Log Analytics interface in the Azure portal. 
+- [**Supported metrics**](./supported-metrics/metrics-index.md)  - A list of all platform  metrics currently available with in Azure Monitor
+- [**Supported log categories**](./supported-logs/logs-index)  - All resource logs available through Azure Monitor 
+- [**Log tables**](./tables/tables-category.md) - Tables stored in Azure Monitor Logs. These are the same tables viewable and queryable through the Log Analytics interface in the Azure portal. 
