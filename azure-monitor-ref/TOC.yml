@@ -538,3 +538,7 @@
     href: tables/databricksworkspace.md
   - name: DataTransferOperations
     href: tables/datatransferoperations.md
+  - name: DefenderIoTRawEvent
+    href: tables/defenderiotrawevent.md
+  - name: DevCenterDiagnosticLogs
+    href: tables/devcenterdiagnosticlogs.md
