@@ -162,3 +162,5 @@
     href: tables/aewcomputepipelineslogs.md
   - name: AFSAuditLogs
     href: tables/afsauditlogs.md
+  - name: AgriFoodApplicationAuditLogs
+    href: tables/agrifoodapplicationauditlogs.md
