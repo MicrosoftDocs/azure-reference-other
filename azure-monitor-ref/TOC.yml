@@ -192,3 +192,7 @@
     href: tables/ahdsmedtechdiagnosticlogs.md
   - name: AirflowDagProcessingLogs
     href: tables/airflowdagprocessinglogs.md
+  - name: Alert
+    href: tables/alert.md
+  - name: AlertEvidence
+    href: tables/alertevidence.md
