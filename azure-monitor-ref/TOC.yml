@@ -436,3 +436,7 @@
     href: tables/chaosstudioexperimenteventlogs.md
   - name: CHSMManagementAuditLogs
     href: tables/chsmmanagementauditlogs.md
+  - name: CIEventsAudit
+    href: tables/cieventsaudit.md
+  - name: CIEventsOperational
+    href: tables/cieventsoperational.md
