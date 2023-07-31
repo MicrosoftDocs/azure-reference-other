@@ -184,3 +184,7 @@
     href: tables/agrifoodweatherlogs.md
   - name: AGSGrafanaLoginEvents
     href: tables/agsgrafanaloginevents.md
+  - name: AHDSDicomAuditLogs
+    href: tables/ahdsdicomauditlogs.md
+  - name: AHDSDicomDiagnosticLogs
+    href: tables/ahdsdicomdiagnosticlogs.md
