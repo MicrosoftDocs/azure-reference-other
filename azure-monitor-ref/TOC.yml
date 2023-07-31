@@ -164,3 +164,5 @@
     href: tables/afsauditlogs.md
   - name: AgriFoodApplicationAuditLogs
     href: tables/agrifoodapplicationauditlogs.md
+  - name: AgriFoodFarmManagementLogs
+    href: tables/agrifoodfarmmanagementlogs.md
