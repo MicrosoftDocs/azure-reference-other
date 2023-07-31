@@ -790,3 +790,7 @@
     href: tables/oepelasticsearch.md
   - name: OfficeActivity
     href: tables/officeactivity.md
+  - name: OLPSupplyChainEntityOperations
+    href: tables/olpsupplychainentityoperations.md
+  - name: OLPSupplyChainEvents
+    href: tables/olpsupplychainevents.md
