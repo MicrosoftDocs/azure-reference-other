@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/17/2023
+ms.date: 07/31/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -79,6 +79,7 @@ ms.date: 7/17/2023
 - [ASRJobs](asrjobs.md)
 - [ASRReplicatedItems](asrreplicateditems.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
+- [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AZKVAuditLogs](azkvauditlogs.md)
 - [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
 - [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
@@ -108,6 +109,8 @@ ms.date: 7/17/2023
 - [CIEventsAudit](cieventsaudit.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
+- [ContainerEvent](containerevent.md)
+- [ContainerInstanceLog](containerinstancelog.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
@@ -256,6 +259,7 @@ ms.date: 7/17/2023
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
+- [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AZFWFlowTrace](azfwflowtrace.md)
 - [AZKVAuditLogs](azkvauditlogs.md)
 - [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
@@ -293,6 +297,8 @@ ms.date: 7/17/2023
 - [CIEventsOperational](cieventsoperational.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
+- [ContainerEvent](containerevent.md)
+- [ContainerInstanceLog](containerinstancelog.md)
 - [CoreAzureBackup](coreazurebackup.md)
 - [DatabricksAccounts](databricksaccounts.md)
 - [DatabricksClusters](databricksclusters.md)
@@ -556,6 +562,7 @@ ms.date: 7/17/2023
 ## Network
 
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
+- [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)

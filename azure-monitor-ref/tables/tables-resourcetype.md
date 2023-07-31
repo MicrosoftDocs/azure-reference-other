@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/17/2023
+ms.date: 07/31/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -346,7 +346,6 @@ ms.date: 7/17/2023
 
 ## Azure Sentinel
 
-- [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 - [SecurityAlert](securityalert.md)
 - [SecurityEvent](securityevent.md)
@@ -355,6 +354,7 @@ ms.date: 7/17/2023
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [ASimProcessEventLogs](asimprocesseventlogs.md)
+- [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
 ## Azure Sphere
@@ -430,6 +430,7 @@ ms.date: 7/17/2023
 ## Azure Virtual Network Manager
 
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
+- [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
@@ -849,6 +850,11 @@ ms.date: 7/17/2023
 - [AzureMetrics](azuremetrics.md)
 - [MCVPAuditLogs](mcvpauditlogs.md)
 - [MCVPOperationLogs](mcvpoperationlogs.md)
+
+## Microsoft Container Instances Services
+
+- [ContainerEvent](containerevent.md)
+- [ContainerInstanceLog](containerinstancelog.md)
 
 ## Microsoft Graph Logs
 

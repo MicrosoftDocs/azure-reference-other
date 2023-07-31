@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/17/2023
+ms.date: 07/31/2023
 ---
 
 # MicrosoftGraphActivityLogs
@@ -31,9 +31,12 @@ ms.date: 7/17/2023
 | AadTenantId | string | The Azure AD tenant ID. |
 | ApiVersion | string | The API version of the event. |
 | AppId | string | The identifier for the application. |
+| ATContent | string | Reserved for future use. |
 | _BilledSize | real | The record size in bytes |
+| ClientAuthMethod | int | Indicates how the client was authenticated. For a public client, the value is 0. If client ID and client secret are used, the value is 1. If a client certificate was used for authentication, the value is 2. |
 | ClientRequestId | string | Optional. The client request identifier when sent. If no client request identifier is sent, the value will be equal to the operation identifier. |
 | DurationMs | int | The duration of the request in milliseconds. |
+| IdentityProvider | string | The identity provider that authenticated the subject of the token. |
 | IpAddress | string | The IP address of the client from where the request occurred. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
 | Location | string | The name of the region that served the request. |
@@ -54,3 +57,4 @@ ms.date: 7/17/2023
 | Type | string | The name of the table |
 | UserAgent | string | The user agent information related to request. |
 | UserId | string | The identifier of the user making the request. |
+| Wids | string | Denotes the tenant-wide roles assigned to this user. |
