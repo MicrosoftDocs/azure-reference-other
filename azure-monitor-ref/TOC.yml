@@ -90,3 +90,7 @@
     href: tables/acsnetworktraversalincomingoperations.md
   - name: ACSRoomsIncomingOperations
     href: tables/acsroomsincomingoperations.md
+  - name: ACSSMSIncomingOperations
+    href: tables/acssmsincomingoperations.md
+  - name: ADAssessmentRecommendation
+    href: tables/adassessmentrecommendation.md
