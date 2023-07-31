@@ -432,3 +432,7 @@
     href: tables/cdbpartitionkeystatistics.md
   - name: CDBQueryRuntimeStatistics
     href: tables/cdbqueryruntimestatistics.md
+  - name: ChaosStudioExperimentEventLogs
+    href: tables/chaosstudioexperimenteventlogs.md
+  - name: CHSMManagementAuditLogs
+    href: tables/chsmmanagementauditlogs.md
