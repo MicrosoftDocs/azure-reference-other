@@ -966,3 +966,7 @@
     href: tables/usage.md
   - name: UserAccessAnalytics
     href: tables/useraccessanalytics.md
+  - name: UserPeerAnalytics
+    href: tables/userpeeranalytics.md
+  - name: VIAudit
+    href: tables/viaudit.md
