@@ -760,3 +760,5 @@
     href: tables/ncsstoragelogs.md
   - name: NetworkAccessTraffic
     href: tables/networkaccesstraffic.md
+  - name: NetworkSessions
+    href: tables/networksessions.md
