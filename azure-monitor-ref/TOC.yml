@@ -946,3 +946,9 @@
     href: tables/uacomputerrank.md
   - name: UCClient
     href: tables/ucclient.md
+  - name: UCClientReadinessStatus
+    href: tables/ucclientreadinessstatus.md
+  - name: UCClientUpdateStatus
+    href: tables/ucclientupdatestatus.md
+  - name: UCDeviceAlert
+    href: tables/ucdevicealert.md
