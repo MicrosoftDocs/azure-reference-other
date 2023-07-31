@@ -456,3 +456,5 @@
     href: tables/containerappconsolelogs.md
   - name: ContainerAppSystemLogs
     href: tables/containerappsystemlogs.md
+  - name: ContainerEvent
+    href: tables/containerevent.md
