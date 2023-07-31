@@ -714,3 +714,7 @@
     href: tables/laquerylogs.md
   - name: LogicAppWorkflowRuntime
     href: tables/logicappworkflowruntime.md
+  - name: MAApplicationInstance
+    href: tables/maapplicationinstance.md
+  - name: MAOfficeAddinInstance
+    href: tables/maofficeaddininstance.md
