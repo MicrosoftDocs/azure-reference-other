@@ -734,3 +734,7 @@
     href: tables/microsoftdatasharereceivedsnapshotlog.md
   - name: MicrosoftDataShareSentSnapshotLog
     href: tables/microsoftdatasharesentsnapshotlog.md
+  - name: MicrosoftDataShareShareLog
+    href: tables/microsoftdatasharesharelog.md
+  - name: MicrosoftDynamicsTelemetryPerformanceLogs
+    href: tables/microsoftdynamicstelemetryperformancelogs.md
