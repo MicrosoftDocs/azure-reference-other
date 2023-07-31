@@ -442,3 +442,7 @@
     href: tables/cieventsoperational.md
   - name: CloudAppEvents
     href: tables/cloudappevents.md
+  - name: CommonSecurityLog
+    href: tables/commonsecuritylog.md
+  - name: ComputerGroup
+    href: tables/computergroup.md
