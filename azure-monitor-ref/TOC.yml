@@ -570,3 +570,7 @@
     href: tables/devicetvmsoftwareinventory.md
   - name: DeviceTvmSoftwareVulnerabilities
     href: tables/devicetvmsoftwarevulnerabilities.md
+  - name: DeviceTvmSoftwareVulnerabilitiesKB
+    href: tables/devicetvmsoftwarevulnerabilitieskb.md
+  - name: DnsEvents
+    href: tables/dnsevents.md
