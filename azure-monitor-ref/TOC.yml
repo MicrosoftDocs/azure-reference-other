@@ -462,3 +462,5 @@
     href: tables/containerimageinventory.md
   - name: ContainerInstanceLog
     href: tables/containerinstancelog.md
+  - name: ContainerInventory
+    href: tables/containerinventory.md
