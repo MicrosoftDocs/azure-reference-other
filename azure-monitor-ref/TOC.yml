@@ -424,3 +424,7 @@
     href: tables/cdbdataplanerequests.md
   - name: CDBGremlinRequests
     href: tables/cdbgremlinrequests.md
+  - name: CDBMongoRequests
+    href: tables/cdbmongorequests.md
+  - name: CDBPartitionKeyRUConsumption
+    href: tables/cdbpartitionkeyruconsumption.md
