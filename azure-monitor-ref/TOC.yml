@@ -26,3 +26,9 @@
     href: tables/aaddomainservicesdnsauditsdynamicupdates.md
   - name: AADDomainServicesDNSAuditsGeneral
     href: tables/aaddomainservicesdnsauditsgeneral.md
+  - name: AADDomainServicesLogonLogoff
+    href: tables/aaddomainserviceslogonlogoff.md
+  - name: AADDomainServicesPolicyChange
+    href: tables/aaddomainservicespolicychange.md
+  - name: AADDomainServicesPrivilegeUse
+    href: tables/aaddomainservicesprivilegeuse.md
