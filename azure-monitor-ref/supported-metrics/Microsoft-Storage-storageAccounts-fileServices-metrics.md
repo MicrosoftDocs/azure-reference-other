@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 07/31/2023
 ---
 # Supported metrics for Microsoft.Storage/storageAccounts/fileServices  
 <!-- Data source : naam-->
@@ -36,6 +36,8 @@ The following table lists the metrics available for the Microsoft.Storage/storag
 |File Share Provisioned IOPS<p><p>The baseline number of provisioned IOPS for the premium file share in the premium files storage account. This number is calculated based on the provisioned size (quota) of the share capacity. |`FileShareProvisionedIOPS` |CountPerSecond |Average |FileShare |No|
 |File Share Snapshot Count<p><p>The number of snapshots present on the share in storage account's Files Service. |`FileShareSnapshotCount` |Count |Average |FileShare |No|
 |File Share Snapshot Size<p><p>The amount of storage used by the snapshots in storage account's File service in bytes. |`FileShareSnapshotSize` |Bytes |Average |FileShare |No|
+|Transactions by Max IOPS<p><p>The maximum number of used IOPS at the lowest time granularity of 1-minute for the premium file share in the premium files storage account. |`FileShareMaxUsedIOPS` |CountPerSecond |Max |FileShare |No|
+|Bandwidth by Max MiB/s<p><p>The maximum number of used bandwidth in MiB/s at the lowest time granularity of 1-minute for the premium file share in the premium files storage account. |`FileShareMaxUsedBandwidthMiBps` |CountPerSecond | Max |FileShare |No|
 |Ingress<p><p>The amount of ingress data, in bytes. This number includes ingress from an external client into Azure Storage as well as ingress within Azure. |`Ingress` |Bytes |Total |GeoType, ApiName, Authentication, FileShare |Yes|
 |Success E2E Latency<p><p>The average end-to-end latency of successful requests made to a storage service or the specified API operation, in milliseconds. This value includes the required processing time within Azure Storage to read the request, send the response, and receive acknowledgment of the response. |`SuccessE2ELatency` |MilliSeconds |Average |GeoType, ApiName, Authentication, FileShare |Yes|
 |Success Server Latency<p><p>The average time used to process a successful request by Azure Storage. This value does not include the network latency specified in SuccessE2ELatency. |`SuccessServerLatency` |MilliSeconds |Average |GeoType, ApiName, Authentication, FileShare |Yes|
