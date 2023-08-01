@@ -6,8 +6,6 @@ items:
   items:
   - name: Microsoft.AAD/DomainServices
     href: ../supported-logs/Microsoft-AAD-DomainServices-logs.md
-  - name: microsoft.aadiam/tenants
-    href: ../supported-logs/microsoft-aadiam-tenants-logs.md
   - name: Microsoft.AgFoodPlatform/farmBeats
     href: ../supported-logs/Microsoft-AgFoodPlatform-farmBeats-logs.md
   - name: Microsoft.AnalysisServices/servers
@@ -68,6 +66,8 @@ items:
     href: ../supported-logs/Microsoft-ConfidentialLedger-ManagedCCFs-logs.md
   - name: Microsoft.ConnectedCache/CacheNodes
     href: ../supported-logs/Microsoft-ConnectedCache-CacheNodes-logs.md
+  - name: Microsoft.ConnectedCache/enterpriseMccCustomers
+    href: ../supported-logs/Microsoft-ConnectedCache-enterpriseMccCustomers-logs.md
   - name: Microsoft.ConnectedCache/ispCustomers
     href: ../supported-logs/Microsoft-ConnectedCache-ispCustomers-logs.md
   - name: Microsoft.ConnectedVehicle/platformAccounts
@@ -148,8 +148,6 @@ items:
     href: ../supported-logs/Microsoft-EventHub-Namespaces-logs.md
   - name: Microsoft.HealthcareApis/services
     href: ../supported-logs/Microsoft-HealthcareApis-services-logs.md
-  - name: Microsoft.HealthcareApis/workspaces/analyticsconnectors
-    href: ../supported-logs/Microsoft-HealthcareApis-workspaces-analyticsconnectors-logs.md
   - name: Microsoft.HealthcareApis/workspaces/dicomservices
     href: ../supported-logs/Microsoft-HealthcareApis-workspaces-dicomservices-logs.md
   - name: Microsoft.HealthcareApis/workspaces/fhirservices
