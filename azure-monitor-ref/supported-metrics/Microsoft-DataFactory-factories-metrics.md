@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.DataFactory/factories  
 <!-- Data source : arm-->
@@ -56,6 +56,7 @@ The following table lists the metrics available for the Microsoft.DataFactory/fa
 |Airflow Integration Runtime Heartbeat Failure<p><p>Airflow Integration Runtime Heartbeat Failure |`AirflowIntegrationRuntimeJobHeartbeatFailure` |Count |Total |IntegrationRuntimeName, Job |No|
 |Airflow Integration Runtime Job Start<p><p>Airflow Integration Runtime Job Start |`AirflowIntegrationRuntimeJobStart` |Count |Total |IntegrationRuntimeName, Job |No|
 |Airflow Integration Runtime Memory Percentage<p><p>Airflow Integration Runtime Memory Percentage |`AirflowIntegrationRuntimeMemoryPercentage` |Percent |Average |IntegrationRuntimeName, ContainerName |Yes|
+|Airflow Integration Runtime Node Count<p><p>Airflow Integration Runtime Node Count |`AirflowIntegrationRuntimeNodeCount` |Count |Average |IntegrationRuntimeName |Yes|
 |Airflow Integration Runtime Operator Failures<p><p>Airflow Integration Runtime Operator Failures |`AirflowIntegrationRuntimeOperatorFailures` |Count |Total |IntegrationRuntimeName, Operator |No|
 |Airflow Integration Runtime Operator Successes<p><p>Airflow Integration Runtime Operator Successes |`AirflowIntegrationRuntimeOperatorSuccesses` |Count |Total |IntegrationRuntimeName, Operator |No|
 |Airflow Integration Runtime Pool Open Slots<p><p>Airflow Integration Runtime Pool Open Slots |`AirflowIntegrationRuntimePoolOpenSlots` |Count |Total |IntegrationRuntimeName, Pool |No|
@@ -94,6 +95,15 @@ The following table lists the metrics available for the Microsoft.DataFactory/fa
 |Integration runtime queue length<p><p>Integration runtime queue length |`IntegrationRuntimeQueueLength` |Count |Average |IntegrationRuntimeName |Yes|
 |Maximum allowed factory size (GB unit)<p><p>Maximum allowed factory size (GB unit) |`MaxAllowedFactorySizeInGbUnits` |Count |Maximum |No Dimensions |Yes|
 |Maximum allowed entities count<p><p>Maximum allowed entities count |`MaxAllowedResourceCount` |Count |Maximum |No Dimensions |Yes|
+|Copy available capacity percentage of MVNet integration runtime<p><p>Copy available capacity percentage of MVNet integration runtime |`MVNetIRCopyAvailableCapacityPCT` |Percent |Maximum |IntegrationRuntimeName |Yes|
+|Copy capacity utilization of MVNet integration runtime<p><p>Copy capacity utilization of MVNet integration runtime |`MVNetIRCopyCapacityUtilization` |Percent |Maximum |IntegrationRuntimeName |Yes|
+|Copy waiting queue length of MVNet integration runtime<p><p>Copy waiting queue length of MVNet integration runtime |`MVNetIRCopyWaitingQueueLength` |Count |Average |IntegrationRuntimeName |Yes|
+|External available capacity percentage of MVNet integration runtime<p><p>External available capacity percentage of MVNet integration runtime |`MVNetIRExternalAvailableCapacityPCT` |Percent |Maximum |IntegrationRuntimeName |Yes|
+|External capacity utilization of MVNet integration runtime<p><p>External capacity utilization of MVNet integration runtime |`MVNetIRExternalCapacityUtilization` |Percent |Maximum |IntegrationRuntimeName |Yes|
+|External waiting queue length of MVNet integration runtime<p><p>External waiting queue length of MVNet integration runtime |`MVNetIRExternalWaitingQueueLength` |Count |Average |IntegrationRuntimeName |Yes|
+|Pipeline available capacity percentage of MVNet integration runtime<p><p>Pipeline available capacity percentage of MVNet integration runtime |`MVNetIRPipelineAvailableCapacityPCT` |Percent |Maximum |IntegrationRuntimeName |Yes|
+|Pipeline capacity utilization of MVNet integration runtime<p><p>Pipeline capacity utilization of MVNet integration runtime |`MVNetIRPipelineCapacityUtilization` |Percent |Maximum |IntegrationRuntimeName |Yes|
+|Pipeline waiting queue length of MVNet integration runtime<p><p>Pipeline waiting queue length of MVNet integration runtime |`MVNetIRPipelineWaitingQueueLength` |Count |Average |IntegrationRuntimeName |Yes|
 |Cancelled pipeline runs metrics<p><p>Cancelled pipeline runs metrics |`PipelineCancelledRuns` |Count |Total |FailureType, CancelledBy, Name |Yes|
 |Elapsed Time Pipeline Runs Metrics<p><p>Elapsed Time Pipeline Runs Metrics |`PipelineElapsedTimeRuns` |Count |Total |RunId, Name |Yes|
 |Failed pipeline runs metrics<p><p>Failed pipeline runs metrics |`PipelineFailedRuns` |Count |Total |FailureType, Name |Yes|
@@ -112,4 +122,4 @@ The following table lists the metrics available for the Microsoft.DataFactory/fa
 |Succeeded trigger runs metrics<p><p>Succeeded trigger runs metrics |`TriggerSucceededRuns` |Count |Total |Name, FailureType |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->

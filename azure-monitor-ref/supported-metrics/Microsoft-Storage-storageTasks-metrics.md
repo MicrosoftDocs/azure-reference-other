@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.Storage/storageTasks  
 <!-- Data source : naam-->
@@ -29,7 +29,12 @@ The following table lists the metrics available for the Microsoft.Storage/storag
 |---|---|---|---|---|---|
 |Objects operated count<p><p>The number of objects operated in storage task |`ObjectsOperatedCount` |Count |Total |AccountName, TaskAssignmentId |Yes|
 |Objects failed count<p><p>The number of objects failed in storage task |`ObjectsOperationFailedCount` |Count |Total |AccountName, TaskAssignmentId |Yes|
+|Objects succeeded count<p><p>The number of objects succeeded in storage task |`ObjectsOperationSucceededCount` |Count |Total |AccountName, TaskAssignmentId |Yes|
 |Objects targed count<p><p>The number of objects targeted in storage task |`ObjectsTargetedCount` |Count |Total |AccountName, TaskAssignmentId |Yes|
+|Runs count<p><p>The number of runs in storage task |`StorageTasksRunCount` |Count |Total |AccountName, TaskAssignmentId |Yes|
+|Runs failed count<p><p>The number of runs failed in storage task |`StorageTasksRunFailureCount` |Count |Total |AccountName, TaskAssignmentId |Yes|
+|Runs succeeded count<p><p>The number of runs succeeded in storage task |`StorageTasksRunSuccessCount` |Count |Total |AccountName, TaskAssignmentId |Yes|
+|Runs failed with at least one operation count<p><p>The number of runs failed with at least one opeartion count in storage task |`StorageTasksRunWithFailedOperationCount` |Count |Total |AccountName, TaskAssignmentId |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.Storage/storageAccounts/fileServices  
 <!-- Data source : naam-->
@@ -33,6 +33,8 @@ The following table lists the metrics available for the Microsoft.Storage/storag
 |File Count<p><p>The number of files in the storage account. |`FileCount` |Count |Average |FileShare, Tier |No|
 |File Share Capacity Quota<p><p>The upper limit on the amount of storage that can be used by Azure Files Service in bytes. |`FileShareCapacityQuota` |Bytes |Average |FileShare |No|
 |File Share Count<p><p>The number of file shares in the storage account. |`FileShareCount` |Count |Average |No Dimensions |No|
+|Bandwidth by Max MiB/s<p><p>The maximum number of used bandwidth in MiB/s at the lowest time granularity of 1-minute for the premium file share in the premium files storage account. |`FileShareMaxUsedBandwidthMiBps` |CountPerSecond |Maximum |FileShare |No|
+|Transactions by Max IOPS<p><p>The maximum number of used IOPS at the lowest time granularity of 1-minute for the premium file share in the premium files storage account. |`FileShareMaxUsedIOPS` |CountPerSecond |Maximum |FileShare |No|
 |File Share Provisioned IOPS<p><p>The baseline number of provisioned IOPS for the premium file share in the premium files storage account. This number is calculated based on the provisioned size (quota) of the share capacity. |`FileShareProvisionedIOPS` |CountPerSecond |Average |FileShare |No|
 |File Share Snapshot Count<p><p>The number of snapshots present on the share in storage account's Files Service. |`FileShareSnapshotCount` |Count |Average |FileShare |No|
 |File Share Snapshot Size<p><p>The amount of storage used by the snapshots in storage account's File service in bytes. |`FileShareSnapshotSize` |Bytes |Average |FileShare |No|
@@ -42,4 +44,4 @@ The following table lists the metrics available for the Microsoft.Storage/storag
 |Transactions<p><p>The number of requests made to a storage service or the specified API operation. This number includes successful and failed requests, as well as requests which produced errors. Use ResponseType dimension for the number of different type of response. |`Transactions` |Count |Total |ResponseType, GeoType, ApiName, Authentication, FileShare, TransactionType |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->

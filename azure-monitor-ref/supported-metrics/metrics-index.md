@@ -6,7 +6,7 @@ services: azure-monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.custom: ignite-2022
-ms.date: 07/17/2023
+ms.date: 08/01/2023
 ms.author: edbaynash
 ms.reviewer: priyamishra
 ---
@@ -16,7 +16,7 @@ ms.reviewer: priyamishra
 > [!NOTE]
 > This list is largely auto-generated. Any modification made to this list via GitHub might be written over without warning. Contact the author of this article for details on how to make permanent updates.
 
-Date list was last updated: 07/17/2023.
+Date list was last updated: 08/01/2023.
 
 Azure Monitor provides several ways to interact with metrics, including charting them in the Azure portal, accessing them through the REST API, or querying them by using PowerShell or the Azure CLI (Command Line Interface).  
 
@@ -202,9 +202,10 @@ This latest update adds a new column and reorders the metrics to be alphabetical
   * [microsoft.compute/disks](microsoft-compute-disks-metrics.md)
 
   
-### Microsoft.ConnectedCache<a name="microsoftconnectedcachecachenodes"></a><a name="microsoftconnectedcacheispcustomers"></a>
+### Microsoft.ConnectedCache<a name="microsoftconnectedcachecachenodes"></a><a name="microsoftconnectedcacheenterprisemcccustomers"></a><a name="microsoftconnectedcacheispcustomers"></a>
   
   * [Microsoft.ConnectedCache/CacheNodes](Microsoft-ConnectedCache-CacheNodes-metrics.md)
+* [Microsoft.ConnectedCache/enterpriseMccCustomers](Microsoft-ConnectedCache-enterpriseMccCustomers-metrics.md)
 * [Microsoft.ConnectedCache/ispCustomers](Microsoft-ConnectedCache-ispCustomers-metrics.md)
 
   
@@ -321,11 +322,12 @@ This latest update adds a new column and reorders the metrics to be alphabetical
   * [microsoft.edgezones/edgezones](microsoft-edgezones-edgezones-metrics.md)
 
   
-### Microsoft.EventGrid<a name="microsofteventgriddomains"></a><a name="microsofteventgrideventsubscriptions"></a><a name="microsofteventgridextensiontopics"></a><a name="microsofteventgridpartnernamespaces"></a><a name="microsofteventgridpartnertopics"></a><a name="microsofteventgridsystemtopics"></a><a name="microsofteventgridtopics"></a>
+### Microsoft.EventGrid<a name="microsofteventgriddomains"></a><a name="microsofteventgrideventsubscriptions"></a><a name="microsofteventgridextensiontopics"></a><a name="microsofteventgridnamespaces"></a><a name="microsofteventgridpartnernamespaces"></a><a name="microsofteventgridpartnertopics"></a><a name="microsofteventgridsystemtopics"></a><a name="microsofteventgridtopics"></a>
   
   * [Microsoft.EventGrid/domains](Microsoft-EventGrid-domains-metrics.md)
 * [Microsoft.EventGrid/eventSubscriptions](Microsoft-EventGrid-eventSubscriptions-metrics.md)
 * [Microsoft.EventGrid/extensionTopics](Microsoft-EventGrid-extensionTopics-metrics.md)
+* [Microsoft.EventGrid/namespaces](Microsoft-EventGrid-namespaces-metrics.md)
 * [Microsoft.EventGrid/partnerNamespaces](Microsoft-EventGrid-partnerNamespaces-metrics.md)
 * [Microsoft.EventGrid/partnerTopics](Microsoft-EventGrid-partnerTopics-metrics.md)
 * [Microsoft.EventGrid/systemTopics](Microsoft-EventGrid-systemTopics-metrics.md)
@@ -343,12 +345,17 @@ This latest update adds a new column and reorders the metrics to be alphabetical
   * [Microsoft.HDInsight/clusters](Microsoft-HDInsight-clusters-metrics.md)
 
   
-### Microsoft.HealthcareApis<a name="microsofthealthcareapisservices"></a><a name="microsofthealthcareapisworkspacesanalyticsconnectors"></a><a name="microsofthealthcareapisworkspacesfhirservices"></a><a name="microsofthealthcareapisworkspacesiotconnectors"></a>
+### Microsoft.HealthcareApis<a name="microsofthealthcareapisservices"></a><a name="microsofthealthcareapisworkspacesdicomservices"></a><a name="microsofthealthcareapisworkspacesfhirservices"></a><a name="microsofthealthcareapisworkspacesiotconnectors"></a>
   
   * [Microsoft.HealthcareApis/services](Microsoft-HealthcareApis-services-metrics.md)
-* [Microsoft.HealthcareApis/workspaces/analyticsconnectors](Microsoft-HealthcareApis-workspaces-analyticsconnectors-metrics.md)
+* [Microsoft.HealthcareApis/workspaces/dicomservices](Microsoft-HealthcareApis-workspaces-dicomservices-metrics.md)
 * [Microsoft.HealthcareApis/workspaces/fhirservices](Microsoft-HealthcareApis-workspaces-fhirservices-metrics.md)
 * [Microsoft.HealthcareApis/workspaces/iotconnectors](Microsoft-HealthcareApis-workspaces-iotconnectors-metrics.md)
+
+  
+### Microsoft.HealthModel<a name="microsofthealthmodelhealthmodels"></a>
+  
+  * [Microsoft.HealthModel/healthmodels](Microsoft-HealthModel-healthmodels-metrics.md)
 
   
 ### Microsoft.HybridContainerService<a name="microsofthybridcontainerserviceprovisionedclusters"></a>

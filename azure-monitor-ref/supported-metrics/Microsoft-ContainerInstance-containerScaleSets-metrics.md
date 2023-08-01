@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/17/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.ContainerInstance/containerScaleSets  
 <!-- Data source : naam-->
@@ -27,10 +27,10 @@ The following table lists the metrics available for the Microsoft.ContainerInsta
   
 |Metric|Name|Unit|Aggregation|Dimensions|DS Export|
 |---|---|---|---|---|---|
-|Percentage CPU<p><p>Average of the CPU percentages consumed by individual Container Groups in this Scale Set |`CpuPercentage` |Percent |Average |OrchestratorId |Yes|
-|CPU usage<p><p>Average of the CPU utilizations in millicores consumed by Container Groups in this Scale Set |`CpuUsage` |MilliCores |Average |OrchestratorId |Yes|
-|Memory percentage<p><p>Average of the memory percentages consumed ((usedMemory/allocatedMemory) * 100) by Container Groups in this Scale Set |`MemoryPercentage` |Percent |Average |OrchestratorId |Yes|
-|Memory usage<p><p>Total memory used by all the Container Groups in this Scale Set |`MemoryUsage` |Bytes |Total |OrchestratorId |Yes|
+|Percentage CPU<p><p>Average of the CPU percentages consumed by individual Container Groups in this Scale Set |`CpuPercentage` |Percent |Average |No Dimensions |Yes|
+|CPU usage<p><p>Average of the CPU utilizations in millicores consumed by Container Groups in this Scale Set |`CpuUsage` |MilliCores |Average |No Dimensions |Yes|
+|Memory percentage<p><p>Average of the memory percentages consumed ((usedMemory/allocatedMemory) * 100) by Container Groups in this Scale Set |`MemoryPercentage` |Percent |Average |No Dimensions |Yes|
+|Memory usage<p><p>Total memory used by all the Container Groups in this Scale Set |`MemoryUsage` |Bytes |Total |No Dimensions |Yes|
 
 
-<!--Gen Date:  Mon Jul 17 2023 12:39:39 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
