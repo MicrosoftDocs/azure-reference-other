@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.Maps/accounts  
 <!-- Data source : arm-->
@@ -28,8 +28,7 @@ The following table lists the metrics available for the Microsoft.Maps/accounts 
 |Metric|Name|Unit|Aggregation|Dimensions|DS Export|
 |---|---|---|---|---|---|
 |Availability<p><p>Availability of the APIs |`Availability` |Percent |Average |ApiCategory, ApiName |Yes|
-|Creator Usage<p><p>Azure Maps Creator usage statistics |`CreatorUsage` |Bytes |Average |ServiceName |No|
 |Usage<p><p>Count of API calls |`Usage` |Count |Count |ApiCategory, ApiName, ResultType, ResponseCode |No|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
