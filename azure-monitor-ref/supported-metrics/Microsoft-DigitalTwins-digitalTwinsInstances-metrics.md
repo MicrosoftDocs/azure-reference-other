@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.DigitalTwins/digitalTwinsInstances  
 <!-- Data source : arm-->
@@ -33,11 +33,11 @@ The following table lists the metrics available for the Microsoft.DigitalTwins/d
 |Billing API Operations<p><p>Billing metric for the count of all API requests made against the Azure Digital Twins service. |`BillingApiOperations` |Count |Total |MeterId |Yes|
 |Billing Messages Processed<p><p>Billing metric for the number of messages sent out from Azure Digital Twins to external endpoints. |`BillingMessagesProcessed` |Count |Total |MeterId |Yes|
 |Billing Query Units<p><p>The number of Query Units, an internally computed measure of service resource usage, consumed to execute queries. |`BillingQueryUnits` |Count |Total |MeterId |Yes|
-|Bulk Operation Entity Count (preview)<p><p>The number of twins, models, or relationships processed by a bulk operation. |`BulkOperationEntityCount` |Count |Total |Operation, Result |Yes|
-|Bulk Operation Latency (preview)<p><p>Total time taken for a bulk operation to complete. |`BulkOperationLatency` |Milliseconds |Average |Operation, Authentication, Protocol |Yes|
 |Data History Messages Routed (preview)<p><p>The number of messages routed to a time series database. |`DataHistoryRouting` |Count |Total |EndpointType, Result |Yes|
 |Data History Routing Failure Rate (preview)<p><p>The percentage of events that result in an error as they are routed from Azure Digital Twins to a time series database. |`DataHistoryRoutingFailureRate` |Percent |Average |EndpointType |Yes|
 |Data History Routing Latency (preview)<p><p>Time elapsed between an event getting routed from Azure Digital Twins to when it is posted to a time series database. |`DataHistoryRoutingLatency` |Milliseconds |Average |EndpointType, Result |Yes|
+|Import Job Entity Count<p><p>The number of twins, models, or relationships processed by an import job. |`ImportJobEntityCount` |Count |Total |Operation, Result |Yes|
+|Import Job Latency<p><p>Total time taken for an import job to complete. |`ImportJobLatency` |Milliseconds |Average |Operation, Authentication, Protocol |Yes|
 |Ingress Events<p><p>The number of incoming telemetry events into Azure Digital Twins. |`IngressEvents` |Count |Total |Result |Yes|
 |Ingress Events Failure Rate<p><p>The percentage of incoming telemetry events for which the service returns an internal error (500) response code. |`IngressEventsFailureRate` |Percent |Average |No Dimensions |Yes|
 |Ingress Events Latency<p><p>The time from when an event arrives to when it is ready to be egressed by Azure Digital Twins, at which point the service sends a success/fail result. |`IngressEventsLatency` |Milliseconds |Average |Result |Yes|
@@ -48,4 +48,4 @@ The following table lists the metrics available for the Microsoft.DigitalTwins/d
 |Twin Count<p><p>Total number of twins in the Azure Digital Twins instance. Use this metric to determine if you are approaching the service limit for max number of twins allowed per instance. |`TwinCount` |Count |Total |No Dimensions |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->

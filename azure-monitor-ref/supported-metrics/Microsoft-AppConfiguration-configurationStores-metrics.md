@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.AppConfiguration/configurationStores  
 <!-- Data source : naam-->
@@ -29,8 +29,9 @@ The following table lists the metrics available for the Microsoft.AppConfigurati
 |---|---|---|---|---|---|
 |DailyStorageUsage<p><p>Total storage usage of the store in percentage. Updated at minimum every 24 hours. |`DailyStorageUsage` |Percent |Maximum |No Dimensions |Yes|
 |HttpIncomingRequestCount<p><p>Total number of incoming http requests. |`HttpIncomingRequestCount` |Count |Total |StatusCode, Authentication, Endpoint |Yes|
-|HttpIncomingRequestDuration<p><p>Latency on an http request. |`HttpIncomingRequestDuration` |Count |Average |StatusCode, Authentication, Endpoint |Yes|
+|HttpIncomingRequestDuration<p><p>Latency on an http request. |`HttpIncomingRequestDuration` |Milliseconds |Average |StatusCode, Authentication, Endpoint |Yes|
+|ReplicationLatency<p><p>Latency of replication. Average time it takes for a replica to be consistent with current state. |`ReplicationLatency` |Milliseconds |Average |Endpoint |Yes|
 |ThrottledHttpRequestCount<p><p>Throttled http requests. |`ThrottledHttpRequestCount` |Count |Total |Endpoint |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->

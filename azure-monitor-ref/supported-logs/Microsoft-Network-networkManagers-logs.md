@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported logs for Microsoft.Network/networkManagers  
 <!-- Data source : naam-->
@@ -16,6 +16,7 @@ ms.date: 07/12/2023
 |Category|Category Display Name|Costs To Export|
 |---|---|---|
 |NetworkGroupMembershipChange |Network Group Membership Change |Yes |
+|RuleCollectionChange |Rule Collection Change |Yes |
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->

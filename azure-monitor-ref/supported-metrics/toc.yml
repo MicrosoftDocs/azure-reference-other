@@ -90,6 +90,8 @@ items:
     href: ../supported-metrics/Microsoft-Compute-virtualMachineScaleSets-virtualMachines-metrics.md
   - name: Microsoft.ConnectedCache/CacheNodes
     href: ../supported-metrics/Microsoft-ConnectedCache-CacheNodes-metrics.md
+  - name: Microsoft.ConnectedCache/enterpriseMccCustomers
+    href: ../supported-metrics/Microsoft-ConnectedCache-enterpriseMccCustomers-metrics.md
   - name: Microsoft.ConnectedCache/ispCustomers
     href: ../supported-metrics/Microsoft-ConnectedCache-ispCustomers-metrics.md
   - name: Microsoft.ConnectedVehicle/platformAccounts
@@ -156,6 +158,8 @@ items:
     href: ../supported-metrics/Microsoft-EventGrid-eventSubscriptions-metrics.md
   - name: Microsoft.EventGrid/extensionTopics
     href: ../supported-metrics/Microsoft-EventGrid-extensionTopics-metrics.md
+  - name: Microsoft.EventGrid/namespaces
+    href: ../supported-metrics/Microsoft-EventGrid-namespaces-metrics.md
   - name: Microsoft.EventGrid/partnerNamespaces
     href: ../supported-metrics/Microsoft-EventGrid-partnerNamespaces-metrics.md
   - name: Microsoft.EventGrid/partnerTopics
@@ -172,12 +176,14 @@ items:
     href: ../supported-metrics/Microsoft-HDInsight-clusters-metrics.md
   - name: Microsoft.HealthcareApis/services
     href: ../supported-metrics/Microsoft-HealthcareApis-services-metrics.md
-  - name: Microsoft.HealthcareApis/workspaces/analyticsconnectors
-    href: ../supported-metrics/Microsoft-HealthcareApis-workspaces-analyticsconnectors-metrics.md
+  - name: Microsoft.HealthcareApis/workspaces/dicomservices
+    href: ../supported-metrics/Microsoft-HealthcareApis-workspaces-dicomservices-metrics.md
   - name: Microsoft.HealthcareApis/workspaces/fhirservices
     href: ../supported-metrics/Microsoft-HealthcareApis-workspaces-fhirservices-metrics.md
   - name: Microsoft.HealthcareApis/workspaces/iotconnectors
     href: ../supported-metrics/Microsoft-HealthcareApis-workspaces-iotconnectors-metrics.md
+  - name: Microsoft.HealthModel/healthmodels
+    href: ../supported-metrics/Microsoft-HealthModel-healthmodels-metrics.md
   - name: Microsoft.HybridContainerService/provisionedClusters
     href: ../supported-metrics/Microsoft-HybridContainerService-provisionedClusters-metrics.md
   - name: microsoft.hybridnetwork/networkfunctions

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.EventGrid/systemTopics  
 <!-- Data source : arm-->
@@ -37,7 +37,8 @@ The following table lists the metrics available for the Microsoft.EventGrid/syst
 |Publish Failed Events<p><p>Total events failed to publish to this topic |`PublishFailCount` |Count |Total |ErrorType, Error |Yes|
 |Published Events<p><p>Total events published to this topic |`PublishSuccessCount` |Count |Total |No Dimensions |Yes|
 |Publish Success Latency<p><p>Publish success latency in milliseconds |`PublishSuccessLatencyInMs` |Milliseconds |Total |No Dimensions |Yes|
+|Server Delivery Success Rate<p><p>Success rate of events delivered to this event subscription where failure is caused due to server errors |`ServerDeliverySuccessRate` |Count |Total |EventSubscriptionName |Yes|
 |Unmatched Events<p><p>Total events not matching any of the event subscriptions for this topic |`UnmatchedEventCount` |Count |Total |No Dimensions |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->

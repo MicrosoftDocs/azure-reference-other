@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/17/2023
+ms.date: 07/31/2023
 ---
 
 # DeviceEvents
