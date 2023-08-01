@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.Web/sites  
 <!-- Data source : naam-->
@@ -66,12 +66,16 @@ The following table lists the metrics available for the Microsoft.Web/sites reso
 |Total App Domains<p><p>The current number of AppDomains loaded in this application. For WebApps and FunctionApps. |`TotalAppDomains` |Count |Average |Instance |Yes|
 |Total App Domains Unloaded<p><p>The total number of AppDomains unloaded since the start of the application. For WebApps and FunctionApps. |`TotalAppDomainsUnloaded` |Count |Average |Instance |Yes|
 |Workflow Action Completed Count<p><p>Workflow Action Completed Count. For LogicApps only. |`WorkflowActionsCompleted` |Count |Total |workflowName, status |Yes|
+|Workflow Actions Failure Rate<p><p>Workflow Actions Failure Rate. For LogicApps only. |`WorkflowActionsFailureRate` |Percent |Total |workflowName |Yes|
+|Logic App Job Pull Rate Per Second<p><p>Logic Job Pull Rate per second. For LogicApps only. |`WorkflowAppJobPullRate` |CountPerSecond |Total |accountName |Yes|
 |Workflow Job Execution Delay<p><p>Workflow Job Execution Delay. For LogicApps only. |`WorkflowJobExecutionDelay` |Seconds |Average |workflowName |Yes|
 |Workflow Job Execution Duration<p><p>Workflow Job Execution Duration. For LogicApps only. |`WorkflowJobExecutionDuration` |Seconds |Average |workflowName |Yes|
 |Workflow Runs Completed Count<p><p>Workflow Runs Completed Count. For LogicApps only. |`WorkflowRunsCompleted` |Count |Total |workflowName, status |Yes|
 |Workflow Runs dispatched Count<p><p>Workflow Runs Dispatched Count. For LogicApps only. |`WorkflowRunsDispatched` |Count |Total |workflowName |Yes|
+|Workflow Runs Failure Rate<p><p>Workflow Runs Failure Rate. For LogicApps only. |`WorkflowRunsFailureRate` |Percent |Total |workflowName |Yes|
 |Workflow Runs Started Count<p><p>Workflow Runs Started Count. For LogicApps only. |`WorkflowRunsStarted` |Count |Total |workflowName |Yes|
 |Workflow Triggers Completed Count<p><p>Workflow Triggers Completed Count. For LogicApps only. |`WorkflowTriggersCompleted` |Count |Total |workflowName, status |Yes|
+|Workflow Triggers Failure Rate<p><p>Workflow Triggers Failure Rate. For LogicApps only. |`WorkflowTriggersFailureRate` |Percent |Total |workflowName |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
