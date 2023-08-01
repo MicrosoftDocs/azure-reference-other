@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.NetworkCloud/bareMetalMachines  
 <!-- Data source : naam-->
@@ -46,7 +46,7 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/b
 |Average Load In 15 Minutes (Preview)<p><p>15 minute load average |`HostLoad15` |Count |Average |Host |No|
 |Average load in 5 minutes (Preview)<p><p>5 minute load average |`HostLoad5` |Count |Average |Host |No|
 |Host Memory Available Bytes<p><p>Available memory in bytes by node |`HostMemAvailBytes` |Count |Average |Host |No|
-|Total Amount of Memory In Corrupted Pages<p><p>Corrupted bytes in hardware by node |`HostMemHWCorruptedBytes` |Count |Average |Host |No|
+|Total Memory In Corrupted Pages<p><p>Corrupted bytes in hardware by node |`HostMemHWCorruptedBytes` |Count |Average |Host |No|
 |Host Memory Total Bytes<p><p>Total bytes of memory by node |`HostMemTotalBytes` |Bytes |Average |Host |No|
 |Host Specific CPU Utilization (Preview)<p><p>A counter metric that counts the number of seconds the CPU has been running in a particular mode |`HostSpecificCPUUtilization` |Seconds |Average |Cpu, Host, Mode |No|
 |IDRAC Power Capacity Watts<p><p>Power Capacity |`IdracPowerCapacityWatts` |Unspecified |Average |Host, PSU |No|
@@ -57,8 +57,8 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/b
 |Network Device Receive Errors<p><p>Total network device errors received |`NcNodeNetworkReceiveErrsTotal` |Count |Average |Hostname, Interface Name |No|
 |Network Device Transmit Errors<p><p>Total network device errors transmitted |`NcNodeNetworkTransmitErrsTotal` |Count |Average |Hostname, Interface Name |No|
 |Total CPUs Available to Nexus per NUMA<p><p>Total number of CPUs available to Nexus per NUMA |`NcTotalCpusPerNuma` |Count |Average |Hostname, NUMA Node |No|
-|CPUs per NUMA Allocated for Nexus Kubernetes<p><p>Total number of CPUs per NUMA allocated for Nexus Kubernetes and Tenant Workloads |`NcTotalWorkloadCpusAllocatedPerNuma` |Count |Average |Hostname, NUMA Node |No|
-|CPUs per NUMA Available for Nexus Kubernetes<p><p>Total number of CPUs per NUMA available to Nexus Kubernetes and Tenant Workloads |`NcTotalWorkloadCpusAvailablePerNuma` |Count |Average |Hostname, NUMA Node |No|
+|CPUs per NUMA Allocated for Nexus K8s<p><p>Total number of CPUs per NUMA allocated for Nexus Kubernetes and Tenant Workloads |`NcTotalWorkloadCpusAllocatedPerNuma` |Count |Average |Hostname, NUMA Node |No|
+|CPUs per NUMA Available for Nexus K8s<p><p>Total number of CPUs per NUMA available to Nexus Kubernetes and Tenant Workloads |`NcTotalWorkloadCpusAvailablePerNuma` |Count |Average |Hostname, NUMA Node |No|
 |Node Bonding Active (Preview)<p><p>Number of active interfaces per bonding interface |`NodeBondingActive` |Count |Average |Master |No|
 |Node Memory Huge Pages Free (Preview)<p><p>NUMA hugepages free by node |`NodeMemHugePagesFree` |Bytes |Average |Host, Node |No|
 |Node Memory Huge Pages Total<p><p>NUMA huge pages total by node |`NodeMemHugePagesTotal` |Bytes |Average |Host, Node |No|
@@ -66,7 +66,7 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/b
 |Node Memory NUMA (Shared Memory)<p><p>NUMA shared memory |`NodeMemNumaShem` |Bytes |Average |Host, Node |No|
 |Node Memory NUMA (Used Memory)<p><p>NUMA memory used |`NodeMemNumaUsed` |Bytes |Average |Host, Node |No|
 |Node Network Carrier Changes<p><p>Node network carrier changes |`NodeNetworkCarrierChanges` |Count |Average |Device, Host |No|
-|Node Network Maximum Transmission Unit Bytes<p><p>Node network Maximum Transmission Unit (mtu_bytes) value of /sys/class/net/\<iface\> |`NodeNetworkMtuBytes` |Bytes |Average |Device, Host |No|
+|Node Network Max Transmission<p><p>Node network Maximum Transmission Unit (mtu_bytes) value of /sys/class/net/\<iface\> |`NodeNetworkMtuBytes` |Bytes |Average |Device, Host |No|
 |Node Network Received Multicast Total<p><p>Network device statistic receive_multicast |`NodeNetworkReceiveMulticastTotal` |Bytes |Average |Device, Host |No|
 |Node Network Received Packets<p><p>Network device statistic receive_packets |`NodeNetworkReceivePackets` |Count |Average |Device, Host |No|
 |Node Network Speed Bytes<p><p>speed_bytes value of /sys/class/net/\<iface\> |`NodeNetworkSpeedBytes` |Bytes |Average |Device, Host |No|
@@ -82,4 +82,4 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/b
 |Node VM PSWP Out<p><p>Information in /proc/vmstat pertaining to the field pswpout |`NodeVmstatPswpout` |Count |Average |Host |No|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
