@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -43,11 +43,6 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 ### Microsoft.AAD<a name="microsoftaaddomainservices"></a>
   
   * [Microsoft.AAD/DomainServices](Microsoft-AAD-DomainServices-logs.md)
-
-  
-### microsoft.aadiam<a name="microsoftaadiamtenants"></a>
-  
-  * [microsoft.aadiam/tenants](microsoft-aadiam-tenants-logs.md)
 
   
 ### Microsoft.AgFoodPlatform<a name="microsoftagfoodplatformfarmbeats"></a>
@@ -175,9 +170,10 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 * [Microsoft.ConfidentialLedger/ManagedCCFs](Microsoft-ConfidentialLedger-ManagedCCFs-logs.md)
 
   
-### Microsoft.ConnectedCache<a name="microsoftconnectedcachecachenodes"></a><a name="microsoftconnectedcacheispcustomers"></a>
+### Microsoft.ConnectedCache<a name="microsoftconnectedcachecachenodes"></a><a name="microsoftconnectedcacheenterprisemcccustomers"></a><a name="microsoftconnectedcacheispcustomers"></a>
   
   * [Microsoft.ConnectedCache/CacheNodes](Microsoft-ConnectedCache-CacheNodes-logs.md)
+* [Microsoft.ConnectedCache/enterpriseMccCustomers](Microsoft-ConnectedCache-enterpriseMccCustomers-logs.md)
 * [Microsoft.ConnectedCache/ispCustomers](Microsoft-ConnectedCache-ispCustomers-logs.md)
 
   
@@ -319,10 +315,9 @@ If you think something is missing, you can open a GitHub comment at the bottom o
   * [Microsoft.EventHub/Namespaces](Microsoft-EventHub-Namespaces-logs.md)
 
   
-### Microsoft.HealthcareApis<a name="microsofthealthcareapisservices"></a><a name="microsofthealthcareapisworkspacesanalyticsconnectors"></a><a name="microsofthealthcareapisworkspacesdicomservices"></a><a name="microsofthealthcareapisworkspacesfhirservices"></a><a name="microsofthealthcareapisworkspacesiotconnectors"></a>
+### Microsoft.HealthcareApis<a name="microsofthealthcareapisservices"></a><a name="microsofthealthcareapisworkspacesdicomservices"></a><a name="microsofthealthcareapisworkspacesfhirservices"></a><a name="microsofthealthcareapisworkspacesiotconnectors"></a>
   
   * [Microsoft.HealthcareApis/services](Microsoft-HealthcareApis-services-logs.md)
-* [Microsoft.HealthcareApis/workspaces/analyticsconnectors](Microsoft-HealthcareApis-workspaces-analyticsconnectors-logs.md)
 * [Microsoft.HealthcareApis/workspaces/dicomservices](Microsoft-HealthcareApis-workspaces-dicomservices-logs.md)
 * [Microsoft.HealthcareApis/workspaces/fhirservices](Microsoft-HealthcareApis-workspaces-fhirservices-logs.md)
 * [Microsoft.HealthcareApis/workspaces/iotconnectors](Microsoft-HealthcareApis-workspaces-iotconnectors-logs.md)
