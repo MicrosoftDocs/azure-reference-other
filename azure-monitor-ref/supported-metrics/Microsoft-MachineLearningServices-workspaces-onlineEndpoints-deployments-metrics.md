@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments  
 <!-- Data source : naam-->
@@ -36,6 +36,11 @@ The following table lists the metrics available for the Microsoft.MachineLearnin
 |GPU Energy in Joules<p><p>Interval energy in Joules on a GPU node. Energy is reported at one minute intervals. |`GpuEnergyJoules` |Count |Average |instanceId |No|
 |GPU Memory Utilization Percentage<p><p>Percentage of GPU memory utilization on an instance. Utilization is reported at one minute intervals. |`GpuMemoryUtilizationPercentage` |Percent |Average |instanceId |Yes|
 |GPU Utilization Percentage<p><p>Percentage of GPU utilization on an instance. Utilization is reported at one minute intervals. |`GpuUtilizationPercentage` |Percent |Average |instanceId |Yes|
+|Request Latency P50<p><p>The average P50 request latency aggregated by all request latency values collected over the selected time period |`RequestLatency_P50` |Milliseconds |Average |No Dimensions |Yes|
+|Request Latency P90<p><p>The average P90 request latency aggregated by all request latency values collected over the selected time period |`RequestLatency_P90` |Milliseconds |Average |No Dimensions |Yes|
+|Request Latency P95<p><p>The average P95 request latency aggregated by all request latency values collected over the selected time period |`RequestLatency_P95` |Milliseconds |Average |No Dimensions |Yes|
+|Request Latency P99<p><p>The average P99 request latency aggregated by all request latency values collected over the selected time period |`RequestLatency_P99` |Milliseconds |Average |No Dimensions |Yes|
+|Requests Per Minute<p><p>The number of requests sent to online deployment within a minute |`RequestsPerMinute` |Count |Average |envoy_response_code |No|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
