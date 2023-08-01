@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for microsoft.network/virtualnetworkgateways  
 <!-- Data source : naam-->
@@ -44,6 +44,15 @@ The following table lists the metrics available for the microsoft.network/virtua
 |Gateway P2S Bandwidth<p><p>Point-to-site bandwidth of a gateway in bytes per second |`P2SBandwidth` |BytesPerSecond |Average |Instance |Yes|
 |P2S Connection Count<p><p>Point-to-site connection count of a gateway |`P2SConnectionCount` |Count |Total |Protocol, Instance |Yes|
 |Tunnel QMSA Count<p><p>QMSA Count |`QmsaCount` |Count |Total |ConnectionName, RemoteIP, Instance |Yes|
+|Active Flows<p><p>Number of Active Flows on ExpressRoute Gateway |`ScalableExpressRouteGatewayActiveFlows` |Count |Average |No Dimensions |No|
+|Bits Received Per second<p><p>Total Bits received on ExpressRoute Gateway per second |`ScalableExpressRouteGatewayBitsPerSecond` |BitsPerSecond |Average |No Dimensions |No|
+|Count Of Routes Advertised to Peer<p><p>Count Of Routes Advertised To Peer by ExpressRoute Gateway |`ScalableExpressRouteGatewayCountOfRoutesAdvertisedToPeer` |Count |Maximum |No Dimensions |No|
+|Count Of Routes Learned from Peer<p><p>Count Of Routes Learned From Peer by ExpressRoute Gateway |`ScalableExpressRouteGatewayCountOfRoutesLearnedFromPeer` |Count |Maximum |No Dimensions |No|
+|CPU utilization<p><p>CPU Utilization of the ExpressRoute Gateway |`ScalableExpressRouteGatewayCpuUtilization` |Percent |Average |No Dimensions |No|
+|Frequency of Routes change<p><p>Frequency of Routes change in ExpressRoute Gateway |`ScalableExpressRouteGatewayFrequencyOfRoutesChanged` |Count |Total |No Dimensions |No|
+|Max Flows Created Per Second<p><p>Maximum Number of Flows Created Per Second on ExpressRoute Gateway |`ScalableExpressRouteGatewayMaxFlowsCreationRate` |CountPerSecond |Maximum |direction |No|
+|Number of VMs in the Virtual Network<p><p>Number of VMs in the Virtual Network |`ScalableExpressRouteGatewayNumberOfVmInVnet` |Count |Maximum |No Dimensions |No|
+|Packets received per second<p><p>Total Packets received on ExpressRoute Gateway per second |`ScalableExpressRouteGatewayPacketsPerSecond` |CountPerSecond |Average |No Dimensions |No|
 |Tunnel Bandwidth<p><p>Average bandwidth of a tunnel in bytes per second |`TunnelAverageBandwidth` |BytesPerSecond |Average |ConnectionName, RemoteIP, Instance |Yes|
 |Tunnel Egress Bytes<p><p>Outgoing bytes of a tunnel |`TunnelEgressBytes` |Bytes |Total |ConnectionName, RemoteIP, Instance |Yes|
 |Tunnel Egress Packet Drop Count<p><p>Count of outgoing packets dropped by tunnel |`TunnelEgressPacketDropCount` |Count |Total |ConnectionName, RemoteIP, Instance |Yes|
@@ -66,4 +75,4 @@ The following table lists the metrics available for the microsoft.network/virtua
 |VNet Address Prefix Count<p><p>Count of Vnet address prefixes behind gateway |`VnetAddressPrefixCount` |Count |Total |Instance |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
