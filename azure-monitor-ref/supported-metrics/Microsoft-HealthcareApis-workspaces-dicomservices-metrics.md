@@ -1,17 +1,17 @@
 ---
-title: Supported metrics - Microsoft.Maps/accounts
-description: Reference for Microsoft.Maps/accounts metrics in Azure Monitor.
+title: Supported metrics - Microsoft.HealthcareApis/workspaces/dicomservices
+description: Reference for Microsoft.HealthcareApis/workspaces/dicomservices metrics in Azure Monitor.
 ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
 ms.date: 08/01/2023
 ---
-# Supported metrics for Microsoft.Maps/accounts  
+# Supported metrics for Microsoft.HealthcareApis/workspaces/dicomservices  
 <!-- Data source : arm-->
 
 
-The following table lists the metrics available for the Microsoft.Maps/accounts resource type.
+The following table lists the metrics available for the Microsoft.HealthcareApis/workspaces/dicomservices resource type.
 
   
 
@@ -27,8 +27,7 @@ The following table lists the metrics available for the Microsoft.Maps/accounts 
   
 |Metric|Name|Unit|Aggregation|Dimensions|DS Export|
 |---|---|---|---|---|---|
-|Availability<p><p>Availability of the APIs |`Availability` |Percent |Average |ApiCategory, ApiName |Yes|
-|Usage<p><p>Count of API calls |`Usage` |Count |Count |ApiCategory, ApiName, ResultType, ResponseCode |No|
+|Number of DICOM files processed by import<p><p>The total number of DICOM files processed by an import. |`ImportsProcessed` |Count |Sum |Status, ResourceName |Yes|
 
 
 <!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
