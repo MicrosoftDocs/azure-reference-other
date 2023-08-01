@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 08/01/2023
 ---
 # Supported metrics for Microsoft.NetworkCloud/clusters  
 <!-- Data source : naam-->
@@ -27,28 +27,28 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/c
   
 |Metric|Name|Unit|Aggregation|Dimensions|DS Export|
 |---|---|---|---|---|---|
-|API Server Audit Requests Rejected Total<p><p>Counter of API server requests rejected due to an error in the audit logging backend |`ApiserverAuditRequestsRejectedTotal` |Count |Average |Component, Pod Name |No|
-|API Server Client Certificate Expiration Seconds Sum (Preview)<p><p>Sum of API server client certificate expiration (seconds) |`ApiserverClientCertificateExpirationSecondsSum` |Seconds |Average |Component, Pod Name |No|
-|API Server Storage Data Key Generation Failures Total<p><p>Total number of operations that failed Data Encryption Key (DEK) generation |`ApiserverStorageDataKeyGenerationFailuresTotal` |Count |Average |Component, Pod Name |No|
-|API Server TLS Handshake Errors Total (Preview)<p><p>Number of requests dropped with 'TLS handshake' error |`ApiserverTlsHandshakeErrorsTotal` |Count |Average |Component, Pod Name |No|
+|APIServer Audit Requests Rejected Total<p><p>Counter of API server requests rejected due to an error in the audit logging backend |`ApiserverAuditRequestsRejectedTotal` |Count |Average |Component, Pod Name |No|
+|APIServer Clnt Cert Exp Sec Sum (Preview)<p><p>Sum of API server client certificate expiration (seconds) |`ApiserverClientCertificateExpirationSecondsSum` |Seconds |Average |Component, Pod Name |No|
+|APIServer Storage Data Key Gen Fail<p><p>Total number of operations that failed Data Encryption Key (DEK) generation |`ApiserverStorageDataKeyGenerationFailuresTotal` |Count |Average |Component, Pod Name |No|
+|APIServer TLS Handshake Err (Preview)<p><p>Number of requests dropped with 'TLS handshake' error |`ApiserverTlsHandshakeErrorsTotal` |Count |Average |Component, Pod Name |No|
 |Container FS I/O Time Seconds Total (Preview)<p><p>Time taken for container Input/Output (I/O) operations |`ContainerFsIoTimeSecondsTotal` |Seconds |Average |Device, Host |No|
 |Container Memory Fail Count<p><p>Number of times a container's memory usage limit is hit |`ContainerMemoryFailcnt` |Count |Average |Container, Host, Namespace, Pod |No|
 |Container Memory Usage Bytes<p><p>Current memory usage, including all memory regardless of when it was accessed |`ContainerMemoryUsageBytes` |Bytes |Average |Container, Host, Namespace, Pod |No|
-|Container Network Receive Errors Total (Preview)<p><p>Number of errors encountered while receiving bytes over the network |`ContainerNetworkReceiveErrorsTotal` |Count |Average |Interface, Namespace, Pod |No|
-|Container Network Transmit Errors Total (Preview)<p><p>Count of errors that happened while transmitting |`ContainerNetworkTransmitErrorsTotal` |Count |Average |Interface, Namespace, Pod |No|
+|Container Net Rx Errors (Preview)<p><p>Number of errors encountered while receiving bytes over the network |`ContainerNetworkReceiveErrorsTotal` |Count |Average |Interface, Namespace, Pod |No|
+|Container Net Tx Err Total (Preview)<p><p>Count of errors that happened while transmitting |`ContainerNetworkTransmitErrorsTotal` |Count |Average |Interface, Namespace, Pod |No|
 |Container Scrape Error<p><p>Indicates whether there was an error while getting container metrics |`ContainerScrapeError` |Unspecified |Average |Host |No|
 |Container Tasks State<p><p>Number of tasks or processes in a given state (sleeping, running, stopped, uninterruptible, or waiting) in a container |`ContainerTasksState` |Count |Average |Container, Host, Namespace, Pod, State |No|
 |Controller Reconcile Errors Total<p><p>Total number of reconciliation errors per controller |`ControllerRuntimeReconcileErrorsTotal` |Count |Average |Controller, Namespace, Pod Name |No|
 |Controller Reconciliations Total<p><p>Total number of reconciliations per controller |`ControllerRuntimeReconcileTotal` |Count |Average |Controller, Namespace, Pod Name |No|
 |CoreDNS Requests Total<p><p>Total number of DNS requests |`CorednsDnsRequestsTotal` |Count |Average |Family, Pod Name, Proto, Server, Type |No|
 |CoreDNS Responses Total<p><p>Total number of DNS responses |`CorednsDnsResponsesTotal` |Count |Average |Pod Name, Server, Rcode |No|
-|CoreDNS Forward Healthcheck Broken Total (Preview)<p><p>Total number of times all upstreams are unhealthy |`CorednsForwardHealthcheckBrokenTotal` |Count |Average |Pod Name, Namespace |No|
-|CoreDNS Forward Max Concurrent Rejects Total (Preview)<p><p>Total number of rejected queries because concurrent queries were at the maximum limit |`CorednsForwardMaxConcurrentRejectsTotal` |Count |Average |Pod Name, Namespace |No|
+|CoreDNS Frwd Hlthchk Broken (Preview)<p><p>Total number of times all upstreams are unhealthy |`CorednsForwardHealthcheckBrokenTotal` |Count |Average |Pod Name, Namespace |No|
+|CoreDNS Frwd Max Concurrent Rejects (Preview)<p><p>Total number of rejected queries because concurrent queries were at the maximum limit |`CorednsForwardMaxConcurrentRejectsTotal` |Count |Average |Pod Name, Namespace |No|
 |CoreDNS Health Request Failures Total<p><p>The number of times the self health check failed |`CorednsHealthRequestFailuresTotal` |Count |Average |Pod Name |No|
 |CoreDNS Panics Total<p><p>Total number of panics |`CorednsPanicsTotal` |Count |Average |Pod Name |No|
 |CoreDNS Reload Failed Total<p><p>Total number of failed reload attempts |`CorednsReloadFailedTotal` |Count |Average |Pod Name, Namespace |No|
-|Etcd Disk Backend Commit Duration Seconds Sum<p><p>The latency distribution of commits called by the backend |`EtcdDiskBackendCommitDurationSecondsSum` |Seconds |Total |Component, Pod Name, Tier |No|
-|Etcd Disk WAL Fsync Duration Seconds Sum<p><p>The sum of latency distributions of 'fsync' called by the write-ahead log (WAL) |`EtcdDiskWalFsyncDurationSecondsSum` |Seconds |Total |Component, Pod Name, Tier |No|
+|Etcd Disk Backend Commit Duration Sec<p><p>The latency distribution of commits called by the backend |`EtcdDiskBackendCommitDurationSecondsSum` |Seconds |Total |Component, Pod Name, Tier |No|
+|Etcd Disk WAL Fsync Duration Sec<p><p>The sum of latency distributions of 'fsync' called by the write-ahead log (WAL) |`EtcdDiskWalFsyncDurationSecondsSum` |Seconds |Total |Component, Pod Name, Tier |No|
 |Etcd Server Health Failures<p><p>Total server health failures |`EtcdServerHealthFailures` |Count |Average |Pod Name |No|
 |Etcd Server Is Leader<p><p>Whether or not this member is a leader; 1 if is, 0 otherwise |`EtcdServerIsLeader` |Unspecified |Count |Component, Pod Name, Tier |No|
 |Etcd Server Is Learner<p><p>Whether or not this member is a learner; 1 if is, 0 otherwise |`EtcdServerIsLearner` |Unspecified |Count |Component, Pod Name, Tier |No|
@@ -60,7 +60,7 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/c
 |Felix Active Local Endpoints<p><p>Number of active endpoints on this host |`FelixActiveLocalEndpoints` |Count |Average |Host |No|
 |Felix Cluster Num Host Endpoints<p><p>Total number of host endpoints cluster-wide |`FelixClusterNumHostEndpoints` |Count |Average |Host |No|
 |Felix Cluster Number of Hosts<p><p>Total number of Calico hosts in the cluster |`FelixClusterNumHosts` |Count |Average |Host |No|
-|Felix Cluster Number of Workload Endpoints<p><p>Total number of workload endpoints cluster-wide |`FelixClusterNumWorkloadEndpoints` |Count |Average |Host |No|
+|Felix Cluster Nmbr Workload Endpoints<p><p>Total number of workload endpoints cluster-wide |`FelixClusterNumWorkloadEndpoints` |Count |Average |Host |No|
 |Felix Interface Dataplane Failures<p><p>Number of times dataplane updates failed and will be retried |`FelixIntDataplaneFailures` |Count |Average |Host |No|
 |Felix Ipset Errors<p><p>Number of 'ipset' command failures |`FelixIpsetErrors` |Count |Average |Host |No|
 |Felix Ipsets Calico<p><p>Number of active Calico IP sets |`FelixIpsetsCalico` |Count |Average |Host |No|
@@ -113,15 +113,15 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/c
 |Kubevirt Virt Controller Leading<p><p>Indication for an operating virt-controller |`KubevirtVirtControllerLeading` |Unspecified |Average |Pod Name |No|
 |Kubevirt Virt Controller Ready<p><p>Indication for a virt-controller that is ready to take the lead |`KubevirtVirtControllerReady` |Unspecified |Average |Pod Name |No|
 |Kubevirt Virt Operator Ready<p><p>Indication for a virt operator being ready |`KubevirtVirtOperatorReady` |Unspecified |Average |Pod Name |No|
-|Kubevirt VMI Memory Actual BalloonBytes<p><p>Current balloon size (in bytes) |`KubevirtVmiMemoryActualBalloonBytes` |Bytes |Average |Name, Node |No|
+|Kubevirt VMI Memory Balloon Bytes<p><p>Current balloon size (in bytes) |`KubevirtVmiMemoryActualBalloonBytes` |Bytes |Average |Name, Node |No|
 |Kubevirt VMI Memory Available Bytes<p><p>Amount of usable memory as seen by the domain. This value may not be accurate if a balloon driver is in use or if the guest OS does not initialize all assigned pages |`KubevirtVmiMemoryAvailableBytes` |Bytes |Average |Name, Node |No|
-|Kubevirt VMI Memory Domain Bytes Total (Preview)<p><p>The amount of memory (in bytes) allocated to the domain. The memory value in domain XML file |`KubevirtVmiMemoryDomainBytesTotal` |Bytes |Average |Node |No|
-|Kubevirt VMI Memory Swap In Traffic Bytes Total<p><p>The total amount of data read from swap space of the guest (in bytes) |`KubevirtVmiMemorySwapInTrafficBytesTotal` |Bytes |Average |Name, Node |No|
-|Kubevirt VMI Memory Swap Out Traffic Bytes Total<p><p>The total amount of memory written out to swap space of the guest (in bytes) |`KubevirtVmiMemorySwapOutTrafficBytesTotal` |Bytes |Average |Name, Node |No|
+|Kubevirt VMI Mem Dom Bytes (Preview)<p><p>The amount of memory (in bytes) allocated to the domain. The memory value in domain XML file |`KubevirtVmiMemoryDomainBytesTotal` |Bytes |Average |Node |No|
+|Kubevirt VMI Mem Swp In Traffic Bytes<p><p>The total amount of data read from swap space of the guest (in bytes) |`KubevirtVmiMemorySwapInTrafficBytesTotal` |Bytes |Average |Name, Node |No|
+|Kubevirt VMI Mem Swp Out Traffic Bytes<p><p>The total amount of memory written out to swap space of the guest (in bytes) |`KubevirtVmiMemorySwapOutTrafficBytesTotal` |Bytes |Average |Name, Node |No|
 |Kubevirt VMI Memory Unused Bytes<p><p>The amount of memory left completely unused by the system. Memory that is available but used for reclaimable caches should NOT be reported as free |`KubevirtVmiMemoryUnusedBytes` |Bytes |Average |Name, Node |No|
-|Kubevirt VMI Network Receive Packets Total<p><p>Total network traffic received packets |`KubevirtVmiNetworkReceivePacketsTotal` |Bytes |Average |Interface, Name, Node |No|
-|Kubevirt VMI Network Transmit Packets Dropped Total<p><p>The total number of transmit packets dropped on virtual NIC (vNIC) interfaces |`KubevirtVmiNetworkTransmitPacketsDroppedTotal` |Bytes |Average |Interface, Name, Node |No|
-|Kubevirt VMI Network Transmit Packets Total<p><p>Total network traffic transmitted packets |`KubevirtVmiNetworkTransmitPacketsTotal` |Bytes |Average |Interface, Name, Node |No|
+|Kubevirt VMI Net Rx Packets<p><p>Total network traffic received packets |`KubevirtVmiNetworkReceivePacketsTotal` |Bytes |Average |Interface, Name, Node |No|
+|Kubevirt VMI Net Tx Packets Drop<p><p>The total number of transmit packets dropped on virtual NIC (vNIC) interfaces |`KubevirtVmiNetworkTransmitPacketsDroppedTotal` |Bytes |Average |Interface, Name, Node |No|
+|Kubevirt VMI Net Tx Packets Total<p><p>Total network traffic transmitted packets |`KubevirtVmiNetworkTransmitPacketsTotal` |Bytes |Average |Interface, Name, Node |No|
 |Kubevirt VMI Outdated Count<p><p>Indication for the total number of VirtualMachineInstance (VMI) workloads that are not running within the most up-to-date version of the virt-launcher environment |`KubevirtVmiOutdatedCount` |Count |Average |Name |No|
 |Kubevirt VMI Phase Count<p><p>Sum of VirtualMachineInstances (VMIs) per phase and node |`KubevirtVmiPhaseCount` |Count |Average |Node, Phase, Workload |No|
 |Kubevirt VMI Storage IOPS Read Total<p><p>Total number of Input/Output (I/O) read operations |`KubevirtVmiStorageIopsReadTotal` |Count |Average |Drive, Name, Node |No|
@@ -135,4 +135,4 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/c
 |Typha Ping Latency<p><p>Round-trip ping/pong latency to client. Typha's protocol includes a regular ping/pong keepalive to verify that the connection is still up |`TyphaPingLatencyCount` |Count |Average |Pod Name |No|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
