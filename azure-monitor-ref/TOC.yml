@@ -466,3 +466,5 @@
     href: tables/containerinstancelog.md
   - name: ContainerInventory
     href: tables/containerinventory.md
+  - name: ContainerLog
+    href: tables/containerlog.md
