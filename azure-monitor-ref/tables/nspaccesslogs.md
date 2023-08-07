@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 7/17/2023
+ms.date: 08/08/2023
 ---
 
 # NSPAccessLogs
@@ -56,6 +56,7 @@ ms.date: 7/17/2023
 | ResultDescription | string | Additional description about the operation result, when available. |
 | ResultDirection | string | Direction of evaluation result whether 'Inbound' or 'Outbound'. |
 | RuleType | string | Indicates where the rule is defined: NSP or PaaS resource. |
+| ServiceFqdn | string | Fully Qualified Domain Name (FQDN) of PaaS resource emitting NSP access logs. |
 | ServiceResourceId | string | Resource ID of PaaS resource emitting NSP access logs. |
 | SourceAppId | string | Unique GUID representing the app ID of source in the Azure Active Directory. |
 | SourceIpAddress | string | IP address of source making inbound connection, when available. |
