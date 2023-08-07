@@ -728,3 +728,5 @@
     href: tables/maofficeappinstance.md
   - name: MAOfficeSuiteInstance
     href: tables/maofficesuiteinstance.md
+  - name: MCCEventLogs
+    href: tables/mcceventlogs.md
