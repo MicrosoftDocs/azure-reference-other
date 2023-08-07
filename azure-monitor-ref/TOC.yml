@@ -84,6 +84,8 @@
     href: tables/acsemailstatusupdateoperational.md
   - name: ACSEmailUserEngagementOperational
     href: tables/acsemailuserengagementoperational.md
+  - name: ACSJobRouterIncomingOperations
+    href: tables/acsjobrouterincomingoperations.md
   - name: ACSNetworkTraversalDiagnostics
     href: tables/acsnetworktraversaldiagnostics.md
   - name: ACSNetworkTraversalIncomingOperations
@@ -538,6 +540,10 @@
     href: tables/databricksworkspace.md
   - name: DataTransferOperations
     href: tables/datatransferoperations.md
+  - name: DCRLogErrors
+    href: tables/dcrlogerrors.md
+  - name: DCRLogTroubleshooting
+    href: tables/dcrlogtroubleshooting.md
   - name: DefenderIoTRawEvent
     href: tables/defenderiotrawevent.md
   - name: DevCenterDiagnosticLogs
