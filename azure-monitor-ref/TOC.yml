@@ -540,3 +540,5 @@
     href: tables/databricksworkspace.md
   - name: DataTransferOperations
     href: tables/datatransferoperations.md
+  - name: DCRLogErrors
+    href: tables/dcrlogerrors.md
