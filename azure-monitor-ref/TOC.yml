@@ -86,3 +86,5 @@
     href: tables/acsemailuserengagementoperational.md
   - name: ACSJobRouterIncomingOperations
     href: tables/acsjobrouterincomingoperations.md
+  - name: ACSNetworkTraversalDiagnostics
+    href: tables/acsnetworktraversaldiagnostics.md
