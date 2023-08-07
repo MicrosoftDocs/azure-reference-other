@@ -460,3 +460,5 @@
     href: tables/containerappsystemlogs.md
   - name: ContainerEvent
     href: tables/containerevent.md
+  - name: ContainerImageInventory
+    href: tables/containerimageinventory.md
