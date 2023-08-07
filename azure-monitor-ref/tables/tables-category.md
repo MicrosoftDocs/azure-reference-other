@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/31/2023
+ms.date: 08/08/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -167,6 +167,7 @@ ms.date: 07/31/2023
 - [ACSEmailSendMailOperational](acsemailsendmailoperational.md)
 - [ACSEmailStatusUpdateOperational](acsemailstatusupdateoperational.md)
 - [ACSEmailUserEngagementOperational](acsemailuserengagementoperational.md)
+- [ACSJobRouterIncomingOperations](acsjobrouterincomingoperations.md)
 - [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSRoomsIncomingOperations](acsroomsincomingoperations.md)
@@ -321,6 +322,8 @@ ms.date: 07/31/2023
 - [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
 - [DataTransferOperations](datatransferoperations.md)
+- [DCRLogErrors](dcrlogerrors.md)
+- [DCRLogTroubleshooting](dcrlogtroubleshooting.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
 - [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
