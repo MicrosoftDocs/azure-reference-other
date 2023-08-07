@@ -542,3 +542,5 @@
     href: tables/datatransferoperations.md
   - name: DCRLogErrors
     href: tables/dcrlogerrors.md
+  - name: DCRLogTroubleshooting
+    href: tables/dcrlogtroubleshooting.md
