@@ -770,3 +770,5 @@
     href: tables/networksessions.md
   - name: NSPAccessLogs
     href: tables/nspaccesslogs.md
+  - name: NTAIpDetails
+    href: tables/ntaipdetails.md
