@@ -764,3 +764,5 @@
     href: tables/ncsstoragealerts.md
   - name: NCSStorageLogs
     href: tables/ncsstoragelogs.md
+  - name: NetworkAccessTraffic
+    href: tables/networkaccesstraffic.md
