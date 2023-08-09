@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # NWConnectionMonitorPathResult
 
- Connection Monitor path result records.
+Connection Monitor path result records.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AdditionalData | string | The additional data for the test |
 | AvgRoundTripTimeMs | real | The average round trip time for the test |
 | _BilledSize | real | The record size in bytes |
@@ -50,7 +50,7 @@ ms.date: 08/08/2023
 | HopResourceIds | string | The hop resource ids identified for the test |
 | Hops | string | The hops identified for the test |
 | HopTypes | string | The hop types identified for the test |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Issues | string | The issues identified for the test |
 | JitterMs | real | The mean deviation round trip time for the test |
 | MaxRoundTripTimeMs | real | The maximum round trip time for the test |
@@ -67,7 +67,7 @@ ms.date: 08/08/2023
 | SourceName | string | The source end point name |
 | SourceResourceId | string | The resource id of the source machine |
 | SourceSubnet | string | The subnet of the source |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SourceType | string | The type of the source machine configured for the test |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
