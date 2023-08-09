@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # CloudAppEvents
 
- Information about activities in various cloud apps and services covered by Microsoft Cloud App Security.
+Information about activities in various cloud apps and services covered by Microsoft Cloud App Security.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountDisplayName | string | Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user. |
 | AccountId | string | An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers |
 | AccountObjectId | string | Unique identifier for the account in Azure AD |
@@ -47,7 +47,7 @@ ms.date: 08/08/2023
 | IPTags | dynamic | Customer-defined information applied to specific IP addresses and IP address ranges |
 | IsAdminOperation | bool | Indicates whether the activity was performed by an administrator |
 | IsAnonymousProxy | bool | Indicates whether the IP address belongs to a known anonymous proxy |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsExternalUser | bool | Indicates whether a user inside the network doesn't belong to the organization’s domain |
 | IsImpersonated | bool | Indicates whether the activity was performed by one user for another (impersonated) user |
 | ISP | string | Internet service provider associated with the IP address |
@@ -57,7 +57,7 @@ ms.date: 08/08/2023
 | OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7 |
 | RawEventData | dynamic | Raw event information from the source application or service in JSON format |
 | ReportId | string | Unique identifier for the event |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | Type | string | The name of the table |
