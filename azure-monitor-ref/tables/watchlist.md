@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # Watchlist
 
- Azure Sentinel Watchlist contains imported data from CSV files that can be used to join or filter as an alert/incident condition.
+Azure Sentinel Watchlist contains imported data from CSV files that can be used to join or filter as an alert/incident condition.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AzureTenantId | string | The AAD tenant ID to which this Watchlist table belongs. |
 | _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The ID for correlated events. |
@@ -38,13 +38,13 @@ ms.date: 08/08/2023
 | _DTItemType | string | Distinguish between a Watchlist and a Watchlist item. As an example, a Watchlist 'RiskyUsers' can contain Watchlist item 'Name:John Doe; email:johndoe@contoso.com'. A Watchlist item type will belong to a Watchlist type and the containing Watchlist can identified using the 'WatchlistId'. |
 | _DTTimestamp | datetime | The time (UTC) when the event was generated. |
 | EntityMapping | dynamic | The JSON object with Azure Sentinel entity mapping to input columns. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastUpdatedTimeUTC | datetime | The time (UTC) when Watchlist or Watchlist item was last updated. |
 | Notes | string | The notes provided by user. |
 | Provider | string | The input provider of the Watchlist. |
 | SearchKey | string | The SearchKey is used to optimize query performance when using watchlists for joins with other data. For example, enable a column with IP addresses to be the designated SearchKey field, then use this field to join in other event tables by IP address. |
 | Source | string | The input source of the Watchlist. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Tags | string | The JSON array of tags provided by user. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated. |
