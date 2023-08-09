@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # SynapseDXQuery
 
- Azure data explorer synpase query execution summary. Logs include DatabaseName, State, Duration that can be used for monitoring the queries which were invoked on the cluster
+Azure data explorer synpase query execution summary. Logs include DatabaseName, State, Duration that can be used for monitoring the queries which were invoked on the cluster
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ApplicationName | string | The name of the application that invoked the query |
 | _BilledSize | real | The record size in bytes |
 | CacheDiskHits | long | Disk cache hits |
@@ -48,7 +48,7 @@ ms.date: 08/08/2023
 | ExtentsMaxDataScannedTime | datetime | Maximum data scan time |
 | ExtentsMinDataScannedTime | datetime | Minimum data scan time |
 | FailureReason | string | The reason for the failure |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastUpdatedOn | datetime | The time (UTC) this command ended |
 | MemoryPeak | long | Memory peak |
 | Principal | string | The principal that invoked the query like 'aaduser=USER_ID;TENANT' |
@@ -56,7 +56,7 @@ ms.date: 08/08/2023
 | RootActivityId | string | The root activity ID |
 | ScannedExtentsCount | long | Scanned extents count |
 | ScannedRowsCount | long | Scanned rows count |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartedOn | datetime | The time (UTC) this command started |
 | State | string | The state the command ended with like 'Completed' |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
