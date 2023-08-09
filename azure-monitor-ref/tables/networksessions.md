@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # NetworkSessions
 
- Network connections or sessions such as those logged by firewalls, Wire Data, NSG, Netflow, proxy systems and web security gateways.
+Network connections or sessions such as those logged by firewalls, Wire Data, NSG, Netflow, proxy systems and web security gateways.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AdditionalFields | dynamic | When no respective column in the schema matches, additional fields can be stored in a JSON bag. |
 | _BilledSize | real | The record size in bytes |
 | CloudAppId | string | The ID of the destination application for an HTTP application as identified by a proxy. This value is usually specific to the proxy used. |
@@ -102,7 +102,7 @@ ms.date: 08/08/2023
 | HttpStatusCode | string | The HTTP Status Code for HTTP/HTTPS network sessions. |
 | HttpUserAgentOriginal | string | The HTTP user agent header for HTTP/HTTPS network sessions. |
 | HttpVersion | string | The HTTP Request Version for HTTP/HTTPS network connections. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | NetworkApplicationProtocol | string | The application layer protocol used by the connection or session. |
 | NetworkBytes | long | Number of bytes sent in both directions. If both BytesReceived and BytesSent exist, BytesTotal should equal their sum. |
 | NetworkDirection | string | The direction the connection or session, into or out of the organization. |
@@ -114,7 +114,7 @@ ms.date: 08/08/2023
 | NetworkRuleName | string | The name or ID of the rule by which DeviceAction was decided upon. |
 | NetworkRuleNumber | int | Matched rule number. |
 | NetworkSessionId | string | The session identifier as reported by the reporting device. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SrcBytes | long | The number of bytes sent from the source to the destination for the connection or session. |
 | SrcDvcDomain | string | Domain of the device from which session was initiated. |
 | SrcDvcFqdn | string | The fully qualified domain name of the host where the log was created. |
