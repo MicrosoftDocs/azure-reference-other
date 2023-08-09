@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceRegistryEvents
 
- Microsoft Defender for Endpoints (MDE) device registry events table. This table contains contains creation and modification of registry entries on the endpoint, and information about the processes initiating such events.
+Microsoft Defender for Endpoints (MDE) device registry events table. This table contains contains creation and modification of registry entries on the endpoint, and information about the processes initiating such events.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActionType | string | Type of activity that triggered the event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
 | _BilledSize | real | The record size in bytes |
@@ -57,7 +57,7 @@ ms.date: 08/08/2023
 | InitiatingProcessVersionInfoOriginalFileName | string | The original file name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | The product name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | The product version in version information (image file) responsible for the event. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | PreviousRegistryKey | string | Original registry key before it was modified. |
 | PreviousRegistryValueData | string | Original data of the registry value before it was modified. |
@@ -67,7 +67,7 @@ ms.date: 08/08/2023
 | RegistryValueName | string | Name of the registry value that the recorded action was applied to. |
 | RegistryValueType | string | Data type, such as binary or string, of the registry value that the recorded action was applied to. |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
