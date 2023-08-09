@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ADTEventRoutesOperation
 
- Schema for Azure Digital Twins' Event Routes operations. The Event Routes Operation category tracks all events being published to endpoints, which are other Azure services.
+Schema for Azure Digital Twins' Event Routes operations. The Event Routes Operation category tracks all events being published to endpoints, which are other Azure services.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ApplicationId | string | Application ID used in bearer authorization |
 | _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | A masked source IP address for the event |
@@ -37,7 +37,7 @@ ms.date: 08/08/2023
 | CorrelationId | string | Customer provided unique identifier for the event |
 | DurationMs | string | How long it took to perform the event in milliseconds |
 | EndpointName | string | The name of egress endpoint created in Azure Digital Twins |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | The logging severity of the event |
 | Location | string | Azure region in which the Digital Twins instance is located |
 | OperationName | string | The type of action being performed during the event |
@@ -48,7 +48,7 @@ ms.date: 08/08/2023
 | ResultDescription | string | Additional details about the event |
 | ResultSignature | string | Http status code of the event (if applicable) |
 | ResultType | string | Outcome of the event |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SpanId | string | SpanId as part of W3C's Trace Context. The ID of this request in the trace |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
