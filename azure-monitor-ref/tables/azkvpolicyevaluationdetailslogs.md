@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AZKVPolicyEvaluationDetailsLogs
 
- Contains details of Azure Policy Evaluation including the outcome and details of what checks were performed.
+Contains details of Azure Policy Evaluation including the outcome and details of what checks were performed.
 
 ## Categories
 
@@ -30,11 +30,11 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | DurationMs | int | Time it took to service the REST API request, in milliseconds. This does not include the network latency, so the time you measure on the client side might not match this time |
 | EvaluationDetails | dynamic | Details of evaluation |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsComplianceCheck | bool | Is Compliance check enabled |
 | ObjectName | string | Name of the object |
 | ObjectType | string | Type of object |
@@ -44,7 +44,7 @@ ms.date: 08/08/2023
 | ResultDescription | string | Additional description about the result, when available |
 | ResultSignature | string | HTTP status of the request/response |
 | ResultType | string | Result of the REST API request |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) when operation occured. |
