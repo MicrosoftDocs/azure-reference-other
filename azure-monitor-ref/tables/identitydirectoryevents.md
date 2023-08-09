@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # IdentityDirectoryEvents
 
- Captures various identity-related events, like password changes, password expiration, and user principal name (UPN) changes.
+Captures various identity-related events, like password changes, password expiration, and user principal name (UPN) changes.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountDisplayName | string | Name of the account user displayed in the address book |
 | AccountDomain | string | Domain of the account |
 | AccountName | string | User name of the account |
@@ -42,13 +42,13 @@ ms.date: 08/08/2023
 | DestinationPort | string | Destination port of related network communications |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device |
 | IPAddress | string | IP address assigned to the endpoint and used during related network communications |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | ISP | string | Internet service provider (ISP) associated with the endpoint IP address |
 | Location | string | City, country, or other geographic location associated with the event |
 | Port | string | TCP port used during communication |
 | Protocol | string | Protocol used during the communication |
 | ReportId | string | Unique identifier for the event |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TargetAccountDisplayName | string | Display name of the account that the recorded action was applied to |
 | TargetAccountUpn | string | User principal name (UPN) of the account that the recorded action was applied to |
 | TargetDeviceName | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |

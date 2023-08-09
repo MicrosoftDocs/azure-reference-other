@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # LogicAppWorkflowRuntime
 
- Logs generated during Logic Apps workflow runtime.
+Logs generated during Logic Apps workflow runtime.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActionName | string | The name of the workflow action. |
 | ActionTrackingId | string | The unique ID of the workflow action. |
 | _BilledSize | real | The record size in bytes |
@@ -38,14 +38,14 @@ ms.date: 08/08/2023
 | Code | string | The HTTP status code of the request. |
 | EndTime | datetime | The end time (UTC) of the operation. |
 | Error | string | The error message of this operation. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | The geographical run location of the workflow. |
 | OperationName | string | The name of this operation. |
 | OriginRunId | string | The unique ID of the original workflow run, only relevant for resubmission scenarios. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RetryHistory | string | The retry history of the workflow action. |
 | RunId | string | The unique ID of the workflow run. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartTime | datetime | The start time (UTC) of the operation. |
 | Status | string | The status of the operation, e.g. Succeeded, Failed, Skipped, Ignored. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |

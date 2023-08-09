@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceTvmSecureConfigurationAssessment
 
- Threat & vulnerability management assessment events, indicating the status of various security configurations on devices.
+Threat & vulnerability management assessment events, indicating the status of various security configurations on devices.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | ConfigurationCategory | string | Category or grouping to which the configuration belongs |
 | ConfigurationId | string | Unique identifier for a specific configuration |
@@ -36,11 +36,11 @@ ms.date: 08/08/2023
 | DeviceId | string | Unique identifier for the device in the service |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device |
 | IsApplicable | bool | Indicates whether the configuration or policy is applicable |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsCompliant | bool | Indicates whether the configuration or policy is properly configured |
 | IsExpectedUserImpact | bool | Indicates if user impact is expected when configuration applied |
 | OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7 |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the record was generated |
 | Timestamp | datetime | Date and time when the record was generated |

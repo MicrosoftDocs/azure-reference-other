@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ASRReplicatedItems
 
- This table contains details of Azure Site Recovery (ASR) replicated items, such as associated vault, policy, replication health, failover readiness. etc. Data is pushed once a day to this table for all replicated items, to provide the latest information for each item.
+This table contains details of Azure Site Recovery (ASR) replicated items, such as associated vault, policy, replication health, failover readiness. etc. Data is pushed once a day to this table for all replicated items, to provide the latest information for each item.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActiveLocation | string | Current active location for the replicated item. If the item is in failed over state, the active location will be the secondary (target) region. Otherwise, it will be the primary region. |
 | _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
@@ -39,7 +39,7 @@ ms.date: 08/08/2023
 | DatasourceUniqueId | string | Unique ID of the datasource being replicated. |
 | FailoverReadiness | string | Denotes whether there are any configuration issues that could affect the failover operation success for the ASR replicated item. |
 | IRProgressPercentage | int | Progress percentage of the initial replication phase for the replicated item. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastHeartbeat | datetime | Time at which the ASR agent associated with the replicated item last made a call to the ASR service. Useful for debugging error scenarios where you wish to identify the time at which issues started arising. |
 | LastRpoCalculatedTime | datetime | Time at which the RPO was last calculated by the ASR service for the replicated item. |
 | LastSuccessfulTestFailoverTime | datetime | Time of the last successful faliover performed on the replicated item. |
@@ -62,7 +62,7 @@ ms.date: 08/08/2023
 | ReplicationStatus | string | Status of replication for the ASR replicated item. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceResourceId | string | ARM ID of the datasource being replicated. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) when the log was generated. |

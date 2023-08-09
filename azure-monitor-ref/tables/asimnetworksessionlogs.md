@@ -6,22 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ASimNetworkSessionLogs
 
- The Microsoft Sentinel network session normalization schema represents an IP network activity, such as network connections and network sessions. Such events are reported, for example, by operating systems, routers, firewalls, and intrusion prevention systems.
+The Microsoft Sentinel network session normalization schema represents an IP network activity, such as network connections and network sessions. Such events are reported, for example, by operating systems, routers, firewalls, and intrusion prevention systems.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 ## Resource types
 
-- Azure Sentinel
+- Microsoft Sentinel Network Session ASim schema
 
 
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
 | _BilledSize | real | The record size in bytes |
 | DstAppId | string | The ID of the destination application, as reported by the reporting device. |
@@ -104,7 +104,7 @@ ms.date: 08/08/2023
 | EventSubType | string | Additional description of the event type, if applicable. |
 | EventType | string | The operation reported by the record. |
 | EventVendor | string | The vendor of the product generating the event. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | NetworkApplicationProtocol | string | The application layer protocol used by the connection or session. |
 | NetworkBytes | long | Number of bytes sent in both directions. If both BytesReceived and BytesSent exist, BytesTotal should equal their sum. If the event is aggregated, NetworkBytes is the sum over all aggregated sessions. |
 | NetworkConnectionHistory | string | TCP flags and other potential IP header information. |
@@ -119,7 +119,7 @@ ms.date: 08/08/2023
 | NetworkRuleNumber | int | The number of the rule by which DvcAction was decided upon. |
 | NetworkSessionId | string | The session identifier as reported by the reporting device. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SrcAppId | string | The ID of the source application, as reported by the reporting device. |
 | SrcAppName | string | The name of the source application. |
 | SrcAppType | string | The type of the source application. |

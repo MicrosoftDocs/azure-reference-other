@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # HDInsightRangerAuditLogs
 
- Audit logs from the Ranger component (only for ESP clusters).
+Audit logs from the Ranger component (only for ESP clusters).
 
 ## Categories
 
@@ -30,7 +30,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccessName | string | Name of the access method. |
 | Action | string | Type of action made by the event. |
 | AdditionalInfo | string | Additional info about the request including the remote and forwarded IPs |
@@ -47,7 +47,7 @@ ms.date: 08/08/2023
 | EventDurationMs | int | Duration of the event in milliseconds. |
 | HostName | string | Name of host where log was emitted. |
 | Id | string | ID of the event request. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LogType | string | Type of log the record came from. |
 | OperationName | string | The operation associated with log record. |
 | Policy | int | Code representing the policy. |
@@ -59,7 +59,7 @@ ms.date: 08/08/2023
 | Result | int | Status code of the event result. |
 | SequenceNumber | int | Sequence number of the event. |
 | SessionId | string | ID associated witht the user session. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Tags | string | List of tags associated with the event. |
 | TenantId | string | The Log Analytics workspace ID |

@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AZKVAuditLogs
 
- Audit logs can be used to monitor how and when your key vaults are accessed, and by whom. Customers will be able to log all authentication api requests. Operations on the key vault itself, including creation, deletion, setting key vault access policies, and updating key vault attributes such as tags.Operation on keys and secrets in keyvault including creating, deleting, signing.
+Audit logs can be used to monitor how and when your key vaults are accessed, and by whom. Customers will be able to log all authentication api requests. Operations on the key vault itself, including creation, deletion, setting key vault access policies, and updating key vault attributes such as tags.Operation on keys and secrets in keyvault including creating, deleting, signing.
 
 ## Categories
 
@@ -30,7 +30,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AddressAuthorizationType | string | Address type (Public IP, subnet, private connection) |
 | Algorithm | string | Algorithm used to generate the key |
 | AppliedAssignmentId | string | AssignmentId that eiher granted or denied access as part of access check |
@@ -55,7 +55,7 @@ ms.date: 08/08/2023
 | Identity | dynamic | Identity from the token that was presented in the REST API request. This is usually a user, a service principal, or the combination user+appId, as in the case of a request that results from an Azure PowerShell cmdlet. |
 | IsAccessPolicyMatch | bool | True if the tenant matches vault tenant, and if the policy explicitly gives permission to the principal attempting the access. |
 | IsAddressAuthorized | bool | Specifies whether request came from an authorized entity |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsRbacAuthorized | bool | Specifies whether an access was granted or not as part of an access check |
 | KeyProperties | dynamic | Information about key properties including type, size, curve |
 | NetworkAcls | dynamic | Information about network acls that govern access to the vault |
@@ -71,7 +71,7 @@ ms.date: 08/08/2023
 | SecretProperties | dynamic | Information about secret properties including type, atttributes |
 | Sku | dynamic | Information about vault including family, name and capacity |
 | SoftDeleteRetentionInDays | int | Specifies soft delete retention in days |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StorageAccountProperties | dynamic | Information about storage account properties including activekeyname, resourceid |
 | StorageSasDefinitionProperties | dynamic | Information about storage sas definition properties including sastype, validityperiod |
 | SubnetId | string | Id of subnet if request comes from a known subnet |

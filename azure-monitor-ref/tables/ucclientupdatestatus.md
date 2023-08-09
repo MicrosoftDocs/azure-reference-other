@@ -6,17 +6,17 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # UCClientUpdateStatus
 
- Update Compliance - Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update.
+Update Compliance - Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update.
 
 ## Solutions
 
 - LogManagement
-- Update Compliance
+- WaaSUpdateInsights
 
 
 
@@ -24,7 +24,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID. |
 | _BilledSize | real | The record size in bytes |
@@ -39,12 +39,12 @@ ms.date: 08/08/2023
 | FurthestClientSubstate | string | Furthest clientSubstate. |
 | FurthestClientSubstateRank | int | Ranking of furthest clientSubstate. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsUpdateHealthy | bool | True: No issues preventing this device from updating to this update have been found. False: There is something that may prevent this device from updating. |
 | OfferReceivedTime | datetime | DateTime when device last reported entering OfferReceived, else empty. |
 | RestartRequiredTime | datetime | DateTime when device first reported entering RebootRequired (or RebootPending), else empty. |
 | SCCMClientId | string | A GUID corresponding to the SCCM Client ID on the device. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TargetBuild | string | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
 | TargetBuildNumber | int | Integer of the Major portion of Build. |
 | TargetKBNumber | string | KB Article. |

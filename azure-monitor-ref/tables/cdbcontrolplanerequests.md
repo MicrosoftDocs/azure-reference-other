@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # CDBControlPlaneRequests
 
- This table details all control plane operations executed on the account, which include modifications to the regional failover policy, indexing policy, IAM role assignments, backup/restore policies, VNet and firewall rules, private links as well as updates and deletes of the account.
+This table details all control plane operations executed on the account, which include modifications to the regional failover policy, indexing policy, IAM role assignments, backup/restore policies, VNet and firewall rules, private links as well as updates and deletes of the account.
 
 ## Categories
 
@@ -30,7 +30,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountName | string | The name of the Cosmos DB account. |
 | AcledSubnets | string | The ACL’d subnets for the account. |
 | ActivityId | string | The Activity ID of the operation. |
@@ -55,7 +55,7 @@ ms.date: 08/08/2023
 | HttpMethod | string | The HTTP method issued for this control plane operation. |
 | HttpStatusCode | int | The HTTP status code of the control plane operation. |
 | IpRangeFilter | string | The IP range filter specified as part of the VNet rules for the Cosmos DB account. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | MaxStalenessIntervalInSeconds | real | The maximum staleness value (in seconds) for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MaxStalenessPrefix | string | The max staleness prefix for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MultipleWriteLocations | bool | Boolean flag indicating if the Cosmos DB account is a multi-master account. |
@@ -78,7 +78,7 @@ ms.date: 08/08/2023
 | RoleDefinitionName | string | The name of the IAM role created for the account. |
 | RoleDefinitionPermissions | string | The permissions associated with the IAM role created for the account. |
 | RoleDefinitionType | string | The type of IAM role created for the account. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SqlQueryTextTraceType | bool | Boolean flag indicating if full query text logging is enabled. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |

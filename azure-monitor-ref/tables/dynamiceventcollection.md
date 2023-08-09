@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DynamicEventCollection
 
- A generic windows events table for data collected by the Defender for Endpoint agent
+A generic windows events table for data collected by the Defender for Endpoint agent
 
 ## Categories
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountSid | string | Security identifier (SID) of the account. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
@@ -46,7 +46,7 @@ ms.date: 08/08/2023
 | InitiatingProcessParentFileName | string | Name of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessParentId | long | Process ID (PID) of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessSHA1 | string | SHA-1 hash of the process (image file) that initiated the event. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LocalIP | string | IP address assigned to the local machine used during communication. |
 | LocalPort | int | TCP port on the local machine used during communication. |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
@@ -55,7 +55,7 @@ ms.date: 08/08/2023
 | RemoteIP | string | IP address that was being connected to. |
 | RemotePort | int | TCP port on the remote device that was being connected to. |
 | ReportId | long | Unique identifier for the event. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated. |
 | Type | string | The name of the table |

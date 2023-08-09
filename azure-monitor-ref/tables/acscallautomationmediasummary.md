@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ACSCallAutomationMediaSummary
 
- Communication Services summary logs of Call Automation Media operations. Every entry corresponds to the result of a call to the Call Automation Media APIs. (e.g. Play, Recognize).
+Communication Services summary logs of Call Automation Media operations. Every entry corresponds to the result of a call to the Call Automation Media APIs. (e.g. Play, Recognize).
 
 ## Categories
 
@@ -29,10 +29,10 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the operation. |
 | OperationId | string | The ID for media events. Can be used to identify operation events between ACSCallAutomationIncomingOperations table and this. |
 | OperationName | string | The operation associated with log record. |
@@ -45,7 +45,7 @@ ms.date: 08/08/2023
 | ResultMessage | string | The result message related to the operation. |
 | ResultSubcode | int | The sub status code for the operation. |
 | ResultType | string | The status of the operation. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |

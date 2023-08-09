@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # NTANetAnalytics
 
- Traffic Analytics records for Flowlog enriched data.
+Traffic Analytics records for Flowlog enriched data.
 
 ## Categories
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AclGroup | string | Access control list group refers to the network security group associated with the network security group rule name (or) the network group associated with the security admin configuration which allowed or denied the connection. |
 | AclRule | string | Access control list rule refers to the network security group rule name or the security admin rule name which allowed or denied the connection. |
 | AllowedInFlows | long | Count of inbound flows that were allowed. This represents the number of flows that shared the same four-tuple inbound to the network interface at which the flow was captured. |
@@ -65,7 +65,7 @@ ms.date: 08/08/2023
 | FlowStartTime | datetime | First occurrence of the flow (which will get aggregated) in the flow log processing interval between "FlowIntervalStartTime_t" and "FlowIntervalEndTime_t". |
 | FlowStatus | string | Status of flow which can be allowed or denied. |
 | FlowType | string | Category of the flows(allowed values are IntraVNet, InterVNet, S2S, P2S, AzurePublic, ExternalPublic, MaliciousFlow, Unknown Private, Unknown) based on IP addresses involved in flow. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsFlowCapturedAtUdrHop | bool | True if flow gets captured at a UDR hop. |
 | L4Protocol | string | Transport Protocol,T = TCP, U = UDP. |
 | L7Protocol | string | Application Layer protocol name. |
@@ -75,7 +75,7 @@ ms.date: 08/08/2023
 | NsgRuleType | string | The type of Network Security Group(NSG) rule used by the flow. This is a placeholder for NSG flow logging. |
 | PacketsDestToSrc | long | Represents packets sent from the destination to the source of the flow. |
 | PacketsSrcToDest | long | Represents packets sent from the source to the destination of the flow. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SrcApplicationGateway | string | Application gateway associated with the source IP in the flow. |
 | SrcExpressRouteCircuit | string | Express route circuit associated with the source IP in the flow. |
 | SrcIp | string | Source IP address. |

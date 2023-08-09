@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceProcessEvents
 
- Microsoft Defender for Endpoints (MDE) device process events table. This table contains contains information about process creation and related events on the endpoint.
+Microsoft Defender for Endpoints (MDE) device process events table. This table contains contains information about process creation and related events on the endpoint.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountDomain | string | Domain of the account. |
 | AccountName | string | User name of the account. |
 | AccountObjectId | string | Unique identifier for the account in Azure AD. |
@@ -69,7 +69,7 @@ ms.date: 08/08/2023
 | InitiatingProcessVersionInfoOriginalFileName | string | The original file name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | The product name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | The product version in version information (image file) responsible for the event. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LogonId | long | Identifier for a logon session. This identifier is unique on the same machine only between restarts. |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to. |
@@ -87,7 +87,7 @@ ms.date: 08/08/2023
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.. |
 | SHA1 | string | SHA-1 hash of the file that the recorded action was applied to. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |

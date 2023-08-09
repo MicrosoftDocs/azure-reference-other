@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AppExceptions
 
- Application Insights exceptions.
+Application Insights exceptions.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AppRoleInstance | string | Role instance of the application. |
 | AppRoleName | string | Role name of the application. |
 | AppVersion | string | Version of the application. |
@@ -51,7 +51,7 @@ ms.date: 08/08/2023
 | InnermostMessage | string | Message of the innermost exception. |
 | InnermostMethod | string | Method of the innermost exception. |
 | InnermostType | string | Type of the innermost exception. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | ItemCount | int | Number of telemetry items represented by a single sample item. |
 | Measurements | dynamic | Application-defined measurements. |
 | Message | string | Exception message. |
@@ -70,7 +70,7 @@ ms.date: 08/08/2023
 | SDKVersion | string | Version of the SDK used by the application to generate this telemetry item. |
 | SessionId | string | Application-defined session ID. |
 | SeverityLevel | int | Severity level of the exception. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SyntheticSource | string | Synthetic source of the operation. |
 | TenantId | string | The Log Analytics workspace ID |
