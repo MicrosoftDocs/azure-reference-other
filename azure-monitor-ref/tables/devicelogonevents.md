@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceLogonEvents
 
- This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Sign-ins and other authentication events.
+This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Sign-ins and other authentication events.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountDomain | string | Domain of the account. |
 | AccountName | string | User name of the account. |
 | AccountSid | string | Security identifier (SID) of the account. |
@@ -62,7 +62,7 @@ ms.date: 08/08/2023
 | InitiatingProcessVersionInfoOriginalFileName | string | Original file name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | Product name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | Product version from the version information of the process (image file) responsible for the event. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsLocalAdmin | bool | Boolean indicator of whether the user is a local administrator on the machine. |
 | LogonId | long | Identifier for a logon session. This identifier is unique on the same machine only between restarts. |
 | LogonType | string | Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service. |
@@ -73,7 +73,7 @@ ms.date: 08/08/2023
 | RemoteIPType | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast. |
 | RemotePort | int | TCP port on the remote device that was being connected to. |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
