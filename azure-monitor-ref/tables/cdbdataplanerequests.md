@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # CDBDataPlaneRequests
 
- The DataPlaneRequests table captures every data plane operation for the Cosmos DB account. Data Plane requests are operations executed to create, update, delete or retrieve data within the account.
+The DataPlaneRequests table captures every data plane operation for the Cosmos DB account. Data Plane requests are operations executed to create, update, delete or retrieve data within the account.
 
 ## Categories
 
@@ -30,7 +30,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AadAppliedRoleAssignmentId | string | The ID of the applied role assignment for the caller issuing the data plane request. |
 | AadPrincipalId | string | The AAD Principal ID of the caller issuing the data plane request. |
 | AccountName | string | The name of the Cosmos DB account. |
@@ -42,7 +42,7 @@ ms.date: 08/08/2023
 | ConnectionMode | string | The connection mode used by the client issuing the request – (Direct or Gateway mode). |
 | DatabaseName | string | The Cosmos DB database against which the request was issued. |
 | DurationMs | real | The server-side execution time (in milliseconds) for this request. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | KeyType | string | The authorization type (Primary/Secondary Read/Write key) for this request when running in Direct mode. |
 | OperationName | string | The specific data plane operation executed against the account. |
 | PartitionId | string | The physical partition ID for the Cosmos DB container against which the request was issued. |
@@ -56,7 +56,7 @@ ms.date: 08/08/2023
 | ResourceTokenPermissionMode | string | The permission mode of the resource token associated with the resource accessed by this request. |
 | ResourceTokenUserRid | string | The user ID associated with the resource token for the resource accessed by this request. |
 | ResponseLength | real | The payload size (in bytes) of the server response. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StatusCode | int | The HTTP status code response for the data plane request, highlighting details of the success/failure of the request. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
