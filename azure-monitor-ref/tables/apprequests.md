@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AppRequests
 
- Application Insights requests.
+Application Insights requests.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AppRoleInstance | string | Role instance of the application. |
 | AppRoleName | string | Role name of the application. |
 | AppVersion | string | Version of the application. |
@@ -45,7 +45,7 @@ ms.date: 08/08/2023
 | DurationMs | real | Number of milliseconds it took the application to handle the request. |
 | Id | string | Application-generated, unique request ID. |
 | IKey | string | Instrumentation key of the Azure resource. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | ItemCount | int | Number of telemetry items represented by a single sample item. |
 | Measurements | dynamic | Application-defined measurements. |
 | Name | string | Human-readable name of the request. |
@@ -61,7 +61,7 @@ ms.date: 08/08/2023
 | SDKVersion | string | Version of the SDK used by the application to generate this telemetry item. |
 | SessionId | string | Application-defined session ID. |
 | Source | string | Friendly name of the request source, when known. Source is based on the metadata supplied by the caller. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Success | bool | Indicates whether the application handled the request successfully. |
 | SyntheticSource | string | Synthetic source of the operation. |
