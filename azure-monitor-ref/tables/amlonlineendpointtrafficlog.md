@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AmlOnlineEndpointTrafficLog
 
- Traffic logs for AzureML (machine learning) online endpoints. The table could be used to check the detailed information of the request to an online endpoint. For example, you could use it to check the request duration, the request failure reason, etc.
+Traffic logs for AzureML (machine learning) online endpoints. The table could be used to check the detailed information of the request to an online endpoint. For example, you could use it to check the request duration, the request failure reason, etc.
 
 ## Categories
 
@@ -30,7 +30,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AuthType | string | The authentication type of the request (Key, AMLToken, AADToken). |
 | AzureMLWorkspaceId | string | The machine learning workspace ID of the online endpoint. |
 | AzureMLWorkspaceName | string | The machine learning workspace name of the online endpoint. |
@@ -38,7 +38,7 @@ ms.date: 08/08/2023
 | DeploymentName | string | The name of the online deployment. |
 | EndpointName | string | The name of the online endpoint. |
 | IdentityData | string | The identity data from the user client (JWT OID). |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | The region of the online endpoint. |
 | Method | string | The requested method from client. |
 | ModelStatusCode | int | The response status code from model. |
@@ -55,7 +55,7 @@ ms.date: 08/08/2023
 | ResponseDurationMs | int | Duration in milliseconds from the request start time to the first response byte read from the model. |
 | ResponsePayloadSize | int | The total bytes sent back to the user client. |
 | ResponseThrottlingDelayMs | int | Delay in milliseconds in response data transfer due to network throttling. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the request was received by Azure Machine Learning. |
