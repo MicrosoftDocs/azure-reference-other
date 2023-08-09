@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # MicrosoftDynamicsTelemetryPerformanceLogs
 
- Microsoft Dynamics Telemetry Performance Logs
+Microsoft Dynamics Telemetry Performance Logs
 
 ## Categories
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActivityId | string | Unique identifier for an activity |
 | BatchJobId | long | Id of the batch job |
 | BatchJobTaskId | long | Task Id of the batch job |
@@ -53,7 +53,7 @@ ms.date: 08/08/2023
 | ExecutionStatus | int | Execution Status of the query |
 | ExecutionTimeSeconds | real | Execution time in seconds for the AosDatabaseSlowQuery event |
 | formName | string | Name of the form in Finance and Operations |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsValid | bool | Is it valid |
 | IsWarmEvent | bool | Is this a warm event |
 | LegalEntity | long | Legal entity |
@@ -63,7 +63,7 @@ ms.date: 08/08/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Role | string | Type of the machine (AOS/BI) emitting the events |
 | RoleInstance | string | Name of the machine emitting the events |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SqlCpu | real | SqlCpu Utilization |
 | SqlSpid | int | Process id for the SQL statement (SqlSpid) |
 | SqlStatement | string | SQL query statement |
