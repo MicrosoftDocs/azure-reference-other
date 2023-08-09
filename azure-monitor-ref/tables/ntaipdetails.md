@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # NTAIpDetails
 
- Traffic Analytics provides WHOIS data and geographic location for all public IPs in the customer's environment. For Malicious IP, it provides DNS domain, threat type and thread descriptions as identified by Microsoft security intelligence solutions. IP Details are published to your Log Analytics Workspace so you can create custom queries and put alerts on them. You can also access pre-populated queries from the traffic analytics dashboard.
+Traffic Analytics provides WHOIS data and geographic location for all public IPs in the customer's environment. For Malicious IP, it provides DNS domain, threat type and thread descriptions as identified by Microsoft security intelligence solutions. IP Details are published to your Log Analytics Workspace so you can create custom queries and put alerts on them. You can also access pre-populated queries from the traffic analytics dashboard.
 
 ## Categories
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | DnsDomain | string | For Malicious IPs only: Domain name associated with this IP. |
 | FaSchemaVersion | string | Schema version. |
@@ -34,10 +34,10 @@ ms.date: 08/08/2023
 | FlowIntervalStartTime | datetime | Start time of the flow log processing interval. This is time from which flow interval is measured. |
 | FlowType | string | Can be AzurePublic/ExternalPublic/MaliciousFlow. |
 | Ip | string | Public IP whose information is provided in the record. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | For Azure Public IP: Azure region of virtual network/network interface/virtual machine to which the IP belongs OR Global for IP 168.63.129.16. For External Public IP and Malicious IP: 2-letter country code where IP is located (ISO 3166-1 alpha-2). |
 | PublicIpDetails | string | For AzurePublic IP: Azure Service owning the IP OR "Microsoft Virtual Public IP" for IP 168.63.129.16 . ExternalPublic/Malicious IP: WhoIS information of the IP. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SubType | string | Subtype for the flow logs. Use only FlowLog, other values of SubType_s are for internal workings of the product. |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatDescription | string | For Malicious IPs only: Description of the threat posed by the malicious IP. |
