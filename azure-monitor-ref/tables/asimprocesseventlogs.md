@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ASimProcessEventLogs
 
- The Microsoft Sentinel process events normalized table stores events using the Process Event ASIM normalized schema associated with creation or termination of a process. Such events are reported by operating systems and security systems, such as EDR (End Point Detection and Response) systems.
+The Microsoft Sentinel process events normalized table stores events using the Process Event ASIM normalized schema associated with creation or termination of a process. Such events are reported by operating systems and security systems, such as EDR (End Point Detection and Response) systems.
 
 ## Categories
 
@@ -21,7 +21,7 @@ ms.date: 08/08/2023
 - LogManagement
 ## Resource types
 
-- Azure Sentinel
+- Microsoft Sentinel Process Event ASim schema
 
 
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActingProcessCommandLine | string | The command line used to run the acting process. |
 | ActingProcessCreationTime | datetime | The date and time when the acting process was started. |
 | ActingProcessFileCompany | string | The company that created the acting process image file. |
@@ -100,7 +100,7 @@ ms.date: 08/08/2023
 | EventSubType | string | Describes a subdivision of the operation reported in the EventType field. |
 | EventType | string | Describes the operation reported by the record |
 | EventVendor | string | The vendor of the product generating the event. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | ParentProcessCreationTime | datetime | The date and time when the parent process was started. |
 | ParentProcessFileCompany | string | The company that created the parent process image file. |
 | ParentProcessFileDescription | string | The description from the version information of the parent process image file. |
@@ -119,7 +119,7 @@ ms.date: 08/08/2023
 | ParentProcessSHA512 | string | The SHA-512 hash of the parent process image file. |
 | ParentProcessTokenElevation | string | A token indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the parent process. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetOriginalUserType | string | The user type as reported by the reporting device. |
 | TargetProcessCommandLine | string | The command line used to run the target process. |
