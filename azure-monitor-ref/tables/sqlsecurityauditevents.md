@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # SQLSecurityAuditEvents
 
- Azure Synapse SQL Audit Log.
+Azure Synapse SQL Audit Log.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActionId | string | ID of the audit action. |
 | ActionName | string | The name of the audit action. |
 | AdditionalInformation | string | Unique information that only applies to a single event is returned as XML. |
@@ -51,7 +51,7 @@ ms.date: 08/08/2023
 | EventId | string | unique Guid identifying each audit event. |
 | EventTime | datetime | The time (UTC) the event was fired at. |
 | HostName | string | The host name. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsColumnPermission | bool | Flag indicating if this is a column level permission. |
 | IsServerLevelAudit | bool | Boolean indicating whether this was generated from a server level audit or database level audit. |
 | LogicalServerName | string | Logical server name. |
@@ -71,7 +71,7 @@ ms.date: 08/08/2023
 | SessionContext | string | The Session context key value content. provided as an XML. |
 | SessionId | int | ID of the session on which the event occurred. |
 | SessionServerPrincipalName | string | Server principal for session. Is nullable. Returns the identity of the original login which was connected to the instance of SQL Server in case there were explicit or implicit context switches. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Statement | string | TSQL statement if it exists. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Succeeded | bool | Indicates whether the action that triggered the event succeeded. Is not nullable. For all events other than login events, this only reports whether the permission check succeeded or failed, not the operation. |
