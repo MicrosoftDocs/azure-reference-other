@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AZMSOperationalLogs
 
- Captures all management operations that are performed on the Azure Event Hubs/Azure Service Bus namespace and its entities.
+Captures all management operations that are performed on the Azure Event Hubs/Azure Service Bus namespace and its entities.
 
 ## Categories
 
@@ -31,16 +31,16 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActivityId | string | Internal ID, used to identify the specified activity. |
 | _BilledSize | real | The record size in bytes |
 | Caller | string | The caller of operation (the Azure portal or management client). |
 | EventName | string | The name of management operation which is executed within Service Bus. |
 | EventProperties | dynamic | The operation properties. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Provider | string | Event provider name. Possible values: eventhub, relay, and servicebus. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Status | string | The operation status. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
