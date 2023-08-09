@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AzureMetrics
 
- Metric data emitted by Azure services that measure their health and performance.
+Metric data emitted by Azure services that measure their health and performance.
 
 ## Categories
 
@@ -22,91 +22,91 @@ ms.date: 08/08/2023
 ## Resource types
 
 - Azure AD Domain Services
-- Data Lake Storage Gen1
-- Data factories
-- Automation account
-- API Management services
-- Logic Apps
-- Service Fabric Clusters
-- IoT Hub
-- Azure Monitor autoscale settings
-- Data Lake Analytics
-- Azure Databricks Services
-- Azure Arc Enabled Kubernetes
-- Virtual Machine Scale Sets
-- System Center Virtual Machine Manager
-- Azure Stack HCI
-- VMware
-- Event Grid System Topics
-- Event Grid Partner Topics
-- Event Grid Partner Namespaces
-- Azure Arc Provisioned Clusters
-- Event Grid Domains
-- Power BI Embedded
-- SQL Managed Instances
-- Stream Analytics jobs
-- Search Services
-- Virtual Networks
-- Virtual Private Network Gateways
-- Virtual Network Gateways
-- Traffic Manager Profiles
-- Public IP Addresses
-- Network Security Groups
-- Data Share
-- Network Interfaces
-- ExpressRoute Circuits
-- Device Provisioning Services
-- Azure Database for MariaDB Servers
-- Azure Database for PostgreSQL Servers V2
-- Azure Database for PostgreSQL Servers
-- Azure Database for MySQL Servers
-- SQL Databases
-- SQL Servers
-- Front Doors
-- Azure Blockchain Service
-- Azure Data Explorer Clusters
-- Container Registries
-- Azure Traffic Collector
-- Service Bus
-- Relay
-- Nexus Storage Appliances
-- Nexus Clusters
-- Nexus BareMetal Machines
-- Kubernetes Services
-- Key Vaults
-- Azure Virtual Network Manager
-- Firewalls
-- Event Grid Topics
-- Project CI Workspace
-- Azure Cosmos DB
-- Communication Services
-- Azure CloudHsm
-- Azure Cache for Redis
-- App Services
 - Application Gateways
+- App Services
+- Azure Cache for Redis
+- Azure CloudHsm
+- Communication Services
+- Azure Cosmos DB
+- Project CI Workspace
+- Event Grid Topics
 - Event Hubs
+- Firewalls
+- Key Vaults
+- Kubernetes Services
+- Nexus BareMetal Machines
+- Nexus Clusters
+- Nexus Storage Appliances
+- Relay
+- Service Bus
+- Azure Traffic Collector
+- Azure Virtual Network Manager
 - Microsoft Connected Cache
 - Microsoft Connected Vehicle Platform
 - Azure Database for MySQL Flexible Servers
-- SignalR
-- Storage Accounts
-- Cognitive Services
-- Azure Spring Apps
-- Batch Accounts
-- Analysis Services
-- Workload Monitor
-- Time Series Insights Environments
-- Desktop Virtualization workspaces
-- Desktop Virtualization Application Groups
-- Desktop Virtualization Host Pools
-- Synapse Workspaces
-- Azure Storage Mover
-- Azure Managed Lustre
-- Media Services
-- Machine Learning
-- Virtual machines
-- Dev Centers
 - Azure Database for PostgreSQL Flexible Servers
+- Dev Centers
+- Virtual machines
+- Machine Learning
+- Media Services
+- Azure Managed Lustre
+- Azure Storage Mover
+- Synapse Workspaces
+- Desktop Virtualization Host Pools
+- Desktop Virtualization Application Groups
+- Desktop Virtualization workspaces
+- Time Series Insights Environments
+- Workload Monitor
+- Analysis Services
+- Batch Accounts
+- Azure Spring Apps
+- Cognitive Services
+- Storage Accounts
+- SignalR
+- Container Registries
+- Azure Data Explorer Clusters
+- Azure Blockchain Service
+- Event Grid Domains
+- Event Grid Partner Namespaces
+- Event Grid Partner Topics
+- Event Grid System Topics
+- VMware
+- Azure Stack HCI
+- System Center Virtual Machine Manager
+- Virtual Machine Scale Sets
+- Azure Arc Enabled Kubernetes
+- Azure Arc Provisioned Clusters
+- Azure Databricks Services
+- Azure Monitor autoscale settings
+- IoT Hub
+- Service Fabric Clusters
+- Logic Apps
+- API Management services
+- Automation account
+- Data factories
+- Data Lake Storage Gen1
+- Data Lake Analytics
+- Power BI Embedded
+- Data Share
+- SQL Managed Instances
+- SQL Servers
+- SQL Databases
+- Azure Database for MySQL Servers
+- Azure Database for PostgreSQL Servers
+- Azure Database for PostgreSQL Servers V2
+- Azure Database for MariaDB Servers
+- Device Provisioning Services
+- ExpressRoute Circuits
+- Front Doors
+- Network Interfaces
+- Network Security Groups
+- Public IP Addresses
+- Traffic Manager Profiles
+- Virtual Network Gateways
+- Virtual Private Network Gateways
+- Virtual Networks
+- Search Services
+- Stream Analytics jobs
 - Bastions
 - Azure API for FHIR
 
@@ -116,8 +116,8 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
-| Average | real |  |
+|---|---|---|
+| Average | real |   |
 | _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | Deprecated |
 | Category | string | Deprecated |
@@ -129,7 +129,7 @@ ms.date: 08/08/2023
 | FirstReportedDateTime | string | Deprecated |
 | IndicatorThreatType | string | Deprecated |
 | IsActive | string | Deprecated |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastReportedDateTime | string | Deprecated |
 | MaliciousIP | string | Deprecated |
 | Maximum | real | Maximum value collected during in the time range. |
@@ -142,14 +142,14 @@ ms.date: 08/08/2023
 | RemoteIPLongitude | real | Deprecated |
 | Resource | string | Resource name of the Azure resource reporting the metric. |
 | ResourceGroup | string | Resource group name of the Azure resource reporting the metric. |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceId | string | Resource ID of the Azure resource reporting the metric. Same as _ResourceId present for backward compatibility reasons. _ResourceId should be used |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceProvider | string | Resource provider of the Azure resource reporting the metric. |
 | ResultDescription | string | Deprecated |
 | ResultSignature | string | Deprecated |
 | ResultType | string | Reduces the set of data collected. The syntax allowed depends on the operation. See the operation's description for details. |
 | Severity | int | Deprecated |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SubscriptionId | string | Subscription id of the Azure resource reporting the metric. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |
