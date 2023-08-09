@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # NWConnectionMonitorDNSResult
 
- Connection Monitor DNS result records.
+Connection Monitor DNS result records.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | ChecksFailed | int | The total number of checks failed under the test |
 | ChecksTotal | int | The total number of checks done under the test |
@@ -43,7 +43,7 @@ ms.date: 08/08/2023
 | DestinationSubnet | string | If applicable, the subnet of the destination |
 | DestinationType | string | The type of the destination machine configured for the test |
 | DomainName | string | The domain name of DNS Test |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Protocol | string | The protocol of the test |
 | RecordId | string | The record id for unique identification of test result record |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
@@ -56,7 +56,7 @@ ms.date: 08/08/2023
 | SourceName | string | The source end point name |
 | SourceResourceId | string | The resource id of the source machine |
 | SourceSubnet | string | The subnet of the source |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SourceType | string | The type of the source machine configured for the test |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
