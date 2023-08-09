@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DefenderIoTRawEvent
 
- Table is part of Microsoft Defender for IoT. It contains IoT security raw event properties of new and future events. These logs can be used to monitor your new operational, diagnostic and security raw events.
+Table is part of Microsoft Defender for IoT. It contains IoT security raw event properties of new and future events. These logs can be used to monitor your new operational, diagnostic and security raw events.
 
 ## Solutions
 
@@ -23,7 +23,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AgentVersion | string | The version of the agent. |
 | AssociatedResourceId | string | The associated Azure resource ID. |
 | AzureSubscriptionId | string | The Azure subscription ID. |
@@ -31,7 +31,7 @@ ms.date: 08/08/2023
 | DeviceId | string | The device ID. |
 | EventDetails | dynamic | Additional raw event details. |
 | IoTRawEventId | string | The internal raw event ID. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsEmpty | bool | Property identifying if the raw event contains data. |
 | RawEventCategory | string | The category of the raw event - periodic or triggered. |
 | RawEventName | string | The name of the raw event. |
