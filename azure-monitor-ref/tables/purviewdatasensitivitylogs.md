@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # PurviewDataSensitivityLogs
 
- Data Sensitivity information for assets scanned using Purview.
+Data Sensitivity information for assets scanned using Purview.
 
 ## Categories
 
@@ -22,7 +22,7 @@ ms.date: 08/08/2023
 - LogManagement
 ## Resource types
 
-- Azure Sentinel
+- Microsoft Defender for cloud
 - Microsoft.Purview/accounts
 
 
@@ -31,7 +31,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActivityType | string | The type of data sensitivity event: classification, labeling. |
 | AssetCreationTime | datetime | Time (UTC) at which the asset was created. |
 | AssetLastScanTime | datetime | Time (UTC) at which the asset was last scanned. |
@@ -45,7 +45,7 @@ ms.date: 08/08/2023
 | ClassificationTrigger | string | The trigger for the classification event. |
 | FileExtension | string | File extension of the asset scanned. Only populated when asset type is a file. |
 | FileSize | long | File size of the asset scanned in bytes. Only populated when asset type is a file. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | PurviewAccountName | string | Name of the Purview account. |
 | PurviewRegion | string | Region of the Purview account. |
 | PurviewTenantId | string | Tenant ID associated with the Purview account. |
@@ -59,7 +59,7 @@ ms.date: 08/08/2023
 | SourceRegion | string | The location of the data source that was scanned. |
 | SourceScanId | string | The associated Purview scan ID for the source. |
 | SourceSubscriptionId | string | Subscription ID associated with the data source. Account ID for AWS resources. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SourceType | string | Type of data source scanned: azuredatalakegen1, azureblob, azuredataexplorer, amazons3 etc. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
