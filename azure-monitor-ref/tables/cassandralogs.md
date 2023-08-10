@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/09/2023
+ms.date: 08/10/2023
 ---
 
 # CassandraLogs
@@ -27,6 +27,7 @@ Cassandra general logging messages (system.log).
 
 | Column | Type | Description |
 |---|---|---|
+| AddressIp | string | IP address of the node that generated the logging event. |
 | _BilledSize | real | The record size in bytes |
 | CassandraKey | string | Cassandra key. |
 | CassandraKeyspace | string | Cassandra keyspace. |
