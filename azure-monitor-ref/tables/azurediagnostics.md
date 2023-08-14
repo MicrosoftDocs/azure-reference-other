@@ -104,7 +104,6 @@ The following services use Azure diagnostics mode for their resource logs and se
 - Event Grid Topics
 - Event Hubs
 - ExpressRoute circuits
-- Firewalls
 - Front Doors
 - Integration accounts
 - Key Vault
@@ -137,6 +136,7 @@ The following services use either Azure diagnostics mode or resource-specific mo
 - Azure Cosmos DB
 - Data factories (V2)
 - IoT Hub
+- Firewalls
 - Recovery Services vaults(Backup)
 
 ## Columns
