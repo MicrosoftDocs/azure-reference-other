@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # NSPAccessLogs
 
- Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.
+Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.
 
 ## Categories
 
@@ -32,7 +32,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccessRuleVersion | string | Access rule version of the NSP profile to which PaaS resource is associated. |
 | AppId | string | Unique GUID representing the app ID of resource in the Azure Active Directory. |
 | _BilledSize | real | The record size in bytes |
@@ -44,7 +44,7 @@ ms.date: 08/08/2023
 | DestinationPort | string | Port number of outbound connection, when available. |
 | DestinationProtocol | string | Application layer protocol and transport layer protocol used for outbound connection in the format {AppProtocol}:{TransportProtocol}. For example: 'HTTPS:TCP'. It be must specified if available. |
 | DestinationResourceId | string | Resource ID of destination PaaS resource for an outbound connection, when available. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | Indicates the region of NSP. |
 | MatchedRule | string | JSON property bag containing matched access rule name. It can be either NSP access rule name or resource rule name (not it's resource ID). |
 | OperationName | string | Indicates top-level PaaS operation name. |
@@ -65,7 +65,7 @@ ms.date: 08/08/2023
 | SourcePort | string | Port number of inbound connection, when available. |
 | SourceProtocol | string | Application layer protocol and transport layer protocol used for inbound connection in the format {AppProtocol}:{TransportProtocol}. For example: 'HTTPS:TCP'. It be must specified if available. |
 | SourceResourceId | string | Resource ID of source PaaS resource for an inbound connection, when available. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Event generation time. |

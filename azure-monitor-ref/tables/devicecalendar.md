@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceCalendar
 
- 
+
 
 ## Categories
 
 - Workloads
 ## Solutions
 
-- Surface Hub
+- SurfaceHub
 
 
 
@@ -26,20 +26,20 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
-| Computer | string |  |
-| DelaySeconds | int |  |
-| DeviceType | string |  |
-| ErrorMessage | string |  |
-| EventId | int |  |
-| EventName | string |  |
-| HealthServiceId | string |  |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
-| ProviderId | string |  |
-| ResultCode | int |  |
-| SerialNumber | string |  |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
-| SyncStatus | string |  |
-| TimeGenerated | datetime |  |
+| Computer | string |   |
+| DelaySeconds | int |   |
+| DeviceType | string |   |
+| ErrorMessage | string |   |
+| EventId | int |   |
+| EventName | string |   |
+| HealthServiceId | string |   |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| ProviderId | string |   |
+| ResultCode | int |   |
+| SerialNumber | string |   |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
+| SyncStatus | string |   |
+| TimeGenerated | datetime |   |
 | Type | string | The name of the table |

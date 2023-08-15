@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # PowerBIActivity
 
- Contains Microsoft PowerBI audit logs. It's typically used to track PowerBI activities.
+Contains Microsoft PowerBI audit logs. It's typically used to track PowerBI activities.
 
 ## Categories
 
@@ -19,7 +19,7 @@ ms.date: 08/08/2023
 - Audit
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -27,7 +27,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | Activity | string | The name of the user or admin activity. |
 | ActivityId | string | A unique identifier for the activity. |
 | ActorName | string | The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, my_name@my_domain_name. Note that records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included. In SharePoint, another value display in the UserId property is app@sharepoint. This indicates that the "user" who performed the activity was an application that has the necessary permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. For more information, see the app@sharepoint user in audit records. |
@@ -44,7 +44,7 @@ ms.date: 08/08/2023
 | EventProduct | string | The Microsoft product name (PowerBI). |
 | EventResult | string | Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceeded, or Failed. |
 | EventVendor | string | Service vendor name. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsSuccess | string | Indicates whether the action was successful or not. |
 | ItemName | string | The name of the item that the activity was performed on. |
 | MembershipInformation | string | Membership information about the group. |
@@ -57,7 +57,7 @@ ms.date: 08/08/2023
 | RequestId | string | A unique identifier for the request. |
 | Scope | string | Event can be created by a hosted Office 365 service or an on-premises server. Possible values are online and onprem. Note that SharePoint is the only workload currently sending events from on-premises to Office 365. |
 | SharingInformation | string | Information about the person to whom a sharing invitation is sent. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SrcIpAddr | string | The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. For some services, the value displayed in this property might be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by person who performed the activity. Also, for Azure Active Directory-related events, the IP address isn't logged and the value for the ClientIP property is null. |
 | SwitchState | string | Information about the state of various tenant level switches. |
 | TargetAppName | string | The name of the app where the event occurred. |

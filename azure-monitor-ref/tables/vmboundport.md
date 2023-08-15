@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # VMBoundPort
 
- Traffic for open server ports on the monitored machine.
+Traffic for open server ports on the monitored machine.
 
 ## Categories
 
@@ -20,8 +20,8 @@ ms.date: 08/08/2023
 
 - AzureResources
 - InfrastructureInsights
-- Service Map
-- Azure Monitor for VMs
+- ServiceMap
+- VMInsights
 ## Resource types
 
 - Virtual machines
@@ -36,14 +36,14 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AgentId | string | Unique agent GUID for the agent reporting data on the server. |
 | _BilledSize | real | The record size in bytes |
 | BytesReceived | long | Bytes received on the port |
 | BytesSent | long | Bytes sent on the port |
 | Computer | string | Name of the server |
 | Ip | string | Port IP address. Can be wildcard IP 0.0.0.0. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsWildcardBind | bool | Specifies whether connection made as a wildcard bind request. |
 | LinksEstablished | long | Count of links established on the port. |
 | LinksLive | long | Count of live links at the end of the time period recorded. |
@@ -59,7 +59,7 @@ ms.date: 08/08/2023
 | ResponseTimeMax | long | Measurement of the maximum time between first and last byte received. |
 | ResponseTimeMin | long | Measurement of the minimum time between first and last byte received. |
 | ResponseTimeSum | long | Measurement of the total time between first and last byte received |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |

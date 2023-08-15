@@ -6,16 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # IdentityInfo
 
- This table is populated by Azure Sentinel UEBA with all your users identities information. It can be used to correlate user information and insights with analytics or hunting queries.
+This table is populated by Azure Sentinel UEBA with all your users identities information. It can be used to correlate user information and insights with analytics or hunting queries.
 
 ## Solutions
 
-- Microsoft Sentinel UEBA
+- BehaviorAnalyticsInsights
 
 
 
@@ -23,7 +23,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountCloudSID | string | The Azure AD security identifier of the account |
 | AccountCreationTime | datetime | The date the user account was created (UTC) |
 | AccountDisplayName | string | The user account display name |
@@ -52,7 +52,7 @@ ms.date: 08/08/2023
 | InvestigationPriority | int | The Investigation Priority score of the account |
 | InvestigationPriorityPercentile | int | The account score compared to the organization  |
 | IsAccountEnabled | bool | Indication if the account is enabled in AAD or not |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsMFARegistered | bool | Indication if MFA is registered for this user account or not |
 | IsServiceAccount | bool | The account is a service account. |
 | JobTitle | string | The user account job title as defined in AAD |
@@ -67,7 +67,7 @@ ms.date: 08/08/2023
 | RiskLevelDetails | string | Details regarding the AAD risk level |
 | RiskState | string | Indication if the account is at risk now or if the risk was remediated |
 | ServicePrincipals | dynamic | Azure AD service principals that are owned by the user |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | State | string | The geographical state of the user account as defined in AAD |
 | StreetAddress | string | The office street address of the user account as defined in AAD |
 | Surname | string | The user account surname |

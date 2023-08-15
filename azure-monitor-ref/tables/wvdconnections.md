@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # WVDConnections
 
- Windows Virtual Desktop Connection Activity.
+Windows Virtual Desktop Connection Activity.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AadTenantId | string | The AAD tenant Id of the user. |
 | _BilledSize | real | The record size in bytes |
 | ClientOS | string | The OS of the client that is connecting (if available). |
@@ -39,7 +39,7 @@ ms.date: 08/08/2023
 | ConnectionType | string | The type of connection - either RAIL (RemoteApp Integrated Locally) or Desktop. |
 | CorrelationId | string | The activity Id. |
 | GatewayRegion | string | The region of the WVD Gateway for the server side user connection. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsClientPrivateLink | string | True if the client side of this connection used a private link endpoint during orchestration. |
 | IsSessionHostPrivateLink | string | True if the session host side of this connection used a private link endpoint during orchestration. |
 | PredecessorConnectionId | string | The predecessor Correlation Id of the connection, if the current connection is an auto-reconnect. |
@@ -55,7 +55,7 @@ ms.date: 08/08/2023
 | SessionHostPoolType | string | The type of session host pool - either SharedDesktop or PersonalDesktop. |
 | SessionHostSessionId | string | The Session Id of WVD RDP Stack running on the machine where the user connection was orchestrated. |
 | SessionHostSxSStackVersion | string | The version of the WVD RDP Stack running on the machine where the user connection was orchestrated. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | State | string | The state of the connection. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |

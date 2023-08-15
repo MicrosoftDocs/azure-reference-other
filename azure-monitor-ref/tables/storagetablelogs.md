@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # StorageTableLogs
 
- Storage Table Service Logs Schema
+Storage Table Service Logs Schema
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountName | string | The name of the storage account. |
 | AuthenticationHash | string | The hash of authentication token. |
 | AuthenticationType | string | The type of authentication that was used to make the request. |
@@ -43,7 +43,7 @@ ms.date: 08/08/2023
 | CorrelationId | string | The ID that is used to correlate logs across resources. |
 | DurationMs | real | The total time, expressed in milliseconds, to perform the requested operation. This includes the time to read the incoming request, and to send the response to the requester. |
 | Etag | string | The ETag identifier for the returned object, in quotes. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastModifiedTime | datetime | The Last Modified Time (LMT) for the returned object. This field is empty for operations that can return multiple objects. |
 | Location | string | The location of storage account. |
 | OperationCount | int | The number of each logged operation that is involved in the request. This count starts with an index of 0. Some requests require more than one operation, such as a request to copy a blob. Most requests perform only one operation. |
@@ -67,7 +67,7 @@ ms.date: 08/08/2023
 | SchemaVersion | string | The schema version of the log. |
 | ServerLatencyMs | real | The total time expressed in milliseconds to perform the requested operation. This value doesn't include network latency (the time to read the incoming request and send the response to the requester). |
 | ServiceType | string | The service associated with this request. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StatusCode | string | The HTTP status code for the request. If the request is interrupted, this value might be set to Unknown. |
 | StatusText | string | The status of the requested operation. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |

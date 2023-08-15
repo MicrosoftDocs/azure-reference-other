@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceFileCertificateInfo
 
- Certificate information of signed files obtained from certificate verification events on endpoints.
+Certificate information of signed files obtained from certificate verification events on endpoints.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | CertificateCountersignatureTime | datetime | Date and time (UTC) the certificate was countersigned. |
 | CertificateCreationTime | datetime | Date and time (UTC) the certificate was created. |
@@ -35,7 +35,7 @@ ms.date: 08/08/2023
 | CrlDistributionPointUrls | string | A list of network shares URLs that contains certificates and certificate revocation (CRLs). |
 | DeviceId | string | Unique identifier for the device in the service. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsRootSignerMicrosoft | bool | Indicates whether the signer of the root certificate is Microsoft. |
 | IsSigned | bool | Indicates whether the file is signed. |
 | Issuer | string | Information about the issuing certificate authority (CA). |
@@ -47,7 +47,7 @@ ms.date: 08/08/2023
 | SignatureType | string | Indicates whether signature information was read as embedded content in the file itself or read from an external catalog file. |
 | Signer | string | Information about the signer of the file. |
 | SignerHash | string | Unique hash value identifying the signer. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated. |
 | Type | string | The name of the table |

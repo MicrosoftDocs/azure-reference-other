@@ -4,14 +4,14 @@ description: Reference for MAWindowsDeploymentStatusNRT table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 6/1/2021
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 08/09/2023
 ---
 
 # MAWindowsDeploymentStatusNRT
 
-[!INCLUDE [Note on Desktop Analytics table not intended for direct query](../../includes/azure-monitor-reference-ma-tables.md)]
+
 
 ## Categories
 
@@ -25,23 +25,25 @@ ms.date: 6/1/2021
 
 ## Columns
 
-|Column|Type|Description|
+| Column | Type | Description |
 |---|---|---|
-|DeploymentStage|string||
-|DeviceId|string||
-|DeviceName|string||
-|ErrorCode|int||
-|ErrorDescription|string||
-|ErrorFriendlyName|string||
-|ExtendedErrorCode|int||
-|Manufacturer|string||
-|Model|string||
-|RecommendedAction|string||
-|SourceBuild|string||
-|SourceSystem|string||
-|SourceVersion|string||
-|TargetBuild|string||
-|TargetVersion|string||
-|TimeGenerated|datetime||
-|Type|string|The name of the table|
-|UpdateSource|string||
+| _BilledSize | real | The record size in bytes |
+| DeploymentStage | string |   |
+| DeviceId | string |   |
+| DeviceName | string |   |
+| ErrorCode | int |   |
+| ErrorDescription | string |   |
+| ErrorFriendlyName | string |   |
+| ExtendedErrorCode | int |   |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| Manufacturer | string |   |
+| Model | string |   |
+| RecommendedAction | string |   |
+| SourceBuild | string |   |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
+| SourceVersion | string |   |
+| TargetBuild | string |   |
+| TargetVersion | string |   |
+| TimeGenerated | datetime |   |
+| Type | string | The name of the table |
+| UpdateSource | string |   |

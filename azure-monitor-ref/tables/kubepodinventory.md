@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # KubePodInventory
 
- Kubernetes pods and their properties
+Kubernetes pods and their properties
 
 ## Categories
 
@@ -32,35 +32,35 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
-| ClusterId | string |  |
-| ClusterName | string |  |
-| Computer | string |  |
-| ContainerCreationTimeStamp | datetime |  |
-| ContainerID | string |  |
-| ContainerLastStatus | string |  |
-| ContainerName | string |  |
-| ContainerRestartCount | int |  |
-| ContainerStartTime | datetime |  |
-| ContainerStatus | string |  |
-| ContainerStatusReason | string |  |
-| ControllerKind | string |  |
-| ControllerName | string |  |
-| InstanceName | string |  |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
-| Name | string |  |
-| Namespace | string |  |
-| PodCreationTimeStamp | datetime |  |
-| PodIp | string |  |
-| PodLabel | string |  |
-| PodRestartCount | int |  |
-| PodStartTime | datetime |  |
-| PodStatus | string |  |
-| PodUid | string |  |
+| ClusterId | string |   |
+| ClusterName | string |   |
+| Computer | string |   |
+| ContainerCreationTimeStamp | datetime |   |
+| ContainerID | string |   |
+| ContainerLastStatus | string |   |
+| ContainerName | string |   |
+| ContainerRestartCount | int |   |
+| ContainerStartTime | datetime |   |
+| ContainerStatus | string |   |
+| ContainerStatusReason | string |   |
+| ControllerKind | string |   |
+| ControllerName | string |   |
+| InstanceName | string |   |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| Name | string |   |
+| Namespace | string |   |
+| PodCreationTimeStamp | datetime |   |
+| PodIp | string |   |
+| PodLabel | string |   |
+| PodRestartCount | int |   |
+| PodStartTime | datetime |   |
+| PodStatus | string |   |
+| PodUid | string |   |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| ServiceName | string |  |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| ServiceName | string |   |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| TimeGenerated | datetime |  |
+| TimeGenerated | datetime |   |
 | Type | string | The name of the table |

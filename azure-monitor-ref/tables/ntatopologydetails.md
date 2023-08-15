@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # NTATopologyDetails
 
- Traffic Analytics records for Topology data.
+Traffic Analytics records for Topology data.
 
 ## Categories
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | Access | string | Access(Allow/Deny) associated with network security group rule. |
 | AddressPrefixes | string | The address prefixes associated with the discovered resource. |
 | AllowForwardedTraffic | bool | Whether the forwarded traffic from the VMs in the local virtual network will be allowed/disallowed in remote virtual network. |
@@ -67,7 +67,7 @@ ms.date: 08/08/2023
 | GatewayType | string | Gateway Type assocaited with virtual network gateway, VPN or express route. |
 | IngressBytesTransferred | long | The ingress bytes transferred in this connection. |
 | IpAddress | string | Gateway IP address of the discovered resource. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsFlowEnabled | bool | Flag to enable/disable flow logging. |
 | IsVirtualAppliance | bool | Boolean to specify if the discovered resource is a virtual appliance. |
 | LoadBalancerBackendPools | string | Pool of load balancer backend IP addresses. |
@@ -111,7 +111,7 @@ ms.date: 08/08/2023
 | SkuDetail | string | "The SKU of express route circuit. Express route circuit SKU detail semicolon seperated "Family;Name;Tier"". |
 | SourceAddressPrefix | string | Source address prefix associated with network security group rule. |
 | SourcePortRange | string | Source port range associated with network security group rule. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | State | string | The peering state of express route circuit peering. |
 | Status | string | Status of the ingestion. Possible values can be Completed/Partial/Failed. |
 | Subnet1 | string | Subnet associated with the discovered subnetwork connection. |

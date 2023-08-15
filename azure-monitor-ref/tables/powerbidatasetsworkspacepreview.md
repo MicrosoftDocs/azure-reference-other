@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # PowerBIDatasetsWorkspacePreview
 
- Contains Analysis Services engine process events such as the start of a batch or transaction e.g. execute query, process partition. Typically used to monitor the performance, health and usage of Power BI's data engine. Contains information per workspace.
+Contains Analysis Services engine process events such as the start of a batch or transaction e.g. execute query, process partition. Typically used to monitor the performance, health and usage of Power BI's data engine. Contains information per workspace.
 
 ## Solutions
 
@@ -23,7 +23,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ApplicationContext | string | Property bag of unique identifiers providing details about the application executing the request. E.g. report ID. |
 | ApplicationName | string | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
 | _BilledSize | real | The record size in bytes |
@@ -39,7 +39,7 @@ ms.date: 08/08/2023
 | EventClass | string | Event Class is used to categorize events. |
 | EventSubclass | string | Event Subclass provides additional information about each event class. |
 | IntegerData | long | Contains the integer data associated with the reported event, such as the current count of the number of rows processed for a processing event. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | ObjectId | string | Contains the object ID associated with the reported event. |
 | ObjectName | string | The name of the object for which the event occurred. |
 | ObjectPath | string | Object path. A comma-separated list of parents, starting with the object's parent. |
@@ -54,7 +54,7 @@ ms.date: 08/08/2023
 | RootActivityId | string | Unique Identifier of request |
 | SessionId | string | Unique identifier of a session which represents multiple transactions occurring within the same scope e.g. Sharing calculated members. |
 | Severity | string | Contains the severity level of an exception associated with the command event. Values are: 0 = Success, 1 = Informational, 2 = Warning, 3 = Error. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SpId | int | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
 | StartTime | datetime | Contains the time at which the event started, when available. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |

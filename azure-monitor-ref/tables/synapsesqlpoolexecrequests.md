@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # SynapseSqlPoolExecRequests
 
- Information about SQL requests or queries in an Azure Synapse dedicated SQL pool.
+Information about SQL requests or queries in an Azure Synapse dedicated SQL pool.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
 | ClassifierName | string | The classifier name of the execution requests. |
@@ -41,7 +41,7 @@ ms.date: 08/08/2023
 | ErrorId | string | The errorId of the execution requests. |
 | ExplainOutput | string | The output explain of the execution requests. |
 | Importance | string | The importance of the execution requests. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Label | string | The label of the execution requests. |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |
@@ -54,7 +54,7 @@ ms.date: 08/08/2023
 | RootQueryId | string | The rootQueryId of the execution requests. |
 | ScopeDepth | int | The scope depth of the execution requests. |
 | SessionId | string | The Session ID of the SQL pool instance. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartTime | datetime | The startTime (UTC) of the execution requests. |
 | StatementType | string | The statement type of the execution requests. |
 | Status | string | The status of the execution requests. |

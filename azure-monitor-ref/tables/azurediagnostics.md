@@ -4,12 +4,14 @@ description: Reference for AzureDiagnostics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: bwren
-author: bwren
-ms.date: 6/1/2021
+ms.author: edbaynash
+author: EdB-MSFT
+ms.date: 08/13/2023
+custom: Hardcoded description from azurediagnostics-stub.md.
 ---
 
 # AzureDiagnostics
+
 
 Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources.
 
@@ -71,18 +73,6 @@ While general query best practices such as always filtering by time as the first
 - When querying very large volumes of data, it is sometimes more efficient to do a filter on **AdditionalFields** as a whole rather than parsing it. For example, for large volumes of data `AzureDiagnostics | where AdditionalFields has "Perf2Sec"` is often more efficient than `AzureDiagnostics | where isnotnull(toint(AdditionalFields.Perf2Sec))`.
 
 
-## Categories
-
-- Azure Resources
-- Security
-- Network
-
-## Solutions
-
-- LogManagement
-
-## Resource types
-
 ### Azure Diagnostics mode
 
 The following services use Azure diagnostics mode for their resource logs and send data to the Azure Diagnostics table.
@@ -104,7 +94,6 @@ The following services use Azure diagnostics mode for their resource logs and se
 - Event Grid Topics
 - Event Hubs
 - ExpressRoute circuits
-- Firewalls
 - Front Doors
 - Integration accounts
 - Key Vault
@@ -138,6 +127,70 @@ The following services use either Azure diagnostics mode or resource-specific mo
 - Data factories (V2)
 - IoT Hub
 - Recovery Services vaults(Backup)
+- Firewalls
+
+
+
+## Categories
+
+- Azure Resources
+- Security
+- Network
+## Solutions
+
+- LogManagement
+## Resource types
+
+- Application Gateways
+- CDN Profiles
+- Azure Cosmos DB
+- Event Grid Topics
+- Event Hubs
+- Firewalls
+- Key Vaults
+- Kubernetes Services
+- Recovery Services Vaults
+- Service Bus
+- Azure Database for MySQL Flexible Servers
+- Azure Database for PostgreSQL Flexible Servers
+- Media Services
+- Analysis Services
+- Batch Accounts
+- Cognitive Services
+- Event Grid Partner Namespaces
+- Event Grid Partner Topics
+- Event Grid System Topics
+- Azure Arc Enabled Kubernetes
+- Azure Arc Provisioned Clusters
+- IoT Hub
+- Logic Apps
+- API Management services
+- Automation account
+- Data factories
+- Data Lake Storage Gen1
+- Data Lake Analytics
+- Power BI Embedded
+- SQL Managed Instances
+- SQL Servers
+- SQL Databases
+- Azure Database for MySQL Servers
+- Azure Database for PostgreSQL Servers
+- Azure Database for PostgreSQL Servers V2
+- Azure Database for MariaDB Servers
+- Device Provisioning Services
+- ExpressRoute Circuits
+- Front Doors
+- Network Interfaces
+- Network Security Groups
+- Public IP Addresses
+- Traffic Manager Profiles
+- Virtual Network Gateways
+- Virtual Private Network Gateways
+- Virtual Networks
+- Search Services
+- Stream Analytics jobs
+
+
 
 ## Columns
 
