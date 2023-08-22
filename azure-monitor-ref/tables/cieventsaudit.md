@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # CIEventsAudit
 
- All API requests in the context of the Customer Insights instance, for example all user actions while configuring and using the instance. POST|PUT|DELETE|PATCH operations go into this category.
+All API requests in the context of the Customer Insights instance, for example all user actions while configuring and using the instance. POST|PUT|DELETE|PATCH operations go into this category.
 
 ## Categories
 
@@ -30,7 +30,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | Audience | string | The audience for which the accessToken was requested for. |
 | _BilledSize | real | The record size in bytes |
 | CallerIPAddress | string | Caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
@@ -41,18 +41,18 @@ ms.date: 08/08/2023
 | DurationMs | long | Duration of the operation in milliseconds. |
 | EventType | string | Always ApiEvent, marking the log event as API event. |
 | InstanceId | string | Customer Insights instanceId. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Severity level of the event, is one of: Informational, Warning, Error, or Critical. |
 | Method | string | HTTP method: GET/POST/PUT/PATCH/HEAD |
 | OperationName | string | Name of the operation represented by this event. |
-| OperationStatus | string | Success for HTTP status code \< 400, ClientError for HTTP status code \< 500, Error for HTTP Status \>= 500. |
+| OperationStatus | string | Success for HTTP status code < 400, ClientError for HTTP status code < 500, Error for HTTP Status >= 500. |
 | Origin | string | URI indicating where a fetch originates from or unknown. |
 | Path | string | Relative path of the request. |
 | RequiredRoles | string | Required roles to do the operation. Admin role is allowed to do all operations. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultSignature | string | Sub status of the event. If the operation corresponds to a REST API call, it's the HTTP status code. |
 | ResultType | string | Status of the event. Running, Skipped, Successful, Failure. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |

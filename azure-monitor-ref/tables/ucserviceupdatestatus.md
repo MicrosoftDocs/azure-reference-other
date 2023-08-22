@@ -6,17 +6,17 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # UCServiceUpdateStatus
 
- Update Compliance - Update Event that comes directly from the service-side, and only tells the "service-side" of the story, for one device (client), and one update, in one deployment. As such, this event is stripped of certain fields in favor of being able to show data in near real-time.
+Update Compliance - Update Event that comes directly from the service-side, and only tells the "service-side" of the story, for one device (client), and one update, in one deployment. As such, this event is stripped of certain fields in favor of being able to show data in near real-time.
 
 ## Solutions
 
 - LogManagement
-- Update Compliance
+- WaaSUpdateInsights
 
 
 
@@ -24,7 +24,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID |
 | _BilledSize | real | The record size in bytes |
@@ -35,7 +35,7 @@ ms.date: 08/08/2023
 | DeploymentName | string | Friendly name of the created deployment. |
 | DeploymentRevokeTime | datetime | The datetime of when the update deployment was Revoked. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | OfferReadyTime | datetime | DateTime of OfferReady transition. If empty, not yet been Offered. |
 | PolicyCreatedTime | datetime | The datetime of when the policy was created. |
 | PolicyId | string | The policy identifier targeting the update to this device. |
@@ -45,7 +45,7 @@ ms.date: 08/08/2023
 | ServiceSubstate | string | Last-known state of this update relative to the device, from the client (the device's WDD). |
 | ServiceSubstateRank | int | Ranking of Substates for sequential ordering in funnel-type views. The rankings between ServiceSubstate and ClientSubstate can be used together. |
 | ServiceSubstateTime | datetime | DateTime of last ServiceSubstate transition. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TargetBuild | string | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
 | TargetVersion | string | The target OS Version - eg, 1909. |
 | TenantId | string | The Log Analytics workspace ID |

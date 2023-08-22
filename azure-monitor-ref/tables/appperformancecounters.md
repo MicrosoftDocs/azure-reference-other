@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AppPerformanceCounters
 
- Application Insights performance counters.
+Application Insights performance counters.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AppRoleInstance | string | Role instance of the application. |
 | AppRoleName | string | Role name of the application. |
 | AppVersion | string | Version of the application. |
@@ -46,7 +46,7 @@ ms.date: 08/08/2023
 | Counter | string | Performance counter name. |
 | IKey | string | Instrumentation key of the Azure resource. |
 | Instance | string | Instance identifier, to which the counter is related. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Name | string | Performance counter name. |
 | OperationId | string | Application-defined operation ID. |
 | OperationName | string | Application-defined name of the overall operation. The OperationName values typically match the Name values for AppRequests. |
@@ -56,7 +56,7 @@ ms.date: 08/08/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SDKVersion | string | Version of the SDK used by the application to generate this telemetry item. |
 | SessionId | string | Application-defined session ID. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SyntheticSource | string | Synthetic source of the operation. |
 | TenantId | string | The Log Analytics workspace ID |

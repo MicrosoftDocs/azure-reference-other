@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ATCExpressRouteCircuitIpfix
 
- This table has Express Route Circuit IPFIX flow records. Flow records are captured and emitted by Azure Traffic Collector (ATC).
+This table has Express Route Circuit IPFIX flow records. Flow records are captured and emitted by Azure Traffic Collector (ATC).
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ATCRegion | string | Azure Traffic Collector (ATC) deployment region. |
 | ATCResourceId | string | Azure resource ID of Azure Traffic Collector (ATC). |
 | BgpNextHop | string | Border Gateway Protocol (BGP) next hop as defined in the routing table. |
@@ -50,7 +50,7 @@ ms.date: 08/08/2023
 | IpClassOfService | int | IP Class of service as specified in IP header. |
 | IpProtocolIdentifier | int | Protocol type as specified in IP header. |
 | IpVerCode | int | IP version as defined in the IP header. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | MaxTtl | int | Maximum time to live (TTL) as defined in the IP header. |
 | MinTtl | int | Minimum time to live (TTL) as defined in the IP header. |
 | NextHop | string | Next hop as per forwarding table. |
@@ -63,7 +63,7 @@ ms.date: 08/08/2023
 | SchemaVersion | string | Flow record schema version. |
 | SourceIp | string | Source IP address. |
 | SourcePort | int | TCP source port. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SrcAsn | int | Source Autonomous System Number (ASN). |
 | SrcMask | int | Mask of source subnet. |
 | SrcSubnet | string | Source subnet of source IP. |

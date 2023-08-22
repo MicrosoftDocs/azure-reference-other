@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AgriFoodSatelliteLogs
 
- Logs for create and get operations for Satellite data.
+Logs for create and get operations for Satellite data.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ApplicationId | string | ApplicationId in identity claims. |
 | _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | IP address of the client that made the request. |
@@ -39,7 +39,7 @@ ms.date: 08/08/2023
 | DataPlaneResourceId | string | ID that uniquely identifies a FarmBeats resource such as a Farm, Farmer, Boundary etc. |
 | DurationMs | real | Time it took to service the REST API request, in milliseconds. |
 | FarmerId | string | Farmer ID associated with the request, wherever applicable. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the event, will be one of Informational, Warning, Error, or Critical. |
 | Location | string | The region of the resource emitting the event. |
 | ObjectId | string | ObjectId in identity claims. |
@@ -50,7 +50,7 @@ ms.date: 08/08/2023
 | ResultDescription | string | Additional details about the result, when available. |
 | ResultSignature | int | HTTP status of API request. |
 | ResultType | string | Result of the REST API request. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) when the log was created. |

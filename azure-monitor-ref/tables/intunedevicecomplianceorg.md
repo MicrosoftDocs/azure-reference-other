@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # IntuneDeviceComplianceOrg
 
- Intune device compliance specialist report.
+Intune device compliance specialist report.
 
 ## Categories
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | ComplianceState | string | The compliance state of the device. |
 | DeviceHealthThreatLevel | string | The device health threat level. |
@@ -35,7 +35,7 @@ ms.date: 08/08/2023
 | DeviceType | string | The type of the device. |
 | IMEI | string | The international mobile equipment identifier of the device. |
 | InGracePeriodUntil | string | The device grace period end time. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastContact | string | The date and time of last contact. |
 | ManagementAgents | string | The management agents. |
 | OS | string | The operating system of the device. |
@@ -46,7 +46,7 @@ ms.date: 08/08/2023
 | Result | string | The result of the operation. |
 | RetireAfterDatetime | string | The retire after date time. |
 | SerialNumber | string | The serial number of the device |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the report was generated. |

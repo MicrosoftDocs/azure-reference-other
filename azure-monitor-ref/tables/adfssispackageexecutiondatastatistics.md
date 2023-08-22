@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ADFSSISPackageExecutionDataStatistics
 
- ADF SSIS package execution data statistics
+ADF SSIS package execution data statistics
 
 ## Solutions
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | Category | string | The name of the log that belongs to |
 | CorrelationId | string | correlation id |
@@ -38,14 +38,14 @@ ms.date: 08/08/2023
 | ExecutionId | long | Execution id |
 | ExecutionPath | string | Execution path |
 | IntegrationRuntimeName | string | Integration runtime name |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Verbosity level of log |
 | OperationName | string | The name of the operation represented by this event |
 | PackageName | string | Package name |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RowsSent | long | Rows sent |
 | SourceComponentName | string | Source somponent name |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TaskName | string | Task name |
 | TenantId | string | The Log Analytics workspace ID |

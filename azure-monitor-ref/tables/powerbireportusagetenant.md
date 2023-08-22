@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # PowerBIReportUsageTenant
 
- Contains usage metric logs for open report and change report page for the workspaces on tenant level. Typically used to monitor usage of Power BI workspaces for customer tenant.
+Contains usage metric logs for open report and change report page for the workspaces on tenant level. Typically used to monitor usage of Power BI workspaces for customer tenant.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ArtifactId | string | Report unique identifier. |
 | ArtifactKind | string | Type of artifact this entry describe. |
 | ArtifactName | string | Report friendly name. As at time of event being raised. |
@@ -59,7 +59,7 @@ ms.date: 08/08/2023
 | HomeWorkspaceId | string | For app and direct share report cases the unique identifier of the workspace hosting the dataset that powers the report. |
 | HomeWorkspaceName | string | For app and direct share report cases the name of the workspace hosting the dataset that powers the report. |
 | Identity | dynamic | User and claim details. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsBootstrapIncluded | bool | For report view events shows whether the operation incurs application bootstrapping to initialize Power BI before the report load. |
 | IsQueryResultCacheEnabled | bool | For models on Premium capacities shows whether Query Result Caching enabled. |
 | Level | string | Log classification indicating if the entry is informational or represents a warning or error state. |
@@ -79,7 +79,7 @@ ms.date: 08/08/2023
 | ReportPageId | string | Power BI Interactive Report page/section unique identifier. |
 | ReportPageName | string | Power BI Interactive Report page friendly name. As at time of event being raised. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Status | string | Status of the operation. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |

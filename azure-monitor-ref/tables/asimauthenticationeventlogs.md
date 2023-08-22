@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ASimAuthenticationEventLogs
 
- Microsoft Sentinel normalized authentication events table. Stores events associated, for example, with the user authentication, sign-in, and sign-out.
+Microsoft Sentinel normalized authentication events table. Stores events associated, for example, with the user authentication, sign-in, and sign-out.
 
 ## Categories
 
@@ -21,7 +21,7 @@ ms.date: 08/08/2023
 - LogManagement
 ## Resource types
 
-- Azure Sentinel
+- Microsoft Sentinel Authentication Event ASIM schema
 
 
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActingAppId | string | The ID of the application authorizing on behalf of the actor, including a process, browser, or service. |
 | ActingAppName | string | The name of the application authorizing on behalf of the actor, including a process, browser, or service. |
 | ActingAppType | string | The type of acting application. |
@@ -82,13 +82,13 @@ ms.date: 08/08/2023
 | EventType | string | Describes the operation reported by the record |
 | EventVendor | string | The vendor of the product generating the event. |
 | HttpUserAgent | string | When authentication is performed over HTTP or HTTPS, this field's value is the user_agent HTTP header provided by the acting application when performing the authentication. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LogonMethod | string | The method used to perform authentication. |
 | LogonProtocol | string | The protocol used to perform authentication. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RuleName | string | The name or ID of the rule associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SrcDescription | string | A descriptive text associated with the source device. |
 | SrcDeviceType | string | The type of the source device. |
 | SrcDomain | string | The domain of the source device. |

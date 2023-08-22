@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ThreatIntelligenceIndicator
 
- Threat Intelligence Indicator
+Threat Intelligence Indicator
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | Action | string | Action to take on indicator match. |
 | Active | bool | Indicates whether indicator is active. |
 | ActivityGroupNames | string | Activity groups associated with indicator. |
@@ -59,7 +59,7 @@ ms.date: 08/08/2023
 | FileType | string | The file type observable. |
 | IndicatorId | string | Unique identifier for indicator, calculated by receiving system. |
 | IndicatorProvider | string | The name of the entity that provided the indicator. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | KillChainActions | bool | Indicates whether kill chain value 'actions' is set. |
 | KillChainC2 | bool | Indicates whether kill chain value 'C2' is set. |
 | KillChainDelivery | bool | Indicates whether kill chain value 'delivery' is set. |

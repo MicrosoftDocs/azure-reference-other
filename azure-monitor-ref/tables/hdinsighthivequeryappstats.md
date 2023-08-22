@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # HDInsightHiveQueryAppStats
 
- Hive Query Metrics emitted from the YARN Timeline Server.
+Hive Query Metrics emitted from the YARN Timeline Server.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | ClientIpAddress | string | The query client's IP address. |
 | ClusterName | string | Name of cluster. |
@@ -41,7 +41,7 @@ ms.date: 08/08/2023
 | ExecutionMode | string | The execution mode of the query. |
 | HiveInstanceType | string | The type of hive instance running the query. |
 | HostName | string | Name of host where log was emitted. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsMapReduce | bool | True if the query is a MapReduce query. |
 | IsTez | bool | True if the query is a Tez query. |
 | MetricName | string | Name of the metric for the record (e.g. AppsCompleted, AppsKilled, AppsFailed , etc). |
@@ -53,7 +53,7 @@ ms.date: 08/08/2023
 | RequestUser | string | The client user that submitted the request. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SessionId | string | The session ID of the query. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TablesRead | string | The tables read by the query. |
 | Tags | dynamic | Information about the record. For example a record may be tagged with 'yarn' if it is in the yarn context. |

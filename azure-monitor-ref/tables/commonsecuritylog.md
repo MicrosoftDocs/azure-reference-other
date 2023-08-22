@@ -6,23 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # CommonSecurityLog
 
- This table is for collecting events in the Common Event Format, that are most often sent from different security appliances such as Check Point, Palo Alto and more.
+This table is for collecting events in the Common Event Format, that are most often sent from different security appliances such as Check Point, Palo Alto and more.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Security and Audit
-- Microsoft Sentinel
+- Security
+- SecurityInsights
 ## Resource types
 
-- Azure Sentinel
+- Azure Sentinel CEF Table
 - Virtual machines
 - VMware
 - Azure Stack HCI
@@ -35,7 +35,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | Activity | string | A string that represents a human-readable and understandable description of the event. |
 | AdditionalExtensions | string | A placeholder for additional fields. Fields are logged as key-value pairs. |
 | ApplicationProtocol | string | The protocol used in the application, such as HTTP, HTTPS, SSHv2, Telnet, POP, IMPA, IMAPS, and so on. |
@@ -142,7 +142,7 @@ ms.date: 08/08/2023
 | FlexString2 | string | One of four floating point fields available to map fields that do not apply to any other in this dictionary. Use sparingly and seek a more specific, dictionary supplied field when possible. These fields are typically reserved for customer use and should not be set by vendors unless necessary. |
 | FlexString2Label | string | The label field is a string and describes the purpose of the flex field. |
 | IndicatorThreatType | string | The threat type of the MaliciousIP according to our TI feed. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LogSeverity | string | A string or integer that describes the importance of the event. Valid string values: Unknown , Low, Medium, High, Very-High Valid integer values are: 0-3 = Low, 4-6 = Medium, 7-8 = High, 9-10 = Very-High. |
 | MaliciousIP | string | If one of the IP in the message was correlate with the current TI feed we have it will show up here. |
 | MaliciousIPCountry | string | The country of the MaliciousIP according to the GEO information at the time of the record ingestion. |
@@ -175,7 +175,7 @@ ms.date: 08/08/2023
 | RequestURL | string | The URL accessed for an HTTP request, including the protocol. For example: http://www/secure.com. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SentBytes | long | Number of bytes transferred outbound. |
-| SimplifiedDeviceAction | string | A mapped version of DeviceAction, such as Denied \> Deny. |
+| SimplifiedDeviceAction | string | A mapped version of DeviceAction, such as Denied > Deny. |
 | SourceDnsDomain | string | The DNS domain part of the complete FQDN. |
 | SourceHostName | string | Identifies the source that event refers to in an IP network. Format should be a fully qualified domain name (DQDN) associated with the source node, when a node is available. For example: host or host.domain.com. |
 | SourceIP | string | The source that an event refers to in an IP network, as an IPv4 address. |
@@ -185,7 +185,7 @@ ms.date: 08/08/2023
 | SourceProcessId | int | The ID of the source process associated with the event. |
 | SourceProcessName | string | The name of the event's source process. |
 | SourceServiceName | string | The service responsible for generating the event. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SourceTranslatedAddress | string | Identifies the translated source that the event refers to in an IP network. |
 | SourceTranslatedPort | int | Source port after translation, such as a firewall. Valid port numbers are 0 - 65535. |
 | SourceUserID | string | Identifies the source user by ID. |

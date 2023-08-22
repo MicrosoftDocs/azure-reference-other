@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # VMComputer
 
- Inventory data for servers collected by the Service Map and VM Insights solutions using the Dependency agent and Log analytics agent.
+Inventory data for servers collected by the Service Map and VM Insights solutions using the Dependency agent and Log analytics agent.
 
 ## Categories
 
@@ -19,8 +19,8 @@ ms.date: 08/08/2023
 ## Solutions
 
 - AzureResources
-- Service Map
-- Azure Monitor for VMs
+- ServiceMap
+- VMInsights
 ## Resource types
 
 - Virtual machines
@@ -35,7 +35,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AgentId | string | Unique ID for the microsoft monitoring agent installed on the server. |
 | AzureCloudServiceDeployment | string | For cloud services the deployment id of the server. |
 | AzureCloudServiceInstanceId | string | For cloud services the instance name of the server. |
@@ -77,14 +77,14 @@ ms.date: 08/08/2023
 | Ipv4DefaultGateways | dynamic | A list of the server's IPv4 default gateways. |
 | Ipv4SubnetMasks | dynamic | A list of the server's IPv4 subnet masks. |
 | Ipv6Addresses | dynamic | A list of the server's IPv6 addresses |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | MacAddresses | dynamic | A list of the server's MAC addresses |
 | Machine | string | AgentId with m- prepended. |
 | OperatingSystemFamily | string | Value will be windows or linux |
 | OperatingSystemFullName | string | The full name of the operating system |
 | PhysicalMemoryMB | long | The physical memory in MB |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |
 | TimeZone | string | The UTC timezone offset of the server. |

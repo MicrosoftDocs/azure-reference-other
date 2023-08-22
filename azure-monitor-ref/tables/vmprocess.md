@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # VMProcess
 
- Process data for servers collected by the Service Map and VM Insights solutions using the Dependency agent and Log analytics agent.
+Process data for servers collected by the Service Map and VM Insights solutions using the Dependency agent and Log analytics agent.
 
 ## Categories
 
@@ -19,8 +19,8 @@ ms.date: 08/08/2023
 ## Solutions
 
 - AzureResources
-- Service Map
-- Azure Monitor for VMs
+- ServiceMap
+- VMInsights
 ## Resource types
 
 - Virtual machines
@@ -35,7 +35,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AgentId | string | Unique ID for the dependency agent installed on the server. |
 | _BilledSize | real | The record size in bytes |
 | CommandLine | string | The command line |
@@ -49,7 +49,7 @@ ms.date: 08/08/2023
 | FirstPid | int | The first PID in the process pool |
 | Group | string | The process group name for the process |
 | InternalName | string | The internal name |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Machine | string | The machine name of the server. |
 | Process | string | The name of the process. |
 | ProductName | string | The name of the product |
@@ -57,7 +57,7 @@ ms.date: 08/08/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Role | string | The role of the process. |
 | Services | dynamic | A list of services associated with the process. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartTime | datetime | The process pool start time |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Date and time the record was created. |

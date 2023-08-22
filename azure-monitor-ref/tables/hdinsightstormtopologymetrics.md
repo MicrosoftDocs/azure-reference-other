@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # HDInsightStormTopologyMetrics
 
- Topology Level Metrics from Storm clusters.
+Topology Level Metrics from Storm clusters.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | Acked | real | The number of Tuple “trees” successfully processed. A value of 0 is expected if no acking is done. |
 | AssignedCPUPercent | real | Percent of CPU cores assigned to the topology. |
 | AssignedMemOffHeapMB | real | MB of off heap memory assigned to the topology. |
@@ -58,7 +58,7 @@ ms.date: 08/08/2023
 | HostName | string | Hostname of the host the record came from. |
 | Id | string | The name of the component the record is from (could be spout, bolt, or name of topology). |
 | InstanceName | string | Type of record shape (there are bolt, spout, topology, and topology_stats record shapes). |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastError | string | Last error to occur in the component. |
 | MsgTimeout | real | The number of seconds until a message times out. |
 | OperationName | string | The operation associated with log record. |
@@ -71,7 +71,7 @@ ms.date: 08/08/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SamplingPct | real | Percentage of messages sampled to calculate metrics. |
 | SchedulerDisplayResource | bool | Boolean describing the scheduler display setting. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SpoutId | string | The ID of the spout. |
 | Status | string | The status of the topology. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
