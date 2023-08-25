@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # UCDOAggregatedStatus
 
- Update Compliance - aggregates all individual UCDOStatus records across the tenant and summarizes bandwidth savings across all devices enrolled to delivery.
+Update Compliance - aggregates all individual UCDOStatus records across the tenant and summarizes bandwidth savings across all devices enrolled to delivery.
 
 ## Categories
 
@@ -19,7 +19,7 @@ ms.date: 08/08/2023
 ## Solutions
 
 - LogManagement
-- Update Compliance
+- WaaSUpdateInsights
 
 
 
@@ -27,7 +27,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AzureADDeviceId | string | A GUID corresponding to the AAD tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD device ID. |
 | _BilledSize | real | The record size in bytes |
@@ -39,8 +39,8 @@ ms.date: 08/08/2023
 | BytesFromPeers | long | Total number of bytes downloaded from peers. |
 | ContentType | string | The type of content being downloaded. |
 | DeviceCount | long | Total count of devices. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event was generated. |
 | Type | string | The name of the table |

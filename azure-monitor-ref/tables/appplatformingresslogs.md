@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AppPlatformIngressLogs
 
- Azure Spring Cloud ingress logs, currently it is nginx access logs.
+Azure Spring Cloud ingress logs, currently it is nginx access logs.
 
 ## Categories
 
@@ -29,16 +29,16 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | BodyBytesSent | string | Number of bytes sent to a client, not counting the response header |
 | Host | string | The host name of the log |
 | HttpReferer | string | Value of the referer header |
 | HttpUserAgent | string | Value of user-agent header |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | OperationName | string | The name of the operation represented by this event |
-| ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-\<namespace\>-\<service name\>-\<service port\> |
-| ProxyUpstreamName | string | Name of the upstream server. The format is upstream-\<namespace\>-\<service name\>-\<service port\> |
+| ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-<namespace>-<service name>-<service port> |
+| ProxyUpstreamName | string | Name of the upstream server. The format is upstream-<namespace>-<service name>-<service port> |
 | RemoteAddr | string | The source IP address of the client |
 | RemoteUser | string | User name supplied with the basic authentication |
 | ReqId | string | The randomly generated ID of the request |
@@ -47,7 +47,7 @@ ms.date: 08/08/2023
 | RequestLength | string | Request length in bytes (including request line, header, and request body) |
 | RequestTime | real | Time in seconds with millisecond resolution elapsed since the first bytes were read from the client |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Status | string | Response status |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |

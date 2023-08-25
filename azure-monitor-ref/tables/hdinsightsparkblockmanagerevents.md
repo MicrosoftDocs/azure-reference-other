@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # HDInsightSparkBlockManagerEvents
 
- Spark Block Manager Events.
+Spark Block Manager Events.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AddedTime | datetime | The time (UTC) the event was added. |
 | ApplicationId | string | The application ID of the application producing the record. |
 | _BilledSize | real | The record size in bytes |
@@ -40,7 +40,7 @@ ms.date: 08/08/2023
 | ExecutorId | string | The ID of the executor running the application. |
 | Host | string | The FQDN of the host. |
 | IpAddress | string | The IP Address of the node the Block Manager is running on. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | MaxMemory | long | The max memory usage from the event. |
 | MaxOffHeapMemory | long | The max off heap memory usage from the event. |
 | MaxOnHeapMemory | long | The max on heap memory usage from the event. |
@@ -48,7 +48,7 @@ ms.date: 08/08/2023
 | RemovedTime | datetime | The time (UTC) the application was removed. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | Role | string | The type of node the Block Manager is running on. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |

@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # MicrosoftGraphActivityLogs
 
- Microsoft Graph Activity Logs provide details of API requests made to Microsoft Graph for resources in the tenant.
+Microsoft Graph Activity Logs provide details of API requests made to Microsoft Graph for resources in the tenant.
 
 ## Categories
 
@@ -27,7 +27,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AadTenantId | string | The Azure AD tenant ID. |
 | ApiVersion | string | The API version of the event. |
 | AppId | string | The identifier for the application. |
@@ -38,7 +38,7 @@ ms.date: 08/08/2023
 | DurationMs | int | The duration of the request in milliseconds. |
 | IdentityProvider | string | The identity provider that authenticated the subject of the token. |
 | IpAddress | string | The IP address of the client from where the request occurred. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | The name of the region that served the request. |
 | OperationId | string | The identifier for the batch. For non-batched requests, this will be unique per request. For batched requests, this will be the same for all requests in the batch. |
 | RequestId | string | The identifier representing the request. |
@@ -50,7 +50,7 @@ ms.date: 08/08/2023
 | Scopes | string | The scopes in token claims. |
 | ServicePrincipalId | string | The identifier of the servicePrincipal making the request. |
 | SignInActivityId | string | The identifier representing the sign-in activitys. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time the request was received. |
 | TokenIssuedAt | datetime | The timestamp the token was issued at. |

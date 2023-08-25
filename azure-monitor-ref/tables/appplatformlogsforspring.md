@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AppPlatformLogsforSpring
 
- App Platform Logs for Spring.
+App Platform Logs for Spring.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AppName | string | The application name that emitted the log |
 | AppTimestamp | datetime | The log timestamp (UTC) from user application log |
 | _BilledSize | real | The record size in bytes |
@@ -37,7 +37,7 @@ ms.date: 08/08/2023
 | CustomLevel | string | Verbosity level of log |
 | ExceptionClass | string | The exceptionClass of the log |
 | InstanceName | string | The instance name that emitted the log |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Log | string | The content of the log |
 | Logger | string | The logger from user application log |
 | MDC | string | Customized MDC field in the log |
@@ -45,7 +45,7 @@ ms.date: 08/08/2023
 | OperationName | string | The name of the operation represented by this event |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ServiceName | string | The service name that emitted the log |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SpanId | string | SpanId for tracing |
 | StackTrace | string | The stackTrace of the log |
 | Stream | string | The stream of the log |

@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # W3CIISLog
 
- Internet Information Server (IIS) log on Windows computers using the Log Analytics agent.
+Internet Information Server (IIS) log on Windows computers using the Log Analytics agent.
 
 ## Categories
 
@@ -34,7 +34,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent  when data is pulled from Azure storage. |
 | _BilledSize | real | The record size in bytes |
 | cIP | string | IP address of the client that accessed the web server. |
@@ -54,10 +54,10 @@ ms.date: 08/08/2023
 | FirstReportedDateTime | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | IndicatorThreatType | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | IsActive | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastReportedDateTime | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | MaliciousIP | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
-| ManagementGroupName | string | Name of the management group for Operations Manager agents. For other agents this is AOI-\<workspace ID\>. |
+| ManagementGroupName | string | Name of the management group for Operations Manager agents. For other agents this is AOI-<workspace ID>. |
 | RemoteIPCountry | string | Country/region of the IP address of the client. |
 | RemoteIPLatitude | real | Latitude of the client IP address. |
 | RemoteIPLongitude | real | Longitude of the client IP address. |
@@ -70,7 +70,7 @@ ms.date: 08/08/2023
 | scWin32Status | string | Windows status code. |
 | Severity | int | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |
 | sIP | string | IP address of the server on which the log file entry was generated. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | sPort | int | Server port number that is configured for the service. |
 | sSiteName | string | Name of the IIS site. |
 | StorageAccount | string | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |

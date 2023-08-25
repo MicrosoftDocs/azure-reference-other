@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ACSRoomsIncomingOperations
 
- Communication Services logs of incoming requests to rooms operations, with summaries of room object, lifespan, participants and roles count etc.
+Communication Services logs of incoming requests to rooms operations, with summaries of room object, lifespan, participants and roles count etc.
 
 ## Categories
 
@@ -29,11 +29,11 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AddedRoomParticipantsCount | int | The count of participants added to a room. |
 | _BilledSize | real | The record size in bytes |
 | CorrelationId | string | The unique ID of the request. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the operation. |
 | OperationName | string | The operation associated with log record. e.g., CreateRoom, PatchRoom, GetRoom, ListRooms, DeleteRoom, GetParticipants, AddParticipants, UpdateParticipants, or RemoveParticipants. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
@@ -47,7 +47,7 @@ ms.date: 08/08/2023
 | RoomParticipantsConsumer | int | The participants count with consumer role. |
 | RoomParticipantsCount | int | The count of participants in a room. |
 | RoomParticipantsPresenter | int | The participants count with presenter role. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |

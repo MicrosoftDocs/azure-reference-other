@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # NetworkAccessTraffic
 
- This table is part of Identity and Network Access, which contains Network Traffic Access logs. These logs can be leveraged for policy, risk, and traffic management, as well as to monitor users experience.
+This table is part of Identity and Network Access, which contains Network Traffic Access logs. These logs can be leveraged for policy, risk, and traffic management, as well as to monitor users experience.
 
 ## Categories
 
@@ -28,7 +28,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | Action | string | The action taken on the network session. Allowed, Denied. |
 | AgentVersion | string | The version of the agent connecting. |
 | _BilledSize | real | The record size in bytes |
@@ -40,7 +40,7 @@ ms.date: 08/08/2023
 | DeviceId | string | The ID of the source device as reported in the record. |
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | NetworkProtocol | string | The network protocol, IPv6 or IPv4. |
 | OriginHeader | string | The origin header value. |
 | PolicyId | string | The ID of the policy for which the request was denied by its rule. |
@@ -51,7 +51,7 @@ ms.date: 08/08/2023
 | SessionId | string | Unique identifier representing the session. |
 | SourceIp | string | The IP address from which the connection or session originated. |
 | SourcePort | int | The IP port from which the connection originated. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time (UTC) that the event was generated. |
 | TrafficType | string | The type of the target destination traffic. |

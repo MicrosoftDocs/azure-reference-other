@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # MicrosoftPurviewInformationProtection
 
- Microsoft Purview Information Protection audit logs.
+Microsoft Purview Information Protection audit logs.
 
 ## Categories
 
@@ -19,7 +19,7 @@ ms.date: 08/08/2023
 - Audit
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -27,7 +27,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActionSource | string | The source of the label action. |
 | ActionSourceDetail | string | More details about the source of the label action. |
 | AppAccessContext | dynamic | The application context for the user or service principal that performed the action. |
@@ -50,7 +50,7 @@ ms.date: 08/08/2023
 | ExecutionRuleVersion | string | The version of the rule that was executed. |
 | Id | string | Unique identifier of an audit record. |
 | IrmContentId | string | The unique ID used for identifying the encrypted document after the operation is complete. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsViewableByExternalUsers | bool | Is viewable by external users. |
 | ItemCreationTime | datetime | The date and time the item was created. |
 | ItemLastModifiedTime | datetime | The date and time the item was last modified. |
@@ -96,7 +96,7 @@ ms.date: 08/08/2023
 | SensitivityLabelPolicyId | string | The identifier for the sensitivity labeling policy that was matched based on the content of the document. |
 | Severity | string | The severity of the auto label policy match. |
 | SharePointMetaData | dynamic | SharePoint auto labeling metadata. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TargetLocation | string | The location of the document with respect to the user' device. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time when the user performed the activity. |

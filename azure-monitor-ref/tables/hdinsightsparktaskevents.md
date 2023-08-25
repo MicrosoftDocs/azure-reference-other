@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # HDInsightSparkTaskEvents
 
- Spark Task Events.
+Spark Task Events.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ApplicationId | string | The application ID of the application producing the record. |
 | AttemptId | string | The ID of task attempt. |
 | _BilledSize | real | The record size in bytes |
@@ -49,7 +49,7 @@ ms.date: 08/08/2023
 | Host | string | The FQDN of the host running the task. |
 | InputMetrics | long | The metrics associated with the task input. |
 | IpAddress | string | The IP Address of the node running the task. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | JvmGcTime | long | The time the JVM spent garbage collecting. |
 | Killed | bool | Boolean describing whether the task was killed. |
 | LaunchTime | datetime | The time (UTC) the task was launched. |
@@ -75,7 +75,7 @@ ms.date: 08/08/2023
 | ShuffleTotalBytesRead | long | The number bytes read during the shuffle task. |
 | ShuffleWriteMetrics | long | The metrics associated with shuffle writes. |
 | ShuffleWriteTime | long | The time spent writing during the shuffle task. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StageId | string | The ID of the stage associated with the task. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TaskId | string | The ID of the task. |

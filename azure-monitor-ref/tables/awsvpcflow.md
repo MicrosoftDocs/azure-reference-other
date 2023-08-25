@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AWSVPCFlow
 
- VPC Flow Logs, which ingested from Sentinel's connector, enables you to capture IP traffic going to and from your AWS VPC network interfaces.
+VPC Flow Logs, which ingested from Sentinel's connector, enables you to capture IP traffic going to and from your AWS VPC network interfaces.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AccountId | string | The AWS account ID of the owner of the source network interface for which traffic is recorded. If the network interface is created by an AWS service, for example when creating a VPC endpoint or Network Load Balancer, the record may display unknown for this field. |
 | Action | string | The action that is associated with the traffic. |
 | AzId | string | The ID of the Availability Zone. |
@@ -38,7 +38,7 @@ ms.date: 08/08/2023
 | FlowDirection | string | The direction of the flow with respect to the interface where traffic is captured. |
 | InstanceId | string | The ID of the instance that's associated with network interface for which the traffic is recorded. |
 | InterfaceId | string | The ID of the network interface for which the traffic is recorded. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LogStatus | string | The logging status of the flow log. |
 | Packets | int | The number of packets transferred during the flow. |
 | PktDstAddr | string | The packet-level (original) destination IP address for the traffic. |
@@ -47,7 +47,7 @@ ms.date: 08/08/2023
 | PktSrcAwsService | string | The name of the subset of IP address ranges for the PktSrcAddr field, if the source IP address is for an AWS service. |
 | Protocol | int | The IANA protocol number of the traffic. |
 | Region | string | The Region that contains the network interface for which traffic is recorded. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SrcAddr | string | The source address for incoming traffic. |
 | SrcPort | int | The source port of the traffic. |
 | SublocationId | string | The ID of the sublocation that contains the network interface for which traffic is recorded. |

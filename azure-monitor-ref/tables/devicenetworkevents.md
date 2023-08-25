@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceNetworkEvents
 
- Microsoft Defender for Endpoints (MDE) device network events table. This table contains contains information about network connections and related events initiated by processes running on the endpoint.
+Microsoft Defender for Endpoints (MDE) device network events table. This table contains contains information about network connections and related events initiated by processes running on the endpoint.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActionType | string | Type of activity that triggered the event. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
@@ -58,7 +58,7 @@ ms.date: 08/08/2023
 | InitiatingProcessVersionInfoOriginalFileName | string | The original file name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | The product name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | The product version in version information (image file) responsible for the event. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LocalIP | string | IP address assigned to the local machine used during communication. |
 | LocalIPType | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast. |
 | LocalPort | int | TCP port on the local machine used during communication. |
@@ -69,7 +69,7 @@ ms.date: 08/08/2023
 | RemotePort | int | TCP port on the remote device that was being connected to. |
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to. |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |

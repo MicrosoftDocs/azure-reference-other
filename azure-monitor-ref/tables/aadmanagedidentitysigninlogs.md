@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AADManagedIdentitySignInLogs
 
- Managed identity Azure Active Directory sign-in logs.
+Managed identity Azure Active Directory sign-in logs.
 
 ## Categories
 
@@ -27,7 +27,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AppId | string | Unique GUID representing the app ID in the Azure Active Directory |
 | AuthenticationContextClassReferences | string | The authentication contexts of the sign-in |
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
@@ -41,7 +41,7 @@ ms.date: 08/08/2023
 | Id | string | Unique ID representing the sign-in activity |
 | Identity | string | The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal |
 | IPAddress | string | IP address of the client used to sign in |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | The severity level of the event |
 | Location | string | The region of the resource emitting the event |
 | LocationDetails | string | Details of the sign-in location |
@@ -58,7 +58,7 @@ ms.date: 08/08/2023
 | ServicePrincipalCredentialThumbprint | string | Thumbprint of the service principal that initiated the sign-in |
 | ServicePrincipalId | string | ID of the service principal who initiated the sign-in |
 | ServicePrincipalName | string | Service Principal Name of the service principal who initiated the sign-in |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC |
 | Type | string | The name of the table |

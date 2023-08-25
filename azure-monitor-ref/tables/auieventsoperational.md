@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AUIEventsOperational
 
- Events generated using the service, for example GET requests or the execution events of a workflow.
+Events generated using the service, for example GET requests or the execution events of a workflow.
 
 ## Solutions
 
@@ -23,7 +23,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AdditionalInformation | string | Contains AffectedEntities, MessageCode and entityCount. |
 | Audience | string | The audience for which the accessToken was requested for. |
 | _BilledSize | real | The record size in bytes |
@@ -39,11 +39,11 @@ ms.date: 08/08/2023
 | FriendlyName | string | User friendly Name of the Export or the Entity which is processed. |
 | Identifier | string | Depending on the OperationType in can be: the guid of the export configuration, the guid of the Enrichment, the Entity Name. |
 | InstanceId | string | Customer Insights (AUI) instance ID. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Severity level of the event, is one of: Informational, Warning or Error. |
 | Method | string | HTTP method: GET/POST/PUT/PATCH/HEAD |
-| OperationName | string | Name of the operation represented by this event. {OperationType}.[WorkFlow\|Task][Started\|Completed]. |
-| OperationStatus | string | Success for HTTP Status code \< 400, ClientError for HTTP Status code \< 500, Error for HTTP Status \>= 500. |
+| OperationName | string | Name of the operation represented by this event. {OperationType}.[WorkFlow&#124;Task][Started&#124;Completed]. |
+| OperationStatus | string | Success for HTTP Status code < 400, ClientError for HTTP Status code < 500, Error for HTTP Status >= 500. |
 | OperationType | string | Identifier of the operation. |
 | Origin | string | URI indicating where a fetch originates from or unknown. |
 | Path | string | Relative path of the request. |
@@ -51,7 +51,7 @@ ms.date: 08/08/2023
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultSignature | string | Sub status of the event. If the operation corresponds to a REST API call, it's the HTTP status code. |
 | ResultType | string | Status of the event. Running, Skipped, Successful, Failure. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartTime | datetime | Specifies the date and time that the workflow job was started (UTC) |
 | SubmittedBy | string | Workflow events only. The Azure Active Directory objectId of the user who triggered the workflow, see also properties.workflowSubmissionKinds. |
 | SubmittedTime | datetime | Specifies the date and time that the workflow job was submitted (UTC) |

@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/10/2023
 ---
 
 # CassandraLogs
 
- Cassandra general logging messages (system.log).
+Cassandra general logging messages (system.log).
 
 ## Solutions
 
@@ -26,7 +26,8 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
+| AddressIp | string | IP address of the node that generated the logging event. |
 | _BilledSize | real | The record size in bytes |
 | CassandraKey | string | Cassandra key. |
 | CassandraKeyspace | string | Cassandra keyspace. |
@@ -52,7 +53,7 @@ ms.date: 08/08/2023
 | Exception | string | Throwable trace bound to the logging event, by default this will output the full trace as one would normally find with a call to Throwable.printStackTrace(). |
 | GCType | string | The type of garbage collection, e.g. ParNew, MarkSweepCompact, G1 Old. |
 | HostId | string | The GUID assigned in the Cassandra cluster to uniquely identify this node. See the system.local table or nodetool status to find information about the host by its HostId. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Severity level of the event, will be one of INFO, WARM, ERROR, or OFF. |
 | LiveCells | int | The number of live cells. |
 | MaxMemory | long | The maximum amount of memory (in bytes) that can be used for memory management. |
@@ -69,12 +70,12 @@ ms.date: 08/08/2023
 | PermGenBefore | long | Permanent Generation space before garbage collection (in bytes). Permanent generation stores classes metadata (renamed to Metaspace in Java 8). |
 | RequestedColumns | int | The number of columns requested. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SessionId | string | Unique string identifying what query was running when this log was emitted. Use SHOW SESSION \<SessionId\> to find details of the query's activity. |
+| SessionId | string | Unique string identifying what query was running when this log was emitted. Use SHOW SESSION <SessionId> to find details of the query's activity. |
 | SliceEnd | string | The end of the the column slice inclusive. |
 | SliceStart | string | The start of the column slice inclusive. |
 | SourceFile | string | File name where the logging request was issued. |
 | SourceLine | int | Line number where the logging request was issued. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SSTableName | string | SSTable name. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SurvivorSpaceAfter | long | Survivor space after garbage collection (in bytes). Survivor space stores the objects that have survived the garbage collection of the Eden space. |

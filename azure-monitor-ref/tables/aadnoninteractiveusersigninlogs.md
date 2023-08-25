@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AADNonInteractiveUserSignInLogs
 
- Non-interactive Azure Active Directory sign-in logs from user.
+Non-interactive Azure Active Directory sign-in logs from user.
 
 ## Categories
 
@@ -27,7 +27,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AlternateSignInName | string | Provides the on-premises UPN of the user sign-ing into Azure AD.e.g. Phone number sign-in. |
 | AppDisplayName | string | App name displayed in the Azure portal. |
 | AppId | string | Unique GUID representing the app ID in the Azure Active Directory. |
@@ -54,7 +54,7 @@ ms.date: 08/08/2023
 | Id | string | Unique ID representing the sign-in activity. |
 | Identity | string | The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal. |
 | IPAddress | string | IP address of the client used to sign in. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsInteractive | bool | Indicates if a sign-in is interactive or not. |
 | IsRisky | bool | Indicates if a sign-in is considered risky or not. |
 | Level | string | The severity level of the event. |
@@ -84,7 +84,7 @@ ms.date: 08/08/2023
 | SessionLifetimePolicies | string | Policies and settings that applied to the sign-in that enforced or revoked a session lifetime. |
 | SignInEventTypes | string | The types that are associated with the sign-in.  Examples include "interactive", "refreshToken", "managedIdentity", "continuousAccessEvaluation" and many more. |
 | SignInIdentifierType | string | The type of sign in identifier. Possible values are: userPrincipalName, phoneNumber, proxyAddress, qrCode, onPremisesUserPrincipalName, unknownFutureValue. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Status | string | Details of the sign-in status. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC. |
