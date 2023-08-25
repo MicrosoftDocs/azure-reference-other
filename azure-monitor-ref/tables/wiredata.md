@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # WireData
 
- Network data collected by the WireData solution using by the Dependency agent and Log analytics agent.
+Network data collected by the WireData solution using by the Dependency agent and Log analytics agent.
 
 ## Categories
 
@@ -20,7 +20,7 @@ ms.date: 08/08/2023
 ## Solutions
 
 - WireData
-- Wire Data 2.0
+- WireData2
 ## Resource types
 
 - Virtual machines
@@ -35,7 +35,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ApplicationProtocol | string | Type of network protocol used |
 | ApplicationServiceName | string | Hold over field from old schema - attribute not collected |
 | _BilledSize | real | The record size in bytes |
@@ -47,7 +47,7 @@ ms.date: 08/08/2023
 | IndicatorThreatType | string | Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist. |
 | IPVersion | string | IP version |
 | IsActive | string | Indicates indicators are deactivated with True or False value. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastReportedDateTime | string | The last time the indicator was seen by Interflow. |
 | LatencyMilliseconds | int | Hold over field from old schema - attribute not collected |
 | LatencySamplingFailureRate | string | Hold over field from old schema - attribute not collected |
@@ -78,7 +78,7 @@ ms.date: 08/08/2023
 | SessionStartTime | datetime | Start time of session |
 | SessionState | string | Connected or disconnected |
 | Severity | int | Suspected malware severity |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Time of the record |
 | TLPLevel | string | Traffic Light Protocol (TLP) Level is one of the defined values White Green Amber Red. |

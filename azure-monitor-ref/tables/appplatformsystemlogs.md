@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AppPlatformSystemLogs
 
- Azure Spring Cloud System Logs.
+Azure Spring Cloud System Logs.
 
 ## Categories
 
@@ -29,11 +29,11 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | Category | string | Log Category |
 | InstanceName | string | The instance name that emitted the log |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | The level of the log |
 | Log | string | The log of the log |
 | Logger | string | The logger of the log |
@@ -41,7 +41,7 @@ ms.date: 08/08/2023
 | OperationName | string | The name of the operation represented by this event |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ServiceName | string | The service name that emitted the log |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Stack | string | The stack of the log |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |

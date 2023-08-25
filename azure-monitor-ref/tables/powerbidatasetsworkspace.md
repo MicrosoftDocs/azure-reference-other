@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # PowerBIDatasetsWorkspace
 
- Contains Analysis Services engine process events such as the start of a batch or transaction e.g. execute query, process partition. Typically used to monitor the performance, health and usage of Power BI's data engine. Contains information from the entire tenant.
+Contains Analysis Services engine process events such as the start of a batch or transaction e.g. execute query, process partition. Typically used to monitor the performance, health and usage of Power BI's data engine. Contains information from the entire tenant.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ApplicationContext | dynamic | Unique identifiers providing details about the context of the operation. E.g. Report ID, DatasetID. |
 | ApplicationName | string | Contains the name of the client application that created the connection to the Power BI dataset. This is provided by the application and is optional. |
 | ArtifactId | string | Unique ID of the resource logging the data. |
@@ -44,7 +44,7 @@ ms.date: 08/08/2023
 | EventText | string | Contains verbose information associated with operation e.g. DAX query. |
 | ExecutingUser | string | The user executing the operation. |
 | Identity | dynamic | Information about user and claims. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
 | LogAnalyticsCategory | string | Unique category of the events like Audit/Security/Request. |
 | OperationDetailName | string | Provides subcategories of OperationName. |
@@ -55,7 +55,7 @@ ms.date: 08/08/2023
 | ProgressCounter | long | Progress Counter. |
 | ReplicaId | string | Replica identifier. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Status | string | Status of the operation. |
 | StatusCode | int | Status code of the operation. It covers success and failure. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |

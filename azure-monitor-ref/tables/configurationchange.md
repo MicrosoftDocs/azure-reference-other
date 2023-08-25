@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ConfigurationChange
 
- View changes to in-guest configuration data such as Files Software Registry Keys Windows Services and Linux Daemons
+View changes to in-guest configuration data such as Files Software Registry Keys Windows Services and Linux Daemons
 
 ## Categories
 
 - IT & Management Tools
 ## Solutions
 
-- Change Tracking
+- ChangeTracking
 ## Resource types
 
 - Virtual machines
@@ -33,12 +33,12 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | Acls | string | The Access-Control List specifies which users or system processes are granted access to objects |
-| Attributes | string |  |
+| Attributes | string |   |
 | _BilledSize | real | The record size in bytes |
 | ChangeCategory | string | The type of change that occurred: Added Removed Modified |
-| Computer | string |  |
+| Computer | string |   |
 | ConfigChangeType | string | Type of configuration item that changed: Files Software WindowsServices Registry Daemons |
 | Current | string | Current value |
 | DateCreated | datetime | Date that the item was created |
@@ -47,11 +47,11 @@ ms.date: 08/08/2023
 | FileContentChecksum | string | Checksum of the file content |
 | FileSystemPath | string | File system path for the changed file |
 | Hive | string | Registry hive for the changed registry key |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastSnapshotAge | long | Age of the last snapshot |
-| Location | string |  |
+| Location | string |   |
 | ManagementGroupName | string | Name of a resource's assigned management group |
-| Name | string |  |
+| Name | string |   |
 | Previous | string | Previous value |
 | PreviousAcls | string | Previous Acl value |
 | PreviousAttributes | string | Previous attributes value |
@@ -68,8 +68,8 @@ ms.date: 08/08/2023
 | SoftwareDescription | string | Description of the software |
 | SoftwareName | string | Name of the software |
 | SoftwareType | string | Type of the software: Application Package Update |
-| SourceComputerId | string |  |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceComputerId | string |   |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SvcAccount | string | User account that is associated with the service executable explicitly to provide a security context for the service |
 | SvcChangeType | string | Service property that was changed |
@@ -91,4 +91,4 @@ ms.date: 08/08/2023
 | ValueData | string | Data contained in the value and registry key being tracked |
 | ValueName | string | Name of the value for the registry key being tracked |
 | ValueType | string | Type of the value for the registry key being tracked |
-| VMUUID | string |  |
+| VMUUID | string |   |

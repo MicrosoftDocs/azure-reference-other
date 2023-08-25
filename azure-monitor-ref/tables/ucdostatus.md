@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # UCDOStatus
 
- Update Compliance - provides information, for a single device, on their bandwidth utilization across content types in the event they use delivery optimization.
+Update Compliance - provides information, for a single device, on their bandwidth utilization across content types in the event they use delivery optimization.
 
 ## Categories
 
@@ -19,7 +19,7 @@ ms.date: 08/08/2023
 ## Solutions
 
 - LogManagement
-- Update Compliance
+- WaaSUpdateInsights
 
 
 
@@ -27,7 +27,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AzureADDeviceId | string | A GUID corresponding to the AAD tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD device ID. |
 | _BilledSize | real | The record size in bytes |
@@ -48,7 +48,7 @@ ms.date: 08/08/2023
 | DownloadModeSrc | string | The source of the download mode configuration. |
 | GlobalDeviceId | string | Microsoft global device identifier. This is a identifier used by Microsoft internally. |
 | GroupID | string | The delivery optimization group ID. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | ISP | string | The internet service provider estimation. |
 | LastCensusSeenTime | datetime | A DateTime corresponding to the last time the device sent data to Microsoft. Indicates freshness of any fields of this record. |
 | NoPeersCount | long | The count of peers this device interacted with. |
@@ -58,7 +58,7 @@ ms.date: 08/08/2023
 | PeersCannotConnectCount | long | The count of peers this device was unable to connect to. |
 | PeersSuccessCount | long | The count of peers this device successfully connected to. |
 | PeersUnknownCount | long | The count of peers for which there is an unknown relation. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event was generated. |
 | TotalTimeForDownload | string | The total time it took to download the content. |

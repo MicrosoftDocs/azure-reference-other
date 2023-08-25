@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceFileEvents
 
- This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains file creation, modification, and other file system events.
+This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains file creation, modification, and other file system events.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActionType | string | Type of activity that triggered the event. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
@@ -65,7 +65,7 @@ ms.date: 08/08/2023
 | InitiatingProcessVersionInfoProductName | string | Product name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | Product version from the version information of the process (image file) responsible for the event. |
 | IsAzureInfoProtectionApplied | bool | Indicates whether the file is encrypted by Azure Information Protection. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to. |
 | PreviousFileName | string | Original name of the file that was renamed as a result of the action. |
@@ -82,7 +82,7 @@ ms.date: 08/08/2023
 | SHA1 | string | SHA-1 hash of the file that the recorded action was applied to. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. |
 | ShareName | string | Name of shared folder containing the file. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |

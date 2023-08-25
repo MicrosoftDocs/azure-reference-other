@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # WVDAgentHealthStatus
 
- Azure Virtual Desktop agent health status.
+Azure Virtual Desktop agent health status.
 
 ## Categories
 
@@ -29,13 +29,13 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActiveSessions | string | The number of active sessions on the VM |
 | AgentVersion | string | The version of the WVD Agent running on the Virtual Machine |
 | AllowNewSessions | string | State of the AllowNewSession settings of the host pool |
 | _BilledSize | real | The record size in bytes |
 | InactiveSessions | string | The number of disconnected, or logged off sessions on the VM |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastHeartBeat | datetime | The time recorded when there was a change in the health status |
 | LastUpgradeTimeStamp | datetime | The time recorded when there was a change in the upgrade status |
 | OperationName | string | The name of the operation |
@@ -44,7 +44,7 @@ ms.date: 08/08/2023
 | SessionHostHealthCheckResult | dynamic | The set of results on health checks |
 | SessionHostName | string | Name of the Virtual Machine |
 | SessionHostResourceId | string | The ARM path of the session host |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Status | string | The current status of the VM, whether its healthy or not |
 | StatusTimeStamp | datetime | The time recorded when there was a change in the health status |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |

@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # IntuneDevices
 
- Intune devices specialist report.
+Intune devices specialist report.
 
 ## Categories
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AADTenantId | string | The AAD Tenant ID |
 | AndroidPatchLevel | string | The Android patch level of the device |
 | BatchId | string | The unique ID for the exported report |
@@ -44,7 +44,7 @@ ms.date: 08/08/2023
 | IMEI | string | The international mobile equipment identifier of the device |
 | InGracePeriodUntil | string | The device grace period end time |
 | IntuneAccountId | string | The Intune Account ID |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | JailBroken | string | String describing whether the device is jail broken |
 | JoinType | string | The device join type |
 | LastContact | string | The date and time of last contact |
@@ -63,7 +63,7 @@ ms.date: 08/08/2023
 | Result | string | The result of the operation |
 | SerialNumber | string | The serial number of the device |
 | SkuFamily | string | The stock-keeping unit family of the device |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Stats | dynamic | Statistics about the export, including the number of records exported per export |
 | StorageFree | long | The free storage size of the device |
 | StorageTotal | long | The total storage size of the device |

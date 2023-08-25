@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # AuditLogs
 
- Audit log for Azure Active Directory. Includes system activity information about user and group management managed applications and directory activities.
+Audit log for Azure Active Directory. Includes system activity information about user and group management managed applications and directory activities.
 
 ## Categories
 
@@ -30,7 +30,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AADOperationType | string | Type of the operation. Possible values are Add Update Delete and Other. |
 | AADTenantId | string | ID of the ADD tenant |
 | ActivityDateTime | datetime | Date and time the activity was performed in UTC. |
@@ -43,22 +43,22 @@ ms.date: 08/08/2023
 | Id | string | GUID that uniquely identifies the activity. |
 | Identity | string | Identity from the token that was presented when the request was made. The identity can be a user account system account or service principal. |
 | InitiatedBy | dynamic | User or app initiated the activity. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Message type. This is currently always Informational. |
 | Location | string | Location of the datacenter. |
 | LoggedByService | string | Service that initiated the activity (For example: Self-service Password Management Core Directory B2C Invited Users Microsoft Identity Manager Privileged Identity Management. |
 | OperationName | string | Name of the operation. |
 | OperationVersion | string | REST API version that's requested by the client. |
-| Resource | string |  |
-| ResourceGroup | string |  |
-| ResourceId | string |  |
-| ResourceProvider | string |  |
+| Resource | string |   |
+| ResourceGroup | string |   |
+| ResourceId | string |   |
+| ResourceProvider | string |   |
 | Result | string | Result of the activity. Possible values are: success failure timeout unknownFutureValue. |
 | ResultDescription | string | Additional description of the result. |
 | ResultReason | string | Describes cause of failure or timeout results. |
 | ResultSignature | string | Property is not used and can be ignored. |
 | ResultType | string | Result of the operation. Possible values are Success and Failure. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TargetResources | dynamic | Indicates information on which resource was changed due to the activity. Target Resource Type can be User Device Directory App Role Group Policy or Other. |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |

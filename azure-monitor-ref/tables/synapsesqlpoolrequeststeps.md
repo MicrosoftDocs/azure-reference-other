@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # SynapseSqlPoolRequestSteps
 
- Information about request steps that compose a given SQL request or query in an Azure Synapse dedicated SQL pool.
+Information about request steps that compose a given SQL request or query in an Azure Synapse dedicated SQL pool.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
 | Command | string | The SQL command of the execution requests. |
@@ -37,7 +37,7 @@ ms.date: 08/08/2023
 | EndCompileTime | datetime | The end compile time (UTC) of the execution requests. |
 | EndTime | datetime | The end time (UTC) for the execution requests. |
 | ErrorId | string | The errorId of the execution requests. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LocationType | string | The location type of the execution requests. |
 | LogicalServerName | string | The logical server name of the SQL DW. |
 | OperationName | string | The operation associated with log record. |
@@ -46,7 +46,7 @@ ms.date: 08/08/2023
 | ResourceGroup | string | The azure resourceGroup of the SQL DW. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RowCount | int | The row count of the execution requests. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartTime | datetime | The startTime (UTC) of the execution requests. |
 | Status | string | The status of the execution requests. |
 | StepIndex | int | The step index of the execution requests. |

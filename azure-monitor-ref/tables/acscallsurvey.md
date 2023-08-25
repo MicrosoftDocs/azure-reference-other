@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # ACSCallSurvey
 
- Call survey provides information about the call surveys submitted by the participants.
+Call survey provides information about the call surveys submitted by the participants.
 
 ## Categories
 
@@ -29,7 +29,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AudioIssues | string | Comma separated audio issues reported by the participant. |
 | AudioRatingScore | int | Audio experience rated by the participant. |
 | AudioRatingScoreLowerBound | int | Minimum value of the AudioRatingScore scale. |
@@ -38,7 +38,7 @@ ms.date: 08/08/2023
 | _BilledSize | real | The record size in bytes |
 | CallId | string | The identifier of the call used to correlate. Can be used to identify correlated events between multiple tables. |
 | CorrelationId | string | The ID for correlated events. This field contains the participant ID that allows call survey to be correlated with other calling logs. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
 | OverallCallIssues | string | Comma separated overall issues reported by the participant. |
@@ -53,7 +53,7 @@ ms.date: 08/08/2023
 | ScreenshareRatingScoreLowerBound | int | Minimum value of the ScreenshareRatingScore scale. |
 | ScreenshareRatingScoreThreshold | int | The ScreenshareRatingScore greater than this value indicates better quality. |
 | ScreenshareRatingScoreUpperBound | int | Maximum value of the ScreenshareRatingScore scale. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SurveyId | string | The ID of the survey uniquely identifies the call survey. |
 | TenantId | string | The Log Analytics workspace ID |

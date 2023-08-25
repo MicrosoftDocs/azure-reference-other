@@ -6,19 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # DeviceInfo
 
- This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Machine information, including OS information.
+This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Machine information, including OS information.
 
 ## Categories
 
 - Security
 ## Solutions
 
-- Microsoft Sentinel
+- SecurityInsights
 
 
 
@@ -26,7 +26,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | AadDeviceId | string | Unique identifier for the device in Azure Active Directory. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AssetValue | string | Indicates the value of a device as assigned by the user. |
@@ -41,7 +41,7 @@ ms.date: 08/08/2023
 | ExclusionReason | string | Indicates the reason for device exclusion. |
 | ExposureLevel | string | Indicates the exposure level of a device. |
 | IsAzureADJoined | bool | Boolean indicator of whether machine is joined to the Azure Active Directory. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsExcluded | bool | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences. |
 | IsInternetFacing | bool | Indicates whether the device is internet-facing. |
 | JoinType | string | The device's Azure Active Directory join type. |
@@ -61,7 +61,7 @@ ms.date: 08/08/2023
 | RegistryDeviceTag | string | Device tag added through the registry. |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.. |
 | SensorHealthState | string | Indicates health of the device’s EDR sensor, if onboarded to Microsoft Defender For Endpoint. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |

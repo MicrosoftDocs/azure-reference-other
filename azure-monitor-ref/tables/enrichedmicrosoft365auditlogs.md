@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/08/2023
+ms.date: 08/09/2023
 ---
 
 # EnrichedMicrosoft365AuditLogs
 
- This table is part of Identity and Network Access, which contains Enriched Microsoft 365 Audit logs. These logs can be leveraged for policy, risk, and traffic management, as well as to monitor users experience.
+This table is part of Identity and Network Access, which contains Enriched Microsoft 365 Audit logs. These logs can be leveraged for policy, risk, and traffic management, as well as to monitor users experience.
 
 ## Categories
 
@@ -28,7 +28,7 @@ ms.date: 08/08/2023
 ## Columns
 
 | Column | Type | Description |
-| --- | --- | --- |
+|---|---|---|
 | ActorUserType | string | The type of user that performed the operation. Possible types includes: Admin, System, Application, Service Principal and Other. |
 | AdditionalProperties | dynamic | Additional activity fields |
 | _BilledSize | real | The record size in bytes |
@@ -37,14 +37,14 @@ ms.date: 08/08/2023
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
 | EventId | string | Unique identifier of an audit record. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | ObjectId | string | For SharePoint and OneDrive for business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet. |
 | OperationName | string | The name of the user or admin activity that performed the activity. |
 | OrganizationId | string | The GUID for your organization's Office 365 tenant. This value will always be the same for your organization, regardless of the Office 365 service in which it occurs. |
 | RecordType | int | The type of operation indicated by the record. See the AuditLogRecordType table for details on the types of audit log records. |
 | ResultStatus | string | Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceeded, or Failed. |
 | SourceIp | string | The IP address from which the connection or session originated. |
-| SourceSystem | string | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time in UTC when the user performed the activity. |
 | Type | string | The name of the table |
