@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 08/09/2023
+ms.date: 08/28/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -43,6 +43,7 @@ Microsoft.Web/sites
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [FunctionAppLogs](functionapplogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
+- [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 
 
 ### Application Gateways
@@ -661,6 +662,7 @@ Microsoft.DevCenter/devcenters
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
+- [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
 
 
 ### Device Provisioning Services
