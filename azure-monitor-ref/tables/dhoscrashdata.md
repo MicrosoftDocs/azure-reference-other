@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/09/2023
+ms.date: 08/28/2023
 ---
 
 # DHOSCrashData
@@ -20,21 +20,9 @@ ms.date: 08/09/2023
 
 - DeviceHealthProd
 
-
+            
 
 
 ## Columns
-
-| Column | Type | Description |
-|---|---|---|
-| _BilledSize | real | The record size in bytes |
-| Computer | string |   |
-| ComputerID | string |   |
-| DriverName | string |   |
-| DriverVersion | string |   |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
-| KernelModeCrashBugCheckCode | string |   |
-| KernelModeCrashCount | int |   |
-| KernelModeCrashFailureId | string |   |
-| TimeGenerated | datetime |   |
-| Type | string | The name of the table |
+  
+[!INCLUDE [dhoscrashdata](../includes/dhoscrashdata-include.md)]
