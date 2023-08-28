@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/09/2023
+ms.date: 08/28/2023
 ---
 
 # AppServiceIPSecAuditLogs
@@ -16,6 +16,9 @@ Logs generated through your application and pushed to Azure Monitoring.
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- App Services
 
 
 
