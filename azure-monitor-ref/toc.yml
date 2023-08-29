@@ -599,6 +599,8 @@ items:
         href: tables/defenderiotrawevent.md
       - name: DevCenterDiagnosticLogs
         href: tables/devcenterdiagnosticlogs.md
+      - name: DevCenterResourceOperationLogs
+        href: tables/devcenterresourceoperationlogs.md
       - name: DeviceAppCrash
         href: tables/deviceappcrash.md
       - name: DeviceAppLaunch

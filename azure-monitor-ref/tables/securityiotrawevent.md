@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/09/2023
+ms.date: 08/28/2023
 ---
 
 # SecurityIoTRawEvent
@@ -20,25 +20,9 @@ ms.date: 08/09/2023
 
 - AzureSecurityOfThings
 
-
+            
 
 
 ## Columns
-
-| Column | Type | Description |
-|---|---|---|
-| AgentVersion | string |   |
-| AssociatedResourceId | string |   |
-| AzureSubscriptionId | string |   |
-| _BilledSize | real | The record size in bytes |
-| DeviceId | string |   |
-| EventDetails | string |   |
-| IoTRawEventId | string |   |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
-| IsEmpty | bool |   |
-| RawEventCategory | string |   |
-| RawEventName | string |   |
-| RawEventType | string |   |
-| TimeGenerated | datetime |   |
-| TimeStamp | datetime |   |
-| Type | string | The name of the table |
+  
+[!INCLUDE [securityiotrawevent](../includes/securityiotrawevent-include.md)]
