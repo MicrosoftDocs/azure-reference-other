@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/09/2023
+ms.date: 08/28/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -319,6 +319,7 @@ ms.date: 08/09/2023
 - [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
+- [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
 - [FailedIngestion](failedingestion.md)
 - [FunctionAppLogs](functionapplogs.md)
 - [HDInsightAmbariClusterAlerts](hdinsightambariclusteralerts.md)
