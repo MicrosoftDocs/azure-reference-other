@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 09/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ADXCommand
@@ -10,11 +10,11 @@ ms.custom: ADXCommand
 
 | Column | Type | Description |
 |---|---|---|
-| ApplicationName | string | application name invoked the command |
+| ApplicationName | string | The name of the application that invoked the command |
 | _BilledSize | real | The record size in bytes |
 | Category | string | The category of this log for this events it will be Command |
 | CommandType | string | Command type |
-| CorrelationId | string | The client request id |
+| CorrelationId | string | The client request ID |
 | DatabaseName | string | The name of the database the command ran on |
 | Duration | string | Command duration |
 | FailureReason | string | The failure reason |
@@ -24,7 +24,7 @@ ms.custom: ADXCommand
 | Principal | string | The principal that invoked the query |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResourceUtilization | dynamic | Command resource utilization |
-| RootActivityId | string | The root activity id |
+| RootActivityId | string | The root activity ID |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartedOn | datetime | Time (UTC) at which this command started |
 | State | string | The State the command ended with |
