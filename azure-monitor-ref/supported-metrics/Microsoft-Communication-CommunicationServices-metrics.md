@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported metrics for Microsoft.Communication/CommunicationServices  
 <!-- Data source : naam-->
@@ -28,7 +28,7 @@ The following table lists the metrics available for the Microsoft.Communication/
 |Metric|Name|Unit|Aggregation|Dimensions|DS Export|
 |---|---|---|---|---|---|
 |Authentication API Requests<p><p>Count of all requests against the Communication Services Authentication endpoint. |`APIRequestAuthentication` |Count |Count |Operation, StatusCode, StatusCodeClass |No|
-|Call Automation API Requests<p><p>Count of all requests against the Communication Call Automation endpoint. |`APIRequestCallAutomation` |Count |Count |Operation, StatusCode, StatusCodeClass |Yes|
+|Call Automation API Requests<p><p>Count of all requests against the Communication Call Automation endpoint. |`APIRequestCallAutomation` |Count |Count |Operation, StatusCode, StatusCodeClass, ApiVersion |Yes|
 |Call Recording API Requests<p><p>Count of all requests against the Communication Services Call Recording endpoint. |`APIRequestCallRecording` |Count |Count |Operation, StatusCode, StatusCodeClass |Yes|
 |Chat API Requests<p><p>Count of all requests against the Communication Services Chat endpoint. |`APIRequestChat` |Count |Count |Operation, StatusCode, StatusCodeClass |Yes|
 |Network Traversal API Requests<p><p>Count of all requests against the Communication Services Network Traversal endpoint. |`APIRequestNetworkTraversal` |Count |Count |Operation, StatusCode, StatusCodeClass |No|
@@ -40,4 +40,4 @@ The following table lists the metrics available for the Microsoft.Communication/
 |Email Service User Engagement<p><p>Email Communication Services user engagement metrics. |`UserEngagement` |Count |Count |EngagementType |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->

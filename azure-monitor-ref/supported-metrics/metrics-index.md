@@ -6,7 +6,7 @@ services: azure-monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.custom: ignite-2022
-ms.date: 08/01/2023
+ms.date: 09/04/2023
 ms.author: edbaynash
 ms.reviewer: priyamishra
 ---
@@ -16,7 +16,7 @@ ms.reviewer: priyamishra
 > [!NOTE]
 > This list is largely auto-generated. Any modification made to this list via GitHub might be written over without warning. Contact the author of this article for details on how to make permanent updates.
 
-Date list was last updated: 08/01/2023.
+Date list was last updated: 09/04/2023.
 
 Azure Monitor provides several ways to interact with metrics, including charting them in the Azure portal, accessing them through the REST API, or querying them by using PowerShell or the Azure CLI (Command Line Interface).  
 
@@ -108,6 +108,11 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 ### microsoft.azuresphere<a name="microsoftazurespherecatalogs"></a>
   
   * [microsoft.azuresphere/catalogs](microsoft-azuresphere-catalogs-metrics.md)
+
+  
+### Microsoft.azurestackhci<a name="microsoftazurestackhciclusters"></a>
+  
+  * [Microsoft.azurestackhci/clusters](Microsoft-azurestackhci-clusters-metrics.md)
 
   
 ### Microsoft.Batch<a name="microsoftbatchbatchaccounts"></a>
@@ -418,9 +423,10 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 * [Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments](Microsoft-MachineLearningServices-workspaces-onlineEndpoints-deployments-metrics.md)
 
   
-### Microsoft.ManagedNetworkFabric<a name="microsoftmanagednetworkfabricnetworkdevices"></a>
+### Microsoft.ManagedNetworkFabric<a name="microsoftmanagednetworkfabricinternetgateways"></a><a name="microsoftmanagednetworkfabricnetworkdevices"></a>
   
-  * [Microsoft.ManagedNetworkFabric/networkDevices](Microsoft-ManagedNetworkFabric-networkDevices-metrics.md)
+  * [Microsoft.ManagedNetworkFabric/internetGateways](Microsoft-ManagedNetworkFabric-internetGateways-metrics.md)
+* [Microsoft.ManagedNetworkFabric/networkDevices](Microsoft-ManagedNetworkFabric-networkDevices-metrics.md)
 
   
 ### Microsoft.Maps<a name="microsoftmapsaccounts"></a>
@@ -440,6 +446,12 @@ This latest update adds a new column and reorders the metrics to be alphabetical
   
   * [Microsoft.MixedReality/remoteRenderingAccounts](Microsoft-MixedReality-remoteRenderingAccounts-metrics.md)
 * [Microsoft.MixedReality/spatialAnchorsAccounts](Microsoft-MixedReality-spatialAnchorsAccounts-metrics.md)
+
+  
+### Microsoft.MobileNetwork<a name="microsoftmobilenetworkpacketcorecontrolplanes"></a><a name="microsoftmobilenetworkpacketcorecontrolplanespacketcoredataplanes"></a>
+  
+  * [Microsoft.MobileNetwork/packetcorecontrolplanes](Microsoft-MobileNetwork-packetcorecontrolplanes-metrics.md)
+* [Microsoft.MobileNetwork/packetcorecontrolplanes/packetcoredataplanes](Microsoft-MobileNetwork-packetcorecontrolplanes-packetcoredataplanes-metrics.md)
 
   
 ### Microsoft.Monitor<a name="microsoftmonitoraccounts"></a>
@@ -632,6 +644,11 @@ This latest update adds a new column and reorders the metrics to be alphabetical
   * [Microsoft.StorageSync/storageSyncServices](Microsoft-StorageSync-storageSyncServices-metrics.md)
 
   
+### Microsoft.StorageTasks<a name="microsoftstoragetasksstoragetasks"></a>
+  
+  * [Microsoft.StorageTasks/storageTasks](Microsoft-StorageTasks-storageTasks-metrics.md)
+
+  
 ### Microsoft.StreamAnalytics<a name="microsoftstreamanalyticsstreamingjobs"></a>
   
   * [Microsoft.StreamAnalytics/streamingjobs](Microsoft-StreamAnalytics-streamingjobs-metrics.md)
@@ -657,7 +674,7 @@ This latest update adds a new column and reorders the metrics to be alphabetical
   * [Microsoft.VoiceServices/CommunicationsGateways](Microsoft-VoiceServices-CommunicationsGateways-metrics.md)
 
   
-### Microsoft.Web<a name="microsoftwebcontainerapps"></a><a name="microsoftwebhostingenvironments"></a><a name="microsoftwebhostingenvironmentsmultirolepools"></a><a name="microsoftwebhostingenvironmentsworkerpools"></a><a name="microsoftwebserverfarms"></a><a name="microsoftwebsites"></a><a name="microsoftwebsitesslots"></a>
+### Microsoft.Web<a name="microsoftwebcontainerapps"></a><a name="microsoftwebhostingenvironments"></a><a name="microsoftwebhostingenvironmentsmultirolepools"></a><a name="microsoftwebhostingenvironmentsworkerpools"></a><a name="microsoftwebserverfarms"></a><a name="microsoftwebsites"></a><a name="microsoftwebsitesslots"></a><a name="microsoftwebstaticsites"></a>
   
   * [Microsoft.Web/containerapps](Microsoft-Web-containerapps-metrics.md)
 * [Microsoft.Web/hostingEnvironments](Microsoft-Web-hostingEnvironments-metrics.md)
@@ -666,6 +683,7 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 * [Microsoft.Web/serverfarms](Microsoft-Web-serverfarms-metrics.md)
 * [Microsoft.Web/sites](Microsoft-Web-sites-metrics.md)
 * [Microsoft.Web/sites/slots](Microsoft-Web-sites-slots-metrics.md)
+* [Microsoft.Web/staticsites](Microsoft-Web-staticsites-metrics.md)
 
   
 ### NGINX.NGINXPLUS<a name="nginxnginxplusnginxdeployments"></a>
