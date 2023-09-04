@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported metrics for Microsoft.Sql/servers/databases  
 <!-- Data source : naam-->
@@ -37,9 +37,9 @@ The following table lists the metrics available for the Microsoft.Sql/servers/da
 |Blocked by Firewall<p><p>Blocked by Firewall |`blocked_by_firewall` |Count |Total |No Dimensions |Yes|
 |Cache hit percentage<p><p>Cache hit percentage. Applies only to data warehouses. |`cache_hit_percent` |Percent |Maximum |No Dimensions |Yes|
 |Cache used percentage<p><p>Cache used percentage. Applies only to data warehouses. |`cache_used_percent` |Percent |Maximum |No Dimensions |Yes|
-|Failed Connections : System Errors<p><p>Failed Connections |`connection_failed` |Count |Total |Error |Yes|
-|Failed Connections : User Errors<p><p>Failed Connections : User Errors |`connection_failed_user_error` |Count |Total |Error |Yes|
-|Successful Connections<p><p>Successful Connections |`connection_successful` |Count |Total |SslProtocol |Yes|
+|Failed Connections : System Errors<p><p>Failed Connections |`connection_failed` |Count |Total |Error, ValidatedDriverNameAndVersion |Yes|
+|Failed Connections : User Errors<p><p>Failed Connections : User Errors |`connection_failed_user_error` |Count |Total |Error, ValidatedDriverNameAndVersion |Yes|
+|Successful Connections<p><p>Successful Connections |`connection_successful` |Count |Total |SslProtocol, ValidatedDriverNameAndVersion |Yes|
 |CPU limit<p><p>CPU limit. Applies to vCore-based databases. |`cpu_limit` |Count |Average |No Dimensions |Yes|
 |CPU percentage<p><p>CPU percentage |`cpu_percent` |Percent |Average |No Dimensions |Yes|
 |CPU used<p><p>CPU used. Applies to vCore-based databases. |`cpu_used` |Count |Average |No Dimensions |Yes|
@@ -85,4 +85,4 @@ The following table lists the metrics available for the Microsoft.Sql/servers/da
 |In-Memory OLTP storage percent<p><p>In-Memory OLTP storage percent. Not applicable to data warehouses. |`xtp_storage_percent` |Percent |Average |No Dimensions |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->
