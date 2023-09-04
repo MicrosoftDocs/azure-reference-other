@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 09/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ADXJournal
@@ -24,7 +24,7 @@ ms.custom: ADXJournal
 | OriginalEntityVersion | string | The version of the entity (entity properties) before the change |
 | Principal | string | The principal (user/app) that executed the control command |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| RootActivityId | string | The root activity ID of the operation which caused metadata change (for example: 2217ed0d-888f-4c3d-8776-973471be556e) |
+| RootActivityId | string | The root activity ID of the operation that caused the metadata change (for example: 1234ab0c-567d-8c9e-0123-456789fg012h) |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
