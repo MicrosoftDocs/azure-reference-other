@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 09/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ADXTableUsageStatistics
@@ -10,9 +10,9 @@ ms.custom: ADXTableUsageStatistics
 
 | Column | Type | Description |
 |---|---|---|
-| ApplicationName | string | application name invoked the command |
+| ApplicationName | string | The name of the application that invoked the command |
 | _BilledSize | real | The record size in bytes |
-| CorrelationId | string | The client request id |
+| CorrelationId | string | The client request ID |
 | DatabaseName | string | The name of the database |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | MaxCreatedOn | datetime | Lastest extent time of the table |
@@ -20,7 +20,7 @@ ms.custom: ADXTableUsageStatistics
 | OperationName | string | The name of this operation |
 | Principal | string | The principal that invoked the query |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| RootActivityId | string | The root activity id |
+| RootActivityId | string | The root activity ID |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartedOn | datetime | Time (UTC) at which table usage statistics operation started |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |

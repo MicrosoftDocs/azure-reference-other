@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported metrics for Microsoft.Network/azureFirewalls  
 <!-- Data source : naam-->
@@ -30,10 +30,10 @@ The following table lists the metrics available for the Microsoft.Network/azureF
 |Application rules hit count<p><p>Number of times Application rules were hit |`ApplicationRuleHit` |Count |Total |Status, Reason, Protocol |Yes|
 |Data processed<p><p>Total amount of data processed by this firewall |`DataProcessed` |Bytes |Total |No Dimensions |Yes|
 |Firewall health state<p><p>Indicates the overall health of this firewall |`FirewallHealth` |Percent |Average |Status, Reason |Yes|
-|Latency Probe (Preview)<p><p>Estimate of the average latency of the Firewall as measured by latency probe |`FirewallLatencyPng` |Milliseconds |Average |No Dimensions |Yes|
+|Latency Probe<p><p>Estimate of the average latency of the Firewall as measured by latency probe |`FirewallLatencyPng` |Milliseconds |Average |No Dimensions |Yes|
 |Network rules hit count<p><p>Number of times Network rules were hit |`NetworkRuleHit` |Count |Total |Status, Reason, Protocol |Yes|
 |SNAT port utilization<p><p>Percentage of outbound SNAT ports currently in use |`SNATPortUtilization` |Percent |Average |Protocol |Yes|
 |Throughput<p><p>Throughput processed by this firewall |`Throughput` |BitsPerSecond |Average |No Dimensions |No|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->

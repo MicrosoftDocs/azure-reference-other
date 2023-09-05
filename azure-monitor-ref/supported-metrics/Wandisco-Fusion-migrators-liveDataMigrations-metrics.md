@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported metrics for Wandisco.Fusion/migrators/liveDataMigrations  
 <!-- Data source : naam-->
@@ -35,7 +35,9 @@ The following table lists the metrics available for the Wandisco.Fusion/migrator
 |Live Data Migrated in Bytes<p><p>Provides a running total of LiveData which has been changed due to Client activity, since the migration started. |`LiveDataMigratedInBytes` |Bytes |Total |No Dimensions |Yes|
 |Number of Excluded Paths<p><p>Provides a running count of the paths which have been excluded from the migration due to Exclusion Rules. |`NumberOfExcludedPaths` |Count |Total |No Dimensions |Yes|
 |Number of Failed Paths<p><p>A count of which paths have failed to migrate. |`NumberOfFailedPaths` |Count |Total |No Dimensions |Yes|
+|Recurring Scan Duration In Seconds<p><p>The metric shows the duration in seconds of each scan. |`RecurringScanDurationInSeconds` |Count |Total |No Dimensions |Yes|
 |Total Bytes Transferred<p><p>This metric covers how many bytes have been transferred (does not reflect how many have successfully migrated, only how much has been transferred). |`TotalBytesTransferred` |Bytes |Total |No Dimensions |Yes|
+|Total Recurring Scans<p><p>This metric shows the count of how many scans have been completed on a recurring migration. |`TotalRecurringScans` |Count |Total |No Dimensions |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->
