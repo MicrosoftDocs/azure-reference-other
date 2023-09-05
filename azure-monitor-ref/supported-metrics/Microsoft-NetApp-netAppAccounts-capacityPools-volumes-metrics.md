@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/05/2023
 ---
 # Supported metrics for Microsoft.NetApp/netAppAccounts/capacityPools/volumes  
 <!-- Data source : arm-->
@@ -39,6 +39,7 @@ The following table lists the metrics available for the Microsoft.NetApp/netAppA
 |Other throughput<p><p>Other throughput (that is not read or write) in bytes per second |`OtherThroughput` |BytesPerSecond |Average |No Dimensions |Yes|
 |Read iops<p><p>Read In/out operations per second |`ReadIops` |CountPerSecond |Average |No Dimensions |Yes|
 |Read throughput<p><p>Read throughput in bytes per second |`ReadThroughput` |BytesPerSecond |Average |No Dimensions |Yes|
+|Throughput limit reached<p><p>Has the throughput limit been reached, 1 if it has and 0 if not. |`ThroughputLimitReached` |Count |Average |No Dimensions |Yes|
 |Total throughput<p><p>Sum of all throughput in bytes per second |`TotalThroughput` |BytesPerSecond |Average |No Dimensions |Yes|
 |Volume allocated size<p><p>The provisioned size of a volume |`VolumeAllocatedSize` |Bytes |Average |No Dimensions |Yes|
 |Percentage Volume Consumed Size<p><p>The percentage of the volume consumed including snapshots. |`VolumeConsumedSizePercentage` |Percent |Average |No Dimensions |Yes|
@@ -58,4 +59,4 @@ The following table lists the metrics available for the Microsoft.NetApp/netAppA
 |Volume replication total transfer<p><p>Cumulative bytes transferred for the relationship. |`XregionReplicationTotalTransferBytes` |Bytes |Average |No Dimensions |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Tue Sep 05 2023 22:42:11 GMT+0800 (China Standard Time)-->
