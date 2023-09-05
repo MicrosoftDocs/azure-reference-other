@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 09/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ADXQuery
@@ -10,7 +10,7 @@ ms.custom: ADXQuery
 
 | Column | Type | Description |
 |---|---|---|
-| ApplicationName | string | application name invoked the query |
+| ApplicationName | string | The name of the application that invoked the query |
 | _BilledSize | real | The record size in bytes |
 | CacheDiskHits | long | Disk cache hits |
 | CacheDiskMisses | long | Disk cache misses |
@@ -23,8 +23,8 @@ ms.custom: ADXQuery
 | CacheShardsHotMisses | long | Shards hot cache misses |
 | Category | string | The category of this log for this events it will be Query |
 | ComponentFault | string | The entity that caused the query to fail. For example, if the query result is too large, the ComponentFault will be 'Client'. If an internal error occured, it will be 'Server' |
-| CorrelationId | string | The client request id |
-| DatabaseName | string | The name of the database the command ran on |
+| CorrelationId | string | The client request ID |
+| DatabaseName | string | The name of the database that the command ran on |
 | Duration | string | Command duration |
 | ExtentsMaxDataScannedTime | datetime | Maximum data scan time |
 | ExtentsMinDataScannedTime | datetime | Minimum data scan time |
@@ -35,12 +35,12 @@ ms.custom: ADXQuery
 | OperationName | string | The name of this operation |
 | Principal | string | The principal that invoked the query |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| RootActivityId | string | The root activity id |
+| RootActivityId | string | The root activity ID |
 | ScannedExtentsCount | long | Scanned extents count |
 | ScannedRowsCount | long | Scanned rows count |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StartedOn | datetime | Time (UTC) at which this command started |
-| State | string | The State the command ended with |
+| State | string | The state the command ended with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TableCount | int | Table count |
 | TablesStatistics | dynamic | Tables statistics |

@@ -82,8 +82,6 @@ items:
     href: ../supported-logs/Microsoft-ContainerService-managedClusters-logs.md
   - name: Microsoft.CustomProviders/resourceproviders
     href: ../supported-logs/Microsoft-CustomProviders-resourceproviders-logs.md
-  - name: Microsoft.D365CustomerInsights/instances
-    href: ../supported-logs/Microsoft-D365CustomerInsights-instances-logs.md
   - name: Microsoft.Dashboard/grafana
     href: ../supported-logs/Microsoft-Dashboard-grafana-logs.md
   - name: Microsoft.Databricks/workspaces
@@ -320,5 +318,7 @@ items:
     href: ../supported-logs/Microsoft-Web-sites-logs.md
   - name: Microsoft.Web/sites/slots
     href: ../supported-logs/Microsoft-Web-sites-slots-logs.md
+  - name: Microsoft.Web/staticsites
+    href: ../supported-logs/Microsoft-Web-staticsites-logs.md
   - name: microsoft.workloads/sapvirtualinstances
     href: ../supported-logs/microsoft-workloads-sapvirtualinstances-logs.md

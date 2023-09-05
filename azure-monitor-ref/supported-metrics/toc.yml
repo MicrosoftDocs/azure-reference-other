@@ -24,6 +24,8 @@ items:
     href: ../supported-metrics/microsoft-avs-privateClouds-metrics.md
   - name: microsoft.azuresphere/catalogs
     href: ../supported-metrics/microsoft-azuresphere-catalogs-metrics.md
+  - name: Microsoft.azurestackhci/clusters
+    href: ../supported-metrics/Microsoft-azurestackhci-clusters-metrics.md
   - name: Microsoft.Batch/batchaccounts
     href: ../supported-metrics/Microsoft-Batch-batchaccounts-metrics.md
   - name: microsoft.bing/accounts
@@ -216,6 +218,8 @@ items:
     href: ../supported-metrics/Microsoft-MachineLearningServices-workspaces-onlineEndpoints-metrics.md
   - name: Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments
     href: ../supported-metrics/Microsoft-MachineLearningServices-workspaces-onlineEndpoints-deployments-metrics.md
+  - name: Microsoft.ManagedNetworkFabric/internetGateways
+    href: ../supported-metrics/Microsoft-ManagedNetworkFabric-internetGateways-metrics.md
   - name: Microsoft.ManagedNetworkFabric/networkDevices
     href: ../supported-metrics/Microsoft-ManagedNetworkFabric-networkDevices-metrics.md
   - name: Microsoft.Maps/accounts
@@ -232,6 +236,10 @@ items:
     href: ../supported-metrics/Microsoft-MixedReality-remoteRenderingAccounts-metrics.md
   - name: Microsoft.MixedReality/spatialAnchorsAccounts
     href: ../supported-metrics/Microsoft-MixedReality-spatialAnchorsAccounts-metrics.md
+  - name: Microsoft.MobileNetwork/packetcorecontrolplanes
+    href: ../supported-metrics/Microsoft-MobileNetwork-packetcorecontrolplanes-metrics.md
+  - name: Microsoft.MobileNetwork/packetcorecontrolplanes/packetcoredataplanes
+    href: ../supported-metrics/Microsoft-MobileNetwork-packetcorecontrolplanes-packetcoredataplanes-metrics.md
   - name: Microsoft.Monitor/accounts
     href: ../supported-metrics/Microsoft-Monitor-accounts-metrics.md
   - name: Microsoft.NetApp/netAppAccounts/capacityPools
@@ -380,6 +388,8 @@ items:
     href: ../supported-metrics/Microsoft-StorageMover-storageMovers-metrics.md
   - name: Microsoft.StorageSync/storageSyncServices
     href: ../supported-metrics/Microsoft-StorageSync-storageSyncServices-metrics.md
+  - name: Microsoft.StorageTasks/storageTasks
+    href: ../supported-metrics/Microsoft-StorageTasks-storageTasks-metrics.md
   - name: Microsoft.StreamAnalytics/streamingjobs
     href: ../supported-metrics/Microsoft-StreamAnalytics-streamingjobs-metrics.md
   - name: Microsoft.Synapse/workspaces
@@ -412,6 +422,8 @@ items:
     href: ../supported-metrics/Microsoft-Web-sites-metrics.md
   - name: Microsoft.Web/sites/slots
     href: ../supported-metrics/Microsoft-Web-sites-slots-metrics.md
+  - name: Microsoft.Web/staticsites
+    href: ../supported-metrics/Microsoft-Web-staticsites-metrics.md
   - name: NGINX.NGINXPLUS/nginxDeployments
     href: ../supported-metrics/NGINX-NGINXPLUS-nginxDeployments-metrics.md
   - name: Wandisco.Fusion/migrators

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported metrics for Microsoft.Monitor/accounts  
 <!-- Data source : naam-->
@@ -33,7 +33,6 @@ The following table lists the metrics available for the Microsoft.Monitor/accoun
 |Events Per Minute Ingested<p><p>The number of events per minute recently received |`EventsPerMinuteIngested` |Count |Maximum |StampColor |No|
 |Events Per Minute Ingested Limit<p><p>The maximum number of events per minute which can be received before events become throttled |`EventsPerMinuteIngestedLimit` |Count |Maximum |StampColor |No|
 |Events Per Minute Ingested % Utilization<p><p>The percentage of the current metric ingestion rate limit being utilized |`EventsPerMinuteIngestedPercentUtilization` |Percent |Average |StampColor |No|
-|Simple Data Samples Stored<p><p>The total number of samples stored for simple sampling types (like sum, count). For Prometheus this is equivalent to the number of samples scraped and ingested. |`SimpleSamplesStored` |Count |Maximum |StampColor |No|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->

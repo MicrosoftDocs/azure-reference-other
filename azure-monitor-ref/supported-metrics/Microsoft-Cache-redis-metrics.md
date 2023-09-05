@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported metrics for Microsoft.Cache/redis  
 <!-- Data source : naam-->
@@ -103,7 +103,7 @@ The following table lists the metrics available for the Microsoft.Cache/redis re
 |Connected Clients (Shard 7)<p><p>The number of client connections to the cache. For more details, see https://aka.ms/redis/metrics. |`connectedclients7` |Count |Maximum |No Dimensions |Yes|
 |Connected Clients (Shard 8)<p><p>The number of client connections to the cache. For more details, see https://aka.ms/redis/metrics. |`connectedclients8` |Count |Maximum |No Dimensions |Yes|
 |Connected Clients (Shard 9)<p><p>The number of client connections to the cache. For more details, see https://aka.ms/redis/metrics. |`connectedclients9` |Count |Maximum |No Dimensions |Yes|
-|Connected Clients using AAD Token (Instance Based)<p><p>The number of client connections to the cache using AAD Token. For more details, see https://aka.ms/redis/metrics. |`ConnectedClientsUsingAADToken` |Count |Maximum |ShardId, Port, Primary |Yes|
+|Connected Clients using AAD Token (Instance Based) (Preview)<p><p>The number of client connections to the cache using AAD Token. For more details, see https://aka.ms/redis/metrics. |`ConnectedClientsUsingAADToken` |Count |Maximum |ShardId, Port, Primary |Yes|
 |Errors<p><p>The number errors that occured on the cache. For more details, see https://aka.ms/redis/metrics. |`errors` |Count |Maximum |ShardId, ErrorType |Yes|
 |Evicted Keys<p><p>The number of items evicted from the cache. For more details, see https://aka.ms/redis/metrics. |`evictedkeys` |Count |Total |ShardId |Yes|
 |Evicted Keys (Shard 0)<p><p>The number of items evicted from the cache. For more details, see https://aka.ms/redis/metrics. |`evictedkeys0` |Count |Total |No Dimensions |Yes|
@@ -235,4 +235,4 @@ The following table lists the metrics available for the Microsoft.Cache/redis re
 |Used Memory RSS (Shard 9)<p><p>The amount of cache memory used in MB, including fragmentation and metadata. For more details, see https://aka.ms/redis/metrics. |`usedmemoryRss9` |Bytes |Maximum |No Dimensions |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported metrics for Microsoft.DBforMySQL/flexibleServers  
 <!-- Data source : naam-->
@@ -31,6 +31,7 @@ The following table lists the metrics available for the Microsoft.DBforMySQL/fle
 |Active Connections<p><p>Active Connections |`active_connections` |Count |Maximum |No Dimensions |Yes|
 |Available Memory Bytes<p><p>Amount of physical memory, in bytes. |`available_memory_bytes` |Bytes |Average |No Dimensions |Yes|
 |Backup Storage Used<p><p>Backup Storage Used |`backup_storage_used` |Bytes |Maximum |No Dimensions |Yes|
+|Binlog Storage Used<p><p>Storage used by Binlog files. |`binlog_storage_used` |Bytes |Maximum |No Dimensions |Yes|
 |Com Alter Table<p><p>The number of times ALTER TABLE statement has been executed. |`Com_alter_table` |Count |Total |No Dimensions |Yes|
 |Com Create DB<p><p>The number of times CREATE DB statement has been executed. |`Com_create_db` |Count |Total |No Dimensions |Yes|
 |Com Create Table<p><p>The number of times CREATE TABLE statement has been executed. |`Com_create_table` |Count |Total |No Dimensions |Yes|
@@ -43,20 +44,25 @@ The following table lists the metrics available for the Microsoft.DBforMySQL/fle
 |CPU Credits Consumed<p><p>CPU Credits Consumed |`cpu_credits_consumed` |Count |Maximum |No Dimensions |Yes|
 |CPU Credits Remaining<p><p>CPU Credits Remaining |`cpu_credits_remaining` |Count |Maximum |No Dimensions |Yes|
 |Host CPU Percent<p><p>Host CPU Percent |`cpu_percent` |Percent |Maximum |No Dimensions |Yes|
+|Data Storage Used<p><p>Storage used by data files. |`data_storage_used` |Bytes |Maximum |No Dimensions |Yes|
 |HA IO Status<p><p>Status for replication IO thread running  |`HA_IO_status` |Count |Maximum |No Dimensions |Yes|
 |HA Replication Lag<p><p>HA Replication lag in seconds |`HA_replication_lag` |Seconds |Maximum |No Dimensions |Yes|
 |HA SQL Status<p><p>Status for replication SQL thread running  |`HA_SQL_status` |Count |Maximum |No Dimensions |Yes|
+|Ibdata1 Storage Used<p><p>Storage used by ibdata1 files. |`ibdata1_storage_used` |Bytes |Maximum |No Dimensions |Yes|
 |InnoDB Buffer Pool Pages Data<p><p>The number of pages in the InnoDB buffer pool containing data. |`Innodb_buffer_pool_pages_data` |Count |Total |No Dimensions |Yes|
 |InnoDB Buffer Pool Pages Dirty<p><p>The current number of dirty pages in the InnoDB buffer pool. |`Innodb_buffer_pool_pages_dirty` |Count |Total |No Dimensions |Yes|
+|Innodb Buffer Pool Pages Flushed<p><p>The number of requests to flush pages from the InnoDB buffer pool. |`Innodb_buffer_pool_pages_flushed` |Count |Average |No Dimensions |Yes|
 |InnoDB Buffer Pool Pages Free<p><p>The number of free pages in the InnoDB buffer pool. |`Innodb_buffer_pool_pages_free` |Count |Total |No Dimensions |Yes|
 |InnoDB Buffer Pool Read Requests<p><p>The number of logical read requests. |`Innodb_buffer_pool_read_requests` |Count |Total |No Dimensions |Yes|
 |InnoDB Buffer Pool Reads<p><p>The number of logical reads that InnoDB could not satisfy from the buffer pool, and had to read directly from disk. |`Innodb_buffer_pool_reads` |Count |Total |No Dimensions |Yes|
 |Innodb Data Writes<p><p>The total number of data writes. |`Innodb_data_writes` |Count |Total |No Dimensions |Yes|
 |Innodb Row Lock Time<p><p>The total time spent in acquiring row locks for InnoDB tables, in milliseconds. |`Innodb_row_lock_time` |Milliseconds |Average |No Dimensions |Yes|
+|Innodb Row Lock Waits<p><p>The number of times operations on InnoDB tables had to wait for a row lock. |`Innodb_row_lock_waits` |Count |Maximum |No Dimensions |Yes|
 |Storage IO Percent<p><p>Storage I/O consumption percent |`io_consumption_percent` |Percent |Maximum |No Dimensions |Yes|
 |Host Memory Percent<p><p>Host Memory Percent |`memory_percent` |Percent |Maximum |No Dimensions |Yes|
 |Host Network Out<p><p>Host Network egress in bytes |`network_bytes_egress` |Bytes |Total |No Dimensions |Yes|
 |Host Network In<p><p>Host Network ingress in bytes |`network_bytes_ingress` |Bytes |Total |No Dimensions |Yes|
+|Others Storage Used<p><p>Storage used by other files. |`others_storage_used` |Bytes |Maximum |No Dimensions |Yes|
 |Queries<p><p>Queries |`Queries` |Count |Total |No Dimensions |Yes|
 |Replica IO Status<p><p>Status for replication IO thread running  |`Replica_IO_Running` |Count |Maximum |No Dimensions |No|
 |Replica SQL Status<p><p>Status for replication SQL thread running  |`Replica_SQL_Running` |Count |Maximum |No Dimensions |No|
@@ -74,4 +80,4 @@ The following table lists the metrics available for the Microsoft.DBforMySQL/fle
 |Total Connections<p><p>Total Connections |`total_connections` |Count |Total |No Dimensions |Yes|
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->

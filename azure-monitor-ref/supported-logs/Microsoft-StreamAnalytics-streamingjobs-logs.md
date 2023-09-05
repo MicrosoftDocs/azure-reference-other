@@ -5,10 +5,10 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported logs for Microsoft.StreamAnalytics/streamingjobs  
-<!-- Data source : arm-->
+<!-- Data source : naam-->
 
 
   The following table lists the types of logs available for the Microsoft.StreamAnalytics/streamingjobs resource type.
@@ -19,4 +19,4 @@ ms.date: 07/12/2023
 |Execution |Execution |No |
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 09/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: CDBControlPlaneRequests
@@ -56,7 +56,7 @@ ms.custom: CDBControlPlaneRequests
 | RoleDefinitionId | string | The Id of the IAM role created for the account. |
 | RoleDefinitionName | string | The name of the IAM role created for the account. |
 | RoleDefinitionPermissions | string | The permissions associated with the IAM role created for the account. |
-| RoleDefinitionType | string | The type of IAM role created for the account. |
+| RoleDefinitionType | string | The type of IAM role created for the account. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SqlQueryTextTraceType | bool | Boolean flag indicating if full query text logging is enabled. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
