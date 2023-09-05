@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/04/2023
 ---
 # Supported logs for Microsoft.Relay/namespaces  
 <!-- Data source : naam-->
@@ -16,8 +16,7 @@ ms.date: 07/12/2023
 |Category|Category Display Name|Costs To Export|
 |---|---|---|
 |HybridConnectionsEvent |HybridConnections Events |No |
-|HybridConnectionsLogs |HybridConnectionsLogs |Yes |
 |VNetAndIPFilteringLogs |VNet/IP Filtering Connection Logs |Yes |
 
 
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->

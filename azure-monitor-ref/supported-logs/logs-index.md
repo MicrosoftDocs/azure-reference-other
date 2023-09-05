@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 08/01/2023
+ms.date: 09/04/2023
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -201,11 +201,6 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 ### Microsoft.CustomProviders<a name="microsoftcustomprovidersresourceproviders"></a>
   
   * [Microsoft.CustomProviders/resourceproviders](Microsoft-CustomProviders-resourceproviders-logs.md)
-
-  
-### Microsoft.D365CustomerInsights<a name="microsoftd365customerinsightsinstances"></a>
-  
-  * [Microsoft.D365CustomerInsights/instances](Microsoft-D365CustomerInsights-instances-logs.md)
 
   
 ### Microsoft.Dashboard<a name="microsoftdashboardgrafana"></a>
@@ -563,11 +558,12 @@ If you think something is missing, you can open a GitHub comment at the bottom o
   * [microsoft.videoindexer/accounts](microsoft-videoindexer-accounts-logs.md)
 
   
-### Microsoft.Web<a name="microsoftwebhostingenvironments"></a><a name="microsoftwebsites"></a><a name="microsoftwebsitesslots"></a>
+### Microsoft.Web<a name="microsoftwebhostingenvironments"></a><a name="microsoftwebsites"></a><a name="microsoftwebsitesslots"></a><a name="microsoftwebstaticsites"></a>
   
   * [Microsoft.Web/hostingEnvironments](Microsoft-Web-hostingEnvironments-logs.md)
 * [Microsoft.Web/sites](Microsoft-Web-sites-logs.md)
 * [Microsoft.Web/sites/slots](Microsoft-Web-sites-slots-logs.md)
+* [Microsoft.Web/staticsites](Microsoft-Web-staticsites-logs.md)
 
   
 ### microsoft.workloads<a name="microsoftworkloadssapvirtualinstances"></a>

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/01/2023
+ms.date: 09/04/2023
 ---
 # Supported metrics for microsoft.network/virtualnetworkgateways  
 <!-- Data source : naam-->
@@ -33,8 +33,8 @@ The following table lists the metrics available for the microsoft.network/virtua
 |BGP Routes Learned<p><p>Count of Bgp Routes Learned through tunnel |`BgpRoutesLearned` |Count |Total |BgpPeerAddress, Instance |Yes|
 |Active Flows<p><p>Number of Active Flows on ExpressRoute Gateway |`ExpressRouteGatewayActiveFlows` |Count |Average |roleInstance |No|
 |Bits Received Per second<p><p>Total Bits received on ExpressRoute Gateway per second |`ExpressRouteGatewayBitsPerSecond` |BitsPerSecond |Average |roleInstance |No|
-|Count Of Routes Advertised to Peer<p><p>Count Of Routes Advertised To Peer by ExpressRoute Gateway |`ExpressRouteGatewayCountOfRoutesAdvertisedToPeer` |Count |Maximum |roleInstance |Yes|
-|Count Of Routes Learned from Peer<p><p>Count Of Routes Learned From Peer by ExpressRoute Gateway |`ExpressRouteGatewayCountOfRoutesLearnedFromPeer` |Count |Maximum |roleInstance |Yes|
+|Count Of Routes Advertised to Peer<p><p>Count Of Routes Advertised To Peer by ExpressRoute Gateway |`ExpressRouteGatewayCountOfRoutesAdvertisedToPeer` |Count |Maximum |roleInstance, BgpPeerAddress |Yes|
+|Count Of Routes Learned from Peer<p><p>Count Of Routes Learned From Peer by ExpressRoute Gateway |`ExpressRouteGatewayCountOfRoutesLearnedFromPeer` |Count |Maximum |roleInstance, BgpPeerAddress |Yes|
 |CPU utilization<p><p>CPU Utilization of the ExpressRoute Gateway |`ExpressRouteGatewayCpuUtilization` |Percent |Average |roleInstance |Yes|
 |Frequency of Routes change<p><p>Frequency of Routes change in ExpressRoute Gateway |`ExpressRouteGatewayFrequencyOfRoutesChanged` |Count |Total |roleInstance |No|
 |Max Flows Created Per Second<p><p>Maximum Number of Flows Created Per Second on ExpressRoute Gateway |`ExpressRouteGatewayMaxFlowsCreationRate` |CountPerSecond |Maximum |roleInstance, direction |No|
@@ -75,4 +75,4 @@ The following table lists the metrics available for the microsoft.network/virtua
 |VNet Address Prefix Count<p><p>Count of Vnet address prefixes behind gateway |`VnetAddressPrefixCount` |Count |Total |Instance |Yes|
 
 
-<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
+<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->
