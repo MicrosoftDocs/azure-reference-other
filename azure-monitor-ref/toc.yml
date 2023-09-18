@@ -687,6 +687,8 @@ items:
         href: tables/functionapplogs.md
       - name: GCPAuditLogs
         href: tables/gcpauditlogs.md
+      - name: GoogleCloudSCC
+        href: tables/googlecloudscc.md
       - name: HDInsightAmbariClusterAlerts
         href: tables/hdinsightambariclusteralerts.md
       - name: HDInsightAmbariSystemMetrics
@@ -1215,6 +1217,8 @@ items:
         href: tables/webpubsubhttprequest.md
       - name: WebPubSubMessaging
         href: tables/webpubsubmessaging.md
+      - name: Windows365AuditLogs
+        href: tables/windows365auditlogs.md
       - name: WindowsClientAssessmentRecommendation
         href: tables/windowsclientassessmentrecommendation.md
       - name: WindowsEvent
