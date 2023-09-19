@@ -5,17 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.NetworkFunction/azureTrafficCollectors, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.NetworkFunction/azureTrafficCollectors  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.NetworkFunction/azureTrafficCollectors resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ExpressRouteCircuitIpfix |Express Route Circuit IPFIX Flow Records |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.NetworkFunction/azureTrafficCollectors resource type.
+  
+  
+[!INCLUDE [Microsoft.NetworkFunction/azureTrafficCollectors](./includes/Microsoft-NetworkFunction-azureTrafficCollectors-logs-include.md)]
+  

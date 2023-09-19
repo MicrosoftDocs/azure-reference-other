@@ -5,17 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Network/trafficManagerProfiles, arm
 ---
+
+
+
+
 # Supported logs for Microsoft.Network/trafficManagerProfiles  
-<!-- Data source : arm-->
-
-
-  The following table lists the types of logs available for the Microsoft.Network/trafficManagerProfiles resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ProbeHealthStatusEvents |Traffic Manager Probe Health Results Event |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Network/trafficManagerProfiles resource type.
+  
+  
+[!INCLUDE [Microsoft.Network/trafficManagerProfiles](./includes/Microsoft-Network-trafficManagerProfiles-logs-include.md)]
+  

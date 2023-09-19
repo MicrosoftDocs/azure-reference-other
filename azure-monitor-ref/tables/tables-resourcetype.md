@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 08/28/2023
+ms.date: 09/18/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -1404,6 +1404,11 @@ Microsoft.ConenctedVMwarevSphere/VirtualMachines
 - [InsightsMetrics](insightsmetrics.md)
 - [HealthStateChangeEvent](healthstatechangeevent.md)
 - [CommonSecurityLog](commonsecuritylog.md)
+
+
+### Windows365 Audit Logs
+microsoft.intune/windows365auditlogs
+- [Windows365AuditLogs](windows365auditlogs.md)
 
 
 ### Workload Monitor

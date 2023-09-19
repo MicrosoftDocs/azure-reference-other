@@ -5,20 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.DataShare/accounts, arm
 ---
+
+
+
+
 # Supported logs for Microsoft.DataShare/accounts  
-<!-- Data source : arm-->
-
-
-  The following table lists the types of logs available for the Microsoft.DataShare/accounts resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ReceivedShareSnapshots |Received Share Snapshots |No |
-|SentShareSnapshots |Sent Share Snapshots |No |
-|Shares |Shares |No |
-|ShareSubscriptions |Share Subscriptions |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.DataShare/accounts resource type.
+  
+  
+[!INCLUDE [Microsoft.DataShare/accounts](./includes/Microsoft-DataShare-accounts-logs-include.md)]
+  

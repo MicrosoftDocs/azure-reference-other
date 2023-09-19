@@ -5,17 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.CustomProviders/resourceproviders, arm
 ---
+
+
+
+
 # Supported logs for Microsoft.CustomProviders/resourceproviders  
-<!-- Data source : arm-->
-
-
-  The following table lists the types of logs available for the Microsoft.CustomProviders/resourceproviders resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AuditLogs |Audit logs for MiniRP calls |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.CustomProviders/resourceproviders resource type.
+  
+  
+[!INCLUDE [Microsoft.CustomProviders/resourceproviders](./includes/Microsoft-CustomProviders-resourceproviders-logs-include.md)]
+  
