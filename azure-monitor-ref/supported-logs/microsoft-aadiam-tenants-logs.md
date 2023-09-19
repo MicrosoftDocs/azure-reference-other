@@ -5,17 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/18/2023
+ms.custom: microsoft.aadiam/tenants, arm
 ---
+
+
+
+
 # Supported logs for microsoft.aadiam/tenants  
-<!-- Data source : arm-->
-
-
-  The following table lists the types of logs available for the microsoft.aadiam/tenants resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|Signin |Signin |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the microsoft.aadiam/tenants resource type.
+  
+  
+[!INCLUDE [microsoft.aadiam/tenants](./includes/microsoft-aadiam-tenants-logs-include.md)]
+  

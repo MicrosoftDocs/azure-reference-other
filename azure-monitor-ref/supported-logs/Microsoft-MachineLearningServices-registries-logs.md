@@ -5,18 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.MachineLearningServices/registries, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.MachineLearningServices/registries  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.MachineLearningServices/registries resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|RegistryAssetReadEvent |Registry Asset Read Event |Yes |
-|RegistryAssetWriteEvent |Registry Asset Write Event |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.MachineLearningServices/registries resource type.
+  
+  
+[!INCLUDE [Microsoft.MachineLearningServices/registries](./includes/Microsoft-MachineLearningServices-registries-logs-include.md)]
+  

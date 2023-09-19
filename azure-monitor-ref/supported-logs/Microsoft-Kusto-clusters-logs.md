@@ -5,24 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Kusto/clusters, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.Kusto/clusters  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.Kusto/clusters resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|Command |Command |No |
-|FailedIngestion |Failed ingestion |No |
-|IngestionBatching |Ingestion batching |No |
-|Journal |Journal |Yes |
-|Query |Query |No |
-|SucceededIngestion |Succeeded ingestion |No |
-|TableDetails |Table details |No |
-|TableUsageStatistics |Table usage statistics |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Kusto/clusters resource type.
+  
+  
+[!INCLUDE [Microsoft.Kusto/clusters](./includes/Microsoft-Kusto-clusters-logs-include.md)]
+  

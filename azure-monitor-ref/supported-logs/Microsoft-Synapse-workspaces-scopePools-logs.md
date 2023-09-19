@@ -5,18 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Synapse/workspaces/scopePools, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.Synapse/workspaces/scopePools  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.Synapse/workspaces/scopePools resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ScopePoolScopeJobsEnded |Scope Pool Scope Jobs Ended |Yes |
-|ScopePoolScopeJobsStateChange |Scope Pool Scope Jobs State Change |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Synapse/workspaces/scopePools resource type.
+  
+  
+[!INCLUDE [Microsoft.Synapse/workspaces/scopePools](./includes/Microsoft-Synapse-workspaces-scopePools-logs-include.md)]
+  

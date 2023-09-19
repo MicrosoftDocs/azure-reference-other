@@ -5,19 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Network/applicationgateways, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.Network/applicationgateways  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.Network/applicationgateways resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ApplicationGatewayAccessLog |Application Gateway Access Log |No |
-|ApplicationGatewayFirewallLog |Application Gateway Firewall Log |No |
-|ApplicationGatewayPerformanceLog |Application Gateway Performance Log |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Network/applicationgateways resource type.
+  
+  
+[!INCLUDE [Microsoft.Network/applicationgateways](./includes/Microsoft-Network-applicationgateways-logs-include.md)]
+  
