@@ -1,0 +1,16 @@
+---
+ms.service: azure-monitor
+ms.topic: include
+ms.date: 09/19/2023
+ms.author: edbaynash
+author: EdB-MSFT
+ms.custom: Microsoft.Automation/automationAccounts, naam
+---
+  
+  
+|Metric|Name|Unit|Aggregation|Dimensions|Time Grains|DS Export|
+|---|---|---|---|---|---|---|
+|Hybrid Worker Ping<p><p>The number of pings from the hybrid worker |`HybridWorkerPing` |Count |Total, Average, Maximum, Minimum, Count |HybridWorkerGroup, HybridWorker, HybridWorkerVersion|PT1M |Yes|
+|Total Jobs<p><p>The total number of jobs |`TotalJob` |Count |Total, Average, Maximum, Minimum, Count |Runbook, Status|PT1M |Yes|
+|Total Update Deployment Machine Runs<p><p>Total software update deployment machine runs in a software update deployment run |`TotalUpdateDeploymentMachineRuns` |Count |Total, Average, Maximum, Minimum, Count |Status, TargetComputer, SoftwareUpdateConfigurationName, SoftwareUpdateConfigurationRunId|PT1M |Yes|
+|Total Update Deployment Runs<p><p>Total software update deployment runs |`TotalUpdateDeploymentRuns` |Count |Total, Average, Maximum, Minimum, Count |Status, SoftwareUpdateConfigurationName|PT1M |Yes|
