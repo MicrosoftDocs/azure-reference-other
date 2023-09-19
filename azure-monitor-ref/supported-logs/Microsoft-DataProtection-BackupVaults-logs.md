@@ -5,20 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.DataProtection/BackupVaults, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.DataProtection/BackupVaults  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.DataProtection/BackupVaults resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AddonAzureBackupJobs |Addon Azure Backup Job Data |Yes |
-|AddonAzureBackupPolicy |Addon Azure Backup Policy Data |Yes |
-|AddonAzureBackupProtectedInstance |Addon Azure Backup Protected Instance Data |Yes |
-|CoreAzureBackup |Core Azure Backup Data |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.DataProtection/BackupVaults resource type.
+  
+  
+[!INCLUDE [Microsoft.DataProtection/BackupVaults](./includes/Microsoft-DataProtection-BackupVaults-logs-include.md)]
+  
