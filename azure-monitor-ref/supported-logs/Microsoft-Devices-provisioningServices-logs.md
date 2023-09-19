@@ -5,18 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Devices/provisioningServices, arm
 ---
+
+
+
+
 # Supported logs for Microsoft.Devices/provisioningServices  
-<!-- Data source : arm-->
-
-
-  The following table lists the types of logs available for the Microsoft.Devices/provisioningServices resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|DeviceOperations |Device Operations |No |
-|ServiceOperations |Service Operations |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Devices/provisioningServices resource type.
+  
+  
+[!INCLUDE [Microsoft.Devices/provisioningServices](./includes/Microsoft-Devices-provisioningServices-logs-include.md)]
+  

@@ -5,18 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Network/frontdoors, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.Network/frontdoors  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.Network/frontdoors resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|FrontdoorAccessLog |Frontdoor Access Log |No |
-|FrontdoorWebApplicationFirewallLog |Frontdoor Web Application Firewall Log |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Network/frontdoors resource type.
+  
+  
+[!INCLUDE [Microsoft.Network/frontdoors](./includes/Microsoft-Network-frontdoors-logs-include.md)]
+  

@@ -5,23 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.DataCollaboration/workspaces, arm
 ---
+
+
+
+
 # Supported logs for Microsoft.DataCollaboration/workspaces  
-<!-- Data source : arm-->
-
-
-  The following table lists the types of logs available for the Microsoft.DataCollaboration/workspaces resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|CollaborationAudit |Collaboration Audit |Yes |
-|Computations |Computations |Yes |
-|DataAssets |Data Assets |No |
-|Pipelines |Pipelines |No |
-|Pipelines |Pipelines |No |
-|Proposals |Proposals |No |
-|Scripts |Scripts |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.DataCollaboration/workspaces resource type.
+  
+  
+[!INCLUDE [Microsoft.DataCollaboration/workspaces](./includes/Microsoft-DataCollaboration-workspaces-logs-include.md)]
+  

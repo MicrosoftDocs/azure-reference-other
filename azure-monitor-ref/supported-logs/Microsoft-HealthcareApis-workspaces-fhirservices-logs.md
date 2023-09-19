@@ -5,17 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.HealthcareApis/workspaces/fhirservices, arm
 ---
+
+
+
+
 # Supported logs for Microsoft.HealthcareApis/workspaces/fhirservices  
-<!-- Data source : arm-->
-
-
-  The following table lists the types of logs available for the Microsoft.HealthcareApis/workspaces/fhirservices resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AuditLogs |FHIR Audit logs |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.HealthcareApis/workspaces/fhirservices resource type.
+  
+  
+[!INCLUDE [Microsoft.HealthcareApis/workspaces/fhirservices](./includes/Microsoft-HealthcareApis-workspaces-fhirservices-logs-include.md)]
+  

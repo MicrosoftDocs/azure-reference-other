@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 09/18/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -128,6 +128,7 @@ ms.date: 08/28/2023
 - [REDConnectionEvents](redconnectionevents.md)
 - [SentinelAudit](sentinelaudit.md)
 - [VIAudit](viaudit.md)
+- [Windows365AuditLogs](windows365auditlogs.md)
 
 
 ### Azure Monitor
@@ -642,6 +643,7 @@ ms.date: 08/28/2023
 - [EmailUrlInfo](emailurlinfo.md)
 - [EnrichedMicrosoft365AuditLogs](enrichedmicrosoft365auditlogs.md)
 - [GCPAuditLogs](gcpauditlogs.md)
+- [GoogleCloudSCC](googlecloudscc.md)
 - [HDInsightSecurityLogs](hdinsightsecuritylogs.md)
 - [HuntingBookmark](huntingbookmark.md)
 - [IdentityDirectoryEvents](identitydirectoryevents.md)

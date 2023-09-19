@@ -5,32 +5,33 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.ClusterStor/nodes, naam
 ---
-# Supported metrics for Microsoft.ClusterStor/nodes  
-<!-- Data source : naam-->
+
+
+
+
+# Supported metrics for Microsoft.ClusterStor/nodes
 
 
 The following table lists the metrics available for the Microsoft.ClusterStor/nodes resource type.
 
   
-
+    
 **Table headings**
   
-**Metric** - Metric display name follows by a description of the metric. The displayname appears in the Azure portal.  
-**Name** - The name of the metric as referred to in the REST API.  
-**Unit** - The default units used for the metric.  
-**Aggregation** - The default aggregation type for this metric. Valid values: Average, Minimum, Maximum, Total, Count.  
-**Dimensions** - Dimensions available. For more information, see (link to dimensions information).  
-**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  You can access all metrics via the REST API.  
+**Metric** - The metric display name as it appears in the Azure portal.  
+**Name** - Metric name as referred to in the REST API.  
+**Unit** - Unit of measure.  
+**Aggregation** - The default aggregation type. Valid values: Average, Minimum, Maximum, Total, Count.  
+**Dimensions** - Dimensions available for the metric.  
+**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  
+**Time Grains** - Intervals at which the metric is sampled. For example, `PT1M` indicates that the metric is sampled every minute, `PT30M` every 30 minutes, `PT1H` every hour, and so on.  
+
+  
+
   
   
-|Metric|Name|Unit|Aggregation|Dimensions|DS Export|
-|---|---|---|---|---|---|
-|TotalCapacityAvailable<p><p>The total capacity available in lustre file system |`TotalCapacityAvailable` |Bytes |Average |filesystem_name, category, system |No|
-|TotalCapacityUsed<p><p>The total capacity used in lustre file system |`TotalCapacityUsed` |Bytes |Average |filesystem_name, category, system |No|
-|TotalRead<p><p>The total lustre file system read per second |`TotalRead` |BytesPerSecond |Average |filesystem_name, category, system |No|
-|TotalWrite<p><p>The total lustre file system write per second |`TotalWrite` |BytesPerSecond |Average |filesystem_name, category, system |No|
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+[!INCLUDE [Microsoft.ClusterStor/nodes](./includes/Microsoft-ClusterStor-nodes-metrics-include.md)]
+      

@@ -5,19 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Storage/storageAccounts/blobServices, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.Storage/storageAccounts/blobServices  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.Storage/storageAccounts/blobServices resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|StorageDelete |StorageDelete |Yes |
-|StorageRead |StorageRead |Yes |
-|StorageWrite |StorageWrite |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Storage/storageAccounts/blobServices resource type.
+  
+  
+[!INCLUDE [Microsoft.Storage/storageAccounts/blobServices](./includes/Microsoft-Storage-storageAccounts-blobServices-logs-include.md)]
+  

@@ -5,18 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: microsoft.insights/autoscalesettings, naam
 ---
+
+
+
+
 # Supported logs for microsoft.insights/autoscalesettings  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the microsoft.insights/autoscalesettings resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AutoscaleEvaluations |Autoscale Evaluations |No |
-|AutoscaleScaleActions |Autoscale Scale Actions |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the microsoft.insights/autoscalesettings resource type.
+  
+  
+[!INCLUDE [microsoft.insights/autoscalesettings](./includes/microsoft-insights-autoscalesettings-logs-include.md)]
+  

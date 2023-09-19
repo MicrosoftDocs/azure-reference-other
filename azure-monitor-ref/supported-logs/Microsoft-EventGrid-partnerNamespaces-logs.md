@@ -5,18 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.EventGrid/partnerNamespaces, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.EventGrid/partnerNamespaces  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.EventGrid/partnerNamespaces resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|DataPlaneRequests |Data plane operations logs |Yes |
-|PublishFailures |Publish Failure Logs |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.EventGrid/partnerNamespaces resource type.
+  
+  
+[!INCLUDE [Microsoft.EventGrid/partnerNamespaces](./includes/Microsoft-EventGrid-partnerNamespaces-logs-include.md)]
+  
