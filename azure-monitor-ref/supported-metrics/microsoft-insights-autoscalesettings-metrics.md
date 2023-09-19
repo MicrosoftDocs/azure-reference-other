@@ -5,32 +5,33 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: microsoft.insights/autoscalesettings, naam
 ---
-# Supported metrics for microsoft.insights/autoscalesettings  
-<!-- Data source : naam-->
+
+
+
+
+# Supported metrics for microsoft.insights/autoscalesettings
 
 
 The following table lists the metrics available for the microsoft.insights/autoscalesettings resource type.
 
   
-
+    
 **Table headings**
   
-**Metric** - Metric display name follows by a description of the metric. The displayname appears in the Azure portal.  
-**Name** - The name of the metric as referred to in the REST API.  
-**Unit** - The default units used for the metric.  
-**Aggregation** - The default aggregation type for this metric. Valid values: Average, Minimum, Maximum, Total, Count.  
-**Dimensions** - Dimensions available. For more information, see (link to dimensions information).  
-**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  You can access all metrics via the REST API.  
+**Metric** - The metric display name as it appears in the Azure portal.  
+**Name** - Metric name as referred to in the REST API.  
+**Unit** - Unit of measure.  
+**Aggregation** - The default aggregation type. Valid values: Average, Minimum, Maximum, Total, Count.  
+**Dimensions** - Dimensions available for the metric.  
+**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  
+**Time Grains** - Intervals at which the metric is sampled. For example, `PT1M` indicates that the metric is sampled every minute, `PT30M` every 30 minutes, `PT1H` every hour, and so on.  
+
+  
+
   
   
-|Metric|Name|Unit|Aggregation|Dimensions|DS Export|
-|---|---|---|---|---|---|
-|Metric Threshold<p><p>The configured autoscale threshold when autoscale ran. |`MetricThreshold` |Count |Average |MetricTriggerRule |Yes|
-|Observed Capacity<p><p>The capacity reported to autoscale when it executed. |`ObservedCapacity` |Count |Average |No Dimensions |Yes|
-|Observed Metric Value<p><p>The value computed by autoscale when executed |`ObservedMetricValue` |Count |Average |MetricTriggerSource |Yes|
-|Scale Actions Initiated<p><p>The direction of the scale operation. |`ScaleActionsInitiated` |Count |Total |ScaleDirection |Yes|
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+[!INCLUDE [microsoft.insights/autoscalesettings](./includes/microsoft-insights-autoscalesettings-metrics-include.md)]
+      
