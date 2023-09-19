@@ -5,18 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.ContainerInstance/containerGroups, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.ContainerInstance/containerGroups  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.ContainerInstance/containerGroups resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ContainerEvent |Container events |Yes |
-|ContainerInstanceLog |Standard output logs |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.ContainerInstance/containerGroups resource type.
+  
+  
+[!INCLUDE [Microsoft.ContainerInstance/containerGroups](./includes/Microsoft-ContainerInstance-containerGroups-logs-include.md)]
+  
