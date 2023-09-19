@@ -5,17 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Dashboard/grafana, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.Dashboard/grafana  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.Dashboard/grafana resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|GrafanaLoginEvents |Grafana Login Events |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Dashboard/grafana resource type.
+  
+  
+[!INCLUDE [Microsoft.Dashboard/grafana](./includes/Microsoft-Dashboard-grafana-logs-include.md)]
+  
