@@ -5,19 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: microsoft.purview/accounts, naam
 ---
+
+
+
+
 # Supported logs for microsoft.purview/accounts  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the microsoft.purview/accounts resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|DataSensitivityLogEvent |DataSensitivity |Yes |
-|ScanStatusLogEvent |ScanStatus |No |
-|Security |PurviewAccountAuditEvents |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the microsoft.purview/accounts resource type.
+  
+  
+[!INCLUDE [microsoft.purview/accounts](./includes/microsoft-purview-accounts-logs-include.md)]
+  
