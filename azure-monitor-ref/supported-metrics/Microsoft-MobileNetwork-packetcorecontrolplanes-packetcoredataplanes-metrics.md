@@ -5,31 +5,33 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/04/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.MobileNetwork/packetcorecontrolplanes/packetcoredataplanes, naam
 ---
-# Supported metrics for Microsoft.MobileNetwork/packetcorecontrolplanes/packetcoredataplanes  
-<!-- Data source : naam-->
+
+
+
+
+# Supported metrics for Microsoft.MobileNetwork/packetcorecontrolplanes/packetcoredataplanes
 
 
 The following table lists the metrics available for the Microsoft.MobileNetwork/packetcorecontrolplanes/packetcoredataplanes resource type.
 
   
-
+    
 **Table headings**
   
-**Metric** - Metric display name follows by a description of the metric. The displayname appears in the Azure portal.  
-**Name** - The name of the metric as referred to in the REST API.  
-**Unit** - The default units used for the metric.  
-**Aggregation** - The default aggregation type for this metric. Valid values: Average, Minimum, Maximum, Total, Count.  
-**Dimensions** - Dimensions available. For more information, see (link to dimensions information).  
-**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  You can access all metrics via the REST API.  
+**Metric** - The metric display name as it appears in the Azure portal.  
+**Name** - Metric name as referred to in the REST API.  
+**Unit** - Unit of measure.  
+**Aggregation** - The default aggregation type. Valid values: Average, Minimum, Maximum, Total, Count.  
+**Dimensions** - Dimensions available for the metric.  
+**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  
+**Time Grains** - Intervals at which the metric is sampled. For example, `PT1M` indicates that the metric is sampled every minute, `PT30M` every 30 minutes, `PT1H` every hour, and so on.  
+
+  
+
   
   
-|Metric|Name|Unit|Aggregation|Dimensions|DS Export|
-|---|---|---|---|---|---|
-|Data Plane Bandwidth<p><p>Data plane bandwidth for all traffic types (bits/second). |`DataPlaneBandwidth` |BitsPerSecond |Total |SiteId, Direction, Interface |No|
-|Data Plane Packet Drop Rate<p><p>Data plane packet drop rate for all traffic types (packets/sec). |`DataPlanePacketDropRate` |CountPerSecond |Total |SiteId, Cause, Direction, Interface |No|
-|Data Plane Packet Rate<p><p>Data plane packet rate for all traffic types (packets/sec). |`DataPlanePacketRate` |CountPerSecond |Total |SiteId, Direction, Interface |No|
-
-
-<!--Gen Date:  Mon Sep 04 2023 13:11:00 GMT+0300 (Israel Daylight Time)-->
+[!INCLUDE [Microsoft.MobileNetwork/packetcorecontrolplanes/packetcoredataplanes](./includes/Microsoft-MobileNetwork-packetcorecontrolplanes-packetcoredataplanes-metrics-include.md)]
+      

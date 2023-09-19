@@ -5,22 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.DigitalTwins/digitalTwinsInstances, arm
 ---
+
+
+
+
 # Supported logs for Microsoft.DigitalTwins/digitalTwinsInstances  
-<!-- Data source : arm-->
-
-
-  The following table lists the types of logs available for the Microsoft.DigitalTwins/digitalTwinsInstances resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|DataHistoryOperation |DataHistoryOperation |Yes |
-|DigitalTwinsOperation |DigitalTwinsOperation |No |
-|EventRoutesOperation |EventRoutesOperation |No |
-|ModelsOperation |ModelsOperation |No |
-|QueryOperation |QueryOperation |No |
-|ResourceProviderOperation |ResourceProviderOperation |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.DigitalTwins/digitalTwinsInstances resource type.
+  
+  
+[!INCLUDE [Microsoft.DigitalTwins/digitalTwinsInstances](./includes/Microsoft-DigitalTwins-digitalTwinsInstances-logs-include.md)]
+  

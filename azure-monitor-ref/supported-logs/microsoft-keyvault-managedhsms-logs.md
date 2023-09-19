@@ -5,17 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: microsoft.keyvault/managedhsms, naam
 ---
+
+
+
+
 # Supported logs for microsoft.keyvault/managedhsms  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the microsoft.keyvault/managedhsms resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AuditEvent |Audit Event |No |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the microsoft.keyvault/managedhsms resource type.
+  
+  
+[!INCLUDE [microsoft.keyvault/managedhsms](./includes/microsoft-keyvault-managedhsms-logs-include.md)]
+  

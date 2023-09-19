@@ -5,36 +5,33 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.DBforPostgreSQL/serversv2, arm
 ---
-# Supported metrics for Microsoft.DBforPostgreSQL/serversv2  
-<!-- Data source : arm-->
+
+
+
+
+# Supported metrics for Microsoft.DBforPostgreSQL/serversv2
 
 
 The following table lists the metrics available for the Microsoft.DBforPostgreSQL/serversv2 resource type.
 
   
-
+    
 **Table headings**
   
-**Metric** - Metric display name follows by a description of the metric. The displayname appears in the Azure portal.  
-**Name** - The name of the metric as referred to in the REST API.  
-**Unit** - The default units used for the metric.  
-**Aggregation** - The default aggregation type for this metric. Valid values: Average, Minimum, Maximum, Total, Count.  
-**Dimensions** - Dimensions available. For more information, see (link to dimensions information).  
-**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  You can access all metrics via the REST API.  
+**Metric** - The metric display name as it appears in the Azure portal.  
+**Name** - Metric name as referred to in the REST API.  
+**Unit** - Unit of measure.  
+**Aggregation** - The default aggregation type. Valid values: Average, Minimum, Maximum, Total, Count.  
+**Dimensions** - Dimensions available for the metric.  
+**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  
+**Time Grains** - Intervals at which the metric is sampled. For example, `PT1M` indicates that the metric is sampled every minute, `PT30M` every 30 minutes, `PT1H` every hour, and so on.  
+
+  
+
   
   
-|Metric|Name|Unit|Aggregation|Dimensions|DS Export|
-|---|---|---|---|---|---|
-|Active Connections<p><p>Active Connections |`active_connections` |Count |Average |No Dimensions |Yes|
-|CPU percent<p><p>CPU percent |`cpu_percent` |Percent |Average |No Dimensions |Yes|
-|IOPS<p><p>IO Operations per second |`iops` |Count |Average |No Dimensions |Yes|
-|Memory percent<p><p>Memory percent |`memory_percent` |Percent |Average |No Dimensions |Yes|
-|Network Out<p><p>Network Out across active connections |`network_bytes_egress` |Bytes |Total |No Dimensions |Yes|
-|Network In<p><p>Network In across active connections |`network_bytes_ingress` |Bytes |Total |No Dimensions |Yes|
-|Storage percent<p><p>Storage percent |`storage_percent` |Percent |Average |No Dimensions |Yes|
-|Storage used<p><p>Storage used |`storage_used` |Bytes |Average |No Dimensions |Yes|
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+[!INCLUDE [Microsoft.DBforPostgreSQL/serversv2](./includes/Microsoft-DBforPostgreSQL-serversv2-metrics-include.md)]
+      

@@ -1,4 +1,6 @@
 items:
+- name: Azure Monitor supported log categories
+  href: ../supported-logs/logs-index.md
 - name: Azure Monitor supported metrics
   href: ../supported-metrics/metrics-index.md
 - name: Metrics
@@ -220,6 +222,8 @@ items:
     href: ../supported-metrics/Microsoft-MachineLearningServices-workspaces-onlineEndpoints-deployments-metrics.md
   - name: Microsoft.ManagedNetworkFabric/internetGateways
     href: ../supported-metrics/Microsoft-ManagedNetworkFabric-internetGateways-metrics.md
+  - name: Microsoft.ManagedNetworkFabric/l3IsolationDomains
+    href: ../supported-metrics/Microsoft-ManagedNetworkFabric-l3IsolationDomains-metrics.md
   - name: Microsoft.ManagedNetworkFabric/networkDevices
     href: ../supported-metrics/Microsoft-ManagedNetworkFabric-networkDevices-metrics.md
   - name: Microsoft.Maps/accounts
@@ -288,6 +292,8 @@ items:
     href: ../supported-metrics/Microsoft-Network-privateLinkServices-metrics.md
   - name: Microsoft.Network/publicIPAddresses
     href: ../supported-metrics/Microsoft-Network-publicIPAddresses-metrics.md
+  - name: Microsoft.Network/publicIPPrefixes
+    href: ../supported-metrics/Microsoft-Network-publicIPPrefixes-metrics.md
   - name: Microsoft.Network/trafficManagerProfiles
     href: ../supported-metrics/Microsoft-Network-trafficManagerProfiles-metrics.md
   - name: Microsoft.Network/virtualHubs
@@ -320,6 +326,8 @@ items:
     href: ../supported-metrics/Microsoft-Orbital-l2Connections-metrics.md
   - name: Microsoft.Orbital/spacecrafts
     href: ../supported-metrics/Microsoft-Orbital-spacecrafts-metrics.md
+  - name: Microsoft.Orbital/terminals
+    href: ../supported-metrics/Microsoft-Orbital-terminals-metrics.md
   - name: Microsoft.Peering/peerings
     href: ../supported-metrics/Microsoft-Peering-peerings-metrics.md
   - name: Microsoft.Peering/peeringServices

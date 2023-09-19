@@ -5,18 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/01/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.Network/networkManagers, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.Network/networkManagers  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.Network/networkManagers resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|NetworkGroupMembershipChange |Network Group Membership Change |Yes |
-|RuleCollectionChange |Rule Collection Change |Yes |
-
-
-<!--Gen Date:  Tue Aug 01 2023 10:39:24 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.Network/networkManagers resource type.
+  
+  
+[!INCLUDE [Microsoft.Network/networkManagers](./includes/Microsoft-Network-networkManagers-logs-include.md)]
+  

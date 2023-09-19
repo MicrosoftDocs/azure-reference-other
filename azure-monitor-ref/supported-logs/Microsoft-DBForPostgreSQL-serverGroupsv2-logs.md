@@ -5,17 +5,16 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/12/2023
+ms.date: 09/19/2023
+ms.custom: Microsoft.DBForPostgreSQL/serverGroupsv2, naam
 ---
+
+
+
+
 # Supported logs for Microsoft.DBForPostgreSQL/serverGroupsv2  
-<!-- Data source : naam-->
-
-
-  The following table lists the types of logs available for the Microsoft.DBForPostgreSQL/serverGroupsv2 resource type.
-
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|PostgreSQLLogs |PostgreSQL Server Logs |Yes |
-
-
-<!--Gen Date:  Wed Jul 12 2023 17:59:09 GMT+0300 (Israel Daylight Time)-->
+The following table lists the types of logs available for the Microsoft.DBForPostgreSQL/serverGroupsv2 resource type.
+  
+  
+[!INCLUDE [Microsoft.DBForPostgreSQL/serverGroupsv2](./includes/Microsoft-DBForPostgreSQL-serverGroupsv2-logs-include.md)]
+  
