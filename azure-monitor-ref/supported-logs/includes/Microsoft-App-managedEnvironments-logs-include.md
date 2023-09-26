@@ -10,6 +10,6 @@ ms.custom: Microsoft.App/managedEnvironments, naam
   
 |Category|Category Display Name|Costs To Export|
 |---|---|---|
-|AppEnvSpringAppConsoleLogs |Spring App console logs |Yes |
+|[AppEnvSpringAppConsoleLogs](/azure-monitor-ref/tables/appenvspringappconsolelogs.md) |Spring App console logs |Yes |
 |ContainerAppConsoleLogs |Container App console logs |Yes |
 |ContainerAppSystemLogs |Container App system logs |Yes |
