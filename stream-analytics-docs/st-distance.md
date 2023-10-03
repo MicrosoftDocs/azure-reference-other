@@ -43,7 +43,7 @@ FROM input
   
 |carPosition|warehouse|  
 |-----------------|---------------|  
-|{“type”:”Point”, “coordinates”: [-5.0, -5.0]}|{“type”:”Point”, “coordinates”: [0.0, 0.0]}|  
+|{"type":"Point", "coordinates": [-5.0, -5.0]}|{"type":"Point", "coordinates": [0.0, 0.0]}|  
   
 ### Output Example  
  784028.74077501823  

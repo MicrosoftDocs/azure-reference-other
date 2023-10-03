@@ -1,11 +1,11 @@
 ---
 title: "CREATE TABLE (Stream Analytics)"
 description: "The Create table statement is used to define the schema of the payload of the events coming into Azure Stream Analytics."
-author: fleid
+author: ajetasin
 applies_to: 
   - "Azure"
 
-ms.author: fleide
+ms.author: ajetasi
 ms.service: stream-analytics
 ms.topic: reference
 ms.date: 03/07/2022
@@ -17,7 +17,7 @@ The CREATE TABLE statement is used to define the schema of the payload of the ev
 > [!NOTE]
 > To compare the different options available for type conversion, see [casting data](data-types-azure-stream-analytics.md#casting-data)
   
-It’s important to understand that CREATE TABLE does not actually create any table. CREATE TABLE only defines the data type of each column in the payload of an input alias. This input alias is the one that has been created in the “Add Input” section of the portal. In the absence of such a declaration, the compiler will infer the data type of the columns.
+It’s important to understand that CREATE TABLE does not actually create any table. CREATE TABLE only defines the data type of each column in the payload of an input alias. This input alias is the one that has been created in the "Add Input" section of the portal. In the absence of such a declaration, the compiler will infer the data type of the columns.
 
 In case of conversion errors, CREATE TABLE will drop the rows from the stream. The rows in error will be moved to the diagnostic logs with the following classification:
 
@@ -44,7 +44,7 @@ CREATE TABLE
   
 -   table_name  
   
-     The name of the input stream where the data is coming from. This name needs to match the input alias created in the “Add Input” section of the Azure Stream Analytics portal.  
+     The name of the input stream where the data is coming from. This name needs to match the input alias created in the "Add Input" section of the Azure Stream Analytics portal.  
   
 -   column_name  
   
