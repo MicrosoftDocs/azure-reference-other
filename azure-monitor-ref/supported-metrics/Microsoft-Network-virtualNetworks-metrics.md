@@ -29,7 +29,9 @@ The following table lists the metrics available for the Microsoft.Network/virtua
 **DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  
 **Time Grains** - Intervals at which the metric is sampled. For example, `PT1M` indicates that the metric is sampled every minute, `PT30M` every 30 minutes, `PT1H` every hour, and so on.  
 
-  
+> [!NOTE] 
+> The PingMeshAverageRoundtripMs and PingMeshProbesFailedPercent metrics are legacy and may appear in Azure Portal but are not available.
+
 
   
   
