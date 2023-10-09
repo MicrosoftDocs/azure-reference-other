@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 10/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: MicrosoftGraphActivityLogs
@@ -19,7 +19,7 @@ ms.custom: MicrosoftGraphActivityLogs
 | ClientRequestId | string | Optional. The client request identifier when sent. If no client request identifier is sent, the value will be equal to the operation identifier. |
 | DurationMs | int | The duration of the request in milliseconds. |
 | IdentityProvider | string | The identity provider that authenticated the subject of the token. |
-| IpAddress | string | The IP address of the client from where the request occurred. |
+| IPAddress | string | The IP address of the client from where the request occurred. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | The name of the region that served the request. |
 | OperationId | string | The identifier for the batch. For non-batched requests, this will be unique per request. For batched requests, this will be the same for all requests in the batch. |
