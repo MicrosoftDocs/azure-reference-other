@@ -17,6 +17,8 @@ items:
         href: tables/aachttprequest.md
       - name: AADB2CRequestLogs
         href: tables/aadb2crequestlogs.md
+      - name: AADCustomSecurityAttributeAuditLogs
+        href: tables/aadcustomsecurityattributeauditlogs.md
       - name: AADDomainServicesAccountLogon
         href: tables/aaddomainservicesaccountlogon.md
       - name: AADDomainServicesAccountManagement
@@ -195,12 +197,18 @@ items:
         href: tables/asimauditeventlogs.md
       - name: ASimAuthenticationEventLogs
         href: tables/asimauthenticationeventlogs.md
+      - name: ASimDhcpEventLogs
+        href: tables/asimdhcpeventlogs.md
       - name: ASimDnsActivityLogs
         href: tables/asimdnsactivitylogs.md
       - name: ASimNetworkSessionLogs
         href: tables/asimnetworksessionlogs.md
       - name: ASimProcessEventLogs
         href: tables/asimprocesseventlogs.md
+      - name: ASimRegistryEventLogs
+        href: tables/asimregistryeventlogs.md
+      - name: ASimUserManagementActivityLogs
+        href: tables/asimusermanagementactivitylogs.md
       - name: ASimWebSessionLogs
         href: tables/asimwebsessionlogs.md
       - name: ATCExpressRouteCircuitIpfix
@@ -597,6 +605,8 @@ items:
         href: tables/databricksworkspace.md
       - name: DefenderIoTRawEvent
         href: tables/defenderiotrawevent.md
+      - name: DevCenterBillingEventLogs
+        href: tables/devcenterbillingeventlogs.md
       - name: DevCenterDiagnosticLogs
         href: tables/devcenterdiagnosticlogs.md
       - name: DevCenterResourceOperationLogs
