@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 10/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ACSEmailStatusUpdateOperational
@@ -15,6 +15,8 @@ ms.custom: ACSEmailStatusUpdateOperational
 | CorrelationId | string | The ID for correlated events. This value is populated with the MessageID returned by Email send requests and can be used to identify correlated events between Email Operational tables. |
 | DeliveryStatus | string | The count of unique recipients on the Cc line. |
 | EnhancedSmtpStatusCode | string | The enhanced SMTP status code returned from the recipient email server (if available). |
+| FailureMessage | string | Verbatim error message for the given SMTP or EnhancedSmtp status code. |
+| FailureReason | string | Failure reason for the given SMTP or EnhancedSmtp status code. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsHardBounce | string | Signifies whether a delivery failure was due to a permanent or temporary issue. IsHardBounce == true means a permanent mailbox issue preventing emails from being delivered. |
 | Location | string | The location the request was processed. |
