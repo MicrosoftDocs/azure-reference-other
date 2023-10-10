@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 10/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: AmlRunStatusChangedEvent
@@ -21,10 +21,12 @@ ms.custom: AmlRunStatusChangedEvent
 | Message | string | Message associated with run status change. |
 | OperationName | string | The name of the operation associated with the log entry. |
 | OperationVersion | string | The api-version associated with the operation, if the operationName was performed using an API. |
+| ParentRunId | string | The unique identifier for the parent run. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | The static text description of this operation. |
 | ResultSignature | string | The sub status of the event. If this operation corresponds to a REST API call, this is the HTTP status code of the corresponding REST call. |
 | ResultType | string | The status of the event. Typical values include Started, In Progress, Succeeded, Failed, Active, and Resolved. |
+| RootRunId | string | The unique identifier for the root run. |
 | RunId | string | Unique run identifier. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Status | string | Updated run status. |
