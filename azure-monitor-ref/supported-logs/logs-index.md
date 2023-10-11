@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 09/19/2023
+ms.date: 10/02/2023
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -99,11 +99,6 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 ### Microsoft.AzureDataTransfer<a name="microsoftazuredatatransferconnectionsflows"></a>
   
   * [Microsoft.AzureDataTransfer/connections/flows](Microsoft-AzureDataTransfer-connections-flows-logs.md)
-
-  
-### microsoft.azureplaywrightservice<a name="microsoftazureplaywrightserviceaccounts"></a>
-  
-  * [microsoft.azureplaywrightservice/accounts](microsoft-azureplaywrightservice-accounts-logs.md)
 
   
 ### microsoft.azuresphere<a name="microsoftazurespherecatalogs"></a>
@@ -206,6 +201,11 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 ### Microsoft.CustomProviders<a name="microsoftcustomprovidersresourceproviders"></a>
   
   * [Microsoft.CustomProviders/resourceproviders](Microsoft-CustomProviders-resourceproviders-logs.md)
+
+  
+### Microsoft.D365CustomerInsights<a name="microsoftd365customerinsightsinstances"></a>
+  
+  * [Microsoft.D365CustomerInsights/instances](Microsoft-D365CustomerInsights-instances-logs.md)
 
   
 ### Microsoft.Dashboard<a name="microsoftdashboardgrafana"></a>
@@ -386,7 +386,7 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 * [Microsoft.NetApp/netAppAccounts/capacityPools/volumes](Microsoft-NetApp-netAppAccounts-capacityPools-volumes-logs.md)
 
   
-### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknetworkmanagers"></a><a name="microsoftnetworknetworksecuritygroups"></a><a name="microsoftnetworknetworksecurityperimeters"></a><a name="microsoftnetworknetworksecurityperimetersprofiles"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworkpublicipprefixes"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualnetworks"></a>
+### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknetworkmanagers"></a><a name="microsoftnetworknetworksecuritygroups"></a><a name="microsoftnetworknetworksecurityperimeters"></a><a name="microsoftnetworknetworksecurityperimetersprofiles"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualnetworks"></a>
   
   * [Microsoft.Network/applicationgateways](Microsoft-Network-applicationgateways-logs.md)
 * [Microsoft.Network/azureFirewalls](Microsoft-Network-azureFirewalls-logs.md)
@@ -398,7 +398,6 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 * [Microsoft.Network/networkSecurityPerimeters](Microsoft-Network-networkSecurityPerimeters-logs.md)
 * [Microsoft.Network/networkSecurityPerimeters/profiles](Microsoft-Network-networkSecurityPerimeters-profiles-logs.md)
 * [Microsoft.Network/publicIPAddresses](Microsoft-Network-publicIPAddresses-logs.md)
-* [Microsoft.Network/publicIPPrefixes](Microsoft-Network-publicIPPrefixes-logs.md)
 * [Microsoft.Network/trafficManagerProfiles](Microsoft-Network-trafficManagerProfiles-logs.md)
 * [Microsoft.Network/virtualNetworks](Microsoft-Network-virtualNetworks-logs.md)
 

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 10/02/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.MobileNetwork/packetcorecontrolplanes, naam
@@ -10,7 +10,7 @@ ms.custom: Microsoft.MobileNetwork/packetcorecontrolplanes, naam
   
 |Metric|Name|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|Active Session Count<p><p>Number of active PDU/PDN sessions |`ActiveSessionCount` |Count |Total |3gppGen, SiteId, RanId, Dnn|PT1M |No|
+|Active Session Count<p><p>Number of active PDU/PDN sessions |`ActiveSessionCount` |Count |Total |3gppGen, SiteId|PT1M |No|
 |Authentication Attempts<p><p>4G/5G authentication attempts rate (per minute) |`AuthAttempt` |Count |Total |3gppGen, SiteId|PT1M |No|
 |Authentication Failures<p><p>4G/5G authentication failure rate (per minute) |`AuthFailure` |Count |Total |3gppGen, SiteId, Result|PT1M |No|
 |Authentication Successes<p><p>4G/5G authentication success rate (per minute) |`AuthSuccess` |Count |Total |3gppGen, SiteId|PT1M |No|

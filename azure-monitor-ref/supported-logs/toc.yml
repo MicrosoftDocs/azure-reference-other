@@ -32,8 +32,6 @@ items:
     href: ../supported-logs/microsoft-avs-privateClouds-logs.md
   - name: Microsoft.AzureDataTransfer/connections/flows
     href: ../supported-logs/Microsoft-AzureDataTransfer-connections-flows-logs.md
-  - name: microsoft.azureplaywrightservice/accounts
-    href: ../supported-logs/microsoft-azureplaywrightservice-accounts-logs.md
   - name: microsoft.azuresphere/catalogs
     href: ../supported-logs/microsoft-azuresphere-catalogs-logs.md
   - name: Microsoft.Batch/batchaccounts
@@ -86,6 +84,8 @@ items:
     href: ../supported-logs/Microsoft-ContainerService-managedClusters-logs.md
   - name: Microsoft.CustomProviders/resourceproviders
     href: ../supported-logs/Microsoft-CustomProviders-resourceproviders-logs.md
+  - name: Microsoft.D365CustomerInsights/instances
+    href: ../supported-logs/Microsoft-D365CustomerInsights-instances-logs.md
   - name: Microsoft.Dashboard/grafana
     href: ../supported-logs/Microsoft-Dashboard-grafana-logs.md
   - name: Microsoft.Databricks/workspaces
@@ -218,8 +218,6 @@ items:
     href: ../supported-logs/microsoft-network-p2svpngateways-logs.md
   - name: Microsoft.Network/publicIPAddresses
     href: ../supported-logs/Microsoft-Network-publicIPAddresses-logs.md
-  - name: Microsoft.Network/publicIPPrefixes
-    href: ../supported-logs/Microsoft-Network-publicIPPrefixes-logs.md
   - name: Microsoft.Network/trafficManagerProfiles
     href: ../supported-logs/Microsoft-Network-trafficManagerProfiles-logs.md
   - name: microsoft.network/virtualnetworkgateways
