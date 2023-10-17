@@ -6,7 +6,7 @@ services: azure-monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.custom: ignite-2022
-ms.date: 09/19/2023
+ms.date: 10/02/2023
 ms.author: edbaynash
 ms.reviewer: priyamishra
 ---
@@ -16,7 +16,7 @@ ms.reviewer: priyamishra
 > [!NOTE]
 > This list is largely auto-generated. Any modification made to this list via GitHub might be written over without warning. Contact the author of this article for details on how to make permanent updates.
 
-Date list was last updated: 09/19/2023.
+Date list was last updated: 10/02/2023.
 
 Azure Monitor provides several ways to interact with metrics, including charting them in the Azure portal, accessing them through the REST API, or querying them by using PowerShell or the Azure CLI (Command Line Interface).  
 
@@ -423,10 +423,9 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 * [Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments](Microsoft-MachineLearningServices-workspaces-onlineEndpoints-deployments-metrics.md)
 
   
-### Microsoft.ManagedNetworkFabric<a name="microsoftmanagednetworkfabricinternetgateways"></a><a name="microsoftmanagednetworkfabricl3isolationdomains"></a><a name="microsoftmanagednetworkfabricnetworkdevices"></a>
+### Microsoft.ManagedNetworkFabric<a name="microsoftmanagednetworkfabricinternetgateways"></a><a name="microsoftmanagednetworkfabricnetworkdevices"></a>
   
   * [Microsoft.ManagedNetworkFabric/internetGateways](Microsoft-ManagedNetworkFabric-internetGateways-metrics.md)
-* [Microsoft.ManagedNetworkFabric/l3IsolationDomains](Microsoft-ManagedNetworkFabric-l3IsolationDomains-metrics.md)
 * [Microsoft.ManagedNetworkFabric/networkDevices](Microsoft-ManagedNetworkFabric-networkDevices-metrics.md)
 
   
@@ -466,7 +465,7 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 * [Microsoft.NetApp/netAppAccounts/capacityPools/volumes](Microsoft-NetApp-netAppAccounts-capacityPools-volumes-metrics.md)
 
   
-### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkconnections"></a><a name="microsoftnetworkdnsforwardingrulesets"></a><a name="microsoftnetworkdnsresolvers"></a><a name="microsoftnetworkdnszones"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkexpressroutecircuitspeerings"></a><a name="microsoftnetworkexpressrouteports"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknatgateways"></a><a name="microsoftnetworknetworkinterfaces"></a><a name="microsoftnetworknetworkwatchersconnectionmonitors"></a><a name="microsoftnetworkprivatednszones"></a><a name="microsoftnetworkprivateendpoints"></a><a name="microsoftnetworkprivatelinkservices"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworkpublicipprefixes"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualhubs"></a><a name="microsoftnetworkvirtualnetworks"></a><a name="microsoftnetworkvirtualrouters"></a>
+### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkconnections"></a><a name="microsoftnetworkdnsforwardingrulesets"></a><a name="microsoftnetworkdnsresolvers"></a><a name="microsoftnetworkdnszones"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkexpressroutecircuitspeerings"></a><a name="microsoftnetworkexpressrouteports"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknatgateways"></a><a name="microsoftnetworknetworkinterfaces"></a><a name="microsoftnetworknetworkwatchersconnectionmonitors"></a><a name="microsoftnetworkprivatednszones"></a><a name="microsoftnetworkprivateendpoints"></a><a name="microsoftnetworkprivatelinkservices"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualhubs"></a><a name="microsoftnetworkvirtualnetworks"></a><a name="microsoftnetworkvirtualrouters"></a>
   
   * [Microsoft.Network/applicationgateways](Microsoft-Network-applicationgateways-metrics.md)
 * [Microsoft.Network/azureFirewalls](Microsoft-Network-azureFirewalls-metrics.md)
@@ -486,7 +485,6 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 * [Microsoft.Network/privateEndpoints](Microsoft-Network-privateEndpoints-metrics.md)
 * [Microsoft.Network/privateLinkServices](Microsoft-Network-privateLinkServices-metrics.md)
 * [Microsoft.Network/publicIPAddresses](Microsoft-Network-publicIPAddresses-metrics.md)
-* [Microsoft.Network/publicIPPrefixes](Microsoft-Network-publicIPPrefixes-metrics.md)
 * [Microsoft.Network/trafficManagerProfiles](Microsoft-Network-trafficManagerProfiles-metrics.md)
 * [Microsoft.Network/virtualHubs](Microsoft-Network-virtualHubs-metrics.md)
 * [Microsoft.Network/virtualNetworks](Microsoft-Network-virtualNetworks-metrics.md)
@@ -529,12 +527,11 @@ This latest update adds a new column and reorders the metrics to be alphabetical
   * [Microsoft.OperationalInsights/workspaces](Microsoft-OperationalInsights-workspaces-metrics.md)
 
   
-### Microsoft.Orbital<a name="microsoftorbitalcontactprofiles"></a><a name="microsoftorbitall2connections"></a><a name="microsoftorbitalspacecrafts"></a><a name="microsoftorbitalterminals"></a>
+### Microsoft.Orbital<a name="microsoftorbitalcontactprofiles"></a><a name="microsoftorbitall2connections"></a><a name="microsoftorbitalspacecrafts"></a>
   
   * [Microsoft.Orbital/contactProfiles](Microsoft-Orbital-contactProfiles-metrics.md)
 * [Microsoft.Orbital/l2Connections](Microsoft-Orbital-l2Connections-metrics.md)
 * [Microsoft.Orbital/spacecrafts](Microsoft-Orbital-spacecrafts-metrics.md)
-* [Microsoft.Orbital/terminals](Microsoft-Orbital-terminals-metrics.md)
 
   
 ### Microsoft.Peering<a name="microsoftpeeringpeerings"></a><a name="microsoftpeeringpeeringservices"></a>

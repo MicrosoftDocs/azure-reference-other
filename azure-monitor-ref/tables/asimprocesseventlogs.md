@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 10/16/2023
 ---
 
 # ASimProcessEventLogs
@@ -18,7 +18,7 @@ The Microsoft Sentinel process events normalized table stores events using the P
 - Security
 ## Solutions
 
-- LogManagement
+- SecurityInsights
 ## Resource types
 
 - Microsoft Sentinel Process Event ASim schema
