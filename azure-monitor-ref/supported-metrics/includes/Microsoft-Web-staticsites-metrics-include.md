@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 10/02/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Web/staticsites, naam
@@ -16,8 +16,6 @@ ms.custom: Microsoft.Web/staticsites, naam
 |CdnRequestCount<p><p>CdnRequestCount |`CdnRequestCount` |Count |Total |No Dimensions|PT5M, PT1H, P1D |Yes|
 |CdnResponseSize<p><p>CdnResponseSize |`CdnResponseSize` |Bytes |Total |No Dimensions|PT5M, PT1H, P1D |Yes|
 |CdnTotalLatency<p><p>CdnTotalLatency |`CdnTotalLatency` |MilliSeconds |Total |No Dimensions|PT5M, PT1H, P1D |Yes|
-|DataApiErrors<p><p>DataApiErrors |`DataApiErrors` |Count |Total |No Dimensions|PT5M, PT1H, P1D |Yes|
-|DataApiHits<p><p>DataApiHits |`DataApiHits` |Count |Total |No Dimensions|PT5M, PT1H, P1D |Yes|
 |FunctionErrors<p><p>FunctionErrors |`FunctionErrors` |Count |Total |No Dimensions|PT5M, PT1H, P1D |Yes|
 |FunctionHits<p><p>FunctionHits |`FunctionHits` |Count |Total |No Dimensions|PT5M, PT1H, P1D |Yes|
 |SiteErrors<p><p>SiteErrors |`SiteErrors` |Count |Total |No Dimensions|PT5M, PT1H, P1D |Yes|

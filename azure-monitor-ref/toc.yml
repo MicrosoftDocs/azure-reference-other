@@ -171,6 +171,12 @@ items:
         href: tables/afsauditlogs.md
       - name: AGSGrafanaLoginEvents
         href: tables/agsgrafanaloginevents.md
+      - name: AGWAccessLogs
+        href: tables/agwaccesslogs.md
+      - name: AGWFirewallLogs
+        href: tables/agwfirewalllogs.md
+      - name: AGWPerformanceLogs
+        href: tables/agwperformancelogs.md
       - name: AHDSDicomAuditLogs
         href: tables/ahdsdicomauditlogs.md
       - name: AHDSDicomDiagnosticLogs
@@ -201,6 +207,8 @@ items:
         href: tables/asimdhcpeventlogs.md
       - name: ASimDnsActivityLogs
         href: tables/asimdnsactivitylogs.md
+      - name: ASimFileEventLogs
+        href: tables/asimfileeventlogs.md
       - name: ASimNetworkSessionLogs
         href: tables/asimnetworksessionlogs.md
       - name: ASimProcessEventLogs
@@ -445,6 +453,8 @@ items:
         href: tables/azureloadtestingoperation.md
       - name: AzureMetrics
         href: tables/azuremetrics.md
+      - name: AzureMetricsV2
+        href: tables/azuremetricsv2.md
       - name: BehaviorAnalytics
         href: tables/behavioranalytics.md
       - name: BlockchainApplicationLog
@@ -995,6 +1005,8 @@ items:
         href: tables/securescorecontrols.md
       - name: SecureScores
         href: tables/securescores.md
+      - name: SecurityAttackPathData
+        href: tables/securityattackpathdata.md
       - name: SecurityBaseline
         href: tables/securitybaseline.md
       - name: SecurityBaselineSummary
@@ -1169,6 +1181,8 @@ items:
         href: tables/useraccessanalytics.md
       - name: UserPeerAnalytics
         href: tables/userpeeranalytics.md
+      - name: VCoreMongoRequests
+        href: tables/vcoremongorequests.md
       - name: VIAudit
         href: tables/viaudit.md
       - name: VIIndexing

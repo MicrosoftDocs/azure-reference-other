@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 10/02/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/cassandraClusters, naam
@@ -39,12 +39,6 @@ ms.custom: Microsoft.DocumentDB/cassandraClusters, naam
 |Commit latency on waiting average (microseconds).<p><p>Average time spent waiting on CL fsync (microseconds); for Periodic this is only occurs when the sync is lagging its sync interval. |`cassandra_commit_log_waiting_on_commit_latency_histogram` |Count |Average |cassandra_datacenter, cassandra_node, quantile|PT1M |No|
 |prepared statements executed<p><p>Total number of prepared statements executed. |`cassandra_cql_prepared_statements_executed` |Count |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node|PT1M |No|
 |regular statements executed<p><p>Total number of non prepared statements executed. |`cassandra_cql_regular_statements_executed` |Count |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node|PT1M |No|
-|cross-node dropped latency<p><p>Average dropped latency across nodes. |`cassandra_dropped_message_cross_node_latency` |MilliSeconds |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node, message_type|PT1M |No|
-|internal dropped latency<p><p>Average dropped latency within node. |`cassandra_dropped_message_internal_latency` |MilliSeconds |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node, message_type|PT1M |No|
-|dropped messages rate<p><p>Rate of dropped messages. |`cassandra_dropped_message_rate` |Count |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node, message_type|PT1M |No|
-|hints failed rate<p><p>Rate of the hints that failed deliver. |`cassandra_hints_failed_rate` |Count |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node|PT1M |No|
-|hints succeeded rate<p><p>Rate of the hints successfully delivered. |`cassandra_hints_succeeded_rate` |Count |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node|PT1M |No|
-|hints timed out rate<p><p>Rate of the hints that timed out. |`cassandra_hints_timed_out_rate` |Count |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node|PT1M |No|
 |jvm gc count<p><p>Total number of collections that have occurred. |`cassandra_jvm_gc_count` |Count |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node|PT1M |No|
 |jvm gc time<p><p>Approximate accumulated collection elapsed time. |`cassandra_jvm_gc_time` |MilliSeconds |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node|PT1M |No|
 |all memtables live data size<p><p>Total amount of live data stored in the memtables (2i and pending flush memtables included) that resides off-heap, excluding any data structure overhead. |`cassandra_table_all_memtables_live_data_size` |Bytes |Average, Minimum, Maximum, Count |cassandra_datacenter, cassandra_node, table, keyspace|PT1M |No|

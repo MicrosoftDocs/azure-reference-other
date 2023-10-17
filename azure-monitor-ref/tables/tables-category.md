@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/18/2023
+ms.date: 10/16/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -49,6 +49,9 @@ ms.date: 09/18/2023
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AFSAuditLogs](afsauditlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
+- [AGWAccessLogs](agwaccesslogs.md)
+- [AGWFirewallLogs](agwfirewalllogs.md)
+- [AGWPerformanceLogs](agwperformancelogs.md)
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
 - [AMSLiveEventOperations](amsliveeventoperations.md)
@@ -136,6 +139,7 @@ ms.date: 09/18/2023
 - [AlertHistory](alerthistory.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
+- [AzureMetricsV2](azuremetricsv2.md)
 - [ComputerGroup](computergroup.md)
 - [Operation](operation.md)
 - [Usage](usage.md)
@@ -190,6 +194,9 @@ ms.date: 09/18/2023
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AFSAuditLogs](afsauditlogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
+- [AGWAccessLogs](agwaccesslogs.md)
+- [AGWFirewallLogs](agwfirewalllogs.md)
+- [AGWPerformanceLogs](agwperformancelogs.md)
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
 - [AHDSDicomDiagnosticLogs](ahdsdicomdiagnosticlogs.md)
 - [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
@@ -273,6 +280,7 @@ ms.date: 09/18/2023
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [AzureMetrics](azuremetrics.md)
+- [AzureMetricsV2](azuremetricsv2.md)
 - [BlockchainApplicationLog](blockchainapplicationlog.md)
 - [BlockchainProxyLog](blockchainproxylog.md)
 - [CCFApplicationLogs](ccfapplicationlogs.md)
@@ -551,6 +559,9 @@ ms.date: 09/18/2023
 
 
 ### Network
+- [AGWAccessLogs](agwaccesslogs.md)
+- [AGWFirewallLogs](agwfirewalllogs.md)
+- [AGWPerformanceLogs](agwperformancelogs.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -588,6 +599,7 @@ ms.date: 09/18/2023
 - [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
+- [ASimFileEventLogs](asimfileeventlogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [ASimProcessEventLogs](asimprocesseventlogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
