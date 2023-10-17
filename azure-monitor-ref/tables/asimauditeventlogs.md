@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 10/16/2023
 ---
 
 # ASimAuditEventLogs
@@ -18,7 +18,7 @@ Microsoft Sentinel normalized audit events table. Stores events associated with 
 - Security
 ## Solutions
 
-- LogManagement
+- SecurityInsights
 ## Resource types
 
 - Microsoft Sentinel Audit Event ASim schema

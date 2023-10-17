@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 10/16/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ASimProcessEventLogs
@@ -99,6 +99,8 @@ ms.custom: ASimProcessEventLogs
 | ParentProcessSHA512 | string | The SHA-512 hash of the parent process image file. |
 | ParentProcessTokenElevation | string | A token indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the parent process. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| RuleName | string | The name or ID of the rule by associated with the inspection results. |
+| RuleNumber | int | The number of the rule associated with the inspection results. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TargetOriginalUserType | string | The user type as reported by the reporting device. |
@@ -136,5 +138,16 @@ ms.custom: ASimProcessEventLogs
 | TargetUserSessionId | string | The unique ID of the sign-in session of the Target actor. |
 | TargetUserType | string | The type of the Target actor. |
 | TenantId | string | The Log Analytics workspace ID |
+| ThreatCategory | string | The category of the threat or malware identified in activity. |
+| ThreatConfidence | int | The confidence level of the threat identified, normalized to a value between 0 and a 100. |
+| ThreatField | string | The field for which a threat was identified. |
+| ThreatFirstReportedTime | datetime | The first time the IP address or domain were identified as a threat. |
+| ThreatId | string | The ID of the threat or malware identified in the activity. |
+| ThreatIsActive | bool | True ID the threat identified is considered an active threat. |
+| ThreatLastReportedTime | datetime | The last time the IP address or domain were identified as a threat. |
+| ThreatName | string | The name of the threat or malware identified in the activity. |
+| ThreatOriginalConfidence | string | The original confidence level of the threat identified, as reported by the reporting device. |
+| ThreatOriginalRiskLevel | string | The risk level as reported by the reporting device. |
+| ThreatRiskLevel | int | The risk level associated with the identified threat. The level should be a number between 0 and 100. |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Type | string | The name of the table |

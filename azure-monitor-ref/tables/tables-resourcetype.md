@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 09/18/2023
+ms.date: 10/16/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -50,6 +50,9 @@ Microsoft.Web/sites
 Microsoft.Network/applicationGateways
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [AGWAccessLogs](agwaccesslogs.md)
+- [AGWPerformanceLogs](agwperformancelogs.md)
+- [AGWFirewallLogs](agwfirewalllogs.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
 
@@ -213,6 +216,11 @@ Microsoft.DocumentDb/databaseAccounts
 - [CDBControlPlaneRequests](cdbcontrolplanerequests.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
+
+
+### Azure Cosmos DB for MongoDB (vCore)
+Microsoft.DocumentDB/mongoClusters
+- [vCoreMongoRequests](vcoremongorequests.md)
 
 
 ### Azure Data Explorer Clusters
@@ -392,6 +400,11 @@ Microsoft.SecurityInsights/securityInsights
 ### Azure Sentinel CEF Table
 Microsoft.SecurityInsights/CEF
 - [CommonSecurityLog](commonsecuritylog.md)
+
+
+### Azure Sentinel File Event Logs
+Microsoft.SecurityInsights/FileEventLogs
+- [ASimFileEventLogs](asimfileeventlogs.md)
 
 
 ### Azure Sentinel Web Session Logs
@@ -872,6 +885,7 @@ Microsoft.Network/LoadBalancers
 ### Log Analytics workspaces
 Microsoft.OperationalInsights/Workspaces
 - [LAQueryLogs](laquerylogs.md)
+- [AzureMetricsV2](azuremetricsv2.md)
 
 
 ### Logic Apps
