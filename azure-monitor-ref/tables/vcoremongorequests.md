@@ -6,13 +6,16 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/16/2023
+ms.date: 10/23/2023
 ---
 
 # VCoreMongoRequests
 
 This table details data plane requests for MongoDB (vCore).
 
+## Categories
+
+- Audit
 ## Solutions
 
 - LogManagement
