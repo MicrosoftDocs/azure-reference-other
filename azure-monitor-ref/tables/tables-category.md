@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/16/2023
+ms.date: 10/23/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -33,6 +33,7 @@ ms.date: 10/16/2023
 ### Audit
 - [AACAudit](aacaudit.md)
 - [AADB2CRequestLogs](aadb2crequestlogs.md)
+- [AADCustomSecurityAttributeAuditLogs](aadcustomsecurityattributeauditlogs.md)
 - [AADManagedIdentitySignInLogs](aadmanagedidentitysigninlogs.md)
 - [AADNonInteractiveUserSignInLogs](aadnoninteractiveusersigninlogs.md)
 - [AADProvisioningLogs](aadprovisioninglogs.md)
@@ -130,6 +131,7 @@ ms.date: 10/16/2023
 - [PowerPlatformDlpActivity](powerplatformdlpactivity.md)
 - [REDConnectionEvents](redconnectionevents.md)
 - [SentinelAudit](sentinelaudit.md)
+- [VCoreMongoRequests](vcoremongorequests.md)
 - [VIAudit](viaudit.md)
 - [Windows365AuditLogs](windows365auditlogs.md)
 
@@ -327,6 +329,7 @@ ms.date: 10/16/2023
 - [DatabricksSecrets](databrickssecrets.md)
 - [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
+- [DevCenterBillingEventLogs](devcenterbillingeventlogs.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
 - [FailedIngestion](failedingestion.md)
@@ -581,6 +584,7 @@ ms.date: 10/16/2023
 
 ### Security
 - [AADB2CRequestLogs](aadb2crequestlogs.md)
+- [AADCustomSecurityAttributeAuditLogs](aadcustomsecurityattributeauditlogs.md)
 - [AADDomainServicesAccountLogon](aaddomainservicesaccountlogon.md)
 - [AADDomainServicesAccountManagement](aaddomainservicesaccountmanagement.md)
 - [AADDomainServicesDirectoryServiceAccess](aaddomainservicesdirectoryserviceaccess.md)
@@ -598,10 +602,13 @@ ms.date: 10/16/2023
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [ASimAuditEventLogs](asimauditeventlogs.md)
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
+- [ASimDhcpEventLogs](asimdhcpeventlogs.md)
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 - [ASimFileEventLogs](asimfileeventlogs.md)
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 - [ASimProcessEventLogs](asimprocesseventlogs.md)
+- [ASimRegistryEventLogs](asimregistryeventlogs.md)
+- [ASimUserManagementActivityLogs](asimusermanagementactivitylogs.md)
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
 - [AWSCloudTrail](awscloudtrail.md)
 - [AWSCloudWatch](awscloudwatch.md)
@@ -679,6 +686,7 @@ ms.date: 10/16/2023
 - [ProtectionStatus](protectionstatus.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [SecurityAlert](securityalert.md)
+- [SecurityAttackPathData](securityattackpathdata.md)
 - [SecurityBaseline](securitybaseline.md)
 - [SecurityBaselineSummary](securitybaselinesummary.md)
 - [SecurityDetection](securitydetection.md)
