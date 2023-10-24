@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/16/2023
+ms.date: 10/23/2023
 ---
 
 # ASimFileEventLogs
@@ -21,7 +21,7 @@ The Advanced Security Information Model (ASIM) File Event normalization schema d
 - SecurityInsights
 ## Resource types
 
-- Azure Sentinel File Event Logs
+- Microsoft Sentinel ASim
 
             
 
