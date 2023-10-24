@@ -1,14 +1,19 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 10/18/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.PowerBIDedicated/capacities, arm
 ---
+<!--
+NOTE:  This content is automatically generated using API calls to Azure. 
+Any edits made on these files will be overwritten in the next run of the script. 
+There is no benefit in editing these files directly.  
+-->
   
   
-|Metric|Name|Unit|Aggregation|Dimensions|Time Grains|DS Export|
+|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|CPU (Gen2)<p><p>CPU Utilization. Supported only for Power BI Embedded Generation 2 resources. |`cpu_metric` |Percent |Average |No Dimensions|PT1M |Yes|
-|Overload (Gen2)<p><p>Resource Overload, 1 if resource is overloaded, otherwise 0. Supported only for Power BI Embedded Generation 2 resources. |`overload_metric` |Count |Average |No Dimensions|PT1M |Yes|
+|**CPU (Gen2)**<p><p>CPU Utilization. Supported only for Power BI Embedded Generation 2 resources. |`cpu_metric` |Percent |Average |\<none\>|PT1M |Yes|
+|**Overload (Gen2)**<p><p>Resource Overload, 1 if resource is overloaded, otherwise 0. Supported only for Power BI Embedded Generation 2 resources. |`overload_metric` |Count |Average |\<none\>|PT1M |Yes|

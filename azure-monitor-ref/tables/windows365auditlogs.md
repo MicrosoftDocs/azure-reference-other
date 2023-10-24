@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/18/2023
+ms.date: 10/23/2023
 ---
 
 # Windows365AuditLogs
@@ -21,7 +21,7 @@ Windows365 Audit Logs.
 - LogManagement
 ## Resource types
 
-- Windows365 Audit Logs
+- Intune Specialist Reports.
 
             
 

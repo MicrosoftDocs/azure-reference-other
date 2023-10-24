@@ -1,14 +1,19 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 10/18/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.MixedReality/remoteRenderingAccounts, arm
 ---
+<!--
+NOTE:  This content is automatically generated using API calls to Azure. 
+Any edits made on these files will be overwritten in the next run of the script. 
+There is no benefit in editing these files directly.  
+-->
   
   
-|Metric|Name|Unit|Aggregation|Dimensions|Time Grains|DS Export|
+|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|Active Rendering Sessions<p><p>Total number of active rendering sessions |`ActiveRenderingSessions` |Count |Average, Minimum, Maximum |SessionType, SDKVersion|PT1M, PT5M, PT1H, PT12H, P1D |Yes|
-|Assets Converted<p><p>Total number of assets converted |`AssetsConverted` |Count |Total |SDKVersion|PT1M, PT5M, PT1H, PT12H, P1D |Yes|
+|**Active Rendering Sessions**<p><p>Total number of active rendering sessions |`ActiveRenderingSessions` |Count |Average, Minimum, Maximum |`SessionType`, `SDKVersion`|PT1M, PT5M, PT1H, PT12H, P1D |Yes|
+|**Assets Converted**<p><p>Total number of assets converted |`AssetsConverted` |Count |Total |`SDKVersion`|PT1M, PT5M, PT1H, PT12H, P1D |Yes|

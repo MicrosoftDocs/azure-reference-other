@@ -1,13 +1,18 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 10/18/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Dashboard/grafana, naam
 ---
+<!--
+NOTE:  This content is automatically generated using API calls to Azure. 
+Any edits made on these files will be overwritten in the next run of the script. 
+There is no benefit in editing these files directly.  
+-->
   
   
-|Metric|Name|Unit|Aggregation|Dimensions|Time Grains|DS Export|
+|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|HttpRequestCount<p><p>Number of HTTP requests to Azure Managed Grafana server |`HttpRequestCount` |Count |Count |No Dimensions|PT1M |No|
+|**HttpRequestCount**<p><p>Number of HTTP requests to Azure Managed Grafana server |`HttpRequestCount` |Count |Count |\<none\>|PT1M |No|
