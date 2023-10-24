@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 10/16/2023
+ms.date: 10/23/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -220,7 +220,7 @@ Microsoft.DocumentDb/databaseAccounts
 
 ### Azure Cosmos DB for MongoDB (vCore)
 Microsoft.DocumentDB/mongoClusters
-- [vCoreMongoRequests](vcoremongorequests.md)
+- [VCoreMongoRequests](vcoremongorequests.md)
 
 
 ### Azure Data Explorer Clusters
@@ -400,11 +400,6 @@ Microsoft.SecurityInsights/securityInsights
 ### Azure Sentinel CEF Table
 Microsoft.SecurityInsights/CEF
 - [CommonSecurityLog](commonsecuritylog.md)
-
-
-### Azure Sentinel File Event Logs
-Microsoft.SecurityInsights/FileEventLogs
-- [ASimFileEventLogs](asimfileeventlogs.md)
 
 
 ### Azure Sentinel Web Session Logs
@@ -676,6 +671,7 @@ Microsoft.DevCenter/devcenters
 - [AzureMetrics](azuremetrics.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
+- [DevCenterBillingEventLogs](devcenterbillingeventlogs.md)
 
 
 ### Device Provisioning Services
@@ -740,6 +736,7 @@ Microsoft.EventGrid/topics
 Microsoft.EventHub/namespaces
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
 - [AZMSOperationalLogs](azmsoperationallogs.md)
 - [AZMSRunTimeAuditLogs](azmsruntimeauditlogs.md)
@@ -749,7 +746,6 @@ Microsoft.EventHub/namespaces
 - [AZMSKafkaCoordinatorLogs](azmskafkacoordinatorlogs.md)
 - [AZMSKafkaUserErrorLogs](azmskafkausererrorlogs.md)
 - [AZMSCustomerManagedKeyUserLogs](azmscustomermanagedkeyuserlogs.md)
-- [AzureDiagnostics](azurediagnostics.md)
 
 
 ### Experiment Workspace
@@ -833,6 +829,11 @@ Microsoft.HealthcareApis/workspaces
 - [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
 - [AHDSDicomDiagnosticLogs](ahdsdicomdiagnosticlogs.md)
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
+
+
+### Intune Specialist Reports.
+microsoft.intune/operations
+- [Windows365AuditLogs](windows365auditlogs.md)
 
 
 ### IoT Hub
@@ -970,11 +971,24 @@ Microsoft.SecurityInsights/Purview
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
 
+### Microsoft Defender for Cloud
+Microsoft.Security/Security
+- [SecurityAttackPathData](securityattackpathdata.md)
+
+
 ### Microsoft Graph Logs
 Microsoft.Graph/tenants
 - [AzureActivity](azureactivity.md)
 - [SigninLogs](signinlogs.md)
 - [AuditLogs](auditlogs.md)
+
+
+### Microsoft Sentinel ASim
+Microsoft.SecurityInsights/ASimTables
+- [ASimDhcpEventLogs](asimdhcpeventlogs.md)
+- [ASimFileEventLogs](asimfileeventlogs.md)
+- [ASimUserManagementActivityLogs](asimusermanagementactivitylogs.md)
+- [ASimRegistryEventLogs](asimregistryeventlogs.md)
 
 
 ### Microsoft Sentinel Audit Event ASim schema
@@ -1148,11 +1162,11 @@ Microsoft.Search/searchServices
 Microsoft.ServiceBus/namespaces
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [AzureDiagnostics](azurediagnostics.md)
 - [AZMSOperationalLogs](azmsoperationallogs.md)
 - [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
 - [AZMSRunTimeAuditLogs](azmsruntimeauditlogs.md)
 - [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
-- [AzureDiagnostics](azurediagnostics.md)
 
 
 ### Service Fabric Clusters
@@ -1418,11 +1432,6 @@ Microsoft.ConenctedVMwarevSphere/VirtualMachines
 - [InsightsMetrics](insightsmetrics.md)
 - [HealthStateChangeEvent](healthstatechangeevent.md)
 - [CommonSecurityLog](commonsecuritylog.md)
-
-
-### Windows365 Audit Logs
-microsoft.intune/windows365auditlogs
-- [Windows365AuditLogs](windows365auditlogs.md)
 
 
 ### Workload Monitor

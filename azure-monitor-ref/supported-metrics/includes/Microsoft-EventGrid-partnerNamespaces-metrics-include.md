@@ -1,16 +1,21 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 10/18/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.EventGrid/partnerNamespaces, naam
 ---
+<!--
+NOTE:  This content is automatically generated using API calls to Azure. 
+Any edits made on these files will be overwritten in the next run of the script. 
+There is no benefit in editing these files directly.  
+-->
   
   
-|Metric|Name|Unit|Aggregation|Dimensions|Time Grains|DS Export|
+|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|Publish Failed Events<p><p>Total events failed to publish to this partner namespace |`PublishFailCount` |Count |Total |ErrorType, Error|PT1M |Yes|
-|Published Events<p><p>Total events published to this partner namespace |`PublishSuccessCount` |Count |Total |No Dimensions|PT1M |Yes|
-|Publish Success Latency<p><p>Publish success latency in milliseconds |`PublishSuccessLatencyInMs` |MilliSeconds |Total |No Dimensions|PT1M |Yes|
-|Unmatched Events<p><p>Total events not matching any of the partner topics |`UnmatchedEventCount` |Count |Total |No Dimensions|PT1M |Yes|
+|**Publish Failed Events**<p><p>Total events failed to publish to this partner namespace |`PublishFailCount` |Count |Total |`ErrorType`, `Error`|PT1M |Yes|
+|**Published Events**<p><p>Total events published to this partner namespace |`PublishSuccessCount` |Count |Total |\<none\>|PT1M |Yes|
+|**Publish Success Latency**<p><p>Publish success latency in milliseconds |`PublishSuccessLatencyInMs` |MilliSeconds |Total |\<none\>|PT1M |Yes|
+|**Unmatched Events**<p><p>Total events not matching any of the partner topics |`UnmatchedEventCount` |Count |Total |\<none\>|PT1M |Yes|
