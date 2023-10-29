@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 10/29/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DigitalTwins/digitalTwinsInstances, arm
@@ -24,6 +24,8 @@ There is no benefit in editing these files directly.
 |**Data History Messages Routed (preview)**<p><p>The number of messages routed to a time series database. |`DataHistoryRouting` |Count |Total |`EndpointType`, `Result`|PT1M |Yes|
 |**Data History Routing Failure Rate (preview)**<p><p>The percentage of events that result in an error as they are routed from Azure Digital Twins to a time series database. |`DataHistoryRoutingFailureRate` |Percent |Average |`EndpointType`|PT1M |Yes|
 |**Data History Routing Latency (preview)**<p><p>Time elapsed between an event getting routed from Azure Digital Twins to when it is posted to a time series database. |`DataHistoryRoutingLatency` |Milliseconds |Average, Minimum, Maximum, Total |`EndpointType`, `Result`|PT1M |Yes|
+|**Delete Job Entity Count**<p><p>The number of models, twins, and relationships deleted by a delete job. |`DeleteJobEntityCount` |Count |Average, Minimum, Maximum, Total |`Operation`, `Result`|PT1M |Yes|
+|**Delete Job Latency**<p><p>Total time taken for a delete job to complete. |`DeleteJobLatency` |Milliseconds |Average, Minimum, Maximum, Total |`Operation`, `Authentication`, `Protocol`|PT1M |Yes|
 |**Import Job Entity Count**<p><p>The number of twins, models, or relationships processed by an import job. |`ImportJobEntityCount` |Count |Average, Minimum, Maximum, Total |`Operation`, `Result`|PT1M |Yes|
 |**Import Job Latency**<p><p>Total time taken for an import job to complete. |`ImportJobLatency` |Milliseconds |Average, Minimum, Maximum, Total |`Operation`, `Authentication`, `Protocol`|PT1M |Yes|
 |**Ingress Events**<p><p>The number of incoming telemetry events into Azure Digital Twins. |`IngressEvents` |Count |Total |`Result`|PT1M |Yes|

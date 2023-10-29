@@ -204,6 +204,8 @@ items:
     href: ../supported-logs/Microsoft-Network-azureFirewalls-logs.md
   - name: microsoft.network/bastionHosts
     href: ../supported-logs/microsoft-network-bastionHosts-logs.md
+  - name: Microsoft.Network/dnsResolverPolicies
+    href: ../supported-logs/Microsoft-Network-dnsResolverPolicies-logs.md
   - name: Microsoft.Network/expressRouteCircuits
     href: ../supported-logs/Microsoft-Network-expressRouteCircuits-logs.md
   - name: Microsoft.Network/frontdoors
@@ -232,6 +234,8 @@ items:
     href: ../supported-logs/Microsoft-Network-virtualNetworks-logs.md
   - name: microsoft.network/vpngateways
     href: ../supported-logs/microsoft-network-vpngateways-logs.md
+  - name: Microsoft.NetworkAnalytics/DataProducts
+    href: ../supported-logs/Microsoft-NetworkAnalytics-DataProducts-logs.md
   - name: Microsoft.NetworkCloud/bareMetalMachines
     href: ../supported-logs/Microsoft-NetworkCloud-bareMetalMachines-logs.md
   - name: Microsoft.NetworkCloud/clusters

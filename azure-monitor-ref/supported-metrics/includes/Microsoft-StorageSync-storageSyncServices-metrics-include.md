@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 10/29/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.StorageSync/storageSyncServices, arm
@@ -20,6 +20,7 @@ There is no benefit in editing these files directly.
 |**Cloud tiering cache hit rate**<p><p>Percentage of bytes that were served from the cache |`StorageSyncComputedCacheHitRate` |Percent |Average |`SyncGroupName`, `ServerName`, `ServerEndpointName`|PT1M |Yes|
 |**Cache data size by last access time**<p><p>Size of data by last access time |`StorageSyncDataSizeByAccessPattern` |Bytes |Average, Maximum, Minimum |`SyncGroupName`, `ServerName`, `ServerEndpointName`, `LastAccessTime`|PT1M |No|
 |**Cloud tiering size of data tiered by last maintenance job**<p><p>Size of data tiered during last maintenance job |`StorageSyncIncrementalTieredDataSizeBytes` |Bytes |Total, Average, Maximum, Minimum |`SyncGroupName`, `ServerName`, `ServerEndpointName`, `TieringReason`|PT1M |Yes|
+|**Cloud tiering low disk space mode**<p><p>Indicates if the server endpoint is in low disk space mode or not (1=yes; 0=no) |`StorageSyncLowDiskModeCount` |Count |Count, Minimum, Maximum, Total |`SyncGroupName`, `ServerName`, `ServerEndpointName`|PT1M |Yes|
 |**Cloud tiering recall success rate**<p><p>Percentage of all recalls that were successful |`StorageSyncRecallComputedSuccessRate` |Percent |Average |`SyncGroupName`, `ServerName`, `ServerEndpointName`|PT1M |Yes|
 |**Cloud tiering recall size by application**<p><p>Size of data recalled by application |`StorageSyncRecalledNetworkBytesByApplication` |Bytes |Average, Total |`SyncGroupName`, `ServerName`, `ApplicationName`|PT1M |Yes|
 |**Cloud tiering recall size**<p><p>Size of data recalled |`StorageSyncRecalledTotalNetworkBytes` |Bytes |Average, Total |`SyncGroupName`, `ServerName`, `ServerEndpointName`|PT1M |Yes|

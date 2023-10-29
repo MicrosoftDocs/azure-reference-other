@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 10/18/2023
+ms.date: 10/29/2023
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -23,9 +23,9 @@ A combination of the resource type (available in the `resourceId` property) and 
 
 ## Costs
 
-[Azure Monitor Log Analytics](https://azure.microsoft.com/pricing/details/monitor/), [Azure Storage](https://azure.microsoft.com/product-categories/storage/), [Azure Event Hubs](https://azure.microsoft.com/pricing/details/event-hubs/), and partners who integrate directly with Azure Monitor (for example, [Datadog](/azure/partner-solutions/datadog/overview)) have costs associated with ingesting data and storing data. Check the pricing pages linked in the previous sentence to understand the costs for those services. Resource logs are just one type of data that you can send to those locations. 
+[Azure Monitor Log Analytics](https://azure.microsoft.com/pricing/details/monitor/), [Azure Storage](https://azure.microsoft.com/product-categories/storage/), [Azure Event Hubs](https://azure.microsoft.com/pricing/details/event-hubs/), and partners who integrate directly with Azure Monitor (for example, [Datadog](/azure/partner-solutions/datadog/overview)) have costs associated with ingesting data and storing data. Check the pricing pages linked in the previous sentence to understand the costs for those services. Resource logs are just one type of data that you can send to those locations.  
 
-In addition, there might be costs to export some categories of resource logs to those locations. Logs with possible export costs are listed in the table in the next section. For more information on export pricing, see the **Platform Logs** section on the [Azure Monitor pricing page](https://azure.microsoft.com/pricing/details/monitor/).
+In addition, there might be costs to export some categories of resource logs to those locations. Logs with possible export costs are listed in the next section. Select the links below to see which log categories have export costs associated with them. For more information on export pricing, see the **Platform Logs** section on the [Azure Monitor pricing page](https://azure.microsoft.com/pricing/details/monitor/).
 
 ## Supported log categories per resource type
 
@@ -392,10 +392,11 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 * [Microsoft.NetApp/netAppAccounts/capacityPools/volumes](Microsoft-NetApp-netAppAccounts-capacityPools-volumes-logs.md)
 
   
-### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknetworkmanagers"></a><a name="microsoftnetworknetworksecuritygroups"></a><a name="microsoftnetworknetworksecurityperimeters"></a><a name="microsoftnetworknetworksecurityperimetersprofiles"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworkpublicipprefixes"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualnetworks"></a>
+### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkdnsresolverpolicies"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknetworkmanagers"></a><a name="microsoftnetworknetworksecuritygroups"></a><a name="microsoftnetworknetworksecurityperimeters"></a><a name="microsoftnetworknetworksecurityperimetersprofiles"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworkpublicipprefixes"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualnetworks"></a>
   
   * [Microsoft.Network/applicationgateways](Microsoft-Network-applicationgateways-logs.md)
 * [Microsoft.Network/azureFirewalls](Microsoft-Network-azureFirewalls-logs.md)
+* [Microsoft.Network/dnsResolverPolicies](Microsoft-Network-dnsResolverPolicies-logs.md)
 * [Microsoft.Network/expressRouteCircuits](Microsoft-Network-expressRouteCircuits-logs.md)
 * [Microsoft.Network/frontdoors](Microsoft-Network-frontdoors-logs.md)
 * [Microsoft.Network/loadBalancers](Microsoft-Network-loadBalancers-logs.md)
@@ -415,6 +416,11 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 * [microsoft.network/p2svpngateways](microsoft-network-p2svpngateways-logs.md)
 * [microsoft.network/virtualnetworkgateways](microsoft-network-virtualnetworkgateways-logs.md)
 * [microsoft.network/vpngateways](microsoft-network-vpngateways-logs.md)
+
+  
+### Microsoft.NetworkAnalytics<a name="microsoftnetworkanalyticsdataproducts"></a>
+  
+  * [Microsoft.NetworkAnalytics/DataProducts](Microsoft-NetworkAnalytics-DataProducts-logs.md)
 
   
 ### Microsoft.NetworkCloud<a name="microsoftnetworkcloudbaremetalmachines"></a><a name="microsoftnetworkcloudclusters"></a><a name="microsoftnetworkcloudstorageappliances"></a>
