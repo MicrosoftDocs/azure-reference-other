@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 10/30/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: AZFWApplicationRule
@@ -16,6 +16,7 @@ ms.custom: AZFWApplicationRule
 | DestinationPort | int | Request's destination port. |
 | Fqdn | string | Request's target address in FQDN (Fully qualified Domain Name). For example: www.microsoft.com. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| IsExplicitProxyRequest | bool | True if the request is received on an explicit proxy port. False otherwise. |
 | IsTlsInspected | bool | True if the connection is TLS inspected. False otherwise. |
 | Policy | string | Name of the policy in which the triggered rule resides. |
 | Protocol | string | Request's network protocol. For example: HTTP, HTTPS. |
