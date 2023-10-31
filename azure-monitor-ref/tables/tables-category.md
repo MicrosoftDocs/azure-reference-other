@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/23/2023
+ms.date: 10/30/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -46,6 +46,7 @@ ms.date: 10/23/2023
 - [ACRConnectedClientList](acrconnectedclientlist.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [ADPAudit](adpaudit.md)
+- [AEWAssignmentBlobLogs](aewassignmentbloblogs.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AFSAuditLogs](afsauditlogs.md)
@@ -192,6 +193,7 @@ ms.date: 10/23/2023
 - [ADTQueryOperation](adtqueryoperation.md)
 - [ADXJournal](adxjournal.md)
 - [ADXTableDetails](adxtabledetails.md)
+- [AEWAssignmentBlobLogs](aewassignmentbloblogs.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AFSAuditLogs](afsauditlogs.md)
@@ -270,6 +272,7 @@ ms.date: 10/23/2023
 - [AppPlatformSystemLogs](appplatformsystemlogs.md)
 - [AppServiceAppLogs](appserviceapplogs.md)
 - [AppServiceAuditLogs](appserviceauditlogs.md)
+- [AppServiceAuthenticationLogs](appserviceauthenticationlogs.md)
 - [AppServiceConsoleLogs](appserviceconsolelogs.md)
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)

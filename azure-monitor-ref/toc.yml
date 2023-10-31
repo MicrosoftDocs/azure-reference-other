@@ -163,6 +163,8 @@ items:
         href: tables/adxtabledetails.md
       - name: ADXTableUsageStatistics
         href: tables/adxtableusagestatistics.md
+      - name: AEWAssignmentBlobLogs
+        href: tables/aewassignmentbloblogs.md
       - name: AEWAuditLogs
         href: tables/aewauditlogs.md
       - name: AEWComputePipelinesLogs
@@ -415,6 +417,8 @@ items:
         href: tables/appserviceapplogs.md
       - name: AppServiceAuditLogs
         href: tables/appserviceauditlogs.md
+      - name: AppServiceAuthenticationLogs
+        href: tables/appserviceauthenticationlogs.md
       - name: AppServiceConsoleLogs
         href: tables/appserviceconsolelogs.md
       - name: AppServiceEnvironmentPlatformLogs
