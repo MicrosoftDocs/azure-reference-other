@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 10/29/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.CognitiveServices/accounts, naam
@@ -20,8 +20,10 @@ There is no benefit in editing these files directly.
 |**Action Occurences**<p><p>Number of times each action appears. |`ActionIdOccurrences` |Count |Total |`ActionId`, `Mode`, `RunId`|PT1M |Yes|
 |**Action Namespaces Per Event**<p><p>Average number of action namespaces per event. |`ActionNamespacesPerEvent` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
 |**Actions Per Event**<p><p>Number of actions per event. |`ActionsPerEvent` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
+|**Active Tokens**<p><p>Total tokens - cached tokens over a period of time |`ActiveTokens` |Count |Minimum, Maximum, Average, Total |`Region`, `ModelDeploymentName`, `ModelName`, `ModelVersion`|PT1M |Yes|
 |**Audio Seconds Transcribed**<p><p>Number of seconds transcribed |`AudioSecondsTranscribed` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Audio Seconds Translated**<p><p>Number of seconds translated |`AudioSecondsTranslated` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
+|**Azure OpenAI Requests**<p><p>Total number of calls made to the Azure OpenAI API over a period of time |`AzureOpenAIRequests` |Count |Total |`ApiName`, `OperationName`, `Region`, `StreamType`, `ModelDeploymentName`, `ModelName`, `ModelVersion`, `StatusCode`|PT1M |Yes|
 |**Baseline Estimator Overall Reward**<p><p>Baseline Estimator Overall Reward. |`BaselineEstimatorOverallReward` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
 |**Baseline Estimator Slot Reward**<p><p>Baseline Estimator Reward by slot. |`BaselineEstimatorSlotReward` |Count |Average |`SlotId`, `SlotIndex`, `Mode`, `RunId`|PT1M |Yes|
 |**Baseline Random Estimator Overall Reward**<p><p>Baseline Random Estimator Overall Reward. |`BaselineRandomEstimatorOverallReward` |Count |Average |`Mode`, `RunId`|PT1M |Yes|

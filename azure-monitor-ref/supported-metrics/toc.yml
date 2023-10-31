@@ -142,6 +142,8 @@ items:
     href: ../supported-metrics/Microsoft-DBforPostgreSQL-servers-metrics.md
   - name: Microsoft.DBforPostgreSQL/serversv2
     href: ../supported-metrics/Microsoft-DBforPostgreSQL-serversv2-metrics.md
+  - name: Microsoft.DevCenter/devcenters
+    href: ../supported-metrics/Microsoft-DevCenter-devcenters-metrics.md
   - name: Microsoft.Devices/IotHubs
     href: ../supported-metrics/Microsoft-Devices-IotHubs-metrics.md
   - name: Microsoft.Devices/provisioningServices
@@ -390,6 +392,8 @@ items:
     href: ../supported-metrics/Microsoft-Storage-storageAccounts-tableServices-metrics.md
   - name: Microsoft.Storage/storageTasks
     href: ../supported-metrics/Microsoft-Storage-storageTasks-metrics.md
+  - name: Microsoft.StorageActions/storageTasks
+    href: ../supported-metrics/Microsoft-StorageActions-storageTasks-metrics.md
   - name: Microsoft.StorageCache/amlFilesystems
     href: ../supported-metrics/Microsoft-StorageCache-amlFilesystems-metrics.md
   - name: Microsoft.StorageCache/caches
