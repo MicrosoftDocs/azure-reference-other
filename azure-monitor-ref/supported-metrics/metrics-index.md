@@ -6,7 +6,7 @@ services: azure-monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.custom: ignite-2022
-ms.date: 10/18/2023
+ms.date: 10/29/2023
 ms.author: edbaynash
 ms.reviewer: priyamishra
 ---
@@ -16,7 +16,7 @@ ms.reviewer: priyamishra
 > [!NOTE]
 > This list is largely auto-generated. Any modification made to this list via GitHub might be written over without warning. Contact the author of this article for details on how to make permanent updates.
 
-Date list was last updated: 10/18/2023.
+Date list was last updated: 10/29/2023.
 
 Azure Monitor provides several ways to interact with metrics, including charting them in the Azure portal, accessing them through the REST API, or querying them by using PowerShell or the Azure CLI (Command Line Interface).  
 
@@ -302,6 +302,11 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 ### Microsoft.DBForPostgreSQL<a name="microsoftdbforpostgresqlservergroupsv2"></a>
   
   * [Microsoft.DBForPostgreSQL/serverGroupsv2](Microsoft-DBForPostgreSQL-serverGroupsv2-metrics.md)
+
+  
+### Microsoft.DevCenter<a name="microsoftdevcenterdevcenters"></a>
+  
+  * [Microsoft.DevCenter/devcenters](Microsoft-DevCenter-devcenters-metrics.md)
 
   
 ### Microsoft.Devices<a name="microsoftdevicesiothubs"></a><a name="microsoftdevicesprovisioningservices"></a>
@@ -630,6 +635,11 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 * [Microsoft.Storage/storageAccounts/storageTasks](Microsoft-Storage-storageAccounts-storageTasks-metrics.md)
 * [Microsoft.Storage/storageAccounts/tableServices](Microsoft-Storage-storageAccounts-tableServices-metrics.md)
 * [Microsoft.Storage/storageTasks](Microsoft-Storage-storageTasks-metrics.md)
+
+  
+### Microsoft.StorageActions<a name="microsoftstorageactionsstoragetasks"></a>
+  
+  * [Microsoft.StorageActions/storageTasks](Microsoft-StorageActions-storageTasks-metrics.md)
 
   
 ### Microsoft.StorageCache<a name="microsoftstoragecacheamlfilesystems"></a><a name="microsoftstoragecachecaches"></a>

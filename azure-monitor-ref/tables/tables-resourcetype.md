@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 10/23/2023
+ms.date: 10/30/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -34,6 +34,7 @@ Microsoft.ApiManagement/service
 Microsoft.Web/sites
 - [AzureActivity](azureactivity.md)
 - [LogicAppWorkflowRuntime](logicappworkflowruntime.md)
+- [AppServiceAuthenticationLogs](appserviceauthenticationlogs.md)
 - [AppServiceServerlessSecurityPluginData](appserviceserverlesssecurityplugindata.md)
 - [AzureMetrics](azuremetrics.md)
 - [AppServiceAppLogs](appserviceapplogs.md)
@@ -753,6 +754,7 @@ Microsoft.Experimentation/experimentWorkspaces
 - [AzureActivity](azureactivity.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
+- [AEWAssignmentBlobLogs](aewassignmentbloblogs.md)
 
 
 ### ExpressRoute Circuits
