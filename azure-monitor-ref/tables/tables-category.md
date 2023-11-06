@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/30/2023
+ms.date: 11/06/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -63,6 +63,7 @@ ms.date: 10/30/2023
 - [ASCDeviceEvents](ascdeviceevents.md)
 - [ASRJobs](asrjobs.md)
 - [ASRReplicatedItems](asrreplicateditems.md)
+- [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AZKVAuditLogs](azkvauditlogs.md)
@@ -114,6 +115,7 @@ ms.date: 10/30/2023
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
 - [ContainerEvent](containerevent.md)
 - [ContainerInstanceLog](containerinstancelog.md)
+- [DataverseActivity](dataverseactivity.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
@@ -211,6 +213,7 @@ ms.date: 10/30/2023
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
+- [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AZFWFlowTrace](azfwflowtrace.md)
@@ -568,6 +571,7 @@ ms.date: 10/30/2023
 - [AGWAccessLogs](agwaccesslogs.md)
 - [AGWFirewallLogs](agwfirewalllogs.md)
 - [AGWPerformanceLogs](agwperformancelogs.md)
+- [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -642,6 +646,7 @@ ms.date: 10/30/2023
 - [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
 - [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
 - [DSMDataLabelingLogs](dsmdatalabelinglogs.md)
+- [DataverseActivity](dataverseactivity.md)
 - [DeviceEvents](deviceevents.md)
 - [DeviceFileCertificateInfo](devicefilecertificateinfo.md)
 - [DeviceFileEvents](devicefileevents.md)

@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 10/30/2023
+ms.date: 11/06/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -494,6 +494,7 @@ Microsoft.Network/networkManagers
 - [AzureMetrics](azuremetrics.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
+- [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
 
 
 ### Bastions
@@ -983,6 +984,12 @@ Microsoft.Graph/tenants
 - [AzureActivity](azureactivity.md)
 - [SigninLogs](signinlogs.md)
 - [AuditLogs](auditlogs.md)
+
+
+### Microsoft Playwright Testing
+Microsoft.AzurePlaywrightService/accounts
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
 
 
 ### Microsoft Sentinel ASim

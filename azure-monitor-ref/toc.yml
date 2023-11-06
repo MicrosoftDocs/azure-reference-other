@@ -227,6 +227,8 @@ items:
         href: tables/auieventsaudit.md
       - name: AUIEventsOperational
         href: tables/auieventsoperational.md
+      - name: AVNMConnectivityConfigurationChange
+        href: tables/avnmconnectivityconfigurationchange.md
       - name: AVNMNetworkGroupMembershipChange
         href: tables/avnmnetworkgroupmembershipchange.md
       - name: AVNMRuleCollectionChange
@@ -617,6 +619,8 @@ items:
         href: tables/databrickswebterminal.md
       - name: DatabricksWorkspace
         href: tables/databricksworkspace.md
+      - name: DataverseActivity
+        href: tables/dataverseactivity.md
       - name: DefenderIoTRawEvent
         href: tables/defenderiotrawevent.md
       - name: DevCenterBillingEventLogs

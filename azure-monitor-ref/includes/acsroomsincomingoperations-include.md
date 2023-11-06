@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 11/06/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ACSRoomsIncomingOperations
@@ -17,6 +17,7 @@ ms.custom: ACSRoomsIncomingOperations
 | Level | string | The severity level of the operation. |
 | OperationName | string | The operation associated with log record. e.g., CreateRoom, PatchRoom, GetRoom, ListRooms, DeleteRoom, GetParticipants, AddParticipants, UpdateParticipants, or RemoveParticipants. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
+| PstnDialOutEnabled | bool | Flag to true if, at the time of the call, dial out to a PSTN number is enabled in a particular room. |
 | RemovedRoomParticipantsCount | int | The count of participants removed in a room. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultSignature | string | The sub status of the operation. If this operation corresponds to a REST API call, this field is the HTTP status code of the corresponding REST call. |

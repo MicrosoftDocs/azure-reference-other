@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 11/06/2023
 ---
 
 # AzureMetrics
@@ -49,6 +49,7 @@ Metric data emitted by Azure services that measure their health and performance.
 - Virtual machines
 - Machine Learning
 - Media Services
+- Microsoft Playwright Testing
 - Azure Managed Lustre
 - Azure Storage Mover
 - Synapse Workspaces
