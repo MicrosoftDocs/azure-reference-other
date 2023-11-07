@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/30/2023
+ms.date: 11/06/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: CDBControlPlaneRequests
@@ -38,7 +38,7 @@ ms.custom: CDBControlPlaneRequests
 | MaxStalenessIntervalInSeconds | real | The maximum staleness value (in seconds) for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MaxStalenessPrefix | string | The max staleness prefix for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MultipleWriteLocations | bool | Boolean flag indicating if the Cosmos DB account is a multi-master account. |
-| NewWriteRegion | string | The new write region for the Cosmos DB account (after a user-initiated��failover operation is executed). |
+| NewWriteRegion | string | The new write region for the Cosmos DB account (after a user-initiated failover operation is executed). |
 | OperationName | string | The Control Plane Operation that was executed. |
 | OperationType | string | The type of control plane operation, which was executed. Examples of operations included Add/Remove region, Indexing Policy updates, VNet and firewall rule creation, Backup Retention Policy changes etc. |
 | PrivateEndpointArmUrl | string | The ARM URL of the private endpoint created for the account. |
