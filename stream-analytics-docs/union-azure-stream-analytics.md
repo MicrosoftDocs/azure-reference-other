@@ -5,6 +5,8 @@ applies_to:
   - "Azure"
 
 
+author: ahartoon
+ms.author: anboisve
 ms.service: stream-analytics
 ms.topic: reference
 ms.date: 04/22/2016

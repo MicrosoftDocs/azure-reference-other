@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 11/06/2023
 ---
 
 # AzureActivity
@@ -69,6 +69,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Machine Learning
 - Machine Learning
 - Media Services
+- Microsoft Playwright Testing
 - Microsoft Graph Logs
 - Azure Managed Lustre
 - Azure Storage Mover
