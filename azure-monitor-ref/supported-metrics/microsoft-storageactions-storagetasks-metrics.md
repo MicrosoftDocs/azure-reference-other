@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/29/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.StorageActions/storageTasks, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.StorageActions
 
    
     
-[!INCLUDE [Microsoft.StorageActions/storageTasks](./includes/Microsoft-StorageActions-storageTasks-metrics-include.md)]
+[!INCLUDE [Microsoft.StorageActions/storageTasks](./includes/microsoft-storageactions-storagetasks-metrics-include.md)]
       
