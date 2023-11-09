@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Network/privateDnsZones, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Network/privat
 
    
     
-[!INCLUDE [Microsoft.Network/privateDnsZones](./includes/Microsoft-Network-privateDnsZones-metrics-include.md)]
+[!INCLUDE [Microsoft.Network/privateDnsZones](./includes/microsoft-network-privatednszones-metrics-include.md)]
       
