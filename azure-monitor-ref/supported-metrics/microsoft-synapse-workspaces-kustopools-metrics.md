@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Synapse/workspaces/kustoPools, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Synapse/worksp
 
    
     
-[!INCLUDE [Microsoft.Synapse/workspaces/kustoPools](./includes/Microsoft-Synapse-workspaces-kustoPools-metrics-include.md)]
+[!INCLUDE [Microsoft.Synapse/workspaces/kustoPools](./includes/microsoft-synapse-workspaces-kustopools-metrics-include.md)]
       
