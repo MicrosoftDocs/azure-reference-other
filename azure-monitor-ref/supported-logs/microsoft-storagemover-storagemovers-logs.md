@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.StorageMover/storageMovers, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.StorageMover/storageMovers, naam
 The following table lists the types of logs available for the Microsoft.StorageMover/storageMovers resource type.
   
   
-[!INCLUDE [Microsoft.StorageMover/storageMovers](./includes/Microsoft-StorageMover-storageMovers-logs-include.md)]
+[!INCLUDE [Microsoft.StorageMover/storageMovers](./includes/microsoft-storagemover-storagemovers-logs-include.md)]
   
