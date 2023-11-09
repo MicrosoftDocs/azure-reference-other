@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DataCollaboration/workspaces, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.DataCollaborat
 
    
     
-[!INCLUDE [Microsoft.DataCollaboration/workspaces](./includes/Microsoft-DataCollaboration-workspaces-metrics-include.md)]
+[!INCLUDE [Microsoft.DataCollaboration/workspaces](./includes/microsoft-datacollaboration-workspaces-metrics-include.md)]
       
