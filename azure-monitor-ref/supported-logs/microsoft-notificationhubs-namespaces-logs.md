@@ -5,8 +5,8 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
-ms.custom: Microsoft.NotificationHubs/namespaces, arm
+ms.date: 11/09/2023
+ms.custom: Microsoft.NotificationHubs/namespaces, naam
 ---
 
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.NotificationHubs/namespaces, arm
 The following table lists the types of logs available for the Microsoft.NotificationHubs/namespaces resource type.
   
   
-[!INCLUDE [Microsoft.NotificationHubs/namespaces](./includes/Microsoft-NotificationHubs-namespaces-logs-include.md)]
+[!INCLUDE [Microsoft.NotificationHubs/namespaces](./includes/microsoft-notificationhubs-namespaces-logs-include.md)]
   
