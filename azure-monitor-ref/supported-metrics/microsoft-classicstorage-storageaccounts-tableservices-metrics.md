@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ClassicStorage/storageAccounts/tableServices, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ClassicStorage
 
    
     
-[!INCLUDE [Microsoft.ClassicStorage/storageAccounts/tableServices](./includes/Microsoft-ClassicStorage-storageAccounts-tableServices-metrics-include.md)]
+[!INCLUDE [Microsoft.ClassicStorage/storageAccounts/tableServices](./includes/microsoft-classicstorage-storageaccounts-tableservices-metrics-include.md)]
       
