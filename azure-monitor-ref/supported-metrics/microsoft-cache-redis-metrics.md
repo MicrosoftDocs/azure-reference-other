@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Cache/redis, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Cache/redis re
 
    
     
-[!INCLUDE [Microsoft.Cache/redis](./includes/Microsoft-Cache-redis-metrics-include.md)]
+[!INCLUDE [Microsoft.Cache/redis](./includes/microsoft-cache-redis-metrics-include.md)]
       
