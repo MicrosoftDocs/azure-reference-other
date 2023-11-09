@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DataFactory/factories, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.DataFactory/fa
 
    
     
-[!INCLUDE [Microsoft.DataFactory/factories](./includes/Microsoft-DataFactory-factories-metrics-include.md)]
+[!INCLUDE [Microsoft.DataFactory/factories](./includes/microsoft-datafactory-factories-metrics-include.md)]
       
