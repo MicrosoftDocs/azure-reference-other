@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.IoTCentral/IoTApps, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.IoTCentral/IoT
 
    
     
-[!INCLUDE [Microsoft.IoTCentral/IoTApps](./includes/Microsoft-IoTCentral-IoTApps-metrics-include.md)]
+[!INCLUDE [Microsoft.IoTCentral/IoTApps](./includes/microsoft-iotcentral-iotapps-metrics-include.md)]
       
