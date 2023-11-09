@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: microsoft.kubernetes/connectedClusters, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the microsoft.kubernetes/con
 
    
     
-[!INCLUDE [microsoft.kubernetes/connectedClusters](./includes/microsoft-kubernetes-connectedClusters-metrics-include.md)]
+[!INCLUDE [microsoft.kubernetes/connectedClusters](./includes/microsoft-kubernetes-connectedclusters-metrics-include.md)]
       
