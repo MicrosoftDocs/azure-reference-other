@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.PlayFab/titles, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.PlayFab/titles
 
    
     
-[!INCLUDE [Microsoft.PlayFab/titles](./includes/Microsoft-PlayFab-titles-metrics-include.md)]
+[!INCLUDE [Microsoft.PlayFab/titles](./includes/microsoft-playfab-titles-metrics-include.md)]
       
