@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Batch/batchaccounts, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Batch/batchacc
 
    
     
-[!INCLUDE [Microsoft.Batch/batchaccounts](./includes/Microsoft-Batch-batchaccounts-metrics-include.md)]
+[!INCLUDE [Microsoft.Batch/batchaccounts](./includes/microsoft-batch-batchaccounts-metrics-include.md)]
       
