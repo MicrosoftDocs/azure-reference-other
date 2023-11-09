@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Storage/storageAccounts/fileServices, naam
@@ -22,8 +22,8 @@ There is no benefit in editing these files directly.
 |**File Share Capacity Quota**<p><p>The upper limit on the amount of storage that can be used by Azure Files Service in bytes. |`FileShareCapacityQuota` |Bytes |Average |`FileShare`|PT1H |No|
 |**File Share Count**<p><p>The number of file shares in the storage account. |`FileShareCount` |Count |Average |\<none\>|PT1H |No|
 |**Bandwidth by Max MiB/s**<p><p>The maximum number of used bandwidth in MiB/s at the lowest time granularity of 1-minute for the premium file share in the premium files storage account. |`FileShareMaxUsedBandwidthMiBps` |CountPerSecond |Maximum |`FileShare`|PT1M |No|
-|**Bandwidth by Provisioned MiBps**<p><p>The baseline number of provisioned bandwidth in MiB/s for the premium file share in the premium file storage account. This number is calculated based on the provisioned size (quota) of the share capacity. |`FileShareProvisionedBandwidthMiBps` |BytesPerSecond |Average |`FileShare`|PT1H |No|
 |**Transactions by Max IOPS**<p><p>The maximum number of used IOPS at the lowest time granularity of 1-minute for the premium file share in the premium files storage account. |`FileShareMaxUsedIOPS` |CountPerSecond |Maximum |`FileShare`|PT1M |No|
+|**File Share Provisioned Bandwidth MiB/s**<p><p>The baseline number of provisioned bandwidth in MiB/s for the premium file share in the premium files storage account. This number is calculated based on the provisioned size (quota) of the share capacity. |`FileShareProvisionedBandwidthMiBps` |CountPerSecond |Average |`FileShare`|PT1H |No|
 |**File Share Provisioned IOPS**<p><p>The baseline number of provisioned IOPS for the premium file share in the premium files storage account. This number is calculated based on the provisioned size (quota) of the share capacity. |`FileShareProvisionedIOPS` |CountPerSecond |Average |`FileShare`|PT1H |No|
 |**File Share Snapshot Count**<p><p>The number of snapshots present on the share in storage account's Files Service. |`FileShareSnapshotCount` |Count |Average |`FileShare`|PT1H |No|
 |**File Share Snapshot Size**<p><p>The amount of storage used by the snapshots in storage account's File service in bytes. |`FileShareSnapshotSize` |Bytes |Average |`FileShare`|PT1H |No|
