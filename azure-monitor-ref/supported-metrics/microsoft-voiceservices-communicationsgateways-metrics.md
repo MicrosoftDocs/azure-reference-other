@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.VoiceServices/CommunicationsGateways, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.VoiceServices/
 
    
     
-[!INCLUDE [Microsoft.VoiceServices/CommunicationsGateways](./includes/Microsoft-VoiceServices-CommunicationsGateways-metrics-include.md)]
+[!INCLUDE [Microsoft.VoiceServices/CommunicationsGateways](./includes/microsoft-voiceservices-communicationsgateways-metrics-include.md)]
       
