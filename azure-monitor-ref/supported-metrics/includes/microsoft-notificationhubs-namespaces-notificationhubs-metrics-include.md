@@ -1,10 +1,10 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
-ms.custom: Microsoft.NotificationHubs/Namespaces/NotificationHubs, arm
+ms.custom: Microsoft.NotificationHubs/namespaces/notificationHubs, naam
 ---
 <!--
 NOTE:  This content is automatically generated using API calls to Azure. 
