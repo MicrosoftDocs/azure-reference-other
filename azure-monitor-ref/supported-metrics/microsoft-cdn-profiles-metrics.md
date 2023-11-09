@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Cdn/profiles, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Cdn/profiles r
 
    
     
-[!INCLUDE [Microsoft.Cdn/profiles](./includes/Microsoft-Cdn-profiles-metrics-include.md)]
+[!INCLUDE [Microsoft.Cdn/profiles](./includes/microsoft-cdn-profiles-metrics-include.md)]
       
