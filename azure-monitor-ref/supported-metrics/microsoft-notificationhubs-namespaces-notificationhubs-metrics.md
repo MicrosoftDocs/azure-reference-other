@@ -1,21 +1,21 @@
 ---
-title: Supported metrics - Microsoft.NotificationHubs/Namespaces/NotificationHubs
-description: Reference for Microsoft.NotificationHubs/Namespaces/NotificationHubs metrics in Azure Monitor.
+title: Supported metrics - Microsoft.NotificationHubs/namespaces/notificationHubs
+description: Reference for Microsoft.NotificationHubs/namespaces/notificationHubs metrics in Azure Monitor.
 ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
-ms.custom: Microsoft.NotificationHubs/Namespaces/NotificationHubs, arm
+ms.date: 11/09/2023
+ms.custom: Microsoft.NotificationHubs/namespaces/notificationHubs, naam
 ---
 
 
 
 
-# Supported metrics for Microsoft.NotificationHubs/Namespaces/NotificationHubs
+# Supported metrics for Microsoft.NotificationHubs/namespaces/notificationHubs
 
 
-The following table lists the metrics available for the Microsoft.NotificationHubs/Namespaces/NotificationHubs resource type.
+The following table lists the metrics available for the Microsoft.NotificationHubs/namespaces/notificationHubs resource type.
 
   
     
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.NotificationHu
 
    
     
-[!INCLUDE [Microsoft.NotificationHubs/Namespaces/NotificationHubs](./includes/Microsoft-NotificationHubs-Namespaces-NotificationHubs-metrics-include.md)]
+[!INCLUDE [Microsoft.NotificationHubs/namespaces/notificationHubs](./includes/microsoft-notificationhubs-namespaces-notificationhubs-metrics-include.md)]
       
