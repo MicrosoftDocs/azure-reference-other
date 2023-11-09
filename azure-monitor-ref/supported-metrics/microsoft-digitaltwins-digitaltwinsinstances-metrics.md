@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DigitalTwins/digitalTwinsInstances, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.DigitalTwins/d
 
    
     
-[!INCLUDE [Microsoft.DigitalTwins/digitalTwinsInstances](./includes/Microsoft-DigitalTwins-digitalTwinsInstances-metrics-include.md)]
+[!INCLUDE [Microsoft.DigitalTwins/digitalTwinsInstances](./includes/microsoft-digitaltwins-digitaltwinsinstances-metrics-include.md)]
       
