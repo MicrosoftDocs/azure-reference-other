@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.NetworkFunction/azureTrafficCollectors, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.NetworkFunctio
 
    
     
-[!INCLUDE [Microsoft.NetworkFunction/azureTrafficCollectors](./includes/Microsoft-NetworkFunction-azureTrafficCollectors-metrics-include.md)]
+[!INCLUDE [Microsoft.NetworkFunction/azureTrafficCollectors](./includes/microsoft-networkfunction-azuretrafficcollectors-metrics-include.md)]
       
