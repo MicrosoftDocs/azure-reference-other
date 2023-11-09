@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Media/mediaservices/liveEvents, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Media/mediaser
 
    
     
-[!INCLUDE [Microsoft.Media/mediaservices/liveEvents](./includes/Microsoft-Media-mediaservices-liveEvents-metrics-include.md)]
+[!INCLUDE [Microsoft.Media/mediaservices/liveEvents](./includes/microsoft-media-mediaservices-liveevents-metrics-include.md)]
       
