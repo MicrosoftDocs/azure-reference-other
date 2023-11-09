@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Media/mediaservices/liveEvents, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.Media/mediaservices/liveEvents, naam
 The following table lists the types of logs available for the Microsoft.Media/mediaservices/liveEvents resource type.
   
   
-[!INCLUDE [Microsoft.Media/mediaservices/liveEvents](./includes/Microsoft-Media-mediaservices-liveEvents-logs-include.md)]
+[!INCLUDE [Microsoft.Media/mediaservices/liveEvents](./includes/microsoft-media-mediaservices-liveevents-logs-include.md)]
   
