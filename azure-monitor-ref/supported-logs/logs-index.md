@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 10/29/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -162,6 +162,11 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 ### Microsoft.Communication<a name="microsoftcommunicationcommunicationservices"></a>
   
   * [Microsoft.Communication/CommunicationServices](Microsoft-Communication-CommunicationServices-logs.md)
+
+  
+### microsoft.community<a name="microsoftcommunitycommunitytrainings"></a>
+  
+  * [microsoft.community/communityTrainings](microsoft-community-communityTrainings-logs.md)
 
   
 ### Microsoft.Compute<a name="microsoftcomputevirtualmachines"></a>
@@ -392,7 +397,7 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 * [Microsoft.NetApp/netAppAccounts/capacityPools/volumes](Microsoft-NetApp-netAppAccounts-capacityPools-volumes-logs.md)
 
   
-### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkdnsresolverpolicies"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknetworkmanagers"></a><a name="microsoftnetworknetworksecuritygroups"></a><a name="microsoftnetworknetworksecurityperimeters"></a><a name="microsoftnetworknetworksecurityperimetersprofiles"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworkpublicipprefixes"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualnetworks"></a>
+### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkdnsresolverpolicies"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknetworkmanagers"></a><a name="microsoftnetworknetworkmanagersipampools"></a><a name="microsoftnetworknetworksecuritygroups"></a><a name="microsoftnetworknetworksecurityperimeters"></a><a name="microsoftnetworknetworksecurityperimetersprofiles"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworkpublicipprefixes"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualnetworks"></a>
   
   * [Microsoft.Network/applicationgateways](Microsoft-Network-applicationgateways-logs.md)
 * [Microsoft.Network/azureFirewalls](Microsoft-Network-azureFirewalls-logs.md)
@@ -401,6 +406,7 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 * [Microsoft.Network/frontdoors](Microsoft-Network-frontdoors-logs.md)
 * [Microsoft.Network/loadBalancers](Microsoft-Network-loadBalancers-logs.md)
 * [Microsoft.Network/networkManagers](Microsoft-Network-networkManagers-logs.md)
+* [Microsoft.Network/networkManagers/ipamPools](Microsoft-Network-networkManagers-ipamPools-logs.md)
 * [Microsoft.Network/networksecuritygroups](Microsoft-Network-networksecuritygroups-logs.md)
 * [Microsoft.Network/networkSecurityPerimeters](Microsoft-Network-networkSecurityPerimeters-logs.md)
 * [Microsoft.Network/networkSecurityPerimeters/profiles](Microsoft-Network-networkSecurityPerimeters-profiles-logs.md)
@@ -435,9 +441,10 @@ If you think something is missing, you can open a GitHub comment at the bottom o
   * [Microsoft.NetworkFunction/azureTrafficCollectors](Microsoft-NetworkFunction-azureTrafficCollectors-logs.md)
 
   
-### Microsoft.NotificationHubs<a name="microsoftnotificationhubsnamespaces"></a>
+### Microsoft.NotificationHubs<a name="microsoftnotificationhubsnamespaces"></a><a name="microsoftnotificationhubsnamespacesnotificationhubs"></a>
   
   * [Microsoft.NotificationHubs/namespaces](Microsoft-NotificationHubs-namespaces-logs.md)
+* [Microsoft.NotificationHubs/namespaces/notificationHubs](Microsoft-NotificationHubs-namespaces-notificationHubs-logs.md)
 
   
 ### MICROSOFT.OPENENERGYPLATFORM<a name="microsoftopenenergyplatformenergyservices"></a>
