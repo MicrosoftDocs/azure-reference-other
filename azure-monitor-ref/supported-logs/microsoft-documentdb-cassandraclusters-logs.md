@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DocumentDB/cassandraClusters, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.DocumentDB/cassandraClusters, naam
 The following table lists the types of logs available for the Microsoft.DocumentDB/cassandraClusters resource type.
   
   
-[!INCLUDE [Microsoft.DocumentDB/cassandraClusters](./includes/Microsoft-DocumentDB-cassandraClusters-logs-include.md)]
+[!INCLUDE [Microsoft.DocumentDB/cassandraClusters](./includes/microsoft-documentdb-cassandraclusters-logs-include.md)]
   
