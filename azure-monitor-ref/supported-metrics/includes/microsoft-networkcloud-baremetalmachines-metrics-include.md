@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
@@ -60,7 +60,7 @@ There is no benefit in editing these files directly.
 |**Node Bonding Active (Preview)**<p><p>Number of active interfaces per bonding interface |`NodeBondingActive` |Count |Average |`Master`|PT1M |No|
 |**Node Memory Huge Pages Free (Preview)**<p><p>NUMA hugepages free by node |`NodeMemHugePagesFree` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |**Node Memory Huge Pages Total**<p><p>NUMA huge pages total by node |`NodeMemHugePagesTotal` |Bytes |Average |`Host`, `Node`|PT1M |No|
-|**Node Memory NUMA (Free Memory)**<p><p>NUMA memory free |`NodeMemNumaFree` |Bytes |Average |`Name`, `Host`|PT1M |No|
+|**Node Memory NUMA (Free Memory)**<p><p>NUMA memory free |`NodeMemNumaFree` |Bytes |Average |`Name`, `Host`, `Node`|PT1M |No|
 |**Node Memory NUMA (Shared Memory)**<p><p>NUMA shared memory |`NodeMemNumaShem` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |**Node Memory NUMA (Used Memory)**<p><p>NUMA memory used |`NodeMemNumaUsed` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |**Node Network Carrier Changes**<p><p>Node network carrier changes |`NodeNetworkCarrierChanges` |Count |Average |`Device`, `Host`|PT1M |No|

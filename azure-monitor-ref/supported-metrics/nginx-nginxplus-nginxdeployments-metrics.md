@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: NGINX.NGINXPLUS/nginxDeployments, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the NGINX.NGINXPLUS/nginxDep
 
    
     
-[!INCLUDE [NGINX.NGINXPLUS/nginxDeployments](./includes/NGINX-NGINXPLUS-nginxDeployments-metrics-include.md)]
+[!INCLUDE [NGINX.NGINXPLUS/nginxDeployments](./includes/nginx-nginxplus-nginxdeployments-metrics-include.md)]
       

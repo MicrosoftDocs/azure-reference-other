@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Web/sites/slots, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.Web/sites/slots, naam
 The following table lists the types of logs available for the Microsoft.Web/sites/slots resource type.
   
   
-[!INCLUDE [Microsoft.Web/sites/slots](./includes/Microsoft-Web-sites-slots-logs-include.md)]
+[!INCLUDE [Microsoft.Web/sites/slots](./includes/microsoft-web-sites-slots-logs-include.md)]
   

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ApiManagement/service, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ApiManagement/
 
    
     
-[!INCLUDE [Microsoft.ApiManagement/service](./includes/Microsoft-ApiManagement-service-metrics-include.md)]
+[!INCLUDE [Microsoft.ApiManagement/service](./includes/microsoft-apimanagement-service-metrics-include.md)]
       

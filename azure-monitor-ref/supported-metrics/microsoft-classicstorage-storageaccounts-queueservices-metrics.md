@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ClassicStorage/storageAccounts/queueServices, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ClassicStorage
 
    
     
-[!INCLUDE [Microsoft.ClassicStorage/storageAccounts/queueServices](./includes/Microsoft-ClassicStorage-storageAccounts-queueServices-metrics-include.md)]
+[!INCLUDE [Microsoft.ClassicStorage/storageAccounts/queueServices](./includes/microsoft-classicstorage-storageaccounts-queueservices-metrics-include.md)]
       

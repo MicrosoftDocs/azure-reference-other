@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ClassicCompute/domainNames/slots/roles, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ClassicCompute
 
    
     
-[!INCLUDE [Microsoft.ClassicCompute/domainNames/slots/roles](./includes/Microsoft-ClassicCompute-domainNames-slots-roles-metrics-include.md)]
+[!INCLUDE [Microsoft.ClassicCompute/domainNames/slots/roles](./includes/microsoft-classiccompute-domainnames-slots-roles-metrics-include.md)]
       

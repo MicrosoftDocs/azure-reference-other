@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.SignalRService/WebPubSub, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.SignalRService
 
    
     
-[!INCLUDE [Microsoft.SignalRService/WebPubSub](./includes/Microsoft-SignalRService-WebPubSub-metrics-include.md)]
+[!INCLUDE [Microsoft.SignalRService/WebPubSub](./includes/microsoft-signalrservice-webpubsub-metrics-include.md)]
       

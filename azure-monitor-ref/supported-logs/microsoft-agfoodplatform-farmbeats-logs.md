@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.AgFoodPlatform/farmBeats, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.AgFoodPlatform/farmBeats, naam
 The following table lists the types of logs available for the Microsoft.AgFoodPlatform/farmBeats resource type.
   
   
-[!INCLUDE [Microsoft.AgFoodPlatform/farmBeats](./includes/Microsoft-AgFoodPlatform-farmBeats-logs-include.md)]
+[!INCLUDE [Microsoft.AgFoodPlatform/farmBeats](./includes/microsoft-agfoodplatform-farmbeats-logs-include.md)]
   

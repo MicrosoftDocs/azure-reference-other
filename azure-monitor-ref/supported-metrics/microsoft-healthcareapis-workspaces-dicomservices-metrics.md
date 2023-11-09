@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.HealthcareApis/workspaces/dicomservices, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.HealthcareApis
 
    
     
-[!INCLUDE [Microsoft.HealthcareApis/workspaces/dicomservices](./includes/Microsoft-HealthcareApis-workspaces-dicomservices-metrics-include.md)]
+[!INCLUDE [Microsoft.HealthcareApis/workspaces/dicomservices](./includes/microsoft-healthcareapis-workspaces-dicomservices-metrics-include.md)]
       

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.App/managedEnvironments, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.App/managedEnv
 
    
     
-[!INCLUDE [Microsoft.App/managedEnvironments](./includes/Microsoft-App-managedEnvironments-metrics-include.md)]
+[!INCLUDE [Microsoft.App/managedEnvironments](./includes/microsoft-app-managedenvironments-metrics-include.md)]
       

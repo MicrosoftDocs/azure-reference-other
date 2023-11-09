@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.BotService/checknameavailability, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.BotService/che
 
    
     
-[!INCLUDE [Microsoft.BotService/checknameavailability](./includes/Microsoft-BotService-checknameavailability-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/checknameavailability](./includes/microsoft-botservice-checknameavailability-metrics-include.md)]
       

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/storageAppliances, naam
@@ -25,7 +25,7 @@ There is no benefit in editing these files directly.
 |**Nexus Storage Array Space DDR**<p><p>Storage array overall data reduction |`PurefaArraySpaceDatareductionRatio` |Percent |Average |\<none\>|PT1M |No|
 |**Nexus Storage Array Space Prov**<p><p>Storage array overall provisioned space |`PurefaArraySpaceProvisionedBytes` |Bytes |Average |\<none\>|PT1M |No|
 |**Nexus Storage Array Space Used Bytes**<p><p>Storage Array overall used space |`PurefaArraySpaceUsedBytes` |Bytes |Average |`Dimension`|PT1M |No|
-|**Nexus Storage HW Component Health**<p><p>Storage array hardware component health status |`PurefaHardwareComponentHealth` |Count |Average |`Component`, `Controller`, `Index`|PT1M |No|
+|**Nexus Storage HW Component Health**<p><p>Storage array hardware component health status |`PurefaHardwareComponentHealth` |Count |Average |`Component`, `Controller`, `Index`, `Chassis`|PT1M |No|
 |**Nexus Storage Hardware Power Volts**<p><p>Storage array hardware power supply voltage |`PurefaHardwarePowerVolts` |Unspecified |Average |`Power Supply`|PT1M |No|
 |**Nexus Storage Hardware Temp Celsius**<p><p>Storage array hardware temperature sensors |`PurefaHardwareTemperatureCelsius` |Unspecified |Average |`Controller`, `Sensor`|PT1M |No|
 |**Nexus Storage Host Bandwidth Bytes**<p><p>Storage array host bandwidth in bytes per second |`PurefaHostPerformanceBandwidthBytes` |Bytes |Average |`Dimension`, `Host`|PT1M |No|

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ManagedNetworkFabric/l3IsolationDomains, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ManagedNetwork
 
    
     
-[!INCLUDE [Microsoft.ManagedNetworkFabric/l3IsolationDomains](./includes/Microsoft-ManagedNetworkFabric-l3IsolationDomains-metrics-include.md)]
+[!INCLUDE [Microsoft.ManagedNetworkFabric/l3IsolationDomains](./includes/microsoft-managednetworkfabric-l3isolationdomains-metrics-include.md)]
       

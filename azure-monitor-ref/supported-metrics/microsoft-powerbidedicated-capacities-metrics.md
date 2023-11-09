@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.PowerBIDedicated/capacities, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.PowerBIDedicat
 
    
     
-[!INCLUDE [Microsoft.PowerBIDedicated/capacities](./includes/Microsoft-PowerBIDedicated-capacities-metrics-include.md)]
+[!INCLUDE [Microsoft.PowerBIDedicated/capacities](./includes/microsoft-powerbidedicated-capacities-metrics-include.md)]
       

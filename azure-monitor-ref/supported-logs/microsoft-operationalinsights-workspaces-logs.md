@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.OperationalInsights/workspaces, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.OperationalInsights/workspaces, naam
 The following table lists the types of logs available for the Microsoft.OperationalInsights/workspaces resource type.
   
   
-[!INCLUDE [Microsoft.OperationalInsights/workspaces](./includes/Microsoft-OperationalInsights-workspaces-logs-include.md)]
+[!INCLUDE [Microsoft.OperationalInsights/workspaces](./includes/microsoft-operationalinsights-workspaces-logs-include.md)]
   

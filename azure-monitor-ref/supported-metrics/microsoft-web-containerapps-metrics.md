@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Web/containerapps, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Web/containera
 
    
     
-[!INCLUDE [Microsoft.Web/containerapps](./includes/Microsoft-Web-containerapps-metrics-include.md)]
+[!INCLUDE [Microsoft.Web/containerapps](./includes/microsoft-web-containerapps-metrics-include.md)]
       

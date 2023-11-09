@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ConnectedCache/enterpriseMccCustomers, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.ConnectedCache/enterpriseMccCustomers, naam
 The following table lists the types of logs available for the Microsoft.ConnectedCache/enterpriseMccCustomers resource type.
   
   
-[!INCLUDE [Microsoft.ConnectedCache/enterpriseMccCustomers](./includes/Microsoft-ConnectedCache-enterpriseMccCustomers-logs-include.md)]
+[!INCLUDE [Microsoft.ConnectedCache/enterpriseMccCustomers](./includes/microsoft-connectedcache-enterprisemcccustomers-logs-include.md)]
   

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.SecurityDetonation/SecurityDetonationChambers, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.SecurityDetona
 
    
     
-[!INCLUDE [Microsoft.SecurityDetonation/SecurityDetonationChambers](./includes/Microsoft-SecurityDetonation-SecurityDetonationChambers-metrics-include.md)]
+[!INCLUDE [Microsoft.SecurityDetonation/SecurityDetonationChambers](./includes/microsoft-securitydetonation-securitydetonationchambers-metrics-include.md)]
       

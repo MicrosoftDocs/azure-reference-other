@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/29/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DevCenter/devcenters, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.DevCenter/devc
 
    
     
-[!INCLUDE [Microsoft.DevCenter/devcenters](./includes/Microsoft-DevCenter-devcenters-metrics-include.md)]
+[!INCLUDE [Microsoft.DevCenter/devcenters](./includes/microsoft-devcenter-devcenters-metrics-include.md)]
       

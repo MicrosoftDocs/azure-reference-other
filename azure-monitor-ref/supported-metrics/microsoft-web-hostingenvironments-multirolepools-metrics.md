@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Web/hostingenvironments/multirolepools, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Web/hostingenv
 
    
     
-[!INCLUDE [Microsoft.Web/hostingenvironments/multirolepools](./includes/Microsoft-Web-hostingenvironments-multirolepools-metrics-include.md)]
+[!INCLUDE [Microsoft.Web/hostingenvironments/multirolepools](./includes/microsoft-web-hostingenvironments-multirolepools-metrics-include.md)]
       

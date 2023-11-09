@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.EventHub/Namespaces, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.EventHub/Names
 
    
     
-[!INCLUDE [Microsoft.EventHub/Namespaces](./includes/Microsoft-EventHub-Namespaces-metrics-include.md)]
+[!INCLUDE [Microsoft.EventHub/Namespaces](./includes/microsoft-eventhub-namespaces-metrics-include.md)]
       

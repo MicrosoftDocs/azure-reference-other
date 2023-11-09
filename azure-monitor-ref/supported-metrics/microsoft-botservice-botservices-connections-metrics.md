@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.BotService/botServices/connections, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.BotService/bot
 
    
     
-[!INCLUDE [Microsoft.BotService/botServices/connections](./includes/Microsoft-BotService-botServices-connections-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/botServices/connections](./includes/microsoft-botservice-botservices-connections-metrics-include.md)]
       

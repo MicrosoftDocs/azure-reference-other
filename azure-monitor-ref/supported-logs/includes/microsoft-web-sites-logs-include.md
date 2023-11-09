@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Web/sites, naam
@@ -13,6 +13,7 @@ ms.custom: Microsoft.Web/sites, naam
 |AppServiceAntivirusScanAuditLogs |Report Antivirus Audit Logs |No |
 |AppServiceAppLogs |App Service Application Logs |No |
 |AppServiceAuditLogs |Access Audit Logs |No |
+|AppServiceAuthenticationLogs |App Service Authentication logs (preview) |Yes |
 |AppServiceConsoleLogs |App Service Console Logs |No |
 |AppServiceFileAuditLogs |Site Content Change Audit Logs |No |
 |AppServiceHTTPLogs |HTTP logs |No |

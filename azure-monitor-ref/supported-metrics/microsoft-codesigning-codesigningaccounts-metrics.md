@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.CodeSigning/codesigningaccounts, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.CodeSigning/co
 
    
     
-[!INCLUDE [Microsoft.CodeSigning/codesigningaccounts](./includes/Microsoft-CodeSigning-codesigningaccounts-metrics-include.md)]
+[!INCLUDE [Microsoft.CodeSigning/codesigningaccounts](./includes/microsoft-codesigning-codesigningaccounts-metrics-include.md)]
       

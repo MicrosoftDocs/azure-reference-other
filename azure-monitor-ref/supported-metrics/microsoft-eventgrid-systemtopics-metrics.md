@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.EventGrid/systemTopics, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.EventGrid/syst
 
    
     
-[!INCLUDE [Microsoft.EventGrid/systemTopics](./includes/Microsoft-EventGrid-systemTopics-metrics-include.md)]
+[!INCLUDE [Microsoft.EventGrid/systemTopics](./includes/microsoft-eventgrid-systemtopics-metrics-include.md)]
       

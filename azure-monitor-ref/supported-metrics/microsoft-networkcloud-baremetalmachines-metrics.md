@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.NetworkCloud/b
 
    
     
-[!INCLUDE [Microsoft.NetworkCloud/bareMetalMachines](./includes/Microsoft-NetworkCloud-bareMetalMachines-metrics-include.md)]
+[!INCLUDE [Microsoft.NetworkCloud/bareMetalMachines](./includes/microsoft-networkcloud-baremetalmachines-metrics-include.md)]
       

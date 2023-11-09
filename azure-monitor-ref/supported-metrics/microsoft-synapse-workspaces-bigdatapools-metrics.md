@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Synapse/workspaces/bigDataPools, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Synapse/worksp
 
    
     
-[!INCLUDE [Microsoft.Synapse/workspaces/bigDataPools](./includes/Microsoft-Synapse-workspaces-bigDataPools-metrics-include.md)]
+[!INCLUDE [Microsoft.Synapse/workspaces/bigDataPools](./includes/microsoft-synapse-workspaces-bigdatapools-metrics-include.md)]
       

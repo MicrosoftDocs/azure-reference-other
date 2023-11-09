@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DBforMySQL/servers, arm
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.DBforMySQL/servers, arm
 The following table lists the types of logs available for the Microsoft.DBforMySQL/servers resource type.
   
   
-[!INCLUDE [Microsoft.DBforMySQL/servers](./includes/Microsoft-DBforMySQL-servers-logs-include.md)]
+[!INCLUDE [Microsoft.DBforMySQL/servers](./includes/microsoft-dbformysql-servers-logs-include.md)]
   

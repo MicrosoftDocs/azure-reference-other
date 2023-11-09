@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.AutonomousDevelopmentPlatform/accounts, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.AutonomousDevelopmentPlatform/accounts, naam
 The following table lists the types of logs available for the Microsoft.AutonomousDevelopmentPlatform/accounts resource type.
   
   
-[!INCLUDE [Microsoft.AutonomousDevelopmentPlatform/accounts](./includes/Microsoft-AutonomousDevelopmentPlatform-accounts-logs-include.md)]
+[!INCLUDE [Microsoft.AutonomousDevelopmentPlatform/accounts](./includes/microsoft-autonomousdevelopmentplatform-accounts-logs-include.md)]
   

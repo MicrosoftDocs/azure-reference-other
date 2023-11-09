@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DBForPostgreSQL/serverGroupsv2, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.DBForPostgreSQ
 
    
     
-[!INCLUDE [Microsoft.DBForPostgreSQL/serverGroupsv2](./includes/Microsoft-DBForPostgreSQL-serverGroupsv2-metrics-include.md)]
+[!INCLUDE [Microsoft.DBForPostgreSQL/serverGroupsv2](./includes/microsoft-dbforpostgresql-servergroupsv2-metrics-include.md)]
       

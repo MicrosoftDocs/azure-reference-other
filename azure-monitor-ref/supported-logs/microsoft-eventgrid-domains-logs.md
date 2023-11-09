@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.EventGrid/domains, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.EventGrid/domains, naam
 The following table lists the types of logs available for the Microsoft.EventGrid/domains resource type.
   
   
-[!INCLUDE [Microsoft.EventGrid/domains](./includes/Microsoft-EventGrid-domains-logs-include.md)]
+[!INCLUDE [Microsoft.EventGrid/domains](./includes/microsoft-eventgrid-domains-logs-include.md)]
   

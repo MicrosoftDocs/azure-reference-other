@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Devices/IotHubs, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Devices/IotHub
 
    
     
-[!INCLUDE [Microsoft.Devices/IotHubs](./includes/Microsoft-Devices-IotHubs-metrics-include.md)]
+[!INCLUDE [Microsoft.Devices/IotHubs](./includes/microsoft-devices-iothubs-metrics-include.md)]
       

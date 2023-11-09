@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ContainerService/managedClusters, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ContainerServi
 
    
     
-[!INCLUDE [Microsoft.ContainerService/managedClusters](./includes/Microsoft-ContainerService-managedClusters-metrics-include.md)]
+[!INCLUDE [Microsoft.ContainerService/managedClusters](./includes/microsoft-containerservice-managedclusters-metrics-include.md)]
       

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.BotService/hostsettings, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.BotService/hos
 
    
     
-[!INCLUDE [Microsoft.BotService/hostsettings](./includes/Microsoft-BotService-hostsettings-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/hostsettings](./includes/microsoft-botservice-hostsettings-metrics-include.md)]
       

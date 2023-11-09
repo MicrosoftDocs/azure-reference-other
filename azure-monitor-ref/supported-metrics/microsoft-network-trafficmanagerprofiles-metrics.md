@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Network/trafficManagerProfiles, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Network/traffi
 
    
     
-[!INCLUDE [Microsoft.Network/trafficManagerProfiles](./includes/Microsoft-Network-trafficManagerProfiles-metrics-include.md)]
+[!INCLUDE [Microsoft.Network/trafficManagerProfiles](./includes/microsoft-network-trafficmanagerprofiles-metrics-include.md)]
       

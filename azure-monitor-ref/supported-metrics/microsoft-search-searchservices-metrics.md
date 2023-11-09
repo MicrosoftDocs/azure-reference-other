@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Search/searchServices, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Search/searchS
 
    
     
-[!INCLUDE [Microsoft.Search/searchServices](./includes/Microsoft-Search-searchServices-metrics-include.md)]
+[!INCLUDE [Microsoft.Search/searchServices](./includes/microsoft-search-searchservices-metrics-include.md)]
       

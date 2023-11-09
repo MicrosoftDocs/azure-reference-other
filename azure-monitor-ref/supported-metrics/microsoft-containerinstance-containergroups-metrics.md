@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ContainerInstance/containerGroups, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ContainerInsta
 
    
     
-[!INCLUDE [Microsoft.ContainerInstance/containerGroups](./includes/Microsoft-ContainerInstance-containerGroups-metrics-include.md)]
+[!INCLUDE [Microsoft.ContainerInstance/containerGroups](./includes/microsoft-containerinstance-containergroups-metrics-include.md)]
       

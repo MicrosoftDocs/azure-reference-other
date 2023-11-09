@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.StorageMover/storageMovers, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.StorageMover/s
 
    
     
-[!INCLUDE [Microsoft.StorageMover/storageMovers](./includes/Microsoft-StorageMover-storageMovers-metrics-include.md)]
+[!INCLUDE [Microsoft.StorageMover/storageMovers](./includes/microsoft-storagemover-storagemovers-metrics-include.md)]
       

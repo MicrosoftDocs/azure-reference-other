@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: microsoft.network/bastionHosts, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the microsoft.network/bastio
 
    
     
-[!INCLUDE [microsoft.network/bastionHosts](./includes/microsoft-network-bastionHosts-metrics-include.md)]
+[!INCLUDE [microsoft.network/bastionHosts](./includes/microsoft-network-bastionhosts-metrics-include.md)]
       

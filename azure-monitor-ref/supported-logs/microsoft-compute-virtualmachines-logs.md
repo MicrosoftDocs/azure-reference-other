@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Compute/virtualMachines, arm
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.Compute/virtualMachines, arm
 The following table lists the types of logs available for the Microsoft.Compute/virtualMachines resource type.
   
   
-[!INCLUDE [Microsoft.Compute/virtualMachines](./includes/Microsoft-Compute-virtualMachines-logs-include.md)]
+[!INCLUDE [Microsoft.Compute/virtualMachines](./includes/microsoft-compute-virtualmachines-logs-include.md)]
   

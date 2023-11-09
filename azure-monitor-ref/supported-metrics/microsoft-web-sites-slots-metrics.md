@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Web/sites/slots, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Web/sites/slot
 
    
     
-[!INCLUDE [Microsoft.Web/sites/slots](./includes/Microsoft-Web-sites-slots-metrics-include.md)]
+[!INCLUDE [Microsoft.Web/sites/slots](./includes/microsoft-web-sites-slots-metrics-include.md)]
       

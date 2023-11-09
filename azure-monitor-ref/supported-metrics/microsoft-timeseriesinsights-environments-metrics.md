@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.TimeSeriesInsights/environments, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.TimeSeriesInsi
 
    
     
-[!INCLUDE [Microsoft.TimeSeriesInsights/environments](./includes/Microsoft-TimeSeriesInsights-environments-metrics-include.md)]
+[!INCLUDE [Microsoft.TimeSeriesInsights/environments](./includes/microsoft-timeseriesinsights-environments-metrics-include.md)]
       

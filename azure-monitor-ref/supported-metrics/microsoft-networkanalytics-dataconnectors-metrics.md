@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.NetworkAnalytics/DataConnectors, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.NetworkAnalyti
 
    
     
-[!INCLUDE [Microsoft.NetworkAnalytics/DataConnectors](./includes/Microsoft-NetworkAnalytics-DataConnectors-metrics-include.md)]
+[!INCLUDE [Microsoft.NetworkAnalytics/DataConnectors](./includes/microsoft-networkanalytics-dataconnectors-metrics-include.md)]
       

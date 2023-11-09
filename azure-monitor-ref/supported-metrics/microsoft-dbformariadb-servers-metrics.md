@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DBforMariaDB/servers, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.DBforMariaDB/s
 
    
     
-[!INCLUDE [Microsoft.DBforMariaDB/servers](./includes/Microsoft-DBforMariaDB-servers-metrics-include.md)]
+[!INCLUDE [Microsoft.DBforMariaDB/servers](./includes/microsoft-dbformariadb-servers-metrics-include.md)]
       

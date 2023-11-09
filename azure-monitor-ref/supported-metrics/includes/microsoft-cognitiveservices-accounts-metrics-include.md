@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/29/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.CognitiveServices/accounts, naam
@@ -23,18 +23,19 @@ There is no benefit in editing these files directly.
 |**Active Tokens**<p><p>Total tokens - cached tokens over a period of time |`ActiveTokens` |Count |Minimum, Maximum, Average, Total |`Region`, `ModelDeploymentName`, `ModelName`, `ModelVersion`|PT1M |Yes|
 |**Audio Seconds Transcribed**<p><p>Number of seconds transcribed |`AudioSecondsTranscribed` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Audio Seconds Translated**<p><p>Number of seconds translated |`AudioSecondsTranslated` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
-|**Azure OpenAI Requests**<p><p>Total number of calls made to the Azure OpenAI API over a period of time |`AzureOpenAIRequests` |Count |Total |`ApiName`, `OperationName`, `Region`, `StreamType`, `ModelDeploymentName`, `ModelName`, `ModelVersion`, `StatusCode`|PT1M |Yes|
+|**Provisioned-managed Utilization**<p><p>Provisioned-managed Utilization is the utilization percentage for a given provisioned-managed deployment. Calculated as (PTUs consumed / PTUs deployed)*100. When utilization is at or above 100%, calls are throttled and return a 429 error code. |`AzureOpenAIProvisionedManagedUtilization` |Percent |Minimum, Maximum, Average |`Region`, `StreamType`, `ModelDeploymentName`, `ModelName`, `ModelVersion`|PT1M |No|
+|**Azure OpenAI Requests**<p><p>Total number of calls made to the Azure OpenAI API over a period of time. Applies to PayGo, PTU and PTU-managed SKUs. |`AzureOpenAIRequests` |Count |Total |`ApiName`, `OperationName`, `Region`, `StreamType`, `ModelDeploymentName`, `ModelName`, `ModelVersion`, `StatusCode`|PT1M |Yes|
 |**Baseline Estimator Overall Reward**<p><p>Baseline Estimator Overall Reward. |`BaselineEstimatorOverallReward` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
 |**Baseline Estimator Slot Reward**<p><p>Baseline Estimator Reward by slot. |`BaselineEstimatorSlotReward` |Count |Average |`SlotId`, `SlotIndex`, `Mode`, `RunId`|PT1M |Yes|
 |**Baseline Random Estimator Overall Reward**<p><p>Baseline Random Estimator Overall Reward. |`BaselineRandomEstimatorOverallReward` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
 |**Baseline Random Estimator Slot Reward**<p><p>Baseline Random Estimator Reward by slot. |`BaselineRandomEstimatorSlotReward` |Count |Average |`SlotId`, `SlotIndex`, `Mode`, `RunId`|PT1M |Yes|
 |**Baseline Random Event count**<p><p>Estimation for baseline random event count. |`BaselineRandomEventCount` |Count |Total |`Mode`, `RunId`|PT1M |Yes|
 |**Baseline Random Reward**<p><p>Estimation for baseline random reward. |`BaselineRandomReward` |Count |Total |`Mode`, `RunId`|PT1M |Yes|
-|**Blocked Calls**<p><p>Number of calls that exceeded rate or quota limit. |`BlockedCalls` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
+|**Blocked Calls**<p><p>Number of calls that exceeded rate or quota limit. Do not use for Azure OpenAI service. |`BlockedCalls` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
 |**Inference Count**<p><p>Inference Count of Carnegie Frontdoor Service |`CarnegieInferenceCount` |Count |Total |`Region`, `Modality`, `Category`, `Language`, `SeverityLevel`, `UseCustomList`|PT1M |Yes|
 |**Characters Trained (Deprecated)**<p><p>Total number of characters trained. |`CharactersTrained` |Count |Total |`ApiName`, `OperationName`, `Region`|PT1M |Yes|
 |**Characters Translated (Deprecated)**<p><p>Total number of characters in incoming text request. |`CharactersTranslated` |Count |Total |`ApiName`, `OperationName`, `Region`|PT1M |Yes|
-|**Client Errors**<p><p>Number of calls with client side error (HTTP response code 4xx). |`ClientErrors` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
+|**Client Errors**<p><p>Number of calls with client side error (HTTP response code 4xx). Do not use for Azure OpenAI service. |`ClientErrors` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
 |**Computer Vision Transactions**<p><p>Number of Computer Vision Transactions |`ComputerVisionTransactions` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Call Count for Image Moderation**<p><p>Number of calls for image moderation. |`ContentSafetyImageAnalyzeRequestCount` |Count |Total |`ApiVersion`|PT1M |Yes|
 |**Call Count for Text Moderation**<p><p>Number of calls for text moderation. |`ContentSafetyTextAnalyzeRequestCount` |Count |Total |`ApiVersion`|PT1M |Yes|
@@ -43,8 +44,8 @@ There is no benefit in editing these files directly.
 |**Context Namespaces Per Event**<p><p>Number of context namespaces per event. |`ContextNamespacesPerEvent` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
 |**Custom Vision Training Time**<p><p>Custom Vision training time |`CustomVisionTrainingTime` |Seconds |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Custom Vision Transactions**<p><p>Number of Custom Vision prediction transactions |`CustomVisionTransactions` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
-|**Data In**<p><p>Size of incoming data in bytes. |`DataIn` |Bytes |Total |`ApiName`, `OperationName`, `Region`|PT1M |Yes|
-|**Data Out**<p><p>Size of outgoing data in bytes. |`DataOut` |Bytes |Total |`ApiName`, `OperationName`, `Region`|PT1M |Yes|
+|**Data In**<p><p>Size of incoming data in bytes. Do not use for Azure OpenAI service. |`DataIn` |Bytes |Total |`ApiName`, `OperationName`, `Region`|PT1M |Yes|
+|**Data Out**<p><p>Size of outgoing data in bytes. Do not use for Azure OpenAI service. |`DataOut` |Bytes |Total |`ApiName`, `OperationName`, `Region`|PT1M |Yes|
 |**Document Characters Translated**<p><p>Number of characters in document translation request. |`DocumentCharactersTranslated` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Document Custom Characters Translated**<p><p>Number of characters in custom document translation request. |`DocumentCustomCharactersTranslated` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Face Images Trained**<p><p>Number of images trained. 1,000 images trained per transaction. |`FaceImagesTrained` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
@@ -54,9 +55,9 @@ There is no benefit in editing these files directly.
 |**Feature Cardinality by Context**<p><p>Feature Cardinality based on Context. |`FeatureCardinality_Context` |Count |Average |`FeatureId`, `Mode`, `RunId`|PT1M |Yes|
 |**Feature Cardinality by Slot**<p><p>Feature Cardinality based on Slot. |`FeatureCardinality_Slot` |Count |Average |`FeatureId`, `Mode`, `RunId`|PT1M |Yes|
 |**Processed FineTuned Training Hours**<p><p>Number of Training Hours Processed on an OpenAI FineTuned Model |`FineTunedTrainingHours` |Count |Total |`ApiName`, `ModelDeploymentName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
-|**Generated Completion Tokens**<p><p>Number of Generated Tokens from an OpenAI Model |`GeneratedTokens` |Count |Total |`ApiName`, `ModelDeploymentName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
+|**Generated Completion Tokens**<p><p>Number of generated tokens (output) from an OpenAI model. Applies to PayGo, PTU and PTU-managed SKUs. |`GeneratedTokens` |Count |Total |`ApiName`, `ModelDeploymentName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Images Stored**<p><p>Number of Custom Vision images stored. |`ImagesStored` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
-|**Latency**<p><p>Latency in milliseconds. |`Latency` |MilliSeconds |Average |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
+|**Latency**<p><p>Latency in milliseconds. Do not use for Azure OpenAI service. |`Latency` |MilliSeconds |Average |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
 |**Learned Events**<p><p>Number of Learned Events. |`LearnedEvents` |Count |Total |`IsMatchBaseline`, `Mode`, `RunId`|PT1M |Yes|
 |**LUIS Speech Requests**<p><p>Number of LUIS speech to intent understanding requests |`LUISSpeechRequests` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**LUIS Text Requests**<p><p>Number of LUIS text requests |`LUISTextRequests` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
@@ -73,12 +74,12 @@ There is no benefit in editing these files directly.
 |**Processed Health Text Records**<p><p>Number of health text records processed |`ProcessedHealthTextRecords` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Processed Images**<p><p>Number of images processed |`ProcessedImages` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Processed Pages**<p><p>Number of pages processed |`ProcessedPages` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
-|**Processed Prompt Tokens**<p><p>Number of Prompt Tokens Processed on an OpenAI Model |`ProcessedPromptTokens` |Count |Total |`ApiName`, `ModelDeploymentName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
+|**Processed Prompt Tokens**<p><p>Total number of prompt tokens (input) processed on an OpenAI model. Applies to PayGo, PTU and PTU-managed SKUs. |`ProcessedPromptTokens` |Count |Total |`ApiName`, `ModelDeploymentName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Processed Text Records**<p><p>Count of Text Records. |`ProcessedTextRecords` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**QA Text Records**<p><p>Number of text records processed |`QuestionAnsweringTextRecords` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
-|**Ratelimit**<p><p>The current ratelimit of the ratelimit key. |`Ratelimit` |Count |Total |`Region`, `RatelimitKey`|PT1M |Yes|
+|**Ratelimit**<p><p>The current ratelimit of the ratelimit key. Do not use for Azure OpenAI service. |`Ratelimit` |Count |Total |`Region`, `RatelimitKey`|PT1M |Yes|
 |**Average Reward Per Event**<p><p>Average reward per event. |`Reward` |Count |Average |`BaselineAction`, `ChosenActionId`, `MatchesBaseline`, `NonDefaultReward`, `Mode`, `RunId`|PT1M |Yes|
-|**Server Errors**<p><p>Number of calls with service internal error (HTTP response code 5xx). |`ServerErrors` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
+|**Server Errors**<p><p>Number of calls with service internal error (HTTP response code 5xx). Do not use for Azure OpenAI service. |`ServerErrors` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
 |**Slot Feature Occurrences**<p><p>Number of times each slot feature appears. |`SlotFeatureIdOccurrences` |Count |Total |`FeatureId`, `Mode`, `RunId`|PT1M |Yes|
 |**Slot Features Per Event**<p><p>Average number of slot features per event. |`SlotFeaturesPerEvent` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
 |**Slot Occurrences**<p><p>Number of times each slot appears. |`SlotIdOccurrences` |Count |Total |`SlotId`, `SlotIndex`, `Mode`, `RunId`|PT1M |Yes|
@@ -87,15 +88,15 @@ There is no benefit in editing these files directly.
 |**Speaker Recognition Transactions**<p><p>Number of speaker recognition transactions |`SpeakerRecognitionTransactions` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Speech Model Hosting Hours**<p><p>Number of speech model hosting hours |`SpeechModelHostingHours` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Speech Session Duration (Deprecated)**<p><p>Total duration of speech session in seconds. |`SpeechSessionDuration` |Seconds |Total |`ApiName`, `OperationName`, `Region`|PT1M |Yes|
-|**Successful Calls**<p><p>Number of successful calls. |`SuccessfulCalls` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
-|**AvailabilityRate**<p><p>Availability percentage with the following calculation: (Total Calls - Server Errors)/Total Calls. Server Errors include any HTTP responses >=500. |`SuccessRate` |Percent |Minimum, Maximum, Average |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |No|
+|**Successful Calls**<p><p>Number of successful calls. Do not use for Azure OpenAI service. |`SuccessfulCalls` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
+|**AvailabilityRate**<p><p>Availability percentage with the following calculation: (Total Calls - Server Errors)/Total Calls. Server Errors include any HTTP responses >=500. Do not use for Azure OpenAI service. |`SuccessRate` |Percent |Minimum, Maximum, Average |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |No|
 |**Synthesized Characters**<p><p>Number of Characters. |`SynthesizedCharacters` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Text Characters Translated**<p><p>Number of characters in incoming text translation request. |`TextCharactersTranslated` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Text Custom Characters Translated**<p><p>Number of characters in incoming custom text translation request. |`TextCustomCharactersTranslated` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |**Text Trained Characters**<p><p>Number of characters trained using text translation. |`TextTrainedCharacters` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
-|**Processed Inference Tokens**<p><p>Number of Inference Tokens Processed on an OpenAI Model |`TokenTransaction` |Count |Total |`ApiName`, `ModelDeploymentName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
-|**Total Calls**<p><p>Total number of calls. |`TotalCalls` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
-|**Total Errors**<p><p>Total number of calls with error response (HTTP response code 4xx or 5xx). |`TotalErrors` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
+|**Processed Inference Tokens**<p><p>Number of inference tokens processed on an OpenAI model. Calculated as prompt tokens (input) + generated tokens. Applies to PayGo, PTU and PTU-managed SKUs. |`TokenTransaction` |Count |Total |`ApiName`, `ModelDeploymentName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
+|**Total Calls**<p><p>Total number of calls. Do not use for Azure OpenAI service. |`TotalCalls` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
+|**Total Errors**<p><p>Total number of calls with error response (HTTP response code 4xx or 5xx). Do not use for Azure OpenAI service. |`TotalErrors` |Count |Total |`ApiName`, `OperationName`, `Region`, `RatelimitKey`|PT1M |Yes|
 |**Total Events**<p><p>Number of events. |`TotalEvents` |Count |Total |`Mode`, `RunId`|PT1M |Yes|
 |**Total Token Calls**<p><p>Total number of token calls. |`TotalTokenCalls` |Count |Total |`ApiName`, `OperationName`, `Region`|PT1M |Yes|
 |**Total Transactions (Deprecated)**<p><p>Total number of transactions. |`TotalTransactions` |Count |Total |\<none\>|PT1M |Yes|

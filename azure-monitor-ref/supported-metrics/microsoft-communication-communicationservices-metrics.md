@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Communication/CommunicationServices, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Communication/
 
    
     
-[!INCLUDE [Microsoft.Communication/CommunicationServices](./includes/Microsoft-Communication-CommunicationServices-metrics-include.md)]
+[!INCLUDE [Microsoft.Communication/CommunicationServices](./includes/microsoft-communication-communicationservices-metrics-include.md)]
       

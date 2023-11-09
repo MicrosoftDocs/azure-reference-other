@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Network/expressRouteCircuits, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.Network/expressRouteCircuits, naam
 The following table lists the types of logs available for the Microsoft.Network/expressRouteCircuits resource type.
   
   
-[!INCLUDE [Microsoft.Network/expressRouteCircuits](./includes/Microsoft-Network-expressRouteCircuits-logs-include.md)]
+[!INCLUDE [Microsoft.Network/expressRouteCircuits](./includes/microsoft-network-expressroutecircuits-logs-include.md)]
   

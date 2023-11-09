@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Maps/accounts, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Maps/accounts 
 
    
     
-[!INCLUDE [Microsoft.Maps/accounts](./includes/Microsoft-Maps-accounts-metrics-include.md)]
+[!INCLUDE [Microsoft.Maps/accounts](./includes/microsoft-maps-accounts-metrics-include.md)]
       

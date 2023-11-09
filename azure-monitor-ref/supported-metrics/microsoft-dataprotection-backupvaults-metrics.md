@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.DataProtection/BackupVaults, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.DataProtection
 
    
     
-[!INCLUDE [Microsoft.DataProtection/BackupVaults](./includes/Microsoft-DataProtection-BackupVaults-metrics-include.md)]
+[!INCLUDE [Microsoft.DataProtection/BackupVaults](./includes/microsoft-dataprotection-backupvaults-metrics-include.md)]
       

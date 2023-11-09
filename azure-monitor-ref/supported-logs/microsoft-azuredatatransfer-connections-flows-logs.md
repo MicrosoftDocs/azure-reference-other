@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.AzureDataTransfer/connections/flows, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.AzureDataTransfer/connections/flows, naam
 The following table lists the types of logs available for the Microsoft.AzureDataTransfer/connections/flows resource type.
   
   
-[!INCLUDE [Microsoft.AzureDataTransfer/connections/flows](./includes/Microsoft-AzureDataTransfer-connections-flows-logs-include.md)]
+[!INCLUDE [Microsoft.AzureDataTransfer/connections/flows](./includes/microsoft-azuredatatransfer-connections-flows-logs-include.md)]
   
