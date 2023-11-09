@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 The following table lists the types of logs available for the Microsoft.NetworkCloud/bareMetalMachines resource type.
   
   
-[!INCLUDE [Microsoft.NetworkCloud/bareMetalMachines](./includes/Microsoft-NetworkCloud-bareMetalMachines-logs-include.md)]
+[!INCLUDE [Microsoft.NetworkCloud/bareMetalMachines](./includes/microsoft-networkcloud-baremetalmachines-logs-include.md)]
   
