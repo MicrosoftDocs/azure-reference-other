@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.StorageCache/amlFilesystems, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.StorageCache/a
 
    
     
-[!INCLUDE [Microsoft.StorageCache/amlFilesystems](./includes/Microsoft-StorageCache-amlFilesystems-metrics-include.md)]
+[!INCLUDE [Microsoft.StorageCache/amlFilesystems](./includes/microsoft-storagecache-amlfilesystems-metrics-include.md)]
       
