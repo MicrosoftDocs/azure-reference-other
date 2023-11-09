@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Orbital/l2Connections, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Orbital/l2Conn
 
    
     
-[!INCLUDE [Microsoft.Orbital/l2Connections](./includes/Microsoft-Orbital-l2Connections-metrics-include.md)]
+[!INCLUDE [Microsoft.Orbital/l2Connections](./includes/microsoft-orbital-l2connections-metrics-include.md)]
       
