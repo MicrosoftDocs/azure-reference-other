@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ClassicCompute/virtualMachines, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ClassicCompute
 
    
     
-[!INCLUDE [Microsoft.ClassicCompute/virtualMachines](./includes/Microsoft-ClassicCompute-virtualMachines-metrics-include.md)]
+[!INCLUDE [Microsoft.ClassicCompute/virtualMachines](./includes/microsoft-classiccompute-virtualmachines-metrics-include.md)]
       
