@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Wandisco.Fusion/migrators, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Wandisco.Fusion/migrator
 
    
     
-[!INCLUDE [Wandisco.Fusion/migrators](./includes/Wandisco-Fusion-migrators-metrics-include.md)]
+[!INCLUDE [Wandisco.Fusion/migrators](./includes/wandisco-fusion-migrators-metrics-include.md)]
       
