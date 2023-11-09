@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.AAD/DomainServices, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.AAD/DomainServices, naam
 The following table lists the types of logs available for the Microsoft.AAD/DomainServices resource type.
   
   
-[!INCLUDE [Microsoft.AAD/DomainServices](./includes/Microsoft-AAD-DomainServices-logs-include.md)]
+[!INCLUDE [Microsoft.AAD/DomainServices](./includes/microsoft-aad-domainservices-logs-include.md)]
   
