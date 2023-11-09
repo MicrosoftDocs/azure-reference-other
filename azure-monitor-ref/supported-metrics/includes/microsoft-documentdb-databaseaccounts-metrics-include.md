@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
@@ -99,7 +99,7 @@ There is no benefit in editing these files directly.
 |**AzureTable Table Throughput Updated**<p><p>AzureTable Table Throughput Updated |`TableTableThroughputUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|
 |**AzureTable Table Updated**<p><p>AzureTable Table Updated |`TableTableUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
 |**Total Requests**<p><p>Number of requests made |`TotalRequests` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `CapacityType`|PT1M |Yes|
-|**Total Requests (Preview)**<p><p>Number of SQL requests |`TotalRequestsPreview` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `IsExternal`|PT1M |No|
+|**Total Requests (Preview)**<p><p>Number of SQL requests |`TotalRequestsPreview` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `PriorityLevel`, `IsExternal`|PT1M |No|
 |**Total Request Units**<p><p>SQL Request Units consumed |`TotalRequestUnits` |Count |Total, Average, Maximum |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `CapacityType`|PT1M |Yes|
 |**Total Request Units (Preview)**<p><p>Request Units consumed with CapacityType |`TotalRequestUnitsPreview` |Count |Total, Average, Maximum |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `CapacityType`, `PriorityLevel`|PT1M |No|
 |**Account Keys Updated**<p><p>Account Keys Updated |`UpdateAccountKeys` |Count |Count |`KeyType`|PT5M |Yes|
