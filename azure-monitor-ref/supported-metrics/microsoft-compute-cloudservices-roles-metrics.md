@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Compute/cloudServices/roles, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.Compute/cloudS
 
    
     
-[!INCLUDE [Microsoft.Compute/cloudServices/roles](./includes/Microsoft-Compute-cloudServices-roles-metrics-include.md)]
+[!INCLUDE [Microsoft.Compute/cloudServices/roles](./includes/microsoft-compute-cloudservices-roles-metrics-include.md)]
       
