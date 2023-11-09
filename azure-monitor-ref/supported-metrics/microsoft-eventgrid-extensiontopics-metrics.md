@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.EventGrid/extensionTopics, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.EventGrid/exte
 
    
     
-[!INCLUDE [Microsoft.EventGrid/extensionTopics](./includes/Microsoft-EventGrid-extensionTopics-metrics-include.md)]
+[!INCLUDE [Microsoft.EventGrid/extensionTopics](./includes/microsoft-eventgrid-extensiontopics-metrics-include.md)]
       
