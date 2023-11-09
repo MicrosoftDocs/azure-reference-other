@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.BotService/listqnamakerendpointkeys, arm
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.BotService/lis
 
    
     
-[!INCLUDE [Microsoft.BotService/listqnamakerendpointkeys](./includes/Microsoft-BotService-listqnamakerendpointkeys-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/listqnamakerendpointkeys](./includes/microsoft-botservice-listqnamakerendpointkeys-metrics-include.md)]
       
