@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.MobileNetwork/packetcorecontrolplanes, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.MobileNetwork/
 
    
     
-[!INCLUDE [Microsoft.MobileNetwork/packetcorecontrolplanes](./includes/Microsoft-MobileNetwork-packetcorecontrolplanes-metrics-include.md)]
+[!INCLUDE [Microsoft.MobileNetwork/packetcorecontrolplanes](./includes/microsoft-mobilenetwork-packetcorecontrolplanes-metrics-include.md)]
       
