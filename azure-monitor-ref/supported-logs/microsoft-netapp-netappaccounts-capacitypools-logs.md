@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.NetApp/netAppAccounts/capacityPools, arm
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.NetApp/netAppAccounts/capacityPools, arm
 The following table lists the types of logs available for the Microsoft.NetApp/netAppAccounts/capacityPools resource type.
   
   
-[!INCLUDE [Microsoft.NetApp/netAppAccounts/capacityPools](./includes/Microsoft-NetApp-netAppAccounts-capacityPools-logs-include.md)]
+[!INCLUDE [Microsoft.NetApp/netAppAccounts/capacityPools](./includes/microsoft-netapp-netappaccounts-capacitypools-logs-include.md)]
   
