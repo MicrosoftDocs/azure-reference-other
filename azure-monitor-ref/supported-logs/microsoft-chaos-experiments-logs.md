@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.Chaos/experiments, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.Chaos/experiments, naam
 The following table lists the types of logs available for the Microsoft.Chaos/experiments resource type.
   
   
-[!INCLUDE [Microsoft.Chaos/experiments](./includes/Microsoft-Chaos-experiments-logs-include.md)]
+[!INCLUDE [Microsoft.Chaos/experiments](./includes/microsoft-chaos-experiments-logs-include.md)]
   
