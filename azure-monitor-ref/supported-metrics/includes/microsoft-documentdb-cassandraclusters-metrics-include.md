@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/29/2023
+ms.date: 11/09/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/cassandraClusters, naam
@@ -148,4 +148,6 @@ There is no benefit in editing these files directly.
 |**network transmitted packets**<p><p>Cumulative network transmitted packets. |`ethtool_tx_packets` |Count |Average, Minimum, Maximum, Count |`ClusterResourceName`, `DataCenterResourceName`, `Address`, `Kind`|PT1M |No|
 |**IOPS (including throughput)**<p><p>I/O operations and bytes per second. |`iops` |Count |Average |`ClusterResourceName`, `DataCenterResourceName`, `Address`, `Kind`|PT1M |Yes|
 |**memory utilization**<p><p>Memory utilization rate. |`percent_mem` |Percent |Average |`ClusterResourceName`, `DataCenterResourceName`, `Address`|PT1M |Yes|
+|**RAID array degraded**<p><p>Whether RAID array is degraded. 1 means degraded, 0 means not degraded. |`raid_array_degraded` |Count |Average, Maximum, Minimum |`DataCenterResourceName`, `Address`, `RaidArrayName`, `RaidArrayType`|PT1M |No|
+|**RAID array rebuild**<p><p>Percentage of RAID array rebuild. |`raid_array_rebuild` |Percent |Average, Minimum, Maximum |`DataCenterResourceName`, `Address`, `RaidArrayName`, `RaidArrayType`|PT1M |No|
 |**average CPU usage active**<p><p>Average CPU usage (active) across all the CPUs. |`total_cpu` |Percent |Average |`ClusterResourceName`, `DataCenterResourceName`, `Address`, `Kind`|PT1M |Yes|
