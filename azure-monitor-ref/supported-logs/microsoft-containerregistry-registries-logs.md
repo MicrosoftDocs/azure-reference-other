@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ContainerRegistry/registries, naam
 ---
 
@@ -16,5 +16,5 @@ ms.custom: Microsoft.ContainerRegistry/registries, naam
 The following table lists the types of logs available for the Microsoft.ContainerRegistry/registries resource type.
   
   
-[!INCLUDE [Microsoft.ContainerRegistry/registries](./includes/Microsoft-ContainerRegistry-registries-logs-include.md)]
+[!INCLUDE [Microsoft.ContainerRegistry/registries](./includes/microsoft-containerregistry-registries-logs-include.md)]
   
