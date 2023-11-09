@@ -124,7 +124,7 @@ GetMetadataPropertyValue has the following limitations of usage:
 
 * The alias you give your Metadata Property Value will be lowercase regardless of the casing used in your query. For example, `SELECT GetMetadataPropertyValue(ehInput, 'EventId') AS eventPrimaryKey` outputs as `eventprimarykey`. To preserve casing, use compatibility level 1.2.
 
-* This function doesn't work in the Azure portal preview results pane.
+* This function doesn't work in the Azure portal preview results pane, including test query functions.
 
 * Rename the origial payload fields before the data arrives to ASA. The payload field name will be overwritten if it is the same as system metadata field name. 
 

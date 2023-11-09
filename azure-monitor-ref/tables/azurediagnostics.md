@@ -126,6 +126,7 @@ The following services use either Azure diagnostics mode or resource-specific mo
 - Azure Cosmos DB
 - Data factories (V2)
 - IoT Hub
+- Firewalls
 - Recovery Services vaults(Backup)
 - Firewalls
 
