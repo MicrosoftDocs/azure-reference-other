@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.MachineLearnin
 
    
     
-[!INCLUDE [Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments](./includes/Microsoft-MachineLearningServices-workspaces-onlineEndpoints-deployments-metrics-include.md)]
+[!INCLUDE [Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments](./includes/microsoft-machinelearningservices-workspaces-onlineendpoints-deployments-metrics-include.md)]
       
