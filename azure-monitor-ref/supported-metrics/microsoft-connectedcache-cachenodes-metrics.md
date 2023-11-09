@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/18/2023
+ms.date: 11/09/2023
 ms.custom: Microsoft.ConnectedCache/CacheNodes, naam
 ---
 
@@ -34,5 +34,5 @@ The following table lists the metrics available for the Microsoft.ConnectedCache
 
    
     
-[!INCLUDE [Microsoft.ConnectedCache/CacheNodes](./includes/Microsoft-ConnectedCache-CacheNodes-metrics-include.md)]
+[!INCLUDE [Microsoft.ConnectedCache/CacheNodes](./includes/microsoft-connectedcache-cachenodes-metrics-include.md)]
       
