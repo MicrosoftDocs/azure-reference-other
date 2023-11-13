@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 11/13/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: AZKVAuditLogs
@@ -12,7 +12,7 @@ ms.custom: AZKVAuditLogs
 |---|---|---|
 | AddressAuthorizationType | string | Address type (Public IP, subnet, private connection) |
 | Algorithm | string | Algorithm used to generate the key |
-| AppliedAssignmentId | string | AssignmentId that either granted or denied access as part of access check |
+| AppliedAssignmentId | string | AssignmentId that eiher granted or denied access as part of access check |
 | _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | IP address of the client that made the request |
 | CertificateIssuerProperties | dynamic | Information about certificate issuer properties including provider, id |
