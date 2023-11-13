@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/06/2023
+ms.date: 11/13/2023
 ---
 
 # AzureActivity
@@ -65,6 +65,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Dev Centers
 - Experiment Workspace
 - HDInsight Clusters
+- Nexus Network Fabric - Network Devices
 - Virtual machines
 - Machine Learning
 - Machine Learning
