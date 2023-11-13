@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 11/06/2023
+ms.date: 11/13/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -889,6 +889,7 @@ Microsoft.Network/LoadBalancers
 ### Log Analytics workspaces
 Microsoft.OperationalInsights/Workspaces
 - [LAQueryLogs](laquerylogs.md)
+- [LASummaryLogs](lasummarylogs.md)
 - [AzureMetricsV2](azuremetricsv2.md)
 
 
@@ -1094,6 +1095,12 @@ Microsoft.NetworkCloud/clusters
 - [AzureMetrics](azuremetrics.md)
 - [NCCKubernetesLogs](ncckuberneteslogs.md)
 - [NCCVMOrchestrationLogs](nccvmorchestrationlogs.md)
+
+
+### Nexus Network Fabric - Network Devices
+Microsoft.ManagedNetworkFabric/networkDevices
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
 
 
 ### Nexus Storage Appliances
