@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/06/2023
+ms.date: 11/13/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -373,6 +373,7 @@ ms.date: 11/06/2023
 - [HDInsightStormTopologyMetrics](hdinsightstormtopologymetrics.md)
 - [InsightsMetrics](insightsmetrics.md)
 - [IoTHubDistributedTracing](iothubdistributedtracing.md)
+- [LASummaryLogs](lasummarylogs.md)
 - [LogicAppWorkflowRuntime](logicappworkflowruntime.md)
 - [MCCEventLogs](mcceventlogs.md)
 - [MCVPAuditLogs](mcvpauditlogs.md)

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/13/2023
+ms.date: 11/13/2023
 custom: Hardcoded description from azurediagnostics-stub.md.
 ---
 
@@ -126,7 +126,6 @@ The following services use either Azure diagnostics mode or resource-specific mo
 - Azure Cosmos DB
 - Data factories (V2)
 - IoT Hub
-- Firewalls
 - Recovery Services vaults(Backup)
 - Firewalls
 

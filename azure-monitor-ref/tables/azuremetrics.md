@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/06/2023
+ms.date: 11/13/2023
 ---
 
 # AzureMetrics
@@ -46,6 +46,7 @@ Metric data emitted by Azure services that measure their health and performance.
 - Azure Database for MySQL Flexible Servers
 - Azure Database for PostgreSQL Flexible Servers
 - Dev Centers
+- Nexus Network Fabric - Network Devices
 - Virtual machines
 - Machine Learning
 - Media Services
