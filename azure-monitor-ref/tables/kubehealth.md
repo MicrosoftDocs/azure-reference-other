@@ -6,16 +6,13 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 11/20/2023
 ---
 
 # KubeHealth
 
 
 
-## Categories
-
-- Containers
 ## Solutions
 
 - AzureResources
@@ -23,8 +20,6 @@ ms.date: 08/28/2023
 ## Resource types
 
 - Kubernetes Services
-- Azure Arc Enabled Kubernetes
-- Azure Arc Provisioned Clusters
 
             
 

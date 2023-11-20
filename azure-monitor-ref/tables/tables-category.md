@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/13/2023
+ms.date: 11/20/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -479,7 +479,6 @@ ms.date: 11/13/2023
 - [Heartbeat](heartbeat.md)
 - [InsightsMetrics](insightsmetrics.md)
 - [KubeEvents](kubeevents.md)
-- [KubeHealth](kubehealth.md)
 - [KubeMonAgentEvents](kubemonagentevents.md)
 - [KubeNodeInventory](kubenodeinventory.md)
 - [KubePVInventory](kubepvinventory.md)
