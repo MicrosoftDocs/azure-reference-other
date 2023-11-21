@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 11/13/2023
+ms.date: 11/20/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -127,7 +127,6 @@ Microsoft.Kubernetes/connectedClusters
 - [ContainerNodeInventory](containernodeinventory.md)
 - [ContainerServiceLog](containerservicelog.md)
 - [KubeEvents](kubeevents.md)
-- [KubeHealth](kubehealth.md)
 - [KubeNodeInventory](kubenodeinventory.md)
 - [KubePodInventory](kubepodinventory.md)
 - [KubePVInventory](kubepvinventory.md)
@@ -151,7 +150,6 @@ Microsoft.HybridContainerservice/Provisionedclusters
 - [ContainerNodeInventory](containernodeinventory.md)
 - [ContainerServiceLog](containerservicelog.md)
 - [KubeEvents](kubeevents.md)
-- [KubeHealth](kubehealth.md)
 - [KubeNodeInventory](kubenodeinventory.md)
 - [KubePodInventory](kubepodinventory.md)
 - [KubePVInventory](kubepvinventory.md)
