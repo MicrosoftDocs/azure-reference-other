@@ -29,3 +29,13 @@ ms.custom: AWSGuardDuty
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated, The last time this finding was updated with new activity matching the pattern that prompted GuardDuty to generate this finding. |
 | Title | string | Summary of the primary purpose of the threat or attack related to the finding. |
 | Type | string | The name of the table |
+---
+sample input guardduty json file ???
+sample input guardduty json schema ????
+
+parsing error codes 
+|---|---|---|
+|error code|description|resolution|
+|---|---|---|
+
+---
