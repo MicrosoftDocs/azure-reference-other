@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 12/01/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
@@ -11,6 +11,7 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |Category|Category Display Name|Costs To Export|
 |---|---|---|
 |DefenderSecurity |Security - Defender |Yes |
+|NexusBreakGlassAudit |Security - Break Glass Audit |Yes |
 |SecurityCritical |Security - Critical |Yes |
 |SecurityDebug |Security - Debug |Yes |
 |SecurityError |Security - Error |Yes |
