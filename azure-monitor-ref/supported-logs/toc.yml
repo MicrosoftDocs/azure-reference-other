@@ -94,8 +94,6 @@ items:
     href: ../supported-logs/microsoft-dashboard-grafana-logs.md
   - name: Microsoft.Databricks/workspaces
     href: ../supported-logs/microsoft-databricks-workspaces-logs.md
-  - name: Microsoft.DataCollaboration/workspaces
-    href: ../supported-logs/microsoft-datacollaboration-workspaces-logs.md
   - name: Microsoft.DataFactory/factories
     href: ../supported-logs/microsoft-datafactory-factories-logs.md
   - name: Microsoft.DataLakeAnalytics/accounts
