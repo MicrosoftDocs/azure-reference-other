@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 11/09/2023
+ms.date: 12/01/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
@@ -16,6 +16,7 @@ There is no benefit in editing these files directly.
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
 |**Region Added**<p><p>Region Added |`AddRegion` |Count |Count |`Region`|PT5M |Yes|
+|**Autoscaled RU**<p><p>Autoscaled RU consumption with Per Region and Per Partition Autoscale |`AutoscaledRU` |Count |Maximum |`DatabaseName`, `CollectionName`, `PhysicalPartitionId`, `Region`|PT1M, PT5M, PT1H, P1D |No|
 |**Autoscale Max Throughput**<p><p>Autoscale Max Throughput |`AutoscaleMaxThroughput` |Count |Maximum |`DatabaseName`, `CollectionName`|PT5M, PT1H |No|
 |**(deprecated) Available Storage**<p><p>"Available Storage"will be removed from Azure Monitor at the end of September 2023. Cosmos DB collection storage size is now unlimited. The only restriction is that the storage size for each logical partition key is 20GB. You can enable PartitionKeyStatistics in Diagnostic Log to know the storage consumption for top partition keys. For more info about Cosmos DB storage quota, please check this doc https://docs.microsoft.com/azure/cosmos-db/concepts-limits. After deprecation, the remaining alert rules still defined on the deprecated metric will be automatically disabled post the deprecation date. |`AvailableStorage` |Bytes |Total, Average |`CollectionName`, `DatabaseName`, `Region`|PT5M |No|
 |**Cassandra Connection Closures**<p><p>Number of Cassandra connections that were closed, reported at a 1 minute granularity |`CassandraConnectionClosures` |Count |Average, Minimum, Maximum, Total |`APIType`, `Region`, `ClosureReason`|PT1M |No|
@@ -73,12 +74,13 @@ There is no benefit in editing these files directly.
 |**Mongo Database Updated**<p><p>Mongo Database Updated |`MongoDBDatabaseUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
 |**Mongo Request Charge**<p><p>Mongo Request Units Consumed |`MongoRequestCharge` |Count |Total, Average, Maximum |`DatabaseName`, `CollectionName`, `Region`, `CommandName`, `ErrorCode`, `Status`|PT1M |Yes|
 |**Mongo Requests**<p><p>Number of Mongo Requests Made |`MongoRequests` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `CommandName`, `ErrorCode`, `Status`|PT1M |Yes|
-|**Normalized RU Consumption**<p><p>Max RU consumption percentage per minute |`NormalizedRUConsumption` |Percent |Maximum, Average |`CollectionName`, `DatabaseName`, `Region`, `PartitionKeyRangeId`, `CollectionRid`, `PhysicalPartitionId`|PT1M, PT5M, PT1H, P1D |No|
+|**Normalized RU Consumption**<p><p>Max RU consumption percentage per minute |`NormalizedRUConsumption` |Percent |Maximum, Average |`CollectionName`, `DatabaseName`, `Region`, `PartitionKeyRangeId`, `CollectionRid`, `PhysicalPartitionId`, `OfferOwnerRid`|PT1M, PT5M, PT1H, P1D |No|
 |**Region Offlined**<p><p>Region Offlined |`OfflineRegion` |Count |Count |`Region`, `StatusCode`, `Role`, `OperationName`|PT1M |No|
 |**Region Onlined**<p><p>Region Onlined |`OnlineRegion` |Count |Count |`Region`, `StatusCode`, `Role`, `OperationName`|PT1M |No|
+|**Physical Partition Count**<p><p>Physical Partition Count |`PhysicalPartitionCount` |Count |Count |`CollectionName`, `DatabaseName`, `IsSharedThroughputOffer`, `OfferOwnerRid`, `Region`|PT5M |Yes|
 |**Physical Partition Size**<p><p>Physical Partition Size in bytes |`PhysicalPartitionSizeInfo` |Bytes |Maximum, Average |`CollectionName`, `DatabaseName`, `PhysicalPartitionId`, `OfferOwnerRid`, `Region`|PT1M, PT5M, PT1H, P1D |No|
 |**Physical Partition Throughput**<p><p>Physical Partition Throughput |`PhysicalPartitionThroughputInfo` |Count |Maximum |`CollectionName`, `DatabaseName`, `PhysicalPartitionId`, `OfferOwnerRid`, `Region`|PT1M, PT5M, PT1H, P1D |No|
-|**Provisioned Throughput**<p><p>Provisioned Throughput |`ProvisionedThroughput` |Count |Maximum |`DatabaseName`, `CollectionName`, `AllowWrite`|PT5M, PT1H, P1D |No|
+|**Provisioned Throughput**<p><p>Provisioned Throughput |`ProvisionedThroughput` |Count |Maximum |`DatabaseName`, `CollectionName`, `Region`|PT5M, PT1H, P1D |No|
 |**Region Failed Over**<p><p>Region Failed Over |`RegionFailover` |Count |Count |\<none\>|PT5M |Yes|
 |**Region Removed**<p><p>Region Removed |`RemoveRegion` |Count |Count |`Region`|PT5M |Yes|
 |**P99 Replication Latency**<p><p>P99 Replication Latency across source and target regions for geo-enabled account |`ReplicationLatency` |MilliSeconds |Minimum, Maximum, Average |`SourceRegion`, `TargetRegion`|PT1M |Yes|
