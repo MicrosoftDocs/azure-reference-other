@@ -1,10 +1,10 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 09/19/2023
+ms.date: 12/01/2023
 ms.author: edbaynash
 author: EdB-MSFT
-ms.custom: Microsoft.Databricks/workspaces, arm
+ms.custom: Microsoft.Databricks/workspaces, naam
 ---
   
   
