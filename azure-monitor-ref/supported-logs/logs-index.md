@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 11/09/2023
+ms.date: 12/01/2023
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -226,11 +226,6 @@ If you think something is missing, you can open a GitHub comment at the bottom o
 ### Microsoft.Databricks<a name="microsoftdatabricksworkspaces"></a>
   
   * [Microsoft.Databricks/workspaces](Microsoft-Databricks-workspaces-logs.md)
-
-  
-### Microsoft.DataCollaboration<a name="microsoftdatacollaborationworkspaces"></a>
-  
-  * [Microsoft.DataCollaboration/workspaces](Microsoft-DataCollaboration-workspaces-logs.md)
 
   
 ### Microsoft.DataFactory<a name="microsoftdatafactoryfactories"></a>
