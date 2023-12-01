@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 12/01/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: microsoft.avs/privateClouds, naam
@@ -21,7 +21,7 @@ There is no benefit in editing these files directly.
 |**Percentage CPU (new)**<p><p>Percentage of Used CPU resources in Cluster |`CpuUsageAverage` |Percent |Average |`clustername`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |**Datastore Disk Total Capacity (new)**<p><p>The total capacity of disk in the datastore |`DiskCapacityLatest` |Bytes |Average |`dsname`|PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |**Datastore Disk Used (new)**<p><p>The total amount of disk used in the datastore |`DiskUsedLatest` |Bytes |Average |`dsname`|PT30M, PT1H, PT6H, PT12H, P1D |Yes|
-|** Percentage Datastore Disk Used (new)**<p><p>Percent of available disk used in Datastore |`DiskUsedPercentage` |Percent |Average |`dsname`|PT30M, PT1H, PT6H, PT12H, P1D |Yes|
+|** Percentage Datastore Disk Used (new)**<p><p>Percent of available disk used in Datastore |`DiskUsedPercentage` |Percent |Average |`dsname`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |**Percentage CPU**<p><p>Percentage of Used CPU resources in Cluster |`EffectiveCpuAverage` |Percent |Average |`clustername`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |**Average Effective Memory**<p><p>Total available amount of machine memory in cluster |`EffectiveMemAverage` |Bytes |Average |`clustername`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |**Average Memory Overhead (new)**<p><p>Host physical memory consumed by the virtualization infrastructure |`MemOverheadAverage` |Bytes |Average |`clustername`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
