@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 11/20/2023
+ms.date: 12/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: WireData
@@ -18,7 +18,7 @@ ms.custom: WireData
 | Description | string | Description of the observed threat. |
 | Direction | string | Inbound or outbound |
 | FirstReportedDateTime | string | The first time the provider reported the threat. |
-| IndicatorThreatType | string | Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy��PUA Watchlist. |
+| IndicatorThreatType | string | Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist. |
 | IPVersion | string | IP version |
 | IsActive | string | Indicates indicators are deactivated with True or False value. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
