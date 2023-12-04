@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ACSEmailSendMailOperational
@@ -27,5 +27,6 @@ ms.custom: ACSEmailSendMailOperational
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | ToRecipientsCount | int | The count of unique recipients on the 'To' line. |
+| TrafficSource | string | The traffic source of a request. |
 | Type | string | The name of the table |
 | UniqueRecipientsCount | int | The unique count of all recipients. |
