@@ -69,6 +69,8 @@ items:
         href: tables/acscallautomationincomingoperations.md
       - name: ACSCallAutomationMediaSummary
         href: tables/acscallautomationmediasummary.md
+      - name: ACSCallClientOperations
+        href: tables/acscallclientoperations.md
       - name: ACSCallDiagnostics
         href: tables/acscalldiagnostics.md
       - name: ACSCallRecordingIncomingOperations
@@ -193,6 +195,12 @@ items:
         href: tables/amsmediaaccounthealth.md
       - name: AMSStreamingEndpointRequests
         href: tables/amsstreamingendpointrequests.md
+      - name: AOIDatabaseQuery
+        href: tables/aoidatabasequery.md
+      - name: AOIDigestion
+        href: tables/aoidigestion.md
+      - name: AOIStorage
+        href: tables/aoistorage.md
       - name: ASCAuditLogs
         href: tables/ascauditlogs.md
       - name: ASCDeviceEvents
@@ -229,6 +237,8 @@ items:
         href: tables/auieventsoperational.md
       - name: AVNMConnectivityConfigurationChange
         href: tables/avnmconnectivityconfigurationchange.md
+      - name: AVNMIPAMPoolAllocationChange
+        href: tables/avnmipampoolallocationchange.md
       - name: AVNMNetworkGroupMembershipChange
         href: tables/avnmnetworkgroupmembershipchange.md
       - name: AVNMRuleCollectionChange
@@ -451,6 +461,8 @@ items:
         href: tables/azureassessmentrecommendation.md
       - name: AzureAttestationDiagnostics
         href: tables/azureattestationdiagnostics.md
+      - name: AzureBackupOperations
+        href: tables/azurebackupoperations.md
       - name: AzureDevOpsAuditing
         href: tables/azuredevopsauditing.md
       - name: AzureDiagnostics
@@ -889,6 +901,10 @@ items:
         href: tables/mcvpauditlogs.md
       - name: MCVPOperationLogs
         href: tables/mcvpoperationlogs.md
+      - name: MNFDeviceUpdates
+        href: tables/mnfdeviceupdates.md
+      - name: MNFSystemStateMessageUpdates
+        href: tables/mnfsystemstatemessageupdates.md
       - name: McasShadowItReporting
         href: tables/mcasshadowitreporting.md
       - name: MicrosoftAzureBastionAuditLogs
