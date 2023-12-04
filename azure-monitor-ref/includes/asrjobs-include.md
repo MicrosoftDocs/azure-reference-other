@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ASRJobs
@@ -24,10 +24,11 @@ ms.custom: ASRJobs
 | ReplicatedItemFriendlyName | string | Friendly name of replicated item associated with the ASR job (if applicable). |
 | ReplicatedItemId | string | ARM ID of the replicated item associated with the ASR job (if applicable). |
 | ReplicatedItemUniqueId | string | Unique ID of the replicated item associated with the ASR job (if applicable). |
+| ReplicationScenario | string | Field used to identify whether the replication is being done for an Azure resource or an on-premises resource. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | Result of the ASR job. |
 | SourceFriendlyName | string | Friendly name of the resource on which the ASR job was executed. |
-| SourceResourceId | string | ARM Id of the resource on which the ASR job was executed. |
+| SourceResourceId | string | ARM ID of the resource on which the ASR job was executed. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SourceType | string | Type of resource on which the ASR job was executed. |
 | StartTime | datetime | Start time of the ASR job. |
