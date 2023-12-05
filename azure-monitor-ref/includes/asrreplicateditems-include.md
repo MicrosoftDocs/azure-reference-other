@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ASRReplicatedItems
@@ -13,7 +13,6 @@ ms.custom: ASRReplicatedItems
 | ActiveLocation | string | Current active location for the replicated item. If the item is in failed over state, the active location will be the secondary (target) region. Otherwise, it will be the primary region. |
 | _BilledSize | real | The record size in bytes |
 | Category | string | The category of the log. |
-| CorrelationId | string | Correlation ID associated with the configure replication operation, used for debugging errors in enabling replication for a resource. |
 | DatasourceFriendlyName | string | Friendly name of the datasource being replicated. |
 | DatasourceType | string | ARM type of the resource configured for replication. |
 | DatasourceUniqueId | string | Unique ID of the datasource being replicated. |

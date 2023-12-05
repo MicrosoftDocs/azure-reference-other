@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ---
 
 # KubeNodeInventory
 
-Details for nodes that are part of kubernetes cluster.
+Table that stores Kubernetes cluster's node information.
 
 ## Categories
 

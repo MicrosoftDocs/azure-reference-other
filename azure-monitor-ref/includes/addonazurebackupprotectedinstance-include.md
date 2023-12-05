@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: AddonAzureBackupProtectedInstance
@@ -23,6 +23,7 @@ ms.custom: AddonAzureBackupProtectedInstance
 | BillingGroupUniqueId | string |   |
 | Category | string |   |
 | DatasourceType | string |   |
+| ExtendedProperties | dynamic |   |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | OperationName | string |   |
 | ProtectedContainerUniqueId | string |   |

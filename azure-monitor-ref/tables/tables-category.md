@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/20/2023
+ms.date: 12/04/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -64,6 +64,7 @@ ms.date: 11/20/2023
 - [ASRJobs](asrjobs.md)
 - [ASRReplicatedItems](asrreplicateditems.md)
 - [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
+- [AVNMIPAMPoolAllocationChange](avnmipampoolallocationchange.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AZKVAuditLogs](azkvauditlogs.md)
@@ -166,6 +167,7 @@ ms.date: 11/20/2023
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
 - [ACSCallAutomationMediaSummary](acscallautomationmediasummary.md)
+- [ACSCallClientOperations](acscallclientoperations.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallRecordingIncomingOperations](acscallrecordingincomingoperations.md)
 - [ACSCallRecordingSummary](acscallrecordingsummary.md)
@@ -214,6 +216,7 @@ ms.date: 11/20/2023
 - [ASCDeviceEvents](ascdeviceevents.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
 - [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
+- [AVNMIPAMPoolAllocationChange](avnmipampoolallocationchange.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AZFWFlowTrace](azfwflowtrace.md)
@@ -572,12 +575,14 @@ ms.date: 11/20/2023
 - [AGWFirewallLogs](agwfirewalllogs.md)
 - [AGWPerformanceLogs](agwperformancelogs.md)
 - [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
+- [AVNMIPAMPoolAllocationChange](avnmipampoolallocationchange.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
 - [EnrichedMicrosoft365AuditLogs](enrichedmicrosoft365auditlogs.md)
+- [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [NTAIpDetails](ntaipdetails.md)
 - [NTANetAnalytics](ntanetanalytics.md)

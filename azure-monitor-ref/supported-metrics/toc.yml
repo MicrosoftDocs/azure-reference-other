@@ -114,8 +114,6 @@ items:
     href: ../supported-metrics/microsoft-dashboard-grafana-metrics.md
   - name: Microsoft.DataBoxEdge/dataBoxEdgeDevices
     href: ../supported-metrics/microsoft-databoxedge-databoxedgedevices-metrics.md
-  - name: Microsoft.DataCollaboration/workspaces
-    href: ../supported-metrics/microsoft-datacollaboration-workspaces-metrics.md
   - name: Microsoft.DataFactory/datafactories
     href: ../supported-metrics/microsoft-datafactory-datafactories-metrics.md
   - name: Microsoft.DataFactory/factories
