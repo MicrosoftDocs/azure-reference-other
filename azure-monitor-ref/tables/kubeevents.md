@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ---
 
 # KubeEvents
 
-Kubernetes events and their properties.
+Table that stores Kubernetes events 
 
 ## Categories
 

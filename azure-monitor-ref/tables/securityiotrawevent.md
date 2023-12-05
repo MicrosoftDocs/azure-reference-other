@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ---
 
 # SecurityIoTRawEvent
 
-
+Table is part of Microsoft Defender for IoT. It contains IoT raw security event properties. These logs can be used to monitor your operational, diagnostic and security raw events.
 
 ## Categories
 
