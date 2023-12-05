@@ -5,8 +5,8 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/09/2023
-ms.custom: Microsoft.Databricks/workspaces, arm
+ms.date: 12/01/2023
+ms.custom: Microsoft.Databricks/workspaces, naam
 ---
 
 

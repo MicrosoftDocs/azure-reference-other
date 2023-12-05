@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 11/20/2023
+ms.date: 12/04/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -493,6 +493,7 @@ Microsoft.Network/networkManagers
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
 - [AVNMRuleCollectionChange](avnmrulecollectionchange.md)
 - [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
+- [AVNMIPAMPoolAllocationChange](avnmipampoolallocationchange.md)
 
 
 ### Bastions
@@ -544,6 +545,7 @@ Microsoft.Communication/CommunicationServices
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallSurvey](acscallsurvey.md)
+- [ACSCallClientOperations](acscallclientoperations.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
@@ -1099,6 +1101,7 @@ Microsoft.NetworkCloud/clusters
 Microsoft.ManagedNetworkFabric/networkDevices
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
 
 
 ### Nexus Storage Appliances
