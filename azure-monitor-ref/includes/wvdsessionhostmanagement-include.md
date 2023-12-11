@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 12/11/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: WVDSessionHostManagement
@@ -13,22 +13,24 @@ ms.custom: WVDSessionHostManagement
 | _BilledSize | real | The record size in bytes |
 | ClientType | string | Information about the client that initiated the update (portal, Powershell etc.). |
 | CorrelationId | string | The correlation ID for the activity. |
-| CustomScriptAdded | string | A URL for the customer provided custom script or 'False' if none was provided. |
-| ImageSource | string | The source for the Azure virtual machine - either Marketplace or Custom. |
+| FailedSessionHostCleanupPolicy | string | The policy for cleaning up session hosts that have failed provisioning. |
+| FromInstanceCount | int | The instance count before the operation. For an update operation, FromInstanceCount and ToInstanceCount are the same value. |
+| FromSessionHostConfigVer | string | The version of SHC before the operation (that session hosts are moving from; can be looked up with new SHC table). For a provisioning operation, it is the same as the ToSessionHostConfiguration. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
-| MaxVMsUnavailableDuringUpdate | int | The maximum number of virtual machines that might become unavailable during the host pool update operation. |
-| NewVMSize | string | The desired Azure virtual machine size (e.g.: Standard_D2s_v4) after the host pool update. |
-| NewVMSku | string | The desired Azure virtual machine SKU that will be used for the host pool update. |
-| OSDiskSaved | bool | Property indicates whether the original disk is saved. |
-| OSDiskType | string | The Azure storage disk type used for the host pool update. |
-| ParentUpdateId | string | When the current host pool update is a retry or a resume of a previous host pool update operation, this represents the previous host pool update correlation ID. |
+| ProvisioningCanaryPolicy | string | The policy for creating a test canary session host before creating the rest of the requested session hosts. |
+| ProvisioningStatus | string | The status of the current update/provisioning operation. |
+| ProvisioningType | string | The type of operation (provisioning, update). |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| ScheduledTime | string | When the host pool update is scheduled, the scheduled time. |
+| ScheduledDateTime | string | When the session host update is scheduled, the scheduled time. |
+| ScheduledDateTimeZone | string | The time zone that updates and provisioning happen in. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of the event. |
+| ToInstanceCount | int | The instance count after the operation. For an update operation, FromInstanceCount and ToInstanceCount are the same value. |
+| ToSessionHostConfigVer | string | The version of SHC after the operation (that session hosts are moving to; can be looked up with new SHC table). For a provisioning operation, is the same as the FromSessionHostConfiguration is. |
 | Type | string | The name of the table |
-| UpdateMethod | string | The method that is used for the host pool update operation (e.g.: DiskSwap). |
-| UpdateStatus | string | The current status of the host pool update operation. |
-| UpdateType | string | The type of host pool update requested by the customer - whether Immediate or Scheduled. |
+| UpdateDeleteOriginalVm | bool | Property indicates whether the original VM should be deleted after the update. |
+| UpdateMaxVmsRemoved | int | The maximum number of virtual machines that might become unavailable during the session host update operation. |
+| UpdateMethod | string | The method that is used for the session host update operation (e.g.: VmRecreate). |
+| UpdateStartWindowInMinutes | int | The window of allowable time for an update to start in minutes. |
