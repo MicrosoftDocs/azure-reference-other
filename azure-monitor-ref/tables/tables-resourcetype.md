@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 12/04/2023
+ms.date: 12/11/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -546,6 +546,7 @@ Microsoft.Communication/CommunicationServices
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallSurvey](acscallsurvey.md)
 - [ACSCallClientOperations](acscallclientoperations.md)
+- [ACSCallClientMediaStatsTimeSeries](acscallclientmediastatstimeseries.md)
 - [ACSCallSummary](acscallsummary.md)
 - [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
