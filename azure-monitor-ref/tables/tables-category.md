@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/04/2023
+ms.date: 12/11/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -167,6 +167,7 @@ ms.date: 12/04/2023
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
 - [ACSCallAutomationMediaSummary](acscallautomationmediasummary.md)
+- [ACSCallClientMediaStatsTimeSeries](acscallclientmediastatstimeseries.md)
 - [ACSCallClientOperations](acscallclientoperations.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallRecordingIncomingOperations](acscallrecordingincomingoperations.md)
