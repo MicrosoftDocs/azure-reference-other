@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/11/2023
+ms.date: 12/18/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -97,7 +97,10 @@ ms.date: 12/11/2023
 - [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
 - [AmlRunEvent](amlrunevent.md)
 - [AppEnvSpringAppConsoleLogs](appenvspringappconsolelogs.md)
+- [ArcK8sAudit](arck8saudit.md)
+- [ArcK8sAuditAdmin](arck8sauditadmin.md)
 - [AzureActivity](azureactivity.md)
+- [AzureBackupOperations](azurebackupoperations.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [CCFApplicationLogs](ccfapplicationlogs.md)
 - [CDBCassandraRequests](cdbcassandrarequests.md)
@@ -118,6 +121,7 @@ ms.date: 12/11/2023
 - [ContainerInstanceLog](containerinstancelog.md)
 - [DataverseActivity](dataverseactivity.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
+- [EGNSuccessfulMqttConnections](egnsuccessfulmqttconnections.md)
 - [HDInsightGatewayAuditLogs](hdinsightgatewayauditlogs.md)
 - [HDInsightRangerAuditLogs](hdinsightrangerauditlogs.md)
 - [LAQueryLogs](laquerylogs.md)
@@ -202,6 +206,7 @@ ms.date: 12/11/2023
 - [AEWAuditLogs](aewauditlogs.md)
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AFSAuditLogs](afsauditlogs.md)
+- [AGCAccessLogs](agcaccesslogs.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
 - [AGWAccessLogs](agwaccesslogs.md)
 - [AGWFirewallLogs](agwfirewalllogs.md)
@@ -284,6 +289,9 @@ ms.date: 12/11/2023
 - [AppServiceFileAuditLogs](appservicefileauditlogs.md)
 - [AppServiceHTTPLogs](appservicehttplogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
+- [ArcK8sAudit](arck8saudit.md)
+- [ArcK8sAuditAdmin](arck8sauditadmin.md)
+- [ArcK8sControlPlane](arck8scontrolplane.md)
 - [AuditLogs](auditlogs.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
@@ -315,6 +323,7 @@ ms.date: 12/11/2023
 - [CoreAzureBackup](coreazurebackup.md)
 - [DCRLogErrors](dcrlogerrors.md)
 - [DCRLogTroubleshooting](dcrlogtroubleshooting.md)
+- [DNSQueryLogs](dnsquerylogs.md)
 - [DSMAzureBlobStorageLogs](dsmazureblobstoragelogs.md)
 - [DSMDataClassificationLogs](dsmdataclassificationlogs.md)
 - [DSMDataLabelingLogs](dsmdatalabelinglogs.md)
@@ -342,6 +351,11 @@ ms.date: 12/11/2023
 - [DevCenterBillingEventLogs](devcenterbillingeventlogs.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
+- [EGNFailedMqttConnections](egnfailedmqttconnections.md)
+- [EGNFailedMqttPublishedMessages](egnfailedmqttpublishedmessages.md)
+- [EGNFailedMqttSubscriptions](egnfailedmqttsubscriptions.md)
+- [EGNMqttDisconnections](egnmqttdisconnections.md)
+- [EGNSuccessfulMqttConnections](egnsuccessfulmqttconnections.md)
 - [FailedIngestion](failedingestion.md)
 - [FunctionAppLogs](functionapplogs.md)
 - [HDInsightAmbariClusterAlerts](hdinsightambariclusteralerts.md)
@@ -472,6 +486,9 @@ ms.date: 12/11/2023
 
 
 ### Containers
+- [ArcK8sAudit](arck8saudit.md)
+- [ArcK8sAuditAdmin](arck8sauditadmin.md)
+- [ArcK8sControlPlane](arck8scontrolplane.md)
 - [ContainerImageInventory](containerimageinventory.md)
 - [ContainerInventory](containerinventory.md)
 - [ContainerLog](containerlog.md)
@@ -583,6 +600,7 @@ ms.date: 12/11/2023
 - [DnsEvents](dnsevents.md)
 - [DnsInventory](dnsinventory.md)
 - [EnrichedMicrosoft365AuditLogs](enrichedmicrosoft365auditlogs.md)
+- [MNFDeviceUpdates](mnfdeviceupdates.md)
 - [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [NTAIpDetails](ntaipdetails.md)

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/04/2023
+ms.date: 12/18/2023
 ---
 
 # KubeNodeInventory
@@ -22,8 +22,8 @@ Table that stores Kubernetes cluster's node information.
 - ContainerInsights
 ## Resource types
 
-- Kubernetes Services
 - Azure Arc Enabled Kubernetes
+- Kubernetes Services
 - Azure Arc Provisioned Clusters
 
             
