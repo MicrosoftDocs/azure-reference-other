@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 12/04/2023
+ms.date: 12/18/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: MNFDeviceUpdates
@@ -12,7 +12,7 @@ ms.custom: MNFDeviceUpdates
 |---|---|---|
 | _BilledSize | real | The record size in bytes |
 | DeviceId | string | Device ID of the Nexus cluster which was generating the log. |
-| DeviceTime | datetime | Time when the log was generated in the Nexus cluster. |
+| DeviceTime | long | Time when the log was generated in the Nexus cluster. This is in unix time format which is the number of seconds elapsed since January 1, 1970 UTC. |
 | EventCategory | string | Event category describing the category of events on Nexus network fabric devices. |
 | EventName | string | Event name describing the update performed on Nexus network fabric devices. |
 | FabricId | string | Fabric ID of the Nexus cluster which was generating the log. |
