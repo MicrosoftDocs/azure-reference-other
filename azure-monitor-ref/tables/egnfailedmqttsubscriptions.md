@@ -6,16 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/11/2023
+ms.date: 12/18/2023
 ---
 
 # EGNFailedMqttSubscriptions
 
 Log for failed MQTT subscriptions to an Event Grid namespace.
 
+## Categories
+
+- Azure Resources
 ## Solutions
 
 - LogManagement
+## Resource types
+
+- Event Grid Namespaces
 
             
 

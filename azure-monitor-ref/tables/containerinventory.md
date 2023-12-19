@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/04/2023
+ms.date: 12/18/2023
 ---
 
 # ContainerInventory
@@ -23,8 +23,8 @@ Inventory of containers and their attributes that are monitored by the agent
 - Containers
 ## Resource types
 
-- Kubernetes Services
 - Azure Arc Enabled Kubernetes
+- Kubernetes Services
 - Azure Arc Provisioned Clusters
 
             
