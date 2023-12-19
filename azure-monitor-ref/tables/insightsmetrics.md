@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/04/2023
+ms.date: 12/18/2023
 ---
 
 # InsightsMetrics
@@ -28,6 +28,7 @@ Table that stores metrics. 'Perf' table also stores many metrics and over time t
 - VMInsights
 ## Resource types
 
+- Azure Arc Enabled Kubernetes
 - Kubernetes Services
 - Workload Monitoring of Azure Monitor Insights
 - Virtual machines
@@ -35,7 +36,6 @@ Table that stores metrics. 'Perf' table also stores many metrics and over time t
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
-- Azure Arc Enabled Kubernetes
 - Azure Arc Provisioned Clusters
 - IoT Hub
 

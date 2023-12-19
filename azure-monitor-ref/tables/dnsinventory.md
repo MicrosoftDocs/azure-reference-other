@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/18/2023
 ---
 
 # DnsInventory
@@ -19,6 +19,7 @@ ms.date: 08/28/2023
 ## Solutions
 
 - DnsAnalytics
+- SecurityInsights
 ## Resource types
 
 - Virtual machines

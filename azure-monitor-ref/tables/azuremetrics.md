@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/13/2023
+ms.date: 12/18/2023
 ---
 
 # AzureMetrics
@@ -23,17 +23,21 @@ Metric data emitted by Azure services that measure their health and performance.
 
 - Azure AD Domain Services
 - Application Gateways
+- Application Gateway for Containers
 - App Services
+- Azure Arc Enabled Kubernetes
 - Azure Cache for Redis
 - Azure CloudHsm
 - Communication Services
 - Azure Cosmos DB
 - Project CI Workspace
+- Event Grid Namespaces
 - Event Grid Topics
 - Event Hubs
 - Firewalls
 - Key Vaults
 - Kubernetes Services
+- Network Devices (Operator Nexus)
 - Nexus BareMetal Machines
 - Nexus Clusters
 - Nexus Storage Appliances
@@ -43,14 +47,15 @@ Metric data emitted by Azure services that measure their health and performance.
 - Azure Virtual Network Manager
 - Microsoft Connected Cache
 - Microsoft Connected Vehicle Platform
+- Azure Databricks Services
 - Azure Database for MySQL Flexible Servers
 - Azure Database for PostgreSQL Flexible Servers
 - Dev Centers
-- Nexus Network Fabric - Network Devices
 - Virtual machines
 - Machine Learning
 - Media Services
 - Microsoft Playwright Testing
+- Azure Operator Insights - Data Product
 - Azure Managed Lustre
 - Azure Storage Mover
 - Synapse Workspaces
@@ -76,9 +81,7 @@ Metric data emitted by Azure services that measure their health and performance.
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
-- Azure Arc Enabled Kubernetes
 - Azure Arc Provisioned Clusters
-- Azure Databricks Services
 - Azure Monitor autoscale settings
 - IoT Hub
 - Service Fabric Clusters

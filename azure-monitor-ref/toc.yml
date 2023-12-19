@@ -175,6 +175,8 @@ items:
         href: tables/aewcomputepipelineslogs.md
       - name: AFSAuditLogs
         href: tables/afsauditlogs.md
+      - name: AGCAccessLogs
+        href: tables/agcaccesslogs.md
       - name: AGSGrafanaLoginEvents
         href: tables/agsgrafanaloginevents.md
       - name: AGWAccessLogs
@@ -451,6 +453,12 @@ items:
         href: tables/appsystemevents.md
       - name: AppTraces
         href: tables/apptraces.md
+      - name: ArcK8sAudit
+        href: tables/arck8saudit.md
+      - name: ArcK8sAuditAdmin
+        href: tables/arck8sauditadmin.md
+      - name: ArcK8sControlPlane
+        href: tables/arck8scontrolplane.md
       - name: AuditLogs
         href: tables/auditlogs.md
       - name: AutoscaleEvaluationsLog

@@ -4,23 +4,22 @@ ms.topic: include
 ms.date: 12/18/2023
 ms.author: edbaynash
 author: EdB-MSFT
-ms.custom: MNFDeviceUpdates
+ms.custom: ArcK8sControlPlane
 ---
 
 
 | Column | Type | Description |
 |---|---|---|
 | _BilledSize | real | The record size in bytes |
-| DeviceId | string | Device ID of the Nexus cluster which was generating the log. |
-| DeviceTime | long | Time when the log was generated in the Nexus cluster. This is in unix time format which is the number of seconds elapsed since January 1, 1970 UTC. |
-| EventCategory | string | Event category describing the category of events on Nexus network fabric devices. |
-| EventName | string | Event name describing the update performed on Nexus network fabric devices. |
-| FabricId | string | Fabric ID of the Nexus cluster which was generating the log. |
+| Category | string | Service log category describing the service logging the message. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
-| Properties | dynamic | Properties of the log. |
+| Level | string | Level (Fatal, Error, Warning, Info) of the log message. |
+| Message | string | Log message body. |
+| PodName | string | Name of the pod logging the request. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
+| Stream | string | Output stream (stdout, stderr) source of the log message. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
-| TimeGenerated | datetime | Timestamp (UTC) when the log was generated. |
+| TimeGenerated | datetime | Event generation time. |
 | Type | string | The name of the table |

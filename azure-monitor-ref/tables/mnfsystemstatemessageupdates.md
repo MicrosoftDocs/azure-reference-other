@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/04/2023
+ms.date: 12/18/2023
 ---
 
 # MNFSystemStateMessageUpdates
@@ -21,7 +21,7 @@ System state message update events in the Nexus network fabric devices.
 - LogManagement
 ## Resource types
 
-- Nexus Network Fabric - Network Devices
+- Network Devices (Operator Nexus)
 
             
 
