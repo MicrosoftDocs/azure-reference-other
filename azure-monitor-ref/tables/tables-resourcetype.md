@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 12/11/2023
+ms.date: 12/18/2023
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -45,6 +45,13 @@ Microsoft.Web/sites
 - [FunctionAppLogs](functionapplogs.md)
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
+
+
+### Application Gateway for Containers
+Microsoft.ServiceNetworking/TrafficControllers
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [AGCAccessLogs](agcaccesslogs.md)
 
 
 ### Application Gateways
@@ -126,16 +133,19 @@ Microsoft.Kubernetes/connectedClusters
 - [ContainerLogV2](containerlogv2.md)
 - [ContainerNodeInventory](containernodeinventory.md)
 - [ContainerServiceLog](containerservicelog.md)
+- [Heartbeat](heartbeat.md)
+- [InsightsMetrics](insightsmetrics.md)
 - [KubeEvents](kubeevents.md)
+- [KubeMonAgentEvents](kubemonagentevents.md)
 - [KubeNodeInventory](kubenodeinventory.md)
 - [KubePodInventory](kubepodinventory.md)
 - [KubePVInventory](kubepvinventory.md)
 - [KubeServices](kubeservices.md)
-- [KubeMonAgentEvents](kubemonagentevents.md)
-- [InsightsMetrics](insightsmetrics.md)
 - [Perf](perf.md)
 - [Syslog](syslog.md)
-- [Heartbeat](heartbeat.md)
+- [ArcK8sAudit](arck8saudit.md)
+- [ArcK8sAuditAdmin](arck8sauditadmin.md)
+- [ArcK8sControlPlane](arck8scontrolplane.md)
 
 
 ### Azure Arc Provisioned Clusters
@@ -311,7 +321,6 @@ Microsoft.Databricks/workspaces
 - [DatabricksGenie](databricksgenie.md)
 - [DatabricksGlobalInitScripts](databricksglobalinitscripts.md)
 - [DatabricksIAMRole](databricksiamrole.md)
-- [DatabricksInstancePools](databricksinstancepools.md)
 - [DatabricksMLflowAcledArtifact](databricksmlflowacledartifact.md)
 - [DatabricksMLflowExperiment](databricksmlflowexperiment.md)
 - [DatabricksRemoteHistoryService](databricksremotehistoryservice.md)
@@ -378,6 +387,15 @@ Microsoft.Insights/AutoscaleSettings
 
 ### Azure NetApp Files
 Microsoft.NetApp/netAppAccounts/capacityPools
+
+
+### Azure Operator Insights - Data Product
+Microsoft.NetworkAnalytics/DataProducts
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [AOIDigestion](aoidigestion.md)
+- [AOIDatabaseQuery](aoidatabasequery.md)
+- [AOIStorage](aoistorage.md)
 
 
 ### Azure PlayFab
@@ -684,6 +702,12 @@ Microsoft.Devices/ProvisioningServices
 - [AzureDiagnostics](azurediagnostics.md)
 
 
+### DNS Resolver Policies
+Microsoft.Network/dnsResolverPolicies
+- [AzureActivity](azureactivity.md)
+- [DNSQueryLogs](dnsquerylogs.md)
+
+
 ### Dynamics 365 Customer Insights
 Microsoft.D365CustomerInsights/instances
 - [AzureActivity](azureactivity.md)
@@ -698,6 +722,17 @@ Microsoft.EventGrid/domains
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AegDataPlaneRequests](aegdataplanerequests.md)
+
+
+### Event Grid Namespaces
+Microsoft.EventGrid/namespaces
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
+- [EGNSuccessfulMqttConnections](egnsuccessfulmqttconnections.md)
+- [EGNFailedMqttConnections](egnfailedmqttconnections.md)
+- [EGNMqttDisconnections](egnmqttdisconnections.md)
+- [EGNFailedMqttPublishedMessages](egnfailedmqttpublishedmessages.md)
+- [EGNFailedMqttSubscriptions](egnfailedmqttsubscriptions.md)
 
 
 ### Event Grid Partner Namespaces
@@ -872,7 +907,6 @@ Microsoft.ContainerService/managedClusters
 - [Heartbeat](heartbeat.md)
 - [InsightsMetrics](insightsmetrics.md)
 - [KubeEvents](kubeevents.md)
-- [KubeHealth](kubehealth.md)
 - [KubeMonAgentEvents](kubemonagentevents.md)
 - [KubeNodeInventory](kubenodeinventory.md)
 - [KubePodInventory](kubepodinventory.md)
@@ -1055,6 +1089,14 @@ Microsoft.Purview/accounts
 - [PurviewSecurityLogs](purviewsecuritylogs.md)
 
 
+### Network Devices (Operator Nexus)
+Microsoft.ManagedNetworkFabric/networkDevices
+- [Azuremetrics](azuremetrics.md)
+- [AzureActivity](azureactivity.md)
+- [MNFDeviceUpdates](mnfdeviceupdates.md)
+- [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
+
+
 ### Network Interfaces
 Microsoft.Network/networkinterfaces
 - [AzureActivity](azureactivity.md)
@@ -1096,13 +1138,6 @@ Microsoft.NetworkCloud/clusters
 - [AzureMetrics](azuremetrics.md)
 - [NCCKubernetesLogs](ncckuberneteslogs.md)
 - [NCCVMOrchestrationLogs](nccvmorchestrationlogs.md)
-
-
-### Nexus Network Fabric - Network Devices
-Microsoft.ManagedNetworkFabric/networkDevices
-- [AzureActivity](azureactivity.md)
-- [AzureMetrics](azuremetrics.md)
-- [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
 
 
 ### Nexus Storage Appliances
@@ -1152,6 +1187,7 @@ Microsoft.RecoveryServices/Vaults
 - [AzureActivity](azureactivity.md)
 - [ASRJobs](asrjobs.md)
 - [ASRReplicatedItems](asrreplicateditems.md)
+- [AzureBackupOperations](azurebackupoperations.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [CoreAzureBackup](coreazurebackup.md)
 - [AddonAzureBackupJobs](addonazurebackupjobs.md)

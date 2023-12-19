@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/18/2023
 ---
 
 # Heartbeat
@@ -24,12 +24,12 @@ Records logged by Log Analytics agents once per minute to report on agent health
 ## Resource types
 
 - Virtual machines
+- Azure Arc Enabled Kubernetes
 - Kubernetes Services
 - VMware
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
-- Azure Arc Enabled Kubernetes
 - Azure Arc Provisioned Clusters
 - Automation account
 
