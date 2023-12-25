@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 12/25/2023
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -59,6 +59,8 @@ ms.date: 12/18/2023
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
+- [AOIDatabaseQuery](aoidatabasequery.md)
+- [AOIStorage](aoistorage.md)
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
 - [ASRJobs](asrjobs.md)
@@ -218,6 +220,8 @@ ms.date: 12/18/2023
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
+- [AOIDatabaseQuery](aoidatabasequery.md)
+- [AOIStorage](aoistorage.md)
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
