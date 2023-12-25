@@ -6,13 +6,17 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 12/25/2023
 ---
 
 # AOIDatabaseQuery
 
 Audit logs related to queries run on database, in dataproduct environment.
 
+## Categories
+
+- Audit
+- Azure Resources
 ## Solutions
 
 - LogManagement
