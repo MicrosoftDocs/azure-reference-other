@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 12/01/2023
+ms.date: 01/02/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
@@ -63,7 +63,7 @@ There is no benefit in editing these files directly.
 |**Materialized Views Builder Average CPU Usage**<p><p>Average CPU usage across materialized view builder instances, which are used for populating data in materialized views |`MaterializedViewsBuilderAverageCPUUsage` |Percent |Average |`Region`, `MetricType`|PT5M |No|
 |**Materialized Views Builder Average Memory Usage**<p><p>Average memory usage across materialized view builder instances, which are used for populating data in materialized views |`MaterializedViewsBuilderAverageMemoryUsage` |Bytes |Average |`Region`|PT5M |No|
 |**Materialized Views Builder Maximum CPU Usage**<p><p>Average Maximum CPU usage across materialized view builder instances, which are used for populating data in materialized views |`MaterializedViewsBuilderMaximumCPUUsage` |Percent |Average, Maximum |`Region`, `MetricType`|PT5M |No|
-|**Metadata Requests**<p><p>Count of metadata requests. Cosmos DB maintains system metadata collection for each account, that allows you to enumerate collections, databases, etc, and their configurations, free of charge. |`MetadataRequests` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `Role`|PT1M |No|
+|**Metadata Requests**<p><p>Count of metadata requests. Cosmos DB maintains system metadata collection for each account, that allows you to enumerate collections, databases, etc, and their configurations, free of charge. |`MetadataRequests` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `Role`, `IsExternal`|PT1M |No|
 |**Mongo Collection Created**<p><p>Mongo Collection Created |`MongoCollectionCreate` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
 |**Mongo Collection Deleted**<p><p>Mongo Collection Deleted |`MongoCollectionDelete` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
 |**Mongo Collection Throughput Updated**<p><p>Mongo Collection Throughput Updated |`MongoCollectionThroughputUpdate` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|
@@ -77,7 +77,7 @@ There is no benefit in editing these files directly.
 |**Normalized RU Consumption**<p><p>Max RU consumption percentage per minute |`NormalizedRUConsumption` |Percent |Maximum, Average |`CollectionName`, `DatabaseName`, `Region`, `PartitionKeyRangeId`, `CollectionRid`, `PhysicalPartitionId`, `OfferOwnerRid`|PT1M, PT5M, PT1H, P1D |No|
 |**Region Offlined**<p><p>Region Offlined |`OfflineRegion` |Count |Count |`Region`, `StatusCode`, `Role`, `OperationName`|PT1M |No|
 |**Region Onlined**<p><p>Region Onlined |`OnlineRegion` |Count |Count |`Region`, `StatusCode`, `Role`, `OperationName`|PT1M |No|
-|**Physical Partition Count**<p><p>Physical Partition Count |`PhysicalPartitionCount` |Count |Count |`CollectionName`, `DatabaseName`, `IsSharedThroughputOffer`, `OfferOwnerRid`, `Region`|PT5M |Yes|
+|**Physical Partition Count**<p><p>Physical Partition Count |`PhysicalPartitionCount` |Count |Maximum |`CollectionName`, `DatabaseName`, `IsSharedThroughputOffer`, `OfferOwnerRid`, `Region`|PT5M |Yes|
 |**Physical Partition Size**<p><p>Physical Partition Size in bytes |`PhysicalPartitionSizeInfo` |Bytes |Maximum, Average |`CollectionName`, `DatabaseName`, `PhysicalPartitionId`, `OfferOwnerRid`, `Region`|PT1M, PT5M, PT1H, P1D |No|
 |**Physical Partition Throughput**<p><p>Physical Partition Throughput |`PhysicalPartitionThroughputInfo` |Count |Maximum |`CollectionName`, `DatabaseName`, `PhysicalPartitionId`, `OfferOwnerRid`, `Region`|PT1M, PT5M, PT1H, P1D |No|
 |**Provisioned Throughput**<p><p>Provisioned Throughput |`ProvisionedThroughput` |Count |Maximum |`DatabaseName`, `CollectionName`, `Region`|PT5M, PT1H, P1D |No|
