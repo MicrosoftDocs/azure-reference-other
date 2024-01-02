@@ -69,6 +69,10 @@ items:
         href: tables/acscallautomationincomingoperations.md
       - name: ACSCallAutomationMediaSummary
         href: tables/acscallautomationmediasummary.md
+      - name: ACSCallClientMediaStatsTimeSeries
+        href: tables/acscallclientmediastatstimeseries.md
+      - name: ACSCallClientOperations
+        href: tables/acscallclientoperations.md
       - name: ACSCallDiagnostics
         href: tables/acscalldiagnostics.md
       - name: ACSCallRecordingIncomingOperations
@@ -171,6 +175,8 @@ items:
         href: tables/aewcomputepipelineslogs.md
       - name: AFSAuditLogs
         href: tables/afsauditlogs.md
+      - name: AGCAccessLogs
+        href: tables/agcaccesslogs.md
       - name: AGSGrafanaLoginEvents
         href: tables/agsgrafanaloginevents.md
       - name: AGWAccessLogs
@@ -193,6 +199,12 @@ items:
         href: tables/amsmediaaccounthealth.md
       - name: AMSStreamingEndpointRequests
         href: tables/amsstreamingendpointrequests.md
+      - name: AOIDatabaseQuery
+        href: tables/aoidatabasequery.md
+      - name: AOIDigestion
+        href: tables/aoidigestion.md
+      - name: AOIStorage
+        href: tables/aoistorage.md
       - name: ASCAuditLogs
         href: tables/ascauditlogs.md
       - name: ASCDeviceEvents
@@ -229,6 +241,8 @@ items:
         href: tables/auieventsoperational.md
       - name: AVNMConnectivityConfigurationChange
         href: tables/avnmconnectivityconfigurationchange.md
+      - name: AVNMIPAMPoolAllocationChange
+        href: tables/avnmipampoolallocationchange.md
       - name: AVNMNetworkGroupMembershipChange
         href: tables/avnmnetworkgroupmembershipchange.md
       - name: AVNMRuleCollectionChange
@@ -439,6 +453,12 @@ items:
         href: tables/appsystemevents.md
       - name: AppTraces
         href: tables/apptraces.md
+      - name: ArcK8sAudit
+        href: tables/arck8saudit.md
+      - name: ArcK8sAuditAdmin
+        href: tables/arck8sauditadmin.md
+      - name: ArcK8sControlPlane
+        href: tables/arck8scontrolplane.md
       - name: AuditLogs
         href: tables/auditlogs.md
       - name: AutoscaleEvaluationsLog
@@ -451,6 +471,8 @@ items:
         href: tables/azureassessmentrecommendation.md
       - name: AzureAttestationDiagnostics
         href: tables/azureattestationdiagnostics.md
+      - name: AzureBackupOperations
+        href: tables/azurebackupoperations.md
       - name: AzureDevOpsAuditing
         href: tables/azuredevopsauditing.md
       - name: AzureDiagnostics
@@ -551,6 +573,8 @@ items:
         href: tables/dhosreliability.md
       - name: DHWipAppLearning
         href: tables/dhwipapplearning.md
+      - name: DNSQueryLogs
+        href: tables/dnsquerylogs.md
       - name: DSMAzureBlobStorageLogs
         href: tables/dsmazureblobstoragelogs.md
       - name: DSMDataClassificationLogs
@@ -691,6 +715,16 @@ items:
         href: tables/dynamicsummary.md
       - name: Dynamics365Activity
         href: tables/dynamics365activity.md
+      - name: EGNFailedMqttConnections
+        href: tables/egnfailedmqttconnections.md
+      - name: EGNFailedMqttPublishedMessages
+        href: tables/egnfailedmqttpublishedmessages.md
+      - name: EGNFailedMqttSubscriptions
+        href: tables/egnfailedmqttsubscriptions.md
+      - name: EGNMqttDisconnections
+        href: tables/egnmqttdisconnections.md
+      - name: EGNSuccessfulMqttConnections
+        href: tables/egnsuccessfulmqttconnections.md
       - name: ETWEvent
         href: tables/etwevent.md
       - name: EmailAttachmentInfo
@@ -825,6 +859,8 @@ items:
         href: tables/kubeservices.md
       - name: LAQueryLogs
         href: tables/laquerylogs.md
+      - name: LASummaryLogs
+        href: tables/lasummarylogs.md
       - name: LogicAppWorkflowRuntime
         href: tables/logicappworkflowruntime.md
       - name: MAApplication
@@ -887,6 +923,10 @@ items:
         href: tables/mcvpauditlogs.md
       - name: MCVPOperationLogs
         href: tables/mcvpoperationlogs.md
+      - name: MNFDeviceUpdates
+        href: tables/mnfdeviceupdates.md
+      - name: MNFSystemStateMessageUpdates
+        href: tables/mnfsystemstatemessageupdates.md
       - name: McasShadowItReporting
         href: tables/mcasshadowitreporting.md
       - name: MicrosoftAzureBastionAuditLogs

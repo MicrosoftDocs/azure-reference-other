@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ThreatIntelligenceIndicator
@@ -64,6 +64,7 @@ ms.custom: ThreatIntelligenceIndicator
 | NetworkSourceIP | string | The network source IP address observable. |
 | NetworkSourcePort | int | The network source port observable. |
 | PassiveOnly | bool | Indicates whether the indicator should trigger an event that is visible to a user. |
+| SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Tags | string | Free form tags. |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatSeverity | int | Indicator severity rating from 0 to 5. Higher value indicates greater severity. |

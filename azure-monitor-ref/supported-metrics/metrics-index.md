@@ -6,7 +6,7 @@ services: azure-monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.custom: ignite-2022
-ms.date: 10/29/2023
+ms.date: 01/02/2024
 ms.author: edbaynash
 ms.reviewer: priyamishra
 ---
@@ -16,7 +16,7 @@ ms.reviewer: priyamishra
 > [!NOTE]
 > This list is largely auto-generated. Any modification made to this list via GitHub might be written over without warning. Contact the author of this article for details on how to make permanent updates.
 
-Date list was last updated: 10/29/2023.
+Date list was last updated: 01/02/2024.
 
 Azure Monitor provides several ways to interact with metrics, including charting them in the Azure portal, accessing them through the REST API, or querying them by using PowerShell or the Azure CLI (Command Line Interface).  
 
@@ -248,11 +248,6 @@ This latest update adds a new column and reorders the metrics to be alphabetical
 ### Microsoft.DataBoxEdge<a name="microsoftdataboxedgedataboxedgedevices"></a>
   
   * [Microsoft.DataBoxEdge/dataBoxEdgeDevices](Microsoft-DataBoxEdge-dataBoxEdgeDevices-metrics.md)
-
-  
-### Microsoft.DataCollaboration<a name="microsoftdatacollaborationworkspaces"></a>
-  
-  * [Microsoft.DataCollaboration/workspaces](Microsoft-DataCollaboration-workspaces-metrics.md)
 
   
 ### Microsoft.DataFactory<a name="microsoftdatafactorydatafactories"></a><a name="microsoftdatafactoryfactories"></a>
@@ -527,7 +522,7 @@ This latest update adds a new column and reorders the metrics to be alphabetical
   
 ### Microsoft.NotificationHubs<a name="microsoftnotificationhubsnamespacesnotificationhubs"></a>
   
-  * [Microsoft.NotificationHubs/Namespaces/NotificationHubs](Microsoft-NotificationHubs-Namespaces-NotificationHubs-metrics.md)
+  * [Microsoft.NotificationHubs/namespaces/notificationHubs](Microsoft-NotificationHubs-namespaces-notificationHubs-metrics.md)
 
   
 ### Microsoft.OperationalInsights<a name="microsoftoperationalinsightsworkspaces"></a>

@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/18/2023
 ---
 
 # KubeServices
 
-Kubernetes services and their properties
+Table that stores Kubernetes services information.
 
 ## Categories
 
@@ -22,8 +22,8 @@ Kubernetes services and their properties
 - ContainerInsights
 ## Resource types
 
-- Kubernetes Services
 - Azure Arc Enabled Kubernetes
+- Kubernetes Services
 - Azure Arc Provisioned Clusters
 
             

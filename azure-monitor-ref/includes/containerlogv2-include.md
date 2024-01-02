@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 11/13/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ContainerLogV2

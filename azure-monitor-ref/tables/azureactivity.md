@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/06/2023
+ms.date: 12/18/2023
 ---
 
 # AzureActivity
@@ -26,8 +26,10 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Azure AD Domain Services
 - Microsoft App Configuration
 - Application Gateways
+- Application Gateway for Containers
 - App Services
 - Azure Autonomous Development Platform workspace
+- Azure Arc Enabled Kubernetes
 - Azure Attestation
 - Azure Cache for Redis
 - CDN Profiles
@@ -36,6 +38,8 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Azure Cosmos DB
 - Project CI Workspace
 - Azure Digital Twins
+- DNS Resolver Policies
+- Event Grid Namespaces
 - Event Grid Topics
 - Event Hubs
 - Firewalls
@@ -43,6 +47,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Key Vaults
 - Kubernetes Services
 - Azure Load Testing
+- Network Devices (Operator Nexus)
 - Azure Managed Instance for Apache Cassandra
 - Nexus BareMetal Machines
 - Nexus Clusters
@@ -60,6 +65,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Network Watcher - Connection Monitor
 - Container Apps
 - Dynamics 365 Customer Insights
+- Azure Databricks Services
 - Azure Database for MySQL Flexible Servers
 - Azure Database for PostgreSQL Flexible Servers
 - Dev Centers
@@ -71,6 +77,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Media Services
 - Microsoft Playwright Testing
 - Microsoft Graph Logs
+- Azure Operator Insights - Data Product
 - Azure Managed Lustre
 - Azure Storage Mover
 - Synapse Workspaces
@@ -101,9 +108,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
-- Azure Arc Enabled Kubernetes
 - Azure Arc Provisioned Clusters
-- Azure Databricks Services
 - Azure Monitor autoscale settings
 - IoT Hub
 - Service Fabric Clusters

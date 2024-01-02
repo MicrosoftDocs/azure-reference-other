@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/18/2023
 ---
 
 # Perf
@@ -22,6 +22,7 @@ Performance counters from Windows and Linux agents that provide insight into the
 - LogManagement
 ## Resource types
 
+- Azure Arc Enabled Kubernetes
 - Kubernetes Services
 - Virtual machines
 - VMware
@@ -29,7 +30,6 @@ Performance counters from Windows and Linux agents that provide insight into the
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 - Azure Stack HCI
-- Azure Arc Enabled Kubernetes
 - Azure Arc Provisioned Clusters
 
             

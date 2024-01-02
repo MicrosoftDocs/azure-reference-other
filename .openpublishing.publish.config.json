@@ -90,6 +90,11 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [
+    "edbaynash@microsoft.com",
+    "jasonh@microsoft.com",
+    "orspodek@microsoft.com"
+  ],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-reference-other",
   "git_repository_branch_open_to_public_contributors": "main",

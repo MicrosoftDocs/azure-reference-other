@@ -39,7 +39,7 @@ The record property name in the string expression needs to follow the naming con
 To access a field or property that uses characters that need to be escaped, double quotes can be used: `SELECT "[my][Field]" AS myField ...`, or `GetRecordPropertyValue(input.SensorReadings, "[my][Field]")`.
 
 ## Examples  
-In this code example, “thresholds” is a reference data name defined on the inputs tab.  
+In this code example, "thresholds" is a reference data name defined on the inputs tab.  
   
 ```SQL  
 SELECT   

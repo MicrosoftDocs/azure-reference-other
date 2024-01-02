@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 12/04/2023
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: AddonAzureBackupStorage
@@ -16,6 +16,7 @@ ms.custom: AddonAzureBackupStorage
 | BackupManagementType | string |   |
 | _BilledSize | real | The record size in bytes |
 | Category | string |   |
+| ExtendedProperties | dynamic |   |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | OperationName | string |   |
 | PreferredWorkloadOnVolume | string |   |

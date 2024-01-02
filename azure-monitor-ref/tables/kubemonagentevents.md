@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/18/2023
 ---
 
 # KubeMonAgentEvents
 
-Events logged by Azure Monitor kubernetes agent for errors and warnings.
+Table that stores events from the Kubernetes cluster monitoring agent [Azure Monitor Agent]
 
 ## Categories
 
@@ -22,8 +22,8 @@ Events logged by Azure Monitor kubernetes agent for errors and warnings.
 - ContainerInsights
 ## Resource types
 
-- Kubernetes Services
 - Azure Arc Enabled Kubernetes
+- Kubernetes Services
 - Azure Arc Provisioned Clusters
 
             

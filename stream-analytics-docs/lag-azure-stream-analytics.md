@@ -1,6 +1,6 @@
 ---
 title: "LAG (Azure Stream Analytics)"
-description: "The LAG analytic operator allows one to look up the “previous” event in an event stream, within certain constraints."
+description: "The LAG analytic operator allows one to look up the 'previous' event in an event stream, within certain constraints."
 applies_to: 
   - "Azure"
 
@@ -10,7 +10,7 @@ ms.topic: reference
 ms.date: 12/03/2017
 ---
 # LAG (Azure Stream Analytics)
-The LAG analytic operator allows one to look up a “previous” event in an event stream, within certain constraints. It is very useful for computing the rate of growth of a variable, detecting when a variable crosses a threshold, or when a condition starts or stops being true. 
+The LAG analytic operator allows one to look up a "previous" event in an event stream, within certain constraints. It is very useful for computing the rate of growth of a variable, detecting when a variable crosses a threshold, or when a condition starts or stops being true. 
   
 In Stream Analytics, the scope of LAG (that is, how far back in history from the current event it needs to look) is always limited to a finite time interval, using the LIMIT DURATION clause. LAG can optionally be limited to only consider events that match the current event on a certain property or condition using the PARTITION BY and WHEN clauses.
 
@@ -28,7 +28,7 @@ LAG(<scalar_expression >, [<offset >], [<default>])
   
 ```SQL  
 LAG(reading) OVER (LIMIT DURATION(hour, 3))  
-LAG(name, 2, “none such”) OVER (PARTITION BY userId LIMIT DURATION(minute, 2))  
+LAG(name, 2, 'none such') OVER (PARTITION BY userId LIMIT DURATION(minute, 2))  
 ```  
   
 ## Arguments  

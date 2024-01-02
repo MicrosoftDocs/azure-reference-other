@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 12/18/2023
 ---
 
 # KubePodInventory
 
-Kubernetes pods and their properties
+Table that stores kubernetes cluster's Pod & container information
 
 ## Categories
 
@@ -22,8 +22,8 @@ Kubernetes pods and their properties
 - ContainerInsights
 ## Resource types
 
-- Kubernetes Services
 - Azure Arc Enabled Kubernetes
+- Kubernetes Services
 - Azure Arc Provisioned Clusters
 
             
