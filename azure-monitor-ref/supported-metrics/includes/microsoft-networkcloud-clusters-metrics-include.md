@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 01/02/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/clusters, naam
@@ -58,8 +58,9 @@ There is no benefit in editing these files directly.
 |**Felix Resync State**<p><p>Current datastore state |`FelixResyncState` |Unspecified |Average |`Host`|PT1M |No|
 |**Daemonsets Current Number Scheduled**<p><p>Number of daemonsets currently scheduled |`KubeDaemonsetStatusCurrentNumberScheduled` |Count |Average |`Daemonset`, `Namespace`|PT1M |No|
 |**Daemonsets Desired Number Scheduled**<p><p>Number of daemonsets desired scheduled |`KubeDaemonsetStatusDesiredNumberScheduled` |Count |Average |`Daemonset`, `Namespace`|PT1M |No|
-|**Daemonsets Not Scheduled**<p><p>Number of daemonsets not scheduled |`KubeDaemonsetStatusMissScheduled` |Count |Average |`Daemonset`, `Namespace`|PT1M |No|
+|**Daemonsets Not Scheduled**<p><p>Number of daemonsets not scheduled |`KubeDaemonsetStatusNotScheduled` |Count |Average |`Daemonset`, `Namespace`|PT1M |No|
 |**Deployment Replicas Available**<p><p>Number of deployment replicas available |`KubeDeploymentStatusReplicasAvailable` |Count |Average |`Deployment`, `Namespace`|PT1M |No|
+|**Deployment Replicas Available Percent**<p><p>Percentage of deployment replicas available |`KubeDeploymentStatusReplicasAvailablePercent` |Percent |Average |`Deployment`, `Namespace`|PT1M |No|
 |**Deployment Replicas Ready**<p><p>Number of deployment replicas ready |`KubeDeploymentStatusReplicasReady` |Count |Average |`Deployment`, `Namespace`|PT1M |No|
 |**Deployment Replicas Unavailable**<p><p>Number of deployment replicas unavailable |`KubeDeploymentStatusReplicasUnavailable` |Count |Average |`Deployment`, `Namespace`|PT1M |No|
 |**Jobs Active**<p><p>Number of jobs active |`KubeJobStatusActive` |Count |Average |`Job`, `Namespace`|PT1M |No|
@@ -109,6 +110,7 @@ There is no benefit in editing these files directly.
 |**Kubevirt VMI Mem Swp In Traffic Bytes**<p><p>The total amount of data read from swap space of the guest (in bytes) |`KubevirtVmiMemorySwapInTrafficBytesTotal` |Bytes |Average |`Name`, `Node`|PT1M |No|
 |**Kubevirt VMI Mem Swp Out Traffic Bytes**<p><p>The total amount of memory written out to swap space of the guest (in bytes) |`KubevirtVmiMemorySwapOutTrafficBytesTotal` |Bytes |Average |`Name`, `Node`|PT1M |No|
 |**Kubevirt VMI Memory Unused Bytes**<p><p>The amount of memory left completely unused by the system. Memory that is available but used for reclaimable caches should NOT be reported as free |`KubevirtVmiMemoryUnusedBytes` |Bytes |Average |`Name`, `Node`|PT1M |No|
+|**Kubevirt VMI Memory Usage**<p><p>The amount of memory used in percentage |`KubevirtVmiMemoryUsage` |Percent |Average |`Name`, `Node`|PT1M |No|
 |**Kubevirt VMI Net Rx Packets**<p><p>Total network traffic received packets |`KubevirtVmiNetworkReceivePacketsTotal` |Bytes |Average |`Interface`, `Name`, `Node`|PT1M |No|
 |**Kubevirt VMI Net Tx Packets Drop**<p><p>The total number of transmit packets dropped on virtual NIC (vNIC) interfaces |`KubevirtVmiNetworkTransmitPacketsDroppedTotal` |Bytes |Average |`Interface`, `Name`, `Node`|PT1M |No|
 |**Kubevirt VMI Net Tx Packets Total**<p><p>Total network traffic transmitted packets |`KubevirtVmiNetworkTransmitPacketsTotal` |Bytes |Average |`Interface`, `Name`, `Node`|PT1M |No|
