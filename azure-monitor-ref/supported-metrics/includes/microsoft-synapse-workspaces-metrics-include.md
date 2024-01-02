@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 01/02/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Synapse/workspaces, naam
@@ -37,5 +37,5 @@ There is no benefit in editing these files directly.
 |**Out of order events (preview)**<p><p>This is a preview metric available in East US, West Europe. Number of Event Hub Events (serialized messages) received by the Event Hub Input Adapter, received out of order that were either dropped or given an adjusted timestamp, based on the Event Ordering Policy. |`SQLStreamingOutOfOrderEvents` |Count |Total |`SQLPoolName`, `SQLDatabaseName`, `JobName`, `LogicalName`, `PartitionId`, `ProcessorInstance`|PT1M |No|
 |**Output events (preview)**<p><p>This is a preview metric available in East US, West Europe. Number of output events. |`SQLStreamingOutputEvents` |Count |Total |`SQLPoolName`, `SQLDatabaseName`, `JobName`, `LogicalName`, `PartitionId`, `ProcessorInstance`|PT1M |No|
 |**Watermark delay (preview)**<p><p>This is a preview metric available in East US, West Europe. Output watermark delay in seconds. |`SQLStreamingOutputWatermarkDelaySeconds` |Count |Maximum, Minimum, Average |`SQLPoolName`, `SQLDatabaseName`, `JobName`, `LogicalName`, `PartitionId`, `ProcessorInstance`|PT1M |No|
-|**Resource % utilization (preview)**<p><p>This is a preview metric available in East US, West Europe. Resource utilization expressed as a percentage. High utilization indicates that the job is using close to the maximum allocated resources. |`SQLStreamingResourceUtilization` |Percent |Maximum, Minimum, Average |`SQLPoolName`, `SQLDatabaseName`, `JobName`, `LogicalName`, `PartitionId`, `ProcessorInstance`|PT1M |No|
+|**Resource % utilization (preview)**<p><p>This is a preview metric available in East US, West Europe.<p><p> Resource utilization expressed as a percentage. High utilization indicates that the job is using close to the maximum allocated resources. |`SQLStreamingResourceUtilization` |Percent |Maximum, Minimum, Average |`SQLPoolName`, `SQLDatabaseName`, `JobName`, `LogicalName`, `PartitionId`, `ProcessorInstance`|PT1M |No|
 |**Runtime errors (preview)**<p><p>This is a preview metric available in East US, West Europe. Total number of errors related to query processing (excluding errors found while ingesting events or outputting results). |`SQLStreamingRuntimeErrors` |Count |Total |`SQLPoolName`, `SQLDatabaseName`, `JobName`, `LogicalName`, `PartitionId`, `ProcessorInstance`|PT1M |No|
