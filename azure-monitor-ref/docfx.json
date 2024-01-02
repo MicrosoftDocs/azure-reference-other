@@ -42,7 +42,10 @@
       "breadcrumb_path": "/azure/azure-monitor/reference/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "uhfHeaderId": "Azure",
-      "feedback_system": "None"
+      "feedback_system": "Standard",
+      "feedback_product_url": "https://feedback.azure.com/d365community/forum/3887dc70-2025-ec11-b6e6-000d3a4f09d0",
+      "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/20/azure-monitor",
+      "feedback_help_link_type": "get-help-at-qna"
     },
     "fileMetadata": {},
     "template": [],
