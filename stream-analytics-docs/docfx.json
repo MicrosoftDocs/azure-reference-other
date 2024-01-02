@@ -42,7 +42,7 @@
       "feedback_system": "Standard",
       "feedback_product_url": "https://feedback.azure.com/d365community/forum/d12ec4e3-b825-ec11-b6e6-000d3a4f0f1c",
       "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/179/azure-stream-analytics",
-      "feedback_help_link_type": "get-help-at-qna"
+      "feedback_help_link_type": "get-help-at-qna",
       "titleSuffix": "Stream Analytics Query",
       "uhfHeaderId": "azure"
     },
