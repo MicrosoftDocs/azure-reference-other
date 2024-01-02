@@ -10,15 +10,20 @@ ms.author: anboisve
 ms.service: stream-analytics
 ms.topic: reference
 ms.date: 11/7/2023
+
 ---
 # UNION (Azure Stream Analytics)
   Combines the results of two or more queries into a single result set that includes all the rows that belong to all queries in the union. The UNION operation is different from using joins that combine columns from two tables.  
   
  The following are basic rules for combining the result sets of two queries by using UNION:  
   
+-   Streams must have the same partition key and partition count (learn more about partitions [here](/azure/stream-analytics/stream-analytics-parallelization#partitions-in-inputs-and-outputs))
 -   The number and the order of the columns must be the same in all queries.  
 -   The data types must be compatible.
--   Streams must have the same partition and partition count
+
+ > [!IMPORTANT]
+   > If the inputs have a different number of partitions, [scaling](/azure/stream-analytics/stream-analytics-autoscale#scaling-your-stream-analytics-job) is not possible as scaling a Stream Analytics job takes advantage of partitions in the input and output.
+
   
  ## Syntax  
   
