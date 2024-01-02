@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 01/02/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Cache/redis, naam
@@ -91,7 +91,7 @@ There is no benefit in editing these files directly.
 |**Connected Clients (Shard 7)**<p><p>The number of client connections to the cache. For more details, see https://aka.ms/redis/metrics. |`connectedclients7` |Count |Maximum |\<none\>|PT1M |Yes|
 |**Connected Clients (Shard 8)**<p><p>The number of client connections to the cache. For more details, see https://aka.ms/redis/metrics. |`connectedclients8` |Count |Maximum |\<none\>|PT1M |Yes|
 |**Connected Clients (Shard 9)**<p><p>The number of client connections to the cache. For more details, see https://aka.ms/redis/metrics. |`connectedclients9` |Count |Maximum |\<none\>|PT1M |Yes|
-|**Connected Clients using AAD Token (Instance Based) (Preview)**<p><p>The number of client connections to the cache using AAD Token. For more details, see https://aka.ms/redis/metrics. |`ConnectedClientsUsingAADToken` |Count |Maximum |`ShardId`, `Port`, `Primary`|PT1M |Yes|
+|**Connected Clients using Microsoft Entra Token (Instance Based)**<p><p>The number of client connections to the cache using Microsoft Entra Token. For more details, see https://aka.ms/redis/metrics. |`ConnectedClientsUsingAADToken` |Count |Maximum |`ShardId`, `Port`, `Primary`|PT1M |Yes|
 |**Errors**<p><p>The number errors that occured on the cache. For more details, see https://aka.ms/redis/metrics. |`errors` |Count |Maximum |`ShardId`, `ErrorType`|PT1M |Yes|
 |**Evicted Keys**<p><p>The number of items evicted from the cache. For more details, see https://aka.ms/redis/metrics. |`evictedkeys` |Count |Total |`ShardId`|PT1M |Yes|
 |**Evicted Keys (Shard 0)**<p><p>The number of items evicted from the cache. For more details, see https://aka.ms/redis/metrics. |`evictedkeys0` |Count |Total |\<none\>|PT1M |Yes|

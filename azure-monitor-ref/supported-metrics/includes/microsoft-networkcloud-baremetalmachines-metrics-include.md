@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 11/09/2023
+ms.date: 01/02/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
@@ -45,6 +45,8 @@ There is no benefit in editing these files directly.
 |**Average load in 5 minutes (Preview)**<p><p>5 minute load average |`HostLoad5` |Count |Average |`Host`|PT1M |No|
 |**Host Memory Available Bytes**<p><p>Available memory in bytes by node |`HostMemAvailBytes` |Count |Average |`Host`|PT1M |No|
 |**Total Memory In Corrupted Pages**<p><p>Corrupted bytes in hardware by node |`HostMemHWCorruptedBytes` |Count |Average |`Host`|PT1M |No|
+|**Host Memory Swap Free Bytes**<p><p>Total bytes of free swap memory by node |`HostMemSwapFreeBytes` |Bytes |Average |`Host`|PT1M |No|
+|**Host Memory Swap Total Bytes**<p><p>Total bytes of swap memory by node |`HostMemSwapTotalBytes` |Bytes |Average |`Host`|PT1M |No|
 |**Host Memory Total Bytes**<p><p>Total bytes of memory by node |`HostMemTotalBytes` |Bytes |Average |`Host`|PT1M |No|
 |**Host Specific CPU Utilization (Preview)**<p><p>A counter metric that counts the number of seconds the CPU has been running in a particular mode |`HostSpecificCPUUtilization` |Seconds |Average |`Cpu`, `Host`, `Mode`|PT1M |No|
 |**IDRAC Power Capacity Watts**<p><p>Power Capacity |`IdracPowerCapacityWatts` |Unspecified |Average |`Host`, `PSU`|PT1M |No|
@@ -60,7 +62,7 @@ There is no benefit in editing these files directly.
 |**Node Bonding Active (Preview)**<p><p>Number of active interfaces per bonding interface |`NodeBondingActive` |Count |Average |`Master`|PT1M |No|
 |**Node Memory Huge Pages Free (Preview)**<p><p>NUMA hugepages free by node |`NodeMemHugePagesFree` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |**Node Memory Huge Pages Total**<p><p>NUMA huge pages total by node |`NodeMemHugePagesTotal` |Bytes |Average |`Host`, `Node`|PT1M |No|
-|**Node Memory NUMA (Free Memory)**<p><p>NUMA memory free |`NodeMemNumaFree` |Bytes |Average |`Name`, `Host`, `Node`|PT1M |No|
+|**Node Memory NUMA (Free Memory)**<p><p>NUMA memory free |`NodeMemNumaFree` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |**Node Memory NUMA (Shared Memory)**<p><p>NUMA shared memory |`NodeMemNumaShem` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |**Node Memory NUMA (Used Memory)**<p><p>NUMA memory used |`NodeMemNumaUsed` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |**Node Network Carrier Changes**<p><p>Node network carrier changes |`NodeNetworkCarrierChanges` |Count |Average |`Device`, `Host`|PT1M |No|
@@ -72,6 +74,7 @@ There is no benefit in editing these files directly.
 |**Node Network Up**<p><p>Value is 1 if operstate is 'up', 0 otherwise. |`NodeNetworkUp` |Count |Count |`Device`, `Host`|PT1M |No|
 |**Node NVMe Info (Preview)**<p><p>Non-numeric data from /sys/class/nvme/\<device\>, value is always 1. Provides firmware, model, state and serial for a device |`NodeNvmeInfo` |Count |Count |`Device`, `State`|PT1M |No|
 |**Node OS Info**<p><p>Node OS information |`NodeOsInfo` |Count |Count |`Host`, `Name`, `Version`|PT1M |No|
+|**Node Processes State**<p><p>Maximum time error between the local system and reference clock |`NodeProcessesState` |Count |Average |`Host`, `State`|PT1M |No|
 |**Node Timex Max Error Seconds**<p><p>Maximum time error between the local system and reference clock |`NodeTimexMaxErrorSeconds` |Seconds |Average |`Host`|PT1M |No|
 |**Node Timex Offset Seconds**<p><p>Time offset in between the local system and reference clock |`NodeTimexOffsetSeconds` |Seconds |Average |`Host`|PT1M |No|
 |**Node Timex Sync Status**<p><p>Is clock synchronized to a reliable server (1 = yes, 0 = no) |`NodeTimexSyncStatus` |Count |Average |`Host`|PT1M |No|
