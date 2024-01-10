@@ -5,8 +5,11 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/09/2023
+ms.date: 01/10/2024
 ms.custom: microsoft.avs/privateClouds, naam
+
+# NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
+
 ---
 
 
@@ -16,5 +19,12 @@ ms.custom: microsoft.avs/privateClouds, naam
 The following table lists the types of logs available for the microsoft.avs/privateClouds resource type.
   
   
-[!INCLUDE [microsoft.avs/privateClouds](./includes/microsoft-avs-privateclouds-logs-include.md)]
   
+For a list of supported metrics, see [Supported metrics - microsoft.avs/privateClouds](../supported-metrics/microsoft-avs-privateclouds-metrics.md)  
+  
+
+  
+[!INCLUDE [microsoft.avs/privateClouds](./includes/microsoft-avs-privateclouds-logs-include.md)]  
+  
+  
+
