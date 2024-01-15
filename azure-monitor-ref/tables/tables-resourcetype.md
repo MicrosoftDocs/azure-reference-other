@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 12/18/2023
+ms.date: 01/15/2024
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -306,6 +306,7 @@ Microsoft.DBforPostgreSQL/serversv2
 Microsoft.Databricks/workspaces
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [DatabricksWorkspaceLogs](databricksworkspacelogs.md)
 - [DatabricksAccounts](databricksaccounts.md)
 - [DatabricksClusters](databricksclusters.md)
 - [DatabricksDBFS](databricksdbfs.md)
@@ -573,6 +574,7 @@ Microsoft.Communication/CommunicationServices
 - [ACSEmailUserEngagementOperational](acsemailuserengagementoperational.md)
 - [ACSCallRecordingIncomingOperations](acscallrecordingincomingoperations.md)
 - [ACSCallRecordingSummary](acscallrecordingsummary.md)
+- [ACSCallClosedCaptionsSummary](acscallclosedcaptionssummary.md)
 - [ACSJobRouterIncomingOperations](acsjobrouterincomingoperations.md)
 - [ACSRoomsIncomingOperations](acsroomsincomingoperations.md)
 - [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
@@ -1146,6 +1148,11 @@ Microsoft.NetworkCloud/storageAppliances
 - [AzureMetrics](azuremetrics.md)
 - [NCSStorageLogs](ncsstoragelogs.md)
 - [NCSStorageAlerts](ncsstoragealerts.md)
+
+
+### NGINXaaS
+NGINX.NGINXPLUS/nginxDeployments
+- [NGXOperationLogs](ngxoperationlogs.md)
 
 
 ### Power BI Datasets
