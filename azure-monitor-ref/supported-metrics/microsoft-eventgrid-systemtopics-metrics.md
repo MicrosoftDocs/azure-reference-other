@@ -5,8 +5,11 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/09/2023
+ms.date: 01/10/2024
 ms.custom: Microsoft.EventGrid/systemTopics, arm
+
+# NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
+
 ---
 
 
@@ -27,12 +30,14 @@ The following table lists the metrics available for the Microsoft.EventGrid/syst
 **Aggregation** - The default aggregation type. Valid values: Average, Minimum, Maximum, Total, Count.  
 **Dimensions** - Dimensions available for the metric.  
 **Time Grains** - Intervals at which the metric is sampled. For example, `PT1M` indicates that the metric is sampled every minute, `PT30M` every 30 minutes, `PT1H` every hour, and so on.  
-**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings.  
+**DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings. For information on exporting metrics, see [Create diagnostic settings in Azure Monitor](/azure/azure-monitor/essentials/create-diagnostic-settings?tabs=portal).
 
+For information on metric retention, see [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics#retention-of-metrics)
+  
+  
+  
+For a list of supported logs, see [Supported log categories - Microsoft.EventGrid/systemTopics](../supported-logs/microsoft-eventgrid-systemtopics-logs.md)  
+  
+ 
 
-   
-
-   
-    
-[!INCLUDE [Microsoft.EventGrid/systemTopics](./includes/microsoft-eventgrid-systemtopics-metrics-include.md)]
-      
+[!INCLUDE[Microsoft.EventGrid/systemTopics](./includes/microsoft-eventgrid-systemtopics-metrics-include.md)]

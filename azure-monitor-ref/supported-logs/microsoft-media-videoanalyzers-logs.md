@@ -5,8 +5,11 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/09/2023
+ms.date: 01/10/2024
 ms.custom: Microsoft.Media/videoanalyzers, naam
+
+# NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
+
 ---
 
 
@@ -16,5 +19,12 @@ ms.custom: Microsoft.Media/videoanalyzers, naam
 The following table lists the types of logs available for the Microsoft.Media/videoanalyzers resource type.
   
   
-[!INCLUDE [Microsoft.Media/videoanalyzers](./includes/microsoft-media-videoanalyzers-logs-include.md)]
   
+For a list of supported metrics, see [Supported metrics - Microsoft.Media/videoanalyzers](../supported-metrics/microsoft-media-videoanalyzers-metrics.md)  
+  
+
+  
+[!INCLUDE [Microsoft.Media/videoanalyzers](./includes/microsoft-media-videoanalyzers-logs-include.md)]  
+  
+  
+

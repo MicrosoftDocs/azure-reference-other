@@ -73,6 +73,8 @@ items:
         href: tables/acscallclientmediastatstimeseries.md
       - name: ACSCallClientOperations
         href: tables/acscallclientoperations.md
+      - name: ACSCallClosedCaptionsSummary
+        href: tables/acscallclosedcaptionssummary.md
       - name: ACSCallDiagnostics
         href: tables/acscalldiagnostics.md
       - name: ACSCallRecordingIncomingOperations
@@ -643,6 +645,8 @@ items:
         href: tables/databrickswebterminal.md
       - name: DatabricksWorkspace
         href: tables/databricksworkspace.md
+      - name: DatabricksWorkspaceLogs
+        href: tables/databricksworkspacelogs.md
       - name: DataverseActivity
         href: tables/dataverseactivity.md
       - name: DefenderIoTRawEvent
@@ -959,6 +963,8 @@ items:
         href: tables/ncsstoragealerts.md
       - name: NCSStorageLogs
         href: tables/ncsstoragelogs.md
+      - name: NGXOperationLogs
+        href: tables/ngxoperationlogs.md
       - name: NSPAccessLogs
         href: tables/nspaccesslogs.md
       - name: NTAIpDetails
@@ -1021,6 +1027,8 @@ items:
         href: tables/powerbireportusagetenant.md
       - name: PowerBIReportUsageWorkspace
         href: tables/powerbireportusageworkspace.md
+      - name: PowerPlatformAdminActivity
+        href: tables/powerplatformadminactivity.md
       - name: PowerPlatformConnectorActivity
         href: tables/powerplatformconnectoractivity.md
       - name: PowerPlatformDlpActivity

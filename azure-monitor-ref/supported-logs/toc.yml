@@ -264,6 +264,8 @@ items:
     href: ../supported-logs/microsoft-powerbi-tenants-workspaces-logs.md
   - name: Microsoft.PowerBIDedicated/capacities
     href: ../supported-logs/microsoft-powerbidedicated-capacities-logs.md
+  - name: Microsoft.ProviderHub/providerRegistrations
+    href: ../supported-logs/microsoft-providerhub-providerregistrations-logs.md
   - name: microsoft.purview/accounts
     href: ../supported-logs/microsoft-purview-accounts-logs.md
   - name: Microsoft.RecoveryServices/Vaults
@@ -340,3 +342,5 @@ items:
     href: ../supported-logs/microsoft-web-staticsites-logs.md
   - name: microsoft.workloads/sapvirtualinstances
     href: ../supported-logs/microsoft-workloads-sapvirtualinstances-logs.md
+  - name: NGINX.NGINXPLUS/nginxDeployments
+    href: ../supported-logs/nginx-nginxplus-nginxdeployments-logs.md
