@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 12/01/2023
+ms.date: 01/10/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -29,568 +29,141 @@ In addition, there might be costs to export some categories of resource logs to 
 
 ## Supported log categories per resource type
 
-Following is a list of the types of logs available for each resource type. 
+Following table lists log categories and metrics available for each resource type. 
+
+
+      
+  |Resource Provider|Log Categories|Metrics|  
+  |---|---|---|  
+  |Microsoft.AAD <a name="microsoftaad"></a>|[DomainServices](../supported-logs/Microsoft-AAD-DomainServices-logs.md)<p>|[DomainServices](../supported-metrics/Microsoft-AAD-DomainServices-metrics.md)<p>|
+|Microsoft.AgFoodPlatform <a name="microsoftagfoodplatform"></a>|[farmBeats](../supported-logs/Microsoft-AgFoodPlatform-farmBeats-logs.md)<p>|N/A|
+|Microsoft.AnalysisServices <a name="microsoftanalysisservices"></a>|[servers](../supported-logs/Microsoft-AnalysisServices-servers-logs.md)<p>|[servers](../supported-metrics/Microsoft-AnalysisServices-servers-metrics.md)<p>|
+|Microsoft.ApiManagement <a name="microsoftapimanagement"></a>|[service](../supported-logs/Microsoft-ApiManagement-service-logs.md)<p>|[service](../supported-metrics/Microsoft-ApiManagement-service-metrics.md)<p>|
+|Microsoft.App <a name="microsoftapp"></a>|[managedEnvironments](../supported-logs/Microsoft-App-managedEnvironments-logs.md)<p>|[containerapps](../supported-metrics/Microsoft-App-containerapps-metrics.md)<p>[managedEnvironments](../supported-metrics/Microsoft-App-managedEnvironments-metrics.md)<p>|
+|Microsoft.AppConfiguration <a name="microsoftappconfiguration"></a>|[configurationStores](../supported-logs/Microsoft-AppConfiguration-configurationStores-logs.md)<p>|[configurationStores](../supported-metrics/Microsoft-AppConfiguration-configurationStores-metrics.md)<p>|
+|Microsoft.AppPlatform <a name="microsoftappplatform"></a>|[Spring](../supported-logs/Microsoft-AppPlatform-Spring-logs.md)<p>|[Spring](../supported-metrics/Microsoft-AppPlatform-Spring-metrics.md)<p>|
+|Microsoft.Attestation <a name="microsoftattestation"></a>|[attestationProviders](../supported-logs/Microsoft-Attestation-attestationProviders-logs.md)<p>|N/A|
+|Microsoft.Automation <a name="microsoftautomation"></a>|[automationAccounts](../supported-logs/Microsoft-Automation-automationAccounts-logs.md)<p>|[automationAccounts](../supported-metrics/Microsoft-Automation-automationAccounts-metrics.md)<p>|
+|Microsoft. <br>AutonomousDevelopmentPlatform <a name="microsoftautonomousdevelopmentplatform"></a>|[accounts](../supported-logs/Microsoft-AutonomousDevelopmentPlatform-accounts-logs.md)<p>[workspaces](../supported-logs/Microsoft-AutonomousDevelopmentPlatform-workspaces-logs.md)<p>|N/A|
+|microsoft.avs <a name="microsoftavs"></a>|[privateClouds](../supported-logs/microsoft-avs-privateClouds-logs.md)<p>|[privateClouds](../supported-metrics/microsoft-avs-privateClouds-metrics.md)<p>|
+|Microsoft.AzureDataTransfer <a name="microsoftazuredatatransfer"></a>|[connections/flows](../supported-logs/Microsoft-AzureDataTransfer-connections-flows-logs.md)<p>|N/A|
+|microsoft. <br>azureplaywrightservice <a name="microsoftazureplaywrightservice"></a>|[accounts](../supported-logs/microsoft-azureplaywrightservice-accounts-logs.md)<p>|N/A|
+|microsoft.azuresphere <a name="microsoftazuresphere"></a>|[catalogs](../supported-logs/microsoft-azuresphere-catalogs-logs.md)<p>|[catalogs](../supported-metrics/microsoft-azuresphere-catalogs-metrics.md)<p>|
+|Microsoft.Batch <a name="microsoftbatch"></a>|[batchaccounts](../supported-logs/Microsoft-Batch-batchaccounts-logs.md)<p>|[batchaccounts](../supported-metrics/Microsoft-Batch-batchaccounts-metrics.md)<p>|
+|microsoft.botservice <a name="microsoftbotservice"></a>|[botservices](../supported-logs/microsoft-botservice-botservices-logs.md)<p>|[botservices](../supported-metrics/microsoft-botservice-botservices-metrics.md)<p>|
+|Microsoft.Cache <a name="microsoftcache"></a>|[redis](../supported-logs/Microsoft-Cache-redis-logs.md)<p>[redisEnterprise/databases](../supported-logs/Microsoft-Cache-redisEnterprise-databases-logs.md)<p>|[redis](../supported-metrics/Microsoft-Cache-redis-metrics.md)<p>[redisEnterprise](../supported-metrics/Microsoft-Cache-redisEnterprise-metrics.md)<p>|
+|Microsoft.Cdn <a name="microsoftcdn"></a>|[cdnwebapplicationfirewallpolicies](../supported-logs/Microsoft-Cdn-cdnwebapplicationfirewallpolicies-logs.md)<p>[profiles](../supported-logs/Microsoft-Cdn-profiles-logs.md)<p>[profiles/endpoints](../supported-logs/Microsoft-Cdn-profiles-endpoints-logs.md)<p>|[cdnwebapplicationfirewallpolicies](../supported-metrics/Microsoft-Cdn-cdnwebapplicationfirewallpolicies-metrics.md)<p>[profiles](../supported-metrics/Microsoft-Cdn-profiles-metrics.md)<p>|
+|Microsoft.Chaos <a name="microsoftchaos"></a>|[experiments](../supported-logs/Microsoft-Chaos-experiments-logs.md)<p>|N/A|
+|Microsoft.ClassicNetwork <a name="microsoftclassicnetwork"></a>|[networksecuritygroups](../supported-logs/Microsoft-ClassicNetwork-networksecuritygroups-logs.md)<p>|N/A|
+|Microsoft.Cloudtest <a name="microsoftcloudtest"></a>|[hostedpools](../supported-logs/Microsoft-Cloudtest-hostedpools-logs.md)<p>|[hostedpools](../supported-metrics/Microsoft-Cloudtest-hostedpools-metrics.md)<p>[pools](../supported-metrics/Microsoft-Cloudtest-pools-metrics.md)<p>|
+|Microsoft.CodeSigning <a name="microsoftcodesigning"></a>|[codesigningaccounts](../supported-logs/Microsoft-CodeSigning-codesigningaccounts-logs.md)<p>|[codesigningaccounts](../supported-metrics/Microsoft-CodeSigning-codesigningaccounts-metrics.md)<p>|
+|Microsoft.CognitiveServices <a name="microsoftcognitiveservices"></a>|[accounts](../supported-logs/Microsoft-CognitiveServices-accounts-logs.md)<p>|[accounts](../supported-metrics/Microsoft-CognitiveServices-accounts-metrics.md)<p>|
+|Microsoft.Communication <a name="microsoftcommunication"></a>|[CommunicationServices](../supported-logs/Microsoft-Communication-CommunicationServices-logs.md)<p>|[CommunicationServices](../supported-metrics/Microsoft-Communication-CommunicationServices-metrics.md)<p>|
+|microsoft.community <a name="microsoftcommunity"></a>|[communityTrainings](../supported-logs/microsoft-community-communityTrainings-logs.md)<p>|N/A|
+|Microsoft.Compute <a name="microsoftcompute"></a>|[virtualMachines](../supported-logs/Microsoft-Compute-virtualMachines-logs.md)<p>|[cloudservices](../supported-metrics/Microsoft-Compute-cloudservices-metrics.md)<p>[cloudServices/roles](../supported-metrics/Microsoft-Compute-cloudServices-roles-metrics.md)<p>[virtualMachines](../supported-metrics/Microsoft-Compute-virtualMachines-metrics.md)<p>[virtualmachineScaleSets](../supported-metrics/Microsoft-Compute-virtualmachineScaleSets-metrics.md)<p>[virtualMachineScaleSets/virtualMachines](../supported-metrics/Microsoft-Compute-virtualMachineScaleSets-virtualMachines-metrics.md)<p>|
+|Microsoft.ConfidentialLedger <a name="microsoftconfidentialledger"></a>|[ManagedCCF](../supported-logs/Microsoft-ConfidentialLedger-ManagedCCF-logs.md)<p>[ManagedCCFs](../supported-logs/Microsoft-ConfidentialLedger-ManagedCCFs-logs.md)<p>|N/A|
+|Microsoft.ConnectedCache <a name="microsoftconnectedcache"></a>|[CacheNodes](../supported-logs/Microsoft-ConnectedCache-CacheNodes-logs.md)<p>[enterpriseMccCustomers](../supported-logs/Microsoft-ConnectedCache-enterpriseMccCustomers-logs.md)<p>[ispCustomers](../supported-logs/Microsoft-ConnectedCache-ispCustomers-logs.md)<p>|[CacheNodes](../supported-metrics/Microsoft-ConnectedCache-CacheNodes-metrics.md)<p>[enterpriseMccCustomers](../supported-metrics/Microsoft-ConnectedCache-enterpriseMccCustomers-metrics.md)<p>[ispCustomers](../supported-metrics/Microsoft-ConnectedCache-ispCustomers-metrics.md)<p>|
+|Microsoft.ConnectedVehicle <a name="microsoftconnectedvehicle"></a>|[platformAccounts](../supported-logs/Microsoft-ConnectedVehicle-platformAccounts-logs.md)<p>|[platformAccounts](../supported-metrics/Microsoft-ConnectedVehicle-platformAccounts-metrics.md)<p>|
+|Microsoft.ContainerInstance <a name="microsoftcontainerinstance"></a>|[containerGroups](../supported-logs/Microsoft-ContainerInstance-containerGroups-logs.md)<p>|[containerGroups](../supported-metrics/Microsoft-ContainerInstance-containerGroups-metrics.md)<p>[containerScaleSets](../supported-metrics/Microsoft-ContainerInstance-containerScaleSets-metrics.md)<p>|
+|Microsoft.ContainerRegistry <a name="microsoftcontainerregistry"></a>|[registries](../supported-logs/Microsoft-ContainerRegistry-registries-logs.md)<p>|[registries](../supported-metrics/Microsoft-ContainerRegistry-registries-metrics.md)<p>|
+|Microsoft.ContainerService <a name="microsoftcontainerservice"></a>|[fleets](../supported-logs/Microsoft-ContainerService-fleets-logs.md)<p>[managedClusters](../supported-logs/Microsoft-ContainerService-managedClusters-logs.md)<p>|[managedClusters](../supported-metrics/Microsoft-ContainerService-managedClusters-metrics.md)<p>|
+|Microsoft.CustomProviders <a name="microsoftcustomproviders"></a>|[resourceproviders](../supported-logs/Microsoft-CustomProviders-resourceproviders-logs.md)<p>|[resourceproviders](../supported-metrics/Microsoft-CustomProviders-resourceproviders-metrics.md)<p>|
+|Microsoft.D365CustomerInsights <a name="microsoftd365customerinsights"></a>|[instances](../supported-logs/Microsoft-D365CustomerInsights-instances-logs.md)<p>|N/A|
+|Microsoft.Dashboard <a name="microsoftdashboard"></a>|[grafana](../supported-logs/Microsoft-Dashboard-grafana-logs.md)<p>|[grafana](../supported-metrics/Microsoft-Dashboard-grafana-metrics.md)<p>|
+|Microsoft.Databricks <a name="microsoftdatabricks"></a>|[workspaces](../supported-logs/Microsoft-Databricks-workspaces-logs.md)<p>|N/A|
+|Microsoft.DataFactory <a name="microsoftdatafactory"></a>|[factories](../supported-logs/Microsoft-DataFactory-factories-logs.md)<p>|[datafactories](../supported-metrics/Microsoft-DataFactory-datafactories-metrics.md)<p>[factories](../supported-metrics/Microsoft-DataFactory-factories-metrics.md)<p>|
+|Microsoft.DataLakeAnalytics <a name="microsoftdatalakeanalytics"></a>|[accounts](../supported-logs/Microsoft-DataLakeAnalytics-accounts-logs.md)<p>|[accounts](../supported-metrics/Microsoft-DataLakeAnalytics-accounts-metrics.md)<p>|
+|Microsoft.DataLakeStore <a name="microsoftdatalakestore"></a>|[accounts](../supported-logs/Microsoft-DataLakeStore-accounts-logs.md)<p>|[accounts](../supported-metrics/Microsoft-DataLakeStore-accounts-metrics.md)<p>|
+|Microsoft.DataProtection <a name="microsoftdataprotection"></a>|[BackupVaults](../supported-logs/Microsoft-DataProtection-BackupVaults-logs.md)<p>|[BackupVaults](../supported-metrics/Microsoft-DataProtection-BackupVaults-metrics.md)<p>|
+|Microsoft.DataShare <a name="microsoftdatashare"></a>|[accounts](../supported-logs/Microsoft-DataShare-accounts-logs.md)<p>|[accounts](../supported-metrics/Microsoft-DataShare-accounts-metrics.md)<p>|
+|Microsoft.DBforMariaDB <a name="microsoftdbformariadb"></a>|[servers](../supported-logs/Microsoft-DBforMariaDB-servers-logs.md)<p>|[servers](../supported-metrics/Microsoft-DBforMariaDB-servers-metrics.md)<p>|
+|Microsoft.DBforMySQL <a name="microsoftdbformysql"></a>|[flexibleServers](../supported-logs/Microsoft-DBforMySQL-flexibleServers-logs.md)<p>[servers](../supported-logs/Microsoft-DBforMySQL-servers-logs.md)<p>|[flexibleServers](../supported-metrics/Microsoft-DBforMySQL-flexibleServers-metrics.md)<p>[servers](../supported-metrics/Microsoft-DBforMySQL-servers-metrics.md)<p>|
+|Microsoft.DBforPostgreSQL <a name="microsoftdbforpostgresql"></a>|[flexibleServers](../supported-logs/Microsoft-DBforPostgreSQL-flexibleServers-logs.md)<p>[servers](../supported-logs/Microsoft-DBforPostgreSQL-servers-logs.md)<p>[serversv2](../supported-logs/Microsoft-DBforPostgreSQL-serversv2-logs.md)<p>|[flexibleServers](../supported-metrics/Microsoft-DBforPostgreSQL-flexibleServers-metrics.md)<p>[servers](../supported-metrics/Microsoft-DBforPostgreSQL-servers-metrics.md)<p>[serversv2](../supported-metrics/Microsoft-DBforPostgreSQL-serversv2-metrics.md)<p>|
+|Microsoft.DBForPostgreSQL <a name="microsoftdbforpostgresql"></a>|[serverGroupsv2](../supported-logs/Microsoft-DBForPostgreSQL-serverGroupsv2-logs.md)<p>|[serverGroupsv2](../supported-metrics/Microsoft-DBForPostgreSQL-serverGroupsv2-metrics.md)<p>|
+|Microsoft. <br>DesktopVirtualization <a name="microsoftdesktopvirtualization"></a>|[applicationgroups](../supported-logs/Microsoft-DesktopVirtualization-applicationgroups-logs.md)<p>[hostpools](../supported-logs/Microsoft-DesktopVirtualization-hostpools-logs.md)<p>[scalingplans](../supported-logs/Microsoft-DesktopVirtualization-scalingplans-logs.md)<p>[workspaces](../supported-logs/Microsoft-DesktopVirtualization-workspaces-logs.md)<p>|N/A|
+|Microsoft.DevCenter <a name="microsoftdevcenter"></a>|[devcenters](../supported-logs/Microsoft-DevCenter-devcenters-logs.md)<p>|[devcenters](../supported-metrics/Microsoft-DevCenter-devcenters-metrics.md)<p>|
+|Microsoft.Devices <a name="microsoftdevices"></a>|[IotHubs](../supported-logs/Microsoft-Devices-IotHubs-logs.md)<p>[provisioningServices](../supported-logs/Microsoft-Devices-provisioningServices-logs.md)<p>|[IotHubs](../supported-metrics/Microsoft-Devices-IotHubs-metrics.md)<p>[provisioningServices](../supported-metrics/Microsoft-Devices-provisioningServices-metrics.md)<p>|
+|Microsoft.DigitalTwins <a name="microsoftdigitaltwins"></a>|[digitalTwinsInstances](../supported-logs/Microsoft-DigitalTwins-digitalTwinsInstances-logs.md)<p>|[digitalTwinsInstances](../supported-metrics/Microsoft-DigitalTwins-digitalTwinsInstances-metrics.md)<p>|
+|Microsoft.DocumentDB <a name="microsoftdocumentdb"></a>|[cassandraClusters](../supported-logs/Microsoft-DocumentDB-cassandraClusters-logs.md)<p>[DatabaseAccounts](../supported-logs/Microsoft-DocumentDB-DatabaseAccounts-logs.md)<p>[mongoClusters](../supported-logs/Microsoft-DocumentDB-mongoClusters-logs.md)<p>|[cassandraClusters](../supported-metrics/Microsoft-DocumentDB-cassandraClusters-metrics.md)<p>[DatabaseAccounts](../supported-metrics/Microsoft-DocumentDB-DatabaseAccounts-metrics.md)<p>[mongoClusters](../supported-metrics/Microsoft-DocumentDB-mongoClusters-metrics.md)<p>|
+|Microsoft.EventGrid <a name="microsofteventgrid"></a>|[domains](../supported-logs/Microsoft-EventGrid-domains-logs.md)<p>[partnerNamespaces](../supported-logs/Microsoft-EventGrid-partnerNamespaces-logs.md)<p>[partnerTopics](../supported-logs/Microsoft-EventGrid-partnerTopics-logs.md)<p>[systemTopics](../supported-logs/Microsoft-EventGrid-systemTopics-logs.md)<p>[topics](../supported-logs/Microsoft-EventGrid-topics-logs.md)<p>|[domains](../supported-metrics/Microsoft-EventGrid-domains-metrics.md)<p>[eventSubscriptions](../supported-metrics/Microsoft-EventGrid-eventSubscriptions-metrics.md)<p>[extensionTopics](../supported-metrics/Microsoft-EventGrid-extensionTopics-metrics.md)<p>[namespaces](../supported-metrics/Microsoft-EventGrid-namespaces-metrics.md)<p>[partnerNamespaces](../supported-metrics/Microsoft-EventGrid-partnerNamespaces-metrics.md)<p>[partnerTopics](../supported-metrics/Microsoft-EventGrid-partnerTopics-metrics.md)<p>[systemTopics](../supported-metrics/Microsoft-EventGrid-systemTopics-metrics.md)<p>[topics](../supported-metrics/Microsoft-EventGrid-topics-metrics.md)<p>|
+|Microsoft.EventHub <a name="microsofteventhub"></a>|[Namespaces](../supported-logs/Microsoft-EventHub-Namespaces-logs.md)<p>|[clusters](../supported-metrics/Microsoft-EventHub-clusters-metrics.md)<p>[Namespaces](../supported-metrics/Microsoft-EventHub-Namespaces-metrics.md)<p>|
+|Microsoft.HealthcareApis <a name="microsofthealthcareapis"></a>|[services](../supported-logs/Microsoft-HealthcareApis-services-logs.md)<p>[workspaces/dicomservices](../supported-logs/Microsoft-HealthcareApis-workspaces-dicomservices-logs.md)<p>[workspaces/fhirservices](../supported-logs/Microsoft-HealthcareApis-workspaces-fhirservices-logs.md)<p>[workspaces/iotconnectors](../supported-logs/Microsoft-HealthcareApis-workspaces-iotconnectors-logs.md)<p>|[services](../supported-metrics/Microsoft-HealthcareApis-services-metrics.md)<p>[workspaces/dicomservices](../supported-metrics/Microsoft-HealthcareApis-workspaces-dicomservices-metrics.md)<p>[workspaces/fhirservices](../supported-metrics/Microsoft-HealthcareApis-workspaces-fhirservices-metrics.md)<p>[workspaces/iotconnectors](../supported-metrics/Microsoft-HealthcareApis-workspaces-iotconnectors-metrics.md)<p>|
+|microsoft.insights <a name="microsoftinsights"></a>|[autoscalesettings](../supported-logs/microsoft-insights-autoscalesettings-logs.md)<p>[components](../supported-logs/microsoft-insights-components-logs.md)<p>|[autoscalesettings](../supported-metrics/microsoft-insights-autoscalesettings-metrics.md)<p>[components](../supported-metrics/microsoft-insights-components-metrics.md)<p>|
+|Microsoft.Insights <a name="microsoftinsights"></a>|[datacollectionrules](../supported-logs/Microsoft-Insights-datacollectionrules-logs.md)<p>|[datacollectionrules](../supported-metrics/Microsoft-Insights-datacollectionrules-metrics.md)<p>|
+|microsoft.keyvault <a name="microsoftkeyvault"></a>|[managedhsms](../supported-logs/microsoft-keyvault-managedhsms-logs.md)<p>|[managedhsms](../supported-metrics/microsoft-keyvault-managedhsms-metrics.md)<p>|
+|Microsoft.KeyVault <a name="microsoftkeyvault"></a>|[vaults](../supported-logs/Microsoft-KeyVault-vaults-logs.md)<p>|[vaults](../supported-metrics/Microsoft-KeyVault-vaults-metrics.md)<p>|
+|Microsoft.Kusto <a name="microsoftkusto"></a>|[clusters](../supported-logs/Microsoft-Kusto-clusters-logs.md)<p>|[clusters](../supported-metrics/Microsoft-Kusto-clusters-metrics.md)<p>|
+|microsoft.loadtestservice <a name="microsoftloadtestservice"></a>|[loadtests](../supported-logs/microsoft-loadtestservice-loadtests-logs.md)<p>|N/A|
+|Microsoft.Logic <a name="microsoftlogic"></a>|[IntegrationAccounts](../supported-logs/Microsoft-Logic-IntegrationAccounts-logs.md)<p>[Workflows](../supported-logs/Microsoft-Logic-Workflows-logs.md)<p>|[IntegrationServiceEnvironments](../supported-metrics/Microsoft-Logic-IntegrationServiceEnvironments-metrics.md)<p>[Workflows](../supported-metrics/Microsoft-Logic-Workflows-metrics.md)<p>|
+|Microsoft. <br>MachineLearningServices <a name="microsoftmachinelearningservices"></a>|[registries](../supported-logs/Microsoft-MachineLearningServices-registries-logs.md)<p>[workspaces](../supported-logs/Microsoft-MachineLearningServices-workspaces-logs.md)<p>[workspaces/onlineEndpoints](../supported-logs/Microsoft-MachineLearningServices-workspaces-onlineEndpoints-logs.md)<p>|[workspaces](../supported-metrics/Microsoft-MachineLearningServices-workspaces-metrics.md)<p>[workspaces/onlineEndpoints](../supported-metrics/Microsoft-MachineLearningServices-workspaces-onlineEndpoints-metrics.md)<p>[workspaces/onlineEndpoints/deployments](../supported-metrics/Microsoft-MachineLearningServices-workspaces-onlineEndpoints-deployments-metrics.md)<p>|
+|Microsoft.ManagedNetworkFabric <a name="microsoftmanagednetworkfabric"></a>|[networkDevices](../supported-logs/Microsoft-ManagedNetworkFabric-networkDevices-logs.md)<p>|[internetGateways](../supported-metrics/Microsoft-ManagedNetworkFabric-internetGateways-metrics.md)<p>[l3IsolationDomains](../supported-metrics/Microsoft-ManagedNetworkFabric-l3IsolationDomains-metrics.md)<p>[networkDevices](../supported-metrics/Microsoft-ManagedNetworkFabric-networkDevices-metrics.md)<p>|
+|Microsoft.Media <a name="microsoftmedia"></a>|[mediaservices](../supported-logs/Microsoft-Media-mediaservices-logs.md)<p>[mediaservices/liveEvents](../supported-logs/Microsoft-Media-mediaservices-liveEvents-logs.md)<p>[mediaservices/streamingEndpoints](../supported-logs/Microsoft-Media-mediaservices-streamingEndpoints-logs.md)<p>[videoanalyzers](../supported-logs/Microsoft-Media-videoanalyzers-logs.md)<p>|[mediaservices](../supported-metrics/Microsoft-Media-mediaservices-metrics.md)<p>[mediaservices/liveEvents](../supported-metrics/Microsoft-Media-mediaservices-liveEvents-metrics.md)<p>[mediaservices/streamingEndpoints](../supported-metrics/Microsoft-Media-mediaservices-streamingEndpoints-metrics.md)<p>[videoanalyzers](../supported-metrics/Microsoft-Media-videoanalyzers-metrics.md)<p>|
+|Microsoft.NetApp <a name="microsoftnetapp"></a>|[netAppAccounts/capacityPools](../supported-logs/Microsoft-NetApp-netAppAccounts-capacityPools-logs.md)<p>[netAppAccounts/capacityPools/volumes](../supported-logs/Microsoft-NetApp-netAppAccounts-capacityPools-volumes-logs.md)<p>|[netAppAccounts/capacityPools](../supported-metrics/Microsoft-NetApp-netAppAccounts-capacityPools-metrics.md)<p>[netAppAccounts/capacityPools/volumes](../supported-metrics/Microsoft-NetApp-netAppAccounts-capacityPools-volumes-metrics.md)<p>|
+|Microsoft.Network <a name="microsoftnetwork"></a>|[applicationgateways](../supported-logs/Microsoft-Network-applicationgateways-logs.md)<p>[azureFirewalls](../supported-logs/Microsoft-Network-azureFirewalls-logs.md)<p>[dnsResolverPolicies](../supported-logs/Microsoft-Network-dnsResolverPolicies-logs.md)<p>[expressRouteCircuits](../supported-logs/Microsoft-Network-expressRouteCircuits-logs.md)<p>[frontdoors](../supported-logs/Microsoft-Network-frontdoors-logs.md)<p>[loadBalancers](../supported-logs/Microsoft-Network-loadBalancers-logs.md)<p>[networkManagers](../supported-logs/Microsoft-Network-networkManagers-logs.md)<p>[networkManagers/ipamPools](../supported-logs/Microsoft-Network-networkManagers-ipamPools-logs.md)<p>[networksecuritygroups](../supported-logs/Microsoft-Network-networksecuritygroups-logs.md)<p>[networkSecurityPerimeters](../supported-logs/Microsoft-Network-networkSecurityPerimeters-logs.md)<p>[networkSecurityPerimeters/profiles](../supported-logs/Microsoft-Network-networkSecurityPerimeters-profiles-logs.md)<p>[publicIPAddresses](../supported-logs/Microsoft-Network-publicIPAddresses-logs.md)<p>[publicIPPrefixes](../supported-logs/Microsoft-Network-publicIPPrefixes-logs.md)<p>[trafficManagerProfiles](../supported-logs/Microsoft-Network-trafficManagerProfiles-logs.md)<p>[virtualNetworks](../supported-logs/Microsoft-Network-virtualNetworks-logs.md)<p>|[applicationgateways](../supported-metrics/Microsoft-Network-applicationgateways-metrics.md)<p>[azureFirewalls](../supported-metrics/Microsoft-Network-azureFirewalls-metrics.md)<p>[connections](../supported-metrics/Microsoft-Network-connections-metrics.md)<p>[dnsForwardingRulesets](../supported-metrics/Microsoft-Network-dnsForwardingRulesets-metrics.md)<p>[dnsResolvers](../supported-metrics/Microsoft-Network-dnsResolvers-metrics.md)<p>[dnszones](../supported-metrics/Microsoft-Network-dnszones-metrics.md)<p>[expressRouteCircuits](../supported-metrics/Microsoft-Network-expressRouteCircuits-metrics.md)<p>[expressRouteCircuits/peerings](../supported-metrics/Microsoft-Network-expressRouteCircuits-peerings-metrics.md)<p>[expressRoutePorts](../supported-metrics/Microsoft-Network-expressRoutePorts-metrics.md)<p>[frontdoors](../supported-metrics/Microsoft-Network-frontdoors-metrics.md)<p>[loadBalancers](../supported-metrics/Microsoft-Network-loadBalancers-metrics.md)<p>[natGateways](../supported-metrics/Microsoft-Network-natGateways-metrics.md)<p>[networkInterfaces](../supported-metrics/Microsoft-Network-networkInterfaces-metrics.md)<p>[networkManagers/ipamPools](../supported-metrics/Microsoft-Network-networkManagers-ipamPools-metrics.md)<p>[networkWatchers/connectionMonitors](../supported-metrics/Microsoft-Network-networkWatchers-connectionMonitors-metrics.md)<p>[privateDnsZones](../supported-metrics/Microsoft-Network-privateDnsZones-metrics.md)<p>[privateEndpoints](../supported-metrics/Microsoft-Network-privateEndpoints-metrics.md)<p>[privateLinkServices](../supported-metrics/Microsoft-Network-privateLinkServices-metrics.md)<p>[publicIPAddresses](../supported-metrics/Microsoft-Network-publicIPAddresses-metrics.md)<p>[publicIPPrefixes](../supported-metrics/Microsoft-Network-publicIPPrefixes-metrics.md)<p>[trafficManagerProfiles](../supported-metrics/Microsoft-Network-trafficManagerProfiles-metrics.md)<p>[virtualHubs](../supported-metrics/Microsoft-Network-virtualHubs-metrics.md)<p>[virtualNetworks](../supported-metrics/Microsoft-Network-virtualNetworks-metrics.md)<p>[virtualRouters](../supported-metrics/Microsoft-Network-virtualRouters-metrics.md)<p>|
+|microsoft.network <a name="microsoftnetwork"></a>|[bastionHosts](../supported-logs/microsoft-network-bastionHosts-logs.md)<p>[p2svpngateways](../supported-logs/microsoft-network-p2svpngateways-logs.md)<p>[virtualnetworkgateways](../supported-logs/microsoft-network-virtualnetworkgateways-logs.md)<p>[vpngateways](../supported-logs/microsoft-network-vpngateways-logs.md)<p>|[bastionHosts](../supported-metrics/microsoft-network-bastionHosts-metrics.md)<p>[expressroutegateways](../supported-metrics/microsoft-network-expressroutegateways-metrics.md)<p>[p2svpngateways](../supported-metrics/microsoft-network-p2svpngateways-metrics.md)<p>[virtualnetworkgateways](../supported-metrics/microsoft-network-virtualnetworkgateways-metrics.md)<p>[vpngateways](../supported-metrics/microsoft-network-vpngateways-metrics.md)<p>|
+|Microsoft.NetworkAnalytics <a name="microsoftnetworkanalytics"></a>|[DataProducts](../supported-logs/Microsoft-NetworkAnalytics-DataProducts-logs.md)<p>|N/A|
+|Microsoft.NetworkCloud <a name="microsoftnetworkcloud"></a>|[bareMetalMachines](../supported-logs/Microsoft-NetworkCloud-bareMetalMachines-logs.md)<p>[clusters](../supported-logs/Microsoft-NetworkCloud-clusters-logs.md)<p>[storageAppliances](../supported-logs/Microsoft-NetworkCloud-storageAppliances-logs.md)<p>|[bareMetalMachines](../supported-metrics/Microsoft-NetworkCloud-bareMetalMachines-metrics.md)<p>[clusters](../supported-metrics/Microsoft-NetworkCloud-clusters-metrics.md)<p>[storageAppliances](../supported-metrics/Microsoft-NetworkCloud-storageAppliances-metrics.md)<p>|
+|Microsoft.NetworkFunction <a name="microsoftnetworkfunction"></a>|[azureTrafficCollectors](../supported-logs/Microsoft-NetworkFunction-azureTrafficCollectors-logs.md)<p>|[azureTrafficCollectors](../supported-metrics/Microsoft-NetworkFunction-azureTrafficCollectors-metrics.md)<p>|
+|Microsoft.NotificationHubs <a name="microsoftnotificationhubs"></a>|[namespaces](../supported-logs/Microsoft-NotificationHubs-namespaces-logs.md)<p>[namespaces/notificationHubs](../supported-logs/Microsoft-NotificationHubs-namespaces-notificationHubs-logs.md)<p>|[namespaces/notificationHubs](../supported-metrics/Microsoft-NotificationHubs-namespaces-notificationHubs-metrics.md)<p>|
+|MICROSOFT.OPENENERGYPLATFORM <a name="microsoftopenenergyplatform"></a>|[ENERGYSERVICES](../supported-logs/MICROSOFT-OPENENERGYPLATFORM-ENERGYSERVICES-logs.md)<p>|N/A|
+|Microsoft. <br>OpenLogisticsPlatform <a name="microsoftopenlogisticsplatform"></a>|[Workspaces](../supported-logs/Microsoft-OpenLogisticsPlatform-Workspaces-logs.md)<p>|N/A|
+|Microsoft.OperationalInsights <a name="microsoftoperationalinsights"></a>|[workspaces](../supported-logs/Microsoft-OperationalInsights-workspaces-logs.md)<p>|[workspaces](../supported-metrics/Microsoft-OperationalInsights-workspaces-metrics.md)<p>|
+|Microsoft.PlayFab <a name="microsoftplayfab"></a>|[titles](../supported-logs/Microsoft-PlayFab-titles-logs.md)<p>|[titles](../supported-metrics/Microsoft-PlayFab-titles-metrics.md)<p>|
+|Microsoft.PowerBI <a name="microsoftpowerbi"></a>|[tenants](../supported-logs/Microsoft-PowerBI-tenants-logs.md)<p>[tenants/workspaces](../supported-logs/Microsoft-PowerBI-tenants-workspaces-logs.md)<p>|N/A|
+|Microsoft.PowerBIDedicated <a name="microsoftpowerbidedicated"></a>|[capacities](../supported-logs/Microsoft-PowerBIDedicated-capacities-logs.md)<p>|[capacities](../supported-metrics/Microsoft-PowerBIDedicated-capacities-metrics.md)<p>|
+|Microsoft.ProviderHub <a name="microsoftproviderhub"></a>|[providerRegistrations](../supported-logs/Microsoft-ProviderHub-providerRegistrations-logs.md)<p>|N/A|
+|microsoft.purview <a name="microsoftpurview"></a>|[accounts](../supported-logs/microsoft-purview-accounts-logs.md)<p>|[accounts](../supported-metrics/microsoft-purview-accounts-metrics.md)<p>|
+|Microsoft.RecoveryServices <a name="microsoftrecoveryservices"></a>|[Vaults](../supported-logs/Microsoft-RecoveryServices-Vaults-logs.md)<p>|[Vaults](../supported-metrics/Microsoft-RecoveryServices-Vaults-metrics.md)<p>|
+|Microsoft.Relay <a name="microsoftrelay"></a>|[namespaces](../supported-logs/Microsoft-Relay-namespaces-logs.md)<p>|[namespaces](../supported-metrics/Microsoft-Relay-namespaces-metrics.md)<p>|
+|Microsoft.Search <a name="microsoftsearch"></a>|[searchServices](../supported-logs/Microsoft-Search-searchServices-logs.md)<p>|[searchServices](../supported-metrics/Microsoft-Search-searchServices-metrics.md)<p>|
+|Microsoft.Security <a name="microsoftsecurity"></a>|[antiMalwareSettings](../supported-logs/Microsoft-Security-antiMalwareSettings-logs.md)<p>[defenderForStorageSettings](../supported-logs/Microsoft-Security-defenderForStorageSettings-logs.md)<p>|N/A|
+|microsoft.securityinsights <a name="microsoftsecurityinsights"></a>|[settings](../supported-logs/microsoft-securityinsights-settings-logs.md)<p>|N/A|
+|Microsoft.ServiceBus <a name="microsoftservicebus"></a>|[Namespaces](../supported-logs/Microsoft-ServiceBus-Namespaces-logs.md)<p>|[Namespaces](../supported-metrics/Microsoft-ServiceBus-Namespaces-metrics.md)<p>|
+|Microsoft.ServiceNetworking <a name="microsoftservicenetworking"></a>|[trafficControllers](../supported-logs/Microsoft-ServiceNetworking-trafficControllers-logs.md)<p>|[trafficControllers](../supported-metrics/Microsoft-ServiceNetworking-trafficControllers-metrics.md)<p>|
+|Microsoft.SignalRService <a name="microsoftsignalrservice"></a>|[SignalR](../supported-logs/Microsoft-SignalRService-SignalR-logs.md)<p>[SignalR/replicas](../supported-logs/Microsoft-SignalRService-SignalR-replicas-logs.md)<p>[WebPubSub](../supported-logs/Microsoft-SignalRService-WebPubSub-logs.md)<p>[WebPubSub/replicas](../supported-logs/Microsoft-SignalRService-WebPubSub-replicas-logs.md)<p>|[SignalR](../supported-metrics/Microsoft-SignalRService-SignalR-metrics.md)<p>[SignalR/replicas](../supported-metrics/Microsoft-SignalRService-SignalR-replicas-metrics.md)<p>[WebPubSub](../supported-metrics/Microsoft-SignalRService-WebPubSub-metrics.md)<p>[WebPubSub/replicas](../supported-metrics/Microsoft-SignalRService-WebPubSub-replicas-metrics.md)<p>|
+|microsoft.singularity <a name="microsoftsingularity"></a>|[accounts](../supported-logs/microsoft-singularity-accounts-logs.md)<p>|[accounts](../supported-metrics/microsoft-singularity-accounts-metrics.md)<p>|
+|Microsoft.Sql <a name="microsoftsql"></a>|[managedInstances](../supported-logs/Microsoft-Sql-managedInstances-logs.md)<p>[managedInstances/databases](../supported-logs/Microsoft-Sql-managedInstances-databases-logs.md)<p>[servers/databases](../supported-logs/Microsoft-Sql-servers-databases-logs.md)<p>|[managedInstances](../supported-metrics/Microsoft-Sql-managedInstances-metrics.md)<p>[servers/databases](../supported-metrics/Microsoft-Sql-servers-databases-metrics.md)<p>[servers/elasticpools](../supported-metrics/Microsoft-Sql-servers-elasticpools-metrics.md)<p>[servers/jobAgents](../supported-metrics/Microsoft-Sql-servers-jobAgents-metrics.md)<p>|
+|Microsoft.Storage <a name="microsoftstorage"></a>|[storageAccounts/blobServices](../supported-logs/Microsoft-Storage-storageAccounts-blobServices-logs.md)<p>[storageAccounts/fileServices](../supported-logs/Microsoft-Storage-storageAccounts-fileServices-logs.md)<p>[storageAccounts/queueServices](../supported-logs/Microsoft-Storage-storageAccounts-queueServices-logs.md)<p>[storageAccounts/tableServices](../supported-logs/Microsoft-Storage-storageAccounts-tableServices-logs.md)<p>|[storageAccounts](../supported-metrics/Microsoft-Storage-storageAccounts-metrics.md)<p>[storageAccounts/blobServices](../supported-metrics/Microsoft-Storage-storageAccounts-blobServices-metrics.md)<p>[storageAccounts/fileServices](../supported-metrics/Microsoft-Storage-storageAccounts-fileServices-metrics.md)<p>[storageAccounts/objectReplicationPolicies](../supported-metrics/Microsoft-Storage-storageAccounts-objectReplicationPolicies-metrics.md)<p>[storageAccounts/queueServices](../supported-metrics/Microsoft-Storage-storageAccounts-queueServices-metrics.md)<p>[storageAccounts/storageTasks](../supported-metrics/Microsoft-Storage-storageAccounts-storageTasks-metrics.md)<p>[storageAccounts/tableServices](../supported-metrics/Microsoft-Storage-storageAccounts-tableServices-metrics.md)<p>[storageTasks](../supported-metrics/Microsoft-Storage-storageTasks-metrics.md)<p>|
+|Microsoft.StorageCache <a name="microsoftstoragecache"></a>|[amlFilesystems](../supported-logs/Microsoft-StorageCache-amlFilesystems-logs.md)<p>[caches](../supported-logs/Microsoft-StorageCache-caches-logs.md)<p>|[amlFilesystems](../supported-metrics/Microsoft-StorageCache-amlFilesystems-metrics.md)<p>[caches](../supported-metrics/Microsoft-StorageCache-caches-metrics.md)<p>|
+|Microsoft.StorageMover <a name="microsoftstoragemover"></a>|[storageMovers](../supported-logs/Microsoft-StorageMover-storageMovers-logs.md)<p>|[storageMovers](../supported-metrics/Microsoft-StorageMover-storageMovers-metrics.md)<p>|
+|Microsoft.StreamAnalytics <a name="microsoftstreamanalytics"></a>|[streamingjobs](../supported-logs/Microsoft-StreamAnalytics-streamingjobs-logs.md)<p>|[streamingjobs](../supported-metrics/Microsoft-StreamAnalytics-streamingjobs-metrics.md)<p>|
+|Microsoft.Synapse <a name="microsoftsynapse"></a>|[workspaces](../supported-logs/Microsoft-Synapse-workspaces-logs.md)<p>[workspaces/bigDataPools](../supported-logs/Microsoft-Synapse-workspaces-bigDataPools-logs.md)<p>[workspaces/kustoPools](../supported-logs/Microsoft-Synapse-workspaces-kustoPools-logs.md)<p>[workspaces/scopePools](../supported-logs/Microsoft-Synapse-workspaces-scopePools-logs.md)<p>[workspaces/sqlPools](../supported-logs/Microsoft-Synapse-workspaces-sqlPools-logs.md)<p>|[workspaces](../supported-metrics/Microsoft-Synapse-workspaces-metrics.md)<p>[workspaces/bigDataPools](../supported-metrics/Microsoft-Synapse-workspaces-bigDataPools-metrics.md)<p>[workspaces/kustoPools](../supported-metrics/Microsoft-Synapse-workspaces-kustoPools-metrics.md)<p>[workspaces/scopePools](../supported-metrics/Microsoft-Synapse-workspaces-scopePools-metrics.md)<p>[workspaces/sqlPools](../supported-metrics/Microsoft-Synapse-workspaces-sqlPools-metrics.md)<p>|
+|Microsoft.TimeSeriesInsights <a name="microsofttimeseriesinsights"></a>|[environments](../supported-logs/Microsoft-TimeSeriesInsights-environments-logs.md)<p>[environments/eventsources](../supported-logs/Microsoft-TimeSeriesInsights-environments-eventsources-logs.md)<p>|[environments](../supported-metrics/Microsoft-TimeSeriesInsights-environments-metrics.md)<p>[environments/eventsources](../supported-metrics/Microsoft-TimeSeriesInsights-environments-eventsources-metrics.md)<p>|
+|microsoft.videoindexer <a name="microsoftvideoindexer"></a>|[accounts](../supported-logs/microsoft-videoindexer-accounts-logs.md)<p>|N/A|
+|Microsoft.Web <a name="microsoftweb"></a>|[hostingEnvironments](../supported-logs/Microsoft-Web-hostingEnvironments-logs.md)<p>[sites](../supported-logs/Microsoft-Web-sites-logs.md)<p>[sites/slots](../supported-logs/Microsoft-Web-sites-slots-logs.md)<p>[staticsites](../supported-logs/Microsoft-Web-staticsites-logs.md)<p>|[containerapps](../supported-metrics/Microsoft-Web-containerapps-metrics.md)<p>[hostingEnvironments](../supported-metrics/Microsoft-Web-hostingEnvironments-metrics.md)<p>[hostingenvironments/multirolepools](../supported-metrics/Microsoft-Web-hostingenvironments-multirolepools-metrics.md)<p>[hostingenvironments/workerpools](../supported-metrics/Microsoft-Web-hostingenvironments-workerpools-metrics.md)<p>[serverfarms](../supported-metrics/Microsoft-Web-serverfarms-metrics.md)<p>[sites](../supported-metrics/Microsoft-Web-sites-metrics.md)<p>[sites/slots](../supported-metrics/Microsoft-Web-sites-slots-metrics.md)<p>[staticsites](../supported-metrics/Microsoft-Web-staticsites-metrics.md)<p>|
+|microsoft.workloads <a name="microsoftworkloads"></a>|[sapvirtualinstances](../supported-logs/microsoft-workloads-sapvirtualinstances-logs.md)<p>|N/A|
+|NGINX.NGINXPLUS <a name="nginxnginxplus"></a>|[NGINX.NGINXPLUS/nginxDeployments](../supported-logs/NGINX-NGINXPLUS-nginxDeployments-logs.md)<p>|[NGINX.NGINXPLUS/nginxDeployments](../supported-metrics/NGINX-NGINXPLUS-nginxDeployments-metrics.md)<p>|
+|Microsoft.azurestackhci <a name="microsoftazurestackhci"></a>|N/A|[clusters](../supported-metrics/Microsoft-azurestackhci-clusters-metrics.md)<p>|
+|microsoft.bing <a name="microsoftbing"></a>|N/A|[accounts](../supported-metrics/microsoft-bing-accounts-metrics.md)<p>|
+|Microsoft.BotService <a name="microsoftbotservice"></a>|N/A|[botServices/channels](../supported-metrics/Microsoft-BotService-botServices-channels-metrics.md)<p>[botServices/connections](../supported-metrics/Microsoft-BotService-botServices-connections-metrics.md)<p>[checknameavailability](../supported-metrics/Microsoft-BotService-checknameavailability-metrics.md)<p>[hostsettings](../supported-metrics/Microsoft-BotService-hostsettings-metrics.md)<p>[listauthserviceproviders](../supported-metrics/Microsoft-BotService-listauthserviceproviders-metrics.md)<p>[listqnamakerendpointkeys](../supported-metrics/Microsoft-BotService-listqnamakerendpointkeys-metrics.md)<p>|
+|Microsoft.ClassicCompute <a name="microsoftclassiccompute"></a>|N/A|[domainNames/slots/roles](../supported-metrics/Microsoft-ClassicCompute-domainNames-slots-roles-metrics.md)<p>[virtualMachines](../supported-metrics/Microsoft-ClassicCompute-virtualMachines-metrics.md)<p>|
+|Microsoft.ClassicStorage <a name="microsoftclassicstorage"></a>|N/A|[storageAccounts](../supported-metrics/Microsoft-ClassicStorage-storageAccounts-metrics.md)<p>[storageAccounts/blobServices](../supported-metrics/Microsoft-ClassicStorage-storageAccounts-blobServices-metrics.md)<p>[storageAccounts/fileServices](../supported-metrics/Microsoft-ClassicStorage-storageAccounts-fileServices-metrics.md)<p>[storageAccounts/queueServices](../supported-metrics/Microsoft-ClassicStorage-storageAccounts-queueServices-metrics.md)<p>[storageAccounts/tableServices](../supported-metrics/Microsoft-ClassicStorage-storageAccounts-tableServices-metrics.md)<p>|
+|Microsoft.ClusterStor <a name="microsoftclusterstor"></a>|N/A|[nodes](../supported-metrics/Microsoft-ClusterStor-nodes-metrics.md)<p>|
+|microsoft.compute <a name="microsoftcompute"></a>|N/A|[disks](../supported-metrics/microsoft-compute-disks-metrics.md)<p>|
+|Microsoft.DataBoxEdge <a name="microsoftdataboxedge"></a>|N/A|[dataBoxEdgeDevices](../supported-metrics/Microsoft-DataBoxEdge-dataBoxEdgeDevices-metrics.md)<p>|
+|microsoft.edgezones <a name="microsoftedgezones"></a>|N/A|[edgezones](../supported-metrics/microsoft-edgezones-edgezones-metrics.md)<p>|
+|Microsoft.HDInsight <a name="microsofthdinsight"></a>|N/A|[clusters](../supported-metrics/Microsoft-HDInsight-clusters-metrics.md)<p>|
+|Microsoft.HealthModel <a name="microsofthealthmodel"></a>|N/A|[healthmodels](../supported-metrics/Microsoft-HealthModel-healthmodels-metrics.md)<p>|
+|Microsoft. <br>HybridContainerService <a name="microsofthybridcontainerservice"></a>|N/A|[provisionedClusters](../supported-metrics/Microsoft-HybridContainerService-provisionedClusters-metrics.md)<p>|
+|microsoft.hybridnetwork <a name="microsofthybridnetwork"></a>|N/A|[networkfunctions](../supported-metrics/microsoft-hybridnetwork-networkfunctions-metrics.md)<p>[virtualnetworkfunctions](../supported-metrics/microsoft-hybridnetwork-virtualnetworkfunctions-metrics.md)<p>|
+|Microsoft.IoTCentral <a name="microsoftiotcentral"></a>|N/A|[IoTApps](../supported-metrics/Microsoft-IoTCentral-IoTApps-metrics.md)<p>|
+|microsoft.kubernetes <a name="microsoftkubernetes"></a>|N/A|[connectedClusters](../supported-metrics/microsoft-kubernetes-connectedClusters-metrics.md)<p>|
+|microsoft. <br>kubernetesconfiguration <a name="microsoftkubernetesconfiguration"></a>|N/A|[extensions](../supported-metrics/microsoft-kubernetesconfiguration-extensions-metrics.md)<p>|
+|Microsoft.Maps <a name="microsoftmaps"></a>|N/A|[accounts](../supported-metrics/Microsoft-Maps-accounts-metrics.md)<p>|
+|Microsoft.MixedReality <a name="microsoftmixedreality"></a>|N/A|[remoteRenderingAccounts](../supported-metrics/Microsoft-MixedReality-remoteRenderingAccounts-metrics.md)<p>[spatialAnchorsAccounts](../supported-metrics/Microsoft-MixedReality-spatialAnchorsAccounts-metrics.md)<p>|
+|Microsoft.MobileNetwork <a name="microsoftmobilenetwork"></a>|N/A|[packetcorecontrolplanes](../supported-metrics/Microsoft-MobileNetwork-packetcorecontrolplanes-metrics.md)<p>[packetcorecontrolplanes/packetcoredataplanes](../supported-metrics/Microsoft-MobileNetwork-packetcorecontrolplanes-packetcoredataplanes-metrics.md)<p>|
+|Microsoft.Monitor <a name="microsoftmonitor"></a>|N/A|[accounts](../supported-metrics/Microsoft-Monitor-accounts-metrics.md)<p>|
+|Microsoft.Orbital <a name="microsoftorbital"></a>|N/A|[contactProfiles](../supported-metrics/Microsoft-Orbital-contactProfiles-metrics.md)<p>[l2Connections](../supported-metrics/Microsoft-Orbital-l2Connections-metrics.md)<p>[spacecrafts](../supported-metrics/Microsoft-Orbital-spacecrafts-metrics.md)<p>[terminals](../supported-metrics/Microsoft-Orbital-terminals-metrics.md)<p>|
+|Microsoft.Peering <a name="microsoftpeering"></a>|N/A|[peerings](../supported-metrics/Microsoft-Peering-peerings-metrics.md)<p>[peeringServices](../supported-metrics/Microsoft-Peering-peeringServices-metrics.md)<p>|
+|microsoft.resources <a name="microsoftresources"></a>|N/A|[subscriptions](../supported-metrics/microsoft-resources-subscriptions-metrics.md)<p>|
+|microsoft.securitydetonation <a name="microsoftsecuritydetonation"></a>|N/A|[chambers](../supported-metrics/microsoft-securitydetonation-chambers-metrics.md)<p>|
+|Microsoft.SecurityDetonation <a name="microsoftsecuritydetonation"></a>|N/A|[SecurityDetonationChambers](../supported-metrics/Microsoft-SecurityDetonation-SecurityDetonationChambers-metrics.md)<p>|
+|Microsoft.StorageActions <a name="microsoftstorageactions"></a>|N/A|[storageTasks](../supported-metrics/Microsoft-StorageActions-storageTasks-metrics.md)<p>|
+|Microsoft.StorageSync <a name="microsoftstoragesync"></a>|N/A|[storageSyncServices](../supported-metrics/Microsoft-StorageSync-storageSyncServices-metrics.md)<p>|
+|Microsoft.StorageTasks <a name="microsoftstoragetasks"></a>|N/A|[storageTasks](../supported-metrics/Microsoft-StorageTasks-storageTasks-metrics.md)<p>|
+|Microsoft.VoiceServices <a name="microsoftvoiceservices"></a>|N/A|[CommunicationsGateways](../supported-metrics/Microsoft-VoiceServices-CommunicationsGateways-metrics.md)<p>|
+|Wandisco.Fusion <a name="wandiscofusion"></a>|N/A|[Wandisco.Fusion/migrators](../supported-metrics/Wandisco-Fusion-migrators-metrics.md)<p>[Wandisco.Fusion/migrators/dataTransferAgents](../supported-metrics/Wandisco-Fusion-migrators-dataTransferAgents-metrics.md)<p>[Wandisco.Fusion/migrators/liveDataMigrations](../supported-metrics/Wandisco-Fusion-migrators-liveDataMigrations-metrics.md)<p>[Wandisco.Fusion/migrators/metadataMigrations](../supported-metrics/Wandisco-Fusion-migrators-metadataMigrations-metrics.md)<p>|
 
-Some categories might be supported only for specific types of resources. See the resource-specific documentation if you feel you're missing a resource. For example, Microsoft.Sql/servers/databases categories aren't available for all types of databases. For more information, see [information on SQL Database diagnostic logging](/azure/azure-sql/database/metrics-diagnostic-telemetry-logging-streaming-export-configure). 
-
-If you think something is missing, you can open a GitHub comment at the bottom of this article.  
-
-## Logs by resource provider
-  
-  
-    
-  
-### Microsoft.AAD<a name="microsoftaaddomainservices"></a>
-  
-  * [Microsoft.AAD/DomainServices](Microsoft-AAD-DomainServices-logs.md)
-
-  
-### Microsoft.AgFoodPlatform<a name="microsoftagfoodplatformfarmbeats"></a>
-  
-  * [Microsoft.AgFoodPlatform/farmBeats](Microsoft-AgFoodPlatform-farmBeats-logs.md)
-
-  
-### Microsoft.AnalysisServices<a name="microsoftanalysisservicesservers"></a>
-  
-  * [Microsoft.AnalysisServices/servers](Microsoft-AnalysisServices-servers-logs.md)
-
-  
-### Microsoft.ApiManagement<a name="microsoftapimanagementservice"></a>
-  
-  * [Microsoft.ApiManagement/service](Microsoft-ApiManagement-service-logs.md)
-
-  
-### Microsoft.App<a name="microsoftappmanagedenvironments"></a>
-  
-  * [Microsoft.App/managedEnvironments](Microsoft-App-managedEnvironments-logs.md)
-
-  
-### Microsoft.AppConfiguration<a name="microsoftappconfigurationconfigurationstores"></a>
-  
-  * [Microsoft.AppConfiguration/configurationStores](Microsoft-AppConfiguration-configurationStores-logs.md)
-
-  
-### Microsoft.AppPlatform<a name="microsoftappplatformspring"></a>
-  
-  * [Microsoft.AppPlatform/Spring](Microsoft-AppPlatform-Spring-logs.md)
-
-  
-### Microsoft.Attestation<a name="microsoftattestationattestationproviders"></a>
-  
-  * [Microsoft.Attestation/attestationProviders](Microsoft-Attestation-attestationProviders-logs.md)
-
-  
-### Microsoft.Automation<a name="microsoftautomationautomationaccounts"></a>
-  
-  * [Microsoft.Automation/automationAccounts](Microsoft-Automation-automationAccounts-logs.md)
-
-  
-### Microsoft.AutonomousDevelopmentPlatform<a name="microsoftautonomousdevelopmentplatformaccounts"></a><a name="microsoftautonomousdevelopmentplatformworkspaces"></a>
-  
-  * [Microsoft.AutonomousDevelopmentPlatform/accounts](Microsoft-AutonomousDevelopmentPlatform-accounts-logs.md)
-* [Microsoft.AutonomousDevelopmentPlatform/workspaces](Microsoft-AutonomousDevelopmentPlatform-workspaces-logs.md)
-
-  
-### microsoft.avs<a name="microsoftavsprivateclouds"></a>
-  
-  * [microsoft.avs/privateClouds](microsoft-avs-privateClouds-logs.md)
-
-  
-### Microsoft.AzureDataTransfer<a name="microsoftazuredatatransferconnectionsflows"></a>
-  
-  * [Microsoft.AzureDataTransfer/connections/flows](Microsoft-AzureDataTransfer-connections-flows-logs.md)
-
-  
-### microsoft.azureplaywrightservice<a name="microsoftazureplaywrightserviceaccounts"></a>
-  
-  * [microsoft.azureplaywrightservice/accounts](microsoft-azureplaywrightservice-accounts-logs.md)
-
-  
-### microsoft.azuresphere<a name="microsoftazurespherecatalogs"></a>
-  
-  * [microsoft.azuresphere/catalogs](microsoft-azuresphere-catalogs-logs.md)
-
-  
-### Microsoft.Batch<a name="microsoftbatchbatchaccounts"></a>
-  
-  * [Microsoft.Batch/batchaccounts](Microsoft-Batch-batchaccounts-logs.md)
-
-  
-### microsoft.botservice<a name="microsoftbotservicebotservices"></a>
-  
-  * [microsoft.botservice/botservices](microsoft-botservice-botservices-logs.md)
-
-  
-### Microsoft.Cache<a name="microsoftcacheredis"></a><a name="microsoftcacheredisenterprisedatabases"></a>
-  
-  * [Microsoft.Cache/redis](Microsoft-Cache-redis-logs.md)
-* [Microsoft.Cache/redisEnterprise/databases](Microsoft-Cache-redisEnterprise-databases-logs.md)
-
-  
-### Microsoft.Cdn<a name="microsoftcdncdnwebapplicationfirewallpolicies"></a><a name="microsoftcdnprofiles"></a><a name="microsoftcdnprofilesendpoints"></a>
-  
-  * [Microsoft.Cdn/cdnwebapplicationfirewallpolicies](Microsoft-Cdn-cdnwebapplicationfirewallpolicies-logs.md)
-* [Microsoft.Cdn/profiles](Microsoft-Cdn-profiles-logs.md)
-* [Microsoft.Cdn/profiles/endpoints](Microsoft-Cdn-profiles-endpoints-logs.md)
-
-  
-### Microsoft.Chaos<a name="microsoftchaosexperiments"></a>
-  
-  * [Microsoft.Chaos/experiments](Microsoft-Chaos-experiments-logs.md)
-
-  
-### Microsoft.ClassicNetwork<a name="microsoftclassicnetworknetworksecuritygroups"></a>
-  
-  * [Microsoft.ClassicNetwork/networksecuritygroups](Microsoft-ClassicNetwork-networksecuritygroups-logs.md)
-
-  
-### Microsoft.Cloudtest<a name="microsoftcloudtesthostedpools"></a>
-  
-  * [Microsoft.Cloudtest/hostedpools](Microsoft-Cloudtest-hostedpools-logs.md)
-
-  
-### Microsoft.CodeSigning<a name="microsoftcodesigningcodesigningaccounts"></a>
-  
-  * [Microsoft.CodeSigning/codesigningaccounts](Microsoft-CodeSigning-codesigningaccounts-logs.md)
-
-  
-### Microsoft.CognitiveServices<a name="microsoftcognitiveservicesaccounts"></a>
-  
-  * [Microsoft.CognitiveServices/accounts](Microsoft-CognitiveServices-accounts-logs.md)
-
-  
-### Microsoft.Communication<a name="microsoftcommunicationcommunicationservices"></a>
-  
-  * [Microsoft.Communication/CommunicationServices](Microsoft-Communication-CommunicationServices-logs.md)
-
-  
-### microsoft.community<a name="microsoftcommunitycommunitytrainings"></a>
-  
-  * [microsoft.community/communityTrainings](microsoft-community-communityTrainings-logs.md)
-
-  
-### Microsoft.Compute<a name="microsoftcomputevirtualmachines"></a>
-  
-  * [Microsoft.Compute/virtualMachines](Microsoft-Compute-virtualMachines-logs.md)
-
-  
-### Microsoft.ConfidentialLedger<a name="microsoftconfidentialledgermanagedccf"></a><a name="microsoftconfidentialledgermanagedccfs"></a>
-  
-  * [Microsoft.ConfidentialLedger/ManagedCCF](Microsoft-ConfidentialLedger-ManagedCCF-logs.md)
-* [Microsoft.ConfidentialLedger/ManagedCCFs](Microsoft-ConfidentialLedger-ManagedCCFs-logs.md)
-
-  
-### Microsoft.ConnectedCache<a name="microsoftconnectedcachecachenodes"></a><a name="microsoftconnectedcacheenterprisemcccustomers"></a><a name="microsoftconnectedcacheispcustomers"></a>
-  
-  * [Microsoft.ConnectedCache/CacheNodes](Microsoft-ConnectedCache-CacheNodes-logs.md)
-* [Microsoft.ConnectedCache/enterpriseMccCustomers](Microsoft-ConnectedCache-enterpriseMccCustomers-logs.md)
-* [Microsoft.ConnectedCache/ispCustomers](Microsoft-ConnectedCache-ispCustomers-logs.md)
-
-  
-### Microsoft.ConnectedVehicle<a name="microsoftconnectedvehicleplatformaccounts"></a>
-  
-  * [Microsoft.ConnectedVehicle/platformAccounts](Microsoft-ConnectedVehicle-platformAccounts-logs.md)
-
-  
-### Microsoft.ContainerInstance<a name="microsoftcontainerinstancecontainergroups"></a>
-  
-  * [Microsoft.ContainerInstance/containerGroups](Microsoft-ContainerInstance-containerGroups-logs.md)
-
-  
-### Microsoft.ContainerRegistry<a name="microsoftcontainerregistryregistries"></a>
-  
-  * [Microsoft.ContainerRegistry/registries](Microsoft-ContainerRegistry-registries-logs.md)
-
-  
-### Microsoft.ContainerService<a name="microsoftcontainerservicefleets"></a><a name="microsoftcontainerservicemanagedclusters"></a>
-  
-  * [Microsoft.ContainerService/fleets](Microsoft-ContainerService-fleets-logs.md)
-* [Microsoft.ContainerService/managedClusters](Microsoft-ContainerService-managedClusters-logs.md)
-
-  
-### Microsoft.CustomProviders<a name="microsoftcustomprovidersresourceproviders"></a>
-  
-  * [Microsoft.CustomProviders/resourceproviders](Microsoft-CustomProviders-resourceproviders-logs.md)
-
-  
-### Microsoft.D365CustomerInsights<a name="microsoftd365customerinsightsinstances"></a>
-  
-  * [Microsoft.D365CustomerInsights/instances](Microsoft-D365CustomerInsights-instances-logs.md)
-
-  
-### Microsoft.Dashboard<a name="microsoftdashboardgrafana"></a>
-  
-  * [Microsoft.Dashboard/grafana](Microsoft-Dashboard-grafana-logs.md)
-
-  
-### Microsoft.Databricks<a name="microsoftdatabricksworkspaces"></a>
-  
-  * [Microsoft.Databricks/workspaces](Microsoft-Databricks-workspaces-logs.md)
-
-  
-### Microsoft.DataFactory<a name="microsoftdatafactoryfactories"></a>
-  
-  * [Microsoft.DataFactory/factories](Microsoft-DataFactory-factories-logs.md)
-
-  
-### Microsoft.DataLakeAnalytics<a name="microsoftdatalakeanalyticsaccounts"></a>
-  
-  * [Microsoft.DataLakeAnalytics/accounts](Microsoft-DataLakeAnalytics-accounts-logs.md)
-
-  
-### Microsoft.DataLakeStore<a name="microsoftdatalakestoreaccounts"></a>
-  
-  * [Microsoft.DataLakeStore/accounts](Microsoft-DataLakeStore-accounts-logs.md)
-
-  
-### Microsoft.DataProtection<a name="microsoftdataprotectionbackupvaults"></a>
-  
-  * [Microsoft.DataProtection/BackupVaults](Microsoft-DataProtection-BackupVaults-logs.md)
-
-  
-### Microsoft.DataShare<a name="microsoftdatashareaccounts"></a>
-  
-  * [Microsoft.DataShare/accounts](Microsoft-DataShare-accounts-logs.md)
-
-  
-### Microsoft.DBforMariaDB<a name="microsoftdbformariadbservers"></a>
-  
-  * [Microsoft.DBforMariaDB/servers](Microsoft-DBforMariaDB-servers-logs.md)
-
-  
-### Microsoft.DBforMySQL<a name="microsoftdbformysqlflexibleservers"></a><a name="microsoftdbformysqlservers"></a>
-  
-  * [Microsoft.DBforMySQL/flexibleServers](Microsoft-DBforMySQL-flexibleServers-logs.md)
-* [Microsoft.DBforMySQL/servers](Microsoft-DBforMySQL-servers-logs.md)
-
-  
-### Microsoft.DBforPostgreSQL<a name="microsoftdbforpostgresqlflexibleservers"></a><a name="microsoftdbforpostgresqlservers"></a><a name="microsoftdbforpostgresqlserversv2"></a>
-  
-  * [Microsoft.DBforPostgreSQL/flexibleServers](Microsoft-DBforPostgreSQL-flexibleServers-logs.md)
-* [Microsoft.DBforPostgreSQL/servers](Microsoft-DBforPostgreSQL-servers-logs.md)
-* [Microsoft.DBforPostgreSQL/serversv2](Microsoft-DBforPostgreSQL-serversv2-logs.md)
-
-  
-### Microsoft.DBForPostgreSQL<a name="microsoftdbforpostgresqlservergroupsv2"></a>
-  
-  * [Microsoft.DBForPostgreSQL/serverGroupsv2](Microsoft-DBForPostgreSQL-serverGroupsv2-logs.md)
-
-  
-### Microsoft.DesktopVirtualization<a name="microsoftdesktopvirtualizationapplicationgroups"></a><a name="microsoftdesktopvirtualizationhostpools"></a><a name="microsoftdesktopvirtualizationscalingplans"></a><a name="microsoftdesktopvirtualizationworkspaces"></a>
-  
-  * [Microsoft.DesktopVirtualization/applicationgroups](Microsoft-DesktopVirtualization-applicationgroups-logs.md)
-* [Microsoft.DesktopVirtualization/hostpools](Microsoft-DesktopVirtualization-hostpools-logs.md)
-* [Microsoft.DesktopVirtualization/scalingplans](Microsoft-DesktopVirtualization-scalingplans-logs.md)
-* [Microsoft.DesktopVirtualization/workspaces](Microsoft-DesktopVirtualization-workspaces-logs.md)
-
-  
-### Microsoft.DevCenter<a name="microsoftdevcenterdevcenters"></a>
-  
-  * [Microsoft.DevCenter/devcenters](Microsoft-DevCenter-devcenters-logs.md)
-
-  
-### Microsoft.Devices<a name="microsoftdevicesiothubs"></a><a name="microsoftdevicesprovisioningservices"></a>
-  
-  * [Microsoft.Devices/IotHubs](Microsoft-Devices-IotHubs-logs.md)
-* [Microsoft.Devices/provisioningServices](Microsoft-Devices-provisioningServices-logs.md)
-
-  
-### Microsoft.DigitalTwins<a name="microsoftdigitaltwinsdigitaltwinsinstances"></a>
-  
-  * [Microsoft.DigitalTwins/digitalTwinsInstances](Microsoft-DigitalTwins-digitalTwinsInstances-logs.md)
-
-  
-### Microsoft.DocumentDB<a name="microsoftdocumentdbcassandraclusters"></a><a name="microsoftdocumentdbdatabaseaccounts"></a><a name="microsoftdocumentdbmongoclusters"></a>
-  
-  * [Microsoft.DocumentDB/cassandraClusters](Microsoft-DocumentDB-cassandraClusters-logs.md)
-* [Microsoft.DocumentDB/DatabaseAccounts](Microsoft-DocumentDB-DatabaseAccounts-logs.md)
-* [Microsoft.DocumentDB/mongoClusters](Microsoft-DocumentDB-mongoClusters-logs.md)
-
-  
-### Microsoft.EventGrid<a name="microsofteventgriddomains"></a><a name="microsofteventgridpartnernamespaces"></a><a name="microsofteventgridpartnertopics"></a><a name="microsofteventgridsystemtopics"></a><a name="microsofteventgridtopics"></a>
-  
-  * [Microsoft.EventGrid/domains](Microsoft-EventGrid-domains-logs.md)
-* [Microsoft.EventGrid/partnerNamespaces](Microsoft-EventGrid-partnerNamespaces-logs.md)
-* [Microsoft.EventGrid/partnerTopics](Microsoft-EventGrid-partnerTopics-logs.md)
-* [Microsoft.EventGrid/systemTopics](Microsoft-EventGrid-systemTopics-logs.md)
-* [Microsoft.EventGrid/topics](Microsoft-EventGrid-topics-logs.md)
-
-  
-### Microsoft.EventHub<a name="microsofteventhubnamespaces"></a>
-  
-  * [Microsoft.EventHub/Namespaces](Microsoft-EventHub-Namespaces-logs.md)
-
-  
-### Microsoft.HealthcareApis<a name="microsofthealthcareapisservices"></a><a name="microsofthealthcareapisworkspacesdicomservices"></a><a name="microsofthealthcareapisworkspacesfhirservices"></a><a name="microsofthealthcareapisworkspacesiotconnectors"></a>
-  
-  * [Microsoft.HealthcareApis/services](Microsoft-HealthcareApis-services-logs.md)
-* [Microsoft.HealthcareApis/workspaces/dicomservices](Microsoft-HealthcareApis-workspaces-dicomservices-logs.md)
-* [Microsoft.HealthcareApis/workspaces/fhirservices](Microsoft-HealthcareApis-workspaces-fhirservices-logs.md)
-* [Microsoft.HealthcareApis/workspaces/iotconnectors](Microsoft-HealthcareApis-workspaces-iotconnectors-logs.md)
-
-  
-### microsoft.insights<a name="microsoftinsightsautoscalesettings"></a><a name="microsoftinsightscomponents"></a>
-  
-  * [microsoft.insights/autoscalesettings](microsoft-insights-autoscalesettings-logs.md)
-* [microsoft.insights/components](microsoft-insights-components-logs.md)
-
-  
-### Microsoft.Insights<a name="microsoftinsightsdatacollectionrules"></a>
-  
-  * [Microsoft.Insights/datacollectionrules](Microsoft-Insights-datacollectionrules-logs.md)
-
-  
-### microsoft.keyvault<a name="microsoftkeyvaultmanagedhsms"></a>
-  
-  * [microsoft.keyvault/managedhsms](microsoft-keyvault-managedhsms-logs.md)
-
-  
-### Microsoft.KeyVault<a name="microsoftkeyvaultvaults"></a>
-  
-  * [Microsoft.KeyVault/vaults](Microsoft-KeyVault-vaults-logs.md)
-
-  
-### Microsoft.Kusto<a name="microsoftkustoclusters"></a>
-  
-  * [Microsoft.Kusto/clusters](Microsoft-Kusto-clusters-logs.md)
-
-  
-### microsoft.loadtestservice<a name="microsoftloadtestserviceloadtests"></a>
-  
-  * [microsoft.loadtestservice/loadtests](microsoft-loadtestservice-loadtests-logs.md)
-
-  
-### Microsoft.Logic<a name="microsoftlogicintegrationaccounts"></a><a name="microsoftlogicworkflows"></a>
-  
-  * [Microsoft.Logic/IntegrationAccounts](Microsoft-Logic-IntegrationAccounts-logs.md)
-* [Microsoft.Logic/Workflows](Microsoft-Logic-Workflows-logs.md)
-
-  
-### Microsoft.MachineLearningServices<a name="microsoftmachinelearningservicesregistries"></a><a name="microsoftmachinelearningservicesworkspaces"></a><a name="microsoftmachinelearningservicesworkspacesonlineendpoints"></a>
-  
-  * [Microsoft.MachineLearningServices/registries](Microsoft-MachineLearningServices-registries-logs.md)
-* [Microsoft.MachineLearningServices/workspaces](Microsoft-MachineLearningServices-workspaces-logs.md)
-* [Microsoft.MachineLearningServices/workspaces/onlineEndpoints](Microsoft-MachineLearningServices-workspaces-onlineEndpoints-logs.md)
-
-  
-### Microsoft.ManagedNetworkFabric<a name="microsoftmanagednetworkfabricnetworkdevices"></a>
-  
-  * [Microsoft.ManagedNetworkFabric/networkDevices](Microsoft-ManagedNetworkFabric-networkDevices-logs.md)
-
-  
-### Microsoft.Media<a name="microsoftmediamediaservices"></a><a name="microsoftmediamediaservicesliveevents"></a><a name="microsoftmediamediaservicesstreamingendpoints"></a><a name="microsoftmediavideoanalyzers"></a>
-  
-  * [Microsoft.Media/mediaservices](Microsoft-Media-mediaservices-logs.md)
-* [Microsoft.Media/mediaservices/liveEvents](Microsoft-Media-mediaservices-liveEvents-logs.md)
-* [Microsoft.Media/mediaservices/streamingEndpoints](Microsoft-Media-mediaservices-streamingEndpoints-logs.md)
-* [Microsoft.Media/videoanalyzers](Microsoft-Media-videoanalyzers-logs.md)
-
-  
-### Microsoft.NetApp<a name="microsoftnetappnetappaccountscapacitypools"></a><a name="microsoftnetappnetappaccountscapacitypoolsvolumes"></a>
-  
-  * [Microsoft.NetApp/netAppAccounts/capacityPools](Microsoft-NetApp-netAppAccounts-capacityPools-logs.md)
-* [Microsoft.NetApp/netAppAccounts/capacityPools/volumes](Microsoft-NetApp-netAppAccounts-capacityPools-volumes-logs.md)
-
-  
-### Microsoft.Network<a name="microsoftnetworkapplicationgateways"></a><a name="microsoftnetworkazurefirewalls"></a><a name="microsoftnetworkdnsresolverpolicies"></a><a name="microsoftnetworkexpressroutecircuits"></a><a name="microsoftnetworkfrontdoors"></a><a name="microsoftnetworkloadbalancers"></a><a name="microsoftnetworknetworkmanagers"></a><a name="microsoftnetworknetworkmanagersipampools"></a><a name="microsoftnetworknetworksecuritygroups"></a><a name="microsoftnetworknetworksecurityperimeters"></a><a name="microsoftnetworknetworksecurityperimetersprofiles"></a><a name="microsoftnetworkpublicipaddresses"></a><a name="microsoftnetworkpublicipprefixes"></a><a name="microsoftnetworktrafficmanagerprofiles"></a><a name="microsoftnetworkvirtualnetworks"></a>
-  
-  * [Microsoft.Network/applicationgateways](Microsoft-Network-applicationgateways-logs.md)
-* [Microsoft.Network/azureFirewalls](Microsoft-Network-azureFirewalls-logs.md)
-* [Microsoft.Network/dnsResolverPolicies](Microsoft-Network-dnsResolverPolicies-logs.md)
-* [Microsoft.Network/expressRouteCircuits](Microsoft-Network-expressRouteCircuits-logs.md)
-* [Microsoft.Network/frontdoors](Microsoft-Network-frontdoors-logs.md)
-* [Microsoft.Network/loadBalancers](Microsoft-Network-loadBalancers-logs.md)
-* [Microsoft.Network/networkManagers](Microsoft-Network-networkManagers-logs.md)
-* [Microsoft.Network/networkManagers/ipamPools](Microsoft-Network-networkManagers-ipamPools-logs.md)
-* [Microsoft.Network/networksecuritygroups](Microsoft-Network-networksecuritygroups-logs.md)
-* [Microsoft.Network/networkSecurityPerimeters](Microsoft-Network-networkSecurityPerimeters-logs.md)
-* [Microsoft.Network/networkSecurityPerimeters/profiles](Microsoft-Network-networkSecurityPerimeters-profiles-logs.md)
-* [Microsoft.Network/publicIPAddresses](Microsoft-Network-publicIPAddresses-logs.md)
-* [Microsoft.Network/publicIPPrefixes](Microsoft-Network-publicIPPrefixes-logs.md)
-* [Microsoft.Network/trafficManagerProfiles](Microsoft-Network-trafficManagerProfiles-logs.md)
-* [Microsoft.Network/virtualNetworks](Microsoft-Network-virtualNetworks-logs.md)
-
-  
-### microsoft.network<a name="microsoftnetworkbastionhosts"></a><a name="microsoftnetworkp2svpngateways"></a><a name="microsoftnetworkvirtualnetworkgateways"></a><a name="microsoftnetworkvpngateways"></a>
-  
-  * [microsoft.network/bastionHosts](microsoft-network-bastionHosts-logs.md)
-* [microsoft.network/p2svpngateways](microsoft-network-p2svpngateways-logs.md)
-* [microsoft.network/virtualnetworkgateways](microsoft-network-virtualnetworkgateways-logs.md)
-* [microsoft.network/vpngateways](microsoft-network-vpngateways-logs.md)
-
-  
-### Microsoft.NetworkAnalytics<a name="microsoftnetworkanalyticsdataproducts"></a>
-  
-  * [Microsoft.NetworkAnalytics/DataProducts](Microsoft-NetworkAnalytics-DataProducts-logs.md)
-
-  
-### Microsoft.NetworkCloud<a name="microsoftnetworkcloudbaremetalmachines"></a><a name="microsoftnetworkcloudclusters"></a><a name="microsoftnetworkcloudstorageappliances"></a>
-  
-  * [Microsoft.NetworkCloud/bareMetalMachines](Microsoft-NetworkCloud-bareMetalMachines-logs.md)
-* [Microsoft.NetworkCloud/clusters](Microsoft-NetworkCloud-clusters-logs.md)
-* [Microsoft.NetworkCloud/storageAppliances](Microsoft-NetworkCloud-storageAppliances-logs.md)
-
-  
-### Microsoft.NetworkFunction<a name="microsoftnetworkfunctionazuretrafficcollectors"></a>
-  
-  * [Microsoft.NetworkFunction/azureTrafficCollectors](Microsoft-NetworkFunction-azureTrafficCollectors-logs.md)
-
-  
-### Microsoft.NotificationHubs<a name="microsoftnotificationhubsnamespaces"></a><a name="microsoftnotificationhubsnamespacesnotificationhubs"></a>
-  
-  * [Microsoft.NotificationHubs/namespaces](Microsoft-NotificationHubs-namespaces-logs.md)
-* [Microsoft.NotificationHubs/namespaces/notificationHubs](Microsoft-NotificationHubs-namespaces-notificationHubs-logs.md)
-
-  
-### MICROSOFT.OPENENERGYPLATFORM<a name="microsoftopenenergyplatformenergyservices"></a>
-  
-  * [MICROSOFT.OPENENERGYPLATFORM/ENERGYSERVICES](MICROSOFT-OPENENERGYPLATFORM-ENERGYSERVICES-logs.md)
-
-  
-### Microsoft.OpenLogisticsPlatform<a name="microsoftopenlogisticsplatformworkspaces"></a>
-  
-  * [Microsoft.OpenLogisticsPlatform/Workspaces](Microsoft-OpenLogisticsPlatform-Workspaces-logs.md)
-
-  
-### Microsoft.OperationalInsights<a name="microsoftoperationalinsightsworkspaces"></a>
-  
-  * [Microsoft.OperationalInsights/workspaces](Microsoft-OperationalInsights-workspaces-logs.md)
-
-  
-### Microsoft.PlayFab<a name="microsoftplayfabtitles"></a>
-  
-  * [Microsoft.PlayFab/titles](Microsoft-PlayFab-titles-logs.md)
-
-  
-### Microsoft.PowerBI<a name="microsoftpowerbitenants"></a><a name="microsoftpowerbitenantsworkspaces"></a>
-  
-  * [Microsoft.PowerBI/tenants](Microsoft-PowerBI-tenants-logs.md)
-* [Microsoft.PowerBI/tenants/workspaces](Microsoft-PowerBI-tenants-workspaces-logs.md)
-
-  
-### Microsoft.PowerBIDedicated<a name="microsoftpowerbidedicatedcapacities"></a>
-  
-  * [Microsoft.PowerBIDedicated/capacities](Microsoft-PowerBIDedicated-capacities-logs.md)
-
-  
-### microsoft.purview<a name="microsoftpurviewaccounts"></a>
-  
-  * [microsoft.purview/accounts](microsoft-purview-accounts-logs.md)
-
-  
-### Microsoft.RecoveryServices<a name="microsoftrecoveryservicesvaults"></a>
-  
-  * [Microsoft.RecoveryServices/Vaults](Microsoft-RecoveryServices-Vaults-logs.md)
-
-  
-### Microsoft.Relay<a name="microsoftrelaynamespaces"></a>
-  
-  * [Microsoft.Relay/namespaces](Microsoft-Relay-namespaces-logs.md)
-
-  
-### Microsoft.Search<a name="microsoftsearchsearchservices"></a>
-  
-  * [Microsoft.Search/searchServices](Microsoft-Search-searchServices-logs.md)
-
-  
-### Microsoft.Security<a name="microsoftsecurityantimalwaresettings"></a><a name="microsoftsecuritydefenderforstoragesettings"></a>
-  
-  * [Microsoft.Security/antiMalwareSettings](Microsoft-Security-antiMalwareSettings-logs.md)
-* [Microsoft.Security/defenderForStorageSettings](Microsoft-Security-defenderForStorageSettings-logs.md)
-
-  
-### microsoft.securityinsights<a name="microsoftsecurityinsightssettings"></a>
-  
-  * [microsoft.securityinsights/settings](microsoft-securityinsights-settings-logs.md)
-
-  
-### Microsoft.ServiceBus<a name="microsoftservicebusnamespaces"></a>
-  
-  * [Microsoft.ServiceBus/Namespaces](Microsoft-ServiceBus-Namespaces-logs.md)
-
-  
-### Microsoft.ServiceNetworking<a name="microsoftservicenetworkingtrafficcontrollers"></a>
-  
-  * [Microsoft.ServiceNetworking/trafficControllers](Microsoft-ServiceNetworking-trafficControllers-logs.md)
-
-  
-### Microsoft.SignalRService<a name="microsoftsignalrservicesignalr"></a><a name="microsoftsignalrservicesignalrreplicas"></a><a name="microsoftsignalrservicewebpubsub"></a><a name="microsoftsignalrservicewebpubsubreplicas"></a>
-  
-  * [Microsoft.SignalRService/SignalR](Microsoft-SignalRService-SignalR-logs.md)
-* [Microsoft.SignalRService/SignalR/replicas](Microsoft-SignalRService-SignalR-replicas-logs.md)
-* [Microsoft.SignalRService/WebPubSub](Microsoft-SignalRService-WebPubSub-logs.md)
-* [Microsoft.SignalRService/WebPubSub/replicas](Microsoft-SignalRService-WebPubSub-replicas-logs.md)
-
-  
-### microsoft.singularity<a name="microsoftsingularityaccounts"></a>
-  
-  * [microsoft.singularity/accounts](microsoft-singularity-accounts-logs.md)
-
-  
-### Microsoft.Sql<a name="microsoftsqlmanagedinstances"></a><a name="microsoftsqlmanagedinstancesdatabases"></a><a name="microsoftsqlserversdatabases"></a>
-  
-  * [Microsoft.Sql/managedInstances](Microsoft-Sql-managedInstances-logs.md)
-* [Microsoft.Sql/managedInstances/databases](Microsoft-Sql-managedInstances-databases-logs.md)
-* [Microsoft.Sql/servers/databases](Microsoft-Sql-servers-databases-logs.md)
-
-  
-### Microsoft.Storage<a name="microsoftstoragestorageaccountsblobservices"></a><a name="microsoftstoragestorageaccountsfileservices"></a><a name="microsoftstoragestorageaccountsqueueservices"></a><a name="microsoftstoragestorageaccountstableservices"></a>
-  
-  * [Microsoft.Storage/storageAccounts/blobServices](Microsoft-Storage-storageAccounts-blobServices-logs.md)
-* [Microsoft.Storage/storageAccounts/fileServices](Microsoft-Storage-storageAccounts-fileServices-logs.md)
-* [Microsoft.Storage/storageAccounts/queueServices](Microsoft-Storage-storageAccounts-queueServices-logs.md)
-* [Microsoft.Storage/storageAccounts/tableServices](Microsoft-Storage-storageAccounts-tableServices-logs.md)
-
-  
-### Microsoft.StorageCache<a name="microsoftstoragecacheamlfilesystems"></a><a name="microsoftstoragecachecaches"></a>
-  
-  * [Microsoft.StorageCache/amlFilesystems](Microsoft-StorageCache-amlFilesystems-logs.md)
-* [Microsoft.StorageCache/caches](Microsoft-StorageCache-caches-logs.md)
-
-  
-### Microsoft.StorageMover<a name="microsoftstoragemoverstoragemovers"></a>
-  
-  * [Microsoft.StorageMover/storageMovers](Microsoft-StorageMover-storageMovers-logs.md)
-
-  
-### Microsoft.StreamAnalytics<a name="microsoftstreamanalyticsstreamingjobs"></a>
-  
-  * [Microsoft.StreamAnalytics/streamingjobs](Microsoft-StreamAnalytics-streamingjobs-logs.md)
-
-  
-### Microsoft.Synapse<a name="microsoftsynapseworkspaces"></a><a name="microsoftsynapseworkspacesbigdatapools"></a><a name="microsoftsynapseworkspaceskustopools"></a><a name="microsoftsynapseworkspacesscopepools"></a><a name="microsoftsynapseworkspacessqlpools"></a>
-  
-  * [Microsoft.Synapse/workspaces](Microsoft-Synapse-workspaces-logs.md)
-* [Microsoft.Synapse/workspaces/bigDataPools](Microsoft-Synapse-workspaces-bigDataPools-logs.md)
-* [Microsoft.Synapse/workspaces/kustoPools](Microsoft-Synapse-workspaces-kustoPools-logs.md)
-* [Microsoft.Synapse/workspaces/scopePools](Microsoft-Synapse-workspaces-scopePools-logs.md)
-* [Microsoft.Synapse/workspaces/sqlPools](Microsoft-Synapse-workspaces-sqlPools-logs.md)
-
-  
-### Microsoft.TimeSeriesInsights<a name="microsofttimeseriesinsightsenvironments"></a><a name="microsofttimeseriesinsightsenvironmentseventsources"></a>
-  
-  * [Microsoft.TimeSeriesInsights/environments](Microsoft-TimeSeriesInsights-environments-logs.md)
-* [Microsoft.TimeSeriesInsights/environments/eventsources](Microsoft-TimeSeriesInsights-environments-eventsources-logs.md)
-
-  
-### microsoft.videoindexer<a name="microsoftvideoindexeraccounts"></a>
-  
-  * [microsoft.videoindexer/accounts](microsoft-videoindexer-accounts-logs.md)
-
-  
-### Microsoft.Web<a name="microsoftwebhostingenvironments"></a><a name="microsoftwebsites"></a><a name="microsoftwebsitesslots"></a><a name="microsoftwebstaticsites"></a>
-  
-  * [Microsoft.Web/hostingEnvironments](Microsoft-Web-hostingEnvironments-logs.md)
-* [Microsoft.Web/sites](Microsoft-Web-sites-logs.md)
-* [Microsoft.Web/sites/slots](Microsoft-Web-sites-slots-logs.md)
-* [Microsoft.Web/staticsites](Microsoft-Web-staticsites-logs.md)
-
-  
-### microsoft.workloads<a name="microsoftworkloadssapvirtualinstances"></a>
-  
-  * [microsoft.workloads/sapvirtualinstances](microsoft-workloads-sapvirtualinstances-logs.md)
-
-  
 ## Next Steps
 
 * [Learn more about resource logs](/azure/azure-monitor/essentials/platform-logs-overview)

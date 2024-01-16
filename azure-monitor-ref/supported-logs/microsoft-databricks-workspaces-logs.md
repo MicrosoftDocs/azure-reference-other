@@ -5,8 +5,11 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/01/2023
+ms.date: 01/10/2024
 ms.custom: Microsoft.Databricks/workspaces, naam
+
+# NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
+
 ---
 
 
@@ -15,6 +18,9 @@ ms.custom: Microsoft.Databricks/workspaces, naam
 # Supported logs for Microsoft.Databricks/workspaces  
 The following table lists the types of logs available for the Microsoft.Databricks/workspaces resource type.
   
+
   
-[!INCLUDE [Microsoft.Databricks/workspaces](./includes/microsoft-databricks-workspaces-logs-include.md)]
+[!INCLUDE [Microsoft.Databricks/workspaces](./includes/microsoft-databricks-workspaces-logs-include.md)]  
   
+  
+
