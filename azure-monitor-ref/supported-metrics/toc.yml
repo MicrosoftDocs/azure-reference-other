@@ -198,6 +198,8 @@ items:
     href: ../supported-metrics/microsoft-insights-autoscalesettings-metrics.md
   - name: microsoft.insights/components
     href: ../supported-metrics/microsoft-insights-components-metrics.md
+  - name: Microsoft.Insights/datacollectionrules
+    href: ../supported-metrics/microsoft-insights-datacollectionrules-metrics.md
   - name: Microsoft.IoTCentral/IoTApps
     href: ../supported-metrics/microsoft-iotcentral-iotapps-metrics.md
   - name: microsoft.keyvault/managedhsms
@@ -308,8 +310,6 @@ items:
     href: ../supported-metrics/microsoft-network-virtualrouters-metrics.md
   - name: microsoft.network/vpngateways
     href: ../supported-metrics/microsoft-network-vpngateways-metrics.md
-  - name: Microsoft.NetworkAnalytics/DataConnectors
-    href: ../supported-metrics/microsoft-networkanalytics-dataconnectors-metrics.md
   - name: Microsoft.NetworkCloud/bareMetalMachines
     href: ../supported-metrics/microsoft-networkcloud-baremetalmachines-metrics.md
   - name: Microsoft.NetworkCloud/clusters

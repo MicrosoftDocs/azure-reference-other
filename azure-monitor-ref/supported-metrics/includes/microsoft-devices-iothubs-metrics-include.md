@@ -1,16 +1,15 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/18/2023
+ms.date: 01/10/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Devices/IotHubs, naam
+
+# NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
+ 
 ---
-<!--
-NOTE:  This content is automatically generated using API calls to Azure. 
-Any edits made on these files will be overwritten in the next run of the script. 
-There is no benefit in editing these files directly.  
--->
+
   
   
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
@@ -43,10 +42,10 @@ There is no benefit in editing these files directly.
 |**Routing: message latency for Service Bus Queue**<p><p>The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a Service Bus queue endpoint. |`d2c.endpoints.latency.serviceBusQueues` |MilliSeconds |Average, Minimum, Maximum |\<none\>|PT1M |Yes|
 |**Routing: message latency for Service Bus Topic**<p><p>The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a Service Bus topic endpoint. |`d2c.endpoints.latency.serviceBusTopics` |MilliSeconds |Average, Minimum, Maximum |\<none\>|PT1M |Yes|
 |**Routing: message latency for storage**<p><p>The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a storage endpoint. |`d2c.endpoints.latency.storage` |MilliSeconds |Average, Minimum, Maximum |\<none\>|PT1M |Yes|
-|**Routing: telemetry messages dropped **<p><p>The number of times messages were dropped by IoT Hub routing due to dead endpoints. This value does not count messages delivered to fallback route as dropped messages are not delivered there. |`d2c.telemetry.egress.dropped` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
+|**Routing: telemetry messages dropped**<p><p>The number of times messages were dropped by IoT Hub routing due to dead endpoints. This value does not count messages delivered to fallback route as dropped messages are not delivered there. |`d2c.telemetry.egress.dropped` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Routing: messages delivered to fallback**<p><p>The number of times IoT Hub routing delivered messages to the endpoint associated with the fallback route. |`d2c.telemetry.egress.fallback` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Routing: telemetry messages incompatible**<p><p>The number of times IoT Hub routing failed to deliver messages due to an incompatibility with the endpoint. This value does not include retries. |`d2c.telemetry.egress.invalid` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
-|**Routing: telemetry messages orphaned **<p><p>The number of times messages were orphaned by IoT Hub routing because they didn't match any routing rules (including the fallback rule).  |`d2c.telemetry.egress.orphaned` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
+|**Routing: telemetry messages orphaned**<p><p>The number of times messages were orphaned by IoT Hub routing because they didn't match any routing rules (including the fallback rule).  |`d2c.telemetry.egress.orphaned` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Routing: telemetry messages delivered**<p><p>The number of times messages were successfully delivered to all endpoints using IoT Hub routing. If a message is routed to multiple endpoints, this value increases by one for each successful delivery. If a message is delivered to the same endpoint multiple times, this value increases by one for each successful delivery. |`d2c.telemetry.egress.success` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Telemetry message send attempts**<p><p>Number of device-to-cloud telemetry messages attempted to be sent to your IoT hub |`d2c.telemetry.ingress.allProtocol` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Number of throttling errors**<p><p>Number of throttling errors due to device throughput throttles |`d2c.telemetry.ingress.sendThrottle` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
@@ -60,7 +59,7 @@ There is no benefit in editing these files directly.
 |**Total number of messages used**<p><p>Number of total messages used today |`dailyMessageQuotaUsed` |Count |Average, Minimum, Maximum |\<none\>|PT1M |Yes|
 |**Total device data usage**<p><p>Bytes transferred to and from any devices connected to IotHub |`deviceDataUsage` |Bytes |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Total device data usage (preview)**<p><p>Bytes transferred to and from any devices connected to IotHub |`deviceDataUsageV2` |Bytes |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
-|**Connected devices (deprecated) **<p><p>Number of devices connected to your IoT hub |`devices.connectedDevices.allProtocol` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
+|**Connected devices (deprecated)**<p><p>Number of devices connected to your IoT hub |`devices.connectedDevices.allProtocol` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Total devices (deprecated)**<p><p>Number of devices registered to your IoT hub |`devices.totalDevices` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Event Grid deliveries**<p><p>The number of IoT Hub events published to Event Grid. Use the Result dimension for the number of successful and failed requests. EventType dimension shows the type of event (https://aka.ms/ioteventgrid). |`EventGridDeliveries` |Count |Average, Minimum, Maximum, Total |`Result`, `EventType`|PT1M |Yes|
 |**Event Grid latency**<p><p>The average latency (milliseconds) from when the Iot Hub event was generated to when the event was published to Event Grid. This number is an average between all event types. Use the EventType dimension to see latency of a specific type of event. |`EventGridLatency` |MilliSeconds |Average, Minimum, Maximum |`EventType`|PT1M |Yes|

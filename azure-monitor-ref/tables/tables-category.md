@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/25/2023
+ms.date: 01/15/2024
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -121,6 +121,7 @@ ms.date: 12/25/2023
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
 - [ContainerEvent](containerevent.md)
 - [ContainerInstanceLog](containerinstancelog.md)
+- [DatabricksWorkspaceLogs](databricksworkspacelogs.md)
 - [DataverseActivity](dataverseactivity.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [EGNSuccessfulMqttConnections](egnsuccessfulmqttconnections.md)
@@ -137,6 +138,7 @@ ms.date: 12/25/2023
 - [PowerAutomateActivity](powerautomateactivity.md)
 - [PowerBIActivity](powerbiactivity.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
+- [PowerPlatformAdminActivity](powerplatformadminactivity.md)
 - [PowerPlatformConnectorActivity](powerplatformconnectoractivity.md)
 - [PowerPlatformDlpActivity](powerplatformdlpactivity.md)
 - [REDConnectionEvents](redconnectionevents.md)
@@ -175,6 +177,7 @@ ms.date: 12/25/2023
 - [ACSCallAutomationMediaSummary](acscallautomationmediasummary.md)
 - [ACSCallClientMediaStatsTimeSeries](acscallclientmediastatstimeseries.md)
 - [ACSCallClientOperations](acscallclientoperations.md)
+- [ACSCallClosedCaptionsSummary](acscallclosedcaptionssummary.md)
 - [ACSCallDiagnostics](acscalldiagnostics.md)
 - [ACSCallRecordingIncomingOperations](acscallrecordingincomingoperations.md)
 - [ACSCallRecordingSummary](acscallrecordingsummary.md)
@@ -352,6 +355,7 @@ ms.date: 12/25/2023
 - [DatabricksSecrets](databrickssecrets.md)
 - [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
+- [DatabricksWorkspaceLogs](databricksworkspacelogs.md)
 - [DevCenterBillingEventLogs](devcenterbillingeventlogs.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
@@ -410,6 +414,7 @@ ms.date: 12/25/2023
 - [NCCVMOrchestrationLogs](nccvmorchestrationlogs.md)
 - [NCSStorageAlerts](ncsstoragealerts.md)
 - [NCSStorageLogs](ncsstoragelogs.md)
+- [NGXOperationLogs](ngxoperationlogs.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [OEPAirFlowTask](oepairflowtask.md)
 - [OEPAuditLogs](oepauditlogs.md)
@@ -716,6 +721,7 @@ ms.date: 12/25/2023
 - [PowerAppsActivity](powerappsactivity.md)
 - [PowerAutomateActivity](powerautomateactivity.md)
 - [PowerBIActivity](powerbiactivity.md)
+- [PowerPlatformAdminActivity](powerplatformadminactivity.md)
 - [PowerPlatformConnectorActivity](powerplatformconnectoractivity.md)
 - [PowerPlatformDlpActivity](powerplatformdlpactivity.md)
 - [ProjectActivity](projectactivity.md)

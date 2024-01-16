@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 01/15/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: CDBMongoRequests
@@ -37,3 +37,4 @@ ms.custom: CDBMongoRequests
 | TimeGenerated | datetime | Timestamp (in UTC) of the Mongo API data plane request. |
 | Type | string | The name of the table |
 | UserAgent | string | The user agent suffix associated with the client issuing the request. |
+| UserId | string | The user ID associated with the client issuing the request. |

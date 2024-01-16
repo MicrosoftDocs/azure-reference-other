@@ -5,8 +5,11 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 09/19/2023
+ms.date: 01/10/2024
 ms.custom: microsoft.network/p2svpngateways, naam
+
+# NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
+
 ---
 
 
@@ -16,5 +19,12 @@ ms.custom: microsoft.network/p2svpngateways, naam
 The following table lists the types of logs available for the microsoft.network/p2svpngateways resource type.
   
   
-[!INCLUDE [microsoft.network/p2svpngateways](./includes/microsoft-network-p2svpngateways-logs-include.md)]
   
+For a list of supported metrics, see [Supported metrics - microsoft.network/p2svpngateways](../supported-metrics/microsoft-network-p2svpngateways-metrics.md)  
+  
+
+  
+[!INCLUDE [microsoft.network/p2svpngateways](./includes/microsoft-network-p2svpngateways-logs-include.md)]  
+  
+  
+
