@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 01/22/2024
 ---
 
 # AzureMetrics
@@ -50,6 +50,7 @@ Metric data emitted by Azure services that measure their health and performance.
 - Azure Databricks Services
 - Azure Database for MySQL Flexible Servers
 - Azure Database for PostgreSQL Flexible Servers
+- Azure Cosmos DB for PostgreSQL
 - Dev Centers
 - Virtual machines
 - Machine Learning
