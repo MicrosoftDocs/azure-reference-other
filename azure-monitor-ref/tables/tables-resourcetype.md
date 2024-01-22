@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 01/15/2024
+ms.date: 01/22/2024
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -230,6 +230,13 @@ Microsoft.DocumentDb/databaseAccounts
 ### Azure Cosmos DB for MongoDB (vCore)
 Microsoft.DocumentDB/mongoClusters
 - [VCoreMongoRequests](vcoremongorequests.md)
+
+
+### Azure Cosmos DB for PostgreSQL
+Microsoft.DBForPostgreSQL/servergroupsv2
+- [AzureActivity](azureactivity.md)
+- [AzureDiagnostics](azurediagnostics.md)
+- [AzureMetrics](azuremetrics.md)
 
 
 ### Azure Data Explorer Clusters
@@ -872,6 +879,11 @@ Microsoft.HealthcareApis/workspaces
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
 
 
+### Integration Account.
+Microsoft.Logic/integrationAccounts
+- [AzureActivity](azureactivity.md)
+
+
 ### Intune Specialist Reports.
 microsoft.intune/operations
 - [Windows365AuditLogs](windows365auditlogs.md)
@@ -935,6 +947,7 @@ Microsoft.Logic/workflows
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
+- [LogicAppWorkflowRuntime](logicappworkflowruntime.md)
 
 
 ### Machine Learning
