@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 01/22/2024
 ---
 
 # LogicAppWorkflowRuntime
@@ -22,6 +22,7 @@ Logs generated during Logic Apps workflow runtime.
 ## Resource types
 
 - App Services
+- Logic Apps
 
             
 
