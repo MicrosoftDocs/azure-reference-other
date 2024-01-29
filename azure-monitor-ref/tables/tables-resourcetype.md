@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 01/22/2024
+ms.date: 01/29/2024
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -1145,6 +1145,7 @@ Microsoft.NetworkCloud/bareMetalMachines
 - [AzureMetrics](azuremetrics.md)
 - [NCBMSystemLogs](ncbmsystemlogs.md)
 - [NCBMSecurityLogs](ncbmsecuritylogs.md)
+- [NCBMSecurityDefenderLogs](ncbmsecuritydefenderlogs.md)
 
 
 ### Nexus Clusters

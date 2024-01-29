@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 01/15/2024
+ms.date: 01/29/2024
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -408,6 +408,7 @@ ms.date: 01/15/2024
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [NCBMSecurityDefenderLogs](ncbmsecuritydefenderlogs.md)
 - [NCBMSecurityLogs](ncbmsecuritylogs.md)
 - [NCBMSystemLogs](ncbmsystemlogs.md)
 - [NCCKubernetesLogs](ncckuberneteslogs.md)
@@ -592,6 +593,7 @@ ms.date: 01/15/2024
 - [IntuneDevices](intunedevices.md)
 - [IntuneOperationalLogs](intuneoperationallogs.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
+- [RemoteNetworkHealthLogs](remotenetworkhealthlogs.md)
 - [Update](update.md)
 - [UpdateRunProgress](updaterunprogress.md)
 - [W3CIISLog](w3ciislog.md)
@@ -620,6 +622,7 @@ ms.date: 01/15/2024
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
 - [NetworkMonitoring](networkmonitoring.md)
+- [RemoteNetworkHealthLogs](remotenetworkhealthlogs.md)
 
 
 ### Security
@@ -713,6 +716,7 @@ ms.date: 01/15/2024
 - [McasShadowItReporting](mcasshadowitreporting.md)
 - [MicrosoftGraphActivityLogs](microsoftgraphactivitylogs.md)
 - [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
+- [NCBMSecurityDefenderLogs](ncbmsecuritydefenderlogs.md)
 - [NCBMSecurityLogs](ncbmsecuritylogs.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [NetworkAccessTraffic](networkaccesstraffic.md)
@@ -727,6 +731,7 @@ ms.date: 01/15/2024
 - [ProjectActivity](projectactivity.md)
 - [ProtectionStatus](protectionstatus.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
+- [RemoteNetworkHealthLogs](remotenetworkhealthlogs.md)
 - [SecurityAlert](securityalert.md)
 - [SecurityAttackPathData](securityattackpathdata.md)
 - [SecurityBaseline](securitybaseline.md)

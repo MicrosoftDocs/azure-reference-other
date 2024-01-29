@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 01/29/2024
 ---
 
 # ContainerLogV2
 
-Kubernetes Container logs in V2 schema. This is the successor for ContainerLog. This has more friendlier schema, specifically for kubernetes orchestrated containers in pods.
+Kubernetes Container logs in V2 schema. This is the successor of ContainerLog. This has a friendlier schema, specifically for Kubernetes orchestrated containers in pods. With this feature enabled, previously split container logs are stitched together and sent as single entries to the ContainerLogV2 table. The schema now supports container log lines of up to to 64 KB. The schema also supports .NET and Go stack traces, which appear as single entries.
 
 ## Categories
 
