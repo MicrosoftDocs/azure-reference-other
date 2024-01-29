@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/09/2023
+ms.date: 01/29/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ASimUserManagementActivityLogs
@@ -13,6 +13,7 @@ ms.custom: ASimUserManagementActivityLogs
 | ActingAppId | string | The ID of the application used by the actor to perform the activity, including a process, browser, or service. |
 | ActingAppName | string | The name of the application used by the actor to perform the activity, including a process, browser, or service. |
 | ActingAppType | string | The type of acting application. |
+| ActingOriginalAppType | string | The acting application type as reported by the reporting device. |
 | ActorOriginalUserType | string | The original actor user type, if provided by the source. |
 | ActorScope | string | The scope, such as Azure AD tenant, in which ActorUserId and ActorUsername are defined. |
 | ActorScopeId | string | The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined. |
