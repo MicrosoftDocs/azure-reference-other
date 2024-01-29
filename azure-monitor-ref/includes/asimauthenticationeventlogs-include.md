@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 01/29/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ASimAuthenticationEventLogs
@@ -13,6 +13,7 @@ ms.custom: ASimAuthenticationEventLogs
 | ActingAppId | string | The ID of the application authorizing on behalf of the actor, including a process, browser, or service. |
 | ActingAppName | string | The name of the application authorizing on behalf of the actor, including a process, browser, or service. |
 | ActingAppType | string | The type of acting application. |
+| ActingOriginalAppType | string | The acting application type as reported by the reporting device. |
 | ActorOriginalUserType | string | The user type as reported by the reporting device. |
 | ActorScope | string | The scope, such as Azure AD tenant, in which ActorUserId and ActorUsername are defined. |
 | ActorScopeId | string | The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined. |
@@ -111,6 +112,7 @@ ms.custom: ASimAuthenticationEventLogs
 | TargetGeoRegion | string | The region within a country associated with the target IP address. |
 | TargetHostname | string | The target device hostname, excluding domain information. |
 | TargetIpAddr | string | The IP address of the target device. |
+| TargetOriginalAppType | string | The target application type as reported by the reporting device. |
 | TargetOriginalRiskLevel | string | The risk level associated with the target, as reported by the reporting device. |
 | TargetOriginalUserType | string | The user type as reported by the reporting device. |
 | TargetPortNumber | int | The port of the target device. |
