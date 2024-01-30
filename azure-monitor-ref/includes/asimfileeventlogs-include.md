@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 10/16/2023
+ms.date: 01/29/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ASimFileEventLogs
@@ -121,6 +121,7 @@ ms.custom: ASimFileEventLogs
 | TargetFileSHA256 | string | The SHA-256 hash of the target file. |
 | TargetFileSHA512 | string | The SHA-512 hash of the source file. |
 | TargetFileSize | long | The size of the target file in bytes. |
+| TargetOriginalAppType | string | The target application type as reported by the reporting device. |
 | TargetUrl | string | When the operation is initiated using HTTP or HTTPS, the URL used. |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatCategory | string | The category of the threat or malware identified in the file activity. |

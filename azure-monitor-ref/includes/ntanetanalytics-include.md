@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 01/29/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: NTANetAnalytics
@@ -58,6 +58,9 @@ ms.custom: NTANetAnalytics
 | NsgRuleType | string | The type of Network Security Group(NSG) rule used by the flow. This is a placeholder for NSG flow logging. |
 | PacketsDestToSrc | long | Represents packets sent from the destination to the source of the flow. |
 | PacketsSrcToDest | long | Represents packets sent from the source to the destination of the flow. |
+| PrivateEndpointResourceId | string | Resource ID of the private endpoint resource. |
+| PrivateLinkResourceId | string | Resource ID of the private link service. |
+| PrivateLinkResourceName | string | Resource name of the private link service. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SrcApplicationGateway | string | Application gateway associated with the source IP in the flow. |
 | SrcExpressRouteCircuit | string | Express route circuit associated with the source IP in the flow. |

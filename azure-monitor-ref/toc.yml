@@ -951,6 +951,8 @@ items:
         href: tables/microsofthealthcareapisauditlogs.md
       - name: MicrosoftPurviewInformationProtection
         href: tables/microsoftpurviewinformationprotection.md
+      - name: NCBMSecurityDefenderLogs
+        href: tables/ncbmsecuritydefenderlogs.md
       - name: NCBMSecurityLogs
         href: tables/ncbmsecuritylogs.md
       - name: NCBMSystemLogs
@@ -1045,6 +1047,8 @@ items:
         href: tables/purviewsecuritylogs.md
       - name: REDConnectionEvents
         href: tables/redconnectionevents.md
+      - name: RemoteNetworkHealthLogs
+        href: tables/remotenetworkhealthlogs.md
       - name: ResourceManagementPublicAccessLogs
         href: tables/resourcemanagementpublicaccesslogs.md
       - name: SCCMAssessmentRecommendation
