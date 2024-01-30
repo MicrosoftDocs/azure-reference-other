@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 11/13/2023
+ms.date: 01/29/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ContainerLogV2
@@ -15,7 +15,9 @@ ms.custom: ContainerLogV2
 | ContainerId | string | Container ID of the log source as seen by the Container engine. |
 | ContainerName | string | Name of the Container generating the log. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
-| LogMessage | dynamic | Log message from stdout or stderr. Being a dynmic field, json log messages can be queried without parse_json. |
+| KubernetesMetadata | dynamic | Kubernetes Metadata including podUid, podLabels, podAnnotations and container image details, etc. |
+| LogLevel | string | Categorize logs based on importance and severity. Possible values: CRITICAL, ERROR, WARNING, INFO, DEBUG, TRACE, UNKNOWN. |
+| LogMessage | dynamic | Log message from stdout or stderr. Being a dynamic field, json log messages can be queried without parse_json. |
 | LogSource | string | Source of the Log message. Possible vlaues are stdout or stderr. |
 | PodName | string | Kubernetes Pod name for the Container generating the log. |
 | PodNamespace | string | Kubernetes Namespace for the container's pod. |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 01/29/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ASimAuditEventLogs
@@ -13,6 +13,7 @@ ms.custom: ASimAuditEventLogs
 | ActingAppId | string | The ID of the application that initiated the activity reported, including a process, browser, or service. |
 | ActingAppName | string | The name of the application that initiated the activity reported, including a service, a URL, or a SaaS application. |
 | ActingAppType | string | The type of acting application. |
+| ActingOriginalAppType | string | The acting application type as reported by the reporting device. |
 | ActorOriginalUserType | string | The user type as reported by the reporting device. |
 | ActorScope | string | The scope, such as Azure AD tenant, in which ActorUserId and ActorUsername are defined. |
 | ActorScopeId | string | The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined. |
@@ -71,6 +72,7 @@ ms.custom: ASimAuditEventLogs
 | ObjectType | string | The type of Object. |
 | OldValue | string | The old value of Object prior to the operation. |
 | Operation | string | The operation audited as reported by the reporting device. |
+| OriginalObjectType | string | The object type as reported by the reporting device. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | RuleName | string | The name or ID of the rule associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
@@ -115,6 +117,7 @@ ms.custom: ASimAuditEventLogs
 | TargetGeoRegion | string | The region within a country associated with the target IP address. |
 | TargetHostname | string | The target device hostname, excluding domain information. |
 | TargetIpAddr | string | The Target IP address from which the connection or session originated. |
+| TargetOriginalAppType | string | The target application type as reported by the reporting device. |
 | TargetOriginalRiskLevel | string | The risk level associated with the target, as reported by the reporting device. |
 | TargetPortNumber | int | The Target IP port from which the connection originated. |
 | TargetRiskLevel | int | The risk level associated with the target. |
