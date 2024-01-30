@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 01/29/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: NTATopologyDetails
@@ -73,8 +73,10 @@ ms.custom: NTATopologyDetails
 | PrimaryNextHop | string | Primary next hop address of the express route circuit route. |
 | PrimaryPeerAddressPrefix | string | The primary peer address prefix of express route circuit peering. |
 | Priority | int | Specifies the priority for the virtual machine. Minimum api-version: 2019-03-01. |
+| PrivateEndpointResourceId | string | Resource ID of the private endpoint resource. |
 | PrivateFrontendIps | string | Front end private IP addresses associated with the application gateway resource. |
 | PrivateIpAddresses | string | Private IP address of the IP configuration. |
+| PrivateLinkResourceId | string | Resource ID of the private link service. |
 | Protocol | string | Protocol associated with network security group rule. |
 | PublicFrontendIps | string | Front end public IP addresses associated with the application gateway resource. |
 | PublicIpAddresses | string | Public IP address bound to the IP configuration. |
