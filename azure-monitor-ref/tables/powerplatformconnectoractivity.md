@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/05/2024
 ---
 
 # PowerPlatformConnectorActivity
 
-Contains Microsoft Power Platform DLP audit logs. It's typically used to track Power Platform DLP activities.
+Contains Microsoft Power Platform Connector audit logs. It's typically used to track Power Platform Connector activities.
 
 ## Categories
 
