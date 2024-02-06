@@ -951,6 +951,8 @@ items:
         href: tables/microsofthealthcareapisauditlogs.md
       - name: MicrosoftPurviewInformationProtection
         href: tables/microsoftpurviewinformationprotection.md
+      - name: NCBMBreakGlassAuditLogs
+        href: tables/ncbmbreakglassauditlogs.md
       - name: NCBMSecurityDefenderLogs
         href: tables/ncbmsecuritydefenderlogs.md
       - name: NCBMSecurityLogs
