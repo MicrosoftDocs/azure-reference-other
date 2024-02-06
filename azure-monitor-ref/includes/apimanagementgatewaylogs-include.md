@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 02/05/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ApiManagementGatewayLogs
@@ -34,7 +34,11 @@ ms.custom: ApiManagementGatewayLogs
 | CorrelationId | string |   |
 | Errors | dynamic |   |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| IsMasterTrace | bool | Indication if the request trace was created with the master subscription |
 | IsRequestSuccess | bool |   |
+| IsTraceAllowed | bool | Indication if the requested trace was allowed |
+| IsTraceExpired | bool | Indication if the requested trace has expired and is not granted |
+| IsTraceRequested | bool | Indication if the caller has requested to create a request trace |
 | LastErrorElapsed | long |   |
 | LastErrorMessage | string |   |
 | LastErrorReason | string |   |
