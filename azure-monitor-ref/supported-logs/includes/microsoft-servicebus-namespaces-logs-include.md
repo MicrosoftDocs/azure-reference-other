@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/07/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.ServiceBus/Namespaces, naam
@@ -14,6 +14,7 @@ ms.custom: Microsoft.ServiceBus/Namespaces, naam
 |Category|Category Display Name|Costs To Export|
 |---|---|---|
 |ApplicationMetricsLogs |Application Metrics Logs(Unused) |Yes |
+|DiagnosticErrorLogs |Diagnostic Error Logs |Yes |
 |OperationalLogs |Operational Logs |No |
 |RuntimeAuditLogs |Runtime Audit Logs |Yes |
 |VNetAndIPFilteringLogs |VNet/IP Filtering Connection Logs |No |
