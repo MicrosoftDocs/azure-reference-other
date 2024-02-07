@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/07/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/cassandraClusters, naam
@@ -43,7 +43,9 @@ ms.custom: Microsoft.DocumentDB/cassandraClusters, naam
 |Cassandra CommitLog|**Commit latency on waiting average (microseconds).**<p><p>Average time spent waiting on CL fsync (microseconds); for Periodic this is only occurs when the sync is lagging its sync interval. |`cassandra_commit_log_waiting_on_commit_latency_histogram` |Count |Average |`cassandra_datacenter`, `cassandra_node`, `quantile`|PT1M |No|
 |Cassandra CQL|**prepared statements executed**<p><p>Total number of prepared statements executed. |`cassandra_cql_prepared_statements_executed` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`|PT1M |No|
 |Cassandra CQL|**regular statements executed**<p><p>Total number of non prepared statements executed. |`cassandra_cql_regular_statements_executed` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`|PT1M |No|
+|Cassandra DroppedMessage|**dropped messages count**<p><p>Total count of dropped messages. |`cassandra_dropped_message_count` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`, `message_type`|PT1M |No|
 |Cassandra DroppedMessage|**cross-node dropped latency**<p><p>Average dropped latency across nodes. |`cassandra_dropped_message_cross_node_latency` |MilliSeconds |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`, `message_type`|PT1M |No|
+|Cassandra DroppedMessage|**cross-node dropped latency p99**<p><p>99th percentile of dropped latency across nodes. |`cassandra_dropped_message_cross_node_latency_p99` |MilliSeconds |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`, `message_type`|PT1M |No|
 |Cassandra DroppedMessage|**internal dropped latency**<p><p>Average dropped latency within node. |`cassandra_dropped_message_internal_latency` |MilliSeconds |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`, `message_type`|PT1M |No|
 |Cassandra DroppedMessage|**dropped messages rate**<p><p>Rate of dropped messages. |`cassandra_dropped_message_rate` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`, `message_type`|PT1M |No|
 |Cassandra HintsService|**hints failed rate**<p><p>Rate of the hints that failed deliver. |`cassandra_hints_failed_rate` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`|PT1M |No|
@@ -51,6 +53,8 @@ ms.custom: Microsoft.DocumentDB/cassandraClusters, naam
 |Cassandra HintsService|**hints timed out rate**<p><p>Rate of the hints that timed out. |`cassandra_hints_timed_out_rate` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`|PT1M |No|
 |Cassandra JVM|**jvm gc count**<p><p>Total number of collections that have occurred. |`cassandra_jvm_gc_count` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`|PT1M |No|
 |Cassandra JVM|**jvm gc time**<p><p>Approximate accumulated collection elapsed time. |`cassandra_jvm_gc_time` |MilliSeconds |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`|PT1M |No|
+|Cassandra Storage|**total hints**<p><p>Cumulative number of total hints in storage. |`cassandra_storage_total_hints_counter_total` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`|PT1M |No|
+|Cassandra Storage|**total hints in progress**<p><p>Number of total hints in progress. |`cassandra_storage_total_hints_in_progress_counter_total` |Count |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`|PT1M |No|
 |Cassandra Table|**all memtables live data size**<p><p>Total amount of live data stored in the memtables (2i and pending flush memtables included) that resides off-heap, excluding any data structure overhead. |`cassandra_table_all_memtables_live_data_size` |Bytes |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`, `table`, `keyspace`|PT1M |No|
 |Cassandra Table|**all memtables off heap size**<p><p>Total amount of data stored in the memtables (2i and pending flush memtables included) that resides off-heap. |`cassandra_table_all_memtables_off_heap_size` |Bytes |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`, `table`, `keyspace`|PT1M |No|
 |Cassandra Table|**bloom filter disk space used**<p><p>Disk space used by bloom filter (bytes). |`cassandra_table_bloom_filter_disk_space_used` |Bytes |Average, Minimum, Maximum, Count |`cassandra_datacenter`, `cassandra_node`, `table`, `keyspace`|PT1M |No|
