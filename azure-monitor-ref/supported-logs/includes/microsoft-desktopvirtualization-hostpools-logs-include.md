@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/07/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DesktopVirtualization/hostpools, naam
@@ -14,7 +14,7 @@ ms.custom: Microsoft.DesktopVirtualization/hostpools, naam
 |Category|Category Display Name|Costs To Export|
 |---|---|---|
 |AgentHealthStatus |AgentHealthStatus |No |
-|AutoscaleEvaluationPooled |Autoscale logs for pooled host pools - private preview [Microsoft internal only] |Yes |
+|AutoscaleEvaluationPooled |Autoscale logs for pooled host pools |Yes |
 |Checkpoint |Checkpoint |No |
 |Connection |Connection |No |
 |ConnectionGraphicsData |Connection Graphics Data Logs Preview |Yes |

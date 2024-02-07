@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/07/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/clusters, naam
@@ -95,7 +95,7 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 |Pod|**Pod Init Container Waiting**<p><p>The number of pod init containers waiting |`KubePodInitContainerStatusWaiting` |Count |Average |`Namespace`, `Container`, `Pod`|PT1M |No|
 |Pod|**Pod Init Container Waiting Reason**<p><p>The reason the pod init container is waiting |`KubePodInitContainerStatusWaitingReason` |Count |Average |`Namespace`, `Container`, `Pod`, `Reason`|PT1M |No|
 |Pod|**Pod Status Phase**<p><p>The pod status phase |`KubePodStatusPhase` |Count |Average |`Namespace`, `Pod`, `Phase`|PT1M |No|
-|Pod|**Pod Ready State**<p><p>Signifies if the pod is in ready state |`KubePodStatusReady` |Count |Average |`Namespace`, `Pod`|PT1M |No|
+|Pod|**Pod Ready State**<p><p>Signifies if the pod is in ready state |`KubePodStatusReady` |Count |Average |`Namespace`, `Pod`, `Condition`|PT1M |No|
 |Pod|**Pod Status Reason**<p><p>NodeAffinity |`KubePodStatusReason` |Count |Average |`Namespace`, `Pod`, `Reason`|PT1M |No|
 |Statefulset|**Statefulset Desired Replicas Number**<p><p>The desired number of statefulset replicas |`KubeStatefulsetReplicas` |Count |Average |`Namespace`, `Statefulset`|PT1M |No|
 |Statefulset|**Statefulset Replicas Number**<p><p>The number of replicas per statefulset |`KubeStatefulsetStatusReplicas` |Count |Average |`Namespace`, `Statefulset`|PT1M |No|

@@ -1,12 +1,12 @@
 ---
-title: Supported metrics - Microsoft.Compute/virtualMachineScaleSets/virtualMachines
-description: Reference for Microsoft.Compute/virtualMachineScaleSets/virtualMachines metrics in Azure Monitor.
+title: Supported metrics - Oracle.Database/cloudVmClusters
+description: Reference for Oracle.Database/cloudVmClusters metrics in Azure Monitor.
 ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
 ms.date: 02/07/2024
-ms.custom: Microsoft.Compute/virtualMachineScaleSets/virtualMachines, naam
+ms.custom: Oracle.Database/cloudVmClusters, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -15,10 +15,10 @@ ms.custom: Microsoft.Compute/virtualMachineScaleSets/virtualMachines, naam
 
 
 
-# Supported metrics for Microsoft.Compute/virtualMachineScaleSets/virtualMachines
+# Supported metrics for Oracle.Database/cloudVmClusters
 
 
-The following table lists the metrics available for the Microsoft.Compute/virtualMachineScaleSets/virtualMachines resource type.
+The following table lists the metrics available for the Oracle.Database/cloudVmClusters resource type.
 
   
     
@@ -36,4 +36,4 @@ For information on metric retention, see [Azure Monitor Metrics overview](/azure
   
  
 
-[!INCLUDE[Microsoft.Compute/virtualMachineScaleSets/virtualMachines](./includes/microsoft-compute-virtualmachinescalesets-virtualmachines-metrics-include.md)]
+[!INCLUDE[Oracle.Database/cloudVmClusters](./includes/oracle-database-cloudvmclusters-metrics-include.md)]

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/07/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
@@ -62,7 +62,7 @@ ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 |Requests|**Materialized Views Builder Average CPU Usage**<p><p>Average CPU usage across materialized view builder instances, which are used for populating data in materialized views |`MaterializedViewsBuilderAverageCPUUsage` |Percent |Average |`Region`, `MetricType`|PT5M |No|
 |Requests|**Materialized Views Builder Average Memory Usage**<p><p>Average memory usage across materialized view builder instances, which are used for populating data in materialized views |`MaterializedViewsBuilderAverageMemoryUsage` |Bytes |Average |`Region`|PT5M |No|
 |Requests|**Materialized Views Builder Maximum CPU Usage**<p><p>Average Maximum CPU usage across materialized view builder instances, which are used for populating data in materialized views |`MaterializedViewsBuilderMaximumCPUUsage` |Percent |Average, Maximum |`Region`, `MetricType`|PT5M |No|
-|Requests|**Metadata Requests**<p><p>Count of metadata requests. Cosmos DB maintains system metadata collection for each account, that allows you to enumerate collections, databases, etc, and their configurations, free of charge. |`MetadataRequests` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `Role`, `IsExternal`|PT1M |No|
+|Requests|**Metadata Requests**<p><p>Count of metadata requests. Cosmos DB maintains system metadata collection for each account, that allows you to enumerate collections, databases, etc, and their configurations, free of charge. |`MetadataRequests` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `Role`|PT1M |No|
 |Requests|**Mongo Collection Created**<p><p>Mongo Collection Created |`MongoCollectionCreate` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
 |Requests|**Mongo Collection Deleted**<p><p>Mongo Collection Deleted |`MongoCollectionDelete` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
 |Requests|**Mongo Collection Throughput Updated**<p><p>Mongo Collection Throughput Updated |`MongoCollectionThroughputUpdate` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|
@@ -99,9 +99,9 @@ ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 |Requests|**AzureTable Table Deleted**<p><p>AzureTable Table Deleted |`TableTableDelete` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
 |Requests|**AzureTable Table Throughput Updated**<p><p>AzureTable Table Throughput Updated |`TableTableThroughputUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|
 |Requests|**AzureTable Table Updated**<p><p>AzureTable Table Updated |`TableTableUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
-|Requests|**Total Requests**<p><p>Number of requests made |`TotalRequests` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `CapacityType`|PT1M |Yes|
+|Requests|**Total Requests**<p><p>Number of requests made |`TotalRequests` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `CapacityType`, `PriorityLevel`, `ConnectionMode`, `IsExternal`|PT1M |No|
 |Requests|**Total Requests (Preview)**<p><p>Number of SQL requests |`TotalRequestsPreview` |Count |Count |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `PriorityLevel`, `IsExternal`|PT1M |No|
-|Requests|**Total Request Units**<p><p>SQL Request Units consumed |`TotalRequestUnits` |Count |Total, Average, Maximum |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `CapacityType`|PT1M |Yes|
+|Requests|**Total Request Units**<p><p>SQL Request Units consumed |`TotalRequestUnits` |Count |Total, Average, Maximum |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `CapacityType`, `PriorityLevel`|PT1M |Yes|
 |Requests|**Total Request Units (Preview)**<p><p>Request Units consumed with CapacityType |`TotalRequestUnitsPreview` |Count |Total, Average, Maximum |`DatabaseName`, `CollectionName`, `Region`, `StatusCode`, `OperationType`, `Status`, `CapacityType`, `PriorityLevel`|PT1M |No|
 |Requests|**Account Keys Updated**<p><p>Account Keys Updated |`UpdateAccountKeys` |Count |Count |`KeyType`|PT5M |Yes|
 |Requests|**Account Network Settings Updated**<p><p>Account Network Settings Updated |`UpdateAccountNetworkSettings` |Count |Count |\<none\>|PT5M |Yes|
