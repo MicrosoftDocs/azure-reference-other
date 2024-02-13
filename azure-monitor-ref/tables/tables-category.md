@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 01/29/2024
+ms.date: 02/13/2024
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -408,6 +408,7 @@ ms.date: 01/29/2024
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
+- [NCBMBreakGlassAuditLogs](ncbmbreakglassauditlogs.md)
 - [NCBMSecurityDefenderLogs](ncbmsecuritydefenderlogs.md)
 - [NCBMSecurityLogs](ncbmsecuritylogs.md)
 - [NCBMSystemLogs](ncbmsystemlogs.md)
@@ -716,6 +717,7 @@ ms.date: 01/29/2024
 - [McasShadowItReporting](mcasshadowitreporting.md)
 - [MicrosoftGraphActivityLogs](microsoftgraphactivitylogs.md)
 - [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
+- [NCBMBreakGlassAuditLogs](ncbmbreakglassauditlogs.md)
 - [NCBMSecurityDefenderLogs](ncbmsecuritydefenderlogs.md)
 - [NCBMSecurityLogs](ncbmsecuritylogs.md)
 - [NSPAccessLogs](nspaccesslogs.md)
