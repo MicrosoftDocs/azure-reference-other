@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/07/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Communication/CommunicationServices, naam
@@ -18,6 +18,7 @@ ms.custom: Microsoft.Communication/CommunicationServices, naam
 |CallAutomationOperational |Operational Call Automation Logs |Yes |
 |CallClientMediaStatsTimeSeries |Call Client Media Stats Time Series Logs (Preview) |Yes |
 |CallClientOperations |Call Client Operations Logs |Yes |
+|CallClosedCaptionsSummary |Call Closed Captions Logs |Yes |
 |CallDiagnostics |Call Diagnostics Logs |Yes |
 |CallRecordingOperational |Operational Call Recording Logs |Yes |
 |CallRecordingSummary |Call Recording Summary Logs |Yes |

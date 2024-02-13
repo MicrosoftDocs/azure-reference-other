@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 02/13/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Alert
@@ -14,12 +14,12 @@ ms.custom: Alert
 | AlertDescription | string | Detailed description of the alert. |
 | AlertError | string |   |
 | AlertId | string | GUID of the alert. |
-| AlertName | string | Name of the alert. |
-| AlertPriority | string | Priority level of the alert. |
+| AlertName | string |   |
+| AlertPriority | string |   |
 | AlertRuleId | string |   |
 | AlertRuleInstanceId | string |   |
 | AlertSeverity | string | Severity level of the alert. |
-| AlertState | string | Latest resolution state of the alert. |
+| AlertState | string |   |
 | AlertStatus | int |   |
 | AlertTypeDescription | string |   |
 | AlertTypeNumber | int |   |
@@ -73,8 +73,8 @@ ms.custom: Alert
 | ThresholdOperator | string |   |
 | ThresholdValue | int |   |
 | TicketId | string | Ticket ID for the alert if the System Center Operations Manager environment is integrated with a process for assigning tickets for alerts. Empty of no ticket ID is assigned. |
-| TimeGenerated | datetime | Date and time the record was created. |
-| TimeLastModified | datetime | Date and time that the alert was last changed. |
+| TimeGenerated | datetime |   |
+| TimeLastModified | datetime |   |
 | TimeRaised | datetime | Date and time that the alert was generated. |
 | TimeResolved | datetime | Date and time that the alert was resolved. Empty if the alert has not yet been resolved. |
 | TriggerId | string |   |

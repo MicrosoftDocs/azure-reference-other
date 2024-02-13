@@ -142,6 +142,8 @@ items:
     href: ../supported-logs/microsoft-documentdb-mongoclusters-logs.md
   - name: Microsoft.EventGrid/domains
     href: ../supported-logs/microsoft-eventgrid-domains-logs.md
+  - name: Microsoft.EventGrid/namespaces
+    href: ../supported-logs/microsoft-eventgrid-namespaces-logs.md
   - name: Microsoft.EventGrid/partnerNamespaces
     href: ../supported-logs/microsoft-eventgrid-partnernamespaces-logs.md
   - name: Microsoft.EventGrid/partnerTopics
