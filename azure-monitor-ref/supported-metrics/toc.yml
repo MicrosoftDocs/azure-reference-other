@@ -146,6 +146,8 @@ items:
     href: ../supported-metrics/microsoft-devices-iothubs-metrics.md
   - name: Microsoft.Devices/provisioningServices
     href: ../supported-metrics/microsoft-devices-provisioningservices-metrics.md
+  - name: Microsoft.DevOpsInfrastructure/pools
+    href: ../supported-metrics/microsoft-devopsinfrastructure-pools-metrics.md
   - name: Microsoft.DigitalTwins/digitalTwinsInstances
     href: ../supported-metrics/microsoft-digitaltwins-digitaltwinsinstances-metrics.md
   - name: Microsoft.DocumentDB/cassandraClusters
@@ -156,6 +158,8 @@ items:
     href: ../supported-metrics/microsoft-documentdb-mongoclusters-metrics.md
   - name: microsoft.edgezones/edgezones
     href: ../supported-metrics/microsoft-edgezones-edgezones-metrics.md
+  - name: Microsoft.ElasticSan/elasticSans
+    href: ../supported-metrics/microsoft-elasticsan-elasticsans-metrics.md
   - name: Microsoft.EventGrid/domains
     href: ../supported-metrics/microsoft-eventgrid-domains-metrics.md
   - name: Microsoft.EventGrid/eventSubscriptions
@@ -438,6 +442,8 @@ items:
     href: ../supported-metrics/microsoft-web-staticsites-metrics.md
   - name: NGINX.NGINXPLUS/nginxDeployments
     href: ../supported-metrics/nginx-nginxplus-nginxdeployments-metrics.md
+  - name: Oracle.Database/cloudVmClusters
+    href: ../supported-metrics/oracle-database-cloudvmclusters-metrics.md
   - name: Wandisco.Fusion/migrators
     href: ../supported-metrics/wandisco-fusion-migrators-metrics.md
   - name: Wandisco.Fusion/migrators/dataTransferAgents
