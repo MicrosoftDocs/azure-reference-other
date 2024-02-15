@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/28/2023
+ms.date: 02/13/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: IdentityInfo
@@ -52,6 +52,7 @@ ms.custom: IdentityInfo
 | RiskLevel | string | The AAD risk level (Low/Medium/High) of the user account |
 | RiskLevelDetails | string | Details regarding the AAD risk level |
 | RiskState | string | Indication if the account is at risk now or if the risk was remediated |
+| SAMAccountName | string | The SAM account name of the account. |
 | ServicePrincipals | dynamic | Azure AD service principals that are owned by the user |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | State | string | The geographical state of the user account as defined in AAD |

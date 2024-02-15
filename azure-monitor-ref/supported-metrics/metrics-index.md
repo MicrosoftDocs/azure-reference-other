@@ -6,7 +6,7 @@ services: azure-monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.custom: ignite-2022
-ms.date: 01/10/2024
+ms.date: 02/07/2024
 ms.author: edbaynash
 ms.reviewer: priyamishra
 ---
@@ -16,7 +16,7 @@ ms.reviewer: priyamishra
 > [!NOTE]
 > This list is largely auto-generated. Any modification made to this list via GitHub might be written over without warning. Contact the author of this article for details on how to make permanent updates.
 
-Last updated: 01/10/2024.
+Last updated: 02/07/2024.
 
 Azure Monitor provides several ways to interact with metrics, including charting them in the Azure portal, accessing them through the REST API, or querying them by using PowerShell or the Azure CLI (Command Line Interface).  
 
@@ -111,7 +111,7 @@ Following table lists log categories and metrics available for each resource typ
 |Microsoft.Devices <a name="microsoftdevices"></a>|[IotHubs](../supported-logs/Microsoft-Devices-IotHubs-logs.md)<p>[provisioningServices](../supported-logs/Microsoft-Devices-provisioningServices-logs.md)<p>|[IotHubs](../supported-metrics/Microsoft-Devices-IotHubs-metrics.md)<p>[provisioningServices](../supported-metrics/Microsoft-Devices-provisioningServices-metrics.md)<p>|
 |Microsoft.DigitalTwins <a name="microsoftdigitaltwins"></a>|[digitalTwinsInstances](../supported-logs/Microsoft-DigitalTwins-digitalTwinsInstances-logs.md)<p>|[digitalTwinsInstances](../supported-metrics/Microsoft-DigitalTwins-digitalTwinsInstances-metrics.md)<p>|
 |Microsoft.DocumentDB <a name="microsoftdocumentdb"></a>|[cassandraClusters](../supported-logs/Microsoft-DocumentDB-cassandraClusters-logs.md)<p>[DatabaseAccounts](../supported-logs/Microsoft-DocumentDB-DatabaseAccounts-logs.md)<p>[mongoClusters](../supported-logs/Microsoft-DocumentDB-mongoClusters-logs.md)<p>|[cassandraClusters](../supported-metrics/Microsoft-DocumentDB-cassandraClusters-metrics.md)<p>[DatabaseAccounts](../supported-metrics/Microsoft-DocumentDB-DatabaseAccounts-metrics.md)<p>[mongoClusters](../supported-metrics/Microsoft-DocumentDB-mongoClusters-metrics.md)<p>|
-|Microsoft.EventGrid <a name="microsofteventgrid"></a>|[domains](../supported-logs/Microsoft-EventGrid-domains-logs.md)<p>[partnerNamespaces](../supported-logs/Microsoft-EventGrid-partnerNamespaces-logs.md)<p>[partnerTopics](../supported-logs/Microsoft-EventGrid-partnerTopics-logs.md)<p>[systemTopics](../supported-logs/Microsoft-EventGrid-systemTopics-logs.md)<p>[topics](../supported-logs/Microsoft-EventGrid-topics-logs.md)<p>|[domains](../supported-metrics/Microsoft-EventGrid-domains-metrics.md)<p>[eventSubscriptions](../supported-metrics/Microsoft-EventGrid-eventSubscriptions-metrics.md)<p>[extensionTopics](../supported-metrics/Microsoft-EventGrid-extensionTopics-metrics.md)<p>[namespaces](../supported-metrics/Microsoft-EventGrid-namespaces-metrics.md)<p>[partnerNamespaces](../supported-metrics/Microsoft-EventGrid-partnerNamespaces-metrics.md)<p>[partnerTopics](../supported-metrics/Microsoft-EventGrid-partnerTopics-metrics.md)<p>[systemTopics](../supported-metrics/Microsoft-EventGrid-systemTopics-metrics.md)<p>[topics](../supported-metrics/Microsoft-EventGrid-topics-metrics.md)<p>|
+|Microsoft.EventGrid <a name="microsofteventgrid"></a>|[domains](../supported-logs/Microsoft-EventGrid-domains-logs.md)<p>[namespaces](../supported-logs/Microsoft-EventGrid-namespaces-logs.md)<p>[partnerNamespaces](../supported-logs/Microsoft-EventGrid-partnerNamespaces-logs.md)<p>[partnerTopics](../supported-logs/Microsoft-EventGrid-partnerTopics-logs.md)<p>[systemTopics](../supported-logs/Microsoft-EventGrid-systemTopics-logs.md)<p>[topics](../supported-logs/Microsoft-EventGrid-topics-logs.md)<p>|[domains](../supported-metrics/Microsoft-EventGrid-domains-metrics.md)<p>[eventSubscriptions](../supported-metrics/Microsoft-EventGrid-eventSubscriptions-metrics.md)<p>[extensionTopics](../supported-metrics/Microsoft-EventGrid-extensionTopics-metrics.md)<p>[namespaces](../supported-metrics/Microsoft-EventGrid-namespaces-metrics.md)<p>[partnerNamespaces](../supported-metrics/Microsoft-EventGrid-partnerNamespaces-metrics.md)<p>[partnerTopics](../supported-metrics/Microsoft-EventGrid-partnerTopics-metrics.md)<p>[systemTopics](../supported-metrics/Microsoft-EventGrid-systemTopics-metrics.md)<p>[topics](../supported-metrics/Microsoft-EventGrid-topics-metrics.md)<p>|
 |Microsoft.EventHub <a name="microsofteventhub"></a>|[Namespaces](../supported-logs/Microsoft-EventHub-Namespaces-logs.md)<p>|[clusters](../supported-metrics/Microsoft-EventHub-clusters-metrics.md)<p>[Namespaces](../supported-metrics/Microsoft-EventHub-Namespaces-metrics.md)<p>|
 |Microsoft.HealthcareApis <a name="microsofthealthcareapis"></a>|[services](../supported-logs/Microsoft-HealthcareApis-services-logs.md)<p>[workspaces/dicomservices](../supported-logs/Microsoft-HealthcareApis-workspaces-dicomservices-logs.md)<p>[workspaces/fhirservices](../supported-logs/Microsoft-HealthcareApis-workspaces-fhirservices-logs.md)<p>[workspaces/iotconnectors](../supported-logs/Microsoft-HealthcareApis-workspaces-iotconnectors-logs.md)<p>|[services](../supported-metrics/Microsoft-HealthcareApis-services-metrics.md)<p>[workspaces/dicomservices](../supported-metrics/Microsoft-HealthcareApis-workspaces-dicomservices-metrics.md)<p>[workspaces/fhirservices](../supported-metrics/Microsoft-HealthcareApis-workspaces-fhirservices-metrics.md)<p>[workspaces/iotconnectors](../supported-metrics/Microsoft-HealthcareApis-workspaces-iotconnectors-metrics.md)<p>|
 |microsoft.insights <a name="microsoftinsights"></a>|[autoscalesettings](../supported-logs/microsoft-insights-autoscalesettings-logs.md)<p>[components](../supported-logs/microsoft-insights-components-logs.md)<p>|[autoscalesettings](../supported-metrics/microsoft-insights-autoscalesettings-metrics.md)<p>[components](../supported-metrics/microsoft-insights-components-metrics.md)<p>|
@@ -167,7 +167,9 @@ Following table lists log categories and metrics available for each resource typ
 |Microsoft.ClusterStor <a name="microsoftclusterstor"></a>|N/A|[nodes](../supported-metrics/Microsoft-ClusterStor-nodes-metrics.md)<p>|
 |microsoft.compute <a name="microsoftcompute"></a>|N/A|[disks](../supported-metrics/microsoft-compute-disks-metrics.md)<p>|
 |Microsoft.DataBoxEdge <a name="microsoftdataboxedge"></a>|N/A|[dataBoxEdgeDevices](../supported-metrics/Microsoft-DataBoxEdge-dataBoxEdgeDevices-metrics.md)<p>|
+|Microsoft.DevOpsInfrastructure <a name="microsoftdevopsinfrastructure"></a>|N/A|[pools](../supported-metrics/Microsoft-DevOpsInfrastructure-pools-metrics.md)<p>|
 |microsoft.edgezones <a name="microsoftedgezones"></a>|N/A|[edgezones](../supported-metrics/microsoft-edgezones-edgezones-metrics.md)<p>|
+|Microsoft.ElasticSan <a name="microsoftelasticsan"></a>|N/A|[elasticSans](../supported-metrics/Microsoft-ElasticSan-elasticSans-metrics.md)<p>|
 |Microsoft.HDInsight <a name="microsofthdinsight"></a>|N/A|[clusters](../supported-metrics/Microsoft-HDInsight-clusters-metrics.md)<p>|
 |Microsoft.HealthModel <a name="microsofthealthmodel"></a>|N/A|[healthmodels](../supported-metrics/Microsoft-HealthModel-healthmodels-metrics.md)<p>|
 |Microsoft. <br>HybridContainerService <a name="microsofthybridcontainerservice"></a>|N/A|[provisionedClusters](../supported-metrics/Microsoft-HybridContainerService-provisionedClusters-metrics.md)<p>|
@@ -188,6 +190,7 @@ Following table lists log categories and metrics available for each resource typ
 |Microsoft.StorageSync <a name="microsoftstoragesync"></a>|N/A|[storageSyncServices](../supported-metrics/Microsoft-StorageSync-storageSyncServices-metrics.md)<p>|
 |Microsoft.StorageTasks <a name="microsoftstoragetasks"></a>|N/A|[storageTasks](../supported-metrics/Microsoft-StorageTasks-storageTasks-metrics.md)<p>|
 |Microsoft.VoiceServices <a name="microsoftvoiceservices"></a>|N/A|[CommunicationsGateways](../supported-metrics/Microsoft-VoiceServices-CommunicationsGateways-metrics.md)<p>|
+|Oracle.Database <a name="oracledatabase"></a>|N/A|[Oracle.Database/cloudVmClusters](../supported-metrics/Oracle-Database-cloudVmClusters-metrics.md)<p>|
 |Wandisco.Fusion <a name="wandiscofusion"></a>|N/A|[Wandisco.Fusion/migrators](../supported-metrics/Wandisco-Fusion-migrators-metrics.md)<p>[Wandisco.Fusion/migrators/dataTransferAgents](../supported-metrics/Wandisco-Fusion-migrators-dataTransferAgents-metrics.md)<p>[Wandisco.Fusion/migrators/liveDataMigrations](../supported-metrics/Wandisco-Fusion-migrators-liveDataMigrations-metrics.md)<p>[Wandisco.Fusion/migrators/metadataMigrations](../supported-metrics/Wandisco-Fusion-migrators-metadataMigrations-metrics.md)<p>|
 
 
