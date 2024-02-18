@@ -6,24 +6,28 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/23/2023
+ms.date: 02/18/2024
 ---
 
 # AADCustomSecurityAttributeAuditLogs
 
 Non-interactive Azure Active Directory sign-in logs from user.
 
+
 ## Categories
 
 - Audit
 - Security
+
 ## Solutions
 
 - LogManagement
 
-            
+## Queries
+
+ Sample queries for the [AADCustomSecurityAttributeAuditLogs](../queries/aadcustomsecurityattributeauditlogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [aadcustomsecurityattributeauditlogs](../includes/aadcustomsecurityattributeauditlogs-include.md)]
+[!INCLUDE [aadcustomsecurityattributeauditlogs](.././tables/includes/aadcustomsecurityattributeauditlogs-include.md)]

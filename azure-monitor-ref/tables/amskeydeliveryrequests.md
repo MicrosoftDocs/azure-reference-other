@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AMSKeyDeliveryRequests
 
 Key delivery requests logs from Azure Media Services. This table captures details for every HTTP request for key or license acquisition sent to Azure Media Services. It can be used to monitor encrypted content playback, and to diagnose issues with DRM license acquisition or Clear Key acquisition.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Media Services
 
-            
+## Queries
+
+ Sample queries for the [AMSKeyDeliveryRequests](../queries/amskeydeliveryrequests.md) table.
 
 
 ## Columns
   
-[!INCLUDE [amskeydeliveryrequests](../includes/amskeydeliveryrequests-include.md)]
+[!INCLUDE [amskeydeliveryrequests](.././tables/includes/amskeydeliveryrequests-include.md)]

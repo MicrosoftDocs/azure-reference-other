@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AWSCloudTrail
 
 CloudTrail logs, which ingested from Sentinel's connector, holds all your data and management events of your Amazon Wev Services account.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [AWSCloudTrail](../queries/awscloudtrail.md) table.
 
 
 ## Columns
   
-[!INCLUDE [awscloudtrail](../includes/awscloudtrail-include.md)]
+[!INCLUDE [awscloudtrail](.././tables/includes/awscloudtrail-include.md)]

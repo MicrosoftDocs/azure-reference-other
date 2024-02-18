@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # UASysReqIssue
 
 
 
+
 ## Categories
 
 - Desktop Analytics
+
 ## Solutions
 
 - CompatibilityAssessment
 
-            
-
-
 ## Columns
   
-[!INCLUDE [uasysreqissue](../includes/uasysreqissue-include.md)]
+[!INCLUDE [uasysreqissue](.././tables/includes/uasysreqissue-include.md)]

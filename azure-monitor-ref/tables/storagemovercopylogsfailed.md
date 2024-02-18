@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # StorageMoverCopyLogsFailed
 
 The result logs generated during the execution of Storage Mover job runs where the transfer result is 'Failed'. The logs include the details of the scanned items and their transfer result.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Storage Mover
 
-            
-
-
 ## Columns
   
-[!INCLUDE [storagemovercopylogsfailed](../includes/storagemovercopylogsfailed-include.md)]
+[!INCLUDE [storagemovercopylogsfailed](.././tables/includes/storagemovercopylogsfailed-include.md)]

@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksWebTerminal
 
 Databricks web terminal audit logs.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Databricks Services
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databrickswebterminal](../includes/databrickswebterminal-include.md)]
+[!INCLUDE [databrickswebterminal](.././tables/includes/databrickswebterminal-include.md)]

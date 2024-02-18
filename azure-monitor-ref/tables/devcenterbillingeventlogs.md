@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/23/2023
+ms.date: 02/18/2024
 ---
 
 # DevCenterBillingEventLogs
 
 Billing event related to DevCenter resources. Logs contains information about the quantity and unit charged per meter.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Dev Centers
 
-            
-
-
 ## Columns
   
-[!INCLUDE [devcenterbillingeventlogs](../includes/devcenterbillingeventlogs-include.md)]
+[!INCLUDE [devcenterbillingeventlogs](.././tables/includes/devcenterbillingeventlogs-include.md)]

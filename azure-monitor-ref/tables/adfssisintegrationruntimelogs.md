@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADFSSISIntegrationRuntimeLogs
 
 ADF SSIS integration runtime logs
 
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Data factories
 
-            
-
-
 ## Columns
   
-[!INCLUDE [adfssisintegrationruntimelogs](../includes/adfssisintegrationruntimelogs-include.md)]
+[!INCLUDE [adfssisintegrationruntimelogs](.././tables/includes/adfssisintegrationruntimelogs-include.md)]

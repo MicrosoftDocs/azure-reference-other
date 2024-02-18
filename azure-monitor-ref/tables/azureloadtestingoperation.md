@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AzureLoadTestingOperation
 
 Details about the operations which are performed on the Azure Load Testing resource. For example, operations like creation of a Test, Test run etc.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Load Testing
 
-            
+## Queries
+
+ Sample queries for the [AzureLoadTestingOperation](../queries/azureloadtestingoperation.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azureloadtestingoperation](../includes/azureloadtestingoperation-include.md)]
+[!INCLUDE [azureloadtestingoperation](.././tables/includes/azureloadtestingoperation-include.md)]

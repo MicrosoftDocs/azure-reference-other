@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AUIEventsOperational
 
 Events generated using the service, for example GET requests or the execution events of a workflow.
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [auieventsoperational](../includes/auieventsoperational-include.md)]
+[!INCLUDE [auieventsoperational](.././tables/includes/auieventsoperational-include.md)]

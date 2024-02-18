@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AHDSDicomAuditLogs
 
 Data plane audit logs of privileged actions made against Azure Health Data DICOM service. For example, storing a DICOM instance.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Health Data Services
 
-            
+## Queries
+
+ Sample queries for the [AHDSDicomAuditLogs](../queries/ahdsdicomauditlogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [ahdsdicomauditlogs](../includes/ahdsdicomauditlogs-include.md)]
+[!INCLUDE [ahdsdicomauditlogs](.././tables/includes/ahdsdicomauditlogs-include.md)]

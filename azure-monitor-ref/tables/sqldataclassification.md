@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SqlDataClassification
+
 
 
 
@@ -17,9 +18,6 @@ ms.date: 08/28/2023
 
 - SQLDataClassification
 
-            
-
-
 ## Columns
   
-[!INCLUDE [sqldataclassification](../includes/sqldataclassification-include.md)]
+[!INCLUDE [sqldataclassification](.././tables/includes/sqldataclassification-include.md)]

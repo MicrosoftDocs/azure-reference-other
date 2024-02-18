@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AACAudit
 
 Azure App Configuration audit logs.
 
+
 ## Categories
 
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Microsoft App Configuration
 
-            
+## Queries
+
+ Sample queries for the [AACAudit](../queries/aacaudit.md) table.
 
 
 ## Columns
   
-[!INCLUDE [aacaudit](../includes/aacaudit-include.md)]
+[!INCLUDE [aacaudit](.././tables/includes/aacaudit-include.md)]

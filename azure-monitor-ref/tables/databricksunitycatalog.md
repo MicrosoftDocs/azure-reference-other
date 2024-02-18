@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksUnityCatalog
 
 Databricks unity catalog audit logs.
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databricksunitycatalog](../includes/databricksunitycatalog-include.md)]
+[!INCLUDE [databricksunitycatalog](.././tables/includes/databricksunitycatalog-include.md)]

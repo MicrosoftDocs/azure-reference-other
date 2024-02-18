@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # KubeHealth
+
 
 
 
@@ -18,9 +19,6 @@ ms.date: 12/18/2023
 - AzureResources
 - ContainerInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [kubehealth](../includes/kubehealth-include.md)]
+[!INCLUDE [kubehealth](.././tables/includes/kubehealth-include.md)]

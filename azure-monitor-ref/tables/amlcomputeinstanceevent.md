@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlComputeInstanceEvent
 
 Events when ML Compute Instance is accessed (read/write).
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
-
-
 ## Columns
   
-[!INCLUDE [amlcomputeinstanceevent](../includes/amlcomputeinstanceevent-include.md)]
+[!INCLUDE [amlcomputeinstanceevent](.././tables/includes/amlcomputeinstanceevent-include.md)]

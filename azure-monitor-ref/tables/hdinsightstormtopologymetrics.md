@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # HDInsightStormTopologyMetrics
 
 Topology Level Metrics from Storm clusters.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - HDInsight Clusters
 
-            
-
-
 ## Columns
   
-[!INCLUDE [hdinsightstormtopologymetrics](../includes/hdinsightstormtopologymetrics-include.md)]
+[!INCLUDE [hdinsightstormtopologymetrics](.././tables/includes/hdinsightstormtopologymetrics-include.md)]

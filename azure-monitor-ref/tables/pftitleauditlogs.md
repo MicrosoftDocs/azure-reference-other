@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # PFTitleAuditLogs
 
 Provides audit logs for various types of action performed on Azure PlayFab Title.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure PlayFab
 
-            
-
-
 ## Columns
   
-[!INCLUDE [pftitleauditlogs](../includes/pftitleauditlogs-include.md)]
+[!INCLUDE [pftitleauditlogs](.././tables/includes/pftitleauditlogs-include.md)]

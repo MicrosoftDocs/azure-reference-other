@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # HDInsightHiveAndLLAPLogs
 
 All logs from HDInsight Hive and LLAP Clusters.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - HDInsight Clusters
 
-            
-
-
 ## Columns
   
-[!INCLUDE [hdinsighthiveandllaplogs](../includes/hdinsighthiveandllaplogs-include.md)]
+[!INCLUDE [hdinsighthiveandllaplogs](.././tables/includes/hdinsighthiveandllaplogs-include.md)]

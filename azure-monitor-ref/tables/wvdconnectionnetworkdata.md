@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WVDConnectionNetworkData
 
 Windows Virtual Desktop connection network data.
 
+
 ## Categories
 
 - Azure Virtual Desktop
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Desktop Virtualization Host Pools
 
-            
+## Queries
+
+ Sample queries for the [WVDConnectionNetworkData](../queries/wvdconnectionnetworkdata.md) table.
 
 
 ## Columns
   
-[!INCLUDE [wvdconnectionnetworkdata](../includes/wvdconnectionnetworkdata-include.md)]
+[!INCLUDE [wvdconnectionnetworkdata](.././tables/includes/wvdconnectionnetworkdata-include.md)]

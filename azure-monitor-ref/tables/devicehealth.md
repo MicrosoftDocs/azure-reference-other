@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceHealth
 
 
 
+
 ## Categories
 
 - Workloads
+
 ## Solutions
 
 - SurfaceHub
 
-            
+## Queries
+
+ Sample queries for the [DeviceHealth](../queries/devicehealth.md) table.
 
 
 ## Columns
   
-[!INCLUDE [devicehealth](../includes/devicehealth-include.md)]
+[!INCLUDE [devicehealth](.././tables/includes/devicehealth-include.md)]

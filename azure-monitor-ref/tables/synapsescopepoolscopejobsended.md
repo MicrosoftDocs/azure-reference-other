@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SynapseScopePoolScopeJobsEnded
 
 SCOPE ended event including SCOPE job result and Information about the job.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Synapse Workspaces
 
-            
-
-
 ## Columns
   
-[!INCLUDE [synapsescopepoolscopejobsended](../includes/synapsescopepoolscopejobsended-include.md)]
+[!INCLUDE [synapsescopepoolscopejobsended](.././tables/includes/synapsescopepoolscopejobsended-include.md)]

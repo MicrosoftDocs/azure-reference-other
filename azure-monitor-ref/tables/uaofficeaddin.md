@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # UAOfficeAddIn
 
 
 
+
 ## Categories
 
 - Desktop Analytics
+
 ## Solutions
 
 - CompatibilityAssessment
 
-            
-
-
 ## Columns
   
-[!INCLUDE [uaofficeaddin](../includes/uaofficeaddin-include.md)]
+[!INCLUDE [uaofficeaddin](.././tables/includes/uaofficeaddin-include.md)]

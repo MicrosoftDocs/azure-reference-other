@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADFSSISPackageEventMessageContext
 
 ADF SSIS package execution event message context
 
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Data factories
 
-            
-
-
 ## Columns
   
-[!INCLUDE [adfssispackageeventmessagecontext](../includes/adfssispackageeventmessagecontext-include.md)]
+[!INCLUDE [adfssispackageeventmessagecontext](.././tables/includes/adfssispackageeventmessagecontext-include.md)]

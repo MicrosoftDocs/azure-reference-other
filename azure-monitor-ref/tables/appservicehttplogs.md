@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppServiceHTTPLogs
 
 Incoming HTTP requests on App Service. Use these logs to monitor application health, performance and usage patterns.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - App Services
 
-            
+## Queries
+
+ Sample queries for the [AppServiceHTTPLogs](../queries/appservicehttplogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appservicehttplogs](../includes/appservicehttplogs-include.md)]
+[!INCLUDE [appservicehttplogs](.././tables/includes/appservicehttplogs-include.md)]

@@ -6,18 +6,20 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # InsightsMetrics
 
 Table that stores metrics. 'Perf' table also stores many metrics and over time they all will converge to InsightsMetrics for Azure Monitor Solutions 
 
+
 ## Categories
 
 - Virtual Machines
 - Containers
 - Azure Resources
+
 ## Solutions
 
 - AzureResources
@@ -26,6 +28,7 @@ Table that stores metrics. 'Perf' table also stores many metrics and over time t
 - LogManagement
 - ServiceMap
 - VMInsights
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
@@ -39,9 +42,11 @@ Table that stores metrics. 'Perf' table also stores many metrics and over time t
 - Azure Arc Provisioned Clusters
 - IoT Hub
 
-            
+## Queries
+
+ Sample queries for the [InsightsMetrics](../queries/insightsmetrics.md) table.
 
 
 ## Columns
   
-[!INCLUDE [insightsmetrics](../includes/insightsmetrics-include.md)]
+[!INCLUDE [insightsmetrics](.././tables/includes/insightsmetrics-include.md)]

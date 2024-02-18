@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DHWipAppLearning
 
 
 
+
 ## Categories
 
 - Desktop Analytics
+
 ## Solutions
 
 - DeviceHealthProd
 
-            
-
-
 ## Columns
   
-[!INCLUDE [dhwipapplearning](../includes/dhwipapplearning-include.md)]
+[!INCLUDE [dhwipapplearning](.././tables/includes/dhwipapplearning-include.md)]

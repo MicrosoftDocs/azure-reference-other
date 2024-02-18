@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/30/2023
+ms.date: 02/18/2024
 ---
 
 # AppServiceAuthenticationLogs
 
 Logs generated through App Service Authentication for your application.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - App Services
 
-            
+## Queries
+
+ Sample queries for the [AppServiceAuthenticationLogs](../queries/appserviceauthenticationlogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appserviceauthenticationlogs](../includes/appserviceauthenticationlogs-include.md)]
+[!INCLUDE [appserviceauthenticationlogs](.././tables/includes/appserviceauthenticationlogs-include.md)]

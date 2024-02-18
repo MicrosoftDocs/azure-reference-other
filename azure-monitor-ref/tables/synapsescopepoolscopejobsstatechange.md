@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SynapseScopePoolScopeJobsStateChange
 
 SCOPE job state change event.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Synapse Workspaces
 
-            
-
-
 ## Columns
   
-[!INCLUDE [synapsescopepoolscopejobsstatechange](../includes/synapsescopepoolscopejobsstatechange-include.md)]
+[!INCLUDE [synapsescopepoolscopejobsstatechange](.././tables/includes/synapsescopepoolscopejobsstatechange-include.md)]

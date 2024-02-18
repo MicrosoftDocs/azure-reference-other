@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AlertInfo
 
 Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity, including severity information and threat categorization.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [AlertInfo](../queries/alertinfo.md) table.
 
 
 ## Columns
   
-[!INCLUDE [alertinfo](../includes/alertinfo-include.md)]
+[!INCLUDE [alertinfo](.././tables/includes/alertinfo-include.md)]

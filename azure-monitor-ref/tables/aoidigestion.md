@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # AOIDigestion
 
 Logs related to digestion of files added to the input storage account. These can be used to verify that data is being successfully passed through to enrichment, or to troubleshoot issues with processing the raw data.
 
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Operator Insights - Data Product
 
-            
+## Queries
+
+ Sample queries for the [AOIDigestion](../queries/aoidigestion.md) table.
 
 
 ## Columns
   
-[!INCLUDE [aoidigestion](../includes/aoidigestion-include.md)]
+[!INCLUDE [aoidigestion](.././tables/includes/aoidigestion-include.md)]

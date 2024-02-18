@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppAvailabilityResults
 
 Application Insights availability test results.
 
+
 ## Categories
 
 - Applications
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Application Insights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [appavailabilityresults](../includes/appavailabilityresults-include.md)]
+[!INCLUDE [appavailabilityresults](.././tables/includes/appavailabilityresults-include.md)]

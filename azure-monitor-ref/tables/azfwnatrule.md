@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AZFWNatRule
 
 Contains all DNAT (Destination Network Address Translation) events log data. Each match between data plane and DNAT rule creates a log entry with the data plane packet and the matched rule's attributes.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Firewalls
 
-            
+## Queries
+
+ Sample queries for the [AZFWNatRule](../queries/azfwnatrule.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azfwnatrule](../includes/azfwnatrule-include.md)]
+[!INCLUDE [azfwnatrule](.././tables/includes/azfwnatrule-include.md)]

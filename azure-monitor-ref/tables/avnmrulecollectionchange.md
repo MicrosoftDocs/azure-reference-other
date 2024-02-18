@@ -6,28 +6,33 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AVNMRuleCollectionChange
 
 Include logs related to application or removal of rule collections, on network resources like a virtual network or a subnet.
 
+
 ## Categories
 
 - Azure Resources
 - Network
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Virtual Network Manager
 
-            
+## Queries
+
+ Sample queries for the [AVNMRuleCollectionChange](../queries/avnmrulecollectionchange.md) table.
 
 
 ## Columns
   
-[!INCLUDE [avnmrulecollectionchange](../includes/avnmrulecollectionchange-include.md)]
+[!INCLUDE [avnmrulecollectionchange](.././tables/includes/avnmrulecollectionchange-include.md)]

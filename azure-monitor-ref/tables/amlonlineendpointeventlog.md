@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlOnlineEndpointEventLog
 
 Azure ML online endpoints event logs. It provides event logs regarding the inference-server container's life cycle.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
+## Queries
+
+ Sample queries for the [AmlOnlineEndpointEventLog](../queries/amlonlineendpointeventlog.md) table.
 
 
 ## Columns
   
-[!INCLUDE [amlonlineendpointeventlog](../includes/amlonlineendpointeventlog-include.md)]
+[!INCLUDE [amlonlineendpointeventlog](.././tables/includes/amlonlineendpointeventlog-include.md)]

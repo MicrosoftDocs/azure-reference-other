@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SynapseIntegrationActivityRuns
 
 Logs for Synapse integration activity runs.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Synapse Workspaces
 
-            
-
-
 ## Columns
   
-[!INCLUDE [synapseintegrationactivityruns](../includes/synapseintegrationactivityruns-include.md)]
+[!INCLUDE [synapseintegrationactivityruns](.././tables/includes/synapseintegrationactivityruns-include.md)]

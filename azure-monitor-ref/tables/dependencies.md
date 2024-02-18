@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # dependencies
+
 
 
 
@@ -17,9 +18,11 @@ ms.date: 08/28/2023
 
 - LogManagement
 
-            
+## Queries
+
+ Sample queries for the [dependencies](../queries/dependencies.md) table.
 
 
 ## Columns
   
-[!INCLUDE [dependencies](../includes/dependencies-include.md)]
+[!INCLUDE [dependencies](.././tables/includes/dependencies-include.md)]

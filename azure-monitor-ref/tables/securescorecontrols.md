@@ -6,12 +6,13 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SecureScoreControls
 
 Azure Security Center Secure Score per control. A control is a logical group of related security recommendations, its secure score reflects the security posture per the control.
+
 
 ## Solutions
 
@@ -19,9 +20,6 @@ Azure Security Center Secure Score per control. A control is a logical group of 
 - SecurityCenter
 - SecurityCenterFree
 
-            
-
-
 ## Columns
   
-[!INCLUDE [securescorecontrols](../includes/securescorecontrols-include.md)]
+[!INCLUDE [securescorecontrols](.././tables/includes/securescorecontrols-include.md)]

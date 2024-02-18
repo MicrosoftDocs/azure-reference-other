@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AGSGrafanaLoginEvents
 
 Login events for an instance of Azure Managed Workspace for Grafana including user identity, user Grafana role (in success) and detailed message (in failure).
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Managed Workspace for Grafana
 
-            
+## Queries
+
+ Sample queries for the [AGSGrafanaLoginEvents](../queries/agsgrafanaloginevents.md) table.
 
 
 ## Columns
   
-[!INCLUDE [agsgrafanaloginevents](../includes/agsgrafanaloginevents-include.md)]
+[!INCLUDE [agsgrafanaloginevents](.././tables/includes/agsgrafanaloginevents-include.md)]

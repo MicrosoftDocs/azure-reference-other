@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlComputeJobEvent
 
 AmlCompute Job events
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
+## Queries
+
+ Sample queries for the [AmlComputeJobEvent](../queries/amlcomputejobevent.md) table.
 
 
 ## Columns
   
-[!INCLUDE [amlcomputejobevent](../includes/amlcomputejobevent-include.md)]
+[!INCLUDE [amlcomputejobevent](.././tables/includes/amlcomputejobevent-include.md)]

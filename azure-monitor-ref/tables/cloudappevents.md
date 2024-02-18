@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # CloudAppEvents
 
 Information about activities in various cloud apps and services covered by Microsoft Cloud App Security.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [CloudAppEvents](../queries/cloudappevents.md) table.
 
 
 ## Columns
   
-[!INCLUDE [cloudappevents](../includes/cloudappevents-include.md)]
+[!INCLUDE [cloudappevents](.././tables/includes/cloudappevents-include.md)]

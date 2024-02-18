@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AZFWThreatIntel
 
 Contains all Threat Intelligence events.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Firewalls
 
-            
+## Queries
+
+ Sample queries for the [AZFWThreatIntel](../queries/azfwthreatintel.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azfwthreatintel](../includes/azfwthreatintel-include.md)]
+[!INCLUDE [azfwthreatintel](.././tables/includes/azfwthreatintel-include.md)]

@@ -6,24 +6,28 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # OfficeActivity
 
 Audit logs for Office 365 tenants collected by Azure Sentinel. Including Exchange, SharePoint and Teams logs.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - AzureSentinelPrivatePreview
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [OfficeActivity](../queries/officeactivity.md) table.
 
 
 ## Columns
   
-[!INCLUDE [officeactivity](../includes/officeactivity-include.md)]
+[!INCLUDE [officeactivity](.././tables/includes/officeactivity-include.md)]

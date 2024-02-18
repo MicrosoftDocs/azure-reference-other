@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # NTATopologyDetails
 
 Traffic Analytics records for Topology data.
 
+
 ## Categories
 
 - Network
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [ntatopologydetails](../includes/ntatopologydetails-include.md)]
+[!INCLUDE [ntatopologydetails](.././tables/includes/ntatopologydetails-include.md)]
